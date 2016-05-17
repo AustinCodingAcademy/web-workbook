@@ -1,29 +1,26 @@
-#bothboxes {
-  display: inline-block;
-}
-
-#bothboxes img {
+#bothboxes img { /*Container with both boxes*/
   width:500px;
   float:left;
   display: inline-block;
+  position:relative;
 }
 
-
-#graybox {
+#graybox { /*Gray box on the right*/
   height:400px;
   width:500px;
   background-color:#F0F0F0;
-  float:left;
+  position:fixed;
   max-width:100%;
+  display: inline-block;
 }
 
-#boxinsides {
+#boxinsides { /*Contents of gray box on the right*/
   position: relative;
   top:35%;
   transform: translateY(-50%);
 }
 
-#berrywords {
+#berrywords { /*The non-link text*/
   text-align: center;
   padding-top: 25%;
   padding-left:10px;
@@ -40,7 +37,7 @@ p {
   padding-bottom: 20px;
 }
 
-#readmore {
+#readmore { /*The readmore button*/
     border: 2px solid #555;
     border-style: bold;
     padding: 5px;
