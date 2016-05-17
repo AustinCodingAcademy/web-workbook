@@ -5,70 +5,86 @@
   <head>
 
     <title>Intel &reg;</title>
+
     <link rel="stylesheet" href="css/style.css">
 
   </head>
 
   <body>
+    <!--Still curious about fonts. These do not match the previous page, but replicating it was not as simple as imagined. Change later when more fonts are installed.  -->
+    <header>
+
+      <h1>Intel&reg; </h1>
+
+      <nav>
+
+        <a href="http://www.intel.com/content/www/us/en/processors/core/core-i7-processor.html" alt="Intel Core i7 Procesor">i7 Processor</a>
+        <a href="http://www.intel.com/content/www/us/en/solid-state-drives/solid-state-drives-ssd.html" alt="Solid State Drives">Solid State Drives</a>
+
+      </nav>
+
+    </header>
+    <!--Main is a container for formatting and style  -->
     <main>
 
 
-      <header>
-
-        <h1>Intel&reg; </h1>
-        <nav>
-
-          <a href="www.Intel.com">i7 Processor</a>
-          <a href="www.Intel.com">Solid State Drives</a>
-        </nav>
-
-      </header>
-
-      <section id="sec_processor">
+      <!--Each section has an id for organizational purposes  -->
+      <section id="processor">
 
         <h2>Intel &reg; Core&trade; i7</h2>
+
         <p>The 6th Generation Intel &reg; Core&trade; i7 processors deliver a new class of computing with a host of new features to power the next generation of desktops, laptops, and 2 in 1 PCs. Expect lighting fast speeds and peak performance through even
           the toughest of tasks and games.</p>
+
       </section>
 
-      <section>
-        <img src="img/processor.jpg" align="right" display="inline-block" />
-        <div class="sec_ready">
+      <section id="ready">
 
-          <h2>Ready. Wake. Create.</h2>
-          <p>From zero to power in a flash, the 6th Generation Intel &reg; Core&trade; processor wakes quicker than ever and lets you switch in and out of apps more seamlessly than ever.</p>
+        <img id="proc" src="img/processor.jpg" alt "processor" />
+        <!--Is it acceptable to use the br tag to create space? It seems easier than padding but will change if it isn't the best coding practice. -->
+        <br />
+        <br />
 
-        </div>
+        <h2>Ready. Wake. Create.</h2>
+
+        <p>From zero to power in a flash, the 6th Generation Intel &reg; Core&trade; processor wakes quicker than ever and lets you switch in and out of apps more seamlessly than ever.</p>
+
       </section>
 
-      <section id="sec_support">
+      <aside>
+        <!--Not sure if this is the best use of an aside, but since it's not part of the main content it will be left there for now -->
+
+
         <h2>Intel &reg;  Customer Support</h2>
-        <p>Find Support Topics by Product, Drivers & Software, or ask the community <a href="http://www.Intel &reg; .com">read more</a></p>
 
-      </section>
+        <p>Find Support Topics by Product, Drivers & Software, or ask the community <a href="http://www.Intel.com">read more</a></p>
 
-      <section id="m4sec">
+      </aside>
+      <!--Too many sections? Look into simplfying this through the course.   -->
+
+      <section id="overview">
 
         <h2>Overview: Intel &reg; Solid-State Drives</h2>
 
       </section>
 
+
       <section>
-        <div>
+        <!--Struggled a great deal with this. Come back and clean this up and the CSS once I have a bette understanding of floats and clears.   -->
+        <img id="ssd" src="img/ssd.jpg" alt="ssd" />
 
-          <img class="arch" src="img/ssd.jpg" align="left" display="inline-block" />
 
-        </div>
+        <h3 class="archi ">Architect of the Future</h3>
 
-        <div class="overview" align="justify">
-          <h3>Architect of the Future</h3>
-          <p>
-            Intel &reg; strives to outdo current technology by supporting end-to-end solutions and designing system architecture that meets impending needs while exceeding current ones. See how innovative technologies such as Intel &reg; Solid-State Drives are leading
-            to a future of endless possibilities.
-          </p>
-        </div>
+        <p class="archi ">
+          Intel &reg; strives to outdo current technology by supporting end-to-end solutions and designing system architecture that meets impending needs while exceeding current ones. See how innovative technologies such as Intel &reg; Solid-State Drives are leading
+          to a future of endless possibilities.
+        </p>
+
       </section>
+      <!-- End of content. -->
     </main>
+    <!-- End of placeholder container <main> -->
   </body>
 
 </html>
