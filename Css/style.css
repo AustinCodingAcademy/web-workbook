@@ -1,5 +1,5 @@
 .container {
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   text-align: center;
   padding-left: 50px;
 }
@@ -7,24 +7,57 @@
   width:25%;
   height:150px;
   float:left;
-  border: 2px solid black;
+  position:relative;
+  border: 1px solid black;
+  padding: none;
 }
 .quarter img{
-  position: relative;
-  width: 100%;
-  height:100%;
+  width:100%;
+  height:150px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  /**/makes photo black and white
+}
+.quarter img:hover{
+  -webkit-filter: none;
+  filter: grayscale none;
 }
 .overlay {
-  
-  border:2px solid #555;
-  padding: 5px 5px 5px 5px;
-  height:20px;
-  width:120px;
   position:absolute;
-  /*this moves the button with the movement of the div*/
-  margin:0 auto;
-  /*keeps the botton to the middle*/
-  text-align:center'
-  background-color:#FFFFFF;
-
+  z-index:100;
+  color:white;
+  top:90px;
+  height:60px;
+  width:100%;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.6)
+    );
 }
+.overlay p {
+  Font-size:10px;
+  Font-color:#FFFFFF;
+  font-family:sans-serif;
+}
+.overlay a:link {
+    color: white;
+    font-size:14px;
+    text-decoration: none;
+}
+.overlay a:visited {
+    font-size:18px;
+    color:white;
+}
+.overlay a:hover {
+    font-size:18px;
+    color:white;
+}
+.overlay a:active {
+    color: white;
+}
+/*img {
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+}*/
