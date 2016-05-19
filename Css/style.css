@@ -1,14 +1,38 @@
+body {
+  background-color:black;
+}
 .container {
   /*margin: 0 auto;*/
+  width:90%;
   text-align: center;
-  padding-left: 50px;
+  /*padding-left: 50px;
+  padding-right:20px;*/
+}
+.full {
+  width:100%;
+  height:200px;
+  float:left;
+  position:relative;
+  outline: 2px solid white;
+  padding: none;
+}
+.full img{
+  width:100%;
+  height:200px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  /**/makes photo black and white
+}
+.full img:hover{
+  -webkit-filter: none;
+  filter: grayscale none;
 }
 .quarter {
   width:25%;
   height:150px;
   float:left;
   position:relative;
-  border: 1px solid black;
+  outline: 2px solid white;
   padding: none;
 }
 .quarter img{
