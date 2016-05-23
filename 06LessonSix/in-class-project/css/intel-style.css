@@ -1,41 +1,40 @@
+{
+    margin: auto;
+}
+
+/*I've noticed that several selectors have redundant information. I have stripped these down to simpler, but less specific selectors*/
 
 body {
     font-family: 'Arial', sans-serif;
 }
 
-header, main, footer {
-    width: 1024px;
-    margin: auto;
-}
-
 header {
     background-color: #0071c5;
-    color: white;
     padding: 10px;
 }
-
 h1 {
     font-weight: 100;
     font-size: 60px;
     color: #fff;
 }
 
-nav > a {
+.nav-link {
     color: #fff;
     font-size: 15px;
     margin-right: 15px;
 }
 
-h2 {
+/*These could also simply be h2, h3, or p, but leaving them as decedent selectors enables more content to be added later with h1 h2 p and not be impacted by the existing styles if set up outside of main*/
+
+main h2 {
     font-size: 28px;
     font-weight: 200;
 }
 
-main aside {
+main h3 {
     font-size: 24px;
     font-weight: 200;
 }
-
 main p {
     font-size: 16px;
     color: #555;
