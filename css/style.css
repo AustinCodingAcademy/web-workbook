@@ -1,3 +1,12 @@
+.clearfix:after{
+   visibility: hidden;
+   display: block;
+   font-size: 0;
+   content: " ";
+   clear: both;
+   height: 0;
+}
+
 header {
   text-align: center;
   font-size: 15px;
@@ -5,7 +14,7 @@ header {
 
 }
 
-.lessons img{
+img {
      float: left;
      width:50%;
      height:200px;
@@ -13,94 +22,32 @@ header {
      background-position: center;
      background-size: cover;
      box-sizing: border-box;
-     color:white;
-
   }
 
-  a
-  {
-   text-decoration:none;
-   color: white;
-  }
-
-
-
-.lesson2{
-  background-image: url("https://images.unsplash.com/photo-1445153758740-1a8af538ab6a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=0b820db5bce6451c3b49a62accccac4f");
-  text-align: center;
+img:hover {
+    opacity: .7;
 }
+.overlay{
 
-.lesson3{
-  background-image: url("https://images.unsplash.com/photo-1462953382322-d349274e1165?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a0fb275ef5e98c8241eea604b64db74c");
-  text-align: center;
+  top: 100px;
+ left: 100px;
+ position: absolute;
+ z-index: 100;
+ font-weight: bold;
+ font-family: sans-serif;
+ color: white;
+ text-align: center;
+ vertical-align: middle;
 }
 
-.lesson4{
-  background-image: url("https://images.unsplash.com/photo-1445855743215-296f71d4b49c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a6fb83fcb8440520072082eb0035e5d0");
+a{
+  color:white;
   text-align: center;
 }
-
-.lesson5{
-  background-image: url("https://images.unsplash.com/photo-1459769032221-e262d35799af?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=17e63894bb4add86a904505489ce1423");
-  text-align: center;
-}
-.lesson6 {
-  background-image: url("https://images.unsplash.com/photo-1436363271110-9de4ee5dcc6e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c4d98284c818e870663ad7cc1ce5f87b");
-  text-align: center;
-}
-.lesson7{
-  background-image: url("https://images.unsplash.com/photo-1454047637795-79e3325dfa0e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=2cc1d0501dc989041604b457590553e3");
-  text-align: center;
-}
-.lesson8{
-  background-image: url("https://images.unsplash.com/photo-1451906278231-17b8ff0a8880?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=1fbb817fbfe2b13a0c81de025e89a890");
-  text-align: center;
-}
-.lesson9{
-  background-image: url("https://images.unsplash.com/photo-1427384924179-da03b8c3ccf8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=16a3a9df10fa9047eaab55899acd81f3");
-  text-align: center;
-}
-.lesson10{
-  background-image: url("https://images.unsplash.com/photo-1437376576540-236661ddb41f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ee4636962be881b70f36abfe2d290eab");
-  text-align: center;
-}
-.lesson11{
-  background-image: url("https://images.unsplash.com/37/lynDyjGSR9eR57ouPIEE_IMG_woods.jpg?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=d3a6c21d9daa96906dce84e8ca75c3bb");
-  text-align: center;
-}
-.lesson12{
-  background-image: url("https://images.unsplash.com/uploads/1411074708175ba26fea4/498d4c3a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=0293e634c7ef836509e4f30a07b1f10b");
-  text-align: center;
-}
-.lesson13{
-  background-image: url("https://images.unsplash.com/photo-1449057528837-7ca097b3520c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=b31792a51e52080f684a4380a3536e24");
-  text-align: center;
-}
-.lesson14{
-  background-image: url("https://images.unsplash.com/photo-1455582916367-25f75bfc6710?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=fdb51a76fb781a92d74ed770b4bc4502");
-  text-align: center;
-}
-.lesson15{
-  background-image: url("https://images.unsplash.com/photo-1438155047396-adbf4a7252ec?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=e794bf6db55e0c2c9ef6afbf61c72ad0");
-  text-align: center;
-}
-.lesson16{
-  background-image: url("https://images.unsplash.com/photo-1442473483905-95eb436675f1?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=8a25776c0f9340b38d567c53870da02f");
-  text-align: center;
-}
-.lesson17{
-  background-image: url("https://images.unsplash.com/photo-1445299370299-fba06c02df22?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=73a4d4a3c6c4ebb69f747bba402b665b");
-  text-align: center;
-}
-.lesson18{
-  background-image: url("https://images.unsplash.com/photo-1433785124354-92116416b870?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=9283055e09cec3dde300af3663ee52db");
-  text-align: center;
-}
-.lesson19{
-  background-image: url("https://images.unsplash.com/photo-1462039705942-470cdfc4fe16?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=7a4dcb4ef26b8a7383f42c768fcc4703");
-  text-align: center;
-}
-.lesson20{
-  background-image: url("https://images.unsplash.com/photo-1449960238630-7e720e630019?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=21fdcac1a110d9bcc62139f902871e42");
-  text-align: center;
+div {
+    position:relative;
+    z-index: 1;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
 }
