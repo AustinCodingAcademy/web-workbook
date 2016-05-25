@@ -19,13 +19,20 @@ main {
 
 }
 
-span {
+h3 {
   font-size: 14px;
+  margin: 0;
+}
+
+a {
+  float: right;
+  color: #77c95d;
+  padding-right: 20px;
 }
 
 #leftpanel {
   background-color: #f2f2f2;
-  height:50vh;
+  height:55vh;
   width: 35vw;
   float: left;
   text-align: left;
@@ -41,10 +48,15 @@ margin: 10px 0 0 10px;
 }
 
 #rightpanel {
-  height:50vh;
+  height:55vh;
   width: 33vw;
   float: left;
   overflow: hidden;
+}
+
+#rightpanel span {
+  margin-top:10%;
+  position: absolute;
 }
 
 .rightbox {
@@ -53,6 +65,7 @@ margin: 10px 0 0 10px;
   width: 100%;
   margin: 0 0 10px 10px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .rightbox img {
@@ -67,6 +80,11 @@ text-align: left;
 
 }
 
+.boxtext {
+  padding-top: 12px;
+  width:95%;
+}
+
 #middle {
   clear: both;
   width:100%;
@@ -79,7 +97,8 @@ br {
 }
 
 #foot {
-  border: 1px solid #c7c7c7;
+  border-top:1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
   width: 99%;
   height: 120px;
   overflow:overlay;
@@ -88,9 +107,48 @@ br {
 }
 
 .footbox {
-  border: 1px solid #c7c7c7;
   width:33%;
   height: 70%;
   float: left;
-  margin: 20px auto;
+  padding-left: 20px;
+  margin: 17px auto;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+#footbox1 {
+  border-right-color: #dddddd;
+  border-right-width:thin;
+  border-right-style: solid;
+}
+
+#footbox2 {
+  border-right-color: #dddddd;
+  border-right-width:thin;
+  border-right-style: solid;
+}
+
+.footbox h3 {
+  font-size: 14px;
+}
+
+/*ul.checkmark li:before {
+    content:"\2713\0020";
+    color: green;
+}*/
+
+li:before
+{
+    content: '✔';
+    color: #77c95d;
+    margin-left: -1em;
+    margin-right: .100em;
+}
+
+ul
+{
+   padding-left: 20px;
+   text-indent: 2px;
+   list-style: none;
+   list-style-position: outside;
 }
