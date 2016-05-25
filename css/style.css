@@ -1,7 +1,7 @@
 
 header {
   width:100%;
-  height:250px;
+  height:100px;
   background-color: white;
 }
 
@@ -14,6 +14,12 @@ header {
   font-size:50px;
 
 }*/
+#main {
+  width:100%;
+  height:700px;
+  background-image: url("/css/images/blacksandbeach.jpeg");
+  background-size: cover;
+}
 table {
   width:100%;
 }
@@ -22,9 +28,12 @@ td {
   width:20%;
   height:300px;
   opacity:0.7;
+    -webkit-filter:grayscale(100%);
 }
 td:hover {
   opacity:1.0;
+  filter:none;
+  -webkit-filter:grayscale(0%);
 }
 
 td:hover .links{
