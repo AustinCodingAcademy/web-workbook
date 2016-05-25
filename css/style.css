@@ -19,53 +19,16 @@ table {
 }
 
 td {
-  width:33%;
-  opacity:1.0;
-  /*padding:5px;*/
-  /*border:2px solid black;*/
+  width:20%;
+  height:300px;
+  opacity:0.7;
 }
 td:hover {
-  opacity:0.4;
+  opacity:1.0;
 }
 
-
-
-.one {
-  height:400px;
-  width:100%;
-  display:inline-block;
-  position:relative;
-  float:left;
-  background-image: url("/css/images/record.jpeg");
-  background-size:cover;
-  z-index: -1;
-}
-
-
-/*.pics {
-  width:600px;
-  max-height:400px;
-  position:absolute;
-  z-index: -1;
-  display:inline-block;
-}*/
-
-.lessons {
-  text-decoration:none;
-  color:white;
-  font-size:30px;
-  font-family:CenturyGothic;
-  font-weight: lighter;
-}
-
-.two {
-  height:400px;
-  width:100%;
-  display:inline;
-  background-image: url("/css/images/bluemist.jpg");
-  background-size:cover;
-  float:left;
-  position:relative;
+td:hover .links{
+  visibility: visible;
 }
 
 .clearfix:after {
@@ -76,29 +39,57 @@ td:hover {
    clear: both;
    height: 0;
 }
-.two a {
-  text-decoration: none;
-  font-family:CenturyGothic;
+/*Styling for data cell titles*/
+.lessons {
+  text-decoration:none;
   color:white;
-  position:absolute;
-  bottom:0;
-  font-size:20px;
-
+  font-size:30px;
+  font-family:CenturyGothic;
+  font-weight: lighter;
+  visibility: hidden;
+}
+/*Styling for divs*/
+.one {
+  width:100%;
+  height:100%;
+  display:inline-block;
+  position:relative;
+  float:left;
+  background-image: url("/css/images/record.jpeg");
+  background-size:cover;
+  z-index: -1;
+}
+.two {
+  width:100%;
+  height:100%;
+  display:inline;
+  background-image: url("/css/images/bluemist.jpg");
+  background-size:cover;
+  float:left;
+  position:relative;
 }
 
-.two a:nth-child(2) {
+.two a {
   text-decoration: none;
-  font-family:CenturyGothic;
+  border:2px white solid;
+  padding:5px;
   color:white;
-  position:absolute;
-  bottom:0;
-  right:0;
-  font-size:20px;
+  font-family:CenturyGothic;
+  vertical-align: middle;
+  text-align: center;
+  font-size:16px;
+}
+.two span {
+  display:inline-block;
+  visibility: hidden;
+  margin-top:100px;
+  margin-left: 75px;
+
 }
 
 .three {
-  height:400px;
   width:100%;
+  height:100%;
   display:inline;
   float:left;
   background-image: url("/css/images/bulb.jpeg");
@@ -108,8 +99,8 @@ td:hover {
 }
 
 .four {
-  height:400px;
   width:100%;
+  height:100%;
   display:inline-block;
   float:left;
   background-image: url("/css/images/tunnel.jpeg");
@@ -118,8 +109,8 @@ td:hover {
   float:left;
 }
 .five {
-  height:400px;
   width:100%;
+  height:100%;
   display:inline-block;
   float:left;
   background-image: url("/css/images/orangeglass.jpeg");
@@ -128,8 +119,8 @@ td:hover {
   float:left;
 }
 .six {
-  height:400px;
   width:100%;
+  height:100%;
   display:inline-block;
   float:left;
   background-image: url("/css/images/city.jpeg");
@@ -138,8 +129,8 @@ td:hover {
   float:left;
 }
 .seven {
-  height:400px;
   width:100%;
+  height:100%;
   display:inline-block;
   float:left;
   background-image: url("/css/images/canyonfire.jpeg");
@@ -148,8 +139,8 @@ td:hover {
   float:left;
 }
 .eight {
-  height:400px;
   width:100%;
+  height:100%;
   display:inline-block;
   float:left;
   background-image: url("/css/images/lighter.jpeg");
@@ -158,11 +149,21 @@ td:hover {
   float:left;
 }
 .nine {
-  height:400px;
   width:100%;
+  height:100%;
   display:inline-block;
   float:left;
   background-image: url("/css/images/warmlines.jpeg");
+  background-size:cover;
+  z-index: -1;
+  float:left;
+}
+.ten {
+  width:100%;
+  height:100%;
+  display:inline-block;
+  float:left;
+  background-image: url("/css/images/lovers.jpeg");
   background-size:cover;
   z-index: -1;
   float:left;
