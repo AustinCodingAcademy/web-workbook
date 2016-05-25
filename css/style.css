@@ -36,7 +36,10 @@ header {
   border-color: #8f8e73;
 }
 
+/* TOP THREE MOST RECENT*/
+
 section.bigthree  {
+  position: relative;
   float: left;
   margin: auto;
   padding: 0px;
@@ -44,9 +47,20 @@ section.bigthree  {
   border-style: ridge;
   border-width: 0px 10px 10px 0px;
   border-color: #8f8e73;
+  clear:none;
+  overflow: hidden;
 }
 
-div.biglesson img{
+div.biglesson{
+  height: 240px;
+  width: 100%;
+  position: relative;
+  float: left;
+  margin: 0 auto;
+  padding: 0px 0px 0px 0px;
+}
+
+div.biglesson img {
   height: 240px;
   width: 100%;
   float: left;
@@ -55,6 +69,34 @@ div.biglesson img{
   -webkit-opacity: 1;
   -moz-opacity: 1;
   opacity: 1;
+  z-index: 1;
+}
+
+div.finalcaption {
+  display: block;
+  position: absolute;
+
+  width: 100%;
+  height: 240px;
+
+  z-index: 2;
+  text-align: center;
+  text-decoration: none;
+  background-color: #F6F4E5;
+
+  font: 2em bolder ;
+  color: #3b3a2f;
+  font-family: "Lucida Console", Monaco, monospace;
+
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+}
+
+div.finalcaption:hover{
+  -webkit-opacity: .6;
+  -moz-opacity: .6;
+  opacity: .6;
 }
 
 div.biglesson img:hover{
@@ -63,17 +105,77 @@ div.biglesson img:hover{
   opacity: .3;
 }
 
-article.finalproject {
-  height: 240px;
-  width: 100%;
-  background-color: black;
-}
 
-article.mostrecent  {
+
+
+article.splitleft {
+  display:block;
+  position:absolute;
   height: 240px;
   width: 50%;
   background-color: black;
+
+  float:left;
+
+  z-index: 2;
+  text-align: center;
+  text-decoration: none;
+  background-color: #F6F4E5;
+
+  font: 2em bolder ;
+  color: #3b3a2f;
+  font-family: "Lucida Console", Monaco, monospace;
+
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
 }
+
+article.splitleft:hover{
+  -webkit-opacity: .6;
+  -moz-opacity: .6;
+  opacity: .6;
+}
+
+article.splitright {
+  display:block;
+  position:absolute;
+  height: 240px;
+  width: 50%;
+  background-color: black;
+
+  float: left;
+  left: 50%;
+
+  z-index: 2;
+  text-align: center;
+  text-decoration: none;
+  background-color: #F6F4E5;
+
+  font: 2em bolder ;
+  color: #3b3a2f;
+  font-family: "Lucida Console", Monaco, monospace;
+
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+}
+
+article.splitright:hover{
+  -webkit-opacity: .6;
+  -moz-opacity: .6;
+  opacity: .6;
+}
+
+.splitleft a, .splitright a{
+
+  text-align: center;
+  text-decoration: none;
+  font: 2em bolder ;
+  color: #3b3a2f;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
 
 /*CONTACT BOX*/
 
@@ -103,15 +205,101 @@ section.scroll div a {
 /*NEXT 3*/
 
 section.next3 {
+  position: relative;
+
+  float: left;
+  margin: auto;
+  padding: 0px;
+  border-radius: 20px;
+  border-style: ridge;
+  border-width: 0px 10px 10px 0px;
+  border-color: #8f8e73;
+  clear:none;
+  overflow: hidden;
   width: 100%;
   height: 480px;
   float: left;
 }
 
 div.lesson3 {
+  display:block;
+
+
   width: 33.3%;
   height: 480px;
   float: left;
+
+  margin: 0 auto;
+  padding: 0px 0px 0px 0px;
+}
+
+article.splittop {
+  display:block;
+  position:absolute;
+  height: 240px;
+  width: 33.3%;
+  background-color: black;
+
+  float:left;
+
+  z-index: 2;
+  text-align: center;
+  text-decoration: none;
+  background-color: #F6F4E5;
+
+  font: 2em bolder ;
+  color: #3b3a2f;
+  font-family: "Lucida Console", Monaco, monospace;
+
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+}
+
+article.splittop:hover{
+  -webkit-opacity: .6;
+  -moz-opacity: .6;
+  opacity: .6;
+}
+
+article.splitbottom {
+  display:block;
+  position:absolute;
+  height: 240px;
+  width: 33.3%;
+  background-color: black;
+
+  float: left;
+  top: 50%;
+
+
+  z-index: 2;
+  text-align: center;
+  text-decoration: none;
+  background-color: #F6F4E5;
+
+  font: 2em bolder ;
+  color: #3b3a2f;
+  font-family: "Lucida Console", Monaco, monospace;
+
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+}
+
+article.splitbottom:hover{
+  -webkit-opacity: .6;
+  -moz-opacity: .6;
+  opacity: .6;
+}
+
+.splittop a, .splitbottom a{
+
+  text-align: center;
+  text-decoration: none;
+  font: 1em bolder ;
+  color: #3b3a2f;
+  font-family: "Lucida Console", Monaco, monospace;
 }
 
 div.lesson3 img{
