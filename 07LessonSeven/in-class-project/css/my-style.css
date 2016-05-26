@@ -1,65 +1,109 @@
-body{
- width: 850px;
- height: 100%;
- margin: auto;
- border-bottom: 20px solid white;
- padding: auto;
-}
+/****************************//****************************/
+                     /* body, header, section, aside*/
+/****************************//****************************/
+/* { border: 1px solid #f00; }*/
 
+
+
+body {
+  text-align: center;
+  width: 850px;
+  height: 800px;
+ /* Change this to the width layout */
+  margin: 0 auto;
+}
 
 header {
-    width: 850px;
-    height: 450px;
-    background-image: url(../img/nasa-background.jpg);
-    background-color: white;
-}
-.text_Nasa {
-    font-size: 75px;
-    text-align: center;
-    line-height: 450px;
-    color: white;
-    font-weight: 700;
-    font-family: Verdana
-    margin: auto;
-   }
-.divido{
- border: 10px solid white;
+  background-image: url("../img/nasa-background.jpg");
+  height: 450px;
+  width: 850px;
+  margin-bottom: 5px;
 }
 
-footer {
-  height: 324px;
+section, aside{
   background-color: lightgrey;
-  padding: 20px;
+  font-family: sans-serif;
+}
+
+
+.soc-media {
+  float: left;
+  margin-right: 20px;
+  width: 30%;
+}
+
+.office-info {
+  width: 30%;
+  float: left;
+  margin-right: 20px;
+}
+
+.c-info {
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  width: 33%
+  border-bottom: 2px solid white;
+}
+/****************************//****************************/
+                     /* ul, li, h1, h2 */
+/****************************//****************************/
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 80px;
+  line-height: 400px;
+}
+
+h2 {
+  text-align: left;
+  margin-left: 12px;
+  padding-left: 8px
+}
+
+ul, li {
+  list-style-type: none;
+  margin-left: 5px;
+  padding-left: 5px;
+  text-align: left;
+}
+
+/****************************//****************************/
+                     /* form and input */
+/****************************//****************************/
+
+form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+input {
+  width: 260px;
+}
+
+.message {
+  height: 100px;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+#sendnowbutton {
+width: 50%;
+background-color:black;
+border: none;
+color: white;
+padding: 15px 16px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+cursor: pointer;
 
 }
-.block_1 {
-    width: 270px;
-    float: left;
-				clear: right;
-
-}
-.block_2 {
-    width: 270px;
-				float: left;
-				clear: right;
-
-}
-.block_3 {
-    width: 250px;
-				float: left;
-				clear: right;
-   }
-
-.buttondark {
-    background-color: #313131;
-    border: 1px solid white;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    float: right;
-   }
