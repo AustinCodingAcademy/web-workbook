@@ -6,6 +6,23 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+body.nowrap {
+  width: 1200px;
+  overflow: scroll;
+
+}
+
 .mainpanel  {
 width: 400px;
 height: 470px;
@@ -13,11 +30,29 @@ border: 1px dotted gray;
 float: left;
 }
 
-.panelimg {
+mainpanel:nth-last-child(2) {
+  clear: left;
+}
+
+.truckimg {
 width: 360px;
 height: 200px;
 margin: 15px 15px 40px;
-background-image: url("http://127.0.0.1:64457/08LessonEight/homework/img/truck.jpg");
+background-image: url("http://127.0.0.1:3000/08LessonEight/homework/img/truck.jpg");
+}
+
+.planeimg {
+width: 360px;
+height: 200px;
+margin: 15px 15px 40px;
+background-image: url("http://127.0.0.1:3000/08LessonEight/homework/img/plane.jpg");
+}
+
+.trainimg {
+width: 360px;
+height: 200px;
+margin: 15px 15px 40px;
+background-image: url("http://127.0.0.1:3000/08LessonEight/homework/img/train.jpg");
 }
 
 .textpanel  {
@@ -29,23 +64,28 @@ float: left;
 }
 
 .deliveryhead {
-font-weight: 700;
+font-weight: 800;
 font-size: 12px;
+margin: 0 auto;
+
 }
 
 .textbody {
 line-height: 20px;
 font-size: 12px;
+font-weight: 400;
+padding-top: 12px;
 }
 
 .morebutton {
 width: 110px;
 height: 36px;
 border: 1px solid gray;
-border-right: 4px solid maroon;
+border-right: 4px solid #a41c09;
 margin-left: 15px;
+margin-top: 10px;
 text-align: center;
-padding: 0px;
+padding: 10px 0px 0px 0px;
 float: left;
 
 }
@@ -53,8 +93,9 @@ float: left;
 .morebutton p {
 margin: 0 auto;
 height: 12px;
-padding-top: 9.5px;
+line-height: 15px;
 font-size: 12px;
+font-weight: 800;
 color: gray;
 font-weight: bold;
 }
