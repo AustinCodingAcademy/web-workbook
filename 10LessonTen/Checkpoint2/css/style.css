@@ -24,20 +24,31 @@ main {
     display: inline-block;
     height: 50px;
     background-color: beige;
-    width: 100%;
+    width: 1000px;
     margin-bottom: 30px;
     padding-left: 10px;
 }
+.banner h3{
+  width:300px;
+  height:20px;
+  float:left;
+}
 #list ul {
+  height:20px;
     list-style-type: none;
     margin-right: 10px;
-    margin-top: -25px;
     padding: 0;
     float: right;
 }
 #list li {
-    display: inline-block;
+  height:20px;
+    float:right;
+    display: block;
     margin-left: 15px;
+}
+#list li a{
+  text-decoration: none;
+  color:black;
 }
 
 /*END BANNER*/
@@ -200,17 +211,22 @@ header p {
 }
 
 /*END PLAYLISTS*/
+
+/*TRIP AND TOUR SECTION*/
 section {
-  width:1000px;
+  background-color: white;
+  width:900px;
   height:450px;
+  margin:auto;
   margin-bottom: 30px;
+  padding:30px;
 }
 section h5 {
-  color:white;
+  color:black;
   float:right;
 }
 section .roadtrip h5 {
-  margin-top: -30px;
+  margin-top: -18px;
 }
 .roadtrip{
   width:450px;
@@ -218,13 +234,12 @@ section .roadtrip h5 {
   float:left;
 }
 #trip {
-    background-image: url(http://i448.photobucket.com/albums/qq206/madelineelogan/41796126-b087-4d92-b08f-282fd55fc2c5_zpsrwv8kfsm.png);
-    display: block;
-    width: 400px;
-    height: 275px;
-    margin: auto;
-    padding: 20px;
-    border: 3px groove purple;
+  background-image: url(http://i448.photobucket.com/albums/qq206/madelineelogan/41796126-b087-4d92-b08f-282fd55fc2c5_zpsrwv8kfsm.png);
+  display: block;
+  height: 275px;
+  margin: auto;
+  margin-left:10px;
+  padding: 20px;
 }
 #trip h2 {
     text-align: center;
@@ -236,14 +251,13 @@ section .roadtrip h5 {
 #road {
   text-align: center;
     display: block;
-    width: 400px;
     font-size: 20px;
-    color: white;
+    color: black;
     clear: left;
 }
 
 section .tourdates h5 {
-  margin-top: -20px;
+  margin-top: -18px;
 }
 
 .tourdates {
@@ -254,11 +268,10 @@ section .tourdates h5 {
 #tour {
     background-image: url(http://i448.photobucket.com/albums/qq206/madelineelogan/41796126-b087-4d92-b08f-282fd55fc2c5_zpsrwv8kfsm.png);
     display: block;
-    width: 400px;
     height: 275px;
     margin: auto;
+    margin-left:10px;
     padding: 20px;
-    border: 3px groove purple;
 }
 #tour h3 {
     text-align: center;
@@ -270,8 +283,56 @@ section .tourdates h5 {
 #dates {
   text-align: center;
   display: block;
-  width: 400px;
   font-size: 20px;
-  color: white;
+  color: black;
   clear: right;
+}
+/*END TRIP AND TOUR SECTION */
+
+/*FOOTER*/
+footer {
+  margin:auto;
+  background-image: url(http://i448.photobucket.com/albums/qq206/madelineelogan/8aacbd07-9fc1-4916-8b3b-128b3c89bcee_zpsmeujf52j.jpg);
+  width: 810px;
+  height:350px;
+}
+footer h3 {
+  text-align: center;
+  font-family:'Pacifico';
+  color:white;
+  font-size: 50px;
+  padding-top:50px;
+  padding-left:50px;
+  padding-right:50px;
+}
+footer h5{
+  color:white;
+  text-align: center;
+  font-size:30px;
+}
+footer .buttons h3{
+  color:white;
+  width:100px;
+  height: 39px;
+  background-color:#2F7E9F;
+  display:block;
+  font-size: 20px;
+  padding:0;
+  margin:0;
+}
+#email {
+  width:48%;
+  float:left;
+  margin-right:10px
+}
+#email h3{
+  float:right;
+}
+#spotify {
+  width:48%;
+  float:right;
+  margin-left:10px;
+}
+footer .buttons a{
+  text-decoration: none;
 }
