@@ -1,0 +1,63 @@
+h1{
+  display: block;
+  font-size: 5em;
+  margin-bottom: 0.67em;
+  font-weight: bold;
+}
+
+h3{
+  display: block;
+  font-size: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+h5{
+  display: block;
+  font-size: 1.75em;
+  margin-top: 1.67em;
+  margin-bottom: 1.67em;
+}
+
+.panel{
+  display: inline-block;
+  text-align: center;
+  margin-right: -4px;
+  margin-bottom: 50px;
+  padding: 2%;
+  width: 21%;
+}
+
+#banner{
+  background-image: url(../img/sub_header_home.jpg);
+  background-size: cover;
+  height: 560px;
+  color: white;
+}
+
+#banner>*{
+  text-align: center;
+  position: relative;
+  top: 25%;
+}
+
+@media (min-width: 601px) and (max-width: 1280px){
+  .panel{
+    width: 46%;
+  }
+
+  #banner>*{
+    top: 15%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 600px){
+  .panel{
+    width: 96%;
+  }
+
+  #banner>*{
+    top: 5%;
+  }
+}
