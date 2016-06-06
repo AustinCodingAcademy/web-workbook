@@ -3,6 +3,14 @@
     -webkit-box-sizing: border-box;
      box-sizing: border-box;
 }
+.clearfix:after {
+   visibility: hidden;
+   display: block;
+   font-size: 0;
+   content: " ";
+   clear: both;
+   height: 0;
+}
 header {
   width:100%;
   height:70px;
@@ -56,7 +64,7 @@ main>h2{
   margin-bottom: 30px;
 }
 .mainbutton {
-  margin-left:50%;
+  margin-left:48%;
   text-decoration: none;
   padding:10px;
   color:#6dc6ca;
@@ -87,7 +95,9 @@ main>h2{
   margin:20px;
   color:white;
   text-align: center;
+  height:180px;
 }
+
 .fourcontent{
   width:80%;
   height:400px;
@@ -127,6 +137,13 @@ main>h2{
 }
 #writerfour{
   background-image: url("https://images.unsplash.com/photo-1448470458955-0a8a56c7e1ae?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=377d2a06b8eb5798b577b8b91c4974b0");
+}
+.writers{
+  text-decoration: none;
+  color:#383838;
+}
+.writers:hover{
+  color:#6dc6ca;
 }
 .featuredwriters>h3 {
   font-family: Avenir;
@@ -191,7 +208,7 @@ main>h2{
 .signup>a {
   text-decoration:none;
   padding:7px;
-  margin-left:50%;
+  margin-left:47%;
   border:2px solid #383838;
   font-family:Avenir;
   color:#383838;
