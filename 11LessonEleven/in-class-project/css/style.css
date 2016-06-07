@@ -48,7 +48,6 @@ article{
 h4{
     font: 40px;
     font-family: times;
-
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -62,7 +61,7 @@ p {
 
 
 /*Tablet*/
-@media (min-width: 568px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .lptop {
     display: block;
     width: 50%;
@@ -81,13 +80,19 @@ p {
 
 /*Phone*/
 
-@media @media (min-width:320px) and (max-width:568px) {
+@media (max-width: 767px) {
+
+  section{
+    text-align: center;
+  }
   .lptop {
     float: left;
+    clear: both;
+    text-align: center;
   }
 
-  article: {
-    display: block;
+  article{
+    width: 100%;
   }
 
   p {
