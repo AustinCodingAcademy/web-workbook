@@ -1,0 +1,115 @@
+html{
+ height: 100%;
+}
+body{
+  min-height: 100%;
+}
+/** { outline: 2px dotted red }
+* * { outline: 2px dotted green }
+* * * { outline: 2px dotted orange }
+* * * * { outline: 2px dotted blue }
+* * * * * { outline: 1px solid red }
+* * * * * * { outline: 1px solid green }
+* * * * * * * { outline: 1px solid orange }
+* * * * * * * * { outline: 1px solid blue }
+*/
+
+header{
+    background: url(../img/sub_header_home.jpg);
+    background-size: cover;
+    height: 559px;
+    color: white;
+    text-align: center;
+    margin-bottom: 18px;
+
+}
+
+section{
+  text-align:center;
+}
+
+h1{
+    font-size: 3rem;
+    font-family: times;
+    padding-top: 150px;
+    margin-bottom: 1.5%;
+}
+
+
+article{
+    width: 24%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+h4{
+    font: 40px;
+    font-family: times;
+
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+p {
+  font-family: serif;
+
+}
+
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .lptop {
+    display: block;
+    width: 50%;
+    float: left;
+  }
+
+  h1{
+    font-size: 4rem;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+}
+
+
+
+/*Phone*/
+
+@media (max-width: 767px){
+  .lptop {
+    width: 100%;
+    float: left;
+  }
+
+  p {
+    margin-bottom: 48px;
+  }
+
+  #finalpara {
+    margin-bottom: 32px;
+  }
+
+  h1{
+    font-size: 60px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+  }
+
+}
+
+
+
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
