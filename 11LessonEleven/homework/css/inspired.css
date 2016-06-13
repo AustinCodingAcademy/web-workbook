@@ -4,6 +4,7 @@
   background-image: url("../img/bg.jpg");
   background-size: cover;
   background-position: center;
+  /*Setting the background-postion to "center" allowed me to crop the top and bottom of the image simultaneously when adjusting the height.*/
   float: left;
   color: white;
 }
@@ -12,6 +13,7 @@
   margin-left: 3%;
   margin-top: 100px;
 }
+/*Grouped the h1 and p together so that I could move them around together.*/
 
 h1 {
   font-size: 60px;
@@ -23,11 +25,13 @@ h1 {
   width: 42%;
   line-height: 35px;
 }
+/*Gave the <p> in the inspiration class it's own ID since it has a different font and size than the other <p>'s on the page.*/
 
 .informational {
   background-color: #F7F7F7;
   width: 100%;
-  height: 225px;
+  height: 242px;
+  padding-top: 14px;
   float: left;
 }
 
@@ -51,6 +55,7 @@ h3 {
     background-size: cover;
     background-position: center;
   }
+  /*The class titled "intro" will have a different background image for a screen width of 640px or lower.*/
   .inspiration {
     margin-top: 50px;
     margin-left: 8%;
@@ -62,4 +67,5 @@ h3 {
     margin: auto;
     padding-left: 3%;
   }
+  /*The total width of the news class is 100%.  However, the declaration for width is 97% since I needed a left padding of 3%.*/
 }
