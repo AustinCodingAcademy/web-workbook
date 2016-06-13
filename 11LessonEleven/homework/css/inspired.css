@@ -1,3 +1,5 @@
+
+
 * {
   font-family: serif;
   box-sizing:border-box;
@@ -5,9 +7,8 @@
   -webkit-box-sizing:border-box; /* Safari */
 }
 
-p{
-  font: 12px sans-serif;
-
+p {
+  font: 10px sans-serif;
 }
 
 main  {
@@ -43,7 +44,7 @@ main  {
 
 .feature  {
   width: 100%;
-  height: 300px;
+  height: 125px;
   float: left;
 }
 
@@ -57,7 +58,7 @@ main  {
 }
 
 .featurepane h3 {
-  margin: 80px 5% 0;
+  margin: 20px 5% 0;
   font-size: 20px;
   color: black;
 }
@@ -66,4 +67,43 @@ main  {
   margin: 20px 5% 0;
   line-height: 20px;
   color: gray;
+}
+
+@media (max-width: 640px) {
+
+  main {
+    width: 100%;
+    height: 300px;
+    background-image: url("../img/bg2.jpg");
+  }
+
+  .maincopy {
+    width: 100%;
+  }
+
+  .maincopy h1 {
+    padding: 70px 5% 0;
+  }
+
+  .maincopy p{
+    width: 50%;
+    margin: 10px 5% 0;
+    line-height: 15px;
+  }
+
+  .featurepane  {
+    width: 100%;
+    float: left;
+    line-height: 15px;
+  }
+
+  .featurepane h3 {
+    font-size: 15px;
+    margin: 20px 2.5% 0;
+  }
+
+  .featurepane p{
+    margin: 10px 2.5% 0;
+  }
+
 }
