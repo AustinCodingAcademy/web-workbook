@@ -1,15 +1,8 @@
 /* LAPTOP / DEFAULT STYLINGS  */
 
 body {
-    margin: 0 auto;
-}
-.clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
+    /*margin: 0 auto;*/
+    /*width: 80%;*/
 }
 main {
     background: teal;
@@ -21,32 +14,52 @@ main {
 section {
     text-align: center;
     /*width: 100%;*/
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     background: black;
     color: white;
     padding: 5%;
+    /*border: 1px dashed red;*/
+
 }
 .small-box {
-    width: 25%;
-    float: left;
-    /*padding: 4%;*/
-    margin: 2%;
+    /*width: 33%;*/
+    /*margin: 5%;*/
+    /*border: 1px dashed red;*/
+    /*padding: 20px;*/
+    /*float: left;*/
+    /*max-width: 80%;*/
 }
+
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    /*text-align:center;*/
+    /* inline-block space fix */
+    /*margin-right:-5px;*/
+    /*margin: 5px;*/
+}
+
+
 #first-bar {
     /*background-color: #25a7da;*/
-    border-top: 10px solid #25a7da;
+    border-top: 20px solid #25a7da;
+    /*margin: 20px;*/
+    padding: 20px;
 
 }
 #second-bar {
     /*background-color: orange;*/
-    border-top: 10px solid orange;
-
+    border-top: 20px solid orange;
+    padding: 20px;
+/*margin: 20px;*/
 }
 #third-bar {
     /*background-color: teal;*/
-    border-top: 10px solid teal;
-
-}
+    border-top: 20px solid teal;
+    padding: 20px;
+/*margin: 20px;*/}
 
 /*  TABLET STYLINGS  */
 
@@ -58,7 +71,7 @@ section {
 
 /*  PHONE STYLINGS */
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     main {
         background: #25a7da;
         text-align: left;
@@ -67,10 +80,10 @@ section {
         background: #e6e6e6;
         color: black;
     }
-    section > div {
-        width: 100%;
-        float: left;
-        padding: 4%;
+    section div div {
+        /*width: 100vw;*/
+        /*float: left;*/
+        /*padding: 4%;*/
     }
     h1 {
       font-size: 3em;
