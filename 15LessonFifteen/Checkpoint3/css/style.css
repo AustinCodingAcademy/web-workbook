@@ -1,0 +1,145 @@
+h1,h3{
+  margin-bottom: 75px;
+}
+
+h1,h3,h4{
+  font-weight: bold;
+}
+
+div.center{
+  position: absolute;
+  width: 80%;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+div.opacity{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.button{
+  background-color: green;
+  text-decoration: none;
+
+  position: absolute;
+  padding: 10px 20px;
+
+  bottom: -50px;
+  left: 50%;
+
+  transform: translate(-50%, 0);
+
+  color: white;
+}
+
+.button:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.content{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.img-example{
+  height: 450px;
+}
+
+.quote{
+  font-style: italic;
+}
+
+.tag{
+  color: gray;
+}
+
+.tag::before{
+  content: "\2022\00a0";
+}
+
+.tag::after{
+  content: "\00a0\2022";
+}
+
+#navbar{
+  background-color: white;
+  margin-bottom: 0;
+  border: none;
+}
+
+#navbar a{
+  color: black;
+}
+
+#section_1{
+  background-image: url(http://foundry.mediumra.re/img/wine14.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  color: white;
+
+  position: relative;
+  padding: 0;
+
+  height: 533px;
+}
+
+#section_2{
+  position: relative;
+}
+
+#section_2>div{
+  height: 866px;
+}
+
+#section_3{
+  background-image: url(http://foundry.mediumra.re/img/wine13.jpg);
+
+  color: white;
+
+  position: relative;
+  padding: 0;
+
+  height: 577px;
+}
+
+#section_4{
+  overflow: hidden;
+}
+
+#section_4>div{
+  margin-bottom: 50px;
+
+  height: 555px;
+}
+
+@media (max-width: 992px){
+  .tag{
+    color: white;
+  }
+
+  #section_2{
+    padding: 0;
+  }
+
+  #section_2>div{
+    padding: 0;
+  }
+
+  #section_2>div:first-child{
+    position: absolute;
+    z-index: 2;
+  }
+
+  #section_2>div:not(:first-child) img{
+    width: 100%;
+  }
+}
