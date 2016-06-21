@@ -1,5 +1,5 @@
 .desktoppage{
-  margin:0 auto;
+  margin-right:-50px;
 }
 .creatives{
   height:800px;
@@ -9,9 +9,9 @@
 }
 .creatives>h1{
   font-family: Work Sans,Helvetica Neue,sans-serif;
-  text-align: center;
+  /*text-align: center;*/
   padding-top: 350px;
-  font-size:50px;
+  font-size:55px;
 }
 .grid{
   clear:both;
@@ -52,6 +52,7 @@
   height:1400px;
   clear:both;
   background-color: #f0f0f0;
+  width:420px;
 }
 .packages>h1{
   text-align: center;
@@ -73,13 +74,18 @@
   background-color: #2e2e2e;
   color:white;
   font-family: sans-serif;
-  margin:20px;
 }
 span{
   color:darkgrey;
 }
 #gold{
   background-color: #d7f7e3;
+  clear:both;
+}
+@media(max-width:800px){
+  #longimg{
+    margin-right:-200px;
+  }
 }
 @media (max-width:500px){
   .creatives{
@@ -87,8 +93,10 @@ span{
     background-size: cover;
     background-position: center;
   }
+
   .creatives>h1{
     padding-top: 100px;
     font-size: 55px;
+    text-align: center;
   }
 }
