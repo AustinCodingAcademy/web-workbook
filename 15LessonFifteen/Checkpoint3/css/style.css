@@ -6,6 +6,10 @@ h1,h3,h4{
   font-weight: bold;
 }
 
+h3,h4{
+  font-family: Georgia, serif;
+}
+
 div.center{
   position: absolute;
   width: 80%;
@@ -53,7 +57,7 @@ div.opacity{
   height: 450px;
 }
 
-.quote{
+.italic{
   font-style: italic;
 }
 
@@ -116,7 +120,7 @@ div.opacity{
 }
 
 #section_4>div{
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 
   height: 555px;
 }
@@ -127,6 +131,8 @@ div.opacity{
   }
 
   #section_2{
+    color: white;
+
     padding: 0;
   }
 
@@ -135,11 +141,21 @@ div.opacity{
   }
 
   #section_2>div:first-child{
-    position: absolute;
-    z-index: 2;
+    background-image: url(http://foundry.mediumra.re/img/wine16.jpg);
+    background-size: 100% 100%;
   }
 
-  #section_2>div:not(:first-child) img{
-    width: 100%;
+  #section_2>div:not(:first-child){
+    position: relative;
   }
+
+  /*
+  #section_2 .content h3, #section_2 .content p{
+    text-shadow:
+      -1px -1px 0 #fff,
+       1px -1px 0 #fff,
+      -1px  1px 0 #fff,
+       1px  1px 0 #fff;
+  }
+  */
 }
