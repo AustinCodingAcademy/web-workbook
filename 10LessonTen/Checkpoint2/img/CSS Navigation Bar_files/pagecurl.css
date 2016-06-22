@@ -1,0 +1,316 @@
+    /********************************* reset start */
+    
+    html,
+    body,
+    div,
+    img,
+    ol,
+    ul,
+    li,
+    table,
+    tr,
+    th,
+    td {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+        display: block;
+    }
+    
+    body {
+        font-family: 'Sprint Sans Web', sans-serif;
+        font-weight: 500;
+        line-height: 1.1;
+        text-align: left;
+    }
+    
+    ol,
+    ul {
+        list-style: none;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    /****************************************** reset end */
+    
+    #stage {
+        top: 0px;
+        left: 0px;
+        width: 300px;
+        height: 250px;
+        background-position: left top;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        display: block;
+        position: relative;
+        cursor: pointer;
+        border: 1px solid #000;
+        box-sizing: border-box;
+        visibility: hidden;
+    }
+    
+    #banner {
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: block;
+        font-family: 'Sprint Sans Web', sans-serif;
+        font-weight: 500;
+        position: absolute;
+    }
+    
+    #image1 {
+        display: block;
+        position: absolute;
+        z-index: 100;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: top left;
+        width: 100px;
+        height: 150px;
+        top: 85px;
+        left: 200px;
+    }
+    
+    #page1,
+    #page3 {
+        display: block;
+        position: absolute;
+        width: 600px;
+        height: 500px;
+        top: 0;
+        left: 0;
+        z-index: 12;
+        background: linear-gradient(135deg, rgba(255, 195, 9, 1) 0%, rgba(255, 195, 9, 1) 66%, rgba(255, 195, 9, 0) 66%);
+        overflow: visible;
+    }
+    
+    #page3 {
+        z-index: 5;
+    }
+    
+    #page1curl,
+    #page3curl {
+        display: block;
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        top: 200px;
+        left: 230px;
+        z-index: 102;
+        background: url('pagecurl.svg') no-repeat top left;
+    }
+    
+    #page3curl {
+        z-index: 103;
+    }
+    
+    #page2,
+    #page4 {
+        display: block;
+        position: absolute;
+        width: 600px;
+        height: 500px;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 66%, rgba(255, 255, 255, 0) 66%);
+        overflow: visible;
+    }
+    
+    #page4 {
+        z-index: 4;
+    }
+    
+    #page2curl,
+    #page4curl {
+        display: block;
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        top: 200px;
+        left: 230px;
+        z-index: 104;
+        background: url('pagecurl2.svg') no-repeat top left;
+    }
+    
+    #page3curl {
+        z-index: 105;
+    }
+    
+    #logo {
+        position: absolute;
+        background: url('Sprint_Stacked_Black_RMark.png') no-repeat top left;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 38px;
+        height: 63px;
+        top: 6px;
+        left: 245px;
+        z-index: 198;
+        display: block;
+    }
+    
+    #cta {
+        height: auto;
+        width: auto;
+        padding: 6px 12px;
+        border-radius: 12px;
+        position: absolute;
+        top: 187px;
+        left: 25px;
+        z-index: 200;
+        overflow: hidden;
+        background-color: #000;
+        text-align: center;
+    }
+    
+    #cta_copy {
+        width: auto;
+        height: auto;
+        font-size: 12px;
+        white-space: nowrap;
+        color: #FFF;
+        min-width: 80px;
+        font-weight: 500;
+    }
+    
+    #offer_eyebrow_copy {
+        position: absolute;
+        width: 170px;
+        height: auto;
+        z-index: 88;
+        font-size: 23px;
+        font-weight: 700;
+        top: 120px;
+        left: 25px;
+    }
+    
+    #primary_message {
+        position: absolute;
+        display: table;
+        width: 170px;
+        top: 100px;
+        left: 25px;
+        z-index: 88;
+    }
+    
+    #primary_copy {
+        z-index: 11;
+        font-size: 21px;
+        font-weight: 700;
+    }
+    
+    #primary_copy2 {
+        z-index: 8;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+    #supporting1_copy {
+        position: absolute;
+        padding-top: 5px;
+        z-index: 15;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    #supporting2_copy {
+        position: absolute;
+        padding-top: 5px;
+        z-index: 16;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    #offer_message {
+        position: absolute;
+        display: table;
+        width: 170px;
+        top: 95px;
+        z-index: 3;
+        left: 25px;
+        height: auto;
+    }
+    
+    #closing_headline {
+        width: inherit;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    #summary_copy {
+        width: inherit;
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 500;
+    }
+    
+    #urgency_message {
+        position: absolute;
+        width: 200px;
+        height: auto;
+        top: 20px;
+        left: 25px;
+        z-index: 3;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    #legal_rollover {
+        position: absolute;
+        width: auto;
+        height: 12px;
+        top: 225px;
+        left: 25px;
+        font-size: 8px;
+        z-index: 300;
+    }
+    
+    #legal {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ffc309;
+        z-index: 299;
+        display: table;
+    }
+    
+    #legal_copy {
+        position: absolute;
+        width: 80%;
+        height: auto;
+        font-size: 12px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+    }
+    
+    #background_color {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+    
+    #bgtexture {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #ffc309;
+        overflow: hidden;
+    }

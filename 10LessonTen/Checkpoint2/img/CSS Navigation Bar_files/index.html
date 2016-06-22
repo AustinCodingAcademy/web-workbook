@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- saved from url=(0145)https://s0.2mdn.net/ads/richmedia/studio/pv2/41852129/20160412140310853/index.html?e=69&renderingType=2&leftOffset=0&topOffset=0&c=sNvkqa1BTr&t=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script type="text/javascript" src="./Enabler_01_112.js"></script>
+    <script type="text/javascript">
+    if (Enabler.isInitialized()) {
+        init();
+    } else {
+        Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
+    };
+
+    function init() {
+        var cssPath;
+        var polite_path;
+        var adTemplate;
+        var adConcept;
+
+        var googleFonts = document.createElement('link');
+        googleFonts.setAttribute('rel', 'stylesheet');
+        googleFonts.setAttribute('type', 'text/css');
+        googleFonts.setAttribute('href', Enabler.getUrl('https://fonts.googleapis.com/css?family=Sprint+Sans+Web:500,700&key=HMJVmbm9bHsUV1p1'));
+        document.getElementsByTagName('head')[0].appendChild(googleFonts);
+
+        var splitext = document.createElement('script');
+        splitext.setAttribute('type', 'text/javascript');
+        splitext.setAttribute('src', Enabler.getUrl('SplitText.min.js'));
+        document.getElementsByTagName('head')[0].appendChild(splitext);
+
+        var dynamic = document.createElement('script');
+        dynamic.setAttribute('type', 'text/javascript');
+        dynamic.setAttribute('src', Enabler.getUrl('dynamic.js'));
+        document.getElementsByTagName('head')[0].appendChild(dynamic);
+
+        dynamic.onload = dynamic.onreadystatechange = function() {
+            adConcept = String(dynamicContent.Sprint_ZMOT_Dynamic_Feed_3[0].Concept).toLowerCase();
+            adTemplate = String(dynamicContent.Sprint_ZMOT_Dynamic_Feed_3[0].Template).toLowerCase();
+
+            if (adTemplate.indexOf('devices') !== -1) {
+                adTemplate = 'devices';
+            } else {
+                adTemplate = 'plans';
+            }
+
+            switch (adConcept) {
+                case 'a':
+                    css_path = 'pagecurl.css';
+                    polite_path = 'pagecurl.js';
+                    break;
+                case 'b':
+                    css_path = 'paparazzi.css';
+                    polite_path = 'paparazzi.js';
+                    break;
+                case 'c':
+                    css_path = 'spotlight.css';
+                    polite_path = 'spotlight.js';
+                    break;
+                default:
+                    css_path = 'spotlight.css';
+                    polite_path = 'spotlight.js';
+                    break;
+
+            }
+
+            var css = document.createElement('link');
+            css.setAttribute('rel', 'stylesheet');
+            css.setAttribute('type', 'text/css');
+            css.setAttribute('href', Enabler.getUrl(css_path));
+            document.getElementsByTagName('head')[0].appendChild(css);
+
+            var polite = document.createElement('script');
+            polite.setAttribute('type', 'text/javascript');
+            polite.setAttribute('src', Enabler.getUrl(polite_path));
+            document.getElementsByTagName('head')[0].appendChild(polite);
+
+            polite.onload = polite.onreadystatechange = function() {
+                var extLibJavascript = document.createElement('script');
+                extLibJavascript.setAttribute('type', 'text/javascript');
+                extLibJavascript.setAttribute('src', Enabler.getUrl('https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.18.0_499ba64a23378545748ff12d372e59e9_min.js'));
+                document.getElementsByTagName('head')[0].appendChild(extLibJavascript);
+            }
+        }
+
+        if (Enabler.isPageLoaded()) {
+            checkGreensockReady();
+        } else {
+            Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, checkGreensockReady);
+        };
+
+        function checkGreensockReady() {
+            if (window.TimelineMax) {
+                startLoading(adTemplate);
+            } else {
+                setTimeout(checkGreensockReady, 100);
+            }
+        }
+    }
+    </script>
+    <title>Sprint</title>
+<link rel="stylesheet" type="text/css" href="./css"><script type="text/javascript" src="./SplitText.min.js"></script><script type="text/javascript" src="./dynamic.js"></script><link rel="stylesheet" type="text/css" href="./pagecurl.css"><script type="text/javascript" src="./pagecurl.js"></script><script type="text/javascript" src="./tweenmax_1.18.0_499ba64a23378545748ff12d372e59e9_min.js"></script></head>
+
+<body>
+    <div id="stage" style="visibility: visible;">
+        <div id="banner">
+            <div id="legal" style="opacity: 0;">
+                <div id="legal_copy">Smartphone trade in must be your current working smartphone with a minimum value of $35. Credit applied after trade-in device is received.</div>
+            </div>
+            <div id="legal_rollover" style="opacity: 1;"><u>Restrictions apply</u></div>
+            <div id="logo"></div>
+            <div id="burst"></div>
+            <div id="page1curl" style="transform: matrix(1, 0, 0, 1, -500, -500);"></div>
+            <div id="page2curl" style="transform: matrix(1, 0, 0, 1, -500, -500);"></div>
+            <div id="page3curl" style="transform: matrix(1, 0, 0, 1, -500, -500);"></div>
+            <div id="page4curl" style="transform: matrix(1, 0, 0, 1, -500, -500);"></div>
+            <div id="page1" style="transform: matrix(1, 0, 0, 1, -500, -500);"></div>
+            <div id="page2" style="transform: matrix(1, 0, 0, 1, -500, -500);"></div>
+            <div id="page3" style="transform: matrix(1, 0, 0, 1, -500, -500);"></div>
+            <div id="page4" style="transform: matrix(1, 0, 0, 1, -500, -500);"></div>
+            <div id="image1" style="background-image: url(&quot;https://s0.2mdn.net/ads/richmedia/studio/41451980/4541_20160216144537369_Samsung_GS7_GS7_Opt1.png&quot;);"></div>
+            <div id="cta" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0); background-color: rgb(17, 17, 17);">
+                <div id="cta_copy" style="color: rgb(255, 255, 255);">Get yours</div>
+            </div>
+            <div id="urgency_message" style="opacity: 1;">Limited Time</div>
+            <div id="offer_message">
+                <ul>
+                    <li>
+                        <div id="closing_headline">Get $200</div>
+                    </li>
+                    <li>
+                        <div id="summary_copy">Towards a Samsung Galaxy S7</div>
+                    </li>
+                </ul>
+            </div>
+            <div id="offer_eyebrow_copy" style="visibility: inherit; opacity: 0; transform: matrix(0.6, 0, 0, 0.6, 0, -40); width: 240px; transform-origin: left top 0px;">$200 credit with GS7</div>
+            <div id="primary_message" style="transform: matrix(1, 0, 0, 1, 0, -20);">
+                <div id="primary_copy" style="opacity: 0;">When you trade-in your eligible smartphone</div>
+                <div id="supporting1_copy" style="opacity: 0;">Get $200 on a GS7</div>
+                <div id="supporting2_copy" style="opacity: 0;">Or $200 on a GS7 edge</div>
+            </div>
+            <div id="bgtexture">
+                <div id="spotlight1"></div>
+                <div id="spotlight2"></div>
+            </div>
+            <div id="background_color"></div>
+        </div>
+    </div>
+
+
+</body></html>
