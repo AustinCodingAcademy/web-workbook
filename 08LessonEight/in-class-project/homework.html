@@ -12,9 +12,10 @@
     </p>
 </header>
 
-<body>
-    <main>
-        <div class="left clearfix">
+<body class="clearfix">
+    <main class="clearfix">
+      <!-- left side of screen -->
+        <div class="left">
             <img src="img/keyboard.jpg" class="left_img" />
             <h3>Some stuff about some things</h3>
             <p>
@@ -23,30 +24,32 @@
             <a href="#">Read More</a>
         </div>
 
-        <div class="clearfix">
-            <div class="right_stuff">
+<!-- right side of screen -->
+        <aside class="clearfix rt_container">
+            <div class="right_stuff clearfix">
                 <img src="img/laptop.jpg" class="right_img" />
                 <h3>Some stuff</h3>
                 <p>
                     Bleep bloop beep beep bleep boop.
                 </p>
             </div>
-            <div class="right_stuff">
+            <div class="right_stuff clearfix">
                 <img src="img/desk.jpg" class="right_img" />
                 <h3>Some more stuff</h3>
                 <p>
                     Bleep bloop beep beep bleep boop.
                 </p>
             </div>
-            <div class="right_stuff" class="last">
+            <div class="right_stuff clearfix last">
                 <img src="img/window.jpg" class="right_img" />
                 <h3>Some other stuff</h3>
                 <p>
                     Bleep bloop beep beep bleep boop.
                 </p>
             </div>
-        </div>
+        </aside>
     </main>
+    <!-- bottom of screen -->
     <footer class="clearfix">
 
         <div class="column">
@@ -81,7 +84,7 @@
         </div>
         <div class="column">
             <h4>Transparent Pricing</h4>
-            <p>
+            <p class="transparent">
                 Are you interested in our services? Don't hesitate and contact us.
             </p>
             <a href="#">Check Pricing</a>
