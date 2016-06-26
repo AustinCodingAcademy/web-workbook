@@ -1,10 +1,121 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- my styles -->
+    <link href="css/style.css" rel="stylesheet" /> <!--HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+    <!--WARNING: Respond.js doesn't work if you view the page via file:// 
+    [if lt IE 9]> -->
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]
 </head>
+
 <body>
+    <div class="container-fluid">
+        <div class="row topstuff">
+            <div class="col-sm-12 hidden-xs creatives">
+                <h1 class="my_h1">We're creatives.</h1>
+            </div>
+
+            <!-- not visible on phones -->
+            <div class="row bottomstuff hidden-xs">
+              <!-- left pics -->
+                <div class="col-sm-12">
+                  <div class="leftpics">
+                    <img src="img/mountains.jpg" class="my_img" />
+                    <img src="img/imac.png" class="my_img" />
+                    <img src="img/rock.jpg" class="my_img" />
+                    <img src="img/skyscrapers.jpg" class="my_img" / />
+                  </div>
+                  <div class="rightpic">
+                    <img src="img/suit.jpg" class="suitguy" />
+                  </div>
+
+                </div>
+            </div>
+
+            <!-- visible on phones only -->
+            <div class="row visible-xs-block">
+                <div class="col-xs-12 smallcreatives">
+                    <h1 class="small_h1">We're creatives.</h1>
+                </div>
+              </div>
+              <div class="row visible-xs-block">
+
+                <div class="col-xs-12-centered fantastic">
+                    <div class="col-xs-6-centered">
+                      <h2>A fantastic price.</h2>
+                    </div>
+                    <!-- silver plan amenities -->
+                    <div class="row">
+
+
+                    <div class="col-xs-12 innerfantastic_1">
+                        <h4 class="my_centered">Silver</h4>
+                        <h4 class="my_centered">@euro 20 /m</h4>
+                        <h5 class="my_centered">Basic support</h5>
+                        <h5 class="my_centered">Basic features</h5>
+                        <h5 class="my_centered">Basic documentation</h5>
+                        <h5 class="my_centered light_grey">10 Iterations</h5>
+                        <h5 class="my_centered light_grey">Basic concept</h5>
+                        <h5 class="my_centered light_grey">10 Websites</h5>
+                        <h5 class="my_centered light_grey bandwidth">1 TB Bandwidth</h5>
+                        <a href="#" class="my_button">View plan</a>
+                    </div>
+                    </div>
+                    <!-- gold plan amenities -->
+                    <div class="row">
+
+
+                    <div class="col-xs-12-centered innerfantastic_2">
+                        <h4 class="my_centered">Gold</h4>
+                        <h4 class="my_centered">@euro 40 /m</h4>
+                        <h5 class="my_centered">Premium support</h5>
+                        <h5 class="my_centered">Premium features</h5>
+                        <h5 class="my_centered">Premium documentation</h5>
+                        <h5 class="my_centered light_grey">25 Iterations</h5>
+                        <h5 class="my_centered light_grey">Premium concept</h5>
+                        <h5 class="my_centered light_grey">25 Websites</h5>
+                        <h5 class="my_centered light_grey bandwidth">2.5 TB Bandwidth</h5>
+                        <a href="#" class="my_button">View plan</a>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- My Javascript -->
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Inconsolata::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
 
 </body>
+
 </html>
