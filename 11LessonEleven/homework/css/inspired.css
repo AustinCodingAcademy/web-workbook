@@ -1,0 +1,78 @@
+.intro {
+  width: 100%;
+  height: 470px;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  /*Setting the background-postion to "center" allowed me to crop the top and bottom of the image simultaneously when adjusting the height.*/
+  float: left;
+  color: white;
+}
+
+.inspiration {
+  margin-left: 3%;
+  margin-top: 100px;
+}
+/*Grouped the h1 and p together so that I could move them around together.*/
+
+h1 {
+  font-size: 60px;
+  width: 35%;
+}
+
+#description {
+  font-size: 20px;
+  font-family: arial, sans-serif;
+  width: 42%;
+  line-height: 35px;
+}
+/*Gave the <p> in the inspiration class it's own ID since it has a different font and size than the other <p>'s on the page.*/
+
+.informational {
+  background-color: #F7F7F7;
+  width: 100%;
+  height: 242px;
+  padding-top: 14px;
+  float: left;
+}
+
+.news {
+  width: 47%;
+  height: inherit;
+  float: left;
+  line-height: 25px;
+  margin-left: 3%;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+@media (max-width: 640px) {
+  .intro {
+    background-image: url("../img/bg2.jpg");
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
+  /*The class titled "intro" will have a different background image for a screen width of 640px or lower.*/
+  .inspiration {
+    margin-top: 50px;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  h1 {
+    width:100%;
+  }
+
+  .news {
+    width: 90%;
+    background-color: #F7F7F7;
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  /*The total width of the news class is 100%.  However, the declaration for width is 90% since I needed a left and right padding of 5%.*/
+}
