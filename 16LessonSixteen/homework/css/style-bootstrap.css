@@ -1,21 +1,13 @@
 
-/* General */
-html, body {
-    margin: 0px;
-    padding: 0px;
-    height: 100%;
-    width: 100%;
-    color: #000;
-    font-size: 14px;
-    font-family: Open Sans, serif;
-    font-weight: 100;
-    line-height: 22pt;
-    letter-spacing: 0.2pt;
-    background-size: cover;
-    background-color: #f5f5f5;
-    -webkit-font-smoothing: antialiased;
+.row{
+  outline: 1px red solid;
+}
+div img{
+height: 100%;
+width: 100%;
 }
 
+/* General */
 h2 {
     font-size: 22pt;
     line-height: 39pt;
@@ -38,7 +30,31 @@ a {
     text-decoration: none;
     color: #0693f6;
 }
+.colorbg{
+  background-color: #f4ed48;
+}
 
+
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    color: #000;
+    font-size: 14px;
+    font-family: Open Sans, serif;
+    font-weight: 100;
+    line-height: 22pt;
+    letter-spacing: 0.2pt;
+    background-size: cover;
+    background-color: #f5f5f5;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+/*
 .container {
     width: 1170px;
     margin: auto;
@@ -49,6 +65,8 @@ body > section.container {
     margin-bottom: 30px;
     min-height: 63%;
 }
+*/
+
 
 /* Header */
 header .logo {
@@ -130,8 +148,7 @@ button, .btn {
 }
 
 header .search button:before {
-    /* content: '\e602';
-    font-family: "icon"; */
+
     font-size: 6.5pt;
     margin: 0;
 }
@@ -200,12 +217,28 @@ nav .dropdown-submenu .dropdown-menu {
     margin-top: -1px;
 }
 
+/* Ajust Last two rows
+@media (min-width: 1200px){
+  .last-row1 {
+      position:absolute;
+      left: 0px;
+      top: 900px;
+  }
+  .last-row2 {
+      position: absolute;
+      left: 300px;
+      top: 900px;
+  }
+}
+*/
 
 /* -------- BODY */
-body > section.container {
+/*
+body > .container {
     margin-bottom: 30px;
     min-height: 63%;
 }
+
 
 ul.portfolio-1 {
     padding: 0;
@@ -331,12 +364,12 @@ ul.portfolio-1 > li.big i {
 ul.portfolio-1 > li i:before {
     padding-bottom: 35px;
 }
+*/
+
 
 
 /*----- WORK  DESC ITEMS*/
-.colorbg{
-background-color: #f4ed48;
-}
+/*
 ul.portfolio-1 > li img {
     position: relative;
     transition: 0.3s;
@@ -389,8 +422,10 @@ ul.portfolio-1 > li .work_desc h3 {
     font-size: 13pt;
     line-height: 16pt;
 }
+*/
 
 /* Info text */
+/*
 ul.portfolio-1 > li.info_text {
     padding: 50px 43px 43px 43px;
 }
@@ -417,9 +452,29 @@ button:hover, .btn:hover, button.light:hover, .btn.light:hover, .video .play, .d
 .box-bg, .icon-box.box-bg:hover, .tabs ul li:hover, .input [class^="icon-"], .input [class*="icon-"], .icon-box.normal:hover, .table.zebra tbody tr:nth-child(even), .btn.normal:hover, button.normal:hover, .row.protype .column:nth-child(odd), body > .search .fixing, ul.portfolio-1 li.info_text:hover, ul.portfolio-1 li, ul.portfolio-1 > li.big:hover, ul.portfolio-3 > li:hover .work_desc, ul.portfolio-3 > li.info_text:hover, ul.portfolio-3 > li.big:hover, ul.portfolio-3 > li.info_text, ul.portfolio-3 > li.big, ul.portfolio-4 > li, ul.portfolio-4 > li.info_text:hover, ul.portfolio-4 > li.big, ul.portfolio-4 > li.big:hover, .staff-2, ul.features-1 > li, ul.portfolio-2 li:before, .features-3 {
     background-color: #eee;
 }
+*/
 
 /* Navegation Menu carrusel */
-.pageslider ul.nav {
+.big{
+  padding: 85px;
+}
+.slid-text i{
+  font-size: 65px;
+}
+.slid-text h2{
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: 36px;
+  line-height: 39pt;
+}
+.slid-text p{
+  width: 90%;
+  padding: 15px 0px;
+  line-height: 22pt;
+}
+
+/*
+.pageslider nav {
     padding: 0;
     margin: 0;
     position: absolute;
@@ -428,7 +483,7 @@ button:hover, .btn:hover, button.light:hover, .btn.light:hover, .video .play, .d
     text-align: center;
 }
 
-.pageslider ul.nav li {
+.pageslider nav li {
     width: 11px;
     height: 11px;
     display: inline-block;
@@ -438,7 +493,7 @@ button:hover, .btn:hover, button.light:hover, .btn.light:hover, .video .play, .d
     border: 1px transparent solid;
     position: relative;
 }
-.pageslider ul.nav li.active {
+.pageslider nav li.active {
     background: transparent;
     height: 17px;
     width: 17px;
@@ -479,7 +534,7 @@ ul.portfolio-1 > li > ul.nav li.active {
     width: 12px;
     margin-top: -2px;
 }
-
+*/
 
 
 /* fooder */
@@ -491,19 +546,7 @@ footer {
     height: 50px;
     max-width: 100%;
 }
-.ajax-inject {
-    visibility: hidden;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 999999;
-    background: #eaeaea;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    opacity: 0;
-}
+
 .hide {
     display: none;
 }
@@ -557,6 +600,8 @@ footer .logo {
 footer a {
     opacity: 0.6;
 }
+
+/*
 .mobile-contact-btn {
     color: #222;
     text-align: center;
@@ -577,3 +622,4 @@ ul, menu, dir {
     -webkit-margin-end: 0px;
     -webkit-padding-start: 40px;
 }
+*/
