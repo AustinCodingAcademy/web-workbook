@@ -1,10 +1,229 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Week 8 Exercises</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate CSS plugin-->
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+    <!-- My Styles -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
+
 <body>
 
+    <!-- Code's messsy, basic layout for a small project I'm doing. Follow me on twitter @taylorgrendel for free pie!-->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <img src="http://www.clarktacular.com/png/double15.png" />
+                </button>
+                <a class="navbar-brand" href="#">SANDWICHES</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link Yo Face</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reveal <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">More</a></li>
+                            <li><a href="#">Like</a></li>
+                            <li><a href="#">Sand</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">WITCHES</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="https://stevecutts.files.wordpress.com/2014/10/sandwiches.jpg" alt="..." width="100%">
+                <div class="carousel-caption">
+                    <h2>sandwich People</h2>
+                </div>
+            </div>
+            <div class="item">
+                <img src="http://41.media.tumblr.com/tumblr_lxistixGcO1qlbfwco1_1280.png" alt="..." width="100%">
+                <div class="carousel-caption">
+                    <h2>I feel bad for people and their sandwiches</h2>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Salmon_Cream_Cheese_Sandwiches.jpg" alt="..." width="100%">
+                <div class="carousel-caption">
+                    <h2>Look at these sweet babies!</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+
+
+    <div class="container">
+
+        <div class="row text-center">
+
+            <div class="col-xs-12">
+
+                <h2>About sandwiches</h2>
+                <img src="http://www.clarktacular.com/png/double15.png" id="sandwich">
+
+            </div>
+
+        </div>
+
+        <div class="row four_items text-center">
+
+            <div id="my_1" class="col-md-3 col-sm-6">
+
+                <img src="http://image005.flaticon.com/1/svg/109/109825.svg" />
+                <h3>Define Sandwich<span class="hide_me_four">
+                  kdjhgjjjjjjjjjjj</span></h3>
+                <p>A sandwich is a food item consisting of one or more types of food, such as vegetables, sliced cheese or meat, placed on or between slices of bread, or more generally any dish wherein two or more pieces of bread serve as a container or wrapper for some other food.[1][2][3] The sandwich was originally a portable food item or finger food which began to be popular in the Western World. Today sandwiches in various versions are found worldwide.</p>
+
+            </div>
+
+            <div id="my_2" class="col-md-3 col-sm-6">
+
+                <img src="http://image005.flaticon.com/1/svg/32/32284.svg" />
+                <h3>History<span class="hide_me_four">
+                  kdjhgjjjjjjjjjjj</span></h3>
+                <p>The modern concept of a sandwich using slices of bread (as found within the Western World) can arguably be traced to 18th century Europe. However, the use of some kind of bread or bread-like substance to lie under (or under and over) some other food, or used to scoop up and enclose or wrap some other type of food, long predates the 18th century, and is found in numerous much older cultures worldwide.</p>
+
+            </div>
+
+            <div id="my_3" class="col-md-3 col-sm-6">
+
+                <img src="http://image005.flaticon.com/28/svg/34/34278.svg" />
+                <h3>Etymology<span class="hide_me_four">
+                  kdjhgjjjjjjjjjjj</span></h3>
+                <p>The first written usage of the English word appeared in Edward Gibbon's journal, in longhand, referring to "bits of cold meat" as a "Sandwich".[13] It was named after John Montagu, 4th Earl of Sandwich, an 18th-century English aristocrat. It is said that he ordered his valet to bring him meat tucked between two pieces of bread, and others began to order "the same as Sandwich!"[6][7] It is commonly said that Lord Sandwich was fond of this form of food because it allowed him to continue playing cards, particularly cribbage, while eating, without using a fork, and without getting his cards greasy from eating meat with his bare hands.[6]</p>
+
+            </div>
+
+            <div id="my_4" class="col-md-3 col-sm-6">
+
+                <img src="http://image005.flaticon.com/1/svg/48/48624.svg" />
+                <h3>4th Earl of Sandwich</h3>
+                <p>John Montagu, 4th Earl of Sandwich, PC, FRS (13 November 1718 – 30 April 1792)[1] was a British statesman who succeeded his grandfather Edward Montagu, 3rd Earl of Sandwich as the Earl of Sandwich in 1729, at the age of ten. During his life, he held various military and political offices, including Postmaster General, First Lord of the Admiralty, and Secretary of State for the Northern Department, but is perhaps best known for the claim that he was the eponymous inventor of the sandwich.</p>
+
+            </div>
+
+        </div>
+
+        <div class="">
+
+            <div class="">
+
+                <br>
+                <a href="#IDontExist" class="my_button">Click Me!</a>
+                <br>
+                <img src="https://upload.wikimedia.org/wikipedia/en/c/ca/Master_Shake.png" class="my_shake"/>
+
+            </div>
+
+        </div>
+
+        <div class="">
+
+            <div class="">
+
+                <h3>Euthyphro and Socrates: The Sandwich</h3>
+                <p>— Well, Socrates, I am happy to tell you what a sandwich is, as I have great knowledge of these things as you know.<br>— Thank you, Euthyphro, I will be glad to listen to you, for you are a learned man and I am just a poor beggar. So tell me, please, how can we know that which is a sandwich, apart from those things that are not sandwiches?<br>— Socrates, it could not be more simple. A sandwich is anything edible held in a container that is also edible.<br>— I see; that is very clear indeed. So this taco is a sandwich.<br>— No Socrates, that is a taco. A sandwich is something quite different, as you may quickly see by noting that they are called by different names.<br>— And yet, Euthyphro, here we have some soy ground beef—surely this is edible—and as you see, it is held in this container, which is a fried tortilla, and which I eat along with the material inside. Surely this is a sandwich!<br>— Well, Socrates, that is not quite right. I will try to be more clear: a sandwich is that which is edible, held in a container made of bread, surely.<br>— So then this hot dog, of course, is a sandwich. Thank you, Euthyphro!<br>— Well Socrates… a hot dog is something very like a sandwich, and yet it does not seem to me to be exactly a sandwich either, somehow. I see where you have misunderstood—let me clarify. A sandwich consists of some edible material, in between TWO pieces of bread, which must be separate from one another.<br>— I see; that is very clear indeed. So this pizza placed face down atop this other pizza, this is a sandwich.<br>— No, Socrates, I see that you do not understand at all. That is nothing like a sandwich.<br>— Now Euthyphro, how can this be? For truly here I see edible items—those are cheese, tomato sauce, and vegan pepperoni—and they are indeed to be found in between two pieces of bread—that is the pizza crust. How can this not be a sandwich, then?<br>— Well, Socrates, you have twisted my words around somehow. I did not mean ANY edible items in between ANY type of bread; I meant something rather more specific.<br><span class="wisdom">— Now Euthyphro, you are teasing a poor old man. You told me you would explain what a sandwich was, so that I might learn from your wisdom, yet now you seem to have told me nothing at all.</span><br>— Socrates, I will try to explain so that you might understand. A sandwich must be easily held in the hands, whereas two pizzas atop one another, as I’m sure you can see, are quite impossible to hold easily in the hands, as the whole is much too large and floppy.<br>— Ah, thank you Euthyphro, now I feel we are getting somewhere. Truly, now I think I understand. If a sandwich is something edible in between two pieces of bread, with the whole composed in such a way as to be easily held within the two hands, then obviously three pieces of bread, held together in the hands, is a sandwich.<br>— I do not see what you mean, Socrates. Surely a stack of pieces of bread is simply a loaf of bread, as any man knows.<br>— Now Euthyphro, you seem to be teasing me again, for look, here is a piece of edible bread, placed in between two other pieces of bread, the whole of which, you must agree, I hold quite easily in my hands, withered and shaking though they may be.<br>— Well Socrates, it is true, now that I think on it, that these three pieces of bread do in fact ascribe to my earlier definition. And yet, anyone could tell you that this is not a sandwich.<br>— Then Euthyphro I think you must start over, if you are ever to help me understand. Come now, don’t keep an old man waiting. Surely one as learned as you should easily be able to explain what a sandwich is to a poor old fool such as myself. Please begin again, and this time try to be more clear.<br>— Socrates I really must go, I will be late for my appointment.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Take this Survey
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Who Do You Love More?</h4>
+      </div>
+      <div class="modal-body">
+        <form action="https://docs.google.com/forms/d/1m9Twnqh_XciwLfsY09uVDb_UREVv-xqwqJRsmLiNWsI/formResponse"
+method="POST" target="_self" onsubmit="">
+  <label for="entry_1408561862"></label>
+  <label>Kova</label>
+  <input type="radio" name="entry.247932720" value="Kova" role="radio"
+  aria-label="Kova">
+  <label>Coby</label>
+  <input type="radio" name="entry.247932720" value="Coby" role="radio"
+  aria-label="Coby">
+  <label>Liam</label>
+  <input type="radio" name="entry.247932720" value="Liam" role="radio"
+  aria-label="Liam">
+  <input type="hidden" name="draftResponse" value="[,,&quot;3173522748939615843&quot;]
+">
+  <input type="hidden" name="pageHistory" value="0">
+  <input type="hidden" name="fbzx" value="3173522748939615843">
+  <input type="submit" name="submit" value="Submit">
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--scroll plugin-->
+    <script src="js/scroll-animate.js"></script>
 </body>
 </html>
