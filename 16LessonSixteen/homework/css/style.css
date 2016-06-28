@@ -18,7 +18,6 @@ p {
   background-color: #F4ED47;
   height:500px;
   padding: 60px 40px 20px 40px;
-  /*margin-top: 16px;*/
 }
 .my-image {
   height:300px;
@@ -29,9 +28,10 @@ p {
 .box-image {
   height:300px;
 }
-/*.imgsize {
-  height:225px;
-}*/
+.box-images {
+  height:300px;
+  margin-left: -20px;
+}
 #more {
   margin-top: 20px;
   height:225px;
@@ -41,7 +41,7 @@ p {
   padding: 20px 40px 20px 40px;
   height:225px;
   width: 92%;
-MARGIN-LEFT: 13px;
+  MARGIN-LEFT: 13px;
 }
 .my-rows {
   margin-top: 30px;
@@ -50,13 +50,13 @@ MARGIN-LEFT: 13px;
 .yellow2 {
   background-color: #EEEEEE;
   height:500px;
-  padding: 80px 40px 20px 40px;
+  padding: 60px 40px 20px 40px;
 }
 .yellow2 p{
   padding: 20px 0px 20px 0px;
 }
 
-@media (min-width: 768px) and (max-width: 991px){
+@media (min-width: 768px) and (max-width: 1024px){
   .yellow {
     height:400px;
     padding-top:15px;
@@ -75,6 +75,11 @@ MARGIN-LEFT: 13px;
     height:600px;
     margin-top: 30px;
   }
+  .box-images {
+    height:600px;
+    margin-top: 30px;
+    margin-left: 0px;
+  }
   .my-rows {
     margin-top: -10px;
     margin-left: -15px;
@@ -85,12 +90,16 @@ MARGIN-LEFT: 13px;
 }
 @media (max-width:767px) {
   .yellow {
-    height:700px;
+    height:800px;
     padding-top: 10px;
+    width:82%;
+    margin-left: 30px;
   }
   .yellow2 {
-    height:700px;
+    height:800px;
     padding-top: 10px;
+    width:82%;
+    margin-left: 12px;
   }
   .my-image {
   margin-top: 10px;
@@ -99,7 +108,12 @@ MARGIN-LEFT: 13px;
   height:550px;
   margin-top: 10px;
 }
+.box-images {
+  height:550px;
+  margin-top: 10px;
+}
 .my-rows {
-  margin-top: -30px;
+  margin-top: -10px;
+  margin-left: 5px;
 }
 }
