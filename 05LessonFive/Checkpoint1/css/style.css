@@ -1,43 +1,51 @@
-.lawn {
-    width: 100%;
-    height: 300px;
+#bothboxes img { /*Container with both boxes*/
+  width:500px;
+  float:left;
+  display: inline-block;
+  position:relative;
 }
 
-.lawn h1 {
-    text-align: center;
-    font-family: monospace;
-    color: darkgray;
+#graybox { /*Gray box on the right*/
+  height:400px;
+  width:500px;
+  background-color:#F0F0F0;
+  position:fixed;
+  max-width:100%;
+  display: inline-block;
 }
 
-.lawn {
-    background-image: url(../img/banner-garden-stmichaelsmount.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+#boxinsides { /*Contents of gray box on the right*/
+  position: relative;
+  top:35%;
+  transform: translateY(-50%);
 }
 
-.left {
-    float: left;
-    width: 60%;
-    height: 300px;
-    margin-left: 260px;
-    background-color: lightgray;
+#berrywords { /*The non-link text*/
+  text-align: center;
+  padding-top: 25%;
+  padding-left:10px;
+  padding-right:10px
 }
 
-.left h1 {
-    text-align: center;
+h2 {
+  color:##252b3b;
+  font-size: 1.9em;
 }
 
-.left p {
-    text-align: center;
+p {
+  color:##555;
+  padding-bottom: 20px;
 }
 
-body p {
-    font-family: monospace;
-    font-size: 12px;
-    text-decoration: underline;
+#readmore { /*The readmore button*/
+    border: 2px solid #555;
+    border-style: bold;
+    padding: 5px;
+    width: 100px;
+    margin: 0 auto;
 }
 
-.p {
-    text-decoration: none;
+#readmore * {
+  text-decoration: none;
+  color: #252b3b;
 }
