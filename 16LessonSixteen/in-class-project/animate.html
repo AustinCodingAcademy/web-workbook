@@ -3,14 +3,74 @@
 
 <head>
     <title>Animate CSS</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="css/my-style.css">
 </head>
 
 <body>
 
     <main>
-        <h1>Animate.css is a CSS Library</h1>
+        <!-- <h1>Animate.css is a CSS Library</h1> -->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+          Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                <form action="https://docs.google.com/forms/d/1CigJzVluug5NMGQfP8so3m2gt8GPk59Ju4aUQpgs3Lk/formResponse"
+                method="POST" target="_self" onsubmit="">
+                  <label for="entry_720455122">how old are you</label>
+                  <label>0-20</label>
+                  <input type="radio" name="entry.1212051730" value="0-20" role="radio"
+                  aria-label="0-20">
+                  <label>21-35</label>
+                  <input type="radio" name="entry.1212051730" value="21-35"
+                  role="radio" aria-label="21-35">
+                  <label>36-50</label>
+                  <input type="radio" name="entry.1212051730" value="36-50"
+                  role="radio" aria-label="36-50">
+                  <label>50+</label>
+                  <input type="radio" name="entry.1212051730" value="50+" role="radio"
+                  aria-label="50+">
+                  <label for="entry_1867356990">favorite color</label>
+                  <label>blue</label>
+                  <input type="radio" name="entry.133076667" value="blue" role="radio"
+                  aria-label="blue">
+                  <label>red</label>
+                  <input type="radio" name="entry.133076667" value="red" role="radio"
+                  aria-label="red">
+                  <label>yellow</label>
+                  <input type="radio" name="entry.133076667" value="yellow"
+                  role="radio" aria-label="yellow">
+                  <input type="hidden" name="draftResponse" value="[,,&quot;-4567437501965710500&quot;]
+                ">
+                  <input type="hidden" name="pageHistory" value="0">
+                  <input type="hidden" name="fbzx" value="-4567437501965710500">
+                  <input type="submit" name="submit" value="Submit">
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
     </main>
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 
 </html>
