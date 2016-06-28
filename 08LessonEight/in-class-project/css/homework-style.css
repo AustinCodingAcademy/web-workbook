@@ -1,0 +1,145 @@
+*{
+  font-family: Arial;
+  font-size: 12px;
+  color: gray;
+}
+
+.b1{
+  font-size: 25px;
+}
+
+.b2{
+  font-size: 15px;
+}
+
+body{
+  margin: 0px;
+}
+
+body>div{
+  width: 100%;
+}
+
+body>div>*{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
+a{
+  color: green;
+}
+
+#title{
+  width: 580px;
+}
+
+#title>*{
+  text-align: center;
+}
+
+.article{
+  background-color: #f3f3f3;
+}
+
+#main{
+  margin-right: auto;
+  margin-left: auto;
+  width: 694px;
+}
+
+#main>*{
+  display: inline-block;
+  vertical-align: top;
+  height: 300px;
+}
+
+#main>div:first-child{
+  margin-right: 20px;
+  padding: 15px;
+  width: 320px;
+  height: 270px;
+}
+
+#main>div:first-child img{
+  border-radius: 5px;
+  width: 100%;
+}
+
+#main>div:first-child a{
+  float: right;
+}
+
+#main>div:not(:first-child)>div.article{
+  position: relative;
+  padding: 10px;
+  height: 70px;
+  width: 300px;
+  margin: 0px;
+}
+
+#main>div:not(:first-child)>div.article:nth-child(even){
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#main>div:not(:first-child)>div.article>*{
+  display: inline-block;
+  vertical-align: top;
+}
+
+#main>div:not(:first-child)>div.article>div{
+  width: 60%;
+}
+
+#main>div:not(:first-child)>div.article>div>p:first-child{
+  margin-top: 0px;
+}
+
+#main>div:not(:first-child) img{
+  border-radius: 5px;
+  margin-right: 5px;
+  height: 100%;
+  width: 35%;
+}
+
+#main>div:not(:first-child)>div>div{
+  display: inline-block;
+  width: 2%;
+}
+
+#footer{
+  width: 690px;
+  height: 130px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin-bottom: 0px;
+}
+
+#footer>div{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-content{
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -4px;
+  padding-left: 5%;
+  height: 100px;
+  width: 27.8%;
+}
+
+.footer-content:not(:first-child){
+  border-left: 2px solid gray;
+}
+
+.footer-content ul{
+  padding-left: 15px;
+  list-style-image: url(https://icon.uiowa.edu/help/instructors/wp-content/uploads/sites/2/2013/05/checkmark_green.gif);
+}
+
+.footer-content a{
+  float: right;
+}
