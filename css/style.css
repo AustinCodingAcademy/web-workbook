@@ -3,25 +3,9 @@
     -webkit-box-sizing: border-box;
      box-sizing: border-box;
 }
-header {
-  width:100%;
-  height:100px;
-  background-color: white;
-}
 
-h1{
-  color:#22292e;
-  font-family:SignPainter-HouseScript;
-  text-align:center;
-  vertical-align: middle;
-  font-size:60px;
-  padding-top:30px;
-  font-weight: bolder;
-  margin: 0 auto;
-  width:50%;
-}
 
-nav {
+/*nav {
   width:100%;
   height:35px;
   background-color:#22292e;
@@ -46,11 +30,22 @@ nav p {
   vertical-align: middle;
   display:inline-block;
   margin:10px;
+}*/
+nav{
+  font-family: 'Raleway', 'Helvetica Neue',sans-serif;
+
 }
+.navbar-brand{
+  font-family:SignPainter-HouseScript;
+  color:white;
+  font-size: 40px;
+  vertical-align: middle;
+}
+
 #main {
   width:100%;
   height:750px;
-  background-image: url("/css/images/blacksandbeach.jpeg");
+  background-image:url("/css/images/blacksandbeach.jpeg");
   background-size: cover;
   margin-bottom:20px;
   position: relative;
@@ -154,7 +149,7 @@ td:hover .links{
   position:relative;
 }
 
-div a {
+.project a {
   text-decoration: none;
   border:2px white solid;
   padding:5px;
@@ -317,4 +312,95 @@ h3 {
 }
 #icon:hover {
   -webkit-filter:grayscale(0%);
+}
+
+
+.navbar-default {
+  background-color: #000000;
+  border-color: #6dc6ca;
+}
+.navbar-default .navbar-brand {
+  color: #ffffff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #faffff;
+}
+.navbar-default .navbar-text {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #faffff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #000000;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #faffff;
+  background-color: #6dc6ca;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #6dc6ca;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #faffff;
+  background-color: #6dc6ca;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #faffff;
+  background-color: #6dc6ca;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #faffff;
+  background-color: #6dc6ca;
+}
+.navbar-default .navbar-toggle {
+  border-color: #6dc6ca;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #6dc6ca;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-link {
+  color: #ffffff;
+}
+.navbar-default .navbar-link:hover {
+  color: #faffff;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #faffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #faffff;
+    background-color: #6dc6ca;
+  }
 }
