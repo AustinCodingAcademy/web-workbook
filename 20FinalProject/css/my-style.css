@@ -1,0 +1,127 @@
+/*navbar stylings*/
+
+.stego {
+    height: 60px;
+}
+.navbar-brand {
+    padding: 0;
+}
+.navbar {
+    background-color: grey;
+}
+#my_links {
+    color: white;
+    margin-right: 25px;
+}
+
+/*end navbar stylings*/
+
+/*begin home stylings*/
+
+.home {
+    background-image: url(../img/home.jpg);
+    background-size: 100% 100%;
+    height: 800px;
+    color: white;
+    text-align: center;
+}
+.home h1 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 40pt;
+    padding-top: 300px;
+    margin-bottom: 50px;
+}
+.home p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 14pt;
+}
+.home_nav_img {
+    margin-top: 50px;
+    height: 25px;
+    background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+    .home {
+        background-image: url(../img/phone_home.png);
+        background-size: cover;
+        height: 700px;
+    }
+    .home h1 {
+        padding-top: 200px;
+    }
+    .home_nav_img {
+        margin-top: 100px;
+    }
+}
+/*end home stylings*/
+
+
+/*begin about me stylings*/
+
+.about_me {
+    background-image: url(../img/background1.png);
+    height: 825px;
+    color: white;
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+}
+.my_h2 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+    margin-top:100px;
+}
+.my_p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18pt;
+    margin-bottom: 50px;
+}
+.bio_icon {
+    height: 225px;
+    margin-top: 50px;
+    border: 5px solid;
+    border-color: #996600;
+    border-radius: 50%;
+}
+#wrapper .info {
+    font-family: 'Open Sans Condensed', sans-serif;
+    visibility: hidden;
+}
+#wrapper:hover .info {
+    visibility: visible;
+}
+.info li {
+    list-style: none;
+}
+.info a {
+    text-decoration: none;
+    color: white;
+}
+
+/*tablet and phone about me stylings*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #wrapper .info {
+        visibility: visible;
+    }
+    .about_me {
+        height: 950px;
+    }
+}
+@media (max-width: 767px) {
+    .about_me {
+        height: 2000px;
+    }
+    #wrapper .info {
+        visibility: visible;
+    }
+}
+
+/*end about me stylings*/
+
+/*begin developer stylings*/
+.developer {
+  height:800px;
+  background-color: #729FAD;
+}

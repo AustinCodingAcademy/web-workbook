@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,25 +10,231 @@
     <!-- css reset-->
     <link rel="stylesheet" href="css/css-reset.css" />
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- font awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- hover effects -->
+    <link href="css/hover.css" rel="stylesheet" media="all" />
     <!-- my styles -->
     <link href="css/my-style.css" rel="stylesheet" />
+    <!-- owlcarousel -->
+    <link rel="stylesheet" href="css/owl-carousel.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
+
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- My Javascript -->
-    <script src="js/main.js"></script>
+        <!-- navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand"><img class="stego" src="https://cdn3.iconfinder.com/data/icons/prehistoric-animals/100/17-512.png" /></a>
+                </div>
 
-  </body>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a id="my_links" href="#home">HOME</a></li>
+                        <li><a id="my_links" href="#about_me">ABOUT ME</a></li>
+                        <li><a id="my_links" href="#developer">DEVELOPER</a></li>
+                        <li><a id="my_links" href="#educator">EDUCATOR</a></li>
+                        <li><a id="my_links" href="#maker">MAKER</a></li>
+                        <li><a id="my_links" href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <!-- end navbar -->
+
+        <!-- greeting, w zig zag border? arrow with smooth scroll -->
+
+        <div id="home" class="home container-fluid text-center">
+            <h1>Hi, I'm Nicole.</h1>
+            <p>
+                I LOVE SCIENCE + MAKING THINGS LOOK NICE + MAKING PEOPLE FEEL EMPOWERED.
+            </p>
+            <div>
+                <a href="#about_me" class="scroll"><img class="home_nav_img" src="img/arrow.png" /></a>
+            </div>
+        </div>
+
+
+        <!-- about me w/pics and key areas of experience expertise-->
+        <div id="about_me" class="about_me container-fluid">
+            <div class="row">
+                <h2 class="my_h2">About Me.</h2>
+                <p class="my_p">
+                    I’m a driven and hard-working creative-type who is still deeply in touch with my analytical side &mdash; imagine an IRL Miss Frizzle with marginally better fashion sense. I’ve managed and motivated classrooms and colleagues alike with my enthusiasm, flexibility,
+                    and can-do attitude. Recently, I’ve dipped my toes into web development and feel like I’ve finally found the sweet, sweet convergence of problem-solving, aesthetics, user-experience, and a life-long hunger for new knowledge.
+                </p>
+            </div>
+
+            <!-- education and work experience icons -->
+            <div class="row">
+                <div class="col-sm-4 circle  text-center" id="wrapper">
+                    <a href="www.sfasu.edu"><img class="bio_icon" src="img/sfa.gif" /></a>
+                    <ul class="info">
+                        <h4 class="info"><a href="www.sfasu.edu">Stephen F. Austin State University</a></h4>
+                        <li>
+                            <em>Cum laude</em> graduate, class of 2005
+                        </li>
+                        <li>
+                            B.S. in Biology
+                        </li>
+                        <li>
+                            Concentration in wildlife
+                        </li>
+                        <li>
+                            Combined Science &amp; Mathematics minor
+                        </li>
+                        <li>
+                            Participated in several research projects, such as with the <a href="http://www.harding.edu/plummer/herp/pdf/hayesrep10.pdf">Mediterranean Gecko</a> and the <a href="http://www.srs.fs.usda.gov/pubs/ja/ja_pierce001.pdf">Texas Rat Snake</a>
+                        </li>
+                        <li>
+                            Worked as both a science teaching &amp; research assistant
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="col-sm-4 circle" id="wrapper">
+                    <a href="www.austincodingacademy.com"><img class="bio_icon" src="img/aca.jpg" /></a>
+                    <ul class="info">
+                        <h4 class="info"><a href="www.austincodingacademy.com">Austin Coding Academy</a></h4>
+                        <li>
+                            Attended Spring 2016 Intro course
+                        </li>
+                        <li>
+                            Currently enrolled in Intermediate course
+                        </li>
+                        <li>
+                            Gained fluency in HTML, CSS, Bootstrap, &amp; responsive web design
+                        </li>
+                        <li>
+                            Some experience with PHP, Javascript &amp; JQuery
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 circle" id="wrapper">
+                    <a href="www.roundrockisd.org"><img class="bio_icon" src="img/rrisd.png" /></a>
+                    <ul class="info">
+                        <h4 class="info"><a href="www.roundrockisd.org">Round Rock ISD</a></h4>
+                        <li>
+                            2011-Present
+                        </li>
+                        <li>
+                            Composite Science 8-12 Certification
+                        </li>
+                        <li>
+                            Courses include: Chemistry, PreAP Biology, AP Environmental Science
+                        </li>
+
+                        <li>
+                            10 years of experience in science education
+                        </li>
+                        <li>
+                            2 years experience as PLC lead
+                        </li>
+                        <li>
+                            Member of the Curriculum Leadership Cohort
+                        </li>
+                        <li>
+                            Player of bubble soccer, cheerleader of students, overall scientific rockstar
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- web design w linked carousel -->
+        <div id="developer" class="developer container-fluid">
+          <div class="row">
+            <div class="col-xs-12 text-center">
+              <h2 class="my_h2">Developer .</h2>
+              <p class="my_p">
+                I'm really digging web design right now. Here are a few examples of work we did in class, but keep in mind &mdash; these assignments were designed to help us put new skills to use as we were learning. I hope this portfolio site serves as a testament to my ability to make something truly beautiful, and I'm psyched to help you make your vision a reality.
+              </p>
+            </div>
+            <!-- Owl Carousel -->
+            <div class="col-xs-12 owl-carousel">
+                    <div> Your Content </div>
+                    <div> Your Content </div>
+                    <div> Your Content </div>
+                    <div> Your Content </div>
+                    <div> Your Content </div>
+                    <div> Your Content </div>
+                    <div> Your Content </div>
+          </div>
+          </div>
+
+        </div>
+        <!-- parallax background window -->
+
+        <!-- education work experience w/ photo carousel-->
+        <div id="educator">
+
+        </div>
+        <!-- parallax background window -->
+        <!-- etsy shop -->
+        <div id="maker">
+
+        </div>
+        <!-- pic parallax -->
+
+        <!-- contact w/ social media icons -->
+        <div id="contact">
+
+        </div>
+
+
+
+
+
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- My Javascript -->
+        <script src="js/main.js"></script>
+        <!-- Fonts -->
+
+        <!-- Rock Salt -->
+        <script type="text/javascript">
+            WebFontConfig = {
+                google: {
+                    families: ['Open+Sans+Condensed:300:latin', 'Gudea::latin', 'Rock+Salt::latin']
+                }
+            };
+            (function() {
+                var wf = document.createElement('script');
+                wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+                wf.type = 'text/javascript';
+                wf.async = 'true';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(wf, s);
+            })();
+        </script>
+
+
+    </body>
+
 </html>
