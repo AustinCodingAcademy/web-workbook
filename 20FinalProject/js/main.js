@@ -13,9 +13,14 @@ $(function() {
     }
   });
 });
+// carousel
+<script>
+    $(function(){
 
-// Owl Carousel
+        $('.carousel-control').click(function(e){
+            e.preventDefault();
+            $('#carousel-example-generic').carousel( $(this).data() );
+        });
 
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
-});
+    });//END document.ready
+</script>
