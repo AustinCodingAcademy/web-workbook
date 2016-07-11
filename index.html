@@ -14,10 +14,11 @@
 
 <body>
 
+  <?php include(".//header.inc.php"); ?>
   <!--   HEADER -->
   <header>
     <!-- collapse menu -->
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
           <div class="navbar-header">
             <button class="collapsed navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
               <span class="icon-bar"></span>
@@ -25,7 +26,7 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a href=".//index.html" class="navbar-brand">Salvador Rodriguez</a>
+            <a href=".//index.html" class="navbar-brand">Salvador Rodriguez, (512) 652 6833</a>
             <!-- <div class="logo">
               <a href="../index.html">
                 <img alt="Studio" src="../img/logo-dark.png">
@@ -47,7 +48,7 @@
               </div>
 
               <li class="dropdown">
-                <a href=".//index.html" data-toggle="dropdown">PORTAFOLIO<span class="caret"</span>
+                <a href="#portfolio" data-toggle="dropdown">PORTFOLIO<span class="caret"</span>
                 </a>
                 <ul class="dropdown-menu">
                   <li><a href="#webdesign-portfolio">WEB DESIGN</a></li>
@@ -66,16 +67,17 @@
                       <i class="fa fa-caret-right" aria-hidden="true"></i>
                     </a>
                     <ul class="dropdown-menu sub-menu">
-                      <li><a href="#">Final Project</a></li>
-                      <li><a href="#">Lesson2</a></li>
-                      <li><a href="#">Lesson3</a></li>
-                      <li><a href="#">Lesson4</a></li>
-                      <li><a href="#">Lesson5</a></li>
-                      <li><a href="#">Lesson6</a></li>
-                      <li><a href="#">Lesson7</a></li>
-                      <li><a href="#">Lesson8</a></li>
-                      <li><a href="#">Lesson9</a></li>
-                      <li><a href="#">Lesson10</a></li>
+                      <li><a href="./20FinalProject/">Final Project</a></li>
+                      <li><a href="./19LessonNineteen/">Lesson19</a></li>
+                      <li><a href="./18LessonEighteen/">Lesson18</a></li>
+                      <li><a href="./17LessonSeventeen/">Lesson17</a></li>
+                      <li><a href="./16LessonSixteen/">Lesson16</a></li>
+                      <li><a href="./15LessonFifteen/">Lesson15</a></li>
+                      <li><a href="./14LessonFourteen/">Lesson14</a></li>
+                      <li><a href="./13LessonThirteen/">Lesson13</a></li>
+                      <li><a href="./12LessonTwelve/">Lesson12</a></li>
+                      <li><a href="./10LessonEleven">Lesson11</a></li>
+                      <li><a href="./10LessonTen/">Lesson10</a></li>
                     </ul>
                   </li>
 
@@ -84,8 +86,8 @@
                   <li><a href="#">JAVA-WORKBOOK</a></li>
                 </ul>
               </li>
-              <li><a href=".//reference.html">REFERENCES/CLIENTS</a> </li>
-              <li><a href="#">RESUME</a> </li>
+              <li><a href=".//reference.html">CLIENTS</a> </li>
+              <li><a href="#">ABOUT</a> </li>
               <li><a href=".//contact.html">CONTACT</a> </li>
             </ul>
           </div>
@@ -93,452 +95,408 @@
   </header> <!-- End of header -->
 
 
+
+  <!--************************************************-->
+  <!-- Modal I LIKE THIS -->
+    <div class="modal fade" id="myIlikeModal" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Do you like this artwork?</h4>
+          </div>
+          <div class="modal-body">
+            <form action="https://docs.google.com/forms/d/1z7Krv7MtxJgG6_kvZJlf9cYwiPRNwwYwUgSUZL_MR-k/formResponse"
+            method="POST" target="_self" onsubmit="">
+                <br>
+                <label class="contact-label" for="entry_1065176203">How much do you like this artwork? * *</label>
+                <!-- <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label> -->
+
+                <label> None </label>
+                <input type="radio" name="entry.178384925" value="1" role="radio"
+                aria-label="1" required aria-required="true">
+                <label class="pd10right" for="group_178384925_1">1</label>
+                <input type="radio" name="entry.178384925" value="2" role="radio" aria-label="2"
+                required aria-required="true">
+                <label class="pd10right" for="group_178384925_2">2</label>
+                <input type="radio" name="entry.178384925" value="3" role="radio" aria-label="3"
+                required aria-required="true">
+                <label class="pd10right" for="group_178384925_3">3</label>
+                <input type="radio" name="entry.178384925" value="4" role="radio" aria-label="4"
+                required aria-required="true">
+                <label class="pd10right" for="group_178384925_4">4</label>
+                <input type="radio" name="entry.178384925" value="5" role="radio" aria-label="5"
+                required aria-required="true">
+                <label class="pd10right" for="group_178384925_5">5</label>
+                <label> A Lot </label>
+
+                <label class="contact-label" for="entry_264825935">What&apos;s your name?</label>
+                <input class="contact-input" type="text" name="entry.264825935"
+                value="" dir="auto" aria-label="What&apos;s your name?  " title="">
+
+                <label class="contact-label" for="entry_818316464">How old are you?</label>
+                <input type="text" name="entry.818316464" value=""
+                dir="auto" aria-label="How old are you?  " title="">
+
+                <label class="contact-label" for="entry_1041715806">What&apos;s your email?</label>
+                <input class="contact-input" type="text" name="entry.1041715806"
+                value="" dir="auto" aria-label="What&apos;s your email?  " title="">
+                <input  class="contact-input"  type="hidden" name="draftResponse" value="[,,&quot;-514453878118199693&quot;]
+              ">
+              <br><br>
+                <input  class="contact-input"  type="hidden" name="pageHistory" value="0">
+                <input  class="contact-input"  type="hidden" name="fbzx" value="-514453878118199693">
+
+                <input  class="btn btn-filled" type="submit" name="submit" value="Submit your Opinion">
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
   <!--   MAIN -->
   <section class="container">
 
-      <!-- HEADER WEB PORTFOLIO-->
-      <div id="webdesign-portfolio" class="row portfolio-header">
-        <div class="title-header  col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <h3>WEB DESIGN PORTFOLIO</h3>
-        </div>
+  <!-- HEADER WEB PORTFOLIO-->
+
+   <!-- Parallax img definitions -->
+   <div class="parallax-mirror parallax-size">
+         <img class="parallax-slider" src="./img/design_1.jpg" style="height: 1427px;">
+   </div>
+   <div class="parallax-mirror parallax-size">
+         <img class="parallax-slider" src="./img/wine-bg.jpg" style="height: 1427px;">
+   </div>
+   <div class="parallax-mirror parallax-size">
+         <img class="parallax-slider" src="./img/book_1.jpg" style="height: 1427px;">
+   </div>
+    <div class="parallax-mirror parallax-size">
+          <img class="parallax-slider" src="./img/inspiration_1.jpg" style="height: 1427px;">
+    </div>
+    <div class="parallax-mirror parallax-size">
+          <img class="parallax-slider" src="./img/morning_6.jpg" style="height: 1427px;">
+    </div>
+
+    <!-- IMAGE 1 parallax -->
+    <div id="portfolio" class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="./img/design_1.jpg" data-natural-width="750" data-natural-height="763" style="height: 616px;">
+      <h1 class="text-center" style="padding-top:100px; color:black;">PORTFOLIO</h1>
+
+      <div class="left col-lg-5, col-md-5">
+        <h1 class="text-center" style="padding-top:10px">Developer and Webpage Designer</h1>
+          <p style="text-align:left;padding-left: 50px;padding-top:50px;">
+	           I feel confident that my extensive education and over 20 years experience developing large applications with Power Builder and SQL Server, and recently on HTML, CSS, PHP and Ajax are apropriate for you project.
+           </p>
+           <div style="height:50px">
+             <img alt="naehs" style="width:50px;height:50px;"src="..//img/naehs_logo.jpg">
+             <img alt="itesm" style="width:50px;height:50px;"src="..//img/itesm_1.jpg">
+             <img alt="powerbuilder" style="width:50px;height:50px;"src="..//img/powerbuilder_2.jpg">
+             <img alt="sql" style="width:50px;height:50px;"src="..//img/sql.jpg">
+           </div>
+           <div style="padding-top:50px">
+              <a class="wsite-button wsite-button-large wsite-button-normal" href=".//contact.html">
+                <span class="wsite-button-inner"> Contact me </span>
+              </a>
+              <a class="wsite-button wsite-button-large wsite-button-highlight" href="http://youtu.be/VlURuZWSoXw">
+                <!-- <i class="fa fa-youtube-play" aria-hidden="true" style="font-size:20px;"></i> -->
+                <!-- <img alt="play" style="height:20px;" src > -->
+                <span class="wsite-button-inner">See my works</span>
+              </a>
+              <div style="height: 0px; overflow: hidden;"></div>
+           </div>
       </div>
+    </div>
 
-      <!-- FIRST WEB PROJECT My Art webpage --------------->
-      <div class="row project-row">
-        <!-- Small Image in Carousel -->
-        <div class="project-slider col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <!-- IMAGE 2 parallax -->
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-position="top" data-image-src="./img/wine-bg.jpg" data-natural-width="1108" data-natural-height="402" style="height: 416px;">
+      <h1 class="text-center" style="padding-top:100px">WINERY</h1>
+      <br><br>
+      <div class="col-sm-8 col-sm-offset-2 visible-lg visible-md">
+        <img alt="Pic" class="mb24 animated bounce" src="img/wine9.png" height="180px">
+        <img alt="Pic" class="mb24 animated bounce" src="img/wine10.png" height="180px">
+        <img alt="Pic" class="mb24 animated bounce" src="img/wine11.png" height="180px">
+      </div>
+    </div>
 
-          <div id="mycarousel-20" class="small carousel slide auto-loop"  data-ride="carousel">
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <div class="slid-img">
-                      <img alt="art-work" src=".//20FinalProject/img/Boca-de-Potrerillos.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="slid-img">
-                      <img alt="art-work" src=".//20FinalProject/img/Camino-a-ex-hacienda-del-muerto.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="slid-img">
-                      <img class="img-vert" alt="art-work" src=".//20FinalProject/img/El-Carmen.jpg">
-                    </div>
-                </div>
+    <!-- THIRD WEB PROJECT Winer -->
+    <div class="project-row">
+      <!-- Small Image in Carousel -->
+      <div class="project-slider col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+        <div id="mycarousel-15" class="small carousel slide auto-loop"  data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                  <div class="slid-img">
+                    <img alt="art-work" src="..//15LessonFifteen/Checkpoint3/img/wine12.jpg">
+                  </div>
               </div>
-            <!-- middle controls -->
-            <ul class="nav carousel-indicators ">
-              <li data-target="#mycarousel-20" data-slide-to="0" class="active"></li>
-              <li data-target="#mycarousel-20" data-slide-to="1" class></li>
-              <li data-target="#mycarousel-20" data-slide-to="2" class></li>
-            </ul>
-          </div> <!-- End of mycarousel-20 -->
-        </div> <!-- Samll Image in Carousel -->
-
-        <div class="project-msg-box colorgbg col-lg-8 col-md-8 col-sm-12 col-xs-12">
-          <h3>Art Galery</h3>
-          <div class="project-description col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <h4>Description</h4>
-            <p style="font-size:13px; padding-left:20px;">Designed to show the Artwork for any artist how wants to sale. You will found an esy way to expose you Art projects, Sales, I Like this, contact, map, etc.
-            <br><br>
-            It fit well for: </p>
-            <ul class="left" style="list-style-type:circle; font-size:13px;">
-              <li>Desktop</li>
-            </ul>
-            <ul class="left" style="list-style-type:circle; font-size:13px;">
-              <li>Laptop</li>
-            </ul>
-            <ul class="left" style="list-style-type:circle; font-size:13px;">
-              <li>Tablet</li>
-            </ul>
-            <ul class="left" style="list-style-type:circle; font-size:13px;">
-              <li>Phone</li>
-            </ul>
-          </div>
-          <div class="project-thenic col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <h4>This contain and use </h4>
-            <div class="left">
-              <ul style="list-style-type:square; font-size:13px;">
-                <li>Responsive navbar</li>
-                <li>Responsiveness</li>
-                <li>Bootstrap grid system</li>
-                <li>Image slideshow</li>
-                <li>Form integration</li>
-              </ul>
-            </div>
-            <div class="left">
-              <ul style="list-style-type:square; font-size:13px;">
-                <li>Map embed</li>
-                <li>Expertise in html/css</li>
-                <li>Animation</li>
-                <li>Google font</li>
-              </ul>
-            </div>
-
-          </div>
-
-          <a class="right btn btn-filled" href="../20FinalProject/">GO to the Art Galery!</a>
-
-        </div>
-      </div>
-
-      <!-- SECOUND WEB  PROJECT , Studio-->
-      <div class="row project-row">
-        <!-- Small Image in Carousel -->
-        <div class="project-slider right col-lg-4 col-md-4 col-sm-12 col-xs-12">
-
-          <div id="mycarousel-16" class="small carousel slide auto-loop"  data-ride="carousel">
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <div class="slid-img">
-                      <img alt="art-work" src=".//16LessonSixteen/homework/img/work4.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="slid-img">
-                      <img alt="art-work" src=".//16LessonSixteen/homework/img/work6.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="slid-img">
-                      <img class="img-vert" alt="art-work" src=".//16LessonSixteen/homework/img/work7.jpg">
-                    </div>
-                </div>
+              <div class="item">
+                  <div class="slid-img">
+                    <img alt="art-work" src="..//15LessonFifteen/Checkpoint3/img/wine13.jpg">
+                  </div>
               </div>
-            <!-- middle controls -->
-            <ul class="nav carousel-indicators ">
-              <li data-target="#mycarousel-16" data-slide-to="0" class="active"></li>
-              <li data-target="#mycarousel-16" data-slide-to="1" class></li>
-              <li data-target="#mycarousel-16" data-slide-to="2" class></li>
-            </ul>
-          </div> <!-- End of mycarousel-20 -->
-        </div> <!-- Samll Image in Carousel -->
-
-        <div class="project-msg-box colorbg col-lg-8 col-md-8 col-sm-12 col-xs-12">
-          <h3>Studio</h3>
-          <div class="project-description col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <h4>Description</h4>
-            <p style="font-size:13px; padding-left:20px;">Designed to show a Desk work  for anyone . You will found an esy way to expose you Art projects, Sales, I Like this, contact, map, etc.
-            <br><br>
-            It fit well for: </p>
-            <ul class="left" style="list-style-type:circle; font-size:13px;">
-              <li>Desktop</li>
-            </ul>
-            <ul class="left" style="list-style-type:circle; font-size:13px;">
-              <li>Laptop</li>
-            </ul>
-            <ul class="left" style="list-style-type:circle; font-size:13px;">
-              <li>Tablet</li>
-            </ul>
-            <ul class="left" style="list-style-type:circle; font-size:13px;">
-              <li>Phone</li>
-            </ul>
-          </div>
-          <div class="project-thenic col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <h4>This contain and use </h4>
-            <div class="left">
-              <ul style="list-style-type:square; font-size:13px;">
-                <li>Responsive navbar</li>
-                <li>Responsiveness</li>
-                <li>Bootstrap grid system</li>
-                <li>Image slideshow</li>
-                <li>Form integration</li>
-              </ul>
-            </div>
-            <div class="left">
-              <ul style="list-style-type:square; font-size:13px;">
-                <li>Map embed</li>
-                <li>Expertise in html/css</li>
-                <li>Animation</li>
-                <li>Google font</li>
-              </ul>
-            </div>
-          </div>
-          <a class="right btn btn-filled" href=".//16LessonSixteen/homework/index.html">GO to the Studio!</a>
-
-        </div>
-      </div>
-
-      <!-- THIRD WEB PROJECT Winer -->
-      <div class="row project-row">
-        <!-- Small Image in Carousel -->
-        <div class="project-slider col-lg-4 col-md-4 col-sm-12 col-xs-12">
-
-          <div id="mycarousel-15" class="small carousel slide auto-loop"  data-ride="carousel">
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <div class="slid-img">
-                      <img alt="art-work" src="..//15LessonFifteen/Checkpoint3/img/wine12.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="slid-img">
-                      <img alt="art-work" src="..//15LessonFifteen/Checkpoint3/img/wine13.jpg">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="slid-img">
-                      <img class="img-vert" alt="art-work" src="..//15LessonFifteen/Checkpoint3/img/wine16.jpg">
-                    </div>
-                </div>
+              <div class="item">
+                  <div class="slid-img">
+                    <img class="img-vert" alt="art-work" src="..//15LessonFifteen/Checkpoint3/img/wine16.jpg">
+                  </div>
               </div>
-            <!-- middle controls -->
-            <ul class="nav carousel-indicators ">
-              <li data-target="#mycarousel-15" data-slide-to="0" class="active"></li>
-              <li data-target="#mycarousel-15" data-slide-to="1" class></li>
-              <li data-target="#mycarousel-15" data-slide-to="2" class></li>
-            </ul>
-          </div> <!-- End of mycarousel-20 -->
-        </div> <!-- Samll Image in Carousel -->
+            </div>
+          <!-- middle controls -->
+          <ul class="nav carousel-indicators ">
+            <li data-target="#mycarousel-15" data-slide-to="0" class="active"></li>
+            <li data-target="#mycarousel-15" data-slide-to="1" class></li>
+            <li data-target="#mycarousel-15" data-slide-to="2" class></li>
+          </ul>
+        </div> <!-- End of mycarousel-20 -->
+      </div> <!-- Samll Image in Carousel -->
 
-        <div class="project-msg-box colorgbg col-lg-8 col-md-8 col-sm-12 col-xs-12">
-          <h3>Winery</h3>
-          <div class="project-description col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <h4>Description</h4>
-            <p style="font-size:13px; padding-left:20px;">Designed to show the Artwork for any artist how wants to sale. You will found an esy way to expose you Art projects, Sales, I Like this, contact, map, etc.
-            <br><br>
-            It fit well for: </p>
-            <ul class="left" style="list-style-type:circle; font-size:13px;">
-              <li>Desktop</li>
-            </ul>
-            <ul class="left" style="list-style-type:circle; font-size:13px;">
-              <li>Laptop</li>
-            </ul>
-            <ul class="left" style="list-style-type:circle; font-size:13px;">
-              <li>Tablet</li>
-            </ul>
-            <ul class="left" style="list-style-type:circle; font-size:13px;">
-              <li>Phone</li>
+      <div class="project-msg-box colorgbg col-lg-8 col-md-8 col-sm-12 col-xs-12">
+        <h3>Winery</h3>
+        <div class="project-description col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <h4>Description</h4>
+          <p style="font-size:13px; padding-left:20px;">Designed to show the Artwork for any artist how wants to sale. You will found an esy way to expose you Art projects, Sales, I Like this, contact, map, etc.
+          <br><br><br><br><br><br>
+          It fit well for: </p>
+          <ul class="left" style="list-style-type:circle; font-size:13px;">
+            <li>Desktop</li>
+          </ul>
+          <ul class="left" style="list-style-type:circle; font-size:13px;">
+            <li>Laptop</li>
+          </ul>
+          <ul class="left" style="list-style-type:circle; font-size:13px;">
+            <li>Tablet</li>
+          </ul>
+          <ul class="left" style="list-style-type:circle; font-size:13px;">
+            <li>Phone</li>
+          </ul>
+        </div>
+        <div class="project-thenic col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <h4>This contain and use </h4>
+          <div class="left">
+            <ul style="list-style-type:square; font-size:13px;">
+              <li>Responsive navbar</li>
+              <li>Responsiveness</li>
+              <li>Bootstrap grid system</li>
+              <li>Image slideshow</li>
+              <li>Form integration</li>
             </ul>
           </div>
-          <div class="project-thenic col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <h4>This contain and use </h4>
-            <div class="left">
-              <ul style="list-style-type:square; font-size:13px;">
-                <li>Responsive navbar</li>
-                <li>Responsiveness</li>
-                <li>Bootstrap grid system</li>
-                <li>Image slideshow</li>
-                <li>Form integration</li>
-              </ul>
-            </div>
-            <div class="left">
-              <ul style="list-style-type:square; font-size:13px;">
-                <li>Expertise in html/css</li>
-                <li>Animation</li>
-                <li>Google font</li>
-              </ul>
-            </div>
-
+          <div class="left">
+            <ul style="list-style-type:square; font-size:13px;">
+              <li>Expertise in html/css</li>
+              <li>Animation</li>
+              <li>Google font</li>
+            </ul>
           </div>
 
-          <a class="right btn btn-filled" href="..//15LessonFifteen/Checkpoint3/index.html">GO to the Winery!</a>
+        </div>
+
+        <a class="right btn btn-filled" href="..//15LessonFifteen/Checkpoint3/index.html">GO to the Winery!</a>
+
+      </div>
+    </div>
+
+    <!-- IMAGE 3 parallax -->
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-position="top" data-image-src="./img/book_1.jpg" data-natural-width="1108" data-natural-height="402" style="height: 716px;">
+      <h1 class="text-center" style="padding-top:300px">STUDIO</h1>
+    </div>
+
+    <!-- SECOUND WEB  PROJECT , Studio-->
+    <div class="project-row">
+      <!-- Small Image in Carousel -->
+      <div class="project-slider right col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+        <div id="mycarousel-16" class="small carousel slide auto-loop"  data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                  <div class="slid-img">
+                    <img alt="art-work" src=".//16LessonSixteen/homework/img/work4.jpg">
+                  </div>
+              </div>
+              <div class="item">
+                  <div class="slid-img">
+                    <img alt="art-work" src=".//16LessonSixteen/homework/img/work6.jpg">
+                  </div>
+              </div>
+              <div class="item">
+                  <div class="slid-img">
+                    <img class="img-vert" alt="art-work" src=".//16LessonSixteen/homework/img/work7.jpg">
+                  </div>
+              </div>
+            </div>
+          <!-- middle controls -->
+          <ul class="nav carousel-indicators ">
+            <li data-target="#mycarousel-16" data-slide-to="0" class="active"></li>
+            <li data-target="#mycarousel-16" data-slide-to="1" class></li>
+            <li data-target="#mycarousel-16" data-slide-to="2" class></li>
+          </ul>
+        </div> <!-- End of mycarousel-20 -->
+      </div> <!-- Samll Image in Carousel -->
+
+      <div class="project-msg-box colorbg col-lg-8 col-md-8 col-sm-12 col-xs-12">
+        <h3>Studio</h3>
+        <div class="project-description col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <h4>Description</h4>
+          <p style="font-size:13px; padding-left:20px;">Designed to show a Desk work  for anyone . You will found an esy way to expose you Art projects, Sales, I Like this, contact, map, etc.
+          <br><br><br><br><br><br>
+          It fit well for: </p>
+          <ul class="left" style="list-style-type:circle; font-size:13px;">
+            <li>Desktop</li>
+          </ul>
+          <ul class="left" style="list-style-type:circle; font-size:13px;">
+            <li>Laptop</li>
+          </ul>
+          <ul class="left" style="list-style-type:circle; font-size:13px;">
+            <li>Tablet</li>
+          </ul>
+          <ul class="left" style="list-style-type:circle; font-size:13px;">
+            <li>Phone</li>
+          </ul>
+        </div>
+        <div class="project-thenic col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <h4>This contain and use </h4>
+          <div class="left">
+            <ul style="list-style-type:square; font-size:13px;">
+              <li>Responsive navbar</li>
+              <li>Responsiveness</li>
+              <li>Bootstrap grid system</li>
+              <li>Image slideshow</li>
+              <li>Form integration</li>
+            </ul>
+          </div>
+          <div class="left">
+            <ul style="list-style-type:square; font-size:13px;">
+              <li>Map embed</li>
+              <li>Expertise in html/css</li>
+              <li>Animation</li>
+              <li>Google font</li>
+            </ul>
+          </div>
+        </div>
+        <a class="right btn btn-filled" href=".//16LessonSixteen/homework/index.html">GO to the Studio!</a>
+
+      </div>
+    </div>
+
+    <!-- IMAGE 4 parallax -->
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-position="top" data-image-src="./img/inspiration_1.jpg" data-natural-width="1108" data-natural-height="402" style="height: 716px;">
+      <h1 class="text-center" style="padding-top:300px">ART GALERY</h1>
+    </div>
+
+    <!-- MY PROJECT My Art webpage --------------->
+    <div class="project-row">
+      <!-- Small Image in Carousel -->
+      <div class="project-slider col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+        <div id="mycarousel-20" class="small carousel slide auto-loop"  data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                  <div class="slid-img">
+                    <img alt="art-work" src=".//20FinalProject/img/Boca-de-Potrerillos.jpg">
+                  </div>
+              </div>
+              <div class="item">
+                  <div class="slid-img">
+                    <img alt="art-work" src=".//20FinalProject/img/Camino-a-ex-hacienda-del-muerto.jpg">
+                  </div>
+              </div>
+              <div class="item">
+                  <div class="slid-img">
+                    <img class="img-vert" alt="art-work" src=".//20FinalProject/img/El-Carmen.jpg">
+                  </div>
+              </div>
+            </div>
+          <!-- middle controls -->
+          <ul class="nav carousel-indicators ">
+            <li data-target="#mycarousel-20" data-slide-to="0" class="active"></li>
+            <li data-target="#mycarousel-20" data-slide-to="1" class></li>
+            <li data-target="#mycarousel-20" data-slide-to="2" class></li>
+          </ul>
+        </div> <!-- End of mycarousel-20 -->
+      </div> <!-- Samll Image in Carousel -->
+
+      <div class="project-msg-box colorgbg col-lg-8 col-md-8 col-sm-12 col-xs-12">
+        <h3>Art Galery</h3>
+        <div class="project-description col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <h4>Description</h4>
+          <p style="font-size:13px; padding-left:20px;">Designed to show the Artwork for any artist how wants to sale. You will found an esy way to expose you Art projects, Sales, I Like this, contact, map, etc.
+          <br><br><br><br><br><br>
+          It fit well for: </p>
+          <ul class="left" style="list-style-type:circle; font-size:13px;">
+            <li>Desktop</li>
+          </ul>
+          <ul class="left" style="list-style-type:circle; font-size:13px;">
+            <li>Laptop</li>
+          </ul>
+          <ul class="left" style="list-style-type:circle; font-size:13px;">
+            <li>Tablet</li>
+          </ul>
+          <ul class="left" style="list-style-type:circle; font-size:13px;">
+            <li>Phone</li>
+          </ul>
+        </div>
+        <div class="project-thenic col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <h4>This contain and use </h4>
+          <div class="left">
+            <ul style="list-style-type:square; font-size:13px;">
+              <li>Responsive navbar</li>
+              <li>Responsiveness</li>
+              <li>Bootstrap grid system</li>
+              <li>Image slideshow</li>
+              <li>Form integration</li>
+            </ul>
+          </div>
+          <div class="left">
+            <ul style="list-style-type:square; font-size:13px;">
+              <li>Map embed</li>
+              <li>Expertise in html/css</li>
+              <li>Animation</li>
+              <li>Google font</li>
+            </ul>
+          </div>
 
         </div>
+
+        <a class="right btn btn-filled" href=".//20FinalProject/">GO to the Art Galery!</a>
+
       </div>
+    </div>
 
 
-      <!-- HEADER POWER BUILDER PORTFOLIO ----------------------->
+    <!-- IMAGE 5 parallax, REFERENCES -->
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-position="top" data-image-src="./img/develop_1.jpg" data-natural-width="3000" data-natural-height="2000" style="height: 916px;">
+      <h1 class="text-center" style="padding-top:300px">My ERP Software Solutions</h1>
       <br>
-      <div class="row portfolio-header">
-        <div id="powerbuilder-portfolio" class="title-header  col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <h3>POWER BUILDER PORTFOLIO</h3>
-        </div>
+      <div>
+        <img alt="GSP Solutions" style="width:181px;height:72px;"src="..//img/gsp.jpg">
       </div>
-       <!-- End of Power builder PORTFOLIO -->
-
-      <!-- HEADER ABOUT ----------------------->
       <br>
-      <div class="row">
-        <div class="title-header  col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <h3>ABOUT SALVADOR RODRIGUEZ</h3>
-        </div>
-      </div>
-       <!-- End of ABOUT -->
-
-
-      <!-- HEADER REFERENCES-------------------->
+      <h1 class="text-center" style="padding-top:30px">My Clients</h1>
       <br>
-      <div class="row">
-        <div class="title-header  col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <h3>My references is my work done...</h3>
-        </div>
+      <div style="height:150px">
+        <img alt="unipaz" style="width:150px;height:150px;"src="..//img/client-unipaz.jpeg">
+        <img alt="ipa" style="width:150px;height:150px;"src="..//img/logo_ipa.jpg">
+        <img alt="Optima Energia" style="width:150px;height:150px;"src="..//img/logo_OptimaEnergia.jpg">
+        <img alt="Vela" style="width:150px;height:150px;"src="..//img/logo_vela.jpg">
+        <img alt="HGCM" style="width:150px;height:150px;"src="..//img/logo_HGCM.jpg">
+        <img alt="GADSA" style="width:150px;height:150px;"src="..//img/logo_gadsa.jpg">
+
       </div>
-      <!-- UNIPAZ -->
-      <div class="row reference">
-        <div class="client-img-box col-lg-3 col-md-3 col-sm-12 col-xs-12">
-          <img alt="UNIPAZ" src=".//img/client-unipaz.jpeg">
-        </div>
-        <div class="client-msg-box col-lg-9 col-md-9 col-sm-12 col-xs-12">
-
-        </div>
+      <br>
+      <div>
+        <img alt="naehs" style="width:150px;height:150px;"src="..//img/naehs_logo.jpg">
       </div>
-      <!-- End of refereces -->
-
-<!--
-    <section class="title">
-      <h1> Start </h1>
-      <a href="">Welcome to Austin coding Academi</a>
-
-      <h1>  Here's a link to all of my work:</h1> <br><br>
-
-    </section>
-
-    <section class="container">
-      <div class="lesson1">
-          <h1> Lesson1 </h1><br>
-          <a href="./01LessonOne">Homework</a><br>
-      </div>
-
-      <div class="lesson2">
-          <h1> Lesson2 </h1><br>
-          <a href="./02LessonTwo/in-class-project/">Class Project</a><br>
-          <a href="./02LessonTwo/homework/">Homework</a><br>
-      </div>
-    </section>
-
-    <section class="container">
-      <div class="lesson3">
-          <h1> Lesson3 </h1><br>
-          <a href="./03LessonThree/in-class-project/daily-planet.html">In Class Project</a><br>
-          <a href="./03LessonThree/homework/git-scm.html">Homework</a><br>
-      </div>
-
-      <div class="lesson4">
-          <h1> Lesson4 </h1><br>
-          <a href="./04LessonFour/in-class-project">In Class Project</a><br>
-          For homework, work on Checkpoint 1<br>
-          <br><br>
-      </div>
-    </section>
-
-    <section class="container">
-      <div class="lesson5">
-          <h1> Lesson5 </h1><br>
-          <a href="./05LessonFive/Checkpoint1">Checkpoint1</a><br>
-          <br><br>
-      </div>
-
-      <div class="lesson6">
-          <h1> Lesson6 </h1><br>
-          <a href="./06LessonSix/in-class-project/intel.html">In Class Project</a><br>
-          <a href="./06LessonSix/homework">Homework</a><br>
-          <br><br>
-      </div>
-    </section>
-
-    <section class="container">
-      <div class="lesson7">
-          <h1> Lesson7 </h1><br>
-          <a href="./07LessonSeven/in-class-project/index.html">In Class Project</a><br>
-          <a href="./07LessonSeven/homework">Homework</a><br>
-          <br><br>
-      </div>
-
-      <div class="lesson8">
-          <h1> Lesson8 </h1><br>
-          <a href="./08LessonEight/in-class-project/homework.html">In Class Project</a><br>
-          <a href="./08LessonEight/homework/exercise-06.html">Homework</a><br>
-          <br><br>
-      </div>
-    </section>
-
-    <section class="container">
-      <div class="lesson9">
-          <h1> Lesson9 </h1><br>
-          <a href="./09LessonNine/in-class-project">In Class Project</a><br>
-          For homework, work on Checkpoint 2.
-          <br><br>
-      </div>
-
-      <div class="lesson10">
-          <h1> Lesson10 </h1><br>
-          <a href="./10LessonTen/Checkpoint2">Checkpoint 2</a><br>
-          <a href="./10LessonTen/WinerySite">Winery (Optional Work)</a><br>
-          <br><br>
-      </div>
-    </section>
-
-    <section class="container">
-      <div class="lesson11">
-          <h1> Lesson11 </h1><br>
-          <a href="./11LessonEleven/in-class-project">In Class Project</a><br>
-          <a href="./11LessonEleven/homework/inspired.html">Homework</a><br>
-          <br><br>
-      </div>
-
-      <div class="lesson12">
-          <h1> Lesson12 </h1><br>
-          <a href="./12LessonTwelve/in-class-project">In Class Project</a><br>
-          <a href="./12LessonTwelve/homework">Homework</a><br>
-          <br><br>
-      </div>
-    </section>
-
-    <section class="container">
-      <div class="lesson13">
-          <h1> Lesson13 </h1><br>
-          <a href="./13LessonThirteen/in-class-project">In Class Project</a><br>
-          <a href="./13LessonThirteen/homework">Homework</a><br>
-          <br><br>
-      </div>
-
-      <div class="lesson14">
-          <h1> Lesson14 </h1><br>
-          <a href="./14LessonFourteen/in-class-project">In Class Project</a><br>
-          For homework, work on Checkpoint 3.
-          <br><br>
-      </div>
-    </section>
-
-    <section class="container">
-      <div class="lesson15">
-          <h1> Lesson15 </h1><br>
-          <a href="./15LessonFifteen/Checkpoint3">In Class Project</a><br>
-          <a href="./15LessonFifteen/">Homework</a><br>
-          <br><br>
-      </div>
-
-      <div class="lesson16">
-          <h1> Lesson16 </h1><br>
-          <a href="./16LessonSixteen/in-class-project/animate.html">In Class Project</a><br>
-          <a href="./16LessonSixteen/homework">Homework</a><br>
-          <br><br>
-      </div>
-    </section>
-
-    <section class="container">
-      <div class="lesson17">
-          <h1> Lesson17 </h1><br>
-          <a href="./17LessonSeventeen/in-class-project">In Class Project</a><br>
-          <a href="./17LessonSeventeen/homework">Homework</a><br>
-          <br><br>
-      </div>
-
-      <div class="lesson18">
-          <h1> Lesson18 </h1><br>
-          <a href="./18LessonEighteen/in-class-project">In Class Project</a><br>
-          <a href="./18LessonEighteen/homework">Homework</a><br>
-          <br><br>
-      </div>
-    </section>
-
-    <section class="container">
-      <div class="lesson19">
-          <h1> Lesson19 </h1><br>
-          <a href="./19LessonNineteen/in-class-project">In Class Project</a><br>
-          <a href="./19LessonNineteen/homework">Homework</a><br>
-          <br><br>
-      </div>
-
-      <div class="lesson20">
-          <h1> Lesson20 </h1><br>
-          <a href="./20FinalProject">Final Project</a>
-      </div>
-    </section> -->
+    </div>
 
 
     <!--   FOOTER for tablet and Phone-->
@@ -548,6 +506,8 @@
          <a href="../contact.html">CONTACT</a>
       </div>
     </div>
+
+
 
   </section> <!-- End of Container -->
 

@@ -1,10 +1,142 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Simple parallax</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700'>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+   <!-- Parallax img definitions -->
+    <div class="parallax-mirror parallax-size">
+          <img class="parallax-slider" src="./img/reflection-nebula-750x763.jpg" style="height: 1427px;">
+    </div>
+    <div class="parallax-mirror parallax-size">
+          <img class="parallax-slider" src="./img/spiral-galaxy-1400x900.jpg" style="height: 901px;">
+    </div>
+    <div class="parallax-mirror parallax-size">
+          <img class="parallax-slider" src="./img/helix-nebula-1400x1400.jpg" style="height: 901px;">
+    </div>
+    <div class="parallax-mirror  parallax-size">
+          <img class="parallax-slider" src="./img/stellar-spire-eagle-nebula-1400x900.jpg" style="height: 901px;">
+    </div>
+
+    <!-- NAVEGATION -->
+    <!-- collapse menu -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="navbar-header">
+            <button class="collapsed navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a href=".//index.html" class="navbar-brand">Salvador Rodriguez</a>
+            <!-- <div class="logo">
+              <a href="../index.html">
+                <img alt="Studio" src="../img/logo-dark.png">
+              </a>
+            </div> -->
+
+          </div>
+          <div class="collapse navbar-collapse" id="nav-collapse">
+            <ul class="nav navbar-nav navbar-right">
+
+              <!-- Search in menu -->
+              <div class="search right">
+                <form action="#" method="get">
+                  <input type="text" name="search" placeholder="Search">
+                  <button>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form>
+              </div>
+
+              <li class="dropdown">
+                <a href=".//index.html" data-toggle="dropdown">PORTAFOLIO<span class="caret"</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#webdesign-portfolio">WEB DESIGN</a></li>
+                  <li><a href="#powerbuilder-portfolio">POWER BUILDER</a></li>
+                  <li><a href="#">DATA BASE DESIGN</a></li>
+                  <li class="divider" role="separator"> header here</li>
+                  <li><a href="#">ART WORK</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" data-toggle="dropdown">WORKBOOK<span class="caret"</span></a>
+                <ul class="dropdown-menu">
+                  <!-- PORTAFOLIO menu with sub-menu -->
+                  <li>
+                    <a class="test" href="#"  >INTRO WEB-WORKBOOK
+                      <i class="fa fa-caret-right" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu sub-menu">
+                      <li><a href="#">Final Project</a></li>
+                      <li><a href="#">Lesson2</a></li>
+                      <li><a href="#">Lesson3</a></li>
+                      <li><a href="#">Lesson4</a></li>
+                      <li><a href="#">Lesson5</a></li>
+                      <li><a href="#">Lesson6</a></li>
+                      <li><a href="#">Lesson7</a></li>
+                      <li><a href="#">Lesson8</a></li>
+                      <li><a href="#">Lesson9</a></li>
+                      <li><a href="#">Lesson10</a></li>
+                    </ul>
+                  </li>
+
+                  <li><a href="#">PHP-WORKBOOK</a></li>
+                  <li><a href="#">AJAX-WORKBOOK</a></li>
+                  <li><a href="#">JAVA-WORKBOOK</a></li>
+                </ul>
+              </li>
+              <li><a href=".//reference.html">REFERENCES/CLIENTS</a> </li>
+              <li><a href="#">RESUME</a> </li>
+              <li><a href=".//contact.html">CONTACT</a> </li>
+            </ul>
+          </div>
+    </nav>
+  </header> <!-- End of header -->
+
+
+
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-position="top" data-image-src="./img/stellar-spire-eagle-nebula-1400x900.jpg" data-natural-width="1400" data-natural-height="900" style="height: 716px;">
+      <h1 class="center">stellar-spire-eagle-nebula-1400x900</h1>
+    </div>
+
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="./img/helix-nebula-1400x1400.jpg" data-natural-width="1400" data-natural-height="1400" style="height: 716px;">
+      <h1 class="center">helix-nebula-1400x1400</h1>
+    </div>
+
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="./img/spiral-galaxy-1400x900.jpg" data-natural-width="1400" data-natural-height="900" style="height: 716px;">
+    <h1 class="center">spiral-galaxy-1400x900</h1>
+  </div>
+
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="./img/reflection-nebula-750x763.jpg" data-natural-width="750" data-natural-height="763" style="height: 716px;">
+    <h1 class="center">reflection-nebula-750x763</h1>
+  </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/animation-scroll.js"></script> <!-- new file added-->
+
+    <script type="text/javascript" src="js/parallax.js"></script>
+    <script type="text/javascript" src="js/parallax.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
 </body>
+
+
 </html>

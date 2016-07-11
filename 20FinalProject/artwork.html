@@ -92,10 +92,9 @@
 
     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <h4 class="text-center">
-            <a href="form-artwork.html">
-              Vote for I like!
-              <i class="fa fa-thumbs-o-up my-iconsize" aria-hidden="true"></i>
-            </a>
+            <a href="#" class="btn pd10right"
+             data-toggle="modal"
+             data-target="#myIlikeModal" style="padding-bottom:20px;">Vote I like!</a>
           </h4>
     </div>
 
@@ -145,12 +144,79 @@
 </section> <!-- End Main -->
 
 
+  <!--************************************************-->
+  <!-- Modal I LIKE THIS -->
+    <div class="modal fade" id="myIlikeModal" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Do you like this artwork?</h4>
+          </div>
+          <div class="modal-body">
+            <form action="https://docs.google.com/forms/d/1z7Krv7MtxJgG6_kvZJlf9cYwiPRNwwYwUgSUZL_MR-k/formResponse"
+            method="POST" target="_self" onsubmit="">
+                <br>
+                <label class="contact-label" for="entry_1065176203">How much do you like this artwork? * *</label>
+                <!-- <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label> -->
+
+                <label> None </label>
+                <input type="radio" name="entry.178384925" value="1" role="radio"
+                aria-label="1" required aria-required="true">
+                <label class="pd10right" for="group_178384925_1">1</label>
+                <input type="radio" name="entry.178384925" value="2" role="radio" aria-label="2"
+                required aria-required="true">
+                <label class="pd10right" for="group_178384925_2">2</label>
+                <input type="radio" name="entry.178384925" value="3" role="radio" aria-label="3"
+                required aria-required="true">
+                <label class="pd10right" for="group_178384925_3">3</label>
+                <input type="radio" name="entry.178384925" value="4" role="radio" aria-label="4"
+                required aria-required="true">
+                <label class="pd10right" for="group_178384925_4">4</label>
+                <input type="radio" name="entry.178384925" value="5" role="radio" aria-label="5"
+                required aria-required="true">
+                <label class="pd10right" for="group_178384925_5">5</label>
+                <label> A Lot </label>
+
+                <label class="contact-label" for="entry_264825935">What&apos;s your name?</label>
+                <input class="contact-input" type="text" name="entry.264825935"
+                value="" dir="auto" aria-label="What&apos;s your name?  " title="">
+
+                <label class="contact-label" for="entry_818316464">How old are you?</label>
+                <input type="text" name="entry.818316464" value=""
+                dir="auto" aria-label="How old are you?  " title="">
+
+                <label class="contact-label" for="entry_1041715806">What&apos;s your email?</label>
+                <input class="contact-input" type="text" name="entry.1041715806"
+                value="" dir="auto" aria-label="What&apos;s your email?  " title="">
+                <input  class="contact-input"  type="hidden" name="draftResponse" value="[,,&quot;-514453878118199693&quot;]
+              ">
+              <br><br>
+                <input  class="contact-input"  type="hidden" name="pageHistory" value="0">
+                <input  class="contact-input"  type="hidden" name="fbzx" value="-514453878118199693">
+
+                <input  class="btn btn-filled" type="submit" name="submit" value="Submit your Opinion">
+
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
 <!--   2do FOOTER  fox Laptops -->
 <footer class="table-center visible-lg visible-md"> <!-- footer Begin -->
 <a class="mobile-contact-btn icon-mail hide tablet-show" href="#">Contact</a>
 <div class="logo auto-hide">
   <a href="#">
-    <img alt="Studio" src=".//img/logo-dark.png">
+    <img alt="Studio" src="./img/logo-dark.png">
   </a>
 </div>
 <small>
@@ -172,7 +238,7 @@
     </li>
   </ul>
   <div class="footer_links">
-      <a href=".//contact.html">CONTACT</a>
+      <a href="contact.html">CONTACT</a>
   </div>
   <div class="footer_links">
       <a href="#">BUY NOW</a>
@@ -187,8 +253,6 @@
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="js/animation-scroll.js"></script> <!-- new file added-->
 
-<script type="text/javascript" src="js/parallax.js"></script>
-<script type="text/javascript" src="js/parallax.min.js"></script>
 
 </body>
 
