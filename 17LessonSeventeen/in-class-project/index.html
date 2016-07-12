@@ -1,10 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title></title>
+    <!-- css reset-->
+    <link rel="stylesheet" href="css/css-reset.css" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- my styles -->
+    <link href="css/my-style.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
+
 <body>
+    <main class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 my_form">
+                <h1>Contact us!</h1>
+                <form action="https://docs.google.com/forms/d/1PJYMja09b9IoF5jYfXfEVvO7FtX9Y8VOEAc3UAnNsgs/formResponse" method="POST" target="_self" onsubmit="">
+                    <!-- name -->
+                    <div class="text_entry">
+                        <label for="entry_1174602596">Name * *</label>
+                        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                        <input type="text" name="entry.1174602596" value="" dir="auto" aria-label="Name  " aria-required="true" required title="">
+                        <br />
+                    </div>
+
+                    <!-- phone number -->
+                    <div class="text_entry">
+                        <label for="entry_105011535">Phone
+                            <br /> Number</label>
+                        <input type="text" name="entry.105011535" value="" dir="auto" aria-label="Phone Number  " title="">
+                        <br />
+                    </div>
+
+                    <!-- email -->
+                    <div class="text_entry">
+                        <label for="entry_1133518912">Email
+                            <br /> Address * *</label>
+                        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                        <input type="text" name="entry.1133518912" value="" dir="auto" aria-label="Email Address  " aria-required="true" required title="">
+                        <br />
+                    </div>
+
+                    <!-- state -->
+                    <label for="entry_1441430947">State of
+                        <br /> Residence</label>
+                    <select name="entry.1441430947" aria-label="State of Residence  ">
+                        <option value=""></option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Arizona">Arizona</option>
+                        <option value="Arkansas">Arkansas</option>
+                        <option value="Texas">Texas</option>
+                    </select>
+                    <input type="hidden" name="draftResponse" value="[,,&quot;6486490624827629739&quot;]
+">
+                    <input type="hidden" name="pageHistory" value="0">
+                    <input type="hidden" name="fbzx" value="6486490624827629739">
+                    <input type="submit" name="submit" value="Submit">
+                </form>
+            </div>
+            <div class="col-sm-8 col-sm--offset-2 my_php">
+
+
+                <h2>PHP Formness</h2>
+
+                <form action="mail_handler.php" method="post">
+                    First Name:
+                    <input class="my_input" type="text" name="first_name">
+                    <br> Last Name:
+                    <input class="my_input" type="text" name="last_name">
+                    <br> Email:
+                    <input class="my_email" type="text" name="email">
+                    <br> Message:
+                    <br>
+                    <textarea rows="5" name="message" cols="30"></textarea>
+                    <br>
+                    <input class="my_button" type="submit" name="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        </div>
+    </main>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- My Javascript -->
+    <script src="js/main.js"></script>
 
 </body>
+
 </html>
