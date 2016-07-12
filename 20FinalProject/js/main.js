@@ -14,7 +14,6 @@ $(function() {
   });
 });
 
-
 // carousel
 <script>
     $(function(){
