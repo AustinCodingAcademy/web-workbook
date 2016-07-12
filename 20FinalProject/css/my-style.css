@@ -1,4 +1,4 @@
-/*navbar stylings*/
+    /*navbar stylings*/
 
 .stego {
     height: 60px;
@@ -15,6 +15,7 @@
 }
 
 /*end navbar stylings*/
+
 
 /*begin home stylings*/
 
@@ -53,6 +54,7 @@
         margin-top: 100px;
     }
 }
+
 /*end home stylings*/
 
 
@@ -66,19 +68,19 @@
     font-family: 'Rock Salt', cursive;
 }
 .my_h2 {
-    margin-top: 100px;
     margin-bottom: 50px;
     font-family: 'Rock Salt', cursive;
     text-align: center;
-    margin-top:100px;
+    margin-top: 100px;
 }
 .my_p {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 18pt;
-    margin-bottom: 50px;
+    margin-left:150px;
+    margin-right:150px;
 }
 .bio_icon {
-    height: 100px;
+    height: 200px;
     margin-top: 50px;
     border: 5px solid;
     border-color: #996600;
@@ -91,7 +93,7 @@
 #wrapper:hover .info {
     visibility: visible;
 }
-.info li {
+.info > li {
     list-style: none;
 }
 .info a {
@@ -107,6 +109,13 @@
     .about_me {
         height: 950px;
     }
+    .developer {
+        height: 900px;
+    }
+    .my_ p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 @media (max-width: 767px) {
     .about_me {
@@ -115,20 +124,47 @@
     #wrapper .info {
         visibility: visible;
     }
+    .developer {
+        height: 900px;
+    }
+    .my_ p {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
 /*end about me stylings*/
 
+
 /*begin developer stylings*/
+
 .developer {
-  height:800px;
-  background-color: #729FAD;
+    height: 900px;
+    background-color: #729FAD;
 }
-    /*carousel*/
-    .carousel-inner > .item > a > img {
-        margin: 0 auto;
-        height:300px;
+
+/*carousel*/
+
+.carousel-inner > .item > a > img {
+    margin: 0 auto;
+    height: 300px;
+}
+.my_carousel {
+    margin: 10%;
+  }
+    /*end developer stylings*/
+    /*begin parallax one stylings*/
+    .parallax-window {
+        min-height: 500px;
+        background: transparent;
     }
-    .my_carousel {
-    margin-top:100px;
+    /*end parallax one stylings*/
+    /*begin educator stylings*/
+    .educator {
+        background-image: url(../img/upfeathers.png);
+        height: 800px;
+    }
+    .educator img {
+        height: 150px;
+        margin-top: 50px;
     }

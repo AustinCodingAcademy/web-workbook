@@ -10,7 +10,7 @@
     <!-- css reset-->
     <link rel="stylesheet" href="css/css-reset.css" />
     <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- font awesome -->
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <!-- hover effects -->
@@ -59,7 +59,7 @@
 
         <!-- end navbar -->
 
-        <!-- greeting, w zig zag border? arrow with smooth scroll -->
+        <!-- greeting, arrow with smooth scroll -->
 
         <div id="home" class="home container-fluid text-center">
             <h1>Hi, I'm Nicole.</h1>
@@ -67,7 +67,7 @@
                 I LOVE SCIENCE + MAKING THINGS LOOK NICE + MAKING PEOPLE FEEL EMPOWERED.
             </p>
             <div>
-                <a href="#about_me" class="scroll"><img class="home_nav_img" src="img/arrow.png" /></a>
+                <a href="#about_me"><img class="home_nav_img" src="img/arrow.png" /></a>
             </div>
         </div>
 
@@ -85,11 +85,11 @@
             <!-- education and work experience icons -->
             <div class="row">
                 <div class="col-sm-4 circle  text-center" id="wrapper">
-                    <a href="www.sfasu.edu"><img class="bio_icon" src="img/sfa.gif" /></a>
+                    <a href="http://www.sfasu.edu"><img class="bio_icon" src="img/sfa.gif" /></a>
                     <ul class="info">
-                        <h4 class="info"><a href="www.sfasu.edu">Stephen F. Austin State University</a></h4>
+                        <h4 class="info"><a href="http://www.sfasu.edu">Stephen F. Austin State University</a></h4>
                         <li>
-                            <em>Cum laude</em> graduate, class of 2005
+                            Cum laude graduate, class of 2005
                         </li>
                         <li>
                             Bachelor's of Science in Biology
@@ -110,9 +110,9 @@
                     </ul>
                 </div>
                 <div class="col-sm-4 circle" id="wrapper">
-                    <a href="www.austincodingacademy.com"><img class="bio_icon" src="img/aca.jpg" /></a>
+                    <a href="http://www.austincodingacademy.com"><img class="bio_icon" src="img/aca.jpg" /></a>
                     <ul class="info">
-                        <h4 class="info"><a href="www.austincodingacademy.com">Austin Coding Academy</a></h4>
+                        <h4 class="info"><a href="http://www.austincodingacademy.com">Austin Coding Academy</a></h4>
                         <li>
                             Attended Spring 2016 Intro course
                         </li>
@@ -130,9 +130,9 @@
                 </div>
 
                 <div class="col-sm-4 circle" id="wrapper">
-                    <a href="www.roundrockisd.org"><img class="bio_icon" src="img/rrisd.png" /></a>
+                    <a href="http://www.roundrockisd.org"><img class="bio_icon" src="img/rrisd.png" /></a>
                     <ul class="info">
-                        <h4 class="info"><a href="www.roundrockisd.org">Round Rock ISD</a></h4>
+                        <h4 class="info"><a href="http://www.roundrockisd.org">Round Rock ISD</a></h4>
                         <li>
                             2011-Present
                         </li>
@@ -249,52 +249,85 @@
 
 
         <!-- parallax background window -->
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/coding.jpg"></div>
+
 
         <!-- education work experience w/ photo carousel-->
-        <div id="educator">
+        <div id="educator" class="educator container-fluid">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h2 class="my_h2">Educator .</h2>
+                    <p class="my_p">
+                        It sounds trite, but I firmly believe it is 100% true &mdash; education is power. Most of my time the last decade has been dedicated to the young minds who will shape our future. I've co-authored a Biology EOC practice book, helped differentiate school-wide
+                        STAAR reviews both on paper in in Google Classroom, have lead my PLC for two years, and have even been honored on KLRU as an American Graduate Champion. Need someone to make your curriculum more accessible or TEKS-aligned? Looking
+                        for some ideas for low-cost, engaging science activities? Searching for a place to donate those unwanted school supplies(wink wink)? Drop me a line.
+                    </p>
+                </div>
+            </div>
+            <div class=container-fluid>
+            <div class="row">
+                <div class="col-sm-6  text-center">
+                    <a href="http://www.gfeducators.com/docs/Secondary%20Sample%20Books/Biology%20EOC%20TE%20%20Sample.pdf"><img class="edu_icon" src="img/biology.png" /></a>
+                    <h4 class="edu"><a href="http://www.gfeducators.com/docs/Secondary%20Sample%20Books/Biology%20EOC%20TE%20%20Sample.pdf">Step Up to the TEKS Biology Practice Manual</a></h4>
+                    <p>
+                        Click to view sample pages of our book.
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <a href="http://www.klru.org/blog/2015/06/american-graduate-champion-nicole-daugereaux/"><img class="edu_icon" src="img/champion.jpg" /></a>
+                    <h4 class="edu"><a href="http://www.klru.org/blog/2015/06/american-graduate-champion-nicole-daugereaux/">American Graduate Champion</a></h4>
+                    <p>
+                        Click above to view my American Graduate Champion video, featured on KLRU.
+                    </p>
+                </div>
 
-        </div>
-        <!-- parallax background window -->
-        <!-- etsy shop -->
-        <div id="maker">
+            </div>
+            </div>
+            <!-- parallax background window -->
+            <div class="parallax-window" data-parallax="scroll" data-image-src="img/trees.jpg"></div>
+            <!-- etsy shop -->
+            <div id="maker">
 
-        </div>
-        <!-- pic parallax -->
+            </div>
+            <!-- pic parallax -->
 
-        <!-- contact w/ social media icons -->
-        <div id="contact">
+            <!-- contact w/ social media icons -->
+            <div id="contact">
 
-        </div>
-
-
-
-
+            </div>
 
 
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
-        <!-- My Javascript -->
-        <script src="js/main.js"></script>
-        <!-- Fonts -->
-        <script type="text/javascript">
-            WebFontConfig = {
-                google: {
-                    families: ['Open+Sans+Condensed:300:latin', 'Gudea::latin', 'Rock+Salt::latin']
-                }
-            };
-            (function() {
-                var wf = document.createElement('script');
-                wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-                wf.type = 'text/javascript';
-                wf.async = 'true';
-                var s = document.getElementsByTagName('script')[0];
-                s.parentNode.insertBefore(wf, s);
-            })();
-        </script>
 
+
+
+
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="js/bootstrap.min.js"></script>
+
+            <!-- My Javascript -->
+            <script src="js/main.js"></script>
+
+            <!-- Fonts -->
+            <script type="text/javascript">
+                WebFontConfig = {
+                    google: {
+                        families: ['Open+Sans+Condensed:300:latin', 'Gudea::latin', 'Rock+Salt::latin']
+                    }
+                };
+                (function() {
+                    var wf = document.createElement('script');
+                    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+                    wf.type = 'text/javascript';
+                    wf.async = 'true';
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(wf, s);
+                })();
+            </script>
+            <!-- parallax -->
+            <script src="js/parallax.js"></script>
 
     </body>
 

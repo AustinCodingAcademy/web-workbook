@@ -13,6 +13,8 @@ $(function() {
     }
   });
 });
+
+
 // carousel
 <script>
     $(function(){
