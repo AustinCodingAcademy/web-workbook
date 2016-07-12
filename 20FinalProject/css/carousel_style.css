@@ -1,0 +1,76 @@
+.portfolio_container {
+    margin-bottom: 100px;
+}
+.carousel_container {
+    top: 50px;
+    bottom: 250px;
+    margin: 0 auto;
+    width: 250px;
+    height: 200px;
+    position: relative;
+    perspective: 1000px;
+}
+.carousel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+.item {
+    display: block;
+    position: absolute;
+    background: #000;
+    width: 250px;
+    height: 200px;
+    line-height: 200px;
+    font-size: 5em;
+    text-align: center;
+    color: #FFF;
+    opacity: 0.95;
+    border-radius: 10px;
+}
+.a {
+    transform: rotateY(0deg) translateZ(250px);
+    background: url(../img/portfolio/ufo_small.png) no-repeat center;
+}
+.b {
+    transform: rotateY(60deg) translateZ(250px);
+    background: url(../img/portfolio/hcg_small.jpg) no-repeat center;
+}
+.c {
+    transform: rotateY(120deg) translateZ(250px);
+    background: url(../img/portfolio/puzzle_small.jpg) no-repeat center;
+}
+.d {
+    transform: rotateY(180deg) translateZ(250px);
+    background: url(../img/portfolio/winery_small.jpg) no-repeat center;
+}
+.e {
+    transform: rotateY(240deg) translateZ(250px);
+    background: url(../img/portfolio/garden_small.jpg) no-repeat center;
+}
+.f {
+    transform: rotateY(300deg) translateZ(250px);
+    background: url(../img/portfolio/band_small.jpg) no-repeat center;
+}
+.next, .prev {
+    color: #444;
+    position: absolute;
+    top: 125px;
+    cursor: pointer;
+    font-size: 4em;
+}
+.next:hover, .prev:hover {
+    color: #000;
+}
+.next:active, .prev:active {
+    top: 129px;
+    color: #ab1c4c;
+}
+.next {
+    right: 2em;
+}
+.prev {
+    left: 2em;
+}
