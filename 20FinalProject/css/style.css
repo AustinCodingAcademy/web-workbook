@@ -1,13 +1,7 @@
-label, p, td{
+input, label, p, td{
   font-family: 'Poiret One', cursive;
   font-weight: bold;
   font-size: 15px;
-}
-
-input, label{
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
-  font-size: 10px;
 }
 
 input[type="submit"]{
@@ -41,12 +35,6 @@ input[type="text"]{
   height: auto;
 }
 
-.column{
-  display: inline-block;
-
-  vertical-align: top;
-}
-
 .data-table tr{
   height: 50px;
 
@@ -68,21 +56,27 @@ input[type="text"]{
 .data-table td:first-of-type{
   width: 13.5%;
 
-  padding: 0 2.5% 0 2.5%;
+  padding: 0 2.5%;
 }
 
 .data-table td:not(:first-of-type){
   width: 76.5%;
 
-  padding: 0 2.5% 0 2.5%;
+  padding: 0 2.5%;
 }
 
 .description{
-  width: 80%;
+  width: 95%;
   height: 100%;
 
   margin-left: auto;
   margin-right: auto;
+}
+
+.form-col{
+  display: inline-block;
+
+  vertical-align: top;
 }
 
 .form-container{
@@ -91,6 +85,12 @@ input[type="text"]{
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+}
+
+.form-wrapper{
+  position: relative;
+  width: 100%;
+  height: 180px;
 }
 
 .info{
@@ -196,13 +196,25 @@ input[type="text"]{
   display: block;
 }
 
-#education p{
-  margin-bottom: 15px;
+#contact-me form{
+  position: absolute;
+  width: 223px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact-me p{
+  margin-bottom: 20px;
 }
 
 #hobbies img{
   width: 100%;
-  height: 300px;
+  max-height: 500px;
+  height: auto;
 
   margin-bottom: 20px;
 }
