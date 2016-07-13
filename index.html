@@ -188,26 +188,65 @@
 </div>
 </div>
 
-<div class="footer col-md-12 col-lg-12">
-      <h3>CONTACT</h3>
-  <div id="contact" class="col-md-offset-2">
-    <form>
-      <h4>NAME</h4><br>
-      <input type="text" name="name">
-    </form>
+<div class="row">
+  <div class="footer col-md-12 col-lg-12 hidden-xs hidden-sm">
+        <h3>CONTACT</h3>
+    <div id="contact" class="col-md-offset-3">
+      <form>
+        <h4>NAME</h4><br>
+        <input type="text" name="name">
+      </form>
 
-  <form>
-  <h4>MESSAGE</h4><br>
-    <textarea rows="4" cols="22"></textarea>
-  </form>
-    <div><br>
-      <a id="button" href="#">send</a>
+    <form>
+    <h4>MESSAGE</h4><br>
+      <textarea rows="4" cols="22"></textarea>
+    </form>
+      <div><br>
+        <a id="button" href="#">S E N D</a>
+    </div>
+  </div>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>
+    <![endif]-->
+
+
+    <div id="map-container" class="col-md-4 pull-right"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script>
+
+      function init_map() {
+		var var_location = new google.maps.LatLng(30.307182,-97.755996);
+
+        var var_mapoptions = {
+          center: var_location,
+          zoom: 14
+        };
+
+		var var_marker = new google.maps.Marker({
+			position: var_location,
+			map: var_map,
+			title:"Venice"});
+
+        var var_map = new google.maps.Map(document.getElementById("map-container"),
+            var_mapoptions);
+
+		var_marker.setMap(var_map);
+
+      }
+
+      google.maps.event.addDomListener(window, 'load', init_map);
+
+    </script>
+
+
   </div>
 </div>
-
-
- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
- <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 </html>
