@@ -29,12 +29,9 @@ $(function() {
   });
 });
 
+
 // carousel
-    $(function(){
-
-        $('.carousel-control').click(function(e){
-            e.preventDefault();
-            $('#carousel-example-generic').carousel( $(this).data() );
-        });
-
-    });//END document.ready
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+// responsive carousel settings
