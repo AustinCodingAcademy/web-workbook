@@ -31,7 +31,11 @@ $(function() {
 
 
 // carousel
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
+// Activate Carousel
+$("#myCarousel").carousel();
+
+// Enable Carousel Indicators
+$(".item").click(function(){
+    $("#myCarousel").carousel(1);
 });
 // responsive carousel settings
