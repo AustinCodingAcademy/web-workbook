@@ -122,6 +122,9 @@
         margin-left: 20px;
         margin-right: 20px;
     }
+    .my_parallax {
+      display:none;
+    }
 }
 @media (max-width: 767px) {
     .about_me {
@@ -141,12 +144,18 @@
         height: 200px;
 
     }
+    .parallax-window {
+      display:none;
+    }
     .my_p {
         margin-left: 0px;
         margin-right: 0px;
     }
     #educator {
       height: 1500px;
+    }
+    #maker .awesome {
+      height:200px;
     }
 }
 
@@ -157,19 +166,21 @@
 
 .developer {
     height: 900px;
-    background-color: #729FAD;
+    background-color: #abc9d2;
 }
+      /*carousel*/
 
-/*carousel*/
+        .carousel-inner > .item > a > img {
+          margin: 0 auto;
+          height: 300px;
+        }
+        .my_carousel {
+          margin: 10%;
+        }
+        /*end carousel stylings*/
 
-.carousel-inner > .item > a > img {
-    margin: 0 auto;
-    height: 300px;
-}
-.my_carousel {
-    margin: 10%;
-  }
-    /*end developer stylings*/
+/*end developer stylings*/
+
 
     /*begin parallax one stylings*/
 .parallax-window {
@@ -188,3 +199,64 @@
         height: 150px;
         margin-top: 50px;
     }
+    /*end educator stylings*/
+
+
+    /*begin maker stylings*/
+.maker {
+  background-image: url(../img/pink_rice.png);
+  height:800px;
+
+}
+
+.awesome {
+  height:300px;
+  margin-top:100px;
+}
+    /*end maker stylings*/
+
+    /*begin contact stylings*/
+.contact {
+  background-image:url(../img/background1.png);
+  color:white;
+  height:1000px;
+}
+
+h3 {
+  font-family: 'Rock Salt', cursive;
+  margin-top:100px;
+  margin-bottom: 75px;
+  text-align: center;
+}
+h4 {
+  font-size: 16pt;
+  margin-bottom: 25px;
+
+}
+.my_php {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 14pt;
+  margin-left:
+}
+.my_input {
+  margin-bottom:20px;
+}
+.my_email {
+  margin-left: 30px;
+  margin-bottom: 30px;
+
+}
+.my_button {
+  color:black;
+  margin-top: 10px;
+  margin-bottom:100px;
+}
+.social {
+  height:200px;
+}
+
+.sm_icon {
+  padding:10px;
+
+}
+    /*end contact stylings*/
