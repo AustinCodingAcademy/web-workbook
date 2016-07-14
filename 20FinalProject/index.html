@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
     <title>Christina McMillan Web Development</title>
+
+    <link rel='shortcut icon' href='img/favicon.png' type='image/x-icon' />
 
     <!-- Reset CSS file -->
     <link href="css/css-reset.css" rel="stylesheet">
@@ -27,6 +30,7 @@
     <!-- CUSTOM CSS FILE(S) -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/carousel_style.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
@@ -52,7 +56,7 @@
                 </button>
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#" class="navbar-left"><img src="img/logo_placeholder.png" class="animated jello"></a>
+                        <a href="index.html" class="navbar-left"><img src="img/logo_placeholder.png" class="animated jello"></a>
                     </li>
                     <li>
                         <a class="navbar-brand fancy_font animated fadeInDown" href="index.html">Christina McMillan</a>
@@ -92,8 +96,13 @@
     <div class="container">
 
 
+        <!-- Services Section -->
 
-        <div class="services" id="services">
+        <div class="title_spacing">
+            <a name="services">&nbsp;</a>
+        </div>
+
+        <div class="services">
 
             <div class="row">
                 <div class="col-lg-12">
@@ -103,27 +112,32 @@
 
             </div>
 
-
-            <!-- Services Section -->
             <div class="row">
                 <div class="services_description col-md-12">
                     <ul>
                         <li>
-                            Specializing in web site design for entreprenueurs and start ups
+                            <span class="hvr-wobble-vertical">Web site design for entreprenueurs and start ups</span>
                         </li>
                         <li>
-                            HTML and CSS
+                            <span class="hvr-wobble-vertical">HTML and CSS</span>
                         </li>
                         <li>
-                            PHP and MySQL
+                            <span class="hvr-wobble-vertical">JavaScript</span>
+                        </li>
+                        <li>
+                            <span class="hvr-wobble-vertical">PHP and MySQL</span>
                         </li>
                     </ul>
                 </div>
             </div>
 
+            <div class="title_spacing">
+                <a name="portfolio">&nbsp;</a>
+            </div>
+
 
             <!-- Portfolio Section -->
-            <div class="portfolio_container" id="portfolio">
+            <div class="portfolio_container">
 
                 <div class="row">
                     <div class="col-lg-12">
@@ -136,28 +150,28 @@
                     <div class="col-md-12 hidden-xs hidden-sm">
                         <div class="carousel_container">
                             <div class="carousel">
-                                <a href="http://www.unified-finance.org/newsite/index.html" target="_blank">
+                                <a href="http://www.hootfly.com/" target="_blank">
                                     <div class="item a"></div>
                                 </a>
                                 <a href="http://www.hillcountrygear.com" target="_blank">
                                     <div class="item b"></div>
                                 </a>
-                                <a href="../websitePuzzle/index.html" target="_blank">
+                                <a href="http://www.unified-finance.org/newsite/index.html" target="_blank">
                                     <div class="item c"></div>
                                 </a>
-                                <a href="../15LessonFifteen/Checkpoint3/index.html" target="_blank">
+                                <a href="../websitePuzzle/index.html" target="_blank">
                                     <div class="item d"></div>
                                 </a>
-                                <a href="../09LessonNine/in-class-project/index.html" target="_blank">
+                                <a href="../15LessonFifteen/Checkpoint3/index.html" target="_blank">
                                     <div class="item e"></div>
                                 </a>
-                                <a href="../17LessonSeventeen/homework/index.html" target="_blank">
+                                <a href="../09LessonNine/garden/index.html" target="_blank">
                                     <div class="item f"></div>
                                 </a>
                             </div>
                         </div>
-                        <div class="next">></div>
-                        <div class="prev">
+                        <div class="next hvr-grow">></div>
+                        <div class="prev hvr-grow">
                             <</div>
                         </div>
                     </div>
@@ -165,18 +179,18 @@
                     <!-- Portfolio list that is only visible on small and x-small screens -->
 
                     <div class="row hidden-md hidden-lg">
+
                         <div class="col-sm-12">
                             <div class="portfolio_format">
-                                <h2>Unified Finance</h2>
+                                <h2>Hootfly</h2>
                                 <p>
-                                    Site created for a local firm - they help clients with bookkeeping and reporting. The site features a simple one-page design and smooth scrolling design.
+                                    My web development company - simple 4 page website, simple with minimal fanciness.
                                 </p>
                             </div>
-                            <a href="http://www.unified-finance.org/newsite/index.html" target="_blank">
-                                <img class="img-responsive img-portfolio img-hover" src="img/portfolio/ufo.jpg" alt="UFO Website">
+                            <a href="http://www.hootfly.com" target="_blank">
+                                <img class="img-responsive img-portfolio img-hover" src="img/portfolio/hootfly.jpg" alt="Hootfly Web Development" title="Hootfly Web Development">
                             </a>
                         </div>
-
 
                         <div class="col-sm-12">
                             <div class="portfolio_format">
@@ -187,6 +201,18 @@
                             </div>
                             <a href="http://www.hillcountrygear.com" target="_blank">
                                 <img class="img-responsive img-portfolio img-hover" src="img/portfolio/hcg.jpg" alt="Hill Country Gear website">
+                            </a>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="portfolio_format">
+                                <h2>Unified Finance</h2>
+                                <p>
+                                    Site created for a local firm - they help clients with bookkeeping and reporting. The site features a simple one-page design and smooth scrolling design.
+                                </p>
+                            </div>
+                            <a href="http://www.unified-finance.org/newsite/index.html" target="_blank">
+                                <img class="img-responsive img-portfolio img-hover" src="img/portfolio/ufo.jpg" alt="UFO Website">
                             </a>
                         </div>
 
@@ -221,40 +247,31 @@
                             <div class="portfolio_format">
                                 <h2>Garden Site</h2>
                                 <p>
-                                    Simple two-page site built for class - one large background photo, simple design.
+                                    Simple two-page site built for class - one large background photo, simple design. Features a carousel, too.
                                 </p>
                             </div>
-                            <a href="../09LessonNine/in-class-project/index.html" target="_blank">
+                            <a href="../09LessonNine/garden/index.html" target="_blank">
                                 <img class="img-responsive img-portfolio img-hover" src="img/portfolio/garden_small.jpg" alt="Garden Website" title="Garden Website">
                             </a>
                         </div>
-
-
-                        <div class="col-sm-12">
-                            <div class="portfolio_format">
-                                <h2>Cover Band</h2>
-                                <p>
-                                    Site built for class to practice animate.css and the Google form.
-                                </p>
-                            </div>
-                            <a href="../17LessonSeventeen/homework/index.html" target="_blank">
-                                <img class="img-responsive img-portfolio img-hover" src="img/portfolio/band.jpg" alt="Billy Joel Cover Band" title="Billy Joel Cover Band">
-                            </a>
-                        </div>
-
                     </div>
                     <!-- end of row div for phone/ipad portfolio view -->
 
                 </div>
                 <!-- /.row -->
 
+                <div class="title_spacing">
+                    <a name="resume">&nbsp;</a>
+                </div>
+
+
                 <!-- Resume Section -->
-                <div class="row" id="resume">
+                <div class="row">
                     <div class="col-lg-12">
                         <h2 class="page-header fancy_font">Resume Highlights</h2>
                     </div>
                     <div class="col-md-8">
-                        <p>Christina's web development skills include:</p>
+                        <p>My web development skills include:</p>
                         <ul>
                             <li>Bootstrap v3.2.0</li>
                             <li>HTML5</li>
@@ -264,16 +281,16 @@
                             <li>MySQL databases</li>
                             <li>Strong attention to detail and a willingness to make it work!</li>
                         </ul>
-                        <p>Christina graduated The University of Texas at Austin with a Bachelor of Science Architectural Engineering degree. She never became an engineer, and instead used the skills like problem-solving and attention to detail to work in
-                            finance and programming since graduating in 2003.</p>
+                        <p>I graduated The University of Texas at Austin with a Bachelor of Science Architectural Engineering degree. I never became an engineer, and instead used the skills like problem-solving and attention to detail to work in finance
+                            and programming since graduating in 2003.</p>
                         <p>
-                            To view a more detailed resume, click to the right. You will have the option to print a PDF as well.
+                            To view a more detailed resume, click to the right.
                         </p>
                     </div>
                     <div class="col-md-4">
-                        <div class="img-responsive img-hover resume_background" accesskey="" data-toggle="modal" data-target="#myModal">
+                        <div class="img-responsive img-hover resume_background hvr-shrink" accesskey="" data-toggle="modal" data-target="#myModal">
                             <p class="">
-                                <!-- View Resume -->
+                                View Resume
                             </p>
                         </div>
 
@@ -284,24 +301,34 @@
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title fancy_font" id="myModalLabel">Christina's Resume</h4>
+                                        <h4 class="modal-title fancy_font" id="myModalLabel">Christina McMillan - Resume</h4>
                                     </div>
                                     <div class="modal-body">
 
-                                        <img src="img/Christina.jpg" class="resume_image" />
+                                        <img src="img/Christina.jpg" class="resume_image hvr-pulse-grow" />
 
                                         <div class="resume_section">
+
+
                                             <h3>Professional Experience</h3>
 
                                             <h5>Principal and Co-Owner, Unified Finance Organization</h5>
                                             <p>2014 - Current</p>
                                             <p>
-                                                <li>My partner and I offer finance services to small and medium sized businesses.</li>
-                                                <li>Created and now maintain our corporate web site. A large part of this is building a portal system using PHP and MySQL to manage our client relationships and client work.</li>
-                                                <li>Provide data services by analyzing finanes and provided detailed Excel reports that combine data from multiple sources.</li>
-                                                <li>Bookkeeping and other tasks using QuickBooks Online</li>
+                                                <li>Along with my partner, we offer financial services to small and medium sized businesses such as bookkeeping, cashflow, reporting, and profitability.</li>
+                                                <li>
+                                                    Established an extensive system of spreadsheets used by us and our clients to manage cashflow, budgets, reports, profitability by client, and much more.
+                                                </li>
+                                                <li class="highlight">Designed and currently maintain our corporate web site.</li>
+                                                <li class="highlight">
+                                                    Developing a section of our website used by ourselves and our customers to manage their businesses. Using PHP and MySQL to store data in an organized way (currently links and bookmarks to effectively group tools used daily).
+                                                </li>
+                                                <li>Utilizing my knowledge of QuickBooks Online to help customers get the most out of their financials.</li>
+                                                <li>Providing basic bookkeeping services while developing processes and procedures to increase efficiency and accuracy.</li>
+                                                <li>
+                                                    Delivering data services by analyzing numbers and providing detailed Excel reports that combine data from multiple sources.
+                                                </li>
                                             </p>
-
 
                                             <hr />
                                             <h5>Independent Consultant</h5>
@@ -309,7 +336,7 @@
                                                 2011 - Current
                                             </p>
                                             <p>
-                                                <li>
+                                                <li class="highlight">
                                                     Beginning in 2016, I now offer web development services. I have started a business with my family (Hill Country Gear, camping rentals) and designed the web site.</li>
                                                 <li>Work on an as-needed, hourly basis on a variety tasks typically based around finances, operations, and data management. This may include any of the following tasks: billing and invoicing, reconciling bank
                                                     statements, producing reports and spreadsheets, creating databases, updating a client’s CRM, generating cashflow and projection models, communicating with client’s customers, and interfacing with vendors.</li>
@@ -333,8 +360,7 @@
                                                 </li>
                                                 <li>Created a series of spreadsheets to model our current cashflow as well as our budgets and future projections. This involved meeting regularly with the CEO and sales team.</li>
                                                 <li class="highlight">Supported the sales team by customizing and maintaining the company’s CRM (Salesforce). This role also encompassed sitting in on the sales meetings, running reports, and helping with proposals, in addition
-                                                    to programming Salesforce.
-                                                </li>
+                                                    to programming Salesforce.</li>
                                                 <li>Supervised inventory management, which included monitoring stock levels and ordering as needed to fulfill contracts.</li>
                                                 <li>Managed and maintained employee records and interfaced with ADP.</li>
                                                 <li>Handled various office administration tasks such as ordering office and kitchen supplies, coordinating with the building maintenance and janitorial staff and answering phone calls.</li>
@@ -379,15 +405,10 @@
                                                     <li>Responsible for maintaining company’s financial records using QuickBooks Pro and for filing taxes (employment, Texas Workforce Commission, franchise taxes, federal income taxes)</li>
                                                     <li>Helped set up extensive retail distribution network that includes over 800 retail stores nationwide (independent stores as well as major retailers such as Barnes & Noble and Borders).</li>
                                                 </ul>
-
-
                                             </p>
-
-
                                         </div>
 
                                         <div class="resume_section">
-
                                             <h3>Skills</h3>
 
                                             <h5>Web Development Skills</h5>
@@ -406,12 +427,11 @@
                                                 <li>Proficient operation of Windows and Apple computers</li>
                                                 <li>Motivated and flexible team player with established leadership skills</li>
                                                 <li>Excellent interpersonal, management, organizational, writing and verbal skills</li>
-
                                             </ul>
-
                                         </div>
 
                                         <div class="resume_section">
+
                                             <h3>Education</h3>
 
                                             <p>HTML/CSS Course
@@ -419,7 +439,6 @@
                                             <hr />
                                             <p>Bachelor of Science, Architectural Engineering
                                                 <br> The University of Texas at Austin, 1999-2003</p>
-
                                         </div>
                                         <div class="resume_section">
                                             <h3>Contact Me</h3>
@@ -434,9 +453,10 @@
                                                 <abbr title="Email">E:</abbr> <a href="mailto:me@getchristina@gmail.com">me@getchristina.com</a>
                                             </p>
                                         </div>
+
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Printable Version</button>
+                                        <!-- <button type="button" class="btn btn-primary" data-dismiss="modal">Printable Version</button> -->
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
                                         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
@@ -450,6 +470,10 @@
 
                 <hr>
 
+                <div class="title_spacing">
+                    <a name="contact_me">&nbsp;</a>
+                </div>
+
                 <!-- Contact Me Section -->
                 <div class="row">
 
@@ -458,7 +482,7 @@
                     </div>
                 </div>
 
-                <div class="well" id="contact_me">
+                <div class="well">
                     <div class="row">
                         <div class="col-md-6">
                             <p>
@@ -529,7 +553,8 @@
             <!-- new file added-->
 
             <!-- CUSTOM JAVASCRIPT FILE(S) -->
-            <script src="js/main.js"></script>
+            <script src="js/carousel.js"></script>
+            <script src="js/scroll.js"></script>
 
             <!-- Script to Activate the Carousel -->
             <script>
