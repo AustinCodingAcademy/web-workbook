@@ -1,0 +1,193 @@
+<!-- html comment-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>DEALIO demo</title>
+
+    <!-- bootstrap local-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font awesome CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- animate.css CDN-->
+    <link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
+    <!-- google font CDN-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=#">
+    <!-- project stylesheet local-->
+
+    <link rel="stylesheet" href="css/aca_18a2.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2 fixed_left" id="logo">
+                <img src="img/groucho_logo.jpg" />
+                <hr />
+                <div class="button-group filters-button-group">
+                  <button class="button is-checked" data-filter="*">show all</button>
+                  <button class="button" data-filter=".hamburger">hamburger</button>
+                  <button class="button" data-filter=".pizza">pizza</button>
+                  <button class="button" data-filter=".sandwich">sandwich</button>
+                  <button class="button" data-filter=".burrito">burrito</button>
+                  <button class="button" data-filter="numberGreaterThan50">chicken</button>
+                  <button class="button" data-filter=".hamburger:not(.transition)">ice cream</button>
+                </div>
+                <hr />
+                <div class="button-group filters-button-group">
+                    <button class="button" data-filter=".fast_food">fast food</button>
+                    <button class="button" data-filter=".healthy">healthy</button>
+                    <button class="button" data-filter=".asian">asian</button>
+                    <button class="button" data-filter=".tex_mex">tex-mex</button>
+                    <button class="button" data-filter=":bbq">BBQ</button>
+                </div>
+            </div>
+            <div class="col-xs-10 col-xs-offset-3" id="div200">
+                <h1>Choose your DEALIO discount for AUSTIN, TX</h1>
+                <div class="grid">
+                    <div class="element-item hamburger fast_food" data-category="ice_cream">
+                      <img src="img/logo/carls_jr.png" />
+                      <h3 class="name">FREE hamburger</h3>
+                      <p class="weight">with purchase of a hamburger</p>
+                    </div>
+                    <div class="element-item hamburger fast_food" data-category="ice_cream">
+                      <img src="img/logo/jitb.png" id="img200"/>
+                      <h3 class="name">FREE Sourdough Jack</h3>
+                      <p class="weight">with purchase of Sourdough Jack</p>
+                    </div>
+                    <div class="element-item pizza fast_food" data-category="fast_food">
+                      <img src="img/logo/papa_johns.png" />
+                      <h3 class="name">50% OFF order</h3>
+                      <p class="weight">on order of $20 or more</p>
+                    </div>
+                    <div class="element-item pizza fast_food" data-category="fast_food">
+                      <img src="img/logo/dominos.png" id="img200"/>
+                      <h3 class="name">FREE small pizza</h3>
+                      <p class="weight">with purchase of any pizza</p>
+                    </div>
+                    <div class="element-item sandwich fast_food healthy" data-category="fast_food">
+                      <img src="img/logo/thundercloud.png" />
+                      <h3 class="name">2 fer sandwich</h3>
+                      <p class="weight">on dine-in order</p>
+                    </div>
+                    <div class="element-item sandwich fast_food healthy" data-category="fast_food">
+                      <img src="img/logo/jersey_mikes.png" id="img200"/>
+                      <h3 class="name">FREE chips and drink</h3>
+                      <p class="weight">with purchase of any sandwich</p>
+                    </div>
+                    <div class="element-item sandwich fast_food healthy" data-category="fast_food">
+                      <img src="img/logo/thundercloud.png" />
+                      <h3 class="name">FREE small sandwich</h3>
+                      <p class="weight">with purchase of any sandwich</p>
+                    </div>
+                    <div class="element-item burrito fast_food healthy tex_mex" data-category="fast_food">
+                      <img src="img/logo/taco_cabana.png" />
+                      <h3 class="name">FREE taco</h3>
+                      <p class="weight">with purchase of a taco</p>
+                    </div>
+                    <div class="element-item burrito fast_food healthy tex_mex" data-category="fast_food">
+                      <img src="img/logo/chipotle.png" />
+                      <h3 class="name">FREE tortilla chips</h3>
+                      <p class="weight">with purchase of burrito</p>
+                    </div>
+                    <div class="element-item burrito fast_food healthy tex_mex" data-category="fast_food">
+                      <img src="img/logo/taco_cabana.png" />
+                      <h3 class="name">50% off enchilada plate</h3>
+                      <p class="weight">with purchase of an enchilada plate</p>
+                    </div>
+                    <div class="element-item post-transition fast_food " data-category="post-transition">
+                      <img src="img/logo/jitb.png" id="img200"/>
+                      <h3 class="name">50% off shake</h3>
+                      <p class="weight">with any purchase</p>
+                    </div>
+                    <div class="element-item ice_cream fast_food" data-category="fast_food">
+                      <img src="img/logo/might_fine.png" />
+                      <h3 class="name">FREE kids meal</h3>
+                      <p class="weight">with purchase of hamburger</p>
+                    </div>
+                    <div class="element-item asian" data-category="post-transition">
+                        <img src="img/logo/pei_wei.png" />
+                        <h3 class="name">25% OFF entree</h3>
+                        <p class="weight">with purchase of drink</p>
+                    </div>
+                    <div class="element-item hamburger fast_food" data-category="transition">
+                      <img src="img/logo/carls_jr.png" />
+                        <h3 class="name">FREE french fries</h3>
+                        <p class="weight">with purchase of a Famous Star hamburger</p>
+                    </div>
+                    <div class="element-item fast_food hamburger " data-category="alkali">
+                        <img src="img/logo/mcdonalds.png" id="img200" />
+                        <h3 class="name">FREE fountain drink</h3>
+                        <p class="weight">with the purchase of a Big Mac</p>
+                    </div>
+                    <div class="element-item transition hamburger " data-category="transition">
+                      <img src="img/logo/mcdonalds.png" id="img200" />
+                      <h3 class="name">Buy one Quarterpounder</h3>
+                      <p class="weight">get one Quarterpounder FREE</p>
+                    </div>
+                    <div class="element-item hamburger fast_food" data-category="alkali">
+                        <img src="img/logo/jitb.png" id="img200" />
+                        <h3 class="name">FREE Ultimate Cheeseburger</h3>
+                        <p class="weight">with the purchase of an Ultimate Cheeseburger</p>
+                    </div>
+                    <div class="element-item fast_food hamburger " data-category="transition">
+                      <img src="img/logo/whataburger.png" />
+                        <h3 class="name">Buy one Whataburger</h3>
+                        <p class="weight">get one Whatburger of equal or lesser value</p>
+                    </div>
+                    <div class="element-item fast_food hamburger " data-category="alkaline-earth">
+                      <img src="img/logo/whataburger.png" />
+                        <h3 class="name">FREE drink and fries</h3>
+                        <p class="weight">with purchase of a Whatburger</p>
+                    </div>
+                    <div class="element-item sandwich fast_food healthy" data-category="fast_food">
+                      <img src="img/logo/quiznos.png" id="img200"/>
+                      <h3 class="name">FREE chips and drink</h3>
+                      <p class="weight">with purchase of any sandwich</p>
+                    </div>
+                    <div class="element-item burrito fast_food healthy tex_mex" data-category="fast_food">
+                      <img src="img/logo/chipotle.png" />
+                      <h3 class="name">50% off burrito</h3>
+                      <p class="weight">with purchase of burrito at full value</p>
+                    </div>
+                    <div class="element-item lanthanoid hamburger inner-transition " data-category="lanthanoid">
+                      <img src="img/logo/jitb.png" id="img200">
+                        <h3 class="name">FREE Jack's Spicy Chicken</h3>
+                        <p class="weight">with purchase of Jack's Spicy Chicken</p>
+                        <p class="number"></p>
+                    </div>
+                    <div class="element-item transition hamburger " data-category="transition">
+                        <img src="img/logo/whataburger.png" />
+                        <h3 class="name">FREE Whatachicken</h3>
+                        <p class="weight">with purchase of any sandwich</p>
+                        <p class="number"></p>
+                      </div>
+                </div>
+            </div><!--col-md-9-->
+        </div><!--row-->
+    </div><!--container-->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--isotope-->
+    <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+    <script src="js/isotope1.js"></script>
+
+</body>
+
+</html>
+<!-- html comment-->
