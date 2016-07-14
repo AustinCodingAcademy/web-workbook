@@ -1,0 +1,339 @@
+@import url(https://fonts.googleapis.com/css?family=Yellowtail);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
+body{
+  background-color: #F6D5E5;
+}
+
+/*
+NAVIGATION
+*/
+
+.opacity{
+  position: fixed;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  z-index: 2;
+}
+
+.nav{
+  position: fixed;
+  height: 50px;
+  width: 100%;
+
+  z-index: 1;
+
+  background-color: #2E2F3F;
+}
+
+.nav ul{
+  display: inline-block;
+  height: 100%;
+}
+
+.nav ul.left{
+  float: left;
+}
+
+.nav ul.right{
+  float: right;
+}
+
+.nav li{
+  display: inline-block;
+  height: 45px;
+  width: 50px;
+
+  margin: 0px 5px;
+
+  text-align: center;
+}
+
+.nav li:not(.menu-button):hover{
+  border-bottom: 5px solid #87AFE0;
+}
+
+.nav a{
+  height: 50px;
+  width: 50px;
+  color: #87AFE0;
+}
+
+.nav i{
+  line-height: 50px;
+  vertical-align: center;
+}
+
+.nav .menu-button{
+  border: none;
+
+  color: #87AFE0;
+
+  cursor: pointer;
+}
+
+.menu{
+  position: fixed;
+  height: 100vh;
+  width: 0px;
+
+  background-color: #2E2F3F;
+
+  z-index: 3;
+}
+
+.close{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  color: #87AFE0;
+
+  cursor: pointer;
+}
+
+.close:hover{
+  color: #FFFFFF;
+}
+
+.menu-link{
+  position: absolute;
+  width: 230px;
+
+  padding: 10px 10px;
+
+  color: #87AFE0;
+
+  font-size: 30px;
+  font-family: "Oswald", sans-serif;
+}
+
+.menu-link:hover{
+  color: #ffffff;
+}
+
+.menu ul>a:not(:last-of-type) .menu-link{
+  border-bottom: 1px solid #87AFE0;
+}
+
+.area{
+  position: relative;
+  width: 100%;
+
+  margin-bottom: 50px;
+}
+
+.text-area{
+  position: absolute;
+  width: 90%;
+}
+
+.title-area{
+  position: absolute;
+
+  color: #2E2F3F;
+
+  font-family: "Yellowtail", cursive;
+  font-size: 150px;
+}
+
+.info-area{
+  position: absolute;
+  height: 100%;
+  width: 90%;
+
+  background-color: #B2B59D;
+}
+
+.particle{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.title{
+  color: #2E2F3F;
+
+  font-family: "Yellowtail", cursive;
+  font-size: 150px;
+}
+
+.info{
+  color: #2E2F3F;
+
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.center{
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hcenter{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.vcenter{
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*
+HOME
+*/
+
+#home{
+  height: 1500px;
+
+  padding-top: 50px;
+}
+
+#title{
+  top: 200px;
+}
+
+/*
+ABOUT
+*/
+
+#about{
+  height: 1000px;
+}
+
+/*
+WEBPAGES
+*/
+
+#webpages{
+  height: 1000px;
+}
+
+.col-3{
+  display: inline-block;
+  position: relative;
+  height: 90%;
+  width: 27%;
+
+  margin-left: 4.75%;
+}
+
+.webpage{
+  position: absolute;
+  width: 100%;
+
+  background-color: #87AFE0;
+}
+
+.webpage h3, p{
+  color: #FFFFFF;
+
+  font-family: "Oswald", sans-serif;
+}
+
+.webpage h3{
+  font-size: 32px;
+}
+
+.webpage p{
+  font-size: 16px;
+}
+
+/*
+CONTACT
+*/
+
+#contact{
+  height: 1000px;
+}
+
+@media (max-width: 1389px){
+  .title-area{
+    font-size: 125px;
+  }
+}
+
+@media (max-width: 1256px){
+  .title{
+    font-size: 125px;
+  }
+
+  .info{
+    font-size: 20px;
+  }
+
+  #about{
+    height: 900px;
+  }
+
+  #contact{
+    height: 900px;
+  }
+}
+
+@media (max-width: 895px){
+  .title{
+    font-size: 75px
+  }
+
+  .info{
+    font-size: 15px;
+  }
+
+  #about{
+    height: 700px;
+  }
+
+  #contact{
+    height: 700px;
+  }
+}
+
+@media (max-width: 640px){
+  .title-area{
+    font-size: 75px;
+  }
+}
+
+
+@media (max-width: 617px){
+  #about{
+    height: 850px;
+  }
+
+  #contact{
+    height: 850px;
+  }
+}
+
+@media (max-width: 505px){
+  .webpage h3{
+    font-size: 25px;
+  }
+
+  .webpage p{
+    font-size: 13px;
+  }
+}
+
+
+@media (max-width: 490px){
+  #about{
+    height: 1000px;
+  }
+
+  #contact{
+    height: 1000px;
+  }
+}
