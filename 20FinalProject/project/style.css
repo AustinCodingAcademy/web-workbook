@@ -55,15 +55,14 @@ display: inline-block;
 .hero {
     background-image: url("http://i.imgur.com/PURXuLd.png");
     background-size: cover;
-    height: 110vh;
-    bottom: 3.5vh;
-    width: 105%;
-    right: 2%;
-    background-repeat: no-repeat;
-    position: relative;
-    display: inline-block;
+  padding-bottom: 85vh;
+    width: 100%;
+
+
+
+
 }
-.hero h1, h2 {
+.hero h1, .hero h2 {
     color: #C6A7FB;
     position: relative;
     left: 65%;
@@ -100,9 +99,13 @@ section h4 {
 
 /*projects stylings*/
 .projects{
-    margin: 3vh;
-    border: solid 3px #C6A7FB;
+  border: solid 3px #C6A7FB;
+margin-right: 2%;
+margin-bottom: 1.7%;
+height: 250px;
+overflow: hidden;
 }
+
 .projects img {
     width: 100%;
     padding: 3vh 0;
@@ -112,7 +115,6 @@ section h4 {
   position: static;
       text-align: center;
       color: black;
-      margin-right: 24%;
       font-size: 5rem;
       margin-bottom: 10vh;
 }
@@ -122,6 +124,16 @@ section h4 {
 
 }
 
+@media (min-width: 992px) {
+#projects .col-md-offset-2 {
+    margin-left: 14.666667%;
+}
+}
+/*resume styles*/
+
+.linkedIn{
+  text-align: center;
+}
 .resumebutton{
   position: static;
   text-align: center;
@@ -132,8 +144,26 @@ section h4 {
 .linkedinphoto{
   width: 40%;
 border: solid 2px #C6A7FB;
-margin: 4vh 30%;
+
 }
+
+@media (max-width: 992px){
+  .linkedinphoto {
+    width: 100%;
+
+  }
+  .projects{
+  height: 150px;
+  }
+}
+
+@media (max-width: 468px){
+  .projects{
+  height: 250px;
+  margin-bottom: 4vh;
+  }
+}
+
 
 
 
@@ -150,10 +180,12 @@ footer h2{
   margin-top: 7vh;
 }
 
+.form input{
+  width:28%;
+}
 
-.submitForm{
-  display: inline;
-
+.name_form{
+  margin-top: 6vh;
 }
 
 
@@ -164,34 +196,10 @@ footer h2{
 margin-left: 30%;
   color: #89949C;
 }
-/*
-.mapphoto{
-  border: 0;
-    margin-left: 33%;
-    width: 40%;
-    height: 57vh;
-    margin-top: 4vh;
-}*/
-
-/*slideshow*/
-/*#codepen{
-  position: static;
-  text-align: center;
-  color: black;
-  font-size: 5rem;
-  margin-top: 7vh;
-
-}
-.photoslide{
-  width:50%;
-  margin-left: 25%;
-  margin-bottom: 10vh;
-}*/
-
 
 /*footer stylings*/
-
 .footer{
+  margin-top: 4vh;
   background-color: #89949C;
   height: 53vh;
 }
@@ -203,4 +211,19 @@ margin-left: 30%;
       margin-top: -8vh;
       margin-left: 0;
       float:left;
+}
+
+
+/*carousel stylings*/
+.carouselPic {
+  height:260px;
+  margin-bottom: 4vh;
+}
+
+#codepen{
+  position: static;
+text-align: center;
+color: black;
+font-size: 5rem;
+margin-bottom: 10vh;
 }
