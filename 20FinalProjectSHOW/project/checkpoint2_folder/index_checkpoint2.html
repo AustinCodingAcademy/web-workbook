@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>PickAPig</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Fonts  -->
+    <link href='https://fonts.googleapis.com/css?family=Londrina+Outline' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Londrina+Solid' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+    <!--Smooth Scroll Javascript -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script>
+        $(function() {
+            $('a[href*="#"]:not([href="#"])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
+        var amountScrolled = 300;
+
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > amountScrolled) {
+                $('a.back-to-top').fadeIn('slow');
+            } else {
+                $('a.back-to-top').fadeOut('slow');
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <main>
+        <nav id="nav">
+            <div class="move_right">
+                <!-- Add ul and li -->
+                <a class="nav-link" href="#home">PickAPig.Org</a>
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#adopt">Adopt</a>
+                <a class="nav-link" href="#stories">Success Stories</a>
+
+            </div>
+
+        </nav>
+        <header>
+            <div class="opacity" id="home">
+                <h1>Teacup Pig Adoption Agency</h1>
+                </br>
+                <h2>Because dogs are so last year</h2>
+                </br>
+                <a id="take" href="#adopt">Take One Home Today</a>
+            </div>
+        </header>
+
+        <section id="about">
+            <a href="#nav" class="back-to-top">Back to Top</a>
+            <h2>About</h2>
+            </br>
+            <img id="about_pic" src="http://www.newfoundreads.com/wp-content/uploads/2016/04/teacup-pig-1.jpg" />
+            <p>
+                Always fantasized of owning your very own teacup pig? Well you're in luck! PickAPig is an adoption agency here to help you pick the teacup pig of your dreams. Founded in 2009, PickAPig is the new modern way to get a pig in your home. <em> Friendly Warning: Teacup pigs stay teacup sized for a short period of time. </em> GET ONE TODAY!
+            </p>
+
+        </section>
+
+      </br>
+      </br>
+      </br>
+      </br>
+
+        <div id="adopt">
+            <h2>Adopt</h2>
+        </div>
+        <!-- <ul class="img-list"> -->
+        <div class="imgwrap">
+            <img class="john_wayne_pic" src="http://preciousteacuppigs.com/wp-content/uploads/2014/02/pig-cowboy.jpg" alt="john" title="john" />
+            <p class="imgdescription"> This here is John Wayne. John Wayne is a true cowboy. Take home this hot piece of bacon and watch him sizzle out in the open plains</p>
+        </div>
+        <div class="imgwrap">
+            <img class="james_taylor_pic" src="http://cdn1.theodysseyonline.com/files/2014/11/17/635517858537364792-1705016565_article-0-132A2515000005DC-170_634x444.jpg" alt="James" title="James" />
+            <p class="imgdescription"> Everyone knows there's nothing better than live music. Bring home James "Oinker" Taylor and let this little pig ham it up for you and your family.
+                <p/>
+        </div>
+        <div class="imgwrap">
+            <img class="daiquiri_pic" src="https://s-media-cache-ak0.pinimg.com/736x/66/c3/59/66c359b98d33307690e3fbef6356d620.jpg" alt="daiquiri" title="daquiri" />
+            <p class="imgdescription">To busy to go to the market? Let this little piggy go to the market for you. Daquiri gets all the deals. Berry delicious!</p>
+        </div>
+        <div class="imgwrap">
+            <img class="princess_pic" src="http://lovelace-media.imgix.net/uploads/175/6c81baf0-1f25-0132-4e2d-0ebc4eccb42f.jpg?w=700&fit=max&auto=format&q=70" alt="princess" title="princess" />
+            <p class="imgdescription">Are you a knight in swining armor? Take home Princess and live happily ever after.</p>
+        </div>
+        </div>
+
+
+        <div id="stories">
+            <h2>Adoption Success Stories</h2>
+            <div id="girl">
+                <img id="type1" src="Lindsay_Type1.png" alt="pig" />
+                <img id="girl_pic" src="http://news.nationalgeographic.com/content/dam/news/photos/000/842/84231.adapt.768.1.jpg" />
+
+
+            </div>
+            <clearfix class="clearfix"></clearfix>
+            <div id="boy">
+                <img id="boy_pic" src=" http://www.petinsurance.com/healthzone/pet-articles/pet-breeds/~/media/All%20PHZ%20Images/Article%20images/TeacupWilbur.ashx" />
+                <img id="type2" src="type1.png" alt="pig" />
+
+            </div>
+
+        </div>
+        </div>
+        <clearfix class="clearfix"></clearfix>
+
+        <footer>
+
+
+            <div class="inquiry">
+
+                <h2>Inquiry</h2>
+                <contact>
+                    <p>Name:</p>
+
+                    <textarea></textarea>
+                    <p>Email:</p>
+                    <textarea></textarea>
+                    <p>Phone Number:</p>
+                    <textarea></textarea>
+                    <p>Pick a Pig:</p>
+                    <textarea></textarea>
+                    </br>
+                    </br>
+
+                    <button type="button">Submit</button>
+                </contact>
+            </div>
+
+
+            </br>
+            </br>
+        </footer>
+
+    </main>
+</body>
+
+</html>
