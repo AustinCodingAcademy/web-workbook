@@ -6,7 +6,6 @@ const startFade = 0.85;
 
 
 $(function(){
-  console.log($(window).width());
 
   //calculate margin between webpage elements
   var margin = $(".col-3").height() * ((1 - (webpageHeight * 5)) / 4);
