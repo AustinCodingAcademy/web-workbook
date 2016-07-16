@@ -1,218 +1,159 @@
     /*navbar stylings*/
 
-.stego {
-    height: 60px;
-}
-.navbar-brand {
-    padding: 0;
-}
-.navbar {
-    background-color: grey;
-}
-#my_links {
-    color: white;
-    margin-right: 25px;
-}
+    .stego {
+        height: 60px;
+    }
+    .navbar-brand {
+        padding: 0;
+    }
+    .navbar {
+        background-color: grey;
+    }
+    #my_links {
+        color: white;
+        margin-right: 25px;
+    }
+    /*end navbar stylings*/
+    /*begin home stylings*/
 
-/*end navbar stylings*/
-
-
-/*begin home stylings*/
-
-.home {
-    background-image: url(../img/home.jpg);
-    background-size: 100% 100%;
-    height: 800px;
-    color: white;
-    text-align: center;
-}
-.home h1 {
-    font-family: 'Rock Salt', cursive;
-    font-size: 40pt;
-    padding-top: 300px;
-    margin-bottom: 50px;
-}
-.home p {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 14pt;
-}
-.home_nav_img {
-    margin-top: 50px;
-    height: 25px;
-    background-repeat: no-repeat;
-}
-@media (max-width: 767px) {
     .home {
-        background-image: url(../img/phone_home.png);
-        background-size: cover;
-        height: 700px;
+        background-image: url(../img/home.jpg);
+        background-size: 100% 100%;
+        height: 800px;
+        color: white;
+        text-align: center;
     }
     .home h1 {
-        padding-top: 200px;
+        font-family: 'Rock Salt', cursive;
+        font-size: 40pt;
+        padding-top: 300px;
+        margin-bottom: 50px;
+    }
+    .home p {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 14pt;
     }
     .home_nav_img {
+        margin-top: 50px;
+        height: 25px;
+        background-repeat: no-repeat;
+    }
+    @media (max-width: 767px) {
+        .home {
+            background-image: url(../img/phone_home.png);
+            background-size: cover;
+            height: 700px;
+        }
+        .home h1 {
+            padding-top: 200px;
+        }
+        .home_nav_img {
+            margin-top: 100px;
+        }
+    }
+    /*end home stylings*/
+    /*begin about me stylings*/
+
+    .about_me {
+        background-image: url(../img/background1.png);
+        height: 850px;
+        color: white;
+        text-align: center;
+        font-family: 'Rock Salt', cursive;
+    }
+    .my_h2 {
+        margin-bottom: 50px;
+        font-family: 'Rock Salt', cursive;
+        text-align: center;
         margin-top: 100px;
     }
-}
-
-/*end home stylings*/
-
-
-/*begin about me stylings*/
-
-.about_me {
-    background-image: url(../img/background1.png);
-    height: 825px;
-    color: white;
-    text-align: center;
-    font-family: 'Rock Salt', cursive;
-}
-
-
-.my_h2 {
-    margin-bottom: 50px;
-    font-family: 'Rock Salt', cursive;
-    text-align: center;
-    margin-top: 100px;
-}
-
-
-.my_p {
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 18pt;
-    margin-left:150px;
-    margin-right:150px;
-}
-
-
-.bio_icon {
-    height: 200px;
-    margin-top: 50px;
-    border: 5px solid;
-    border-color: #996600;
-    border-radius: 50%;
-}
-#wrapper .info {
-    font-family: 'Open Sans Condensed', sans-serif;
-    visibility: hidden;
-}
-#wrapper:hover .info {
-    visibility: visible;
-}
-.info > li {
-    list-style: none;
-}
-.info a {
-    color: white;
-}
-
-/*tablet and phone stylings*/
-
-@media (min-width: 768px) and (max-width: 991px) {
-    #wrapper .info {
-        visibility: visible;
-    }
-    .about_me {
-        height: 950px;
-    }
-    .developer {
-        height: 900px;
-    }
     .my_p {
-        margin-left: 20px;
-        margin-right: 20px;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 18pt;
+        margin-left: 150px;
+        margin-right: 150px;
     }
-    .my_parallax {
-      display:none;
-    }
-}
-@media (max-width: 767px) {
-    .about_me {
-        height: 2000px;
-    }
-    #wrapper .info {
-        visibility: visible;
-    }
-    .developer {
-        height: 900px;
-    }
-   .developer p {
-     margin-bottom:100px;
-   }
-    #carousel-inner > .item > a > img {
-        margin: 0 auto;
+    .bio_icon {
         height: 200px;
-
+        margin-top: 50px;
+        border: 5px solid;
+        border-color: #996600;
+        border-radius: 50%;
     }
-    .parallax-window {
-      display:none;
+    #wrapper .info {
+        font-family: 'Open Sans Condensed', sans-serif;
+        visibility: hidden;
     }
-    .my_p {
-        margin-left: 0px;
-        margin-right: 0px;
+    #wrapper:hover .info {
+        visibility: visible;
     }
-    #educator {
-      height: 1500px;
+    .info > li {
+        list-style: none;
     }
-    #maker .awesome {
-      height:200px;
+    .info a {
+        color: white;
     }
-}
-
-/*end about me stylings*/
-
-
-/*begin developer stylings*/
-
-.developer {
-    height: 900px;
-    background-color: #abc9d2;
-}
-      /*owl carousel stylings*/
-      /*.screenshot {
-        height:200px;
+    /*end about me stylings*/
+    /*begin developer stylings*/
+    @media (min-width:992px) {
+      #smallicons {
+        display:none;
       }
-      .my_carousel {
-        margin-top:100px;
-      }*/
-/*bootstrap carousel stylings*/
-        .carousel-inner > .item > a > img {
-          margin: 0 auto;
-          height: 300px;
-        }
-        .my_carousel {
-          margin: 10%;
-        }
-        .carousel-indicators li {
-          border: 2px solid black;
-          background-color: darkgrey;
-          width: 15px;
-          height: 15px;
-          margin: 4px;
-          border-radius: 15px;
-        }
-        .carousel-indicators .active {
-          border: 2px solid black;
-          background-color: white;
-          width: 15px;
-          height: 15px;
-          margin: 4px;
-          border-radius: 15px;
-        }
-        /*end carousel stylings
+    }
+    .developer {
+        height: 1000px;
+        background-color: #abc9d2;
+    }
+    .developer h4 {
+      font-family: 'Open Sans Condensed', sans-serif;
+      margin-top:50px;
+      font-size: 16pt;
+    }
+    #project {
+        height: 200px;
+        width: 75%;
+        margin-bottom: 25px;
+        border: 5px solid dimgrey;
+    }
+
+    /*bootstrap carousel stylings*/
+
+    .carousel-inner > .item > a > img {
+        margin: 0 auto;
+        height: 400px;
+    }
+    .my_carousel {
+        margin;
+    }
+    .carousel-indicators > li {
+        border: 2px solid black;
+        background-color: dimgrey;
+        width: 25px;
+        height: 25px;
+        margin: 9px;
+        border-radius: 0;
+
+    }
+    .carousel-indicators .active {
+        border: 2px solid black;
+        background-color: white;
+        width: 25px;
+        height: 25px;
+        margin: 4px;
+        border-radius: 15px;
+    }
+    /*end carousel stylings
 
 /*end developer stylings*/
-
-
     /*begin parallax one stylings*/
-.parallax-window {
+
+    .parallax-window {
         min-height: 500px;
         background: transparent;
     }
     /*end parallax one stylings*/
-
-
     /*begin educator stylings*/
+
     .educator {
         background-image: url(../img/upfeathers.png);
         height: 800px;
@@ -222,70 +163,144 @@
         margin-top: 50px;
     }
     /*end educator stylings*/
-
-
     /*begin maker stylings*/
-.maker {
-  background-image: url(../img/pink_rice.png);
-  height:800px;
 
-}
-
-.awesome {
-  height:300px;
-  margin-top:100px;
-}
+    .maker {
+        background-image: url(../img/pink_rice.png);
+        height: 800px;
+    }
+    .awesome {
+        height: 300px;
+        margin-top: 100px;
+    }
     /*end maker stylings*/
-
     /*begin contact stylings*/
-.contact {
-  background-image:url(../img/background1.png);
-  color:white;
-  height:1000px;
-}
 
-h3 {
-  font-family: 'Rock Salt', cursive;
-  margin-top:100px;
-  margin-bottom: 75px;
-  text-align: center;
-}
-h4 {
-  font-size: 16pt;
-  margin-bottom: 25px;
+    .contact {
+        background-image: url(../img/background1.png);
+        color: white;
+        height: 900px;
+    }
+    h3 {
+        font-family: 'Rock Salt', cursive;
+        margin-top: 100px;
+        margin-bottom: 75px;
+        text-align: center;
+    }
+    h4 {
+        font-size: 16pt;
+        margin-bottom: 25px;
+    }
+    .my_php {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 14pt;
+        margin-left:
+    }
+    .my_input {
+        margin-bottom: 20px;
+    }
+    .my_email {
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+    input {
+        color: black;
+    }
+    textarea {
+        color: black;
+    }
+    .my_button {
+        color: black;
+        margin-top: 10px;
+        margin-bottom: 75px;
+    }
+    .social {
+        height: 200px;
+    }
+    .sm_icon {
+        padding: 10px;
+    }
+    #socialmedia a {
+      text-decoration: none;
+      color:white;
+    }
 
-}
-.my_php {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 14pt;
-  margin-left:
-}
-.my_input {
-  margin-bottom:20px;
-
-}
-.my_email {
-  margin-left: 30px;
-  margin-bottom: 30px;
-}
-input {
-  color:black;
-}
-textarea {
-  color:black;
-}
-
-.my_button {
-  color:black;
-  margin-top: 10px;
-  margin-bottom:100px;
-}
-.social {
-  height:200px;
-}
-
-.sm_icon {
-  padding:10px;
-
-}
     /*end contact stylings*/
+    /*tablet and phone stylings*/
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        #wrapper .info {
+            visibility: visible;
+        }
+        .about_me {
+            height: 950px;
+        }
+        #developer {
+            height: 1700px;
+        }
+
+        .my_p {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        #developer  p {
+          margin-bottom:50px;
+        }
+        #my_parallax {
+            display: none;
+        }
+        #smallicon {
+            height: 250px;
+        }
+        #desktoponly {
+            display: none;
+        }
+        #project {
+
+        }
+    }
+    @media (max-width: 767px) {
+        .about_me {
+            height: 2000px;
+        }
+        #wrapper .info {
+            visibility: visible;
+        }
+        #developer {
+            height: 725vw;
+        }
+        .developer p {
+            margin-bottom: 5vw;
+        }
+        #carousel-inner > .item > a > img {
+            margin: 0 auto;
+            height: 200px;
+        }
+        #my_parallax {
+            display: none;
+        }
+        .my_p {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        #educator {
+            height: 1500px;
+        }
+        #maker .awesome {
+            height: 200px;
+        }
+        #smallicons {
+            visibility: visible;
+            height: 100px;
+        }
+        .smallicon #project{
+            height:45vw;
+            width:75%;
+            margin-bottom: 50px;
+
+        }
+
+        #desktoponly {
+            display: none;
+        }
+    }

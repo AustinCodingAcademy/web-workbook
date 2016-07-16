@@ -38,4 +38,3 @@ $("#myCarousel").carousel();
 $(".item").click(function(){
     $("#myCarousel").carousel(1);
 });
-// responsive carousel settings
