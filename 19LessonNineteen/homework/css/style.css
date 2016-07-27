@@ -90,10 +90,15 @@ p {
   background-color: #EFBD0E;
   color:white;
 }
-.info h2:hover {
-  -webkit-animation: wobble 3s;
-    animation: wobble 1s;
+@keyframes hover {
+    from {background-color: #EFBD0E;}
+    to {background-color: white;}
 }
+.info h2:hover {
+  animation-name: hover;
+    animation-duration: 2s;
+}
+
 
 /*portfolio section*/
 .portfolio {
