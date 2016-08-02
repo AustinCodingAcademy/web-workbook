@@ -1,10 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Landscape Design</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Berries</title>
+  <style>
+    #frame {
+      display: flex;
+      flex-flow: row-wrap;
+    }
+    #pic {
+      width: 500px;
+      margin: 2px;
+    }
+    #right {
+      width: 500px;
+      background-color: rgb(240,240,240);
+      text-align: center;
+      margin: 2px;
+    }
+    #descrip {
+      color: #555;
+      padding-bottom: 20px;
+      font-size: 16px;
+    }
+    a {
+      color: #252b3b;
+      border: 2px solid #555;
+      padding: 5px;
+      text-decoration: none;
+    }
+    #center {
+      padding-top: 75px;
+    }
+  </style>
 </head>
 <body>
-
+    <div id="frame">
+      <div id="pic">
+        <img src="img/berries.jpg" alt="raspberries" height="100%" width="100%"/>
+      </div>
+      <div id="right">
+        <div id="center">
+          <p style="font-color:#252b3b;font-size:1.9em;">Berries</p>
+          <p id="descrip">Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+          <a href="#"><b>READ MORE<b></a>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
