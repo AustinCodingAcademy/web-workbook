@@ -5,7 +5,7 @@ body {
 
 #picture {
   background: red;
-  flex: 0 1 auto;
+  /*flex: 0 1 auto;*/
   margin-right: 5px;
   width: 500px;
 }
@@ -17,11 +17,16 @@ section > img {
 }
 
 #berries {
+  display: flex;
+  flex-direction: column;
   background: rgb(240,240,240);
-  flex: 0 1 auto;
+  /*flex: 0 1 auto;*/
   width: 500px;
-  text-align: center;
-  padding-top: 8%;
+  /*height: 400px;*/
+  /*text-align: center;
+  padding-top: 8%;*/
+  justify-content: center; /*main axis - horizontally normally, but wiht the flex-direct: column above, it makes it vertical*/
+  align-items: center; /*vertical axis, swaps with the flex-direction: column attribute above*/
 }
 
 section > h1 {
@@ -41,7 +46,7 @@ section > p {
   border-width: 2px;
   border-color: #555;
   padding: 5px;
-  display: inline;
+  /*display: inline;*/
 }
 
 a {
