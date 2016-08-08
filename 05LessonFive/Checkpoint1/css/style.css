@@ -1,43 +1,50 @@
-.lawn {
-    width: 100%;
-    height: 300px;
+/*--So, a small prerequisite reading about this:
+I'm very confused about the idea of entering strict pixel values, it seems really messy, especially if people change accessiblity settings, yet it seems to be the only way I can find to size and position certain elements, percentage is even messier regarding these problems--*/
+
+main {
+    overflow: hidden;
+    margin: auto;
 }
 
-.lawn h1 {
-    text-align: center;
-    font-family: monospace;
-    color: darkgray;
-}
-
-.lawn {
-    background-image: url(../img/banner-garden-stmichaelsmount.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.left {
+#berries {
+    width: 500px;
     float: left;
-    width: 60%;
-    height: 300px;
-    margin-left: 260px;
-    background-color: lightgray;
 }
 
-.left h1 {
+#berries img {
+    width: inherit;
+}
+
+#textbox {
+    width: 500px;
+    height: 394px;
     text-align: center;
+    background-color: rgb(250, 250, 250);
+    float: left;
+    position: fixed;
+    display: inline-block;
 }
 
-.left p {
+#textbox h1 {
+    padding-top: 100px;
+    color: #252b3b;
+    font-size: 1.9em;
+}
+
+#textbox p {
+    padding-bottom: 20px;
+    color: #555;
+    margin: 5%;
+}
+
+/*for example, re: the pixel problem, it seems strange that the 100px value for #readmore is the least messy solution I can find
+The others consisting of things like displacement or a bunch of wrappers or tables*/
+
+#readmore {
     text-align: center;
-}
-
-body p {
-    font-family: monospace;
-    font-size: 12px;
-    text-decoration: underline;
-}
-
-.p {
-    text-decoration: none;
+    border-color: #555;
+    border-style: solid;
+    border-width: 2px;
+    margin: 0 auto;
+    width: 100px;
 }
