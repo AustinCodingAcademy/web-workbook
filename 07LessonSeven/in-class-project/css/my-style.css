@@ -44,7 +44,7 @@ section {
   padding-bottom: 10px;
 }
 
-p {
+p, label {
   font-size: .75em;
   color:  #5c5c70;
   font-weight: normal;
@@ -52,7 +52,36 @@ p {
   margin: .5em;
 }
 
-input[type="text"] {
+label {
+  align-items: flex-start;
+}
+
+.input1 {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  border: none;
+  resize: none;
+}
+
+.input2 {
+  width: 100%;
+  height: 50px;
+  resize: none;
+  border: none;
+}
+
+input[type=button] {
+    background-color: #2e2e2e;
+    border: none;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 1em;
+}
+/*input[type="text"] {
   display: block;
   margin: 0;
   width: 100%;
@@ -96,4 +125,4 @@ input[type="text"]:input {
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
-}
+}*/
