@@ -11,6 +11,10 @@ header {
   padding: 15px 0 17px 25px;
 }
 
+.nav {
+  text-align: right;
+}
+
 #light h3{
   color: #fff;
 }
@@ -46,11 +50,6 @@ header a {
 header img {
   height: 20px;
   margin-top: 22px;
-}
-
-header h2 {
-  font-size: 24px;
-  color: #fff;
 }
 
 .lesson {
@@ -93,7 +92,7 @@ header h2 {
   color: #555;
   border: 2px solid #555;
   text-decoration: none;
-  transition: .75s;
+  transition: .5s;
   padding: 5px;
   font-weight: bold;
   display: none;
@@ -104,7 +103,7 @@ header h2 {
 }
 
 .lesson a:hover {
-  font-size: 22px;
+  font-size: 20px;
   text-decoration: none;
   color: #555;
 }
@@ -194,13 +193,36 @@ header h2 {
 }
 
 @media (max-width: 991px) {
-    .filler { display: none;}
- }
-
- @media (max-width: 994px) {
-     .nav { display: none;}
+  .filler {
+    display: none;
   }
+}
 
-  @media (max-width: 991px) {
-      header { text-align: center;}
-   }
+@media (max-width: 994px) {
+  .nav {
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top: -20px;
+  }
+}
+
+/* Add in for mobile if concerned it can't click due to hover
+@media (max-width: 767px) {
+  .lesson a {
+    display: inline-block;
+  }
+}
+*/
+
+@media (max-width: 991px) {
+  header {
+    text-align: center;
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 991px) {
+  header h1{
+    font-size: 32px;
+  }
+}
