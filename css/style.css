@@ -1,7 +1,7 @@
 body {
-  width: 80%;
   margin: 0 auto;
   font-family: font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+  background-color: #7C7D7F;
 }
 h1 {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -19,7 +19,7 @@ h3 {
 	font-weight: 500;
 	line-height: 15.4px;
 }
-p {
+p, a {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 14px;
 	font-style: normal;
@@ -27,32 +27,78 @@ p {
 	font-weight: 400;
 	line-height: 20px;
 }
+nav {
+  height: 80px;
+  position: relative;
+  vertical-align: top;
+}
+#navLinks {
+  float: right;
+  width: 60%;
+  text-align: right;
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+#navLinks a {
+  padding: 0 10px 10px 0;
+  font-size: 20px;
+}
 header {
-  width: 100%;
-  height: 400px;
-  padding: 75px 25px;
-  position: sticky;
+  height: 600px;
+  padding: 2px 20px 0 20px;
   background-image: url('https://images.unsplash.com/photo-1456318019777-ccdc4d5b2396?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1004&q=80');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-header .title {
-  color: black;
+nav .title {
   font-size: 50px;
-  margin: 50px 10px;
-  width: 45%;
+  width: 40%;
   line-height: 60px;
 }
 section {
   margin-top: 30px;
 }
+.right {
+  float: right;
+  position: absolute;
+  right: 0;
+}
+/*.left {
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+}*/
+.row {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  height: 300px;
+}
+.row div {
+  width: 50%;
+}
+.odd {
+  border-right: 1px solid #ccc;
+}
+.even {
+  border-left: 1px solid #ccc;
+}
+}
+.row:after {
+  clear:both;
+  content: ".";
+  visibility: hidden;
+}
 a:link, a:visited, a:hover{
   text-decoration: none;
-  color: #fff;
+  color: #696969;
 }
 .title {
-  color: #fff;
+  color: #696969;
 }
 .lesson {
   width: 48%;
@@ -60,8 +106,31 @@ a:link, a:visited, a:hover{
   float: left;
   margin: 5px 0;
   padding: 10px;
+  border-radius: 5px;
 }
+.imgContainer {
+  border-radius: 5px;
+  height:300px;
+}
+#growing .imgContainer {
+  background-image: url('https://images.unsplash.com/photo-1469719847081-4757697d117a?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
+}
+#blog .imgContainer {
+  background-image: url("https://images.unsplash.com/uploads/141131945220259503175/0c94691d?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=844&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#about .imgContainer {
+  background-image: url("https://images.unsplash.com/photo-1468869977640-b71ff134f40d?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=843&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .one {
   background-image: url('https://images.unsplash.com/photo-1469719847081-4757697d117a?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80');
   background-size: cover;
