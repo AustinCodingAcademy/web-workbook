@@ -2,7 +2,8 @@ body {
   margin: 0 auto;
   font-family: Segoe UI Mono, sans-serif;
   color: #696969;
-
+  position:absolute;
+  z-index: -500;
 }
 h1 {
 	font-family: Segoe UI Mono, sans-serif;
@@ -12,12 +13,20 @@ h1 {
 	font-weight: 500;
 	line-height: 26.4px;
 }
+h2 {
+  font-family: Segoe UI Mono, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+}
 h3 {
 	font-family: Segoe UI Mono, sans-serif;
-	font-size: 14px;
+	font-size: 20px;
 	font-style: normal;
 	font-variant: normal;
-	font-weight: 500;
+	font-weight: 200;
 	line-height: 15.4px;
 }
 p, a {
@@ -45,7 +54,7 @@ nav {
   padding: 0 10px 10px 0;
   font-size: 20px;
 }
-section {
+#headerImg {
   background-image: url('https://images.unsplash.com/photo-1456318019777-ccdc4d5b2396?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1004&q=80');
   background-size: cover;
   background-position: center;
@@ -66,12 +75,6 @@ section {
   position: absolute;
   right: 0;
 }
-/*.left {
-  float: left;
-  position: absolute;
-  top: 0;
-  left: 0;
-}*/
 .row {
   width: 100%;
   position: relative;
@@ -124,6 +127,11 @@ a:link, a:visited, a:hover{
   font-size: 40px;
   line-height: 42px;
   font-weight: 200;
+  width:auto;
+}
+.button {
+  border: 2px solid #fff;
+  padding: 5px;
 }
 #do h3 {
   font-size: 20px;
@@ -135,13 +143,60 @@ a:link, a:visited, a:hover{
   line-height: 17px;
   font-weight: 200;
 }*/
+#portfolio {
+  position: relative;
+  z-index: -4;
+}
+#lessonList {
+  position: relative;
+  z-index: -3;
+}
 .lesson {
-  width: 48%;
-  height: 200px;
-  float: left;
-  margin: 5px 0;
-  padding: 10px;
-  border-radius: 5px;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  margin: 0 0;
+  position: relative;
+  z-index: -2;
+
+}
+.imageShade {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lessonText {
+  width: 100%;
+  height: 300px;
+  background-color: #fff;
+  opacity: .8;
+  color: #4a4a4a;
+  position: relative;
+  visibility: visible;
+  z-index: 0;
+  transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+}
+.pLink {
+   color: #4a4a4a;
+   transition: all .5s ease-in-out;
+   -moz-transition: all .5s ease-in-out;
+   -webkit-transition: all .5s ease-in-out;
+}
+
+.imageShade:hover .pLink {
+  color: #fff;
+}
+.imageShade:hover .lessonText{
+  background-color: #4a4a4a;
+  visibility: visible;
+  color: #fff;
+  opacity: .8;
 }
 .one {
   background-image: url('https://images.unsplash.com/photo-1469719847081-4757697d117a?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80');
@@ -150,6 +205,114 @@ a:link, a:visited, a:hover{
   background-repeat: no-repeat;
 }
 .two {
+  background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.three {
+  background-image: url('https://images.unsplash.com/photo-1440617711314-de01e4cddec6?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.four {
+  background-image: url('https://images.unsplash.com/photo-1453161535619-303d362ea39f?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.five {
+  background-image: url('https://images.unsplash.com/35/Ov8Hg5LlQriTimkB3PEl_kreativgrund_Weizenfeld.jpg?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1125&q=80&cs=tinysrgb');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.six {
+  background-image: url('https://images.unsplash.com/photo-1444894423756-1bb106dce5a7?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1129&q=80&cs=tinysrgb');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.seven {
+  background-image: url('https://images.unsplash.com/photo-1445122734110-5ccd170eded6?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=997&q=80&cs=tinysrgb');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.eight {
+  background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.nine {
+  background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.ten {
+  background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.eleven {
+  background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.twelve {
+  background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.thirteen {
+  background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.fourteen {
+  background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.fifteen {
+  background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sixteen {
+  background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.seventeen {
+  background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.eighteen {
+  background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.nineteen {
+  background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.twenty {
   background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
   background-size: cover;
   background-position: center;
