@@ -26,6 +26,7 @@ body header h1 {
 }
 section {
   width:100%;
+  margin: auto;
 }
 .container {
   width: 25%;
@@ -51,10 +52,15 @@ section div.container:first-of-type {
 }
 .container a {
   text-decoration: none;
-  margin-left: 50%;
+  float:right;
   color: white;
   border: 1px solid white;
   padding: 2%;
+}
+.container a:after {
+  display: block;
+  content: "";
+  clear:both;
 }
 .clearfix:after {
   content: "";
