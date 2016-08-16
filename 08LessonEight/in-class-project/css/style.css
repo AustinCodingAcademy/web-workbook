@@ -1,5 +1,6 @@
 header {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 h1 {
@@ -13,7 +14,11 @@ header p {
 
 main {
   display: flex;
-  justify-content: center;
+  border-bottom: 1px solid black;
+  width: 720px;
+  margin-bottom: 10px;
+  margin-left: 345px;
+  padding-bottom: 40px;
 }
 
 aside {
@@ -21,10 +26,14 @@ aside {
   flex-direction: column;
   align-items: stretch;
   padding: 10px;
-  height: 300px;
+  height: 260px;
   width: 350px;
   margin-right: 10px;
   background-color: lightgray;
+}
+
+aside h2 {
+  margin-bottom: 0px;
 }
 
 section {
@@ -37,29 +46,81 @@ section {
 }
 
 footer {
-  width: 690px;
+  display: flex;
+  margin-left: 345px;
+  margin-right: 325px;
+  width: 720px;
 }
 
-aside h2 {
+h2 {
   font-size: 14px;
 }
 
-aside p {
+p {
   font-size: 12px;
 }
 
-article {
+.rightbox {
   width: 320px;
-  height: 90px;
   background-color: lightgray;
-  margin: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
 }
 
-img {
-  width: 100px;
+aside img {
+  width: 350px;
 }
 
 body {
   display: flex;
   flex-direction: column;
+}
+
+a {
+  font-size: 12px;
+  color: green;
+}
+
+aside a {
+  padding-left: 270px;
+  margin-top: -20px;
+}
+
+.rightbox img {
+  width: 140px;
+}
+
+.righttext {
+  padding-left: 30px;
+  margin-top: -10px;
+}
+
+.bottombox {
+  border-right: 1px solid black;
+  margin-right: 20px;
+  width: 300px;
+}
+
+footer article {
+
+}
+
+li:before {
+  content: '✔'
+}
+
+ul {
+   padding-left: 20px;
+   text-indent: 2px;
+   list-style: none;
+   list-style-position: outside;
+}
+
+li {
+  font-size: 12px;
+}
+
+article a {
+  padding-left: 150px;
 }
