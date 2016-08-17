@@ -1,6 +1,6 @@
 body {
-  width: 80%;
-  margin: 0 auto;
+  width: 90%;
+  margin: 20px auto;
   font-family: arial;
 }
 
@@ -14,58 +14,51 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-.mainimg p {
+.mainimg h1 {
   color: white;
   font-size: 72px;
   font-weight: bold;
 }
 
-.content {
+.content, .spacer {
   height: 324px;
   width: 30%;
   background-color: lightgrey;
   float: left;
 }
 
+.content {
+  width: 30%
+}
+
 .spacer {
-  height: 324px;
   width: 5%;
-  background-color: lightgrey;
-  float: left;
 }
 
-.content ul {
+ul {
   list-style: none;
-  padding-left: 50px;
 }
 
-.content li, p, form {
-  margin-bottom: 5px;
-  margin-top: 5px;
+h2 {
+  color: white;
+}
+
+.social h2, .office h2 {
+  margin-left: 40px;
+}
+
+.content li, form {
+  margin: 5px 0;
   color: grey;
 }
 
-.one h1 {
-  margin-left: 50px;
-}
-
-.two {
-  padding-left: 50px;
-  margin-right: -50px;
-}
-
-.username {
-  width: 200px;
+.username, .usermsg {
+  width: 80%;
   margin-bottom: 10px;
-}
-
-.usermsg {
-  width: 200px;
-  height: 100px;
-  margin-bottom: 10px;
+  resize: none;
 }
 
 .submit {
@@ -74,4 +67,13 @@ body {
   height: 40px;
   width: 70px;
   font-size: 16px;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
 }
