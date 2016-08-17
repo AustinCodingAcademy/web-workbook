@@ -1,7 +1,7 @@
 body {
   margin: 0 auto;
   font-family: Segoe UI Mono, sans-serif;
-  color: #696969;
+  color: #2e2e2e;
   position:absolute;
   z-index: -500;
 }
@@ -20,6 +20,7 @@ h2 {
   font-variant: normal;
   font-weight: 500;
   line-height: 26.4px;
+  padding-top: 31px;
 }
 h3 {
 	font-family: Segoe UI Mono, sans-serif;
@@ -31,7 +32,7 @@ h3 {
 }
 p, a {
 	font-family: Segoe UI Mono, sans-serif;
-	font-size: 14px;
+	font-size: 27px;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
@@ -47,14 +48,14 @@ nav {
 #navLinks {
   position: absolute;
   top: 65px;
-  right: 0;
+  left: 50%;
   white-space: nowrap;
 }
 #navLinks a {
   padding: 0 10px 10px 0;
   font-size: 20px;
 }
-#headerImg {
+#heroImg {
   background-image: url('https://images.unsplash.com/photo-1456318019777-ccdc4d5b2396?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1004&q=80');
   background-size: cover;
   background-position: center;
@@ -99,10 +100,10 @@ nav {
 }
 a:link, a:visited, a:hover{
   text-decoration: none;
-  color: #696969;
+  color: #4a4a4a;
 }
 .pagetitle {
-  color: #696969;
+  color: #4a4a4a;
   white-space: nowrap;
 }
 
@@ -128,6 +129,7 @@ a:link, a:visited, a:hover{
   line-height: 42px;
   font-weight: 200;
   width:auto;
+  white-space: nowrap;
 }
 .button {
   border: 2px solid #fff;
@@ -147,9 +149,73 @@ a:link, a:visited, a:hover{
   position: relative;
   z-index: -4;
 }
-#lessonList {
+#harvest {
+  text-align: center;
+}
+#harvest .title {
+  font-size: 180px;
+  line-height: 1em;
+  color: #2e2e2e;
+  margin: 0 0 5px;
+}
+#harvest p {
+  font-size: 24px;
+  line-height: 1.2em;
+}
+#harvest h2 {
+
+}
+#harvest a {
+    font-size: 30px;
+    border: 2px solid #696969;
+    padding: 5px;
+}
+#harvest-tiles {
+  width: 80%;
+  height: 800px;
+  margin: 0 auto;
+}
+.harvest-tile {
+  border: 2px solid #696969;
+  height: 50%;
+  width: 48%;
+  margin: 10px 5px;
+  float: left;
+
+}
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+#htOne {
+  background-image: url('https://images.unsplash.com/photo-1469719847081-4757697d117a?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#htTwo {
+  background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#htThree {
+  background-image: url('https://images.unsplash.com/photo-1440617711314-de01e4cddec6?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#htFour {
+  background-image: url('https://images.unsplash.com/photo-1453161535619-303d362ea39f?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#portfolioList {
   position: relative;
   z-index: -3;
+  visibility: ;
 }
 .lesson {
   width: 100%;
@@ -167,14 +233,14 @@ a:link, a:visited, a:hover{
   z-index: -1;
   display: flex;
   justify-content: center;
-  align-items: center;
+
 }
 .lessonText {
   width: 100%;
   height: 300px;
-  background-color: #fff;
-  opacity: .8;
-  color: #4a4a4a;
+  /*background-color: lightgray;*/
+  opacity: 0;
+  color: #2e2e2e;
   position: relative;
   visibility: visible;
   z-index: 0;
@@ -182,21 +248,23 @@ a:link, a:visited, a:hover{
   -moz-transition: all .5s ease-in-out;
   -webkit-transition: all .5s ease-in-out;
 }
-.pLink {
-   color: #4a4a4a;
+.pLink a {
+   color: #2e2e2e;
    transition: all .5s ease-in-out;
    -moz-transition: all .5s ease-in-out;
    -webkit-transition: all .5s ease-in-out;
 }
 
-.imageShade:hover .pLink {
+.imageShade:hover .pLink a {
   color: #fff;
+  opacity: 1;
+  z-index: 100;
 }
-.imageShade:hover .lessonText{
+.imageShade:hover .lessonText {
   background-color: #4a4a4a;
   visibility: visible;
   color: #fff;
-  opacity: .8;
+  opacity: .9;
 }
 .one {
   background-image: url('https://images.unsplash.com/photo-1469719847081-4757697d117a?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80');
@@ -241,25 +309,25 @@ a:link, a:visited, a:hover{
   background-repeat: no-repeat;
 }
 .eight {
-  background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
+  background-image: url('https://images.unsplash.com/photo-1466801182732-9e4ea054c094?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=844&q=80');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .nine {
-  background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
+  background-image: url('https://images.unsplash.com/9/fields.jpg?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=907&q=80&cs=tinysrgb');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .ten {
-  background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
+  background-image: url('https://images.unsplash.com/photo-1440689165598-ac7dc9621a77?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .eleven {
-  background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
+  background-image: url('https://images.unsplash.com/10/wheels.jpg?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=997&q=80&cs=tinysrgb');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -313,10 +381,28 @@ a:link, a:visited, a:hover{
   background-repeat: no-repeat;
 }
 .twenty {
-  background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
+  background-image: url('https://images.unsplash.com/photo-1467931701857-c66e9e144633?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1031&q=80');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+#philosophy {
+  background-color: #1a1a1a;
+  text-align: center;
+  margin: 0 0;
+  padding: 3em 0 5em 0;
+  color: #f2f2f2;
+}
+#philosophy h1 {
+  font-size: 90px;
+}
+#philosophy p {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 40px;
+  line-height: 1.2em;
+
+
 }
 footer {
   padding: 10px 0 20px 0;
