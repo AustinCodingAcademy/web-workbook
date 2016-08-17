@@ -3,8 +3,52 @@
 
 <head>
     <title>Template</title>
+    <link rel="stylesheet" href="css/my-style.css" />
 </head>
 
-<body></body>
+<body>
+    <section id="star">
+        <h1> NASA </h1>
+    </section>
+    <section class="text clearfix">
+        <div class="social">
+            <h3> Social Media </h3>
+            <p> Twitter </p>
+            <p> Facebook </p>
+            <p> Instagram </p>
+            <p> Youtube </p>
+        </div>
+        <div class="office">
+            <h3> Office Info </h3>
+            <p> This is information about our office </p>
+        </div>
+        <div class="contact">
+            <h3> Contact Info </h3>
+            <p> Contact info goes here! </p>
+            <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+
+                <div class="row">
+
+                    <label for="name">Your name:</label>
+                    <br />
+                    <input id="name" class="input" name="name" type="text" value="" size="30" />
+                    <br />
+                </div>
+
+
+                <div class="row">
+
+                    <label for="message">Your message:</label>
+                    <br />
+                    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea>
+                    <br />
+                </div>
+
+                <input id="submit_button" type="submit" value="Send Message" />
+            </form>
+        </div>
+
+    </section>
+</body>
 
 </html>
