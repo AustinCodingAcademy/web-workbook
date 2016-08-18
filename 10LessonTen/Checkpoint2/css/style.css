@@ -1,0 +1,108 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/**** Custom Styles ****/
+
+/* Generic Classes */
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+/* Top down structure */
+body {
+  font-family: sans-serif;
+  color: #fff;
+}
+.business-name {
+  margin-left: 10px;
+}
+.business-name > a {
+  /* specificity is higher */
+  /* 0, 1, 1 = 11*/
+  border: 0;
+}
+nav {
+  background: #000;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  line-height: 50px;
+}
+
+nav > ul > li {
+  display: inline;
+  padding: 10px;
+}
+a {
+  /* specifity is lower */
+  /* 0,0,1 = 1 */
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px dashed #fff;
+}
+a:hover {
+  color: goldenrod;
+  border-bottom: 1px dashed goldenrod;
+}
+header,
+section {
+  height: 900px;
+/*   padding-top: 50px; */
+}
+section {
+  padding-top: 200px;
+}
+#top {
+  background-image: url("http://searchengineland.com/figz/wp-content/seloads/2014/08/local-small-business-ss-1920.jpg");
+  background-attachment: fixed; /* fixed background */
+  font-size: 4em;
+  text-align: center;
+  padding-top: 50px;
+}
+#About {
+  background: #1abc9c;
+  text-align: center;
+  font-size: 2em;
+}
+img {
+  height:auto;
+  width:30%;
+}
+#Portfolio {
+  background: #3498db;
+  text-align: center;
+  font-size: 2em;
+}
+#Contact {
+  background: #9b59b6;
+  text-align: center;
+  font-size: 2em;
+}
+footer {
+  height: 200px;
+  background: #34495e;
+  text-align: center;
+/*   line-height: 200px; */
+  font-size: 2em;
+}
