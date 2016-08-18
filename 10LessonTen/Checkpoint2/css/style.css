@@ -74,7 +74,7 @@ section {
 h1 {
   font-size: 2em;
   color: #e8c61c;
-  text-shadow: 2px 2px white;
+  text-shadow: 0px 1px 1px #4d4d4d;
 }
 p {
   color: white;
@@ -86,18 +86,45 @@ p {
   font-size: 4rem;
   text-align: center;
   /*line-height: 900px;*/
-  color: #e8c61c;
   text-shadow: 2px 2px gray;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  text-shadow: 0px 1px 1px #4d4d4d;
+	color: #e8c61c;
+	font: 80px 'LeagueGothicRegular';
 }
+
 #top > h1 {
   font-size: 1.5em;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   margin-top: 150px;
 }
-#top >
+
+.short {
+  display: flex;
+  flex-direction: row;
+}
+header ul li h2 {
+  font-size: 1.5em;
+  border-bottom: 3px solid;
+}
+ul {
+  list-style-type: none;
+}
+header #coding {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  margin-right: 40%;
+}
+
+header #skills {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 #About {
   background: #1abc9c;
   text-align: center;
@@ -114,8 +141,13 @@ p {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  width: 50%;
+  height: auto;
 }
-
+.About h1 {
+  border-bottom: 1px solid;
+  margin-bottom: 50px;
+}
 #Portfolio {
   background: #3498db;
   text-align: center;
