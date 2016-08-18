@@ -1,0 +1,143 @@
+/**** CSS Reset ****/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/**** Custom Styles ****/
+
+/* Generic Classes */
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+/* Top down structure */
+body {
+  font-family: sans-serif;
+  color: #fff;
+}
+.business-name {
+  margin-left: 10px;
+}
+.business-name > a {
+  /* specificity is higher */
+  /* 0, 1, 1 = 11*/
+  border: 0;
+}
+nav {
+  background: #000;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  line-height: 50px;
+}
+
+nav > ul > li {
+  display: inline;
+  padding: 10px;
+}
+a {
+  /* specifity is lower */
+  /* 0,0,1 = 1 */
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px dashed #fff;
+}
+a:hover {
+  color: goldenrod;
+  border-bottom: 1px dashed goldenrod;
+}
+header,
+section {
+  height: 900px;
+/*   padding-top: 50px; */
+}
+h1 {
+  font-size: 2em;
+  color: #e8c61c;
+  text-shadow: 2px 2px white;
+}
+p {
+  color: white;
+}
+#top {
+  background-image: url("../img/penguin.png");
+  background-color: #808080;
+  background-attachment: fixed; /* fixed background */
+  font-size: 4rem;
+  text-align: center;
+  /*line-height: 900px;*/
+  color: #e8c61c;
+  text-shadow: 2px 2px gray;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#top > h1 {
+  font-size: 1.5em;
+  margin-bottom: 200px;
+  margin-top: 150px;
+}
+#top >
+#About {
+  background: #1abc9c;
+  text-align: center;
+  /*line-height: 900px;*/
+  font-size: 2em;
+  color: lightblue;
+  display: flex;
+  justify-content: center;
+  width: 1520px;
+  height: 750px;
+}
+.About {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#Portfolio {
+  background: #3498db;
+  text-align: center;
+  /*line-height: 900px;*/
+  font-size: 2em;
+}
+#Links {
+  background: #000;
+  text-align: center;
+  /*line-height: 900px;*/
+  font-size: 2em;
+}
+#Contact {
+  background: #9b59b6;
+  text-align: center;
+  /*line-height: 900px;*/
+  font-size: 2em;
+}
+footer {
+  height: 200px;
+  background: #34495e;
+  text-align: center;
+/*   line-height: 200px; */
+  font-size: 2em;
+}
