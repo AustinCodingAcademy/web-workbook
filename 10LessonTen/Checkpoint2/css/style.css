@@ -12,11 +12,15 @@ section{
 }
 
 nav{
+  position: fixed;
   display: flex;
   justify-content: center;
   height: 100px;
+  width: 100%;
   align-items: center;
-  width: 960px;
+  top:0;
+  left:0;
+  background-color:white;
 }
 header{
   position: fixed;
@@ -32,16 +36,20 @@ footer{
   display:flex;
   justify-content: center;
 }
+main{
+  margin-top:100px;
+}
 #home{
   background:url("../img/backgroundImg00.jpg");
   background-color: #36454f;
   background-blend-mode: multiply;
   background-size: 1400px ;
+  background-attachment: fixed;
   display:flex;
   justify-content: center;
   align-items: center;
   height:600px;
-  padding-top:100px;
+
 }
 #menu{
   background-color: #82CE8D;
@@ -162,10 +170,11 @@ nav a{
   text-decoration: none;
   color:currentColor;
 }
-nav a:hover{
+nav li:hover{
   background-color: #000014;
   color:white;
   border-radius:25px;
+  /*border:5px solid #000014;*/
 }
 .aboutBox:last-child{
   border:none;
