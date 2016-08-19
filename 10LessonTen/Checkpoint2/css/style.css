@@ -19,6 +19,7 @@ a {
     text-decoration: none;
 }
 nav {
+    height: 78px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -38,6 +39,15 @@ nav ul li {
     text-shadow: 1px 1px 1px #46A682;
     font-weight: bolder;
 }
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .logo {
     float: left;
     font-family: 'Monoton', cursive;
@@ -45,9 +55,14 @@ nav ul li {
     margin: 10px;
 }
 #home {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    background-image: url("https://static.pexels.com/photos/16422/pexels-photo.jpg");
+    background-attachment: fixed;
     padding-top: 100px;
     border-bottom: 1px solid #fff;
-    margin: 200px 5px 80px 5px;
+    margin: 78px 5px 80px 5px;
     font-family: sans-serif;
     text-align: center;
 }
