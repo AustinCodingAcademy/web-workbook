@@ -12,6 +12,9 @@ html {
     font-family: sans-serif;
 }
 a {
+    display: inline-block;
+    padding: 8px;
+    border: 1px solid #6C2207;
     color: #F36626;
     text-decoration: none;
 }
@@ -22,12 +25,10 @@ nav {
     background: black;
 }
 nav ul li {
-    border-right: 1px solid #fff;
-    padding-right: 5px;
     float: right;
     list-style: none;
     display: inline-block;
-    margin: 27px 10px 15px 15px;
+    margin: 27px 5px 15px 15px;
 }
 .links {
     font-family: 'Poiret One', cursive;
@@ -45,7 +46,6 @@ nav ul li {
 }
 #home {
     padding-top: 100px;
-    border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     margin: 200px 5px 80px 5px;
     font-family: sans-serif;
@@ -56,7 +56,7 @@ nav ul li {
     padding: 10px;
     border: 1px solid #6C2207;
 }
-#home>a:hover {
+a:hover {
     font-weight: bolder;
     color: #fff;
     background: #F36626;
@@ -73,9 +73,10 @@ nav ul li {
     font-family: 'Poiret One', cursive;
 }
 #about {
+    border-bottom: 1px solid #fff;
     justify-content: center;
     align-items: center;
-    margin: 5px;
+    margin: 5px 5px 80px 5px;
     display: flex;
     text-align: center;
 }
@@ -89,4 +90,20 @@ nav ul li {
     background: url(../coffee-about.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+}
+#products {
+    margin: 5px;
+    width: auto;
+}
+.product_img {
+    margin-bottom: 20px;
+    margin-right: 50px;
+    width: 250px;
+    height: 200px;
+    background: url(../coffee-img.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#contact {
+    margin-top: 100px;
 }
