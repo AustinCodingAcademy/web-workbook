@@ -1,35 +1,35 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
 html {
     color: #fff;
-    background: #212F44;
+    background: black;
     font-family: sans-serif;
 }
-a {
-    display: inline-block;
-    padding: 8px;
-    border: 1px solid #6C2207;
-    color: #F36626;
-    text-decoration: none;
-}
-nav {
-    height: 78px;
+.overlay {
     width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    height: auto;
     position: fixed;
     top: 0;
     background: black;
 }
-nav ul li {
-    float: right;
-    list-style: none;
-    display: inline-block;
-    margin: 27px 5px 15px 15px;
+.nav ul {
+    display: flex;
+    flex-flow: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .links {
     font-family: 'Poiret One', cursive;
@@ -42,83 +42,180 @@ nav ul li {
 .overlay {
     width: 100%;
     height: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+.logo {
+    color: #fff;
+    font-family: 'Monoton', cursive;
+    font-size: 25pt;
+    margin: 0px 0% 0px 10px;
+}
+.snip {
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    text-transform: uppercase;
+}
+.snip * {
+    box-sizing: border-box;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+.snip li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 12px 2em;
+    overflow: hidden;
+}
+.snip a {
+    font-size: 16pt;
+    padding: 0.3em 10px;
+    color: #F36626;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 2px;
+    margin: 0;
+    text-decoration: none;
+}
+.snip a:before, .snip a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.20s ease;
+}
+.snip a:before {
+    bottom: 100%;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+.snip a:after {
+    padding: 0.3em 0;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    content: attr(data-hover);
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+.snip li:hover a, .snip .current a {
+    transform: translateY(100%);
+}
+#home {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    background-image: url("https://static.pexels.com/photos/34079/pexels-photo.jpg");
+    background-attachment: fixed;
+    margin-top: 160px;
+    border-bottom: 10px solid #212F44;
+    font-family: sans-serif;
+    text-align: center;
+}
+#home a {
+    font-size: 20px;
+    color: #F36626;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #6C2207;
+}
+#tak:hover {
+    font-weight: bolder;
+    color: #ffffff;
+    background: #F36626;
+}
+#home .overlay>a, #home .overlay>h2, #home .overlay>p {
+    margin-bottom: 3%;
+    font-family: 'Poiret One', cursive;
+}
+#home .overlay>p {
+    color: #fff;
+    font-size: 20pt;
+}
+.overlay>h2 {
+    font-weight: 500;
+    font-size: 60pt;
+    color: #46A682;
+    font-family: 'Poiret One', cursive;
+}
+#about {
+    color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    background-image: url("https://static.pexels.com/photos/41135/pexels-photo-41135.jpeg");
+    background-attachment: fixed;
+    border-bottom: 1px solid #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin: 0;
+}
+#about div h2 {
+    color: #F36626;
+    font-size: 45pt;
+    font-family: 'Poiret One', cursive;
+    border-bottom: 10px solid #212F44;
+}
+.about2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18pt;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    width: 70%;
+    height: 70%;
+}
+.about div.overlay {
+    width: 100%;
+    height: 100%;
     background: rgba(0, 0, 0, .8);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.logo {
-    float: left;
-    font-family: 'Monoton', cursive;
-    font-size: 25pt;
-    margin: 10px;
+#products {
+    font-size: 16pt;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #fff;
+    text-align: center;
+    border-top: 20px solid black;
+    background: black;
 }
-#home {
+.product_img1 {
+    height: 500px;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 600px;
-    background-image: url("https://static.pexels.com/photos/16422/pexels-photo.jpg");
-    background-attachment: fixed;
-    padding-top: 100px;
-    border-bottom: 1px solid #fff;
-    margin: 78px 5px 80px 5px;
-    font-family: sans-serif;
-    text-align: center;
+    background-image: url("https://static.pexels.com/photos/36199/pexels-photo.jpg");
 }
-#home>a {
-    display: inline-block;
-    padding: 10px;
-    border: 1px solid #6C2207;
+.product_img2 {
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://static.pexels.com/photos/2061/restaurant-beans-coffee-cup.jpg");
 }
-a:hover {
-    font-weight: bolder;
-    color: #fff;
-    background: #F36626;
+.product_img3 {
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://static.pexels.com/photos/6867/art-heart-caffeine-coffee.jpg");
 }
-#home>a, #home>h2, #home>p {
-    margin-bottom: 5%;
+.product_img4 {
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://static.pexels.com/photos/6230/food-coffee-spoon-drink.jpg");
 }
-#home>p {
-    color: #fff;
-}
-#home>h2 {
-    font-size: 45pt;
+#products h3 {
     color: #46A682;
-    font-family: 'Poiret One', cursive;
-}
-#about {
-    border-bottom: 1px solid #fff;
-    justify-content: center;
-    align-items: center;
-    margin: 5px 5px 80px 5px;
-    display: flex;
-    text-align: center;
-}
-#about div h2 {
     font-size: 45pt;
     font-family: 'Poiret One', cursive;
-}
-.about_img {
-    width: 1000px;
-    height: 300px;
-    background: url(../coffee-about.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-#products {
-    margin: 5px;
-    width: auto;
-}
-.product_img {
-    margin-bottom: 20px;
-    margin-right: 50px;
-    width: 250px;
-    height: 200px;
-    background: url(../coffee-img.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-#contact {
-    margin-top: 100px;
 }
