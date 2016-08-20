@@ -35,6 +35,9 @@ body {
   font-family: sans-serif;
   color: #e8c61c;
 }
+h1, h2 {
+  color: #e8c61c;
+}
 .business-name {
   margin-left: 10px;
 }
@@ -43,8 +46,22 @@ body {
   /* 0, 1, 1 = 11*/
   border: 0;
 }
+.business-name > a > img {
+  max-width: 3em;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center {
+  display: inline-block;
+  text-align: left;
+  max-width: 100%;
+  height: auto;
+  margin-left: 10px;
+}
 nav {
-  background: #000;
+  background: #ddded3;
   height: 50px;
   position: fixed;
   width: 100%;
@@ -58,83 +75,63 @@ nav > ul > li {
 a {
   /* specifity is lower */
   /* 0,0,1 = 1 */
-  color: #fff;
+  color: black;
   text-decoration: none;
-  border-bottom: 1px dashed #fff;
+  border-bottom: 1px solid #e8c61c;
 }
 a:hover {
   color: goldenrod;
   border-bottom: 1px dashed goldenrod;
 }
+
+/*Body of Page*/
 header,
 section {
   height: auto;
+  max-width: 100%;
 /*   padding-top: 50px; */
 }
-h1 {
-  font-size: 2em;
-  color: #e8c61c;
-  text-shadow: 0px 1px 1px #4d4d4d;
-}
-p {
-  color: white;
-}
 #top {
-  background-image: url("../img/penguin.png");
-  background-color: #808080;
+  background-image: url("../img/cold.jpg");
   background-attachment: fixed; /* fixed background */
-  font-size: 4rem;
+  background-size: cover;
+  font-size: 3rem;
   text-align: center;
-  /*line-height: 900px;*/
-  text-shadow: 2px 2px gray;
   display: flex;
   justify-content: center;
+  align-content: center;
   flex-direction: column;
+  /*line-height: 900px;*/
+}
+#top h3 {
+  margin: 150px 50px 20px 50px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
   text-shadow: 0px 1px 1px #4d4d4d;
 	color: #e8c61c;
-	font: 80px 'LeagueGothicRegular';
 }
-
-#top > h1 {
-  font-size: 1.5em;
-  margin-bottom: 100px;
-  margin-top: 150px;
-}
-
-.short {
+#top p {
+  margin: 0px 50px 500px 50px;
   display: flex;
-  flex-direction: row;
-}
-header ul li h2 {
-  font-size: 1.5em;
-  border-bottom: 3px solid;
-}
-ul {
-  list-style-type: none;
-}
-header #coding {
-  display: flex;
-  width: 30%;
-  flex-direction: column;
-  margin-right: 40%;
-}
-
-header #skills {
-  display: flex;
-  width: 30%;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-flow: wrap;
+  justify-content: center;
+  text-shadow: 0px 1px 1px #4d4d4d;
+	color: #e8c61c;
 }
 #About {
-  background: #1abc9c;
+  background: #777c92;
   text-align: center;
   /*line-height: 900px;*/
   font-size: 2em;
   color: lightblue;
   display: flex;
   justify-content: center;
-  width: 1520px;
-  height: 750px;
+  max-width: 100%;
+  height: auto;
+  padding: 5%;
+  text-shadow: 0px 1px 1px #4d4d4d;
+	color: #e8c61c;
 }
 .About {
   display: flex;
@@ -153,307 +150,85 @@ header #skills {
   text-align: center;
   /*line-height: 900px;*/
   font-size: 2em;
-  display: flex;
-  flex-direction: column;
+  /*display: flex;
+  align-items: center;
+  flex-direction: column;*/
 }
-
-#Portfolio > h2 {
-  margin: 50px 10px 10px 10px;
-  font-size: 2em;
+#Portfolio h1 {
   display: flex;
-  width: 100%;
+  align-items: center;
+  justify-content: center;
+  max-width: 50%;
   height: auto;
+  border-bottom: 1px solid;
+  /*margin-bottom: 50px;*/
+  margin: 0px 0px 50px 25%;
+  padding-top: 100px;
+  text-align: center;
+  text-shadow: 0px 1px 1px #4d4d4d;
+	color: #e8c61c;
+}
+#Portfolio h6, #Portfolio h2 {
+  text-shadow: 0px 1px 1px #4d4d4d;
+	color: #e8c61c;
+}
+#Portfolio h2 {
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.pictures {
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
-  border-bottom: 3px #3498db;
-}
-.mainpic {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 20px;
 }
 
-.mainpic img {
-  height: 50%;
-  width: auto;
-  margin-right: 50px;
+#nanoGallery {
+  /*display: flex;
+  flex-direction: row;*/
+  /*align-items: flex-start;*/
+  /*display: inline-flex;*/
+  /*flex-direction: column;*/
+  /*flex-direction: row;*/
+  /*width: 100%;
+  height: auto;*/
+  /*justify-content: left;
+  align-items: center;*/
+ /*margin: 0px 0px 300px 0px;*/
+ padding-bottom: 150px;
 }
-.mainpic p {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-  width: 50%;
-  margin-left: 25%;
-  margin-bottom: 50px;
-}
-.sidepics {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  align-items: flex-start;
-}
-.sidepics img:hover {
-  zoom: 3;
-  width: 75%;
-  height: auto;
-  margin: 0;
-}
-.sidepics div {
-  display: flex;
-}
-
-.sidepics img {
-  width: 50%;
-  height: auto;
-  margin: 50px 100px 50px 0px;
-}
-
-.sidepics p {
-  margin: 200px 0px 0px 20px;
-
-}
-#Links {
-  background: #000;
+#Reviews {
+  background: #050403;
   text-align: center;
   /*line-height: 900px;*/
   font-size: 2em;
-  display: flex;
-  flex-direction: column;
 }
-#Links h2 {
-  margin: 50px 10px 10px 10px;
-  font-size: 2em;
-  display: flex;
-  width: 100%;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-  border-bottom: 3px #3498db;
-}
-.stock {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  /*justify-content: center;
-  width: 100%;
-  overflow-x: scroll;
-  overflow-y: hidden;*/
-}
-.reviews {
-  /*display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;*/
-}
-.reviews img {
-  border-radius: 50%;
-}
-.reviews p {
-  /*display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-  justify-content: center;
-  margin-bottom: 20px;*/
+#Reviews h1, #Reviews .people .single p {
+  text-shadow: 0px 1px 1px #4d4d4d;
+  color: #e8c61c;
 }
 
-/*Contact CSS*/
+#Reviews h1 {
+  padding-top: 100px;
+  border-bottom: 1px solid;
+}
+.people {
+  display: flex;
+  width: auto;
+  max-height: 100%;
+  padding-bottom: 100px;
+}
 #Contact {
   background: #9b59b6;
   text-align: center;
-  height: 700px;
   /*line-height: 900px;*/
   font-size: 2em;
-
 }
-#Contact h2 {
-  margin: 50px 10px 10px 10px;
-  font-size: 2em;
+#Contact h1 {
+  text-shadow: 0px 1px 1px #4d4d4d;
+  color: #e8c61c;
   display: flex;
-  width: 100%;
-  height: auto;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-  border-bottom: 3px #3498db;
 }
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-
-html{    background:url(http://thekitemap.com/images/feedback-img.jpg) no-repeat;
-  background-size: cover;
-  height:100%;
-}
-
-#feedback-page{
-	text-align:center;
-}
-
-#form-main{
-	width:100%;
-	float:left;
-	padding-top:0px;
-}
-
-#form-div {
-	background-color:rgba(72,72,72,0.4);
-	padding-left:35px;
-	padding-right:35px;
-	padding-top:35px;
-	padding-bottom:50px;
-	width: 450px;
-	float: left;
-	left: 50%;
-	position: absolute;
-  margin-top:30px;
-	margin-left: -260px;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-}
-
-.feedback-input {
-	color:#3c3c3c;
-	font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
-	font-size: 18px;
-	border-radius: 0;
-	line-height: 22px;
-	background-color: #fbfbfb;
-	padding: 13px 13px 13px 54px;
-	margin-bottom: 10px;
-	width:100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
-  border: 3px solid rgba(0,0,0,0);
-}
-
-.feedback-input:focus{
-	background: #fff;
-	box-shadow: 0;
-	border: 3px solid #3498db;
-	color: #3498db;
-	outline: none;
-  padding: 13px 13px 13px 54px;
-}
-
-.focused{
-	color:#30aed6;
-	border:#30aed6 solid 3px;
-}
-
-/* Icons ---------------------------------- */
-#name{
-	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-#name:focus{
-	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-	background-size: 30px 30px;
-	background-position: 8px 5px;
-  background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-#email{
-	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-#email:focus{
-	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-	background-size: 30px 30px;
-  background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-#comment{
-	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-textarea {
-    width: 100%;
-    height: 150px;
-    line-height: 150%;
-    resize:vertical;
-}
-
-input:hover, textarea:hover,
-input:focus, textarea:focus {
-	background-color:white;
-}
-
-#button-blue{
-	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-	float:left;
-	width: 100%;
-	border: #fbfbfb solid 4px;
-	cursor:pointer;
-	background-color: #3498db;
-	color:white;
-	font-size:24px;
-	padding-top:22px;
-	padding-bottom:22px;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
-}
-
-#button-blue:hover{
-	background-color: rgba(0,0,0,0);
-	color: #0493bd;
-}
-
-.submit:hover {
-	color: #3498db;
-}
-
-.ease {
-	width: 0px;
-	height: 74px;
-	background-color: #fbfbfb;
-	-webkit-transition: .3s ease;
-	-moz-transition: .3s ease;
-	-o-transition: .3s ease;
-	-ms-transition: .3s ease;
-	transition: .3s ease;
-}
-
-.submit:hover .ease{
-  width:100%;
-  background-color:white;
-}
-
-@media only screen and (max-width: 580px) {
-	#form-div{
-		left: 3%;
-		margin-right: 3%;
-		width: 88%;
-		margin-left: 0;
-		padding-left: 3%;
-		padding-right: 3%;
-	}
-}
-
-/*Footer CSS*/
 footer {
   height: 200px;
   background: #34495e;
