@@ -21,88 +21,156 @@ time, mark, audio, video {
 
 /**** Custom Styles ****/
 
-/* Generic Classes */
 .left {
   float: left;
 }
 .right {
   float: right;
 }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* Top down structure */
 body {
-  font-family: sans-serif;
-  color: #fff;
+/*   font-family: sans-serif; */
+  font-family: 'Indie Flower', cursive;
+  color: #5D3954;
 }
 .business-name {
   margin-left: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
-.business-name > a {
-  /* specificity is higher */
-  /* 0, 1, 1 = 11*/
+.business-name > a, .business-name > a:hover {
   border: 0;
 }
 nav {
-  background: #000;
+  background: #EBEBEB;
   height: 50px;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   line-height: 50px;
+  z-index: 1;
 }
 
 nav > ul > li {
   display: inline;
   padding: 10px;
 }
+.active {
+  color: goldenrod;
+  border-bottom-color: goldenrod;
+}
 a {
   /* specifity is lower */
   /* 0,0,1 = 1 */
-  color: #fff;
+  color: #5D3954;
   text-decoration: none;
-  border-bottom: 1px dashed #fff;
+  border-bottom: 1px dashed #000;
 }
 a:hover {
   color: goldenrod;
   border-bottom: 1px dashed goldenrod;
 }
+
+header {
+  margin-top: 50px;
+}
+
 header,
 section {
   height: 900px;
+}
+header,
+section {
+  height: 800px;
+  color:#5D3954;
+  font-weight: bolder;
+  font-stretch: expanded;
+  padding-top: 150px;
+  font-size-adjust: auto;
+  font-family: monoton:fantasy;
 /*   padding-top: 50px; */
 }
 section {
   padding-top: 200px;
 }
 #top {
-  background-image: url("http://searchengineland.com/figz/wp-content/seloads/2014/08/local-small-business-ss-1920.jpg");
-  background-attachment: fixed; /* fixed background */
-  font-size: 4em;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/236x/30/f6/9d/30f69d35fec197f87043eb683487c1e7.jpg");
+  background-attachment:fixed;/* fixed background */
+  font-size: 3em;
   text-align: center;
-  padding-top: 50px;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  margin-top: 75px;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quote, .quote-source {
+  font-size: 1rem;
+}
+.quote {
+  font-style: italic;
+  margin-top: 50px;
+}
+.quote:before {
+  /* see: http://bit.ly/2b2nP3O*/
+  content:"\0022";
+}
+.quote:after {
+  /* see: http://bit.ly/2b2nP3O*/
+  content:"\0022";
 }
 #About {
-  background: #1abc9c;
-  text-align: center;
-  font-size: 2em;
+background-image: url("http://www.transportbusinesslaw.com/Transport_Business_Law/Home_files/joel%20banner.jpg");
+background-attachment:fixed;/* fixed background */
+font-size: 3em;
+text-align: center;
+background-position: center;
+background-size: cover;
+height: 600px;
+margin-top:auto;
 }
-img {
-  height:auto;
-  width:30%;
-}
+
 #Portfolio {
   background: #3498db;
-  text-align: center;
-  font-size: 2em;
+  text-align:center;
+  font-size: 1.5em;
+  padding-bottom: 10px:
+  flex-direction: column;
+  background-image: url(https://www.unilever.com/Images/cloud_img_ar15_tcm244-478424_w680.jpg);
+  background-size: cover;
+  margin-bottom: auto;
 }
+
 #Contact {
-  background: #9b59b6;
-  text-align: center;
-  font-size: 2em;
+  background: #3498db;
+  text-align:center;
+  font-size: 1.5em;
+  padding-bottom: 10px:
+  flex-direction: column;
+  background-image: url(https://www.unilever.com/Images/cloud_img_ar15_tcm244-478424_w680.jpg);
+  background-size: cover;
+  margin-bottom: auto;
 }
 footer {
   height: 200px;
-  background: #34495e;
+  background: white;
   text-align: center;
 /*   line-height: 200px; */
   font-size: 2em;
+  color: blue;
 }
