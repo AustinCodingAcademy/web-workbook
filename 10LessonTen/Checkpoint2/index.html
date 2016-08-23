@@ -1,10 +1,116 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Syn Music</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/css-reset.css">
+
 </head>
 <body>
+<header>
+  <div id="navWrap">
+    <h2>Syn Music</h2>
+    <div id="nav">
+      <ul>
+        <li><a href="#section1" class="smoothScroll">Link1</a></li>
+        <li><a href="#section2" class="smoothScroll">Link2</a></li>
+        <li><a href="#section3" class="smoothScroll">Link3</a></li>
+        <li><a href="#section4" class="smoothScroll">Link4</a></li>
+        <li><a href="#foot" class="smoothScroll">Link5</a></li>
+      </ul>
+      <br class="clearLeft" />
+    </div>
+  </div>
+</header>
+<main>
+  <section id="section1">
+    <h1>Sights to Sounds</h1>
+    <h2>Bringing Music into View</h2>
+    <button type="button" name="GO!">GO!</button>
+  </section>
+  <section id="section2">
+    <article class="2left">
+      <img src="http://69.39.225.229/store/media/TCP-598-600.jpg" alt="snake" />
+    </article>
+    <article class="2right">
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium autem, nobis ab corporis, modi voluptate obcaecati atque reiciendis facere rem ad expedita totam, minima placeat deleniti! Itaque facere, a ipsa eaque! Amet laudantium placeat et, at perferendis nesciunt sed quas dignissimos magnam, neque nemo, sequi tempore nisi ipsam blanditiis atque!
+      </p>
+    </article>
+  </section>
+  <section id="section3">
+    <article class="3box">
+      <img src="http://image.shutterstock.com/display_pic_with_logo/742138/109186895/stock-vector-a-illustration-based-on-aboriginal-style-of-dot-painting-depicting-being-and-seeming-109186895.jpg" alt="#" />
+      <h3>Lorem ipsum.</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quo velit pariatur soluta quos voluptates officia nulla distinctio. Sunt, quas.
+      </p>
+    </article>
+    <article class="3box">
+      <img src="http://image.shutterstock.com/display_pic_with_logo/742138/109186895/stock-vector-a-illustration-based-on-aboriginal-style-of-dot-painting-depicting-being-and-seeming-109186895.jpg" alt="#" />
+      <h3>Lorem ipsum.</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quo velit pariatur soluta quos voluptates officia nulla distinctio. Sunt, quas.
+      </p>
+    </article>
+    <article class="3box">
+      <img src="http://image.shutterstock.com/display_pic_with_logo/742138/109186895/stock-vector-a-illustration-based-on-aboriginal-style-of-dot-painting-depicting-being-and-seeming-109186895.jpg" alt="#" />
+      <h3>Lorem ipsum.</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quo velit pariatur soluta quos voluptates officia nulla distinctio. Sunt, quas.
+      </p>
+    </article>
+    <article class="3box">
+      <img src="http://image.shutterstock.com/display_pic_with_logo/742138/109186895/stock-vector-a-illustration-based-on-aboriginal-style-of-dot-painting-depicting-being-and-seeming-109186895.jpg" alt="#" />
+      <h3>Lorem ipsum.</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quo velit pariatur soluta quos voluptates officia nulla distinctio. Sunt, quas.
+      </p>
+    </article>
+  </section>
+  <section id="section4">
+    <article class="4box">
+      <img src="http://image.shutterstock.com/display_pic_with_logo/742138/109186895/stock-vector-a-illustration-based-on-aboriginal-style-of-dot-painting-depicting-being-and-seeming-109186895.jpg" alt="#" />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, tempora!
+      </p>
+      <h4>08/16/16</h4>
+    </article>
+    <article class="4box">
+      <img src="http://image.shutterstock.com/display_pic_with_logo/742138/109186895/stock-vector-a-illustration-based-on-aboriginal-style-of-dot-painting-depicting-being-and-seeming-109186895.jpg" alt="#" />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, tempora!
+      </p>
+      <h4>08/16/16</h4>
+    </article>
+  </section>
+</main>
+<footer id="foot">
+  <div class="topfoot">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+  <div class="bottomfoot">
+    <button type="button" name="GO!">GO!</button>
+    <button type="button" name="GO!">GO!</button>
+  </div>
+</footer>
 
+  <!--   Including jQuery and the easing plug-in -->
+  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+
+  <script>
+    $('#nav > ul > li > a, .business-name > a, footer >a ').bind('click', function() {
+      $('html, body').stop().animate({
+        scrollTop: $($(this).attr('href')).offset().top - 50
+      }, 1500, 'easeInOutExpo');
+      event.preventDefault();
+    });
+  </script>
 </body>
 </html>
