@@ -53,11 +53,17 @@ body {
 }
 
 nav {
+  top: 0;
+  left: 0;
   background: #000;
   height: 50px;
   position: fixed;
   width: 100%;
   line-height: 50px;
+}
+
+nav a {
+  color: white;
 }
 
 nav > ul > li {
@@ -80,20 +86,23 @@ a:hover {
 
 header{
   background-image: url("../css/infog1.jpg");
+  min-height: 900px;
+  background-attachment: fixed;
+  border: 1px solid black;
 }
 section {
   padding: 50px;
 }
 
-#top {
+/*#top {
   background: #FFD3F8;
   background-attachment: fixed;
-  /* fixed background */
+   fixed background
   font-size: 4rem;
   text-align: center;
   line-height: 900px;
   border: 1px solid black;
-}
+}*/
 
 #AboutBestLeadGen {
   background: #00664b;
@@ -139,7 +148,10 @@ p {
   padding-bottom: 10px;
 }
 
-ol {
+ol li {
+  list-style-position: inside;
+  margin: 10px;
+  margin-top: 50px;
   display: inline;
   font-size: 26px;
   text-align: left;
