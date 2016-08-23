@@ -1,10 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Winery Uva</title>
+  <link rel="stylesheet" type="text/css" href="css/css-reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Sansita+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+  <header>
+    <h1>WINERY UVA</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#testimonial">Testimonial</a></li>
+        <li><a href="#wines">Wine Selection</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="flexContainer flexHVCenter flexColumns">
+      <a href="#home" class="home-link"><h1>Winery Uva</h1></a>
+      <p>"Without doubt, one of the most consistently high-quality winerues in the Barossa region"<br>
+        <span>Pope Francis-Respected Sommelier</span></p>
+    </section>
+    <section id="about" class="flexContainer flexRow">
+      <div class="col-8 flexContainer flexColumns flexHVCenter">
+        <h4>EST. 1954</h4>
+        <h2>Combining over 60 years of hard work and shared family knowledge</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias ipsa
+          velit vero enim iusto praesentium inventore consequuntur tempore dicta numquam.
+          Impedit accusantium maiores animi dolore libero, sint reprehenderit saepe amet.</p>
+      </div>
+      <div class="col-4"><img src="img/wine16.jpg" alt="Worker Pressure Washing"></div>
+    </section>
+    <section id="testimonial" class="flexContainer flexHVCenter flexColumns">
+      <h2>We've been producing fine wine for over 65 years, I think we know what we're talking about</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, similique animi magnam ad aliquam.</p>
+    </section>
+    <section id="wines" class="flexContainer flexRow">
+      <div class="flexContainer flexColumns box-3">
+        <img src="img/wine3.jpg" alt="Bottle of Shiraz">
+        <h3>Uba Shiraz</h3>
+        <p>Aged five years in solid, French Oak barrels sports notes of pepper and blackberry</p>
+        <button>Visit shop</button>
+      </div>
+      <div class="flexContainer flexColumns box-3">
+        <img src="img/wine6.jpg" alt="Bottle of Chardonnay">
+        <h3>Uva Chardonnay</h3>
+        <p>A rich fruit palet with subtle Oak influence and a lingering dry, fresh finish</p>
+        <button>Visit shop</button>
+      </div>
+      <div class="flexContainer flexColumns box-3">
+        <img src="img/wine7.jpg" alt="Bottle of Merlot">
+        <h3>Uva Merlot</h3>
+        <p>Generous sweet black currant and mulberry character with soft, velvety tannins</p>
+        <button>Visit shop</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p><a href="#home">Winery Uva</a>&copy; 2016</p>
+  </footer>
 
+  <!--   Including jQuery and the easing plug-in -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script>
+  $('nav > ul > li > a,.home-link, p > a').bind('click', function() {
+    $('html, body').stop().animate({
+      scrollTop: $($(this).attr('href')).offset().top - 300
+    }, 1500, 'easeInOutExpo');
+    event.preventDefault();
+  });
+
+  // see: http://stackoverflow.com/a/32396543/645625
+  $(window).scroll(function() {
+    var position = $(this).scrollTop();
+
+    $('.section').each(function() {
+        var target = $(this).offset().top - 300;
+        var id = $(this).attr('id');
+
+        if (position >= target) {
+            $('nav > ul > li > a').removeClass('active');
+            $('nav > ul > li > a[href=#' + id + ']').addClass('active');
+        }
+    });
+  });
+</script>
 </body>
 </html>
