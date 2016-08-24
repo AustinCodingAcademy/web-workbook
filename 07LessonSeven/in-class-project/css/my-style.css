@@ -1,19 +1,57 @@
-body{
-    margin:0px;
-    padding:0px;
+body {
+    font-family: sans-serif;
 }
-
-#nasa-image{
+main {
     width:850px;
-    height:450px;
-    margin:0px;
-    background-image: url("..img/nasa-background.jpg");
-}
-
-.social-media{
-    margin:20px;
-    float:left;
-    width:270px;
     height:324px;
-    background:grey;
+    background-color: lightgrey;
+    margin: auto;
+}
+body header {
+    background-image: url("../img/nasa-background.jpg");  background-position: center;
+    background-size: cover;
+    width:850px;
+    height: 450px;
+    margin: auto;
+}
+header h1 {
+    font-size: 5em;
+    color: white;
+    text-align: center;
+    transform: translate(0px, 175px);
+}
+.container h2 {
+    font-weight: bold;
+}
+main div.container {
+    width: 270px;
+    height: 324px;
+    background-color: lightgrey;
+    margin-left: 20px;
+    float: left;
+    padding-top: 50px;
+}
+main.clearfix:after {
+    content: "";
+    display: block;
+    clear:both;
+}
+main div.contactbox {
+    margin-left: 0px;
+}
+input {
+    width: 220px;
+}
+input.message {
+    height: 50px;
+    width:220px;
+}
+button {
+    height: 30px;
+    width:75px;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
 }
