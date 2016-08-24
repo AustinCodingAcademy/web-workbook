@@ -1,0 +1,102 @@
+/**** CSS Reset ****/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+/*     font-size: 100%; */
+/*     font: inherit; */
+    vertical-align: baseline;
+}
+
+/* General CSS */
+header {
+  height: 300px;
+  width: auto;
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  color: white;
+  font-family: serif;
+}
+.bold {
+  font-weight: bold;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  background: lightgray;
+}
+.article1, .article2, .article3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+article h1 {
+  font-size: 1.5em;
+  margin: 10px 5px 10px 5px;
+}
+.article1, .article2, .article3 {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 40px;
+}
+
+.article1 {
+    border-top: 25px solid red;
+}
+
+.article2 {
+  border-top: 25px solid blue;
+}
+
+.article3 {
+  border-top: 25px solid yellow;
+}
+/**
+ * Media Queries
+ **/
+@media screen and (min-width: 320px) {
+
+}
+@media screen and (min-width: 480px) {
+
+}
+@media screen and (min-width: 620px) {
+
+}
+@media screen and (min-width: 810px) {
+  section {
+    display: flex;
+  }
+  article {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  section {
+
+  }
+}
+@media screen and (min-width: 1400px) {
+
+}
