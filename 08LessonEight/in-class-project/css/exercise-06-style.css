@@ -1,51 +1,104 @@
 body {
     margin: 0px;
     padding: 0px;
-    font-family: sans-serif;
-}
-.title {
-    font-size: 20px;
+    font-family: sans-serif, arial;
+    letter-spacing: .5px;
 }
 header {
     margin: auto;
     width: 900px;
     text-align: center;
 }
-.mainblock{
-    width: 690px;
+section.mainframe {
+    margin: auto auto 40px auto;
+    width: 1080px;
+    height: 450px;
 }
-
-.keyboard {
-    width: 350px;
-    height: 300px;
-    margin: auto;
+hr {
+    width: 1080px;
 }
-
-.leftblock {
-    width: 350px;
-    background-color: rgb(245, 245, 245);
+ul {
+  list-style: none;
+}
+li:before {
+  content:"✓";
+  color: green;
+  font-weight: bold;
+}
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+    visibility: hidden;
+}
+.keyboardbox {
+    width: 510px;
+    height: 205px;
+    margin: auto auto;
+}
+.title {
+    font-size: 20px;
+}
+.leftside div img {
     float: left;
-    margin: 10px;
+    width: 100%;
+}
+div img {
+    float: left;
+    height: 100%;
+}
+.leftside div:nth-child(2) {
+    width: 510px;
+    height: 175px;
+    margin: 50px auto auto auto;
+}
+.leftside {
+    width: 510px;
+    background-color: rgb(245, 245, 245);
+    margin-right: 20px;
+    float: left;
+    padding: 10px;
 }
 a {
     float: right;
     color: green;
 }
-#top,#middle, #bottom{
-    height: 90px;
+a:hover {
+    text-decoration: none;
+}
+.rightside {
+    width: 530px;
+    float: left;
+    height: 450px;
+}
+.rightside div {
+    background-color: rgb(245, 245, 245);
+    width: 510px;
+    height: 116.6px;
+    margin-bottom: 20px;
+    padding: 10px;
+    float: left;
+}
+.rightside div img {
+    margin-right: 10px;
+}
+#bottomrightbox {
+    margin-bottom: 0px;
+}
+footer div#middlefootbox {
+  margin:auto 20px;
+}
+#recentblog {
+    font-size: 30px;
 }
 footer {
     margin: auto;
     width: 1080px;
     height: 150px;
 }
-.footer{
+footer div.footbox {
     width: 326.6px;
     height: 130px;
     padding: 10px;
     float: left;
-    clear:left;
-}
-ul {
-  list-style: none;
 }
