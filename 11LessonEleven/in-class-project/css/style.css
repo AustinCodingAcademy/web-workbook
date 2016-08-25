@@ -1,0 +1,103 @@
+header{
+  color:#fff;
+  background-color:blue;
+  height:300px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+header>h1{
+  font-size:5em
+}
+main{
+  display:flex;
+  flex-flow:column nowrap;
+  align-items: center;
+  background-color:lightgrey ;
+  height:500px;
+}
+main>article{
+  width:33%;
+  height:20%;
+  display:flex;
+  flex-flow:column nowrap;
+  margin:2em 0;
+
+}
+.blueBar{
+  width: 100%;
+  height: 2em;
+  background-color: blue;
+}
+.orangeBar{
+  width:100%;
+  height:2em;
+  background-color: orange;
+}
+.tealBar{
+  width:100%;
+  height:2em;
+  background-color:teal;
+}
+article h2{
+  text-align: center;
+  font-size:2em;
+  margin:0.5em 0;
+
+}
+article p{
+  text-align: center;
+  margin: 0 0.5em
+
+}
+@media screen and (min-width: 320px) {
+  .container::before {
+    content: "320px";
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container::before {
+  }
+}
+@media screen and (min-width: 620px) {
+  .container::before {
+  }
+}
+@media screen and (min-width: 810px) {
+  .container::before {
+
+  }
+  header{
+    background-color: teal;
+    height:50%;
+  }
+  main{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    height:50%;
+    align-items: center;
+    background-color:#000;
+  }
+  main> article{
+    width:20%;
+    margin:0 5%;
+  }
+  article h2, article p{
+    color:#fff;
+  }
+
+}
+@media screen and (min-width: 1400px) {
+  .container::before {
+
+  }
+
+}*/
