@@ -1,0 +1,39 @@
+.container{
+  display: flex;
+  flex-direction: column;
+
+}
+.box1{
+  background: url("../img/bg2.jpg");
+  background-size: cover;
+  height: 400px;
+  color: white;
+  font-size: 1em;
+}
+.box2{
+  background-color: #666;
+  color: white;
+  font-size: 8px;
+}
+.box3{
+  background-color: #666;
+  color: white;
+  font-size: 8px;
+}
+@media screen and (min-width: 320px) {
+  .container::before {
+    content: "320px";
+    color: orange;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container::before {
+    content: "480px";
+    color: maroon;
+  }
+}
+@media screen and (min-width: 620px) {
+  .container::before {
+    content: "620px";
+    color: orange;
+  }
