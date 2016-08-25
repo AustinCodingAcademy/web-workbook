@@ -1,0 +1,85 @@
+
+/**
+ * Media Queries
+ **/
+@media screen and (min-width: 320px) {
+  .container::before {
+    content: "320px";
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container::before {
+    content: "480px";
+    color: maroon;
+  }
+}
+@media screen and (max-width: 640px) {
+  .container::before {
+    content: "640px";
+    color: orange;
+  }
+
+  header {
+    background-image: url("../img/bg2.jpg");
+    width: 500px;
+    height:auto;
+    font-size: 1em;
+  }
+  article {
+    height: 170px;
+  }
+}
+@media screen and (min-width: 810px) {
+  .container::before {
+    content: "810px";
+    color: black;
+  }
+  header {
+    background-image: url("../img/bg.jpg");
+    width: 500px;
+    height:auto;
+    font-size: 1em;
+
+  header {
+    background: #d3d3d3;
+  }
+  section {
+    background: #d3d3d3;
+    color: #fff;
+    display: flex;
+    min-height: 100vh;
+  }
+  article div {
+    width: 70%;
+    margin: 0;
+    margin: 0 auto;
+  }
+  article div h2 {
+    font-size: 2em;
+  }
+
+}
+@media screen and (min-width: 1400px) {
+  .container::before {
+    content: "1400px";
+    color: red;
+
+}
+
+header {
+  background-image: url("../img/bg.jpg");
+  width: 500px;
+  height:auto;
+  font-size: 1em;
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

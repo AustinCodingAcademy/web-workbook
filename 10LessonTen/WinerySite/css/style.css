@@ -1,0 +1,108 @@
+/**** CSS Reset ****/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* font-size: 100%;
+    font: inherit;*/
+  vertical-align: baseline;
+}
+
+
+/**** Custom Styles ****/
+
+
+/* Generic Classes */
+
+/* Top down structure */
+
+body {
+  font-family: Avante Gard;
+  color: black;
+}
+
+.business-name {
+  margin-left: 20px;
+}
+
+.business-name > a {
+  /* specificity is higher */
+  /* 0, 1, 1 = 11*/
+  border: 0;
+}
+
+nav {
+  top: 0;
+  left: 0;
+  background: #000;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  line-height: 50px;
+}
+
+nav a {
+  color: white;
+}
+
+nav > ul > li {
+  display: inline;
+  padding: 10px;
+}
+
+a {
+  specifity is lower 0,
+  0,
+  1=1 color: #fff;
+  text-decoration: none;
+  border-bottom: 1px #fff;
+}
+
+a:hover {
+  color: goldenrod;
+  border-bottom: 1px solid goldenrod;
+}
+
+header{
+  background-image: url("../css/infog1.jpg");
+  min-height: 900px;
+  background-attachment: fixed;
+  border: 1px solid black;
+}
+
+/*#top {
+  background: #FFD3F8;
+  background-attachment: fixed;
+   fixed background
+  font-size: 4rem;
+  text-align: center;
+  line-height: 900px;
+  border: 1px solid black;
+}*/
+
+section {
+  padding: 50px;
+  background: #black;
+  text-align: center;
+  font-size: 3em;
+  border: 1px solid black;
+}
+
+footer {
+  text-align: center;
+  height: 200px;
+  background: #34495e;
+  font-size: 2em;
+}
