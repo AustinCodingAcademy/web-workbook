@@ -30,7 +30,6 @@ main{
   flex-flow:row wrap;
   align-items: center;
   justify-content: center;
-
 }
 
 .main-content h2{
@@ -46,24 +45,25 @@ main{
   line-height: 1em;
 }
 article{
-  width:90%
+  width:90%;
 }
 
-@media screen and (min-width: 620px){
-  article{
-    width:40%
+/*-----Media Queries----*/
+
+@media screen and (min-width: 640px){
+  .headline{
+    background-image: url("../img/bg.jpg");
   }
+
   .headline p{
     width:400px;
   }
-}
 
-@media screen and (min-width: 810px){
-  .headline{
-    background-image: url("../img/bg.jpg")
-  }
   .main-content{
     background-color: lightgray;
   }
 
+  article{
+    width:40%;
+  }
 }
