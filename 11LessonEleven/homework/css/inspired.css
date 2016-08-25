@@ -28,7 +28,7 @@ main{
 .main-content{
   display:flex;
   flex-flow:row wrap;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
 }
 
@@ -50,12 +50,29 @@ article{
 
 /*-----Media Queries----*/
 @media screen and (min-width: 320px){
+  main::before {
+    content: "320px";
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
 
 }
 @media screen and (min-width: 480px){
-
+  main::before {
+    content: "480px";
+    color: maroon;
+  }
 }
 @media screen and (min-width: 620px){
+  main::before {
+   content: "620px";
+   color: orange;
+ }
   .headline{
     background-image: url("../img/bg.jpg");
   }
@@ -73,5 +90,9 @@ article{
   }
 }
 @media screen and (min-width: 810px){
+  main::before {
+  content: "810px";
+  color: black;
+}
 
 }
