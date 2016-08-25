@@ -1,0 +1,114 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* font-size: 100%;
+    font: inherit; */
+    vertical-align: baseline;
+}
+
+.container::before {
+    content: "320px";
+    position: absolute;
+}
+
+header {
+    background-image: url("../img/bg2.jpg");
+    background-size: container;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding-left: 5%;
+    padding-right: 30%;
+    color: white;
+    padding-top: 80px;
+  }
+
+main {
+    background-color: #6666;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+h1 {
+    font-size: 44px;
+    margin-bottom: 40px;
+}
+
+.headingp {
+  padding-right: 50%;
+}
+
+section {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 480px) {
+  .container::before {
+    content: "480px";
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .container::before {
+    content: "620px";
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .container::before {
+    content: "810px";
+    position: absolute;
+  }
+
+  header {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-right: 60%;
+    padding-top: 120px;
+  }
+
+header h1 {
+  font-size: 44px;
+  padding-right: 30%;
+}
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+
+  }
+
+  section {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container::before {
+    content: "1400px";
+    position: absolute;
+  }
+}
