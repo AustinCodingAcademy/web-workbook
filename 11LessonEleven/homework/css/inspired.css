@@ -21,14 +21,6 @@ time, mark, audio, video {
 }
 
 /**** Custom Styles ****/
-img {
-  height:  auto;
-  width: 100%;
-  display: inline-block;
-  position: absolute;
-  z-index: -1;
-  position: absolute;
-}
 .top {
   color: white;
 /*   height: auto; */
@@ -37,6 +29,7 @@ img {
   flex-direction: column;
   height: 550px;
   background-image: url("https://raw.githubusercontent.com/AustinCodingAcademy/intro-workbook/gh-pages/11LessonEleven/homework/img/bg2.jpg");
+  background-size: cover;
 }
 .text {
   color: white;
@@ -60,6 +53,9 @@ section {
   padding-bottom: 10%;
   font-size: 1.5em;
 }
+.heading h1 {
+  font-weight: 100;
+}
 .description {
   color: gray;
 }
@@ -68,12 +64,34 @@ section {
 /* Media Query */
 
 @media screen and (min-width: 320px) {
-
+  .container::before {
+    content: "320px";
+    color: maroon;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+  }
 }
 @media screen and (min-width: 480px) {
-
+  .container::before {
+    content: "480px";
+    color: orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+  }
 }
 @media screen and (min-width: 640px) {
+  .container::before {
+    content: "640px";
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+  }
   .top {
   background-image: url("https://raw.githubusercontent.com/AustinCodingAcademy/intro-workbook/gh-pages/11LessonEleven/homework/img/bg.jpg");
 }
@@ -95,9 +113,37 @@ section {
 
 }
 @media screen and (min-width: 810px) {
-
-
+  .container::before {
+    content: "810px";
+    color: yellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+  }
+  .text {
+  color: white;
+  padding: 10% 25% 5% 5%;
+  margin: 10% 0% 0% 0%;
+  font-size: 2em;
+  font-weight: bold;
+  }
+  .paragraphs {
+    padding: 1% 5% 1% 5%;
+  }
+  .heading {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 1.5em;
 }
 @media screen and (min-width: 1400px) {
+  .container::before {
+    content: "1400px";
+    color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+  }
 
 }
