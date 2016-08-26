@@ -1,0 +1,80 @@
+.container > section {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #33A8DD;
+  padding: 15%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  background-color: #EED2EE;
+  padding: 10%;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2%;
+}
+
+.title1 div {
+    border-top: 20px solid #33A8DD;
+}
+
+.title2 div {
+    border-top: 20px solid #F46731;
+}
+
+.title3 div {
+    border-top: 20px solid #2BCDC0;
+}
+
+/**
+ * Media Queries
+ **/
+@media screen and (min-width: 320px) {
+  .container::before {
+    content: "320px";
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container::before {
+    content: "480px";
+    color: maroon;
+  }
+}
+@media screen and (min-width: 620px) {
+  .container::before {
+    content: "620px";
+    color: orange;
+  }
+
+}
+@media screen and (min-width: 810px) {
+  .container::before {
+    content: "810px";
+    color: black;
+  }
+
+
+}
+@media screen and (min-width: 1400px) {
+  .container::before {
+    content: "1400px";
+    color: red;
+  }
+}
