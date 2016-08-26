@@ -1,1 +1,91 @@
+header{
+  background:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/185649/sub_header_home.jpg") no-repeat center top;
+  background-attachment: fixed;
+  background-size: cover;
+  color:#fff;
+  height:300px;
+  display:flex;
+  flex-flow:column wrap;
+  justify-content:center;
+  align-items:center;
+}
+header>h1{
+  font-size:1.75em;
+  text-align:center;
+  margin-bottom:10px;
+}
+header>p{
+  font-size:0.75em;
+  text-align:center;
 
+}
+main{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:center;
+  align-items:center;
+}
+main article{
+  display:flex;
+  flex-flow:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  margin:10px auto;
+  flex-basis:400px;
+}
+main h2{
+  font-size:1.25em;
+  margin:10px auto;
+}
+main p{
+  font-size:0.75em;
+}
+
+/**
+ * Media Queries
+ **/
+@media screen and (min-width: 320px) {
+  .container::before {
+    content: "320px";
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container::before {
+    content: "480px";
+    color: maroon;
+  }
+}
+@media screen and (min-width: 620px) {
+  .container::before {
+    content: "620px";
+    color: orange;
+  }
+  main article{
+    flex-basis:300px;
+  }
+}
+@media screen and (min-width: 810px) {
+  .container::before {
+    content: "810px";
+    color: black;
+  }
+  main article{
+    flex-basis:190px;
+  }
+
+}
+@media screen and (min-width: 1400px) {
+  .container::before {
+    content: "1400px";
+    color: red;
+  }
+
+}
