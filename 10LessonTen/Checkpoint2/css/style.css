@@ -1,9 +1,14 @@
+html,body, h1, a{
+    font-family: 'Archivo Narrow', sans-serif;
+}
+body{
+  background-color: #f3f3f3;
+}
 .nav {
-    display: inline;
+    display: inline-block;
     float: right;
-    text-decoration: none;
-    margin-top: 50px;
-    margin-right: 20px;
+    margin-top: 20px;
+    margin-right: 0 auto;
     height: 100%;
 }
 .nav a {
@@ -11,24 +16,33 @@
     border-left: 2px white solid;
     border-right: 2px white solid;
     margin: 10 auto;
-    padding: 10px;
-    padding-top: 45px;
-    padding-bottom: 47px;
+    padding-top: 27px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 27px;
     height: 100%;
     background: linear-gradient(to bottom, white, gray, white)
+
+}
+.nav a:hover{
+  background-color: black;
+  background: linear-gradient(to bottom, white, black, white)
 }
 header {
     background-color: gray;
-    height: 120px;
+    height: 64px;
+    position: fixed;
+    width: 100%;
+
 }
 header h1 {
-    margin: 20px;
-    margin-top: 20px;
+    margin: 10px;
+    margin-top: 10px;
     color: white;
     float: left;
-    font-family: 'Archivo Narrow', sans-serif;
-    font-size: 70px;
-    text-shadow: 0 0 7px black;
+    font-size: 40px;
+    text-shadow: 0 0 27px black;
+    font-family:'Archivo Narrow', sans-serif;
 }
 #hero {
     background-image: url("https://wallpaperscraft.com/image/billiards_table_spheres_number_cloth_pool_8809_1280x800.jpg");
@@ -36,15 +50,145 @@ header h1 {
     background-width: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 250px;
+    height: 450px;
+    margin-top: 0px;
 }
 .textbox1 {
     text-align: center;
     color: white;
-    width: 35%;
-    height: 203px;
-    margin-top: 20px;
-    margin-left: 250px;
+    width: 50%;
+    height: 250px;
+    margin-top: 150px;
+    margin-left: 350px;
+    padding: 5px;
     float: left;
     font-family: 'Archivo Narrow', sans-serif;
+    font-weight: normal;
+}
+.textbox1 h1{
+  font-size: 35px;
+  margin: 15px;
+  padding: 5px;
+}
+.textbox1 h2{
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.textbox1 a{
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 5px 20px;
+  margin: 10px 20px;
+}
+section#about{
+  display: inline-block;
+  float:left;
+  height: 250px;
+  width: 100%;
+  font-family: 'Archivo Narrow', sans serif;
+  margin-top: 10px;
+  margin-left: 160px;
+  margin-bottom: 10px;
+}
+.aboutpic{
+  float: left;
+  width:25%;
+  height:250px;
+  margin: 10px;
+  padding: 10px
+}
+.aboutpic img{
+  width: 95%;
+  height: 245px;
+  margin:1px;
+  padding:1px;
+}
+.abouttext{
+  float: left;
+  width: 45%;
+  height: 230px;
+  margin: 20px;
+  padding:10px;
+}
+.abouttext h1{
+  padding: 20px;
+  text-align: center;
+  font-size: 28px;
+}
+#services{
+  display:inline-block;
+  float: left;
+  height:500px;
+  width: 100%;
+  font-family: 'Archivo Narrow', sans serif;
+  text-align: center;
+  margin: 5px;
+  padding:2px;
+}
+.services-box{
+  float:left;
+  height:480px;
+  width: 20%;
+  margin:25px;
+  padding:2px;
+  border: 2px solid black;
+  background-color: white;
+}
+.services-box img{
+  height:200px;
+  width: 80%;
+  margin:20px;
+}
+.services-box h2, p{
+  margin: 10px 20px;
+  padding: 20px;
+}
+#event{
+  display: inline-block;
+  float: left;
+  height: 500px;
+  width: 100px;
+  text-align: center;
+  margin: 5px;
+  padding:2px;
+}
+.eveblock{
+  float:left;
+  height:480px;
+  width: 35%;
+  margin:25px;
+  padding:2px;
+  border: 2px solid black;
+  background-color: white;
+  font-family: 'Archivo Narrow', sans serif;
+}
+.eveblock img{
+  height:320px;
+  width: 80%;
+  margin:20px;
+  padding: 20px;
+}
+#contact{
+  background-image: url("https://wallpaperscraft.com/image/billiards_table_spheres_number_cloth_pool_8809_1280x800.jpg");
+  background-size: cover;
+  background-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 350px;
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+  }
+
+
+
+
+
+
+
+
+.clear-fix:after {
+    content: "";
+    display: block;
+    clear: both;
 }
