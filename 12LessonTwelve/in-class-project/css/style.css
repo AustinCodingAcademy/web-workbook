@@ -1,1 +1,80 @@
-
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*font-size: 100%;
+    font: inherit;*/
+    vertical-align: baseline;
+}
+header {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/185649/sub_header_home.jpg');
+    height: 300px;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+header>p {
+    margin-top: 5%;
+    font-size: .6t;
+}
+header>h1 {
+    font-size: 2em;
+}
+.content {
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+section {
+    margin: 5%;
+    flex-basis: 150px;
+}
+@media screen and (min-width: 320px) {
+    main::before {
+        content: "320px";
+        color: green;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-weight: 700;
+        margin: 5px;
+        font-size: 2em;
+    }
+}
+@media screen and (min-width: 480px) {
+    main::before {
+        content: "480px";
+        color: maroon;
+    }
+    .content {
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+    }
+}
+@media screen and (min-width: 620px) {
+    main::before {
+        content: "620px";
+        color: orange;
+    }
+    section {
+        flex-basis: 200px;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 810px) {
+    main::before {
+        content: "800px";
+        color: red;
+    }
+    section {
+        flex-basis: 120px;
+    }
+}
