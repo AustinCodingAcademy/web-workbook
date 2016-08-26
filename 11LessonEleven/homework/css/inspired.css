@@ -44,9 +44,29 @@ h2 + p {
   padding-top: 5%;
 }
 
-@media (max-width: 640px) {
+@media screen and (min-width: 320px) {
+  .container::before {
+    content: "320px";
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
 }
-@media (min-width: 641px) {
+@media screen and (min-width: 480px){
+  .container::before {
+    content: "480px";
+    color: maroon;
+  }
+}
+@media (min-width: 620px) {
+  .container::before {
+    content: "620px";
+    color: orange;
+  }
  header {
    background-image: url("../img/bg.jpg");
    background-size: cover;
@@ -63,5 +83,29 @@ h2 + p {
  }
  .entry2 {
    padding-left: 5%;
+ }
+}
+@media screen and (min-width: 810px){
+  .container::before {
+    content: "810px";
+    color: black;
+  }
+  header {
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+  }
+  .bottom {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .entry1 {
+    padding-right: 5%;
+  }
+  .entry2 {
+    padding-left: 5%;
+  }
  }
 }
