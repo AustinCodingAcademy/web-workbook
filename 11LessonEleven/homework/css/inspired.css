@@ -1,4 +1,4 @@
-main{
+.container{
   display:flex;
   flex-direction:column;
 
@@ -6,56 +6,75 @@ main{
 .box1{
    display:flex;
    align-items: center;
-   background-image:url("../img/bg2.jpg");
+   background-image:url("https://raw.githubusercontent.com/AustinCodingAcademy/intro-workbook/gh-pages/11LessonEleven/homework/img/bg2.jpg");
    background-size: cover;
    height: 400px;
    color: white;
 }
- .box2{
-   display:flex;
-   flex-direction:column;
-   align-items: center;
-   height: auto;
-   background: #F4F5F6;
- }
+.box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  background: #F4F5F6;
+}
  .article1{
   width:300px;
   margin-left:50px;
+
 }
  .article2{
-   margin-left: 50px;
-   width:300px;
+   margin-top: 20px;
  }
  .article3{
-   margin-left: 50px;
-   width:300px;
+   margin-right: 50px;
+   margin-top: 20px;
 }
-@media screen and (min-width: 480px) {
-	.box1{
-    border: red solid;
+@media screen and (min-width: 320px) {
+  .container::before {
+    content: "320px";
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.5em;
+    margin: 10px;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
   }
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 480px) {
+  .container::before {
+    content: "480px";
+    color: maroon;
+  }
+}
+
+@media screen and (min-width: 620px) {
+   .container::before {
+    content: "620px";
+    color: orange;
+  }
   .box1{
-  display:flex;
-  align-items:center;
-  background-image: url("../img/bg.jpg");
+   display:flex;
+   align-items:center;
+   background-image: url("https://raw.githubusercontent.com/AustinCodingAcademy/intro-workbook/gh-pages/11LessonEleven/homework/img/bg.jpg");
   background-size: cover;
   color:white;
   height:400px;
+  }
+  .box2{
+    display: flex;
+    flex-direction: row;
+    background: #F4F5F6;
+    height: 300px;
+  }
 
  }
   .article1{
    width:300px;
    margin-left:50px;
- }
-  .box2{
-   display:flex;
-   flex-direction:row;
-   background:#F4F5F6;
-   height: 300px;
-
  }
   .article2{
    margin-left:50px;
@@ -68,4 +87,16 @@ main{
   p{
    color:#95A0A8;
  }
+}
+@media screen and (min-width: 810px) {
+  .container::before {
+    content: "810px";
+    color: black;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container::before {
+    content: "1400px";
+    color: red;
+  }
 }
