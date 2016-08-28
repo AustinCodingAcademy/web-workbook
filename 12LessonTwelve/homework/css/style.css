@@ -1,0 +1,151 @@
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        /*font-size: 100%;
+    font: inherit;*/
+        vertical-align: baseline;
+    }
+    @media screen and (min-width: 320px) {
+        body::before {
+            content: "320px";
+            color: green;
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-weight: 700;
+            margin: 5px;
+            font-size: 2em;
+        }
+        html {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #3A3A3C;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Mogra', cursive;
+        }
+        header {
+            text-shadow: 2px 2px 3px #E3493B;
+            color: #23B5AF;
+            margin-bottom: 100px;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            font-size: 2em;
+            font-family: cursive;
+            font-family: 'Pacifico', cursive;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .image {
+            position: relative;
+        }
+        .price {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-weight: 800;
+            position: absolute;
+            width: 90px;
+            height: 30px;
+            background: #23B5AF;
+            bottom: 0;
+            right: 0;
+            border: 1px solid #23B5AF;
+        }
+        .sale {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: absolute;
+            width: 90px;
+            height: 30px;
+            background: #E3493B;
+            top: 0;
+            left: 0;
+            border: 1px solid red;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            margin: 15px;
+        }
+        section {
+            background: #fff;
+            border: 1px solid #A9DDD9;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        section:hover {
+            box-shadow: 0px 0px 20px 1px #EEBA4C;
+            cursor: pointer;
+        }
+        a {
+            text-decoration: none;
+            padding: 10px;
+            background: #EEBA4C;
+            /*border: 1px solid #E3493B;*/
+            color: black;
+            margin: 8px;
+        }
+        a:hover {
+            color: #fff;
+            background: #E3493B;
+        }
+        p {
+            font-size: 18px;
+            margin: 2%;
+        }
+    }
+    @media screen and (min-width: 480px) {
+        body::before {
+            content: "480px";
+            color: maroon;
+        }
+    }
+    @media screen and (min-width: 620px) {
+        body::before {
+            content: "620px";
+            color: orange;
+        }
+    }
+    @media screen and (min-width: 810px) {
+        body::before {
+            content: "810px";
+            color: black;
+        }
+        main {
+            flex-flow: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        section {
+            flex-basis: 40%;
+        }
+    }
+    @media screen and (min-width: 1400px) {
+        body::before {
+            content: "1400px";
+            color: red;
+        }
+        section {
+            flex-basis: 20%;
+        }
+        .container {
+            width: 100%;
+            height: 900px
+        }
+    }
