@@ -1,0 +1,263 @@
+/**** CSS Reset ****/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+/*     font-size: 100%; */
+/*     font: inherit; */
+    vertical-align: baseline;
+}
+
+/**
+General CSS
+**/
+main {
+  font: 'Open Sans', sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  padding: 2% 2% 2% 2%;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+header h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Lily Script One", cursive;
+  font-size: 48px;
+  font-weight: 500;
+}
+.item {
+  height: 475px;
+  width: auto;
+}
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  border: 1px solid gray;
+}
+.buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border: 1px solid gray;
+  border-top: 0;
+}
+input {
+  height: 50%;
+  width: auto;
+  border: none;
+  background: #3a4543;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 14px 18px;
+}
+p {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.pic1, .pic2, .pic3, .pic4 {
+  position: relative;
+}
+.price {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #66d9c1;
+  color: white;
+  padding: 2% 2% 2% 2%;
+  font-size: 18px;
+}
+.discount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #66d9c1;
+  color: white;
+}
+.original {
+  text-decoration: line-through;
+}
+.sale {
+  background: red;
+  display: inline-block;
+  color: white;
+  padding: 2% 2% 2% 2%;
+}
+/*Pictures*/
+.pic1, .pic2, .pic3, .pic4 {
+  background: #000 url("http://inspirythemes.biz/html-templates/cream/images/temp-images/T_7_front-300x300.jpg") no-repeat center;
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+}
+
+.pic2 {
+  background: #000 url("http://inspirythemes.biz/html-templates/cream/images/temp-images/hoodie_3_front-300x300.jpg") no-repeat center;
+  background-size: cover;
+}
+.pic3 {
+  background: #000 url("http://inspirythemes.biz/html-templates/cream/images/temp-images/poster_1_up-300x300.jpg");
+}
+.pic4 {
+  background: #000 url("http://inspirythemes.biz/html-templates/cream/images/temp-images/poster_2_up-300x300.jpg");
+}
+
+/**
+ * Media Queries
+ **/
+@media screen and (min-width: 320px) {
+  .container::before {
+    content: "320px";
+    color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container::before {
+    content: "480px";
+    color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+  }
+  header h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  }
+}
+@media screen and (min-width: 620px) {
+  .container::before {
+    content: "620px";
+    color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 90vw;
+  }
+  .products {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  .topbox {
+    margin-bottom: 220px;
+  }
+  .topbox, .bottombox {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+  }
+  .item {
+    margin: 1% 1% 1% 1%;
+  }
+}
+@media screen and (min-width: 810px) {
+  .container::before {
+    content: "810px";
+    color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    display:flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+  }
+  .products {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 525px;
+    margin-top: 5%;
+  }
+  .pic1, .pic2, .pic3, .pic4 {
+    height: 250px;
+    width: auto;
+    background-position: center;
+  }
+  .topbox {
+    margin-bottom: 0;
+  }
+  .bottombox {
+    margin-left: 40px;
+  }
+  .description {
+    width: 175px;
+  }
+  .item {
+    margin: 3% 3% 3% 3%;
+  }
+  input {
+  height: 40%;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 12px;
+}
+}
+@media screen and (min-width: 1400px) {
+  .container::before {
+    content: "1400px";
+    color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+  }
+}
