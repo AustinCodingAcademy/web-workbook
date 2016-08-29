@@ -1,0 +1,238 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* font-size: 100%;
+    font: inherit; */
+    vertical-align: baseline;
+}
+
+header {
+  font-size: 24px;
+  font-weight: 500px;
+  font-family: cursive;
+  text-align: center;
+  margin: 50px 5% 25px 5%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  margin: 20px 5% 20px 5%;
+  border: 1px solid lightGray;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.topart {
+  background-image: url("http://www.thinkgeek.com/images/products/zoom/1d16_medieval_knight_hoodie.jpg");
+  background-size: 100%;
+  height: 290px;
+  background-position: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  border: 1px solid lightGray;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+}
+
+h2 {
+  font-size: 20px;
+  height: 30px;
+  width: 25%;
+  padding-top: 5px;
+  text-align: center;
+  background-color: lightBlue;
+  color: white;
+}
+
+h2:hover {
+  background-color: black;
+}
+
+.twoprice {
+  width: 50%;
+}
+
+.bottomart {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  border: 1px solid lightGray;
+  font-size: 20px;
+  width: 100%;
+  height: 35px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+button {
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+button:hover {
+  background-color: lightBlue;
+}
+
+h4 {
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  display: flex;
+  margin-right: 26%;
+  height: 22px;
+  margin-bottom: 260px
+}
+
+@media screen and (min-width: 320px) {
+  .container::before {
+    content: "320px";
+    position: absolute;
+    color: green;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container::before {
+    content: "480px";
+    position: absolute;
+    color: green;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .container::before {
+    content: "620px";
+    position: absolute;
+    color: green;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+  }
+
+  section {
+   width: 40%;
+   display: flex;
+   margin: 2%;
+   height: 400px;
+  }
+
+  h4 {
+    margin-bottom: 233px;
+    margin-right: 23%;
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .container::before {
+    content: "810px";
+    position: absolute;
+    color: green;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+
+  .container {
+    max-width: 810px;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  section {
+    width: 22%;
+    height : 0%;
+    margin: 1%;
+  }
+  .topart {
+    height: 190px;
+  }
+  h2 {
+    width: 30%;
+    font-size: 14px;
+    height: 20px;
+  }
+  .twoprice {
+    width: 50%;
+  }
+  h4 {
+    margin-right: 22%;
+    font-size: 14px;
+    height: 16px;
+    margin-bottom: 165px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  button {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container::before {
+    content: "1400px";
+    position: absolute;
+    color: green;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+}
