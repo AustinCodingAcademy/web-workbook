@@ -1,0 +1,85 @@
+header{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000 url("../img/sub_header_home.jpg");
+  background-size: cover;
+  height: 300px;
+  color:white;
+}
+header h1{
+  font-size: 2em;
+}
+header p{
+  font-size: 0.60em;
+  margin-top: 10px;
+}
+section{
+  height: 70vh;
+}
+article{
+  text-align:center;
+  margin-top:30px;
+}
+article h2 {
+  font-weight: 700;
+  font-size: 0.80em;
+}
+
+article p {
+  margin-top: 10px;
+  font-size: 0.70em;
+}
+@media screen and (min-width: 320px) {
+  .container::before {
+    content: "320px";
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 100;
+    margin: 5px;
+    font-size: 5em;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container::before {
+    content: "480px";
+    color: maroon;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .container::before {
+    content: "620px";
+    color: orange;
+  }
+  section{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    justify-content: space-around;
+  }
+  article{
+    flex-basis:300px;
+  }
+  article h1,
+  article p{
+    margin-top:15px;
+  }
+}
+  @media screen and (min-width: 810px) {
+  .container::before {
+    content: "810px";
+    color: black;
+  }
+    header{
+     background: #000 url("../img/sub_header_home.jpg") no-repeat top;
+      background-size:cover;
+  }
+    article {
+    flex-basis: 200px;
+  }
