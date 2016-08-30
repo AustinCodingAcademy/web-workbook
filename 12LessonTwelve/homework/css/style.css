@@ -1,0 +1,133 @@
+
+.container {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+img {
+  display: block;
+  height: auto;
+  max-width:100%;
+  position: relative;
+}
+.product {
+  position: relative;
+}
+header {
+  font-family: 'lily Script One', cursive;
+  text-align: center;
+  height: 200px;
+  font-size: 1.5em;
+}
+article {
+  border: .5px solid grey;
+  text-align: center;
+  margin-bottom: 50px;
+}
+article h2 {
+  border-bottom: .5px solid grey;
+  font-size: 15px;
+  font-family: helvetica;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+article a {
+  border: 1px solid grey;
+  text-decoration: none;
+  background: #343436;
+  color: white;
+  font-family: helvetica;
+  height: 30px;
+  line-height: 30px;
+  width: 110px;
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.price {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #66d9d1;
+  background: #66d9d1;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+.sale {
+  border: 1px solid red;
+  background: red;
+  color: white;
+  height: 30px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.price > span {
+  text-decoration: line-through;
+  padding-right: 5px;
+}
+@media screen and (min-width: 320px) {
+  .container::before {
+    content: "320px";
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container::before {
+    content: "480px";
+    color: maroon;
+  }
+
+@media screen and (min-width: 620px) {
+  .container::before {
+    content: "620px";
+    color: orange;
+  }
+  section {
+    display: flex;
+    flex-flow: wrap;
+    padding-left: 10%;
+  }
+  article {
+    margin-right: 5%;
+    flex-basis: 230px;
+  }
+
+@media screen and (min-width: 810px) {
+  .container::before {
+    content: "810px";
+    color: black;
+  }
+  section {
+    display: flex;
+    flex-flow: row;
+  }
+  article {
+    margin-right: 5%;
+    flex-basis: 200px;
+  }
+  .price {
+    height: 20px;
+    font-size: 15px;
+  }
+@media screen and (min-width: 1400px) {
