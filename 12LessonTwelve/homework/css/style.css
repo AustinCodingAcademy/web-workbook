@@ -1,0 +1,152 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+main {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  position: relative;
+}
+
+h1 {
+  font-family: "Lily Script One", cursive;
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 40px;
+}
+
+div {
+  width: 100%;
+  margin: 0 auto;
+}
+section {
+  border: 1px solid gray;
+  margin: 20px;
+  text-align: center;
+}
+.pic {
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 90%;
+}
+span p {
+  top: 0;
+  left: 0;
+  height:15px;
+  background: red;
+}
+
+ p {
+  position:absolute;
+  bottom:57px;
+  right: 0;
+  width: 65px;
+  padding: 5px;
+  background-color: #66D9C1;
+  color: white;
+}
+#reduce {
+  width: 135px;
+}
+#line {
+  text-decoration: line-through;
+}
+
+h5 {
+  padding:15px;
+  border-bottom: 1px solid gray;
+}
+.cart{
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart a {
+  padding: 10px;
+  text-decoration: none;
+  background-color: #343436;
+  color: white;
+  font-size: .65em;
+ }
+a:hover {
+  background-color: #66D9C1;
+}
+@media screen and (min-width: 320px) {
+    header::before {
+    content: "320px";
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  header::before {
+    content: "480px";
+    color: maroon;
+  }
+  span p {
+    height: 25px;
+    width: 75px;
+    font-size: 1em;
+  }
+  p {
+  width: 75px;
+  }
+}
+@media screen and (min-width: 620px) {
+  header::before {
+    content: "620px";
+    color: orange;
+  }
+  div {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+
+  section {
+    width: 300px;
+ }
+
+  p {
+    height: 20px;
+    width: 45px;
+    font-size: .75em;
+  }
+  #reduce {
+    width: 100px;
+  }
+
+  }
+@media screen and (min-width: 810px) {
+  header::before {
+    content: "810px";
+    color: black;
+  }
