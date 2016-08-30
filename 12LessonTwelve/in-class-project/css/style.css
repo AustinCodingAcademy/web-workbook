@@ -1,1 +1,108 @@
+header {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify center: center;
+  align items: center;
+  background-size: cover;
+  height: 300px;
+  background: #000 url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/185649/sub_header_home.jpg") no-repeat center;
+}
 
+header h1{
+  font-size: 2em;
+}
+
+section{
+  display: flex;
+  flex flow: wrap;
+  justify-content: space-around;
+}
+
+article{
+  text-align: center;
+  margin-top: 30px;
+  background-color: #fff;
+}
+
+article img{
+  margin: auto 0;
+}
+@media screen and (min-width: 320px) {
+  .container::before {
+    content: "320px";
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container::before {
+    content: "480px";
+    color: maroon;
+  }
+}
+@media screen and (min-width: 620px) {
+  .container::before {
+    content: "620px";
+    color: orange;
+  }
+
+  article img{
+    margin: auto 0;
+  }
+  section {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+  }
+  article {
+/*     border: 1px solid red; */
+    flex-basis: 300px;
+  }
+  article h2, article p {
+    margin-top: 15px;
+  }
+  article h2 {
+    font-size: 1em;
+  }
+  article p {
+    font-size: 0.80em;
+  }
+}
+@media screen and (min-width: 810px) {
+  .container::before {
+    content: "810px";
+    color: black;
+  }
+  article {
+    flex-basis: 200px;
+  }
+  header {
+    background-position: left top;
+  }
+  header h1 {
+    font-size: 2.8em;
+  }
+  header p {
+    font-size: 0.9em;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container::before {
+    content: "1400px";
+    color: red;
+  }
+  body {
+    background: #000 url("http://cdn.pcwallart.com/images/restaurant-outside-wallpaper-1.jpg") no-repeat center;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
