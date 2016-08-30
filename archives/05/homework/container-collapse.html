@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html>
+
+    <head>
+        <title>Container Collapse</title>
+        <style>
+            html {
+                width: 65%;
+                margin: 0 auto;
+            }
+            .parent-container {
+                background-color: dodgerblue;
+                clear: both;
+            }
+            
+            hr { clear: both;}
+            .child-container {
+                background-color: darkgoldenrod;
+                width: 100px;
+                height: 100px;
+                margin: 20px;
+                
+            }
+            
+            .floating {
+                float: left;
+            }
+            
+            .overflow {
+                overflow: auto;
+            }
+            
+            /*Hint: Implement the class that can fix container collapse*/
+        </style>
+    </head>
+    <body>
+        <h1>Container Collapse</h1>
+        <h3>Parent container with two childs that <i>do not</i> have a CSS Float property. The parent can see both child divs within the usual document flow. This means the parent container doesn't collapse and you can see the blue background.</h3>
+        <div class="parent-container">
+            <div class="child-container"></div>
+            <div class="child-container"></div>
+        </div>
+        <hr>
+        <h3>Parent container with two child divs that <i>do</i> have a CSS Float property. This removes them from the normal document flow. The parent does not see the two child elements within the document flow. Due to this the parent is collapsing, a concept we explored in the homework. The collapsed parent has no dimensions, so you can't see a blue background. Please let's go ahead and fix this, so it looks like the example below.</h3>
+        <div class="parent-container">
+            <div class="child-container floating"></div>
+            <div class="child-container floating"></div>
+        </div>
+        <hr>
+        <h3>Parent container with two child divs with a CSS Float property. The parent has the <code>clearfix</code> class. The <pre>clearfix</pre> class makes it so the parent can see the child elements, despite them being out of the normal document flow. The parent does not collapse, and that's why you can see the blue background</h3>
+        <!-- Hint: Add the class that implements a way to fix container collapse -->
+        <div class="parent-container overflow">
+            <div class="child-container floating"></div>
+            <div class="child-container floating"></div>
+        </div>
+    </body>
+</html>
