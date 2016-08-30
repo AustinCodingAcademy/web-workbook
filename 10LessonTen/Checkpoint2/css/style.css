@@ -25,6 +25,9 @@ font-size: 25px;
   text-decoration: none;
   color: white;
 }
+.header a:hover {
+  transform: scale(1.5);
+}
 
 .index {
   background-image: url("../img/static1.squarespace.gif");
@@ -36,6 +39,7 @@ font-size: 25px;
   background-blend-mode: multiply;
   background-color: #6e6e6e  ;
   margin: auto;
+  background-attachment: fixed;
 }
 
 .textbox {
@@ -75,7 +79,9 @@ padding-top: 10px;
   text-decoration: none;
   color: white;
 }
-
+.button:hover {
+  transform: scale(1.5);
+}
 /*second area*/
 
 .housepic  {
@@ -96,7 +102,9 @@ padding-top: 10px;
 .webuild h3 {
   font-size: 30px;
   margin-top: -60px;
+
 }
+/*ADD PADDING AHHHH*/
 .webuild p {
   margin-top: 40px;
   font-size: 20px;
@@ -110,21 +118,32 @@ padding-top: 10px;
   border-top: solid lightgrey;
   border-bottom: solid lightgrey;
   float: left;
-  background-color: lightgrey;
   margin-bottom: 15px;
   background-blend-mode: multiply;
-  background-color: #6e6e6e  ;
-}
+  background-color:#1C5B99;
+  height:500px;
 
+}
+.designs h3 {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.designs img {
+  border-radius: 100px;
+}
 .why {
   width: 10%;
   float: left;
   padding-left: 20px;
   /*border-right: solid lightgrey;*/
-  margin-top: 50px;
+  margin-top: 127px;
   margin-bottom: 20px;
   text-align: center;
   margin-left: 80px;
+  color: white;
+  font-size: 13px;
+    line-height: 18px;
 
 }
 
@@ -132,22 +151,28 @@ padding-top: 10px;
   float: left;
   width: 10%;
   /*border-right: solid lightgrey;*/
-  margin-top: 50px;
+  margin-top: 127px;
   margin-bottom: 20px;
     padding-left: 30px;
     text-align: center;
       margin-left: 190px;
+      color: white;
+        font-size: 13px;
+          line-height: 18px;
 }
 
 .transparent {
   float: left;
   width: 10%;
   /*border-right: solid lightgrey;*/
-  margin-top: 50px;
+  margin-top: 127px;
   margin-bottom: 20px;
     padding-left: 10px;
     text-align: center;
       margin-left: 190px;
+      color: white;
+        font-size: 13px;
+        line-height: 18px;
 }
 
 .transparent a{
@@ -162,13 +187,16 @@ padding-top: 10px;
   /*border-right: solid lightgrey;*/
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-top: 50px;
+  margin-top: 127px;
   margin-bottom: 20px;
   padding-left: 10px;
   font-family:helvetica;
   font-weight: lighter;
   text-align: center;
     margin-left: 190px;
+    color: white;
+      font-size: 13px;
+        line-height: 18px;
 }
 /*fourth area*/
 
@@ -190,15 +218,16 @@ margin: 70px;
 
 h5 {
   float: right;
-  margin-top: -10px;
+  margin-top: 20px;
 }
 
 .widepictures p {
   text-align: center;
 }
+
 /*footer area*/
 
-.footer {
+/*.footer {
   background-image: url("http://cdn.myfancyhouse.com/wp-content/uploads/2012/02/Luxurious-Home-by-DesignCell-Architecture-6.jpg");
   width:100%;
   height:500px;
@@ -208,6 +237,7 @@ h5 {
   background-blend-mode: multiply;
   background-color: #6e6e6e  ;
   margin-top: -30px;
+
 }
 
 .twobutton {
@@ -240,3 +270,58 @@ h5 {
   font-family:helvetica;
   font-weight: lighter;
 }
+*/
+
+
+.parallax {
+  perspective: 1px;
+  height: 800px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-image: url("http://cdn.myfancyhouse.com/wp-content/uploads/2012/02/Luxurious-Home-by-DesignCell-Architecture-6.jpg");
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: #6e6e6e  ;
+    background-attachment: fixed;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: white;
+}
+.parallax__layer--base {
+  transform: translateZ(2);
+  margin-top: 500px;
+}
+.parallax__layer--back {
+  transform: translateZ(-2px)scale(3);
+  text-align: center;
+  margin:0 auto;
+  padding-top: 200px;
+  color: white;
+  margin-top: 500px;
+  padding-left: 65px;
+}
+
+.parallax__layer--back a{
+  border: solid 2px;
+  border-color:grey;
+  text-decoration: none;
+  color: white;
+  padding:19px;
+  margin-right: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+}
+
+  .parallax__layer--base h1{
+    margin-bottom: 60px;
+    font-family:helvetica;
+    font-weight: lighter;
+    font-size: 50px;
+    margin-left: 500px;
+    margin-top: 100px;}
