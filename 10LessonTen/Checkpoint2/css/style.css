@@ -3,8 +3,11 @@ body {
 }
 
 header {
-  background-color: #287e9a;
+  background-color: rgb(193, 52, 53);
+  opacity: .7;
   height: 80px;
+  width: 100%;
+  position: fixed;
 }
 
 header h1 {
@@ -26,9 +29,19 @@ nav a {
   padding-right: 15px;
 }
 
+@media(max-width: 678px) {
+  header h1 {
+    text-align: center;
+    padding-left: 0;
+  }
+  nav {
+    display: none;
+  }
+}
+
 #hero {
   background-image: url("https://media.giphy.com/media/6VoogvRSXUaAM/giphy.gif");
-  height: 575px;
+  height: 650px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -95,6 +108,27 @@ nav a {
   text-align: center;
 }
 
+@media(max-width: 987px) {
+  #win img {
+    float: none;
+    padding-left: 0;
+    margin: 0 auto;
+  }
+  #win div {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -70px;
+  }
+  #win p {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  #win {
+    height: 700px;
+    text-align: center;
+  }
+}
+
 #top {
   background-color: #a6b14b;
   text-align: center;
@@ -120,6 +154,26 @@ nav a {
   font-size: 24px;
 }
 
+@media(max-width: 900px) {
+  #top {
+    height: 610px;
+    padding: 0 15%;
+  }
+  #top div {
+    width: 40%;
+  }
+  #top div:nth-child(2) {
+    float: right;
+  }
+  #top div:nth-child(3) {
+    float: left;
+    clear: left;
+  }
+  #top div:last-child {
+    float: right;
+  }
+}
+
 #best {
   background-color: #287e9a;
   height: 500px;
@@ -139,13 +193,35 @@ nav a {
 }
 
 #best img {
-  height: 250px;
+  width: 100%;
+  height: 300px;
   padding-bottom: 30px;
 }
 
 #best p:first-of-type {
   padding-bottom: 15px;
 }
+
+@media(max-width: 1140px) {
+  #best {
+    height: 900px;
+  }
+  #best div {
+    float: none;
+    margin: 0 auto;
+  }
+  #best div:last-of-type {
+    float: none;
+    margin: 0 auto;
+    margin-top: -20px;
+  }
+  #best img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/*HAVING TROUBLE WITH THE BOTTOM-MARGIN/HEIGHT OF #BEST AFTER THE @MEDIA, I CANT GET IT TO BE RESPONSIZE. LOOKS GOOD AT ONE SCREEN SIZE AND NOT THE OTHER.*/
 
 /*#best p:last-of-type {
   font-size: 22px;
@@ -166,6 +242,7 @@ footer {
 
 footer h2 {
   font-size: 32px;
+  margin-bottom: 35px;
 }
 
 footer img {
