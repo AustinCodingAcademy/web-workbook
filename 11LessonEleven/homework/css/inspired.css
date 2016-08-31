@@ -1,0 +1,95 @@
+/*background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;*/
+
+/*   Typography  */
+
+h1 {
+  font-size: 3.2em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+.hero-text p {
+  font-family: sans-serif;
+}
+
+p {
+  font-size: .95em;
+  line-height: 175%;
+}
+
+/*  Everything else */
+
+.hero {
+  height: 465px;
+  background: darkgray url("../img/bg.jpg") center/cover no-repeat;
+  color: white;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  top: 140px;
+  left: 50px;
+  width: 400px;
+}
+
+.hero-text p {
+  margin-top: 50px;
+}
+
+article {
+  float: left;
+  width: 49%;
+}
+
+h2 {
+  margin: 50px 0 25px 50px;
+}
+
+h2 + p {
+  margin: 0 70px 50px 50px;
+  color: gray;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background: darkgray url("../img/bg2.jpg") -20px/cover no-repeat;
+    height: 320px;
+  }
+
+  h1 {
+    font-size: 1.7em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: .5em;
+  }
+
+  .hero-text {
+    top: 85px;
+    left: 20px;
+    width: 190px;
+  }
+
+  .hero-text p {
+    margin-top: 30px;
+    margin-right: 125px;
+  }
+
+  article {
+    width: 100%;
+  }
+
+  h2 + p, h2 {
+    margin: 10px 20px 10px 10px;
+  }
+
+
+}
