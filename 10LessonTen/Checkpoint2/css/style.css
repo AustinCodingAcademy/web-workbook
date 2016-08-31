@@ -10,7 +10,7 @@ header {
   left: 0;
 }
 
-#myname, #home, .navbar {
+#myname, #home, .navbar, #contact, .button {
   color: #ffffcc;
 }
 
@@ -28,6 +28,9 @@ header, section {
 #myname {
   font: 400 2.4em/50px Jaldi;
   margin-left: 10px;
+}
+
+#myname, .navbar, .button {
   text-decoration: none;
 }
 
@@ -38,16 +41,18 @@ nav {
 .navbar {
   margin-right: 20px;
   font: 400 1.5em/50px Jaldi;
-  text-decoration: none;
 }
 
 #home {
   background: rgba(10, 41, 26, .5) url("https://samanthagaw.files.wordpress.com/2015/05/2013-06-25-11-08-37.jpg") no-repeat 65% 15%;
-  height: 365px;
+  height: 325px;
   background-size: 160%;
   background-blend-mode: multiply;
+  padding-top: 175px;
+}
+
+#home, aside, figure, #contact {
   text-align: center;
-  padding-top: 135px;
 }
 
 h1 {
@@ -71,8 +76,8 @@ article p:last-child {
   margin-bottom: 0;
 }
 
-#home p {
-  font-size: 2em
+#home p, #contact p {
+  font-size: 2em;
 }
 
 .smaller {
@@ -86,8 +91,7 @@ article p:last-child {
 
 aside {
   float: left;
-  text-align: center;
-  width: 23%
+  width: 23%;
   min-width: 260px;
 }
 
@@ -112,17 +116,49 @@ section:before {
   visibility: hidden;
 }
 
-#art {
+#art, #dance, #contact {
   padding: 50px 0;
 }
 
-.project {
+figure {
   display: inline-block;
-  width: 24.8%;
-  text-align: center;
   height: 275px;
 }
 
+.project {
+  width: 24.8%;
+}
+
+.danceproject {
+  width: 49%;
+  height: 450px;
+  vertical-align: top;
+}
+
+#dance p {
+  margin: 0px 20px;
+}
+
+.parenthetical {
+  font-size: .7em;
+}
+
+#contact {
+  height: 200px;
+  padding-bottom: 0px;
+  background-color: #9c5d5f;
+}
+
+#contact p {
+  margin-bottom: 40px;
+}
+
+.button {
+  padding: 5px 10px;
+  margin: 10px;
+  border: 3px solid #ffffcc;
+  font-size: 1.3em;
+}
 
 .clearfix:after {
   display: block;
