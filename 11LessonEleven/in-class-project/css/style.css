@@ -1,76 +1,95 @@
-@media (min-width: 768px) and (max-width: 2000px) {
-.hero{
-  float: left;
-  background-color: #2bcdc0;
-  color:#fff;
-  font-size: 42px;
-  height: 400px;
-  width: 100%;
-  text-align: center;
+.clearfix:after {
+content:"";
+display:block;
+clear:both;
 }
+body{
+ color: #fff;
 }
-@media (max-width: 767px){
-.hero{
-  float: left;
-  background-color: #33a8dd;
-  color:#fff;
-  font-size: 42px;
-  height: 400px;
-  width: 100%;
-  text-align: center;
+header{
+ background-color: #2BCDC0 ;
+ height: 400px;
+ text-align: center;
 }
+header h1{
+ padding-top: 160px;
+ font-size: 70px;
+ margin-top: -8px;
+ font-weight: lighter;
 }
-.hero h1{
-  padding-top: 115px;
-  font-weight: lighter;
+main{
+ background-color: #1B1B1B;
+ height: 400px;
 }
-@media (min-width: 768px) and (max-width: 2000px) {
-footer{
-  float: left;
-  background-color: #1b1b1b;
-  color: #fff;
-  height: 400px;
-  width: 100%;
-  text-align: center;
-  padding-top: 100px;
+.box{
+ width: 17%;
+ float: left;
+ padding-top: 45px;
+ padding-left: 153px;
+ text-align: center;
+ font-weight: lighter;
+ line-height:25px;
 }
+.one h2{
+ border-top: 30px solid #33A8DD ;
 }
-@media (max-width: 767px){
-footer{
-  float: left;
+.two h2{
+ border-top: 30px solid #F36730 ;
+}
+.three h2{
+ border-top: 30px solid #2BCDC0 ;
+}
+.box h2{
+ font-size: 40px;
+ padding-top: 35px;
+}
+.box p{
+  font-size: 20px;
+}
+/*Below this is for phone @media*/
+
+@media(max-width:768px){
+ header {
+   background-color: #33A8DD;
+   text-align: left;
+   height: 205px;
+   padding-top: 100px;
+   padding-right: 9px;
+   padding-left: 50px;
+   margin: 0px;
+   width: 375px;
+   width: 300px;
+ }
+ header h1{
+  padding: 10px;
+  font-size: 46px;
+ }
+ main{
+   color:black;
+ }
+ .box{
   background-color: #f7f5f6;
-  height: 1200px;
-  width: 100%;
+  width: 180px;
+  float: none;
+  padding: 90px;
+  padding-top: 37px;
+  padding-bottom: 2px;
   text-align: center;
-  padding-top: 100px;
-}
-}
-.foot1{
-  float:left;
-  height: 10px;
-  width: 20%;
-  min-width:220px;
-  margin: 10px;
-  margin-left: 75px;
-  padding: 20px;
-  margin-bottom: 350px;
-  display: inline-block;
-  background-color: #2bcdc0;
-}
-.foot1 h1{
-  padding-top: 30px;
-  padding-bottom: 10px;
-  font-size: 58px;
-  font-weight: lighter;
-}
-.two{
-  background-color: #33a8dd;
-}
-.three{
-  background-color: #f46731;
-}
-.clear-fix:after {
-    content: "";
-    display: block;
-    clear: both;
+ }
+ .box h2{
+  font-size: 40px;
+  padding-top: 12px;
+ }
+ .one h2{
+  border-top: 30px solid #33A8DD ;
+ }
+ .two h2{
+  border-top: 30px solid #F36730 ;
+ }
+ .three h2{
+  border-top: 30px solid #2BCDC0 ;
+ }
+
+
+
 }
