@@ -1,0 +1,84 @@
+body {
+    padding-left: 10%;
+}
+.header {
+    background-color: #2bcdc0;
+    height: 352px;
+    width: 89%;
+}
+.header h1 {
+    padding-top: 165px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: "";
+    clear: both;
+    height: 0;
+}
+.main {
+    width: 90%;
+    height: 352px;
+}
+.left, .center, .right {
+    float: left;
+    text-align: center;
+    color: white;
+    background-color: black;
+    width: 33%;
+    height: 352px;
+    padding-top: 77px;
+}
+.leftcolor {
+    border-top: 30px solid #33a8dd;
+    width: 60%;
+    margin-left: 72px;
+}
+.centercolor {
+    border-top: 30px solid #f46731;
+    width: 60%;
+    margin-left: 72px;
+}
+.rightcolor {
+    border-top: 30px solid #2bcdc0;
+    width: 60%;
+    margin-left: 72px;
+}
+p {
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+/*BELOW THIS IS FOR PHONE*/
+
+@media (max-width: 768px) {
+    body {
+        padding-left: 0%;
+    }
+    .header {
+        background-color: #33a8dd;
+        height: 318px;
+        width: 100%;
+    }
+    .header h1 {
+        padding-top: 30%;
+        padding-left: 10%;
+        text-align: left;
+        font-size: 50px;
+        color: white;
+    }
+    .main {
+        width: 100%;
+    }
+    .left, .center, .right {
+        float: none;
+        /*text-align: center;*/
+        color: black;
+        background-color: #f7f5f6;
+        width: 100%;
+    }
+}
