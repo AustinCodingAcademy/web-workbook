@@ -1,0 +1,57 @@
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.herospace {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #6e6e6e;
+    border-top: 40px solid white;
+    width: 1000px;
+    height: auto;
+    color: white;
+    text-align: left;
+    margin: auto;
+    padding: 100px;
+    margin-top: 30px;
+}
+
+.herospace p {
+  width: 400px;
+  height: 100px;
+}
+
+.herospace h1 {
+  font-size: 50px;
+  width: 400px;
+  height: 100px;
+}
+
+.left, .right {
+  float: left;
+  width: 400px;
+  padding-left: 100px;
+  margin-left: 50px;
+  margin-top: 30px;
+  background-color: rgb (247,247,247);
+}
+
+@media screen and (max-width: 768px) {
+  .herospace {
+    background-image: url("../img/bg2.jpg");
+    position: relative;
+  }
+
+   .herospace p {
+     width: 200px;
+     height: 100px;
+   }
+
+  .left, .right {
+    float: none;
+    width: 360px;
+  }
+}
