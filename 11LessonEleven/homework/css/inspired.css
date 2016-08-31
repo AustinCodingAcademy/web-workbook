@@ -1,0 +1,102 @@
+#hero {
+  width: 100%;
+  height: 440px;
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+#hero div {
+  padding-top: 140px;
+  margin-left: 45px;
+  width: 25%;
+}
+
+#hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  padding-bottom: 40px;
+}
+
+#hero p {
+  font-weight: 100;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+article {
+  background-color: #F7F7F7;
+  height: 190px;
+}
+
+article div {
+  float: left;
+  width: 43%;
+  margin-left: 50px;
+}
+
+article h3 {
+  padding-top: 40px;
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+
+article p {
+  font-family: sans-serif;
+  color: #6a6a6a;
+  font-size: 14px;
+}
+
+@media (max-width:640px) {
+  #hero {
+    background-image: url("../img/bg2.jpg");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+  #hero div {
+    width: 65%;
+  }
+  #hero div p {
+    width: 40%;
+  }
+  #hero h1 {
+    font-size: 32px;
+  }
+  article {
+    height: 350px;
+  }
+  article div {
+    float: none;
+    width: 80%;
+    margin-left: 25px;
+  }
+  article div:last-of-type {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  article h3 {
+    font-size: 14px;
+  }
+  article p {
+    font-size: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.clearfix:after {
+content:"";
+display:block;
+clear:both;
+}
