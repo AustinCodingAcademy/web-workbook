@@ -1,0 +1,152 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*font-size: 100%;
+    font: inherit;*/
+    vertical-align: baseline;
+}
+@media screen and (min-width: 320px) {
+    main::before {
+        content: "320px";
+        color: green;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-weight: 700;
+        margin: 5px;
+        font-size: 2em;
+    }
+    .content-desktop {
+        display: none;
+    }
+    html {
+        color: #595252;
+        background: #F5F0E9;
+        font-family: sans-serif;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        background: url(../img/office_mobile.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        height: 500px;
+        width: 100%;
+    }
+    header>h1 {
+        font-size: 2rem;
+        padding-top: 100px;
+    }
+    a {
+        margin-top: 80px;
+        color: white;
+        padding: 15px 30px;
+        background: #222;
+        text-decoration: none;
+    }
+    ul, menu, dir {
+        margin-bottom: 20px;
+    }
+    li {
+        list-style: none;
+    }
+    .content-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .content-mobile> h2 {
+        font-size: 2rem;
+        margin: 40px 0;
+    }
+    .content-mobile section {
+        padding-top: 30px;
+        background: #fff;
+        width: 85%;
+        height: 400px;
+        line-height: 40px;
+        margin: 40px 0;
+    }
+}
+@media screen and (min-width: 480px) {
+    main::before {
+        content: "480px";
+        color: maroon;
+    }
+}
+@media screen and (min-width: 620px) {
+    main::before {
+        content: "620px";
+        color: orange;
+    }
+    .content-desktop {
+        width: 100%;
+        height: 400px;
+        display: flex;
+    }
+    .content-mobile {
+        display: none;
+    }
+    header {
+        margin: 0 5px;
+        background: url(../img/office.jpg);
+        background-size: cover;
+        background-position: center bottom;
+        ;
+    }
+    article {
+        width: 80%;
+        height: auto;
+        margin: 5px 0 5px 5px;
+        flex-basis: 48%;
+    }
+    section.left {
+        flex-flow: wrap;
+        display: flex;
+        width: 75%;
+        height: auto;
+    }
+    section.right {
+        margin: 5px 5px 5px 0;
+        background: url(../img/03.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 35%;
+        height: auto;
+    }
+    .art1 {
+        background: url(../img/02.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .art2 {
+        background: url(../img/07.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .art3 {
+        background: url(../img/04.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .art4 {
+        background: url(../img/05.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media screen and (min-width: 810px) {
+    main::before {
+        content: "810px";
+        color: black;
+    }
+}
+@media screen and (min-width: 1400px) {
+    main::before {
+        content: "1400px";
+        color: red;
+    }
+}
