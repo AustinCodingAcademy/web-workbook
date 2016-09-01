@@ -1,0 +1,64 @@
+.clearfix:after {
+content:"";
+display:block;
+clear:both;
+}
+body{
+  margin-top: -22px;
+}
+header{
+  background-image: url("../img/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  color: #fff;
+}
+header h1{
+  padding-top: 100px;
+  padding-left: 30px;
+  font-size: 48px;
+  font-weight: bold;
+  width: 30%;
+}
+header p{
+  padding-top: 30px;
+  padding-left: 30px;
+  font-family: serif;
+  font-size: 20px;
+  width: 35%;
+}
+.box{
+  float:left;
+  width: 40%;
+  padding: 10px;
+  background-color: #f7f5f6;
+}
+.box h1{
+  font-weight: lighter;
+  padding: 5px;
+  font-size: 16px;
+}
+.box p{
+  font-weight: lighter;
+  padding: 5px;
+  font-size: 10px;
+}
+/*Below this is for phone @media*/
+@media(max-width:768px){
+  header{
+    background-image: url("../img/bg2.jpg");
+    margin-top: 30px;
+  }
+  header h1{
+    width: 70%;
+    font-size: 36px;
+    padding-top: 105px;
+  }
+  header p{
+    width: 43%;
+    padding-top: 0px;
+  }
+  .box{
+    float: none;
+    width: 95%;
+  }
