@@ -1,0 +1,160 @@
+html{
+  font-size:62.5%;
+}
+body *{
+  font-family: 'Open Sans', sans-serif;
+
+}
+header{
+  background:url('../img/office_mobile.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+}
+
+h1{
+    font-size: 2.4rem;
+    font-weight: 600;
+    width: 10rem;
+    text-align: center;
+}
+
+button{
+  background: black;
+  color:#fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  box-shadow: none;
+  padding: 1.2rem;
+  margin:1rem;
+}
+
+.desktop-view{
+  display:none;
+}
+
+.mobile-view{
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: center;
+  align-items: center;
+  background: lightgray;
+}
+
+.white-bkgrnd{
+  background: #fff;
+}
+
+.teal-bkgrnd{
+  background:teal;
+}
+
+.feature-box{
+  width:55%;
+  margin:1rem 10%;
+  text-align: center;
+}
+
+
+section h2{
+  width:100%;
+  text-align: center;
+}
+
+.feature-box li{
+  list-style: none;
+  margin-left: 0;
+  color:gray;
+}
+
+.feature-box ul{
+  padding-left: 0;
+}
+
+body ul .main-feature{
+  font-weight: bold;
+  color:black;
+}
+@media screen and (min-width: 320px) {
+  .container::before {
+    content: "320px";
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container::before {
+    content: "480px";
+    color: maroon;
+  }
+  .feature-box{
+    width:40%;
+    margin:auto 5%;
+    text-align: center;
+  }
+  h1{
+      font-size: 2.4rem;
+      font-weight: 600;
+      width: 100%;
+      text-align: center;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .container::before {
+    content: "620px";
+    color: orange;
+  }
+  header{
+    background:url('../img/office_tablet.jpg') no-repeat center center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .container::before {
+    content: "810px";
+    color: black;
+  }
+  header{
+    background:url('../img/office.jpg') no-repeat center center;
+    background-size: 81rem;
+  }
+  .desktop-view{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: lightgray;
+  }
+  .gallery-col1, .gallery-col2{
+    display: flex;
+    flex-flow: column nowrap;
+    margin:1rem;
+  }
+  .gallery-col1 img, .gallery-col2 img{
+    width:15rem;
+    margin: 1rem;
+  }
+  .mobile-view{
+  display: none;
+  }
+
+}
+
+@media screen and (min-width: 1400px) {
+  .container::before {
+    content: "1400px";
+    color: red;
+  }
+
+}
