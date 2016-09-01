@@ -9,8 +9,83 @@
 
 .lifebox {
   width:50%;
-  margin:0 auto;
-  text-align: center;
-  color:grey;
+  color:white;
   padding-top: 14%;
+  margin-left: 15px;
+}
+
+.lifebox h1 {
+  font-size: 45px;
+}
+
+#box {
+  height:150px;
+  width:100%;
+  background-color: lightgrey;
+  padding-top: 0%;
+}
+
+#box h2 {
+  font-size: 20px;
+}
+.news {
+  float:left;
+  width:30%;
+  margin-left:50px;
+}
+
+
+.food {
+  float:left;
+  width:30%;
+  padding-left: 20%;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear:both;
+  height:0;
+}
+
+
+
+@media (max-width: 768px) {
+  #life  {
+    background-image: url("../img/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:100%;
+    height:500px;
+  }
+  #box {
+    height:350px;
+    width:100%;
+    background-color: lightgrey;
+    padding-top: 1%;
+  }
+
+#box h2{
+  font-size: 25px;
+}
+
+
+  .news {
+    font-size:15px;
+    float:none;
+    width:90%;
+    margin-left: 10px;
+  }
+
+
+  .food {
+    font-size:15px;
+    padding-top: 30px;
+    float:none;
+    width:90%;
+    margin-left:-17%;
+  }
 }
