@@ -1,0 +1,143 @@
+h1{
+  text-align:center;
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container
+{
+  margin: auto;
+  font-family: sans-serif;
+}
+
+section
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+article
+{
+  margin: 10px;
+  width: 320px;
+  padding: 0;
+}
+
+img{
+  height: auto;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+div p{
+  font-size:1.3em;
+  text-align:center;
+}
+
+.product
+{
+  border: 1px solid gray;
+}
+.product p
+{
+  border-bottom: 1px solid grey;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 12px;
+  font-weight: bold;
+}
+.shirt
+{
+  position: relative;
+}
+
+.price
+{
+  position: absolute;
+  background-color:turquoise;
+  border:none;
+  padding:2.5%;
+  color:white;
+  font-weight:bold;
+  bottom: 0;
+  right: 0;
+
+}
+
+.cart
+{
+  height:100px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+}
+
+a{
+  text-decoration:none;
+  background-color:grey;
+  color:white;
+  font-size:.7em;
+  font-family:sans serif;
+  padding:10px;
+}
+
+/*media queries*/
+
+@media screen and (min-width: 320px) {
+  .container::before {
+    content: "320px";
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container::before {
+    content: "480px";
+    color: maroon;
+  }
+}
+@media screen and (min-width: 620px) {
+  .container::before {
+    content: "620px";
+    color: orange;
+  }
+  .container
+  {
+    width: 620px;
+  }
+ }
+@media screen and (min-width: 810px) {
+  .container::before {
+    content: "810px";
+    color: black;
+  }
+  .container
+  {
+    width: 810px;
+  }
+
+}
+@media screen and (min-width: 1400px) {
+   .container::before
+  {
+    content: "1400px";
+    color: black;
+  }
+  .container {
+    width: 90%;
+  }
+  article{
+    width:280px;
+  }
+
+}
