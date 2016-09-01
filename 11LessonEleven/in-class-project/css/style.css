@@ -10,22 +10,31 @@ body {
 
 header {
   text-align: center;
-  padding-top: 75px;
   background-color: #2bcdc0;
-  height: 200px;
-  font-size: 48px;
+  height: 310px;
+  font-family: Times;
+}
+
+header h1 {
+  font-size: 60px;
+  padding-top: 120px;
 }
 
 main {
   background-color: #000;
   margin: 0 auto;
   text-align: center;
-  height: 325px;
+  height: 300px;
+}
+
+.mainbox {
+  width: 90%;
+  padding-left: 117px;
 }
 
 .box {
   float: left;
-  width: 33%;
+  width: 30%;
 }
 
 .container {
@@ -61,11 +70,14 @@ main {
 
 h1 {
   font-size: 42px;
+  font-weight: lighter;
   text-align: center;
+  margin: 10px 0px 10px 0px;
 }
 
 p {
   font-size: 16px;
+  margin-top: 0px;
 }
 
 /*Below is for phone*/
@@ -73,15 +85,35 @@ p {
 @media (max-width: 768px) {
   header {
     text-align: center;
-    padding-top: 55px;
     background-color: #33a8dd;
-    font-size: 48px;
-    margin-top: 0px;
-    width: 78%;
+    height: 250px;
+    font-family: Times;
+    margin-top: -10px;
+    width: 71%;
+    padding-right: 0px;
   }
 
-  h1 {
-    width: 80%;
+  header h1 {
+    width: 90%;
+    font-size: 46px;
+    text-align: left;
+    padding: 75px 0px 0px 15px;
+  }
+
+  body {
+    margin: 0px;
+  }
+
+  main {
+    margin: 0px;
+    width: 71%;
+    height: 975px;
+    background-color: #f7f5f6;
+    color: #000;
+  }
+
+  .mainbox {
+    padding: 30px 0px 0px 15px;
   }
 
   .box {
@@ -90,17 +122,8 @@ p {
     height: 300px;
   }
 
-  main {
-    margin: 0px;
-    width: 78%;
-    height: 940px;
-    background-color: #f7f5f6;
-    color: #000;
+  .blue {
+    margin-top: 0px;
   }
-
-  body {
-    margin: 0px;
-  }
-
 
 }
