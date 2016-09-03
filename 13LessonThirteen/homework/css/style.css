@@ -1,0 +1,227 @@
+/*All encompassing classes*/
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto Mono', monospace;
+  background: #eee;
+  color: #333;
+}
+.desktop {
+  display: none;
+}
+/**
+Header Divs
+**/
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 90vw;
+  width: auto;
+  min-height: 100vh;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.pic {
+  display: flex;
+  position: relative;
+  width: auto;
+  max-height: 100vh;
+  height: 85vh;
+  z-index: -1;
+  text-align: center;
+  background-position: top;
+}
+.intro {
+  font-size: 5rem;
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+  top: 30%;
+  left: 0%;
+  line-height: 50px;
+}
+.description {
+  display: flex;
+  position: absolute;
+  font-size: 3.5rem;
+  justify-content: center;
+  height: 15vh;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding-bottom: 8vh;
+  background-color: #eee;
+}
+.description p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  padding: 10vh 5vw 5vh 5vw;
+}
+
+/**
+Body Divs
+**/
+.section1, .section2 {
+  background-color: #eee;
+}
+.silver, .gold {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  margin: 5vh 5vw 5vh 5vw;
+  background-color: #d7f7e3;
+}
+.silver {
+  background-color: #fff;
+}
+.silver h1, .gold h1 {
+  font-size: 3rem;
+  padding: 5vh 2vw 3vh 2vw;
+}
+.price {
+  font-size: 3rem;
+  padding: 5vh 2vw 5vh 2vw;
+}
+.bold {
+  font-size: 2rem;
+  padding-top: 3.5vh;
+  font-weight: bold;
+}
+.light {
+  font-size: 2rem;
+  padding-top: 3.5vh;
+  color: rgba(46,46,46,.5);
+}
+.button {
+  margin: 5vh 5vw 5vh 5vw;
+  padding: 15px 40px 15px 40px;
+  border: 0;
+  font-size: 2rem;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+}
+/**
+* Media Queries
+**/
+@media screen and (min-width: 320px) {
+  .container::before {
+    content: "320px";
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+    z-index: 1000;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container::before {
+    content: "480px";
+    color: maroon;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 620px) {
+  .container::before {
+    content: "620px";
+    color: orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 810px) {
+  .container::before {
+    content: "810px";
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+  html {
+    background: white;
+  }
+  .desktop {
+    display: flex;
+  }
+  .phone {
+    display: none;
+  }
+  .top {
+    max-width: 98vw;
+    height: 70vh;
+    min-height: 0vh;
+    margin-top: 0;
+    background-image: url("../pics/chair.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+  .picturecontainer {
+    margin-top: 2vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    overflow: hidden;
+    max-width: 98vw;
+    display: flex;
+  }
+  .quadpics {
+    width: 60vw;
+    display: flex;
+  }
+  .pics {
+    width: 30vw;
+    height: 30vw;
+    margin: 0vw 3vw 3vw 0vw;
+  }
+  .toprow, .bottomrow {
+    display: flex;
+    flex-direction: column;
+  }
+  .suit {
+    width: 38vw;
+    margin-left: 6vw;
+    margin-bottom: 3vw;
+    height: auto;
+    background-image: url(../pics/suit.png);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container::before {
+    content: "1400px";
+    color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+}
