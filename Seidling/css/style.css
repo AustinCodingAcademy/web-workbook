@@ -11,28 +11,35 @@ header {
   height: 60px;
 }
 
-h1, h4 {
+h1, h2, h4 {
   font-family: 'Pattaya', sans-serif;
 }
 
 header h1 {
   color: white;
   font-size: 36px;
-  padding-top: 6px;
   padding-left: 20px;
+  display: inline;
 }
 
 nav {
   float: right;
-  margin-top: -34px;
   margin-right: 20px;
+  /*margin-top: 20px;*/
+  display: inline;
+  vertical-align: middle;
 }
 
-nav a {
+header nav a {
   color: white;
   text-decoration: none;
   padding-right: 10px;
+  font-size: 16px;
+}
 
+header nav a:hover {
+  text-decoration: none;
+  color: #fff;
 }
 
 #hero {
@@ -68,14 +75,16 @@ nav a {
 
 .btn:hover {
   box-shadow: 10px;
-  padding: 10px;
+  padding: 10px 20px;
+  background-color: gray;
+  text-decoration: none;
+  color: #fff;
 }
 
 #about {
   width: 75%;
   margin: 0 auto;
   background-color: #a8a8a8;
-  height: 400px;
 }
 
 #about h3 {
@@ -88,6 +97,78 @@ nav a {
 #about .btn {
   float: right;
 }
+
+#boiler {
+  text-align: center;
+  max-width: 90%;
+  margin-top: 100px;
+}
+
+#boiler img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  margin-top: 40px;
+}
+
+#boiler h4 {
+  font-family: serif;
+}
+
+#boiler p {
+  margin: 0 15%;
+}
+
+.survey {
+  text-align: center;
+}
+
+footer {
+  background-color: black;
+  height: 75px;
+  margin-top: 60px;
+}
+
+footer h2 {
+  display: inline;
+  float: left;
+  margin-left: 2%;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.fcontact {
+  float: right;
+  margin-right: 2%;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .fcontact{
+    float: left;
+    clear: left;
+    margin-left: 2%;
+  }
+  #hero {
+    height: 400px;
+  }
+  #hero h1 {
+    font-size: 40px;
+  }
+  nav {
+    display: none;
+  }
+}
+
 
 
 /*.clearfix:after {
