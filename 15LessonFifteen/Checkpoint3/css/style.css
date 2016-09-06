@@ -1,0 +1,711 @@
+/**
+* Top level styles
+**/
+html {
+  font-family: 'Georgia', sans-serif, serif;
+  font-size: 62.5%;
+}
+
+* {
+  font-family: 'Georgia', sans-serif, serif;
+}
+
+body {
+  font-family: 'Georgia', sans-serif, sans-serif;
+  background-color: #f8f8f8;
+}
+
+section {
+  border: 1px solid red;
+  width: 96vw;
+  display: flex;
+}
+
+img {
+  max-width: 96vw;
+}
+
+.desktop {
+  display: none;
+}
+/**
+* HEADER
+**/
+.container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.navbar-default {
+  background-color: lightgray; /*fix this*/
+  border: none;
+  max-width: 100vw;
+  padding: 0;
+  margin: 0;
+  font-size: 1.4rem;
+}
+.navbar {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+}
+
+input[type=text] {
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 5px;
+}
+
+header {
+  background-image: url("../img/wine-bg.jpg");
+  -webkit-filter: brightness(85%);
+  height: 90vh;
+  max-width: 100vw;
+  width: 96vw;
+  background-size:auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0 auto;
+  margin-left: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  color: white;
+  position: relative;
+  font-size: 1.6rem;
+}
+
+.headericon {
+  height: 40vh;
+  width: 92.5vw;
+  align-items: center;
+  object-fit: fill;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  -webkit-filter: brightness(200%);
+  padding-top: 10vh;
+}
+.headericon img {
+  height: 100%;
+  width: auto;
+  max-width: 100vw;
+}
+.headertext {
+  padding: 5vh 3vw 0vh 3vw;
+  font-style: italic;
+}
+.headertext h1 {
+  padding-top: 2vh;
+}
+.headertext p {
+  padding-top: 2vh;
+  font-style: normal;
+}
+.icons {
+  padding-top: 5vh;
+}
+
+/**
+*** body ***
+**/
+
+/* Sprayer */
+.sprayer {
+  max-width: 100vw;
+  height: 71vh;
+  overflow: hidden;
+}
+.sprayer img {
+  width: 99vw;
+  height: auto;
+}
+
+/* Signature */
+
+.signature {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.6rem;
+}
+.signature h2 {
+  padding-top: 7vh;
+  font-style: italic;
+  color: gray;
+}
+
+.signature h3 {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  line-height: 3rem;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.signature p {
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 1.4rem;
+  padding: 0vh 2vw 5vh 2vw;
+  font-style: normal;
+}
+.signature img{
+  max-width: 100vw;
+  width: 50%;
+  height: auto;
+  padding-bottom: 5vh;
+}
+
+/* Production */
+
+.production {
+  background-image: url("../img/wine13.jpg");
+  height: 70vh;
+  color: white;
+  overflow: hidden;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.production h3 {
+  font-size: 2.25rem;
+  padding: 10vh 4vw 3.5vh 4vw;
+  font-style: italic;
+}
+
+.production p {
+  font-size: 1.25rem;
+  padding: 0vh 3.5vw 5vh 3.5vw;
+  font-style: normal;
+}
+
+
+/*  Wine bottle section*/
+.wine {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.winepic {
+  height: 50vh;
+  background-image: url("../img/wine3.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.winearticle {
+  display: flex;
+  justify-content: center;
+
+}
+.text {
+  height: 85vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  border-top: 2px solid lightgray;
+}
+
+.winearticle h3 {
+  font-size: 3rem;
+  font-style: italic;
+  padding-top: 5rem;
+}
+
+.winearticle p {
+  font-size: 2.75rem;
+  padding-top: 4rem;
+  line-height: 3rem;
+  font-style: italic;
+}
+
+.winearticle input {
+  margin-top: 4rem;
+  padding: 2rem 5rem 2rem 5rem;
+  font-size: 2rem;
+  border: none;
+  background-color: #91a05c;
+  color: white;
+  margin-bottom: 2.5rem;
+}
+
+
+/* Wine Bottle Pics */
+.whitewinepic {
+  background-image: url("../img/wine6.jpg");
+}
+
+.purplewinepic {
+  background-image: url("../img/wine7.jpg");
+}
+
+
+/* Awards */
+
+.awards {
+  background-image: url("../img/wine12.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: auto;
+  max-width: 100vw;
+  background-position: left;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.awards h1 {
+  font-size: 2rem;
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+  font-family: 'Georgia', sans-serif, sans-serif;
+  font-style: italic;
+}
+
+.awards img {
+  width: 80%;
+  max-width: 100vw;
+  height: auto;
+}
+
+.awards p {
+  font-size: 1.25rem;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+
+/* Pouring Image */
+
+.pouring {
+  height: auto;
+  width: auto;
+  max-width: 100vw;
+  width: auto;
+  display: block;
+}
+.pouring img {
+  width: 100vw;
+  height: auto;
+}
+
+/* tasting */
+
+#tasting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tasting {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.toptasting {
+  display: flex;
+  flex-direction: column;
+}
+.tasting h1 {
+  display: block;
+  font-size: 1.7rem;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  text-align: left;
+  font-style: italic;
+}
+.toptasting p {
+  font-size: 1.4rem;
+  text-align: left;
+  padding: 2vh 2vw 2vh 2vw;
+  line-height: 2rem;
+}
+
+.bottomtasting {
+  border-top: 1px solid lightgray;
+  padding-bottom: 5vh;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.bottomtasting h2, .bottomtasting p {
+  font-size: 1.4rem;
+  padding: 2vh 2vw 2vh 2vw;
+}
+.bottomtasting p {
+  padding: 1vh 2vw 1vh 2vw;
+}
+
+
+/* Footer */
+
+footer {
+  width: 96vw;
+  height: 60vh;
+  background-color: #292929;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 10vh;
+}
+
+footer p {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 5vh 2vh 5vh 2vh;
+}
+
+footer input[type=text] {
+  width: 90%;
+  height: auto;
+  padding: 3vh 2vw 3vh 2vw;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: transparent;
+  color: white;
+  border: 1px solid silver;
+  font-weight: bold;
+}
+
+footer input[type=text]::-webkit-input-placeholder {
+  color: white;
+}
+
+footer input[type=button] {
+  width: 90%;
+  height: auto;
+  padding: 2.5vh 2vw 2.5vh 2vw;
+  border: 2px solid #91a05c;
+  background-color: #91a05c;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.footericons {
+  padding-top: 5vh;
+}
+
+.footericons img {
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+/**
+* Media Queries
+**/
+@media screen and (min-width: 320px) {
+  .container::before {
+    content: "320px";
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+    z-index: 1000;
+  }
+}
+@media screen and (min-width: 480px) {
+  .container::before {
+    content: "480px";
+    color: maroon;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+
+  header {
+    height: 75vh;
+  }
+  .production {
+    height: 40vh;
+  }
+  .text {
+    height: 50vh;
+  }
+  .awards h1 {
+    font-size: 4rem;
+  }
+  .awards p {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 620px) {
+  .container::before {
+    content: "620px";
+    color: orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+  header {
+    height: 80vh;
+    /*fix header width at 620 and larger */
+  }
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  header {
+    margin: -1vw;
+  }
+}
+@media screen and (min-width: 810px) {
+  .container::before {
+    content: "810px";
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+  .desktop {
+    display: flex;
+  }
+  .mobile {
+    display: none;
+  }
+  header {
+    height: 100vh;
+    width: 98vw;
+  }
+  section {
+    width: 98vw;
+  }
+  .middle {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-basis: auto;
+    height: 70vh;
+    width: 98vw;
+    justify-content: flex-start;
+    align-content: flex-start;
+    margin-top: 2vh;
+  }
+  .signature {
+    width: 50%;
+    height: 70vh;
+    margin: 0;
+  }
+  .sprayer {
+    width: 50%;
+    height: 70vh;
+    margin: 0;
+    background-image: url('../img/wine16.jpg');
+    background-position: center;
+  }
+  .production {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .productiontext {
+    padding: 0vh 20vw 0vh 20vw;
+  }
+  .desktop_wine {
+    width: 98vw;
+    height: 120vh;
+  }
+  .text {
+    height: 65vh;
+    position: relative;
+  }
+  .text h3 {
+    font-size: 2.5rem;
+  }
+  .text p {
+    font-size: 1.5rem;
+  }
+  .text input {
+    bottom: 0;
+    margin-bottom: 15vh;
+    position: absolute;
+    padding: 2vh 4vw 2vh 4vw;
+    font-size: 1.4rem;
+  }
+  .recognition {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+    background-image: url('../img/wine12.jpg');
+    background-position: bottom left;
+    color: white;
+  }
+  .recognition h1 {
+    display: block;
+    color: white;
+    font-size: 5rem;
+    font-family: 'Georgia', serif, sans-serif;
+    padding-top: 5vh;
+  }
+  .awards2 {
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  .medal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    text-align: center;
+  }
+  .medal img {
+    height: 50vh;
+    width: auto;
+  }
+  .medal p {
+    font-size: 1.4rem;
+    padding-top: 5vh;
+  }
+
+  /*Sixth row aka. pouring and tasting*/
+  pouring {
+    height: 100vh;
+    width: auto;
+    max-width: 100vw;
+    width: auto;
+    display: flex;
+  }
+  .pouring img {
+    width: 100vw;
+    height: auto;
+  }
+  .sixth {
+    display: flex;
+    flex-direction: row;
+    width: 98vw;
+    height: 100vh;
+  }
+  #tasting_desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tasting_desktop {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .toptasting_desktop {
+    display: flex;
+    flex-direction: column;
+  }
+  .tasting_desktop h1 {
+    display: block;
+    font-size: 1.7rem;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-align: left;
+    font-style: italic;
+  }
+  .toptasting_desktop p {
+    font-size: 1.4rem;
+    text-align: left;
+    padding: 2vh 2vw 2vh 2vw;
+    line-height: 2rem;
+  }
+
+  .bottomtasting_desktop {
+    border-top: 1px solid lightgray;
+    padding-bottom: 5vh;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .bottomtasting_desktop h2, .bottomtasting_desktop p {
+    font-size: 1.4rem;
+    padding: 2vh 2vw 2vh 2vw;
+  }
+  .bottomtasting_desktop p {
+    padding: 1vh 2vw 1vh 2vw;
+  }
+  footer {
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .email_desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  footer input[type=button] {
+    height: auto;
+    padding: 2.5vh 3vw 2.5vh 3vw;
+    border: 1px solid #91a05c;
+    margin-left: 1vw;
+  }
+  footer input[type=text] {
+    padding: 2.5vh 3vw 2.5vh 3vw;
+    margin-right: 1vw;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container::before {
+    content: "1400px";
+    color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+
+}
