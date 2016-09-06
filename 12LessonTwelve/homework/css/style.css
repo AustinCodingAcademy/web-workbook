@@ -1,6 +1,7 @@
 body {
-  max-width: 90%;
+  max-width: 93.75%;
   margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
 }
 
 section {
@@ -13,29 +14,13 @@ section h2 {
   font-size: 50px;
 }
 
-.item1 {
-
-}
-
-.item2 {
-
-}
-
-.item3 {
-
-}
-
-.item4 {
-
-}
-
 article>div>div {
   text-align: center;
 }
 
 article h4 {
-  border-left: 1px solid #bbb;
-  border-right: 1px solid #bbb;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
   margin: 0 auto;
   padding: 15px 0;
   font-size: 14px;
@@ -54,7 +39,7 @@ article h4 a:hover {
 }
 
 figure, div div>div:last-of-type {
-  border: 1px solid #bbb;
+  border: 1px solid #e5e5e5;
 }
 
 figure {
@@ -65,16 +50,66 @@ figure img {
   width: 100%;
 }
 
+figure a:hover ~  figcaption span {
+  background-color: #3a4543;
+}
+
 figcaption {
   text-align: right;
-  margin-top: -20px;
+  margin-top: -30px;
+  color: #fff;
+  font-size: 18px;
+}
+
+span {
+  background-color: rgb(102, 217, 193);
+  padding: 6px 14px;
+  transition: .5s;
+}
+
+.sale {
+  background-color: #f04933;
+  padding: 4px 10px;
+  float: left;
+  color: #fff;
+}
+
+.item3 del {
+  font-size: 14px;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  background-color: #3a4543;
+  padding: 10px 18px;
+  border-radius: 0;
+  font-weight: 700;
+  margin: 30px 0;
+  transition: .5s;
+}
+
+.btn:hover {
   background-color: rgb(102, 217, 193);
   color: #fff;
-  padding: 15px;
-  width: 10%;
 }
+
 /*.clearfix:after {
   content: "";
   display: table;
   clear: both;
 }*/
+
+
+@media (max-width: 970px) {
+  section {
+    margin-bottom: 0;
+  }
+  figure:nth-child(3) {
+    margin-top: 75px;
+  }
+  figure:last-of-type {
+    margin-top: 75px;
+  }
+}
