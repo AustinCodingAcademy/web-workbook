@@ -5,24 +5,21 @@ body{
 }
 header{
   text-align: center;
-  color: gray;
+  color: #3A4543;
   font-family: "Lily Script One", cursive;
+  margin-bottom: 50px;
 }
-.container{
+main{
   text-align: center;
-  border: 2px solid dark-grey;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-.container img{
+main img{
   height: 281px;
   width: 100%;
-}
-.row{
-  margin-left: auto;
-  margin-right: auto;
+  border: 2px solid dark-grey;
 }
 span.onsale{
   min-height: 20px;
@@ -33,12 +30,33 @@ left: 15px;
 z-index: 1000;
 padding: 4px 8px;
 background: rgb(240, 73, 51);
+font-weight: 700;
+position: absolute;
+color: #fff;
+}
+.amount{
+  text-decoration: none;
 }
 figure{
-  height: 281px;
-  width: 95%;
  position: relative;
- overflow: hidden;
+}
+figcaption{
+color: #fff;
+font-size: 18px;
+font-weight: 600;
+position: absolute;
+bottom: 0;
+right: 0;
+padding: 6px 14px;
+background-color: #66d9c1;
+}
+figcaption:hover{
+  background-color: rgb(58, 69, 67);
+  color: #fff;
+}
+figcaption del{
+  font-size: 14px;
+  padding-right: 8px;
 }
 .button{
   font-size: 14px;
@@ -46,7 +64,7 @@ figure{
   background-color: rgb(58, 69, 67);
   color: rgb(255, 255, 255);
   padding: 14px 18px;
-  line-height: 1;
+  line-height: 1.1;
   cursor: pointer;
   position: relative;
   font-family: inherit;
@@ -58,11 +76,25 @@ figure{
       color: rgb(255, 255, 255);
 }
 article{
-  margin-bottom: 60px;
   padding-bottom: 30px;
   border-width: 1px;
   border-style: solid;
   border-color: rgb(229, 229, 229);
+}
+
+article h4{
+  margin-top: 0px;
+  font-size: 14px;
+  font-weight: 700;
+  padding-top: 13px;
+  margin-bottom: 33px;
+  padding-bottom: 13px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(229, 229, 229);
+}
+article h4:hover{
+  color: rgb(102, 217, 193);
 }
 
 @media (min-width: 992px){
