@@ -16,7 +16,6 @@ body {
 }
 
 section {
-  border: 1px solid red;
   width: 96vw;
   display: flex;
 }
@@ -28,26 +27,80 @@ img {
 .desktop {
   display: none;
 }
-/**
-* HEADER
-**/
-.container {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
+
+/**
+** Navbar break fix **
+**/
+
+@media (max-width: 902px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,.navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in{
+    display:block !important;
+  }
 }
+
+/**
+** NAVBAR
+**/
+/*.container-fluid {*/
+/*background-color: transparent;*/
+/*color: white;
+}*/
+
 .navbar-default {
-  background-color: lightgray; /*fix this*/
+  background-color: transparent;
+  font-family: 'Georgia', sans-serif;
   border: none;
   max-width: 100vw;
+  height: auto;
   padding: 0;
   margin: 0;
   font-size: 1.4rem;
+  border-bottom: 1px solid white;
+  /*background-size: contain;*/
 }
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-brand, .navbar-default .navbar-toggle, .navbar-default .navbar-toggle .icon-bar {
+  color: white;
+  border-color: white;
+  /*background-color: white;*/
+  /*opacity: 1;*/
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
 .navbar {
   margin: 0;
   padding: 0;
@@ -62,9 +115,39 @@ input[type=text] {
   padding-left: 5px;
 }
 
+.shoppingcart, .search {
+  margin-left: 10px;
+  width: 35vw;
+}
+
+li {
+  margin-left: 0;
+}
+
+/**
+* HEADER
+**/
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.4);
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;
+  align-items: center;*/
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
 header {
   background-image: url("../img/wine-bg.jpg");
-  -webkit-filter: brightness(85%);
   height: 90vh;
   max-width: 100vw;
   width: 96vw;
@@ -75,7 +158,7 @@ header {
   margin-left: 0 auto;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   color: white;
   position: relative;
   font-size: 1.6rem;
@@ -119,8 +202,10 @@ header {
 /* Sprayer */
 .sprayer {
   max-width: 100vw;
-  height: 71vh;
+  width: 100%;
+  height: auto;
   overflow: hidden;
+  top: 0;
 }
 .sprayer img {
   width: 99vw;
@@ -177,6 +262,9 @@ header {
   overflow: hidden;
   text-align: center;
   line-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .production h3 {
@@ -479,13 +567,37 @@ footer input[type=button] {
     height: 80vh;
     /*fix header width at 620 and larger */
   }
-  body {
-    display: flex;
-    justify-content: center;
+  .shoppingcart, .search {
+    margin-left: 10px;
+    width: 20vw;
   }
-  header {
-    margin: -1vw;
-  }
+
+
+  /*.navbar-header {
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar-brand {
+font-size: 1.2rem;
+}
+
+.dropdown-toggle {
+display: none;
+width: 12vw;
+}*/
+/*.shoppingcart {
+  width: 15vw;
+}*/
+
+
+
+body {
+  display: flex;
+  justify-content: center;
+}
+header {
+  margin: -1vw;
+}
 }
 @media screen and (min-width: 810px) {
   .container::before {
@@ -498,12 +610,20 @@ footer input[type=button] {
     margin: 5px;
     font-size: 2em;
   }
+
+
   .desktop {
     display: flex;
   }
   .mobile {
     display: none;
   }
+
+  .shoppingcart, .search {
+    /*margin-left: 10px;*/
+    width: 150px;
+  }
+
   header {
     height: 100vh;
     width: 98vw;
@@ -533,6 +653,8 @@ footer input[type=button] {
     margin: 0;
     background-image: url('../img/wine16.jpg');
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .production {
     height: 100vh;
@@ -541,7 +663,7 @@ footer input[type=button] {
     justify-content: center;
   }
   .productiontext {
-    padding: 0vh 20vw 0vh 20vw;
+    padding: 20vh 20vw 0vh 20vw;
   }
   .desktop_wine {
     width: 98vw;
@@ -599,8 +721,8 @@ footer input[type=button] {
     text-align: center;
   }
   .medal img {
-    height: 50vh;
-    width: auto;
+    height: auto;
+    width: 30vw;
   }
   .medal p {
     font-size: 1.4rem;
@@ -608,15 +730,15 @@ footer input[type=button] {
   }
 
   /*Sixth row aka. pouring and tasting*/
-  pouring {
+  .pouring_desktop {
     height: 100vh;
     width: auto;
-    max-width: 100vw;
+    max-width: 50vw;
     width: auto;
     display: flex;
   }
-  .pouring img {
-    width: 100vw;
+  .pouring_desktop img {
+    width: 50vw;
     height: auto;
   }
   .sixth {
@@ -624,25 +746,32 @@ footer input[type=button] {
     flex-direction: row;
     width: 98vw;
     height: 100vh;
+    /*border: 1px solid red;*/
   }
-  #tasting_desktop {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+  /*.tasting_desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+
+  }*/
 
   .tasting_desktop {
-    width: 95%;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    /*border: 1px solid red;*/
   }
   .toptasting_desktop {
     display: flex;
     flex-direction: column;
+    /*margin-left: 10vw;*/
+    width: 50%;
+    /*border: 1px solid blue;*/
   }
   .tasting_desktop h1 {
     display: block;
@@ -665,6 +794,10 @@ footer input[type=button] {
     border-top: 1px solid lightgray;
     padding-bottom: 5vh;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*border: 1px solid yellow;*/
+    width: 50%;
+    /*margin-left: 10vw;*/
+    /*margin-right: 10vw;*/
   }
 
   .bottomtasting_desktop h2, .bottomtasting_desktop p {
@@ -674,17 +807,22 @@ footer input[type=button] {
   .bottomtasting_desktop p {
     padding: 1vh 2vw 1vh 2vw;
   }
+
+  .email_desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    /*border: 1px solid red;*/
+    /*justify-content: center;*/
+  }
+
   footer {
     width: 98vw;
     display: flex;
     flex-direction: column;
   }
-  .email_desktop {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
+
   footer input[type=button] {
     height: auto;
     padding: 2.5vh 3vw 2.5vh 3vw;
@@ -707,5 +845,8 @@ footer input[type=button] {
     margin: 5px;
     font-size: 2em;
   }
-
+  .shoppingcart, .search {
+    margin-left: 10px;
+    width: 10vw;
+  }
 }
