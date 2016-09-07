@@ -1,69 +1,66 @@
 html {
   font-size: 62.5%;
 }
-
 body {
   box-sizing: border-box;
   font-family: "Open Sans", "Helvetica Nue", Arial;
-  width: 100%;
 }
-
 .navbar-default {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid lightgray;
 }
-
 .navbar-default .navbar-brand {
   color: white;
+  opacity: .6;
+  padding-right: 100px;
+  border-right: 1px solid lightgray;
 }
-
 .navbar-default .navbar-toggle {
-  border: 1px solid white;
+  border: none;
+  padding: 10px 5px;
 }
-.navbar-toggle collapsed {
+.navbar-default .navbar-nav {
+  background: white;
+}
+.navbar-default .navbar-nav > li > a {
   text-decoration: none;
+  text-align: left;
+  font-size: .95rem;
+  color: black;
 }
-
 header {
   background: url("../img/wine14orchard.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/wine14orchard.jpg");
   background-position: 50% 25%;
   text-align: center;
 }
-
- header > img {
+header > img {
   display: block;
   margin: 0 auto;
   height: 140px;
   padding-bottom: 15px;
 }
-
 .navbar-brand {
   font-size: 1.75rem;
   letter-spacing: 3.5px;
 }
-
-nav ul {
-  display: none;
+#logo {
+  opacity: .6;
 }
-
 #quote1, #quote2 {
   color: #fff;
 }
-
 #quote1 {
   display: block;
   font-family: Georgia;
   font-style: italic;
   font-size: 1.25rem;
 }
-
 #quote2 {
   font-size: 1rem;
   padding-top: 25px;
 }
-
 #social {
   display: inline-block;
   margin: 0, auto;;
@@ -71,17 +68,15 @@ nav ul {
 .icons {
   padding-left: 5px;
 }
-
 #about {
   text-align: center;
   height: 300px;
   padding: 45px 20px;
   line-height: 150%;
 }
-
 #wash {
   height: 300px;
-  width: 400px;
+  width: 305px;
   background: url("../img/wine16washmobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -97,19 +92,16 @@ em {
   letter-spacing: 3px;
   padding-bottom: 10px;
 }
-
 #about h4 {
   font-family: Georgia;
   font-style: italic;
   font-size: 1.25em;
   padding-bottom: 15px;
 }
-
 #about p {
   color: #999D9E;
   font-family: serif;
 }
-
 #testimonial {
   background: url("../img/wine13grapesmobile.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/wine13grapesmobile.jpg");
@@ -119,18 +111,15 @@ em {
   padding: 20px;
   padding-top: 30px;
 }
-
 #testimonial h3 {
   font-family: Georgia;
   font-style: italic;
   color: #fff;
 }
-
 #testimonial p {
   color: #fff;
   line-height: 25px;
 }
-
 #selection {
   display:flex;
   flex-direction: column;
@@ -139,7 +128,6 @@ em {
   font-family: Georgia italic;
   font-style: italic;
   font-size: 1.25rem;
-
 }
 h4, article p {
   padding-bottom: 25px;
@@ -152,7 +140,6 @@ h4 {
   padding-left: 25px;
   padding-right: 25px;
 }
-
 .bottles{
   height: 300px;
   width: 40%;
@@ -161,7 +148,6 @@ article h4 {
   margin-top: 0;
   border-top: 1px solid lightgray;
 }
-
 .buy {
   background-color: #91a05c;
   font-family: Arial;
@@ -174,7 +160,6 @@ article h4 {
   text-decoration: none;
   color: #fff;
 }
-
 
 @media screen and (min-width: 320px) {
     header::before {
@@ -203,7 +188,6 @@ article h4 {
     padding-left: 15px;
     padding-right: 15px;
   }
-
   #wash {
     height: 475px;
     width: 100%;
@@ -212,7 +196,6 @@ article h4 {
   #about {
     height: 375px;
   }
-
   #about h4 {
     padding: 0;
     margin: 0;
@@ -239,21 +222,17 @@ article h4 {
   navbar-default {
     height: 60px;
   }
-
   #logo {
     height: 400px;
   }
-
   #about h4{
     padding-top: 10px;
     padding-bottom: 10px;
   }
-
   #testimonial {
     padding-left: 30px;
     padding-right: 30px;
   }
-
   .bottles {
     height: 600px;
   }
@@ -263,7 +242,6 @@ article h4 {
   .choices p {
     font-size: 1.5rem;
   }
-
 }
 
 @media screen and (min-width: 810px) {
@@ -279,7 +257,6 @@ article h4 {
     font-size: 1.75rem;
     padding: 30px 250px 20px;
   }
-
   #wash {
     width: 100%;
     background-repeat: no-repeat;
@@ -291,16 +268,13 @@ article h4 {
     padding-right: 150px;
     height:500px;
   }
-
   #about h4 {
     font-size: 2rem;
     line-height: 1.5;
   }
-
   #about p {
   font-size: 1.5rem;
   }
-
   #testimonial {
   height:650px;
   background: url("../img/wine13grapes.jpg");
@@ -311,7 +285,6 @@ article h4 {
   padding-left: 150px;
   padding-right: 150px;
   }
-
   #testimonial h3 {
     font-size: 2.5rem;
     line-height: 1.5;
@@ -319,18 +292,15 @@ article h4 {
   #testimonial p {
     font-size: 1.5em;
   }
-
   #selection {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
-
   .bottles {
     height: 300px;
     width: 125px;
   }
-
   .choices {
     width: 200px;
   }
@@ -341,8 +311,7 @@ article h4 {
     content: "1400px";
     color: black;
   }
-
-   #testimonial p {
+  #testimonial p {
      font-size: 2rem;
    }
    #twobox {
@@ -354,7 +323,6 @@ article h4 {
      float:right;
      width: 50%;
      height: 525px;
-
    }
    #about {
      float: left;
