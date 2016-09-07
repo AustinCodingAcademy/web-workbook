@@ -1,0 +1,146 @@
+    main {
+      margin-top: 50px;
+    }
+    .hero1 {
+      background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/185649/wine14_mobile.jpg") no-repeat center;
+      background-size: cover;
+      min-height: 30vh;
+      text-align: center;
+    }
+    .hero1 p{
+      color: white;
+    }
+    .two-columns {
+      display: flex;
+      height: 500px;
+    }
+    .two-columns > wine16{
+      margin-right: 50%;
+    }
+    .navbar-brand {
+      padding-top: 15px;
+      text-align: right;
+    }
+    .navbar-brand > img {
+      width: 40px;
+      height: 20px;
+    }
+    .navbar {
+         float: right;
+    }
+        img{
+      max-width:100%;
+      height: auto;
+    }
+    .wine3{
+      height: 15%;
+      width: 15%;
+    }
+    .wine6{
+      height: 15%;
+      width: 15%;
+    }
+    .wine7{
+      height: 15%;
+      width: 15%;
+    }
+    .section1{
+    display: flex;
+    }
+    .section2{
+    display: flex;
+    }
+    .section3{
+      display:flex;
+      height: 400px;
+      width: 400px;
+    }
+    .section4{
+      display:flex;
+    }
+    .section5{
+      height: 500px;
+    }
+    .section6{
+      height: 500px;
+    }
+    .section7{
+      height: 500px;
+    }
+    .section8{
+      height: 500px;
+    }
+    .section9{
+      height: 500px;
+    }
+    .wine3{
+      height: 300px;
+      width: 300px;
+    }
+    .wine6{
+      height: 300px;
+      width: 300px;
+    }
+    .wine7{
+      height: 300px;
+      width: 300px;
+    }
+
+    .footer{
+      background-color: black;
+    }
+    /**
+     * Media Queries
+     **/
+    @media screen and (min-width: 320px) {
+      .page::before {
+        content: "320px";
+        font-family: Arial, sans-serif;
+        color: green;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-weight: 700;
+        margin: 5px;
+        font-size: 2rem;
+        z-index: 9999;
+      }
+    }
+
+    @media screen and (min-width: 480px) {
+      .page::before {
+        content: "480px";
+        color: maroon;
+      }
+      .hero1 {
+        background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/185649/wine14_tablet.jpg") no-repeat center;
+        background-size: cover;
+        height: 50vh;
+      }
+    }
+
+    @media screen and (min-width: 620px) {
+      .page::before {
+        content: "620px";
+        color: orange;
+      }
+    }
+
+    @media screen and (min-width: 810px) {
+      .page::before {
+        content: "810px";
+        color: black;
+      }
+      .hero1 {
+        background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/185649/wine14.jpg") no-repeat center;
+        background-size: cover;
+        min-height: 100vh;
+      }
+    }
+
+    @media screen and (min-width: 1400px) {
+      .page::before {
+        content: "1400px";
+        color: white;
+      }
+    }
