@@ -1,0 +1,154 @@
+.overlay{
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, .4);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.container2{
+  display: flex;
+  flex-direction: column;
+}
+.home{
+  background-image: url("../img/wine-bg.jpg");
+  height: 300px;
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  margin: 5px;
+}
+.pic1paragraph{
+  font-size: 1rem;
+}
+.left{
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  justify-content: center;
+}
+.right{
+  width: 100%;
+  height: 300px;
+  background-image: url("../img/wine16.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.test{
+  width: 100%;
+  height: 250px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  background-image: url("../img/wine13.jpg");
+  margin: 5px auto;
+}
+.pic3pg2{
+  font-size: 8px;
+}
+.one, .two, .three{
+  margin: 5px auto;
+  text-align: center;
+  justify-content: center;
+}
+.wine1{
+  width: 100%;
+  height: 300px;
+  background-image: url("../img/wine3.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: black;
+  text-align: center;
+  background-position: top;
+}
+.wine2{
+  width: 100%;
+  height: 300px;
+  background-image: url("../img/wine6.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-position: top;
+}
+.wine3{
+  width: 100%;
+  height: 300px;
+  background-image: url("../img/wine7.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-position: top;
+}
+.contact{
+  background-color: #6aaf6a;
+}
+
+@media screen and (min-width: 320px) {
+  .page::before {
+    content: "320px";
+    font-family: Arial, sans-serif;
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2rem;
+    z-index: 9999;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .page::before {
+    content: "480px";
+    color: maroon;
+  }
+  .blue{
+    display: flex;
+    flex-direction: row;
+  }
+  .left{
+    width: 49%;
+  }
+  .right{
+    width: 49%;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .page::before {
+    content: "620px";
+    color: orange;
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .page::before {
+    content: "810px";
+    color: black;
+  }
+  .apple{
+    display: flex;
+    flex-direction: row;
+  }
+  .one{
+    width: 30%;
+  }
+  .two{
+    width: 30%;
+  }
+  .three{
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .page::before {
+    content: "1400px";
+    color: red;
+  }
+}
