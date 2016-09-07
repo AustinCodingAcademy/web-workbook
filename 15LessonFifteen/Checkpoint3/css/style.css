@@ -1,0 +1,360 @@
+
+
+header{
+
+  background: linear-gradient(rgba(0,0,0,0.7) 0, rgba(0,0,0,0.7) 100%), url("https://kiravillarreal.github.io/intro-workbook/15LessonFifteen/Checkpoint3/img/wine-bg.jpg");
+  /*background-image: url("https://kiravillarreal.github.io/intro-workbook/15LessonFifteen/Checkpoint3/img/wine-bg.jpg");*/
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: open sans;
+  margin-top: 10px;
+}
+
+header img{
+  margin-bottom:30px;
+  max-width:250px;
+
+}
+header p{
+  color:white;
+  text-align:center;
+
+}
+
+
+header p:nth-child(2){
+  font-style: italic;
+  font-size:1.4em;
+}
+
+
+
+#firstsec{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#firstsec img{
+  min-width:50%;
+  order: -1;
+}
+
+#firstsec p{
+  font-family:Georgia;
+}
+
+article p:nth-child(2){
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+
+article p{
+  margin-top:15px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+#secondsec{
+  background: linear-gradient(rgba(0,0,0,0.7) 0, rgba(0,0,0,0.7) 100%), url("https://kiravillarreal.github.io/intro-workbook/15LessonFifteen/Checkpoint3/img/wine13.jpg");
+  /*background-image: url("../img/wine13.jpg");*/
+  height:600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+
+#secondsec p{
+  color:white;
+  margin-bottom:30px;
+  font-family:Georgia;
+  text-align:center;
+  padding-left:5%;
+  padding-right:5%;
+
+}
+
+#secondsec p:first-child{
+  font-size: 1.5em;
+  font-style: italic;
+
+}
+
+#secondsec p:nth-child(2){
+  font-size: 1em;
+}
+
+#thirdsec{
+  display: flex;
+  /*justify-content: space-around;*/
+  flex-direction:column;
+}
+
+div p:nth-child(2){
+  /*font-size: 1.5em;*/
+  /*font-weight: bold;*/
+  /*font-style: italic;*/
+}
+
+div p:nth-child(3){
+  font-family: open sans;
+  /*font-size: .8em;*/
+  margin-bottom: 10px;
+}
+
+#thirdsec div{
+  margin-left:70px;
+  margin-right: 70px;
+  text-align: center;
+}
+
+#thirdsec a{
+  text-decoration: none;
+  background-color: olive;
+  color:white;
+  padding:5px 8px;
+  font-size: .7em;
+}
+
+#thirdsec p{
+  font-family:Georgia;
+  font-style:italic;
+}
+
+
+.wine{
+  width:100px;
+  margin-top:50px;
+}
+
+.grrr{
+  font-size:1.7em;
+}
+
+#shiraz img{
+  margin-top:0;
+}
+
+#awards{
+  background-image:url("https://kiravillarreal.github.io/intro-workbook/15LessonFifteen/Checkpoint3/img/wine12.jpg")
+}
+
+#awards h2{
+  color:white;
+  text-align:center;
+  padding-top:40px;
+  font-family:Georgia;
+  font-style:italic;
+  font-size:2em;
+}
+#medalbox{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+
+.medals img {
+  height:200px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+#medalbox .medals:first-child > img{
+  margin-left:15px;
+}
+
+
+.medals p{
+  color:white;
+  text-align:center;
+  font-family:georgia;
+}
+
+#tastings{
+  display:flex;
+  flex-direction:column;
+}
+
+#tastings img{
+  height:350px;
+}
+
+.joinus h2, .joinus p, .joinus address{
+  font-family:Georgia;
+  padding-left:15px;
+}
+
+.joinus h2{
+  font-style:italic;
+  font-size:1.5em;
+}
+
+footer{
+  background-color:#666;
+}
+
+footer h1, footer p, footer div{
+  color:white;
+  font-family:Georgia;
+  text-align:center;
+}
+
+footer h1{
+  font-style:italic;
+  font-size:2em;
+  padding: 15% 5%;
+}
+
+footer p{
+  font-size:1.2em;
+
+}
+
+.email{
+  display:flex;
+  flex-direction:column;
+}
+
+.email div{
+  margin-left:5%;
+  margin-right:5%;
+  padding:10px;
+
+}
+
+.email div:nth-child(2){
+  background-color:green;
+  margin-bottom:150px;
+}
+
+.email div:first-child{
+  border: 1px solid white;
+}
+
+
+
+/*media queries*/
+
+@media screen and (min-width: 320px) {
+  .page::before {
+    content: "320px";
+    color: green;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 480px) {
+  .page::before {
+    content: "480px";
+    color: maroon;
+  }
+  #tastings img{
+    width:60%;
+    height:60%
+
+  }
+
+
+
+  #tastings{
+    align-items:center;
+  }
+
+  footer h1{
+    margin:0;
+    padding:3%;
+  }
+}
+
+
+@media screen and (min-width: 620px) {
+  .page::before {
+    content: "620px";
+    color: orange;
+  }
+
+  #thirdsec{
+    flex-direction:row;
+    justify-content:space-around;
+  }
+
+  #shiraz img{
+    margin-top:50px;
+  }
+
+  #medalbox{
+    flex-direction:row;
+    justify-content:space-around;
+  }
+
+  #firstsec img{
+    width:100%;
+  }
+
+  .email{
+    flex-direction:row;
+  }
+  .email div{
+    width:50%;
+    height:45px;
+    margin:5px;
+  }
+
+}
+
+@media screen and (min-width: 810px) {
+  .page::before {
+    content: "810px";
+    color: black;
+  }
+  #firstsec{
+    flex-direction:row;
+  }
+  #firstsec img{
+    order:0;
+    max-width:50%;
+    height:800px;
+  }
+
+  #secondsec p:first-child{
+    font-size:2em;
+  }
+
+  #secondsec p:nth-child(2){
+    font-size:1.2em;
+  }
+
+  #tastings{
+    flex-direction:row;
+  }
+
+  #tastings img{
+    max-width:50%;
+    height:800px;
+  }
+
+  .wine{
+    min-width:10vw
+  }
+
+ }
+
+@media screen and (min-width: 1400px) {
+   .page::before
+  {
+    content: "1400px";
+    color: black;
+  }
+}
