@@ -5,6 +5,10 @@ body {
   box-sizing: border-box;
   font-family: "Open Sans", "Helvetica Nue", Arial;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 .navbar-default {
   background-color: transparent;
   border: none;
@@ -34,11 +38,12 @@ header {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/wine14orchard.jpg");
   background-position: 50% 25%;
   text-align: center;
+  height: 400px;
 }
 header > img {
   display: block;
   margin: 0 auto;
-  height: 140px;
+  height: 170px;
   padding-bottom: 15px;
 }
 .navbar-brand {
@@ -46,7 +51,7 @@ header > img {
   letter-spacing: 3.5px;
 }
 #logo {
-  opacity: .6;
+  opacity: .8;
 }
 #quote1, #quote2 {
   color: #fff;
@@ -61,12 +66,8 @@ header > img {
   font-size: 1rem;
   padding-top: 25px;
 }
-#social {
-  display: inline-block;
-  margin: 0, auto;;
-}
 .icons {
-  padding-left: 5px;
+  height:20px;
 }
 #about {
   text-align: center;
@@ -79,28 +80,31 @@ header > img {
   width: 305px;
   background: url("../img/wine16washmobile.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: 50%;
 }
 #about {
-  height: 475px;
+  height: 450px;
 }
 em {
   font-family: Georgia;
   color: #999D9E;
   font-size: 1.3rem;
   letter-spacing: 3px;
-  padding-bottom: 10px;
 }
 #about h4 {
   font-family: Georgia;
   font-style: italic;
   font-size: 1.25em;
-  padding-bottom: 15px;
+  font-weight: 300;
+  color: #292929;
+  line-height: 1.5;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 #about p {
   color: #999D9E;
-  font-family: serif;
+  font-family: Georgia;
+  color: #666;
 }
 #testimonial {
   background: url("../img/wine13grapesmobile.jpg");
@@ -117,6 +121,7 @@ em {
   color: #fff;
 }
 #testimonial p {
+  font-family: Georgia;
   color: #fff;
   line-height: 25px;
 }
@@ -127,9 +132,9 @@ em {
   text-align: center;
   font-family: Georgia italic;
   font-style: italic;
-  font-size: 1.25rem;
 }
 h4, article p {
+  font-size: 1.5rem;
   padding-bottom: 25px;
 }
 h4 {
@@ -150,15 +155,15 @@ article h4 {
 }
 .buy {
   background-color: #91a05c;
-  font-family: Arial;
+  font-family: "Raleway", "Helvetica Neue", Arial, sans-serif;
   letter-spacing: 1.5px;
   font-size: .95rem;
   color: #fff;
   padding: 15px 30px;
 }
-.buy:hover {
+a:hover {
   text-decoration: none;
-  color: #fff;
+  color: red;
 }
 
 @media screen and (min-width: 320px) {
@@ -201,7 +206,9 @@ article h4 {
     margin: 0;
   }
   #testimonial {
-    padding-top: 40px;
+    height: 400px;
+    padding-top: 70px;
+
   }
   .bottles {
     height: 400px;
@@ -225,6 +232,12 @@ article h4 {
   #logo {
     height: 400px;
   }
+  #wash {
+    background: url("../img/wine16wash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
   #about h4{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -237,7 +250,7 @@ article h4 {
     height: 600px;
   }
   .choices h4 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .choices p {
     font-size: 1.5rem;
@@ -253,14 +266,12 @@ article h4 {
     height: 800px;
   }
   #quote1 {
-    display: block;
     font-size: 1.75rem;
-    padding: 30px 250px 20px;
+    padding: 30px 200px 20px;
+    opacity: .8;
   }
   #wash {
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
   }
   #about {
     line-height: 1.5;
