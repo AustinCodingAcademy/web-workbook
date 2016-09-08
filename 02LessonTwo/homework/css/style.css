@@ -20,14 +20,71 @@ section, article, header, footer, nav, aside {
 
 }
 
-nav {
+
+.navbar {
+  margin-bottom: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: #797270;
+  color: #fff;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    color: gray;
+    background-color: orange;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+    color: orange;
+    background-color: teal;
+}
+
+.dropdown-menu {
+  background-color: orange;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    color: orange;
+    text-decoration: none;
+    background-color: teal;
+}
+
+.nav img {
+  height: 30px;
+  margin-top: 10px;
+}
+
+.navbar-right li a {
+  display: inline;
+}
+
+@media (max-width: 768) {
+  .navbar-right li a {
+    display: inline-block;
+
+  }
+  .navbar-right li {
+    padding: 10px 15px;
+  }
+}
+
+/*nav {
   background-color: #797270;
   font-size: 20px;
   height: 60px;
   padding-top: 18px;
   position: fixed;
   width: 100%;
-}
+}*/
 
 /* nav always becomes hidden below other elements after scrolling past jumbotron */
 

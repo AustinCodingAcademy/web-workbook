@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Lesson 2 Homework</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <nav>
-      <!-- ask about Nav semantics and how it actually effects your content -->
+    <!-- <nav>
+
       <div class="row">
         <div class="col-md-12">
 
@@ -20,181 +26,234 @@
         </div>
       </div>
 
-  </nav>
-  <div class="jumbotron">
-    <div>
-      <h1 id="name">James Puckett</h1>
-      <h2>701 Brazos St.</h2>
-    </div>
-  </div>
-  <div class="bio">
-    <div class="container">
-      <div class="row">
-        <a name="bio"></a>
-        <div class="col-md-6">
-          <h3>Bio</h3>
-          <p>I was born in Port Aransas and raised in Corpus Christi. I bartended for 5 years at various bars and restraunts before I moved to San Marcos to go to school. I worked in mental health with a group of boys between the ages of 13-17. I enjoyed helping others and decided to change my career path from Sociology to EMS. I took a course and worked in a transfer service before moving to ATCEMS 3 years ago. Now that I have a settled in to my career I am looking to launch a second career, because I work a 24/72 schedule which gives me three days off after every day I work. I am taking coding classes through Austin Coding Academy in hopes to develop the skill set to jump into the world of free lance front end web developmentwith my girlfriend of 8 years who works full time as a graphic designer who work primarily in web. </p>
+  </nav> -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand" href="#">James Puckett</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#bio">Bio <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#bio">Bio</a></li>
+                            <li><a href="#bio">Bio</a></li>
+                            <li><a href="#bio">Bio</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#table">Table</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#tv">TV Shows</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right hidden-xs">
+                    <li>
+                        <a href="#"><img src="https://pickit.com/static/img/facebook-icon.svg" alt="Facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="http://my-waterfront.ca/wp/wp-content/themes/my-waterfront/img/instagram-icon-white.svg" alt="Instagram"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="http://www.macdrifter.com/theme/images/twitter-snow.svg" alt="Twitter"></a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right hidden-sm hidden-md hidden-lg hidden-xl">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="col-md-6">
-          <video width="320" height="240" autoplay loop>
+    </nav>
+    <div class="jumbotron">
+        <div>
+            <h1 id="name">James Puckett</h1>
+            <h2>701 Brazos St.</h2>
+        </div>
+    </div>
+    <div class="bio">
+        <div class="container">
+            <div class="row">
+                <a name="bio"></a>
+                <div class="col-md-6">
+                    <h3>Bio</h3>
+                    <p>I was born in Port Aransas and raised in Corpus Christi. I bartended for 5 years at various bars and restraunts before I moved to San Marcos to go to school. I worked in mental health with a group of boys between the ages of 13-17.
+                        I enjoyed helping others and decided to change my career path from Sociology to EMS. I took a course and worked in a transfer service before moving to ATCEMS 3 years ago. Now that I have a settled in to my career I am looking to
+                        launch a second career, because I work a 24/72 schedule which gives me three days off after every day I work. I am taking coding classes through Austin Coding Academy in hopes to develop the skill set to jump into the world of
+                        free lance front end web developmentwith my girlfriend of 8 years who works full time as a graphic designer who work primarily in web. </p>
+                </div>
+                <div class="col-md-6">
+                    <video width="320" height="240" autoplay loop>
             <source src="https://i.imgur.com/wFovN4O.mp4" type="video/mp4">
           </video>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <section class="hobbies">
-    <div class="container">
-      <div class="row">
-        <a name="hobbies"></a>
-        <div class="col-md-6">
-          <!-- couldn't figure out how to put a youtube video in without using iframe. was trying to do it with video or embed, but didn't have any luck -->
-          <video width="320" height="240" controls="no">
+    <section class="hobbies">
+        <div class="container">
+            <div class="row">
+                <a name="hobbies"></a>
+                <div class="col-md-6">
+                    <!-- couldn't figure out how to put a youtube video in without using iframe. was trying to do it with video or embed, but didn't have any luck -->
+                    <video width="320" height="240" controls="no">
             <source src="https://youtu.be/nneu8OC-0zM" type="video/mp4">
           </video>
-          <details>couldn't figure out how to put a youtube video in without using iframe. was trying to do it with video or embed, but didn't have any luck</details>
+                    <details>couldn't figure out how to put a youtube video in without using iframe. was trying to do it with video or embed, but didn't have any luck</details>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <h3>Hobbies</h3>
+                        <ul class="square">
+                            <li>Swimming</li>
+                            <li>Coffee</li>
+                            <li>Biking</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-6">
-          <div>
-            <h3>Hobbies</h3>
-            <ul class="square">
-              <li>Swimming</li>
-              <li>Coffee</li>
-              <li>Biking</li>
-            </ul>
-          </div>
+    </section>
+    <section class="table">
+        <div class="container">
+            <div class="row">
+                <a name="table"></a>
+                <div class="col-md-6">
+                    <h3>Table <em><strong>Practice</strong></em></h3>
+                    <table width="100%">
+
+                        <tr>
+
+                            <th></th>
+
+                            <th>Morning</th>
+
+                            <th>Afternoon</th>
+                            <th>Night</th>
+                        </tr>
+                        <tr>
+                            <th>Walk Dog's</th>
+                            <td>&#10003;</td>
+                            <td>&#10008;</td>
+                            <td>&#10003;</td>
+                        </tr>
+                        <tr>
+                            <th>Work Out</th>
+                            <td>&#10003;</td>
+                            <td>&#10008;</td>
+                            <td>&#10008;</td>
+                        </tr>
+                        <tr>
+                            <th>Meal Prep</th>
+                            <td>&#10008;</td>
+                            <td>&#10008;</td>
+                            <td>&#10003;</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <img src="http://ct.fra.bz/ol/fz/sw/i52/5/5/6/frabz-One-does-not-simply-use-tables-for-html-layout-nowadays-2a7659.jpg" alt="table" />
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="table">
-    <div class="container">
-      <div class="row">
-        <a name="table"></a>
-        <div class="col-md-6">
-          <h3>Table <em><strong>Practice</strong></em></h3>
-          <table width="100%">
-          <tr>
-            <th></th>
-            <th>Morning</th>
-            <th>Afternoon</th>
-            <th>Night</th>
-          </tr>
-          <tr>
-            <th>Walk Dog's</th>
-            <td>&#10003;</td>
-            <td>&#10008;</td>
-            <td>&#10003;</td>
-          </tr>
-          <tr>
-            <th>Work Out</th>
-            <td>&#10003;</td>
-            <td>&#10008;</td>
-            <td>&#10008;</td>
-          </tr>
-          <tr>
-            <th>Meal Prep</th>
-            <td>&#10008;</td>
-            <td>&#10008;</td>
-            <td>&#10003;</td>
-          </tr>
-          </table>
-        </div>
-        <div class="col-md-6">
-          <img src="http://ct.fra.bz/ol/fz/sw/i52/5/5/6/frabz-One-does-not-simply-use-tables-for-html-layout-nowadays-2a7659.jpg" alt="table"/>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="resources">
-    <div class="container">
-      <div class="row">
-        <a name="resources"></a>
-        <div class="col-md-6">
-          <iframe src="http://www.w3schools.com/" height="200" width="300">
+    </section>
+    <section class="resources">
+        <div class="container">
+            <div class="row">
+                <a name="resources"></a>
+                <div class="col-md-6">
+                    <iframe src="http://www.w3schools.com/" height="200" width="300">
 
           </iframe>
+                </div>
+                <div class="col-md-6">
+                    <div class="pull-right">
+                        <h3>Favorite Resources</h3>
+                        <ol type="I">
+                            <li>http://stackoverflow.com/</li>
+                            <li>http://www.w3schools.com/</li>
+                            <li>https://www.codecademy.com/</li>
+                            <li>https://coolors.co/</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-6">
-          <div class="pull-right">
-            <h3>Favorite Resources</h3>
-            <ol type="I">
-              <li>http://stackoverflow.com/</li>
-              <li>http://www.w3schools.com/</li>
-              <li>https://www.codecademy.com/</li>
-              <li>https://coolors.co/</li>
-            </ol>
-          </div>
+    </section>
+    <section class="tv">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a name="tv"></a>
+                    <h3>Tv Shows</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <figure>
+                        <img src="https://i.jeded.com/i/rick-and-morty-first-season.16200.jpg" alt="Rick and Morty" />
+                        <figcaption>Rick and Morty</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure>
+                        <img src="https://upload.wikimedia.org/wikipedia/en/2/2d/The_Wire_-_Season_1.jpg" alt="The Wire" />
+                        <figcaption>The Wire</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure>
+                        <img src="http://vignette2.wikia.nocookie.net/breakingbad/images/c/cd/Season_1_poster.jpg/revision/latest?cb=20120617205325" alt="Breaking Bad" />
+                        <figcaption>Breaking Bad</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <figure>
+                        <img src="http://vignette1.wikia.nocookie.net/gameofthrones/images/e/e9/Got-eddard-poster.jpg/revision/latest/scale-to-width-down/2000?cb=20141112003735" alt="Game of Thrones" />
+                        <figcaption>Game of Thrones</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure>
+                        <img src="https://i.jeded.com/i/through-the-wormhole-second-season.21584.jpg" alt="Through the Wormhole" />
+                        <figcaption>Through the Wormhole</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4">
+                    <figure>
+                        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQb589nmW6-AdKUOrNdfsvc8ljy74iJ2oq87kmqWPVHMi_JD-oD" alt="Green Bay Packers" />
+                        <figcaption>Football</figcaption>
+                    </figure>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="tv">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <a name="tv"></a>
-          <h3>Tv Shows</h3>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <p>701 Brazos St.</p>
+                    <br>
+                    <a href="tel:+1-361-695-1212">(361)695-1212 </a>&nbsp;|&nbsp;<a href="mailto:jamesjaypuckett@gmail.com">JamesJayPuckett@gmail.com</a>
+                </div>
+                <div class="col-md-7">
+                    <p id="copyright" class="pull-right">&copy Austin Coding Academy 2016</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <figure>
-            <img src="https://i.jeded.com/i/rick-and-morty-first-season.16200.jpg" alt="Rick and Morty" />
-            <figcaption>Rick and Morty</figcaption>
-          </figure>
-        </div>
-        <div class="col-md-4">
-          <figure>
-            <img src="https://upload.wikimedia.org/wikipedia/en/2/2d/The_Wire_-_Season_1.jpg" alt="The Wire" />
-            <figcaption>The Wire</figcaption>
-          </figure>
-        </div>
-        <div class="col-md-4">
-          <figure>
-            <img src="http://vignette2.wikia.nocookie.net/breakingbad/images/c/cd/Season_1_poster.jpg/revision/latest?cb=20120617205325" alt="Breaking Bad" />
-            <figcaption>Breaking Bad</figcaption>
-          </figure>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <figure>
-            <img src="http://vignette1.wikia.nocookie.net/gameofthrones/images/e/e9/Got-eddard-poster.jpg/revision/latest/scale-to-width-down/2000?cb=20141112003735" alt="Game of Thrones" />
-            <figcaption>Game of Thrones</figcaption>
-          </figure>
-        </div>
-        <div class="col-md-4">
-          <figure>
-            <img src="https://i.jeded.com/i/through-the-wormhole-second-season.21584.jpg" alt="Through the Wormhole" />
-            <figcaption>Through the Wormhole</figcaption>
-          </figure>
-        </div>
-        <div class="col-md-4">
-          <figure>
-            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQb589nmW6-AdKUOrNdfsvc8ljy74iJ2oq87kmqWPVHMi_JD-oD" alt="Green Bay Packers" />
-            <figcaption>Football</figcaption>
-          </figure>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5">
-          <p>701 Brazos St.</p>
-          <br>
-          <a href="tel:+1-361-695-1212">(361)695-1212 </a>&nbsp;|&nbsp;<a href="mailto:jamesjaypuckett@gmail.com">JamesJayPuckett@gmail.com</a>
-        </div>
-        <div class="col-md-7">
-          <p id="copyright" class="pull-right">&copy Austin Coding Academy 2016</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
 
 
 </body>
+
 </html>
