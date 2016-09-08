@@ -50,7 +50,15 @@ figure img {
   width: 100%;
 }
 
-figure a:hover ~  figcaption span {
+figure a {
+  z-index: -1;
+}
+
+article a:hover ~  figcaption span {
+  background-color: #3a4543;
+}
+
+figcaption span:hover {
   background-color: #3a4543;
 }
 
@@ -70,8 +78,14 @@ span {
 .sale {
   background-color: #f04933;
   padding: 4px 10px;
-  float: left;
+  /*float: left;*/
   color: #fff;
+  /*width: 25%;*/
+  /*margin-top: -268px;*/
+  /*z-index: 9001;*/
+  position: absolute;
+  top: 0;
+  left: 15px;
 }
 
 .item3 del {
@@ -111,5 +125,9 @@ span {
   }
   figure:last-of-type {
     margin-top: 75px;
+  }
+  .sale {
+    top: 76px;
+    font-size: 16px;
   }
 }
