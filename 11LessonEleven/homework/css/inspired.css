@@ -1,54 +1,106 @@
-.header {
- background-color: #2bcdc0 ;
- height: 352px;
- width: 90%;
+section {
+    margin: 0 auto;
 }
-.header h1 {
- padding-top: 50px;
- text-align: center;
- color: white;
- text-size: 50px;
+
+
+/*//// hero ////*/
+
+.hero {
+    margin-top: 5%;
 }
-.clearfix:after {
-   visibility: hidden;
-   display: block;
-   font-size: 0;
-   content: "";
-   clear: both;
-   height: 0;
+
+.hero_image {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: cover;
+    height: 500px;
 }
-main {
-  width: 90%;
+
+.hero h1 {
+    font-size: 60px;
+    color: white;
+    padding: 8% 15% 2%;
+    font-weight: bold;
 }
-.boxes {
- float: left;
- text-align: center;
- color: white;
- background-color: black;
- width: 30%;
- height: 368px;
+
+.hero p {
+    width: 25%;
+    color: white;
+    padding-left: 15%;
 }
-.left .center .right {
-  margin: 0 auto;
+
+
+/*//// split section ////*/
+
+.split {
+    height: 170px;
+    width: 75%;
+    background-color: #F7F7F7;
+    float: left;
+    margin-left: 11.4%;
+    color: #4C4139;
 }
-.left {
-  background-color: #33a8dd;
-  height: 30px;
-  width: 50%;
-  margin: 0 auto;
+
+.box {
+    width: 40%;
+    float: left;
+    margin: 2.5% 5% 0% 0%;
 }
-.center {
-  background-color: #f46731;
-  height: 30px;
-  width: 50%;
-  margin: 0 auto;
+
+.box h3 {
+    font-size: 22px;
+    padding-bottom: 2%;
+    font-weight: bold;
 }
-.right {
-  background-color: #2bcdc0;
-  height: 30px;
-  width: 50%;
-  margin: 0 auto;
+
+.box p {
+    font-size: 15px;
 }
-.p {
-  padding:  0% 5% 0%;
+
+.one {
+    margin-left: 5%;
 }
+
+
+/*//////// This is for phones //////////*/
+
+@media (max-width: 768px) {
+    .hero {
+        margin-top: 0%;
+    }
+    .hero_image {
+        background-image: url("../img/bg2.jpg");
+        height: 300px;
+    }
+    .hero h1 {
+        font-size: 35px;
+    }
+    .hero p {
+        width: 50%;
+    }
+    .split {
+        float: none;
+        width: 100%;
+        height: 300px;
+        margin: 0%;
+    }
+    .box {
+        width: 90%;
+        float: none;
+    }
+    .box h3 {
+        font-size: 19px;
+        padding-top: 8%;
+        padding-left: 10%;
+        padding-bottom: 3%;
+    }
+    .box p {
+        font-size: 14px;
+        padding-left: 10%;
+    }
+    .one {
+        margin: 0%;
+    }
+}
+
