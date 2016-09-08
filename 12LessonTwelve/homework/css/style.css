@@ -64,9 +64,26 @@ a {
   margin: 25px 0 0 100px;
 }
 
+a:hover {
+  background-color: #66d9c1;
+  color: #fff;
+  text-decoration: none;
+}
+
+article:hover figcaption {
+  background-color: #3a4543;
+  transition: all 500ms;
+}
+
 img {
   width: 318px;
   height: 380px;
+  vertical-align: middle;
+}
+
+article:hover img {
+  transform: scale(1.05);
+  transition: all 500ms;
 }
 
 figcaption {
@@ -82,8 +99,13 @@ figcaption {
   text-align: center;
 }
 
+ins {
+  text-decoration: none;
+}
+
 figure {
   width: 320px;
+  overflow: hidden;
 }
 
 .sale {
