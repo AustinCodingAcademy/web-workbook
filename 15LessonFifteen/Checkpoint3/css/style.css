@@ -14,44 +14,45 @@ img {
   border: none;
   border-bottom: 1px solid lightgray;
 }
-.navbar-default .navbar-brand {
-  color: white;
-  opacity: .6;
-  padding-right: 100px;
-  border-right: 1px solid lightgray;
+.navbar-header button {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background: none;
 }
 .navbar-default .navbar-toggle {
   border: none;
-  padding: 10px 5px;
 }
-.navbar-default .navbar-nav {
-  background: white;
+.navbar-collapse {
+  border: none;
+  background-color: white;
 }
 .navbar-default .navbar-nav > li > a {
   text-decoration: none;
   text-align: left;
   font-size: .95rem;
   color: black;
+  line-height: 15px;
 }
 header {
   background: url("../img/wine14orchard.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/wine14orchard.jpg");
   background-position: 50% 25%;
   text-align: center;
-  height: 400px;
-}
-header > img {
-  display: block;
-  margin: 0 auto;
-  height: 170px;
-  padding-bottom: 15px;
-}
-.navbar-brand {
-  font-size: 1.75rem;
-  letter-spacing: 3.5px;
+  height: 440px;
 }
 #logo {
   opacity: .8;
+  margin: 0, auto;
+  height: 250px;
+  padding-top: 100px;
+  padding-bottom: 15px;
+}
+.navbar-default .navbar-brand {
+  color: white;
+  font-size: 1.75rem;
+  letter-spacing: 3.5px;
 }
 #quote1, #quote2 {
   color: #fff;
@@ -265,6 +266,25 @@ a:hover {
   header {
     height: 800px;
   }
+  .navbar-collapse {
+    background: transparent;
+  }
+  .nav navbar-nav {
+    padding-left: 15px;
+  }
+  .navbar-default .navbar-brand {
+    color: white;
+    padding-left: 15px;
+    font-size: 2.5rem;
+    letter-spacing: 3.5px;
+  }
+  .navbar-default .navbar-nav > li > a {
+    padding-left: 0px;
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+  }
   #quote1 {
     font-size: 1.75rem;
     padding: 30px 200px 20px;
@@ -322,8 +342,14 @@ a:hover {
     content: "1400px";
     color: black;
   }
+  header {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   #testimonial p {
      font-size: 2rem;
+     padding: 80px 150px;
+     line-height: 50px;
    }
    #twobox {
      display:float;
@@ -339,3 +365,7 @@ a:hover {
      float: left;
      width: 50%;
    }
+   #selection {
+     justify-content: space-around;
+   }
+ }
