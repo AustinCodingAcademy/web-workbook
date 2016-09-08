@@ -10,26 +10,25 @@ below for header
 
 #headbar {
   background-color: #000;
-  color: white;
-  height: 85px;
+  height: 70px;
+  position: fixed;
+  width: 100%;
 }
 
-#headbar h1 {
+#headbar .sch {
   float: left;
-  padding: 20px 0px 0px 10px;
-  font-size: 36px;
-}
-
-.navlinks {
-  float: right;
-  padding: 25px 20px 0px 30px;
-}
-
-.navlinks a {
+  padding: 13px 0px 0px 20px;
   color: white;
   text-decoration: none;
-  font-size: 24px;
-  padding-right: 20px;
+  font-size: 34px;
+}
+
+#headbar .email {
+  float: right;
+  color: white;
+  text-decoration: none;
+  font-size: 34px;
+  padding: 13px 20px 0px 10px;
 }
 
 .clearfix:after {
@@ -49,8 +48,9 @@ below for section "home"
   background-size: cover;
   background-blend-mode: multiply;
   background-color: grey;
-  height: 600px;
+  height: 620px;
   width: 100%;
+  padding-top: 85px;
 }
 
 #home h1 {
@@ -68,7 +68,7 @@ below for section "about"
 
 #about {
   background-color: #ffffff;
-  height: 720px;
+  height: 790px;
   width: 100%;
 }
 
@@ -78,11 +78,16 @@ below for section "about"
 
 .home-top h3 {
   font-size: 48px;
-  padding: 30px 0px 10px 0px;
+  padding-top: 30px;
 }
 
 .home-top p {
   font-size: 24px;
+}
+
+.home-top h4 {
+  font-size: 28px;
+  padding-top: 30px;
 }
 
 .home-bottom {
@@ -101,19 +106,22 @@ below for section "about"
   opacity: 0.2;
 }
 
-.jobs h3 {
+.jobs a {
   font-size: 40px;
   text-align: center;
   width: 25%;
   padding: 140px 0px 50px 27px;
   position: absolute;
+  z-index: 10;
+  color: #000;
+  text-decoration: none;
 }
 
-.one h3 {
+.one a {
   padding-top: 122px;
 }
 
-.five h3 {
+.five a {
   padding-top: 100px;
 }
 
@@ -121,21 +129,12 @@ below for section "about"
 below for section "form"
 */
 
-.form-top h3 {
-  font-size: 28px;
-  text-align: center;
-  padding-bottom: 50px;
-}
-
 .form-bottom {
-  text-align: center;
+  margin: 0 auto;
   padding-bottom: 50px;
-}
-
-#forms #terms {
-  background-image: url(/sayagata-400px.png);
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 1520px;
+  width: 650px;
+  overflow: hidden;
 }
 
 /*
@@ -145,7 +144,7 @@ below for footer
 footer {
   background-color: #000;
   width: 100%;
-  height: 200px;
+  height: 150px;
 }
 
 .top {
@@ -159,13 +158,15 @@ footer {
 }
 
 .terms-contact {
-  text-align: center;
-  padding-top: 50px;
+  padding: 54px 20px;
 }
 
 .terms-contact a {
   color: #ffffff;
   text-decoration: none;
   font-size: 36px;
-  padding-right: 30px;
+}
+
+.terms {
+  padding-right: 899px;
 }
