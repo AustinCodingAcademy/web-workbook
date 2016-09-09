@@ -1,115 +1,131 @@
 header {
-  background: #33a8dd;
-  height: 300px;
-  text-align: left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
+    background: #33a8dd;
+    height: 300px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
+
 .welcome {
-  font-size: 3em;
-  margin-left: 15%;
-  margin-right: 15%;
-  line-height: 1em;
+    font-size: 3em;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 1em;
 }
+
 b {
-  font-weight: 700;
+    font-weight: 700;
 }
+
 section {
-  background: #F7F5F6;
-  text-align: center;
+    background: #F7F5F6;
+    text-align: center;
 }
+
 article {
-  height: 200px;
-  padding-top: 8%;
+    height: 200px;
+    padding-top: 8%;
 }
+
 article div {
-  margin-left: 30%;
-  margin-right: 30%;
+    margin-left: 30%;
+    margin-right: 30%;
 }
+
 article div h2 {
-  font-size: 1.5em;
-  margin: 10px 0;
+    font-size: 1.5em;
+    margin: 10px 0;
 }
+
 article div p {
-  font-family: sans-serif;
-  font-size: 0.75em;
+    font-family: sans-serif;
+    font-size: 0.75em;
 }
+
 .title_1 div {
     border-top: 20px solid #33A8DD;
 }
+
 .title_2 div {
     border-top: 20px solid #F46731;
 }
+
 .title_3 div {
     border-top: 20px solid #2BCDC0;
 }
+
+
 /**
  * Media Queries
  **/
-@media screen and (min-width: 320px) {
-  .container::before {
-    content: "320px";
-    color: green;
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-weight: 700;
-    margin: 5px;
-    font-size: 2em;
-  }
-  }
-@media screen and (min-width: 480px) {
-  .container::before {
-    content: "480px";
-    color: maroon;
-  }
-}
-@media screen and (min-width: 620px) {
-  .container::before {
-    content: "620px";
-    color: orange;
-  }
-  article {
-    height: 170px;
-  }
-}
-@media screen and (min-width: 810px) {
-  .container::before {
-    content: "810px";
-    color: black;
-  }
-  header {
-    background: #2BCDC0;
-  }
-  section {
-    background: #000;
-    color: #fff;
-    display: flex;
-    min-height: 100vh;
-  }
-  article div {
-    width: 70%;
-    margin: 0;
-    margin: 0 auto;
-  }
-  article div h2 {
-    font-size: 2em;
-  }
 
+@media screen and (min-width: 320px) {
+    .container::before {
+        content: "320px";
+        color: green;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-weight: 700;
+        margin: 5px;
+        font-size: 2em;
+    }
 }
+
+@media screen and (min-width: 480px) {
+    .container::before {
+        content: "480px";
+        color: maroon;
+    }
+}
+
+@media screen and (min-width: 620px) {
+    .container::before {
+        content: "620px";
+        color: orange;
+    }
+    article {
+        height: 170px;
+    }
+}
+
+@media screen and (min-width: 810px) {
+    .container::before {
+        content: "810px";
+        color: black;
+    }
+    header {
+        background: #2BCDC0;
+    }
+    section {
+        background: #000;
+        color: #fff;
+        display: flex;
+        min-height: 100vh;
+    }
+    article div {
+        width: 70%;
+        margin: 0;
+        margin: 0 auto;
+    }
+    article div h2 {
+        font-size: 2em;
+    }
+}
+
 @media screen and (min-width: 1400px) {
-  .container::before {
-    content: "1400px";
-    color: red;
-  }
-  body {
-    background: #000 url("http://www.gunnars.com/wp-content/uploads/2014/08/Space.jpg") no-repeat center;
-    background-attachment: fixed;
-  }
-  .container {
-    width: 90%;
-    margin: 0 auto;
-  }
+    .container::before {
+        content: "1400px";
+        color: red;
+    }
+    body {
+        background: #000 url("http://www.gunnars.com/wp-content/uploads/2014/08/Space.jpg") no-repeat center;
+        background-attachment: fixed;
+    }
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
