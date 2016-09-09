@@ -13,6 +13,11 @@ html {
 body {
   font-family: 'Georgia', sans-serif, sans-serif;
   background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 section {
@@ -141,7 +146,7 @@ header {
   background-image: url("../img/wine-bg.jpg");
   height: 90vh;
   max-width: 100%;
-  width: 96vw;
+  width: 100%;
   background-size:auto;
   background-repeat: no-repeat;
   background-position: center center;
@@ -382,18 +387,13 @@ header {
 .pouring {
   max-width: 100%;
   display: block;
-  background-image: url('../img/pouring.jpg');
-  background-size: cover;
-  background-position: center center;
-  overflow: hidden;
-  background-repeat: no-repeat;
   width: 100%;
-  height: 50vh;
+  height: 40vh;
+  background-image: url('../img/pouring.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.pouring img {
-  max-width: 100%;
-  height: auto;
-}
+
 
 /* tasting */
 
@@ -537,10 +537,10 @@ footer input[type=button] {
   }
 
   header {
-    height: 75vh;
+    height: 90vh;
   }
   .production {
-    height: 40vh;
+    height: 100vh;
   }
   .text {
     height: 40vh;
@@ -745,7 +745,10 @@ footer input[type=button] {
   }
 
   /*Sixth row aka. pouring and tasting*/
-
+  .pouring {
+    background-image: none;
+    height: 0;
+  }
   .sixth {
     display: flex;
     flex-direction: row;

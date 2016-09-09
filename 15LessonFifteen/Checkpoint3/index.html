@@ -4,60 +4,58 @@
   <title>Winery Site Remade!</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- jQuery library -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Latest compiled JavaScript -->
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=2">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <main class="container">
+  <main class="container container-fluid">
     <header id="header">
       <div class="overlay">
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#header">Foundry</a>
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#header">Foundry</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown"><a href="#header">HOME</a></li>
+                <li class="dropdown"><a class="desktop" href="#sprayer2">Vineyard</a></li>
+                <li class="dropdown"><a href="#signature">Founder</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Wine
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#red">Merlot</a></li>
+                    <li><a href="#white">Moscato</a></li>
+                    <li><a href="#purple">Cabernet</a></li>
+                  </ul>
+                </li>
+                <li><span class="glyphicon glyphicon-search"><input type="text" name="name" value="" placeholder="Search" class="search"><a href="#"></a></span></li>
+                <li><span class="glyphicon glyphicon-shopping-cart"><input type="text" name="name" value="" placeholder="Shopping Cart" class="shoppingcart"><a href="#"></a></span></li>
+              </ul>
+            </div>
           </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown"><a href="#header">HOME</a></li>
-              <li class="dropdown"><a class="desktop" href="#sprayer2">Vineyard</a></li>
-              <li class="dropdown"><a href="#signature">Founder</a></li>
-              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Wine
-                <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#red">Merlot</a></li>
-                  <li><a href="#white">Moscato</a></li>
-                  <li><a href="#purple">Cabernet</a></li>
-                </ul>
-              </li>
-              <li><span class="glyphicon glyphicon-search"><input type="text" name="name" value="" placeholder="Search" class="search"><a href="#"></a></span></li>
-              <li><span class="glyphicon glyphicon-shopping-cart"><input type="text" name="name" value="" placeholder="Shopping Cart" class="shoppingcart"><a href="#"></a></span></li>
-            </ul>
+        </nav>
+        <div class="headericon">
+          <img src="img/wine1.png" alt="">
+          <div class=headertext>
+            <h1>"Without a doubt, one of the most consistently high-quality wineries in the Barossa region"</h1>
+            <br>
+            <p>David Holiday - Respected Wino</p>
+          </div>
+          <div class="icons">
+            <img src="img/facebookicon.png" alt="">
+            <img src="img/twittericon.png" alt="">
+            <img src="img/vimeoicon.png" alt="">
           </div>
         </div>
-      </nav>
-      <div class="headericon">
-        <img src="img/wine1.png" alt="">
-        <div class=headertext>
-          <h1>"Without a doubt, one of the most consistently high-quality wineries in the Barossa region"</h1>
-          <br>
-          <p>David Holiday - Respected Wino</p>
-        </div>
-        <div class="icons">
-          <img src="img/facebookicon.png" alt="">
-          <img src="img/twittericon.png" alt="">
-          <img src="img/vimeoicon.png" alt="">
-        </div>
-      </div>
       </div>
     </header>
     <section class="sprayer mobile" id="sprayer1">
@@ -80,11 +78,11 @@
     </section>
     <section class="production" id="production">
       <div class="overlay">
-      <article class="productiontext">
-        <h3>"We've been producing fine wine for 65 years, I think we know what we're talking about"</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, in eveniet libero voluptatem nostrum facere nihil officiis.</p>
+        <article class="productiontext">
+          <h3>"We've been producing fine wine for 65 years, I think we know what we're talking about"</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, in eveniet libero voluptatem nostrum facere nihil officiis.</p>
 
-      </article>
+        </article>
       </div>
     </section>
     <section class="wine mobile">
@@ -128,7 +126,7 @@
           <div class="text">
             <h3>Foundry Shiraz</h3>
             <p>“Aged five years in solid, French Oak barrels sports notes of pepper and blackberry”</p>
-            <input type="button" name="name" value="VISIT SHOP">
+            <input type="button" name="name" value="VISIT SHOP" class="animated">
           </div>
         </article>
       </section>
@@ -139,14 +137,14 @@
           <div class="text">
             <h3>Foundry Chardonnay</h3>
             <p>"A rich fruit palet with subtle Oak influence and a lingering dry, fresh finish”</p>
-            <input type="button" name="name" value="VISIT SHOP">
+            <input type="button" name="name" value="VISIT SHOP" \>
           </div>
         </article>
       </section>
       <section class="wine">
         <div class="purplewinepic winepic" id="purple">
         </div>
-        <article class="winearticle">
+        <article class="winearticle animated">
           <div class="text">
             <h3>Foundry Cabernet</h3>
             <p>“Generous sweet blackcurrant and mulberry character with soft, velvety tannins”</p>
@@ -154,7 +152,7 @@
           </div>
         </article>
       </section>
-    </div>
+  </div>
     <section>
       <article class="awards mobile">
         <h1>Awards & Recognitions</h1>
@@ -183,55 +181,72 @@
         </div>
       </article>
     </section>
-    <section class="mobile" id="pouring">
-      <div class="pouring">
+    <section class="mobile, pouring" id="pouring">
+      <!-- <div class="pouring">
+      <img src="img/pouring.jpg" alt="">
+    </div> -->
+  </section>
+  <section id="tasting" class="mobile">
+    <article class="tasting mobile">
+      <div class="toptasting">
+        <h1>Join us for tastings at the Cellar Door</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
       </div>
-    </section>
-    <section id="tasting" class="mobile">
-      <article class="tasting mobile">
-        <div class="toptasting">
-          <h1>Join us for tastings at the Cellar Door</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-        </div>
-        <div class="bottomtasting">
-          <h2>1240 Kilgour Road Rowland Flat South Australia 5352</h2>
-          <p>P: (05) 3928 9283</p>
-          <p>E: enquiries@foundry.net</p>
-        </div>
-      </article>
-    </section>
-    <section class="desktop sixth" id="visit">
-      <article class="">
-        <div class="pouring_desktop">
-          <img src="img/pouring.jpg" alt="">
-        </div>
-      </article>
-      <article class="tasting_desktop">
-        <div class="toptasting_desktop">
-          <h1>Join us for tastings at the Cellar Door</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-        </div>
-        <div class="bottomtasting_desktop">
-          <h2>1240 Kilgour Road Rowland Flat</h2>
-          <h2>South Australia 5352</h2>
-          <p>P: (05) 3928 9283</p>
-          <p>E: enquiries@foundry.net</p>
-        </div>
-      </article>
-    </section>
-    <footer>
-      <h1>Sign up for our monthly newsletter</h1>
-      <p>Get special offers and news on newest cellar releases.</p>
-      <div class=email_desktop>
-        <input type="text" placeholder="EMAIL ADDRESS" class="email">
-        <input type="button" name="name" value="SIGN UP NOW" class="">
+      <div class="bottomtasting">
+        <h2>1240 Kilgour Road Rowland Flat South Australia 5352</h2>
+        <p>P: (05) 3928 9283</p>
+        <p>E: enquiries@foundry.net</p>
       </div>
-      <div class="footericons">
-        <a href="#"><img src="img/facebookicon.png" alt=""></a>
-        <a href="#"><img src="img/twittericon.png" alt=""></a>
-        <a href="#"><img src="img/vimeoicon.png" alt=""></a>
+    </article>
+  </section>
+  <section class="desktop sixth" id="visit">
+    <article class="">
+      <div class="pouring_desktop">
+        <img src="img/pouring.jpg" alt="">
       </div>
-    </footer>
-  </main>
+    </article>
+    <article class="tasting_desktop">
+      <div class="toptasting_desktop">
+        <h1>Join us for tastings at the Cellar Door</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+      </div>
+      <div class="bottomtasting_desktop">
+        <h2>1240 Kilgour Road Rowland Flat</h2>
+        <h2>South Australia 5352</h2>
+        <p>P: (05) 3928 9283</p>
+        <p>E: enquiries@foundry.net</p>
+      </div>
+    </article>
+  </section>
+</main>
+<footer>
+  <h1>Sign up for our monthly newsletter</h1>
+  <p>Get special offers and news on newest cellar releases.</p>
+  <div class=email_desktop>
+    <input type="text" placeholder="EMAIL ADDRESS" class="email">
+    <input type="button" name="name" value="SIGN UP NOW" class="animated">
+  </div>
+  <div class="footericons">
+    <a href="#"><img src="img/facebookicon.png" alt=""></a>
+    <a href="#"><img src="img/twittericon.png" alt=""></a>
+    <a href="#"><img src="img/vimeoicon.png" alt=""></a>
+  </div>
+</footer>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>
+
+$('.animated').click(function() {
+  var heading =  $(this);
+  heading.removeClass('flipInX');
+  setTimeout(function() {
+    heading.addClass('flipInX');
+  }, 10);
+});
+</script>
+
 </body>
+
 </html>
