@@ -1,0 +1,246 @@
+
+
+.page  {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: 74vh;
+  width: 100%;
+}
+
+article {
+  width: 80%;
+}
+
+.wines3 article img {
+  width: 40%;
+  height: 50vh;
+}
+
+.awards article img {
+  width: 80%;
+  height: 30vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero1 {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/185649/wine14_mobile.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-bottom: 10vh;
+}
+
+.hero1 p {
+  font-size: 20px;
+  margin: 2%;
+}
+
+.two-columns {
+  text-align: center;
+  min-height: 100vh;
+}
+
+.two-columns img {
+  min-height: 40vh;
+}
+
+.section3 {
+  background: url("https://darmyers.files.wordpress.com/2014/08/wine-grower-3.jpg") no-repeat center;
+  background-size: cover;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  /** text-align: center;
+  min-height: 90vh **/
+}
+
+.wines3 article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.awards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.awards article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 50vh;
+}
+
+.lastsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+  background-color: black;
+  color: white;
+}
+
+footer h1 {
+  font-family: cursive;
+  font-size: 30px;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 15vh;
+  margin-bottom: 5vh;
+}
+
+footer p {
+  font-size: 16px;
+  margin-bottom: 5vh;
+}
+
+.email {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  width: 89%;
+  height: 50px;
+  padding: 5%;
+  margin-bottom: -2px;
+}
+
+.signup {
+  color: white;
+  background-color: green;
+  width: 100%;
+  height: 50px;
+}
+
+footer form {
+  width: 90%;
+  hei
+}
+
+.navbar-inverse {
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid white;
+  padding: 0%;
+}
+
+.navbar-brand {
+  padding-top: 0px;
+}
+
+.navbar-brand > img {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-inverse h1 {
+  color: white;
+  font-size: 150%;
+  border-right: 1px solid white;
+  width: 125%;
+  margin-left: -16%;
+  margin-top: 0px;
+  height: 50px;
+  padding-top: 8px;
+  padding-right:30%;
+}
+
+.navbar-toggle {
+  border: white;
+}
+
+/**
+ * Media Queries
+ **/
+@media screen and (min-width: 320px) {
+  .page::before {
+    content: "320px";
+    font-family: Arial, sans-serif;
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2rem;
+    z-index: 9999;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .page::before {
+    content: "480px";
+    color: maroon;
+  }
+  .hero1 {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/185649/wine14_tablet.jpg") no-repeat center;
+    background-size: cover;
+    height: 50vh;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .page::before {
+    content: "620px";
+    color: orange;
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .page::before {
+    content: "810px";
+    color: black;
+  }
+  .hero1 {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/185649/wine14.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .page::before {
+    content: "1400px";
+    color: red;
+  }
+}
