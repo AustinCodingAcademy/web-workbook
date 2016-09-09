@@ -49,7 +49,7 @@
   </header>
   <main>
     <section class="hero1">
-      <img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/3d-transparent-glass-icons-alphanumeric/068036-3d-transparent-glass-icon-alphanumeric-letter-ff.png" alt="F" />
+      <img class="animated bounce infinite" src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/3d-transparent-glass-icons-alphanumeric/068036-3d-transparent-glass-icon-alphanumeric-letter-ff.png" alt="F" />
       <p>"Without doubt, one of the most consistently high-quality wineries in the Barossa region"</p><br />
       <p>David Halladay - Respected Wino</p>
     </section>
@@ -68,7 +68,7 @@
         <img src="img\wine3.jpg" alt="shiraz" />
         <h1>Foundry Shiraz</h1>
         <p>"Aged five years in solid, French Oak barrels sports notes of pepper and blackberry"</p>
-        <button class="animated bounce">VISIT SHOP</button>
+        <button class="animated">VISIT SHOP</button>
       </article>
       <article class="article1">
         <img src="img\wine6.jpg" alt="chardonnay" />
@@ -115,5 +115,15 @@
       <input class="signup" type="submit" value="SIGN UP NOW" />
   </footer>
 </div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+$('.animated').click(function() {
+var link =  $(this)
+heading.removeClass('bounce');
+setTimeout(function() {
+  heading.addClass('bounce');
+}, 10);
+});
+</script>
 </body>
 </html>
