@@ -10,7 +10,12 @@ header{
   justify-content: center;
   flex-direction: column;
   font-family: open sans;
-  /*margin-top: 10px;*/
+
+}
+
+img{
+  max-width: 100%;
+  height:auto;
 }
 .navbar-fixed-top{
   position: absolute;
@@ -31,11 +36,7 @@ header{
 .navbar-default .navbar-brand{
   color:white;
 }
-header img{
-  margin-bottom:30px;
-  max-width:250px;
 
-}
 header p{
   color:white;
   text-align:center;
@@ -56,11 +57,15 @@ header p:nth-child(2){
   align-items: center;
   justify-content: center;
   text-align: center;
+  height:600px;
+
 }
 
 #firstsec img{
-  min-width:50%;
   order: -1;
+  height:100%;
+
+
 }
 
 #firstsec p{
@@ -96,13 +101,11 @@ article p{
   text-align:center;
   padding-left:5%;
   padding-right:5%;
-
 }
 
 #secondsec p:first-child{
   font-size: 1.5em;
   font-style: italic;
-
 }
 
 #secondsec p:nth-child(2){
@@ -111,14 +114,7 @@ article p{
 
 #thirdsec{
   display: flex;
-  /*justify-content: space-around;*/
   flex-direction:column;
-}
-
-div p:nth-child(2){
-  /*font-size: 1.5em;*/
-  /*font-weight: bold;*/
-  /*font-style: italic;*/
 }
 
 div p:nth-child(3){
@@ -180,13 +176,8 @@ div p:nth-child(3){
 
 
 .medals img {
-  height:200px;
-  margin-top:20px;
-  margin-bottom:20px;
-}
-
-#medalbox .medals:first-child > img{
-  margin-left:15px;
+  margin: 20px 0;
+  max-width: 220px;
 }
 
 
@@ -199,10 +190,6 @@ div p:nth-child(3){
 #tastings{
   display:flex;
   flex-direction:column;
-}
-
-#tastings img{
-  height:350px;
 }
 
 .joinus h2, .joinus p, .joinus address{
@@ -233,7 +220,6 @@ footer h1{
 
 footer p{
   font-size:1.2em;
-
 }
 
 .email{
@@ -245,7 +231,6 @@ footer p{
   margin-left:5%;
   margin-right:5%;
   padding:10px;
-
 }
 
 .email div:nth-child(2){
@@ -256,7 +241,6 @@ footer p{
 .email div:first-child{
   border: 1px solid white;
 }
-
 
 
 /*media queries*/
@@ -278,12 +262,6 @@ footer p{
     content: "480px";
     color: maroon;
   }
-  #tastings img{
-    width:70%;
-
-
-  }
-
 
 
   #tastings{
@@ -317,9 +295,11 @@ footer p{
     justify-content:space-around;
   }
 
-  #firstsec img{
-    width:100%;
+  #medalbox img{
+    max-width: 190px;
+    margin: 20px 0px;
   }
+
 
   .email{
     flex-direction:row;
@@ -342,8 +322,7 @@ footer p{
   }
   #firstsec img{
     order:0;
-    max-width:50%;
-    height:800px;
+
   }
 
   #secondsec p:first-child{
@@ -354,13 +333,18 @@ footer p{
     font-size:1.2em;
   }
 
+  #medalbox img{
+      max-width: 240px;
+      margin: 20px 10px;
+    }
+
   #tastings{
     flex-direction:row;
   }
 
   #tastings img{
-    max-width:50%;
-    height:800px;
+    /*max-width:50%;
+    height:800px;*/
   }
 
   .wine{
