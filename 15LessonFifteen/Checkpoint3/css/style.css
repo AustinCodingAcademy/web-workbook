@@ -13,21 +13,10 @@ html {
 body {
   font-family: 'Georgia', sans-serif, sans-serif;
   background-color: #f8f8f8;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
 }
-
-section {
-  display: flex;
-}
-
 img {
   max-width: 100%;
 }
-
 .desktop {
   display: none;
 }
@@ -57,6 +46,9 @@ img {
   }
   .navbar-collapse.collapse {
     display: none!important;
+    background-color: black;
+    color: black;
+    background-size: contain;
   }
   .navbar-nav {
     float: none!important;
@@ -114,7 +106,7 @@ input[type=text] {
 
 .shoppingcart, .search {
   margin-left: 10px;
-  width: 35vw;
+  width: 35%;
 }
 
 li {
@@ -136,6 +128,7 @@ li {
   padding: 0;
   margin: 0;
   max-width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -144,12 +137,12 @@ li {
 }
 header {
   background-image: url("../img/wine-bg.jpg");
-  height: 90vh;
-  max-width: 100%;
+  height: 500px;
   width: 100%;
   background-size:auto;
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
   margin: 0 auto;
   margin-left: 0 auto;
   display: flex;
@@ -160,33 +153,34 @@ header {
 }
 
 .headericon {
-  height: 40vh;
   max-width: 100%;
   align-items: center;
   object-fit: fill;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 10vh;
+  padding-top: 20%;
 }
 .headericon img {
-  height: 100%;
+  height: 250px;
   width: auto;
   max-width: 100%;
+  padding-bottom: 5%;
 }
 .headertext {
-  padding: 5vh 3vw 0vh 3vw;
   font-style: italic;
 }
-.headertext h1 {
-  padding-top: 2vh;
-}
 .headertext p {
-  padding-top: 2vh;
   font-style: normal;
 }
 .icons {
-  padding-top: 5vh;
+  display: flex;
+  padding-top: 5%;
+  height: 50px;
+  justify-content: center;
+}
+.icons img {
+  height: auto;
 }
 
 /**
@@ -196,15 +190,15 @@ header {
 /* Sprayer */
 .sprayer {
   max-width: 100%;
-  height: 100vh;
+  height: 500px;
   overflow: hidden;
   top: 0;
   background-image: url('../img/wine16.jpg');
   background-position: center center;
   background-size: cover;
   min-width: 100%;
-  min-height: auto;
 }
+
 .sprayer img {
   max-width: 100%;
   height: auto;
@@ -215,7 +209,7 @@ header {
 /* Signature */
 
 .signature {
-  height: auto;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -223,17 +217,22 @@ header {
   text-align: center;
   font-size: 1.6rem;
 }
+
+.established {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
 .signature h2 {
-  padding-top: 7vh;
   font-style: italic;
   color: gray;
 }
 
 .signature h3 {
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-  padding-left: 4vw;
-  padding-right: 4vw;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
   line-height: 3rem;
   font-size: 2rem;
   font-style: italic;
@@ -243,20 +242,19 @@ header {
   text-align: center;
   line-height: 2.5rem;
   font-size: 1.4rem;
-  padding: 0vh 2vw 5vh 2vw;
+  padding: 5% 5% 10% 5%;
   font-style: normal;
 }
 .signature img{
   max-width: 50%;
   height: auto;
-  padding-bottom: 5vh;
 }
 
 /* Production */
 
 .production {
   background-image: url("../img/wine13.jpg");
-  height: 70vh;
+  height: 500px;
   color: white;
   overflow: hidden;
   text-align: center;
@@ -264,17 +262,20 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .production h3 {
   font-size: 2.25rem;
-  padding: 20% 4vw 3.5vh 4vw;
   font-style: italic;
+  padding: 40% 5% 5% 5%;
 }
 
 .production p {
   font-size: 1.25rem;
-  padding: 0vh 3.5vw 5vh 3.5vw;
+  padding: 5% 5% 5% 5%;
   font-style: normal;
 }
 
@@ -287,7 +288,8 @@ header {
 }
 
 .winepic {
-  height: 50vh;
+  height: 200px;
+  max-width: 100%;
   background-image: url("../img/wine3.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -299,7 +301,7 @@ header {
   justify-content: center;
 }
 .text {
-  height: 88vh;
+  height: 88%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -308,14 +310,14 @@ header {
 }
 
 .winearticle h3 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-style: italic;
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 
 .winearticle p {
-  font-size: 2.75rem;
-  padding-top: 4rem;
+  font-size: 2rem;
+  padding-top: 2rem;
   line-height: 3rem;
   font-style: italic;
 }
@@ -363,9 +365,9 @@ header {
 }
 
 .awards h1 {
-  font-size: 2rem;
-  padding-top: 10vh;
-  padding-bottom: 5vh;
+  font-size: 3rem;
+  padding-top: 5%;
+  padding-bottom: 5%;
   font-family: 'Georgia', sans-serif, sans-serif;
   font-style: italic;
 }
@@ -377,8 +379,8 @@ header {
 
 .awards p {
   font-size: 1.25rem;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-top: 7%;
+  padding-bottom: 7%;
 }
 
 
@@ -388,7 +390,7 @@ header {
   max-width: 100%;
   display: block;
   width: 100%;
-  height: 40vh;
+  height: 250px;
   background-image: url('../img/pouring.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -417,32 +419,31 @@ header {
 .tasting h1 {
   display: block;
   font-size: 1.7rem;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
   text-align: left;
   font-style: italic;
 }
 .toptasting p {
   font-size: 1.4rem;
   text-align: left;
-  padding: 2vh 2vw 2vh 2vw;
+  padding: 2% 2% 2% 2%;
   line-height: 2rem;
 }
 
 .bottomtasting {
   border-top: 1px solid lightgray;
-  padding-bottom: 5vh;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-bottom: 20px;
 }
-
 .bottomtasting h2, .bottomtasting p {
   font-size: 1.4rem;
-  padding: 2vh 2vw 2vh 2vw;
+  padding: 2% 2% 2% 2%;
 }
 .bottomtasting p {
-  padding: 1vh 2vw 1vh 2vw;
+  padding: 2% 2% 2% 2%;
 }
 
 
@@ -450,7 +451,7 @@ header {
 
 footer {
   width: 100%;
-  height: 60vh;
+  height: 300px;
   background-color: #292929;
   color: white;
   display: flex;
@@ -458,23 +459,20 @@ footer {
   align-items: center;
   justify-content: center;
 }
-
 footer h1 {
   font-size: 2rem;
   text-align: center;
-  padding-top: 10vh;
+  padding-top: 10%;
 }
-
 footer p {
   font-size: 1.2rem;
   text-align: center;
-  padding: 5vh 2vh 5vh 2vh;
+  padding: 5% 2% 5% 2%;
 }
-
 footer input[type=text] {
   width: 100%;
   height: auto;
-  padding: 3vh 2vw 3vh 2vw;
+  padding: 10px 5px 10px 5px;
   justify-content: flex-start;
   align-items: flex-start;
   background-color: transparent;
@@ -482,31 +480,24 @@ footer input[type=text] {
   border: 1px solid silver;
   font-weight: bold;
 }
-
 footer input[type=text]::-webkit-input-placeholder {
   color: white;
   text-align: center;
 }
-
 footer input[type=button] {
   width: 100%;
   height: auto;
-  padding: 2.5vh 2vw 2.5vh 2vw;
+  padding: 10px 5px 10px 5px;
   border: 2px solid #91a05c;
   background-color: #91a05c;
   color: white;
   font-size: 1.2rem;
   font-weight: bold;
 }
-
 .footericons {
-  padding-top: 5vh;
+  padding-top: 5%;
 }
 
-.footericons img {
-  padding-left: 2vw;
-  padding-right: 2vw;
-}
 
 /**
 * Media Queries
@@ -535,34 +526,6 @@ footer input[type=button] {
     margin: 5px;
     font-size: 2em;
   }
-
-  header {
-    height: 90vh;
-  }
-  .production {
-    height: 100vh;
-  }
-  .text {
-    height: 40vh;
-  }
-  .awards h1 {
-    font-size: 4rem;
-  }
-  .awards p {
-    font-size: 2rem;
-  }
-  .tasting h1 {
-    padding-left: 5vw;
-  }
-  .toptasting p {
-    padding-left: 5vw;
-  }
-  .bottomtasting h2, .bottomtasting p {
-    padding-left: 5vw;
-  }
-  .bottomtasting p {
-    padding-left: 5vw;
-  }
 }
 @media screen and (min-width: 620px) {
   .container::before {
@@ -576,24 +539,49 @@ footer input[type=button] {
     font-size: 2em;
   }
   header {
-    height: 80vh;
-    /*fix header width at 620 and larger */
+    height: 620px;
   }
-  .shoppingcart, .search {
-    margin-left: 10px;
-    width: 20%;
+  .established {
+    padding-top: 15%;
+    padding-bottom: 0%;
+    margin: 0;
   }
-
+  .signature h3{
+    padding: 2%;
+    margin: 0;
+  }
+  .signature p {
+    padding: 0;
+    margin: 0;
+  }
+  .signature img {
+    margin: 0;
+    padding: 0;
+    height: 30%;
+  }
+  .productiontext h3 {
+    padding-top: 20%;
+  }
   .awards img {
     width: 60%;
   }
-
-  body {
-    display: flex;
-    justify-content: center;
+  .awards h1 {
+    font-size: 4rem;
   }
-  header {
-    margin: -1vw;
+  .awards p {
+    font-size: 2rem;
+  }
+  .pouring {
+    height: 500px;
+  }
+  footer {
+    height: 400px;
+  }
+  footer input[type=text] {
+    padding: 20px 20px 20px 20px;
+  }
+  footer input[type=button] {
+    padding: 20px 20px 20px 20px;
   }
 }
 
@@ -608,84 +596,39 @@ footer input[type=button] {
     margin: 5px;
     font-size: 2em;
   }
-
-
   .desktop {
     display: flex;
   }
   .mobile {
     display: none;
   }
-
   .shoppingcart, .search {
-    /*margin-left: 10px;*/
     width: 150px;
+    margin-left: 20px;
+    margin-top: 5%;
+    /*max-width: 100%;*/
   }
-
-  header {
-    height: 100vh;
-    max-width: 100%;
+  header input {
+    margin-right: 20px;
   }
-  section {
-    max-width: 100%;
+  .headericon {
+    padding-top: 10%;
   }
   .middle {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    flex-basis: auto;
-    height: 70vh;
-    max-width: 100%;
-    justify-content: flex-start;
-    align-content: flex-start;
-    margin-top: 2vh;
   }
   .signature {
-    max-width: 50%;
-    height: 70vh;
-    margin: 0;
+    width: 50%;
   }
   .sprayer {
     max-width: 50%;
+    height: auto;
     min-width: 50%;
-    height: 70vh;
-    margin: 0;
-    background-image: url('../img/wine16.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .production {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .productiontext {
-    padding: 20vh 20vw 0vh 20vw;
   }
   .desktop_wine {
     max-width: 100%;
-    height: 100vh;
-    /*border: 1px solid red;*/
-  }
-  .text {
-    height: 55vh;
-    position: relative;
-  }
-  .text h3 {
-    font-size: 2.5rem;
-  }
-  .text p {
-    font-size: 1.5rem;
-  }
-  .text input {
-    bottom: 0;
-    /*margin-top: 5rem;*/
-    margin-bottom: 15vh;
-    position: absolute;
-    padding: 2vh 4vw 2vh 4vw;
-    font-size: 1.4rem;
   }
   .recognition {
     display: flex;
@@ -696,52 +639,40 @@ footer input[type=button] {
     background-image: url('../img/wine12.jpg');
     background-position: bottom left;
     color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .recognition h1 {
     display: block;
     color: white;
     font-size: 5rem;
     font-family: 'Georgia', serif, sans-serif;
-    padding-top: 5vh;
+    padding-bottom: 40px;
   }
   .awards2 {
     display: flex;
     flex-direction: row;
-    height: 50vh;
     max-width: 100%;
     color: white;
     justify-content: center;
     align-items: center;
-    /*border: 1px solid red;*/
   }
   .medal {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 1vw;
-    padding-right: 1vw;
     text-align: center;
-    /*border: 1px solid red;*/
     width: 33%;
     height: 100%;
   }
-
-  /*.medal1, .medal2, .medal3 {
-    height: 10vh;
-    max-width: 100%;
-    background-image: url('../img/australia.png');
-    background-size: cover;
-  }*/
-
   .medal img {
     height: auto;
     width: 50%;
-
   }
   .medal p {
     font-size: 1.4rem;
-    padding-top: 5vh;
+    padding-top: 30px;
   }
 
   /*Sixth row aka. pouring and tasting*/
@@ -752,98 +683,94 @@ footer input[type=button] {
   .sixth {
     display: flex;
     flex-direction: row;
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    /*border: 1px solid red;*/
   }
   .pouring_desktop {
-    height: auto;
-    width: 100%;
     max-width: 100%;
-    /*width: auto;*/
-    display: flex;
+    width: 50%;
+    height: auto;
+    background-image: url('../img/pouring.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
     flex-direction: column;
-    /*border: 1px solid red;*/
   }
   .pouring_desktop img {
     max-width: 100%;
+    width: 100%;
     height: auto;
   }
 
   .tasting_desktop {
     max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: auto;
-    /*border: 1px solid red;*/
   }
   .toptasting_desktop {
     display: flex;
     flex-direction: column;
-    max-width: 50%;
+    max-width: 100%;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 10%;
   }
   .tasting_desktop h1 {
     display: block;
     font-size: 1.7rem;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding: 5% 2% 5% 2%;
     text-align: left;
     font-style: italic;
   }
   .toptasting_desktop p {
     font-size: 1.4rem;
     text-align: left;
-    padding: 2vh 2vw 2vh 2vw;
+    padding: 5% 2% 5% 2%;
     line-height: 2rem;
   }
 
   .bottomtasting_desktop {
     border-top: 1px solid lightgray;
-    padding-bottom: 5vh;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    /*border: 1px solid red;*/
-    max-width: 50%;
-    /*margin-left: 10vw;*/
-    /*margin-right: 10vw;*/
+    max-width: 100%;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-bottom: 10%;
   }
 
   .bottomtasting_desktop h2, .bottomtasting_desktop p {
     font-size: 1.4rem;
-    padding: 2vh 2vw 2vh 2vw;
+    padding: 5% 2% 5% 2%;
   }
-  .bottomtasting_desktop p {
-    padding: 1vh 2vw 1vh 2vw;
-  }
-
   .email_desktop {
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: left;
-    /*border: 1px solid red;*/
-    /*justify-content: center;*/
   }
-
   footer {
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    /*border: 1px solid red;*/
+    height: 500px;
+  }
+  footer h1 {
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+  }
+  footer p {
+    font-size: 2rem;
   }
 
   footer input[type=button] {
     height: auto;
-    padding: 2.5vh 3vw 2.5vh 3vw;
+    padding: 20px 50px 20px 50px;
     border: 1px solid #91a05c;
     margin-left: 1vw;
   }
   footer input[type=text] {
-    padding: 2.5vh 3vw 2.5vh 3vw;
-    margin-right: 1vw;
+    padding: 21px 50px 21px 50px;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -857,8 +784,12 @@ footer input[type=button] {
     margin: 5px;
     font-size: 2em;
   }
-  .shoppingcart, .search {
-    margin-left: 10px;
-    max-width: 100%;
+
+  .productiontext h3 {
+    padding-top: 10%;
   }
+  .production p {
+    padding-top: 0%;
+  }
+
 }
