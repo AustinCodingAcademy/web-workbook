@@ -3,46 +3,72 @@
     display: block;
     clear: both;
 }
-header{
-  text-align: center;
+header {
+    text-align: center;
 }
-h1{
-  font-size:48px;
-  font-family: 'Lily Script One', cursive;
-  color:#3b4743;
-  margin: 50px 0px;
+h1 {
+    font-size: 48px;
+    font-family: 'Lily Script One', cursive;
+    color: #3b4743;
+    margin: 50px 0px;
 }
-div{
-  float: left;
-  text-align: center;
+div {
+    float: left;
+    text-align: center;
 }
-.foursquare{
-  /*How do I get rid of the -webkit-margin-before etc*/
-  margin:0px 0px 40px 0px;
-  padding: 0px 0px 30px 0px;
-  border: solid 1px #efefef;
-  position:relative;
+.foursquare {
+    /*How do I get rid of the -webkit-margin-before etc*/
+    margin: 0px 0px 40px 0px;
+    padding: 0px 0px 30px 0px;
+    border: solid 1px #efefef;
+    position: relative;
 }
-figure{
-    position:relative;
+figure {
+    position: relative;
 }
-article:hover figcaption{
-  background:#3b4743;
+/*below is attempt to hover img*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-article:hover figcaption, .button:hover, .linklabel:hover{
-  transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
-  transition-property: all;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
-  transition-delay: initial;
+figure {
+  position: relative;
+  overflow: hidden;
 }
-figure a{
-  text-decoration: none;
+figure img {
+  max-width: 100%;
+
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
-img{
-width:100%;
+.foursquare:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
-figcaption{
+/*above is hover attempt*/
+
+article:hover figcaption {
+    background: #3b4743;
+}
+article:hover figcaption, .button:hover, .linklabel:hover {
+    transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+    transition-delay: initial;
+}
+figure a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+figcaption {
     color: #fff;
     font-size: 18px;
     font-weight: 600;
@@ -52,46 +78,57 @@ figcaption{
     padding: 6px 14px;
     background-color: #66d9c1;
 }
-.headinglinklabel{
-  padding: 17px 0px;
-  margin-bottom: 28px;
-  margin-top: 0px;
-  border-bottom: solid 1px #efefef;
+.sale {
+    color: #fff;
+    min-height: 20px;
+    min-width: 40px;
+    padding: 6px 10px;
+    line-height: 20px;
+    top: 0;
+    left: 0px;
+    z-index: 1000;
+    background: #f04933;
+    position: absolute;
 }
-.linklabel{
-  font-family: sans-serif;
-  font-size: 18px;
-  color: #3b4743;
+.headinglinklabel {
+    padding: 17px 0px;
+    margin-bottom: 28px;
+    margin-top: 0px;
+    border-bottom: solid 1px #efefef;
 }
-.linklabel:hover{
-  color: #66d9c1;
-  text-decoration: none;
+.linklabel {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #3b4743;
 }
-.button{
-  color: #fff;
-  font-family: sans-serif;
-  font-size: 14px;
-  background-color: #3b4743;
-  padding: 14px 18px;
-  margin: 30px 0px;
-  text-decoration: none;
-  font-weight: 700;
+.linklabel:hover {
+    color: #66d9c1;
+    text-decoration: none;
 }
-.button:hover{
-  background-color: #66d9c1;
-  text-decoration: none;
-  color: #fff;
+.button {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    background-color: #3b4743;
+    padding: 14px 18px;
+    margin: 30px 0px;
+    text-decoration: none;
+    font-weight: 700;
 }
+.button:hover {
+    background-color: #66d9c1;
+    text-decoration: none;
+    color: #fff;
+}
+
 /*to-do list: add sale block, align button, hover changes on image*/
+
 @media (max-width: 768px) {
-    header {
-    }
+    header {}
 }
 @media (min-width:769px) and (max-width: 991px) {
-    header {
-    }
+    header {}
 }
 @media (min-width: 992px) {
-    header {
-    }
+    header {}
 }
