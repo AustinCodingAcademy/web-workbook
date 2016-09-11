@@ -1,0 +1,125 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* font-size: 100%;
+    font: inherit; */
+    vertical-align: baseline;
+}
+
+.container {
+
+}
+
+header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.price-tag {
+  background-color: #66d9c1;
+  padding: 10px 15px;
+
+}
+
+h3 {
+  text-align: center;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: #FCD89D;
+  padding: 2px;
+  width: 130px;
+  height: 20px;
+/*   align-items: center; */
+}
+
+.sale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  width: 90px;
+  height: 30px;
+  background: #E3493B;
+  border: 1px solid red;
+
+/**
+ * Media Queries
+ **/
+
+@media screen and (min-width: 320px) {
+  .container::before {
+    content: "320px";
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container::before {
+    content: "480px";
+    color: maroon;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .container::before {
+    content: "620px";
+    color: orange;
+  }
+
+
+@media screen and (min-width: 810px) {
+  .container::before {
+    content: "810px";
+    color: black;
+  }
+
+}
+
+@media screen and (min-width: 1400px) {
+  body {
+    background: #000 url("http://screenmediadaily.com/wp-content/uploads/2014/06/shopping_malls_oohmedia.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .container::before {
+    content: "1400px";
+    color: red;
+    max-width: 90%;
+    margin: 50px auto;
+  }
+
+
+
+}
