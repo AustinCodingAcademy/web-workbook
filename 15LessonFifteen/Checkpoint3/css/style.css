@@ -1,0 +1,291 @@
+* {
+   font-family: 'Poiret One', cursive;
+   font-weight: bold;
+   margin: 0px;
+   padding: 0px;
+ }
+
+ img {
+   max-width: 100%;
+   height: auto;
+ }
+
+ *,
+ *:after,
+ *:before {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+
+ .page {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .navbar-fixed-top {
+  position: absolute;
+}
+
+ .navbar-default {
+  background-color: transparent;
+}
+
+ .navbar-nav {
+  float: right;
+}
+ .navbar-default .navbar-nav>li>a {
+  color: white;
+
+}
+
+ .navbar-default .navbar-brand {
+  color:white;
+}
+
+ main {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .header-image {
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://foundry.mediumra.re/img/wine14.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-attachment: fixed;
+ }
+
+ .header-logo {
+   opacity: 0.8;
+   padding-top: 3em;
+ }
+
+ .business-info {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+ }
+
+ .business-info-left {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding-left: 2em;
+   padding-right: 3em;
+   text-align: center;
+ }
+
+ .business-info-left * {
+   margin-bottom: 1.5em;
+ }
+
+ .business-info-left h3 {
+   font-size: 2.25em;
+ }
+
+ .business-info-right {
+  order: -1;
+ }
+
+ .business-info-2 {
+   color: white;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   height: 600px;
+   padding-top: 12em;
+   margin-top: -5px;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://foundry.mediumra.re/img/wine13.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+
+ }
+
+ .business-info-2 * {
+   margin-bottom: 1.5em;
+ }
+
+ .business-info-2 h3 {
+   font-size: 1.5em;
+ }
+
+ .business-info-3 {
+   display: flex;
+   justify-content: space-around;
+   padding-bottom: 1em;
+ }
+
+ .business-info-3 section {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   padding: 0px 8px 0px 8px;
+ }
+
+ business-info-3 p {
+   margin-top: .5em;
+ }
+
+ .business-info-3 img {
+   height: 400px;
+   width: 150px;
+ }
+
+ .business-info-3 button {
+   color: white;
+   background: #91a05c;
+   text-transform: uppercase;
+   font-weight: bold;
+   letter-spacing: 1px;
+   border: #788448;
+   padding: 1em 2em 1em 2em;
+   cursor: pointer;
+ }
+
+ .business-info-4 {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   color: white;
+   text-align: center;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://foundry.mediumra.re/img/wine12.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   padding: 5em;
+   margin-top: -5px;
+ }
+
+ .business-info-4 h1 {
+   flex-basis: 100%;
+   text-align: center;
+   padding-left: 1.5em;
+   padding-bottom: 2em;
+ }
+
+ .business-info-4 img {
+   height: 230px;
+   width: 180px;
+ }
+
+ .business-info-5 {
+   display: flex;
+ }
+
+ .business-info-5-right {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding-left: 6em;
+   padding-right: 4em;
+   text-align: center;
+   letter-spacing: 1px;
+ }
+
+ .business-info-5-right hr {
+   margin-bottom: 1.5em;
+ }
+
+ .business-info-5-right ul {
+   list-style-type: none;
+   margin-bottom: 1.5em;
+ }
+
+ .business-info-5-right h3, p {
+   margin-bottom: 1.5em;
+ }
+
+ .business-info-5-right h3 {
+   font-size: 1.5em;
+ }
+
+ .business-info-5-left img {
+   order: -1;
+ }
+
+ footer {
+   padding-top: 5em;
+   height: 400px;
+   background-color: #333;
+   color: white;
+   text-align: center;
+ }
+
+ .email-holder {
+   background-color: transparent;
+   padding: 10px;
+   width: 15em;
+   letter-spacing: 1px;
+ }
+
+ .sign-up {
+   background: #91a05c;
+   font-weight: bold;
+   padding: 10px;
+   width: 15em;
+   letter-spacing: 1px;
+   cursor: pointer;
+ }
+
+
+
+ /**
+* Media Queries
+**/
+
+ @media screen and (min-width: 320px) {
+   .page::before {
+     content: "320px";
+     font-family: Arial, sans-serif;
+     color: green;
+     position: absolute;
+     top: 0;
+     left: 0;
+     font-weight: 700;
+     margin: 5px;
+     font-size: 2rem;
+     z-index: 9999;
+   }
+ }
+
+ @media screen and (min-width: 480px) {
+   .page::before {
+     content: "480px";
+     color: maroon;
+   }
+ @media screen and (min-width: 620px) {
+     .page::before {
+       content: "620px";
+       color: orange;
+     }
+   }
+ @media screen and (min-width: 810px) {
+     .page::before {
+       content: "810px";
+       color: black;
+     }
+
+      .business-info {
+        flex-direction: row;
+      }
+
+     .business-info-right {
+      order: 1;
+
+     }
+
+ @media screen and (min-width: 1400px) {
+       .page::before {
+         content: "1400px";
+         color: red;
+       }
+     }
