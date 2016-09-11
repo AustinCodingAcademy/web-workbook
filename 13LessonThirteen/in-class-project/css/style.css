@@ -1,31 +1,98 @@
 img {
-  width: 98%;
-  padding: 30px 30px 20px 30px;
+  width: 100%;
+  padding: 20px 0px 15px 20px;
 }
 
-article h1, p {
-  padding-left: 30px;
-  width: 88%;
+article h1 {
+  font-size: 32px;
+  padding-left: 20px;
   margin-top: 0px;
 }
 
 article p {
   font-size: 18px;
-  padding-bottom: 10px;
+  padding: 0px 0px 10px 20px;
 }
 
 article a {
   background-color: #484848;
   color: white;
   padding: 10px;
-  margin-left:30px;
+  margin-left: 20px;
 }
 
 aside h3 {
   border-bottom: 1px solid black;
+  font-weight: bold;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 ul {
   list-style: none;
-  padding:0px 20px 0px 0px;
+  padding:0px 20px 0px 40px;
+  width: 84%;
+}
+
+li {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  article h1 {
+    font-size: 24px;
+  }
+
+  article p {
+    font-size: 16px;
+  }
+
+  footer {
+    background-color: #5d5d5d;
+    color: white;
+    margin-top: 30px;
+  }
+
+  footer h3 {
+    font-size: 20px;
+  }
+
+  footer .left {
+    padding-left: 5px;
+  }
+
+  .left ul {
+    width: 100%;
+  }
+
+  a {
+    color: white;
+    font-size: 16px;
+  }
+
+  .left li {
+    border-bottom: 1px solid white;
+    padding: 5px 0px 5px 0px;
+    font-weight: lighter;
+  }
+
+  .right a {
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    font-weight: lighter;
+  }
+
+  footer img {
+    width: 20%;
+    padding: 7px 5px 7px 9px;
+  }
+
+  .left li:last-child {
+    border-bottom: none;
+  }
+
+  .twitter img {
+    margin-left: 23px;
+  }
 }
