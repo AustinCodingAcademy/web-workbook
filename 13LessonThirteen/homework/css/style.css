@@ -1,0 +1,58 @@
+.container {
+  background: #F0F0F0;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+header {
+  background: url(../img/office.jpg);
+}
+
+@media screen and (min-width: 320px) {
+    main::before {
+        content: "320px";
+        color: green;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-weight: 700;
+        margin: 5px;
+        font-size: 2em;
+    }
+  /*.desktop {
+    display: none;
+  }*/
+}
+
+@media screen and (min-width: 480px) {
+    main::before {
+        content: "480px";
+        color: maroon;
+    }
+}
+
+@media screen and (min-width: 620px) {
+    main::before {
+        content: "620px";
+        color: orange;
+    }
+}
+
+@media screen and (min-width: 810px) {
+    main::before {
+        content: "810px";
+        color: black;
+    }
+  /*.mobile {
+    display: none;
+  }*/
+}
+@media screen and (min-width: 1400px) {
+    main::before {
+        content: "1400px";
+        color: red;
+    }
+  /*.mobile {
+    display: none;
+  }*/
+}
