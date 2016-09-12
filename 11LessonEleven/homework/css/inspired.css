@@ -1,0 +1,80 @@
+.hero-text p {
+    font-family: sans-serif;
+}
+
+.hero {
+    height: 465px;
+    background: darkgray url("../img/bg.jpg") center/cover no-repeat;
+    color: white;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    top: 140px;
+    left: 50px;
+    width: 400px;
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 175%;
+}
+
+.hero-text p {
+    margin-top: 50px;
+}
+
+article {
+    float: left;
+    width: 49%;
+}
+
+h2 {
+    margin: 50px 0 25px 50px;
+}
+
+h2+p {
+    margin: 0 70px 50px 50px;
+    color: gray;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background: darkgray url("../img/bg2.jpg") -20px/cover no-repeat;
+        height: 320px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 8px;
+    }
+    .hero-text {
+        top: 85px;
+        left: 20px;
+        width: 190px;
+    }
+    .hero-text p {
+        margin-top: 30px;
+        margin-right: 125px;
+    }
+    article {
+        width: 100%;
+    }
+    h2+p, h2 {
+        margin: 10px 20px 10px 10px;
+    }
+}
