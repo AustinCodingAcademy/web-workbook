@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-example">
   <main class="container container-fluid">
     <header id="header">
       <div class="overlay">
@@ -230,6 +230,9 @@
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <script>
+
+  $('body').scrollspy({ target: '#navbar-example' })
+
 
   $('.animated').click(function() {
     var heading =  $(this);
