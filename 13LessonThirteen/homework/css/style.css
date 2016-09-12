@@ -1,3 +1,15 @@
+html {
+  font-size: 62.5%;
+}
+
+
+/* 1 rem = 16px
+1 rem = 10px; */
+
+body {
+  font-family: sans-serif;
+}
+
 .container {
   background: #F0F0F0;
   margin: 0 auto;
@@ -5,54 +17,112 @@
 }
 
 header {
-  background: url(../img/office.jpg);
+  height: 500px;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/185649/office_mobile.jpg") no-repeat bottom;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.header {
+  margin: 0 20%;
+  margin-top: 80px;
+  font-size: 3.5rem;
+}
+
+.mobile {
+  font-size: 1.6rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.mobile article {
+  border: 1px solid black;
+  margin: 30px;
+  height: 30rem;
+}
+
+.gold {
+  background: #cff5dd;
+}
+
+a {
+  display: inline-block;
+
+  text-decoration: none;
+  background: #2e2e2e;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1em;
+  padding: 12px 25px;
+}
+
+.desktop {
+  display: none;
 }
 
 @media screen and (min-width: 320px) {
-    main::before {
-        content: "320px";
-        color: green;
-        position: absolute;
-        top: 0;
-        left: 0;
-        font-weight: 700;
-        margin: 5px;
-        font-size: 2em;
-    }
-  /*.desktop {
+  main::before {
+    content: "320px";
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+  .desktop {
     display: none;
-  }*/
+  }
 }
 
 @media screen and (min-width: 480px) {
-    main::before {
-        content: "480px";
-        color: maroon;
-    }
+  main::before {
+    content: "480px";
+    color: maroon;
+  }
+  header {
+    height: 700px;
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/185649/office_tablet.jpg") no-repeat bottom;
+  }
 }
 
 @media screen and (min-width: 620px) {
-    main::before {
-        content: "620px";
-        color: orange;
-    }
+  main::before {
+    content: "620px";
+    color: orange;
+  }
+  .mobile {
+    display: none;
+  }
+
 }
 
 @media screen and (min-width: 810px) {
-    main::before {
-        content: "810px";
-        color: black;
-    }
-  /*.mobile {
+  main::before {
+    content: "810px";
+    color: black;
+  }
+  .mobile {
     display: none;
-  }*/
+  }
 }
+
 @media screen and (min-width: 1400px) {
-    main::before {
-        content: "1400px";
-        color: red;
-    }
-  /*.mobile {
+  main::before {
+    content: "1400px";
+    color: red;
+  }
+  .mobile {
     display: none;
-  }*/
+  }
 }
