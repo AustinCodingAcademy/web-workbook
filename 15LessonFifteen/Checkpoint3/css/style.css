@@ -1,0 +1,107 @@
+.top{
+  height: 350px;
+  width: 100%;
+  background-image: url("../img/landscape.jpg");
+  background-size: cover;
+  background-size: 100% 100%;
+  background-position: center;
+  margin-top: 50px;
+}
+
+.page{
+  display: flex;
+  flex-direction: column;
+}
+.box0{
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+.image1{
+  height: 350px;
+  width: 100%;
+  background-image: url("../img/guy .jpg");
+  background-size: cover;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.article1{
+  height: 400px;
+  width: 100%;
+  background: #D5D5D5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image2{
+  width: 100%;
+  height: 50px;
+  background-size: cover;
+  background-size: 100% 100%;
+  background-position: center;
+  margin-top: 50px;
+}
+
+.p1{
+  margin-top: 30px;
+}
+.box3{
+  background-image: url("../img/picking.jpg");
+  height: 300px;
+  background-size: cover;
+  background-size: 100% 100%;
+  background-position: center;
+
+}
+.box4{
+height: 500px;
+border: red solid;
+margin-top: 400px;
+}
+
+
+
+
+@media screen and (min-width: 320px) {
+  .page::before {
+    content: "320px";
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 480px) {
+  .page::before {
+    content: "480px";
+    color: maroon;
+  }
+}
+@media screen and (min-width: 620px) {
+  .page::before {
+    content: "620px";
+    color: orange;
+  }
+}
+@media screen and (min-width: 810px) {
+  .page::before {
+    content: "810px";
+    color: black;
+   }
+  }
+
+}
+@media screen and (min-width: 1400px) {
+  .container::before {
+    content: "1400px";
+    color: red;
+  }
+
+}

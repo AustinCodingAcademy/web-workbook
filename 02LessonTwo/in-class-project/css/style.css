@@ -1,11 +1,55 @@
-table{
-  border-radius: 5px;
-  border: solid black;
-  margin-left: 510px;
+.container{
+  display: flex;
+  flex-direction: column;
 }
-td{
- font-size: 30px;
+.box1{
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  color: white;
 }
-h3{
+.box2{
+  width: 100%;
+  height: 200px;
+  background-color: red;
+  color: white;
   text-align: center;
+  justify-content: center;
+}
+.box3{
+  width: 100%;
+  height: 50px;
+  background-color: green;
+  color: white;
+}
+@media screen and (min-width: 320px) {
+  .page::before {
+    content: "320px";
+    font-family: Arial, sans-serif;
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2rem;
+    z-index: 9999;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .page::before {
+    content: "480px";
+    color: maroon;
+  }
+  .apple{
+    display: flex;
+  
+  }
+  .box2{
+    width: 30%;
+  }
+  .box3{
+    width: 30%;
+  }
 }
