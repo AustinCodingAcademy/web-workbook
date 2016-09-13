@@ -1,0 +1,172 @@
+body {
+  color: #333;
+  text-align: center;
+  font-family: "Roboto Mono";
+}
+
+.navbar-brand img {
+  position: absolute;
+  top: 0;
+}
+
+.navbar-fixed-top {
+  top: -1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Work Sans", sans-serif;
+}
+
+.hero {
+  background-image: url("http://bone.themanoid.com/images/office/03.jpg");
+  background-size: cover;
+  background-position: 50%;
+  height: 100vh;
+  padding: 120px 0;
+  position:relative;
+  min-height: 500px;
+}
+
+.target {
+  height: 50px;
+  position:absolute;
+  bottom: 0;
+
+}
+
+h1 {
+  font-size: 5em;
+  margin-top: 15vh;
+}
+
+h2 {
+  font-size: 2.2em;
+  font-family: "Roboto Mono";
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 75px 25px;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 1.7em;
+  font-family: "Work Sans";
+}
+
+.grid {
+  height: 600px;
+  position: relative;
+}
+
+.grid-item {
+  position: absolute;
+  width: 33.3333%;
+}
+
+.grid-item::before {
+  content: '';
+  display: block;
+  padding-top: 75.001%;
+}
+
+.grid .tall::before {
+  padding-top: 150%;
+}
+
+.grid-item:nth-child(1), .grid-item:nth-child(4) {
+  left: 0%;
+}
+
+.grid-item:nth-child(2), .grid-item:nth-child(5) {
+  left: 33.254%;
+}
+
+.grid-item:nth-child(3) {
+  left: 66.5873%;
+}
+
+.grid-item:nth-child(n+4) {
+  top: 293px;
+}
+
+.thumb {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.content {
+  background-color: #f0f0f0;
+  padding: 40px 25px;
+  margin: 0 -15px;
+  line-height: 2;
+}
+
+.plan {
+  background: #fff;
+  padding: 30px 0 40px;
+  margin-bottom: 30px;
+}
+
+.plan.highlighted {
+  background: #d7f7e3;
+  border-bottom: 5px solid #2e2e2e;
+}
+
+.price {
+  font-size: 2em;
+  padding: 15px 0 20px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.price span {
+  font-size: 1.3rem;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 5px 20px;
+  color: rgba(46,46,46,.5);
+}
+
+strong {
+  color: #2e2e2e;
+}
+
+.btn {
+  font-family: "Work Sans";
+  background: #2e2e2e;
+  border-radius: 0;
+  border: 0;
+  color: #fff;
+  padding: 12px 25px;
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-top: 30px;
+
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding-top: 90px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+}
