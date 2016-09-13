@@ -6,7 +6,6 @@ body {
   z-index: -500;
 }
 h1 {
-	font-family: Segoe UI Mono, sans-serif;
 	font-size: 60px;
 	font-style: normal;
 	font-variant: normal;
@@ -14,7 +13,6 @@ h1 {
 	line-height: 26.4px;
 }
 h2 {
-  font-family: Segoe UI Mono, sans-serif;
   font-size: 40px;
   font-style: normal;
   font-variant: normal;
@@ -23,7 +21,6 @@ h2 {
   padding-top: 31px;
 }
 h3 {
-	font-family: Segoe UI Mono, sans-serif;
 	font-size: 20px;
 	font-style: normal;
 	font-variant: normal;
@@ -31,7 +28,6 @@ h3 {
 	line-height: 15.4px;
 }
 p, a {
-	font-family: Segoe UI Mono, sans-serif;
 	font-size: 27px;
 	font-style: normal;
 	font-variant: normal;
@@ -151,6 +147,7 @@ a:link, a:visited, a:hover{
 }
 #harvest {
   text-align: center;
+  margin-top: 40px;
 }
 #harvest .title {
   font-size: 180px;
@@ -172,14 +169,16 @@ a:link, a:visited, a:hover{
 }
 #harvest-tiles {
   width: 80%;
-  height: 800px;
+  /*height: 800px;*/
   margin: 0 auto;
 }
 .harvest-tile {
-  border: 2px solid #696969;
-  height: 50%;
-  width: 48%;
-  margin: 10px 5px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 40%;
+  margin: 5%;
   float: left;
 
 }
@@ -190,27 +189,15 @@ a:link, a:visited, a:hover{
 }
 #htOne {
   background-image: url('https://images.unsplash.com/photo-1469719847081-4757697d117a?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 #htTwo {
   background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 #htThree {
   background-image: url('https://images.unsplash.com/photo-1440617711314-de01e4cddec6?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 #htFour {
   background-image: url('https://images.unsplash.com/photo-1453161535619-303d362ea39f?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 #portfolioList {
   position: relative;
@@ -218,13 +205,15 @@ a:link, a:visited, a:hover{
   visibility: ;
 }
 .lesson {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   height: 300px;
   text-align: center;
   margin: 0 0;
   position: relative;
   z-index: -2;
-
 }
 .imageShade {
   width: 100%;
@@ -233,158 +222,112 @@ a:link, a:visited, a:hover{
   z-index: -1;
   display: flex;
   justify-content: center;
-
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
 .lessonText {
   width: 100%;
   height: 300px;
   /*background-color: lightgray;*/
-  opacity: 0;
-  color: #2e2e2e;
+  opacity: 1;
+  color: #fff /*#2e2e2e*/;
   position: relative;
   visibility: visible;
   z-index: 0;
-  transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -webkit-transition: all .5s ease-in-out;
+  /*transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);*/
 }
-.pLink a {
-   color: #2e2e2e;
-   transition: all .5s ease-in-out;
-   -moz-transition: all .5s ease-in-out;
+.pLink > a {
+   color: #fff;
+   /*visibility: hidden;*/
+   opacity: 0;
+   transition: all 1s ease-in-out;
+   -moz-transition: all 1s ease-in-out;
    -webkit-transition: all .5s ease-in-out;
+   -o-transition: all 1s ease-in-out;
 }
-
-.imageShade:hover .pLink a {
-  color: #fff;
-  opacity: 1;
-  z-index: 100;
-}
-.imageShade:hover .lessonText {
+/*.imageShade:hover .lessonText {
+    color: #fff;
+}*/
+.imageShade:hover {
   background-color: #4a4a4a;
-  visibility: visible;
-  color: #fff;
+  /*visibility: visible;*/
   opacity: .9;
+}
+.imageShade:hover .pLink > a {
+  visibility: visible;
+  /*color: #fff;*/
+  opacity: 1;
+  /*z-index: 100;*/
 }
 .one {
   background-image: url('https://images.unsplash.com/photo-1469719847081-4757697d117a?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .two {
   background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .three {
   background-image: url('https://images.unsplash.com/photo-1440617711314-de01e4cddec6?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .four {
   background-image: url('https://images.unsplash.com/photo-1453161535619-303d362ea39f?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .five {
   background-image: url('https://images.unsplash.com/35/Ov8Hg5LlQriTimkB3PEl_kreativgrund_Weizenfeld.jpg?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1125&q=80&cs=tinysrgb');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .six {
   background-image: url('https://images.unsplash.com/photo-1444894423756-1bb106dce5a7?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1129&q=80&cs=tinysrgb');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .seven {
   background-image: url('https://images.unsplash.com/photo-1445122734110-5ccd170eded6?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=997&q=80&cs=tinysrgb');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .eight {
   background-image: url('https://images.unsplash.com/photo-1466801182732-9e4ea054c094?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=844&q=80');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .nine {
   background-image: url('https://images.unsplash.com/9/fields.jpg?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=907&q=80&cs=tinysrgb');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .ten {
   background-image: url('https://images.unsplash.com/photo-1440689165598-ac7dc9621a77?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .eleven {
   background-image: url('https://images.unsplash.com/10/wheels.jpg?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=997&q=80&cs=tinysrgb');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .twelve {
   background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .thirteen {
   background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .fourteen {
   background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .fifteen {
   background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .sixteen {
   background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .seventeen {
   background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .eighteen {
   background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .nineteen {
   background-image: url('https://images.unsplash.com/photo-1440033203376-20d7503203f1?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=2000&q=80');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .twenty {
   background-image: url('https://images.unsplash.com/photo-1467931701857-c66e9e144633?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1031&q=80');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 #philosophy {
   background-color: #1a1a1a;
