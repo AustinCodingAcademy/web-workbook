@@ -101,11 +101,69 @@ a {
     content: "620px";
     color: orange;
   }
+  .desktop {
+      width: 100%;
+      height: 400px;
+      display: flex;
+  }
   .mobile {
-    display: none;
+      display: none;
+  }
+  header {
+      margin: 0 5px;
+      background: url(../img/office.jpg);
+      background-size: cover;
+      background-position: center bottom;
   }
 
+  article {
+      width: 80%;
+      height: auto;
+      margin: 5px 0 5px 5px;
+      flex-basis: 48%;
+  }
+
+  section.left {
+      flex-flow: wrap;
+      display: flex;
+      width: 75%;
+      height: auto;
+  }
+
+  .pic-1 {
+    background: url(../img/02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
+
+  .pic-2 {
+    background: url(../img/07.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  .pic-3 {
+    background: url(../img/04.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  .pic-4 {
+    background: url(../img/05.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  section.right {
+    margin: 5px 5px 5px 0;
+    background: url(../img/03.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 35%;
+    height: auto;
+}
+  }
 
 @media screen and (min-width: 810px) {
   main::before {
