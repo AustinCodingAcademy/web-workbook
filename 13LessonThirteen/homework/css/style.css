@@ -1,0 +1,158 @@
+header{
+  background-image: url("https://kiravillarreal.github.io/intro-workbook/13LessonThirteen/homework/img/03.jpg");
+
+width:100%;
+height:400px;
+background-size:cover;
+background-position:center;
+
+}
+h1, h2, p{
+
+  font-family:courier;
+}
+
+h1{
+  font-size:1.7em;
+  padding-top:45px;
+  text-align:center;
+
+}
+
+header h1{
+  font-family:helvetica;
+
+}
+section{
+background-color:lightgrey;
+border-bottom:10px solid lightgrey;
+}
+
+a{
+  background-color:#2e2e2e;
+  color:white;
+  text-decoration:none;
+
+
+}
+
+.white{
+  background-color:white;
+  margin:10%;
+  margin-bottom:0;
+  text-align:center;
+}
+
+.green{
+  background-color:#d7f7e3;
+  margin:0 10%;
+  border-top:10px solid #d7f7e3;
+  text-align:center;
+}
+
+#hills{
+  background-image: url("https://kiravillarreal.github.io/intro-workbook/13LessonThirteen/homework/img/07.png");
+
+}
+
+#mountains{
+  background-image: url("https://kiravillarreal.github.io/intro-workbook/13LessonThirteen/homework/img/04.png");
+
+}
+
+#keyboard{
+  background-image: url("https://kiravillarreal.github.io/intro-workbook/13LessonThirteen/homework/img/02.png");
+
+}
+
+#city{
+  background-image: url("https://kiravillarreal.github.io/intro-workbook/13LessonThirteen/homework/img/05.png");
+
+}
+
+#big{
+  background-image: url("https://kiravillarreal.github.io/intro-workbook/13LessonThirteen/homework/img/03.png");
+
+}
+
+.laptop-only{
+  display:none;
+
+}
+
+/*media queries*/
+
+@media screen and (min-width: 320px) {
+  .page::before {
+    content: "320px";
+    color: green;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+
+}
+
+@media screen and (min-width: 480px) {
+  .page::before {
+    content: "480px";
+    color: maroon;
+  }
+
+}
+
+@media screen and (min-width: 620px) {
+  .page::before {
+    content: "620px";
+    color: orange;
+  }
+
+  .laptop-only{
+    display:flex;
+    justify-content:center;
+    height:600px;
+  }
+
+  .mobile-only{
+    display:none;
+  }
+
+  article{
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .laptop-only > article > div{
+    height: 50%;
+    margin: 2em;
+    background-size:cover;
+    background-position:cover;
+  }
+
+  section.laptop-only > article{
+    flex-basis:30%;
+  }
+
+#big{
+  height:100%;
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .page::before {
+    content: "810px";
+    color: black;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+   .page::before
+  {
+    content: "1400px";
+    color: black;
+  }
+}
