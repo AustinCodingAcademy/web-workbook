@@ -1,25 +1,30 @@
 header {
   background-color: #2BCDC0;
   text-align: center;
-  height: 400px;
+  height: 200px;
   color: white;
   padding-top: 200px;
-  width: 99%;
+  width: 100%;
 }
 .clearfix:after {
  content:"";
  display:block;
  clear:both;
  }
- @media {
 .bluebox {
-  /*background-color: #33A8DD;*/
+  background-color: #33A8DD;
+  height: 5%;
+  width: 100%;
 }
 .redbox {
-  /*background-color: #F66530;*/
+  background-color: #F66530;
+  height: 5%;
+  width: 100%;
 }
 .greenbox {
-  /*background-color: #2BCDC0;*/
+  background-color: #2BCDC0;
+  height: 5%;
+  width: 100%;
 }
 .box {
   width: 200px;
@@ -28,4 +33,37 @@ header {
   text-align: center;
   background-color: black;
   height: 300px;
+  padding: 45px 25px;
+}
+section {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    background-color: #33A8DD;
+    text-align: center;
+    height: 200px;
+    color: white;
+    padding-top: 200px;
+    width: 100%;
+  }
+  .box {
+    float: none;
+    width: 200px;
+    color: black;
+    text-align: center;
+    background-color: #F7F5F6;
+    height: 300px;
+    padding: 45px 25px;
+    margin: auto;
+  }
+  section {
+    display: block;
+    justify-content: center;
+    background-color: #F7F5F6;
+  }
 }
