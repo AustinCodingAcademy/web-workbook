@@ -31,6 +31,7 @@ article {
 
 #photos img {
   margin-bottom: 12.5%;
+  z-index: -1;
 }
 
 aside {
@@ -98,4 +99,46 @@ aside .row:first-of-type {
 span {
   font-size: 14px;
   color: #ccc;
+}
+
+.huv {
+  display: none;
+  visibility: hidden;
+  text-align: left;
+  background-color: (0, 0, 0, .8);
+  z-index: 1000;
+}
+
+.huv h4 {
+  position: absolute; top: 0;
+  color: #777;
+  padding-left: 30px;
+}
+
+.huv h3 {
+  position: absolute;
+  top: 80px;
+  color: #fff;
+  padding-left: 30px;
+}
+
+.huv p {
+  position: absolute;
+  top: 130px;
+  color: #777;
+  padding-left: 30px;
+  width: 80%;
+}
+
+.last h3 {
+  top: 550px;
+}
+
+/*.huv p:last-child {
+  top: 400px;
+}*/
+
+#photos img:hover ~ .huv {
+  display: block;
+  visibility: visible;
 }
