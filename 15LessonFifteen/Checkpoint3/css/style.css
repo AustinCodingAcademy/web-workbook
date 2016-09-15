@@ -2,7 +2,21 @@ body {
   margin: 0, auto;
   text-align: center;
   font-family: 'Open Sans', "Helvetica Neue",Helvetica,Arial,sans-serif;
+  padding: 0;
 }
+
+h1, h2, h3, h4, h5, p {
+    font-family: 'Georgia';
+}
+
+h3, h4, h5 {
+  font-style: italic;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
 
 .nav li {
   margin-right: 14px;
@@ -10,7 +24,7 @@ body {
 
 .navbar {
   border-bottom: 1px solid #fff;
-  margin-left: -10px;
+  overflow: hidden;
 }
 
 .navbar-brand img {
@@ -29,6 +43,9 @@ body {
   background-color: transparent;
 }
 
+.row {
+  max-width: 98%;
+}
 
 .navbar-brand {
   display: inline;
@@ -40,7 +57,11 @@ body {
   height: 36px;
 }
 
-.jumbotron {
+#hero {
+  max-width: 100%;
+}
+
+#hero {
   background-image: url("../img/wine-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -48,19 +69,207 @@ body {
   background-blend-mode: multiply;
   background-color: #ccc;
   height: 100vh;
-  text-align: center;
   color: #fff;
   margin-bottom: 0;
+  margin-right: 0;
+  padding-right: 0;
+  background-attachment: fixed;
+  overflow: hidden;
 }
 
 .Flogo {
   margin: 0 auto;
   opacity: .75;
   vertical-align: middle;
-  max-width: 100%;
-  margin-top: 20%;
+  max-width: 67.5%;
+  margin-top: 15%;
+  margin-left: 22.5%;
 }
 
 .social img {
-  height: 30px;
+  height: 16px;
+  padding: 0 8px;
+}
+
+#hero h5 {
+  font-size: 21px;
+  margin-top: 50px;
+  font-weight: 100;
+  line-height: 1.4;
+}
+
+#hero p {
+  font-family: 'Open Sans', "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  margin-top: 1.5%;
+  margin-bottom: 3.5%;
+}
+
+/*#establish {
+  height: 50vw;
+  max-height: 640px;
+  overflow: hidden;
+  padding: 0px;
+  width: 100%;
+}*/
+
+#establish .row {
+  width: 104%;
+}
+
+#establish .col-md-6 {
+  max-height: 70vh;
+}
+
+/*#establish img:first-of-type {
+  width: 100%;
+  position: absolute;
+  top: -200;
+  margin-right: 0;
+  padding-right: 0;
+  overflow: hidden;
+}*/
+
+.history {
+  max-width: 62.5%;
+  margin: 0 auto;
+  /*position: absolute;*/
+}
+
+#establish .history h5 {
+  color: #6a6a6a;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 35%;
+  letter-spacing: 2px;
+  margin-bottom: 5%;
+}
+
+#establish .history h4 {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 5%;
+}
+
+#establish .history p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #6a6a6a;
+}
+
+#establish .history img {
+  height: 15%;
+  margin: 0 auto;
+
+}
+
+.history p {
+  text-align: center;
+}
+
+.clearfix:after {
+content:"";
+display:block;
+clear:both;
+}
+
+.power {
+  height: 100%;
+  background-image: url("../img/wine16.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#testimonial {
+  max-height: 100vh;
+  background-image: url("../img/wine13.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  background-color: #777;
+  color: #fff;
+  height: 100%;
+}
+
+.hisCont {
+  height: 100%;
+}
+
+.testText {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 22%;
+}
+
+.testText h3 {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 5%;
+}
+
+.testText p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+#wine {
+  max-height: 100vh;
+  height: 100%;
+}
+
+#wine .row {
+  margin: 0 10%;
+}
+
+#wine img {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+#wine hr {
+ margin-top: 0;
+ color: black;
+ margin-bottom: 48px;
+}
+
+#wine h4 {
+  font-size: 24;
+  line-height: 32px;
+  font-weight: 300;
+  margin-bottom: 10%;
+}
+
+#wine h5 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 10%;
+}
+
+#wine a {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 2px solid #91a05c;
+  padding: 0 26px;
+  height: 40px;
+  min-width: 150px;
+  line-height: 36px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 0;
+  background-color: #91a05c;
+  padding: 10px 30px;
+  color: #fff;
+  margin-bottom: 20%;
+}
+
+#wine a:hover {
+  text-decoration: none;
 }
