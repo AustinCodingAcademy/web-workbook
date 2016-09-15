@@ -1,0 +1,178 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.navbar-brand {
+  font-size: 2em;
+  font-stretch: condensed;
+  text-transform: uppercase;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
+  color: #000;
+}
+
+.target {
+  bottom: 0;
+  height: 50px;
+  position: absolute;
+
+}
+
+h1, h3, .nav li, blockquote footer {
+  text-transform: capitalize;
+}
+
+h2, h3 {
+  font-family: serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 4.5em;
+  margin-top: 35vh;
+  margin-bottom: 15vh;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h2, h3, h4, p {
+  margin-top: 0;
+  margin-bottom: 24px;
+  line-height: 32px;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-top: 24px;
+}
+
+h4 {
+  opacity: 0.5;
+}
+
+blockquote {
+  font-style: italic;
+  border: 0;
+}
+
+blockquote footer {
+  font-style: normal;
+  color: inherit;
+}
+
+blockquote footer::before {
+  content: '';
+}
+
+.hero, .button {
+  color: #fff;
+}
+
+.hero {
+  /*background: url("../img/wine13.jpg") top/cover no-repeat;*/
+  background: rgba(0,0,0,0.7) top/cover no-repeat;
+  background-blend-mode: multiply;
+  height: 100vh;
+  position: relative;
+}
+
+.hero h2 {
+  margin: 18% 15% 24px 15%;
+  line-height: 42px;
+}
+
+.hero p {
+  margin: 0 15%;
+}
+
+.image-square {
+  height: 50vw;
+  max-height: 640px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+
+.image-square .image {
+  height: 100%;
+  overflow:hidden;
+}
+
+.image img {
+  left: 0;
+  top: -125px;
+  width: 100%;
+  position: absolute;
+}
+
+.image-square .content {
+  padding: 0 10%;
+  top: 23%;
+}
+
+.shop img {
+  max-width: 70%;
+}
+
+.shop article {
+  height: 100%;
+}
+
+.button {
+  background-color: #91a05d;
+  display: inline-block;
+  margin-bottom: 50px;
+  padding: 5px 15px;
+}
+
+.button:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+@media (max-width: 1100px) {
+  .image-square .content {
+    position: relative;
+    top: 5%;
+  }
+  .image-square {
+    height: auto;
+    max-height: 100000px;
+  }
+  .image-square .image {
+    height: 100vw;
+    max-height: 500px;
+    position: relative;
+  }
+  .image img {
+    top: -300px;
+  }
+  h4 {
+      margin-top: 24px;
+    }
+}
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .image img {
+    top: -645px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    height: auto;
+  }
+  .image img {
+    top: -125px;
+  }
+  .hero p {
+    margin-bottom: 30px;
+  }
+}
