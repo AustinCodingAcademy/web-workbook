@@ -1,12 +1,17 @@
-body {
-  font-family: georgi, sans-serif;
+h1, h2, h3, h4, h5, p {
+    font-family: 'Georgia';
+    font-style: italic;
 }
+
+/*NAVIGATION SECTION*/
+
 .navbar {
     margin-bottom: -21px;
 }
 .navbar-header img {
   height: 40px;
 }
+/*HERO SECTION OR SECTION 1*/
 .vines {
     background-image: url("http://foundry.mediumra.re/img/wine14.jpg");
     background-size: cover;
@@ -26,38 +31,46 @@ body {
 }
 .quote {
   font-size: 30px;
-  font-style: italic;
   padding: 60px 300px 20px 300px;
 }
 .david {
     font-size: 20px;
 }
-.est {
+
+/*SECTION 2 LEFT SIDE*/
+
+#est {
   font-size: 20px;
     padding-top: 200px;
     color: #6e6e6e;
 }
-.about h3 {
+#about h3 {
   font-size: 30px;
   padding: 20px 95px 30px 95px;
 }
-.about p {
+#about p {
   font-size: 20px;
   padding: 20px 95px 30px 95px;
   color: #6e6e6e;
 }
-.about img {
-    height: 50px;
+#about img {
+    height: 85px;
     margin: 0 auto;
 }
+
+/*SECTION 2 RIGHT SIDE*/
+
 .worker {
   background-image: url("http://foundry.mediumra.re/img/wine16.jpg");
   background-size: cover;
+  background-position: center;
   height: 800px;
-  margin: 0 auto;
-  margin-top: -20px;
+  /*margin: 0 auto;*/
   background-repeat: no-repeat;
 }
+
+/*HERO 2 OR SECTION 3*/
+
 .legs {
     background-image: url("http://foundry.mediumra.re/img/wine13.jpg");
     background-size: cover;
@@ -69,8 +82,7 @@ body {
 }
 .legs h1 {
   font-size: 35px;
-  font-style: italic;
-  padding-top: 85px;
+  padding-top: 150px;
   text-align: center;
   color: white;
   padding-left: 150px;
@@ -84,33 +96,50 @@ body {
     padding-right: 150px;
     padding-top: 20px;
 }
-.bottles {
+
+/*SECTION 4 WINE BOTTLES*/
+
+#bottles {
   text-align: center;
-  padding-bottom: 100px;
+  /*margin-bottom: 75px;*/
 }
-.bottles img {
+#bottles img {
     height: 550px;
     margin: 0 auto;
 }
-.bottles h3 {
-    font-style: italic;
-    font-size: 18px;
-    font-weight: bold;
-    padding-bottom: 20px;
-}
-.bottles p {
+#bottles h3 {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  margin-top: 0px;
+  padding-top: 20px;
+  border-top: 2px solid #e6e6e6;
+    }
+#bottles p {
   color: black;
     font-size: 17px;
     padding-bottom: 40px;
 }
-.bottles a {
+#bottles a {
     font-size: 18px;
     text-decoration: none;
     color: white;
     background-color: #9aa86a;
     padding: 10px 35px 10px 35px;
 }
-.awards {
+.shiraz {
+  margin-bottom: 75px;
+}
+.chardonnay {
+  margin-bottom: 75px;
+}
+.cabernet {
+  margin-bottom: 75px;
+}
+
+/*SECTION 5 AWARDS SECTION*/
+
+#awards {
     background-image: url("http://foundry.mediumra.re/img/wine12.jpg");
     background-size: cover;
     height: 450px;
@@ -121,22 +150,24 @@ body {
     color: white;
     text-align: center;
 }
-.awards h1 {
+#awards h1 {
   font-size: 41px;
-      font-style: italic;
-      padding-top: 20px;
-      padding-bottom: 70px;
-      text-align: center;
-      color: white;
+  padding-top: 20px;
+  padding-bottom: 70px;
+  text-align: center;
+  color: white;
     }
-.partner img {
+    #awards img{
   height: 218px;
   padding-bottom: 33px;
   margin: 0 auto;
     }
-.partner p {
+#awards p {
   font-size: 16px;
 }
+
+/*SECTION 6 LEFT SIDE*/
+
 .pouring-wine {
     background-image: url("http://foundry.mediumra.re/img/wine15.jpg");
     background-size: cover;
@@ -146,10 +177,14 @@ body {
     /*background-blend-mode: multiply;
     background-color: #6e6e6e;*/
 }
+
+/*SECTION 6 RIGHT SIDE*/
+
 .joinus {
   background-color: #e6e6e6;
   padding-left: 120px;
   padding-right: 120px;
+  padding-bottom: 10px;
 }
 .tasting h1 {
   font-size: 30px;
@@ -182,15 +217,15 @@ padding-top: 25px;
   .quote {
     padding: 60px 60px 20px 60px;
   }
-  .about h3 {
+  #about h3 {
     padding: 20px 15px 30px 15px;
   }
-  .about p {
+  #about p {
     font-size: 20px;
     padding: 20px 15px 30px 15px;
     color: #6e6e6e;
   }
-  .about img {
+  #about img {
       height: 50px;
       margin: 0 auto;
   }
@@ -206,4 +241,53 @@ padding-top: 25px;
   /*FOR PHONE ONLY*/
 
   @media (max-width: 767px) {
-    .chair{
+    .vines {
+        height: 620px;
+    }
+    .vines img {
+      height: 400px;
+    }
+    .quote {
+      font-size: 20px;
+      padding: 30px 30px 7px 30px;
+        }
+    .david {
+        font-size: 15px;
+    }
+    .about h3 {
+      font-size: 30px;
+      padding: 20px;
+    }
+    .about p {
+      font-size: 15px;
+      padding: 20px;
+    }
+    .about img {
+        height: 85px;
+        margin-bottom: 50px;
+    }
+    .legs {
+        height: 500px;
+    }
+    .legs h1 {
+      font-size: 30px;
+      padding-top: 75px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .legs p {
+        font-size: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 20px;
+    }
+    .bottles img {
+        height: 440px;
+    }
+    .shiraz, .chardonnay .cabernet {
+      margin-bottom: 45px;
+    }
+    .awards h1 {
+      font-size: 25px;
+    }
+  }
