@@ -1,0 +1,127 @@
+body {
+  text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #666;
+}
+
+.transparent {
+  background: none;
+  border-bottom: 1px solid #666;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.home, .testimonial {
+  color: white;
+}
+
+.home {
+  height: 800px;
+  background-image: url("../img/wine-bg.jpg");
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-position: bottom;
+}
+
+.home h1 {
+  font-size: 50px;
+  margin-top: 250px;
+  margin-bottom: 50px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+h4 {
+   font-style: italic;
+   font-size: 24px;
+   font-family: 'Georgia'; sans-serif;
+   font-weight: 300;
+}
+
+.testimonial h4 {
+  margin-top: 250px;
+  margin-bottom: 50px;
+}
+
+.about {
+  height: 800px;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.textboxleft {
+  padding: 100px 100px 0 100px;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: black;
+  font-size: 25px;
+}
+
+h6 {
+  color: grey;
+  margin: 100px 0 50px 0;
+  font-weight: lighter;
+  font-size: 16px;
+  font-family: 'Georgia';
+  font-style: italic;
+}
+
+.testimonial {
+  height: 800px;
+  background-image: url("../img/wine13.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.shiraz img, .chardonnay img, .merlot img {
+  width: 400px;
+  margin: 0 20px 0 20px;
+}
+
+.shiraz a, .chardonnay a, .merlot a  {
+  height: 10px;
+  width: 15px;
+  color: white;
+  background-color: #91A05D;
+  padding: 8px;
+}
+
+@media (max-width: 769px) {
+  .shiraz img, .chardonnay img, .merlot img {
+    margin: 0;
+  }
+  h6 {
+    margin-top: 10px;
+  }
+  .textboxleft {
+    padding: 15px 50px 20px 50px;
+  }
+  .shiraz, .chardonnay, .merlot {
+    margin-bottom: 50px;
+  }
+  .chardonnay .winetext {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .man {
+    padding-left: 90px;
+  }
+  .chardonnay .winetext {
+    padding-left: 0px;
+  }
+}
