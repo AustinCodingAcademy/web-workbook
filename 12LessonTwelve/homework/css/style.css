@@ -1,113 +1,74 @@
-/* global styles */
-body {
-  background: #000;
-}
+
 img {
-  display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 /* //global styles */
 
 /* .container */
-.container {
+.container{
+  display: flex;
+  flex-direction: column;
   background: #fff;
 }
-/* //.container */
-
-/* header */
 header {
   font-family: 'Lily Script One', cursive;
+  font-size: 2em;
   height: 200px;
+  width: 100%;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3em;
-}
-/* //header */
 
-/* section */
-section {
-  overflow: auto;
 }
-article {
-  margin-bottom: 60px;
+section{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ border: 1px solid #E7E7E7;
+ width: 100%;
+ margin: auto;
 }
-article > div {
-  font-family: sans-serif;
-  text-align: center;
-  border: 1px solid #a5a5aa;
-  margin: 0 3%;
-}
-.product-image {
+.box1{
   position: relative;
-  margin: 0;
+
 }
-.sale {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-  height: 30px;
-  line-height: 30px;
-  width: 50px;
-  text-transform: uppercase;
-  color: white;
-  background: #F04933;
-  border: 1px solid #dd4433;
-  font-size: 0.80em;
-  font-weight: 700;
-  text-align: center;
-}
-.sale::after {
-  content: "!";
-}
-[class^="price"] {
-  background: #66D9C1;
+.price{
+  background: #5dc1ab;
   border:1px solid #5dc1ab;
   color: #fff;
   font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  position: absolute;
-  right: 0;
-  bottom: 0;
   height: 30px;
   width: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
 }
-.price-change {
+article {
+  border-bottom: 1px solid #E7E7E7;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
-  width: 110px;
+  justify-content: center;
 }
-.price-change span {
-  font-size: 0.95em;
-  text-decoration: line-through;
+.b1{
+  width: auto;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-article h2 {
-  font-size: 0.80em;
-  font-weight: 600;
-  padding: 15px 0;
-  border-bottom: 1px solid #a5a5aa;
-}
-article a {
-  display: inline-block;
-  color: #fff;
+a{
+  background: #2C3533;
+  color: white;
+  width: 150px;
+  height: 50px;
   text-decoration: none;
-  text-transform: uppercase;
-  height: 40px;
-  line-height: 40px;
-  width: 110px;
-  margin: 30px 0;
-  background: #343436;
-  font-size: 0.70em;
-  font-weight: 600;
-  border: 1px solid #a5a5aa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-/* //section */
 
 
 /**
@@ -130,51 +91,47 @@ article a {
     content: "480px";
     color: maroon;
   }
-  article {
-    margin-left: 9%;
-    margin-right: 9%;
-  }
 }
 @media screen and (min-width: 620px) {
   .container::before {
     content: "620px";
     color: orange;
   }
-  section {
-    display: flex;
-    flex-flow: wrap;
-  }
-  article {
-    margin: 0 auto;
-    margin-bottom: 60px;
-    flex-basis: 300px;
-  }
-  .price {
-    width: 70px;
-  }
+.box0{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.box1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section{
+  flex-basis: 45%;
+  margin: auto;
+}
+
 }
 @media screen and (min-width: 810px) {
   .container::before {
     content: "810px";
     color: black;
   }
-  article {
-    flex-basis: 350px;
+  .box1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  section{
+    flex-basis: 20%;
+    margin: auto;
   }
 }
 @media screen and (min-width: 1400px) {
-  body {
-    background: #000 url("http://screenmediadaily.com/wp-content/uploads/2014/06/shopping_malls_oohmedia.jpg") no-repeat center;
-    background-size: cover;
+  .container::before{
   }
-  .container::before {
-    content: "1400px";
-    color: red;
-  }
-  .container {
-    max-width: 90%;
-    margin: 50px auto;
-    background-repeat: no-repeat;
-  }
+
 }
-ba
