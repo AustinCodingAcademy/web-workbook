@@ -1,10 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Winery Checkpoint 3 - Bootstrap</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--Font Awesome-->
+  <script src="https://use.fontawesome.com/2f9632c084.js"></script>
+  <!--My CSS -->
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 
+<!--   COLLAPSIBLE NAV BAR   -->
+
+  <nav class="navbar transparent navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">FOUNDRY</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Testimonial</a></li>
+          <li><a href="#">Wine Selection</a></li>
+      </div>
+    </div>
+  </nav>
+
+<!--  HERO 1  -->
+
+  <main>
+    <div class="jumbotron hero1">
+      <div class="jumboTxt text-center">
+        <div class="row">
+          <div class="col-lg-4 col-lg-offset-4 col-sm-6 col-sm-offset-3">
+            <img class="fImg img-responsive" src="img/fjumbo.png"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-lg-offset-4 col-sm-6 col-sm-offset-3">
+            <p>"Without doubt, one of the most consistently high-quality wineries in the Barossa region"</p>
+          </div>
+        </div>
+        <div class="col-sm-12 hidden-lg text-center">
+          <p>David Halladay - Respected Wino</p>
+        </div>
+        <div class="col-sm-12 col-lg-12">
+          <a href="">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a href="">
+            <i class="fa fa-vimeo" aria-hidden="true"></i>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!--   "EST"  TXT   -->
+
+      <div class="row established">
+        <div class="col-sm-12 hidden-lg">
+          <img class="img-responsive powerwasherB" src="img/wine16.jpg"/>
+        </div>
+      </div>
+
+
+        <div class="col-lg-6 text-center">
+          <div class="estTxt">
+            <p class="est"><span>&middot;</span> EST. 1968 <span>&middot;</span></p>
+            <h4>Combining over 60 years of hard work and shared family knowledge</h4>
+            <p>Sed ut perspiciates unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
+          <img class="img-responsive signature" src="img/signature.png"/>
+        </div>
+
+        <div class="col-lg-6 visible-lg">
+          <img class="img-responsive powerwasher" src="img/wine16.jpg"/>
+        </div>
+      </div>
+
+  <!--  HERO 2   -->
+
+    <div class="jumbotron hero2 text-center">
+      <div class="col-lg-12 hero2Txt">
+        <h4 class="producingTxt">"We've been producing fine wine for over 65 years, I think we know what we're talking about"</h4>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      </div>
+    </div>
+
+  <!-- WINE  BOTTLES  -->
+
+    <div class="container">
+      <div class="row text-center wineBottles">
+
+        <!--  LEFT  -->
+        <div class="col-lg-4 col-sm-4">
+          <img class="img-responsive" src="img/wine3.jpg" alt="wine pic"/>
+          <h4>Foundry Shiraz</h4>
+          <p class="leftWine">"Aged 5 years in solid, French Oak barrels. Sports notes of pepper and blackberry"</p>
+          <div class="visitLink text-center">
+            <a href=#>VISIT SHOP</a>
+          </div>
+        </div>
+        <!--   MIDDLE  -->
+        <div class="col-lg-4 col-sm-4">
+          <img class="img-responsive" src="img/wine6.jpg" alt="wine pic"/>
+          <h4>Foundry Chardonnay</h4>
+          <p>"A rich, fruit palet with subtle Oak influence and a lingering dry, fresh finish"</p>
+          <div class="visitLink text-center">
+            <a href=#>VISIT SHOP</a>
+          </div>
+        </div>
+        <!--   RIGHT   -->
+        <div class="col-lg-4 col-sm-4">
+          <img class="img-responsive " src="img/wine7.jpg" alt="wine pic"/>
+          <h4 class="rightWine">Foundry Merlot</h4>
+          <p class="rightWine">"Generous sweet blackcurrant and mulberry character with soft, velvety tannins"</p>
+          <div class="visitLink text-center">
+            <a href=#>VISIT SHOP</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </main>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
