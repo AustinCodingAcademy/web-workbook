@@ -4,55 +4,101 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Checkpoint 3</title>
+        <!-- CSS RESET -->
     <link rel="stylesheet" href="css/css-reset.css">
+        <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans" rel="stylesheet">
+        <!-- BOOTSTRAP FRAMEWORK -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <!-- FONT AWESOME -->
+    <script src="https://use.fontawesome.com/a11441d40e.js"></script>
+        <!-- MY CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section id="hero" class="row">
-        <img class="img-responsive" src="img/foundrylogo.png" alt="Foundry logo" />
-        <p><span class="italic">“Without doubt, one of the most consistently high-quality wineries in the Barossa region”</span><br>Pope Francis - Respected Sommelier</p>
-    </section>
-    <section id="about" class="row">
-        <div class="abouttext col-lg-6">
-            <p>◆  EST. 1954  ◆</p>
-            <h1>Combining over 60 years of hard work and shared family knowledge</h1>
-            <p>Our grapes can be contained by no bowl, and our feet have developed the softest soles. We strive to bring you the sweetest, juiciest, grapiest grapes this side of the pond. And did we mention our grapes are fresh? Even the Pope thinks so!</p>
-            <img class="img-responsive" src="img/foundrysig.png" alt="Founder signature" />
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="aboutimg col-lg-6 col-lg-visible">
-            <img class="img-responsive" src="img/powerwash.jpg" alt="clean &amp; quality" />
+    </nav>
+    <section id="hero">
+        <div class="row">
+            <img class="img-responsive" src="img/foundrylogo.png" alt="Foundry logo" />
+            <p><span class="quote">“Without doubt, one of the most consistently high-quality wineries in the Barossa region”</span><br>Pope Francis - Respected Sommelier</p>
         </div>
     </section>
-    <section id="testimonial" class="row">
-        <div class="testimonialbox">
-            <h1>We've been producing fine wine for over 65 years,<br>I think we know what we're talking about.</h1>
-            <p>I mean, seriously? I hope you were joking when you suggested we did not know what we are talkin about. Oh you didn't imply such? My bad.</p>
+    <section id="about">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="abouttext col-lg-6">
+                    <p>◆  EST. 1954  ◆</p>
+                    <h1>Combining over 60 years of hard work and shared family knowledge</h1>
+                    <p>Our grapes can be contained by no bowl, and our feet have developed the softest soles. We strive to bring you the sweetest, juiciest, grapiest grapes this side of the pond. And did we mention our grapes are fresh? Even the Pope thinks so!</p>
+                    <img class="foundersig img-responsive" src="img/foundrysig.png" alt="Founder signature" />
+                </div>
+                <div class="powerwash col-lg-6 visible-lg"></div>
+    </section>
+    <section id="testimonial">
+        <div class="row">
+            <div class="testimonialbox">
+                <h1 class="quote">"We've been producing fine wine for over 65 years,<br>I think we know what we're talking about."</h1>
+                <p>I mean, seriously? I hope you were joking when you suggested we did not know what we are talkin about. Oh you didn't imply such? My bad.</p>
+            </div>
         </div>
     </section>
-    <section id="product" class="row">
+    <section id="product">
+        <div class="row">
+            <div class="container">
+                <div class="productbox col-lg-4">
+                    <img class="img-responsive" src="img/wine1.jpg" alt="Uva Shiraz" />
+                    <hr>
+                    <h1>Foundry Shiraz</h1>
+                    <p>Aged five years in solid, French Oak barrels sport notes of pepper and blackberry</p>
+                    <div class="productlink"><a href="#">Visit shop</a></div>
+                </div>
+                <div class="productbox col-lg-4">
+                    <img class="img-responsive" src="img/wine2.jpg" alt="Uva Chardonnay" />
+                    <hr>
+                    <h1>Foundry Chardonnay</h1>
+                    <p>A rich fruit palet with subtle Oak influence and a lingering dry, fresh finish</p>
+                    <div class="productlink"><a href="#">Visit shop</a></div>
+                </div>
+                <div class="productbox col-lg-4">
+                    <img class="img-responsive" src="img/wine3.jpg" alt="Uva Merlot" />
+                    <hr>
+                    <h1>Foundry Merlot</h1>
+                    <p>Generous sweet blackcurrant and mulberry character with soft, velvety tannins</p>
+                    <div class="productlink"><a href="#">Visit shop</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="socialmedia">
         <div class="container">
-            <div class="productbox col-lg-4">
-                <img class="img-responsive" src="img/wine1.jpg" alt="Uva Shiraz" />
-                <h1>Uva Shiraz</h1>
-                <p>Aged five years in solid, French Oak barrels sport notes of pepper and blackberry</p>
-                <a href="#">Visit shop</a>
-            </div>
-            <div class="productbox col-lg-4">
-                <img class="img-responsive" src="img/wine2.jpg" alt="Uva Chardonnay" />
-                <h1>Uva Chardonnay</h1>
-                <p>A rich fruit palet with subtle Oak influence and a lingering dry, fresh finish</p>
-                <a href="#">Visit shop</a>
-            </div>
-            <div class="productbox col-lg-4">
-                <img class="img-responsive" src="img/wine3.jpg" alt="Uva Merlot" />
-                <h1>Uva Merlot</h1>
-                <p>Generous sweet blackcurrant and mulberry character with soft, velvety tannins</p>
-                <a href="#">Visit shop</a>
+            <div class="row">
+                <div class="socialicons">
+                    <a href="#"><i class="fa fa-envelope-o fa-5x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-5x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-facebook fa-5x" aria-hidden="true"></i></a>
+                </div>
             </div>
         </div>
-    </section>
-
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
