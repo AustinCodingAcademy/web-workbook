@@ -1,86 +1,97 @@
-body{
-
+body {}
+h1 {
+    font-family: 'Lily Script One', cursive;
+    text-align: center;
 }
-
-
-
-h1{
-  font-family: 'Lily Script One', cursive;
-  text-align: center;
-}
-
-
 a:hover {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
 }
-
-h3 a{
-  color: black;
-  font-size: 15px;
+h3 a {
+    color: black;
+    font-size: 15px;
 }
-
-h3 a:hover{
-  color: #ade3d1;
+h3 a:hover {
+    color: #ade3d1;
 }
-
-
 img {
-  width: 300px;
-  height: 300px;
+    width: 300px;
+    height: 300px;
 }
-
-.main-container{
-  text-align: center;
-  border: solid 1px #E5E5E5;
-  width: 302px;
+.main-container {
+    text-align: center;
+    border: solid 1px #E5E5E5;
+    width: 302px;
 }
-
-
-.product{
-  position: relative;
+.product:hover {
+    overflow: hidden;
 }
-
-
-.price{
-  margin: -35px 200px auto;
-  font-size: 20px;
-  font-weight: bold;
-  height:35px;
-  width: 100px;
-  background-color: #66d9c1;
-  color:white;
+.price {
+    margin: -35px 200px auto;
+    font-size: 20px;
+    font-weight: bold;
+    height: 35px;
+    width: 100px;
+    background-color: #66d9c1;
+    color: white;
 }
-
-.price:hover{
-  background-color: gray;
+.price:hover {
+    background-color: gray;
 }
-
-.cart{
-  height: 30px;
-  width: 120px;
-  background-color: gray;
-  color: white;
-  text-align: center;
-  margin: 20px auto;
-  padding-top: 4px;
+.main-container:hover .price {
+    background-color: gray;
 }
-
-.cart:hover{
-  text-decoration: none;
-  background-color: #66d9c1;
+.main-container:hover img {
+    transform: scale(1.1);
+    transition: all 500ms ease;
+    vertical-align: middle;
 }
-
-.cart-words{
-  text-decoration: none;
-  color: white;
+.product, .main-container:hover {
+    overflow: hidden;
 }
-
-.price-box{
-  position: relative;
+#price-flying {
+    margin: -35px 160px auto;
+    font-size: 20px;
+    font-weight: bold;
+    height: 35px;
+    width: 140px;
+    background-color: #66d9c1;
+    color: white;
 }
-
-.happy-container{
-  border-bottom: 1px solid #E5E5E5;
-  margin: 30px auto 30px auto;
+#price-flying:hover {
+    background-color: gray;
+}
+.on-sale {
+    height: 30px;
+    width: 50px;
+    color: white;
+    padding: 4px 8px;
+    margin-bottom: -30px;
+    background: red;
+    position: absolute;
+    z-index: 100;
+}
+.cart {
+    height: 30px;
+    width: 120px;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    margin: 20px auto;
+    padding-top: 4px;
+}
+.cart:hover {
+    text-decoration: none;
+    background-color: #66d9c1;
+}
+.cart-words {
+    text-decoration: none;
+    color: white;
+}
+.price-box {
+    position: absolute;
+}
+.happy-container {
+    border-bottom: 1px solid #E5E5E5;
+    margin: 30px auto 30px auto;
 }
