@@ -3,13 +3,23 @@ body {
     font-family: 'Crimson Texts', serif;
 }
 
-.navbar {
-    opacity: 0.5;
+.mynav {
+    /*opacity: 0.5;*/
     padding-right: 5%;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.navbar-toggler {
-    margin-top: 1%;
+.mytoggle {
+    margin-top: 2%;
+}
+
+.mybrand {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.mynavlinks {
+    text-transform: uppercase;
 }
 
 #hero {
@@ -59,6 +69,13 @@ body {
 
 .abouttext h1 {
     margin-top: 5%;
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.abouttext p {
+    font-size: 20px;
+    font-weight: 100;
 }
 
 .abouttext p:nth-child(3) {
@@ -99,11 +116,12 @@ body {
 }
 
 .testimonialbox h1 {
-    font-size: 40px;
+    font-size: 54px;
+    font-weight: 400;
 }
 
 .testimonialbox p {
-    font-size: 20px;
+    font-size: 26px;
     width: 60%;
     margin: 2% auto 0 auto;
     font-weight: 100;
@@ -111,7 +129,6 @@ body {
 
 #product {
     width: 100%;
-    height: 700px;
 }
 
 .productbox {
@@ -152,6 +169,7 @@ body {
 
 .socialicons {
     text-align: center;
+    margin-top: 5%;
 }
 
 .socialicons a {
@@ -166,3 +184,129 @@ body {
   clear: both;
   height: 0;
 }
+
+
+
+/*The following is for mobile*/
+
+    @media (max-width: 767px) {
+        #hero img {
+            margin: 20% auto 1% auto;
+            width: 50%;
+        }
+
+        #hero span {
+            font-size: 24px;
+        }
+
+        #hero p {
+            width: 80%;
+            margin: 8% auto;
+            font-size: 20px;
+        }
+
+        .aboutbox {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .abouttext h1 {
+            font-size: 26px;
+        }
+
+        .abouttext p {
+            font-size: 20px;
+        }
+
+        .testimonialbox {
+            width: 80%;
+            margin: 25% auto;
+        }
+
+        .testimonialbox h1 {
+            font-size: 28px;
+        }
+
+        .testimonialbox p {
+            font-size: 20px;
+            margin-top: 10%;
+        }
+
+        .productbox {
+            border-bottom: 2px solid #999;
+            padding-top: 1%;
+        }
+
+        .productbox h1 {
+            padding-top: 0;
+        }
+
+        .productbox p {
+            padding-top: 0;
+        }
+
+        .productbox a {
+            padding: 2% 6%;
+        }
+
+        .productlink {
+            margin: 4% 0;
+        }
+    }
+
+/*The following is for tablets*/
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        #hero img {
+            margin: 8% auto 1% auto;
+        }
+
+        #hero span {
+            font-size: 32px;
+        }
+
+        #hero p {
+            font-size: 24px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .aboutbox {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .testimonialbox {
+            width: 80%;
+            margin: 23% auto 0 auto;
+        }
+
+        .testimonialbox h1 {
+            font-size: 32px;
+        }
+
+        .testimonialbox p {
+            font-size: 24px;
+        }
+
+        .productbox {
+            border-bottom: 2px solid #999;
+            padding-top: 1%;
+        }
+
+        .productbox h1 {
+            padding-top: 0;
+        }
+
+        .productbox p {
+            padding-top: 0;
+        }
+
+        .productbox a {
+            padding: 2% 6%;
+        }
+
+        .productlink {
+            margin: 4% 0;
+        }
+    }

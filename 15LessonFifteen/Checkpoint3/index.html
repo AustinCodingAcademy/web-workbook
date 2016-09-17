@@ -16,22 +16,30 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="mynav navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <button type="button" class="mytoggle navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">WebSiteName</a>
+                <a class="mybrand navbar-brand" href="#">Foundry</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Page 1</a></li>
-                    <li><a href="#">Page 2</a></li>
-                    <li><a href="#">Page 3</a></li>
+                <ul class="mynavlinks nav navbar-nav navbar-right">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonial">Testimonial</a></li>
+                    <li><a href="#product" class="visible-lg">Product</a></li>
+                    <li class="dropdown hidden-lg">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Product<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#shiraz">Shiraz</a></li>
+                            <li><a href="#chardonnay">Chardonnay</a></li>
+                            <li><a href="#merlot">Merlot</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -46,9 +54,11 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="abouttext col-lg-6">
-                    <p>◆  EST. 1954  ◆</p>
-                    <h1>Combining over 60 years of hard work and shared family knowledge</h1>
-                    <p>Our grapes can be contained by no bowl, and our feet have developed the softest soles. We strive to bring you the sweetest, juiciest, grapiest grapes this side of the pond. And did we mention our grapes are fresh? Even the Pope thinks so!</p>
+                    <div class="aboutbox">
+                        <p>◆  EST. 1954  ◆</p>
+                        <h1>Combining over 60 years of hard work and shared family knowledge</h1>
+                        <p>Our grapes can be contained by no bowl, and our feet have developed the softest soles. We strive to bring you the sweetest, juiciest, grapiest grapes this side of the pond. And did we mention our grapes are fresh? Even the Pope thinks so!</p>
+                    </div>
                     <img class="foundersig img-responsive" src="img/foundrysig.png" alt="Founder signature" />
                 </div>
                 <div class="powerwash col-lg-6 visible-lg"></div>
@@ -57,28 +67,28 @@
         <div class="row">
             <div class="testimonialbox">
                 <h1 class="quote">"We've been producing fine wine for over 65 years,<br>I think we know what we're talking about."</h1>
-                <p>I mean, seriously? I hope you were joking when you suggested we did not know what we are talkin about. Oh you didn't imply such? My bad.</p>
+                <p>I mean, seriously? I hope you were joking when you suggested we do not know what we are talkin about. Oh you didn't imply such? My bad.</p>
             </div>
         </div>
     </section>
     <section id="product">
         <div class="row">
             <div class="container">
-                <div class="productbox col-lg-4">
+                <div id="shiraz" class="productbox col-lg-4">
                     <img class="img-responsive" src="img/wine1.jpg" alt="Uva Shiraz" />
                     <hr>
                     <h1>Foundry Shiraz</h1>
                     <p>Aged five years in solid, French Oak barrels sport notes of pepper and blackberry</p>
                     <div class="productlink"><a href="#">Visit shop</a></div>
                 </div>
-                <div class="productbox col-lg-4">
+                <div id="chardonnay" class="productbox col-lg-4">
                     <img class="img-responsive" src="img/wine2.jpg" alt="Uva Chardonnay" />
                     <hr>
                     <h1>Foundry Chardonnay</h1>
                     <p>A rich fruit palet with subtle Oak influence and a lingering dry, fresh finish</p>
                     <div class="productlink"><a href="#">Visit shop</a></div>
                 </div>
-                <div class="productbox col-lg-4">
+                <div id="merlot" class="productbox col-lg-4">
                     <img class="img-responsive" src="img/wine3.jpg" alt="Uva Merlot" />
                     <hr>
                     <h1>Foundry Merlot</h1>
