@@ -1,0 +1,617 @@
+/**
+** Generic Styles
+**/
+html {
+  font-size: 62.5%;
+}
+
+* {
+  font-family: 'Fira Sans', sans-serif;
+  /*color: hex #cc5500; /*Burnt Orange*/
+  color: #fe9515;
+}
+
+body {
+  position: relative;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  color: #fe9515;
+  /*color: hex #cc5500; /*Burnt Orange*/
+}
+
+.desktop{
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+/**
+** NAV Bar
+**/
+
+nav img {
+  max-width: 30px;
+  max-height: 30px;
+}
+.intro {
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  padding-left: 15px;
+}
+
+nav .intro {
+  display: flex;
+  justify-content: left;
+  padding-top: 10px;
+}
+
+nav .intro a {
+  padding-left: 30px;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay {
+  /*border: 1px solid blue;*/
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.3);
+  display: flex;
+  flex-direction: column;
+}
+/**
+** Header
+**/
+
+header {
+  /*border: 1px solid red;*/
+  background-image: url('../img/sunrise.jpg');
+  max-width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: left;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/*.headerimg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}*/
+
+.headertext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20%;
+  padding-right: 40%;
+}
+
+.headertext h1 {
+  font-size: 8rem;
+}
+
+.headertext p {
+  font-size: 2rem;
+  border-bottom: 1px solid #df751c;
+}
+
+/*.headertext img {
+  max-width: 100%;
+  max-height: 100%;
+  height: 500px;
+  position: absolute;
+  overflow: hidden;
+  display: block;
+  padding: 0;
+  margin: 0;
+}*/
+
+
+
+
+/**
+** About
+**/
+.about {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  align-items: center;
+  /*background-color: red;*/
+  /*background-color: #0a0809;*/
+  background-color:  #001736;
+}
+.background{
+  display: block;
+  /*flex-direction: column;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  text-align: center;
+  /*margin-top: 30px;*/
+}
+
+/**
+about
+**/
+/*
+Flip Animation
+*/
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 100%;
+	height: 150px;
+  /*background-color: gray;*/
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.8s;
+	transform-style: preserve-3d;
+	position: relative;
+  /*background-color: #814831;*/
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+  background-image: url('../img/smokylake.jpg');
+  background-size: cover;
+  overflow: hidden;
+}
+
+
+
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+  /*background-color: #003678;*/
+  background-image: url('../img/smokylake.jpg');
+  background-color: #f9f4ee;
+  background-size: cover;
+  background-position: right bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+
+}
+.back h1 {
+  font-size: 3rem;
+  padding-top: 5%;
+  padding-left:5%;
+}
+.back h1 span {
+  border-bottom: 1px solid #fe9515;
+}
+/*.back p {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}*/
+
+
+
+/**
+Education
+**/
+/*
+Flip Animation
+*/
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .educationfront, .educationback {
+	width: 100%;
+	height: 150px;
+  /*background-color: gray;*/
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.8s;
+	transform-style: preserve-3d;
+	position: relative;
+  /*background-color: #814831;*/
+}
+
+/* hide back of pane during swap */
+.educationfront, .educationback {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* front pane, placed above back */
+.educationfront {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+  background-image: url('../img/book.jpg');
+  background-size: cover;
+  overflow: hidden;
+}
+
+
+
+
+/* back, initially hidden pane */
+.educationback {
+	transform: rotateY(180deg);
+  /*background-color: #003678;*/
+  background-image: url('../img/book.jpg');
+  background-color: #f9f4ee;
+  background-size: cover;
+  background-position: right bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+.educationback h1 {
+  font-size: 3rem;
+  padding-top: 5%;
+  padding-left:5%;
+  border-bottom: 1px solid;
+  margin-bottom: 5px;
+
+}
+
+.educationback p {
+  padding-bottom: 5px;
+  color: #fed616;
+}
+
+.educationoverlay {
+  /*border: 1px solid blue;*/
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/**
+Education
+**/
+/*
+Flip Animation
+*/
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .skillsfront, .skillsback {
+	width: 100%;
+	height: 150px;
+  /*background-color: gray;*/
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.8s;
+	transform-style: preserve-3d;
+	position: relative;
+  /*background-color: #814831;*/
+}
+
+/* hide back of pane during swap */
+.skillsfront, .skillsback {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* front pane, placed above back */
+.skillsfront {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+  background-image: url('../img/forest.jpg');
+  background-size: cover;
+  overflow: hidden;
+}
+
+
+
+
+/* back, initially hidden pane */
+.skillsback {
+	transform: rotateY(180deg);
+  /*background-color: #003678;*/
+  background-image: url('../img/forest.jpg');
+  background-color: #f9f4ee;
+  background-size: cover;
+  background-position: right bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+.skillsback h1 {
+  font-size: 3rem;
+  padding-top: 5%;
+  padding-left:5%;
+  border-bottom: 1px solid;
+  margin-bottom: 5px;
+
+}
+
+.skillsback p {
+  padding-bottom: 5px;
+  color: #fed616;
+}
+
+.skillsoverlay {
+  /*border: 1px solid blue;*/
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.skillsul {
+  display: flex;
+}
+
+/**
+Bio
+**/
+/*
+Flip Animation
+*/
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .biofront, .bioback {
+	width: 100%;
+	height: 150px;
+  /*background-color: gray;*/
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.8s;
+	transform-style: preserve-3d;
+	position: relative;
+  /*background-color: #814831;*/
+}
+
+/* hide back of pane during swap */
+.biofront, .bioback {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* front pane, placed above back */
+.biofront {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+  background-image: url('../img/leaf.jpg');
+  background-size: cover;
+  overflow: hidden;
+}
+
+
+
+
+/* back, initially hidden pane */
+.bioback {
+	transform: rotateY(180deg);
+  /*background-color: #003678;*/
+  background-image: url('../img/leaf.jpg');
+  background-color: #f9f4ee;
+  background-size: cover;
+  background-position: right bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+
+}
+.bioback h1 {
+  font-size: 3rem;
+  padding-top: 5%;
+  padding-left:5%;
+}
+.bioback h1 span {
+  border-bottom: 1px solid #fe9515;
+}
+
+.biooverlay {
+  /*border: 1px solid red;*/
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/**
+** Work
+**/
+.work {
+  height: 480px;
+  background-color: yellow;
+}
+/**
+** Contact
+**/
+.contact {
+  height: 480px;
+  background-color: orange;
+}
+/**
+** Footer
+**/
+footer {
+  height: 480px;
+  background-color: blue;
+}
+
+/**
+* Media Queries
+**/
+@media screen and (min-width: 320px) {
+  .container::before {
+    content: "320px";
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+    z-index: 2000;
+  }
+
+}
+@media screen and (min-width: 480px) {
+  .container::before {
+    content: "480px";
+    color: maroon;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+
+}
+@media screen and (min-width: 620px) {
+  .container::before {
+    content: "620px";
+    color: orange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+
+}
+@media screen and (min-width: 810px) {
+  .container::before {
+    content: "810px";
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+
+}
+@media screen and (min-width: 1400px) {
+  .container::before {
+    content: "1400px";
+    color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+
+}

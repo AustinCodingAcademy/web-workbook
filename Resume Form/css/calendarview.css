@@ -1,0 +1,99 @@
+div.calendar
+{
+  color: #000;
+  font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+  -moz-box-shadow:0px 0px 8px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow:0px 0px 8px rgba(0, 0, 0, 0.5);
+  box-shadow:0px 0px 8px rgba(0, 0, 0, 0.5);
+  
+}
+
+div.calendar.popup
+{
+  margin-left: -40px;
+  margin-top: -100px;
+  z-index:100000;
+}
+div.calendar td.weekend{
+    background:#b5cfe9;
+}
+div.calendar .today{
+    background: #f9621a !important;
+}
+div.calendar .title, div.calendar .button{
+    color:#f9621a;
+}
+div.calendar table
+{
+  background-color: #eee;
+  border: 1px solid #aaa;
+  border-collapse: collapse;
+}
+
+div.calendar thead {
+  background-color: white;
+}
+
+div.calendar td,
+div.calendar th
+{
+  font-size: 11px;
+  padding: 3px;
+  text-align: center;
+}
+
+div.calendar td.title
+{
+  font-weight: bold;
+}
+
+div.calendar th
+{
+  background: #ddd;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  font-weight: bold;
+  color: #555;
+}
+
+div.calendar tr.days td {
+  width: 2em;
+  color: #555;
+  text-align: center;
+  cursor: pointer;
+}
+
+div.calendar tr.days td:hover:not(.unselectable),
+div.calendar td.button:hover:not(.unselectable)
+{
+  background-color: #34ABFA;
+  cursor: pointer;
+}
+
+.unselectable {
+  cursor: default !important;
+}
+
+div.calendar tr.days td:active
+div.calendar td.button:active
+{
+  background-color: #cde;
+}
+
+div.calendar tr.days td.selected
+{
+  font-weight: bold;
+  background-color: #fff;
+  color: #000;
+}
+
+div.calendar tr.days td.today
+{
+  font-weight: bold;
+  color: #D50000;
+}
+
+div.calendar tr.days td.otherDay
+{
+  color: #bbb;
+}

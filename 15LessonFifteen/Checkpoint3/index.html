@@ -177,15 +177,37 @@
 
 <script>
 
-$('body').scrollspy({ target: '#navbar-default' })
-</script>
-<script>
+$('body').scrollspy({
+  target: '.navbar-default',
+  offset: 20
+})
 
 $('div > ul > li > a, .navbar-brand').bind('click', function() {
   $('html, body').stop().animate({
     scrollTop: $($(this).attr('href')).offset().top - 50
   }, 1500, 'easeInOutExpo');
   event.preventDefault();
+});
+// Add smooth scrolling on all links inside the navbar
+$("#example-navbar-collapse a, .navbar-brand").on('click', function(event) {
+  // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800, function() {
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  } // End if
 });
 </script>
 <script>
@@ -198,7 +220,17 @@ $('.animated').click(function() {
   }, 10);
 });
 </script>
+<script>
+var didScroll = false;
+$(window).scroll(function() {     didScroll = true; });
+setInterval(function() {     if ( didScroll ) {         didScroll = false;
+        if ($(window).scrollTop() >= $("#someSelector").offset().top){
+            $("#myNavBar").css("background-color","darkgrey");
+        }
+      } }, 250);
 
+// note for the above: setInterval(function, timeout[in ms]);
+</script>
 </body>
 
 </html>
