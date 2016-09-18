@@ -4,6 +4,7 @@ Below for navbar
 
 .navbar {
   margin: 0px;
+  /*border-bottom: 1px solid #b2b2b2;*/
 }
 
 .logo {
@@ -32,15 +33,19 @@ span.icon-bar {
 Below for section "home"
 */
 
+#home {
+  padding: 0px;
+}
+
 .grapes {
   background-image: url('../img/wine-bg.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 620px;
-  width: 100%;
   background-blend-mode: multiply;
   background-color: #b3b3b3;
+  background-attachment: fixed;
 }
 
 .f {
@@ -58,7 +63,8 @@ Below for section "home"
   font-weight: 100;
   font-size: 21px;
   width: 68%;
-  padding: 0px 0px 10px 410px;
+  padding: 3px 0px 7px 410px;
+  margin: 0px;
 }
 
 .grapes h5 {
@@ -68,15 +74,25 @@ Below for section "home"
   font-weight: 100;
 }
 
-.fa {
-  color: #ffffff;
+.icons {
   text-align: center;
+}
+
+i {
+  color: #ffffff;
   text-decoration: none;
+  padding: 2px;
 }
 
 /*
 Below for section "about"
 */
+
+.about {
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+}
 
 .est {
   width: 50%;
@@ -145,6 +161,12 @@ Below for section "testimonial"
   width: 100%;
   background-blend-mode: multiply;
   background-color: #aaa7a7;
+  background-attachment: fixed;
+}
+
+#testimonial {
+  margin: 0px;
+  padding: 0px;
 }
 
 .testimonial h4 {
@@ -172,9 +194,18 @@ Below for section "testimonial"
 Below for section "wine selection"
 */
 
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#wine-selection {
+  padding: 0px 55px 0px 55px;
+}
+
 .bottle img {
-  width: 50%;
-  height: 580px;
+  width: 64%;
+  height: 570px;
   text-align: center;
 }
 
@@ -183,16 +214,12 @@ Below for section "wine selection"
   width: 100%;
 }
 
-.shiraz {
-  padding-left: 100px;
-}
-
-.shiraz img {
-  width: 64%;
-}
-
 .shiraz, .chardonnay, .cabernet {
   text-align: center;
+}
+
+.img-responsive {
+  display: inline;
 }
 
 .bottle h3 {
@@ -220,13 +247,85 @@ Below for section "wine selection"
 }
 
 .bottle {
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
+/*Below for footer "newsletter" section*/
+
+.footer {
+  height: 450px;
+  width: 100%;
+  background-color: #292929;
+  margin: 0px;
+  padding: 0px;
+}
+
+.textbox {
+  text-align: center;
+  color: #ffffff;
+  padding: 0px;
+}
+
+.textbox h2 {
+  font-family: 'Georgia';
+  font-style: italic;
+  padding: 70px 0px 20px 0px;
+}
+
+.textbox h4 {
+  font-size: 16px;
+  font-weight: 100;
+  padding-bottom: 35px;
+}
+
+.email {
+  border: 1px solid #ffffff;
+  padding: 20px 70px 20px 70px;
+  margin-right: 20px;
+}
+
+.signup {
+  border: 1px solid #91a05c;
+  padding: 20px 70px 20px 70px;
+  background-color: #91a05c;
+}
+
+.textbox a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 200;
+  font-family: 'Raleway', sans-serif;
+}
+
+.iconsfooter {
+  padding-top: 50px;
+}
+
+.iconsfooter i {
+  padding: 20px;
+}
+
+/*Below for media queries.  Responsive to laptop, tablet and phone*/
+
 @media (max-width: 768px) {
+
+  /*Below for section "home"*/  
+
   #home {
-    width: 104%;
+    width: 100%;
+    margin-right: 0px;
   }
+
+  .grapes {
+    background-attachment: local;
+  }
+
+  .f, .grapes h4 {
+  padding: 0px 0px 0px 100px;
+  text-align: center;
+  }
+
+  /*Below for section "about"*/
 
   .est, h4, h3, p {
     width: 100%;
@@ -234,6 +333,8 @@ Below for section "wine selection"
     padding: 20px 40px 0px 40px;
   }
 
-  .img
+  .testimonial {
+    background-attachment: local;
+  }
 
 }

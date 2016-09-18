@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+
+<!-- Summary: Winery website built with bootstrap; uses google fonts and font awesome.  Site is also responsive to laptop, tablet and phone. -->
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,10 +14,14 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome -->
   <script src="https://use.fontawesome.com/0d22298155.js"></script>
+  <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+<!-- Section for bootstrap navbar -->
+
   <nav class="navbar navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -36,64 +43,102 @@
     </div>
   </nav>
 
-  <div id="home" class="row">
-    <div class="grapes col-lg-12 col-xs-6">
-      <img class="f img-responsive" src="img/fperiod2.png">
-      <h4>"Without doubt, one of the most consistently high-quality wineries in the Barossa region"</h4>
-      <h5>David Halladay - Respected Wino</h5>
-      <a href="#"><i class="fa fa-twitter fa-1x" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-facebook fa-1x" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-vimeo fa-1x" aria-hidden="true"></i></a>
-    </div>
-  </div>
+<!-- Section "home" includes hero image of wine field-->
 
-  <div id="about" class="row">
-    <div class="sprayer col-lg-6 col-xs-12 pull-right">
-      <div class="imgbox">
-        <img src="img/wine16.jpg">
+  <div id="home" class="container-fluid">
+    <div class="row">
+      <div class="grapes col-lg-12 col-xs-12">
+        <img class="f img-responsive" src="img/fperiod2.png">
+        <h4>"Without doubt, one of the most consistently high-quality wineries in the Barossa region"</h4>
+        <h5>David Halladay - Respected Wino</h5>
+        <div class="icons">
+          <a href="#"><i class="fa fa-twitter fa-1x" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-facebook fa-1x" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-vimeo fa-1x" aria-hidden="true"></i></a>
+        </div>
       </div>
     </div>
+  </div>
 
-    <div class="est col-lg-6 col-xs-12">
-      <h4>&middot; EST. 1968 &middot;</h4>
-      <h3>Combining over 100 years of hard work and shared family knowledge</h3>
-      <p>Lorem ipsum dolor sit amet, in vix tale labore, libris sensibus disputando elitr quidam cotidieque et his. Movet dissentias cu vel. Agam simul utroque ne nec. Tota debet te ius iusto iuvaret. In vix tale labore, libris sensibus disputando.</p>
-      <img class="signature img-responsive" src="img/signature.png">
+<!-- Section "about" includes text with signature and sprayer image -->
+
+  <div id="about" class="about container">
+    <div class="row">
+      <div class="sprayer col-lg-6 col-xs-12 pull-right">
+        <div class="imgbox">
+          <img class="img-responsive" src="img/wine16.jpg">
+        </div>
+      </div>
+
+      <div class="est col-lg-6 col-xs-12">
+        <h4>&middot; EST. 1968 &middot;</h4>
+        <h3>Combining over 100 years of hard work and shared family knowledge</h3>
+        <p>Lorem ipsum dolor sit amet, in vix tale labore, libris sensibus disputando elitr quidam cotidieque et his. Movet dissentias cu vel. Agam simul utroque ne nec. Tota debet te ius iusto iuvaret. In vix tale labore, libris sensibus disputando.</p>
+        <img class="signature img-responsive" src="img/signature.png">
+      </div>
     </div>
   </div>
 
-  <div id="testimonial" class="row">
-    <div class="testimonial col-lg-12 col-xs-12">
-      <h4>"We've been producing fine wine for over 65 years, I think we know what we're talking about"</h4>
-      <p>Lorem ipsum dolor sit amet, in vix tale labore, libris sensibus disputando at sit,elitr quidam cotidieque his. Movet dissentias cu vel. Agam simul utroque ne nec. Tota debet te ius. Iusto iuvaret facilisi haste cotidieque.</p>
+<!-- Section "testimonial" includes grapes image and quote -->
+
+  <div id="testimonial" class="container-fluid">
+    <div class="row">
+      <div class="testimonial col-lg-12 col-xs-12">
+        <h4>"We've been producing fine wine for over 65 years, I think we know what we're talking about"</h4>
+        <p>Lorem ipsum dolor sit amet, in vix tale labore, libris sensibus disputando at sit,elitr quidam cotidieque his. Movet dissentias cu vel. Agam simul utroque ne nec. Tota debet te ius. Iusto iuvaret facilisi haste cotidieque.</p>
+      </div>
     </div>
   </div>
 
-  <div id="wine-selection" class="row">
-    <div class="bottle shiraz col-lg-4 col-xs-12">
-      <img class="img-responsive" src="img/wine3.jpg">
-      <div class="line"></div>
-      <h3>Foundry Shiraz</h3>
-      <p>"Aged five years in solid, French Oak barrels sports notes of pepper and blackberry"</p>
-      <a href="#">VISIT SHOP</a>
-    </div>
+<!-- Section "wine-selection" includes three wine bottle images and link to "visit shop" -->
 
-    <div class="bottle chardonnay col-lg-4 col-xs-12">
-      <img class="img-responsive" src="img/wine6.jpg">
-      <div class="line"></div>
-      <h3>Foundry Chardonnay</h3>
-      <p>"A rich fruit palet with subtle Oak influence and a lingering dry, fresh finish"</p>
-      <a href="#">VISIT SHOP</a>
-    </div>
+  <div id="wine-selection" class="container">
+    <div class="row">
+      <div class="bottle shiraz col-lg-4 col-xs-12">
+        <img class="img-responsive" src="img/wine3.jpg">
+        <div class="line"></div>
+        <h3>Foundry Shiraz</h3>
+        <p>"Aged five years in solid, French Oak barrels sports notes of pepper and blackberry"</p>
+        <a href="#">VISIT SHOP</a>
+      </div>
 
-    <div class="bottle cabernet col-lg-4 col-xs-12">
-      <img class="img-responsive" src="img/wine7.jpg">
-      <div class="line"></div>
-      <h3>Foundry Cabernet</h3>
-      <p>"Generous sweet blackcurrant and mulberry characterith soft, velvety tannins"</p>
-      <a href="#">VISIT SHOP</a>
+      <div class="bottle chardonnay col-lg-4 col-xs-12">
+        <img class="img-responsive" src="img/wine6.jpg">
+        <div class="line"></div>
+        <h3>Foundry Chardonnay</h3>
+        <p>"A rich fruit palet with subtle Oak influence and a lingering dry, fresh finish"</p>
+        <a href="#">VISIT SHOP</a>
+      </div>
+
+      <div class="bottle cabernet col-lg-4 col-xs-12">
+        <img class="img-responsive" src="img/wine7.jpg">
+        <div class="line"></div>
+        <h3>Foundry Cabernet</h3>
+        <p>"Generous sweet blackcurrant and mulberry characterith soft, velvety tannins"</p>
+        <a href="#">VISIT SHOP</a>
+      </div>
     </div>
   </div>
+
+<!-- Footer "newsletter" includes contact info -->
+
+  <footer class="footer container">
+    <div class="row">
+      <div class="textbox col-lg-12 col-xs-12">
+        <h2>Sign up for our monthly newsletter</h2>
+        <h4>Get special offers and news on cellar releases</h4>
+        <a class="email" href="#">EMAIL ADDRESS</a>
+        <a class="signup" href="#">SIGN UP NOW</a>
+        <div class="iconsfooter">
+          <a href="#"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-facebook fa-4x" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-vimeo fa-4x" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- Section for jquery and bootstrap cdn scripts -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
