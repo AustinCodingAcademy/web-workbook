@@ -7,7 +7,6 @@ html {
 
 * {
   font-family: 'Fira Sans', sans-serif;
-  /*color: hex #cc5500; /*Burnt Orange*/
   color: #fe9515;
 }
 
@@ -18,7 +17,6 @@ body {
 p {
   font-family: 'Lato', sans-serif;
   color: #fe9515;
-  /*color: hex #cc5500; /*Burnt Orange*/
 }
 
 .desktop{
@@ -31,6 +29,57 @@ a {
 /**
 ** NAV Bar
 **/
+.navbar-default {
+  background-color: transparent;
+  font-family: 'Fira Sans', sans-serif;
+  border: none;
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #fe9515;
+}
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-brand, .navbar-default .navbar-toggle, .navbar-default .navbar-toggle .icon-bar {
+  color: #fe9515;
+  border-color: #fe9515;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fe9515;
+}
+.navbar {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.dropdown a {
+  background-color: #84817e;
+  color: #fe9515;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+    color: #fed616;
+    background-color: #8eacbd;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  color: #fed616;
+  background-color: #8eacbd;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #fe9515;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #8eacbd;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+     color: #fe9515;
+}
+li {
+  margin-left: 0;
+}
 
 nav img {
   max-width: 30px;
@@ -38,7 +87,6 @@ nav img {
 }
 .intro {
   display: flex;
-  /*justify-content: center;*/
   align-items: center;
   padding-left: 15px;
 }
@@ -62,23 +110,15 @@ nav .intro a {
   flex-direction: column;
 }
 
-.overlay {
-  /*border: 1px solid blue;*/
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,.3);
-  display: flex;
-  flex-direction: column;
-}
+
 /**
 ** Header
 **/
 
 header {
-  /*border: 1px solid red;*/
   background-image: url('../img/sunrise.jpg');
   max-width: 100%;
-  height: 500px;
+  height: 600px;
   background-size: cover;
   background-position: left;
   overflow: hidden;
@@ -87,14 +127,13 @@ header {
   align-items: center;
 }
 
-
-
-/*.headerimg {
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.3);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}*/
+}
 
 .headertext {
   display: flex;
@@ -114,20 +153,6 @@ header {
   border-bottom: 1px solid #df751c;
 }
 
-/*.headertext img {
-  max-width: 100%;
-  max-height: 100%;
-  height: 500px;
-  position: absolute;
-  overflow: hidden;
-  display: block;
-  padding: 0;
-  margin: 0;
-}*/
-
-
-
-
 /**
 ** About
 **/
@@ -135,24 +160,14 @@ header {
   height: auto;
   display: flex;
   flex-direction: column;
-  /*justify-content: center;*/
   align-items: center;
-  /*background-color: red;*/
-  /*background-color: #0a0809;*/
   background-color:  #001736;
 }
 .background{
   display: block;
-  /*flex-direction: column;*/
-  /*justify-content: center;*/
-  /*align-items: center;*/
   text-align: center;
-  /*margin-top: 30px;*/
 }
 
-/**
-about
-**/
 /*
 Flip Animation
 */
