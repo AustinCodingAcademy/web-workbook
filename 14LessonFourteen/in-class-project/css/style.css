@@ -7,16 +7,26 @@ nav {
   padding: 0;
   margin: 0;
 }
+
+nav a {
+  color: black;
+  font-size: 18px;
+}
+
+.navbar {
+  opacity: .5;
+}
+
 #home {
   background-color: white;
-  height: 780px;
+  height: 800px;
   background-image: url("../img/wine-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-blend-mode: multiply;
   background-color: #6e6e6e;
-  margin: 50px 0 0 0;
+  /*margin: 50px 0 0 0;*/
   padding: 50px 0 0 0;
   width: 100%;
 }
@@ -26,7 +36,7 @@ nav {
   margin: 0 auto;
   text-align: center;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #home img {
@@ -35,11 +45,19 @@ nav {
   margin-bottom: 50px;
 }
 
+#home a {
+  margin-top: 15px;
+  color: white;
+}
+
+#home .center {
+  padding: 0 20px;
+}
 
 #about {
-  height: 780px;
+  height: 800px;
   padding: 0;
-  margin: 780px 0 0 0 ;
+  /*margin: 0 0 0 0 ;*/
   width: 100%;
   /*background-color: white;*/
   /*height: 200px;*/
@@ -54,8 +72,23 @@ nav {
 }
 
 .wash_left {
-  height: 780px;
+  height: 800px;
   padding: 0;
+}
+
+.wash_left .est {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #909090;
+}
+
+.wash_left .bold {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.wash_left .reg {
+  font-size: 20px;
 }
 
 #about .wash_left img {
@@ -63,8 +96,7 @@ nav {
 }
 
 #about .wash_right {
-  height: 780px;
-  width: 50%; /*ask eddie why this needs to be 50.  i thought col-xs-6 should fill up 1/2 the row*/
+  height: 800px;
   background-image: url("../img/wine16.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,7 +114,7 @@ nav {
   background-blend-mode: multiply;
   background-color: #6e6e6e;
   margin: 0;
-  height: 780px;
+  height: 800px;
   padding: 0;
   width: 100%;
 }
@@ -107,8 +139,7 @@ nav {
 }
 
 #selection {
-  /*height: 750px;*/ /*eddie why does adding the height push the image up*/
-  margin: 780px 0 0 0;
+  margin: 800px 0 0 0;
   width: 100%
 }
 
@@ -318,4 +349,13 @@ nav {
     object-fit: none;*/
     margin-bottom: 30px;
   }
+
+  .navbar-toggle {
+    border: 1px solid black;
+  }
+
+.icon-bar {
+  border: 1px solid black;
+}
+
 }
