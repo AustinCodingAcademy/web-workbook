@@ -18,14 +18,25 @@ h3, h4, h5 {
 }
 
 
+/*NEED TO @MEDIA THIS*/
+/*.collapse {
+  width: 100%;
+  text-align: left;
+}*/
+
 .nav li {
-  margin-right: 14px;
+  margin-right: 10px;
 }
 
 .navbar {
-  border-bottom: 1px solid #fff;
-  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  /*overflow: hidden;*/
 }
+
+.glyphicon-menu-hamburger {
+  color: #fff;
+}
+
 
 .navbar-brand img {
   margin-left: 10%;
@@ -36,6 +47,21 @@ h3, h4, h5 {
   font-size: 11px;
   font-family: 'Raleway',"Helvetica Neue",Helvetica,Arial,sans-serif;
   letter-spacing: 1px;
+}
+
+.navbar-right .glyphicon {
+  font-size: 20px;
+  margin-bottom: 6px;
+  margin-left: 10px;
+  margin-top: -2px;
+}
+
+.nav .glyphicon-menu-down {
+  font-size: 11px;
+}
+
+.bleft {
+  border-left: 1px solid #fff;
 }
 
 .nav>li>a:focus, .nav>li>a:hover {
@@ -82,13 +108,14 @@ h3, h4, h5 {
   opacity: .75;
   vertical-align: middle;
   max-width: 67.5%;
-  margin-top: 15%;
+  /*margin-top: 10%;*/
   margin-left: 22.5%;
 }
 
-.social img {
+.social i {
   height: 16px;
   padding: 0 8px;
+  color: #fff;
 }
 
 #hero h5 {
@@ -114,12 +141,12 @@ h3, h4, h5 {
   width: 100%;
 }*/
 
-#establish .row {
+/*#establish .row {
   width: 104%;
-}
+}*/
 
 #establish .col-md-6 {
-  max-height: 70vh;
+  max-height: 100vh;
 }
 
 /*#establish img:first-of-type {
@@ -224,7 +251,7 @@ clear:both;
 }
 
 #wine .row {
-  margin: 0 10%;
+  margin: 0 5%;
 }
 
 #wine img {
@@ -272,4 +299,24 @@ clear:both;
 
 #wine a:hover {
   text-decoration: none;
+}
+
+
+@media (max-width: 767px) {
+  p, #hero p,#establish .history p, .testText p {
+    font-size: 13px;
+  }
+  h5, #hero h5, #establish .history h5, #wine h5 {
+    font-size: 16px;
+  }
+  h4, #establish .history h4, #wine h4 {
+    font-size: 18px;
+  }
+  h3, .testText h3 {
+    font-size: 24px;
+  }
+  #wine img {
+    margin-top: 50px;
+    max-width: 50%;
+  }
 }
