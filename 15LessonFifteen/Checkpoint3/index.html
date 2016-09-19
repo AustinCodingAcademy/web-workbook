@@ -45,13 +45,13 @@
 
 <!-- Section "home" includes hero image of wine field-->
 
-  <div id="home" class="container-fluid">
+  <div id="home">
     <div class="row">
       <div class="grapes col-lg-12 col-xs-12">
         <img class="f img-responsive" src="img/fperiod2.png">
         <h4>"Without doubt, one of the most consistently high-quality wineries in the Barossa region"</h4>
         <h5>David Halladay - Respected Wino</h5>
-        <div class="icons">
+        <div class="icons col-lg-12 col-xs-12"
           <a href="#"><i class="fa fa-twitter fa-1x" aria-hidden="true"></i></a>
           <a href="#"><i class="fa fa-facebook fa-1x" aria-hidden="true"></i></a>
           <a href="#"><i class="fa fa-vimeo fa-1x" aria-hidden="true"></i></a>
@@ -127,8 +127,14 @@
       <div class="textbox col-lg-12 col-xs-12">
         <h2>Sign up for our monthly newsletter</h2>
         <h4>Get special offers and news on cellar releases</h4>
-        <a class="email" href="#">EMAIL ADDRESS</a>
-        <a class="signup" href="#">SIGN UP NOW</a>
+        <form class="form-inline">
+          <div class="email form-group">
+            <label for="email"></label>
+            <input type="email" class="form-control" id="email" placeholder="EMAIL ADDRESS">
+          </div>
+          <button type="submit" class="btn btn-default">SIGN UP NOW</button>
+        </form>
+
         <div class="iconsfooter">
           <a href="#"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>
           <a href="#"><i class="fa fa-facebook fa-4x" aria-hidden="true"></i></a>
