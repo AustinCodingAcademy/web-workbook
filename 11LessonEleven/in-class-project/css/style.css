@@ -1,85 +1,108 @@
 .top {
-    background-color: #2bcdc0;
-    text-align: center;
     height: 100px;
     padding: 150px 0;
+    text-align: center;
+    background-color: #2bcdc0;
 }
+
 .top h1 {
-    font-size: 70px;
     color: white;
+    font-size: 70px;
 }
-.bold{
-  font-weight: bold;
+
+.bold {
+    font-weight: bold;
 }
-.bottom {
-    background-color: #1b1b1b;
-    padding: 80px 150px;
-}
-.bottom div {
-    height: 30px;
-    width: 250px;
-    background-color: white;
-    margin-left: auto;
+
+.container {
+    width: 90%;
     margin-right: auto;
+    margin-left: auto;
 }
+
+.bottom {
+    height: 430px;
+    background-color: #1b1b1b;
+}
+
+.color-box {
+    width: 60%;
+    height: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+}
+
 .bottom section {
     float: left;
+    width: 33%;
+    padding-top: 80px;
     text-align: center;
-    width: 250px;
     color: white;
 }
+
 .bottom h2 {
-    font-size: 50px;
     padding: 15px 0;
+    font-size: 50px;
 }
+
 .bottom p {
-    font-size: 20px;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
     font-family: sans-serif;
+    font-size: 20px;
 }
-.middle {
-    margin: 0 195px;
-}
+
 .left div {
     background-color: #35a8da;
 }
+
 .middle div {
     background-color: #f46731;
 }
+
 .right div {
     background-color: #2bcdc0;
 }
-.clearfix:after{
-  content: "";
-  clear: both;
-  display: block;
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: "";
 }
-@media (max-width: 768px){
-  .top{
-    background-color: #35a8da;
-    text-align: left;
-    padding-left: 50px;
-  }
-  .top h1 {
-    font-size: 50px;
-  }
-  .bottom{
-    color: black;
-    background-color: #f7f5f6;
-    padding: 75px;
-  }
-  .bottom section{
-    float: none;
-    color: #000;
-  }
-  .bottom h2 {
-      font-size: 30px;
-  }
-  .bottom p {
-      font-size: 20px;
-  }
-  .middle{
-    margin: 75px 0px;
-  }
 
-
+@media (max-width: 768px) {
+    .top {
+        padding-left: 50px;
+        text-align: left;
+        background-color: #35a8da;
+    }
+    .top h1 {
+        font-size: 50px;
+    }
+    .bottom {
+        height: 100%;
+        padding: 75px;
+        color: black;
+        background-color: #f7f5f6;
+    }
+    .bottom section {
+        float: none;
+        width: 100%;
+        padding: 0;
+        color: #000;
+    }
+    .color-box {
+        width: 100%
+    }
+    .bottom h2 {
+        font-size: 30px;
+    }
+    .bottom p {
+        width: 100% font-size: 20px;
+    }
+    .middle {
+        margin: 75px 0px;
+    }
 }
