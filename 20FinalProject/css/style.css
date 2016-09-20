@@ -1,4 +1,129 @@
-section{
-  background-image: url("..img/concrete.jpg");
+body {
+    position: relative;
+}
+#section1 {
+  padding-top:50px;
+  height:750px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/elevator.jpg");
+  background-size: cover;
+  background-size: 100% 100%;
+  width: 100%;
+
+}
+#section1 img{
+    width: 100%;
+    height: auto;
+}
+h1{
+  font-size: 4em;
+  text-shadow: 2px 2px gray;
+}
+#section2 {
+  height:700px;
+  width: 100%;
+  display: flex;
+
+}
+.box2{
+  background-image: url("../img/dumbells.jpg");
+  height: auto;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.box2A{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+}
+.A1{
+  background: #2c3e50;
+  height: 210px;
+  width: 100%;
+}
+.A2{
+  height: 210px;
+  width: 100%;
+  border-bottom: 1px solid black;
+  background-color: #ecf0f1;
+}
+#section3 {
+  height:500px;
+  color: #fff;
+  padding-top:50px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+#section41 {
+  padding-top:50px;
+  height:500px;
+  color: #fff;
+  background-color: #00bcd4;
+}
+#section42 {
+  padding-top:50px;
+  height:500px;
+  color: #fff;
+  background-color: #009688;
+}
+
+.box3{
+  height: 200px;
+  width: 200px;
+  background: blue;
+}
+
+footer{
   height: 500px;
+  background: black;
+}
+
+/**
+ * Media Queries
+ **/
+@media screen and (min-width: 320px) {
+  .page::before{
+    content: "320px";
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 480px) {
+  .page::before {
+    content: "480px";
+    color: maroon;
+  }
+}
+@media screen and (min-width: 620px) {
+  .page::before {
+    content: "620px";
+    color: orange;
+  }
+}
+@media screen and (min-width: 810px) {
+  .page::before {
+    content: "810px";
+    color: black;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container::before{
+    content: "1400px";
+    color: black;
+  }
+
 }
