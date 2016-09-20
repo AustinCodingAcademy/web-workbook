@@ -1,126 +1,116 @@
-.clear-fix:after {
-    display: block;
-    content: "";
-    clear: both;
+/*Redoing my CSS as it is now blank. Good practice using bootstrap!*/
+
+.boxone {
+    height: 500px;
+    width: 100%;
+    background-color: aqua;
 }
-body {
+.header h1 {
+    font-size: 100px;
+    line-height: 52px;
+    padding-top: 200px;
+    color: white;
+    vertical-align: middle;
+}
+
+/*Here, I begin code for the black box beneath the first one: */
+
+.boxtwo {
+    height: 900px;
+    width: 100%;
+    background-color: #1b1b1b;
     color: white;
 }
-body h1 {
-    font-size: 70px;
+.boxtwo h1 {
+    font-size: 50px;
 }
-.header {
-    text-align: center;
-    padding-top: 200px;
-    background-color: #2bcdc0;
-    padding-bottom: 200px;
-}
-.main {
-    background-color: black;
-    margin: 0 auto;
-    margin-align: center;
-    height: 800px;
-    width: 100%;
-}
-.box {
-    float: left;
-    height: 800px;
-    width: 30%;
-}
-.container {
-    margin-top: 100px;
-    height: 150px;
-    margin-right: 10px;
-    margin-left: 60px;
-    text-align: center
-}
-.container h1 {
-    font-size: 65px;
+.boxtwo p {
+    font-size: 35px;
 }
 .blue {
-    margin-top: 100px;
-    text-align: center;
-    background-color: #33a8dd;
-    height: 50px;
-    width: 50%;
-    margin-left: 160px;
+    height: 300px;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.bluetab {
+    background-color: blue;
+    height: 60px;
+    width: 60%;
+    margin: auto;
 }
 .orange {
-    margin-top: 100px;
-    text-align: center;
-    background-color: #f46731;
-    height: 50px;
-    width: 50%;
-    margin-right: 90px;
-    margin-left: 155px;
+    height: 300px;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.orangetab {
+    background-color: orange;
+    height: 60px;
+    width: 60%;
+    margin: auto;
 }
 .aqua {
-    margin-top: 100px;
-    text-align: center;
-    background-color: #2bcdc0;
-    height: 50px;
-    width: 50%;
-    margin-right: 90px;
-    margin-left: 160px;
+    height: 300px;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 20px;
 }
-p {
-    font-size: 35px;
-    text-align: center;
+.aquatab {
+    background-color: aqua;
+    height: 60px;
+    width: 60%;
+    margin: auto;
 }
 
-/*Below this is for phone*/
+/*The following is media query for tablet. Do I need a separate one for phone? Or do I simply leave out the max-width attribute?*/
 
-@media (max-width: 768px) {
-    .header {
-        background-color: #33a8dd;
-        padding: 0;
-        border: 0;
-        color: white;
-        height: 700px;
-        text-align: center;
+@media (min-width: 768px) and (max-width: 991px) {
+    .header h1 {
+        font-size: 50px;
+        /*line-height: 52px;*/
+        /*padding-top: 200px;*/
+        vertical-align: middle;
     }
-    body {
-        color: black;
-    }
-    .main {
-        background-color: white;
-        margin: 0 auto;
-        margin-align: center;
-        color: black;
-    }
-    .box {
+    /*Why is the aqua box (the last one) overlapping the blue (first) box? It seems to me that it should slide right under the other box. got the answer! I had more than 12!*/
+    .boxtwo {
+        height: 1900px;
         width: 100%;
-        background-color: #F7F5F6;
-        text-align: center;
-    }
-    .container h1 {
-        font-size: 65px;
-        text-align: center;
-        margin-top: 10px;
-    }
-    .section {
         background-color: grey;
     }
+    .boxblue {
+        margin-top: 50px;
+    }
+    .boxorange {
+        margin-top: 50px;
+    }
     .blue {
-        background-color: #33a8dd;
-        height: 50px;
-        width: 50%;
-        margin-left: 100px;
+        margin-top: 100px;
     }
     .orange {
-        background-color: #f46731;
-        height: 50px;
-        width: 50%;
-        margin-left: 100px;
+        margin-bottom: 100px;
+        margin-top: 100px;
     }
     .aqua {
-        background-color: #2bcdc0;
-        height: 50px;
-        width: 50%;
-        margin-left: 100px;
+        margin-top: 100px;
     }
-    p {
+}
+@media (max-width: 767px) {
+    .header h1 {
+        font-size: 50px;
+        /*line-height: 52px;*/
+        padding-top: 100px;
+        vertical-align: middle;
+    }
+    /*I had to change the height for the .boxtwo to keep the text from each box from operlapping.*/
+    .boxtwo {
         font-size: 30px;
-        text-align: center;
+        height: 1100px;
+        width: 100%;
+        background-color: grey;
+    }
+    .boxtwo p {
+        font-size: 20px;
     }
 }
