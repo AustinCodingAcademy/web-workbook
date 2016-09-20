@@ -1,0 +1,113 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+
+.navbar {
+  background-color: transparent;
+}
+
+.home {
+  /*border: 1px solid red;*/
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home h1 {
+  text-align: center;
+  /*transition: transform 15s ease-in;*/
+  /*transform: rotate(10deg) translate(100px);*/
+  animation-name: colorchange;
+  animation-duration: 15s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+@keyframes colorchange {
+    0%  {color: red;}
+    50%  {
+      color: purple;
+      transition: transform 15s ease-in;
+      transform: rotate(10deg) translate(100px);
+    }
+    70%  {color: blue;}
+    100% {color: green;}
+}
+
+
+
+@media screen and (min-width: 320px) {
+  .container::before {
+    content: "320px";
+    position: absolute;
+    color: green;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container::before {
+    content: "480px";
+    position: absolute;
+    color: green;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .container::before {
+    content: "620px";
+    position: absolute;
+    color: green;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+
+}
+
+@media screen and (min-width: 810px) {
+  .container::before {
+    content: "810px";
+    position: absolute;
+    color: green;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+
+
+}
+
+@media screen and (min-width: 1400px) {
+  .container::before {
+    content: "1400px";
+    position: absolute;
+    color: green;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+}
