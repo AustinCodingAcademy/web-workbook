@@ -309,49 +309,6 @@ Below for section "wine selection"
   padding: 20px;
 }
 
-/*Below media queries for tablet.  Responsive to laptop, tablet and phone*/
-
-@media (min-width: 769px) and (max-width: 1024px) {
-
-/*Media query tablet for section "home"*/
-
-.grapes {
-  background-attachment: fixed;
-  height: 1024px;
-  background-size: 250%;
-  background-position: top;
-}
-
-/*.f {
-  padding: 0px;
-  width: 48%;
-  height: auto;
-  margin: 65px 70px 20px 90px;
-}
-
-.grapes h4 {
-  padding: 0px;
-  width: 100%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 16px;
-  line-height: 150%;
-  margin-bottom: 20px;
-}
-
-.grapes h5 {
-  margin-bottom: 20px;
-  font-size: 13px;
-}
-
-i {
-  padding: 0px 6px;
-}*/
-
-}
-
-
 /*Below media queries for phone.  Responsive to laptop, tablet and phone*/
 
 @media (max-width: 768px) {
@@ -360,6 +317,8 @@ i {
 
   .navbar {
     width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    height: 1px;
   }
 
   .navbar-header, .navbar-nav {
@@ -370,9 +329,18 @@ i {
 
   .navbar-toggle {
     border: none;
-    padding: 17px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
     margin-right: 0px;
   }
+
+  .navbar-brand {
+    padding: 10px 0px 0px 10px;
+  }
+
+  .nav>li {
+    text-align: right;
+  }
+
 
 /*Media query phone for section "home"*/
 
@@ -556,4 +524,246 @@ i {
     font-size: 20px;
     padding: 20px 8px 0px 8px;
   }
+}
+
+/*Below media queries for tablet.  Responsive to laptop, tablet and phone*/
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+/*Media query tablet for navbar*/
+
+  .navbar-header {
+    float: none;
+  }
+
+  .navbar-left,.navbar-right {
+    float: none !important;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+
+  .navbar-nav>li {
+    float: none;
+  }
+
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .collapse.in{
+    display:block !important;
+  }
+
+  .nav>li {
+    text-align: right;
+  }
+
+/*Media query tablet for section "home"*/
+
+.grapes {
+  background-attachment: fixed;
+  height: 1024px;
+  background-size: 200%;
+  background-position: center;
+}
+
+.f {
+  padding: 0px;
+  width: 30%;
+  height: auto;
+  margin: 250px 70px 20px 275px;
+}
+
+.grapes h4 {
+  padding: 40px 0px 10px 0px;
+  width: 55%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 22px;
+  line-height: 150%;
+  margin-bottom: 0px;
+}
+
+.grapes h5 {
+  margin-bottom: 190px;
+  font-size: 14px;
+}
+
+i {
+  padding: 0px 7px;
+}
+
+/*Media query tablet for section "about"*/
+
+  .imgbox {
+    height: 500px;
+  }
+
+  .sprayer img {
+    bottom: -319px;
+    width: 100%;
+  }
+
+  .est {
+    width: 81%;
+    padding: 20px 15px 0px 170px;
+  }
+
+  .est h4 {
+    padding-top: 20px;
+    font-size: 16px;
+  }
+
+  .est h3 {
+    font-size: 22px;
+    margin: 0px;
+    padding-top: 10px;
+  }
+
+  .est p {
+    font-size: 14px;
+    margin: 0px;
+    padding-bottom: 20px;
+  }
+
+  .signature {
+    height: auto;
+    width: 52%;
+    margin-bottom: 55px;
+  }
+
+/*Media query tablet for section "testimonial"*/
+
+  .testimonial {
+    background-attachment: fixed;
+    height: 1024px;
+    width: 100%;
+    background-size: 185%;
+    background-position: top;
+  }
+
+  .testimonial h4 {
+    padding: 347px 0px 0px 134px;
+    font-size: 30px;
+    margin: 0px;
+    width: 82%;
+    line-height: 145%;
+  }
+
+  .testimonial p {
+    width: 80%;
+    font-size: 16px;
+    padding: 20px 0px 0px 150px;
+    line-height: 175%;
+  }
+
+/*Media query tablet for section "wine-selection"*/
+
+  #wine-selection {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .bottle {
+    height: 481px;
+    width: 33%;
+  }
+
+  .bottle img {
+    height: 315px;
+    width: 48%;
+  }
+
+  .bottle h3 {
+    font-size: 23px;
+    padding-top: 20px;
+    line-height: 109%;
+  }
+
+  .bottle p {
+    font-size: 16px;
+    padding-bottom: 18px;
+  }
+
+  .bottle a {
+    font-size: 13px;
+    padding: 12px 40px 12px 40px;
+  }
+
+  .cabernet {
+    margin-bottom: 192px;
+  }
+
+  .cabernet h3 {
+    padding-bottom: 38px;
+  }
+
+/*Media query tablet for footer*/
+
+  .footer {
+    height: 450px;
+    width: 100%;
+  }
+
+  .footer h2 {
+    font-size: 32px;
+    padding: 90px 40px 20px 40px;
+  }
+
+  .footer h4 {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
+  .form-control {
+    width: 90%;
+    margin: 0px 10px 0px 0px;
+    padding: 25px;
+  }
+
+  .form-group {
+    margin-bottom: 0px;
+  }
+
+  .btn-default {
+    padding: 15px 50px 15px 50px;
+  }
+
+  .textbox a {
+    font-size: 11px;
+  }
+
+  .iconsfooter {
+    padding-top: 20px;
+  }
+
+  .iconsfooter i {
+    font-size: 20px;
+    padding: 20px 8px 0px 8px;
+  }
+
 }
