@@ -171,34 +171,60 @@ header {
   text-align: center;
 }
 
+
+
+
+
+/*
+Music
+*/
+.music {
+  max-width: 100%;
+  height: 180px;
+  background-image: url('../img/smokylake.jpg');
+  background-size: cover;
+  background-position: bottom bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music .text {
+  visibility: hidden;
+  position: relative;
+}
+
+.music:hover .text {
+  visibility: visible;
+}
+
+
 /*
 Flip Animation
 */
 /* entire container, keeps perspective */
-.flip-container {
+/*.flip-container {
 	perspective: 1000px;
-}
+}*/
 	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
+	/*.flip-container:hover .flipper, .flip-container.hover .flipper {
 		transform: rotateY(180deg);
-	}
+	}*/
 
-.flip-container, .front, .back {
+/*.flip-container, .front, .back {
 	width: 100%;
 	height: 150px;
-  /*background-color: gray;*/
-}
+}*/
 
 /* flip speed goes here */
-.flipper {
+/*.flipper {
 	transition: 0.8s;
 	transform-style: preserve-3d;
 	position: relative;
-  /*background-color: #814831;*/
-}
+}*/
 
 /* hide back of pane during swap */
-.front, .back {
+/*.front, .back {
 	backface-visibility: hidden;
 	position: absolute;
 	top: 0;
@@ -206,25 +232,24 @@ Flip Animation
   display: flex;
   justify-content: center;
   align-items: center;
-}
+}*/
 
 /* front pane, placed above back */
-.front {
-	z-index: 2;
+/*.front {
+	z-index: 2;*/
 	/* for firefox 31 */
-	transform: rotateY(0deg);
+	/*transform: rotateY(0deg);
   background-image: url('../img/smokylake.jpg');
   background-size: cover;
   overflow: hidden;
-}
+}*/
 
 
 
 
 /* back, initially hidden pane */
-.back {
+/*.back {
 	transform: rotateY(180deg);
-  /*background-color: #003678;*/
   background-image: url('../img/smokylake.jpg');
   background-color: #f9f4ee;
   background-size: cover;
@@ -237,15 +262,15 @@ Flip Animation
   align-items: flex-start;
   text-align: left;
 
-}
-.back h1 {
+}*/
+/*.back h1 {
   font-size: 3rem;
   padding-top: 5%;
   padding-left:5%;
 }
 .back h1 span {
   border-bottom: 1px solid #fe9515;
-}
+}*/
 /*.back p {
   font-size: 1.5rem;
   padding-bottom: 10px;
@@ -256,34 +281,37 @@ Flip Animation
 /**
 Education
 **/
+
+
+
+
+
 /*
 Flip Animation
 */
 /* entire container, keeps perspective */
-.flip-container {
+/*.flip-container {
 	perspective: 1000px;
-}
+}*/
 	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
+	/*.flip-container:hover .flipper, .flip-container.hover .flipper {
 		transform: rotateY(180deg);
 	}
 
 .flip-container, .educationfront, .educationback {
 	width: 100%;
 	height: 150px;
-  /*background-color: gray;*/
-}
+}*/
 
 /* flip speed goes here */
-.flipper {
+/*.flipper {
 	transition: 0.8s;
 	transform-style: preserve-3d;
 	position: relative;
-  /*background-color: #814831;*/
-}
+}*/
 
 /* hide back of pane during swap */
-.educationfront, .educationback {
+/*.educationfront, .educationback {
 	backface-visibility: hidden;
 	position: absolute;
 	top: 0;
@@ -291,25 +319,24 @@ Flip Animation
   display: flex;
   justify-content: center;
   align-items: center;
-}
+}*/
 
 /* front pane, placed above back */
-.educationfront {
-	z-index: 2;
+/*.educationfront {
+	z-index: 2;*/
 	/* for firefox 31 */
-	transform: rotateY(0deg);
+	/*transform: rotateY(0deg);
   background-image: url('../img/book.jpg');
   background-size: cover;
   overflow: hidden;
-}
+}*/
 
 
 
 
 /* back, initially hidden pane */
-.educationback {
+/*.educationback {
 	transform: rotateY(180deg);
-  /*background-color: #003678;*/
   background-image: url('../img/book.jpg');
   background-color: #f9f4ee;
   background-size: cover;
@@ -323,8 +350,8 @@ Flip Animation
   align-items: center;
   text-align: center;
 
-}
-.educationback h1 {
+}*/
+/*.educationback h1 {
   font-size: 3rem;
   padding-top: 5%;
   padding-left:5%;
@@ -336,10 +363,10 @@ Flip Animation
 .educationback p {
   padding-bottom: 5px;
   color: #fed616;
-}
+  margin: 0;
+}*/
 
-.educationoverlay {
-  /*border: 1px solid blue;*/
+/*.educationoverlay {
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,.3);
@@ -348,7 +375,7 @@ Flip Animation
   justify-content: center;
   align-items: center;
   text-align: center;
-}
+}*/
 
 /**
 Education
@@ -357,30 +384,28 @@ Education
 Flip Animation
 */
 /* entire container, keeps perspective */
-.flip-container {
+/*.flip-container {
 	perspective: 1000px;
-}
+}*/
 	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
+	/*.flip-container:hover .flipper, .flip-container.hover .flipper {
 		transform: rotateY(180deg);
-	}
+	}*/
 
-.flip-container, .skillsfront, .skillsback {
+/*.flip-container, .skillsfront, .skillsback {
 	width: 100%;
 	height: 150px;
-  /*background-color: gray;*/
-}
+}*/
 
 /* flip speed goes here */
-.flipper {
+/*.flipper {
 	transition: 0.8s;
 	transform-style: preserve-3d;
 	position: relative;
-  /*background-color: #814831;*/
-}
+}*/
 
 /* hide back of pane during swap */
-.skillsfront, .skillsback {
+/*.skillsfront, .skillsback {
 	backface-visibility: hidden;
 	position: absolute;
 	top: 0;
@@ -388,25 +413,24 @@ Flip Animation
   display: flex;
   justify-content: center;
   align-items: center;
-}
+}*/
 
 /* front pane, placed above back */
-.skillsfront {
-	z-index: 2;
+/*.skillsfront {
+	z-index: 2;*/
 	/* for firefox 31 */
-	transform: rotateY(0deg);
+	/*transform: rotateY(0deg);
   background-image: url('../img/forest.jpg');
   background-size: cover;
   overflow: hidden;
-}
+}*/
 
 
 
 
 /* back, initially hidden pane */
-.skillsback {
+/*.skillsback {
 	transform: rotateY(180deg);
-  /*background-color: #003678;*/
   background-image: url('../img/forest.jpg');
   background-color: #f9f4ee;
   background-size: cover;
@@ -420,23 +444,22 @@ Flip Animation
   align-items: center;
   text-align: center;
 
-}
-.skillsback h1 {
+}*/
+/*.skillsback h1 {
   font-size: 3rem;
   padding-top: 5%;
   padding-left:5%;
   border-bottom: 1px solid;
   margin-bottom: 5px;
 
-}
+}*/
 
-.skillsback p {
+/*.skillsback p {
   padding-bottom: 5px;
   color: #fed616;
-}
+}*/
 
-.skillsoverlay {
-  /*border: 1px solid blue;*/
+/*.skillsoverlay {
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,.3);
@@ -445,11 +468,11 @@ Flip Animation
   justify-content: center;
   align-items: center;
   text-align: center;
-}
+}*/
 
-.skillsul {
+/*.skillsul {
   display: flex;
-}
+}*/
 
 /**
 Bio
@@ -458,30 +481,28 @@ Bio
 Flip Animation
 */
 /* entire container, keeps perspective */
-.flip-container {
+/*.flip-container {
 	perspective: 1000px;
-}
+}*/
 	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
+	/*.flip-container:hover .flipper, .flip-container.hover .flipper {
 		transform: rotateY(180deg);
-	}
+	}*/
 
-.flip-container, .biofront, .bioback {
+/*.flip-container, .biofront, .bioback {
 	width: 100%;
 	height: 150px;
-  /*background-color: gray;*/
-}
+}*/
 
 /* flip speed goes here */
-.flipper {
+/*.flipper {
 	transition: 0.8s;
 	transform-style: preserve-3d;
 	position: relative;
-  /*background-color: #814831;*/
-}
+}*/
 
 /* hide back of pane during swap */
-.biofront, .bioback {
+/*.biofront, .bioback {
 	backface-visibility: hidden;
 	position: absolute;
 	top: 0;
@@ -489,25 +510,25 @@ Flip Animation
   display: flex;
   justify-content: center;
   align-items: center;
-}
+}*/
 
 /* front pane, placed above back */
-.biofront {
-	z-index: 2;
+/*.biofront {
+	z-index: 2;*/
 	/* for firefox 31 */
-	transform: rotateY(0deg);
+	/*transform: rotateY(0deg);
   background-image: url('../img/leaf.jpg');
   background-size: cover;
   overflow: hidden;
-}
+}*/
 
 
 
 
 /* back, initially hidden pane */
-.bioback {
+/*.bioback {
 	transform: rotateY(180deg);
-  /*background-color: #003678;*/
+
   background-image: url('../img/leaf.jpg');
   background-color: #f9f4ee;
   background-size: cover;
@@ -520,18 +541,17 @@ Flip Animation
   align-items: flex-start;
   text-align: left;
 
-}
-.bioback h1 {
+}*/
+/*.bioback h1 {
   font-size: 3rem;
   padding-top: 5%;
   padding-left:5%;
 }
 .bioback h1 span {
   border-bottom: 1px solid #fe9515;
-}
+}*/
 
-.biooverlay {
-  /*border: 1px solid red;*/
+/*.biooverlay {
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,.4);
@@ -540,20 +560,20 @@ Flip Animation
   justify-content: center;
   align-items: center;
   text-align: center;
-}
+}*/
 
 /**
 ** Work
 **/
 .work {
-  height: 480px;
+  height: 300px;
   background-color: #7c7c7d;
 }
 /**
 ** Contact
 **/
 .contact {
-  height: 480px;
+  height: contain;
   background-color: #095884;
 }
 .map {
@@ -561,7 +581,7 @@ Flip Animation
   justify-content: center;
   align-items: center;
 }
-iframe {
+iframe .googlemap{
   width: 90%;
   height: 200px;
   /*padding: 5%;*/
