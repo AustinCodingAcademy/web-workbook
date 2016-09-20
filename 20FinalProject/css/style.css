@@ -179,7 +179,7 @@ header {
 Music
 */
 .music {
-  max-width: 100%;
+  width: 100%;
   height: 180px;
   background-image: url('../img/smokylake.jpg');
   background-size: cover;
@@ -282,10 +282,36 @@ Flip Animation
 Education
 **/
 
+.education {
+  max-width: 100%;
+  width: 100%;
+  height: 180px;
+  background-image: url('../img/book.jpg');
+  background-size: cover;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.education .text {
+  visibility: hidden;
+  position: relative;
+}
 
+.education:hover .text {
+  visibility: visible;
+}
 
+.education h1 {
+  border-bottom: 1px solid;
+}
 
+/*.education p {
+  color: #013473;
+}*/
 /*
 Flip Animation
 */
@@ -366,7 +392,7 @@ Flip Animation
   margin: 0;
 }*/
 
-/*.educationoverlay {
+.educationoverlay {
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,.3);
@@ -375,10 +401,10 @@ Flip Animation
   justify-content: center;
   align-items: center;
   text-align: center;
-}*/
+}
 
 /**
-Education
+Skills
 **/
 /*
 Flip Animation
@@ -458,8 +484,40 @@ Flip Animation
   padding-bottom: 5px;
   color: #fed616;
 }*/
+.skills {
+  max-width: 100%;
+  width: 100%;
+  height: 180px;
+  background-image: url('../img/forest.jpg');
+  background-size: cover;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skillsul {
+  display: flex;
+  flex-direction: row;
+}
 
-/*.skillsoverlay {
+.skills .text {
+  visibility: hidden;
+  position: relative;
+}
+
+.skills:hover .text {
+  visibility: visible;
+}
+
+.skills h1 {
+  border-bottom: 1px solid;
+}
+
+
+
+.skillsoverlay {
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,.3);
@@ -468,7 +526,7 @@ Flip Animation
   justify-content: center;
   align-items: center;
   text-align: center;
-}*/
+}
 
 /*.skillsul {
   display: flex;
@@ -550,8 +608,30 @@ Flip Animation
 .bioback h1 span {
   border-bottom: 1px solid #fe9515;
 }*/
+.bio {
+  max-width: 100%;
+  width: 100%;
+  height: 180px;
+  background-image: url('../img/leaf.jpg');
+  background-size: cover;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-/*.biooverlay {
+.bio .text {
+  visibility: hidden;
+  position: relative;
+}
+
+.bio:hover .text {
+  visibility: visible;
+}
+
+.biooverlay {
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,.4);
@@ -560,7 +640,7 @@ Flip Animation
   justify-content: center;
   align-items: center;
   text-align: center;
-}*/
+}
 
 /**
 ** Work
@@ -628,6 +708,54 @@ input {
   height: 100%;
   margin: 0;
 }
+
+
+
+.flip {
+  -webkit-perspective: 800;
+   width: 400px;
+   height: 200px;
+    position: relative;
+    margin: 50px auto;
+}
+.flip .card.flipped {
+  -webkit-transform: rotatex(-180deg);
+}
+.flip .card {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+}
+.flip .card .face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden ;
+  z-index: 2;
+    font-family: Georgia;
+    font-size: 3em;
+    text-align: center;
+    line-height: 200px;
+}
+.flip .card .front {
+  position: absolute;
+  z-index: 1;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+.flip .card .back {
+  -webkit-transform: rotatex(-180deg);
+    background: blue;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+
 /**
 * Media Queries
 **/
@@ -656,7 +784,46 @@ input {
     margin: 5px;
     font-size: 2em;
   }
+  header {
+    height: 800px;
+  }
+  .about {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+  }
+  .music {
+    width: 50%;
+    height: 250px;
+  }
+  .music h1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 2.2rem;
+  }
+  .education {
+    width: 50%;
+    height: 250px;
+  }
+  .education p {
+    font-size: 2rem;
+  }
+  .skills {
+    width: 50%;
+    height: 250px;
+  }
+  .skills p {
+    font-size: 2rem;
+  }
+  .bio {
+    width: 50%;
+    height: 250px;
+  }
 
+  .googlemap {
+    height: 400px;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 620px) {
   .container::before {

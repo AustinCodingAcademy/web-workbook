@@ -20,8 +20,9 @@
   <link rel="stylesheet" href="css/animate.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.flip.min.js"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="5">
   <main class="container container-fluid">
     <header id="header" class="header">
       <div class="overlay">
@@ -55,9 +56,6 @@
             </div>
           </div>
         </nav>
-        <!-- <div class="headerimg"> -->
-        <!-- <img src="img/mountain.jpg" alt="" srcset="img/mountain320.png 320w, img/mountain480.png 480w, img/mountain620.png 620w, img/mountain810.jpg 810w, img/mountain1200.jpg 1200w, img/mountain.jpg 1400w"/> -->
-        <!-- <img src="img/sunrise.jpg" alt="" srcset="img/sunrise320.png 320w, img/sunrise480.png 480w, img/sunrise620.png 620w, img/sunrise810.png 810w, img/sunrise1200.png 1200w, img/sunrise.jpg 1400w"/> -->
         <div class="headertext animated">
           <h1>J.G.</h1>
           <p>Creative Design</p>
@@ -66,137 +64,113 @@
       </div>
     </header>
     <section id="about" class="about">
-      <article class="background music" >
-            <div class="designs">
-            <h1 class="text">Musically Original <span>Designs</span></h1>
-          </div>
-      </article>
-      <article class="education">
-        <div class="educationoverlay">
-          <h1>Education</h1>
-              <ul>
-                <li><a href="www.austincodingacademy.com"><p>Austin Coding Academy</p></a></li>
-                <li><a href="//www.asu.edu/"><p>Arizona State University</p></a></li>
-                <li><a href="//www.wisc.edu"><p>University of Wisconsin</p></a></li>
-                <li><a href="//www.susqu.edu"><p>Susquehanna University</p></a></li>
-              </ul>
-            </div>
-      </article>
-      <article class="skills">
-            <div class="skillsoverlay">
-              <h1>Skills</h1>
-              <div class="skillsul">
-                <ul>
-                  <li><p>Linux</p></li>
-                  <li><p>HTML5</p></li>
-                  <li><p>CSS3</p></li>
-                  <li><p>MobileFirst</p></li>
-                </ul>
-                <ul>
-                  <li><p>Flex-box</p></li>
-                  <li><p>jQuery</p></li>
-                  <li><p>Bootstrap</p></li>
-                  <li><p>Git</p></li>
-                </ul>
-              </div>
-            </div>
-      </article>
-      <article class="bio">
-        <div class="flipper">
-            <div class="biooverlay">
-              <h1>Teacher. Coder. Designer. Musician. Reliable. Dedicated.</h1>
-            </div>
-          </div>
-        </article>
-      </section>
-      <section id="work" class="work owl-carousel">
-        <!-- <div id="nanoGallery" class="nanoGallery"> -->
-        <div id="raspberry">
-          <a href="img/berries.png" data-ngthumb="img/berries.png" data-ngdesc="Lorem Ipsum dolor">Berry Farm</a>
-        </div>
-        <div id="portal">
-          <a href="img/professionalportal.png" data-ngthumb="img/professionalportal.png" data-ngdesc="Lorem Ipsum dolor">Prof. Portal</a>
-        </div>
-        <div id="garden">
-          <a href="img/garden.png" data-ngthumb="img/garden.png" data-ngdesc="Lorem Ipsum dolor">Garden</a>
-        </div>
-        <!-- </div> -->
-      </section>
-      <section id="contact" class="contact">
-        <!-- <div class="container">
-        <h1>Google Maps with <b>picture</b> element</h1>
-        <picture>
-        <source media="(min-width: 1400px)" srcset="https://maps.googleapis.com/maps/api/staticmap?center=600+Soledad+St,San+Antonio,TX&zoom=17&size=500x500&scale=2">
-        <source media="(min-width: 810px)" srcset="https://maps.googleapis.com/maps/api/staticmap?center=600+Soledad+St,San+Antonio,TX&zoom=17&size=400x400&scale=2">
-        <source media="(min-width: 620px)" srcset="https://maps.googleapis.com/maps/api/staticmap?center=600+Soledad+St,San+Antonio,TX&zoom=17&size=300x300&scale=2">
-        <source media="(min-width: 480px)" srcset="https://maps.googleapis.com/maps/api/staticmap?center=600+Soledad+St,San+Antonio,TX&zoom=17&size=200x200&scale=2">
+      <!-- <article class="flip">
+      <div class="front">
 
-        Default
-        <img src="https://maps.googleapis.com/maps/api/staticmap?center=600+Soledad+St,San+Antonio,TX&zoom=16&size=100x100&scale=2" alt="" />
-      </picture>
-    </div> -->
-    <div class="map">
+    </div>
+    <div class="back">
+    <h1>Education</h1>
+  </div>
+</article> -->
+<article class="">
+
+  <div class="flip">
+    <div class="card">
+      <div class="face front">
+        Front
+      </div>
+      <div class="face back">
+        Back
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- <article class="background music" >
+<div class="designs">
+<h1 class="text">Musically Original <span>Designs</span></h1>
+</div>
+</article> -->
+<article class="education">
+  <div class="educationoverlay">
+    <div class="text">
+      <h1>Education</h1>
+      <ul>
+        <li><a href="www.austincodingacademy.com"><p>Austin Coding Academy</p></a></li>
+        <li><a href="//www.asu.edu/"><p>Arizona State University</p></a></li>
+        <li><a href="//www.wisc.edu"><p>University of Wisconsin</p></a></li>
+        <li><a href="//www.susqu.edu"><p>Susquehanna University</p></a></li>
+      </ul>
+    </div>
+  </div>
+</article>
+<article class="skills">
+  <div class="skillsoverlay">
+    <div class="text">
+      <h1>Skills</h1>
+      <div class="skillsul">
+        <ul>
+          <li><p>Linux</p></li>
+          <li><p>HTML5</p></li>
+          <li><p>CSS3</p></li>
+          <li><p>MobileFirst</p></li>
+        </ul>
+        <ul>
+          <li><p>Flex-box</p></li>
+          <li><p>jQuery</p></li>
+          <li><p>Bootstrap</p></li>
+          <li><p>Git</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="bio">
+  <div class="biooverlay">
+    <div class="text">
+      <h1>Teacher. Coder. Designer. Musician. Reliable. Dedicated.</h1>
+    </div>
+  </div>
+</article>
+</section>
+<section id="work" class="work owl-carousel">
+  <div id="raspberry">
+    <a href="img/berries.png" data-ngthumb="img/berries.png" data-ngdesc="Lorem Ipsum dolor">Berry Farm</a>
+  </div>
+  <div id="portal">
+    <a href="img/professionalportal.png" data-ngthumb="img/professionalportal.png" data-ngdesc="Lorem Ipsum dolor">Prof. Portal</a>
+  </div>
+  <div id="garden">
+    <a href="img/garden.png" data-ngthumb="img/garden.png" data-ngdesc="Lorem Ipsum dolor">Garden</a>
+  </div>
+</section>
+<section id="contact" class="contact">
+  <div class="map">
     <iframe class="googlemap" frameborder="0" style="border: 1px solid gray" src="https://www.google.com/maps/embed/v1/view?zoom=10&center=29.4241%2C-98.4936&key=AIzaSyCWaNEvanS1NQM-q3XpAi-Y8gT82iMu5q8" allowfullscreen></iframe>
   </div>
-  <!-- <input type="button" name="Contact" value="Contact Us!" href="https://form.jotform.com/62618594048161"> -->
-
- <!-- <iframe id="JotFormIFrame-62628754976170" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="https://form.jotform.com/62628754976170" frameborder="0" style="width:100%; height:669px; border:none;" scrolling="no"> </iframe> <script type="text/javascript"> window.handleIFrameMessage = function(e) { var args = e.data.split(":"); var iframe = false; if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[2]); } else { iframe = document.getElementById("JotFormIFrame"); } if (!iframe) return; switch (args[0]) { case "scrollIntoView": iframe.scrollIntoView(); break; case "setHeight": iframe.style.height = args[1] + "px"; break; case "collapseErrorPage": if (iframe.clientHeight > window.innerHeight) { iframe.style.height = window.innerHeight + "px"; } break; case "reloadPage": window.location.reload(); break; } var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false; if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) { var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)}; iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*"); } }; if (window.addEventListener) { window.addEventListener("message", handleIFrameMessage, false); } else if (window.attachEvent) { window.attachEvent("onmessage", handleIFrameMessage); } if(window.location.href && window.location.href.indexOf("?") > -1) { var ifr = false; if (args.length > 2) { ifr = document.getElementById("JotFormIFrame-" + args[2]); } else { ifr = document.getElementById("JotFormIFrame"); } var get = window.location.href.substr(window.location.href.indexOf("?") + 1); if(ifr && get.length > 0) { var src = ifr.src; src = src.indexOf("?") > -1 ? src + "&" + get : src + "?" + get; ifr.src = src; } } </script> -->
- <iframe id="JotFormIFrame-62628754976170" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="https://form.jotform.com/62628754976170" frameborder="0" style="width:100%; height:540px; border:none;" scrolling="no"> </iframe> <script type="text/javascript"> window.handleIFrameMessage = function(e) { var args = e.data.split(":"); var iframe = false; if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[2]); } else { iframe = document.getElementById("JotFormIFrame"); } if (!iframe) return; switch (args[0]) { case "scrollIntoView": iframe.scrollIntoView(); break; case "setHeight": iframe.style.height = args[1] + "px"; break; case "collapseErrorPage": if (iframe.clientHeight > window.innerHeight) { iframe.style.height = window.innerHeight + "px"; } break; case "reloadPage": window.location.reload(); break; } var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false; if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) { var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)}; iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*"); } }; if (window.addEventListener) { window.addEventListener("message", handleIFrameMessage, false); } else if (window.attachEvent) { window.attachEvent("onmessage", handleIFrameMessage); } if(window.location.href && window.location.href.indexOf("?") > -1) { var ifr = false; if (args.length > 2) { ifr = document.getElementById("JotFormIFrame-" + args[2]); } else { ifr = document.getElementById("JotFormIFrame"); } var get = window.location.href.substr(window.location.href.indexOf("?") + 1); if(ifr && get.length > 0) { var src = ifr.src; src = src.indexOf("?") > -1 ? src + "&" + get : src + "?" + get; ifr.src = src; } } </script>
-
-
-
-  </section>
+  <iframe id="JotFormIFrame-62628754976170" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="https://form.jotform.com/62628754976170" frameborder="0" style="width:100%; height:540px; border:none;" scrolling="no"> </iframe> <script type="text/javascript"> window.handleIFrameMessage = function(e) { var args = e.data.split(":"); var iframe = false; if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[2]); } else { iframe = document.getElementById("JotFormIFrame"); } if (!iframe) return; switch (args[0]) { case "scrollIntoView": iframe.scrollIntoView(); break; case "setHeight": iframe.style.height = args[1] + "px"; break; case "collapseErrorPage": if (iframe.clientHeight > window.innerHeight) { iframe.style.height = window.innerHeight + "px"; } break; case "reloadPage": window.location.reload(); break; } var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false; if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) { var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)}; iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*"); } }; if (window.addEventListener) { window.addEventListener("message", handleIFrameMessage, false); } else if (window.attachEvent) { window.attachEvent("onmessage", handleIFrameMessage); } if(window.location.href && window.location.href.indexOf("?") > -1) { var ifr = false; if (args.length > 2) { ifr = document.getElementById("JotFormIFrame-" + args[2]); } else { ifr = document.getElementById("JotFormIFrame"); } var get = window.location.href.substr(window.location.href.indexOf("?") + 1); if(ifr && get.length > 0) { var src = ifr.src; src = src.indexOf("?") > -1 ? src + "&" + get : src + "?" + get; ifr.src = src; } } </script>
+</section>
 </main>
 <footer>
-<a href="#"><input type="button" name="Top" value="Top" class="animated"></a>
-<div class="socialmedia">
-  <a href="//www.linkedin.com/in/joelgilbert1" class="animated"><img src="img/SocialMediaIcons/PNG/CircleColor/Linkedin.png" alt=""></a>
-  <a href="//paxman23l.github.io" class="animated"><img src="img/SocialMediaIcons/PNG/CircleColor/Github.png" alt=""></a>
-  <a href="//www.behance.net/Paxman23l" class="animated"><img src="img/SocialMediaIcons/PNG/CircleColor/Behance.png" alt=""></a>
-
-</div>
+  <a href="#header"><input type="button" name="Top" value="Top" class="animated"></a>
+  <div class="socialmedia">
+    <a href="//www.linkedin.com/in/joelgilbert1" class="animated"><img src="img/SocialMediaIcons/PNG/CircleColor/Linkedin.png" alt=""></a>
+    <a href="//paxman23l.github.io" class="animated"><img src="img/SocialMediaIcons/PNG/CircleColor/Github.png" alt=""></a>
+    <a href="//www.behance.net/Paxman23l" class="animated"><img src="img/SocialMediaIcons/PNG/CircleColor/Behance.png" alt=""></a>
+  </div>
 </footer>
 <!-- Bootstrap/Navbar Menu -->
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<!-- jQuery Library -->
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<!-- nanoGallery -->
-<script type="text/javascript" src="jquery.nanogallery.min.js"></script>
 <!-- ScrollSpy -->
 <script>
-
-$('body').scrollspy({
-  target: '.navbar-default',
-  offset: 20
-})
-
-$('div > ul > li > a, .navbar-brand').bind('click', function() {
-  $('html, body').stop().animate({
-    scrollTop: $($(this).attr('href')).offset().top - 50
-  }, 1500, 'easeInOutExpo');
+$(document).on('click', 'a', function(event) {
   event.preventDefault();
-});
-// Add smooth scrolling on all links inside the navbar
-$("#example-navbar-collapse a, .navbar-brand").on('click', function(event) {
-  // Make sure this.hash has a value before overriding default behavior
-  if (this.hash !== "") {
-    // Prevent default anchor click behavior
-    event.preventDefault();
 
-    // Store hash
-    var hash = this.hash;
+  $('html, body').animate({
+    scrollTop: $($.attr(this, 'href')).offset().top
+  }, 1000);
 
-    // Using jQuery's animate() method to add smooth page scroll
-    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-    $('html, body').animate({
-      scrollTop: $(hash).offset().top
-    }, 800, function() {
-
-      // Add hash (#) to URL when done scrolling (default click behavior)
-      window.location.hash = hash;
-    });
-  } // End if
 });
 </script>
 <!-- Animation (Flip) -->
@@ -221,24 +195,16 @@ setInterval(function() {     if ( didScroll ) {         didScroll = false;
 
 // note for the above: setInterval(function, timeout[in ms]);
 </script>
-<script>
-$('nav > ul > li > a, .business-name > a, footer >a ').bind('click', function() {
-  $('html, body').stop().animate({
-    scrollTop: $($(this).attr('href')).offset().top - 50
-  }, 1500, 'easeInOutExpo');
-  event.preventDefault();
-});
-</script>
 
 <!-- nanogallery http://nanogallery.brisbois.fr/-->
-<script src="//cdnjs.cloudflare.com/ajax/libs/nanogallery/5.10.3/jquery.nanogallery.min.js">
+<script src="js/jquery.nanogallery.min.js">
 $jQuery(document).ready(function () {
   $jQuery("#nanoGallery").nanoGallery({
     thumbnailWidth: 'auto',
     thumbnailHeight: 100,
     locationHash: false,
     thumbnailHoverEffect:'borderLighter,imageScaleIn80',
-    itemsBaseURL:'//nanogallery.brisbois.fr/demonstration/'
+    // itemsBaseURL:'//nanogallery.brisbois.fr/demonstration/'
   });
 });
 
@@ -265,6 +231,21 @@ $(".owl-carousel").owlCarousel({
     }
   }
 });
+});
+</script>
+<script>
+// $(function(){
+//   $(".flip").flip({
+//     trigger: 'hover'
+//   });
+// });
+</script>
+<script>
+$('.flip').click(function(){
+  $(this).find('.card').addClass('flipped').mouseleave(function(){
+      $(this).removeClass('flipped');
+  });
+  return false;
 });
 </script>
 </body>
