@@ -1,0 +1,143 @@
+.container > .row {
+  height: 540px;
+  margin-top: 30px;
+}
+
+.row > div, section {
+  height: 100%;
+}
+section > .row {
+  height: 50%;
+}
+
+.textbox {
+  background-color: #eee;
+  padding: 15% 25% 0 10%;
+  height: 255px;
+}
+
+.big {
+  height: 100%;
+}
+
+.big span {
+  font-size: 5.5em;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+}
+
+.big h1 {
+  font-size: 30px;
+}
+
+p {
+  line-height: 2.4;
+}
+
+.big p {
+  margin-top: 40px;
+}
+
+.yellow {
+  background-color: #f4ed47;
+}
+
+.image {
+  background-image: url("http://placehold.it/250?text=image");
+  background-size: cover;
+  width: 100%;
+  height: 255px;
+  text-align: center;
+}
+
+.book {
+  background-image: url("../img/books.png");
+}
+
+.notebook {
+  background-image: url("../img/notebook.png");
+}
+
+.chicken {
+  background-image: url("../img/chicken.png");
+}
+
+.image p {
+  line-height: 100px;
+}
+
+.bottom {
+  padding-top: 15px;
+}
+
+.little h1 {
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+#contact {
+  border-radius: 0px;
+  color: black;
+  font-size: 18px;
+  margin-bottom: 30px;
+  padding: 40px;
+}
+
+#contact span {
+  margin: 8px;
+}
+
+@media (min-width:1200px) {
+  .move-up {
+    margin-top: -255px;
+  }
+}
+
+
+
+@media (max-width:1199px) {
+  .row {
+    margin-top: 30px;
+  }
+  .bottom {
+    padding-top: 0;
+  }
+  .container > .row {
+    height: auto;
+  }
+  .big {
+    padding-bottom: 30px;
+  }
+  .free .big {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .row {
+    margin: 0;
+  }
+  .row > div, .container, .row > section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .big h1 {
+    font-size: 25px;
+  }
+  .textbox {
+    padding-right: 5%;
+  }
+  .row > div {
+    margin-top: 30px;
+  }
+  .container > .row {
+    margin-top: 0;
+  }
+  .free .big {
+    margin-bottom: 0;
+  }
+}
