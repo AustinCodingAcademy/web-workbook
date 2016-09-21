@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+}
+ html {
+  font-size: 62.5%;
+  width: 100%;
+}
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.navbar {
+  margin-bottom: 0;
+  background: #DCE0D2;
+  border-bottom: 1px solid lightgray;
+}
+.navbar-header button {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.navbar-toggle {
+  border-radius: 1px;
+}
+.navbar-default .navbar-toggle:hover {
+  background-color: #DCE0D2;
+}
+.navbar-collapse {
+  border: none;
+}
+.navbar-default .navbar-toggle {
+  border: none;
+}
+#myNavbar {
+  float: left;
+}
+.navbar-default .navbar-nav > li > a {
+  text-decoration: none;
+  text-align: left;
+  font-size: 1.25rem;
+  line-height: 15px;
+}
+a {
+  text-decoration: none !important;
+}
+section, #intro, footer {
+  height: 600px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #DCE0D2;
+}
+div > p {
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+h1 {
+  margin: 0;
+  padding: 10px;
+  border: 7px solid #FFE200;
+}
+section, footer{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+#intro {
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/wood_desk.jpeg");
+  background-repeat: no-repeat;
+  opacity: 10;
+}
+
+#intro h1{
+  padding-top: 170px;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  font-size: 3rem;
+  border-style: none;
+}
+#Me {
+  background: #EFEDE0;
+  padding-top: 40px;
+  font-size: 2rem;
+}
+#Skills {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  font-size: 2rem;
+}
+ul {
+  list-style-type: none;
+  padding: 10px 20px;
+  padding-top: 0px;
+}
+.divider {
+  font-size: 1.5rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+#Projects {
+  display:flex;
+  flex-flow: column;
+  padding-top: 25px;
+}
+#Projects h1 {
+  margin-bottom: 10px;
+}
+#Projects img {
+  height: 100px;
+  width: 60%;
+  margin:10px;
+}
+#Contact {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+.contact img {
+  padding-left: 20px;
+}
+.contact ul {
+  text-decoration: none;
+}
+.contact li, #Contact > a {
+  color: #333;
+}
+.contact li:hover {
+  color: #C6EE6D;
+}
+.contact a:hover {
+  text-decoration: none;
+}
+
+@media screen and (min-width:480px) {
+  section, footer {
+    padding: 30px;
+  }
+  #Me {
+    padding-top: 140px;
+  }
+  #Skills > img {
+    max-width: 70%;
+    height:auto;
+    margin: 0 auto;
+}
+#Projects {
+  align-items: center;
+  justify-content: center;
+}
+
+#Projects img {
+  height: 150px;
+  width: 180px;
+}
+#Projects h1, #Contact h1 {
+  width: 405px;
+}
+}
+@media screen and (min-width: 620px) {
+  #intro {
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/woman-in-field640.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    opacity: 10;
+  }
+  #Skills {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+  }
+  #Skills >h1 {
+    height: 90%;
+  }
+  #Skills img {
+    width: 45%;
+    height: 45%;
+  }
+  #Projects {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #Projects img {
+    height: 200px;
+    width: 250px;
+  }
+
+
+@media screen and (min-width: 810px) {
+  .navbar-brand {
+    float: left;
+  }
+  #myNavbar {
+    float: right;
+    text-align: center;
+  }
+  #myNavbar > .nav navbar-nav {
+    padding-bottom: 0px;
+  }
+  #Me h1, #Projects h1, #Contact h1, .contact {
+    width: 85%;
+    margin: 0 auto;
+  }
+  #Skills {
+    display: flex;
+    /*flex-direction: : row;*/
+  }
+  #Skills > h1 {
+
+    /*height: 90%;*/
+  }
+  #Skills ul {
+
+    /*height: 55%;*/
+  }
+  #Skills img {
+
+    /*height: 55%;*/
+  }
+}
+@media screen and (min-width: 1400px) {}
