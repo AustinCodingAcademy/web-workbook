@@ -1,0 +1,357 @@
+body{
+  font-family: 'Cherry Cream Soda', cursive;
+}
+
+.page nav.navbar a{
+  color:#990099;
+}
+
+header{
+  background-image:url("https://kiravillarreal.github.io/intro-workbook/20FinalProject/img/workspace-main.jpg");
+  background-position:center bottom;
+  padding: 5% 0 8%;
+}
+
+header h1,
+header h4
+{
+  color:white;
+  text-align:center;
+}
+
+header h1{
+  font-size:3em;
+  padding-top:100px;
+}
+
+header h4{
+  font-size:1em;
+}
+
+#about{
+  text-align:center;
+  padding:8%;
+}
+
+#about p{
+  padding-top:5%;
+}
+
+#about img
+{
+  max-width: 40%;
+  min-width: 270px;
+  height: auto;
+  border:10px solid #990099;
+  border-radius:10%;
+
+}
+.services{
+  background-image: url("https://kiravillarreal.github.io/intro-workbook/20FinalProject/img/workspace-sub.jpg");
+  text-align:center;
+}
+
+.services h2, .services h4, .services p{
+  color:#4d004d;
+}
+
+.services h2{
+  padding:15%;
+}
+
+.services p{
+  padding:5%;
+  padding-bottom:10%;
+}
+
+.servicebox{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.services article{
+  height:475px;
+}
+
+.portfolio{
+  /*display:flex;
+  flex-direction:column;*/
+  align-items:center;
+  background-color:#00cc66;
+}
+
+.portfolio h2, .portfolio h4{
+  color:white;
+  text-align:center;
+}
+
+.portfolio a {
+  text-align: center;
+}
+
+.portfolio img{
+  max-width:60%;
+  height:auto;
+  padding:3%
+
+}
+
+.foliobox{
+  display:flex;
+  flex-direction:column;
+
+}
+
+.contact{
+}
+
+.contact h2, .contact p{
+  text-align:center;
+}
+
+.contact h2{
+  padding-top:80px;
+}
+
+.contact p{
+  padding-bottom:50px;
+}
+
+footer{
+  background-color:#990099;
+  text-align:center;
+}
+
+footer h2, footer address{
+  color:white;
+
+}
+
+footer address{
+  padding:1%
+}
+
+footer h2{
+  padding-top:10%;
+}
+
+picture{
+  padding-bottom:5%
+}
+
+
+
+
+/*media queries*/
+
+@media screen and (min-width: 320px) {
+  .page::before {
+    content: "320px";
+    color: green;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2em;
+  }
+
+  footer h2{
+    padding-top:150px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .page::before {
+    content: "480px";
+    color: maroon;
+  }
+
+  header h1{
+  padding-top:150px;
+}
+  .about{
+}
+  .services h4{
+    margin-bottom:30px;
+  }
+
+  .services p{
+    padding-top:0;
+  }
+
+  .portfolio h2{
+    padding-top:15%
+  }
+
+  .contact h2{
+    padding-top:70px;
+  }
+
+  footer{
+  }
+
+  footer h2{
+    padding-top:100px;
+  }
+
+ }
+
+
+@media screen and (min-width: 620px) {
+  .page::before {
+    content: "620px";
+    color: orange;
+  }
+
+  header h1{
+    font-size:5em
+  }
+
+  header h4{
+    font-size:2em;
+  }
+
+  h2{
+    font-size:3em;
+  }
+
+  .services h2{
+  padding:10%;
+  padding-bottom:2%
+  }
+
+  .services h4{
+    font-size:1.7em;
+  }
+
+  .services p{
+    padding:2%;
+  }
+
+  .services img{
+    margin-top:50px;
+  }
+
+  .portfolio h2{
+    padding-top:10%;
+  }
+
+  .contact h2{
+    padding-bottom:0;
+    padding-top:100px;
+  }
+
+  .contact p{
+    padding-top:0;
+  }
+
+  footer h2{
+    padding-bottom:0;
+    padding-top:150px;
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .page::before {
+    content: "810px";
+    color: black;
+  }
+
+  header h1{
+    padding-top:100px;
+    font-size:6em;
+  }
+
+  .services h2{
+    padding-top:10%;
+    padding-bottom:0;
+  }
+
+  .servicebox{
+    flex-direction:row;
+  }
+
+  .servicebox article{
+  max-width:33.3%;
+  padding:2%;
+}
+
+  .services{
+  }
+
+  .foliobox{
+    /*flex-direction:row;*/
+    padding:2% 0;
+
+  }
+
+  .contact h2{
+    padding-top:100px;
+  }
+
+  footer h2{
+    padding-top:200px;
+  }
+
+
+  #map{
+    display:flex;
+    justify-content:center;
+  }
+
+ }
+
+@media screen and (min-width: 1400px) {
+   .page::before
+  {
+    content: "1400px";
+    color: black;
+  }
+
+  h2{
+    font-size:5em;
+  }
+
+  header{
+  }
+
+  header h1{
+    font-size:7em;
+  }
+
+  header h4{
+    font-size:2.5em;
+  }
+
+  .about{
+    padding-bottom:0;
+  }
+
+  .about p
+  {
+  }
+
+  .services h2{
+    padding-top:7%;
+  }
+  .portfolio h2{
+    padding-top:100px;
+  }
+
+  .contact h2{
+    padding-top:100px;
+  }
+
+
+  .contact p{
+    font-size:1.3em;
+  }
+
+  footer{
+  }
+
+  footer h2{
+    padding-top:250px;
+  }
+}
