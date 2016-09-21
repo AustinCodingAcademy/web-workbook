@@ -15,7 +15,7 @@ p {
   background-size: cover;
 }
 .txt-box {
-  padding: 0 40px;
+  padding: 40px;
   display: table-cell;
   vertical-align: middle;
 }
@@ -46,7 +46,7 @@ p {
   height: 615px;
   display: table-cell;
   vertical-align: middle;
-  padding: 0 50px;
+  padding: 50px;
 }
 .carousel-box p {
   padding-bottom: 15px;
@@ -57,8 +57,8 @@ p {
 #fourth-quarter, #mobile-carousel {
   background-color: #e6e6e6;
 }
-#first-quarter h1, #fourth-quarter h1 {
-  font-size: 40px;
+#first-quarter h1, #fourth-quarter h1, #mobile-carousel h1 {
+  font-size: 45px;
   line-height: 50px;
 }
 #contact {
@@ -72,4 +72,16 @@ p {
   text-decoration: none;
   font-size: 40px;
   color: black;
+}
+@media (max-width: 767px) {
+  p {
+    font-size: 20px;
+  }
+  #first-quarter h1, #fourth-quarter h1, #mobile-carousel h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .carousel-box {
+    padding: 30px;
+  }
 }
