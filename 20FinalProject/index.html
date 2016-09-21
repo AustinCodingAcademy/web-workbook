@@ -1,10 +1,244 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
+    <title>Khadijah's Portfolio Final Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <nav>
+        <span class="left project-name"><a href="#">Khadijah's Portfolio Final Project</a></span>
+        <ul class="right">
+            <li><a href="#PortfolioOverview">Portfolio Overview</a></li>
+            <li><a href="#Samples">Samples</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#bottom">Contact Me</a></li>
+        </ul>
+    </nav>
+    <header id="top">
+        <div class="overlay">
+            <h1>Portfolio Overview</h1>
+            <hr>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <hr>
+        </div>
+    </header>
+    <main>
+        <section>
+
+            <div class="carouselbox">
+                <div class="buttons">
+                    <button class="prev">
+            ◀ <span class="offscreen">Previous</span>
+          </button>
+                    <button class="next">
+            <span class="offscreen">Next</span> ▶
+          </button>
+                </div>
+                <ol class="content">
+                    <li><img src="img/carousel2.png" width="240" height="240" alt="Slide 1" /></li>
+                    <li><img src="img/carousel3.png" width="240" height="240" alt="Slide 2" /></li>
+                    <li><img src="img/carousel4.png" width="240" height="240" alt="Slide 3" /></li>
+                    <li><img src="img/carousel5.png" width="240" height="240" alt="Slide 4" /></li>
+                    <li><img src="img/carousel6.png" width="240" height="240" alt="Slide 5" /></li>
+                    <li><img src="img/carousel7.png" width="240" height="240" alt="Slide 6" /></li>
+                    <li><img src="img/carousel8.png" width="240" height="240" alt="Slide 7" /></li>
+                </ol>
+            </div>
+
+        </section>
+        <section id="project">
+            <h2>Portfolio Overview</h2>
+            <div class="projectdescription">
+                <article class="project">
+                    <h3>Overview of things I've learned</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+                <article class="project">
+                    <h3>Description of Project 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+                <article class="project">
+                    <h3>Description of Project 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+                <article class="project">
+                    <h3>Description of Project 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </article>
+            </div>
+        </section>
+        <section id="Samples">
+            <h2>Samples</h2>
+            <div class="Samples">
+                <article class="Samples">
+                    <ul style="list-style-type:none">
+                        <li>2016 <br> <span class="Samples">Project Sample 1</span></li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <li>2016 <br> <span class="Samples">Project Sample 2</span></li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <li>2016 <br> <span class="Samples">Project Sample 3</span></li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <li>2016 <br> <span class="Samples">Project Sample 4</span></li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section id="Location">
+            <h2>Location</h2>
+            <div class="Location">
+                <article class="Location">
+                    <div>
+                        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                        <div style='overflow:hidden;height:440px;width:700px;'>
+                            <div id='gmap_canvas' style='height:440px;width:700px;'></div>
+                            <div><small><a href="http://www.embedgooglemaps.com/en/">Generate your map here, quick and easy!									Give your customers directions									Get found</a></small></div>
+                            <div><small><a href="https://binaireoptieservaringen.nl/">Wilt u geld verdienen met de handel in binaire opties, maar is het allemaal onduidelijk hoe dit precies werkt, en welke aanbieders betrouwbaar zijn? Lees dan verder op onze site: wij vergelijken aanbieders op betrouwbaarheid en kwaliteit. Zo komt u nooit voor verrassingen te staan. Wij van binaireoptieservaringen.nl helpen u graag!</a></small></div>
+                            <style>
+                                #gmap_canvas img {
+                                    max-width: none!important;
+                                    background: none!important
+                                }
+                            </style>
+                        </div>
+                        <script type='text/javascript'>
+                            function init_map() {
+                                var myOptions = {
+                                    zoom: 10,
+                                    center: new google.maps.LatLng(29.4324141, -98.49283049999997),
+                                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                                };
+                                map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                                marker = new google.maps.Marker({
+                                    map: map,
+                                    position: new google.maps.LatLng(29.4324141, -98.49283049999997)
+                                });
+                                infowindow = new google.maps.InfoWindow({
+                                    content: '<strong>Central Library</strong><br>600 Soledad St., San Antonio, TX<br>'
+                                });
+                                google.maps.event.addListener(marker, 'click', function() {
+                                    infowindow.open(map, marker);
+                                });
+                                infowindow.open(map, marker);
+                            }
+                            google.maps.event.addDomListener(window, 'load', init_map);
+                        </script>
+                </article>
+                </div>
+
+        </section>
+        <section id="bottom">
+          <div>
+              <script type="text/javascript" src="https://form.jotform.com/jsform/62634544464156"></script>
+          </div>
+            <!-- <div class="bottom">
+                <article class="Hours">
+                    <h3>Hours</h3>
+                    <p>
+                        Monday-Thursday: 9am-9pm <br> Friday & Saturday: 9am-5pm <br> Sunday: 11am-5pm
+                    </p>
+                </article>
+                <article class="contact">
+                    <h3>Contact</h3>
+                    <address>
+                      Central Library<br>
+                      600 Soledad St <br>
+                      San Antonio, TX 78205<br>
+                      khadijah@bestleadgen.com<br>
+                    </address>
+                </article>
+                <article class="socialmedia">
+                    <h3>Follow us!</h3>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </article>
+            </div> -->
+        </section>
+    </main>
+    <footer>
+        <a id="logo" href="#top">Take me to the top</a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    </footer>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+                <a class="navbar-brand" href="#home">Brand</a>
+            </div>
+
+            <!-- Collect the nav links for toggling -->
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#PortfolioOverivew">Portfolio Overivew</a>
+                    </li>
+                    <li>
+                        <a href="#Samples">Samples</a>
+                    </li>
+                    <li>
+                        <a href="#Location">location</a>
+                    </li>
+                    <li>
+                        <a href="#Contact Me">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <header id="PortfolioOverivew" style="background: #1E88E5;">PortfolioOverivew</header>
+    <section id="Samples" style="background: #673ab7;">Samples</section>
+    <section id="Location" style="background: #ff9800;">Location</section>
+    <section id="ContactMe" style="background: #009688;">Contact Me</section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        // Add scrollspy to <body>
+        $('body').scrollspy({
+            target: ".navbar",
+            offset: 50
+        });
+        // Add smooth scrolling on all links inside the navbar
+        $("#example-navbar-collapse a, .navbar-brand").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function() {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    </script>
 
 </body>
+
 </html>

@@ -1,0 +1,208 @@
+body {
+    font-family: amatica script;
+}
+
+nav {
+    background: #000000;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    line-height: 50px;
+    position: fixed;
+    font-family: dancing script;
+
+}
+
+nav>ul>li {
+    display: inline;
+}
+
+a {
+    color: #f2f2f2;
+    text-decoration: none;
+    padding-right: 15px;
+    font-size: 25px;
+}
+
+.left {
+    float: left;
+    padding-left: 15px;
+}
+
+.right {
+    float: right;
+}
+
+header, section {
+    height: 900px;
+}
+
+header {
+    color: white;
+    font-weight: bold;
+    font-family: amatica sc;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+#top {
+    background: red;
+    background-attachment: fixed;
+    font-size: 2em;
+    text-align: center;
+    background-size: cover;
+}
+
+hr {
+    width: 45%;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    font-size: 28px;
+}
+
+main>section>h2 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px
+}
+
+.projectdescription {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    font-family: poiret one;
+}
+
+.Projects {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    font-family: poiret one;
+}
+
+.bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#bottom {
+    height: 300px;
+    background: green;
+}
+
+.bottom>article {
+    padding-right: 90px;
+    font-size: 20px;
+    font-family: poiret one;
+}
+
+.bottom>article>h3 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 50px;
+    background-color: black;
+}
+
+footer>a {
+    float: right;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#logo {
+    float: left;
+}
+
+.active .buttons {
+    padding: 5px 0;
+    background: #eee;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+
+.carouselbox button {
+    border: none;
+    display: none;
+}
+
+.active button {
+    display: block;
+}
+
+.offscreen {
+    position: absolute;
+    left: -2000px;
+}
+
+@media screen and (min-width: 320px) {
+    .container::before {
+        content: "320px";
+        color: green;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-weight: 700;
+        margin: 5px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .container::before {
+        content: "480px";
+        color: maroon;
+    }
+    @media screen and (min-width: 620px) {
+        .container::before {
+            content: "620px";
+            color: orange;
+        }
+        section {
+            display: flex;
+            flex-flow: wrap;
+            padding-left: 10%;
+        }
+        article {
+            margin-right: 5%;
+            flex-basis: 230px;
+        }
+        @media screen and (min-width: 810px) {
+            .container::before {
+                content: "810px";
+                color: black;
+            }
+            section {
+                display: flex;
+                flex-flow: row;
+            }
+            article {
+                margin-right: 5%;
+                flex-basis: 200px;
+            }
+            .price {
+                height: 20px;
+                font-size: 15px;
+            }
+            @media screen and (min-width: 1400px) {
