@@ -1,7 +1,7 @@
 $('.animate').hover(function() {
   var heading =  $(this);
-  heading.removeClass('pulse');
+  heading.removeClass('rubberBand');
   setTimeout(function() {
-    heading.addClass('pulse');
+    heading.addClass('rubberBand');
   }, 10);
 });
