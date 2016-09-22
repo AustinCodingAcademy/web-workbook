@@ -1,0 +1,130 @@
+body {
+  position: relative;
+}
+section{
+  padding-top: 50px;
+}
+#hero1 {
+  background-image: url("../img/header.png");
+  height:600px;
+  width:100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-position: center;
+  color: #fff;
+  font-family: helvetica;
+  text-align: center;
+}
+.hello > h1 {
+  font-size: 50px;
+  color: #66fcf1;
+}
+aside > img {
+  width: 100%;
+  height: auto;
+}
+.about {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.aboutme {
+  margin-bottom: 5%;
+  background-color: #e4e4e4;
+  padding-top: 3%;
+}
+.work {
+  padding-left:  3%;
+  padding-right: 3%;
+}
+.mywork {
+  background-color: #e4e4e4;
+  padding-bottom: 3%;
+}
+#portfolio {
+  text-align: center;
+}
+/*.owl-carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}*/
+/*.item > a > img {
+  width: 100%;
+  height: auto;
+}*/
+#me > img {
+  height: auto;
+  width: 100%;
+}
+@media screen and (min-width: 320px) {
+.page::before {
+  content: "320px";
+  font-family: Arial, sans-serif;
+  color: green;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 700;
+  margin: 90;
+  font-size: 2rem;
+  z-index: 9999;
+}
+}
+@media screen and (min-width: 480px) {
+  .page::before {
+    content: "480px";
+    color: maroon;
+  }
+}
+@media screen and (min-width: 620px) {
+  .page::before {
+    content: "620px";
+    color: orange;
+  }
+  # me {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .aboutme {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4e4e4;
+  }
+  .aboutme > .about {
+    width: 50%;
+  }
+  .aboutme > .aboutimg {
+    width: 50%;
+  }
+.mywork {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4e4e4;
+}
+.mywork > .workimg {
+  width: 50%;
+}
+.mywork > .work {
+  width: 50%;
+}
+}
+@media screen and (min-width: 810px) {
+  .page::before {
+    content: "810px";
+    color: black;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .page::before {
+    content: "1400px";
+    color: red;
+  }
+}
