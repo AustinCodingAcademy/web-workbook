@@ -1,0 +1,239 @@
+body{
+ background-color: #3a393b;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.mission{
+  width: 100%;
+  height: 600px;
+  background-image: url("../img/comp.JPG");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.overlay{
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, .6);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.top{
+  font-size: 3em;
+  color: #76c9d4;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.bottom{
+  font-size: 1.5em;
+  color: #76c9d4;
+  width: 15%;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid black;
+  background-color: #F5F5DC;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.wrapper{
+  display: flex;
+  flex-flow: column;
+  background-color: #F5F5DC;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: left;
+  font-size: 1em;
+  color: #76c9d4;
+  overflow: hidden;
+  font-size: 1em;
+}
+#story, #education, #resume, #location{
+  font-size: 2.5em;
+}
+#portfolio{
+  font-size: 2.5em;
+  color: #76c9d4;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 100%;
+  display: inline-block;
+  background-color:#F5F5DC;
+}
+.con1{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.a{
+  width: 50%;
+  background-image: url("https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/10522635_981553218527868_980243053617981139_n.jpg?oh=12a0b72984a787e9d85ec25e416051bc&oe=583974A0");
+  background-size: cover;
+  background-position: center;
+}
+.b{
+  flex-basis: 50%;
+
+}
+.con2{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  margin-bottom: 10px;
+}
+.c{
+  width: 50%;
+  background-image: url("https://static.sched.org/a9/2979487/avatar.jpg.320x320px.jpg?4e9");
+  background-size: cover;
+  background-position: center;
+}
+.d{
+  flex-basis: 50%;
+}
+.con3{
+  width: 100%;
+  height: 250px;
+  display: flex;
+  margin-bottom: 10px;
+}
+.e{
+  width: 50%;
+  background-image: url(../img/resume.png);
+  background-size: cover;
+  background-position: center;
+}
+.f{
+  flex-basis: 50%;
+}
+.con4{
+  width: 100%;
+  height: 350px;
+  display: flex;
+  margin: 10px;
+
+}
+.g{
+  width: 100%;
+  height: 90%;
+}
+#location{
+  text-align: center;
+}
+#mycarousel{
+  width: 100%;
+  margin-top: 25px;
+  height: 400px;
+  margin-bottom: 25px;
+}
+.img-responsive{
+  max-width: 100%;
+  max-height: 400px;
+  justify-content: center;
+}
+.carousel-inner{
+    margin: 0 auto;
+}
+
+footer{
+  width: 100%;
+  height: 125px;
+  background-color: #F5F5DC;
+  margin-top: 100px;
+  margin-bottom: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #76c9d4;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+footer img{
+  width: 50px;
+}
+
+//////////////////
+
+@media screen and (min-width: 320px) {
+  .page::before {
+    content: "320px";
+    font-family: Arial, sans-serif;
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 2rem;
+    z-index: 9999;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .page::before {
+    content: "480px";
+    color: maroon;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .page::before {
+    content: "620px";
+    color: orange;
+  }
+}
+
+@media screen and (min-width: 810px) {
+  .page::before {
+    content: "810px";
+    color: black;
+  }
+  .wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+  }
+  .con1{
+    width: 30%;
+  }
+  .con2{
+    width: 30%;
+  }
+  .con3{
+    width: 30%;
+  }
+  .con4{
+    width: 100%;
+    justify-content: center;
+    margin-left:50px;
+  }
+  .a{
+    width: 60%;
+  }
+  .b{
+    width: 40%;
+  }
+  .c{
+    width: 60%;
+  }
+  .d{
+    width: 40%;
+  }
+  .e{
+    width: 60%;
+  }
+  .f{
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .page::before {
+    content: "1400px";
+    color: red;
+  }
+}
