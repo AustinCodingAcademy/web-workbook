@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/assets/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -30,7 +31,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"></a>
+          <a class="navbar-brand" href="#">Benjamin Daniel Blowe</a>
         </div>
 
         <!-- Collect the nav links for toggling -->
@@ -63,9 +64,9 @@
           <div class="overlay">
             <div class="container">
 
-              <div class="slider-content">
+              <div class="slider-content animated bounceInDown">
                 <h1></h1>
-                <p>Hello, I'm Ben</p>
+                <p>Hi, I'm Ben</p>
               </div>
 
             </div> <!-- /.col-md-12 -->
@@ -80,14 +81,14 @@
 
   <!-- ABOUT -->
   <div class="about-section">
-    <section class="about-pic">
+    <section class="about-pic animated bounceInLeft">
       <img src="img/about-pic.jpg" alt="picture of me">
       <div class="font-awesome1">
         <a href="https://www.linkedin.com/in/benjamin-blowe-9a577297" target="_blank"><i class="fa fa-linkedin fa-5x"></i></a>
         <a href="https://github.com/bdbblowe" target="_blank"><i class="fa fa-github fa-5x"></i></a>
       </div>
     </section>
-    <section id="about" class="light">
+    <section id="about" class="light animated bounceInRight">
       <header class="title">
         <h2>About <span></span></h2>
         <p>I'm a student of both web design and anthropology currently living in San Antonio, TX.
@@ -113,14 +114,24 @@
 
     </header>
 
-    <div id="owl-example" class="owl-carousel">
+    <div id="owl-projects" class="owl-carousel">
+     <div class="owl-item">
       <a href="https://bdbblowe.github.io/intro-workbook/15LessonFifteen/Checkpoint3/" target="_blank"><div class="item"> <img src="img/lesson15.jpg" alt=""> </div></a>
+     </div>
+     <div class="owl-item">
       <a href="https://bdbblowe.github.io/intro-workbook/13LessonThirteen/homework/" target="_blank"><div class="item"> <img src="img/lesson13.jpg" alt=""> </div></a>
+     </div>
+     <div class="owl-item">
       <a href="https://bdbblowe.github.io/intro-workbook/12LessonTwelve/in-class-project/" target="_blank"><div class="item"> <img src="img/lesson12.jpg" alt=""> </div></a>
+     </div>
+     <div class="owl-item">
       <a href="https://bdbblowe.github.io/intro-workbook/10LessonTen/Checkpoint2/" target="_blank"><div class="item"> <img src="img/lesson10.jpg" alt=""> </div></a>
-      <a href="http://google.com" target="_blank"><div class="item"> <img src="http://projectaccelerator.co.uk/wp-content/uploads/2016/08/Project-Management.jpg" alt=""> </div></a>
-
+     </div>
+     <div class="owl-item">
+      <!-- <a href="http://google.com" target="_blank"><div class="item"> <img src="http://projectaccelerator.co.uk/wp-content/uploads/2016/08/Project-Management.jpg" alt=""> </div></a> -->
     </div>
+
+    <!-- </div> -->
   </section>
 
 
@@ -132,12 +143,12 @@
       <p></p>
     </header>
     <div id="services">
-      <section class="services-left">
+      <section class="services-left animated fadeInLeft">
         <i class="fa fa-code fa-5x" ></i>
         <h2>Web Design</h2>
         <p>I offer sleak modern responsive websites <br>with a Mobile First strategy.</br></p>
       </section>
-      <section class="services-right">
+      <section class="services-right animated fadeInRight">
         <i class="fa fa-desktop fa-5x"></i>
         <h2>Web Development</h2>
         <p>From wireframing to HTML5 and CSS3<br>with Javascript and jQuery experience.</br></p>
@@ -185,9 +196,38 @@
 </div><!-- /.container-fluid -->
 
 <!-- SCRIPT -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/owl.carousel.js">
+<script src="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/owl.carousel.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script>
+   // Add scrollspy to <body>
+$('body').scrollspy({
+ target: ".navbar",
+ offset: 50
+});
+// Add smooth scrolling on all links inside the navbar
+$("#example-navbar-collapse a, .navbar-brand").on('click', function(event) {
+ // Make sure this.hash has a value before overriding default behavior
+ if (this.hash !== "") {
+   // Prevent default anchor click behavior
+   event.preventDefault();
+
+   // Store hash
+   var hash = this.hash;
+
+   // Using jQuery's animate() method to add smooth page scroll
+   // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+   $('html, body').animate({
+     scrollTop: $(hash).offset().top
+   }, 800, function() {
+
+     // Add hash (#) to URL when done scrolling (default click behavior)
+     window.location.hash = hash;
+   });
+ } // End if
+});
+ </script>
 
 <script>
 $(document).ready(function() {
