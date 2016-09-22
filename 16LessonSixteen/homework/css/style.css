@@ -1,0 +1,299 @@
+body {
+  background-color: black;
+  margin:50px auto;
+}
+
+.box {
+  background-clip: padding-box;
+  border: 2px solid transparent;
+
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 100;
+  color: #efefef;
+  font-size: 14px;
+
+  min-height: 275px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.big {
+  font-size: 30px;
+  font-weight: 100;
+  color: #efefef;
+}
+.one, .ten {
+  height:550px;
+  background-color: grey;
+}
+
+/*.ten {
+  height:600px;
+  background-color: grey;
+}*/
+
+.c {
+  background-image: url("http://www.spyderonlines.com/images/wallpapers/cookie-monster-background/cookie-monster-background-12.jpg");
+  background-position: bottom;
+}
+
+
+
+.one {
+  background-image: url("http://licencetoeat.files.wordpress.com/2013/03/eleven-madison-park-sign.jpg");
+}
+
+.two {
+  color: #efefef;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding: 15px;
+}
+
+.two:hover .front {
+  display: none;
+  opacity: 0;
+  overflow: hidden;
+}
+.two:hover .back {
+  display: block;
+  opacity: 1;
+}
+
+
+.three {
+  background-image: url("http://file.designdb.com/editor/10/16118520160704143637.jpg");
+  /*background-image: url("http://getbento.imgix.net/accounts/102da05919be0726cec2e6365172199c/media/images/791328d.jpg");*/
+}
+
+.four {
+  background-image: url("http://img.timeinc.net/time/asia/magazine/2010/1101/360_tga_dining_1101.jpg");
+  background-position: left;
+}
+
+/*.five .front{
+  color: #efefef;
+  display:flex;
+  justify-content:center;
+  padding-top: 120px;
+}*/
+
+
+.five {
+  color: #efefef;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding: 5px;
+}
+
+.five:hover .front {
+  display: none;
+  /*transition: opacity .5s ease-in;*/
+  opacity: 0;
+  overflow: hidden;
+}
+.five:hover .back {
+  display: block;
+  /*transition: opacity .5s ease-in;*/
+  opacity: 1;
+}
+
+.five .res_head {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.five .choose {
+  font-size: 25px;
+}
+
+.five .sub {
+  color: #BBBDC1;
+  text-align: center;
+}
+
+.five .underline {
+  text-decoration: underline;
+}
+
+.five .select {
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 5px;
+  border: 1px black solid;
+
+}
+.five .select:hover {
+  padding: 5px 10px 5px 10px;
+  border: 1px #efefef solid;
+}
+
+.six {
+  background-image: url("http://getbento.imgix.net/accounts/102da05919be0726cec2e6365172199c/media/images/372742a.jpg");
+}
+
+.seven {
+  background-image: url("http://getbento.imgix.net/accounts/102da05919be0726cec2e6365172199c/media/images/687741a.jpg");
+}
+
+.eight {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.eight:hover .front {
+  display: none;
+  /*transition: opacity .5s ease-in;*/
+  opacity: 0;
+  overflow: hidden;
+}
+.eight:hover .back {
+  display: block;
+  /*transition: opacity .5s ease-in;*/
+  opacity: 1;
+}
+
+a {
+  color: grey;
+  text-decoration: none;
+
+}
+
+a:hover {
+  color: #efefef;
+  text-decoration: none;
+}
+
+
+.nine {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
+.front {
+  opacity:1;
+  z-index: 1;
+}
+
+.back {
+  display: none;
+  opacity: 0;
+  z-index: 2;
+}
+
+.nine:hover .front {
+  display: none;
+  /*transition: opacity .5s ease-in;*/
+  opacity: 0;
+  overflow: hidden;
+}
+.nine:hover .back {
+  display: block;
+  /*transition: opacity .5s ease-in;*/
+  opacity: 1;
+}
+
+.nine .back .name {
+  color: grey;
+}
+
+.nine .back .title {
+  color: #efefef;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.ten {
+  /*background-image: url("http://www.hotel41nyc.com/wp-content/uploads/2015/02/1931_b.jpg");*/
+
+  background-image: url("http://static5.businessinsider.com/image/55365993ecad04bf1a514ef6-1200/eleven-madison-park.jpg");
+  /*background-image: url("https://media.timeout.com/images/100592395/image.jpg");*/
+}
+
+.c {
+  padding-top: 20px;
+}
+.biggie, .smalls {
+  color: red;
+  text-align: center;
+}
+
+.biggie {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.smalls {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+
+@media (max-width: 786px) {
+  .box {
+    background-clip: padding-box;
+    border: 0px solid transparent;
+
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 100;
+    color: #efefef;
+    font-size: 14px;
+
+    min-height: 275px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+  .one, .ten {
+    height:300px;
+  }
+
+ .two {
+    margin-top: 275px;
+    padding-left:10%;
+    padding-right:10%;
+    font-size: 15px;
+  }
+
+  .three {
+    margin-top: 275px;
+  }
+
+  .four {
+    margin-top: -550px;
+  }
+
+/*res*/
+  .five {
+    margin-top: 0px;
+    font-size: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+
+  .six {
+    margin-top: -550px;
+  }
+
+  .seven {
+    margin-top: 275px;
+  }
+
+/*accol*/
+  .eight {
+    margin-top: 275px;
+    font-size: 18px;
+  }
+
+/*people*/
+  .nine {
+    font-size: 18px;
+  }
+}
