@@ -1,10 +1,107 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Animate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <section class="superstructure row">
+            <div class="multimedia-box bounce col-xs-12 col-md-12 col-lg-6">
+                <img class="m-x-auto d-block glyph" src="http://placehold.it/25x25/777777" />
+                <h1>
+        This is an h1 that goes inside of .multimedia-box
+      </h1>
+                <img class="pull-xs-left bubble" src="http://placehold.it/25x25/777777" />
+                <img class="pull-xs-right bubble" src="http://placehold.it/25x25/777777" />
+                <img class="pull-xs-right bubble" src="http://placehold.it/25x25/777777" />
+            </div>
+
+            <div class="lg-six-display col-xs-12 col-md-12 col-lg-6">
+                <div class="row">
+                    <div class="image-box shift-and-bounce animated   col-xs-12 col-md-6 col-lg-6">
+                    </div>
+                    <div class="image-box shift-and-bounce animated   col-xs-12 col-md-6 col-lg-6">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="info-box col-xs-12 col-md-6 col-lg-6 ">
+                        <h2>this is an h2 in .info-box</h2>
+                        <img class="m-x-auto d-block glyph" src="http://placehold.it/25x25/777777" />
+                    </div>
+                    <div class="image-box shift-and-bounce animated   col-xs-12 col-md-6 col-lg-6">
+                    </div>
+                </div>
+            </div>
+
+            <div class="superstructure row">
+                <div class="lg-six-display col-xs-12 col-md-12 col-lg-6">
+                    <div class="row">
+                        <div class="image-box shift-and-bounce animated   col-xs-12 col-md-6 col-lg-6">
+                        </div>
+                        <div class="image-box shift-and-bounce animated   col-xs-12 col-md-6 col-lg-6">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="info-box col-xs-12 col-md-6 col-lg-">
+                            <h2>this is an h2 in .info-box</h2>
+                            <img class="m-x-auto d-block glyph" src="http://placehold.it/25x25/777777" />
+                        </div>
+                        <div class="image-box shift-and-bounce animated   col-xs-12 col-md-6 col-lg-6">
+                        </div>
+                    </div>
+                </div>
+                <div class="multimedia-box col-xs-12 col-md-12 col-lg-6">
+                    <img class="m-x-auto d-block glyph" src="http://placehold.it/25x25/777777" />
+                    <h1>
+            This is an h1 that goes inside of .multimedia-box
+          </h1>
+                    <img class="pull-xs-left bubble" src="http://placehold.it/25x25/777777" />
+                    <img class="pull-xs-right bubble" src="http://placehold.it/25x25/777777" />
+                    <img class="pull-xs-right bubble" src="http://placehold.it/25x25/777777" />
+                </div>
+
+        </section>
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script>
+            $('.shift-and-bounce').click(function() {
+                var heading = $(this);
+                //removes class bounce if already existing
+                heading.removeClass('bounce');
+                //adds a 10ms delay to the class.
+                setTimeout(function() {
+                    heading.addClass('bounce');
+                }, 10);
+
+
+                var isImgBoxAlt = $('.shift-and-bounce').hasClass('image-box-alt')
+
+                if (isImgBoxAlt) {
+                    heading.removeClass('image-box-alt');
+                    heading.addClass('image-box');
+                } else {
+                    heading.RemoveClass('image-box');
+                    heading.addClass('image-box-alt');
+                }
+                var isImgBox = $('.selector').hasClass('searched image')
+            });
+        </script>
 </body>
+
 </html>
