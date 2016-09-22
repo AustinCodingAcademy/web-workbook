@@ -1,6 +1,7 @@
 .body {
     margin-left: 0px;
     margin-right: 0px;
+    max-width: 100%
 }
 
 .nav-bar-default {
@@ -8,17 +9,14 @@
 }
 
 .container-fluid {
-    background-color: black;
+    background-color: transparent;
     color: white;
     margin: auto;
+    background-color: black;
 }
 
 .container-fluid a {
     color: white;
-}
-
-li.active {
-    margin-left: 600px;
 }
 
 .navbar {
@@ -33,34 +31,64 @@ li.active {
 .first-page {
     background-image: url("../img/wine-bg.jpg");
     background-repeat: no-repeat;
-    height: 600px;
     color: white;
     background-blend-mode: multiply;
     background-color: #4d4e4a;
     background-size: cover;
     font-size: 5px;
+    height: 773px;
 }
 
-.first-pic {
-    margin-left: 489px;
-    width: 25%;
+.first-pic img {
+    width: 28%;
     opacity: 0.75;
+    margin-left: 650px;
 }
 
 .first-text {
     text-align: center;
 }
 
-.second-page {
-    height: 600px;
-    overflow: hidden;
+.first-page span {
+    font-size: 14px;
+    margin-left: 724px;
+}
+
+.first-media {
+    margin-left: 772px;
+}
+
+.fa {
+    font-size: 22px;
+    color: white;
+    margin-left: 50px;
+    margin: 5px;
+}
+
+.second {
+    height: 883px;
     padding-left: 0px;
     padding-right: 0px;
+    clear: both;
+}
+
+.second-left {
+    height: 883px;
+    text-align: center;
 }
 
 .second-left img {
     width: 25%;
-    margin-left: 200px;
+    margin-left: 310px;
+    padding: 0px;
+}
+
+.second-pic {
+    background-image: url(../img/wine16.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -308px;
+    height: 883px;
 }
 
 .intro {
@@ -70,18 +98,18 @@ li.active {
     font-size: 20px;
     font-family: 'Georgia';
     font-style: italic;
-    margin-top: 100px;
+    margin-top: 300px;
 }
 
 .intro-main {
     font-family: 'Georgia';
     font-style: italic;
-    font-size: 24px;
+    font-size: 31px;
     line-height: 32px;
     font-weight: 300;
     color: #292929;
-    padding-left: 90px;
-    padding-right: 90px;
+    padding-left: 140px;
+    padding-right: 140px;
 }
 
 .intro-para {
@@ -95,26 +123,20 @@ li.active {
     padding-right: 90px;
 }
 
-.second-pic {
-    padding-right: 0px;
-}
-
 .second-pic img {
     width: 100%;
-    height: 600px;
-    overflow: hidden;
+    height: 773px;
 }
 
 .third-page {
-    background-image: url("../img/wine13.jpg");
+    background-image: url(../img/wine13.jpg);
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-color: #4d4e4a;
-    height: 600px;
+    height: 883px;
     color: white;
     text-align: center;
-    overflow: hidden;
-    margin-top: -95px;
+    background-size: cover;
 }
 
 .third-text {
@@ -122,19 +144,24 @@ li.active {
     font-style: italic;
     padding-left: 200px;
     padding-right: 200px;
-    margin-top: 200px;
+    margin-top: 350px;
 }
 
-.third-page p {
-    padding-left: 200px;
-    padding-right: 200px;
+.third p {
+    padding-left: 9px;
+    padding-right: 50px;
     font-family: 'Georgia';
     font-style: italic;
+    font-size: 20px;
+    padding-top: 25px;
+    padding-left: 360px;
+    padding-right: 360px;
 }
 
 .forth {
-    height: 650px;
+    height: 883px;
     text-align: center;
+    clear: both;
 }
 
 .bottom-text {
@@ -147,83 +174,273 @@ li.active {
 .bottom-para {
     font-family: 'Georgia';
     font-style: italic;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 30px;
+    padding-right: 25px;
 }
 
 .forth img {
-    height: 475px;
-    margin-left: 108px;
+    height: 687px;
+    margin-left: 140px;
 }
 
 .forth a {
-    border: 10px solid #91a05c;
+    border: 17px solid #91a05c;
     background-color: #91a05c;
     color: white;
     text-decoration: none;
+    line-height: 4;
+    font-size: 20px;
 }
 
 .forth a:hover {
     color: black;
 }
-
-@media (min-width: 768px) {
-    .body {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .nav-bar-default {
-        height: 30px
-    }
-    .container-fluid {
-        background-color: black;
-        color: white;
-        margin: auto;
-    }
-    .container-fluid a {
-        color: white;
-    }
-    li.active {
-        margin-left: 600px;
-    }
-    .navbar {
-        position: relative;
-        min-height: 50px;
-        border: 1px solid transparent;
-        margin-bottom: -1px;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    .first-page {
-        background-image: url("../img/wine-bg.jpg");
-        background-repeat: no-repeat;
-        color: white;
-        background-blend-mode: multiply;
-        background-color: #4d4e4a;
-        background-size: cover;
-        font-size: 5px;
-    }
 }
+@media (min-width: 768px) {
+  .body {
+      margin-left: 0px;
+      margin-right: 0px;
+      max-width: 100%
+  }
 
+  .nav-bar-default {
+      height: 30px
+  }
+
+  .container-fluid {
+      background-color: transparent;
+      color: white;
+      margin: auto;
+      background-color: black;
+  }
+
+  .container-fluid a {
+      color: white;
+  }
+
+  .navbar {
+      position: relative;
+      min-height: 50px;
+      border: 1px solid transparent;
+      margin-bottom: -1px;
+      padding-left: 0px;
+      padding-right: 0px;
+  }
+
+  .first-page {
+      background-image: url("../img/wine-bg.jpg");
+      background-repeat: no-repeat;
+      color: white;
+      background-blend-mode: multiply;
+      background-color: #4d4e4a;
+      background-size: cover;
+      font-size: 5px;
+      height: 400px;
+  }
+
+  .first-pic img {
+      width: 28%;
+      opacity: 0.75;
+      margin-left: 650px;
+  }
+
+  .first-text {
+      text-align: center;
+  }
+
+  .first-page span {
+      font-size: 14px;
+      margin-left: 724px;
+  }
+
+  .first-media {
+      margin-left: 772px;
+  }
+
+  .fa {
+      font-size: 22px;
+      color: white;
+      margin-left: 50px;
+      margin: 5px;
+  }
+
+  .second {
+      height: 883px;
+      padding-left: 0px;
+      padding-right: 0px;
+      clear: both;
+  }
+
+  .second-left {
+      height: 883px;
+      text-align: center;
+  }
+
+  .second-left img {
+      width: 25%;
+      margin-left: 310px;
+      padding: 0px;
+  }
+
+  .second-pic {
+      background-image: url(../img/wine16.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-y: -308px;
+      height: 883px;
+  }
+
+  .intro {
+      font-weight: lighter;
+      color: #D3D3D3;
+      text-align: center;
+      font-size: 20px;
+      font-family: 'Georgia';
+      font-style: italic;
+      margin-top: 300px;
+  }
+
+  .intro-main {
+      font-family: 'Georgia';
+      font-style: italic;
+      font-size: 31px;
+      line-height: 32px;
+      font-weight: 300;
+      color: #292929;
+      padding-left: 140px;
+      padding-right: 140px;
+  }
+
+  .intro-para {
+      font-weight: lighter;
+      color: #888487;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+      padding-left: 90px;
+      padding-right: 90px;
+  }
+
+  .second-pic img {
+      width: 100%;
+      height: 773px;
+  }
+
+  .third-page {
+      background-image: url(../img/wine13.jpg);
+      background-repeat: no-repeat;
+      background-blend-mode: multiply;
+      background-color: #4d4e4a;
+      height: 883px;
+      color: white;
+      text-align: center;
+      background-size: cover;
+  }
+
+  .third-text {
+      font-family: 'Georgia';
+      font-style: italic;
+      padding-left: 200px;
+      padding-right: 200px;
+      margin-top: 350px;
+  }
+
+  .third p {
+      padding-left: 9px;
+      padding-right: 50px;
+      font-family: 'Georgia';
+      font-style: italic;
+      font-size: 20px;
+      padding-top: 25px;
+      padding-left: 360px;
+      padding-right: 360px;
+  }
+
+  .forth {
+      height: 883px;
+      text-align: center;
+      clear: both;
+  }
+
+  .bottom-text {
+      border-top: 1px solid #ebebeb;
+      font-family: 'Georgia';
+      font-style: italic;
+      margin-top: 0px;
+  }
+
+  .bottom-para {
+      font-family: 'Georgia';
+      font-style: italic;
+      padding-left: 30px;
+      padding-right: 25px;
+  }
+
+  .forth img {
+      height: 687px;
+      margin-left: 140px;
+  }
+
+  .forth a {
+      border: 17px solid #91a05c;
+      background-color: #91a05c;
+      color: white;
+      text-decoration: none;
+      line-height: 4;
+      font-size: 20px;
+  }
+
+  .forth a:hover {
+      color: black;
+  }
+}
 @media (max-width: 768px) {
     .body {
         margin-left: 0px;
         margin-right: 0px;
+        max-width: 100%;
     }
+
+    .container>.navbar-header {
+        margin-right: -15px;
+        background-color: black;
+        margin-left: -15px;
+    }
+
+    .navbar-toggle {
+        position: relative;
+        float: right;
+        padding: 9px 10px;
+        margin-top: 8px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        background-color: transparent;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+
     .nav-bar-default {
         height: 30px
     }
+
     .container-fluid {
         background-color: black;
         color: white;
         margin: auto;
+        width: 100%;
+        height: 40px;
     }
+
     .container-fluid a {
         color: white;
     }
+
     li.active {
         margin-left: 600px;
     }
+
     .navbar {
         position: relative;
         min-height: 50px;
@@ -232,96 +449,149 @@ li.active {
         padding-left: 0px;
         padding-right: 0px;
     }
+
     .first-page {
-        background-image: url("../img/wine-bg.jpg");
-        background-repeat: no-repeat;
-        color: white;
-        background-blend-mode: multiply;
-        background-color: #4d4e4a;
-        background-size: cover;
-        font-size: 5px;
+      background-image: url(../img/wine-bg.jpg);
+          background-repeat: no-repeat;
+          color: white;
+          background-blend-mode: multiply;
+          background-color: #4d4e4a;
+          background-size: cover;
+          font-size: 5px;
+          height: 450px;
+          background-position: center;
     }
+
+    .first-pic img {
+        margin-left: 80px;
+        width: 61%;
+        opacity: 0.75;
+        margin-top: 25px;
+    }
+
+    .first-text h3 {
+        font-size: 11px;
+        text-align: center;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .first-page span {
+      margin-left: 97px;
+        font-size: 9px;
+    }
+
+    .first-media {
+        margin-left: 135px;
+    }
+
+    .fa {
+        font-size: 15px;
+        color: white;
+        margin-left: 50px;
+        margin: 2px;
+    }
+
     .second {
         background-image: url("../img/wine16.jpg");
         background-position: 50%;
         background-repeat: no-repeat;
         background-size: cover;
         margin: 0 auto;
-        clear: both;
         height: 380px;
-        padding-bottom: 48px;
     }
+
     .second-left {
-        width: auto;
-        height: 300px;
-        margin-top: 372px;
+        height: 315px;
+        margin-top: 265px;
         margin-bottom: 75px;
     }
+
+    .second-pic {
+        background-image: url("../img/wine16.jpg");
+        background-repeat: no-repeat;
+        height: 773px;
+        background-size: 100%;
+    }
+
     .intro {
         font-weight: lighter;
         color: #D3D3D3;
         text-align: center;
-        font-size: 13px;
+        font-size: 15px;
         font-family: 'Georgia';
         font-style: italic;
-        margin-top: 20px;
+        margin-top: 125px;
     }
+
     .intro-main {
         font-family: 'Georgia';
         font-style: italic;
-        font-size: 15px;
-        line-height: 26px;
-        font-weight: 300;
+        font-size: 13px;
+        line-height: 32px;
         color: #292929;
-        padding-left: 55px;
+        padding-left: 40px;
         padding-right: 40px;
     }
+
     .intro-para {
-        font-weight: lighter;
-        color: #888487;
-        text-align: center;
-        font-size: 10px;
-        font-weight: 400;
-        line-height: 24px;
-        padding-left: 36px;
-        padding-right: 37px;
-    }
+      font-weight: lighter;
+          color: #888487;
+          text-align: center;
+          font-size: 10px;
+          font-weight: 30px;
+          line-height: 24px;
+          padding-left: 54px;
+          padding-right: 50px;
+      }
+
     .second-left img {
         width: 25%;
-        margin-left: 120px;
+        margin-left: 132px;
+        padding: 0px;
     }
+
+    .signature {
+        width: 25%;
+        margin-left: 20px;
+    }
+
     .third-page {
-        background-image: url("../img/wine13.jpg");
+        background-image: url(../img/wine13.jpg);
         background-repeat: no-repeat;
         background-blend-mode: multiply;
         background-color: #4d4e4a;
         height: 400px;
         color: white;
         text-align: center;
-        overflow: hidden;
-        margin-top: -95px;
         background-size: cover;
     }
+
     .third-text {
-        font-size: 15px;
-        line-height: 22px;
-        padding-left: 65px;
-        padding-right: 65px;
-        margin-top: 80px;
-    }
-    .third-page p {
+      font-family: 'Georgia';
+        font-style: italic;
         padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 149px;
+        font-size: 15px;
+    }
+
+    .third p {
+        padding-left: 9px;
         padding-right: 50px;
         font-family: 'Georgia';
         font-style: italic;
-        font-size: x-small;
-        padding-top: 15px;
+        font-size: 8px;
+        padding-top: 25px;
     }
+
     .forth img {
-        height: 278px;
-        margin-left: 108px;
-        padding-left: 13px;
+      height: 278px;
+          margin-left: 109px;
+          padding-left: 13px;
+          margin-top: 20px;
     }
+
     .bottom-text {
         border-top: 1px solid #ebebeb;
         font-family: 'Georgia';
@@ -330,6 +600,7 @@ li.active {
         padding-top: 20px;
         font-size: 15px;
     }
+
     .bottom-para {
         font-family: 'Georgia';
         font-style: italic;
@@ -337,11 +608,5 @@ li.active {
         padding-right: 35px;
         font-size: 11px;
         padding-bottom: 15px;
-    }
-    .forth img {
-        height: 278px;
-        margin-left: 108px;
-        padding-left: 13px;
-        margin-top: 20px;
     }
 }
