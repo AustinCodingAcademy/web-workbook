@@ -1,22 +1,26 @@
 body {
     position: relative;
 }
+
+
+
+
 #section1 {
   padding-top:50px;
-  height:800px;
+  height:700px;
   color: #fff;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("../img/mary.jpg");
-  background-size: contain;
+  background-image: url("../img/server41.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-
-
 }
-.section1 img{
+
+#section1 img{
     width: 100%;
     height: auto;
 }
@@ -24,50 +28,80 @@ h1{
   font-size: 4em;
   text-shadow: 2px 2px gray;
 }
+
+ .demo a {
+	position: absolute;
+	bottom: 100px;
+	left: 50%;
+	z-index: 2;
+	display: inline-block;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	color: #fff;
+	font : normal 400 20px/1 'Josefin Sans', sans-serif;
+	letter-spacing: .1em;
+	text-decoration: none;
+	transition: opacity .3s;
+}
+.demo a span {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 46px;
+	height: 46px;
+	margin-left: -23px;
+	border: 1px solid #fff;
+	border-radius: 100%;
+	box-sizing: border-box;
+}
+.demo a:hover {
+	opacity: .5;
+}
+#section01 a {
+	padding-top: 60px;
+}
+
+#section1 a span::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	content: '';
+	width: 16px;
+	height: 16px;
+	margin: -12px 0 0 -8px;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	box-sizing: border-box;
+}
+
+
 #section2 {
-  height:700px;
+  height: 500px;
   width: 100%;
+  background: #ecf0f1;
   display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 
 }
-.box2{
-  background-image: url("../img/dumbells.jpg");
-  height: auto;
-  width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
+.circle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-}
-.box2A{
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  width: 100%;
-}
-.A1{
-  background: #2c3e50;
-  height: 210px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-  text-align: center;
-}
-.A2{
-  height: 210px;
-  width: 100%;
-  border-bottom: 1px solid black;
-  background-color: #ecf0f1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: black;
-  text-align: center;
-}
+ }
+
 #section3 {
-  height:500px;
-  color: #fff;
+  height:400px;
+  background-image: url("../img/aca.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
   padding-top:50px;
   color: #fff;
   display: flex;
@@ -75,24 +109,19 @@ h1{
   justify-content: space-around;
   align-items: center;
 }
-#section41 {
+#section4 {
   padding-top:50px;
   height:500px;
   color: #fff;
   background-color: #00bcd4;
 }
-#section42 {
+#section5 {
   padding-top:50px;
   height:500px;
   color: #fff;
   background-color: #009688;
 }
 
-.box3{
-  height: 200px;
-  width: 200px;
-  background: blue;
-}
 
 footer{
   height: 500px;
