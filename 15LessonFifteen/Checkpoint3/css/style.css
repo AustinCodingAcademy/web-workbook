@@ -35,8 +35,10 @@ body {
 }*/
 
 .c {
-  background-color: yellow;
+  background-image: url("http://www.spyderonlines.com/images/wallpapers/cookie-monster-background/cookie-monster-background-12.jpg");
+  background-position: bottom;
 }
+
 
 
 .one {
@@ -53,13 +55,11 @@ body {
 
 .two:hover .front {
   display: none;
-  /*transition: opacity .5s ease-in;*/
   opacity: 0;
   overflow: hidden;
 }
 .two:hover .back {
   display: block;
-  /*transition: opacity .5s ease-in;*/
   opacity: 1;
 }
 
@@ -74,26 +74,35 @@ body {
   background-position: left;
 }
 
-.five .front{
+/*.five .front{
   color: #efefef;
   display:flex;
   justify-content:center;
-  margin-top: 120px;
+  padding-top: 120px;
+}*/
+
+
+.five {
+  color: #efefef;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding: 5px;
 }
 
 .five:hover .front {
   display: none;
+  /*transition: opacity .5s ease-in;*/
   opacity: 0;
   overflow: hidden;
 }
-
 .five:hover .back {
   display: block;
+  /*transition: opacity .5s ease-in;*/
   opacity: 1;
 }
 
 .five .res_head {
-  padding-top: 15px;
   text-align: center;
   padding-bottom: 15px;
 }
@@ -111,13 +120,13 @@ body {
 }
 
 .five .select {
-  padding: 5px;
+  padding: 5px 10px 5px 10px;
   margin-bottom: 5px;
   border: 1px black solid;
 
 }
 .five .select:hover {
-  padding: 5px;
+  padding: 5px 10px 5px 10px;
   border: 1px #efefef solid;
 }
 
@@ -199,10 +208,6 @@ a:hover {
   font-weight: 100;
 }
 
-.nine {
-  /*background-image: url("http://getbento.imgix.net/accounts/102da05919be0726cec2e6365172199c/media/images/687741a.jpg");*/
-}
-
 .ten {
   /*background-image: url("http://www.hotel41nyc.com/wp-content/uploads/2015/02/1931_b.jpg");*/
 
@@ -210,23 +215,85 @@ a:hover {
   /*background-image: url("https://media.timeout.com/images/100592395/image.jpg");*/
 }
 
+.c {
+  padding-top: 20px;
+}
+.biggie, .smalls {
+  color: red;
+  text-align: center;
+}
+
+.biggie {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.smalls {
+  font-size: 50px;
+  font-weight: 600;
+}
+
 
 @media (max-width: 786px) {
+  .box {
+    background-clip: padding-box;
+    border: 0px solid transparent;
+
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 100;
+    color: #efefef;
+    font-size: 14px;
+
+    min-height: 275px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
   .one, .ten {
     height:300px;
   }
 
-  .ten {
-    margin-top: -900px;
-    background-color: grey;
+ .two {
+    margin-top: 275px;
+    padding-left:10%;
+    padding-right:10%;
+    font-size: 15px;
   }
 
-  .seven_nine {
-    margin-top: 300px;
-    height:600px;
+  .three {
+    margin-top: 275px;
   }
 
-  .c {
-    margin-top: 600px;
+  .four {
+    margin-top: -550px;
+  }
+
+/*res*/
+  .five {
+    margin-top: 0px;
+    font-size: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+
+  .six {
+    margin-top: -550px;
+  }
+
+  .seven {
+    margin-top: 275px;
+  }
+
+/*accol*/
+  .eight {
+    margin-top: 275px;
+    font-size: 18px;
+  }
+
+/*people*/
+  .nine {
+    font-size: 18px;
   }
 }
