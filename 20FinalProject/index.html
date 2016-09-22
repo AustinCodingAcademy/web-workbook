@@ -33,7 +33,7 @@
                 <span class="icon-bar"></span>
               </button>
               <div class="intro">
-                <img src="img/penguin.png" alt="" srcset="img/penguin480.png 480w, img/penguin620.png 620w, img/penguin.png 810w">
+                <img src="img/penguin.png" alt="" srcset="img/penguin480.png 480w, img/penguin620.png 620w, img/penguin.png 810w" class="animated bounceInDown">
                 <a class="navbar-brand desktop" href="#header">Joel Gilbert</a>
               </div>
             </div>
@@ -41,14 +41,7 @@
               <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown"><a href="#header">Home</a></li>
                 <li class="dropdown"><a href="#about">About</a></li>
-                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Work
-                  <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#raspberry">Raspberry</a></li>
-                    <li><a href="#portal">Professional Portal</a></li>
-                    <li><a href="#garden">Garden</a></li>
-                  </ul>
-                </li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Work</a></li>
                 <li class="dropdown"><a href="#contact">Contact</a></li>
               </ul>
             </div>
@@ -60,108 +53,111 @@
         </div>
       </div>
     </header>
-    <section id="about" class="about">
+    <section class="about" id="about">
+      <div class="topcontainer">
+
+
       <article class="">
         <div class="card-container">
           <div class="card music">
-            <div class="front">
-              <span class="fa fa-user"></span>
+            <div class="front skillsoverlay">
+              <h1 class="">Musically Original <span>Designs</span></h1>
             </div>
-            <div class="back"><h1 class="">Musically Original <span>Designs</span></h1></div>
           </div>
-        </div>
-      </article>
-      <article class="">
-        <div class="card-container">
-          <div class="card education">
-            <div class="front">
-              <span class="fa fa-user"></span>
-            </div>
-            <div class="back">
-            <h1>Education</h1>
-            <ul>
-              <li><a href="www.austincodingacademy.com"><p>Austin Coding Academy</p></a></li>
-              <li><a href="//www.asu.edu/"><p>Arizona State University</p></a></li>
-              <li><a href="//www.wisc.edu"><p>University of Wisconsin</p></a></li>
-              <li><a href="//www.susqu.edu"><p>Susquehanna University</p></a></li>
-            </ul>
-          </div>
-          </div>
-        </div>
-      </article>
-      <article class="">
-        <div class="card-container">
-          <div class="card skills">
-            <div class="front">
-              <span class="fa fa-user"></span>
-            </div>
-            <div class="back">
-              <h1>Skills</h1>
-              <div class="skillsul">
-                <ul>
-                  <li><p>Linux</p></li>
-                  <li><p>HTML5</p></li>
-                  <li><p>CSS3</p></li>
-                  <li><p>MobileFirst</p></li>
+        </article>
+        <article class="">
+          <div class="card-container ">
+            <div class="card education ">
+              <div class="front educationoverlay">
+                <h1>Education</h1>
+                <ul class="educationoverlay" data-animation="slideInUp" data-timeout="400">
+                  <li><a href="www.austincodingacademy.com"><p>Austin Coding Academy</p></a></li>
+                  <li><a href="//www.asu.edu/"><p>Arizona State University</p></a></li>
+                  <li><a href="//www.wisc.edu"><p>University of Wisconsin</p></a></li>
+                  <li><a href="//www.susqu.edu"><p>Susquehanna University</p></a></li>
                 </ul>
-                <ul>
-                  <li><p>Flex-box</p></li>
-                  <li><p>jQuery</p></li>
-                  <li><p>Bootstrap</p></li>
-                  <li><p>Git</p></li>
-                </ul>
+              </div>
+            </div>
           </div>
-          </div>
+        </article>
         </div>
-      </div>
-      </article>
-      <article class="">
-        <div class="card-container">
-        <div class="card bio">
-          <div class="front">
-            <span class="fa fa-user"></span>
+
+        <div class="bottomcontainer">
+
+
+        <article class="">
+          <div class="card-container">
+            <div class="card skills">
+              <div class="front skillsoverlay">
+                <h1>Knowledge</h1>
+                <div class="skillsul skillsoverlay">
+                  <ul>
+                    <li><p>Linux</p></li>
+                    <li><p>HTML5</p></li>
+                    <li><p>CSS3</p></li>
+                    <li><p>MobileFirst</p></li>
+                  </ul>
+                  <ul>
+                    <li><p>Flex-box</p></li>
+                    <li><p>jQuery</p></li>
+                    <li><p>Bootstrap</p></li>
+                    <li><p>Git</p></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="back">
-            <h1>Teacher. Coder. Designer. Musician. Reliable. Dedicated.</h1>
+        </article>
+        <article class="">
+          <div class="card-container">
+            <div class="card bio">
+              <div class="front biooverlay">
+                <h1>Teacher. Coder. Designer. Musician. Reliable. Dedicated.</h1>
+              </div>
+            </div>
           </div>
+        </article>
         </div>
+      </section>
+      <section id="work" class="work owl-carousel">
+        <a href="../15LessonFifteen/Checkpoint3/index.html"><div class="item" style="background: url(img/winery.png) no-repeat 100%; background-size: cover; width:250px; height:250px"></div></a>
+        <a href="../13LessonThirteen/homework/index.html"><div class="item" style="background: url(img/creative.png) no-repeat 100%; background-size: cover; width:250px; height:250px"></div></a>
+        <a href="../12LessonTwelve/in-class-project/index.html"><div class="item" style="background: url(img/order.png) no-repeat 100%; background-size: cover; width:250px; height:250px"></div></a>
+        <a href="../12LessonTwelve/homework/index.html"><div class="item" style="background: url(img/ninja.png) no-repeat 100%; background-size: cover; width:250px; height:250px"></div></a>
+        <a href="../11LessonEleven/in-class-project/index.html"><div class="item" style="background: url(img/flexboxexample.png) no-repeat 100%; background-size: cover; width:250px; height:250px"></div></a>
+        <a href="../11LessonEleven/homework/inspired.html"><div class="item" style="background: url(img/Inspired.png) no-repeat 100%; background-size: cover; width:250px; height:250px"></div></a>
+        <a href="../10LessonTen/Checkpoint2/index.html"><div class="item" style="background: url(img/Checkpoint2.png) no-repeat 100%; background-size: cover; width:250px; height:250px"></div></a>
+        <a href="../09LessonNine/in-class-project/index.html"><div class="item" style="background: url(img/Garden.png) no-repeat 100%; background-size: cover; width:250px; height:250px"></div></a>
+        <a href="../08LessonEight/homework/exercise-06.html"><div class="item" style="background: url(img/Plane.png) no-repeat 100%; background-size: cover; width:250px; height:250px"></div></a>
+        <a href="../07LessonSeven/in-class-project/index.html"><div class="item" style="background: url(img/NASA.png) no-repeat 100%; background-size: cover; width:250px; height:250px"></div></a>
+        <a href="../05LessonFive/Checkpoint1/index.html"><div class="item" style="background: url(img/berries.png) no-repeat 100%; background-size: cover; width:250px; height:250px"></div></a>
+      </section>
+      <section id="contact" class="contact">
+        <article class="map">
+          <iframe class="googlemap" frameborder="0" style="border: 1px solid gray" src="//www.google.com/maps/embed/v1/view?zoom=10&center=29.4241%2C-98.4936&key=AIzaSyCWaNEvanS1NQM-q3XpAi-Y8gT82iMu5q8" allowfullscreen></iframe>
+        </article>
+        <article class="jotform">
+        <iframe id="JotFormIFrame-62628754976170" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="https://form.jotform.com/62628754976170" frameborder="0" style="width:100%; height:540px; border:none;" scrolling="no"> </iframe>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <a href="#header"><input type="button" name="HOME" value="HOME" class="animate"></a>
+      <div class="socialmedia">
+        <a href="//www.linkedin.com/in/joelgilbert1" class="animate"><img src="img/SocialMediaIcons/PNG/CircleColor/Linkedin.png" alt=""></a>
+        <a href="//paxman23l.github.io" class="animate"><img src="img/SocialMediaIcons/PNG/CircleColor/Github.png" alt=""></a>
+        <a href="//www.behance.net/Paxman23l" class="animate"><img src="img/SocialMediaIcons/PNG/CircleColor/Behance.png" alt=""></a>
       </div>
-      </article>
-    </section>
-    <section id="work" class="work owl-carousel">
-      <div class="item" style="background: url(img/berries.png) no-repeat 100%; background-size: cover; width:700px; height:300px"></div>
-      <div class="item" style="background: url(img/berries.png) no-repeat 100%; background-size: cover; width:700px; height:300px"></div>
-      <div class="item" style="background: url(img/berries.png) no-repeat 100%; background-size: cover; width:700px; height:300px"></div>
-      <!-- <a href="img/berries.png" data-ngthumb="img/berries.png" data-ngdesc="Lorem Ipsum dolor">Berry Farm</a> -->
-      <!-- <div class="item"><img src="img/professionalportal.png" alt="Portal"></div> -->
-      <!-- <a href="img/professionalportal.png" data-ngthumb="img/professionalportal.png" data-ngdesc="Lorem Ipsum dolor">Prof. Portal</a> -->
-      <!-- <div class="item"><img src="img/garden.png" alt=""></div> -->
-      <!-- <div class="item"><img src="assets/owl4.jpg" alt="Owl Image"></div>
-       <a href="img/garden.png" data-ngthumb="img/garden.png" data-ngdesc="Lorem Ipsum dolor">Garden</a> -->
-    </section>
-    <section id="contact" class="contact">
-      <div class="map">
-        <iframe class="googlemap" frameborder="0" style="border: 1px solid gray" src="https://www.google.com/maps/embed/v1/view?zoom=10&center=29.4241%2C-98.4936&key=AIzaSyCWaNEvanS1NQM-q3XpAi-Y8gT82iMu5q8" allowfullscreen></iframe>
-      </div>
-      <iframe id="JotFormIFrame-62628754976170" onload="window.parent.scrollTo(0,0)" allowtransparency="true" src="https://form.jotform.com/62628754976170" frameborder="0" style="width:100%; height:540px; border:none;" scrolling="no"> </iframe> <script type="text/javascript"> window.handleIFrameMessage = function(e) { var args = e.data.split(":"); var iframe = false; if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[2]); } else { iframe = document.getElementById("JotFormIFrame"); } if (!iframe) return; switch (args[0]) { case "scrollIntoView": iframe.scrollIntoView(); break; case "setHeight": iframe.style.height = args[1] + "px"; break; case "collapseErrorPage": if (iframe.clientHeight > window.innerHeight) { iframe.style.height = window.innerHeight + "px"; } break; case "reloadPage": window.location.reload(); break; } var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false; if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) { var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)}; iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*"); } }; if (window.addEventListener) { window.addEventListener("message", handleIFrameMessage, false); } else if (window.attachEvent) { window.attachEvent("onmessage", handleIFrameMessage); } if(window.location.href && window.location.href.indexOf("?") > -1) { var ifr = false; if (args.length > 2) { ifr = document.getElementById("JotFormIFrame-" + args[2]); } else { ifr = document.getElementById("JotFormIFrame"); } var get = window.location.href.substr(window.location.href.indexOf("?") + 1); if(ifr && get.length > 0) { var src = ifr.src; src = src.indexOf("?") > -1 ? src + "&" + get : src + "?" + get; ifr.src = src; } } </script>
-    </section>
-  </main>
-  <footer>
-    <a href="#header"><input type="button" name="HOME" value="HOME" class="animated"></a>
-    <div class="socialmedia">
-      <a href="//www.linkedin.com/in/joelgilbert1" class="animated"><img src="img/SocialMediaIcons/PNG/CircleColor/Linkedin.png" alt=""></a>
-      <a href="//paxman23l.github.io" class="animated"><img src="img/SocialMediaIcons/PNG/CircleColor/Github.png" alt=""></a>
-      <a href="//www.behance.net/Paxman23l" class="animated"><img src="img/SocialMediaIcons/PNG/CircleColor/Behance.png" alt=""></a>
-    </div>
-    <div class="copyright">&copy;JoelGilbert.io</div>
-  </footer>
-  <!-- Bootstrap/Navbar Menu -->
- <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!-- Owl Carousel -->
+      <div class="copyright">&copy;JoelGilbert.io</div>
+    </footer>
+    <!-- Bootstrap/Navbar Menu -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Owl Carousel -->
     <script src="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/owl.carousel.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
-  <!-- jQuery -->
-  <script src="js/jquery.flip.min.js"></script>
-</body>
-</html>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- jQuery -->
+    <!-- FORM JS -->
+    <script type="text/javascript"> window.handleIFrameMessage = function(e) { var args = e.data.split(":"); var iframe = false; if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[2]); } else { iframe = document.getElementById("JotFormIFrame"); } if (!iframe) return; switch (args[0]) { case "scrollIntoView": iframe.scrollIntoView(); break; case "setHeight": iframe.style.height = args[1] + "px"; break; case "collapseErrorPage": if (iframe.clientHeight > window.innerHeight) { iframe.style.height = window.innerHeight + "px"; } break; case "reloadPage": window.location.reload(); break; } var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false; if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) { var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)}; iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*"); } }; if (window.addEventListener) { window.addEventListener("message", handleIFrameMessage, false); } else if (window.attachEvent) { window.attachEvent("onmessage", handleIFrameMessage); } if(window.location.href && window.location.href.indexOf("?") > -1) { var ifr = false; if (args.length > 2) { ifr = document.getElementById("JotFormIFrame-" + args[2]); } else { ifr = document.getElementById("JotFormIFrame"); } var get = window.location.href.substr(window.location.href.indexOf("?") + 1); if(ifr && get.length > 0) { var src = ifr.src; src = src.indexOf("?") > -1 ? src + "&" + get : src + "?" + get; ifr.src = src; } }
+  </body>
+  </html>

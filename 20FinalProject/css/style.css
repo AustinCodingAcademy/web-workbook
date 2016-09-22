@@ -26,6 +26,9 @@ p {
 a {
   text-decoration: none;
 }
+a:hover {
+  color: #ffd21d;
+}
 /**
 ** NAV Bar
 **/
@@ -48,7 +51,7 @@ a {
   background-color: #1c597b;
 }
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fe9515;
+  background-color: #fe9515;
 }
 .navbar {
   margin: 0;
@@ -62,8 +65,8 @@ a {
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
-    color: #fed616;
-    background-color: #8eacbd;
+  color: #fed616;
+  background-color: #8eacbd;
 }
 
 .navbar-default .navbar-nav > .active > a {
@@ -72,13 +75,13 @@ a {
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: #fe9515;
+  border-color: #fe9515;
 }
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
-    background-color: #8eacbd;
+  background-color: #8eacbd;
 }
 .navbar-default .navbar-nav .open .dropdown-menu>li>a {
-     color: #fe9515;
+  color: #fe9515;
 }
 li {
   margin-left: 0;
@@ -149,6 +152,7 @@ header {
 
 .headertext h1 {
   font-size: 8rem;
+
 }
 
 .headertext p {
@@ -162,70 +166,69 @@ header {
 .about {
   height: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-flow: wrap;
+  max-width: 100%;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 30px;
   background-color:  #001736;
+
 }
 .background{
   display: block;
   text-align: center;
 }
 
+ul {
+  list-style-type: none;
+}
 /*
 Flip Animation
 */
 
 /*CSS*/
+
 .card-container {
-display: inline-block;
-margin: 0 auto;
-padding: 0 12px;
-perspective: 900px;
-text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding: 0 12px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 .card {
-position: relative;
-width: 290px;
-height: 200px;
-transition: all 0.6s ease;
-transform-style: preserve-3d;
-}
-.front, .back {
-position: absolute;
-top: 0;
-left: 0;
-width: 290px;
-height: 200px;
-border-radius: 5px;
-box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
-backface-visibility: hidden;
+  position: relative;
+  width: 275px;
+  height: 200px;
 }
 .front {
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 30px;
+  width: 290px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+
 }
-.back {
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 18px;
-}
-.card-container:hover .card {
-transform: rotateY(180deg);
-}
-.back {
-transform: rotateY(180deg);
+.front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
 }
 
+.topcontainer, .bottomcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
 /*
 Music
 */
 .music .front{
-  /*width: 100%;
-  height: 180px;*/
+  /*margin-top: 30px;*/
   background-image: url('../img/smokylake.jpg');
   background-size: cover;
   background-position: bottom bottom;
@@ -234,14 +237,6 @@ Music
   align-items: center;
 }
 
-.music .back {
-  background-image: url('../img/smokylake.jpg');
-  background-size: cover;
-  background-position: bottom bottom;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 /**
 Education
@@ -252,34 +247,31 @@ Education
   background-size: cover;
   background-position: bottom bottom;
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.education .back {
-  background-size: cover;
-  background-position: bottom bottom;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('../img/book.jpg');
+  text-align: center;
+}
+
+.education ul {
+  padding: 0;
+  padding-top: 20px;
 }
 
 .education h1 {
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #ffd21d;
+}
+
+.education p {
+  font-size: 1.5rem;
+  line-height: 0;
+  line-height: 1rem;
 }
 
 .educationoverlay {
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,.3);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 /**
@@ -293,21 +285,9 @@ Skills
   background-repeat: no-repeat;
   overflow: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.skills .back {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('../img/forest.jpg');
-  background-size: cover;
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  align-items: center;
-  justify-content: center;
 }
 
 .skillsul {
@@ -318,7 +298,15 @@ Skills
 }
 
 .skills h1 {
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #ffd21d;
+}
+
+.skills p {
+  font-size: 1.5rem;
+}
+
+.skills ul {
+  padding: 0;
 }
 
 .skillsoverlay {
@@ -342,19 +330,6 @@ Bio
   align-items: center;
 }
 
-.bio .back {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url('../img/leaf.jpg');
-  background-size: cover;
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  align-items: center;
-  justify-content: center;
-}
-
 .biooverlay {
   width: 100%;
   height: 100%;
@@ -370,7 +345,7 @@ Bio
 ** Work
 **/
 .work {
-  height: 400px;
+  height: auto;
   background-color: #7c7c7d;
 }
 
@@ -380,17 +355,23 @@ Bio
 ** Contact
 **/
 .contact {
-  height: contain;
+  height: 700px;
   background-color: #095884;
-}
-.map {
   display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
   justify-content: center;
   align-items: center;
 }
+.map {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: auto;
+}
 iframe .googlemap{
-  width: 90%;
   height: 200px;
+  border: 1px solid gray;
 }
 
 
@@ -399,7 +380,7 @@ iframe .googlemap{
 **/
 footer {
   height: 175px;
-  background-color: #003269;
+  background-color: #b95a24;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -410,15 +391,11 @@ footer a {
   margin-top: 30px;
 }
 input {
-  /*margin-top: 30px;
-  width: 150px;
-  height: 40px;*/
   width: 100%;
   height: 100%;
   text-decoration: none;
 }
 .socialmedia {
-  /*border: 1px solid red;*/
   display: flex;
   justify-content: center;
   max-width: 100%;
@@ -433,6 +410,7 @@ input {
   height: 100%;
   margin: 0;
 }
+
 
 .copyright {
 }
@@ -477,36 +455,35 @@ input {
     flex-flow: wrap;
   }
   .music {
-    width: 50%;
-    height: 250px;
+
   }
   .music h1 {
-    padding-left: 20px;
-    padding-right: 20px;
-    line-height: 2.2rem;
+
   }
   .education {
-    width: 50%;
-    height: 250px;
+
   }
   .education p {
-    font-size: 2rem;
+
   }
   .skills {
-    width: 50%;
-    height: 250px;
+
   }
   .skills p {
-    font-size: 2rem;
+
   }
   .bio {
-    width: 50%;
-    height: 250px;
-  }
 
+  }
+  .contact {
+    height: 900px;
+  }
   .googlemap {
-    height: 400px;
-    width: 100%;
+    height: 300px;
+    width: 300px;
+  }
+  .JotFormIFrame-62628754976170 {
+    padding-bottom: 1000px;
   }
 }
 @media screen and (min-width: 620px) {
@@ -520,7 +497,23 @@ input {
     margin: 5px;
     font-size: 2em;
   }
-
+  .contact {
+    height: 575px;
+  }
+  .googlemap {
+    height: 545px;
+    width: 550px;
+  }
+  .map {
+    padding-right: 20px;
+  }
+  .jotform {
+    padding-left: 20px;
+  }
+  .JotFormIFrame-62628754976170 {
+    padding-bottom: 0;
+    /*z-index: 100;*/
+  }
 }
 @media screen and (min-width: 810px) {
   .container::before {
@@ -532,6 +525,16 @@ input {
     font-weight: 700;
     margin: 5px;
     font-size: 2em;
+  }
+  map {
+    padding-right: 50px;
+    width: 700px;
+  }
+  .googlemap {
+    /*width: 1000px;*/
+  }
+  .jotform {
+    padding-left: 50px;
   }
 }
 @media screen and (min-width: 1400px) {

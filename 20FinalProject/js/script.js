@@ -6,7 +6,11 @@ $(document).ready(function(){
     offset: 5
   });
 
-  //flip button
+//Smooth scrollspy
+
+
+
+//flip button
 
   $('.animated').click(function() {
     var heading =  $(this);
@@ -26,20 +30,29 @@ $(document).ready(function(){
         items:1,
         nav:true
       },
-      600:{
-        items:1,
+      480:{
+        items:2,
         nav:true
       },
-      1000:{
-        items:1,
+      800:{
+        items:3,
+        nav:true,
+        loop:false
+      },
+      1200:{
+        items:4,
         nav:true,
         loop:false
       },
       1400:{
-        items:2,
+        items:5,
         nav:true,
         loop:false
-      }
+      },
     }
   });
+
+
+
+
 });
