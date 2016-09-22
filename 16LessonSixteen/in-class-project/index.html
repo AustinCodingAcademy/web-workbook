@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+
+<!-- Summary: Star Wars website built with bootstrap; uses font awesome and animate.CSS.  Site is also responsive to laptop, tablet and phone. -->
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,79 +19,83 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-
 <body>
 
-<!-- Top half -->
-  <div class="row">
-    <div class="one col-lg-6">
-      <i class="fa fa-lightbulb-o fa-2x" aria-hidden="true"></i>
+<!-- Top half of page with large box on left and four smaller boxes on right-->
+
+  <div class="top row">
+    <div class="one col-lg-6 col-xs-12">
+      <i class="animated flash fa fa-lightbulb-o fa-4x" aria-hidden="true"></i>
       <h2>We are the most awarded advertising agency in the world</h2>
       <p>Coconut is a popular addition. The syrup may also optionapopular addition. Coconut is a popular addition. The syrup may also optionapopular addition.</p>
     </div>
 
-    <div class="col-lg-6">
+    <div class="rightbox col-lg-6 col-sm-6 col-xs-12">
       <div class="row">
-        <div class="two col-sm-6">
-          <img src="./img/books.png" class="img-responsive">
+        <div class="two smallbox col-sm-6 col-xs-12">
         </div>
-        <div class="four col-sm-6">
-          <img src="./img/books.png" class="img-responsive">
+        <div class="four smallbox col-sm-6 col-xs-12">
         </div>
       </div>
       <div class="row">
-        <div class="three col-sm-6">
-          <i class="fa fa-lightbulb-o fa-2x" aria-hidden="true"></i>
+        <div class="three smallbox col-sm-6 col-xs-12">
+          <i class="fa fa-cog fa-spin fa-2x fa-fw"></i>
+          <span class="sr-only">Loading...</span>
           <h2>Responsive Website</h2>
           <p>Coconut is a popular addition</p>
         </div>
-        <div class="five col-sm-6">
-          <img src="./img/pencil.png" class="img-responsive">
+        <div class="five smallbox col-sm-6 col-xs-12">
         </div>
       </div>
     </div>
   </div>
 
-<!-- Bottom half -->
-  <div class="row">
-    <div class="col-lg-6">
+<!-- Bottom half of page with four smaller boxes on left and large box on right-->
+
+  <div class="bottom row">
+    <div class="rightbox col-lg-6">
       <div class="row">
-        <div class="six col-sm-6">
-          <img src="./img/chicken.png" class="img-responsive">
+        <div class="six smallbox col-sm-6">
         </div>
-        <div class="eight col-sm-6">
-          <img src="./img/books.png" class="img-responsive">
+        <div class="eight smallbox col-sm-6">
         </div>
       </div>
-      <!-- Hidden row 10 -->
+
+      <!-- Hidden row 10, visible on tablet and phone only -->
       <div class="row hidden-lg">
-        <div class="ten col-lg-6">
+        <div class="ten col-lg-6 col-xs-12">
+          <i class="fa fa-headphones fa-4x" aria-hidden="true"></i>
+          <h2>We are the most awarded advertising agency in the world</h2>
+          <p>Coconut is a popular addition. The syrup may also optionapopular addition. Coconut is a popular addition. The syrup may also optionapopular addition.</p>
         </div>
       </div>
-      <!-- End of hidden row 10 -->
-    <div class="row">
-      <div class="seven col-sm-6">
-        <i class="fa fa-lightbulb-o fa-2x" aria-hidden="true"></i>
-        <h2>Creative UX & UI Design</h2>
-        <p>Coconut is a popular addition</p>
-      </div>
-      <div class="nine col-sm-6">
-        <img src="./img/books.png" class="img-responsive">
+      <!-- End of hidden row 10, visible on table and phone only -->
+
+      <div class="row">
+        <div class="seven smallbox col-sm-6">
+          <i class="fa fa-cog fa-spin fa-2x fa-fw"></i>
+          <span class="sr-only">Loading...</span>
+          <h2>Creative UX & UI Design</h2>
+          <p>Coconut is a popular addition</p>
+        </div>
+        <div class="nine smallbox col-sm-6">
+        </div>
       </div>
     </div>
-    </div>
-    <div class="ten col-lg-6">
-      <i class="fa fa-lightbulb-o fa-2x" aria-hidden="true"></i>
+
+    <div class="ten col-lg-6 visible-lg">
+      <i class="animated pulse fa fa-headphones fa-4x" aria-hidden="true"></i>
       <h2>We are the most awarded advertising agency in the world</h2>
       <p>Coconut is a popular addition. The syrup may also optionapopular addition. Coconut is a popular addition. The syrup may also optionapopular addition.</p>
     </div>
   </div>
 
-  <footer class="hidden-lg">
-    <i></i>
-    <h2></h2>
-  </footer>
+<!-- Footer only visible on phone and tablet -->
 
+  <footer class="footer hidden-lg col-xs-12">
+    <i><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i></i>
+    <a href="#">CONTACT</a>
+  </footer>
 
 
   <!-- JQuery cdn script -->

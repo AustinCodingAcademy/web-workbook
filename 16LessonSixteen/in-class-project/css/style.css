@@ -1,0 +1,174 @@
+/*Applies to entire page*/
+
+.top, .bottom {
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.bottom {
+  margin-top: 0px;
+}
+
+.smallbox {
+  width: 44.5%;
+  height: 150px;
+  margin: 10px;
+  padding: 15px
+}
+
+.smallbox h2 {
+  font-size: 22px;
+}
+
+.rightbox {
+  padding-right: 0px;
+  padding-left: 15px;
+  margin-right: -6px;
+}
+
+/*Top half of the page*/
+
+.one {
+  background-color: #8e4c1a;
+  height: 320px;
+  width: 47%;
+  margin: 10px;
+  padding: 40px;
+}
+
+.one i {
+  animation-delay: 2s;
+  animation-iteration-count: 4;
+}
+
+.two {
+  background-image: url(../img/chewbacca.jpg);
+  background-size: cover;
+}
+
+.four {
+  background-image: url(../img/darthmaul.jpg);
+  background-size: cover;
+}
+
+.three {
+  background-color: #60abae;
+}
+
+.five {
+  background-image: url(../img/hansolo.png);
+  background-size: cover;
+}
+
+/*Bottom half of the page*/
+
+.six {
+  background-image: url(../img/luke.png);
+  background-size: cover;
+}
+
+.eight {
+  background-image: url(../img/vader.jpg);
+  background-size: cover;
+}
+
+.seven {
+  background-color: #60abae;
+}
+
+.nine {
+  background-image: url(../img/yoda.jpg);
+  background-size: cover;
+}
+
+.ten {
+  background-color: #60abae;
+  height: 320px;
+  width: 47%;
+  margin: 10px;
+  margin-left: -2px;
+  padding: 40px;
+}
+
+.ten i {
+  animation-delay: 2s;
+  animation-iteration-count: 4;
+}
+
+/*Below media queries for tablet.  Responsive to laptop, tablet and phone*/
+
+  @media (min-width: 768px) and (max-width: 992px) {
+
+    .one {
+      width: 92%;
+    }
+
+    .rightbox {
+      width: 98%;
+    }
+
+    .ten {
+      width: 92%;
+      margin-left: 10px;
+    }
+
+    .footer {
+      background-color: #8e4c1a;
+      height: 150px;
+      width: 88%;
+      margin: 10px 0px 20px 40px;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .footer a {
+      font-size: 30px;
+      padding:10px 0px 0px 10px;
+      color: #11140f;
+      text-decoration: none;
+    }
+  }
+
+/*Below media queries for phone.  Responsive to laptop, tablet and phone*/
+
+  @media (max-width: 767px) {
+
+    .one {
+      width: 92%;
+      padding: 20px 0px 0px 20px;
+    }
+
+    .two, .four, .three, .five, .six, .eight, .seven, .nine {
+      width: 88%;
+    }
+
+    .six, .seven {
+      margin-bottom: 20px;
+    }
+
+    .ten {
+      width: 88%;
+      margin-left: 10px;
+      padding: 20px 0px 0px 20px;
+    }
+
+    .footer {
+      background-color: #8e4c1a;
+      height: 100px;
+      width: 88%;
+      margin: 10px 0px 20px 40px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .footer a {
+      font-size: 20px;
+      padding:10px 0px 0px 10px;
+      color: #11140f;
+      text-decoration: none;
+    }
+
+  }
