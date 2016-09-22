@@ -1,3 +1,72 @@
+html {
+  font-size: 62.5%;
+  font-family: Arial, sans-serif;
+}
+.owl-carousel {
+  margin-top: 20px;
+}
+.item {
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+  background: #4dc7a0;
+}
+h4 {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 200px;
+  color: #fff;
+  margin-top: 0;
+}
+
+.wines {
+  margin-top: 60px;
+}
+.wines .item {
+  height: auto;
+  background: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.wine-name{
+/*   font-family: "Times New Roman"; */
+  font-weight: 600;
+  font-style: italic;
+  font-size: 2rem;
+}
+.wine-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #000;
+}
+.wine-description {
+  font-size: 1rem;
+  margin-top: 10px;
+
+}
+.purchase-button {
+  border: 1px solid #788448;
+  background: #93A15C;
+  padding: 5px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.purchase-button:hover {
+  color: #fff;
+  border: 1px solid #788448;
+  background: #788448;
+}
+
+
+
 .page {
   display: flex;
   flex-direction: column;
@@ -9,6 +78,10 @@
 
 .navbar {
   background-color: transparent;
+}
+
+main {
+  max-width: 320px;
 }
 
 .home {
@@ -32,18 +105,45 @@
 @keyframes colorchange {
     0%  {color: black;}
     50%  {
-      color: yellow;
+      color: #808000;
       transition: transform 15s ease-in;
       transform: rotate(10deg) translate(100px);
     }
     70%  {color: black;}
-    100% {color: yellow;}
+    100% {color: #ccc000;}
 }
 
+.aboutme {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cccc00;
+}
 
+.aboutme h1 {
+  text-align: center;
+  color: #ffffff;
+  margin: 5%;
+}
+
+.designs {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+}
 
 @media screen and (min-width: 320px) {
-  .container::before {
+  .page::before {
     content: "320px";
     position: absolute;
     color: green;
@@ -56,7 +156,7 @@
 }
 
 @media screen and (min-width: 480px) {
-  .container::before {
+  .page::before {
     content: "480px";
     position: absolute;
     color: green;
@@ -69,7 +169,7 @@
 }
 
 @media screen and (min-width: 620px) {
-  .container::before {
+  .page::before {
     content: "620px";
     position: absolute;
     color: green;
@@ -83,7 +183,7 @@
 }
 
 @media screen and (min-width: 810px) {
-  .container::before {
+  .page::before {
     content: "810px";
     position: absolute;
     color: green;
@@ -98,7 +198,7 @@
 }
 
 @media screen and (min-width: 1400px) {
-  .container::before {
+  .page::before {
     content: "1400px";
     position: absolute;
     color: green;
