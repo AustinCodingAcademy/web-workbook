@@ -1,10 +1,117 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
 
+<head>
+    <title>Oven Story</title>
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="script" href="js/script.js">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+    <!--animate css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+                    <a class="navbar-brand" href="#hm"><img src="image/logo.png" alt="oven story logo" /></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right ">
+                        <li class="active"><a href="#hm"><i class="fa fa-home fa-1x" aria-hidden="true"></i>Home</a></li>
+                        <li><a href="#abt"><i class="fa fa-birthday-cake fa-1x" aria-hidden="true"></i>About Us</a></li>
+                        <li><a href="#pro"><i class="fa fa-shopping-basket fa-1x" aria-hidden="true"></i>Our Products</a></li>
+                        <li><a href="#con"><i class="fa fa-phone fa-1x" aria-hidden="true"></i>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="sidebar">
+        <div class="sticky-container">
+            <ul class="sticky">
+                <li>
+                    <a href="https://www.facebook.com/ovenstory/"><img width="32px" height="32px" title="facebook" alt="facebook" src="http://icons.iconarchive.com/icons/yootheme/social-bookmark/512/social-facebook-box-blue-icon.png" />
+                        <p>Facebook</p>
+                    </a>
+                </li>
+                <li> <img width="32" height="32" title="twitter" alt="Twitter" src="http://www.freeiconspng.com/uploads/-van-nederland-elgie-gaat-haar-ontwikkeling-posten-op-twitter-24.png" />
+                    <p>Twitter</p>
+                </li>
+                <li> <img width="32" height="32" title="Pintrest" alt="Pintrest" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Pinterest_Shiny_Icon.svg/2000px-Pinterest_Shiny_Icon.svg.png" />
+                    <p>Pinterest</p>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/theovenstory/"> <img width="32" height="32" title="Instagram" alt="Instagram" src="http://3835642c2693476aa717-d4b78efce91b9730bcca725cf9bb0b37.r51.cf1.rackcdn.com/Instagram_App_Large_May2016_200.png" />
+                        <p>Instagram</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <main>
+        <div class="row home" id="hm">
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <h1>The Oven Story</h1>
+                <h4>Baking the world a better place...One dessert at a time.</h4>
+            </div>
+        </div>
+        <div class="row about" id="abt">
+            <div class="col-lg-6 col-sm-12 col-xs-12">
+                <div class="baker-content baker-section">
+                    <img class="mySlides w3-animate-top" src="http://www.lloydpans.com/App_Themes/LPStore/images/products/standard-pans/bakeware/cake-pans/round-cake-pans/full-02-round-cake-pans.jpg" style="width:100%">
+                    <img class="mySlides w3-animate-bottom" src="http://blog.kingarthurflour.com/wp-content/uploads/2013/09/BakersHarvest-125.jpg" style="width:100%">
+                    <img class="mySlides w3-animate-top" src="http://becasinternacionales.net/webapp/img/upload/365d36_quieres-convertir-tu-hobby-en-tu-empleo-descubre-lo-que-debes-hacer.jpg" style="width:100%">
+                    <img class="mySlides w3-animate-bottom" src="http://media.jrn.com/images/cake3_17940838_ver1.0_640_480.jpg" style="width:100%">
+                </div>
+                <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                      x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}
+                    x[myIndex-1].style.display = "block";
+                    setTimeout(carousel, 2500);
+                }
+                </script>
+
+            </div>
+            <div class="baker col-lg-6 col-sm-12 col-xs-12">
+                <h2>About US</h2>
+                <p>
+                Street art craft beer pitchfork bitters selvage freegan. Cliche truffaut hot chicken, vice beard gentrify kale chips skateboard bicycle rights hell of edison bulb migas. Listicle truffaut cornhole church-key hot chicken, drinking vinegar coloring book lo-fi microdosing heirloom live-edge. Godard biodiesel cardigan food truck thundercats. Intelligentsia green juice raw denim master cleanse. Tofu messenger bag leggings, tousled coloring book gochujang gentrify poke enamel pin. Selfies sriracha small batch cold-pressed microdosing tousled, hashtag pug readymade tofu VHS air plant subway tile.
+                </p>
+                <a href="#">The Owner's Blog</a>
+            </div>
+        </div>
+        <div class="row products" id="pro">
+            <div class="regular col-lg-4 col-xs-12">
+
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
