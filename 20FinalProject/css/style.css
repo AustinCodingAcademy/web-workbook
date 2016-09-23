@@ -1,257 +1,256 @@
-.parent-container {
-    display: flex;
-    flex-direction: row;
-    padding: 20px;
-    postion: absolute;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-
-my-element {
-    display: flex;
-    flex-direction: row;
-}
-
-body {
-    font-family: amatica script;
-}
-
-nav {
-    background: #000000;
-    height: 60px;
-    position: fixed;
-    width: 100%;
-    line-height: 50px;
-    position: fixed;
-    font-family: dancing script;
-}
-
-nav>ul>li {
-    display: inline;
-    text-decoration: none;
-}
-
-h5 {
-    font-family: dancing script;
-    font-size: 2em;
-}
-
-body>ol>li {
-    text-decoration: none;
-}
-
-a {
-    text-decoration: none;
-    padding-right: 15px;
-    font-size: 25px;
-    color: #fff;
-}
-
-.right {
-    float: right;
-}
-
-header, section {
-    height: auto;
-}
-
-header {
-    color: white;
-    font-weight: bold;
-    font-family: amatica sc;
-}
-
-h1 {
-    font-size: 100px;
-}
-
-h3 {
-    text-align: center;
-}
-
-article {
-    height: auto;
-    margin: 10px;
-}
-
-button {
-    background-color: black;
-}
-
-#top {
-    background-attachment: fixed;
-    font-size: 2em;
-    text-align: center;
-    padding-top: 50px;
-    background-image: url("../img/background1.jpg");
-}
-
-#PortfolioOverview {
-    background-image: url("../img/background3.jpg");
-    color: white;
-    padding-top: 100px;
-}
-
-#map {
-    padding-top: 100px;
-    position: relative;
-    text-decoration: bold;
-    text-align: center;
-    color: white;
-    background-image: url("../img/background4.jpg");
-    display: flex;
-}
-
-#Contactme {
-  padding-top: 100px;
-  background-image: url("../img/background2.jpg");
-}
-
-hr {
-    width: 45%;
-}
-
-#map {
-    padding-top: 20px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-
-.overlay {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.description {
-    font-size: 28px;
-}
-
-main>section>h2 {
-    font-size: 50px;
-    text-align: center;
-    padding-top: 50px
-}
-
-.bottom {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background: green;
-    height: auto;
-}
-
-.bottom>article {
-    padding-right: 90px;
-    font-size: 20px;
-    font-family: poiret one;
-}
-
-.bottom>article>h3 {
-    font-weight: bold;
-    font-size: 40px;
-}
-
-footer {
-    width: 100%;
-    height: 80px;
-    line-height: 80px;
-    font-size: 50px;
-    background-color: #0A480D;
-}
-
-footer>a {
-    float: right;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: black;
-}
-
-.active .buttons {
-    padding: 5px 0;
-    background: #eee;
-    text-align: center;
-    z-index: 10;
-    position: relative;
-}
-
-.active button {
-    display: block;
-}
-
-.offscreen {
-    position: absolute;
-    left: -2000px;
-}
-
-@media screen and (min-width: 320px) {
-    .container::before {
-        content: "320px";
-        color: green;
-        position: absolute;
-        top: 0;
-        left: 0;
-        font-weight: 700;
-        margin: 5px;
-        font-size: 30px;
-    }
-}
-
-@media screen and (min-width: 480px) {
-    .container::before {
-        content: "480px";
-        color: maroon;
-    }
-}
-
-nav {
-    height: auto;
-    position: fixed;
-    width: 100%;
-    line-height: 50px;
-    font-family: dancing script;
-    @media screen and (min-width: 620px) {
-        .container::before {
-            content: "620px";
-        }
-        section {
+                .parent-container {
             display: flex;
-            flex-flow: wrap;
-            padding-left: 10%;
+            flex-direction: row;
+            padding: 20px;
+            postion: absolute;
         }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        my-element {
+            display: flex;
+            flex-direction: row;
+        }
+
+        body {
+            font-family: amatica script;
+        }
+
+        nav {
+            background: #000000;
+            height: 60px;
+            position: fixed;
+            width: 100%;
+            line-height: 50px;
+            position: fixed;
+            font-family: dancing script;
+        }
+
+        nav>ul>li {
+            display: inline;
+            text-decoration: none;
+        }
+
+        h5 {
+            font-family: dancing script;
+            font-size: 2em;
+        }
+
+        body>ol>li {
+            text-decoration: none;
+        }
+
+        a {
+            text-decoration: none;
+            padding-right: 15px;
+            font-size: 25px;
+            color: #fff;
+        }
+
+        .right {
+            float: right;
+        }
+
+        header, section {
+            height: auto;
+        }
+
+        header {
+            color: white;
+            font-weight: bold;
+            font-family: amatica sc;
+        }
+
+        h1 {
+            font-size: 100px;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
         article {
-            margin-right: 5%;
-            flex-basis: 230px;
+            height: auto;
+            margin: 10px;
         }
-    }
-    @media screen and (min-width: 810px) {
-        .container::before {
-            content: "810px";
+
+        button {
+            background-color: black;
+        }
+
+        #top {
+            background-attachment: fixed;
+            font-size: 2em;
+            text-align: center;
+            padding-top: 50px;
+            background-image: url("../img/background1.jpg");
+        }
+
+        #PortfolioOverview {
+            background-image: url("../img/background3.jpg");
+            color: white;
+            padding-top: 100px;
+        }
+
+        #map {
+            padding-top: 100px;
+            position: relative;
+            text-decoration: bold;
+            text-align: center;
+            color: white;
+            background-image: url("../img/background4.jpg");
+            display: flex;
+        }
+
+        #Contactme {
+            padding-top: 100px;
+            background-image: url("../img/background2.jpg");
+        }
+
+        hr {
+            width: 45%;
+        }
+
+        #map {
+            padding-top: 20px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .overlay {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .description {
+            font-size: 28px;
+        }
+
+        main>section>h2 {
+            font-size: 50px;
+            text-align: center;
+            padding-top: 50px
+        }
+
+        .bottom {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background: green;
+            height: auto;
+        }
+
+        .bottom>article {
+            padding-right: 90px;
+            font-size: 20px;
+            font-family: poiret one;
+        }
+
+        .bottom>article>h3 {
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        footer {
+            width: 100%;
+            height: 80px;
+            line-height: 80px;
+            font-size: 50px;
+            background-color: #0A480D;
+        }
+
+        footer>a {
+            float: right;
+            padding-left: 20px;
+            padding-right: 20px;
             color: black;
         }
-        section {
-            display: flex;
-            flex-flow: row;
+
+        .active .buttons {
+            padding: 5px 0;
+            background: #eee;
+            text-align: center;
+            z-index: 10;
+            position: relative;
         }
-        article {
-            margin-right: 5%;
-            flex-basis: 200px;
+
+        .active button {
+            display: block;
         }
-    @media screen and (min-width: 1400px) {
-            nav {
-                background: #000000;
-                height: auto;
-                position: fixed;
-                width: 100%;
-                line-height: 50px;
-                position: fixed;
-                font-family: dancing script;
+
+        .offscreen {
+            position: absolute;
+            left: -2000px;
+        }
+
+        @media screen and (min-width: 320px) {
+            .container::before {
+                content: "320px";
+                color: green;
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-weight: 700;
+                margin: 5px;
+                font-size: 30px;
             }
         }
+
+        @media screen and (min-width: 480px) {
+            .container::before {
+                content: "480px";
+                color: maroon;
+            }
+        }
+
+        nav {
+            height: auto;
+            position: fixed;
+            width: 100%;
+            line-height: 50px;
+            font-family: dancing script;
+            @media screen and (min-width: 620px) {
+                .container::before {
+                    content: "620px";
+                }
+                section {
+                    display: flex;
+                    flex-flow: wrap;
+                    padding-left: 10%;
+                }
+                article {
+                    margin-right: 5%;
+                    flex-basis: 230px;
+                }
+            }
+            @media screen and (min-width: 810px) {
+                .container::before {
+                    content: "810px";
+                    color: black;
+                }
+                section {
+                    display: flex;
+                    flex-flow: row;
+                }
+                article {
+                    margin-right: 5%;
+                    flex-basis: 200px;
+                }
+                @media screen and (min-width: 1400px) {
+                    nav {
+                        background: #000000;
+                        height: auto;
+                        position: fixed;
+                        width: 100%;
+                        line-height: 50px;
+                        position: fixed;
+                        font-family: dancing script;
+                    }
+                }
