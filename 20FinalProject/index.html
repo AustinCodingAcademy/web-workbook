@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="5">
     <div class="page">
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
             <div class="container">
@@ -42,7 +42,7 @@
                             <a href="#portfolio">Portfolio</a>
                         </li>
                         <li>
-                            <a href="#contact">Contact Us</a>
+                            <a href="#contactme">Contact Me</a>
                         </li>
                     </ul>
                 </div>
@@ -73,7 +73,9 @@
                 </article>
             </div>
         </section>
-        <h2 id="portfolio">Portfolio</h2>
+        <div id="portfolio">
+        <h2 class="portfolio">Portfolio</h2>
+      </div>
         <section class="owl-carousel">
             <div class="item animated">
                 <a href="https://dianadiaz.github.io/intro-workbook/05LessonFive/Checkpoint1/"><img src="img/p-1.png" alt="Berries Blog" /> </a>
@@ -94,93 +96,91 @@
                 <a href="https://dianadiaz.github.io/intro-workbook/15LessonFifteen/Checkpoint3/"><img src="img/p-6.png" alt="Winery Site" /> </a>
             </div>
         </section>
-    </div>
-    <!--<footer>
-        <h1> Contact Me </h1>
-      <div class="contact">
-        <picture>
-            <source media="(min-width: 1400px)" srcset="https://maps.googleapis.com/maps/api/staticmap?center=600+Soledad+St,San+Antonio,TX&zoom=17&size=120x120&scale=2">
-            <source media="(min-width: 810px)" srcset="https://maps.googleapis.com/maps/api/staticmap?center=600+Soledad+St,San+Antonio,TX&zoom=17&size=120x120&scale=2">
-            <source media="(min-width: 620px)" srcset="https://maps.googleapis.com/maps/api/staticmap?center=600+Soledad+St,San+Antonio,TX&zoom=17&size=120x120&scale=2">
-            <source media="(min-width: 480px)" srcset="https://maps.googleapis.com/maps/api/staticmap?center=600+Soledad+St,San+Antonio,TX&zoom=17&size=100x100&scale=2">
-
-            <img src="https://maps.googleapis.com/maps/api/staticmap?center=600+Soledad+St,San+Antonio,TX&zoom=16&size=100x100&scale=2" alt="Map of Central Library" />
-        </picture>
-            <address>
-            600 Soledad Street 78205<br>
-            Diana Diaz<br>
-            210-232-7068<br>
-            diaidaz11@gmail.com<br>
-          </address>
+        <div id="contactme">
+        <script type="text/javascript" src="https://form.jotform.com/jsform/62648732606158"></script>
         </div>
-    </footer> -->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script type="text/javascript" src="https://form.jotform.com/jsform/62648732606158"></script>
-    <script src="js/owl.carousel.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- <script src="js/owl.carousel.min.js"></script> -->
-    <script>
-        $('.animated').click(function() {
-            var heading = $(this);
-            heading.removeClass('wobble');
-            setTimeout(function() {
-                heading.addClass('wobble');
-            }, 10);
-        });
-    </script>
+      </div>
+  <footer>
+    <div class="map">
+<picture>
+  <source media="(min-width: 1400px)" srcset="https://maps.googleapis.com/maps/api/staticmap?center=600+Soledad+St,San+Antonio,TX&zoom=17&size=200x200&scale=2">
+  <source media="(min-width: 810px)" srcset="https://maps.googleapis.com/maps/api/staticmap?center=600+Soledad+St,San+Antonio,TX&zoom=17&size=200x200&scale=2">
+  <source media="(min-width: 620px)" srcset="https://maps.googleapis.com/maps/api/staticmap?center=600+Soledad+St,San+Antonio,TX&zoom=17&size=200x200&scale=2">
+  <source media="(min-width: 480px)" srcset="https://maps.googleapis.com/maps/api/staticmap?center=600+Soledad+St,San+Antonio,TX&zoom=17&size=200x200&scale=2">
 
-    <script>
-        // Add scrollspy to <body>
-        $('body').scrollspy({
-            target: ".navbar"
-            offset: 50
-        });
-        // Add smooth scrolling on all links inside the navbar
-        $("#example-navbar-collapse a, .navbar-brand").on('click', function(event) {
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
-
-                // Store hash
-                var hash = this.hash;
-
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function() {
-
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                });
-            } // End if
-        });
-    </script>
-    <script>
-        $(function() {
-            $(".owl-carousel").owlCarousel({
-                margin: 5,
-                items: 1,
-                nav: true,
-                responsive: {
-                    480: {
-                        items: 2
-                    },
-                    620: {
-                        items: 3
-                    },
-                    810: {
-                        items: 4
-                    },
-                    1400: {
-                        items: 6
-                    }
-                }
+<!--     Default -->
+  <img src="https://maps.googleapis.com/maps/api/staticmap?center=600+Soledad+St,San+Antonio,TX&zoom=16&size=100x100&scale=2" alt="" />
+</picture>
+</div>
+    </footer>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <!--<script type="text/javascript" src="https://form.jotform.com/jsform/62648732606158"></script>-->
+        <script src="js/owl.carousel.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- <script src="js/owl.carousel.min.js"></script> -->
+        <script>
+            $('.animated').click(function() {
+                var heading = $(this);
+                heading.removeClass('wobble');
+                setTimeout(function() {
+                    heading.addClass('wobble');
+                }, 10);
             });
-        });
-    </script>
+        </script>
+
+        <script>
+            // Add scrollspy to <body>
+            $(document).ready(function(){
+            $('body').scrollspy({
+                target: ".navbar"
+                offset: 5
+            });
+            // Add smooth scrolling on all links inside the navbar
+            $("#example-navbar-collapse a, .navbar-brand").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        </script>
+        <script>
+            $(function() {
+                $(".owl-carousel").owlCarousel({
+                    margin: 5,
+                    items: 1,
+                    nav: true,
+                    responsive: {
+                        480: {
+                            items: 2
+                        },
+                        620: {
+                            items: 3
+                        },
+                        810: {
+                            items: 4
+                        },
+                        1400: {
+                            items: 6
+                        }
+                    }
+                });
+            });
+        </script>
     </div>
 </body>
 
