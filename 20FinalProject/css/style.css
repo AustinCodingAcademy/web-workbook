@@ -1,3 +1,20 @@
+.parent-container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    postion: absolute;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+my-element {
+    display: flex;
+    flex-direction: row;
+}
+
 body {
     font-family: amatica script;
 }
@@ -10,23 +27,27 @@ nav {
     line-height: 50px;
     position: fixed;
     font-family: dancing script;
-
 }
 
 nav>ul>li {
     display: inline;
+    text-decoration: none;
+}
+
+h5 {
+    font-family: dancing script;
+    font-size: 2em;
+}
+
+body>ol>li {
+    text-decoration: none;
 }
 
 a {
-    color: #f2f2f2;
     text-decoration: none;
     padding-right: 15px;
     font-size: 25px;
-}
-
-.left {
-    float: left;
-    padding-left: 15px;
+    color: #fff;
 }
 
 .right {
@@ -34,7 +55,7 @@ a {
 }
 
 header, section {
-    height: 900px;
+    height: auto;
 }
 
 header {
@@ -47,21 +68,62 @@ h1 {
     font-size: 100px;
 }
 
+h3 {
+    text-align: center;
+}
+
+article {
+    height: auto;
+    margin: 10px;
+}
+
+button {
+    background-color: black;
+}
+
 #top {
-    background: red;
     background-attachment: fixed;
     font-size: 2em;
     text-align: center;
-    background-size: cover;
+    padding-top: 50px;
+    background-image: url("../img/background1.jpg");
+}
+
+#PortfolioOverview {
+    background-image: url("../img/background3.jpg");
+    color: white;
+    padding-top: 100px;
+}
+
+#map {
+    padding-top: 100px;
+    position: relative;
+    text-decoration: bold;
+    text-align: center;
+    color: white;
+    background-image: url("../img/background4.jpg");
+    display: flex;
+}
+
+#Contactme {
+  padding-top: 100px;
+  background-image: url("../img/background2.jpg");
 }
 
 hr {
     width: 45%;
 }
 
+#map {
+    padding-top: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
 .overlay {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,31 +140,12 @@ main>section>h2 {
     padding-top: 50px
 }
 
-.projectdescription {
-    width: 100%;
-    display: flex;
-    flex-flow: row;
-    font-family: poiret one;
-}
-
-.Projects {
-    display: flex;
-    text-align: left;
-    justify-content: center;
-    width: 100%;
-    height: 400px;
-    font-family: poiret one;
-}
-
 .bottom {
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-#bottom {
-    height: 300px;
     background: green;
+    height: auto;
 }
 
 .bottom>article {
@@ -121,17 +164,14 @@ footer {
     height: 80px;
     line-height: 80px;
     font-size: 50px;
-    background-color: black;
+    background-color: #0A480D;
 }
 
 footer>a {
     float: right;
     padding-left: 20px;
     padding-right: 20px;
-}
-
-#logo {
-    float: left;
+    color: black;
 }
 
 .active .buttons {
@@ -140,11 +180,6 @@ footer>a {
     text-align: center;
     z-index: 10;
     position: relative;
-}
-
-.carouselbox button {
-    border: none;
-    display: none;
 }
 
 .active button {
@@ -174,10 +209,17 @@ footer>a {
         content: "480px";
         color: maroon;
     }
+}
+
+nav {
+    height: auto;
+    position: fixed;
+    width: 100%;
+    line-height: 50px;
+    font-family: dancing script;
     @media screen and (min-width: 620px) {
         .container::before {
             content: "620px";
-            color: orange;
         }
         section {
             display: flex;
@@ -188,21 +230,28 @@ footer>a {
             margin-right: 5%;
             flex-basis: 230px;
         }
-        @media screen and (min-width: 810px) {
-            .container::before {
-                content: "810px";
-                color: black;
+    }
+    @media screen and (min-width: 810px) {
+        .container::before {
+            content: "810px";
+            color: black;
+        }
+        section {
+            display: flex;
+            flex-flow: row;
+        }
+        article {
+            margin-right: 5%;
+            flex-basis: 200px;
+        }
+    @media screen and (min-width: 1400px) {
+            nav {
+                background: #000000;
+                height: auto;
+                position: fixed;
+                width: 100%;
+                line-height: 50px;
+                position: fixed;
+                font-family: dancing script;
             }
-            section {
-                display: flex;
-                flex-flow: row;
-            }
-            article {
-                margin-right: 5%;
-                flex-basis: 200px;
-            }
-            .price {
-                height: 20px;
-                font-size: 15px;
-            }
-            @media screen and (min-width: 1400px) {
+        }
