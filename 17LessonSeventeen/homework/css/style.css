@@ -1,3 +1,5 @@
+
+/*INDEX PAGE & APPLICATION PAGE*/
 /*SECTION 1*/
 .hero {
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/8a/Discover_Scuba_Diving_--_St._Croix,_US_Virgin_Islands.jpg");
@@ -15,7 +17,7 @@
 .textbox {
     text-align: center;
     margin: 0 auto;
-    padding-top: 6%;
+    padding-top: 15%;
 }
 .textbox h1 {
     font-size: 75px;
@@ -37,13 +39,13 @@ article:after {
     clear: both;
 }
 .logo {
-    float: right;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding: 2% 10% 0% 10%;
+    /*padding-left: 10%;*/
 }
 .logo img {
-    padding-top: 10%;
-    width: auto;
+    /*padding-top: 10%;*/
+    height: 500px;
+    width: 100%;
 }
 
 .ourstory {
@@ -87,21 +89,25 @@ article:after {
     font-weight: lighter;
 }
 .paragraph p {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     font-weight: lighter;
     color: white;
     font-size: 15px;
     padding-top: 90px;
 }
 .paragraph h1 {
-    font-size: 30px;
+    font-size: 45px;
     font-weight: lighter;
     color: white;
 }
-.paragraph p {
+.paragraph a {
+  font-size: 20px;
     font-weight: lighter;
     color: white;
-}
+    text-decoration: none;
+    padding: 1%;
+    background-color: #6e6e6e;
+  }
 
 /*fourth area*/
 
@@ -112,6 +118,31 @@ article:after {
 }
 
 /*FOR IPAD ONLY*/
+
+@media (min-width: 768px) and (max-width: 990px) {
+
+  .textbox {
+      padding-top: 35%;
+  }
+  .textbox h1 {
+      font-size: 50px;
+  }
+  .textbox p {
+      font-size: 25px;
+  }
+    .ourstory h4 {
+        padding-top: 0%;
+    }
+    .logo {
+        padding: 10% 10% 0% 10%;
+        /*padding-left: 10%;*/
+    }
+    .logo img {
+        padding-top: 10%;
+        height: 400px;
+        width: 100%;
+    }
+}
 
 @media (min-width: 768px) and (max-width: 991px) {
     .textbox {
@@ -130,6 +161,7 @@ article:after {
         width: auto;
     }
 }
+
 
 /*FOR PHONE ONLY*/
 
