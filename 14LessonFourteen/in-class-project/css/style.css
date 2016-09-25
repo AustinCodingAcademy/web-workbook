@@ -1,6 +1,13 @@
+.row {
+    margin: 0;
+    padding: 0;
+}
+
 #home {
     position: relative;
+
     height: 750px;
+
     background-image: url("https://images.unsplash.com/photo-1449247709967-d4461a6a6103?dpr=1&auto=format&crop=entropy&fit=crop&w=1199&h=799&q=80&cs=tinysrgb");
     background-repeat: no-repeat;
     background-position: center;
@@ -9,7 +16,9 @@
 
 #home h1 {
     margin-top: 200px;
+
     text-align: center;
+
     font-family: "Work Sans", sans-serif;
     font-size: 5em;
     font-weight: 500;
@@ -21,6 +30,7 @@
     margin-right: auto;
     margin-left: auto;
     padding-top: 100px;
+
     font-family: "Roboto Mono", sans-serif;
     font-weight: 300;
 }
@@ -28,6 +38,7 @@
 #work a {
     margin-top: 15px;
     margin-bottom: 15px;
+
     color: #fff;
 }
 
@@ -41,21 +52,27 @@
 
 .caption {
     top: 50px;
+
     visibility: hidden;
     overflow: hidden;
+
     transition: all .3s ease-in;
+
     opacity: 0;
     background: rgba(0, 0, 0, .8);
 }
 
 a:hover .caption {
     top: 25px;
+
     visibility: visible;
+
     opacity: 1;
 }
 
 a:hover .type, a:hover .description, a:hover .description p {
     left: 40px;
+
     opacity: 1;
 }
 
@@ -73,6 +90,7 @@ a:hover .type, a:hover .description, a:hover .description p {
 .type, .description {
     position: absolute;
     right: 40px;
+
     transition: all .4s ease-in;
     transition-delay: .3s;
 }
@@ -80,8 +98,10 @@ a:hover .type, a:hover .description, a:hover .description p {
 .type {
     top: 40px;
     left: 20px;
+
     letter-spacing: 1px;
     text-transform: uppercase;
+
     font-size: 11px;
 }
 
@@ -97,7 +117,9 @@ a:hover .type, a:hover .description, a:hover .description p {
 .description p {
     transition: all .6s ease-in;
     transition-delay: .3s;
+
     opacity: 0;
+
     font-size: .9em;
     font-weight: 100;
     line-height: 1.9;
@@ -139,7 +161,9 @@ a:hover .type, a:hover .description, a:hover .description p {
 
 #sell {
     padding: 40px 0;
+
     background-color: #f0f0f0;
+
     font-family: "Roboto Mono", sans-serif;
     line-height: 2;
 }
@@ -148,17 +172,21 @@ a:hover .type, a:hover .description, a:hover .description p {
     margin: 0 35px;
     margin-bottom: 30px;
     padding: 30px 0;
+
     text-align: center;
 }
 
 #sell h2 {
     margin: 75px 0;
+
     text-align: center;
+
     font-size: 45px;
 }
 
 #sell h3 {
     margin-top: 0;
+
     font-family: "Work Sans", sans-serif;
     font-size: 1.7em;
     ;
@@ -167,7 +195,9 @@ a:hover .type, a:hover .description, a:hover .description p {
 #sell p {
     margin-bottom: 10px;
     padding: 15px 0 20px;
+
     color: #333;
+
     font-size: 2em;
 }
 
@@ -178,11 +208,13 @@ a:hover .type, a:hover .description, a:hover .description p {
 #sell ul {
     margin: 0;
     padding: 0;
+
     list-style: none;
 }
 
 #sell li {
     padding: 5px 20px;
+
     color: rgba(46, 46, 46, .5);
 }
 
@@ -193,8 +225,10 @@ a:hover .type, a:hover .description, a:hover .description p {
 .btn {
     margin-top: 30px;
     padding: 12px 25px;
+
     color: #fff;
-    background-color: rgba(46, 46, 46, .8);
+    background-color: #c7754a;
+
     font-family: "Work Sans", sans-serif;
 }
 
@@ -208,9 +242,11 @@ a:hover .type, a:hover .description, a:hover .description p {
 }
 
 .navbar {
-    background-color: rgba(0, 0, 0, 0);;
     margin-bottom: 0;
     padding-bottom: 30px;
+
+    background-color: rgba(0, 0, 0, 0);
+    ;
 }
 
 .navbar img {
@@ -219,6 +255,7 @@ a:hover .type, a:hover .description, a:hover .description p {
 
 .nav {
     padding-top: 20px;
+
     font-size: 20px;
 }
 
@@ -226,8 +263,266 @@ a:hover .type, a:hover .description, a:hover .description p {
     margin-top: 32px;
 }
 
-@media (max-width: 768px){
-    #white{
-        background-color: #f0f0f0;
+#job {
+    height: 400px;
+
+    text-align: center;
+
+    background-color: #efeef1;
+
+    font-family: "Work Sans", sans-serif;
+}
+
+#job h2 {
+    padding-top: 100px;
+
+    font-size: 50px;
+}
+
+#job p {
+    font-size: 30px;
+}
+
+#application {
+    background-color: #efeef1;
+
+    font-family: "Work Sans", sans-serif;
+}
+
+.head {
+    width: 80%;
+    height: 370px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 100px;
+
+    font-weight: lighter;
+}
+
+.big-icon {
+    padding-right: 30px;
+
+    font-size: 150px;
+}
+
+.head h1 {
+    font-size: 100px;
+}
+
+.head p {
+    font-size: 30px;
+}
+
+.input-app {
+    margin-top: 70px;
+}
+
+.inline {
+    display: inline-block;
+
+    margin: 0;
+}
+
+.red {
+    color: #910303;
+}
+
+.big-text {
+    font-size: 25px;
+}
+
+.block {
+    display: block;
+}
+
+.titles {
+    text-align: right;
+
+    font-weight: lighter;
+}
+
+.titles h3 {
+    font-size: 28px;
+}
+
+.half {
+    width: 49%;
+}
+
+.left-input {
+    margin-left: 10px;
+}
+
+label {
+    padding-top: 5px;
+    padding-bottom: 20px;
+
+    color: #777;
+
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.y-n {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.mar-top {
+    margin-top: 25px;
+}
+
+.name {
+    height: 100px;
+}
+
+.address {
+    height: 370px;
+}
+
+.email {
+    height: 100px;
+}
+
+.port-web {
+    height: 100px;
+}
+
+.phone {
+    height: 100px;
+}
+
+.applying {
+    height: 100px;
+}
+
+.start {
+    height: 100px;
+}
+
+.before {
+    height: 135px;
+}
+
+span {
+    margin-left: 10px;
+}
+
+.eligible {
+    height: 135px;
+}
+
+.comment {
+    height: 200px;
+}
+
+textarea {
+    resize: none;
+}
+
+.button-center {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+    #white {
+        background-color: #fff;
+    }
+    #job h2 {
+        padding-top: 90px;
+    }
+    #job p {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+
+        font-size: 20px;
+    }
+    .head{
+        padding-top: 115px;
+    }
+    .big-icon{
+        font-size: 75px;
+    }
+    .head h1{
+        font-size: 50px;
+    }
+    .head p{
+        font-size: 20px;
+    }
+    .titles{
+        text-align: left;
+    }
+    .titles h3 {
+        font-size: 25px;
+    }
+    .half {
+        width: 100%;
+    }
+
+    .left-input {
+        margin-left: 0;
+    }
+    .inline{
+        display: block;
+    }
+    .big-text {
+        font-size: 17px;
+    }
+
+    .name {
+        height: 210px;
+    }
+
+    .address {
+        height: 585px;
+    }
+
+    .email {
+        height: 125px;
+    }
+
+    .port-web {
+        height: 125px;
+    }
+
+    .phone {
+        height: 125px;
+    }
+
+    .applying {
+        height: 130px;
+    }
+
+    .start {
+        height: 125px;
+    }
+
+    .before {
+        height: 195px;
+    }
+
+    span {
+        margin-left: 10px;
+    }
+
+    .eligible {
+        height: 195px;
+    }
+
+    .comment {
+        height: 220px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px){
+    #white {
+        background-color: #efeef1;
+    }
+    .head h1{
+        font-size: 75px;
+    }
+    .head p{
+        font-size: 30px;
     }
 }
