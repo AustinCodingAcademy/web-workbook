@@ -75,7 +75,7 @@ $(document).ready(function() {
 
   $('.pr3').mouseout(function() {
     $('.three').css({
-      "background-image": "url(img/porkyHunt.jpg)"
+      "background-image": "url(img/porkyHunt.png)"
     });
     $('.three > .links').css({
       "margin-top": "150px"
@@ -95,7 +95,7 @@ $(document).ready(function() {
 
   $('.hw3').mouseout(function() {
     $('.three').css({
-      "background-image": "url(img/porkyHunt.jpg)"
+      "background-image": "url(img/porkyHunt.png)"
     });
     $('.three > .links').css({
       "margin-top": "150px"
