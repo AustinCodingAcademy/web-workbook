@@ -1,6 +1,15 @@
+.clearfix:after {
+    display: block;
+    content: " ";
+    clear: both;
+}
+.icon-bar{
+  background-color: white;
+}
 .navbar {
     margin-bottom: 0px;
     border-bottom: .5px solid white;
+    background: rgba(0, 0, 0, .2);
 }
 .navbar a {
     color: white;
@@ -14,6 +23,7 @@
     color: white;
     background-blend-mode: multiply;
     background-color: #aaa7a7;
+    background-attachment: fixed;
 }
 .hero-image img {
     width: 80%;
@@ -24,8 +34,8 @@
     font-family: Georgia;
     font-style: italic;
 }
-.about {
-    height: 700px;
+i {
+    padding-right: 10px;
 }
 .about-text {
     text-align: center;
@@ -76,6 +86,7 @@
     background-color: #aaa7a7;
     height: 700px;
     color: white;
+    background-attachment: fixed;
 }
 .history h3 {
     font-family: Georgia;
@@ -127,22 +138,84 @@
     text-decoration: none;
     font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
-@media (max-width: 1024px){
-  .hero{
-    height: 700px;
-  }
-  .hero-image img {
-    width: 100%;
-    margin: auto;
-    padding-top: 50px;
-  }
-  .hero-text h3{
-      font-size: 16px;
-  }
-  .hero-text h5{
-    padding-top: 10px;
-    font-family: sans-serif;
-    font-style: normal;
-  }
+@media (max-width: 991px) {
+    .hero {
+        height: 1000px;
+    }
+    .hero-image img {
+        width: 100%;
+        margin: auto;
+        padding-top: 200px;
+    }
+    .hero-text h3 {
+        font-size: 16px;
+    }
+    .hero-text h5 {
+        padding-top: 10px;
+        font-family: sans-serif;
+        font-style: normal;
+    }
+    .about-image {
+        height: 500px;
+    }
+    .about-text {
+        text-align: center;
+        padding: 50px 25px 0px;
+        height: 500px;
+    }
+    .history {
+        height: 1000px;
+    }
+    .history h3 {
+        margin-bottom: 15px;
+        padding-top: 400px;
+    }
+    .wine img {
+        width: 40%;
+        margin: auto;
+    }
+}
+@media (max-width: 767px) {
+    .hero {
+        height: 500px;
+        background-attachment: local;
+    }
+    .hero-image img {
+        width: 100%;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .hero-text h3 {
+        font-size: 16px;
+    }
+    .hero-text h5 {
+        padding-top: 10px;
+        font-family: sans-serif;
+        font-style: normal;
+    }
+    .about-image {
+        height: 400px;
+    }
+    .about-text {
+        text-align: center;
+        padding: 25px;
+        height: 500px;
+    }
+    .history {
+        background-attachment: local;
+        height: 400px;
+    }
+    .history h3 {
+        font-size: 20px;
+        font-weight: 300px;
+        margin-bottom: 15px;
+        padding-top: 25px;
+    }
+    .history p {
+        font-size: 12px;
+    }
+    .wine img {
+        width: 40%;
+        margin: auto;
+    }
 }
