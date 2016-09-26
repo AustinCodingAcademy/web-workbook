@@ -1,15 +1,16 @@
-ul {
-  text-align: center;
+/*Section "home" includes hero image and name*/
+
+#home {
+  background-image: url("./img/island.jpg");
+  background-size: cover;
+  background-position: bottom;;
+  background-repeat: no-repeat;
+  height: 620px;
+  background-blend-mode: multiply;
+  background-color: #b3b3b3;
+  background-attachment: fixed;
 }
 
-li {
-  list-style-type: none;
-  display: inline-block;
-  color: #ffffff;
-  font-size: 20px;
-  font-family: Source Sans Pro, Helvetica;
-  padding: 10px 20px;
-}
 .header {
   text-align: center;
   height: 550px;
@@ -20,17 +21,18 @@ li {
   padding-bottom: 10px;
 }
 
-.header h1, h3 {
+.header h1 {
   margin-top: 0px;
   margin-bottom: 0px;
+  font-size: 60px;
   color: #ffffff;
 }
 
 .header h2 {
   font-weight: 400;
   margin-top: 10px;
-  font-size: 60px;
-  color: #FF5146;
+  font-size: 40px;
+  color: #ffffff;
 }
 
 .line {
@@ -43,48 +45,17 @@ li {
   padding: 0px;
 }
 
-#pageone {
-  background-image: url("http://anthonyvlombardo.com/portfolio/wp-content/uploads/2013/06/backstretch.jpg");
-  background-repeat: no-repeat;
-  display: block;
+/*Section "navbar"*/
+
+.navbar-header a, .nav a {
+  font-size: 24px;
+  color: #ffffff;
 }
 
 
-/*
-ul {
-  list-style-type: none;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  padding: 10px;
-  overflow: hidden;
-  background-color: #333;
-  top: 0;
-  width: 100%;
-}
+/*Section "#"*/
 
-li {
-  float: left;
-  list-style-type: none;
-  display: inline-block;
-  padding: 5px 10px;
-  font-size: 20px;
-  color: white;
-  border-right:1px solid #bbb;
-}
 
-li:last-child {
-  border-right: none;
-}
-
-li:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: rgb(0,0,0,0.5);
-  opacity: 0.5;
-}
-*/
 
 .lesson {
   width: 25%;
@@ -105,13 +76,13 @@ li:hover:not(.active) {
   margin-bottom: 0px;
 }
 
-a:hover {
+.lesson a:hover {
   background-color: rgb(0,0,0,0.5);
   opacity: 0.5;
   padding: 10px;
 }
 
-a {
+.lesson a {
   border: 3px white solid;
   text-decoration: none;
   padding: 2px;
@@ -267,4 +238,124 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/*Section "about"*/
+
+.road {
+  background-image: url("./img/curvy-road.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 450px;
+  /*background-blend-mode: multiply;
+  background-color: #b3b3b3;*/
+  background-attachment: local;
+  width: 50%;
+}
+
+.trees {
+  background-image: url("./img/redwoods.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 450px;
+  /*background-blend-mode: multiply;
+  background-color: #b3b3b3;*/
+  background-attachment: local;
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+/*Section "contact" includes the form and contact info*/
+
+#contact {
+  margin-top: 450px;
+}
+
+#contact .form {
+  background-image: url("./img/sea-boat.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 620px;
+  background-blend-mode: multiply;
+  background-color: #b3b3b3;
+  background-attachment: fixed;
+}
+
+.form h2 {
+  margin-top: 0px;
+  padding: 120px 0px 0px 0px;
+  font-size: 42px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.form {
+  text-align: center;
+  padding: 20px 0px 0px 0px;
+}
+
+.fill-out {
+  opacity: 0.6;
+  padding: 0px;
+  border: 0px;
+}
+
+.name {
+  width: 29%;
+}
+
+.email {
+  width: 29%;
+}
+
+.submit {
+  width: 58%;
+}
+
+#contact .connect {
+  height: 310px;
+  width: auto;
+  color: #ffffff;
+  background-color: #212127;
+  background-attachment: local;
+  text-align: center;
+}
+
+.connect h4 {
+  padding: 50px 0px 0px 0px;
+  font-size: 24px;
+}
+
+#contact .row {
+  margin: 0px;
+  padding: 0px;
+}
+
+.icon {
+  width: 23%;
+  display: inline-block;
+}
+
+.icon a {
+  text-decoration: none;
+}
+
+.icon i {
+  padding: 25px 20px 10px 20px;
+  color: #ffffff;
+}
+
+.icon h4 {
+  color: #ffffff;
+  padding: 10px 0px 0px 0px;
+}
+
+.icon:hover {
+  animation-iteration-count: infinite;
 }

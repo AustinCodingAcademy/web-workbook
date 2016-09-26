@@ -1,57 +1,63 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Steven Fiero</title>
-  <link rel="stylesheet" href="css/style.css">
 
+<!-- Summary: This is my portfolio website built with bootstrap; uses google fonts, font awesome and animate.CSS.  Site is also responsive to laptop, tablet and phone. -->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Steven Fiero</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <!-- Bootstrap CDN -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/0d22298155.js"></script>
+  <!-- Animate.CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<!--
-<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
--->
-
 <body>
-  <section id="pageone">
-    <div class="main nav">
-      <ul>
-        <li>Home</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
-      </div>
 
-      <div class="header">
-        <h1>Steven Fiero</h1>
-        <div class="line">
-        </div>
-        <h2>Front End Developer</h2>
-        <h3>Working hard to make the internet awesome</h3>
+<!-- Section "home" includes hero image and name -->
+
+  <section id="home">
+    <div class="header">
+      <h1>Steven Fiero</h1>
+      <div class="line">
       </div>
+      <h2>Web Developer</h2>
+    </div>
   </section>
 
-<!--
-  <ul>
-    <li>Lesson 1</li>
-    <li>Lesson 2</li>
-    <li>Lesson 3</li>
-    <li>Lesson 4</li>
-    <li>Lesson 5</li>
-    <li>Lesson 6</li>
-    <li>Lesson 7</li>
-    <li>Lesson 8</li>
-    <li>Lesson 9</li>
-    <li>Lesson 10</li>
-    <li>Lesson 11</li>
-    <li>Lesson 12</li>
-    <li>Lesson 13</li>
-    <li>Lesson 14</li>
-    <li>Lesson 15</li>
-    <li>Lesson 16</li>
-    <li>Lesson 17</li>
-    <li>Lesson 18</li>
-    <li>Lesson 19</li>
-    <li>Lesson 20</li>
-  </ul>
--->
+<!-- Section for bootstrap navbar -->
+
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Steven Fiero</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav pull-right">
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+<!-- Section -->
+
   <section id="lessons">
   <div class="lesson one">
     <h3>Lesson 1</h3>
@@ -171,5 +177,75 @@
   </div>
 </section>
 
+<!-- Section "about" -->
+
+<section id="about">
+  <div class="road col-lg-6">
+  </div>
+
+  <div class="trees col-lg-6 pull-right">
+  </div>
+
+  <div class="map col-lg-6">
+  </div>
+
+
+</section>
+
+
+
+<!-- Secton "contact" includes the form and contact info -->
+<section id="contact">
+  <div class="row">
+  <div class="form col-lg-12">
+    <h2>Connect With Me</h2>
+    <form action="#" class="fill-out col-lg-6"><br>
+      <input class="name" type="text" name="firstname" placeholder="Name">
+      <input class="email" type="text" name="lastname" placeholder="Email"><br><br>
+      <textarea name="message" rows="10" cols="90" placeholder="Message">Message
+      </textarea><br><br>
+      <input class="submit" type="submit" value="Submit">
+    </form>
+  </div>
+</div>
+
+  <div class="connect col-lg-12">
+    <div class="row">
+      <h4>Austin, Texas USA</h4>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-9">
+        <div class="row">
+          <div class="animated bounce icon col-lg-3">
+            <a href="https://github.com/ssfiero/intro-workbook">
+              <i class="fa fa-github fa-4x" aria-hidden="true"></i>
+              <h4>GitHub</h4>
+            </a>
+          </div>
+          <div class="animated bounce icon col-lg-3">
+            <a href="http://www.stevensfiero@gmail.com">
+              <i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i>
+              <h4>Email</h4>
+            </a>
+          </div>
+          <div class="animated bounce icon col-lg-3">
+            <a href="#">
+              <i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i>
+              <h4>Facebook</h4>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- JQuery cdn script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Animate.JS -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <!-- Bootstrap cdn script -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>
