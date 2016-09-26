@@ -222,7 +222,7 @@
                     </div>
                     <div class="row" id="about-me">
                         <div class="col-xs-8 col-xs-offset-2 jumbotron" id="about-me-container">
-                            <h1>
+                            <h1 class="animated rubberBand">
                               Hello!
                             </h1>
                             <p>
@@ -284,18 +284,22 @@
                         </div>
                         <div class="row">
                             <div class="col-xs-12 col-sm-offset-2 col-sm-8">
-                                <form>
+                                <script type="text/javascript">
+                                    var submitted = false;
+                                </script>
+                                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='#contact';}"></iframe>
+                                <form action="https://docs.google.com/forms/d/e/1FAIpQLSf52qwOO2VZVagyZ2VTOe_6HjrOd0Nu7xEQiiFi0XlvJMcO9A/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
                                     <div class="form-group panel">
                                         <label for="name" class="my-form-label panel-heading">Name</label>
-                                        <input type="text" class="form-control panel-body" id="name" aria-describedby="" placeholder="Enter Name">
+                                        <input type="text" name="entry.590897357" class="form-control panel-body" id="name" aria-describedby="" placeholder="Enter Name">
                                     </div>
                                     <div class="form-group panel">
                                         <label for="email" class="my-form-label panel-heading">E-mail</label>
-                                        <input type="email" class="form-control panel-body" id="email" aria-describedby="" placeholder="Enter E-mail">
+                                        <input type="text" name="entry.75701107" class="form-control panel-body" id="email" aria-describedby="" placeholder="Enter E-mail">
                                     </div>
                                     <div class="form-group panel">
                                         <label for="message" class="my-form-label panel-heading">Message</label>
-                                        <textarea type="text" class="form-control panel-body" id="message" aria-describedby="" placeholder="Enter message"></textarea>
+                                        <textarea type="text" name="entry.1153157288" class="form-control panel-body" id="message" aria-describedby="" placeholder="Enter message"></textarea>
                                     </div>
                                     <button type="submit" class="btn my-button">Submit</button>
                                 </form>
@@ -313,9 +317,11 @@
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4">
-                <a href="https://rocketshipp.github.io/intro-workbook/" target="_blank" ><div class="badges my-github">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                </div></a>
+                <a href="https://rocketshipp.github.io/intro-workbook/" target="_blank">
+                    <div class="badges my-github">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </div>
+                </a>
             </div>
             <div class="col-xs-12 col-sm-4">
                 <div class="badges my-css3">

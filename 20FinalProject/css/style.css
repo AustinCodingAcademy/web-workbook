@@ -5,15 +5,14 @@ body {
 }
 /*CHROME SCROLLBAR STYLING*/
 body::-webkit-scrollbar {
-    width: 1em;
+    width: .5em;
 }
-
 body::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px black;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
+  background-color: black;
+  outline: 1px solid black;
 }
 .carets {
     -webkit-animation-duration: 2s !important;
@@ -116,6 +115,9 @@ h1 .outer-caret {
     border-radius: 25px;
     padding: 15px 0;
 }
+.carousel-indicators > li {
+  border: 2px solid black;
+}
 .delay {
     -webkit-animation-duration: 5s;
     -webkit-animation-delay: 1s;
@@ -191,7 +193,6 @@ h1 .outer-caret {
     padding: 0;
     overflow: hidden;
     border: 3px solid black;
-    border-radius: 50%;
 }
 #profile-pic-container img {
     width: 100%;
@@ -266,6 +267,7 @@ h1 .outer-caret {
 .panel, .panel-body {
   background-color: rgba(0, 0, 0, .5) !important;
   border: black solid 2px !important;
+  color: white;
 }
 .my-form-label {
   font-size: 20px;

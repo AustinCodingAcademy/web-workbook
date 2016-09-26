@@ -63,18 +63,18 @@
                     </div>
                 </section>
                 <section class="row hidden-lg">
-                  <div class="col-xs-12 quarter-pad">
-                    <div class="carousel-box" id="mobile-carousel">
-                      <i class="fa fa-lightbulb-o fa-3x animated bounceIn infinite" aria-hidden="true"></i>
-                      <h1>We are the most awarded advertising agency in the world.</h1>
-                      <p>
-                          Coconut is a popular addition. The syrup may also option a popular addition. Coconut is a popular addition. The syrup may also option a popular addition.
-                      </p>
-                      <i class="fa fa-circle-thin" aria-hidden="true"></i>
-                      <i class="fa fa-circle" aria-hidden="true"></i>
-                      <i class="fa fa-circle" aria-hidden="true"></i>
+                    <div class="col-xs-12 quarter-pad">
+                        <div class="carousel-box" id="mobile-carousel">
+                            <i class="fa fa-lightbulb-o fa-3x animated bounceIn infinite" aria-hidden="true"></i>
+                            <h1>We are the most awarded advertising agency in the world.</h1>
+                            <p>
+                                Coconut is a popular addition. The syrup may also option a popular addition. Coconut is a popular addition. The syrup may also option a popular addition.
+                            </p>
+                            <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                            <i class="fa fa-circle" aria-hidden="true"></i>
+                        </div>
                     </div>
-                  </div>
                 </section>
                 <section class="row">
                     <div class="col-xs-12 col-sm-6 col-pad">
@@ -92,30 +92,112 @@
                 </section>
             </div>
             <div class="col-xs-12 col-lg-6 quarter-pad visible-lg">
-              <div class="carousel-box" id="fourth-quarter">
-                <i class="fa fa-lightbulb-o fa-3x animated bounceIn infinite" aria-hidden="true"></i>
-                <h1>We are the most awarded advertising agency in the world.</h1>
-                <p>
-                    Coconut is a popular addition. The syrup may also option a popular addition. Coconut is a popular addition. The syrup may also option a popular addition.
-                </p>
-                <i class="fa fa-circle-thin" aria-hidden="true"></i>
-                <i class="fa fa-circle" aria-hidden="true"></i>
-                <i class="fa fa-circle" aria-hidden="true"></i>
-              </div>
+                <div class="carousel-box" id="fourth-quarter">
+                    <i class="fa fa-lightbulb-o fa-3x animated bounceIn infinite" aria-hidden="true"></i>
+                    <h1>We are the most awarded advertising agency in the world.</h1>
+                    <p>
+                        Coconut is a popular addition. The syrup may also option a popular addition. Coconut is a popular addition. The syrup may also option a popular addition.
+                    </p>
+                    <i class="fa fa-circle-thin" aria-hidden="true"></i>
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                    <i class="fa fa-circle" aria-hidden="true"></i>
+                </div>
             </div>
         </div>
         <footer class="row">
-          <div class="col-xs-12 hidden-lg col-pad animated flipInX">
-            <div id="contact">
-              <i class="fa fa-envelope-o fa-3x" aria-hidden="true"> </i>
-              <a href="#">CONTACT</a>
+            <div class="col-xs-12 col-pad animated flipInX">
+                <div id="apply">
+                    <i class="fa fa-envelope-o" aria-hidden="true"> </i>
+                    <a href="#apply" data-toggle="modal" data-target="#myModal">APPLY HERE</a>
+                </div>
             </div>
-          </div>
         </footer>
+        <!-- MODAL -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header my-form-label">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Online Application</h4>
+                    </div>
+                    <div class="modal-body">
+                        <!-- PROOF OF FORM FUNCTIONALITY https://docs.google.com/spreadsheets/d/1_vfL_97apRynEWf8Tmnbxjh7wey22aE7nNmX0XwKeOA/edit?usp=sharing -->
+                        <script type="text/javascript">
+                            var submitted = false;
+                        </script>
+                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='#contact';}"></iframe>
+                        <form action="https://docs.google.com/forms/d/e/1FAIpQLScdrd0FTExalHbZmetwmm-RqML0L5clyzsZnPagxC-LKw2PuA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                            <div class="form-group panel">
+                                <label for="date-of-application" class="my-form-label panel-heading">Date of Application</label>
+                                <input type="date" name="entry.1260998354" class="form-control panel-body" id="date-of-application" aria-describedby="">
+                            </div>
+                            <div class="form-group panel">
+                                <label for="date-of-birth" class="my-form-label panel-heading">Date of Birth</label>
+                                <input type="date" name="entry.61694392" class="form-control panel-body" id="date-of-birth" aria-describedby="">
+                            </div>
+                            <div class="form-group panel">
+                                <label for="full-name" class="my-form-label panel-heading">Full Name</label>
+                                <input type="text" name="entry.862700300" class="form-control panel-body" id="full-name" aria-describedby="" placeholder="Enter Name">
+                            </div>
+                            <div class="form-group panel">
+                                <label for="address" class="my-form-label panel-heading">Full Address</label>
+                                <input type="text" name="entry.453308445" class="form-control panel-body" id="address" aria-describedby="" placeholder="1234 Main St., Austin TX">
+                            </div>
+                            <div class="form-group panel">
+                                <label for="phone-number" class="my-form-label panel-heading">Phone Number</label>
+                                <input type="number" name="entry.217815479" class="form-control panel-body" id="phone-number" aria-describedby="" placeholder="512-555-5555">
+                            </div>
+                            <div class="form-group panel">
+                                <label for="position" class="my-form-label panel-heading">Position Sought</label>
+                                <br />
+                                <input type="checkbox" name="entry.886323839" class="panel-body" value="stocking">Stocking
+                                <br />
+                                <input type="checkbox" name="entry.886323839" class="panel-body" value="qc">Quality Control
+                                <br />
+                                <input type="checkbox" name="entry.886323839" class="panel-body" value="cs">Customer Service
+                                <br />
+                                <input type="checkbox" name="entry.886323839" class="panel-body" value="databasing">Databasing
+                            </div>
+                            <div class="form-group panel">
+                                <label for="desired-pay" class="my-form-label panel-heading">Desired Pay</label>
+                                <input type="text" name="entry.414572388" class="form-control panel-body" id="desired-pay" aria-describedby="">
+                            </div>
+                            <div class="form-group panel">
+                                <label for="employed" class="my-form-label panel-heading">Currently Employed?</label>
+                                <br />
+                                <input type="radio" value="yes" name="entry.2144801909" class="panel-body" aria-describedby="">Yes
+                                <br />
+                                <input type="radio" value="no" name="entry.2144801909" class="panel-body" aria-describedby="">No
+                            </div>
+                            <div class="form-group panel">
+                                <label for="hs" class="my-form-label panel-heading">Date / Location of High School</label>
+                                <input type="text" name="entry.1493917199" class="form-control panel-body" id="hs" aria-describedby="">
+                            </div>
+                            <div class="form-group panel">
+                                <label for="college" class="my-form-label panel-heading">Date / Location of College or Trade School</label>
+                                <input type="text" name="entry.897334400" class="form-control panel-body" id="college" aria-describedby="">
+                            </div>
+                            <div class="form-group panel">
+                                <label for="skills" class="my-form-label panel-heading">Applicable Skills / Areas of Proficiency</label>
+                                <textarea type="text" name="entry.1727706184" class="form-control panel-body" id="skills" aria-describedby=""></textarea>
+                            </div>
+                            <div class="form-group panel">
+                                <label for="why-us" class="my-form-label panel-heading">Why would you like to work for us?</label>
+                                <textarea type="text" name="entry.694891055" class="form-control panel-body" id="why-us" aria-describedby=""></textarea>
+                            </div>
+                            <button type="submit" class="btn my-button">Submit</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default my-button" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <script type="text/javascript" src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
