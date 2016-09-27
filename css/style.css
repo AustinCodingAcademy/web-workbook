@@ -1,5 +1,10 @@
 /*Section "home" includes hero image and name*/
 
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 #home {
   background-image: url("./img/island.jpg");
   background-size: cover;
@@ -13,7 +18,7 @@
 
 .header {
   text-align: center;
-  height: 550px;
+  height: 360px;
   font-size: 40px;
   font-weight: 900;
   font-family: Source Sans Pro, Helvetica;
@@ -45,6 +50,14 @@
   padding: 0px;
 }
 
+@media (min-width: 1200px) {
+  .col-lg-9 {
+    float: none;
+    margin: auto;
+    width: 71%;
+  }
+}
+
 /*Section "navbar"*/
 
 .navbar-header a, .nav a {
@@ -57,35 +70,60 @@
 
 #portfolio {
   background-color: #ffffff;
-  height: 310px;
+  height: 600px;
   width: auto;
+}
+
+.featured {
+  padding: 0px 15px 0px 15px;
+  text-align: center;
 }
 
 .featured h2 {
   text-align: center;
-  font-size: 30px;
-  padding: 30px 0px 30px 0px;
+  font-size: 40px;
+  padding: 50px 0px 40px 0px;
 }
 
+.top-projects {
+  width: 24.2%;
+  margin: 0px 5px 0px 5px;
+  padding: 0px;
+}
+
+.top-projects img {
+  width: 100%;
+  height: 400px;
+}
+
+.top-projects h3 {
+  padding: 10px 0px 0px 0px;
+  color: black;
+  text-align: center;
+}
+
+.top-projects:hover {
+  opacity: 0.1;
+}
 
 
 /*Section "Portfolio" includes additional projects*/
 
-#portfolio .row {
+#portfolio .pr {
   margin-left: 0px;
   margin-right: 0px;
 }
 
 #add-projects {
   background-color: #ffffff;
-  height: 870px;
+  height: 950px;
   width: auto;
 }
 
 .additional h2 {
   text-align: center;
   font-size: 30px;
-  padding: 30px 0px 30px 0px;
+  padding: 100px 0px 30px 0px;
 }
 
 .lesson {
