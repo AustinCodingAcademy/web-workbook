@@ -1,10 +1,162 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkpoint 3</title>
+    <!-- CSS RESET -->
+    <link rel="stylesheet" href="css/css-reset.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans" rel="stylesheet">
+    <!-- BOOTSTRAP FRAMEWORK -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <script src="https://use.fontawesome.com/a11441d40e.js"></script>
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="mynav navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="mytoggle navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="mybrand navbar-brand" href="#">Foundry</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="mynavlinks nav navbar-nav navbar-right">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonial">Testimonial</a></li>
+                    <li><a href="#product" class="visible-lg">Product</a></li>
+                    <li class="dropdown hidden-lg">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Product<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#shiraz">Shiraz</a></li>
+                            <li><a href="#chardonnay">Chardonnay</a></li>
+                            <li><a href="#merlot">Merlot</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#apply">Apply</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="hero">
+        <div class="row">
+            <img class="img-responsive" src="img/foundrylogo.png" alt="Foundry logo" />
+            <p><span class="quote">“Without doubt, one of the most consistently high-quality wineries in the Barossa region”</span>
+                <br>Pope Francis - Respected Sommelier</p>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="abouttext col-lg-6">
+                    <div class="aboutbox">
+                        <p>◆ EST. 1954 ◆</p>
+                        <h1>Combining over 60 years of hard work and shared family knowledge</h1>
+                        <p>Our grapes can be contained by no bowl, and our feet have developed the softest soles. We strive to bring you the sweetest, juiciest, grapiest grapes this side of the pond. And did we mention our grapes are fresh? Even the Pope
+                            thinks so!</p>
+                    </div>
+                    <img class="foundersig img-responsive" src="img/foundrysig.png" alt="Founder signature" />
+                </div>
+                <div class="powerwash col-lg-6 visible-lg"></div>
+    </section>
+    <section id="testimonial">
+        <div class="row">
+            <div class="testimonialbox">
+                <h1 class="quote">"We've been producing fine wine for over 65 years,<br>I think we know what we're talking about."</h1>
+                <p>I mean, seriously? I hope you were joking when you suggested we do not know what we are talkin about. Oh you didn't imply such? My bad.</p>
+            </div>
+        </div>
+    </section>
+    <section id="product">
+        <div class="row">
+            <div class="container">
+                <div id="shiraz" class="productbox col-lg-4">
+                    <img class="img-responsive" src="img/wine1.jpg" alt="Uva Shiraz" />
+                    <hr>
+                    <h1>Foundry Shiraz</h1>
+                    <p>Aged five years in solid, French Oak barrels sport notes of pepper and blackberry</p>
+                    <div class="productlink"><a href="#">Visit shop</a></div>
+                </div>
+                <div id="chardonnay" class="productbox col-lg-4">
+                    <img class="img-responsive" src="img/wine2.jpg" alt="Uva Chardonnay" />
+                    <hr>
+                    <h1>Foundry Chardonnay</h1>
+                    <p>A rich fruit palet with subtle Oak influence and a lingering dry, fresh finish</p>
+                    <div class="productlink"><a href="#">Visit shop</a></div>
+                </div>
+                <div id="merlot" class="productbox col-lg-4">
+                    <img class="img-responsive" src="img/wine3.jpg" alt="Uva Merlot" />
+                    <hr>
+                    <h1>Foundry Merlot</h1>
+                    <p>Generous sweet blackcurrant and mulberry character with soft, velvety tannins</p>
+                    <div class="productlink"><a href="#">Visit shop</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="apply">
+        <div class="row">
+            <div class="container">
+                <div class="col-md-offset-3 col-md-6 col-sm-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="fa fa-envelope"></i> Apply for a job!</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form class="applyform" action="https://docs.google.com/forms/d/e/1FAIpQLSfTCRBjln8zcfM4w4cPaBi4huy6bVfWe1RXjBTnBwRK1GH7hw/formResponse" method="POST" target="_self" onsubmit="">
+                                <label for="entry_809848681">First and Last Name:</label>
+                                <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                                <input type="text" name="entry.809848681" value="" dir="auto" aria-label="First and Last Name:  " aria-required="true" required placeholder="ex. Johnny Doe" title="">
+                                <br><label for="entry_759220769">Email Address:</label>
+                                <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                                <input type="text" name="entry.759220769" value="" dir="auto" aria-label="Email Address:  " aria-required="true" required placeholder="ex. johnydoe@gmail.com" title="">
+                                <br><label for="entry_1200692474">Position Desired:</label>
+                                <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                                <label>Dishwasher</label>
+                                <input type="checkbox" name="entry.685507589" value="Dishwasher" role="checkbox" aria-required="true">
+                                <label>Grape Smasher</label>
+                                <input type="checkbox" name="entry.685507589" value="Grape Smasher" role="checkbox" aria-required="true">
+                                <label>Cork Biter</label>
+                                <input type="checkbox" name="entry.685507589" value="Cork Biter" role="checkbox" aria-required="true">
+                                <label>General Dunce</label>
+                                <input type="checkbox" name="entry.685507589" value="General Dunce" role="checkbox" aria-required="true">
+                                <br><label for="entry_1348871620">Relevant Experience:</label>
+                                <textarea name="entry.1348871620" rows="8" cols="0" dir="auto" aria-label="Relevant Experience:  "></textarea>
+                                <input type="hidden" name="draftResponse" value="[,,&quot;-9118505867362384869&quot;]
+">
+                                <input type="hidden" name="pageHistory" value="0">
+                                <input type="hidden" name="fbzx" value="-9118505867362384869">
+                                <label for="emailReceipt" style="display:inline;"></label>
+                                <input type="submit" name="submit" value="Submit" class="btn btn-default btn-primary btn-lg btn-block">
+                            </form>
+                        </div>
+                    </div>
+    </section>
+    </section>
+    <footer id="socialmedia">
+        <div class="container">
+            <div class="row">
+                <div class="socialicons">
+                    <a href="#"><i class="fa fa-envelope-o fa-5x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-5x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-facebook fa-5x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
+
 </html>
