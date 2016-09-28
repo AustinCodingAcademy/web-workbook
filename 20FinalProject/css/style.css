@@ -1,6 +1,6 @@
 body {
     font-family: 'Architects Daughter', cursive;
-    }
+}
 nav {
     margin-top: 10px;
     background-image: url("../img/nav-bg.jpg");
@@ -270,15 +270,15 @@ ul li {
     background-color: darkblue;
 }
 
-/*Below is the media query*/
+/*Below is the media query for iphone*/
 
 @media (max-width: 767px) {
     .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
         margin-left: -15px;
-            }
+    }
     .navbar {
         color: darkblue;
-          }
+    }
     .navbar-brand {
         padding: 25px 25px;
         font-size: 10px;
@@ -460,7 +460,7 @@ ul li {
     }
     /*begin contact section*/
     #contact {
-              height: 100%;
+        height: 100%;
         background-image: url("../img/beach-bg.jpg");
         background-size: cover;
         background-repeat: no-repeat;
@@ -469,13 +469,13 @@ ul li {
         background-color: #6e6e6e;
     }
     .contactbox1 {
-          color: white;
+        color: white;
         height: 100%;
         width: 80%;
     }
     .contactbox1 li {
         text-align: left;
-          }
+    }
     .social {
         width: 100%;
         /*margin-top: 30px;
@@ -483,19 +483,261 @@ ul li {
         font-size: 30px;
     }
     .social a {
-      font-size: 20px;
+        font-size: 20px;
         color: white;
         text-decoration: none;
     }
     .social li {
-      margin: 0;
+        margin: 0;
         display: inline;
-          text-align: left;
+        text-align: left;
     }
     .contactbox2 {
-      margin-left: 20px;
-      font-size: 20px;
-      color: white;
+        margin-left: 20px;
+        font-size: 20px;
+        color: white;
+    }
+    #submit_button {
+        background-color: darkblue;
+        padding: 10px 10px 10px 10px;
+    }
+}
+
+/*Below is the media query for ipad*/
+
+@media
+/*(max-width: 991px) and */
+(min-width: 768px) {
+  body {
+    margin-right: 10px;
+  }
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+        margin-left: -15px;
+    }
+    .navbar {
+      padding-top: 50px;
+        color: white;
+        padding-right: 50px;
+    }
+    .navbar-brand {
+        padding: 25px 25px;
+        font-size: 10px;
+    }
+    nav a {
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+    }
+    .star:hover {
+        background-color: darkblue;
+    }
+    /*below is for hero ipad:*/
+    #hero {
+        text-align: center;
+    }
+    #hero h1 {
+        font-size: 50px;
+        text-align: center;
+        margin-right: 10px;
+        /*padding-left: 15px;*/
+    }
+    #hero p {
+        font-size: 45px;
+        text-align: center;
+        margin-right: 10px;
+    }
+    #about {
+        height: 100%;
+        text-align: center;
+        /*background-image: url("../img/beach-bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-blend-mode: multiply;
+        background-color: blue;*/
+    }
+    .beach img {
+      width: 70%
+    margin: 0;
+    }
+    .bliss {
+        /*height: 400px;
+        padding-right: 20px;*/
+        color: white;
+    }
+    .bliss h3 {
+        font-size: 30px;
+        text-align: center;
+        padding-left: 15px;
+    }
+    .bliss p {
+        font-size: 25px;
+        padding-left: 15px;
+        text-align: left;
+    }
+    /*below is criteria css*/
+    #criteria {
+        background-image: url("../img/beach-bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-blend-mode: multiply;
+        background-color: #6e6e6e;
+        height: 125%;
+        text-align: center;
+    }
+    .criteriabox {
+        height: 100%;
+        /*height: 425px;
+        margin: 30px;*/
+        color: white;
+    }
+    .criteriabox h3 {
+        font-size: 20px;
+    }
+    .criteriabox img {
+        /*height: 200px;*/
+        width: 50%;
+    }
+    .criteriabox p {
+        font-size: 15px;
+    }
+    /*below is places css*/
+    #places {
+        background-image: url("../img/beach-bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-blend-mode: multiply;
+        background-color: #6e6e6e;
+        height: 100%;
+        background-color: red;
+    }
+    /*ul li {
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        list-style-type: star;
+    }*/
+    .click a {
+        padding: 10px 5px 10px 5px;
+        font-size: 10px;
+        color: white;
+        text-decoration: none;
+        background-color: red;
+        border-radius: 5px;
+    }
+    .click a:hover {
+        background-color: darkblue;
+        text-decoration: none;
+    }
+    .archive {
+        font-size: 15px;
+        /*height: 20px;*/
+    }
+    .archive a:hover {
+        background-color: darkblue;
+        text-decoration: none;
+    }
+    .placesbox1 {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        /*margin-left: 200px;*/
+        /*margin-top: 50px;*/
+    }
+    .placesbox2 {
+        height: 100%;
+        width: 95%;
+        text-align: center;
+        /*margin-right: 200px;
+        margin-top: 50px;*/
+    }
+    .placesbox3 {
+        height: 100%;
+        width: 95%;
+        /*margin-right: 200px;
+        margin-top: 50px;*/
+    }
+    .placesbox1 img {
+        height: 100%;
+        width: 90%;
+    }
+    .placesbox2 img {
+        height: 100%;
+        width: 90%;
+    }
+    .placesbox1 h3 {
+        font-size: 30px;
+        text-align: center;
+        color: white;
+    }
+    .placesbox2 h3 {
+        font-size: 30px;
+        text-align: center;
+        color: white;
+    }
+    .placesbox1 p {
+        font-size: 20px;
+        color: white;
+        /*padding: 20px 20px 20px 20px;*/
+    }
+    .placesbox2 p {
+        font-size: 20px;
+        color: white;
+        /*padding: 20px 20px 20px 20px;*/
+    }
+    .placesbox3 h3 {
+        font-size: 20px;
+        color: white;
+        text-align: center;
+    }
+    .placesbox3 .archive {
+        font-size: 15px;
+        text-align: center;
+    }
+    .archive a {
+        text-decoration: none;
+        color: white;
+    }
+    /*begin contact section*/
+    #contact {
+        height: 100%;
+        background-image: url("../img/beach-bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-blend-mode: multiply;
+        background-color: #6e6e6e;
+    }
+    .contactbox1 {
+        color: white;
+        height: 100%;
+        width: 80%;
+    }
+    .contactbox1 li {
+        text-align: left;
+    }
+    .social {
+        width: 100%;
+        /*margin-top: 30px;
+        margin-left: 130px;*/
+        font-size: 30px;
+    }
+    .social a {
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+    }
+    .social li {
+        margin: 0;
+        display: inline;
+        text-align: left;
+    }
+    .contactbox2 {
+        margin-left: 20px;
+        font-size: 20px;
+        color: white;
     }
     #submit_button {
         background-color: darkblue;
