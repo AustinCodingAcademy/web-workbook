@@ -1,6 +1,6 @@
 body {
     font-family: 'Architects Daughter', cursive;
-}
+    }
 nav {
     margin-top: 10px;
     background-image: url("../img/nav-bg.jpg");
@@ -272,31 +272,20 @@ ul li {
 
 /*Below is the media query*/
 
-@media (max-width: 767px)
-/*.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-    margin-left: -15px;*/
-
-{
-    nav {
-        /*margin-top: 10px;*/
-        background-image: url("../img/nav-bg.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center bottom;
-        background-blend-mode: multiply;
-        /*background-color: #6e6e6e;*/
-        /*height: 200px;
-        width: 100%;*/
-        color: white;
-    }
+@media (max-width: 767px) {
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+        margin-left: -15px;
+            }
+    .navbar {
+        color: darkblue;
+          }
     .navbar-brand {
         padding: 25px 25px;
-        font-size: 30px;
-        /*line-height: 190px;*/
+        font-size: 10px;
     }
     nav a {
-        font-size: 30px;
-        color: white;
+        font-size: 10px;
+        color: darkblue;
         text-decoration: none;
     }
     .star:hover {
@@ -352,7 +341,7 @@ ul li {
         background-position: center;
         background-blend-mode: multiply;
         background-color: #6e6e6e;
-        height: 100%;
+        height: 125%;
         text-align: center;
     }
     .criteriabox {
@@ -456,19 +445,60 @@ ul li {
         color: white;
         /*padding: 20px 20px 20px 20px;*/
     }
-      .placesbox3 h3 {
+    .placesbox3 h3 {
         font-size: 20px;
         color: white;
         text-align: center;
     }
     .placesbox3 .archive {
-      font-size: 15px;
-      text-align: center;
+        font-size: 15px;
+        text-align: center;
     }
     .archive a {
         text-decoration: none;
         color: white;
     }
+    /*begin contact section*/
+    #contact {
+              height: 100%;
+        background-image: url("../img/beach-bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-blend-mode: multiply;
+        background-color: #6e6e6e;
+    }
+    .contactbox1 {
+          color: white;
+        height: 100%;
+        width: 80%;
+    }
+    .contactbox1 li {
+        text-align: left;
+          }
+    .social {
+        width: 100%;
+        /*margin-top: 30px;
+        margin-left: 130px;*/
+        font-size: 30px;
+    }
+    .social a {
+      font-size: 20px;
+        color: white;
+        text-decoration: none;
+    }
+    .social li {
+      margin: 0;
+        display: inline;
+          text-align: left;
+    }
+    .contactbox2 {
+      margin-left: 20px;
+      font-size: 20px;
+      color: white;
+    }
+    #submit_button {
+        background-color: darkblue;
+        padding: 10px 10px 10px 10px;
+    }
 }
-
-/*blis code is below:*/
