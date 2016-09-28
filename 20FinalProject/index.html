@@ -15,6 +15,9 @@
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Lobster|Tinos" rel="stylesheet">
 
+    <!-- ANIMATION -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
     <!-- CSS STYLE SHEET -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -38,7 +41,7 @@
             <div class="collapse navbar-collapse" id="example-navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="hero">Home</a>
+                        <a href="#hero">Home</a>
                     </li>
                     <li>
                         <a href="#about">About Me</a>
@@ -57,11 +60,14 @@
 
     <!-- END NAV -->
     <!-- SECTION 1 HERO -->
-    <section class="hero col-lg-12 col-sm-12">
+    <section id="hero">
+      <div class="col-lg-12 col-sm-12">
+      <div class="parallax-window" data-parallax="scroll" data-image-src=""></div>
         <div class="textbox text-center">
-            <h1>Steven Robert Anderson</h1>
+            <h1 class="animated zoomIn">Steven Robert Anderson</h1>
             <h2>Web Developer</h2>
         </div>
+      </div>
     </section>
     <!-- END SECTION 1 -->
     <!-- SECTION 2 -->
@@ -104,8 +110,8 @@
             Although I am a new developer I have been a successful Project Manger for over 20 years and I have had a career in technology spanning over 26 years with diverse and challenging positions providing world-class industry-standard technology solutions.  A career blending technical expertise and organizational skills to implement budget planning, design, installation, and maintenance of technology solutions and equipment, well recognized for superior performance.
           </p>
         </div>
-                  <div class="col-lg-6">
-          <ul> AWARDS EARNED
+                  <div class="awards col-lg-6">
+          <ul>
             <li>1 Superior Civilian Service Medal</li>
             <li>4 Coast Guard Achievement Medals</li>
             <li>5 Coast Guard Good Conduct Medals</li>
@@ -119,15 +125,16 @@
 <!-- EMAIL OFFSET -->
 
         <div class="row">
-          <div class="offset col-lg-3">
+          <div class="offset col-lg-2">
           </div>
 
 <!-- EMAIL OFFSET COMPLETE -->
 
 <!-- EMAIL FORM -->
 
-        <div class="email col-lg-6">
+        <div class="email col-lg-5">
           <div class="name">
+            <h3>Contact Me</h3>
         <form action="https://docs.google.com/forms/d/e/1FAIpQLSdAgnoGB0Xld4QKtSUMujT3AVyQmyRiMwON2ERt_-KSuFhI-w/formResponse"
         method="POST" target="_self" onsubmit="">
           <label for="entry_852467186">Name:</label>
@@ -157,9 +164,14 @@
         </form>
       </div>
   </div>
-</div>
-</SECTION>
+
     <!-- EMAIL FORM COMPLETE -->
+      <div class="map col-lg-5">
+        <h3>Where I live</h3>
+        <iframe width="300" height="225" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Austin%2C%20Texas&key=AIzaSyBfyrSgsfpGckbjRxFub8JzdppsRLYBBrs" allowfullscreen></iframe>
+      </div>
+    </div>
+    </SECTION>
 <!-- END SECTION 3 -->
 <!-- SECTION 4 -->
 <section id=projects>
@@ -212,8 +224,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!-- FONT AWESOME SCRIPT -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-
+    <!-- PARALLAX SCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/path/to/parallax.js"></script>
+    <!-- ANIMATION SCRIPT -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 </body>
 
