@@ -81,34 +81,230 @@
                     <img class="mySlides w3-animate-bottom" src="http://media.jrn.com/images/cake3_17940838_ver1.0_640_480.jpg" style="width:100%">
                 </div>
                 <script>
-                var myIndex = 0;
-                carousel();
+                    var myIndex = 0;
+                    carousel();
 
-                function carousel() {
-                    var i;
-                    var x = document.getElementsByClassName("mySlides");
-                    for (i = 0; i < x.length; i++) {
-                      x[i].style.display = "none";
+                    function carousel() {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        myIndex++;
+                        if (myIndex > x.length) {
+                            myIndex = 1
+                        }
+                        x[myIndex - 1].style.display = "block";
+                        setTimeout(carousel, 2500);
                     }
-                    myIndex++;
-                    if (myIndex > x.length) {myIndex = 1}
-                    x[myIndex-1].style.display = "block";
-                    setTimeout(carousel, 2500);
-                }
                 </script>
 
             </div>
             <div class="baker col-lg-6 col-sm-12 col-xs-12">
                 <h2>About US</h2>
                 <p>
-                Street art craft beer pitchfork bitters selvage freegan. Cliche truffaut hot chicken, vice beard gentrify kale chips skateboard bicycle rights hell of edison bulb migas. Listicle truffaut cornhole church-key hot chicken, drinking vinegar coloring book lo-fi microdosing heirloom live-edge. Godard biodiesel cardigan food truck thundercats. Intelligentsia green juice raw denim master cleanse. Tofu messenger bag leggings, tousled coloring book gochujang gentrify poke enamel pin. Selfies sriracha small batch cold-pressed microdosing tousled, hashtag pug readymade tofu VHS air plant subway tile.
+                    Street art craft beer pitchfork bitters selvage freegan. Cliche truffaut hot chicken, vice beard gentrify kale chips skateboard bicycle rights hell of edison bulb migas. Listicle truffaut cornhole church-key hot chicken, drinking vinegar coloring book
+                    lo-fi microdosing heirloom live-edge. Godard biodiesel cardigan food truck thundercats. Intelligentsia green juice raw denim master cleanse. Tofu messenger bag leggings, tousled coloring book gochujang gentrify poke enamel pin. Selfies
+                    sriracha small batch cold-pressed microdosing tousled, hashtag pug readymade tofu VHS air plant subway tile.
                 </p>
                 <a href="#">The Owner's Blog</a>
             </div>
         </div>
         <div class="row products" id="pro">
             <div class="regular col-lg-4 col-xs-12">
+                <h3>What we do everyday...</h3>
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn">Our Regular Menu</button>
 
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close" id="cl">Go Back!</span>
+                            <h2>Our Regular Menu</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Flavors We offer:</p>
+                            <ol>
+                                <li>Chocolate</li>
+                                <li>Chocolate Chip</li>
+                                <li>Dark Chocolate</li>
+                                <li>White Chocolate</li>
+                                <li>Vanilla</li>
+                                <li>White</li>
+                                <li>Lemon</li>
+                                <li>Carrot</li>
+                                <li>Banana</li>
+                                <li>Red Velvet</li>
+                            </ol>
+                            <p>Check out our prices:</p>
+                            <div class="container">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Size</th>
+                                            <th>Servings</th>
+                                            <th>Price</th>
+                                            <th>For specialty cake flavors, filings and/or frosting, add: </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>6 inch</td>
+                                            <td>4-5</td>
+                                            <td>Rs.2800</td>
+                                            <td>Rs.80</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8 inch</td>
+                                            <td>6-8</td>
+                                            <td>Rs.5500</td>
+                                            <td>Rs.100</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10 inch</td>
+                                            <td>12-14</td>
+                                            <td>Rs.7500</td>
+                                            <td>Rs.120</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12 inch</td>
+                                            <td>20-22</td>
+                                            <td>Rs.9900</td>
+                                            <td>Rs.200</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <h3>We Customize to your needs as well --></h3>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById('myModal');
+
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("myBtn");
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks the button, open the modal
+                    btn.onclick = function() {
+                        modal.style.display = "block";
+                    }
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() {
+                        modal.style.display = "none";
+                    }
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+            <div class="customize col-lg-4 col-xs-12">
+                <h3>Our Customized Products</h3>
+                <div class="row">
+                    <div class="col-lg-6 col-xs-6">
+                        <img src="image/cake 1.jpg" alt="" />
+                    </div>
+                    <div class="col-lg-6 col-xs-6">
+                        <img src="image/cake 2.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-xs-6">
+                        <img src="image/cake 3 .jpg" alt="" />
+                    </div>
+                    <div class="col-lg-6 col-xs-6">
+                        <img src="image/cake 4.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="festive col-lg-4 col-xs-12">
+                <h3>Watch out for monthly special...</h3>
+                <img src="image/festive special.jpeg" alt="our monthly special" />
+                <img src="image/WhatsApp Image 2016-09-25 at 6.30.43 AM.jpeg" alt="" />
+            </div>
+        </div>
+        <div class="row contact-us" id="con">
+            <div class="col-lg-4 col-xs-12 phno">
+                <h3>Come get your dream cake today...</h3>
+                <h4>Call us on: +91 99233 78619</h4>
+                <h4>Email us : ishikasaraf@gmail.com</h4>
+                <div class="review">
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLScFaT8cnB3KuuczUKKLPbpeXP2_kl6dG6Zbu64E-8o9YUS9aQ/formResponse" method="POST" target="_self" onsubmit="">
+                    <label for="entry_883239658">
+                        Ordered from us before?<br>
+                        What did you think of our product?</label>
+                    <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                    <br>
+                    <textarea name="entry.883239658" rows="8" cols="0" dir="auto" aria-label="What did you think of our product?" aria-required="true" required></textarea>
+                    <input type="hidden" name="draftResponse" value="[,,&quot;4000450167130369474&quot;]
+">
+                    <input type="hidden" name="pageHistory" value="0">
+                    <input type="hidden" name="fbzx" value="4000450167130369474">
+                    <label for="emailReceipt" style="display:inline;"></label>
+                    <br>
+                    <input id="submit" type="submit" name="submit" value="Submit">
+                </form>
+            </div>
+            </div>
+            <div class="col-lg-4 col-xs-12 loc">
+                <h3>We are located at:</h3>
+                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAJQY4km_GtNgXDzCsngmfdOko6G4PTwI0'></script>
+                <div style='overflow:hidden;height:323px;width:405px;'>
+                    <div id='gmap_canvas' style='height:323px;width:405px;'></div>
+                    <style>
+                        #gmap_canva img {
+                            max-width: none!important;
+                            background: none!important
+                        }
+                    </style>
+                </div> <a href='https://add-map.org/'>how to add a google map to your website</a>
+                <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=e1c4cf5d74dbddc816442ed05886eef12cb447f3'></script>
+                <script type='text/javascript'>
+                    function init_map() {
+                        var myOptions = {
+                            zoom: 12,
+                            center: new google.maps.LatLng(21.170383, 79.03521899999998),
+                            mapTypeId: google.maps.MapTypeId.ROADMAP
+                        };
+                        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                        marker = new google.maps.Marker({
+                            map: map,
+                            position: new google.maps.LatLng(21.170383, 79.03521899999998)
+                        });
+                        infowindow = new google.maps.InfoWindow({
+                            content: '<strong>The Oven Story</strong><br>53, Saroj, Ramdaspeth <br>440010 Nagpur <br>'
+                        });
+                        google.maps.event.addListener(marker, 'click', function() {
+                            infowindow.open(map, marker);
+                        });
+                        infowindow.open(map, marker);
+                    }
+                    google.maps.event.addDomListener(window, 'load', init_map);
+                </script>
+            </div>
+            <div class="col-lg-4 col-xs-12 order">
+                <h3>Look out for new products.</h3>
+                <h4>We are soon coming out with everything to satisfy your sweet tooth...</h4>
+                <h5>Dont forget to <a id="link1" href="https://goo.gl/forms/78jnmlQV3IEQcqNR2">ORDER</a> your Cake today !!</h5>
+                 <a href="https://goo.gl/forms/78jnmlQV3IEQcqNR2"><img src="image/Screen Shot 2016-09-27 at 7.43.54 PM.png" alt="ovenstory logo" /></a>
+                 <p>
+                     See what our previous customers think of us :  <a id="link2" href="https://www.facebook.com/ovenstory/reviews">Reviews</a>
+                 </p>
             </div>
         </div>
     </main>
