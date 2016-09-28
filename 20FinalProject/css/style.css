@@ -3,7 +3,9 @@ body {
     color: white;
     position: relative;
 }
+
 /*CHROME SCROLLBAR STYLING*/
+
 body::-webkit-scrollbar {
     width: .5em;
 }
@@ -11,8 +13,8 @@ body::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px black;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: black;
-  outline: 1px solid black;
+    background-color: black;
+    outline: 1px solid black;
 }
 .carets {
     -webkit-animation-duration: 2s !important;
@@ -31,26 +33,27 @@ h1 .outer-caret {
     -vendor-animation-iteration-count: infinite;
 }
 .section-header h1 {
-  font-family: "Yesteryear";
-  text-align: center;
-  font-size: 100px;
-  color: white;
-  font-weight: bold;
-  text-shadow: 3px 3px black;
-  margin-bottom: 50px;
+    font-family: "Yesteryear";
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 3px black;
+    margin-bottom: 50px;
 }
 .click-animate {
-  -webkit-animation-duration: 0s;
-  -webkit-animation-delay: 0;
-  -webkit-animation-iteration-count: 0;
-  -vendor-animation-duration: 0s;
-  -vendor-animation-delay: 0;
-  -vendor-animation-iteration-count: 0;
+    -webkit-animation-duration: 0s;
+    -webkit-animation-delay: 0;
+    -webkit-animation-iteration-count: 0;
+    -vendor-animation-duration: 0s;
+    -vendor-animation-delay: 0;
+    -vendor-animation-iteration-count: 0;
 }
 .click-animate-activate {
-  -webkit-animation-iteration-count: 1 !important;
-  -vendor-animation-iteration-count: 1 !important;
+    -webkit-animation-iteration-count: 1 !important;
+    -vendor-animation-iteration-count: 1 !important;
 }
+
 /*NAVBAR STYLING*/
 
 #my-nav {
@@ -72,12 +75,12 @@ h1 .outer-caret {
 #my-nav.navbar-default .navbar-nav>li>a {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(0, 0, 0, 1);
-      font-family: "Yesteryear";
+    font-family: "Comfortaa";
 }
 #my-nav.navbar-default .navbar-nav>li>a:hover, #my-nav.navbar-default .navbar-nav>li>a:focus {
     color: rgba(0, 0, 0, 1);
     background-color: rgba(255, 255, 255, 1);
-    font-family: "Yesteryear";
+    font-family: "Comfortaa";
 }
 #my-nav.navbar-default .navbar-nav>.active>a, #my-nav.navbar-default .navbar-nav>.active>a:hover, #my-nav.navbar-default .navbar-nav>.active>a:focus {
     color: rgba(0, 0, 0, 1);
@@ -103,9 +106,10 @@ h1 .outer-caret {
 
 #my-carousel {
     padding: 0;
+    min-width: 100%;
 }
 .carousel-inner>.item {
-    height: 100vh;
+    min-height: 100vh;
 }
 .carousel-caption h3 {
     font-size: 75px;
@@ -115,8 +119,8 @@ h1 .outer-caret {
     border-radius: 25px;
     padding: 15px 0;
 }
-.carousel-indicators > li {
-  border: 2px solid black;
+.carousel-indicators>li {
+    border: 2px solid black;
 }
 .delay {
     -webkit-animation-duration: 5s;
@@ -153,7 +157,7 @@ h1 .outer-caret {
     background-size: cover;
 }
 #portfolio {
-    padding: 30px;
+    padding: 0;
     text-align: center;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
@@ -166,13 +170,14 @@ h1 .outer-caret {
     background-color: rgba(0, 0, 0, .5);
 }
 .item-container {
-    background-color: white;
-    height: 296px;
+    background-color: rgba(0, 0, 0, .5) !important;
+    height: auto !important;
     border: 2px solid black;
     overflow: hidden;
 }
 .item-container img {
-    height: 100%;
+    height: auto;
+    width: 100%
     margin: auto;
     transition: all 300ms ease
 }
@@ -180,8 +185,12 @@ h1 .outer-caret {
     transform: scale(1.15);
     transition: all 300ms ease;
 }
+
 /*PORTFOLIO STYLING END*/
+
+
 /*ABOUT STYLING BEGIN*/
+
 #about {
     text-align: center;
     padding: 30px;
@@ -237,83 +246,197 @@ h1 .outer-caret {
     margin-bottom: 20px;
 }
 #icon-row {
-  padding: 100px 0;
-  text-align: center;
+    padding: 100px 0;
+    text-align: center;
 }
 .icon-container i {
-  font-size: 100px;
-  padding: 15px;
-  -webkit-animation-duration: .5s;
-  -webkit-animation-delay: 0s;
-  -webkit-animation-iteration-count: infinite;
-  -vendor-animation-duration: .5s;
-  -vendor-animation-delay: 0s;
-  -vendor-animation-iteration-count: infinite;
+    font-size: 100px;
+    padding: 15px;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -vendor-animation-duration: .5s;
+    -vendor-animation-delay: 0s;
+    -vendor-animation-iteration-count: infinite;
 }
+
 /*ABOUT STYLING END*/
+
+
 /*CONTACT STYLING BEGIN*/
+
 #contact {
-  text-align: left;
-  padding: 30px;
-  border-bottom: 3px solid black;
-  background-image:url("../img/bricks.jpg");
-  background-color: lightgrey;
-  background-blend-mode: multiply;
-  background-position: center;;
+    text-align: left;
+    padding: 30px;
+    border-bottom: 3px solid black;
+    background-image: url("../img/bricks.jpg");
+    background-color: lightgrey;
+    background-blend-mode: multiply;
+    background-position: center;
+    ;
 }
 .panel-heading {
-  background-color: rgba(0, 0, 0, .7) !important;
+    background-color: rgba(0, 0, 0, .7) !important;
 }
 .panel, .panel-body {
-  background-color: rgba(0, 0, 0, .5) !important;
-  border: black solid 2px !important;
-  color: white;
+    background-color: rgba(0, 0, 0, .5) !important;
+    border: black solid 2px !important;
+    color: white;
 }
 .my-form-label {
-  font-size: 20px;
-  width:100%;
+    font-size: 20px;
+    width: 100%;
 }
 .my-button {
-  color: white;
-  font-weight: bold;
-  padding: 15px 30px;
-  margin-bottom: 50px;
-  border: 2px solid black;
-  background-color: rgba(0, 0, 0, .75) !important;
+    color: white;
+    font-weight: bold;
+    padding: 15px 30px;
+    margin-bottom: 50px;
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, .75) !important;
 }
 .my-button:hover {
-  border: 2px solid black;
-  color: white;
-  background-color: rgba(0, 0, 0, .8) !important;
+    border: 2px solid black;
+    color: white;
+    background-color: rgba(0, 0, 0, .8) !important;
 }
 .panel {
-  border: 2px solid black;
+    border: 2px solid black;
 }
+
 /*CONTACT STYLNG END*/
+
+
 /*FOOTER STYLING*/
+
 footer {
-  padding: 15px;
-  background-image: url("../img/stone.jpg");
-  background-color: #404040;
-  background-blend-mode: multiply;
-  border-bottom: 3px solid black;
+    padding: 15px;
+    background-image: url("../img/stone.jpg");
+    background-color: #404040;
+    background-blend-mode: multiply;
+    border-bottom: 3px solid black;
 }
 .badges {
-  text-align: center;
-  color: white;
-  font-size: 150px;
-  background-color: rgba(0, 0, 0, .5);
-  border: 1px solid white;
-  border-radius: 25px;
-  margin: 15px 0;
+    text-align: center;
+    color: white;
+    font-size: 150px;
+    background-color: rgba(0, 0, 0, .5);
+    border: 1px solid white;
+    border-radius: 25px;
+    margin: 15px 0;
 }
 .my-html5:hover {
-  color:#ff471a;
+    color: #ff471a;
 }
 .my-github:hover {
-  color:purple;
+    color: purple;
 }
 .my-css3:hover {
-  color: #003d99;
+    color: #003d99;
 }
+
 /*FOOTER STYLING END*/
+
+
+/*PHONE MEDIA QUERY*/
+@media (max-width: 767px) {
+    .section-header h1 {
+        font-size: 40px;
+    }
+    .carousel-caption h3 {
+        font-size: 20px;
+        color: white;
+        padding: 15px 0;
+    }
+    .portfolio-item {
+        padding: 0;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    .item-container {
+        height: 100px;
+
+    }
+    #about-me-container h1 {
+        font-size: 50px;
+        padding: 50px 0;
+    }
+    #about-me-container p {
+        text-align: left;
+        font-size: 20px;
+        padding: 50px 20px;
+    }
+    #my-google-maps {
+        width: 100%;
+        height: 30vh;
+    }
+    #icon-row {
+      padding: 0 0 15px 0;
+    }
+    .icon-container i {
+        font-size: 30vw;
+        padding: 10px 0;
+    }
+    .my-form-label {
+        font-size: 10px;
+        width: 100%;
+    }
+    .badges {
+        font-size: 20vh;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    footer {
+      padding: 0;
+    }
+}
+
+/*TABLET MEDIA QUERY*/
+
+@media (min-width: 768px) and (max-width:991px) {
+  .section-header h1 {
+      font-size: 100px;
+  }
+  .carousel-caption h3 {
+      font-size: 50px;
+      color: white;
+      padding: 15px 0;
+  }
+  .portfolio-item {
+      padding: 0;
+      background-color: rgba(0, 0, 0, .5);
+  }
+  .item-container {
+      height: 100px;
+
+  }
+  #about-me-container h1 {
+      font-size: 100px;
+      padding: 50px 0;
+  }
+  #about-me-container p {
+      text-align: left;
+      font-size: 40px;
+      padding: 100px 50px;
+  }
+  #my-google-maps {
+      width: 100%;
+      height: 30vh;
+  }
+  #icon-row {
+    padding: 0 0 15px 0;
+  }
+  .icon-container i {
+      font-size: 100px;
+      padding: 10px 0;
+  }
+  .my-form-label {
+      font-size: 10px;
+      width: 100%;
+  }
+  .badges {
+      font-size: 20vh;
+      background-color: rgba(0, 0, 0, .5);
+  }
+  footer {
+    padding: 0;
+  }
+}

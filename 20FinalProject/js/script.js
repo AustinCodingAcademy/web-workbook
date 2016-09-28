@@ -22,7 +22,7 @@ $(function() {
         })
         // "Hello!" ANIMATION SETTINGS
     $('.animated').click(function() {
-        var heading = $(this)
+        var heading = $(this);
         heading.removeClass('rubberBand');
         setTimeout(function() {
             heading.addClass('rubberBand');
