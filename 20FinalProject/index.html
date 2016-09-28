@@ -129,53 +129,55 @@
             </div>
 
         </section>
-        <section id="about"><img src="img/aca.png" alt=""></section>
+        <section id="about">k
+        </section>
         <section id="contact" style="background: #009688;">contact us</section>
 
 
 
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+    <script>
+        new WOW({
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 0, // default
+            mobile: true, // default
+            live: true // default
+        }).init();
+    </script>
+    <script>
+        // Add scrollspy to <body>
+        $('body').scrollspy({
+            target: ".navbar",
+            offset: 50
+        });
+        // Add smooth scrolling on all links inside the navbar
+        $("#example-navbar-collapse a, .navbar-brand").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function() {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    </script>
 </body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
-<script>
-    new WOW({
-        boxClass: 'wow', // default
-        animateClass: 'animated', // default
-        offset: 0, // default
-        mobile: true, // default
-        live: true // default
-    }).init();
-</script>
-<script>
-    // Add scrollspy to <body>
-    $('body').scrollspy({
-        target: ".navbar",
-        offset: 50
-    });
-    // Add smooth scrolling on all links inside the navbar
-    $("#example-navbar-collapse a, .navbar-brand").on('click', function(event) {
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
 
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function() {
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-            });
-        } // End if
-    });
-</script>
 
 </html>
