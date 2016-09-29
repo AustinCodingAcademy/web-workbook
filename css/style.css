@@ -293,15 +293,18 @@
 }
 
 .name {
-  width: 43.5%;
+  width: 48.5%;
+  margin-right: 10px;
 }
 
 .email {
-  width: 43.5%;
+  width: 48.5%;
+  margin-left: 10px;
 }
 
 .submit {
-  width: 87%;
+  width: 100%;
+  margin-top: 15px;
 }
 
 #contact .connect {
@@ -339,7 +342,6 @@
   }
 }
 
-
 .icon {
   width: 23%;
   display: inline-block;
@@ -362,3 +364,112 @@
 .icon:hover {
   animation-iteration-count: infinite;
 }
+
+
+/*Section for media queries for tablet*/
+
+  @media (min-width: 768px) and (max-width: 992px) {
+
+    #ico {
+      text-align: right;
+      width: 125%;
+    }
+
+    #portfolio {
+      height: 1140px;
+    }
+
+    .top-projects {
+      width: 48.5%;
+    }
+
+    .top-projects h3 {
+      padding-bottom: 30px;
+    }
+
+    .road, .tahoe, .trees {
+      width: 100%;
+    }
+
+    .aboutme, .resume {
+      margin: 0px 0px 40px 0px;
+    }
+
+    .dwn-two {
+    margin-top: 50px;
+    }
+
+    .submit {
+      width: 100%;
+      background-color: ivory;
+    }
+
+  }
+
+
+/*Section for media queries for phone*/
+
+  @media (max-width: 768px) {
+
+    .header {
+      width: 100%;
+    }
+
+    #ico {
+      text-align: right;
+      width: 125%;
+    }
+
+    .top-projects {
+      width: 100%;
+    }
+
+    .top-projects h3 {
+      margin-bottom: 50px;
+    }
+
+    #portfolio {
+      height: 2050px;
+    }
+
+    .additional h2 {
+      margin-top: 30px;
+    }
+
+    .road, .tahoe, .trees {
+      width: 100%;
+    }
+
+    .aboutme, .resume {
+      margin-bottom: 50px;
+    }
+
+   .name, .email {
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+   }
+
+   .aus {
+    margin-top: 500px;
+   }
+
+   textarea {
+      height: 90%;
+   }
+
+   #contact .connect {
+     margin-top: 0px;
+     height: 500px;
+     padding: 0px;
+   }
+
+   .aus h4 {
+     margin-top: 250px;
+   }
+
+   #map {
+     margin: 0px;
+     padding: 0px;
+   }
+
+  }
