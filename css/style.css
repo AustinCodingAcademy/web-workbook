@@ -5,6 +5,7 @@
   color: #ffffff;
 }
 
+
 /*Section "home" includes hero image and name*/
 
 .row {
@@ -58,19 +59,28 @@
   padding: 0px;
 }
 
-@media (min-width: 1200px) {
+.icon:hover {
+  animation-iteration-count: infinite;
+}
+
+/*@media (min-width: 1200px) {
   .col-lg-9{
     float: none;
     margin: auto;
     width: 71%;
   }
+}*/
+
+#ico {
+  width: 71%;
 }
+
 
 /*Section "Portfolio" includes featured projects*/
 
 #portfolio {
   background-color: #ffffff;
-  height: 600px;
+  height: 630px;
   width: auto;
 }
 
@@ -116,36 +126,35 @@
 }
 
 #add-projects {
-  background-color: #ffffff;
-  height: 950px;
+  height: 300px;
   width: auto;
+}
+
+.additional {
+  text-align: center;
 }
 
 .additional h2 {
   text-align: center;
-  font-size: 30px;
-  padding: 100px 0px 30px 0px;
+  font-size: 34px;
+  padding: 65px 0px 30px 0px;
 }
 
-.lesson {
-  width: 20%;
-  height: 150px;
-  float: left;
-  text-align: center;
-  font-size: 30px;
-}
-
-.lesson h3 {
-  color: grey;
-  font-size: 30px;
-  margin:0px;
-}
-
-.lesson a {
+#git a {
+  border: 2px solid #168077;
+  background-color: #168077;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
   text-decoration: none;
-  color: #49A5D6;
-  font-size: 20px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
 }
+
+#git:hover {
+  animation-iteration-count: infinite;
+}
+
 
 /*Section for Featured Projects*/
 
@@ -155,15 +164,30 @@
   float: none;
 }
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
   .col-lg-8 {
     float: none;
   }
-}
+}*/
 
 .services-page img {
   width: 100%;
   margin: 70px 0px 70px 0px;
+}
+
+/*Section"testimonial*/
+
+#testimonial {
+  color: #ffffff;
+  background-color: #212127;
+  height: 300px;
+}
+
+#testimonial p {
+  font-size: 34px;
+  font-family: 'Condiment', cursive;
+  text-align: center;
+  padding-top: 100px;
 }
 
 /*Section "about"*/
@@ -182,11 +206,20 @@
 }
 
 .dwn {
-  margin-top: 30px;
+  margin-top: 57px;
+}
+
+.dwn-two {
+  margin-top: 80px;
 }
 
 .bld {
   font-weight: bold;
+  margin-top: 20px;
+}
+
+.dwn-top {
+  margin-top: 30px;
 }
 
 .road {
@@ -194,9 +227,17 @@
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-  height: 450px;
-  /*background-blend-mode: multiply;
-  background-color: #b3b3b3;*/
+  height: 400px;
+  background-attachment: local;
+  width: 50%;
+}
+
+.tahoe {
+  background-image: url("./img/tahoe.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 400px;
   background-attachment: local;
   width: 50%;
 }
@@ -206,12 +247,11 @@
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-  height: 450px;
-  /*background-blend-mode: multiply;
-  background-color: #b3b3b3;*/
+  height: 400px;
   background-attachment: local;
   width: 50%;
 }
+
 
 /*Section "contact" includes the form and contact info*/
 
@@ -298,6 +338,7 @@
     margin: 0 auto;
   }
 }
+
 
 .icon {
   width: 23%;
