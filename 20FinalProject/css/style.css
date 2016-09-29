@@ -16,7 +16,7 @@
     height: 650px;
     background-image: url("../img/portfoliohero.jpg");
     background-size: cover;
-    background-position: center top;
+    background-position: 40% 2%;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-color: #888;
@@ -97,6 +97,12 @@
 .skilllist {
     list-style: none;
     padding: 0 5% 0 0;
+}
+
+.skillbox span {
+    color: #008000;
+    font-weight: 700;
+    font-style: italic;
 }
 
 .skillbox p {
@@ -274,6 +280,15 @@
 /*The following is for mobile*/
 
     @media (max-width: 767px) {
+
+        .navbar-toggle {
+            margin-right: 6%;
+        }
+
+        .heroimg {
+            background-attachment: scroll;
+        }
+
         .herotext h1 {
             padding-top: 65%;
         }
@@ -309,6 +324,7 @@
 /*The following is for tablets*/
 
     @media (min-width: 768px) and (max-width: 991px) {
+
         .herotext h1 {
             padding-top: 25%;
         }
