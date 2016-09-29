@@ -1,10 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <meta name="viewport" content="device-width", initial-scale="1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+   <script src="https://use.fontawesome.com/81ba136700.js"></script>
+  <title>Final Project</title>
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/js/script.js">
 </head>
 <body>
+  <nav class="navbar navbar-inverse navbar-fixed-top col-lg-12 col-xs-12" data-fix="affix">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="www.MrRobotATX.com">Mr. Robot ATX <i class="fa fa-android" aria-hidden="true"></i></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav pull-right">
+        <li class="active"><a href="#hero" class="hero">Home</a></li>
+        <li><a href="#about" class="about">About</a></li>
+        <li><a href="#why" class="test">Why</a></li>
+        <li><a href="#how" class="select">How</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section id="hero" class="parallax">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 col-xs-12">
+      <!-- <video src="vid1.mp4" autoplay poster="posterimage.jpg" autoplay="true" loop="auto" class="video-responsive center-block"></video> -->
+      <div class="text col-lg-12 col-xs-12">
+        <h1>MR. ROBOT ATX  <i class="fa fa-android fa-2x" aria-hidden="true"></i></a></h1>
+        <h3>Web Development | Specializing in helping small business owners</h3>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section id="about" class="container">
+  <div class="row">
+    <div class="col-lg-12 col-xs-12">
+      <h1>About Us</h1>
+      <div class="col-lg-6 col-xs-">
+      <img src="img/profilepic.jpg" alt="profile pic" class="aboutpic img-responsive" />
+      </div>
+      <div class="col-lg-6 col-xs-">
+      <h2>If you don't come to us for your web needs, we will come to you...</h2>
+      </div>
 
+
+    </div>
+  </div>
+</section>
+<section>
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+
+    <script>
+
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6hrk0qZBBWZmqZwxd7EijFjEmf9ofUUM&callback=initMap">
+    </script>
+</section>
+<footer>
+  <div class="row">
+    <div class="col-xs-12">
+      <a href="https://www.instagram.com/taco.coffee/"><i class="fa fa-instagram fa-5x"></i></a>
+      <a href="https://www.snapchat.com/add/taco.coffee"><i class="fa fa-snapchat fa-5x"></i></a>
+      <a href="https://www.twitter.com/taco_coffee"><i class="fa fa-twitter fa-5x"></i></a>
+      <p>Copyright &copy; 2016 Mr. Robot ATX, LLC. All rights reserved</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>
