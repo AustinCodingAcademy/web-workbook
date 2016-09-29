@@ -1,0 +1,538 @@
+body{
+  font-family:'courier';
+}
+
+/*  NAV   */
+
+.navbar{
+  background-color:black;
+  opacity:.7;
+}
+.navbar-brand{
+  opacity:1;
+  font-weight: bold;
+  font-size: 22px;
+}
+.nav li{
+  font-size: 18px;
+}
+
+/*  HOME   */
+
+#home{
+  height:700px;
+  background-image:url("http://www.pawnandgifts.com/wp-content/uploads/2015/03/Dark-Grey-Background-31.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  border-bottom:2px solid white;
+}
+.homeBox{
+  width:90%;
+  margin:auto;
+  margin-top:100px;
+}
+.hero1{
+  height:600px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.homeImg{
+  /*position:fixed;*/
+  opacity: .7;
+  height:350px;
+  margin-top:125px;
+  /*margin-left:100px;*/
+  margin-right:0px;
+  /*border: 1px solid white;*/
+  border-radius: 10%;
+}
+.homeTxt{
+  margin-left:100px;
+  margin-top:200px;
+  color:white;
+  text-shadow: 2px 2px 2px black;
+  height:331px;
+}
+
+
+
+
+
+/*  ABOUT   */
+
+#about{
+  /*position:fixed;*/
+  height:700px;
+  background-image:url("../img/bluePanel.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#about h2{
+  color:white;
+  margin-top:100px;
+}
+.stats, .statsIcons{
+  list-style-type: none;
+  color:white;
+  font-size: 22px;
+  font-weight:bold;
+  line-height: 1.5;
+}
+.stats li{
+  margin-top:20px;
+}
+.statsIcons{
+  line-height: 4;
+  margin-top:30px;
+}
+.stats{
+  margin-top:20px;
+}
+.socialIcons a{
+  color:white;
+}
+.lang{
+  list-style-type: none;
+  margin-top:10px;
+  font-size:32px;
+  line-height: 2.5;
+}
+.techniques{
+  list-style-type: none;
+  margin-top:30px;
+  line-height: 1.5;
+}
+.midLI{
+  margin-top: 50px;
+  margin-bottom:50px;
+}
+.goodWith{
+  list-style-type: none;
+  margin-top:10px;
+  color:white;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+
+
+
+/*   MY WORK    */
+
+#myWork{
+  font-family:'oleo script';
+  height:1450px;
+  border:2px solid black;
+  border-top:15px solid black;
+  background-image:url("http://3.bp.blogspot.com/_84Yj0O5-LFQ/TBEddSLumLI/AAAAAAAAOTY/emY8XU3aUA0/s1600/red-velvet-curtain2-978x923.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:center;
+  background-blend-mode: multiply;
+  background-color: #aaa7a7;
+  margin-bottom:0px;
+  padding-top:50px;
+  padding-bottom:0px;
+}
+#myWork h1{
+  font-family:"unica one";
+  color:white;
+  background-color:#222;
+  border:2px solid white;
+  border-radius:15px;
+  letter-spacing:5px;
+  padding:25px;
+  width:30%;
+  margin:auto;
+}
+
+.showcase{
+  height:75px;
+  width:90%;
+  margin:auto;
+  padding-top:20px;
+  margin-bottom:15px;
+  border-radius: 15px;
+}
+.showcase a{
+  color:white;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color:#222;
+  font-weight:bold;
+  padding:10px;
+  text-decoration: none;
+  font-size:18px;
+  margin-top:25px;
+}
+.showcase a:hover{
+  background-color:black;
+}
+.frameSize{
+  width:50%;
+  margin:auto;
+}
+.sizeBtn{
+  height:60px;
+  width:90%;
+  margin:auto;
+  padding-top:20px;
+  margin-top:80px;
+  margin-bottom:25px;
+  border-radius: 15px;
+}
+
+.sizeBtn a{
+  color:black;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color:white;
+  padding:10px;
+  opacity:.7;
+  text-decoration: none;
+  font-size:25px;
+  margin-top:25px;
+}
+.sizeBtn .activeSize{
+  background-color:yellow;
+  color:black;
+}
+.sizeBtn a:hover{
+  color:white;
+  background-color:black;
+  border:2px solid white;
+}
+.dropdown-menu{
+  font-size:22px;
+  width:250px;
+  left:50%;
+  margin-left:-100px;
+};
+.dropProj{
+  margin-top:50px;
+}
+.projBtn{
+  height:100px;
+}
+
+#snackbar {
+    font-size:20px;
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+
+#showcaseBox{
+  background-image: url("../img/compScreen.png");
+  background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  border-radius:15px;
+  border-top:15px solid #323232;
+  height: 800px;
+  width:95%;
+  margin:auto;
+  margin-top:50px;
+  padding:0px;
+}
+#showcaseFrame{
+  margin:0 auto;
+  /*border:5px solid black;*/
+  border-radius: 20px;
+  padding-top:0px;
+  padding-bottom:25px;
+
+}
+
+
+
+
+/*   CONTACT    */
+
+
+#contact{
+  background-attachment: fixed;
+  background-image:url("../img/greenTexture.jpg");
+  background-size:cover;
+  background-position:center;
+  background-blend-mode: multiply;
+  background-color: #aaa7a7;
+  border-top:5px solid white;
+  height:600px;
+  margin-top:-30px;
+}
+#contact h1{
+  color:white;
+  font-family:'Permanent Marker';
+  font-size:38px;
+  padding-top: 50px;
+}
+.mailMe{
+  margin-top:125px;
+  margin-left:50px;
+  margin-right:-100px;
+}
+.mailMe a{
+  color:white;
+}
+form label{
+  color:white;
+}
+form label:first-child{
+  margin-top:75px;
+}
+label{
+  font-size:2em;
+}
+#msgSubmit{
+  color:black;
+  font-size:22px;
+  margin-top:20px;
+}
+
+
+
+
+
+/*  MQ  TABLET  */
+
+
+@media (min-width: 420px) and (max-width: 768px){
+
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+
+  nav{
+    width:95%;
+  }
+  #home{
+    width:100%;
+  }
+  .homeImg{
+    height:250px;
+    width:80%;
+    margin-left:-300px;
+    margin-right:-100px;
+    margin-top:0px;
+    margin-bottom:20px;
+  }
+  .homeTxt{
+    margin-top:75px;
+    margin-left:120px;
+    margin-right:-100px;
+  }
+  .homeTxt h1, .homeTxt h3{
+    margin-left:-175px;
+  }
+
+  #about{
+    height:1000px;
+  }
+
+  .stats, .statsIcons{
+    list-style-type: none;
+    color:white;
+    font-size: 20px;
+    font-weight:bold;
+    line-height: 1.5;
+    margin-left:10px;
+  }
+  .statsIcons{
+    line-height: 3;
+  }
+  .goodHead{
+    margin-top:0px;
+    margin-left:-20px;
+    font-size:28px;
+  }
+  .goodHead h2{
+    font-size:28px;
+  }
+.stats li{
+  margin-left:20px;
+}
+  .lang{
+    text-align:center;
+  }
+  .techniques{
+    text-align:center;
+  }
+
+
+
+
+
+
+  .mailMe{
+    margin-left:0px;
+    margin-right:0px;
+  }
+}
+
+
+
+/*  MQ   PHONE   */
+
+@media(max-width:420px){
+
+  nav{
+    width:100%;
+  }
+  .navbar button{
+    margin-left: -100px;
+  }
+  #home{
+    height:600px;
+  }
+  .homeBox{
+    padding-left:0px;
+  }
+  .homeImg{
+    height:200px;
+    width:100%;
+    margin-top:0px;
+    margin-bottom:20px;
+  }
+  .homeTxt{
+    margin-top:25px;
+    margin-left:0px;
+    width:100%;
+  }
+  .homeTxt h3{
+    margin-bottom:40px;
+  }
+  #about{
+    height:1000px;
+  }
+.shortBio{
+  padding-top:-40px;
+}
+  .statsIcons{
+    font-size:12px;
+    line-height: 8;
+    margin-right:2px;
+    margin-top:18px;
+  }
+  .stats{
+    font-size:18px;
+  }
+  .goodHead{
+    margin-top:-100px;
+  }
+  .lang{
+    font-size:20px;
+  }
+  .techniques{
+    font-size:20px;
+    line-height: 1;
+  }
+  .techniques li:first-child{
+    margin-top:-15px;
+  }
+  #myWork h1{
+    width:40%;
+  }
+  .phoneFrame{
+    margin-left:-100px;
+  }
+  .tabletFrame{
+    margin-left:-40px;
+    margin-right:15px;
+  }
+  #contact{
+    height:900px;
+  }
+  .mailMe{
+    margin:0;
+    margin-top:20px;
+    margin-bottom:10px;
+  }
+  form label:first-child{
+    margin-top:10px;
+  }
+  #msgSubmit2{
+    font-size:20px;
+    margin:0 auto;
+  }
+}

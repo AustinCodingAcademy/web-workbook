@@ -1,0 +1,150 @@
+@font-face{
+  font-family:'aramis';
+  src:url('fonts/aramisi.ttf');
+  format('opentype')'';
+}
+
+body{
+  font-family:sans-serif;
+  background-color: #060709;
+  color:white;
+  width:90%;
+  margin:auto;
+}
+
+/* HEADER */
+
+.tagline{
+  font-family:'aramis';
+  font-style: italic;
+}
+
+/*  MAIN  */
+
+
+
+p{
+  font-size:30px;
+}
+.bgImg{
+  border-radius:15px;
+  background-image:url('../imgs/oil.jpg');
+  background-position:center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  height:500px;
+}
+.services{
+  padding-top:40px;
+}
+
+
+
+/* FOOTER */
+
+.info{
+  margin-top:-650px;
+  color:white;
+  text-shadow: 3px 3px 3px black;
+}
+.contact{
+  padding-top:50px;
+}
+a{
+  font-size:20px;
+  padding:10px;
+  background-color:white;
+  text-shadow:none;
+  border:2px solid white;
+  border-radius:10px;
+  opacity:.5;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration:none;
+  opacity:.8;
+  font-weight: bold;
+}
+.email{
+  padding-top:20px;
+}
+footer p{
+  font-size:18px;
+  font-family:'caladea';
+}
+
+
+
+
+/*  MQ  TABLET  */
+
+@media(min-width:420px) and (max-width:768px){
+  .logo{
+    height:150px;
+    margin:0 auto;
+  }
+  .diamond2{
+    display:none;
+  }
+  .services{
+    font-size:24px;
+  }
+  p{
+    text-align: center;
+  }
+  #lease{
+    margin-top:-20px;
+    text-align:center;
+
+  }
+  #run, #due{
+    margin-bottom:-30px;
+  }
+  main{
+    margin-bottom: -100px;
+  }
+  footer p{
+    font-size:22px;
+  }
+}
+
+/*  MQ  MOBILE */
+
+@media(max-width: 420px) {
+  .logo{
+    height:100px;
+    margin: 0 auto;
+  }
+  .diamond2{
+    display:none;
+  }
+  h1{
+    font-size:20px;
+  }
+  h3{
+    font-size:16px;
+  }
+  p{
+    font-size:20px;
+    text-align: center;
+  }
+  .services{
+    padding-top:15px;
+    text-align:center
+  }
+  #lease{
+    margin-top:50px;
+  }
+  #run, #due{
+    margin-bottom:-5px;
+  }
+  #lease, #run, #research, #due, #curative{
+    text-align:center;
+  }
+  main{
+    margin-bottom:-130px;
+  }
+  footer{
+    margin-top:-100px;
+  }
+}

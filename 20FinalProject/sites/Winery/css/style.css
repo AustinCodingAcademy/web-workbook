@@ -1,0 +1,291 @@
+body{
+  /*  Got random scroll bar somewhere
+    so shrank the body width */
+  width:97%;
+  margin:auto;
+}
+.navbar{
+  margin-bottom:0px;
+  width:90%;
+  margin:auto;
+}
+.navbar-brand{
+  font-size:24px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.navbar a{
+  color:white;
+  opacity:.7;
+}
+.navbar a:hover{
+  color:black;
+  font-weight:bold;
+}
+
+/*  HERO 1  */
+
+.hero1{
+  background-image:url("../img/hero1.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: #aaa7a7;
+  height:640px;
+  color:white;
+  margin-bottom:0px;
+}
+.fImg{
+  opacity:.7;
+  width:80%;
+  margin:auto;
+}
+.hero1 p{
+  margin-top:50px;
+  font-size:22px;
+  font-family: sans;
+  font-style: italic;
+}
+i{
+  color:white;
+  height:25px;
+  margin-top:-20px;
+  letter-spacing: 10px;
+}
+
+
+/* ESTABLISHED  */
+
+.established{
+  width:100%;
+}
+.est{
+  font-family:sans;
+  font-size:16px;
+  color:grey;
+  font-style: italic;
+  margin-top:100px;
+  margin-bottom:40px;
+}
+.est span{
+  font-size:30px;
+  color:darkgrey;
+}
+.estTxt{
+  width:70%;
+  margin:auto;
+  margin-top:150px;
+  margin-bottom:30px;
+}
+.estTxt h4{
+  font-size:30px;
+  font-style: italic;
+  margin-bottom:45px;
+  font-family:sans;
+}
+.estTxt p{
+  font-size:19px;
+  color:grey;
+  font-family:sans;
+}
+.signature{
+  height:80px;
+  margin:auto;
+}
+.powerwasher{
+  object-fit:none;
+  object-position:center;
+  width:100%;
+  height:600px;
+}
+.powerwasherB{
+  margin:auto;
+  width:100%;
+}
+
+/* HERO 2  */
+
+.hero2{
+  background-image:url("../img/wine13.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: #aaa7a7;
+  height:500px;
+  color:white;
+  margin-top:600px;
+}
+.hero2Txt{
+  width:60%;
+  margin-left:250px;
+}
+.producingTxt{
+  font-style: italic;
+  font-family:sans;
+  font-size:36px;
+  margin-top:100px;
+}
+.hero2Txt p{
+  margin-top:40px;
+  font-size:16px;
+}
+
+/*  WINE BOTTLE COLUMNS  */
+
+.wineBottles{
+  margin-top:-30px;
+  margin-bottom:50px;
+}
+.wineBottles img{
+  height:480px;
+  margin:auto;
+}
+.wineBottles h4{
+  font-size:26px;
+  font-family:sans;
+  font-style: italic;
+  margin-top:0px;
+  padding-top:40px;
+  border-top:solid 1px lightgrey;
+  margin-bottom:15px;
+}
+.wineBottles p{
+  font-family:sans;
+  font-style: italic;
+  font-size:18px;
+  margin-bottom:30px;
+}
+.visitLink a{
+  margin-top:20px;
+  color:white;
+  background-color:#91a05c;
+  padding:10px 30px;
+  font-weight: bold;
+}
+.visitLink a:hover{
+  color:white;
+  text-decoration:none;
+}
+
+
+
+
+/*  MQ  TABLET   */
+
+@media (max-width:768px) and (min-width:420px){
+
+  body{
+    width:100%;
+  }
+  .icon-bar{
+    color:black;
+    background-color:white;
+  }
+  .hero1{
+    height:1024px;
+  }
+  i{
+    margin-top:50px;
+
+  }
+  .powerwasherB{
+    margin-left:15px;
+  }
+  .jumboTxt{
+    margin-top:225px;
+  }
+  .estTxt{
+    margin-top:-50px;
+  }
+  .signature{
+    margin-bottom:30px;
+  }
+
+  .hero2{
+    height:800px;
+    margin-top:0px;
+  }
+  .hero2Txt{
+    margin:auto;
+    margin-top:200px;
+  }
+  .producingTxt{
+    font-size:35px;
+  }
+
+
+  .wineBottles img{
+    height:300px;
+  }
+  .leftWine, .rightWine{
+    margin-top:42px;
+  }
+
+}
+
+
+
+
+/*  MQ  PHONE   */
+
+@media (max-width:420px){
+
+  body{
+    width:100%;
+  }
+  .icon-bar{
+    color:black;
+    background-color:white;
+  }
+  .hero1{
+    height:700px;
+    background-attachment: local;
+    margin-bottom:0px;
+  }
+  i{
+    margin-top:50px;
+  }
+  .powerwasherB{
+    margin-left:12px;
+  }
+  .jumboTxt{
+    width:90%;
+    margin:auto;
+  }
+  .jumboTxt p{
+    font-size:17px;
+  }
+  .estTxt{
+    margin-top:-75px;
+    /*height:200px;*/
+    width:100%;
+  }
+  .hero2Txt{
+    margin-top:-300px;
+  }
+  .hero2{
+    margin-top:10px;
+    background-attachment: local;
+  }
+  .hero2Txt{
+    margin:0 auto;
+    width:90%;
+  }
+  .producingTxt{
+    margin-top:40px;
+    font-size:28px;
+  }
+  .wineBottles div{
+    margin-bottom:50px;
+  }
+  .wineBottles img{
+    height:260px;
+  }
+
+
+
+}

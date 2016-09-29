@@ -1,10 +1,238 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<html lang="en">
 
+<head>
+  <title>J. Soape | Web Development &amp; Design</title>
+  <!--    Bootstrap  -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--Font Awesome-->
+  <script src="https://use.fontawesome.com/2f9632c084.js"></script>
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Bungee|Chewy|Oleo+Script|Unica+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+  <!--    Link to CSS        -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <meta charset="utf-8">
+  <!--Mobile-first-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <!--   NAV  BAR   -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="mailto:jonathansoape@gmail.com">SOAPE <i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav pull-right">
+          <li class="active homeNav"><a href="#home">Home</a></li>
+          <li><a href="#about">Bio</a></li>
+          <li><a href="#myWork">My Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--   MAIN   -->
+
+  <main>
+
+    <!--  HOME   -->
+    <section id="home">
+      <div class="row">
+        <div class="homeBox">
+          <div class="col-lg-4 visible-lg">
+            <img class="homeImg" src="img/blueEnergy.jpg">
+          </div>
+
+          <div class="hero1 text-center col-xs-12 col-lg-8">
+            <div class="homeTxt">
+              <h3>-- Jonathan Soape --</h3>
+              <div class="text-center col-xs-12 hidden-lg">
+                <img class="homeImg" src="img/blueEnergy.jpg">
+              </div>
+              <h1>Web Development <br>&amp;<br> Design</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!--  ABOUT  -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="text-center col-sm-12 col-lg-4">
+            <h2 class="shortBio">A Short Bio</h2>
+          </div>
+          <div class="goodHead text-right col-lg-6 visible-lg">
+            <h2>Good With</h2>
+          </div>
+        </div>
+        <div class="row">
+          <!-- ICONS   -->
+          <ul class="statsIcons text-right col-xs-1">
+            <li><i class="fa fa-university fa-2x" aria-hidden="true"></i></li>
+            <li><i class="fa fa-cogs fa-2x" aria-hidden="true"></i></li>
+            <li><i class="fa fa-music fa-2x" aria-hidden="true"></i></li>
+            <li><i class="fa fa-globe fa-2x" aria-hidden="true"></i></li>
+          </ul>
+
+          <!--  INFO  -->
+          <ul class="stats col-xs-10 col-lg-6">
+            <li>Graduated from the University of Texas, Austin</li>
+            <li>Shifted gears from studying people to dogs to computers</li>
+            <li>Enjoys music, whether listening or creating</li>
+            <li>Hopes to have a positive impact on the world</li>
+          </ul>
+          <div class="goodHead text-center col-xs-12 col-sm-12 hidden-lg">
+            <h2>Good With</h2>
+          </div>
+          <div class="goodWith col-xs-4 col-sm-6  col-lg-2">
+            <ul class="lang text-center">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Bootstrap</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+            </ul>
+          </div>
+          <div class="goodWith col-xs-6 col-sm-4 col-lg-3">
+            <ul class="techniques text-center">
+              <li>Semantic Markup</li>
+              <li class="midLI">Responsive Design</li>
+              <li>Friendly UI/UX</li>
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <!--  MY WORK   -->
+    <section id="myWork">
+      <div class="row">
+        <div class="text-center col-xs-12 ">
+          <h1>MY WORK</h1>
+        </div>
+      </div>
+
+      <!--  SHOWCASE   -->
+
+      <!--  iFrame size buttons   -->
+      <div class="row frameSize text-center">
+        <div class="col-xs-4">
+          <div class="sizeBtn">
+            <a class="phoneFrame" href="javascript:void(0)">Phone</a>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="sizeBtn">
+            <a class="tabletFrame" href="javascript:void(0)">Tablet</a>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="sizeBtn">
+            <a class="compFrame" href="javascript:void(0)">Computer</a>
+          </div>
+        </div>
+        <!-- DROPDOWN -->
+        <div class="col-xs-12 text-center">
+          <div class="dropdown dropProj">
+            <button class="btn btn-lg projBtn dropdown-toggle" type="button" data-toggle="dropdown">Project <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="sites/Winery/index.html" target="showcase" onclick="myFunction()">Foundry Winery</a></li>
+              <li><a href="sites/DiamondOilGas/index.html"  target="showcase" onclick="myFunction()">Diamond Oil &amp; Gas</a></li>
+              <li><a href="sites/TheLocal/index.html" target="showcase" onclick="myFunction()">The Local Pub &amp; Patio</a></li>
+              <li><a href="resume.html" target="showcase" onclick="myFunction()">My Resum&eacute;</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <div id="snackbar">See how it looks on different devices!</div>
+
+      <!-- Showcase iFrame    -->
+      <div class="row text-center">
+        <div class="col-md-12">
+          <div id="showcaseBox">
+            <iframe id="showcaseFrame" src="sites/Winery/index.html" name="showcase" height="650px" width="90%"></iframe>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!--  CONTACT    -->
+    <section id="contact">
+      <h1 class="text-center">Let's get in touch!</h1>
+      <div class="container">
+      <div class="row">
+        <div class="mailMe text-center col-xs-12 col-sm-3">
+          <a href="mailto:jonathansoape@gmail.com"><i class="fa fa-envelope fa-5x" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <form class="text-center" action="https://docs.google.com/forms/d/e/1FAIpQLSfoBqqt5nIE3FSdNRXYZ4t5FS5hKCeXCIcVlONhocfUjRoYag/formResponse" method="POST" target="_self" onsubmit="">
+
+          <div class="col-sm-4">
+            <label for="entry_121080959">Name</label>
+            <br>
+            <input type="text" name="entry.121080959" value="" dir="auto" aria-label="Name  " title="">
+            <br>
+            <br>
+            <label for="entry_1035065727">Email</label>
+            <br>
+            <input type="text" name="entry.1035065727" value="" dir="auto" aria-label="Email  " title="">
+            <br>
+            <input class="hidden-xs" id="msgSubmit" type="submit" name="submit" value="Submit">
+
+          </div>
+
+          <div class="col-sm-4">
+            <label for="entry_1951335571">Message</label>
+            <br>
+            <textarea name="entry.1951335571" rows="8" cols="30" dir="auto" aria-label="Message  "></textarea>
+            <br>
+            <input type="hidden" name="draftResponse" value="[,,&quot;1676535854537575021&quot;]">
+            <input type="hidden" name="pageHistory" value="0">
+            <input type="hidden" name="fbzx" value="1676535854537575021">
+            <label for="emailReceipt" style="display:inline;"></label>
+            <br>
+            <input class="visible-xs" id="msgSubmit2" type="submit" name="submit" value="Submit">
+          </div>
+        </form>
+
+      </div>
+    </div>
+    </section>
+
+  </main>
+  <!-- jQuery  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Bootstrap  -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Parallax -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="/path/to/parallax.js"></script>
+  <!-- My  JavaScript  -->
+  <script src="js/script.js"></script>
 </body>
+
 </html>
