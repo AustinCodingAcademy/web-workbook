@@ -46,6 +46,10 @@ h2 {
   font-size: 18px;
 }
 
+.navbar a:hover {
+  color: #5a5a5a;
+}
+
 .navbar-right>li>a {
   padding-left: -20px;
 }
@@ -103,13 +107,13 @@ button.navbar-toggle {
 }*/
 
 #hero {
-  background-image: url("https://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/20/207/207860/cvoqi1x0rzaybsirmto7v207s3c1xlr4s0c0vmvog4e8idvd9dygufvsg2mjktxv-f.jpg?1413292065");
-  background-position: center;
+  background-image: url("../img/bg.jpg");
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-blend-mode: multiply;
-  background-color: #ccc;
+  background-color: #777;
   height: 100vh;
 }
 
@@ -164,7 +168,7 @@ button.navbar-toggle {
 
 #beers {
   height: 80px;
-  background-color: #baa76a;
+  background-color: #5a5a5a;
   margin: 0 auto;
   text-align: center;
 }
@@ -186,6 +190,10 @@ button.navbar-toggle {
   max-width: 70%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.beerFig h5 {
+  color: #5a5a5a;
 }
 
 .beerFig img {
@@ -226,6 +234,7 @@ button.navbar-toggle {
 
 #events a:hover {
   text-decoration: none;
+  color: #aeaeae;
 }
 
 #events p {
@@ -241,6 +250,7 @@ button.navbar-toggle {
 #store h3 {
   font-size: 36px;
   margin-top: 92px;
+  color: #5a5a5a;
 }
 
 #store a {
@@ -281,7 +291,14 @@ footer li {
   display: inline;
 }
 
-footer h6 {
+footer h5 {
+  color: #5a5a5a;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.navbot a:hover {
   color: #5a5a5a;
 }
 
@@ -347,6 +364,12 @@ footer h6 {
     float: left;
     margin-top: 20px;
     clear: both;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .purchaseSect {
+    float: left;
+    clear: both;
   }
   .footR li:last-of-type {
     display: inline;
@@ -395,6 +418,12 @@ footer h6 {
   .storyText p {
     font-size: 14px;
   }
+  #store h3 {
+    font-size: 30px;
+  }
+  .navbot a {
+    font-size: 12px;
+  }
   .footR {
     float: left;
     margin-left: 7%;
@@ -407,10 +436,27 @@ footer h6 {
     float: left;
     margin-top: 20px;
     margin-bottom: 50px;
+  }
+  .pipe {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 @media (max-width: 320px) {
   .beerFig {
     max-height: 550px;
+  }
+  .navbot a {
+    font-size: 10px;
+  }
+  #store a {
+    font-size: 16px;
+  }
+  #store h3 {
+    font-size: 24px;
+  }
+  .ion-chevron-right {
+    font-size: 16px;
   }
 }
