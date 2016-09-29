@@ -1,5 +1,5 @@
-body {
-    margin-top: 30px;
+#mynav {
+    opacity: 0.9;
 }
 
 .mybrand {
@@ -55,17 +55,38 @@ body {
     margin-bottom: 3%;
 }
 
+.aboutbox {
+    border: 1px solid #bbb;
+    background-color: #bbb;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 5%;
+}
+
+.aboutbox p {
+    width: 90%;
+    margin: 0 auto 5% auto;
+}
+
+.aboutbox br {
+    padding-top: 2%;
+}
+
 .youshouldknow h1 {
-    margin-left: 15%;
+    text-align: center;
 }
 
 .aboutlist {
-    width: 80%;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 100;
+    padding-left: 3%;
 }
 
-.youshouldknow {
+.aboutlist li {
+    margin-bottom: 4%;
+}
+
+.myskills {
     border-right: 10px solid #bbb;
 }
 
@@ -75,7 +96,7 @@ body {
 
 .skilllist {
     list-style: none;
-    padding-left: 0;
+    padding: 0 5% 0 0;
 }
 
 .skillbox p {
@@ -111,10 +132,30 @@ body {
     color: #bbb;
     padding: 5% 10%;
     border-radius: 10px;
+    margin-top: -3%;
+    border: 0;
+}
+
+.btn-info:focus {
+    background-color: #03527c;
+    border-color: #03527c;
 }
 
 .myctabutton:hover {
     text-decoration: none;
+    background-color: #03527c;
+}
+
+.panel {
+    margin-right: 3%;
+}
+
+.form-group input, .form-group textarea {
+    width: 90%;
+}
+
+.form-group label {
+    display: block;
 }
 
 #work {
@@ -164,12 +205,24 @@ body {
 }
 
 .workbooktext p {
-    width: 55%;
     margin: 0 auto;
 }
 
 .workbooklink span {
     color: #23527c;
+}
+
+.workbooktext:hover {
+    background-blend-mode: multiply;
+    background-color: #555;
+}
+
+.workbooktext:hover p {
+    color: #03527c;
+}
+
+.workbooktext:hover span {
+    color: #fff;
 }
 
 .bannertext {
@@ -207,7 +260,69 @@ body {
     margin: 0 2%;
 }
 
+#contact iframe {
+    margin-top: 5%;
+}
+
 #contact p {
     margin-top: 3%;
     text-align: center;
 }
+
+
+
+/*The following is for mobile*/
+
+    @media (max-width: 767px) {
+        .herotext h1 {
+            padding-top: 65%;
+        }
+
+        .myctatext {
+            font-size: 30px;
+            width: 80%;
+        }
+
+        .myctabutton {
+            font-size: 30px;
+            float: right;
+            margin-right: 5%;
+        }
+
+        .workbanner {
+            height: 400px;
+        }
+
+        .bannertext p {
+            font-size: 20px;
+        }
+
+        .workbooktext p {
+            font-size: 20px;
+            width: 80%;
+            margin-top: 10%;
+        }
+    }
+
+
+
+/*The following is for tablets*/
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        .herotext h1 {
+            padding-top: 25%;
+        }
+
+        .workbanner {
+            height: 400px;
+        }
+
+        .workbooktext p {
+            margin-top: 3%;
+        }
+
+        .myctabutton {
+            float: right;
+            margin: 25% 5% 0 0;
+        }
+    }

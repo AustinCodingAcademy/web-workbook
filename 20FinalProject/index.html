@@ -66,21 +66,16 @@
     <section id="about">
         <div class="container">
             <div class="row">
-                <div class="aboutme col-lg-6 col-lg-offset-3">
-                    <h1>But you can call me Chris.</h1>
-                    <p>I craft customized, responsive web spaces within the Bootstrap framework. I value quality storytelling, and I strive to tell yours with honor and grace.</p>
+                <div class="aboutme col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                    <div class="aboutbox">
+                        <h1>But you can call me Chris.</h1>
+                        <p>I craft customized, responsive web spaces within the Bootstrap framework.
+                        <br>I value quality storytelling, and I strive to tell yours with honor and grace.</p>
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <article class="youshouldknow col-sm-8 col-lg-7">
-                    <h1>You Should Know</h1>
-                    <ul class="aboutlist">
-                        <li>I fear robotic warfare but beckon the robotic athletics boom that the arms race will yield.</li>
-                        <li>My interest in fantasy sports dwarfs my interest in sports proper.</li>
-                        <li>Many different games give many different peoples a reason to live.</li>
-                    </ul>
-                </article>
-                <aside class="myskills col-sm-4 col-lg-5">
+                <article class="myskills col-sm-6">
                     <h1>Perks</h1>
                     <ul class="skilllist">
                         <li class="htmlskill skillbox">
@@ -114,6 +109,14 @@
                             </div>
                         </li>
                     </ul>
+                </article>
+                <aside class="youshouldknow col-sm-6">
+                    <h1>You Should Know</h1>
+                    <ul class="aboutlist fa-ul">
+                        <li><i class="fa-li fa fa-spinner fa-pulse"></i>I fear robotic warfare but beckon the robotic athletics boom that the arms race will yield.</li>
+                        <li><i class="fa-li fa fa-spinner fa-pulse"></i>My interest in fantasy sports dwarfs my interest in sports proper.</li>
+                        <li><i class="fa-li fa fa-spinner fa-pulse"></i>Many different games give many different peoples a reason to live.</li>
+                    </ul>
                 </aside>
             </div>
     </section>
@@ -126,10 +129,67 @@
                     <p>Already like the cut of my jib?</p>
                 </article>
                 <aside class="myctaaction col-sm-4">
-                    <a class="myctabutton" href="mailto:drcperk@gmail.com">Email me</a>
+
+                    <!-- MODAL BUTTON -->
+                    <button type="button" class="myctabutton btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Get at me</button>
+
+                    <!-- MODAL -->
+                    <div id="myModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Contact me!</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-12">
+                                                <div class="panel panel-default">
+                                                    <div class="panel-heading">
+                                                        <h3 class="panel-title"><i class="fa fa-envelope"></i> What story can I help you tell?</h3>
+                                                    </div>
+                                                    <div class="panel-body">
+                                                        <form action="https://docs.google.com/forms/d/e/1FAIpQLSf3Eu8oik5MFzRrHWTpGVmC_eH94Iteg7uH4L9RjCswBgiAzQ/formResponse" method="POST" target="_self" onsubmit="">
+                                                            <div class="form-group">
+                                                                <label for="entry_1289981596">Name:</label>
+                                                                <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                                                                <input type="text" name="entry.1289981596" value="" dir="auto" aria-label="Name:  " aria-required="true" required title="">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="entry_668350447">Email:</label>
+                                                                <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+                                                                <input type="text" name="entry.668350447" value="" dir="auto" aria-label="Email:  " aria-required="true" required title="">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="entry_112364193">Subject:</label>
+                                                                <input type="text" name="entry.112364193" value="" dir="auto" aria-label="Subject:  " title="">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label for="entry_311389325">Message:</label>
+                                                                <textarea name="entry.311389325" rows="8" cols="0" dir="auto" aria-label="Message:  "></textarea>
+                                                            </div>
+                                                            <input type="hidden" name="draftResponse" value="[,,&quot;314437414554932320&quot;]
+">
+                                                            <input type="hidden" name="pageHistory" value="0">
+                                                            <input type="hidden" name="fbzx" value="314437414554932320">
+                                                            <label for="emailReceipt" style="display:inline;"></label>
+                                                            <input type="submit" name="submit" value="Submit" class="btn btn-default btn-primary btn-lg btn-block">
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </aside>
+                </div>
             </div>
-        </div>
     </section>
 
     <!-- MY WORK SECTION -->
@@ -155,7 +215,8 @@
             <li>
                 <a class="workbooklink" href="#">
                     <div class="workbooktext">
-                        <p>See how far I've progressed by perusing my <span>HTML/CSS Intro Workbook</span></p>
+                        <p>See how far I've progressed by perusing my
+                        <br><span>HTML/CSS Intro Workbook</span></p>
                     </div>
                 </a>
             </li>
@@ -172,12 +233,17 @@
         <div class="container">
             <div class="row">
                 <div class="socialicons">
-                    <a href="#"><i class="fa fa-envelope fa-5x" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-linkedin fa-5x" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-github fa-5x" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-twitter fa-5x" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-facebook fa-5x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-envelope fa-4x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin fa-4x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-facebook fa-4x" aria-hidden="true"></i></a>
                 </div>
+            </div>
+            <div class="row visible-xs">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d440899.74136075325!2d-98.03428769069973!3d30.30746098554706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sAustin%2C+TX!5e0!3m2!1sen!2sus!4v1475120393047" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="row">
                 <p>©2016 Christopher Perkins, All Rights Reserved.</p>
             </div>
         </div>
