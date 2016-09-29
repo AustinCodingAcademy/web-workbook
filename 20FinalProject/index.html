@@ -4,8 +4,11 @@
   <title>YoFerret</title>
   <link rel="stylesheet" href="./css/css-reset.css">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <script src="https://use.fontawesome.com/2cde266660.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/smooth_scroll.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
@@ -13,147 +16,162 @@
     <nav class="navbar navbar-fixed-top navbar-inverse col-xs-12">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#home"><img src="./logo.png"></a>
+          <!-- <a class="navbar-brand" href="#home"><img src="./logo.png"></a> -->
+          <a class="navbar-brand" href="#hero"><h2>Yo<span class="red">Ferret</span></h2></a>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="collapse navbar-collapse" id="navbar">
           <ul class="nav navbar-nav pull-right">
-            <li class="active"><a href="#about">About</a></li>
-            <li><a href="#price">Pricing</a></li>
-            <li><a href="#try">Try For Free</a></li>
+          <!-- <ul class="nav navbar-nav pull-right"> -->
+            <li><a href="#what">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a id="try" href="#try">Try For Free</a></li>
             <li><a href="#login">Login</a></li>
           </ul>
         </div>
       </div>
     </nav>
   <div class="container-fluid">
-    <div class="row">
-      <div class ="hero col-xs-12">
-        <div class="title">
+    <div id="hero" class="row">
+      <div class="title">
           <!-- <img src="./logo.png"> -->
           <!-- <h1>Be on top of what your customers are saying about your products</h1> -->
-          <h1>Stay on top of your Amazon product reviews</h1>
-          <p>Review notifications and analysis tools made easy</p>
-        <div class="bubble_box">
-           <a class="bubble free_trial">FREE TRIAL</a>
-          <a class="bubble signup">SIGNUP NOW</a>
+        <h1>Stay on top of your Amazon product reviews</h1>
+        <p>Review notifications and analysis tools made easy</p>
+      <div class="bubble_box">
+        <a class="bubble free_trial">FREE TRIAL</a>
+        <a class="bubble signup">SIGNUP NOW</a>
+      </div>
+    </div>
+    <div class="learn">
+      <a class="scroll" href="#what">Learn About YoFerret</a>
+    </div>
+  </div>
+
+<div id="what" class="row">
+    <div class="triangle lt-bottom col-xs-offset-9"></div>
+    <div class="title row">
+      <h2>What's on YoFerret?</h2>
+    </div>
+        <div class = "helper col-xs-offset-2 col-xs-8">
+        <div class ="what_left what_box col-md-4">
+          <div class = "what_content">
+            <i class="fa fa-4x fa-bell-o" aria-hidden="true"></i>
+            <h3>Review Notifications</h3>
+            <p>Automatic Review Notifications</p>
+            <p>Let us do the hard work</p>
+            <p>As a manufacturer, knowing when customers leave feedback about your product is important yet time consuming.
+              YoFerret will send you an email notification anytime feedback is left for your product.</p>
+          </div>
+        </div>
+
+      <div class ="what_center what_box col-md-4">
+        <div class = "what_content">
+          <i class="fa fa-4x fa-briefcase" aria-hidden="true"></i>
+          <h3>Review Analysis Tools</h3>
+          <p>Find trends in the text</p>
+          <p>We provide tools to give you the ablity to search through all reviews of a prodict and search for keywords</p>
         </div>
       </div>
-      <div class="learn">
-        <a>Learn About YoFerret</a>
+
+      <div class ="what_right what_box col-md-4">
+        <div class = "what_content">
+          <i class="fa fa-4x fa-search" aria-hidden="true"></i>
+          <h3>Competitive Insight</h3>
+          <p>Learn how your competitors are doing</p>
+          <p>Knowing what your customers are saying about your competition is an amazing resource.
+            By also watching your competitions' products you'll get insight on what they're doing right and wrong.
+          Use this to help develop your product features and marketing material.</p>
+        </div>
       </div>
     </div>
-  </div>
-
-<div class="row">
-  <div class="what">
-    <div class="triangle rt-bottom col-xs-offset-9"></div>
-    <div class ="what_left">
-      <h2>What's on YoFerret?</h2>
-      <div class = "notifications">
-        <h3>Amazon review notifications</h3>
-        <p>Automated new review notifications</p>
-        <p>Ipsum Lorum yada yada yada yada I like turtles</p>
-      </div>
-      <div class = "notifications">
-        <h3>Review analysis tools</h3>
-        <p>Get better insight on customers are saying </p>
-        <p>You have the ablity to search through every review ever posted on your product and search for keywords</p>
-      </div>
-    </div>
-
-    <div class ="what_right">
-      <div>
-
-      </div>
-      <!-- <table>
-        <tr>
-          <td class="mini one"></td>
-          <td class="mini two"></td>
-          <td class="mini three"></td>
-          <td class="mini four"></td>
-          <td class="mini five"></td>
-        </tr>
-        <tr>
-          <td class="mini six"></td>
-          <td class="mini seven"></td>
-          <td class="mini eight"></td>
-          <td class="mini nine"></td>
-          <td class="mini ten"></td>
-        </tr>
-        <tr>
-          <td class="mini one_ten"></td>
-          <td class="mini two_ten"></td>
-          <td class="mini three_ten"></td>
-          <td class="mini four_ten"></td>
-          <td class="mini five_ten"></td>
-        </tr>
-        <tr>
-          <td class="mini six_ten"></td>
-          <td class="mini seven_ten"></td>
-          <td class="mini eight_ten"></td>
-          <td class="mini nine_ten"></td>
-          <td class="mini ten_ten"></td>
-        </tr>
-        <tr>
-          <td class="mini one_ten_ten"></td>
-          <td class="mini two_ten_ten"></td>
-          <td class="mini three_ten_ten"></td>
-          <td class="mini four_ten_ten"></td>
-          <td class="mini five_ten_ten"></td>
-        </tr>
-      </table> -->
-    </div>
-  </div>
 </div>
 
-<div class="row">
-  <div class="how">
-    <div class ="text">
-      <h2>It's easy</h2>
-      <div class = "import">
-        <h3>Import</h3>
-        <p>Import your product list and we'll import it</p>
-        <p>We also give you search capabilities</p>
-      </div>
-      <div class = "who">
-        <h3>Define your mailing list</h3>
-        <p>Get better insight on customers are saying </p>
-        <p>Ipsum Lorum yada yada yada yada I like turtles</p>
-      </div>
-  </div>
-</div>
-</div>
+<div id= "contact" class="row">
+  <div class="triangle rt-bottom col-xs-offset-2"></div>
+  <div class="col-xs-offset-1 col-xs-5">
+
+    <div class ="form">
+      <h2>Questions?</h2>
+      <h2>Give us a shout.</h2>
 
 
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSfI9jXXb25CMKZE6Kxj-bPi_8PuQcPJd5vQYkFxpSqKVi98Kg/formResponse"
+      method="POST" target="_self" onsubmit="">
+        <div class ="text_area row">
+          <div class = "col-xs-6">
+            <label for="entry_642608690">Name: *</label>
+            <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+              <input type="text" name="entry.642608690" size = "28" value="" dir="auto" aria-label="Name:  " aria-required="true" required title="">
+          </div>
+        <!-- <div class = "row"> -->
+          <div class = "col-xs-6">
+            <label for="entry_602860153">Company:</label>
+            <input type="text" name="entry.602860153" size = "28" value="" dir="auto"aria-label="Company  " title="">
+          </div>
+        </div>
 
-<div class="row">
-    <form class="pad col-sm-offset-4 col-sm-4 col-sm-offset-4" action="https://docs.google.com/forms/d/e/1FAIpQLSfpa1CD9o_G_0T-WyyQjH29gKvnlNsMWwHHPhrWt7lMEhIFjg/formResponse"
-    method="POST" target="_self" onsubmit="">
-    <div class = "helper">
-      <div class="row">
-        <!-- <h1>Sign up for our newsletter!</h1> -->
-        <h1>SIGN UP FOR OUR NEWSLETTER!</h1>
-      </div>
-      <div class="row">
-        <label for="entry_1009832271"></label>
-        <input class="email col-xs-12" type="text" name="entry.1009832271" placeholder="ex. your@email.here"
-        value="" dir="auto" aria-label="What is your email?  " title="">
-        <input type="hidden" name="draftResponse" value="[,,&quot;-2067204444895161210&quot;]
-      ">
+        <!-- </div> -->
+        <label class = "text_area" for="entry_714940427">How can we help?*</label>
+        <label for="itemView.getDomIdToLabel()"
+        aria-label="(Required field)"></label>
+        <textarea rows="4" cols="62" name="entry.714940427" value="" dir="auto"
+        aria-label="How can we help you?" aria-required="true" required title="">
+        </textarea>
+        <!-- <input type="text" name="entry.714940427" value="" dir="auto"
+        aria-label="How can we help you?  " aria-required="true" required title=""> -->
+        <input type="hidden" name="draftResponse" value="[,,&quot;-493049837509205288&quot;">
         <input type="hidden" name="pageHistory" value="0">
-        <input type="hidden" name="fbzx" value="-2067204444895161210">
+        <input type="hidden" name="fbzx" value="-493049837509205288">
         <label for="emailReceipt" style="display:inline;"></label>
+        <!-- <div class="row"> -->
+          <!-- <input class = "submit col-xs-12" type="submit" name="submit" value="Send"> -->
+          <input class = "submit fa-input col-xs-12" type="submit" name="submit" value="&#xf1d9;  Send">
+        <!-- </div> -->
+      </form>
+
+    </div>
+  </div>
+  <div class="image col-xs-6">
+    <img src ="css/screenshots.png">
+  </div>
+
+</div>
+
+
+
+<div class="row" id="footer">
+  <div class="triangle lt-bottom col-xs-offset-9"></div>
+  <h2 class="logo">Yo<span class="red">Ferret</span></h2>
+
+  <div class="row">
+    <div class="helper">
+      <div class="half_box col-xs-6 location">
+        <span>
+          <i class="fa fa-2x fa-map-marker" aria-hidden="true"></i>
+          <span>Location</span>
+        </span>
+          <p>123 Sesame Street</p>
+          <p>Austin, TX 78704</p>
       </div>
-      <div class="row">
-        <input class = "submit col-xs-12" type="submit" name="submit" value="Submit">
+      <div class="half_box col-xs-6 contact_info">
+        <span>
+          <i class="fa fa-2x fa-phone" aria-hidden="true"></i>
+          <span>Sales & Support</span>
+        </span>
+            <p>555-555-5555</p>
       </div>
     </div>
-    </form>
+  </div>
+
+  <!-- <div class="row">
+    <span class="copy col-xs-12">Copyright (c) 2016 YoFerret. YoFerret All Rights Reserved.</span>
+  </div> -->
 </div>
 </div>
 
