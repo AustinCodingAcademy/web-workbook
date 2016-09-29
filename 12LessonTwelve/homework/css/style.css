@@ -1,0 +1,154 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-family: 'Lily Script One', cursive;
+  font-size: 50px;
+  text-align: center;
+  margin: 30px;
+}
+
+.mini {
+  width: 268px;
+  border: 1px #e0e0e0 solid;
+}
+
+.product {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.pad_box {
+  /*padding: 0px 20px;*/
+}
+
+
+
+.image_box img {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+
+.mini:hover > .image_box > .price {
+    background-color: #3A4543;
+    transition-duration: 0.5s;
+}
+
+.mini:hover > .image_box > img {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+
+.mini > .image_box > img {
+  transition-duration: 0.5s;
+}
+
+.prod, .row {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.price {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px;
+  background-color: #66d9c1;
+  color: white;
+  transition-duration: 0.5s;
+  z-index: 2;
+}
+
+.sale {
+  position: absolute;
+  top:0;
+  left: 0;
+  background-color: #ff4c4c;
+  font-weight: bold;
+  color: white;
+  padding: 5px;
+  z-index: 2;
+}
+
+.strike {
+  text-decoration: line-through;
+  font-size: 80%;
+}
+
+.prod {
+  padding-top: 15px;
+  height: 50px;
+  border-bottom: 1px #e0e0e0 solid;
+}
+
+.cart {
+  height: 100px;
+  padding-top: 40px;
+}
+
+.no-gutter{
+    margin: 0 auto;
+    padding-right:0;
+    padding-left:0;
+}
+
+.cart span {
+  color: white;
+  padding: 10px 10px;
+  background-color: #3A4543;
+  transition-duration: 0.5s;
+}
+
+.cart span:hover {
+  background-color: #66d9c1;
+}
+
+
+
+.image_box  {
+  height: 268px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  body {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+
+  .mini {
+    width: 268px;
+    border: 1px #e0e0e0 solid;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .mini {
+    width: 268px;
+    border: 1px #e0e0e0 solid;
+    margin-bottom: 30px;
+  }
+
+  .image_box  {
+    height: 268px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+}

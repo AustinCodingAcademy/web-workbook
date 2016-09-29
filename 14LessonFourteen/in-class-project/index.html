@@ -1,10 +1,135 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="./css/css-reset.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,400" rel="stylesheet">
+    <script src="https://use.fontawesome.com/2cde266660.js"></script>
 </head>
+
+<!-- <body class="container-fluid"> -->
 <body>
 
+  <nav class="navbar navbar-fixed-top navbar-inverse col-xs-12">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#home">F. Grapery</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav pull-right">
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonial">Testimonial</a></li>
+          <li><a href="#selection">Selection</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="row" id="home">
+    <div class="col-xs-12">
+      <div class="helper">
+        <img src="http://foundry.mediumra.re/img/wine1.png">
+        <p>&#8220;Without doubt, one of the most consistently high-quality wineries in the Barossa region&#8221;</p>
+        <p>Pope Francis - Respected Sommelier</p>
+        <a class="fa fa-facebook fa-1x" aria-hidden="true"></a>
+        <a class="center fa fa-twitter fa-1x" aria-hidden="true"></a>
+        <a class="fa fa-vimeo fa-1x" aria-hidden="true"></a>
+
+      </div>
+    </div>
+  </header>
+
+  <article class="row" id="about">
+    <div class="wash_left col-lg-6 col-xs-12">
+      <div class="helper">
+        <div class="est">&middot; EST 1954 &middot;</div>
+        <div class="bold">Combining over 60 years of hard work and shared family knowledge</div></br>
+        <div class="reg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        <img src = "http://foundry.mediumra.re/img/wine2.png">
+      </div>
+    </div>
+    <div class="wash_right col-lg-6 col-xs-12">
+    </div>
+  </article>
+
+  <article class="row col-xs-12" id="testimonial">
+    <div class="helper">
+      <h2>&#8220;We've been producing fine wine for over 65 years, I think we know what we're talking about&#8221;</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<p>
+    </div>
+  </article>
+
+  <article class="row" id="selection">
+    <div class = "wine one col-lg-4 col-xs-12">
+      <img class="img-responsive" src="http://www.beverlyhillsliquorandwine.com/media/catalog/product/p/e/petrus-rouge--pomerol.png">
+      <div class="helper">
+        <div class="title">Foundry Shiraz</div>
+        <div class="description">&#8220;Aged five years in solid, French Oak barrels sports notes of pepper and blackberry&#8221;</div>
+      </div>
+      <a href="https://www.sherry-lehmann.com/">VISIT SHOP</a>
+    </div>
+    <div class = "wine two col-lg-4 col-xs-12">
+      <img class="img-responsive" src="http://static.webshopapp.com/shops/015835/files/047073360/domaine-de-la-romanee-conti-romanee-st-vivant-2010.jpg">
+      <div class="helper">
+        <div class="title">Foundry Chardonnay</div>
+        <div class="description">&#8220;A rich fruit palet with sublte Oak influence and a lingering dry, fresh finish&#8221;</div>
+      </div>
+        <a href="https://www.sherry-lehmann.com/red-wine/A9852/Petrus-Pomerol-Imperial-2010">VISIT SHOP</a>
+    </div>
+    <div class = "wine three col-lg-4 col-xs-12">
+      <img class="img-responsive" src="http://avis-vin.lefigaro.fr/var/img/55/13719-250x600-bouteille-chateau-lafite-rothschild-rouge--pauillac.png ">
+      <div class="helper">
+        <div class="title">Foundry Merlot</div>
+        <div class="description">&#8220;Generous sweet blackcurrant and mulberry character with soft, velvety tannins&#8221;</div>
+      </div>
+        <a href="https://www.sherry-lehmann.com/red-wine/C4780/Lafite-Rothschild-Pauillac-2008">VISIT SHOP</a>
+    </div>
+  </article>
+
+
+
+
+    <footer class="row hidden-xs" id="footer">
+      <h2>Awards & Recognition</h2>
+      <div class="helper">
+        <div class="award col-xs-4">
+          <img src="http://foundry.mediumra.re/img/wine9.png">
+          <p>Best Mid-Tier Value Wine</p>
+          <p>Barossa Shiraz, 2009</p>
+
+        </div>
+        <div class="award col-xs-4">
+          <img src="http://foundry.mediumra.re/img/wine10.png">
+          <p>Winemaker of the Year</p>
+          <p>Foundry Vineyard, 2014</p>
+
+
+        </div>
+        <div class="award col-xs-4">
+          <img src="http://foundry.mediumra.re/img/wine11.png">
+          <p>Best Overall Value</p>
+          <p>Barossa Cabernet, 2010</p>
+
+        </div>
+      </div>
+
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
+
 </html>
