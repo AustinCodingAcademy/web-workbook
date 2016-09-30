@@ -1,141 +1,387 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- TITLE -->
     <title>CPerk's Excellent Coding Adventure</title>
+
+    <!-- CSS RESET -->
+    <link rel="stylesheet" href="css/css-reset.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Source+Sans+Pro" rel="stylesheet">
+
+    <!-- BOOTSTRAP FRAMEWORK -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <script src="https://use.fontawesome.com/a11441d40e.js"></script>
+
+    <!-- MY CSS -->
     <link rel="stylesheet" href="css/styleA.css">
-    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-  </head>
 
-  <body>
+</head>
 
-    <header>
-      <h1>Chris Perkins's<br>Excellent Coding Adventure</h1>
-      <nav>
-        <a href="mailto:christopherperkins.512@gmail.com"><img src="socialIcons/mail.png" alt="email me" /></a>
-        <a href="https://github.com/chrisperk"><img src="socialIcons/gh.png" alt="github profile" /></a>
-        <a href="https://www.linkedin.com/in/christopher-perkins-28a79445"><img src="socialIcons/li.png" alt="linkedin profile" /></a>
-        <a href="https://www.facebook.com/profile.php?id=7958257"><img src="socialIcons/fb.png" alt="facebook profile" /></a>
-        <a href="https://twitter.com/theperkness"><img src="socialIcons/twit.png" alt="twitter profile" /></a>
-      </nav>
+<body>
+
+    <!-- NAV
+
+        needs lesson links filled-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">HTML/CSS Intro Workbook</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="mylinks nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Lessons
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#one">Lesson 1</a></li>
+                            <li><a href="#two">Lesson 2</a></li>
+                            <li><a href="#three">Lesson 3</a></li>
+                            <li><a href="#four">Lesson 4</a></li>
+                            <li><a href="#five">Lesson 5</a></li>
+                            <li><a href="#six">Lesson 6</a></li>
+                            <li><a href="#seven">Lesson 7</a></li>
+                            <li><a href="#eight">Lesson 8</a></li>
+                            <li><a href="#nine">Lesson 9 </a></li>
+                            <li><a href="#ten">Lesson 10</a></li>
+                            <li><a href="#eleven">Lesson 11</a></li>
+                            <li><a href="#twelve">Lesson 12</a></li>
+                            <li><a href="#thirteen">Lesson 13</a></li>
+                            <li><a href="#fourteen">Lesson 14</a></li>
+                            <li><a href="#fifteen">Lesson 15</a></li>
+                            <li><a href="#sixteen">Lesson 16</a></li>
+                            <li><a href="#seventeen">Lesson 17</a></li>
+                            <li><a href="#eighteen">Lesson 18</a></li>
+                            <li><a href="#ninteen">Lesson 19</a></li>
+                            <li><a href="#twenty">Lesson 20</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="hero">
+        <div class="row">
+            <div class="heroimg">
+                <div class="herotext">
+                    <h1>Dr. Perkins's</h1>
+                    <p>Excellent Coding Adventure</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="lessongrid">
+        <div class="container">
+            <div class="row">
+                <div id="one" class="one lessontile col-lg-3 col-sm-6">
+                    <h1>Lesson 1</h1>
+                    <a href="./01LessonOne">Homework</a>
+                </div>
+                <div id="two" class="two lessontile col-lg-3 col-sm-6">
+                    <h1>Lesson 2</h1>
+                    <a href="./02LessonTwo/in-class-project/">In Class Project</a>
+                    <br><br><a href="./02LessonTwo/homework/">Homework</a>
+                </div>
+                <div id="three" class="three lessontile col-lg-3 col-sm-6">
+                    <h1>Lesson 3</h1>
+                    <a href="./03LessonThree/in-class-project/daily-planet.html">In Class Project</a>
+                    <br><br><a href="./03LessonThree/homework/git-scm.html">Homework</a>
+                </div>
+                <div id="four" class="four lessontile col-lg-3 col-sm-6">
+                    <h1>Lesson 4</h1>
+                    <a href="./04LessonFour/in-class-project">In Class Project</a>
+                </div>
+                <div id="five" class="five lessontile col-lg-3 col-sm-6">
+                    <h1>Lesson 5</h1>
+                    <a href="./05LessonFive/Checkpoint1">Checkpoint 1</a>
+                </div>
+                <div id="six" class="six lessontile col-lg-3 col-sm-6">
+                    <h1>Lesson 6</h1>
+                    <a href="./06LessonSix/in-class-project/intel.html">In Class Project</a>
+                    <br><br><a href="./06LessonSix/homework">Homework</a>
+                </div>
+                <div id="seven" class="seven lessontile col-lg-3 col-sm-6">
+                    <h1>Lesson 7</h1>
+                    <a href="./07LessonSeven/in-class-project/index.html">In Class Project</a>
+                    <br><br><a href="./07LessonSeven/homework">Homework</a>
+                </div>
+                <div id="eight" class="eight lessontile col-lg-3 col-sm-6">
+                    <h1>Lesson 8</h1>
+                    <a href="./08LessonEight/in-class-project/in-class-project08.html">In Class Project</a>
+                    <br><br><a href="./08LessonEight/homework/homework08.html">Homework</a>
+                </div>
+                <div id="nine" class="nine lessontile col-lg-3 col-sm-6">
+                    <h1>Lesson 9</h1>
+                    <a href="./09LessonNine/in-class-project">In Class Project</a>
+                </div>
+                <div id="ten" class="ten lessontile col-lg-3 col-sm-6">
+                    <h1>Lesson 10</h1>
+                    <a href="./10LessonTen/Checkpoint2">Checkpoint 2</a>
+                    <br><br><a href="./10LessonTen/WinerySite">Winery</a>
+                </div>
+                <div id="eleven" class="eleven lessontile col-lg-3 col-sm-6">
+                    <h1>Lesson 11</h1>
+                    <a href="./11LessonEleven/in-class-project">In Class Project</a>
+                    <br><br><a href="./11LessonEleven/homework/inspired.html">Homework</a>
+                </div>
+                <div id="twelve" class="twelve lessontile col-lg-3 col-sm-6">
+                    <h1>Lesson 12</h1>
+                    <a href="./12LessonTwelve/in-class-project">In Class Project</a>
+                    <br><br><a href="./12LessonTwelve/homework">Homework</a>
+                </div>
+                <div id="thirteen" class="thirteen lessontile col-lg-3 col-sm-6">
+                    <h1>Lesson 13</h1>
+                    <a href="./13LessonThirteen/in-class-project">In Class Project</a>
+                    <br><br><a href="./13LessonThirteen/homework">Homework</a>
+                </div>
+                <div id="fourteen" class="fourteen lessontile col-lg-3 col-sm-6">
+                    <h1>Lesson 14</h1>
+                    <a href="./14LessonFourteen/in-class-project">In Class Project</a>
+                </div>
+                <div id="fifteen" class="fifteen lessontile col-lg-3 col-sm-6">
+                    <h1>Lesson 15</h1>
+                    <a href="./15LessonFifteen/Checkpoint3">In Class Project</a>
+                    <br><br><a href="./15LessonFifteen/">Homework</a>
+                </div>
+                <div id="sixteen" class="sixteen lessontile col-lg-3 col-sm-6">
+                    <h1>Lesson 16</h1>
+                    <a href="./16LessonSixteen/in-class-project/index.html">In Class Project</a>
+                    <br><br><a href="./16LessonSixteen/homework">Homework</a>
+                </div>
+                <div id="seventeen" class="seventeen lessontile col-lg-3 col-sm-6">
+                    <h1>Lesson 17</h1>
+                    <a href="./17LessonSeventeen/in-class-project">In Class Project</a>
+                    <br><br><a href="./17LessonSeventeen/homework">Homework</a>
+                </div>
+                <div id="eighteen" class="eighteen lessontile col-lg-3 col-sm-6">
+                    <h1>Lesson 18</h1>
+                    <a href="./18LessonEighteen/in-class-project">In Class Project</a>
+                    <br><br><a href="./18LessonEighteen/homework">Homework</a>
+                </div>
+                <div id="nineteen" class="nineteen lessontile col-lg-3 col-sm-6">
+                    <h1>Lesson 19</h1>
+                    <a href="./19LessonNineteen/in-class-project">In Class Project</a>
+                    <br><br><a href="./19LessonNineteen/homework">Homework</a>
+                </div>
+                <div id="twenty" class="twenty lessontile col-lg-3 col-sm-6">
+                    <h1>Lesson 20</h1>
+                    <a href="./20FinalProject">Final Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <footer id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="socialicons">
+                    <a href="mailto:drcperk@gmail.com"><i class="fa fa-envelope fa-4x" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/christopher-perkins-28a79445"><i class="fa fa-linkedin fa-4x" aria-hidden="true"></i></a>
+                    <a href="https://github.com/chrisperk/"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/theperkness"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=7958257"><i class="fa fa-facebook fa-4x" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <p>©2016 Christopher Perkins, All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT CALLS -->
+
+    <!-- JQUERY CALL -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- BOOSTRAP CALL -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+    <!-- <header>
+        <h1>Chris Perkins's<br>Excellent Coding Adventure</h1>
+        <nav>
+            <a href="mailto:christopherperkins.512@gmail.com"><img src="socialIcons/mail.png" alt="email me" /></a>
+            <a href="https://github.com/chrisperk"><img src="socialIcons/gh.png" alt="github profile" /></a>
+            <a href="https://www.linkedin.com/in/christopher-perkins-28a79445"><img src="socialIcons/li.png" alt="linkedin profile" /></a>
+            <a href="https://www.facebook.com/profile.php?id=7958257"><img src="socialIcons/fb.png" alt="facebook profile" /></a>
+            <a href="https://twitter.com/theperkness"><img src="socialIcons/twit.png" alt="twitter profile" /></a>
+        </nav>
     </header>
 
     <main class="clearfix">
-      <div class="lesson one">
-        <h2>Lesson 1</h2>
-        <a href="./01LessonOne">Homework</a>
-      </div>
+        <div class="lesson one">
+            <h2>Lesson 1</h2>
+            <a href="./01LessonOne">Homework</a>
+        </div>
 
-      <div class="lesson two">
-        <h2>Lesson 2</h2>
-        <a href="./02LessonTwo/in-class-project/">Class Project</a><br><br><br>
-        <a href="./02LessonTwo/homework/">Homework</a>
-      </div>
+        <div class="lesson two">
+            <h2>Lesson 2</h2>
+            <a href="./02LessonTwo/in-class-project/">Class Project</a>
+            <br>
+            <br>
+            <br>
+            <a href="./02LessonTwo/homework/">Homework</a>
+        </div>
 
-      <div class="lesson three">
-        <h2>Lesson 3</h2>
-        <a href="./03LessonThree/in-class-project/daily-planet.html">In Class Project</a><br><br><br>
-        <a href="./03LessonThree/homework/git-scm.html">Homework</a>
-      </div>
+        <div class="lesson three">
+            <h2>Lesson 3</h2>
+            <a href="./03LessonThree/in-class-project/daily-planet.html">In Class Project</a>
+            <br>
+            <br>
+            <br>
+            <a href="./03LessonThree/homework/git-scm.html">Homework</a>
+        </div>
 
-      <div class="lesson four">
-        <h2>Lesson 4</h2>
-        <a href="./04LessonFour/in-class-project">In Class Project</a>
-      </div>
+        <div class="lesson four">
+            <h2>Lesson 4</h2>
+            <a href="./04LessonFour/in-class-project">In Class Project</a>
+        </div>
 
-      <div class="lesson five">
-        <h2>Lesson 5</h2>
-        <a href="./05LessonFive/Checkpoint1">Checkpoint 1</a>
-      </div>
+        <div class="lesson five">
+            <h2>Lesson 5</h2>
+            <a href="./05LessonFive/Checkpoint1">Checkpoint 1</a>
+        </div>
 
-      <div class="lesson six">
-        <h2>Lesson 6</h2>
-        <a href="./06LessonSix/in-class-project/intel.html">In Class Project</a><br><br><br>
-        <a href="./06LessonSix/homework">Homework</a>
-      </div>
+        <div class="lesson six">
+            <h2>Lesson 6</h2>
+            <a href="./06LessonSix/in-class-project/intel.html">In Class Project</a>
+            <br>
+            <br>
+            <br>
+            <a href="./06LessonSix/homework">Homework</a>
+        </div>
 
-      <div class="lesson seven">
-        <h2>Lesson 7</h2>
-        <a href="./07LessonSeven/in-class-project/index.html">In Class Project</a><br><br><br>
-        <a href="./07LessonSeven/homework">Homework</a>
-      </div>
+        <div class="lesson seven">
+            <h2>Lesson 7</h2>
+            <a href="./07LessonSeven/in-class-project/index.html">In Class Project</a>
+            <br>
+            <br>
+            <br>
+            <a href="./07LessonSeven/homework">Homework</a>
+        </div>
 
-      <div class="lesson eight">
-        <h2>Lesson 8</h2>
-        <a href="./08LessonEight/in-class-project/in-class-project08.html">In Class Project</a><br><br><br>
-        <a href="./08LessonEight/homework/homework08.html">Homework</a>
-      </div>
+        <div class="lesson eight">
+            <h2>Lesson 8</h2>
+            <a href="./08LessonEight/in-class-project/in-class-project08.html">In Class Project</a>
+            <br>
+            <br>
+            <br>
+            <a href="./08LessonEight/homework/homework08.html">Homework</a>
+        </div>
 
-      <div class="lesson nine">
-        <h2>Lesson 9</h2>
-        <a href="./09LessonNine/in-class-project">In Class Project</a>
-      </div>
+        <div class="lesson nine">
+            <h2>Lesson 9</h2>
+            <a href="./09LessonNine/in-class-project">In Class Project</a>
+        </div>
 
-      <div class="lesson ten">
-        <h2>Lesson 10</h2>
-        <a href="./10LessonTen/Checkpoint2">Checkpoint 2</a><br><br><br>
-        <a href="./10LessonTen/WinerySite">Winery (Optional Work)</a>
-      </div>
+        <div class="lesson ten">
+            <h2>Lesson 10</h2>
+            <a href="./10LessonTen/Checkpoint2">Checkpoint 2</a>
+            <br>
+            <br>
+            <br>
+            <a href="./10LessonTen/WinerySite">Winery (Optional Work)</a>
+        </div>
 
-      <div class="lesson eleven">
-        <h2>Lesson 11</h2>
-        <a href="./11LessonEleven/in-class-project">In Class Project</a><br><br><br>
-        <a href="./11LessonEleven/homework/inspired.html">Homework</a>
-      </div>
+        <div class="lesson eleven">
+            <h2>Lesson 11</h2>
+            <a href="./11LessonEleven/in-class-project">In Class Project</a>
+            <br>
+            <br>
+            <br>
+            <a href="./11LessonEleven/homework/inspired.html">Homework</a>
+        </div>
 
-      <div class="lesson twelve">
-        <h2>Lesson 12</h2>
-        <a href="./12LessonTwelve/in-class-project">In Class Project</a><br><br><br>
-        <a href="./12LessonTwelve/homework">Homework</a>
-      </div>
+        <div class="lesson twelve">
+            <h2>Lesson 12</h2>
+            <a href="./12LessonTwelve/in-class-project">In Class Project</a>
+            <br>
+            <br>
+            <br>
+            <a href="./12LessonTwelve/homework">Homework</a>
+        </div>
 
-      <div class="lesson thirteen">
-        <h2>Lesson 13</h2>
-        <a href="./13LessonThirteen/in-class-project">In Class Project</a><br><br><br>
-        <a href="./13LessonThirteen/homework">Homework</a>
-      </div>
+        <div class="lesson thirteen">
+            <h2>Lesson 13</h2>
+            <a href="./13LessonThirteen/in-class-project">In Class Project</a>
+            <br>
+            <br>
+            <br>
+            <a href="./13LessonThirteen/homework">Homework</a>
+        </div>
 
-      <div class="lesson fourteen">
-        <h2>Lesson 14</h2>
-        <a href="./14LessonFourteen/in-class-project">In Class Project</a>
-      </div>
+        <div class="lesson fourteen">
+            <h2>Lesson 14</h2>
+            <a href="./14LessonFourteen/in-class-project">In Class Project</a>
+        </div>
 
-      <div class="lesson fifteen">
-        <h2>Lesson 15</h2>
-        <a href="./15LessonFifteen/Checkpoint3">In Class Project</a><br><br><br>
-        <a href="./15LessonFifteen/">Homework</a>
-      </div>
+        <div class="lesson fifteen">
+            <h2>Lesson 15</h2>
+            <a href="./15LessonFifteen/Checkpoint3">In Class Project</a>
+            <br>
+            <br>
+            <br>
+            <a href="./15LessonFifteen/">Homework</a>
+        </div>
 
-      <div class="lesson sixteen">
-        <h2>Lesson 16</h2>
-        <a href="./16LessonSixteen/in-class-project/index.html">In Class Project</a><br><br><br>
-        <a href="./16LessonSixteen/homework">Homework</a>
-      </div>
+        <div class="lesson sixteen">
+            <h2>Lesson 16</h2>
+            <a href="./16LessonSixteen/in-class-project/index.html">In Class Project</a>
+            <br>
+            <br>
+            <br>
+            <a href="./16LessonSixteen/homework">Homework</a>
+        </div>
 
-      <div class="lesson seventeen">
-        <h2>Lesson 17</h2>
-        <a href="./17LessonSeventeen/in-class-project">In Class Project</a><br><br><br>
-        <a href="./17LessonSeventeen/homework">Homework</a>
-      </div>
+        <div class="lesson seventeen">
+            <h2>Lesson 17</h2>
+            <a href="./17LessonSeventeen/in-class-project">In Class Project</a>
+            <br>
+            <br>
+            <br>
+            <a href="./17LessonSeventeen/homework">Homework</a>
+        </div>
 
-      <div class="lesson eighteen">
-        <h2>Lesson 18</h2>
-        <a href="./18LessonEighteen/in-class-project">In Class Project</a><br><br><br>
-        <a href="./18LessonEighteen/homework">Homework</a>
-      </div>
+        <div class="lesson eighteen">
+            <h2>Lesson 18</h2>
+            <a href="./18LessonEighteen/in-class-project">In Class Project</a>
+            <br>
+            <br>
+            <br>
+            <a href="./18LessonEighteen/homework">Homework</a>
+        </div>
 
-      <div class="lesson nineteen">
-        <h2>Lesson 19</h2>
-        <a href="./19LessonNineteen/in-class-project">In Class Project</a><br><br><br>
-        <a href="./19LessonNineteen/homework">Homework</a>
-      </div>
+        <div class="lesson nineteen">
+            <h2>Lesson 19</h2>
+            <a href="./19LessonNineteen/in-class-project">In Class Project</a>
+            <br>
+            <br>
+            <br>
+            <a href="./19LessonNineteen/homework">Homework</a>
+        </div>
 
-      <div class="lesson twenty">
-        <h2>Lesson 20</h2>
-        <a href="./20FinalProject">Final Project</a>
-      </div>
+        <div class="lesson twenty">
+            <h2>Lesson 20</h2>
+            <a href="./20FinalProject">Final Project</a>
+        </div>
 
-    </main>
-  </body>
+    </main> -->
+</body>
+
 </html>

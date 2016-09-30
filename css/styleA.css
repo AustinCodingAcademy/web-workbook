@@ -1,83 +1,73 @@
 body {
-  width: 90%;
-  margin: 0 auto;
-
+  margin-top: 30px;
 }
 
-header {
-  position: fixed;
-  width: 88%;
-  height: 200px;
+.heroimg {
+  height: 400px;
+  margin-bottom: 2%;
   font-family: 'Orbitron', sans-serif;
-  font-size: 24px;
+  font-size: 40px;
   color: #660033;
+  text-align: center;
   background-image: url("https://images.unsplash.com/photo-1454789591675-556c287e39e2?dpr=2&auto=compress,format&crop=entropy&fit=crop&w=1199&h=798&q=80&cs=tinysrgb");
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  border-radius: 20px;
-  margin: 1%;
 }
 
-header h1 {
-  margin: auto;
-  padding-top: 10px;
-  padding-left: 10px;
+.herotext {
+    padding-top: 10%;
 }
 
-header nav {
-  width: 100%;
-  padding-top: 5px;
-  float: left;
+.herotext h1 {
+    font-size: 60px;
+    font-weight: 700;
 }
 
-nav img {
-  height: 60px;
-  padding-left: 25px;
+.herotext p {
+    font-size: 40px;
+    font-weight: 400;
 }
 
-main {
-  padding-top: 225px;
-  margin-bottom: 100px;
-}
-
-.lesson {
-  width: 48%;
-  height: 300px;
+.lessontile {
+  height: 250px;
   font-family: 'Source Sans Pro', sans-serif;
-  float: left;
   border-radius: 20px;
-  margin: 1%;
+  border: 10px solid #fff;
 }
 
-.lesson h2 {
-  color: white;
+.lessontile h1 {
+  color: #fff;
   padding: 10px;
   font-size: 36px;
-  margin-bottom: 10px;
+  margin-bottom: 3%;
 }
 
-.lesson a {
-  color: white;
+.lessontile a {
+  color: #fff;
   text-decoration: none;
-  border: 5px solid #555;
-  padding: 10px;
+  border: 2px solid #555;
+  padding: 2%;
   font-size: 20px;
-  background-color: rgba(0,0,0,.5);
-  margin: 10px;
+  background-color: rgba(0,0,0,.7);
+  border-radius: 10px;
+  margin-left: 5%;
 }
 
-.lesson a:hover {
+.lessontile a:hover {
   background-color: rgba(225, 225, 225, .3);
 }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
+#contact {
+    text-align: center;
+}
+
+.socialicons {
+    margin: 3% 0;
+}
+
+.socialicons i {
+    margin: 0 2%;
 }
 
 .one {
@@ -219,3 +209,13 @@ main {
   background-position: top center;
   background-repeat: no-repeat;
 }
+
+
+
+/*The following is for mobile*/
+
+    @media (max-width: 767px) {
+        .herotext {
+            padding-top: 25%;
+        }
+    }
