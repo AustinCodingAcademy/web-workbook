@@ -5,6 +5,7 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
    <script src="https://use.fontawesome.com/81ba136700.js"></script>
   <title>Final Project</title>
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="/js/script.js">
@@ -30,10 +31,10 @@
     </div>
   </div>
 </nav>
-<section id="hero" class="parallax">
+<section id="hero">
 <div class="container">
   <div class="row">
-    <div class="col-lg-12 col-xs-12">
+    <div class="col-lg-12 col-xs-12 parallax">
       <!-- <video src="vid1.mp4" autoplay poster="posterimage.jpg" autoplay="true" loop="auto" class="video-responsive center-block"></video> -->
       <div class="text col-lg-12 col-xs-12">
         <h1>MR. ROBOT ATX  <i class="fa fa-android fa-2x" aria-hidden="true"></i></a></h1>
@@ -51,46 +52,39 @@
       <img src="img/profilepic.jpg" alt="profile pic" class="aboutpic img-responsive" />
       </div>
       <div class="col-lg-6 col-xs-">
-      <h2>If you don't come to us for your web needs, we will come to you...</h2>
+        <br>
+        <br>
+      <h2>I'm currently attending Austin Coding School, a full-stack coding school that teaches web development through part-time classes taught by real developers. By the end of the Advanced class, students are ready for a full-time job as a junior developer.</h2>
       </div>
 
 
     </div>
   </div>
 </section>
-<section>
-    <style>
-      #map {
-        height: 400px;
-        width: 100%;
-       }
-    </style>
-
-    <script>
-
-      function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-
-    </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6hrk0qZBBWZmqZwxd7EijFjEmf9ofUUM&callback=initMap">
-    </script>
-</section>
-<footer>
+<section id="how" class="container">
   <div class="row">
-    <div class="col-xs-12">
-      <a href="https://www.instagram.com/taco.coffee/"><i class="fa fa-instagram fa-5x"></i></a>
-      <a href="https://www.snapchat.com/add/taco.coffee"><i class="fa fa-snapchat fa-5x"></i></a>
-      <a href="https://www.twitter.com/taco_coffee"><i class="fa fa-twitter fa-5x"></i></a>
+    <div class="col-lg-12 col-xs-12">
+        <div class="text-box col-lg-6 col-xs-12">
+          <h1>We're based out of Austin, TX</h1>
+          <p>
+            "One of the many perks of being in this business is I can help people all over the world as long as there's access to the web."
+          </p>
+        </div>
+      <!-- </div> -->
+      <!-- <div class="row"> -->
+        <div class="map-box col-lg-6 col-xs-12">
+          <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:460px;width:570px;'><div id='gmap_canvas' style='height:440px;width:700px;'></div><div><small><a href="http://www.embedgooglemaps.com/en/">Generate your map here, quick and easy!									Give your customers directions									Get found</a></small></div><div><small><a href="https://binaireoptieservaringen.nl/">Strategieën en tips</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(30.267153,-97.74306079999997),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(30.267153,-97.74306079999997)});infowindow = new google.maps.InfoWindow({content:'<strong>My Business Location</strong><br>Austin, TX<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+        </div>
+      </div>
+    </div>
+
+</section>
+<footer id="footer" class="container">
+  <div class="row">
+    <div class="col-lg-12 col-xs-12">
+      <a href="#"><i class="fa fa-instagram fa-5x"></i></a>
+      <a href="#"><i class="fa fa-snapchat fa-5x"></i></a>
+      <a href="#"><i class="fa fa-twitter fa-5x"></i></a>
       <p>Copyright &copy; 2016 Mr. Robot ATX, LLC. All rights reserved</p>
     </div>
   </div>
