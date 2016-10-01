@@ -6,10 +6,13 @@
     <link href="css/css-reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
     <link href="css/circle.css" rel="stylesheet">
 
@@ -48,6 +51,9 @@
                         </li>
                         <li>
                             <a href="#contact">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#c2">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -91,7 +97,7 @@
         </section>
         <section id="projects">
             <p class="p3">Html</p>
-            <div class="c100 p100 big wow slideInRight">
+            <div class="c100 p100 medium wow slideInRight">
                 <span>100%</span>
 
                 <div class="slice">
@@ -104,7 +110,7 @@
 
             </div>
             <p class="p3">Css</p>
-            <div class="c100 p100 big wow slideInLeft">
+            <div class="c100 p100 medium wow slideInLeft">
                 <span>100% </span>
 
                 <div class="slice">
@@ -117,7 +123,7 @@
 
             </div>
             <p class="p3">jQuery</p>
-            <div class="c100 p85 big wow slideInRight">
+            <div class="c100 p85 medium wow slideInRight">
                 <span>85%</span>
 
                 <div class="slice">
@@ -132,53 +138,116 @@
 
         </section>
         <section id="about">
-            <div class="overlay2"></div>
+            <div class="overlay2">
+                <h2> Current Status</h2>
+                <div class="p4">Im Currently available for freelance work and team related projects. </div>
+                <div class="p5">Social Profiles.</div>
+                <div class="icons2">
+                    <a href="https://www.facebook.com/larry.gutierrezsanchez"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/Larry_bird1"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/pajarex_/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </div>
+            </div>
         </section>
-        <section id="contact" style="background: #009688;">contact us</section>
+        <section id="contact">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2000" data-pause="hover">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/project1.png" alt="...">
+                        <div class="carousel-caption">
+                            <h3>Project 1</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/project2.png" alt="...">
+                        <div class="carousel-caption">
+                            <h3>Project 2</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/project3.png" alt="...">
+                        <div class="carousel-caption">
+                            <h3>Project 3</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+            <!-- Carousel -->
+        </section>
+        <section id="c2">
+            <div class="contactme">
+                <h2>Contact me</h2>
+                <p class="p6"><i class="fa fa-envelope-o" aria-hidden="true"> lgutierrez788@gmail.com</i></p>
+                <p class="p6"><i class="fa fa-mobile" aria-hidden="true"> 210-818-9310</i></p>
+                <p class="p6"><i class="fa fa-map-o" aria-hidden="true"> San Antonio Tx 78201</i></p>
+                <script type="text/javascript" src="https://form.jotform.com/jsform/62747116052149"></script>
+
+        </section>
 
 
 
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
-    <script>
-        new WOW({
-            boxClass: 'wow', // default
-            animateClass: 'animated', // default
-            offset: 0, // default
-            mobile: true, // default
-            live: true // default
-        }).init();
-    </script>
-    <script>
-        // Add scrollspy to <body>
-        $('body').scrollspy({
-            target: ".navbar",
-            offset: 50
-        });
-        // Add smooth scrolling on all links inside the navbar
-        $("#example-navbar-collapse a, .navbar-brand").on('click', function(event) {
-            // Make sure this.hash has a value before overriding default behavior
-            if (this.hash !== "") {
-                // Prevent default anchor click behavior
-                event.preventDefault();
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
 
-                // Store hash
-                var hash = this.hash;
+        <script>
+            new WOW({
+                boxClass: 'wow', // default
+                animateClass: 'animated', // default
+                offset: 0, // default
+                mobile: true, // default
+                live: true // default
+            }).init();
+        </script>
+        <script>
+            // Add scrollspy to <body>
+            $('body').scrollspy({
+                target: ".navbar",
+                offset: 50
+            });
+            // Add smooth scrolling on all links inside the navbar
+            $("#example-navbar-collapse a, .navbar-brand").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
 
-                // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function() {
+                    // Store hash
+                    var hash = this.hash;
 
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                });
-            } // End if
-        });
-    </script>
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        </script>
 </body>
 
 
