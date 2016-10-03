@@ -227,8 +227,57 @@ h1 .outer-caret {
     background-color: rgba(0, 0, 0, .7);
     text-shadow: 1px 3px black;
     padding: 130px 50px 130px 50px;
+    margin: 0;
 }
-
+.badges {
+  padding: 0;
+  font-size: 150px !important;
+  margin: 0;
+  text-align: center !important;
+}
+.badges:active, .badges:focus, .badges {
+  text-decoration: none;
+  color: white;
+}
+.tool-badges {
+  padding: 0;
+  margin: 0 0 50px 0 !important;
+}
+.tool-badges i {
+  padding: 25px 0;
+  background-color: rgba(0, 0, 0, .7);
+  width: 100%;
+}
+#tool-badge-row {
+  padding: 0 15px;
+}
+.hidden-txt {
+  display: none;
+}
+.tool-badges:hover .hidden-txt {
+  display: block;
+  position: relative;
+}
+.my-html5 {
+    color: #ff471a;
+}
+.my-css3 {
+    color: blue;
+}
+#icon-row {
+    padding: 100px 0 100px 0;
+    text-align: center;
+}
+.icon-container i {
+    font-size: 100px;
+    padding: 15px;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -vendor-animation-duration: .5s;
+    -vendor-animation-delay: 0s;
+    -vendor-animation-iteration-count: infinite;
+}
 /*GOOGLE MAPS*/
 
 #my-map-canvas img {
@@ -248,20 +297,6 @@ h1 .outer-caret {
     resize: none;
     max-width: 100%;
     margin-bottom: 20px;
-}
-#icon-row {
-    padding: 100px 0;
-    text-align: center;
-}
-.icon-container i {
-    font-size: 100px;
-    padding: 15px;
-    -webkit-animation-duration: .5s;
-    -webkit-animation-delay: 0s;
-    -webkit-animation-iteration-count: infinite;
-    -vendor-animation-duration: .5s;
-    -vendor-animation-delay: 0s;
-    -vendor-animation-iteration-count: infinite;
 }
 
 /*ABOUT STYLING END*/
@@ -320,23 +355,19 @@ footer {
     background-blend-mode: multiply;
     border-bottom: 3px solid black;
 }
-.badges {
+.tool-badges {
     text-align: center;
     color: white;
-    font-size: 150px;
-    background-color: rgba(0, 0, 0, .5);
-    border: 1px solid white;
+    font-size: 100px;
     border-radius: 25px;
     margin: 15px 0;
-}
-.my-html5:hover {
-    color: #ff471a;
+    position: relative;
 }
 .my-github:hover {
     color: purple;
 }
-.my-css3:hover {
-    color: #003d99;
+.my-linkedin:hover {
+    color: blue;
 }
 
 /*FOOTER STYLING END*/
@@ -372,21 +403,25 @@ footer {
     #my-google-maps {
         width: 100%;
         height: 30vh;
+        margin-top: 20px;
     }
     #icon-row {
-      padding: 0 0 15px 0;
+      padding: 15px 0 15px 0;
     }
     .icon-container i {
         font-size: 30vw;
         padding: 10px 0;
     }
+    .badges {
+        font-size: 10vh !important;
+    }
     .my-form-label {
         font-size: 10px;
         width: 100%;
     }
-    .badges {
-        font-size: 20vh;
-        background-color: rgba(0, 0, 0, .5);
+    .tool-badges i {
+        font-size: 50px;
+        margin: 0 !important;
     }
     footer {
       padding: 0;
@@ -426,7 +461,7 @@ footer {
       height: 30vh;
   }
   #icon-row {
-    padding: 0 0 15px 0;
+    padding: 15px 0 15px 0;
   }
   .icon-container i {
       font-size: 100px;
@@ -437,8 +472,7 @@ footer {
       width: 100%;
   }
   .badges {
-      font-size: 20vh;
-      background-color: rgba(0, 0, 0, .5);
+      font-size: 10vh !important;
   }
   footer {
     padding: 0;
