@@ -1,10 +1,235 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>March 76</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <script src="https://use.fontawesome.com/9822dc9e23.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Arapey|Gidugu" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="row navbar-fixed-top">
+            <div id="marnav" class="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h1><span class="glyphicon glyphicon-menu-down"></span></h1></a>
+                        <ul id="menu" class="dropdown-menu">
+                            <li><a href="#">Top</a></li>
+                            <li><a href="#bio">About Me</a></li>
+                            <li><a href="#resume">Resume</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="row" id="intro">
+        <img class="img-responsive" src="img/mar76_newraw.png" />
+        <div class="col-lg-5">
+            <h1>YOU FOUND A WEB DEVELOPER</h1>
+        </div>
+        <div class="col-sm-2 visible-lg">
+
+        </div>
+        <div class="col-lg-5">
+            <h1>DANNY SOLIS</h1>
+        </div>
+    </section>
+    <section id="bio" class="container">
+        <article class="row">
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-4 visible-lg">
+                    </div>
+                    <div class="bioblock col-sm-11 col-lg-7 hidden-xs">
+                        <h1>Danny Solis</h1>
+                    </div>
+                    <div class="biospacer col-sm-1 hidden-xs">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="bioblock col-sm-12">
+                        <p>
+                            At the age of 40, I wanted to level-up my technical skill. I wanted to find a way to blend art with code. The natural progression lead me on a journey to learn web development and design. I'm a husband, a gamer, and a dog lover.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 hidden-xs">
+
+                    </div>
+                    <div id="atx" class="col-sm-11 col-lg-9">
+                        <!--<h3>I am always doing that which I cannot do, so that I can learn how to do it. - Pablo Picasso</h3>-->
+                        <iframe src="http://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.8843754006057!2d-97.74275814901729!3d30.26887548171193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b5a76b09dd7f%3A0x796a12bb9db613d2!2s701+Brazos+St%2C+Austin%2C+TX+78701!5e0!3m2!1sen!2sus!4v1475191502536"
+                            width="100%" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="biospacer col-sm-1 hidden-xs">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 hidden-xs" id="biopic">
+                <div></div>
+            </div>
+        </article>
+    </section>
+    <section id="resume">
+        <div id="companies" class="row">
+            <div class="col-sm-6 col-lg-4 hidden-xs">
+              <div class="skill" id="projmgr">
+                <h2>Project Manager</h2>
+                <h4>Delivering effective, timely solutions</h4>
+              </div>
+              <div class="skill" id="busana">
+                <h2>Business Analyst</h2>
+                <h4>Detailed gathering of requirements</h4>
+              </div>
+              <div class="skill" id="dataqc">
+                <h2>Data Analyst</h2>
+                <h4>Compiling insightful reports</h4>
+              </div>
+            </div>
+            <div class="col-sm-4 visible-lg">
+
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="skill" id="skhtml">
+                <h2>HTML</h2>
+                <h4>Creative and intuitive designs</h4>
+              </div>
+              <div class="skill" id="skcss">
+                <h2>CSS</h2>
+                <h4>Responsive layouts for any device</h4>
+              </div>
+              <div class="skill" id="skjava">
+                <h2>Javascript</h2>
+                <h4>Logic to enhance the user experience</h4>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="row">
+        <div id="sitecarousel" class="carousel slide col-lg-9" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#sitecarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#sitecarousel" data-slide-to="1"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div id="bizpromo" class="item active sites">
+                    <div>
+                        <h1>Responsive Designs</h1>
+                        <div class="portwrap">
+
+
+                        <a href="../17LessonSeventeen/in-class-project/index.html" target="_blank">
+                        <img class="img-responsive" src="img/bonecap.PNG" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="creative" class="item sites">
+                    <div>
+                        <h1>Creative Layouts</h1>
+                        <div class="portwrap"
+                        <a href="../15LessonFifteen/Checkpoint3/index.html" target="_blank">
+                        <img class="img-responsive" src="img/winerycap.PNG" /></a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#sitecarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#sitecarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div id="ed" class="col-sm-3 visible-lg">
+            <div>
+                <img class="img-responsive" src="img/ACA_logo.png" />
+            </div>
+            <h1>Introductory <i class="fa fa-check-circle animated wobble infinite"></i></h1>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li><a href="#" target="_blank">Workbook</a></li>
+            </ul>
+            <h1>Intermediate</h1>
+            <ul>
+                <li>Javascript</li>
+                <li>jQuery</li>
+                <li>Node.js</li>
+                <li><a href="#" target="_blank">Workbook</a></li>
+            </ul>
+            <h1>Advanced</h1>
+            <ul>
+                <li>Backbone.js</li>
+                <li>Restful API</li>
+                <li>Authentication</li>
+                <li><a href="#" target="_blank">Workbook</a></li>
+            </ul>
+        </div>
+    </section>
+    <footer id="contact" class="row">
+        <div class="col-lg-2 visible-lg">
+
+        </div>
+        <div class="col-sm-9 col-lg-5">
+          <h2>What do you think?</h2>
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLSfUOjLD_liuphsyzWW8X5XXhEpmbNUbvIiy0KRLRv_1YQONaA/formResponse"
+          target="_self" method="POST">
+            <input id="fname" type="text" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Name" placeholder="Name"
+            aria-describedby="i.desc.1576233108 i.err.1576233108" name="entry.748560416"
+            value="" dir="auto" data-initial-dir="auto" data-initial-value="">
+            <input id="femail" type="text" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Email" placeholder="Email"
+            aria-describedby="i.desc.877517364 i.err.877517364" name="entry.2000698751"
+            value="" dir="auto" data-initial-dir="auto" data-initial-value="">
+            <textarea id="ffeedb" jsname="YPqjbf" rows="1" tabindex="0" aria-label="What do you think?" placeholder="Feedback"
+            jscontroller="gZjhIf" jsaction="input:Lg5SV;ti6hGc:XMgOHc;rcuQ6b:WYd;"
+            name="entry.282646424" dir="auto" data-initial-dir="auto" data-initial-value=""></textarea>
+            <input type="hidden" name="fvv" value="1">
+            <input type="hidden" name="draftResponse" value="[,,&quot;-1686468274126826635&quot;]
+          ">
+            <input type="hidden" name="pageHistory" value="0">
+            <input type="hidden" name="fbzx" value="-1686468274126826635">
+            <br />
+            <input type="submit" name="submit" value="Submit">
+          </form>
+        </div>
+        <div class="col-sm-3">
+            <h1><span class="fa fa-facebook-square"></span></h1>
+            <h1><span class="fa fa-twitter-square"></span></h1>
+            <h1><span class="fa fa-linkedin-square"></span></h1>
+            <h1><span class="fa fa-github-square"></span></h1>
+        </div>
+        <div class="col-lg-2 visible-lg">
+            <h2>Credits</h2>
+            <ul>
+              <li><h3>Bootstrap</h3></li>
+              <li><h3>Font Awesome</h3></li>
+              <li><h3>Google Fonts</h3></li>
+            </ul>
+            <h3>2016 Danny Solis</h3>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
