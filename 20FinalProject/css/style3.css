@@ -1,6 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     color: #2e2e2e;
+    font-size: 100%;
 }
 .navbar-inverse {
   background-color: rgb(20, 37, 79)!important;
@@ -8,19 +9,29 @@ body {
 .navbar {
   border: none !important;
 }
+.navbar-brand {
+  font-size: 3em !important;
+}
+.navbar a {
+  font-size: 2.5em;
+}
 h1, h2, h3, h4, h5, h6, span {
     font-family: 'Roboto', sans-serif;
 }
 h1 {
-    font-size: 100px;
+    font-size: 12em;
     color: #ce3100;
 }
 h2 {
-    font-size: 27px;
+    font-size: 4em;
     font-family: serif;
 }
 h3 {
       color: #313131;
+      font-size: 3.5em;
+}
+p {
+  font-size: 2em;
 }
 ul {
     margin: 0;
@@ -33,7 +44,7 @@ a:link, a:visited {
 }
 .header-img {
       background-image: url('https://images.unsplash.com/19/desktop.JPG?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb');
-      height: 100vh;
+      height: 800px;
       background-color: #14254f;
       background-blend-mode: soft-light;
 }
@@ -57,7 +68,7 @@ a:link, a:visited {
 }
 .button {
     padding: 14px 35px;
-    font-size: 18px;
+    font-size: 2em;
     color: #fff;
     border: 1px solid #fff;
     margin-bottom: 100px;
@@ -184,5 +195,16 @@ footer, #based h3 {
   background-image:url('http://blog.davidweekleyhomes.com/wp-content/uploads/2014/03/austin-skyline.jpg');
   background-color: #2e2e2e;
   background-blend-mode: soft-light;
-  height: 50vh;
+  height: 100%;
+  padding: 25px;
+}
+@media (max-width: 768px) {
+   body {
+     font-size: 65%;
+   }
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 90%;
+  }
 }
