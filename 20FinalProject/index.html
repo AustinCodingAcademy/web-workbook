@@ -1,10 +1,127 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Final Project</title>
+
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Jaclyn Sanborn</a>
+            </div>
+            <div class="collapse navbar-collapse pull-right" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#intro">About Me</a></li>
+                    <li><a href="#project-heading">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="hero" class="row">
+        <div class="col-lg-12 col-xs-12">
+            <h1 class="animated bounce">Jaclyn Sanborn</h1>
+            <h2 class="animated bounce">Aspiring Web Developer</h2>
+            <a href="https://www.facebook.com/jaclyn.sanborn.1"><img class="img-responsive first-image"src="img/facebook.png" alt="Facebook" /></a>
+            <a href="https://github.com/sanborn08"><img class="img-responsive middle-image"src="img/github.png" alt="Github" /></a>
+            <a href="https://twitter.com/slo_jac"><img class="img-responsive middle-image"src="img/twitter.png" alt="Twitter" /></a>
+            <a href="https://www.linkedin.com/in/jaclyn-sanborn-6098aa83"><img class="img-responsive middle-image"src="img/linkedin.png" alt="LinkedIn" /></a>
+        </div>
+    </header>
+    <section id="intro" class="row">
+        <div class="skills col-xs-12 col-md-4 col-lg-4">
+            <ul>
+                <h3>Skills</h3>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>Media Queries</li>
+            </ul>
+        </div>
+        <div class="about-me col-xs-12 col-md-4 col-lg-8">
+            <h3>About Me</h3>
+            <p>
+                I moved to Austin from the central coast of California two years ago and am living the ATX dream. I currently work in customer service at a tech company and am taking coding classes to transition to a developer role. In my free time I enjoy playing soccer, reading, and endlessly scrolling interior design blogs.
+            </p>
+        </div>
+    </section>
+    <section id="project-heading col-lg-12">
+      <div class="projects">
+        <h1>Projects</h1>
+      </div>
+    </section>
+    <section id="project-pictures" class="row">
+        <div class="project-one col-xs-12 col-lg-4">
+            <img class="img-responsive" src="img/Best Selling Products.png" alt="Online Clothing Store" />
+        </div>
+        <div class="project-two col-xs-12 col-lg-4">
+            <img class="img-responsive" src="img/Delivery Food.png" alt="Delivery Food Website" />
+        </div>
+        <div class="project-three col-xs-12 col-lg-4">
+            <img class="img-responsive" src="img/Technology.png" alt="Technology Website" />
+        </div>
+    </section>
+  <footer id="contact" class="row">
+    <div class="contact-form col-xs-12 col-lg-6">
+        <h3>Let's Talk</h3>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfPWAt9NW7Zh3YESAWPt3In2FGLVrYbH5vyMgpwMR77UFkMeA/formResponse" method="POST" target="_self" onsubmit="">
+          <label for="entry_535895871">Email</label>
+          <input type="text" name="entry.535895871" value="" dir="auto" aria-label="Email  " title="">
+          <input type="hidden" name="draftResponse" value="[,,&quot;-2119120904556020460&quot;]
+          ">
+          <input type="hidden" name="pageHistory" value="0">
+          <input type="hidden" name="fbzx" value="-2119120904556020460">
+          <label for="emailReceipt" style="display:inline;"></label>
+          <input type="submit" name="submit" value="Submit">
+        </form>
+    </div>
+    <div class="col-lg-6 hidden-xs">
+      <div class="map">
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:300px;width:400px;'><div id='gmap_canvas' style='height:300px;width:400px;'></div><div><small><a href="http://www.embedgooglemaps.com/en/">Generate your map here, quick and easy!									Give your customers directions									Get found</a></small></div><div><small><a href="https://binaireoptieservaringen.nl/">Strategieën en tips</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:17,center:new google.maps.LatLng(30.26739290185739,-97.74151494309581),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(30.26739290185739,-97.74151494309581)});infowindow = new google.maps.InfoWindow({content:'<strong>Title</strong><br>701 Brazos St, Austin, TX 78701<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+      </div>
+    </div>
+    <!-- <div class="container">
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Click Me</button>
+
+    <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+
+      <div class="modal-content">
+        <div class="modal-body">
+          <p>Have a great day!</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div> -->
+    </footer>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 
 </body>
+
 </html>
