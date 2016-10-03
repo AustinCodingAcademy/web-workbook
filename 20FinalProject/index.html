@@ -196,7 +196,45 @@
                 <p class="p6"><i class="fa fa-envelope-o" aria-hidden="true"> lgutierrez788@gmail.com</i></p>
                 <p class="p6"><i class="fa fa-mobile" aria-hidden="true"> 210-818-9310</i></p>
                 <p class="p6"><i class="fa fa-map-o" aria-hidden="true"> San Antonio Tx 78201</i></p>
-                <script type="text/javascript" src="https://form.jotform.com/jsform/62747116052149"></script>
+                <div class="form1">
+                    <script type="text/javascript" src="https://form.jotform.com/jsform/62747116052149"></script>
+                </div>
+                <div class="map">
+                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                    <div style='overflow:hidden;height:440px;width: 300px;'>
+                        <div id='gmap_canvas' style='height:440px;width:300px;'></div>
+                        <div><small><a href="http://www.embedgooglemaps.com/en/">Generate your map here, quick and easy!									Give your customers directions									Get found</a></small></div>
+                        <div><small><a href="http://freedirectorysubmissionsites.com/">with us!</a></small></div>
+                        <style>
+                            #gmap_canvas img {
+                                max-width: none!important;
+                                background: none!important
+                            }
+                        </style>
+                    </div>
+                    <script type='text/javascript'>
+                        function init_map() {
+                            var myOptions = {
+                                zoom: 10,
+                                center: new google.maps.LatLng(29.4241219, -98.49362819999999),
+                                mapTypeId: google.maps.MapTypeId.ROADMAP
+                            };
+                            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                            marker = new google.maps.Marker({
+                                map: map,
+                                position: new google.maps.LatLng(29.4241219, -98.49362819999999)
+                            });
+                            infowindow = new google.maps.InfoWindow({
+                                content: '<strong>location</strong><br>san antonio<br>'
+                            });
+                            google.maps.event.addListener(marker, 'click', function() {
+                                infowindow.open(map, marker);
+                            });
+                            infowindow.open(map, marker);
+                        }
+                        google.maps.event.addDomListener(window, 'load', init_map);
+                    </script>
+                </div>
 
         </section>
 
@@ -210,6 +248,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+
 
         <script>
             new WOW({
