@@ -1,10 +1,393 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <script src="https://use.fontawesome.com/40c199ded7.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar-custom navbar navbar-default" role="navigation">
+            <div>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#resume">Resume</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="home-title-pad">
+                <div class="home-title">
+                    <img src="img/home-logo.png" class="img-responsive">
+                    <p>WEB DESIGN</p>
+                </div>
+            </div>
+        </section>
+
+        <!--PARALLAX 1-->
+        <section>
+            <div class="parallax-container visible-lg" data-parallax="scroll" data-position="top" data-speed="0.5" data-image-src="img/home-img.jpeg" data-natural-width="1400" data-natural-height="900">
+                <div class="box">
+
+                </div>
+            </div>
+            <div class="home-img hidden-lg">
+                <div class="box">
+
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="row">
+                <div class="about-img no-pad col-lg-6">
+                    <img src="img/IMG_5617.jpg" class="img-responsive" />
+                </div>
+                <div class="about-me no-pad col-lg-6">
+                    <img src="img/about-me.png">
+
+                    <p>
+                        I'm Trevor Lujan, 20 year old child who wants to build you your next website. My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+                    </p>
+
+                    <p>
+                        I create beautiful, usable, professional websites using HTML and CSS. Currently learning JavaScript and Jquery while attending Austin Coding Academy.
+                    </p>
+                    <a href="#contact"><i class="fa-custom fa fa-terminal fa-lg" aria-hidden="true"></i>Hire me, I'm really good!</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <img src="img/portfolio.png" />
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="swipe col-lg-5">
+                                    <a href="../14LessonFourteen/in-class-project/index.html">
+                                        <img src="img/bone.png">
+                                    </a>
+                                </div>
+                                <div class="swipe col-lg-7">
+                                    <div class="portfolio-text">
+                                        <h2>Bone</h2>
+                                        <p>This project features a bootstrap resposive navbar, a job application using google forms, a hidden section when you go to mobile and hover effects over the work section. The hover effects include some transformation
+                                            and positon changes.</p>
+                                    </div>
+                                    <a href="../14LessonFourteen/in-class-project/index.html" class="swipe-link">Click Here to see it</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="swipe col-lg-5">
+                                    <a href="../15LessonFifteen/Checkpoint3">
+                                        <img src="img/foundry.png">
+                                    </a>
+                                </div>
+                                <div class="swipe col-lg-7">
+                                    <div class="portfolio-text">
+                                        <h2>Foundry</h2>
+                                        <p>This project features a bootstrap resposive navbar, resposivness across mobile, bootstrap grid system and a input feature at the bottom.</p>
+                                    </div>
+                                    <a href="../15LessonFifteen/Checkpoint3" class="swipe-link">Click Here to see it</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="swipe col-lg-5">
+                                    <a href="../index.html">
+                                        <img src="img/index-page.png">
+                                    </a>
+                                </div>
+                                <div class="swipe col-lg-7">
+                                    <div class="portfolio-text">
+                                        <h2>Index Page</h2>
+                                        <p>This project features the bootstrap resposive grid system, hover effects and styling using css. The hover effects include the lesson title disapearing and the lesson links apearing as well as the links hovering
+                                            up and a shadow apearing below them</p>
+                                    </div>
+                                    <a href="../index.html" class="swipe-link">Click Here to see it</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="swipe lesson16-img col-lg-5">
+                                    <a href="../16LessonSixteen/in-class-project/index.html">
+                                        <img src="img/lesson16-inclass.png" class="">
+                                    </a>
+                                </div>
+                                <div class="swipe col-lg-7">
+                                    <div class="portfolio-text">
+                                        <h2>lesson 16</h2>
+                                        <p>This project features the bootstrap grid system, and css animation. The padding between the divs was acheived by wraping the boxes in multiple divs with padding.</p>
+                                    </div>
+                                    <a href="../16LessonSixteen/in-class-project/index.html" class="swipe-link">Click Here to see it</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="swipe col-lg-5">
+                                    <a href="../10LessonTen/Checkpoint2/index.html">
+                                        <img src="img/checkpoint2.png">
+                                    </a>
+                                </div>
+                                <div class="swipe col-lg-7">
+                                    <div class="portfolio-text">
+                                        <h2>Ties.com</h2>
+                                        <p>This project features knowledge of CSS selectors and precedence. It uses float and clear properties, the box model and has a link to a css reset page.</p>
+                                    </div>
+                                    <a href="../10LessonTen/Checkpoint2/index.html" class="swipe-link">Click Here to see it</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="lesson9-img swipe col-lg-5">
+                                    <a href="../09LessonNine/in-class-project/index.html">
+                                        <img src="img/lesson9-inclass1.png">
+                                        <img src="img/lesson9-inclass2.png">
+                                    </a>
+                                </div>
+                                <div class="swipe col-lg-7">
+                                    <div class="portfolio-text">
+                                        <h2>Landscaping</h2>
+                                        <p>This project features links to seperate web pages, floating, and a css reset stylesheet.</p>
+                                    </div>
+                                    <a href="../09LessonNine/in-class-project/index.html" class="swipe-link">Click Here to see it</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+        <!--PARALLAX 2-->
+        <section>
+            <div class="parallax-container-portfolio visible-lg" data-parallax="scroll" data-position="center" data-speed="0.5" data-image-src="img/portfolio-img.jpeg" data-natural-width="1400" data-natural-height="900">
+                <div class="box2">
+
+                </div>
+            </div>
+            <div class="port-img hidden-lg">
+                <div class="box2">
+
+                </div>
+            </div>
+        </section>
+
+        <section id="resume">
+            <div class="resume-content">
+                <img src="img/resume.png" class="resume-title" />
+
+                <div class="container">
+                    <div class="resume-row row">
+                        <div class="col-lg-2">
+                            <aside>2013-Present</aside>
+                        </div>
+
+                        <div class="col-lg-9">
+                            <h3>Waiter/Server,  A-Tan Sushi Bistro; New Braunfels, Tx</h3>
+
+                            <p>I maintained knowledge of current menu items and specials. Assisted guests with making menu choices in an informative and helpful fashion. Promptly served all food courses and alcoholic beverages to guests. Appropriately suggested
+                                additional items to customers to increase restaurant sales. Delivered exceptional service by greeting and serving customers in a timely, friendly manner. Regularly checked on guests to ensure satisfaction with each food
+                                course and beverages. Assisted with closing duties, including restocking items, cleaning table and counter tops, and preparation for the next day of work.</p>
+                            <div class="col-lg-6">
+                                <div class="map-info">
+                                    <p>(830) 620-1888</p>
+                                    <p>1528 Common St, New Braunfels, TX 78130</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img class="map-img" width="300" src="http://maps.googleapis.com/maps/api/staticmap?center=1528+Common+St,+New+Braunfels,+TX+78130&zoom=13&scale=false&size=300x300&maptype=roadmap&format=png&visual_refresh=true&markers=icon:64x64%7Cshadow:true%7C1528+Common+St,+New+Braunfels,+TX+78130"
+                                    alt="Google Map of 1528 Common St, New Braunfels, TX 78130">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="resume-row row">
+                        <div class="col-lg-2">
+                            <aside>Summer 2013</aside>
+                        </div>
+                        <div class="col-lg-9">
+                            <h3>Administrative Assistant, Window Gallery of Texas; Canyon Lake, Tx</h3>
+
+                            <p>Designed electronic file systems and maintained electronic and paper files for inventory. Organized files, developed spreadsheets, and scanned documents. Taught simple tax preparation. </p>
+
+                            <div class="col-lg-6">
+                                <div class="map-info">
+                                    <p>(830) 964-3343</p>
+                                    <p>1867 FM2673, Canyon Lake, TX 78133</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img class="map-img" width="300" src="http://maps.googleapis.com/maps/api/staticmap?center=1867+FM2673,+Canyon+Lake,+TX+78133&zoom=13&scale=false&size=300x300&maptype=roadmap&format=png&visual_refresh=true&markers=icon:64x64%7Cshadow:true%7C1867+FM2673,+Canyon+Lake,+TX+78133"
+                                    alt="Google Map of 1867 FM2673, Canyon Lake, TX 78133">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-9 col-lg-offset-2">
+                            <h2>Education</h2>
+                        </div>
+                    </div>
+
+                    <div class="resume-row row">
+                        <div class="col-lg-2">
+                            <aside>Class of 2014</aside>
+                        </div>
+                        <div class="col-lg-9">
+                            <h3>Canyon Lake High School</h3>
+                        </div>
+                        <div class="col-lg-2">
+                            <aside>Current</aside>
+                        </div>
+                        <div class="col-lg-9">
+                            <h3>Austin Coding Academy</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <img src="img/contact-me.png">
+
+            <div class="contact-space">
+                <div class="container">
+                    <div class="row">
+                            <script type="text/javascript">
+                                var submitted = false;
+                            </script>
+
+                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='#contact';}"></iframe>
+                            <form action="https://docs.google.com/forms/d/e/1FAIpQLSdln6ZdCnR9OdAotS2IQcxrrPY1DGaveLjcJD3VuG6yAEEtFg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+
+
+                                <div class="col-lg-6">
+                                    <div>
+                                        <input class="contact" placeholder="NAME" type="text" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Name" aria-describedby="i.desc.1463358345 i.err.1463358345" name="entry.1663051195" value="" dir="auto" data-initial-dir="auto" data-initial-value="">
+                                    </div>
+
+                                    <div>
+                                        <input class="contact" placeholder="EMAIL" type="text" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Email" aria-describedby="i.desc.1605910204 i.err.1605910204" name="entry.32125950" value="" dir="auto" data-initial-dir="auto" data-initial-value="">
+                                    </div>
+
+                                    <div>
+                                        <input class="contact" placeholder="PHONE" type="text" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Phone" aria-describedby="i.desc.1703570514 i.err.1703570514" name="entry.1708067418" value="" dir="auto" data-initial-dir="auto" data-initial-value="">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div>
+                                        <textarea class="contact" placeholder="MESSAGE" jsname="YPqjbf" cols="40" rows="8" tabindex="0" aria-label="Message" jscontroller="gZjhIf" jsaction="input:Lg5SV;ti6hGc:XMgOHc;rcuQ6b:WYd;" name="entry.376629685" dir="auto" data-initial-dir="auto" data-initial-value=""></textarea>
+                                    </div>
+
+                                    <button type="submit" name="submit" value="Submit" class="btn">
+                                    Send Message
+                                </button>
+                                </div>
+
+                                <input type="hidden" name="fvv" value="1">
+                                <input type="hidden" name="draftResponse" value="[,,&quot;-3025463300244291383&quot;]">
+                                <input type="hidden" name="pageHistory" value="0">
+                                <input type="hidden" name="fbzx" value="-3025463300244291383">
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>LUJAN | 2016, all rights reserved | think outside the box web design 1-830-237-2434</p>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/40c199ded7.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
+
 </html>
