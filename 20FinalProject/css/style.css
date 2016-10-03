@@ -16,6 +16,15 @@ body {
     /* Chrome, Safari, Opera */
     animation-delay: 1s;
 }
+.thank-you {
+    font-family: 'Rochester', cursive;
+    font-size: 100px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: -450px;
+    text-align: center;
+}
 .carousel-inner {
     min-height: 200px;
     background: transparent;
@@ -98,7 +107,7 @@ body {
     margin: auto;
     margin-top: 100px;
 }
-.resume-button, .form, .submit {
+.resume-button, .form, .submit, .thank-you-index {
     background-color: #404040;
     border: none;
     color: white;
@@ -111,7 +120,7 @@ body {
 ::-webkit-input-placeholder {
     color: black;
 }
-.resume-button:hover, .form:hover, .submit:hover {
+.resume-button:hover, .form:hover, .submit:hover, .thank-you-index:hover {
     background-color: #ffc0cb;
     color: black;
     text-decoration: none;
@@ -119,7 +128,7 @@ body {
 .submit {
     overflow: hidden;
 }
-.resume-button:visited {
+.resume-button:visited, .submit:visited, .thank-you-index:visited, .form:visited {
     text-decoration: none;
     color: white;
 }
@@ -139,19 +148,27 @@ body {
     text-decoration: none;
     color: #337AB7;
 }
+.thank-you-index p, .thank-you-index a {
+    font-family: 'Open Sans', sans-serif
+}
 
 /*tablet*/
 
 @media screen (min-width: 768px) and (max-width: 991px) {
     .fun-facts {
         width: 300px;
+        height: 700px;
+    }
+    .map {
+        width: 300px;
+        height: 400px;
     }
 }
 
 /*mobile*/
 
 @media screen and (max-width: 767px) {
-    .hero-space h1 {
+    .hero-space h1, .thank-you {
         font-size: 100px;
     }
     .overallbox {
