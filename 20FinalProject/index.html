@@ -199,94 +199,95 @@
                 <div class="form1">
                     <script type="text/javascript" src="https://form.jotform.com/jsform/62747116052149"></script>
                 </div>
-                <div class="map">
-                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-                    <div style='overflow:hidden;height:440px;width:400px;'>
-                        <div id='gmap_canvas' style='height:440px;width:400px;'></div>
-                        <div><small><a href="https://www.embedgooglemaps.com/en/">Generate your map here, quick and easy!									Give your customers directions									Get found</a></small></div>
-                        <div><small><a href="https://freedirectorysubmissionsites.com/">Monitored 24/7</a></small></div>
-                        <style>
-                            #gmap_canvas img {
-                                max-width: none!important;
-                                background: none!important
-                            }
-                        </style>
-                    </div>
-                    <script type='text/javascript'>
-                        function init_map() {
-                            var myOptions = {
-                                zoom: 10,
-                                center: new google.maps.LatLng(29.4241219, -98.49362819999999),
-                                mapTypeId: google.maps.MapTypeId.ROADMAP
-                            };
-                            map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-                            marker = new google.maps.Marker({
-                                map: map,
-                                position: new google.maps.LatLng(29.4241219, -98.49362819999999)
-                            });
-                            infowindow = new google.maps.InfoWindow({
-                                content: '<strong>location</strong><br>san antonio<br>'
-                            });
-                            google.maps.event.addListener(marker, 'click', function() {
-                                infowindow.open(map, marker);
-                            });
-                            infowindow.open(map, marker);
+            </div>
+            <div class="map">
+                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                <div style='overflow:hidden;height:440px;width:400px;'>
+                    <div id='gmap_canvas' style='height:440px;width:400px;'></div>
+                    <div><small><a href="https://www.embedgooglemaps.com/en/">Generate your map here, quick and easy!									Give your customers directions									Get found</a></small></div>
+                    <div><small><a href="https://freedirectorysubmissionsites.com/">Monitored 24/7</a></small></div>
+                    <style>
+                        #gmap_canvas img {
+                            max-width: none!important;
+                            background: none!important
                         }
-                        google.maps.event.addDomListener(window, 'load', init_map);
-                    </script>
+                    </style>
                 </div>
+                <script type='text/javascript'>
+                    function init_map() {
+                        var myOptions = {
+                            zoom: 10,
+                            center: new google.maps.LatLng(29.4241219, -98.49362819999999),
+                            mapTypeId: google.maps.MapTypeId.ROADMAP
+                        };
+                        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                        marker = new google.maps.Marker({
+                            map: map,
+                            position: new google.maps.LatLng(29.4241219, -98.49362819999999)
+                        });
+                        infowindow = new google.maps.InfoWindow({
+                            content: '<strong>location</strong><br>san antonio<br>'
+                        });
+                        google.maps.event.addListener(marker, 'click', function() {
+                            infowindow.open(map, marker);
+                        });
+                        infowindow.open(map, marker);
+                    }
+                    google.maps.event.addDomListener(window, 'load', init_map);
+                </script>
+            </div>
 
         </section>
 
 
 
-        </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
 
 
-        <script>
-            new WOW({
-                boxClass: 'wow', // default
-                animateClass: 'animated', // default
-                offset: 0, // default
-                mobile: true, // default
-                live: true // default
-            }).init();
-        </script>
-        <script>
-            // Add scrollspy to <body>
-            $('body').scrollspy({
-                target: ".navbar",
-                offset: 50
-            });
-            // Add smooth scrolling on all links inside the navbar
-            $("#example-navbar-collapse a, .navbar-brand").on('click', function(event) {
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
+    <script>
+        new WOW({
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 0, // default
+            mobile: true, // default
+            live: true // default
+        }).init();
+    </script>
+    <script>
+        // Add scrollspy to <body>
+        $('body').scrollspy({
+            target: ".navbar",
+            offset: 50
+        });
+        // Add smooth scrolling on all links inside the navbar
+        $("#example-navbar-collapse a, .navbar-brand").on('click', function(event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
 
-                    // Store hash
-                    var hash = this.hash;
+                // Store hash
+                var hash = this.hash;
 
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function() {
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function() {
 
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        </script>
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    </script>
 </body>
 
 
