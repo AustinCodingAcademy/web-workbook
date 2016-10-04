@@ -1,0 +1,116 @@
+/*Redoing my CSS as it is now blank. Good practice using bootstrap!*/
+
+.boxone {
+    height: 500px;
+    width: 100%;
+    background-color: aqua;
+}
+.header h1 {
+    font-size: 100px;
+    line-height: 52px;
+    padding-top: 200px;
+    color: white;
+    vertical-align: middle;
+}
+
+/*Here, I begin code for the black box beneath the first one: */
+
+.boxtwo {
+    height: 900px;
+    width: 100%;
+    background-color: #1b1b1b;
+    color: white;
+}
+.boxtwo h1 {
+    font-size: 50px;
+}
+.boxtwo p {
+    font-size: 35px;
+}
+.blue {
+    height: 300px;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.bluetab {
+    background-color: blue;
+    height: 60px;
+    width: 60%;
+    margin: auto;
+}
+.orange {
+    height: 300px;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.orangetab {
+    background-color: orange;
+    height: 60px;
+    width: 60%;
+    margin: auto;
+}
+.aqua {
+    height: 300px;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.aquatab {
+    background-color: aqua;
+    height: 60px;
+    width: 60%;
+    margin: auto;
+}
+
+/*The following is media query for tablet. Do I need a separate one for phone? Or do I simply leave out the max-width attribute?*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .header h1 {
+        font-size: 50px;
+        /*line-height: 52px;*/
+        /*padding-top: 200px;*/
+        vertical-align: middle;
+    }
+    /*Why is the aqua box (the last one) overlapping the blue (first) box? It seems to me that it should slide right under the other box. got the answer! I had more than 12!*/
+    .boxtwo {
+        height: 1900px;
+        width: 100%;
+        background-color: grey;
+    }
+    .boxblue {
+        margin-top: 50px;
+    }
+    .boxorange {
+        margin-top: 50px;
+    }
+    .blue {
+        margin-top: 100px;
+    }
+    .orange {
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+    .aqua {
+        margin-top: 100px;
+    }
+}
+@media (max-width: 767px) {
+    .header h1 {
+        font-size: 50px;
+        /*line-height: 52px;*/
+        padding-top: 100px;
+        vertical-align: middle;
+    }
+    /*I had to change the height for the .boxtwo to keep the text from each box from operlapping.*/
+    .boxtwo {
+        font-size: 30px;
+        height: 1100px;
+        width: 100%;
+        background-color: grey;
+    }
+    .boxtwo p {
+        font-size: 20px;
+    }
+}
