@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Animate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+
+
+
+<div class="row gallery">
+  <h1 class="col-xs-12 text-center">Examples of My Work</h1>
+  <a href="#" class="popup col-lg-2 col-sm-4 col-xs-6 text-center">
+      <img class="thumb" src="img/cowboy.jpg">
+  </a>
+  <a href="#" class="popup col-lg-2 col-sm-4 col-xs-6 text-center">
+      <img class="thumb" src="img/balm-family.jpg">
+  </a>
+  <a href="#" class="popup col-lg-2 col-sm-4 col-xs-6 text-center">
+      <img class="thumb" src="img/cowboy.jpg">
+  </a>
+  <a href="#" class="popup col-lg-2 col-sm-4 col-xs-6 text-center">
+      <img class="thumb" src="img/balm-family.jpg">
+  </a>
+  <a href="#" class="popup col-lg-2 col-sm-4 col-xs-6 text-center">
+      <img class="thumb" src="img/cowboy.jpg">
+  </a>
+  <a href="#" class="popup col-lg-2 col-sm-4 col-xs-6 text-center">
+      <img class="thumb" src="img/balm-family.jpg">
+  </a>
+  <a href="#" class="popup col-lg-2 col-sm-4 col-xs-6 text-center">
+      <img class="thumb" src="img/cowboy.jpg">
+  </a>
+  <a href="#" class="popup col-lg-2 col-sm-4 col-xs-6 text-center">
+      <img class="thumb" src="img/balm-family.jpg">
+  </a>
+  <a href="#" class="popup col-lg-2 col-sm-4 col-xs-6 text-center">
+      <img class="thumb" src="img/cowboy.jpg">
+  </a>
+
+
+
+</div>
+
+
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <img src="" class="imagepreview">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js "></script>
+    <script>
+        $(function() {
+            $('.popup').on('click', function() {
+                $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+                $('#imagemodal').modal('show');
+            });
+        });
+    </script>
+</body>
+
+</html>
