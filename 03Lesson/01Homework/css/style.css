@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  display: flex;
 }
 
 div {
@@ -8,23 +9,22 @@ div {
   display: inline-block;
 }
 
-#berries-pic {
-  
-}
-
 #berries-pic img {
   height: 100%;
   width: 100%;
 }
 
 #berries-info {
+  width: 500px;
+  height: 500px;
+  display: inline-block;
   background-color: rgb(240,240,240);
-  vertical-align: top;
+  overflow: hidden;
   padding: 0px 20px;
+  position: relative;
 }
 
 h1 {
-  margin-top: 150px;
   color: #252b3b;
   font-size: 1.9em;
 }
@@ -39,4 +39,12 @@ a {
   font-weight: bold;
   border: 2px solid #555;
   padding: 5px;
+}
+
+#align-items {
+  position: absolute;
+  display: block;
+  height: auto;
+  top: 50%;
+  transform: translateY(-50%);
 }
