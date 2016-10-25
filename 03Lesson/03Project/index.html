@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <!-- <script>
       var emitters = document.getElementsByClassName("title");
 
@@ -15,6 +16,13 @@ var emitter1 = {
     gravity: 1
 };
       </script> -->
+  <script type="text/javascript">
+      $(document).ready( function(e) {
+          $('#summary').hover( function( evt ) {
+              $('#detail').toggle();
+    });
+});
+</script>
         <title>Phillip Alexander Meek - Wizard</title>
         <link rel="stylesheet" href="css/style.css"/>
     </head>
@@ -24,8 +32,10 @@ var emitter1 = {
           <h1 class="title">Phillip Alexander Meek</h1>
         </header>
       </section>
+      <div id="summary">Sample</div>
+      <div id="detail">Detail of theis summary</div>
       <section class="employment"><h2>Employment</h2>
-        <article class="wb">
+        <article id="detail">
           <h4>WB Liquors</h4>
             <details>
               <h4>Cedar Park, TX May 2016 – Present</h4> <br>
