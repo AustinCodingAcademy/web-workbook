@@ -1,27 +1,124 @@
-* {
-  border: 1px dotted red;
+/* Layout */
+
+html {
+  background-color: #ccc;
 }
 
 body {
-  width: 75%;
-  margin: 0 auto;
+    width: 75%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 5px;
+}
+
+header, aside {
+    width: 30%;
+    padding: 0 2%;
 }
 
 header {
-  text-align: right;
-  float: left;
-}
-
-header h1 {
-  font-family: 'Gotham Narrow', sans-serif;;
+    text-align: right;
+    clear: right;
+    margin: 80px 0 0;
 }
 
 aside {
-  text-align: right;
-  clear: both;
-  width: 20%;
+    text-align: right;
+    float: left;
+    margin: 60px 0 0;
 }
 
 main {
-  float: left;
+    float: left;
+    width: 60%;
+    padding: 0 2%;
+    margin: 60px 0 0;
+}
+
+footer {
+    clear: both;
+    text-align: right;
+}
+
+/* Base Typography - Based on Fluid Baseline Grid v1.0.0
+	Designed & Built by Josh Hopkins and 40 Horse, http://40horse.com   */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+    word-wrap: break-word;
+}
+
+h1 {
+    font-size: 3.75em;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 0 0 0.4em;
+}                                              /* 60px / 72px */
+
+h2 {
+    font-size: 3em;
+    line-height: 1em;
+    margin: 0 0 0.5em;
+    text-transform: uppercase;
+}                                              /* 48px / 48px */
+
+h3 {
+    font-size: 2.25em;
+    line-height: 1.3333em;
+    margin: 0 0 0.6667em;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+}                                              /* 36px / 48px */
+
+h4 {
+    font-size: 1.5em;
+    line-height: 1em;
+    margin: 0 0 1em;
+}                                              /* 24px / 24px */
+
+h5 {
+    font-size: 1.3125em;
+    line-height: 1.1429em;
+    margin: 0 0 1.1429em;
+    font-style: italic;
+}                                              /* 21px / 24px */
+
+h6 {
+    font-size: 1.125em;
+    line-height: 1.3333em;
+    margin: 0 0 1.3333em;
+    text-transform: uppercase;
+}                                              /* 18px / 24px */
+
+p, ul, blockquote, pre, td, th, label {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0 0 1.5em;
+}                                              /* 16px / 24px */
+
+small, p.small {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    font-size: 0.875em;
+    line-height: 1.7143em;
+    margin: 0 0 1.7143em;
+}                                               /* 14px / 24px */
+
+p:last-child, li:last-child {
+  margin-bottom: 60px;
+}
+
+/* My Type Edits */
+
+.professional-profile h3, .education h3, .awards h3, .skills h3, .experience h3{
+  display: block;
+  background-color: black;
+  color: #fff;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+p, li {
+  margin-bottom: 12px;
 }
