@@ -1,144 +1,48 @@
-body {
-    clear: both;
-    margin: 0 auto;
-}
-
-article {
-    width: 50%;
-    height: auto;
-    margin: 0 auto;
-    /*display: flex;*/
-    clear: both;
-}
-
-aside {
-    width: 50%;
-    height: auto;
-    margin: 0 auto;
-    /*display: flex;*/
-    clear: both;
-}
-
-.berries {
-    position: relative;
-    float: left;
-    clear: both;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
 .image {
     position: relative;
+    width: 500px;
+    height: 400px;
     float: left;
-    clear: both;
-    width: 100%;
-    height: auto;
+    display: inline;
     margin: 0 auto;
 }
 
-section {
-    display: flex;
-    clear: both;
-}
+aside {}
 
-
-/*
-@media screen and (min-width:800px) {
-    section, aside {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:800px) and (min-width:540px) {
-    /* this is the breakpoint where we transition from the first layout, of
-        four side-by-side columns, to the square layout with 2X2 grid
-    section, aside {
-        width: 50%;
-        display: inline-block;
-    }
-}
-*/
-
-
-/*custom styling info for smartphones small screens;*/
-
-
-/* @media screen and (max-width:850px) {
-    article, aside {
-        position: relative;
-        width: inherit;
-        display: flex;
-        white-space: nowrap;
-        max-width: 50%;
-    }
-}
-*/
-
-@media (min-width: 400px) and (max-width: 850px) {
-    .text {
-        position: absolute;
-        /*max-width: 50%;*/
-        display: inline-block;
-        /*font-size: 0;*/
-        z-index: 2;
-    }
-}
-
-@media (min-width: 400px) and (max-width: 850px) {
-    .berries {
-        position: absolute;
-        /*max-width: 50%;*/
-        display: inline-block;
-        /*font-size: 0;*/
-        z-index: 2;
-    }
+.box {
+    display: inline;
 }
 
 .text {
     position: relative;
-    clear: both;
-    padding: 3%;
+    width: 500px;
+    height: 400px;
     margin: 0 auto;
-    float: right;
+    color: #555;
+    font-family: Helvetica, sans-serif;
     background-color: rgb(240, 240, 240);
 }
 
-.headline {
+.text h2 {
     position: relative;
     margin: 0 auto;
-    padding: 0 42% 0 42%;
+    color: #252b3b;
     font-size: 1.9em;
-    color: #252b3b;
+    text-align: center;
+    padding: 5%;
 }
 
-.text>p {
-    color: #555;
-    padding-bottom: 20px;
-    text-overflow: ellipsis;
+.text p {
+    padding: 5%;
 }
 
-a {
-    text-decoration: none;
-}
-
-.read {
+.readmore {
     position: relative;
-    color: #252b3b;
+    font-style: bold;
+    color: 252b3b;
     border: 2px solid;
-    padding: 5px;
-    width: 117px;
-    margin: 0 auto;
-    transition: .5s linear;
+    padding: 2.5%;
     text-decoration: none;
-}
-
-.read:hover {
-    color: #F74440;
-    color: rgba(247, 68, 64, 1);
-    color: hsla(1, 92%, 61%, 1);
-    transition: .5s linear;
-}
-
-
+    width: 40%;
+    margin: 0 auto;
 }
