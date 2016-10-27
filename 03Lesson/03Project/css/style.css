@@ -13,20 +13,32 @@ section.header {
 
 /*look for flexbox information*/
 
-#WB {
+.WB {
     width: 100px;
-    color: #fff;
-}
-
-#WB:hover {
-    cursor: pointer;
     color: #000;
 }
 
-#WBdetail {
+.WB:hover {
+    cursor: pointer;
+    color: #7320df;
+    color: hsla(266, 75%, 50%, 1);
+    color: rgba(115, 32, 223, 1);
+}
+
+.WBdetail {
     width: 300px;
     height: 300px;
     display: none;
+}
+
+.reveal {
+    display: block;
+}
+
+.out {
+    display: none;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
 }
 
 .title {
@@ -117,6 +129,18 @@ section {
     width: 70%
 }
 
+section>article {}
+
 aside {
     width: 20%;
+}
+
+
+/* Animate CSS */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
