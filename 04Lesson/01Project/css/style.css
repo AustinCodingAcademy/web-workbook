@@ -2,23 +2,42 @@
   font-family: sans-serif;
 }
 
+body {
+  margin: 0 auto;
+  width: 850px;
+}
+
 #container {
   background-image: url(../img/nasa-background.jpg);
   height: 450px;
   width: 850px;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin-top: 10px;
 }
 
-textarea {
-  margin-left: 20px;
+section {
+  margin-top: 10px;
+  background-color: #E6E6E6;
+  width: 850px;
+  height: 324px;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: " ";
+  clear: both;
 }
 
 .boxes {
   height: 324px;
   width: 290px;
-  background-color: lightgrey;
-  display: inline;
   float: left;
   margin-top: 20px;
+  border-left: 0px;
+
 }
 
 #box-one {
@@ -28,15 +47,14 @@ textarea {
 h1 {
   color: white;
   text-align: center;;
-  vertical-align: middle;
   line-height: 450px;
   font-size: 6em;
+  margin-top: 10px;
 }
 
 h3 {
   padding-left: 20px;
   margin-bottom: 30px;
-  margin-top: 30px;
 }
 
 p {
@@ -46,3 +64,32 @@ p {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+#button {
+  color: white;
+  background-color: dimgrey;
+  border: dimgrey;
+  margin-top: 10px;
+  width: 100px;
+}
+
+input, textarea {
+  width: 210px;
+}
+
+/*div:nth-of-type(2) {
+  width: 33%;
+  float: left;
+}
+
+div:nth-of-type(3) {
+  width: 33%;
+  float: left;
+  margin-left: 20px;
+}
+
+div:nth-of-type(4) {
+  width: 23%;
+  float: left;
+  margin-left: 20px;
+}*/
