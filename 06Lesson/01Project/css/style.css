@@ -1,6 +1,6 @@
 body {
   width: 100%;
-  font-family: "Palatino Linotype";
+  font-family: Arial;
 }
 
 header {
@@ -21,9 +21,11 @@ p {
 }
 
 main {
-  width: 1000px;
+  width: 1050px;
+  box-sizing: border-box;
   margin: auto;
 }
+
 section {
   background-color: #F7F7F7;
   width: 500px;
@@ -73,14 +75,10 @@ aside {
   margin-right: 5px;
 }
 
-.footitem {
-  width: 1000px;
-  margin: auto;
-  clear: both;
-}
-
 .tick {
   list-style: none;
+  font-size: 14px;
+  line-height: 25px;
 }
 
 span {
@@ -88,7 +86,28 @@ span {
 }
 
 footer {
-  width: 1000px;
-  height: 250px;
-  margin: auto;
+  width: 1020px;
+  display: inline-block;
+  border-top: 2px solid #a9a4aa;
+  border-bottom: 2px solid #a9a4aa;
+}
+
+.info {
+  width: 300px;
+  height: 150px;
+  color: #a9a4aa;
+  box-sizing: border-box;
+  float: left;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.info:first-child, .info:nth-child(2) {
+  border-right: 2px solid #a9a4aa;
+  margin-right: 30px;
+}
+
+.info:first-child h4, .info:nth-child(2) h4 {
+  margin-left: 20px;
 }
