@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+
+}
 
 body {
   width: 75%;
@@ -6,7 +10,8 @@ body {
 
 }
 p, div{
-  width: 700px;
+/*  width: 700px; This was the bug with the p running over
+*/
   font-size: 11px;
   color: black;
   font-family: sans-serif;
@@ -40,11 +45,23 @@ h2{
 .txtleft{
   width: 325px;
   height: 185px;
+  border: 3px solid black;
   float: left;
+  padding: 0 45px 0 10px;
+
 }
+
+/*.fltleftxt{
+  text-align: left;
+  width: 300px;
+  word-wrap: break-word;
+}
+*/
+}
+
 .imgright{
   float: right;
-  overflow: auto;
+
 }
 
 .thirdbanner{
