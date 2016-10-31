@@ -2,11 +2,11 @@ header{
   max-width: 690px;
   max-height: 77px;
   margin: auto;
-  background-color: #5c5c58;
-  padding: 40px;
-  padding-top: 18px;
-  margin-bottom: 10px;
-  margin-top: 18px;
+  padding: 18px 40px 18px 40px;
+  /*
+  padding-right: 40px;
+  padding-top: 18px;*/
+  margin-bottom: 40px;
   clear: both;
 }
 
@@ -22,12 +22,18 @@ header h1{
   text-align: center;
   font-family: "trebuchet", arial, sans-serif;
   font-weight: lighter;
+  font-size: 24px;
 }
 
 header p{
   margin: auto;
+  padding-top: 20px;
+  padding-bottom: 30px;
   text-align: center;
+  font-family: sans-serif;
+  font: 'arial';
   color: #cacfd3;
+  font-size: 14px;
 }
 
 article{
@@ -42,6 +48,7 @@ article{
 
 }
 
+/*
 article h6{
   width: 340px;
   font-style: normal;
@@ -49,11 +56,31 @@ article h6{
   font-size: 14px;
   font-weight: lighter;
   padding: 10px;
+  margin-top: 10px;
+
+}
+*/
+
+aside{
+  float: right;
+  width: 325px;
+  height: 350px;
+  background-color: white;
+  overflow: hidden;
+  margin-left: 3px;
+  border-radius: 5px;
 
 }
 
+.left > img{
+  clear: both;
+}
 .rightone, .righttwo{
   margin-bottom: 10px;
+  overflow: auto;
+}
+
+.rightthree{
   overflow: auto;
 }
 
@@ -62,23 +89,43 @@ article h6{
   clear: both;
 }
 
-.onecontent{
-  width: 170px;
+.leftcontent{
+  background-color: green;
+  box-sizing: border-box;
+  width: 320px;
+  height: 120px;
+  padding: 10px 10px 10px 0px;
+  float: left;
+  background-color: #f2f3f0;
+  margin-left: 0px;
+  overflow:auto;
+}
+
+.leftcontent h6{
+  width: 320px;
+}
+.leftcontent p{
+  width: 320px;
+}
+
+
+.rightcontent{
+  box-sizing: border-box;
+  width: 175px;
   height: 75px;
   float: right;
-  background-color: green;
-  margin-left: 10px;
+  background-color: #f2f3f0;
+  margin-left: 6px;
   overflow:auto;
 
 }
 
-.onetitle{
-  margin-top: 0px;
-  margin-right: 0px;
-  width: 100px;
+.title{
+  margin: 0px;
+  width: 170px;
   float: left;
   clear: right;
-  padding-top: 10px;
+  padding-top: 0px;
   font-size: 14px;
   font-style: normal;
   font-family: sans-serif;
@@ -88,21 +135,50 @@ article h6{
 
 }
 
-.onepar{
+.par{
   margin: 0px;
   font-size: 11px;
   font-style: normal;
   font-family: sans-serif;
   font: 'trebuchet';
   font-weight: lighter;
-  width: 100px;
+  width: 170px;
   float: left;
-  padding-top: 0px;
+  padding-top: 10px;
   padding-bottom: 10px;
-
+  line-height: 18px;
 
 }
 
+/* was trying to use attribute selectors and was unable to predict them.
+[h6$="title"]{
+  margin: 0px;
+  width: 170px;
+  float: left;
+  clear: right;
+  padding-top: 0px;
+  font-size: 14px;
+  font-style: normal;
+  font-family: sans-serif;
+  font: 'trebuchet';
+  font-weight: lighter;
+
+}
+
+[p$="par"]{
+  margin: 0px;
+  font-size: 11px;
+  font-style: normal;
+  font-family: sans-serif;
+  font: 'trebuchet';
+  font-weight: lighter;
+  width: 170px;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 18px;
+}
+*/
 
 aside > div{
   margin: auto;
@@ -110,17 +186,6 @@ aside > div{
   width: 325px;
   height: 90px;
   padding: 10px;
-  border-radius: 5px;
-
-}
-
-aside{
-  float: right;
-  width: 325px;
-  height: 350px;
-  background-color: red;
-  overflow: hidden;
-  margin-left: 3px;
   border-radius: 5px;
 
 }
