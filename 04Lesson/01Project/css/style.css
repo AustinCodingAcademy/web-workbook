@@ -1,6 +1,9 @@
 body {
     width: 90%;
     margin: 0 auto;
+    font-family: arial;
+    color:rgba(40, 43, 43, 0.86);
+
 }
 
 #nasa {
@@ -10,7 +13,6 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-top: 20px;
     margin: 0 auto;
 }
 
@@ -19,6 +21,7 @@ body {
     font-size: 100px;
     text-align: center;
     padding-top: 150px;
+
 }
 
 #info {
@@ -27,17 +30,20 @@ body {
 }
 
 div {
-    float: left;
-    width: 270px;
-    height: 324px;
     background-color: lightgrey;
-    margin-top: 30px;
-    padding-top: 20px;
 }
 
-#social a {
+p {
+    line-height: 2em;
+}
+
+.social {
+    padding-left: 20px;
+}
+
+.social a {
     text-decoration: none;
-    color: black;
+      color:rgba(40, 43, 43, 0.86);
 }
 
 #officeinfo {
@@ -46,9 +52,32 @@ div {
 }
 
 .column {
-
+    float: left;
+    width: 270px;
+    height: 324px;
+    margin-top: 30px;
+    padding-top: 20px;
 }
-
+input[type=text]{
+  border:none;
+  height:25px;
+  width:220px;
+}
+input[type=text][name=message]{
+  height:100px;
+  width:220px;
+  border:none;
+}
+button {
+    background-color: rgba(40, 43, 43, 0.86);
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
 .clearfix:after {
     display: block;
     content: " ";
