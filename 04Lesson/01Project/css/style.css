@@ -1,10 +1,19 @@
 .center {
-  margin: 0 auto 25 auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 850px;
 }
 
 body {
   margin: 0 auto;
+}
+
+.hero:hover {
+  background-image: url("http://static.srcdn.com/wp-content/uploads/alien-covenant-movie-images-cast.jpg");
+}
+
+.hero:hover #hero-header {
+  display: none;
 }
 
 h1 {
@@ -13,11 +22,11 @@ h1 {
   font-size: 5em;
   text-align: center;
   padding-top: 170px;
+  margin: 0px;
 }
 
 * {
-  font-family: arial;
-
+  font-family: Optima;
 }
 
 footer {
@@ -29,7 +38,6 @@ footer {
   width: 850px;
   height: 450px;
   background-position: cover;
-  margin-top: -75px;
 }
 
 .thirds {
@@ -50,21 +58,23 @@ footer {
 
 h3 {
   font-weight: bold;
+  padding-top: 15px;
 }
 
-div.name {
-  height: 30px;
-  width: 220px;
-  margin-left: 15px;
+input {
+  width: 80%;
+  font-size: 1.3em;
+}
+
+input[name="name"] {
   background-color: white;
 }
 
-div.message {
-  height: 70px;
-  width: 220px;
-  margin-left: 15px;
+input[name="message"] {
+  padding-bottom: 55px;
   background-color: white;
   margin-bottom: 10px;
+  font-size: .8em;
 }
 
 div.send {
