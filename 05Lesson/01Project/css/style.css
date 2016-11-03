@@ -2,6 +2,7 @@ body {
     background-color: black;
     width: 55%;
     margin: 0 auto;
+    font-family: arial;
 }
 
 header {
@@ -13,11 +14,6 @@ header {
 header h1 {
     font-size: 125px;
     text-align: center;
-}
-
-div {
-    background-color: rgb(153, 76, 173);
-    color: yellow;
 }
 
 section h2 {
@@ -39,6 +35,8 @@ section h2 {
     font-weight: bold;
     padding-left: 20px;
     padding-top: 25px;
+    background-color: rgb(153, 76, 173);
+    color: yellow;
 }
 
 .quote p:nth-child(2) {
@@ -51,14 +49,13 @@ section h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
 
 #membership {
     width: 100%;
     font-size: 45px;
     text-align: center;
-    padding:25px;
+    padding: 25px;
     padding-top: 75px;
 }
 
@@ -68,16 +65,73 @@ section h2 {
     margin: 15px 0px 50px 0px;
     text-align: center;
     font-size: 25px;
+    background-color: rgb(153, 76, 173);
+    color: yellow;
 }
 
 footer {
-    background-color: grey;
-    width: 115%;
-    margin-left:-65px;
-}
-input{
-  font-size: 25px;
-}
-button{
 
+  width: 115%;
+  margin-left: -65px;
+
+
+}
+
+form {
+    display:flex;
+    font-size: 30px;
+    width: 100%;
+    padding-left: 50px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+
+
+    background-color: grey;
+}
+
+
+/*label{
+  display: inline-block;
+}*/
+
+input[type=text][name="name"]{
+
+    border: 2px solid black;
+    font-size: 25px;
+    padding: 10px;
+    width: 300px;
+
+}
+input[type=text][name="email"]{
+
+    border: 2px solid black;
+    font-size: 25px;
+    padding: 10px;
+    width: 300px;
+}
+input[type=text][name="phone"]{
+
+    border: 2px solid black;
+    font-size: 25px;
+    padding: 10px;
+    width: 300px;
+}
+
+#contact-1 {
+    width: 40%;
+
+}
+
+#contact-2 {
+    width: 55%;
+
+}
+
+button {
+  border: 5px solid black;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: darkgrey;
+  width: 90%;
+  height: 100px;
 }
