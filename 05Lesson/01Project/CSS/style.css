@@ -50,22 +50,34 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
-    align-items: stretch;
+    align-items: center;
     padding: 2.5%;
     width: 66.6%;
     margin: 0 auto;
 }
 
-article {
-    margin: 0 auto;
-    width: 33.3%;
+#testimonials>article {
+    width: 44.4%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto
+}
+
+
+/** {
+    box-sizing: border-box;
+}*/
+
+
+/*article {
+    width: 44.4%;
     height: 50px;
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: 0;
-}
+    flex-basis: auto;
+}*/
 
 .quote {
     position: relative;
@@ -76,7 +88,6 @@ article {
     height: 250px;
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: auto;
     padding: 2.5% 0 0 2.5%;
 }
 
@@ -84,6 +95,36 @@ article {
     height: 250px;
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: auto;
     padding: 2.5% 0 0 2.5%;
+}
+
+#membership {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#membership>h2 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5%;
+    text-align: center;
+}
+
+.level {
+    position: relative;
+    padding: 2.5%;
+    margin: 0 auto;
+    flex-basis: auto;
+    background-color: purple;
+    width: 33.3%;
+}
+
+.bronze, .silver, .gold {
+    height: 100px;
+    width: auto;
 }
