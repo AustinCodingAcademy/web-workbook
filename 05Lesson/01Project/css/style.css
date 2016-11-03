@@ -1,25 +1,97 @@
 body {
-  background-color: darkgray;
-  font-family: sans-serif;
-  margin: 0;
+  background-color: #000;
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  margin: 0 auto;
 }
 
 header {
   background-color: yellow;
   color: black;
+  width: 60%;
+  margin: 40px auto 20px;
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 h1 {
-  flex-align: center;
-  align-self: center;
+  flex: 0 1 auto;
+  font-size: 48px;
+  font-weight: 400;
 }
 
-article {
-  background-color: purple;
-  color: yellow;
-}
-
-section {
+.flex-container {
+  width: 60%;
+  margin: 0 auto 20px;
   display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#quotes.flex-container {
+  flex-wrap: nowrap;
+}
+
+#memberships.flex-container {
+  flex-wrap: wrap;
+}
+
+#form.flex-container {
+  flex-wrap: reverse-wrap;
+}
+
+.flex-item-1 {
+  background-color: #702090;
+  color: yellow;
+  width: 50%;
+}
+
+.flex-item-2 {
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+}
+
+.flex-item-3 {
+  background-color: #702090;
+  color: yellow;
+  text-align: center;
+  width: 20%;
+  padding: 20px 10px 30px;
+}
+
+.flex-item-4 {
+  width: 50%;
+}
+
+#quotes article {
+  padding: 10px;
+}
+
+#quotes p {
+  text-align: right;
+}
+
+#quotes blockquote {
+  margin-left: 0;
+}
+
+#schorbinator {
+  margin-right: 5px;
+}
+
+#terminator {
+  margin-left: 5px;
+}
+
+#form {
+  width: 70%;
+  background-color: darkgray;
+}
+
+textarea {
+  width: 150px;
+  height: 20px;
 }
