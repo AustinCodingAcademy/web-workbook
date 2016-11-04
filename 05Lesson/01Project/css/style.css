@@ -38,7 +38,9 @@ h1 {
 }
 
 #form.flex-container {
-  flex-wrap: reverse-wrap;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
 }
 
 .flex-item-1 {
@@ -60,10 +62,6 @@ h1 {
   text-align: center;
   width: 20%;
   padding: 20px 10px 30px;
-}
-
-.flex-item-4 {
-  width: 50%;
 }
 
 #quotes article {
@@ -88,10 +86,24 @@ h1 {
 
 #form {
   width: 70%;
+  padding: 20px;
   background-color: darkgray;
 }
 
+#form p {
+  width: 50%;
+}
+
 textarea {
-  width: 150px;
+  width: 100%;
   height: 20px;
+}
+
+input {
+  font-size: 18px;
+  font-weight: 900;
+  width: 50%;
+  background-color: #777;
+  border: 3px solid black;
+  border-radius: 3px;
 }
