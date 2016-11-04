@@ -1,16 +1,35 @@
 
-body, html {
-  /*width: 100%;*/
+/*body, html {
+  width: 100%;
   background-color: white;
   height: 100%;
+}*/
+
+body, html {
+  width: 900px;
+  height: 432px;
+  background-color: white;
+
 }
-.landingpage{
+main {
+  width: 900px;
+  height: 432px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5) ),
+    url(../img/1.jpg);
+}
+
+/*.landingpage{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../img/1.jpg);
-  /*background-size: cover;*/
+  background: url(../img/1.jpg);
   background-repeat: no-repeat;
   color: white;
   margin: auto;
@@ -18,10 +37,11 @@ body, html {
   width: 100%;
   height: 90%;
   max-height: 600px;
-}
+}*/
 
-.imagelayer {
-  background-color: rgba(0, 0, 0, 0.5);
+.layer {
+  height: 100%;
+  background:rgba(0, 0, 0, 0.5);
 }
 
 .landscape {
@@ -35,13 +55,19 @@ body, html {
 }
 
 .services {
-  font-size: 1em;
+  font-size: 18px;
   margin-top: 10px;
 }
 
 .button {
-  margin: 20px;
+  margin: 23px;
+  padding: 10px 15px;
   background-color: #91B202;
+  border: none;
   color: white;
-  font-size: 5px;
+  font-size: 9px;
+}
+
+.arrow {
+  margin-left: 7px;
 }
