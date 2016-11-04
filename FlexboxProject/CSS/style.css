@@ -1,13 +1,15 @@
 body {
   background-color: black;
   font-family: sans-serif;
+  margin: auto;
+  width: 80%;
   /*display: flex;*/
 }
 header {
   display: flex;
   background-color: yellow;
   height: 150px;
-  width: 60%;
+  width: 100%;
   /*text-align: center;*/
   margin: auto;
   font-size: 50px;
@@ -18,25 +20,37 @@ header {
   margin-top: 80px;
 }
 section {
-  width: 60%;
-  margin-top: 40px;
   display: flex;
-  justify-content: center;
+  height: 150px;
+  width: 100%;
+  padding-top: 30px;
   color: yellow;
+  /*justify-content: space-between;*/
+  margin: auto;
   justify-content: space-between;
+  /*align-items: center;*/
+  /*align-content: center;*/
 
 
 }
-section div {
+section > div {
+  display: flex;
+  flex-direction: column;
   background-color: darkviolet;
   height: 180px;
-  width:300px;
-  display: inline-block;
+  width: 400px;
+  justify-content: space-around;
+  align-content: space-around;;
+  font-size: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
-
-
+p {
+  align-self: flex-end;
 }
 #left {
+
 
 
 }
@@ -44,6 +58,7 @@ section div {
   /*margin-left: 10px;*/
 
 }
-p {
-  font-size: 20px;
+
+h2 {
+
 }
