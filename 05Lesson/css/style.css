@@ -6,10 +6,12 @@ body {
 
 header {
   background-color: yellow;
-  font-size: 2em;
-  text-align: center;
+  font-size: 3em;
   height: 90px;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
@@ -20,10 +22,13 @@ h1 {
   color: yellow;
   background-color: #9825fb;
   flex: 1 1 auto;
-  text-align: center;
   margin: 5px;
   height: 150px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 10px;
+  width: 20px;
 
 }
 
@@ -58,7 +63,11 @@ h2 {
   color: yellow;
   width: 150px;
   height: 125px;
-  text-align: center;
+  line-height: 2px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .info {
@@ -87,4 +96,9 @@ form {
     display: inline-block;
     font-size: 20px;
     font-weight: bolder;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
   }
