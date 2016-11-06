@@ -35,12 +35,25 @@ header p{
 
 #quotesContainer div{
   height: 150px;
-  width: 290px;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#quotesContainer div p:nth-child(2){
+  align-self: flex-end;
 }
 
 div{
   color: yellow;
   background-color: #aa42f4;
+}
+
+h2{
+  color: white;
+  margin: 0 auto;
+  padding-top: 35px;
 }
 
 #membershipsContainer{
@@ -51,13 +64,42 @@ div{
 }
 
 #membershipsContainer div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   width: 150px;
   height: 150px;
 }
 
 form{
-  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-around;*/
+  /*align-items: center;*/
+  background-color: #a8a8a8;
   width: 600px;
   height: 125px;
+  font-size:25px:
+}
+
+form section{
+  /*height: 40px;*/
+  width: 275px;
+  /*margin: 10px;*/
+}
+
+
+#name #email{
+  margin: 10px;
+  height: 20px;
+  /*align-self: flex-start;*/
+}
+
+#phone {
+  justify-content: flex-start;
+  align-self: flex-end;
+}
+#submit {
+  align-self: flex-end;
 }
