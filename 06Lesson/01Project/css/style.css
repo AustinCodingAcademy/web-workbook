@@ -1,42 +1,45 @@
-header{
+header {
   max-width: 690px;
   max-height: 77px;
-  margin: auto;
+  margin: 40px auto;
   padding: 18px 40px 18px 40px;
-  /*
-  padding-right: 40px;
-  padding-top: 18px;*/
-  margin-bottom: 40px;
   clear: both;
 }
 
-body{
-  overflow: hidden;
+body {
+  overflow:scroll;
   max-width: 690px;
   margin: auto;
   background-color: #fff;
+  float: none;
 }
 
-header h1{
+header h1 {
   margin:auto;
   text-align: center;
-  font-family: "trebuchet", arial, sans-serif;
+  font-family: 'trebuchet', arial, sans-serif;
   font-weight: lighter;
   font-size: 24px;
 }
 
-header p{
+header p {
   margin: auto;
   padding-top: 20px;
   padding-bottom: 30px;
   text-align: center;
-  font-family: sans-serif;
-  font: 'arial';
-  color: #cacfd3;
-  font-size: 14px;
 }
 
-article{
+p{
+  color: #84847c;
+  line-height: 18px;
+  font-size: 11px;
+  font-style: normal;
+  font-family: sans-serif;
+  font: 'trebuchet';
+  font-weight: lighter;
+
+}
+article {
   float: left;
   width: 325px;
   height: 330px;
@@ -48,20 +51,7 @@ article{
 
 }
 
-/*
-article h6{
-  width: 340px;
-  font-style: normal;
-  font-family: sans-serif;
-  font-size: 14px;
-  font-weight: lighter;
-  padding: 10px;
-  margin-top: 10px;
-
-}
-*/
-
-aside{
+aside {
   float: right;
   width: 325px;
   height: 350px;
@@ -72,24 +62,25 @@ aside{
 
 }
 
-.left > img{
+.left > img {
   clear: both;
 }
-.rightone, .righttwo{
+
+.rightone, .righttwo {
   margin-bottom: 10px;
   overflow: auto;
 }
 
-.rightthree{
+.rightthree {
   overflow: auto;
 }
 
-.headphones{
+.headphones {
   margin: 0;
   clear: both;
 }
 
-.leftcontent{
+.leftcontent {
   background-color: green;
   box-sizing: border-box;
   width: 320px;
@@ -101,15 +92,29 @@ aside{
   overflow:auto;
 }
 
-.leftcontent h6{
-  width: 320px;
-}
-.leftcontent p{
+.leftcontent h6 {
   width: 320px;
 }
 
+.leftcontent p {
+  width: 320px;
+}
 
-.rightcontent{
+a{
+  margin-right: 0;
+  text-decoration: none;
+  font-size: 11px;
+  font-family: sans-serif;
+  font: 'arial';
+  font-weight: lighter;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid green;
+  color: green;
+  float: right;
+}
+
+.rightcontent {
   box-sizing: border-box;
   width: 175px;
   height: 75px;
@@ -117,10 +122,9 @@ aside{
   background-color: #f2f3f0;
   margin-left: 6px;
   overflow:auto;
-
 }
 
-.title{
+.title {
   margin: 0px;
   width: 170px;
   float: left;
@@ -131,56 +135,17 @@ aside{
   font-family: sans-serif;
   font: 'trebuchet';
   font-weight: lighter;
-
-
 }
 
-.par{
+.par {
   margin: 0px;
-  font-size: 11px;
-  font-style: normal;
-  font-family: sans-serif;
-  font: 'trebuchet';
-  font-weight: lighter;
   width: 170px;
   float: left;
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 18px;
-
 }
 
-/* was trying to use attribute selectors and was unable to predict them.
-[h6$="title"]{
-  margin: 0px;
-  width: 170px;
-  float: left;
-  clear: right;
-  padding-top: 0px;
-  font-size: 14px;
-  font-style: normal;
-  font-family: sans-serif;
-  font: 'trebuchet';
-  font-weight: lighter;
-
-}
-
-[p$="par"]{
-  margin: 0px;
-  font-size: 11px;
-  font-style: normal;
-  font-family: sans-serif;
-  font: 'trebuchet';
-  font-weight: lighter;
-  width: 170px;
-  float: left;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  line-height: 18px;
-}
-*/
-
-aside > div{
+aside > div {
   margin: auto;
   background-color: #f2f3f0;
   width: 325px;
@@ -189,3 +154,55 @@ aside > div{
   border-radius: 5px;
 
 }
+
+footer {
+  width: 690px;
+  margin-top: 440px;
+  height: 110px;
+  border-top: .5px solid grey;
+  border-bottom: .5px solid grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottleft{
+  width:229px;
+  height: 95px;
+  padding: 10px;
+  margin: 5px 0;
+
+}
+
+.bottmiddle, .bottright{
+  box-sizing: border-box;
+  border-left: 1px solid grey;
+  padding: 10px 0 0 30px;
+  width:200px;
+  height: 95px;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+ul {
+  color: #84847c;
+  list-style-image: url('../img/smcheck.jpg');
+  font-size: 11px;
+  padding-left: 20px;
+}
+
+h6 {
+  color: black;
+  font-size: 16px;
+  font-family: sans-serif;
+  font: 'arial';
+  font-weight: lighter;
+}
+
+.infobull {
+  float:left;
+  font-size: 10px;
+  height: 14px;
+}
+
+
+/*Code needs to be cleaned and notated but website is styled and formatted.*/
