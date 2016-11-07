@@ -1,9 +1,9 @@
 body {
   background-color: black;
   font-family: sans-serif;
-  margin: auto;
+  /*margin: auto;*/
   width: 100%;
-  /*height: 100%;*/
+  height: 100%;
   /*display: flex;*/
 }
 header {
@@ -13,9 +13,9 @@ header {
   width: 80%;
   /*text-align: center;*/
   margin: auto;
-  font-size: 50px;
+  font-size: 100px;
   /*line-height: 140px;*/
-  font-weight: lighter;
+  /*font-weight: lighter;*/
   justify-content: center;
   align-items: center;
   margin-top: 80px;
@@ -56,10 +56,11 @@ p {
   display: flex;
   height: 100px;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   margin: 10px 0px 10px 0px;
+  /*font-weight: lighter;*/
   /*background-color: orange;*/
-  /*margin-top: 70px;*/
+  margin-top: 50px;
 
   /*margin-top: px;*/
 }
@@ -67,7 +68,7 @@ p {
 footer {
   display:flex;
   width: 80%;
-  height: 150px;
+  height: 200px;
   color: yellow;
   /*justify-content: center;*/
   margin: auto;
@@ -77,6 +78,7 @@ footer {
 footer > div {
   display: flex;
   flex-direction: column;
+  font-size: 25px;
   background-color: darkviolet;
   height: 200px;
   width: 200px;
@@ -91,10 +93,50 @@ footer > div {
 
 }
 
-#mlevels > h1 {
+#mlevels > a {
   display: flex;
   align-content: center;
   color: white;
+  font-size: 40px;
+}
 
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 40px;
+}
 
+form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#form {
+  display: flex;
+  /*flex-direction: column;*/
+  width: 85%;
+  height: 150px;
+  background-color: gray;
+}
+
+form > div {
+  height: 100px;
+  font-size: 25px;
+}
+
+div#form-left {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  height: 100%;
+}
+
+div#form-right {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  height: 100%;
+  float: right;
 }
