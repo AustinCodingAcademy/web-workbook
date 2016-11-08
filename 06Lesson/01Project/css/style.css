@@ -1,0 +1,181 @@
+body {
+    width: 60%;
+    margin: 0 auto;
+    background: #f0efe7;
+    font-family: 'Arial', sans-serif;
+}
+
+main {
+    margin: 0 auto;
+}
+
+header, main, section, footer {
+    margin-bottom: 10px;
+}
+
+header {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+header>p {
+    margin: 0 auto;
+    line-height: 2em;
+}
+
+aside {
+    float: right;
+    width: 320px;
+    height: 300px;
+    padding-left: 20px;
+}
+
+article {
+    position: relative;
+    background-color: lightgray;
+    padding: 1px;
+    height: 100px;
+    margin-bottom: 5px;
+    width: 140%;
+}
+
+article>img {
+    height: 80px;
+    float: left;
+    padding: 10px;
+}
+
+
+/*
+nav {
+    padding: 2%;
+}
+
+nav span a {
+    color: #f14e32;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 25px;
+}*/
+
+h1, h2, h3, h4, h5, h6, p, li {
+    font-family: helvetica, sans-serif;
+}
+
+h3 {
+    font-weight: lighter;
+}
+
+p {
+    font-weight: 100;
+}
+
+section, aside {
+    float: left;
+}
+
+section {
+    width: 350px;
+    height: 318px;
+    background-color: lightgray;
+    padding: 15px 20px;
+}
+
+section>img {
+    position: relative;
+    width: 352px;
+    height: 145px;
+    /*margin: 0 auto;*/
+}
+
+.readmore, .check {
+    float: right;
+    color: green;
+    font-size: 9pt;
+    letter-spacing: 1px;
+}
+
+
+/*
+section:nth-child(2) {
+    width: 73%;
+    border-right: solid 1px #ccc;
+    overflow: hidden;
+}*/
+
+aside {
+    width: 320px;
+    text-align: left;
+    font-size: 13px
+}
+
+
+/*
+aside div {
+    padding: 5px;
+    margin-bottom: 10px;
+}*/
+
+.clearfix:after {
+    display: flex;
+    content: " ";
+    clear: both;
+}
+
+footer {
+    display: flex;
+    clear: both;
+    font-weight: bold;
+    border-top: solid 1px #bbb;
+    padding: 5px;
+}
+
+footer>div {
+    /*width: 33.4%;*/
+    float: left;
+}
+
+footer li {
+    font-weight: 200;
+    position: relative;
+    left: -10px;
+}
+
+li:before {
+    position: relative;
+    left: -5px;
+    content: '✓';
+    /*margin-left: -3em;*/
+    padding-right: .5em;
+    color: green;
+}
+
+ul {
+    padding-left: 15px;
+    text-indent: 2px;
+    list-style: none;
+    list-style-position: outside;
+}
+
+.nocheck::before {
+    content: ' ';
+    padding-right: 0;
+}
+
+.nocheck {
+    position: relative;
+    left: -20px;
+}
+
+.check {
+    position: relative;
+    bottom: -20px;
+}
+
+.line {
+    position: relative;
+    border-right: .5px solid;
+    margin: 0 auto;
+}
