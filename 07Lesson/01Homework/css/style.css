@@ -31,7 +31,6 @@ a:hover {
 
 header {
   display: flex;
-  width: 865px;
   height: 400px;
   background: url("../img/animal.jpg");
   justify-content: center;
@@ -40,9 +39,10 @@ header {
   color: white;
 }
 
-header h1 {
+h1 {
   font-size: 50px;
-  margin-bottom: 10px
+  margin-bottom: 10px;
+  color: white;
 }
 
 h2 {
@@ -61,7 +61,7 @@ header a {
   color: white;
 }
 
-section {
+section, header, footer {
   width: 865px;
 }
 
@@ -115,15 +115,60 @@ section {
 .tiger-box {
   width: 300px;
   height: 145px;
+  padding-bottom: 20px;
   background: url("../img/tiger.jpg");
 }
 
 .box {
   width: 300px;
   padding: 30px 50px;
+  text-align: center;
 }
 
 .box p {
   padding-top: 20px;
+}
+
+.date {
+  text-align: right;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h1 {
+  padding: 40px 15px;
+  font-size: 40px;
+}
+
+footer a {
+  display: flex;
+  width: 150px;
+  height: 50px;
+  border: solid 1px white;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.giraffebox {
+  display: flex;
+  width: 800px;
+  height: 265px;
+  background: url("../img/giraffefooter.jpg");
+  flex-direction: column;
   text-align: center;
+  align-items: center;
+}
+
+.linkbox {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;;
+  align-items: center;
+
 }
