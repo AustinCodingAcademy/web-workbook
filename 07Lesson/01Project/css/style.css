@@ -1,15 +1,119 @@
 body {
     width: 100%;
+    margin: 0 auto;
+    display: flex;
 }
+
+
+/*USE TEXT BOXES*/
 
 .background {
     width: 100%;
+    height: 0;
     z-index: -1;
     background-image: url(../img/1.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: gray;
+    background-size: cover;
 }
 
-.overlay {
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
     z-index: 3;
-    /*background-color: #000;*/
-    /*opacity: .20;*/
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1em;
+}
+
+.text-box h3, h1, h4 {
+    color: white;
+    padding: 2%;
+}
+
+.text-box h1 {
+    font-size: 3em;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+
+.text-box h3 {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.text-box h4 {
+    font-size: 1em;
+    font-family: cursive;
+}
+
+.buttonbox {
+    margin: 0 auto;
+}
+
+
+/*
+button {
+    margin: 0 auto;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    height: 25px;
+    width: 150px;
+    text-align: center;
+    background-color: #00ff6f;
+    background-color: rgba(0, 255, 111, 1);
+    background-color: hsla(146, 100%, 50%, 1);
+    box-shadow: none;
+}*/
+
+.button {
+    position: relative;
+    height: 25px;
+    width: 150px;
+    border-top: 1px solid #00ff6f;
+    background: #00ff84;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00ff6f), to(#00ff84));
+    background: -webkit-linear-gradient(top, #00ff6f, #00ff84);
+    background: -moz-linear-gradient(top, #00ff6f, #00ff84);
+    background: -ms-linear-gradient(top, #00ff6f, #00ff84);
+    background: -o-linear-gradient(top, #00ff6f, #00ff84);
+    padding: 6.5px 13px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+    line-height: 0;
+}
+
+.contact {
+    margin: 0 auto;
+    /*width: 150px;
+    height: 25px;
+    padding: 15px;*/
+}
+
+
+/*.button a {
+    position: relative;
+    text-decoration: none;
+    margin: 0 auto;
+    height: 25px;
+    width: 150px;
+}*/
+
+h1, h2, h3, h4, h5, h6, p, li, a {
+    font-family: 'Open Sans', sans-serif;
+    display: block;
 }
