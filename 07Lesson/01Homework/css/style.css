@@ -1,7 +1,6 @@
 body {
   width: 900px;
   margin: auto;
-  background-color: #e8dedf;
 }
 header {
   height: 25px;
@@ -23,34 +22,46 @@ a {
 }
 main {
   height: 200px;
-  background-color: #bc3e4d;
+  background-image: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7) ),url("../images/bacon.jpg");
   text-align: center;
   padding: 10px;
 }
 h1 {
-  font-size: 36px;
+  font-size: 32px;
+  font-style: oblique;
   margin: auto;
-  padding-top: 80px;
+  padding-top: 70px;
+  color: #A52A2A;
 }
 h3 {
   padding: 10px;
-  font-size: 24px;
+  font-size: 18px;
 }
 button {
   padding: 5px;
+  color: white;
   background-color: transparent;
-  border: 1px solid black;
+  border: 1px solid white;
+  padding: 5px;
 }
 section {
   height: 150px;
   text-align: center;
   display: flex;
+  font-size: 12px;
 }
 section img {
   align-items: flex-start;
   height: 125px;
   width: 25%;
   margin: auto;
+  filter: grayscale(100%);
+}
+h4 {
+  color: #A52A2A;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
 }
 .history {
   width: 50%;
@@ -58,39 +69,60 @@ section img {
 }
 aside {
   height: 300px;
-  background-color: #c6959a;
+  background-color: #A52A2A;
   display: flex;
+  margin: auto;
   justify-content: space-around;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 .dessert {
   width: 20%;
-}
-.dessert img {
-  width: 150px;
-  align-items: center;
-}
-h5 {
-  padding: 5px;
+  font-size: 12px;
   text-align: center;
 }
+.dessert img {
+  width: 100%;
+  align-self: center;
+  filter: grayscale(100%);
+}
+h5 {
+  padding: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
 .dates {
-  height: 300px;
-  margin: auto;
+  height: 250px;
+  width: 80%;
   display: flex;
-  justify-content: space-around;
+  margin: auto;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 14px;
 }
 .dates img {
-  height: 200px;
-  width: 80%;
+  height: 60%;
+  width: 300px;
+  align-items: center;
+  filter: grayscale(100%);
+  margin-bottom: 20px;
 }
 .left .right {
-  width: 50%;
+  width: 40%;
   text-align: center;
 }
 .timestamp {
   text-align: right;
+  padding: 20px;
 }
 footer {
-  background-color: green;
+  height: 80px;
+  background-color: #e8dedf;
+  text-align: center;
+  padding: 20px;
+}
+button {
+  margin-top: 20px;
+  color: #A52A2A;
+  border: 1px solid #A52A2A;
+  padding: 5px;
 }
