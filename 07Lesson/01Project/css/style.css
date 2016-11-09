@@ -38,47 +38,29 @@ body {
 
 .text-box h1 {
     font-size: 3em;
-    letter-spacing: .15em;
+    letter-spacing: .1em;
     text-transform: uppercase;
+    font-family: sans-serif;
 }
 
 .text-box h3 {
     font-size: 1em;
     text-transform: uppercase;
     letter-spacing: 5px;
+    font-family: sans-serif;
 }
 
 .text-box h4 {
-    font-size: 1em;
+    font-size: 1.5em;
     font-family: cursive;
 }
 
-.buttonbox {
-    margin: 0 auto;
-}
-
-
-/*
-button {
-    margin: 0 auto;
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    text-decoration: none;
-    color: initial;
-    height: 25px;
-    width: 150px;
-    text-align: center;
-    background-color: #00ff6f;
-    background-color: rgba(0, 255, 111, 1);
-    background-color: hsla(146, 100%, 50%, 1);
-    box-shadow: none;
-}*/
-
 .button {
     position: relative;
-    height: 25px;
+    height: 30px;
     width: 150px;
+    color: #000;
+    font-size: 12pt;
     border-top: 1px solid #00ff6f;
     background: #00ff84;
     background: -webkit-gradient(linear, left top, left bottom, from(#00ff6f), to(#00ff84));
@@ -97,13 +79,26 @@ button {
     line-height: 0;
 }
 
-.contact {
-    margin: 0 auto;
-    /*width: 150px;
-    height: 25px;
-    padding: 15px;*/
+.button:after {
+    content: 'Contact Us';
+    visibility: visible;
+    position: absolute;
+    display: block;
+    top: 43%;
+    left: 21%;
 }
 
+
+/*.contact::after {
+    margin: 0 auto;
+    position: relative;
+    width: 150px;
+    height: 25px;
+    padding: 15px;
+    */
+
+
+}
 
 /*.button a {
     position: relative;
@@ -112,7 +107,6 @@ button {
     height: 25px;
     width: 150px;
 }*/
-
 h1, h2, h3, h4, h5, h6, p, li, a {
     font-family: 'Open Sans', sans-serif;
     display: block;
