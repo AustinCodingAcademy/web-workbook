@@ -28,7 +28,7 @@ body {
     width: 95%;
     margin: 0 auto;
     text-align: center;
-    line-height: 1em;
+    /*line-height: 1em;*/
 }
 
 .text-box h3, h1, h4 {
@@ -79,6 +79,30 @@ body {
     line-height: 0;
 }
 
+.buttonclear {
+    position: relative;
+    height: 30px;
+    width: 150px;
+    color: #000;
+    font-size: 12pt;
+    border: 1px solid white;
+    background: rgba(255, 0, 0, 0);
+    /*background: -webkit-gradient(linear, left top, left bottom, from(#00ff6f), to(#00ff84));
+    background: -webkit-linear-gradient(top, #00ff6f, #00ff84);
+    background: -moz-linear-gradient(top, #00ff6f, #00ff84);
+    background: -ms-linear-gradient(top, #00ff6f, #00ff84);
+    background: -o-linear-gradient(top, #00ff6f, #00ff84);*/
+    padding: 6.5px 13px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+    text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+    line-height: 0;
+}
+
 .button:after {
     content: 'Contact Us';
     visibility: visible;
@@ -86,6 +110,81 @@ body {
     display: block;
     top: 43%;
     left: 21%;
+}
+
+.aboutbutt:after {
+    content: 'More About Us';
+    visibility: visible;
+    position: absolute;
+    display: block;
+    top: 43%;
+    left: 10%;
+}
+
+.prodbutt:after {
+    content: 'Our Products';
+    color: white;
+    visibility: visible;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 15%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: stretch;
+}
+
+.flex-items-default {
+    width: 33.3%;
+    height: 40%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0;
+}
+
+.flex-item-1 {
+    /*width: <property unused> height: <property unused>*/
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 98%;
+}
+
+.flex-item-2 {
+    /*width: <property unused>*/
+    /*height: <property unused> */
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+
+.flex-item-3 {
+    /*width: <property unused>*/
+    /*height: <property unused>*/
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+
+.flex-item-4 {
+    /*width: <property unused>*/
+    /*height: <property unused>*/
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+
+.flex-item-5 {
+    /*width: <property unused>*/
+    /*height: <property unused>*/
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 98%;
 }
 
 
@@ -109,5 +208,164 @@ body {
 }*/
 h1, h2, h3, h4, h5, h6, p, li, a {
     font-family: 'Open Sans', sans-serif;
-    display: block;
+    display: inherit;
 }
+
+/* Services *
+#services {
+    padding: 2%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-end: ;
+    align-items: flex-start;
+    margin: 0 auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0;
+    background-blend-mode: multiply;
+    background-color: gray;
+    background-size: cover;
+}
+#services {
+    display: flex;
+    flex: 1 100%;
+}
+.flex-container {
+    /* We first create a flex layout context */
+display: flex;
+
+/* Then we define the flow direction and if we allow the items to wrap
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+flex-flow: row wrap;
+
+/* Then we define how is distributed the remaining space
+
+    justify-content: space-around;
+}
+.parent {
+    display: flex;
+    height: 50%;
+    width: 95%;
+    /* Or whatever
+}
+.child {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    /* Or whatever */
+height: auto;
+
+/* Or whatever
+
+    margin: auto;
+    /* Magic! */
+
+}
+
+/*
+.landscaping {
+    display: flex;
+    position: relative;
+    background-image: url(../img/featured-image-5.jpg);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 750px;
+    z-index: -1;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+#services>h1, h3, p {
+    line-height: 1.5em;
+}
+.left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-end: ;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+.wing {
+    display: flex;
+}
+h3.green {
+    color: green;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.clearfix:after {
+    display: flex;
+    content: " ";
+    clear: both;
+}
+.growing {
+    position: relative;
+    align-items: flex-start;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+    width: 370px;
+    height: 260px;
+    margin: 0 auto;
+    background-image: url(../img/featured-image-3.jpg);
+    background-repeat: no-repeat;
+    padding-bottom: 4%;
+}
+.care {
+    position: relative;
+    align-items: flex-end;
+    width: 370px;
+    height: 260px;
+    margin: 0 auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+    background-image: url(../img/featured-image-4.jpg);
+    background-repeat: no-repeat;
+}
+.growing>h1, h3, p {
+    line-height: 1.5em;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+}
+.flex-items-default {
+    width: 300px;
+    height: 250px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0;
+}
+.flex-item-1 {
+    width: <property unused> height: 250px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+.flex-item-2 {
+    width: <property unused> height: 250px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+.flex-item-3 {
+    width: <property unused> height: 250px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+*/
