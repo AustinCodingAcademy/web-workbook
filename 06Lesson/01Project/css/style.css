@@ -19,6 +19,7 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 15px;
 
 }
 
@@ -32,19 +33,25 @@ main{
 
 .recent-post{
   background-color: #f8f8f8;
-  height: 150px;
+  height: 130px;
   display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
 }
 .post-picture{
-  height: 110px;
-  margin: 20px;
+  width: 40%;
+  height: auto;
+}
+
+.recent-post-text{
+  width: 50%;
+  height: auto;
 }
 h1{
   font-weight: lighter;
 }
 img{
   max-height: 100% ;
-
 }
 .post-title{
   font-weight:lighter;
@@ -52,7 +59,9 @@ img{
 .post-summary{
   font-size: .8em;
 }
-
+.post-text .post-summary{
+  line-height: 30px;
+}
 /*.featured-container{
   display: flex;
   flex-direction: column;
@@ -92,4 +101,15 @@ img{
 ul {
     list-style-image: url('/Users/lukefilipos/Dropbox/Coding/web-workbook/06Lesson/01Project/img/checkmark.png');
 
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+a{
+  color: green;
+}
+.green-link{
+  float: right;
 }
