@@ -1,0 +1,133 @@
+body {
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, li, a, p {
+    font-family: 'Droid Sans', sans-serif;
+}
+
+.clearfix:after {
+    content: " ";
+    display: flex;
+    clear: both;
+}
+
+header {
+    background-repeat: no-repeat;
+    width: auto;
+    height: 39px;
+    vertical-align: middle;
+    display: flex;
+    background-image: url(../img/swirl_pattern.png);
+    background-repeat: repeat;
+}
+
+nav {
+    position: fixed;
+    z-index: 9999;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-flow: row;
+    width: 95%;
+}
+
+.logo {
+    position: relative;
+    top: -11%;
+    right: -70px;
+    padding-right: 40%;
+}
+
+nav a {
+    position: relative;
+    bottom: -10px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    flex-basis: fit-content;
+    width: 10%;
+}
+
+.splash {
+    background-image: url(../img/background.jpeg);
+    height: 600px;
+    width: auto;
+    z-index: -1;
+}
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    /*line-height: 1em;*/
+}
+
+.text-box h1 {
+    font-size: 60pt;
+    color: red;
+}
+
+.text-box h3 {
+    font-size: 40pt;
+    color: green;
+}
+
+.text-box button {
+    position: relative;
+    height: 40px;
+    width: 100px;
+    bottom: -20px;
+}
+
+.geaux {
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 15pt;
+    text-decoration: none;
+}
+
+
+/*#geaux {
+    position: relative;
+    top: 220px;
+}*/
+
+#geaux {
+    position: relative;
+    width: 77%;
+    margin: 0 auto;
+    padding-top: 10%;
+    height: 200px;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: stretch;
+}
+
+.first h3 {
+    font-size: 30pt;
+    /*padding-bottom: 20px;*/
+    flex-direction: column;
+}
+
+.first p {
+    width: 33%;
+}
+
+#geaux img {
+    position: relative;
+    width: 600px;
+    height: 400px;
+}
