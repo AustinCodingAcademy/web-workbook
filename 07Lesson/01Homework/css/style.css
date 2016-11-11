@@ -1,31 +1,37 @@
 body {
-  /*display: flex;*/
-  /*align-items: center;*/
+  background: #ddd6f3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ddd6f3 , #faaca8); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ddd6f3 , #faaca8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+img {
+  box-shadow: 10px 10px 5px #888888;
 }
 
 header {
   display: flex;
   justify-content: center;
+  margin: 60px;
 }
 
-section {
+.second {
   display: flex;
-  margin: 50px 100px 50px 100px;
+  margin: 0px 100px;
 }
 
 .header {
   background-image: url(http://cdn.gospelherald.com/data/images/full/5942/justin-bieber.jpg);
+  box-shadow: 10px 10px 5px #888888;
   width: 650px;
   height: 430px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
   color: red;
 }
 
-img {
+.second img {
   width: 260px;
   height: 150px;
   float: left;
@@ -33,4 +39,46 @@ img {
 
 p {
   margin-left: 20px;
+  margin-right: 20px;
+}
+
+.text-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.third {
+  display: flex;
+  justify-content: space-around;
+  margin: 60px;
+}
+
+.third div {
+  display: flex;
+  width: 200px;
+  height: 300px;
+  background-color: ;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.third div img {
+  width: 150px;
+  height: 150px;
+}
+
+h4 {
+  margin: 20px;
+  font-size: 20px;
+  font-weight: bold;
+
 }
