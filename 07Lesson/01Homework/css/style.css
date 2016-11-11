@@ -25,6 +25,8 @@ a {
   margin-left: 15px;
   text-decoration: none;
   color: white;
+  border-left: 2px solid #982bff;
+  padding-left: 15px;
 }
 
 header{
@@ -33,15 +35,16 @@ header{
   height: 440px;
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 2.5) ), url("../img/floating-suit.jpg");
   background-position: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 h1{
   padding-top: 195px;
   font-weight: bolder;
   font-size: 45px;
+  letter-spacing: 12px;
 }
-h4{
+header h4{
   margin:30px;
 }
 
@@ -51,7 +54,6 @@ h4{
   height: 30px;
   border: 2px solid white;
   background:rgba(150,150,150,0.3);
-  /*background-opacity: 20%;*/
   border-radius: 50%;
   color:white;
   font-family: 'VT323', monospace, Helvetica;
@@ -60,23 +62,121 @@ h4{
 /*-----------------main content------------*/
 
 #sectionOne {
+  height: 340px;
+  width: 1000px;
+  margin-top: 10px;
+}
 
+iframe{
+  float: left;
+  margin: 50px;
+}
+
+aside{
+  float: left;
+  width: 400px;
+  height: 250px;
+}
+
+#asideh4{
+  text-align: center;
+  font-size: 30px;
+  color:#982bff;
+  padding: 90px 0 40px 0;
+}
+
+#asidep{
+  font-size: 14px;
+  line-height: 30px;
 }
 
 #sectionTwo {
-
+  display: flex;
+  justify-content: space-around;
+  background: rgba(150,150,150,0.3);
+  height: 450px;
+  width: 1000px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .profileImg {
   height: 150px;
 }
 
-#sectionThree {
+.divProfiles{
+  padding-top: 35px;
+  height: 450px;
+}
 
+h6 {
+  padding: 15px;
+  color:#982bff;
+  font-weight: bold;
+}
+
+.profileText{
+  padding: 0 35px;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+#sectionThree {
+  height: 250px;
+  width: 1000px;
+}
+
+#sectionThreeLeft {
+  float: left;
+  width: 350px;
+  height: 250px;
+}
+
+#sectionThreeRight {
+  float: right;
+  width: 350px;
+  height: 250px;
+
+}
+
+.sectionThreeImg {
+  width: 330px;
+}
+
+.imgCaption {
+  text-align: center;
+}
+
+.date{
+  float: right;
+  font-family: 'VT323', monospace, Helvetica;
 }
 
 /*--------------footer-------------------*/
 
 footer{
+  background-image: url("../img/galaxy.jpg");
+  width: 1000px;
+  height: 300px;
+  background-position: center;
+  text-align: center;
+  padding: 100px;
+  margin: 30px;
+  clear: both;
+  box-sizing: border-box;
+  line-height: 35px;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
 
+footer button{
+  text-decoration: none;
+  height: 25px;
+  width: 100px;
+  font-size: 12px;
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+  margin: 30px;
 }
