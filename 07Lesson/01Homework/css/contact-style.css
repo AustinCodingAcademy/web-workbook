@@ -1,0 +1,56 @@
+body{
+  width: 1000px;
+  margin: 0 auto;
+  font-family: 'Orbitron', Helvetica, sans-serif;
+  animation: bgmove 30s infinite;
+  color:white;
+  background-position: center;
+  background-image: url("../img/milkyway.jpg");
+}
+
+@-webkit-keyframes bgmove {
+    from {background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/milkyway.jpg");}
+    to {background-image: url("http://67.media.tumblr.com/0fbc46fca1f9c1895b8d511c21ad2e5e/tumblr_mz0lggFSq61relaado1_r1_400.gif");}
+}
+
+nav{
+  height: 35px;
+  line-height: 35px;
+  vertical-align: middle;
+  margin: 10px 0;
+}
+
+a {
+  float: right;
+  margin-left: 15px;
+  text-decoration: none;
+  color: white;
+  border-left: 2px solid #982bff;
+  padding-left: 15px;
+}
+
+#home {
+  padding-right: 15px;
+  border-right: 2px solid #982bff;
+}
+
+#home:hover{
+  background-color: #982bff;
+}
+
+header{
+  text-align: center;
+  color: white;
+  height: 460px;
+  animation: headermove 30s infinite;
+  background-position: center;
+}
+
+@-webkit-keyframes headermove {
+    from {background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/galaxy.jpg");}
+    to {background-image: url("http://38.media.tumblr.com/05ce1015da840db3abfd1dc762f3cff2/tumblr_nqhku5IoSG1un441yo1_r1_500.gif");}
+}
+
+iframe{
+  opacity: .7;
+}
