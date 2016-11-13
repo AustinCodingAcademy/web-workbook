@@ -7,6 +7,15 @@ body, header, section, nav, footer {
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+p {
+  font-size: 12px;
+}
+
 .container {
   width: 865px;
   margin: 0 auto;
@@ -54,7 +63,6 @@ header h1 {
 }
 
 header p {
-  font-size: 12px;
   color: #B3B3B3;
 }
 
@@ -76,10 +84,6 @@ header p {
   justify-content: space-between;
 }
 
-.textbox > p {
-  font-size: 12px;
-}
-
 .textbox > h2 {
   font-size: 22px;
   font-weight: bold;
@@ -91,17 +95,9 @@ header p {
 }
 
 .rightbox {
-  display: flex;
   width: 315px;
   height: 400px;
   float: left;
-  justify-content: center;
-}
-
-.narrowimgbox {
-  width: 75%;
-  background: url("../img/wine16.jpg");
-  background-size: 236px 400px;
 }
 
 .clearfix {
@@ -109,7 +105,6 @@ header p {
 }
 
 .containerimgbox {
-  background-color: red;
   height: 250px;
   background: linear-gradient(
     rgba(0, 0, 0, 0.8),
@@ -127,7 +122,40 @@ header p {
 }
 
 .containerimgbox > p {
-  font-size: 12px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.footerbox {
+  display: flex;
+  width: 288px;
+  height: 400px;
+  float: left;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footerimgbox {
+  width: 119px;
+  height: 75%;
+}
+
+.footerbox > h4 {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  padding-top: 5px;
+}
+
+.footerbox > p {
+  padding: 8px 15px 3px 15px;
+}
+
+.footerbox > a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  background-color: #909F5E;
+  padding: 6px 15px;
 }
