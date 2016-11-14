@@ -11,9 +11,9 @@ h1, h2, h3, h4, h5, h6, p, li, a {
 }
 
 article {
-    /*display: flex;*/
-    /*margin: 0 auto;*/
-    /*justify-content: space-between;*/
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row-reverse;
 }
 
 section {
@@ -85,4 +85,31 @@ nav a {
     line-height: 20px;
     font-weight: 100;
     font-style: italic;
+}
+
+.spray, h5, h3, p {
+    text-rendering: optimizeLegibility;
+}
+
+.spray {
+    display: flex;
+    /*margin: 0 auto;*/
+    width: 74%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+}
+
+.spray img {
+    position: relative;
+    right: -30%;
+    align-self: flex-end;
+    height: 500px;
+}
+
+.text-blurb {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    vertical-align: middle;
+    flex-flow: column;
 }
