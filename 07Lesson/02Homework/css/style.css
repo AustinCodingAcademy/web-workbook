@@ -1,0 +1,88 @@
+body {
+    width: 95%;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, a {
+    font-family: 'Open Sans', sans-serif;
+    display: inherit;
+    font-weight: normal;
+}
+
+article {
+    /*display: flex;*/
+    /*margin: 0 auto;*/
+    /*justify-content: space-between;*/
+}
+
+section {
+    /*display: flex;
+    flex-direction: column;
+    justify-content: space-around;*/
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-flow: row;
+    width: 95%;
+    margin: .6% 0;
+    z-index: 99;
+}
+
+nav a {
+    margin: -5.1% 0 2.5% 20px;
+    text-decoration: none;
+    color: gray;
+}
+
+.logo {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 20%;
+    margin: 2.5% 0 2.5% 0;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+
+/*centering a background image within a certain area*/
+
+.pope {
+    height: 500px;
+    z-index: -1;
+    background-image: url(../img/wine-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-color: hsla(0, 0%, 0%, 0.8);
+    background-blend-mode: darken;
+}
+
+.pope h1, h6 {
+    position: relative;
+    margin: 0 auto;
+    color: white;
+    vertical-align: middle;
+}
+
+.pope h1 {
+    top: -10%;
+    font-size: 4em;
+}
+
+.pope h6 {
+    bottom: -6%;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 20px;
+    font-weight: 100;
+    font-style: italic;
+}
