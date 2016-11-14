@@ -1,7 +1,6 @@
 body {
     width: 95%;
     margin: 0 auto;
-    z-index: 2;
 }
 
 h1, h2, h3, h4, h5, h6, p, li, a {
@@ -11,9 +10,10 @@ h1, h2, h3, h4, h5, h6, p, li, a {
 }
 
 article {
-    display: flex;
+    position: relative;
     margin: 0 auto;
-    flex-direction: row-reverse;
+    width: 95%;
+    display: flex;
 }
 
 section {
@@ -23,27 +23,24 @@ section {
 }
 
 nav {
-    position: fixed;
+    position: relative;
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
     flex-flow: row;
-    width: 95%;
-    margin: .6% 0;
     z-index: 99;
 }
 
 nav a {
-    margin: -5.1% 0 2.5% 20px;
+    margin: -4.6% 0 2.5% 20px;
     text-decoration: none;
     color: gray;
+    z-index: 9999;
 }
 
 .logo {
     position: relative;
-    margin: 0 auto;
     padding: 0;
-    width: 20%;
     margin: 2.5% 0 2.5% 0;
     text-transform: uppercase;
     font-size: 1.5em;
@@ -87,29 +84,41 @@ nav a {
     font-style: italic;
 }
 
-.spray, h5, h3, p {
-    text-rendering: optimizeLegibility;
-}
-
-.spray {
-    display: flex;
-    /*margin: 0 auto;*/
-    width: 74%;
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: 0;
-}
-
-.spray img {
+article img {
     position: relative;
-    right: -30%;
-    align-self: flex-end;
     height: 500px;
 }
 
 .text-blurb {
-    flex-direction: column-reverse;
-    justify-content: space-between;
+    padding: 10% 0;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.text-blurb h5, h3, p {
+    position: relative;
     vertical-align: middle;
-    flex-flow: column;
+    padding-right: 300px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.text-blurb h5 {
+    font-weight: lighter;
+    color: gray;
+}
+
+.text-blurb h3 {
+    font-size: 2em;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.text-blurb p {
+    font-size: .75em;
+    width: 50%;
 }
