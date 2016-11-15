@@ -41,6 +41,7 @@ nav a {
 .logo {
     position: relative;
     padding: 0;
+    display: flex;
     margin: 2.5% 0 2.5% 0;
     text-transform: uppercase;
     font-size: 1.5em;
@@ -121,4 +122,47 @@ article img {
 .text-blurb p {
     font-size: .75em;
     width: 50%;
+}
+
+.boast {
+    height: 500px;
+    z-index: -1;
+    background-image: url(../img/wine13.jpg);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-color: hsla(0, 0%, 0%, 0.8);
+    background-blend-mode: darken;
+}
+
+.boast h3, p {
+    color: white;
+    padding: 0;
+}
+
+.boast h3 {
+    font-size: 2em;
+    font-family: cursive;
+    font-weight: bold;
+    padding-bottom: 70px;
+}
+
+.boast p {
+    width: 75%;
+}
+
+.products {
+    display: flex;
+    /*justify-content: space-between;*/
+    /*align-items: stretch;*/
+    width: 33.3%;
+}
+
+.products h4 {
+    font-size: 1em;
+    font-family: cursive;
+    font-weight: bold;
 }
