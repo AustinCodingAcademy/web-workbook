@@ -4,9 +4,18 @@ body {
 
 header {
   height: 51px;
-
+  margin-bottom: 15px;
   background-color: #222;
   color: #999;
+}
+
+main {
+  width: 848px;
+
+}
+
+aside {
+  width: 264px;
 }
 
 .container {
@@ -14,11 +23,20 @@ header {
   margin: 0 auto;
 }
 
+.container-hflex {
+  display: flex;
+  justify-content: space-between;
+}
+
 .logo {
   padding: 15px;
   display: inline-block;
   color: #999;
   text-decoration: none;
+}
+
+.logo:visited {
+  /*color: red;*/
 }
 
 .navbar {
@@ -33,4 +51,50 @@ header {
   text-decoration: none;
   color: #999;
   padding: 15px 10px;
+}
+
+.navbar > li > a:hover{
+  color: #fff;
+  background-color: #000;
+}
+
+.herounit {
+  padding: 50px;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.herounit-title {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.herounit-text a {
+  font-size: 18px;
+}
+
+.menuvertical {
+  border: 1px solid #ccc;
+}
+
+.menuvertical > li {
+  list-style-type: none; /*gets rid of bullets*/
+}
+
+.menuvertical > li > a {
+  /*display: inline-block; /*inline block only gets bigger with the content inside it*/
+  text-decoration: none;
+  display: block; /*makes the block SPAN a width*/
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+
+.menuvertical > li:last-child > a {
+  border-bottom: none;
+}
+
+.menuvertical > li > a:hover {
+  background-color: #22f;
+  border-bottom: 1px solid #ccc;
 }
