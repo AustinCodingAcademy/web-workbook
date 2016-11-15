@@ -1,0 +1,105 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+  height: 51px;
+  margin-bottom: 15px;
+
+  background-color: #222;
+  color: #999;
+}
+
+main {
+  width: 848px;
+}
+
+aside {
+  width: 264px;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.container-hflex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  padding: 15px 0;
+  display: inline-block;
+  text-decoration: none;
+  color: #999;
+}
+
+.navbar {
+  display: inline-block;
+}
+
+.navbar > li {
+  display: inline-block;
+}
+
+.navbar > li > a {
+  color: #999;
+  display: inline-block;
+  padding: 15px 10px;
+  text-decoration: none;
+}
+
+.navbar > li > a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.herounit {
+  padding: 50px;
+
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.herounit-title {
+  margin-bottom: 10px;
+
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.herounit-text {
+  font-size: 18px;
+}
+
+.menuvertical {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+@media screen and (max-width: 800px) {
+  .menuvertical {
+    display: none;
+  }
+}
+
+.menuvertical > li {
+  list-style-type: none;
+}
+
+.menuvertical > li > a {
+  display: block;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+
+  text-decoration: none;
+}
+
+.menuvertical > li:last-child > a {
+  border-bottom: none;
+}
+
+.menuvertical > li > a:hover {
+  background-color: #22F;
+}
