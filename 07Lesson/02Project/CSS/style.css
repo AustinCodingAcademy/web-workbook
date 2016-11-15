@@ -2,15 +2,30 @@ header {
   height: 51px;
   color: #999;
   background-color: #222;
+  margin-bottom: 15px;
 }
 
 body {
   font-family: Helvetica, sans-serif;
 }
 
+main {
+  width: 848px;
+}
+
+aside {
+  width: 264px;
+}
+
 .container {
   width: 1140px;
   margin: 0 auto;
+}
+
+.container-hflex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .logo {
@@ -46,11 +61,62 @@ body {
 }
 
 .navbar > li > a:hover {
-  background-color: black;
-  color: white;
+  background-color: #000;
+  color: #fff;
 }
 
 .navbar {
   display: inline-block;
+}
 
+.herounit {
+  padding: 50px;
+  background-color: #ddd;
+  color: inherit;
+  border-radius: 10px;
+}
+
+.herounit-title {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.herounit-text {
+  font-size: 18px;
+}
+
+.verticalmenu > li > a {
+  display: block;
+  padding: 5px;
+
+  text-decoration: none;
+  color: #000;
+  background-color: inherit;
+  border-bottom: none;
+  border: 1px solid #ccc;
+}
+
+.verticalmenu > li {
+  list-style-type: none;
+}
+
+.verticalmenu {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .verticalmenu {
+      display: none;
+    }
+}
+
+.verticalmenu > li > a:hover {
+  background-color: blue;
+  color: white;
+}
+
+.verticalmenu > li:last-child > a {
+  border-bottom: none;
 }
