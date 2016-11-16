@@ -1,166 +1,138 @@
-html, body {
+html body {
   width: 100%;
   height: 100%;
 }
 
-.wrapper{
-  width: 1000px;
-  margin: 0 auto;
-  height: auto;
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 }
 
 .topbox {
-  margin: 25px 0px 25px 0px;
-  width: 100%;
-  float: left;
-}
-
-.company {
-  font-size: 24px;
-  color: green;
-  width: 50%;
-  float: left;
-}
-
-.moveul {
-  width: 50%;
-  float: left;
-}
-
-.movelink {
-  float: right;
-  color: green;
-  font-size: 24px;
-  display: inline;
-  margin-left: 20px;
-  clear: left;
-}
-
-.box1 {
-  width: 80%;
-  height: 500px;
-  background-image: url(../css/dscf7183.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  padding: 100px;
-}
-
-.textfix {
-  color: white;
-  font-size: 36px;
-  margin: 20px;
-}
-
-.textfix1 {
-  color: white;
-  font-size: 24px;
-}
-
-.box1butt {
-  border: 2px solid white;
-  margin: 20px;
-}
-
-.smallsidepic {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-
-  height: 200px;
+  background-color: #2BCDC0;
   width: 900px;
-  padding: 100px 0px 100px 0px;
-}
-
-.pondflower {
-  width: 200px;
-  height: 200px;
-
-}
-
-.box2text {
-  width: 50%;
-  margin: auto;
-}
-
-.fourpics {
-  background-color: lightgray;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  width: 900px;
-  padding: 40px;
-
-}
-
-.fourbox {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 20%;
-
-}
-
-.smallpic {
-  height: 100px;
-}
-
-.addpad {
-  padding: 10px;
-}
-
-.butterflybox{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.butterfly {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 75%;
-}
-
-.shrink {
-  width: 75%;
-  padding: 20px;
-}
-
-.end {
-  display: flex;
-  align-self: flex-end;
-  margin-right: 60px;
-}
-
-.lastbox {
-  background-image: url("../css/DSCF7202.jpg");
-  background-repeat: no-repeat;
-  height: 500px;
-  margin: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: wrap;
-
-}
-
-.dinotext{
-  width: 100%;
+  height: 450px;
   font-size: 48px;
+  color: white;
+}
+
+strong {
+  padding: 7px;
+}
+
+.lowerbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  height: 450px;
+  background-color: #1B1B1B;
+  color: white;
+
+}
+
+.lowerboxfix {
+  display: flex;
+  flex-flow: column;
+  width: 25%;
   padding: 40px;
 }
 
-.run {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 40px 100px 0px;
+.colorbar1 {
+  width: 90%;
+  height: 30px;
+  background-color: #33A8DD;
+}
 
+.colorbar2 {
+  width: 90%;
+  height: 30px;
+  background-color: #F46731;
+}
+
+.colorbar3 {
+  width: 90%;
+  height: 30px;
+  background-color: #2BCDC0;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .wrapper {
+    width: 100%;
+
+  }
+
+
+  .topbox {
+    background-color: #6633FF;
+    max-width: 80%;
+  }
+
+  .lowerbox {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 100%;
+    background-color: #F7F5F6;
+    color: #000000;
+    max-width: 80%;
+    padding: 10px;
+  }
+}
+
+  .colorbar1 {
+  background-color: #CC33CC;
+}
+
+ .colorbar2 {
+   background-color: #33CC33;
+ }
+
+ .colorbar3 {
+   background-color: #CC6699;
+ }
+}
+
+@media (max-width: 767px) {
+  .topbox {
+    background-color: #33A8DD;
+    width: 80%;
+  }
+
+  .lowerbox {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    height: 100%;
+    background-color: #F7F5F6;
+    color: #000000;
+    width: 80%;
+  }
+
+  .lowerboxfix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+  }
+
+  .colorbar1 {
+  background-color: #33A8DD;
+}
+
+ .colorbar2 {
+   background-color: #F36831;
+ }
+
+ .colorbar3 {
+   background-color: #2BCDC0;
+ }
 }
