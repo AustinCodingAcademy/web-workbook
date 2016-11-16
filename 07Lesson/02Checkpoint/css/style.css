@@ -44,16 +44,22 @@ nav {
 
 nav a {
     position: relative;
-    bottom: -15px;
+    text-decoration: none;
     display: flex;
     flex-direction: row;
     flex-flow: row;
-    flex-basis: fit-content;
     width: 10%;
+    color: black;
+    bottom: -15px;
+}
+
+section {
+    width: 95%;
 }
 
 .splash {
     background-image: url(../img/background.jpeg);
+    background-position: center;
     height: 600px;
     width: auto;
     z-index: -1;
@@ -69,7 +75,6 @@ nav a {
     width: 95%;
     margin: 0 auto;
     text-align: center;
-    /*line-height: 1em;*/
 }
 
 .text-box h1 {
@@ -93,13 +98,14 @@ nav a {
     font-family: 'Droid Sans', sans-serif;
     font-size: 15pt;
     text-decoration: none;
+    color: black;
 }
 
-
-/*#geaux {
-    position: relative;
-    top: 220px;
-}*/
+.bacon {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 700px;
+}
 
 .flex-container {
     display: -webkit-flex;
@@ -109,21 +115,19 @@ nav a {
     -webkit-align-items: center;
     align-items: center;
     flex-wrap: wrap;
-    /*min-width: 320px;*/
-    /*max-width: 1220px;*/
     margin: 0 auto;
+    height: 500px;
+    flex-basis: 100%;
 }
 
 .flex-item {
     display: flex;
     align-items: center;
-    margin: 3px;
     margin: 0 auto;
-    /*padding: 10px 0 0 10px;*/
 }
 
 .flex-item img {
-    flex-grow: 0;
+    flex-grow: 1;
     flex-shrink: 0;
     width: 300px;
     height: 200px;
@@ -144,8 +148,6 @@ nav a {
 }
 
 .row-1 {
-    background-color: green;
-    width: 95%;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row;
@@ -158,21 +160,13 @@ nav a {
 
 .row-2 {
     position: relative;
-    flex-direction: row;
-    display: flex;
-    width: 90%;
+    width: 95%;
+    justify-content: space-around;
 }
 
 .row-2 h3 {
     font-size: 25pt;
     padding-bottom: 20px;
-    flex-direction: column;
-    ;
-}
-
-.row-2 p {
-    /*width: 33%;*/
-    flex-direction: column;
     ;
 }
 
@@ -182,4 +176,42 @@ nav a {
     width: 300px;
     height: 200px;
     padding-right: 2%;
+}
+
+footer {
+    display: flex;
+    background-image: url(../img/footer.jpeg);
+    height: 200px;
+    background-position: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footbutt {
+    position: relative;
+    flex-flow: row;
+    padding-top: 70px;
+    margin-right: -105%;
+}
+
+.footbutt a {
+    margin-right: 90px;
+}
+
+.foottext {
+    position: relative;
+    display: inline-block;
+    padding-top: 140px;
+    color: white;
+}
+
+.button-link {
+    position: relative;
+    height: 25px;
+    padding: 10px 15px;
+    font-size: 15pt;
+    background: #91a05d;
+    background: hsla (73, 27%, 50%, 1);
+    background: rgba(145, 160, 93. 1);
+    color: #FFF;
 }
