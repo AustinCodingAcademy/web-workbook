@@ -6,10 +6,6 @@ body {
   flex-direction: column;
 }
 
-#wrapper {
-  width: 100%;
-}
-
 header {
   height: 400px;
   width: 100%;
@@ -22,7 +18,7 @@ header {
 
 h1 {
   font-weight: normal;
-  font-size: 50px;
+  font-size: 70px;
 }
 
 span {
@@ -51,6 +47,14 @@ h2, p {
   margin: 10px 0;
 }
 
+h2 {
+  font-size: 50px;
+}
+
+p {
+
+}
+
 #bannerone {
   width: 200px;
   height: 30px;
@@ -70,5 +74,35 @@ h2, p {
 }
 
 @media (min-width: 768px){
+  header {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00d4c4;
+    color: white;
+  }
 
+  section {
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  h2, p {
+    color: white;
+  }
+
+  h2 {
+    margin: 20px 0;
+  }
+
+  p {
+    padding: 0 140px;
+    margin: 10px 0 30px 0;
+  }
 }
