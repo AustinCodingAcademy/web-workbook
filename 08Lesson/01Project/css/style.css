@@ -17,6 +17,17 @@ header {
   padding-top: 140px;
 }
 
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    background-color: #33A8DD;
+    width: 400px;
+    height: 400px;
+    text-align: left;
+    padding-left: 35px;
+  }
+}
+
 header h1 {
   font-size: 50px;
   font-weight: lighter;
@@ -28,6 +39,20 @@ header h1 {
   background-color: black;
   justify-content: space-around;
   align-items: center;
+}
+
+.titlesection h2 {
+  font-size: 50px
+}
+
+@media (max-width: 768px) {
+  .titlesection {
+    width: 400px;
+    height: 1000px;
+    background-color: #F7F5F6;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 .box, .box2, .box3 {
@@ -43,6 +68,12 @@ header h1 {
 
 .box3 {
   border-top: 30px solid #2BCDC0;
+}
+
+@media (max-width: 768px) {
+  .box, .box2, .box3 {
+    color: black;
+  }
 }
 
 h2 {
