@@ -5,7 +5,6 @@ body {
 .container {
   width: 1050px;
   margin: 0 auto;
-  background-color: red;
 }
 
 header {
@@ -14,6 +13,20 @@ header {
   background: url("../img/bg.jpg");
   background-size: 1150px 500px;
   align-items: center;
+}
+
+@media (max-width: 768px) {
+  header {
+    width: 500px;
+    background: url("../img/bg2.jpg");
+    background-size: 500px 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  header p {
+    width: 100px;
+  }
 }
 
 .headertext {
@@ -38,6 +51,7 @@ header {
 
 section {
   display: flex;
+  box-sizing: border-box;
   background-color: #F7F7F7;
   justify-content: space-around;
 }
@@ -45,6 +59,14 @@ section {
 article {
   width: 450px;
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  section {
+    display: block;
+    width: 500px;
+    padding-left: 20px;
+  }
 }
 
 article > h2 {
