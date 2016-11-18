@@ -15,8 +15,8 @@ header h1 {
 
 section div {
   float: left;
-
 }
+
 section div.character {
   width: 30%;
 }
@@ -27,4 +27,42 @@ section div.character img {
 
 section div.text {
   width: 60%;
+  padding-left: 4%;
+}
+
+.mushroom {
+  padding-top: 60px;
+}
+
+/* Tablets */
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  section div.character {
+    width: 100%;
+    text-align: center;
+  }
+  section div.character img {
+    width: 50%;
+  }
+  section div.text {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+/* Phones */
+
+@media (max-width: 767px) {
+  section div.character {
+    width: 100%;
+    text-align: center;
+  }
+  section div.character img {
+    width: 50%;
+  }
+  section div.text {
+    width: 100%;
+    padding-left: 0;
+  }
+
 }
