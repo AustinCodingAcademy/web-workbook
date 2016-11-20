@@ -1,5 +1,6 @@
 body {
   width: 845px;
+  margin: auto;
 }
 
 header {
@@ -25,8 +26,6 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: center;
-
-
 }
 
 .colorbar {
@@ -52,12 +51,41 @@ section {
 h2 {
   clear: left;
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 p {
   text-align: center;
+  font-size: 18px;
 }
 .width {
   width: 150px;
+}
+
+@media (max-width: 767px) {
+  body {
+    width: 500px;
+  }
+  header {
+    width: inherit;
+    height: 375px;
+    background-color: #33A8DD;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+    section {
+      width: inherit;
+      height: 750px;
+      background-color: #F7F5F6;
+      color: black;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+    }
+
 }
