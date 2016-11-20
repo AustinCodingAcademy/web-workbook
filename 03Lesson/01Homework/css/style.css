@@ -1,50 +1,57 @@
 
 body {
+  width: 900px;
+  height: 1000px;
   font-family: 'Arial', sans-serif;
 }
 
 main {
-  width: 1024px;
+  width: 100%;
   margin: auto;
 }
 
-div{
+/*div{
   width: 100%;
   text-align: center;
+}*/
+
+div {
+  width: 50%;
+  height: 50%;
 }
 
-section {
+.left {
   float: left;
-  width: 500px;
-  height: 500px;
 }
 
-img section{
+div > img {
   width: 100%;
+  height: 100%;
 }
 
-aside{
+.right {
   background-color: rgb(240,240,240);
-  width: 500px;
-  height: 500px;
+  background-size: cover;
   float: right;
-
+  color: #252b3b;
+  text-align: center;
+  padding: 8.6% 0;
 }
 
-aside h4 {
-  text-align: center;
+.right > h4 {
   font-size: 1.9em;
   color: #252b3b;
+  margin: 8% auto;
 
 }
 
-aside p {
-  text-align: center;
+.right > p {
   color: #555;
   padding-bottom: 20px;
+  margin: 0 auto;
 }
 
-aside a {
+div > a {
   text-decoration: none;
   font-style: normal;
   font-weight: bold;
