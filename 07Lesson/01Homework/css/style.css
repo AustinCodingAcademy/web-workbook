@@ -1,7 +1,9 @@
 body {
   background-color: black;
-  /*padding: 10px;*/
 }
+
+
+/***** Hero Section *****/
 
 section {
   display: flex;
@@ -12,21 +14,17 @@ section {
   margin: 30px 0;
 }
 
-h1 {
+h2 {
   font-size: 2em;
-  /*font-family: cursive;*/
   color: white;
 }
 
 nav {
   align-self: flex-end;
-  /*font-family: cursive;*/
 }
 
 a {
   text-decoration: none;
-  /*border: 1px solid white;
-  border-width: thick;*/
   padding: 10px 20px;
   color: white;
   background-color: transparent;
@@ -36,16 +34,69 @@ header {
   color: white;
   text-align: center;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
-  width: 50%;
+  width: 100%;
   transform: translate(-50%, -50%);
   z-index: 2;
 }
 
-img {
+#header-image {
   width: 100%;
-  height: auto;
+  height: 650px;
   opacity: 0.2;
   z-index: 1;
+}
+
+h1 {
+  font-size: 75px;
+  margin-bottom: 60px;
+}
+
+p {
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+span {
+  font-weight: bold;
+}
+
+button {
+  background-color: transparent;
+  padding: 10px 30px;
+  color: white;
+  font-size: 15px;
+  border: 1px solid grey;
+}
+
+#hero {
+  margin-bottom: 0;
+}
+
+
+/***** Description Section *****/
+
+#description-container {
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+#description {
+  padding: 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#description h2 {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+#description p {
+  color: white;
 }
