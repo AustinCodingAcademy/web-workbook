@@ -10,13 +10,89 @@ section {
   height: 200px;
 }
 
+h1 {
+  font-family: 'Lily Script One', cursive;
+}
+
 div {
+  height: auto;
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: white;
-  height: 550px;
   margin-bottom: 60px;
-  /*margin: 0px 10px 40px 10px;;*/
+  overflow: hidden;
+}
+
+.tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: flex-end;
+  text-align: center;
+  width: auto;
+  padding: 10px 23px;
+  /*height: 40px;*/
+  position: absolute;
+  margin-top: 360px;
+  background-color: mediumaquamarine;
+  color: white;
+  font-size: 20px;
+  }
+
+.img-1 {
+    width: 100%;
+    height: 400px;
+    background-image: url("http://inspirythemes.biz/html-templates/cream/images/temp-images/hoodie_1_back-470x470.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0px;
+    overflow: hidden;
+  }
+
+.img-2 {
+  height: 400px;
+  width: 100%;
+  background-image: url("http://inspirythemes.biz/html-templates/cream/images/temp-images/hoodie_1_front.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.img-3 {
+  height: 400px;
+  width: 100%;
+  background-image: url("http://inspirythemes.biz/html-templates/cream/images/temp-images/poster_1_up-300x300.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.img-4 {
+  height: 400px;
+  width: 100%;
+  background-image: url("http://inspirythemes.biz/html-templates/cream/images/temp-images/poster_2_up-300x300.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 0px;
+  overflow: hidden;
+}
+
+strike {
+  font-size: 18px;
+  margin-top: 1px;
+}
+
+.sale {
+  position: absolute;
+  background-color: red;
+  width: auto;
+  color: white;
+  padding: 12px 16px;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h4 {
@@ -26,6 +102,9 @@ h4 {
   height: 60px;
   border: 1px solid gainsboro;
   border-bottom: none;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
 }
 
 nav {
@@ -40,15 +119,39 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
-  width: 120px;
-  height: 40px;
+  font-size: 14px;
+  padding: 15px 20px;;
   background-color: darkslategray;
   color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
 }
 
-img {
-  height: 400px;
-  /*width: 100%;*/
-  /*width: 460px;*/
+a:hover {
+  background-color: mediumaquamarine;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.img-1,.img-2,.img-3,.img-4:hover {
+  cursor: pointer;
+}
+
+div:hover > .tag {
+  background-color: darkslategray;
+}
+
+.one:hover > .img-1 {
+  -webkit-transition: 2.5s ease-out;
+   -moz-transition: 2.5s ease-out;
+   -o-transition: 2.5s ease-out;
+   -ms-transition: 2.5s ease-out;
+   transition: 2.5s ease-out;
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+  -moz-transform:scale(1.25); /* Firefox */
+  -ms-transform:scale(1.25); /* IE 9 */
+  -o-transform:scale(1.25); /* Opera */
+   transform:scale(1.25);
+
 }
