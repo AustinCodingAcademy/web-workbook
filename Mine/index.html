@@ -13,10 +13,11 @@
   </header>
   <div id="mycarousel" class="carousel slide">
     <ol class="carousel-indicators">
-        <li data-target="#mycarousel" data-side-to="0" class="active"></li>
-        <li data-target="#mycarousel" data-side-to="1"></li>
-        <li data-target="#mycarousel" data-side-to="2"></li>
+        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#mycarousel" data-slide-to="1"></li>
+        <li data-target="#mycarousel" data-slide-to="2"></li>
     </ol>
+
     <div class="carousel-inner">
       <div class="item active">
         <img src="img/mtns.jpg" alt="Mountains" class="img-responsive">
@@ -28,13 +29,20 @@
         <img src="img/sky.jpg" alt="Sky" class="img-responsive">
       </div>
     </div>
-    <a class="carousel-control left" href="mycarousel" data-slide="prev">
+
+    <a class="carousel-control left" href="#mycarousel" data-slide="prev">
       <span class="icon-prev"></span>
     </a>
-    <a class="carousel-control right" href="mycarousel" data-slide="next">
+
+    <a class="carousel-control right" href="#mycarousel" data-slide="next">
       <span class="icon-next"></span>
     </a>
 
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> <script src="../%pathtofile%/bootstrap.min.js"></script>
+  <script> $('#myCarousel').carousel({ interval: 3000 }) </script>﻿
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 </body>
 </html>
