@@ -9,9 +9,12 @@ nav {
 }
 header {
   background-color: #eee;
-  height: 220px;
+  border-radius: 8px;
+  height: auto;
   width: 100%;
   margin: 20px 0px 20px 0px;
+  padding: 50px;
+  box-sizing: border-box;
 }
 .container {
   width: 960px;
@@ -24,12 +27,31 @@ main{
 .sidebar{
   width: 29%;
   float: right;
-  height: 100%;
+  height: auto;
   background-color: #fff;
   margin: 10px 0px 20px 0px;
-  box-sizing: border-box;;
+  box-sizing: border-box;
   padding: 10px;
 }
+.sidebar ul{
+  list-style: none;
+  color: #000;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+.sidebar li a{
+  display: block;
+  width: auto;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  text-decoration: none;
+  padding: 10px;
+}
+/*
+.sidebar li a:last-child  {
+  border-bottom: none;
+}
+*/
 .flexbox{
   display: flex;
   height: 100%;
@@ -37,6 +59,7 @@ main{
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+  margin-bottom: 40px;
 }
 .flexitem{
   width: 30%;
@@ -48,31 +71,24 @@ main{
   height: 50px;
   padding: 15px 15px;
 }
-.side {
-  display: inline-block;
-  width: 100%;
-  border: 1px solid #eee;
-  padding: 10px;
-}
-li{
-  list-style: none;
-  color: #000;
-}
-li a{
-  text-decoration: none;
+footer{
+  clear: both;
+  border-top: 1px solid #eee;
+  padding-top: 50px;
 }
 nav a {
   color: #eee;
   text-decoration: none;
 }
 h1 {
-  font-size: 60px;
+  font-size: 54px;
+  font-weight: bold;
 }
 h2 {
-  font-size: 20px;
+  font-size: 18px;
 }
 h3 {
-  font-size: 24px;
+  font-size: 22px;
 }
 p {
   font-size: 12px;
