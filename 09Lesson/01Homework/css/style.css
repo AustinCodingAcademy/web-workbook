@@ -1,55 +1,111 @@
 body {
   font-family: Helvetica;
+  margin: 0;
 }
 
-body {
-  font-family: 'Lily Script One', cursive;
+#header{
+  font-family: 'Lily Script One';
   text-align: center;
   color: #444444;
+  font-size: 50px;
+  padding: 25px;
 }
 
 .col-sm-3{
-  width: 300px;
-  height: 450px;
+  margin: 10px;
+  /*width: 300px;
+  height: 450px;*/
 }
 
-.image {
+.image{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
   width: 300px;
-  height: 315px;
+  height: 300px;
+}
+
+.first{
   background-image: url("../img/img1.jpg");
   background-position: center;
   background-repeat: no-repeat;
 }
+.second{
+  background-image: url("../img/img2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.third{
+  background-image: url("../img/img3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.fourth{
+  background-image: url("../img/img4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-.price{
-  height: 20px;
-  width: 100px;
-  box-sizing: border-box;
-  font-style: Helvetica,
+/*.image:hover{
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}*/
+
+.image p{
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 15px;
+  vertical-align: middle;
   color: white;
-  background-color: #7b7d85;
+  background-color: #4ee8c4;
+  margin-bottom: 0;
+}
+
+span{
+  font-size: 15px;
+  text-decoration: line-through;
 }
 
 .itemName {
-  border-left: 1px solid #444444;
-  border-right: 1px solid #444444;
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
   height: 50px;
+  width: 300px;
   text-align: center;
+}
+
+.itemName a{
+  color: #444444;
+  font-size:15px;
+  font-weight: bold;
+}
+
+.itemName a:hover{
+  text-decoration: none;
+  color: #4ee8c4;
 }
 
 .button{
   text-align: center;
   height: 100px;
-  border: 1px solid #444444;
+  width: 300px;
+  border: 1px solid #e0e0e0;
+  line-height: 80px;
+  vertical-align: middle;
 }
 
 .button a{
-  width: 128px;
-  height: 48px;
+  padding: 15px;
+  font-size: 13px;
+  font-weight: bold;
   background-color: #444444;
   color:white;
+}
+
+.button a:hover{
+  background-color: #4ee8c4;
 }
