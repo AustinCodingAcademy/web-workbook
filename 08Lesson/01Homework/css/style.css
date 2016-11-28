@@ -1,0 +1,111 @@
+/* LAYOUT */
+
+html, body {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+nav ul, li {
+  list-style: none;
+  display: inline;
+  margin-left: 35px;
+}
+
+main {
+  height: 575px;
+  color: #fff;
+  display: flex;
+  background-image: url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding: 40px;
+}
+
+section {
+  display: flex;
+  background-color: #eee;
+}
+
+article {
+  padding: 40px;
+}
+
+/* PHONES */
+
+@media (max-width: 640px) {
+  nav ul, li {
+    display: none;
+  }
+  main {
+    background-image: url(../img/bg2.jpg);
+    background-size: cover;
+  }
+  section {
+    flex-direction: column;
+  }
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+  font-family: 'Times', serif;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+}
+
+h2 {
+  font-family: 'Times', serif;
+  font-size: 38px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-family: 'Times,' serif;
+  font-size: 28px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+
+p {
+  font-family: 'Times,' serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #999;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  color: #999;
+}
+
+nav a:hover {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #999;
+}
