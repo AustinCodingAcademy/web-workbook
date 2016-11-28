@@ -1,28 +1,28 @@
 .wrapper {
   margin: auto;
-  width: 900px;
+  width: 100%;
+  
 }
 .top {
   width: 100%;
   background-color: #2bcdc0;
-  height: 200px;
   text-align: center;
   padding-top: 100px;
+  padding-bottom: 100px;
   color: white;
 }
 .bottom {
-  display: flex;
-  align-items: center;
   width: 100%;
   background-color: black;
-  height: 200px;
   text-align: center;
   padding-top: 30px;
+  float: left;
 }
 .tri {
   text-align: center;
-  width: 33%;
+  box-sizing: border-box;
   padding: 35px;
+  float: left;
 }
 .blue {
   margin: auto;
@@ -45,9 +45,15 @@
 @media (max-width: 767px) {
   .tri {
     width: 100%;
+    background-color: #f7f5f6;
+    color: black;
   }
 }
-
+@media (min-width: 768px) and (max-width: 991px) {
+  .tri {
+    width: 33%;
+  }
+  }
 
 body {
   font-family: Arial, sans-serif;
