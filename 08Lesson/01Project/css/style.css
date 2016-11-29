@@ -1,5 +1,6 @@
 body {
-    width: 98%;
+    /*width: 98%;
+    height: 100%;*/
 }
 
 h1, h2, h3, h4, h5, h6, p, li, a {
@@ -12,8 +13,14 @@ section {
 
 article {
     position: relative;
-    width: 0, auto;
+    /*width: 0, auto;*/
     display: inline-block;
+}
+
+.clearfix:after {
+    display: flex;
+    content: " ";
+    clear: both;
 }
 
 .main {
@@ -37,30 +44,51 @@ article {
 
 .lonks {
     position: relative;
-    top: 35%;
-    width: 65%;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
+    background-color: #1B1B1B;
 }
 
 .list {
     position: relative;
-    margin: 0 auto;
-    top: 150px;
-    padding-bottom: 25%;
+    margin: 5%;
 }
 
 .list h3 {
     font-size: 3em;
     margin: 0 20%;
+    color: white;
 }
 
 .list p {
     font-size: 1.5em;
-    width: 85%;
+    color: white;
+    width: 70%;
 }
 
-.block {
+.list h3 p {
+    margin: 0 auto;
+}
+
+.block1 {
     position: relative;
-    width: 50px;
-    color: red;
+    width: 250px;
+    height: 50px;
+    background-color: #33A8DD;
+    margin-bottom: 5%;
+}
+
+.block2 {
+    position: relative;
+    width: 250px;
+    height: 50px;
+    background-color: #F46731;
+    margin-bottom: 5%;
+}
+
+.block3 {
+    position: relative;
+    width: 250px;
+    height: 50px;
+    background-color: #28CFBD;
+    margin-bottom: 5%;
 }
