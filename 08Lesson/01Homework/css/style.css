@@ -1,5 +1,6 @@
 body {
       width:100%;
+
       }
 
 header {
@@ -9,10 +10,78 @@ header {
       background-repeat: no-repeat;
       height:500px;
       width:100%;
+
+}
+
+h1 {
+      width:25%;
+      color:#fff;
+      font-size:3em;
+      padding-top:150px;
+      padding-left:3%;
+}
+
+header p {
+      width:25%;
+      color:#fff;
+      padding-left:3%;
 }
 
 main {
       background-color: lightgrey;
-      
-      padding:5%;
+      padding:3%;
 }
+
+.clearfix:after {
+display: block;
+content: " ";
+clear: both;
+}
+
+#food {
+      float:right;
+      width:45%;
+      color:#444;
+      padding-top:0;
+}
+
+#news {
+      float:left;
+      width:45%;
+      color:#444;
+}
+
+/* Mobile Size CSS*/
+
+@media (max-width:640px){
+
+header {
+      background-image:url(../img/bg2.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+}
+
+h1 {
+      width:70%;
+      padding-left:5%;
+}
+
+header p {
+      width:30%;
+      padding-left:5%;
+}
+
+#news {
+      float:none;
+      width:90%;
+      margin:0 auto;
+}
+
+#food {
+      float:none;
+      width:90%;
+      margin:10% auto;
+
+}
+      }
