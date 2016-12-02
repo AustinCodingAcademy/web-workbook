@@ -7,12 +7,6 @@ div {
     text-align: center;
 }
 
-figure {
-    position: relative;
-    overflow: hidden;
-    border: 1px solid #E5E5E5;
-}
-
 figcaption {
     color: #FFF;
     font-size: 18px;
@@ -39,7 +33,7 @@ img span {
 }
 
 
-/* style to find the bounding box of elements*
+/* style to find the bounding box of elements*/
 
 * {
     background: #000 !important;
@@ -58,19 +52,22 @@ img span {
 }
 
 .item {
-    border: 1px 0 solid #E5E5E5;
+    border: 1px solid #E5E5E5;
+}
+
+.item image {
+    position: relative;
 }
 
 figure {
     position: relative;
     overflow: hidden;
-    margin-bottom: 30px;
+    margin: 0 auto;
 }
 
 figure img {
     max-width: 100%;
     transition: all 500ms ease;
-    border: 1px solid lightgray;
 }
 
 p {
@@ -97,8 +94,8 @@ a {
     position: relative;
     min-height: 20px;
     min-width: 40px;
-    bottom: 351px;
-    right: 139px;
+    top: -251px;
+    left: -106px;
     padding: 4px;
     line-height: 20px;
     z-index: 1000;
@@ -115,6 +112,24 @@ span {
     text-decoration: line-through;
 }
 
+span:after {
+    margin: 0;
+}
+
 .lower {
     border: 0 2px solid lightgray;
+}
+
+.item {
+    margin: 5px;
+    padding: 0;
+    width: 22.2%;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+#sales {
+    margin: 0;
 }
