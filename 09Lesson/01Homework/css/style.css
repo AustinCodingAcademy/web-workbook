@@ -11,11 +11,18 @@ article {
 
 img {
   width: 100%;
+  transition: all 500ms ease;
+}
+
+article:hover img {
+    transform: scale(1.05);
+    max-width: 100%;
 }
 
 figure {
   position: relative;
   margin: 0;
+  overflow: hidden;
 }
 
 figcaption {
@@ -86,6 +93,14 @@ a:hover {
   text-decoration: none;
 }
 
+.product-title a {
+  color: #000;
+}
+
+.product-title a:hover {
+  color: #66d9c1;
+}
+
 del {
   font-size: 14px;
 }
@@ -98,7 +113,7 @@ figcaption {
   transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-figcaption:hover {
+article:hover figcaption {
   background-color: #3a4543;
 }
 
