@@ -1,84 +1,98 @@
 <!DOCTYPE html>
 <html>
+
     <head>
+        <title></title>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lily+Script+One|Open+Sans:400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
         <title>Best Selling Products</title>
     </head>
     <body>
-        <section class="container-fluid main-element">
-            <div class="row">
-                <div class="col-xs-3 col-sm-6 col-md-12">
-                    <h1 class="head">Best Selling Products</h1>
+        <header>
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h1 class="title">Best Selling Products</h1>
+                  </div>
                 </div>
             </div>
-                <!--<article>
-
-                <figure>
-                    <a href="product-detail.html"><img  src="images/T_7_front-300x300.jpg" alt="Shop Image"></a>
-                    <figcaption>
-                          <span class="amount">$35.00</span>
-                    </figcaption>
-                </figure>
-
-                <h4 class="title">
-                    <a href="product-detail.html">Ship Your Idea</a>
-                </h4>
-
-                <a href="product-detail.html" rel="nofollow" data-product_id="293" data-product_sku="" data-quantity="1" class="button add_to_cart_button product_type_variable">Select options</a>
-            </article>
-                 <article>
-
+        </header>
+        <main>
+          <section id="sales">
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="col-xs-12 col-sm-6 col-md-3 item">
                         <figure>
-                            <a href="product-detail.html"><img  src="images/hoodie_3_front-300x300.jpg" alt="Shop Image"></a>
+                            <img src="images/hoodie_3_front-300x300.jpg" alt="">
                             <figcaption>
-                                    <span class="amount">$35.00</span>
-                                </figcaption>
-                        </figure>
-
-                        <h4 class="title">
-                            <a href="product-detail.html">Ship Your Idea</a>
-                        </h4>
-
-                        <a href="product-detail.html" rel="nofollow" data-product_id="293" data-product_sku="" data-quantity="1" class="button add_to_cart_button product_type_variable">Select options</a>
-                    </article>
-                    <article>
-
-                        <figure>
-                            <a href="product-detail.html"><img src="images/T_4_front-300x300.jpg" alt="Shop Image"></a>
-                            <figcaption>
-                                  <span class="amount">$35.00</span>
+                                $35.00
                             </figcaption>
                         </figure>
-
-                        <h4 class="title">
-                            <a href="product-detail.html">Ship Your Idea</a>
-                        </h4>
-
-                        <a href="product-detail.html" rel="nofollow" data-product_id="293" data-product_sku="" data-quantity="1" class="button add_to_cart_button product_type_variable">Select options</a>
-                    </article> --->
-                  <div class="">
-                    <article>
-                        <span class="onsale">Sale!</span>
-                        <figure>
-                            <a href="product-detail.html"><img src="images/poster_1_up-300x300.jpg" alt="Shop Image"></a>
-                            <figcaption>
-                              <del><span class="amount">$15.00</span></del> <ins><span class="amount">$12.00</span></ins>
-                            </figcaption>
-                        </figure>
-
-                        <h4 class="title">
-                            <a href="product-detail.html">Flying Ninja</a>
-                        </h4>
-                          <a href="#" rel="nofollow" data-product_id="300" data-product_sku="" data-quantity="1" class="button add_to_cart_button product_type_simple">Add to cart</a>
-                    </article>
+                        <p>
+                            Ninja</p>
+                        <button class="button" type="button" name="add to cart">ADD TO CART</button>
+                        </div>
                     </div>
-        </section>
-        <!-- JavaScript -->
-        <!-- JQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- BootStrap -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    </body>
-</html>
+
+                    <div class="col-xs-12 col-sm-6 col-md-3 item">
+                        <figure>
+
+                            <img src="images/poster_1_up-300x300.jpg" alt="">
+
+                            <figcaption>
+                                $35.00
+                            </figcaption>
+
+                        </figure>
+                        <p>Happy Ninja</p>
+
+                        <div id="button">
+                            <button class="button" type="button" name="add to cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 item">
+                        <figure>
+
+                            <img src="images/T_4_front-300x300.jpg" alt="">
+
+                            <figcaption>
+                                <span>$15.00</span>
+                                $12.00
+                            </figcaption>
+
+                        </figure>
+                        <span class="sale">SALE!</span>
+                        <p>Flying Ninja</p>
+
+                        <div id="button">
+                            <button class="button" type="button" name="add to cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 item">
+                        <figure>
+
+                            <img src="images/T_7_front-300x300.jpg" alt="">
+
+                            <figcaption>
+                                $18.00
+                            </figcaption>
+
+                        </figure>
+
+                        <p>Happy Ninja</p>
+
+                        <div id="button">
+                            <button class="button" type="button" name="add to cart">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                </section>
+            </main>
+
+            <!-- JS Files Begin -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script type="text/javascript" src="path/to/js/bootstrap.min.js"></script>
+        </body>
+
+    </html>
