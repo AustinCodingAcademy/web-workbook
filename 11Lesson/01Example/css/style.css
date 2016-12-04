@@ -20,12 +20,6 @@ body {
   font-size: 31px;
 }
 
-@media (min-width: 900px) {
-  .navbar-default .navbar-nav>li>a:hover {
-    border-bottom: 3px solid red;
-  }
-}
-
 .current {
   background-color: transparent;
   border-bottom: 3px solid red;
@@ -56,10 +50,6 @@ body {
   border-radius: 0;
 }
 
-.jumbotron > .container > p {
-  font-size: 18px;
-}
-
 .divider {
     margin: 80px 0;
 }
@@ -68,10 +58,37 @@ body {
   display: inline-block;
 }
 
+.jumbotron {
+  color: white;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),
+    url("http://lorempixel.com/output/cats-q-g-1430-280-8.jpg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+.jumbotron > .container > p {
+  font-size: 18px;
+}
+
 .pull-right {
   float: right;
 }
 
 footer {
   padding-bottom: 50px;
+}
+
+@media (min-width: 900px) {
+  .navbar-default .navbar-nav>li>a:hover {
+    border-bottom: 3px solid red;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: -15px;
+  }
 }
