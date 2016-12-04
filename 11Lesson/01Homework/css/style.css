@@ -73,7 +73,6 @@ h6 {
 }
 
 .snow {
-  /*position: absolute;*/
   background-image: url(../img/wine16.jpg);
   height: 500px;
   width: 100%;
@@ -116,31 +115,35 @@ h6 {
   background-position: center;
 }
 
-.shiraz {
-  height: 500px;
+section {
+  height: auto;
   width: 100%;
-  background-image: url(../img/wine3.jpg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+}
+
+.shiraz {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
 }
 
 .chard {
-  height: 500px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
   width: 100%;
-  background-image: url(../img/wine6.jpg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .cab {
-  height: 500px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
   width: 100%;
-  background-image: url(../img/wine7.jpg);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+}
+
+section img {
+  /*width: auto;*/
+  border-bottom: 1px solid gray;
 }
 
 .description {
@@ -151,6 +154,7 @@ h6 {
   align-items: center;
   text-align: center;
   font-style: italic;
+  margin: 5%;
 }
 
 a {
@@ -163,32 +167,12 @@ a {
 .awards {
   display: flex;
   flex-direction: column;
-  align-content: center;
-}
-
-.blur {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-content: center;
   text-align: center;
-  height: 500px;
+  height: auto;
   width: 100%;
-  background-image: url(../img/wine12.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-}
-
-.gray {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  height: 500px;
-  width: 100%;
+  background-image: url(../img/wine12.jpg), url(../img/wine12.jpg);
   background-color: #BFBFBF;
   background-size: cover;
   background-position: center;
@@ -207,6 +191,93 @@ a {
 
 img {
   align-self: center;
-  height: 300px;
-  width: 300px;
+  height: 500px;
+  width: auto;
+}
+
+h6 {
+  font-size: 24px;
+  margin-top: 80px;
+  font-family: georgia;
+  font-style: italic;
+}
+
+.awards img {
+  height: auto;
+  width: 100%;
+  margin: 40px 0px;
+}
+
+.contact {
+  height: auto;
+  width: 100%;
+
+}
+
+.lipsum {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+  color: #666666;
+}
+
+.info {
+  margin: 20px 0px 0px 0px;
+  color: #666666;
+}
+
+.text_4 {
+  margin: 50px 15px;
+}
+
+footer {
+  height: auto;
+  background-color: #292929;
+  color: white;
+}
+
+.text_5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+  margin: 3%;
+  font-weight: lighter;
+}
+
+.text_5 p {
+  margin-top: 20px;
+}
+
+.button {
+  color: white;
+  background-color: #91A05C;
+  padding: 10px 20px;
+  margin: 0px 0px 30px 0px;
+}
+
+form {
+  border: .5px solid white;
+  background-color: transparent;
+  border-bottom: none;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+input {
+  color: white;
+  height: 37px;
+  background-color: transparent;
+  border: none;
+}
+
+@media (min-width: 768px) {
+
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around 50px;
+  }
+
+
 }
