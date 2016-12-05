@@ -1,3 +1,6 @@
+.container-fluid a {
+  background: transparent;
+}
 
 .vineyard {
   display: flex;
@@ -296,6 +299,13 @@ input {
   flex-direction: column;
 }
 
+.social {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100px;
+}
+
 @media (min-width: 768px) {
 
   .vineyard {
@@ -311,6 +321,8 @@ input {
     height: auto;
     width: 100%;
     color: white;
+    filter: brightness(80%);
+    filter: blur(10%);
   }
 
   .text_1 {
@@ -322,12 +334,17 @@ input {
     height: auto;
     background-size: cover;
     background-position: center;
-    opacity: 0.8;
-    margin: 30%;
+    opacity: 1.5;
+    margin: 15% 33%;
   }
 
+  .text_1 h1 {
+    line-height: 30px;
+  }
+
+
   #f {
-    height: 300px;
+    height: 500px;
     width: auto;
     align-self: center;
     padding-bottom: 20px;
@@ -364,7 +381,6 @@ input {
     text-align: center;
     height: auto;
     margin: 40% 30%;
-    /*letter-spacing: 2px;*/
   }
 
   h4 {
