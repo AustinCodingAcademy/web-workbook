@@ -36,6 +36,14 @@ p {
   font-size: 13px;
 }
 
+h1 {
+  height: auto;
+  font-size: 21px;
+  font-style: italic;
+  padding-bottom: 20px;
+  font-family: georgia;
+}
+
 h2 {
   color: #666666;
   font-size: 18px;
@@ -45,7 +53,7 @@ h2 {
 
 h3 {
   height: auto;
-  font-size: 16px;
+  font-size: 24px;
   font-style: italic;
   padding-bottom: 20px;
   font-family: georgia;
@@ -65,7 +73,17 @@ h5 {
 }
 
 h6 {
-  color: white;
+  font-size: 24px;
+  margin-top: 40px;
+  font-family: georgia;
+  font-style: italic;
+}
+
+h7 {
+  font-size: 24px;
+  margin-top: 40px;
+  font-family: georgia;
+  font-style: italic;
 }
 
 #sig {
@@ -185,19 +203,13 @@ a {
   width: 100%;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 img {
   align-self: center;
-  height: 500px;
-  width: auto;
-}
-
-h6 {
-  font-size: 24px;
-  margin-top: 80px;
-  font-family: georgia;
-  font-style: italic;
+  height: auto;
+  width: 40%;
 }
 
 .awards img {
@@ -206,7 +218,7 @@ h6 {
   margin: 40px 0px;
 }
 
-.contact {
+#contact {
   height: auto;
   width: 100%;
 
@@ -226,10 +238,14 @@ h6 {
 .text_4 {
   height: auto;
   margin: 50px 15px;
+  overflow: hidden;
 }
 
 footer {
-  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 442px;
   background-color: #292929;
   color: white;
 }
@@ -239,8 +255,9 @@ footer {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-items: center;
   height: auto;
-  margin: 3%;
+  margin: 0% 3%;
   font-weight: lighter;
 }
 
@@ -266,19 +283,120 @@ form {
 input {
   color: white;
   height: 37px;
+  width: 100%;
   background-color: transparent;
   border: none;
 }
 
+.wrapper_1 {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: 768px) {
 
-  section {
+  .center {
+    margin: 200px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+  }
+
+  #fix {
+    height: auto;
+    width: 100%;
+  }
+
+  #wine {
     display: flex;
     flex-direction: row;
     justify-content: space-around 50px;
     }
 
   .awards {
-    height: 1000px;
+    height: auto;
+    padding: 0px;
+}
+
+  h7 {
+    margin-top: 0px;
+    font-size: 32px;
+    font-family: georgia;
+    font-style: italic;
+}
+
+  .wrapper_1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-self: center;
+    margin: 10px 0px 10px 0px;
+  }
+
+  form {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    width: 50%;
+    border-bottom: .5px solid white;
+  }
+
+  .button {
+    width: 50%;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  #wrapper_2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+  }
+
+  .pour {
+    height: auto;
+    width: 50%;
+  }
+
+  #contact {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+    height: auto;
+  }
+
+  .text_4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #wrapper_3 {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 500px;
+  }
+
+  .snow {
+    width: 50%;
+    height: auto;
+  }
+
+  .est {
+    display: flex;
+    align-content: center;
+    width: 50%;
+    height: auto;
+  }
+
+  .awards {
+    height: auto;
+    overflow: hidden;
   }
 }
