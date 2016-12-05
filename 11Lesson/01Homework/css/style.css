@@ -1,13 +1,17 @@
+body, html{
+  height: 100%;
+}
+
 header{
   background-image: linear-gradient( rgba(59, 59, 59, 0.5), rgba(59, 59, 59, 0.5) ), url("../img/bg.jpg");
   text-align: center;
   background-position: center;
   color:white;
-  padding-bottom: 30px;
-}
-
-.container{
-  width: 100%;
+  padding: 35px 0;
+  height: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navbar{
@@ -25,9 +29,16 @@ header{
   color:white;
 }
 
-
-#wine1{
-  opacity: 0.75;
+.logoDiv{
+  height: 400px;
+  width: 110%;
+  padding: 0;
+  margin: 0;
+  background-image: url("../img/wine1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.65;
 }
 
 #quote1{
@@ -39,13 +50,7 @@ header{
   font-family: Helvetica;
   font-weight: lighter;
   font-size: 14px;
-  padding-top: 20px;
-}
-
-section{
-  width: 100%;
-  height: 500px;
-  text-align: center;
+  padding-top: 10px;
 }
 
 .textLeft{
@@ -55,6 +60,9 @@ section{
 
 .content1{
   overflow: hidden;
+  width: 100%;
+  height: 500px;
+  text-align: center;
 }
 
 .content1 p{
@@ -107,6 +115,9 @@ section{
   background-size: cover;
   color: white;
   height: 400px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
 }
 
 #quote2{
@@ -183,6 +194,7 @@ h2{
   background-repeat: no-repeat;
   color: white;
   text-align: center;
+  background-attachment: fixed;
 }
 
 #awardTitle{
@@ -199,7 +211,7 @@ h2{
 
 .contactInfo{
   height: 400px;
-  line-height: 20px;
+  line-height: 25px;
 }
 
 .addressImg{
@@ -227,7 +239,7 @@ h3{
 }
 
 .address{
-  padding: 20px;
+  padding: 40px;
   background-color: #F8F8F8;
   height: 400px;
 }
@@ -255,7 +267,7 @@ h3{
 h4{
   font-size: 35px;
   font-style: italic;
-  padding: 15px;
+  padding: 100px 0 15px 0;
 }
 
 #footerComment{
@@ -267,7 +279,7 @@ h4{
 input{
   background-color: transparent;
   border: 1px solid #f8f8f8;
-  margin: 0px;
+  margin: 0 8px 8px 0;
   font-family: Helvetica;
   font-size: 12px;
   height: 45px;
@@ -276,7 +288,6 @@ input{
 .footerButton{
   background-color: #91A05C;
   padding: 10px 0;
-  width: 100%;
   height: 45px;
   font-size: 12px;
   color: white;
