@@ -22,6 +22,7 @@
   margin: 10%;
   background-size: cover;
   background-position: center;
+  opacity: 0.8;
 }
 
 #f {
@@ -29,6 +30,7 @@
   width: auto;
   align-self: center;
   padding-bottom: 20px;
+  opacity: 0.8;
 }
 
 p {
@@ -38,7 +40,7 @@ p {
 
 h1 {
   height: auto;
-  font-size: 21px;
+  font-size: 16px;
   font-style: italic;
   padding-bottom: 20px;
   font-family: georgia;
@@ -159,10 +161,6 @@ section {
   width: 100%;
 }
 
-section img {
-  border-bottom: 1px solid gray;
-}
-
 .description {
   height: 250px;
   display: flex;
@@ -171,7 +169,8 @@ section img {
   align-items: center;
   text-align: center;
   font-style: italic;
-  margin: 5%;
+  margin:  0% 5%;
+  border-top: 1px solid #CCCCCC;
 }
 
 a {
@@ -189,12 +188,16 @@ a {
   text-align: center;
   height: auto;
   width: 100%;
-  background-image: url(../img/wine12.jpg), url(../img/wine12.jpg);
+  background-image: url(../img/wine12.jpg);
   background-color: #BFBFBF;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
+}
+
+.center {
+  margin: 75px 0px;
 }
 
 .pour {
@@ -295,8 +298,105 @@ input {
 
 @media (min-width: 768px) {
 
+  .vineyard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../img/wine14.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: auto;
+    width: 100%;
+    color: white;
+  }
+
+  .text_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    margin: 30%;
+  }
+
+  #f {
+    height: 300px;
+    width: auto;
+    align-self: center;
+    padding-bottom: 20px;
+    opacity: 0.8;
+  }
+
+  h1 {
+    height: auto;
+    font-size: 21px;
+    font-style: italic;
+    padding-bottom: 20px;
+    font-family: georgia;
+  }
+
+  .grapes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../img/wine13.jpg);
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+  }
+
+  .text_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    margin: 40% 30%;
+    /*letter-spacing: 2px;*/
+  }
+
+  h4 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .text_3 p {
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+  }
+
+  .awards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    background-image: url(../img/wine12.jpg), url(../img/wine12.jpg);
+    background-color: #BFBFBF;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+  }
+
   .center {
-    margin: 200px 0px;
+    margin: 250px 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -304,6 +404,8 @@ input {
   }
 
   #fix {
+    display: flex;
+    justify-content: space-around;
     height: auto;
     width: 100%;
   }
@@ -324,6 +426,18 @@ input {
     font-size: 32px;
     font-family: georgia;
     font-style: italic;
+}
+
+.one {
+  width: 18%;
+}
+
+.two {
+  width: 18%;
+}
+
+.three {
+  width: 18%;
 }
 
   .wrapper_1 {
