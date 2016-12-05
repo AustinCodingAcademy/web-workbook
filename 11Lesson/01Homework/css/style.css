@@ -113,30 +113,66 @@ h4 {
   display: flex;
 }
 
-.contain {
-  justify-content: space-around;
-}
 
 .one {
-  background-image: url("./left.jpg");
-  background-size: contain;
   height: 500px;
-  background-repeat: no-repeat;
+  display: flex;
+
+}
+
+#one {
 
 }
 
 .two {
-  background-image: url("./middle.jpg");
-  background-size: contain;
   height: 500px;
-  background-repeat: no-repeat;
 
 }
 
 .three {
-  background-image: url("./right.jpg");
-  background-size: contain;
   height: 500px;
-  background-repeat: no-repeat;
+}
 
+.name {
+  font-family: 'Georgia';
+  font-style: italic;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 300;
+  padding-right: 100px;
+  text-align: center;
+}
+
+.note {
+  font-family: 'Georgia';
+  font-style: italic;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-right: 100px;
+  text-align: center;
+}
+
+.button {
+  font-family: Helvetica;
+  background-color: #91a05c;
+  color: white;
+  text-decoration: none;
+  outline: none;
+  border: 2px solid #91a05c;
+  padding: 0 36px;
+  height: 40px;
+  min-width: 150px;
+  line-height: 36px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  width: 65%;
+  text-align: center;
+}
+
+@media only screen and (max-width:1024px) {
+  .bottom {
+    flex-direction: column;
+  }
 }
