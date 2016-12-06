@@ -87,13 +87,19 @@
         <div class="row">
           <div class="col-xs-12">
             <h2 class="ostrich-bold">
-              Psychotherapy
+              Therapy
             </h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel mattis dui. Nam mauris sapien, dignissim a turpis quis, dapibus laoreet est. Praesent neque libero, accumsan id convallis nec, dapibus sit amet sem. Quisque at nulla consequat, fringilla nulla vitae, suscipit diam. Cras maximus arcu a massa aliquet posuere. In ornare diam eu ligula consequat fringilla. Donec quis vehicula dui. Morbi ac semper est, quis sagittis elit.
+              The most important thing to look for when choosing a therapist is how comfortable you feel with that person.
             </p>
             <p>
-              Aliquam in arcu tortor. Praesent lectus orci, varius facilisis consectetur vitae, dictum iaculis nulla. Aenean commodo massa magna, non vulputate erat elementum id. Maecenas libero orci, sollicitudin eget bibendum eget, semper et orci. Etiam vel lacus facilisis, blandit erat quis, consectetur diam. Ut vel nisl et odio suscipit imperdiet a a lectus. Vivamus accumsan tincidunt tempus. Maecenas tincidunt risus mauris, ut vehicula dolor suscipit sodales. Nulla velit dolor, facilisis non neque dictum, ultricies lobortis dolor. Nam fermentum molestie magna dignissim pulvinar. In nec magna eu ex finibus egestas at sed erat. Donec nunc ligula, porta in dignissim a, egestas ac est. Nam pellentesque posuere lectus sit amet volutpat. Aenean dictum felis at massa mollis tincidunt. Suspendisse sed condimentum ipsum, a fermentum felis. Quisque sollicitudin et nisl vitae volutpat.
+              Therapy is about forming a team with your choice of professional to help you meet your goals.  Whether you're working on feeling better, improving your relationships, or healing from past hurts, you will accomplish more in therapy if you feel like your therapist "gets" you.
+            </p>
+            <p>
+              In addition, therapy will be more helpful to you if you view our time together as a space to practice new, more effective ways of communicating and behaving.  Relating to ourselves and to others is often messy and complicated and sometimes we all need a compassionate person to coach us to become the best version of ourselves.
+            </p>
+            <p>
+              I draw from many different therapeutic theories, including cognitive, behavioral, solution-focused, and trauma focused strategies.  If you have found a particular strategy to work particularly well for you, please let me know.
             </p>
           </div>
         </div>
@@ -111,13 +117,13 @@
             </h2>
             <img src="img/tricia.jpg" alt="tricia" style="float: right;">
             <p>
-              Curabitur rhoncus sapien at est sagittis pellentesque. Curabitur a lacus ornare mi consectetur dignissim in ac leo. Praesent vel posuere ligula, id cursus ante. Praesent vitae rhoncus sapien. Quisque nec nulla viverra, auctor mauris quis, eleifend justo. Integer vel magna in velit dapibus congue quis ut est. Pellentesque in tincidunt nulla, eget dapibus metus. Proin mi lectus, iaculis et venenatis quis, lacinia vel nisi. Cras nec risus in neque viverra bibendum in vel lectus. Praesent aliquet, velit tincidunt consectetur rutrum, nisl eros tristique ex, et vulputate velit eros quis nunc. Aliquam lobortis magna nec ultrices blandit. Donec vel diam at enim fringilla malesuada et vitae felis. Nulla quis molestie turpis. Quisque viverra lorem a massa sollicitudin dictum. Etiam vulputate eros porta elit scelerisque, a vehicula dolor consequat.
+              My approach to change involves listening to all the parts of you, starting with the part that wants something different and better, so that we can work together to address what gets in the way.  I'm a firm believer in the power of the therapeutic relationship to transform my clients' experiences of themselves, their relationships, and their lives.
             </p>
             <p>
-              Morbi dignissim sapien a enim posuere, in pharetra orci dignissim. Nulla facilisi. Pellentesque a facilisis neque. Morbi non neque volutpat, bibendum nisl id, malesuada dolor. Donec feugiat justo quis rhoncus accumsan. Nullam aliquet lorem et justo vulputate, vel condimentum eros scelerisque. Praesent feugiat massa vel mi imperdiet tempor. Vivamus iaculis bibendum iaculis. Mauris laoreet posuere dolor, quis malesuada dui dapibus vel. Phasellus elementum viverra augue, a dictum lacus vehicula vel. Pellentesque ac malesuada orci. In id tempor sapien, a volutpat lectus.
+              I work with adolescents and adults in individual, couples, and group sessions.  My experience includes psychotherapy with families and relationships in crisis, outpatient behavioral health treatment, and social services program development.  I have a BA from the Evergreen State College in Olympia, WA, and an MSSW from the University of Texas at Austin.
             </p>
             <p>
-              Nunc fringilla, enim eu venenatis laoreet, ligula erat malesuada tellus, ac auctor lorem turpis ac neque. Fusce placerat sapien nec risus rhoncus pharetra. Nunc pulvinar vel augue ac placerat. In hac habitasse platea dictumst. Nulla tempor consectetur tincidunt. Nullam vitae nunc ut nisl iaculis gravida eu nec ex. Integer vel velit sed nunc tempor tincidunt vitae eleifend lectus. Nam vel dolor non risus rhoncus tempor eget et augue. Proin mattis, nunc sit amet lacinia varius, sem dui lobortis magna, quis convallis nulla velit scelerisque lectus. Nulla sed molestie dui.
+              I believe that my growth and education as a person and as a therapist is vital to my ability to be helpful to my clients.  My method is grounded in ongoing study of evidence-based theories for working with the entire family system, improving the stability and flexibility of romantic relationships, dealing with difficult and unwanted behaviors, and improving mood symptoms.
             </p>
             <div style="clear:both"></div>
           </div>
@@ -186,5 +192,24 @@
     <script src="js/parallax.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAn4O3szsGxO014pNGJB0ULGJKv8UGBVVQ&callback=initMap"
     async defer></script>
+
+    <!-- Fluid scrolling between anchors -->
+    <script>
+      $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    </script>
+
   </body>
 </html>
