@@ -2,17 +2,17 @@ html {
   height: 100%;
 }
 
-section {
+body {
   display: flex;
   align-items: center;
   justify-content: center;
   background-image: url(http://orig10.deviantart.net/5e31/f/2012/278/7/f/texto_png_justin_bieber__3_by_tutorialesyessi-d5gvfj5.png);
-  background-size: 150px;
+  background-size: 180px;
   background-repeat: repeat;
   background-attachment: fixed;
   height: 100%;
   width: 100%;
-  filter: blur(5px);
+
 }
 
 a {
@@ -32,9 +32,104 @@ a {
 }
 
 form {
+  width: 300px;
   display: flex;
   flex-direction: column;
   margin: 20px;
-  background-image: url(http://thewindow.barneys.com/wp-content/uploads/2016/07/Justin-Bieber-Purpose-Tour-photo.jpg);
-  filter: blur(5px);
+  background-image: url(http://www.blogcdn.com/slideshows/images/slides/330/522/0/S3305220/slug/l/biebercalvins-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: pink;
+  font-size: 23px;
+  text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+  padding: 40px
+}
+
+#job {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+textarea {
+  font-size: 15px;
+}
+
+input {
+  font-size: 15px;
+}
+
+label {
+  font-size: 22px;
+}
+
+#button {
+  font-size: 20px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+@media (min-width: 768px) {
+
+  form {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    background-image: url(http://www.blogcdn.com/slideshows/images/slides/330/522/0/S3305220/slug/l/biebercalvins-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: pink;
+    font-size: 23px;
+    text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+    padding: 60px
+  }
+
+  input {
+    width: 50%;
+  }
+
+  textarea {
+    width: 50%;
+  }
+
+  label {
+    font-size: 25px;
+  }
+
+  #job {
+    font-size: 20px;
+  }
+
+  #button {
+    width: 50%;
+  }
+
+@media (min-width: 1024px) {
+
+  form {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-image: url(http://www.blogcdn.com/slideshows/images/slides/330/522/0/S3305220/slug/l/biebercalvins-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: pink;
+    font-size: 23px;
+    text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+    /*padding: 100px 150px;*/
+  }
+
+  input {
+    width: 38%;
+  }
+
+  label {
+    font-size: 30px;
+  }
 }
