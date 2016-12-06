@@ -18,9 +18,9 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#my-scrollspy">
     <header>
-      <nav class="navbar navbar-default navbar-fixed-top">
+      <nav class="navbar navbar-default navbar-fixed-top" id="my-scrollspy">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -36,8 +36,9 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li><a href="#">Link <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">Link</a></li>
+              <li><a href="#scroll-home">Home <span class="sr-only">(current)</span></a></li>
+              <li><a href="#scroll-about">About</a></li>
+              <li><a href="#scroll-contact">Contact</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -70,106 +71,86 @@
       </nav>
     </header>
 
-    <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/succulents.jpg" data-natural-width="1400" data-natural-height="900"></div>
+    <div class="parallax-container" id="scroll-home" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/succulents.jpg" data-natural-width="1400" data-natural-height="900"></div>
 
     <section>
-      <p>
-        This is a section
-      </p>
-      <p>
-        This is a section
-      </p>
-      <p>
-        This is a section
-      </p>
-      <p>
-        This is a section
-      </p>
-      <p>
-        This is a section
-      </p>
-      <p>
-        This is a section
-      </p>
-      <p>
-        This is a section
-      </p>
-      <p>
-        This is a section
-      </p>
-      <p>
-        This is a section
-      </p>
-      <p>
-        This is a section
-      </p>
-      <p>
-        This is a section
-      </p>
-      <p>
-        This is a section
-      </p>
+      <h2 class="ostrich-bold">
+        "The curious paradox is that when I accept myself just as I am, then I can change."  - Carl Rogers
+      </h2>
     </section>
 
-      <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/succulents.jpg" data-natural-width="1400" data-natural-height="900"></div>
+    <div class="parallax-container" id="scroll-about" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/succulents.jpg" data-natural-width="1400" data-natural-height="900"></div>
 
-      <section class="contact-section">
-        <div class="contact-text">
-          <p class="ostrich-bold">
-            Phone: (512) 789-3830
-          </p>
-          <a href="mailto:triciamihallcsw@gmail.com?Subject=Therapy" target="_top" class="ostrich">triciamihallcsw@gmail.com</a>
-          <p class="ostrich">
-            Location: 8500 N Mopac Expy, Ste 402
-          </p>
-          <form action="mailto:everycrime@yahoo.com" method="get" enctype="text/plain">
-            Name:<br>
-            <input type="text" name="name"><br>
-            E-mail:<br>
-            <input type="text" name="mail"><br>
-            Comment:<br>
-            <input type="text" name="comment" size="50"><br><br>
-            <input type="submit" value="Send">
-            <input type="reset" value="Reset">
-          </form>
+    <section class="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="ostrich-bold">
+              About
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel mattis dui. Nam mauris sapien, dignissim a turpis quis, dapibus laoreet est. Praesent neque libero, accumsan id convallis nec, dapibus sit amet sem. Quisque at nulla consequat, fringilla nulla vitae, suscipit diam. Cras maximus arcu a massa aliquet posuere. In ornare diam eu ligula consequat fringilla. Donec quis vehicula dui. Morbi ac semper est, quis sagittis elit.
+            </p>
+            <p>
+              Aliquam in arcu tortor. Praesent lectus orci, varius facilisis consectetur vitae, dictum iaculis nulla. Aenean commodo massa magna, non vulputate erat elementum id. Maecenas libero orci, sollicitudin eget bibendum eget, semper et orci. Etiam vel lacus facilisis, blandit erat quis, consectetur diam. Ut vel nisl et odio suscipit imperdiet a a lectus. Vivamus accumsan tincidunt tempus. Maecenas tincidunt risus mauris, ut vehicula dolor suscipit sodales. Nulla velit dolor, facilisis non neque dictum, ultricies lobortis dolor. Nam fermentum molestie magna dignissim pulvinar. In nec magna eu ex finibus egestas at sed erat. Donec nunc ligula, porta in dignissim a, egestas ac est. Nam pellentesque posuere lectus sit amet volutpat. Aenean dictum felis at massa mollis tincidunt. Suspendisse sed condimentum ipsum, a fermentum felis. Quisque sollicitudin et nisl vitae volutpat.
+            </p>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div id="map"> </div>
-          <script>
-          function initMap() {
-              // Create a new StyledMapType object, passing it an array of styles,
-              // and the name to be displayed on the map type control.
-              var styledMapType = new google.maps.StyledMapType(
-                [{"elementType":"geometry","stylers":[{"hue":"#ff4400"},{"saturation":-68},{"lightness":-4},{"gamma":0.72}]},{"featureType":"road","elementType":"labels.icon"},{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"hue":"#0077ff"},{"gamma":3.1}]},{"featureType":"water","stylers":[{"hue":"#00ccff"},{"gamma":0.44},{"saturation":-33}]},{"featureType":"poi.park","stylers":[{"hue":"#44ff00"},{"saturation":-23}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"hue":"#007fff"},{"gamma":0.77},{"saturation":65},{"lightness":99}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"gamma":0.11},{"weight":5.6},{"saturation":99},{"hue":"#0091ff"},{"lightness":-86}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"lightness":-48},{"hue":"#ff5e00"},{"gamma":1.2},{"saturation":-23}]},{"featureType":"transit","elementType":"labels.text.stroke","stylers":[{"saturation":-64},{"hue":"#ff9100"},{"lightness":16},{"gamma":0.47},{"weight":2.7}]}],
-                  {name: 'Styled Map'});
+    <div class="parallax-container" id="scroll-contact" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/succulents.jpg" data-natural-width="1400" data-natural-height="900"></div>
 
-              // Create a map object, and include the MapTypeId to add
-              // to the map type control.
-              var map = new google.maps.Map(document.getElementById('map'), {
-                center: {lat: 30.372957, lng: -97.741427},
-                zoom: 11,
-                mapTypeControlOptions: {
-                  mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
-                          'styled_map']
-                }
-              });
+    <section class="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="contact-text col-xs-6">
+            <p class="ostrich-bold">
+              Phone: (512) 789-3830
+            </p>
+            <a href="mailto:triciamihallcsw@gmail.com?Subject=Therapy" target="_top" class="ostrich">triciamihallcsw@gmail.com</a>
+            <p class="ostrich">
+              Location: 8500 N Mopac Expy, Ste 402
+            </p>
+          </div>
+
+          <div id="map" class="col-xs-6"> </div>
+            <script>
+            function initMap() {
+                // Create a new StyledMapType object, passing it an array of styles,
+                // and the name to be displayed on the map type control.
+                var styledMapType = new google.maps.StyledMapType(
+                  [{"elementType":"geometry","stylers":[{"hue":"#ff4400"},{"saturation":-68},{"lightness":-4},{"gamma":0.72}]},{"featureType":"road","elementType":"labels.icon"},{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"hue":"#0077ff"},{"gamma":3.1}]},{"featureType":"water","stylers":[{"hue":"#00ccff"},{"gamma":0.44},{"saturation":-33}]},{"featureType":"poi.park","stylers":[{"hue":"#44ff00"},{"saturation":-23}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"hue":"#007fff"},{"gamma":0.77},{"saturation":65},{"lightness":99}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"gamma":0.11},{"weight":5.6},{"saturation":99},{"hue":"#0091ff"},{"lightness":-86}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"lightness":-48},{"hue":"#ff5e00"},{"gamma":1.2},{"saturation":-23}]},{"featureType":"transit","elementType":"labels.text.stroke","stylers":[{"saturation":-64},{"hue":"#ff9100"},{"lightness":16},{"gamma":0.47},{"weight":2.7}]}],
+                    {name: 'Styled Map'});
+
+                // Create a map object, and include the MapTypeId to add
+                // to the map type control.
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  center: {lat: 30.372957, lng: -97.741427},
+                  zoom: 11,
+                  mapTypeControlOptions: {
+                    mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
+                            'styled_map']
+                  }
+                });
 
 
 
-              //Associate the styled map with the MapTypeId and set it to display.
-              map.mapTypes.set('styled_map', styledMapType);
-              map.setMapTypeId('styled_map');
+                //Associate the styled map with the MapTypeId and set it to display.
+                map.mapTypes.set('styled_map', styledMapType);
+                map.setMapTypeId('styled_map');
 
-              var myLatLng = {lat: 30.372957, lng: -97.741427};
+                var myLatLng = {lat: 30.372957, lng: -97.741427};
 
-              var marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                title: 'Find us here!'
-              });
-            }
-          </script>
-
+                var marker = new google.maps.Marker({
+                  position: myLatLng,
+                  map: map,
+                  title: 'Find us here!'
+                });
+              }
+            </script>
+        </div>
+      </div>
     </section>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
