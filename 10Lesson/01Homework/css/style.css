@@ -1,0 +1,186 @@
+/* LAYOUT */
+body {
+  text-align: center;
+}
+
+/* HERO IMG */
+.hero-img {
+  height: 700px;
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 200px;
+  /*margin-bottom: 20px;*/
+}
+
+/* PORTFOLIO GRID */
+.portfolio {
+  margin-top: 20px;
+}
+
+.top-left, .bottom-left {
+  height: 200px;
+}
+
+.top-left {
+  margin-bottom: 40px
+}
+
+.top-right {
+  height: 440px;
+}
+
+.img {
+  height: 100%;
+  background-size: cover;
+  padding: 0;
+}
+
+.img-1 {
+  background-image: url(../img/yellow_glen_larger.png);
+}
+
+.img-2 {
+  background-image: url(../img/mac_products.png);
+}
+
+.img-3 {
+  background-image: url(../img/blue_suit.png);
+}
+
+.img-4 {
+  background-image: url(../img/blue_haze.png);
+}
+
+.img-5 {
+  background-image: url(../img/trumpy_tower.png);
+}
+
+.caption {
+  background: rgba(0,0,0,.8);
+  transition: all .4s;
+  overflow: hidden;
+  opacity: 0;
+  height: 100%;
+}
+
+.img:hover .caption {
+  opacity: 1;
+}
+
+.caption .category {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.caption .description {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+/* SERVICES BOXES */
+.services {
+  background-color: #eee;
+}
+
+.white-box, .mint-box {
+  margin-bottom: 30px;
+}
+
+.white-box {
+  background-color: #fff;
+}
+
+.mint-box {
+  background-color: #d7f7e3;
+  border-bottom: 5px solid #000;
+}
+
+.price {
+  margin: 45px 0;
+}
+
+ul {
+  /*margin-bottom: 50px;*/
+}
+
+li {
+  padding: 10px 0;
+}
+
+.button {
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 40px;
+}
+
+/* TYPOGRAPHY */
+h1, h3, h4, strong, .button {
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: 1px;
+}
+
+h2, p, li, .price {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+h2 {
+  margin: 45px 0;
+  font-weight: 500;
+}
+
+h3 {
+  margin: 30px 0;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+a:hover {
+  text-decoration: none;
+  background-color: rgba(46,46,46,.8);
+  color: #fff;
+  transition: all .3s;
+}
+
+.caption {
+  text-align: left;
+  color: #fff;
+}
+
+.category {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.description h4 {
+  font-size: 18px;
+}
+
+.description p {
+  font-size: 13px;
+}
+
+.price {
+  font-size: 30px;
+}
+
+.price span {
+  font-size: 12px;
+}
