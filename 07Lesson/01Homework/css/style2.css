@@ -19,22 +19,25 @@ a {
   margin-top: 10px;
   display: flex;
   justify-content: center;
-  width: 120px;
-  background-color: pink;
-  border: 2px solid yellow;
+  width: 150px;
+  background-color: transparent;
+  border: 1px solid pink;
   text-decoration: none;
-  color: yellow;
-  font-weight: bold;
+  color: pink;
   font-size: 20px;
-  font-family: 'Audiowide', cursive;
   padding: 10px;
 }
 
+a:hover {
+  text-decoration: none;
+  color: lightblue;
+}
+
 form {
+  height: 900px;
   width: 300px;
   display: flex;
   flex-direction: column;
-  margin: 20px;
   background-image: url(http://www.blogcdn.com/slideshows/images/slides/330/522/0/S3305220/slug/l/biebercalvins-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,33 +45,58 @@ form {
   color: pink;
   font-size: 23px;
   text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
-  padding: 40px
+  padding: 20px 40px;
+  font-family: 'Dancing Script', cursive;
 }
 
-#job {
-  margin-top: 15px;
+.job {
+  margin-top: 10px;
   font-size: 18px;
+}
+
+.tell {
+  margin-top: 10px;
 }
 
 textarea {
   font-size: 15px;
+  background-color: transparent;
+  color: white;
 }
 
 input {
   font-size: 15px;
+  background-color: transparent;
+  color: white;
 }
 
 label {
   font-size: 22px;
+  margin-bottom: 0px;
+  font-weight: normal;
   /*margin-top: 15px;*/
 }
 
 #button {
   font-size: 20px;
   width: 100%;
-  margin-top: 10px;
+  height: auto;
+  margin-top: 0px;
 }
 
+#submit {
+  color: pink;
+  height: 50px;
+  margin-top: 10px;
+  text-shadow: -1px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+textarea::-webkit-input-placeholder {
+color: lightblue;
+font-family: 'Orbitron', sans-serif;
+}
 
 @media (min-width: 768px) {
 
@@ -110,6 +138,7 @@ label {
 @media (min-width: 1024px) {
 
   form {
+    height: 1000px;
     width: 850px;
     display: flex;
     flex-direction: column;
@@ -129,6 +158,13 @@ label {
   }
 
   label {
-    font-size: 30px;
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1224px) {
+
+  form {
+    width: 1100px;
   }
 }
