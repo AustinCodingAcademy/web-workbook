@@ -10,6 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
   color: #60FE00;
   margin-bottom: 40px;
 }
@@ -28,4 +29,26 @@ form {
   text-align: center;
   padding: 20px 0;
   background-color: #60FE00;
+}
+
+#submit {
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+@media (max-width: 767px) {
+  input {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  input {
+    display: inline;
+    text-align: center;
+  }
 }
