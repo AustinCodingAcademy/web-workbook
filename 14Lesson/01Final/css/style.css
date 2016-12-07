@@ -6,7 +6,6 @@
   font-family: ostrichbold; src: url("../fonts/OstrichSans-Heavy.otf");
 }
 
-
 .ostrich {
   font-size: 28px;
   font-family: ostrich;
@@ -33,7 +32,6 @@ h2 {
   height: 350px;
   width: 95%;
   margin: auto;
-
 }
 
 .about-section img {
@@ -46,6 +44,8 @@ h2 {
   width: 280px;
   margin-left: 32px;
 }
+
+
 
 .contact-text {
   display: flex;
@@ -70,4 +70,22 @@ h2 {
 
 #map {
   height: 400px;
+}
+
+@media print {
+  .parallax-container {
+    height: 0px !important;
+  }
+  .parallax-mirror {
+    display: none;
+  }
+  .about-section, .approach-section {
+    text-align: center;
+  }
+  .about-section img {
+    display: none;
+  }
+  section {
+    background-color: white;
+  }
 }
