@@ -42,6 +42,7 @@ nav.navbar.navbar-inverse {
   align-items: center;
   justify-content: center;
   padding-top: 125px;
+
 }
 
 .second-column {
@@ -78,7 +79,7 @@ justify-content: center;
   width: 40%;
 }
 
-button {
+.section-four button {
   margin-bottom: 25px;
   background-color: #89A55A;
   color: white;
@@ -119,6 +120,30 @@ p {
   margin-bottom: 25px;
 }
 
+#column-text {
+  width: 40%;
+}
+
+.section-three h2, .section-three p {
+  width: 60%;
+}
+
+@media (max-width: 1300px) {
+  .section-four button {
+    margin-bottom: 25px;
+    background-color: #89A55A;
+    color: white;
+    width: 50%;
+    height: 35px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .first-column {
+    padding-top: 0;
+  }
+}
+
 @media (max-width: 600px) {
   .section-one {
     height: 400px;
@@ -136,10 +161,20 @@ p {
     justify-content: space-around;
     vertical-align: center;
   }
-}
 
-@media (max-width: 800px) {
-  button.navbar-toggle {
-    width: 45px;
+  #column-text {
+    width: 70%;
+  }
+
+  .second-column {
+    height: 400px;
+  }
+
+  .section-four button {
+    margin-bottom: 25px;
+    background-color: #89A55A;
+    color: white;
+    width: 28%;
+    height: 35px;
   }
 }
