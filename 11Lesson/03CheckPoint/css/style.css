@@ -4,35 +4,142 @@ body {
 }
 
 nav img {
-  width: 20%;
-}
-
-.hero1 {
-  width: 100%;
-  height: 750px;
-  background-image: url(../img/wine-bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: none;
-  color: white;
+  height: 25px;
 }
 
 nav.navbar.navbar-inverse {
-  margin: 0;
+  margin: 0 auto;
 }
 
-.hero1 img {
+.section-one {
+  align-items: center;
+  background-image: url(../img/wine-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-blend-mode: multiply;
+  background-color: #5A7CC2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  vertical-align: center;
+}
+
+.section-one img {
   width: 30%;
-  margin-top: 50px;
+  opacity: .75;
 }
 
-#signature {
+.section-two img {
   width: 40%;
 }
 
+.first-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 125px;
+}
+
 .second-column {
-  height: 650px;
+  height: 600px;
   background-image: url(../img/wine16.jpg);
-  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-three {
+  height: 600px;
+  background-image: url(../img/wine13.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  background-blend-mode: multiply;
+  background-color: #5A7CC2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-two {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.section-four img {
+  width: 40%;
+}
+
+button {
+  margin-bottom: 25px;
+  background-color: #89A55A;
+  color: white;
+  width: 28%;
+  height: 35px;
+}
+
+h4 {
+  color: grey;
+  font-size: 1.25em;
+  font-style: italic;
+}
+
+h3 {
+  font-style: italic;
+  font-size: 1.5;
+}
+
+h2 {
+  font-style: italic;
+  font-size: 1.75;
+}
+
+p {
+  font-size: 1.15em;
+}
+.section-four p {
+  font-style: italic;
+}
+
+.social {
+  display: inline;
+}
+
+.icon {
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 600px) {
+  .section-one {
+    height: 400px;
+    align-items: center;
+    background-image: url(../img/wine-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-blend-mode: multiply;
+    background-color: #5A7CC2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    vertical-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  button.navbar-toggle {
+    width: 45px;
+  }
 }
