@@ -1,7 +1,3 @@
-body{
-  margin-top: 10px;
-}
-
 #top{
   background-image: url("../img/wine-bg.jpg");
   background-position:center;
@@ -13,123 +9,107 @@ body{
   background-color: #6E6E6E;
 }
 
-#top{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.hero{
   color:white;
   text-align: center;
+  padding-top: 125px;
 }
 
-#top h1{
-  padding-bottom: 50px;
-  font-size: 50px;
+.hero h1{
+  font-size: 60px;
   font-weight: 200;
+  padding-bottom: 50px;
 }
 
 .quote{
-  font-style: italic;
+  font-size: 20px;
 }
 
-/*end of top section*/
-#about img{
-  float:center;
-  background-repeat: no-repeat;
-  background-size:auto;
-  height:550px;
-  width: 100%;
-  display: block;
-}
+/*end of header*/
 
 .writing{
+  text-align: center;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  padding-top: 110px;
-  padding-bottom: 50px;
-
-  width:100%;
+  justify-content: center;
+  margin-top: 120px;
+  margin-left: 90px;
+  margin-bottom: 120px;
+  float: left;
+  width: 70%;
 }
 
 .writing h2{
-  padding: 40px 0px;
+  padding: 20px 0px;
 }
 
-/*end of second section*/
+.guy img{
+  height: 550px;
+  width: 100%;
+}
 
-#testimonial{
+/*end of dude section*/
+
+
+#info{
   background-image: url("../img/wine13.jpg");
   background-position:center;
   background-repeat: no-repeat;
   background-size:auto;
-  height:650px;
+  height:550px;
   width 100%;
-  text-align: center;
   background-blend-mode: multiply;
   background-color: #6E6E6E;
 }
 
-#testimonial{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#testimonial h2{
+.about{
   color:white;
-  font-weight: 200;
-  font-style: italic;
-  padding: 0px 10px;
-}
-
-#testimonial p{
-  color:white;
-  font-size: 18px;
-  padding: 0px 10px;
-}
-
-/*end of middle section*/
-#selection img{
-  width:60%;
-}
-
-#selection{
+  margin-top: 150px;
   text-align: center;
 }
 
-#selection a{
-  border: 1px solid green;
-  background-color: green;
-  padding:0px 10px;
+.about h2{
+  font-style: italic;
+  font-weight: 100;
+}
+
+.about p{
+  padding-top: 30px;
+  font-weight: 100;
+}
+
+/*end of info*/
+
+#bottom img{
+  width: 50%;
+  padding-top: 10px;
+}
+
+#bottom{
+  margin: 0px 50px;
+  align-items: center;
+  text-align: center;
+}
+
+#bottom a{
+  border:solid 1px green;
+  background-color:green;
   color:white;
-  text-decoration: none;
-}
-
-#selection h3{
-  padding-bottom: 20px;
-  font-family:helvetica-black;
-  font-weight:bold;
+  padding: 5px 10px;
 }
 
 
-.left{
-  padding-bottom:20px;
-}
-
-.mid{
-  padding-bottom:20px;
-}
-
-.right{
-  padding-bottom:20px;
-}
-
-/*start of tablet*/
+/*end of comp section*/
 
 @media(max-width:1023px) and (min-width:768px){
 
+.writing{
+  padding-left: 120px;
+}
 
+#info{
+  padding: 0px 70px;
+}
 
 }
