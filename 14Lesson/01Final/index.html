@@ -7,7 +7,6 @@
     <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -33,12 +32,21 @@
             </div>
         </div>
     </nav>
-    <div class="jumbotron" id="about">
+    <div class="jumbotron" id="hero">
         <div class="container">
-            <h1>Hello, my name is Tony.</h1>
-            <p>I've worked in the software industry for almost 10 years.</p>
-            <p>I've held just about every title except Developer.</p>
-            <p>It's time to change that.</p>
+            <h1>Tony Rinaldi</h1>
+            <p>Full-Stack Web Developer</p>
+        </div>
+    </div>
+    <div class="secondary" id="about">
+        <h2 class="center-me">About Me</h2>
+        <div class="container">
+            <div class="col-sm-6 col-md-4 col-md-offset-2">
+            <p>I've worked in the software industry for 10 years. I have in experience in technical writing, support, quality assurance, and product management.</p>
+            </div>
+            <div class="col-sm-6 col-md-4">
+            <p>Now I'm focused on web development. I'm particualry interested in the MEAN stack, automated testing, and mobile.</p>
+            </div>
         </div>
     </div>
     <div class="container center-me" id="projects">
@@ -50,7 +58,7 @@
                         <i class="fa fa-map-marker fa-4x fa-fw" aria-hidden="true"></i>
                         <h3>Locator</h3>
                         <h4>MongoDB, Express, Angular, Node</h4>
-                        <p>Web app built with the MEAN stack.</p>
+                        <p>Find places to work with Wi-Fi near you.</p>
                         <p>
                             <a href="https://github.com/arinaldi/locator" class="btn btn-default" role="button">GitHub</a>
                             <a href="https://guarded-shelf-90769.herokuapp.com/" class="btn btn-default" role="button">Visit</a>
@@ -103,7 +111,7 @@
                 <div class="thumbnail">
                     <div class="caption">
                         <i class="fa fa-pencil fa-4x fa-fw fa-flip-horizontal" aria-hidden="true"></i>
-                        <h3>To-do list</h3>
+                        <h3>To-Do List</h3>
                         <h4>HTML5, CSS3, JavaScript</h4>
                         <p>To-do list app that does CRUD to a free API.</p>
                         <p>
@@ -130,7 +138,7 @@
     </div>
     <div class="secondary">
         <div class="container center-me" id="faq">
-            <h2 class="">Frequently Asked Questions</h2>
+            <h2>Frequently Asked Questions</h2>
             <div class="row">
                 <div class="col-sm-12 col-md-6">
                     <h3>Where do you live?</h3>
@@ -153,8 +161,8 @@
                     </div>
                     <div class="slide-btn">
                         <p id="caption">Music</p>
-                        <button class="btn btn-default" onclick="plusDivs(-1)">&lt; Prev</button>
-                        <button class="btn btn-default" onclick="plusDivs(1)">Next &gt;</button>
+                        <button class="btn btn-default" onclick="plusDivs(-1)"><i class="fa fa-caret-left" aria-hidden="true"></i>&nbsp;&nbsp;Prev</button>
+                        <button class="btn btn-default" onclick="plusDivs(1)">Next&nbsp;&nbsp;<i class="fa fa-caret-right" aria-hidden="true"></i></button>
                     </div>
                 </div>
             </div>
@@ -163,22 +171,25 @@
     <div class="container center-me" id="contact">
         <h2>Contact Me</h2>
         <div class="row contact-me">
-            <div class="col-sm-2 col-sm-offset-3">
+            <div class="col-xs-2 col-xs-offset-3">
                 <a class="contact-link" href="#" data-toggle="modal" data-target="#contactMe">
-                    <i class="fa fa-comment-o fa-3x" aria-hidden="true"></i>
-                    <p>Send me a message</p>
+                    <i class="fa fa-comment-o fa-3x hidden-xs" aria-hidden="true"></i>
+                    <i class="fa fa-comment-o fa-2x visible-xs-block" aria-hidden="true"></i>
+                    <p class="hidden-xs">Send me a message</p>
                 </a>
             </div>
-            <div class="col-sm-2">
+            <div class="col-xs-2">
                 <a class="contact-link" href="pdf/16.0-tony-rinaldi-resume-2017.pdf" target="_blank">
-                    <i class="fa fa-file-pdf-o fa-3x" aria-hidden="true"></i>
-                    <p>View my resume</p>
+                    <i class="fa fa-file-pdf-o fa-3x hidden-xs" aria-hidden="true"></i>
+                    <i class="fa fa-file-pdf-o fa-2x visible-xs-block" aria-hidden="true"></i>
+                    <p class="hidden-xs">View my resume</p>
                 </a>
             </div>
-            <div class="col-sm-2">
+            <div class="col-xs-2">
                 <a class="contact-link" href="https://github.com/arinaldi">
-                    <i class="fa fa-github fa-3x" aria-hidden="true"></i>
-                    <p>GitHub</p>
+                    <i class="fa fa-github fa-3x hidden-xs" aria-hidden="true"></i>
+                    <i class="fa fa-github fa-2x visible-xs-block" aria-hidden="true"></i>
+                    <p class="hidden-xs">GitHub</p>
                 </a>
             </div>
         </div>
@@ -206,11 +217,9 @@
                             <input type="hidden" name="draftResponse" value="[,,&quot;8820032480885243925&quot;]">
                             <input type="hidden" name="pageHistory" value="0">
                             <input type="hidden" name="fbzx" value="8820032480885243925">
-                            <!-- <label for="emailReceipt" style="display:inline;"></label> -->
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <!-- <button type="button" class="btn btn-primary">Send</button> -->
                             <input class="btn btn-primary" type="submit" name="submit" value="Send">
                         </div>
                     </form>

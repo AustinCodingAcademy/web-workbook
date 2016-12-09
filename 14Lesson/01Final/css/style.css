@@ -1,16 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
 nav.navbar {
 	background-color: #f8fafa;
 	margin-bottom: 0;
 }
 
-.secondary {
-	background-color: #f8fafa;
+h1, h2, h3, h4, h5, a {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 1.75em;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+p, span {
+	font-family: 'Georgia', serif;
+	font-size: 1.1em;
 }
 
 #my-name {
 	color: #333;
 	font-size: 1.20em;
 	font-weight: 500;
+	letter-spacing: 2px;
 }
 
 #my-name:hover {
@@ -29,7 +48,7 @@ nav.navbar {
 	color: gray;
 }
 
-#about {
+#hero {
 	align-items: center;
 	background: #e8eced url('../img/hero.jpg') no-repeat center;
 	background-color: #555;
@@ -37,31 +56,32 @@ nav.navbar {
 	color: white;
 	display: flex;
 	flex-direction: column;
-	height: 600px;
+	height: 400px;
 	justify-content: center;
-	margin-bottom: 10px;
+	margin-bottom: 0;
 	text-align: center;
 }
 
-h1, h2, h3, h4, h5, a {
-	font-family: 'Roboto', sans-serif;
+.secondary {
+	background-color: #f8fafa;
 }
 
-p, span {
-	font-family: 'Georgia', serif;
+#about {
+	padding: 20px 0;
+	//padding-top: 20px;
+}
+
+#about > h2 {
+	margin-top: 0;
 }
 
 .thumbnail {
 	border: 0;
+	margin-bottom: 10px;
 }
 
 .center-me {
 	text-align: center;
-}
-
-.label {
-	font-family: 'Roboto', sans-serif;
-	font-weight: normal;
 }
 
 #austin {
