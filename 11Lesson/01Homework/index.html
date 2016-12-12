@@ -1,16 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Brewery</title>
+  <script type="text/javascript">
+
+  </script>
+  <title>Best Selling Products</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lily+Script+One|Open+Sans:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<
+<body>
+  <body>
+      <header>
+          <div class="container">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h1 class="title">Best Selling Products</h1>
+                </div>
+              </div>
+          </div>
+      </header>
+      <main>
+        <section class="sales">
+          <div id="owl-demo" class="owl-carousel owl-theme">
+    <div class="item"><h1>1</h1></div>
+    <div class="item"><h1>2</h1></div>
+    <div class="item"><h1>3</h1></div>
+    <div class="item"><h1>4</h1></div>
+    <div class="item"><h1>5</h1></div>
+    <div class="item"><h1>6</h1></div>
+    <div class="item"><h1>7</h1></div>
+    <div class="item"><h1>8</h1></div>
+    <div class="item"><h1>9</h1></div>
+    <div class="item"><h1>10</h1></div>
+    <div class="item"><h1>11</h1></div>
+    <div class="item"><h1>12</h1></div>
+    <div class="item"><h1>13</h1></div>
+    <div class="item"><h1>14</h1></div>
+    <div class="item"><h1>15</h1></div>
+    <div class="item"><h1>16</h1></div>
+  </div>
 
-
+  <div class="customNavigation">
+    <a class="btn prev">Previous</a>
+    <a class="btn next">Next</a>
+    <a class="btn play">Autoplay</a>
+    <a class="btn stop">Stop</a>
+  </div>
+              </section>
+          </main>
   <!--  JavaScript Files-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/2b06eb952b.js"></script>
+<script type="text/javascript" src="script/owl.carousel.js"></script>
+  <script>
+  
+$(document).ready(function() {
+
+  var owl = $("#owl-demo");
+
+  owl.owlCarousel({
+      items : 10, //10 items above 1000px browser width
+      itemsDesktop : [1000,5], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,3], // betweem 900px and 601px
+      itemsTablet: [600,2], //2 items between 600 and 0
+      itemsMobile : true // itemsMobile disabled - inherit from itemsTablet option
+  });
+
+  // Custom Navigation Events
+  $(".next").click(function(){
+    owl.trigger('owl.next');
+  })
+  $(".prev").click(function(){
+    owl.trigger('owl.prev');
+  })
+  $(".play").click(function(){
+    owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
+  })
+  $(".stop").click(function(){
+    owl.trigger('owl.stop');
+  })
+
+});
+  </script>
+
 </body>
 </html>
