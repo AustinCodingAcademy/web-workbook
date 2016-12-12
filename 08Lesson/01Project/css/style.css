@@ -1,101 +1,79 @@
-body html {
-  width:90%;
-  height: 100%;
-}
-
 body {
-  font-family: 'PT Serif', serif;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "PT Serif", serif;
 }
 
-.container {
-  margin: auto;
-  width: 958px;
-}
-
-.top {
-  background-color: #2bcdc0;
-  color: #fff;
-  height: 350px;
-  font-size: 60px;
+header {
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2BCDC0;
   text-align: center;
-  margin-top: 35px;
 }
 
-.top > h1 {
-  padding-top: 125px;
-}
-
-.bottom {
-  background-color: #1b1b1b;
-  color: #fff;
-  margin-bottom: 35px;
+main {
+  padding: 28px;
   display: flex;
   justify-content: space-around;
-  align-content: center;
-  text-align: center;
+  align-items: center;
+  background-color: #1B1B1B;
 }
 
-.bottom  h2 {
-  padding-top: 20px;
-  font-size: 40px;
-  text-align: center;
+h1, h2 {
+  padding-bottom: 18px;
+  color: white;
+  font-size: 42px;
 }
 
-.bottom p {
-  padding-top: 20px;
+span {
+  font-weight: bold;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 28px;
 }
 
 .bottom-text {
-  font-size: 16px;
+  display: flex;
   flex-direction: column;
-  align-content: center;
+  justify-content: center;
   align-items: center;
-  margin: 0 70px 70px;
+  color: white;
+  width: 28%;
+  min-width: 250px;
 }
 
-.blue {
-  background-color: #33a8dd;
-  color: inherit;
-  width: 170px;
+.color {
+  margin-top: 12px;
   height: 28px;
-  margin-top: 40px;
+  width: 90%;
 }
 
 .orange {
-  background-color: #f46731;
-  color: inherit;
-  width: 170px;
-  height:28px;
-  margin-top:40px;
+  background-color: #F46731;
+}
+
+.blue {
+  background-color: #33A8DD;
 }
 
 .teal {
-  background-color: #2bcdc0;
-  color: inherit;
-  width: 170px;
-  height:28px;
-  margin-top:40px;
+  background-color: #2BCDC0;
 }
 
 @media (max-width: 991px) {
-  .top {
-    color: #fff;
-    background-color: #33a8dd;
-    font-size: 70px;
+  header {
+    background-color: #33A8DD;
   }
-  .bottom {
-    color: #ccc;
-    background-color: #f7f5f6;
+  main {
+    background-color: #F7F5F6;
     flex-direction: column;
-    font-size: 15px;
   }
-  .blue {
-    margin-left: 40%;
-  }
-  .orange {
-    margin-left: 40%;
-  }
-  .teal {
-    margin-left: 40%;
+  .bottom-text, h2 {
+    color: black;
   }
 }
