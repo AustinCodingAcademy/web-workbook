@@ -1,10 +1,319 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>
+    Winery
+  </title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
+<body>
+  <header class="hero container-fluid col-xs-12 text-center">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="img/logo-light.png" alt="logo" height="30"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs_example_navbar_collapse_1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ENG <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Français</a></li>
+                <li><a href="#">Deutsch</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Home</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shopping-bag fa-lg"></i> <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a class="checkout" href="#">CHECKOUT</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-search fa-lg"></i> <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><input type="search" name="search" value="search"></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Home</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Home</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Home</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Elements <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Home</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Home</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Home</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+      <img class="center-block img-responsive" src="img/wine1.png" alt="logo">
+    </div>
+    <div class="visible-xs visible-sm white-text">
+      <p>
+        <em>“Without doubt, one of the most consistently <br> high-quality wineries in the Barossa region”</em>
+      </p>
+    </div>
+    <div class="visible-xs white-text">
+      <p>
+        David Halladay - Respected Wino
+      </p>
+    </div>
+    <div>
+      <i class="fa fa-twitter fa-lg"></i>
+      <i class="fa fa-facebook fa-lg"></i>
+      <i class="fa fa-vimeo fa-lg"></i>
+    </div>
+  </header>
+
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-5 text-center left-box">
+        <p class="lead">
+          <em>• EST. 1968 •</em>
+        </p>
+        <h2 class="black-text">
+          Combining over 100 years of hard <br> work and shared family knowledge
+        </h2>
+        <p class="text-normal">
+        Sed ut perspiciatis unde omnis iste natus error sit <br> voluptatem accusantium doloremque laudantium, totam <br> rem aperiam, eaque ipsa quae ab illo inventore veritatis et <br> quasi architecto beatae vitae dicta sunt explicabo.
+        </p>
+        <img class="signature" src="img/wine2.png" alt="signature">
+      </div>
+      <div class="col-xs-12 col-sm-5 col-sm-offset-2 wash">
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid row">
+    <div class="col-xs-12 text-center boots img-responsive">
+      <h2 class="white-text">
+        <em>“We've been producing fine wine for over 65 years,<br> I think we know what we're talking about”</em>
+      </h2>
+      <p class="white-text text-normal text">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, <br>totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt <br> explicabo.
+      </p>
+    </div>
+  </section>
+
+  <section class="container-fluid row margin-bottom">
+    <div class="col-xs-12 col-md-4 text-center">
+      <img class="wine-bottle" src="img/wine3.jpg" alt="wine">
+      <h4 class="black-text name">
+        Foundry Shiraz
+      </h4>
+      <p class="text">
+        <em>“Aged five years in solid, French Oak barrels <br> sports notes of pepper and blackberry”</em>
+      </p>
+      <a class="button" href="#">
+        VISIT SHOP
+      </a>
+    </div>
+    <div class="col-xs-12 col-md-4 text-center">
+      <img class="wine-bottle" src="img/wine6.jpg" alt="wine">
+      <h4 class="black-text name">
+        Foundry Chardonnay
+      </h4>
+      <p class="text">
+        <em>“A rich fruit palet with subtle Oak influence and a <br> lingering dry, fresh finish”</em>
+      </p>
+      <a class="button" href="#">
+        VISIT SHOP
+      </a>
+    </div>
+    <div class="col-xs-12 col-md-4 text-center">
+      <img class="wine-bottle" src="img/wine7.jpg" alt="wine">
+      <h4 class="black-text name">
+        Foundry Cabernet
+      </h4>
+      <p class="text">
+        <em>“Generous sweet blackcurrant and mulberry <br> character with soft, velvety tannins”</em>
+      </p>
+      <a class="button" href="#">
+        VISIT SHOP
+      </a>
+    </div>
+  </section>
+
+  <section class="container-fluid row grapes">
+    <h3 class="text-center white-text">
+      Awards &amp; Recognition
+    </h3>
+    <div class="col-xs-12 col-md-4 text-center white-text lead">
+      <img class="awards" src="img/wine9.png" alt="awards">
+      <p>
+        Best Mid-Tier Value Wine
+      </p>
+      <p>
+        Barossa Shiraz, 2009
+      </p>
+    </div>
+    <div class="col-xs-12 col-md-4 text-center white-text lead">
+      <img class="awards" src="img/wine10.png" alt="awards">
+      <p>
+        Winemaker of the Year
+      </p>
+      <p>
+        Foundry Vineyard, 2014
+      </p>
+    </div>
+    <div class="col-xs-12 col-md-4 text-center white-text lead">
+      <img class="awards" src="img/wine11.png" alt="awards">
+      <p>
+        Best Overall Value
+      </p>
+      <p>
+        Barossa Cabernet, 2010
+      </p>
+    </div>
+  </section>
+
+  <section class="container-fluid row">
+    <div class="col-xs-12 col-sm-5 text-center wine-glass">
+    </div>
+    <div class="col-xs-12 col-sm-5 col-sm-offset-1 right-box">
+      <h3 class="black-text">
+        Join us for tastings at the Cellar Door
+      </h3>
+      <p class="lead border">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt.
+      </p>
+
+      <hr>
+      <p class="place">
+        1240 Kilgour Road
+      </p>
+      <p class="place">
+        Rowland Flat
+      </p>
+      <p class="place">
+        South Australia 5352
+      </p>
+      <p class="margin-top">
+        P: (05) 3928 9283
+      </p>
+      <p>
+        E: enquiries@foundry.net
+      </p>
+    </div>
+  </section>
+
+  <section class="container-fluid row">
+    <div class="col-sm-12 text-center dark white-text">
+      <h3>
+        Sign up to our monthly newsletter
+      </h3>
+      <p class="lead">
+        Get special offers and news on newest cellar releases.
+      </p>
+      <div class="col-sm-6 col-sm-offset-3 input">
+        <input type="text" name="email" class="transparent" value="EMAIL ADDRESS" placeholder="email">
+        <button type="submit" name="button" class="sign-up">
+          SIGN UP NOW
+        </button>
+      </div>
+    </div>
+    <div class="dark white-text text-center icon">
+      <i class="fa fa-twitter fa-lg"></i>
+      <i class="fa fa-facebook fa-lg"></i>
+      <i class="fa fa-vimeo fa-lg"></i>
+    </div>
+  </section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/jquery.parallax.min.js"></script>
 </body>
 </html>
