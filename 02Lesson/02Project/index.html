@@ -3,6 +3,8 @@
 
 <head>
     <title>The Daily PLanet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/a54d01cef2.js"></script>
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -10,20 +12,80 @@
     <header>
         <div style="text-align:center;">
             <h1><img src="http://www.i2clipart.com/cliparts/3/d/1/e/clipart-earth-3d1e.png" alt="Planet Icon">THE DAILY PLANET<img src="http://www.i2clipart.com/cliparts/3/d/1/e/clipart-earth-3d1e.png" alt="Planet Icon"></h1></div>
-        <nav>
-            <div style="text-align:center;"><a href="#">Local</a></div>
-            <div style="text-align:center;"><a href="#">Sports</a></div>
-            <div style="text-align:center;"><a href="#">Economy</a></div>
-        </nav>
+
+            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links for toggling -->
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="Sports">Sports</a>
+            </li>
+            <li>
+              <a href="#">Economy</a>
+            </li>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="#">Partners</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
     </header>
     <main>
         <br>
         <hr>
         <section>
-            <article>
+            <article class="Sports">
                 <h2>SPORTS</h2>
                 <h3>Patriots fans buying season's most expensive tickets for Tom Brady's return</h3>
-                <img src="http://www.gannett-cdn.com/-mm-/b39274573235adc821ce501948a978e0c6f0c3c3/c=546-98-3157-2061&r=x404&c=534x401/local/-/media/2015/05/06/USATODAY/USATODAY/635665171605640340-USP-NFL-AFC-Championship-Indianapolis-Colts-at-Ne.jpg" alt="Tom Brady">
+                <div class="w3-content w3-display-container">
+  <img class="mySlides" src="img/tb1.png" style="width:100%">
+  <img class="mySlides" src="img/tb2.jpg" style="width:100%">
+  <img class="mySlides" src="img/tb3.jpg" style="width:100%">
+
+
+  <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+  <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
                 <p>Tom Brady is back, and New England Patriots fans are paying a premium to see his first home game of the 2016 season. Sunday’s contest at Gillette Stadium against the Cincinnati Bengals shapes up as the most in-demand and, in turn, pricey
                     game so far in this NFL season. The average price on the secondary ticket market is about $550 as of Friday, a price tag that exceeds last January’s divisional playoff game against the Kansas City Chiefs.</p>
             </article>
@@ -37,6 +99,10 @@
 
     <div style="text-align:center;">
         <footer><p>&copy;2016 The Daily Planet</p></footer>
+        <span class="fa fa-facebook" fa-lg=></span>
+        <span class="fa fa-twitter-square" fa-lg=></span>
+        <span class="fa fa-instagram" fa-lg=></span>
+
 </body>
 </div>
 
