@@ -1,12 +1,33 @@
+.owlCarousel{
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".slider").owlCarousel({
+          });
+    });
+</script>
+
 body {
   font-family: sans-serif;
 }
 
 #nasa {
-    background-image: url('../img/nasa-background.jpg');
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
+
     width: 850px;
     height: 450px;
     margin: auto;
@@ -101,4 +122,10 @@ button {
 display: block;
 content: " ";
 clear: both;
+}
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
 }
