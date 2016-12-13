@@ -8,12 +8,14 @@ h1 {
 }
 
 section {
-  display: flex;
+  /*display: flex;
   justify-content: space-around;
+  flex-direction: row;*/
 }
 
 .one {
   background-image: url("./img1.jpg");
+
 }
 
 .two {
@@ -31,11 +33,15 @@ section {
 
 .all {
   height: 415px;
-  width: 275px;
+  /*width: 275px;*/
+  width: 247px;
   background-size: contain;
   background-repeat: no-repeat;
   background-size: 275px;
   border: 1px solid #e5e5e5;
+  position: relative;
+  margin-bottom: 15px;
+
 }
 
 .price {
@@ -73,7 +79,7 @@ section {
   font-size: 14px;
   font-weight: bold;
   font-family: 'Open Sans', sans-serif;
-  padding: 17px 80px;
+  padding: 7px 80px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -86,13 +92,21 @@ section {
   font-weight: bold;
   position: absolute;
   bottom: 10px;
-  right: 70px;
+  right: 55px;
   padding-top: 12px;
 }
 
-@media (max-width: 768px){
-  section {
-    flex-direction: column;
-    justify-content: space-around;
+a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (min-width: 992px){
+  /*.all {
+    margin-right: -2%;
+  }*/
+
+  .one {
+    margin-left: 0;
   }
 }
