@@ -1,44 +1,86 @@
+section {
+  margin-top: 80px;
+}
 
-/*.colorbg {
-  background-color: #f4ed48;
-  height: 600px;
-}*/
+.row {
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.nested-row {
+  margin-right: -30px;
+  margin-left: -30px;
+}
+
+.large-row {
+  margin-bottom: 0;
+}
 
 .large-text {
   background-color: #f4ed48;
   padding: 50px;
   height: 600px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .small-image {
   background-color: #ccc;
-  height: 300px;
+  height: 280px;
   background-size: cover;
   background-position: center;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .small-text {
   box-sizing: border-box;
   background-color: #eee;
-  height: 300px;
+  height: 280px;
   padding: 50px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .books {
   background-image: url(../img/work6.jpg);
-
+  /*box-sizing: border-box;*/
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .wallet {
   background-image: url(../img/work4.jpg);
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .chicken {
   background-image: url(../img/work7.jpg);
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 @media screen and (max-width: 992px) {
   .large-text {
     height: 400px;
+  }
+
+  .large-text {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    margin-bottom: 20px;
+  }
+
+  .large-text {
+    margin-bottom: 20px;
+  }
+
+  .books, .wallet, .chicken, .small-text {
+    margin-bottom: 20px;
   }
 }
