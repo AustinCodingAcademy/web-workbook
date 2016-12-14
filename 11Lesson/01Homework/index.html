@@ -1,10 +1,91 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
 
+<head>
+    <title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../assets/css/bootstrapTheme.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+
+</head>
+
+<body>
+    <div class="owl-carousel owl-theme owl-loaded">
+
+        <div class="owl-stage-outer">
+            <div class="owl-stage" style="transform: translate3d(-644.001px, 0px, 0px); transition: 0s; width: 3864.01px;">
+                <div class="owl-item cloned" style="width: 204.667px; margin-right: 10px;">
+                    <div class="item">
+                        <h4>10</h4>
+                    </div>
+                </div>
+                <div class="owl-item cloned" style="width: 204.667px; margin-right: 10px;">
+                    <div class="item">
+                        <h4>11</h4>
+                    </div>
+                </div>
+                <div class="owl-item cloned" style="width: 204.667px; margin-right: 10px;">
+                    <div class="item">
+                        <h4>12</h4>
+                    </div>
+                </div>
+                <div class="owl-item active" style="width: 204.667px; margin-right: 10px;">
+                    <div class="item">
+                        <img src="img/space.jpg" alt="">
+                    </div>
+                </div>
+                <div class="owl-item active" style="width: 204.667px; margin-right: 10px;">
+                    <div class="item">
+                        <img src="img/earth.jpg" alt="">
+                    </div>
+                </div>
+                <div class="owl-item active" style="width: 204.667px; margin-right: 10px;">
+                    <div class="item">
+                        <h4>3</h4>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-controls">
+            <div class="owl-nav">
+                <div class="owl-prev" style="">prev</div>
+                <div class="owl-next" style="">next</div>
+            </div>
+            <div class="owl-dots" style="">
+                <div class="owl-dot active"><span></span></div>
+                <div class="owl-dot"><span></span></div>
+                <div class="owl-dot"><span></span></div>
+                <div class="owl-dot"><span></span></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+    <script src="js/owl.carousel.js"></script>
 </body>
+
 </html>
