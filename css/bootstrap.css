@@ -1,26 +1,41 @@
-/*Bootstrap for HTML head -- GOES AT THE TOP!!*/
+<head>
+    <title></title>
+    /*Bootstrap for HTML head -- GOES AT THE TOP!!*/
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    /*Owl-Carousel inserts*/
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/assets/owl.theme.default.min.css">
+    /*Font Awesome insert*/
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    /*Normal Stylesheet*/
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<footer>
+/*Bootstrap for HTML footer - GOES AT THE BOTTOM !! IN THIS ORDER!!*/
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    /*Owl-Carousel inserts*/
+    <script src="http://www.owlcarousel.owlgraphic.com/assets/owlcarousel/owl.carousel.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+  
+/*MUST ENTER THIS (or similar) AFTER THE ABOVE FOR OWL-CAROUSEL TO WORK*/
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            margin: 10,
+            loop: true,
+            responsive: {
+                500: {
+                    items: 1
+                },
 
-/*Font Awesome for HTML head tag*/
 
-  <script src="https://use.fontawesome.com/01e7f3e47b.js"></script>
-
-/*Bootstrap before the closing body HTML tag*/
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-/*add to head in this order*/
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-<link rel="stylesheet" href="css/style.css">
-
-
+            }
+        })
+    </script>
+</footer>
 
 /*collapsed nav bar -- put above with the head*/
 
