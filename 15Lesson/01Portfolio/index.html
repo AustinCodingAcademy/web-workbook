@@ -3,13 +3,14 @@
 
 <head>
     <title>Jordan Roman</title>
-    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+    <!--Owl-->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Codystar|Petit+Formal+Script" rel="stylesheet">
-
-
 </head>
 
 <body>
@@ -180,23 +181,30 @@
     </main>
     <footer>
         <!-- embed google maps, visibile only for col-xs-12-->
-        <script>$(document).ready(function(){
-          $(".owl-carousel").owlCarousel();
-        });</script>
+        <!-- This is where my JS files begin-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="jquery.min.js"></script>
+        <script src="owlcarousel/owl.carousel.min.js"></script>
+        <script>$('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+      })</script>
+        <!--Bootstrap CDN script -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </footer>
-    <!-- This is where my JS files begin-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="jquery.min.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
 
-
-
-
-
-
-
-    <!--Bootstrap CDN script -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 
 </html>
