@@ -29,7 +29,7 @@
             <div class="collapse navbar-collapse" id="myNavbar">
 
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">HOME PAGE <span class="caret"></span></a>
+                    <li class="active"><a class="dropdown-toggle home" data-toggle="dropdown" href="#">HOME PAGE <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">VERSION 1</a></li>
                             <li><a href="#">VERSION 2</a></li>
@@ -38,7 +38,7 @@
                     </li>
 
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">PAGES <span class="caret"></span></a>
+                        <a class="dropdown-toggle page" data-toggle="dropdown" href="#">PAGES <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">PORTFOLIO</a></li>
                             <li><a href="#">WORK</a></li>
@@ -157,7 +157,7 @@
                                 <!--2 and 3-->
 
                                 <div class="grey sub">
-                                    <span class="glyphicon glyphicon-tree-conifer"></span>
+                                    <span class="glyphicon glyphicon-tree-deciduous"></span>
                                     <h3>Creative UX &amp; UI Design</h3>
                                     <p>Coconut is a popular addition</p>
                                 </div>
@@ -170,32 +170,22 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="container-fluid">
-                    <div class="row row-b-b">
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 double">
 
-                            <div class="grey sub">
-                                <span class="glyphicon glyphicon-tree-conifer"></span>
-                                <h3>Creative UX&amp; UI Design</h3>
-                                <p>Coconut is a popular addition</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 double">
-
-
-                            <img src="img/work6.jpg" class="sub" alt="books">
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 double">
-
-                    <img src="img/work6.jpg" class="sub" alt="books">
-                </div> -->
             </div>
             </div>
 
             </div>
             </div>
+        </section>
+        <section class="container-fluid contacts">
+          <div class="row row-c">
+            <div class="visible-xs-block visible-sm-block visible-md-block col-xs-12 col-sm-12 col-md-12">
+              <div class="contact">
+              <a class="list-group-item" href="#"><i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> &nbsp; CONTACT</a>
+            </div>
+
+            </div>
+          </div>
         </section>
 
 
@@ -222,15 +212,14 @@
             margin: 10,
             loop: true,
             responsive: {
-                500: {
+                300: {
                     items: 1
                 },
 
 
             }
         })
-    </script>
-    <script>
+
         $('.animated').click(function() {
       var heading =  $(this)
       heading.removeClass('jello');
@@ -238,7 +227,10 @@
         heading.addClass('jello');
       }, 10);
     });
+
+
     </script>
+
 </footer>
 
 </html>
