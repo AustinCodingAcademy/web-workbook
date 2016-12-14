@@ -8,22 +8,70 @@
 
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="animate/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
   </head>
   <body>
     <!--the nested 3!!-->
-    <section class="container gimme">
-      <div class="row gimme">
-        <div class="col-md-4 col-lg-4 gimme">
-          <img class="img-responsive" src="http://lorempixel.com/320/280/sports/" alt="icon">
-          <img class="img-responsive" src="http://lorempixel.com/320/280/food/" alt="icon">
-        </div>
-        <div class="col-md-4 col-lg-4 gimme">
-          <img class="img-responsive" src="http://lorempixel.com/320/280/sports/" alt="icon">
-          <img class="img-responsive" src="http://lorempixel.com/320/280/food/" alt="icon">
-        </div>
-        <div class="col-md-4 col-lg-4 gimme">
-          <img class="img-responsive" src="http://lorempixel.com/320/580/sports/" alt="icon">
+    <section class="container back">
+      <div class="row gimme test">
+        <div class="col-lg-12 col-md-12">
+          <div class="">
+            <!--background color yellow-->
+            <div id="my-slider" class="carousel slide" data-ride="carousel">
+              <!-- indicators dot nav -->
+
+              <ol class="carousel-indicators">
+                <li data-target="#my-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#my-slider" data-slide-to="1"></li>
+                <li data-target="#my-slider" data-slide-to="2"></li>
+              </ol>
+
+              <!-- wrapper for for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <p class="top">
+                    We are the most awarded advertising agency in the world
+                  </p>
+                  <p class="bottom">
+                    Coconut is a popular addition. The syrup may also optionapopular addition. Coconut is a popular addition. The syrup may also optionapopular addition.
+                  </p>
+
+                </div>
+                <div class="item">
+                  <p class="top">
+                    We are the most awarded advertising agency in the world
+                  </p>
+                  <p class="bottom">
+                    Coconut is a popular addition. The syrup may also optionapopular addition. Coconut is a popular addition. The syrup may also optionapopular addition.
+                  </p>
+
+                </div>
+                <div class="item">
+                  <p class="top">
+                    We are the most awarded advertising agency in the world
+                  </p>
+                  <p class="bottom">
+                    Coconut is a popular addition. The syrup may also optionapopular addition. Coconut is a popular addition. The syrup may also optionapopular addition.
+                  </p>
+
+                </div>
+              </div>
+
+              <!-- controls or next and prev buttons -->
+              <div class="bottom arrow">
+                <a class="left carousel-control" href="#my-slider" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#my-slider" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -31,8 +79,9 @@
 
 
 
-
+    <!--
     <h1 class="animated wobble infinite">Hello, world!</h1>
+  -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="script/node.js"></script>
