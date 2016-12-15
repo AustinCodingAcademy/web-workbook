@@ -1,0 +1,137 @@
+@font-face {
+  font-family: ostrich; src: url("../fonts/ostrich-regular.ttf");
+}
+
+@font-face {
+  font-family: ostrichbold; src: url("../fonts/OstrichSans-Heavy.otf");
+}
+
+.ostrich {
+  font-size: 28px;
+  font-family: ostrich;
+}
+
+.ostrich-bold {
+  font-size: 32px;
+  font-family: ostrichbold;
+}
+
+section {
+  width: 98%;
+  margin: auto;
+  background-color: #F8F8F8;
+  padding: 50px;
+}
+
+h2 {
+    font-family: ostrichbold;
+    text-align: center;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #555;
+    background-color: #e5f8ff;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    color: rgb(85, 85, 85);
+    background-color: #e5f8ff;
+}
+
+.dropdown > ul > li > a:hover {
+  background-color: #e5f8ff;
+}
+
+.parallax-container {
+  /*background: rgba(0, 0, 0, 0.4); */
+  height: 350px;
+  width: 95%;
+  margin: auto;
+}
+
+.about-section img {
+  -webkit-filter: grayscale(25%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(25%);
+
+  -webkit-filter: drop-shadow(16px 16px 10px rgba(0,0,0,0.9));
+  filter: drop-shadow(12px 12px 10px rgba(0,0,0,0.9));
+
+  width: 280px;
+
+  margin: 0px 32px 0px 32px;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 400px;
+
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+form > label {
+  text-align: right;
+  width: 48%;
+}
+
+form > input {
+  width: 48%;
+}
+
+.top-margin {
+  margin-top: 5px;
+}
+
+.banner {
+  width: 200px;
+  background-image: url("../img/banner.png");
+  background-position: 50% 0px;
+  background-size: cover;
+}
+
+.navbar {
+  background-color: white;
+}
+
+#map {
+  height: 400px;
+}
+
+@media print {
+  .parallax-container {
+    height: 0px !important;
+  }
+  .parallax-mirror {
+    display: none;
+  }
+  .about-section, .approach-section {
+    text-align: center;
+  }
+  .about-section img {
+    display: none;
+  }
+  section {
+    background-color: white;
+  }
+#map {
+  display: none;
+}
+}
+
+@media screen and (max-width: 415px) {
+  .about-section img {
+    width: 100%;
+    margin-bottom: 32px;
+    margin-right: 0px;
+    -webkit-filter: none;
+  }
+}
