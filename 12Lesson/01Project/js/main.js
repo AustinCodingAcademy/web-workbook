@@ -1,7 +1,7 @@
 $('.animated').click(function() {
   var heading =  $(this)
-  heading.removeClass('slideInUp');
+  heading.removeClass('slideOutRight');
   setTimeout(function() {
-    heading.addClass('slideInUp');
+    heading.addClass('slideOutRight');
   }, 10);
 });
