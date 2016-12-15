@@ -3,7 +3,7 @@ body {
 }
 
 section {
- min-width: 585px; 
+ min-width: 585px;
 }
 
 .carousel {
@@ -38,14 +38,21 @@ section {
 }
 
 .hidden-div {
-  display: none;
   background-color: white;
   text-align: center;
-  height: 75px;
-  width: 234px;
+  height: 0px;
+  width: 100%;
   margin: 165px auto 0px auto;
   background-color: white;
 }
+
+.grow {
+    text-align: center;
+    transition: all .2s ease-in-out;
+    }
+.grow:hover {
+    transform: scale(1.1);
+    }
 
 .image-box:hover .hidden-div {
 display: flex;
