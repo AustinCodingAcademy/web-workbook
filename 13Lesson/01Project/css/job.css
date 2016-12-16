@@ -59,6 +59,8 @@ header {
   padding-top:7px;
 }
 body {
+  width:100%;
+  margin:0 auto;
   text-align: center;
 }
 .label {
@@ -67,11 +69,46 @@ body {
     padding-bottom:55px;
 }
 #contact {
-
-  margin: -150px 0;
+width:80%;
+  margin: -900px auto;
   padding: 30px;
 
-  background: rgba(255, 255, 255, .75);
+  background: rgba(255, 255, 255, .5);
 
   text-align: center;
+}
+.paragraph {
+  width:60%;
+  height: 75px;
+}
+
+/*Desktops & Laptops*/
+@media (max-width: 1823px) and (min-width: 1024px) {
+  .column {
+    color: blue;
+  }
+}
+/*tablets*/
+@media (max-width: 1023px) and (min-width:768px) {
+  .column {
+    color: blue;
+  }
+}
+
+/*phones*/
+@media (max-width: 767px) {
+  #contact {
+  width:90%;
+    margin: -940px auto;
+    padding: 20px;
+
+    background: rgba(255, 255, 255, .5);
+
+    text-align: center;
+  }
+  .paragraph {
+    width:100%;
+    height: 75px;
+  }
+  }
 }
