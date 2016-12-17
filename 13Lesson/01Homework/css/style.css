@@ -1,6 +1,7 @@
 body {
   margin: 0 auto;
   width: 100%;
+  background-color: lightgrey;
 }
 
 h1 {
@@ -10,9 +11,82 @@ h1 {
   font-family: 'Playfair Display', serif;
 }
 
-h2, nav {
+h2, nav, h3, h4 {
     font-family: 'Playfair Display', serif;
 }
 
-p, form {
+h3, h4 {
+  color: #0B0044;
+}
+
+p, form, li {
   font-family: 'Raleway', sans-serif;
+}
+
+nav.navbar.navbar-inverse {
+  margin: 0 auto;
+  background-color: black;
+}
+
+.banner {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.section-one, .section-two, form {
+  background-color: lightgrey;
+}
+
+.open-position-one {
+  height: 600px;
+  background-image: url(../img/innocentband2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.open-position-two h3 {
+  margin-top: 100px;
+  text-align: center;
+}
+
+form {
+  padding: 25px;
+  color: #0B0044;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+input, label, textarea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .open-position-two h3 {
+    margin-top: 50px;;
+  }
+}
+
+@media (max-width: 767px) {
+  .open-position-one {
+    height: 300px;
+  }
+
+  .open-position-two {
+    padding: 10px;
+  }
+
+  .open-position-two h3 {
+    margin-top: 0;
+  }
+
+  form {
+    text-align: center;
+  }
+}
