@@ -6,8 +6,45 @@ body {
 h1 h2 {
   font-size: 36px;
 }
-.col-md-12 {
-  padding: 0;
+
+label {
+  display: block;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+input {
+  display: block;
+  width: 300px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+}
+
+textarea {
+   resize: none;
+   border: none;
+   width: 300px;
+   font-size: 17px;
+   padding-top: 5px;
+}
+
+.hflex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
+
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.divider {
+  margin: 80px 0;
 }
 
 .navbar {
@@ -32,24 +69,16 @@ h1 h2 {
   padding: 0;
 }
 
-.current {
-  border-bottom: 1px solid grey;
-}
-
-.navbar-default .navbar-nav > .current > a:hover {
-  border-bottom: none;
-}
-
-.navbar-default .navbar-brand {
-  color: black;
+.navbar-default .navbar-nav>li>a:hover {
+  color: #FD6B54;
 }
 
 .navbar-default .navbar-nav>li>a {
   color: black;
 }
 
-.navbar-default .navbar-nav > .dropdown > a:hover {
-  border: 1px solid grey;
+#current > a {
+  color: #FD6B54;
 }
 
 .jumbotron > .container > img {
@@ -58,17 +87,21 @@ h1 h2 {
 }
 
 .jumbotron {
-  color: white;
+  color: #FD6B54;
   padding-bottom: 20px;
-  background: url("../img/clouds.jpg");
+  background: #D3EEE7
+  /*background: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)),
+    url("../img/clouds.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center;*/
 }
 
 .hero-btn {
   display: inline-block;
-  background: #67B6A1;
-  color: white;
+  background: white;
+  color: #333;
   font-size: 20px;
   padding: 20px 70px;
   margin-top: 40px;
@@ -76,15 +109,18 @@ h1 h2 {
   border-radius: 0;
 }
 
+.glyphicon-chevron-right {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
 .hero-btn:hover {
-  color: white;
-  background-color: #006C6D;
-  border-color: #adadad;
+  color: #FD6B54;
   text-decoration: none;
 }
 
 section {
-  background: #fff;
+  background: #FFDCD2;
 }
 
 .text-header {
@@ -93,7 +129,8 @@ section {
 
 .text-header > h2 {
   display: inline-block;
-  border-bottom: 2px solid #333333;
+  color: #FD6B54;
+  border-bottom: 2px solid #FD6B54;
 }
 
 .btn:hover {
@@ -103,19 +140,38 @@ section {
   text-decoration: none;
 }
 
-.divider {
-  margin: 80px 0;
+label {
+  display: block;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+input {
+  display: block;
+  width: 300px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+}
+
+textarea {
+   resize: none;
+   border: none;
+   width: 300px;
+   font-size: 17px;
+}
+
+.form-btn {
+  display: block;
+  background-color: white;
+  color: #333;
+  font-size: 20px;
 }
 
 footer {
   padding-bottom: 50px;
 }
 
-@media (min-width: 900px) {
-  .navbar-default .navbar-nav>li>a:hover {
-    border-bottom: 1px solid grey;
-  }
-}
 
 @media (min-width: 768px) {
   .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
