@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -27,10 +28,10 @@
       <!-- navbar-collapse -->
       <div class="collapse navbar-collapse bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li id="current"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li id="current"><a href="#1">Home</a></li>
+          <li><a href="#2">About</a></li>
+          <li><a href="#3">Portfolio</a></li>
+          <li><a href="#4">Contact</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -48,7 +49,7 @@
     </div><!-- /.container-fluid -->
   </nav>
 
-  <header class="jumbotron">
+  <header class="jumbotron mb40">
     <div class="container text-center">
       <img src="https://static.wixstatic.com/media/8b04e2_47ce8b318ebb4f41aa129b37ad7f113c~mv2.png/v1/fill/w_144,h_60,al_c,usm_0.66_1.00_0.01/8b04e2_47ce8b318ebb4f41aa129b37ad7f113c~mv2.png" alt="" />
       <h1>
@@ -62,14 +63,63 @@
     </div>
   </header>
 
+  <section class="container-fluid mb40">
+    <div class="row">
+      <div id="2" class="text-header">
+        <h2>
+          About Me
+        </h2>
+      </div>
+      <div class="col-xs-12 col-md-6 col-md-push-6 mt40 flex-center">
+        <div class="img-box">
+          <img class="img-responsive" src="img/about.jpg" alt="" />
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-md-pull-6 mt40 flex-center">
+        <div class="text-box">
+          <p>
+            My name is Kiera Wolfe. In the Fall of 2014, I began taking ASL
+            classes at Austin Community College (ACC), an hour long commute.
+            I was still in high school, and appreciated the opportunity to get a
+            head start and begin my incipient college education.
+          </p>
+          <p>
+            Since I began the interpreting program,
+            I've never learned so much about a single culture and language.
+            With each class, observation, interaction, my cognizance grows and I fall more in love with ASL.
+            I am blessed to be allowed into the Deaf community with open arms.
+            I take every opportunity to volunteer and give back.
+          </p>
+          <p>
+            In the Fall of 2016, I completed ASL 6, the final ASL class in the ACC
+            interpreting program.  At this time, I was working as a part time department
+            manger at Hobby Lobby, as well as taking additional classes and volunteering weekly
+            at Texas School for the Deaf. My anticipated graduation date from the
+            interpreting program is May of 2018.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid mb40">
+    <div class="row">
+      <div id="3" class="text-header">
+        <h2 style="padding-bottom: 10px;">
+          Portfolio
+        </h2>
+      </div>
+    </div>
+  </section>
+
   <section class="container-fluid">
     <div class="row">
-      <div class="text-header">
+      <div id="4" class="text-header">
         <h2>
           Contact
         </h2>
       </div>
-        <div class="hflex">
+        <div class="flex-center">
           <form class="" action="https://docs.google.com/forms/d/e/1FAIpQLSdamlH59xS13EhNYxd_Y-KyTBglsZJ0OhlgKVSOV0uagBqAiA/formResponse"
             method="POST" target="_self" onsubmit="">
               <label for="entry_1161770045">Name:</label>
@@ -109,6 +159,24 @@
 
   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    $('.nav li a').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+      && location.hostname == this.hostname) {
+        var $target = $(this.hash);
+        $target = $target.length && $target
+        || $('[name=' + this.hash.slice(1) +']');
+        if ($target.length) {
+          var targetOffset = $target.offset().top;
+          $('html,body')
+          .animate({scrollTop: targetOffset}, 1000);
+         return false;
+        }
+      }
+    });
+    });
+  </script>
 </body>
 
 </html>
