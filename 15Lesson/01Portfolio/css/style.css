@@ -13,14 +13,7 @@ header {
   background: url(http://www.nickrigby.com/wp-content/uploads/2016/09/designing-website-perth.png) no-repeat fixed;
   background-size: cover;
   background-position: left;
-}
 
-a:hover{
-	-webkit-stroke-width: 5.3px;
-      -webkit-stroke-color: #FFFFFF;
-      -webkit-fill-color: #FFFFFF;
-      text-shadow: 1px 0px 20px yellow;
-      /*box-shadow: 0px 0px 5px #fff;*/
 }
 
 body {
@@ -82,12 +75,23 @@ nav {
   background-size: cover;
 }
 
+#menu a:hover {
+  box-shadow:
+      0 0 60px 15px #fff;
+      color: #fff;
+      border-radius: 50%;
+      transform: scale(1.05);
+}
+
 #menu a {
   color: white;
   font-family: 'Amatic SC', cursive;
+  text-shadow: -1px -1px 1px #000;
   font-size: 17px;
   font-weight: bold;
   letter-spacing: 2px;
+  transition: box-shadow: 2s;
+  overflow: hidden;
 }
 
 .navbar-toggle {
@@ -104,12 +108,6 @@ nav {
 
 li {
   font-family: 'Audiowide', cursive;
-}
-
-/*.paint {*/
-  position: absolute;
-  width: 1300px;
-  height: 1000px;
 }
 
 a {
@@ -199,15 +197,20 @@ a {
    color: #131313;
    font-size: 22px;
    margin-top: 15px;
-   font-family: 'Annie Use Your Telescope', cursive;
-   font-weight: bold;
+   font-size: 22px;
+   font-family: The Octopus;
+}
 
+@font-face {
+  font-family: 'myfont';
+  src: url('myfont.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+       url('myfont.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
 }
 
 .sidebar-nav li a:hover {
    text-decoration: none;
    color: #fff;
-   /*background: #312A25;*/
+   background: transparent;
 }
 
 .sidebar-nav li a:active,
@@ -223,11 +226,6 @@ a {
 
 .sidebar-nav > .sidebar-brand a {
    color: #999999;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-   color: #fff;
-   background: none;
 }
 
 @media(min-width:768px) {
