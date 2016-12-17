@@ -1,76 +1,59 @@
-/*transition property in combo with hover to make custom animations.*/
-html, body, navbar, main, article, section {
-  background-color: #F5F5F5;
+.firstwrapper, .green, .blue {
+  height: 500px;
+  z-index: 1;
+}
+.green {
+  background-color: green;
 }
 
-.my-navbar {
-  height: 120px;
-  padding: 2.5% 0 0 0;
-
+.blue  {
+  background-color: blue;
 }
 
-.firstwrapper, .secondwrapper {
-  height: 540px;
-  margin-top: 2.5%;
-  padding: 0;
+.shae {
+  height: 250px;
+  width: 250px;
+}
+.red {
+  background-color: red;
+  z-index: 0;
 }
 
-.carousel {
-  height: 537px;
-  margin: 2.5% 0;
-  padding: 2% 0 2% 0;
+.yellow {
+  background-color: yellow;
 }
 
-.top-carousel {
-  background-color: #F4ED48;
-  height: auto;
+.pink {
+  background-color: pink;
 }
 
-.btm-carousel {
-  height: auto;
-  background-color: grey;
+.purple {
+  background-color: purple;
+}
+
+.animate {
+  background-color: orange;
+  z-index: 3;
+  overflow-y: hidden;
+}
+
+.my-slider {
+  position: relative;
+  height: 10%;
+  width: inherit;
+  margin-top: 250px;
+  background-color: white;
+  transition: all 3s;
+  z-index: 3;
+}
+
+.animate:hover .my-slider {
+  margin-top: 0;
+  transform: translateY(-30px);
 }
 
 
-.img-scrolls {
-  height: 390px;
-  width: 555px;
-  margin: 17% auto;
-}
 
-.rightblock {
-  height: 100%;
-  padding: 0;
-}
-/*
-.transbox {
-  z-index: -1;*/
-  /*overflow: hidden;*/
-
-/*
-.slideup {
-  height: 100px;*/
-  /*transition: all 500ms;*/
-
-
-/*.transbox:hover .slideup {
-
+/*.animate:hover p {
+  transform: translateX(100px)
 }*/
-
-/*.transbox > a, h6 {
-  position: absolute;
-
-}*/
-
-.top-window {
-  height: auto;
-  width: auto;
-  margin: 5% auto 5%;
-}
-
-
-
-.btm-container {
-  margin-top: 10%;
-
-}
