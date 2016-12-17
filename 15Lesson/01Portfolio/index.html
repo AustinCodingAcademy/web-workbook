@@ -2,12 +2,69 @@
 <html>
 <head>
   <title></title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-      <header>
-            
-      </header>
+      <header class="container-fluid">
+            <nav class="navbar">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
 
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">About<span class="sr-only">(current)</span></a></li>
+              <li><a href="#">Gallery</a></li>
+
+                <li><a href="application.html">Contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <div class="row" id="icons">
+            <div class="col-md-offset-3 col-lg-offset-3 col-md-2 col-lg-2">
+                  <img id="designicon" src="img/graphicdesignicon.png" alt="">
+                  <h4>Graphic Design</h4>
+            </div>
+            <div class=" col-md-2 col-lg-2">
+                  <i class="fa fa-code fa-5x" aria-hidden="true"></i>
+                  <h4>Website Development</h4>
+            </div>
+            <div class=" col-md-2 col-lg-2">
+                  <i class="fa fa-cogs fa-5x" aria-hidden="true"></i><h4>Web App Development</h4>
+                  <p>Coming soon!</p>
+            </div>
+      </header>
+      <main class="container-fluid">
+            <div class="row" id="icons">
+                  <div class="col-md-offset-3 col-lg-offset-3 col-md-3 col-lg-3">
+                        <i class="fa fa-code fa-3x" aria-hidden="true"></i>
+
+                  </div>
+            </div>
+      </main>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script>
+          $('.animated').click(function() {
+             var heading = $(this)
+             heading.removeClass('bounce');
+             setTimeout(function() {
+                  heading.addClass('bounce');
+             }, 10);
+          });
+      </script>
 </body>
 </html>
