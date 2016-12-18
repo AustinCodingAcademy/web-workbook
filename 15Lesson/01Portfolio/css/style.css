@@ -177,23 +177,46 @@ header{
 /*------------------architecture-------------------*/
 
 #arch{
+  width: 100%;
+  height: 150px;
+  background-image:linear-gradient( rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.5) ), url("../img/fcdc.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  background-attachment: fixed;
+}
+
+#arch2{
+  width: 100%;
+  height: 50px;
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-end;
-  width: 100%;
-  height: 300px;
   background-image: url("../img/fcdc.jpg");
-  background-position: ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  background-attachment: fixed;
+}
+
+#arch3{
+  width: 100%;
+  height: 150px;
+  background-image:linear-gradient( rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0.5) ), url("../img/fcdc.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   box-sizing: border-box;
   margin-bottom: 40px;
+  background-attachment: fixed;
 }
-#arch h2{
+
+#arch2 h2{
   font-weight: bolder;
   color: #f2f2f2;
   font-size: 40px;
   float: right;
+  letter-spacing: 18px;
+  margin-bottom: 5px;
 }
 
 /*----------arch project grid--------*/
@@ -211,18 +234,16 @@ header{
   width: 100%;
 }
 
+.archDiv{
+  margin-bottom: 40px;
+}
+
 .archImgs{
   width: 80%;
 }
 
-
-h2{
-  padding: 18px 0;
-  font-weight: bold;
-}
-
 .archButton{
-  background: transparent;
+  background: white;
   padding: 10px 30px;
   margin: 10px 0 40px 0;
   font-size: 15px;
@@ -237,4 +258,27 @@ h2{
 .archButton:hover{
   background-color: #bcbcbc;
   color: white;
+}
+
+/*----------------slideshow------*/
+
+#sxsw{
+  font-weight: 100;
+  letter-spacing: 8px;
+  width: 100%;
+  font-size: 30px;
+}
+
+.mySlides {
+  display:none;
+}
+
+.w3-left, .w3-right, .w3-badge {
+  cursor:pointer;
+}
+
+.w3-badge {
+  height:13px;
+  width:13px;
+  padding:0;
 }
