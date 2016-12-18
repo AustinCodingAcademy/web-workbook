@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -28,20 +29,15 @@
       <!-- navbar-collapse -->
       <div class="collapse navbar-collapse bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li id="current"><a href="#1">Home</a></li>
-          <li><a href="#2">About</a></li>
-          <li><a href="#3">Portfolio</a></li>
-          <li><a href="#4">Contact</a></li>
+          <li id="current"><a class="animated" href="#1">Home</a></li>
+          <li><a class="animated" href="#2">About</a></li>
+          <li><a class="animated" href="#3">Portfolio</a></li>
+          <li><a class="animated" href="#4">Contact</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">One more separated link</a></li>
+              <li class="dropdown-text"><a href="#">Poetry and Literature</a></li>
+              <li class="dropdown-text"><a href="#">Academic</a></li>
             </ul>
           </li>
         </ul>
@@ -59,7 +55,7 @@
       <h1>
         Interpreter in Training
       ​</h1>
-      <p><a class="hero-btn" href="#" role="button">Contact Me<span class="animated glyphicon glyphicon-chevron-right"></span></a></p>
+      <p><a class="hero-btn" href="#4" role="button">Contact Me<span class="glyphicon glyphicon-chevron-right"></span></a></p>
     </div>
   </header>
 
@@ -159,24 +155,8 @@
 
   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script>
-    $(document).ready(function(){
-    $('.nav li a').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-      && location.hostname == this.hostname) {
-        var $target = $(this.hash);
-        $target = $target.length && $target
-        || $('[name=' + this.hash.slice(1) +']');
-        if ($target.length) {
-          var targetOffset = $target.offset().top;
-          $('html,body')
-          .animate({scrollTop: targetOffset}, 1000);
-         return false;
-        }
-      }
-    });
-    });
-  </script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/animations.js"></script>
 </body>
 
 </html>
