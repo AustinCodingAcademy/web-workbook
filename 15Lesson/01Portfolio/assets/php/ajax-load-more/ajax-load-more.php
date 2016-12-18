@@ -6,7 +6,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Savage Visual Arts</title>
+	<title>Vortex - AJAX Portfolio HTML Template</title>
 
 	<!-- Favicons -->
 	<link rel="shortcut icon" href="assets/images/favicon.png">
@@ -51,33 +51,31 @@
 					<li class="slidedown">
 						<a href="#">Home</a>
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<!-- <li><a href="index-2.html">Dark header</a></li>
+							<li><a href="index.html">Light header</a></li>
+							<li><a href="index-2.html">Dark header</a></li>
 							<li><a href="index-3.html">Film overlay</a></li>
 							<li><a href="index-4.html">Image Slider</a></li>
 							<li><a href="index-5.html">Youtube Video</a></li>
 							<li><a href="index-6.html">Text rotator</a></li>
 							<li><a href="index-7.html">Agency</a></li>
 						</ul>
-					</li> -->
-					</ul>
+					</li>
+
 					<li><a href="about.html">About</a></li>
 
 					<li class="slidedown">
 						<a href="#">Portfolio</a>
 						<ul>
-							<!-- <li><a href="portfolio-single-1.html">Single 1 - standartd</a></li> -->
-							<li><a href="portfolio-single-2.html">gallery</a></li>
-							<!-- <li><a href="portfolio-single-3.html">Single 3 - full height</a></li>
-							<li><a href="portfolio-single-4.html">Single 4 - Slider</a></li>
-							<li><a href="portfolio-single-5.html">Single 5 - Youtube header</a></li>
+							<li><a href="portfolio-single-1.html">Single 1</a></li>
+							<li><a href="portfolio-single-2.html">Single 2</a></li>
+							<li><a href="portfolio-single-3.html">Single 3</a></li>
+							<li><a href="portfolio-single-4.html">Single 4</a></li>
+							<li><a href="portfolio-single-5.html">Single 5 </a></li>
 							<li><a href="portfolio-single-6.html">Single 6 with slider</a></li>
-							<li><a href="portfolio-single-7.html">Single 7 with Youtube</a></li>
-							<li><a href="portfolio-single-8.html">Single 8 with Vimeo</a></li> -->
 						</ul>
 					</li>
 
-					<!-- <li class="slidedown">
+					<li class="slidedown">
 						<a href="#">News</a>
 						<ul>
 							<li><a href="blog-grid.html">3 column grid</a></li>
@@ -85,9 +83,9 @@
 							<li><a href="blog-masonry.html">Blog Masonry</a></li>
 							<li><a href="blog-single.html">Single post</a></li>
 						</ul>
-					</li> -->
+					</li>
 
-					<!-- <li class="slidedown">
+					<li class="slidedown">
 						<a href="#">Features</a>
 						<ul>
 							<li><a href="components-1.html">Buttons, Content box, Progress bars</a></li>
@@ -96,7 +94,7 @@
 							<li><a href="components-4.html">Typography & Columns</a></li>
 							<li><a href="components-5.html">Modules & Overlays</a></li>
 						</ul>
-					</li> -->
+					</li>
 
 					<li><a href="contact.html">Contact</a></li>
 
@@ -112,7 +110,7 @@
 				<div class="row">
 
 					<div class="col-sm-12 text-center">
-						<p class="copyright font-alt m-b-0">© 2017 SVA, All Rights Reserved.</p>
+						<p class="copyright font-alt m-b-0">© 2015 Vortex, All Rights Reserved.</p>
 					</div>
 
 				</div>
@@ -156,7 +154,6 @@
 					<li><a href="index.html" title="Home">Home</a></li>
 					<li><a href="about.html" title="About">About</a></li>
 					<li><a href="contact.html" title="Contact">Contact</a></li>
-					<li><a href="portfolio-single-2.html">gallery</a></li>
 				</ul>
 
 			</div>
@@ -171,8 +168,8 @@
 			<div class="hero-caption">
 				<div class="hero-text">
 
-					<h1 class="mh-line-size-1 font-alt m-b-50">Russ Savage</h1>
-					<h5 class="mh-line-size-4 font-alt">portrait photographer</h5>
+					<h1 class="mh-line-size-1 font-alt m-b-50">James Vortex</h1>
+					<h5 class="mh-line-size-4 font-alt">professional photographer</h5>
 
 				</div>
 			</div>
@@ -187,19 +184,19 @@
 			<div class="container">
 
 				<!-- FILTER -->
-				<!-- <div class="row">
+				<div class="row">
 
 					<div class="col-sm-12">
 						<ul id="filters" class="filters font-alt">
-							<li><a href="#" data-filter="*" class="current">All <sup><small>.355</small></sup></a></li>
+							<li><a href="#" data-filter="*"class="current">All <sup><small>.355</small></sup></a></li>
 							<li><a href="#" data-filter=".branding">Branding <sup><small>.78</small></sup></a></li>
-							<li><a href="#" data-filter=".design">Studio Portraits <sup><small>.123</small></sup></a></li>
-							<li><a href="#" data-filter=".photo">Location Portraits <sup><small>.144</small></sup></a></li>
+							<li><a href="#" data-filter=".design">Design <sup><small>.123</small></sup></a></li>
+							<li><a href="#" data-filter=".photo">Photo <sup><small>.144</small></sup></a></li>
 							<li><a href="#" data-filter=".web">Web <sup><small>.140</small></sup></a></li>
 						</ul>
 					</div>
 
-				</div> -->
+				</div>
 				<!-- /FILTER -->
 
 				<!-- WORKS GRID -->
@@ -215,9 +212,9 @@
 							<a href="portfolio-single-1.html">
 								<img src="assets/images/portfolio/img-1.jpg" alt="">
 								<div class="work-caption font-alt">
-									<h3 class="work-title">Location Portraits</h3>
+									<h3 class="work-title">The European languages</h3>
 									<div class="work-descr">
-										Natural Light
+										Branding
 									</div>
 								</div>
 							</a>
@@ -229,9 +226,9 @@
 							<a href="portfolio-single-1.html">
 								<img src="assets/images/portfolio/img-2.jpg" alt="">
 								<div class="work-caption font-alt">
-									<h3 class="work-title">Location Portraits</h3>
+									<h3 class="work-title">The languages only</h3>
 									<div class="work-descr">
-										Natural Light
+										Design
 									</div>
 								</div>
 							</a>
@@ -243,9 +240,9 @@
 							<a href="portfolio-single-1.html">
 								<img src="assets/images/portfolio/img-3.jpg" alt="">
 								<div class="work-caption font-alt">
-									<h3 class="work-title">Location Portraits</h3>
+									<h3 class="work-title">Everyone realizes</h3>
 									<div class="work-descr">
-										Natural Light
+										Design
 									</div>
 								</div>
 							</a>
@@ -257,9 +254,9 @@
 							<a href="portfolio-single-1.html">
 								<img src="assets/images/portfolio/img-4.jpg" alt="">
 								<div class="work-caption font-alt">
-									<h3 class="work-title">Studio Portraits</h3>
+									<h3 class="work-title">Corporate Identity</h3>
 									<div class="work-descr">
-										Off Camera Strobe
+										Design
 									</div>
 								</div>
 							</a>
@@ -271,9 +268,9 @@
 							<a href="portfolio-single-1.html">
 								<img src="assets/images/portfolio/img-5.jpg" alt="">
 								<div class="work-caption font-alt">
-									<h3 class="work-title">Studio Portraits</h3>
+									<h3 class="work-title">Cambridge friend</h3>
 									<div class="work-descr">
-										Off Camera Strobe
+										Design
 									</div>
 								</div>
 							</a>
@@ -281,7 +278,7 @@
 						<!-- /PORTFOLIO ITEM -->
 
 						<!-- PORTFOLIO ITEM -->
-						<!-- <div class="work-item wide-tall branding photo web">
+						<div class="work-item wide-tall branding photo web">
 							<a href="portfolio-single-1.html">
 								<img src="assets/images/portfolio/img-6.jpg" alt="">
 								<div class="work-caption font-alt">
@@ -291,7 +288,7 @@
 									</div>
 								</div>
 							</a>
-						</div> -->
+						</div>
 						<!-- /PORTFOLIO ITEM -->
 
 						<!-- PORTFOLIO ITEM -->
@@ -299,9 +296,9 @@
 							<a href="portfolio-single-1.html">
 								<img src="assets/images/portfolio/img-7.jpg" alt="">
 								<div class="work-caption font-alt">
-									<h3 class="work-title">Location Portraits</h3>
+									<h3 class="work-title">A collection of textile samples</h3>
 									<div class="work-descr">
-										Natural Light
+										Design / Photo / Web
 									</div>
 								</div>
 							</a>
@@ -309,7 +306,7 @@
 						<!-- /PORTFOLIO ITEM -->
 
 						<!-- PORTFOLIO ITEM -->
-						<!-- <div class="work-item branding photo">
+						<div class="work-item branding photo">
 							<a href="portfolio-single-1.html">
 								<img src="assets/images/portfolio/img-8.jpg" alt="">
 								<div class="work-caption font-alt">
@@ -319,11 +316,11 @@
 									</div>
 								</div>
 							</a>
-						</div> -->
+						</div>
 						<!-- /PORTFOLIO ITEM -->
 
 						<!-- PORTFOLIO ITEM -->
-						<!-- <div class="work-item branding photo">
+						<div class="work-item branding photo">
 							<a href="portfolio-single-1.html">
 								<img src="assets/images/portfolio/img-9.jpg" alt="">
 								<div class="work-caption font-alt">
@@ -333,11 +330,11 @@
 									</div>
 								</div>
 							</a>
-						</div> -->
+						</div>
 						<!-- /PORTFOLIO ITEM -->
 
 						<!-- PORTFOLIO ITEM -->
-						<!-- <div class="work-item wide design web">
+						<div class="work-item wide design web">
 							<a href="portfolio-single-1.html">
 								<img src="assets/images/portfolio/img-10.jpg" alt="">
 								<div class="work-caption font-alt">
@@ -347,7 +344,7 @@
 									</div>
 								</div>
 							</a>
-						</div> -->
+						</div>
 						<!-- /PORTFOLIO ITEM -->
 
 					</div>
@@ -359,7 +356,7 @@
 				<div class="row m-t-70 text-center wow fadeInUp">
 					<div class="col-sm-12">
 
-						<button id="show-more" class="btn btn-block btn-lg btn-g show-more">Gallery</button>
+						<button href="#" id="show-more" class="btn btn-block btn-lg btn-g show-more">More works</button>
 
 					</div>
 				</div>
@@ -395,7 +392,7 @@
 
 					<div class="col-sm-12">
 
-						<p class="copyright text-center m-b-0">© 2017 <a href="#">SVA</a>, All Rights Reserved.</p>
+						<p class="copyright text-center m-b-0">© 2015 <a href="#">Vortex</a>, All Rights Reserved.</p>
 
 					</div>
 
