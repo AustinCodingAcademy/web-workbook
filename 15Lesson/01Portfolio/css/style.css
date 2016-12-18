@@ -88,6 +88,46 @@ main p {
     padding-bottom: 3%;
 }
 
+.portfolio a:hover {
+      opacity:.9;
+      color:#444;
+
+}
+
+.portfolio a {
+      display:none;
+      background-color:#e8274d;
+      text-decoration:none;
+      color:#fff;
+      padding:3%;
+
+}
+
+
+.tileleft, .tileright, .tilemid {
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #333;
+    color: #fff;
+    transition: all 0.2s ease-out;
+}
+
+.tileleft:hover, .tileright:hover, .tilemid:hover {
+    background-blend-mode: normal;
+    transition: all 0.2s ease-out;
+}
+
+.tileleft:hover a, .tileright:hover a, .tilemid:hover a {
+      display:inline-block;
+      margin-left:1%;
+      margin-top:1%;
+}
+
+
+.tileleft:hover h4, .tileright:hover h4, .tilemid:hover h4,.tileleft:hover p, .tileright:hover p, .tilemid:hover p {
+    display: none;
+}
+
 .tileright {
     background-color: #e8274d;
     margin-bottom: 30px;
@@ -108,6 +148,11 @@ main p {
     width: 96%;
 }
 
+.tilemid h4 {
+      font-size:2em;
+      line-height:1em;
+}
+
 .middlecol {
     padding-left: 0;
     padding-right: 0;
@@ -118,9 +163,34 @@ main p {
     margin-top: 10px;
 }
 
+#slider:hover h4, #slider:hover p {
+      display:inline-block;
+
+}
+
+#slider:hover p {
+      margin-left:7%;
+}
+
+.carousel-inner p {
+      font-size: 1.4em;
+      line-height:1.5em;
+      width:85%;
+      color:#444;
+      text-align:left;
+}
+
+.carousel-inner h4 {
+      text-align:left;
+      width:85%;
+      padding-left:8%;
+      color:#444;
+      padding-top:15%;
+}
+
 #creatives {
     background-image: url(../img/creatives_narrow.png);
-    height: 200px;
+    height: 250px;
     background-size: cover;
     background-position: center;
     background-blend-mode: multiply;
@@ -130,7 +200,7 @@ main p {
 }
 
 #creatives:hover {
-    height: 300px;
+    height: 340px;
     background-blend-mode: normal;
     transition: all 0.2s ease-out;
 }
@@ -139,8 +209,50 @@ main p {
     display: none;
 }
 
-#designproofs {
-    height: 300px;
+#rareable {
+    background-image: url(../img/rareable.jpg);
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: #333;
+    color: #fff;
+    transition: all 0.2s ease-out;
+}
+
+#rareable:hover {
+    height: 140px;
+    background-blend-mode: normal;
+    transition: all 0.2s ease-out;
+}
+
+#rareable:hover h4 {
+    display: none;
+}
+
+.endblock {
+      height:30px;
+}
+
+#inspiration{
+    background-image: url(../img/inspirationsite.png);
+    height: 210px;
+    background-size: cover;
+    background-position: top;
+    background-blend-mode: multiply;
+    background-color: #333;
+    color: #fff;
+    transition: all 0.2s ease-out;
+}
+
+#inspiration:hover {
+    height: 240px;
+    background-blend-mode: normal;
+    transition: all 0.2s ease-out;
+}
+
+#inspiration:hover h4 {
+    display: none;
 }
 
 #winery {
@@ -160,8 +272,37 @@ main p {
     transition: all 0.2s ease-out;
 }
 
-#winery:hover h4 {
+#winery:hover h4 , #winery:hover p{
     display: none;
+}
+
+#winery p {
+      font-size:1.2em;
+      line-height:1.2em;
+      padding-top:0;
+}
+
+#winery h4 {
+      padding-top:40%;
+}
+
+#winery a {
+      display:none;
+      background-color:#e8274d;
+      text-decoration:none;
+      color:#fff;
+      padding:3%;
+
+}
+
+#winery a:hover {
+      color:#444;
+}
+
+#winery:hover a {
+      display:inline-block;
+      margin-left:1%;
+      margin-top:1%;
 }
 
 #overboard {
@@ -200,14 +341,39 @@ main p {
     transition: all 0.2s ease-out;
 }
 
+#bodyslam a {
+      display:none;
+      background-color:#e8274d;
+      text-decoration:none;
+      color:#fff;
+      padding:3%;
+
+}
+
+
 #bodyslam:hover {
     height: 200px;
     background-blend-mode: normal;
     transition: all 0.2s ease-out;
 }
 
-#bodyslam:hover h4 {
+#bodyslam:hover h4, #bodyslam:hover p {
     display: none;
+}
+
+#bodyslam:hover a {
+      display:inline-block;
+      margin-left:1%;
+      margin-top:1%;
+}
+
+#bodyslam h4 {
+      padding-bottom:0;
+}
+#bodyslam p {
+      font-size:1em;
+      line-height:1.2em;
+      padding-top:0;
 }
 
 #skateshop {
@@ -229,6 +395,12 @@ main p {
 
 #skateshop:hover h4 {
     display: none;
+}
+
+#skateshop p {
+      font-size:1.2em;
+      line-height:1.2em;
+      padding-top:0;
 }
 
 #yellowsite {
@@ -253,7 +425,7 @@ main p {
 }
 
 footer {
-    background-color: #e8274d;
+    background-color: #333;
     color: #fff;
     height: 100px;
     text-align: center;
