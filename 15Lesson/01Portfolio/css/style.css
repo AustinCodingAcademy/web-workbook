@@ -1,6 +1,4 @@
 body {
-  margin: 0 auto;
-  padding: 0 auto;
   width: 100%;
   text-align: center;
 }
@@ -21,7 +19,7 @@ nav.navbar.navbar-inverse {
   position: relative;
 }
 
-.hero {
+#hero {
   height: 725px;
   background-image: url(../img/hero-img.png);
   background-position: center;
@@ -29,20 +27,32 @@ nav.navbar.navbar-inverse {
   background-size: cover;
   background-blend-mode: multiply;
   background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .navbar-brand {
+  color: black;
 }
 
 h1 {
   margin: 0;
-  font-size: 2em;
+  font-size: 4em;
   color: white;
-  text-align: justify;
+  margin-right: 50px;
+  text-shadow: 10px black;
+}
+
+.bottom-logo {
+  margin-bottom: 50px;
 }
 
 .about-text-one p {
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
   text-align: left;
 }
 
@@ -51,16 +61,103 @@ h2 {
   line-height: 50px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Nunito Sans', sans-serif;
 }
 
 h3 {
   text-align: center;
-  margin: 0;
-  margin-top: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 p {
   font-family: 'Roboto', sans-serif;
+}
+
+.portfolio-block-one {
+  height: 250px;
+  background-image: url(../img/portfolio-1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.portfolio-block-two {
+  height: 250px;
+  background-image: url(../img/portfolio-2.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.portfolio-block-three {
+  height: 250px;
+  background-image: url(../img/portfolio-3.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.portfolio-block-four {
+  height: 250px;
+  background-image: url(../img/portfolio-4.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+span.icon-bar {
+  color: black;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label, input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button {
+  background-color: #237f52;
+  color: white;
+}
+
+
+/* Tablet Size CSS */
+
+@media (max-width: 1200px) {
+  #hero {
+    height: 550px;
+  }
+}
+
+
+/* Phone Size CSS */
+
+@media (max-width: 767px) {
+  #hero {
+    height: 400px;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-right: 20px;
+  }
+
+  .bottom-logo {
+    margin-bottom: 20px;
+  }
 }
