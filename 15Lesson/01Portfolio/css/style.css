@@ -8,14 +8,48 @@ nav{
   background-color: white;
   text-align: center;
   font-weight: 100;
-  height: 52px;
-  position: fixed;
+  height: 45px;
+  /*position: fixed;*/
+}
+
+#lg-nav{
+  background-color: transparent;
+  margin-top: 250px;
+  opacity: .3;
+  margin-left: -13px;
+  -webkit-transform: rotate(-90deg);
+   transform: rotate(-90deg);
+   color: black;
+}
+
+#lg-nav:hover{
+  opacity: 1;
+}
+
+#content-rotate{
+  -webkit-transform: rotate(90deg);
+   transform: rotate(90deg);
+   margin-left: 50px;
+   padding-left: 160px;
+   margin-right: -180px;
+}
+
+.dropbtn-lg {
+    background-color: white;
+    color: #444444;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 11px;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .dropbtn {
     background-color: white;
     color: #F1F5F8;
-    padding: 13px;
+    padding: 10px;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -31,7 +65,7 @@ nav{
 }
 
 .dropdown-content {
-    padding: 5px 17px;
+    padding: 5px 14px;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -92,6 +126,7 @@ header{
   border-right: 1px solid white;
   padding-left: 25px;
   line-height: 35px;
+  margin-top: 15px;
 }
 
 #text-roll{
@@ -242,6 +277,15 @@ header{
   width: 80%;
 }
 
+/*.arch-img-contain{
+  overflow: hidden;
+}*/
+
+.archImgs:hover{
+  transform: scale(1.4);
+  border-radius: 150px;
+}
+
 .archButton{
   background: white;
   padding: 10px 30px;
@@ -262,7 +306,7 @@ header{
 
 /*----------------slideshow------*/
 
-#sxsw{
+#sxsw-title{
   font-weight: 100;
   letter-spacing: 8px;
   width: 100%;
@@ -281,4 +325,67 @@ header{
   height:13px;
   width:13px;
   padding:0;
+}
+
+/*------------FORM AND MAP ---------*/
+
+.map-container{
+  margin-top: 18px;
+}
+
+iframe{
+  width: 100%;
+  height: 350px;
+}
+
+#requestTitle{
+  text-align: center;
+  font-family: 'Roboto';
+  font-weight: bold;
+  padding: 5px 0 10px 0;
+  letter-spacing: 6px;
+  border-bottom: 1px solid #F15A24;
+  margin: 0 50px;
+}
+
+form{
+  padding: 25px;
+  background-color: #F1F5F8;
+  display: flex;
+  flex-direction: column;
+  opacity: .75;
+  /*margin: 10px;*/
+  /*width: 30%;*/
+  border: 2px solid #F15A24;
+}
+
+#form-button{
+  border: none;
+  padding: 10px;
+  background-color:#F15A24;
+  /*background-color: #edcb23;*/
+  margin-top: 5px;
+  font-size: 12px;
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 10px;
+  height: 30px;
+}
+
+#form-button:hover{
+  background-color:#92e837;
+}
+
+
+input{
+  font-size: 15px;
+  border: none;
+  margin-top: -20px;
+}
+
+label{
+  margin-top: 29px;
+  font-size: 13px;
+  letter-spacing: 10px;
+  font-weight: bolder;
 }

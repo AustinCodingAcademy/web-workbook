@@ -3,28 +3,47 @@
 <head>
   <title>Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="css/navbar-fixed-side.css" rel="stylesheet" />
   <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
   <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT|Roboto:100,400" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
 
-  <nav class="col-xs-12 hidden-sm hidden-md hidden-lg navbar-fixed-top">
+  <nav id="lg-nav" class="hidden-xs col-sm-1 col-md-1 col-lg-1  navbar-fixed-top">
     <div class="dropdown">
-    <button class="dropbtn">navigation</button>
-    <div class="dropdown-content">
-      <a href="#">passion</a>
-      <a href="#">architecture</a>
-      <a href="#">photography</a>
-      <a href="#">coding</a>
-      <a href="#">cv</a>
-      <a href="#">contact</a>
+      <button class="dropbtn-lg">navigation</button>
+      <div id="content-rotate">
+      <div class="dropdown-content">
+        <a href="index.html#passion">passion</a>
+        <a href="index.html#arch">architecture</a>
+        <a href="index.html#sxsw">photography</a>
+        <a href="index.html#coding">coding</a>
+        <a href="index.html#cv">cv</a>
+        <a href="index.html#contact">contact</a>
+      </div>
     </div>
     </div>
   </nav>
+
+  <nav class="col-xs-12 hidden-sm hidden-md hidden-lg navbar-fixed-top">
+    <div class="dropdown">
+      <button class="dropbtn">navigation</button>
+      <div class="dropdown-content">
+        <a href="index.html#passion">passion</a>
+        <a href="index.html#arch">architecture</a>
+        <a href="index.html#sxsw">photography</a>
+        <a href="index.html#coding">coding</a>
+        <a href="index.html#cv">cv</a>
+        <a href="index.html#contact">contact</a>
+      </div>
+    </div>
+  </nav>
+
   <header class="col-xs-12">
     <div id="title">
       <p><span id="myname">CRUZ MENDEZ</span> </p>
@@ -50,11 +69,13 @@
     </div>
   </header>
 
-  <section id="passion" class="col-xs-12 slideInDown">
-    <h2 class="bounce infinite">PASSION</h2>
+<!-- ------------------statement -->
+  <section id="passion" class="col-xs-12">
+    <h2>PASSION</h2>
     <p>With formal training in architecture, and love for all design disciplines, I have lead a career exposed to multiple facets of the design process in many fields.</p>
   </section>
 
+<!-- ------------ARCH BANNER -->
   <section id="arch" class="col-xs-12 parallax">
   </section>
   <section id="arch2" class="col-xs-12 parallax"><h2>ARCHITECTURE</h2>
@@ -66,7 +87,7 @@
 
   <div class="archGrid">
     <div class="col-xs-12 col-sm-12 col-md-4 archDiv">
-      <div>
+      <div class="arch-img-contain">
         <img src="./img/bldg.png" class="archImgs"/>
       </div>
       <div class="buttonText">
@@ -91,11 +112,11 @@
     </div>
   </div>
 
-<!-- -------slideshow -->
+<!-- --------------slideshow -->
 
-  <p id="sxsw">SXSW Photography</p>
+  <p id="sxsw-title">SXSW Photography</p>
 
-  <div class="w3-content w3-display-container" style="max-width:100%">
+  <div id="sxsw" class="w3-content w3-display-container" style="max-width:100%">
     <img class="mySlides" src="./img/slide1.jpg" style="width:100%">
     <img class="mySlides" src="./img/slide2.jpg" style="width:100%">
     <img class="mySlides" src="./img/slide3.jpg" style="width:100%">
@@ -140,6 +161,51 @@ function showDivs(n) {
   dots[slideIndex-1].className += " w3-white";
 }
 </script>
+
+
+<!-- -------------CV timeline------- -->
+
+
+
+
+<!-- -------------MAP AND RESUME---------- -->
+  <div class="map-container">
+    <div class="col-xs-12 col-sm-6">
+      <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=78704&key=AIzaSyCqRAX9Dmapxuou86ACWeAJMcpd5VIQx3Y" allowfullscreen></iframe>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSc4jSqDi9lENjDjOz8-KAHtl8U2GsV_-1OXILZWzbZo88N4Sg/formResponse"
+      method="POST" target="_self" onsubmit="">
+        <h1 id="requestTitle" class="fadeInLeft infinite">Request my Resume</h1>
+        <label for="entry_486684889">Name </label>
+        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+        <input type="text" name="entry.486684889" value="" dir="auto"
+        aria-label="Name  " aria-required="true" required title="">
+        <label for="entry_1675060494">Company </label>
+        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+        <input type="text" name="entry.1675060494" value="" dir="auto"
+        aria-label="Company  " aria-required="true" required title="">
+        <label for="entry_1931277490">Email </label>
+        <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+        <input type="text" name="entry.1931277490" value="" dir="auto"
+        aria-label="Email  " aria-required="true" required title="">
+        <input type="hidden" name="draftResponse" value="[,,&quot;-8322107263868316537&quot;]
+      ">
+        <input type="hidden" name="pageHistory" value="0">
+        <input type="hidden" name="fbzx" value="-8322107263868316537">
+        <label for="emailReceipt" style="display:inline;"></label>
+        <input id="form-button"type="submit" name="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+
+<!-- ---------REQUIRED CODE-------- -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
