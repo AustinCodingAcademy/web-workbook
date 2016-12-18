@@ -4,4 +4,8 @@ $( document ).ready(function() {
           top: $('#nav').offset().top
         }
     });
+
+    $('.carousel').carousel({
+		interval: 3000
+	})
 });
