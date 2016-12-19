@@ -1,13 +1,18 @@
-/* KEY STYLES & RESETS */
+/*  K E Y   S T Y L E S  &  R E S E T S */
 @import url('https://fonts.googleapis.com/css?family=Lato:400,900');
 
 body, html {
   font-family: 'Lato', sans-serif;
   color: #444e5e !important;
+  background-color: #eee;
+  text-align: center;
 }
 
+a, a:hover, a:active, a:visited {
+  text-decoration: none;
+}
 
-/* NAVIGATION */
+/*  N A V I G A T I O N  */
 
 .navbar {
   background-color: #fff;
@@ -24,7 +29,7 @@ body, html {
   width: 100%;
   margin-left: 0;
   margin: auto !important;
-  padding: 80px 0;
+  padding: 70px 0 100px;
 }
 
 .navbar-toggle {
@@ -41,10 +46,62 @@ body, html {
   display: inline-block;
   margin-left: 25px;
   margin-right: 25px;
+  padding-bottom: 50px;
 }
 
-/* NAV TYPOGRAPHY */
+/*  N A V   T Y P O G R A P H Y  */
+
+.navbar-brand h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 6px;
+  color: #444e5e;
+}
 
 .navbar li a {
   text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #444e5e !important;
+}
+
+.navbar li a:hover, .navbar li a:active  {
+  color: #46a79d !important;
+}
+
+/*  A B O U T / H E R O   S E C T I O N  */
+
+.hero > .container {
+  background-color: #cceae5;
+}
+
+.about-photo {
+  padding: 40px;
+  border-radius: 50%;
+}
+
+.about-copy {
+  padding: 60px 40px;
+}
+
+.about-copy-copy {
+  margin-bottom: 60px;
+}
+
+
+/*  B U T T O N S   */
+
+.btn-white {
+  background-color: #fff;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #46a79d !important;
+}
+
+/*  G E N E R A L   T Y P O G R A P H Y  */
+
+p {
+  margin-bottom: 20px;
 }
