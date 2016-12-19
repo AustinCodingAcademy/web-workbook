@@ -1,4 +1,4 @@
-.row.header {
+.header {
   width: 100%;
   height: 100px;
   margin: 0 auto;
@@ -13,15 +13,14 @@
 
 .columns {
   display: inline-block;
-  margin-left: 5px;
-  margin-right: 5px;
 }
 
 .image1, .image2, .image3, .image4{
   background-repeat: no-repeat;
   background-size: cover;
-  width: 275px;
+  width: 100%;
   height: 300px;
+  margin-left: 13px;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -49,6 +48,11 @@
   padding: 5px 10px;
   font-size: 20px;
   font-weight: bold;
+}
+
+.items {
+  width: 290px;
+  box-sizing: border-box;
 }
 
 .item {
@@ -79,4 +83,10 @@
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
+}
+
+.button:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #000;
 }
