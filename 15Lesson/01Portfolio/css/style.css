@@ -174,6 +174,10 @@ a {
   color: #237f52;
 }
 
+a:hover {
+  color: black;
+}
+
 /* Tablet Size CSS */
 
 @media (max-width: 1200px) {
@@ -182,9 +186,34 @@ a {
   }
 }
 
+@media (max-device-width: 1200px) {
+  #hero {
+    height: 550px;
+  }
+}
+
 /* Phone Size CSS */
 
 @media (max-width: 767px) {
+  #hero {
+    height: 400px;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-right: 20px;
+  }
+
+  .bottom-logo {
+    margin-bottom: 20px;
+  }
+
+  .visible-xs {
+    padding: 0;
+  }
+}
+
+@media (max-device-width: 767px) {
   #hero {
     height: 400px;
   }
