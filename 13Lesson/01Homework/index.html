@@ -3,8 +3,35 @@
 <head>
   <title></title>
   <link rel="stylesheet" href="css/style.css">
+
+<script type="text/javascript"src="js/jquery-3.1.1.js"></script>
+<script src="js/script.js"></script>
+
+<script type="text/javascript">
+
+  $(document).ready(function(){
+
+   setInterval(function(){
+   $('#carousel ul').animate({marginLeft:'-600px'},2000,function(){
+
+  $(this).find("li last") .after($(this).find("li:first"));
+  $(this).css({marginLeft:0});
+
+   });
+},4000);
+   });
+   </script>
+
 </head>
 <body>
-
+  <div id="main">
+    <div id="carousel">
+  <ul>
+    <li><img src="img/chris.jpg" alt=""></li>
+    <li><img src="img/chris.jpg" alt=""></li>
+    <li><img src="img/chris.jpg" alt=""></li>
+  </ul>
+    </div>
+  </div>
 </body>
 </html>
