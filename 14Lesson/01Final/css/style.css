@@ -29,6 +29,14 @@ body {
     text-align: center;
 }
 
+input {
+    margin-right: 6%;
+}
+
+#contactMe>div>div>div.modal-body>form>label:nth-child(7) {
+    width: 100%;
+}
+
 .jumbotron {
     background: none;
 }
@@ -65,7 +73,7 @@ body {
 }
 
 .item {
-    height: 500px;
+    margin-bottom: 50px;
     background-position: center;
 }
 
@@ -124,9 +132,6 @@ form label {
         margin-right: 35px;
         left: -47px;
     }
-    /*.item {
-        right: -5.5%;
-    }*/
 }
 
 @media (max-width:991px) {
@@ -136,11 +141,11 @@ form label {
     }
     .blurb {
         position: relative;
-        left: -50px;
+        left: -33%;
     }
     .blurb2 {
         position: relative;
-        left: -5px;
+        left: -4%;
     }
 }
 
@@ -153,16 +158,32 @@ form label {
     .fa {
         font-size: 3em;
     }
+    .navbar-brand>i {
+        font-size: 1.5em;
+    }
 }
 
-@media (max-width:767px) {
+
+/*@media (max-width:767px) {
     .mapp>iframe {
         margin: 0 auto;
         width: 99%;
     }
-}
+}*/
 
 @media (max-width:651px) {
+    .thelynx {
+        right: -15%;
+    }
+}
+
+@media (max-width:600px) {
+    .thelynx {
+        right: -14%;
+    }
+}
+
+@media (min-width:400px)and (max-width:599px) {
     .thelynx {
         right: -10%;
     }
@@ -173,3 +194,31 @@ form label {
     position: relative;
     bottom: -4%;
 }*/
+
+input[type=text] {
+    width: 40px;
+    height: 25px;
+    -webkit-transition: width 0.8s ease-in-out;
+    transition: width 0.8s ease-in-out;
+    transition-delay: 0.3s;
+}
+
+input[type=text]:focus {
+    width: 45%;
+}
+
+textarea[type=textarea] {
+    width: 10%;
+    height: 25px;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+    transition-delay: 0.3s;
+    resize: none;
+}
+
+textarea[type=textarea]:focus {
+    width: 99%;
+    height: 100px;
+    resize: none;
+}
