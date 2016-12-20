@@ -27,7 +27,6 @@ body {
     justify-content: center;
     margin-bottom: 200px;
     text-align: center;
-    border: 2px dashed black;
 }
 
 .jumbotron {
@@ -71,7 +70,7 @@ body {
 }
 
 #contact h2 {
-    margin: 20px 0;
+    margin: 20px auto;
     text-align: center;
 }
 
@@ -113,18 +112,64 @@ form label {
     }
 }
 
-@media (max-width:1200px) {
+@media (min-width:992px) and (max-width:1199px) {
     .thelynx {
-        width: 45%;
-    }
-    .contact-link i {
-        margin: 0 auto;
+        width: 95%;
+        left: -17px;
     }
     .contact-link p {
         position: relative;
         width: 128px;
         text-align: center;
-        margin-right: 30px;
+        margin-right: 35px;
         left: -47px;
     }
+    /*.item {
+        right: -5.5%;
+    }*/
 }
+
+@media (max-width:991px) {
+    .thelynx {
+        position: relative;
+        right: -18%;
+    }
+    .blurb {
+        position: relative;
+        left: -50px;
+    }
+    .blurb2 {
+        position: relative;
+        left: -5px;
+    }
+}
+
+@media (max-width:767px) {
+    .thelynx {
+        /*right: -116px;*/
+        right: -17%;
+        margin: 0 auto;
+    }
+    .fa {
+        font-size: 3em;
+    }
+}
+
+@media (max-width:767px) {
+    .mapp>iframe {
+        margin: 0 auto;
+        width: 99%;
+    }
+}
+
+@media (max-width:651px) {
+    .thelynx {
+        right: -10%;
+    }
+}
+
+
+/*.mapp {
+    position: relative;
+    bottom: -4%;
+}*/
