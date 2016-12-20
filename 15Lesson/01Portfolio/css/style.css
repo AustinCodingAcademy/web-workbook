@@ -1,27 +1,38 @@
 body {
-  height: auto;
-  background-image: url(./vids/Disk2_Animation.mov);
+  height: 890px;
+  width: 100%;
+  /*background-image: url(./vids/Disk2_Animation.mov);*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   cursor: url(http://www.rw-designer.com/cursor-view/95686.png);
 }
 
-header {
+.navbar-brand {
+  color: white;
+}
+
+.navbar-default {
+  margin-bottom: 0px;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: #141414;
+}
+
+.container-fluid {
+  background-color: #141414;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top-center;
+}
+
+.textwrap {
   width: 100%;
-  height: 950px;
-  background: url(http://www.nickrigby.com/wp-content/uploads/2016/09/designing-website-perth.png) no-repeat fixed;
-  background-size: cover;
-  background-position: left;
-
+  height: 100px;;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-body {
-  margin: 0px;
-  padding: 0px;
-}
-
-
 
 #social img {
   height: 100px;
@@ -29,27 +40,21 @@ body {
 }
 
 .social {
-  display: flex;
-  width: 100px;
-  height: 100px;;
-  margin-right: 75px;
-  
+  width: auto;
+  height: auto;
+  margin-right: 20px;
+  margin-bottom: 20px
 }
 
 #content {
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
+  align-content: flex-end;
   width: 100%;
-  position: absolute;
   top: 0px;
   height: 100%;
-}
-
-#overlay {
-  display: flex;
-  justify-content: flex-start;
-  /*margin-right: 400px;*/
 }
 
 #overlay img {
@@ -63,53 +68,15 @@ body {
 }
 
 #bg {
-  height: 842px;
-  }
-
-nav {
-  display: block;
-  background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTq1z9Sxpapkk3otPmqsRnB0hAT0th0bR1M_I9DimJc6Cs9jVp-);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#menu a:hover {
-
-  transform: scale(1.2);
-  transition: ease .5s;
-}
-
-#menu a {
-  color: #fefbf7;
-  font-family: 'Amatic SC', cursive;
-  /*text-shadow: -1px -1px 1px #000;*/
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  /*transition: box-shadow: 2s;*/
-  /*overflow: hidden;*/
-}
-
-.navbar-toggle {
-  color: white;
-}
-
-.navbar {
-  margin-bottom: 0px;
-}
-
-.icon-bar {
-  color: black;
-}
-
-li {
-  font-family: 'Audiowide', cursive;
-}
-
-a {
-  color: black;
-
+  height: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
 }
 
 /* Toggle Styles */
@@ -120,15 +87,10 @@ a {
    -moz-transition: all 0.6s ease;
    -o-transition: all 0.6s ease;
    transition: all 0.6s ease;
-
-
-
 }
 
 #wrapper.toggled {
    padding-left: 200px;
-
-
 }
 
 #sidebar-wrapper {
@@ -151,8 +113,6 @@ a {
    -o-transition: all 0.5s ease;
    transition: all 0.5s ease;
    box-shadow: inset 0 0 20px 2px #282a2d;
-
-
 }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -181,8 +141,6 @@ a {
    padding: 0;
    list-style: none;
 
-
-
 }
 
 .sidebar-nav li {
@@ -192,7 +150,7 @@ a {
 
 .sidebar-nav li a {
    display: block;
-   text-decoration: none
+   text-decoration: none;
    color: #141414;
    font-size: 22px;
    margin-top: 30px;
