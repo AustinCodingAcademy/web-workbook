@@ -5,8 +5,8 @@ html, body {
 
 .my-alpha01 {
   width: 100vw;
-  height: 0;
-  padding-top: 50%;
+  height: 100vh;
+  padding-top: 55%;
   background-image: url(../img/flag1.png);
   background-repeat: no-repeat;
   background-size: 100vw, 75vh;
@@ -16,38 +16,51 @@ html, body {
 
 }
 
+
 .my-alpha02 {
-  position: relative;
+  background-color: transparent;
+  z-index: 5;
   height: 100vh;
+  padding-top: 100%;
+  margin-top: -100%;
+}
+
+/*not used
+.my-alpha02 {
+  height: 80vh;
   width: 30vw;
   background-color: #B9A279;
-  margin-top: -50%;
-  /*margin-left: 100%;*/
+  margin-top: -45%;
+  /*margin-left: 100%;
   padding-top: 17%;
   transform: translateX(333%);
   transition: all 3s;
 
-}
+}*/
+
 
 .my-alpha03 {
-  position: relative;
-  background-color: black;
-  width: 3vw;
-  height: 60vh;
+  background-color: green;
+  width: 75vw;
+  height: 100vh;
   position: absolute;
-  /*margin-left: -2%;*/
+  margin-top: -333%;
+  margin-left: 320%;
   transform: translateX(-50%);
-  transition: all 3s;
-  /*border-radius: 10%;*/
+  transition: all 2s;
+  z-index: 10;
+
 }
 
-.my-alpha03:hover .my-alpha02 {
-  transform: translateX(-300%);
+.my-alpha02:hover .my-alpha03{
+  transform: translateX(-100%);
 }
+
+/*
 
 .my-alpha03:hover .my-alpha03 {
   transform: translateX(-30px);
-}
+}*/
 
 .my-beta01 {
   width: 100vw;
@@ -63,4 +76,27 @@ html, body {
   margin: 1% auto 0 10%;
   height: 100%;
   width: 95vw;
+}
+
+.my-beta03 {
+  font-family: 'Cinzel', serif;
+  font-size: 3em;
+}
+
+.beta-bt-left {
+  position: absolute;
+  bottom: 40%;
+  left: -5%;
+}
+
+.beta-bt-right {
+  position: absolute;
+  bottom: 40%;
+  right: 5%;
+}
+
+.my-beta-4 {
+  max-height: 130vh;
+  max-width: 170vh;
+
 }
