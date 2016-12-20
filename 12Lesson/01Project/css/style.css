@@ -1,6 +1,3 @@
-body, html{
-  height: 100%;
-}
 h1{
   font-size: 18pt;
   line-height: 25pt;
@@ -8,28 +5,44 @@ h1{
   font-family: serif;
 }
 .container{
-  width: 1210px;
+  width: 100%;
+  max-width: 1210px;
   margin: auto;
+  height: 380px;
+  min-width: 320px;
 }
 .yellow{
   background-color: #F4ED48;
 }
 .big-box{
-  height: 46vh;
+  height: 500px;
   box-sizing: border-box;
   border: #fff solid 12px;
   padding: 60px;
 }
 .small-box{
-  height: 23vh;
+  height: 250px;
   box-sizing: border-box;
   border: #fff solid 12px;
   padding: 0px;
   overflow: hidden;
 }
+@media (max-width: 992px) {
+  .small-box {
+    height: 275px;
+  }
+}
+.img-responsive{
+  position: center center;
+  width: 100%;
+  animation-play-state: paused;
+}
+.img-responsive:hover{
+  animation-play-state: running;
+}
 .grey{
   background-color: #EEEEEE;
 }
-.cover{
-
+.space{
+ padding: 10px 10px 10px 10px; 
 }
