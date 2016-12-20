@@ -54,10 +54,7 @@ header {
   background-blend-mode: multiply;
   /*background-color: #FAC805;*/
 }
-.logo {
-  width:50%;
-  padding-top:7px;
-}
+
 body {
   text-align: center;
 }
@@ -74,4 +71,57 @@ body {
   background: rgba(255, 255, 255, .75);
 
   text-align: center;
+}
+/*Desktops & Laptops*/
+@media (max-width: 1823px) and (min-width: 1024px) {
+div.navbar-header {
+  width:350px;
+}
+  .logo {
+    width:45%;
+    padding-top:7px;
+    float:left;
+  }
+}
+/*tablets*/
+@media (max-width: 1023px) and (min-width:768px) {
+
+  .logo {
+    width:120px;
+    padding-top: 12px;
+    float: left;
+}
+}
+
+/*phones*/
+@media (max-width: 767px) {
+  #contact {
+
+    margin: -150px 0;
+    padding: 5px;
+
+    background: rgba(255, 255, 255, .75);
+
+    text-align: center;
+  }
+
+
+  img.logo {
+    max-width:120px;
+      padding-top: 12px;
+      padding-left:10px;
+    float: left !important;
+  }
+  form {
+    padding-top: 20px;
+  }
+  .label {
+    font-size:16px;
+margin: 20px 0;
+
+  }
+  .submit {
+    margin-bottom:20px;
+  }
+
 }
