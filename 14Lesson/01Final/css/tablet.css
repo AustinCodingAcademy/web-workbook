@@ -3,6 +3,8 @@ html, body {
   height: 205vh;
 }
 
+@media only screen and (max-width: 960px){
+
 .my-alpha01 {
   width: 100vw;
   height: 0;
@@ -11,68 +13,67 @@ html, body {
   background-repeat: no-repeat;
   background-size: 100vw, 75vh;
   background-position: 35% 105%;
-
 }
 
-.my-alpha03 {
-  background-image:url(../img/longhorn3.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 30vh;
-  /*position: absolute;
-  margin-top: -250%;
-  margin-left: 320%;
-  transform: translateX(-50%);
-  transition: all 2s;
-  z-index: 10;*/
-
-}
-
-/*.my-alpha02:hover .my-alpha03{
-  transform: translateX(-175%);
-}*/
-
-.my-alpha04 {
-  height: 30vh;
+.my-alpha02 {
+  height: 35vh;
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5));
+    rgba(0, 0, 0, 0.5)),
+    url(../img/longhorn3.png);
+  /*background-repeat: no-repeat;*/
+  background-size:auto;
+  background-position: 0 55%;
+
 }
 
-/*.my-alpha06 {
-  display: flex;
-  justify-content:
-}*/
-
-.my-alpha05 > h3 {
+h3 {
   color: white;
+  font-family: 'Trirong', serif;
+  overflow-x: visible;
+  margin-left: 60%;
 }
 
-.my-alpha07 {
-  margin-top: 0;
-  overflow-x: hidden;
+.my-alpha07 > img {
+  height: 22vh;
+  width: 1vw;
+}
+
+.my-alpha08 {
+    height: 20vh;
+}
+
+h3 {
+  color: white;
+  font-family: 'Trirong', serif;
+  overflow-x: visible;
+  font-size: 190%;
+  margin-left: 6.5%;
+  margin-bottom: 0;
 }
 
 .my-alpha08 {
   list-style-type: none;
-
+  margin-top: 1%;
 }
 
 .my-alpha08 > li {
-  margin-top: 5%;
+  margin-top: 1.15%;
+  z-index: 19;
 }
 
 .my-alpha08 > li > a {
   color: white;
+  font-family: 'Trirong', serif;
+  z-index: 100;
+  font-size: 110%;
 }
 
 .my-beta01 {
+  margin-top: 35vh;
   width: 100vw;
   height: 53vw;
   background-color: black;
-  /*padding-top: 50%;*/
-  /*padding: 0 8%;*/
 }
 
 .my-beta02 {
@@ -84,7 +85,5 @@ html, body {
   width: 95vw;
 }
 
-/*.beta02special {
-  height: 100%;
-  margin: 6% 10% auto auto;
-}*/
+/*End of max-960px media query*/
+}
