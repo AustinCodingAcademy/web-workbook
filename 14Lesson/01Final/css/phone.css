@@ -3,7 +3,11 @@ html, body {
   height: 205vh;
 }
 
-@media only screen and (max-width: 480px){}
+body {
+  background-image: url(../img/burlap1.png);
+}
+
+@media only screen and (max-width: 480px){
 
 .my-alpha01 {
   width: 100vw;
@@ -14,15 +18,60 @@ html, body {
   background-size: cover;
   background-size: 100vw, 75vh;
   background-position: 35% 105%;
-  margin-bottom: -1%;
+  margin-bottom: 26vh;
 }
 
+.my-alpha02 {
+  height: 26vh;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),
+    url(../img/longhorn3.png);
+  background-size:auto;
+  /*background-repeat: no-repeat;*/
+  background-position: 0 55%;
+}
+
+.my-alpha07 > img {
+  height: 18vh;
+  width: 1vw;
+}
+
+h3 {
+  color: white;
+  font-family: 'Trirong', serif;
+  overflow-x: visible;
+  font-size: 130%;
+  margin-left: 6.5%;
+  margin-bottom: 0;
+}
+
+.my-alpha08 {
+  /*height: 20vh;*/
+  list-style-type: none;
+  margin-top: .3%;
+}
+
+.my-alpha08 > li {
+  margin-top: .5%;
+  /*z-index: 19;*/
+}
+
+.my-alpha08 > li > a {
+  color: white;
+  font-family: 'Trirong', serif;
+  /*z-index: 100;*/
+  font-size: 50%;
+}
+
+
 .beta01 {
+  /*margin-top: 100%;*/
+  z-index: -10;
   width: 100vw;
   height: 0;
   padding-top: 50%;
   background-color: black;
-
 }
 
 .my-beta01 {
@@ -38,4 +87,54 @@ html, body {
   margin: 6% 2% 0 auto;
   height: 40vw;
   width: 95vw;
+}
+
+.my-gamma03 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.my-gamma04 {
+  height: 40vh;
+  width: 95vh;
+  background-color: tan;
+  color: black;
+  /*font-size: 110%;*/
+  text-align: left;
+  border-radius: 5px;
+  margin: 2vh auto;
+  padding: 1vw;
+}
+
+.my-gamma05 {
+  height: 16%;
+  width: 13%;
+  margin: 1% auto -8% 83%;
+}
+
+.my-gamma06 {
+  height: 16%;
+  width: 15%;
+  margin: 1% auto -8% 83%;
+
+}
+
+.my-gamma07 {
+  height: 16%;
+  width: 12%;
+  margin: 3% auto -8% 84%;
+}
+
+.my-gamma04 > h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 170%;
+  margin-top: 2%;
+}
+
+.my-gamma04 > p {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/*End of max-480px media query*/
 }

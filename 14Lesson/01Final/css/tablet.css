@@ -3,7 +3,11 @@ html, body {
   height: 205vh;
 }
 
-@media only screen and (max-width: 960px){
+body {
+  background-image: url(../img/burlap1.png);
+}
+
+@media only screen and (min-width: 481px) and (max-width:960px){
 
 .my-alpha01 {
   width: 100vw;
@@ -13,9 +17,11 @@ html, body {
   background-repeat: no-repeat;
   background-size: 100vw, 75vh;
   background-position: 35% 105%;
+  margin-bottom: 33vh;
 }
 
 .my-alpha02 {
+  margin-top: -1vh;
   height: 35vh;
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.5),
@@ -70,7 +76,7 @@ h3 {
 }
 
 .my-beta01 {
-  margin-top: 35vh;
+  /*margin-top: 35vh;*/
   width: 100vw;
   height: 53vw;
   background-color: black;
@@ -83,6 +89,53 @@ h3 {
   margin: .5% auto auto 3%;
   height: 52vw;
   width: 95vw;
+}
+
+.my-gamma03 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.my-gamma04 {
+  height: 40vh;
+  width: 95vh;
+  background-color: tan;
+  color: black;
+  /*font-size: 110%;*/
+  text-align: left;
+  border-radius: 5px;
+  margin: 2vh auto;
+  padding: 1vw;
+}
+
+.my-gamma05 {
+  height: 16%;
+  width: 13%;
+  margin: 1% auto -8% 83%;
+}
+
+.my-gamma06 {
+  height: 16%;
+  width: 15%;
+  margin: 1% auto -8% 83%;
+
+}
+
+.my-gamma07 {
+  height: 16%;
+  width: 12%;
+  margin: 3% auto -8% 84%;
+}
+
+.my-gamma04 > h4 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 170%;
+  margin-top: 2%;
+}
+
+.my-gamma04 > p {
+  font-family: 'Ubuntu', sans-serif;
 }
 
 /*End of max-960px media query*/
