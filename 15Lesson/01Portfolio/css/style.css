@@ -1,5 +1,5 @@
 body {
-  height: 890px;
+  height: 100%;
   width: 100%;
   /*background-image: url(./vids/Disk2_Animation.mov);*/
   background-position: center;
@@ -16,7 +16,7 @@ body {
   margin-bottom: 0px;
   border: none;
   border-bottom: 1px solid white;
-  background-color: #141414;
+  /*background-color: #141414;*/
 }
 
 .container-fluid {
@@ -28,37 +28,61 @@ body {
 
 .textwrap {
   width: 100%;
-  height: 100px;;
+  height: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  position: fixed;
+
 }
 
-#social img {
-  height: 100px;
-  width: 100%;
+h1 {
+  color: #f66;
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-size: 80px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+p {
+  font-size: 30px;
+  font-family: 'Dancing Script', cursive;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+.social img {
+  height: 30px;
+  width: 30px;
 }
 
 .social {
   width: auto;
   height: auto;
-  margin-right: 20px;
-  margin-bottom: 20px
+  /*border: 3px solid white;*/
+  padding: 10px;
+  opacity: (.5):
 }
 
 #content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  align-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   width: 100%;
-  top: 0px;
-  height: 100%;
+  height: 100vh;
 }
 
 #overlay img {
   background: transparent;
+  position:fixed;
+  right:0;
+  bottom:0;
+  margin:0;
+  padding:0;
+  width:100px;
 }
 
 #overlay.currently-loading img {
@@ -77,211 +101,5 @@ body {
   width: auto;
   height: auto;
   z-index: -100;
-}
-
-/* Toggle Styles */
-
-#wrapper {
-   padding-left: 0;
-   -webkit-transition: all 0.6s ease;
-   -moz-transition: all 0.6s ease;
-   -o-transition: all 0.6s ease;
-   transition: all 0.6s ease;
-}
-
-#wrapper.toggled {
-   padding-left: 200px;
-}
-
-#sidebar-wrapper {
-   z-index: 1000;
-   position: fixed;
-   left: 250px;
-   width: 0;
-   height: 100%;
-   margin-left: -250px;
-   overflow-y: auto;
-   background-color: #141414; !Important;
-   background-image: url(http://cdn.paper4pc.com/images/wood-grain-wallpaper-3.jpg);
-
-   background-position: top;
-   background-size: cover;
-   background-repeat: no-repeat;
-   /*filter: brightness(70%);*/
-   -webkit-transition: all.5s ease;
-   -moz-transition: all 0.5s ease;
-   -o-transition: all 0.5s ease;
-   transition: all 0.5s ease;
-   box-shadow: inset 0 0 20px 2px #282a2d;
-}
-
-#wrapper.toggled #sidebar-wrapper {
-   width: 0;
-}
-
-#page-content-wrapper {
-   width: 100%;
-   position: absolute;
-   padding: 0px;
-}
-
-#wrapper.toggled #page-content-wrapper {
-   position: absolute;
-   margin-left:-250px;
-}
-
-/* Sidebar Styles */
-
-.sidebar-nav {
-   position: absolute;
-   top: 0;
-   right:15px;
-   width: 200px;
-   margin: 0;
-   padding: 0;
-   list-style: none;
-
-}
-
-.sidebar-nav li {
-   text-indent: 20px;
-   line-height: 40px;
-}
-
-.sidebar-nav li a {
-   display: block;
-   text-decoration: none;
-   color: #141414;
-   font-size: 22px;
-   margin-top: 30px;
-   font-size: 25px;
-   font-family: Diediedie;
-   /*letter-spacing: 5px;*/
-}
-
-@font-face {
-  font-family: 'myfont';
-  src: url('myfont.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-       url('myfont.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}
-
-.sidebar-nav li a:hover {
-   text-decoration: none;
-   color: #fff;
-   background: transparent;
-
-}
-
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-   text-decoration: none;
-}
-
-.sidebar-nav > .sidebar-brand {
-   height: 65px;
-   font-size: 18px;
-   line-height: 60px;
-}
-
-.sidebar-nav > .sidebar-brand a {
-   color: #999999;
-}
-
-@media(min-width:768px) {
-   #wrapper {
-       padding-left: 175px;
-   }
-
-   #wrapper.toggled {
-       padding-left: 0;
-   }
-
-   #sidebar-wrapper {
-       width: 200px;
-   }
-
-   #wrapper.toggled #sidebar-wrapper {
-       width: 40px;
-
-
-   }
-
-#wrapper.toggled span {
-       visibility:hidden;
-
-   }
- #wrapper.toggled   i {
-   float:right;
-}
-
-   #page-content-wrapper {
-       padding: 0px;
-       position: relative;
-   }
-
-   #wrapper.toggled #page-content-wrapper {
-       position: relative;
-       margin-right: 0;
-   }
-}
-
-
-@media(max-width:414px) {
-
-#wrapper.toggled #page-content-wrapper {
-   position: absolute;
-   margin-right:60px;
-}
-
-#wrapper.toggled {
-   padding-right: 60px;
-}
-
-#wrapper {
-       padding-left: 20px;
-   }
-
-   #wrapper.toggled {
-       padding-left: 0;
-   }
-
-   #sidebar-wrapper {
-       width: 50px;
-   }
-
-   #wrapper.toggled #sidebar-wrapper {
-       width: 140px;
-
-
-   }
-
-   #wrapper.toggled span {
-       visibility:visible;
-       position:relative;
-       left:70px;
-       bottom:13px;
-
-   }
-
-#wrapper span {
-       visibility:hidden;
-
-   }
- #wrapper.toggled   i {
-float:right;
-}
-
- #wrapper   i {
-float:right;
-}
-
-   #page-content-wrapper {
-       padding: 5px;
-       position: relative;
-   }
-
-   #wrapper.toggled #page-content-wrapper {
-       position: relative;
-       margin-right: 0;
-   }
+  filter: opacity(.9);
 }
