@@ -1,0 +1,242 @@
+#thebody {
+  background-color: #f0f0f0;
+}
+
+/**HEADER**/
+
+header {
+  margin: 0;
+  height: 650px;
+  color: white;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.headercopy {
+  text-align: center;
+  margin-top: 150px;
+}
+
+h1 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 25px;
+}
+
+/***NAVBAR***/
+
+.sidenav {
+    /*height: 100%;*/
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/***PARALLAX**/
+
+.parallax {
+    background-image: url("../img/hero.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sydney {
+  background-image: url("../img/sydney.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#street {
+  background-image: url("../img/herothree.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#opera {
+  background-image: url("../img/opera.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/******About******/
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+  margin-bottom: 200px;
+  background-color: #f0f0f0;
+}
+
+#cardtop {
+  height: 420px;
+  width: 320px;
+  margin-bottom: 100px;
+  /*padding: 0;*/
+}
+
+
+.photo {
+  border-radius: 100px;
+}
+
+/*.star {
+  font-size: 20px;
+}*/
+
+@media (min-width: 768px){
+  #about {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  /*#popoutone {
+  padding-left: 350px;
+  }*/
+
+  #cardtop {
+    margin-bottom: auto;
+  }
+}
+
+
+/*****EDUCATION*******/
+
+#edu {
+  height: auto;
+  min-height: 500px;
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;*/
+  /*margin: 0 0 20px 0;*/
+
+  /*margin-bottom: 200px;*/
+  background-color: #f0f0f0;
+}
+
+.icon-block {
+  color: black;
+}
+
+.edulist {
+  /*width: 600px;
+  font-size: 18px;
+  color: black;*/
+  padding-top: 110px;
+}
+
+#popoutone {
+padding-top: 90px;
+padding-left: 0;
+padding-right: 0;
+}
+
+/*******Work******/
+
+#mycarousel {
+  height: auto;
+  width: 900px;
+}
+
+#work {
+  margin: 0 0 20px 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+  padding-top: 150px;
+  background-color: #f0f0f0;
+}
+
+/******CONTACT*****/
+
+#contactme {
+  height: 100%;
+  min-height: 900px;
+}
+
+.contact {
+  /*display: flex;
+  justify-content: center;*/
+  margin-bottom: 150px;
+  padding-top: 150px;
+  background-color: #f0f0f0;
+}
+
+#map {
+  padding-top: 150px;
+}
+
+/****FOOTER*****/
+
+#footerone {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+#myfooter {
+  background-color: transparent;
+}
+
+.footer-copyright {
+  text-align: center;
+  background-color: transparent;
+}
+
+.icon {
+  height: 40px;
+}

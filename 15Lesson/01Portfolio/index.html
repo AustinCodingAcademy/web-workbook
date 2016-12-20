@@ -1,10 +1,174 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Tatiana Watson</title>
+  <link rel="icon" href="./img/me.jpg">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Julius+Sans+One" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
-<body>
+<body id="thebody">
 
+<header id="home" class="parallax col-lg-12">
+  <div class="headercopy">
+    <h1>Tatiana Watson</h1>
+    <h2>Web Developer</h2>
+  </div>
+</header>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#edu">Experience</a>
+      <a href="#work">Work</a>
+      <a href="#contactme">Contact</a>
+    </div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+  </div>
+</nav>
+
+<!--ABOUT-->
+
+<section id="about" class="col-lg-12">
+  <div id="cardtop" class="card small">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="./img/keyboard.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">About Me<i class="material-icons right"></i></span>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">about me<i class="material-icons right">close</i></span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <div class="biopic">
+    <img  class="photo" src="./img/me.jpg">
+  </div>
+</section>
+
+<!--PARALLAX-->
+
+<section id="sydney" class="parallax col-lg-12">
+</section>
+
+<!--EDU-->
+
+<section id="edu" class="col-lg-12">
+  <div class="edulist">
+      <div class="col-xs-offset-1 col-xs-11 col-sm-offset-1 col-sm-11 col-md-offset-1 col-md-11 col-lg-offset-1 col-lg-4">
+        <div class="icon-block">
+          <h2 class="brown-text"><i class="material-icons">settings</i></h2>
+          <p class="star">HTML5:  &#9733;&#9733;&#9733;&#9733;&#9734;
+          </p>
+          <p class="star">CSS3:  &#9733;&#9733;&#9733;&#9733;&#9734;
+          </p>
+          <p class="star"> Bootstrap:  &#9733;&#9733;&#9733;&#9733;&#9734;</p>
+          <p class="star">Wordpress:&#9733;&#9733;&#9733;&#9733;&#9734; </p>
+        </div>
+        </div>
+      </div>
+  <div id="popoutone" class="col-xs-12 col-sm-12 col-md-12 col-lg-7">
+    <ul class="middle collapsible popout col-sm-offset-1 col-sm-6" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">done</i>Second</div>
+        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">code</i>Third</div>
+        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+      </li>
+    </ul>
+  </div>
+  </section>
+
+<!--PARALLAX-->
+
+  <section id="street" class="parallax col-lg-12">
+  </section>
+
+<!--WORK-->
+
+  <section id="work" class="imgslide col-lg-12">
+    <div id="mycarousel" class="carousel slide">
+      <ol class="carousel-indicators">
+          <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#mycarousel" data-slide-to="1"></li>
+          <li data-target="#mycarousel" data-slide-to="2"></li>
+            <li data-target="#mycarousel" data-slide-to="3"></li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="./img/exone.PNG" alt="Work One" class="img-responsive">
+        </div>
+        <div class="item">
+          <img src="./img/extwo.PNG" alt="Work Two" class="img-responsive">
+        </div>
+        <div class="item">
+          <img src="./img/exthree.PNG" alt="Work Three" class="img-responsive">
+        </div>
+        <div class="item">
+          <img src="./img/exfour.PNG" alt="Work Three" class="img-responsive">
+        </div>
+      </div>
+
+      <a class="carousel-control left" href="#mycarousel" data-slide="prev">
+        <span class="icon-prev"></span>
+      </a>
+
+      <a class="carousel-control right" href="#mycarousel" data-slide="next">
+        <span class="icon-next"></span>
+      </a>
+  </section>
+
+<!--PARALLAX-->
+
+  <section id="opera" class="parallax col-lg-12 image-responsive">
+  </section>
+
+<!--CONTACT-->
+
+  <section id="contactme" class="contact col-lg-12">
+
+  <iframe id="map" class="col-xs-12 col-sm-12 col-md-6 col-lg-6" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424145.87465268327!2d150.6517670048666!3d-33.84740264738501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sSydney+NSW%2C+Australia!5e0!3m2!1sen!2sus!4v1482097358208" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    <iframe class="col-xs-12 col-sm-12 col-md-6 col-lg-6" src="https://docs.google.com/forms/d/e/1FAIpQLSehMycTldcJ4mHD9YJz2xzPLk2cSUUj4SxV1mQy9mKG6ayQcw/viewform?embedded=true" width="760" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+  </section>
+
+<!--FOOTER-->
+
+  <footer class="page-footer navbar-inverse navbar-fixed-bottom" id="myfooter">
+    <div id="footerone" class="container-fluid">
+      <div class="links">
+        <a class="grey-text text-lighten-3" href="https://github.com/tatianagwatson"><img class ="icon"src="./img/git.png"></a>
+        <a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/tatiana-watson-bb68a8123"><img class ="icon"src="./img/in.png"></a>
+        <a class="grey-text text-lighten-3" href="https://twitter.com/Dr_Watson00"><img class ="icon"src="./img/twitter.png"></a>
+        <a class="grey-text text-lighten-3" href="mailto:tatianagwatson@gmail.com"><img class ="icon"src="./img/email.png"></a>
+        </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2016 Dr.Watson
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="css/style.js"></script>
 </body>
 </html>
