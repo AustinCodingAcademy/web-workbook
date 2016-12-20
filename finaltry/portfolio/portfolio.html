@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css" media="screen" title="no title">
     <link rel="stylesheet" href="../css/acafinal.css" media="screen" title="no title">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   </head>
 <body>
   <section>
-  <h1 class="porth1">Portfolio</h1>
-
-
+    <h1 class="porth1">Portfolio</h1>
   </section>
+
+  <h3>This is a map to the ocean</h3>
+    <div id="map"></div>
+    <!-- Replace the value of the key parameter with your own API key. -->
+
+
 
   <section class=nav>
     <nav class="navbar navbar-default navbar-fixed-bottom">
@@ -48,6 +52,27 @@
   </section>
 
 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADS_Hm7p0ET1_XE4DSv0REJRH87OipRvI&callback=initMap">
+  </script>
+  <script>
+  function initMap() {
+    var uluru = {lat: 0, lng: 0};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 4,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+  </script>
+
 </body>
 
-<html>
+</html>

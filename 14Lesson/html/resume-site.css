@@ -1,0 +1,175 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+
+.main-header {
+	display:flex;
+	justify-content: flex-end;
+	font-size: 60px;
+	color: gray;
+	background-color: rgb(128,0,128);
+	padding: 30px;
+	margin:0;
+}
+
+.list {
+	display: flex;
+	text-align: right;
+	display: block;
+	text-decoration: none;
+	font-size: 25px;
+	padding: 25px;
+	background-color: rgb(112,128,144);
+	color:black;
+	border: 3px solid black;
+	margin:0;
+
+}
+
+.button {
+	background-color: rgb(128,0,128);
+	font-size: 20px;
+	padding: 10px;
+	color: black;
+}
+
+.intro {
+	display: flex;
+	background-color: rgb(112,128,144);
+	padding: 50px;
+	margin:0;
+
+}
+
+.intro-text {
+	text-align: center;
+	min-width: 300px;
+}
+
+.my-pic {
+	height:150px;
+	border-radius: 50%;
+	position: static;
+
+
+}
+
+.sub-header {
+	display: flex;
+	color:	#585858;
+	justify-content: center;
+	font-size: 40px;
+	padding: 20px;
+	background-color: #CC66FF;
+	margin: 0;
+
+}
+
+.about-me {
+	margin: 0;
+	padding: 50px;
+	background-color: rgb(191,209,233);
+	text-align: center;
+}
+
+.portfolio {
+	padding: 50px;
+	background-color: rgb(191,209,233);
+	text-align: center;
+	margin: 0;
+}
+
+.portfolio__items {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 900px;
+	position: relative;
+}
+
+.portfolio__item {
+	flex: 0 0 300px;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	height: 350px;
+	padding: 20px;
+	border: 1px solid black;
+	margin: auto;
+}
+
+.contact {
+	padding: 50px;
+	background-color: rgb(191,209,233);
+	text-align: center;
+	margin: auto;
+
+}
+
+.enlarge {
+	flex: 0 0 300px;
+	flex-flow: row wrap;
+	height: 300px;
+	padding: 20px;
+	border: 1px solid black;
+	margin: 20px ;
+}
+
+.big-version {
+	display: none;
+	background: purple;
+}
+
+.enlarge:hover .big-version {
+	display: block;
+	height: 600px;
+	width: 600px;
+	flex: 1 1 600px;
+	flex-flow: row wrap;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+@media (max-width: 750px) {
+	.portfolio__items {
+		width:340px;
+	}
+}
+
+@media (max-width: 750px){
+
+	.intro {
+		flex-flow: column;
+		align-items: center;
+		}
+
+	}
+
+@media (max-width: 750px) {
+	.enlarge:hover{
+		max-width: 450px;
+		max-height: 400px;
+		position: absolute;
+	}
+}
+
+@media (max-width: 600px){
+	.list {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+
+	}
+
+	.list .button {
+		margin-bottom: 10px;
+	}
+}
