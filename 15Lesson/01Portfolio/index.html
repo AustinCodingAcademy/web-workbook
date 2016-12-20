@@ -10,26 +10,73 @@
   <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT|Roboto:100,400" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
 </head>
 <body>
-
-  <nav id="lg-nav" class="hidden-xs col-sm-1 col-md-1 col-lg-1  navbar-fixed-top">
+<!-- ----------------LARGE NAV BAR------------- -->
+  <nav id="lg-nav1" class="hidden-xs col-sm-1 col-md-1 col-lg-1  navbar-fixed-top">
     <div class="dropdown">
-      <button class="dropbtn-lg">navigation</button>
+      <button class="dropbtn-lg">pa</button>
       <div id="content-rotate">
-      <div class="dropdown-content">
-        <a href="index.html#passion">passion</a>
-        <a href="index.html#arch">architecture</a>
-        <a href="index.html#sxsw">photography</a>
-        <a href="index.html#coding">coding</a>
-        <a href="index.html#cv">cv</a>
-        <a href="index.html#contact">contact</a>
+        <div class="dropdown-content">
+          <a href="index.html#passion">passion</a>
+        </div>
       </div>
     </div>
+  </nav>
+  <nav id="lg-nav2" class="hidden-xs col-sm-1 col-md-1 col-lg-1  navbar-fixed-top">
+    <div class="dropdown">
+      <button class="dropbtn-lg">ar</button>
+      <div id="content-rotate">
+        <div class="dropdown-content">
+          <a href="index.html#arch">architecture</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav id="lg-nav3" class="hidden-xs col-sm-1 col-md-1 col-lg-1  navbar-fixed-top">
+    <div class="dropdown">
+      <button class="dropbtn-lg">ph</button>
+      <div id="content-rotate">
+        <div class="dropdown-content">
+          <a href="index.html#sxsw">photography</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav id="lg-nav4" class="hidden-xs col-sm-1 col-md-1 col-lg-1  navbar-fixed-top">
+    <div class="dropdown">
+      <button class="dropbtn-lg"><></button>
+      <div id="content-rotate">
+        <div class="dropdown-content">
+          <a href="index.html#coding">coding</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav id="lg-nav5" class="hidden-xs col-sm-1 col-md-1 col-lg-1  navbar-fixed-top">
+    <div class="dropdown">
+      <button class="dropbtn-lg">cv</button>
+      <div id="content-rotate">
+        <div class="dropdown-content">
+          <a href="index.html#map_wrapper">cv</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav id="lg-nav6" class="hidden-xs col-sm-1 col-md-1 col-lg-1  navbar-fixed-top">
+    <div class="dropdown">
+      <button class="dropbtn-lg">co</button>
+      <div id="content-rotate">
+        <div class="dropdown-content">
+          <a href="index.html#contact">contact</a>
+        </div>
+      </div>
     </div>
   </nav>
 
+<!-- -----------PHONE NAV BAR------------ -->
   <nav class="col-xs-12 hidden-sm hidden-md hidden-lg navbar-fixed-top">
     <div class="dropdown">
       <button class="dropbtn">navigation</button>
@@ -171,7 +218,100 @@ function showDivs(n) {
 <!-- -------------MAP AND RESUME---------- -->
   <div class="map-container">
     <div class="col-xs-12 col-sm-6">
-      <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=78704&key=AIzaSyCqRAX9Dmapxuou86ACWeAJMcpd5VIQx3Y" allowfullscreen></iframe>
+      <div id="map_wrapper">
+          <div id="map_canvas" class="mapping"></div>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script>
+      jQuery(function($) {
+      // Asynchronously Load the map API
+      var script = document.createElement('script');
+      script.src = "//maps.googleapis.com/maps/api/js?sensor=false&callback=initialize";
+      document.body.appendChild(script);
+    });
+
+    function initialize() {
+      var map;
+      var bounds = new google.maps.LatLngBounds();
+      var mapOptions = {
+          mapTypeId: 'roadmap'
+      };
+
+      // Display a map on the page
+      map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+      map.setTilt(45);
+
+      // Multiple Markers
+      var markers = [
+          ['studioSIX5, Austin', 30.259838, -97.753135],
+          ['BAi, Hyde Park', 30.304942, -97.731829],
+          ['University of Texas, Austin', 30.287249, -97.733990],
+          ['South by Southwest, Headquarters', 30.269929, -97.753902],
+          ['K&J Woodworks, Kyle', 29.945784, -97.793541]
+      ];
+
+      // Info Window Content
+      var infoWindowContent = [
+          ['<div class="info_content">' +
+          '<h3>studioSIX5</h3>' +
+          '<p>Senior living interior designer</p>' +
+          '<p style="font-weight:bolder">August 2015 - to - Present</p>' +
+          '</div>'],
+          ['<div class="info_content">' +
+          '<h3>BAi</h3>' +
+          '<p>Audiovisual consultant</p>' +
+          '<p style="font-weight:bolder">August 2014 - to - August 2015</p>' +
+          '</div>'],
+          ['<div class="info_content">' +
+          '<h3>University of Texas</h3>' +
+          '<p>School of Architecture</p>' +
+          '<p style="font-weight:bolder">August 2009 - to - May 2013</p>' +
+          '</div>'],
+          ['<div class="info_content">' +
+          '<h3>South by Southwest</h3>' +
+          '<p>Music, Film, Interactive, and Sponsor photography</p>' +
+          '<p style="font-weight:bolder">March 2014 - to - March 2016</p>' +
+          '</div>'],
+          ['<div class="info_content">' +
+          '<h3>K&J Woodworks</h3>' +
+          '<p>Custom commercial cabinetry design and state-of-the-art fabrication</p>' +
+          '<p style="font-weight:bolder">August 2004 - to - August 2014</p>' +
+          '</div>'],
+      ];
+
+      // Display multiple markers on a map
+      var infoWindow = new google.maps.InfoWindow(), marker, i;
+
+      // Loop through our array of markers & place each one on the map
+      for( i = 0; i < markers.length; i++ ) {
+          var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+          bounds.extend(position);
+          marker = new google.maps.Marker({
+              position: position,
+              map: map,
+              title: markers[i][0]
+          });
+
+          // Allow each marker to have an info window
+          google.maps.event.addListener(marker, 'click', (function(marker, i) {
+              return function() {
+                  infoWindow.setContent(infoWindowContent[i][0]);
+                  infoWindow.open(map, marker);
+              }
+          })(marker, i));
+
+          // Automatically center the map fitting all markers on the screen
+          map.fitBounds(bounds);
+      }
+
+      // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
+      var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
+          this.setZoom(10);
+          google.maps.event.removeListener(boundsListener);
+      });
+
+    }
+      </script>
     </div>
     <div class="col-xs-12 col-sm-6">
       <form action="https://docs.google.com/forms/d/e/1FAIpQLSc4jSqDi9lENjDjOz8-KAHtl8U2GsV_-1OXILZWzbZo88N4Sg/formResponse"
@@ -200,13 +340,24 @@ function showDivs(n) {
   </div>
 
 
+<!-- ------------FOOTER------------ -->
 
+<footer id="contact" class="col-xs-12 parallax">
+  <div class="footer-title">
+    <h4 class="animated slideInDown">Let's<span id="color-collab"> collaborate</span></h4>
+    <p id="email">
+      CruzAlexMendez | gmail
+    </p>
+
+  </div>
+</footer>
 
 
 
 
 <!-- ---------REQUIRED CODE-------- -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
