@@ -38,58 +38,41 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="navbar-form navbar-left">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
-            </li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">INSPIRATION</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">CONTACT</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
 
     <section>
-       <div class="container">
-         <div class="row">
-           <div class="about col-xs-12 col-md-6">
-             <p> ABOUT SECTION </p>
-           </div>
+      <div class="parallax-window" data-parallax="scroll" data-image-src="img/background.png"></div>
+    </section>
+
+    <section>
+     <div class="container">
+       <div class="row">
+         <div class="welcomecontainer col-xs-12 col-md-6">
+           <h1> Welcome to</h1>
+           <img class="heroimage" src="img/logo.png" alt=""/>
+           <p>Indulge in your love of paper and the hand-written word. Let's work together to create something that captures the spirit of your special day. </p>
          </div>
        </div>
+      </div>
+    </section>
+
+     <section>
+       <div class="parallax-window" data-parallax="scroll" data-image-src="img/background2.jpg"></div>
      </section>
 
     <section>
        <div class="container">
          <div class="row">
-           <div class="carousel col-xs-12 col-md-6">
+           <div class="imagecontainer col-xs-12 col-md-6">
+             <h3>A picture is worth a thousand words</h3>
+           <div class="carousel col-xs-12 col-md-12">
 
              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                <!-- Indicators -->
@@ -103,13 +86,17 @@
                <div class="carousel-inner" role="listbox">
                  <div class="item active">
                    <div class="carousel-textbox">
-                     <h1 class="center-text">
-                       Where dreams come to life
-                     </h1>
+                     <img class="carousel-img" src="img/carousel1.jpeg" alt=""/>
+                   </div>
 
-                     <p class="center-text">
-                       content holder
-                     </p>
+                   <div class="carousel-caption">
+
+                   </div>
+                 </div>
+
+                 <div class="item">
+                   <div class="carousel-textbox">
+                     <img class="carousel-img" src="img/carousel2.jpeg" alt=""/>
                    </div>
                    <div class="carousel-caption">
 
@@ -118,28 +105,7 @@
 
                  <div class="item">
                    <div class="carousel-textbox">
-                     <h1 class="center-text">
-                       A picture is worth a thousand words
-                     </h1>
-
-                     <p class="center-text">
-                      content holder
-                     </p>
-                   </div>
-                   <div class="carousel-caption">
-
-                   </div>
-                 </div>
-
-                 <div class="item">
-                   <div class="carousel-textbox">
-                     <h1 class="center-text">
-                       Let your imagination run wild
-                     </h1>
-
-                     <p class="center-text">
-                       content holder
-                     </p>
+                     <img class="carousel-img" src="img/carousel3.jpg" alt=""/>
                    </div>
                    <div class="carousel-caption">
 
@@ -190,22 +156,26 @@
      </section>
 
      <!-- Footer -->
-     <form action="https://docs.google.com/forms/d/e/1FAIpQLSd9ecp49jO7sGCZGPby4LgB9zlBYItczDq_84C9YfOZSlIRLQ/formResponse"
-method="POST" target="_self" onsubmit="">
-      <label for="entry_1130811985">Email:</label>
-      <input type="text" name="entry.1130811985" value="" dir="auto"
-      aria-label="Email:  " title="">
-      <input type="hidden" name="draftResponse" value="[,,&quot;8396330816408915184&quot;]
-    ">
-      <input type="hidden" name="pageHistory" value="0">
-      <input type="hidden" name="fbzx" value="8396330816408915184">
-      <label for="emailReceipt" style="display:inline;"></label>
-      <input type="submit" name="submit" value="Submit">
-    </form>
-
+    <footer class="navbar-default navbar-fixed-bottom">
+      <div class="container-fluid">
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSd9ecp49jO7sGCZGPby4LgB9zlBYItczDq_84C9YfOZSlIRLQ/formResponse"
+   method="POST" target="_self" onsubmit="">
+         <label for="entry_1130811985">Enter email to learn more:</label>
+         <input type="text" name="entry.1130811985" value="" dir="auto"
+         aria-label="Email:  " title="">
+         <input type="hidden" name="draftResponse" value="[,,&quot;8396330816408915184&quot;]
+       ">
+         <input type="hidden" name="pageHistory" value="0">
+         <input type="hidden" name="fbzx" value="8396330816408915184">
+         <label for="emailReceipt" style="display:inline;"></label>
+         <input type="submit" name="submit" value="Submit">
+        </form>
+      </div>
+    </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/path/to/parallax.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
