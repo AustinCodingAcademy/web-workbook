@@ -5,44 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Dosis|Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Pacifico|Yellowtail" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="container-fluid col-xs-12 background-ocean">
-    <nav class="navbar navbar-light bg-faded">
-      <a class="navbar-brand brand brand-nav" href="#">Don't <br />Think.</a>
-      <div class="button-wrap">
-        <button  id ="navtog" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"></button>
-        <div class="collapse" id="exCollapsingNavbar">
-        <div class="bg-inverse text-muted p-1">
-          <ul>
-            <li>
-              <a class="nav-item nav-link active text-main" id="home" href="#">Portfolio <span class="sr-only">(current)</span></a>
-            </li>
-            <li>
-              <a class="nav-item nav-link text-main" href="#">About</a>
-            </li>
-            <li>
-              <a class="nav-item nav-link text-main" href="#">Pricing</a>
-            </li>
+    <div class="col-xs-12 filter"></div>
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand brand brand-nav" id="brand" href="#"><img src="./img/palmicon.png" /></a>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" id="burger" data-toggle="collapse" data-target="#myNavbar">
+          <span class="glyphicon glyphicon-menu-hamburger"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse links" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a class="link" href="#">About</a></li>
+            <li><a class="link" href="#">Portfolio</a></li>
+            <li><a class="link" href="#">Services</a></li>
+            <li><a class="link" href="#">Pricing</a></li>
           </ul>
         </div>
+      </nav>
+      <div class="container-fluid col-xs-12">
+        <section id="hero-text">
+          <h1>Don't Think</h1>
+          <h2>DESIGN</h2>
+          <h3>that's my job.</h3>
+        </section>
       </div>
-    </nav>
-    <!-- <nav class="navbar navbar-light bg-faded">
-      <div class="nav navbar-nav">
-        <a class="navbar-brand brand brand-nav" href="#">Don't <br />Think.</a>
-        <a class="nav-item nav-link active text-main" id="home" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link text-main" href="#">Pricing</a>
-        <a class="nav-item nav-link text-main" href="#">About</a>
+    </div>
+  </div>
+  <div class="col-xs-12 dropdown">
+    <button class="btn btn-primary dropdown-toggle col-xs-12" id="button-contact" type="button" data-toggle="dropdown">Get in touch!</button>
+    <ul class="dropdown-menu">
+      <li><h5>What's your...</h5>
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLScieSgPtQgXDPtMw85uyaaqhH9wJc8cUoeXz3NXKUb_3gqpeQ/formResponse"
+      method="POST" target="_self" onsubmit="">
+        <label for="entry_1649075025">...first name?</label>
+        <input type="text" name="entry.1649075025" value=""
+        dir="auto" aria-label="...first name?  " title=""><br />
+        <label for="entry_573836620">...last name?</label>
+        <input type="text" name="entry.573836620" value=""        dir="auto" aria-label="...last name?  " title=""><br />
+        <label for="entry_1981045057">...reason for getting touch?</label><br />
+        <textarea name="entry.1981045057"
+        rows="8" cols="0" dir="auto" aria-label="...reason for getting touch?  "></textarea><br />
+        <label for="entry_1375120961">What&apos;s your email?</label><br />
+        <input type="text" name="entry.1375120961"
+        value="" dir="auto" aria-label="What&apos;s your email?  " title="">
+        <input type="hidden" name="draftResponse" value="[,,&quot;-3770242574909785416&quot;]
+        ">
+        <input type="hidden" name="pageHistory" value="0">
+        <input type="hidden" name="fbzx" value="-3770242574909785416">
+        <label for="emailReceipt" style="display:inline;"></label>
+        <input type="submit" name="submit" value="Submit">
+      </form>
+      </li>
+    </ul>
+  </div>
+  <footer id="foot" class="col-xs-12">
+    <div class="col-xs-6 social">
+      <h4>Social</h4>
+      <ul>
+        <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i> Linkedin</a></li>
+      </ul>
+    </div>
+    <div class="col-xs-6 headshot">
+      <h4>Me</h4>
+      <div id="me">
       </div>
-    </nav> -->
-    <div class="container-fluid col-xs-12 background-palm"></div>
+    </div>
+
+  </footer>
 </body>
 </html>

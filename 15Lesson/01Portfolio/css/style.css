@@ -1,28 +1,15 @@
-.background-ocean {
-  background-image: url(../img/turksplane.jpg);
-  z-index: 1;
-  background-size: cover;
-  background-position: 50%;
-  position: absolute;
-  height: 100%;
-  padding: 0;
-  margin: 0;
+body {
+  font-size: 12px;
 }
 
-.background-palm {
-  background-image: url(../img/palmicon.png);
-  z-index: 2;
-  opacity: 0.6;
-  background-size: contain;
+.background-ocean {
+  background-image: url(../img/turksplane.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   position: relative;
   padding: 0;
-  margin: auto 10%;
-  margin-top: 50px;;
-  width: 80%;
-  min-width: 300px;
-  height: 80%;
+  margin: 0;
 }
 
 .navbar {
@@ -32,6 +19,7 @@
   border-radius: 0;
   height: 100px;
   width: 100%;
+  border: none;
 }
 
 .brand {
@@ -47,8 +35,13 @@
   padding: 8px;
 }
 
-.button-wrap {
-  width: 100px;
+.filter {
+  background-color: white;
+  height: 100%;
+  opacity: .25;
+  position: absolute;;
+  top: 0;
+  left: 0;
 }
 
 #navtog {
@@ -62,17 +55,122 @@ ul {
   text-align: right;
 }
 
-.nav-link {
+#brand img {
+  padding-top: 13px;
+  height: 75px;
+}
+
+.links {
+  margin-right: 10px;
   color: #EF7A36;
-  text-decoration: none;
-  padding: 10px;
-  padding-top: 20px;
+  float: right;
 }
 
-#home {
-  color: #D59A1F;
+#burger {
+  background-color: RGBA(190, 223, 248, 1.00);
+  padding: 21px;
+  margin: 19px;
+  margin-right: 39px;
 }
 
-.text-main {
+.nav li a {
   font-family: 'Dosis';
+  text-align: center;
+  margin-right: 20px;
+  font-size: 20px;
+  color: RGBA(239, 122, 54, 1.00);
+  background-color: RGBA(190, 223, 248, 1.00);
+}
+
+#hero-text {
+  text-align: center;
+}
+
+#hero-text h1 {
+  font-family: 'Pacifico';
+  font-size: 10rem;
+  line-height: 112px;
+  color: #EAE12E;
+  padding-top: 85%;
+  margin-bottom: 0px;
+}
+
+#hero-text h2 {
+  font-family: 'Dosis';
+  font-size: 2rem;
+  color: RGBA(215, 160, 44, 1.00);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#hero-text h3 {
+  font-family: 'Yellowtail';
+  font-size: 4rem;
+  color: RGBA(239, 122, 54, 1.00);
+  margin-top: 0px;
+  margin-bottom: 70px;
+}
+
+#button-contact {
+  margin: 0;
+  padding: 20px;;
+  background-color: #FFFCF4;
+  color: #1D4A71;
+  border: 0;
+  border-radius: 0;
+  font-family: 'Dosis';
+}
+
+#button-contact:hover {
+  color: #85AF4B;
+}
+
+.dropdown {
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu {
+  text-align: center;
+  width: 100%;
+  font-family: 'Dosis';
+}
+
+footer {
+  background-color: #EEC78E;
+  height: 200px;
+  text-align: center;
+  color: #1D4A71;
+  font-family: 'Dosis';
+  padding-top: 15px;
+}
+
+footer h4 {
+  font-size: 18px;
+}
+
+footer li {
+  text-align: center;
+}
+
+footer li a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#me {
+  background-image: url(../img/headshot.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  height: 115px;
+}
+
+.social ul {
+  padding-top: 23px;
+}
+
+.social li {
+  line-height: 22px;
 }
