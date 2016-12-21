@@ -9,6 +9,41 @@
   font-family: Armata;
 }
 
+.tophead {
+  background-image: url("../img/nameheader.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 300px;
+}
+
+.newsstyle {
+  margin-top: 12px;
+}
+
+@media (max-width: 1120px){
+  .tophead {
+    background-image: url("../img/nameheader.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 300px;
+  }
+
+  .newwstyle {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 767px){
+  .newsstyle {
+    margin: 0 0 0 2px;
+  }
+}
+
+
 .topbuttonswhere {
   text-align: center;
   display: flex;
@@ -27,16 +62,62 @@
   color: red;
 }
 
-.text {
-  height: auto;
+.cookie {
   text-align: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-content: flex-end;
+  align-items: center;
+  height: 300px;
 }
+
+.text {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  flex-direction: column;
+}
+
 
 .border{
   border: 1px solid red;
+}
 
+.midtextalign {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.picstyle {
+  height: 33%;
+  width: 33%;
+}
+
+.bottomtextsize {
+  font-size: 32px;
+  font-family: Armata;
+}
+
+.parallax {
+  background-image: url("../img/code.jpg");
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parallax2{
+  background-image: url("../img/woosah.jpg");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
 }
