@@ -1,51 +1,66 @@
-.gimme {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.test {
-  height: inherit;
-  width: inherit;
+.navbar-default {
+  background: none;
+  border: none;
 }
 
-.height {
+.navbar-default .navbar-nav > li > a {
+  color: #222;
+  background-color: inherit;
+}
+
+.yellow {
+  height: 500px;
+  background-color: #f4ed48;
+  color: inherit;
+}
+
+.carousel {
+  height: 500px;
+}
+
+.carousel-textbox {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 50px;
 }
 
-.back {
-  background-color: yellow;
-  height: 600px;
-  width: auto;
-  margin: 30px 20px 20px 20px;
+h1 {
+  font-size: 22pt;
+  line-height: 39pt;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
-.top {
-  font-size: 30px;
-  font-weight: lighter;
-  width: 70%;
-  padding: 0 0 30px 30px;
-
+p {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  line-height: 22pt;
+  letter-spacing: 0.2pt;
 }
 
-.bottom {
-  font-size: 16px;
-  font-weight: lighter;
-  width: 80%;
-  padding-left: 30px;
-  margin: 20px 0 0 0;
+.books {
+  background-image: url("../img/books.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 240px;
+  margin-bottom: 40px;
 }
 
-.dot {
-  display: block;
+.pencil {
+  background-image: url("../img/planner.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 240px;
+  width: 240px;
 }
 
-.arrow{
-  position: relative;
-  width: 100%;
+.books:hover {
+  transform:scale(1.15);
+  transition: all 500ms;
 }
 
-.square {
-  height: 278px;
-  background-color: red;
-  width: 270px;
+.pencil:hover {
+  transform:scale(1.15);
+  transition: all 500ms;
 }

@@ -9,40 +9,54 @@
   font-family: Armata;
 }
 
-.tophead {
-  background-image: url("../img/nameheader.jpg");
-  background-size: cover;
+#toppick {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1250px) {
+  #toppick {
+    margin-top: 10px;
+    display: inline-block;
+  }
+}
+
+.colors {
+  background-image: url("../img/color.jpg");
   background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 300px;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: contain;
+  height: 244px;
+}
+
+.colors:hover {
+  filter: invert(100%);
+  cursor: ne-resize;
+}
+
+button {
+  background-color: #090909;
+  text-decoration: none;
+}
+
+button:hover {
+  filter: invert(100%);
+  text-decoration: line-through;
+  border-color: black;
+  cursor: crosshair;
 }
 
 .newsstyle {
   margin-top: 12px;
 }
 
-@media (max-width: 1120px){
-  .tophead {
-    background-image: url("../img/nameheader.jpg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 300px;
-  }
-
-  .newwstyle {
-    margin-top: 0px;
-  }
-}
-
-@media (max-width: 767px){
+@media (max-width: 1083px) {
   .newsstyle {
-    margin: 0 0 0 2px;
+    margin: 0 0 0 0;
   }
 }
-
 
 .topbuttonswhere {
   text-align: center;
@@ -57,6 +71,15 @@
   margin: 20px 0 20px 0;
 }
 
+@media (max-width: 580px) {
+  .topbuttons {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    margin: 20px 0 20px 0;
+  }
+}
+
 .topbuttonstext {
   text-decoration: none;
   color: red;
@@ -69,6 +92,48 @@
   flex-direction: column;
   align-items: center;
   height: 300px;
+  border-top: dashed red 1px;
+}
+
+
+#drop1:hover {
+  filter: drop-shadow(8px 8px 10px #388ab4);
+  transform: scale(1.15);
+  transition: all 500ms;
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: initial;
+  transition-delay: initial;
+}
+
+#drop2:hover {
+  filter: drop-shadow(8px 8px 10px red);
+  transform: scale(1.15);
+  transition: all 500ms;
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: initial;
+  transition-delay: initial;
+}
+
+#drop3:hover {
+  filter: drop-shadow(8px 8px 10px #388ab4);
+  transform: scale(1.15);
+  transition: all 500ms;
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: initial;
+  transition-delay: initial;
+}
+
+#drop4:hover {
+  filter: drop-shadow(8px 8px 10px red);
+  transform: scale(1.15);
+  transition: all 500ms;
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: initial;
+  transition-delay: initial;
 }
 
 .text {
@@ -77,11 +142,6 @@
   justify-content: center;
   align-content: flex-end;
   flex-direction: column;
-}
-
-
-.border{
-  border: 1px solid red;
 }
 
 .midtextalign {
@@ -115,9 +175,104 @@
 
 .parallax2{
   background-image: url("../img/woosah.jpg");
-  height: 400px;
+  height: 200px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
+}
+
+#girl:hover {
+  filter: blur(4px);
+  transform: scale(1.15);
+  transition: all 500ms;
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: initial;
+  transition-delay: initial;
+}
+
+.bottomcutter {
+  background-color: #47414a;
+}
+
+#anarchy:hover {
+  background-image: url("../img/anarchy.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#anarchy:hover > * {
+  visibility: hidden;
+}
+
+.bottomcookie {
+  height: 350px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0px;
+  color: #9c958f;
+  border: white 1px dashed;
+}
+
+#bottom1:hover {
+  background-color: #67856d;
+  cursor: all-scroll;
+}
+
+#bottom2:hover {
+  background-color: #b47258;
+  cursor: cell;
+}
+
+#bottom3:hover {
+  background-color: #67856d;
+  cursor: col-resize;
+}
+
+#bottom4:hover {
+  background-color: #b47258;
+  cursor: crosshair;
+}
+
+@media (max-width: 991px){
+  #bottom1:hover {
+    background-color: #67856d;
+    cursor: all-scroll;
+  }
+
+  #bottom2:hover {
+    background-color: #b47258;
+    cursor: cell;
+  }
+
+  #bottom3:hover {
+    background-color: #b47258;
+    cursor: col-resize;
+  }
+
+  #bottom4:hover {
+    background-color: #67856d;
+    cursor: crosshair;
+  }
+}
+
+@media (max-width: 767px){
+  #bottom3:hover {
+    background-color: #67856d;
+    cursor: cell;
+  }
+  #bottom4:hover {
+    background-color: #b47258;
+    cursor: crosshair;
+  }
+
+}
+
+.font {
+  font-family: 'Mountains of Christmas', cursive;
 }
