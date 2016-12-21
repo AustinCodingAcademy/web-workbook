@@ -43,7 +43,7 @@
                       <li><a href="#">Highest</a></li>
                     </ul>
                   </div>
-                  <div class="dropdown my-alpha13">
+                  <div class="dropdown my-alpha13 locations">
                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                       Locations
                       <span class="caret"></span>
@@ -74,10 +74,20 @@
                       <li><a href="#">Communities</a></li>
                       <li><a href="#">Local Businesses</a></li>
                       <li role="separator" class="divider"></li>
-                      <li><a href="#">Become a Supporter</a></li>
+                      <li>
+                        <!-- <a href="#"> -->
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                          Become a Supporter
+                        </button>
+                        <!-- Become a Supporter</a> -->
+                      </li>
                     </ul>
+
                   </div>
                 </div>
+
+
+
                 <div class="my-alpha12">
                   <h1>Texans <span>for</span> Texas</h1>
                 </div>
@@ -175,10 +185,12 @@
                 <div class="my-gamma04">
                   <img class="my-gamma05" src="img/bird1.gif" alt="mockingbird">
                   <h4>Effect on Land</h4>
-                  <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-                  </p>
-                  <h4>Cause</h4>
-                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                  <iframe
+                  width="90%" height="30%"
+                  frameborder="0" scrolling="no" marginheight="0" src="https://maps.google.com/maps?q=Corpus Christi, Tx, &t=&z=14&ie=UTF8&iwloc=&output=embed" marginwidth="0"><a class="addmaps" href="http://www.embedgooglemap.net"id="get-map-data" mce_href="http://maps.google.com/maps/">Corpus Christi, Tx, </a><style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+                  </iframe>
+                  <h4>Discussion</h4>
+                  <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
                   </p>
                 </div>
                 <div class="my-gamma04">
@@ -214,6 +226,8 @@
     <script src="jquery.min.js"></script>
         CDN jquery-->
 
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <!--Newer CDN jquery
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -222,7 +236,27 @@
     <!-- local bootstrap
     <script src="js/bootstrap.min.js"></script>
         local owlcarousel
-    <script src="owlcarousel/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script> -->
+    <script src="owlcarousel/owl.carousel.min.js"></script> -->
+    <!-- <script src="js/main.js"></script> -->
+    <!-- Modals -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+    </button>
+    <h4 class="modal-title" id="myModalLabel">Become a Real Texan</h4>
+    </div>
+    <div class="modal-body">
+    ...
+    </div>
+    <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+    </div>
+    </div>
+    </div>
   </body>
 </html>
