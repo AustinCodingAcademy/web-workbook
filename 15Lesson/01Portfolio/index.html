@@ -67,24 +67,47 @@
     <!-- /.container -->
   </nav>
   <main>
-    <section class="container-fluid parallax">
+    <section class="container-fluid">
       <div class="row">
         <div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
           <div id="overview">
             <img src="../img/hero.jpg" alt="headshot" class="img-circle">
             <h1>jordan roman</h1>
             <h2 class="animated pulse"> is a UX designer/front-end dev that can talk to people and to the computer</h2>
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn hire-me center-block" data-toggle="modal" data-target="#myModal">hire me</button>
+
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">let's talk</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p id="modal-text">email me <a href="mailto:jordanroman@mac.com" class="button">here</a></p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn hire-me center-block" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row text-center">
+      <div class="row projects">
         <div class="col-xs-12 col-md-6 col-lg-6">
           <div id="projects">
             <div id="project-1">
               <div class="flip-container center-block" ontouchstart="this.classList.toggle('hover');">
                 <div class="flipper">
                   <div class="front">
-                    <a href="http://127.0.0.1:53119/06Lesson/01Project/" target="_blank"><img src="../img/project1.png" class="img-fluid snip-it" alt="Responsive image"></a>
+                    <a href="http://127.0.0.1:53119/06Lesson/01Project/" target="_blank"><img src="../img/project1.jpg" class="img-fluid snip-it" alt="Responsive image"></a>
                   </div>
                   <div class="back">
                     <p class="text">"from the blog" an early project highlights my ability to use flex box</p>
@@ -152,7 +175,7 @@
             <div class="flip-container center-block" ontouchstart="this.classList.toggle('hover');">
               <div class="flipper">
                 <div class="front">
-                  <a href="http://127.0.0.1:53119/12Lesson/01Project/" target="_blank"><img src="../img/project5.png" alt="#" class="snip-it hover"></a>
+                  <a href="http://127.0.0.1:62301/" target="_blank"><img src="../img/project5.png" alt="#" class="snip-it hover"></a>
                 </div>
                 <div class="back">
                   <p class="text">"ad agency" this project highlights my ability to create responsive sites with bootstrap</p>
@@ -182,7 +205,6 @@
       </div>
       <!--Resume Begins-->
       <div class="row resume">
-      </div>
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <div class="resume-header" id="resume-section">
@@ -275,6 +297,7 @@
             </div>
           </div>
         </div>
+      </div>
         <!--References Begins-->
       </div>
       <div class="row">
@@ -388,7 +411,7 @@
                     <input type="hidden" name="fbzx" value="350569070861816773">
                     <label for="emailReceipt" style="display:inline;"></label>
                     <br>
-                    <input type="submit" name="submit" value="Submit" class="btn btn-default btn-primary btn-lg btn-block">
+                    <input type="submit" name="submit" value="Submit" class="btn hire-me center-block">
                   </form>
                 </div>
               </div>
@@ -401,7 +424,7 @@
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row links">
             <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
               <div id="contact-me">
                 <a href="mailto:jordanroman@mac.com" class="button"><h5 class="contact-click">email me <i class="fa fa-envelope-o" aria-hidden="true"></i></h5>
