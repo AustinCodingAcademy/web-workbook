@@ -39,7 +39,7 @@ $(".nano").nanoScroller({ preventPageScrolling: true });
 
 	flashContainer = $('#notice')
   flashContainer.fadeIn( 300 ).delay( 3200 ).slideUp( 600 )
-	
+
 	flashContainer = $('#status')
 	flashContainer.fadeIn( 300 ).delay( 3200 ).slideUp( 600 )
 
@@ -52,22 +52,22 @@ $(".nano").nanoScroller({ preventPageScrolling: true });
 $(".close-reveal-modal").click(function() {
 //  alert("HI!");
 	$('.close-reveal-modal').closest('.reveal-modal').removeClass("rollIn");
-	
+
 });
 $(".usersdeletebutt").click(function() {
 //  alert("HI!");
 	$('.reveal-modal').addClass("rollIn").removeClass("fadeOutUp");
-	
+
 });
 $(".tabledeletebutt").click(function() {
 //  alert("HI!");
 	$('.reveal-modal').addClass("rollIn").removeClass("fadeOutUp");
-	
+
 });
 // random order JS for assigning anaimation properties to the modals
 
 function randOrd() {
-    return (Math.round(Math.random())-0.5); 
+    return (Math.round(Math.random())-0.5);
 }
 
 $(document).ready(function() {
@@ -155,12 +155,12 @@ jQuery.fn.slideFadeToggle = function (duration, easing, complete) {
 };
 
 // 3-D effect
-var supports3DTransforms =  document.body.style['webkitPerspective'] !== undefined || 
+var supports3DTransforms =  document.body.style['webkitPerspective'] !== undefined ||
                             document.body.style['MozPerspective'] !== undefined;
 
 function linkify( selector ) {
     if( supports3DTransforms ) {
-        
+
         var nodes = document.querySelectorAll( selector );
 
         for( var i = 0, len = nodes.length; i < len; i++ ) {
@@ -883,12 +883,12 @@ function update_tiny(i) {
   else tiny[i].style.visibility="hidden";
 }
 
-//sparkly Konami code mouse trail  
+//sparkly Konami code mouse trail
 (function(e){"use strict";e.fn.konami=function(t){var n,r,i,s,o,u,a,n=e.extend({},e.fn.konami.defaults,t);return this.each(function(){r=[38,38,40,40,37,39,37,39,66,65];i=[];e(window).keyup(function(e){s=e.keyCode?e.keyCode:e.which;i.push(s);if(10===i.length){o=!0;for(u=0,a=r.length;u<a;u++)r[u]!==i[u]&&(o=!1);o&&n.cheat();i=[]}})})};e.fn.konami.defaults={cheat:null}})(jQuery);
 
-$( window ).konami({	
+$( window ).konami({
 	cheat: function() {
-		 
+
 
 
 
@@ -916,14 +916,13 @@ $( window ).konami({
 		    sdown=0;
 		    sleft=0;
 		  }
-		}		
+		}
 		document.getElementById("user-name").innerHTML="<li class='quote'></li>";
 		var quotes = new Array("｡◕‿◕｡","(๑╹っ╹๑)","(︶◞౪◟︶)","(✌ﾟ∀ﾟ)☞"," (¬‿¬)","(◕‿◕✿)","ಥ‿ಥ", "(─‿‿─)", "(☞ﾟ∀ﾟ)☞", " (n˘v˘•)¬"),
     randno = quotes[Math.floor( Math.random() * quotes.length )];
     $('.quote').text( randno );
-		
+
 	}
 
 
 });
-
