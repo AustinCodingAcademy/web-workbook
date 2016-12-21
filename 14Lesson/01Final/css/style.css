@@ -4,7 +4,7 @@ body {
 }
 
 .navbar-brand {
-    height: 55px;
+    height: 50px;
 }
 
 .navbar-brand>.fa {
@@ -14,7 +14,7 @@ body {
 
 .strike {
     text-decoration: line-through;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     display: inline;
 }
 
@@ -93,9 +93,8 @@ input {
 }
 
 form textarea {
-    width: 100%;
+    width: 98%;
     height: 100px;
-    margin-bottom: 30px;
 }
 
 form label {
@@ -104,8 +103,10 @@ form label {
 }
 
 .submitbutt {
+    position: relative;
     display: inline-block;
     width: 30%;
+    right: -11px;
 }
 
 @media (min-width:1200px) {
@@ -159,24 +160,19 @@ form label {
         right: -17%;
         margin: 0 auto;
     }
-    .fa {
+    .navbar-brand~.fa {
         font-size: 3em;
-    }
-    .navbar-brand>i {
-        font-size: 1.3em;
     }
     #about p {
         text-align: center;
     }
 }
 
-
-/*@media (max-width:767px) {
-    .mapp>iframe {
-        margin: 0 auto;
-        width: 99%;
+@media (max-width:767px) {
+    #projects {
+        margin-bottom: 10px;
     }
-}*/
+}
 
 @media (max-width:651px) {
     .thelynx {
@@ -212,11 +208,13 @@ input[type=text] {
 
 input[type=text]:focus {
     width: 45%;
+    margin-right: 3%;
 }
 
 textarea[type=textarea] {
     width: 10%;
     height: 25px;
+    margin-bottom: 20px;
     -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
     /* Safari */
     transition: width 2s, height 2s, transform 2s;
@@ -225,7 +223,12 @@ textarea[type=textarea] {
 }
 
 textarea[type=textarea]:focus {
-    width: 99%;
+    width: 98%;
     height: 100px;
     resize: none;
+    ;
+}
+
+button, input, select, textarea {
+    margin: 0;
 }
