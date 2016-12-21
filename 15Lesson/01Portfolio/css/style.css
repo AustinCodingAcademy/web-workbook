@@ -1,6 +1,8 @@
 body{
   background-color: #F1F5F8;
   font-family: 'Roboto', Helvetica;
+  width: 90%;
+  margin: 0 auto;
 }
 
 /*-----------navigation bar------------------------------*/
@@ -173,6 +175,12 @@ header{
   font-weight: bold;
   letter-spacing: 7px;
   font-size: 18px;
+  align-items: right;
+}
+
+.text-roll-span{
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .rw-words span{
@@ -232,6 +240,7 @@ header{
   letter-spacing: 5px;
   font-size: 13px;
   text-align: justify;
+  background-image: linear-gradient( rgba(241, 245, 248, 2.0), rgba(59, 59, 59, 0.5) );
 }
 
 #passion h2{
@@ -254,6 +263,7 @@ header{
   background-repeat: no-repeat;
   box-sizing: border-box;
   background-attachment: fixed;
+  filter: blur(3px);
 }
 
 #arch2{
@@ -278,15 +288,17 @@ header{
   box-sizing: border-box;
   margin-bottom: 40px;
   background-attachment: fixed;
+  filter: blur(3px);
 }
 
 #arch2 h2{
   font-weight: bolder;
   color: #f2f2f2;
-  font-size: 30px;
+  font-size: 20px;
   float: right;
-  letter-spacing: 15px;
+  letter-spacing: 12px;
   margin-bottom: 5px;
+  margin-right: -15px;
 }
 
 /*----------arch project grid--------*/
@@ -317,7 +329,7 @@ header{
 }*/
 
 .archImgs:hover{
-  transform: scale(1.4);
+  transform: scale(1.1);
   border-radius: 150px;
 }
 
@@ -444,18 +456,18 @@ label{
 
 footer{
   width: 100%;
-  height: 250px;
-  background-image: linear-gradient( rgba(241, 245, 248, 1.9), rgba(59, 59, 59, 0.5) ), url("../img/blueprint.jpg");
+  height: 100%;
+  background-image: linear-gradient( rgba(241, 245, 248, 2.0), rgba(59, 59, 59, 0.5) ), url("../img/blueprint.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;*/
   box-sizing: border-box;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   margin-top: 30px;
+  padding-bottom: 30px;
 }
 
 .footer-title{
-  margin-top: 20px;
-  padding-top: 70px;
+  padding-top: 30px;
   overflow: hidden;
 }
 
