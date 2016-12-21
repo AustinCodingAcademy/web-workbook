@@ -197,6 +197,28 @@ a, a:hover, a:active, a:visited {
   color: #46a79d !important;
 }
 
+/*  C A R O U S E L  */
+
+.carousel-inner > .item , .carousel-inner > .item > a  {
+  width: 100%;
+  margin: auto;
+  background-color: #cceae5;
+  min-height: 400px;
+}
+
+.carousel-control {
+  text-shadow: none;
+  color: #46a79d;
+}
+
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
+}
+
+#carousel {
+  margin-bottom: 60px;
+}
+
 /*  G E N E R A L   T Y P O G R A P H Y  */
 
 h2 {
@@ -257,10 +279,6 @@ p {
   display: none;
 }
 
-.filter {
-  padding: 0 10px 20px;
-}
-
 .sortable {
   margin-bottom: 80px;
   padding: 40px 30px 60px 0;
@@ -269,9 +287,7 @@ p {
 }
 
 .project-type {
-  padding: 60px 0;
-
-
+  padding: 60px 0 20px;
 }
 
 .project-type a {
@@ -279,11 +295,11 @@ p {
   padding: 10px 25px;
   font-size: 11px;
   letter-spacing: 2px;
-  border-bottom: 1px solid transparent;
   transition: all 0.5s;
   text-decoration: none;
   color: #fff;
   background-color: #a7cec7;
+  line-height: 56px;
 }
 
 .project-type a.active, .project-type a:hover {
@@ -302,7 +318,6 @@ p {
 }
 
 .txt-overlay {
-  /*padding-top: 50%;*/
   position: absolute;
   top: 30px;
   left: 30px;
@@ -342,11 +357,9 @@ p {
   overflow: hidden;
   max-height: 400px;
 }
-/*
-.inline {
-  display:block;
-}
-.inline li {
-  display:inline-block;
-  padding:0 10px;
+
+/*@media screen and (max-width: 1199px) {
+  .project-type a {
+    margin-top: 30px;
+  }
 }*/
