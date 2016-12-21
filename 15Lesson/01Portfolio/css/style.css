@@ -1,6 +1,10 @@
 body {
   margin: 0 auto;
   width: 90%;
+
+}
+.container-fluid {
+
 }
 .navbar-nav {
     float: right;
@@ -18,6 +22,51 @@ body {
 .logo-title {
   font-family: 'Petit Formal Script', cursive;
 }
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 250px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+  margin-top: 15%;
+}
+
+
 
 #project-1{
 /*need to make background image
@@ -155,8 +204,10 @@ h5 {
   font-family: 'Codystar', cursive;
   text-align: center;
 }
+
+/*laptop size */
 .snip-it {
-  height: 220px;
+  /*height: 220px;*/
   width: 100%;
   border-radius: 15%;
 }
@@ -198,19 +249,14 @@ h5 {
 
 .ref-profile {
   border-radius: 50%;
-  height: 150px;
+  height: 200px;
   width: 90%;
 }
 .ref-title {
-  text-decoration: none;
   color: black;
   font-size: 14px;
   padding-bottom: 5%;
 
-}
-.ref-title:hover {
-  color: #c058a7;
-  text-decoration: none;
 }
 .ref-review {
   text-align: center;
@@ -224,6 +270,10 @@ h5 {
   padding-top: 3%;
   font-size: 10px;
 }
+.resume-header {
+  padding-top: 8%;
+
+}
 .inquiry-head {
   padding-top: 8%;
   text-align: center;
@@ -234,11 +284,9 @@ h5 {
 }
 label {
   font-family: 'Codystar', cursive;
-}
-.button-2 {
-  border: 25%;
 
 }
+
 #q {
   margin-bottom: 6%;
 }
@@ -254,10 +302,77 @@ input {
 }
 .contact-click:hover {
   text-decoration: none;
+
 }
+
 #quick-links {
   margin-top: 3%;
 }
-a {
-  text-decoration: none;
+i {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/*tablet size*/
+@media (max-width:1023px) and (min-width:768px) {
+  .snip-it {
+    /*height: 300px;*/
+    /*width: 60%;*/
+    border-radius: 25%;
+    margin-left: 20%;
+  }
+
+  .ref-profile {
+    border-radius: 50%;
+    height: 200px;
+    width: 30%;
+  }
+  .map {
+    width: 80%;
+    margin-left: 10%;
+
+  }
+  label {
+    font-family: 'Codystar', cursive;
+    margin-left: 10%;
+
+  }
+}
+
+
+/*phone size*/
+@media (max-width: 767px) {
+  .ref-profile {
+    border-radius: 50%;
+    height: 350px;
+    width: 30%;
+  }
+  .resume-logo {
+    height: 80px;
+    width: 100%;
+  }
+  .resume-logo-aca {
+    height: 80px;
+  }
+  .resume-logo-ecu {
+    height: 80px;
+  }
+  .resume-logo-oe {
+    height: 80px;
+  }
+  .resume-logo-msh {
+    height: 80px;
+
+  }
+  .img-circle {
+      border-radius: 50%;
+      height: 250px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20%;
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle
+  }
+
+
 }
