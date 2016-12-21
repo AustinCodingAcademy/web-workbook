@@ -15,6 +15,7 @@ body {
 .strike {
     text-decoration: line-through;
     font-family: 'Comfortaa', sans-serif;
+    border-radius: 90px;
     display: inline;
 }
 
@@ -87,9 +88,11 @@ input {
 }
 
 .thelynx {
+    display: flex;
     position: relative;
     top: 20px;
     margin: 0 auto;
+    justify-content: space-between;
 }
 
 form textarea {
@@ -110,9 +113,6 @@ form label {
 }
 
 @media (min-width:1200px) {
-    .thelynx {
-        width: 95%;
-    }
     .contact-link i {
         margin: 0 auto;
     }
@@ -142,7 +142,7 @@ form label {
 @media (max-width:991px) {
     .thelynx {
         position: relative;
-        right: -18%;
+        right: -10%;
     }
     .blurb {
         position: relative;
@@ -156,8 +156,7 @@ form label {
 
 @media (max-width:767px) {
     .thelynx {
-        /*right: -116px;*/
-        right: -17%;
+        right: -10%;
         margin: 0 auto;
     }
     .navbar-brand~.fa {
@@ -191,12 +190,6 @@ form label {
         right: -10%;
     }
 }
-
-
-/*.mapp {
-    position: relative;
-    bottom: -4%;
-}*/
 
 input[type=text] {
     width: 40px;
