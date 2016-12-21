@@ -11,7 +11,7 @@
   </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+    <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse">
                   <span class="sr-only">Toggle navigation</span>
@@ -19,14 +19,14 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
               </button>
-        <a class="navbar-brand" href="./index_4.html">About</a>
+        <!-- <a class="navbar-brand" href="./index_4.html">About</a> -->
       </div>
 
       <!-- Collect the nav links for toggling -->
       <div class="collapse navbar-collapse" id="example-navbar-collapse">
         <ul class="nav navbar-nav">
           <li>
-            <a href="./index_2.html">Sign Up</a>
+            <a href="./index_3.html">About</a>
           </li>
           <li>
             <a href="./index_4.html">Contact</a>
@@ -34,14 +34,18 @@
           <li>
             <a href="./index_3.html">Photo Gallery</a>
           </li>
+          <li>
+            <a href="./index_2.html">Sign Up</a>
+          </li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
     </div>
     <!-- /.container -->
   </nav>
+
   <div class="video">
-    <video id="bg" src="./vids/old_kids_playground.mp4" autoplay="true" loop="true" muted="true"></video>
+    <!-- <video id="bg" src="./vids/old_kids_playground.mp4" autoplay="true" loop="true" muted="true"></video> -->
   </div>
   <audio src="./music/footsteps-2.mp3" loop="true" autoplay="true">
   </audio>
@@ -58,8 +62,38 @@
         <div id="overlay"><img src="https://media0.giphy.com/media/gMhLRrVzPaPF6/200w.gif#170" />
         </div>
       </div>
+      <div class="mymodal">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+          Login
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 
 </body>
