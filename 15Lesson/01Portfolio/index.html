@@ -159,27 +159,29 @@
     </div>
   </div>
 
-<!-- --------------slideshow -->
-
-  <p id="sxsw-title">SXSW Photography</p>
-
-  <div id="sxsw" class="w3-content w3-display-container" style="max-width:100%">
-    <img class="mySlides" src="./img/slide1.jpg" style="width:100%">
-    <img class="mySlides" src="./img/slide2.jpg" style="width:100%">
-    <img class="mySlides" src="./img/slide3.jpg" style="width:100%">
-    <img class="mySlides" src="./img/slide4.jpg" style="width:100%">
-    <img class="mySlides" src="./img/slide5.jpg" style="width:100%">
-    <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-      <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-      <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+<!-- SLIDESHOW -->
+  <section id="titleAndPhotos">
+    <p class="col-xs-1 sxsw-title">SXSW Photography</p>
+    <div id="sxsw" class="w3-content col-xs-11 w3-display-container" style="max-width:100%">
+      <img class="mySlides" src="./img/slide1.jpg" style="width:100%">
+      <img class="mySlides" src="./img/slide2.jpg" style="width:100%">
+      <img class="mySlides" src="./img/slide3.jpg" style="width:100%">
+      <img class="mySlides" src="./img/slide4.jpg" style="width:100%">
+      <img class="mySlides" src="./img/slide5.jpg" style="width:100%">
+      <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+      </div>
     </div>
-  </div>
+  </section>
+  <div id="wtfSpacer" class="col-xs-12">
 
+  </div>
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -226,7 +228,7 @@ function showDivs(n) {
       jQuery(function($) {
       // Asynchronously Load the map API
       var script = document.createElement('script');
-      script.src = "//maps.googleapis.com/maps/api/js?sensor=false&callback=initialize";
+      script.src = "//maps.googleapis.com/maps/api/js?key=AIzaSyDMxpEV2af3PIuHcnztwMuj6LPwh94JfIc&callback=initialize";
       document.body.appendChild(script);
     });
 
@@ -252,31 +254,35 @@ function showDivs(n) {
 
       // Info Window Content
       var infoWindowContent = [
-          ['<div class="info_content">' +
-          '<h3>studioSIX5</h3>' +
-          '<p>Senior living interior designer</p>' +
-          '<p style="font-weight:bolder">August 2015 - to - Present</p>' +
-          '</div>'],
-          ['<div class="info_content">' +
-          '<h3>BAi</h3>' +
-          '<p>Audiovisual consultant</p>' +
-          '<p style="font-weight:bolder">August 2014 - to - August 2015</p>' +
-          '</div>'],
-          ['<div class="info_content">' +
-          '<h3>University of Texas</h3>' +
-          '<p>School of Architecture</p>' +
-          '<p style="font-weight:bolder">August 2009 - to - May 2013</p>' +
-          '</div>'],
-          ['<div class="info_content">' +
-          '<h3>South by Southwest</h3>' +
-          '<p>Music, Film, Interactive, and Sponsor photography</p>' +
-          '<p style="font-weight:bolder">March 2014 - to - March 2016</p>' +
-          '</div>'],
-          ['<div class="info_content">' +
-          '<h3>K&J Woodworks</h3>' +
-          '<p>Custom commercial cabinetry design and state-of-the-art fabrication</p>' +
-          '<p style="font-weight:bolder">August 2004 - to - August 2014</p>' +
-          '</div>'],
+        ['<div class="info_content">' +
+        '<h3>studioSIX5</h3>' +
+        '<p>Senior living interior designer</p>' +
+        '<a class="cv-site" href="http://www.studiosix5.com/">studioSIX5.com</a>' +
+        '<p style="font-weight:bolder">August 2015 - to - Present</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>BAi</h3>' +
+        '<p>Audiovisual consultant</p>' +
+        '<a class="cv-site" href="http://www.baiaustin.com/">baiaustin.com</a>' +
+        '<p style="font-weight:bolder">August 2014 - to - August 2015</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>University of Texas</h3>' +
+        '<p>School of Architecture</p>' +
+        '<a class="cv-site" href="http://soa.utexas.edu/">soa.utexas.edu</a>' +
+        '<p style="font-weight:bolder">August 2009 - to - May 2013</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>South by Southwest</h3>' +
+        '<p>Music, Film, Interactive, and Sponsor photography</p>' +
+        '<a class="cv-site" href="https://www.sxsw.com/">SXSW.com</a>' +
+        '<p style="font-weight:bolder">March 2014 - to - March 2016</p>' +
+        '</div>'],
+        ['<div class="info_content">' +
+        '<h3>K&J Woodworks</h3>' +
+        '<p>Custom commercial cabinetry design and state-of-the-art fabrication</p>' +
+        '<p style="font-weight:bolder">August 2004 - to - August 2014</p>' +
+        '</div>'],
       ];
 
       // Display multiple markers on a map
@@ -314,7 +320,7 @@ function showDivs(n) {
       </script>
     </div>
     <div class="col-xs-12 col-sm-6">
-      <form action="https://docs.google.com/forms/d/e/1FAIpQLSc4jSqDi9lENjDjOz8-KAHtl8U2GsV_-1OXILZWzbZo88N4Sg/formResponse"
+      <form id="form-request" action="https://docs.google.com/forms/d/e/1FAIpQLSc4jSqDi9lENjDjOz8-KAHtl8U2GsV_-1OXILZWzbZo88N4Sg/formResponse"
       method="POST" target="_self" onsubmit="">
         <h1 id="requestTitle" class="fadeInLeft infinite">Request my Resume</h1>
         <label for="entry_486684889">Name </label>
@@ -345,6 +351,23 @@ function showDivs(n) {
 <footer id="contact" class="col-xs-12">
   <div class="footer-title">
     <h4 class="animated">Let's<span id="color-collab"> collaborate</span></h4>
+    <form id="collab-form" action="https://docs.google.com/forms/d/e/1FAIpQLScgz5-6-FbLyeBTKdMnnN7vE0A4fhWeP90MdumZV8BWhxIOwA/formResponse"
+method="POST" target="_self" onsubmit="">
+  <div>
+    <label for="entry_741122448">Name</label>
+  <input type="text" name="entry.741122448" value="" dir="auto"
+  aria-label="Name  " title=""></div>
+  <div>
+    <label for="entry_1740535790">Email</label>
+  <input type="text" name="entry.1740535790" value="" dir="auto"
+  aria-label="Email  " title=""></div>
+  <input type="hidden" name="draftResponse" value="[,,&quot;6290052596818461001&quot;]
+">
+  <input type="hidden" name="pageHistory" value="0">
+  <input type="hidden" name="fbzx" value="6290052596818461001">
+  <label for="emailReceipt" style="display:inline;"></label>
+  <input id="form-button" type="submit" name="submit" value="Submit">
+</form>
     <p id="email">
       CruzAlexMendez | gmail
     </p>

@@ -353,11 +353,22 @@ header{
 
 /*----------------slideshow------*/
 
-#sxsw-title{
+
+
+.sxsw-title{
+  /*height: 100px;*/
+  /*margin-top: 150px;*/
+  /*margin-left: -500px;*/
   font-weight: 100;
   letter-spacing: 8px;
-  width: 100%;
-  font-size: 30px;
+  /*width: 100%;*/
+  /*height: 30px;*/
+  font-size: 20px;
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  /*position: relative;*/
+  margin-top: 250px;
 }
 
 .mySlides {
@@ -374,10 +385,23 @@ header{
   padding:0;
 }
 
+#wtfSpacer{
+  height: 100px;
+}
+
 /*------------FORM AND MAP ---------*/
 
 .map-container{
-  margin-top: 18px;
+  margin-top: 100px;
+}
+
+#map_wrapper {
+    height: 370px;
+}
+
+#map_canvas {
+    width: 100%;
+    height: 100%;
 }
 
 h3{
@@ -401,7 +425,7 @@ h3{
   margin: 0 50px;
 }
 
-form{
+#form-request{
   padding: 25px;
   background-color: #F1F5F8;
   display: flex;
@@ -443,16 +467,9 @@ label{
   font-weight: bolder;
 }
 
-#map_wrapper {
-    height: 360px;
-}
 
-#map_canvas {
-    width: 100%;
-    height: 100%;
-}
 
-/*------FOOTER------*/
+/*--------------------FOOTER------*/
 
 footer{
   width: 100%;
@@ -462,7 +479,7 @@ footer{
   /*background-repeat: no-repeat;*/
   box-sizing: border-box;
   /*background-attachment: fixed;*/
-  margin-top: 30px;
+  margin-top: 100px;
   padding-bottom: 30px;
 }
 
@@ -473,7 +490,7 @@ footer{
 
 h4{
   padding: 20px 40px;
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 100;
   color: white;
 }
@@ -489,4 +506,18 @@ h4{
   color: #F15A24;
   font-weight: 100;
   letter-spacing: 8px;
+}
+
+#collab-form{
+  /*width: 50%;*/
+  /*padding: 25px;*/
+  /*background-color: #F1F5F8;*/
+  display: flex;
+  flex-direction: column;
+  opacity: .75;
+  align-items: center;
+  justify-content: space-around;
+  /*margin: 10px;*/
+  /*width: 30%;*/
+  /*border: 2px solid #F15A24;*/
 }
