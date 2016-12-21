@@ -1,7 +1,6 @@
 body {
     height: 1000px;
     background-size: 80px 60px cover;
-    background-color: darkgrey;
     margin-top: 50px;
     font-family: 'Roboto', sans-serif;
 
@@ -22,13 +21,22 @@ a {
     color: inherit;
 }
 
+#moi {
+    background-color: darkgrey;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 300px;
+    height: 300px;
+}
+
 #contact-info {
     padding-left: 700px;
     color: grey;
+
 }
 
 #ornamental {
-    padding-top: 350px;
+    padding-top: 600px;
     padding-left: 30px;
     color: grey;
 }
@@ -37,6 +45,9 @@ a {
     float: right;
 }
 
+.pull-left {
+  float: left;
+}
 
 
 
@@ -103,23 +114,4 @@ prev, .next {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
-}
-
-
-
-
-
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
