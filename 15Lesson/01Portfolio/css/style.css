@@ -1,7 +1,48 @@
 
 header {
   width:100%;
-  height:700px;
+  height:10px;
+background-color: rgb(255, 255, 255);
+
+}
+body{
+  width:100%;
+  margin:0 auto;
+
+}
+main{
+  text-align: center;
+}
+main .intro {
+  height:550px;
+  /*margin-top:20px;*/
+  padding-top:100px;
+  padding-bottom:100px;
+  background-image: url("../img/stock.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+/*background-blend-mode: multiply;
+  background-color: rgba(208, 197, 191, 0.25);*/
+  margin-bottom: 0;
+
+
+}
+.intro-text {
+  margin: 50px;
+  padding: 50px;
+  border: 2px solid grey;
+  background-color: rgba(208, 197, 191, 0.35);
+color: white;
+}
+.intro-text h1 {
+  font-size:6em;
+  font-family: 'Mirza', cursive;
+}
+.intro-text h2 {
+  padding-bottom:20px;
+
+  font-family: 'Mirza', cursive;
 
 }
 .navbar {
@@ -9,11 +50,14 @@ header {
 }
 
 .navbar {
-    background: none;
+    background: rgb(255, 255, 255);
     border: none;
+    padding-top:10px;
+    margin-top:0;
 }
 
 .logo {
+  width:20%;
     padding-top: 10px;
 }
 
@@ -35,8 +79,56 @@ header {
 
 
 .parallax-window {
-    min-height: 700px;
-    background: transparent;
+    min-height:450px;
+    background-blend-mode: multiply;
+    background-color: rgba(208, 197, 191, 0.25);
+    margin: 0;
+}
+.goals {
+  height:200px;
+    background-color: rgb(230, 230, 230);
+}
+.skills {
+  height:400px;
+  background-color: rgb(230, 230, 230);
+  margin:15px 0;
+}
+.gis {
+  border: 2px solid green;
+    height:400px;
+
+}
+.esri, .gisp,  {
+  height:400px;
+  color:black;
+}
+.esri img {
+  width:50%;
+  margin:0 auto;
+  padding:20px;
+}
+.gisp img {
+  width:50%;
+  margin:0 auto;
+  padding:20px;
+}
+/*.owl-theme .owl-controls {
+  margin-top:-300px;
+    background-color: #F4ED48;
+    margin: 0 0.5px 0 0;
+}*/
+.pmp {
+  border: 2px solid purple;
+    height:400px;
+
+}
+.code {
+  border: 2px solid brown;
+    height:400px;
+}
+.links {
+  height:400px;
+    background-color: rgb(230, 230, 230);
 }
 /*large screens*/
 @media (min-width: 1824px) {
@@ -59,7 +151,12 @@ header {
 
 /*phones*/
 @media (max-device-width: 767px) {
-  .column {
-    color: blue;
+  .intro-text {
+    width:95%;
+    text-align: center;
+  }
+    .intro-text h1 {
+      font-size:3em;
+    }
   }
 }
