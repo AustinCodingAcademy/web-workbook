@@ -1,7 +1,7 @@
 .herounit {
   background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.2)),
       url("../img/section-4.jpg");
   height: 1000px;
   background-attachment: fixed;
@@ -32,7 +32,9 @@
 }
 
 .lowerhero {
-  background-image: url("../img/section-12.jpg");
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.7)), url("../img/section-12.jpg");
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
@@ -53,7 +55,11 @@
   border-radius: 0px;
   color: white;
   background-color: inherit;
+}
 
+.navbar-brand {
+  margin-bottom: 10px;
+  margin-top: -5px;
 }
 
 .collapse .nav .navbar a {
@@ -96,11 +102,6 @@ navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav> .open > a:f
     color: inherit;
 }
 
-.logo {
-  background-image: url("../img/wine1.png");
-  height: 700px;
-  background-repeat: no-repeat;
-}
 
 .textbox {
   height: 700px;
@@ -120,27 +121,6 @@ navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav> .open > a:f
   background-image: url("../img/img-1.jpg");
   height: 700px;
   background-size: cover;
-}
-
-
-.visitbutton {
-  width: 100px;
-  height: 45px;
-  background-color: #91A05C;
-  border-radius: 8px;
-  color: white;
-  text-decoration: none;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 18px;
-  padding-top: 10px;
-  margin-bottom: 40px;
-}
-
-.visitbutton > a {
-  color: white;
-  background-color: inherit;
 }
 
 .locationportraits {
@@ -183,10 +163,18 @@ navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav> .open > a:f
     height: 400px;
     font-size: 1.7em;
     font-family: 'Oswald', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
+
+.slideshow > p {
+    padding-top: 160px;
+}
+
+.carousel {
+  height: 360px;
+  width: 360px;
+
+}
+
 
 .mapbox {
   height: 200px;
@@ -228,7 +216,9 @@ navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav> .open > a:f
 }
 
 .bottompic {
-  background-image: url("../img/img-7.jpg");
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.3)), url("../img/img-7.jpg");
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
@@ -288,10 +278,7 @@ footer {
 .bg-dark {
   background: #000;
   color: inherit;
-  height: 700px;
-  position: relative;
-  /*top: 50%;
-  transform: translateY(50%);*/
+  height: 600px;
 }
 
 .mb24 {
