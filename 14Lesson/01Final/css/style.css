@@ -1,7 +1,12 @@
-.navbar {
-  margin-bottom: 0px;
+body {
+  background-color: #B4B2B2;
 }
 
+.navbar {
+  margin-bottom: 0px;
+  border-radius: 0px;
+}
+/*Home*/
 main {
   background-image: url("../startbootstrap-grayscale-gh-pages/img/loki.jpg");
   background-size: cover;
@@ -23,20 +28,153 @@ main {
   font-size: 70px;
 }
 
+/*About*/
 .slideshow {
-  float: left;
+  margin: 40px;
 }
 
-.about > h1 {
+.text > h1 {
   font-family: 'Kaushan Script', cursive;
   text-transform: lowercase;
   text-align: center;
-  margin-top: 20px;
-  margin-left: 60px;
+  margin-top: 200px;
+  font-size: 50px;
 }
 
 .text {
-  float: right;
-  width: 500px;
+  width: 700px;
   text-align: center;
+  color: #000;
+}
+
+.text > p {
+  font-family: 'Bad Script', cursive;
+  font-size: 25px;
+}
+
+.blank {
+  height: 100px;
+  background-color: #B4B2B2;
+}
+
+/*Education*/
+.backg {
+  background-image: url("../startbootstrap-grayscale-gh-pages/img/sbhs.jpg");
+  background-size: cover;
+  height: 1000px;
+}
+
+.education {
+  margin-top: 40px;
+
+}
+
+.school > h1 {
+  font-family: 'Kaushan Script', cursive;
+  text-transform: lowercase;
+  font-size: 50px;
+}
+
+.school > p {
+  text-align: left;
+  font-family: 'Bad Script', cursive;
+  font-size: 25px;
+}
+
+iframe {
+  height: 300px;
+  width: 400px;
+}
+
+/*Skills*/
+.skilltitle {
+  background-image: url("../startbootstrap-grayscale-gh-pages/img/strings.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skilltitle > h1 {
+  font-family: 'Kaushan Script', cursive;
+  text-transform: lowercase;
+  font-size: 75px;
+}
+
+.gray {
+  background-color: #171717;
+  height: 210px;
+}
+
+.talent > h1 {
+  color: #fff;
+  text-align: center;
+  margin-top: 70px;
+}
+
+/*Portfolio*/
+.header > h1 {
+  font-size: 60px;
+  font-family: 'Kaushan Script', cursive;
+  text-transform: lowercase;
+  color: #000;
+  text-align: center;
+}
+.project {
+  width: 730px;
+  height: 410px;
+}
+
+.project:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 10px #000;
+}
+
+.bottom {
+  margin-top: 30px;
+}
+
+/*Contact*/
+.contact {
+  margin-top: 220px;
+}
+
+
+.social {
+  width: 200px;
+  height: 200px;
+}
+
+.social:hover {
+  transform: scale(1.5);
+  box-shadow: 10px 10px 10px #000;
+}
+
+@media screen and (max-width: 720px) {
+  .slideshow {
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+
+  .text {
+    width: 500px;
+    text-align: center;
+  }
+
+  .backg {
+    background-image: none;
+    background-color: #B4B2B2;
+    color: #000;
+  }
+
+  .contact {
+    margin-top: 30px;
+  }
+
+  .social {
+    margin-bottom: 40px;
+  }
 }
