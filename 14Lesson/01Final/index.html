@@ -36,6 +36,32 @@ $(document).ready(function(){
   <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+  <script type="text/javascript"src="js/jquery-3.1.1.js"></script>
+<script src="js/script.js"></script>
+
+<script type="text/javascript">
+
+ $(document).ready(function(){
+
+  setInterval(function(){
+  $('#carousel ul').animate({marginLeft:'-500px'},2000,function(){
+
+ $(this).find("li:last") .after($(this).find("li:first"));
+ $(this).css({marginLeft:0});
+
+  });
+},4000);
+  });
+  </script>
+  <!-- Basic stylesheet -->
+<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+
+ <!-- Default Theme -->
+<link rel="stylesheet" href="owl-carousel/owl.theme.css">
+
+<!-- Include js plugin -->
+<script src="owl-carousel/owl.carousel.js"></script>
 </head>
 <body>
   <!--Navigation -->
@@ -105,8 +131,40 @@ $(document).ready(function(){
       <div class="row">
         <div class="projects col-xs-12 col-sm-12 col-md-12">
           <h3 id="work1">Projects</h3>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+<ol class="carousel-indicators">
+  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+  <li data-target="#myCarousel" data-slide-to="1"></li>
+  <li data-target="#myCarousel" data-slide-to="2"></li>
+</ol>
 
-        </div>
+<!-- Wrapper for slides -->
+<div class="carousel-inner" role="listbox">
+  <div class="item active">
+    <a href="https://rawgit.com/stevenaaronnagy/web-workbook/gh-pages/09Lesson/01Project/index.html"><img src="img/order.png" alt="order"></a>
+  </div>
+
+  <div class="item">
+    <a href="https://rawgit.com/stevenaaronnagy/web-workbook/gh-pages/10Lesson/01Homework/index.html"><img src="img/wine.png" alt="creative"></a>
+  </div>
+
+  <div class="item">
+    <a href="https://rawgit.com/stevenaaronnagy/web-workbook/gh-pages/11Lesson/03Checkpoint/index.html"><img src="img/wine2.png" alt="wine"></a>
+  </div>
+
+</div>
+
+<!-- Left and right controls -->
+<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+  <span class="sr-only">Next</span>
+</a>
+</div>
       </div>
     </div>
   </section>
@@ -144,14 +202,14 @@ method="POST" target="_self" onsubmit="">
     <div class="container-fluid">
       <div class="row">
         <div class="visible-xs-block">
-          <script src="https://maps.googleapis.com/maps/api/js?keyAIzaSyDGysBUpqWN5SNydZaKgfZLVyf8qwt6T14	"
-  async defer>
-</script>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13783.303149203824!2d-97.73667334999999!3d30.2705446!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1482279930369" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
         </div>
       </div>
     </div>
 
-
-
+    <!-- This is where my JS Files being --->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </body>
 </html>
