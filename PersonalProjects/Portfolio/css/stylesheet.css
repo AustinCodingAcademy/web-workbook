@@ -42,8 +42,7 @@ main {
 #contactdiv {
 }
 #headercont {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 12px;
   margin-left: 0px;
   box-shadow: 1px 1px 5px black;
   z-index: 999;
@@ -229,7 +228,7 @@ main {
 
 #MtCont {
   height: 250px;
-  width: 700px;
+  width: 50%;
   display: flex;
   flex-direction: row;
   margin-right: 90px;
@@ -237,14 +236,14 @@ main {
 
 #MtCont2 {
   height: 250px;
-  width: 700px;
+  width: 50%;
   display: flex;
   flex-direction: row;
 }
 
 #MtCont3 {
   height: 250px;
-  width: 700px;
+  width: 50%;
   display: flex;
   flex-direction: row;
   margin-right: 90px;
@@ -252,7 +251,7 @@ main {
 
 #MtCont4 {
   height: 250px;
-  width: 700px;
+  width: 50%;
   display: flex;
   flex-direction: row;
   border-radius: 5px;
@@ -328,6 +327,7 @@ main {
   height: 250px;
   display: flex;
   flex-direction: column;
+  overflow: auto;
 }
 
 .MtH1Cont {
@@ -401,20 +401,216 @@ main {
   margin: 0 auto;
 }
 
-@media (min-width: 1309px) {
+#ContMeCont {
+  width: 100%;
+  height: 600px;
+}
+
+#ContMeBackg {
+  background-image: url('../img/628.jpg');
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 100%;
+}
+
+#LeftRightCont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#ContMeLeft {
+  width: 45%;
+  height: 90%;
+  background: rgba(0, 0, 0, .9);
+  margin-right: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
 
 }
+
+#ContMeRight {
+  width: 25%;
+  height: 90%;
+  background-color: rgba(0, 0, 0, .9);
+  border-radius: 5px;
+}
+
+#ContMeLeftH1 h1 {
+  color: white;
+  font-size: 40px;
+  font-family: Proza Libre;
+  font-style: italic;
+  font-weight: bolder;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+#ContMeForm {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#ContMeForm p {
+  font-size: 17px;
+  color: white;
+  font-family: Proza Libre;
+  margin-bottom: 2px;
+  font-weight: regular;
+  font-style: italic;
+}
+
+#ContMeEmail p {
+  margin-bottom: 5px;
+}
+
+#ContMeName p {
+  margin-bottom: 5px;
+}
+
+#ContMePurpose p {
+  margin-bottom: 5px;
+}
+
+#ContMeEmail {
+  margin-bottom: 20px;
+}
+
+#ContMeName {
+  margin-bottom: 20px;
+}
+
+#ContMePurpose {
+  margin-bottom: 20px;
+}
+
+#textarea {
+  width: 250px;
+}
+
+#ContMeSubmit {
+  background-color: black;
+  border: 3px solid white;
+  width: 100px;
+  height: 40px;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 20px;
+  color: white;
+  font-family: Proza Libre;
+}
+
+#ContMeRightCont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ContMeRightH1 {
+  margin-bottom: 10px;
+}
+
+#ContMeRightH1 h1 {
+  font-family: Proza Libre;
+  color: white;
+  font-size: 40px;
+  font-weight: bolder;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.ContMeRightP {
+  color: white;
+  font-family: Proza Libre;
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 15px;
+  line-height: 18px;
+}
+
+.ContMeRightP a {
+  color: white;
+}
+
+.firstp {
+  font-weight: bolder;
+  margin-bottom: 0px;
+}
+
+.secondp {
+  font-weight: lighter;
+}
+
+#ContMeRightSocial {
+  margin: 0 auto;
+}
+
+#firsta {
+  margin-right: 20px;
+}
+
 
 @media (max-width: 994px) {
   #namecont h1 {
     font-size: 20px;
   }
 
-  
+
 }
 
 /*tablet Size */
 @media (min-width: 10px) and (max-width: 768px) {
+  #ContMeCont {
+    width: 100%;
+    height: 1200px;
+  }
+
+  #ContMeBackg {
+    background-image: url('../img/628.jpg');
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+  }
+
+  #LeftRightCont {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  #ContMeLeft {
+    width: 100%;
+    height: 530px;
+    background: rgba(0, 0, 0, .9);
+    margin-right: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+  }
+
+  #ContMeRight {
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, .9);
+    border-radius: 5px;
+  }
 
   #headercont {
     padding-top: 5px;
@@ -486,4 +682,162 @@ main {
   #jasonmenu {
     width: 100%;
   }
+
+  #leftmenu p {
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  #centermenu p {
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  #rightmenu p {
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  #MtBigCont {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+
+  #MtBigCont2 {
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+
+  #MtImg {
+    background-color: black;
+    height: 200px;
+    width: 40%;
+    margin-right: 10px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+  }
+
+  #MtImg2 {
+    background-color: black;
+    height: 200px;
+    width: 40%;
+    margin-right: 10px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+  }
+
+  #MtImg3 {
+    background-color: black;
+    height: 200px;
+    width: 40%;
+    margin-right: 10px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+  }
+
+  #MtImg4 {
+    background-color: black;
+    height: 200px;
+    width: 40%;
+    margin-right: 10px;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+
+  }
+
+  .MtImgLink {
+    width: 40%;
+    height: 25px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 2px;
+    text-align: center;
+  }
+
+  .MtTxtCont {
+    width: 60%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .MtH1Cont {
+    height: 20%;
+    background: rgba(0, 0, 0, .8);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .MtH1Cont h1 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    font-family: arial;
+    font-weight: bolder;
+    font-style: italic;
+    letter-spacing: 2px;
+  }
+
+  .MtPCont {
+    height: 80%;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 17px;
+    padding-top: 10px;
+  }
+
+  .MtPCont p {
+    color: white;
+    font-family: arial;
+    font-size: 12px;
+    font-weight: lighter;
+
+  }
+
+  #heroh1 h1 {
+    font-size: 40px;
+  }
+
+  #menuh1 h1 {
+    font-size: 23px;
+  }
+
+  #MtCont {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0px;
+    padding-left: 0px;
+  }
+
+  #MtCont2 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0px;
+    padding-left: 0px;
+  }
+
+  #MtCont3 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0px;
+    padding-left: 0px;
+  }
+
+  #MtCont4 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0px;
+    padding-left: 0px;
+  }
+
 }
