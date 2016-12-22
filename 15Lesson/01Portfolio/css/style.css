@@ -103,7 +103,7 @@ main .intro .bg-img {
 }
 
 .goals {
-    height: 200px;
+    height: 450px;
 }
 
 .skills {
@@ -151,14 +151,33 @@ main .intro .bg-img {
     width: 80%;
     margin: 0 auto;
     padding-bottom: 60px;
-}
 
-hr {
-    width: 80%;
+}
+.fa.fa-globe {
+  color:rgb(166, 166, 166);
+  margin-bottom:100px;
+  background-color: white;
+}
+hr.separator {
+    width: 90%;
     margin: 0 auto;
     height: 5px;
     background-color: rgb(45, 58, 70);
     border-radius: 3px;
+    z-index: 99;
+
+}
+hr.under {
+  width:400px;
+  margin:0 auto;
+  height:3px;
+  background-color: rgb(166, 166, 166);
+  border-radius: 3px;
+  margin-top:-120px;
+  z-index: 1;
+  margin-bottom: 50px;
+
+
 }
 
 .skills-level h2 {
@@ -167,7 +186,8 @@ hr {
     font-family: 'Mirza', cursive;
     font-weight: 600;
     font-size: 4.5em;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
+    margin-top:0;
 }
 
 .skills_wrapper.two-col, .skills_wrapper.three-col, .skills_wrapper.four-col {
@@ -229,7 +249,56 @@ hr {
     color: #4f4f4f;
     /*padding-left:5px;*/
 }
+.title-box .title-box_icon:after {
+    content: '';
+    position: absolute;
+    width: 570px;
+    height: 2px;
+    top: 23px;
+    left: -261px;
+    background: #bababa;
+    z-index: -1;
+}
+#myCarousel {
+  height:450px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 /*large screens*/
 
@@ -270,6 +339,8 @@ hr {
     }
     .skills-level h2 {
         font-size: 3em;
+        padding-top:20px;
+
     }
     .skills_wrapper .skills-item .skill-progress .skill-title {
         font-size: .80em;
@@ -278,5 +349,12 @@ hr {
     .skills_wrapper .skills-item .level {
         font-size: 1.2em;
         font-weight: bold;
+    }
+    hr.under {
+      width:60%
+    }
+    .fa.fa-globe {
+      font-size:26px;
+      padding-bottom:3px;
     }
 }
