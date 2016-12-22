@@ -1,0 +1,176 @@
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('../img/hero.jpg');
+  background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+  background-color: #1DA075;
+  background-blend-mode: multiply;
+}
+
+nav {
+  width: 100%;
+}
+
+ul.nav a:hover {
+  color: #1DA075 !important;
+}
+
+.navbar-right {
+  margin-right: 20px;
+}
+
+.hero {
+  margin-top: 25px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+main {
+  width: 100%;
+  background-color: transparent;
+}
+
+h1 {
+  text-align: right;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16em;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-family: 'Amatic SC', cursive;
+  color: #1DA075 !important;
+}
+
+nav-brand a:hover{
+  color: white !important;
+}
+
+h2 {
+  color: #1DA075;
+  font-family: 'Oswald', sans-serif;
+}
+
+*::selection {
+  background-color: #1DA075;
+  color: white;
+}
+
+.typewriterbox {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.typewriter h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid #1DA075; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from, to { border-color: transparent }
+  50% { border-color: #1DA075; }
+}
+
+.portfolio {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.slider {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.mid {
+  background-color: white;
+}
+
+#myCarousel{
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 80%;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
+input {
+  width: 70%;
+  color: #1DA075;
+  background-color: white;
+  border: none;
+}
+
+input:hover {
+  background-color: #1DA075;
+  color: white;
+}
+
+textarea:hover {
+  background-color: #1DA075;
+  color: white;
+}
+
+
+label {
+  color: white;
+}
+
+
+
+/*tablet size css*/
+
+@media (max-width: 1000px) {
+  h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 7em;
+  }
+
+
+h2 {
+  font-size: 1.5em;
+}
+
+form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+}
