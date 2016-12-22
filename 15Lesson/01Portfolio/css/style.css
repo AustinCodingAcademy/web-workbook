@@ -9,8 +9,10 @@ body {
 }
 
 .navbar-default .navbar-nav>li>a {
+  font-size: 20px;
   color: white;
   font-family: schoolbell;
+  filter: blur(1.5px);
 }
 
 .navbar-default .navbar-brand {
@@ -18,7 +20,8 @@ body {
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-  background-color: gray;
+  background-color: transparent;
+  filter: blur(0px);
   overflow: hidden;
   color: white;
 }
@@ -119,4 +122,12 @@ p {
 
 .video {
   filter: blur(3px);
+}
+
+.modal-dialog {
+  top: 10%;
+}
+
+.modal-backdrop {
+  position: inherit;
 }
