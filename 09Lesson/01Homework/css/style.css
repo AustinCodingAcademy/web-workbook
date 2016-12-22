@@ -1,0 +1,142 @@
+body {
+  font-family: Helvetica;
+  margin: 0 auto;
+}
+
+#header{
+  font-family: 'Lily Script One';
+  text-align: center;
+  color: #444444;
+  font-size: 50px;
+  padding: 25px;
+}
+
+/*.col-sm-3{
+  margin: 5px;
+  width: 22%;
+}*/
+
+.image{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  height: 300px;
+}
+
+.first{
+  background-image: url("../img/img1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ededed;
+}
+.second{
+  background-image: url("../img/img2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ededed;
+}
+.third{
+  background-image: url("../img/img3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ededed;
+}
+.fourth{
+  background-image: url("../img/img4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ededed;
+}
+
+.image:hover{
+  transform: scale(1.1);
+}
+
+.image p{
+  text-align: center;
+  padding: 12px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 15px;
+  vertical-align: middle;
+  color: white;
+  background-color: #4ee8c4;
+  margin-bottom: 0;
+}
+
+.image p:hover{
+  background-color: #444444;
+}
+
+span{
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.fourth{
+  justify-content: space-between;
+}
+
+#sale{
+  text-align: center;
+  padding: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 12px;
+  vertical-align: middle;
+  color: white;
+  background-color: tomato;
+  align-self: flex-start;
+}
+
+.itemName {
+  border-left: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.itemName a{
+  color: #444444;
+  font-size:15px;
+  font-weight: bold;
+}
+
+.itemName a:hover{
+  text-decoration: none;
+  color: #4ee8c4;
+}
+
+.button{
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  line-height: 80px;
+  vertical-align: middle;
+}
+
+.button a{
+  padding: 15px;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: #444444;
+  color:white;
+}
+
+.button a:hover{
+  background-color: #4ee8c4;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .third{
+    clear:left;
+  }
+  .col-sm-3{
+    margin-left: 17%;
+  }
+}
