@@ -102,9 +102,9 @@ main .intro .bg-img {
     background-color: rgba(208, 197, 191, 0.25);
 }
 
-.goals {
+/*.goals {
     height: 450px;
-}
+}*/
 
 .skills {
     height: 400px;
@@ -260,6 +260,7 @@ hr.under {
     z-index: -1;
 }
 #myCarousel {
+  width:100%;
   height:450px;
 }
 /* The Modal (background) */
@@ -282,7 +283,8 @@ hr.under {
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 60%; /* Could be more or less, depending on screen size */
+    height:auto;
 }
 
 /* The Close Button */
@@ -299,16 +301,73 @@ hr.under {
     text-decoration: none;
     cursor: pointer;
 }
+.entry {
+  width:600px;
+  padding:10px;
+  margin: 12px;
+}
+.submit {
+  width:150px;
+  border: 2px solid #4f4f4f;
+    background: rgba(49, 139, 138, 0.5);
+    color: #4f4f4f;
+    border-radius: 20px;
+    height: 45px;
+    font-size:18px;
+    text-transform: uppercase;
+}
+.contact {
+  width:50%;
+}
+.fa.social {
+  font-size:35px;
+  padding:5px 12px 0 12px;
+    color: #4f4f4f;
+}
 
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+  color: #4f4f4f;
+}
+.carousel-control.right, .carousel-control.left{
+  background: none;
+}
+.item h3 {
+  text-transform: uppercase;
+  color: rgb(45, 58, 70);
+  font-family: 'Mirza', cursive;
+  font-weight: 600;
+  font-size: 3.5em;
+  padding-bottom: 40px;
+  margin-top:40px;
+}
+.item img {
+  width:180px;
+  height:auto;
+
+}
+
+.carousel-indicators li{
+  background-color: rgba(49, 139, 138, 0.5);
+  border: 1px solid #4f4f4f;
+}
+.carousel-indicators .active {
+  background-color:  #4f4f4f;
+}
 /*large screens*/
 
-@media (min-width: 1824px) {}
-
+@media (min-width: 1824px) {
+  .item-a {
+    padding: 0  15px;
+  }
+  }
 
 /*Desktops & Laptops*/
 
-@media (max-width: 1823px) and (min-width: 1024px) {}
-
+@media (max-width: 1823px) and (min-width: 1024px) {
+  .item-a {
+    padding: 0  15px;
+  }
+}
 
 /*tablets*/
 
@@ -357,4 +416,51 @@ hr.under {
       font-size:26px;
       padding-bottom:3px;
     }
+    .contact {
+      width:80%;
+    }
+    .fa.social {
+      font-size:35px;
+      padding:5px 12px 0 12px;
+      margin-bottom: 35px;
+        color: #4f4f4f;
+    }
+    .modal-content {
+      width:80%;
+    }
+    .entry {
+      width:250px;
+      padding:10px;
+      margin: 12px;
+    }
+    .submit {
+      font-size: 12px;
+      font-weight:bold;
+
+    }
+    .map img{
+      width:90%;
+    }
+    #myCarousel {
+      width:100%;
+      margin:75px 0 175px 0;
+      height:200px;
+
+    }
+    div#myCarousel .carousel.slide {
+      width:75%;
+      margin:0 auto;
+    }
+    .item h3 {
+          font-size: 2.5em;
+          padding-bottom:75px;
+
+    }
+    .item img {
+      width:45px;
+
+    }
+    .carousel-indicators {
+    bottom: -90px;
+  }
 }
