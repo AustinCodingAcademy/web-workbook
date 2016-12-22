@@ -1,0 +1,6 @@
+machine:
+  node:
+    version: 6.7.0
+test:
+  override:
+    - ./node_modules/.bin/htmllint {*.html,./!(node_modules)/**/*.html}
