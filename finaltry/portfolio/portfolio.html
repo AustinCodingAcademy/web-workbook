@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>final</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css" media="screen" title="no title">
+    <link rel="stylesheet" href="../css/acafinal.css" media="screen" title="no title">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  </head>
+<body>
+  <section>
+    <h1 class="porth1">Portfolio</h1>
+  </section>
+
+  <h3>Austin Texas yeehaw</h3>
+    <div id="map"></div>
+    <!-- Replace the value of the key parameter with your own API key. -->
+
+
+
+  <section class=nav>
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../acafinal.html">Scott Foster Development</a>
+      </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="navbarli"><a href="../html/resume-site-1.html">Resume</a></li>
+          <li class="navbarli"><a href="../portfolio/portfolio.html">Portfolio</a></li>
+          <li class="navbarli"><a href="https://www.linkedin.com/">Linked in</a></li>
+          <li role="separator" class="divider"></li>
+          <li class="navbarli"><a href="../contact/contact.html">Contact</a></li>
+
+        </ul>
+      </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </section>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADS_Hm7p0ET1_XE4DSv0REJRH87OipRvI&callback=initMap">
+  </script>
+  <script>
+  function initMap() {
+    var uluru = {lat: 30.3, lng: -97.7};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 4,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+  </script>
+
+</body>
+
+</html>
