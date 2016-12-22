@@ -2,15 +2,23 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
 
 body, html {
+  overflow-x: hidden;
   font-family: 'Lato', sans-serif;
   color: #444e5e !important;
   background-color: #eee;
   text-align: center;
   box-sizing: border-box !important;
+  background-image: url(../img/white_texture.png);
+  background-repeat: repeat;
+  background-size: 30%;
 }
 
 a, a:hover, a:active, a:visited {
   text-decoration: none;
+}
+
+section {
+  padding-top: 40px;
 }
 
 /*  N A V I G A T I O N  */
@@ -19,6 +27,7 @@ a, a:hover, a:active, a:visited {
   background-color: #fff;
   border-radius: 0;
   margin-bottom: 0;
+  box-shadow: 5px 5px 12px rgba(204, 204, 204, 0.3);
 }
 
 .navbar-header {
@@ -51,6 +60,13 @@ a, a:hover, a:active, a:visited {
   padding-bottom: 50px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .navbar-nav > li {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .navbar-header {
     margin-left: 0 !important;
@@ -72,6 +88,17 @@ a, a:hover, a:active, a:visited {
     padding-top: 0;
   }
 }
+
+@media screen and (max-width: 744px) {
+  .navbar-nav > li {
+    display: block;
+    clear: right;
+    float: right;
+    margin-right: -15px;
+    padding-bottom: 20px;
+  }
+}
+
 
 /*  N A V   T Y P O G R A P H Y  */
 
@@ -97,7 +124,7 @@ a, a:hover, a:active, a:visited {
 
 .hero > .container {
   background-color: #cceae5;
-  margin-bottom: 80px;
+  margin-bottom: 90px;
 }
 
 .about-photo img {
@@ -108,6 +135,11 @@ a, a:hover, a:active, a:visited {
 
 .about-copy {
   padding: 50px 50px;
+}
+
+.about-copy a {
+  color: inherit;
+  font-weight: bold;
 }
 
 .about-copy-copy {
@@ -136,6 +168,7 @@ a, a:hover, a:active, a:visited {
 @media screen and (max-width: 992px) {
   .about-photo img {
     margin-bottom: 0;
+    max-width: 300px;
   }
 
   .about-copy {
@@ -173,11 +206,11 @@ a, a:hover, a:active, a:visited {
   border-top: 4px solid #a7cec7;
 }
 
-/*  S P E C I A L T I E S   S E C T I O N  */
-
-.specialties-icons {
-  padding: 60px 0;
+.title-box-brown, .title-box-teal {
+  margin-bottom: 60px;
 }
+
+/*  S P E C I A L T I E S   S E C T I O N  */
 
 .specialties-icons i {
   color: #fff;
@@ -194,8 +227,14 @@ a, a:hover, a:active, a:visited {
 
 }
 
-.specialty {
-  margin-bottom: 60px;
+#specialties {
+  margin-bottom: 90px;
+}
+
+@media screen and (max-width: 992px) {
+  .specialty {
+    margin-bottom: 50px;
+  }
 }
 
 /*  M I X I T U P  /  P O R T F O L I O   S E C T I O N  */
@@ -209,10 +248,6 @@ a, a:hover, a:active, a:visited {
   padding: 40px 30px 60px 0;
   text-align: justify;
   overflow: hidden;
-}
-
-.project-type {
-  padding: 60px 0 20px;
 }
 
 .project-type a {
@@ -368,24 +403,20 @@ a, a:hover, a:active, a:visited {
 /*  E X P E R I E N C E   S E C T I O N   */
 
 #experience {
-  margin-bottom: 60px;
-}
-
-.job-outer {
-
+  margin-bottom: 90px;
 }
 
 .job-inner {
-  margin: 20px 0;
+  margin: 0 0 40px;
 }
 
 .aside-row {
-  margin: 20px 0;
-
+  margin: 0 0 40px;
 }
 
 .job {
   margin: 0 10px 0;
+  box-shadow: 5px 5px 12px rgba(204, 204, 204, 0.5);
 }
 
 .experience figure {
@@ -405,6 +436,7 @@ a, a:hover, a:active, a:visited {
 .aside {
   background-color: #b8beab;
   margin: 0 10px 0;
+  box-shadow: 5px 5px 12px rgba(204, 204, 204, 0.5);
 }
 
 .aside-title {
@@ -467,9 +499,26 @@ a, a:hover, a:active, a:visited {
 
 .carousel-inner > .item , .carousel-inner > .item > a  {
   width: 100%;
-  margin: auto;
+  padding-top: 80px;
   background-color: #cceae5;
   min-height: 400px;
+}
+
+.quote {
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+.attribution {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+#carousel i {
+  margin: 0 8px 30px;
+  color: #46a79d;
 }
 
 .carousel-control {
@@ -482,13 +531,13 @@ a, a:hover, a:active, a:visited {
 }
 
 #carousel {
-  margin-bottom: 60px;
+  margin-bottom: 90px;
 }
 
 /*  C O N T A C T  */
 
 #contact {
-  margin-bottom: 100px;
+  margin-bottom: 90px;
 }
 
 #contact .pad-me {
@@ -548,6 +597,11 @@ form .row {
   letter-spacing: 2px;
 }
 
+.btn-contact {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 .map {
   background-image: url(https://maps.googleapis.com/maps/api/staticmap?center=Austin,TX&zoom=13&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:blue%7Clabel:G%7C40.711614,-74.012318&markers=color:red%7Clabel:C%7C40.718217,-73.998284&key=AIzaSyDvEsxXbuLy6l1HurYtlmRZNQzcL6Dr-c4);
   background-size: cover;
@@ -561,9 +615,44 @@ form .row {
     margin-left: 15px;
   }
 
-  /*.map {
-    margin-top: 40px;
-  }*/
+}
+
+/*  F O O T E R  */
+
+footer {
+  background-color: #cceae5;
+  height: 100px;
+}
+
+footer h6 {
+  color: #46a79d;
+  margin-top: 45px;
+}
+
+footer h5 {
+  color: #46a79d;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+footer i {
+  background-color: #46a79d;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  padding-top: 5px;
+  margin-top: 25px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 992px) {
+  footer {
+    height: 210px;
+  }
+
+  footer h6 {
+    margin-bottom: 20px;
+  }
 }
 
 /*  B U T T O N S   */
