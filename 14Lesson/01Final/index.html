@@ -279,34 +279,32 @@
           <button class="my-button">
             Submit
           </button>
-          <h3>My Google Maps Demo</h3>
-    <div id="map"></div>
-    <script>
-      function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDov8bXcvXGV6PNisWwgRYGdqJAE8o1vVo&callback=initMap">
-    </script>
+          <h3>Where We're Located</h3>
+          <div id="map"></div>
         </div>
       </div>
     </div>
   </div>
-
-
-
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="parallax/parallax.js-1.4.2/parallax.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAJEuWYKO4Q0HBTEsNzNG46shF9dw7F20&callback=initMap">
+  </script>
+  <script>
+    function initMap() {
+      var uluru = {lat: 30.2, lng: 97.7};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 4,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+  </script>
+
 </body>
 </html>
