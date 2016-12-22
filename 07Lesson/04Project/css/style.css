@@ -1,0 +1,111 @@
+body {
+  width: 100%; /*may need to chan this*/
+  margin: 0 auto;
+}
+
+header {
+  height: 51px;
+  width: 881px;
+  background-color: black;
+}
+
+main {
+  width: 600px;
+}
+
+aside {
+  width: 200px;
+
+}
+
+.container {
+  display: inline-block;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.container-hflex {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.logo {
+  padding: 15px 0;
+  display: inline-block;
+  color: white; /*change colors in */
+  text-decoration: none;
+}
+
+logo:visited {
+  color: #f00;
+}
+
+.navbar {
+
+  display: inline-block;
+}
+
+.navbar > li {
+  display: inline-block;
+}
+
+.navbar > li > a {
+  padding: 15px 0;
+  text-decoration: none;
+  color: white;
+
+}
+
+.navbar > li > a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.herounit {
+  padding: 50px;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.herounit-title { /* use the -xxxx as a subclass of the above class. Helps to clarify these class are related*/
+  margin-bottom: 10px;
+  font-size: 46px;
+  font-weight: bold;
+
+}
+
+.herounit-text {
+
+}
+
+.menuvertical {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/*change space around linka and have bigger buttons
+*/
+
+.menuvertical > li {
+/*  display: block; /*use to make a bigger clickable area*//*
+  padding: 5px;*/
+  width: 100%;
+  list-style-type: none; /*removes bullet*/
+}
+
+.menuvertical > li > a {
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+
+
+}
+
+.menuvertical > li > a:hover {
+
+}
+
+.menuvertical > li:last-child > a {
+  border-bottom: none;
+}
