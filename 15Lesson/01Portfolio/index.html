@@ -14,7 +14,7 @@
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-menu" aria-expanded="true" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -24,7 +24,7 @@
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="collapse navbar-collapse" id="collapse-menu">
         <ul class="nav navbar-nav">
           <li><a href="#about">About</a></li>
           <li><a href="#portfolio">Selected Work</a></li>
@@ -44,12 +44,18 @@
           </div>
           <div class="about-copy col-md-6">
             <div class="about-copy-copy">
-              <p>I am currently a graphic and web designer with Dos Mundos Creative.</p>
-              <p>In college I dual-majored in Illustration and Art History at Parsons School of Design/The New School. Then I worked for Martha Stewart where I was responsible for designing all kinds of holiday merchandise products. During my time there, I also oversaw part of a massive file-archiving project through which I found a love for databases and information management.</p>
-              <p>In my current job with Dos Mundos Creative, I’ve done branding and layout work for a variety of businesses in town, including the entire rebrand and repackaging of local açaí cafe Blenders &amp; Bowls. I’ve also been doing a lot of Wordpress web development, through which I’ve found that my strengths and interests lie in U/X and Web Development.</p>
-              <p>Outside of work I’ve been taking courses with Austin Coding Academy for the last few months to enhance my coding abilities, and I’ve also been working with a friend/mentor to develop a static web-app on S3.</p>
+              <p class="col-md-12">My name is <strong>Leslie Robertson</strong> <br class="hidden-sm hidden-xs">and I am a web developer and designer.</p>
+              <p class="col-md-12">After I graduated from Parsons School of Design, I worked for Martha Stewart for 3.5 years, designing all kinds of holiday merchandise products. During my time there, I also oversaw part of a massive file-archiving project through which I found a serious love for databases and information management.</p>
+              <p class="col-md-12">I took the plunge and quit my day job to pursue a career in tech down in Austin, TX, and ever since I've been developing websites and designing branding packages with Dos Mundos Creative.</p>
+              <p class="col-md-12">Outside of working with Dos Mundos I’ve been taking courses with Austin Coding Academy to enhance my coding abilities, and I’ve also been working with a friend/mentor to develop a static web-app on S3.</p>
             </div>
-            <a href="#experience" class="btn-white">Jump to my resume</a>
+            <div class="socials col-md-12">
+                <a href="https://github.com/roberl54" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/leslie-robertson-42181332" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/lesliespinach/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+            </div>
+
+            <a href="#experience" class="btn-white col-md-offset-3 col-md-6">Jump to my resume</a>
           </div>
         </div>
       </div>
@@ -62,16 +68,16 @@
         <h2>What I Do</h2>
       </div>
       <div class="specialties-icons row">
-        <div class="col-md-4">
-          <i class="fa fa-code fa-4x fa-border" aria-hidden="true"></i>
+        <div class="specialty col-md-4">
+          <i class="fa fa-terminal fa-3x fa-border" aria-hidden="true"></i>
           <h3>Full-Stack Web Development</h3>
         </div>
-        <div class="col-md-4">
-          <i class="fa fa-code fa-4x fa-border" aria-hidden="true"></i>
+        <div class="specialty col-md-4">
+          <i class="fa fa-object-group fa-3x fa-border" aria-hidden="true"></i>
           <h3>U/X &amp; Web Design</h3>
         </div>
-        <div class="col-md-4">
-          <i class="fa fa-code fa-4x fa-border" aria-hidden="true"></i>
+        <div class="specialty col-md-4">
+          <i class="fa fa-magic fa-3x fa-border" aria-hidden="true"></i>
           <h3>Graphic Design &amp; Branding</h3>
         </div>
       </div>
@@ -87,8 +93,8 @@
       <div class="row project-type center ">
           <a class="filter" data-filter="all">Show All</a>
           <a class="filter" data-filter=".category-1">Web Development</a>
-          <a class="filter" data-filter=".category-2">Graphic Design / Branding</a>
-          <a class="filter" data-filter=".category-3">Illustration</a>
+          <a class="filter" data-filter=".category-2">Design / Branding</a>
+          <!-- <a class="filter" data-filter=".category-3">Illustration</a> -->
       </div>
     </div>
 
@@ -96,40 +102,40 @@
       <div class="row">
         <div class="sortable">
 
-          <div href="#portfolioModal1" data-toggle="modal" class="project-item portfolio-link mix category-1 category-2 category-3 col-sm-4 col-xs-12" data-myorder="1">
-          <img src="img/portfolio/Leslie.png" alt="Web Development | Apps">
-              <div class="img-overlay"></div>
-              <div class="txt-overlay"><h5>View <i class="fa fa-caret-right"></i></h5></div>
+          <div href="#portfolioModal1" data-toggle="modal" class="project-item portfolio-link mix category-1 col-md-4 col-sm-6 col-xs-12" data-myorder="1">
+              <img src="img/portfolio/Leslie.png" alt="Web Development">
+              <div class="img-overlay"><h5>Owl Carousel</h5></div>
+              <div class="txt-overlay"><a href="../../11Lesson/01Homework/index.html" target="_blank"><h5>View <i class="fa fa-external-link-square" aria-hidden="true"></i></h5></a></div>
           </div>
 
-          <div href="#portfolioModal2" data-toggle="modal" class="project-item portfolio-link mix category-2 col-sm-4 col-xs-12" data-myorder="2">
-          <img src="img/portfolio/Leslie.png" alt="Web Development | Apps">
-              <div class="img-overlay"></div>
-              <div class="txt-overlay"><h5>View <i class="fa fa-caret-right"></i></h5></div>
+          <div href="#portfolioModal2" data-toggle="modal" class="project-item portfolio-link mix category-1 col-md-4 col-sm-6 col-xs-12" data-myorder="2">
+          <img src="img/portfolio/Leslie.png" alt="Web Development">
+              <div class="img-overlay"><h5>Google Forms</h5></div>
+              <div class="txt-overlay"><a href="../../13Lesson/01Project/index.html" target="_blank"><h5>View <i class="fa fa-external-link-square" aria-hidden="true"></i></h5></a></div>
           </div>
 
-          <div href="#portfolioModal3" data-toggle="modal" class="project-item portfolio-link mix category-3 col-sm-4 col-xs-12" data-myorder="3">
-          <img src="img/portfolio/Leslie.png" alt="Web Development | Apps">
-              <div class="img-overlay"></div>
-              <div class="txt-overlay"><h5>View <i class="fa fa-caret-right"></i></h5></div>
+          <div href="#portfolioModal3" data-toggle="modal" class="project-item portfolio-link mix category-2 col-md-4 col-sm-6 col-xs-12" data-myorder="3">
+          <img src="img/portfolio/Leslie.png" alt="Graphic Design | Branding ">
+              <div class="img-overlay"><h5>Blenders &amp; Bowls</h5></div>
+              <div class="txt-overlay"><h5>Read More <i class="fa fa-caret-right"></i></h5></div>
           </div>
 
-          <div href="#portfolioModal3" data-toggle="modal" class="project-item portfolio-link mix category-2 col-sm-4 col-xs-12" data-myorder="4">
-          <img src="img/portfolio/Leslie.png" alt="Web Development | Apps">
-              <div class="img-overlay"></div>
-              <div class="txt-overlay"><h5>View <i class="fa fa-caret-right"></i></h5></div>
+          <div href="#portfolioModal4" data-toggle="modal" class="project-item portfolio-link mix category-1 col-md-4 col-sm-6 col-xs-12" data-myorder="4">
+          <img src="img/portfolio/Leslie.png" alt="Web Development">
+              <div class="img-overlay"><h5>Bootstrap</h5></div>
+              <div class="txt-overlay"><a href="../../12Lesson/01Project/index.html" target="_blank"><h5>View <i class="fa fa-external-link-square" aria-hidden="true"></i></h5></a></div>
           </div>
 
-          <div href="#portfolioModal3" data-toggle="modal" class="project-item portfolio-link mix category-3 col-sm-4 col-xs-12" data-myorder="5">
-          <img src="img/portfolio/Leslie.png" alt="Web Development | Apps">
-              <div class="img-overlay"></div>
-              <div class="txt-overlay"><h5>View <i class="fa fa-caret-right"></i></h5></div>
+          <div href="#portfolioModal5" data-toggle="modal" class="project-item portfolio-link mix category-1 col-md-4 col-sm-6 col-xs-12" data-myorder="5">
+          <img src="img/portfolio/Leslie.png" alt="Web Development">
+              <div class="img-overlay"><h5>e-Commerce with hover effects</h5></div>
+              <div class="txt-overlay"><a href="../../09Lesson/01Homework/index.html" target="_blank"><h5>View <i class="fa fa-external-link-square" aria-hidden="true"></i></h5></a></div>
           </div>
 
-          <div href="#portfolioModal3" data-toggle="modal" class="project-item portfolio-link mix category-1 col-sm-4 col-xs-12" data-myorder="6">
-          <img src="img/portfolio/Leslie.png" alt="Web Development | Apps">
-              <div class="img-overlay"></div>
-              <div class="txt-overlay"><h5>View <i class="fa fa-caret-right"></i></h5></div>
+          <div href="#portfolioModal6" data-toggle="modal" class="project-item portfolio-link mix category-1 col-md-4 col-sm-6 col-xs-12" data-myorder="6">
+          <img src="img/portfolio/Leslie.png" alt="Web Development">
+              <div class="img-overlay"><h5>Creative Agency One-Page</h5></div>
+              <div class="txt-overlay"><a href="../../10Lesson/01Homework/index.html" target="_blank"><h5>View <i class="fa fa-external-link-square" aria-hidden="true"></i></h5></a></div>
           </div>
 
         </div>
@@ -144,17 +150,19 @@
         <h2>Experience</h2>
       </div>
 
-      <div class="row job-outer">
+      <div class="row job-and-aside-outer">
 
-        <div class="row job-inner">
-          <div class="col-xs-offset-1 col-xs-10 col-md-6">
+      <div class="row job-outer col-md-offset-1 col-md-6">
+
+        <div class="row job-inner col-sm-12">
+          <div class="job">
             <figure>
               <div class="company-title">
                 <h4>Dos Mundos Creative</h4>
                 <h6>Graphic &amp; Web Designer</h6>
               </div>
-              <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
-              <p>dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor</p>
+                <p>Rebranded Blenders &amp; Bowls Açaí Café, including new logo; Designed all printed materials from wall menus to promo mailers; Managed printing of large-format jobs, specialty printing orders, and vinyl decals</p>
+                <p>Other clients include: IDEA Public Schools, Trendkite, In Your Eyes Photography, and Krystal Transportation &amp; Luxury Service</p>
             </figure>
             <figcaption>
               <h5>Apr 2015 - Present</h5>
@@ -163,15 +171,19 @@
           </div>
         </div>
 
-        <div class="row job-inner">
-          <div class="col-xs-offset-1 col-xs-10 col-md-6">
+        <div class="row job-inner col-sm-12">
+          <div class="job">
             <figure>
               <div class="company-title">
                 <h4>Martha Stewart Living Omnimedia</h4>
                 <h6>Product Designer, Holiday</h6>
               </div>
-              <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
-              <p>dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor</p>
+              <p>Executed decor, greenery, ornament and gift wrap designs</p>
+              <!-- <p>Designed for partnerships with Home Depot, JCP and Macy’s</p> -->
+              <!-- <p>Produced and delivered large, highly-visual presentations of inspiration boards, seasonal color palettes, design decks, and new business concepts, both internally and to major business partners</p> -->
+              <p>Managed communication with overseas vendors and travelled to Europe and Asia to develop quality, cost-engineered products</p>
+              <p>Regularly cross-collaborated with marketing, PR and magazine staff</p>
+              <p>Oversaw design work of associate designers and freelance artists to meet deadlines and to insure brand coherence and aesthetic viability</p>
             </figure>
             <figcaption>
               <h5>Sep 2011 - Mar 2015</h5>
@@ -180,15 +192,15 @@
           </div>
         </div>
 
-        <div class="row job-inner">
-          <div class="col-xs-offset-1 col-xs-10 col-md-6">
+        <div class="row job-inner col-sm-12">
+          <div class="job">
             <figure>
               <div class="company-title">
                 <h4>Little, Brown Books for Young Readers</h4>
                 <h6>Art Department Intern</h6>
               </div>
-              <p>lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet</p>
-              <p>dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor</p>
+              <p>Executed design, artwork and copy corrections to book reprints</p>
+              <p>Responsible for scanning and handling original art</p>
             </figure>
             <figcaption>
               <h5>Jun 2011 - Sep 2011</h5>
@@ -197,12 +209,12 @@
           </div>
         </div>
 
-      </div>
+      </div> <!-- END job-outer -->
 
-      <div class="row aside-outer">
+      <div class="row aside-outer col-md-4">
 
-        <div class="row aside-row">
-          <div class="col-xs-offset-1 col-xs-10 col-md-3">
+        <div class="row aside-row col-sm-6 col-md-12">
+          <div class="">
             <div class="aside">
               <div class="aside-title">
                 <h4>Education</h4>
@@ -223,8 +235,8 @@
           </div>
         </div>
 
-        <div class="row aside-row">
-          <div class="col-xs-offset-1 col-xs-10 col-md-3">
+        <div class="row aside-row col-xs-hidden col-sm-6 col-md-12">
+          <div class="">
             <div class="aside">
               <div class="aside-title">
                 <h4>Awards</h4>
@@ -244,20 +256,22 @@
           </div>
         </div>
 
-        <div class="row aside-row">
-          <div class="col-xs-offset-1 col-xs-10 col-md-3">
+        <div class="row aside-row col-xs-hidden col-sm-12">
+          <div class="">
             <div class="aside">
               <div class="aside-title">
                 <h4>Skills</h4>
               </div>
               <div class="aside-content row">
-                <ul class="list-unstyled col-xs-6">
+                <ul class="list-unstyled col-xs-12">
                   <li>
-                    <h6>Adobe Creative Suite</h6>
-                    <h6><small><em>Photoshop</em></small></h6>
-                    <h6><small><em>InDesign</em></small></h6>
-                    <h6><small><em>Illustrator</em></small></h6>
+                    <h6>Digital</h6>
+                    <h6><small><em>HTML, HTML5, CSS</em></small></h6>
+                    <h6><small><em>JQUERY, JavaScript</em></small></h6>
+                    <h6><small><em>Wordpress Theme Development</em></small></h6>
                   </li>
+                </ul>
+                <ul class="list-unstyled col-xs-6 col-md-12">
                   <li>
                     <h6>Adobe Creative Suite</h6>
                     <h6><small><em>Photoshop</em></small></h6>
@@ -265,18 +279,12 @@
                     <h6><small><em>Illustrator</em></small></h6>
                   </li>
                 </ul>
-                <ul class="list-unstyled col-xs-6">
+                <ul class="list-unstyled col-xs-6 col-md-12">
                   <li>
-                    <h6>Adobe Creative Suite</h6>
-                    <h6><small><em>Photoshop</em></small></h6>
-                    <h6><small><em>InDesign</em></small></h6>
-                    <h6><small><em>Illustrator</em></small></h6>
-                  </li>
-                  <li>
-                    <h6>Adobe Creative Suite</h6>
-                    <h6><small><em>Photoshop</em></small></h6>
-                    <h6><small><em>InDesign</em></small></h6>
-                    <h6><small><em>Illustrator</em></small></h6>
+                    <h6>Traditional Media</h6>
+                    <h6><small><em>Freehand drafting</em></small></h6>
+                    <h6><small><em>Painting</em></small></h6>
+                    <h6><small><em>Hand-Lettering</em></small></h6>
                   </li>
                 </ul>
               </div>
@@ -284,7 +292,20 @@
           </div>
         </div>
 
-      </div>
+        <div class="row aside-row tldr col-sm-12">
+
+          <div class="aside">
+            <a href="img/Robertson_Leslie_Resume_Apr2016.pdf" target="_blank"><figure>
+              <h4 class="hide-on-hover">PDF RESUME</h4>
+              <h4 class="hide-normally">(TL;DR)</h4>
+            </figure></a>
+          </div>
+
+        </div>
+
+      </div> <!-- END aside-outer -->
+
+    </div> <!-- END job-and-aside-outer -->
 
     </div>
   </section>
@@ -338,6 +359,129 @@
 
     </div>
   </section>
+
+  <section class="title-line-brown" id="contact">
+    <div class="container">
+      <div class="title-box-brown row">
+        <h2>Get In Touch</h2>
+      </div>
+    </div>
+
+    <div class="row pad-me">
+      <div class="row col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfWZWKCJ26B4M3NcX4liTyCfA0hD81mkQQg7nsseOApnwVepA/formResponse" method="POST" target="_self" onsubmit="">
+
+          <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+          <div class="form-full col-xs-12 col-sm-12">
+            <label for="entry_1125013243">Want to work on a project with me? &nbsp; Drop me a line:</label>
+            <textarea name="entry.1125013243" rows="8" cols="0" dir="auto" aria-label="Want to work on a project with me? Drop me a line:  " style="z-index: auto; position: relative; line-height: 20px; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; transition: none;"></textarea>
+          </div>
+
+          </div>
+
+
+          <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            <div class="form-third col-xs-4 col-sm-4">
+              <!-- <label for="entry_1267200136">First</label> -->
+              <input type="text" name="entry.1267200136" dir="auto" placeholder="First  " title="">
+            </div>
+            <div class="form-third col-xs-4 col-sm-4">
+              <!-- <label for="entry_1615936250">Last</label> -->
+              <input type="text" name="entry.1615936250" dir="auto" placeholder="Last  " title="">
+            </div>
+            <div class="form-third col-xs-4 col-sm-4">
+              <!-- <label for="entry_255952777">Email</label> -->
+              <input type="text" name="entry.255952777" dir="auto" placeholder="Email  " title="">
+            </div>
+
+          </div>
+
+          <div class="row col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+            <input type="hidden" name="draftResponse" value="[,,&quot;-3976519408837843631&quot;]">
+            <input type="hidden" name="pageHistory" value="0">
+            <input type="hidden" name="fbzx" value="-3976519408837843631">
+
+            <div class="form-full col-xs-12 col-sm-12"
+              <label for="emailReceipt" style="display:inline;"></label>
+              <input type="submit" name="submit" value="Submit" class="btn-contact">
+            </div>
+
+          </div>
+
+        </form>
+
+    </div>
+
+    <div class="pad-me row col-xs-offset-1 col-xs-10 hidden-sm hidden-md hidden-lg">
+      <h5>Or find me at a coffee shop in Austin, TX!</h5>
+    </div>
+    <div class="map row col-xs-12 hidden-sm hidden-md hidden-lg">
+
+    </div>
+
+  </section>
+
+  <footer>
+
+  </footer>
+
+  <!-- Portfolio Modals -->
+
+  <!-- Portfolio Modal 1 -->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+              <div class="rl">
+              </div>
+          </div>
+      </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                  <div>
+
+                      <div class="">
+                          <h3>Blenders &amp; Bowls </h3>
+                      </div>
+
+                      <ul class="list-inline">
+                          <li>Design | Branding</li>
+                      </ul>
+
+                      <div class="row">
+                          <div class="content-block col-md-offset-1 col-md-10">
+                            <img src="img/portfolio/BB/BB_PurpleLogo.png" alt="Blenders &amp; Bowls Logo">
+                            <p>I designed the Blenders &amp; Bowls logo to evoke the experience of looking down into a bowl of açaí, with a leaf resting on the lip and a stem encircling the bowl.</p>
+                          </div>
+                          <div class="content-block col-md-offset-1 col-md-10">
+                            <img src="img/portfolio/BB/WL_MenuWall.jpg" alt="Blenders &amp; Bowls Menus West Lake">
+                            <p>Full wall of menus I designed for the new Blenders &amp; Bowls Westlake location. I even chalk-letter a new seasonal specials menu (bottom row, center) every quarter!</p>
+                          </div>
+                          <div class="content-block col-md-offset-1 col-md-10">
+                            <img src="img/portfolio/BB/white_sign.jpg" alt="pickup counter sign">
+                            <p>I hand-painted this all-white version of the logo under the pick-up counter.</p>
+                          </div>
+                          <div class="content-block col-md-offset-1 col-md-10">
+                            <img src="img/portfolio/BB/PrintedMenu.png" alt="printed menu">
+                            <p>Hand-held menu layout, where I was able to have a little fun with the phonetic pronunciation of Blenders &amp; Bowls' main ingredient — yes, it really is pronounced "ah-sigh-ee."</p>
+                          </div>
+                      </div>
+
+
+
+
+                      <center><button type="button" class="btn btn-teal" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button></center>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
 
 
 
