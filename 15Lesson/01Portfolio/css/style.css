@@ -9,6 +9,10 @@ body h2 {
   font-size: 22px;
 }
 
+ul {
+  text-align: right;
+}
+
 .background-ocean {
   background-image: url(../img/turksplane.jpg);
   background-repeat: no-repeat;
@@ -57,8 +61,11 @@ body h2 {
   left: 0;
 }
 
-.nav ul {
-  text-align: right;
+#navtog {
+  height: 50px;
+  width: 50px;
+  margin: 24px;
+  float: right;
 }
 
 .links {
@@ -81,12 +88,6 @@ body h2 {
   border-bottom: solid #FFFA66 3px;
   color: #1D4A71;
 }
-#navtog {
-  height: 50px;
-  width: 50px;
-  margin: 24px;
-  float: right;
-}
 
 #burger {
   background-color: #1D4A71;
@@ -94,10 +95,66 @@ body h2 {
   margin: 19px;
   margin-right: 39px;
   border-radius: 5px;
+  color: #FFFCF4;
 }
 
-#burger:hover {
+ #burger:hover {
   color: #FFFA66;
+}
+
+#hero-text {
+  text-align: center;
+  padding-top: 58%;
+}
+
+#hero-text h1 {
+  font-family: 'Pacifico';
+  font-size: 10rem;
+  line-height: 112px;
+  color: #FFFA66;
+  margin-bottom: 0px;
+}
+
+#hero-text h2 {
+  font-family: 'Arima Madurai', cursive;
+  font-size: 3rem;
+  color: #FDB454;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+#hero-text h3 {
+  font-family: 'Yellowtail';
+  font-size: 4rem;
+  color: #EA6F67;
+  margin-top: 0px;
+  margin-bottom: 70px;
+}
+
+#blurb {
+  color: #FFFCF4;
+}
+
+#button-contact {
+  margin: 0;
+  padding: 20px;;
+  background-color: #FFFCF4;
+  color: #1D4A71;
+  border: 0;
+  border-radius: 0;
+  font-family: 'Arima Madurai', cursive;
+  font-size: 20px;
+}
+
+
+#button-contact:hover {
+  color: #FFFA66;
+}
+
+#submit {
+  background-color: #FFFCF4;
+  color: #1D4A71;
 }
 
 .dropdown {
@@ -107,60 +164,30 @@ body h2 {
   border-top: solid #1D4A71 3px;
 }
 
-/*.map {
-  padding: 20px;
-}
-
-#gmap_canvas img {
-  max-width:none!important;
-  background:none!important;
-}*/
-
-#about {
-  padding-top: 100px;
-  display: flex;
-  flex-direction: column;
+.dropdown-menu {
   text-align: center;
-}
-
-#about p {
-  font-style: italic;
-}
-
-#about li {
-  color: #1D4A71;
-  padding: 5px;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-#about span {
+  width: 100%;
+  font-family: 'Arima Madurai', cursive;
+  background-color: #1D4A71;
   color: #FFFCF4;
-  font-size: 18px;
+  font-weight: 300;
+  padding-top: 2px;
+  border:
 }
 
-#about img {
-  max-width: 275px;
-  border: solid #1D4A71 2px;
-  margin: 5px;
-  text-align: center;
-}
-
-#pngsvg {
-  background: white;
-  padding: 10px;
+#modal {
+  color: #1D4A71;
 }
 
 footer {
   background-color: #FFFCF4;
-  height: 205px;
+  height: 277px;
   text-align: center;
   color: #1D4A71;
   font-family: 'Arima Madurai';
   font-weight: 100;
   padding-top: 15px;
-  border-bottom: solid #1D4A71 3px;
-  border-top: solid #1D4A71 3px;
+  border-bottom: solid #1D4A71 10px;
 }
 
 footer h4 {
@@ -203,7 +230,15 @@ footer li a:hover {
   font-size: 12px;
 }
 
-@media (min-width: 768px) {
+label {
+  font-weight: 100;
+}
+
+button {
+  font-weight: 100;
+}
+
+@media (min-width : 768px) {
   .nav li a:hover {
     color: #FFFA66;
     background-color: #1D4A71;
@@ -228,5 +263,11 @@ footer li a:hover {
   .animated:hover {
     animation-name: wobble;
     animation-duration: 1;
+  }
+}
+
+@media only screen and (min-width : 992px) {
+  #hero-text {
+    padding-top: 30%;
   }
 }
