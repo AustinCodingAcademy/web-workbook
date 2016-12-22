@@ -15,13 +15,13 @@ nav.navbar.navbar-inverse {
   color: white;
 }
 .navbar {
-  background-color: transparent;
-  position: relative;
+  background-color: white;
+  opacity: 50%;
 }
 
 #hero {
   height: 725px;
-  background-image: url(../img/hero-img.png);
+  background-image: url(../img/hero-img-xs.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -71,8 +71,14 @@ h3 {
   margin-bottom: 20px;
 }
 
-p {
-  font-family: 'Roboto', sans-serif;
+.portfolio-text h3, .portfolio-text h4 {
+  margin: 50px;
+}
+
+.about-text-two h4 {
+  margin: 100px;
+  margin: 40px;
+  text-align: left;
 }
 
 .portfolio-block-one {
@@ -144,6 +150,7 @@ span.icon-bar {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 1.2em;
 }
 
 label, input {
@@ -154,15 +161,13 @@ label, input {
 .button {
   background-color: #237f52;
   color: white;
+  margin-bottom: 40px;
+  font-size: 1.2em;
 }
 
 .banner-two p {
   font-style: italic;
   padding: 10px;
-}
-
-h4 {
-  font-weight: bold;
 }
 
 .social-icons {
@@ -177,6 +182,17 @@ a {
 a:hover {
   color: black;
 }
+
+.contact-text {
+  margin: 40px;
+  font-size: 2em;
+}
+
+.about-text-one h1 {
+  color: black;
+  margin: 75px;
+}
+
 
 /* Tablet Size CSS */
 
@@ -211,6 +227,16 @@ a:hover {
   .visible-xs {
     padding: 0;
   }
+
+  .about-text-one h1 {
+    color: black;
+    margin: 25px;
+  }
+
+  .about-text-two h4 {
+    margin: 25px;
+    margin-top: 0;
+  }
 }
 
 @media (max-device-width: 767px) {
@@ -229,5 +255,15 @@ a:hover {
 
   .visible-xs {
     padding: 0;
+  }
+
+  .about-text-one h1 {
+    color: black;
+    margin: 25px;
+  }
+
+  .about-text-two h4 {
+    margin: 25px;
+    margin-top: 0;
   }
 }
