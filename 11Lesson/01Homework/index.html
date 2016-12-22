@@ -1,10 +1,235 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Winery</title>
 
-</body>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Foundry</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Elements<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="parallax-container flex-text-header" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/wine-bg.jpg" data-natural-width="1600" data-natural-height="1066">
+      <img src="img/wine-logo.png" alt="logo"/>
+      <p>
+        "Without a doubt, one of the most consistently high quality wineries in the Barossa region."
+      </p>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <div class="flex-text">
+              <p>
+                Est 1968
+              </p>
+              <h2>
+                Combining over 100 years of hard work and shared family knowledge.
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor accumsan sem sit amet sollicitudin. Aliquam semper ultrices neque, ac imperdiet risus posuere eu. Nulla sagittis nec felis sed hendrerit. Suspendisse venenatis massa odio, vel iaculis metus vestibulum sit amet. Vestibulum sollicitudin maximus tellus, vel malesuada nisi.
+              </p>
+              <img src="img/wine-sig.png" alt="sig"/>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-6 image-box">
+            <div class="image-container">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="parallax-container flex-text-header" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="img/wine13.jpg" data-natural-width="1600" data-natural-height="1066">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-8 col-centered header-text-container">
+            <h2>
+              "We've been producing fine wine for over 65 years, I think we know what we're talking about."
+            </h2>
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <section class="nopad">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-4">
+            <div class="shop-panel">
+              <img src="img/wine3.jpg" alt="shiraz">
+              <h2>
+                Foundry Shiraz
+              </h2>
+
+              <p>
+                "Aged five years in solid, French Oak barrels sports notes of pepper and blackberry”
+              </p>
+
+              <a href="#" class="buttonclass">
+                Visit Shop
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="shop-panel">
+              <img src="img/wine6.jpg" alt="chardonnay">
+
+              <h2>
+                Foundry Chardonnay
+              </h2>
+
+              <p>
+                "A rich fruit palet with subtle Oak influence and a lingering dry, fresh finish”
+              </p>
+
+              <a href="#" class="buttonclass">
+                Visit Shop
+              </a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4">
+            <div class="shop-panel">
+              <img src="img/wine7.jpg" alt="cabernet">
+
+              <h2>
+                Foundry Cabernet
+              </h2>
+
+              <p>
+                "Generous sweet blackcurrant and mulberry character with soft, velvety tannins”
+              </p>
+
+              <a href="#" class="buttonclass">
+                Visit Shop
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/parallax.js"></script>
+  </body>
 </html>
