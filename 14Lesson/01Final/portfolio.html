@@ -5,43 +5,45 @@
     <title>Brian Todd</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin|Comfortaa:700|Exo:500|PT+Sans+Caption" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
 
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-      <header>
-          <nav class="navbar navbar-default navbar-fixed-top TT" role="navigation">
-              <div class="container">
-                  <div class="navbar-header">
-                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse">
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top TT" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
               </button>
-                      <a class="navbar-brand" href="#"></a>
-                  </div>
-                  <div class="collapse navbar-collapse" id="example-navbar-collapse">
-                      <ul class="nav navbar-nav">
-                          <li>
-                              <a href="index.html">Home</a>
-                          </li>
-                          <li>
-                              <a href="portfolio.html">Portfolio</a>
-                          </li>
-                          <li>
-                              <a href="contact.html">Contact</a>
-                          </li>
+                    <a class="navbar-brand" href="#"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
 
 
-                      </ul>
-      </header>
-      </div>
-      </div>
-      </nav>
-      <body>
+                    </ul>
+    </header>
+    </div>
+    </div>
+    </nav>
+</head>
+
+<body>
     <section id="work">
         <img src="img/logo.png" class="logo" alt="">
         <div class="learn">
@@ -73,7 +75,7 @@
         <div class="container-fluid">
             <div class="row col-md-12">
                 <div class="col-md-3">
-                  <i class="fa fa-flag fa-4x" aria-hidden="true"></i>
+                    <i class="fa fa-flag fa-4x" aria-hidden="true"></i>
                     <h2>Freedom</h2>
                     <p>Most companies give you the freedom of working where and when you want as long as the work gets done on time.</p>
                 </div>
@@ -85,47 +87,46 @@
                 </div>
 
                 <div class="col-md-3">
-                  <i class="fa fa-css3 fa-4x" aria-hidden="true"></i>
-                  <h2>Creativity </h2>
-                  <p>Many design options for HTML and CSS that are constantly changing this give you more options on your creativity.</p>
+                    <i class="fa fa-css3 fa-4x" aria-hidden="true"></i>
+                    <h2>Creativity </h2>
+                    <p>Many design options for HTML and CSS that are constantly changing this give you more options on your creativity.</p>
                 </div>
 
                 <div class="col-md-3">
-                  <i class="fa fa-laptop fa-4x" aria-hidden="true"></i>
+                    <i class="fa fa-laptop fa-4x" aria-hidden="true"></i>
                     <h2>Freelance</h2>
                     <p>To build your portfolio up you can do freelance work to build your skills and showcase your work.</p>
+                </div>
             </div>
         </div>
-</div>
+</section>
+
+
+
+        <section id="relocate">
+            <h2>Relocation</h2>
+            <div id="map" style="width:100%;height:500px"></div>
+
+            <script>
+                function myMap() {
+                    var mapCanvas = document.getElementById("map");
+                    var mapOptions = {
+                        center: new google.maps.LatLng(30.271979, -97.745500),
+                        zoom: 8
+                    };
+                    var map = new google.maps.Map(mapCanvas, mapOptions);
+                }
+            </script>
+
+
+
+        </section>
 
 
 
 
-    <section id="relocate">
-      <h2>Relocation</h2>
-      <div id="map" style="width:100%;height:500px"></div>
-
-      <script>
-
-      function myMap() {
-        var mapCanvas = document.getElementById("map");
-        var mapOptions = {
-          center: new google.maps.LatLng(30.271979,-97.745500),
-          zoom: 8
-        };
-        var map = new google.maps.Map(mapCanvas, mapOptions);
-      }
-      </script>
-
-
-
-    </section>
-
-
-
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 </body>
 
 </html>
