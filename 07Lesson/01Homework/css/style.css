@@ -1,0 +1,92 @@
+main {
+    width: 100%
+}
+
+body {
+    display: flex;
+    margin: 0 auto;
+    /*width: 95%;*/
+}
+
+section {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.background {
+    background-image: url(../img/background.jpeg);
+}
+
+nav {
+    position: fixed;
+    z-index: 9999;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-flow: row;
+    width: 95%;
+}
+
+nav a {
+    padding: 1.2% 10px;
+}
+
+.titlepage {
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    /* works with row or column */
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: space-between;
+    margin-top: 15%;
+    line-height: 6em;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, a {
+    font-family: 'Droid Sans', sans-serif;
+    text-decoration: none;
+}
+
+.titlepage h2 {
+    font-size: 60pt;
+    color: black;
+    text-shadow: 2px 2px #ff0091;
+}
+
+.titlepage p {
+    position: relative;
+    font-size: 30pt;
+    color: #ff0091;
+    /*line-height: 20px;*/
+    text-transform: capitalize;
+}
+
+.logo {
+    position: relative;
+    vertical-align: middle;
+    float: left;
+}
+
+.clearfix:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.button {
+    position: relative;
+    margin: 0 auto;
+}
+
+.enter {
+    font-family: sans-serif;
+    font-size: 20pt;
+    color: red;
+}
