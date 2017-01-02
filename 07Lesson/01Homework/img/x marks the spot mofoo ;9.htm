@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://127.0.0.1:56828/08Lesson/01Homework/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>x marks the spot mofoo ;9</title>
+  
+  
+<link rel="stylesheet" href="./x marks the spot mofoo ;9_files/style.css"></head>
+
+<body>
+  <header>
+          <!--need 2 divs in header, float left-->
+          <!--links float right-->
+    <div class="headerleft">
+      <h1>
+        Company/Organization
+      </h1>
+    </div>
+    <div class="headerright">
+      <a href="http://127.0.0.1:56828/08Lesson/01Homework/#">link1</a>
+      <a href="http://127.0.0.1:56828/08Lesson/01Homework/#">link2</a>
+      <a href="http://127.0.0.1:56828/08Lesson/01Homework/#">link3</a>
+      <a href="http://127.0.0.1:56828/08Lesson/01Homework/#">link4</a>
+      <a href="http://127.0.0.1:56828/08Lesson/01Homework/#">link5</a>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="sec">
+            <!--big pic mofo-->
+      <div class="imgtop">
+            <!--big uptop pic with word goes here-->
+        <div class="toptext">
+
+            <!--text inside of bigpic-->
+          <h2>
+            Big Important title
+          </h2>
+          <h3>
+            subtitle goes here!
+          </h3>
+          <a href="http://127.0.0.1:56828/08Lesson/01Homework/#">CLICK ME!!</a>
+        </div>
+      </div>
+    </section>
+    <section class="sec">
+            <!--one pic with bacon-->
+      <div class="leftsmall">
+        <!--img on left (small)-->
+        <img src="./x marks the spot mofoo ;9_files/rmeyes.png">
+      </div>
+      <div>
+        <!--split into title and content-->
+        <h3>
+          bacon
+        </h3>
+        <p>
+          Bacon ipsum dolor
+        </p>
+      </div>
+    </section>
+    <section>
+      <!--cookie cutter!!-->
+      <div>
+        <!--div inside with h/p-->
+      </div>
+      <div>
+        <!--div inside with h/p-->
+      </div>      <div>
+        <!--div inside with h/p-->
+      </div>      <div>
+        <!--div inside with h/p-->
+      </div>
+    </section>
+
+    <section>
+      <!--the lil guys-->
+      <!--also cookie cutters-->
+      <div>
+        <!--img h/p-->
+      </div>
+      <div>
+        <!--img h/p-->
+      </div>
+    </section>
+    <section>
+      <!--big boy on the bottom. img h/p-->
+      <div>
+        <!--img-->
+      </div>
+      <div>
+        <!--wordsssssssss-->
+      </div>
+    </section>
+  </main>
+<script>
+	// Code injected by live-server
+	(function() {
+		function refreshCSS() {
+			var sheets = [].slice.call(document.getElementsByTagName("link"));
+			var head = document.getElementsByTagName("head")[0];
+			for (var i = 0; i < sheets.length; ++i) {
+				var elem = sheets[i];
+				head.removeChild(elem);
+				var rel = elem.rel;
+				if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+					var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+					elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+				}
+				head.appendChild(elem);
+			}
+		}
+		var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+		var address = protocol + window.location.host + window.location.pathname + '/ws';
+		var socket = new WebSocket(address);
+		socket.onmessage = function(msg) {
+			if (msg.data == 'reload') window.location.reload()
+			else if (msg.data == 'refreshcss') refreshCSS();
+		};
+		console.log('Live reload enabled.');
+	})();
+</script>
+
+
+
+</body></html>
