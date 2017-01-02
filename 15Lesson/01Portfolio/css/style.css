@@ -1,0 +1,459 @@
+body {
+  margin: 0 auto;
+  width: 90%;
+
+}
+.container-fluid {
+
+}
+.navbar-nav {
+    float: right;
+    font-family: 'Codystar', cursive;
+    font-size: 12px;
+}
+#logo {
+  height: 60px;
+  width: 50%;
+  border-radius: 25%;
+}
+.logo:hover {
+  color: #c058a7;
+}
+
+.navbar-default {
+    background-color: white;
+    border-color: white;
+}
+.logo-title {
+  font-family: 'Petit Formal Script', cursive;
+}
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 250px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+  margin-top: 15%;
+}
+
+
+.projects {
+margin-left: 2%;
+margin-right: 2%;
+}
+#project-1{
+/*need to make background image
+background-image: url(../img/berry.jpg);
+background-repeat: no-repeat;
+width: 100%;
+height: 300px;
+background-size: cover;
+background-position: center;
+*/
+}
+
+#project-1  .text {
+position:relative;
+visibility:hidden;
+}
+
+#project-1:hover .text {
+visibility:visible;
+}
+
+#project-2 {
+  /*need to make background image*/
+
+}
+
+#project-2  .text {
+position:relative;
+visibility:hidden;
+}
+
+#project-2:hover .text {
+visibility:visible;
+}
+#project-3 {
+  /*need to make background image*/
+
+}
+
+#project-3  .text {
+position:relative;
+visibility:hidden;
+}
+
+#project-3:hover .text {
+visibility:visible;
+}
+#project-4 {
+  /*need to make background image*/
+
+}
+
+#project-4  .text {
+position:relative;
+visibility:hidden;
+}
+
+#project-4:hover .text {
+visibility:visible;
+}
+#project-5 {
+  /*need to make background image*/
+
+}
+
+#project-5 .text {
+position:relative;
+visibility:hidden;
+}
+
+#project-5:hover .text {
+visibility:visible;
+}
+#project-6 {
+  /*need to make background image*/
+
+}
+
+#project-6 .text {
+position:relative;
+visibility:hidden;
+}
+
+#project-6:hover .text {
+visibility:visible;
+}
+.button {
+color: black;
+}
+.button:hover {
+  text-decoration: none;
+  color: #c058a7;
+}
+
+
+.img-circle {
+    border-radius: 50%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle
+}
+h1 {
+  font-family: 'Petit Formal Script', cursive;
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 5px;
+}
+h2 {
+  font-family: 'Codystar', cursive;
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 15px;
+
+}
+h3 {
+  font-family: 'Petit Formal Script', cursive;
+  padding-bottom: 15px;
+  font-size: 30px;
+}
+h4 {
+  font-family: 'Petit Formal Script', cursive;
+  text-align: center;
+
+}
+h5 {
+  font-family: 'Codystar', cursive;
+  font-size: 12px;
+  text-align: center;
+}
+.text {
+  font-family: 'Codystar', cursive;
+  text-align: center;
+}
+
+/*laptop size */
+.snip-it {
+  height: 220px;
+  width: 100%;
+  border-radius: 25%;
+}
+.resume {
+  margin-left: 5%;
+  margin-top: 2%;
+
+}
+.resume-logo {
+  height: 100px;
+  width: 100%;
+}
+.resume-logo-aca {
+  height: 130px;
+  margin-left: 25%;
+}
+.resume-logo-ecu {
+  height: 130px;
+  margin-left: 25%;
+
+}
+.resume-logo-oe {
+  height: 100px;
+  margin-left: 25%;
+
+
+}
+.resume-logo-msh {
+  height: 120px;
+  margin-left: 25%;
+
+
+}
+.msh {
+  padding-top: 50px;
+}
+.bullets {
+  font-family: 'Carrois Gothic SC', sans-serif;
+  font-size: 10px;
+}
+
+
+.references {
+  padding-top: 8%;
+}
+
+
+.ref-profile {
+  border-radius: 50%;
+  height: 200px;
+  width: 90%;
+}
+.ref-title {
+  color: black;
+  font-size: 14px;
+  padding-bottom: 5%;
+
+}
+.ref-review {
+  text-align: center;
+  padding: 10%;
+}
+.review {
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: 'Carrois Gothic SC', sans-serif;
+  padding-top: 3%;
+  font-size: 14px;
+}
+.resume-header {
+  padding-top: 8%;
+
+}
+.inquiry-head {
+  padding-top: 8%;
+  text-align: center;
+
+}
+.map {
+  width: 100%;
+}
+label {
+  font-family: 'Codystar', cursive;
+  margin-top: 3%;
+
+}
+
+#q {
+  margin-bottom: 6%;
+}
+input {
+  border: none;
+  border-bottom: 1px dotted;
+  font-family: 'Codystar', cursive;
+
+}
+.contact-click {
+  text-decoration: none;
+  padding: 2%;
+}
+.contact-click:hover {
+  text-decoration: none;
+
+}
+
+#quick-links {
+  margin-top: 3%;
+  background-color: #FFF7F8;
+}
+.links {
+  background-color: #FFF7F8;
+
+}
+i {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#modal-text {
+
+}
+/*tablet size*/
+@media (max-width:1023px) and (min-width:768px) {
+  .snip-it {
+    /*height: 300px;*/
+    /*width: 60%;*/
+    border-radius: 25%;
+    margin-bottom: 5%;
+  }
+
+  .ref-profile {
+    border-radius: 50%;
+    width: 30%;
+  }
+  .map {
+    width: 80%;
+    margin-left: 10%;
+
+  }
+  label {
+    font-family: 'Codystar', cursive;
+    margin-left: 10%;
+
+  }
+  .hire-me {
+    background: #FFF7F8;
+    font-family: 'Codystar', cursive;
+    padding: 10px 35px 10px 35px;
+    font-style: 38px;
+    margin-top: 1%;
+    margin-bottom: 5%;
+
+  }
+  .bullets {
+    font-size: 16px;
+  }
+}
+
+
+/*phone size*/
+
+.bullets {
+  font-size: 12px;
+}
+.snip-it {
+  /*height: 300px;*/
+  /*width: 60%;*/
+  border-radius: 25%;
+  margin-bottom: 7%;
+}
+@media (max-width: 767px) {
+  .ref-profile {
+    border-radius: 50%;
+    height: 300px;
+
+  }
+  .ref-title {
+    padding-top: 5%;
+    font-size: 24px;
+  }
+  .review {
+    font-size: 18px;
+  }
+  .resume-logo {
+    height: 80px;
+    width: 100%;
+  }
+  .resume-logo-aca {
+    height: 80px;
+  }
+  .resume-logo-ecu {
+    height: 80px;
+  }
+  .resume-logo-oe {
+    height: 80px;
+  }
+  .resume-logo-msh {
+    height: 80px;
+
+  }
+  .img-circle {
+      border-radius: 50%;
+      height: 250px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20%;
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle
+  }
+  .hire-me {
+    background: #FFF7F8;
+    font-family: 'Codystar', cursive;
+    padding: 10px 35px 10px 35px;
+    font-style: 38px;
+    margin-top: 1%;
+    margin-bottom: 7%;
+
+  }
+  #q {
+    width: 50%;
+  }
+
+
+}
+.hire-me {
+  background: #FFF7F8;
+  font-family: 'Codystar', cursive;
+  padding: 10px 35px 10px 35px;
+  font-style: 38px;
+  margin-top: 1%;
+  margin-bottom: 3%;
+
+}
+.hire-me:hover {
+  color: #c058a7;
+}
+#modal-text {
+  font-family: 'Codystar', cursive;
+  align-items: center;
+}
