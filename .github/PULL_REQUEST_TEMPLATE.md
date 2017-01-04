@@ -1,4 +1,0 @@
-- [ ] Code is commented.
-- [ ] Code is indented.
-- [ ] Code is mostly readable.
-- [ ] Code fulfills required assignment. 
