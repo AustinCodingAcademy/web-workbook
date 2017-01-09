@@ -16,10 +16,42 @@ Specific Comments:
 
 *Comments may also be made on the file itself using github's commenting tools.*
 
+
+
+
+
+
 ## Checkpoint 2: Foundry Winery Website
+- [ ] Responsive navbar: 20 points
+- [ ] Responsive site (resizes to fit desktop, tablet, and mobile views): 30 points 
+- [ ] Matched layout of original site: 20 points
+- [ ] Matched font of original site: 10 points
+- [ ] Properly commented code: 10 points
+- [ ] Properly indented code: 10 points
+
+Specific Comments:
+
+*Comments may also be made on the file itself using github's commenting tools.*
+
+
+
+
 
 
 ## Checkpoint 3: Learning Team Project
+- [ ] Mockup meets customer requirements: 25 points
+- [ ] Website meets customer requirements: 25 points
+- [ ] Learning team worked together effectively and contributed equally: 25 points
+- [ ] Class presentation was engaging and effective: 25 points
+
+Specific Comments:
+
+*Comments may also be made on the file itself using github's commenting tools.*
+
+
+
+
+
 
 
 ## Checkpoint 4: Personal Portfolio Website
@@ -32,3 +64,8 @@ Specific Comments:
 Specific Comments:
 
 *Comments may also be made on the file itself using github's commenting tools.*
+
+
+
+
+
