@@ -6,6 +6,6 @@
 
 ## Claiming your workbook
 1. Make sure you are signed into GitHub
-1. Here's a video explaining how to do it:
+1. Here's a [video](https://www.youtube.com/embed/CtKQdoHjt6M) explaining how to do it:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CtKQdoHjt6M" frameborder="0" allowfullscreen></iframe>
