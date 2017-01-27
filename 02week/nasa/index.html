@@ -5,6 +5,8 @@
   <link rel="stylesheet" href="css/css-reset.css" </>
 <!-- This is my personal style sheet -->
   <link rel="stylesheet" href="css/style.css" </>
+  <link href="https://fonts.googleapis.com/css?family=Arsenal|Roboto" rel="stylesheet">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,6 +14,7 @@
 </head>
 <body>
   <main>
+    <!-- hero image -->
     <section id="hero">
 
       <div>
@@ -19,13 +22,14 @@
       </div>
 
     </section>
+    <!-- This is contact information section -->
     <section id="contactUs">
       <div><h3>Social Media</h3>
         <ul>
-          <li>Twitter - @nasa</li>
-          <li>Facebook - fb.com</li>
-          <li>Instagram @nasa</li>
-          <li>YouTube - youtube.com/NASA</li>
+          <li>Twitter - <a href="https://twitter.com/nasasocial?lang=en">@nasa </a> </li>
+          <li>Facebook - <a href="https://www.facebook.com/NASA/">fb.com</a></li>
+          <li>Instagram <a href="https://www.instagram.com/nasa/">@nasa</a></li>
+          <li>YouTube - <a href="https://www.youtube.com/nasa">youtube.com/NASA</a></li>
         </ul>
 
       </div>
@@ -33,12 +37,20 @@
       <ul>
         <li>Pulic Communications Office</li>
         <li>NASA Headquarters</li>
-        <li>300 E. Street SW. Suite 5R30</li>
-        <li>Washington, DC 20546</li>
+        <li><a href="https://www.google.com/maps/place/NASA+Headquarters,+300+E+St+SW,+Washington,+DC+20546/@38.8829544,-77.0185081,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7b778ad9093dd:0xf2c31ae10392d5e5!8m2!3d38.8829544!4d-77.0163194"> 300 E. Street SW. Suite 5R30</br>
+        Washington, DC 20546</a></li>
         <li>(202)358-0001 (Office)</li>
         <li>(202)358-4338 (Fax)</li>
       </ul></div>
-      <div><h3>Contact Us</h3></div>
+      <div id="contactForm"><h3>Contact Us</h3>
+        <form>
+         Name <br/><input type="text" name="fullname" id="contactForm" size="32" ><br/>
+         <br/>
+         Message<br/><textarea name="message" id="contactForm" cols="30" rows="10"></textarea>
+         <br/>
+         <input type="button" class="sendNow" value="send">
+       </form>
+      </div>
     </section>
   </main>
   <div class=".boxmodel"></div>
