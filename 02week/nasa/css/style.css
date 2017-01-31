@@ -1,3 +1,8 @@
+body {
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
 #hero {
   margin: 0 auto;
   background-image: url("../img/nasa-background.jpg");
@@ -10,14 +15,70 @@
 
 h1 {
   text-align: center;
-  padding-top: 150px;
-  font-family: sans-serif;
-  font-size: 250%;
+  padding-top: 180px;
+  font-size: 450%;
   font-weight: bold;
-
+  color: white;
 }
 
-body {
-  width: 960px;
+#info {
+  display: flex;
+  align-items: center;
+  height: 324px;
+  /*width: 850px;*/
+  background-color: lightgrey;
+  margin-left: 234px;
+  margin-right: 234px;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.social-media,
+.contact {
+  float: left;
+  padding: 10px;
+  border: 0;
   margin: 0 auto;
+  width: 260px;
+  height: 304px;
+}
+
+.office-info {
+  float: left;
+  padding: 10px;
+  border: 0;
+  margin: 0 auto;
+  width: 270px;
+  height: 304px;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+p, form {
+  color: grey;
+  padding: 2px;
+}
+
+#messagebox {
+  height: 50px;
+}
+
+#sendbutton {
+  background-color: grey;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 6px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
