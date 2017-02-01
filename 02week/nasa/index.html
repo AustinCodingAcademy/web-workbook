@@ -1,35 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>NASA LANDING PAGE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NASA LANDING PAGE</title>
 
-  <!-- CSS reset file -->
-  <link rel="stylesheet" href="css/css-reset.css" />
-  <!-- CSS file -->
-  <link rel="stylesheet" href="css/style.css" />
+    <!-- CSS reset file -->
+    <link rel="stylesheet" href="css/css-reset.css" />
+    <!-- CSS file -->
+    <link rel="stylesheet" href="css/style.css" />
 
 </head>
-<body>
-<main>
-  <!-- this whole section is for image -->
-  <section id="hero">
-    <div>
-      <h1>NASA
-      </h1>
-    </div>
 
-    <!-- add margin for table -->
-  </section>
-  <br></br>
-  <section id="contact-info">
-    <div>Social Media</div>
-    <div>Office Info</div>
-    <div>Contact Us</div>
-</main>
+<body>
+    <main>
+        <!-- this whole section is for image -->
+        <section id="hero">
+            <div>
+                <!-- NEED TO ALIGN IN CENTER OF IMAGE-->
+                <h1>NASA
+      </h1>
+            </div>
+        </section>
+
+        <br></br>
+        <!-- add margin for table
+            add social media icons -->
+        <section id="contact-info">
+            <table id="table">
+                <tr>
+                    <th>Social Media</th>
+                    <th>OFFICE INFO</th>
+                    <th>CONTACT US</th>
+                </tr>
+                <tr>
+                    <td>Twitter - @nasa<br></br>Facebook - fb.com/nasa<br></br>Instagram - @nasa<br></br>Youtube - youtube.com/NASA</td>
+                    <td>Public Communications Office<br></br>NASA Headquarters<br></br>300 E. Street SW, Suite 5R30<br></br>Washington, DC 20546<br></br>(202) 358-0001 (Office)<br></br> (202) 358-4338 (Fax)</td>
+                    <!-- text boxes-->
+                    <td>
+                        <form action="action_page.php">
+                            Name:<br>
+                            <input type="text" name="Name">
+                            <br> Message:
+                            <br>
+                            <textarea rows="4"> </textarea>
+                            <br><br>
+                            <input type="submit" value="send">
+                        </form>
+                    </td>
+                </tr>
+
+            </table>
+
+
+        </section>
+
+    </main>
 </body>
 
 </html>
