@@ -1,0 +1,97 @@
+/*Helps me visualize the how the padding and margin of elements will affect various surrounding elements*/
+/**{
+  border: solid red .2em;
+}*/
+
+/* modifies the base font-size on the body using a percentage. This adjusts things so that 1em equals 10px, instead of the default 16px. To set the font-size to the equivalent of 14px, set it to 1.4em.
+*/
+body { font-size:62.5%; }
+h1 { font-size: 2.4em; } /* =24px */
+p  { font-size: 1.2em; } /* =11px */
+li { font-size: 1.4em; } /* =14px */
+
+/*The nasa img*/
+#hero {
+  background-image: url("../img/nasa-background.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  width:850px;
+  height:450px;
+  margin: 0 auto;
+  font-family: 'Fira Sans',sans-serif;
+  font-size:4.6em;
+  color: #ffffff;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+
+
+/*The gray container element*/
+#contact-info{
+  height:324px;
+  width:850px;
+  background-color:#E6E6E6;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+/*Adjusted the color of each item to match the actual color of each social media icon*/
+.fa-twitter{
+  color:#00aced;
+}
+.fa-facebook{
+  color:#3b5998;
+}
+.fa-instagram{
+  color:#bc2a8d;
+}
+.fa-youtube{
+  color:#bb0000;
+}
+
+
+
+/*#social-links{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+
+}*/
+
+input{
+  border:none;
+}
+
+textarea{
+border: none;
+resize:none;
+
+}
+
+
+
+/*The send button*/
+.button{
+    background-color: #4D4D4D;
+    border: none;
+    color: white;
+    padding: 4px 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+  }
