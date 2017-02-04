@@ -1,17 +1,25 @@
-.columns {
-  display: flex;
-}
-
 .column {
-  flex: 1;
   display: flex;
   flex-direction: column; /* Makes the articles stacked vertically */
 }
 
-.main-column {
-  flex: 2;
-}
-
 .article {
   flex: 1; /* Stretches the articles to fill up the remaining space */
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto; /* sets initial element size based on its contents  */
+}
+
+.article-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.article-content {
+  flex: 1; /* This will make the content fill up the remaining space, and thus push the information bar at the bottom */
+}
+
+.nested-column {
+  flex: 2;
 }
