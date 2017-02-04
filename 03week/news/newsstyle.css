@@ -1,0 +1,50 @@
+html {
+  font-family: sans-serif;
+  background-color: grey;
+}
+
+header {
+  color: white;
+  text-align: center;
+}
+
+
+.allcolumn {
+  display: flex;
+  align-content: center;
+}
+.maincolumn {
+  flex: 2;
+  order: 1;
+  width: 75%;
+  min-width: 300px;
+}
+.column {
+  flex: 1;
+  order: 2;
+  width: 25%;
+}
+
+
+article {
+  border: 3px solid black;
+  margin: 20px;
+  justify-content: center;
+}
+.articleimg {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+}
+
+@media (max-width: 600px) {
+  .allcolumn {
+    display: block;
+  }
+  .maincolumn {
+    width: 100%;
+  }
+  .column {
+    width: 100%;
+  }
+}
