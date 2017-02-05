@@ -1,36 +1,49 @@
 body {
   text-align: center;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Muli', sans-serif;
   font-size: 19px;
+  background-color: #f1f2f2;
 }
 
 .flex-grid-nav {
   display: flex;
-  width: 360px;
+  width: 100%;
+  height: 55px;
   margin: 0 auto;
-  justify-content: center;
-  align-items: space-around;
-  padding: 10px;
+  padding: 25px;
+  background-color: #fff;
 }
 
-.flex-grid-nav .col {
+.col-title {
+  display: flex;
+  flex: 2;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 17px;
+  padding-left: 25px;
+}
+
+.col-nav {
+  display: flex;
   flex: 1;
-  padding: 10px 0px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 50px;
 }
 
-header {
-  margin-top: 35px;
-}
 
 h1 {
+  font-family: 'UnifrakturCook', cursive;
   text-align: center;
-  font-size: 36px;
+  font-size: 42px;
   padding-bottom: 20px;
 }
 
 a {
   text-decoration: none;
-  color: gray;
+  color: #515151;
+  font-weight: 300;
+  font-size: 22px;
 }
 
 a:hover {
@@ -39,7 +52,7 @@ a:hover {
 
 .flex-grid-main {
   display: flex;
-  width: 940px;
+  width: 80%;
   margin: 0 auto;
   justify-content: space-between;
   align-items: flex-start;
@@ -50,6 +63,9 @@ a:hover {
 .col-main {
   flex: 2.15;
   display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .col-main-aside {
@@ -66,6 +82,7 @@ p {
   text-align: left;
   font-size: 16px;
   line-height: 24px;
+
 }
 
 h2 {
@@ -76,16 +93,8 @@ h2 {
 }
 
 article img {
-  width: 55%;
+  width: 35%;
   margin: 0 30px 10px 0;
 
-}
 
-hr {
-  margin: 0 auto;
-  width: 65%;
 }
-
-/*.img-aside {
-  width: 75%;
-}*/
