@@ -12,8 +12,9 @@ body {
   font-size: 50px;
   background-color: #c5d1e5;
   display: flex;
-  justify-content: center;
   align-items: center;
+  align-content: center;
+  justify-content: center;
   margin: 0;
 }
 
@@ -33,7 +34,7 @@ nav {
   align-content: center;
   align-items: center;
   justify-content: space-around;
-  display: flex;
+  display: inline-flex;
   width: 750px;
   height: 80px;
   margin: 0px;
@@ -61,10 +62,7 @@ a:hover {
 
 section {
   border: 2px dashed grey;
-  align-items: flex-start;
-  display: flex;
-  align-content: flex-start;
-  justify-content: center;
+  float: left;
   margin: 10px;
   width: 70%;
 }
@@ -82,22 +80,17 @@ article {
 aside {
   border: 2px dashed grey;
   float: left;
-  align-content: center;
   background-image: url(http://www.beebenow.com/files/State_Farm_banner_ad.jpg);
   background-size: auto;
   background-repeat: repeat-y;
   margin: 10px;
   width: 170px;
   height: 480px;
-  justify-content: space-around;
 }
 
 footer {
   font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  text-align: center;
   width: 800px;
   height: 50px;
   background-color: grey;
