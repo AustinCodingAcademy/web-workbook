@@ -1,7 +1,180 @@
 html{
-  background-color: red;
+  background-color: yellow;
+}
+
+body{
+  width: 100%;
+}
+
+.newspaper{
+  width: 90%;
 }
 
 p{
   font-size: 45;
 }
+
+#hero{
+background-color: lightgray;
+background-size: cover;
+/*background-repeat: no-repeat;*/
+/*background-position: 50% 60%;*/
+/*position: relative;*/
+width: 100%;
+height: 200px;
+border: solid 5px;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 2%;
+  padding-bottom: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
+  position: relative;
+  font-size: 500%;
+  font-family: 'aladin', cursive;
+  text-align: center;
+  color: Black;
+}
+
+.columns {
+  display: flex;
+}
+
+.column {
+  background: #2F1D4F;
+  border: 5px solid #2F1D4F;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.main-column {
+  flex: 1;
+
+}
+
+.article {
+  background: #FF8500;
+  border: 5px solid #4C3081;
+  color: white;
+  flex: 1;
+  margin: 5px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+}
+
+.article-body{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-left: 20%;
+}
+
+.article-content{
+  flex: 1;
+}
+
+.article-info{
+  display: flex;
+  font-size: 0.85em;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.article-image{
+  background: red;
+  display: block;
+  padding-top: 30%;
+  position: relative;
+  width: 100%;
+  height: 100%
+  flex: 3;
+
+}
+
+.article-image img {
+  display: block;
+  height: auto;
+  left: 0;
+  position: relative;
+  top: 0;
+
+}
+
+.first-article {
+  flex-direction: row-reverse;
+}
+
+.first-article .article-body{
+  flex: 1;
+  order: 0;
+}
+
+.first-article .article-image {
+  height: 100px;
+  order: 1;
+  padding: 0;
+  margin:0;
+  width: 100px;
+  width: 275px;
+  height: 500px;
+  border: solid 10px;
+  border-color: black;
+  margin-right: 100px;
+}
+
+  h2{
+    font-family: 'aladin', cursive;
+    font-size: 150%;
+    margin-top: 10px;
+    margin-bottom: 7px;
+  }
+
+  a{
+    text-decoration: none;
+    font-family: 'Kavivanar', cursive;
+    font-size: 14;
+  }
+
+  aside {
+  width: 10%;
+  }
+
+
+  @media screen and (min-width: 800px) {
+    .columns,
+    .column{
+      display: flex;
+    }
+  }
+
+  @media screen and (min-width:1000px){
+    .first-article{
+      flex-direction: row;
+    }
+
+    .first-article .article-body{
+      flex: 1;
+    }
+
+    .first-article .article-image {
+      height: 500px;
+      order: 2;
+      padding-top: 0;
+      width: 300px;
+
+    }
+
+    .main-column {
+      flex: 3;
+    }
+
+    .nested-column {
+      flex:2;
+    }
+  }
