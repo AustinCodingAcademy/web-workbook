@@ -2,11 +2,12 @@ header{
   font-family: Old London;
   font-size: 40px;
   color: blue;
-  border: 2px solid black;
-  height: 120px;
-  margin: 5px;
-  text-align: center;
 
+  height: 120px;
+
+  text-align: center;
+  background: lightblue;
+  background-blend-mode: lighten;
 }
 
 nav{
@@ -15,7 +16,8 @@ nav{
   margin-right: 5px;
   margin-bottom: 2px;
   height: 50px;
-  border: 2px solid green;
+  min-width: 300px;
+
 }
 
 .sports{
@@ -28,16 +30,18 @@ nav{
   height: 50px;
   width: 100px;
   float: left;
+  margin-left: 150px;
 }
 
 .money{
   height: 50px;
   width: 100px;
   float: right;
+  margin-right: 150px;
 }
 
 main{
-  border: 3px solid black;
+
   height: 800px;
   width: 100%;
   text-align: center;
@@ -46,7 +50,7 @@ main{
 }
 section{
   margin-top: 40px;
-  border: 3px dashed red;
+  /*border: 3px dashed red;*/
   float: left;
   text-align: center;
   height: 730px;
@@ -54,7 +58,7 @@ section{
   background-color: yellow;
 }
 article{
-  border: 2px solid yellow;
+  /*border: 2px solid yellow;*/
   height: 630px;
   width: auto;
   content-align: center;
@@ -71,15 +75,15 @@ iframe{
 
 }
 aside{
-  border: 3px dashed blue;
+  /*border: 3px dashed blue;*/
   float: left;
   margin-top: 40px;
   margin-left: 10px;
   text-align: center;
-  width: 20%;
+  width: 25%;
   height: 730px;
   background-color: red;
-  background-image: url("thegoogs.png");
+  background-image: url("lilg.png");
 
 }
 
@@ -87,15 +91,23 @@ footer{
   margin-top: 10px;
   height: 130px;
   width: auto;
-  border: 3px solid black;
+  /*border: 3px solid black;*/
   clear:both;
+  text-align: left;
+  text-al
+  background-color: lightblue;
+  background-image: url("http://bestanimations.com/Earth&Space/Earth/earth-spinning-rotating-animation-14.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+h1{margin-top: 90px;}
 
 @media only screen and (max-width: 500px) {
   main{
     height:550px;
-  }
-    section {
+      }
+  section{
         background-color: lightblue;
         height: 70%;
         width: 90%;
@@ -105,18 +117,28 @@ footer{
       height:90%;
       width:90%;
       margin: auto;
-    }
+      }
     iframe{
       height: 100%;
       width:100%;
-
-    }
+      }
     aside{
         width: 90%;
         height: 100px; auto;
         margin: 10px;
-}
-
-
-
+        background-size: contain;
+      }
     }
+
+@media only screen and (max-width: 650px){
+.news{
+  margin:auto;
+}
+.money{margin:auto;}
+
+@media only screen and (min-width:400px;){
+  .news{
+    height: 50px;
+    width: 50px;
+  }
+}
