@@ -1,0 +1,128 @@
+body{
+  background-color: white;
+  background-color: rgba(54, 54, 54, 1)
+
+}
+html{
+  background-color: white;
+  font-family: helvetica;
+}
+
+.main{
+margin: 0 auto;
+width: 90%;
+}
+
+
+.columns{
+  display: flex;
+}
+.column{
+  display: flex;
+  flex: 1;
+  /*border: 5px solid grey;*/
+  flex-direction: column; /*makes the articles stack vertically*/
+}
+.main-column{
+  flex: 2;
+}
+.article{
+  flex: 1; /*stretches articles to fill up the space*/
+  /*padding: 10px;*/
+  /*margin: 10px;*/
+  background-color: white;
+  flex-direction: column;
+  flex-basis: auto;
+  margin: 10px;
+}
+.article-body{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 10px;
+  background-color: white;
+}
+.article-title{
+color: black;
+flex-shrink: 0;
+font-size: 25px;
+font-weight: bold;
+
+}
+
+.article-content{
+  flex: 1;
+  margin-top: 5px;
+  color: black;
+
+}
+.article-info{
+  display: flex;
+  font-size: 18px;
+  justify-content: space-between;
+  margin: 10px;
+  color: black;
+  justify-content: flex-end;
+  align-self: flex-end;
+
+
+}
+a {
+  text-decoration: none;
+}
+.article-image{
+background: #eee;
+display: block;
+padding-top: 80%;
+position: relative;
+width: 100%;
+border-bottom: 2px solid black;
+}
+
+div, h2, p, figure {
+  margin: 0;
+  padding: 0;
+}
+
+.article-image img {
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.article-image.is-5by4 {
+  padding-top: 66.6666%;
+}
+
+h1{
+  font-size: 45px;
+  text-align: center;
+  color: rgb(66, 110, 197);
+
+
+}
+header{
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  font-weight: bold;
+}
+.article-inner img {
+  height: 50%;
+  width: 100%;
+  background-color: white;
+  margin-top: 5px;
+}
+.article-innercontent{
+  flex: 1;
+  margin-top: 5px;
+  color: black;
+  line-height: 1.5;
+
+}
+.article-innercontent, p{
+text-indent: 50px;
+padding-top: 10px;
+}
