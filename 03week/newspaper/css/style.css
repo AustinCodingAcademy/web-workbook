@@ -42,7 +42,7 @@
   margin: 0 0 2% 0;
 }
 .flex-grid-thirds .col {
-  width: 32%;
+  width: 75%;
 }
 * {
   box-sizing: border-box;
@@ -61,7 +61,45 @@ body {
   text-align: center;
 }
 .col2 {
-  /*background: #007fff;*/
+  /*background-color: #007fff;*/
   padding: 2px;
   text-align: center;
+  border-color: blue;
+  border: 10px;
+  border-style: solid;
+  border-width: 100%;
+  /*width: 100%;*/
+}
+.columns {
+  display: flex;
+}
+
+.column {
+  background: #eee;
+  border: 5px solid #ccc;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.main-column {
+  flex: 2;
+}
+.multiple-column {
+  color: black;
+  font-size: 20px;
+  columns: 2;
+}
+
+.article {
+  background: mediumseagreen;
+  border: 5px solid seagreen;
+  color: white;
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+}
+h1 {
+  color: black;
 }
