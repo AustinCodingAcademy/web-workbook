@@ -3,11 +3,10 @@
   margin: 0 auto;
 }
 
-
 header {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
+  margin: 10px;
 }
 
 .title {
@@ -16,28 +15,23 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 400px;
-  margin: 20px;
+  flex-direction: column;
+  height: 300px;
+  margin: 10px;
 }
 
 .mainsection {
   display: flex;
   align-items: center;
   text-align: center;
-  margin: 20px;
+  margin: 10px;
 }
 
 .middle {
   background-color: lightgrey;
   display: flex;
   justify-content: space-around;
-  margin: 20px;
-}
-
-.bottom {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px;
+  margin: 10px;
 }
 
 .columns {
@@ -47,9 +41,19 @@ header {
   margin: auto;
  }
 
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  max-width: 700px;
+  margin: 20px;
+}
+
 .columns2 {
   display: flex;
   justify-content: center;
+  max-width: 100%;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .articleimg {
@@ -62,13 +66,15 @@ footer {
   background-image: url("http://placehold.it/800x300");
   background-repeat: no-repeat;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   min-height: 300px;
   justify-content: center;
   align-items: center;
 }
 
 .button {
+  font-size: 20px;
   background-color: darkgrey;
   border: 2px solid black;
-  display: flex;
 }
