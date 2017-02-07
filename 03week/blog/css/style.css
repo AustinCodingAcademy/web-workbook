@@ -3,27 +3,96 @@ html {
   font-style: italic;
 }
 
-body {
-  background-color: silver;
-}
 
 .columns {
-  display: flex;
   color: : silver;
 }
 
 .column {
-  flex: 1;
-  background: green;
+  background: ;
   border: 5px solid #ccc;
-  padding: 20px;
+  flex: 1;
   flex-direction: column;
+  padding: 20px;
 }
 
 .main-column {
   flex: 2;
 }
-
+ /* keep organized by keeping CSS Alphabetical */
 .article {
-  display: flex; /* Stretches the articles to fill up the remaining space */
+  background: mediumseagreen;
+  border: 5px solid seagreen;
+  color: white;
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto; /* sets initial element size based on its contents  */
+  }
+
+#image1 {
+  width:400px;
+  height:200px;
+}
+
+@media screen and (min-width: 800px) {
+  .columns,
+  .column {
+    display: flex;
+  }
+}
+
+  .article-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .article-content {
+    flex: 1; /* This will make the content fill up the remaining space, and thus push the information bar at the bottom */
+  }
+
+  .first-article {
+  flex-direction: row;
+}
+
+.first-article .article-body {
+  flex: 1;
+}
+
+.first-article .article-image {
+  height: 300px;
+  order: 2;
+  padding-top: 0;
+  width: 400px;
+}
+
+@media screen and (min-width: 1000px) {
+  .first-article {
+    flex-direction: row;
+  }
+
+  .first-article .article-body {
+    flex: 1;
+  }
+
+  .first-article .article-image {
+    height: 300px;
+    order: 2;
+    padding-top: 0;
+    width: 400px;
+  }
+
+  .main-column {
+    flex: 3;
+  }
+
+  .nested-column {
+    flex: 2;
+  }
 }
