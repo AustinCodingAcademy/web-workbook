@@ -1,7 +1,50 @@
+main{
+  display: flex;
+  justify-content: space-around;
+  background-color: #E0FFFF;
+  padding: 10px;
+  border: 2px solid #000;
+}
+section{
+  height: 700px;
+  width: 60%;
+  background-color: #FFA07A;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 2px solid #000;
+}
+aside{
+ border: 2px solid #000;
+  width: 30%;
+  background-color: #FFA07A;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5px;
+  align-items: center;
+}
+article{
+  border: 2px solid #000;
+    height: 200px;
+    width: 300px;
+    background-color: #E0FFFF;
+    padding:3px;
+}
+aside > article{
+  height: 300px;
+  width:90%;
+}
 header {
   background-color: black;
   height: 150px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
 }
 
 h1 {
@@ -9,48 +52,23 @@ h1 {
   color: white;
   font-size: 50px;
   align-items: center;
-  display: flex;
-  justify-content: center;
+
 }
 
 nav {
   background-color: white;
   height: 50px;
-  width: 90%;
-  display: flex;
-  justify-content: center;
-}
 
-h3{
-  display: flex;
-  justify-content: center;
-  font-family: serif;
-}
+  text-align: center;
 
-main {
-  background-color: purple;
 }
+nav a{
+  padding-left: 100px;
 
-section {
-  background-color: aqua;
-  float: left;
-  width: 70%;
+
 }
-
-article {
-  background-color: white;
-  /*display: flex;*/
-}
-
 footer {
   background-color: lightblue;
   height: 50px;
-  width: 80%;
-}
-
-aside {
-  background-color: pink;
-  height: 600px;
-  width: 29%;
-  float: left;
+  width: 70%;
 }
