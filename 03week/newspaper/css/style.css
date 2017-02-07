@@ -1,28 +1,37 @@
 html{
-  background-color: yellow;
-}
-
-body{
+  widows: auto;
+  background-color: #2F1D4F;
   width: 100%;
 }
 
-.newspaper{
-  width: 90%;
+body{
+  width: 80%;
+  margin-left: 0;
 }
 
-p{
+.newspaper{
+  width: auto;
+}
+
+/*p{
   font-size: 45;
+}*/
+
+.nav{
+padding: 2px;
+align-self: center;
 }
 
 #hero{
-background-color: lightgray;
-background-size: cover;
-/*background-repeat: no-repeat;*/
-/*background-position: 50% 60%;*/
-/*position: relative;*/
+background-color: lightblue;
+background-size: auto;
+background-repeat: no-repeat;
+background-position: top;
+position: relative;
 width: 100%;
-height: 200px;
+height: 175px;
 border: solid 5px;
+margin: 0;
 }
 
 h1 {
@@ -32,7 +41,7 @@ h1 {
   padding-left: 10%;
   padding-right: 10%;
   position: relative;
-  font-size: 500%;
+  font-size: 400%;
   font-family: 'aladin', cursive;
   text-align: center;
   color: Black;
@@ -48,7 +57,8 @@ h1 {
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding: 15px;
+  padding: 25px;
+  max-width: 80%;
 }
 
 .main-column {
@@ -57,11 +67,11 @@ h1 {
 }
 
 .article {
-  background: #FF8500;
+  background: lightblue;
   border: 5px solid #4C3081;
-  color: white;
+  color: black;
   flex: 1;
-  margin: 5px;
+  margin: 0px;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -72,7 +82,7 @@ h1 {
   display: flex;
   flex: 1;
   flex-direction: column;
-  padding-left: 20%;
+  padding: 2%;
 }
 
 .article-content{
@@ -87,26 +97,22 @@ h1 {
 }
 
 .article-image{
-  background: red;
-  display: block;
-  padding-top: 30%;
-  position: relative;
-  width: 100%;
-  height: 100%
-  flex: 3;
-
+  justify-content: center;
 }
 
 .article-image img {
   display: block;
-  height: auto;
-  left: 0;
+  height:
   position: relative;
-  top: 0;
-
+  width:  200px;
+  height: auto;
+  background-size: cover;
+  justify-content: center;
+  border: solid 5px;
 }
 
 .first-article {
+  flex:1;
   flex-direction: row-reverse;
 }
 
@@ -115,21 +121,21 @@ h1 {
   order: 0;
 }
 
-.first-article .article-image {
-  height: 100px;
+.first-article .article-image  img{
+  /*height: 100px;*/
   order: 1;
   padding: 0;
   margin:0;
-  width: 100px;
-  width: 275px;
-  height: 500px;
+  max-width: 300px;
+  width: auto;
+  height: auto;
   border: solid 10px;
   border-color: black;
-  margin-right: 100px;
+  margin-right: 0;
 }
 
   h2{
-    font-family: 'aladin', cursive;
+    font-family: serif;
     font-size: 150%;
     margin-top: 10px;
     margin-bottom: 7px;
@@ -137,15 +143,20 @@ h1 {
 
   a{
     text-decoration: none;
-    font-family: 'Kavivanar', cursive;
+    font-family: 'times', cursive;
     font-size: 14;
   }
 
   aside {
-  width: 10%;
+    margin-top: 3%;
   }
 
+  footer {
+  clear: both;
 
+  }
+
+/*
   @media screen and (min-width: 800px) {
     .columns,
     .column{
@@ -177,4 +188,4 @@ h1 {
     .nested-column {
       flex:2;
     }
-  }
+  }*/
