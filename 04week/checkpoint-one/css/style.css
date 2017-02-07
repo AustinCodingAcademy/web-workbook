@@ -6,47 +6,52 @@ color: white;
 background-color: black;
 }
 
-head{
-  width:auto;
+.heading{
+  width:100%;
+  height: auto;
   margin: 0;
-  float: right;
+  padding: 40px;
 }
  /*how to move text around! Small victories*/
-#title{
-  text-align: left;
-  display: flex;
+.title{
+  float: left;
+  padding: 10px;
 }
 
 .nave{
-  text-align: right;
-  padding:10px;
-  justify-content: flex-start;
-  flex-direction: column;
+  float: right;
+  margin:0;
+  padding: 10px;
 }
 
-#opcity{
+.opcity{
   text-align: center;
   background-image: url("../img/opcity.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  width: 700px;
-  height: 350px;
+  width: 100%;
+  height: 100%;
   padding: 75px;
 }
 
-#button{
+.button{
   text-align: center;
   display: inline-block;
   font-size: 14px;
   margin-top: auto;
   color:black;
   background-color: white;
-  border: 5px solid blue;
+  border: 5px solid silver;
+  height:20%;
+  width:20%;
 }
 
 .columns{
   display:flex;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
   }
 
 .main-column{
@@ -70,27 +75,27 @@ head{
 .fours{
   background-color: lightgray;
   display:flex;
-  justify-content: space-between;
+  justify-content: ;
+  height: 100%;
+  width: 100%;
+  flex:1;
+  margin: 0;
 }
 
 .four-article{
   flex:1
-  width: 10%;
-  heigh: 20%;
+  width: 100%;
+  heigh: 100%;
   flex-direction: row;
   padding: 10px;
-}
-
-.four-article{
-  flex: 1;
-  margin:0;
-  padding:10px;
+  align-items: left;
 }
 
 .twos{
   display:flex;
   padding: 20px;
   margin: 5px;
+  justify-content: center;
 }
 
 .twoarticle{
@@ -98,15 +103,18 @@ head{
   margin:0
   padding: 20px;
   background-color: none;
+  justify-content: center;
 }
 
 .help{
-  background-color: lightgray;
+  background-image: url("../img/foot.jpg");
   display: flex;
   text-align: center;
+  padding: 20px;
 }
 
 .helpbutton{
   flex: 1;
   align-items: center;
+  align-content: flex-end;
 }
