@@ -1,27 +1,32 @@
 .container {
   display: flex;
 flex-wrap: wrap;
-flex-direction: column;
+flex-direction: row;
+background-color: #D0EAED;
 
 }
 
 .img{
   display: flex;
-justify-content: space-around;
+justify-content: flex-start;
   width: 50%;
   height: 50%;
 flex: 2;
+border: 2px solid black;
 }
 
 .article {
   display: flex;
 flex: 2;
-
+border: 2px solid black;
+background-color: #E0C7B3;
 }
 
 .aside {
-flex:-2;
-align-self: flex-end;
+flex: 0;
+align-content: stretch;
+border: 2px solid black;
+background-color: #F2DBDA;
 
 }
 .header {
@@ -29,5 +34,23 @@ align-self: flex-end;
   font-family: 'News Cycle', sans-serif;
   font-weight: bolder;
   font-size: 50px;
-  align-self: center;
+  justify-content: center;
+}
+.body {
+  background-color: #E9A9AF;
+}
+.navbar{
+  text-align: center;
+
+}
+.span{
+  list-style: none;
+  display: block;
+  width:100%;
+  margin:5px;
+  padding:5px;
+
+
+
+
 }
