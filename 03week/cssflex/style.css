@@ -33,7 +33,7 @@ h1 {
   color: #718daa;
 }
 
-.header {
+header {
   padding-top: .5em;
   padding-bottom: .5em;
   border: 1px solid #a2a2a2;
@@ -42,7 +42,18 @@ h1 {
   border-radius: 5px;
 }
 
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 section {
+  min-width: 500px;
+  width: calc(100% - 250px);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   padding-top: .5em;
   padding-bottom: .5em;
   border: 3px solid #a2a2a2;
@@ -51,48 +62,29 @@ section {
   border-radius: 5px;
 }
 
-
-.flex-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-/*justify-content:;
-align-content: row;
-align-items: center;
-}*/
-}
-
-.flex-item {
-  background: lightgrey;
-  padding: 4px;
+article {
   width: 200px;
   height: 250px;
+  margin: 2px;
+  padding: 1px;
   margin-top: 10px;
-  line-height: 125px;
-  color: black;
-  font-weight: bold;
-  font-size: 1em;
-  text-align: center;
-}
-
-ul li {
-  margin: 0 0 2em 2em;
-  float: left;
-}
-
-/* ul {
-  column-count: 2;
-  column-gap: 2em; */
+  border: 1px solid grey;
+  box-shadow: 2px 4px 11px 0 rgba(0,0,0,0.75);
+  font-size: 1.15em;
+  color: #34495e;
+  /*column-count: 2;*/
+  }
 
 aside {
+  width: 200px;
+  height: 550px;
+  margin: 2px;
+  padding: 1px;
+  margin-top: 10px;
   float: right;
-  width: 20%;
-  height: 50%;
-  background-color: lightgrey;
   min-width: 145px;
   font-size: 1.5em;
+  color: #34495e;
 }
 
 img {
