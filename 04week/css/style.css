@@ -1,50 +1,92 @@
 header{
   display: flex;
-  border: 1px solid black;
-  height: 100px;
-
+  align-items: center;
+  justify-content: space-between;
 }
-/*header h4{
-  float: left;
-}
-header a{
-  float: right;
-}*/
-/*main{
-  clear: both;
-}
-
 section{
   display: flex;
-  margin: 30px auto;
 }
-section:first-child{
-  height: 600px;
-  background-image: url(http://placehold.it/1000x450);
+.first{
+  height: 400px;
+  background-image: url(http://placehold.it/1000x400);
   background-size: cover;
-  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-section:first-child p{
+.first h1{
+  font-size: 40px;
+  margin-bottom: -8px;
+}
+.first h3{
+  font-size: 26px;
+}
+.first a{
+  font-size: 20px;
+  color: #000;
   border: 1px solid black;
-  padding: 10px;
-}
-section:nth-child(1){
-  margin: 30px auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.first article{
-  margin-left: 20px;
-  padding: 10px;
+  padding: 8px 30px;
+  text-decoration: none;
 }
 .second{
-  justify-content: space-around;
+  padding: 10px;
+  margin: 35px;
+}
+article{
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  font-size: 20px;
+}
+.second p{
+  padding: 10px 70px;
 }
 .third{
-  justify-content: center;
-}*/
+  margin: 35px;
+  padding: 60px 20px;
+  background-color: #f2f2f2;
+  justify-content: space-around;
+  text-align: center;
+}
+.third article{
+  width: 220px;
+}
+.forth{
+  justify-content: space-around;
+}
+.forth article{
+  width: 350px;
+  align-items: flex-end;
+}
+.forth p{
+  text-align: center;
+}
+.forth p:last-child{
+    margin-top: -10px;
+}
+.fifth{
+  height: 200px;
+  background-image: url(http://placehold.it/1000x200);
+  background-size: cover;
+  font-size: 30px;
+  padding: 60px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 35px;
+}
+.fifth p{
+  padding: 50px;
+  text-align: center;
+}
+.fifth div{
+  height: 50px;
+
+}
+.fifth div a{
+  color: #000;
+  border: 1px solid black;
+  padding: 8px 30px;
+  text-decoration: none;
+  margin: 0px 30px;
+}
