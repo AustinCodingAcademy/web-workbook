@@ -1,5 +1,5 @@
 html {
-  font-family: sans-serif;
+  font-family: font-family: 'Merriweather', serif, sans-serif;
 }
 
 figure {
@@ -18,6 +18,21 @@ img {
   align-items: center;
 }
 
+.header nav a {
+  padding: 10px;
+  margin-right: 5px;
+}
+
+.header nav a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
 /* HERO */
 .hero {
   background-image: url("../img/vitamix.jpg");
@@ -33,11 +48,27 @@ img {
 
 .hero-content {
   text-align: center;
+  font-size: 1.5em;
+}
+
+.hero-content
+a:link, a:visited {
+    background-color: white;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: white;
 }
 
 /* FIRST ARTICLE */
 .pickle {
   display: flex;
+  margin: 10px;
 }
 
 .pickle-image {
@@ -52,6 +83,21 @@ img {
   text-align: center;
 }
 
+.pickle-content h3 a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.pickle-content h3 a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.pickle-content p {
+  box-sizing: border-box;
+  padding: 30px;
+}
+
 /* FOUR SMALL ARTICLES */
 .feature {
   display: flex;
@@ -61,6 +107,10 @@ img {
 .feature-content {
   flex: 1;
   padding: 10px;
+}
+
+.feature-content figure img {
+  max-width: 280px;
 }
 
 /* TWO MEDIUM ARTICLES */
@@ -73,7 +123,17 @@ img {
 
 .beef article {
   flex: 1;
-  max-width: 40%;
+  max-width: 35%;
+}
+
+.beef p a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.beef p a:hover {
+  text-decoration: underline;
+  color: black;
 }
 
 .beef-info {
@@ -93,15 +153,21 @@ img {
   margin: 10px;
 }
 
-.bottom-content {
+.bottom {
   text-align: center;
 }
 
-.bottom-content button {
-  text-align: center;
+.bottom article a {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
 }
-
-
 
 
 
