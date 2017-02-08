@@ -2,19 +2,34 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  font-family: sans-serif;
   justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: black;
+}
+
+a:hover {
+  color: white;
 }
 
 /*Header*/
 header {
-  height: 500px;
+  height: 530px;
   margin-bottom: 20px;
   width: 1000px;
 }
 
 nav {
+  align-items: center;
   display: flex;
   flex-direction: row;
+  height: 30px;
   justify-content: space-between;
   width: 1000px;
 }
@@ -27,11 +42,29 @@ nav-links {
 header section {
   align-items: center;
   background-image: url("https://placeholdit.imgix.net/~text?txtsize=83&txt=1000%C3%97500&w=1000&h=500");
-  color: blue;
   display: flex;
   flex-direction: column;
   height: 500px;
   justify-content: center;
+  width: 1000px;
+}
+
+header section h1 {
+  font-size: 42px;
+  font-weight: 500;
+}
+
+header section p {
+  font-size: 24px;
+}
+
+header section a {
+  align-items: center;
+  border: 1px solid black;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  width: 100px;
 }
 
 /*Section one*/
@@ -51,11 +84,17 @@ section:nth-child(1) {
   width: 600px;
 }
 
+.first-text p {
+  font-size: 18px;
+}
+
 /*Section two*/
 section:nth-child(2) {
+  align-items: center;
   background-color: #dbdbdb;
   display: flex;
   flex-direction: row;
+  height: 450px;
   justify-content: space-around;
   margin: 20px 0;
   width: 1000px;
@@ -80,16 +119,46 @@ section:nth-child(3) {
   flex-direction: row;
   justify-content: space-around;
   margin: 20px 0;
+  text-align: center;
   width: 1000px;
 }
 
+.three-text {
+  width: 320px;
+}
+
 section:nth-child(3) p:nth-child(2) {
-  align-self: flex-end;
+  text-align: right;
 }
 
 /*Footer*/
 footer {
-  background-color: #dbdbdb;
-  margin-top: 20px;
+  align-items: center;
+  background-image: url("https://placeholdit.imgix.net/~text?txtsize=83&txt=1000%C3%97350&w=1000&h=350");
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  justify-content: center;
+  margin: 20px auto;
+  text-align: center;
   width: 1000px;
+}
+
+.footer-text {
+  width: 900px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer a {
+  align-items: center;
+  border: 1px solid black;
+  display: flex;
+  font-size: 24px;
+  height: 65px;
+  justify-content: center;
+  width: 150px;
 }
