@@ -1,9 +1,9 @@
 body {
     font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    font-size: 24px;
     color: darkslategray;
-    font-size: 18px;
+    line-height: 36px;
     font-weight: 300;
-    line-height: 30px;
 }
 
 .flex-grid-nav {
@@ -12,7 +12,7 @@ body {
     height: 40px;
     margin: 0 auto;
     padding: 25px;
-    /*background-color: #cdff43;*/
+    background-color: #fff;
 }
 
 .col-title {
@@ -20,8 +20,9 @@ body {
     flex: 1;
     justify-content: flex-start;
     align-items: center;
-    /*padding-top: 5px;*/
+    /*padding-top: 4px;*/
     padding-left: 25px;
+    color: #11d1ac;
 }
 
 .col-nav {
@@ -30,165 +31,186 @@ body {
     justify-content: flex-end;
     align-items: center;
     padding: 0px 50px;
+    margin: 0 auto;
 }
 
-#hero {
+a {
+    text-decoration: none;
+    color: darkslategray;
+    font-size: 18px;
+    padding-left: 45px;
+}
+
+h2 {
+    font-family: 'Abel', Helvetica, Arial, sans-serif;
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+#hero-image {
     background-image: url("../img/people-on-dock.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
     background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, 0.6);
     max-width: 100%;
-    height: 500px;
+    height: 450px;
     margin: 0 auto;
 }
 
 .hero-text {
-    /*display: flex;
-    justify-content: space-between;
-    flex-flow: column wrap;*/
-    width: 50%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
     margin: 0 auto;
-    padding: 125px;
-}
-
-h2 {
-    font-size: 42px;
-    color: #846e13;
-    font-weight: 700;
-    font-family: 'Playfair Display', serif;
-    font-weight: lighter;
-    /*text-transform: uppercase;*/
+    width: 700px;
+    padding: 115px;
 }
 
 h1 {
-    font-size: 52px;
+    font-size: 54px;
     color: white;
-    font-weight: 400;
     text-align: center;
-    margin-bottom: 15px;
-    line-height: 64px;
+    padding-bottom: 20px;
+    font-weight: 400;
+
 }
 
 h3 {
-    font-size: 28px;
+    text-align: center;
     color: white;
-    font-weight: 300;
-    text-align: center;
-    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 34px;
+    padding-bottom: 30px;
 }
 
-a {
-    font-size: 18px;
-    color: darkslategray;
-    text-decoration: none;
-    padding-left: 35px;
-    font-weight: 300;
-}
-
-.buttons {
-    display: flex;
-    flex: 1;
-    max-width: 50%;
-    margin: 0 auto;
-    justify-content: space-around;
-    align-items: center;
-    /*flex-flow: row nowrap;*/
-}
-
-#header-button-1 {
-    background-color: #cdff43;
-    padding: 20px;
-    margin: 0 auto;
-    text-align: center;
-    width: 120px;
-    color: darkslategray;
-    text-transform: uppercase;
-
-}
-
-#header-button-2 {
-    background-color: #cdff43;
-    padding: 20px;
-    margin: 0 auto;
-    text-align: center;
-    width: 120px;
-    color: darkslategray;
-    text-transform: uppercase;
-
-}
-
-/*.button:nth-child(2) {
-  float: right;
+.button {
   margin: 0 auto;
-}*/
+  width: 150px;
+  background-color: #11d1ac;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+}
 
 .flex-sct-1 {
-    display: flex;
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 80px 40px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  background-color: #f1f2f2;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  /*padding: 75px, 40px;*/
 }
 
-.img-sct-1 {
-    display: flex;
-    flex: 1;
-    width: 30%;
-    margin: 0 auto;
+.flex-sct-1-img {
+  display: flex;
+  flex: 1;
+  width: 200px;
+  margin: 0 auto;
+  padding: 100px;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.text-sct-1 {
-    display: flex;
-    flex: 2;
-    padding: 0 40px;
+#wine {
+  width: 200px;
+}
+
+.flex-sct-1-text {
+  display: flex;
+  flex: 2;
+  width: 400px;
+  margin: 0 auto;
+  padding: 100px 50px;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .flex-sct-2 {
   display: flex;
-  max-width: 100%;
-  background-color: #f2f2f2;
-  height: 600px;
-  justify-content: center;
+  max-width: 80%;
+  background-color: red;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: space-around;
   align-items: flex-start;
+}
+
+.flex-sct-2-img {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 25%;
+  height: 600px;
+  margin: 0 auto;
+  background-color: green;
+}
+
+/*.img-1 {
+  background-image: url("../img/blueberry-lime.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+
+
+}*/
+
+#footer-img {
+  background-image: url("../img/hands-lights.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: rgba(226, 70, 142, .9);
+  max-width: 80%;
+  height: 200px;
   margin: 0 auto;
 
 }
 
-.flex-col-4 {
+.footer-text{
   display: flex;
-  flex: 1;
-  justify-content: flex-start;
-  /*background-color: red;*/
-  max-width: 19%;
-  flex-flow: column;
-  padding: 40px 10px;
-  margin: 20px;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 800px;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 50px;
 }
 
+.btn-2 {
+  margin: 0 auto;
+  width: 150px;
+  background-color: #8891bf;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
 
-.section-image {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 300px;
+}
+
+.buttons-footer {
+  display: flex;
+  flex-flow: row;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: space-between;
   width: 300px;
 }
 
-.image1 {
-  background-image: url('../img/blueberry-lime.jpg');
-}
-
-.image2 {
-  background-image: url('../img/cranberry-cocktails.jpg');
-}
-
-.image3 {
-  background-image: url('../img/blue-drink.jpg');
-}
-
-.image4 {
-  background-image: url('../img/cheers.jpg');
+h4 {
+  font-weight: 500;
+  font-size: 36px;
+  text-align: center;
+  color: white;
 }
