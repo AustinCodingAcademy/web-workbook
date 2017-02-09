@@ -3,63 +3,82 @@ html{
 }
 header{
   border: 2px solid black;
-  width:auto;
+  width:100%;
   height: 70px;
-  vertical-align: text-bottom;
-  margin: 5px
+  display: flex;
+  margin: 5px;
+  justify-content: space-between;
+
+
+}
+h1{
+  align-self: center;
+  width: auto;
+
+}
+header h1{
+  align-self: flex-end;
 }
 
-header  a{
+nav{
+  align-self:flex-end;
+
+}
+
+a{
   height: 30px;
-  width: 100px;
-  margin: 15px;
+  width: 50px;
+  margin: 5px;
   border: 2px solid red;
   background-color: lightblue;
-  float: right;
-  text-align: center;
-
-  /* justify-content: center; */
-  /*padding-top: 4px;*/
-
-  }
-
-article{
-  display: flex;
-  flex-direction: row;
-  justify-content:center;
 }
 
 
 section{
   display:flex;
   flex-direction: column;
-  align-content:flex-start;
+  align-items: center;
   justify-content: center;
   border: 2px solid blue;
   width: 100%;
-  height: 500px;
-  justify-content: space-around;
+  height: 600px;
   background-color: lightgreen;
   margin: 5px;
-  text-align: center;
+}
 
-}
 article{
-  margin: 5px;
+  margin: 15px;
   align-items:flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
 }
+
+
 button
 {
-  width:50px;
+  width:120px;
   height:40px;
   text-align: center;
 }
 
+img{
+  margin: 15px;
+}
 div{
   display:flex;
-  
+  flex-direction: column;
+  width:auto;
 }
+.two{
+  display: flex;
+  justify-content: space-around;
+}
+.two div{
+  width: 11%;
+  flex-direction:column;
 
+}
 .middle{
 
   justify-content: space-around;
@@ -67,11 +86,7 @@ div{
 }
 
 }
-.content {
-  flex-direction: column;
-  width: 100px;
-  align-content: center;
-}
+
 
 .second {
   width:250px;
