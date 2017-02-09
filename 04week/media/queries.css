@@ -16,6 +16,7 @@ h1, p {
 section {
   background-color: black;
   min-height: 400px;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -28,8 +29,9 @@ main {
 
 article {
   width: 20%;
+  min-width: 165px;
   height: 95%;
-  margin: 5px;
+  margin: 20px 5px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -38,9 +40,8 @@ article {
 
 div{
   margin-top: 10px;
-  border: dotted black 1px;
   height: 50px;
-  width: 150px;
+  width: 75%;
 }
 #blue{
   background-color: #1aa3ff
@@ -52,4 +53,15 @@ div{
 
 #teal{
   background-color: #00e6b8
+}
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 375px) {
+  section{
+    background-color: #e6e6e6
+  }
+  article{
+    width: 95%;
+  }
 }
