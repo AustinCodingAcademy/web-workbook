@@ -1,5 +1,5 @@
 body {
-  margin: 0 auto;
+  margin: 10px;
   box-sizing: border-box;
 }
 
@@ -7,25 +7,34 @@ h1, h2, h3 {
   text-align: center;
 }
 
-img {
-
-}
-
-.navstuff {
+header {
   display: flex;
-  justify-content: flex-start;
+  margin: 2px;
 }
-.navbuttons {
-  align-self: flex-end;
-  margin: 1px;
-  border: 1px solid black;
+
+header > div {
+  padding-left: 15px;
+}
+
+header > div:first-child {
+  margin-right: auto;
+  font-size: 20px;
+}
+
+a.button {
+  border: solid black 1px;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: yellow;
 }
 
 .box1 {
-  background-color: lightblue;
+  background-image: url("http://placehold.it/200x250");
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 300px;
-  padding-top: 100px;
-  text-align: center;
+  flex-direction: column;
 }
 
 .box2 {
@@ -40,29 +49,54 @@ img {
 .box3 {
   display: flex;
   background-color: lightgrey;
+  justify-content: space-around;
 }
 
 .box3a {
-  flex-direction: column;
-  justify-content: space-between;;
-  margin: 20px;
+  margin: 10px;
+  width: 130px;
+  padding: 50px 0;
+  text-align: center;
 }
 
 .box4 {
   display: flex;
-  padding: 40px;
-  margin: 20px;
-  justify-content: space-between;
+  padding: 20px;
+  margin: 10px;
+  justify-content: space-around;;
 }
 
 .box4a {
   flex-direction: column;
-  align-content: center;
+  width: 300px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.box4a > p {
+  margin-top: 0;
+}
+
+.box4a > p:last-child {
+  text-align: right;
 }
 
 .box5 {
-  background-color: lightgrey;
+  background-image: url("http://placehold.it/200x250");
   display: flex;
+  height: 300px;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
+  font-size: 18px;
+}
+
+.box5a {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.box5a > a {
+  margin: 10px;
 }
