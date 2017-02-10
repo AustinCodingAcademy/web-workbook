@@ -1,34 +1,123 @@
-main {
-  
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
+  height: 530px;
+  width: 1000px;
+  margin: 20px;
 }
-section:nth-child(1) {
-  background-image: url(http://placehold.it/400x550);
+
+nav {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1000px;
+  height: 30px;
+}
+
+.links{
+  display: flex;
+  justify-content: flex-end;
+}
+
+header section {
+  background-image: url("http://placehold.it/1000x500");
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 500px;
+  margin: 20px;
+  width: 1000px;
+}
+
+
+
+h1 {
+  font-size: 50px;
+}
+
+main section:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  width: 1000px;
+}
+
+.first {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+
+main section:nth-child(2) {
+  display: flex;
+  align-items: center;
+  background-color: lightgray;
+  flex-direction: row;
+  height: 450px;
+  width: 1000px;
+  margin: 20px;
+  justify-content: space-around;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  width: 170px;
+}
+
+main section:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 1000px;
+  margin: 20px;
+}
+
+.three {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 340px;
+}
+.date {
+  text-align: right;
+}
+
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 400px;
-  width: 600px;
-
-h1 {
-  font-size: 50px;
-
-}
-
-section:nth-child(2) {
-
-}
-section:nth-child(3) {
-display:flex;
-flex-wrap: wrap;
-justify-content: space-between;
+  flex-direction: column;
+  width: 1000px;
+  background-image: url("http://placehold.it/1000x400");
 }
 
 .boxed {
-  border: 1px solid black ;
+  border: 1px solid black;
+  width: 60px;
+  height: 30px;
+  margin: 10px;
+  text-align: center;
+
+}
+
+.buttonbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
 }
