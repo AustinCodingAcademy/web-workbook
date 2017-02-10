@@ -1,0 +1,102 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+  }
+
+main #hero, main #title {
+  margin: 0 auto;
+}
+
+#hero {
+  width: 90%;
+  height: 400px;
+  background-color: #2BCDC0;
+}
+
+#hero h1 {
+  font-size: 48px;
+  text-align: center;
+  color: white;
+  padding-top: 162px;
+  word-wrap: break-word;
+}
+
+/* Putting auto after px will change if the browser pushes an element down */
+
+
+
+#title {
+  width: 90%;
+  height: 400px auto;
+  background-color: black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.title-box {
+  color: white;
+  border-style: border-box;
+  width: 18%;
+  padding: 0 15px;
+  text-align: center;
+  margin: 70px 50px;
+
+}
+
+.box-1 {
+  border-top: 40px;
+  border-style: solid;
+  border-size: 20px;
+  border-color: #2FABD5;
+}
+
+.box-2 {
+  border-top: 40px;
+  border-style: solid;
+  border-size: 20px;
+  border-color: #F46731;
+}
+
+.box-3 {
+  border-top: 40px;
+  border-style: solid;
+  border-size: 20px;
+  border-color: #2BCDC0;
+}
+
+#title h2 {
+  font-size: 48px;
+}
+
+/* This is my phone CSS */
+
+@media (max-width: 767px) {
+    #hero {
+      background-color: #33A8DD;
+    }
+
+    .box-1 {
+      border-top: 40px;
+      border-style: solid;
+      border-size: 20px;
+      border-color: #33A8DD;
+    }
+
+    .title-box {
+      color: black;
+      border-style: border-box;
+      width: 90%;
+      padding: 0 15px;
+      text-align: center;
+      margin: 70px 50px;
+
+    }
+
+    #title {
+
+      background-color: #F7F5F6;
+      height: auto;
+    }
+
+}
