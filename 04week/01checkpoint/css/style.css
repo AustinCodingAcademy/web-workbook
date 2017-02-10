@@ -1,7 +1,21 @@
 body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
     margin: 0 auto;
     width: 100%;
     background-color: rgba(120, 177, 180, .2);
+}
+
+#main h1 {
+    background-color: transparent;
+    color: rgb(122, 41, 59);
+    font-size: 40px;
+    margin: 0 auto;
+    font-weight: bolder;
+    padding: 40px;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 .nav {
@@ -9,37 +23,47 @@ body {
     flex: 1;
     flex-direction: column;
     position: static;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    align-content: space-between;
+    position: fixed;
+    width: 100%;
 }
 
 .logo {
-    display: flex flex: 1;
+    display: flex
+    flex: 1;
     flex-direction: column;
     background-color: rgb(120, 177, 180);
     margin: 0px;
     padding-top: 0px;
     padding-left: 20px;
-    vertical-align: bottom;
-}
-
-.nav {
-    clear: both;
-    color: lightgreen;
-    margin: 0;
-    padding: 0;
 }
 
 .nav ul {
+    display: block;
+    font-size: 18px;
     list-style-type: none;
     margin: 0;
-    padding-bottom: 10px;
+    padding-top: 8px;
     overflow: hidden;
-    background-color: rgb(120, 177, 180);
     color: rgb(122, 41, 59);
     font-weight: bold;
+    align-content: space-between;
+    background-color: rgb(120, 177, 180);
 }
 
-.nav li:first-child {
-    border: 0;
+
+
+.main td {
+  padding-top: 0px;
+  text-align: left;
+  vertical-align: top;
+}
+
+main p{
+  padding: 40px;
 }
 
 .nav li {
@@ -48,13 +72,18 @@ body {
     line-height: 20px;
     float: right;
     clear: left;
-    margin: 0px;
+    margin: 0 autos;
     text-align: center;
     height: 20px;
-    padding: 0;
-    border-right: 1px solid;
+    padding: 10px;
+    padding-bottom: 5px;
+    border-right: 1px white solid;
     white-space: nowrap;
     width: 180px;
+}
+
+.nav li:nth-child(2) {
+    border-right: none;
 }
 
 .nav li a {
@@ -73,11 +102,12 @@ body {
     display: flex;
     background-image: url("../img/digimarkethero.jpg");
     background-repeat: no-repeat;
-    background-size: justify-content: center;
+    background-size: cover;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: white;
-    height: 90vh;
+    height: 85vh;
     width: 100vw;
 }
 
@@ -96,7 +126,7 @@ body {
     font-size: 18px;
     align-items: center;
     justify-content: center;
-    margin-left: 385px;
+    margin-left: 350px;
 }
 
 .CTA {
@@ -138,6 +168,7 @@ body {
     font-weight: bolder;
 }
 
+
 #main {
     display: flex;
     flex: 1;
@@ -147,29 +178,138 @@ body {
     margin-right: 5%;
     padding: 10px;
     align-items: flex-start;
+    height: 515px;
 }
 
 #main td {
-    padding: 10px;
     vertical-align: middle;
     font-size: 25px;
 }
+
 
 #main p {
     float: right;
     clear: left;
     line-height: 1.5;
 }
-
-.icons {
+#main img{
+  height: 100%;
+  padding-right: 20px;
+  width: auto;
+}
+.icon {
     display: flex;
     flex: 1;
+    margin: 0 auto;
+    align-content: space-between;
     width: 100%;
-    flex-direction: column;
-    position: absolute;
+    height: 400px;
+    text-align: center;
+    height: 515px;
+
+
+}
+
+.icons{
+  width: 25%;
+  height: auto;
+  background-color: rgb(74, 78, 86);
+  align-items: center;
+  vertical-align: middle;
+  padding-top: 120px;
+
+}
+#blogs{
+  display: flex;
+  flex: 1;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(232, 238, 239);
+  height: 515px;
+  width: 90%;
+  padding: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+#blogs p{
+
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.blog img{
+  height: 418px;
+  width: 100%;
+
+}
+
+
+#icon h2{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: transparent;
+  color: rgb(115, 175, 217);
+  text-shadow: 2px 1px black;
+  font-size: 35px;
+  margin: 0 auto;
+  line-height: 2;
+  text-align: center;
+  font-weight: lighter;
+align-items: center;
 }
 
 .icons img {
     height: 222px;
     width: 222px;
 }
+#lowerhero{
+  display: flex;
+  background-image: url("../img/tech.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  height: 515px;
+  width: 100vw;}
+
+  .lowerheroCTA1 {
+      background-color: rgb(122, 41, 59);
+      border: 1px white solid;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+      /*display: flex;
+      flex: 1;
+      flex-direction: column;*/
+      text-align: center;
+      height: 50px;
+      width: 150px;
+      font-size: 18px;
+      /*align-items: center;*/
+      /*justify-content: center;*/
+      float: left;
+      clear: both;
+  }
+  .lowerheroCTA2 {
+      background-color: rgb(122, 41, 59);
+      border: 1px white solid;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+      /*display: flex;
+      flex: 1;
+      flex-direction: column;*/
+      text-align: center;
+      height: 50px;
+      width: 150px;
+      font-size: 18px;
+      /*align-items: center;*/
+      /*justify-content: center;*/
+      float: right;
+      clear: both;
+  }
+  #lowerhero table{
+    align-content: space-between;
+  }
