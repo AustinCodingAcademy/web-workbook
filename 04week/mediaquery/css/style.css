@@ -1,0 +1,190 @@
+body * {
+	box-sizing: border-box;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: inherit;
+	margin: 0px;
+	padding: 0px;
+	vertical-align: baseline;
+}
+
+body {
+	height: 100%;
+	margin: 0px;
+}
+
+h1, h4, p {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+	font-size: 1.4rem;
+}
+
+h2 {
+	font-size: 1.3rem;
+	margin-bottom: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+	font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+	font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+	display: flex;
+	flex-flow: row wrap;
+	height: 100%;
+	margin: 0 auto;
+	width: 75%;
+}
+
+header {
+	background-color: #0BF0CC;
+	border: 1px solid #88A9AD;
+	flex: 1 100%;
+}
+
+header {
+	margin-bottom: 1.2rem;
+	min-height: 30rem;
+	padding: .75rem 1.4rem;
+	text-align: center;
+}
+
+#main_content {
+	align-content: flex-start;
+	align-items: flex-start;
+	display: flex;
+	flex-flow: row nowrap;
+	flex: 1 auto;
+	justify-content: space-between;
+}
+
+section {
+	background-color: black;
+	display: flex;
+	flex-flow: row wrap;
+	flex: 3.7 auto;
+	justify-content: space-between;
+	padding: 1.5rem;
+	text-align: left;
+}
+
+.story {
+	flex: 1 20%;
+	justify-content: space-between;
+	margin-right: 1rem;
+	margin-top: 1rem;
+	min-height: 13.5rem;
+	text-align: center;
+}
+
+.foo {
+  justify: center;
+  width: 190px;
+  height: 30px;
+  margin: 25px;
+  border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.blue {
+  background: #13b4ff;
+}
+
+.orange {
+  background: #F07D0B;
+}
+
+.sea {
+  background: #0BF0CC;
+}
+
+
+
+
+section div:nth-of-type(5), section div:nth-of-type(9) {
+	margin-right: 0;
+}
+
+@media all and (max-width: 1400px) {
+	nav {
+		flex: 1 auto;
+	}
+
+	section {
+		flex: 2 60%;
+	}
+
+	.featured_story {
+		flex: 2 100%;
+	}
+
+	.story {
+		flex: 1 47%;
+	}
+
+	section div:nth-of-type(odd) {
+		margin-right: 0;
+	}
+}
+
+@media all and (max-width: 1000px) {
+	#main_content {
+		flex-flow: row wrap;
+	}
+
+	section {
+		flex: 1 100%;
+		padding: 1rem;
+	}
+
+	.featured_story {
+		flex: 2 100%;
+	}
+
+	.story {
+		flex: 1 47%;
+	}
+
+	section div:nth-of-type(odd) {
+		margin-right: 0;
+	}
+}
+
+@media all and (max-width: 700px) {
+	#main_content {
+		flex-flow: row wrap;
+	}
+
+	nav {
+		flex: 1 100%;
+		margin-right: 0;
+		margin-bottom: 1.2rem;
+		min-height: 20rem;
+	}
+
+	section {
+		flex: 1 100%;
+		padding: 1rem;
+	}
+
+	.featured_story {
+		flex: 1 100%;
+	}
+
+	.story {
+		flex: 1 100%;
+		margin-right: 0;
+  }
