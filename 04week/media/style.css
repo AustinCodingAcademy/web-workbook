@@ -1,3 +1,10 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 h2 {
   text-align: center;
 }
@@ -8,7 +15,7 @@ header {
   justify-content: center;
   align-items: center;
   color: white;
-  width: 900px;
+  width: 800px;
   height: 400px;
 }
 
@@ -18,8 +25,7 @@ header {
   justify-content: space-around;
   align-items: center;
   color: white;
-  width: 900px;
-  height: 400px;
+  width: 800px;
 }
 
 .columns {
@@ -27,5 +33,57 @@ header {
   flex-direction: column;
   align-self: center;
   justify-content: center;
+  text-align: center;
   width: 20%;
+  margin: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .columns {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    width: 20%;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 767px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .columns {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    width: 20%;
+  }
 }
