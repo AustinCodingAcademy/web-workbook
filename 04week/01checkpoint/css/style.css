@@ -1,5 +1,6 @@
 html{
   width: 100%;
+  background-color: yellow;
 }
 
 body {
@@ -29,16 +30,41 @@ margin: 0;
 Flex: 1;
 }
 
+.nav{
+  margin: 15px auto;
+  padding-top: 15px;
+}
+
+.flex-grid-halves1 .col img{
+  border-left: solid 5px;
+  border-right: solid 5px;
+  /*border-bottom: solid 5px;*/
+  border-color: black;
+  width: 100px;
+  height: 100%;
+  margin: 0;
+  padding:0;
+}
+
+.nav a{
+  text-decoration: none;
+  font-size: 46px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: 'Jomhuria', cursive;
+  color: yellow;
+}
+
 .button {
-    border: none;
+    border: 5px;
+    border-color: darkgreen;
+    border-style: solid;
+    background-color: yellow;
     justify-content: center;
-   width: 10%;
-    color: white;
-    padding: 8px 16px;
-    text-align: center;
+    color: darkgreen;
     text-decoration: none;
-    padding-left: 100px;
-    font-size: 14px;}
+    font-size: 32px;
+    }
 
 .flex-grid {
   display: flex;
@@ -74,20 +100,55 @@ Flex: 1;
     font-weight: bold;
 }
 
+.flex-grid-whole a{
+    display: flex;
+    justify-content: center;
+    padding-top: 1px;
+    font-size: 70px;
+    color: yellow;
+    font-weight: bold;
+}
+
+.flex-grid-whole button{
+    display: flex;
+    font-family: 'Jomhuria', cursive;
+    width: 10%;
+}
+
 .flex-grid-halves1{
     display: flex;
     justify-content: space-between;
-    background-color: lightgreen;
+    background-color: darkgreen;
+    border-right: solid 5px;
+    border-top: solid 5px;
 }
 
+/* This is not relevent anymore... I think.
 .flex-grid-halves1 h2{
   font-size: 32;
-}
+}*/
 
 .flex-grid-halves{
     display: flex;
-    justify-content: space-around;
+    flex-flow: row;
+    align-items: center;
     background-color: lightgreen;
+    border-right: solid 5px;
+    border-left: solid 5px;
+    border-bottom: solid 5px;
+    padding-right: 50px;
+    line-height: 275%;
+}
+
+.flex-grid-halves img{
+    display: flex;
+    margin-right: 50px;
+}
+
+.flex-grid-halves p {
+    display: flex;
+    font-size: 22px;
+
 }
 
 .flex-grid-halves footer{
@@ -95,29 +156,42 @@ Flex: 1;
   justify-content: flex-end;
 }
 
-.flex-grid-quarters .col {
-  width: 50%;
-  background-color: yellow;
-
-}
-
 .flex-grid-quarters {
   display: flex;
   justify-content: space-between;
-  background-color: lightgreen;
-
+  border-left: solid 5px;
+  border-right: solid 5px;
+  border-bottom: solid 5px;
 }
+
 .flex-grid-quarters .col {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
   width: 25%;
   background-color: yellow;
+  margin-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
+.flex-grid-quarters .col h3 {
+  font-size: 30px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.flex-grid-quarters .col p {
+  font-size: 18px;
+  line-height: 150%;
+  padding: 0 10px;
 }
 
 #beach1{
   height: 275px;
   width: 275px;
-  border: solid 2px;
-  border-color: darkgreen;
+  border-right: solid 5px;
+  border-color: black;
   float: left;
 }
 
@@ -155,7 +229,7 @@ Flex: 1;
 #beach{
   height: 200px;
   width: 275px;
-  border: solid 2px;
+  border: solid 5px;
   border-color: darkgreen;
   margin-top: 15px;
 }
