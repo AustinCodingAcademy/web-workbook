@@ -1,6 +1,7 @@
 html{
   width: 100%;
-  background-color: #F6EA00;
+  /*background-color: #F6EA00;*/
+  background-image: url("https://images2.pixlis.com/background-image-stripes-and-lines-seamless-tileable-lemon-dark-spring-green-2328ju.png");
 }
 
 body {
@@ -15,6 +16,14 @@ h3{
   margin-bottom: 25px;
 }
 
+h6{
+  color: #F6EA00;
+}
+
+footer{
+  color: #F6EA00;
+}
+
 #hero{
 background-image: url("http://www.wvgazettemail.com/apps/pbcsi.dll/storyimage/CH/20140607/GZ05/140609614/EP/1/6/EP-140609614.jpg");
 background-size: auto;
@@ -25,7 +34,7 @@ position: relative;
 width: 80%;
 height: 410px;
 border: solid 5px;
-border-color: white;
+border-color: black;
 
 margin: 0;
 Flex: 1;
@@ -33,14 +42,14 @@ Flex: 1;
 
 .nav{
   margin: 15px auto;
-  padding-top: 15px;
+  padding-top: 0px;
 }
 
 .flex-grid-halves1 .col img{
   border-left: solid 5px;
   border-right: solid 5px;
   /*border-bottom: solid 5px;*/
-  border-color: white;
+  border-color: black;
   width: 100px;
   height: 100%;
   margin: 0;
@@ -49,18 +58,18 @@ Flex: 1;
 
 .nav a{
   text-decoration: none;
-  font-size: 46px;
+  font-size: 24px;
   padding-left: 15px;
   padding-right: 15px;
-  font-family: 'Jomhuria', cursive;
-  color: yellow;
+  font-family: 'Pacifico', cursive;
+  color: #f6ea00;
 }
 
 .button {
     border: 5px;
     border-color: white;
     border-style: solid;
-    background-color: yellow;
+    background-color: #F6EA00;
     justify-content: center;
     color: #006A61;
     text-decoration: none;
@@ -86,8 +95,9 @@ Flex: 1;
 .flex-grid-whole h1{
     display: flex;
     justify-content: center;
-    padding-top: 220px;
+    padding-top: 160px;
     font-size: 80px;
+    font-family: 'Pacifico', cursive;
     color: #F6EA00;
     font-weight: bold;
 }
@@ -99,6 +109,8 @@ Flex: 1;
     font-size: 20px;
     color: #F6EA00;
     font-weight: bold;
+    font-family: 'Pacifico', cursive;
+
 }
 
 .flex-grid-whole a{
@@ -106,7 +118,7 @@ Flex: 1;
     justify-content: center;
     padding-top: 1px;
     font-size: 70px;
-    color: yellow;
+    color: #F6EA00;
     font-weight: bold;
 }
 
@@ -119,7 +131,7 @@ Flex: 1;
 .flex-grid-halves1{
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    background-color: #006A61;
     border-right: solid 5px;
     border-top: solid 5px;
 }
@@ -173,6 +185,7 @@ Flex: 1;
     line-height: 275%;
 }
 
+
 .flex-grid-halves3 h6{
 text-align: left;
 }
@@ -193,10 +206,11 @@ text-align: left;
   flex-flow: column;
   align-items: center;
   width: 25%;
-  background-color: yellow;
-  margin-bottom: 50px;
+  background-color: #F6EA00;
+  margin-bottom: 0px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 50px;
 }
 
 .flex-grid-quarters .col h3 {
@@ -216,30 +230,44 @@ text-align: left;
 .flex-grid-villian h3{
   font-size: 30px;
   color: white;
-  padding: 75px;
+  padding-top: 75px;
+  padding-left: 75px;
+  padding-right: 75px;
 }
 
 .flex-grid-villian{
     display: flex;
-    flex-flow: row;
+    flex-direction: column-reverse;
 }
 
 
 .flex-grid-villian a{
     display: flex;
-    flex-flow: column-reverse;
-    align-items: center;
-    font-size: 70px;
-    color: yellow;
     font-weight: bold;
+    color: #F6EA00;
+    padding-right: 80px;
 }
 
-.flex-grid-villian button{
+.buttons2{
     display: flex;
-    justify-content: space-around;
-    font-family: 'Jomhuria', cursive;
-    width: 10%;
+    font-family: 'Pacifico', cursive;
+    padding-left: auto;
+    margin: auto;
+    width: 200px;
+    height: 150px;
+    font-size:
 }
+
+.button2 {
+    border: 5px;
+    border-color: #006a61;
+    border-style: solid;
+    background-color: #F6EA00;
+    justify-content: center;
+    color: #006A61;
+    text-decoration: none;
+    font-size: 60px;
+    }
 
 /*end of villian*/
 
@@ -297,23 +325,36 @@ text-align: left;
   border: solid 5px;
   border-color: white;
   margin-top: 15px;
-  margin-left: 75px;
+  margin-left: 0;
 }
 
-  #villan{
+  #villian{
   background-image: url("http://carpentersbeachmeadowinc.com/ri-beach-house-listings/uploads/thumbs/skchambersite_003.jpg");
   background-size: auto;
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
   position: relative;
-  width: 80%;
-  height: 350px;
-  border: solid 5px;
-
-  margin: 0;
+  width: 100%;
+  height: 375px;
+  border-left: solid 5px;
+  border-right: solid 5px;
+  border-bottom: solid 5px;
+  border-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
   Flex: 1;
   }
+
+  #villian h3{
+  font-family: 'Pacifico', cursive;
+  color: #F6EA00;
+  padding-left: 150px;
+  padding-right: 150px;
+}
 
 
 @media (max-width: 400px) {
