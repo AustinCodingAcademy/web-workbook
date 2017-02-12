@@ -4,19 +4,12 @@ body {
     flex-direction: column;
     margin: 0 auto;
     width: 100%;
-    background-color: rgba(120, 177, 180, .2);
+    background-color: white;
+    font-family: "roboto";
 }
 
-#main h1 {
-    background-color: transparent;
-    color: rgb(122, 41, 59);
-    font-size: 40px;
-    margin: 0 auto;
-    font-weight: bolder;
-    padding: 40px;
-    padding-bottom: 20px;
-    text-align: center;
-}
+
+/*main navigation */
 
 .nav {
     display: flex;
@@ -31,14 +24,12 @@ body {
     width: 100%;
 }
 
-.logo {
-    display: flex
-    flex: 1;
-    flex-direction: column;
-    background-color: rgb(120, 177, 180);
-    margin: 0px;
-    padding-top: 0px;
-    padding-left: 20px;
+.logo img {
+    width: 176px;
+    height: 40px;
+    object-fit: contain;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 .nav ul {
@@ -46,37 +37,22 @@ body {
     font-size: 18px;
     list-style-type: none;
     margin: 0;
-    padding-top: 8px;
     overflow: hidden;
-    color: rgb(122, 41, 59);
-    font-weight: bold;
     align-content: space-between;
-    background-color: rgb(120, 177, 180);
-}
-
-
-
-.main td {
-  padding-top: 0px;
-  text-align: left;
-  vertical-align: top;
-}
-
-main p{
-  padding: 40px;
+    background-color: #1eaaf1;
+    opacity: 0.95;
 }
 
 .nav li {
-    width: 150px;
-    display: table-cell;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     line-height: 20px;
     float: right;
     clear: left;
-    margin: 0 autos;
-    text-align: center;
+    margin: 0 auto;
     height: 20px;
-    padding: 10px;
-    padding-bottom: 5px;
+    padding: 20px;
     border-right: 1px white solid;
     white-space: nowrap;
     width: 180px;
@@ -91,45 +67,40 @@ main p{
     width: 100%;
     text-align: center;
     text-decoration: none;
-    color: rgb(122, 41, 59);
+    color: white;
+    font-family: "roboto";
+    font-weight: lighter;
 }
 
 .nav li a:hover {
     background-color: rgba(122, 41, 59, .1);
 }
 
-#hero {
-    display: flex;
-    background-image: url("../img/digimarkethero.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: white;
-    height: 85vh;
-    width: 100vw;
-}
+
+/*top hero section*/
 
 .heroCTA {
-    background-color: rgb(122, 41, 59);
-    border: 1px white solid;
-    border-radius: 4px;
+    text-decoration: none;
+    background-color: #1eaaf1;
+    border: solid 1px #ffffff;
+    border-radius: 5px;
     color: white;
     cursor: pointer;
     display: flex;
     flex: 1;
     flex-direction: column;
     text-align: center;
-    height: 50px;
-    width: 150px;
+    height: 49px;
+    width: 200px;
     font-size: 18px;
     align-items: center;
     justify-content: center;
-    margin-left: 350px;
+    margin-left: 300px;
+    margin-top: 20px;
 }
 
 .CTA {
+    text-decoration: none;
     background-color: rgb(122, 41, 59);
     border: 1px white solid;
     border-radius: 4px;
@@ -146,170 +117,285 @@ main p{
 }
 
 .heroText h2 {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
     background-color: transparent;
-    color: rgb(115, 175, 217);
-    text-shadow: 2px 1px black;
-    font-size: 35px;
-    margin: 0 auto;
-    line-height: 2;
-    text-align: center;
+    height: 53px;
+    font-family: "Roboto";
+    font-size: 40px;
     font-weight: lighter;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-align: center;
+    justify-content: center;
+    color: #9b9b9b;
+    opacity: .45;
 }
 
-.heroText {
+#hero h1 {
+    /*display: flex;
+  flex: 1;
+  flex-direction: column;*/
     background-color: transparent;
-    color: rgb(115, 175, 217);
-    text-shadow: 2px 1px black;
-    font-size: 75px;
-    margin: 0 auto;
-    font-weight: bolder;
+    height: 84px;
+    font-family: "Roboto";
+    font-size: 64px;
+    text-align: center;
+    color: #1eaaf1;
+    padding-top: 290px;
+    font-weight: 300;
 }
 
+#hero {
+    display: flex;
+    background-image: url("../img/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    height: 682px;
+    width: 100vw;
+}
+
+
+/*main content section*/
 
 #main {
     display: flex;
     flex: 1;
     flex-direction: column;
-    /*width: 100%;*/
     margin-left: 5%;
     margin-right: 5%;
     padding: 10px;
     align-items: flex-start;
-    height: 515px;
+    height: 440px;
 }
 
 #main td {
     vertical-align: middle;
     font-size: 25px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: left;
+    vertical-align: top;
 }
-
 
 #main p {
+    font-family: "Roboto";
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.88;
+    letter-spacing: normal;
+    color: #303c40;
+    padding: 40px;
+}
+
+#whyus img {
+    float: left;
+    width: 659px;
+    height: 437px;
+}
+
+.whytext h2 {
+    height: 48px;
+    font-family: "Roboto";
+    font-size: 36px;
+    font-weight: lighter;
+    text-align: center;
+    color: #1eaaf1;
+}
+
+
+/*blog snippets*/
+
+#blogs {
+    display: flex;
+    flex: 1;
+    margin: 0 auto;
+    text-align: center;
+    /*background-color: rgb(232, 238, 239);*/
+    height: 515px;
+    /*width: 90%;*/
+    /*padding: 10px;*/
+    padding-bottom: 10px;
+    padding-top: 10px;
+    align-content: space-around;
+    justify-content: center;
+}
+
+#blogs p {
+    width: 578px;
+    height: 46px;
+    font-family: "Roboto";
+    font-size: 17px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #303c40;
+    padding: 20px;
+}
+
+#blogs a {
+    width: 161px;
+    height: 43px;
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #1eaaf1;
+    padding: 20px;
+}
+
+.firstarticle {
+    float: left;
+    clear: both;
+}
+
+.firstarticle img {
+    height: 390px;
+    width: 578px;
+}
+
+.secondarticle {
     float: right;
-    clear: left;
-    line-height: 1.5;
+    clear: both
 }
-#main img{
-  height: 100%;
-  padding-right: 20px;
-  width: auto;
+
+.secondarticle img {
+    height: 390px;
+    width: 578px;
 }
-.icon {
+
+
+/*icons section*/
+
+#icon {
     display: flex;
     flex: 1;
     margin: 0 auto;
     align-content: space-between;
     width: 100%;
-    height: 400px;
+    height: 440px;
+    background-color: rgba(149, 150, 155, .1);
     text-align: center;
     height: 515px;
-
-
 }
 
-.icons{
-  width: 25%;
-  height: auto;
-  background-color: rgb(74, 78, 86);
-  align-items: center;
-  vertical-align: middle;
-  padding-top: 120px;
-
-}
-#blogs{
-  display: flex;
-  flex: 1;
-  margin: 0 auto;
-  text-align: center;
-  background-color: rgb(232, 238, 239);
-  height: 515px;
-  width: 90%;
-  padding: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-}
-#blogs p{
-
-  margin-right: 20px;
-  margin-left: 20px;
-}
-.blog img{
-  height: 418px;
-  width: 100%;
-
+.icons {
+    width: 25%;
+    height: auto;
+    align-items: center;
+    vertical-align: middle;
+    padding-top: 120px;
 }
 
-
-#icon h2{
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  background-color: transparent;
-  color: rgb(115, 175, 217);
-  text-shadow: 2px 1px black;
-  font-size: 35px;
-  margin: 0 auto;
-  line-height: 2;
-  text-align: center;
-  font-weight: lighter;
-align-items: center;
+#icon h2 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 39px;
+    font-family: "Roboto";
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    align-content: center;
+    opacity: .8;
+    color: #303c40;
+    margin: 20px;
 }
 
 .icons img {
-    height: 222px;
-    width: 222px;
+    height: 221px;
+    width: 221px;
 }
-#lowerhero{
-  display: flex;
-  background-image: url("../img/tech.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: white;
-  height: 515px;
-  width: 100vw;}
 
-  .lowerheroCTA1 {
-      background-color: rgb(122, 41, 59);
-      border: 1px white solid;
-      border-radius: 4px;
-      color: white;
-      cursor: pointer;
-      /*display: flex;
-      flex: 1;
-      flex-direction: column;*/
-      text-align: center;
-      height: 50px;
-      width: 150px;
-      font-size: 18px;
-      /*align-items: center;*/
-      /*justify-content: center;*/
-      float: left;
-      clear: both;
-  }
-  .lowerheroCTA2 {
-      background-color: rgb(122, 41, 59);
-      border: 1px white solid;
-      border-radius: 4px;
-      color: white;
-      cursor: pointer;
-      /*display: flex;
-      flex: 1;
-      flex-direction: column;*/
-      text-align: center;
-      height: 50px;
-      width: 150px;
-      font-size: 18px;
-      /*align-items: center;*/
-      /*justify-content: center;*/
-      float: right;
-      clear: both;
-  }
-  #lowerhero table{
+
+/*bottom hero section*/
+
+#lowerhero {
+    display: flex;
+    background-image: url("../img/congress-coworking-46.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    height: 512px;
+    width: 100vw;
+}
+
+.lowerheroCTA1 {
+    width: 256px;
+    height: 69px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: solid 1px #ffffff;
+    margin-right: 40px;
+}
+
+.lowerheroCTA1 a {
+    text-decoration: none;
+    width: 108px;
+    height: 24px;
+    font-family: "Roboto";
+    font-size: 18px;
+    text-align: center;
+    color: #4a90e2;
+}
+
+.lowerheroCTA2 {
+    width: 256px;
+    height: 69px;
+    border-radius: 5px;
+    background-color: #1eaaf1;
+    border: solid 1px #ffffff;
+    margin-left: 40px;
+}
+
+.lowerheroCTA2 a {
+    text-decoration: none;
+    width: 127px;
+    height: 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#lowerhero table {
     align-content: space-between;
-  }
+}
+
+
+/*footer goes here*/
+
+footer {
+    height: 105px;
+    background-color: #303c40;
+    overflow: hidden;
+}
+
+.footerlogo img {
+    width: 198px;
+    height: 44px;
+    object-fit: contain;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+body a {
+    text-decoration: none;
+}
