@@ -1,7 +1,7 @@
 section{
   height:500px;
   width:100%;
-  background-color: lightblue;
+  background-color: mediumseagreen;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,26 +12,23 @@ display: flex;
 flex-direction: column;
 align-content: center;
 justify-content: center;
+align-items: center;
 }
 
 p{
   color: white;
   width: 200px;
   text-align: center;
+  font-size: 15px;
 }
 
 h1{
   text-align: center;
   color: white;
-}
-
-main:first-child{
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .lower{
-  display: flex;
-  align-items: center;
   justify-content: space-around;
   background: black;
 }
@@ -40,6 +37,7 @@ div{
   display:flex;
   width: 200px;
   height: 50px;
+  margin: 15px;
 }
 
 .red{
@@ -55,13 +53,16 @@ div{
 }
 
 @media (max-width: 767px) {
-  section{ height: 400px;}
+  section{
+    height: 400px;
+    background-color: lightblue;
+  }
+  p {color: black;}
   .lower{
     background-color: #d6e2e6;
     flex-direction: column;
     height:100%;
     }
-article{
-  margin-top: 15px;
-  margin-bottom: 15px;
+    .lower h1 {
+      color: black;
     }
