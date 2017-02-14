@@ -3,30 +3,59 @@
     width: 30px;
     width: 100%;
     padding: 250px 0;
-    display: flex;
+    /*display: flex;*/
     background-image: url(../img/image-main.jpg);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-    position: center;
+    align-items: right;
     font-size: 50px;
     font-family: fantasy;
     color: black;
 }
 
 header {
-  background-color: navy;
-  height: 50px;
+    background-color: navy;
+    height: 50px;
 }
+
 header h2 {
     line-height: 2.5em;
+    float: left;
+    color: yellow;
+}
 
-  float: left;
-  color: yellow;
+ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: navy;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ffe680;
+    text-decoration: none;
+}
+
+.active {
+    background-color: navy;
 }
 
 nav {
-  float: right;
+    float: right;
 }
 
 a:link {
@@ -53,16 +82,14 @@ a:active {
     text-decoration: none;
 }
 
-
 .button {
-  color: yellow;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: navy;
-  width: 60px;
-  height: 40px;
-  float: center;
+    color: yellow;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: navy;
+    width: 60px;
+    height: 40px;
 }
 
 .call-outs-container {

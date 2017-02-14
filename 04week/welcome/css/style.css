@@ -1,74 +1,89 @@
 body {
     width: 100%;
     margin: 0 auto;
-    font-family: times;
+}
+
+main #hero, main #title {
+    margin: 0 auto;
 }
 
 #hero {
-    width: 90%auto;
+    width: 90%;
     height: 400px;
     background-color: #2BCDC0;
-    margin: 0 auto;
-    text-align: center;
-
 }
 
 #hero h1 {
-    padding-top: 175px;
     font-size: 48px;
+    text-align: center;
     color: white;
+    padding-top: 162px;
+    word-wrap: break-word;
 }
 
 #title {
+    width: 90%;
+    height: 400px auto;
     background-color: black;
-    height: 400px;
-    margin: 0 auto;
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.title-box {
     color: white;
-    font-size: 20px;
-    justify-content: space-around;
-}
-#title h1{ font-size: 40px;
-justify-content: space-between;}
-
-.one {
-  width: 15%;
-  border-top: 40px;
-  border-size:10px;
-  border-color: yellow;
-  border-style: solid;
-  padding-top: 50px;
-  margin-left: 230px;
-    flex: 1;
-    margin-top: 60px;
-    justify-content: space-between;
-}
-
-.two {
-    width: 10%;
-   border-top: 40px;
-border-color: red;
-border-style: solid;
-padding-top: 50px;
-    flex: 1;
-      margin-top: 60px;
-      justify-content: space-between;
-}
-
-.three {
+    border-style: border-box;
     width: 18%;
-    border-top: 40px;
-border-size:10px;
-border-color: purple;
-border-style: solid;
- padding-top: 50px;
-    flex: 1;
-      margin-top: 60px;
-      justify-content: space-between;
+    padding: 0 15px;
+    text-align: center;
+    margin: 70px 50px;
 }
 
-@media (max-wdth: 767px) {
+.box-1 {
+    border-top: 40px;
+    border-style: solid;
+    border-size: 20px;
+    border-color: #2FABD5;
+}
+
+.box-2 {
+    border-top: 40px;
+    border-style: solid;
+    border-size: 20px;
+    border-color: #F46731;
+}
+
+.box-3 {
+    border-top: 40px;
+    border-style: solid;
+    border-size: 20px;
+    border-color: #2BCDC0;
+}
+
+#title h2 {
+    font-size: 48px;
+}
+
+@media (max-width: 767px) {
     #hero {
         background-color: #33A8DD;
+    }
+    .box-1 {
+        border-top: 40px;
+        border-style: solid;
+        border-size: 20px;
+        border-color: #33A8DD;
+    }
+    .title-box {
+        color: black;
+        border-style: border-box;
+        width: 90%;
+        padding: 0 15px;
+        text-align: center;
+        margin: 70px 50px;
+    }
+    #title {
+        background-color: #F7F5F6;
+        height: auto;
     }
 }
