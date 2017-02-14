@@ -1,0 +1,47 @@
+header,footer{
+  background-color: teal;
+  min-height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav{
+  background-color: purple;
+  width: 100px;
+  height: 640px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+main{
+  display:flex;
+}
+
+section{
+  width: calc(100% - 186px);
+  min-height:640px;
+  background-color:gray;
+  margin: 10px;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+article {
+  width:50%;
+  height:214px;
+  background-color: yellow;
+  margin:5px 1px;
+}
+
+article:first-child {
+  width:100%;
+}
+
+@media (max-width:375px) {
+  article{
+    width:47%;
+  }
+}
