@@ -1,54 +1,144 @@
-ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-  background-color: black;
-  overflow: hidden;
-  background-color: black;
-  width: 100%;
-}
+#hero{
 
-li {
-  float: right;
-}
+  /*..<----looked for corect picture(means step out of folder)*/
 
-li a {
-  display: block;
-  text-decoration: none;
-  color: white;
-  font-size: 19px;
-  padding: 8px 25px;
-}
-
-a:hover {
-  background-color: white;
-  color: black;
-}
-
-
-.active {
-  background-color: lightblue;
-  color: white;
-}
-
-#hero {
-  background-image: url("../img/flux-background.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
+  background-image: url("../img/nasa-background.jpg");
+  background-repeat:no-repeat;
+  background-position: center;
   background-size: cover;
-  position: fixed;
-  width: 100%;
+  width: 850px;
   height: 450px;
-  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-top: 10px
 }
 
-body{
-  width:100%;
+
+body {
+  width: 850px;
   margin: 0 auto;
 }
 
-div h1 {
-  text-align:center;
-  font-size: 100px;
-  font-style: serif;
+main h1{
+  font-family: sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-size: 80px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+
+section {
+  background-color: hsl(3, 5%, 87%);
+  width: 850px;
+  height: 324px;
+  font-family:sans-serif;
+  text-align: center;
+  padding-top: 15px;
+  }
+
+  /*Applies to Social Info Box*/
+
+  #Social-Info {
+    font-size: 13px;
+    width: 230px;
+    height: 324px;
+    margin-left: 20px;
+    margin-right: 40px;
+    float: left;
+    text-align: left;
+  }
+
+  #Social-Info h1 {
+    font-size: 16px;
+  }
+
+  #Social-Info p {
+    font-size: 16px;
+    line-height: 7px;
+  }
+
+  a {
+    text-decoration: none;
+    color: gray;
+  }
+
+/*Applies to Office Info Box*/
+
+#Office-Info {
+  width: 230px;
+  height: 324px;
+  margin-right: 40px;
+  margin-left: 20px;
+  text-align: left;
+  float: left;
+}
+
+#Office-Info p {
+  color: grey;
+  font-size: 14px;
+  line-height: 7px;
+}
+
+#Office-Info h1 {
+  font-size: 20px;
+}
+
+/*Applies to Contact Us Box*/
+
+#Contact-Us {
+  width: 230px;
+  height: 324px;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: left;
+  float: left;
+}
+
+#Contact-Us h1 {
+  font-size: 20px;
+}
+
+#Contact-Us p {
+  color: grey;
+}
+
+#Message-Box {
+  Height:70px;
+  width: 220px;
+}
+
+#Name-Box {
+  width: 220px;
+}
+
+#Contact-Us p{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#Contact-Us p{
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/*Section Button*/
+
+button {
+  background-color: #4a4a4a;
+  color: white;
+  border: none;
+  height: 10%;
+  width: 28%;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #e6e6e6;
+  color: black;
+  border: 1px solid;
+}
+
+* {
+  box-sizing:border-box;
 }

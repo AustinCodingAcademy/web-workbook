@@ -1,127 +1,113 @@
-body {
-  margin: 0 auto;
-  width: 100%;
+* {
+  box-sizing: border-box;
 }
 
-#hero {
+#intro {
   height: 400px;
   width: 100%;
-  margin: 0 auto;
   background-color: #2BCDC0
-
-
 }
 
-#hero h1 {
-  padding-top: 175px;
-  font-size: 48px;
+#intro h1{
+  padding-top: 150px;
   color: white;
+  font-size: 70px;
   text-align: center;
 }
 
 #title {
-  background-color: black;
-  height: 400px;
+  height: 460px;
   width: 100%;
-  display: flex;
+  background-color: #1B1B1B;
+}
+
+#title h1{
+  font-size: 45px;
+  color: white;
+}
+
+#title p{
+  font-size: 19px;
+  color: white;
 }
 
 .item {
-  display:flex
-  color: white;
+  margin: 110px;
+  width: 100%;
   float: left;
-
-}
-
-.item h1, p {
-  color: white;
-}
-
-.item h1 {
-text-align: center;
-padding-top: 120px;
+  text-align: center;
 }
 
 .one {
-  border-top: 20px solid blue;
-  width: 30%;
-  margin: 20px;
-  height: 150px;
+  width: 16%;
+  border-top: 25px solid #33A8DD;
 }
 
 .two {
-  border-top: 20px solid orange;
-  width: 30%;
-  margin: 20px;
-  height: 150px;
+  width: 16%;
+  border-top: 25px solid #F46731;
 }
 
 .three {
-  border-top: 20px solid red;
-  width: 30%;
-  margin: 20px;
-  height: 150px;
+  width: 16%;
+  border-top: 25px solid #2BCDC0;
 }
 
-@media (max-width: 767px) {
-  body {
-    margin: 0 auto;
-    width: 100%;
+@media all and (max-width: 700px) {
+
+
+  #intro {
+    margin: 10px;
+    background-color: #33A8DD;
   }
 
-  #hero {
-    height: 400px;
-    width: 100%;
-    margin: 0 auto;
-    background-color: #2BCDC0
-
-
-  }
-
-  #hero h1 {
-    padding-top: 175px;
-    font-size: 48px;
-    color: white;
-    text-align: center;
-  }
 
   #title {
-    background-color: black;
-    height: 400px;
-    width: 100%;
+    margin: 10px;
+    height: 500px;
+    background-color: #F7F5F6;
+  }
+
+  #title h1 {
+    color: black;
+  }
+
+  #title p {
+    color: black;
   }
 
   .item {
-    display:flex
-    color: white;
-  }
-
-  .item h1, p {
-    color: white;
-  }
-
-  .item h1 {
-  text-align: center;
-  padding-top: 120px;
-  }
-
-  .one {
-    border-top: 20px solid blue;
     width: 100%;
-    margin: auto;
-    height: 150px;
   }
 
-  .two {
+  .one{
+    width: 40%;
+  }
+
+  .one p {
+    margin-left: 5px;
     width: 100%;
-    margin: auto;
-    height: 150px;
+  }
+
+
+  .two{
+    width: 40%;
+  }
+
+  .two p {
+    margin-left: 5px;
+    width: 100%;
   }
 
   .three {
-    width: 100%;
-    margin: auto;
-    height: 150px;
+    width: 40%;
   }
+
+  .three p {
+    margin-left: 5px;
+    width: 100%;
+  }
+
+
 
 }
