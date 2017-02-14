@@ -1,133 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- CSS reset file -->
-    <link rel="stylesheet" href="css/css-reset.css" />
-    <!-- CSS file -->
-    <link rel="stylesheet" href="css/style.css" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- CSS STYLESHEET AND RESET -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/css-reset.css"/>
+
+  <!-- GOOGLE FONT-->
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+  <title>Iridescent Painting</title>
 </head>
-<!-- header -->
-<header class="header">
-    <h2> <img src="img/logo.jpg" width=50px height=50px>Iridescent Painting</h2>
-    <section class="nav-bar">
-        <div class="flex-grid">
-          <a itemprop="url" href="http://www.bravointeriordesign.com/" class="bravo-design"><img src="img/bravo-design.jpg" width=60px height=60px/></a> </div>
-
-</header>
-
 <body>
+  <!-- HEADER -->
+  <header class="header">
+    <h1>Iridescent Painting</h1>
+    <nav>
+      <span><a href="#feature-job">Featured Job</a></span>
+      <span><a href="#work">Our work</a></span>
+      <span><a href="#colorwheel">Color Wheel</a></span>
+      <span><a href="#contact">Contact</a></span>
+        </nav>
+  </header>
+  <main>
+    <!-- HERO IMAGE -->
+    <div class="hero">
+    <div class="hero-content">
+        <h2>Iridescent Painting goes Nationwide!</h2>
+        <p>Will they be in your neighborhood next?</p>
+        <!-- <button type="button">find out</button> -->
+        <a href="https://www.google.com/maps">Find out</a>
+      </div>
+    </div>
 
-    <!-- Big title -->
-    <main>
-        <section id="hero">
-            <div class="myhero">
-                <!-- NEED TO ALIGN IN CENTER OF IMAGE-->
-                <h1>Iridescent Painting goes Nationwide!</h1>
-              </div>
-
-              <div class="myhero">  <p>Will they be in your neighborhood next?</p>
-              </div>
-              <div class="myhero">  <form action="action_page.php">
-
-                    <input type="submit" value="check it out" href="www.google.com">
-                </form>
-              </div>
-
-
-        </section>
-      </main>
-
-
-        <br></br>
-
-<!--featured job -->
-
-      <section class="column main-column">
-        <a class="article first-article" href="#">
-          <figure class="article-image">
-            <img src="img/house.jpg" width="450px" height="450px"></a>
-          </figure>
-          <div class="article-body">
-            <h2 class="article-title">
-              Featured job
-            </h2>
-            <p class="article-content">
-              Our new project located in South Austin.  Painting was done inside and out.  This canvas consisted of many colors and different textures throughout the house. Come back to check out our progress!
-            </p>
-
-          </div>
-        </a>
-      </section>
-
-      <!-- row of 4 -->
-        <div class="column">
-          <article class="article-content.2">
-            <img src="img/before.1.jpg" width="200px" height="200px"/>
-            <p>Here we look at a before picture of kitchen cabinets that has just been finished building.</p>
-          </article>
-          <article class="article-content.2">
-            <img src="img/after.1.jpg" width="250px" height="250px"/>
-            <p>Here is the after picture with everything set and ready to go.  Beautiful white cabinet throughout!</p>
-          </article>
-          <article class="article-content.2">
-            <img src="img/furniture.jpg" width="250px" height="250px"/>
-            <p>Here is a desk that has seen better days!  With some TLC we have brought it back to life.</p>
-          </article>
-          <article class="article-content.2">
-            <img src="img/white-cabinets.jpg" width="250px" height="250px"/>
-            <p>Here we have another beautiful white kitchen cabinets.</p>
-          </article>
-        </div>
-
-        <!-- row of 2 -->
-
-        <div class="mycolumns">
-  <div class="column main-column">
-    <article class="article">
-      <img src="img/swatches.jpg" width="100%"/>
-      We have experts to help you match any color you desire!<footer class="article-info">
-          <span>2/15/17</span>  </footer>
-    </article>
-
-    <article class="article">
-      <img src="img/paint and brush.jpg" width="50%"/>
-      We use only the best quality of products!  <footer class="article-info">
-            <span>2/5/17</span>  </footer>
-    </article>
-
-
-
+    <!-- Featured job -->
+  <section id="feature-job" class="feature-job">
+    <figure class="house-image">
+      <img src="img/house.jpg" alt="" >
+    </figure>
+    <div class="house-content">
+      <a href="https://www.thisoldhouse.com/ideas/secrets-pro-painters"></a>
+    <h3>Our latest project!</h3>
+      <p>
+        Our new project located in South Austin.  Painting was done inside and out.  This canvas consisted of many colors and different textures throughout the house.  Even an old lamp with a bare bulb held close to a wall will make minor cracks, bumps or nail pops jump out.  Come back to check out our progress!
+      </p>
   </div>
+  </section>
 
-        <!-- last box -->
-        <a class="article first-article" href="#">
-          <figure class="article-image is-4by3">
-            <img src="img/logo.jpg" width=70px height-=70px>
+    <!-- Our work -->
+    <section id="work" class="work">
+      <article class="work-content">
+        <figure>
+          <img class="pic" src="img/before.1.jpg" alt="">
+        </figure>
+        <h3>Before</h3>
+        <p>Here we look at a before picture of kitchen cabinets that has just been finished building.</p>
+      </article>
+
+      <article class="work-content">
+        <figure>
+          <img class="pic" src="img/after.1.jpg" alt="">
+        </figure>
+        <h3>After</h3>
+        <p>Here is the after picture with everything set and ready to go.  Beautiful white cabinet throughout!</p>
+      </article>
+
+    <article class="work-content">
+        <figure>
+          <img class="pic" src="img/furniture.jpg" alt="">
+        </figure>
+        <h3>Furniture</h3>
+        <p>Here is a desk that has seen better days!  With some TLC we have brought it back to life.</p>
+      </article>
+      <article class="work-content">
+      <figure>
+          <img class="pic4" src="img/white-cabinets.jpg"  alt="">
+        </figure>
+        <h3>Cabinets</h3>
+        <p>Here we have another beautiful white kitchen cabinets that make any kitchen look brighter and beautiful!</p>
+      </article>
+    </section>
+
+    <!-- TWO MEDIUM ARTICLES -->
+    <section id="colorwheel" class="colorwheel">
+      <article>
+        <figure>
+          <a href="https://www.sherwin-williams.com/"><img src="img/SW.jpg"/></a>
+        </figure>
+
+          <p>No matter where you are in the world or what surfaces you're painting or coating, Sherwin-Williams provides innovative paint solutions that ensure your success.</p>
+        <footer class="color-info">
+          <span>Cleveland 1866</span>
+        </article>
+        <article>
+          <figure>
+          <a href="https://www.benjaminmoore.com/en-us"><img src="img/BM.jpg"/></a>
           </figure>
-          <div class="article-body">
-            <h2 class="article-title">
-              Matthew Marquez
-            </h2>
-            <p class="article-content">
 
-              Please contact him through our website: <form action="action_page.php">
-                  Name:<br>
-                  <input type="text" name="Name">
-                  <br> Message:
-                  <br>
-                  <textarea rows="4"> </textarea>
-                  <br><br>
-                  <input type="submit" value="send">
-              </form>
-            </p>
+            <p>Premium Benjamin Moore paint and stain for home interiors and exteriors. Find the perfect paint colors and products for your project.</p>
+          <footer class="color-info">
+            <span>Brooklyn 1883</span>
+      </article>
+  </section>
 
-          </div>
-        </a>
+     <!-- contact -->
+     <section id="contact" class="contact">
+       <article class:"contact-content">
+
+       <p>Contact one of our experts!</p>
+         <!-- <button type="button">Email</button> -->
+         <a href="mailto:iridescentpainting@gmail.com?Subject=Hello%20again" target="_top">Email</a>
+         <!-- <button type="button">phone</button> -->
+         <a href="tel://1-512-585-9053">Call</a>
+       </article>
+     </section>
+
+  </main>
+
 </body>
-
-</html>
+<footer>&copy; Iridescent Painting LLC 2016</footer>
+ </html>
