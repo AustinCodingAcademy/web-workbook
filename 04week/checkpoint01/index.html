@@ -1,80 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css"></link>
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--my style sheet-->
+    <link rel="stylesheet" href="css/style.css"></link>
+    <!--my css reset-->
+    <link rel="stylesheet" href="web-workbook/04week/welcome/css-reset.css"></link>
+    <!--link to my js file-->
+    <script src="javascript/script.js"></script>
+    <!--link for font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Barrio|Yantramanav" rel="stylesheet">
+
+    <title>Checkpoint01</title>
 </head>
+
 <body>
-  <main>
-  <header class="navbar">
 
-<div>
-    <nav class="nav-links">
-      <ul>
-        <li><a href="#">Company/Organization</a></li>
-        <li><a href="#">one</a></li>
-        <li><a href="#">two</a></li>
-        <li><a href="#">three</a></li>
-        <li><a href="#">four</a></li>
-        <li><a href="#">five</a></li>
-      </ul>
+    <main>
+        <!--Navbar-->
+        <header class="navbar">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">About</a><hr>
+                <a href="#">Shop</a><hr>
+                <a href="#">Brands</a><hr>
+                <a href="#">Locations</a><hr>
+            </div>
 
-    </nav>
-  </div>
-</header>
+            <!--navbar icon-->
+            <span> style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+           <!--Sole Logo-->
+            <a href="#">
+                <div class="logo">
+                    <h1>Sole</h1>
+                </div>
+            </a>
 
-<h3>I have sole Boutique</h3>
-<section class="hero">
-  <h1>I Have Sole Boutique</h1>
-</section>
-
-  </header>
+           <!--Shopping bag icon-->
+            <div class="bag">
+                <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>(0)</a>
+            </div>
 
 
+        </header>
+           <!--Hero img-->
+        <section id="hero">
+            <h1 class="air-force">I Have Sole Boutique</h1>
+           <!--shop now link-->
+            <a href="#">
+                <div class="shop-now">
+                    Shop Now
+                </div>
+            </a>
+       </section>
+
+        <article>
+          <!--img of blue shoe-->
+            <img src="img/huarache.jpg" class="huarache">
+            <h2 class="text-container">Nike brings back the Huarache just in time for spring.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non interdum ante, ac finibus massa. Maecenas quis massa nec mauris pulvina.Morbi dignissim semper arcu quis pulvinar. Nulla sit amet finibus nulla. Sed semper sed dui ac ornare.
+                Sed id arcu eu tortor condimentum tempus a sit amet nisl. Nunc sagittis, augue ac suscipit aliquet, turpis orci viverra ligula, in ullamcorper mauris nibh non turpis. In eleifend vulputate ligula, non luctus leo bibendum ut. Morbi quis
+                metus in nisi bibendum ultricies eu ac velit. Aliquam erat volutpat. Aliquam mattis </p>
+            <p>Nunc suscipit ipsum metus, vel tincidunt odio tempus scelerisque. Vestibulum sem erat, mollis ut placerat in, molestie lobortis sem. Integer ipsum mauris, luctus ut tortor vel, vulputate placerat urna. Donec nec lorem consequat, hendrerit
+                urna eget, rutrum felis. Phasellus vestibulum porttitor laoreet. Mauris eleifend venenatis mi, vel tincidunt eros consectetur sit amet. Ut quis dapibus lectus. Mauris tincidunt ligula at erat luctus pellentesque. Nulla facilisi. Suspendisse
+                ullamcorper turpis nulla, sit amet porttitor magna suscipit in. Mauris maximus at erat et hendrerit. In pharetra vitae magna at hendrerit. Suspendisse vel magna tincidunt, iaculis magna sed, finibus est.</p>
+        </article>
 
 
-<section class="cheetah">
-  <img src="img/cheetah.jpg" class="adidas">
-  <div class="text-container"><H2>Adidas is wild with Cheetah print</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque odio augue, rutrum non urna sed, rutrum placerat lorem. Morbi ullamcorper pellentesque mattis. Mauris vitae pretium purus. Nam hendrerit maximus nulla sed vestibulum. Ut ac justo justo. Integer vitae sollicitudin mauris. Nulla ut libero erat.
+        <section>
+            <div class="compare">
+                <div class="fashion">
+                    <h1>Fashion</h1></div>
+                <div class="performance">
+                    <h1>Performance</h1></div>
+            </div>
 
-</p></div>
+        </section>
 
-</section>
-<div class="shoe-menu">
-<img src="img/huarache.jpg" class="huarache">
-  <img src="img/max90.jpg" class="air-max">
-  <img src="img/huarache2.jpg" class="huarache2">
-</div>
 
-<div class="headers">
-<h1 id="Performace">The green</h1>
-<h1 id="Comfort">The bad</h1>
-<h1 id="Statements">The ugly</h1>
-</div>
 
-<div class="comments">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum feugiat tellus. Maecenas orci diam, dictum ac nulla sit amet, gravida aliquet ipsum. Donec ornare, neque vitae dapibus vulputate, leo justo convallis nisi, id ornare purus odio sed nulla. </p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum feugiat tellus. Maecenas orci diam, dictum ac nulla sit amet, gravida aliquet ipsum. Donec ornare, neque vitae dapibus vulputate, leo justo convallis nisi, id ornare purus odio sed nulla.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum feugiat tellus. Maecenas orci diam, dictum ac nulla sit amet, gravida aliquet ipsum. Donec ornare, neque vitae dapibus vulputate, leo justo convallis nisi, id ornare purus odio sed nulla.</p>
-</div>
 
-<section>
-</section>
 
-<section>
-</section>
+        <section class="showcase-wrapper">
+            <div class="showcase">
+                <a href="#"><img src="img/asos4.jpg" class="asos4"></a><br><h1>Deice</h2>
+                <a href="#"><img src="img/asos3.jpg" class="asos3"></a>
+                <a href="#"><img src="img/asos2.jpg" class="asos1"></a>
+                <a href="#"><img src="img/asos1.jpg" class="asos2"></a>
+                <div class="headers">
+                    <h1 id="insiders">Sole Insiders</h1>
+                    <h1 id="market">Marketplace</h1>
+                    <h1 id="app">Sole App</h1>
+                    <h1 id="student">Student Perks</h1>
+                </div>
+            </div>
+            <!-- </section> -->
 
-<section>
+            <section class="comments-wrapper">
+                <div class="comments">
+                    <div class="comment1">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum feugiat tellus. at erat luctus pellentesque. Nulla facilisi. Suspendisse ullamcorper turpis nulla, sit amet porttitor magna suscipit in. </p>
+                    </div>
+                    <div class="comment2">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elits. Mauris tincidunt ligula at erat luctus pellentesque. Nulla facilisi. Suspendisse ullamcorper turpis nulla, sit amet porttitor magna suscipit in. </p>
+                    </div>
+                    <div class="comment3">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum feugiat tellus. Nulla facilisi. Suspendisse ullamcorper turpis nulla, sit amet porttitor magna suscipit in.</p>
+                    </div>
+                    <div class="comment4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum feugiat tellus ullamcorper turpis nulla, sit amet porttitor magna suscipit in.</p>
+                    </div>
+                </div>
+            </section>
 
-</section>
+            <section id="contact-wrapper">
+                <div class="contact">
+                    <a href="#">
+                        <div class="austin">
+                            Austin
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="sanantonio">
+                            San Antonio
+                        </div>
+                    </a>
+                </div>
+                </div>
+            </section>
 
-<section>
-</section>
 
-</main>
 
+    </main>
 </body>
+
 </html>

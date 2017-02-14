@@ -1,66 +1,388 @@
-*{
-  border:1px solid red;
-}
-.nav-links ul{
-  display:flex;
-  flex-direction: column;
+/*Navbar, logo, shopping cart*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
-.hero{
+
+/* The side navigation menu */
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The side nav links */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Yantramanav', sans-serif;
+    text-align: center;
+}
+
+
+/*font size will increase when you hover over link*/
+/*link will also turn white when you focus your mouse on it*/
+.sidenav a:hover, a:active, .a:focus {
+    font-size: 200%;
+    color: #f1f1f1;
+}
+
+
+/* The navigation menu links */
+
+.sidenav a:hover, .offcanvas a:focus {
+    color: f1f1f1;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+
+/*At top of page "Sole"*/
+
+.logo {
+    max-width: 85px;
+    height: 36px;
+    background-color: #000000;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    /*border: 1px solid red;*/
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 2px 0px black;
+    padding: 4px 15px;
+    /*vertical-align: middle;*/
+}
+
+.logo h1 {
+    font-family: 'Yantramanav', cursive;
+}
+
+#hero {
+    /*margin-top: 15px;
+  width:100%;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
   background-image: url("../img/air-force.jpg");
-  margin:0 auto;
-  background-repeat:
+  background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  width:850px;
-  height:555px;
-  margin: 0 auto;
-  font-family: 'Fira Sans',sans-serif;
-  font-size:4.6em;
-  color: #ffffff;
-  text-align: center;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-li{
-  list-style: none;
-  text-decoration: none;
-}
-
-.cheetah{
-  display: flex;
-  justify-content:flex-start;
-  margin-top:-50px;
+  width: 100%;*/
+    background-image: url("../img/air-force.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+    margin: 0 auto;
+    font-family: 'Yantramanav', cursive;
+    font-size: 4.6em;
+    color: #B8B8B8;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 20px;
 }
 
-.adidas{
-  margin-top:70px;
-  width: 40%;
+.air-force {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-shadow: 2px 2px 0px black;
+    color: white;
 }
 
-.text-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-content: flex-end;
-  margin-top: 70px;
-  height: 30vh;
+.shop-now {
+    height: 30px;
+    width: 120px;
+    background-color: black;
+    margin: 0 auto;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Yantramanav', cursive;
 }
 
-.shoe-menu{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
+.shop-now a:hover, a:active, .a:focus {
+    font-size: 200%;
+    color: #f1f1f1;
+}
+
+
+/*Huarache article */
+
+article {
+    background-color: #F0F0F0;
+    height: 38vh;
+}
+
+
+/*Huarache img*/
+
+.huarache {
+    margin-top: 3px;
+    float: left;
+    /*border: 1px solid red;*/
+}
+
+
+/*Huarache article heading*/
+
+.text-container {
+    /*border: 1px solid red;*/
+    text-align: center;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+
+/*Huarache article copy*/
+
+p {
+    text-align: center;
+    font-family: 'Yantramanav', cursive;
+}
+
+.showcase-wrapper {
+    margin-top: 25px;
+    /*border: 1px solid red;*/
+    background-color: #F0F0F0;
+}
+
+.showcase {
+    /*border: 1px solid red;*/
+    height: 38vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .headers {
-  display:flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
+    /*border:1px solid red;*/
+    width: 100%;
+    font-family: 'Yantramanav', sans-serif;
 }
 
-.comments{
-  display:flex;
-  justify-content:space-around;
+.comments {
+    /*border:1px solid red;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    text-align: center;
+    height: 20vh;
+    margin: 50px;
+}
+
+.comment1, .comment2, .comment3 {
+    /*border: 1px solid red;*/
+}
+
+img:hover {
+    /*when you hover over img it will change the opacity. Will be lighter*/
+    opacity: 0.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.asos1, .asos2, .asos3, .asos4 {
+    border: .5px solid black;
+}
+
+.fa-shopping-cart {
+    color: black;
+}
+
+.compare {
+    display: flex;
+    /*align-content: flex-start;*/
+    justify-content: space-between;
+    /*flex-wrap: wrap;*/
+    margin-top: 22px;
+    /*border: 1px solid red;*/
+    height: 300px;
+    margin-left: 100px;
+    /*text-align: center;*/
+}
+
+.yeezy, .jordan14 {
+    max-height: 300px;
+    /*border: 1px solid red;*/
+}
+
+.fashion {
+    /*margin-right: 400px;*/
+    width: 50%;
+    /*border: 1px solid red;*/
+    text-align: center;
+    background-image: url("../img/yeezy.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    /*background-size: cover;*/
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    text-shadow: 2px 2px 0px black;
+    font-family: 'Yantramanav', sans-serif;
+    /*display: flex;*/
+}
+
+.performance {
+    /*margin-left: 140px;*/
+    width: 50%;
+    /*border: 1px solid red;*/
+    text-align: center;
+    background-image: url("../img/jordan14.jpg");
+    background-repeat: no-repeat;
+    /*background-position: top;*/
+    /*background-size: cover;*/
+    height: 300px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-shadow: 2px 2px 0px #FF0000;
+    font-family: 'Yantramanav', cursive;
+    /*border: 1px solid red;*/
+}
+
+.performance h1 {
+    padding-top: 100px;
+    padding-right: 175px;
+    font-size: 50px;
+}
+
+.fashion h1 {
+    padding-top: 100px;
+    font-size: 50px;
+}
+
+
+/*.compare{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+}*/
+
+.headers2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#contact-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin-top: 30px;
+    /*border: 1px solid red;*/
+}
+
+.contact {
+    background-image: url("../img/store.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 591px;
+    /*border: 1px solid red;*/
+    margin-left: 200px;
+    background-color: white;
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.austin, .sanantonio {
+    height: 30px;
+    width: 120px;
+    background-color: black;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Yantramanav', sans-serif;
+    /*border: 1px solid red;*/
+}
+
+.sanantonio {
+    margin-right: 225px;
+}
+
+.locations {
+    margin-left: 500px;
+}
+
+width:100%;
+height:800px;
+
+}
+*/ @media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
 }
