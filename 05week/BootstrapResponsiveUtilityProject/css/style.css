@@ -1,23 +1,144 @@
 div img {
-  width: 100%;
-  padding-top: 15px;
+    width: 100%;
+    margin-top: 32px;
 }
 
 ul {
-  list-style-type: none;
-  padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 
 h3 {
-  border-bottom: 1px solid lightgray;
-  padding-bottom: 20px;
+    margin-bottom: -5px;
+}
+
+#image {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#headline {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.aside-content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
 }
 
 li {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  text-transform: capitalize;
-  margin-top: 20px;
-  padding-right: 100px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+
+hr {
+    height: 6px;
+    background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+    border: 0;
+}
+
+h4 {
+    font-weight: normal;
+    line-height: 26px;
+    padding-right: 100px;
+}
+
+button {
+    background-color: #967b97;
+    color: white;
+    text-transform: uppercase;
+    padding: 15px;
+    border: none;
+    font-weight: bold;
+    letter-spacing: .125em;
+    margin: 20px 0 60px 0;
+}
+
+.footer-box {
+    background-color: #5d5d5d;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-h4 {
+    color: white;
+    font-weight: bold;
+}
+
+.flex-column {
+    display: flex;
+    flex-flow: column;
+}
+
+.flex-column:first-child {
+    padding-right: 35px;
+}
+
+a {
+    color: white;
+    margin-bottom: 16px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #f5da96;
+}
+
+.flex-column a+a {
+    border-top: 1px solid white;
+    padding-top: 16px;
+}
+
+.flex-column h4 {
+    margin-bottom: 20px;
+}
+
+.fa {
+    float: right;
+}
+
+
+/*media queries*/
+
+@media (max-width: 1215px) {
+    li {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1090px) {
+    li {
+        line-height: 24px;
+        margin-top: 18px;
+    }
+}
+
+
+/*phone size*/
+
+@media (max-width: 767px) {
+    h4 {
+        padding-right: 0px;
+    }
+    h1 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    div img {
+        margin-top: 22px;
+    }
 }
