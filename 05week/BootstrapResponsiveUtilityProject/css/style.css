@@ -29,11 +29,23 @@ h3 {
 }
 
 li {
+    margin-top: 30px;
+}
+
+li a {
     font-weight: bold;
     font-size: 16px;
     line-height: 26px;
     text-transform: capitalize;
-    margin-top: 30px;
+    color: black;
+    transition: color 0.25s linear;
+    -o-transition: color 0.2s linear;
+    -moz-transition: color 0.2s linear;
+    -webkit-transition: color 0.2s linear;
+}
+
+li a:hover {
+    color: #967b97;
 }
 
 hr {
@@ -57,6 +69,11 @@ button {
     font-weight: bold;
     letter-spacing: .125em;
     margin: 20px 0 60px 0;
+}
+
+button:hover {
+    background-color: #f5da96;
+    color: #967b97;
 }
 
 .footer-box {
@@ -87,6 +104,10 @@ button {
 a {
     color: white;
     margin-bottom: 16px;
+    transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
+    -moz-transition: color 0.2s linear;
+    -webkit-transition: color 0.2s linear;
 }
 
 a:hover {
@@ -111,15 +132,19 @@ a:hover {
 /*media queries*/
 
 @media (max-width: 1215px) {
-    li {
+    li a {
         font-size: 15px;
+    }
+    li {
         margin-top: 20px;
     }
 }
 
 @media (max-width: 1090px) {
-    li {
+    li a {
         line-height: 24px;
+    }
+    li {
         margin-top: 18px;
     }
 }
@@ -132,8 +157,8 @@ a:hover {
         padding-right: 0px;
     }
     h1 {
-        font-size: 26px;
-        line-height: 32px;
+        font-size: 28px;
+        line-height: 34px;
     }
     h4 {
         font-size: 18px;
