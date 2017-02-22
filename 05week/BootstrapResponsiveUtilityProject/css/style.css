@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+body {
+  padding-top: 70px;
+}
+
 .topstories li {
   font-size: 14px;
   padding-bottom: 8px;
@@ -19,21 +23,30 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    border: 2px solid #525252;
 }
 
 a {
   display: block;
   padding-top: 10px;
+
 }
 
 #headline a:hover{
   text-decoration: none;
-  color: white;
+  color: #525252;
+  background-color: white;
+  border: 2px solid #525252;
+
+}
+
+#aside1 a {
+  color: black;
 }
 
 #aside1 a:hover {
   text-decoration: none;
-  color: black;
+  color: blue;
 }
 
 #info-links1 a {
@@ -73,6 +86,47 @@ a {
   float: right;
 }
 
+
+.navbar {
+  background-color: #5d5d5d;
+}
+
+.navbar-header a:hover {
+  color: white !important;
+}
+
+.icon-bar {
+  background-color: white !important;
+}
+
+.navbar-header .navbar-brand {
+  color: white;
+}
+
+#nav-header a {
+  color: white;
+  font-family: sans-serif;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: right;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-nav > li > .dropdown-menu  {
+  background-color: #5d5d5d !important;
+
+}
+
+.logo-image {
+  height: 30px;
+}
+
 /* This is my phone CSS */
 
 @media (max-width: 767px) {
@@ -80,5 +134,14 @@ a {
       font-size: 24px;
     }
 
+    .navbar .navbar-nav {
+      display: inline-block;
+      float: none;
+      vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+      text-align: center;
+    }
 
 }
