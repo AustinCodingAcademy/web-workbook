@@ -1,16 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>BootstrapNavigation</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-  </head>
-  <body>
+<head>
 
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-inverse bg-inverse">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  shrink-to-fit=no">
+  <title>BootstrapResponsiveUtility</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+  integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+  crossorigin="anonymous">
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+  body{
+    margin-top: 30px;
+  }
+  h2{
+    padding-top: 20px;
+  }
+  a{
+    border: 1px solid black;
+    padding: 5px;
+    color: #fff;
+    background-color: #464a4c;
+  }
+  footer{
+    background-color: darkgray;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    color: #fff;
+    }
+    footer h6{
+      font-weight: bold;
+    }
+    footer p{
+      margin: 5px auto;
+    }
+    .straight-line{
+      height: 1px;
+      background-color: black;
+    }
+    nav{
+      margin-bottom: 10px;
+      /*background-color: #e3f2fd;*/
+    }
+    nav a{
+      background-color: #6eb85c;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -27,16 +74,6 @@
       <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="text" placeholder="Search">
@@ -45,10 +82,80 @@
   </div>
 </nav>
 
+  <main class="container">
+    <section class="row">
+      <article class="col-md-9 col-sm-12">
+        <img class="img-fluid"
+        src="../../05week/BootstrapResponsiveUtilityProject/img/bg.jpg"
+        alt="Office Picture">
+        <h2>Tomorrow's Technology, Yesterday's Insights</h2>
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  </body>
+        <p>
+          Sometimes what the tech world comes up with has already been tried
+          and rejected and really doesn't need to be resurrected-like the
+          Taylorist view...
+        </p>
+        <a href="#">TECHNOLOGY</a>
+
+        <footer class="row hidden-sm-up">
+          <article class="col-4">
+            <h6>Useful Links</h6>
+            <p>About</p>
+            <div class="straight-line"></div>
+            <p>Jobs</p>
+            <div class="straight-line"></div>
+            <p>Team</p>
+            <div class="straight-line"></div>
+            <p>Advertise</p>
+            <div class="straight-line"></div>
+            <p>Terms</p>
+          </article>
+
+          <article class="col-4">
+            <h6>Social Media</h6>
+            <p>Facebook <img src="https://www.facebook.com/favicon.ico"
+              alt="facebook"></p>
+            <div class="straight-line"></div>
+            <p>Instagram <img src="../../05week/BootstrapResponsiveUtilityProject/img/Instagram.png"
+              alt="Instagram"></p>
+            <div class="straight-line"></div>
+
+            <p>Twitter <img src="https://twitter.com/favicon.ico"
+            alt="Twitter">
+            </p>
+            <div class="straight-line"></div>
+          </article>
+        </footer>
+      </article>
+
+      <article class="col-md-3 hidden-sm-down">
+        <h3>TOP STORIES</h3>
+        <div class="straight-line"></div>
+        <br>
+
+        <h6>Stanford Researches Make Artificial Skin That Senses Touch</h6>
+        <br>
+        <h6>3 New Ways to Wear Your Favorite Chambray Shirt</h6>
+        <br>
+        <h6>Where to Buy Your Next Rug</h6>
+        <br>
+        <h6>Chukkas that Offer Casual, Comfortable Style</h6>
+
+      </article>
+    </section>
+  </main>
+
+
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+  integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+  crossorigin="anonymous"></script>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+  integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+  integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+  crossorigin="anonymous"></script>
+</body>
 </html>
