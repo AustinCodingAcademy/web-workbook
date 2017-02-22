@@ -1,3 +1,51 @@
+.navbar {
+  background-color: #78cfcf;
+  border: none;
+  height: 80px;
+}
+
+li a {
+  color: white !important;
+  font-size: 18px;
+  font-style: bold;
+  padding-left: 50px !important;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: white !important;
+}
+
+.nav-content {
+  margin-top: 15px;
+}
+
+.navbar-toggle {
+  background-color: white !important;
+  border: none;
+  border-radius: 0px;
+  height: 50px;
+  margin-top: -1px;
+  width: 50px;
+}
+
+.navbar-toggle:hover {
+  background-color: gray !important;
+}
+
+.icon-bar {
+  margin: 0 auto;
+  background-color: #78cfcf !important;
+  height: 3px !important;
+  width: 25px !important;
+}
+
+.navbar-collapse {
+  background-color: #78cfcf;
+}
+
 #hero {
   background-image: url("../img/sub_header_home.jpg");
   background-repeat: no-repeat;
@@ -41,4 +89,25 @@ h3 {
 
 h4, p {
   text-align: center;
+}
+
+@media (max-width: 767px) {
+
+  .navbar-collapse {
+    background-color: white;
+  }
+
+  li a {
+    color: #78cfcf !important;
+  }
+}
+
+@media (max-width: 801px) {
+  /*.nav-content {
+    margin-top: -15px !important;
+  }*/
+
+  li a {
+    padding-left: 15px !important;
+  }
 }
