@@ -1,3 +1,13 @@
+.nav {
+  padding-bottom: 3px;
+  background-color: transparent;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  margin-left: 30px;
+}
+
 #hero{
 
 background-image:
@@ -6,9 +16,8 @@ background-repeat:no-repeat;
 /*background-position: center;*/
 background-size: cover;
 /*width: 950px;*/
-height: 450px;
+height: 430px;
 margin-bottom: 20px;
-margin-top: 10px;
 }
 
 #hero {
@@ -39,9 +48,13 @@ margin-top: 10px;
   align-items: center;*/
 }
 
-@media all and (max-width: 750px)
+@media all and (max-width: 650px)
 
 {
+  header {
+    height: 100px;
+  }
+
   #hero h1 {
     font-size: 40px;
   }
@@ -51,7 +64,8 @@ margin-top: 10px;
    }
 
    #hero {
-     align-items: center;}
+     align-items: center;
+   }
 
    .icon {
      padding-left: 90px;
@@ -65,9 +79,15 @@ margin-top: 10px;
 
 }
 
-@media all and (max-width: 900px)
+@media all and (max-width: 800px)
 
 {
+  .nav {
+    height: 100px;
+    border-bottom: 2px solid black;
+  }
+
+
   #hero h1 {
     font-size: 40px;
   }
@@ -78,6 +98,7 @@ margin-top: 10px;
 
    #hero {
      align-items: center;
+     text-align: center;
    }
 
    .icon {
@@ -104,6 +125,8 @@ margin-top: 10px;
 
    #hero {
      align-items: center;
+     text-align: center;
+     height: 350px;
    }
 
    .icon {
