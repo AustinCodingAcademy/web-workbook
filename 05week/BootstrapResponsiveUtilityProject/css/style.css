@@ -35,9 +35,14 @@
   margin-top: 30px;
 }
 
+button:hover > .icon-bar {
+  background-color: white !important;
+}
+
 div img {
     width: 100%;
     margin-top: 32px;
+    z-index: 1;
 }
 
 ul {
@@ -145,10 +150,7 @@ a {
     color: white;
     margin-bottom: 16px;
     transition: color 0.2s linear;
-    -o-transition: color 0.2s linear;
-    -moz-transition: color 0.2s linear;
-    -webkit-transition: color 0.2s linear;
-}
+  }
 
 a:hover {
     text-decoration: none;
@@ -214,7 +216,9 @@ a:hover {
 
     .navbar-collapse {
       background-color: #1a1a18;
-      border: none !important;
+      border-top: 0 !important;
+      z-index: 10;
+      position: absolute;
+      width: 100%;
     }
-
 }
