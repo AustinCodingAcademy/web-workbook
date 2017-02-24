@@ -1,5 +1,9 @@
+body {
+  height: 3000px;
+}
+
 .navbar {
-    background-color: red !important;
+    background-color: rgba(0, 0, 0, .3) !important;
     height: 80px;
     border: none;
     margin-bottom: 0;
@@ -7,7 +11,7 @@
 
 .navbar-brand {
     font-family: 'Playfair Display', serif;
-    color: black !important;
+    color: #fff !important;
     font-size: 36px;
     font-weight: 700;
     margin-top: 10px;
@@ -19,7 +23,7 @@
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: .1em;
-    color: black !important;
+    color: white !important;
     margin-top: 15px;
     margin-left: 10px;
 }
@@ -32,10 +36,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
-    height: 400px;
+    height: 100vh;
     margin: 0 auto;
 }
 
@@ -47,7 +52,7 @@ h1 {
     font-weight: 700;
 }
 
-button {
+.hero-button {
     background-color: white;
     color: black;
     font-family: 'Playfair Display', serif;
@@ -58,6 +63,7 @@ button {
     padding: 20px;
     border: 0;
     margin-top: 20px;
+    width: 200px;
 }
 
 .hero-text {
@@ -82,16 +88,17 @@ label {
 
 /*media queries*/
 
-@media (max-width: 840px) {
+@media (max-width: 933px) {
 
     .navbar-nav li a {
-        margin-left: -10px;
-        font-size: 10px;
-        margin-top: 0px;
+        margin-left: -15px;
+        /*font-size: 10px;*/
+        /*margin-top: 0px;*/
     }
 
     .navbar-brand {
       margin-left: 0;
+      font-size: 32px;
     }
 
 
