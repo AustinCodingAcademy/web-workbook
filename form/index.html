@@ -20,57 +20,110 @@
   <body>
     <div class="container-fluid gradient">
       <div class="row">
-        <div class="col-3 d-flex justify-content-center p-2" style="border: 3px solid black">
-          <h1 class="display-5 text-right">Names and Info:</h1>
-
-
+        <div class="col-12 col-sm-3">
+          <h1 class="display-5">Names and Info:</h1>
         </div>
-      <div class="col-9 d-flex justify-content-center">
+      <div class="col-12 col-sm-9 d-flex justify-content-center flex-wrap">
+      <div class="col">
         <div class="form-group">
-        <label for="first-name" class="col-form-label">First</label>
-        <input class="form-control" type="text" value="First Name" id="first-name">
+          <label for="first-name" class="col-form-label">First</label>
+          <input class="form-control" type="text" value="First Name" id="first-name">
         </div>
+      </div>
+      <div class="col">
         <div class="form-group">
-        <label for="last-name" class="col-form-label">Last</label>
-        <div class="col">
+          <label for="last-name" class="col-form-label">Last</label>
           <input class="form-control" type="search" value="Last Name" id="last-name">
         </div>
       </div>
-        <div class="form-group">
-        <label for="birthdate" class="col-form-label">Birthdate<input class="form-control" type="date" value="1/2/3456" id="birthdate"></label>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="row d-flex justify-content-between flex-wrap">
-    <div class="col-3">
-      <div class="form-group">
-        <label for="birthdate" class="col-form-label">Birthdate  <input class="form-control" type="date" value="1/2/3456" id="birthdate"></label>
       </div>
     </div>
-    <div class="col-3">
-      <div class="form-group">
-          <label for="socsecnum" class="col-form-label">Social<input class="form-control" type="password" value="999-99-999" id="socsecnum"></label>
-      </div>
-    </div>
-    <div class="col-3">
-      <div class="form-group">
-         <label for="drvlicnum" class="col-form-label">License Number<input class="form-control" type="password" value="1234567" id="drvlicnum" /></label>
-       </div>
-     </div>
-      <div class="col-3">
-        <div class="form-group">
-          <label for="drvstate" class="col-form-label">State <input class="form-control" type="text" value="TX" id="drvstate" /></label>
+    <div class="row justify-content-around">
+        <div class="col-sm-3">
+          <div class="form-group">
+            <label for="birthdate" class="col-form-label">Birthdate</label>
+            <input class="form-control" type="date" value="1/2/3456" id="birthdate" />
+          </div>
         </div>
-      </div>
-    <div class="form-group row">
-          <label for="email" class="col-2 col-form-label">Email</label>
-          <div class="col-6">
-            <input class="form-control" type="email" value="bootstrap@example.com" id="email">
+        <div class="col-sm-3">
+          <div class="form-group">
+            <label for="socsecnum" class="col-form-label">Social</label>
+            <input class="form-control" type="password" value="999-99-999" id="socsecnum" />
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-group">
+             <label for="drvlicnum" class="col-form-label">License Number<input class="form-control" type="password" value="1234567" id="drvlicnum" /></label>
+           </div>
+         </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label for="drvstate" class="col-form-label">State<input class="form-control" type="text" value="TX" id="drvstate" /></label>
+            </div>
           </div>
       </div>
+  </div>
 </div>
+<div class="container-fluid gradient2">
+  <div class="row">
+    <div class="col-sm-4">
+      <h1 class="display-5">Addresses and Contact:</h1>
+    </div>
+    <div class="col-sm-4">
+      <label for="email" class="col-form-label">Email</label>
+      <input class="form-control" type="email" value="bootstrap@example.com" id="email">
+    </div>
+    <div class="col-sm-4">
+      <div class="form-group">
+        <label for="cellphone" class="col-form-label">Cell Phone</label>
+        <input class="form-control" type="tel" value="1-(555)-555-5555" id="cellphone">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="form-group">
+          <label for="address-1" class="col-form-label">Address 1</label>
+          <input class="form-control" type="text" value="Apt 221 b" id="address 1">
+          </div>
+        </div>
+        <div class="col-sm-3">
+        <div class="form-group">
+            <label for="Address 2" class="col-form-label">Address 2</label>
+            <input class="form-control" type="text" value="Baker St" id="address2">
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="form-group">
+            <label for="city" class="col-form-label">City</label>
+            <input class="form-control" type="text" value="Austin" id="City">
+          </div>
+        </div>
+        <div class="col-sm-3 m-0 p-0">
+          <div class="form-group">
+            <label for="state" class="col-2 col-form-label">State</label>
+            <input class="form-control" type="state" value="Tejas" id="state">
+          </div>
+          <div class="form-group">
+            <label for="zipcode" class="col-2 col-form-label">Zip</label>
+            <input class="form-control" type="zipcode" value="78709" id="zipcode">
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+    </div>
+    </div>
+
+
+
+
   <div class="col-6">
     <div class="form-group row justify-content-center">
 
@@ -87,47 +140,16 @@
 
 
 <div class="col-5 offset-1">
-  <div class="form-group row">
-    <label for="example-number-input" class="col-form-label">Address 1</label>
-    <div class="col-6">
-      <input class="form-control" type="text" value="Apt 221 b" id="address 1">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="Address 2" class="col-form-label">Address 2</label>
-    <div class="col-5">
-      <input class="form-control" type="text" value="Baker St" id="address2">
-    </div>
-  </div>
-<div class="form-group row">
-  <label for="cellphone" class="col-form-label">Cell Phone</label>
-  <div class="col-6">
-    <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
-  </div>
-</div>
+
+
 
 
 </div>
 <div class="col-6">
 
 
-<div class="form-group row">
-  <label for="city" class="col-form-label">City</label>
-  <div class="col-5">
-    <input class="form-control" type="text" value="Austin" id="City">
-  </div>
-</div>
-<div class="form-group row">
-  <label for="state" class="col-2 col-form-label">State</label>
-  <div class="col-5">
-    <input class="form-control" type="state" value="Tejas" id="state">
-  </div>
-  <div class="form-group row">
-    <label for="zipcode" class="col-2 col-form-label">Zip</label>
-    <div class="col-5">
-      <input class="form-control" type="zipcode" value="78709" id="zipcode">
-    </div>
-  </div>
+
+
 
 </div>
 </div>
