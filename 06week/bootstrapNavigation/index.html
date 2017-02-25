@@ -28,6 +28,10 @@
   .navbar-light .navbar-nav .nav-link:hover{
     color: #f00;
   }
+  /*Font color of the links in navbar*/
+  .navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.78);
+  }
 
   body{
     margin-top: 30px;
@@ -35,11 +39,15 @@
   main h2{
     padding-top: 20px;
   }
-  main a{
+  main section article > a{
     border: 1px solid black;
     padding: 5px;
     color: #fff;
     background-color: #464a4c;
+  }
+  main section article > a:hover{
+    text-decoration: none;
+    color: #f00;
   }
   footer{
     background-color: darkgray;
@@ -152,14 +160,89 @@
         <h3>TOP STORIES</h3>
         <div class="straight-line"></div>
         <br>
+        <!-- Accordion starts here -->
+        <!-- Accordion #1 -->
+        <div id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="card">
+            <div class="card-header" role="tab" id="headingone">
+              <h5 class="mb-0">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseone" aria-expanded="true" aria-controls="collapseone">
+                  Stanford Researches Make Artificial Skin That Senses Touch
+                </a>
+              </h5>
+            </div>
 
-        <h6>Stanford Researches Make Artificial Skin That Senses Touch</h6>
-        <br>
-        <h6>3 New Ways to Wear Your Favorite Chambray Shirt</h6>
-        <br>
-        <h6>Where to Buy Your Next Rug</h6>
-        <br>
-        <h6>Chukkas that Offer Casual, Comfortable Style</h6>
+            <div id="collapseone" class="collapse show" role="tabpanel" aria-labelledby="headingone">
+              <div class="card-block">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                single-origin coffee nulla assumenda shoreditch et.
+              </div>
+            </div>
+          </div>
+          <!-- Accordion #2 -->
+          <div class="card">
+            <div class="card-header" role="tab" id="headingtwo">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+                  3 New Ways to Wear Your Favorite Chambray Shirt
+                </a>
+              </h5>
+            </div>
+            <div id="collapsetwo" class="collapse" role="tabpanel" aria-labelledby="headingtwo">
+              <div class="card-block">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                single-origin coffee nulla assumenda shoreditch et.
+              </div>
+            </div>
+          </div>
+          <!-- Accordion #3 -->
+
+          <!-- Accordion ends here -->
+          <div class="card">
+            <div class="card-header" role="tab" id="headingthree">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsethree" aria-expanded="false" aria-controls="collapsethree">
+                  Where to Buy Your Next Rug
+                </a>
+              </h5>
+            </div>
+            <div id="collapsethree" class="collapse" role="tabpanel" aria-labelledby="headingthree">
+              <div class="card-block">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                single-origin coffee nulla assumenda shoreditch et.
+              </div>
+            </div>
+          </div>
+          <!-- Accordion #4 -->
+          <div class="card">
+            <div class="card-header" role="tab" id="headingfour">
+              <h5 class="mb-0">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                  Chukkas that Offer Casual, Comfortable Style
+                </a>
+              </h5>
+            </div>
+            <div id="collapsefour" class="collapse" role="tabpanel" aria-labelledby="headingfour">
+              <div class="card-block">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                terry richardson ad squid. 3 wolf moon officia aute, non cupidatat
+                skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                single-origin coffee nulla assumenda shoreditch et.
+              </div>
+            </div>
+          </div>
+        </div>
+
 
       </article>
     </section>
