@@ -1,0 +1,218 @@
+body {
+    font-family: Georgia, serif;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 44px;
+    font-style: italic;
+    margin-bottom: 20px;
+    /*width: 740px;*/
+}
+
+h2 {
+    font-size: 24px;
+    color: black;
+    line-height: 38px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: lightgray;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+h6 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 28px;
+    color: black;
+}
+
+#quote {
+    font-size: 24px;
+    line-height: 40px;
+    font-style: italic;
+    color: white;
+}
+
+.navbar {
+    height: 55px;
+    border: 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, .4) !important;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.logo {
+    height: 40px;
+    margin-top: -10px;
+}
+
+li a {
+    color: white !important;
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: .1em;
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/wine-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 800px;
+    margin-top: -75px;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin-top: 60px;
+}
+
+.f-img {
+    height: 400px;
+    opacity: .75;
+    margin-bottom: 35px;
+}
+
+#about-us {
+    min-height: 640px;
+    width: 100%;
+}
+
+.about-us-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    padding: 0 130px;
+    height: 640px;
+}
+
+.man-sweeping {
+    background-image: url('../img/wine16.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 640px;
+}
+
+.about-us-text img {
+    max-height: 80px;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+#testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/wine13.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+    min-height: 700px;
+}
+
+.testimonials-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    max-width: 900px;
+}
+
+#wines {
+    max-width: 1170px;
+}
+
+
+.wine-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column wrap;
+    margin-bottom: 80px;
+}
+
+hr {
+    margin-bottom: 48px;
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 0 0 24px 0;
+    width: 100%;
+}
+
+.wine-info img {
+    height: 500px;
+}
+
+.shop {
+  background-color: #91a05c;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: .1em;
+  padding: 10px;
+  border: 0;
+  text-transform: uppercase;
+  width: 150px;
+  height: 45px;
+  margin-top: 20px;
+}
+
+
+/*Media Queries*/
+
+@media (max-width: 767px) {
+    .navbar-collapse {
+        background-color: white;
+        z-index: 10;
+        position: absolute;
+        margin-top: 3px;
+        width: 100%;
+    }
+    li a {
+        color: black !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-us-text {
+        padding: 0 80px;
+    }
+}
+
+@media (max-width: 1375px) {
+    .about-us-text {
+        padding: 0 100px;
+    }
+}
