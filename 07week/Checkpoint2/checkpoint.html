@@ -12,29 +12,62 @@
 </head>
 
 <body>
+  <!--Main background img-->
   <header class="container-fluid">
     <div class="row">
-        <h5>“Without doubt, one of the most consistently high-quality wineries in the Barossa region”</h5>
+      <nav class="navbar navbar-toggleable-md navbar-light bg-faded col-12">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Navbar
+  <img src="http://foundry.mediumra.re/img/logo-light.png" width="30" height="30"</a>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+      <h5>“Without doubt, one of the most consistently high-quality wineries in the Barossa region”</h5>
     </div>
 
   </header>
   <main class="p-0 container-fluid">
-    <section class="row">
-      <article class="col-xs-12 col-md-6">
-        <div>
-          <h5 class="uppercase">• Est. 1968 •</h5>
+    <section class="row" id="tall">
+      <!--About Us section-->
+      <article class="text-center my-auto col-xs-12 col-md-6">
+          <h5>• Est. 1968 •</h5>
           <h4>Combining over 100 years of hard work and shared family knowledge</h4>
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
             doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
             veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-            <img src="img/sig.jpg" id="signature">
-        </div>
-      </article>
-      <img src="img/wine16.jpg" alt="Worker" class="p-0 m-0 col-xs-12 col-md-6 img-fluid">
+          <img src="img/sig.jpg" class="thumb">
+        </article>
+      <!--Working Man Responsive img-->
+      <img src="img/wine16.jpg" alt="Worker" class="p-0 m-0 col-xs-12 col-md-6">
     </section>
-<section class="row">
-      <img src="img/wine13.jpg" class="img-fluid">
+    <!--Picking Grapes fluid img-->
+    <section class="row" id="pic">
+      <h3></h3>
     </section>
+    <!--Three Wine Descriptions-->
     <section class="row">
       <article class="text-center col-xs-12 col-md-4">
         <img src="img/wine3.jpg" class="bottle">
@@ -55,13 +88,60 @@
         <button class="btn btn-primary">Visit Shop</button>
       </article>
     </section>
-    <section class="p-0" id="awards">
+    <!--Awards Section-->
+    <section class="row" id="awards">
+      <h3 class="col-12 text-center my-auto">Awards and Recognitions</h3>
+      <article class="my-auto text-center col-xs-12 col-md-4">
+        <img src="http://foundry.mediumra.re/img/wine9.png" class="thumb">
+        <p>Best Mid-Tier Value Win <br>
+          Barossa Shiraz, 2009
+        </p>
+      </article>
+      <article class="my-auto text-center col-xs-12 col-md-4">
+        <img src="http://foundry.mediumra.re/img/wine10.png" class="thumb">
+        <p>Winemake of the Year <br>
+          Foundry Vineyard, 2014
+        </p>
+      </article>
+      <article class="my-auto text-center col-xs-12 col-md-4">
+        <img src="http://foundry.mediumra.re/img/wine11.png" class="thumb">
+        <p>Best Overall Value <br>
+            Barossa Cabernet, 2010
+        </p>
+      </article>
+    </section>
+    <!--Join Us Section-->
+    <section class="row" id="join">
+      <img src="http://foundry.mediumra.re/img/wine15.jpg" class="col-xs-12 col-md-6">
+      <article class="my-auto col-xs-12 col-md-6 text-center">
+        <h4>Join us for tastings at the Cellar Door</h4>
+        <p><Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>1240 Kilgour Road <br>
+            Rowland Flat <br>
+            South Australia 5352
+        </p>
+        <ul>
+          <li>P: (05) 3929 9283</li>
+          <li>E: enquiries@foundry.net</li>
+        </ul>
 
+      </article>
     </section>
 
 
   </main>
-  <footer class="bg-inverse">
+
+  <footer class="text-white text-center bg-inverse">
+    <h3>Sign up for our monthly Newsletter</h3>
+    <p>Get special offers and news on cewest cellar releases.</p>
+    <input type="text">
+    <button class="btn btn-primary">Sign Up Now</button>
+    <!--Social Icons in horizontal row-->
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
 
   </footer>
   <!--Javascript-->
