@@ -1,48 +1,47 @@
 body {
-  width: 100%;
+  font-family: georgia, serif;
 }
+
 #hero {
     background-image: url("../img/wine-bg.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     width: 100%;
-    height: 600px;
+    height: 800px;
+    border: 20px none;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    color: white;
-    font-size: 16px;
     text-align: center;
+    color:white;
     margin-bottom: 0;
-
-  }
-  #hero img {
-    opacity: .75;
-    width: 40%;
-    height:40%;
-  }
-
-  #about
-   {
-
-     text-align: center;
-
-
-  }
-#about img{
-  height:100px;
-  width:200px;
-  margin-bottom: 0;
-  font-size: 30px;
+}
+#hero img{
+  margin: 0 auto;
+  opacity: .75;
+}
+#hero h3 {
+  font-style: italic;
+}
+#about {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 
 }
-#aboutpic {
-  max-height: 100%;
-    height: 650px;
-    width: 100%;
-  position:relative;
-  bottom: 280px;
+#about img {
+  max-width: 100%;
+}
+#about h3 p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.img {
+  height: 30%;
+  width:30%;
+}
+
 }
 #testimonial {
   background-image: url("../img/wine13.jpg");
@@ -51,23 +50,14 @@ body {
   background-size: cover;
   width: 100%;
   height: 800px;
-  margin-top: -277px;
-  text-align: center;
-  color: white;
-}
-
-#wineselection {
+  border: 20px none;
+  margin-bottom: 20px;
   display: flex;
-  align-content: center;
+  justify-content: center;
   text-align: center;
-
-}
-
-#wineselection img {
-  height: 40%;
-  width: 40%;
-  margin-bottom: -20px;
-
+  color:white;
+  margin-bottom: 0;
+  align-items: center;
 }
 .grey-button {
     background-color: #666;
@@ -76,8 +66,34 @@ body {
     border: 0;
     padding: 6px 10px;
 }
-@media (max-width: 1024px) and (min-width: 768px) {
-  #about p{
-    
-  }
+#wineselection {
+  display: flex;
+
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
 }
+#wineselection img {
+  height:40%;
+  width: 40%;
+  align-self: center;
+  margin: 0 auto;
+  margin-bottom: -20px;
+
+
+}
+.img-responsive {
+  max-width: 100%;
+}
+ @media screen and (max-width: 800px){
+   #wineselection img {
+     height:40%;
+     width: 40%;
+     align-self: center;
+     margin: 0 auto;
+     margin-bottom: -20px;
+     margin-top: 20px;
+
+ }
+ }
