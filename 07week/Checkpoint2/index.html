@@ -1,79 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Checkpoint2</title>
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="checkpointstyle.css">
+    <link rel="stylesheet" href="checkpoint2.css">
   </head>
   <body>
-    <header>
-      <div class="container-fluid">
-        <nav class="navbar navbar-light navbar-toggleable-md navbar-fixed-top">
-          <a class="navbar-brand" href="#">FOUNDRY</a>
-          <button class="navbar-toggler pull-sm-right" type="button"
-          data-toggle="collapse" data-target="#navbarnavdropdown">
-            <!-- <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="sr-only"></span> -->
-            ☰
-          </button>
-          <div class="collapse navbar-collapse" id="navbarnavdropdown">
-            <ul class="navbar-nav dropdown pull-md-right">
-              <li class="nav-item active">
-                <a class="nav-link dropdown-toggle" href="#">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#"
-                data-toggle="dropdown">Pages
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#"
-                data-toggle="dropdown">Elements
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#"
-                data-toggle="dropdown">Portfolio
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#"
-                data-toggle="dropdown">Shop
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#"
-                data-toggle="dropdown">Blog
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#">Search</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link" href="#">Cart</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+    <nav class="navbar fixed-top transp navbar-toggleable-md navbar-light bg-faded">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Foundry</a>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="homedropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Home
+            </a>
+            <div class="dropdown-menu" aria-labelledby="homedropdown">
+              <a class="dropdown-item" href="#">Action</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="pagesdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Pages
+            </a>
+            <div class="dropdown-menu" aria-labelledby="pagesdropdown">
+              <a class="dropdown-item" href="#">Action</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="elementsdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Elements
+            </a>
+            <div class="dropdown-menu" aria-labelledby="elementsdropdown">
+              <a class="dropdown-item" href="#">Action</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="portfoliodropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Portfolio
+            </a>
+            <div class="dropdown-menu" aria-labelledby="portfoliodropdown">
+              <a class="dropdown-item" href="#">Action</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="shopdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Shop
+            </a>
+            <div class="dropdown-menu" aria-labelledby="shopdropdown">
+              <a class="dropdown-item" href="#">Action</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="blogdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Blog
+            </a>
+            <div class="dropdown-menu" aria-labelledby="blogdropdown">
+              <a class="dropdown-item" href="#">Action</a>
+            </div>
+          </li>
+          <li>
+            <a class="nav-link" href="#" id="searcher">icon</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#" id="cart">icon</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="langdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Eng
+            </a>
+            <div class="dropdown-menu" aria-labelledby="langdropdown">
+              <a class="dropdown-item" href="#">Action</a>
+            </div>
+          </li>
+        </ul>
       </div>
-    </header>
-    <main class="container-fluid">
-      <div class="row">
-        <div class="sec1 col-xs-12 col-md-12 col-lg-12  align-middle text-center justify-content-center">
-
-          <img class="flogo transparent img-fluid" src="img/wine1.png" alt="flogo">
+    </nav>
+    <div class="col-sm-12 col-md-12 col-lg-12 sec1 align-items-center text-center justify-content-center">
+      <img class="flogo transparent img-fluid align-middle" src="img/wine1.png" alt="flogo">
           <p class="white">Without doubt, one of the most consistently high-quality wineries
             in the Barossa region</p>
-        </div>
-      </div>
-
-    </main>
-
-
+    </div>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
