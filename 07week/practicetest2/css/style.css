@@ -46,30 +46,89 @@ main{
 #hero img{
    opacity: 0.75;
 }
+/*-------------END OF HERO------------------*/
 
 .halftron{
-margin-right: -19%;
+/*margin-right: -19%;
+margin-left: -19%;*/
 }
 
 #hardwork{
-  padding-left: 10%;
-  padding-right:20%;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 #hardworktext{
-  padding-right: 10%;
+  /*background-color: blue;*/
+  max-height: 650px;
+  text-align: center;
+  padding: 10%;
 }
 
-#hardworkimg{
-  background-image: url("../img/wine16.jpg");
-  height: 800px;
-  width: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
+#hardworktext h5{
+  margin-bottom: 60px;
+}
+#hardworktext h2{
+  margin-bottom: 60px;
+
+}
+
+#hardworkimg img{
+  max-height: 650px;
+  width: 100%;
+}
+
+/*-------------END OF Hardwork------------------*/
+
+#vines{
+  background-image: url("../img/wine13.jpg");
+  background-position: center;
+  height: 1000px;
+  color: white;
+  padding-left: 10%;
+  padding-right: 15%;
+  padding-top: 27%;
+  text-align: center;
+  margin-bottom: 0px;
+}
+#vines h4{
+
+  text-align: center;
+  font-size: 50px;
+}
+#vines h5{
+
+  text-align: center;
+  font-size: 20px
+}
+
+/*-------END OF VINES-----------------------*/
+
+.wine{
+  padding-left: 8%;
+  padding-right: 8%;
+
+}
+
+.wine img{
+  max-height: 500px;
+
+}
+
+button{
+  background-color: green;
+  color: white;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 /*Media Queries-------------------------------------------*/
+
+@media all and (max-width: 1000px){
+
+  .wine img{
+    max-height: 300px;
+  }
+}
 
 @media all and (max-width: 767px) {
 
@@ -104,5 +163,22 @@ margin-right: -19%;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+
+  .wine img{
+    margin-top: 10%;
+    padding: 5%;
+  }
+
+  .wine a{
+  padding: 10%
+ }
+  .wine h3{
+  padding: 2%
+ }
+  .wine h5{
+  padding: 2%
+ }
+
 
 }
