@@ -11,30 +11,31 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 
-<!--NAVBAR hyperlinks in  -->
+  <header>
+<!--NAVBAR goes here-->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aira-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      <!--LOGO in top left corner goes here-->
+          <a id="brand" class="navbar-brand" href="#">FOUNDRY</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav pull-right">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonial">Testimonial</a></li>
+            <li><a href="#wine">Wine</a></li>
+          </ul>
+        </div>
+  </header>
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aira-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-  <!--LOGO in top left corner goes here-->
-      <a id="brand" class="navbar-brand" href="#">FOUNDRY</a>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav pull-right">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#testimonial">Testimonial</a></li>
-        <li><a href="#wine">Wine</a></li>
-      </ul>
-    </div>
-
-<body>
+<!--picking grapes img goes here with text in center-->
 
       <section id="hero">
         <div class="row">
@@ -51,20 +52,27 @@
         </div>
       </section>
 
+<!--collapsing ABOUT page goes here-->
+
       <section id="about">
-        <div class="container-one">
-          <h3><em>EST.1968</em></h3>
-          <h2><em>Combining over 60 years of hard work and shared family knowledge</em></h2>
-          <br>
-          <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati maiores aliquam. Ad minus vero fugiat consequuntur qui provident aliquid quod quidem cumque aliquam deleniti suum cuique.</h4>
-          <!--signature goes here-->
-        </div>
-        <div class="container-two">
-          <img src="img/wine16.jpg" alt="washing" class="img-responsive">
+        <div class="row center-me">
+          <div id="aboutText" class="col-xs-12 col-lg-4 col-lg-offset-1">
+            <h5 id="est">•EST. 1968•</h5>
+            <h3>Combining over 60 years of hard work and shared family knowledge</h3>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati maiores aliquam. Ad minus vero fugiat consequuntur qui provident aliquid quod quidem cumque aliquam deleniti suum cuique.</p>
+            <br>
+            <img id="signature" src="img/sign.png" alt="signature" class="img-responsive">
+          </div>
+          <div class="col-lg-6 col-lg-offset-1 col-xs-12 pull right">
+            <img id="wineman" src="img/wine16.jpg" class="img-responsive">
+          </div>
         </div>
       </section>
 
-      <div class="jumbotron" id="testimonial">
+<!--testimonial page goes here-->
+
+      <section id="testimonial">
           <!--image of picking grapes goes here-->
         <div class="container">
           <h2><em>"We've been producing fine wine for over 65 years,
@@ -72,34 +80,30 @@
           <br>
           <p><em>Consectetur adipisicing elit. Distinctio quo pariatur consectetur, maiores architecto animi? Cupiditate, consequuntur! A at dolor corporis similique, ea enim sint quidem, recusandae nemo cumque.</em></p>
         </div>
-      </div>
+      </section>
 
-      <div class="container" id="wine">
+<!--wine bottles shop links go here-->
+
+      <section id="wine">
         <div class="col-sm-4">
-          <img alt="Shiraz" class="img-responsive" src="img/wine3.jpg">
-          <hr>
+          <img alt="Shiraz" class="img-responsive" src="img/wine3.jpg"><hr>
           <h1><em>Foundry Shiraz</em></h1>
           <h5><em>Aged five years in solid, French Oak barrels sports notes of pepper and blackberry</h5></em>
           <a class="shop-btn" href="#">VISIT SHOP</a>
         </div>
         <div class="col-sm-4">
-          <img alt="Chardanay" class="img-responsive" src="img/wine6.jpg">
-          <hr>
+          <img alt="Chardanay" class="img-responsive" src="img/wine6.jpg"><hr>
           <h1><em>Foundry Chardonnay</em></h1>
           <h5><em>A rich fruit pallet with subtle Oak influence and a lingering dry, fresh finish</em></h5>
           <a class="shop-btn" href="#">VISIT SHOP</a>
         </div>
         <div class="col-sm-4">
-          <img alt="Cabarnet" class="img-responsive" src="img/wine7.jpg">
-          <hr>
+          <img alt="Cabarnet" class="img-responsive" src="img/wine7.jpg"><hr>
           <h1><em>Foundry Cabernet</em></h1>
           <em><h5>Generous sweet blackcurrant and mulberry character with soft, velvety tannins</em></h5>
           <a class="shop-btn" href="#">VISIT SHOP</a>
         </div>
-      </div>
-
-
-
+      </section>
 
 <!--these are JS files-->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">

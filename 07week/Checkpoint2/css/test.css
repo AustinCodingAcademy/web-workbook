@@ -1,76 +1,107 @@
+/* fixed navbar at top---------------- */
+
+.navbar {
+  margin-bottom: 0;
+  font-family: 'Raleway', 'Helvetica';
+  text-transform: uppercase;
+  position: relative;
+  min-height: 50px;
+}
+
+.navbar-default {
+  background-color: #f8f8f8;
+}
+
+/* HERO section picking grapes img---- */
+
 #hero {
   background-image: url("../img/wine-bg.jpg");
-  background-repeat: no-repeat;
-  width:100%;
+  width: 100%;
   display: flex;
   justify-content: center;
+  color: white;
+}
+
+.col-xs-12 {
+  display: flex;
+  flex-direction: column;
 }
 
 #quote {
-  width: 100%;
-  height: 60px;
+  font-family: 'Georgia';
+  font-size: 21px;
+  font-style: italic;
   text-align: center;
-  font-family: 'Times New Roman';
-  color: white;
 }
 
 #author {
-  justify-content: center;
+  font-family: 'Helvetica', serif;
   text-align: center;
-  font-family: 'Times New Roman';
-  color: white;
+  font-size: 18px;
+  padding: 50px 50px 50px 50px;
 }
+
+/* ABOUT page goes here--------------*/
 
 #about {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  width: 100%;
-}
-
-.container-one {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding-top: 150px;
-  padding-left: 50px;
-  padding-right: 50px;
   text-align: center;
-  font-family: 'Times New Roman';
-  color: #767b80;
+  font-family: 'Georgia', serif;
+  font-style: italic;
 }
 
-.container-two {
-  width: 100%;
+#est {
+  padding-top: 150px;
+  font-family: 'Georgia';
+  font-size: 16px;
+  color: gray;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
+
+#signature {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-self: center;
+}
+
+/* TESTIMONIAL section  goes here----*/
 
 #testimonial {
-  background-image: url("../img/wine13.jpg");
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: white;
-  font-family: 'Times New Roman';
+  background-image:url("../img/wine13.jpg");
   width: 100%;
   height: 800px;
+  text-align: center;
+  color: white;
+  font-family: 'Georgia';
+  padding-top: 275px;
 }
 
-.container {
-  padding-bottom: 100px;
+h2 {
+  font-size: 21px;
 }
+
+p {
+  font-size: 16px;
+}
+
+/* WINE SELECTION goes here ------*/
 
 #wine {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin-left: 250px;
   text-align: center;
+  width: 75%;
+  height: 400px;
+  font-family: 'Georgia';
+  font-style: italic;
 }
 
 .shop-btn {
   background-color: #91a05c;
-  font-family: 'Raleway', 'Helvetica';
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color:white;
   padding: 10px 30px;
+  color: white;
+
 }
