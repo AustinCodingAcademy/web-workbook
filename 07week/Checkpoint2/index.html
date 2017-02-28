@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <style>
+
+navbar-brand {
+  max-height: 60%;
+}
+
+img {
+  max-height: 60%;
+}
+
+.full-img-bg-1 {
+  background-image: url('img/wine-bg.jpg');
+  height:890px;
+  color: white;
+  text-align: center;
+}
+
+.full-img-bg-2 {
+  background-image: url('img/wine13.jpg');
+  height: 700px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.full-img-bg-3 {
+  background-image: url('img/wine12.jpg');
+  color: white;
+  height: 700px;
+}
+/*wtf why doesn't that work?*/
+.big-f {
+  display: inline-block;
+}
+
+.badges{
+  max-height: 25%;
+  padding-top: 200px;
+}
+
+    </style>
+
+  </head>
+  <body>
+    <!-- Not sure why this is not responding, starting over with section below. -->
+    <!-- <div class="container-fluid">
+      <nav class="nav-container">
+    </nav>
+  </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-4">
+          <img src="img/wine-bg.jpg" />
+        </div>
+      </div>
+    </div> -->
+
+<!-- This is the Nav Bar piece, come back and get spacing between the links-->
+    <header>
+      <div class="container-fluid background-color:transparent">
+      <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"> <img src="img/logo-light.png"/></a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Elements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+<!-- This is the hero image with the huge F. But I can't get the F on top of the main image. -->
+  <div class="row">
+    <div class="col-md-12 hero full-img-bg-1">
+      <!-- <img class="full-img-bg-1 img-fluid" src="img/wine-bg.jpg" /> -->
+      <div>
+        <img class="img-fluid big-f" src="img/wine1.png" />
+      </div>
+    </div>
+  </div>
+
+<!--This is the second row with the snowman.  -->
+    <div class="row">
+      <div class="col-md-6">
+        <div style="text-align:center">
+      <h3>• EST. 1968 •</h3>
+      <h4>Combining over 100 years of hard work and shared family knowledge</h4>
+      <p style="text-align:center padding:100 px 100 px margin: 100px 100px">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+        doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+        veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+      </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+      <img class="img-fluid" src="img/wine16.jpg" />
+      </div>
+    </div>
+
+<!--This is the next full width section. With the top of the man's head.  -->
+    <div class="row">
+      <div class="col-md-12 hero full-img-bg-2">
+        <!-- <img class="background-image-holder img-fluid" src="img/wine13.jpg" /> -->
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+      </div>
+    </div>
+
+    <!-- This is the row with the 3 wine bottles. Figure out how to set the height
+  here and all the others for that matter. -->
+
+  <div class="row">
+    <div class="col-md-4 text-center">
+      <img class="img-fluid" src="img/wine3.jpg" />
+      <h4>Foundry Chardonnay</h4>
+    </div>
+    <div class="col-md-4 text-center">
+      <img class="img-fluid" src="img/wine6.jpg" />
+      <h4>Foundry Chardonnay</h4>
+    </div>
+    <div class="col-md-4 text-center">
+      <img class="img-fluid" src="img/wine7.jpg" />
+      <h4>Foundry Chardonnay</h4>
+    </div>
+  </div>
+
+  <!--This is the next full width section. With the awards  -->
+      <div class="row full-img-bg-3">
+        <div class="col-md-12 hero">
+          <div class="row">
+            <div class="col-md-4 text-center badges">
+              <img class="img-fluid" src="img/wine9.png" />
+              <h4>Award 1</h4>
+            </div>
+            <div class="col-md-4 text-center badges">
+              <img class="img-fluid" src="img/wine10.png" />
+              <h4>Award 2</h4>
+            </div>
+            <div class="col-md-4 text-center badges">
+              <img class="img-fluid" src="img/wine11.png" />
+              <h4>Award 3</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>
