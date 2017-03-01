@@ -57,6 +57,16 @@ p.durka {
   height: 100vh;
 }
 
+.heightadj2 {
+  height: 100vh;
+}
+
+@media (max-width: 767px) {
+.heightadj2 {
+    height: 396px;
+}
+}
+
 .hero {
   width: 100%;
   height: 100%;
@@ -87,6 +97,14 @@ height: 512px;
   opacity: 0.5;
 }
 
+.jcc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 25% 0;
+}
+
 #twocolumns {
   display:flex;
   justify-content: center;
@@ -108,12 +126,14 @@ height: 512px;
 #vineyard {
   background-image: url("img/wine-bg.jpg");
   margin-top: -57px;
+  background-position: center;
 
 }
 
 #basket {
   background-image: url("img/wine13.jpg");
-
+  height:inherit;
+  background-position: center;
 }
 
 #sign {
@@ -160,4 +180,18 @@ h4 {
   font-style: italic;
   font-weight: 300;
   margin-bottom: 24px;
+}
+
+h3 {
+  font-family: 'georgia', serif;
+  font-style: italic;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+@media (max-width: 767px) {
+h3 {
+    font-size: 24px;
+    line-height: 32px;
+}
 }
