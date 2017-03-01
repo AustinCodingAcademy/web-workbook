@@ -1,8 +1,42 @@
 body {
-  font-family: georgia, serif;
+  font-family: 'Georgia', serif;
 }
 
-/* This is styling for my NAVbar */
+#hero {
+  background-image: url(../img/wine-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #999;
+  background-blend-mode: multiply;
+  height: 700px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: -80px;
+  color: white;
+  font-weight: 100;
+}
+
+#f {
+  height: 400px;
+  max-width: 100%;
+  opacity: 0.5;
+}
+
+#hero h4 {
+  font-size: 21px;
+  font-style: italic;
+  margin-top: 48px;
+  line-height: 1.4em;
+}
+
+#owner {
+  font-family: "Raleway", 'Helvetica Neue';
+  font-weight: 200;
+}
 
 .navbar {
   background: none;
@@ -30,163 +64,126 @@ body {
   margin-top: -5px;
 }
 
-/*This is styling for my hero section */
-
-#hero {
-  background-image: url(../img/wine-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-color: #999;
-  background-blend-mode: multiply;
-  height: 700px;
-  width: auto;
-  margin-top: -80px;
-  margin-bottom: 0;
-  font-weight: 200;
-  text-align: center;
-  color: white;
-}
-
-#f {
-  height: 450px;
-  opacity: 0.5;
-  margin-top: 40px;
-  margin-bottom: 48px;
-}
-
-#hero h4 {
-  font-size: 24px;
-  line-height: 1.5em;
-  font-family: "Frank Ruhl Libre", Georgia, serif;
-  font-style: italic;
-  margin-bottom: 20px;
-}
-
-#hero p {
-  font-family: 'open sans', ' helvetica neue', helvetica, arial, sans-serif;
-  font-weight: 300;
-}
-
-/* This is styling for my About Section */
-
-#about {
+#about-us {
   height: auto;
   width: 100%;
   text-align: center;
 }
 
-#about #wine-guy {
-  max-height: 600px;
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.signature {
-  height: 100px;
-  padding-bottom: 40px;
-}
-
-#about-wine {
+.about-wine {
   font-family: 'georgia', serif;
   padding: 0 120px;
   font-weight: 300;
+  /*display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;*/
 }
 
-#about-wine h5 {
+.about-wine h5 {
   font-size: 16px;
+  font-style: italic;
   line-height: 24px;
-  font-style: italic;
+  opacity: 0.5;
   letter-spacing: 2px;
-  opacity: 0.5;
-  margin: 25% 0 30px 0;
-
+  margin-top: 20%;
 }
 
-#about-wine h4 {
-  font-size: 24px;
-  line-height: 32px;
-  font-style: italic;
-
-}
-
-#about-wine p {
+.about-wine p {
   font-size: 16px;
-  line-height: 1.4em;
+  line-height: 1.4;
   opacity: 0.5;
+  margin-bottom: 20px;
 }
 
-/* This is styling for my Testimonial Section */
+.about-wine h4 {
+  font-size: 24px;
+  font-style: italic;
+  line-height: 32px;
+
+}
+
+#wine-guy {
+  max-height: 100%;
+  width: 100%;
+}
+
+#about-us .signature {
+  height: 100px;
+  margin-bottom: 40px;
+}
 
 #testimonial {
   background-image: url(../img/wine13.jpg);
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   background-color: #999;
   background-blend-mode: multiply;
   height: 700px;
   width: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 200;
+  display: flex;
+  align-items: center;
   text-align: center;
   color: white;
+  margin-bottom: 0;
 }
 
 #testimonial h2 {
-  font-size: 3em;
+  font-size: 2.5em;
   font-style: italic;
-  margin-top: 250px;
+  font-weight: 100;
 }
 
 #testimonial p {
-  font-size: 1.2em;
+  font-size: 16px;
+  font-weight: 100;
   line-height: 30px;
-  margin-top: 30px;
-  padding: 0 70px;
+  margin: 30px 70px 0px 70px;
 }
 
-/* This is styling for my Vinos */
-
-#vinos {
+#wine {
+  background-color: white;
   height: 800px;
-  width: 100%;
-  margin-top: 0;
   text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+
 }
 
 .wines {
+  text-align: center;
   margin-bottom: 40px;
-}
-
-#vinos img {
-  height: 500px;
-  margin: 0 auto;
-}
-
-#vinos hr {
   margin-top: 0;
-  margin-bottom: 48px;
+  padding-top: 0;
 }
 
-#vinos h3 {
+#wine img {
+  margin: 0 auto;
+  height: 500px;
+}
+
+#wine hr {
+  margin-bottom: 48px;
+  margin-top: 0
+}
+
+#wine h3 {
   font-style: italic;
   font-weight: 200;
 }
 
-#vinos h4 {
-  line-height: 1.4em;
-  font-size: 16px;
+#wine h4 {
   font-style: italic;
-  margin: 0 10px 40px 10px;
+  font-weight: 200;
+  line-height: 1.4em;
+  margin:0 10px 40px 10px;
 }
 
-#vinos .shop-btn {
+.shop-btn {
   border: 1px solid #91a05c;
   padding: 10px 25px;
-  font-family: "raleway", "helvetica neue";
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #91a05c;
   color: white;
   letter-spacing: 2px;
@@ -194,120 +191,73 @@ body {
   margin-bottom: 90px;
 }
 
-#vinos a:hover {
+#wine a:hover {
+  color: white;
   text-decoration: none;
 }
 
+/*#wine {
+  height: 500px;
+}*/
 
-
+img {
+  max-width: 100%;
+}
 
 /* This is for tablet */
 
 @media (min-width: 768px) and (max-width: 991px) {
+ .navbar {
+   background: none;
+ }
 
-/* Media for Hero */
-
-  #f {
-    height: 350px;
-  }
-
-/* Media for Testimonial */
-
-  #testimonial h2 {
-    font-size: 2em;
-    font-style: italic;
-    margin-top: 250px;
-  }
-
-  #testimonial p {
-    font-size: 1em;
-    line-height: 30px;
-    margin-top: 30px;
-    padding: 0 50px;
-  }
-
-/* Media for Vinos */
-
-  #vinos img {
-    height: 400px;
-  }
-
-
+ #f {
+   height: 300px;
+ }
 }
-
 
 /* This is for phones */
 
 @media (max-width: 767px) {
-
-/* Media for NAVbar */
-
-.navbar {
-  background-color: gray;
+  .navbar {
+    background: gray;
   }
 
-/* Media for Hero */
-
   #hero {
-    height: 600px;
+    height: 550px;
   }
 
   #f {
-    height: 300px;
+    height: 250px;
   }
 
   #hero h4 {
     font-size: 16px;
   }
 
-/* Media for About */
-
-  #about-wine {
-    padding: 0 15px;
+  .about-wine {
+    padding: 15px;
   }
 
-  #about-wine h4 {
-    font-size: 18px;
-  }
-  #about-wine p {
-    font-size: 14px;
-  }
-
-  #about-wine h5 {
-    margin: 40px 0 30px 0;
-  }
-
-/* Media for Testimonial */
-
-  #testimonial {
-    height: 600px;
-  }
-
-  #testimonial h2 {
-    font-size: 18px;
-    font-style: italic;
-    margin-top: 250px;
+  .about-wine h4, h5, p {
+    font-size: 16px;
   }
 
   #testimonial p {
-    font-size: 14;
-    line-height: 20px;
-    margin-top: 30px;
-    padding: 0 15px;
+    font-size: 16px;
   }
 
-/* Media for Vinos */
+  #wine img {
+    margin: 0 auto;
+    height: 350px;
+  }
 
-  #vinos h3 {
+  #wine h3 {
     font-size: 18px;
   }
 
-  #vinos h4 {
-    font-size: 14px;
-  }
-
-  #vinos img {
-    height: 350px;
+  #wine h4 {
+    font-size: 16px;
   }
 
 }
