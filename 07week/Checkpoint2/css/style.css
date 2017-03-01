@@ -1,76 +1,99 @@
+/*These are are the font stylings*/
+
 body {
-    font-family: Georgia, serif;
-    color: white;
+    font-family: Georgia, Times, serif;
     text-align: center;
-}
-
-h1 {
-    font-size: 32px;
-    line-height: 44px;
-    font-style: italic;
-    margin-bottom: 20px;
-    /*width: 740px;*/
-}
-
-h2 {
-    font-size: 24px;
-    color: black;
-    line-height: 38px;
-    font-style: italic;
-    margin-bottom: 20px;
-}
-
-h4 {
-    color: lightgray;
-    font-size: 16px;
-    text-transform: uppercase;
-}
-
-h5 {
-    font-size: 16px;
-    line-height: 26px;
-}
-
-h6 {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-    margin-top: 20px;
-}
-
-p {
-    font-size: 16px;
-    line-height: 28px;
-    color: black;
+    color: white;
 }
 
 #quote {
     font-size: 24px;
-    line-height: 40px;
+    line-height: 36px;
     font-style: italic;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 42px;
+    font-style: italic;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 36px;
+    color: black;
+    text-transform: italic;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+h4 {
+    color: #666;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 16px;
+    line-height: 28px;
     color: white;
 }
 
-.navbar {
-    height: 55px;
-    border: 0 !important;
-    border-bottom: 1px solid rgba(255, 255, 255, .4) !important;
-    border-radius: 0px;
-    background-color: rgba(0, 0, 0, 0);
+h6 {
+    font-size: 13px;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    margin-top: 25px;
 }
 
-.logo {
+.wine-info p {
+    color: black;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.about-us-text p {
+    color: #666;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+/*navbar styling*/
+
+.navbar {
+    width: 100%;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0) !important;
+    position: fixed;
+    border: 0;
+    border-radius: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .4) !important;
+}
+
+.navbar-toggle {
+  border: 0 !important;
+}
+
+span {
+  background-color: white !important;
+  height: 3px !important;
+  width: 30px !important;
+}
+
+.logo-image {
     height: 40px;
+    max-width: 100%;
     margin-top: -10px;
 }
 
 li a {
     color: white !important;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    font-size: 11px;
     letter-spacing: .1em;
 }
+
+/*hero styling*/
 
 #hero {
     display: flex;
@@ -80,26 +103,29 @@ li a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
-    height: 800px;
-    margin-top: -75px;
+    height: 868px;
 }
 
 .hero-text {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-flow: column;
-    margin-top: 60px;
+    max-width: 700px;
 }
 
-.f-img {
-    height: 400px;
+.f-image {
     opacity: .75;
-    margin-bottom: 35px;
+    height: 488px;
+    margin-bottom: 65px;
+    margin-left: 15px;
 }
+
+/*about us styling*/
 
 #about-us {
     min-height: 640px;
@@ -108,11 +134,18 @@ li a {
 
 .about-us-text {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-flow: column wrap;
-    padding: 0 130px;
     height: 640px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.about-us-text img {
+    max-height: 100px;
+    max-width: 100%;
+    margin-top: 20px;
 }
 
 .man-sweeping {
@@ -123,11 +156,7 @@ li a {
     height: 640px;
 }
 
-.about-us-text img {
-    max-height: 80px;
-    max-width: 100%;
-    margin-top: 20px;
-}
+/*testimonials styling*/
 
 #testimonials {
     display: flex;
@@ -137,82 +166,85 @@ li a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     background-blend-mode: multiply;
     background-color: rgba(0, 0, 0, 0.5);
-    min-height: 700px;
+    width: 100%;
+    height: 600px;
 }
 
 .testimonials-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
     max-width: 900px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+    min-height: 240px;
 }
+
+/*wine selection stlying*/
 
 #wines {
     max-width: 1170px;
 }
-
 
 .wine-info {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-flow: column wrap;
-    margin-bottom: 80px;
-}
-
-hr {
-    margin-bottom: 48px;
-    border: none;
-    border-top: 1px solid #ccc;
-    margin: 0 0 24px 0;
-    width: 100%;
 }
 
 .wine-info img {
     height: 500px;
 }
 
-.shop {
-  background-color: #91a05c;
-  color: white;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  letter-spacing: .1em;
-  padding: 10px;
-  border: 0;
-  text-transform: uppercase;
-  width: 150px;
-  height: 45px;
-  margin-top: 20px;
+hr {
+    border-top: 1px solid lightgray;
+    width: 100%;
+    margin-top: -1px;
+}
+
+/*button styling*/.shop {
+    background-color: #6e8058;
+    padding: 10px;
+    height: 50px;
+    width: 175px;
+    border: none;
+    color: white;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 80px;
 }
 
 
-/*Media Queries*/
+/*media queries*/
 
 @media (max-width: 767px) {
+    .about-us-text {
+        padding-left: 55px;
+        padding-right: 55px;
+    }
     .navbar-collapse {
+        margin-top: 5px;
         background-color: white;
-        z-index: 10;
-        position: absolute;
-        margin-top: 3px;
-        width: 100%;
     }
     li a {
         color: black !important;
+        text-align: left;
     }
-}
-
-@media (max-width: 992px) {
-    .about-us-text {
-        padding: 0 80px;
+    .f-image {
+        height: 380px;
     }
-}
+    #quote {
+        font-size: 20px;
+        line-height: 35px;
+    }
 
-@media (max-width: 1375px) {
-    .about-us-text {
-        padding: 0 100px;
+    .wine-info {
+      padding-left: 75px;
+      padding-right: 75px;
     }
 }
