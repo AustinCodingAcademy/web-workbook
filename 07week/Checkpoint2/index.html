@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Google Font, Bootstrap, and css style sheet-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Foundry</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--Bottom buttons and nav bar only have Raleway, the rest is Georgia-->
+                    <a class="navbar-brand" href="#">Foundry</a>
+                </div>
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav pull-right">
+                        <li>
+                          <!--Inserting this original link with the id tag will link the page to be responsive-->
+                            <a href="http://enogelmeier.github.io/web-workbook/07week/Checkpoint2/index.html#hero">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://enogelmeier.github.io/web-workbook/07week/Checkpoint2/index.html#third">Testimonial</a>
+                        </li>
+                        <li>
+                            <a href="http://enogelmeier.github.io/web-workbook/07week/Checkpoint2/index.html#about">About Us</a>
+                        </li>
+                        <li>
+                            <a href="http://enogelmeier.github.io/web-workbook/07week/Checkpoint2/index.html#bottle">Wine Selection</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="hero" class="container-fluid">
+            <div class="row">
+              <!--worked with md vs xs-->
+                <div class="col-md-12">
+                    <img src="img/wine1.png">
+                    <div class="herotext">
+                        <p id="quote">"Without doubt, one of the most consistently
+                            <br> high-quality wineries in the Barossa region"</p>
+                        <p id="author">David Halladay - Respected Wino</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 pull-right">
+                    <img src="img/wine16.jpg" id="aboutimage" class="img-responsive">
+                </div>
+                <div class="col-md-6">
+                  <!-- Where the hell is the dot button!?!?!-->
+                    <h4>•EST 1968•</h4>
+                    <h2>Combining over 60 years of hard work and shared family knowledge</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati maiores aliquam. Ad minus vero fugiat consequuntur qui provident aliquid quod quidem cumque aliquam deleniti suum cuique.</p>
+                    <img src="img/wine2.png" id="sign" class="img-responsive">
+                </div>
+            </div>
+        </section>
+
+        <section id="third" class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>"We've been producing fine wine for over 65 years,<br>
+I think we know what we're talking about"</h2>
+                    <p>Consectetur adipisicing elit. Distinctio quo pariatur consectetur, maiores architecto animi? Cupiditate, consequuntur! A at dolor corporis similique, ea enim sint quidem, recusandae nemo cumque.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="bottle" class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                  <!-- img-responsive makes it adapt to changing sizes-->
+                    <img src="img/wine3.jpg" id="shiraz" class="img-responsive">
+                    <hr></hr>
+                    <h2>Foundry Shiraz</h2>
+                    <p>Aged five years in solid, French Oak barrels sports notes of pepper and blackberry</p>
+                    <a class="button" href="#">Vist Shop</a>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/wine6.jpg" id="chard" class="img-responsive">
+                    <hr></hr>
+                    <h2>Foundry Chardonnay</h2>
+                    <p>A rich fruit pallet with subtle Oak influence and a lingering dry, fresh finish</p>
+                    <a class="button" href="#">Vist Shop</a>
+                </div>
+                <div class="col-md-4">
+                  <!--Gave images id tags to media query-->
+                    <img src="img/wine3.jpg" id="cab" class="img-responsive">
+                    <hr></hr>
+                    <h2>Foundry Cabernet</h2>
+                    <p>Generous sweet blackcurrant and mulberry character with soft, velvety tannins</p>
+                    <a class="button" href="#">Vist Shop</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- JQuery CDN script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Javascript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>
