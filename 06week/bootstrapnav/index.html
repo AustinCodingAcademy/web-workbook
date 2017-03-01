@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>
         BootStrap Responsive Utility
@@ -15,26 +16,54 @@
 <body>
     <header>
         <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">Navbar</a>
+
+            <a class="navbar-brand" href="#">
+            <i class="fa fa-superpowers" aria-hidden="true"></i>
+              </a>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+                    </li>
+
+                    <li class="nav-item dropdown show">
+                        <a id="dropdownlink" class="nav-link dropdown-toggle"
+                         href="http://reddit.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Local News</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownlink">
+                            <a class="dropdown-item" href="#">Reddit = Time Waster: Click here to see why!</a>
+                            <a class="dropdown-item" href="#">Was Austin Ever Really Weird?</a>
+                            <a class="dropdown-item" href="#">How to Remove Blood Stains From Concrete</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown show">
+                        <a id="dropdownlink" class="nav-link dropdown-toggle"
+                         href="http://aljazeera.com" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">International News</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownlink">
+                            <a class="dropdown-item" href="#">Why does Russia Love Reddit?</a>
+                            <a class="dropdown-item" href="#">London Bridges Are Falling Down</a>
+                            <a class="dropdown-item" href="#">Yeman and Trump</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Careers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
+                        <a class="nav-link" href="#">Weather</a>
                     </li>
                 </ul>
+
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search Our News</button>
                 </form>
+
             </div>
         </nav>
     </header>
