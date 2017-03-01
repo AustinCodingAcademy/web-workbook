@@ -15,6 +15,8 @@ margin:0;
 h1{
   font-family: 'Barrio', cursive;
   font-size: 60px;
+  /*border: 1px solid red;*/
+
 }
 
 img {
@@ -22,13 +24,18 @@ img {
     width:100%;
 }
 
+li a {
+  color: black
+}
+
 .btn-default{
   background-color: color:#e15d5f;
 }
 
-.navbar {
+.navbar-default {
     border-radius:0;
     border:0;
+    border: 1px solid red;
 
 
 }
@@ -39,7 +46,8 @@ img {
 
 /**Header Navigation**/
 header .navbar{
-    padding:30px 0;
+    padding:10px 0;
+
 }
 
 header .navbar-default{
@@ -56,6 +64,10 @@ header .navbar-default .navbar-nav a:hover {
     color:#EEC856;
 }
 
+header .navbar-default .navbar-nav a{
+  color:black;
+}
+
 header .navbar-default .navbar-nav .active a {
     font-weight:700;
     color:#EEC856;
@@ -70,7 +82,7 @@ header .navbar-default .navbar-nav .active a {
     }
 
 /**Navbar Brand**/
-header .navbar-brand{
+.navbar-default .navbar-brand{
 /*background: url(../img/logo.svg);*/
 background-repeat:no-repeat;
 background-position: 15px 0;
@@ -80,7 +92,7 @@ font-family: 'Barrio', cursive;
 
 }
 
-header .navbar-brand h1{
+.navbar-default .navbar-brand h1{
 margin:0;
 font-size:1.8em;
 font-weight:400;
@@ -90,7 +102,9 @@ font-size: 70px;
 font-family: 'Barrio', cursive;
 text-align: left;
 
+
 }
+
 
 header .navbar-brand span.subhead{
     font-family:"roboto slab", serif;
@@ -119,7 +133,10 @@ background-color: #EEEEEE;
 
 }
 
-.carousel-caption{
+.carousel-inner{
+  /*border: 1px solid red;*/
+
+
 
 }
 
@@ -127,8 +144,38 @@ background-color: #EEEEEE;
   text-align:center;
 }
 
-.form-group{
+form{
+  width: 100%;
+  margin: 0 auto;
   text-align: center;
+  display: block;
+}
+
+label{
+  display: inline-block;
+  width:100%;
+  text-align: center;
+
+}
+
+.input-box {
+  /*margin-left:192px;*/
+  margin-bottom: 10px;
+  /*border: 1px solid red;*/
+
+
+}
+
+input [type="text"]{
+  font-size: 10px;
+}
+
+.submit{
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #EEC856;;
+  border:0;
 }
 
 
@@ -153,17 +200,8 @@ header .navbar-collapse{
 
 }
 
-
-/**Footer Navigation**/
-/*footer .navbar-default{
-    background:transparent;
+@media (max-width: 426px) {
+    .container-gray {
+        height: 36vh;
+    }
 }
-
-.page{
-    padding:50px 0;
-}
-
-.page h2{
-    text-align:center;
-    margin-bottom:30px;
-}*/
