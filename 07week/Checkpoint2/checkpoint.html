@@ -10,58 +10,91 @@
 
 <body>
   <header class="container-fluid">
-    <div class="row">
-      <!--NAVBAR-->
-      <nav class="navbar navbar-toggleable-md navbar-light transparent col-12 w-100">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarvavdropdown" aria-controls="navbarnavdropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#"><img class="w-50" src="http://foundry.mediumra.re/img/logo-light.png" </a>
-          <div class="collapse navbar-collapse" id="navbarnavdropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbardropdownmenulink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown link</a>
-                <div class="dropdown-menu" aria-labelledby="navbardropdownmenulink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-      </nav>
-      <!--Main background img via CSS-->
-      <div class="col-12 text-center">
+    <!--NAVBAR-->
+    <nav class="bg-default navbar navbar-toggleable-md navbar-fixed-top">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img class="w-50" src="http://foundry.mediumra.re/img/logo-light.png"></a>
+      <div class="collapse navbar-collapse">
+        <ul class=" navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Elements</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a id="navsearch" class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SRCH</a>
+            <div class="dropdown-menu" aria-labelledby="navsearch">
+              <form class="form">
+                <input class="form-control mr-sm-2" type="text" placeholder="Type Here">
+                <button class="btn btn-outnline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eng</a>
+              <div class="dropdown-menu" aria-labellby="navsearch">
+                <a class="dropdown-item" href="#">French</a>
+                <a class="dropdown-item" href="#">Espanol</a>
+              </div>
+            </li>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Main background img via CSS-->
+    <div class="col-12 text-center">
       <img src="img/wineF.jpg" class="text-center">
-      <h5 class="text-white">“Without doubt, one of the most consistently <br> high-quality wineries in the Barossa region”</h5>
-    </div>
+      <h5 class="intro text-white">“Without doubt, one of the most consistently <br> high-quality wineries in the Barossa region”</h5>
+      <p>David Halladay - Respected Wino
+      </p>
+      <ul class="list-inline social-list">
+        <li>
+          <a href="#">FB</a>
+        </li>
+        <li>
+          <a href="#">IG</a>
+        </li>
+        <li>
+          <a href="#">TW</a>
+        </li>
+      </ul>
     </div>
   </header>
   <main class="p-0 container-fluid">
     <section class="row" id="tall">
       <!--About Us section-->
-      <article class="container text-center my-auto col-xs-12 col-md-6">
-        <h5>• Est. 1968 •</h5>
-        <h4>Combining over 100 years of hard work and shared family knowledge</h4>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-        <img src="img/sig.jpg" class="thumb">
+      <article class=" text-center my-auto col-xs-12 col-md-6">
+        <div class="w-75 container">
+          <h5 class="est">• Est. 1968 •</h5>
+          <h4 class="combine">Combining over 100 years of hard work and shared family knowledge</h4>
+          <p class="info">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          <img src="img/sig.jpg" class="thumb">
+        </div>
       </article>
       <!--Working Man Responsive img-->
       <img src="img/wine16.jpg" alt="Worker" class="p-0 m-0 col-xs-12 col-md-6">
     </section>
     <!--Picking Grapes fluid img-->
-    <section class="row" id="pic">
-      <h3></h3>
+    <section class="row align-items-center" id="pic">
+    <div class="text-center text-white col-8 offset-2">
+      <h3 class="history">“We've been producing fine wine for over <br> 65 years,<br> I think we know what we're talking about"</h3>
+      <p class="sed">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
     </section>
+    </div>
     <!--Three Wine Descriptions-->
     <section class="row">
       <article class="text-center col-xs-12 col-md-4">
