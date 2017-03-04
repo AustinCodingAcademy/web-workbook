@@ -12,67 +12,128 @@
     <!-- <link rel="stylesheet" href="font-awesome.css" /> -->
     <title></title>
   </head>
-  <body>
-  <div class="nav-container"><!-- transparent squishy navbar -->
-    <a id="top"></a>
-      <nav class="navbar navbar-toggleable-md navbar-light absolute transparent">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-          <a class="navbar-brand" href="#">Navbar</a>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li>
-            </ul>
+  <body class="nav-is-overlay">
+
+    <div class="nav-container container-fluid"><!-- transparent squishy navbar -->
+      <!-- <a id="top"></a> -->
+        <nav class="navbar navbar-toggleable-md fixed-top transparent" style="text:white;">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+          </button>
+          <div class="navbar-left">
+            <a href="#" class="navbar-brand">
+              <img src="http://foundry.mediumra.re/img/logo-light.png" class="navbar-brand" style="height: 45px; width: 137px;" />
+            </a>
           </div>
-          <form class="form-inline">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-        </nav>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav" style="margin-right: 10px;">
+                <li class="nav-item active dropdown">
+                  <a href="#">Menu</a>
+                </li>
+                <li class="nav-item active dropdown">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Pages</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Elements</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="fa fa-search dropdown-toggle"  data-toggle="dropdown"></a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <form class="form-inline dropdown-item">
+                          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                          <button class="fa fa-search" type="submit" aria-hidden="true"></button>
+                        </form>
+
+                      </li>
+                    </ul>
+                  </ul>
+
+                  <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                  <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#"></a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div> -->
+                </li>
+
+
+
+                </form>
+              </ul>
+            </div>
+
+          </nav>
+      </div>
+
+
+
+  <!--first main section with the F -->
+  <div class="main-container container-fluid">
+      <div class="container">
+
+
+      <div class="row">
+        <div class="col-sm-4 offset-sm-4 col-6 offset-3" style="padding-top:130px; filter: brightness(110%)">
+          <img alt="logo" class="mb48 mb-16 eff fade-1-4" src="http://foundry.mediumra.re/img/wine1.png">
+          <div class="content">
+            <h6>Without doubt, one of the most consistently
+                high-quality wineries in the Barossa region”
+            </h6>
+
+          </div>
+
+        </div>
+      </div>
+
+
     </div>
 
-  <!--first main section  -->
-  <div class="main-container">
-    <div class="background-image-holder">
-      <img class="background-image img-fluid" src="img/wine-bg.jpg" />
-    </div>
+    http://foundry.mediumra.re/img/wine1.png
+    <!-- <div class="background-image-holder container-fluid">
+      <img class="background-image image-fluid" src="img/wine-bg.jpg" />
+    </div> -->
   </div>
 
   <!--next section, picture and words  -->
   <section class="row">
-    <div class="col-md-6 image">
-      <img class="img-fluid background-image" src="img/wine16.jpg" />
+    <div class="col-md-6 text-center d-flex flex-column justify-content-center align-items-center" style="color: black;">
+          <h5 class="uppercase mb-xs-24">• Est. 1968 •</h5>
+          <h4>Combining over 100 years of hard work and shared family knowledge</h4>
+          <p class="lead">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          </p>
+          <img alt="signature" src="http://foundry.mediumra.re/img/wine2.png" class="sign">
+
     </div>
-    <div class="col-md-6 content d-flex align-content-center">
-      <div class="text-center">
-        <h5>the content goes here</h5>
-        <img class="img-thumbnail" src="http://foundry.mediumra.re/img/wine2.png" />
-      </div>
+
+    <div class="col-md-6 hose">
+      <!-- <img class="img-fluid" style="height: auto; width: 100%;" src="img/wine16.jpg" /> -->
     </div>
+
   </section>
 
-<!--Next section with the quote -->
+<!--Third section with the quote -->
   <section>
-    <div class="background-img-holder d-flex justify-content-center first">
+    <div class="container-fluid first d-flex justify-content-center align-items-center">
       <!-- <img class="image-fluid background-image" src="img/wine13.jpg" /> -->
-        <div class="container d-flex align-items-center">
-         <div class="row">
-           <div class="col-md-6 offset-md-3 d-flex flex-column">
-             <p>“We've been producing fine wine for over 65 years,
-               I think we know what we're talking about”
-             </p>
+        <div class="row">
+         <div class="col-md-6 offset-md-3 justify-content-center" style="color: white;">
+             <h3>"We've been producing fine wine for over 65 years,
+               I think we know what we're talking about”</h3>
              <p>
                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
@@ -85,28 +146,37 @@
   </section>
 
   <!--three wine bottles  -->
-  <section>
-    <div class="container-main">
-      <div class="row">
-        <div class="col-md-4 text-center">
-          <img class="wine" src="img/wine6.jpg" />
+  <section class="pt-0">
+    <div class="container" style="color: black; margin-bottom: 100px;">
+      <div class="row mb-48" style="color:black;">
+        <div class="col-sm-4 text-center overflow-hidden mb-xs-48">
+          <div class="col-sm-8 offset-sm-2 col-6 offset-3">
+            <img class="img-fluid wine" src="img/wine3.jpg"  />
+          </div>
           <div class="content text-center">
-            <p>words words words</p>
-            <button>button!</button>
+            <h4 class="wine">Foundry Shiraz</h4>
+            <h5 class="wine">“Aged five years in solid, French Oak barrels sports notes of pepper and blackberry”</h5>
+            <a class="btn btn-filled mb0" href="#" style="background-color:#91a05c">Visit Shop</a>
           </div>
         </div>
-        <div class="col-md-4 text-center">
-          <img class="wine" src="img/wine7.jpg" />
+        <div class="col-sm-4 text-center">
+          <div class="col-sm-8 offset-sm-2 col-6 offset-3">
+            <img class="img-fluid wine" src="img/wine6.jpg" />
+          </div>
           <div class="content text-center">
-            <p>words words words</p>
-            <button>button!</button>
+            <h4 class="wine">Foundry Chardonnay</h4>
+            <h5 class="wine">“A rich fruit palet with subtle Oak influence and a lingering dry, fresh finish”</h5>
+            <a class="btn btn-filled mb0" href="#" style="background-color:#91a05c">Visit Shop</a>
           </div>
         </div>
-        <div class="col-md-4 text-center">
-          <img class="wine" src="img/wine7.jpg" />
+        <div class="col-sm-4 text-center">
+          <div class="col-sm-8 offset-sm-2 col-6 offset-3">
+            <img class="img-fluid wine" src="img/wine7.jpg" />
+          </div>
           <div class="content text-center">
-          <p> words words words</p>
-            <button>button!</button>
+            <h4 class="wine">Foundry Cabernet</h4>
+            <h5 class="wine">“Generous sweet blackcurrant and mulberry character with soft, velvety tannins”</h5>
+            <a class="btn btn-filled mb0" href="#" style="background-color:#91a05c">Visit Shop</a>
           </div>
         </div>
       </div>
@@ -115,26 +185,71 @@
   </section>
 
   <!--three awards  -->
-  <section class="awards d-flex align-items-center">
+  <section class="container-fluid main awards d-flex align-items-center">
     <div class="container">
-      <div class="row ">
+      <div class="row">
         <div class="col-md-4 text-center justify-content-center align-items-center">
           <img src="http://foundry.mediumra.re/img/wine9.png" class="circle" alt="">
-          <p>
-            words words words
+          <p class="lead">
+            Best Mid-Tier Value Wine
+            <br> Barossa Shiraz, 2009
           </p>
         </div>
     <div class="col-md-4 text-center">
       <img src="http://foundry.mediumra.re/img/wine10.png" class="circle" alt="">
-        <p>
-          words words words
-        </p>
+      <p class="lead">
+        Winemaker of the Year
+        <br> Foundry Vineyard, 20014
+      </p>
     </div>
     <div class="col-md-4 text-center">
-
+      <img src="http://foundry.mediumra.re/img/wine11.png" class="circle" alt="">
+      <p class="lead">
+        Best Overall Value
+        <br> Barossa Cabernet, 2010
+      </p>
     </div>
   </section>
 
+<!-- final section -->
+  <section class="row">
+    <div class="col-md-6 pour img-fluid">
+      </div>
+    <div class="col-md-5 offset-1 d-flex justify-content-center align-items-center" style="color: black; background-color: #f8f8f8;">
+      <div class="address">
+
+        <h4>Join us for tastings at the Cellar Door</h4>
+        <p style="font-style: normal; border-bottom: 1px, solid, gray;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+        </p>
+
+        <h6>1240 Kilgour Road<br />
+        Rowland Flat<br />
+        South Australia 5352</h6>
+
+        P: (05) 3928 9283<br />
+        E: enquiries@foundry.net
+
+        </div>
+  </section>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="sm-12 text-center">
+      <h3>Sign up to our monthly newsletter</h3>
+
+<p>Get special offers and news on newest cellar releases.</p>
+
+      </div>
+    </div>
+    <div class="row justify-content-center">
+<input type="text" name="email" class="mb0 transparent validate-email validate-required  signup-email-field" placeholder="Email Address">
+<button type="submit" class="mb0">Sign Up Now</button>
+    </div>
+    <div class="row">
+
+    </div>
+
+  </div>
 
 
 
