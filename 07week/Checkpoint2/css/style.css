@@ -1,7 +1,9 @@
 /*Set same height and make it responsive */
 section{
   height: 740px;
-
+}
+.white{
+  color: #fff;
 }
 /*top background picture*/
 .first{
@@ -18,7 +20,6 @@ section{
 }
 .first p{
   max-width: 380px;
-  color: #fff;
   text-align: center;
 }
 .first article{
@@ -57,6 +58,19 @@ section{
 .fifth{
   background-image: url(http://foundry.mediumra.re/img/wine12.jpg);
   background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  background-position: 10% 50%;
+}
+.fifth div{
+  display: flex;
+  justify-content: space-around;
+}
+.fifth img{
+  height: 210px;
+  width: 210px;
 }
 .sixth{
   display: flex;
@@ -66,6 +80,21 @@ section{
 .sixth article:first-child{
   background-image: url(http://foundry.mediumra.re/img/wine15.jpg);
   background-size: cover;
+  background-position: 10% 50%;
+}
+.sixth article:last-child{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.line{
+  height: 1px;
+  width: 70%;
+  background-color: black;
+}
+.sixth li{
+  list-style-type: none;
 }
 footer{
   height: 450px;
