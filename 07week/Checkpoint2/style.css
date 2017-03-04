@@ -3,12 +3,20 @@ header {
   background-repeat: no-repeat;
   background-size: 100%;
 }
-#logo {
-  max-width: 50%;
-}
 
-h5 {
-  font-family: Georgia;
-  font-style: italic;
-  font-weight: 300;
+#logo {
+  width: 400px;
+  height:500px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #logo {
+    width:250px;
+    height:300px;
+  }
+}
+@media (max-width: 767px) {
+  #logo {
+    width:50px;
+    height:75px;
+  }
 }
