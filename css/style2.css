@@ -8,29 +8,27 @@ body {
     text-align: center;
     padding-top:35px;
     padding-right: 20%;
-    padding-left: 5%;
+    padding-left: 12%;
+    margin: 10px;
   }
 
 .jumbotron {
   background-color: midnightblue;
   width: 100%;
+  padding-bottom: 25px;
 
 }
 
 h1{
-  /*display: block;*/
-  /*background-color: midnightblue;*/
-  /*font-size: 2em;*/
-  margin-top: -0.8em;
-  /*margin-bottom: 0em;
-  margin-left: 0;
-  margin-right: 0;*/
-  font-weight: bold;
+  margin-top: -30px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 6em !important;
 }
 
 h3 {
-  margin-top: 0px;
+  margin-top: -10px;
   margin-bottom: 0px;
+  font-family: 'Comfortaa', cursive;
 }
 
 h4 {
@@ -40,24 +38,89 @@ h4 {
   margin-left: 0;
   margin-right: 0;
   font-weight: bold;
+  font-family: 'Comfortaa', cursive;
+}
+
+.btn {
+  width: 100%;
 }
 
 a {
-  padding: 20px;
+  padding: 3%;
+  color: goldenrod;
+  background-color: midnightblue;
+  /*margin-top: 20% !important;*/
 }
+
+a:hover, a:active {
+  text-decoration: none;
+  border: solid 2px midnightblue;
+  background-color: goldenrod;
+  color: midnightblue;
+}
+
 section {
   color: midnightblue;
   text-align: center;
-  padding-top: 30px;
-  padding-right: 35%;
-  padding-left: 20%;
+  padding-top: 20px;
+  /*padding-right: 35%;*/
+  /*padding-left: 20%;*/
   padding-bottom: 30px;
   }
 
 footer {
   text-align: center;
+  color: goldenrod;
   position: relative;
     padding: 20px;
-    width: 82%;
+    width: 93%;
     bottom: 10px;
     }
+
+footer a {
+  padding: 20px 40px 40px;
+}
+
+footer a:hover, a:active {
+  /*text-decoration: none;
+  border: solid 2px midnightblue;*/
+  background-color: midnightblue;
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+ /*tweaked to allow text to fit in button - week 5*/
+  .mid {
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 4em !important;
+  }
+
+  .btn {
+    width: 60%;
+}
+
+  section {
+    margin-left: -8%;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 766px) {
+  a {
+    padding: 1%;
+  }
+}
+
+@media (max-width:499px) {
+  a {
+    padding: 2%;
+  }
+}
