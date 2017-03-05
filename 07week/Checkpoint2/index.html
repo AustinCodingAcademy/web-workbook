@@ -4,187 +4,260 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title>Winery</title>
+    <title>Foundry Winery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <!-- fontrific -->
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- fontrific and reset-->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600"
+        rel="stylesheet" type="text/css">
+    <link href="https://use.fontawesome.com/a11441d40e.css" media="all" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<!-- container fluid will use column 12column md 6 column md 4 -->
-
 <body>
-      <header class="container-fluid">
-        <nav class="navbar navbar-toggleable-md navbar-light bg-transparent navbar-fixed-top">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-       <a class="navbar-brand" href="#">FOUNDRY</a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <ul class="navbar-nav navbar-mr-auto">
-                    <li class="dropdown">
-                        <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item navbar-right">
-                        <a class="nav-link" href="#">Pages</a>
-                    </li>
-                    <li class="nav-item navbar-right">
-                        <a class="nav-link" href="#">Elements</a>
-                    </li>
-                    <li class="nav-item navbar-right">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item navbar-right">
-                        <a class="nav-link" href="#">Shop</a>
-                    </li>
-                    <li class="nav-item navbar-right">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item navbar-right">
-                        <a class="nav-link" href="#">Eng</a>
-                    </li>
-                </ul>
+        <a class="navbar-brand" href="#">F O U N D R Y</a>
 
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown show">
+                    <a id="dropdownlink" class="nav-link dropdown-toggle" href="http://wine.com" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="true">Home</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownlink">
+                        <a class="dropdown-item" href="#">Everyone Loves a Cabernet!</a>
+                        <a class="dropdown-item" href="#">No Really. Cabernet is the best.</a>
+                        <a class="dropdown-item" href="#">Tannat will do in a pinch.</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown show">
+                    <a id="dropdownlink" class="nav-link dropdown-toggle" href="http://wine.com" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="true">Our Vines</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownlink">
+                        <a class="dropdown-item" href="#">Grapes from here</a>
+                        <a class="dropdown-item" href="#">Grapes from there</a>
+                        <a class="dropdown-item" href="#">Grapes big and small</a>
+                    </div>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Wine Club</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Events</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Shop the Celler</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Vine Blog</a>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="">
+                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
+        </div>
+    </nav>
+
+
+    <section id="home">
+      <div class="row">
+        <div class="text">
+            <!-- <img class="img-responsive" src="img/wine-bg.jpg" alt="Foundry logo"> -->
+
+            <img class="img-responsive" src="img/wineF.png" alt="Foundry logo">
+
+
+            <p>“Without doubt, one of the most consistently</p><br>
+            <p>high-quality wineries in the Barossa region”</p><br>
+            <h2>David Halliday <em>Respected Wino</em></h2>
+          </div>
+
+    </section>
+
+    <section id="about">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="abouttext col-lg-6 visible-lg">
+                    <div class="aboutbox">
+                        <p>• EST. 1954 •</p>
+                        <h1>Combining over 100 years of hard work and shared family knowledge</h1>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                            inventore veritatis et quasi architecto beatae vitae dicta sunt
+                            explicabo.</p>
+                    </div>
+                    <img class="signature img-responsive" src="img/signature.png" alt="initials">
+                </div>
+                <div class="powerwash col-lg-6 visible-lg">
+                    <img class="powerwash img-responsive" src="img/wine16.jpg" alt="powerwash">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="testimonial">
+        <div class="row">
+            <div class="testimonialbox">
+                <h2 class="quote">"We've been producing fine wine for over 65 years,<br>
+       I think we know what we're talking about."
+</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                    veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bottles">
+        <div class="row">
+            <div id="shiraz" class="productbox col-lg-4">
+                <img class="img-responsive" src="img/wine3.jpg" alt="Shiraz">
                 <hr>
-            </div>
-        </nav>
-    </header>
-</header>
-
-
-
-<main class="main-container">
-  <div class="container-fluid">
-
-        <div class="row">
-
-            <img src=".\img\wine-bg.jpg" class="img-fluid" alt="responsive image"></a>
-            <img src=".\img\wineF.png" class="img-fluid" alt="responsive image"></a>
-        </div>
-    </div>
-
-    <div class="row">
-        <h5 class="lead italic">
-<p>
-“Without doubt one of the most consistently
-<!-- <br> high-quality wineries in the Barossa region”
-</p>
-</h5>
-        <span> David Halladay - Respected Wino </span>
-    </div>
-    </div>
-    </div> -->
-
-    <div class="row">
-        <h5 class="lead italic">
-<p>Combining over 100 years of hard work<br>
-and shared family knowledge</p><br>
-
-<div class="">
-<img src=".\img\wine16.jpg" alt="">
-</div>
-
-<div class="">
-<img src=".\img\wine13.jpg" alt="">
-</div>
-
-<div class="">
-    <h2>“We've been producing fine wine for over 65 years,<br>
-        I think we know what we're talking about”</h2><br>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-        quae ab illo inventore veritatis et quasi architecto beatae vitae
-        dicta sunt explicabo.
-      </p>
-</div>
-
-<!-- page with 3 bottles -->
-<section class="container">
-    <main class="row text-center">
-
-        <div class="col-xs-12 col-md-6 col-lg-3">
-            <img src="img/wine7.jpg" alt="icon1">
-            <div>
-                <h4>Foundry Shiraz</h4><br>
-                <h6>“Aged five years in solid, French Oak barrels sports notes
-                    of pepper and blackberry”</h6><br>
-                <a class="btn btn-filled mb0" href="#">Visit Shop</a><br>
-            </div>
-        </div>
-
-
-        <div class="col-xs-12 col-md-6 col-lg-3">
-            <img src="img/wine6.jpg" alt="icon2">
-            <div>
-                <h4>Foundry Chardonnay</h4><br>
-                <h6>“A rich fruit palet with subtle Oak influence and a lingering
-                     dry, fresh finish”</h6><br>
-                     <a class="btn btn-filled mb0" href="#">Visit Shop</a><br>
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-md-6 col-lg-3">
-            <img src="img/wine6.jpg" alt="icon2">
-            <div>
-                <h4>Foundry Cabernet</h4>
-                <h6>“Generous sweet blackcurrant and mulberry character with
-                    soft, velvety tannins”</h6><br>
-                    <a class="btn btn-filled mb0" href="#">Visit Shop</a><br>
-
-            </div>
-        </div>
-<section class="cover fullscreen image-bg">
-    <div class="background-image-holder">
-        <img alt="image" class="background-image" src="img/wine12.jpg" />
-    </div>
-    <div class="container v-align-transform">
-
-        <div class="row">
-            <div class="col-sm-12 text-center mb48 mb-xs-24">
-                <h3>Awards and Recognition</h3>
-            </div>
-            <div class="col-sm-4 text-center overflow-hidden">
-                <div class="col-sm-8 col-sm-offset-2">
-                    <img alt="Pic" class="mb24" src="img/wine9.png" />
-                    <p class="lead">
-                        Best Mid-Tier Value Wine
-                        <br> Barossa Shiraz, 2009
-                    </p>
+                <h1>Foundry Shiraz</h1>
+                <p>Aged five years in solid, French Oak barrels sport notes of pepper and blackberry
+                </p>
+                <div class="productlink">
+                    <a href="#">Visit shop</a>
                 </div>
             </div>
-            <div class="col-sm-4 text-center mb-xs-24 overflow-hidden">
-                <div class="col-sm-8 col-sm-offset-2">
-                    <img alt="Pic" class="mb24" src="img/wine10.png"/>
-                    <p class="lead">
-                        Winemaker of the Year
-                        <br> Foundry Vineyard, 2014
-                    </p>
+
+            <div id="chardonnay" class="productbox col-lg-4">
+                <img class="img-responsive" src="img/wine6.jpg" alt="Chardonnay">
+                <hr>
+                <h1>Foundry Chardonnay</h1>
+                <p>A rich fruit palet with subtle Oak influence and a lingering dry, fresh finish
+                </p>
+                <div class="productlink">
+                    <a href="#">Visit shop</a>
                 </div>
             </div>
-            <div class="col-sm-4 text-center mb-xs-24 overflow-hidden">
-                <div class="col-sm-8 col-sm-offset-2">
-                    <img alt="Pic" class="mb24" src="img/wine11.png"/>
-                    <p class="lead">
-                        Best Overall Value
-                        <br> Barossa Cabernet, 2010
-                    </p>
+
+            <div id="merlot" class="productbox col-lg-4">
+                <img class="img-responsive" src="img/wine7.jpg" alt="Uva Merlot">
+                <hr>
+                <h1>Foundry Merlot</h1>
+                <p>Generous sweet blackcurrant and mulberry character with soft, velvety tannins</p>
+                <div class="productlink">
+                    <a href="#">Visit shop</a>
                 </div>
             </div>
         </div>
-</div>
-<!-- jQuery first, then Tether, then Bootstrap JS. -->
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        </div>
+    </section>
+
+    <section class="awards">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="aboutbox">
+                    <div class="awards col-lg-6 visible-lg">
+                        <img class="award img-responsive" src="img/wine12.jpg" alt="grapes">
+                    </div>
+                </div>
+            </div>
+        </div>
+  </section>
+
+    <!-- <section class="location">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="abouttext col-lg-6">
+                    <div class="pour col-lg-6 visible-lg">
+                        <img class="pour img-responsive" src="img/wine15.jpg" alt="pour">
+                    </div>
+                    <hi class="aboutbox">
+                        <h1>"Join us for tastings at the Cellar Door"</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt.</p>
+                        <hr>
+                        <p>
+                            1240 Kilgour Road Rowland Flat<br> South Australia 5352<br> P:
+                            (05) 3928 9283<br> E: enquiries@foundry.net<br>
+                        </p>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+
+    <section id="location">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="abouttext col-lg-6 visible-lg">
+                    <div class="aboutbox">
+                      <h1>"Join us for tastings at the Cellar Door"</h1>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                          tempor incididunt.
+                      </p>
+                      <br>
+                      <p>
+                        1240 Kilgour Road Rowland Flat<br> South Australia 5352<br> P:
+                        (05) 3928 9283<br> E: enquiries@foundry.net<br>
+                      </p>
+                    </div>
+                  </div>
+                <div class="pour col-lg-6 visible-lg">
+                    <img class="pour img-responsive" src="img/wine15.jpg" alt="pour">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <footer id="socialmedia" vrhewlx="" hidden="">
+        <div class="container">
+            <div class="row">
+                <div class="socialicons" vrhewlx="" hidden="">
+                    <a href="#">
+                        <i class="fa fa-envelope-o fa-5x" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-twitter fa-5x" aria-hidden="true"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa fa-facebook fa-5x" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
 
 </body>
 
