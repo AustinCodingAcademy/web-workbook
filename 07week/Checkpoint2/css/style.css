@@ -1,5 +1,5 @@
 header {
-  background-image: url("../img/wine-bg.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../img/wine-bg.jpg");
 }
 
 .hero {
@@ -11,7 +11,6 @@ header {
 }
 
 nav {
-  background-color: rgba(0,0,0, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
   font-family: "Open Sans";
@@ -26,8 +25,25 @@ nav a:visited {
   color: white;
 }
 
+#header-logo {
+  opacity: 0.7;
+}
+
+p {
+  font-family: serif;
+  font-size: 22px;
+}
+
+img {
+  max-width: 100%;
+}
+
+#signature {
+  height: 80px;
+}
+
 .section-three {
-  background-image: url("../img/wine13.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../img/wine13.jpg");
 }
 
 .section-four {
@@ -35,18 +51,61 @@ nav a:visited {
 }
 
 .square-img {
-  background-position: center;
-  background-size: cover;
-  background-image: url("../img/wine16.jpg");
+  padding: 0;
+  margin: 0;
+  width: 100% !important;
+  top: 0;
+  left: 0;
+}
+
+.half-view {
+  height: 80vh;
+  max-height: 640px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.center-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text-big {
+  font-size: 38px;
+}
+
+.text-small {
+  font-size: 18px;
+}
+
+.text-grey {
+  color: grey;
+}
+
+.nopadmar {
   padding: 0;
   margin: 0;
 }
 
-.half-view {
-  height: 60vh;
-  max-height: 640px;
+.signature-box {
+  width: 75%;
 }
 
 footer {
   background-color: #292929;
+  height: 80vh;
+}
+
+@media (max-width: 768px) {
+  .mobile-height {
+    height: auto !important;
+    overflow: visible;
+  }
+  .mobile-first {
+    order: -1;
+  }
 }
