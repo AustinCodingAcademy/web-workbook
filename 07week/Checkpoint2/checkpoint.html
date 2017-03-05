@@ -5,15 +5,16 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="checkpoint.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <title>Cameron Checkpoint 2</title>
 </head>
 
 <body>
-  <header class="container-fluid">
+  <header class="m-0 container-fluid">
     <!--NAVBAR-->
     <nav class="bg-default navbar navbar-toggleable-md navbar-fixed-top">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="fa fa-bars" aria-hidden="true"></i>
       </button>
       <a class="navbar-brand" href="#"><img class="w-50" src="http://foundry.mediumra.re/img/logo-light.png"></a>
       <div class="collapse navbar-collapse">
@@ -59,79 +60,101 @@
     <div class="col-12 text-center">
       <img src="img/wineF.jpg" class="text-center">
       <h5 class="intro text-white">“Without doubt, one of the most consistently <br> high-quality wineries in the Barossa region”</h5>
-      <p>David Halladay - Respected Wino
+      <p class="text-white">David Halladay - Respected Wino
       </p>
-      <ul class="list-inline social-list">
+      <ul class="list-inline d-flex flex-row justify-content-center">
         <li>
-          <a href="#">FB</a>
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
         </li>
         <li>
-          <a href="#">IG</a>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
         </li>
         <li>
-          <a href="#">TW</a>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         </li>
       </ul>
     </div>
   </header>
-  <main class="p-0 container-fluid">
-    <section class="row" id="tall">
+  <main>
+    <section class="container-fluid" id="tall">
       <!--About Us section-->
-      <article class=" text-center my-auto col-xs-12 col-md-6">
-        <div class="w-75 container">
+      <article class="row text-center">
+        <div class="col-xs-12  col-md-6">
           <h5 class="est">• Est. 1968 •</h5>
           <h4 class="combine">Combining over 100 years of hard work and shared family knowledge</h4>
           <p class="info">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
           <img src="img/sig.jpg" class="thumb">
         </div>
       </article>
-      <!--Working Man Responsive img-->
-      <img src="img/wine16.jpg" alt="Worker" class="p-0 m-0 col-xs-12 col-md-6">
+      <article class="row text-center">
+        <div class="col-xs-12  col-md-6">
+          <h5 class="est">• Est. 1968 •</h5>
+          <h4 class="combine">Combining over 100 years of hard work and shared family knowledge</h4>
+          <p class="info">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          <img src="img/sig.jpg" class="thumb">
+        </div>
+      </article>
     </section>
     <!--Picking Grapes fluid img-->
     <section class="row align-items-center" id="pic">
-    <div class="text-center text-white col-8 offset-2">
-      <h3 class="history">“We've been producing fine wine for over <br> 65 years,<br> I think we know what we're talking about"</h3>
-      <p class="sed">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      <div class="text-center text-white col-8 offset-2">
+        <h3 class="history">“We've been producing fine wine for over <br> 65 years,<br> I think we know what we're talking about"</h3>
+        <p class="sed">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
     </section>
     </div>
     <!--Three Wine Descriptions-->
-    <section class="row">
-      <article class="text-center col-xs-12 col-md-4">
-        <img src="img/wine3.jpg" class="bottle">
-        <h4>Foundry Shiraz</h4>
-        <h5>“Aged five years in solid, French Oak barrels sports notes of pepper and blackberry”</h5>
-        <button class="btn btn-primary">Visit Shop</button>
-      </article>
-      <article class="text-center col-xs-12 col-md-4">
-        <img src="img/wine6.jpg" class="bottle">
-        <h4>Foundry Chardonnay</h4>
-        <h5>"A rich fruit palet with subtle Oak influence and a lingering dry, fresh finish”</h5>
-        <button class="btn btn-primary">Visit Shop</button>
-      </article>
-      <article class="text-center col-xs-12 col-md-4">
-        <img src="img/wine7.jpg" class="bottle">
-        <h4>Foundry Cabernet</h4>
-        <h5>“Generous sweet blackcurrant and mulberry character with soft, velvety tannins”</h5>
-        <button class="btn btn-primary">Visit Shop</button>
-      </article>
+    <section id="wine">
+      <div class="container mb-5">
+        <div class="row">
+          <article class="text-center col-sm-4">
+            <div>
+              <img src="img/wine3.jpg" class="col-sm-8 col-xs-6">
+            </div>
+            <div class="text-center">
+              <h4 class="combine">Foundry Shiraz</h4>
+              <h5 class="desc">“Aged five years in solid, French Oak barrels sports notes of pepper and blackberry”</h5>
+              <button class="btn btn-success">Visit Shop</button>
+            </div>
+          </article>
+          <article class="text-center col-sm-4">
+            <div>
+              <img src="img/wine6.jpg" class="col-sm-8 col-xs-6">
+            </div>
+            <div class="text-center">
+              <h4 class="combine">Foundry Chardonnay</h4>
+              <h5 class="desc">“A rich fruit palet with subtle Oak influence and a lingering dry, fresh finish”</h5>
+              <button class="btn btn-success">Visit Shop</button>
+            </div>
+          </article>
+          <article class="text-center col-sm-4">
+            <div>
+              <img src="img/wine7.jpg" class="col-sm-8 col-xs-6">
+            </div>
+            <div class="text-center">
+              <h4 class="combine">Foundry Cabernet</h4>
+              <h5 class="desc">“Generous sweet blackcurrant and mulberry character with soft, velvety tannins”</h5>
+              <button class="btn btn-success">Visit Shop</button>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
     <!--Awards Section-->
     <section class="row" id="awards">
-      <h3 class="col-12 text-center my-auto">Awards and Recognitions</h3>
-      <article class="my-auto text-center col-xs-12 col-md-4">
+      <h3 class="history col-12 text-white text-center">Awards & Recognitions</h3>
+      <article class="cards my-auto text-center col-xs-12 col-md-4">
         <img src="http://foundry.mediumra.re/img/wine9.png" class="thumb">
         <p class="text-white">Best Mid-Tier Value Win
           <br> Barossa Shiraz, 2009
         </p>
       </article>
-      <article class="my-auto text-center col-xs-12 col-md-4">
+      <article class="cards my-auto text-center col-xs-12 col-md-4">
         <img src="http://foundry.mediumra.re/img/wine10.png" class="thumb">
         <p class="text-white">Winemake of the Year
           <br> Foundry Vineyard, 2014
         </p>
       </article>
-      <article class="my-auto text-center col-xs-12 col-md-4">
+      <article class="cards my-auto text-center col-xs-12 col-md-4">
         <img src="http://foundry.mediumra.re/img/wine11.png" class="thumb">
         <p class="text-white">Best Overall Value
           <br> Barossa Cabernet, 2010
@@ -141,32 +164,47 @@
     <!--Join Us Section-->
     <section class="row" id="join">
       <img src="http://foundry.mediumra.re/img/wine15.jpg" class="col-xs-12 col-md-6">
-      <article class="my-auto col-xs-12 col-md-6 text-center">
-        <h4>Join us for tastings at the Cellar Door</h4>
-        <p>
-          <Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p>1240 Kilgour Road
-              <br> Rowland Flat
-              <br> South Australia 5352
-            </p>
-            <ul>
-              <li>P: (05) 3929 9283</li>
-              <li>E: enquiries@foundry.net</li>
-            </ul>
+      <article class="my-auto col-xs-12 col-md-6 text-start">
+        <div class="col-md-6 offset-md-2">
+          <h4 class="combine">Join us for tastings at the Cellar Door</h4>
+          <p class="sed">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="sed">1240 Kilgour Road
+            <br> Rowland Flat
+            <br> South Australia 5352
+          </p>
+          <ul class="list-group">
+            <li class="list-item">P: (05) 3929 9283</li>
+            <li class="list-item">E: enquiries@foundry.net</li>
+          </ul>
+        </div>
       </article>
     </section>
   </main>
-  <footer class="text-white text-center bg-inverse">
-    <h3>Sign up for our monthly Newsletter</h3>
-    <p>Get special offers and news on cewest cellar releases.</p>
-    <input type="text">
-    <button class="btn btn-primary">Sign Up Now</button>
-    <!--Social Icons in horizontal row-->
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
+  <footer class="container-fluid text-center bg-inverse">
+    <div class="my-auto text-white row">
+      <div class="col-12">
+        <h3>Sign up for our monthly Newsletter</h3>
+        <p>Get special offers and news on cewest cellar releases.</p>
+      </div>
+      <div class="col-12">
+        <input type="text">
+        <button class="btn btn-primary">Sign Up Now</button>
+      </div>
+      <!--Social Icons in horizontal row-->
+      <div class="col-sm-12">
+        <ul class="list-inline d-flex flex-row justify-content-center">
+          <li>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </footer>
   <!--Javascript-->
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
