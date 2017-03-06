@@ -6,7 +6,9 @@
   margin-bottom: 20px
 }
 
-
+h5 {
+  font-style: italic;
+}
 hr {
   border: 1px;
   color: grey;
@@ -17,13 +19,14 @@ body {
 }
 
 .logopic {
-  opacity: 0.5;
+  opacity: 0.8;
   width:400px;
   height:500px;
   display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 500px;
+  margin-bottom: 30px;
 }
 
 .header {
@@ -117,6 +120,7 @@ body {
   flex-direction: column;
 }
 
+
 footer {
   height: 450px;
 }
@@ -128,6 +132,7 @@ footer {
   height: 40px;
   width: 150px;
 }
+
 .transparent {
   color: white;
   background-color: #292929;
@@ -147,3 +152,16 @@ footer {
   height: 50px;
   font-size: 12px;
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  logopic {
+    width:250px;
+    height:300px;
+  }
+}
+
+@media (max-width: 767px) {
+  logopic {
+    width:150px;
+    height:200px;
+  }
