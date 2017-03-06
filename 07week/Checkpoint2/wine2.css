@@ -43,12 +43,17 @@ p.durka {
   height: 100vh;
 }
 
+@media (max-width: 767px) {
+  .heightadj {
+    height:auto;
+}}
+
 .heightadj2 {
   height: 100vh;
 }
 
 @media (max-width: 767px) {
-.heightadj2 {
+  .heightadj2 {
     height: 396px;
 }}
 
@@ -91,9 +96,21 @@ height: 512px;
   padding: 25% 0;
 }
 
+.mt150 {
+  margin-top: 150px;
+}
+
 .mb48 {
   margin-bottom: 48px;
 }
+.mb24 {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 767px){
+  .mb-24 {
+    margin-bottom: 24px;
+}}
 
 .winebottom {
   margin-bottom: 24px;
@@ -144,6 +161,13 @@ height: 512px;
 #basket {
   background-image: url("img/wine13.jpg");
   height:inherit;
+  background-position: center;
+  background-size: cover;
+}
+
+#glass {
+  background-image: url("img/wine12.jpg");
+  height: inherit;
   background-position: center;
   background-size: cover;
 }
