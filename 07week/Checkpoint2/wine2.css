@@ -1,5 +1,6 @@
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 nav {
@@ -18,6 +19,13 @@ ul {
 
 li {
   list-style-type: none;
+}
+
+footer {
+  padding: 96px 0;
+  position: relative;
+  background-color: #292929;
+  color: white;
 }
 
 .space {
@@ -198,6 +206,10 @@ height: 512px;
   opacity: 1;
 }
 
+#finale {
+  font-size: 13px;
+}
+
 #vineyard {
   background-image: url("img/wine-bg.jpg");
   margin-top: -57px;
@@ -282,3 +294,45 @@ h3 {
     font-size: 24px;
     line-height: 32px;
 }}
+
+input {
+  height:50px;
+  background: none;
+  padding-left: 20px;
+  width: 46%;
+  font-size: 11px;
+  padding-top: 7px;
+}
+
+@media (max-width: 767px) {
+  input {
+    width: 100%;
+}}
+
+button {
+  height: 50px;
+  line-height: 48px;
+  border: 2px solid #91a05c;
+  background: #91a05c;
+  color: #fff;
+  width: 46%;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 0 !important;
+  margin-left: 2.5%;
+}
+
+@media (max-width: 767px) {
+  button {
+    width:100%;
+    margin-left: 0;
+}}
+
+.grayicon {
+  color: #666;
+}
+
+.grayicon:hover {
+  color: white;
+}
