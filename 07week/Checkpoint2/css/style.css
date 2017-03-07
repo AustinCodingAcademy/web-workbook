@@ -11,7 +11,7 @@ body {
   text-transform: uppercase;
   position: relative;
   min-height: 50px;
-  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .navbar-default {
@@ -52,7 +52,6 @@ body {
 
 .container-fluid {
   display: flex;
-
 }
 
 #est {
@@ -65,11 +64,10 @@ body {
   text-align: center;
 }
 
-#signature {
+#sign {
   width: 50%;
   height: 50%;
-  display: flex;
-  align-self: center;
+  padding-left: 20px;
 }
 
 #wineguy {
@@ -106,17 +104,13 @@ p {
 #wine {
   display: flex;
   justify-content: center;
-  margin-left: 250px;
   text-align: center;
   width: 75%;
-  height: 800px;
+  height: 500px;
   font-family: 'Georgia';
   font-style: italic;
-}
-
-.col-sm-4 {
-  width: 75%;
-  height: 500px;
+  height: 300px;
+  margin: auto;
 }
 
 .shop-btn {
@@ -124,5 +118,30 @@ p {
   padding: 10px 30px;
   color: white;
   border-top: 20px;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+  #wine {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 75%;
+    height: 500px;
+    font-family: 'Georgia';
+    font-style: italic;
+    height: 300px;
+    margin: auto;
+    border: 30px 30px 30px 30px;
+
+  }
+
+  .shop-btn {
+    background-color: #91a05c;
+    padding: 10px 30px;
+    color: white;
+    border-top: 20px;
+    border-bottom: 20px;
+  }
 
 }
