@@ -5,15 +5,27 @@
     <title></title>
   </head>
   <body>
+
+    <div class="container main">
+      <div>
+        <input type="number" id="age">
+        <button onclick="redirect()">Submit</button>
+
+      </div>
+
+    </div>
   <script type="text/javascript">
     const limit = 21;
-    var age = document.getElementById('age').value;
+    var age = parseInt(document.getElementById('age').value);
+
+  function redirect(){
     if (age < limit){
       console.log('sorry buddy');
     }
-    else{
+    else if(age >= limit){
       console.log('Put on your DRINKIN SOCKS!');
-}
+    }
+  }
   </script>
   </body>
 </html>
