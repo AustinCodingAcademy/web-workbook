@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JAVASCRIPT</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <button type="button" onclick="fizzbuzz()">Try it</button>
+
+    <script>
+        function* fizzBuzz() {
+
+            var i = 0;
+            while (true) {
+                ++i;
+                var x = 0;
+                if (i % 3 === 0 && i % 5 === 0) yield 'Fizz Buzz';
+                else if (i % 3 === 0) yield 'Fizz';
+                else if (i % 5 === 0) yield 'Buzz';
+                else yield i;
+            }
+
+        }
+
+        var gen = fizzBuzz();
+        for (var i = 0; i < 100; i++) {
+            console.log(gen.next().value + ' ');
+        }
+    </script>
+</body>
+
+</html>
