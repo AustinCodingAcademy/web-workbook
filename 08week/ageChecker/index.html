@@ -6,11 +6,21 @@
   </head>
   <body>
 
-    <input type="text" name="age" placeholder="Enter your age"> <!-- Ask user for an input -->
-    <button>Submit</button>  <!-- Submit button -->
+    <input type="number" id="age" placeholder="Enter your age"> <!-- Ask user for an input -->
+    <button onclick="redirect()">Submit</button>  <!-- Submit button, created a function that's called redirect() -->
 
+    <!-- Start java script here -->
     <script type="text/javascript">
+    // redirect() function starts here
+      function redirect(){
+        if(Number(document.getElementById('age').value) >= 21){
+          window.location = '../../07week/Checkpoint2'; //redirects to Checkpoint2 file
+        }else{
+          window.location = 'underage.html'; //redirects to another page
+        }
+      } //redirect() function ends here
 
     </script>
+    <!-- Jacascript ends here -->
   </body>
 </html>
