@@ -7,9 +7,16 @@
   <body>
 
     <div class="container main">
+      <h1 class="display-4" style="color: blue; font-family: Georgia;">Please Enter Your:</h1>
+      <label for="day">Date of Birth:</label>
+
+      <div id="date2" class="datefield">
+        <input id="day" type="tel" maxlength="2" placeholder="DD"/> /
+        <input id="month" type="tel" maxlength="2" placeholder="MM"/> /
+        <input id="year" type="tel" maxlength="4" placeholder="YYYY" />
+      </div>
       <div>
-        <input type="number" id="age" value="">
-        <button onclick="redirect()">Submit</button>
+        <button onclick="checkAge()">Submit</button>
 
       </div>
 
@@ -17,14 +24,17 @@
 
     <script type="text/javascript">
 
-      function redirect(){
-        const limit = 21;
-        let age = parseInt(document.getElementById('age').value);
-      if (age < limit){
+      function checkAge(){
+        let currentYear = new Date();
+        let limit = currentYear.getFullYear();
+        let age = limit - parseInt(document.getElementById('year').value);
+      if (age < 21){
         console.log('sorry buddy');
+        alert("Sorry Buddy")
       }
-      else if(age >= limit){
-        console.log('Put on your DRINKIN SOCKS!');
+      else if(age >= 21){
+        confirm('Put on your DRINKIN SOCKS!');
+        document.location.replace('https://stefanbemelmans.github.io/web-workbook/07week/Checkpoint2/checkpoint2.html');
       }
     }
     </script>
