@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Site</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <button type="button" onclick="fizzbuzz()">Try it</button>
+
+    <script>
+    function fizzbuzz() {
+
+  for(i=0; i<=100; i++) {
+    if(i%3===0 && i%5===0){
+      console.log("fizzbuzz")
+    }
+    else if(i%3===0) {
+      console.log("fizz");
+    }
+    else if(i%5===0) {
+      console.log("buzz");
+    }
+    else {
+      console.log(i)
+    }
+  }
+}
+
+fizzbuzz();
+
+    </script>
+</body>
+
+</html>
