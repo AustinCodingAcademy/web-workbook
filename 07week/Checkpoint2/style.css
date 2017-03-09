@@ -23,32 +23,33 @@ body {
   font-family: Georgia;
 }
 
-.logopic {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  opacity: 0.8;
-  padding-left: 500px;
-  max-width: 1000px;
-  max-height: 800px;
+.headerlogo {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 
-.header {
+.c-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.backgroundpic {
   background-image: url("./img/wine-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 800px;
+  height: 100vh;
+  background-attachment: fixed;
 }
-.second {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  line-height: 28px;
+
+.hv {
+  height: 85vh;
 }
 
 .signaturecontent {
+  line-height: 28px;
   max-width: 70%;
   display: flex;
   flex-direction: column;
@@ -61,23 +62,9 @@ body {
   max-height: 80px;
 }
 
-.bottle {
-  max-width: 200px;
-  max-height: 500px;
-}
-
-.award {
-  max-width: 220px;
-  max-height: 220px;
-  margin: 40px;
-}
-
-.recognition {
-  background-image: url("img/wine12.jpg");
-  padding: 100px 0px 100px 0px;
-  background-size: cover;
-  color: white;
-  height: 600px;
+.img-guy {
+  width: 100%;
+  max-width: 100%;
 }
 
 .third-section {
@@ -91,29 +78,43 @@ body {
 .third-section-text {
   padding-top: 290px;
   text-align: center;
-
 }
 
-.column-center {
+.c-row {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.bottle {
+  max-width: 220px;
+  max-height: 420px;
+}
+
+.award {
+  max-width: 220px;
+  max-height: 220px;
+  margin: 40px;
+}
+
+.recognition {
+  background-image: url("img/wine12.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  padding-top: 120px;
 }
 
 .overflow {
   overflow: hidden;
 }
-.column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: space-around;
-}
+
 
 .joining-text {
-  padding-top: 250px;
+  padding-top: 140px;
   padding-left: 100px;
   line-height: 28px;
   font-size: 16px;
@@ -123,8 +124,12 @@ body {
 
 
 footer {
-  height: 450px;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .shop {
   background-color: #6f7b0c;
@@ -154,15 +159,9 @@ footer {
   font-size: 12px;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  logopic {
-    width:250px;
-    height:300px;
+@media (max-width: 768px) {
+  .mobile {
+    height: auto !important;
+    overflow: visible;
   }
 }
-
-@media (max-width: 767px) {
-  logopic {
-    width:150px;
-    height:200px;
-  }

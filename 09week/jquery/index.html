@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+
+  <style media="screen">
+    .box {
+      display: block;
+      background-color: blue;
+      height: 200px;
+      width: 200px;
+      margin: 10px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="box">
+
+  </div>
+
+  <div class="box">
+
+  </div>
+
+  <div class="box">
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      $('.box').on('click', function() {
+        $('.box') = $(this)
+        $('.box').css('background-color', 'green');
+      })
+    })
+  </script>
+
+</body>
+</html>
