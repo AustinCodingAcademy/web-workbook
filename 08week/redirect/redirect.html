@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Redirect Page</title>
+
+</head>
+<body>
+
+<h1> Welcome to the Winery Page</h1>
+<h4> How old are you? </h4>
+
+<input type="text" name="age" id="age" placeholder="Enter your age here">
+<button onclick="redirect()">Submit</button>
+<!--remember to have the () for functions!-->
+<script>
+function redirect() {
+if (document.getElementById('age').value < 21){
+window.location = './sorry.html';
+} else if(document.getElementById('age').value >= 21){
+    window.location = '../../07week/Checkpoint2/index.html';
+  } else {
+    alert('Please choose red or blue, or else answer to my evil hamster, Jonathan.');
+  }
+}
+
+</script>
+  <!--IMPORTANT window.location = '../../07week/Checkpoint2/index.html'; This is how to link to our assignment-->
+</body>
+
+</html>
