@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>My first WebVR Project!</title>
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.2.7/dist/aframe-extras.min.js"></script>
+    <script src="https://webvr.austincodingacademy.com/demo/automove-controls.js" charset="utf-8"></script>
+  </head>
+
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="smile" src="https://webvr.austincodingacademy.com/demo/smile.jpg">
+        <a-asset-item id="doors" src="https://webvr.austincodingacademy.com/demo/model.dae"></a-asset-item>
+      </a-assets>
+      <a-sphere material="src: #smile" position="2 1 -9" color="yellow" rotation="0 -90 0"></a-sphere>
+      <a-entity position="-3 -1 5.5">
+        <a-entity collada-model="#doors" position="0 1.1 0"></a-entity>
+      </a-entity>
+      <a-grid static-body geometry="width:100; height: 100;"></a-grid>
+      <a-entity id="player" camera universal-controls="movementControls: automove, gamepad, keyboard" kinematic-body position="0 8 0"></a-entity>
+    </a-scene>
+  </body>
+
+</html>
