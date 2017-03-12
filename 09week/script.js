@@ -3,41 +3,84 @@ $(function(){
 
   $('[data-cell]').click(function(){
     let cell = $(this);
-    let state = getState(cell);
+    // var state = getState(cell);
 
-    // if(!state) {
-    //   console.log("here");
-    // }
-    $(this).text(playerTurn);
-    checkForWin();
-    playerTurn = ($(this).text() === 'X') ?  'O' : 'X';
+    if($(cell).text() === ('O') || $(cell).text() === ('X')) {
+      console.log('Choose Another Square');
 
-    })
-  function checkForWin(){
-      if(
-        $('[data-cell="0"]').text() === playerTurn &&
-        $('[data-cell="3"]').text() === playerTurn &&
-        $('[data-cell="6"]').text() === playerTurn
-      ){
-
-        $('#announce-winner').text(playerTurn + "Has Won!!");
-      }
+    }
+    else {
+      $(cell).text(playerTurn);
+      checkForWin(playerTurn);
+      playerTurn = ($(this).text() === 'X') ?  'O' : 'X';
     }
 
-$('#clear').mouseenter(){
-  $('#clear').fadeTo('fast',1);
-  $('#clear').click(function() {
-      $('[data-cell]').text('');
-      playerTurn = 'X';
-    });
-  })
-   function getState(cell){
-     if($(cell).text() === ('O') || $(cell).text() === ('X')) {
-       console.log('there');
-     }
-    // else{
-    //   console.log('here');
-    //
-  }
-   }
 })
+    $('#clear').click(function(){
+      $('#clear').fadeTo('fast',1);
+      $('[data-cell]').text('');
+      $('#announce-winner').text('');
+      playerTurn = 'X';
+
+});
+
+
+})
+
+function getState(){
+   if($(cell).text() === ('O') || $(cell).text() === ('X')) {
+     console.log('there');
+     return true;
+        }
+    else {
+      return false;
+    }
+    }
+
+function checkForWin(playerTurn){
+    if(
+        for(let r = 0; r < 3; r++){
+          for(let c = 0; c < 3; c++){
+            
+          }
+        }
+
+
+
+      $('[data-cell="0"]').text() === playerTurn &&
+      $('[data-cell="3"]').text() === playerTurn &&
+      $('[data-cell="6"]').text() === playerTurn ||
+
+        $('[data-cell="1"]').text() === playerTurn &&
+        $('[data-cell="4"]').text() === playerTurn &&
+        $('[data-cell="7"]').text() === playerTurn ||
+
+        $('[data-cell="2"]').text() === playerTurn &&
+        $('[data-cell="5"]').text() === playerTurn &&
+        $('[data-cell="8"]').text() === playerTurn ||
+
+        $('[data-cell="0"]').text() === playerTurn &&
+        $('[data-cell="1"]').text() === playerTurn &&
+        $('[data-cell="2"]').text() === playerTurn ||
+
+        $('[data-cell="3"]').text() === playerTurn &&
+        $('[data-cell="4"]').text() === playerTurn &&
+        $('[data-cell="5"]').text() === playerTurn ||
+
+        $('[data-cell="6"]').text() === playerTurn &&
+        $('[data-cell="7"]').text() === playerTurn &&
+        $('[data-cell="8"]').text() === playerTurn ||
+
+        $('[data-cell="0"]').text() === playerTurn &&
+        $('[data-cell="4"]').text() === playerTurn &&
+        $('[data-cell="8"]').text() === playerTurn ||
+
+        $('[data-cell="2"]').text() === playerTurn &&
+        $('[data-cell="4"]').text() === playerTurn &&
+        $('[data-cell="6"]').text() === playerTurn )
+        {
+          $('#announce-winner').text(playerTurn + " Has Won!!");
+        }
+      else {
+      }
+}
