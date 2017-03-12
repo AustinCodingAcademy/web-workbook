@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Age Verification</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="jumbotron text-center" style="background-image: url(https://www.colourbox.com/preview/8201218-wine-bottles-in-an-old-wine-cellar-background.jpg); background-size: 100%;">
+      <h1 class="display-3">Welcome to the Foundry Winery</h1>
+      <p class="lead">Please verify your age below.</p>
+      <hr class="my-4">
+      <p class="lead">
+
+        <input type="text" id="age" placeholder="Enter Your Age">
+        <button onclick="redirect()">Submit</button>
+        <script type="text/javascript">
+        function redirect() {
+            console.log(parseInt(document.getElementById('age').value));
+            if (document.getElementById('age').value >= '21') {
+              window.location = 'https://audiomuse1.github.io/web-workbook/07week/Checkpoint2/index.html';
+            } else {
+              window.location = 'https://www.google.com';
+            }
+        }
+        </script>
+      </p>
+
+    <p id="bottommsg"></p>
+
+    </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  </body>
+</html>
