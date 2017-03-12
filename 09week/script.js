@@ -1,6 +1,13 @@
 $(function(){
   let playerTurn = 'X';
+
   $('[data-cell]').click(function(){
+    let cell = $(this);
+    let state = getState(cell);
+
+    // if(!state) {
+    //   console.log("here");
+    // }
     $(this).text(playerTurn);
     checkForWin();
     playerTurn = ($(this).text() === 'X') ?  'O' : 'X';
@@ -16,5 +23,21 @@ $(function(){
         $('#announce-winner').text(playerTurn + "Has Won!!");
       }
     }
-// $('#clear').click('[data-cell]').text('');
+
+$('#clear').mouseenter(){
+  $('#clear').fadeTo('fast',1);
+  $('#clear').click(function() {
+      $('[data-cell]').text('');
+      playerTurn = 'X';
+    });
+  })
+   function getState(cell){
+     if($(cell).text() === ('O') || $(cell).text() === ('X')) {
+       console.log('there');
+     }
+    // else{
+    //   console.log('here');
+    //
+  }
+   }
 })
