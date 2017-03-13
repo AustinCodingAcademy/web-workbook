@@ -7,7 +7,7 @@ $(function(){
 
     if($(cell).text() === ('O') || $(cell).text() === ('X')) {
       console.log('Choose Another Square');
-
+      $('#announce-winner').text('Please Choose Another Square');
     }
     else {
       $(cell).text(playerTurn);
@@ -38,15 +38,13 @@ function getState(){
     }
 
 function checkForWin(playerTurn){
-    if(
-        for(let r = 0; r < 3; r++){
-          for(let c = 0; c < 3; c++){
-            
-          }
-        }
-
-
-
+    // if(
+    //     for(let r = 0; r < 3; r++){
+    //       for(let c = 0; c < 3; c++){
+    //
+    //       }
+    //     }
+if(
       $('[data-cell="0"]').text() === playerTurn &&
       $('[data-cell="3"]').text() === playerTurn &&
       $('[data-cell="6"]').text() === playerTurn ||
@@ -81,6 +79,14 @@ function checkForWin(playerTurn){
         {
           $('#announce-winner').text(playerTurn + " Has Won!!");
         }
-      else {
+        // tyrying to iterate through the data-cells to see if they are all full to declare a tie
+
+      else if (
+        for (var i = 0; i < 9 && $('[data-cell="i"]').text() !==(''); i++) {
+          ){
+            }
+
+
+        $('#announce-winner').text('It/"s A Tie!');
       }
-}
+      }
