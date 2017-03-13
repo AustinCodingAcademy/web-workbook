@@ -1,53 +1,50 @@
-$(function () {
-  let color = 'green';
-  $('[data-cell]').click(function() {
-    $(this).css('background-color', color);
-    if (checkWin()) {
-      console.log(`${color} wins!`)
+
+var playerTurn = 'X';
+$(function() {
+  $('[data-cell]').on('click', function() {
+    $(this).text(playerTurn);
+    playerTurn = (playerTurn === 'X' ? 'O' : 'X');
+    checkWin();
+  });
+
+    function checkWin() {
+      if (
+        //column wins//
+        $('div[data-cell=0]').text() === playerTurn &&
+        $('div[data-cell=3]').text() === playerTurn &&
+        $('div[data-cell=6]').text() === playerTurn
+        ||
+        $('div[data-cell=1]').text() === playerTurn &&
+        $('div[data-cell=4]').text() === playerTurn &&
+        $('div[data-cell=7]').text() === playerTurn
+        ||
+        $('div[data-cell=2]').text() === playerTurn &&
+        $('div[data-cell=5]').text() === playerTurn &&
+        $('div[data-cell=8]').text() === playerTurn
+        ||
+        //row wins//
+        $('div[data-cell=0]').text() === playerTurn &&
+        $('div[data-cell=1]').text() === playerTurn &&
+        $('div[data-cell=2]').text() === playerTurn
+        ||
+        $('div[data-cell=3]').text() === playerTurn &&
+        $('div[data-cell=4]').text() === playerTurn &&
+        $('div[data-cell=5').text() === playerTurn
+        ||
+        $('div[data-cell=6]').text() === playerTurn &&
+        $('div[data-cell=7]').text() === playerTurn &&
+        $('div[data-cell=8]').text() === playerTurn
+        ||
+        //diagonal wins//
+        $('div[data-cell=0]').text() === playerTurn &&
+        $('div[data-cell=4]').text() === playerTurn &&
+        $('div[data-cell=8]').text() === playerTurn
+        ||
+        $('div[data-cell=2]').text() === playerTurn &&
+        $('div[data-cell=4]').text() === playerTurn &&
+        $('div[data-cell=6]').text() === playerTurn
+      )
+        console.log('You have won');
+
     }
-    if (color === 'green') {
-      color = 'blue';
-    } else {
-      color = 'green';
-    }
-  })
-
-  function checkWin() {
-
-
-let verticalWin = function() {
-      if ($('[data-cell="0"]').css('background-color') === color && $('[data-cell="3"]').css('background-color') === color && $('[data-cell="6"]').css('background-color') === color ) {
-        console.log(`player ${color}wins`)
-    }
-
-    else if
-      ($('[data-cell="1"]').css('background-color') === color && $('[data-cell="4"]').css('background-color') === color && $('[data-cell="7"]').css('background-color') === color ) {
-        console.log(`player ${color}wins`)
-      }
-
-    else if
-      ($('[data-cell="2"]').css('background-color') === color && $('[data-cell="5"]').css('background-color') === color && $('[data-cell="7"]').css('background-color') === color ) {
-        console.log(`player ${color}wins`)
-    }
-}
-
-
-let horizontalWin = function() {
-      if ($('[data-cell="0"]').css('background-color') === color && $('[data-cell="1"]').css('background-color') === color && $('[data-cell="2"]').css('background-color') === color ) {
-      console.log(`player ${color}wins`)
-    }
-
-    else if
-      ($('[data-cell="3"]').css('background-color') === color && $('[data-cell="4"]').css('background-color') === color && $('[data-cell="5"]').css('background-color') === color ) {
-      console.log(`player ${color}wins`)
-    }
-
-    else if
-      ($('[data-cell="6"]').css('background-color') === color && $('[data-cell="7"]').css('background-color') === color && $('[data-cell="8"]').css('background-color') === color ) {
-      console.log(`player ${color}wins`)
-    } else {
-
-    }
-}
-}
-}
+  });
