@@ -44,7 +44,9 @@ $(function() {
         $('div[data-cell=4]').text() === playerTurn &&
         $('div[data-cell=6]').text() === playerTurn
       )
-        console.log('You have won');
-
+        $('#announce-winner').text("Player-" + playerTurn + "-wins!");
     }
+        $('#clear').click(function clearBoard() {
+        $('[data-cell]').text('');
+      })
   });
