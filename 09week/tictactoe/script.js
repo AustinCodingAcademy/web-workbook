@@ -29,7 +29,7 @@ $(function() {
         ||
         $('div[data-cell=3]').text() === playerTurn &&
         $('div[data-cell=4]').text() === playerTurn &&
-        $('div[data-cell=5').text() === playerTurn
+        $('div[data-cell=5]').text() === playerTurn
         ||
         $('div[data-cell=6]').text() === playerTurn &&
         $('div[data-cell=7]').text() === playerTurn &&
@@ -46,7 +46,10 @@ $(function() {
       )
         $('#announce-winner').text("Player-" + playerTurn + "-wins!");
     }
-        $('#clear').click(function clearBoard() {
+        $('#clear').on('click', function () {
         $('[data-cell]').text('');
+      })
+        $('#clear').on('click', function () {
+        $('#announce-winner').hide();
       })
   });
