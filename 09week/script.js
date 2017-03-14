@@ -14,13 +14,13 @@ $(function(){
       $(cell).text(playerTurn);
       numTurn += 1;
       console.log(numTurn);
-      if(numTurn >=3) {
+      if(numTurn >= 3) {
           if(checkForWin(playerTurn)){
                 $('#announce-winner').text(playerTurn + " Has Won!!");
             }
           else if (numTurn === 9) {
 
-             $('#announce-winner').text('It/"s A Tie!');
+             $('#announce-winner').text('It\'s A Tie!');
 
           }
         }
@@ -36,7 +36,7 @@ $(function(){
       $('[data-cell]').text('');
       $('#announce-winner').text('');
       playerTurn = 'X';
-      numTurn = 0;  
+      numTurn = 0;
 });
 
 
