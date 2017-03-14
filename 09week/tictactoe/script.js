@@ -3,8 +3,8 @@ var playerTurn = 'X';
 $(function() {
   $('[data-cell]').on('click', function() {
     $(this).text(playerTurn);
-    playerTurn = (playerTurn === 'X' ? 'O' : 'X');
     checkWin();
+    playerTurn = (playerTurn === 'X' ? 'O' : 'X');
   });
 
     function checkWin() {
