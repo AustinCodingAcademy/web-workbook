@@ -1,5 +1,6 @@
 $(function(){
   let playerTurn = 'X';
+  let numTurn = 0;
 
   $('[data-cell]').click(function(){
     let cell = $(this);
@@ -11,9 +12,23 @@ $(function(){
     }
     else {
       $(cell).text(playerTurn);
-      checkForWin(playerTurn);
+      numTurn += 1;
+      console.log(numTurn);
+      if(numTurn >=3) {
+          if(checkForWin(playerTurn)){
+                $('#announce-winner').text(playerTurn + " Has Won!!");
+            }
+          else if (numTurn === 9) {
+
+             $('#announce-winner').text('It/"s A Tie!');
+
+          }
+        }
+
       playerTurn = ($(this).text() === 'X') ?  'O' : 'X';
     }
+
+
 
 })
     $('#clear').click(function(){
@@ -21,7 +36,7 @@ $(function(){
       $('[data-cell]').text('');
       $('#announce-winner').text('');
       playerTurn = 'X';
-
+      numTurn = 0;  
 });
 
 
@@ -49,7 +64,7 @@ if(
       $('[data-cell="3"]').text() === playerTurn &&
       $('[data-cell="6"]').text() === playerTurn ||
 
-        $('[data-cell="1"]').text() === playerTurn &&
+        $('[data-cell="1, 4, 7"]').text() === playerTurn &&
         $('[data-cell="4"]').text() === playerTurn &&
         $('[data-cell="7"]').text() === playerTurn ||
 
@@ -77,16 +92,17 @@ if(
         $('[data-cell="4"]').text() === playerTurn &&
         $('[data-cell="6"]').text() === playerTurn )
         {
-          $('#announce-winner').text(playerTurn + " Has Won!!");
+          return true;
+
+
         }
         // tyrying to iterate through the data-cells to see if they are all full to declare a tie
 
-      else if (
-        for (var i = 0; i < 9 && $('[data-cell="i"]').text() !==(''); i++) {
-          ){
-            }
-
-
-        $('#announce-winner').text('It/"s A Tie!');
+      else {
+        return false;
       }
-      }
+
+ }
+//         $('#announce-winner').text('It/"s A Tie!');
+//       }
+//       }
