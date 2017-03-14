@@ -7,7 +7,7 @@ function displayTime(){
   var minutes = currentTime.getMinutes();
   var seconds = currentTime.getSeconds();
   //12 hour format
-  var medridiem = "AM"; //default is AM
+  var meridiem = "AM"; //default is AM
 
 //change from 24 to 12 hour clock
 //keep track of the meridiem
