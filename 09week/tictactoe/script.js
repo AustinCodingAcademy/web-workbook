@@ -48,8 +48,10 @@ $(function() {
     }
         $('#clear').on('click', function () {
         $('[data-cell]').text('');
+        location.reload();
       })
         $('#clear').on('click', function () {
         $('#announce-winner').hide();
+        location.reload();
       })
   });
