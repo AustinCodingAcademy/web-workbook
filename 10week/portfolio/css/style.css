@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "smokeyFont";
+  src:url("../fonts/Nice Dream Come True.ttf") format("truetype");
+}
+
+h4{
+  font-family: smokeyFont;
+  font-size: 42px;
+}
+
+h1{
+  font-family: smokeyFont;
+}
+
 html{
   background-color: brown;
   width: 100%;
@@ -13,7 +27,7 @@ body{
 }
 main{
   /*background-color: lightgreen;*/
-  margin-left: 8%;
+  margin-left: 120px;
   margin-right:0%;
   width: 92%;
 }
@@ -132,7 +146,8 @@ nav li{
 
 #header{
 
-      animation-delay:6s;
+      animation-delay:4s;
+      animation-duration: 6s;
   }
       /*position: absolute;
       left: 300px;
@@ -143,22 +158,15 @@ nav li{
   /*background-color: lightblue;*/
 }
 #projecta{
-
   position: absolute;
   left: 40%;
   top: 50px;
   z-index: 2;  justify-content: center;
   padding: 0;
   margin: 0px;
-
-
-  /*background-color: lightblue;*/
 }
 
-/*#projecta h1{
-  font-size: 50px;
-  color: yellow;
-}*/
+
 
 #projectb{
 
@@ -221,7 +229,60 @@ nav li{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
 }
+
+#smokeydescription{
+  padding-top: 8%;
+}
+#abouttitles1{
+  padding-left: 11%;
+  padding-bottom: 1%;
+  animation-delay: 8s;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+#abouttitlespic{
+  padding-left: 20%;
+  padding-bottom: 1%;
+  animation-delay: 2s;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+#abouttitles3{
+  padding-left: 15%;
+  padding-bottom: 1%;
+  animation-delay: 7.25s;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+#abouttitles4{
+  padding-left: 18%;
+  padding-bottom: 1%;
+  animation-delay: 6.5s;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+#abouttitles5{
+  padding-left: 21%;
+  padding-bottom: 1%;
+  animation-delay: 5.75s;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+#abouttitles6{
+  padding-left: 24%;
+  animation-delay: 5.0s;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+#abouttitlesmain{
+  animation-delay: 4s;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
 #about2{
   background-image: url("../img/dramaticme.jpg");
   height: 800px;
@@ -254,4 +315,46 @@ nav li{
 #about h4{
   color: white;
   text-align:left;
+}
+
+@media all and (max-width: 990px) {
+
+  main{
+    /*background-color: lightgreen;*/
+    margin-left: 0%;
+    margin-right:0%;
+    width: 100%;
+  }
+
+}
+
+@media all and (max-width: 768px) {
+
+
+  .fullscreen-bg {
+      position: relative;
+
+      overflow: hidden;
+      height: 600px;
+      display: flex;
+      justify-content: center;
+      background-color: black;
+      z-index: 0;
+  }
+
+}
+@media all and (max-width: 620px) {
+
+
+  .fullscreen-bg {
+      position: relative;
+
+      overflow: hidden;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      background-color: black;
+      z-index: 0;
+  }
+
 }
