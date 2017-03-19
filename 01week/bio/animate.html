@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Animation</title>
+  <style>
+      #boxToMove{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        animation-name: boxMover;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        display: flex;
+        justify-content: center;
+        margin-left: 75px;
+      }
+
+      #two{
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: boxMover2;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        display: flex;
+        justify-content: center;
+        margin-left: 150px;
+      }
+
+      @keyframes boxMover {
+        0% {top: 0px;}
+        10% {right:25px}
+        25% {top: 100px;}
+        75% {top: 50px;}
+        100% {top: 150px;}
+      }
+
+      @keyframes boxMover2 {
+        0% {top: 50px;}
+        10% {right:15px}
+        25% {top: 150px;}
+        75% {top: 30px;}
+        100% {top: 85px;}
+      }
+
+  </style>
+</head>
+<body>
+  <div id="boxToMove">
+  </div>
+  <div id="two">
+  </div>
+</body>
+</html>

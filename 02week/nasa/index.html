@@ -8,10 +8,12 @@
 
   <!-- This is my CSS reset file-->
   <link rel="stylesheet" href="css/css-reset.css" />
-
-
+  <!--This is my google font-->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:600" rel="stylesheet">
   <!-- This is my CSS file-->
   <link rel="stylesheet" href="css/style.css" />
+  <!--this is the icon style sheet!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
   <title>NASA Landing Page > Box Model Lesson</title>
@@ -27,18 +29,28 @@
     </section>
 
 
-  <section id="contact-info">
+  <section class="about">
     <!--I still dont' understand how this parent clearfix works!-->
-    <div class="parent clearfix">
-      <div>
+    <div class="socialmedia">
         <h3>SOCIAL MEDIA</h3>
-        <p>Twitter - @nasa</p>
-        </p>Facebook - fb.com/nasa</p>
+        <!--<p>Twitter - @nasa</p>
+        <p>Facebook - fb.com/nasa</p>
         <p>Instagram - @nasa</p>
-        <p>Youtube - youtube.com/NASA</p>
+        <p>Youtube - youtube.com/NASA</p> this is a list the following is the icons added-->
+        <!--Twitter-->
+                <p><i class="fa fa-twitter fa-lg" aria-hidden="true"></i>&nbsp;Twitter- <a href="https://twitter.com/NASA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">@Nasa</a></p>
+
+                <!--facebook-->
+                <p><i class="fa fa-facebook fa-lg" aria-hidden="true"></i>&nbsp;Facebook-<a href="https://www.facebook.com/NASA/" target="_blank"> Facebook.com/nasa</a></p>
+
+                <!--Instagram-->
+                <p><i class="fa fa-instagram fa-lg" aria-hidden="true"></i>&nbsp;Instagram-<a href="https://www.instagram.com/nasa/" target="_blank">@Nasa</a></p>
+
+                <!--Youtube-->
+                <p><i class="fa fa-youtube fa-lg" aria-hidden="true"></i>&nbsp;Youtube-<a href="https://www.youtube.com/user/NASAtelevision" target="_blank">Youtube.com/NASA</a></p>
       </div>
 
-      <div>
+      <div class="office">
         <h3>OFFICE INFO</h3>
         <p>Public Communications Office</p>
         <p>NASA Headquarters</p>
@@ -48,21 +60,21 @@
         <p>(202) 358-4338 (Fax)</p>
       </div>
 
-<!--This is the form with a button user input section-->
 
-      <div>
+      <div class="contact">
         <h3>CONTACT US</h3>
-          <form>
+          <form id="form1">
             Name:<br>
-            <input type="text" name="name"><br>
-          </br>
-            Message:<br>
-            <textarea cols="35" rows="5" placeholder="Tell us why you think that the moon rocks!">
+            <input type="text" name="name">
+            <br>
+            Message:
+            <br><textarea cols="21" rows="6" placeholder="Tell us why you think that the moon rocks!">
             </textarea>
           </form>
-        <button class="button">Send</button>
+        <input type="submit" name="input" value="send" class="button">
       </div>
-    </div>
+
+<!--This is the form with a button user input section-->
   </section>
 <!--Elements still not responding to CSS?!?!-->
   </main>

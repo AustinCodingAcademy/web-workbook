@@ -1,7 +1,21 @@
 /* how to target an id with a hashtag*/
 body {
-  width: 960px;
+  width: 850px;
   margin: 0 auto;
+}
+
+h1 {
+  font-size: 70px;
+  font-family: 'Fira Sans',sans-serif;
+}
+
+h3{
+  font-size: 24px;
+  font-family: sans-serif;
+}
+
+p{
+  font-size: 11px;
 }
 
 #hero {
@@ -10,62 +24,58 @@ body {
   background-position: top;
   background-size: cover;
   width: 850px;
-  height: 350px;
+  height: 450px;
   font-size: 40px;
-}
-
-div {
-  background-color: light grey;
-  color: white;
   text-align: center;
-  vertical-align: middle;
-  padding: 12%;
-  font-family: sans-serif;
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.contact-info{
-  font-size: 12px;
-}
-
-.parent {
-margin: 20px 0px 0px 0px;
+.about{
+  margin-top: 15px;
+  background-color: #E6E6E6;
   width: 850px;
- height: 324px;
- font-size: 12px;
- background-color: gray;
- padding: 20px 0;
+  height: 324px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
+.fa{
+  padding-right: 6px;
 }
 
-.parent div {
-  width: 270px;
-  float: left;
-  padding: 0px 0px 0px 13px;
-  color: black;
-  text-align: left;
+.fa-twitter{
+  color:#00aced;
+}
+.fa-facebook{
+  color:#3b5998;
+}
+.fa-instagram{
+  color:#bc2a8d;
+}
+.fa-youtube{
+  color:#bb0000;
 }
 
-form{
-  font-size: 14;
+input{
+  border: none;
+}
+textarea{
+  border:none;
+  resize:none; /**this makes sure there is no adjustable message textarea**/
 }
 
-.button {
-    background-color: green;
-    border: none;
-    margin-top: 5px;
-    width: 30%;
-    color: white;
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
+.button{
+  background-color: #4D4D4D;
+  border: none;
+  padding: 5px 11px;
+  margin: 4px 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block; /**buttons must be inline-block elements**/
+  font-size: 16px;
+  color: white;
 }
