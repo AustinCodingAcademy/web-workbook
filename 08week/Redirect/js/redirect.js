@@ -4,5 +4,5 @@ function redirectYes() {
   }
 
   function redirectNo() {
-      window.location = './blue.html';
+      window.location = './redirect-negative.html';
     }
