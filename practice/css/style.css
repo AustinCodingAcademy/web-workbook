@@ -1,0 +1,131 @@
+body {
+  width: 950px;
+  margin: 0 auto;
+  background-color: black;
+}
+
+header {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 55px;
+  padding: 25px;
+  margin: 10px;
+  color: white;
+}
+
+p{
+  color: white;
+}
+
+.first{
+  width: 950px;
+  margin: 0 auto;
+  height: 350px;
+}
+
+.ball {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 2px solid orange;
+  background-color: orange;
+  color: white;
+  border-radius: 50%;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  padding: 40px;
+  animation-name: ballmover;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  }
+
+.balling{
+  padding: 25px;
+  font-size: 35px;
+  float: left;
+}
+
+.second{
+  width: 950px;
+  margin: 0 auto;
+  height: 350px;
+}
+
+.square{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 2px solid green;
+  background-color: green;
+  color: white;
+  float: left;
+  text-align: center;
+  font-size: 20px;
+  padding: 40px;
+  animation-name: squaremover;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.squaing {
+  padding: 25px;
+  font-size: 35px;
+  float: left;
+}
+
+.third{
+  width: 950px;
+  margin: 0 auto;
+  height: 350px;
+}
+
+.triangle{
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 200px solid blue;
+  float: left;
+  animation-name: trianglemover;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.triangle p{
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+  margin-left: -35px;
+  font-size: 20px;
+}
+
+.triing {
+  padding: 25px;
+  font-size: 35px;
+  float: left;
+}
+
+@keyframes ballmover {
+  0%  {top:0px;}
+  25%  {top:-150px;}
+  75%  {top:50px;}
+  100%  {top:-100px;}
+}
+
+@keyframes squaremover {
+  0%  {right:0px;}
+  25%  {right:150px;}
+  75%  {right:50px;}
+  100%  {right:-300px;}
+}
+
+@keyframes trianglemover {
+  0%  {top:0px;}
+  10% {right: 24px}
+  25%  {top:50px;}
+  50%  {left: 40px}
+  75%  {right:50px;}
+  100%  {bottom:50px;}
+}
