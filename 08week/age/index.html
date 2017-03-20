@@ -1,27 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>red or blue </title>
-  </head>
-  <body>
-    <script type="text/javascript">
-    <input type="text" name="team" value="" placeholder="enter team" >
-    <button type="button" name="button"></button>
-    <button onclick="redirect()">submit</button>
+    <title>Age Gate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- fontrific and reset-->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600"
+        rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css.map">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
 
-const age = 16;
-const drinkingAge = 21;
-const checkID = false;
-
-if (age >= drinkingAge || !checkID) {
-  console.log("beer for you!");
-} else if ( ){
-
-}
+<body>
+    <div class="container">
+        <center>
+            <h2>| Age Gate |</h2>
+            <h2>You Shall Not Yet Pass Since Delicious Tasty Booze is Vendored Here.</h2>
+            <br>
+            <h2>Please verify you are of drinking age before proceeding:</h2>
 
 
-</script>
+            <input id="age" placeholder="What is your age?" type="number">
+            <br>
+            <br>
+            <button class="btn btn-default" onclick="redirect()" type="submit">Submit My Age</button>
 
-  </body>
+            <script type="text/javascript">
+                // redirection function
+                function redirect() {
+                    if (Number(document.getElementById('age').value) >= 21) {
+                        window.location = '../../07week/checkpointe2/index.html';
+                    } else {
+                        window.open("http://www.crayola.com")
+                    }
+                }
+            </script>
+
+
+
+            <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+                crossorigin="anonymous">
+                Reload the page to get source
+                for: https: //code.jquery.com/jquery-3.1.1.slim.min.js
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+                crossorigin="anonymous">
+                Reload the page to get source
+                for: https: //cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js
+            </script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+                crossorigin="anonymous">
+                Reload the page to get source
+                for: https: //maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js
+            </script>
+
+        </center>
+    </div>
+
+</body>
+
 </html>
