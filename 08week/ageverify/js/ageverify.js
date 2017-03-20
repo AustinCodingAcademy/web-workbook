@@ -8,7 +8,7 @@ function redirect() {
     document.getElementById('wrong-age').innerHTML = "Please enter valid age.";
   } else if (ageNum >= 21) {
     console.log("Just right");
-    window.location.href = '../../../07week/Checkpoint2/index.html';
+    window.location.href = 'https://stuartkilgore.github.io/web-workbook/07week/Checkpoint2/';
   } else if (ageNum < 21) {
     window.location.href = './denied.html';
     console.log("Too young");
