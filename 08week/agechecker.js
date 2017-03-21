@@ -7,6 +7,6 @@ function redirect() {
   if (age >= 21) {
     window.location = '../../07week/Checkpoint2/'
   } else {
-    confirm("Users must be 21 or older to view content. Please come back when you've aged!")
+    confirm("Users must be 21 or older to view content. Please come back when you're older")
   }
 }
