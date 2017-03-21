@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Foundry redirect</title>
+
+  <!--  Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Wine page redirect -->
+  <section class="row hero">
+    <div class="col-xs-12 text-center">
+      <h1>Welcome to Foundry</h1>
+      <h4>Are you old enough to drink?</h4>
+
+      <input type="text" name="team" id="team" placeholder="Enter your age">
+      <button onclick="redirect()">Go</button>
+      <!-- <button onclick="redirect()">No</button> -->
+
+      <script>
+      function redirect() {
+        if(document.getElementById('team').value > 21) {
+          window.location = '../../07week/Checkpoint2/index.html';
+        } else if (document.getElementById('team').value < 21) {
+            window.location = 'http://bit.ly/2lJlIMC';
+        } else {
+            alert('Please choose yes or no, buddy!')
+          }
+        }
+      </script>
+    </div>
+  </section>
+</body>
+</html>
+
+
+<!-- function fizzbuzz(){
+    for (var i = 0; i <= 100; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+            console.log("FizzBuzz");
+        } else if (i % 3 == 0) {
+            console.log("Fizz");
+        } else if (i % 5 == 0) {
+            console.log("Buzz");
+        } else if (i % 3 !== 0 && i % 5 !== 0) {
+            console.log(i);
+        }
+    }
+} -->
