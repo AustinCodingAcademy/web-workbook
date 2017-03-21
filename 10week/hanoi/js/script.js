@@ -23,13 +23,21 @@ $(document).ready(function() {
       console.log(`${$blockSize} placed`);
       $block = null;
       $blockSize = null;
+      checkWin();
       console.log('Nothing held');
     }
     // block held, bigger than last block
     else {
       console.log('Invalid move: block held larger than last block');
     }
-  })
   // END click functions
+  })
+
+  // check winner
+  function checkWin() {
+    if ($('[data-stack="3"]').children().length === 4) {
+      $('#announce-game-won').text('You win! Also, I win! Woo!');
+    }
+  }
 
 });
