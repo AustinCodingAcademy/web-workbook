@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Redirect Page</title>
+
+ </head>
+ <body>
+
+ <h1> Welcome to Foundery</h1>
+ <h4> What is your current age? </h4>
+
+ <input type="text" name="age" id="age" placeholder="Enter your age here">
+ <button onclick="redirect()">Submit</button>
+
+ <script>
+ function redirect() {
+ if (document.getElementById('age').value < 21){
+ window.location = href="https://www.youtube.com/watch?v=oHg5SJYRHA0";
+ } else if(document.getElementById('age').value >= 21){
+     window.location = '../../07week/Checkpoint2/index.html';
+   } else {
+     alert('Please choose a number or I will Rick Roll you again.');
+   }
+ }
+
+ </script>
+
+ </body>
+
+ </html>
