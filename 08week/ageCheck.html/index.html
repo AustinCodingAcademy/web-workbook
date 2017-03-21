@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Age Verification</title>
+  </head>
+  <body>
+    <input type="text" id="age" name="age" value="" placeholder="Enter your age">
+    <button onclick="redirect()">Verify</button>
+    <script type="text/javascript">
+      function redirect() {
+
+        if ( Number(console.log(document.getElementById('age').value >= 21));) {
+          window.location = 'http://www.wine.com/';
+        }
+        else {
+          window.location = 'http://www.clubpenguin.com/'
+        }
+      }
+    </script>
+  </body>
+</html>
