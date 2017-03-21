@@ -1,28 +1,80 @@
 body{
   margin: 0 auto;
 }
+.logo{
+  height: 38px !important;
+  width: 218px !important;
+}
 
 #hero{
   display: flex;
   align-items: center;
-  justify-content: left;
-  padding-left: 150px;
-  background-image: url(../img/santamonica.jpg);
+  justify-content: center;
+  text-align: center;
+  background-image: url(../img/Hero_BG@2x.png);
   background-repeat: no-repeat;
   background-clip: border-box;
   background-attachment: fixed;
   height: 100vh;
   width: 100vw;
-  background-size: cover;
-color: black;
-font-family: 'rock salt';
+  background-size: contain;
+color: white;
+font-family: 'Lato', sans-serif !important;
+
 }
+
 #hero h1{
-  font-size: 75px;
+  font-size: 72px;
+  font-weight: 700;
+}
+#hero h2{
+  font-weight: 100 !important;
 }
 #rotate{
   font-size: 35px;
+  font-weight: 700;
 }
+
+.contact {
+  width: 249px;
+  height: 55.2px;
+  border-radius: 100px;
+  background-color: #ff6876;
+  margin-top: 25px;
+  border: none;
+  font-size: 22px;
+  font-weight: 100;
+  color: white !important;
+
+}
+.resumePage {
+  width: 249px;
+  height: 55.2px;
+  border-radius: 100px;
+  background-color: white;
+  border: none;
+  font-size: 22px;
+  font-weight: 100;
+  color: #ff6876 !important;
+  border: 1px solid #ff6876;
+
+}
+.download {
+  width: 249px;
+  height: 55.2px;
+  border-radius: 100px;
+  background-color: #ff6876;
+  border: none;
+  margin: 25px;
+
+  font-size: 22px;
+  font-weight: 100;
+  color: white !important;
+}
+
+  a {
+text-decoration: none !important;
+    }
 
 .navbar-default{
   background-color: transparent !important;
@@ -32,13 +84,46 @@ font-family: 'rock salt';
 .navbar-nav a {
     color: white !important;
     font-size: 20px!important;
-    font-weight: lighter;
-    font-family: 'rock salt';
+    font-weight: 100 !important;
+    font-family: 'Lato', sans-serif !important;
+
 }
 
 .navbar-brand img {
     height: 100px;
     width: 300px;
+}
+#aboutMe{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  max-width: 100vw;
+  max-height: 100vh;
+  background-color: #ffffff;
+  padding-top: 32px;
+}
+
+.aboutBox{
+display: flex !important;
+
+  max-width: 100vw!important;
+max-height: 413px !important;
+ background-color: #ffffff;
+ box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.21);
+ margin-bottom: 10px !important;
+ }
+
+.aboutBox img{
+  width: 305.7px;
+  height: 331.2px;
+}
+.rectangle-7 {
+  width: 946px !important;
+  height: 90px;
+  background-image: linear-gradient(276deg, #3023ae, #61bcff);
+  border: none !important;
+  /*box-shadow: 0px 0 5px 4px rgba(0, 0, 0, 0.21);*/
+
 }
 #about{
   height: 700px !important;
@@ -49,13 +134,173 @@ font-family: 'rock salt';
 .abouttitle{
   background-color: lightpink;
 }
+.aboutText{
+  margin-left: 30px !important;
+  text-align: center;
+}
 
 .bio{
   height: 400px !important;
   text-align: left;
   background: transparent;
 }
+#bites{
+  height: 508px;
+  width: 100vw;
+  margin-top: 32px;
+  margin-bottom: 32px;
+ }
 
+#bites h2{
+  /*width: 245px;
+  height: 63px;*/
+  font-family: 'Lato' !important;
+  font-size: 46px;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center !important;
+  color: #2f3841;
+  color: var(--charcoal-grey);
+  margin-bottom: 42px !important;
+}
+#bites img{
+    float: left;
+  height: 46px;
+  width: 50px;
+  margin: 10px;
+  }
+.bit{
+  margin-top: 32px;
+line-height: 1.5;
+ }
+ .bit ul{
+   list-style: none;
+   list-style-position:  inside !important;
+ }
+ .bit h3{
+text-align: center;
+ }
+
+.sectiontitle h2{
+
+  /*width: 188px;
+  height: 63px;*/
+  font-family: 'Lato';
+  font-size: 46px !important;
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #3f227e;
+
+}
+#portfolio{
+  margin-right: 148px !important;
+  margin-left: 148px !important;
+  margin-top: 32px;
+  margin-bottom: 32px;
+ }
+.featureWork{
+display: flex;
+flex: 1;
+width: 646.3px !important;
+  height: 695.1px;
+  opacity: 0.7;
+  mix-blend-mode: multiply;
+  background-color: #626262;
+}
+.otherWork{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+align-items: center;
+ max-width: 464.9px!important;
+  max-height: 337.7px !important;
+  padding-right: 5px !important;
+}
+#bottomHero{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 1440px;
+ height: 469px;
+ background-image: linear-gradient(108deg, #3023ae, #c96dd8);
+}
+#bottomHero h2{
+  width: 263px;
+  height: 57px;
+  font-family: 'Lato';
+  font-size: 42px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  text-align: center;
+  color: #ffffff;
+}
+#bottomHero p{
+  /*width: 372px;*/
+  height: 33px;
+  opacity: 0.66;
+  font-family: 'Lato';
+  font-size: 24px;
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  text-align: center;
+  color: #ffffff;
+}
+#footer{
+  width: 1440px;
+ height: 102px;
+ background-image: linear-gradient(108deg, #3023ae, #c96dd8);
+}
+#footer hr{
+  margin-top: 0px !important;
+  opacity: 0.15;
+
+}
+#footer li{
+  float: right;
+  list-style: none;
+list-style-type: none;
+text-decoration: none;
+display: block;
+padding: 16px;
+font-family: 'Lato';
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: right;
+  color: #ffffff; }
+
+#footer p{
+  float: left;
+  padding: 16px;
+  font-family: AvenirNext;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #ffffff;
+}
 
 
 @media (min-device-width: 768px) {
@@ -89,4 +334,168 @@ font-family: 'rock salt';
     .navbar-nav a {
       font-size: 13px !important;
     }
+}
+
+@media (max-width: 1195px){
+  #hero h1{
+    font-size: 32px;
+    font-weight: 700;
+  }
+  #hero h2{
+    font-weight: 100 !important;
+  }
+  .contact {
+    width: 50%;
+    height: 55.2px;
+    border-radius: 100px;
+    background-color: #ff6876;
+    margin-top: 25px;
+    border: none;
+    font-size: 22px;
+    font-weight: 100;
+   }
+  #hero{
+    display: flex;
+    align-items: flex-start;;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../img/Hero_BG@2x.png);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-size: contain;
+  color: white;
+  font-family: 'Lato', sans-serif !important;
+  padding-top: 100px;
+
+  }
+
+}
+@media (max-width: 833px){
+  #hero h1{
+    font-size: 25px !important;
+    font-weight: 700;
+  }
+  #hero h2{
+    font-weight: 100 !important;
+    font-size: 18px;
+  }
+  .contact {
+    width: 150px;
+    height: 45.2px;
+    border-radius: 100px;
+    background-color: #ff6876;
+    margin-top: 25px;
+    border: none;
+    font-size: 16px;
+    font-weight: 100;
+    color: white !important;
+  }
+  #hero{
+    display: flex;
+    align-items: flex-start;;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../img/Hero_BG@2x.png);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-size: contain;
+  color: white;
+  font-family: 'Lato', sans-serif !important;
+  /*padding-top: 100px;*/
+
+  }
+  #rotate{
+    font-size: 18px;
+    padding-top: 5px;
+  }
+}
+@media (max-width: 720px){
+  .aboutText{
+    font-size: 12px;
+
+  }
+  .resumePage {
+    width: 149px;
+    height: 25.2px;
+font-size: 12px;
+
+  }
+  #hero{
+    height: 200px !important;
+    margin-bottom: 32px;
+  }
+
+  .contact{
+    width: 150px !important;
+    height: 45px !important;
+    font-size: 22px !important;
+  }
+.aboutImage{
+  max-height: 50%;
+  max-width: 50%;
+  }
+  .download {
+    width: 149px;
+    height: 25.2px;
+    font-size: 12px;
+  }
+
+    .aboutText h3{
+      font-size: 20px;
+    }
+    .aboutText h2{
+      font-size: 20px;
+    }
+  #hero h1{
+    /*font-size: 28px !important;
+    font-weight: 400;*/
+    visibility: collapse;
+  }
+  #hero h2{
+    font-weight: 100 !important;
+    font-size: 18px;
+    visibility: collapse;
+
+  }
+  .contact {
+    width: 75px;
+    height: 25.2px;
+    border-radius: 100px;
+    background-color: #ff6876;
+    border: none;
+    font-size: 12px;
+    font-weight: 100;
+  }
+  #hero{
+    display: flex;
+    align-items: flex-start;;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../img/Hero_BG@2x.png);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-size: contain;
+  color: white;
+  font-family: 'Lato', sans-serif !important;
+  padding-top: 20px;
+
+  }
+  #rotate{
+    visibility: collapse;
+    font-size: 18px;
+    padding-top: 5px;
+  }
+}
+@media (max-width: 940px){
+  .resumePage{
+  }
 }
