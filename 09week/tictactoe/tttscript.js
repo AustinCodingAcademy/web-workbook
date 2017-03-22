@@ -5,6 +5,7 @@ $(function() {
 // Check to see if there's a winner
     if (checkWin()) {
       $('#announce-winner').text(playerTurn + " wins!");
+      // $('#announce-winner').text(`Player ${playerTurn} Wins!`);
     }
 // Clears the board and fades a clean board back in
     $("button").click(function() {
@@ -14,6 +15,10 @@ $(function() {
         $("div").fadeIn(1000);
         playerTurn = 'X';
       });
+      //$('#clear').click(function() {
+      //$('[data-cell], #announce-winner').text(null);
+      //playerTurn = 'X';
+
     })
 // Switches from X to O and visa versa
       if (playerTurn === 'X') {
@@ -21,6 +26,7 @@ $(function() {
       } else {
         playerTurn = 'X'
       }
+      // playerTurn = (playerTurn === 'X') ? 'O' : 'X';
   })
 // Check to see if there's a winner function
   function checkWin() {
