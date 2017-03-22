@@ -1,5 +1,4 @@
-$(
-  function() {
+$(function() {
 
   let $player = 'X';
   $('#current-turn').text($player);
@@ -89,4 +88,4 @@ $(
       }
     else {}
     }
-})
+});
