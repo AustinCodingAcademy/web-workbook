@@ -1,4 +1,11 @@
-```
 $(document).ready(function() {
-  // Put app logic here
-});
+    let $block = null;
+
+
+    $('[data-stack]').click(function) {
+      $(this).
+    }
+
+  });
+
+})
