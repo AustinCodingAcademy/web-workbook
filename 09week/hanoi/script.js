@@ -2,7 +2,7 @@ $(function() {
   // Put app logic here
   // let $ringVal = $(this).children().last();
   let $ring = 'null';
-  let $length = $(this).length;
+  let $length = $(this).children().last().length;
 
   $('[data-stack]').click(function(){
 
@@ -12,22 +12,18 @@ $(function() {
         console.log($(this).children().length);
         }
 
-      else {
+      else if ($(this).children().length === 0 || ($ring.data('block') < $(this).children().last().data('block') ))
+       {
+         $(this).append($ring);
+         $ring = 'null';
+         checkWin();
+       }
 
-        if($(this).children().length === 0 || ($ring.data('block') < $(this).children().last().data('block') )) {
-          $(this).append($ring);
-          $ring = 'null';
-        }
-        else {
+     })
 
-        }
-// || ($(this).children().last().data('block') > $ring.data('block') )
-
-      }
-      });
-
-    // else {
-    //   if($ringVal > $block || $length === 0){
-    //     $(this).append($block);
-    //   }}
-  })
+function checkWin(){
+  if ($('[data-stack="2"]').children().length === 4 || $('[data-stack="3"]').children().length===4) {
+    $('#announce-game-won').text('You\'ve Won!');
+  }
+}
+  });
