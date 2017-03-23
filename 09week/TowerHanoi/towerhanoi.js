@@ -14,7 +14,7 @@ $(function() {
     })
 
     function isLegal(stack) {
-        return $block.data("block") < $(this).children().last().data("block")
+        return $block.data("block") < $(stack).children().last().data("block")
     }
 
     function isEmpty(stack) {
