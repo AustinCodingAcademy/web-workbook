@@ -3,7 +3,7 @@
         rotaterator: function(options) {
 
             var defaults = {
-                fadeSpeed: 500,
+                fadeSpeed: 350,
                 pauseSpeed: 100,
 				child:null
             };
