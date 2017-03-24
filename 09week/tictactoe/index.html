@@ -3,9 +3,31 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tic Tac Toe</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+
+    div[data-cell] {
+      width: 100px;
+      height: 100px;
+      background-color: #f2f2f2;
+      float: left;
+      border: 1px solid #808080;
+      font-size: 100px;
+      text-align: center;
+    }
+
+    .row {
+      clear: both;
+    }
+
+    #announce-winner {
+      clear: both;
+      font-size: 50px;
+    }
+  </style>
 </head>
+
 <body>
+
   <div class="row">
     <div data-cell="0"></div>
     <div data-cell="1"></div>
@@ -24,6 +46,60 @@
   <div id="announce-winner"></div>
   <button id="clear">Clear Board</button>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./script.js"></script>
+  <script type="text/javascript">
+
+  $(document).ready(function() {
+    let playerTurn = 'X';
+    $('[data-cell]').on('click', function() {
+      $(this).text(playerTurn);
+      checkForWin();
+      if (playerTurn === 'X') {
+        playerTurn = 'O';
+      } else {
+        playerTurn = 'X';
+      }
+      // Different way of the above to toggle between X and O
+      // playerTurn = (playerTurn === 'X') ? 'O' : 'X';
+    });
+
+      function checkForWin() {
+      if(
+        ($('[data-cell="0"]').text() === playerTurn &&
+        $('[data-cell="3"]').text() === playerTurn &&
+        $('[data-cell="6"]').text() === playerTurn) ||
+        ($('[data-cell="1"]').text() === playerTurn &&
+        $('[data-cell="4"]').text() === playerTurn &&
+        $('[data-cell="7"]').text() === playerTurn) ||
+        ($('[data-cell="2"]').text() === playerTurn &&
+        $('[data-cell="5"]').text() === playerTurn &&
+        $('[data-cell="8"]').text() === playerTurn) ||
+        ($('[data-cell="0"]').text() === playerTurn &&
+        $('[data-cell="1"]').text() === playerTurn &&
+        $('[data-cell="2"]').text() === playerTurn) ||
+        ($('[data-cell="3"]').text() === playerTurn &&
+        $('[data-cell="4"]').text() === playerTurn &&
+        $('[data-cell="5"]').text() === playerTurn) ||
+        ($('[data-cell="6"]').text() === playerTurn &&
+        $('[data-cell="7"]').text() === playerTurn &&
+        $('[data-cell="8"]').text() === playerTurn) ||
+        ($('[data-cell="0"]').text() === playerTurn &&
+        $('[data-cell="4"]').text() === playerTurn &&
+        $('[data-cell="8"]').text() === playerTurn) ||
+        ($('[data-cell="2"]').text() === playerTurn &&
+        $('[data-cell="4"]').text() === playerTurn &&
+        $('[data-cell="6"]').text() === playerTurn)
+      ) {
+    $('#announce-winner').text(`Player ${playerTurn} Wins`)
+      }
+    }
+
+    $('#clear').click(function() {
+      $('[data-cell], #announce-winner').text('');
+      playerTurn = 'X';
+    });
+
+  });
+
+  </script>
 </body>
 </html>
