@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tic Tac Toe</title>
+
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+  <h1> Tic-Tac-Toe</h1>
+
+  <div class="row">
+    <div data-cell="0"></div>
+    <div data-cell="1"></div>
+    <div data-cell="2"></div>
+  </div>
+
+  <div class="row">
+    <div data-cell="3"></div>
+    <div data-cell="4"></div>
+    <div data-cell="5"></div>
+  </div>
+
+  <div class="row">
+    <div data-cell="6"></div>
+    <div data-cell="7"></div>
+    <div data-cell="8"></div>
+  </div>
+
+  <div id="announce-winner"></div>
+  <button id="clear">Clear Board</button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./script.js"></script>
+    <!--this is all my JS & JQ code-->
+  <script>
+  // All your JS will be wrapped inside of document.ready//
+  /*This allows for multiple line commenting
+  The above only allows single line commenting*/
+
+$(document).ready(function(){
+    var playerTurn = 'X';
+/*always start with '$' and '' inside the (), use brackets
+to call for attributes []*/
+
+    $('[data-cell]').on('click', function (){
+      if($(this).text()=== '') {
+      /*This if statement makes sure that you can't
+      override the first click*/
+      $(this).text(playerTurn);
+      checkForWin();
+          if(playerTurn === 'X') {
+            playerTurn = 'O';
+          } else{
+            playerTurn = 'X';
+          }
+        }
+    });
+
+function checkForWin(){
+if(
+  ($('[data-cell="0"]').text() === playerTurn &&
+  $('[data-cell="3"]').text() === playerTurn &&
+  $('[data-cell="6"]').text() === playerTurn)
+  ||
+  ($('[data-cell="1"]').text() === playerTurn &&
+  $('[data-cell="4"]').text() === playerTurn &&
+  $('[data-cell="7"]').text() === playerTurn)
+  ||
+  ($('[data-cell="2"]').text() === playerTurn &&
+  $('[data-cell="5"]').text() === playerTurn &&
+  $('[data-cell="8"]').text() === playerTurn)
+  ||
+  /*Above are all the ways to win vertically*/
+  ($('[data-cell="0"]').text() === playerTurn &&
+  $('[data-cell="1"]').text() === playerTurn &&
+  $('[data-cell="2"]').text() === playerTurn)
+  ||
+  ($('[data-cell="3"]').text() === playerTurn &&
+  $('[data-cell="4"]').text() === playerTurn &&
+  $('[data-cell="5"]').text() === playerTurn)
+  ||
+  ($('[data-cell="6"]').text() === playerTurn &&
+  $('[data-cell="7"]').text() === playerTurn &&
+  $('[data-cell="8"]').text() === playerTurn)
+  ||
+  /*Above are all the ways to win horizontally*/
+  ($('[data-cell="0"]').text() === playerTurn &&
+  $('[data-cell="4"]').text() === playerTurn &&
+  $('[data-cell="8"]').text() === playerTurn)
+  ||
+  ($('[data-cell="2"]').text() === playerTurn &&
+  $('[data-cell="4"]').text() === playerTurn &&
+  $('[data-cell="6"]').text() === playerTurn)
+
+    /*Above are all the ways to win diagonally*/
+  ){
+    $('#announce-winner').text(`Play ${playerTurn} Wins!`)
+  }
+
+}
+/*this clears out the board and resets the variable*/
+$('#clear').on('click', function(){
+  $('[data-cell], #announce-winner').text('');
+  playerTurn = 'X';
+});
+  });
+  </script>
+
+</body>
+</html>
