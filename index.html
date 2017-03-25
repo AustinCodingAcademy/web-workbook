@@ -9,22 +9,45 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <!-- <link rel="stylesheet" href="font-awesome.css" /> -->
     <title></title>
+
+      <!-- <script>
+      $(function() {
+        $("#menu").menu();
+      } );
+      </script>
+      <style>
+      .ui-menu { width: 150px; }
+      </style> -->
   </head>
   <body>
   <!--moving toward a dynamic i-frame controlled by a dropdown selector of week-options  -->
     <header class="text-center">
       <h1 class="display-2">My First Semester At ACA!!</h1>
-      <nav class="navbar nav text-center">
-      <div class="nav col-6 offset-3 text-center">
+      <nav class="navbar nav">
+      <div class="nav col-3 offset-3 text-center">
         <select id="weeknum" class="weeknum">
           <option selected>Week Number</option>
-          <option value="1">One</option>
+          <option value="">One</option>
           <option value="2">Two</option>
           <option value="3">Three</option>
         </select>
       </div>
+      <div class="col-3">
+        <ul id="menu">
+          <li><div>Games!</div></li>
+            <ul>
+              <li value="09week/tictactoe.html"><div>Tic-Tac-Toe!</div></li>
+              <li value="09week/hanoi/hanoi.html"><div>Towers Of Hanoi!</div></li>
+              <li><div>Utilities</div></li>
+            </ul>
+          </ul>
+      </div>
+
+      </div>
+
       </nav>
     </header>
 
@@ -50,24 +73,31 @@
       </div>
 
       <div class="row">
-        <div class="col-4 d-flex align-items-center">
+        <div class="col-3 d-flex align-items-center">
           <p>
             The Fundamental<br /> Concepts<br />
             Of Modern Web-Site<br />
              Layout And Design
           </p>
         </div>
-      <div class="col-8 nasa text-left">
+      <div class="col-7 nasa text-left">  <h1 class="display-4 week2">Week 2</h1>
           <!-- <img src="spaceman.jpg" class="img-fluid" /> -->
         <a href="02week/index.html"><img src="nasa-logos.jpg" class="img-thumbnail rounded-circle" /></a>
+
         </div>
       </div>
     </div>
     <div class="container-fluid main">
-      <div class="row daily">
-        <div class="text-center">
+      <div class="row daily d-flex justify-between">
+        <div class="">
           <h1 class="display-5 text-center">Week 3: Intro to FlexBox</h1>
         </div>
+        <div class="flexbox row">
+
+        <h1 class="display 2 col-1" style="font-family:roboto">FlexBox</h1>
+
+        </div>
+
       </div>
     </div>
     <!-- <div id="particles" class="justify-content-center align-content-center">
@@ -96,15 +126,17 @@
     <a href="09week/tictactoe.html">Tic Tac Toe!</a> <br />
     <a href="final/index.html">Some messing around with animation</a>
 
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <script src="jquery.particleground.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="script.js"></script>
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-  <script type="text/javascript" src="particlesJS.js"></script>
-
-  </script>
+  <script type="text/javascript" src="mainscript.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+  <!-- <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script> -->
+  <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
   </body>
 </html>
