@@ -24,7 +24,6 @@ html{
 }
 
 body{
-  /*background-color: lightgreen;*/
   margin: 0;
   width: 100%;
   /*background-image:url( "http://pre03.deviantart.net/95a7/th/pre/i/2011/050/4/9/smoke_texture_by_ashensorrow-d39w13u.jpg");*/
@@ -71,12 +70,6 @@ h1{
 nav li{
   width: auto;
 }
-
-
-/*#sausagerope{
-  width: auto;
-
-}*/
 
 #mystorysausage0{
   background-image:  url("../img/2ndsausagecornersflip.png");
@@ -339,6 +332,10 @@ nav li{
   background-position: center;
   border-top: 10px solid;
   border-color: black;
+  img.resize{
+   max-width:50%;
+   max-height:50%;
+}
 
 }
 
@@ -354,7 +351,7 @@ nav li{
 }
 
 /*---------------END OF DELS SECTION---------------------*/
-/*START OF IRON MAIDEN SECTION!*/
+/*START OF TIC TAC TOE SECTION!*/
 
 #tic{
   background-image: url("https://media.timeout.com/images/101578335/image.jpg");
@@ -383,12 +380,12 @@ nav li{
   font-size: 66px;
 }
 
-/*END OF IRON MAIDEN SECTION*/
+/*END OF TIC TAC TOE SECTION*/
 
 /*START OF CONTACT SECTION!*/
 
 #contact{
-  background-color: #888888;
+  background-color: black;
   /*background-image: url(");*/
   height: 200px;
   background-repeat: no-repeat;
@@ -398,6 +395,14 @@ nav li{
   border-color: black;
 }
 
+#contact1{
+  padding-left: 20%;
+  font-size: 40px;
+}
+#contact2{
+  padding-left: 50%;
+  margin-top: -1%;
+}
 
 #contactpage h2{
   text-align: center;
@@ -408,12 +413,14 @@ nav li{
 /*END OF IRON MAIDEN SECTION*/
 
 
-
+#contact{
+}
 
 /*--------------------START OF MEDIA QUERIES*/
 
 @media all and (max-width: 1500px) {
 
+  }
   #abouttitlespic{
     padding-left: 389px;
     padding-bottom: 1.25%;
@@ -586,10 +593,16 @@ nav li{
       margin: 0px;
     }
     /*START OF ABOUT MQ*/
+    #about h4{
+      font-family: cursive !important;
+    }
+    #about h1{
+      font-family: cursive !important;
+    }
       .aboutheader h1{
         font-size: 70px;
-        padding-top: 5%;
-        padding-bottom: 4%;
+        padding-top: 6%;
+        padding-bottom: 6%;
       }
       #abouttitlespic{
         padding-left: 370px;
@@ -599,6 +612,33 @@ nav li{
         animation-iteration-count: infinite;
         margin-top: -11%;
         opacity: 70%;
+      }
+/*START OF DELS SECTION MP*/
+      #dels{
+        background-image: url("http://free4kwallpaper.com/wp-content/uploads/2016/01/New-England-Beach-4K-Sunset-Wallpaper.jpg");
+        height: 700px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-top: 10px solid;
+        border-color: black;
+        img.resize{
+         max-width:50%;
+         max-height:50%;
+      }
+
+      }
+
+      #delspage img{
+        margin-left: 10%;
+        margin-right:10%;
+        margin-top: 10%;
+        /*animation-duration: 5s;*/
+
+      }
+
+      #delspage h2{
+        text-align: center;
       }
 
 }
@@ -707,7 +747,34 @@ nav li{
 
 }
 
-/*START OF WINERY SECTION*/
+/*START OF TIC TAC TOE SECTION MQ*/
+
+#tic{
+  background-image: url("https://media.timeout.com/images/101578335/image.jpg");
+  height: 650px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top: 10px solid;
+  border-color: black;
+}
+
+
+#ticpage h2{
+  text-align: center;
+  font-size: 54px;
+  color: red;
+  margin-top: 37%;
+  font-family: 'Italianno', cursive;
+}
+#ticpage h4{
+  text-align: center;
+  font-size: 32px;
+  color: red;
+  font-family: 'Italianno', cursive;
+}
+
+/*START OF WINERY SECTION MQ*/
   #winery{
     background-image: url("../img/wine-bg.jpg");
     height: 500px;
