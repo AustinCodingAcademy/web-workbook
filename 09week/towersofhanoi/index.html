@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Towers of Hanoi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div data-stack="1">
+    <div data-block="100"></div>
+    <div data-block="75"></div>
+    <div data-block="50"></div>
+    <div data-block="25"></div>
+  </div>
+  <div data-stack="2">
+  </div>
+  <div data-stack="3">
+  </div>
+  <div id="announce-game-won"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- <script type="text/javascript" src="script.js"></script> -->
+</body>
+</html>
+
+<script>
+
+$(document).ready(function() {
+  let $block = null;
+$('[data-stack]').click(function () {
+  let stack = this;
+  if (!$block) {
+    $block = $(stack).children().last().detach();
+  } else if (isLegal(stack) || isEmpty(stack)) {
+    $(stack).append($block);
+    $block = null;
+    if (checkForWin()) {
+      $('#announce-game-won').text('You Win!');
+    }
+   }
+});
+
+function isLegal(stack) {
+  return $block.data('block') < $(stack).children().last().data('block')
+}
+
+function isEmpty(stack) {
+  return $(stack).children().length === 0;
+}
+
+function checkForWin() {
+  return $('[data-stack="2"]').children().length === 4 ||
+  $('[data-stack="3"]').children().length === 4;
+}
+});
+//
+//
+// //     if ($block.data("block") < $(this).children().last().data("block") || ($(this).children().length === 0)) {
+// //       $(this).append($block);
+// //       $block = null;
+// //       if (checkForWin()) {
+// //         $('#announce-game-won').text('You Win!');
+// //     }
+// //   }
+// // }
+// function checkForWin () {
+//   return $('[data-stack="2"]').children().length === 4 ||
+//     $('[data-stack="3"]').children().length === 4;
+// };
+//
+//
+
+</script>
