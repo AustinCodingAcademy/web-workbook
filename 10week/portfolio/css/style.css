@@ -223,7 +223,7 @@ nav li{
   height: 800px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: left;
   color: white;
   border-top: 10px solid;
   border-color: black;
@@ -412,10 +412,25 @@ nav li{
 
 /*--------------------START OF MEDIA QUERIES*/
 
+@media all and (max-width: 1500px) {
+
+  #abouttitlespic{
+    padding-left: 389px;
+    padding-bottom: 1.25%;
+    animation-delay: 3.25s;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    margin-top: -11%;
+    opacity: 70%;
+  }
+
+}
+
+
 @media all and (max-width: 1420px) {
 
   #abouttitlespic{
-    padding-left: 31.5%;
+    padding-left: 380px;
     padding-bottom: 1%;
     animation-delay: 3.25s;
     animation-duration: 7s;
@@ -437,159 +452,27 @@ nav li{
     margin: 0px;
   }
 
-/*ABOUT SECTION BEGINS*/
-  #abouttitlespic{
-    padding-left: 31.5%;
-    padding-bottom: 1%;
-    animation-delay: 3.25s;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    margin-top: -11%;
-    opacity: 70%;
-  }
-
 }
-@media all and (max-width: 1250px) {
 
-  #abouttitlespic{
-    padding-left: 31%;
-    padding-bottom: 1%;
-    animation-delay: 3.25s;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    margin-top: -11%;
-    opacity: 70%;
-  }
 
-}
-@media all and (max-width: 1225px) {
 
-  #abouttitlespic{
-    padding-left: 30.5%;
-    padding-bottom: 1%;
-    animation-delay: 3.25s;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    margin-top: -11%;
-    opacity: 70%;
-  }
-
-}
-@media all and (max-width: 1200px) {
-
-  #abouttitlespic{
-    padding-left: 30%;
-    padding-bottom: 1%;
-    animation-delay: 3.25s;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    margin-top: -11%;
-    opacity: 70%;
-  }
-
-}
-@media all and (max-width: 1175px) {
-
-  #abouttitlespic{
-    padding-left: 29.5%;
-    padding-bottom: 1%;
-    animation-delay: 3.25s;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    margin-top: -11%;
-    opacity: 70%;
-  }
-
-}
-@media all and (max-width: 1150px) {
-
-  #abouttitlespic{
-    padding-left: 29.25%;
-    padding-bottom: 1%;
-    animation-delay: 3.25s;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    margin-top: -11%;
-    opacity: 70%;
-  }
-
-}
-@media all and (max-width: 1125px) {
-
-  #abouttitlespic{
-    padding-left: 28.75%;
-    padding-bottom: 1%;
-    animation-delay: 3.25s;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    margin-top: -11%;
-    opacity: 70%;
-  }
-
-}
-@media all and (max-width: 1100px) {
-
-  #abouttitlespic{
-    padding-left: 28.25%;
-    padding-bottom: 1%;
-    animation-delay: 3.25s;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    margin-top: -11%;
-    opacity: 70%;
-  }
-
-}
-@media all and (max-width: 1075px) {
-
-  #abouttitlespic{
-    padding-left: 28%;
-    padding-bottom: 1%;
-    animation-delay: 3.25s;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    margin-top: -11%;
-    opacity: 70%;
-  }
-
-}
-@media all and (max-width: 1050px) {
-
-  #abouttitlespic{
-    padding-left: 27.75%;
-    padding-bottom: 1%;
-    animation-delay: 3.25s;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    margin-top: -11%;
-    opacity: 70%;
-  }
-
-}
-@media all and (max-width: 1025px) {
-
-  #abouttitlespic{
-    padding-left: 26.75%;
-    padding-bottom: 1%;
-    animation-delay: 3.25s;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    margin-top: -11%;
-    opacity: 70%;
-  }
-
-}
 
 
 @media all and (max-width: 990px) {
 
   main{
-    /*background-color: lightgreen;*/
     margin-left: 0%;
     margin-right:0%;
     width: 100%;
   }
 
+/*START OF ABOUT MQ*/
+  .aboutheader h1{
+    font-size: 70px;
+  }
+
+
+/*START OF TIC TAC TOE MQ*/
   #ticinhead{
 
         position: absolute;
@@ -600,7 +483,7 @@ nav li{
     margin: 0px;
   }
 
-
+/*START OF WINERY MQ*/
   #winery{
     background-image: url("../img/wine-bg.jpg");
     height: 800px;
@@ -702,7 +585,21 @@ nav li{
       padding: 0;
       margin: 0px;
     }
-
+    /*START OF ABOUT MQ*/
+      .aboutheader h1{
+        font-size: 70px;
+        padding-top: 5%;
+        padding-bottom: 4%;
+      }
+      #abouttitlespic{
+        padding-left: 370px;
+        padding-bottom: 1%;
+        animation-delay: 3.25s;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        margin-top: -11%;
+        opacity: 70%;
+      }
 
 }
 @media all and (max-width: 620px) {
@@ -770,6 +667,45 @@ nav li{
       padding: 0;
       margin: 0px;
     }
+/*START OF ABOUT SECTION*/
+#about{
+  background-image: url("../img/dramaticme.jpg");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  border-top: 10px solid;
+  border-color: black;
+}
+
+#abouttitlespic{
+  padding-left: 135px;
+  padding-bottom: 1%;
+  animation-delay: 3.25s;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  visibility: hidden;
+}
+
+#smokeydescription{
+  padding-top: 0%;
+}
+#smokeydescription h4{
+ font-family: smokeyFont;
+ font-size: 18px;
+}
+
+#aboutbio{
+  margin-top: -225px;
+}
+#aboutresume{
+  /*margin-top: -200px;*/
+}
+.aboutheader h1{
+  font-size: 26px;
+
+}
 
 /*START OF WINERY SECTION*/
   #winery{
