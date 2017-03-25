@@ -1,91 +1,89 @@
 $(
   function() {
 
-  let $player = 'X';
-  $('#current-turn').text($player);
+  let playerTurn = 'X';
+  $('#current-turn').text(playerTurn);
 
   $('[data-cell]').click(function() {
-    $(this).text($player);
-    if ($player === 'X') {
+    $(this).text(playerTurn);
+    if (playerTurn === 'X') {
       checkWin();
-      $player = 'O';
-      $('#current-turn').text($player);
+      playerTurn = 'O';
+      $('#current-turn').text(playerTurn);
     } else {
       checkWin();
-      $player = 'X';
-      $('#current-turn').text($player);
+      playerTurn = 'X';
+      $('#current-turn').text(playerTurn);
     }
   })
-
   $('#clear').click(function() {
     $('[data-cell]').text(null);
     $('#announce-winner').text(null);
   })
-
   function checkWin() {
     if (
-      $('[data-cell="0"]').text() === $player &&
-      $('[data-cell="1"]').text() === $player &&
-      $('[data-cell="2"]').text() === $player
+      $('[data-cell="0"]').text() === playerTurn &&
+      $('[data-cell="1"]').text() === playerTurn &&
+      $('[data-cell="2"]').text() === playerTurn
     )
       {
-        $('#announce-winner').text($player + ' wins!');
+        $('#announce-winner').text(playerTurn + ' wins!');
       }
     else if (
-      $('[data-cell="3"]').text() === $player &&
-      $('[data-cell="4"]').text() === $player &&
-      $('[data-cell="5"]').text() === $player
+      $('[data-cell="3"]').text() === playerTurn &&
+      $('[data-cell="4"]').text() === playerTurn &&
+      $('[data-cell="5"]').text() === playerTurn
     )
       {
-        $('#announce-winner').text($player + ' wins!');
+        $('#announce-winner').text(playerTurn + ' wins!');
       }
     else if (
-      $('[data-cell="6"]').text() === $player &&
-      $('[data-cell="7"]').text() === $player &&
-      $('[data-cell="8"]').text() === $player
+      $('[data-cell="6"]').text() === playerTurn &&
+      $('[data-cell="7"]').text() === playerTurn &&
+      $('[data-cell="8"]').text() === playerTurn
     )
       {
-        $('#announce-winner').text($player + ' wins!');
+        $('#announce-winner').text(playerTurn + ' wins!');
       }
     else if (
-      $('[data-cell="0"]').text() === $player &&
-      $('[data-cell="3"]').text() === $player &&
-      $('[data-cell="6"]').text() === $player
+      $('[data-cell="0"]').text() === playerTurn &&
+      $('[data-cell="3"]').text() === playerTurn &&
+      $('[data-cell="6"]').text() === playerTurn
     )
       {
-        $('#announce-winner').text($player + ' wins!');
+        $('#announce-winner').text(playerTurn + ' wins!');
       }
     else if (
-      $('[data-cell="1"]').text() === $player &&
-      $('[data-cell="4"]').text() === $player &&
-      $('[data-cell="7"]').text() === $player
+      $('[data-cell="1"]').text() === playerTurn &&
+      $('[data-cell="4"]').text() === playerTurn &&
+      $('[data-cell="7"]').text() === playerTurn
     )
       {
-        $('#announce-winner').text($player + ' wins!');
+        $('#announce-winner').text(playerTurn + ' wins!');
       }
     else if (
-      $('[data-cell="2"]').text() === $player &&
-      $('[data-cell="5"]').text() === $player &&
-      $('[data-cell="8"]').text() === $player
+      $('[data-cell="2"]').text() === playerTurn &&
+      $('[data-cell="5"]').text() === playerTurn &&
+      $('[data-cell="8"]').text() === playerTurn
     )
       {
-        $('#announce-winner').text($player + ' wins!');
+        $('#announce-winner').text(playerTurn + ' wins!');
       }
     else if (
-      $('[data-cell="0"]').text() === $player &&
-      $('[data-cell="4"]').text() === $player &&
-      $('[data-cell="8"]').text() === $player
+      $('[data-cell="0"]').text() === playerTurn &&
+      $('[data-cell="4"]').text() === playerTurn &&
+      $('[data-cell="8"]').text() === playerTurn
     )
       {
-        $('#announce-winner').text($player + ' wins!');
+        $('#announce-winner').text(playerTurn + ' wins!');
       }
     else if (
-      $('[data-cell="2"]').text() === $player &&
-      $('[data-cell="4"]').text() === $player &&
-      $('[data-cell="6"]').text() === $player
+      $('[data-cell="2"]').text() === playerTurn &&
+      $('[data-cell="4"]').text() === playerTurn &&
+      $('[data-cell="6"]').text() === playerTurn
     )
       {
-        $('#announce-winner').text($player + ' wins!');
+        $('#announce-winner').text(playerTurn + ' wins!');
       }
     else {}
     }

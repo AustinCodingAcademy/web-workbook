@@ -1,0 +1,74 @@
+html,body{
+  height:100%
+}
+
+body {
+  display: flex;
+  background-image: url("../imgs/wall.jpg");
+  background-size: cover;
+  margin: 0
+  /*background-color: black;*/
+}
+
+.logo {
+  text-align: center;
+  width: 90%;
+  height: 200px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.logo b{
+  font: 100 25vh "Classic Roman";
+  color: #fee;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+}
+
+.logo b span{
+  animation: blink linear infinite 8s;
+}
+
+
+@keyframes blink {
+
+  79%{
+     color: black;
+  }
+
+  80% {
+    text-shadow: none;
+  }
+
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+
+  82% {
+    color: #black;
+    text-shadow: none;
+  }
+
+  99% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+
+  92% {
+    color: black;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  99% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+
+}

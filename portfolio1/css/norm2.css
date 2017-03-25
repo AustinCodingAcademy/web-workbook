@@ -135,7 +135,7 @@ a:focus {
   height: auto;
   padding: 100px 0;
   text-align: center;
-  color: white;
+  color: #white;
   background: url(../img/wenda_and_cow.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: contain;
@@ -241,38 +241,15 @@ a:focus {
   }
 }
 
+.content-section {
+  padding-top: 100px;
+}
+
 .portfolio-section {
   width: 100%;
   padding: 50px 0;
   color: black;
   background: url(../img/norman-parkinson.jpg) no-repeat center center scroll;
-  background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-mailto {
-  color: white;
-}
-
-a {
-  color: #3E3E3E;
-}
-
-.sidebar_content .mail a {
-  color: white;
-}
-
-#horse {
-  display: table;
-  width: 100%;
-  height: auto;
-  padding: 300px 0;
-  text-align: center;
-  color: white;
-  background: url(../img/ostrich1.jpg) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: contain;
   -moz-background-size: contain;
@@ -280,13 +257,42 @@ a {
   -o-background-size: contain;
 }
 
+#mailto {
+  color: white;
+}
+
+a {
+  color: #4B4D4A;
+}
+
+.sidebar_content .mail a {
+  color: white;
+}
+
+#past {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+  color: black;
+  background: url(../img/ostrich1.jpg) no-repeat center center scroll;
+  background-color: black;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  -o-background-size: contain;
+}
 
 @media (min-width: 767px) {
   .content-section {
     padding-top: 250px;
   }
   .portfolio-section {
-    padding-top: -100px 0;
+    padding: 100px 0;
+  }
+  #past {
+    height: 600px;
+    margin-top: 50px;
   }
 }
 
@@ -318,7 +324,7 @@ ul.banner-social-buttons {
   margin-top: 0;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1199px) {
   ul.banner-social-buttons {
     margin-top: 15px;
   }
@@ -365,27 +371,4 @@ img::-moz-selection {
 
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
-}
-
-
-img {
-  /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 1024px;
-
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
-  img {
-    left: 50%;
-    margin-left: -512px;   /* 50% */
-  }
 }
