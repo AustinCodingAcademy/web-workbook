@@ -1,7 +1,9 @@
-/*text styling*/
 body {
-  font-family: "brandon-grotesque";
+    font-family: 'Muli', Helvetica, Arial, sans-serif;
 }
+
+
+/*This is the styling for the nav*/
 
 li a {
     color: black !important;
@@ -11,46 +13,200 @@ li a {
     font-weight: bold;
 }
 
-h1 {
-  margin-left: 60px;
+h6 {
+  font-family: 'Muli', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-weight: bold;
+  margin-top: 8px;
 }
 
 .navbar {
     width: 100%;
-    height: 55px;
-    background-color: rgba(0, 0, 0, 0) !important;
+    height: 110px;
+    background-color: rgba(255, 255, 255, 0) !important;
+    /*background-color: aquamarine !important;*/
     position: fixed;
     border: 0;
-    border-radius: none;
+    border-radius: 0;
     z-index: 9999;
 }
 
 .navbar-brand {
-  font-size: 36px;
-  color: black !important;
-  line-height: 30px;
-  text-align: center;
-  margin-top: 20px;
-  margin-left: 60px !important;
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 32px;
+    color: black !important;
+    line-height: 26px;
+    text-align: center;
+    margin-left: 30px !important;
+    margin-top: 10px;
 }
 
 .navbar-nav {
-  margin-right: 60px !important;
-  margin-top: 35px;
+    margin-right: 60px !important;
+    margin-top: 35px;
 }
 
-.left-hero {
+
+/*.left-hero {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
   height: 100vh;
-  background-color: aquamarine;
+  background-color: white;
+  flex-flow: column;
 }
 
 .right-hero {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 100vh;
-  background-color: #62e8b8;
+  background-color: black;
+  flex-flow: column;
 }
+
+.hero-text-right {
+  color: white;
+}
+
+.left-hero-pure {
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 70px;
+  text-align: center;
+  background-color: aquamarine;
+  margin-right: -15px;
+  width: 200px;
+  height: 100px;
+  padding-top: 6px;
+}
+
+.right-hero-good {
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 70px;
+  text-align: center;
+  background-color: aquamarine;
+  margin-left: -15px;
+  width: 210px;
+  height: 100px;
+  padding-top: 6px;
+}*/
+
+/*This is the stlyling for the hero*/
+
+#hero {
+    /*background-image: linear-gradient(to bottom, #232323, #232323 50%, black 50%, black);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    /*flex-flow: column;*/
+}
+
+.hero-text-container {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  /*flex-flow: column;*/
+}
+
+.hero-half-text {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /*margin-bottom: 150px;*/
+  flex-flow: column;
+  height: 400px;
+}
+
+h2 {
+    /*font-weight: bold;*/
+    background-color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: white;
+    padding: 5px;
+}
+
+.hero-row {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.hero-white-text {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.pure-good {
+  background-color: aquamarine;
+  padding: 8px 30px 15px 30px;
+}
+
+h1 {
+  font-size: 75px;
+  text-align: center;
+  font-family: 'Permanent Marker', sans-serif;
+  color: black;
+}
+
+/*this is the styling for the About section*/
+
+
+#about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  max-width: 100%;
+}
+
+.about-us-text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 780px;
+  height: 500px;
+  flex-flow: column wrap;
+}
+
+h3 {
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+}
+
+/*media queries*/
+@media (max-width: 767px) {
+    .hero-half-text {
+        height: 320px;
+    }
+
+    .about-us {
+      margin: 20px;
+    }
+
+  }
+
+
+@media (max-width: 846px) {
+    h1 {
+      font-size: 65px;
+    }
+
+  }
