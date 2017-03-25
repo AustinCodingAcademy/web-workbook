@@ -1,34 +1,85 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="style.css" type="text/css" rel="stylesheet">
     <title>Maggie</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   </head>
+
   <body>
-    <div class="parallax"></div>
-    <h1>Maggie's Web Workbook</h1>
-    <img id="pic" src="maggie.jpg"/>
-    <nav>
-      <a href="01week/bio/">About Me</a>
-      <a href="01week/resume/">Resume</a>
-      <a href="https://mymonstermaggie.github.io/team3/">Learning Group 3</a>
-      <a href="04week/checkpoint/">Checkpoint 1</a>
-      <a href="07week/Checkpoint2/">Checkpoint 2</a>
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-transparent">
+      <a class="navbar-brand text-center" href="#">Maggie's Workbook</a>
+      <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#open">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="open">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="about" data-toggle="dropdown">
+              ABOUT
+            </a>
+            <div class="dropdown-menu" aria-labelledby="about">
+              <a class="dropdown-item" href="01week/bio/">Bio</a>
+              <a class="dropdown-item" href="01week/resume/">Resume</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="team" data-toggle="dropdown">
+              TEAM
+            </a>
+            <div class="dropdown-menu" aria-labelledby="team">
+              <a class="dropdown-item" href="https://mymonstermaggie.github.io/team3/">Team Page</a>
+              <a class="dropdown-item" href="https://mymonstermaggie.github.io/hhstheatre/">HHS Theatre</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="checkpoints" data-toggle="dropdown">
+              CHECKPOINTS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="checkpoints">
+              <a class="dropdown-item" href="04week/checkpoint/">One</a>
+              <a class="dropdown-item" href="07week/Checkpoint2/">Two</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="htmlcss" data-toggle="dropdown">
+              HTML/CSS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="htmlcss">
+              <a class="dropdown-item" href="02week/nasa/">Nasa</a>
+              <a class="dropdown-item" href="03week/dailyplanet/">Daily Planet</a>
+              <a class="dropdown-item" href="03week/news/">Flex News</a>
+              <a class="dropdown-item" href="04week/media/">Media Queries</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="boot" data-toggle="dropdown">
+              BOOTSTRAP
+            </a>
+            <div class="dropdown-menu" aria-labelledby="boot">
+              <a class="dropdown-item" href="05week/BootstrapGrid/">Bootstrap Grid</a>
+              <a class="dropdown-item" href="05week/bsresponsiveutility/">Bootstrap Responsive Utility</a>
+              <a class="dropdown-item" href="06week/bsnav/">Bootstrap Components</a>
+              <a class="dropdown-item" href="06week/forms/">Forms</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="javascript" data-toggle="dropdown">
+              JAVASCRIPT
+            </a>
+            <div class="dropdown-menu" aria-labelledby="javascript">
+              <a class="dropdown-item" href="08week/fizzbuzz/">Fizz Buzz</a>
+              <a class="dropdown-item" href="08week/ageverify/">Age Verify</a>
+              <a class="dropdown-item" href="08week/tictactoe/">Tic Tac Toe</a>
+              <a class="dropdown-item" href="09week/towers/">Towers of Hanoi</a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <div class="hw">
-      <h3>Daily Projects</h3>
-      <a href="02week/nasa/">Nasa</a>
-      <a href="03week/dailyplanet/">Daily Planet</a>
-      <a href="03week/news/">Flex News</a>
-      <a href="04week/media/">Media Queries</a>
-      <a href="05week/BootstrapGrid/">Bootstrap Grid</a>
-      <a href="05week/bsresponsiveutility/">Bootstrap Responsive Utility</a>
-      <a href="06week/bsnav/">Bootstrap Components</a>
-      <a href="06week/forms/">Forms</a>
-      <a href="08week/fizzbuzz/">Fizz Buzz</a>
-      <a href="08week/ageverify/">Age Verify</a>
-      <a href="08week/tictactoe/">Tic Tac Toe</a>
-      <a href="09week/towers/">Towers of Hanoi</a>
-    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
 </html>
