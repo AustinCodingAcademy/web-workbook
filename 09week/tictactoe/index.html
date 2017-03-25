@@ -6,6 +6,10 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <h1 id="typewriter">
+    <!-- <span id="typewriter-prefix"> </span>
+    <span id="typewriter-text">Shall we play a game?</span> -->
+  </h1>
   <div class="row">
     <div data-cell="0"></div>
     <div data-cell="1"></div>
@@ -22,68 +26,23 @@
     <div data-cell="8"></div>
   </div>
   <div id="announce-winner"></div>
-  <button id="clear">Clear Board</button>
+  <br>
+  <button id="clear">PLAY AGAIN</button>
+
+  <!-- <audio autoplay src="misc/Shall-we-play-a-game.mp3"></audio> -->
+  <audio src="">
+
+  </audio>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <!-- <script>
-  $(document).ready(function(){
-    var playerTurn = "X";
-    $('[data-cell]').on('click', function(){
-      if($(this).text()=== '') {
-        $(this).text(playerTurn);
-        checkForWin();
-        if(playerTurn === 'X') {
-          playerTurn = 'O';
-        } else {
-          playerTurn = 'X';
-        }
-      }
-      //clear the board and reset playerTurn
-      $('#clear').on('click', function(){
-        $('[data-cell], #announce-winner').text('');
-        playerTurn = 'X';
-      });
 
-    });
+  <script
+    src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+    crossorigin="anonymous"></script>
 
-    function checkForWin() {
-      if(
-        ($('[data-cell="0"]').text() === playerTurn &&
-        $('[data-cell="3"]').text() === playerTurn &&
-        $('[data-cell="6"]').text() === playerTurn)
-        ||
-        ($('[data-cell="1"]').text() === playerTurn &&
-        $('[data-cell="4"]').text() === playerTurn &&
-        $('[data-cell="7"]').text() === playerTurn)
-        ||
-        ($('[data-cell="2"]').text() === playerTurn &&
-        $('[data-cell="5"]').text() === playerTurn &&
-        $('[data-cell="8"]').text() === playerTurn)
-        ||
-        ($('[data-cell="0"]').text() === playerTurn &&
-        $('[data-cell="1"]').text() === playerTurn &&
-        $('[data-cell="2"]').text() === playerTurn)
-        ||
-        ($('[data-cell="3"]').text() === playerTurn &&
-        $('[data-cell="4"]').text() === playerTurn &&
-        $('[data-cell="5"]').text() === playerTurn)
-        ||
-        ($('[data-cell="6"]').text() === playerTurn &&
-        $('[data-cell="7"]').text() === playerTurn &&
-        $('[data-cell="8"]').text() === playerTurn)
-        ||
-        ($('[data-cell="0"]').text() === playerTurn &&
-        $('[data-cell="4"]').text() === playerTurn &&
-        $('[data-cell="8"]').text() === playerTurn)
-        ||
-        ($('[data-cell="2"]').text() === playerTurn &&
-        $('[data-cell="4"]').text() === playerTurn &&
-        $('[data-cell="6"]').text() === playerTurn)
-      ) {
-        $('#announce-winner').text(`Player ${playerTurn} Wins!`)
-      }
-    }
-  });
-      </script> -->
+  <script src="js/jquery.typewriter.js"></script>
+
   <script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>
