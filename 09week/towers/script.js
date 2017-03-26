@@ -2,7 +2,7 @@ $(document).ready(function() {
     let $block = null;
     $('[data-stack]').click(function() {
         let stack = this;
-        if (!block) {
+        if (!$block) {
             $block = $(stack).children().last().detach();
         } else if (isLegal(stack) || isEmpty(stack)) {
           $(stack).append($block);
@@ -23,7 +23,7 @@ $(document).ready(function() {
 
     function checkForWin() {
       return $('[data-stack="2"]').children().length === 4 ||
-        $('[data-stack="3"]'),children().length === 4;
+        $('[data-stack="3"]').children().length === 4;
     }
 });
 
