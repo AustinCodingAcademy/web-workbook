@@ -25,12 +25,13 @@ h6 {
 .navbar {
     width: 100%;
     height: 110px;
-    background-color: rgba(255, 255, 255, 0) !important;
+    background-color: transparent;
     /*background-color: aquamarine !important;*/
     position: fixed;
     border: 0;
     border-radius: 0;
     z-index: 9999;
+    transition: 1s;
 }
 
 .navbar-brand {
@@ -163,20 +164,22 @@ h1 {
 
 
 #about-us {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: aquamarine;
   max-width: 100%;
 }
+
 
 .about-us-text {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  max-width: 780px;
-  height: 500px;
+  height: 840px;
   flex-flow: column wrap;
+}
+
+.about-us-text p, h3 {
+  max-width: 90%;
+  margin-left: 25px;
 }
 
 h3 {
@@ -191,14 +194,171 @@ p {
   text-align: left;
 }
 
+.photos {
+  padding: 0;
+}
+
+.about-us-left {
+  background-image: url('../img/melissa.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: grayscale(100%);
+  height: 420px;
+  width: 100%;
+}
+
+.about-us-right {
+  background-image: url('../img/james.jpg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.5);
+  filter: grayscale(100%);
+  height: 420px;
+  width: 100%;
+}
+
+
+/*our work section*/
+
+#our-work {
+  margin-top: 100px;
+  width: 90%;
+  min-height: 900px;
+}
+
+.our-work-header {
+  text-align: center;
+  margin-bottom: 80px;
+  padding-left: 80px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 300px;
+  margin-bottom: 30px;
+
+}
+
+#new-main {
+  background-image: url('../img/new-main.jpg');
+}
+
+#foundry {
+  background-image: url('../img/new-main.jpg');
+}
+
+#sidedoor {
+  background-image: url('../img/new-main.jpg');
+}
+
+#party-pulse {
+  background-image: url('../img/new-main.jpg');
+}
+
+#caps {
+  background-image: url('../img/new-main.jpg');
+}
+
+#other {
+  background-image: url('../img/new-main.jpg');
+}
+
+
+/*hire us section*/
+
+#hire-us {
+  min-height: 700px;
+  background-color: #fafafa;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-together {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 480px;
+  flex-flow: column;
+}
+
+.work-together p, h3 {
+  max-width: 90%;
+  margin-left: 25px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 75px;
+}
+
+.name-email-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-email-form input {
+  width: 280px;
+  height: 70px;
+  border: 0;
+  border-bottom: 1px solid black;
+  margin-right: 20px;
+  background-color: transparent;
+}
+
+.message-form input {
+  width: 580px;
+  height: 300px;
+  border: 0;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+}
+
+.button input {
+  width: 200px;
+  height: 60px;
+  background-color: aquamarine;
+  border: 0;
+  margin-top: 20px;
+  font-family: 'Permanent Marker', sans-serif;
+  font-size: 22px;
+}
+
+
+
+
+
 /*media queries*/
 @media (max-width: 767px) {
     .hero-half-text {
         height: 320px;
     }
 
-    .about-us {
-      margin: 20px;
+    .about-us-text {
+      height: 600px;
     }
 
   }
