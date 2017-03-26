@@ -8,12 +8,12 @@ div.game {
 }
 
 div[data-cell] {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-color: #0BADA5;
   float: left;
   border: 1px solid #033330;
-  font-size: 50px;
+  font-size: 75px;
   text-align: center;
   line-height: 2;
 }
@@ -23,7 +23,6 @@ div[data-cell] {
 }
 
 button {
-  margin-top: 20px;
   padding: 10px;
   font-size: 20px;
   border: 1px solid #033330;
@@ -32,5 +31,21 @@ button {
 #announce-winner {
   clear: both;
   font-size: 25px;
-  padding-top: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div[data-cell] {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  div[data-cell] {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+  }
+
 }
