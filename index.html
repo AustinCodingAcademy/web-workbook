@@ -13,14 +13,6 @@
     <!-- <link rel="stylesheet" href="font-awesome.css" /> -->
     <title></title>
 
-      <!-- <script>
-      $(function() {
-        $("#menu").menu();
-      } );
-      </script>
-      <style>
-      .ui-menu { width: 150px; }
-      </style> -->
   </head>
   <body>
   <!--moving toward a dynamic i-frame controlled by a dropdown selector of week-options  -->
@@ -52,7 +44,7 @@
     </header>
 
     <!--Week Selection Menu  -->
-    <div class="container-fluid main img-fluid">
+    <div class="container-fluid main img-fluid first">
       <div class="row">
         <div class="col-5 offset-1">
           <h1 class="display-3 inline-block" style="border-bottom: 2px solid black;">Week 1:</h1>
@@ -80,39 +72,45 @@
              Layout And Design
           </p>
         </div>
-      <div class="col-7 nasa text-left">  <h1 class="display-4 week2">Week 2</h1>
-          <!-- <img src="spaceman.jpg" class="img-fluid" /> -->
-        <a href="02week/index.html"><img src="nasa-logos.jpg" class="img-thumbnail rounded-circle" /></a>
-
+        <div class="col-7 nasa text-left">
+            <!-- <img src="spaceman.jpg" class="img-fluid" /> -->
+          <a href="02week/index.html"><img src="nasa-logos.jpg" class="img-thumbnail rounded-circle" /></a>
+        </div>
+        <div class="d-flex align-items-center">
+          <h1 class="display-4 week2 text-center">Week 2</h1>
+        </div>
         </div>
       </div>
-    </div>
-    <div class="container-fluid main">
-      <div class="row daily d-flex justify-between">
-        <div class="">
-          <h1 class="display-5 text-center">Week 3: Intro to FlexBox</h1>
-        </div>
-        <div class="flexbox row">
 
-        <h1 class="display 2 col-1" style="font-family:roboto">FlexBox</h1>
+      <div class="container-fluid">
+        <div class="row d-flex flex-wrap justify-content-around" style="background: linear-gradient(180deg, blue, white);">
+          <div class="tribox flexleft">
+            <h1 class="display-3">Week 3:</h1>
+            </div>
+          <div class="tribox flexmiddle">
+            <h1 class="display-5 text-center"> Introduction To Flexbox</h1>
+            </div>
+          <div class="tribox flexright">
+            <h1 class="display 2" style="font-family:roboto">Without</h1>
+            <div class="daily">
+              <a href="03week/index.html"><img src="dailyplanet.jpg" alt=""></a></br/>
+            </div>
+            <div>
+              <h1 class="display 2" style="font-family:roboto">With</h1>
+              <a href="03week/flexgrid/index.html"><img src="dailyplanet.jpg" class="breathing" alt=""></a>
+            </div>
+          </div>
+          </div>
 
-        </div>
 
       </div>
-    </div>
-    <!-- <div id="particles" class="justify-content-center align-content-center">
-<div>
-<! particles.js container  <div id="particles-js"></div>
-  stats - count particles  <div class="count-particles">
-  <span class="js-count-particles"></span> particles
-</div> <! particles.js lib - https://github.com/VincentGarreau/particles.js
-</div> -->
 
 
-    </div>
-    <a href="01week/resume/index.html">Resume</a><br />
+
+
+    <!-- <a href="01week/resume/index.html">Resume</a><br />
     <a href="01week/bio/bioindex.html">Bio Page</a><br/>
-    <a href="02week/index.html">Nasa site</a><br/>
+    <a href="02week/index.html">Nasa site</a><br/> -->
     <a href="03week/index.html">Daily Planet</a></br/>
     <a href="03week/flexgrid/index.html">Flexing Daily Flexing Planet Flexing</a></br/>
     <a href="04week/index.html">CHECKPOINT</a> <br />
@@ -128,7 +126,8 @@
 
   <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
 
-
+  <script type="text/javascript" src="../jquery.particleground.js"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
