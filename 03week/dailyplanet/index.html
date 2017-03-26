@@ -2,106 +2,181 @@
 <html>
   <head>
     <title>Daily Planet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link href="dailyplanetstyle.css" rel="stylesheet"/>
   </head>
 
-  <header>
-    <div class="top">
-      <img src="logo.jpg" id="logo">
-      <h1>Daily Planet</h1>
-      <nav>
-        <a href="../../">Home</a>
-        <a href="https://espn.com">Sports</a>
-        <a href="https://msn.com">Local</a>
-        <a href="https://forbes.com">Economy</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section>
-      <article>
-        <h3>Here's Why Superman Is The Ultimate Symbol For Hope</h3>
-        <h5>Nate Brinkley<br>
-          January 30, 2017 at 06:37AM</h5>
-        <p>Superman is one of the most popular characters in pop culture;
-        and ever since his debut on April 18, 1938, he has been inspiring
-        readers, listeners, and viewers to reach for the sky. His character
-        has given hope to many, and there are several reasons he can be
-        considered the ultimate symbol for hope in fiction!
-        </p>
-        <img src="super.jpg"/ id="superpic">
-        <p>
-        <strong>His Heritage</strong><br>
-        Unless you've lived under a rock all your life, you know that
-        Superman is the Last Son of Krypton. He was raised on Earth, but
-        is an alien by birth. This is one of the aspects that made his
-        character so relatable then, and still resonates with fans today.
-        How many of us have felt like outcasts, like we are alone in this
-        world? These are issues that Superman stories have dealt with for
-        generations. So many have read about the outcast from another
-        planet with great abilities, who finds his place in the world, and
-        they have escaped into those stories and been challenged to do the
-        same themselves.
-        </p>
-        <p>
-        <strong>His Power</strong><br>
-        Superman is known for his vast array of abilities. He has so many,
-        I'm not sure I could begin to name all of them here. The abilities
-        that seem to be his main power set are:
-        <ul>
-          <li>Super Strength</li>
-          <li>Super Speed</li>
-          <li>Flight</li>
-          <li>Heat Vision</li>
-          <li>X-Ray Vision</li>
-          <li>Freeze Breath</li>
-          <li>Invulnerability</li>
-          <li>Accelerated Healing Factor</li>
+  <body class="container-fluid bg-primary">
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-transparent my-2">
+      <a class="navbar-brand text-center" href="../../">Maggie's Workbook</a>
+      <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#open">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="open">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="about" data-toggle="dropdown">
+              ABOUT
+            </a>
+            <div class="dropdown-menu" aria-labelledby="about">
+              <a class="dropdown-item" href="../../01week/bio/">Bio</a>
+              <a class="dropdown-item" href="../../01week/resume/">Resume</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="team" data-toggle="dropdown">
+              TEAM
+            </a>
+            <div class="dropdown-menu" aria-labelledby="team">
+              <a class="dropdown-item" href="https://mymonstermaggie.github.io/team3/">Team Page</a>
+              <a class="dropdown-item" href="https://mymonstermaggie.github.io/hhstheatre/">HHS Theatre</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="checkpoints" data-toggle="dropdown">
+              CHECKPOINTS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="checkpoints">
+              <a class="dropdown-item" href="../../04week/checkpoint/">One</a>
+              <a class="dropdown-item" href="../../07week/Checkpoint2/">Two</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="htmlcss" data-toggle="dropdown">
+              HTML/CSS
+            </a>
+            <div class="dropdown-menu" aria-labelledby="htmlcss">
+              <a class="dropdown-item" href="../../02week/nasa/">Nasa</a>
+              <a class="dropdown-item" href="../../03week/dailyplanet/">Daily Planet</a>
+              <a class="dropdown-item" href="../../03week/news/">Flex News</a>
+              <a class="dropdown-item" href="../../04week/media/">Media Queries</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="boot" data-toggle="dropdown">
+              BOOTSTRAP
+            </a>
+            <div class="dropdown-menu" aria-labelledby="boot">
+              <a class="dropdown-item" href="../../05week/BootstrapGrid/">Bootstrap Grid</a>
+              <a class="dropdown-item" href="../../05week/bsresponsiveutility/">Bootstrap Responsive Utility</a>
+              <a class="dropdown-item" href="../../06week/bsnav/">Bootstrap Components</a>
+              <a class="dropdown-item" href="../../06week/forms/">Forms</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="javascript" data-toggle="dropdown">
+              JAVASCRIPT
+            </a>
+            <div class="dropdown-menu" aria-labelledby="javascript">
+              <a class="dropdown-item" href="../../08week/fizzbuzz/">Fizz Buzz</a>
+              <a class="dropdown-item" href="../../08week/ageverify/">Age Verify</a>
+              <a class="dropdown-item" href="../../08week/tictactoe/">Tic Tac Toe</a>
+              <a class="dropdown-item" href="../../09week/towers/">Towers of Hanoi</a>
+            </div>
+          </li>
         </ul>
-        These abilities are given to Superman through absorbing the radiation
-        of the yellow sun. Many have criticized him, saying that he is an
-        overpowered superhero, but I argue that all these abilities are
-        fundamental to his character. Superman instills hope because he is
-        constantly faced with obstacles, and he somehow digs down and finds a
-        way to overcome those challenges. Even in the New 52: Superman #38,
-        Superman faced a new obstacle and developed a new ability: the super
-        flare. This is why Superman wears the symbol for hope on his chest:
-        He has an innate ability to overcome every obstacle he faces. We are
-        able to look up to his character because he has all these incredible
-        powers –– he could literally take whatever he wanted –– and yet he
-        chooses to use these abilities for the benefit of others, not himself.
-        </p>
-        <p>
-        <strong>His Humanity</strong><br>
-        We look up to Superman because he is something of an outcast; we look
-        up to him because he has an amazing ability to overcome the most
-        daunting obstacles; and we look up to him because, despite all this,
-        he still faces our everyday human struggles.This was a quality that
-        was notably absent in the New 52 version of the character; it seemed
-        that Superman was fine being the mega-powered individual that he was.
-        Superman may have been born as Kal-El on a distant planet, but he was
-        raised as Clark Kent by two down-to-earth, country folks. They
-        instilled the moral and human qualities that make Superman a relatable
-        character.
-        </p>
-        <p>
-        <strong>Closing Thoughts</strong><br>
-        There are many things that make Superman great, but these are the
-        reasons that he wears the symbol of hope on his chest. He is an alien
-        trying to fit in on Earth, he has enormous abilities that help him
-        overcome great challenges, and he is still human. Superman still makes
-        mistakes, he has weaknesses, and he struggles with many of the things
-        you and I do every day.
-        </p>
-        </article>
-    </section>
-
-    <aside>
-      <img src="lexcorp-ad.jpg" id="lexcorp">
-    </aside>
-  </main>
-  <footer>
-    <p>©️ 2017 Daily Planet. All rights reserved.</p>
-  </footer>
+      </div>
+    </nav>
+    <header>
+      <div class="top">
+        <img src="logo.jpg" id="logo">
+        <h1>Daily Planet</h1>
+        <nav>
+          <a href="../../">Home</a>
+          <a href="https://espn.com">Sports</a>
+          <a href="https://msn.com">Local</a>
+          <a href="https://forbes.com">Economy</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <article>
+          <h3>Here's Why Superman Is The Ultimate Symbol For Hope</h3>
+          <h5>Nate Brinkley<br>
+            January 30, 2017 at 06:37AM</h5>
+          <p>Superman is one of the most popular characters in pop culture;
+          and ever since his debut on April 18, 1938, he has been inspiring
+          readers, listeners, and viewers to reach for the sky. His character
+          has given hope to many, and there are several reasons he can be
+          considered the ultimate symbol for hope in fiction!
+          </p>
+          <img src="super.jpg"/ id="superpic">
+          <p>
+          <strong>His Heritage</strong><br>
+          Unless you've lived under a rock all your life, you know that
+          Superman is the Last Son of Krypton. He was raised on Earth, but
+          is an alien by birth. This is one of the aspects that made his
+          character so relatable then, and still resonates with fans today.
+          How many of us have felt like outcasts, like we are alone in this
+          world? These are issues that Superman stories have dealt with for
+          generations. So many have read about the outcast from another
+          planet with great abilities, who finds his place in the world, and
+          they have escaped into those stories and been challenged to do the
+          same themselves.
+          </p>
+          <p>
+          <strong>His Power</strong><br>
+          Superman is known for his vast array of abilities. He has so many,
+          I'm not sure I could begin to name all of them here. The abilities
+          that seem to be his main power set are:
+          <ul>
+            <li>Super Strength</li>
+            <li>Super Speed</li>
+            <li>Flight</li>
+            <li>Heat Vision</li>
+            <li>X-Ray Vision</li>
+            <li>Freeze Breath</li>
+            <li>Invulnerability</li>
+            <li>Accelerated Healing Factor</li>
+          </ul>
+          These abilities are given to Superman through absorbing the radiation
+          of the yellow sun. Many have criticized him, saying that he is an
+          overpowered superhero, but I argue that all these abilities are
+          fundamental to his character. Superman instills hope because he is
+          constantly faced with obstacles, and he somehow digs down and finds a
+          way to overcome those challenges. Even in the New 52: Superman #38,
+          Superman faced a new obstacle and developed a new ability: the super
+          flare. This is why Superman wears the symbol for hope on his chest:
+          He has an innate ability to overcome every obstacle he faces. We are
+          able to look up to his character because he has all these incredible
+          powers –– he could literally take whatever he wanted –– and yet he
+          chooses to use these abilities for the benefit of others, not himself.
+          </p>
+          <p>
+          <strong>His Humanity</strong><br>
+          We look up to Superman because he is something of an outcast; we look
+          up to him because he has an amazing ability to overcome the most
+          daunting obstacles; and we look up to him because, despite all this,
+          he still faces our everyday human struggles.This was a quality that
+          was notably absent in the New 52 version of the character; it seemed
+          that Superman was fine being the mega-powered individual that he was.
+          Superman may have been born as Kal-El on a distant planet, but he was
+          raised as Clark Kent by two down-to-earth, country folks. They
+          instilled the moral and human qualities that make Superman a relatable
+          character.
+          </p>
+          <p>
+          <strong>Closing Thoughts</strong><br>
+          There are many things that make Superman great, but these are the
+          reasons that he wears the symbol of hope on his chest. He is an alien
+          trying to fit in on Earth, he has enormous abilities that help him
+          overcome great challenges, and he is still human. Superman still makes
+          mistakes, he has weaknesses, and he struggles with many of the things
+          you and I do every day.
+          </p>
+          </article>
+      </section>
+      <aside>
+        <img src="lexcorp-ad.jpg" id="lexcorp">
+      </aside>
+    </main>
+    <footer>
+      <p>©️ 2017 Daily Planet. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
 </html>
