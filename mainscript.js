@@ -12,4 +12,14 @@ $(function(){
       $('.flexmiddle').animate({
         height: '700px', }, 2000, 'linear');
       })
+
+    $('#weeknum').change(function(){
+      location.href = $(this).val();
+    });
+
+    $('#gamenum').change(function(){
+      location.href = $(this).val();
+
+
     })
+  })

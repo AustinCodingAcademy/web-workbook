@@ -8,21 +8,29 @@ $(function() {
     for(let num = 1; num <= 100; num ++) {
         if(num % a === 0 && num % b === 0) {
         console.log('fizzbuzz')
-          $('#fizzy').text(' fizzbuzz, ')
+          $('#fizzy').append(' fizzbuzz, <br/>')
         }
         else if(num % a === 0){
           console.log('fizz');
-            $('#fizzy').text(' fizz, ')
+            $('#fizzy').append(' fizz, <br/>')
         }
         else if (num % b === 0){
           console.log('buzz');
-            $('#fizzy').text(' buzz, ')
+            $('#fizzy').append(' buzz, <br/>')
         }
         else{
         console.log(num);
-          $('#fizzy').text(num + ' , ' )
+          $('#fizzy').append(num + ',<br/>' )
       }
     };
+
+    $('#clear').click(function(){
+      $('#val1').text('');
+      $('#val2').text('');
+      $('#fizzy').text('');
+
+
+    });
 
 
 });
