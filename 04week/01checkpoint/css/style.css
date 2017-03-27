@@ -1,7 +1,4 @@
 body {
-    /*display: flex;
-    flex: 1;
-    flex-direction: column;*/
     margin: 0 auto;
     width: 100%;
     background-color: white;
@@ -12,27 +9,34 @@ body {
 /*main navigation */
 
 .navbar-default {
-    background-color: #1eaff1 !important;
-    height: 50px;
+    background-color: #1eaaf1 !important;
+    opacity: .9 !important;
     border: none !important;
-    opacity: .85;
+    font-family: "Roboto";
 }
 
 .navbar-nav a {
     color: white !important;
     font-size: 20px!important;
-    font-weight: lighter;
+    font-weight: 100 !important;
+    font-family: 'roboto', sans-serif !important;
 }
 
 .navbar-brand img {
-    height: 40px;
+    height: 100px;
+    width: 300px;
+}
+
+.logo {
+    height: 40px !important;
+    width: 134px !important;
     padding-bottom: 10px;
 }
 
-.navbar-collapse a{
-color: black !important;
+.navbar-toggle {
+  background-color: transparent !important;
+  opacity: .7;
 }
-
 /*top hero section*/
 
 .heroCTA {
@@ -42,17 +46,10 @@ color: black !important;
     border-radius: 5px;
     color: white;
     cursor: pointer;
-    /*display: flex;*/
-    /*flex: 1;
-    flex-direction: column;*/
     text-align: center;
     height: 49px;
     width: 200px;
     font-size: 18px;
-    /*align-items: center;
-    justify-content: center;*/
-    /*margin-left: 300px;*/
-    /*margin-top: 20px;*/
 }
 
 .CTA {
@@ -62,80 +59,47 @@ color: black !important;
     border-radius: 4px;
     color: white;
     cursor: pointer;
-    /*display: inline;*/
     text-align: center;
     height: 20px;
     width: 10px;
     font-size: 18px;
     align-items: center;
-    /*justify-content: center;*/
-    /*margin-left: 415px;*/
 }
 
-.heroText h2 {
+#hero h2 {
     background-color: transparent;
-    height: 53px;
     font-family: "Roboto";
     font-size: 40px;
-    font-weight: lighter;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
+    font-weight: 300 !important;
     text-align: center;
-    /*justify-content: center;*/
     color: #9b9b9b;
-    opacity: .45;
+    opacity: .45 !important;
 }
 
 #hero h1 {
-    /*display: flex;
-  flex: 1;
-  flex-direction: column;*/
     background-color: transparent;
     font-family: "Roboto";
     font-size: 64px;
     text-align: center;
     color: #1eaaf1;
-    /*padding-top: 290px;*/
     font-weight: 300;
 }
 
 #hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background-image: url("../img/hero.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    /*flex-direction: column;*/
-    background-color: white;
-    height: 682px;
-    width: 100vw;
-    /*align-content: center;*/
+    background-size: contain;
+    height: 90vh;
+    width: 100vw !important;
+    margin-top: 50px !important;
 }
 
 
 /*main content section*/
-
-#main {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 10px;
-    align-items: flex-start;
-    height: 440px;
-}
-
-#main td {
-    vertical-align: middle;
-    font-size: 25px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    text-align: left;
-    vertical-align: top;
-}
 
 #main p {
     font-family: "Roboto";
@@ -147,18 +111,16 @@ color: black !important;
     padding: 40px;
 }
 
-#whyus img {
-    float: left;
-    width: 659px;
-    height: 437px;
+.whyus img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .whytext h2 {
-    height: 48px;
     font-family: "Roboto";
     font-size: 36px;
     font-weight: lighter;
-    text-align: center;
+    text-align: center !important;
     color: #1eaaf1;
 }
 
@@ -166,91 +128,56 @@ color: black !important;
 /*blog snippets*/
 
 #blogs {
-    display: flex;
-    flex: 1;
-    margin: 0 auto;
     text-align: center;
-    /*background-color: rgb(232, 238, 239);*/
-    height: 515px;
-    /*width: 90%;*/
-    /*padding: 10px;*/
-    padding-bottom: 10px;
-    padding-top: 10px;
-    align-content: space-around;
-    justify-content: center;
+    margin-bottom: 32px;
 }
 
 #blogs p {
-    width: 578px;
-    height: 46px;
+    width: 100%;
     font-family: "Roboto";
-    font-size: 17px;
+    font-size: 22px;
     font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: center;
     color: #303c40;
     padding: 20px;
 }
 
 #blogs a {
-    width: 161px;
-    height: 43px;
     font-family: Roboto;
     font-size: 32px;
     font-weight: 300;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: center;
     color: #1eaaf1;
     padding: 20px;
 }
 
-.firstarticle {
-    float: left;
-    clear: both;
-}
-
 .firstarticle img {
-    height: 390px;
-    width: 578px;
-}
-
-.secondarticle {
-    float: right;
-    clear: both
+    margin-top: 32px;
+    height: 100%;
+    width: 100%;
 }
 
 .secondarticle img {
-    height: 390px;
-    width: 578px;
+    margin-top: 32px;
+    height: 100%;
+    width: 100%;
 }
 
 
 /*icons section*/
 
 #icon {
-    display: flex;
-    flex: 1;
-    margin: 0 auto;
-    align-content: space-between;
-    width: 100%;
-    height: 440px;
     background-color: rgba(149, 150, 155, .1);
     text-align: center;
-    height: 515px;
+    margin-top: 10px;
 }
 
 .icons {
-    width: 25%;
     height: auto;
     align-items: center;
     vertical-align: middle;
-    padding-top: 120px;
+    padding-top: 32px;
+    padding-bottom: 10px;
 }
 
 #icon h2 {
@@ -282,15 +209,16 @@ color: black !important;
 
 #lowerhero {
     display: flex;
+    flex: 1;
+    align-content: center !important;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 100vw;
+    height: 469px;
     background-image: url("../img/congress-coworking-46.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: white;
-    height: 512px;
-    width: 100vw;
 }
 
 .lowerheroCTA1 {
@@ -299,17 +227,13 @@ color: black !important;
     border-radius: 5px;
     background-color: #ffffff;
     border: solid 1px #ffffff;
-    margin-right: 40px;
-}
-
-.lowerheroCTA1 a {
+    margin-bottom: 10px;
     text-decoration: none;
-    width: 108px;
-    height: 24px;
     font-family: "Roboto";
     font-size: 18px;
     text-align: center;
     color: #4a90e2;
+    padding-bottom: 20px;
 }
 
 .lowerheroCTA2 {
@@ -318,38 +242,30 @@ color: black !important;
     border-radius: 5px;
     background-color: #1eaaf1;
     border: solid 1px #ffffff;
-    margin-left: 40px;
-}
-
-.lowerheroCTA2 a {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
     text-decoration: none;
-    width: 127px;
-    height: 24px;
     font-family: Roboto;
     font-size: 18px;
     text-align: center;
     color: #ffffff;
 }
 
-#lowerhero table {
-    align-content: space-between;
-}
-
 
 /*footer goes here*/
 
 footer {
-    height: 105px;
+    height: 84px;
     background-color: #303c40;
     overflow: hidden;
+    margin-right: -15px !important;
+    margin-left: -15px !important;
 }
 
-.footerlogo img {
+#footer img {
     width: 198px;
     height: 44px;
-    object-fit: contain;
-    padding-top: 40px;
-    padding-left: 10px;
+    margin: 20px;
 }
 
 body a {

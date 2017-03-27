@@ -70,7 +70,7 @@ opacity: .8;
 
 }
 .resumePage {
-    width: 249px;
+    width: 200px;
     height: 55.2px;
     border-radius: 100px;
     background-color: white;
@@ -98,7 +98,7 @@ opacity: .8;
 }
 
 .download {
-    width: 249px;
+    width: 200px;
     height: 55.2px;
     border-radius: 100px;
     background-color: #ff6876;
@@ -126,7 +126,7 @@ color: white;
 opacity: .8;
 
 }
-
+/*This begins navigation css*/
 .navbar-default {
     background-color: rgba(138, 151, 230, .9) !important;
     border: none !important;
@@ -143,7 +143,7 @@ opacity: .8;
     height: 100px;
     width: 300px;
 }
-
+/*begins about me section*/
 #aboutMe {
     display: flex;
     align-content: center;
@@ -154,38 +154,34 @@ opacity: .8;
     padding-top: 32px;
 }
 
+
 .aboutBox {
     display: flex !important;
-    max-width: 100vw !important;
-    max-height: 413px !important;
+    max-width: 90vw !important;
+    height: auto !important;
     background-color: #ffffff;
     box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.21);
-    margin-bottom: 10px !important;
-    margin-right: 35px !important;
-    margin-left: 35px !important;
-    padding-right: -15px;
-
+    /*margin-bottom: 10px !important;
+    margin-right: 35px !important;*/
+  padding-right: 32px !important;
 
 }
 
-.aboutBox img {
-    max-width: 305.7px;
-    max-height: 331.2px;
+.aboutImage {
+  margin: 32px;
+}
+.aboutDecor{
+  width: auto;
+  height: 90px;
+  background-image: linear-gradient(276deg, #3023ae, #61bcff);
+  border: solid 1px #979797;
 }
 
-.rectangle-7 {
-    width: 946px !important;
-    height: 90px;
-    background-image: linear-gradient(276deg, #3023ae, #61bcff);
-    border: none !important;
-    /*box-shadow: 0px 0 5px 4px rgba(0, 0, 0, 0.21);*/
-}
-
-#about {
+/*#about {
     height: 700px !important;
     font-size: 25px;
     overflow-y: scroll !important;
-}
+}*/
 
 .abouttitle {
     background-color: lightpink;
@@ -194,8 +190,12 @@ opacity: .8;
 .aboutText {
     margin-left: 30px !important;
     text-align: center;
+    width: 100% !important;
 }
+.aboutText h5{
+  font-weight: bolder;
 
+}
 .bio {
     height: 400px !important;
     text-align: left;
@@ -343,7 +343,29 @@ opacity: .8;
     text-align: center;
     color: #ffffff;
 }
+/*begins portfolio css*/
+#portfolio img {
+    padding-top: 20px;
+    width: 100%;
+}
 
+.sectiontitle {
+    text-align: center;
+    padding: 20px;
+}
+/*begins portfolio css*/
+#portfolio img {
+    padding-top: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.sectiontitle {
+    text-align: center;
+    padding: 20px;
+}
+
+/*begins footer css*/
 #footer {
     max-width: 1440px;
     max-height: 102px;
@@ -393,31 +415,8 @@ opacity: .8;
 #footer a:visited {
   color: white;
 }
-@media (min-device-width: 768px) {
-    .navbar-nav a {
-        font-size: 12px;
-        font-weight: lighter;
-        font-family: 'rock salt';
-    }
-    .navbar-brand img {
-        height: 50px;
-        width: 150px;
-    }
-    .navbar-header {
-        height: 65px;
-        border: none !important;
-    }
-}
 
-#portfolio img {
-    padding-top: 20px;
-    width: 100%;
-}
 
-.sectiontitle {
-    text-align: center;
-    padding: 20px;
-}
 
 /*This is my resume css*/
 
@@ -512,6 +511,8 @@ margin-left: 247px;
   color: var(--charcoal-grey);
 
 }
+
+/*This begins education css*/
 #education{
   display: block;
   margin-left: 247px !important;
@@ -553,6 +554,8 @@ margin-left: 247px;
   letter-spacing: normal;
   color: #6b6b6b;
 }
+
+/*This begins certifications css*/
 #certifications{
   display: block;
 margin-right: 0 auto;
@@ -618,7 +621,23 @@ margin-top: 100px;
 
 
 
+/*This begins media queries*/
 
+@media (min-device-width: 768px) {
+    .navbar-nav a {
+        font-size: 12px;
+        font-weight: lighter;
+        font-family: 'rock salt';
+    }
+    .navbar-brand img {
+        height: 50px;
+        width: 150px;
+    }
+    .navbar-header {
+        height: 65px;
+        border: none !important;
+    }
+}
 
 @media (max-width: 1200px) {
     .navbar-nav a {
@@ -650,7 +669,7 @@ margin-top: 100px;
         ;
         justify-content: center;
         text-align: center;
-        background-image: url(../img/Hero_BG@2x.png);
+        background-image: url(../portfolio/img/Hero_BG@2x.png);
         background-repeat: no-repeat;
         background-clip: border-box;
         background-attachment: fixed;
@@ -672,6 +691,7 @@ margin-top: 100px;
         font-weight: 100 !important;
         font-size: 18px;
     }
+
     .contact {
         width: 150px;
         height: 45.2px;
@@ -683,7 +703,7 @@ margin-top: 100px;
         font-weight: 100;
         color: white !important;
     }
-    #hero {
+    /*#hero {
         display: flex;
         align-items: flex-start;
         ;
@@ -698,101 +718,177 @@ margin-top: 100px;
         background-size: contain;
         color: white;
         font-family: 'Lato', sans-serif !important;
-        /*padding-top: 100px;*/
-    }
+    }*/
     #rotate {
         font-size: 18px;
         padding-top: 5px;
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
+  body{
+    margin: 0 auto;
+  }
+  #hero{
+    height: 100%;
+    background-size: cover;
+    width: 100%;
+
+   }
+
     .aboutText {
         font-size: 12px;
+        /*width: 45% !important;*/
+        height: 45% !important;
+        text-align: left;
+        margin: -15px !important;
+        padding: 0px !important;
+        line-height: normal;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+
     }
+    .aboutBox {
+        width: 767px !important;
+        height: 115% !important;
+        /*background-color: #ffffff;
+        box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.21);*/
+        margin: -15px !important;
+
+      }
+      .aboutText h3 {
+          font-size: 15px;
+
+      }
+      .aboutText h2 {
+          font-size: 12px;
+      }
+      .aboutImage img {
+          max-height: 165px !important;
+          max-width: 143px !important;
+          margin: -15px !important;
+          margin-top: 10px !important;
+
+      }
     .resumePage {
         width: 149px;
         height: 25.2px;
-        font-size: 15px;
-        font-weight: 400;
-    }
-    #hero {
-        height: 200px !important;
-        margin-bottom: 32px;
-    }
-    .contact {
-        width: 150px !important;
-        height: 45px !important;
-        font-size: 22px !important;
-    }
-    .aboutImage {
-        max-height: 50%;
-        max-width: 50%;
+        font-size: 12px;
+        font-weight: 300;
+        margin-bottom: 10px !important;
+        margin-left: -32px !important;
+
     }
     .download {
         width: 149px;
         height: 25.2px;
-        font-size: 15px;
-        font-weight: 400;
+        font-size: 12px;
+        font-weight: 300;
+        margin-left: -32px !important;
+        margin-right: 30px;
     }
-    .aboutText h3 {
-        font-size: 20px;
+
+    /*#hero {
+        height: 200px !important;
+        margin-bottom: 32px;
+    }*/
+
+
+    .download {
+        width: 149px;
+        height: 25.2px;
+        font-size: 12px;
+        font-weight: 300;
     }
-    .aboutText h2 {
-        font-size: 20px;
-    }
-    #hero h1 {
-        /*font-size: 28px !important;
-    font-weight: 400;*/
+
+    /*#hero h1 {
+
         visibility: collapse;
+    }*/
+    /*#hero h2 {
+        font-weight: 100 !important;
+        font-size: 18px;
+        visibility: collapse;
+    }*/
+    #heroText {
+        font-size: 12px;
+        font-weight: 100;
+        width: 150px !important;
+        /*height: 15px !important;*/
+        font-size: 22px !important;
+        /*padding-bottom: 100px !important;
+        margin-bottom: 115px !important;*/
     }
+    .contact{
+      margin-top: -20px !important;
+margin-bottom: 35px;
+    }
+
+    #rotate {
+        visibility: collapse;
+        font-size: 18px;
+        padding-top: 5px;
+    }
+
     #hero h2 {
         font-weight: 100 !important;
         font-size: 18px;
         visibility: collapse;
     }
-    .contact {
-        width: 75px;
-        height: 25.2px;
-        border-radius: 100px;
-        background-color: #ff6876;
-        border: none;
-        font-size: 12px;
-        font-weight: 100;
-    }
-    #hero {
-        display: flex;
-        align-items: flex-start;
-        ;
-        justify-content: center;
-        text-align: center;
-        background-image: url(../img/Hero_BG@2x.png);
-        background-repeat: no-repeat;
-        background-clip: border-box;
-        background-attachment: fixed;
-        height: 100vh;
-        width: 100vw;
-        background-size: contain;
-        color: white;
-        font-family: 'Lato', sans-serif !important;
-        padding-top: 20px;
-    }
-    #rotate {
-        visibility: collapse;
-        font-size: 18px;
-        padding-top: 5px;
-    }
 }
 
-@media (max-width: 940px) {
+@media (max-width: 400px) {
+body{
+margin: 0 auto;
+}
+.navbar-default {
+width: 100vw;
+}
+.aboutImage img {
+    max-height: 83px !important;
+    max-width: 76px !important;
+
+}
+#bites h2{
+  font-size: 28px !important;
+  text-align: center;
+}
+#bites{
+  width: 90%;
+  padding: -15px;
+  margin-top: 20px;
+  text-align: center;
+
+}
+#bites h3{
+  text-align: center;
+}
+#bites ul{
+  margin-right: 30px;
+}
+#portfolio h2{
+  font-size: 28px !important;
+  text-align: center;
+}
+#portfolio{
+  height: 100%;
+  width: 100%;
+  padding: -15px;
+  margin: -15px;
+  margin-left: -200px;
+}
+
+
+}
+
+/*@media (max-width: 940px) {
     .resumePage {
 margin-bottom: 30px !important;
 height: 40.2px;
 
     }
     .download {
-
 height: 40.2px;
 
     }
-}
+}*/
