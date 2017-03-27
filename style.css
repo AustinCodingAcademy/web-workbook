@@ -47,21 +47,31 @@ background-size: cover;
   width: 100%;
    }*/
 
+   .flexmiddle{
+     background: url(flexhand.jpg);
+     background-repeat: no-repeat;
+     background-size: contain;
+     color: white;
+     /*transition: width 4s;*/
+   }
+   /*.flexmiddle:hover{
+
+     width: 500px;
+   }*/
+
 .flexright{
   flex-direction: column;
+  justify-content: flex-start;
 }
 .breathing{
-
-
-    width: 300px;
-    padding: 2px;
-    margin: 10px auto;
-    border: 1px solid #d1d1d1;
-    -webkit-animation: breathing 4s ease-out infinite normal;
-    animation: breathing 4s ease-out infinite normal;
-    -webkit-font-smoothing: antialiased;
-    border-radius: 3px;
-
+  width: 300px;
+  padding: 2px;
+  margin: 10px auto;
+  border: 1px solid #d1d1d1;
+  -webkit-animation: breathing 4s ease-out infinite normal;
+  animation: breathing 4s ease-out infinite normal;
+  -webkit-font-smoothing: antialiased;
+  border-radius: 3px;
   }
 
 
@@ -97,7 +107,7 @@ background-size: cover;
   25% {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
-    transform: scale(1);
+    transform: scale(1.25);
   }
 
   60% {
@@ -114,17 +124,6 @@ background-size: cover;
 }
 
 
-.flexmiddle{
-  background: url(flexhand.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  color: white;
-  /*transition: width 4s;*/
-}
-/*.flexmiddle:hover{
-
-  width: 500px;
-}*/
 
 
 .weeks{
@@ -158,6 +157,11 @@ transform: rotate(90deg);
   height: 500px;
 }
 
+.content{
+  width: 400px;
+  height: 500px;
+  background-color: aliceblue;
+}
 .pg-canvas{
   height: 700px;
   background-color: black

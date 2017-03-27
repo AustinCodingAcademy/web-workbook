@@ -6,24 +6,18 @@
   </head>
   <body>
     <h1>Look at all the FIZZBUZZ!</h1>
+    <h3>Enter a Number: <input type="text" name="val1" id="val1"></h3>
+    <h3>Enter ANOTHER Number: <input type="text" name="val2" id="val2"></h3>
+    <button id="submit">Submit1</button>
+    <button id="clear">Reset</button>
+    <div class="content" id="fizzy" style="background-color: aliceblue">
 
-    <script type="text/javascript">
+    </div>
 
-      for(let num = 1; num <= 100; num ++) {
-          if(num % 3 === 0 && num % 5 === 0) {
-          console.log('fizzbuzz')
-          }
-          else if(num % 3 === 0){
-            console.log('fizz');
-          }
-          else if (num % 5 === 0){
-            console.log('buzz');
-          }
-          else{
-          console.log(num);
-        }
-      }
-
-    </script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./fizzjs.js"></script>
   </body>
 </html>
