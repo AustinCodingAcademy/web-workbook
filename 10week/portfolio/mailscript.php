@@ -1,7 +1,7 @@
 
 <?php session_start();
 if(isset($_POST['Submit'])) {   if( $_SESSION['chapcha_code'] == $_POST['chapcha_code'] && !empty($_SESSION['chapcha_code'] ) ) {
-$youremail = 'pbensin@gmail.com';
+$youremail = 'info@pamross.io';
 $fromsubject = 'info@pamross.io';
 $title = $_POST['title'];
 $fname = $_POST['fname'];
@@ -33,4 +33,4 @@ echo "Thank you fo your feedback. I will contact you shortly if needed.<br/>Go t
  } else {
 echo "You must write a message. </br> Please go to <a href='/contact.php'>Contact Page</a>";
 }
-?> 
+?>
