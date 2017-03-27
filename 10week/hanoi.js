@@ -5,9 +5,9 @@ $('[data-stack]').click(function (){
   $block = $(this).children().last().detach();
 } else if (isLegal(this)|| isEmpty(this)) {
     $(this).append($block);
-    $block=null
+    $block=null;
     if (checkForWin()) {
-      $('#announce-game-won').text('You Win!')
+      $('#announce-game-won').text('You Win!');
 
     }
   }
@@ -15,15 +15,17 @@ $('[data-stack]').click(function (){
 
 
 function isLegal (stack) {
-  return $block.data('block') < $(stack).children().last().data('block')
+  return $block.data('block') < $(stack).children().last().data('block');
 }
 
 function isEmpty(stack) {
-  return $(stack).children().length === 0
+  return $(stack).children().length === 0;
 }
 
 function checkForWin(){
-  return $[('data-stack="2"]').children().length ===4 ||
+  return $('data-stack="2"]').children().length ===4 ||
   $('[data-stack="3"]').children().length === 4;
+
 }
+
 });
