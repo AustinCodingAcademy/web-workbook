@@ -12,6 +12,10 @@
 </head>
 <body>
 
+<div id="typing">
+  <p id="typing_text">vdds </p>
+</div>
+
 
 <section class="verify">
   <img src="img/wine1.png" class="big-f">
@@ -27,7 +31,18 @@
 
 <!-- JQuery CDN script, always before JS since it cascades -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="typed.js"></script>
+<script>
+	$(function(){
+		$("#typing_text").typed({
+			strings: ["First sentence.", "Second sentence."],
+			typeSpeed: 0
+		});
+	});
+</script>
+
 <!--javascript-->
 <script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>
