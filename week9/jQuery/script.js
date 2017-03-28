@@ -1,4 +1,4 @@
-var button = [];
+]var button = [];
 
 for (var i = 1; i < 10; i++) {
     button[i] = document.getElementById('canvas' + i);
