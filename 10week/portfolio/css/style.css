@@ -6,25 +6,32 @@ body {
 /*This is the styling for the nav*/
 
 li a {
-    color: black !important;
-    text-transform: uppercase;
-    letter-spacing: .1em;
+    color: black;
     margin-right: 15px;
-    font-weight: bold;
+    font-size: 18px;
+    transition: 1s;
 }
 
-h6 {
+.navbar-brand div {
+  text-align: center;
+  margin-left: 30px;
+  margin-top: 10px;
+  color: black;
+  transition: 1s;
+}
+
+.design-co {
   font-family: 'Muli', Helvetica, Arial, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: .2em;
   font-weight: bold;
-  margin-top: 8px;
+  transition: 1s;
 }
 
 .navbar {
     width: 100%;
-    height: 110px;
+    height: 130px;
     background-color: transparent;
     /*background-color: aquamarine !important;*/
     position: fixed;
@@ -34,14 +41,14 @@ h6 {
     transition: 1s;
 }
 
-.navbar-brand {
+.navbar-brand h3 {
     font-family: 'Permanent Marker', sans-serif;
     font-size: 32px;
-    color: black !important;
     line-height: 26px;
     text-align: center;
-    margin-left: 30px !important;
-    margin-top: 10px;
+    margin-bottom: 5px;
+    transition: 1s;
+    background-color: transparent;
 }
 
 .navbar-nav {
@@ -164,68 +171,86 @@ h1 {
 
 
 #about-us {
-  background-color: aquamarine;
+  background-color: #e5e6e7;
   max-width: 100%;
 }
 
 
-.about-us-text {
+.about-us-text-column {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  height: 840px;
-  flex-flow: column wrap;
+  align-items: center;
+  min-height: 500px;
 }
 
-.about-us-text p, h3 {
-  max-width: 90%;
-  margin-left: 25px;
+.about-us-text-container {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 }
 
 h3 {
   font-family: 'Permanent Marker', sans-serif;
   font-size: 36px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 p {
-  font-size: 18px;
-  line-height: 30px;
-  text-align: left;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
 }
 
 .photos {
   padding: 0;
+  min-height: 400px;
 }
 
-.about-us-left {
-  background-image: url('../img/melissa.jpg');
+.about-us-top {
   display: flex;
   justify-content: center;
   align-items: center;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.5);
-  filter: grayscale(100%);
-  height: 420px;
+  background-image: linear-gradient(0deg, aquamarine, aquamarine), url('../img/melissa.jpg');
+  background-color: white;
+  background-blend-mode: multiply, luminosity;
+  height: 400px;
   width: 100%;
 }
 
-.about-us-right {
-  background-image: url('../img/james.jpg');
+.photo-melissa-hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.about-us-top:hover .photo-melissa-hover {
+  display: block;
+  height: 400px;
+  width: 100%;
+}
+
+.about-us-bottom {
   display: flex;
   justify-content: center;
   align-items: center;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.5);
-  filter: grayscale(100%);
-  height: 420px;
+  background-image: linear-gradient(0deg, aquamarine, aquamarine), url('../img/james.jpg');
+  background-color: white;
+  background-blend-mode: multiply, luminosity;
+  height: 400px;
   width: 100%;
+}
+
+.no-padding {
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -240,7 +265,6 @@ p {
 .our-work-header {
   text-align: center;
   margin-bottom: 80px;
-  padding-left: 80px;
 }
 
 .projects {
@@ -293,17 +317,27 @@ p {
   justify-content: center;
 }
 
-.work-together {
+.work-together-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   height: 480px;
+}
+
+.work-together-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
   flex-flow: column;
 }
 
 .work-together p, h3 {
-  max-width: 90%;
-  margin-left: 25px;
+  margin-left: 0;
+}
+
+form {
+  width: 80%;
 }
 
 .form {
@@ -311,7 +345,6 @@ p {
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  margin-top: 75px;
 }
 
 .name-email-form {
@@ -321,7 +354,7 @@ p {
 }
 
 .name-email-form input {
-  width: 280px;
+  width: 50%;
   height: 70px;
   border: 0;
   border-bottom: 1px solid black;
@@ -329,12 +362,30 @@ p {
   background-color: transparent;
 }
 
-.message-form input {
-  width: 580px;
-  height: 300px;
+.message-form textarea {
+  width: 100%;
+  height: 250px;
   border: 0;
   border-bottom: 1px solid black;
   background-color: transparent;
+  margin-top: 45px;
+}
+
+ ::-webkit-input-placeholder {
+  color: darkgray;
+  font-size: 16px;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+textarea:focus, input:focus {
+  outline: none;
 }
 
 .button input {
@@ -359,6 +410,15 @@ p {
 
     .about-us-text {
       height: 600px;
+    }
+
+    .name-email-form {
+      display: block;
+    }
+
+    .name-email-form input {
+      width: 100%;
+      margin-bottom: 30px;
     }
 
   }
