@@ -152,36 +152,32 @@ opacity: .8;
     max-height: 100vh;
     background-color: #ffffff;
     padding-top: 32px;
-}
+    margin-bottom: 96px !important;
 
+}
+.readMe{
+  max-width: 946px !important;
+text-align: center;
+font-size: 18px;
+font-family: 'Lato';
+color: #3f217e;
+margin-top: -44px !important;
+}
 
 .aboutBox {
     display: flex !important;
     max-width: 90vw !important;
     height: auto !important;
-    background-color: #ffffff;
+    background-color: transparent !important;
     box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.21);
-    /*margin-bottom: 10px !important;
-    margin-right: 35px !important;*/
-  padding-right: 32px !important;
-
 }
 
 .aboutImage {
-  margin: 32px;
-}
-.aboutDecor{
-  width: auto;
-  height: 90px;
-  background-image: linear-gradient(276deg, #3023ae, #61bcff);
-  border: solid 1px #979797;
+   margin-left: -15px !important;
+   margin-top: 15px !important;
 }
 
-/*#about {
-    height: 700px !important;
-    font-size: 25px;
-    overflow-y: scroll !important;
-}*/
+
 
 .abouttitle {
     background-color: lightpink;
@@ -191,6 +187,7 @@ opacity: .8;
     margin-left: 30px !important;
     text-align: center;
     width: 100% !important;
+    padding-bottom: 15px;
 }
 .aboutText h5{
   font-weight: bolder;
@@ -223,7 +220,7 @@ opacity: .8;
     text-align: center !important;
     color: #3f217e !important;
     color: var(--charcoal-grey);
-    margin-bottom: 42px !important;
+    margin-bottom: -15px !important;
 }
 
 #bites img {
@@ -273,19 +270,35 @@ opacity: .8;
 }
 
 #portfolio {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
     margin-right: 148px !important;
     margin-left: 148px !important;
     margin-top: 32px;
     margin-bottom: 32px;
 }
+#portfolio p{
+  font-size: 22px;
+  font-family: 'Lato';
+  text-align: center;
+color: #3f217e;
+   width: 100%;
+   padding-top: 15px;
+}
+#portfolio a:hover{
+opacity: .7;
+}
+#portfolio h2{
+  margin-bottom: -15px !important;
+
+}
+
 
 .featureWork {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
     max-width: 646.3px !important;
-    max-height: 635px !important;
+    max-height: 1735px !important;
     opacity: 0.9;
     overflow: hidden;
  }
@@ -295,14 +308,16 @@ opacity: .8;
     display: flex;
     flex: 1;
     flex-direction: column;
-    align-items: center;
-    max-width: 464.9px!important;
-    max-height: 637.7px !important;
-    padding-right: 5px !important;
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
+    align-items:  flex-end;
+    justify-content: center;
+    max-width: 646.3px !important;
+    max-height: 1735px !important;
+    /*padding-right: 5px !important;*/
+    /*padding-top: 0px !important;*/
     overflow: hidden;
 
+}
+.otherWork img{
 }
 
 #bottomHero {
@@ -352,24 +367,12 @@ opacity: .8;
 .sectiontitle {
     text-align: center;
     padding: 20px;
-}
-/*begins portfolio css*/
-#portfolio img {
-    padding-top: 20px;
-    width: 100%;
-    overflow: hidden;
-}
-
-.sectiontitle {
-    text-align: center;
-    padding: 20px;
-}
-
-/*begins footer css*/
+  }
 #footer {
     max-width: 1440px;
     max-height: 102px;
     background-image: linear-gradient(108deg, #3023ae, #c96dd8);
+    margin-bottom: 0px !important;
 }
 
 #footer hr {
@@ -421,8 +424,9 @@ opacity: .8;
 /*This is my resume css*/
 
 #experience{
-display: block;
-margin-left: 247px;
+width: 80%;
+/*margin-left: 240px;*/
+position: relative;
 
 }
 #experience h2{
@@ -430,7 +434,7 @@ margin-left: 247px;
   font-size: 46px;
   text-align: center;
   color: #3f227e;
-  padding-right: 250px !important;
+  /*padding-right: 220px !important;*/
 }
 .topBar {
   width: auto;
@@ -443,42 +447,35 @@ margin-left: 247px;
 #hammer{
   height: 73px;
   width: 230px;
-  margin-left: 90px;
-  margin-bottom: -15px !important;
+   margin-bottom: -15px !important;
  }
 #mws{
-  height: 45px;
-  width: 167px;
-  margin-left: 130px;
-
-}
+  max-height: 45px;
+  max-width: 167px;
+  object-position: center;
+ }
 #olm{
-  height: 48px;
+  height: 48px ;
   width: 114px;
-  margin-left: 160px;
-
+object-position: center;
 }
 #wpfx{
   height: 40px;
   width: 165px;
-  margin-left: 130px;
 
 }
 #experience p{
-  width: 408px;
-  height: 138px;
+  max-width: 100%;
+  max-height: 138px;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.44;
-  letter-spacing: normal;
   color: #6b6b6b;
 }
 .company  {
-  max-width: 458.2px;
-  height: 345px;
+
+  height: 375px;
   background-color: #ffffff;
   box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.18);
   border: solid 1px #979797;
@@ -487,25 +484,18 @@ margin-left: 247px;
 }
 
 .dates{
+  display: block;
   font-family: 'Lato' !important;
   font-size: 24px;
-  font-weight: 100;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
+  font-weight: 500;
   text-align: center;
   color: #8b74bd !important;
   color: var(--deep-lilac);
 }
 #experience h3{
-  font-family: Roboto;
+  font-family: 'Lato';
   font-size: 18px;
   font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: center;
   color: #2f3841;
   color: var(--charcoal-grey);
@@ -514,8 +504,9 @@ margin-left: 247px;
 
 /*This begins education css*/
 #education{
-  display: block;
-  margin-left: 247px !important;
+  /*display: block;
+  margin-left: 247px !important;*/
+    max-width: 90vw;
 
 }
 #education h2{
@@ -524,7 +515,7 @@ margin-left: 247px;
   text-align: center;
   color: #3f227e;
   margin-top: 32px;
-  margin-right: 220px !important;
+  /*margin-right: 220px !important;*/
 }
 .school{
   max-width: 458.2px;
@@ -556,79 +547,68 @@ margin-left: 247px;
 }
 
 /*This begins certifications css*/
-#certifications{
-  display: block;
-margin-right: 0 auto;
-margin-bottom: 32px;
-margin-top: 100px;
-
-}
-.centered{
+/*.centered{
   margin-left: 125px !important;
   position: relative;
-}
+}*/
 #certifications p{
 
   font-family: 'Lato';
   font-size: 16px;
   font-weight: 500;
   line-height: 1.44;
-  letter-spacing: normal;
   color: #6b6b6b;
   text-align: center;
 }
 #certifications h2{
-  font-family: 'Lato';
-  font-size: 46px;
-  text-align: center;
-  font-weight: 100;
-  color: white;
-  margin-top: 32px;
-}
-#certifications{
-  width: 80%;
-  max-height: 561px;
-  background-color: #3f217e !important;
-  background-color: var(--cobalt);
-  opacity: .8;
-}
-
-.certDetails{
-  margin: 32px !important;
-}
-.certs {
   font-family: 'Lato' !important;
-  font-size: 22px !important;
-  font-weight: 300;
+  font-size: 46px;
+  font-weight: 400;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
   letter-spacing: normal;
+  text-align: center !important;
+  color: white !important;
+  color: var(--charcoal-grey);
+  margin-bottom: 42px !important;
+}
+#certifications{
+padding-top: 100px;
+  width: 100vw;
+  background-color: #3f217e !important;
+  background-color: var(--cobalt);
+}
+
+.certs {
+  font-family: 'Lato' !important;
+  font-size: 22px !important;
+  font-weight: 300;
   text-align: center;
   color: #2f3841;
   color: var(--charcoal-grey);
 }
+
 .certDetails{
-  width: 365px !important;
   height: 166px;
   background-color: #ffffff;
   box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.18);
   border: solid 1px #979797;
-}
-
-
-
+ margin-bottom: 32px;
+ /*max-width: 300px !important;
+ margin-left: 19px;*/
+  }
+/*.shopping{
+  margin-top: 0px !important;
+  margin-bottom: 0px;
+}*/
 
 
 
 /*This begins media queries*/
 
 @media (min-device-width: 768px) {
-    .navbar-nav a {
-        font-size: 12px;
-        font-weight: lighter;
-        font-family: 'rock salt';
-    }
+
     .navbar-brand img {
         height: 50px;
         width: 150px;
@@ -641,7 +621,7 @@ margin-top: 100px;
 
 @media (max-width: 1200px) {
     .navbar-nav a {
-        font-size: 13px !important;
+        font-size: 18px !important;
     }
 }
 
@@ -703,22 +683,7 @@ margin-top: 100px;
         font-weight: 100;
         color: white !important;
     }
-    /*#hero {
-        display: flex;
-        align-items: flex-start;
-        ;
-        justify-content: center;
-        text-align: center;
-        background-image: url(../img/Hero_BG@2x.png);
-        background-repeat: no-repeat;
-        background-clip: border-box;
-        background-attachment: fixed;
-        height: 100vh;
-        width: 100vw;
-        background-size: contain;
-        color: white;
-        font-family: 'Lato', sans-serif !important;
-    }*/
+
     #rotate {
         font-size: 18px;
         padding-top: 5px;
@@ -726,6 +691,16 @@ margin-top: 100px;
 }
 
 @media (max-width: 768px) {
+  #portfolio h2{
+    font-size: 28px !important;
+    text-align: center;
+  }
+  #portfolio{
+    height: 100%;
+    width: 100%;
+    padding: -15px;
+    margin-left: 0px !important;
+  }
   body{
     margin: 0 auto;
   }
@@ -735,6 +710,8 @@ margin-top: 100px;
     width: 100%;
 
    }
+
+
 
     .aboutText {
         font-size: 12px;
@@ -751,8 +728,6 @@ margin-top: 100px;
     .aboutBox {
         width: 767px !important;
         height: 115% !important;
-        /*background-color: #ffffff;
-        box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.21);*/
         margin: -15px !important;
 
       }
@@ -763,20 +738,24 @@ margin-top: 100px;
       .aboutText h2 {
           font-size: 12px;
       }
-      .aboutImage img {
-          max-height: 165px !important;
-          max-width: 143px !important;
-          margin: -15px !important;
+      .aboutBox img{
+          min-height: 60% !important;
+          min-width: 100% !important;
           margin-top: 10px !important;
+          padding-right: 5px;
 
       }
     .resumePage {
-        width: 149px;
-        height: 25.2px;
-        font-size: 12px;
-        font-weight: 300;
-        margin-bottom: 10px !important;
-        margin-left: -32px !important;
+      width: 149px;
+      height: 25.2px;
+      font-size: 12px;
+      font-weight: 300;
+      margin-left: 0px;
+      margin-right: 30px;
+      width: 149px;
+      height: 25.2px;
+      font-size: 12px;
+      font-weight: 300;
 
     }
     .download {
@@ -784,32 +763,15 @@ margin-top: 100px;
         height: 25.2px;
         font-size: 12px;
         font-weight: 300;
-        margin-left: -32px !important;
+        /*margin-left: -32px !important;*/
         margin-right: 30px;
-    }
-
-    /*#hero {
-        height: 200px !important;
-        margin-bottom: 32px;
-    }*/
-
-
-    .download {
+        margin-left: 0px;
         width: 149px;
         height: 25.2px;
         font-size: 12px;
         font-weight: 300;
     }
 
-    /*#hero h1 {
-
-        visibility: collapse;
-    }*/
-    /*#hero h2 {
-        font-weight: 100 !important;
-        font-size: 18px;
-        visibility: collapse;
-    }*/
     #heroText {
         font-size: 12px;
         font-weight: 100;
@@ -835,9 +797,21 @@ margin-bottom: 35px;
         font-size: 18px;
         visibility: collapse;
     }
+    #bottomHero p {
+        /*width: 372px;*/
+        height: 33px;
+        opacity: 0.66;
+        font-family: 'Lato';
+        font-size: 24px;
+        font-weight: 100;
+        letter-spacing: 1.8px;
+        text-align: center;
+        color: #ffffff;
+        padding-bottom: 100px !important;
+    }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
 body{
 margin: 0 auto;
 }
@@ -866,29 +840,13 @@ width: 100vw;
 #bites ul{
   margin-right: 30px;
 }
-#portfolio h2{
-  font-size: 28px !important;
-  text-align: center;
-}
-#portfolio{
-  height: 100%;
-  width: 100%;
-  padding: -15px;
-  margin: -15px;
-  margin-left: -200px;
-}
+
 
 
 }
+@media(max-width: 991px){
+.otherWork{
+  position: relative;
+}
 
-/*@media (max-width: 940px) {
-    .resumePage {
-margin-bottom: 30px !important;
-height: 40.2px;
-
-    }
-    .download {
-height: 40.2px;
-
-    }
-}*/
+}
