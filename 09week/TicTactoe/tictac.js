@@ -16,20 +16,20 @@ $(function() {
     function checkWin() {
         if (
             ($('[data-cell="0"]').text() === playerTurn &&
-            $('[data-cell="3"]').text() === playerTurn &&
-            $('[data-cell="6"]').text() === playerTurn) ||
-              
+                $('[data-cell="3"]').text() === playerTurn &&
+                $('[data-cell="6"]').text() === playerTurn) ||
+
             ($('[data-cell="1"]').text() === playerTurn &&
-            $('[data-cell="4"]').text() === playerTurn &&
-            $('[data-cell="7"]').text() === playerTurn)
-        )
+                $('[data-cell="4"]').text() === playerTurn &&
+                $('[data-cell="7"]').text() === playerTurn)
+        );
 
 
-     {
-        return true;
-    } else {
-        return false;
+        {
+            return true;
+        } else {
+            return false;
+        }
     }
-}
 
 })
