@@ -1,11 +1,11 @@
 .weekblock {
-  width: 80%;
-  height: 180px;
+  width: 60%;
+  height: 160px;
   /*border: solid black 1px;*/
-  font-family: monospace serif;
+  font-family: Open Sans, "Helvetica Neue", Arial, Helvetica, Verdana, sans-serif;
   font-size: 18px;
   margin-bottom: 10px;
-  border-radius: 100px;
+  border-radius: 50%;
   padding-bottom: 20px;
 }
 
@@ -38,7 +38,7 @@
 
 .hero {
   background: url("./pics/treepic3.JPG") top center;
-  height: 800px;
+  height: 840px;
   width: 100%;
   background-size: cover;
 }
@@ -49,7 +49,7 @@
   width: 100%;
   background-size: cover;
   padding: 0;
-  background: url("./pics/backgroundimg.jpg") top center;
+  background: url("./pics/autumn.jpg") top center;
 }
 
 .row {
@@ -95,4 +95,69 @@
 
 .white {
   color: white;
+}
+
+--------
+.fallingLeaves {
+  text-align: center;
+}
+
+.fallingLeaves span {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin: -280px 40px 54px  -34px;
+  background:url("./pics/leaf.png");
+  -webkit-animation: fallingLeaves 10s infinite  linear;
+  -moz-animation: fallingLeaves 10s infinite  linear;
+}
+
+.fallingLeaves span:nth-child(5n+5) {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+}
+
+.fallingLeaves span:nth-child(3n+2) {
+  -webkit-animation-delay: 1.0s;
+  -moz-animation-delay: 1.0s;
+}
+
+.fallingLeaves span:nth-child(2n+5) {
+  -webkit-animation-delay: 1.7s;
+  -moz-animation-delay: 1.7s;
+}
+
+.fallingLeaves span:nth-child(3n+10) {
+  -webkit-animation-delay: 2.7s;
+  -moz-animation-delay: 2.7s;
+}
+
+.fallingLeaves span:nth-child(7n+2) {
+  -webkit-animation-delay: 3.5s;
+  -moz-animation-delay: 3.5s;
+}
+
+.fallingLeaves span:nth-child(4n+5) {
+  -webkit-animation-delay: 5.5s;
+  -moz-animation-delay: 5.5s;
+}
+
+.fallingLeaves span:nth-child(3n+7) {
+  -webkit-animation-delay: 8s;
+  -moz-animation-delay: 8s;
+}
+
+@keyframes fallingLeaves {
+  0% {
+  opacity: 1;
+  transform: translate(0, 0px) rotateZ(0deg) scale(0.1,0.1);
+  }
+  75% {
+  opacity: 1;
+	transform: translate(100px, 600px) rotate3d(1,2,3,270deg) scale(0.8,0.8);
+  }
+  100% {
+  opacity: 0.2;
+	transform: translate(150px, 800px) rotate3d(1,2,3,360deg) scale(1.0,1.0);
+  }
 }
