@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tic Tac Toe</title>
+</head>
+
+
+<style>
+body {
+  width: 90%;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 35px;
+  margin-left: 140px;
+}
+
+div[data-cell] {
+  width: 150px;
+  height: 150px;
+  background-color: #f2f2f2;
+  float: left;
+  border: 1px solid #808080;
+  text-align: center;
+  font-size: 125px;
+}
+
+.row {
+  clear: both;
+}
+
+#announce-winner {
+  clear: both;
+  font-size: 75px;
+}
+
+#clear {
+  height: 50px;
+  width: 455px;
+  margin-top: 20px;
+  background-color: green;
+  color: white;
+  font-size: 18px;
+  border: 2px solid #808080;
+  border-radius: 5px;
+}
+</style>
+
+<!-- This is where the body begins -->
+<body>
+  <h1>Tic Tac Toe</h1>
+  <div class="row">
+    <div data-cell="0"></div>
+    <div data-cell="1"></div>
+    <div data-cell="2"></div>
+  </div>
+  <div class="row">
+    <div data-cell="3"></div>
+    <div data-cell="4"></div>
+    <div data-cell="5"></div>
+  </div>
+  <div class="row">
+    <div data-cell="6"></div>
+    <div data-cell="7"></div>
+    <div data-cell="8"></div>
+  </div>
+  <div id="announce-winner"></div>
+  <button id="clear">Clear Board</button>
+
+<!-- jQuery CDN Link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Tic Tac Toe JS -->
+<script>
+// All your JS will be wrapped inside of document.ready
+  $(document).ready(function(){
+    let playerTurn = 'X';
+
+      $('[data-cell]').on('click', function() {
+        if ($(this).text() === '') {
+        $(this).text(playerTurn);
+        checkForWin(); // add this in later in demo after function is created
+          if(playerTurn === 'X') {
+            playerTurn = 'O';
+          } else {
+            playerTurn = 'X';
+          }
+        }
+      });
+
+    function checkForWin() {
+      if(
+        ($('[data-cell="0"]').text() === playerTurn && $('[data-cell="3"]').text() === playerTurn && $('[data-cell="6"]').text() === playerTurn)
+        ||
+        ($('[data-cell="1"]').text() === playerTurn && $('[data-cell="4"]').text() === playerTurn && $('[data-cell="7"]').text() === playerTurn)
+        ||
+        ($('[data-cell="2"]').text() === playerTurn && $('[data-cell="5"]').text() === playerTurn && $('[data-cell="8"]').text() === playerTurn)
+        ||
+        ($('[data-cell="0"]').text() === playerTurn && $('[data-cell="1"]').text() === playerTurn && $('[data-cell="2"]').text() === playerTurn)
+        ||
+        ($('[data-cell="3"]').text() === playerTurn && $('[data-cell="4"]').text() === playerTurn && $('[data-cell="5"]').text() === playerTurn)
+        ||
+        ($('[data-cell="6"]').text() === playerTurn && $('[data-cell="7"]').text() === playerTurn && $('[data-cell="8"]').text() === playerTurn)
+        ||
+        ($('[data-cell="0"]').text() === playerTurn && $('[data-cell="4"]').text() === playerTurn && $('[data-cell="8"]').text() === playerTurn)
+        ||
+        ($('[data-cell="2"]').text() === playerTurn && $('[data-cell="4"]').text() === playerTurn && $('[data-cell="6"]').text() === playerTurn)
+      ) {
+        $('#announce-winner').text(`Player ${playerTurn} Wins!`)
+ // use tick marks - you can add in JS variable names
+      }
+    }
+    // This clears out the board and resets the variable
+  $('#clear').on('click', function(){
+    $('[data-cell], #announce-winner').text(''); // you can use null instead of empty string, or use .empty instead of .text().
+    playerTurn = 'X';
+  })
+
+  });
+
+</script>
+
+</body>
+</html>
