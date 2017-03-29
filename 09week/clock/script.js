@@ -13,15 +13,10 @@ function showTime() {
     minutes = "0" + minutes;
   }
 
-  // This gets a "handle" to the clock div in our HTML
   var timeDiv = document.getElementById('time');
-
-  // Then we set the text inside the clock div
-  // to the hours, minutes, and seconds of the current time
   timeDiv.innerText = hours + ":" + minutes + ":" + seconds;
 }
 
-// This runs the displayTime function the first time
 showTime();
 
 setInterval(showTime, 1000);
