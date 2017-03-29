@@ -1,5 +1,5 @@
 $(function(){
-    $(".flip").flip({
-        trigger: 'hover'
-    });
+  $(".flip").flip({
+    trigger: 'hover'
+  });
 });
