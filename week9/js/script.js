@@ -225,7 +225,7 @@ function showWinner(x) {
     isResult = true;
 }
 
-//Clears the game
+
 function clearFunction() {
-    location.reload();
+    window.location.reload();
 }
