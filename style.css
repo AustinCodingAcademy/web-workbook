@@ -43,13 +43,19 @@
   background-size: cover;
 }
 
+.links {
+  background-size: cover;
+  width: 100%;
+  background: url("./pics/autumn.jpg") top center;
+}
+
 .container {
   margin-left: 0;
   margin-right: 0;
   width: 100%;
-  background-size: cover;
+  /*background-size: cover;*/
   padding: 0;
-  background: url("./pics/autumn.jpg") top center;
+  /*background: url("./pics/autumn.jpg") top center;*/
 }
 
 .row {
@@ -62,7 +68,7 @@
   background: rgba(0, 132, 255, 0.3);
   background-size: cover;
 }
-
+/*
 .week1 {
 }
 
@@ -91,73 +97,85 @@
 }
 
 .week10 {
-}
+}*/
 
 .white {
   color: white;
 }
 
---------
-.fallingLeaves {
+.fallingleaves {
   text-align: center;
 }
 
-.fallingLeaves span {
+.fallingleaves span {
   display: inline-block;
   width: 80px;
   height: 80px;
   margin: -280px 40px 54px  -34px;
   background:url("./pics/leaf.png");
-  -webkit-animation: fallingLeaves 10s infinite  linear;
-  -moz-animation: fallingLeaves 10s infinite  linear;
+  -webkit-animation: fallingleaves 10s infinite  linear;
+  -moz-animation: fallingleaves 10s infinite  linear;
+  transition-timing-function: linear;
 }
 
-.fallingLeaves span:nth-child(5n+5) {
+.fallingleaves span:nth-child(5n+5) {
   -webkit-animation-delay: 0.3s;
   -moz-animation-delay: 0.3s;
 }
 
-.fallingLeaves span:nth-child(3n+2) {
+.fallingleaves span:nth-child(3n+2) {
   -webkit-animation-delay: 1.0s;
   -moz-animation-delay: 1.0s;
 }
 
-.fallingLeaves span:nth-child(2n+5) {
+.fallingleaves span:nth-child(2n+5) {
   -webkit-animation-delay: 1.7s;
   -moz-animation-delay: 1.7s;
 }
 
-.fallingLeaves span:nth-child(3n+10) {
+.fallingleaves span:nth-child(3n+10) {
   -webkit-animation-delay: 2.7s;
   -moz-animation-delay: 2.7s;
 }
 
-.fallingLeaves span:nth-child(7n+2) {
+.fallingleaves span:nth-child(7n+2) {
   -webkit-animation-delay: 3.5s;
   -moz-animation-delay: 3.5s;
 }
 
-.fallingLeaves span:nth-child(4n+5) {
+.fallingleaves span:nth-child(4n+5) {
   -webkit-animation-delay: 5.5s;
   -moz-animation-delay: 5.5s;
 }
 
-.fallingLeaves span:nth-child(3n+7) {
+.fallingleaves span:nth-child(3n+7) {
   -webkit-animation-delay: 8s;
   -moz-animation-delay: 8s;
 }
 
-@keyframes fallingLeaves {
+@keyframes fallingleaves {
   0% {
   opacity: 1;
-  transform: translate(0, 0px) rotateZ(0deg) scale(0.1,0.1);
+  transform: translate(0, 0px) rotate3d(1,2,3,0deg) scale(0.1,0.1);
+  }
+  25% {
+  opacity: 1;
+	transform: translate(100px, 400px) rotate3d(1,2,3,270deg) scale(0.3,0.3);
+  }
+  50% {
+  opacity: 1;
+	transform: translate(150px, 800px) rotate3d(1,2,3,360deg) scale(0.5,0.5);
   }
   75% {
   opacity: 1;
-	transform: translate(100px, 600px) rotate3d(1,2,3,270deg) scale(0.8,0.8);
+	transform: translate(180px, 1200px) rotate3d(1,2,3,0deg) scale(0.8,0.8);
+  }
+  90% {
+  opacity: 1;
+	transform: translate(200px, 1400px) rotate3d(1,2,3,300deg) scale(1.0,1.0);
   }
   100% {
-  opacity: 0.2;
-	transform: translate(150px, 800px) rotate3d(1,2,3,360deg) scale(1.0,1.0);
+  opacity: 0.1;
+	transform: translate(200px, 1600px) rotate3d(1,2,3,470deg) scale(1.0,1.0);
   }
 }
