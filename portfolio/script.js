@@ -1,3 +1,3 @@
-// $(".card").flip({
-//   trigger: 'hover'
-// });
+$("#card").flip({
+  trigger: 'hover'
+});
