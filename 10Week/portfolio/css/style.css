@@ -1,21 +1,40 @@
-
+body {
+  background-color: black;
+}
 
 /* This is the style for my NavBar */
 
 .navbar {
-  background: none;
+  background: black;
+  border: none;
 }
+
+
+.navbar-header a {
+  color: white !important;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 32px;
+}
+
+.navbar-nav a {
+  color: white !important;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+}
+
+
 
 /* This is for all parallax backgrounds */
 
 .parallax-window {
-    min-height: 800px;
+    min-height: 700px;
     background: transparent;
     position: relative;
     width: 100%;
 }
 
 /* This is the style for my Hero section */
+
 
 #hero h1 {
   text-align: center;
@@ -40,29 +59,136 @@
 
 /* Nothing here yet but this will be for the about/intro section */
 
+#about {
+  background-color: #F8F8F8;
+  height: 800px, auto;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#about img {
+  height: 300px;
+  width: auto;
+  border-radius: 100%;
+}
+
+#about h1 {
+  display: inline-block;
+  border-bottom: 4px solid orange;
+}
+
+#about p {
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+#about span {
+  margin: 0px 15px;
+}
+
+.about-me {
+  text-align: center;
+  height: 450px;
+  padding: 0px 90px;
+}
+
+.showme{
+/*display: none;*/
+opacity: 0.0;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+.showhim:hover .showme{
+/*display : block;*/
+opacity: 1.0;
+}
+
+/* This is the styles for Skills Section */
+
+#skills {
+  background-color: white;
+  height: 700px, auto;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#skills h1 {
+  font-size: 48px;
+  color: grey;
+  /*padding-bottom: 5px;*/
+
+}
+
+#skills hr {
+  width: 70px;
+  border: 4px solid orange;
+  margin-bottom: 70px;
+}
+
+#skills i {
+  color: grey;
+}
+
+.fa:hover {
+  color: black;
+}
+
+.skill {
+  padding: 40px 15px 0px 15px;
+  height: 400px;
+  background-color: white;
+  text-align: auto;
+}
+
+#skills p {
+  font-size: 18px;
+  color: grey;
+}
 
 /* This is the styles for Projects section */
 
 #projects {
-  background-image: url(../img/jellyfish.jpg);
-  /*background-repeat: no-repeat;*/
+  /*background-image: url(../img/ocean.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
+  background-color: lightblue;
+  background-blend-mode: multiply;*/
+  background-color: #F8F8F8;
   height: auto;
   text-align: center;
-  color: lightblue;
-  font-family: "Annie Use Your Telescope", sans-serif;
+  color: grey;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 #projects h1 {
-  font-size: 88px;
-  padding-bottom: 15px;
-  text-shadow: 2px 2px 8px black;
+  font-size: 48px;
+  /*padding-bottom: 15px;*/
+
 }
 
 #projects hr {
-  width: 200px;
+  width: 80px;
   border: 4px solid orange;
   margin-bottom: 30px;
+}
+
+.project-text {
+  padding: 20px 30px;
+}
+
+.project-text p {
+  padding: 20px 30px;
+}
+
+#projects h2 {
+  color: black;
+}
+
+#projects p {
+  color: black;
+  font-size: 18px;
 }
 
 .no-gutter > [class*='col-'] {
@@ -73,26 +199,95 @@
 .projects-img {
   height: auto;
   width: 100%;
+  border: 1px solid grey;
 }
 
-#dieantwoordimg {
-  border: 1px solid lightblue;
-}
 
 .finalproject {
   padding-bottom: 100px;
 }
 
+/* Styling for Extra Breaker Image. */
+
+#breaker {
+  height: 300px;
+}
+
+
+
 /* This is the styling for the Footer AKA Contact Me */
 
-#footer {
+#contact {
   width: 100%;
+  height: 400px;
+  background-color: #F8F8F8;
+  text-align: center;
+  font-family: "josefin sans", sans-serif;
+}
+
+#contact h1 {
+  font-size: 48px;
+  padding-top: 30px;
+  color: grey;
+  /*padding-bottom: 15px;*/
+}
+
+#contact h3 {
+  padding-top: 15px;
+  margin-bottom: 40px;
+  color: grey;
+  /*padding-bottom: 15px;*/
+}
+
+#contact hr {
+  width: 120px;
+  border: 4px solid orange;
+  margin-bottom: 30px;
+}
+
+#contact a {
+  color: black;
+  margin-bottom: 30px;
+}
+
+.contact-me {
+    margin-bottom: 30px;
+}
+
+#contact i:hover {
+  color: orange;
+
 }
 
 /* This is for tablet */
 
 @media (min-width: 768px) and (max-width: 991px) {
 
+/* Media for Hero */
+  #hero h1 {
+    left: 30%;
+  }
+
+/* Media for About */
+
+  .showme {
+    opacity: 1;
+  }
+
+  #about h3 {
+    font-size: 16px;
+  }
+
+/* Media for Skills*/
+
+  .skill {
+    height: 300px;
+  }
+
+/* Media for Contact */
+  #contact {
+   height: 500px;
+  }
 
 }
 
@@ -101,8 +296,42 @@
 
 @media (max-width: 767px) {
 
+/* Media for Nav */
+
   .navbar {
     background: black;
   }
+
+/* Media for Hero */
+
+  #hero h1 {
+    left: 10%;
+  }
+
+/* Media for About */
+
+  .showme {
+    opacity: 1;
+  }
+
+  #about h3 {
+    font-size: 16px;
+    line-height: 2em;
+  }
+
+  #about img {
+    height: 200px;
+  }
+
+/* Media for Skills*/
+
+  .skill {
+    height: 300px;
+  }
+
+/* Media for Contact */
+ #contact {
+   height: 550px;
+ }
 
 }

@@ -5,28 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+
+  <!-- Bootstrap CSS -->
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- My CSS style -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+  <!-- My Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Fredericka+the+Great|Josefin+Sans|Ubuntu" rel="stylesheet">
+
+  <!-- This is my CSS for animated fonts -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  <!-- This is for Animate on Scroll -->
+
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+
 </head>
 
-<!-- Bootstrap CSS -->
-
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- My CSS style -->
-
-  <link rel="stylesheet" href="css/style.css">
-
-<!-- My Google Fonts -->
-
-  <link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Fredericka+the+Great" rel="stylesheet">
-
-<!-- This is my CSS for animated fonts -->
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 <body>
 
   <header>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-default" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse">
@@ -35,26 +42,26 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">DIE ANTWOORD</a>
+          <a class="navbar-brand" href="#">Juan Mata</a>
         </div>
 
     <!-- Collect the nav links for toggling -->
-      <div class="collapse navbar-collapse" id="example-navbar-collapse">
+      <div class="collapse navbar-collapse pull-right" id="example-navbar-collapse">
         <ul class="nav navbar-nav">
           <li>
-            <a href="#">Tour Dates</a>
+            <a href="#about">The Designer</a>
           </li>
           <li>
-            <a href="#">Albums</a>
+            <a href="#skills">The Skills</a>
           </li>
           <li>
-            <a href="#">Merchandiz</a>
+            <a href="#projects">The Good Stuff</a>
           </li>
           <li>
-            <a href="#about-ninja-yolandi">Ninja</a>
+            <a href="#contact">Contact</a>
           </li>
           <li>
-            <a href="#">Yolandi</a>
+            <a href="../../01week/resume/index.html">Resume</a>
           </li>
         </ul>
       </div>
@@ -65,20 +72,99 @@
   </header>
 
   <main>
+
+<!-- This is my Hero Section -->
+
     <section id="hero">
       <div class="parallax-window img-responsive" data-parallax="scroll" data-image-src="img/octopus2.jpg">
       </div>
       <h1>Hello World</h1>
-      <h3>Welcome to Mata</h3>
+      <!-- <h3>Welcome to Mata</h3> -->
     </section>
-    <section>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="parallax-window img-responsive" data-parallax="scroll" data-image-src="img/tentacles.jpg">
+
+<!-- This is my About Section -->
+
+<section id="about">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1">
+        <h1>Juan Mata</h1>
+        <h3><span>Detail Oriented</span> | <span>Dependable</span> | <span>Friendly</span> | <span>Sudoku Master</span> | <span>Ocean Nerd</span></h3>
+      </div>
+      <div class="col-md-6 col-sm-12 about-me">
+        <div class="showhim"><h3>Educator</h3>
+          <div class="showme">
+            <img src="img/math.jpg" alt="teacher">
+            <p>Patient and kind-hearted. Always willing to teach something new and willing to learn something new.</p>
           </div>
         </div>
       </div>
-    </section>
+      <div class="col-md-6 col-sm-12 about-me">
+        <div class="showhim"><h3>Web Designer</h3>
+          <div class="showme">
+            <img src="img/computer.jpg" alt="teacher">
+            <p>Simple, understated, responsive designs. Always looking for a way to capture an audience.</p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-md-3 about-me">
+        <div class="showhim"><h3>Doumentary Watcher</h3>
+          <div class="showme">
+            <img src="img/teacher.png" alt="teacher">
+            <p>All about Nature documentaries.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 about-me">
+        <div class="showhim"><h3>Educator</h3>
+          <div class="showme">
+            <img src="img/teacher.png" alt="teacher">
+            <p>Enjoys teaching math and science.</p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+<!-- This is my Skills Section -->
+
+<section id="skills">
+  <div class="container-fluid">
+    <div class="row">
+      <div>
+        <h1>Skills</h1>
+        <hr size="4">
+      </div>
+
+    </div>
+      <div class="col-md-3 col-sm-6 skill">
+        <i class="fa fa-file-code-o fa-3x" aria-hidden="true"></i>
+        <h3>Web Development</h3>
+        <p>Designing clean, efficient websites. meticulously crafted with the user in mind.</p>
+      </div>
+      <div class="col-md-3 col-sm-6 skill">
+        <i class="fa fa-desktop fa-3x" aria-hidden="true"></i> <i class="fa fa-tablet fa-3x" aria-hidden="true"></i>
+        <h3>Resposive Design</h3>
+        <p>From your hand to your desk. Crafting great design that is responsive and easily accessible no matter the device.</p>
+      </div>
+      <div class="col-md-3 col-sm-6 skill">
+        <i class="fa fa-sitemap fa-3x" aria-hidden="true"></i>
+        <h3>Agile</h3>
+        <p>From wire frame to end result. Working at an efficient and steady pace. Ensuring quality work done in a timely manner.</p>
+      </div>
+      <div class="col-md-3 col-sm-6 skill">
+        <i class="fa fa-puzzle-piece fa-3x" aria-hidden="true"></i>
+        <h3>Problem Solving</h3>
+        <p>Working through errors. Finding solutions. Never stopping until completely satisfied.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- This is my Projects Section -->
+
     <section id="projects">
 
 <!-- Div for 1st Project -->
@@ -89,11 +175,18 @@
             <h1>Projects</h1>
             <hr size="4">
           </div>
-          <div class="col-md-5 col-md-offset-1">
-            <img class="projects-img" src="img/project1.png" alt="">
+          <div class="visible-xs project-text">
+            <h2><a href="../../04week/01checkpoint/index.html" target="_blank">PenPal Schools Mock</a><h2>
+            <br>
+            <p>A reimagining of an established educational site.</p>
           </div>
-          <div class="col-md-5">
-
+          <div class="col-sm-5 col-sm-offset-1">
+            <a href="../../04week/01checkpoint/index.html" target="_blank"><img class="projects-img" src="img/project1.png" alt=""></a>
+          </div>
+          <div class="col-sm-5 hidden-xs project-text">
+            <h2><a href="../../04week/01checkpoint/index.html" target="_blank">PenPal Schools Mock</a><h2>
+            <br>
+            <p>A reimagining of an established educational site.</p>
           </div>
         </div>
       </div>
@@ -102,12 +195,15 @@
 
       <div class="container-fluid">
         <div class="row no-gutter">
-          <div class="col-md-5 col-md-offset-1">
+          <div class="col-sm-5 col-sm-offset-1 project-text">
+            <h2><a href="../../08week/redirect/age.html" target="_blank">Mock Winery</a></h2>
+            <br>
+            <p>If this doesn't make you want a glass of wine I don't know what will.</p>
+          </div>
+          <div class="col-sm-5">
+            <a href="../../08week/redirect/age.html" target="_blank"><img class="projects-img" src="img/project2.png" alt=""></a>
+          </div>
 
-          </div>
-          <div class="col-md-5">
-            <img class="projects-img" src="img/project2.png" alt="">
-          </div>
         </div>
       </div>
 
@@ -115,11 +211,18 @@
 
       <div class="container-fluid">
         <div class="row no-gutter">
-          <div class="col-md-5 col-md-offset-1">
-            <img id="dieantwoordimg" class="projects-img" src="img/project3.png" alt="">
+          <div class="visible-xs project-text">
+            <h2><a href="../../06week/forms/index.html" target="_blank">Die Antwoord Mock Site</a></h2>
+            <br>
+            <p>A look into the world of South African Alternative Hip Hop.</p>
           </div>
-          <div class="col-md-5">
-
+          <div class="col-sm-5 col-sm-offset-1">
+            <a href="../../06week/forms/index.html" target="_blank"><img id="dieantwoordimg" class="projects-img" src="img/project3.png" alt=""></a>
+          </div>
+          <div class="col-sm-5 hidden-xs project-text">
+            <h2><a href="../../06week/forms/index.html" target="_blank">Die Antwoord Mock Site</a></h2>
+            <br>
+            <p>A look into the world of South African Alternative Hip Hop.</p>
           </div>
         </div>
       </div>
@@ -128,23 +231,67 @@
 
       <div class="container-fluid finalproject">
         <div class="row no-gutter">
-          <div class="col-md-5 col-md-offset-1">
-
+          <div class="col-sm-5 col-sm-offset-1 project-text">
+            <h2><a href="../../09week/tictactoe/index.html" target="_blank">Tic-Tac-Toe</a></h2>
+            <br>
+            <p>A classic game for the ages.</p>
           </div>
-          <div class="col-md-5">
-            <img class="projects-img" src="img/project4.png" alt="">
+          <div  class="col-sm-5">
+            <a href="../../09week/tictactoe/index.html" target="_blank"><img class="projects-img" src="img/project4.png" alt=""></a>
           </div>
         </div>
       </div>
     </section>
+<!-- This ends the Projects Section -->
+
+<!-- A breaker image -->
+
+<section id="breaker">
+  <div class="parallax-window img-responsive" data-parallax="scroll" data-image-src="img/suctions.jpg">
+  </div>
+</section>
+
   </main>
+
+<!-- This is my Contact Section -->
+
   <footer>
-    <img id="footer" src="img/octopus-green.jpg" alt="">
+    <section id="contact">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>Contact Me</h1>
+            <hr size="4">
+            <h3>Let's Work!</h3>
+          </div>
+          <div class="col-md-3 col-xs-6 contact-me">
+            <a href="mailto:jmata0012@gmail.com"><i class="fa fa-paper-plane-o fa-4x" aria-hidden="true"></i></a>
+            <h4>Email Me</h4>
+          </div>
+          <div class="col-md-3 col-xs-6 contact-me">
+            <a href="https://github.com/juanmata0012" target="_blank"><i class="fa fa-github fa-4x" aria-hidden="true"></i></a>
+            <h4>GitHub</h4>
+          </div>
+          <div class="col-md-3 col-xs-6 contact-me">
+            <i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i>
+            <h4>LinkedIn</h4>
+          </div>
+          <div class="col-md-3 col-xs-6 contact-me">
+            <a href="https://www.facebook.com/juan.mata.161" target="_blank"><i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i></a>
+            <h4>Facebook</h4>
+          </div>
+        </div>
+      </div>
+    </section>
   </footer>
 
 
 
   <!-- These are my JavaScript files -->
+
+  <!-- This is for fontawesome -->
+
+  <script src="https://use.fontawesome.com/13e6cea7a3.js"></script>
 
   <!-- JQuery CDN script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -155,5 +302,20 @@
 
     <script src="js/parallax.js"></script>
 
+<!-- This is for Animate on Scroll -->
+
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
 </body>
 </html>
+
+<!-- Use this maybe for the end quote -->
+
+<!-- <section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="parallax-window img-responsive" data-parallax="scroll" data-image-src="img/tentacles.jpg">
+      </div>
+    </div>
+  </div>
+</section> -->
