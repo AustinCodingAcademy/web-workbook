@@ -1,31 +1,122 @@
-#nav {}
 
-#hero {
-    padding-top: 350px;
+main{
+  background-color: #FFB85F;
+}
+
+#nav {font-family: 'Marcellus SC', serif;
+color: white;
+font-size: 20px;}
+
+
+#hero {color: #00AAA0;
+    padding-top: 0;
     text-align: center;
 }
-.video{ 
 
-height: 700px;
-width: auto;
+
+.with{  margin-left: 40px;
+color:  #FCF4D9;
+
+}
+/*MY FLEXBOX CSS*/
+
+#flexbox{
+
+display: flex;
+background-color: transparent;
+height: 400px;
+width: 300px;
+font-size: 100px;
+justify-content: space-around;
+}
+
+#design{ color: #462066;
+order: 1;}
+
+#slash{
+order: 2;}
+
+#function{color:	  #FF7A5A;
+  order: 3;
+
+}
+@media screen and (min-width: 300px)
+main.css:2
+.button {
+    padding: 0.4em 1.8em 0.35em;
 }
 
 
 
 
-footer p { border-top: solid;
-  border-color: black;
+/* Style the buttons that are used to open and close the accordion panel */
+button.accordion {
+
+    background-color: transparent;
+    color: #00AAA0;
+    cursor: pointer;
+    padding: 18px;
+    width: 40%;
+font-family: 'VT323' , monospace;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #462066;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {font-family: 'Lobster';
+    padding: auto;
+    background-color: #FCF4D9;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.contact{color:  #FCF4D9;
+font-family: 'Gloria Hallelujah', cursive;
+
+  text-align: center;
+}
+p{
+color:  #FF7A5A;
+
+}
+.button {
+    position: relative;
+    display: table;
+    margin: 0 auto;
+    border: 1px solid Hex: #8ED2C9;
+    padding: 0.3em 0.5em;
+    background: transparent;
+    font-size: 0.95em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.23em;
+    color: #462066;
+    overflow: hidden;
+    transition: 0.3s all ease-in-out;
+}
+
+footer p { background-color: #8ED2C9;
+  color: #462066;
+  border-top: solid;
+  border-color: #8ED2C9;
   border-width: .05em;
     display: block;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 16px;
     line-height: 2em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.0em;
     display: block;
-    -webkit-margin-before: 1em;
+    /*-webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
     -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
+    -webkit-margin-end: 0px;*/
     text-align: center;
     padding-top: 3em;
     padding-bottom: 4em;
