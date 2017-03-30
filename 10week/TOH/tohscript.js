@@ -1,6 +1,6 @@
 $(document).ready(function() {
   let $block = null;
-  $('[data-stack]').click(function() {
+  $('[data-stack]').bind("click touchstart", function() {
 //check to see if you have block in hand
     let $message = "";
     if ($block === null) {
