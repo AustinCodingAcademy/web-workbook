@@ -1,9 +1,10 @@
 $(function() {
   let playerTurn = 'X';
   $('[data-cell]').on('click touchstart', function(event) {
-    $(this).text(playerTurn);
     event.preventDefault();
     alert("Was preventDefault() called: " + event.isDefaultPrevented());
+    $(this).text(playerTurn);
+
 // Check to see if there's a winner
     if (checkWin()) {
       $('#announce-winner').text(playerTurn + " wins!");
