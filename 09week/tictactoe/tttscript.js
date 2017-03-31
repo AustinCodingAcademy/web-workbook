@@ -1,6 +1,6 @@
 $(function() {
   let playerTurn = 'X';
-  $('[data-cell]').bind("vclick touchstart", function() {
+  $('[data-cell]').bind("click touchstart", function() {
     $(this).text(playerTurn);
 // Check to see if there's a winner
     if (checkWin()) {
@@ -8,7 +8,7 @@ $(function() {
       // $('#announce-winner').text(`Player ${playerTurn} Wins!`);
     }
 // Clears the board and fades a clean board back in
-    $("button").bind("vclick touchstart", function() {
+    $("button").bind("click touchstart", function() {
       $("div[data-cell]").fadeOut(1000,function(){
         $("div[data-cell]").empty();
         $('#announce-winner').empty();
