@@ -1,8 +1,8 @@
 $(function() {
   let playerTurn = 'X';
-  $('[data-cell]').on('click', function(event) {
-    // event.preventDefault();
-    // alert("Was preventDefault() called: " + event.isDefaultPrevented());
+  $('[data-cell]').on('click touchstart', function(event) {
+    event.preventDefault();
+    alert("Was preventDefault() called: " + event.isDefaultPrevented());
     $(this).text(playerTurn);
 
 // Check to see if there's a winner
@@ -20,12 +20,13 @@ $(function() {
   });
 
 // Clears the board and fades a clean board back in
-  $("button").on('click', function(event) {
-    event.preventDefault;
-    $("div[data-cell]").fadeOut(1000,function(){
-      $("div[data-cell]").empty();
+  $("button").on('click touchstart', function(event) {
+    event.preventDefault();
+    alert("clear button pushed");
+    $("div a[data-cell]").fadeOut(1000,function(){
+      $("div a[data-cell]").empty();
       $('#announce-winner').empty();
-      $("div").fadeIn(1000);
+      $("div a").fadeIn(1000);
       playerTurn = 'X';
     })
   })
