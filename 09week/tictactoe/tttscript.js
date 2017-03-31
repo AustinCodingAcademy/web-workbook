@@ -1,6 +1,6 @@
 $(function() {
   let playerTurn = 'X';
-  $('[data-cell]').on('click touchstart', function(event) {
+  $('[data-cell]').on('touchstart', function(event) {
     event.preventDefault();
     alert("Was preventDefault() called: " + event.isDefaultPrevented());
     $(this).text(playerTurn);
@@ -20,7 +20,7 @@ $(function() {
   });
 
 // Clears the board and fades a clean board back in
-  $("button").on('click touchstart', function(event) {
+  $("button").on('touchstart', function(event) {
     event.preventDefault();
     alert("clear button pushed");
     $("div a[data-cell]").fadeOut(1000,function(){
