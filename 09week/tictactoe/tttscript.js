@@ -1,6 +1,6 @@
 $(function() {
   let playerTurn = 'X';
-  $('[data-cell]').click(function() {
+  $('[data-cell]').bind("click touchstart", function() {
     $(this).text(playerTurn);
 // Check to see if there's a winner
     if (checkWin()) {
