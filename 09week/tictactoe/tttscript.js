@@ -1,6 +1,7 @@
 $(function() {
   let playerTurn = 'X';
-  $('[data-cell]').bind("click touchstart", function() {
+  $('[data-cell]').on('click touchstart', function(event) {
+    event.preventDefault();
     $(this).text(playerTurn);
 // Check to see if there's a winner
     if (checkWin()) {
@@ -8,7 +9,8 @@ $(function() {
       // $('#announce-winner').text(`Player ${playerTurn} Wins!`);
     }
 // Clears the board and fades a clean board back in
-    $("button").bind("click touchstart", function() {
+    $("button").on('click touchstart', function(event) {
+      event.preventDefault;
       $("div[data-cell]").fadeOut(1000,function(){
         $("div[data-cell]").empty();
         $('#announce-winner').empty();
