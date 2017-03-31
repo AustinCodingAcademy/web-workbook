@@ -1,8 +1,8 @@
 $(function() {
   let playerTurn = 'X';
   $('[data-cell]').on('click', function(event) {
-    event.preventDefault();
-    alert("Was preventDefault() called: " + event.isDefaultPrevented());
+    // event.preventDefault();
+    // alert("Was preventDefault() called: " + event.isDefaultPrevented());
     $(this).text(playerTurn);
 
 // Check to see if there's a winner
@@ -29,7 +29,7 @@ $(function() {
       playerTurn = 'X';
     })
   })
-  
+
 // Check to see if there's a winner function
   function checkWin() {
     if(($('[data-cell="0"]').text() === playerTurn &&
