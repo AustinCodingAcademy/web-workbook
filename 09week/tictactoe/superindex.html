@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tic Tac Toe</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link type="text/css" rel="stylesheet" href="css/superstyle.css">
+
+</head>
+
+<body>
+    <div id="vip">
+        <a href="index.html">Exit VIP</a>
+    </div>
+
+    <div id="title">
+        <h1>Super Tic Tac Toe!</h1>
+    </div>
+    <div class="row">
+        <div data-cell="0"></div>
+        <div data-cell="1"></div>
+        <div data-cell="2"></div>
+        <div data-cell="3"></div>
+    </div>
+
+    <div class="row">
+        <div data-cell="4"></div>
+        <div data-cell="5"></div>
+        <div data-cell="6"></div>
+        <div data-cell="7"></div>
+    </div>
+
+    <div class="row">
+        <div data-cell="8"></div>
+        <div data-cell="9"></div>
+        <div data-cell="10"></div>
+        <div data-cell="11"></div>
+    </div>
+
+    <div class="row">
+        <div data-cell="12"></div>
+        <div data-cell="13"></div>
+        <div data-cell="14"></div>
+        <div data-cell="15"></div>
+    </div>
+
+    <div id="announce-winner"></div>
+    <button id="clear">Clear Board</button>
+
+    <!-- THIS IS MY JQUERY LINK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="./script.js"></script> -->
+
+    <script>
+        // Super Tic Tac Toe
+        $(document).ready(function() {
+            var playerTurn = 'X';
+            // let playerTurn = 'X' you can use "let" instead of var. It's better practice.;
+            // const playerTurn = 'X' would not allow you to re-define it.;
+            $('[data-cell]').on('click', function() {
+                if ($(this).text() === '') {
+                    $(this).text(playerTurn);
+                    checkForWin();
+                    if (playerTurn === 'X') {
+                        playerTurn = 'O';
+                    } else {
+                        playerTurn = 'X';
+                    }
+                }
+            });
+
+            function checkForWin() {
+                if (
+                    ($('[data-cell="0"]').text() === playerTurn &&
+                        $('[data-cell="4"]').text() === playerTurn &&
+                        $('[data-cell="8"]').text() === playerTurn &&
+                        $('[data-cell="12"]').text() === playerTurn) ||
+                    ($('[data-cell="1"]').text() === playerTurn &&
+                        $('[data-cell="5"]').text() === playerTurn &&
+                        $('[data-cell="9"]').text() === playerTurn &&
+                        $('[data-cell="13"]').text() === playerTurn) ||
+                    ($('[data-cell="2"]').text() === playerTurn &&
+                        $('[data-cell="6"]').text() === playerTurn &&
+                        $('[data-cell="10"]').text() === playerTurn &&
+                        $('[data-cell="14"]').text() === playerTurn) ||
+                    ($('[data-cell="3"]').text() === playerTurn &&
+                        $('[data-cell="7"]').text() === playerTurn &&
+                        $('[data-cell="11"]').text() === playerTurn &&
+                        $('[data-cell="15"]').text() === playerTurn) ||
+                    ($('[data-cell="0"]').text() === playerTurn &&
+                        $('[data-cell="1"]').text() === playerTurn &&
+                        $('[data-cell="2"]').text() === playerTurn &&
+                        $('[data-cell="3"]').text() === playerTurn) ||
+                    ($('[data-cell="4"]').text() === playerTurn &&
+                        $('[data-cell="5"]').text() === playerTurn &&
+                        $('[data-cell="6"]').text() === playerTurn &&
+                        $('[data-cell="7"]').text() === playerTurn) ||
+                    ($('[data-cell="8"]').text() === playerTurn &&
+                        $('[data-cell="9"]').text() === playerTurn &&
+                        $('[data-cell="10"]').text() === playerTurn &&
+                        $('[data-cell="11"]').text() === playerTurn) ||
+                    ($('[data-cell="12"]').text() === playerTurn &&
+                        $('[data-cell="13"]').text() === playerTurn &&
+                        $('[data-cell="14"]').text() === playerTurn &&
+                        $('[data-cell="15"]').text() === playerTurn) ||
+                    ($('[data-cell="0"]').text() === playerTurn &&
+                        $('[data-cell="5"]').text() === playerTurn &&
+                        $('[data-cell="10"]').text() === playerTurn &&
+                        $('[data-cell="15"]').text() === playerTurn) ||
+                    ($('[data-cell="3"]').text() === playerTurn &&
+                        $('[data-cell="6"]').text() === playerTurn &&
+                        $('[data-cell="9"]').text() === playerTurn) &&
+                    $('[data-cell="12"]').text() === playerTurn) {
+                    $('#announce-winner').text(`Player ${playerTurn} Wins!`)
+                }
+
+            }
+            // this clears out the board and resets the variable
+            $('#clear').on('click', function() {
+                $('[data-cell], #announce-winner').text('');
+                playerTurn = 'X';
+            })
+
+
+        });
+    </script>
+
+</body>
+
+</html>

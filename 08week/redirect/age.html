@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Are You Old Enough to Enter?</title>
+
+  <link type="text/css" rel="stylesheet" href="css/agepage.css">
+
+</head>
+<body>
+
+  <h1>Are you at least 21 years old?</h1>
+
+  <input type="text" name="team" id="team" placeholder="yes or no?">
+  <button onclick="redirect()">Submit</button>
+
+  <script>
+    function redirect(){
+    if(document.getElementById('team').value === 'yes')
+    {
+    window.location = '../../07week/Checkpoint2/index.html';
+  }else if (document.getElementById('team').value ==='no')
+    {
+    window.location = './tooyoung.html';
+  }else
+  {
+    alert('Yes or no! Have you been drinking already? If so please do not come to our site!');
+  }
+  }
+
+// window.location = '../../07week/Checkpoint2/index.html'
+// Have Students install Google Chrome's Cache Killer'
+
+  </script>
+
+
+<!-- NOTE if using external Javascript AND javascript from body file, put external first -->
+
+<!-- Javascript linked from an external file -->
+<script type="text/javascript" src="js/redirect.js"></script>
+
+<!-- Javascript in the Body -->
+  <script src="/js/myScript1.js"></script>
+
+</body>
+</html>

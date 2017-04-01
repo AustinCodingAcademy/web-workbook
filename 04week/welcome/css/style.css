@@ -1,0 +1,107 @@
+body{
+  width: 100%;
+  margin: 0 auto;
+}
+
+main #hero, main #title{
+  margin: 0 auto;
+}
+
+#title h2{
+  font-size: 48px;
+}
+
+#hero{
+  width: 90%;
+  height: 400px;
+  background-color: #2bcdc0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 48px;
+  color: white;
+  padding-top: 175px;
+}
+
+/*putting auto after px will change if the browser pushes an element down*/
+
+
+
+#title{
+  width: 90%;
+  height: 400px auto;
+  background-color: black;
+  display: flex;
+  flex-flow: row wrap;
+justify-content: center;
+
+}
+
+.title-box{
+  color: white;
+  border-style: border-box;
+  width: 18%;
+  padding: 0 15px;
+  justify-content: center;
+  text-align: center;
+  margin: 70px 50px;
+
+}
+
+.box-1{
+  border-top: 40px;
+  border-color: #2fabd5;
+  border-size: 20px;
+  border-style: solid;
+}
+
+.box-2{
+  border-top: 40px;
+  border-color: #f46731;
+  border-size: 20px;
+  border-style: solid;
+}
+
+.box-3{
+  border-top: 40px;
+  border-color: #2bcdc0;
+  border-size: 20px;
+  border-style: solid;
+}
+
+/*start of media section*/
+
+@media (max-width: 767px) {
+
+    #hero{
+      background-color: #33A8DD;
+    }
+
+
+.title-box{
+  color: black;
+  border-style: border-box;
+  width: 90%;
+  padding: 0 15px;
+  justify-content: center;
+  text-align: center;
+  margin: 70px 50px;
+
+}
+
+#title{
+background-color: #f7f5f6;
+height: auto;
+}
+
+#hero h1 {
+  font-size: 48px;
+  color: white;
+  padding-top: 175px;
+  word-wrap: break-word;
+}
+
+
+}
