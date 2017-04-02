@@ -17,7 +17,7 @@ alert('tttscript accessed');
 //     console.log('old fashioned mouse events');
 // }
 
-  $('[data-cell]').on('tap', function() {
+  $('[data-cell]').on('singletap', function() {
     alert('into tap listener')
     // event.preventDefault();
     // alert("Was preventDefault() called: " + event.isDefaultPrevented());
