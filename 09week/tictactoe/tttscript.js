@@ -16,8 +16,8 @@ if ('onpointerdown' in window) {
     console.log('old fashioned mouse events');
 }
   $('[data-cell]').on(clickEvent, function(event) {
-    // event.preventDefault();
-    alert("Was preventDefault() called: " + event.isDefaultPrevented());
+    event.preventDefault();
+    // alert("Was preventDefault() called: " + event.isDefaultPrevented());
     $(this).text(playerTurn);
 
 // Check to see if there's a winner
@@ -36,7 +36,7 @@ if ('onpointerdown' in window) {
 
 // Clears the board and fades a clean board back in
   $("button").on('click', function(event) {
-    // event.preventDefault();
+    event.preventDefault();
     alert("clear button pushed");
     $("div a[data-cell]").fadeOut(1000,function(){
       $("div a[data-cell]").empty();
