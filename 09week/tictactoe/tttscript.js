@@ -17,7 +17,7 @@ alert('tttscript accessed');
 //     console.log('old fashioned mouse events');
 // }
 
-  $('[data-cell]').on('click', function(event) {
+  $('[data-cell]').on('tap', function(event) {
     event.preventDefault();
     // alert("Was preventDefault() called: " + event.isDefaultPrevented());
     $(this).text(playerTurn);
@@ -37,7 +37,7 @@ alert('tttscript accessed');
   });
 
 // Clears the board and fades a clean board back in
-  $("button").on('click', function(event) {
+  $("button").on('tap', function(event) {
     event.preventDefault();
     alert("clear button pushed");
     $("div a[data-cell]").fadeOut(1000,function(){
