@@ -1,7 +1,22 @@
 $(function() {
   let playerTurn = 'X';
-  $('[data-cell]').on('click touchstart', function(event) {
-    event.preventDefault();
+  var clickEvent;
+
+if ('onpointerdown' in window) {
+    // use 'pointerdown' if pointerEvent API is supported
+    clickEvent = 'pointerdown';
+    console.log('pointerEvents used');
+} else if ('ontouchstart' in window) {
+    // use 'touchstart' if touch device
+    clickEvent = 'touchstart';
+    console.log('touch device');
+} else {
+    // else use mouse event
+    clickEvent = 'click';
+    console.log('old fashioned mouse events');
+}
+  $('[data-cell]').on(clickEvent, function(event) {
+    // event.preventDefault();
     alert("Was preventDefault() called: " + event.isDefaultPrevented());
     $(this).text(playerTurn);
 
@@ -20,8 +35,8 @@ $(function() {
   });
 
 // Clears the board and fades a clean board back in
-  $("button").on('click touchstart', function(event) {
-    event.preventDefault();
+  $("button").on('click', function(event) {
+    // event.preventDefault();
     alert("clear button pushed");
     $("div a[data-cell]").fadeOut(1000,function(){
       $("div a[data-cell]").empty();
