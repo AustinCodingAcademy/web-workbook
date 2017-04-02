@@ -1,4 +1,5 @@
 $(function() {
+alert('tttscript accessed');
   let playerTurn = 'X';
 //   var clickEvent;
 //
