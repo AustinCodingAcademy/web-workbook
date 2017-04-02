@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).on('pagecreate',function() {
 alert('tttscript accessed');
   let playerTurn = 'X';
 //   var clickEvent;
