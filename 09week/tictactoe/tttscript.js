@@ -1,26 +1,8 @@
-$(document).on('pagecreate',function() {
+$(document).ready(function() {
 alert('tttscript accessed');
   let playerTurn = 'X';
-//   var clickEvent;
-//
-// if ('onpointerdown' in window) {
-//     // use 'pointerdown' if pointerEvent API is supported
-//     clickEvent = 'pointerdown';
-//     console.log('pointerEvents used');
-// } else if ('ontouchstart' in window) {
-//     // use 'touchstart' if touch device
-//     clickEvent = 'touchstart';
-//     console.log('touch device');
-// } else {
-//     // else use mouse event
-//     clickEvent = 'click';
-//     console.log('old fashioned mouse events');
-// }
-
-  $('[data-cell]').on('singletap', function() {
+  $('[data-cell]').on('click', function() {
     alert('into tap listener')
-    // event.preventDefault();
-    // alert("Was preventDefault() called: " + event.isDefaultPrevented());
     $(this).text(playerTurn);
 
 // Check to see if there's a winner
@@ -38,7 +20,7 @@ alert('tttscript accessed');
   });
 
 // Clears the board and fades a clean board back in
-  $("button").on('tap', function(event) {
+  $("button").on('click', function(event) {
     // event.preventDefault();
     alert("clear button pushed");
     $("div a[data-cell]").fadeOut(1000,function(){
