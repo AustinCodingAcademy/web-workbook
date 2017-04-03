@@ -4,112 +4,144 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
   <title>J.D. Rowlett</title>
-  <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Squada+One" rel="stylesheet">
-
-  <!-- Bootstrap Core CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <!--Google Font: Share Tech Mono-->
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
 </head>
 
 <header>
-  <!-- start navbar -->
- <nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="https://jdrowlett.github.io/index.html">PORTFOLIO</a></li>
-        <li><a href="http://jdrowlett.github.io/about/index.html">ABOUT</a></li>
-        <li><a href="http://www.therowlettreport.blogspot.com/"></a>BLOG</li>
-        <li><a href="https://jdrowlett.github.io/contact/index.html">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  <!--NAVBAR-->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aira-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+      <!--LOGO in top left corner goes here-->
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav pull-right">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="http://therowlettreport.blogspot.com/">BLOG</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <!-- JQuery CDN script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </header>
 
-  <body>
+<body>
 
-<!--About page & First parallax-->
-    <section id="about">
-        <div class="parallax-window" data-parallax="scroll" data-image-src="img/tron.jpg">J.D. Rowlett</div>
+  <section id="home">
+    <div class="parallax-window" data-parallax="scroll" data-image-src="img/tron.jpg">J.D. Rowlett</div>
+  </section>
+    <section id="pictext">
+      <div class="about-text">
+        <hr></hr>
+          <p>Welcome to my site! My name is J.D. Rowlett and I am a <b>junior web-developer</b> with a focus on <b>back-end development.</b> I love working with data, especially analysis and architecture. I have a background in database management working for companies such as <b>Apple</b> and <b>Google.</b></p>
+          <br>
+          <p>I live in Austin, Texas, where I am currently studying full-stack web development at the Austin Coding Academy. My goal is to pursue a career in database management. I am skilled in <b>HTML5, CSS3</b> and <b>Bootstrap</b>, as well as back-end design, <b>JavaScript,</b> <b>MySQL</b> and <b>JQuery.</b></p>
+          <br>
+          <p>I am a dedicated worker who is easy to get along with. I've worked many years in both team environments as well as on my own and I hold myself to a high standard of quality work in all that I do. If you are looking for a backend data developer please feel free to <a href="mailto:rowlettjason@gmail.com" target="_top">email me.</a> You can also <a href="https://jdrowlett.github.io/web-workbook/01week/resume/index.html">view my resume</a></p>
+        <hr></hr>
+      </div>
+      <div class="profile-pic">
+        <img src="img/portrait-sm.png" alt="J.D. Rowlett">
+      </div>
     </section>
+  </section>
 
-      <section id="masthead">
-        <div class="scripttext">
-          <hr></hr>
+  <!--ABOUT PAGE------------------------------------------------------------------------------------------------->
+  <section id="about">
+    <div class="parallax-window-about" data-parallax="scroll" data-image-src="img/tron.jpg">About</div>
+      <div class="becca">
+        <div class="becca-pic">
+          <img src="img/becca.png">
+        </div>
+        <div class="becca-text">
+          <p>My wife and I live in Austin, Texas. I enjoy going to the movies and trying new restaurants in town (there are so many good dives!).  I also enjoy rowing crew downtown on Town Lake at the Austin Rowing Club. I row four mornings per week and I compete in local regattas throughout the year.</p>
+        </div>
+      </div>
 
-          <hr></hr>
+      <div class="rowing">
+        <div class="rowing-pic">
+          <img src="img/rowing.jpg" alt="Rowing" style="width:80%;height:350px;"></div>
         </div>
-        <div class="profile">
-          <img src="img/jdrowlett.jpg" width="425" height="450">
-          <a href="https://jdrowlett.github.io/web-workbook/01week/resume/index.html"><b>Resume</b></a>
+      </div>
+      <div class="austin">
+        <div class="austin-pic">
+          <img src="img/austin.jpg">
         </div>
-      </section>
+        <div class="austin-text">
+          <p>I love Austin and all it provides. It is an exciting place to live and work and it is truly a unique city. If you are an Austin-based employer looking for a backend developer with database management experience I would love to hear from you!</p>
+        </div>
+      </div>
+  </section>
 
-<!--Portfolio parallax section-->
-    <section id="portfolio">
-        <div class="parallax-window" data-parallax="scroll" data-image-src="img/tron.jpg">Portfolio</div>
-    </section>
+<!--PORTFOLIO--------------------------------------------------------------------------------------------------->
+  <section id="portfolio">
+    <div class="parallax-window-portfolio" data-parallax="scroll" data-image-src="img/tron.jpg">Portfolio</div>
+    <div class="container-one">
+      <div><a href="https://jdrowlett.github.io/web-workbook/02week/nasa/index.html"><img src="img/nasa.png">
+        <p>NASA</p></a></div>
+      <div><a href="https://jdrowlett.github.io/web-workbook/04week/01checkpoint/index.html"><img src="img/grid.png"><p>Mobile App</p></a></div>
+      <div><a href="https://jdrowlett.github.io/web-workbook/05week/Restaurant/index.html"><img src="img/restaurant.png"><p>Order Takeout</p></a></div>
+    </div>
+    <div class="container-two">
+      <div><a href="https://jdrowlett.github.io/web-workbook/06week/band/index.html"><img src="img/band.png"><p>Led Zeppelin</p></a></div>
+      <div><a href="https://jdrowlett.github.io/web-workbook/08week/age_verification/index.html"><img src="img/verification.png"><p>Age Verification</p></a></div>
+      <div><a href="https://jdrowlett.github.io/web-workbook/09week/tic-tac-toe/index.html"><img src="img/tictactoe.png"><p>Tic-Tac-Toe</p></a></div>
+    </div>
+  </section>
 
-<!--PORTFOLIO work sample icons-->
-      <section id="row-one">
-        <div class="nasa">
-          <h4>NASA</h4>
-            <a href="https://jdrowlett.github.io/web-workbook/02week/nasa/index.html">
-            <img src="img/nasa.png" alt="NASA" width="250px" height="200px" border="0">
-            </a>
+<!--CONTACT----------------------------------------------------------------------------------------------------->
+  <section id="contact">
+    <div class="parallax-window-contact" data-parallax="scroll" data-image-src="img/tron.jpg">Contact</div>
+      <div class="container-three">
+        <div class="github">
+          <a href="https://www.github.jdrowlett.io/"><img src="img/git.png"></a>
         </div>
-        <div class="takeout">
-          <h4>Order Takeout</h4>
-            <a  href="https://jdrowlett.github.io//web-workbook/05week/Restaurant/index.html">
-            <img src="img/restaurant.png" alt="Order Takeout" width="275px" height="200px" border="0"></a>
-          <hr></hr>
+        <div class="linkedin">
+          <a href="https://www.linkedin.com/in/j-d-rowlett-355181106/"><img src="img/linkedin.png"></a>
         </div>
-        <div class="lz">
-          <h4>Led Zeppelin</h4>
-            <a href="https://jdrowlett.github.io/web-workbook/06week/band/index.html">
-            <img src="img/band.png"></a>
-          <hr></hr>
+        <div class="blog">
+          <a href="http://www.therowlettreport.blogspot.com"><img src="img/blog.png"></a>
         </div>
-      </section>
+        <div class="twitter">
+          <a href="https://www.twitter.com/jdrowl"><img src="img/twitter.png"></a>
+        </div>
+      </div>
+      <div class="container-four">
+        <div class="email">
+          <a href="mailto:rowlettjason@gmail.com"><img src="img/email.png"></a>
+          <p>rowlettjason@gmail.com</p>
+        </div>
+        <div class="phone">
+          <img src="img/phone.png">
+          <p>(832) 649-0460</p>
+        </div>
+      </div>
+  </section>
 
-<!--Second Row of work sample icons-->
-      <section id="row-two">
-        <div class="winery">
-          <h4>Winery</h4>
-            <a  href="https://jdrowlett.github.io/web-workbook/07week/Checkpoint2/index.html"><img src="img/winery.png"></a>
-          <hr></hr>
-        </div>
-        <div class="grid">
-          <h4>Grid Mobile App</h4>
-          <a  href="https://jdrowlett.github.io/web-workbook/04week/01checkpoint/index.html"><img src="img/grid.png"></a>
-          <hr></hr>
-        </div>
-        <div class="tictactoe">
-          <h4>Tic-Tac-Toe!</h4>
-            <a href="https://jdrowlett.github.io/web-workbook/09week/tic-tac-toe/index.html"><img src="img/tictactoe.png"></a>
-          <hr></hr>
-        </div>
-      </section>
+<!--FOOTER SCRIPTS--------------------------------------------------------->
+    <!-- JQuery CDN script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--BOOTSTRAP-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <!--PARALLAX-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <!--JAVASCRIPT-->
+    <script src="js/script.js"></script>
 
-  <br>
   <footer>J.D. Rowlett | 2017</footer>
-
-
-<!--JQuery files-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/parallax.min.js"></script>
-
-  </body>
+</body>
 </html>
