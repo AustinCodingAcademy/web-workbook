@@ -1,49 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!--bootstrap css-->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-  <!--stylesheet-->
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--bootstrap css-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <!--link to my google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!--Link for font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
 </head>
-<body>
 
-<header>
-  <nav class= "top-bar">
-    <div class= "container">
-      <div class="row">
-        <div class="col-sm-6">
-          <ul class="list-inline">
-          </ul>
-          <li><a href="#"><span class="glyphicon glyphicon-envelope"></span><h5> demarcogleason@gmail.com</h5></a> </li>
-        </div> <!--col-sm-6-->
-      </div> <!--row-->
-    </div> <!--container-->
-  </nav><!--top-bar-->
-</header>
+<body id="homePage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <main>
 
-<main>
-  <section id="hero" class="continer-fluid">
-    <div class="row">
-        <div class="col-xs-10 hero-text">
-<img src="img/space.jpg">
-</div> <!--col-xs-10-->
-</div> <!--row-->
-</section>
-</main>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#homeNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+                </div>
+                <div class="collapse navbar-collapse" id="homeNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#i-do">WHAT I DO</a></li>
+                        <li><a href="#my-work">MY WORK</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--copy in header-->
+        <div class="jumbotron text-center">
+            <h1 class="header-copy">DeMarco Gleason</h1>
+            <p class="header-copy">I specialize in front end development</p>
+        </div>
+
+        <!-- About me -->
+        <div id="about" class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 text-center about-me">
+                    <h2>Who I am</h2><br>
+                    <p>I'm a Front-end Web Developer based in San Antonio, Tx. I create awesome stuff for web sites. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+
+                </div>
+            </div>
+        </div>
+        <!--my goal-->
+        <div class="container-fluid bg-grey">
+            <div class="row">
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-globe logo slideanim"></span>
+                </div>
+                <div class="col-sm-8">
+                    <h2>My Goal</h2><br>
+                    <h4><strong>Goal:</strong> My goal is to provide quality solutions to your technology needs. To surpass your expectations and help you to grow your business endeavors.</h4><br>
+                </div>
+            </div>
+        </div>
+
+        <!-- services -->
+        <div id="i-do" class="container-fluid text-center">
+            <h4>What I do</h4>
+            <br>
+            <div class="row slideanim">
+                <div class="col-sm-3">
+                    <i class="fa fa-file-code-o fa-4x" aria-hidden="true"></i>
+                    <h4>Web Development</h4>
+                    <p>Creating websites, that will be user friendly. As well as adhering to user specifiiations</p>
+                </div>
+                <div class="col-sm-3">
+                    <i class="fa fa-mobile fa-4x" aria-hidden="true"></i>
+                    <h4>Mobile First Development</h4>
+                    <p>If your site is being viewed from a laptop or from a phone... The site will look and function well.</p>
+                </div>
+                <div class="col-sm-3">
+                    <i class="fa fa-clock-o fa-4x" aria-hidden="true"></i>
+                    <h4>Timely Completion</h4>
+                    <p>Site will be completed in a timely fashion</p>
+                </div>
+
+                <div class="col-sm-3">
+                    <i class="fa fa-tasks fa-4x" aria-hidden="true"></i>
+                    <h4>Solution Provider</h4>
+                    <p>I will make sure any challenge or hurdle will be overcome</p>
+                </div>
+            </div>
+            <br><br>
 
 
 
 
+            <!-- portfolio section-->
+            <div id="my-work" class="container-fluid text-center bg-grey">
+                <h2>Portfolio</h2><br>
+                <h4>What I have created</h4>
+                <div class="row text-center slideanim">
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <img src="img/tic-tac-toe.png" alt="Tic Tac Toe" width="400" height="300">
+                            <p><strong>Tic Tac Toe</strong></p>
+                            <p>A simple, classic game of strategy</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <img src="img/outkast.png" alt="Outkast" width="100" height="300">
+                            <p><strong>Outkast</strong></p>
+                            <p>A Website to collect fan's email adresses</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <img src="img/winery.png" alt="Winery" width="400" height="300">
+                            <p><strong>Foundry Winery</strong></p>
+                            <p>Yes, a winery site</p>
+                        </div>
+                    </div>
+                </div>
 
 
-  <!-- JQuery CDN script, always before JS since it cascades -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Javascript file -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+                <!-- contact section-->
+                <div id="contact" class="container-fluid bg-grey">
+                    <h2 class="text-center">Let's keep in touch</h2>
+                    <div class="row">
+                        <div class="col-sm-12 contact-items">
+                            <p><span class="glyphicon glyphicon-map-marker"></span> San Antonio, US</p>
+                            <p><span class="glyphicon glyphicon-phone"></span> 501-902-5349</p>
+                            <p><span class="glyphicon glyphicon-envelope"></span> demarcogleason@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <footer class="container-fluid text-center">
+                    <a href="#homePage" title="To Top">
+                        <span class="glyphicon glyphicon-chevron-up"></span>
+                    </a>
+                    <p>Back to top</p>
+                </footer>
+    </main>
+
+    <!-- JQuery CDN script, always before JS since it cascades -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Javascript file -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--javascript-->
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
+
 </html>
