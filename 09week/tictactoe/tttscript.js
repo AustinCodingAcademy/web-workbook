@@ -1,7 +1,7 @@
 $(document).ready(function() {
 alert('tttscript accessed');
   let playerTurn = 'X';
-  $('div a[data-cell]').on('singletap', function() {
+  $('[data-cell]').on('singletap', function() {
     alert('into tap listener')
     $(this).text(playerTurn);
 
@@ -23,8 +23,8 @@ alert('tttscript accessed');
   $("button").on('singletap', function(event) {
     // event.preventDefault();
     alert("clear button pushed");
-    $("div a[data-cell]").fadeOut(1000,function(){
-      $("div a[data-cell]").empty();
+    $("[data-cell]").fadeOut(1000,function(){
+      $("[data-cell]").empty();
       $('#announce-winner').empty();
       $("div a").fadeIn(1000);
       playerTurn = 'X';
