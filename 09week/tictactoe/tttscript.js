@@ -1,7 +1,7 @@
-$(document).ready(function() {
+document.addEventListener("DOMContentLoaded", function(event) {
 alert('tttscript accessed');
   let playerTurn = 'X';
-  $('[data-cell]').on('singletap', function() {
+  $('[data-cell]').on('tap', function() {
     alert('into tap listener')
     $(this).text(playerTurn);
 
@@ -20,7 +20,7 @@ alert('tttscript accessed');
   });
 
 // Clears the board and fades a clean board back in
-  $("button").on('singletap', function(event) {
+  $("button").on('tap', function(event) {
     // event.preventDefault();
     alert("clear button pushed");
     $("[data-cell]").fadeOut(1000,function(){
