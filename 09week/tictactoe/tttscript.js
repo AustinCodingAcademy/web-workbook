@@ -1,6 +1,5 @@
-// $(function() {
 alert('tttscript before')
-jQuery(function($) {
+$(function() {
 alert('tttscript accessed');
   let playerTurn = 'X';
   $('[data-cell]').on('tap', function() {
