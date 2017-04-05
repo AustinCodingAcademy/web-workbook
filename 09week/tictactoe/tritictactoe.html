@@ -15,7 +15,7 @@
     </div>
 
     <div id="title">
-        <h1>Super Duper 3 Player Tic Tac Toe no diagonal!</h1>
+        <h1>Super Duper 3 Player Tic Tac Toe!</h1>
     </div>
     <div class="row">
         <div data-cell="0"></div>
@@ -58,16 +58,17 @@
 
     <div id="announce-winner"></div>
     <button id="clear">Clear Board</button>
+    <!-- <button id="2player">2 Player</button>
+    <button id="3player">3 Player</button> -->
 
     <!-- THIS IS MY JQUERY LINK -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- <script type="text/javascript" src="./script.js"></script> -->
 
     <script>
+
     $(document).ready(function(){
       var playerTurn = 'X';
-      // let playerTurn = 'X' you can use "let" instead of var. It's better practice.;
-      // const playerTurn = 'X' would not allow you to re-define it.;
       $('[data-cell]').on('click', function(){
         if($(this).text()=== '') {
         $(this).text(playerTurn);
@@ -183,7 +184,62 @@
                     ($('[data-cell="22"]').text() === playerTurn &&
                         $('[data-cell="23"]').text() === playerTurn &&
                         $('[data-cell="24"]').text() === playerTurn) ||
-
+//start of NW/SE diagonal Wins
+                    ($('[data-cell="10"]').text() === playerTurn &&
+                        $('[data-cell="16"]').text() === playerTurn &&
+                        $('[data-cell="22"]').text() === playerTurn) ||
+                    ($('[data-cell="5"]').text() === playerTurn &&
+                        $('[data-cell="11"]').text() === playerTurn &&
+                        $('[data-cell="17"]').text() === playerTurn) ||
+                    ($('[data-cell="11"]').text() === playerTurn &&
+                        $('[data-cell="17"]').text() === playerTurn &&
+                        $('[data-cell="23"]').text() === playerTurn) ||
+                    ($('[data-cell="0"]').text() === playerTurn &&
+                        $('[data-cell="6"]').text() === playerTurn &&
+                        $('[data-cell="12"]').text() === playerTurn) ||
+                    ($('[data-cell="6"]').text() === playerTurn &&
+                        $('[data-cell="12"]').text() === playerTurn &&
+                        $('[data-cell="18"]').text() === playerTurn) ||
+                    ($('[data-cell="12"]').text() === playerTurn &&
+                        $('[data-cell="18"]').text() === playerTurn &&
+                        $('[data-cell="24"]').text() === playerTurn) ||
+                    ($('[data-cell="1"]').text() === playerTurn &&
+                        $('[data-cell="7"]').text() === playerTurn &&
+                        $('[data-cell="13"]').text() === playerTurn) ||
+                    ($('[data-cell="7"]').text() === playerTurn &&
+                        $('[data-cell="13"]').text() === playerTurn &&
+                        $('[data-cell="19"]').text() === playerTurn) ||
+                    ($('[data-cell="2"]').text() === playerTurn &&
+                        $('[data-cell="8"]').text() === playerTurn &&
+                        $('[data-cell="14"]').text() === playerTurn) ||
+//START OF SW/NE DIAGONAL WINS
+                    ($('[data-cell="14"]').text() === playerTurn &&
+                        $('[data-cell="18"]').text() === playerTurn &&
+                        $('[data-cell="22"]').text() === playerTurn) ||
+                    ($('[data-cell="9"]').text() === playerTurn &&
+                        $('[data-cell="13"]').text() === playerTurn &&
+                        $('[data-cell="17"]').text() === playerTurn) ||
+                    ($('[data-cell="13"]').text() === playerTurn &&
+                        $('[data-cell="17"]').text() === playerTurn &&
+                        $('[data-cell="21"]').text() === playerTurn) ||
+                    ($('[data-cell="4"]').text() === playerTurn &&
+                        $('[data-cell="8"]').text() === playerTurn &&
+                        $('[data-cell="12"]').text() === playerTurn) ||
+                    ($('[data-cell="8"]').text() === playerTurn &&
+                        $('[data-cell="12"]').text() === playerTurn &&
+                        $('[data-cell="16"]').text() === playerTurn) ||
+                    ($('[data-cell="12"]').text() === playerTurn &&
+                        $('[data-cell="16"]').text() === playerTurn &&
+                        $('[data-cell="20"]').text() === playerTurn) ||
+                    ($('[data-cell="3"]').text() === playerTurn &&
+                        $('[data-cell="7"]').text() === playerTurn &&
+                        $('[data-cell="16"]').text() === playerTurn) ||
+                    ($('[data-cell="7"]').text() === playerTurn &&
+                        $('[data-cell="11"]').text() === playerTurn &&
+                        $('[data-cell="15"]').text() === playerTurn) ||
+                    ($('[data-cell="2"]').text() === playerTurn &&
+                        $('[data-cell="6"]').text() === playerTurn &&
+                        $('[data-cell="10"]').text() === playerTurn) ||
                     ($('[data-cell="10"]').text() === playerTurn &&
                         $('[data-cell="15"]').text() === playerTurn) &&
                         $('[data-cell="20"]').text() === playerTurn)
