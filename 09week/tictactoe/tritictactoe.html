@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tic Tac Toe</title>
   <!-- <link rel="stylesheet" href="css/style.css"> -->
-  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/tritictactoe.css">
 
 <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
 
@@ -66,6 +66,11 @@
     <!-- <script type="text/javascript" src="./script.js"></script> -->
 
     <script>
+//this changes background color after click
+    $('[data-cell]').on("click", function() {
+        $(this).css("background", "#5F0B42");
+    })
+
 
     $(document).ready(function(){
       var playerTurn = 'X';
@@ -76,7 +81,7 @@
           if(playerTurn === 'X'){
             playerTurn = '0';
           } else if(playerTurn ==='0'){
-            playerTurn = 'Z';
+            playerTurn = '&';
           } else {
             playerTurn = 'X';
           }
@@ -252,6 +257,9 @@
             $('#clear').on('click', function() {
                 $('[data-cell], #announce-winner').text('');
                 playerTurn = 'X';
+            })
+            $('#clear').on("click", function() {
+                $('[data-cell], #announce-winner').css("background", "black");
             })
 
 
