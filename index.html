@@ -18,32 +18,32 @@
   <!-- moving toward a dynamic i-frame controlled by a dropdown selector of week-options  -->
     <header class="text-center">
       <h1 class="display-2">My First Semester At ACA!!</h1>
-      <nav class="navbar nav">
-      <div class="nav col-3 offset-3 text-center">
-        <select id="weeknum" class="weeknum">
-          <option selected>Week/Project Number</option>
-          <option value="01week/bio/bioindex.html">Week One - BioPage -- Design Essentials</option>
-          <option value="01week/resume/index.html">Week One - Resume </option>
-          <option value="02week/index.html">Week Two  - Flexbox</option>
-          <option value="03week/index.html">Week Three - More Flexbox</option>
-          <option value="03week/flexgrid/index.html">Week Three - FlexGrid</option>
-          <option value="04week/index.html">Week Four -- Checkpoint 1</option>
-          <option value="04week/media/mediaquery.html">Week Four -- Media Queries</option>
-          <option value="05week/BootstrapGridProject/bootstrap.html">Week Five -- Bootstrap Grid</option>
-          <option value="05week/BootstrapResponsiveUtilityProject/inclass.html"> -- Bootstrap Mobile First Responsivity</option>
-          <option value="06week/bootstrap.html">Week Six - Navbars!</option>
-          <option value="08week/agecheck.html">Week 7 and 8 - Checkpoint 2 - With an Age Gate</option>
-        </select>
-      </div>
-    <div>
-        <select id="gamenum">
-          <option selected>Games!</option>
-          <option value="09week/tictactoe.html">Tic Tac Toe</option>
-          <option value="09week/hanoi/index.html">Towers Of Hanoi</option>
-          <option value="08week/fizzbuzz.html">Interactive FIZZBUZZ!</option> -->
-        </select>
-      </div>
-    </nav>
+      <div class="d-flex justify-content-center">
+        <div class="col-3">
+          <select id="weeknum" class="weeknum">
+            <option selected>Week/Project Number</option>
+            <option value="01week/bio/bioindex.html">Week One - BioPage -- Design Essentials</option>
+            <option value="01week/resume/index.html">Week One - Resume </option>
+            <option value="02week/index.html">Week Two  - Flexbox</option>
+            <option value="03week/index.html">Week Three - More Flexbox</option>
+            <option value="03week/flexgrid/index.html">Week Three - FlexGrid</option>
+            <option value="04week/index.html">Week Four -- Checkpoint 1</option>
+            <option value="04week/media/mediaquery.html">Week Four -- Media Queries</option>
+            <option value="05week/BootstrapGridProject/bootstrap.html">Week Five -- Bootstrap Grid</option>
+            <option value="05week/BootstrapResponsiveUtilityProject/inclass.html"> -- Bootstrap Mobile First Responsivity</option>
+            <option value="06week/bootstrap.html">Week Six - Navbars!</option>
+            <option value="08week/agecheck.html">Week 7 and 8 - Checkpoint 2 - With an Age Gate</option>
+          </select>
+        </div>
+      <div class="col-3">
+          <select id="gamenum">
+            <option selected>Games!</option>
+            <option value="09week/tictactoe.html">Tic Tac Toe</option>
+            <option value="09week/hanoi/index.html">Towers Of Hanoi</option>
+            <option value="08week/fizzbuzz.html">Interactive FIZZBUZZ!</option> -->
+          </select>
+        </div>
+    </div>
     </header>
 
     <!--Week Selection Menu  -->
@@ -54,52 +54,63 @@
           <h1 class="display-5">
             Resume and Bio-page</h1>
 
-          <a href="01week\resume"><img src="resume.jpg" class="img-thumbnail" /></a>
+          <a href="01week/resume/index.html"><img src="resume.jpg" class="img-thumbnail" /></a>
         </div>
         <div class="col-5">
           <div class="content">
             <p>In The First Few Weeks We Jumped Right In, Learning Git and Git Hub <i class="fa fa-github" aria-hidden="true"></i>, HTML5 <i class="fa fa-html5" aria-hidden="true"></i>, and CSS3 <i class="fa fa-css3" aria-hidden="true"></i></p>
           </div>
-        <a href="01week\biopage"><img src="biopage.jpg" class="img-thumbnail m-2" /></a>
+        <a href="01week/bio/bioindex.html"><img src="biopage.jpg" class="img-thumbnail m-2" /></a>
 
         <h1 class="display-5 text-right"></h1>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-3 d-flex align-items-center">
+        <div class="col-3 d-flex align-items-start">
           <p>
-            The Fundamental<br /> Concepts<br />
-            Of Modern Web-Site<br />
-             Layout And Design
+          Alongside the Fundamental Concepts<br />
+            of Modern Web-Site Layout <br />
+            and Design.
           </p>
         </div>
-        <div class="col-7 nasa text-left">
+        <div class="col-5 nasa">
             <!-- <img src="spaceman.jpg" class="img-fluid" /> -->
           <a href="02week/index.html"><img src="nasa-logos.jpg" class="img-thumbnail rounded-circle" /></a>
+          <h1 class="display-3 week2 text-right">Week 2</h1>
         </div>
         <div class="d-flex align-items-center">
-          <h1 class="display-4 week2 text-center">Week 2</h1>
+
+          <p>
+            A NASA site clone
+          </p>
         </div>
         </div>
       </div>
 
-      <div class="container-fluid">
-        <div class="row d-flex flex-wrap justify-content-around" style="background: linear-gradient(180deg, blue, white);">
+      <div class="container-fluid row flexmiddle justify-content-center">
+        <!-- <div class="row d-flex flex-wrap justify-content-around" style="background: linear-gradient(180deg, blue, white);">
           <div class="tribox flexleft">
             <h1 class="display-3" style="color: aliceblue">Week 3:</h1>
-            </div>
-          <div class="tribox flexmiddle">
-            <h1 class="display-5 text-center"> Introduction To Flexbox</h1>
-            </div>
-          <div class="tribox flexright">
-            <h1 class="display 2" style="font-family:roboto">Without</h1>
-            <div class="daily m-1">
+          </div>-->
+        <div class="tribox">
+          <h1 class="display-3" style="margin: 87px;">Week 3:</h1>
+            <h1 class="display-5 text-center breathing align-self-middle"> Introduction To:</h1>
+          </div>
+          <div class="justify-content-between m-2" style="height: 600px; width: 600px; align-self: center;">
+
+            <div class="daily m-1 text-center">
+                <h1 class="display 2 breathing1" style="font-family:roboto; display: inline-block">Flexbox</h1>
               <a href="03week/index.html"><img src="dailyplanet.jpg" alt=""></a></br/>
             </div>
-            <div>
-              <h1 class="display 2" style="font-family:roboto">With</h1>
-              <a href="03week/flexgrid/index.html"><img src="dailyplanet.jpg" class="breathing" alt=""></a>
+
+
+            <div style="display: flex; align-items: flex-end;">
+              <h1 class="display 2" style="font-family:roboto">And the Grid</h1>
+              <a href="03week/flexgrid/index.html"><img src="dailyplanet.jpg" class= alt=""></a>
+              <p class="text-right">
+                A Newspaper Site Mock Up
+              </p>
             </div>
           </div>
         </div>

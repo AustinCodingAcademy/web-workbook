@@ -13,6 +13,9 @@ p{
   color: #fde6b1;
 }
 
+.img-thumbnail{
+  height:
+}
 .main{
 background-repeat: no-repeat;
 background-size: cover;
@@ -29,12 +32,13 @@ background-size: cover;
 
 .tribox{
   height: 500px;
-  width: 300px;
-  justify-content: center;
+  /*width: 748px;*/
+  justify-content: space-around;
   align-items: center;
   text-align: center;
-  color: black;
+  /*color: black;*/
   display: flex;
+  justify-content: space-around;
 }
 
 .flexleft{
@@ -49,9 +53,14 @@ background-size: cover;
 
    .flexmiddle{
      background: url(flexhand.jpg);
+     height: 900px;
      background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+
+     /*background-repeat: no-repeat;
      background-size: contain;
-     color: white;
+     color: white;*/
      /*transition: width 4s;*/
    }
    /*.flexmiddle:hover{
@@ -67,7 +76,7 @@ background-size: cover;
   width: 300px;
   padding: 2px;
   margin: 10px auto;
-  border: 1px solid #d1d1d1;
+  /*border: 1px solid #d1d1d1;*/
   -webkit-animation: breathing 4s ease-out infinite normal;
   animation: breathing 4s ease-out infinite normal;
   -webkit-font-smoothing: antialiased;
@@ -123,6 +132,66 @@ background-size: cover;
   }
 }
 
+/*different breathing patters*/
+.breathing1{
+  width: 300px;
+  padding: 2px;
+  margin: 10px auto;
+  /*border: 1px solid #d1d1d1;*/
+  -webkit-animation: breathing 3s ease-out infinite normal;
+  animation: breathing 3s ease-out infinite normal;
+  -webkit-font-smoothing: antialiased;
+  border-radius: 3px;
+  }
+
+
+@-webkit-keyframes breathing1 {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes breathing1 {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1.25);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
 
 
 
@@ -131,7 +200,9 @@ background-size: cover;
   width: 450px;
 }
 .week2{
-transform: rotate(90deg);
+display: table;
+float: right;
+/*transform: rotate(90deg);*/
 /*transform-origin: right;*/
 /*float:right;*/
 
