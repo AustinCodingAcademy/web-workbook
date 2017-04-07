@@ -5,7 +5,7 @@ $(function() {
     backSpeed: 10,
     backDelay: 2000,
     showCursor: false,
-    loop: false
+    loop: null
   });
 });
 
@@ -16,7 +16,7 @@ $(function() {
     backSpeed: 10,
     backDelay: 2000,
     showCursor: false,
-    loop: false
+    loop: null
   });
 });
 
