@@ -1,0 +1,355 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto';
+  text-align: center;
+  color: #958e8e;
+}
+
+.hero {
+  height: 1280px;
+  width: 100%;
+  background: #EC6F66;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #EC6F66, #F3A183);
+  background: -moz-linear-gradient(right, #EC6F66, #F3A183);
+  background: -o-linear-gradient(right, #EC6F66, #F3A183);
+  background: linear-gradient(to left, #EC6F66, #F3A183);
+}
+
+@media only screen and (min-width: 320px) {
+  .hero {
+    height: 40%;
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  .hero {
+    height: 40%;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .hero {
+    height: 42%;
+  }
+}
+
+.inner-logo {
+  text-align: left;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  transform: translateY(10px);
+  transform: translateX(1px);
+}
+
+.inner-text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+}
+
+@media only screen and (min-width: 320px) {
+  .inner-text {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .inner-text {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  .inner-text {
+    font-size: 75px;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .inner-text {
+    font-size: 100px;
+  }
+}
+
+.p1 {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 100;
+  margin: 0;
+  line-height: 1;
+  color: #f5f5f5;
+}
+
+@media only screen and (max-width: 465px) {
+  .p1 {
+    display: block;
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.p2 {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: 900;
+  margin: 0;
+  line-height: 1;
+  color: white;
+}
+
+@media only screen and (max-width: 465px) {
+  .p2 {
+    position: relative;
+    top: 0.6em;
+  }
+}
+
+.hero-down {
+  position: absolute;
+  left: 48%;
+  font-size: 2em;
+  width: 2em;
+  height: 2em;
+  color: #f5f5f5;
+  border-radius: 100%;
+}
+
+.hero-down:hover, .hero-down:focus {
+  color: #ccc;
+}
+
+.hero-down:active {
+  color: #f5f5f5;
+}
+
+.hero-down i {
+  vertical-align: bottom;
+  position: relative;
+  top: 0.1em;
+}
+
+@media only screen and (min-width: 320px) {
+  .hero-down {
+    top: 52%;
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  .hero-down {
+    top: 62%;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .hero-down {
+    top: 72%;
+  }
+}
+
+#about {
+  padding: 30px;
+}
+
+.left {
+  text-align: left;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+}
+
+.burger {
+  position: absolute;
+  z-index: 10;
+  right: 25px;
+  top: 25px;
+  cursor: pointer;
+  transform: rotateY(0);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.burger__patty {
+  width: 28px;
+  height: 2px;
+  margin: 0 0 4px 0;
+  background: white;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.burger__patty:last-child {
+  margin-bottom: 0;
+}
+
+.burger--close {
+  transform: rotate(180deg);
+}
+
+.burger--close .burger__patty:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+
+.burger--close .burger__patty:nth-child(2) {
+  opacity: 0;
+}
+
+.burger--close .burger__patty:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -4px);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+}
+
+.menu--active {
+  visibility: visible;
+}
+
+.menu__brand, .menu__list {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  float: left;
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.menu__list {
+  margin: 0;
+  padding: 0;
+  background: #EC6F66;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #EC6F66, #F3A183);
+  background: -moz-linear-gradient(right, #EC6F66, #F3A183);
+  background: -o-linear-gradient(right, #EC6F66, #F3A183);
+  background: linear-gradient(to left, #EC6F66, #F3A183);
+  list-style-type: none;
+  transform: translate3d(0, -100%, 0);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu__list--active {
+  transform: translate3d(0, 0, 0);
+}
+
+.menu__brand {
+  background: white;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  transform: translate3d(0, 100%, 0);
+}
+
+.menu__brand--active {
+  transform: translate3d(0, 0, 0);
+}
+
+.menu__item {
+  transform: translate3d(500px, 0, 0);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu__item--active {
+  transform: translate3d(0, 0, 0);
+}
+
+.menu__link {
+  display: inline-block;
+  position: relative;
+  font-size: 42px;
+  padding: 15px 0;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu__link:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 10px;
+  height: 2px;
+  background: white;
+  transform: translateX(-50%);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu__link:hover:before {
+  width: 100%;
+}
+
+.menu a.menu__link:hover {
+  color: white !important;
+  text-decoration: none !important;
+  font-weight: bold !important;
+}
+
+.menu .menu__item:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.menu .menu__item:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.menu .menu__item:nth-child(3) {
+  transition-delay: 0.3s;
+}
+
+.menu .menu__item:nth-child(4) {
+  transition-delay: 0.4s;
+}
+
+.menu .menu__item:nth-child(5) {
+  transition-delay: 0.5s;
+}
+
+.menu .menu__item:nth-child(6) {
+  transition-delay: 0.6s;
+}
+
+@media screen and (max-width: 768px) {
+  ul.menu__list, div.menu__brand {
+    float: none;
+    width: 100%;
+    min-height: 0;
+  }
+  ul.menu__list--active, div.menu__brand--active {
+    transform: translate3d(0, 0, 0);
+  }
+  .menu__list {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+  }
+  .menu__link {
+    font-size: 24px;
+  }
+  .menu__brand {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0);
+  }
+  .menu__brand .logo {
+    width: 90px;
+    height: 90px;
+  }
+}

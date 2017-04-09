@@ -1,0 +1,53 @@
+header {
+  background-color: #99BEC3;
+  min-height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+main {
+  display: flex;
+}
+
+nav {
+  background-color: purple;
+  width: 186px;
+  height: 640px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+section {
+  width: calc(100% - 186px);
+  min-height: 640px;
+  background-color: red;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+article {
+  width: 47%;
+  height: 214px;
+  background-color: #94A583;
+  margin: 10px 0;
+}
+
+article: first-child {
+  width: 100%;
+}
+
+@@media (max-width: 375px) and (max-width:900px) {
+  article {
+    width:42%;
+  }
+  nav {
+    height: 100px;
+  }
+}
