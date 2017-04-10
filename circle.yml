@@ -1,8 +1,6 @@
 machine:
   node:
-    version: 6.7.0
+    version: 7.7.4
 test:
   override:
-    - ./node_modules/.bin/htmllint {*.html,./!(node_modules)/**/*.html}
-    - ./node_modules/.bin/stylelint ./**/*.css
-    - ./node_modules/.bin/eslint
+    - npm run lint
