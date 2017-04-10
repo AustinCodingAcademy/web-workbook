@@ -8,7 +8,8 @@
   },
   "scripts": {
     "lint": "htmllint {*.html,./**/*.html} && stylelint ./**/*.css && eslint .",
-    "start": "cd . && http-server -c-1"
+    "start": "cd . && http-server -c-1",
+    "test": "mocha"
   },
   "author": "Kevin Colten",
   "license": "ISC",
@@ -23,5 +24,8 @@
     "jsdom": "^9.12.0",
     "mocha": "^3.2.0",
     "stylelint": "^7.7.1"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
   }
 }
