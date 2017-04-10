@@ -1,5 +1,7 @@
 # Checkpoint Rubric
 
+This is the rubric that your instructor will use to grade your checkpoints. Please do not edit. 
+
 ## Checkpoint 1: Company/Organization Website following Wireframe
 - [ ] A CSS file is effectively linked to the HTML file in the Head section: 10 points
 - [ ] A link to a CSS reset file is included in the Head section of the HTML file: 10 points 
