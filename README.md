@@ -1,11 +1,16 @@
 [![CircleCI](https://circleci.com/gh/AustinCodingAcademy/web-workbook.svg?style=svg)](https://circleci.com/gh/AustinCodingAcademy/web-workbook)
 
-![](https://raw.githubusercontent.com/AustinCodingAcademy/campus-manager/develop/public/img/aca-logo-header.png)
-
-# Web Workbook
-
-## Claiming your workbook
+![](http://en.gravatar.com/userimage/107370100/a08594145564536138dfaaf072c7b241.png)
+# Austin Coding Academy
+## Web Workbook
+### Claiming your workbook
 1. Make sure you are signed into GitHub
-1. Here's a [video](https://www.youtube.com/embed/CtKQdoHjt6M) explaining how to do it:
+1. Here's a [video](https://www.youtube.com/embed/CtKQdoHjt6M) explaining how to do it
+1. Run `npm install` in your terminal
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CtKQdoHjt6M" frameborder="0" allowfullscreen></iframe>
+### Starting server
+1. Run `npm start` in your terminal
+1. To break out of your server, press `ctrl` + `c`
+
+### Lint your code
+1. Run `npm run lint`
