@@ -7,8 +7,8 @@
     "url": "git+https://github.com/AustinCodingAcademy/web-workbook.git"
   },
   "scripts": {
-    "start": "http-server",
-    "lint": "htmllint {*.html,./**/*.html} && stylelint ./**/*.css && eslint ."
+    "lint": "htmllint {*.html,./**/*.html} && stylelint ./**/*.css && eslint .",
+    "start": "cd . && http-server -c-1"
   },
   "author": "Kevin Colten",
   "license": "ISC",
@@ -18,7 +18,7 @@
   "homepage": "https://github.com/AustinCodingAcademy/web-workbook#readme",
   "devDependencies": {
     "eslint": "^3.19.0",
-    "htmllint-cli": "^0.0.5",
+    "htmllint-cli": "github:kevincolten/htmllint-cli",
     "http-server": "^0.9.0",
     "jsdom": "^9.12.0",
     "mocha": "^3.2.0",
