@@ -35,7 +35,7 @@ beforeEach(function (done) {
   );
 });
 
-describe('Lesson 7 Homework', function () {
+describe('Challenge 01', function () {
   describe('element selectors', function () {
 
     describe('Problem 1: window.h1', function () {

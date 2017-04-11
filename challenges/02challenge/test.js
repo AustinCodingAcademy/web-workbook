@@ -33,7 +33,7 @@ beforeEach(function (done) {
   );
 });
 
-describe('Lesson 8 Homework', function () {
+describe('Challenge 02', function () {
 
   describe('Problem 1: window.firstListChildren', function () {
     it('should be the children of #first-list', function () {
