@@ -15,10 +15,11 @@ body {
 
 
 .graphic img {
+  position: inherit;
   display: block;
   border-radius: 10px;
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
 
 }
 
@@ -27,11 +28,18 @@ body {
   margin-left: 17px;
   margin-right: 17px;
   margin-top: 17px;
+  display: inline-block;
+  height: 50%;
+  width: 50%;
+
 }
 
+/*it literally took me 6 hours to fix the problem associated with haing written the code below...
 .info {
   float: left;
-}
+  display: inline-block;
+}*/
+
 
 footer {
   clear: left;
@@ -47,6 +55,7 @@ nav ul {
 
 nav li {
   display: inline-block;
+
 }
 
 a {
@@ -55,4 +64,13 @@ a {
 
 a:hover {
   color: pink;
+}
+
+.info h2 {
+  padding: .6em
+}
+
+.links li {
+  margin-left: 1em;
+  margin-right: 1em;
 }
