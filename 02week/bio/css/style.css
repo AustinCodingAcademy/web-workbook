@@ -1,7 +1,114 @@
-.top {
-  width: 100%;
-  height: 20%;
-  border: solid black;
-  background-color: #786E76;
-  padding-left: 32%;
+/* used an image of papaer to add
+some texture*/
+
+body {
+  background-image: url("http://www.photos-public-domain.com/wp-content/uploads/2012/05/ivory-off-white-paper-texture.jpg");
+}
+
+/* used google font link and text shadow
+to help the look of the "logo"*/
+
+.logo {
+  display: inline;
+  font-family: 'Molle', cursive;
+  float: left;
+  text-shadow: 5px 3px 5px #181818;
+  color: rgba(	73, 49,	28, 0.8);
+}
+
+/* used border radius to round
+and filter to effect*/
+
+.resume {
+  margin-right: 20px;
+  float: right;
+  border-radius: 100%;
+  filter: opacity(80%) invert(100%);
+}
+
+/* use hover element to saturate
+link to resume*/
+
+.resume:hover {
+   filter: saturate(100%);
+}
+
+h1 {
+  font-size: 120px; font-weight: lighter;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 80px;
+  font-weight: 100;
+  margin-top: -18px;
+  margin-left: 31%;
+}
+
+/* used border radius to round pic
+and used border element to make pic
+stand out*/
+
+.pic {
+  border-radius: 100%;
+  border: 20px solid black;
+  margin-left: 32%;
+  }
+
+  /* used css3 animation to
+  flip image from hover*/
+
+.pic:hover {
+    -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+  }
+
+
+  .dropdown {
+    width: 5px;
+    height: 5px;
+    float: left;
+    clear: both;
+    display: block;
+    margin-left: 20px;
+  }
+
+.dropdown-content {
+    font-size: 25px;
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.2);
+    max-width: 17%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* put readme class
+to edit border radius*/
+
+.readme {
+  border-radius: 30%;
+}
+
+/* added a hover to the
+read me icon to animate
+*/
+
+.readme:hover {
+  -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 }
