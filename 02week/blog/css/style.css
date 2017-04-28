@@ -3,35 +3,71 @@ General
 *************/
 body{
   background: linear-gradient(lightblue, aqua);
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: large;
 
 }
+p:hover::first-letter{
+  color: red;
+  font-size: 125%;
+}
+a{
+  color: #fff;
+}
+a:hover{
+  font-size: 125%;
+  color: red;
+}
 
+/*************
+header
+*************/
 header{
   text-align: center;
 }
-h1{
-  color: #fff;
+h1, h2{
+  color: #3c5360;
+  font-family: 'Bitter', serif;
+  text-shadow: 2px 2px #fff;
 }
 nav{
   text-align: center;
+  font-family: 'Bitter', serif;
+  margin-right: 25px;
+
 }
 ul li{
   text-decoration: none;
   display: inline;
-
 }
+/***********
+body
+***********/
 
-section{
-  background-color: #fff;;
+.one{
+  background-color: #e9f2ed;
   width: 70%;
-  color: #000;
+  color: #ac7d7d !important;
   padding: 5px;
 }
+.one, .two{
+  color: #689488;
+}
+
 h3{
   font-size: 150%;
   text-align: left;
-  margin-left: 5px;
+  margin: 5px 0 0 5px;
 }
+
+p{
+  margin-top: 25px;
+}
+
+
+/**********
+Side bar
+**********/
 aside{
   float: right;
   clear: both;
@@ -42,6 +78,9 @@ aside img{
 }
 figcaption{
   border: 2px solid lightblue;
+  background-color: lightblue;
   text-align: center;
   margin: 5px 0;
+  color: #ac7d7d;
+  font-weight: bolder;
 }
