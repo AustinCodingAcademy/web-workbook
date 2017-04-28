@@ -49,28 +49,10 @@ h2 {
   float:right;
 }
 
-.sidebar {
-  margin-left: 10px;
-  width: 19%;
-  float: left;
-  display: inline-block;
-}
-
-#nav {
+.avatar {
   width: 100%;
-  background-color: rgba(39,147,217,0.4);
-  text-align: center;
-  position: fixed;
-  top: 0;
-  z-index: 500;
-}
-
-#container {
-  width: 80%;
-  text-align: center;
-  background-color: rgba(246,241,229,0.7);
-  margin: 120px auto auto auto;
-  padding: 10px;
+  height: auto;
+  border-radius: 100%;
 }
 
 .clearfix:after {
@@ -78,6 +60,33 @@ h2 {
   visibility: hidden;
   display: block;
   height: 0;
+  clear: both;
+}
+
+#sidebar {
+  margin-left: 10px;
+  padding: 5px;
+  width: 18%;
+  /*float: left;*/
+  display: inline-block;
+}
+
+#nav {
+  width: 100%;
+  background-color: rgba(39,147,217,1);
+  text-align: center;
+  position: fixed;
+  display: block;
+  top: 0;
+  z-index: 500;
+}
+
+#container {
+  width: 85%;
+  text-align: center;
+  background-color: rgba(246,241,229,0.7);
+  margin: 110px auto auto auto;
+  padding: 20px;
   clear: both;
 }
 
@@ -95,11 +104,6 @@ h2 {
 #nav a {
   color: rgb(189,203,191);
   text-decoration: none;
-}
-
-#avatar {
-  max-height: 120px;
-  border-radius: 100%;
 }
 
 #copyright {
