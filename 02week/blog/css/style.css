@@ -1,36 +1,41 @@
-
+* {
+  margin: 0;
+  padding: 0;
+}
 
 main {
   background-color: silver;
-  
+  padding: 15px;
 }
 
 article {
   background-color: white;
   font-family: Arial, sans-serif;
-  width: 75%;
+  width: 40%;
   margin: auto;
+  margin-bottom: 4px;  /* must follow margin:auto to create the divider between articles*/
+  padding: 5px 10px;
 }
 
-.title{
-  font-size: 22px;
-  text-transform: capitalize;
+.preview {
+  overflow: hidden;
+  line-height: 1.1em;
+  max-height: 2.2em;   /* This sets number of lines in preview to 2. Max-height = # of lines * line-height */
 }
 
-.date{
-  font-size: 11px;
+.byline {
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
-.byline{
-  font-size: 8px;
+
+/* these classes set, but not currently modified
+.title {
 }
 
-.subTitle{
-  font-size: 18px;
-  text-transform: capitalize;
-  font-weight: bold;
+.date {
 }
 
-.preview{
-  font-size: 8px;
+.subTitle {
 }
+*/
