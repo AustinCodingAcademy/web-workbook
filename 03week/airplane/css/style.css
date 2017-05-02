@@ -3,16 +3,46 @@ body {
   margin:0;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 
 nav {
   background-color: #193a55;
+  color: white;
+  font-weight: lighter;
+}
+
+/*main {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}*/
+
+main {
+  display: inline-block;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .main-nav {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.5em;
+
 }
+
+.icon {
+  display: inline-block;
+  margin: .3em;
+}
+
 
 .search-box {
   background-color: #193a55;
@@ -20,12 +50,53 @@ nav {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 45%;
+  min-width: 320px;
+  max-width: 410px;
+  margin-left: 5em;
+  margin-top: 7em;
 }
 
 .product-bar {
   display: flex;
+  width: 100%;
+}
+
+.product-tab {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .input-form {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.dest-date {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.field {
+  padding: 1em;
+  margin: 1em;
+  border-radius: 5px;
+  max-width: 147px;
+}
+
+.details {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 1em;
+}
+
+.flight-search {
+  padding: 1em;
+  text-decoration: none;
+  color: white;
+  background-color: blue;
+  width: 100%;
+  text-align: center;
 }

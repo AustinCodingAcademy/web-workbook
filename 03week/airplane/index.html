@@ -9,12 +9,15 @@
 <body>
 <!--<img src="img/airline.jpg">--><!--could move this img to background on body selector CSS-->
 <header>
-  <nav class="main-nav">
-    <div id="logo"><img src="img/logo.png"></div>
-    <div id="home" class="icon"><img src="img/home-icon.png">Home</div>
-    <div id="deal" class="icon"><img src="img/deal-icon.png">Travel Deals</div>
-    <div id="schedule" class="icon"><img src="img/schedule-icon.png">Flight Schedule</div>
-    <div id="log" class="icon"><img src="img/login-icon.png"/>Register/Login</div>
+  <nav class="banner">
+    <div id="logo"><img src="img/logo.png">
+    </div>
+      <div class="main-nav">
+        <div id="home" class="icon"><img src="img/home-icon.png">Home</div>
+        <div id="deal" class="icon"><img src="img/deal-icon.png">Travel Deals</div>
+        <div id="schedule" class="icon"><img src="img/schedule-icon.png">Flight Schedule</div>
+        <div id="log" class="icon"><img src="img/login-icon.png"/>Register/Login</div>
+      </div>
   </nav>
 </header>
 <main>
@@ -33,12 +36,32 @@
       </div>
     </nav>
     <div class="input-form">
-      <form>
-        <input type="text" class="depart-field" placeholder="Depart">
-        <input type="text" class="arrive-field" placeholder="Arrive">
-        <input type="text" class="depart-date" placeholder="mm/dd/yyyy">
-        <input type="text" class="return-date" placeholder="mm/dd/yyyy">
+      <form class="dest-date">
+        <input type="text" class="field" placeholder="Depart">
+        <input type="text" class="field" placeholder="Arrive">
+        <input type="text" class="field" placeholder="mm/dd/yyyy">
+        <input type="text" class="field" placeholder="mm/dd/yyyy">
       </form>
+      <div class="details">
+        <div class="passengers">
+        <span>Passengers</span>
+        <select name="Passengers">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        </div>
+        <div class="round-one">
+          <form>
+            <input type="radio" name="travel" value="Round-Trip">Round-Trip
+            <input type="radio" name="travel" value="One-Way">One-Way
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="flight-search">
+      <a href="http://www.reeddouglasjones.com" target="_blank">Search Flights
+      </a>
     </div>
   </div>
 </main>
