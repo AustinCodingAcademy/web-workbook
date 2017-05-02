@@ -33,35 +33,49 @@ body {
 /* We start writing out flexbox here */
 .container {
   display: flex;
-  /*border: 10px solid hotpink;*/
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 10px solid hotpink;
+  height: 100vh;
   /*height: 100vh;*/
   /*align-items: flex-start;*/
-  /*min-height: 100vh;*/
-  /*flex-wrap: wrap;*/
   /*flex-direction: row;*/
   /*justify-content: center;  /*main axis*/*/
   /*align-content: space-around;  /*cross axis*/*/
-  /*flex-direction: column;*/
 }
 
 .box {
-  flex:1;
+  /*flex:1;*/
   /*order: 1;*/
   /*width:33.33333333%;*/
   /*padding: 10px;*/
   /*border: 10px solid mistyrose;*/
+  flex-basis: 150px;
+  flex-grow: 1;
 }
 
-.box2 {
-  flex:2;
-  /*padding-bottom: 200px;*/
-}
-
-/*.box3 {
-  order: -1;
-  font-size: 20px
+/*.box1 {
+  flex 10 5 400px; /*grow shrink base width
 }*/
 
+/*.box2 {
+  flex-basis:400px;
+  flex-grow:1;
+  flex-shrink:1;
+  flex: 1 1 400px;
+  flex:2;
+  padding-bottom: 200px;
+}*/
+
+.box3 {
+  /*order: -1;*/
+  /*font-size: 20px;*/
+  flex-grow: 5;
+}
+
+.box4 {
+  flex-basis: 100px;
+}
 /*.box6 {
   padding-bottom: 0;
 }*/
