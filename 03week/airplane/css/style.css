@@ -79,14 +79,15 @@ main {
   display: flex;
   width: 100%;
 
-
 }
+
+
+
 
 .product-tab {
   display: flex;
   width: 100%;
   justify-content: space-around;
-
 }
 
 
@@ -97,10 +98,24 @@ main {
   border-top-left-radius: 5px;*/
 }
 
+/*this is how i managed to round the edges of product-bar*/
+a:first-child .product {
+  border-top-left-radius: 5px;
+}
+
+a:nth-child(3n) .product {
+  border-top-right-radius: 5px;
+}
+
+
+
  a:hover .product {
   background-color: #0063b7;
 }
 
+a:visited {
+  color: inherit;
+}
 
 .input-form {
   display: flex;
@@ -121,6 +136,7 @@ main {
   max-width: 147px;
   background-color: #193a55;
   color: white;
+  border: 1px solid white;
 }
 
 .details {
@@ -137,6 +153,7 @@ select {
   color: white;
   border-radius: 5px;
   margin-left: 1.5em;
+  border: 1px solid white;
 }
 
 .radio {
