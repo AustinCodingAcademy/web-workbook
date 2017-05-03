@@ -1,30 +1,48 @@
-html {
-  box-sizing: content-box;
+p, input[type="radio"] {
+  font-size: .9em;
+  vertical-align: middle;
+}
+
+body {
   background: url("../img/airline.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-body {
-  font-family: Arial, sans-serif;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
   color: #fff;
 }
 
+div {
+  box-sizing: border-box;
+}
+
  button {
-   background-color: blue;
+   background-color: #0063B7;
    border: none;
    width: 100%;
    color: #fff;
-   padding: 10px;
+   height: 40px;
+   border-radius: inherit;
+   letter-spacing: 1px;
+   font-size: .8em;
+ }
+
+input {
+   height: 30px;
+   margin: 5px;
+   padding-left: 10px;
+   border-radius: inherit;
  }
 
  select {
-   border: 1px solid #fff;
-   background-color: inherit;
-   padding: 10px;
-   color: #fff;
+   width: 50px;
+   height: 40px;
+   display: inline;
+ }
+
+ nav a:hover {
+   color: #0063B7;
  }
 
 .top {
@@ -35,6 +53,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin: 0 !important;
+  border-bottom: 2px solid #fff;
 }
 
 .logo {
@@ -56,7 +76,7 @@ body {
   padding: 10px;
 }
 
-.navlinks a{
+.navlinks a {
   text-decoration: none;
   color: #fff;
 }
@@ -69,18 +89,39 @@ body {
 .customerform {
  display: flex;
  flex-direction: column;
- background-color: #193A55;
  max-width: 450px;
+ height: 400px;
  padding: 10px;
+ border-radius: 2px;
 }
 
 .customerform div {
-  padding: 10px;
+  padding: 1px;
+  border-radius: 2px;
+  padding: 5px;
 }
 
 .searchtype {
+  display: flex;
   order: 1;
-  justify-content: space-between;
+  background-color: rgb(33,167,143);
+  padding: 0 !important;
+}
+
+.flight {
+  order: 1;
+  width: 33%;
+  text-align: center;
+}
+
+.choice {
+  order: 1;
+  width: 33%;
+  text-align: center;
+}
+
+.searchtype .flight {
+  background-color: #0063B7;
 }
 
 .inputcontain {
@@ -88,34 +129,47 @@ body {
   order: 1;
   flex-direction: column;
   display: flex;
+  flex-wrap: inherit;
+  background-color: #193A55;
 }
 
-.input {
+.inputmain {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 !important;
 }
 
-.depart-field {
-  order: 1;
+.inputleft {
+  display: flex;
+  flex-direction: column;
+  width: 50%
 }
 
-.arrive-field {
-  order: 1;
+.inputleft p {
+  display: inline-block;
 }
 
-.mmddyy-field {
-  order: 99;
+.inputright {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
 .details {
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   display: flex;
   flex-direction: row;
   order: 1;
+  flex-wrap: wrap;
 }
 
-.details p {
-  display: inline-block;
+.whiterow {
+  background-color: inherit;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 .button {
