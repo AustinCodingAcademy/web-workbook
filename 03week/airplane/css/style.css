@@ -1,3 +1,172 @@
+body {
+  background-image: url("../img/airline.jpg");
+  background-size: cover;
+  margin: 0 auto;
+}
+
+
 .header {
-  background-color: #123754;
+  background-color: rgb(25,58,85);
+  border-bottom: 2px #7985A0 solid;
+  height: auto;
+  width: 100%;
+  display: inline-block;
+}
+
+.logo {
+  float:left;
+  padding-left: 30px;
+}
+
+.nav {
+  background-color: rgb(25,58,85);
+  color: #CACFD1;
+  margin: 0 auto;
+  float: right;
+  padding-right: 100px;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li{
+   display:inline-block;
+   padding: 15px;
+}
+
+a {
+  padding-left: 5px;
+  text-decoration: none;
+  color: #CACFD1;
+}
+
+a:hover {
+  background-color: transparent;
+  color: #08a39d;
+}
+
+.box {
+  height: 350px;
+  width: 30%;
+  background-color: rgb(25,58,85);
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.box > div:nth-child(2) {
+  background-color: #08a39d;
+  height: 15%;
+  width: 102%;
+  margin-left: -1%;
+  margin-top: -5%;
+  border-radius: 5px;
+}
+
+.icon {
+  display: inline-block;
+  padding-right: 45px;
+  padding-left: 45px;
+}
+
+.icon:hover {
+  background-color: #0063B7;
+}
+
+.depart {
+  display:inline-block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10%;
+  margin-top: 10%;
+}
+
+.depart-field{
+  float: left;
+  background-color: transparent;
+  color: #CACFD1;
+  margin: 0  auto;
+  height: 28px;
+  width: 100px;
+}
+
+.arrive-field{
+  float: right;
+  background-color: transparent;
+  color: #CACFD1;
+  margin: 0 auto;
+  height: 28px;
+  width: 100px;
+}
+
+
+.date{
+  display:inline-block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.depart-date{
+  float: left;
+  background-color: transparent;
+  color: #CACFD1;
+  margin: 0 auto;
+  height: 28px;
+  width: 100px;
+}
+
+.arrive-date{
+  float: right;
+  background-color: transparent;
+  color: #CACFD1;
+  margin: 0 auto;
+  height: 28px;
+  width: 100px;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: #CACFD1;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #08a39d;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #CACFD1;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+    background-color: transparent;
 }
