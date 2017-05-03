@@ -3,28 +3,43 @@ text-decoration: none;
 font-family: lato;
 }
 
-
-
 body {
 background-image: url(../img/airline.jpg);
 background-repeat: no-repeat;
 height: 100vh;
 margin: 0;
 background-size: cover;
+flex-direction: column-reverse;
 
 }
 
- .nav {
+
+
+ul {
+float:right
+
+}
+
+.logo {
+display: flex;
+justify-content: flex-end;}
+
+.nav {
+  display: flex;
+  align-content: space-between;
+  flex-direction: row-reverse;
    background-color: #123754;
-   display: flex;
-   flex-wrap: wrap;
-   margin-top: 0em;
+   margin-top: 0
    color: white;
    border-bottom: 1px solid white;
+   justify-content: space-between;
  }
 
- .icon {
+
+
+.icon {
   display: inline-block;
+  color: white;
   margin: .3em;
 }
 
@@ -43,24 +58,30 @@ background-size: cover;
 
 .product-bar {
   display: flex;
-  width: 100%;
+  width: 200%;
 
 }
 
 .product-tab {
   display: flex;
   width: 100%;
-  justify-content: space-around;
-  color: ##123754;
+  justify-content: space-between;
+  background-color: #018d80;
+  padding: 15px
+
+
+
+
 }
 
-.input-form {
+.input {
   display: flex;
   flex-wrap: wrap;
   color: white;
+  height: 40;
 }
 
-input .dest-date {
+ .dates {
   background-color: #123754;
   display: flex;
   flex-wrap: wrap;
@@ -71,9 +92,10 @@ input .dest-date {
 }
 
 .field {
+
   padding: 1em;
   margin: 1em;
-  border-radius: 7px;
+  border-radius: 9px;
   max-width: 150px;
   color: white;
 
@@ -83,14 +105,21 @@ input .dest-date {
   display: flex;
   width: 100%;
   justify-content: space-around;
-  margin: 1em;
+  margin: 2em;
 }
 
 .flight-search {
-  padding: 1em;
+  padding: 3em;
   text-decoration: none;
   color: white;
-  background-color: #0063b7;
-  width: 80%;
+  background-color: #123754;
+  width: 90%;
   text-align: center;
+  background-color: #2b67d4;
+     margin: 2%;
+     padding: 20px;
+     width: 80%;
+ }
+
+
 }
