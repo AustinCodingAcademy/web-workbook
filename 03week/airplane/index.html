@@ -5,65 +5,64 @@
   <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <title>Airplane</title>
+  <title>UX Atlantic</title>
 </head>
 <body>
-  <header>
-    <nav class="banner">
-    <img src="img/logo.png" alt="Company Logo">
-    <div class="navigation">
-      <div class="home"><img src="img/home-icon.png">Home</div>
-      <div class="home"><img src="img/deal-icon.png">Travel Deals</div>
-      <div class="home"><img src="img/schedule-icon.png">Flight Schedule</div>
-      <div class="home"><img src="img/login-icon.png">Register/Login</div>
+<header>
+  <div class="banner">
+    <div class="logo">
+      <img src="img/logo.png" alt="Company Logo">
+  </div>
+    <div class="navbar">
+      <nav>
+        <ul>
+          <li><a href="#" title="Home"><img src="img/home-icon.png">Home</a></li>
+          <li><a href="#" title="Travel Deals"><img src="img/plane-icon.png">Travel Deals</a></li>
+          <li><a href="#" title="Flight Schedule"><img src="img/schedule-icon.png">Flight Schedule</a></li>
+          <li><a href="#" title="Register/Login"><img src="img/login-icon.png">Register/Login</a></li>
+        </ul>
+      </nav>
     </div>
-  </nav>
-  </header>
+  </div>
+</header>
   <main>
-      <div class="topbar">
-        <div class="plane"><img src="img/plane-icon.png"></div>
-        <div class="hotel"><img src="img/hotel-icon.png"></div>
-        <div class="car"><img src="img/car-icon.png"></div>
+    <div class="content">
+      <div class="form">
+        <div class="search">
+          <div class="flight"><img src="img/plane-icon.png">
+          </div>
+      <div class="hotel"><img src="img/hotel-icon.png">
+        </div>
+        <div class="car"><img src="img/car-icon.png">
+        </div>
       </div>
-      <div class="container">
-        <form class="dest date">
-        <input type="text" class="field" placeholder="Depart">
-        <input type="text" class="field" placeholder="Arrive">
-        <input type="text" class="field" placeholder="mm/dd/yyyy">
-        <input type="text" class="field" placeholder="mm/dd/yyyy">
-        </form>
-        <div class="details">
-                <div class="passengers">
-                <span>Passengers</span>
-                <select name="Passengers">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                </select>
-                </div>
-                <div class="round-one">
-                  <form>
-                    <input type="radio" name="travel" value="Round-Trip">Round-Trip
-                    <input type="radio" name="travel" value="One-Way">One-Way
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="flight-search">
-              <a href="http://www.qikmood.com" target="_blank">Search Flights</a>
+    </div>
+    <div class="input">
+      <div class="maininput">
+        <div class="secondinput">
+          <input type="text" class="depart-field whiterow" placeholder="Depart">
+          <input type="text" class="mmddyy-field whiterow" placeholder="mm/dd/yyy">
+            <p>Passengers</p>
+          <select class="row" name="passengers">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
       </div>
-      <div class="item">
-
-      </div>
-      <div class="dropdown">
-
-      </div>
-      <div class="radio">
-
-      </div>
-      <div class="search">
-
-      </div>
+    <div class="thirdinput">
+        <input type="text" class="arrive-field whiterow" placeholder="Arrive">
+        <input type="text" class="mmmddyy-field whiterow" placeholder="mm/dd/yyyy">
+      <form>
+        <input type="radio" name="return" value="return" checked> Return
+        <input type="radio" name="oneway" value="oneway"> One Way
+      </form>
+    </div>
+    </div>
+      <div class="button">
+        <button type="button">Search Flights</button>
+    </div>
+  </div>
   </main>
 </body>
 </html>

@@ -1,40 +1,53 @@
 * {
-  text-decoration: none;
   font-family: roboto;
 }
 
-.navigation {
-  color: white;
+.banner {
+background-color: #193A55;
+margin: 0;
+border-bottom: 1px solid white;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+height: auto;
+width: 100%;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+
+}
+
+.navbar {
   display: flex;
 }
 
-nav {
-  background-color: #193a55;
-  color: white;
-  font-weight: lighter;
-  justify-content: space-between;
+.navbar li {
+display: flex;
+display: inline-block;
+margin: 0 5px;
+padding: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #b9c6db;
+}
+
+.navbar li a:hover {
+  color: cyan;
+}
+
+.navbar img {
+  margin-right: 5px;
 }
 
 body {
-  background-image: url("../img/airline.jpg");
-  background-size:cover;
-  height: 100vh;
-  background-repeat: no-repeat;
-  width: auto;
-  margin: 0;
+  background: url("../img/airline.jpg") no-repeat center center fixed;
 }
 
-.banner {
-  display: flex;
-  border-bottom: 1px solid white;
-}
-
-.topbar {
-  display: flex;
-}
-
-.flight-search a {
-  text-decoration: none;
-  color: white;
-  text-align: center;
-}
+.form {
+ display: flex;
+ }
