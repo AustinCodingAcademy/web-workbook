@@ -1,3 +1,8 @@
+* {
+  text-decoration: none;
+  font-family: roboto;
+}
+
 body {
   background-image: url("../img/airline.jpg");
   margin:0;
@@ -29,6 +34,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  border-bottom: 1px solid white;
 }
 
 .main-nav {
@@ -36,11 +42,22 @@ main {
   flex-wrap: wrap;
   margin-top: 1.5em;
 
+
 }
 
 .icon {
   display: inline-block;
   margin: .3em;
+}
+
+.icon:hover {
+  color: #0063b7;
+  cursor: pointer;
+}
+
+.image {
+  padding: 3px;
+  padding-bottom: 0;
 }
 
 
@@ -67,6 +84,17 @@ main {
   justify-content: space-around;
 }
 
+
+.product {
+  background-color: #018d80;
+  padding: .7em 2.7em;
+}
+
+ a:hover .product {
+  background-color: #0063b7;
+}
+
+
 .input-form {
   display: flex;
   flex-wrap: wrap;
@@ -78,11 +106,14 @@ main {
   justify-content: space-around;
 }
 
+
 .field {
   padding: 1em;
   margin: 1em;
   border-radius: 5px;
   max-width: 147px;
+  background-color: #193a55;
+  color: white;
 }
 
 .details {
@@ -90,13 +121,24 @@ main {
   width: 100%;
   justify-content: space-around;
   margin: 1em;
+  color: white;
+}
+
+select {
+  padding: 1em;
+  background-color: #123754;
+  color: white;
+  border-radius: 5px;
+  margin-left: 1.5em;
 }
 
 .flight-search {
   padding: 1em;
-  text-decoration: none;
+  text-decoration: none !important;
   color: white;
   background-color: blue;
   width: 100%;
   text-align: center;
+  margin: 1em 1.3em;
+  border-radius: 5px;
 }
