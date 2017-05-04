@@ -59,7 +59,7 @@ input {
    border-radius: inherit;
  }
 
- select {
+select {
    width: 50px;
    height: 40px;
    display: inline;
@@ -72,7 +72,7 @@ input {
   height: 400px;
 }
 
-.form {
+.container {
   display: flex;
   flex-direction: column;
   max-width: 450px;
@@ -81,7 +81,7 @@ input {
   border-radius: 2px;
 }
 
-.form div {
+.container div {
   padding: 1px;
   padding: 5px;
   border-top-left-radius: 3px;
@@ -89,10 +89,10 @@ input {
 }
 
 .search {
-  display: flex;
   order: 1;
   background-color: rgb(33,167,143);
   padding: 0 !important;
+  flex-direction: row;
 }
 
 .flight {
@@ -172,11 +172,19 @@ button {
     font-size: .8em;
 }
 
-/*.button {
+.button {
   order: 99;
-}*/
+}
 
 p, input[type="radio"] {
  font-size: .9em;
  vertical-align: middle;
+}
+
+p {
+  color: white;
+}
+
+.row {
+ flex-direction: row;
 }
