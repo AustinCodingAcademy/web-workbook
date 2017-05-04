@@ -1,9 +1,26 @@
+body{
+  background-color: black;
+}
+.wholedangthing
+{
+  background-image: url("../img/airline.jpg");
+  background-size: cover;
+  width:1074px;
+  height:720px;
+  margin:auto;
+}
+*{
+  font-family: 'Roboto', sans-serif;
+}
 /* Nav Bar Styling*/
 header {
   width: 100%;
   height: 81px;
   background-color: #193A55;
-  border-bottom; solid 2px #9FACB8;
+  border-bottom: solid 1px white;
+  font-size:12px;
+  letter-spacing: .15em;
+  font-weight: normal;
   /*probably need to make a min width to keep floats from moving nav links*/
 
 }
@@ -22,23 +39,35 @@ nav {
   float: right;
   margin-right:30px;
   margin-top: 30px;
+
 }
 
 .formcontainer {
 width: 340px;
 background-color: #193A55;
 margin: 77px 0 0 65px;
-
+border-radius: 5px;
+height: 270px;
 }
 
 .photobar{
-  height:42px;
+  display: block;
+  height:39px;
+  background-color: #0065B1;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px 5px 0px 0px ;
+
+
+
   /*add radius corners later */
 }
 .photobar img{
   max-height: 30px;
   padding-left: 45px;
   margin: 0px;
+  padding-top:5px;
+
 
 }
 .greenlink , .bluelink{
@@ -49,20 +78,101 @@ margin: 77px 0 0 65px;
   padding:0px;
 }
 
-/*working on getting rid of those little lines around each of the icons in that photobar*/
+/*working on getting rid of those little lines around each of the icons in that photobar  HTML line 29*/
 
 .bluelink{
   background-color: #0065B1;
 }
 .greenlink {
   background-color: #008D81;
+  border-radius: 5px 0 0 0 ;
 }
 
-.form{
+.formbox{
+  padding: 15px;
+  padding-top: 25px;
+   font-family: sans-serif;
+   color: #FFFFFF;
+}
+
+.departfield,.arrivefield {
+  box-sizing: border-box;
+  color: #8793A1;
+  width: 145px;
+  height: 40px;
+  border: #fff 1px solid;
+  margin-right: 5px;
+  padding-left: 5px;
+  background-color: #193A55;
+
+
+
+}
+
+
+.datedepart,.datearrive   {
+  box-sizing: border-box;
+  color: #ffffff;
+  width: 145px;
+  height: 40px;
+  border: #fff 1px solid;
+  margin: 10px 5px 0 0;
+  padding-left: 5px;
+  background-color: #193A55;
+}
+
+
+.passengerbar{
+  box-sizing: border-box;
   display: inline-block;
-  width: 140px;
-  border: 2px #FFFFFF solid;
+  width: 145px;
+
 }
 
 
-/*Left off class tues may 2nd trying to get the border around the form table... should probably just make those elements into forms*/
+.passengerbar span{
+  display: inline-block;
+  color: #fff;
+  padding: 10px 15px 0 0;
+  margin: 10px 5px 0 0 ;
+  font-size: 12px;
+  width: 30px;
+
+}
+.formbox input {
+  border-radius: 5px;
+  border: 2px solid white;
+}
+.passnum{
+  display: inline-block;
+  padding: 10px 10px;
+  width: 20px;
+}
+
+
+/*def ask about how to style list type inputs*/
+
+.tripradio{
+  width: 130px;
+  font-size: 12px;
+  display: inline-block;
+
+}
+
+.searchbutton {
+  display: block;
+  width: 300px;
+ text-align: center;
+ padding:10px 0;
+
+  margin: auto;
+  color: white;
+  border-radius: 5px;
+  background-color: #0065B1;
+  margin-bottom: 20px;
+font-size: 12px;
+
+
+}
+
+  /*start throwing code in for radius boxes and final style and text size for nav part, as well as figuring out the tab spacing issues*/
