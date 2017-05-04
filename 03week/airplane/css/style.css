@@ -1,0 +1,172 @@
+* {
+  text-decoration: none;
+  font-family: roboto;
+}
+
+body {
+  background-image: url("../img/airline.jpg");
+  margin:0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+nav {
+  background-color: #193a55;
+  color: white;
+  font-weight: lighter;
+}
+
+/*main {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}*/
+
+main {
+  display: inline-block;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.5em;
+
+
+}
+
+.icon {
+  display: inline-block;
+  margin: .3em;
+}
+
+.icon:hover {
+  color: #0063b7;
+  cursor: pointer;
+}
+
+.image {
+  padding: 3px;
+  padding-bottom: 0;
+}
+
+
+.search-box {
+  background-color: #193a55;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 45%;
+  min-width: 320px;
+  max-width: 410px;
+  margin-left: 5em;
+  margin-top: 7em;
+  border-radius: 5px;
+
+}
+
+.product-bar {
+  display: flex;
+  width: 100%;
+
+}
+
+
+
+
+.product-tab {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+
+.product {
+  background-color: #018d80;
+  padding: .7em 2.7em;
+  /*border-top-right-radius: 5px;
+  border-top-left-radius: 5px;*/
+}
+
+/*this is how i managed to round the edges of product-bar*/
+a:first-child .product {
+  border-top-left-radius: 5px;
+}
+
+a:nth-child(3n) .product {
+  border-top-right-radius: 5px;
+}
+
+
+
+ a:hover .product {
+  background-color: #0063b7;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.input-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dest-date {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.field {
+  padding: 1em;
+  margin: 1em;
+  border-radius: 5px;
+  max-width: 147px;
+  background-color: #193a55;
+  color: white;
+  border: 1px solid white;
+}
+
+.details {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 1em;
+  color: white;
+}
+
+select {
+  padding: 1em;
+  background-color: #123754;
+  color: white;
+  border-radius: 5px;
+  margin-left: 1.5em;
+  border: 1px solid white;
+}
+
+.radio {
+  padding-top: .7em;
+}
+
+.flight-search {
+  padding: 1em;
+  text-decoration: none !important;
+  color: white;
+  background-color: blue;
+  width: 100%;
+  text-align: center;
+  margin: 1em 1.3em;
+  border-radius: 5px;
+}
