@@ -1,0 +1,81 @@
+            <!DOCTYPE html>
+            <html>
+              <head>
+                <meta charset="utf-8">
+                  <link rel="stylesheet" href="css/style.css">
+                <!--Font=Merriweather|Shadows Into Light|Vollkorn-->
+                <link href="https://fonts.googleapis.com/css?family=Merriweather|Shadows+Into+Light|Vollkorn" rel="stylesheet">
+                <title>UX Atlantic</title>
+              </head>
+              <body>
+
+                <section class="header">
+
+                    <ul class="navbar">
+                      <a href="#"><img src="img/home-icon.png" alt="home icon">Home</a>
+                      <a href="#"><img src="img/deal-icon.png" alt="deal icon">Travel Deals</a>
+                      <a href="#"><img src="img/schedule-icon.png" alt="schedule icon">Flight Schedule</a>
+                      <a href="#"><img src="img/login-icon.png" alt="register/login icon">Register/Login</a>
+                    </ul>
+                    <!--header logo-->
+                  <img src="img/logo.png" alt="White logo with a deep blue background">
+
+                </section>
+
+                <div class="main">
+
+                  <section class="planner">
+                     <div class="btn-group">
+                       <!--.active for img-->
+                      <a href="#plane" ><img src="img/plane-icon.png" class="active" alt="'plane icon'"></a>
+                      <a href="#hotel"><img src="img/hotel-icon.png" alt="hotel icon"></a>
+                      <a href="#car"><img src="img/car-icon.png" alt="car icon"></a>
+                    </div>
+
+                    <form class="plane" action="#plane" method="post">
+                      <div class="depart-arrive">
+                        <input type="text" name="depart" placeholder="Depart">
+                        <input type="text" name="arrive" placeholder="Arrive">
+                      </div>
+
+                      <!-- departure and return date-->
+                      <div class="date">
+                        <input type="date" id="departDate" value="2014-02-09">
+                        <input type="date" id="returnDate" value="2014-02-09">
+                      </div>
+
+                    <div class="return-one-way-passenger">
+                      <div class="passenger-no">
+                        <!--labeling passenger-->
+                        <label for="passenger">Passenger</label>
+                        <select name="passenger">
+                          <option value="1">1</option><!--Option for number of passengers-->
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                        </select>
+                      </div>
+
+                      <div class="return-one-way">
+                        <input type="radio" name="flight" value="Return">
+                        <!--labeling return value-->
+                        <label for="return-one-way">Return</label>
+                        <input type="radio" name= "flight" value="One Way">
+                        <!--labeling one-way value-->
+                        <label for="return-one-way">One-Way</label>
+                      </div>
+                    </div>
+
+                    <div class="search">
+                      <input type="submit" value="Search Flights">
+                    </div>
+
+                    </form>
+
+                  </section>
+
+                </main>
+
+
+              </body>
+            </html>
