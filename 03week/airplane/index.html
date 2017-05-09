@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../../reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/83d7fcc7a3.js"></script>
     <title>Copeland Airlines</title>
   </head>
   <body>
@@ -11,7 +12,7 @@
       <div class="img_container">
         <img src="img/logo.png" alt="company logo">
       </div>
-      <div class="nav_container">
+      <nav class="nav_container">
         <img src="img/home-icon.png" alt="Home">
         Home
         <img src="img/deal-icon.png" alt="Travel">
@@ -20,31 +21,26 @@
         Flight Schedule
         <img src="img/login-icon.png" alt="Login">
         Register/Login
-      </div>
+      </nav>
     </header>
     <main class="main_init">
       <section class="res_container">
-        <div class="res_box obj1"><img src="img/plane-icon.png" alt="Plane"></div>
-        <div class="res_box obj2"><img src="img/hotel-icon.png" alt="hotel"></div>
-        <div class="res_box obj3"><img src="img/car-icon.png" alt="Car"></div>
-        <div class="res_box obj4 hide">Empty</div>
+        <div class="row1 obj1"><img src="img/plane-icon.png" alt="Plane"></div>
+        <div class="row1 obj2"><img src="img/hotel-icon.png" alt="hotel"></div>
+        <div class="row1 obj3"><img src="img/car-icon.png" alt="Car"></div>
 
-        <div class="res_box obj5">Depart</div>
-        <div class="res_box obj6">Arrive</div>
-        <div class="res_box obj7 hide">Empty</div>
-        <div class="res_box obj8 hide">Empty</div>
+        <div class="row2 obj4"><input type="Text" name="Depart" value="Depart"></div>
+        <div class="row2 obj5"><input type="Text" name="Arrive" value="Arrive"></div>
 
-        <div class="res_box obj9">mm/dd/yyyy</div>
-        <div class="res_box obj10">mm/dd/yyyy</div>
-        <div class="res_box obj11 hide">Empty</div>
-        <div class="res_box obj12 hide">Empty</div>
+        <div class="row3 obj6"><input type="Text" name="Arr_date" value="mm/dd/yyyy"></div>
+        <div class="row3 obj7"><input type="Text" name="Dep_date" value="mm/dd/yyyy"></div>
 
-        <div class="res_box obj13">Passengers</div>
-        <div class="res_box obj14">1</div>
-        <div class="res_box obj15">⚪ Return</div>
-        <div class="res_box obj16">🔴 One Way</div>
+        <div class="row4 obj8"><p class="obj8">Passengers</p></div>
+        <div class="row4 obj9"><input type="Text" name="Passenger" value="1"></div>
+        <div class="row4 obj10">⚪ Return</div>
+        <div class="row4 obj11">🔴 One Way</div>
 
-        <div class="res_box obj17">Search Flights</div>
+        <div class="row5"><p class="obj12">Search Flights</p></div>
 
       </section>
     </main>
