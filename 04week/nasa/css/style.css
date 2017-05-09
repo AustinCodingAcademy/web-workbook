@@ -11,19 +11,25 @@
   text-align:center;
   line-height: 450px;
 }
-
-#flexbox {
-  display: flex;
-  background-color: lightgray;
-  height: 324px;
-  width: 850px;
-  line-height: 24px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  margin-top: 20px;
-  justify-content:space-around;
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 850px;
+    height: 324px;
+    line-height: 24px;
+  	font-family: Arial, Helvetica, sans-serif;
+  	font-size: 16px;
+  	margin-top: 20px;
+    background-color: lightgrey;
+    justify-content:space-around
 }
 
+.flex-item {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    font-weight: lighter;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -45,5 +51,5 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: cornflowerblue;
 }
