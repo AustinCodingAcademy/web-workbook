@@ -1,0 +1,243 @@
+/* CSS Reset -- Typically in reset.css.  Place right below comment if no reset.css is referenced in html */
+
+/* Box Sizing border-box */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Kalam', cursive;
+  font-size: 16pt;
+  background-color: #162756;
+  height:100vh;
+  color:white;
+  /*display: flex;*/
+
+}
+
+.logo {
+  /*float: left;*/
+  position: absolute;
+  top:-12%;
+  left:-4%;
+}
+
+.logo img {
+  border-radius: 25%;
+  /*background-color: white;*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5), 0 6px 20px 0 rgba(0, 0, 0, .5);
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  -webkit-transition: -webkit-transform 5s ease-in-out;
+          transition:         transform 5s ease-in-out;
+}
+.logo img:hover {
+  -webkit-transform: rotate(390deg);
+          transform: rotate(390deg);
+}
+
+/* These css entries address the header banner */
+.h_container {
+  background-color: #625192;
+  border-right: 10px solid #625192;
+  display: flex;
+  height: 90px;
+  margin: 40px 5%;
+  /*border: 5px solid black;*/
+  justify-content: flex-end;
+  align-items: center;
+}
+.hObj1,.hObj2,.hObj3,.hObj4,.hObj5,.hObj6 {
+  /*flex: 0 1 5%;*/
+  /*border: 5px solid green;*/
+}
+.hObj2,.hObj4,.hObj6 {
+  padding: 0 20px 0 5px;
+}
+
+/* This section handles the body */
+.main_init {
+  position: relative;
+  /*background-image: url("../img/Background3.jpg");*/
+  background-color: #162756;
+  /*opacity: 0.3;*/
+  /*min-height: 100vh;*/
+  background-size: cover;
+  background-position: center center;
+  /*min-height: 100vh;*/
+  /*background-size: cover;*/
+  /*background-position: center center;*/
+  margin: auto 5%
+  /*display: center;*/
+  /*border 10px solid black;*/
+}
+
+.myBackground {
+  background-image: url("../img/Background3.jpg");
+  opacity: 0.5;
+  min-height: 80vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.armor {
+  display:flex;
+  flex-direction: column;
+  position: absolute;
+  /*opacity: 1;*/
+  top:5%;
+  left:76%;
+  width: 200px;
+  height: 360px;
+  background-color: #236267; /*#417C81;*/
+  box-shadow: 10px 10px #012F34;
+  /*border: 10px solid black;*/
+  padding: 5px;
+}
+.armorObj {
+  width: auto;
+  height: 50%;
+  padding: 5px;
+}
+.armorObj1 {
+  height: 55%;
+}
+
+.fox {
+  display:flex;
+  flex-wrap: wrap;
+  position: absolute;
+  /*opacity: 1;*/
+  top:5%;
+  left:33%;
+  width: 412px;
+  height: 225px;
+  background-color: #423075; /*#625192;*/
+  box-shadow: 10px 10px #14063A;
+  /*border: 10px solid black;*/
+  padding: 5px;
+}
+.foxObj {
+  padding: 5px;
+  width: 50%;
+  height: 50%;
+}
+
+.saying {
+  position: absolute;
+  top:22%;
+  left:5%;
+  width: 180px;
+  height: 350px;
+  background-color: #2F4172;
+  box-shadow: 10px 10px #061439;
+  /*border: 10px solid black;*/
+}
+.smallCaps22pt {
+  font-size: 22pt !important;
+  font-variant: small-caps !important;
+  text-align: center;
+  text-shadow: 3px 3px 2px #061439; /*#7986AC;*/
+}
+
+.dragon {
+  position: absolute;
+  display:flex;
+  /*opacity: 1;*/
+  top:40%;
+  left:25%;
+  width: 352px;
+  height: 202px;
+  background-color: #236267; /*#417C81;*/
+  box-shadow: 10px 10px #012F34;
+  /*border: 10px solid black;*/
+  padding: 10px;
+}
+.dragonObj {
+  width: 100%;
+  height: 100%;
+
+}
+.pokemon {
+  position: absolute;
+  /*opacity: 1;*/
+  top:60%;
+  left:62%;
+  width: 317px;
+  height: 245px;
+  background-color: #2F4172; /*#7986AC*/;
+  box-shadow: 10px 10px #061439;
+  /*border: 10px solid black;*/
+  padding: 10px;
+}
+.pokemonObj {
+  width: 100%;
+  height: 100%;
+}
+.pokemon p {
+  visibility: hidden;
+}
+
+.pokemon:hover {
+  background-color:green;
+  opacity: 0.6;
+}
+.pokemon:hover p {
+  position: absolute;
+  top:30px;
+  left: 30px;
+  visibility: visible;
+  color: black;
+  font-weight: 600;
+
+}
+
+.seath {
+  display: flex;
+  position: absolute;
+  /*opacity: 1;*/
+  top:75%;
+  left:10%;
+  width: 415px;
+  height: 150px;
+  background-color: #423075; /*#625192;*/
+  box-shadow: 10px 10px #14063A;
+  /*border: 10px solid black;*/
+  padding: 5px;
+}
+.seathObj {
+  width: 50%;
+  height: auto;
+  padding: 5px;
+}
+
+/*These entries handle the footer*/
+.f_container {
+  background-color: #625192;
+  border-right: 10px solid #625192;
+  display: flex;
+  height: 90px;
+  margin: 10px 5%;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.fObj1,.fObj2,.fObj3,.fObj4,.fObj5,.fObj6,.fObj7 {
+  flex: 0 1 5%;
+}
+
+.fObj7 {
+  font-size: 10pt !important;
+  font-variant: normal !important;
+  text-shadow: none;
+  text-align: right;
+  flex:1 1;
+}
+
+.links {
+  color: white;
+}
