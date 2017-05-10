@@ -1,65 +1,65 @@
 
-.imageCont {
-  display: flex;
-  justify-content: center;
+body, button {
+  font-family: 'Lato', sans-serif;
+}
+
+h3 {
+  font-family: 'Archivo Black', sans-serif !important;
+}
+.imageContainer {
+  /*border: 2px solid black;*/
+  display:flex;
+  justify-content:center;
 }
 
 .image {
+  /*border: 2px solid black;*/
   background-image: url("../img/nasa-background.jpg");
-  width:850px;
-  height:450px;
+  width: 850px;
+  height: 450px;
   display: flex;
 }
 
-.headline {
-  margin: auto;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  font-size: 3em;
+/*headline styling*/
+.Text {
+ /*border: 2px solid white;*/
+ font-size: 5em;
+ font-weight: bold;
+ margin: auto;
+ color: white;
 }
 
-.footerCont {
-  margin-top: 20px;
-  display:flex;
+.footerContainer {
+  /*border: 2px solid red;*/
+  display: flex;
   justify-content: center;
 }
 
+/*footer gray surrounding box*/
 .footerBox {
-  width: 850px;
+  /*border: 2px solid black;*/
+  width:850px;
   height:324px;
   background-color: #E6E6E6;
-
-  display:flex;
-  justify-content: space-between;
+  display: flex;
 }
+
 
 .column-1, .column-2, .column-3 {
-  /*border:1px solid black;*/
-  margin-left: 20px;
-  padding: 0px;
-  width: 270px;
-}
-
-/*text styling*/
-
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  line-height: 1.5;
-  color: #A4A4A4;
-}
-
-
-h3 {
-  font-family: 'Montserrat', sans-serif !important;
-  color: black;
-  font-size: 20px;
-  font-weight: bold;
-}
+  /*border: 1px solid black;*/
+  margin: auto;
+  width:270px;
+  margin:0px 20px;
+  padding:0px;
 
 ul {
   list-style-type: none;
   padding-left: 0px;
+  margin: 0px;
+  line-height: 1.5;
+}
+
+/*name input field styling*
 }
 
 /*text field styling*/
@@ -68,14 +68,21 @@ input {
   height:25px;
 }
 
-textarea{
+
+/*message input field styling*/
+textarea {
   width: 75%;
-  height:100px;
+  height: 75px;
 }
-/*button styling*/
+
+/*send button styling*/
 button {
-  width: 75px;
-  height: 30px;
+  font-size: 12px;
+  margin-top: 5px;
   background-color: #4D4D4D;
-  color: white;
+  outline: none;
+  width: 75px;
+  height: 25px;
+  justify-content: center;
+  color: white
 }
