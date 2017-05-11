@@ -1,0 +1,103 @@
+html {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+*, *:before, *:after {
+-webkit-box-sizing: inherit;
+-moz-box-sizing: inherit;
+box-sizing: inherit;
+}
+
+body {
+  max-width: 1100px;
+  font-family: Tahoma, Arial, sans-serif;
+  margin: auto;
+}
+
+main {
+  margin: 2em;
+  display: flex;
+  flex-direction: row;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li a {
+  color: #fff;
+}
+
+hr {
+  color: #000;
+}
+
+button {
+  background-color: #999;
+  color: #fff;
+  font-size: 110%;
+  border: none;
+  text-transform: uppercase;
+}
+
+.content {
+  width: 800px;
+  margin-bottom: 2em;
+}
+
+.hero {
+  background-image: url("../img/bg.jpg");
+  background-position: top;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 500px;
+}
+
+.topStories {
+  width: 300px;
+  margin: 1em;
+}
+
+@media screen and (max-width: 767px), (max-width: 991px) {
+  .topStories {
+    display: none;
+  }
+}
+
+.footer {
+  background-color: #999;
+  color: #fff;
+  display: flex;
+  flex-row;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 767px) {
+  .footer {
+    display: none;
+  }
+}
+
+.footer > div {
+  margin: 3em;
+  text-align: left;
+}
+
+.footer li {
+  display: block;
+  border-bottom: 1px solid #fff;
+  line-height: 1.5em;
+}
+
+.footer ul {
+  padding: 0 !important;
+}
