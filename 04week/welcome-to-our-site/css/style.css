@@ -7,10 +7,15 @@ body {
 
 }*/
 
+h1, h3 {
+  font-family: Georgia;
+}
+
 header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   /*padding: 4em;*/
   height: 50vh;
   color: white;
@@ -37,7 +42,9 @@ main {
 .main-container {
   display: flex;
   justify-content: space-around;
-  margin: 2em 6em 2em 6em;
+  margin-left: 4em;
+  margin-right: 4em;
+
 
 }
 
@@ -47,7 +54,10 @@ main {
   align-items: center;
   flex-direction: column;
   background-color: black;
-  margin: 2em 4em 4em 4em;
+  margin: 5%;
+  margin-top: 3%;
+  width: 33%;
+  min-width: 201px;
 
 }
 
@@ -82,4 +92,84 @@ main {
 
 .content p {
   font-family: sans-serif;
+}
+
+
+/*here begins media query for width between 768-991*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  header {
+
+    background-color: dodgerblue;
+  }
+
+  main {
+    height: 100%;
+    background-color: whitesmoke;
+  }
+
+  .main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .article-box {
+    /*width: 33%;*/
+    background-color: whitesmoke;
+    color: black;
+    margin: 5% 0 7% 0;
+
+  }
+
+
+
+
+  .article-box h2 {
+    padding-top: 10%
+  }
+
+  .article-box p {
+    font-weight: bold;
+  }
+
+  .content h2 {
+    padding-top: 0;
+    margin-top: 0.3em;
+  }
+
+
+
+}
+
+/*messing around with further query less than 768px*/
+
+@media (max-width: 761px) {
+
+  main {
+    height: 100%;
+  }
+
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+  }
+
+
+
+
+
+
+  .article-box {
+    width: 33%;
+    min-width: 201px;
+    margin: 0;
+  }
 }
