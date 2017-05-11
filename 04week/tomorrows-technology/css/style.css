@@ -1,85 +1,155 @@
-.container-top{
-  width: 100%;
-  height: 450px;
-  background-color: #2BCDC0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #F3F1F1;
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/***********
+body
+***********/
+section{
+  margin: 2% 2% 0 0;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  width: 98%;
+  height: auto;
+}
+#img > img{
+  width: 75%;
+  float: left;
+  padding-top: 2%;
+  padding-left: 2%;
+}
+
+#topstories{
   box-sizing: border-box;
-  font-size: 500%;
+  width: 18%;
+  float: right;
+  text-align: left;
+  margin: 2% 2% 0 2%;
+
+
 }
-.container-bottom{
+ul{
+  list-style-type: none;
+}
+li{
+  padding: 1% 0;
+}
+#tomorrowstech{
   width: 100%;
-  height: 450px;
-  background-color: #1B1B1B;
-  color: #F3F1F1;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-
+  clear: left;
+  margin-left: 2%;
 }
-
-.container-bottom > div{
-  width: 20%;
+#tomorrowstech > h1{
+  font-size: 300%;
 }
-.container-bottom h3{
-  font-size: 200%;
-  padding: 2%;
-
+#tomorrowstech > p{
+  margin: 2% 0;
+  font-size: 175%;
 }
-h3{
+#btn{
+  width: 150px;
+  height: auto;
+  background-color: #4D4D4D;
+  color: #fff;
   text-align: center;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-bottom: 5%;
 
 }
-p{
-  text-align: center;
+footer{
+  display: none;
 }
-#one{
-  border-top: 30px solid #33A8DD;
-  margin: 0 auto;
-
-
-}
-#two{
-  border-top: 30px solid #F46731;
-  margin: 0 auto;
-
-}
-#three{
-  border-top: 30px solid #2BCDC0;
-  margin: 0 auto;
-
-}
-/********************
-Phone Size
-********************/
-@media (max-width: 767px){
-  .container-top{
-    width: 100%;
-    height: 450px;
-    background-color: #33A8DD;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #F3F1F1;
-    box-sizing: border-box;
-    font-size: 500%;
-  }
-  .container-bottom{
-    width: 100%;
+/****************
+Tablet Responsive
+****************/
+@media (min-width: 400px) and (max-width: 991px){
+  section{
+    margin: 2% 2% 2% 0;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    width: 98%;
     height: auto;
-    background-color: #F7F5F6;
-    color: #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
   }
-  .container-bottom > div{
-    width: 50%;
-    margin-top: 5%;
+  #img > img{
+    width: 95%;
+    float: none;
+    padding-top: 2%;
+    padding-left: 2%;
   }
-
+  #topstories{
+    display: none;
+  }
+  #tomorrowstech > h1{
+    font-size: 200%;
+  }
+  #tomorrowstech > p{
+    margin: 2% 0;
+    font-size: 125%;
+  }
+  footer{
+    display: none;
+  }
 }
+
+/***********
+Phone Repsonsive
+************/
+@media (max-width: 400px){
+
+    section{
+      margin: 2% 2% 2% 0;
+      border-top: 1px solid #000;
+      border-right: 1px solid #000;
+      border-bottom: 1px solid #000;
+      width: 98%;
+      height: auto;
+    }
+    #img > img{
+      width: 95%;
+      float: none;
+      padding-top: 2%;
+      padding-left: 2%;
+    }
+    #topstories{
+      display: none;
+    }
+    #tomorrowstech > h1{
+      font-size: 175%;
+    }
+    #tomorrowstech > p{
+      margin: 2% 0;
+      font-size: 110%;
+    }
+    footer{
+      display: flex;
+      justify-content: space-around;
+      background-color: #4D4D4D;
+      width: 100%;
+      height: auto;
+      color: #fff;
+
+    }
+    footer > div{
+      margin: 5% 0;
+    }
+
+    .footer > h2{
+      font-size: 150%;
+      margin-bottom: 15%;
+    }
+    .footer > ul{
+      color: #ccc;
+
+    }
+    .footerul > li{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+
+  }
