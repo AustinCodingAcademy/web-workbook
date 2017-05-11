@@ -1,0 +1,132 @@
+/* Box Sizing border-box */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: serif;
+  background-color: darkgray;
+  color: white;
+  /*height:100vh;*/
+}
+
+h1 {
+  /*-webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;*/
+  font-size: 36pt;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 24pt;
+  font-weight: bolder;
+  /*color: black;*/
+  padding: 3% 0px 5% 0px;
+  /*text-align: center;*/
+}
+
+p {
+  font-size: 12pt;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  /*font-weight: bolder;*/
+  /*padding: 5px 0px;*/
+}
+
+/*Main wrapper body.  Contains Main, Footer*/
+.wrapper {
+  /*width:80%;*/
+  height: 100vh;
+  /*height: auto;*/
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*align-items: center;*/
+
+}
+
+/*This is my Main container*/
+.mContainer {
+  margin: 0% 10%;
+  /*width: auto;*/
+  /*width: 850px;*/
+  min-height: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*margin: 0 5%;*/
+}
+
+/*My footer container.  This is the parent*/
+.fContainer {
+  margin: 0 10%;
+  min-height: 40%;
+  /*width: 850px;*/
+  /*padding: 5% 0%;*/
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /*border: 1px solid green;*/
+}
+
+/*My flex items...*/
+.fContainer > * {
+  width: 25%;
+  /*margin: 5%;*/
+  /*padding: 0% 5%;*/
+  /*border: 1px solid goldenrod;*/
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  text-align: center;
+}
+
+.blue {
+  background-color: #36a5d9;
+  padding: 8% 0%;
+}
+
+.orange {
+  background-color: #e66e3e;
+  padding: 8% 0%;
+
+}
+
+.sky {
+  background-color: #2cccbe;
+  padding: 8% 0%;
+
+}
+
+/*********************************
+*** CSS media query for phones ***
+*********************************/
+@media (max-width: 767px) {
+
+  .wrapper {
+    height: auto;
+  }
+
+  main.sky {
+    background-color: #36a5d9;
+
+  }
+
+  .fContainer {
+    flex-direction: column;
+    background-color: #f6f3f4;
+    color: black;
+
+  }
+
+  /*My flex items...*/
+  .fContainer > * {
+    width: 50%;
+    padding: 50px 0px;
+  }
+
+}
