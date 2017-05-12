@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+body{
+  margin: 20px;
+  height: auto;
+}
+
+  h1{
+    font-family: "Palatino Linotype", "Book Antiqua", serif;
+    font-size: 40px;
+    font-weight: 100;
+    color: white;
+    text-align:center;
+    line-height: 20px;
+
+  }
+.header {
+    background-color:#2bcdc0;
+    background-repeat: no-repeat;
+    height: 356px;
+    width: 950px;
+  }
+
+.header-item {
+    width: 950px;
+    text-align:center;
+    font-family: "Palatino Linotype", "Book Antiqua", serif;
+    font-size: 48px;
+    line-height: 356px;
+    color: white;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    width: 950px;
+    height: 356px;
+    font-family:  Tahoma, Geneva, sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: white;
+    background-color: black;
+    justify-content:space-around;
+}
+
+.item {
+    width: 180px;
+    height: auto;
+    margin-top: 50px;
+    text-align:center;
+}
+
+#blue-box {
+    background-color:#33a8dd;
+    height: 30px;
+}
+
+  #orange-box {
+    background-color:#f46731;
+    height: 30px;
+  }
+
+  #green-box {
+    background-color:#2bcdc0;
+    height: 30px;
+}
+
+  /********** max-width: 767px **************/
+
+  @media (max-width: 767px) {
+
+
+h1{
+      color: black;
+      margin:0;
+      padding-top: 20px;
+    }
+
+.header {
+    display: -webkit-flex;
+    display: flex;
+    background-color:#33a8dd;
+    height: 356px;
+    width: 450px;
+    justify-content: center;
+    align-items:center;
+    }
+
+.header-item {
+    width: 250px;
+    font-family: "Palatino Linotype", "Book Antiqua", serif;
+    font-size: 48px;
+    line-height: 48px;
+    color: white;
+    text-align:left;
+    }
+
+.flex-container {
+
+    width: 450px;
+    height: 999px;
+    font-family:  Tahoma, Geneva, sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: black;
+    background-color: lightgray;
+    flex-direction: column;
+    align-items:center;
+
+}
+
+.item {
+    width: 180px;
+    text-align:center;
+    margin: 0;
+}
+
+#blue-box {
+    background-color:#33a8dd;
+    height: 30px;
+}
+
+#orange-box {
+    background-color:#f46731;
+    height: 30px;
+}
+
+#green-box {
+    background-color:#2bcdc0;
+    height: 30px;
+}
