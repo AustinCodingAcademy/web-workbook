@@ -1,42 +1,52 @@
 main {
   display: flex;
+  flex-direction: row;
+  margin: 2em;
 }
 
-img {
-  width: 800px;
+body {
+  /*max-width: 1100px;*/
+}
+
+.content {
+  width: 900px;
+}
+
+.topimage {
+  background-image: url("../img/bg.jpg");
+  background-position: top;
+  background-size: cover;
+  height: auto auto!important;
+}
+
+.topimage {
   height: 400px;
-  display: flex;
-  margin-left: 60px;
-  margin-top: 15px;
-  margin-right: 60px;
-  margin-bottom: 10px;
 }
 
 .sidenav {
-  flex-direction: row;
-  /*margin-top: 10px;*/
-}
-
-aside {
-  margin-right: 60px;
+  margin-top: 1px;
+  margin-left: 40px;
+  width: 300px;
 }
 
 hr {
   color: #000;
-  margin-right: 10px;
+
 }
 
 h1 {
 font-size: 35px;
 margin-top: 10px;
-margin-bottom: 5px;
+margin-bottom: 10px;
 }
 
 article {
-  margin-left: 60px;
+
 }
 
 h2 {
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 aside ul li {
@@ -46,23 +56,23 @@ aside ul li {
 a {
   text-decoration: none;
   color: black;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 div.feature {
   margin-right: 60px;
 }
 
-div.feature p {
-  font-size: 15px;
-}
 p {
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 button {
   background-color: #5c5c5c;
-  margin-left: 60px;
+  margin-left: auto;
   width: 100px;
   height: 30px;
   color: white;
@@ -73,9 +83,9 @@ button {
   background-color: #808080;
   color: #fff;
   display: flex;
-  flex-row;
+  flex: row;
   justify-content: space-around;
-  width: 800px;
+  width: 100%;
   height: 400px;
   display: flex;
 }
@@ -91,20 +101,52 @@ button {
   line-height: 1.5em;
 }
 
+.info ul {
+padding-left: 0 !important;
+}
+
+.info h2 {
+  font-size: 20px;
+  width: 150px;
+}
+
+.info a {
+  color: white;
+}
+
+img {
+  width: 17px;
+  height: 17px;
+  align-items: flex-end;
+  /*color: white;*/
+}
+
+/*This is for phone view only*/
+
 @media screen and (max-width: 767px), (max-width: 991px) {
   .sidenav {
-    display: none;
+    display: none;}
+  .topimage {
+    height: 240px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .info {
+    height: 240px;
   }
 }
 
-@media screen and (max-width: 767px), (max-width: 991px) {
+/*This is for tablet view only*/
+
+@media screen and (min-width: 767px) {
   .info {
     display: none;
   }
-}
-
-@media all and (min-width: 992px){
-  .info {
-    display: none;
+.topimage {
+  height: 400px;
   }
 }
