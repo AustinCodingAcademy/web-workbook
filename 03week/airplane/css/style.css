@@ -8,9 +8,6 @@ body {
   width: 100%;
 }
 
-
-
-
 header {
   height: auto;
   width: 100%;
@@ -56,44 +53,67 @@ header {
   box-sizing: border-box;
 }
 
+.header-box {
+  background-color: #green;
+  margin: 18.67px 175px;
+  padding: 0;
+  position: fixed;
+}
 
 .plane-icon {
   background-image: url(../img/plane-icon);
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #0063B7;
+  background-color: #0063B7 !important;
   height: 20px;
   width: 30px;
   position: absolute;
-  top: 100%;
-  left: 0px;
-  z-index: 100;
+
+  z-index: 1;
   display: none
 }
 
+.date {
+  position: relative;
+  margin: 18.67px 175px;
+  position: absolute;
+  top: auto;
+  right: 50px;
+  font-weight: 200;
+  font-size: 12px;
+  color: #grey;
+}
+
+#passengers {
+
+}
+
+
 .radio {
-  height: 100%;
-margin: 0;
-padding: 0;
-font-family: "open-sans","Helvetica Neue",Helvetica,Calibri,Arial,"Lucida Grande",sans-serif;
-font-weight: 400;
-font-size: 12px;
-line-height: 1.4;
-background-attachment: fixed;
-position: relative;
-color: #000;
+  height: 30px;
+  margin: 10px;
+  padding: 20px;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 1.4;
+  background-attachment: fixed;
+  position: relative;
+  color: #white;
 }
 
 .time {
   margin: 0;
   padding: 0;
-  font-family: "open-sans","Helvetica Neue",Helvetica,Calibri,Arial,"Lucida Grande",sans-serif;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 12px;
+  color: white;
   line-height: 1.4;
   background-attachment: fixed;
   position: relative;
-
+  display: flex;
+  justify-content: space-around;
+  width: 175px;
+  margin: 5px auto;
 }
 
 .button {
