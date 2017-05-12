@@ -1,0 +1,80 @@
+/*Notes from HTML */
+/*Use a psudo class to bold the last word of the header*/
+/*   COLORS!
+#2BCDC0 teal
+#F56730 orange
+#33A8DD blue */
+
+/*This is the Css that is common to any screen*/
+
+h1{
+  font-size: 50px;
+  font-family: serif;
+  font-weight: normal;
+}
+
+
+h3 {
+  font-size: 28px;
+  font-family: serif;
+  padding: 2px;
+  font-weight: lighter;
+}
+
+.tealbox, .bluebox, .orangebox{
+  display:inline-block;
+  width: 149px;
+  height: 24px;
+}
+
+.tealbox {
+  background-color: #2BCDC0;
+}
+
+.bluebox {
+  background-color:#33A8DD;
+
+}
+
+.orangebox{
+  background-color: #F56730 ;
+}
+
+.textinbox {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.smallbox{
+  margin-top:50px;
+  width: 149px;
+  height: 340px;
+  text-align: center;
+}
+
+/*media query for screens under 500 Px (per the assignment box size*/
+
+@media (max-width: 500px) {
+     header{
+        height:378px;
+        width: 499px;
+        background-color: #33A8DD;
+        color: white;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+       }
+  h1 {
+      display: block;
+      width:300px;
+      height: 100px;
+
+  }
+    main{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background: #F7F5F6 ;
+  }
