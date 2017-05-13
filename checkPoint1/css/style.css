@@ -1,0 +1,86 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  color: white;
+  font-family: 'Courgette', cursive;
+
+}
+
+body {
+  background-color: black;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+nav{
+  margin-right: 5%;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h4 {
+  margin-top: 20px;
+  font-weight: 100;
+}
+
+a {
+  display: inline-block;  /* required to set margin */
+  font-size: 20px;
+  text-decoration: none;
+  margin: 20px 0px;
+}
+
+a:hover {
+  color: blue;
+}
+
+div {
+  width: 45vw;
+  height: calc(45vw * 0.8);  /* image aspect width:height is 1:0.8, so height should be set to 80% of width */
+  overflow: hidden;
+}
+
+@keyframes photo {
+  0%  {left: 0%;}
+  20% {left: 0%;}
+  25% {left: -100%;}
+  45% {left: -100%;}
+  50% {left: -200%;}
+  70% {left: -200%;}
+  75% {left: -300%;}
+  95% {left: -300%;}
+  100% {left: -400%;}
+}
+
+div figure {
+  position: relative;
+  width: 500%;
+  animation: 30s photo infinite;
+}
+
+div figure#engagement:target img {
+  width: 20%;
+  float: left;
+}
+
+div figure#family:target img {
+  width: 20%;
+  float: left;
+}
+
+div figure#nature:target img {
+  width: 20%;
+  float: left;
+}
+
+div figure#other:target img {
+  width: 20%;
+  float: left;
+}
