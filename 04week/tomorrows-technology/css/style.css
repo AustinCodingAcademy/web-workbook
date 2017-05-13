@@ -26,6 +26,11 @@ main img {
   padding: .5em;
 }
 
+.subject-button:hover {
+  cursor: pointer;
+  color: dimgray;
+}
+
 aside {
   width: 30%;
 }
@@ -46,4 +51,89 @@ li {
   list-style-type: none;
   padding: .5em 0 .5em 0;
   font-weight: bold;
+}
+
+footer {
+  display: none;
+
+  }
+
+/*----------this is where media query begins for tablet------------*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  aside {
+    display: none;
+  }
+
+  body {
+    padding: 4%;
+  }
+
+  main {
+    width: 100%;
+  }
+
+
+}
+
+/*----------------this is where media query begins for phone-----------*/
+
+@media (max-width: 767px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+
+  }
+
+  article {
+    padding: 0 7%;
+  }
+
+  aside {
+    display: none;
+  }
+
+  footer {
+    display: block;
+    /*justify-content: space-around;*/
+    background-color: #414141;
+    margin-top: 5%;
+    color: whitesmoke;
+  }
+
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    /*padding: 0 7% 0 7%;*/
+    flex-wrap: wrap;
+  }
+
+  .bottom-nav li:hover {
+    color: dimgray;
+    cursor: pointer;
+  }
+
+  footer ul li {
+    border-bottom: 1px solid whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  .useful-links li {
+    padding-bottom: .8em;
+  }
+
+  li img {
+    height: 2.2em;
+    padding-left: 2em;
+  }
+
+
 }
