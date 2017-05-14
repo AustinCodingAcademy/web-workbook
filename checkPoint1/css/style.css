@@ -64,13 +64,13 @@ div {
 
 div figure {                        /* The image count of each figure element must be the same */
   position: relative;
-  width: 500%;                      /* width = 100% per image in figure */
+  width: 500%;                      /* width = 100% * (unique images in figure + 1) ##### +1 because the first image needs to be added to end of the image slide*/
   animation: 30s photo infinite;
 }
 
 /* using target, the desired slider is rendered when its anchor clicked */
 div figure#engagement:target img {
-  width: 20%;                        /* width = 100% / image count in figure */
+  width: 20%;                        /* width = 100% / (unique images in figure + 1) */
   float: left;
 }
 
