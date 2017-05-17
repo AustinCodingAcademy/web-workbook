@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  color: white;
+}
+/*
+.center {
+
+}*/
+
+h1, h3 {
+  font-family: Georgia;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  height: 50vh;
+  color: white;
+  background-color: #2bcdc0
+
+}
+
+header h1 {
+  font-size: 5em;
+  font-weight: lighter;
+}
+
+.title-bold {
+  font-weight: 600;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  height: 50vh;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 4em;
+  margin-right: 4em;
+
+
+}
+
+.article-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  margin: 5%;
+  margin-top: 3%;
+  width: 33%;
+  min-width: 201px;
+
+}
+
+.sub-top-color {
+  background-color: dodgerblue;
+  width: 100%;
+  height: 50px;
+}
+
+.article-box:nth-child(2n) .sub-top-color {
+  background-color: orangered;
+}
+
+.article-box:nth-child(3n) .sub-top-color {
+  background-color: turquoise;
+}
+
+.article-box h2 {
+  font-size: 3em;
+  font-weight: lighter;
+  padding-top: 1em;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.content p {
+  font-family: sans-serif;
+}
+
+
+/*here begins media query for width between 768-991*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+  header {
+
+    background-color: dodgerblue;
+  }
+
+  main {
+    height: 100%;
+    background-color: whitesmoke;
+  }
+
+  .main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .article-box {
+    /*width: 33%;*/
+    background-color: whitesmoke;
+    color: black;
+    margin: 5% 0 7% 0;
+
+  }
+
+  .article-box h2 {
+    padding-top: 10%
+  }
+
+  .article-box p {
+    font-weight: bold;
+  }
+
+  .content h2 {
+    padding-top: 0;
+    margin-top: 0.3em;
+  }
+
+
+
+}
+
+/*messing around with further query less than 768px*/
+/*this code would perhaps be covered by changing the values or the above query, but i wanted to experiment with adding a second query*/
+
+@media (max-width: 761px) {
+
+  main {
+    height: 100%;
+    background-color: whitesmoke;
+  }
+
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+  }
+
+  .article-box {
+    width: 33%;
+    min-width: 201px;
+    margin: 5% 0 7% 0;
+    background-color: whitesmoke;
+    color: black;
+  }
+
+
+}
