@@ -1,18 +1,22 @@
-/*Notes from HTML */
+  /*Notes from HTML */
+
+
 /*Use a psudo class to bold the last word of the header*/
+
+
 /*   COLORS!
 #2BCDC0 teal
 #F56730 orange
 #33A8DD blue */
 
+
 /*This is the Css that is common to any screen*/
 
-h1{
+h1 {
   font-size: 50px;
   font-family: serif;
   font-weight: normal;
 }
-
 
 h3 {
   font-size: 28px;
@@ -21,8 +25,8 @@ h3 {
   font-weight: lighter;
 }
 
-.tealbox, .bluebox, .orangebox{
-  display:inline-block;
+.tealbox, .bluebox, .orangebox {
+  display: inline-block;
   width: 149px;
   height: 24px;
 }
@@ -32,12 +36,11 @@ h3 {
 }
 
 .bluebox {
-  background-color:#33A8DD;
-
+  background-color: #33A8DD;
 }
 
-.orangebox{
-  background-color: #F56730 ;
+.orangebox {
+  background-color: #F56730;
 }
 
 .textinbox {
@@ -45,37 +48,58 @@ h3 {
   font-size: 14px;
 }
 
-.smallbox{
-  margin-top:50px;
+.smallbox {
+  margin-top: 50px;
   width: 149px;
   height: 340px;
   text-align: center;
 }
 
+
 /*media query for screens under 500 Px (per the assignment box size*/
 
 @media (max-width: 500px) {
-     header{
-        height:378px;
-        width: 499px;
-        background-color: #33A8DD;
-        color: white;
-        text-align: left;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-       }
-  h1 {
-      display: block;
-      width:300px;
-      height: 100px;
-
+  header {
+    height: 378px;
+    width: 499px;
+    background-color: #33A8DD;
+    color: white;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-    main{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  background: #F7F5F6 ;
+  h1 {
+    display: block;
+    width: 300px;
+    height: 100px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7F5F6;
   }
 }
+
+
+/*media query for any screens over 500px (again just based on the assignment picture)*/
+
+@media (min-width: 501px) {
+  header {
+    height: 378px;
+    width: 100%;
+    background-color: #2BCDC0;
+    color: white;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #1B1B1B;
+    color: white;
+  }
