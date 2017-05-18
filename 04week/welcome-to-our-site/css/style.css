@@ -76,16 +76,22 @@ p {
   width: 200px;
 }
 
-@media (min-width: 768px)
-      and (max-width: 991px)
+@media screen and (min-width: 768px)
+      and (max-width: 991px)a
       and (max-width: 767px) {
-      /* STYLES HERE */
+
       .top {
         background-color: #33A8DD;}
 
       .bottom {
-        background-color: white;
+        background-color: white !important;
         column-count: 1;
         column-rule: none;
-        width: 150;      
+        width: 770px;}
+
+      .main-box {
+        column-count: 1;
+        column-rule: none;
+        width: 150;
+      }
 }
