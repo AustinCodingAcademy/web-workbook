@@ -11,7 +11,7 @@
 
 
 .trigger {
-  background-color: gray;
+  background-color: none;
   width: 100%;
   height: inherit;
   display: flex;
@@ -31,21 +31,21 @@
 }
 
 .trigger:hover > :nth-child(even) {
-  transform: translateX(300px);
+  transform: translateX(300px) rotate(1080deg) scale(2);
 }
 
 .trigger:hover > :nth-child(odd) {
-  transform: translateX(-300px);
+  transform: translate(-300px) rotate(-1080deg) scale(0.5);
 }
 
 
 
 .box:nth-child(even) {
-  transition: all ease 1s;
+  transition: all ease-in-out 1s;
 }
 
 .box:nth-child(odd) {
-  transition: 1s;
+  transition: all ease-in-out 1s;
 }
 
 
