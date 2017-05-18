@@ -9,6 +9,16 @@ body {
   margin: 0 auto;
 }
 
+.container:hover div:nth-child(odd) {
+  transform: scale(.5) translate(-200px) rotate(-180deg);
+  transition-duration: 6s;
+}
+
+.container:hover div:nth-child(even) {
+  transform: scale(2) translate(200px) rotate(180deg);
+  transition-duration: 6s;
+}
+
 .container > div {
   margin: 10px;
   height: 50px;
