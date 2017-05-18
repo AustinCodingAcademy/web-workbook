@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Optional theme -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bootstrap 101</title>
+  </head>
+  <body>
+    <div class="container">
+
+    <!-- Practice 9 pagination -->
+    <nav>
+      <ul class="pagination">
+        <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo</span></a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo</span></a></li>
+      </ul>
+    </nav>
+<!-- Practice 8 menu bars-->
+    <div class="row">
+      <ul class="list-inline">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact
+            <span class="caret"></span>
+            <ul class="dropdown-menu">
+              <li><a href="#">Phone</a></li>
+              <li><a href="#">Email</a></li>
+              <li><a href="#">Chat</a></li>
+            </ul>
+          </a>
+        </li>
+      </ul>
+      <br>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="none"><a href="#">Home</a></li>
+        <li class="active"><a href="#">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Phone</a></li>
+            <li><a href="#">Email</a></li>
+            <li><a href="#">Chat</a></li>
+          </ul>
+        </li>
+      </ul>
+      <br>
+      <ul class="nav nav-pills">
+        <li class="active"><a data-toggle="tab" href="#superman">Superman</a></li>
+        <li><a data-toggle="tab" href="#batman">Batman</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Flash
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li class="disabled"><a data-toggle="tab" href="#flash">The Flash</a></li>
+            <li><a data-toggle="tab" href="#kidflash">Kid Flash</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="superman" class="tab-pane fade in active">
+          <p>Superman is a fictional superhero appearing in American comic books published by DC Comics</p>
+        </div>
+        <div id="batman" class="tab-pane fade">
+          <p>Batman is a fictional superhero appearing in American comic books published by DC Comics</p>
+        </div>
+        <div id="flash" class="tab-pane fade">
+          <p>The Flash is a fictional superhero appearing in American comic books published by DC Comics</p>
+        </div>
+        <div id="kidflash" class="tab-pane fade">
+          <p>Kid Flash is a fictional superhero appearing in American comic books published by DC Comics</p>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <!-- Practice 7 -->
+    <div class="row jumbotron">
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon">Your Name</span>
+        <input class="form-control" type="text" name="name" placeholder="Full Name">
+      </div>
+      <br>
+
+      <div class="input-group input-group-lg">
+        <input class="form-control" type="text" name="name" placeholder="Full Name">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button" name="button">Enter</button>
+        </span>
+      </div>
+      <br>
+
+      <div class="input-group">
+        <div class="input-group-btn">
+          <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" type="button" name="button">User ID <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Google+</a></li>
+          </ul>
+        </div>
+        <input class="form-control" type="text" aria-label="...">
+      </div>
+      <br>
+
+      <div class="input-group">
+        <span class="input-group-addon">
+          <input type="checkbox" name="" value="">
+        </span>
+        <input class="form-control" type="text" name="" value="">
+      </div>
+    </div> <!-- Practice 7 -->
+    <!-- Practice 6 -->
+    <div class="row">
+      <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle btn-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" name="button">Favorite Hero
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li class="dropdown-header">Marvel</li>
+          <li><a href="#">Spiderman</a></li>
+          <li><a href="#">Captain America</a></li>
+          <li><a href="#">Iron Man</a></li>
+          <li role="separator" class="divider"></li>
+          <li class="dropdown-header">DC</li>
+          <li><a href="#">Superman</a></li>
+          <li class="disabled"><a href="#">Batman</a></li>
+          <li><a href="#">Flash</a></li>
+        </ul>
+      </div>
+    </div>  <!--Practice 6 -->
+
+    <!-- Practice 5 row -->
+    <div class="row">
+      <span class="text-muted">I love coffee!  </span>
+      <span class="text-primary">I love coffee!  </span>
+      <span class="text-success">I love coffee!  </span>
+      <span class="text-warning">I love coffee!  </span>
+      <span class="text-danger">I love coffee!  </span>
+      <span class="text-info">I love coffee!  </span>
+
+      <img src="img/Desert.jpg" id="desert" class="img-responsive img-circle imgSize pull-right img-thumbnail" alt="Desert">
+      <img src="img/Koala.jpg" id="koala" class="img-responsive imgSize" alt="Koala">
+      <div class="well well-sm">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p><span class="glyphicon glyphicon-film"></span>
+      <a href="#" class="btn btn-primary btn-lg">Trash <span class="glyphicon glyphicon-trash"></span></a>
+      <button type="button" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> Call Me
+      </button>
+      </p>
+    </div>  <!-- Practice 5 row -->
+
+    <!-- Practice 4 carousel row -->
+    <div class="row jumbotron">
+      <div id="theCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#theCarousel" data-slide-to="1"></li>
+          <li data-target="#theCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="slide1"></div>
+            <div class="carousel-caption">
+              <h1>Amazing Backgrounds</h1>
+              <p>Thousands of Backgrounds for free</p>
+              <p><a href="#" class="btn btn-primary btn-sm">Get them Now</a></p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="slide2"></div>
+            <div class="carousel-caption">
+              <h1>Thousands of Colors</h1>
+              <p>Every Color you can Imagine</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="slide3"></div>
+            <div class="carousel-caption">
+              <h1>Amazing Illustrations</h1>
+              <p>And they are all free</p>
+              <p><a href="#" class="btn btn-primary btn-lg">Get them Now</a></p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#theCarousel" class="left carousel-control" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a href="#theCarousel" class="right carousel-control" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+
+      </div>  <!-- theCarousel -->
+
+    </div> <!--Practice 4 carousel row -->
+
+    <!-- Practice 3 row -->
+    <div class="row">
+      <!-- <div class="col-md-6"></div> -->
+      <div class="col-md-6 col-md-offset-6">
+        <h4><a href="#col1Content" data-toggle="collapse">Column1</a></h4>
+        <p id="col1Content" class="collapse in">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+      <div class="col-md-6 col-md-offset-6">
+        <table class="table table-bordered table-striped table-hover">
+        <thead>
+          <tr>
+            <td colspan="4">Best Baseball Players</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="col-md-2"></th>
+            <th class="text-center">Average</th>
+            <th class="text-center">RBIs</th>
+            <th class="text-center">Homeruns</th>
+          </tr>
+          <tr>
+            <td><a href="#">Hank Aaron*</a></td>
+            <td>.305</td>
+            <td>2297</td>
+            <td>755</td>
+          </tr>
+          <tr>
+            <td><a href="#">Babe Ruth*</a></td>
+            <td>.342</td>
+            <td>2214</td>
+            <td>714</td>
+          </tr>
+          <tr>
+            <td><a href="#">Barry Bonds*</a></td>
+            <td>.296</td>
+            <td>1996</td>
+            <td>762</td>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+    </div>  <!--Practice 3 row -->
+
+    <!-- Practice 2 row -->
+    <div class="row">
+      <div class="well hidden-sm hidden-md hidden-lg">
+        <p>Screen &lt; 768px</p>
+      </div>
+
+      <div class="well hidden-md hidden-lg">
+        <p>Screen &gt;= 768px and &lt; 992px</p>
+      </div>
+
+      <div class="well hidden-lg">
+        <p>Screen &gt;= 992px and &lt; 1200px</p>
+      </div>
+
+      <div class="well">
+        <p>Screen &gt;= 1200px</p>
+      </div>
+
+
+    </div> <!--row -->
+
+    <!-- Practice 1 row -->
+    <div class="row">
+      <div class="col-lg-2 col-md-2 col-sm-4 col-sx-12">
+        <h4><a href="#col1Content" data-toggle="collapse">Column1</a></h4>
+        <p id="col1Content" class="collapse in">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-8 col-sx-12">
+        <h4><a href="#col2Content" data-toggle="collapse">Column2</a></h4>
+        <p id="col2Content" class="collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-12 col-sx-12">
+        <h4><a href="#col3Content" data-toggle="collapse">Column3</a></h4>
+        <p id="col3Content" class="collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div> <!--row -->
+
+    </div>  <!--container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
