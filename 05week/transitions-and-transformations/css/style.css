@@ -6,9 +6,10 @@
 .box{
   height: 50px;
   width: 50px;
-  border: 1px solid black;
   margin: 2% 0;
+  transition: all 3s;
 }
+
 .box:nth-child(1){
   background-color: blue;
 }
@@ -48,13 +49,11 @@
 .box:nth-child(12){
   background-color: aqua;
 }
-.box:hover:nth-child(odd){
+.container:hover .box:nth-child(odd){
   transform: scale(.5) translate(-400px) rotate(-360deg);
-  transition-duration: 3s;
 }
 
-.box:hover:nth-child(even){
+.container:hover .box:nth-child(even){
   transform: scale(2) translate(200px) rotate(360deg);
-  transition-duration: 5s;
 
 }
