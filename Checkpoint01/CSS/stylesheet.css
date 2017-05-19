@@ -33,7 +33,9 @@ nav section a {
 }
 
 nav section a:hover {
-  color:lightblue;
+  animation-name: Fancy;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 #PageTitle {
@@ -78,4 +80,9 @@ article p {
   font-family: helvetica;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.73)
+}
+
+@keyframes Fancy {
+  from {background-color: black; color: white}
+  to {background-color: lightblue; color:black}
 }
