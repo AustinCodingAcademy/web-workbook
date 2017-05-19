@@ -1,0 +1,58 @@
+body {
+  background-color: #208075;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 5px;
+  position: relative;
+
+}
+
+.odd {
+  background-color: #6A6;
+}
+
+.even {
+  background-color: #0D355A;
+}
+
+@keyframes even {
+  0% {left: 0px;}
+  100% {left: 200px;}
+
+}
+
+@@keyframes odd {
+  0% {left: 0px;}
+  100% {left: 200px;}
+}
+.even:hover {
+  background-color: #0D355A;
+  transition: width 2s, height 2s, transform 3s;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform: rotate(180deg);
+  animation-name: even;
+  animation-duration: 2s;
+
+}
+
+.odd:hover {
+  background-color: #6A6;
+  transition: width 2s, height 2s, transform 3s;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  transform: rotate(-180deg);
+  animation-name: odd;
+  animation-duration: 2s;
+
+}
