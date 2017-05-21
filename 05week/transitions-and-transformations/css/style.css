@@ -7,6 +7,7 @@
           box-sizing: border-box;
 }
 
+/*body and container used to setup background*/
 body {
   background-color: lightgray;
 }
@@ -14,40 +15,49 @@ body {
 .container {
   background-color: #777;
 }
+
+/*This group closely outlines the squares.  When you hover into this box, the animations occur*/
 .square-group {
   margin: auto 525px;
+  /*background-color: #AAA;*/
+
 }
 
+/*Basic design of the square object*/
 .square {
-  background-color: Khaki;
   width: 50px;
   height: 50px;
   border-radius: 2px;
   margin: 10px auto;
 }
 
+/*Transition Behavior of odd squares*/
 .square:nth-child(odd) {
   -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 4s 2.5s;
   transition: width 2s, height 2s, background-color 2s, transform 4s 2.5s;
 }
 
+/*Transition Behavior of even squares*/
 .square:nth-child(even) {
   -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s ease-in-out 2.5s;
   transition: width 2s, height 2s, background-color 2s, transform 1s ease-in-out 2.5s;
 }
 
+/*Behavior of odd squares*/
 .square-group:hover .square:nth-child(odd) {
   width: 100px;
   height: 100px;
   transform: translateX(400px) rotate(720deg);
 }
 
+/*Behavior of even squares*/
 .square-group:hover .square:nth-child(even) {
   width: 25px;
   height: 25px;
   transform: translateX(-500px) rotate(-720deg);
 }
 
+/*My colors*/
 .square1 {
   background-color: crimson;
 }
