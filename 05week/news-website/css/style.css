@@ -1,24 +1,24 @@
 body {
-  background-color: #3AB371; /* Lime-sih Green */
+  background-color: #3AB371 !im;
   color: black;
   font-family: 'Gloria Hallelujah', cursive;
-
 }
 
 header {
-
   width: 50%;
   height: 30%;
   margin: 0 auto;
-  +background-color: #3AB371;
+  background-color: #3AB371;
   text-align: center;
   font-family: 'Gloria Hallelujah', cursive;
+  font-size: 60px;
 }
 
-h1 {
+.panel-heading {
   font-size: 40px;
   font-style: bold;
   margin: 0 auto;
+  text-align: center;
 }
 
 h3 {
@@ -26,6 +26,23 @@ h3 {
   margin: 0 auto;
 }
 
+img.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.panel-body {
+  text-align: justify;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: black;
+  font-size: 20px
+}
+
+.panel-group {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
 .row {
   margin: 0 auto;
   display: flex;
@@ -41,7 +58,13 @@ h3 {
 }
 
 li {
-  text-align: justify;
+  text-align: left;
+  float:right;
+  display:inline;
+}
+
+li:nth-child(2)  {
+  text-align: right;
   float:left;
   display:inline;
 }
