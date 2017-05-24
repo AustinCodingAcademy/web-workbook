@@ -12,14 +12,22 @@
 header {
   border-bottom: 1px solid white;
   background-color: #193A55;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav a {
@@ -28,7 +36,9 @@ nav a {
   margin-left: 5px;
   margin-right: 11px;
   font-size: 15px;
-  flex: 0 0 auto;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 .home {
@@ -42,8 +52,11 @@ body {
 }
 
 main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 5%;
 }
 
@@ -51,8 +64,11 @@ main {
 }
 
 .selections {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .plane {
@@ -75,8 +91,11 @@ main {
 }
 
 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 3%;
 }
 
@@ -90,7 +109,8 @@ input[type=text] {
   width: 100%;
   padding: 12px 20px;
   margin: 16px 8px 8px 8px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 2px solid white;
   background-color: #123754;
   color: white;
@@ -100,7 +120,8 @@ input[type=date] {
   width: 100%;
   padding: 12px 20px;
   margin: 0px 8px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 2px solid white;
   background-color: #123754;
   color: white;
