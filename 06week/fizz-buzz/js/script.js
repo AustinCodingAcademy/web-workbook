@@ -1,7 +1,6 @@
 'use strict';
 
 for (var i = 1; i <= 100; i++) {
-
   // is this a factor of 3? subsequently, it is also a factor of 5?
   if (i % 3 === 0) {
     if (i % 5 === 0) {
