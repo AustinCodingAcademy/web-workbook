@@ -24,6 +24,7 @@ function FizzBuzz() {
   }
 }
 
+// This section controls the printing to the html
 var r = document.getElementById('result');
 
 function print(s) {

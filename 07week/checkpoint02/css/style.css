@@ -1,0 +1,135 @@
+/* CSS Reset -- Typically in reset.css.  Place right below comment if no reset.css is referenced in html */
+
+/* Box Sizing border-box */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #222222;
+  /*background: -webkit-linear-gradient(left, gray,lightgray); /* For Safari 5.1 to 6.0 */
+  /*background: -o-linear-gradient(right, gray,lightgray); /* For Opera 11.1 to 12.0 */
+  /*background: -moz-linear-gradient(right, gray,lightgray); /* For Firefox 3.6 to 15 */
+  /*background: linear-gradient(to right, gray,lightgray); /* Standard syntax (must be last) */
+  /*background: linear-gradient(to bottom right, black,lightgray); /* Standard syntax (must be last) */
+  color: white;
+  /*font-family: 'Calligraffitti', cursive;*/
+  /*font-family: 'Barrio', cursive;*/
+  /*font-family: 'Chewy', cursive;*/
+  /*font-family: 'Bangers', cursive;*/
+  /*font-family: 'Homemade Apple', cursive;*/
+  /*font-family: 'Covered By Your Grace', cursive;*/
+  /*font-family: 'Rock Salt', cursive;  */
+  font-family: 'Acme', sans-serif;
+}
+
+/*All these entries are for the Logo and title bar*/
+img.projectLogo {
+  display: none;
+}
+
+h2.projectLogo {
+  display:inline;
+  font-family: 'Rock Salt', cursive;
+}
+
+.projectTitle {
+  display: none;
+}
+
+/*These entries are for the project articles on the All Projects page.  Also handle the hover properties.*/
+.imgSize {
+  width: 100%;
+  /*opacity: 0;*/
+}
+
+.aBox img {
+  transition: 1s ease-in;
+}
+.overlay {
+  /*display: none;*/
+  opacity: 0;
+  visibility: hidden;
+  transition: 1.5s ease-in;
+}
+
+.aBox:hover img {
+  opacity: 0.2;
+}
+
+.aBox:hover .overlay {
+  display: inherit;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-300px);
+}
+
+/*Using flexbox for the footer.  Social media icons / links*/
+.fContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fLinks, .mLinks {
+  font-size: 14pt;
+  color: #f9f8f8;
+  /*text-decoration: none;*/
+}
+
+/*Layout for tablet sized devices 768-991 width*/
+@media (min-width: 768px) {
+
+  .projectTitle {
+    display: inline;
+  }
+
+  .fContainer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+  }
+
+}
+
+/*Layout for desktops*/
+@media (min-width: 992px) {
+
+  .projectTitle {
+    display: inline;
+  }
+
+  .fContainer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+  }
+
+}
+
+/*Layout for slightly larger desktops*/
+/*Created this custom width break to avoid title wrapping under logo*/
+@media (min-width: 1022px) {
+
+  img.projectLogo {
+    display: inline;
+  }
+
+  h2.projectLogo {
+    display:none;
+  }
+
+  .projectTitle {
+    display: inline;
+  }
+
+  .fContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 0px;
+  }
+
+}
