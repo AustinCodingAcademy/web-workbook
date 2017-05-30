@@ -1,0 +1,93 @@
+* {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+  width: 100vw;
+  height: auto;
+}
+
+#stage {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  z-index: 0;
+}
+
+#mural {
+  position: absolute;
+  top: 50vh;
+  width: 100vw;
+  height: auto;
+  z-index: 100;
+  display: none;
+}
+
+#balloon {
+  position: fixed;
+  top: 22%;
+  left: 5.5%;
+/*  top: 42vh;
+  left: 5.5vw;
+  width: 21vw;  */
+  width: 21%;
+  height: auto;
+  z-index: 20;
+
+}
+
+body:hover #balloon {
+  /* left: 74.5vw; */
+  transition: transform 15s;
+  transform: translateX(69vw);
+}
+
+#cloud1 {
+  position: absolute;
+  top: 17vh;
+  left: 11vw;
+  z-index: 10;
+  width: 23vw;
+  height: auto;
+}
+
+body:hover #cloud1 {
+  /* top: 21vh; */
+  transition: transform 5s;
+  transform: translateY(4vh);
+}
+
+#cloud2 {
+  position: absolute;
+  top: 14vh;
+  left: 49vw;
+  z-index: 10;
+  width: 13.5vw;
+  height: auto;
+}
+
+body:hover #cloud2 {
+  /* top: 24vh; */
+  transition: transform 5s;
+  transform: translateY(10vh);
+}
+
+#cloud3 {
+  position: absolute;
+  top: -3vh;
+  left: 65vw;
+  z-index: 10;
+  width: 22.5vw;
+  height: auto;
+}
+
+body:hover #cloud3 {
+  /* top: 13.5vh; */
+  transition: transform 5s;
+  transform: translateY(16.5vh);
+}
