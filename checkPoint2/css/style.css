@@ -4,18 +4,106 @@
   padding: 0px;
 }
 
-main {
+#stage {
+  position: absolute;
+  left: 0px;
+  top: 0px;
   width: 100vw;
   height: auto;
+  z-index: 0;
 }
+
+#drapes {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: auto;
+  z-index: 30;
+}
+
+#sun {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: auto;
+  z-index: 10;
+}
+
+body:hover #sun {
+  transition: transform 5s;
+  transform: translateY(6vw);
+}
+
+#cloud1 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: auto;
+  z-index: 15;
+}
+
+body:hover #cloud1 {
+  transition: transform 5s;
+  transform: translateY(9.2vw);
+}
+
+#cloud2 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: auto;
+  z-index: 15;
+}
+
+body:hover #cloud2 {
+  transition: transform 8s;
+  transform: translateY(12vw);
+}
+
+#cloud3 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: auto;
+  z-index: 15;
+}
+
+body:hover #cloud3 {
+  transition: transform 8s;
+  transform: translateY(7.8vw);
+}
+
+#balloon {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: auto;
+  z-index: 20;
+}
+
+body:hover #balloon {
+  transition: transform 12s;
+  transform: translateX(85vw);
+}
+
+
+
+
+
+/* 1st attempt
 
 #stage {
   position: absolute;
   left: 0px;
   top: 0px;
-  width: 100%;
+  width: 100vw;
   height: auto;
-  max-height: 100%;
   z-index: 0;
 }
 
@@ -30,19 +118,15 @@ main {
 
 #balloon {
   position: fixed;
-  top: 22%;
-  left: 5.5%;
-  /*  top: 42vh;
+  top: 42vh;
   left: 5.5vw;
-  width: 21vw;  */
-  width: 21%;
+  width: 21vw;
   height: auto;
   z-index: 20;
 
 }
 
 body:hover #balloon {
-  /* left: 74.5vw; */
   transition: transform 15s;
   transform: translateX(69vw);
 }
@@ -57,7 +141,6 @@ body:hover #balloon {
 }
 
 body:hover #cloud1 {
-  /* top: 21vh; */
   transition: transform 5s;
   transform: translateY(4vh);
 }
@@ -72,7 +155,6 @@ body:hover #cloud1 {
 }
 
 body:hover #cloud2 {
-  /* top: 24vh; */
   transition: transform 5s;
   transform: translateY(10vh);
 }
@@ -87,7 +169,8 @@ body:hover #cloud2 {
 }
 
 body:hover #cloud3 {
-  /* top: 13.5vh; */
   transition: transform 5s;
   transform: translateY(16.5vh);
 }
+
+----- 1st attempt ------  */
