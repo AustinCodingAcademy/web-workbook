@@ -5,7 +5,7 @@ addListItem.appendChild(document.createTextNode("Fifth List Item"));
 list.appendChild(addListItem);
 
 var listItemNumber = document.getElementsByTagName('li');
-alert(listItemNumber.length);
+alert("There are " + listItemNumber.length + " list items!");
 
 document.title = 'Reed is Awesome';
 
