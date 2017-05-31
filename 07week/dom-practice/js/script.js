@@ -7,7 +7,7 @@ list.appendChild(addListItem);
 var listItemNumber = document.getElementsByTagName('li');
 alert("There are " + listItemNumber.length + " list items!");
 
-document.title = 'Reed is Awesome';
+document.title = 'Manipulating the DOM';
 
 var parent = document.getElementById('div');
 var child = document.getElementById('P4');
