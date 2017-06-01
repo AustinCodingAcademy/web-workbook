@@ -16,5 +16,5 @@ window.onload = function(){
     list5.innerHTML = 'Fifth list item';
       list[0].appendChild(list5);
 
-      document.body.classlist.appendChild('colors');
+      document.body.classList.add('colors');
 }
