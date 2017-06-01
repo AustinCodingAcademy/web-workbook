@@ -5,34 +5,38 @@
 <head>
   <meta charset="utf-8" />
   <title>DOM Example</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <h1 id="h1"></h1>
 
+  <div class="container">
+    <ul id="myList">
+      <li>First List Item</li>
+      <li>Second List Item</li>
+      <li>Third List Item</li>
+      <li>Fourth List Item</li>
+    </ul>
 
-  <ul id="myList">
-    <li>First List Item</li>
-    <li>Second List Item</li>
-    <li>Third List Item</li>
-    <li>Fourth List Item</li>
-</ul>
+    <p>Click the button to insert an item to the list.</p>
 
-<p>Click the button to insert an item to the list.</p>
+    <button onclick="addFifth()">Add it</button>
+  </div>
 
-<button onclick="addFifth()">Add it</button>
+  <div class="container">
+    <div id="div">
+      <p class="paragraph" id="P1">Paragraph 1</p>
+      <p class="paragraph" id="P2">Paragraph 2</p>
+      <p class="paragraph" id="P3">Paragraph 3</p>
+      <p class="paragraph" id="P4">Paragraph 4</p>
+    </div>
 
-<div id="div">
-    <p class="paragraph" id="P1">Paragraph 1</p>
-    <p class="paragraph" id="P2">Paragraph 2</p>
-    <p class="paragraph" id="P3">Paragraph 3</p>
-    <p class="paragraph" id="P4">Paragraph 4</p>
-</div>
+    <p>Click the button to remove the last paragraph from the list.</p>
 
-<p>Click the button to remove the last paragraph from the list.</p>
-
-<button onclick="removeFourth()">Remove it</button>
+    <button onclick="removeFourth()">Remove it</button>
+  </div>
 
   <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.min.js"></script>
   <script src="js/script.js" charset="utf-8"></script>
