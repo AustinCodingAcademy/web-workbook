@@ -2,7 +2,7 @@
   border: 0px;
   margin: 0px;
   padding: 0px;
-  overflow: hidden;
+  overflow: hidden; /* this is required to keep viewport window from resizing. */
 }
 
 main {
@@ -14,6 +14,10 @@ main {
 
 img {
 }
+
+/* In order to make design responsive the moving images had to be created with
+the same dimensions as the the background image (#stage) and Aabsolutely positioned
+at (0,0). The "Overflow: hidden" had to be assined to the * selector to keep the viewport from resizing */
 
 #stage {
   position: absolute;
@@ -42,9 +46,9 @@ img {
   z-index: 10;
 }
 
-body:hover #sun {
-  transition: transform 5s;
-  transform: translateY(6vw);
+body:hover #sun {             /* Hover on body so any mouse movement triggers animation */
+  transition: transform 3s;
+  transform: translateY(6vw);  /* had to be set to vW, not vH to stay proportional */
 }
 
 #cloud1 {
@@ -57,7 +61,7 @@ body:hover #sun {
 }
 
 body:hover #cloud1 {
-  transition: transform 5s;
+  transition: transform 6s 3s;
   transform: translateY(9.2vw);
 }
 
@@ -71,7 +75,7 @@ body:hover #cloud1 {
 }
 
 body:hover #cloud2 {
-  transition: transform 8s;
+  transition: transform 6s 3s;
   transform: translateY(12vw);
 }
 
@@ -85,7 +89,7 @@ body:hover #cloud2 {
 }
 
 body:hover #cloud3 {
-  transition: transform 8s;
+  transition: transform 6s 3s;
   transform: translateY(7.8vw);
 }
 
@@ -99,7 +103,7 @@ body:hover #cloud3 {
 }
 
 body:hover #balloon {
-  transition: transform 12s;
+  transition: transform 12s 9s;
   transform: translateX(85vw);
 }
 
