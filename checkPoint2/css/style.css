@@ -12,180 +12,142 @@ main {
   max-height: 884px;
 }
 
+/* In order to make design responsive under all conditions the moving images had to be created with
+the same dimensions as the the background image (#stage) and Absolutely positioned at (0,0).
+The "Overflow: hidden" had to be assined to the * selector to keep the viewport from resizing */
+
 img {
-}
-
-/* In order to make design responsive the moving images had to be created with
-the same dimensions as the the background image (#stage) and Aabsolutely positioned
-at (0,0). The "Overflow: hidden" had to be assined to the * selector to keep the viewport from resizing */
-
-#stage {
   position: absolute;
   left: 0px;
   top: 0px;
   width: 100vw;
   height: auto;
+}
+
+#stage {
   z-index: 0;
 }
 
 #drapes {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100vw;
-  height: auto;
   z-index: 30;
 }
 
 #sun {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100vw;
-  height: auto;
   z-index: 10;
-}
-
-body:hover #sun {             /* Hover on body so any mouse movement triggers animation */
   transition: transform 3s;
-  transform: translateY(6vw);  /* had to be set to vW, not vH to stay proportional */
 }
 
-#cloud1 {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100vw;
-  height: auto;
+body:hover #sun {                /* Hover on body so any mouse movement triggers animation */
+  transform: translateY(6vw);    /* had to be set to vW, not vH to stay proportional */
+}
+
+#balloon {
+  z-index: 20;
+  transition: transform 19s 9s;
+  transition-timing-function: linear;
+}
+
+body:hover #balloon {
+  transform: translateX(82vw);
+}
+
+.cloud {
   z-index: 15;
 }
 
-body:hover #cloud1 {
+#cloud1 {
   transition: transform 6s 3s;
+}
+
+body:hover #cloud1 {
   transform: translateY(9.2vw);
 }
 
 #cloud2 {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100vw;
-  height: auto;
-  z-index: 15;
+  transition: transform 6s 3s;
 }
 
 body:hover #cloud2 {
-  transition: transform 6s 3s;
   transform: translateY(12vw);
 }
 
 #cloud3 {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100vw;
-  height: auto;
-  z-index: 15;
+  transition: transform 6s 3s;
 }
 
 body:hover #cloud3 {
-  transition: transform 6s 3s;
   transform: translateY(7.8vw);
 }
 
-#balloon {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100vw;
-  height: auto;
-  z-index: 20;
+.letter {
+  z-index: 18;
+  visibility: hidden;
 }
 
-body:hover #balloon {
-  transition: transform 12s 9s;
-  transform: translateX(85vw);
+body:hover .letter {
+  visibility: visible;
 }
 
-
-
-
-
-/* 1st attempt
-
-#stage {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 100vw;
-  height: auto;
-  z-index: 0;
+#letter01 {
+  transition: visibility 0.1s 9s;
 }
 
-#mural {
-  position: absolute;
-  top: 50vh;
-  width: 100vw;
-  height: auto;
-  z-index: 100;
-  display: none;
+#letter02 {
+  transition: visibility 0.1s 10s;
 }
 
-#balloon {
-  position: fixed;
-  top: 42vh;
-  left: 5.5vw;
-  width: 21vw;
-  height: auto;
-  z-index: 20;
-
+#letter03 {
+  transition: visibility 0.1s 11s;
 }
 
-body:hover #balloon {
-  transition: transform 15s;
-  transform: translateX(69vw);
+#letter04 {
+  transition: visibility 0.1s 12s;
 }
 
-#cloud1 {
-  position: absolute;
-  top: 17vh;
-  left: 11vw;
-  z-index: 10;
-  width: 23vw;
-  height: auto;
+#letter05 {
+  transition: visibility 0.1s 13s;
 }
 
-body:hover #cloud1 {
-  transition: transform 5s;
-  transform: translateY(4vh);
+#letter06 {
+  transition: visibility 0.1s 14s;
 }
 
-#cloud2 {
-  position: absolute;
-  top: 14vh;
-  left: 49vw;
-  z-index: 10;
-  width: 13.5vw;
-  height: auto;
+#letter07 {
+  transition: visibility 0.1s 15s;
 }
 
-body:hover #cloud2 {
-  transition: transform 5s;
-  transform: translateY(10vh);
+#letter08 {
+  transition: visibility 0.1s 17s;
 }
 
-#cloud3 {
-  position: absolute;
-  top: -3vh;
-  left: 65vw;
-  z-index: 10;
-  width: 22.5vw;
-  height: auto;
+#letter09 {
+  transition: visibility 0.1s 18s;
 }
 
-body:hover #cloud3 {
-  transition: transform 5s;
-  transform: translateY(16.5vh);
+#letter10 {
+  transition: visibility 0.1s 20s;
 }
 
------ 1st attempt ------  */
+#letter11 {
+  transition: visibility 0.1s 21s;
+}
+
+#letter12 {
+  transition: visibility 0.1s 23s;
+}
+
+#letter13 {
+  transition: visibility 0.1s 24s;
+}
+
+#letter14 {
+  transition: visibility 0.1s 25s;
+}
+
+#letter15 {
+  transition: visibility 0.1s 26s;
+}
+
+#letter16 {
+  transition: visibility 0.1s 27s;
+}
