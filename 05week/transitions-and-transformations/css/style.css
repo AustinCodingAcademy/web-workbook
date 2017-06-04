@@ -1,0 +1,106 @@
+.squares {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.square1 {
+  background-color: #C0392B;
+  height: 50px;
+  width: 50px;
+  margin: 0 auto 0px;
+}
+
+.square2 {
+  margin: 0 auto 0px;
+  width: 50px;
+  height: 50px;
+  background-color: #E74C3C;
+}
+
+.square3 {
+  margin: 0 auto 0px;
+  background-color: #E67E22;
+  width: 50px;
+  height: 50px;
+}
+
+.square4 {
+  margin: 0 auto 0px;
+  background-color: #F1C40F;
+  width: 50px;
+  height: 50px;
+}
+
+.square5 {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 0px;
+  background-color: #52BE80;
+}
+
+.square6 {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 0px;
+  background-color: #186A3B;
+}
+
+.square7 {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 0px;
+  background-color: #3498DB;
+}
+
+.square8 {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 0px;
+  background-color: #1A5276;
+}
+
+.square9 {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 0px;
+  background-color: #AF7AC5;
+}
+
+.square10 {
+  height: 50px;
+  width: 50px;
+  margin: 0 auto 0px;
+  background-color: #4A235A;
+}
+
+.square11 {
+  background-color: #F48FB1;
+  height: 50px;
+  width: 50px;
+  margin: 0 auto 0px;
+}
+
+.square12 {
+  background-color: #E91E63;
+  height: 50px;
+  width: 50px;
+  margin: 0 auto 0;
+}
+
+/*Start transform coding*/
+
+.squares:hover > :nth-child(odd) {
+    @extend .squares;
+    transition: all .2s ease-in-out;
+    -ms-transform: translateX(-200px) rotate(-180deg) scale(0.5, 0.5); /* IE 9 */
+    -webkit-transform: translateX(-200px) rotate(-180deg) scale(0.5, 0.5); /* Safari */
+    transform: translateX(-200px) rotate(-180deg) scale(0.5, 0.5);
+}
+
+.squares:hover > :nth-child(even) {
+    @extend .squares;
+    transition: all .2s ease-in-out;
+    -ms-transform: translateX(200px) rotate(180deg) scale(2, 2); /* IE 9 */
+    -webkit-transform: translateX(200px) rotate(180deg) scale(2, 2); /* Safari */
+    transform: translateX(200px) rotate(180deg) scale(2, 2);
+}
