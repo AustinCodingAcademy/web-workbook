@@ -24,12 +24,23 @@ img {
   height: auto;
 }
 
+/* Z-index Levels
+  0 --- stage
+  10 -- sun
+  20 -- clouds
+  30 -- wire
+  40 -- protector
+  50 -- letters
+  60 -- balloon
+  70 -- drapes
+*/
+
 #stage {
   z-index: 0;
 }
 
 #drapes {
-  z-index: 30;
+  z-index: 70;
 }
 
 #sun {
@@ -42,17 +53,31 @@ body:hover #sun {                /* Hover on body so any mouse movement triggers
 }
 
 #balloon {
-  z-index: 20;
-  transition: transform 19s 9s;
+  z-index: 60;
+  transition: transform 18.5s 9s;          /* 19s 9s    82vw    */
   transition-timing-function: linear;
 }
 
 body:hover #balloon {
-  transform: translateX(82vw);
+  transform: translateX(80vw);
+}
+/*
+#wire {
+  z-index: 30;
+  transition: transform 18.5s 9s;
+  transition-timing-function: linear;
 }
 
+body:hover #wire {
+  transform: scaleX(80vw);
+}
+
+#protector {
+  z-index: 40;
+}
+*/
 .cloud {
-  z-index: 15;
+  z-index: 20;
 }
 
 #cloud1 {
@@ -80,7 +105,7 @@ body:hover #cloud3 {
 }
 
 .letter {
-  z-index: 18;
+  z-index: 50;
   visibility: hidden;
 }
 
