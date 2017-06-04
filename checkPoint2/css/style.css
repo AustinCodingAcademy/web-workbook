@@ -5,16 +5,16 @@
   overflow: hidden; /* this is required to keep viewport window from resizing. */
 }
 
+/* In order to make design responsive under all conditions the moving images had to be created with
+the same dimensions as the the background image (#stage) and Absolutely positioned at (0,0).
+The "Overflow: hidden" had to be assined to the * selector to keep the viewport from resizing */
+
 main {
   width: 100vw;
   height: 100vh;
   max-width: 1400px;
   max-height: 884px;
 }
-
-/* In order to make design responsive under all conditions the moving images had to be created with
-the same dimensions as the the background image (#stage) and Absolutely positioned at (0,0).
-The "Overflow: hidden" had to be assined to the * selector to keep the viewport from resizing */
 
 img {
   position: absolute;
@@ -24,93 +24,76 @@ img {
   height: auto;
 }
 
-/* Z-index Levels
-  0 ----- stage
-  1000 -- sun
-  2000 -- clouds
-  4000 -- protector
-  5000 -- letters
-  6000 -- balloon
-  7000 -- drapes
-*/
+/*********************** Z-INDEXES ****************************************** */
 
 #stage {
-  z-index: 0;
+  z-index: 200;
+}
+
+#flagpoles {
+  z-index: 400;
+}
+
+#flagpole_hiders {
+  z-index: 600;
+}
+
+#sun {
+  z-index: 1000;
+}
+
+.cloud {
+  z-index: 2000;
+}
+
+.letter {
+  z-index: 5000;
+}
+
+#balloon {
+  z-index: 6000;
 }
 
 #drapes {
   z-index: 7000;
 }
 
+/*********************** VISIBILITY: HIDDEN ********************************* */
+
+.letter {
+  visibility: hidden;
+}
+
+/*********************** TARNSISTIONS *************************************** */
+
 #sun {
-  z-index: 1000;
   transition: transform 3s;
 }
 
-body:hover #sun {                /* Hover on body so any mouse movement triggers animation */
-  transform: translateY(6vw);    /* had to be set to vW, not vH to stay proportional */
-}
-
-#balloon {
-  z-index: 6000;
-  transition: transform 18.5s 9s;          /* 19s 9s    82vw    */
-  transition-timing-function: linear;
-}
-
-body:hover #balloon {
-  transform: translateX(80vw);
-}
-/*
-#wire {
-  z-index: 30;
-  transition: transform 18.5s 9s;
-  transition-timing-function: linear;
-}
-
-body:hover #wire {
-  transform: scaleX(80vw);
-}
-
-#protector {
-  z-index: 40;
-}
-*/
-.cloud {
-  z-index: 2000;
+#flagpoles {
+  transition: transform 6s 3s;
 }
 
 #cloud1 {
   transition: transform 6s 3s;
 }
 
-body:hover #cloud1 {
-  transform: translateY(9.2vw);
-}
-
 #cloud2 {
   transition: transform 6s 3s;
-}
-
-body:hover #cloud2 {
-  transform: translateY(12vw);
 }
 
 #cloud3 {
   transition: transform 6s 3s;
 }
 
-body:hover #cloud3 {
-  transform: translateY(7.8vw);
+#balloon {
+  transition: transform 19s 9s;            /* 19s 9s      82vw  */
+  transition-timing-function: linear;      /* 18.5s 9s    80vw  */
 }
 
-.letter {
-  z-index: 5000;
-  visibility: hidden;
-}
-
-body:hover .letter {
-  visibility: visible;
-}
+/* Regarding the "Transition: visibility" rules:
+Duration parameter needs to present, but its value doesn't alter how quickly the
+image becomes visible. Regardless of its value, visibility is instantaneous. */
 
 #letter01 {
   transition: visibility 0.1s 9s;
@@ -174,4 +157,34 @@ body:hover .letter {
 
 #letter16 {
   transition: visibility 0.1s 27s;
+}
+
+/*********************** ON HOVER ******************************************* */
+
+body:hover #sun {
+  transform: translateY(6vw);
+}
+
+body:hover #balloon {
+  transform: translateX(82vw);
+}
+
+body:hover #flagpoles {
+  transform: translateY(-16.7vw);
+}
+
+body:hover #cloud1 {
+  transform: translateY(9.2vw);
+}
+
+body:hover #cloud2 {
+  transform: translateY(12vw);
+}
+
+body:hover #cloud3 {
+  transform: translateY(7.8vw);
+}
+
+body:hover .letter {
+  visibility: visible;
 }
