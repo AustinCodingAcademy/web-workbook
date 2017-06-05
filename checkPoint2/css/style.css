@@ -27,15 +27,23 @@ img {
 /*********************** Z-INDEXES ****************************************** */
 
 #stage {
-  z-index: 200;
+  z-index: 300;
 }
 
 #flagpoles {
   z-index: 400;
 }
 
-#flagpole_hiders {
+#wire_pole, #wire_stage, #flagpole_hiders {
+  z-index: 500;
+}
+
+#wire_hider {
   z-index: 600;
+}
+
+#wire_hider_hider {
+  z-index: 700;
 }
 
 #sun {
@@ -58,12 +66,6 @@ img {
   z-index: 7000;
 }
 
-/*********************** VISIBILITY: HIDDEN ********************************* */
-
-.letter {
-  visibility: hidden;
-}
-
 /*********************** TARNSISTIONS *************************************** */
 
 #sun {
@@ -71,7 +73,7 @@ img {
 }
 
 #flagpoles {
-  transition: transform 6s 3s;
+  transition: transform 3s 3s;
 }
 
 #cloud1 {
@@ -86,8 +88,17 @@ img {
   transition: transform 6s 3s;
 }
 
+#wire_pole {
+  transition: visibility 0.1s 8s;
+}
+
 #balloon {
   transition: transform 19s 9s;            /* 19s 9s      82vw  */
+  transition-timing-function: linear;      /* 18.5s 9s    80vw  */
+}
+
+#wire_hider {
+  transition: transform 18.5s 9s;            /* 19s 9s      82vw  */
   transition-timing-function: linear;      /* 18.5s 9s    80vw  */
 }
 
@@ -159,7 +170,17 @@ image becomes visible. Regardless of its value, visibility is instantaneous. */
   transition: visibility 0.1s 27s;
 }
 
+/*********************** INITIAL VISIBILITY: HIDDEN ************************* */
+
+.letter, #wire_pole {
+  visibility: hidden;
+}
+
 /*********************** ON HOVER ******************************************* */
+
+body:hover .letter, body:hover #wire_pole {
+  visibility: visible;
+}
 
 body:hover #sun {
   transform: translateY(6vw);
@@ -167,6 +188,10 @@ body:hover #sun {
 
 body:hover #balloon {
   transform: translateX(82vw);
+}
+
+body:hover #wire_hider {
+  transform: translateX(80vw);
 }
 
 body:hover #flagpoles {
@@ -183,8 +208,4 @@ body:hover #cloud2 {
 
 body:hover #cloud3 {
   transform: translateY(7.8vw);
-}
-
-body:hover .letter {
-  visibility: visible;
 }
