@@ -24,7 +24,11 @@ img {
   height: auto;
 }
 
-/*********************** Z-INDEXES ****************************************** */
+ /* keeps the animated elements from reverting to starting positions */
+.dynamic {
+}
+
+/*********************** Z-INDEXES ********************************************/
 
 #stage {
   z-index: 300;
@@ -66,12 +70,200 @@ img {
   z-index: 7000;
 }
 
-/*********************** TARNSISTIONS *************************************** */
+/********************* ELEMENTS CALL ANIMATIONS *******************************/
 
-#sun {
-  transition: transform 3s;
+
+
+@@keyframes revealsTheHidden {
+  0%   {visibility: hidden;}
+  100% {visibility: visible;}
 }
 
+
+.letter, #wire-left, #wire-right, #covers-middle-wire-cover
+
+@@keyframes hidesTheVisible {
+  0%   {visibility: visible;}
+  100% {visibility: hidden;}
+}
+
+
+
+
+#sun {
+  animation: 3s 0s 1 sunDescends;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sunDescends {
+  100% {transform: translateY(6vw);}
+}
+
+
+
+
+#balloon {
+  animation: transform 19s 9s;
+  animation-timing-function: linear;
+}
+
+@keyframes balloonDrifts {
+  100% {transform: translateX(82vw);}
+}
+
+
+
+
+#covers-middle-wire-cover {
+  animation: 0.1s 6.5s 1 uncoversMiddleWire;
+  animation-fill-mode: forwards;
+}
+
+@keyframes uncoversMiddleWire {
+  100% {transform: translateX(80vw);}
+}
+
+
+
+
+#flagpoles {
+  animation: 3s 3s 1 flagsRise;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flagsRise {
+  100% {transform: translateY(-16.7vw);}
+}
+
+
+
+
+#cloud1 {
+  animation: 6s 3s 1 cloud1Descends;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cloud1Descends {
+  100% {transform: translateY(9.2vw);}
+}
+
+#cloud2 {
+  animation: 6s 3s 1 cloud2Descends;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cloud2Descends {
+  100% {transform: translateY(12vw);}
+}
+
+#cloud3 {
+  animation: 6s 3s 1 cloud3Descends;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cloud3Descends {
+  100% {transform: translateY(7.8vw);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#wire-middle {
+  animation: visibility 0.1s 7.5s;
+}
+
+#wire-left {
+  animation: visibility 0.1s 8s;
+}
+
+#covers-middle-wire {
+  animation: transform 18.5s 9s;
+  animation-timing-function: linear;
+}
+
+
+
+#letter01 {
+  animation: visibility 0.1s 9s;
+}
+
+#letter02 {
+  animation: visibility 0.1s 10s;
+}
+
+#letter03 {
+  animation: visibility 0.1s 11s;
+}
+
+#letter04 {
+  animation: visibility 0.1s 12s;
+}
+
+#letter05 {
+  animation: visibility 0.1s 13s;
+}
+
+#letter06 {
+  animation: visibility 0.1s 14s;
+}
+
+#letter07 {
+  animation: visibility 0.1s 15s;
+}
+
+#wire-right {                               /**** wire-right ****/
+  animation: visibility 0.1s 16s;
+}
+
+#letter08 {
+  animation: visibility 0.1s 17s;
+}
+
+#letter09 {
+  animation: visibility 0.1s 18s;
+}
+
+#letter10 {
+  animation: visibility 0.1s 20s;
+}
+
+#letter11 {
+  animation: visibility 0.1s 21s;
+}
+
+#letter12 {
+  animation: visibility 0.1s 23s;
+}
+
+#letter13 {
+  animation: visibility 0.1s 24s;
+}
+
+#letter14 {
+  animation: visibility 0.1s 25s;
+}
+
+#letter15 {
+  animation: visibility 0.1s 26s;
+}
+
+#letter16 {
+  animation: visibility 0.1s 27s;
+}
+
+
+/********************* TARNSISTIONS IN SEQUENCE *******************************/
+/*
 #flagpoles {
   transition: transform 3s 3s;
 }
@@ -112,7 +304,7 @@ img {
 
 /* Regarding the "Transition: visibility" rules:
 Duration parameter needs to present, but its value doesn't alter how quickly the
-image becomes visible. Regardless of its value, visibility is instantaneous. */
+image becomes visible. Regardless of its value, visibility is instantaneous.
 
 #letter01 {
   transition: visibility 0.1s 9s;
@@ -142,7 +334,7 @@ image becomes visible. Regardless of its value, visibility is instantaneous. */
   transition: visibility 0.1s 15s;
 }
 
-#wire-right {                               /**** wire-right ****/
+#wire-right {                               /**** wire-right ***
   transition: visibility 0.1s 16s;
 }
 
@@ -182,21 +374,9 @@ image becomes visible. Regardless of its value, visibility is instantaneous. */
   transition: visibility 0.1s 27s;
 }
 
-/*********************** INITIAL VISIBILITY: HIDDEN ************************* */
+*/
 
-.letter, #wire-left, #wire-right, #covers-middle-wire-cover {
-  visibility: hidden;
-}
-
-/*********************** ON HOVER ******************************************* */
-
-body:hover .letter, body:hover #wire-left, body:hover #wire-right, body:hover #covers-middle-wire-cover {
-  visibility: visible;
-}
-
-body:hover #sun {
-  transform: translateY(6vw);
-}
+/******************* ELEMENTS MOVING ACROSS SCREEN
 
 body:hover #balloon {
   transform: translateX(82vw);
@@ -221,3 +401,21 @@ body:hover #cloud2 {
 body:hover #cloud3 {
   transform: translateY(7.8vw);
 }
+
+
+****************************/
+/*************** ELEMENTS CHANGING VISIBILITY FROM 'HIDDEN' T0 'VISIBLE' ******/
+/*
+
+
+
+
+.letter, #wire-left, #wire-right, #covers-middle-wire-cover {
+  visibility: hidden;
+}
+
+body:hover .letter, body:hover #wire-left, body:hover #wire-right, body:hover #covers-middle-wire-cover {
+  visibility: visible;
+}
+
+*/
