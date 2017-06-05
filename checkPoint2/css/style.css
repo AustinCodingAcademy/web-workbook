@@ -34,15 +34,15 @@ img {
   z-index: 400;
 }
 
-#wire-left, #wire-right, #wire-middle, #flagpole-hiders {
+#wire-left, #wire-right, #wire-middle, #covers-flagpoles {
   z-index: 500;
 }
 
-#wire-middle-hider {
+#covers-middle-wire {
   z-index: 600;
 }
 
-#wire-middle-hider-hider {
+#covers-middle-wire-cover {
   z-index: 700;
 }
 
@@ -76,14 +76,6 @@ img {
   transition: transform 3s 3s;
 }
 
-#wire-middle-hider-hider {
-  transition: visibility 0.1s 6.5s;
-}
-
-#wire-middle {
-  transition: visibility 0.1s 7.5s;
-}
-
 #cloud1 {
   transition: transform 6s 3s;
 }
@@ -96,16 +88,25 @@ img {
   transition: transform 6s 3s;
 }
 
+#covers-middle-wire-cover {
+  transition: visibility 0.1s 6.5s;
+}
+
+#wire-middle {
+  transition: visibility 0.1s 7.5s;
+}
+
 #wire-left {
   transition: visibility 0.1s 8s;
 }
 
-#wire-middle-hider-hider {
-  transition: visibility 0.1s 8s;
+#covers-middle-wire {
+  transition: transform 18.5s 9s;
+  transition-timing-function: linear;
 }
 
-#balloon, #wire-middle-hider {
-  transition: transform 19s 9s;        /* 19s 9s & 82vw  vs.  18.5s 9s & 80vw */
+#balloon {
+  transition: transform 19s 9s;
   transition-timing-function: linear;
 }
 
@@ -141,7 +142,7 @@ image becomes visible. Regardless of its value, visibility is instantaneous. */
   transition: visibility 0.1s 15s;
 }
 
-#wire-right {
+#wire-right {                               /**** wire-right ****/
   transition: visibility 0.1s 16s;
 }
 
@@ -183,13 +184,13 @@ image becomes visible. Regardless of its value, visibility is instantaneous. */
 
 /*********************** INITIAL VISIBILITY: HIDDEN ************************* */
 
-.letter, #wire-left, #wire-right, #wire-middle-hider-hider {
+.letter, #wire-left, #wire-right, #covers-middle-wire-cover {
   visibility: hidden;
 }
 
 /*********************** ON HOVER ******************************************* */
 
-body:hover .letter, body:hover #wire-left, body:hover #wire-right {
+body:hover .letter, body:hover #wire-left, body:hover #wire-right, body:hover #covers-middle-wire-cover {
   visibility: visible;
 }
 
@@ -201,7 +202,7 @@ body:hover #balloon {
   transform: translateX(82vw);
 }
 
-body:hover #wire-middle-hider {
+body:hover #covers-middle-wire {
   transform: translateX(80vw);
 }
 
