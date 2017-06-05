@@ -30,20 +30,20 @@ img {
   z-index: 300;
 }
 
-#wire_left, #wire_right, #wire_middle, #flagpole_hiders {
+#flagpoles {
+  z-index: 400;
+}
+
+#wire-left, #wire-right, #wire-middle, #flagpole-hiders {
   z-index: 500;
 }
 
-#wire_middle_hider, #wire_right_hider {
+#wire-middle-hider {
   z-index: 600;
 }
 
-#wire_middle_hider_hider {
+#wire-middle-hider-hider {
   z-index: 700;
-}
-
-#flagpoles {
-  z-index: 800;
 }
 
 #sun {
@@ -76,15 +76,11 @@ img {
   transition: transform 3s 3s;
 }
 
-#wire_middle_hider_hider {
+#wire-middle-hider-hider {
   transition: visibility 0.1s 6.5s;
 }
 
-#wire_left_hider {
-  transition: visibility 0.1s 7s;
-}
-
-#wire_middle {
+#wire-middle {
   transition: visibility 0.1s 7.5s;
 }
 
@@ -100,22 +96,17 @@ img {
   transition: transform 6s 3s;
 }
 
-#wire_left {
+#wire-left {
   transition: visibility 0.1s 8s;
 }
 
-#wire_middle_hider_hider {
+#wire-middle-hider-hider {
   transition: visibility 0.1s 8s;
 }
 
-#balloon {
-  transition: transform 19s 9s;            /* 19s 9s      82vw  */
-  transition-timing-function: linear;      /* 18.5s 9s    80vw  */
-}
-
-#wire_middle_hider {
-  transition: transform 18.5s 9s;            /* 19s 9s      82vw  */
-  transition-timing-function: linear;      /* 18.5s 9s    80vw  */
+#balloon, #wire-middle-hider {
+  transition: transform 19s 9s;        /* 19s 9s & 82vw  vs.  18.5s 9s & 80vw */
+  transition-timing-function: linear;
 }
 
 /* Regarding the "Transition: visibility" rules:
@@ -150,12 +141,8 @@ image becomes visible. Regardless of its value, visibility is instantaneous. */
   transition: visibility 0.1s 15s;
 }
 
-#wire_right {
+#wire-right {
   transition: visibility 0.1s 16s;
-}
-
-#wire_right_hider {
-  transition: hidden 0.1s 16s;
 }
 
 #letter08 {
@@ -196,19 +183,15 @@ image becomes visible. Regardless of its value, visibility is instantaneous. */
 
 /*********************** INITIAL VISIBILITY: HIDDEN ************************* */
 
-.letter, #wire_left, #wire_right, #wire_middle_hider_hider {
+.letter, #wire-left, #wire-right, #wire-middle-hider-hider {
   visibility: hidden;
 }
 
 /*********************** ON HOVER ******************************************* */
 
-body:hover .letter, body:hover #wire_left, body:hover #wire_right {
+body:hover .letter, body:hover #wire-left, body:hover #wire-right {
   visibility: visible;
 }
-
- body:hover #wire_right_hider {
-   visibility: hidden;
- }
 
 body:hover #sun {
   transform: translateY(6vw);
@@ -218,7 +201,7 @@ body:hover #balloon {
   transform: translateX(82vw);
 }
 
-body:hover #wire_middle_hider {
+body:hover #wire-middle-hider {
   transform: translateX(80vw);
 }
 
