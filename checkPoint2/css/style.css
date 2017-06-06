@@ -16,7 +16,7 @@ main {
   max-height: 884px;
 }
 
-img {
+img, #turn-on-the-lights {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -24,7 +24,16 @@ img {
   height: auto;
 }
 
-/*********************** Z-INDEXES ********************************************/
+#turn-on-the-lights {
+  height: 100vh;
+}
+
+body {
+  background-image: url("../img/Facilitators/seating.png");
+}
+
+/***************************     ALL Z-INDEXES    *****************************/
+/***************************  LISTED IN SEQUENCE  *****************************/
 
 #stage {
   z-index: 1000;
@@ -70,112 +79,92 @@ img {
   z-index: 11000;
 }
 
-#drapes {
+#turn-on-the-lights {
   z-index: 12000;
 }
 
-/********************* ELEMENTS CALL ANIMATIONS *******************************/
+#drapes {
+  z-index: 13000;
+}
+
+/******************** ALL ANIMATION INITIATIONS *******************************/
 /*********************  ORGANIZED BY TIME LINE  *******************************/
 
+#turn-on-the-lights {
+  background-color: rgba(0, 0, 0, 1);
+  animation: 5s 0s 1 letThereBeLight;
+  animation-fill-mode: forwards;
+}
+
 #sun {
-  animation: 3s 0s 1 sunDescends;               /*  ON LOAD */
+  animation: 3s 0s 1 down-6;
   animation-fill-mode: forwards;
-}
-
-@keyframes sunDescends {
-  100% {transform: translateY(6vw);}
-}
-
-#flagpoles {
-  animation: 3s 3s 1 flagsRise;                 /*  AFTER 3 SEC */
-  animation-fill-mode: forwards;
-}
-
-@keyframes flagsRise {
-  100% {transform: translateY(-16.7vw);}
 }
 
 #cloud1-upper {
-  animation: 6s 3s 1 cloud1UpperDescends;
+  animation: 5s 2s 1 down-13;
   animation-fill-mode: forwards;
 }
 
-@keyframes cloud1UpperDescends {
-  100% {transform: translateY(9.2vw);}
-}
-
-#cloud1-string {
-  animation: 6s 3s 1 cloud1StringDescends;
+#flagpoles {
+  animation: 3s 3s 1 up-16_7;
   animation-fill-mode: forwards;
-}
-
-@keyframes cloud1StringDescends {
-  100% {transform: translateY(9.2vw);}
 }
 
 #cloud2 {
-  animation: 6s 3s 1 cloud2Descends;
+  animation: 6s 3s 1 down-12;
   animation-fill-mode: forwards;
 }
 
-@keyframes cloud2Descends {
-  100% {transform: translateY(12vw);}
+#cloud3-lower {
+  animation: 6s 3s 1 down-12_35;
+  animation-fill-mode: forwards;
 }
 
 #cloud3-upper {
-  animation: 6s 3s 1 cloud3UpperDescends;
+  animation: 6s 3s 1 down-9_2;
   animation-fill-mode: forwards;
-}
-
-@keyframes cloud3UpperDescends {
-  100% {transform: translateY(9.2vw);}
 }
 
 #cloud3-string {
-  animation: 6s 3s 1 cloud3StringDescends;
+  animation: 6s 3s 1 down-2_2;
   animation-fill-mode: forwards;
 }
 
-@keyframes cloud3StringDescends {
-  100% {transform: translateY(2.2vw);}
+#cloud1-string {
+  animation: 2s 3.5s 1 down-4;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
 
 #covers-middle-wire-cover {
   visibility: hidden;
-  animation: 0.01s 6.5s 1 revealTheHidden;       /*  AFTER 6.5 SEC */
+  animation: 0.01s 6.5s 1 revealTheHidden;
   animation-fill-mode: forwards;
 }
 
 #wire-middle {
   visibility: hidden;
-  animation: 0.01s 7.5s 1 revealTheHidden;       /*  AFTER 7.5 SEC */
+  animation: 0.01s 7.5s 1 revealTheHidden;
   animation-fill-mode: forwards;
 }
 
 #wire-left {
   visibility: hidden;
-  animation: 0.01s 8s 1 revealTheHidden;         /*  AFTER 8 SEC */
+  animation: 0.01s 8s 1 revealTheHidden;
   animation-fill-mode: forwards;
 }
 
 #balloon {
-  animation: 19s 9s 1 balloonDrifts;             /*  AFTER 9 SEC */
+  animation: 19s 9s 1 right-82-Linear;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
-}
-
-@keyframes balloonDrifts {
-  100% {transform: translateX(82vw);}
 }
 
 #covers-middle-wire {
-  animation: 18.5s 9s 1 slideMiddleWireCover;
+  animation: 18.5s 9s 1 right-80-Linear;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
-}
-
-@keyframes slideMiddleWireCover {
-  100% {transform: translateX(80vw);}
 }
 
 #letter01 {
@@ -186,13 +175,13 @@ img {
 
 #letter02 {
   visibility: hidden;
-  animation: 0.01s 10s 1 revealTheHidden;       /* AFTER 10 SEC */
+  animation: 0.01s 10s 1 revealTheHidden;
   animation-fill-mode: forwards;
 }
 
 #letter03 {
   visibility: hidden;
-  animation: 0.01s 11s 1 revealTheHidden;      /* HEREAFTER IN 1-2 INCREMENTS */
+  animation: 0.01s 11s 1 revealTheHidden;
   animation-fill-mode: forwards;
 }
 
@@ -280,6 +269,55 @@ img {
   animation-fill-mode: forwards;
 }
 
+/*********************  ALL KEYFRAME ANIMATIONS   *****************************/
+/*********************  ORGANIZED ALPHABETICALLY  *****************************/
+
+
+@keyframes down-2_2 {
+  100% {transform: translateY(2.2vw);}
+}
+
+@keyframes down-4 {
+  100% {transform: translateY(4vw);}
+}
+
+@keyframes down-6 {
+  100% {transform: translateY(6vw);}
+}
+
+@keyframes down-9_2 {
+  100% {transform: translateY(9.2vw);}
+}
+
+@keyframes down-12 {
+  100% {transform: translateY(12vw);}
+}
+
+@keyframes down-12_35 {
+  100% {transform: translateY(12.35vw);}
+}
+
+@keyframes down-13 {
+  100% {transform: translateY(13vw);}
+}
+
+@keyframes letThereBeLight {
+  25%  {background-color: rgba(0, 0, 0, 1);}
+  100% {background-color: rgba(0, 0, 0, 0);}
+}
+
 @keyframes revealTheHidden {
   100% {visibility: visible;}
+}
+
+@keyframes right-80-Linear {
+  100% {transform: translateX(80vw);}
+}
+
+@keyframes right-82-Linear {
+  100% {transform: translateX(82vw);}
+}
+
+@keyframes up-16_7 {
+  100% {transform: translateY(-16.7vw);}
 }
