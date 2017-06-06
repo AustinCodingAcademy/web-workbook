@@ -50,20 +50,28 @@ img {
   z-index: 6000;
 }
 
-.cloud {
+.cloud-lower {
   z-index: 7000;
 }
 
-.letter {
+.cloud-upper {
   z-index: 8000;
 }
 
-#balloon {
+.cloud-string {
   z-index: 9000;
 }
 
-#drapes {
+.letter {
   z-index: 10000;
+}
+
+#balloon {
+  z-index: 11000;
+}
+
+#drapes {
+  z-index: 12000;
 }
 
 /********************* ELEMENTS CALL ANIMATIONS *******************************/
@@ -87,12 +95,21 @@ img {
   100% {transform: translateY(-16.7vw);}
 }
 
-#cloud1 {
-  animation: 6s 3s 1 cloud1Descends;
+#cloud1-upper {
+  animation: 6s 3s 1 cloud1UpperDescends;
   animation-fill-mode: forwards;
 }
 
-@keyframes cloud1Descends {
+@keyframes cloud1UpperDescends {
+  100% {transform: translateY(9.2vw);}
+}
+
+#cloud1-string {
+  animation: 6s 3s 1 cloud1StringDescends;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cloud1StringDescends {
   100% {transform: translateY(9.2vw);}
 }
 
@@ -105,13 +122,22 @@ img {
   100% {transform: translateY(12vw);}
 }
 
-#cloud3 {
-  animation: 6s 3s 1 cloud3Descends;
+#cloud3-upper {
+  animation: 6s 3s 1 cloud3UpperDescends;
   animation-fill-mode: forwards;
 }
 
-@keyframes cloud3Descends {
-  100% {transform: translateY(7.8vw);}
+@keyframes cloud3UpperDescends {
+  100% {transform: translateY(9.2vw);}
+}
+
+#cloud3-string {
+  animation: 6s 3s 1 cloud3StringDescends;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cloud3StringDescends {
+  100% {transform: translateY(2.2vw);}
 }
 
 #covers-middle-wire-cover {
@@ -161,12 +187,12 @@ img {
 #letter02 {
   visibility: hidden;
   animation: 0.01s 10s 1 revealTheHidden;       /* AFTER 10 SEC */
-  animation-fill-mode: forwards;               /* HEREAFTER IN 1-2 INCREMENTS */
+  animation-fill-mode: forwards;
 }
 
 #letter03 {
   visibility: hidden;
-  animation: 0.01s 11s 1 revealTheHidden;
+  animation: 0.01s 11s 1 revealTheHidden;      /* HEREAFTER IN 1-2 INCREMENTS */
   animation-fill-mode: forwards;
 }
 
@@ -257,174 +283,3 @@ img {
 @keyframes revealTheHidden {
   100% {visibility: visible;}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/********************* TARNSISTIONS IN SEQUENCE *******************************/
-/*
-#flagpoles {
-  transition: transform 3s 3s;
-}
-
-#cloud1 {
-  transition: transform 6s 3s;
-}
-
-#cloud2 {
-  transition: transform 6s 3s;
-}
-
-#cloud3 {
-  transition: transform 6s 3s;
-}
-
-#covers-middle-wire-cover {
-  transition: visibility 0.1s 6.5s;
-}
-
-#wire-middle {
-  transition: visibility 0.1s 7.5s;
-}
-
-#wire-left {
-  transition: visibility 0.1s 8s;
-}
-
-#covers-middle-wire {
-  transition: transform 18.5s 9s;
-  transition-timing-function: linear;
-}
-
-#balloon {
-  transition: transform 19s 9s;
-  transition-timing-function: linear;
-}
-
-/* Regarding the "Transition: visibility" rules:
-Duration parameter needs to present, but its value doesn't alter how quickly the
-image becomes visible. Regardless of its value, visibility is instantaneous.
-
-#letter01 {
-  transition: visibility 0.1s 9s;
-}
-
-#letter02 {
-  transition: visibility 0.1s 10s;
-}
-
-#letter03 {
-  transition: visibility 0.1s 11s;
-}
-
-#letter04 {
-  transition: visibility 0.1s 12s;
-}
-
-#letter05 {
-  transition: visibility 0.1s 13s;
-}
-
-#letter06 {
-  transition: visibility 0.1s 14s;
-}
-
-#letter07 {
-  transition: visibility 0.1s 15s;
-}
-
-#wire-right {                               /**** wire-right ***
-  transition: visibility 0.1s 16s;
-}
-
-#letter08 {
-  transition: visibility 0.1s 17s;
-}
-
-#letter09 {
-  transition: visibility 0.1s 18s;
-}
-
-#letter10 {
-  transition: visibility 0.1s 20s;
-}
-
-#letter11 {
-  transition: visibility 0.1s 21s;
-}
-
-#letter12 {
-  transition: visibility 0.1s 23s;
-}
-
-#letter13 {
-  transition: visibility 0.1s 24s;
-}
-
-#letter14 {
-  transition: visibility 0.1s 25s;
-}
-
-#letter15 {
-  transition: visibility 0.1s 26s;
-}
-
-#letter16 {
-  transition: visibility 0.1s 27s;
-}
-
-*/
-
-/******************* ELEMENTS MOVING ACROSS SCREEN
-
-body:hover #balloon {
-  transform: translateX(82vw);
-}
-
-body:hover #covers-middle-wire {
-  transform: translateX(80vw);
-}
-
-body:hover #flagpoles {
-  transform: translateY(-16.7vw);
-}
-
-body:hover #cloud1 {
-  transform: translateY(9.2vw);
-}
-
-body:hover #cloud2 {
-  transform: translateY(12vw);
-}
-
-body:hover #cloud3 {
-  transform: translateY(7.8vw);
-}
-
-
-****************************/
-/*************** ELEMENTS CHANGING VISIBILITY FROM 'HIDDEN' T0 'VISIBLE' ******/
-/*
-
-
-
-
-.letter, #wire-left, #wire-right, #covers-middle-wire-cover {
-  visibility: hidden;
-}
-
-body:hover .letter, body:hover #wire-left, body:hover #wire-right, body:hover #covers-middle-wire-cover {
-  visibility: visible;
-}
-
-*/
