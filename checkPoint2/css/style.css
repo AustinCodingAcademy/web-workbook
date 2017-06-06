@@ -24,74 +24,53 @@ img {
   height: auto;
 }
 
- /* keeps the animated elements from reverting to starting positions */
-.dynamic {
-}
-
 /*********************** Z-INDEXES ********************************************/
 
 #stage {
-  z-index: 300;
-}
-
-#flagpoles {
-  z-index: 400;
-}
-
-#wire-left, #wire-right, #wire-middle, #covers-flagpoles {
-  z-index: 500;
-}
-
-#covers-middle-wire {
-  z-index: 600;
-}
-
-#covers-middle-wire-cover {
-  z-index: 700;
-}
-
-#sun {
   z-index: 1000;
 }
 
-.cloud {
+#flagpoles {
   z-index: 2000;
 }
 
-.letter {
+#wire-left, #wire-right, #wire-middle, #covers-flagpoles {
+  z-index: 3000;
+}
+
+#covers-middle-wire {
+  z-index: 4000;
+}
+
+#covers-middle-wire-cover {
   z-index: 5000;
 }
 
-#balloon {
+#sun {
   z-index: 6000;
 }
 
-#drapes {
+.cloud {
   z-index: 7000;
 }
 
+.letter {
+  z-index: 8000;
+}
+
+#balloon {
+  z-index: 9000;
+}
+
+#drapes {
+  z-index: 10000;
+}
+
 /********************* ELEMENTS CALL ANIMATIONS *******************************/
-
-
-
-@@keyframes revealsTheHidden {
-  0%   {visibility: hidden;}
-  100% {visibility: visible;}
-}
-
-
-.letter, #wire-left, #wire-right, #covers-middle-wire-cover
-
-@@keyframes hidesTheVisible {
-  0%   {visibility: visible;}
-  100% {visibility: hidden;}
-}
-
-
-
+/*********************  ORGANIZED BY TIME LINE  *******************************/
 
 #sun {
-  animation: 3s 0s 1 sunDescends;
+  animation: 3s 0s 1 sunDescends;               /*  ON LOAD */
   animation-fill-mode: forwards;
 }
 
@@ -99,44 +78,14 @@ img {
   100% {transform: translateY(6vw);}
 }
 
-
-
-
-#balloon {
-  animation: transform 19s 9s;
-  animation-timing-function: linear;
-}
-
-@keyframes balloonDrifts {
-  100% {transform: translateX(82vw);}
-}
-
-
-
-
-#covers-middle-wire-cover {
-  animation: 0.1s 6.5s 1 uncoversMiddleWire;
-  animation-fill-mode: forwards;
-}
-
-@keyframes uncoversMiddleWire {
-  100% {transform: translateX(80vw);}
-}
-
-
-
-
 #flagpoles {
-  animation: 3s 3s 1 flagsRise;
+  animation: 3s 3s 1 flagsRise;                 /*  AFTER 3 SEC */
   animation-fill-mode: forwards;
 }
 
 @keyframes flagsRise {
   100% {transform: translateY(-16.7vw);}
 }
-
-
-
 
 #cloud1 {
   animation: 6s 3s 1 cloud1Descends;
@@ -165,101 +114,161 @@ img {
   100% {transform: translateY(7.8vw);}
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+#covers-middle-wire-cover {
+  visibility: hidden;
+  animation: 0.01s 6.5s 1 revealTheHidden;       /*  AFTER 6.5 SEC */
+  animation-fill-mode: forwards;
+}
 
 #wire-middle {
-  animation: visibility 0.1s 7.5s;
+  visibility: hidden;
+  animation: 0.01s 7.5s 1 revealTheHidden;       /*  AFTER 7.5 SEC */
+  animation-fill-mode: forwards;
 }
 
 #wire-left {
-  animation: visibility 0.1s 8s;
+  visibility: hidden;
+  animation: 0.01s 8s 1 revealTheHidden;         /*  AFTER 8 SEC */
+  animation-fill-mode: forwards;
+}
+
+#balloon {
+  animation: 19s 9s 1 balloonDrifts;             /*  AFTER 9 SEC */
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes balloonDrifts {
+  100% {transform: translateX(82vw);}
 }
 
 #covers-middle-wire {
-  animation: transform 18.5s 9s;
+  animation: 18.5s 9s 1 slideMiddleWireCover;
   animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
 
-
+@keyframes slideMiddleWireCover {
+  100% {transform: translateX(80vw);}
+}
 
 #letter01 {
-  animation: visibility 0.1s 9s;
+  visibility: hidden;
+  animation: 0.01s 9s 1 revealTheHidden;
+  animation-fill-mode: forwards;
 }
 
 #letter02 {
-  animation: visibility 0.1s 10s;
+  visibility: hidden;
+  animation: 0.01s 10s 1 revealTheHidden;       /* AFTER 10 SEC */
+  animation-fill-mode: forwards;               /* HEREAFTER IN 1-2 INCREMENTS */
 }
 
 #letter03 {
-  animation: visibility 0.1s 11s;
+  visibility: hidden;
+  animation: 0.01s 11s 1 revealTheHidden;
+  animation-fill-mode: forwards;
 }
 
 #letter04 {
-  animation: visibility 0.1s 12s;
+  visibility: hidden;
+  animation: 0.01s 12s 1 revealTheHidden;
+  animation-fill-mode: forwards;
 }
 
 #letter05 {
-  animation: visibility 0.1s 13s;
+  visibility: hidden;
+  animation: 0.01s 13s 1 revealTheHidden;
+  animation-fill-mode: forwards;
 }
 
 #letter06 {
-  animation: visibility 0.1s 14s;
+  visibility: hidden;
+  animation: 0.01s 14s 1 revealTheHidden;
+  animation-fill-mode: forwards;
 }
 
 #letter07 {
-  animation: visibility 0.1s 15s;
+  visibility: hidden;
+  animation: 0.01s 15s 1 revealTheHidden;
+  animation-fill-mode: forwards;
 }
 
-#wire-right {                               /**** wire-right ****/
-  animation: visibility 0.1s 16s;
+#wire-right {                                             /**** wire-right ****/
+  visibility: hidden;
+  animation: 0.01s 16s 1 revealTheHidden;
+  animation-fill-mode: forwards;
 }
 
 #letter08 {
-  animation: visibility 0.1s 17s;
+  visibility: hidden;
+  animation: 0.01s 17s 1 revealTheHidden;
+  animation-fill-mode: forwards;
 }
 
 #letter09 {
-  animation: visibility 0.1s 18s;
+  visibility: hidden;
+  animation: 0.01s 18s 1 revealTheHidden;
+  animation-fill-mode: forwards;
 }
 
 #letter10 {
-  animation: visibility 0.1s 20s;
+  visibility: hidden;
+  animation: 0.01s 20s 1 revealTheHidden;
+  animation-fill-mode: forwards;
 }
 
 #letter11 {
-  animation: visibility 0.1s 21s;
+  visibility: hidden;
+  animation: 0.01s 21s 1 revealTheHidden;
+  animation-fill-mode: forwards;
 }
 
 #letter12 {
-  animation: visibility 0.1s 23s;
+  visibility: hidden;
+  animation: 0.01s 23s 1 revealTheHidden;
+  animation-fill-mode: forwards;
 }
 
 #letter13 {
-  animation: visibility 0.1s 24s;
+  visibility: hidden;
+  animation: 0.01s 24s 1 revealTheHidden;
+  animation-fill-mode: forwards;
 }
 
 #letter14 {
-  animation: visibility 0.1s 25s;
+  visibility: hidden;
+  animation: 0.01s 25s 1 revealTheHidden;
+  animation-fill-mode: forwards;
 }
 
 #letter15 {
-  animation: visibility 0.1s 26s;
+  visibility: hidden;
+  animation: 0.01s 26s 1 revealTheHidden;
+  animation-fill-mode: forwards;
 }
 
 #letter16 {
-  animation: visibility 0.1s 27s;
+  visibility: hidden;
+  animation: 0.01s 27s 1 revealTheHidden;
+  animation-fill-mode: forwards;
 }
+
+@keyframes revealTheHidden {
+  100% {visibility: visible;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /********************* TARNSISTIONS IN SEQUENCE *******************************/
