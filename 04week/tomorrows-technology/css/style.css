@@ -1,0 +1,167 @@
+main {
+  display: flex;
+  flex-direction: row;
+  margin: 2em;
+}
+
+body {
+  max-width: 1100px;
+}
+
+.content {
+  width: 900px;
+}
+
+.topimage {
+  background-image: url("../img/bg.jpg");
+  background-position: top;
+  background-size: cover;
+  height: auto auto!important;
+}
+
+.topimage {
+  height: 400px;
+}
+
+.sidenav {
+  margin-top: 1px;
+  margin-left: 60px;
+  width: 300px;
+}
+
+/*div.sidenav {
+  width: 400px;
+}*/
+
+hr {
+  color: #000;
+
+}
+
+h1 {
+font-size: 31px;
+/*margin-top: 10px;
+margin-bottom: 10px;*/
+}
+
+article {
+
+}
+
+h2 {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+aside ul li {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+div.feature {
+  margin-right: 60px;
+}
+
+aside {
+  width: 300px;
+}
+
+p {
+  font-size: 19px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /*width: 625px;*/
+}
+
+button {
+  background-color: #5c5c5c;
+  margin-left: auto;
+  width: 100px;
+  height: 30px;
+  color: white;
+  border: 0;
+}
+
+.info {
+  background-color: #808080;
+  color: #fff;
+  display: flex;
+  flex: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 400px;
+  display: flex;
+}
+
+.info > div {
+  margin: 3em;
+ text-align: left;
+}
+
+.info li {
+  display: block;
+  border-bottom: .5px solid #fff;
+  line-height: 1.5em;
+}
+
+.info ul {
+padding-left: 0 !important;
+}
+
+.info h2 {
+  font-size: 20px;
+  width: 150px;
+}
+
+.info a {
+  color: white;
+}
+
+img {
+  width: 17px;
+  height: 17px;
+  align-items: flex-end;
+  /*color: white;*/
+}
+
+/*This is for phone view only*/
+
+@media screen and (max-width: 767px), (max-width: 991px) {
+  .sidenav {
+    display: none;}
+  .topimage {
+    height: 150px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .info {
+    height: 240px;
+  }
+  div.usefullinks {
+    margin-left: 80px;
+  }
+}
+
+/*This is for tablet view only*/
+
+@media screen and (min-width: 767px) {
+  .info {
+    display: none;
+  }
+  .topimage {
+  height: 400px;
+  }
+  h1 {
+    font-size: 31px;
+  }
+}

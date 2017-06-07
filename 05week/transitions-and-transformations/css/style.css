@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.square1, .square2 {
+  width: 50px;
+  height: 50px;
+}
+
+.red {
+  background-color: red;
+  margin: 1px;
+}
+
+.orange {
+  background-color: orange;
+  margin: 2px;
+}
+
+.yellow {
+  background-color: yellow;
+  margin: 1px;
+}
+
+.green {
+  background-color: green;
+  margin: 1px;
+}
+
+.blue {
+  background-color: blue;
+  margin: 1px;
+}
+
+.indigo {
+  background-color: indigo;
+  margin: 1px;
+}
+
+.violet {
+  background-color: violet;
+  margin: 1px;
+}
+
+.cyan {
+  background-color: cyan;
+  margin: 1px;
+}
+
+.black {
+  background-color: black;
+  margin: 1px;
+}
+
+.purple {
+  background-color: purple;
+  margin: 1px;
+}
+
+.pink {
+  background-color: pink;
+  margin: 1px;
+}
+
+.limegreen {
+  background-color: limegreen;
+  margin: 1px;
+}
+
+/*.container:hover > div = items move back too quick to original spots*/
+.container > div {
+  transition: all 5s;
+}
+
+.container:hover > div:nth-child(odd){
+transform: translateX(-300px) rotate(-360deg) scale(.5);
+}
+
+.container:hover > div:nth-child(even) {
+transform: translateX(300px) rotate(360deg) scale(2);
+}
