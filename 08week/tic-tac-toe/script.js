@@ -28,6 +28,7 @@ if ($('#announce-winner').html().length > 0) {
 //Check for winner
     if ((($(square[0]).text() === playerTurn) && ($(square[1]).text() === playerTurn) && ($(square[2]).text() === playerTurn)) || (($(square[3]).text() === playerTurn) && ($(square[4]).text() === playerTurn) && ($(square[5]).text() === playerTurn)) || (($(square[6]).text() === playerTurn) && ($(square[7]).text() === playerTurn) && ($(square[8]).text() === playerTurn)) || (($(square[6]).text() === playerTurn) && ($(square[4]).text() === playerTurn) && ($(square[2]).text() === playerTurn)) || (($(square[0]).text() === playerTurn) && ($(square[4]).text() === playerTurn) && ($(square[8]).text() === playerTurn)) || (($(square[0]).text() === playerTurn) && ($(square[3]).text() === playerTurn) && ($(square[6]).text() === playerTurn)) || (($(square[1]).text() === playerTurn) && ($(square[4]).text() === playerTurn) && ($(square[7]).text() === playerTurn)) || (($(square[2]).text() === playerTurn) && ($(square[5]).text() === playerTurn) && ($(square[8]).text() === playerTurn))) {
       $('#announce-winner').text(playerTurn + ' wins!');
+      turn = 1;
       if ($('#announce-winner').html().length > 0) {
         if (turn <= 6) {
           alert("Flawless Victory!");
