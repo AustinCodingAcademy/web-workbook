@@ -1,18 +1,51 @@
+/*Global*/
+body{
+  background-image: url(images/zim.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.square{
+  cursor: pointer;
+
+}
+
+/*    */
+/*BODY*/
+/*    */
+.header{
+  width: 11%;
+  margin: 10% auto 0 auto;
+  font-family: 'Patrick Hand SC';
+}
+#board{
+  margin: 0 auto;
+  height: 304px;
+  width: 304px;
+  opacity: .7;
+  background-color: #5c969e;
+}
 div[data-cell] {
   width: 100px;
   height: 100px;
   background-color: #f2f2f2;
   float: left;
-  border: 1px solid #808080;
+  border: .25px solid #808080;
   font-size: 100px;
   text-align: center;
 }
-
 .row {
   clear: both;
 }
 
-#announce-winner {
-  clear: both;
-  font-size: 50px;
+div.gameOver{
+  margin: 2% auto;
+  width: 8%;
+}
+
+#clear{
+  margin: 2% auto 0 auto;
+  width: 100px;
 }
