@@ -123,12 +123,13 @@ function checkWin() {
       break;
     }
   }
+
   if (userWon) {
     displayMsg.html('Game Over! Player ' + playerTurn + ' has won!');
     clearButton.prop('disabled', false);
     nextTurn();
   } else {
-    checkDraw();
-  }
+      checkDraw();
+    }
 
-}
+  }
