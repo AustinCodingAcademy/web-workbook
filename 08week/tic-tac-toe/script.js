@@ -17,12 +17,12 @@ function displayTurn() {
   $('.currentTurn').html('Player ' + playerTurn + ' \'s turn');
 }
 
-function disableButton () {
+function disableButton() {
   clearButton.prop('disabled', true);
 }
 
-function nextTurn () {
-  if (playerTurn===1) {
+function nextTurn() {
+  if (playerTurn === 1) {
     playerTurn = 2;
   } else {
     playerTurn = 1;
@@ -48,7 +48,6 @@ function playerActions() {
 
       // check for a win function, then a draw, if neither, continue
       checkWin();
-      checkDraw();
 
       // switch the player turn and then display it
       nextTurn();
@@ -62,7 +61,7 @@ function checkDraw() {
   if ($('.taken').length === 9) {
     displayMsg.html('Game Over! It\'s a draw!');
     clearButton.prop('disabled', false);
-    nextTurn ();
+    nextTurn();
   }
 }
 
@@ -82,7 +81,14 @@ function clearBoard() {
 // let's see if there's a win! all possible combos
 function checkWin() {
   var wins = [
-    [0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6]
   ];
 
   var playersMarker = playerTurn === 1 ? 'X' : 'O'; // dynamic based on user's turn
@@ -90,7 +96,7 @@ function checkWin() {
   var all = $('.board div.' + playersMarker);
 
   var coords = [] // create array that keeps track of X and O coordinates
-  all.each (function (i) {
+  all.each(function(i) {
     coords.push(Number($(this).attr('data-cell')));
   });
   coords = coords.sort(); // not sure if needed
@@ -120,7 +126,9 @@ function checkWin() {
   if (userWon) {
     displayMsg.html('Game Over! Player ' + playerTurn + ' has won!');
     clearButton.prop('disabled', false);
-    nextTurn ();
+    nextTurn();
+  } else {
+    checkDraw();
   }
 
 }
