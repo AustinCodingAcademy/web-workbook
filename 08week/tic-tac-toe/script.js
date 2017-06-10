@@ -12,19 +12,7 @@ $(document).ready (function runGame () {
 // there are two players
 // player 1 = 'x', player 2 = '0'
 var player = 1;
-// a player wins when he connects three squares in a row
-//
-
-// there can only be one click per square
-//
-// when a player wins, an alert box congratulates him
-//
-// if there is a draw, an alert box says so
-//
-// there is a reset button to clear the board
-
-
-
+var count = 0;
 
  // this is the function that places an x or o on the board
  // each time a box (div with 'data-cell' attr) is clicked, the player changes
@@ -33,62 +21,47 @@ function playerClick() {
 $('div').click(function () {
   var cell = $(this);
 
-  if (cell.attr('data-cell') && (!$(this).hasClass('taken')) ) {
+  if (cell.attr('data-cell') && (!$(this).hasClass('X-taken')) && cell.attr('data-cell') && (!$(this).hasClass('O-taken')) ) {
     if (player === 1) {
-      cell.addClass('X');
-      cell.addClass('taken');
+      cell.addClass('X-taken');
       player = 2;
+      count++;
     } else {
-      cell.addClass('O');
-      cell.addClass('taken');
+      cell.addClass('O-taken');
+      cell.removeClass('X-taken');
       player = 1;
+      count++;
     }
+    // the code below enables a win by player X
+  } else if ($('#box0').hasClass('X-taken') && $('#box1').hasClass('X-taken') && $('#box2').hasClass('X-taken') || $('#box3').hasClass('X-taken') && $('#box4').hasClass('X-taken') && $('#box5').hasClass('X-taken') || $('#box6').hasClass('X-taken') && $('#box7').hasClass('X-taken') && $('#box8').hasClass('X-taken') || $('#box0').hasClass('X-taken') && $('#box3').hasClass('X-taken') && $('#box6').hasClass('X-taken') || $('#box0').hasClass('X-taken') && $('#box4').hasClass('X-taken') && $('#box8').hasClass('X-taken') ||
+  $('#box1').hasClass('X-taken') && $('#box4').hasClass('X-taken') && $('#box7').hasClass('X-taken') ||
+  $('#box2').hasClass('X-taken') && $('#box2').hasClass('X-taken') && $('#box6').hasClass('X-taken') ||
+  $('#box2').hasClass('X-taken') && $('#box5').hasClass('X-taken') && $('#box8').hasClass('X-taken')) {
+    console.log('X is the winner');
+    // the code below enables a win by player O
+  } else if  ($('#box0').hasClass('O-taken') && $('#box1').hasClass('O-taken') && $('#box2').hasClass('O-taken') || $('#box3').hasClass('O-taken') && $('#box4').hasClass('O-taken') && $('#box5').hasClass('O-taken') || $('#box6').hasClass('O-taken') && $('#box7').hasClass('O-taken') && $('#box8').hasClass('O-taken') || $('#box0').hasClass('O-taken') && $('#box3').hasClass('O-taken') && $('#box6').hasClass('O-taken') || $('#box0').hasClass('O-taken') && $('#box4').hasClass('O-taken') && $('#box8').hasClass('O-taken') ||
+  $('#box1').hasClass('O-taken') && $('#box4').hasClass('O-taken') && $('#box7').hasClass('O-taken') ||
+  $('#box2').hasClass('O-taken') && $('#box4').hasClass('O-taken') && $('#box6').hasClass('O-taken') ||
+  $('#box2').hasClass('O-taken') && $('#box5').hasClass('O-taken') && $('#box8').hasClass('O-taken')) {
+    console.log('O is the winner');
+    // the code below allows a tie message if no winner
+  } else if (count === 9) {
+    console.log('No winner');
   }
-
 });
+
 }
 
-// there are nine possible wins
-//
-function possibleWins() {
-
-
-  var wins = [
-    [0,1,2],
-    [0,3,6],
-    [0,4,8],
-    [1,4,7],
-    [2,4,6],
-    [2,5,8],
-    [3,4,5],
-    [6,7,8],
-  ];
-
-  $.each( wins, function(i) {
-    console.log(wins[i]);
+// the code below resets the game
+function resetGame() {
+  $('button').click(function () {
+    var blank = $('div').attr('data-cell');
+    blank.removeClass('X-taken');
   });
-
-  
-
-
-
-
-
-
-
-  // for (var i = 0; i < wins.length; i++ ) {
-  //   var win = wins[i];
-  //   if (win.hasClass('taken')) {
-  //     alert('someone won');
-  //   }
-  //
-  // }
-
 }
-
 // function calls are down here
-possibleWins();
-
 playerClick();
+resetGame();
+
 // closing parenthesis of main function  hj
 });
