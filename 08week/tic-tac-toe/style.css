@@ -3,17 +3,21 @@ body {
   flex-direction: column;
   align-items: center;
   height: 100vh;
+  font-family: Arial;
 }
 
 
 div[data-cell] {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background-color: #f2f2f2;
   float: left;
   border: 1px solid #808080;
   font-size: 100px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-center {
@@ -26,16 +30,29 @@ div[data-cell] {
 
 .X-taken::after {
   content: 'X';
-  color: black
+  color: transparent;
+  background-image: url('img/man.jpg');
+  background-size: cover;
+  width: 150px;
+  height: 150px;
 
 }
 
 .O-taken::after {
   content: 'O';
-  color: red;
+  color: transparent;
+  background-image: url('img/woman.jpg');
+  background-size: cover;
+  width: 150px;
+  height: 150px;
 }
 
 #announce-winner {
   clear: both;
-  font-size: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#clear {
+  margin-left: 185px;
 }

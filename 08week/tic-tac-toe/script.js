@@ -39,7 +39,8 @@ $('div').click(function () {
     oWinner();
     // the code below allows a tie message if no winner
   } else if (count === 9) {
-    console.log('No winner');
+    noWinner();
+    console.log('no winners');
   }
 });
 }
@@ -59,12 +60,17 @@ function resetGame() {
 // the code below announces a winner by addig text to the div with id "announce winner"
 function xWinner() {
   var announce = $('#announce-winner');
-  return announce.text('X wins');
+  return announce.text('Lawrence did a win!');
 }
 
 function oWinner() {
   var announce = $('#announce-winner');
-  return announce.text('O wins');
+  return announce.text('Sheena prevailed upon Lawrence!');
+}
+
+function noWinner() {
+  var announce = $('#announce-winner');
+  return announce.text('No winner...PRESS RESET NOW!');
 }
 
 // function calls are down here
