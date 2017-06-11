@@ -3,15 +3,8 @@ $(document).ready (function runGame () {
   'use strict';
 
 
-  // Put app logic in here
-//
-// code plan:
-//
-// create a basic tic tac toe game
-//
-// there are two players
-// player 1 = 'x', player 2 = '0'
 var player = 1;
+// this variable counts clicks on the board, once 9 are reached without a winner, a tie is delcared
 var count = 0;
 
  // this is the function that places an x or o on the board
@@ -35,33 +28,48 @@ $('div').click(function () {
     // the code below enables a win by player X
   } else if ($('#box0').hasClass('X-taken') && $('#box1').hasClass('X-taken') && $('#box2').hasClass('X-taken') || $('#box3').hasClass('X-taken') && $('#box4').hasClass('X-taken') && $('#box5').hasClass('X-taken') || $('#box6').hasClass('X-taken') && $('#box7').hasClass('X-taken') && $('#box8').hasClass('X-taken') || $('#box0').hasClass('X-taken') && $('#box3').hasClass('X-taken') && $('#box6').hasClass('X-taken') || $('#box0').hasClass('X-taken') && $('#box4').hasClass('X-taken') && $('#box8').hasClass('X-taken') ||
   $('#box1').hasClass('X-taken') && $('#box4').hasClass('X-taken') && $('#box7').hasClass('X-taken') ||
-  $('#box2').hasClass('X-taken') && $('#box2').hasClass('X-taken') && $('#box6').hasClass('X-taken') ||
+  $('#box2').hasClass('X-taken') && $('#box4').hasClass('X-taken') && $('#box6').hasClass('X-taken') ||
   $('#box2').hasClass('X-taken') && $('#box5').hasClass('X-taken') && $('#box8').hasClass('X-taken')) {
-    console.log('X is the winner');
+    xWinner();
     // the code below enables a win by player O
   } else if  ($('#box0').hasClass('O-taken') && $('#box1').hasClass('O-taken') && $('#box2').hasClass('O-taken') || $('#box3').hasClass('O-taken') && $('#box4').hasClass('O-taken') && $('#box5').hasClass('O-taken') || $('#box6').hasClass('O-taken') && $('#box7').hasClass('O-taken') && $('#box8').hasClass('O-taken') || $('#box0').hasClass('O-taken') && $('#box3').hasClass('O-taken') && $('#box6').hasClass('O-taken') || $('#box0').hasClass('O-taken') && $('#box4').hasClass('O-taken') && $('#box8').hasClass('O-taken') ||
   $('#box1').hasClass('O-taken') && $('#box4').hasClass('O-taken') && $('#box7').hasClass('O-taken') ||
   $('#box2').hasClass('O-taken') && $('#box4').hasClass('O-taken') && $('#box6').hasClass('O-taken') ||
   $('#box2').hasClass('O-taken') && $('#box5').hasClass('O-taken') && $('#box8').hasClass('O-taken')) {
-    console.log('O is the winner');
+    oWinner();
     // the code below allows a tie message if no winner
   } else if (count === 9) {
     console.log('No winner');
   }
 });
-
 }
 
 // the code below resets the game
 function resetGame() {
   $('button').click(function () {
-    var blank = $('div').attr('data-cell');
-    blank.removeClass('X-taken');
+      var reset = $('.X-taken, .O-taken');
+      reset.removeClass();
+      var announce = $('#announce-winner');
+      announce.text('');
+      player = 1;
+      count = 0;
   });
 }
+
+// the code below announces a winner by addig text to the div with id "announce winner"
+function xWinner() {
+  var announce = $('#announce-winner');
+  return announce.text('X wins');
+}
+
+function oWinner() {
+  var announce = $('#announce-winner');
+  return announce.text('O wins');
+}
+
 // function calls are down here
-playerClick();
 resetGame();
+playerClick();
 
 // closing parenthesis of main function  hj
 });
