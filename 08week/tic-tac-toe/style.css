@@ -11,8 +11,33 @@ div[data-cell] {
 .row {
   clear: both;
 }
+.row > div {
+  float: left;
+  height: 70px;
+  width: 70px;
+  border: 1px solid black;
+}
 
-#announce-winner {
+#announce-winner, #announce-player {
   clear: both;
   font-size: 50px;
+  text-align: center;
+}
+
+div.cross:before {
+  content: "X";
+  color: blue;
+  padding: 30px;
+  line-height: 5;
+  font-family: cursive;
+  text-align: center;
+
+}
+div.circle:before {
+  content: "O";
+  color: red;
+  padding: 30px;
+  line-height: 5;
+  font-family: cursive;
+  text-align: center;
 }
