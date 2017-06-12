@@ -11,5 +11,3 @@
 
     else
       console.log(i); }
-
-  var Change = "Changemade to turn in homework"
