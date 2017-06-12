@@ -1,5 +1,15 @@
 'use strict';
 
-$(document).on('ready', function() {
-  // Put app logic in here
+$(document).ready(function() {
+
+  var player = 1
+  $('row').click(function(){
+     if ($(this).hasClass('cell-zero')) {
+           alert('this works');
+         }
+         else {
+           alert('nope');
+         }
+   })
+
 });
