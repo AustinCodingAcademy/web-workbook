@@ -107,10 +107,12 @@ function checkWin() {
 
   for (var i = 0; i < wins.length; i++) {
     var win = wins[i]; // [0, 1, 2]
+    console.log(win);
 
     var gotWin = true;
     for (var j = 0; j < win.length; j++) {
       var bit = win[j]; // 0, 1, 2
+      console.log(bit);
 
       if (coords.indexOf(bit) > -1) {} else {
         gotWin = false;
