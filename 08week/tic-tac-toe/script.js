@@ -16,6 +16,8 @@ $(document).ready(function (){
     $('[data-cell]').empty();
   var test=$('[data-cell="0"]')[0].innerHTML;
   });
+});
+
 //var win=function(){
   //if ($('[data-cell="0"]')[0].innerHTML === $('[data-cell="1"]')[0].innerHTML){
 //$("#announce-winner").text('You win!');
@@ -23,4 +25,4 @@ $(document).ready(function (){
 
 
 
-);
+//);
