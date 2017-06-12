@@ -17,6 +17,8 @@
   var dataCell8 = $('[data-cell = "8"]');
 
   var toggle = function() {
+      if($(this).text() == '') {
+
       if(play) {
         $(this).text('x');
       }
@@ -30,7 +32,18 @@
     } else if (checkWinner() && !play) {
       announcement.text('Player o won!');
     }
-      // rows
+
+  // switch to make play flip & click function
+      play = !play;
+    }  
+    }
+    $('[data-cell]').click(toggle);
+    $('#clear').click(function(){
+    $('[data-cell]').text('');
+    announcement.text('');
+  });
+
+// function to check for a win
   function checkWinner() {
       if((dataCell0.text() != '') && (dataCell0.text () == dataCell1.text())
        && (dataCell1.text() == dataCell2.text())){
@@ -61,13 +74,4 @@
         }
       }
 
-  // switch to make play flip & click function
-      play = !play;
-    }
-
-    $('[data-cell]').click(toggle);
-    $('#clear').click(function(){
-    $('[data-cell]').text('');
-    announcement.text('');
-  });
 });
