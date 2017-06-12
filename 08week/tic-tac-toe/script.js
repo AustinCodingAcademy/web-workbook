@@ -1,11 +1,11 @@
 'use strict';
 
 $(document).ready(function() {
+
   var turn = 1;
   var square = ['div[data-cell="0"]', 'div[data-cell="1"]', 'div[data-cell="2"]', 'div[data-cell="3"]', 'div[data-cell="4"]', 'div[data-cell="5"]', 'div[data-cell="6"]', 'div[data-cell="7"]', 'div[data-cell="8"]'];
 
   $('div[data-cell="0"], div[data-cell="1"], div[data-cell="2"], div[data-cell="3"], div[data-cell="4"], div[data-cell="5"], div[data-cell="6"], div[data-cell="7"], div[data-cell="8"]').on( 'click', function(){
-
      if (turn % 2 === 0) {
        var playerTurn = 'o';
      } else {
@@ -15,7 +15,6 @@ $(document).ready(function() {
 if ($('#announce-winner').html().length > 0) {
   return false;
 };
-
      if (this.innerHTML) {
        return false;
      };
@@ -27,17 +26,9 @@ if ($('#announce-winner').html().length > 0) {
       turn = 1;
       if ($('#announce-winner').html().length > 0) {
         if (turn <= 6) {
-          alert("Excellent Job, Great Win!");
       }
       };
     };
-
   turn++;
 });
-
-
-$('#clear').click(function() {
-  $('div[data-cell="0"], div[data-cell="1"], div[data-cell="2"], div[data-cell="3"], div[data-cell="4"], div[data-cell="5"], div[data-cell="6"], div[data-cell="7"], div[data-cell="8"]').text('');
-  $('#announce-winner').text('');
-  });
 });
