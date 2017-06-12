@@ -33,28 +33,28 @@
       // rows
   function checkWinner() {
       if((dataCell0.text() != '') && (dataCell0.text () == dataCell1.text())
-       && (dataCell1.text () == dataCell2.text())){
+       && (dataCell1.text() == dataCell2.text())){
         return true;
       } else if((dataCell3.text() != '') && (dataCell3.text () == dataCell4.text())
-         && (dataCell4.text () == dataCell5.text())){
+         && (dataCell4.text() == dataCell5.text())){
           return true;
         } else if((dataCell6.text() != '') && (dataCell6.text () == dataCell7.text())
-         && (dataCell7.text () == dataCell8.text())){
+         && (dataCell7.text() == dataCell8.text())){
           return true;
         } else if((dataCell0.text() != '') && (dataCell0.text () == dataCell3.text())
-         && (dataCell3.text () == dataCell6.text())){
+         && (dataCell3.text() == dataCell6.text())){
           return true;
         } else if((dataCell1.text() != '') && (dataCell1.text () == dataCell4.text())
-         && (dataCell4.text () == dataCell7.text())){
+         && (dataCell4.text() == dataCell7.text())){
           return true;
-        } else if((dataCell2.text() != '') && (dataCell2.text () == dataCell5.text())
-         && (dataCell5.text () == dataCell8.text())){
+       } else if((dataCell2.text() != '') && (dataCell2.text () == dataCell5.text())
+         && (dataCell5.text() == dataCell8.text())){
           return true;
         } else if((dataCell0.text() != '') && (dataCell0.text () == dataCell4.text())
-         && (dataCell4.text () == dataCell8.text())){
+         && (dataCell4.text() == dataCell8.text())){
           return true;
-        } else if((dataCell2.text() != '') && (dataCell5.text () == dataCell4.text())
-         && (dataCell4.text () == dataCell6.text())){
+        } else if((dataCell2.text() != '') && (dataCell2.text () == dataCell4.text())
+         && (dataCell4.text() == dataCell6.text())){
           return true;
         } else {
           return false;
@@ -68,8 +68,6 @@
     $('[data-cell]').click(toggle);
     $('#clear').click(function(){
     $('[data-cell]').text('');
+    announcement.text('');
   });
-
-
-
 });
