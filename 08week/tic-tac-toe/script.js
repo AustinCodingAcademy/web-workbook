@@ -1,12 +1,9 @@
-
 $(document).ready (function runGame () {
   'use strict';
-
 
 var player = 1;
 // this variable counts clicks on the board, once 9 are reached without a winner, a tie is delcared
 var count = 0;
-
  // this is the function that places an x or o on the board
  // each time a box (div with 'data-cell' attr) is clicked, the player changes
 function playerClick() {
@@ -44,7 +41,6 @@ $('div').click(function () {
   }
 });
 }
-
 // the code below resets the game
 function resetGame() {
   $('button').click(function () {
@@ -56,26 +52,21 @@ function resetGame() {
       count = 0;
   });
 }
-
 // the code below announces a winner by addig text to the div with id "announce winner"
 function xWinner() {
   var announce = $('#announce-winner');
   return announce.text('Lawrence did a win!');
 }
-
 function oWinner() {
   var announce = $('#announce-winner');
   return announce.text('Sheena prevailed upon Lawrence!');
 }
-
 function noWinner() {
   var announce = $('#announce-winner');
   return announce.text('No winner...PRESS RESET NOW!');
 }
-
 // function calls are down here
 resetGame();
 playerClick();
-
 // closing parenthesis of main function  hj
 });
