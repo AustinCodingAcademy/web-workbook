@@ -1,26 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>DOM Practice</title>
+    <title>DOM Examples</title>
   </head>
-  <body>
-    <ul id="myList">
-      <li>First List Item</li>
-      <li>Second List Item</li>
-      <li>Third List Item</li>
-      <li>Fourth List Item</li>
-    </ul>
-    <div id="div" >
-        <p class="paragraph" id="P1">Paragraph 1</p>
-        <p class="paragraph" id="P2">Paragraph 2</p>
-        <p class="paragraph" id="P3">Paragraph 3</p>
-        <p class="paragraph" id="P4">Paragraph 4</p>
-    </div>
+  <body class="normal">
+    <h1 id="headline">
+      Hello <em>Wold</em>
+    </h1>
+    <p id="content">
+      This is a normal <strong>paragraph.</strong>
+      <br>
+      <em>This is emphasized</em>
+    </p>
 
-    <div class="test">
+    <script>
+      function clickListener() {
+        alert('I was clicked');
+      }
 
-    </div>
-    <script type="text/javascript" src="js/script.js">
+      function clickListener2() {
+        alert('I was clicked #2');
+      }
+
+      function bind(element, event, func) {
+        if (element.addEventListener) {
+          element.addEventListener(event, func);
+        }
+        else if (element.attachEvent) {
+          element.addEventListener('on' + event, func);
+        }
+        else {
+          element['on' + event] = func;
+        }
+      }
+
+      var h1 = document.getElementById('headline');
+      bind(h1, 'click', function(){ alert('Clicked!') });
+      // if (h1.addEventListener) {
+      //   h1.addEventListener('click', clickListener);
+      // }
+      // else if (h1.attachEvent) {
+      //   h1.attachEvent('onclick', clickListener);
+      // }
+      // else {
+      //   h1.onclick = clickListener;
+      // }
+
+      // h1.addEventListener('click',clickListener2);
+
+    </script>
+
   </body>
 </html>
