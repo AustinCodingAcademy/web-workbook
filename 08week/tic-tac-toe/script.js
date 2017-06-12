@@ -17,6 +17,8 @@
   var dataCell8 = $('[data-cell = "8"]');
 
   var toggle = function() {
+      if($(this).text() == '') {
+
       if(play) {
         $(this).text('x');
       }
@@ -30,77 +32,46 @@
     } else if (checkWinner() && !play) {
       announcement.text('Player o won!');
     }
-      // rows
-  function checkWinner() {
-      if((dataCell0.text() != '') && (dataCell0.text () == dataCell1.text())
-       && (dataCell1.text () == dataCell2.text())){
-        return true;
-      } else {
-        return false;
-      }}
-    function checkWinner() {
-        if((dataCell3.text() != '') && (dataCell3.text () == dataCell4.text())
-         && (dataCell4.text () == dataCell5.text())){
-          return true;
-        } else {
-          return false;
-        }}
-    function checkWinner() {
-        if((dataCell6.text() != '') && (dataCell6.text () == dataCell7.text())
-         && (dataCell7.text () == dataCell8.text())){
-          return true;
-        } else {
-          return false;
-        }}
-        // columns
-    function checkWinner() {
-        if((dataCell0.text() != '') && (dataCell0.text () == dataCell3.text())
-         && (dataCell3.text () == dataCell6.text())){
-          return true;
-        } else {
-          return false;
-        }}
-    function checkWinner() {
-        if((dataCell1.text() != '') && (dataCell1.text () == dataCell4.text())
-         && (dataCell4.text () == dataCell7.text())){
-          return true;
-        } else {
-          return false;
-        }}
-    function checkWinner() {
-        if((dataCell2.text() != '') && (dataCell2.text () == dataCell5.text())
-         && (dataCell5.text () == dataCell8.text())){
-          return true;
-        } else {
-          return false;
-        }}
-        // diagonal
-    function checkWinner() {
-        if((dataCell0.text() != '') && (dataCell0.text () == dataCell4.text())
-         && (dataCell4.text () == dataCell8.text())){
-          return true;
-        } else {
-          return false;
-        }}
-    function checkWinner() {
-        if((dataCell2.text() != '') && (dataCell5.text () == dataCell4.text())
-         && (dataCell4.text () == dataCell6.text())){
-          return true;
-        } else {
-          return false;
-        }}
-
-
 
   // switch to make play flip & click function
       play = !play;
     }
-
+    }
     $('[data-cell]').click(toggle);
     $('#clear').click(function(){
     $('[data-cell]').text('');
+    announcement.text('');
   });
 
-
+// function to check for a win
+  function checkWinner() {
+      if((dataCell0.text() != '') && (dataCell0.text () == dataCell1.text())
+       && (dataCell1.text() == dataCell2.text())){
+        return true;
+      } else if((dataCell3.text() != '') && (dataCell3.text () == dataCell4.text())
+         && (dataCell4.text() == dataCell5.text())){
+          return true;
+        } else if((dataCell6.text() != '') && (dataCell6.text () == dataCell7.text())
+         && (dataCell7.text() == dataCell8.text())){
+          return true;
+        } else if((dataCell0.text() != '') && (dataCell0.text () == dataCell3.text())
+         && (dataCell3.text() == dataCell6.text())){
+          return true;
+        } else if((dataCell1.text() != '') && (dataCell1.text () == dataCell4.text())
+         && (dataCell4.text() == dataCell7.text())){
+          return true;
+       } else if((dataCell2.text() != '') && (dataCell2.text () == dataCell5.text())
+         && (dataCell5.text() == dataCell8.text())){
+          return true;
+        } else if((dataCell0.text() != '') && (dataCell0.text () == dataCell4.text())
+         && (dataCell4.text() == dataCell8.text())){
+          return true;
+        } else if((dataCell2.text() != '') && (dataCell2.text () == dataCell4.text())
+         && (dataCell4.text() == dataCell6.text())){
+          return true;
+        } else {
+          return false;
+        }
+      }
 
 });
