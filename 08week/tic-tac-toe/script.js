@@ -1,8 +1,6 @@
 'use strict';
-
 $(document).ready(function() {
   //Tell the users' who’s turn it is
-
   var player = 1;
   $('.playerTurn').html('Player' + player + 's turn');
 
@@ -10,7 +8,6 @@ $(document).ready(function() {
     var cell = $(this);
     if (cell.attr('data-cell')) {
       if (!cell.attr('class')) {
-
         var className = 'O';
         if (player === 1) {
           className = 'X'
@@ -18,7 +15,7 @@ $(document).ready(function() {
         console.log(className);
         cell.addClass(className);
         console.log(checkIfPlayerWon(className));
-        if (checkIfPlayerWon(className)){
+        if (checkIfPlayerWon(className )){
           alert('Congrats! Player' + player + 'has won!')
         }else{
           if (player === 1) {
@@ -28,14 +25,11 @@ $(document).ready(function() {
           }
           $('.playerTurn').html('Player' + player + 's turn');
         }
-
       } else {
         alert('Please choose another box');
       }
     }
   })
-
-
 function checkIfPlayerWon (symbol){
   if ($('#cell0').hasClass(symbol) && $('#cell1').hasClass(symbol) & $('#cell2').hasClass(symbol)){
     return true;
@@ -65,8 +59,6 @@ function checkIfPlayerWon (symbol){
                   return true;
                 }
 }
-
-
   $("#clear").click(function() {
     $('div').removeClass('O');
     $('div').removeClass('X');
