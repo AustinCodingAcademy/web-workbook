@@ -2,11 +2,10 @@ Body {
   font-family: 'PT Serif', serif;
   background-color: white;
   width: 100;
-  color: white;
+  color: black;
   margin: 0;
 /*  background-color: white*/
 }
-
 
 h1 {
   color: black;
@@ -33,14 +32,35 @@ p {
 
 ul {
   font-size: 14px;
+  list-style-type: none;
+}
+
+button {
+  background-color: #4D4D4D; /* Gray*/
+  border: none;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  width: 100px;
+  padding: 2px 9px;
+  text-decoration: none;
+  display: inline-block;
 }
 
 
 
-@media screen and (min-width: 768px)
-      and (max-width: 991px)a
-      and (max-width: 767px) {
 
+
+/* tablet */
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+  .col-sm-4 { display: none !important; }
+
+      .mobile-only {
+        visibility: hidden;
+      }}
+
+@media screen and (min-width: 480px)      {
       .top {
         background-color: #33A8DD;}
 
@@ -54,5 +74,12 @@ ul {
         column-count: 1;
         column-rule: none;
         width: 150;
+      }
+
+      .mobile-only {
+        background-color: grey;
+        color: white;
+        column-count: 2;
+        column-rule: none;
       }
 }
