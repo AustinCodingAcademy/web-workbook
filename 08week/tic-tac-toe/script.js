@@ -77,6 +77,7 @@ reset();
 }
 }
 
+//Reset the game//
 
 function reset(){
   document.getElementById("btn1").value = "";
