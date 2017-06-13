@@ -1,34 +1,48 @@
-* { 
+* {
   font-family: "Palatino Linotype", serif;
-  background-color: grey;
-  text-shadow: 1px;
-  text-decoration-color: black;
+  background-color: lavender;
+  color:gray;
 }
 
 h1 {
   font-size: 24px;
   font-weight: bold;
+  text-shadow: 1px 1px black;
+
 }
 
  h2 {
      font-size: 20px;
      font-weight: bold;
+   text-shadow: 1px 1px black;
  }
 
  h3 {
    font-size: 16px;
+   font-variant: small-caps;
  }
 
  h4 {
    font-size: 14px;
  }
 
+ul {
+  font-size: 12px;
+}
+
  p {
    font-size:  12px;
    text-decoration: none;
  }
 
+/* order matters here !  Hover must come after link
+ and visited.  Active must come after hover.  */
+a:link{ color: darkblue;   font-weight: normal;}
+a:visited{ color: purple; font-weight: normal;}
 a:hover{ color: pink; font-weight:bold;}
 a:active{ color: blue; font-weight:normal;}
-a:visited{ color: purple: font-weight: normal;}
-a:link{ color: blue; font-weight: normal;}
+
+
+.underline {
+  text-decoration: underline;
+}
