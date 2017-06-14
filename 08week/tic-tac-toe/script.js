@@ -5,6 +5,18 @@ $(document).ready(function() {
   var start = true;
 
 
+  var toggle = function(){
+      if (!this.innerHTML) {
+        if(start){
+          $(this).text('x');
+        } else{
+          $(this).text('o');
+        }
+        start = !start;
+      } else{
+        alert('You already checked this box, choose another!!!')
+      }
+  }
   $('.square').click(function(event){
     var squareSelected = $(this);
     //Adding a class to $this each time user clicks
@@ -19,25 +31,13 @@ $(document).ready(function() {
       squareSelected.addClass('o');
       if(checkIfPlayerWon('o')){
         alert('Player Two has won the game!');
-        //Reset so that Game starts over with Player one as X
 
-        }
+
       }
+    }
+
+
   });
-
-
-  var toggle = function(){
-      if (!this.innerHTML) {
-        if(start){
-          $(this).text('x');
-        } else{
-          $(this).text('o');
-        }
-        start = !start;
-      } else{
-        alert('You already checked this box, choose another!!!')
-      }
-  }
 
   $('.square').click(toggle);
 
@@ -45,14 +45,16 @@ $(document).ready(function() {
     //Remove Classes to start game over on click!
     $('.square').empty().removeClass('o');
     $('.square').empty().removeClass('x');
-  //What is the difference between clear(), remove() and empty().
+
+    if(!start){
+      return start;
+    }
+
+
+  //What is the difference between clear(), remove() and empty(). Found it in next weeks prep
 
 });
-  $('#clear').click(function(){
 
-    start = !start;
-
-  });
   //Check for Winner
   function checkIfPlayerWon(symbol) {
     if($('.sq0').hasClass(symbol) && $('.sq1').hasClass(symbol) && $('.sq2').hasClass(symbol)) {

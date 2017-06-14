@@ -16,36 +16,63 @@ body{
 /*BODY*/
 /*    */
 .header{
-  width: 11%;
-  margin: 10% auto 0 auto;
+  display: flex;
+  justify-content: center;
+  margin: 10% 0 0 0;
   font-family: 'Patrick Hand SC';
 }
 #board{
+
   margin: 0 auto;
   height: 304px;
   width: 304px;
   opacity: .7;
-  background-color: #5c969e;
 }
 div[data-cell] {
+  font-family: 'Patrick Hand SC';
   width: 100px;
   height: 100px;
   background-color: #f2f2f2;
   float: left;
-  border: .25px solid #808080;
-  font-size: 100px;
+  border: 1px solid #808080;
+  font-size: 50px;
   text-align: center;
 }
 .row {
   clear: both;
+  width: 300px;
+
 }
 
 div.gameOver{
-  margin: 2% auto;
-  width: 8%;
+  display: flex;
+  justify-content: center;
 }
 
 #clear{
   margin: 2% auto 0 auto;
-  width: 100px;
 }
+
+/*  */
+/*RESPONSIVE */
+/*  */
+/*@media screen (max-width: 580px;) {
+  div[data-cell] {
+    width: 50px;
+    height: 50px;
+    background-color: #f2f2f2;
+    float: left;
+    border: .25px solid #808080;
+    font-size: 100px;
+    text-align: center;
+  }
+  #board{
+    margin: 0 auto;
+    height: 152px;
+    width: 152px;
+    opacity: .7;
+    background-color: #5c969e;
+  }
+
+
+}*/
