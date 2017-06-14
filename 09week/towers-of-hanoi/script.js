@@ -12,6 +12,11 @@ function dropIt(event, object, ui){
     $(ui.draggable).draggable('option','revert',true);
   }
 }
+function winning(event, object, ui) {
+  if (parseInt('.dropArea') == 250){
+    alert("Congrats! You Won!");
+        }
+      }
   $('.draggable').draggable({
     revert: "invalid"
   });
@@ -20,11 +25,7 @@ function dropIt(event, object, ui){
       dropIt(event, this, ui);
 
 
-function winning(event, object, ui) {
-  if (parseInt(currentValue) == 250){
-    alert("Congrats! You Won!");
-        }
-      }
+
     }
   });
 });
