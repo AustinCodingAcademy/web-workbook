@@ -12,8 +12,8 @@ function dropIt(event, object, ui){
     $(ui.draggable).draggable('option','revert',true);
   }
 }
-function winning(event, object, ui) {
-  if (parseInt('.dropArea') == 250){
+function winning() {
+  if ($('[data-stack="3"]').children().length == 3){
     alert("Congrats! You Won!");
         }
       }
