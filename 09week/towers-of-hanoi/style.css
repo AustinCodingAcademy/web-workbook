@@ -1,38 +1,64 @@
-[data-stack] {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 101px;
-  background-color: aliceblue;
-  margin: 25px;
+body {
+  margin: 0 auto;
+  background: #a90329;
+  background: -moz-linear-gradient(left, #a90329 0%, #6d0019 100%);
+  background: -webkit-linear-gradient(left, #a90329 0%,#6d0019 100%);
+  background: linear-gradient(to right, #a90329 0%,#6d0019 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 );
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+/*placeholder*/
+}
+
+[data-tower] {
+    width: 25%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 175px;
+    background-color: #411107 ;
+    margin: 35px;
 }
 
 [data-block] {
-  width: 25px;
-  float: left;
+    width: 25px;
+    float: left;
+    box-shadow: 10px 10px 5px black;
 }
 
-[data-block="25"] {
-  height: 25px;
-  background-color: blue;
+[data-block="1"] {
+    height: 25px;
+    background-color: blue;
 }
 
-[data-block="50"] {
-  height: 50px;
-  background-color: green;
+[data-block="2"] {
+    height: 50px;
+    background-color: green;
 }
 
-[data-block="75"] {
-  height: 75px;
-  background-color: red;
+[data-block="3"] {
+    height: 75px;
+    background-color: red;
 }
 
-[data-block="100"] {
-  height: 100px;
-  background-color: yellow;
+[data-block="4"] {
+    height: 100px;
+    background-color: yellow;
 }
 
-#announce-game-won {
-  font-size: 50px;
-  text-align: center;
+#winner {
+    font-family: 'Roboto', sans-serif;
+    font-size: 75px;
+    height: 200px;
+    width: 400px;
+    position: absolute; 
+    left: 40%;
+    bottom: 32%;
+    color:white;
+    text-align: center;
+
 }
+
