@@ -15,3 +15,14 @@ $("[data-cell]").click(function(){
 $("#clear").click(function(){
   $("[data-cell]").html("");
 });
+
+//from class
+
+//$(document).ready(function(){
+//$('#test').click(function(){
+//  this.innerHtml = 'X';
+//  setTimeout(function(){
+//    alert('Ther ia an X here')
+//  }, 300);
+//});
+//});
