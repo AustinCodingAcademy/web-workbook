@@ -24,6 +24,7 @@ $(document).ready(function() {
 function game() {
   $('div[data-stack]').click(function() {
     if (clickTurn === 1) {
+      $('#announce-game-won').html('');
       var currentStack = $(this);
       if (currentStack.children().length > 0) {
         var currentBlock = currentStack.children().last();
@@ -37,14 +38,14 @@ function game() {
       var holdingBlockValue = parseInt(holdingBlock.attr('data-block'));
       var compareBlockValue = parseInt(compareBlock.attr('data-block'));
 
-        if (holdingBlockValue < compareBlockValue) {
+        if (holdingBlockValue <= compareBlockValue) {
           moveBlock(holdingBlock, nextStack);
           checkWin();
 
         } else if (!compareBlockValue) {
           moveBlock(holdingBlock, nextStack);
         } else {
-          alert('illegal move');
+          $('#announce-game-won').html('illegal move!');
         }
     }
   });
@@ -76,5 +77,6 @@ function resetGame (){
     var clickTurn = 1;
     var currentStack = null;
     var nextStack = null;
+    $('#announce-game-won').html('');
   });
 }
