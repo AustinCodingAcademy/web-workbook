@@ -4,20 +4,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Towers of Hanoi</title>
   <link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
-  <div data-stack="1">
-    <div data-block="100"></div>
-    <div data-block="75"></div>
-    <div data-block="50"></div>
-    <div data-block="25"></div>
+  <div data-stack="1" class="dropArea">
+    <div data-block="100" class="draggable"></div>
+    <div data-block="75" class="draggable"></div>
+    <div data-block="50" class="draggable"></div>
+    <div data-block="25" class="draggable"></div>
   </div>
-  <div data-stack="2">
+  <div data-stack="2" class="dropArea">
   </div>
-  <div data-stack="3">
+  <div data-stack="3" class="dropArea">
   </div>
   <div id="announce-game-won"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
   <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
