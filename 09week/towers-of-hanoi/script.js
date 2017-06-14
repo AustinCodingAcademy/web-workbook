@@ -24,7 +24,6 @@ $(document).ready(function() {
 function game() {
   $('div[data-stack]').click(function() {
     if (clickTurn === 1) {
-      $('#announce-game-won').html('');
       var currentStack = $(this);
       if (currentStack.children().length > 0) {
         var currentBlock = currentStack.children().last();
@@ -45,7 +44,7 @@ function game() {
         } else if (!compareBlockValue) {
           moveBlock(holdingBlock, nextStack);
         } else {
-          $('#announce-game-won').html('illegal move!');
+          alert('Illegal Move. Please try again.')
         }
     }
   });
