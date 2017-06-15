@@ -1,0 +1,57 @@
+<html>
+
+<head>
+  <title>Contact E. Martinez</title>
+  <link rel="stylesheet" type="text/css" href="Contact.css">
+  <link rel="stylesheet" type="text/css" href="../css/Contact.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora|PT+Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Shadows+Into+Light+Two" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <h3>How do you like my Awesome Sauce?</h3>
+  <div>
+    <form>
+      <label for="text" name="firstName">First Name: </label>
+      <input type="text" name="firstName" placeholder="Your name here" />
+
+      <label for="text" name="lastName">Last Name: </label>
+      <input type="text" name="lastName" />
+
+      <label for="email">Email: </label>
+      <input type="email" name="email" required/>
+
+      <label for="password" name="password"></label>
+      <input type="text" name="password" pattern="[a-zA-Z]{0,10}" required title="Your last name needs to be more than 10 characters in length." />
+
+      <label for="lastName">Message:</label>
+      <textarea name="message" spellcheck="true"></textarea>
+
+
+      <div>
+        <form action="/action_page.php">
+          First name:<br>
+          <input type="text" name="firstName"><br> Last name:<br>
+          <input type="text" name="lastName" /><br><br>
+
+        </form>
+      </div>
+      <div>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+      </div>
+      <div>Rate That Sauce<br><br /> mild
+        <input type="range" name="points" min="0" max="10">muy caliente
+
+      </div>
+
+
+      <input type="checkbox" name="awesome1" value="awesome1" checked> Awesome Sauce!<br>
+      <input type="checkbox" name="awesome2" value="awesome2"> Help me out...
+
+
+      <input type="submit" value="Submit">
+      <input type="reset">
+  </div>
