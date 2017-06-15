@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> Form </title>
+    <!-- Bootstrap -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to Stylesheet -->
+        <link href="css/style.css" type="text/css" rel="stylesheet">
+  </head>
+  <!-- Main Body-->
+  <body>
+    <h1> Customer Satisfaction Survey </h1>
+    <form action="inputTypes.php" method="get" spellcheck="true">
+      <label>Email &nbsp &nbsp<input type="email" autocomplete="off" required spellcheck="true"></label>
+      <br>
+      <br>
+        <label>Password &nbsp &nbsp<input type="password" autocomplete="off" spellcheck="true"></label>
+        <br>
+        <br>
+        <label> How was our service? 1 Notch=Terrible! / 5 Notches=The Best! <br> <input type="range" min="1" max="5" list="tickmarks"/>
+          <datalist id="tickmarks">
+            <option value="1" label="1">
+              <option value="2">
+                <option value="3" label="3">
+                  <option value="4">
+                    <option value="5" label="5">
+                    </datalist>
+                  </label>
+                  <br>
+                  <br>
+          <label>Date of Service &nbsp &nbsp<input type="date" autocomplete="off"></label>
+          <br>
+          <br>
+          <label>Your Website Domain &nbsp &nbsp<input type="url" autocomplete="off" spellcheck="true"></label>
+          <br>
+          <br>
+          <label>Which of these describes our service? Check all that apply <br><input type="checkbox" autocomplete="off" name="speed" value="Speed"> It was fast<br>
+ <input type="checkbox" name="accuracy" value="accurate" > It was accurate</label>
+ <br>
+ <input type="checkbox" name="time" value="ontime" > It was on time</label>
+          <br>
+          <br>
+          <label>Would you refer us to a friend? <br><input type="radio" name="response" value="Yes" checked> Yes<br>
+            <input type="radio" name="response" value="No"> No</label>
+            <br>
+            <br>
+            <button type="submit" value="Submit">Submit</button>
+            <button type="reset" value="Reset">Reset</button>
+
+</form>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
