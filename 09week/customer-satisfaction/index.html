@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Customer Satisfaction</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1>Tell us what you think!</h1>
+      <h3>Only your name and e-mail are actually required.</h3>
+    </header>
+    <form action="/action_page.php">
+        Your name?: <br/>
+        <input required type="text" name="name" spellcheck="true"/> <br />
+        <br />
+
+        Your e-mail?: <br/>
+        <input required type="email" name="email" placeholder="example@etc.com"/> <br />
+        <br />
+
+        What's your business URL?: <br/>
+        <input type="url" name="business"/> <br />
+        <br />
+
+        Give us your password!<br />
+        <input type="password" name="psw"/> <br />
+        <br />
+
+        Are you...<br />
+        <input type="radio" name="gender" value="male" checked/> Male <br/>
+        <input type="radio" name="gender" value="male" />Female <br/>
+        <input type="radio" name="gender" value="male" /> Other <br />
+        <br />
+
+        How did you hear about the page? (check all that apply)<br/>
+        <input type="checkbox" name="hear1" value="google"/> Google <br/>
+        <input type="checkbox" name="hear2" value="facebook"/> Facebook <br/>
+        <input type="checkbox" name="hear3" value="linkedin"/> Linkedin <br/>
+        <input type="checkbox" name="hear4" value="tvradio"/> TV / Radio <br/>
+        <input type="checkbox" name="hear5" value="friend"/> Friend <br/>
+        <input type="checkbox" name="hear6" value="other"/> Other
+        <input id="otherspace" type="text" name="hear6info"/> <br />
+        <br />
+
+        Give us a range on what you thought of the design...<br />
+        Junk ...or.. This is pretty good <br />
+        <input type="range" name="recomend" min="0" max="10" /><br />
+
+        <input type="submit" value="Submit" />
+        <input type="reset">
+    </form>
+  </div>
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
