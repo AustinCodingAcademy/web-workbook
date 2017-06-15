@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Customer Satisfaction Survey</h1>
+  <p>
+    Please take a moment to let us know how we're doing.
+  </p>
+  <div>
+    <form>
+      <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" placeholder="first" required/>
+      <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" placeholder="last"
+        pattern="[a-zA-Z]{1,10}"required title="more than 10 characters"/>
+
+      <label for="lastName">Email:</label>
+        <input type="email" name="email" placeholder="email address" required/>
+
+      <label for="pswrd">Password:</label>
+        <input type="password" name="pswrd" placeholder="password" />
+
+      <label for="url">Website:</label>
+        <input type="url" name="url" placeholder="website address" />
+
+      <div class="selectors">
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="male" checked /> Male
+        <input type="radio" name="gender" value="female" /> Female
+        <input type="radio" name="gender" value="other" /> Other
+      </div>
+
+      <div class="selectors">
+        <label for="referral">How did you hear about us?</label>
+        <input type="checkbox" name="referral" /> Facebook
+        <input type="checkbox" name="referral" /> Advertisement
+        <input type="checkbox" name="referral" /> Friend
+      </div>
+
+      <div class="selectors">
+        <label for="satisfaction">How happy are you with our service?</label>
+        0<input type="range" name="satisfaction" min="0" max="10" />10
+      </div>
+
+      <label for="message">Message:</label>
+        <textarea name="message" spellcheck="true"></textarea>
+
+      <div class="selectors">
+        <input type="submit" />
+        <input type="reset" />
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>

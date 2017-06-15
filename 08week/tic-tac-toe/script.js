@@ -12,7 +12,10 @@ $(document).ready(function() {
       }
       start = !start;
     }else {
-      alert("That space is already played!");
+      setTimeout(function(){
+        alert("That space is already played!")
+      }, 1000);
+      //add time out to prevent alert from appearing before mark in box
     }
     //winner();
   };
