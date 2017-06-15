@@ -35,6 +35,7 @@ $.each(combination, function(index, box) {
 	Allboxescheck = false;
 }
 })
+
 if (Allboxescheck) {
 	alert(player + ' is the winner!');
 
