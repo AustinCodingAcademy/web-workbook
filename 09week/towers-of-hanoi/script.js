@@ -4,15 +4,15 @@ $(document).ready(function() {
 
   // code plan follows:
 
-  // the object of the game is to move the stack of rings to another data-stack
+
+  // we want the the top ring in the stack to be the only moveable one
   var block = $('[data-block]');
   var stack = $('[data-stack]');
   var moveable = $('[data-block]:first-child');
   moveable = moveable.addClass('moveable');
-  // drag each ring one at a time (make ring draggable)
-  // function calls to make the rings draggable and stacks droppable
 
-  function makeDraggable() {
+// this code makes objects draggable
+function makeDraggable() {
 
     moveable.draggable({
       revert: 'invalid',
@@ -21,6 +21,8 @@ $(document).ready(function() {
   });
 }
 
+// make div "stack" with class tower accept draggable elements
+
   function makeDroppable(){
 
 
@@ -28,11 +30,11 @@ $(document).ready(function() {
       accept: $(".moveable"),
       drop:function(event, ui) {
         var tower = $(this);
-
+// the code below references a function that assesses the values of the draggable elements
         var canDrop = checkForDroppability(ui.draggable[0], tower);
-
         if (canDrop === true) {
-
+          //stop.
+// if the values are correct (see function comments) allow the ring to be dropped in the stack
         ui.draggable.detach().prependTo(tower);
         resetMoveable ();
 
@@ -48,6 +50,7 @@ makeDroppable();
 // check for droppability, check to see if size is smaller than first in stack
 function checkForDroppability(disk, tower) {
   var towerDisks = $(tower).children();
+// elegibility for drop: if the data-block value is less than that of the value of the disk in the top of the stack, allow the draggable object to be dropped
 	if (towerDisks.length === 0 || parseInt($(disk).attr('data-block')) <= parseInt(towerDisks.last().attr('data-block'))) { // dropping disk is smaller than top disk
 		return true;
 	} else
