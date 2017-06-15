@@ -1,14 +1,15 @@
 body {
+  background: url(Hanoi_BKG.jpg);
+  min-height: 100%;
+  background-repeat: no-repeat;
   margin: 0 auto;
-  background: #a90329;
-  background: -moz-linear-gradient(left, #a90329 0%, #6d0019 100%);
-  background: -webkit-linear-gradient(left, #a90329 0%,#6d0019 100%);
-  background: linear-gradient(to right, #a90329 0%,#6d0019 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 );
+  width: 100%;
+
 }
 
 .container {
     position: relative;
+    width: 100%;
     margin: 0 auto;
 /*placeholder*/
 }
@@ -18,47 +19,48 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
-    height: 175px;
-    background-color: #411107 ;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.3); ;
     margin: 35px;
+    margin-left: 35%;
+    border: 2px solid white;
 }
 
 [data-block] {
-    width: 25px;
+    width: 20px;
     float: left;
     box-shadow: 10px 10px 5px black;
 }
 
 [data-block="1"] {
-    height: 25px;
+    height: 20px;
     background-color: blue;
 }
 
 [data-block="2"] {
-    height: 50px;
+    height: 40px;
     background-color: green;
 }
 
 [data-block="3"] {
-    height: 75px;
+    height: 60px;
     background-color: red;
 }
 
 [data-block="4"] {
-    height: 100px;
+    height: 80px;
     background-color: yellow;
 }
 
-#winner {
+.winner {
     font-family: 'Roboto', sans-serif;
     font-size: 75px;
-    height: 200px;
+    height: 100px;
     width: 400px;
     position: absolute; 
-    left: 40%;
-    bottom: 32%;
+    left: 34.6%;
+    top: 110%;
     color:white;
     text-align: center;
 
 }
-
