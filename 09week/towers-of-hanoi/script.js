@@ -8,6 +8,8 @@ $(document).ready(function() {
   drop: function(event, ui) {
    $(ui.draggable).appendTo(this).attr('style',
    'position: relative');
+
+   $(ui.draggable).draggable('option','revert',true);
  }
 
 });

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Taviraj" rel="stylesheet">
+    <title>Customer Satisfaction</title>
+  </head>
+
+  <body>
+    <div>
+<!--Main Customer Form-->
+      <h2>Customer Satisfaction</h2>
+      <form>
+        <input type="text" name="firstName" placeholder="First name"/>
+        <br  />
+        <input type="text" name="lastName" placeholder="Last name"/>
+        <br />
+      	<label for="email">Email:</label>
+      	<input type="email" name="email" required/>
+
+        <label for="password">Password:</label>
+      	<input type="password" name="password"/>
+
+        <label for="website">Website:</label>
+      	<input type="url" name="website"/>
+        <br />
+
+<!--Gender Radio button-->
+         <label for="contact">Would you like to be added to our mailing list?</label>
+         <input type="radio" name="contact" />
+         <label for="yes">Yes</label>
+         <input type="radio" name="contact" />
+         <label for="no">No</label>
+         <br />
+
+<!--How Did you Find Us?-->
+      <div id="checkbox">
+        <label for="checkbox">How did you find us?</label>
+        <br />
+        <label for="facebook"> Facebook </label>
+        <input type="checkbox" name="Facebook"/>
+        <label for="indeed"> Indeed </label>
+        <input type="checkbox" name="Indeed"/>
+        <label for="google"> Google </label>
+        <input type="checkbox" name="google"/>
+      </div>
+        <br />
+        <br />
+      </br?>
+<!--Satisfaction range -->
+      <label for="satisfaction"> On a scale of 1 - 5, how would you rate your <br /> overall satisfaction?</label>
+      <input type="range" min="1" max="5"/>
+      <br />
+
+<!--Comments-->
+      	<label for="comments">Comments:</label>
+        <textarea name="comments"spellcheck="true"></textarea>
+        <br />
+        <br />
+
+<!--Submit & Reset Buttons-->
+        <input type="submit">
+        <br />
+        <input type="reset" name="reset form" />
+      </form>
+
+    </div>
+  </body>
+</html>
