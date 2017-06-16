@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="heading">Survey</h1>
+    </header>
+    <form class="frm">
+      <div class="fullname">
+        <h3>name</h3>
+        <input type="text" name="name" spellcheck="true">
+      </div>
+      <div class="webpage">
+        <h3>favorite website</h3>
+        <input type="url" name="website">
+      </div>
+      <div class="actinfo">
+        <h3>e-mail</h3>
+        <input type="email" name="email">
+        <h3>password</h3>
+        <input type="password" name="psw">
+      </div>
+      <div class="gdr">
+        <h3>gender</h3>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+      </div>
+      <div class="pets">
+        <h3>number of pets</h3>
+        <input type="range" name="pets" min="0" max="4">
+        <output for="pets" onforminput="value = pets.valueAsNumber;"></output>
+      </div>
+      <div class="game">
+        <h3>game platforms</h3>
+        <input type="checkbox" name="plat1" value="Ps4">Playstation 4<br>
+        <input type="checkbox" name="plat2" value="xb">Xbox one<br>
+        <input type="checkbox" name="plat3" value="N">Nintendo Switch<br>
+        <input type="checkbox" name="plat4" value="N">PC<br>
+      </div>
+      <div class="buttons">
+        <input class="but" type="submit" value="Submit">
+        <input class="but" type="reset">
+      </div>
+
+
+    </form>
+
+
+  </body>
+</html>
