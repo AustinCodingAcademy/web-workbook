@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Customer Satisfaction</title>
+  </head>
+  <body>
+    <form id="coolForm" method="get">
+  <fieldset>
+    <legend> How was your experience?</legend>
+
+    Make up a fun password<br>
+    <input type="password" name="Password"><br>
+    <!-- making this required -->
+    What's Your email? <br>
+    <input type="email" name="personalEmail" value="you@yoursite.com" required>
+    <!--this is going to be a section with 4 or so checkboxes and its own labels  -->
+    <p>What did you enjoy about your experience?</p>
+
+    <input type="checkbox" name="LearnToBuild" value=""> Learning to build stuff <br>
+    <input type="checkbox" name="progress" value=""> Seeing all the progress? <br>
+    <input type="checkbox" name="usingIt" value="">Using the studio after? <br>
+    <p>Who is the most boring of all the Spurs listed</p>
+    <input type="radio" name="player" value="manu"> Manu Ginobili<br>
+    <input type="radio" name="player" value="tony"> Tony Parker <br>
+    <input type="radio" name="player" value="dave"> David Robinson <br>
+    <input type="radio" name="player" value="tim"> Tim Duncan <br>
+    <p> on a scale of one to a millon, how great is this?</p>
+    1
+    <input type="range" name="howGreat" value="" min="1" max="1000000" range= "100000">1,000,000<br>
+    <!-- Spellcheck happens here -->
+    <p>Why do you want to come back, alomst immediately? Tell me!</p>
+    <textarea name="comment" spellcheck="true">Enter text here...</textarea>
+    <br>
+    What is your personal website?<br>
+   <input type="url" name="personalSite" value="enter here"><br>
+   <input type="file" name="pic" accept="image/*"><br>
+   <input type="reset" value="Reset">
+    <input type="submit" name="submitButton" value="DO IT">
+
+  </fieldset>
+
+
+
+    </form>
+  </body>
+</html>

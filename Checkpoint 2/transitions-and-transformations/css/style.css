@@ -1,0 +1,127 @@
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+.box1 {
+  background-color: blue;
+  transition: 3s;
+}
+
+.box.box1:hover {
+  transform: translateX(500px);
+}
+
+.box1:hover {
+  transform: rotate(279deg) scale(2, 2);
+}
+
+.box2 {
+  background-color: green;
+  transition: 1s;
+}
+
+.box2:hover {
+  transform: scale(.5, .5) translateX(400px);
+}
+
+.box3 {
+  background-color: yellow;
+  transition: 1s;
+}
+
+.box3:hover {
+  transform: rotate(279deg);
+}
+
+@keyframes spin {
+  0% {width:50px; height: 50px;}
+  50% {width: 200px; height:200px;}
+  100% {width:50px; height: 50px;}
+}
+
+.box4 {
+  background-color: black;
+  position:relative;
+
+}
+
+.box4:hover {
+  position: relative;
+  -webkit-animation: spin 3s infinite;
+  animation: spin 3s infinite;
+
+}
+
+@@keyframes spinandslide {
+
+}
+.box5 {
+  background-color: red;
+  transition: 1s;
+}
+
+.box5:hover {
+  transform: rotate(279deg);
+}
+
+.box6 {
+  background-color: purple;
+}
+
+.box6:hover {}
+
+.box7 {
+  background-color: grey;
+  transition: 1s;
+}
+
+.box7:hover {
+  transform: rotate(279deg);
+}
+
+.box8 {
+  background-color: aquamarine;
+}
+
+.box8:hover {}
+
+.box9 {
+  background-color: orange;
+  transition: 1s;
+}
+
+.box9:hover {
+  transform: rotate(279deg);
+}
+
+.box10 {
+  background-color: teal;
+}
+
+box10:hover {}
+
+.box11 {
+  background-color: aqua;
+  transition: 1s;
+}
+
+.box11:hover {
+  transform: rotate(279deg);
+}
+
+.box12 {
+  background-color: seagreen;
+}
+
+.box12:hover {}
