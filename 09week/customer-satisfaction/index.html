@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <section id="Survey">
+      <form>
+        <fieldset>
+          <legend>Personal Information</legend>
+          Email: <br>
+          <input type="email" name="email" placeholder="name@email.com" required><br><br>
+          Password: <br>
+          <input type="password" name="pw" placeholder="Password" class="hide">
+          <input type="checkbox" class="show"> Show Password <br><br>
+          URL: <br>
+          <input type="URL" placeholder="URL">
+        </fieldset>
+      <br><br>
+        <fieldset>
+          <legend>Satisfaction Information</legend>
+          Did you accomplish the goal of your visit? <br><br>
+          <input type="radio" name="goal" value="Yes"> Yes <br>
+          <input type="radio" name="goal" value="Somewhat"> Somewhat <br>
+          <input type="radio" name="goal" value="No"> No <br>
+          <hr>
+          How likely are you to recommend us to your friend or collegue? <br><br>
+          <input type="range" list="tickmarks">
+            <datalist id="tickmarks">
+              <option value="0" label="0%">
+              <option value="10">
+              <option value="20">
+              <option value="30">
+              <option value="40">
+              <option value="50" label="50%">
+              <option value="60">
+              <option value="70">
+              <option value="80">
+              <option value="90">
+              <option value="100" label="100%">
+            </datalist>
+          <hr>
+          What can we do to improve your experience? <br><br>
+          <textarea rows="5" cols="50" spellcheck="true"></textarea><br>
+          <hr>
+          What do you like most about visiting our website? <br><br>
+          <textarea rows="5" cols="50" spellcheck="true"></textarea><br>
+          <hr>
+          Will you return to our website? <br><br>
+          <input type="radio" name="return" value="Yes"> Yes <br>
+          <input type="radio" name="return" value="Maybe"> Maybe <br>
+          <input type="radio" name="return" value="No"> No <br>
+<!--Add in JS- a conditional if they check "no"-->
+        </fieldset>
+      <br>
+        <input type="submit" class="button" value="Submit">
+        <input type="reset" class="button">
+    </form>
+  </section>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
+</html>
