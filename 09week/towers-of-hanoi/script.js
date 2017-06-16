@@ -1,6 +1,6 @@
 'use strict';
 
-// This variable accomplishes 2 goals: stores the blocks and determined the states
+// This variable accomplishes 2 goals: stores the blocks and determines the states
 var blockElement = undefined;
 
 // Returns last element
@@ -17,13 +17,13 @@ function getLastElement($el) {
 }
 
 function getElementSize($el) {
-    // Getting the value of a data-block (convert to integer)
-    var dataBlockValue = parseInt($el.attr('data-block'));
-    // Safety check to determine valid numbers
-    if (isNaN(dataBlockValue)) {
-      throw "Invalid number";
-    }
-    return dataBlockValue;
+  // Getting the value of a data-block (convert to integer)
+  var dataBlockValue = parseInt($el.attr('data-block'));
+  // Safety check to determine valid numbers
+  if (isNaN(dataBlockValue)) {
+    throw "Invalid number";
+  }
+  return dataBlockValue;
 }
 
 function isDataStackSizeEmpty(i) {
@@ -37,7 +37,6 @@ function checkIfWon() {
   }
 }
 
-
 function pop($el) {
   // Find the last dataBlock
   var $dataBlock = getLastElement($el);
@@ -47,8 +46,6 @@ function pop($el) {
     blockElement = $dataBlock.detach();
   }
 }
-
-
 
 function push($el) {
   //identify last element
@@ -67,10 +64,8 @@ function push($el) {
   $el.append(blockElement);
   //resetting the blockElement
   blockElement = undefined;
-
   checkIfWon();
 }
-
 
 function main() {
   // find all the stacks
@@ -89,27 +84,9 @@ function main() {
   });
 }
 
-
-
-
-
-
-
-
-
-
-
 $(document).ready(function() {
   main();
 });
-
-
-
-
-
-
-
-
 
 // 4 rings
 // 3 poles
