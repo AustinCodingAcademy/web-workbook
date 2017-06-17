@@ -1,9 +1,8 @@
 'use strict';
 
 $(document).ready(function() {
-  // Put app logic here
 
-
+//only drop smaller part
   (document).ready(function() {
     function dropIt(event, object, ui){
     var currentvalue = ui.draggable[0].attributes[0].value;
@@ -25,14 +24,10 @@ $(document).ready(function() {
       $(ui.draggable).appendTo(this).attr('style', 'position: "relative"');
       dropIt(event, this, ui);
     }
-  
   });
 
   function checkWinner() {
       if((dataCell0.text() != '') && (dataCell0.text () == dataCell1.text())
        && (dataCell1.text() == dataCell2.text())){
-
   });
-
-
   });
