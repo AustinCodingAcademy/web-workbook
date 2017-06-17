@@ -1,7 +1,4 @@
 'use strict';
-
-$(document).ready(function() {
-
 //only drop smaller part
   (document).ready(function() {
     function dropIt(event, object, ui){
@@ -13,8 +10,8 @@ $(document).ready(function() {
     else {
       $(ui.draggable).draggable('option','revert',true);
     }
-
-
+    });
+      });
   //drag & drop
     $('[data-block]').draggable({
       revert:'invalid'
@@ -24,11 +21,9 @@ $(document).ready(function() {
       $(ui.draggable).appendTo(this).attr('style', 'position: "relative"');
       dropIt(event, this, ui);
     }
-  });
     });
 
   function checkWinner() {
       if((dataCell0.text() != '') && (dataCell0.text () == dataCell1.text())
-       && (dataCell1.text() == dataCell2.text())){
-  });
+       && (dataCell1.text() == dataCell2.text()))
   });
