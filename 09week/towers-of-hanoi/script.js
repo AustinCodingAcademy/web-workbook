@@ -16,6 +16,9 @@ if (parseInt(drag) > parseInt(LastChildval)) {
   $(ui.draggable).appendTo(this).attr('style','position: "realative"');
   }
 }
+
+
+
 });
 
 });
