@@ -95,3 +95,13 @@ $(document).ready(function() {
 // clickable
 // Select
 // place
+
+//Checkpoint3 todo:
+//background image
+//keep track of scores
+//dragable
+//center and vertical items
+//make blocks circular
+//Reset button
+//Fireworks animation after winning
+//How to Play? - hover over showing directions - text 
