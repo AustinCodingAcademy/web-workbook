@@ -1,38 +1,71 @@
+body{
+  background-color: #660033;
+  font-family: 'Eczar', serif;
+}
+h1{
+  margin: 0, auto;
+  text-align: center;
+  font-weight: 400;
+  font-size:50px;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+#instructions{
+  border: 2px solid black;
+  border-radius: 7px;
+  background-color: antiquewhite;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#gameArea{
+  border: 2px solid black;
+  border-radius: 7px;
+  background-color: antiquewhite;
+}
+
 [data-stack] {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 101px;
-  background-color: darkseagreen;
+  background: linear-gradient(to left, #900C3F, #581845);
+  box-shadow: 2px 2px black;
   margin: 25px;
 }
 
 [data-block] {
-  width: 25px;
+  width: 30px;
+  box-shadow: 1px 1px black;
+  border-radius: 7px;
   float: left;
 }
 
 [data-block="25"] {
   height: 25px;
-  background-color: blue;
+  background-color: #C70039;
 }
 
 [data-block="50"] {
   height: 50px;
-  background-color: green;
+  background-color: #FF5733;
 }
 
 [data-block="75"] {
   height: 75px;
-  background-color: red;
+  background-color: #FFC300;
 }
 
 [data-block="100"] {
   height: 100px;
-  background-color: yellow;
+  background-color: #DAF7A6;
 }
 
 #announce-game-won {
-  font-size: 50px;
   text-align: center;
+  font-weight: 400;
+  color: white;
+  text-shadow: 2px 2px black;
 }
