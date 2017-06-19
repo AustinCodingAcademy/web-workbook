@@ -1,55 +1,75 @@
 'use strict';
 
 $(document).ready(function() {
-  // Put app logic in here
-  var start = true;
-  var play = function(){
-    if (!this.innerHTML) {
-      if(start) {
-        $(this).text("X");
-      } else {
-        $(this).text("O");
-      }
-      start = !start;
-    } else {
-      alert("Oops! It looks like that box is played...try another!");
-    }
-    win();
-  };
 
-  var win = function(){
-    if($('#0')[0].innerHTML === $('#1')[0].innerHTML &&
-        $('#1')[0].innerHTML === $('#2')[0].innerHTML){
-      }else if (
-          $('#0')[0].innerHTML === $('#3')[0].innerHTML &&
-           $('#3')[0].innerHTML === $('#6')[0].innerHTML){
-      }else if (
-          $('#0')[0].innerHTML === $('#4')[0].innerHTML &&
-           $('#4')[0].innerHTML === $('#8')[0].innerHTML){
-      }else if (
-          $('#3')[0].innerHTML === $('#4')[0].innerHTML &&
-           $('#4')[0].innerHTML === $('#5')[0].innerHTML){
-      }else if (
-          $('#6')[0].innerHTML === $('#7')[0].innerHTML &&
-           $('#7')[0].innerHTML === $('#8')[0].innerHTML){
-      }else if (
-          $('#1')[0].innerHTML === $('#4')[0].innerHTML &&
-           $('#4')[0].innerHTML === $('#7')[0].innerHTML){
-        }else if(
-          $('#2')[0].innerHTML === $('#5')[0].innerHTML &&
-           $('#5')[0].innerHTML === $('#8')[0].innerHTML){
-        }else if(
-          $('#6')[0].innerHTML === $('#4')[0].innerHTML &&
-           $('#4')[0].innerHTML === $('#2')[0].innerHTML){
-        };
-    alert("You WON!");
-  };
+ var play = true;
+ var announcement = $('#announce-winner')
 
-  $('[data-cell]').click(play);
+ // var for win conditions
+ var dataCell0 = $('[data-cell = "0"]');
+ var dataCell1 = $('[data-cell = "1"]');
+ var dataCell2 = $('[data-cell = "2"]');
+ var dataCell3 = $('[data-cell = "3"]');
+ var dataCell4 = $('[data-cell = "4"]');
+ var dataCell5 = $('[data-cell = "5"]');
+ var dataCell6 = $('[data-cell = "6"]');
+ var dataCell7 = $('[data-cell = "7"]');
+ var dataCell8 = $('[data-cell = "8"]');
 
+ var toggle = function() {
+     if($(this).text() == '') {
 
+     if(play) {
+       $(this).text('x');
+     }
+     else {
+       $(this).text('o');
+     }
 
-  $('#clear').click(function(){
-    $('[data-cell]').empty();
-  })
+   if(checkWinner() && play) {
+     announcement.text('Player x won!');
+   } else if (checkWinner() && !play) {
+     announcement.text('Player o won!');
+   }
+
+     play = !play;
+   }
+   }
+   $('[data-cell]').click(toggle);
+   $('#clear').click(function(){
+   $('[data-cell]').text('');
+   announcement.text('');
+ });
+
+// function to check for a win
+ function checkWinner() {
+     if((dataCell0.text() != '') && (dataCell0.text () == dataCell1.text())
+      && (dataCell1.text() == dataCell2.text())){
+       return true;
+     } else if((dataCell3.text() != '') && (dataCell3.text () == dataCell4.text())
+        && (dataCell4.text() == dataCell5.text())){
+         return true;
+       } else if((dataCell6.text() != '') && (dataCell6.text () == dataCell7.text())
+        && (dataCell7.text() == dataCell8.text())){
+         return true;
+       } else if((dataCell0.text() != '') && (dataCell0.text () == dataCell3.text())
+        && (dataCell3.text() == dataCell6.text())){
+         return true;
+       } else if((dataCell1.text() != '') && (dataCell1.text () == dataCell4.text())
+        && (dataCell4.text() == dataCell7.text())){
+         return true;
+      } else if((dataCell2.text() != '') && (dataCell2.text () == dataCell5.text())
+        && (dataCell5.text() == dataCell8.text())){
+         return true;
+       } else if((dataCell0.text() != '') && (dataCell0.text () == dataCell4.text())
+        && (dataCell4.text() == dataCell8.text())){
+         return true;
+       } else if((dataCell2.text() != '') && (dataCell2.text () == dataCell4.text())
+        && (dataCell4.text() == dataCell6.text())){
+         return true;
+       } else {
+         return false;
+       }
+     }
+
 });

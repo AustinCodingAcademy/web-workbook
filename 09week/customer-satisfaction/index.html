@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css"/>
+<title>Cust. Satisfaction</title>
+</head>
+<body>
+  <h1>Please take a moment to give us some feedback! </h1>
+  <div class="form">
+   <div class="info">
+    <form>
+      <label for="firstName">First Name</label><br/>
+        <input type="text" name="firstName" placeholder="First Name" autofocus required/><br/>
+      <label for="lastName" pattern="">Last Name</label><br/>
+        <input type="text" name="lastName" placeholder="Last Name"/><br/>
+        <label for="email">Email:</label><br/>
+          <input type="email" name="email" required/><br/>
+      <div class="gender">
+        <input type="radio" name="gender" value="male" checked> Male<br/>
+        <input type="radio" name="gender" value="female"> Female<br/>
+      </div>
+      </form>
+      <div class="password">
+        <form>
+          User name:<br/>
+        <input type="text" name="username"><br/>
+          User password:<br/>
+        <input type="password" name="psw"><br/>
+        </form>
+      </div>
+    </div>
+      <div class="feedback">
+        <p>What did we build for you?</p>
+       <form>
+         <input type="checkbox" name="item1" value="Bike"> Website<br/>
+         <input type="checkbox" name="item2" value="Car"> Mobile App<br/>
+         <input type="checkbox" name="item3" value="Bike"> Web App<br/>
+         <input type="checkbox" name="item4" value="Car"> All of the Above<br/>
+       </form>
+       <div class="range">
+      <p>
+        Please rate your overall experience
+      </p>
+      Horrible!<input class="bar" type="range" name="points" min="0" max="10" step="1">Excellent!<br/>
+      </div>
+      <p>
+        Any last words?
+      </p>
+      <label for="message">Message</label><br/>
+       <textarea name="message" spellcheck="true"></textarea><br/>
+     </div>
+  <input type="reset" value="Reset"></input>
+  <input type="submit" value="Submit"></input>
+
+     </form>
+  </div>
+
+
+</body>
+</html>
