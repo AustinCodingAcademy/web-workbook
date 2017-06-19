@@ -15,7 +15,7 @@ $(document).ready(function() {
         $(this).text('X');
         squareSelected.addClass('ex');
         if (checkIfPlayerWon('ex')) {
-          alert('you win' + player);
+          setTimeout(function(){alert('you win' + player);},1000);
         } else {
           player = 2;
         }
@@ -25,7 +25,7 @@ $(document).ready(function() {
           $(this).text('O');
           squareSelected.addClass('oh');
           if (checkIfPlayerWon('oh')) {
-            alert('you win' + player);
+            setTimeout(function(){alert('you win' + player);},1000);
           } else {
             player = 1;
           }
@@ -78,8 +78,9 @@ $(document).ready(function() {
   }
 
   $("button").click(function(){
-        location.reload(true);
+        $('.row > div').empty();
+        $('.row > div').removeClass();
       });
-
+// setTimeout(checkIfPlayerWon(symbol){ alert}, 3500);
 
 });

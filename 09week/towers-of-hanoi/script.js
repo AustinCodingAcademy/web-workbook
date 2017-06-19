@@ -41,8 +41,7 @@ $(document).ready(function() {
 // placed into an empty field
   function legalDrop($stacks, $blocks) {
     var $last_block = $stacks.children().last();
-    if (parseInt($blocks.attr("data-block")) <
-  parseInt($last_block.attr("data-block")) || $stacks.children().length === 0) {
+    if (parseInt($blocks.attr("data-block")) < parseInt($last_block.attr("data-block")) || $stacks.children().length === 0) {
     return true;
   } else {
     return false;
