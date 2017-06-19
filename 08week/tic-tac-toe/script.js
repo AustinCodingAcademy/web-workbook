@@ -14,7 +14,7 @@ $(document).ready(function() {
     }else {
       setTimeout(function(){
         alert("That space is already played!")
-      }, 1000);
+      }, 300);
       //add time out to prevent alert from appearing before mark in box
     }
     //winner();
