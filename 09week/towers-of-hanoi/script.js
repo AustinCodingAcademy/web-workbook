@@ -7,15 +7,6 @@ $(document).ready(function() {
 });
 
 
-/* * If a user clicks on a data stack that contains [a] data block[s], it will select the data block in the last position
- * If a user clicks on an empty data stack, it will insert the previously selected data block into the data stack
- * If a user clicks on a data stack that already contains [a] data block[s],
- * If the selected data block is “more than” the data block in the last position, alert the user that they cannot move it
- * Else it will insert the selected data block in the last position
- * If a user is able to move all data blocks (in the correct position) into data stack 2 or 3
- * They win! Show them a win message
- * A user should be able to reset the board */
-
  var holdingBlock = null;
  var clickTurn = 1;
  var currentStack = null;
