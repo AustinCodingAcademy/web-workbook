@@ -1,3 +1,4 @@
+/* used a picture of a multicolored tic tac cell block as background */
 html {
   margin: 0;
   background: url('https://dncache-mauganscorp.netdna-ssl.com/cropped-wallpapers/1090/1090962-1920x1080-[DesktopNexus.com].jpg?st=_zEodjBDNGBL1zI6Qyxfnw&e=1497899188g');
@@ -9,10 +10,10 @@ html {
   color: white;
   font-style: oblique;
   font-size: 85px;
+
 }
 
-
-
+/* gave a simple nav with a return home link, back to portfolio */
 nav {
   float: left;
   display: inline-block;
@@ -30,13 +31,14 @@ a:hover {
     background-color: purple;
 }
 
-
+/* centered container to make it more appealing */
 #container {
 box-sizing: border-box;
 width: 385px;
 margin: 0 auto;
 }
 
+/* styled datacells to go with theme of page */
 div[data-cell] {
   width: 125px;
   height: 125px;
@@ -58,7 +60,7 @@ div[data-cell] {
   font-size: 50px;
   color: white;
 }
-
+/* made button larger/added color and padding */
 button {
   margin-top: 25px;
   margin-bottom: 40px;
@@ -67,4 +69,34 @@ button {
   font-style: oblique;
   font-size: 22px;
   color: blue;
+}
+
+/* media port/function on different devices */
+@media (max-width: 600px) {
+  h3 {
+    font-size: 50px;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 300px;
+  margin: 0 auto;
+}
+
+nav {
+  float: left;
+  display: inline-block;
+  font-size: 25px;
+  padding-bottom: 20%;
+  list-style: none;
+
+       }
+/* resized data cells to fix small screens */
+
+div[data-cell] {
+  width: 95px;
+  height: 95px;
+  font-size: 60px;
+
+}
 }
