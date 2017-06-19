@@ -1,0 +1,172 @@
+main {
+  display: flex;
+  flex-direction: row;
+  margin: 4em;
+}
+
+body {
+max-width: 1100px;
+}
+
+
+aside {
+width: 300px;
+
+}
+.container {
+  width: 100%;
+  height: auto;
+}
+
+.techimage {
+  background-image: url("../img/bg.jpg");
+  background-position: top;
+  background-size: cover;
+  height: auto;
+}
+
+.techimage {
+  height: 200px;
+}
+
+.side {
+  margin-top: 1px;
+  margin-left: 60px;
+  width: 300px;
+}
+
+hr {
+  color: #000;
+
+}
+
+h1 {
+font-size: 27px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+article {
+
+}
+
+h2 {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+aside ul li {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.content {
+margin-top: 30px;
+}
+
+div.content {
+  margin-right: 60px;
+}
+
+p {
+  font-size: 19px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: grey;
+  margin-left: auto;
+  width: 100px;
+  height: 30px;
+  color: white;
+  border: 0;
+}
+
+.info {
+  background-color: #808080;
+  color: white;
+  display: flex;
+  flex: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 400px;
+  display: flex;
+}
+
+.info > div {
+  margin: 3em;
+ text-align: left;
+}
+
+.info li {
+  display: block;
+  border-bottom: .5px solid #fff;
+  line-height: 1.5em;
+}
+
+.info ul {
+padding-left: 0 !important;
+}
+
+.info h2 {
+  font-size: 20px;
+  width: 150px;
+}
+
+.info a {
+  color: white
+
+}
+
+img {
+  width: 12px;
+  height: 17px;
+  align-items: flex-end;
+}
+
+/*phone */
+
+@media screen and (max-width: 767px), (max-width: 991px) {
+  .side {
+    display: none;}
+  .techimage {
+    height: 130px;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 20px;
+  }
+  .info {
+    height: 240px;
+  }
+  div.usefullinks {
+  margin-left: 90px;
+  height: 200px;
+}
+.info {
+margin-top: 0; }
+
+}
+
+/*tablet*/
+
+@media screen and (min-width: 767px) {
+  .info {
+    display: none;
+  }
+.techimage {
+  height: 400px;
+  }
+  h1 {
+ font-size: 31px;
+  }
+}

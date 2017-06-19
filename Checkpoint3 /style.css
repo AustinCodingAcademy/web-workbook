@@ -1,0 +1,123 @@
+html {
+  overflow: hidden;
+}
+
+body {
+ background-color: #6d6a45;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+p {
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+.board {
+  position: relative;
+  width: 22em;
+  font-family: sans-serif;
+  font-weight: 800;
+  margin: 0 auto;
+}
+
+.row {
+  float: left;
+}
+
+.row:first-child .square {
+  border-top: 0;
+}
+
+.square {
+  color: #605B56 ;
+  border-color: #605B56;
+  font-size: 6em;
+  width: 1.2em;
+  height: 1.2em;
+  line-height: 1.2em;
+  float: left;
+  border-style: solid;
+  border-width: 1px 1px 0 0;
+  text-align: center;
+  cursor: default;
+}
+
+.square:last-child {
+  border-right: 0px;
+}
+
+.x-marker {
+  color: #eeda76;
+}
+
+.o-marker {
+  color: #167204;
+}
+
+.modal-container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  display: none;
+}
+
+.modal {
+  font-family: Raleway;
+  text-align: center;
+  background-color: hsla(10, 50%, 40%, 0.95);
+  color: white;
+  font-size: 1em;
+  height: 100%;
+  padding: 30px;
+}
+
+.end-game-modal {
+  display: none;
+}
+
+.choose-modal span{
+  line-height: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 3em;
+}
+
+.end-game-modal span {
+  color: #eeda76;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  font-size: 1.3em;
+  padding: 0.2em 0.4em;
+}
+
+
+.button-area span {
+  display: inline-block;
+  background-color: hsla(30, 10%, 20%, 0.95);
+  margin: 0.2em 0.2em 0 0.2em;
+}
+
+.button-area span:hover {
+  cursor: pointer;
+  background-color: hsla(30, 10%, 30%, 0.95);
+}
