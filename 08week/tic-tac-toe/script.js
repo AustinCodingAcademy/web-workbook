@@ -2,7 +2,7 @@
 $(document).ready(function() {
   //Tell the users' who’s turn it is
   var player = 1;
-  $('.playerTurn').html('Player' + player + 's turn');
+  $('.playerTurn').html('Player ' + player + 's Turn');
 
   $('div').click(function() {
     var cell = $(this);
@@ -16,17 +16,17 @@ $(document).ready(function() {
         cell.addClass(className);
         console.log(checkIfPlayerWon(className));
         if (checkIfPlayerWon(className )){
-          alert('Congrats! Player' + player + 'has won!')
+          alert('Congrats! Player ' + player + ' Has Won!')
         }else{
           if (player === 1) {
             player = 2
           } else {
             player = 1
           }
-          $('.playerTurn').html('Player' + player + 's turn');
+          $('.playerTurn').html('Player ' + player + 's Turn');
         }
       } else {
-        alert('Please choose another box');
+        alert('DOH! Choose an empty box or clear the board to start a new game!');
       }
     }
   })
