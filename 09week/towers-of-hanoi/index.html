@@ -6,6 +6,15 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="rules">
+    <h1>Rules</h1>
+    <ul>
+      <li>Only one disk can be moved at a time.</li>
+      <li>Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack i.e. a disk can only be moved if it is the uppermost disk on a stack.</li>
+      <li>No disk may be placed on top of a smaller disk.</li>
+      <li>To win the game, you must move all towers from the first lane to the last lane.</li>
+    </ul>
+  </div>
   <div data-stack="1">
     <div data-block="100"></div>
     <div data-block="75"></div>
@@ -17,7 +26,8 @@
   <div data-stack="3">
   </div>
   <div id="announce-game-won"></div>
+  <button class="resetGame">Reset Game</button>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="checkpoint3.js"></script>
 </body>
 </html>
