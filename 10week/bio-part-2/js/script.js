@@ -2,6 +2,7 @@
 
 $(document).ready(function() {
   draw();
+  name();
 });
 
 function draw() {
