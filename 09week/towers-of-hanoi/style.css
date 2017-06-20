@@ -1,91 +1,63 @@
+Body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
 [data-stack] {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: flex-start;
   align-items: center;
-  height: 101px;
-  background-color: aliceblue;
+  height: 301px;
+  width: 301px;
+  background: linear-gradient(white,black);
   margin: 25px;
 }
 
 [data-block] {
-  width: 25px;
-  float: left;
+  height: 35px;
+  border-bottom: solid black 1px;
 }
 
-[data-block="25"] {
-  height: 25px;
-  background-color: blue;
-}
-
-[data-block="50"] {
-  height: 50px;
-  background-color: green;
-}
-
-[data-block="75"] {
-  height: 75px;
-  background-color: red;
-}
-
-[data-block="100"] {
-  height: 100px;
-  background-color: yellow;
-}
-
-#announce-game-won {
-  font-size: 50px;
-  text-align: center;
-}
-
-/*
-body {
-  display: flex;
-  justify-content: space-around;
-
-}
-
-.peg {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  align-items: center;
-  height: 201px;
-  width: 201px;
-  background-color: aliceblue;
-  margin: 25px;
-}
-
-.ring {
-  width: 25px;
-  float: left;
-  /*border: red 1px solid;  /*For testing*/*/
-}
-
-#one {
-  width: 25px;
-  height: 25px;
-  background-color: blue;
-}
-
-#two {
+[data-block="1"] {
   width: 50px;
-  height: 25px;
-  background-color: green;
+  background: linear-gradient(skyblue, blue);
 }
 
-#three {
+[data-block="2"] {
   width: 75px;
-  height: 25px;
-  background-color: red;
+  background: linear-gradient(blue, purple);
 }
 
-#four {
+[data-block="3"] {
   width: 100px;
-  height: 25px;
-  background-color: yellow;
+  background: linear-gradient(purple, green);
+}
+
+[data-block="4"] {
+  width: 125px;
+  background: linear-gradient(green,gold);
+}
+
+[data-block="5"] {
+  width: 150px;
+  background: linear-gradient(gold,red);
+}
+
+[data-block="6"] {
+  width: 175px;
+  background: linear-gradient(red,darkred);
+}
+
+[data-block="7"] {
+  width: 200px;
+  background: linear-gradient(darkred,black);
 }
 
 #announce-game-won {
   font-size: 50px;
   text-align: center;
-}*/
+}

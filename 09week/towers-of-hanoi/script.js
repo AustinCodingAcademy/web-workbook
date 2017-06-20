@@ -1,4 +1,4 @@
-// 'use strict';
+'use strict';
 
 $(document).ready(function() {
 
@@ -23,38 +23,40 @@ $(document).ready(function() {
           firstMove = false;
         }
       }
-      if( ($("[data-stack='1']").children().length  >= 4 && !firstMove) ||
-          $("[data-stack='2']").children().length  >= 4  ||
-          $("[data-stack='3']").children().length  >= 4
+      if(
+          $("[data-stack='2']").children().length  >= 7  ||
+          $("[data-stack='3']").children().length  >= 7
         )
       {
         alert("You Win");
       }
     }
   )
-  // var rings=[
-  // var pegA = [4,3,2,1],
-  // var pegB = [],
-  // var pegC = []
-  // ];
-  //
-  // var oldPosition = null, newPosition = null, flag = false;
-  //
-  // function move(peg) {
-  //   if (oldPosition === null) {
-  //           oldPosition = peg;
-  //   }
-  //   else {
-  //     newPosition = peg;
-  //     if (newPosition !== oldPosition){
-  //       var oldRing = rings[oldPosition].length;
-  //       if(rings[oldPosition[]])
-  //     }
-  //     alert("Invalid Move");
-  //     }
-  //   }
-  // }
-
-
-
 });
+
+
+
+// Below is code I was experimenting with.
+
+// var rings=[
+// var pegA = [4,3,2,1],
+// var pegB = [],
+// var pegC = []
+// ];
+//
+// var oldPosition = null, newPosition = null, flag = false;
+//
+// function move(peg) {
+//   if (oldPosition === null) {
+//           oldPosition = peg;
+//   }
+//   else {
+//     newPosition = peg;
+//     if (newPosition !== oldPosition){
+//       var oldRing = rings[oldPosition].length;
+//       if(rings[oldPosition[]])
+//     }
+//     alert("Invalid Move");
+//     }
+//   }
+// }
