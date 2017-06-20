@@ -21,5 +21,15 @@ function draw() {
     ctx.strokeStyle='white';
     ctx.lineWidth = 12;
     ctx.stroke();
+    ctx.closePath();
   }
+}
+
+function name() {
+  var canvas  = document.getElementById('canvas2');
+var context = canvas.getContext('2d');
+
+context.font = 'normal 36px Verdana';
+context.fillStyle = '#fff';
+context.fillText('Lillian', 20, 100);
 }
