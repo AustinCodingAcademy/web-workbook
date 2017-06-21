@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="./script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Shadows+Into+Light" rel="stylesheet">
+  </head>
+  <body>
+    <h1>
+      <p>Customer Satisfaction Survey</p>
+    </h1>
+    <div id="stuff">
+      <!--- Form start --->
+      <form action="/action_page.php">
+      Email:<input type="text" id="email" spellcheck="true"></input>
+      Password:<input type="password" id="password" spellcheck="true"></input>
+      <div class="radials">
+        Customer<input type="radio" name="orstatement" id="customer"></input>
+        Employer<input type="radio" name="orstatement" id="employer"></input>
+      </div>
+      How happy are you with my services (for customers)?<input type="range" id="happyscale"></input><br>
+      Additional Comments: <input type="text" id="comments" spellcheck="true"></input>
+      <p id="checkbox">I understand the terms and services.</p><input type="checkbox" id="terms"></input>
+      <input type="submit" id="submit"></input><br>
+      <input type="reset" id="reset"></input>
+      </form>
+    </div>
+  </body>
+</html>

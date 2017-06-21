@@ -1,0 +1,278 @@
+/*Coding for the background*/
+
+.cb-slideshow,
+.cb-slideshow:after {
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+.cb-slideshow li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+	-webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation 36s linear infinite 0s;
+    -moz-animation: imageAnimation 36s linear infinite 0s;
+    -o-animation: imageAnimation 36s linear infinite 0s;
+    -ms-animation: imageAnimation 36s linear infinite 0s;
+    animation: imageAnimation 36s linear infinite 0s;
+}
+.cb-slideshow li div {
+    z-index: 1000;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    -webkit-animation: titleAnimation 36s linear infinite 0s;
+    -moz-animation: titleAnimation 36s linear infinite 0s;
+    -o-animation: titleAnimation 36s linear infinite 0s;
+    -ms-animation: titleAnimation 36s linear infinite 0s;
+    animation: titleAnimation 36s linear infinite 0s;
+}
+
+.cb-slideshow li:nth-child(1) span {
+    background-image: url(../img/sadbbydoll.jpg)
+}
+.cb-slideshow li:nth-child(2) span {
+    background-image: url(../img/butterfly.jpg);
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s;
+}
+.cb-slideshow li:nth-child(3) span {
+    background-image: url(../img/harness.jpg);
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s;
+}
+.cb-slideshow li:nth-child(4) span {
+    background-image: url(../img/garters.jpg);
+    -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    animation-delay: 18s;
+}
+.cb-slideshow li:nth-child(5) span {
+    background-image: url(../img/clown.jpg);
+    -webkit-animation-delay: 24s;
+    -moz-animation-delay: 24s;
+    -o-animation-delay: 24s;
+    -ms-animation-delay: 24s;
+    animation-delay: 24s;
+}
+.cb-slideshow li:nth-child(6) span {
+    background-image: url(../img/gummo.jpg);
+    -webkit-animation-delay: 30s;
+    -moz-animation-delay: 30s;
+    -o-animation-delay: 30s;
+    -ms-animation-delay: 30s;
+    animation-delay: 30s;
+}
+.cb-slideshow li:nth-child(2) div {
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s;
+}
+.cb-slideshow li:nth-child(3) div {
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s;
+}
+.cb-slideshow li:nth-child(4) div {
+    -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    animation-delay: 18s;
+}
+.cb-slideshow li:nth-child(5) div {
+    -webkit-animation-delay: 24s;
+    -moz-animation-delay: 24s;
+    -o-animation-delay: 24s;
+    -ms-animation-delay: 24s;
+    animation-delay: 24s;
+}
+.cb-slideshow li:nth-child(6) div {
+    -webkit-animation-delay: 30s;
+    -moz-animation-delay: 30s;
+    -o-animation-delay: 30s;
+    -ms-animation-delay: 30s;
+    animation-delay: 30s;
+}
+
+/*Start coding for the elements on top of background*/
+
+.title {
+    left: 1%;
+    font: bold 200% Trebuchet Ms;
+    letter-spacing: 1px;
+    padding: 4px 6px 4px 22px;
+    text-align: right;
+    position: fixed;
+    background-color: #ffffff;
+    color: #abeed1;
+    border: 1px solid #abeed1;
+    box-shadow: 7px 7px 0px 0px #abeed1;
+}
+
+.navbox {
+    position: fixed;
+    left: 1%;
+    top: 75px;
+    width: 160px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #e2bcff;
+    box-shadow: 7px 7px 0px 0px #e2bcff
+}
+
+img {
+    max-width: 100px;
+    float: left;
+    margin-bottom: 6px;
+    border-radius: 4px;
+}
+
+/*The class not the actual links*/
+
+.links {
+    float: right;
+    width: 60px;
+    margin: -4px -4px 0px 0px;
+}
+
+a {
+   text-align: center;
+   margin: 4px;
+   display: block;
+   padding: 4px 0px;
+   font: 80% Trebuchet Ms;
+   letter-spacing: 1px;
+   border: 2px solid #ffd8e6;
+   color: #fe89b3;
+   background-color: #ffd8e6;
+   border-radius: 4px;
+}
+
+.about {
+    width: 160px;
+    font: 90% Trebuchet Ms;
+    padding: 10px 0px;
+}
+
+/*Messaging form*/
+
+.messagebox {
+    position: fixed;
+    right: 1%;
+    top: 350px;
+    width: 250px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #e2bcff;
+    box-shadow: 7px 7px 0px 0px #e2bcff
+}
+
+h2 {
+  color: #fe89b3;
+  text-align: center;
+  font: 100% Trebuchet Ms;
+}
+
+p {
+  font: 80% Trebuchet Ms;
+}
+
+input.name {
+  width: 100%;
+}
+
+input.message {
+  width: 100%;
+  height: 5em;
+  margin-bottom: 5px
+}
+
+input.submit {
+  text-align: center;
+  margin-top: 4px;
+  display: block;
+  font: 100% Trebuchet Ms;
+  border: 2px solid #ffd8e6;
+  color: #fe89b3;
+  background-color: #ffd8e6;
+  border-radius: 4px;
+}
+
+/* Animation for the slideshow images */
+
+@-webkit-keyframes imageAnimation {
+    0% { opacity: 0;
+    -webkit-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -webkit-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-moz-keyframes imageAnimation {
+    0% { opacity: 0;
+    -moz-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -moz-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-o-keyframes imageAnimation {
+    0% { opacity: 0;
+    -o-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -o-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@-ms-keyframes imageAnimation {
+    0% { opacity: 0;
+    -ms-animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         -ms-animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes imageAnimation {
+    0% { opacity: 0;
+    animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
