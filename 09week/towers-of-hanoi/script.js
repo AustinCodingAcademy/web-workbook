@@ -1,4 +1,4 @@
-'use strict';
+
 
 $(document).ready(function() {
   var maxStack = 4;
