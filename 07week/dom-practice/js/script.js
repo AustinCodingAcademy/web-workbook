@@ -1,17 +1,14 @@
-window.onload = function () {
-  var list = document.getElementsByTagName('ul');
-  var message = 'This page has ' + list[0].children.length + ' list items';
-  alert(message);
-  var newh1 = document.createElement('h1');
-  newh1.innerHTML = 'Manipulating the DOM!';
-  document.body.appendChild(newh1);
 
-  var list5 = document.createElement('li');
-   list5.innerHTML = 'Fifth List Item';
-   list[0].appendChild(list5);
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "40px Comic Sans MS";
+ctx.strokeText("Adam Grieder",25,75);
 
-var div = document.getElementById('div');
-var p4 = document.getElementById('P4');
-div.removeChild(p4);
 
-}
+var d = document.getElementById("Mycanvas");
+var dtx = c.getContext("2d");
+var grd = ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"black");
+grd.addColorStop(1,"white");
+ctx.fillStyle = grd;
+ctx.fillRect(0,100,400,200);
