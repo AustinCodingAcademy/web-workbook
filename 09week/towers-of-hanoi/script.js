@@ -1,4 +1,6 @@
 
-$(document).ready(function() {
-  
-});
+var gameboard = [
+  ["25", "50", "75", "100"],
+  [],
+  []
+]
