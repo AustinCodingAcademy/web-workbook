@@ -1,5 +1,8 @@
 'use strict';
 
 $(document).ready(function() {
-  // Put app logic here
+  $( function() {
+      $( ".block" ).draggable();
+      $( ".row" ).droppable();
+    })
 });
