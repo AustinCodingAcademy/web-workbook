@@ -1,0 +1,169 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+}
+
+.main-1{
+  padding: 2%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-1 img {
+  width: 100%;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 15px 0;
+}
+
+p {
+  font-size: 30px;
+  margin: 5px 0 15px 0;
+}
+
+button {
+  background-color: #4E4E4E;
+  color: white;
+  border-style: none;
+  padding: 8px;
+  font-size: 15px;
+}
+
+
+/*Dispappearing side menu when in tablet/phone format*/
+.side-list {
+  padding-right: 2%;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
+.side-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.side-list a:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.mobile-footer {
+  display: none;
+}
+
+
+
+/*Tablet format*/
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .side-list {
+    display:none;
+  }
+
+  .main-1{
+    width:auto;
+  }
+
+  h2 {
+    margin: 30px 0;
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 25px;
+    margin: 25px 0;
+  }
+}
+
+
+/*Phone format*/
+
+@media (max-width: 767px) {
+  .side-list {
+    display:none;
+  }
+
+  .main {
+    flex-direction: column;
+
+  }
+
+  .main-1{
+    width:auto;
+    margin: 0 auto;
+  }
+
+  h2 {
+    margin: 15px 0;
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  .mobile-footer {
+    display: flex;
+    background-color: #5D5D5D;
+    color: white;
+    justify-content: space-around;
+    height: 100%;
+  }
+
+  .links {
+    align-items: center;
+    width: 25%;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10% 0 0 0;
+  }
+
+  li {
+    padding: 0;
+  }
+
+  .links a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .mobile-footer a:hover {
+    font-size: 25px;
+
+  }
+
+  .social {
+    align-items: center;
+    width: 25%;
+  }
+
+  .fa {
+    color: white;
+    margin-left: 5px;
+  }
+}
