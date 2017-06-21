@@ -69,7 +69,7 @@ function clickBtn(btn) {
     document.getElementById("btn5").value == "X" &&
     document.getElementById("btn7").value == "X"
   ){
-  alert("Tgit he Winner is X!!!!");
+  alert("The Winner is X!!!!");
   reset();
   }
   else if(
