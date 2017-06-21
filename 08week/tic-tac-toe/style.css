@@ -1,6 +1,64 @@
 body {background-color: #FF69B4}
 
-div[data-cell] {
+.X:after {
+  content: "X";
+  /*content: url(img/donut2.jpeg);*/
+  /*display: block;
+  height: auto;
+  width: 100%;
+  /*margin-top: 25px;*/
+  text-align: center;
+  align-self: center;
+}
+
+.O:after {
+  content: "O";
+  /*content: url(img/homer.png);*/
+  /*display: block;
+  height: auto;
+  width: 100%;*/
+  /*margin-top: 25px;*/
+  text-align: center;
+  align-self: center;
+}
+
+p {
+ background-color: white;
+ border: 5px solid black;
+ color: black;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 30px;
+ border-radius: 50px;
+ font-family: courier;
+
+}
+
+h1 {
+
+ color: black;
+ text-align: center;
+ display: inline-block;
+ font-size: 75px;
+ font-family: courier;
+
+}
+
+button {
+   background-color: white;
+   border: 5px solid black;
+   color: black;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 30px;
+   border-radius: 50px;
+   font-family: courier;
+}
+/*div[data-cell] {
   width: 15.6em;
   height: 15.6em;
   float: left;
@@ -8,9 +66,22 @@ div[data-cell] {
   outline: 2px solid black;
   text-align: center;
   display: flex;
+  position: relative;
+}*/
+
+.square {
+    background-color: white;
+    height: 190px;
+    border: 2px solid black;
 }
 
-#gameboard, #clear, #title, #turn {
+.header {
+    font-style: italic;
+    font-family: 'Comic-Sans', serif;
+    margin: 20px 0;
+}
+
+/*#gameboard, #clear, #title, #turn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,162 +94,14 @@ div[data-cell] {
   display: flex;
 }
 
-#main {display: flex}
+#main {display: flex}*/
 
 img {border-radius: 100px; display: flex; align-self: flex-start;}
 
-#gameboard {
-  border: 50px solid;
-  border-image-source: url(img/donut2.jpeg);
-  border-image-slice: 50;
-  border-image-repeat: round;
-  display: flex;
-
-}
-#title{
-background-color: #FF69B4;
-color: black;
-text-align: center;
-text-decoration: none;
-font-size: 30px;
-}
-
-.row {
-  clear: both;
-}
 
 #announce-winner {
   clear: both;
   font-size: 100px;
 }
 
-.X:after {
-  content: url(img/donut2.jpeg);
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  margin-top: 25px;
-  text-align: center;
-  align-self: center;
-
-}
-
-.O:after {
-  content: url(img/homer.png);
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  margin-top: 25px;
-  text-align: center;
-  align-self: center;
-}
-
- p {
-  background-color: white;
-  border: 5px solid black;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 30px;
-  border-radius: 50px;
-  font-family: courier;
-
-}
-
-h1 {
-
-  color: black;
-  text-align: center;
-  display: inline-block;
-  font-size: 75px;
-  font-family: courier;
-
-}
-
-button {
-    background-color: white;
-    border: 5px solid black;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-    border-radius: 50px;
-    font-family: courier;
-}
-
-
-@media (min-width: 768px) and (max-width: 991px){
-  .donutstop {display: none;}
-  .donutsbottom {display: none;}
-
-  div[data-cell] {
-    width: 50px;
-    height: 50px;
-    float: left;
-    border: .5px solid black;
-    outline: .5px solid black;
-    text-align: center;
-    display: flex;
-  }
-
-
-.X:after {
-  content: url(img/donut2.jpeg);
-  display: inline-block;
-  height: 50px;
-  width: 50px;
-  text-align: center;
-  align-self: center;
-
-}*/
-
-.O:after {
-  content: url(img/homer.png);
-  display: inline-block;
-  height: 50px;
-  width: 50px;
-  text-align: center;
-  align-self: center;
-}
-
-}
-
-@media (max-width: 767px){
-  .donutstop {display: none;}
-  .donutsbottom {display: none;}
-
-    div[data-cell] {
-      width: 30px;
-      height: 30px;
-      float: left;
-      border: .5px solid black;
-      outline: .5px solid black;
-      text-align: center;
-      display: flex;
-    }
-
-
-  .X:after {
-    content: url(img/donut2.jpeg);
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    align-self: center;
-
-  }
-
-  /*.O:after {
-    content: url(img/homer.png);
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    align-self: center;
-  }
-
-}
+.
