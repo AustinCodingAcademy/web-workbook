@@ -1,0 +1,79 @@
+/*I started this part of the project having learned a lot from the first half, I feel it is better*/
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#office {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+article {
+  margin: 2%;
+  font-family: arial;
+  font-size: 100%;
+}
+
+button {
+  background-color: rgb(34, 34, 34);
+  border: none;
+  color: white;
+  padding: 3%;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.topstory {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  width: 10%;
+}
+
+.topstory h1 {
+  border-bottom: 2px solid black;
+}
+
+.topstory a {
+  text-decoration: none;
+  color: black;
+  margin: 5px;
+  padding: 4%;
+}
+
+@media only screen and (max-width: 768px) {
+  .topstory {
+    display: none;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-family: arial;
+  background-color: grey;
+}
+
+footer section {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+footer section a {
+  text-decoration: none;
+  color: white;
+  padding: 4%;
+  border-bottom: 2px solid lightgrey;
+}

@@ -1,0 +1,128 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  background-image: url(../Pics/starspic.jpg);
+  background-size: 100%;
+  font-family: "Cagliostro";
+  color: white;
+}
+
+.Bigname {
+  font-family: "Advent Pro";
+  font-size: 500%;
+  color:rgb(50, 151, 236);
+  margin: 40px 0px;
+}
+
+.Cube {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  border: 10px solid black;
+}
+
+.Cube button {
+  font-size: 250%;
+  text-align: center;
+  font-family: "Audiowide";
+  border-radius: 15px 50px;
+  color: rgb(50, 151, 236);
+  text-shadow: 3px 3px black;
+  background-color: black;
+  background: linear-gradient(to bottom right, grey, black);
+  border: 5px outset silver;
+  padding: 9px;
+}
+
+.Cube button:hover { /* Animimation code is at the bottom of this CSS file */
+  animation-name: Fancy;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  text-shadow: none;
+}
+
+.cb1 {
+  background-image: url(../Pics/Codepic.jpg);
+  background-size: 100%;
+  }
+
+.cb2 {
+  background-image: url(../Pics/chippic.jpg);
+  background-size: 100%;
+
+}
+
+.cb3 {
+  background-image: url(../Pics/studiopic.jpg);
+  background-size: 100%;
+
+}
+
+.cb4 {
+  background-image: url(../Pics/drumrockpic.jpg);
+  background-size: 100%;
+}
+
+#Abouttitle {
+  font-size: 250%;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+.About {
+  font-size: 175%;
+  margin: 35px 120px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 768px) { /* This reformats the social media logos for small screens */
+  footer {
+    flex-direction: column;
+    background-color: transparent;
+  }
+}
+
+footer button { /* To get rid of the ugly white background for buttons */
+  background-color: transparent;
+  border: none;
+}
+
+.facebook img {
+  background-color: #3b5998;
+  border-radius: 20px;
+}
+
+.linkedin img {
+  background-color: #0077B5;
+  border-radius: 20px;
+}
+
+.twitter img {
+  background-color: #0084b4;
+  border-radius: 20px;
+}
+
+.soundcloud img {
+  background-color: #ff7700;
+  border-radius: 20px;
+}
+
+.youtube img {
+  background-color: #c4302b;
+  border-radius: 20px;
+}
+                                              /*Animations and keyframes below*/
+
+@keyframes Fancy {
+  from {background: linear-gradient(to bottom right, grey, black); color: rgb(50, 151, 236);}
+  to {background: linear-gradient(to bottom right, white, grey); color:black}
+}
