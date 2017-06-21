@@ -1,0 +1,99 @@
+html, body {
+  margin: 20px;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.main {
+  width: 75%;
+  float: left;
+}
+
+img {
+ width: 100%;
+}
+
+.aside {
+  box-sizing: border-box;
+  padding-left: 20px;
+  width: 25%;
+  float: right;
+}
+
+button {
+  float: left;
+  clear: both;
+  background-color: #5D5D5D;
+  color: white;
+  border-style: none;
+  padding: 5px 10px;
+}
+
+footer {
+  display: none;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  html, body {
+    margin: 0 0;
+}
+  h1 {
+    font-size: 23px;
+}
+
+  .aside {
+    display: none;
+}
+  .main {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+  button {
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+* {
+  border: 1px solid red;
+}
+
+}
+
+/* Phone */
+@media (max-width: 767px) {
+  html, body {
+    margin: 0 0;
+}
+  h1 {
+    font-size: 23px;
+}
+
+  .aside {
+    display: none;
+}
+  .main {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+  button {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+  footer {
+    clear:both;
+    display: flex;
+    background-color: #5D5D5D;
+    color: white;
+    justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+}
