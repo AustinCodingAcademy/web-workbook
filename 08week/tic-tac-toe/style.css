@@ -1,107 +1,75 @@
-body {background-color: #FF69B4}
-
-.X:after {
-  content: "X";
-  /*content: url(img/donut2.jpeg);*/
-  /*display: block;
-  height: auto;
-  width: 100%;
-  /*margin-top: 25px;*/
+div[data-cell] {
+  width: 100px;
+  height: 100px;
+  background-color: #f2f2f2;
+  float: left;
+  border: 1px solid #808080;
+  font-size: 100px;
   text-align: center;
-  align-self: center;
 }
 
-.O:after {
-  content: "O";
-  /*content: url(img/homer.png);*/
-  /*display: block;
-  height: auto;
-  width: 100%;*/
-  /*margin-top: 25px;*/
-  text-align: center;
-  align-self: center;
+html, body {background-color: #FF69B4 !important;
+  font-family: courier !important;
 }
 
-p {
- background-color: white;
- border: 5px solid black;
- color: black;
- padding: 15px 32px;
- text-align: center;
- text-decoration: none;
- display: inline-block;
- font-size: 30px;
- border-radius: 50px;
- font-family: courier;
+.row {
+  clear: both;
+  display: flex;
+justify-content: center;
+}
+
+#announce-winner {
+  clear: both;
+  font-size: 50px;
+}
+
+.X {
+  background-image: url('img/donut2.jpeg');
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background-repeat: no-repeat;
 
 }
 
-h1 {
-
- color: black;
- text-align: center;
- display: inline-block;
- font-size: 75px;
- font-family: courier;
+.O {
+  background-image: url('img/homer.png');
+    background-size: 100% 100%;
+    display: inline-block;
+    width: 10px;
+    height: 20px;
+    background-repeat: no-repeat;
 
 }
 
 button {
    background-color: white;
-   border: 5px solid black;
+   border: 1px solid black;
    color: black;
-   padding: 15px 32px;
+   padding: 10px 10px;
    text-align: center;
    text-decoration: none;
    display: inline-block;
    font-size: 30px;
    border-radius: 50px;
    font-family: courier;
-}
-/*div[data-cell] {
-  width: 15.6em;
-  height: 15.6em;
-  float: left;
-  border: 2px solid black;
-  outline: 2px solid black;
-  text-align: center;
-  display: flex;
-  position: relative;
-}*/
-
-.square {
-    background-color: white;
-    height: 190px;
-    border: 2px solid black;
+   font-weight: bold !important;
 }
 
-.header {
-    font-style: italic;
-    font-family: 'Comic-Sans', serif;
-    margin: 20px 0;
+#turn  {
+   color: black;
+   border-radius: 50px;
+   font-family: courier !important;
+   font-size: 30px !important;
 }
 
-/*#gameboard, #clear, #title, #turn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-content: center;
+#homer {border-radius: 100px; display: flex; align-self: flex-start;}
+
+#mainboard {
+  border-image-source: url(img/donut2.jpeg) !important;
+  border-image-repeat: round !important;
+  border: 50px solid transparent !important;
+  border-image-slice: 30 !important;
 }
-
-#donutstop, #donutsbottom {
-  flex-direction: row;
-  display: flex;
-}
-
-#main {display: flex}*/
-
-img {border-radius: 100px; display: flex; align-self: flex-start;}
-
-
-#announce-winner {
-  clear: both;
-  font-size: 100px;
-}
-
 .
