@@ -1,0 +1,204 @@
+body {
+  background-color: black !important;
+  background: url(../images/Bio_DarkBlueBKG.jpg);
+  position: relative;
+  background-size: 100% 240%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-family: 'Lato', sans-serif;
+  color: black;
+  margin: 0 auto;
+
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 0 auto !important;
+
+}
+
+
+.body {
+  width: 65%!important;
+  align-self: auto;
+  background-color: #487d88;
+  border: 1px solid white;
+
+}
+
+
+.topframe {
+  height: 40px;
+  background-color: #0d3545;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  line-height: 40px;
+  border: 1px solid white;
+
+}
+
+
+/* Video */
+video {
+ left: 50%;
+ position: absolute;
+ top: 50%;
+ transform: translate(-50%, 0%);
+ width: 70%;
+ overflow: hidden;
+ margin-top: 4.5%;
+ border: 1px solid white;
+
+}
+
+/* Canvas*/
+canvas {
+ width: 400px;
+ height: 200px;
+ background-color: rgba(255, 255, 255, 0.0);
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -15%);
+ margin-top: 45%;
+
+}
+
+/*  Hide Play button + controls on iOS */ 
+video::-webkit-media-controls {
+    display:none !important;
+} 
+
+
+
+.textarea {
+  background-color: rgba(239, 235, 196, 0.5);
+  padding: 4%;
+  margin-top: 70% !important;
+  width: 100%;
+
+}
+
+
+.audio {
+    width: 100% !important;
+    height: 32px;
+}
+
+
+.navbar .navbar-nav {
+  display: inline-block !important;
+  float: none !important;
+  vertical-align: top !important;
+}
+
+.navbar .navbar-collapse {
+  text-align: center !important;
+}
+
+/* Media Queries */
+
+
+/* Large Tablet (portrait and landscape)*/
+@media only screen and (max-width: 1100px)  {
+
+.body {
+   width: 80% !important;
+
+}
+
+/* Canvas*/
+canvas {
+ width: 400px;
+ height: 200px;
+ transform: translate(-50%, 0%);
+ margin-top: 37%;
+
+}
+
+
+/* Video */
+video {
+ width: 60%;
+ transform: translate(-50%, 0%);
+ overflow: hidden;
+ margin-top: 6%;
+
+}
+
+}
+
+
+/* Small Tablet (portrait and landscape)*/
+@media only screen and (max-width: 768px)  {
+
+.body {
+   width: 80% !important;
+
+}
+
+/* Canvas*/
+canvas {
+ width: 400px;
+ height: 200px;
+ transform: translate(-50%, 0%);
+ margin-top: 43%;
+
+}
+
+
+/* Video */
+video {
+ transform: translate(-50%, 0%);
+ overflow: hidden;
+ margin-top: 6%;
+
+
+}
+
+
+.textarea {
+margin-top: 90% !important;
+padding: 3% !important;
+
+}
+
+}
+
+/* phones (portrait and landscape)*/
+@media only screen and (max-width: 480px)  {
+
+.body {
+   width: 85% !important;
+}
+
+/* Video */
+video {
+ transform: translate(-50%, 0%);
+ overflow: hidden;
+ margin-top: 12%;
+
+}
+
+/* Canvas*/
+canvas {
+ width: 350px;
+ height: 175px;
+ transform: translate(-50%, 0%);
+ margin-top: 62%;
+
+}
+
+.textarea {
+ margin-top: 150% !important;
+ padding: 5% !important;
+}
+
+
+}

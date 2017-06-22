@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8"></meta>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tic Tac Toe</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Sasaki_Tic_Tac_Toe</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+<!--changed div Cell-Data to class box, original setup was causing unnecessary problems with script -->
+<div class='container'>
   <div class="row">
-    <div data-cell="0"></div>
-    <div data-cell="1"></div>
-    <div data-cell="2"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
   </div>
   <div class="row">
-    <div data-cell="3"></div>
-    <div data-cell="4"></div>
-    <div data-cell="5"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
   </div>
   <div class="row">
-    <div data-cell="6"></div>
-    <div data-cell="7"></div>
-    <div data-cell="8"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
   </div>
+  <button type="button" class="button" button id="clear">Clear Board</button>
+  </div>
+ <!-- Announce Winner content not needed since alert is being used, kept div as placeholder -->
   <div id="announce-winner"></div>
-  <button id="clear">Clear Board</button>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./script.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+   <script src="bootstrap.min.js"></script>
 </body>
 </html>

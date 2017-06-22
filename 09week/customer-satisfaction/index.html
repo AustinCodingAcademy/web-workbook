@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sasaki_Satisfaction Form</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<div class="row">
+<form class="formbody">
+<div class="topframe"><p><strong/>Customer Satisfaction Form</strong></p></div>
+<form action="" method="post" enctype="text/plain">
+<!--Name fields-->
+ <div class="col-xs-6">
+<input type="text" class="form-control" name="firstname" placeholder="First Name:" spell check=true/>
+ </div>
+	<div class="col-xs-6">
+	<input type="text" class="form-control" name="lastname" placeholder="Last Name:" spell check=true/>
+	</div>
+<!--email-->
+	 <div class="col-xs-12">
+	 <hr>
+	<input type="email" class="form-control" name="email" placeholder="Email:" spell check=true, pattern="^@[A-Za-z0-9_]{1,15}$" required/>
+	 <hr>
+	 </div>
+<!--Pass-->
+<div class="col-xs-6">
+ <input type="password" class="form-control" name="password" placeholder="Password:" spell check=true, pattern="[a-zA-Z]{3}" required title="Your password needs to be less than 10 characters"/>
+</div>
+<!--URL-->
+	<div class="col-xs-6">
+		<input type="url" class="form-control" name="url" placeholder="URL"spell check=true/>
+	</div>
+<!--Comment-->
+<div class="col-xs-12">
+<hr>
+ <textarea class="form-control" name="comment" placeholder="Comment:" spell check=true, rows="2"/></textarea>
+ <hr>
+</div>
+<!--Comment-->
+		<div class="col-xs-6">
+  		<input type="radio" name="Male" value=""/>&nbsp;Male<br><br>
+  		<input type="radio" name="Female" value=""/>&nbsp;Female<br>
+  		</div>
+  		<div class="col-xs-6">
+    	<input type="checkbox" name="service" value="good"/>Great Service!<br>
+		<input type="checkbox" name="service" value="mediocre"/>Meh<br>
+		<input type="checkbox" name="service" value="sucks"/>Horrible<br>
+		</div>
+<!--range-->
+<div class="col-xs-12">
+<hr><p>Cleanliness Scale (Dirtiest left to Super Clean Right)</p>
+  <input type="range" min="0" max="5" value="3" id="fader">
+<hr>
+</div>
+	   	<div class="col-xs-6">
+		<input type="submit" class="form-control" value="Submit">
+		</div>
+		<div class="col-xs-6">
+		<input type="reset"  class="form-control" value="Reset">
+		</div>
+	</form>
+</div>
+</div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

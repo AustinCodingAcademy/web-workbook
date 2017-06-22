@@ -1,38 +1,66 @@
-[data-stack] {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 101px;
-  background-color: aliceblue;
-  margin: 25px;
+body {
+  background: url(Hanoi_BKG.jpg);
+  min-height: 100%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 100%;
+
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+/*placeholder*/
+}
+
+[data-tower] {
+    width: 25%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.3); ;
+    margin: 35px;
+    margin-left: 35%;
+    border: 2px solid white;
 }
 
 [data-block] {
-  width: 25px;
-  float: left;
+    width: 20px;
+    float: left;
+    box-shadow: 10px 10px 5px black;
 }
 
-[data-block="25"] {
-  height: 25px;
-  background-color: blue;
+[data-block="1"] {
+    height: 20px;
+    background-color: blue;
 }
 
-[data-block="50"] {
-  height: 50px;
-  background-color: green;
+[data-block="2"] {
+    height: 40px;
+    background-color: green;
 }
 
-[data-block="75"] {
-  height: 75px;
-  background-color: red;
+[data-block="3"] {
+    height: 60px;
+    background-color: red;
 }
 
-[data-block="100"] {
-  height: 100px;
-  background-color: yellow;
+[data-block="4"] {
+    height: 80px;
+    background-color: yellow;
 }
 
-#announce-game-won {
-  font-size: 50px;
-  text-align: center;
+.winner {
+    font-family: 'Roboto', sans-serif;
+    font-size: 75px;
+    height: 100px;
+    width: 400px;
+    position: absolute; 
+    left: 34.6%;
+    top: 110%;
+    color:white;
+    text-align: center;
+
 }

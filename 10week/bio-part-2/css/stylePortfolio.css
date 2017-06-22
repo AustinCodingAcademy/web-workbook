@@ -1,0 +1,102 @@
+
+body {
+  background-color: black !important;
+  background-image: url(../images/PortfolioBKG2.jpg);
+  position: relative;
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #555;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+
+
+}
+
+/*Lightbox*/
+.lightbox {
+  margin-top: 9% !important;
+}
+
+.lightboxOverlay {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: 100% !important;
+
+}
+
+/*Flexbox*/
+.container {
+  display: flex;
+  flex-direction: row wrap;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 1%;
+  
+}
+
+
+.row {
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.responsive-image {
+  max-width: 100%;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, .5);
+
+}
+
+.col-sm-4 img {
+  margin-bottom: 10%;
+  display: inline-block;
+}
+
+#col-sm-4 {
+  width: 100%;
+
+}
+
+
+.navbar .navbar-nav {
+  display: inline-block !important;
+  float: none !important;
+  vertical-align: top !important;
+}
+
+.navbar .navbar-collapse {
+  text-align: center !important;
+}
+
+
+/* Media Queries */
+
+/* Small Tablet (portrait and landscape) */
+@media only screen and (max-width: 768px)  {
+
+.col-sm-4 img {
+  margin-bottom: 5%;
+
+}
+
+
+}
+
+/* phones (portrait and landscape) */
+@media only screen and (max-width: 480px)  {
+
+.col-sm-4 img {
+  margin-bottom: 5%;
+
+}
+
+.lightbox {
+  margin-top: 40% !important;
+}
+
+}

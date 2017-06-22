@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+    <title>Sasaki Contact</title>
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styleContact.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="Robert Sasaki"></a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="Portfolio.html">Portfolio</a></li>
+        <li><a href="Bio2.html">Bio</a></li>
+        <li><a href="TicTacToe.html">Tic Tac Toe Game</a></li>
+        <li><a href="Hanoi.html">Hanoi Game</a></li>
+        <li class="active"><a href="Contact.html">Contact<span class="sr-only">(current)</span></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+<div class="container">
+<div class="row">
+<form class="formbody">
+<div class="topframe"><p><strong/>Contact: Robert Sasaki</strong></p></div>
+<form action="" method="post" enctype="text/plain">
+<!--Name fields-->
+ <div class="col-xs-6">
+<input type="text" class="form-control" name="firstname" placeholder="First Name:" spell check=true/>
+ </div>
+	<div class="col-xs-6">
+	<input type="text" class="form-control" name="lastname" placeholder="Last Name:" spell check=true/>
+	</div>
+<!--email-->
+	 <div class="col-xs-12">
+	 <hr>
+	<input type="email" class="form-control" name="email" placeholder="Email:" spell check=true, pattern="^@[A-Za-z0-9_]{1,15}$" required/>
+	 <hr>
+	 </div>
+<!--Pass-->
+<div class="col-xs-6">
+ <input type="password" class="form-control" name="password" placeholder="Password:" spell check=true, pattern="[a-zA-Z]{3}" required title="Your password needs to be less than 10 characters"/>
+</div>
+<!--URL-->
+	<div class="col-xs-6">
+		<input type="url" class="form-control" name="url" placeholder="URL"spell check=true/>
+	</div>
+<!--Comment-->
+<div class="col-xs-12">
+<hr>
+ <textarea class="form-control" name="comment" placeholder="Comment:" spell check=true, rows="6"/></textarea>
+ <hr>
+</div>
+	   	<div class="col-xs-6">
+		<input type="reset"  class="form-control" value="Reset">
+		</div>
+		<div class="col-xs-6">
+		<input type="submit" class="form-control" value="Submit"><br>
+		</div>
+
+	</form>
+</div>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,11 +1,32 @@
-div[data-cell] {
+body {
+  background-color: black !important;
+  background: url(bluebackground.jpg);
+  background-size: 100% 190%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  width: 100%;
+
+}
+
+.container {
+  justify-content:center;
+  position: relative;
+  margin-left: 40% !important;
+  margin-top: 5% !important;
+
+}
+
+.box {
   width: 100px;
   height: 100px;
-  background-color: #f2f2f2;
+  background-color: #ddf5b8;
   float: left;
-  border: 1px solid #808080;
-  font-size: 100px;
+/*border: 1px solid #808080;*/
+  font-size: 75px;
   text-align: center;
+  line-height: 82px;
+  margin: 0 auto;
+  border: 3px solid grey;
 }
 
 .row {
@@ -15,4 +36,17 @@ div[data-cell] {
 #announce-winner {
   clear: both;
   font-size: 50px;
+}
+
+.box-x:before {
+  content: "x";
+}
+
+.box-o:before {
+  content: "o";
+}
+
+button {
+  position: relative !important;
+  margin: 2% 0% 0% 7.8% !important
 }
