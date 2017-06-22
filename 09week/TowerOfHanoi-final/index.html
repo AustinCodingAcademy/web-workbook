@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>towers</title>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+<div><h2>Towers of Hanoi</h2></div>
+<div class="notify"></div>
+<div class="ctnr">
+  <div id="t1" class="dropzone">
+	<div class="tower">
+	  <div id="d3" class="dragitem d3"></div>
+	  <div id="d2" class="dragitem d2"></div>
+	  <div id="d1" class="dragitem d1"></div>
+	</div>
+  </div>
+  <div id="t2" class="dropzone">
+	<div class="tower"></div>
+  </div>
+  <div id="t3" class="dropzone">
+	<div class="tower"></div>
+  </div>
+  <div class="manager">
+	<button onclick="location.reload(true);">New Game</button>
+  </div>
+
+  <a href="#" id="rightPanel" class="trigger right"></a>
+    <div class="howToPlay panel right">
+      <h2>How to Play</h2>
+      <p>Try to move all the disks from the most left tower to the most right.
+      <br /><br />
+      You may only move one disk at a time.
+      <br /><br />
+      You must never allow a bigger disk to go on top of a smaller disk.</p>
+    </div>
+
+</div>
+</body>
+</html>

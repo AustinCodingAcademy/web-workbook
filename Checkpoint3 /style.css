@@ -1,0 +1,161 @@
+html {
+  overflow: hidden;
+}
+
+body {
+ background-color: hsla(30, 10%, 30%, 0.95);
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+p {
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+.board {
+  position: relative;
+  width: 22em;
+  font-family: Raleway;
+  font-weight: 800;
+  margin: 0 auto;
+}
+
+.row {
+  float: left;
+}
+
+.row:first-child .square {
+  border-top: 0;
+}
+
+.square {
+  color: #605B56 ;
+  border-color: white;
+  font-size: 6em;
+  width: 1.2em;
+  height: 1.2em;
+  line-height: 1.2em;
+  float: left;
+  border-style: solid;
+  border-width: 2px 2px 0 0;
+  text-align: center;
+  cursor: default;
+  padding-top: 20px;
+}
+
+.square.square-x:before {
+  content: "X";
+  line-height: 1.2em;
+  color: #eeda76;
+}
+
+.square.square-o:before {
+  content: "O";
+  line-height: 1.2em;
+  color: #167204;
+
+}
+
+.square:last-child {
+  border-right: 0px;
+}
+
+.x-marker {
+  color: #eeda76;
+}
+
+.o-marker {
+  color: #167204;
+}
+
+.modal-container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  display: none;
+
+
+}
+
+.modal {
+  font-family: Raleway;
+  text-align: center;
+  background-color: black;
+  color: #333;
+  font-size: 6em;
+  height: 100%;
+  padding: 30px;
+
+}
+
+.markers {
+  text-align: center;
+
+}
+
+.x-marker {
+  background: #333;
+  padding: 20px;
+  float: left;
+  margin-left: 20%;
+}
+.o-marker {
+  background: #333;
+  padding: 20px;
+  float: right;
+  margin-right: 20%;
+}
+.x-marker:hover,  .o-marker:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+
+.end-game-modal {
+  display: none;
+}
+
+.choose-modal span{
+  line-height: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 3em;
+}
+
+.end-game-modal span {
+  color: #eeda76;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  font-size: 1.3em;
+  padding: 0.2em 0.4em;
+}
+
+.button-area span {
+  display: inline-block;
+  background-color: hsla(30, 10%, 20%, 0.95);
+  margin: 0.2em 0.2em 0 0.2em;
+}
+
+.button-area span:hover {
+  cursor: pointer;
+  background-color: hsla(30, 10%, 30%, 0.95);
+}
