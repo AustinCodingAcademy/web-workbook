@@ -3,21 +3,33 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Towers of Hanoi</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div data-stack="1">
-    <div data-block="100"></div>
-    <div data-block="75"></div>
-    <div data-block="50"></div>
-    <div data-block="25"></div>
+  <div id="peg-container">
+    <section class="peg" id="peg0" onclick="move(0)" data-weight="0">
+      <div class="ring" id="peg0-Ring4" data-weight="1"></div>
+      <div class="ring" id="peg0-Ring3" data-weight="2"></div>
+      <div class="ring" id="peg0-Ring2" data-weight="3"></div>
+      <div class="ring" id="peg0-Ring1" data-weight="4"></div>
+    </section>
+    <section class="peg" id="peg1" onclick="move(1)" data-weight="0">
+      <div class="ring" id="peg1-Ring4" data-weight="0"></div>
+      <div class="ring" id="peg1-Ring3" data-weight="0"></div>
+      <div class="ring" id="peg1-Ring2" data-weight="0"></div>
+      <div class="ring" id="peg1-Ring1" data-weight="0"></div>
+    </section>
+    <section class="peg" id="peg2" onclick="move(2)" data-weight="0">
+      <div class="ring" id="peg2-Ring4" data-weight="0"></div>
+      <div class="ring" id="peg2-Ring3" data-weight="0"></div>
+      <div class="ring" id="peg2-Ring2" data-weight="0"></div>
+      <div class="ring" id="peg2-Ring1" data-weight="0"></div>
+    </section>
   </div>
-  <div data-stack="2">
+  <div id="win-container">
+    <p id="winner"></p>
   </div>
-  <div data-stack="3">
-  </div>
-  <div id="announce-game-won"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
