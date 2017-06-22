@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Customer Satisfation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Mogra" rel="stylesheet">
+  </head>
+  <body>
+  <div class="">
+  <h2>Customer Satisfaction Form</h2>
+<!-- Form begins here -->
+  <form action="/action_page.php" method="get">
+    <label for="firstName">First Name:</label><br/>
+    <input type="text" name="firstName" placeholder="First name" class="textInput" required/><br/>
+    <label for="lastName">Last Name:</label><br/>
+    <input type="text" name="lastName" placeholder="Last name" pattern="[a-zA-Z]{0,20}" class="textInput" required/><br/>
+    <label for="email">E-mail:</label><br/>
+    <input type="email" name="email" placeholder="Email goes here" pattern="[a-zA-Z]{0,20}" oninvalid="setCustomValidity(' ')" class="textInput" required/><br/>
+    <div class="services">
+<!--"Which service did I provide?" -->
+    <h5>Which service did I provide to you?</h5>
+    <input type="checkbox" name="service" value="Front"> UI/Front-End<br/>
+    <input type="checkbox" name="service" value="Back"> UX/Back-End<br/>
+    <input type="checkbox" name="service" value="Both"> UI/UX - Both<br/>
+    </div>
+<!--"How likely?" radio box -->
+    <div class="recommend">
+    <h5>How likely are you to recommend me?</h5>
+      <input type="radio" name="likely" value="Very likely!"> Very likely!<br/>
+      <input type="radio" name="likely" value="Sorta"> Sorta kinda likely<br/>
+      <input type="radio" name="likely" value="Unlikely"> Unlikely
+    </div><br/>
+<!--Slider -->
+    <div class="slider">
+    <h5>Need to be more specific?</h5>
+     <input type="range" name="rateInputName" id="rateInputId" value="10" min="1" max="10" oninput="rateOutputId.value = rateInputId.value">
+     <output name="rateOutputName" id="rateOutputId">10</output>
+   </div><br/>
+<!--Comments, Concerns, Compliments Box -->
+    <textarea name="message" placeholder="Comments, concerns, compliments.." class="commentBox" spellcheck="true" maxlength="300"></textarea><br/>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+  </div>
+  </body>
+</html>

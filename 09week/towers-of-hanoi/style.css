@@ -1,37 +1,48 @@
+/*TOWERS OF HANOI GAME*/
+/*THREE ROWS*/
+body {
+  background-image: url('https://static.pexels.com/photos/28740/pexels-photo-28740.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 [data-stack] {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 101px;
-  background-color: aliceblue;
+  background-color: black;
+  background-image: url('https://cdn.pixabay.com/photo/2015/11/02/18/32/water-1018808_960_720.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 25px;
 }
-
+/*BOX STYLING*/
 [data-block] {
   width: 25px;
   float: left;
 }
-
+/*SMALL BOX*/
 [data-block="25"] {
   height: 25px;
   background-color: blue;
 }
-
+/*MEDIUM BOX*/
 [data-block="50"] {
   height: 50px;
   background-color: green;
 }
-
+/*BIG BOX*/
 [data-block="75"] {
   height: 75px;
   background-color: red;
 }
-
+/*BIGGEST BOX*/
 [data-block="100"] {
   height: 100px;
   background-color: yellow;
 }
-
+/*WINNER ANNOUNCEMENT*/
 #announce-game-won {
   font-size: 50px;
   text-align: center;
