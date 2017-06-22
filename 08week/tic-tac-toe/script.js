@@ -36,8 +36,8 @@ $(document).ready(function() {
               checkArray.push(x);
               // console.log(checkArray);
               if (checkArray.length == 3){
-                alert ('X Wins');
-
+                // alert ('X Wins');
+                document.getElementById('title').innerHTML = "X Wins!";
               }
             }
           }
@@ -52,9 +52,10 @@ $(document).ready(function() {
             // console.log(nestedArray[x]);
             if($(nestedArray[x]).hasClass('x')){
               checkArray.push(x);
-              console.log(checkArray);
+              // console.log(checkArray);
               if (checkArray.length == 3){
-                alert ('X Wins');
+                // alert ('X Wins');
+                document.getElementById('title').innerHTML = "X Wins!";
               }
             }
           }
@@ -68,9 +69,10 @@ $(document).ready(function() {
             // console.log(nestedArray[x]);
             if($(nestedArray[x]).hasClass('x')){
               checkArray.push(x);
-              console.log(checkArray);
+              // console.log(checkArray);
               if (checkArray.length == 3){
-                alert ('X Wins');
+                document.getElementById('title').innerHTML = "X Wins!";
+
               }
             }
           }
@@ -97,7 +99,7 @@ $(document).ready(function() {
               checkArray.push(x);
               // console.log(checkArray);
               if (checkArray.length == 3){
-                alert ('O Wins');
+                document.getElementById('title').innerHTML = "O Wins!";
 
               }
             }
@@ -113,9 +115,9 @@ $(document).ready(function() {
             // console.log(nestedArray[x]);
             if($(nestedArray[x]).hasClass('o')){
               checkArray.push(x);
-              console.log(checkArray);
+              // console.log(checkArray);
               if (checkArray.length == 3){
-                alert ('O Wins');
+                document.getElementById('title').innerHTML = "O Wins!";
               }
             }
           }
@@ -130,14 +132,13 @@ $(document).ready(function() {
             // console.log(nestedArray[x]);
             if($(nestedArray[x]).hasClass('o')){
               checkArray.push(x);
-              console.log(checkArray);
+              // console.log(checkArray);
               if (checkArray.length == 3){
-                alert ('O Wins');
+                document.getElementById('title').innerHTML = "O Wins!";
               }
             }
           }
         }
-
         player = 1;
       }
     }
@@ -148,7 +149,7 @@ $(document).ready(function() {
     $('[data-cell]').removeClass('x o');
     $('[data-cell]').empty();
     player = 1;
-    alert ('New Game');
-  });
+    document.getElementById('title').innerHTML = "Tic Tac Toe";
 
+  });
 })
