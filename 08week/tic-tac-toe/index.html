@@ -1,69 +1,52 @@
 <!DOCTYPE html>
 <html>
+<!-- Head -->
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tic Tac Toe</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
+<!-- Main Body -->
 <body class="board">
-  <div id="title">
-  <img src="img/homerdonut.jpeg" alt="Homer donut" style="width:304px;height:228px;">
-  &nbsp &nbsp &nbsp &nbsp
-  <h1> TIC - TAC - DOH! </h1>
+  <!-- Picture / Game Title -->
+  <div class="row">
+    <div class="col-xs-12 text-center header">
+        <img id="homer" src="img/homerdonut.jpeg" alt="Homer donut"  class="center-block">
+          <h1> TIC-TAC-DOH!</h1>
+    </div>
   </div>
-  <div id="turn">
+  <!-- Player Turn -->
+  <div id="turn" class="col-xs-12 text-center header">
   <p class="playerTurn" </p>
-  </div>
+    </div>
 
-  <div id="main">
-    <div class="donutstop">
-    <img src="img/donut.png" alt="Mountain View" style="width:100px;height:100px;">
-    <img src="img/donut.png" alt="Mountain View" style="width:100px;height:100px;">
-    <img src="img/donut.png" alt="Mountain View" style="width:100px;height:100px;">
-    <img src="img/donut.png" alt="Mountain View" style="width:100px;height:100px;">
-    <img src="img/donut.png" alt="Mountain View" style="width:100px;height:100px;">
-    <img src="img/donut.png" alt="Mountain View" style="width:100px;height:100px;">
-    <img src="img/donut.png" alt="Mountain View" style="width:100px;height:100px;">
-    <img src="img/donut.png" alt="Mountain View" style="width:100px;height:100px;">
-    <img src="img/donut.png" alt="Mountain View" style="width:100px;height:100px;">
-    <img src="img/donut.png" alt="Mountain View" style="width:100px;height:100px;">
+    <!-- Main Game Board  -->
+    <div id="mainboard" class="container-center">
+  <div class="row text-center">
+    <div class="col-md-2 col-xs-4" id="cell0" data-cell="0"></div>
+    <div class="col-md-2 col-xs-4 square" id="cell1" data-cell="1"></div>
+    <div class="col-md-2 col-xs-4 square" id="cell2" data-cell="2"></div>
   </div>
-    <div id="gameboard">
-  <div class="row">
-    <div id="cell0" data-cell="0"></div>
-    <div id="cell1" data-cell="1"></div>
-    <div id="cell2" data-cell="2"></div>
+  <div class="row text-center">
+    <div class="col-md-2 col-xs-4" id="cell3" data-cell="3"></div>
+    <div class="col-md-2 col-xs-4 square" id="cell4" data-cell="4"></div>
+    <div class="col-md-2 col-xs-4 square" id="cell5" data-cell="5"></div>
   </div>
-  <div class="row">
-    <div id="cell3" data-cell="3"></div>
-    <div id="cell4" data-cell="4"></div>
-    <div id="cell5" data-cell="5"></div>
-  </div>
-  <div class="row">
-    <div id="cell6" data-cell="6"></div>
-    <div id="cell7" data-cell="7"></div>
-    <div id="cell8" data-cell="8"></div>
+  <div class="row text-center">
+    <div class="col-md-2 col-xs-4" id="cell6" data-cell="6"></div>
+    <div class="col-md-2 col-xs-4 square" id="cell7" data-cell="7"></div>
+    <div class="col-md-2 col-xs-4 square" id="cell8" data-cell="8"></div>
   </div>
 </div>
-  <div class="donutsbottom">
-  <img src="img/donut.png" alt="Mountain View" style="width:100px;height:100px;">
-  <img src="img/donut.png" alt="Mountain View" style="width:100px;height:100px;">
-  <img src="img/donut.png" alt="Mountain View" style="width:100px;height:100px;">
-  <img src="img/donut.png" alt="Mountain View" style="width:100px;height:100px;">
-  <img src="img/donut.png" alt="Mountain View" style="width:100px;height:100px;">
-  <img src="img/donut.png" alt="Mountain View" style="width:100px;height:100px;">
-  <img src="img/donut.png" alt="Mountain View" style="width:100px;height:100px;">
-  <img src="img/donut.png" alt="Mountain View" style="width:100px;height:100px;">
-  <img src="img/donut.png" alt="Mountain View" style="width:100px;height:100px;">
-  <img src="img/donut.png" alt="Mountain View" style="width:100px;height:100px;">
-</div>
-</div>
-
+  <!-- Winner Button and Board Clear -->
   <div id="announce-winner"></div>
-  <div id="clear">
+  <div id="clear" class="col-xs-12 text-center header">
   <button id="clear">CLEAR THE BOARD</button>
-</div>
+ </div>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
