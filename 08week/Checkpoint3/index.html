@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Tic Tac Toe</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="game.js"></script>
+    </head>
+
+    <body>
+      <!-- Page Container -->
+        <div class="container">
+          <!-- Page Header / Clear Board -->
+            <div class="row">
+                <div class="col-xs-12 text-center header">
+                  <img id="homer" src="img/homerdonut.jpeg" alt="Homer donut"  class="center-block">
+                    <h1> Tic-Tac-Doh!</h1>
+                    <button class="btn btn-primary playAgain" onclick="clearBoard()">Click to Clear The Board</button>
+                </div>
+            </div>
+            <div id="main">
+
+              <!-- Alert for Game Results, Announce Winner -->
+            <div class="modal fade" id="gameModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">Game Results</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p id="gameResults"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+            <!-- Game Board  -->
+            <!-- First Row -->
+            <div class="row text-center">
+                <div class="col-md-2 col-md-offset-3 col-xs-4 square" onclick="clicked('.row11')">
+                    <span class="row11"></span>
+                </div>
+                <div class="col-md-2 col-xs-4 square" onclick="clicked('.row12')">
+                    <span class="row12"></span>
+                </div>
+                <div class="col-md-2 col-xs-4 square" onclick="clicked('.row13')">
+                    <span class="row13"></span>
+                </div>
+            </div>
+            <!-- Second Row -->
+            <div class="row text-center">
+                <div class="col-md-2 col-md-offset-3 col-xs-4 square" onclick="clicked('.row21')">
+                    <span class="row21"></span>
+                </div>
+                <div class="col-md-2 col-xs-4 square" onclick="clicked('.row22')">
+                    <span class="row22"></span>
+                </div>
+                <div class="col-md-2 col-xs-4 square" onclick="clicked('.row23')">
+                    <span class="row23"></span>
+                </div>
+            </div>
+            <!-- Third Row -->
+            <div class="row text-center">
+                <div class="col-md-2 col-md-offset-3 col-xs-4 square" onclick="clicked('.row31')">
+                    <span class="row31"></span>
+                </div>
+                <div class="col-md-2 col-xs-4 square" onclick="clicked('.row32')">
+                    <span class="row32"></span>
+                </div>
+                <div class="col-md-2 col-xs-4 square" onclick="clicked('.row33')">
+                    <span class="row33"></span>
+                </div>
+            </div>
+
+        </div>
+      </div>
+    </body>
+</html>

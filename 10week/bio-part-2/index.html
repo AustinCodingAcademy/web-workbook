@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Media Controls and Canvas</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="myname">
+        <canvas id="myCanvas" width="300" height="150">
+        </canvas>
+
+          <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+
+            ctx.font = "40px Verdana bold";
+            // Create gradient
+            var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+            gradient.addColorStop("0", "magenta");
+            gradient.addColorStop("0.5", "blue");
+            gradient.addColorStop("1.0", "red");
+            // Fill with gradient
+            ctx.fillStyle = gradient;
+            ctx.fillText("Kelly Ahlgren", 50, 50);
+
+          </script>
+      </div>
+
+      <div class="videoaudio">
+        <video  autoplay controls loop src="../wind.mov" type="video/mov">
+        </video>
+
+        <br>
+        <p> Wind Chimes </p>
+        <audio controls>
+          <source src="../chime.mp3" type="audio/mp3">
+          <source src="../chime.mp3" type="audio/mp3">
+        </audio>
+        <br>
+        <div class=star>
+          <svg width="300" height="200">
+            <polygon points="100,10 40,198 190,78 10,78 160,198"
+            style="fill:teal;stroke:black;stroke-width:4;fill-rule:evenodd;" />
+          </svg>
+        </div>
+      </div>
+
+      <div class=rainbow>
+        <canvas id="demoCanvas" width="500" height="600"></canvas>
+        <script>
+        var canvas = document.getElementById("demoCanvas");
+        if (canvas.getContext)
+        {
+          var ctx = canvas.getContext("2d");
+          var gradient = ctx.createLinearGradient(10, 0, 500, 0);
+          gradient.addColorStop(0, 'red');
+          gradient.addColorStop(1 / 6, 'orange');
+          gradient.addColorStop(2 / 6, 'yellow');
+          gradient.addColorStop(3 / 6, 'green');
+          gradient.addColorStop(4 / 6, 'blue');
+          gradient.addColorStop(5 / 6, 'indigo');
+          gradient.addColorStop(1, 'violet');
+          ctx.fillStyle = gradient;
+          ctx.fillRect(0, 0, 500, 75);
+        }
+        </script>
+
+      </div>
+    </div>
+  </body>
+</html>
