@@ -4,26 +4,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tic Tac Toe</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Indie+Flower" rel="stylesheet">
 </head>
 <body>
-  <div class="row">
-    <div data-cell="0"></div>
-    <div data-cell="1"></div>
-    <div data-cell="2"></div>
+  <p>
+    XOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXXOXOXOXXOXOXOXOXO
+    XOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXO
+    XOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXO
+    XOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXXOXOXOXXOXOXOXOXO
+    XOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXO
+    XOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXO
+    XOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXOXXOXOXOXXOXOXOXOXO
+  </p>
+  <h1>Tic • Tac • Toe</h1>
+  <div id="flexcontainer">
+    <div id="game">
+      <div class="row">
+        <div id="0" data-cell="0"></div>
+        <div id="1" data-cell="1"></div>
+        <div id="2" data-cell="2"></div>
+      </div>
+      <div class="row">
+        <div id ="3" data-cell="3"></div>
+        <div id ="4" data-cell="4"></div>
+        <div id ="5" data-cell="5"></div>
+      </div>
+      <div class="row">
+        <div id="6" data-cell="6"></div>
+        <div id="7" data-cell="7"></div>
+        <div id="8" data-cell="8"></div>
+      </div>
+      <div id="announce-winner"></div>
+      <button id="clear">Clear Board</button>
+    </div>
   </div>
-  <div class="row">
-    <div data-cell="3"></div>
-    <div data-cell="4"></div>
-    <div data-cell="5"></div>
-  </div>
-  <div class="row">
-    <div data-cell="6"></div>
-    <div data-cell="7"></div>
-    <div data-cell="8"></div>
-  </div>
-  <div id="announce-winner"></div>
-  <button id="clear">Clear Board</button>
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./script.js"></script>
+  <script type="text/javascript" src="./script_V2.js"></script>
 </body>
 </html>

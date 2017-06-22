@@ -3,21 +3,39 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Towers of Hanoi</title>
+  <link href="https://fonts.googleapis.com/css?family=Eczar:400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div data-stack="1">
-    <div data-block="100"></div>
-    <div data-block="75"></div>
-    <div data-block="50"></div>
-    <div data-block="25"></div>
+  <h1>The Towers of Hanoi (Tháp Hà Nội)</h1>
+  <div id="instructions">
+    <p>
+      The goal of the puzzle is to move all the blocks from the top row to
+      the bottom row, adhering to the following rules:<br />
+      1. Move only one block at a time <br />
+      2. A larger block may not be placed to the right of a smaller block.<br />
+      3. All blocks, except the one being moved, must be in a row.
+    </p>
   </div>
-  <div data-stack="2">
+  
+  <div id="gameArea">
+    <div data-stack="1">
+      <div data-block="100"></div>
+      <div data-block="75"></div>
+      <div data-block="50"></div>
+      <div data-block="25"></div>
+    </div>
+    <div data-stack="2">
+    </div>
+    <div data-stack="3">
+    </div>
   </div>
-  <div data-stack="3">
-  </div>
+
+  <!--<button id="clear">Reset Board</button>-->
+
   <div id="announce-game-won"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+  <script type="text/javascript" src="scriptTest.js"></script>
 </body>
 </html>
