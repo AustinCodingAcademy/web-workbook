@@ -58,4 +58,10 @@ $(document).ready (function() {
     }
   }
 
+  function reset() {
+  $.each( squareSelected, function() {
+    $(this).text("").removeClass('fa fa-circle-o').removeClass('fa fa-times');
+  });
+};
+
 });

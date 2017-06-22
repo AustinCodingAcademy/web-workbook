@@ -1,6 +1,8 @@
 body {
   display: flex;
-  justify-content: center;
+  /*justify-content: center;*/
+  flex-direction: column;
+  /*outline-style: solid;*/
 }
 
 #gameboard {
@@ -17,10 +19,10 @@ body {
 .square{
   width: 120px;
   height: 85px;
-  background-color: #cecece;
   cursor: pointer;
   text-align: center;
   padding-top: 35px; /*to center align x's and o's*/
+  /*outline-style: solid;*/
 }
 /*o element*/
 .row .fa-circle-o{
@@ -39,4 +41,13 @@ body {
 /*vertical line*/
 .right {
   border-right: 1px solid black;
+}
+
+
+#gameboard #reset {
+  width:100%;
+  height:50px;
+  margin-top: 50px;
+  font-size:24px;
+  outline-style: solid;
 }
