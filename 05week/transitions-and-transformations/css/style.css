@@ -1,0 +1,23 @@
+
+.container {
+  height: auto;
+  margin: auto;
+  padding:20px;
+}
+
+div {
+  transition: all 2s ease-in;
+  width:50px;
+  height:50px;
+  margin:5px;
+}
+
+.container:hover > div:nth-child(even){
+  transition: all 2s ease-in;
+  transform: scale(2) translate(200px) rotate(360deg);
+}
+
+.container:hover > div:nth-child(odd){
+  transition: all 2s ease-in;
+  transform: scale(.5) translate(-800px) rotate(-360deg);
+}

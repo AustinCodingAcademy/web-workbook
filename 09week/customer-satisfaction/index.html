@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forms</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="container">
+  <form>
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." pattern="[a-zA-Z]{3,}" spellcheck="true" required>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." pattern="[a-zA-Z]{3,}" spellcheck="true" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Your Email Address.." required>
+
+    <label for="url">Website</label>
+    <input type="url" id="url" name="url" placeholder="Your Web Address.." required>
+
+    <label for="userName">User Name</label>
+    <input type="text" id="username" name="username" placeholder="User Name.." >
+
+    <label for="Password">Password</label>
+    <input type="password" id="psw" name="password" placeholder="Password..">
+
+    <div>
+      <input type="checkbox" name="html" value="HTML">HTML
+      <input type="checkbox" name="text" value="Text">Text
+      <input type="radio" name="newsltr" value="newsltr">Subscribe to Newsletter
+      <input type="radio" name="blog" value="blog">Subscribe to Blog
+    </div><br>
+
+    <label for="Password">How would you rate your experience?</label>
+    <div class="range"><p>1</p><p>10</p></div>
+    <input type="range" name="points" min="0" max="10"><br>
+
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" spellcheck="true" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit"><input type="reset">
+
+  </form>
+</div>
+
+
+
+</body>
+</html>
