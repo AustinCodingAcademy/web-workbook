@@ -1,46 +1,77 @@
 'use strict';
 
-$(document).ready(function () {
-  var x = "x";
-  var o = "o";
-var start = true;
- var toggle = function () {
-   if (!this.innerHTML){
-      if (start) {
-    this.innerHTML='o';
-  }
-  else {
-   this.innerHTML='x';
-  }
-  start = !start; //falsy//
-  } else {
-    alert ("You can't click here");
-  }
-}
+$(document).ready(function() {
 
-$('div>div').click(toggle);
+ var play = true;
+ var announcement = $('#announce-winner')
 
-function checkForWinner() {
-if (cell1 === 'o' && cell2 === 'o' && cell3 === 'o') { return player1; }
-else if (cell1 === 'x' && cell2 === 'x' && cell3 === 'x') { return player2; }
-else if (cell4 === 'o' && cell5 === 'o' && cell6 === 'o') { return player1; }
-else if (cell4 === 'x' && cell5 === 'x' && cell6 === 'x') { return player2; }
-else if (cell7 === 'o' && cell8 === 'o' && cell9 === 'o') { return player1; }
-else if (cell7 === 'x' && cell8 === 'x' && cell9 === 'x') { return player2; }
-else if (cell1 === 'o' && cell4 === 'o' && cell7 === 'o') { return player1; }
-else if (cell1 === 'x' && cell4 === 'x' && cell7 === 'x') { return player2; }
-else if (cell2 === 'o' && cell5 === 'o' && cell8 === 'o') { return player1; }
-else if (cell2 === 'x' && cell5 === 'x' && cell8 === 'x') { return player2; }
-else if (cell3 === 'o' && cell6 === 'o' && cell9 === 'o') { return player1; }
-else if (cell3 === 'x' && cell6 === 'x' && cell9 === 'x') { return player2; }
-else if (cell1 === 'o' && cell5 === 'o' && cell9 === 'o') { return player1; }
-else if (cell1 === 'x' && cell5 === 'x' && cell9 === 'x') { return player2; }
-else if (cell3 === 'o' && cell5 === 'o' && cell7 === 'o') { return player1; }
-else if (cell3 === 'x' && cell5 === 'x' && cell7 === 'x') { return player2; }
- }
+ // var for win conditions
+ var dataCell0 = $('[data-cell = "0"]');
+ var dataCell1 = $('[data-cell = "1"]');
+ var dataCell2 = $('[data-cell = "2"]');
+ var dataCell3 = $('[data-cell = "3"]');
+ var dataCell4 = $('[data-cell = "4"]');
+ var dataCell5 = $('[data-cell = "5"]');
+ var dataCell6 = $('[data-cell = "6"]');
+ var dataCell7 = $('[data-cell = "7"]');
+ var dataCell8 = $('[data-cell = "8"]');
 
-$('#clear').click(function(){
-  $('[data-cell]').empty();
-});
+ var toggle = function() {
+     if($(this).text() == '') {
+
+     if(play) {
+       $(this).text('x');
+     }
+     else {
+       $(this).text('o');
+     }
+
+ // win contition
+   if(checkWinner() && play) {
+     announcement.text('Player x won!');
+   } else if (checkWinner() && !play) {
+     announcement.text('Player o won!');
+   }
+
+ // switch to make play flip & click function
+     play = !play;
+   }
+   }
+   $('[data-cell]').click(toggle);
+   $('#clear').click(function(){
+   $('[data-cell]').text('');
+   announcement.text('');
+ });
+
+// function to check for a win
+ function checkWinner() {
+     if((dataCell0.text() != '') && (dataCell0.text () == dataCell1.text())
+      && (dataCell1.text() == dataCell2.text())){
+       return true;
+     } else if((dataCell3.text() != '') && (dataCell3.text () == dataCell4.text())
+        && (dataCell4.text() == dataCell5.text())){
+         return true;
+       } else if((dataCell6.text() != '') && (dataCell6.text () == dataCell7.text())
+        && (dataCell7.text() == dataCell8.text())){
+         return true;
+       } else if((dataCell0.text() != '') && (dataCell0.text () == dataCell3.text())
+        && (dataCell3.text() == dataCell6.text())){
+         return true;
+       } else if((dataCell1.text() != '') && (dataCell1.text () == dataCell4.text())
+        && (dataCell4.text() == dataCell7.text())){
+         return true;
+      } else if((dataCell2.text() != '') && (dataCell2.text () == dataCell5.text())
+        && (dataCell5.text() == dataCell8.text())){
+         return true;
+       } else if((dataCell0.text() != '') && (dataCell0.text () == dataCell4.text())
+        && (dataCell4.text() == dataCell8.text())){
+         return true;
+       } else if((dataCell2.text() != '') && (dataCell2.text () == dataCell4.text())
+        && (dataCell4.text() == dataCell6.text())){
+         return true;
+       } else {
+         return false;
+       }
+     }
 
 });
