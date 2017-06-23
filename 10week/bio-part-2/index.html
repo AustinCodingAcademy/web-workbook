@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bio Part Dos</title>
+
+  <link rel="stylesheet" href="../bio-part-2/css/style.css"/>
+</head>
+<body>
+  <div class="myCanvas1">
+  </div>
+
+  <!--     VIDEO LOOP     */-->
+  <div class="vidio">
+    <video loop width="320" height="240" controls>
+      <source src="allways-searching.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!--    SHAPE     */-->
+
+  <canvas id="myCanvas2" width="578" height="200"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas2');
+      var context = canvas.getContext('2d');
+      var centerX = canvas.width / 2;
+      var centerY = canvas.height / 2;
+      var radius = 70;
+
+      context.beginPath();
+      context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+      context.fillStyle = 'red';
+      context.fill();
+      context.lineWidth = 5;
+      context.strokeStyle = '#003300';
+      context.stroke();
+    </script>
+
+
+
+
+        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript" src="../bio-part-2/js/script.js"></script>
+ */-->
+
+</body>
+</html>
