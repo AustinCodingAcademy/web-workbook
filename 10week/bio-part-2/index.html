@@ -19,8 +19,7 @@
   </div>
 
   <!--    SHAPE     */-->
-
-  <canvas id="myCanvas2" width="578" height="200"></canvas>
+  <canvas id="myCanvas2"></canvas>
     <script>
       var canvas = document.getElementById('myCanvas2');
       var context = canvas.getContext('2d');
@@ -33,11 +32,42 @@
       context.fillStyle = 'red';
       context.fill();
       context.lineWidth = 5;
-      context.strokeStyle = '#003300';
+      context.strokeStyle = 'black';
       context.stroke();
     </script>
 
+    <!--    NAME    */-->
+  <canvas id="myCanvas3"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas3');
+      var context = canvas.getContext('2d');
+      var x = 80;
+      var y = 110;
 
+      context.font = '80pt Calibri';
+      context.lineWidth =5;
+      // stroke color
+      context.strokeStyle = 'black';
+      context.strokeText('Ellen', x, y);
+    </script>
+
+      <!--    Radial Gradiant      */-->
+    <canvas id="myCanvas4" ></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas4');
+      var context = canvas.getContext('2d');
+      context.rect(0, 0, canvas.width, canvas.height);
+
+      // create radial gradient
+      var grd = context.createRadialGradient(238, 50, 10, 238, 50, 300);
+      // light blue
+      grd.addColorStop(0, '#8ED6FF');
+      // dark blue
+      grd.addColorStop(1, '#004CB3');
+
+      context.fillStyle = grd;
+      context.fill();
+    </script>
 
 
         <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
