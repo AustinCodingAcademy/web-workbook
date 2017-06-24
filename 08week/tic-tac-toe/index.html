@@ -3,33 +3,31 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tic Tac Toe</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
-  <form>
-    <div id="xo">
-      <p>Your Mark</p>
-      <p><input type="radio" name="xo" value="X"> X</p>
-      <p><input type="radio" name="xo" value="O"> O</p>
-      <p><input type="radio" name="xo" value="Random" checked> Random</p>
-    </div>
-    <div>.</div>
-    <div id="first">
-      <p>Your Play Order</p>
-      <p><input type="radio" name="first" value="First"> First</p>
-      <p><input type="radio" name="first" value="Second">  Second</p>
-      <p><input type="radio" name="first" value="Random" checked> Random</p>
-    </div>
-    <div>.</div>
-    <div id="difficulty">
-      <p>Difficulty</p>
-      <p><input type="radio" name="difficulty" value="Easy"> Easy</p>
-      <p><input type="radio" name="difficulty" value="Moderate"> Moderate</p>
-      <p><input type="radio" name="difficulty" value="Hard" checked> Hard</p>
-    </div>
-  </form>
-
+  <section id="upper-panel" data-display="yes">
+    <form>
+      <div id="xo">
+        <p>Your Mark</p>
+        <p><input type="radio" name="xo" value="X" checked> X</p>
+        <p><input type="radio" name="xo" value="O"> O</p>
+        <p><input type="radio" name="xo" value="Random"> Random</p>
+      </div>
+      <div id="first">
+        <p>Your Play Order</p>
+        <p><input type="radio" name="first" value="First" checked> First</p>
+        <p><input type="radio" name="first" value="Second">  Second</p>
+        <p><input type="radio" name="first" value="Random"> Random</p>
+      </div>
+      <div id="difficulty">
+        <p>Difficulty</p>
+        <p><input type="radio" name="difficulty" value="Easy"> Easy</p>
+        <p><input type="radio" name="difficulty" value="Moderate"> Moderate</p>
+        <p><input type="radio" name="difficulty" value="Hard" checked> Hard</p>
+      </div>
+    </form>
+  </section>
   <section id="board">
     <div class="row" id="row0">
       <div class="cell" id="cell0" data-cell="0" data-mark="none"></div>
@@ -47,7 +45,7 @@
       <div class="cell" id="cell8" data-cell="8" data-mark="none"></div>
     </div>
   </section>
-  <section id="panel">
+  <section id="lower-panel">
     <div class="row">
       <button id="start" data-display="yes">Start</button>
       <button id="forfeit" data-display="no">Forfeit?</button>
@@ -62,6 +60,6 @@
     </div>
   </section>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
