@@ -1,11 +1,22 @@
-div[data-cell] {
+.cell {
   width: 100px;
   height: 100px;
+  color: black;
   background-color: #f2f2f2;
   float: left;
   border: 1px solid #808080;
   font-size: 100px;
   text-align: center;
+}
+
+.cell[data-mark="X"] {
+  color: white;
+  background-color: #2FD851;
+}
+
+.cell[data-mark="O"] {
+  color: black;
+  background-color: #2B68E2;
 }
 
 .row {
@@ -15,4 +26,17 @@ div[data-cell] {
 #announce-winner {
   clear: both;
   font-size: 50px;
+}
+
+* [data-display="yes"] {
+  display: block;
+}
+
+* [data-display="no"] {
+  display: none;
+}
+
+form {
+  display: flex;
+  justify-content: flex-start;
 }

@@ -6,24 +6,62 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="row">
-    <div data-cell="0"></div>
-    <div data-cell="1"></div>
-    <div data-cell="2"></div>
-  </div>
-  <div class="row">
-    <div data-cell="3"></div>
-    <div data-cell="4"></div>
-    <div data-cell="5"></div>
-  </div>
-  <div class="row">
-    <div data-cell="6"></div>
-    <div data-cell="7"></div>
-    <div data-cell="8"></div>
-  </div>
-  <div id="announce-winner"></div>
-  <button id="clear">Clear Board</button>
+
+  <form>
+    <div id="xo">
+      <p>Your Mark</p>
+      <p><input type="radio" name="xo" value="X"> X</p>
+      <p><input type="radio" name="xo" value="O"> O</p>
+      <p><input type="radio" name="xo" value="Random" checked> Random</p>
+    </div>
+    <div>.</div>
+    <div id="first">
+      <p>Your Play Order</p>
+      <p><input type="radio" name="first" value="First"> First</p>
+      <p><input type="radio" name="first" value="Second">  Second</p>
+      <p><input type="radio" name="first" value="Random" checked> Random</p>
+    </div>
+    <div>.</div>
+    <div id="difficulty">
+      <p>Difficulty</p>
+      <p><input type="radio" name="difficulty" value="Easy"> Easy</p>
+      <p><input type="radio" name="difficulty" value="Moderate"> Moderate</p>
+      <p><input type="radio" name="difficulty" value="Hard" checked> Hard</p>
+    </div>
+  </form>
+
+  <section id="board">
+    <div class="row" id="row0">
+      <div class="cell" id="cell0" data-cell="0" data-mark="none"></div>
+      <div class="cell" id="cell1" data-cell="1" data-mark="none"></div>
+      <div class="cell" id="cell2" data-cell="2" data-mark="none"></div>
+    </div>
+    <div class="row" id="row1">
+      <div class="cell" id="cell3" data-cell="3" data-mark="none"></div>
+      <div class="cell" id="cell4" data-cell="4" data-mark="none"></div>
+      <div class="cell" id="cell5" data-cell="5" data-mark="none"></div>
+    </div>
+    <div class="row" id="row2">
+      <div class="cell" id="cell6" data-cell="6" data-mark="none"></div>
+      <div class="cell" id="cell7" data-cell="7" data-mark="none"></div>
+      <div class="cell" id="cell8" data-cell="8" data-mark="none"></div>
+    </div>
+  </section>
+  <section id="panel">
+    <div class="row">
+      <button id="start" data-display="yes">Start</button>
+      <button id="forfeit" data-display="no">Forfeit?</button>
+    </div>
+    <div class="row">
+      <p>Your Wins: <span id="human-wins">0</span></p>
+      <p>Computer Wins: <span id="computer-wins">0</span></p>
+      <p>Ties: <span id="ties">0</span></p>
+    </div>
+    <div class="row">
+      <p id="announcement" data-display="no"></p>
+    </div>
+  </section>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./script.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
