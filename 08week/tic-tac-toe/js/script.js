@@ -10,10 +10,16 @@ var marksPlaced = 0;
 var humanWins = 0;
 var computerWins = 0;
 var ties = 0;
-console.log("gamePhase: "+gamePhase);
+console.log("javascript called");
+console.log("humanMark :"+humanMark);
+console.log("computerMark :"+computerMark);
+console.log("nextPlayer :"+nextPlayer);
+console.log("difficulty :"+difficulty);
+console.log("gamePhase :"+gamePhase);
+console.log("marksPlaced :"+marksPlaced);
+console.log("------------");
 
 $("#xo").click(function() {
-  console.log("mark change function called");
   switch (true) {
     case ($('input:radio[name=xo]:checked').val() == "X"):
       humanMark = "X";
@@ -33,10 +39,17 @@ $("#xo").click(function() {
         computerMark = "O";
       }
     }
+    console.log("mark change function called");
+    console.log("humanMark :"+humanMark);
+    console.log("computerMark :"+computerMark);
+    console.log("nextPlayer :"+nextPlayer);
+    console.log("difficulty :"+difficulty);
+    console.log("gamePhase :"+gamePhase);
+    console.log("marksPlaced :"+marksPlaced);
+    console.log("------------");
 });
 
 $("#first").click(function() {
-  console.log("order change function called");
   switch (true) {
     case ($('input:radio[name=first]:checked').val() == "First"):
       nextPlayer = "human";
@@ -51,11 +64,26 @@ $("#first").click(function() {
         nextPlayer = "computer";
       }
     }
+    console.log("order change function called");
+    console.log("humanMark :"+humanMark);
+    console.log("computerMark :"+computerMark);
+    console.log("nextPlayer :"+nextPlayer);
+    console.log("difficulty :"+difficulty);
+    console.log("gamePhase :"+gamePhase);
+    console.log("marksPlaced :"+marksPlaced);
+    console.log("------------");
 });
 
 $("#difficulty").click(function() {
+  difficulty = $('input:radio[name=difficulty]:checked').val();
   console.log("difficulty change function called");
-  difficulty = $('input:radio[name=first]:checked').val();
+  console.log("humanMark :"+humanMark);
+  console.log("computerMark :"+computerMark);
+  console.log("nextPlayer :"+nextPlayer);
+  console.log("difficulty :"+difficulty);
+  console.log("gamePhase :"+gamePhase);
+  console.log("marksPlaced :"+marksPlaced);
+  console.log("------------");
 });
 
 $("#start").click(function() {
@@ -73,6 +101,14 @@ $("#start").click(function() {
   if (nextPlayer == "computer") {
     computerPlays();
   }
+  console.log("start function called");
+  console.log("humanMark :"+humanMark);
+  console.log("computerMark :"+computerMark);
+  console.log("nextPlayer :"+nextPlayer);
+  console.log("difficulty :"+difficulty);
+  console.log("gamePhase :"+gamePhase);
+  console.log("marksPlaced :"+marksPlaced);
+  console.log("------------");
 });
 
 $("#forfeit").click(function() {
@@ -124,6 +160,14 @@ function humanClicked(cell) {
       computerPlays();
     }
   }
+  console.log("humanClicked called");
+  console.log("humanMark :"+humanMark);
+  console.log("computerMark :"+computerMark);
+  console.log("nextPlayer :"+nextPlayer);
+  console.log("difficulty :"+difficulty);
+  console.log("gamePhase :"+gamePhase);
+  console.log("marksPlaced :"+marksPlaced);
+  console.log("------------");
 }
 
 function checkForWin(player) {
@@ -157,10 +201,18 @@ function checkForWin(player) {
     case (status[2] + status[4] + status[6] == checkSum) :
       makeWinAdjustments(player);
       break;
-    case (marksPlaced = 9):
+    case (marksPlaced == 9):
       makeWinAdjustments("tie");
       break;
   }
+  console.log("check for win called");
+  console.log("humanMark :"+humanMark);
+  console.log("computerMark :"+computerMark);
+  console.log("nextPlayer :"+nextPlayer);
+  console.log("difficulty :"+difficulty);
+  console.log("gamePhase :"+gamePhase);
+  console.log("marksPlaced :"+marksPlaced);
+  console.log("------------");
 
   function makeWinAdjustments(player) {
     gamePhase = "finished";
@@ -177,11 +229,18 @@ function checkForWin(player) {
       ties++;
       document.getElementById("ties").innerHTML = ties;
     }
+    console.log("makeWinAdjustmants called");
+    console.log("humanMark :"+humanMark);
+    console.log("computerMark :"+computerMark);
+    console.log("nextPlayer :"+nextPlayer);
+    console.log("difficulty :"+difficulty);
+    console.log("gamePhase :"+gamePhase);
+    console.log("marksPlaced :"+marksPlaced);
+    console.log("------------");
   }
 }
 
 function computerPlays() {
-  console.log("computerPlays called")
   switch (difficulty) {
     case "Easy":
       playEasy();
@@ -198,7 +257,14 @@ function computerPlays() {
       playHard();
       break;
   }
-  marksPlaced++;
+  console.log("computerPlays called");
+  console.log("humanMark :"+humanMark);
+  console.log("computerMark :"+computerMark);
+  console.log("nextPlayer :"+nextPlayer);
+  console.log("difficulty :"+difficulty);
+  console.log("gamePhase :"+gamePhase);
+  console.log("marksPlaced :"+marksPlaced);
+  console.log("------------");
   checkForWin("computer");
   nextPlayer = "human";
 }
@@ -215,6 +281,14 @@ function playEasy() {
         count++;
       }
   }
+  console.log("playEasy called");
+  console.log("humanMark :"+humanMark);
+  console.log("computerMark :"+computerMark);
+  console.log("nextPlayer :"+nextPlayer);
+  console.log("difficulty :"+difficulty);
+  console.log("gamePhase :"+gamePhase);
+  console.log("marksPlaced :"+marksPlaced);
+  console.log("------------");
 }
 
 function playHard() {
@@ -301,8 +375,17 @@ function playHard() {
       placeCompMark(7);
       break;
     case (true):
-      console.log("error - comp didn't find a move")
-  }
+      console.log("error - comp didn't find a move");
+      break;
+    }
+    console.log("playHard called");
+    console.log("humanMark :"+humanMark);
+    console.log("computerMark :"+computerMark);
+    console.log("nextPlayer :"+nextPlayer);
+    console.log("difficulty :"+difficulty);
+    console.log("gamePhase :"+gamePhase);
+    console.log("marksPlaced :"+marksPlaced);
+    console.log("------------");
 
   function findEmptyThenPlace(x,y,z) {
     switch (true) {
@@ -317,15 +400,13 @@ function playHard() {
         break;
     }
   }
+}
 
-  function placeCompMark(cellNum) {
-    status[cellNum] = -1;
-    marksPlaced++;
-    console.log("marksPlaced: "+marksPlaced);
-    document.getElementById("cell"+cellNum).setAttribute("data-mark", computerMark);
-    document.getElementById("cell"+cellNum).innerHTML = computerMark;
-  }
-
+function placeCompMark(cellNum) {
+  status[cellNum] = -1;
+  marksPlaced++;
+  document.getElementById("cell"+cellNum).setAttribute("data-mark", computerMark);
+  document.getElementById("cell"+cellNum).innerHTML = computerMark;
 }
 
 });
