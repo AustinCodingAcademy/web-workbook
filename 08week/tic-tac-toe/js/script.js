@@ -10,83 +10,26 @@ var marksPlaced = 0;
 var humanWins = 0;
 var computerWins = 0;
 var ties = 0;
-console.log("javascript called");
-console.log("humanMark :"+humanMark);
-console.log("computerMark :"+computerMark);
-console.log("nextPlayer :"+nextPlayer);
-console.log("difficulty :"+difficulty);
-console.log("gamePhase :"+gamePhase);
-console.log("marksPlaced :"+marksPlaced);
-console.log("------------");
+consoleLog("variables initialized");
 
-$("#xo").click(function() {
-  switch (true) {
-    case ($('input:radio[name=xo]:checked').val() == "X"):
-      humanMark = "X";
-      computerMark = "O";
-      break;
-    case ($('input:radio[name=xo]:checked').val() == "O"):
-      humanMark = "O";
-      computerMark = "X";
-      break;
-    default:
-      var temp = Math.random();
-      if (temp < 0.5) {
-        humanMark = "O";
-        computerMark = "X";
-      } else {
-        humanMark = "X";
-        computerMark = "O";
-      }
-    }
-    console.log("mark change function called");
-    console.log("humanMark :"+humanMark);
-    console.log("computerMark :"+computerMark);
-    console.log("nextPlayer :"+nextPlayer);
-    console.log("difficulty :"+difficulty);
-    console.log("gamePhase :"+gamePhase);
-    console.log("marksPlaced :"+marksPlaced);
-    console.log("------------");
-});
-
-$("#first").click(function() {
-  switch (true) {
-    case ($('input:radio[name=first]:checked').val() == "First"):
-      nextPlayer = "human";
-      break;
-    case ($('input:radio[name=first]:checked').val() == "Second"):
-      nextPlayer = "computer"
-      break;
-    default:
-      nextPlayer = "human";
-      var temp = Math.random()
-      if (temp < 0.5) {
-        nextPlayer = "computer";
-      }
-    }
-    console.log("order change function called");
-    console.log("humanMark :"+humanMark);
-    console.log("computerMark :"+computerMark);
-    console.log("nextPlayer :"+nextPlayer);
-    console.log("difficulty :"+difficulty);
-    console.log("gamePhase :"+gamePhase);
-    console.log("marksPlaced :"+marksPlaced);
-    console.log("------------");
-});
-
-$("#difficulty").click(function() {
-  difficulty = $('input:radio[name=difficulty]:checked').val();
-  console.log("difficulty change function called");
+function consoleLog(from) {
+  console.log("values at: "+from);
   console.log("humanMark :"+humanMark);
   console.log("computerMark :"+computerMark);
   console.log("nextPlayer :"+nextPlayer);
   console.log("difficulty :"+difficulty);
   console.log("gamePhase :"+gamePhase);
   console.log("marksPlaced :"+marksPlaced);
+  for (i=0; i<9; i++) {
+    console.log("status["+i+"]: "+status[i]);
+  }
   console.log("------------");
-});
+}
 
 $("#start").click(function() {
+  consoleLog("pre start- ready board");
+  getSettings();
+  consoleLog("mid start- just got settings");
   marksPlaced = 0;
   gamePhase = "ongoing";
   for (i=0; i<9; i++) {
@@ -99,58 +42,97 @@ $("#start").click(function() {
   document.getElementById("forfeit").setAttribute("data-display", "yes");
   document.getElementById("start").innerHTML = "Again?";
   if (nextPlayer == "computer") {
+    consoleLog("mid-start- compuer about to play");
     computerPlays();
   }
-  console.log("start function called");
-  console.log("humanMark :"+humanMark);
-  console.log("computerMark :"+computerMark);
-  console.log("nextPlayer :"+nextPlayer);
-  console.log("difficulty :"+difficulty);
-  console.log("gamePhase :"+gamePhase);
-  console.log("marksPlaced :"+marksPlaced);
-  console.log("------------");
+  consoleLog("post start");
 });
 
+function getSettings() {
+  difficulty = $('input:radio[name=difficulty]:checked').val();
+  // Set Play Order
+  switch (true) {
+    case ($('input:radio[name=first]:checked').val() == "First"):
+      nextPlayer = "human";
+      break;
+    case ($('input:radio[name=first]:checked').val() == "Second"):
+      nextPlayer = "computer";
+      break;
+    default:
+      nextPlayer = "human";
+      var temp = Math.random();
+      if (temp < 0.5) {
+        nextPlayer = "computer";
+      }
+  }
+  // Set competitor's marks
+  switch (true) {
+    case ($('input[name=xo]:checked').val() == "X"):
+      humanMark = "X";
+      computerMark = "O";
+      break;
+    case ($('input[name=xo]:checked').val() == "O"):
+      humanMark = "O";
+      computerMark = "X";
+      break;
+    case ($('input[name=xo]:checked').val() == "Random"):
+      var temp = Math.random();
+      if (temp < 0.5) {
+        humanMark = "O";
+        computerMark = "X";
+      } else {
+        humanMark = "X";
+        computerMark = "O";
+      }
+      break;
+    default:
+      console.log("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ ERROR: could not change mark");
+  }
+}
+
 $("#forfeit").click(function() {
+  consoleLog("pre forfeit");
   gamePhase = "finished";
   computerWins++;
   document.getElementById("computer-wins").innerHTML = computerWins;
   document.getElementById("forfeit").setAttribute("data-display", "no");
   document.getElementById("start").setAttribute("data-display", "yes");
   document.getElementById("upper-panel").setAttribute("data-display", "yes");
+  consoleLog("post forfeit");
 });
 
 $("#cell0").click(function() {
-  humanClicked(0)
+  humanClicked(0);
 });
 $("#cell1").click(function() {
-  humanClicked(1)
+  humanClicked(1);
 });
 $("#cell2").click(function() {
-  humanClicked(2)
+  humanClicked(2);
 });
 $("#cell3").click(function() {
-  humanClicked(3)
+  humanClicked(3);
 });
 $("#cell4").click(function() {
-  humanClicked(4)
+  humanClicked(4);
 });
 $("#cell5").click(function() {
-  humanClicked(5)
+  humanClicked(5);
 });
 $("#cell6").click(function() {
-  humanClicked(6)
+  humanClicked(6);
 });
 $("#cell7").click(function() {
-  humanClicked(7)
+  humanClicked(7);
 });
 $("#cell8").click(function() {
-  humanClicked(8)
+  humanClicked(8);
 });
 
 function humanClicked(cell) {
   if (status[cell] == 0 && gamePhase == "ongoing" && nextPlayer == "human") {
     status[cell] = 1;
+    consoleLog("mid-humanClicked. just added to status");
     document.getElementById("cell"+cell).setAttribute("data-mark", humanMark);
     document.getElementById("cell"+cell).innerHTML = humanMark;
     marksPlaced++;
@@ -160,17 +142,11 @@ function humanClicked(cell) {
       computerPlays();
     }
   }
-  console.log("humanClicked called");
-  console.log("humanMark :"+humanMark);
-  console.log("computerMark :"+computerMark);
-  console.log("nextPlayer :"+nextPlayer);
-  console.log("difficulty :"+difficulty);
-  console.log("gamePhase :"+gamePhase);
-  console.log("marksPlaced :"+marksPlaced);
-  console.log("------------");
+  consoleLog("post-humanClicked");
 }
 
 function checkForWin(player) {
+  consoleLog("pre-checkForWin");
   if (player == "human") {
     var checkSum = 3;
   } else {
@@ -205,16 +181,9 @@ function checkForWin(player) {
       makeWinAdjustments("tie");
       break;
   }
-  console.log("check for win called");
-  console.log("humanMark :"+humanMark);
-  console.log("computerMark :"+computerMark);
-  console.log("nextPlayer :"+nextPlayer);
-  console.log("difficulty :"+difficulty);
-  console.log("gamePhase :"+gamePhase);
-  console.log("marksPlaced :"+marksPlaced);
-  console.log("------------");
-
+  consoleLog("post-CheckForWin");
   function makeWinAdjustments(player) {
+    consoleLog("pre-MakeWinAdjustments");
     gamePhase = "finished";
     document.getElementById("upper-panel").setAttribute("data-display", "yes");
     document.getElementById("start").setAttribute("data-display", "yes");
@@ -229,24 +198,18 @@ function checkForWin(player) {
       ties++;
       document.getElementById("ties").innerHTML = ties;
     }
-    console.log("makeWinAdjustmants called");
-    console.log("humanMark :"+humanMark);
-    console.log("computerMark :"+computerMark);
-    console.log("nextPlayer :"+nextPlayer);
-    console.log("difficulty :"+difficulty);
-    console.log("gamePhase :"+gamePhase);
-    console.log("marksPlaced :"+marksPlaced);
-    console.log("------------");
+    consoleLog("post-MakeWinAdjustments");
   }
 }
 
 function computerPlays() {
+  consoleLog("pre-computerPlays");
   switch (difficulty) {
     case "Easy":
       playEasy();
       break;
     case "Moderate":
-      var temp = Math.random()
+      var temp = Math.random();
       if (temp < 0.5) {
         playEasy();
       } else {
@@ -257,23 +220,15 @@ function computerPlays() {
       playHard();
       break;
   }
-  console.log("computerPlays called");
-  console.log("humanMark :"+humanMark);
-  console.log("computerMark :"+computerMark);
-  console.log("nextPlayer :"+nextPlayer);
-  console.log("difficulty :"+difficulty);
-  console.log("gamePhase :"+gamePhase);
-  console.log("marksPlaced :"+marksPlaced);
-  console.log("------------");
   checkForWin("computer");
   nextPlayer = "human";
+  consoleLog("post-computerPlays");
 }
 
 function playEasy() {
-  console.log("playEasy called")
   var found = false;
   var count = 0;
-  while (found = false) {
+  while (found == false) {
     if (status[count] == 0) {
       placeCompMark(count);
       found = true;
@@ -281,18 +236,9 @@ function playEasy() {
         count++;
       }
   }
-  console.log("playEasy called");
-  console.log("humanMark :"+humanMark);
-  console.log("computerMark :"+computerMark);
-  console.log("nextPlayer :"+nextPlayer);
-  console.log("difficulty :"+difficulty);
-  console.log("gamePhase :"+gamePhase);
-  console.log("marksPlaced :"+marksPlaced);
-  console.log("------------");
 }
 
 function playHard() {
-  console.log("playHard called")
   switch (true) {
     // Win the game
     case (status[0] + status[1] + status[2] == -2):
@@ -375,17 +321,9 @@ function playHard() {
       placeCompMark(7);
       break;
     case (true):
-      console.log("error - comp didn't find a move");
+      console.log("############### error - comp didn't find a move");
       break;
     }
-    console.log("playHard called");
-    console.log("humanMark :"+humanMark);
-    console.log("computerMark :"+computerMark);
-    console.log("nextPlayer :"+nextPlayer);
-    console.log("difficulty :"+difficulty);
-    console.log("gamePhase :"+gamePhase);
-    console.log("marksPlaced :"+marksPlaced);
-    console.log("------------");
 
   function findEmptyThenPlace(x,y,z) {
     switch (true) {
