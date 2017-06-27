@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+        <title>Mi Casa</title>
+          <link rel="stylesheet" type="text/css" href="css/style.css"/>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+          <!-- Optional theme -->
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+          <link href="https://fonts.googleapis.com/css?family=Palanquin+Dark" rel="stylesheet">
+    </head>
+    <body style="background-color:#AC3931;">
+      <div class="col-lg-10 col-lg-offset-1" style="background-color:#E5D352;">
+    <!--Logo column-->
+    <div class="row">
+      <div class="col-lg-4 col-lg-offset-4 logo">
+        <img class="logo-pic" src="img/logo.jpg" alt="piic">
+      </div>
+    </div>
+    <!--End of logo column-->
+    <!--image-->
+    <div class="row">
+      <div class="picture col-lg-12" style="background-color:black;">
+        <img class="photo" src="img/foods.jpg" alt="picture">
+      </div>
+    </div>
+    <!--Start of the about-->
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="about">About</h1>
+          <p class="text">Mi Casa Mexican Cuisine, bringing a new taste into your life.
+             We have been bringing you flavor since July 15, 2016 and hope to
+             serve you for years to come.</p>
+      </div>
+    </div>
+  <!--Beggining of the review-->
+    <div class="row">
+      <div class="col-lg-12 yelp">
+        <h1 class="yel">Yelp Reviews</h1>
+
+      </div>
+    </div>
+    <div class="row" background-color:red;>
+      <div class="col-lg-3 review1">
+          <p class="yelp1">"The owner is amazing and you definitely
+             see the passion he has for serving the best food possible with
+              every plate that comes out. 5 stars all day long." -Yelp Review 5 Stars</p>
+      </div>
+      <div class="col-lg-3 review2">
+            <p class="yelp2">"What stands out even above the amazing food was the impeccable
+              service!" -Yelp Review 5 Stars</p>
+      </div>
+      <div class="col-lg-3 review3">
+            <p class="yelp3">"Even the rice and beans were so good, I was
+              scraping the plate to make sure nothing was left behind." -Yelp Review 5 Stars</p>
+      </div>
+      <div class="col-lg-3 review4">
+            <p class="yelp4">"The service is fantastic too. Expect that drink
+              to be bottomless. I will come here anytime I get the chance." -Yelp Review 5 Stars</p>
+      </div>
+    </div>
+    <!--Start of the menu-->
+      <div class="row">
+        <div class="col-lg-6 menu">
+          <img class="menu1" src="img/micasa.jpg" alt="menu">
+      </div>
+      <div class="col-lg-6 menu">
+          <img class="menu1" src="img/MICASADINNER.jpg" alt="menu">
+      </div>
+    </div>
+    <!--gallery row-->
+    <h2>Gallery</h2>
+
+  <div class="col-lg-12">
+    <img class="Slides" src="img/enchilada.jpg" style="width:100%" >
+    <img class="Slides" src="img/fajita.jpg" style="width:100%">
+    <img class="Slides" src="img/sopa.jpg" style="width:100%">
+    <img class="Slides" src="img/mole.jpg" style="width:100%">
+
+    <button class="button-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="button-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("Slides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
+  </script>
+<!--location and time-->
+      <div class="row" style="background-color:#E5D352;">
+        <div class="col-lg-6">
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d107799.89136968982!2d-96.91333317017595!3d32.39915363259309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x864eeed7ad065ec3%3A0x568df04dfdcf71c5!2smi+casa+mexican+cuisine+address!3m2!1d32.399173!2d-96.84329299999999!5e0!3m2!1sen!2sus!4v1496730504318" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-3">
+        <h1 class="hours">Business Hours</h1>
+          <ul class="list">
+            <li>Monday 10AM-3PM</li>
+            <li>Tuesday 10AM-9PM</li>
+            <li>Wednesday 10AM-9PM</li>
+            <li>Thursday 10AM-9PM</li>
+            <li>Friday 10AM-10PM</li>
+            <li>Saturday 10AM-10PM</li>
+            <li>Sunday 10AM-3PM</li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h1 class="contact">Phone</h1>
+            <p class="number">214-463-5904</p>
+      </div>
+
+
+
+
+
+
+
+<!--dont go past this div-->
+      </div>
+    </body>
+  </html>
