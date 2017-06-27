@@ -1,11 +1,63 @@
+@font-face {
+    font-family: computerFont;
+    src: url(../font/WOPR.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #5D92B6;
+  font-family: computerFont;
+}
+
+body {
+  padding: 15px 0px;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+#computer {
+  font-size: 28px;
+  margin-bottom: 5px;
+  display: block;
+  float: left;
+}
+
+#start {
+  width: 30px;
+  height: 26px;
+  font-size: 29px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  display: block;
+  float: left;
+}
+
+form {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.radioCell {
+  width: 143px;
+  padding-left: 9px;
+}
+
+.radio {
+  background-color: Blue;
+}
+
 .cell {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   color: black;
   background-color: #f2f2f2;
   float: left;
   border: 1px solid #808080;
-  font-size: 100px;
+  font-family: Arial;
+  font-size: 150px;
   text-align: center;
 }
 
@@ -23,6 +75,18 @@
   clear: both;
 }
 
+.score {
+  width: 146px;
+  padding-top: 10px;
+  padding-left: 5px;
+  font-weight: bold;
+  float: left;
+}
+
+.title {
+  margin-bottom: 2px;
+}
+
 #announce-winner {
   clear: both;
   font-size: 50px;
@@ -34,9 +98,4 @@
 
 * [data-display="no"] {
   display: none;
-}
-
-form {
-  display: flex;
-  justify-content: flex-start;
 }

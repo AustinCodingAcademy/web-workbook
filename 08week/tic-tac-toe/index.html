@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta name="author" content="James Walker james.walker@contractor.net">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tic Tac Toe</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link href="css/reset.css" type="text/css" rel="stylesheet" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <meta name="description" content="Above and Beyond">
+  <title>TIC TAC TOE</title>
 </head>
 <body>
-  <section id="upper-panel" data-display="yes">
+<main>
+  <section class="row">
+    <span id="computer"></span>
+    <span id="start"></span>
+  </section>
+  <section id="upper-panel"class="row" data-display="yes">
     <form>
-      <div id="xo">
-        <p>Your Mark</p>
-        <p><input type="radio" name="xo" value="X" checked> X</p>
-        <p><input type="radio" name="xo" value="O"> O</p>
-        <p><input type="radio" name="xo" value="Random"> Random</p>
+      <div class="radioCell" id="xo">
+        <p class="title">YOUR MARK:</p>
+        <p><input type="radio" class="radio" name="xo" value="X" checked> X</p>
+        <p><input type="radio" class="radio" name="xo" value="O"> O</p>
+        <p><input type="radio" class="radio" name="xo" value="Random"> Random</p>
       </div>
-      <div id="first">
-        <p>Your Play Order</p>
-        <p><input type="radio" name="first" value="First" checked> First</p>
-        <p><input type="radio" name="first" value="Second">  Second</p>
-        <p><input type="radio" name="first" value="Random"> Random</p>
+      <div class="radioCell" id="first">
+        <p class="title">YOU PLAY:</p>
+        <p><input type="radio" class="radio" name="first" value="First" checked> First</p>
+        <p><input type="radio" class="radio" name="first" value="Second">  Second</p>
+        <p><input type="radio" class="radio" name="first" value="Random"> Random</p>
       </div>
-      <div id="difficulty">
-        <p>Difficulty</p>
-        <p><input type="radio" name="difficulty" value="Easy"> Easy</p>
-        <p><input type="radio" name="difficulty" value="Moderate"> Moderate</p>
-        <p><input type="radio" name="difficulty" value="Hard" checked> Hard</p>
+      <div class="radioCell" id="difficulty">
+        <p class="title">DIFFICULTY:</p>
+        <p><input type="radio" class="radio" name="difficulty" value="Easy"> Easy</p>
+        <p><input type="radio" class="radio" name="difficulty" value="Moderate"> Moderate</p>
+        <p><input type="radio" class="radio" name="difficulty" value="Hard" checked> Hard</p>
       </div>
     </form>
   </section>
@@ -47,13 +56,9 @@
   </section>
   <section id="lower-panel">
     <div class="row">
-      <button id="start" data-display="yes">Start</button>
-      <button id="forfeit" data-display="no">Forfeit?</button>
-    </div>
-    <div class="row">
-      <p>Your Wins: <span id="human-wins">0</span></p>
-      <p>Computer Wins: <span id="computer-wins">0</span></p>
-      <p>Ties: <span id="ties">0</span></p>
+      <p class="score">YOU: <span class="upperMargin" id="human-wins">0</span></p>
+      <p class="score">ME: <span class="upperMargin" id="computer-wins">0</span></p>
+      <p class="score">TIES: <span class="upperMargin" id="ties">0</span></p>
     </div>
     <div class="row">
       <p id="announcement" data-display="no"></p>
@@ -61,5 +66,6 @@
   </section>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
+</main>
 </body>
 </html>

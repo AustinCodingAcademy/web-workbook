@@ -10,26 +10,33 @@ var marksPlaced = 0;
 var humanWins = 0;
 var computerWins = 0;
 var ties = 0;
-consoleLog("variables initialized");
+var radios = document.getElementsByClassName('radio');
+var greetingChar = ["S","H","A","L","L"," ","W","E"," ","P","L","A","Y"," ","A"," ","G","A","M","E","?", "", ""];
+var greeting, charCount, intervalID;
+var greetingAudio = new Audio('Shall-we-play-a-game.mp3');
+startGreeting();
 
-function consoleLog(from) {
-  console.log("values at: "+from);
-  console.log("humanMark :"+humanMark);
-  console.log("computerMark :"+computerMark);
-  console.log("nextPlayer :"+nextPlayer);
-  console.log("difficulty :"+difficulty);
-  console.log("gamePhase :"+gamePhase);
-  console.log("marksPlaced :"+marksPlaced);
-  for (i=0; i<9; i++) {
-    console.log("status["+i+"]: "+status[i]);
+function startGreeting() {
+  charCount = 0;
+  greeting = "";
+  greetingAudio.load();
+  greetingAudio.play();
+  intervalID = setInterval(writeGreeting, 85);
+}
+
+function writeGreeting() {
+  greeting += greetingChar[charCount];
+  charCount++;
+  document.getElementById("computer").innerHTML = greeting;
+  console.log("charCount: "+charCount+" greeting: "+greeting);
+  if (charCount == 23) {
+    clearInterval(intervalID);
+    document.getElementById("start").innerHTML = "Y";
   }
-  console.log("------------");
 }
 
 $("#start").click(function() {
-  consoleLog("pre start- ready board");
   getSettings();
-  consoleLog("mid start- just got settings");
   marksPlaced = 0;
   gamePhase = "ongoing";
   for (i=0; i<9; i++) {
@@ -37,15 +44,14 @@ $("#start").click(function() {
     document.getElementById("cell"+i).setAttribute("data-mark", "none");
     document.getElementById("cell"+i).innerHTML = "";
   }
-  document.getElementById("upper-panel").setAttribute("data-display", "no");
-  document.getElementById("start").setAttribute("data-display", "no");
-  document.getElementById("forfeit").setAttribute("data-display", "yes");
-  document.getElementById("start").innerHTML = "Again?";
+  for (i=0; i<radios.length; i++) {
+    radios[i].disabled = true;
+  }
+  document.getElementById("computer").innerHTML = "";
+  document.getElementById("start").innerHTML = "";
   if (nextPlayer == "computer") {
-    consoleLog("mid-start- compuer about to play");
     computerPlays();
   }
-  consoleLog("post start");
 });
 
 function getSettings() {
@@ -90,17 +96,6 @@ function getSettings() {
   }
 }
 
-$("#forfeit").click(function() {
-  consoleLog("pre forfeit");
-  gamePhase = "finished";
-  computerWins++;
-  document.getElementById("computer-wins").innerHTML = computerWins;
-  document.getElementById("forfeit").setAttribute("data-display", "no");
-  document.getElementById("start").setAttribute("data-display", "yes");
-  document.getElementById("upper-panel").setAttribute("data-display", "yes");
-  consoleLog("post forfeit");
-});
-
 $("#cell0").click(function() {
   humanClicked(0);
 });
@@ -132,7 +127,6 @@ $("#cell8").click(function() {
 function humanClicked(cell) {
   if (status[cell] == 0 && gamePhase == "ongoing" && nextPlayer == "human") {
     status[cell] = 1;
-    consoleLog("mid-humanClicked. just added to status");
     document.getElementById("cell"+cell).setAttribute("data-mark", humanMark);
     document.getElementById("cell"+cell).innerHTML = humanMark;
     marksPlaced++;
@@ -142,11 +136,9 @@ function humanClicked(cell) {
       computerPlays();
     }
   }
-  consoleLog("post-humanClicked");
 }
 
 function checkForWin(player) {
-  consoleLog("pre-checkForWin");
   if (player == "human") {
     var checkSum = 3;
   } else {
@@ -181,13 +173,12 @@ function checkForWin(player) {
       makeWinAdjustments("tie");
       break;
   }
-  consoleLog("post-CheckForWin");
+
   function makeWinAdjustments(player) {
-    consoleLog("pre-MakeWinAdjustments");
     gamePhase = "finished";
-    document.getElementById("upper-panel").setAttribute("data-display", "yes");
-    document.getElementById("start").setAttribute("data-display", "yes");
-    document.getElementById("forfeit").setAttribute("data-display", "no");
+    for (i=0; i<radios.length; i++) {
+      radios[i].disabled = false;
+    }
     if (player == "human") {
       humanWins++;
       document.getElementById("human-wins").innerHTML = humanWins;
@@ -198,12 +189,11 @@ function checkForWin(player) {
       ties++;
       document.getElementById("ties").innerHTML = ties;
     }
-    consoleLog("post-MakeWinAdjustments");
+    startGreeting();
   }
 }
 
 function computerPlays() {
-  consoleLog("pre-computerPlays");
   switch (difficulty) {
     case "Easy":
       playEasy();
@@ -222,7 +212,6 @@ function computerPlays() {
   }
   checkForWin("computer");
   nextPlayer = "human";
-  consoleLog("post-computerPlays");
 }
 
 function playEasy() {
