@@ -1,0 +1,41 @@
+<html>
+<head>
+  <body>
+    <script type="text/javascript">
+      var Image = new Array("img/foodcopy.jpg", "img/enchiladas.jpg", "img/foodcopy.jpg");
+      var Image_Number= 0;
+      var Image_Length= Image.length - 1;
+
+      function change_image(num)
+      {
+        Image_Number= Image_Number + num;
+        if (Image_Number > Image_Length)
+        {
+          Image_Number=0;
+        }
+          if (Image_Number<0)
+          {
+            Image_Number= Image_Length;
+          }
+          document.slideshow.src=Image[Image_Number];
+          return false;
+      }
+
+    </script>
+
+
+<img src="img/foodcopy.jpg" name="slideshow"/>
+    <table>
+      <td align="left"><a href="" onclick="return change_image(-1)">Previous</a></td>
+      <td align="right"><a href="">Next</a></td>
+    </table
+
+
+    <div id="description">
+
+    </div>
+
+
+  </body>
+</head>
+</html>
