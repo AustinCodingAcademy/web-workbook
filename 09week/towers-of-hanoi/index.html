@@ -4,20 +4,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Towers of Hanoi</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
 </head>
-<body>
-  <div data-stack="1">
-    <div data-block="100"></div>
-    <div data-block="75"></div>
-    <div data-block="50"></div>
-    <div data-block="25"></div>
+<body style="background-color:#071013;">
+  <h1 class="title">Towers of Hanoi</h1>
+  <div class="everything" style="background-color:#75ABBC; ">
+  <div class="row">
+  <div class="drop-zone col-lg-3 col-lg-offset-1" data-stack="1" style="background-color:#23B5D3;">
+    <div class="draggable" data-block="100"></div>
+    <div class="draggable" data-block="75"></div>
+    <div class="draggable" data-block="50"></div>
+    <div class="draggable" data-block="25"></div>
   </div>
-  <div data-stack="2">
+  <div class="drop-zone col-lg-3" data-stack="2" style="background-color:#23B5D3;">
   </div>
-  <div data-stack="3">
+  <div id="winnercolumn" class="drop-zone col-lg-3" data-stack="3" style="background-color:#23B5D3;">
   </div>
+</div>
+</div>
+</div>
   <div id="announce-game-won"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
