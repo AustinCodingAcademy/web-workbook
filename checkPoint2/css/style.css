@@ -1,0 +1,323 @@
+* {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden; /* this is required to keep viewport window from resizing. */
+}
+
+/* In order to make design responsive under all conditions the moving images had to be created with
+the same dimensions as the the background image (#stage) and Absolutely positioned at (0,0).
+The "Overflow: hidden" had to be assined to the * selector to keep the viewport from resizing */
+
+main {
+  width: 100vw;
+  height: 100vh;
+  max-width: 1400px;
+  max-height: 884px;
+}
+
+img, #turn-on-the-lights {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100vw;
+  height: auto;
+}
+
+#turn-on-the-lights {
+  height: 100vh;
+}
+
+body {
+  background-image: url("../img/Facilitators/seating.png");
+}
+
+/***************************     ALL Z-INDEXES    *****************************/
+/***************************  LISTED IN SEQUENCE  *****************************/
+
+#stage {
+  z-index: 1000;
+}
+
+#flagpoles {
+  z-index: 2000;
+}
+
+#wire-left, #wire-right, #wire-middle, #covers-flagpoles {
+  z-index: 3000;
+}
+
+#covers-middle-wire {
+  z-index: 4000;
+}
+
+#covers-middle-wire-cover {
+  z-index: 5000;
+}
+
+#sun {
+  z-index: 6000;
+}
+
+.cloud-lower {
+  z-index: 7000;
+}
+
+.cloud-upper {
+  z-index: 8000;
+}
+
+.cloud-string {
+  z-index: 9000;
+}
+
+.letter {
+  z-index: 10000;
+}
+
+#balloon {
+  z-index: 11000;
+}
+
+#turn-on-the-lights {
+  z-index: 12000;
+}
+
+#drapes {
+  z-index: 13000;
+}
+
+/******************** ALL ANIMATION INITIATIONS *******************************/
+/*********************  ORGANIZED BY TIME LINE  *******************************/
+
+#turn-on-the-lights {
+  background-color: rgba(0, 0, 0, 1);
+  animation: 5s 0s 1 letThereBeLight;
+  animation-fill-mode: forwards;
+}
+
+#sun {
+  animation: 5s 0s 1 down-6;
+  animation-fill-mode: forwards;
+}
+
+#cloud1-upper {
+  animation: 5s 2s 1 down-13;
+  animation-fill-mode: forwards;
+}
+
+#flagpoles {
+  animation: 3s 3s 1 up-16_7;
+  animation-fill-mode: forwards;
+}
+
+#cloud2 {
+  animation: 6s 3s 1 down-12;
+  animation-fill-mode: forwards;
+}
+
+#cloud3-lower {
+  animation: 6s 3s 1 down-12_35;
+  animation-fill-mode: forwards;
+}
+
+#cloud3-upper {
+  animation: 6s 3s 1 down-9_2;
+  animation-fill-mode: forwards;
+}
+
+#cloud3-string {
+  animation: 6s 3s 1 down-2_2;
+  animation-fill-mode: forwards;
+}
+
+#cloud1-string {
+  animation: 2s 3.5s 1 down-4;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+#covers-middle-wire-cover {
+  visibility: hidden;
+  animation: 0.01s 6.5s 1 revealTheHidden;
+  animation-fill-mode: forwards;
+}
+
+#wire-middle {
+  visibility: hidden;
+  animation: 0.01s 7.5s 1 revealTheHidden;
+  animation-fill-mode: forwards;
+}
+
+#wire-left {
+  visibility: hidden;
+  animation: 0.01s 8s 1 revealTheHidden;
+  animation-fill-mode: forwards;
+}
+
+#balloon {
+  animation: 19s 9s 1 right-82-Linear;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+#covers-middle-wire {
+  animation: 18.5s 9s 1 right-80-Linear;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+#letter01 {
+  visibility: hidden;
+  animation: 0.01s 9s 1 revealTheHidden;
+  animation-fill-mode: forwards;
+}
+
+#letter02 {
+  visibility: hidden;
+  animation: 0.01s 10s 1 revealTheHidden;
+  animation-fill-mode: forwards;
+}
+
+#letter03 {
+  visibility: hidden;
+  animation: 0.01s 11s 1 revealTheHidden;
+  animation-fill-mode: forwards;
+}
+
+#letter04 {
+  visibility: hidden;
+  animation: 0.01s 12s 1 revealTheHidden;
+  animation-fill-mode: forwards;
+}
+
+#letter05 {
+  visibility: hidden;
+  animation: 0.01s 13s 1 revealTheHidden;
+  animation-fill-mode: forwards;
+}
+
+#letter06 {
+  visibility: hidden;
+  animation: 0.01s 14s 1 revealTheHidden;
+  animation-fill-mode: forwards;
+}
+
+#letter07 {
+  visibility: hidden;
+  animation: 0.01s 15s 1 revealTheHidden;
+  animation-fill-mode: forwards;
+}
+
+#wire-right {                                             /**** wire-right ****/
+  visibility: hidden;
+  animation: 0.01s 16s 1 revealTheHidden;
+  animation-fill-mode: forwards;
+}
+
+#letter08 {
+  visibility: hidden;
+  animation: 0.01s 17s 1 revealTheHidden;
+  animation-fill-mode: forwards;
+}
+
+#letter09 {
+  visibility: hidden;
+  animation: 0.01s 18s 1 revealTheHidden;
+  animation-fill-mode: forwards;
+}
+
+#letter10 {
+  visibility: hidden;
+  animation: 0.01s 20s 1 revealTheHidden;
+  animation-fill-mode: forwards;
+}
+
+#letter11 {
+  visibility: hidden;
+  animation: 0.01s 21s 1 revealTheHidden;
+  animation-fill-mode: forwards;
+}
+
+#letter12 {
+  visibility: hidden;
+  animation: 0.01s 23s 1 revealTheHidden;
+  animation-fill-mode: forwards;
+}
+
+#letter13 {
+  visibility: hidden;
+  animation: 0.01s 24s 1 revealTheHidden;
+  animation-fill-mode: forwards;
+}
+
+#letter14 {
+  visibility: hidden;
+  animation: 0.01s 25s 1 revealTheHidden;
+  animation-fill-mode: forwards;
+}
+
+#letter15 {
+  visibility: hidden;
+  animation: 0.01s 26s 1 revealTheHidden;
+  animation-fill-mode: forwards;
+}
+
+#letter16 {
+  visibility: hidden;
+  animation: 0.01s 27s 1 revealTheHidden;
+  animation-fill-mode: forwards;
+}
+
+/*********************  ALL KEYFRAME ANIMATIONS   *****************************/
+/*********************  ORGANIZED ALPHABETICALLY  *****************************/
+
+
+@keyframes down-2_2 {
+  100% {transform: translateY(2.2vw);}
+}
+
+@keyframes down-4 {
+  100% {transform: translateY(4vw);}
+}
+
+@keyframes down-6 {
+  100% {transform: translateY(6vw);}
+}
+
+@keyframes down-9_2 {
+  100% {transform: translateY(9.2vw);}
+}
+
+@keyframes down-12 {
+  100% {transform: translateY(12vw);}
+}
+
+@keyframes down-12_35 {
+  100% {transform: translateY(12.35vw);}
+}
+
+@keyframes down-13 {
+  100% {transform: translateY(13vw);}
+}
+
+@keyframes letThereBeLight {
+  0%  {background-color: rgba(0, 0, 0, 1);}
+  100% {background-color: rgba(0, 0, 0, 0);}
+}
+
+@keyframes revealTheHidden {
+  100% {visibility: visible;}
+}
+
+@keyframes right-80-Linear {
+  100% {transform: translateX(80vw);}
+}
+
+@keyframes right-82-Linear {
+  100% {transform: translateX(82vw);}
+}
+
+@keyframes up-16_7 {
+  100% {transform: translateY(-16.7vw);}
+}

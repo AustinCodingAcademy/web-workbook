@@ -1,0 +1,113 @@
+* {
+  color: white;
+  font-family: 'Courgette', cursive;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: black;
+}
+
+main {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+nav{
+  margin-right: 5%;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h4 {
+  font-weight: 100;
+  margin-top: 20px;
+}
+
+a {
+  /* inline-block required to set margin */
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px 0px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+}
+
+/* Initial image width to height ratio is 1 to 0.8, so height set to 80% of width. */
+div {
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
+  box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
+  border-radius: 15px;
+  height: calc(50vw * 0.8);
+  overflow: hidden;
+  width: 50vw;
+}
+
+/* Multiple responsive image sliders selected with :target.
+The image count in each html figure element must be the same.
+The first image in each figure element must be duplicated at the end as well. */
+@-webkit-keyframes photo {
+  0%  {left: 0%;}
+  20% {left: 0%;}
+  25% {left: -100%;}
+  45% {left: -100%;}
+  50% {left: -200%;}
+  70% {left: -200%;}
+  75% {left: -300%;}
+  95% {left: -300%;}
+  100% {left: -400%;}
+}
+@keyframes photo {
+  0%  {left: 0%;}
+  20% {left: 0%;}
+  25% {left: -100%;}
+  45% {left: -100%;}
+  50% {left: -200%;}
+  70% {left: -200%;}
+  75% {left: -300%;}
+  95% {left: -300%;}
+  100% {left: -400%;}
+}
+
+div figure {
+  -webkit-animation: 30s photo infinite;
+  animation: 30s photo infinite;
+  position: relative;
+  /* width = 100% * image count in figure (including the duplicate) */
+  width: 500%;
+}
+
+div figure#engagement:target img {
+  float: left;
+  /* width = 100% / image count in figure (including the duplicate) */
+  width: 20%;
+}
+
+div figure#family:target img {
+  float: left;
+  width: 20%;
+}
+
+div figure#nature:target img {
+  float: left;
+  width: 20%;
+}
+
+div figure#other:target img {
+  float: left;
+  width: 20%;
+}

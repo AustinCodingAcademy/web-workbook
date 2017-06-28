@@ -1,0 +1,134 @@
+@font-face {
+    font-family: computerFont;
+    src: url(../font/WOPR.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #5D92B6;
+  font-family: computerFont;
+}
+
+body {
+  padding: 15px 0px;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+#computer {
+  font-size: 28px;
+  margin-bottom: 5px;
+  display: block;
+  float: left;
+}
+
+#start {
+  width: 30px;
+  height: 26px;
+  font-size: 29px;
+  font-weight: bolder;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  background-color: white;
+  display: block;
+  float: left;
+}
+
+form {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.radioCell {
+  width: 143px;
+  padding-left: 9px;
+}
+
+.radio {
+  background-color: Blue;
+}
+
+.cell {
+  width: 150px;
+  height: 150px;
+  color: black;
+  background-color: #f2f2f2;
+  float: left;
+  border: 1px solid #808080;
+  font-family: Arial;
+  font-size: 150px;
+  text-align: center;
+}
+
+.cell[data-prestart="yes"] {
+  background-color: darkgray;
+}
+
+.cell[data-mark="X"] {
+  color: white;
+  background-color: #2FD851;
+}
+
+.cell[data-mark="O"] {
+  color: black;
+  background-color: #2B68E2;
+}
+
+.row {
+  clear: both;
+}
+
+.score {
+  width: 146px;
+  padding-top: 10px;
+  padding-left: 5px;
+  font-weight: bold;
+  float: left;
+}
+
+.title {
+  margin-bottom: 2px;
+}
+
+#upper-panel {
+  margin-bottom: 4px;
+}
+
+* [data-display="yes"] {
+  display: block;
+}
+
+* [data-display="no"] {
+  display: none;
+}
+
+@-webkit-keyframes blinker {
+  0%   { background-color: #fff; }
+  49% { background-color: #fff; }
+  50% { background-color: #000; }
+  99% { background-color: #000; }
+  100% { background-color: #fff; }
+}
+@-moz-keyframes blinker {
+  0%   { background-color: #fff; }
+  49% { background-color: #fff; }
+  50% { background-color: #000; }
+  99% { background-color: #000; }
+  100% { background-color: #fff; }
+}
+@keyframes blinker {
+  0%   { background-color: #fff; }
+  49% { background-color: #fff; }
+  50% { background-color: #000; }
+  99% { background-color: #000; }
+  100% { background-color: #fff; }
+}
+
+* [data-blink="yes"] {
+-webkit-animation: blinker 1s infinite;
+-moz-animation: blinker 1s infinite;
+animation: blinker 1s infinite;
+}
