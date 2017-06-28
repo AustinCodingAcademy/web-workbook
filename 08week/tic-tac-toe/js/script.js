@@ -5,6 +5,7 @@ var computerMark = "O";
 var nextPlayer = "human";
 var difficulty ="Hard";
 var gamePhase = null;
+var compNextMove = null;
 var status = [0,0,0,0,0,0,0,0,0];
 var marksPlaced = 0;
 var humanWins = 0;
@@ -58,6 +59,7 @@ $(document).keypress(function(event) {
 
 function startGame() {
   marksPlaced = 0;
+  compNextMove = null;
   for (i=0; i<9; i++) {
     status[i] = 0;
     document.getElementById("cell"+i).setAttribute("data-mark", "none");
@@ -249,6 +251,58 @@ function playEasy() {
 
 function playHard() {
   switch (true) {
+    // If computer is first to play, select random corner, set compNextMove to diagonal corner
+    case (marksPlaced == 0):
+      var randomCorner = Math.floor(Math.random()*4);
+      switch (randomCorner) {
+        case 0:
+          placeCompMark(0);
+          compNextMove = 8;
+          break;
+        case 1:
+          placeCompMark(2);
+          compNextMove = 6;
+          break;
+        case 2:
+          placeCompMark(6);
+          compNextMove = 2;
+          break;
+        case 3:
+          placeCompMark(8);
+          compNextMove = 0;
+          break;
+        default:
+          console.log("error - playHard: case marksPlaced == 0: case not found");
+      }
+      break;
+    // If computer is second to play and the human selected a corner, computer
+    // selects diagonal corner, Not the center.
+    case (marksPlaced == 1 && (status[0] == 1 || status[2] == 1 || status[6] == 1 || status[8] == 1)):
+      switch(true) {
+        case (status[0] == 1):
+          placeCompMark(8);
+          break;
+        case (status[2] == 1):
+          placeCompMark(6);
+          break;
+        case (status[6] == 1):
+          placeCompMark(2);
+          break;
+        case (status[8] == 1):
+          placeCompMark(0);
+          break;
+      }
+      break;
+    // If computer went first and human then took center, then it will now take diagonal corner
+    // and on its next move take a remaining corner to set up kill. This still needs to be improved
+    // because the one corner may be of higher value than the other due to human placement.
+    //
+    // If human took any other cell, the computer will take center below at case (status[4] == 0)
+    // and then take a remaining corner to complete the set up for the kill.
+    case (marksPlaced == 2 && status[4] == 1 && compNextMove !== null):
+      placeCompMark(compNextMove);
+      compNextMove = null;
+      break;
     // Win the game
     case (status[0] + status[1] + status[2] == -2):
       findEmptyThenPlace(0,1,2);
@@ -350,6 +404,7 @@ function playHard() {
 }
 
 function placeCompMark(cellNum) {
+  console.log(cellNum);
   status[cellNum] = -1;
   marksPlaced++;
   document.getElementById("cell"+cellNum).setAttribute("data-mark", computerMark);
