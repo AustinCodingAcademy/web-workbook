@@ -238,14 +238,12 @@ function computerPlays() {
 
 function playEasy() {
   var found = false;
-  var count = 0;
   while (found == false) {
-    if (status[count] == 0) {
-      placeCompMark(count);
+    var randomCell = Math.floor(Math.random()*9);
+    if (status[randomCell] == 0) {
+      placeCompMark(randomCell);
       found = true;
-      } else {
-        count++;
-      }
+    }
   }
 }
 
