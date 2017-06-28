@@ -4,19 +4,24 @@ var humanMark = "X";
 var computerMark = "O";
 var nextPlayer = "human";
 var difficulty ="Hard";
-var gamePhase = "finished";
+var gamePhase = null;
 var status = [0,0,0,0,0,0,0,0,0];
 var marksPlaced = 0;
 var humanWins = 0;
 var computerWins = 0;
 var ties = 0;
 var radios = document.getElementsByClassName('radio');
-var greetingChar = ["S","H","A","L","L"," ","W","E"," ","P","L","A","Y"," ","A"," ","G","A","M","E","?", "", ""];
-var greeting, charCount, intervalID;
-var greetingAudio = new Audio('Shall-we-play-a-game.mp3');
+var greetingChar = ["S","H","A","L","L"," ","W","E"," ","P","L","A","Y"," ","A"," ","G","A","M","E","?", ""];
+var greeting = "";
+var charCount = 0;
+var totalChar = greetingChar.length;
+console.log(totalChar);
+var greetingAudio = new Audio("Shall-we-play-a-game.mp3");
+var intervalID;
 startGreeting();
 
 function startGreeting() {
+  document.getElementById("start").setAttribute("data-blink", "no");
   charCount = 0;
   greeting = "";
   greetingAudio.load();
@@ -25,23 +30,38 @@ function startGreeting() {
 }
 
 function writeGreeting() {
-  greeting += greetingChar[charCount];
-  charCount++;
-  document.getElementById("computer").innerHTML = greeting;
-  console.log("charCount: "+charCount+" greeting: "+greeting);
-  if (charCount == 23) {
-    clearInterval(intervalID);
-    document.getElementById("start").innerHTML = "Y";
+  if (charCount < totalChar) {
+    greeting += greetingChar[charCount];
+    charCount++;
+    document.getElementById("computer").innerHTML = greeting;
+    console.log("charCount: "+charCount+" greeting: "+greeting);
+    if (charCount == 22) {
+      clearInterval(intervalID);
+      document.getElementById("start").innerHTML = "Y";
+      document.getElementById("start").setAttribute("data-blink", "yes");
+      gamePhase = "finished";
+    }
   }
 }
 
 $("#start").click(function() {
-  getSettings();
+  if (gamePhase == "finished") {
+    startGame();
+  }
+});
+
+$(document).keypress(function(event) {
+  if (gamePhase == "finished") {
+    startGame();
+  }
+});
+
+function startGame() {
   marksPlaced = 0;
-  gamePhase = "ongoing";
   for (i=0; i<9; i++) {
     status[i] = 0;
     document.getElementById("cell"+i).setAttribute("data-mark", "none");
+    document.getElementById("cell"+i).setAttribute("data-prestart", "no");
     document.getElementById("cell"+i).innerHTML = "";
   }
   for (i=0; i<radios.length; i++) {
@@ -49,10 +69,12 @@ $("#start").click(function() {
   }
   document.getElementById("computer").innerHTML = "";
   document.getElementById("start").innerHTML = "";
+  gamePhase = "ongoing";
+  getSettings();
   if (nextPlayer == "computer") {
     computerPlays();
   }
-});
+}
 
 function getSettings() {
   difficulty = $('input:radio[name=difficulty]:checked').val();
@@ -175,7 +197,6 @@ function checkForWin(player) {
   }
 
   function makeWinAdjustments(player) {
-    gamePhase = "finished";
     for (i=0; i<radios.length; i++) {
       radios[i].disabled = false;
     }
@@ -189,6 +210,7 @@ function checkForWin(player) {
       ties++;
       document.getElementById("ties").innerHTML = ties;
     }
+    gamePhase = "finished";
     startGreeting();
   }
 }

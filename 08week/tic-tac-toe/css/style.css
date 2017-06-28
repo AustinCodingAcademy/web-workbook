@@ -29,8 +29,10 @@ body {
   width: 30px;
   height: 26px;
   font-size: 29px;
+  font-weight: bolder;
   margin-bottom: 5px;
   margin-left: 10px;
+  background-color: white;
   display: block;
   float: left;
 }
@@ -61,6 +63,10 @@ form {
   text-align: center;
 }
 
+.cell[data-prestart="yes"] {
+  background-color: darkgray;
+}
+
 .cell[data-mark="X"] {
   color: white;
   background-color: #2FD851;
@@ -87,9 +93,8 @@ form {
   margin-bottom: 2px;
 }
 
-#announce-winner {
-  clear: both;
-  font-size: 50px;
+#upper-panel {
+  margin-bottom: 4px;
 }
 
 * [data-display="yes"] {
@@ -98,4 +103,32 @@ form {
 
 * [data-display="no"] {
   display: none;
+}
+
+@-webkit-keyframes blinker {
+  0%   { background-color: #fff; }
+  49% { background-color: #fff; }
+  50% { background-color: #000; }
+  99% { background-color: #000; }
+  100% { background-color: #fff; }
+}
+@-moz-keyframes blinker {
+  0%   { background-color: #fff; }
+  49% { background-color: #fff; }
+  50% { background-color: #000; }
+  99% { background-color: #000; }
+  100% { background-color: #fff; }
+}
+@keyframes blinker {
+  0%   { background-color: #fff; }
+  49% { background-color: #fff; }
+  50% { background-color: #000; }
+  99% { background-color: #000; }
+  100% { background-color: #fff; }
+}
+
+* [data-blink="yes"] {
+-webkit-animation: blinker 1s infinite;
+-moz-animation: blinker 1s infinite;
+animation: blinker 1s infinite;
 }

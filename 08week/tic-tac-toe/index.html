@@ -13,9 +13,9 @@
 <main>
   <section class="row">
     <span id="computer"></span>
-    <span id="start"></span>
+    <span id="start" data-blink="no"></span>
   </section>
-  <section id="upper-panel"class="row" data-display="yes">
+  <section id="upper-panel" class="row" data-display="yes">
     <form>
       <div class="radioCell" id="xo">
         <p class="title">YOUR MARK:</p>
@@ -39,29 +39,26 @@
   </section>
   <section id="board">
     <div class="row" id="row0">
-      <div class="cell" id="cell0" data-cell="0" data-mark="none"></div>
-      <div class="cell" id="cell1" data-cell="1" data-mark="none"></div>
-      <div class="cell" id="cell2" data-cell="2" data-mark="none"></div>
+      <div class="cell" id="cell0" data-prestart="yes" data-cell="0" data-mark="none"></div>
+      <div class="cell" id="cell1" data-prestart="yes" data-cell="1" data-mark="none"></div>
+      <div class="cell" id="cell2" data-prestart="yes" data-cell="2" data-mark="none"></div>
     </div>
     <div class="row" id="row1">
-      <div class="cell" id="cell3" data-cell="3" data-mark="none"></div>
-      <div class="cell" id="cell4" data-cell="4" data-mark="none"></div>
-      <div class="cell" id="cell5" data-cell="5" data-mark="none"></div>
+      <div class="cell" id="cell3" data-prestart="yes" data-cell="3" data-mark="none"></div>
+      <div class="cell" id="cell4" data-prestart="yes" data-cell="4" data-mark="none"></div>
+      <div class="cell" id="cell5" data-prestart="yes" data-cell="5" data-mark="none"></div>
     </div>
     <div class="row" id="row2">
-      <div class="cell" id="cell6" data-cell="6" data-mark="none"></div>
-      <div class="cell" id="cell7" data-cell="7" data-mark="none"></div>
-      <div class="cell" id="cell8" data-cell="8" data-mark="none"></div>
+      <div class="cell" id="cell6" data-prestart="yes" data-cell="6" data-mark="none"></div>
+      <div class="cell" id="cell7" data-prestart="yes" data-cell="7" data-mark="none"></div>
+      <div class="cell" id="cell8" data-prestart="yes" data-cell="8" data-mark="none"></div>
     </div>
   </section>
   <section id="lower-panel">
     <div class="row">
-      <p class="score">YOU: <span class="upperMargin" id="human-wins">0</span></p>
       <p class="score">ME: <span class="upperMargin" id="computer-wins">0</span></p>
+      <p class="score">YOU: <span class="upperMargin" id="human-wins">0</span></p>
       <p class="score">TIES: <span class="upperMargin" id="ties">0</span></p>
-    </div>
-    <div class="row">
-      <p id="announcement" data-display="no"></p>
     </div>
   </section>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
