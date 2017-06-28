@@ -224,7 +224,7 @@ function computerPlays() {
       break;
     case "Moderate":
       var temp = Math.random();
-      if (temp < 0.5) {
+      if (temp < 0.25) {
         playEasy();
       } else {
         playHard();
