@@ -1,0 +1,28 @@
+<div id="top"></div>
+<ul>
+  <div id="myLi">
+    <li>First List Item</li>
+    <li>Second List Item</li>
+    <li>Third List Item</li>
+    <li>Fourth List Item</li>
+  </div>
+</ul>
+<div id="div" >
+    <p class="paragraph" id="P1">Paragraph 1</p>
+    <p class="paragraph" id="P2">Paragraph 2</p>
+    <p class="paragraph" id="P3">Paragraph 3</p>
+    <p class="paragraph" id="P4">Paragraph 4</p>
+</div>
+<script>
+  var list = document.createElement("LI");
+  var li = document.createTextNode("Fifth List Item");
+  list.appendChild(li);
+  document.getElementById("myLi").appendChild(list);
+  var element =  document.getElementById("div");
+  var child = document.getElementById("P4");
+  child.parentNode.removeChild(child);
+  var title = document.title="Manipulating the Dom";
+  window.alert("5 list items are on the page");
+
+
+</script>
