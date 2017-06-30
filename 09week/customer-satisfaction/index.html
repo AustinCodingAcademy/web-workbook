@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE-=edge" />
+  <meta name="viewport" content="width = device-width, initial-scale = 1" />
+
+  <link type="text/css" rel="stylesheet" href="css/reset.css" />
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Wallpoet" rel="stylesheet">
+
+  <title></title>
+</head>
+<body>
+  <h1>Let us know how we're doing!</h1>
+
+  <div class="formContainer">
+    <form class="" action="index.html" method="post" />
+      <!--Name-->
+      <label for="firstName">First Name:</label>
+      <input type="text" name="firstName" value="" required />
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" name="lastName" value="" required accept=""pattern="[a-zA-Z]{10,}" />
+      <!--Password-->
+      <label for="password">Password:</label>
+      <input type="password" name="password" value="" />
+      <!-- URL -->
+      <label for="webSite">URL:</label>
+      <input type="url" name="url" value="" />
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" name="email" value="" required />
+      <!-- Range  -->
+      <label for="range">Please rate your statifaction:</label>
+      <p>0</p><input id="range" type="range" name="points" min="0" max="10"><p>10</p>
+      <!-- Checkbox -->
+      <label for="checkbox">Would you like us to contact you?</label>
+      <input class="inlineCheck" type="checkbox" name="yes" value="" /> Yes<br>
+      <input class="inlineCheck" type="checkbox" name="no" value="" /> No
+      <!-- Radio -->
+      <label for="radio">How would you like us to contact you?</label>
+      <input class="inlineCheck" type="radio" name="contact" value="phone" /> Phone<br>
+      <input class="inlineCheck" type="radio" name="contact" value="email" checked /> Email<br>
+      <input class="inlineCheck" type="radio" name="contact" value="text" /> Text
+
+      <!-- Textbox -->
+      <label for="message">Message:</label>
+      <textarea name="name" rows="8" cols="80" spellcheck="true"></textarea>
+
+      <!-- Submit Buttons -->
+      <input class="button" type="submit" name="" value="submit" />
+      <input class="button" type="reset" name="" value="Reset" />
+
+    </form>
+  </div>
+
+
+</body>
+</html>
