@@ -1,7 +1,5 @@
 header{
 background-color:lightgrey;
-height: auto;
-
 }
 
 h1{
@@ -12,12 +10,54 @@ a:hover{
   color: red;
 }
 div{
-font-family: fantasy;
 float: right;
-background-color:lightgrey;
-width: 100%;
-padding-top:.1%;
 text-align: right;
-  padding-right: 30px
+}
+main{
 
+  margin-left: 35%;
+  margin-right: 35%
+}
+
+date{
+color:blue;
+}
+.read-more-state {
+  display: none;
+}
+/*label,p {float:right;}*/
+
+p, label{
+  text-align: left;
+}
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+  margin: 9px;
 }
