@@ -1,12 +1,12 @@
 header{
   background-color:#213D56;
   margin-bottom: 10px;
-   }
+}
 .logo{
   float:left;
 }
 .nav-links{
-  background-color:purple;
+  /*background-color:purple;*/
   float:right;
   width:auto;
 }
@@ -30,7 +30,7 @@ header{
 }
 
 body{
-
+  display: block;
   background-image: url("airline.jpg");
   background-color:#213D56;
 }
@@ -38,27 +38,30 @@ body{
 .booking-container{
   background-color:#00004d;
   height:600px;
-  width: 400px;
- }
+  width: 500px;
+}
 
 
 .booking-options{
-/*background-color:red;*/
+  background-color:#213D56;
 }
 
 .booking-plane-icon{
   background-color:blue;
+
 }
 
 .booking-hotel-icon{
   background-color:green;
+
 }
 .booking-car-icon{
   background-color:green;
+
 }
 
-.passenger-count:before{
-  content:"Passengers";
+.passenger-count::before{
+  content:"Passengers  ";
   color:white;
   float:left;
 }
@@ -66,4 +69,29 @@ body{
 .radio-buttons{
   color:white;
   float:left;
+}
+
+.radio-buttons + .p{
+backgrtound-color:grey;
+float:right;
+}
+
+
+
+input{
+  display:block;
+  height:100px;
+  width:200;
+  float:left;
+  margin:12px;
+}
+
+
+
+button{
+  position:relative;
+  display:block;
+
+
+
 }
