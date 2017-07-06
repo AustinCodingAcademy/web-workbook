@@ -1,0 +1,179 @@
+/* CSS Reset -- Typically in reset.css.  Place right below comment if no reset.css is referenced in html */
+
+/* Box Sizing border-box */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 14pt;
+  background-color: lightgray;
+}
+
+/* Defaulting styling of base html tags.  I "zeroed" them out in my reset */
+h2 {
+  font-size: 24pt;
+  /*font-weight: bold;*/
+  padding: 10px 0 20px 0px;
+}
+
+h3 {
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+}
+
+/*This is used only in the footer*/
+h4 {
+font-size: 20pt;
+font-weight: bold;
+color: #f9f8f8;
+padding-bottom: 10px;
+}
+
+/*Master container*/
+.wrapper {
+  margin: 0% 5%;
+  /*width: 95vw;*/  /*it reduces width, but cannot center using flex*/
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  background-color: #f9f8f8;
+  /*background-color: white;*/
+  /*border: 2px solid blue;*/
+  min-height: 100vh;
+}
+
+/*Container for main.  Headline and Top stories are subsections*/
+.mContainer {
+  display: flex;
+  /*justify-content:center;*/
+  /*align-items:center;*/
+  /*border: 2px solid green;*/
+  /*height: 600px;*/
+  /*margin: 2%;*/
+
+}
+
+/*This is referencing the child containers headline, topStories*/
+.mContainer > * {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  /*padding: 2%;*/
+  /*padding: 20px;*/
+  /*border: 2px solid goldenrod;*/
+}
+
+/*flex items in headline container*/
+.imgOffice {
+  width: 100%;
+}
+.headline p {
+  font-size: 14pt;
+}
+.hButton {
+  width: 120px;
+  background-color: #5d5d5d;
+  color: #f9f8f8;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 4px;
+}
+.hButton:hover {
+  cursor: pointer;
+}
+
+/*flex items in topStories container*/
+.topLinks {
+  color: black;
+  font-size: 10pt;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 0px;
+}
+.fContainer {
+  /*visibility: hidden;*/
+  display:none;
+  /*border: 2px solid red;*/
+
+}
+
+/*Layout for tablet sized devices 768-991 width*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .headline {
+    width: 100%;
+    }
+
+  .topStories {
+    display: none;
+    /*visibility: hidden;*/
+    /*width: 0%;*/
+    /*height: 0px;*/
+    /*margin: 0%;*/
+    /*padding:0%;*/
+  }
+}
+
+/*layout for phones 767px or smaller width*/
+@media (max-width: 767px) {
+
+.mContainer {
+  }
+
+  .headline {
+    width: 100%;
+    margin: 4%;
+  }
+
+  .topStories {
+    display: none;
+    /*visibility: hidden;*/
+    /*width: 0%;*/
+    /*height: 0px;*/
+    /*margin: 0%;*/
+    /*padding:0%;*/
+  }
+
+  .fContainer {
+    visibility: visible;
+    display: flex;
+    justify-content: space-around;
+    background-color: #5d5d5d;
+    /*border: 2px solid red;*/
+    color: #f9f8f8;
+  }
+
+  .fContainer > * {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 20px 0px;
+  }
+
+  .fLinks, .mLinks {
+    font-size: 14pt;
+    color: #f9f8f8;
+    text-decoration: none;
+    border-bottom: 2px solid #f9f8f8;
+    padding: 5px 0px;
+    /*border: 2px solid red;*/
+  }
+
+.fb {
+  padding-left: 2.4em;
+  /*padding-left: 25%;*/
+}
+.ig {
+  padding-left: 2em;
+}
+.tw {
+  padding-left: 3.4em;
+}
+  .linkObj5 {
+    border-bottom: none;
+  }
+}

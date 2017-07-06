@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DOM Examples</title>
+  </head>
+  <body class="normal">
+    <h1 id="headline">
+      Hello <em>Wold</em>
+    </h1>
+    <p id="content">
+      This is a normal <strong>paragraph.</strong>
+      <br>
+      <em>This is emphasized</em>
+    </p>
+
+    <script>
+      function clickListener() {
+        alert('I was clicked');
+      }
+
+      function clickListener2() {
+        alert('I was clicked #2');
+      }
+
+      function bind(element, event, func) {
+        if (element.addEventListener) {
+          element.addEventListener(event, func);
+        }
+        else if (element.attachEvent) {
+          element.addEventListener('on' + event, func);
+        }
+        else {
+          element['on' + event] = func;
+        }
+      }
+
+      var h1 = document.getElementById('headline');
+      bind(h1, 'click', function(){ alert('Clicked!') });
+      // if (h1.addEventListener) {
+      //   h1.addEventListener('click', clickListener);
+      // }
+      // else if (h1.attachEvent) {
+      //   h1.attachEvent('onclick', clickListener);
+      // }
+      // else {
+      //   h1.onclick = clickListener;
+      // }
+
+      // h1.addEventListener('click',clickListener2);
+
+    </script>
+
+  </body>
+</html>

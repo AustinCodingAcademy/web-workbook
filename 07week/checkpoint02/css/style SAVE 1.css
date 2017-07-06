@@ -1,0 +1,103 @@
+/* CSS Reset -- Typically in reset.css.  Place right below comment if no reset.css is referenced in html */
+
+/* Box Sizing border-box */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #333333;
+  background: -webkit-linear-gradient(left, gray,lightgray); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, gray,lightgray); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, gray,lightgray); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, gray,lightgray); /* Standard syntax (must be last) */
+  background: linear-gradient(to bottom right, black,lightgray); /* Standard syntax (must be last) */
+  color: white;
+  /*font-family: 'Calligraffitti', cursive;*/
+  /*font-family: 'Barrio', cursive;*/
+  /*font-family: 'Chewy', cursive;*/
+  /*font-family: 'Bangers', cursive;*/
+  /*font-family: 'Homemade Apple', cursive;*/
+  /*font-family: 'Covered By Your Grace', cursive;*/
+  /*font-family: 'Rock Salt', cursive;  */
+  font-family: 'Acme', sans-serif;
+}
+
+.myLogo {
+  position: absolute;
+  top:-8%;
+  left:-2%;
+
+}
+
+.myNav {
+  /*display: flex;*/
+  height: 180px;
+  /*align-items: center;*/
+  /*justify-content: flex-end;*/
+}
+.myNavCenter {
+  /*display: flex;*/
+  /*justify-content: flex-end;*/
+  position:relative;
+  left:40%;
+}
+.myNavRight {
+  display: flex;
+  justify-content: center;
+}
+.myContainer {
+  /*width: 90vw;*/
+  /*border: 5px ridge black;*/
+  background: inherit;
+
+  color: white;
+  /*min-height: 100vh;*/
+}
+
+.myArticle {
+  border: 5px outset #333333;
+}
+
+.nopadding {
+  margin: 0px;
+  padding:0px;
+}
+
+/*Layout for tablet sized devices 768-991 width*/
+@media (min-width: 992px) {
+
+  .myLogo {
+    position: absolute;
+    top:-8%;
+    left:-2%;
+
+  }
+
+  .myNav {
+    /*display: flex;*/
+    height: 200px;
+    /*align-items: center;*/
+    /*justify-content: flex-end;*/
+  }
+  .myNavCenter {
+    /*display: flex;*/
+    /*justify-content: flex-end;*/
+    position:relative;
+    left:40%;
+  }
+  .myNavRight {
+    display: flex;
+    justify-content: center;
+  }
+  .myContainer {
+    /*width: 90vw;*/
+    /*border: 5px ridge black;*/
+    background: inherit;
+
+    color: white;
+    /*min-height: 100vh;*/
+  }
+}

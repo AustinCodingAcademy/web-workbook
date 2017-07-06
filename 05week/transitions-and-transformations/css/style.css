@@ -1,0 +1,128 @@
+/* CSS Reset -- Typically in reset.css.  Place right below comment if no reset.css is referenced in html */
+
+/* Box Sizing border-box */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*body and container used to setup background*/
+body {
+  background-color: lightgray;
+}
+
+.container {
+  background-color: #777;
+}
+
+/*This group closely outlines the squares.  When you hover into this box, the animations occur*/
+.square-group {
+  margin: auto 525px;
+  /*background-color: #AAA;*/
+
+}
+
+/*Basic design of the square object*/
+.square {
+  width: 50px;
+  height: 50px;
+  border-radius: 2px;
+  margin: 10px auto;
+}
+
+/*Transition Behavior of odd squares*/
+.square:nth-child(odd) {
+  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 4s 2.5s;
+  transition: width 2s, height 2s, background-color 2s, transform 4s 2.5s;
+}
+
+/*Transition Behavior of even squares*/
+.square:nth-child(even) {
+  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s ease-in-out 2.5s;
+  transition: width 2s, height 2s, background-color 2s, transform 1s ease-in-out 2.5s;
+}
+
+/*Behavior of odd squares*/
+.square-group:hover .square:nth-child(odd) {
+  width: 100px;
+  height: 100px;
+  transform: translateX(400px) rotate(720deg);
+}
+
+/*Behavior of even squares*/
+.square-group:hover .square:nth-child(even) {
+  width: 25px;
+  height: 25px;
+  transform: translateX(-500px) rotate(-720deg);
+}
+
+/*My colors*/
+.square1 {
+  background-color: crimson;
+}
+.square2 {
+  background-color: hotpink;
+}
+.square3 {
+  background-color: coral;
+}
+.square4 {
+  background-color: darkorange;
+}
+.square5 {
+  background-color: khaki;
+}
+.square6 {
+  background-color: yellow;
+}
+.square7 {
+  background-color: limegreen;
+}
+.square8 {
+  background-color: forestgreen;
+}
+.square9 {
+  background-color: seagreen;
+}
+.square10 {
+  background-color: blue;
+}
+.square11 {
+  background-color: rebeccapurple;
+}
+.square12 {
+  background-color: navy;
+}
+/**************************************
+*** All the crazy things I tried ***
+**************************************/
+.square:nth-child(odd):hover {
+  /*width: 100px;*/
+  /*height: 100px;*/
+  /*transform: translateX(400px) rotate(360deg);*/
+}
+
+.square:nth-child(even):hover {
+  /*transform: scale(0.5);*/
+  /*width: 100px;*/
+  /*height: 100px;*/
+}
+.square:hover {
+  /*transform: rotate(180deg) skewX(-20deg);*/
+  /*-webkit-transform: scale(2) rotate(180deg) skewX(-20deg);*/
+}
+
+.odd:hover {
+  /*transform: scale(2) rotate(180deg) translateX(200px);*/
+  /*transform: scale(2) rotate(180deg);*/
+  /*transform: scale(2) translateX(200px);*/
+  /*transform: scale(2);*/
+
+}
+.even:hover {
+  /*transform: scale(0.5) rotate(-360deg) translateX(-200px);*/
+  /*transform: scale(0.5) rotate(-180deg);*/
+  /*transform: scale(0.5) translateX(-400px);*/
+  /*transform: scale(0.5);*/
+}

@@ -1,0 +1,90 @@
+/* CSS Reset -- Typically in reset.css.  Place right below comment if no reset.css is referenced in html */
+
+/* Box Sizing border-box */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+/* Default styles to make each box visible */
+.box {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 4px 4px 0 rgba(0,0,0,0.3);
+  padding: 10px;
+}
+
+.box1 {background: #1abc9c;}
+.box2 {background: #3498db;}
+.box3 {background: #9b59b6;}
+.box4 {background: #34495e;}
+.box5 {background: #f1c40f;}
+.box6 {background: #e67e22;}
+.box7 {background: #e74c3c;}
+.box8 {background: #bdc3c7;}
+.box9 {background: #2ecc71;}
+.box10 {background: #16a085;}
+
+/* We start writing out flexbox here */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 10px solid hotpink;
+  height: 100vh;
+  /*height: 100vh;*/
+  /*align-items: flex-start;*/
+  /*flex-direction: row;*/
+  /*justify-content: center;  /*main axis*/*/
+  /*align-content: space-around;  /*cross axis*/*/
+}
+
+.box {
+  /*flex:1;*/
+  /*order: 1;*/
+  /*width:33.33333333%;*/
+  /*padding: 10px;*/
+  /*border: 10px solid mistyrose;*/
+  flex-basis: 250px;
+  flex-grow: 1;
+}
+
+/*.box1 {
+  flex 10 5 400px; /*grow shrink base width
+}*/
+
+/*.box2 {
+  flex-basis:400px;
+  flex-grow:1;
+  flex-shrink:1;
+  flex: 1 1 400px;
+  flex:2;
+  padding-bottom: 200px;
+}*/
+
+.box3 {
+  /*order: -1;*/
+  /*font-size: 20px;*/
+  flex-grow: 5;
+}
+.box4 {
+  flex-basis: 100px;
+}
+/*.box6 {
+  padding-bottom: 0;
+}*/
+
+/*.box7 {
+  order: -2;
+  font-size: 150px;
+}*/
+
+/*.box9 {
+  padding-bottom: 50px;
+  align-self: baseline;
+}*/
