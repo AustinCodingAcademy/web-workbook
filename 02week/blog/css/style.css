@@ -1,11 +1,11 @@
 * {
   font-family: "Palatino Linotype", serif;
   background-color: lavender;
-  color:gray;
-  padding-left:20px;
-  padding-righ:20px;
-  margin-left:20px;
-  margin-right:20px;
+  color: gray;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 h1 {
@@ -18,43 +18,54 @@ h1 {
   text-shadow: 1px 1px black;
 }
 h2 {
-    padding-left:inherit;
-  padding-right:inherit;
+  padding: inherit;
   margin: inherit;
   font-weight: bold;
   color: black;
 }
 
 h3 {
-    padding: inherit;
+  padding: inherit;
   margin: inherit;
   color: red;
 }
 
- p {
-    padding: inherit;
-    margin: inherit;
-   font-size:  18px;
-   text-decoration: none;
-   hyphens:auto;
- }
+/* highlight first letter of first paragroup per group */
+h2 + p:hover::first-letter {
+  text-transform: uppercase;
+  color: black;
+  font-size: 30px;
+}
+
+p {
+  padding: inherit;
+  margin: inherit;
+  font-size: 18px;
+  text-decoration: none;
+  text-indent: 20px;
+  hyphens: auto;
+}
 
 
 .book {
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 /* order matters here !  Hover must come after link
  and visited.  Active must come after hover.  */
-a:link{ color: darkblue;   font-weight: normal;}
-a:visited{ color: purple; font-weight: normal;}
-a:hover{ color: pink; font-weight:bold;}
-a:active{ color: blue; font-weight:normal;}
-
-/*  Changes the first letter of first group of paragraphs to large
-    uppercase when hovering over it */
-div + p:hover::first-letter {
-  text-transform: uppercase;
-  color: black;
-  font-size: 30px;
+a:link {
+  color: darkblue;
+  font-weight: normal;
+}
+a:visited {
+  color: purple;
+  font-weight: normal;
+}
+a:hover {
+  color: pink;
+  font-weight: bold;
+}
+a:active {
+  color: blue;
+  font-weight: normal;
 }
