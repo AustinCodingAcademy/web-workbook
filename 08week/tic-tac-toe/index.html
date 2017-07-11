@@ -6,6 +6,24 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<!-- This is the heading where I used span to create different colors for each word in tic-tac-toe  -->
+  <div id="heading">
+    <center><h3><span style="color:purple;font-weight:bold">Adam's</span> - <span style="color:green;font-weight:bold">Tic</span> - <span style="color:yellow;font-weight:bold">Tac</span> - <span style="color:blue;font-weight:bold">Toe</span></h3></center>
+  </div>
+
+<!-- I made a link back to my portfolio so that the viewer can have easy access back to my homepage -->
+<nav>
+   <a href="https://adamgrieder.github.io/web-workbook/10week/bio-part-2/index.html" class="nb">Return Home</a>
+ </nav>
+
+ <!-- Div with rules of the game inside: floated to the right of page -->
+<div id="rules">
+  <u><h3>Rules:</h3></u>
+  The object of Tic Tac Toe is to get three in a row.The first player is known as X and the second is O. Players alternate placing Xs and Os on the game board until either oppent has three in a row or all nine squares are filled.
+</div>
+
+<!-- This is the container that holds the datacells used for players -->
+  <div id="container">
   <div class="row">
     <div data-cell="0"></div>
     <div data-cell="1"></div>
@@ -21,8 +39,13 @@
     <div data-cell="7"></div>
     <div data-cell="8"></div>
   </div>
+<!-- button that I restyled to go with the style of the page, used to clear board/announce winner -->
   <div id="announce-winner"></div>
   <button id="clear">Clear Board</button>
+</div>
+
+
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="./script.js"></script>
 </body>

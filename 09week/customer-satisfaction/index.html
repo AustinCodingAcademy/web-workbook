@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="css/style.css">
+<head>
+  <title>Customer Satisfaction Form</title>
+</head>
+<body>
+  <center><h2>Customer Satisfaction Form Request</h2></center>
+  <div>
+  <form>
+    <h3>Basic Information:</h3>
+    <label for="firstName">First Name:</label>
+    <input type="text" name="firstName" placeholder="Your name here" required />
+
+    <label for="lastName">Last Name:</label>
+      <input type="text" name="lastName" placeholder="Your Last name" pattern="[a-zA-Z]{10}" required />
+
+          <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Your Email" />
+    <label for="lastName">Message:</label>
+    <textarea name="message" spellcheck="true"></textarea>
+     <br/>
+     <form action="/action_page.php">
+  Add Your Homepage:
+  <input type="url" name="homepage" placeholder="Your URL">
+  <br/>
+</form>
+
+
+  <input type="checkbox" name="gender" value="Female">Female<br/>
+  <input type="checkbox" name="gender" value="Male">Male<br/>
+  </form>
+
+  <p>
+  Please Choose Your Overall User Satisfaction:<br>
+  </p>
+
+  <form action="satisfaction" method="get">
+    Points:
+    <input type="range" name="points" min="0" max="10">
+    <input type="submit">
+  </form>
+
+
+
+  </div>
+</body>
+</html>
