@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Book your flight!</title>
+</head>
+
+<body>
+  <div class="wholedangthing">
+    <header>
+      <img src="img/logo.png" alt="companylogo" class="mainlogo">
+      <!-- this is the nav bar -->
+      <nav>
+        <span class="button, home"><img src="img/home-icon.png" alt="home navigation logo">
+      <a href="index.html">Home</a>
+      </span>
+        <span class="button, travel"> <img src="img/deal-icon.png" alt="travel deal" logo >
+      <a href="index.html">Travel Deals</a>
+      </span>
+        <span class="button, flight"><img src="img/schedule-icon.png" alt="schedule navigation logo">
+      <a href="index.html">Flight Schedule</a>
+      </span>
+        <span class="button, login"><img src="img/login-icon.png" alt="home navigation logo">
+      <a href="index.html">Register/Login</a>
+      </span>
+      </nav>
+    </header>
+    <!-- This is the little box outside the header.... the forms if you will -->
+    <section class="formcontainer">
+      <span class="photobar">
+        <div class="greenlink">
+          <a href="greenlink"><img src="img/plane-icon.png" alt="plane icon"></a>
+        </div>
+
+        <div class="bluelink">
+          <a href="bluelink"><img src="img/hotel-icon.png" alt="bed icon"></a>
+        </div>
+
+        <div class="bluelink">
+          <a href="bluelink"><img src="img/car-icon.png" alt="car icon"></a>
+        </div>
+
+      </span>
+      <!-- this is the box underneath the colored tabbed ribbon -->
+      <form class="formbox">
+        <input type="text" class="departfield" placeholder="Depart">
+        <input type="text" class="arrivefield" placeholder="Arrive">
+        <input type="text" class="datedepart" placeholder="mm/dd/yyyy">
+        <input type="text" class="datearrive" placeholder="mm/dd/yyyy">
+
+        <div class="passengerbar">
+          <span>Passengers</span>
+
+          <select list="passengers" class="passnum">
+      <datalist class="passengernum">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </datalist>
+      </select>
+        </div>
+        <div class="tripradio">
+          <input type="radio" name="flighttype" value="return" checked>Return
+          <input type="radio" name="flighttype" value="oneway">One Way
+        </div>
+      </form>
+      <div class="searchbutton">Search Flights</div>
+    </section>
+  </div>
+</body>
+
+</html>
