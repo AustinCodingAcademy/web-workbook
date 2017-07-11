@@ -1,0 +1,171 @@
+  /*reset all margins and paddings to zero*/
+  *{
+      margin: 0;
+      padding: 0;
+    }
+
+    .main {
+      background: url(../img/airline.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 700px;
+      width: 100%;
+      margin-top:0;
+      border-style: solid;
+    }
+
+    .header {
+      height: 50px;
+      background-color:#324a70;/*navbar header*/
+      width: 100%;
+    }
+    /*header image*/
+    .header img {
+      height: 50px;
+    }
+
+    .header .navbar {
+    list-style-type: none;
+    float: right;
+    margin-top: 12px;
+    margin-right: 60px;
+    }
+
+    .header .navbar a {
+      padding:10px;
+      text-decoration: none;
+      font-family: 'Vollkorn', serif;
+      color: white;
+    }
+    /*navbar icons*/
+    .header .navbar img {
+      height: 13px;
+      margin-right: 7px;
+    }
+
+  /*navbar icon enlarges and changes color on hover*/
+    .header .navbar img:hover {
+      height: 20px;
+      background-color: #14d18c;
+    }
+    /*On hover navbar selection changes color*/
+    .header .navbar a:hover {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: 'Shadows Into Light', cursive;
+      color: #14d18c;
+    }
+
+    .main .planner {
+      height: 400px;
+      margin-top:100px;
+      margin-right: 872px;
+      margin-left: 23px;
+      border-radius: 2%;
+      background-color: #324a70;
+    }
+
+    .planner .btn-group {
+      height: 40px;
+      background-color: #046266;
+    }
+
+  /*images:plane-icon|hotel-icon|car-icon*/
+    .planner .btn-group img {
+      height: 38px;
+      margin-top: 5px;
+      margin-bottom:5px;/*i don´t under why this declaration is not working*/
+      padding-right: 8px;
+      padding-left: 65px;
+      margin-left: 20px;
+
+  }
+  /*On hover change color and size*/
+  .planner .btn-group img:hover {
+      height:25px;
+      background-color: #463e4c;
+  }
+  /*plane is active*/
+  .active {
+    background-color: hsl(225, 100%, 40%);
+  }
+  /*On click change color*/
+  .planner .btn-group img:active {
+      background-color: #0c5b56;
+  }
+  .planner .plane .depart-arrive {
+      margin-top: 50px;
+
+  }
+  /*input boxes of depart and arrive*/
+   input[type=text] {
+     width: 40%;
+     margin-left: 12px;
+     padding: 8px 10px;
+     border: 2px solid white;
+     border-radius: 4px;
+     background-color: #324a70;/*color*/
+     font-family: 'Merriweather', serif;
+     font-size: 14px;
+   }
+   /*on focus, text box becomes white*/
+   input[type=text]:focus {
+      background-color: white;
+  }
+
+  .planner .plane .return-one-way-passenger{
+    margin-top: 50px;
+  }
+  /*class return-one-way label*/
+  label[for=return-one-way]{
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    color:white;
+  }
+
+  .planner .date {
+    margin-top: 30px;
+  }
+  /*input date box*/
+  input[type=date] {
+    width: 40%;
+    margin-left: 12px;
+    padding: 8px 10px;
+    border: 2px solid white;
+    border-radius: 4px;
+    background-color: #324a70; /*color*/
+  }
+  .planner .plane .return-one-way {
+    float: right;
+    margin-right:90px;
+  }
+  .planner .plane .passenger-no {
+    float: left;
+    margin-left:20px;
+
+  }
+  /*passenger label*/
+  label[for=passenger]{
+    font-family: 'Merriweather', serif;
+    margin-right:20px;
+    font-size: 14px;
+    color: white;
+  }
+
+  .main .planner .plane .search {
+    margin-top: 50px;
+
+  }
+  /*styling the search button*/
+  input[type=submit] {
+    width:95%;
+    margin-left:10px;
+    border: none;
+    color: white;
+    padding: 8px 10px;
+    margin-left:10px;
+    margin-top: 30px;
+    background-color: hsl(225, 100%, 40%);
+    border-radius: 2px;
+    font-family: 'Merriweather', serif;
+  }

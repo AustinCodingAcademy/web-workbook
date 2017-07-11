@@ -1,18 +1,53 @@
-div[data-cell] {
-  width: 100px;
-  height: 100px;
-  background-color: #f2f2f2;
-  float: left;
-  border: 1px solid #808080;
-  font-size: 100px;
-  text-align: center;
+body {
+  display: flex;
+  /*justify-content: center;*/
+  flex-direction: column;
+  /*outline-style: solid;*/
+}
+
+#gameboard {
+  margin: 60px auto 0px auto;
+  height: 1000px;
+  width: 360px;
 }
 
 .row {
-  clear: both;
+  display: flex;
+  justify-content: center;
 }
 
-#announce-winner {
-  clear: both;
-  font-size: 50px;
+.square{
+  width: 120px;
+  height: 85px;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 35px; /*to center align x's and o's*/
+  /*outline-style: solid;*/
+}
+/*o element*/
+.row .fa-circle-o{
+
+    font-size: 50px;
+}
+/*x element*/
+.row .fa-times{
+
+    font-size: 50px;
+}
+/*horizontal line*/
+.bottom {
+  border-bottom: 1px solid black;
+}
+/*vertical line*/
+.right {
+  border-right: 1px solid black;
+}
+
+
+#gameboard #reset {
+  width:100%;
+  height:50px;
+  margin-top: 50px;
+  font-size:24px;
+  outline-style: solid;
 }

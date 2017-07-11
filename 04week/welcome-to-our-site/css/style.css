@@ -1,0 +1,80 @@
+.column-layout {
+  max-width: 1300px;
+  background-color: #FFF;
+  margin: 40px 70px 0 70px;
+  height: 250px;
+  padding: 20px 50px;
+  outline-style: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #42f1f4;
+  font-size: 30px;
+}
+
+
+.footer-container {
+  max-width: 1400px;
+  margin-left: 70px;
+  margin-right: 70px;
+  outline: solid;
+  display: flex;
+  justify-content: space-around;
+  background-color: #0c0c0c;
+}
+
+.content {
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 30%;
+  align-items: center;
+
+  flex-direction: column;
+
+
+}
+
+.content .title {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+.content .bar {
+  height: 20px;
+  width: 100px;
+}
+
+p{
+  color:white;/*all p´s are white*/
+
+}
+/*first bar*/
+.content:nth-child(1) .bar {
+  background-color: green;
+}
+/*second bar*/
+.content:nth-child(2) .bar {
+  background-color: yellow;
+}
+/*third bar*/
+.content:nth-child(3) .bar {
+  background-color: pink;
+}
+
+/*targeting tablet*/
+ @media only screen (min-width: 768px) and
+ (max-width: 991px) {
+   .column-layout  {
+     background-color: green;
+   }
+ }
+
+/*targeting a mobile phone*/
+@media only screen @media (max-width: 767px) {
+
+}
