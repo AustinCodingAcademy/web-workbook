@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Customer Satisfaction</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <div class="homer">
+        <h1>Homer Simpson's Donut Emporium <br>Customer Satisfaction Survey</h1>
+    </div>
+  </head>
+  <body>
+    <body style="background-color:#66CCFF;">
+    <div class="wrap">
+      <form  action="/action_page.php" method="get">
+        <h2>Please Fill Out the Following</h2>
+          <h4>URL</h4><input type="url" name="url" required> <br>
+          <h4>Email</h4><input type="email" name="email" required><br>
+          <h4>Password</h4><input type="password" name="password"> <br>
+          <h4>Gender</h4>
+          <input type="radio" name="gender" value="male" checked> Male<br>
+          <input type="radio" name="gender" value="female"> Female<br>
+          <input type="radio" name="gender" value="other"> Other
+          <br>
+        <h2>Why Do You Shop With Us?</h2>
+          <h3>Check All That Apply</h3>
+            <input type="checkbox" name="survey" value="value"> Cost<br>
+            <input type="checkbox" name="survey" value="location"> Location<br>
+            <input type="checkbox" name="survey" value="service "> Customer Service<br>
+            <input type="checkbox" name="survey" value="products"> Products<br>
+            <input type="checkbox" name="survey" value="products"> Sales Promotions<br>
+            <input type="checkbox" name="survey" value="products"> Quality<br>
+        <h2>How Would You Rate Us?</h2>
+          <h3>On a Scale of 1 to 10 (10 Being the Best) <br> Please rate the following?</h3>
+            <h4>Prices</h4>
+          <div class= "formrange"> <span class="rangeleft">1</span> <span class="rangecenter">5</span> <span class="rangeright">10</span> </div>
+            <input type="range" name="diet" min="0" max="10"> <br>
+            <h4>Service</h4>
+          <div class= "formrange"> <span class="rangeleft">1</span> <span class="rangecenter">5</span> <span class="rangeright">10</span> </div>
+            <input type="range" name="excercise" min="0" max="10"> <br>
+            <h4>Food Quality</h4>
+          <div class= "formrange"> <span class="rangeleft">1</span> <span class="rangecenter">5</span> <span class="rangeright">10</span> </div>
+            <input type="range" name="stress" min="0" max="10"> <br>
+            <h4>Variety</h4>
+          <div class= "formrange"> <span class="rangeleft">1</span> <span class="rangecenter">5</span> <span class="rangeright">10</span> </div>
+            <input type="range" name="mood" min="0" max="10"> <br>
+            <h4>Overall Satisfaction</h4>
+          <div class= "formrange"> <span class="rangeleft">1</span> <span class="rangecenter">5</span> <span class="rangeright">10</span> </div>
+            <input type="range" name="health" min="0" max="10"> <br>
+      </form>
+    </div>
+  </body>
+</html>
