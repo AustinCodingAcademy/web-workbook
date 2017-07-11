@@ -1,0 +1,70 @@
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 650px;
+  justify-content: space-around;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 650px;
+  justify-content: space-around;
+}
+.box {
+  height: 50px;
+  width: 50px;
+  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s 2s;
+  transition: width 2s, height 2s, background-color 2s,  transform 2s 2s;
+}
+.box-oxford {
+  background: #002147;
+}
+.box-pansy  {
+  background: #78184A;
+}
+.box-napier {
+  background: #2A8000;
+}
+.box-crimson {
+  background: #990000;
+}
+.box-fulvous {
+  background: #E48400;
+}
+.box-lemon {
+  background: #F5C71A;
+}
+.box-cobalt {
+  background: #28589C;
+}
+.box-lavender  {
+  background: #BF94E4;
+}
+.box-android {
+  background: #A4C639;
+}
+.box-coral {
+  background: #FF4040;
+}
+.box-mango {
+  background: #FF8243;
+}
+.box-midyell {
+  background: #FFEB00;
+}
+.container:hover .box:nth-child(odd) {
+  width: 100px;
+  height: 100px;
+  transform: translateX(300px) rotate(360deg);
+  background: darkblue;
+}
+.container:hover .box:nth-child(even) {
+  width: 25px;
+  height: 25px;
+  transform: translateX(-400px);
+  background: green;
+}
