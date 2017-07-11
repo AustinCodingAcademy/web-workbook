@@ -1,0 +1,86 @@
+section{
+  border-style: solid;
+  border-width: thin;
+  height: 800px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /*background-color: lightgray;*/
+}
+.box1{
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  position: relative;
+  -webkit-animation: mymove 5s ease-in-out infinite;
+  animation: mymove 5s ease-in-out infinite;
+}
+
+@keyframes mymove {
+  0% {left:0px;}
+  25%{left:500px; transform:rotate(360deg);}
+  50%{left:0px;transform:rotate(-360deg);}
+  75%{left:-500px;transform:rotate(360deg);}
+  100%{left:0px;transform:rotate(-360deg);}
+
+}
+
+
+.box2{
+  width: 50px;
+  height: 50px;
+  margin:5px;
+  position: relative;
+  -webkit-animation: mymove2 5s ease-in-out infinite;
+  animation: mymove2 5s ease-in-out infinite;
+
+}
+
+@keyframes mymove2 {
+  0%{right:0px;opacity: 0;}
+  50%{right:500px; transform:rotate(-360deg);opacity:1;}
+  100%{right:0px;transform:rotate(360deg);opacity:0;}
+
+}
+
+.box-blue{
+  background-color:blue;
+}
+.box-red{
+  background-color:red;
+}
+.box-yellow{
+  background-color: yellow;
+
+}
+.box-orange{
+  background-color: orange;
+
+}
+.box-purple{
+  background-color: purple;
+}
+.box-green{
+  background-color: green;
+}
+.box-grey{
+  background-color: grey;
+}
+.box-pink{
+  background-color: pink;
+}
+.box-crimson{
+  background-color: crimson;
+}
+.box-darkcyan{
+  background-color: darkcyan;
+}
+.box-gold{
+  background-color: gold;
+}
+.box-coral{
+  background-color: coral;
+}
