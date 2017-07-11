@@ -1,0 +1,132 @@
+body {
+  background-color: white;
+}
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#boxred {
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background-color: red;
+}
+#boxred:hover {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+}
+@-webkit-keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:red; left:50px; transform: rotate(360deg); top:0px;}
+  }
+#boxyellow {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background-color: yellow;
+}
+#boxyellow:hover {
+    background-color: yellow;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example2;
+    animation-duration: 4s;
+}
+  @-webkit-keyframes example2 {
+      0%   {background-color:yellow; left:0px; top:0px;}
+      25%  {background-color:yellow; left:-50px; transform: rotate(-360deg); top:0px;}
+    }
+
+#boxgreen {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background-color: green;
+}
+#boxgreen:hover {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: example3;
+    animation-duration: 4s;
+}
+  @-webkit-keyframes example3 {
+      0%   {background-color:green; left:0px; top:0px;}
+      25%  {background-color:green; left:50px; transform: rotate(360deg); top:0px;}
+    }
+}
+#boxpurple {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: purple;
+    position: relative;
+    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+#boxpurple:hover {
+    background-color: purple;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+#boxblue {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+#boxblue:hover {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+#boxorange {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+#boxorange:hover {
+    background-color: orange;
+    width: 25px;
+    height: 25px;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
