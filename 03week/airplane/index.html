@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Airplane</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body id="Background">
+    <div class="row header" id="AirplaneHeader">
+      <div class="col-md-6">
+        <img src="img/logo.png" />
+      </div>
+      <nav class="col-md-6">
+        <ul id="AirplaneMenu">
+          <li><a href="#"><img src="img/home-icon.png"/>Home</a></li>
+          <li><a href="#"><img src="img/deal-icon.png"/>Travel Deals</a></li>
+          <li><a href="#"><img src="img/schedule-icon.png"/>Flight Schedule</a></li>
+          <li><a href="#"><img src="img/login-icon.png"/>Register/Login</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-container">
+      <div class="form-box col-xs-4" id="FormBox">
+        <div class="col-md-4" id="Airplane">
+          <img src="img/plane-icon.png" />
+        </div>
+        <div class="col-md-4" id="Bed">
+          <img src="img/hotel-icon.png" />
+        </div>
+        <div class="col-md-4" id="Car">
+          <img src="img/car-icon.png" />
+        </div>
+        <div class="col-md-6" alt="Depart">
+          <input type="text" class="form-control" placeholder="Depart"  id="Depart">
+        </div>
+        <div class="col-md-6" alt="Arrive">
+          <input type="text" class="form-control" placeholder="Arrive" id="Arrive">
+        </div>
+        <div class="col-md-6" alt="DepartDate">
+          <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="DepartDate">
+        </div>
+        <div class="col-md-6" alt="ArriveDate">
+          <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="ArriveDate">
+        </div>
+        <div class="col-md-6" id="Passengers">
+          <p>
+            Passengers
+          </p>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              1 <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6" id="ReturnOrOneWay">
+          <form>
+            <input type="radio" name="flight" value="Return">Return
+            <input type="radio" name="flight" value="OneWay">One Way
+          </form>
+        </div>
+        <div class="col-md-12" id="SearchFlights">
+          <button class="btn-primary" type="button" id="SearchFlightBtn">Search Flights</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
