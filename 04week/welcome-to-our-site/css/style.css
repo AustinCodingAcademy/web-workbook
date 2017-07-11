@@ -1,0 +1,90 @@
+*{
+  text-align: center;
+}
+
+.top {
+  width: 100%;
+  display: block;
+}
+
+.top p {
+  width: auto;
+  font-size: 70px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  color: white;
+}
+.top p span {
+  font-weight: 900;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.top {
+  width: 100%;
+  display: block;
+  background-color: #2BCDC0;
+}
+.bottom {
+  display: flex;
+  background-color: black;
+  justify-content: space-around;
+}
+.content-box {
+  width: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: white;
+}
+  .left {
+    margin-left: 5%;
+}
+  /*remove this rule for phone media*/
+  .right {
+    margin-right: 5%;
+  }
+  /*change padding-top for phone media*/
+  .color-block {
+    width: 100%;
+    padding-top: 18%;
+  }
+  .blue {
+    background-color: #33A8DD;
+  }
+  .orange {
+    background-color: #F46731;
+  }
+  .teal {
+    background-color: #2BCDC0;
+  }
+  .content-box h4 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .content-box p {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+
+  @media (max-width: 767px) {
+    .top {
+      background-color: #33A8DD;
+    }
+    .bottom {
+      flex-direction: column;
+      align-items: center;
+      background-color: #F7F5F6;
+    }
+    .content-box {
+      width: 33%;
+      padding-top: 5%;
+      color: black;
+    }
+    .first .third {
+      margin: none;
+    }
+  }
