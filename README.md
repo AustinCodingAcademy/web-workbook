@@ -17,10 +17,10 @@
 ### Lint your code
 1. Run `npm run lint` in your terminal  
   * HTML Lint checks for HTML Syntax errors (e.g. indentations and tag closures).
-  * CSS Lint checks for CSS erros (e.g indentation, tag closures, duplicated properties). 
-  * ES Lint checks for proper JavaScript syntax (e.g. indentation and default style guide). 
+  * CSS Lint checks for CSS erros (e.g indentation, tag closures, duplicated properties).
+  * ES Lint checks for proper JavaScript syntax (e.g. indentation and default style guide).
 1. To avoid Lint errors, be sure to indent with 2 spaces (hitting the space bar twice).
-1. If there are no errors, your code has passed the Lint Process. 
+1. If there are no errors, your code has passed the Lint Process.
 1. The terminal will say something like this:
 
 ```bash
@@ -37,3 +37,7 @@
 
 #### Towers Of Hanoi
 1. Run `npm test 09week/towers-of-hanoi/test.js` in your terminal
+
+<!-- ### Run Challenges
+1. `npm test challenges/01challenge/test.js`
+1. `npm test challenges/02challenge/test.js` -->
