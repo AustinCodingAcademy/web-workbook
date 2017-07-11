@@ -1,0 +1,67 @@
+body {
+  width: auto;
+  height: 100vh;
+  background-color: black;
+}
+.container {
+  width: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.div {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+.container .div:nth-child(odd) {
+  -webkit-transition: all 2s linear 0.5s;
+  transition: all 2s linear 0.5s;
+}
+.container .div:nth-child(even) {
+  -webkit-transition: all 2s ease 0.5s;
+  transition: all 2s ease 0.5s;
+}
+.container:hover .div:nth-child(odd) {
+  transform: scale(2)translateX(300px)rotate(360deg);
+}
+.container:hover .div:nth-child(even) {
+  transform: scale(.5)translateX(-900px)rotate(-360deg);
+}
+.red {
+  background-color: red;
+}
+.orange {
+  background-color: orange;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+.purple {
+  background-color: purple;
+}
+.pink {
+  background-color: pink;
+}
+.gray {
+  background-color: gray;
+}
+.goldenrod {
+  background-color: goldenrod;
+}
+.aqua {
+  background-color: aqua;
+}
+.mistyrose {
+  background-color: mistyrose;
+}
+.teal {
+  background-color: teal;
+}

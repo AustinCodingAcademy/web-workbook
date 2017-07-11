@@ -1,5 +1,6 @@
-'use strict';
 
-$(document).ready(function() {
-  // Put app logic here
-});
+var gameboard = [
+  ["25", "50", "75", "100"],
+  [],
+  []
+]
