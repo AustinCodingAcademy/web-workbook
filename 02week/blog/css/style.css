@@ -3,32 +3,32 @@ body {
   font-family: "Proxima Nova", sans-serif;
   margin: 0 auto;
   padding: 40px;
-  width: 70%;
-  background-color: #BCBCBC;
+  width: 60%;
+  background-color: #EAEAEA;
 }
-
 section {
   padding: 50px;
   border-radius: 8px;
   background: white;
+  margin bottom: 40px;
 }
-
 h1 {
   text-align: center;
   font-weight: 500;
 }
-
 h2 {
   font-size: 2em;
 }
-
 span.date {
   color: #454545;
 }
-
 span.author {
   text-transform: uppercase;
 }
+p:first-child::first-letter:hover {
+  color: pink;
+}
+
 
 /* Blog Sections */
 section.coding {
@@ -37,6 +37,9 @@ section.coding {
 section.coding h2 {
   color: #63BFB2;
 }
+section.coding h3 {
+  border-bottom: 2px solid #63BFB2;
+}
 
 section.design {
   border: 8px solid #6ECE0A;
@@ -44,10 +47,16 @@ section.design {
 section.design h2 {
   color: #6ECE0A;
 }
+section.design h3 {
+  border-bottom: 2px solid #6ECE0A;
+}
 
 section.mobile {
   border: 8px solid #EBD203;
 }
 section.mobile h2 {
   color: #EBD203;
+}
+section.mobile h3 {
+  border-bottom: 2px solid #EBD203;
 }
