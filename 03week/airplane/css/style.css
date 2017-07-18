@@ -99,57 +99,66 @@ div.flightsearch {
 div.searchboxes {
   box-sizing: border-box;
   background-color: #2A3C4F;
-  padding: 30px 20px 30px 20px;
+  padding: 40px 30px 40px 30px;
 }
 
 div.searchboxes input[type="text"], div.searchboxes input[type="date"] {
   border: 2px solid white;
   border-radius: 4px;
-  width: 80%;
+  width: 100%;
   font-family: inherit;
   padding: 8px 12px 8px 12px;
   background: transparent;
-  margin-bottom: 20px;
+  padding-bottom: 30px;
+  font-size: .9em;
 }
 
 div.searchboxes input[type="text"]::placeholder {
-  color: #d3d3d3;
+  color: #696F76;
+}
+
+div.searchboxes input[type="date"] {
+  color: white;
 }
 
 div.depart {
   box-sizing: border-box;
   display: inline-block;
   position: relative;
-  width: 49%;
+  width: 48%;
   top: 0;
   left: 0;
+  margin-right: 2%;
 }
 
 div.arrive {
   box-sizing: border-box;
   display: inline-block;
   position: relative;
-  width: 49%;
+  width: 48%;
   top: 0;
   right: 0;
+  margin-left: 1%;
 }
 
 div.passengers {
   box-sizing: border-box;
   display: inline;
   position: relative;
-  width: 49%;
+  width: 48%;
   top: 0;
   left: 0;
+  margin-right: 2%;
+}
+
+p.passengers{
+  display: inline;
 }
 
 div.passengers select {
   display: inline;
   background: transparent;
   color: white;
-}
-
-div.passengers select option {
   border: 2px solid white;
   border-radius: 4px;
   padding: 8px 12px 8px 12px;
@@ -159,19 +168,30 @@ div.trip {
   box-sizing: border-box;
   display: inline;
   position: relative;
-  width: 49%;
+  width: 48%;
   top: 0;
   right: 0;
+  margin-left: 1%;
+  float: right;
 }
 
-div.searchbutton input[type="button"] {
+div.details {
+  padding-bottom: 30px;
+}
+
+input.submit[type="button"] {
+  width: 100%;
   background-color: #4265B3;
   text-align: center;
-  padding: 10px;
-  width: 90%;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
 }
 
-div.searchbutton input[type="button"]:hover {
+input.submit[type="button"]:hover {
   background-color: white;
   color: #4265B3;
 }
