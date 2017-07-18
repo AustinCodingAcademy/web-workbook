@@ -1,0 +1,154 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  color: white;
+}
+
+main {
+  background-image: url(img/airline.jpg);
+  background-size: 100%;
+}
+
+/* Main Nav Bar */
+nav {
+  background-color: #193A55;
+  display: inline;
+  padding: 1% 3% 1% 3%;
+  border-bottom: 2px solid white;
+}
+
+nav a {
+  width: 25%;
+}
+
+nav ul.navitems {
+  position: relative;
+  right: 0px;
+}
+
+li.home  {
+    list-style-image: url('img/home-icon.png');
+}
+
+li.deal  {
+    list-style-image: url('img/deal-icon.png');
+}
+
+li.schedule  {
+    list-style-image: url('img/schedule-icon.png');
+}
+
+li.home  {
+    list-style-image: url('img/login-icon.png');
+}
+
+ul.navitems li:hover {
+  color: #429574;
+}
+
+
+/* Flight Search Box - Tabs */
+div.flightsearch {
+  width: 500px;
+  position: relative;
+  top: 150px;
+  left: 100px;
+}
+
+div.searchicons {
+  box-sizing: content-box;
+  padding: 10px;
+  border: 1px solid inherit;
+  border-radius: 4px;
+  background-color: #429574
+}
+
+div.searchicons input[type="button"] {
+  display: inline-block;
+  position: relative;
+  height: 75px;
+}
+
+div.searchicons input[type="button"]:active {
+  background-color: #3D61AC
+}
+
+/* Flight Search Box - Fields */
+div.searchboxes {
+  box-sizing: border-box;
+  background-color: #2A3C4F;
+  padding: 20px 10 20px 10;
+}
+
+div.searchboxes input[type="text"] input[type="date"] {
+  border: 2px solid white;
+  border-radius: 4px;
+}
+
+div.searchboxes input[type="text"]::placeholder {
+  color: #d3d3d3;
+}
+
+div.depart {
+  box-sizing: border-box;
+  position: absolute;
+  width: 250px;
+  top: 0;
+  left: 0;
+}
+
+div.arrive {
+  box-sizing: border-box;
+  position: absolute;
+  width: 250px;
+  top: 0;
+  right: 0;
+}
+
+div.passengers {
+  box-sizing: border-box;
+  position: absolute;
+  width: 250px;
+  top: 0;
+  left: 0;
+}
+
+div.passengers select {
+  display: inline;
+}
+
+div.passengers select option {
+  border: 2px solid white;
+  border-radius: 4px;
+}
+
+div.trip {
+  box-sizing: border-box;
+  position: absolute;
+  width: 250px;
+  top: 0;
+  right: 0;
+}
+
+div.searchbutton input[type="button"]{
+  background-color: #4265B3;
+  text-align: center;
+  padding: 10px;
+  width: 90%;
+}
+
+div.searchbutton input[type="button"]:hover {
+  background-color: white;
+  color: #4265B3;
+}
+
+/* To test clearfix
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+*/
