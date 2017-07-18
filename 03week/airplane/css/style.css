@@ -66,12 +66,12 @@ ul.navitems li:hover {
 /* Flight Search Box - Tabs */
 div.searchicons {
   box-sizing: content-box;
-  width: 510px;
+  width: 500px;
   position: relative;
   top: 120px;
   left: 90px;
+  z-index: 1;
   padding: 10px;
-  border: 1px solid inherit;
   border-radius: 4px;
   background-color: #429574
 }
@@ -91,19 +91,25 @@ div.searchicons input[type="button"]:active {
 div.flightsearch {
   width: 500px;
   position: relative;
-  top: 150px;
+  top: 120px;
   left: 100px;
+  border-radius: 4px;
 }
 
 div.searchboxes {
   box-sizing: border-box;
   background-color: #2A3C4F;
-  padding: 20px 10 20px 10;
+  padding: 30px 20px 30px 20px;
 }
 
-div.searchboxes input[type="text"] input[type="date"] {
+div.searchboxes input[type="text"], div.searchboxes input[type="date"] {
   border: 2px solid white;
   border-radius: 4px;
+  width: 80%;
+  font-family: inherit;
+  padding: 8px 12px 8px 12px;
+  background: transparent;
+  margin-bottom: 20px;
 }
 
 div.searchboxes input[type="text"]::placeholder {
@@ -112,46 +118,53 @@ div.searchboxes input[type="text"]::placeholder {
 
 div.depart {
   box-sizing: border-box;
+  display: inline-block;
   position: relative;
-  width: 250px;
+  width: 49%;
   top: 0;
   left: 0;
 }
 
 div.arrive {
   box-sizing: border-box;
+  display: inline-block;
   position: relative;
-  width: 250px;
+  width: 49%;
   top: 0;
   right: 0;
 }
 
 div.passengers {
   box-sizing: border-box;
+  display: inline;
   position: relative;
-  width: 250px;
+  width: 49%;
   top: 0;
   left: 0;
 }
 
 div.passengers select {
   display: inline;
+  background: transparent;
+  color: white;
 }
 
 div.passengers select option {
   border: 2px solid white;
   border-radius: 4px;
+  padding: 8px 12px 8px 12px;
 }
 
 div.trip {
   box-sizing: border-box;
+  display: inline;
   position: relative;
-  width: 250px;
+  width: 49%;
   top: 0;
   right: 0;
 }
 
-div.searchbutton input[type="button"]{
+div.searchbutton input[type="button"] {
   background-color: #4265B3;
   text-align: center;
   padding: 10px;
