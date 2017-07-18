@@ -2,38 +2,63 @@
   pointer-events: none;
   cursor: default;
 }
-body {
-  background: url("http://media.wwbw.com/is/image/MMGS7/BE968-Sovereign-Series-Compensating-Euphonium-Silver/468435000919000-00-500x500.jpg") 500px;
 
+.img-shape {
+  width: 190px;
+  border-radius: 50%;
+
+  float: left;
+  shape-outside: circle();
 }
-header{  background-color: rgb(230, 230, 230);
-  width: 400px;
-  height: 200px;
-  padding: 20px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: black;
-  margin: auto;
-  float: center;
+body {
+  text-align: left;
+  background: linear-gradient(#99ff33, #66ff66);
 }
+
+.h3 {
+  font-size: 12px;
+  font-family: serif;
+}
+
+p::first-letter:hover {
+  font-size: 125%;
+  color: white;
+}
+
 p {
-  background-color: rgb(230, 230, 230);
+  background-color: #669999;
   width: 400px;
   height: 100px;
   padding: 20px;
   border-width: 2px;
-  border-style: solid;
-  border-color: black;
+  border: solid yellow;
   margin: auto;
   font-size: 22px;
+  font-family: serif;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 a:hover {
   color: black;
+  text-decoration: underline;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: blue;
 }
 
 h1 {
-  text-decoration: underline;
   font-family: serif;
   text-align: center;
 }
