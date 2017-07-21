@@ -8,7 +8,7 @@
   border-radius: 50%;
   padding: 25px;
   float: left;
-  shape-outside: circle();
+  shape-outside: circle(50%);
 }
 body {
   text-align: left;
@@ -23,17 +23,17 @@ h3 {
 	line-height: 25px;
 }
 
-p:hover::first-letter {
+div:hover::first-letter {
   font-size: 125%;
   color: red;
 }
 
-p:nth-of-type(odd) {
+div:nth-of-type(odd) {
   background-color: #ccff99 !important;
 }
 
-p {
-  text-align: center;
+div {
+  text-align: left;
   background-color: #669999;
   width: 400px;
   height: 80px;
@@ -45,10 +45,7 @@ p {
   font-size: 22px;
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
 }
-div:last-child {
 
-
-}
 .clearfix::after {
     content: "";
     clear: both;
