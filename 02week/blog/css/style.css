@@ -10,6 +10,7 @@
   float: left;
   shape-outside: circle(50%);
 }
+
 body {
   text-align: left;
   background: linear-gradient(#99ff33, #00ffcc, #33cccc, #0099ff);
@@ -19,8 +20,8 @@ body {
 
 h3 {
   font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
-	font-size: 15px;
-	line-height: 25px;
+  font-size: 15px;
+  line-height: 25px;
 }
 
 div:hover::first-letter {
@@ -33,25 +34,35 @@ div:nth-of-type(odd) {
 }
 
 div {
+  box-sizing: content-box;
+  display: inline-grid;
+  position: relative;
   text-align: left;
   background-color: #669999;
-  width: 400px;
-  height: 80px;
+  width: 500px;
+  height: auto;
   padding: 20px;
   margin: 20px;
   border-width: 4px;
   border: solid yellow;
   margin: auto;
+}
+
+div:hover {
+  opacity: .8;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+a {
+  word-wrap: normal;
   font-size: 22px;
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  word-wrap: normal;
 }
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 a:hover {
   color: black;
   text-decoration: underline;
@@ -68,7 +79,30 @@ a:visited {
 }
 
 h1 {
-  font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;  font-size: 32px;
-  font-size: 40px;
+  font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
+  font-size: 38px;
   line-height: 50px;
+}
+
+h4 {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  word-wrap: normal;
+}
+
+h5 {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  word-wrap: normal;
+}
+
+.image {
+  float: right;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  word-wrap: break-word;
+  max-height: 70%;
+  max-width: 70%;
+  margin: auto;
 }
