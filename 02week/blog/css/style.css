@@ -1,13 +1,8 @@
-.disabled {
-  pointer-events: none;
-  cursor: default;
-}
-
 .img-shape {
+  float: left;
   width: 190px;
   border-radius: 50%;
   padding: 25px;
-  float: left;
   shape-outside: circle(50%);
 }
 
@@ -34,18 +29,14 @@ div:nth-of-type(odd) {
 }
 
 div {
-  box-sizing: content-box;
-  display: inline-grid;
   position: relative;
   text-align: left;
   background-color: #669999;
   width: 500px;
   height: auto;
   padding: 20px;
-  margin: 20px;
-  border-width: 4px;
-  border: solid yellow;
-  margin: auto;
+  border: 10px solid yellow;
+  margin: 40px;
 }
 
 div:hover {
@@ -58,7 +49,7 @@ div:hover {
 }
 
 a {
-  word-wrap: normal;
+  position: absolute;
   font-size: 22px;
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   word-wrap: normal;
@@ -88,21 +79,21 @@ h4 {
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-size: 14px;
   word-wrap: normal;
+  position: relative
 }
 
 h5 {
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-size: 12px;
   word-wrap: normal;
+  position: relative;
 }
 
 .image {
-  float: right;
-  position: absolute;
+  position: inherit;
   top: 0px;
   right: 0px;
-  word-wrap: break-word;
-  max-height: 70%;
-  max-width: 70%;
-  margin: auto;
+  max-height: 30%;
+  max-width: 20%;
+  margin: 1px;
 }
