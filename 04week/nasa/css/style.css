@@ -11,30 +11,37 @@ h2 {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
-  display: flex;
-}
+  }
 
-body .nasa-background {
+.nasa-background {
   background-image: url(/web-workbook/04week/nasa/img/nasa-background.jpg);
-  flex-basis: 850px;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 850px;
+  flex-wrap: nowrap;
 }
 
 footer {
-  background-color: gray;
+  display: flex
+  background-color: #E6E6E6;
   flex-basis: 850px;
-}
-
-.social-media, .office-info, .contact-us {
-  flex-basis: 270px;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-input[type="text"] .name-field {
-  line-height: 1.5em;
+.social-media, .office-info, .contact-us {
+  flex-basis: 270px;
 }
 
-input[type="text"] .message-field {
+.name-field input[type="text"] {
+  line-height: 1.5em;
+  background-color: white;
+}
+
+.message-field input[type="text"] {
   line-height: 5em;
+  background color: white;
 }
