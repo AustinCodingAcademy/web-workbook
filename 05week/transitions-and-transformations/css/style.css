@@ -1,69 +1,82 @@
-body{
-  display:flex;
+body {
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
- .red-box {
-  width: 50px;
-  height: 50px;
-  background-color:red;
+
+.black-box {
+  background-color: black;
+}
+
+.red-box {
+  background-color: red;
 }
 
 .orange-box {
- width: 50px;
- height: 50px;
- background-color:orange;
+  background-color: orange;
 }
+
 .yellow-box {
- width: 50px;
- height: 50px;
- background-color:yellow;
+  background-color: yellow;
 }
+
 .green-box {
-width: 50px;
-height: 50px;
-background-color:green;
+  background-color: green;
 }
 
 .blue-box {
- width: 50px;
- height: 50px;
- background-color:blue;
+  background-color: blue;
 }
 
 .indigo-box {
-width: 50px;
-height: 50px;
-background-color:indigo;
+  background-color: indigo;
 }
+
 .violet-box {
-width: 50px;
-height: 50px;
-background-color:violet;
+  background-color: violet;
 }
+
 .brown-box {
-width: 50px;
-height: 50px;
-background-color:brown;
+  background-color: brown;
 }
+
 .gold-box {
-width: 50px;
-height: 50px;
-background-color:gold;
+  background-color: gold;
 }
+
 .purple-box {
-width: 50px;
-height: 50px;
-background-color:purple;
+  background-color: purple;
 }
-.black-box {
-width: 50px;
-height: 50px;
-background-color:black;
-}
+
 .magenta-box {
-width: 50px;
-height: 50px;
-background-color:magenta;
+  background-color: magenta;
+}
+
+div {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.odd {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  transition: all 1s;
+  }
+
+.even {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  transition:all 2s;
+}
+
+div:hover ~ .expand:nth-child(2n+2) {
+  transform: scale(2);
+}
+
+div:hover ~ .shrink:nth-child(1n+1) {
+  transform: scale(.5);
 }
