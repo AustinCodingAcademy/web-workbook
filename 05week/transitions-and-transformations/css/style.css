@@ -1,0 +1,79 @@
+#flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+div {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  transition: 5s all;
+  transform: 5s all;
+}
+
+#red {
+  background-color: red;
+}
+
+#orange {
+  background-color: orange;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#light-green {
+  background-color: #00ff1d;
+}
+
+#green {
+  background-color: green;
+}
+
+#light-blue {
+  background-color: #00ffe9;
+}
+
+#blue {
+  background-color: blue;
+}
+
+#purple {
+  background-color: purple;
+}
+
+#light-pink {
+  background-color: #f7aaef;
+}
+
+#pink {
+  background-color: #ff00e5;
+}
+
+#black {
+  background-color: black;
+}
+
+#gray {
+  background-color: gray;
+}
+
+.even:hover~.even {
+  transform: scale(2,2) rotate(360deg);
+}
+
+.even:hover~.odd {
+  transform: scale(.5,.5) rotate(-360deg);
+}
+
+.odd:hover~.odd {
+  transform:scale(2,2) rotate(360deg);
+}
+
+.odd:hover~.even {
+  transform: scale(.5,.5) rotate(-360deg);
+}
