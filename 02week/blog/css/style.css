@@ -8,18 +8,71 @@ header {
   font-size: 36px;
   background-color: lightyellow;
 }
-
+header:hover {
+  background-color: red;
+}
+h2 {
+  font-family: 'Lobster Two', cursive;
+  text-decoration: underline;
+}
 
 main {
   width: 75%;
   background-color: lightblue;
   float: left;
+  font-size: 1.2em;
+}
+
+article.first {
+  padding: 10px;
+  margin: 20px;
+  border: 5px solid purple;
+  background-color: yellow;
+}
+
+article.second {
+  padding: 10px;
+  margin: 20px;
+  border: 5px solid orange;
+}
+article.second::first-line {
+  background-color: slategray !important;
+}
+article.third {
+  padding: 10px;
+  margin: 20px;
+  border: 5px solid red;
+  background-color: green;
+}
+
+article.fourth {
+  padding: 10px;
+  margin: 20px;
+  border: 5px solid yellow;
+  background-color: violet;
+}
+
+article.fifth {
+  padding: 10px;
+  margin: 20px;
+  border: 5px solid white;
+  background-color: lightgray;
+}
+
+article:hover::first-letter {
+  text-transform: uppercase;
+  color: #ff3fe8;
+  font-size: 30px;
+}
+
+main article.second:hover {
+  background-color: cornflowerblue;
 }
 
 aside {
   text-align: center;
   font-family: 'Lobster Two', cursive;
-  font-size: 12px;
+  font-size: 18px;
   width: 25%;
   background-color: lightgreen;
   float: right;
