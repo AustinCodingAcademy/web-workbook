@@ -1,32 +1,77 @@
 body {
   width: 96%;
   font-family: 'Roboto', sans-serif;
+  background-color: #C8FFD1;
 }
 
 h1 {
-  padding: 2em;
-  font-weight: bold;
-  font-size: 250%;
-  positon: fixed;
+  color: #777777;
+  font-size: 550%;
+  margin: 50px auto 50px 50px;
 }
 
 #side {
-  padding-left: 2em;
-  width: 20%;
+  padding-left: 4em;
+  width: 25%;
   float: left;
 }
 
+#side h2 {
+  color: #777777;
+  font-size: 150%;
+  margin: 50px auto auto auto;
+  text-decoration: underline;
+}
 
+#side li {
+  padding-top: 10px;
+}
+
+#side iframe {
+  margin-top: 10px;
+  border: 3px black;
+  border-style: ridge;
+  padding-top: 0!important;
+}
 
 #posts {
-  width: 70%;
+  width: 65%;
   float: left;
 }
 
 #posts section {
-  border: 2px solid black;
+  background-color: #ffffff;
+  border: 3px black;
+  border-style: ridge;
   height: 250px;
   overflow: scroll;
   padding: 2em;
   margin: 0px 10px 25px 0px;
+  box-shadow: inset 0 0 10px #777777;
+}
+
+#posts h2 {
+  font-size: 18pt;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+#posts h3 {
+  color: #777777;
+  font-size: 75%;
+  margin-bottom: 20px;
+}
+
+#posts img {
+  z-index: -10;
+}
+
+#posts form {
+  margin: 20px auto auto auto;
+}
+
+p:hover::first-letter {
+  color: #777777;
+  font-size: 18pt;
+  font-style: oblique;
 }
