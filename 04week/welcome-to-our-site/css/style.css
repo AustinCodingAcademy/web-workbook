@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   }
 
 h1, h2 {
@@ -17,7 +17,8 @@ header {
 h1 {
   font-size: 4em;
   color: #fff;
-  flex: 1 80%;
+  align-self: center;
+  padding: 100px 0 100px 0;
 }
 
 span {
@@ -26,6 +27,8 @@ span {
 
 h2 {
   font-size: 3em;
+  line-height: 3.5em;
+  text-align: center;
 }
 
 section {
@@ -50,6 +53,10 @@ div.title-3 div#colorbar {
     background-color: #2BCDC0;
 }
 
+p {
+  line-height: 1.3em;
+  text-align: center;
+}
 
 /* Tablet */
 @media all and (min-width: 768px) and (max-width: 991px) {
@@ -64,7 +71,7 @@ div.title-3 div#colorbar {
     flex-flow: row nowrap;
     justify-content: space-around;
     align-items: flex-start;
-    padding: 30px;
+    padding: 50px;
   }
 }
 
@@ -82,5 +89,8 @@ div.title-3 div#colorbar {
     justify-content: space-around;
     align-items: center;
     padding: 30px;
+  }
+  div.title-1, div.title-2, div.title-3 {
+    width: 80%;
   }
 }
