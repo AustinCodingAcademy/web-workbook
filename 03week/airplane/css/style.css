@@ -1,3 +1,9 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 body {
   background-image: url("../img/airline.jpg");
   background-size: cover;
@@ -9,6 +15,7 @@ body {
 }
 
 nav {
+  position: static;
   height: 90px;
   background-color: rgb(18,55,84);
   border-bottom: 1px solid silver;
@@ -33,21 +40,70 @@ li:hover {
 }
 
 section {
+  position: absolute;
+  top: 200px;
+  left: 20%;
+  display: inline-block;
   background-color: rgb(18,55,84);
   position: relative;
-  height: 350;
-  width: 300px;
+  height: 350px;
+  width: 293px;
 }
 
 .search-icons {
+  margin-left: -1px;
+  margin-right: -2px;
   display: inline-block;
   float: left;
-  height: 40px;
-  width: 100;
+  height: 50px;
+  width: 100px;
   background: rgb(1,141,128);
   text-align: center;
 }
 
 .search-icons:hover {
-  color: rgb(0,99,183);
+  background: rgb(0,99,183);
+}
+
+.input-field {
+  font: white;
+  position: relative;
+  top: 20px;
+  left: 10px;
+  background: rgb(18,55,84);
+  width: 120px;
+  height: 40px;
+  border: 1px solid white;
+  margin: 6px;
+}
+
+p {
+  position: relative;
+  top: 35px;
+  left: 8px;
+  color: white;
+}
+
+.dropbtn {
+  position: relative;
+  top: 10px;
+  left: 104px;
+  background-color: rgb(18,55,84);
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
