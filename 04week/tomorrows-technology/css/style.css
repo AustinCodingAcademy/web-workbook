@@ -1,0 +1,128 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 3.5em;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.4em;
+}
+
+div.background {
+  background-image: url(/web-workbook/04week/tomorrows-technology/img/bg.jpg);
+  width: 100%;
+  height: 100%;
+}
+
+article {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+button {
+  background-color: #4D4D4D;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  border: none;
+  margin: 1em 0 1em 0;
+  padding: 6px;
+}
+
+aside p {
+  line-height: 2em;
+  font-size: .75em;
+  font-weight: bold;
+}
+
+article hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #000;
+  margin: 1em 0 1em 0;
+}
+
+div.flexbox {
+  display: flex;
+  flex-flow: row nowrap;
+  flex: 1 auto;
+  justify-content: space-between;
+}
+
+main {
+  flex: 3 auto;
+}
+
+aside {
+  flex: 1 auto;
+  padding-left: 20px;
+}
+
+footer {
+  display: flex;
+  color: #fff;
+  background-color: #4D4D4D;
+  padding: 20px 30px 20px 30px;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #fff;
+  margin: 1em 0 1em 0;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Laptop/Desktop */
+@media all and (min-width: 992px) {
+  body {
+    margin: 30px 10px 30px 10px;
+  }
+  footer {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media all and (min-width: 768px) and (max-width: 991px) {
+  body {
+    margin: 30px;
+  }
+  aside {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+}
+
+/* Phone */
+@media all and (max-width: 767px) {
+  main {
+    margin: 40px;
+  }
+  aside {
+    display: none;
+  }
+}
