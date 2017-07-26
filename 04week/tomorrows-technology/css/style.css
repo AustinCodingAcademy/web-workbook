@@ -6,12 +6,12 @@ body {
 }
 
 h1 {
-  font-size: 3em;
-  line-height: 3.5em;
+  font-size: 2em;
+  line-height: 2.5em;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -20,15 +20,8 @@ p {
   line-height: 1.4em;
 }
 
-div.background {
-  background-image: url(/web-workbook/04week/tomorrows-technology/img/bg.jpg);
-  width: 100%;
-  height: 100%;
-}
-
-article {
-  display: flex;
-  flex-flow: row wrap;
+div.image {
+  src: url(/web-workbook/04week/tomorrows-technology/img/bg.jpg);
 }
 
 button {
@@ -60,6 +53,10 @@ div.flexbox {
   flex-flow: row nowrap;
   flex: 1 auto;
   justify-content: space-between;
+}
+
+article {
+  flex-flow: column nowrap;
 }
 
 main {
@@ -97,7 +94,7 @@ h3 {
 /* Laptop/Desktop */
 @media all and (min-width: 992px) {
   body {
-    margin: 30px 10px 30px 10px;
+    margin: 40px;
   }
   footer {
     display: none;
