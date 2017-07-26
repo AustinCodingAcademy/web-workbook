@@ -2,16 +2,16 @@
 
 body {
   font-family: Arial, sans-serif;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 h1 {
   font-size: 2em;
-  line-height: 2.5em;
+  margin 1em 0 1em 0;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -20,31 +20,32 @@ p {
   line-height: 1.4em;
 }
 
-div.image {
-  src: url(/web-workbook/04week/tomorrows-technology/img/bg.jpg);
+img {
+  width: 100%;
+  height: auto;
 }
 
 button {
   background-color: #4D4D4D;
   color: #fff;
+  font-size: inherit;
   text-transform: uppercase;
   display: block;
   border: none;
   margin: 1em 0 1em 0;
-  padding: 6px;
+  padding: 10px;
 }
 
 aside p {
-  line-height: 2em;
-  font-size: .75em;
+  font-size: .8em;
   font-weight: bold;
+  margin-bottom: .8em;
 }
 
 article hr {
   display: block;
   height: 1px;
-  border: 0;
-  border-top: 1px solid #000;
+  border: 1px solid #000;
   margin: 1em 0 1em 0;
 }
 
@@ -59,20 +60,16 @@ article {
   flex-flow: column nowrap;
 }
 
-main {
-  flex: 3 auto;
-}
-
 aside {
-  flex: 1 auto;
-  padding-left: 20px;
+  flex: 1 25%;
+  padding-left: 40px;
 }
 
 footer {
   display: flex;
   color: #fff;
   background-color: #4D4D4D;
-  padding: 20px 30px 20px 30px;
+  padding: 30px 70px 30px 40px;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: flex-start;
@@ -83,12 +80,16 @@ footer hr {
   height: 1px;
   border: 0;
   border-top: 1px solid #fff;
-  margin: 1em 0 1em 0;
 }
 
 h3 {
   font-size: 1.2em;
   font-weight: bold;
+  margin-bottom: .8em;
+}
+
+.fa {
+  color: #fff;
 }
 
 /* Laptop/Desktop */
@@ -121,5 +122,8 @@ h3 {
   }
   aside {
     display: none;
+  }
+  body {
+    font-size: .9em;
   }
 }
