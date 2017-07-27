@@ -12,10 +12,28 @@ main {
   height: 650px;
 }
 
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+nav img {
+  float: left;
+  margin-left: 50px;
+}
+
 nav {
   height: 90%;
   background-color: #193a55;
   border-bottom: 1px solid silver;
+}
+
+nav ul {
+  padding: 40px 62px 28px 750px;
 }
 
 nav li {
@@ -42,8 +60,8 @@ nav li :visited {
 }
 
 #box {
-  width: 335px;
-  height: 303px;
+  width: 390px;
+  height: 350px;
   background-color: #193a55;
   position: absolute;
   margin: 79px 0 0 65px;
@@ -53,10 +71,15 @@ nav li :visited {
 #services {
   background-color: #009999;
   border-radius: 3px;
+  padding: 5px 20px;
+}
+
+#services a :hover{
+  background-color: #0066cc;
 }
 
 #services a {
-  margin: 0 25px;
+  margin: 0 31.5px;
 }
 
 table {
@@ -65,30 +88,22 @@ table {
   margin: 11px auto;
 }
 
-
-
-td {
-  width: 145px;
-  height: 36px !important;
-  margin: 0 12px;
-}
-
 td p {
   font-size: 60%;
-  width: 145px;
-  height: 40px;
+  width: 140px;
+  height: 30px;
   margin: 12px auto;
   color: #ffffff;
   border: .2em solid #ffffff;
   border-radius: 3px;
-  padding: 17px 0 0 10px;
+  padding: 19px 0 0 10px;
 }
 
 input {
   background-color: #193a55;
   border: .15em solid #ffffff;
   border-radius: 3px;
-  padding: 22px 0px 22px 10px
+  padding: 12px 0px 22px 10px
 }
 
 label {
@@ -105,7 +120,8 @@ input[value] {
   background-color: #0066cc;
   border: none;
   color: #ffffff;
-  width: 310px;
+  width: 340px;
   height: 40px;
-  margin: 0px 11px 20px 11px;
+  margin: 0px 12px 20px 12px;
+  padding-bottom: 33px;
 }
