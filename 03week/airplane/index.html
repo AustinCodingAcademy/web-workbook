@@ -7,7 +7,8 @@
   </head>
   <body>
     <header>
-        <img src="img/logo.png" alt="UX Atlantic Logo" id="logo">
+        <img src="img/logo.png" alt="UX Atlantic Logo" class="logo">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
       <nav>
         <a href="home"><img src="img/home-icon.png" alt="Home Icon">Home  </a>
         <a href="travelDeals"><img src="img/deal-icon.png" alt="Deal Icon">Travel Deals  </a>
@@ -17,15 +18,42 @@
     </header>
     <main>
       <section>
-        <div id="nav2">
+        <div class="nav2">
           <nav2>
-            <img src="img/plane-icon.png" alt="Plane Icon">
-            <img src="img/hotel-icon.png" alt="Hotel Icon">
-            <img src="img/car-icon.png" alt="Car Icon">
+            <div class="plane"><img src="img/plane-icon.png" alt="Plane Icon"></div>
+            <div class="hotel"><img src="img/hotel-icon.png" alt="Hotel Icon"></div>
+            <div class="car"><img src="img/car-icon.png" alt="Car Icon"></div>
           </nav2>
         </div>
-        <div id="searchForm">
-
+        <div class="searchForm">
+          <div class="depart">Depart
+          </div>
+          <div class="arrive">Arrive
+          </div>
+          <div class="departDate">mm/dd/yyyy
+          </div>
+          <div class="arriveDate">mm/dd/yyyy
+          </div>
+        </div>
+        <div class="passenger">
+          Passengers
+        </div>
+        <div class="passDropdown">
+          <select class="dropDown" name="Drop Down menu">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div class="radioForm">
+          <form>
+            <input type="radio" name="flight type" value="return" checked> Return<br>
+            <input type="radio" name="flight type" value="one-way"> One-Way<br>
+          </form> 
+        </div>
+        <div class="searchFlights">
+          Search Flights
         </div>
       </section>
     </main>
