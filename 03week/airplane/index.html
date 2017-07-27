@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teacher's Blog</title>
+  <title>Airplane Landing Page</title>
    <!--My styles -->
   <link rel="stylesheet" type="text/css" href="css/reset.css"></link>
   <link rel="stylesheet" type="text/css" href="css/style.css"></link>
@@ -12,29 +12,51 @@
 <body>
   <header>
    <nav>
-    <div class="logo" >
-      <img alt="airline logo " src="img/logo.png"/>
-    </div>
-     <div>
+       <div class="logo" >
+          <img alt="airline name logo " src="img/logo.png"/>
+       </div>
+   <div>
        <ul>
-         <li>  <img alt="home logo " src="img/home-icon.png" style="float:right;"/>
-
+          <li><p><img alt="login logo" src="img/login-icon.png"/>Register/Login</p>
+          <li><p><img alt="schedule logo" src="img/schedule-icon.png"/>Schedule</p>
+          <li> <p><img alt="plane logo" src="img/deal-icon.png"/>Travel Deals</p>
+         <li> <p> <img alt="home logo" src="img/home-icon.png"/>Home</p>
        </ul>
-     </div>
-
+   </div>
    </nav>
-
   </header>
+<main>
+    <div class="outer">
+        <div class="topboxes">
+         <img alt="airplane" src="img/plane-icon.png" width="35px" />
+         <img alt="bed" src="img/hotel-icon.png" width="35px" />
+         <img alt="car" src="img/car-icon.png" width="35px" />
+       </div>
 
-  <main>
 
+       <form class="buttons1">
+         <input type="text" style="width:150px; height:22px; background-color:#193A55;" value="Arrive">
+         <input type="text" style="width:150px; height:22px; margin-left:30px; background-color:#193A55;"value="Depart">
+       </form>
+      <form class="buttons2">
+         <input type="text" style="width:150px; height:22px; background-color:#193A55;" value="mm/dd/yyyy">
+         <input type="text" style="width:150px; height:22px; margin-left:30px; background-color:#193A55;" value="mm/dd/yyyy">
+       </form>
+       <form class="buttons3">
+         Passengers
+         <input type="number" name="quantity" min="1" max="15" step="1" value="1" style="background-color:#193A55;
+         margin-left:32px;">
+         <input type="radio" name="return" value="Return" checked style="margin-left:32px;"> Return
+         <input type="radio" name="one way" value="One Way"> One Way
+       </form>
+         <form class="buttons4">
+           <input type="submit" value="Search Flights">
 
+        </form>
 
+    <div>
 
-
-
-
- </main>
+</main>
 
 
  </body>
