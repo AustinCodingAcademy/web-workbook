@@ -50,6 +50,10 @@ section {
   width: 293px;
 }
 
+li {
+  image-resolution: 40%;
+}
+
 .search-icons {
   margin-left: -1px;
   margin-right: -2px;
@@ -74,6 +78,7 @@ section {
   width: 120px;
   height: 40px;
   border: 1px solid white;
+  border-radius: 7%;
   margin: 6px;
 }
 
@@ -84,26 +89,46 @@ p {
   color: white;
 }
 
-.dropbtn {
-  position: relative;
-  top: 10px;
-  left: 104px;
-  background-color: rgb(18,55,84);
-  color: white;
-  padding: 10px;
+p:nth-child(odd) {
+  text-align: center;
+  width: 20px;
+  height: 18px;
   border: 1px solid white;
-  cursor: pointer;
-}
-
-.dropdown {
+  border-radius: 15%;
   position: relative;
-  display: inline-block;
+  top: 19px;
+  left: 112px;
+  color: white;
 }
 
-.dropdown-content {
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+.btn {
+  display: inline-flex;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 0;
+  position: relative;
+  top: 7px;
+  left: 145px;
+  height: 10px;
+  width: 5px;
+  border-radius: 50%;
+  border: 1px;
+  font-size: 14px;
+}
+
+.button-search-flights {
+    position: relative;
+    top: 70px;
+    left: 42px;
+    background-color: rgb(13,103,189);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
