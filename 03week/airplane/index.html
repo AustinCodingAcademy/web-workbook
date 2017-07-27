@@ -25,6 +25,23 @@
   </header>
 
   <section>
+    <ul class="tabs">
+      <a href="#">
+        <li class="flight-tab selected">
+          <img src="img/plane-icon.png" />
+        </li>
+      </a>
+      <a href="#">
+        <li class="hotel-tab">
+          <img src="img/hotel-icon.png" />
+        </li>
+      </a>
+      <a href="#">
+        <li class="car-tab">
+          <img src="img/car-icon.png" />
+        </li>
+      </a>
+    </ul>
     <div class="flight-search-form">
       <form>
         <input type="text" placeholder="Depart"/>
@@ -32,7 +49,7 @@
         <input type="text" class="dates" placeholder="mm/dd/yyyy"/>
         <input type="text" class="dates" placeholder="mm/dd/yyyy"/>
 
-        <label>Passengers</label>
+        <label class="passengers">Passengers</label>
         <select>
           <option value="1"> 1 </option>
           <option value="2"> 2 </option>
@@ -40,9 +57,19 @@
           <option value="4"> 4 </option>
           <option value="5"> 5 </option>
         </select>
+
+        <input type="radio" name="flight-ticket-amount" value="Return" checked="checked"/>
+        <label>Return</label>
+        <input type="radio" name="flight-ticket-amount" value="One Way"/>
+        <label>One Way</label>
+
+        <button type="submit" value="Search Flights">Search Flights</button>
       </form>
     </div>
   </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/script.js">
 </body>
 
 </html>
