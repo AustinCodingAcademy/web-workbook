@@ -11,66 +11,93 @@
 </head>
 
 <body>
-  <header>
-    <!-- <div class="logo"> -->
-      <img class="logo" src="img/logo.png" />
-    <!-- </div> -->
-    <nav>
+
+  <!--
+
+    LOGO & NAVIGATION
+
+  -->
+
+  <header role="banner">
+    <img class="logo" src="img/logo.png" alt="UX Atlantic Logo" />
+    <nav role="navigation">
       <ul>
-        <li><img src='img/home-icon.png' /><a href="#home">Home</a></li>
-        <li><img src='img/deal-icon.png' /><a href="#travel-deals">Travel Deals</a></li>
-        <li><img src='img/schedule-icon.png' /><a href="#flight-schedule">Flight Schedule</a></li>
-        <li><img src='img/login-icon.png' /><a href="#register-login">Register/Login</a></li>
+        <li><img src='img/home-icon.png' alt="Home" /><a class="current-page" href="#home">Home</a></li>
+        <li><img src='img/deal-icon.png' alt="Travel Deals" /><a href="#travel-deals">Travel Deals</a></li>
+        <li><img src='img/schedule-icon.png' alt="Flight Schedule" /><a href="#flight-schedule">Flight Schedule</a></li>
+        <li><img src='img/login-icon.png' alt="Register or Login" /><a href="#register-login">Register/Login</a></li>
       </ul>
     </nav>
   </header>
 
-  <section>
-    <ul class="tabs">
-      <a href="#">
-        <li class="flight-tab selected">
-          <img src="img/plane-icon.png" />
-        </li>
-      </a>
-      <a href="#">
-        <li class="hotel-tab">
-          <img src="img/hotel-icon.png" />
-        </li>
-      </a>
-      <a href="#">
-        <li class="car-tab">
-          <img src="img/car-icon.png" />
-        </li>
-      </a>
-    </ul>
-    <div class="flight-search-form">
-      <form>
-        <input type="text" placeholder="Depart"/>
-        <input type="text" placeholder="Arrive"/>
-        <input type="text" class="dates" placeholder="mm/dd/yyyy"/>
-        <input type="text" class="dates" placeholder="mm/dd/yyyy"/>
+  <!--
 
-        <label class="passengers">Passengers</label>
-        <select>
-          <option value="1"> 1 </option>
-          <option value="2"> 2 </option>
-          <option value="3"> 3 </option>
-          <option value="4"> 4 </option>
-          <option value="5"> 5 </option>
-        </select>
+    SEARCH SECTION
 
-        <input type="radio" name="flight-ticket-amount" value="Return" checked="checked"/>
-        <label>Return</label>
-        <input type="radio" name="flight-ticket-amount" value="One Way"/>
-        <label>One Way</label>
+  -->
 
-        <button type="submit" value="Search Flights">Search Flights</button>
-      </form>
-    </div>
-  </section>
+  <main role="main">
+    <section>
+
+      <!--
+
+        SEARCH TABS
+
+      -->
+
+      <ul class="tabs">
+        <a href="#">
+          <li class="flight-tab selected">
+            <img src="img/plane-icon.png" alt="Search for flights" />
+          </li>
+        </a>
+        <a href="#">
+          <li class="hotel-tab">
+            <img src="img/hotel-icon.png" alt="Search for hotels" />
+          </li>
+        </a>
+        <a href="#">
+          <li class="car-tab">
+            <img src="img/car-icon.png" alt="Search for car rentals" />
+          </li>
+        </a>
+      </ul>
+
+      <!--
+
+        SEARCH FORM
+
+      -->
+
+      <div class="flight-search-form">
+        <form>
+          <input type="text" placeholder="Depart" />
+          <input type="text" placeholder="Arrive" />
+          <input type="text" class="dates" placeholder="mm/dd/yyyy" />
+          <input type="text" class="dates" placeholder="mm/dd/yyyy" />
+
+          <label class="passengers">Passengers</label>
+          <select>
+            <option value="1"> 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+            <option value="4"> 4 </option>
+            <option value="5"> 5 </option>
+          </select>
+
+          <input type="radio" name="flight-ticket-amount" value="Return" checked="checked" />
+          <label>Return</label>
+          <input type="radio" name="flight-ticket-amount" value="One Way" />
+          <label>One Way</label>
+
+          <button type="submit" value="Search Flights">Search Flights</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/script.js">
+  <script src="js/script.js"></script>
 </body>
 
 </html>
