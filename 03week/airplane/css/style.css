@@ -1,9 +1,9 @@
  body {
-   background-image: url("https://github.com/AustinCodingAcademy/ciw-workbook/blob/master/Week-3/Team-Project-3/airline.jpg?raw=true");
+   background: url("../img/airline.jpg");
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
-   height: 800px;
+   height: 700px;
  }
 
  nav {
@@ -23,7 +23,7 @@
    float: right;
    color: white;
    list-style: none;
-   padding: 20px;
+   padding: 14px 2px 14px 2px;
  }
 
  div.relative {
@@ -32,15 +32,18 @@
    width: 500px;
    height: 400px;
    margin-left: 60px;
-   margin-top: 100px;
+   margin-top: 50px;
+   border-radius: 6px;
  }
 
  div.absolute {
    position: absolute;
+   top: 0;
    right: 0;
    width: 350px;
    height: 50px;
    background-color: #018D80;
+   border-top-right-radius: 6px;
  }
 
  div.plane {
@@ -49,16 +52,9 @@
    width: 150px;
    background-color: #0063B7;
    padding-left: 25px;
+   border-top-left-radius: 6px;
  }
 
- div.hotel-car {
-   padding: 0 60px;
- }
-
- div.car {
-   float: right;
-   margin-left: 30px;
- }
 
  img.plane-icon {
    padding: 10px 40px;
@@ -66,6 +62,9 @@
    height: 30px;
  }
 
+ .hotel-car {
+   margin-left: 40px;
+ }
  img.hotel-icon {
    padding: 10px 50px 0 40px;
    width: 30px;
@@ -91,6 +90,7 @@
    margin: 20px 0 0 35px;
    padding-top: 8px;
    background-color: #123754
+
  }
 
  .depart-field1 {
@@ -104,10 +104,11 @@
    background-color: #123754;
    font-size: 14px;
    padding-left: 8px;
+   border-radius: 6px;
  }
  textarea:focus, input:focus {
      color: blue;
-     background-color: white;
+     background-color : white;
  }
 
  input, select, textarea{
@@ -121,6 +122,15 @@
    margin: 50px 0 20px 30px;
    padding: 10px;
    color: white;
+ }
+
+ select {
+   border: 2px solid white;
+   height: 40px;
+   width: 60px;
+   border-radius: 7px;
+   background-color: #123754;
+   color: white
  }
 
  .radio {
@@ -140,4 +150,5 @@
    width: 450px;
    margin: 30px 0 0 -35px;
    background-color: #0063B7;
+   border-radius: 6px;
  }
