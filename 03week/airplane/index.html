@@ -39,12 +39,12 @@
   </header>
 
   <main>
-    <section id="box">
+    <section class="box">
 
-      <div id="services">
-        <a href="index.html"><img src="img/plane-icon.png" alt="an icon of an airplane" /></a>
-        <a href="index.html"><img src="img/hotel-icon.png" alt="an icon of a person in a bed" /></a>
-        <a href="index.html"><img src="img/car-icon.png" alt="an icon of a car" /></a>
+      <div class="services">
+        <a href="index.html"><img class="icon" src="img/plane-icon.png" alt="an icon of an airplane" /></a>
+        <a href="index.html"><img class="icon" src="img/hotel-icon.png" alt="an icon of a person in a bed" /></a>
+        <a href="index.html"><img class="icon" src="img/car-icon.png" alt="an icon of a car" /></a>
       </div>
 
       <div>
@@ -70,18 +70,18 @@
             </td>
           </tr>
 
-          <tr>
+          <tr class="third">
             <td class="passengers">
               <form action="http://www.example.com/bookings/" method="post">
-                <label for="passengers">Passengers</label>
-                <input type="number" name="passengers" placeholder="1" />
+                <label for="passengers"><h5>Passengers</h5></label>
+                <input type="number" min="1" name="passengers" placeholder="1" />
               </form>
             </td>
 
-            <td class="flight">
-              <form action="http://www.example.com/profile.php" class="flights">
-                <input type="radio" name="flight" value="Return" checked="checked" /> Return
-                <input type="radio" name="flight" value="One Way" checked="checked" /> One Way
+            <td>
+              <form class="flight" action="http://www.example.com/profile.php">
+                <input type="radio" name="flight" value="Return" checked="checked" /> <h4>Return</h4>
+                <input type="radio" name="flight" value="One Way" checked="checked" /> <h4>One Way</h4>
               </form>
             </td>
           </tr>
