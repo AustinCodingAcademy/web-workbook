@@ -10,7 +10,6 @@ margin: 80px 0 0 200px;
 
 .image{
     position: relative;
-
 }
 .image h1{
     z-index: 2;
@@ -21,7 +20,6 @@ margin: 80px 0 0 200px;
     font-family:'Great Vibes', cursive;
     font-size: 120px;
     color: #fffabc;
-
     width: 100%;
     height: 30px;
     padding: 0;
@@ -47,7 +45,6 @@ h1:hover {
 }
 
 .cityscape h2 {
-
   text-align: center;
   font-family: 'Handlee', cursive;
   width: 946px;
@@ -60,11 +57,12 @@ h1:hover {
 .navbar {
     overflow: hidden;
     z-index: 2;
+    width: auto;
     background-color: #003599;
     font-family: Arial;
     border-radius: 10px;
-    margin: 10px 0 0 675px;
-
+    margin: 10px;
+    border: 2px solid white;
 }
 
 .navbar a {
@@ -125,7 +123,6 @@ h1:hover {
     height: 800px;
     width: 1200px;
     margin: 100px 30px 150px 80px;
-    border: 2px solid white;
     }
 
 #img1 {
@@ -134,17 +131,21 @@ h1:hover {
   top: 750px;
   border-radius: 12px;
   box-shadow: 8px 8px 14px#000000;
-
 }
+
+#img1:hover {
+  opacity: .6;
+}
+
 #text1 {
   z-index: 1;
   position: absolute;
-  top: 780px;
+  top: 750px;
   left: 270px;
-  color: white;
-  font-size: 24px;
+  color: #ccc;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 35px;
   margin-left: 50px;
-  border: 2px solid white;
 }
 
 #img2 {
@@ -153,17 +154,20 @@ h1:hover {
   top: 750px;
   border-radius: 12px;
   box-shadow: 8px 8px 14px#000000;
-
 }
+
+#img2:hover {
+  opacity: .6;
+}
+
 #text2 {
   z-index: 1;
   position: absolute;
-  top: 780px;
+  top: 750px;
   right: 320px;
-  color: white;
-  font-size: 24px;
-
-  border: 2px solid white;
+  color: #ccc;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 35px;
 }
 
 #img3 {
@@ -172,17 +176,22 @@ h1:hover {
   top: 1200px;
   border-radius: 12px;
   box-shadow: 8px 8px 14px#000000;
-
 }
+
+#img3:hover {
+  opacity: .6;
+}
+
 #text3 {
   z-index: 1;
   position: absolute;
-  top: 1230px;
+  top: 1200px;
   left: 270px;
-  color: white;
-  font-size: 24px;
+  color: #ccc;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 35px;
   margin-left: 50px;
-  border: 2px solid white;
+
 }
 
 #img4 {
@@ -191,25 +200,27 @@ h1:hover {
   top: 1200px;
   border-radius: 12px;
   box-shadow: 8px 8px 14px#000000;
-
 }
+
+#img4:hover {
+  opacity: .6;
+}
+
 #text4 {
   z-index: 1;
   position: absolute;
-  top: 1230px;
-  right: 300px;
-  color: white;
-  font-size: 24px;
-
-  border: 2px solid white;
+  top: 1200px;
+  right: 320px;
+  color: #ccc;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 35px;
 }
-
 
 section.aboutme {
   border: 1px solid white;
   height: 800px;
   width:650px;
-  background-color: #fffabc;;
+  background: linear-gradient(to top, rgba(255,171,12,.2), rgba(255,171,12,.7));
   border-radius: 10px;
   box-shadow: 8px 8px 4px#000000;
 }
@@ -236,4 +247,55 @@ h2.aboutme {
 
 h4 {
   font-family: Arial;
+}
+
+
+#form-container {
+  position: absolute;
+  top: 1750px;
+  right: 20px;
+  background-color: #aadddd;
+  width: 700px;
+  border: 12px double #aaa;
+  margin: 10px;
+}
+
+form {
+  width: 450px;
+  height: 600px;
+  margin: 30px;
+}
+label {
+  display: block;
+  margin: 10px;
+  font-size: 20px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+input {
+  width: 200px;
+  height: 25px;
+}
+
+textarea {
+  width: 350px;
+  height: 150px;
+}
+
+fieldset {
+  border: none;
+}
+
+.labelone {
+  margin-top: 10px;
+}
+.btn {
+  width: 125px;
+  height: 50px;
+
+}
+
+#form-container h3 {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 24px;
 }
