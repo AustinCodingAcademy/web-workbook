@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["d7\/bk"]); }
+
+__d('UFITypingSubscription',['BaseGraphQLSubscription','FeedbackTypingWebGraphQLSubscription','GraphQLSubscriptionsConfig','uuid'],(function a(b,c,d,e,f,g,h,i,j,k){var l=babelHelpers['extends']({},h,{_getTopic:function m(n){return 'gqls/feedback_typing_subscribe/feedback_id_'+n;},_getQueryID:function m(){return j.shouldUseGraphQL2DocumentIDs?i.getDocID():i.getLegacyQueryID();},_getQueryParameters:function m(n){return {input:JSON.stringify({client_subscription_id:k(),feedback_id:n})};},_getSubscriptionCallName:function m(){return 'feedback_typing_subscribe';}});f.exports=l;}),null);
