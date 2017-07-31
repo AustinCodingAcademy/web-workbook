@@ -10,6 +10,7 @@ margin: 80px 0 0 200px;
 
 .image{
     position: relative;
+
 }
 .image h1{
     z-index: 2;
@@ -56,9 +57,8 @@ h1:hover {
   text-shadow: 8px 8px 4px#000000;
 }
 
-.container {
+.navbar {
     overflow: hidden;
-
     z-index: 2;
     background-color: #003599;
     font-family: Arial;
@@ -67,7 +67,7 @@ h1:hover {
 
 }
 
-.container a {
+.navbar a {
     float: left;
     font-size: 16px;
     color: #fffaaa;
@@ -90,7 +90,7 @@ h1:hover {
     background-color: inherit;
 }
 
-.container a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn {
     background-color: #4caddd;
 }
 
@@ -99,7 +99,7 @@ h1:hover {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
     z-index: 3;
 }
 
@@ -120,30 +120,91 @@ h1:hover {
     display: block;
 }
 
-div .downtown {
-  margin: 30px;
-}
-h3.downtown {
+#city_img {
+    display: inline-block;
+    height: 800px;
+    width: 1200px;
+    margin: 100px 30px 150px 80px;
+    border: 2px solid white;
+    }
+
+#img1 {
   position: absolute;
-  font-size: 30px;
-  color: white;
+  left: 80px;
+  top: 750px;
+  border-radius: 12px;
+  box-shadow: 8px 8px 14px#000000;
+
+}
+#text1 {
   z-index: 1;
-  margin: 150px 0 -50px 240px;
-  border: 1px solid white;
-  width: 150px;
-}
-img.downtown {
-  position: relative;
-  z-index: 0;
-  width: 40%;
-  height:40%;
-  margin-bottom: 70px;
-
+  position: absolute;
+  top: 780px;
+  left: 270px;
+  color: white;
+  font-size: 24px;
+  margin-left: 50px;
+  border: 2px solid white;
 }
 
-img.downtown:hover {
-  background-clip: content-box;
+#img2 {
+  position: absolute;
+  right: 80px;
+  top: 750px;
+  border-radius: 12px;
+  box-shadow: 8px 8px 14px#000000;
+
 }
+#text2 {
+  z-index: 1;
+  position: absolute;
+  top: 780px;
+  right: 320px;
+  color: white;
+  font-size: 24px;
+
+  border: 2px solid white;
+}
+
+#img3 {
+  position: absolute;
+  left: 80px;
+  top: 1200px;
+  border-radius: 12px;
+  box-shadow: 8px 8px 14px#000000;
+
+}
+#text3 {
+  z-index: 1;
+  position: absolute;
+  top: 1230px;
+  left: 270px;
+  color: white;
+  font-size: 24px;
+  margin-left: 50px;
+  border: 2px solid white;
+}
+
+#img4 {
+  position: absolute;
+  right: 80px;
+  top: 1200px;
+  border-radius: 12px;
+  box-shadow: 8px 8px 14px#000000;
+
+}
+#text4 {
+  z-index: 1;
+  position: absolute;
+  top: 1230px;
+  right: 300px;
+  color: white;
+  font-size: 24px;
+
+  border: 2px solid white;
+}
+
+
 section.aboutme {
   border: 1px solid white;
   height: 800px;
@@ -171,5 +232,8 @@ h2.aboutme {
   text-align: center;font-size: 30px;
   font-family: 'Raleway';
   font-variant: small-caps;
+}
 
+h4 {
+  font-family: Arial;
 }
