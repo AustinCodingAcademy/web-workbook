@@ -54,7 +54,7 @@ h1:hover {
   text-shadow: 8px 8px 4px#000000;
 }
 
-.navbar {
+.navbar_top {
     overflow: hidden;
     z-index: 2;
     width: auto;
@@ -66,7 +66,7 @@ h1:hover {
 }
 
 
-.navbar a {
+.navbar_top a {
     float: left;
     font-size: 16px;
     color: #fffaaa;
@@ -93,7 +93,7 @@ h1:hover {
     background-color: inherit;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar_top a:hover, .dropdown:hover .dropbtn {
     background-color: #4caddd;
 }
 
@@ -225,7 +225,7 @@ section.aboutme {
   border: 1px solid white;
   height: 800px;
   width:650px;
-  background: linear-gradient(to top, rgba(255,171,12,.2), rgba(255,171,12,.7));
+  background: linear-gradient(to bottom, rgba(255,171,12,1), rgba(255,171,12,.2));
   border-radius: 10px;
   box-shadow: 8px 8px 4px#000000;
 }
@@ -319,16 +319,17 @@ fieldset {
 }
 
 .icon-bar {
-    margin: 80px 0;
+
+    margin: 80px 0 0 10px;
     width: 100%;
-    background-color: #555;
+    background-color: #002242;
     overflow: auto;
-    border: 1px solid white;
+    border: 2px solid #012;
+    filter: drop-shadow(14px 14px 18px #000000);
 }
 
 .icon-bar a {
     float: right;
-    margin-right: 20px;
     width: 30%;
     text-align: center;
     padding: 12px 0;
@@ -336,14 +337,22 @@ fieldset {
     color: white;
     font-size: 36px;
 }
-.icon-bar a:hover {
-    background-color: #3b5998;
+
+.ln:hover {
+    background-color: #0077B5;
   }
+  .fb:hover {
+      background-color: #3B5998;
+    }
+  .ig:hover {
+    background: linear-gradient(to bottom, #3B5998 0%, #D52A8B 50%, #FED469 100%);
+  }
+
 div.info {
   border-radius: 8px;
   margin: 80px 0 0 10px;
   width: 700px;
-  height: 400px;
+  height: 500px;
   background-color: #bbb;
   background: linear-gradient(to top, rgba(190,190,190,.2), rgba(190,190,190,.7));
 }
@@ -380,7 +389,6 @@ a.RealEstate_link {
   position: relative;
   bottom: 380px;
   left: 760px;
-
   font-variant: small-caps;
   width: 720px;
   font-family: Arial;
@@ -405,24 +413,28 @@ a.RealEstate_link:hover {
 a.RealEstate_link:active {
     text-decoration: underline;
 }
-.navbar_2 {
-    overflow: hidden;
-    z-index: 2;
 
+.navbar_3 {
+    margin-bottom: 60px;
+    overflow:hidden;
     width: 100%;
     background-color: rgba(0, 50, 175, .4);
     font-family: Arial;
     border-radius: 10px;
-
     border: 2px solid white;
 }
 
 
-.navbar_2 a {
+.navbar_3 a {
   float: left;
     font-size: 16px;
     color: #fffaaa;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+h5 {
+  text-align: center;
+  font-size: 18px;
+  color:#fff;
 }
