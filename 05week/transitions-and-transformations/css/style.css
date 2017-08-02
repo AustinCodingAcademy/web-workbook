@@ -8,17 +8,16 @@ div.box {
   width: 50px;
   position: relative;
   margin: 10px auto;
-  transition: transform 3s ease;
+  transition: transform 3s ease 1s;
 }
 
-.container:hover:nth-child(odd) {
+.container:hover .box:nth-child(odd) {
   transform: scale(2) translateX(300px) rotate(360deg);
 }
 
-.container:hover:nth-child(even) {
+.container:hover .box:nth-child(even) {
   transform: scale(.5) translateX(-300px) rotate(-360deg);
 }
-
 
 .box-1 {
   background-color: #154241;
