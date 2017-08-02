@@ -1,10 +1,25 @@
+body {
+  background: #F4B030;
+}
+
 div {
   display: block;
   height: 50px;
   width: 50px;
   position: relative;
-  margin: 10 auto;
+  margin: 10px auto;
+  transition: transform 3s ease;
 }
+
+main:hover {
+  div:nth-child(odd) {
+    transform: scale(2) translateX(300px) rotate(360deg);
+  }
+  div:nth-child(even) {
+    transform: scale(.5) translateX(-300px) rotate(-360deg);
+  }
+}
+
 
 .box-1 {
   background-color: #154241;
