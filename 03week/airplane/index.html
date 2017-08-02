@@ -10,6 +10,7 @@
   <meta name="author" content="Michael Worthington">
 
   <!-- My styles -->
+   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/css-reset.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -18,9 +19,9 @@
 
 
 
-<header>
+<nav>
   <div>
-    <img id="logo">
+    <img class="logo">
     <img src="img/logo.png" />
     </img>
   </div>
@@ -51,22 +52,38 @@
     <a href="http://do512.com/" target="_blank">Flight Schedule
       </a> |
   </div>
-</header>
+</nav>
 <!--input box stuff-->
 <main>
-  <div class="big-box"</div>
-  <div class="little-box"</div>
-  <!--<div class="little-box blue" class="blue"> </div>-->
-
-  <div>
-      <img class="plane"/>
-      <img src="img/plane-icon.png"/></img>
-  </div>
-  <div>
-      <img class="rightIcon"/>
-      <img src="img/car-icon.png"/></img>
-      <img src="img/hotel-icon.png" class="icon"/></img>
-  </div>
-
-
+    <div class="big-box"/>
+        <div class="plane"/>
+            <img class="plane-location"/>
+            <img src="img/plane-icon.png"/></img>
+        </div>
+        <div class="car-hotel"/>
+              <img class="car-location"/>
+              <img src="img/car-icon.png"/></img>
+              <img class="hotel-location"/>
+              <img src="img/hotel-icon.png"/></img>
+        </div>
+      <section>
+        <div id="form-box"/>
+          <form>
+            <input class="cities" type="text" name="departure-city" value="depart">
+            <input class="cities" type="text" name="arrival-city" value="arrive">
+            <input class="dates" type="date" name="departure-date" value="depart">
+            <input class="dates" type="date" name="departure-date" value="depart">
+          </form>
+            <!--dropdown from form-->
+          <form>
+            <h6 class="passengers">Passengers</h6>
+            <select name="passengers">...</select>
+            <input class="frequency" type="radio" name="flight-type" value="Return" checked>
+            <h6>Return</h6>
+            <input class="frequency" type="radio" name="flight-type" value="One-Way" checked>
+            <h6>One-Way</h6>
+            <button>Search Flights</button>
+        </form>
+      </section>
+    </div>
 </main>
