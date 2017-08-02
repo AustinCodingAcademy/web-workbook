@@ -4,45 +4,82 @@ body {
   font-family: 'Heebo', sans-serif;
 }
 header {
+  display: flex;
   background-image: url("../img/nasa-background.jpg");
   height: 450px;
   background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
+  align-items:center;
   justify-content: center;
 
 }
 header h1{
 color: white;
-font-size: 5em;
-font-family: 'Heebo', sans-serif;
+font-size: 5.5em;
+font-family: 'Roboto', sans-serif;
+font-weight:600;
 }
 
 main {
   display: flex;
-  font-family: 'Heebo', sans-serif;
-  background-color: lightgray;
+  align-items: flex-start;
+  flex-direction:row-reverse;
+  background-color: #E6E6E6;
   height: 324px;
   width: 850px;
   margin-top: 2%;
+  border: 2px solid blue;
 }
 
 .info-box {
+
   width: 270px;
-  justify-content: space-between;
-  margin-left: 20px;
+  justify-content:space-around;
+  list-style: none;
+  margin-left: 10px;
+  margin-right: 10px;
   margin-top:20px;
+
 }
 
 .info-box h1 {
-  font-size: 1.25em;
+  display: flex;
+  font-size: 1.15em;
   color: black;
+  border: 1px solid white;
+  font-family: 'Open Sans', sans-serif;
+  justify-content:flex-start;
 }
 
-ul {
+a {
   list-style: none;
-  margin-right:20px;
-  padding-right: 20px;
+  text-decoration: none;
+  color: black;
+}
+ul {
+
+  list-style: none;
+  border: 1px solid white;
+}
+li {
+
+  flex-direction: row;
+  align-items: flex-start;
+}
+.box_name {
+  width: 250px;
+  height: 24px;
+}
+
+.box_msg {
+  width: 250px;
+  height: 75px;
+}
+
+.box_send {
+
+  width: 80px;
+  height: 25px;
+  background-color: #4D4D4D;
 }
