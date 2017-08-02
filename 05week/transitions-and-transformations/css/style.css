@@ -2,7 +2,7 @@ body {
   background: #F4B030;
 }
 
-div {
+div.box {
   display: block;
   height: 50px;
   width: 50px;
@@ -11,13 +11,12 @@ div {
   transition: transform 3s ease;
 }
 
-main:hover {
-  div:nth-child(odd) {
-    transform: scale(2) translateX(300px) rotate(360deg);
-  }
-  div:nth-child(even) {
-    transform: scale(.5) translateX(-300px) rotate(-360deg);
-  }
+.container:hover:nth-child(odd) {
+  transform: scale(2) translateX(300px) rotate(360deg);
+}
+
+.container:hover:nth-child(even) {
+  transform: scale(.5) translateX(-300px) rotate(-360deg);
 }
 
 
