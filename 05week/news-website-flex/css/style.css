@@ -38,7 +38,7 @@ p {
   margin-bottom: 80px;
   background: #2B2B2B;
   padding: 10px 0 20px 0;
-  margin: 0 25px 0 25px;
+  margin: 0 25px 70px 25px;
 }
 
 h2 {
@@ -46,7 +46,7 @@ h2 {
 }
 
 .tv h2 {
-  margin-top: 0px;
+  padding: 0px;
 }
 
 h2, h3, h4 {
@@ -61,8 +61,8 @@ h3:hover {
   text-decoration: underline;
 }
 
-@media (min-width: 980px) {
-  .col-md-2.tv {
-    height: 100%;
+@media (max-width: 767px) {
+  img:not(:nth-of-type(1)) {
+    padding-top: 50px;
   }
 }
