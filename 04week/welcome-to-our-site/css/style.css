@@ -1,12 +1,15 @@
+/* LAPTOP STYLE */
+
 body {
   font-family: 'PT Serif', serif;
-  width: 850px;
+  max-width: 850px;
+  width: 100%;
   margin: 2% auto;
 }
 
 header {
   background-color: rgb(43,205,192);
-  width: 850px;
+  width: 100%;
   height: 324px;
   background-position: center;
   background-size: cover;
@@ -21,17 +24,38 @@ h1 {
   font-size: 2em;
 }
 
+h1 span {
+  font-weight: bolder;
+}
+
 main {
   background-color: black;
   color: white;
-  width: 850px;
+  width: 100%;
   height: 324px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.p1 {
+  border-top: 20px solid rgb(56,170,224);
+  width: 200px;
+  margin-left: 50px;
+}
+
+.p2 {
+  border-top: 20px solid rgb(244,103,49);
+  width: 200px;
+}
+
+.p3 {
+  border-top: 20px solid rgb(43,205,192);
+  width: 200px;
+  margin-right: 50px;
 }
 
 h2 {
@@ -42,5 +66,35 @@ h2 {
 p{
   font-size: .7em;
   text-align: center;
-  padding: 5%;
+}
+
+@media (max-width: 768px) {
+
+
+
+  header {
+    background-color: rgb(56,170,224);
+  }
+
+  header h1 {
+    font-size: 2.8em;
+    margin-left: 8%;
+  }
+
+  main {
+    background-color: rgb(247,245,246);
+    color: black;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  .p1, .p2, .p3 {
+    margin-top: 60px;
+    font-size: 1.5em;
+  }
+
+
 }
