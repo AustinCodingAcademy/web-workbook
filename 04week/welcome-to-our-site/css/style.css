@@ -1,11 +1,15 @@
+/* LAPTOP STYLES*/
+
+
 body {
-  width: 850px;
+  width: 90%;
   margin: 2% auto;
 }
+
 header {
-  background-color: teal;
-  width: 840px;
-  height: 320px;
+  background-color: #45e0c9;
+  width: 90%;
+  height: 90%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -15,20 +19,66 @@ header {
 }
 
 .headerBox h1 {
-  font-size: 3em;
-  font-family: sans-serif;
+  font-size: 2.25em;
   color: white;
+  font-family: 'Droid Serif', serif;
+}
+
+main h2 {
+  font-size: 1.75em;
+  font-family: 'Droid Serif', serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
 }
  main {
    display: flex;
    background-color: black;
    color: white;
-   height: 320px;
-   width: 840px;
+   text-align: center;
+   height: 280px;
+   width: 90%;
  }
 
  .titleBox {
-   width: 320px;
-   justify-content: space-around;
+   width: 280px;
+   justify-content: space-between;
+   padding: 5px;
+   margin: 25px;
 
  }
+ .blueBox {
+   border-top: 20px solid cornflowerblue;
+   margin-left: 10px;
+ }
+ .orangeBox {
+   border-top: 20px solid orange;
+ }
+ .tealBox {
+   border-top: 20px solid #45e0c9;
+   margin-right: 10px;
+ }
+p {
+  font-size: 1em;
+}
+
+/* CELL PHONE */
+
+@media (max-width: 767px) {
+
+  header {
+    background-color: cornflowerblue;
+  }
+  .headerBox h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    background-color: lightgray;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    }
+   ... }
