@@ -1,6 +1,9 @@
+/* LAPTOP STYLING */
+
 header {
   display: flex;
-  width: 850px;
+  max-width: 850px;
+  width: 100%;
   height: 350px;
   background-color: rgb(43,205,192);
   background-size: cover;
@@ -12,43 +15,45 @@ header {
 
 header h1 {
   font-family: 'Lora', serif;
+  font-weight: lighter;
   color: white;
-  font-size: 310%;
+  font-size: 4em;
+}
+
+body {
+  width: 100%;
+  max-width: 850px;
+  margin: 2% auto;
 }
 
 main {
   background-color: black;
   display: flex;
-  width: 850px;
-  height: 325px;
+  max-width: 850px;
+  width: 100%;
+  max-height: 100%;
+  padding-top: 30px;
 }
 
 .info-box {
-  padding: 30px 60px;
-  width: 270px;
+  padding: 0 60px 10px;
+  width: 150px;
+  height: auto;
   justify-content: space-between;
   text-align: center;
+  margin: 0 20px;
 }
 
-#button1 {
-  align-content: center;
-  width: 150px;
-  height: 30px;
-  background-color: rgb(51,168,221);
+#blue {
+  border-top: 35px solid rgb(51,168,221);
 }
 
-#button2 {
-  align-content: center;
-  width: 150px;
-  height: 30px;
-  background-color: rgb(244,103,49);
+#orange {
+  border-top: 35px solid rgb(244,103,49);
 }
 
-#button3 {
-  align-content: center;
-  width: 150px;
-  height: 30px;
-  background-color: rgb(43,205,192);
+#teal {
+  border-top: 35px solid rgb(43,205,192);
 }
 
 .info-box h1 {
@@ -56,8 +61,42 @@ main {
   font-size: 2.2em;
 }
 
-.info-box h2 {
+.info-box p {
   color: white;
-  font-size: 12px;
+  font-size: .75em;
   line-height: 16px;
+}
+
+/* PHONE STYLING */
+
+@media (max-width: 767px) {
+  header {
+    background-color: rgb(51,168,221);
+  }
+
+  header h1 {
+    font-size: 2.8em;
+    margin-left: 8%;
+  }
+
+  body {
+    margin: 2%;
+  }
+
+  main {
+    background-color: rgb(247,245,246);
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info-box {
+    /*flex-direction: column;*/
+  }
+
+  .info-box h1, .info-box p {
+    color: black;
+  }
+
 }
