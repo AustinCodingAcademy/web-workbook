@@ -34,7 +34,7 @@ h5 {
 #right-column {
   width: 300px;
   margin: 40px;
-  border: 2px solid black;
+
 }
 .ts {
   font-family: sans-serif;
@@ -49,11 +49,10 @@ h5 {
 }
 
 #list {
-
+  display: none;
   height: 210px;;
-  display: flex;
+  
   font-family: sans-serif;
-
   background-color: #5D5D5D;
   padding-bottom: 0;
   width: 430px;
@@ -66,15 +65,60 @@ h5 {
   #list ul{
     list-style: none;
     padding-left: 10px;
-
   }
   #list li {
     border-bottom: 1px solid white;
-
     margin: 10px;
   }
 
   .rlink {
-
     margin-left: 60px;
   }
+
+  /* Tablet Section*/
+
+  @media (max-width: 1220px) {
+
+    body {
+      width: 100%;
+    }
+
+    #right-column {
+      display: none;
+    }
+
+    #list {
+      display: none;
+    }
+
+   @media (max-width: 786px) {
+
+
+  #list {
+
+    height: 210px;;
+    display: flex;
+    font-family: sans-serif;
+    background-color: #5D5D5D;
+    padding-bottom: 0;
+    width: 430px;
+    color: white;
+  }
+
+  #list h3 {
+    padding-left: 25px;
+  }
+    #list ul{
+      list-style: none;
+      padding-left: 10px;
+    }
+    #list li {
+      border-bottom: 1px solid white;
+      margin: 10px;
+    }
+
+    .rlink {
+      margin-left: 60px;
+    }
+
+    }
