@@ -2,14 +2,18 @@
 
 
 body {
-  width: 90%;
-  margin: 2% auto;
+  display: flex;
+	flex-flow: row wrap;
+	height: 100%;
+	margin: 2%;
+	width: 100%;
+
 }
 
 header {
   background-color: #45e0c9;
-  width: 90%;
-  height: 90%;
+  width: 768px;
+  height: 348px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,47 +23,47 @@ header {
 }
 
 .headerBox h1 {
-  font-size: 2.25em;
+  font-size: 2.5em;
   color: white;
-  font-family: 'Droid Serif', serif;
+  font-family: Georgia, serif;
 }
 
 main h2 {
   font-size: 1.75em;
-  font-family: 'Droid Serif', serif;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  font-family: Georgia, serif;
 
 }
  main {
    display: flex;
-   background-color: black;
    color: white;
    text-align: center;
-   height: 280px;
-   width: 90%;
+   height: 348px;
+   width: 768px;
  }
 
  .titleBox {
-   width: 280px;
+   flex: auto;
+	 justify-content: space-between;
+	 text-align: center;
+   background-color: black;
    justify-content: space-between;
-   padding: 5px;
-   margin: 25px;
+   padding-top: 30px;
+   padding-right: 30px;
+   padding-bottom: 30px;
+   padding-left: 30px;
 
  }
  .blueBox {
    border-top: 20px solid cornflowerblue;
-   margin-left: 10px;
  }
  .orangeBox {
    border-top: 20px solid orange;
  }
  .tealBox {
    border-top: 20px solid #45e0c9;
-   margin-right: 10px;
  }
 p {
-  font-size: 1em;
+  font-size: .75em;
 }
 
 /* CELL PHONE */
@@ -69,6 +73,7 @@ p {
   header {
     background-color: cornflowerblue;
   }
+
   .headerBox h1 {
     display: flex;
     justify-content: center;
@@ -76,9 +81,15 @@ p {
   }
 
   main {
-    background-color: lightgray;
-    color: black;
     display: flex;
     flex-direction: column;
     }
+
+  h2 {
+    color: black;
+  }
+  .titleBox {
+    background-color: lightgray;
+  }
+
    ... }
