@@ -1,19 +1,17 @@
 /* LAPTOP STYLES*/
 
-
 body {
   display: flex;
-	flex-flow: row wrap;
-	height: 100%;
-	margin: 2%;
-	width: 100%;
-
+  flex-flow: row wrap;
+  height: 100%;
+  margin: 5%;
+  width: 100%;
 }
 
 header {
   background-color: #45e0c9;
   width: 768px;
-  height: 348px;
+  height: 320px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,73 +21,81 @@ header {
 }
 
 .headerBox h1 {
-  font-size: 2.5em;
+  font-size: 3em;
   color: white;
   font-family: Georgia, serif;
 }
 
 main h2 {
-  font-size: 1.75em;
+  font-size: 2em;
   font-family: Georgia, serif;
-
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
- main {
-   display: flex;
-   color: white;
-   text-align: center;
-   height: 348px;
-   width: 768px;
- }
 
- .titleBox {
-   flex: auto;
-	 justify-content: space-between;
-	 text-align: center;
-   background-color: black;
-   justify-content: space-between;
-   padding-top: 30px;
-   padding-right: 30px;
-   padding-bottom: 30px;
-   padding-left: 30px;
+main {
+  display: flex;
+  color: white;
+  text-align: center;
+  height: 320px;
+  width: 768px;
+}
 
- }
- .blueBox {
-   border-top: 20px solid cornflowerblue;
- }
- .orangeBox {
-   border-top: 20px solid orange;
- }
- .tealBox {
-   border-top: 20px solid #45e0c9;
- }
+.titleBox {
+  flex: auto;
+  justify-content: space-between;
+  text-align: center;
+  background-color: black;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+}
+
+.blueBox {
+  border-top: 20px solid cornflowerblue;
+  margin-top: 10px;
+}
+
+.orangeBox {
+  border-top: 20px solid #F46731;
+  margin-top: 10px;
+}
+
+.tealBox {
+  border-top: 20px solid #45e0c9;
+  margin-top: 10px;
+}
+
 p {
-  font-size: .75em;
+  font-size: .8em;
 }
 
-/* CELL PHONE */
+
+/* CELL PHONE STYLES */
 
 @media (max-width: 767px) {
-
   header {
     background-color: cornflowerblue;
   }
-
   .headerBox h1 {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   main {
     display: flex;
     flex-direction: column;
-    }
-
+  }
   h2 {
     color: black;
   }
   .titleBox {
-    background-color: lightgray;
+    background-color: #F7F5F6;
   }
-
-   ... }
+  p {
+    color: black;
+  }
+  ...
+}
