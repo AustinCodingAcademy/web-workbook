@@ -1,17 +1,19 @@
 body {
-  width: 850px;
+  width: 70%;
   margin: 2% auto;
 }
 
 header {
   background: #2BCDC0;
-  height: 300px;
+  height: 350px;
   background-size: cover;
   background-position: center;
   background-repeat:no-repeat;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  flex: 1 100%;
 }
 
 header h1 {
@@ -28,19 +30,19 @@ span {
 main {
   display: flex;
   background-color: #000000;
-  height: 325px;
-  width: 850px;
-
+  height: 100%;
+  width: 100%;
 }
 
 #title-area {
   display: flex;
+  width: 100%;
 }
 
 .info-box {
-  width: 150px;
+  width: 33%;
 justify-content: space-between;
- margin: 40px 67px;
+ margin: 2% 3%;
  text-align: center;
 }
 
@@ -72,65 +74,45 @@ h2 {
   margin-top: 10px;
 }
 
-@media (max-width: 767px) {
+@media all and (max-width: 767px) {
 
- #title-area {
-   flex-wrap: row wrap;
- }
-
- body {
-   flex: 1 100%;
-
- }
-
- header {
-   flex: 1 100%;
-
- }
-
- header h1 {
-   flex: 1 100%;
-
- }
-
- span {
-   flex: 1 100%;
-
- }
-
- main {
-   flex: 1 100%;
-
-
- }
-
- #title-area {
-flex-wrap: row wrap;
- }
-
- .info-box {
-   flex: 1 100%;
-   margin: 0;
- }
-
- .blue {
-   flex: 1 100%;
- }
-
- .orange {
-   flex: 1 100%;
- }
-
- .green {
-   flex: 1 100%;
- }
-
- h1 {
+body {
   flex: 1 100%;
- }
+}
 
- h2 {
-   flex: 1 100%;
- }
+#title-area {
+  flex: 1 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background: #33A8DD;
+}
+
+main {
+  background-color: #F7F5F6;
+}
+
+
+.info-box.blue{
+  width: 80%;
+}
+
+.info-box.orange {
+  width: 80%;
+}
+
+.info-box.green {
+  width: 80%;
+}
+
+h1 {
+  color: black;
+}
+
+h2 {
+  color: black;
+}
 
 }
