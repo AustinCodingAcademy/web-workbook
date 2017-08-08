@@ -1,6 +1,7 @@
 body {
   font-family: 'Roboto Condensed', sans-serif;
-  max-width: 100%;
+  width: 100%;
+  max-width: 1300px;
 }
 
 h1 {
@@ -10,7 +11,8 @@ h1 {
 }
 
 #tomorrowPhoto {
-  max-width: 75%;
+  max-width: 60%;
+  height: auto;
   float: left;
   margin: 2% 2% 2% 2%;
 }
@@ -23,7 +25,7 @@ header {
 #topStories {
   /*font-weight: 500;*/
   font-size: 1.3em;
-  max-width: 25%;
+  max-width: 30%;
   height: 50px;
   padding: 3% 3% 0 0;
   margin: 2% 5% 2% 0;
@@ -32,16 +34,21 @@ header {
   flex-direction: row;
 }
 
-main {
-  max-width: 75%;
-  margin: 2% 6% 2% 2%;
+#sidebar {
+  max-width: 30%;
+  padding: 2% 5% 2% 2%;
+flex-direction: column;
 }
 
 #headlines ul {
   list-style: none;
   max-width: 25%;
-  height: 200px;
-  padding: 3% 3% 0;
+  height: auto;
+}
+
+main {
+  max-width: 60%;
+  margin: 2% 6% 2% 2%;
 }
 
 #technologyButton {
@@ -60,7 +67,6 @@ footer:disabled {
   display: none;
 }
 
-
 /*TABLET DISPLAY STYLES*/
 
 @media (min-width: 768px) and (max-width: 999px) {
@@ -74,6 +80,7 @@ footer:disabled {
     max-width: 100%;
     margin: 2% 2% 2% 2%;
     float: center;
+    height: auto;
   }
 }
 
@@ -88,7 +95,7 @@ footer:disabled {
     display: none;
   }
   #tomorrowPhoto {
-    max-width: 100%;
+    max-width: 95%;
     height: auto;
     margin: 2% 2% 2% 2%;
     float: center;
