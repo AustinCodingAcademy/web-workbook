@@ -60,6 +60,7 @@ footer:disabled {
   display: none;
 }
 
+
 /*TABLET DISPLAY STYLES*/
 
 @media (min-width: 768px) and (max-width: 999px) {
@@ -69,25 +70,43 @@ footer:disabled {
   #headlines {
     display: none;
   }
+  #tomorrowPhoto {
+    max-width: 100%;
+    margin: 2% 2% 2% 2%;
+    float: center;
+  }
 }
+
 
 /*PHONE DISPLAY STYLES*/
 
 @media (max-width: 767px) {
+  #topStories {
+    display: none;
+  }
+  #headlines {
+    display: none;
+  }
+  #tomorrowPhoto {
+    max-width: 750px;
+    margin: 2% 2% 2% 2%;
+    float: center;
+  }
   footer {
     background-color: rgb(93, 93, 93);
     color: white;
     display: flex;
-    max-width: 850px;
+    max-width: 767px;
     width: 100%;
     height: auto;
     padding-top: 30px;
     list-style: none;
     float: left;
+    justify-content: space-around;
   }
   #usefulLinks {
-    padding: 0 60px 10px;
-    width: 300px;
+    padding: 0 50px 10px;
+    width: 100px;
     height: auto;
     justify-content: space-between;
     text-align: left;
@@ -96,15 +115,24 @@ footer:disabled {
   }
   #usefulLinks ul {
     list-style: none;
-    padding: 0 60px 10px;
+    padding: 0 0 10px;
     width: 150px;
     height: auto;
-    align-items: margin: 0 20px;
   }
   #usefulLinks li {
+    font-size: .7em;
     border-bottom: 1px solid lightgrey;
     list-style: none;
     padding: 5px 0;
+  }
+  #socialMedia {
+    padding: 0 50px 10px;
+    width: 100px;
+    height: auto;
+    justify-content: space-between;
+    text-align: left;
+    margin: 0 20px;
+    list-style: none;
   }
   #socialMedia ul {
     list-style: none;
@@ -112,9 +140,9 @@ footer:disabled {
     width: 100px;
     height: auto;
     text-align: left;
-    margin: 0 20px;
   }
   #socialMedia li {
+    font-size: .7em;
     border-bottom: 1px solid lightgrey;
     list-style: none;
     padding: 5px 0;
