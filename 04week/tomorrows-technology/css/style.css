@@ -5,11 +5,22 @@ flex-flow: row;
 height: 100%;
 margin: 0 auto;
 margin-top: 25px;
-margin-right: 10px;
-width: 100%;
-border-top: 3px solid black;
-border-right: 3px solid black;
+margin-right:;
+width: 90%;
+
+
 padding: 10px;
+}
+
+#page {
+  display: flex;
+  flex-flow: column;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  margin-right: 60px;
+  margin-top: 10px;
+  margin-left: 20px;
+  padding: 10px;
 }
 
 
@@ -28,7 +39,7 @@ body {
 
 }
 
-.titlecontainer {
+#titlecontainer {
   font-weight: bold;
 }
 
@@ -64,7 +75,9 @@ h2 {
   flex-flow: row nowrap;
   flex:;
   justify-content: ;
-  margin: 20px;
+  margin-left: 20px;
+  width: 90%;
+  border-right:;
 }
 #stamp {
   background-color: ;
@@ -77,22 +90,38 @@ span {
 #gray-section {
   display: none;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+	@media (min-width: 768px) and (max-width: 991px) {
+
   #top-stories {
-
-    display:none;
-
+  display:none;
     }
 
   #main_content {
     border-bottom: 3px solid black;
     }
-.image {
-    width: 768px;
-    }
-  .titlecontainer {
-    display:none; }}
 
+.image {
+    width: 70%;
+    padding: 10px;
+    min-width: 0;
+  }
+
+  #titlecontainer {
+    display:none;
+  }
+
+    #page {
+      border-bottom: 3px solid black;
+  }
+#image {
+  width: 90%;
+}
+
+#container {
+    align-items: center;
+    justify-content: center;
+}
+}
 @media (max-width: 767px) {
   #gray-section {
     display: flex;
@@ -112,8 +141,12 @@ span {
     color: white;
   }
 
-  .titlecontainer {
-    display:none;
+#titlecontainer {
+  color: red;
+}
+
+  h3 {
+    display: none;
   }
 
 .columnlinks {
@@ -125,4 +158,10 @@ span {
   color: white;
   font-weight: bold;
 }
+
+#top-stories {
+
+  display:none;
+
+  }
 }
