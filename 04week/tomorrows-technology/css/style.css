@@ -43,6 +43,7 @@ aside {
 
 h2 {
   font-size: 2em;
+  height: auto;
   font-weight: 900;
   margin-bottom: 30px;
 }
@@ -55,4 +56,61 @@ ul {
   padding-top: 15px;
   margin-right: 10px;
   font-size: 1.2em;
+}
+
+footer {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .topstory {
+    display: none;
+  }
+
+  .mainimg {
+    display: block;
+    margin: auto;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    background-color: gray;
+    margin-top: 30px;
+    color: white;
+    padding-top: 20px;
+}
+
+  h3 {
+    font-size: 1.5em;
+    font-weight: 900;
+
+  }
+
+  ul {
+    border-top: none;
+    padding-top: none;
+    margin-right: none;
+    line-height: 20px;
+    padding-bottom: 10px;
+  }
+
+  li {
+    border-bottom: .5px solid white;
+    line-height: 40px;
+    font-size: .75em;
+  }
+
+  .lastli {
+    border-bottom: none;
+  }
+
+
 }

@@ -1,93 +1,111 @@
-/* LAPTOP STYLE */
-
-body {
-  font-family: 'PT Serif', serif;
-  max-width: 850px;
-  width: 100%;
-  margin: 2% auto;
-}
-
-header {
-  background-color: rgb(43, 205, 192);
-  width: 100%;
-  height: 324px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-h1 {
-  color: white;
-  font-size: 2em;
-}
-
-h1 span {
-  font-weight: bolder;
+.mainimg {
+  margin-left: 40px;
+  margin-top: 40px;
 }
 
 main {
-  background-color: black;
-  color: white;
-  width: 100%;
-  height: 324px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  height: auto;
+  width: 70%;
+  flex-direction: column;
 }
 
-.p1 {
-  border-top: 20px solid rgb(56, 170, 224);
-  width: 200px;
-  margin-left: 50px;
+h1 {
+  font-weight: 900;
+  font-size: 2.5em;
 }
 
-.p2 {
-  border-top: 20px solid rgb(244, 103, 49);
-  width: 200px;
-}
-
-.p3 {
-  border-top: 20px solid rgb(43, 205, 192);
-  width: 200px;
-  margin-right: 50px;
-}
-
-h2 {
-  text-align: center;
-  font-size: 2em;
+.headline {
+  margin-top: 40px;
+  margin-left: 40px;
 }
 
 p {
-  font-size: .7em;
-  text-align: center;
+  margin-top: 20px;
+  font-size: 1.6em;
 }
 
-@media (max-width: 768px) {
-  header {
-    background-color: rgb(56, 170, 224);
+button {
+  margin-top: 20px;
+  background-color: gray;
+  color: white;
+  height: 40px;
+  width: 150px;
+  text-align: center;
+  font-size: 1em;
+}
+
+aside {
+  width: 20%;
+  float: right;
+  margin-top: -50%;
+}
+
+h2 {
+  font-size: 2em;
+  height: auto;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+  font-weight: 400;
+  line-height: 25px;
+  border-top: 1px solid black;
+  padding-top: 15px;
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+footer {
+  display: none;
+}
+
+
+/* TABLET */
+
+@media only screen and (max-width: 1024px) {
+  .topstory {
+    display: none;
   }
-  header h1 {
-    font-size: 2.8em;
-    margin-left: 8%;
+  .mainimg {
+    display: block;
+    margin: auto;
   }
-  main {
-    background-color: rgb(247, 245, 246);
-    color: black;
-    height: auto;
+}
+
+
+/* CELL PHONE */
+
+@media only screen and (max-width: 768px) {
+  footer {
     display: flex;
-    flex-direction: column;
-    align-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    background-color: gray;
+    margin-top: 30px;
+    color: white;
+    padding-top: 20px;
   }
-  .p1, .p2, .p3 {
-    margin-top: 60px;
+  h3 {
     font-size: 1.5em;
-    margin-left: none;
+    font-weight: 900;
+  }
+  ul {
+    border-top: none;
+    padding-top: none;
     margin-right: none;
+    line-height: 20px;
+    padding-bottom: 10px;
+  }
+  li {
+    border-bottom: .5px solid white;
+    line-height: 40px;
+    font-size: .75em;
+  }
+  .lastli {
+    border-bottom: none;
   }
 }
