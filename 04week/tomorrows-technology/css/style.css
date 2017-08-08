@@ -1,3 +1,14 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  max-width: 100%;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif !important;
+  font-size: 1em;
+  font-weight: bold;
+}
+
 #tomorrowPhoto {
   max-width: 75%;
   float: left;
@@ -10,43 +21,109 @@ header {
 }
 
 #topStories {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  /*font-weight: 500;*/
   font-size: 1.3em;
   max-width: 25%;
-  height: 40px;
+  height: 50px;
   padding: 3% 3% 0 0;
   margin: 2% 5% 2% 0;
   border-bottom: 2px solid black;
   justify-content: flex-start;
-  align-items: left;
   flex-direction: row;
 }
 
 main {
   max-width: 75%;
-  float: left;
   margin: 2% 6% 2% 2%;
-  font-family: 'Roboto', sans-serif;
 }
 
 #headlines ul {
-  font-family: 'Roboto', sans-serif;
   list-style: none;
   max-width: 25%;
   height: 200px;
-  /*padding: 3% 3%  0;*/
-  position: absolute;
-  top: 12%;
+  padding: 3% 3% 0;
 }
 
 #technologyButton {
-  width: 200px;
-  height: 60px;
+  width: auto;
+  height: 50px;
   color: white;
   background-color: black;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
   font-size: 1.4em;
+  padding: 0 7px 0;
+}
+
+footer:disabled {
+  display: none;
+}
+
+
+/*TABLET DISPLAY STYLES*/
+
+@media (min-width: 768px) and (max-width: 999px) {
+  #topStories {
+    display: none;
+  }
+  #headlines {
+    display: none;
+  }
+}
+
+
+/*PHONE DISPLAY STYLES*/
+
+@media (max-width: 767px) {
+  footer {
+    background-color: rgb(93, 93, 93);
+    color: white;
+    display: flex;
+    max-width: 850px;
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    list-style: none;
+    float: left;
+  }
+  #usefulLinks {
+    padding: 0 60px 10px;
+    width: 300px;
+    height: auto;
+    justify-content: space-between;
+    text-align: left;
+    margin: 0 20px;
+    list-style: none;
+  }
+  #usefulLinks ul {
+    list-style: none;
+    padding: 0 60px 10px;
+    width: 150px;
+    height: auto;
+    align-items: margin: 0 20px;
+  }
+  #usefulLinks li {
+    border-bottom: 1px solid lightgrey;
+    list-style: none;
+    padding: 5px 0;
+  }
+  #socialMedia ul {
+    list-style: none;
+    padding: 0 10px 10px;
+    width: 100px;
+    height: auto;
+    text-align: left;
+    margin: 0 20px;
+  }
+  #socialMedia li {
+    border-bottom: 1px solid lightgrey;
+    list-style: none;
+    padding: 5px 0;
+  }
+  #socialMedia img {
+    width: 1.4em;
+    height: auto;
+    align-items: baseline;
+  }
 }
