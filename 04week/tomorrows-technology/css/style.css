@@ -1,0 +1,143 @@
+body {
+width: 96%;
+margin: 2% auto;
+display: flex;
+justify-content: flex-end;
+font-family: 'Roboto', sans-serif;
+}
+
+main {
+  width: 67%;
+}
+
+article h1 {
+  font-size: 2em;
+  margin: 2% 0;
+}
+
+article p {
+  font-size: 1.25em;
+  margin-bottom: 2%;
+}
+
+button {
+  background-color: #838383;
+  color: #fff;
+  border: none;
+  height: 40px;
+  width: 140px;
+  font-size: 1em;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: darkgreen;
+}
+
+/* ASIDE STYLES  */
+
+aside {
+  width: 30%;
+  margin-left: 2%;
+}
+
+ul li {
+  list-style: none;
+  margin-top: 7%;
+  font-weight: 900;
+}
+
+ul li:hover {
+  cursor: pointer;
+  color: darkgreen;
+}
+
+#stories h3 {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+/* FOOTER STYLES  */
+
+footer {
+  display: none;
+}
+
+/* TABLET STYLES  */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  main {
+    width: 100%;
+  }
+
+  aside {
+    display: none;
+  }
+
+}
+
+/* MOBILE STYLES  */
+
+@media (max-width: 767px) {
+
+  body {
+  flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  aside {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    margin-top: 10%;
+    display: inline-block;
+    background-color: #838383;
+    color: white;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .footer-col {
+    float: left;
+    width: 30%;
+    margin: 10%;
+  }
+
+  .footer-col h3 {
+    font-size: 1.15em;
+    font-weight: 900;
+  }
+
+  .footer-col ul li {
+    border-bottom: 1px solid white;
+    padding-bottom: 8%;
+    display: flex;
+}
+
+  .footer-col ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.75em;
+    font-weight: 300;
+  }
+
+  .fa-instagram {
+    padding-left: 50px;
+  }
+
+  .fa-facebook {
+    padding-left: 55px;
+  }
+
+  .fa-twitter {
+    padding-left: 65px;
+  }
+
+}
