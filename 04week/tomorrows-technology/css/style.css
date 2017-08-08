@@ -49,34 +49,128 @@ main {
 
 button {
   font-size: 125%;
-  color: #ffffff;
+  color: #f1f1f1;
   background-color: #4E4E4E;
   border: none;
   padding: 10px;
   margin: 2.5% 0 0 0;
 }
 
-footer {
-  margin: 0 0 0 2.5%;
+nav {
   display: none;
+  width: 100%;
+  color: #f1f1f1;
+  background-color: #4E4E4E;
+  margin-top: 3%;
 }
 
-footer li {
-  list-style-type: none;
+.nav-box {
+  width: 100%;
+  flex-direction: row;
+  padding: 3% 5% 3% 5%;
+  justify-content: space-between;
 }
+
+.nav-box h3 {
+  font-size: 150%;
+  font-style: bold;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+
+.nav-box li {
+  list-style-type: none;
+  padding: 4% 0 4% 0;
+  font-weight: lighter;
+}
+
+.links li {
+  border-bottom: .5px solid #f1f1f1;
+}
+
+.icon1 {
+  display: flex;
+  border-bottom: .5px solid #f1f1f1;
+  justify-content: space-between;
+  padding-right: 25%;
+}
+
+.icon2 {
+  display: flex;
+  border-bottom: .5px solid #f1f1f1;
+  justify-content: space-between;
+  padding-right: 25%;
+}
+
+.icon3 {
+  display: flex;
+  border-bottom: .5px solid #f1f1f1;
+  justify-content: space-between;
+  padding-right: 25%;
+}
+
+#flex-icons img {
+  margin-top: 15px;
+}
+
+/*MEDIA QUERIES*/
 
 @media (min-width: 768px) and (max-width: 991px) {
+/*tablet*/
 
- .side {
-   display: none;
- }
+  header img {
+    width: 90%;
+    margin: auto;
+  }
+
+  .side {
+    display: none;
+  }
+
+  #content {
+    width: 120%;
+    margin-left: 5%;
+  }
+
+  #content h1 {
+    font-size: 180%;
+    margin: 4% 0 2.5% 0;
+  }
+
+  #content p {
+    font-size: 100%;
+  }
 
 }
 
 @media (max-width: 767px) {
+/*phone*/
+
+  header img {
+    width: 90%;
+    margin: auto;
+  }
 
   .side {
     display: none;
+  }
+
+  #content {
+    width: 120%;
+    margin-left: 5%;
+  }
+
+  #content h1 {
+    font-size: 180%;
+    margin: 4% 0 2.5% 0;
+  }
+
+  #content p {
+    font-size: 100%;
+  }
+
+  nav {
+    display: flex;
   }
 
 }
