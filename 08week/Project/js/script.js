@@ -2,7 +2,7 @@
 $(document).ready(function() {
   var num = 0;
   var counter = $('#counter');
-    $('#box-1').click(function() {
+    $('#box-1').click(function(f1) {
     num++;
     counter.text(num);
   })
@@ -25,3 +25,14 @@ $(document).ready(function() {
     counterhundred.text(num);
   })
 });
+
+//   $('#box-all').on({
+//  'click': function(){
+//
+//    alert("eeeeeee")}
+//  // 'click': function(){alert("eeeeeee")}
+// })
+
+ window.onload = function () {
+alert("Are you ready to count? by ones, tens, and hundred?");
+ }
