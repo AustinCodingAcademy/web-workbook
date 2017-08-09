@@ -1,45 +1,101 @@
 body {
+  background-image:
+  url(http://i.imgur.com/VwygTZR.jpg);
   width: 98%;
-  margin: 2% auto;
+  margin: 1% auto;
   background-color: #3AB371;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.row {
-  border: 1px solid white;
-}
+/*.row {
+  border: 1px solid blue;
+}*/
 
 header {
   display:flex;
   justify-content: center;
   text-align: center;
-  color: white;
 
 }
 header h1 {
+  color: white;
   font-size: 4em;
 }
 
 header a {
-  color: white;
+  color: #ababab;
   text-decoration: none;
+  font-size: 2.5em;
+  border-bottom: 1px solid #ababab;
 }
 article {
   display: flex;
   flex-direction: column;
-  padding: 2%;
+
   align-items: center;
-  background-color: white;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, .3);
 }
-
-figure {
+#tl {
+  display: flex;
+  align-items:flex-end;
   width: 100%;
-  
+  border: 2px solid white;
+}
+#tr {
+  display: flex;
+  align-items:flex-end;
+  width: 100%;
+  border: 2px solid white;
 }
 
-img {
-  100%;
+#bl {
+  display: flex;
+  align-items:flex-end;
+  width: 100%;
+  border: 2px solid white;
+}
+#rl {
+  display: flex;
+  align-items:flex-end;
+  width: 100%;
+  border: 2px solid white;
+}
+#dl {
+  display: flex;
+  align-items:flex-end;
+  width: 100%;
+  border: 2px solid white;
 }
 
 .byline {
-  float: right;
+  display: flex;
+
+  justify-content:space-between;
+  
+  width: 100%;
+}
+p {
+  font-size: 1.4em;
+}
+
+ @media (max-width: 786px) {
+
+   article {
+     display: flex;
+     align-items: center;
+   }
+
+
+/*#bl, #rl, #dl, #tl{
+  width: 100%;
+}*/
+
+p {
+  font-size: .8em;
+}
+h1 {
+  font-size: 1.1em;
+}
 }
