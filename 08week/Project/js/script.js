@@ -21,19 +21,20 @@ var num = parseInt(counterValue) + 100;
 $("#counter-100").text(num);
 });
 
-$("#button").click(function(){
-var counterValue = $("#counter-1 #counter-10 #counter-100").text() === "" ? 0 :
-$("#counter-1 #counter-10 #counter-100").text();
-var num = parseInt(counterValue) + 1 + 10 + 100;
-$("#counter-1 #counter-10 #counter-100").text(num);
+// $("#button").click(function(){
+// var counterValue = $("#counter-1 #counter-10 #counter-100").text() === "" ? 0 :
+// $("#counter-1 #counter-10 #counter-100").text();
+// var num = parseInt(counterValue) + 1 + 10 + 100;
+// $("#counter-1 #counter-10 #counter-100").text(num);
+// });
+
+
+
+
+
+
+
+
+$("#click-all").click(function(){
+  $("#box-1, #box-10, #box-100").trigger("click");
 });
-
-
-
-
-
-
-
-
-
-// $("#box-1 #box-10 #box-100 .box").trigger("click");
