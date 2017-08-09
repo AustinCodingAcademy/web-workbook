@@ -5,6 +5,8 @@ window.onload = function () {
  createTitle();
 
  createListItem ();
+
+ removeParagraphFour ();
 }
 
 function createTitle() {
@@ -24,6 +26,7 @@ function createListItem () {
 }
 
 function removeParagraphFour () {
-  var paragraphFour = document.getElementById("#P4");
-    paragraphFour.remove
+  var parent = document.getElementById("div")
+  var child = document.getElementById("P4")
+  parent.removeChild(child);
 }
