@@ -22,6 +22,6 @@ $('#box-10').click(function() {
       counter.text(num);
     });
 
- $('#new-box').click(function() {
-   $('.all').trigger('box-1','box-10','box-100');
-});
+    $('#new-box').click(function(){
+        $('div').click();
+    });
