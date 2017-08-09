@@ -6,11 +6,13 @@
 
 
 body {
-  padding: 2.5rem;
+  padding: 3%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
 }
 
-header{
-  float: left;
+main{
   width: 70%;
 }
 
@@ -19,30 +21,29 @@ img {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: 'Inconsolata', sans-serif;
-  margin: 2rem 0;
-  width: 50rem;
+  margin: 2% 0;
+  width: auto;
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: 'Inconsolata', sans-serif;
-  margin-bottom: 1.5rem;
+  margin: 3% 0;
 }
 
 button {
   background-color: #4d4d4d;
   font-family: "Inconsolata", sans-serif;
   font-weight: 100;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #fff;
-  height: 2rem;
+  height: 5%;
   border: none;
 }
 
 aside{
-  float: right;
   width: 25%;
 }
 
@@ -64,7 +65,7 @@ li {
   font-family: "Inconsolata", sans-serif;
   font-weight: 700;
   font-size: 1rem;
-  margin: 1rem 0 0 0;
+  margin: 5%;
   border-bottom: 1px solid #fff;
   text-transform: capitalize;
 }
@@ -81,30 +82,9 @@ footer {
 */
 
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 991px) {
-  body {
-    padding: 2.5rem;
-  }
-
-  header{
+@media (min-width: 768px) and (max-width: 991px) {
+  main{
     width: 100%;
-  }
-
-  img {
-    width: 100%;
-  }
-
-  h1 {
-    font-size: 2rem;
-    font-family: 'Inconsolata', sans-serif;
-    margin: 2rem 0;
-    width: 50rem;
-  }
-
-  p {
-    font-size: 1.25rem;
-    font-family: 'Inconsolata', sans-serif;
-    margin-bottom: 1.5rem;
   }
 
   footer, aside {
@@ -117,79 +97,56 @@ footer {
     PHONE STYLESHEET
 
 */
-@media only screen and (max-device-width: 767px) {
-  body {
-    padding: 5rem;
+@media (max-width: 767px) {
+  body{
+    flex-flow: column;
   }
-
-  header{
+  main{
     width: 100%;
   }
 
-  img {
-    width: 100%;
-  }
-
-  h1 {
-    font-size: 3rem;
-    font-family: 'Inconsolata', sans-serif;
-    margin: 3rem 0;
-    width: 50rem;
-  }
-
-  p {
-    font-size: 1.25rem;
-    font-family: 'Inconsolata', sans-serif;
-    margin-bottom: 3rem;
+  button{
+    padding: 3%;
   }
 
   footer {
     height: 100%;
     background-color: #5d5d5d;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
-    align-content: space-between;
-    padding: 2.5rem;
-  }
-
-  .useful-links {
-    width: 50%;
-  }
-
-  .social-media {
-    width: 50%;
+    padding: 5% 10%;
+    margin-top: 8%;
   }
 
   h3 {
     color: #fff;
     font-family: "Inconsolata", sans-serif;
     font-weight: 700;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-
-  ul {
-    list-style: none;
+    font-size: 1.25rem;
+    margin-bottom: 13%;
   }
 
   li {
     color: #fff;
     font-family: "Inconsolata", sans-serif;
     font-weight: 400;
-    font-size: 2rem;
-    line-height: 3rem;
-    margin: 1rem 0 0 0;
+    font-size: 1rem;
+    line-height: 110%;
+    margin-top: 5%;
     border-bottom: 1px solid #fff;
-    width: 50%;
+    padding-bottom: 5%;
+  }
+
+  .social-media li{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
   }
 
   .useful-links li:last-child, .social-media li:last-child {
     border-bottom: none;
-  }
-
-  .social-icon {
-    margin-left: 1rem;
+    padding-bottom: 0;
   }
 
   aside{
