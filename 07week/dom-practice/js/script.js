@@ -15,10 +15,5 @@ ul[0].appendChild(fifthList);
 
 var paragraphFour=document.getElementById('P4')
 paragraphFour.style.display = 'none';
-
-
-
-//window.onload = function () {
-//   var li = document.getElementsByTagName("li");
-  // alert("There are " + li + " on the page.");
-//}
+  or
+paragraphFour.remove();
