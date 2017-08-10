@@ -8,6 +8,9 @@ body {
   background-size: cover;
 }
 
+
+/*top Sec*/
+
 header img {
   filter: drop-shadow(14px 14px 18px #000000);
 }
@@ -18,14 +21,11 @@ header {
   text-align: center;
 }
 
-
-
-
 .topsec {
   font-size: 3em;
   font-family: 'Chonburi';
-
 }
+
 .top h2 {
   font-size: 1.5em;
   font-family: serif;
@@ -46,7 +46,7 @@ header {
   color: lightyellow;
 }
 
-.topmid a{
+.topmid a {
   color: navy;
   font-size: 4em;
   font-family: 'Sedgwick Ave Display', cursive;
@@ -57,7 +57,6 @@ header {
   color: navajowhite;
 }
 
-
 article {
   display: flex;
   flex-direction: column;
@@ -66,7 +65,10 @@ article {
   background-color: rgba(255, 255, 255, .3);
 }
 
-#tr img{
+
+/*Middle Sec*/
+
+#tr img {
   width: 100%;
   border: 2px solid white;
   text-align: center;
@@ -86,19 +88,6 @@ article {
 
 #tr h3 {
   color: red;
-}
-
-#bl {
-  display: flex;
-  align-items: flex-end;
-  width: 100%;
-
-}
-
-.bl h1 {
-  color: #3366fb;
-  font-size: 3em;
-  font-family: 'Great Vibes';
 }
 
 #rl {
@@ -122,6 +111,7 @@ article {
   font-family: 'Josefin';
   text-align: justify;
 }
+
 .dl {
   margin-bottom: 10px;
 }
@@ -133,7 +123,22 @@ article {
 }
 
 p {
-  font-size: 1.4em;
+  font-size: 1.5em;
+}
+
+
+/*Bottom Sec*/
+
+#bl {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.bl h1 {
+  color: #3366fb;
+  font-size: 3em;
+  font-family: 'Great Vibes';
 }
 
 #botsec {
@@ -145,6 +150,7 @@ p {
 }
 
 
+/*Phone Sec*/
 
 @media (max-width: 786px) {
   .topsec span {
@@ -156,9 +162,25 @@ p {
   .topsec img {
     display: none;
   }
-
   .top a {
     font-size: 1.5em;
+  }
+  #tr {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #tr img {
+    position: relative;
+    left: 0;
+  }
+  #tr h1 {
+    font-size: 4em;
+    font-family: 'great vibes';
+    font-weight: bold;
   }
   #tr h3 {
     color: white;
@@ -166,6 +188,9 @@ p {
   article {
     display: flex;
     align-items: center;
+  }
+  .bl {
+    margin-top: 10px;
   }
   .bl h1 {
     color: #3366fb;
@@ -182,15 +207,15 @@ p {
   .byline {
     display: none;
   }
-
   h2 {
     font-size: .9em;
   }
-
   .dl {
     margin: 10px 0;
   }
-
+  #rl {
+    margin: 10px 0;
+  }
   #rl h2 {
     font-size: .9em;
   }
