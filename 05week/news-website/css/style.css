@@ -18,24 +18,45 @@ header {
   text-align: center;
 }
 
-.topsec span {
-  color: darkgreen;
-  font-size: 1.5em;
-  font-variant: normal;
+
+
+
+.topsec {
+  font-size: 3em;
   font-family: 'Chonburi';
+
 }
-header h1 {
-  color: white;
-  font-size: 5em;
-  font-variant: small-caps;
+.top h2 {
+  font-size: 1.5em;
+  font-family: serif;
+  color: yellow;
 }
 
-header a {
+.top a:hover {
+  color: navy;
+  text-decoration: none;
+}
+
+.top a {
   color: #abcdef;
   text-decoration: none;
-  font-size: 3em;
-  font-family: 'Oxygen';
+  font-variant: small-caps;
+  font-size: 2.7em;
+  font-family: 'Monoton';
+  color: lightyellow;
 }
+
+.topmid a{
+  color: navy;
+  font-size: 4em;
+  font-family: 'Sedgwick Ave Display', cursive;
+  text-decoration: none;
+}
+
+.topmid a:hover {
+  color: navajowhite;
+}
+
 
 article {
   display: flex;
@@ -71,6 +92,7 @@ article {
   display: flex;
   align-items: flex-end;
   width: 100%;
+
 }
 
 .bl h1 {
@@ -91,8 +113,17 @@ article {
 
 #dl {
   display: flex;
-
+  align-items: flex-end;
   width: 100%;
+}
+
+.dl h2 {
+  color: darkslateblue;
+  font-family: 'Josefin';
+  text-align: justify;
+}
+.dl {
+  margin-bottom: 10px;
 }
 
 .byline {
@@ -118,9 +149,16 @@ p {
 @media (max-width: 786px) {
   .topsec span {
     color: #666;
-    font-size: 1.5em;
+    font-size: 2em;
     font-family: cursive;
     font-weight: 900;
+  }
+  .topsec img {
+    display: none;
+  }
+
+  .top a {
+    font-size: 1.5em;
   }
   #tr h3 {
     color: white;
@@ -147,6 +185,10 @@ p {
 
   h2 {
     font-size: .9em;
+  }
+
+  .dl {
+    margin: 10px 0;
   }
 
   #rl h2 {
