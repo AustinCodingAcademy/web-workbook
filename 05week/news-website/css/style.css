@@ -1,20 +1,58 @@
-.darkBG{
-  background: black;
-
+body{
+  background-color: green;
+  color: white;
+  text-align: center;
+  width:90%;
+  margin: 2% auto;
 }
 
-.darkerBG{
- background: pink;
+header{
+  display:flex;
+  justify-content: center;
+}
 
- }
+header h1{
+  font-size: 3em;
+  font-weight: 900;
+  color:white;
+}
 
- .darkestBG{
-  background: purple;
+article{
+  background-color:white;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items:flex-start;
+}
 
- }
+h1{
+color:black;
+  font-family: 'Heebo',sans-serif;
+}
 
-.row div{
-height: 100px;
+ p{
+  color:black;
+  font-family: 'Roboto',sans-serif;
+  margin:10px;
+  text-align: left;
+}
+
+/* For mobile phone view  */
+	@media (min-width:300px) and (max-width: 767px) {
+    body{
+      background-color: white;
+      color: black;
+      text-align: center;
+      width:90%;
+      margin: 2% auto;
+    }
+
+    header h1{
+      font-size: 2em;
+      font-weight: 900;
+      color:black;
+    }
+
 
 
 }
