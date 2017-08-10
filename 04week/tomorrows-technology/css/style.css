@@ -1,161 +1,143 @@
 body {
-  font-family: 'Roboto Condensed', sans-serif;
-  width: 100%;
-  max-width: 1300px;
-  margin: 2%;
-}
-
-h1 {
-  font-family: 'Oswald', sans-serif !important;
-  font-size: 1em;
-  font-weight: bold;
-}
-
-#tomorrowPhoto {
-  width: 100%;
-  height: auto;
-  margin: 2% 2% 2% 2%;
-}
-
-header {
-  display: flex;
-  flex-direction: row;
-}
-
-#sideBar {
-  padding: 2% 2% 2% 2%;
-  flex-direction: column;
-}
-
-#topStories {
-  /*font-weight: 500;*/
-  font-size: 1.3em;
-  max-width: 30%;
-  height: 50px;
-  padding: 3% 3% 0 0;
-  margin: 2% 2% 2% 0;
-  border-bottom: 2px solid black;
-  justify-content: flex-start;
-  flex-direction: row;
-}
-
-/*#headlines ul {
-  list-style: none;
-  height: auto;*/
+width: 96%;
+margin: 2% auto;
+display: flex;
+justify-content: flex-end;
+font-family: 'Roboto', sans-serif;
 }
 
 main {
-  max-width: 60%;
-  margin: 2% 6% 2% 2%;
+  width: 67%;
 }
 
-#technologyButton {
-  width: auto;
-  height: 50px;
-  color: white;
-  background-color: black;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  font-size: 1.4em;
-  padding: 0 7px 0;
+article h1 {
+  font-size: 2em;
+  margin: 2% 0;
 }
 
-footer:disabled {
+article p {
+  font-size: 1.25em;
+  margin-bottom: 2%;
+}
+
+button {
+  background-color: #838383;
+  color: #fff;
+  border: none;
+  height: 40px;
+  width: 140px;
+  font-size: 1em;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: darkgreen;
+}
+
+/* ASIDE STYLES  */
+
+aside {
+  width: 30%;
+  margin-left: 2%;
+}
+
+ul li {
+  list-style: none;
+  margin-top: 7%;
+  font-weight: 900;
+}
+
+ul li:hover {
+  cursor: pointer;
+  color: darkgreen;
+}
+
+#stories h3 {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+/* FOOTER STYLES  */
+
+footer {
   display: none;
 }
 
-/*TABLET DISPLAY STYLES*/
+/* TABLET STYLES  */
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  #topStories {
+@media (min-width: 768px) and (max-width: 991px) {
+
+  main {
+    width: 100%;
+  }
+
+  aside {
     display: none;
   }
-  #headlines {
-    display: none;
-  }
-  #tomorrowPhoto {
-    max-width: 100%;
-    margin: 2% 2% 2% 2%;
-    float: center;
-    height: auto;
-  }
+
 }
 
-
-/*PHONE DISPLAY STYLES*/
+/* MOBILE STYLES  */
 
 @media (max-width: 767px) {
-  #topStories {
-    display: none;
+
+  body {
+  flex-direction: column;
   }
-  #headlines {
-    display: none;
-  }
-  #tomorrowPhoto {
-    max-width: 95%;
-    height: auto;
-    margin: 2% 2% 2% 2%;
-    float: center;
-  }
-  footer {
-    background-color: rgb(93, 93, 93);
-    color: white;
-    display: flex;
-    max-width: 767px;
+
+  main {
     width: 100%;
-    height: auto;
-    padding-top: 30px;
-    list-style: none;
+  }
+
+  aside {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    margin-top: 10%;
+    display: inline-block;
+    background-color: #838383;
+    color: white;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .footer-col {
     float: left;
-    justify-content: space-around;
+    width: 30%;
+    margin: 10%;
   }
-  #usefulLinks {
-    padding: 0 50px 10px;
-    width: 100px;
-    height: auto;
-    justify-content: space-between;
-    text-align: left;
-    margin: 0 20px;
-    list-style: none;
+
+  .footer-col h3 {
+    font-size: 1.15em;
+    font-weight: 900;
   }
-  #usefulLinks ul {
-    list-style: none;
-    padding: 0 0 10px;
-    width: 150px;
-    height: auto;
+
+  .footer-col ul li {
+    border-bottom: 1px solid white;
+    padding-bottom: 8%;
+    display: flex;
+}
+
+  .footer-col ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.75em;
+    font-weight: 300;
   }
-  #usefulLinks li {
-    font-size: .7em;
-    border-bottom: 1px solid lightgrey;
-    list-style: none;
-    padding: 5px 0;
+
+  .fa-instagram {
+    padding-left: 50px;
   }
-  #socialMedia {
-    padding: 0 50px 10px;
-    width: 100px;
-    height: auto;
-    justify-content: space-between;
-    text-align: left;
-    margin: 0 20px;
-    list-style: none;
+
+  .fa-facebook {
+    padding-left: 55px;
   }
-  #socialMedia ul {
-    list-style: none;
-    padding: 0 10px 10px;
-    width: 100px;
-    height: auto;
-    text-align: left;
+
+  .fa-twitter {
+    padding-left: 65px;
   }
-  #socialMedia li {
-    font-size: .7em;
-    border-bottom: 1px solid lightgrey;
-    list-style: none;
-    padding: 5px 0;
-  }
-  #socialMedia img {
-    width: 1.4em;
-    height: auto;
-    align-items: baseline;
-  }
+
 }
