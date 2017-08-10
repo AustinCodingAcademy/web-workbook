@@ -1,0 +1,182 @@
+body{
+  background: grey;
+
+}
+h1{
+  /*text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;*/
+}
+
+
+
+/*div:hover{
+  width: 100px;
+  height: 100px;
+  transition-duration: 2s;
+
+}*/
+
+
+
+
+  /*VERTICAL?*/
+.container{
+  transform: rotate(00deg);
+  /*display: flex;*/
+}
+
+
+/*CLASSES*/
+.red{
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+
+
+}
+
+.blue{
+  background: blue;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.yellow{
+  background: yellow;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.green{
+  background: green;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.pink{
+  background: pink;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  transform: translate();
+}
+
+.lightblue{
+  background: lightblue;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.orange{
+  background: orange;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.purple{
+  background: purple;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+
+
+/*Animation*/
+
+
+.grow:hover{
+
+  transform: translate(300px)rotate(150deg)scale(1.5);
+  animation-name: move;
+}
+
+.shrink:hover{
+  transform: translate(-300px)rotate(-360deg)scale(.5);
+  animation-name: small;
+
+}
+
+
+.grow{
+  transform: rotate(360);
+  transition: 4s ease-in-out;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  animation: move 4s linear;
+  animation-direction: alternate-reverse;
+  padding-bottom: 10px;
+  padding-top: auto;
+}
+
+.shrink{
+  transition: 2s ease-in-out;
+  margin-left: auto;
+  margin-right: auto;
+  /*text-align: center;*/
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  animation: small 4s linear;
+  animation-direction: alternate-reverse;
+  padding-bottom: 10px;
+
+
+}
+.shrink .grow{
+  padding-bottom: 15px;
+}
+
+
+@keyframes small{
+0% {
+  transform: translate(0);
+}
+50% {
+  color: lightblue;
+  background-color: lightblue;
+  transform: translate(-200px, 135px) rotate(-60deg);
+}
+75% {
+  background-color: black;
+  transform: translate(-100px, -175) rotateZ(100deg)(-150deg);
+  border-radius: 50%;
+
+}
+100% {
+  background-color: black;
+  transform: scale(2);
+  border-radius: 75%;
+ }
+}
+@keyframes move{
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    background-color: orange;
+    te
+  }
+  50% {
+    background-color: orange;
+    transform: translate(300px, 210px) rotate(60deg);
+  }
+  100% {
+    transform: translate(1000px);
+    background-color: yellow;
+  }
+}
