@@ -1,26 +1,32 @@
 body {
-  background-image:
-  url(http://i.imgur.com/VwygTZR.jpg);
+  background-image: url(http://i.imgur.com/VwygTZR.jpg);
   width: 98%;
   margin: 1% auto;
   background-color: #3AB371;
-  background-position:center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
- header img {
+
+header img {
   filter: drop-shadow(14px 14px 18px #000000);
 }
+
 header {
-  display:flex;
+  display: flex;
   justify-content: center;
   text-align: center;
+}
 
+.topsec span {
+  color: darkgreen;
+  font-size: 1.5em;
+  font-variant: normal;
+  font-family: 'Chonburi';
 }
 header h1 {
   color: white;
-  font-size: 4.5em;
+  font-size: 5em;
   font-variant: small-caps;
 }
 
@@ -30,16 +36,16 @@ header a {
   font-size: 3em;
   font-family: 'Oxygen';
 }
+
 article {
   display: flex;
   flex-direction: column;
-
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, .3);
 }
 
-#tr {
+#tr img{
   width: 100%;
   border: 2px solid white;
   text-align: center;
@@ -49,21 +55,22 @@ article {
   font-family: 'Roboto';
   font-size: 3.2em;
 }
+
 #tr h2 {
-  font-size: 2.5em;
+  font-size: 3em;
   color: darkgreen;
   text-align: center;
   font-family: 'Abril Fatface';
 }
-#tr h3{
-  color:red;
+
+#tr h3 {
+  color: red;
 }
 
 #bl {
   display: flex;
-  align-items:flex-end;
+  align-items: flex-end;
   width: 100%;
-
 }
 
 .bl h1 {
@@ -71,68 +78,81 @@ article {
   font-size: 3em;
   font-family: 'Great Vibes';
 }
+
 #rl {
   display: flex;
   width: 100%;
-
 }
+
 #rl h2 {
-  font-size: 1.5em;
+  font-size: 2em;
   text-align: center;
 }
+
 #dl {
   display: flex;
-  align-items:flex-end;
-  width: 100%;
 
+  width: 100%;
 }
 
 .byline {
   display: flex;
-  justify-content:space-between;
-
+  justify-content: space-between;
   width: 100%;
 }
+
 p {
   font-size: 1.4em;
 }
 
 #botsec {
-
   box-shadow: 14px 14px 18px #000000;
 }
+
 #botsec h2 {
   font-size: 1.5em;
 }
 
- @media (max-width: 786px) {
 
-   #tr h3 {
-     color: white;
-   }
 
-   article {
-     display: flex;
-     align-items: center;
-   }
-   .bl h1 {
-     color: #3366fb;
-     font-size: 6em;
-     font-family: 'Great Vibes';
-}
-p {
+@media (max-width: 786px) {
+  .topsec span {
+    color: #666;
+    font-size: 1.5em;
+    font-family: cursive;
+    font-weight: 900;
+  }
+  #tr h3 {
+    color: white;
+  }
+  article {
+    display: flex;
+    align-items: center;
+  }
+  .bl h1 {
+    color: #3366fb;
+    font-size: 6em;
+    font-family: 'Great Vibes';
+    text-align: center;
+  }
+  p {
     display: none;
   }
   author {
     display: none;
   }
-
   .byline {
     display: none;
   }
-}
-h2 {
-  font-size: 1.1em;
-}
 
+  h2 {
+    font-size: .9em;
+  }
+
+  #rl h2 {
+    font-size: .9em;
+  }
+  #botsec h2 {
+    font-size: .9em;
+  }
 }
