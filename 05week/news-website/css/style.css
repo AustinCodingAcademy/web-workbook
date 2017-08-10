@@ -4,14 +4,14 @@ body {
   width: 98%;
   margin: 1% auto;
   background-color: #3AB371;
-  background-position: center;
+  background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-/*.row {
-  border: 1px solid blue;
-}*/
 
+}
+ header img {
+  filter: drop-shadow(14px 14px 18px #000000);
+}
 header {
   display:flex;
   justify-content: center;
@@ -20,14 +20,15 @@ header {
 }
 header h1 {
   color: white;
-  font-size: 4em;
+  font-size: 4.5em;
+  font-variant: small-caps;
 }
 
 header a {
-  color: #ababab;
+  color: #abcdef;
   text-decoration: none;
-  font-size: 2.5em;
-  border-bottom: 1px solid #ababab;
+  font-size: 3em;
+  font-family: 'Oxygen';
 }
 article {
   display: flex;
@@ -37,65 +38,101 @@ article {
   justify-content: center;
   background-color: rgba(255, 255, 255, .3);
 }
-#tl {
-  display: flex;
-  align-items:flex-end;
-  width: 100%;
-  border: 2px solid white;
-}
+
 #tr {
-  display: flex;
-  align-items:flex-end;
   width: 100%;
   border: 2px solid white;
+  text-align: center;
+}
+
+#tr h1 {
+  font-family: 'Roboto';
+  font-size: 3.2em;
+}
+#tr h2 {
+  font-size: 2.5em;
+  color: darkgreen;
+  text-align: center;
+  font-family: 'Abril Fatface';
+}
+#tr h3{
+  color:red;
 }
 
 #bl {
   display: flex;
   align-items:flex-end;
   width: 100%;
-  border: 2px solid white;
+
+}
+
+.bl h1 {
+  color: #3366fb;
+  font-size: 3em;
+  font-family: 'Great Vibes';
 }
 #rl {
   display: flex;
-  align-items:flex-end;
   width: 100%;
-  border: 2px solid white;
+
+}
+#rl h2 {
+  font-size: 1.5em;
+  text-align: center;
 }
 #dl {
   display: flex;
   align-items:flex-end;
   width: 100%;
-  border: 2px solid white;
+
 }
 
 .byline {
   display: flex;
-
   justify-content:space-between;
-  
+
   width: 100%;
 }
 p {
   font-size: 1.4em;
 }
 
+#botsec {
+
+  box-shadow: 14px 14px 18px #000000;
+}
+#botsec h2 {
+  font-size: 1.5em;
+}
+
  @media (max-width: 786px) {
+
+   #tr h3 {
+     color: white;
+   }
 
    article {
      display: flex;
      align-items: center;
    }
-
-
-/*#bl, #rl, #dl, #tl{
-  width: 100%;
-}*/
-
-p {
-  font-size: .8em;
+   .bl h1 {
+     color: #3366fb;
+     font-size: 6em;
+     font-family: 'Great Vibes';
 }
-h1 {
+p {
+    display: none;
+  }
+  author {
+    display: none;
+  }
+
+  .byline {
+    display: none;
+  }
+}
+h2 {
   font-size: 1.1em;
 }
+
 }
