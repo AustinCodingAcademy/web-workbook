@@ -1,0 +1,92 @@
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.odd {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  margin: 5px;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.even {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  margin: 5px;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+div:hover {
+  animation: mymove 5s;
+  animation-iteration-count: infinite;
+}
+
+.one {
+  background-color: rgb(0,0,0);
+}
+.two {
+  background-color: rgb(20,20,20);
+}
+.three {
+  background-color: rgb(40,40,40);
+}
+.four {
+  background-color: rgb(60,60,60);
+}
+.five {
+  background-color: rgb(80,80,80);
+}
+.six {
+  background-color: rgb(100,100,100);
+}
+.seven {
+  background-color: rgb(120,120,120);
+}
+.eight {
+  background-color: rgb(140,140,140);
+}
+.nine {
+  background-color: rgb(160,160,160);
+}
+.ten {
+  background-color: rgb(180,180,180);
+}
+.eleven {
+  background-color: rgb(200,200,200);
+}
+.twelve {
+  background-color: rgb(220,220,220);
+}
+
+div.even:hover {
+  width: 60px;
+  height: 60px;
+  transform: rotate(540deg);
+}
+
+div.odd:hover {
+  width: 15px;
+  height: 15px;
+  transform: rotate(-540deg);
+}
+
+#one:hover {
+}
+
+@keyframes mymove {
+  0%   {background: red;}
+  25%  {background: blue;}
+  50%  {background: yellow;}
+  75%  {background: green;}
+  100% {background: red;}
+}
