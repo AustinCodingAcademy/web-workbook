@@ -1,0 +1,99 @@
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /*background-color: orange;
+  transform: 3s ease-in-out;
+  transition: 1s;*/
+}
+h3 {
+  color: black;
+  font-weight: bold;
+}
+/*main:hover nth-child(even){
+  background-color: white;
+}*/
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+.one, .five {
+  background-color: orange;
+  transform: 3s ease-in-out;
+  transition: 1s;
+}
+.two, .six {
+  background-color: blue;
+  transform: 1s ease-in-out;
+  transition: 2s;
+}
+.three, .seven {
+  background-color: yellow;
+  transform: 2s ease-in-out;
+  transition: 4s;
+  animation: bounceIn .5s;
+}
+.four, .eight {
+  background-color: gray;
+  transform: 4s ease-in-out;
+  transition: 5s;
+}
+.one:hover{
+  background-color: green;
+  transform: translate(20px, 20px)
+}
+.two:hover{
+  background-color: purple;
+}
+.three:hover{
+  background-color: red;
+  animation: rotatem .2s;
+}
+.four:hover{
+  background-color: white;
+  border-color: white;
+}
+.five:hover{
+  background-color: maroon;
+  transform: translate(-60px, -10px)
+}
+.six:hover{
+  background-color: teal;
+}
+.seven:hover{
+  background-color: pink;
+  animation: rotatem .5s;
+}
+.eight:hover{
+  transform: rotateZ(360deg) rotateX(720deg) rotateY(180deg);
+  background-color: olive;
+  animation: rotatem .1s;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotatem {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
