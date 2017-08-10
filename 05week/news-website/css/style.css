@@ -1,3 +1,8 @@
+@fontface {
+  font-family: 'flutedgermanica';
+  src: url(05week/news-website/fonts/germanica_family (1)/flutedgermanica.ttf);
+}
+
 body {
   width: 98%;
   margin: auto;
@@ -7,18 +12,25 @@ header {
   background-image: url("http://media.istockphoto.com/photos/austin-skyline-with-beautiful-lake-reflections-and-deep-blue-sky-picture-id586367372?k=6&m=586367372&s=612x612&w=0&h=73Fyt6Ay4H3diU9HJ8rCVgbXXZ2a6Y938r5Ucz9vA7w=");
   background-repeat: no-repeat;
   background-size: cover;
+  /*background-color: #cccccc;*/
 }
 
 header h1 {
+  font-family: 'flutedgermanica', cursive;
   display: flex;
   justify-content: flex-end;
-  padding-right: 5%;
+  padding: 5%;
   color: #ffffff;
-  height: 50px;
+  font-size: 400%;
 }
 
 header a {
+  margin: 5% auto;
+  padding: 5px 0 5px 0;
   text-decoration: none;
+  color: #ffffff;
+  font-family: 'Times New Roman', serif;
+  font-size: 120%;
   background-color: #cccccc;
   text-align: center;
 }
@@ -30,21 +42,25 @@ header a {
 iframe {
   width: 100%;
   border: none;
+  margin-top: 3%;
 }
 
 #social {
-  background-color: #cccccc;
   margin: 5% auto;
 }
 
 #social img {
   width: 100%;
+  background-color: #cccccc;
   border: 5px solid #ffffff;
 }
 
 #letters h2 {
   font-size: 200%;
+  font-family: 'Times New Roman', serif;
   color: #cccccc;
+  margin: 0 auto;
+  padding: 0 0 2% 0;
 }
 #letters .row {
   display: flex;
@@ -61,4 +77,32 @@ figure p {
   color: #cccccc;
   text-align: justify;
   padding: 5px;
+}
+
+#row2 h2 {
+  font-size: 200%;
+  font-family: 'Times New Roman', serif;
+  margin-bottom: 0;
+}
+
+#row2 h3 {
+  font-size: 120%;
+  font-family: 'Times New Roman', serif;
+  margin-top: 0;
+}
+
+@media (max-width: 767px) {
+/*phone*/
+
+header h1 {
+  font-size: 300%;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+iframe {
+  display: none;
 }
