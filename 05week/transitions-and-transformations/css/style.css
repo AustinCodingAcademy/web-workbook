@@ -9,7 +9,9 @@ main {
 .box{
   height: 50px;
   width: 50px;
-  margin: 
+  margin: 2px;
+  transition-property: all;
+  transition-duration: 10s;
 }
 
 div {
@@ -21,11 +23,13 @@ div {
 /* Transitions */
 
 .large{
+  -webkit-transition
   transition: margin-right 10s;
 }
 
 .large:hover {
   margin-right: 2500px;
+  transform: rotate(360) scale (2.0);
 }
 
 .box1{
