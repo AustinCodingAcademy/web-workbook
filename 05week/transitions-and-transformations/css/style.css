@@ -1,0 +1,119 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main {
+  width: 100%;
+  margin: 1% auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box {
+  height: 50px;
+  width: 50px;
+  margin: 2px;
+  transition-property: all;
+}
+
+
+/*Transitions*/
+
+.large {
+  -webkit-transition: margin-right 10s ease-in-out;
+  -moz-transition: margin-right 10s ease-in-out;
+  -o-transition: margin-right 10s ease-in-out;
+  -ms-transition: margin-right 10s ease-in-out;
+  transition: margin-right 10s ease-in-out;
+
+}
+
+.large:hover {
+  height: 100px;
+  width: 100px;
+  -webkit-transition-property: height, width;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: height, width;
+  -moz-transition-duration: 1s;
+  transition-property: height, width;
+  transition-duration: 1s;
+  @keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+}
+
+.small {
+  -webkit-transition: margin-left 10s ease-in-out;
+  -moz-transition: margin-left 10s ease-in-out;
+  -o-transition: margin-left 10s ease-in-out;
+  -ms-transition: margin-left 10s ease-in-out;
+  transition: margin-left 10s ease-in-out;
+}
+
+.small:hover {
+  height: 100px;
+  width: 100px;
+  -webkit-transition-property: height, width;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: height, width;
+  -moz-transition-duration: 1s;
+  transition-property: height, width;
+  transition-duration: 1s;
+}
+
+
+/*Box Styles*/
+
+.box1 {
+  background-color: blue;
+}
+
+.box2 {
+  background-color: green;
+}
+
+.box3 {
+  background-color: yellow;
+}
+
+.box4 {
+  background-color: purple;
+}
+
+.box5 {
+  background-color: red;
+}
+
+.box6 {
+  background-color: gray;
+}
+
+.box7 {
+  background-color: darkred;
+}
+
+.box8 {
+  background-color: violet;
+}
+
+.box9 {
+  background-color: brown;
+}
+
+.box10 {
+  background-color: teal;
+}
+
+.box11 {
+  background-color: black;
+}
+
+.box12 {
+  background-color: orange;
+}
+
+.allboxs:hover>nth-child(odd)
+transform: translatex(500px)
