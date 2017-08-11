@@ -1,12 +1,39 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*-- INITIAL BOX --*/
+
 .box {
   width: 50px;
   height: 50px;
+  margin: 3px;
+  -webkit-transition: transform 2s;
+  -moz-transition: transform 2s;
+  -o-transition: transform 2s;
+  -ms-transition: transform 2s;
+  transition: transform 2s;
 }
 
-main {
-  display: flex;
-  
+/*--BOX TRANSITIONS--*/
+
+.boxgroup:hover>div:nth-child(odd) {
+  -webkit-transform: translateX(200px) rotate(360deg) scale(2);
+  -moz-transform: translateX(200px) rotate(360deg) scale(2);
+  -o-transform: translateX(200px) rotate(360deg) scale(2);
+  -ms-transform: translateX(200px) rotate(360deg) scale(2);
 }
+
+.boxgroup:hover>div:nth-child(even) {
+  -webkit-transform: translateX(-200px) rotate(-360deg) scale(.5);
+  -moz-transform: translateX(-200px) rotate(-360deg) scale(.5);
+  -o-transform: translateX(-200px) rotate(-360deg) scale(.5);
+  -ms-transform: translateX(-200px) rotate(-360deg) scale(.5);
+}
+
+/*--BOX COLORS--*/
 
 .one {
   background-color: black;
@@ -29,12 +56,14 @@ main {
 }
 
 .six {
-  background-color: #009933;
+  background-color: pink;
 }
 
 .seven {
-  background-color: pink;
+  background-image: url("http://gazettereview.com/wp-content/uploads/2016/12/keanu-reeves.jpg");
+  background-size: cover;
 }
+
 
 .eight {
   background-color: #cc3300;
