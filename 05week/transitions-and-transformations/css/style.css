@@ -1,5 +1,83 @@
-.squares{
+body{
+  padding: 1%;
+}
+
+#flex-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+
+.box{
   height: 50px;
+  width: 50px;
+  margin-bottom: 1%;
+}
+
+.box-1{
   background-color: #000;
-  border: 1px solid #fff;
+}
+
+.box-2{
+  background-color: #111;
+}
+
+.box-3{
+  background-color: #222;
+}
+
+.box-4{
+  background-color: #333;
+}
+
+.box-5{
+  background-color: #444;
+}
+
+.box-6{
+  background-color: #555;
+}
+
+.box-7{
+  background-color: #666;
+}
+
+.box-8{
+  background-color: #777;
+}
+
+.box-9{
+  background-color: #888;
+}
+
+.box-10{
+  background-color: #999;
+}
+
+.box-11{
+  background-color: #aaa;
+}
+
+.box-12{
+  background-color: #bbb;
+}
+
+.bigger{
+  transition: all 1s ease;
+}
+
+.smaller{
+  transition: all 1s ease;
+}
+
+#flex-container:hover > .box:nth-child(odd){
+  transform: scale(2) translate(100px) rotate(360deg);
+}
+
+#flex-container:hover > .box:nth-child(even){
+  transform: scale(.5) translate(-200px) rotate(-360deg);
 }
