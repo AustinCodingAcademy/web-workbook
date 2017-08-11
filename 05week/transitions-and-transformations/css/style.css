@@ -1,19 +1,26 @@
 main {
   width: 100%;
-  margin: 1% auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 div {
   width: 50px;
   height: 50px;
-  margin: 4px;
+  margin: 2px;
   border-radius: 30%;
 }
+  /*.container {
+
+  width: 1000px;
+}*/
+
+
 .box1 {
-  background-color: aqua;
+  background-color: yellow;
 }
 
 .box2 {
@@ -33,7 +40,7 @@ div {
 }
 
 .box6 {
-  background-color:coral;
+  background-color:peru;
 }
 
 .box7 {
@@ -45,11 +52,11 @@ div {
 }
 
 .box9 {
-  background-color:green;
+  background-color:hotpink;
 }
 
 .box10 {
-  background-color:yellow;
+  background-color:darkorange;
 }
 
 .box11 {
@@ -60,22 +67,32 @@ div {
   background-color:dodgerblue;
 }
 
-.odd {
+:hover>div:nth-child(odd){
+  transition: all 3s ease-in-out;
+  margin-left: 1700px;
+  transform: scale(2) rotate(360deg);
+}
+
+:hover>div:nth-child(even){
+  transition: all 2s ease-in-out;
+  margin-right: 1700px;
+  transform: scale(.5) rotate(-360deg);
+}
+
+/*.lg {
   transition: all 3s ease-in-out;
 }
 
-.odd:hover {
-  margin-left: 1500px;
+.lg:hover {
+  margin-left: 1000px;
   transform: scale(2) rotate(520deg);
   }
 
-
-.even {
-  transition: all 1.5s ease-in-out;
+.sm {
+  transition: all 1s ease-in-out;
 }
 
-.even:hover {
-  margin-right: 1500px;
+.sm:hover {
+  margin-right: 700px;
   transform: scale(.5) rotate(-520deg);
-
-}
+}*/
