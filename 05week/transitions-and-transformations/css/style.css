@@ -1,0 +1,92 @@
+main {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div {
+  width: 50px;
+  height: 50px;
+  margin: 1px;
+}
+
+.box1 {
+  background-color: red;
+}
+
+.box2 {
+  background-color: orange;
+}
+
+.box3 {
+  background-color: yellow;
+}
+
+.box4 {
+  background-color: green;
+}
+
+.box5 {
+  background-color: blue;
+}
+
+.box6 {
+  background-color: indigo;
+}
+
+.box7 {
+  background-color: violet;
+}
+
+.box8 {
+  background-color: lightblue;
+}
+
+.box9 {
+  background-color: gray;
+}
+
+.box10 {
+  background-color: black;
+}
+
+.box11 {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.box12 {
+  background-color: lightgreen;
+}
+
+.smallbox {
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+}
+
+.boxes:hover>div:nth-child(even) {
+  -webkit-transform: translateX(-200px)  rotate(-360deg) scale(.5);
+  -moz-transform: translateX(-200px)  rotate(-360deg) scale(.5);
+  -o-transform: translateX(-200px) rotate(-360deg) scale(.5);
+  -ms-transform: translateX(-200px) rotate(-360deg) scale(.5);
+  transform: translateX(-200px) rotate(-360deg) scale(.5);
+}
+
+.bigbox {
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+}
+
+.boxes:hover>div:nth-child(odd) {
+  -webkit-transform: translateX(200px)  rotate(360deg) scale(2);
+  -moz-transform: translateX(200px) rotate(360deg) scale(2);
+  -o-transform: translateX(200px) rotate(360deg) scale(2);
+  -ms-transform: translateX(200px) rotate(360deg) scale(2);
+  transform: translateX(200px) rotate(360deg) scale(2);
+}
