@@ -36,3 +36,7 @@ $(document).ready(function() {
  window.onload = function () {
 alert("Are you ready to count? by ones, tens, and hundred?");
  }
+
+$('#click-all').click(funcion(){
+$('#box-1').trigger("click");
+})
