@@ -1,4 +1,4 @@
-main {
+body {
   width: 100%;
   margin: 1% auto;
   display: flex;
@@ -9,25 +9,22 @@ main {
 div {
   width: 50px;
   height: 50px;
-  margin: 2px;
-}
-/* TRANSITION BELOW*/
-
+  margin: 5px;
 
 }
-.allboxes:hover>div:nth-child(odd) {
+/* TRANSITION BELOW */
 
-  transform: translatex(500px)scale(1.5) rotate(360);
+.all-boxes:hover>:nth-child(odd) {
+  transform: rotate(180deg) scale(1.5);
+  transition: transform 5s;
+  margin-left: 160px;
 }
-
+.all-boxes:hover>:nth-child(even) {
+  transform: rotate(180deg) scale(0.5);
+  transition: transform 5s;
+  margin-left: -160px;
 }
-.allboxes:hover>div:nth-child(even) {
-
-  transform: translateX(500px) scale(1.5) rotate(360));
-}
-
 /* TRANSITION ABOVE */
-
 .box1 {
   background-color: red;
 }
