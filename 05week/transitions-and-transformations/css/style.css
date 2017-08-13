@@ -1,0 +1,130 @@
+.all-boxes{
+  width: 100%;
+  margin: 1% auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*.box{
+    height: 50px;
+    width: 50px;
+    margin: 2px;
+  }*/
+
+.box{
+  width: 0px;
+  height: 0px;
+  border-right: 30px solid transparent;
+  border-top: 30px solid red;
+  border-left: 30px solid red;
+  border-bottom: 30px solid red;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+/*.box{
+  height: 50px;
+  width: 50px;
+  margin: 2px;
+  transition-property: all;
+  transition-duration:10s;
+}*/
+
+/*Transitions*/
+
+/*.large{
+  -webkit-transition: margin-right 10s easin-in-out;
+  -moz-transition: margin-right 10s easin-in-out;
+  -o-transition: margin-right 10s easin-in-out;
+  -ms-transition: margin-right 10s easin-in-out;
+  -transition: margin-right 10s easin-in-out;
+}*/
+
+.large{
+  transition: all 5s ease-out;
+}
+.small{
+  transition: all 600ms ease;
+}
+
+
+/*.large:hover {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}*/
+
+.small{
+  -webkit-transition: margin-right 10s easin-in-out;
+  -moz-transition: margin-right 10s easin-in-out;
+  -o-transition: margin-right 10s easin-in-out;
+  -ms-transition: margin-right 10s easin-in-out;
+  transition: margin-right 10s easin-in-out;
+}
+
+.all-boxes:hover>div:nth-child(even) {
+  /*margin-left: 500px;*/
+  transform: translateX(-300px) rotate(-360deg) scale(.5);
+}
+.all-boxes:hover>div:nth-child(odd) {
+  /*margin-left: 500px;*/
+  transform: translateX(300px) rotate(360deg) scale(2);
+}
+/*.small:hover {
+  width: 0px;
+  height: 0px;
+  border-right: 60px solid transparent;
+  border-top: 60px solid red;
+  border-left: 60px solid red;
+  border-bottom: 60px solid red;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  width: 200px;
+  height: 200px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  }*/
+
+/*.box1 {
+  background-color: red;
+}
+.box2 {
+  background-color: green;
+}
+.box3 {
+  background-color: purple;
+}
+.box4 {
+  background-color: blue;
+}
+.box5 {
+  background-color: orange;
+}
+.box6 {
+  background-color: black;
+}
+.box7 {
+  background-color: yellow;
+}
+.box8 {
+  background-color: silver;
+}
+.box9 {
+  background-color: gray;
+}
+.box10 {
+  background-color: lightgreen;
+}
+.box11 {
+  background-color: violet;
+}
+.box12 {
+  background-color: darkgreen;
+}*/
