@@ -15,58 +15,11 @@ main {
   height: 50px;
   width: 50px;
   margin: 2px;
-  transition-property: all;
 }
 
-
-/*Transitions*/
-
-.large {
-  -webkit-transition: margin-right 10s ease-in-out;
-  -moz-transition: margin-right 10s ease-in-out;
-  -o-transition: margin-right 10s ease-in-out;
-  -ms-transition: margin-right 10s ease-in-out;
-  transition: margin-right 10s ease-in-out;
-
-}
-
-.large:hover {
-  height: 100px;
-  width: 100px;
-  -webkit-transition-property: height, width;
-  -webkit-transition-duration: 1s;
-  -moz-transition-property: height, width;
-  -moz-transition-duration: 1s;
-  transition-property: height, width;
-  transition-duration: 1s;
-  @keyframes spin {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
-}
-}
-
-.small {
-  -webkit-transition: margin-left 10s ease-in-out;
-  -moz-transition: margin-left 10s ease-in-out;
-  -o-transition: margin-left 10s ease-in-out;
-  -ms-transition: margin-left 10s ease-in-out;
-  transition: margin-left 10s ease-in-out;
-}
-
-.small:hover {
-  height: 100px;
-  width: 100px;
-  -webkit-transition-property: height, width;
-  -webkit-transition-duration: 1s;
-  -moz-transition-property: height, width;
-  -moz-transition-duration: 1s;
-  transition-property: height, width;
-  transition-duration: 1s;
-}
 
 
 /*Box Styles*/
-
 .box1 {
   background-color: blue;
 }
@@ -115,5 +68,33 @@ main {
   background-color: orange;
 }
 
-.allboxs:hover>nth-child(odd)
-transform: translatex(500px)
+.row:hover {
+  }
+
+.row:hover .box:nth-child(odd) {
+  transition-property: all;
+  transition: all 3s;
+  transition-timing-function: ease-in-out;
+}
+.row:hover .box:nth-child(odd){
+  transform: translateX(500px) scale(2) rotate(360deg);
+}
+
+/*.row .box:nth-child(odd) {
+  transition-property: all;
+  transition: all 3s;
+  transition-timing-function: ease-in-out;
+}
+.row .box:nth-child(odd):hover {
+  transform: translateX(500px) scale(2) rotate(360deg);
+}*/
+
+.row .small {
+    transition-property: all;
+    transition: all 1.3s;
+    /*transition-timing-function: ease-in-out;*/
+}
+
+.row:hover .small {
+  transform: translateX(-500px) scale(.5) rotate(-360deg);
+}
