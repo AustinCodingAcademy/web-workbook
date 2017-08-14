@@ -1,20 +1,19 @@
 'use strict';
 
 var token = 'X';
-window.onload = function () {
+window.onload = function() {
   $("#clear").hide();
-  }
+}
 
 $(document).on('ready', function() {
-
 });
 
 $("[data-cell]").click(function() {
-    var cell = $(this);
+  var cell = $(this);
   if (cell.text() === "") {
     cell.text(token);
-      isTheGameOver();
-      token = token === "X" ? "O" : 'X';
+    isTheGameOver();
+    token = token === "X" ? "O" : 'X';
   }
   // if(token==='X')
   //   token = 'O';
@@ -32,7 +31,6 @@ function isTheGameOver() {
     $("#announce-winner").text("Winner: " + token);
     $("#clear").show();
   }
-
   var cell2 = $("[data-cell=2]").text();
   var cell4 = $("[data-cell=4]").text();
   var cell6 = $("[data-cell=6]").text();
@@ -93,7 +91,6 @@ function isTheGameOver() {
     $("#announce-winner").text("Winner: " + token);
     $("#clear").show();
   }
-
   var cell2 = $("[data-cell=2]").text();
   var cell5 = $("[data-cell=5]").text();
   var cell8 = $("[data-cell=8]").text();
@@ -103,8 +100,7 @@ function isTheGameOver() {
     $("#announce-winner").text("Winner: " + token);
     $("#clear").show();
 
-}
-
+  }
 };
 
 $("#clear").click(function() {
