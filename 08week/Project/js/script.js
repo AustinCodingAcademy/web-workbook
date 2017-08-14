@@ -29,12 +29,6 @@ $("#counter-100").text(num);
 // });
 
 
-
-
-
-
-
-
 $("#click-all").click(function(){
   $("#box-1, #box-10, #box-100").trigger("click");
 });
