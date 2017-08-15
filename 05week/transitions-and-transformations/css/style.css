@@ -8,9 +8,7 @@ main {
   margin:2%;
 }
 div {
-  height: 50px;
-  width: 50px;
-  margin: 2px;
+
 }
 
 .box1 {
@@ -30,7 +28,7 @@ div {
 }
 
 .box5 {
-  background-color: purple;
+  background-color: maroon;
 }
 
 .box6 {
@@ -42,26 +40,60 @@ div {
 }
 
 .box8 {
-  background-color: ;
+  background-color: pink;
 }
 
 .box9 {
-  background-color: red;
+  background-color: black;
 }
 
 .box10 {
-  background-color: red;
+  background-color: purple;
 }
 
 .box11 {
-  background-color: red;
+  background-color: brown;
 }
 
 .box12 {
-  background-color: red;
+  background-color: orange;
+}
+
+.large {
+
+
+}
+
+
+.box {
+    transition: 1000ms;
+    height: 50px;
+    width: 50px;
+    margin: 2px;
+}
+
+
+
+.trigger:hover .large {
+  transform: translate(200px) rotate(180deg);
+  height: 100px;
+  width: 100px;
+
+
 }
 
 .large:hover {
-  margin-right: 200px;
-  transform:rotate(360) scale(2.0);
+  height: 100px;
+  width: 100px;
+}
+
+.small:hover  {
+  height: 25px;
+  width: 25px;
+}
+.trigger:hover .small {
+  margin-right:;
+  transform: translate(-200px) rotate(-180deg);
+  height: 25px;
+  width: 25px;
 }
