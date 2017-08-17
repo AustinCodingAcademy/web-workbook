@@ -8,9 +8,6 @@ body {
   background-size: cover;
 }
 
-
-/*top Sec*/
-
 header img {
   filter: drop-shadow(14px 14px 18px #000000);
 }
@@ -19,13 +16,15 @@ header {
   display: flex;
   justify-content: center;
   text-align: center;
+
 }
 
 .topsec {
   font-size: 3em;
   font-family: 'Chonburi';
-}
 
+
+}
 .top h2 {
   font-size: 1.5em;
   font-family: serif;
@@ -46,7 +45,10 @@ header {
   color: lightyellow;
 }
 
-.topmid a {
+.topmid a{
+  display: flex;
+  justify-content: center;
+
   color: navy;
   font-size: 4em;
   font-family: 'Sedgwick Ave Display', cursive;
@@ -57,6 +59,7 @@ header {
   color: navajowhite;
 }
 
+
 article {
   display: flex;
   flex-direction: column;
@@ -65,10 +68,7 @@ article {
   background-color: rgba(255, 255, 255, .3);
 }
 
-
-/*Middle Sec*/
-
-#tr img {
+#tr img{
   width: 100%;
   border: 2px solid white;
   text-align: center;
@@ -90,7 +90,58 @@ article {
   color: red;
 }
 
+#bl {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+
+}
+#blo {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+
+}
+
+#blt {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+
+}
+
+#blth {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+
+}
+
+#bls {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+
+
+.bl h1 {
+  color: #3366fb;
+  font-size: 3em;
+  font-family: 'Great Vibes';
+}
+
 #rl {
+  display: flex;
+  width: 100%;
+}
+
+#rlx {
+  display: flex;
+  width: 100%;
+}
+
+
+#rcl {
   display: flex;
   width: 100%;
 }
@@ -100,18 +151,58 @@ article {
   text-align: center;
 }
 
-#dl {
+#dal {
+  border: 2px solid purple;
   display: flex;
   align-items: flex-end;
   width: 100%;
 }
+
+#dbl {
+  border: 2px solid purple;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+#dlo {
+  border: 2px solid purple;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+#dlt {
+  border: 2px solid purple;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+#dltt {
+  border: 2px solid purple;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+
+#dlfo {
+  border: 2px solid purple;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+#dlfi {
+  border: 2px solid purple;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+
+
 
 .dl h2 {
   color: darkslateblue;
   font-family: 'Josefin';
   text-align: justify;
 }
-
 .dl {
   margin-bottom: 10px;
 }
@@ -123,25 +214,32 @@ article {
 }
 
 p {
+  font-size: 1.4em;
+}
+
+#botsecs {
+  box-shadow: 14px 14px 18px #000000;
+}
+
+#botsecs h2 {
   font-size: 1.5em;
 }
 
-
-/*Bottom Sec*/
-
-
-#bl {
-  display: flex;
-  align-items: flex-end;
-  width: 100%;
+#botsecd {
+  box-shadow: 14px 14px 18px #000000;
 }
 
-.bl h1 {
-  color: #3366fb;
-  font-size: 3em;
-  font-family: 'Great Vibes';
+#botsecd h2 {
+  font-size: 1.5em;
 }
 
+#botsecf {
+  box-shadow: 14px 14px 18px #000000;
+}
+
+#botsecf h2 {
+  font-size: 1.5em;
+}
 #botsec {
   box-shadow: 14px 14px 18px #000000;
 }
@@ -150,8 +248,6 @@ p {
   font-size: 1.5em;
 }
 
-
-/*Phone Sec*/
 
 @media (max-width: 786px) {
   .topsec span {
@@ -163,25 +259,9 @@ p {
   .topsec img {
     display: none;
   }
+
   .top a {
     font-size: 1.5em;
-  }
-  #tr {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    left: 50px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  #tr img {
-    position: relative;
-    left: 0;
-  }
-  #tr h1 {
-    font-size: 4em;
-    font-family: 'great vibes';
-    font-weight: bold;
   }
   #tr h3 {
     color: white;
@@ -189,9 +269,6 @@ p {
   article {
     display: flex;
     align-items: center;
-  }
-  .bl {
-    margin-top: 10px;
   }
   .bl h1 {
     color: #3366fb;
@@ -208,19 +285,18 @@ p {
   .byline {
     display: none;
   }
+
   h2 {
     font-size: .9em;
   }
+
   .dl {
     margin: 10px 0;
   }
-  #rl {
-    margin: 10px 0;
-  }
+
   #rl h2 {
     font-size: .9em;
   }
-  #botsec h2 {
+  #botsecs h2 {
     font-size: .9em;
   }
-}
