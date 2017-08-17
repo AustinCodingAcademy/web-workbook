@@ -38,28 +38,34 @@ $("#box-100").click(function() {
 
 // Create a new box that says click all which triggers the effect of all boxes being clicked at the same time.
 
+// $("#box-all").click(function() {
+//
+//   $(function() {
+//
+//     var counterValue = $("#counter-10").text() === "" ? 0 : $("#counter-10").text();
+//
+//     var num = parseInt(counterValue) + 10;
+//
+//     $("#counter-10").text(num);
+//
+//   });
+//
+//   $(function() {
+//
+//     var counterValue = $("#counter-100").text() === "" ? 0 : $("#counter-100").text();
+//
+//     var num = parseInt(counterValue) + 100;
+//
+//     $("#counter-100").text(num);
+//
+//   });
+//
+// });
+
 $("#box-all").click(function() {
-
-  $(function() {
-
-    var counterValue = $("#counter-10").text() === "" ? 0 : $("#counter-10").text();
-
-    var num = parseInt(counterValue) + 10;
-
-    $("#counter-10").text(num);
-
-  });
-
-  $(function() {
-
-    var counterValue = $("#counter-100").text() === "" ? 0 : $("#counter-100").text();
-
-    var num = parseInt(counterValue) + 100;
-
-    $("#counter-100").text(num);
-
-  });
-
-});
+  $("#box-1").trigger("click");
+  $("#box-10").trigger("click");
+  $("#box-100").trigger("click");
+})
 
 // Extra Credit: allow the user to drag and drop the shapes.
