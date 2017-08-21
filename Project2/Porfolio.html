@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <!-- linked to stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="portfolio.js"></script>
+    <!-- linked to bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/master.css">
+  </head>
+  <body>
+    <header>
+      <!-- added logo and navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              <img alt="Brand" src="http://i64.tinypic.com/10fdmrt.png" class="logo" border="0" alt="Andrew Thomas">
+            </a>
+            <!-- added links to click on to route in-page  -->
+            <div class="ptfl">
+          <h2>
+            <a href="#portfolioSection">Portfolio</a>
+            </div>
+          </h2>
+          <div class="srvc">
+        <h2>
+          <a href="#servicesSection">Services</a>
+          </div>
+        </h2>
+          <div class="abtme">
+            <h2>
+              <a href="#aboutmeSection">About Me</a>
+          </div>
+           </h2>
+           <div class="cntme">
+             <h2>
+               <a href="#contactmeSection">Contact Me</a>
+           </div>
+            </h2>
+          </div>
+        </div>
+      </nav>
+
+    </header>
+    <main>
+      <!-- added portfolio section using bootstrap and made the images automatically resize -->
+      <div class="container one">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="portfolio">
+            </div>
+        <section id = "portfolioSection">
+          <h3>Portfolio</h3>
+          <p>I have built a website for Thomas And Sons Ltd. A Trinidadian company that sells steel as well as other things. Here is a link to that website and a image of what it looks <a class="one" href="https://andrewthomas123.github.io/web-workbook/Project1/tns.html"target="_blank">like</a>.</p>
+          <img class="img-responsive"src="http://i66.tinypic.com/mcb57o.png" class="thomasandsons" border="0" alt="Thomas and Sons">
+          <p>Here are some more websites I've built:</p>
+        </section>
+          </div>
+        </div>
+      </div>
+      <!-- added images (that resized automatically) with links to them below  -->
+      <div class="flex-container">
+        <div class="flex-item">
+          <img class="img-responsive"src="http://i68.tinypic.com/2551h21.png" class="report" border="0" alt="Website">
+          <p>You can find this website <a class="one" href= "https://andrewthomas123.github.io/web-workbook/05week/news-website/" target="_blank">here</a> </p>
+        </div>
+        <div class="flex-item">
+          <img class="img-responsive"src="http://i68.tinypic.com/15psk80.png" class="NASA" border="0" alt="Image and video hosting by TinyPic">
+          <p>And this one <a class="one"href="https://andrewthomas123.github.io/web-workbook/04week/nasa/" target="_blank">here</a></p>
+        </div>
+      </div>
+      <!-- added services section -->
+      <div class="container two">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="services">
+            </div>
+            <section id= "servicesSection">
+              <h3>Services</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+      <!-- added about me section -->
+      <div class="container three">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="aboutMe">
+            </div>
+            <section id= "aboutmeSection">
+              <h3>About Me</h3>
+              <p>I am twenty-one years old and my name is Andrew Thomas. I grew up in the Caribbean, on an island called Trinidad.  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+      <!-- added contact form -->
+      <div class="container four">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contactMe">
+            </div>
+            <section id= "contactmeSection">
+              <h3>Contact Me</h3>
+            </section>
+          </div>
+        </div>
+      </div>
+    <form class="form-horizontal" role="form" method="post" action="index.php">
+    	<div class="form-group">
+    		<label for="name" class="col-sm-2 control-label">Name</label>
+    		<div class="col-sm-10">
+    			<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+    		</div>
+    	</div>
+    	<div class="form-group">
+    		<label for="email" class="col-sm-2 control-label">Email</label>
+    		<div class="col-sm-10">
+    			<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+    		</div>
+    	</div>
+    	<div class="form-group">
+    		<label for="message" class="col-sm-2 control-label">Message</label>
+    		<div class="col-sm-10">
+    			<textarea class="form-control" rows="4" name="message"></textarea>
+    		</div>
+    	</div>
+    	<div class="form-group">
+    		<label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+    		<div class="col-sm-10">
+    			<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+    		</div>
+    	</div>
+    	<div class="form-group">
+    		<div class="col-sm-10 col-sm-offset-2">
+    			<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+    		</div>
+    	</div>
+    	<div class="form-group">
+    		<div class="col-sm-10 col-sm-offset-2">
+    			<! Will be used to display an alert to the user>
+    		</div>
+    	</div>
+    </form>
+
+    </main>
+  </body>
+</html>
