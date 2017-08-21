@@ -7,6 +7,7 @@ function checkForWin() {
     $('#announce-game-won').html("You Won in " + moves +" moves!!!");
     $("#resetGame").show();
     $("#moves").hide();
+    $('[data-block="25"]').removeAttr("draggable"); //remove attribute from 25 because it is the first block in stack
   }
 }
 

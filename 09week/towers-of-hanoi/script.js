@@ -12,7 +12,7 @@ function dragBlock(e) {
 
   e.dataTransfer.setData("block", blockValue);
   // console.log("I am being dragged");
-  console.log("block Value:" + blockValue);
+  // console.log("block Value:" + blockValue);
 }
 
 function allowDrop(e) {
@@ -23,7 +23,7 @@ function dropBlock(e) {
   e.preventDefault();
   var blockValue = e.dataTransfer.getData("block");
   var $stack = $(e.target);
-  var $block = $("[data-block=" + blockValue + "]")
+  var $block = $("[data-block=" + blockValue + "]");
 
   //when the stack empty we append and count the move
   if ($stack.children().length === 0) {
@@ -49,7 +49,7 @@ function dropBlock(e) {
     }
   }
   toggleDragAttribute();
-
+}
   //Only move the top block per stack
   function toggleDragAttribute() {
     //This is for each stack 1, 2, 3
@@ -71,4 +71,3 @@ function dropBlock(e) {
     //call function to check for win
     checkForWin();
   }
-}
