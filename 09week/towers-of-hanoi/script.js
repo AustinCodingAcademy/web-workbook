@@ -1,5 +1,7 @@
 'use strict';
 
+var numberOfMoves = 0;
+
 function dragBlock(e) {
   var blockValue = $(e.target).data("block"); //seleting a 25, 50, 75, or 100, and then reading the data from it
   e.dataTransfer.setData("block", blockValue);
@@ -35,22 +37,34 @@ function dropBlock(e) {
     }
   }
 
+  numberOfMoves++;
+
   toggleDragAttribute();
+
+  isTheGameOver();
 }
 
 //only move the top block per stack
 
 function toggleDragAttribute() {
-  for (var i = 0;
+  //this is for each stack - 1, 2, 3
+  for (var e = 1; e < 4 ; e++) {
+    var children = $("[data-stack=" + e + "]").children();
 
-  var children = $("[data-stack=1]").children();
+    for (var i = 0; i < children.length; i++) {
+      var child = children[i];
+      $(child).removeAttr("draggable");
+    }
 
-  for (var i = 0; i < children.length; i++) {
-    var child = children[i];
-    $(child).removeAttr("draggable");
+    //put back the draggable to the top child
+    $(children[children.length - 1]).attr("draggable", "true");
   }
+}
 
-  //put back the draggable to the top child
-  $(children[children.length - 1]).attr("draggable", "true");
+function isTheGameOver() {
+  var stackThreeLength = $("[data-stack=3]").children().length;
 
+  if (stackThreeLength === 4) {
+    alert("You win! You used " + numberOfMoves + " moves!");
+  }
 }
