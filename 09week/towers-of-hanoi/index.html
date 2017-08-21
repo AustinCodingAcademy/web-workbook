@@ -9,7 +9,8 @@
 
 <h1>Towers of Hanoi</h1>
     <button id="resetGame" type="button">Reset Game</button>
-    <div id="counter">Moves </div>
+    <!-- <div id="counter">Moves </div> -->
+    <div id="moves">Moves: <span id="count">0</span></div>
     <div data-stack="1" ondrop="dropBlock(event)" ondragover="allowDrop(event)">
     <div data-block="100" ondragstart="dragBlock(event)"></div>
     <div data-block="75"  ondragstart="dragBlock(event)"></div>
@@ -24,8 +25,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
-  <script type="text/javascript" src="count.js"></script>
+  <script type="text/javascript" src="hanoi.js"></script>
  <div id="announce-game-won"> </div>
-
   </body>
 </html>

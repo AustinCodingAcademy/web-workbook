@@ -24,9 +24,10 @@ function dropBlock(e) {
   var $stack = $(e.target);
   var $block = $("[data-block=" + blockValue + "]")
 
-  //when the stack empty we append
+  //when the stack empty we append and count the move
   if ($stack.children().length === 0) {
     $stack.append($block);
+    $("#count").text(++moves);
     console.log("Drop empty");
   }
   //when the stack already has blocks, the dropped block needs to be smaller
@@ -38,9 +39,11 @@ function dropBlock(e) {
     var topChildBlockValue = $(topChild).data("block");
     // console.log(topChildBlockValue);
 
-    //compare it with the block that is being dropped
+    //compare it with the block that is being dropped.  If smaller, drop and increase move count
+
     if (blockValue < topChildBlockValue) {
       $stack.append($block);
+      $("#count").text(++moves);
       console.log("Dropped on top of something");
     }
   }
