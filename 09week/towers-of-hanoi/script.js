@@ -1,5 +1,6 @@
 'use strict';
 
+//hide the reset button
 window.onload = function() {
  $("#resetGame").hide();
 }
@@ -28,7 +29,7 @@ function dropBlock(e) {
   if ($stack.children().length === 0) {
     $stack.append($block);
     $("#count").text(++moves);
-    console.log("Drop empty");
+    // console.log("Drop empty");
   }
   //when the stack already has blocks, the dropped block needs to be smaller
   else {
@@ -44,7 +45,7 @@ function dropBlock(e) {
     if (blockValue < topChildBlockValue) {
       $stack.append($block);
       $("#count").text(++moves);
-      console.log("Dropped on top of something");
+      // console.log("Dropped on top of something");
     }
   }
   toggleDragAttribute();
@@ -57,7 +58,7 @@ function dropBlock(e) {
       for (var i = 0; i < children.length; i++) {
         var child = children[i];
         $(child).removeAttr("draggable"); //remove attribute
-        // console.log("child: " + child);
+
       }
       //put back the draggable to the top child
       $(children[children.length - 1]).attr("draggable", "true"); //last child - get through length minus one
@@ -67,6 +68,7 @@ function dropBlock(e) {
     //     $('#announce-game-won').html("You Won!");
     //     }
     // }
+    //call function to check for win
     checkForWin();
   }
 }
