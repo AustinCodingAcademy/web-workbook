@@ -6,16 +6,14 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div data-stack="1">
-    <div data-block="100"></div>
-    <div data-block="75"></div>
-    <div data-block="50"></div>
-    <div data-block="25"></div>
+  <div data-stack="1" ondrop="dropBlock(event)" ondragover="allowDrop(event)">
+    <div data-block="100" ondragstart="dragBlock(event)"></div>
+    <div data-block="75" ondragstart="dragBlock(event)"></div>
+    <div data-block="50" ondragstart="dragBlock(event)"></div>
+    <div data-block="25" draggable="true" ondragstart="dragBlock(event)"></div>
   </div>
-  <div data-stack="2">
-  </div>
-  <div data-stack="3">
-  </div>
+  <div data-stack="2" ondrop="dropBlock(event)" ondragover="allowDrop(event)"></div>
+  <div data-stack="3" ondrop="dropBlock(event)" ondragover="allowDrop(event)"></div>
   <div id="announce-game-won"></div>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="script.js"></script>

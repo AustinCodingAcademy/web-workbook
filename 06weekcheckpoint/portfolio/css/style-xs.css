@@ -1,0 +1,296 @@
+body {
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  height: 20px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  text-transform: uppercase;
+  position: fixed;
+  z-index: 10;
+}
+
+.flexbox-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 20px;
+  margin: 0 auto;
+}
+
+#container-logo {
+  width: 54px;
+  font-size: 8px;
+  margin-top: 4px;
+  float: left;
+  color: black;
+}
+
+.logo-link {
+  color: black;
+}
+
+.logo-link:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+#flexbox-menu {
+  display: none;
+}
+
+#flexbox-connect {
+  display: none;
+}
+
+#container-hamburger {
+  width: 12px;
+}
+
+#hamburger-link {
+  width: 12px;
+}
+
+main {
+  width: 100%;
+}
+
+.white-background {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#hero {
+  width: 100%;
+  margin-top: 40px;
+}
+
+#introduction {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 12px;
+  font-weight: 200;
+}
+
+span {
+  font-size: 12px;
+}
+
+.gray-background {
+  background-color: #f8f8f8;
+}
+
+#about {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 200;
+  margin-bottom: 38px;
+}
+
+p {
+  font-size: 14px;
+}
+
+#portfolio {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  text-align: center;
+}
+
+.portfolio-row {
+  margin-bottom: 30px;
+}
+
+.image {
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  position: relative;
+}
+
+.overlay {
+  transition: .5s ease;
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  /*transform: translate(-50%, -50%);*/
+}
+
+.image:hover {
+  cursor: pointer;
+  opacity: 0.3;
+  transition: .5s ease;
+}
+
+.image:hover .overlay {
+  opacity: 1;
+  background-color: white;
+  z-index: 5;
+}
+
+.overlay-text {
+  background-color: white;
+  font-size: 16px;
+  z-index: 5;
+}
+
+#resume {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+#resume-title {
+  text-align: center;
+}
+
+.resume-row {
+  width: 85%;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 2px solid gray;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+h5 {
+  text-transform: uppercase;
+  font-size: 10px;
+  margin: 16px 0 16px;
+}
+
+.resume-text {
+  font-size: 10px;
+}
+
+.left-side {
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+.right-side {
+  padding-right: 0;
+  padding-left: 30px;
+}
+
+.experience-flexbox {
+  display: flex;
+  justify content: flex-end;
+  width: 100%;
+}
+
+.left-side-flexbox {
+  text-align: left;
+  width: 750px;
+}
+
+.right-side-flexbox {
+  text-align: right;
+  width: 100%;
+}
+
+.circle-empty {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  border: 1px solid gray;
+  display: block;
+  float: left;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.circle-filled {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  background-color: gray;
+  display: block;
+  float: left;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.flexbox-skills {
+  display: flex;
+  justify-content: space-between;
+}
+
+h6 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+  float: left;
+  margin-top: 10px;
+}
+
+#contact {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.input {
+  background: #f8f8f8;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.one-line {
+  width: 500px;
+}
+
+.multiple-lines {
+  width: 500px;
+  height: 200px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100px;
+  border: none;
+  background-color: #afafaf;
+  color: white;
+}
+
+#footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin: 0 auto;
+  width: 85%;
+  text-align: right;
+}
