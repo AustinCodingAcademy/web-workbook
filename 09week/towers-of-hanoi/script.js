@@ -1,52 +1,69 @@
 'use strict';
 
-
-  function dragBlock(e){  //ondragstart
-  var blockValue = $(e.target).data("block")
-  var stackValue = $(e.target).data("stack")
-
-
-  //data("block") data-block
-    e.dataTransfer.setData("block", blockValue);
-    e.dataTransfer.setData("stack", stackValue);
-
-    // console.log("I am being dragged");
-    console.log("block Value:" + blockValue);
-    console.log("stack Value: " + stackValue);
-  }
-
-
-function allowDrop(e){ //ondragover
-  e.preventDefault();
-  var last_block = stack.children().last();
-  console.log(last_block);
+window.onload = function() {
+ $("#resetGame").hide();
 }
 
-function dropBlock(e){//ondrop
-  e.preventDefault();
+function dragBlock(e) {
 
-var blockValue = e.dataTransfer.getData("block");
-var lastBlockValue = $(e.target).children().last();
+  var blockValue = $(e.target).data("block")
+  //data("block") data-block
+
+  e.dataTransfer.setData("block", blockValue);
+  // console.log("I am being dragged");
+  console.log("block Value:" + blockValue);
+}
+
+function allowDrop(e) {
+  e.preventDefault();
+}
+
+function dropBlock(e) {
+  e.preventDefault();
+  var blockValue = e.dataTransfer.getData("block");
+  var $stack = $(e.target);
+  var $block = $("[data-block=" + blockValue + "]")
 
   //when the stack empty we append
-  if($(e.target).children().length === 0){
-  $(e.target).append($("[data-block=" + blockValue +"]"));
-}
+  if ($stack.children().length === 0) {
+    $stack.append($block);
+    console.log("Drop empty");
+  }
+  //when the stack already has blocks, the dropped block needs to be smaller
+  else {
+    //get the value of the top block
+    var children = $stack.children(); //this is an array
+    var length = $stack.children().length;
+    var topChild = children[length - 1] //children[length -1]
+    var topChildBlockValue = $(topChild).data("block");
+    // console.log(topChildBlockValue);
 
-  if($(e.target).children().length !== 0){ //just to get it to move(take out)
-  $(e.target).append($("[data-block=" + blockValue +"]"));
-}
+    //compare it with the block that is being dropped
+    if (blockValue < topChildBlockValue) {
+      $stack.append($block);
+      console.log("Dropped on top of something");
+    }
+  }
+  toggleDragAttribute();
 
-
-
-// Example
-// function checkForWin() {
-//   if($('[data-stack="3"]').children().length===4) {
-//     $('#announce-game-won').html("You Won!");
-//     gameover=true;
-//
-//   }
-
-
-
+  //Only move the top block per stack
+  function toggleDragAttribute() {
+    //This is for each stack 1, 2, 3
+    for (var e = 1; e < 4; e++) {
+      var children = $("[data-stack=" + e + "]").children();
+      for (var i = 0; i < children.length; i++) {
+        var child = children[i];
+        $(child).removeAttr("draggable"); //remove attribute
+        // console.log("child: " + child);
+      }
+      //put back the draggable to the top child
+      $(children[children.length - 1]).attr("draggable", "true"); //last child - get through length minus one
+    }
+    // function checkForWin() {
+    //   if ($('[data-stack="3"]').children().length === 4) {
+    //     $('#announce-game-won').html("You Won!");
+    //     }
+    // }
+    checkForWin();
+  }
 }

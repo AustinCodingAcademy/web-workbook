@@ -10,7 +10,7 @@ $(function() {
   var $movableBlocks = $('[data-block]:last-child');
   $movableBlocks.addClass("movable");
 
-  //any block is draggable, but they rever to original position unless condition is met
+  //any block is draggable, but they never to original position unless condition is met
   $blocks.draggable({
     revert: true
   });
