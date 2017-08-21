@@ -43,6 +43,7 @@ function toggleDragAttr() {
   }
   $(children[children.length - 1]).attr('draggable', 'true');
   }
+  winConditon();
 }
 
 //Win condition: Creat alert, 'you win!'
@@ -54,11 +55,15 @@ function toggleDragAttr() {
   var dataBlock50 = $('[data-block=50]');
   var dataBlock25 = $('[data-block=25]');
 
-  if(stack3 === dataBlock100 && dataBlock100 === dataBlock75 && dataBlock75 === dataBlock50 && dataBlock50 === dataBlock25)
+
+function winConditon() {
+  var checkLength = stack3.children();
+  console.log(stack3.children());
+  if(checkLength.length === 4){
     alert('You win!');
     dataBlock100.removeAttr('draggable');
     dataBlock75.removeAttr('draggable');
     dataBlock50.removeAttr('draggable');
     dataBlock25.removeAttr('draggable');
-//Checkpoint: Able to tell how many moves were made.
-//Not able to move pieces when game is over.
+  }
+}
