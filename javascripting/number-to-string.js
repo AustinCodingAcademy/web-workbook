@@ -1,3 +1,3 @@
 var num = 128;
-num = num.toString();
+var n = num.toString();
 console.log(n)
