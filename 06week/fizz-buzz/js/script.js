@@ -4,7 +4,7 @@ $(function() {
 
   function fizzbuzz() {
 
-for (var i=1; i <=20; i++)
+for (var i=1; i <=100; i++)
 if (i%15 === 0) {
         $("body").append("FizzBuzz")
     console.log("FizzBuzz");
