@@ -5,6 +5,7 @@ $(document).ready(function() {
 
     for (var i = 1; i < 100; i++) {
 
+      // % = mod --> 5%2=1  5/2=2
 
       if (i % 3 === 0 && i % 5 === 0) {
         document.write("FizzBuzz");
@@ -19,7 +20,6 @@ $(document).ready(function() {
 
       } else {
         document.write(i);
-
 
       }
       document.write('<br><br>');

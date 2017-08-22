@@ -9,35 +9,35 @@ body {
   background-attachment: fixed;
   width: 100%;
   height: 100%;
-  border: 2px solid green;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* Top Nav Bar*/
+
 .nav {
   display: flex;
   justify-content: space-between;
-
   background-color: cadetblue;
   margin-top: 15%;
-
 }
 
 .nav h4 {
-  font-size: 1.5em;
-  padding: 5px 30px 0 0;
-
+  font-size: 1.2em;
+  padding: 2px 30px 0 0;
 }
 
 .dropdown-toggle {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .dropdown-menu {
-  font-size: 1.5em;
+  font-size: 1.1em;
   background-color: aliceblue;
 }
+
+/* Top Section*/
 
 .top-sec {
   width: 100%;
@@ -51,7 +51,6 @@ body {
 
 }
 .top-sec h1 {
-  /*margin-top: 10%;*/
   color: white;
   width: 150%;
   height: 100%;
@@ -62,9 +61,9 @@ body {
 }
 
 .top-sec h1:hover {
-  transition: all 1.5s ease-in-out;
+  transition: all 1s ease-in-out;
   color: darkblue;
-  transform: scale(1.1);
+  transform: scale(1.2);
   text-shadow: 3px 3px 3px black;
 
 }
@@ -82,10 +81,7 @@ body {
 
 }
 
-.top-sec h2:hover {
-  transition: all 1.5s ease-in-out;
-  transform:rotateX(-20px);
-}
+/*Mid About Me Section*/
 
 .left article {
   display: flex;
@@ -94,7 +90,7 @@ body {
   margin-left: 5%;
   padding: 30px;
   width: 100%;
-  height: 750px;
+  height: 700px;
   background: linear-gradient(to bottom, rgba(175, 171, 150, .8), rgba(175, 171, 150, .5));
 
 }
@@ -102,7 +98,7 @@ body {
 .left img {
   position:absolute;
   left:0;
-  transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out, scaleX(-1);
   margin: 5%;
   border: 2px solid antiquewhite;
   box-shadow:4px 4px 6px black;
@@ -118,17 +114,11 @@ body {
 
   opacity: 0;
 }
+
 #left p {
   color: black;
   font-family: 'Raleway';
-  font-size: 1.4em;
-  text-shadow: 2px 2px 1px silver;
-}
-
-p.aboutme1 {
-  color: black;
-  font-family: 'Raleway';
-  font-size: 1.1em;
+  font-size: 1.2em;
   text-shadow: 2px 2px 1px silver;
 }
 
@@ -152,15 +142,14 @@ h4.aboutme {
 /*Form Section*/
 
 #form-container {
-  margin: 30% 5%;
+  margin-top: 30%;
   background: linear-gradient(to bottom, rgba(175, 171, 150, .5), rgba(175, 171, 150, .3));
   width: 100%;
   height: 700px;
-
 }
 
 form {
-  margin: 20px;
+  margin: 12%;
 }
 
 .form-box h2 {
@@ -184,12 +173,12 @@ label {
 
 input {
   width: 250px;
-  height: 40px;
+  height: 30px;
 }
 
 textarea {
   width: 250px;
-  height: 150px;
+  height: 100px;
 }
 
 fieldset {
@@ -233,24 +222,12 @@ fieldset {
   font-size: 14px;
 }
 
-#form-container img {
-  position: relative;
-  left: 260px;
-  bottom: 500px;
-  float: right;
-  width: 80%;
-  border: 3px solid black;
-}
-
-
 /*Middle Icon Bar*/
 
 #icon-bar {
   display: flex;
   flex-direction: column;
-  margin-top: 2%;
-  /*margin-right: 2%;*/
-
+  margin-top: 7%;
 }
 
 #icon-bar a {
@@ -259,7 +236,7 @@ fieldset {
   justify-content: center;
   align-items: center;
   width: 100%;
-  color: whitesmoke;
+  color: white;
 }
 
 #smicono:hover {
@@ -291,7 +268,10 @@ fieldset {
   color: darkblue;
 }
 
+.pert1info {
+  margin-top: 2%;
 
+}
 .educ p{
   width: 200px;
   text-align: center;
@@ -301,11 +281,10 @@ fieldset {
   font-size: 2em;
   background-color: antiquewhite;
   font-variant: small-caps;
-
 }
 
 .edu {
-  font-size: 1.3em;
+  font-size: 1.4em;
   border-left: 5px double white;
   color: black;
   text-shadow: 1px 1px 1px silver;
@@ -323,8 +302,8 @@ fieldset {
 .cex {
   font-family: 'Raleway';
   font-size: 2em;
-
 }
+
 #dialog-window {
   font-family: 'Josefin Sans';
   color: black;
@@ -340,7 +319,6 @@ fieldset {
   list-style: none;
   font-size: 1.2em;
   color: darkblue;
-
 }
 
 .cot {
@@ -391,7 +369,7 @@ fieldset {
 }
 
 .car a{
-  font-size: 1.3em;
+  font-size: 1.4em;
   color: black;
   text-shadow: 1px 1px 1px silver;
 }
@@ -400,6 +378,7 @@ fieldset {
   color: darkblue;
 }
 
+/*Specialties Section*/
 
 #specinfo {
   margin-top: 2%;
@@ -446,7 +425,7 @@ fieldset {
 }
 
 .env:hover {
-  background-color: white;
+  background-color: yellow;
   transition: all 1s ease-in-out;
   transform: rotateZ(-360deg) scale(1.2) translateY(0);
 }
@@ -455,7 +434,7 @@ fieldset {
 }
 
 .ph:hover {
-  background-color: white;
+  background-color: orange;
   transition: all 1s ease-in-out;
   transform: rotateX(-360deg) scale(1.2) translateX(0);
 }
@@ -463,17 +442,60 @@ fieldset {
 .ft {
   display: flex;
   justify-content: flex-start;
-
   color: white;
 }
 
 /*tablet*/
-@media query (min-width: 786px) and (max-width: 991px) {
+@media (min-width: 786px) and (max-width: 991px) {
+
+  .top-sec h1 {
+    font-size: 12em;
+    text-align: center;
+    color: darkcyan;
+  }
+
+  .top-sec h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  #left p {
+    font-size: 1em;
+  }
 
 
 
 }
 /*phone*/
-@media query (max-width: 785px){
+@media (max-width: 786px) {
+
+  .top-sec h1 {
+    font-size: 8em;
+    text-align: center;
+  }
+
+  .top-sec h2 {
+    font-size: 2em;
+    text-align: center;
+    color: cadetblue;
+  }
+
+  .tc {
+    display: none;
+  }
+
+  #icon-bar {
+    display: flex;
+    flex-direction: row;
+  }
+  #form-container {
+    width: 100%;
+    height: 40%;
+  }
+
+  .contactbar{
+    background-color:cadetblue;
+    opacity: .3;
+  }
 
 }
