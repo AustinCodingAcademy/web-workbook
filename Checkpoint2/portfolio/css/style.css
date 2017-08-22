@@ -1,5 +1,5 @@
 body {
-  font: verdana;
+  /*font-family: 'Work Sans', sans-serif;*/
   width: 100%;
   background-image: url('../img/computer-header2.jpg');
   background-repeat: no-repeat;
@@ -30,14 +30,17 @@ p.navbar-text {
 }
 
 #by-line {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: bold;
   color: #303030;
 }
 
 header {
-  margin-top: 10%;
-  margin-bottom: 30%
+  margin-top: 12%;
+  margin-right: 5%;
+  margin-bottom: 30%;
+  margin-left: 5%;
+
 }
 
 /*Section {
@@ -114,14 +117,21 @@ article {
   height: auto;
 }
 
+.form-size{
+  margin-right: 10%;
+  margin-left: 10%;
+  }
+
 /*container for social media */
-#social-media {
-  width: 90%;
-  height: auto;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding-top: 30px;
-}
+  #social-media {
+    width: 100%;
+    height: auto;
+    /*margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 30px;
+  }
+/* styling
+ for social media images*/
 /* heading for socal media section*/
 /*h4 {
   text-align: center;
@@ -130,21 +140,48 @@ article {
   font-weight: bold;
   margin-bottom: 20px;*/
 }
-/* container for social media images/links*/
-#social-box {
-  display: flex;
-  align-items: center;
-  /*width: auto;*/
-  /*margin-left: 22%;
-  margin-right: 22%;
-  padding-top: 20px;*/
+
+#social-title {
+  font-size: 3em;
+  font-weight: bold;
+  font-style: oblique;
+  color: #0099CC;
+  margin-bottom: 1%;
+  margin-top: 6%;
 }
-/* styling for social media images*/
-.social-images {
-  width: 110px;
-  height: 95px;
-  float: left;
+.social-images  {
+    display:inline-block;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+    margin-top: 5%;
+
+    border:0;
+    width:110px;
+    height:95px;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
 }
+
+.social-images:hover  {
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}
+
 /* styling for the footer */
 footer {
   text-align:center;
