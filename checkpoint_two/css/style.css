@@ -1,3 +1,7 @@
+
+/*this is my css for checkpoint#2*/
+/*this is where the tan background is*/
+
 body {
   background-image: url(../img/custom-background-copy.jpg);
 }
@@ -5,13 +9,27 @@ body {
 header {
   font-size: 80px;
   width:;
-  padding-bottom:100px;
+  padding-bottom:40px;
   margin:;
   border:;
   text-align: center;
   color: white;
   }
+#picture {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  height: 90%;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(40%);
 
+}
+#picture2 {
+  width: 40%;
+}
 p {
   font-size: 60px;
 }
@@ -20,6 +38,8 @@ p {
   text-align: center;
   color: white;
 }
+
+/*this is the concrete background*/
 .container {
   background-image: url(../img/Untitled-1.jpg);
   background-size: 100% 100%;
@@ -27,9 +47,8 @@ p {
   padding-left:50px;
   padding-bottom: 50px;
   border:;
-
   }
-
+/*this applies to all the thumb nail links*/
 .work-box {
     border-radius: 25px;
     display: flex;
@@ -39,21 +58,16 @@ p {
     filter: grayscale(100%);
     padding: 1px;
     margin-top:10px;
+    align-content: center;
+    justify-content: center;
   }
 
-.work-box1 {
-  align-content: center;
-  justify-content: center;
-  background-image: url(../img/blog-crop.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 h1 {
   color: white;
   font-weight: bold;
 }
-
+/*work box hover effects*/
 .work-box:hover {
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
@@ -70,26 +84,28 @@ h1 {
   display: none;
 }
 
+/* work box thumbs, preferred images in background*/
+
+.work-box1 {
+
+  background-image: url(../img/blog-crop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .work-box2 {
-  align-content: center;
-  justify-content: center;
   background-image: url(../img/vx-crop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .work-box3 {
-  align-content: center;
-  justify-content: center;
   background-image: url(../img/beard-crop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .work-box4 {
-  align-content: center;
-  justify-content: center;
   background-image: url(../img/trans-crop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -98,4 +114,40 @@ h1 {
 h2 {
   color:black;
   font-weight: bold;
+}
+
+/*below is where all the social media footer code is*/
+.socialmedia {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+#footercontainer {
+  background-image: none;
+}
+
+.hoverborder {
+  border: 1px solid transparent;
+  padding: 2px;
+}
+
+.hoverborder:hover {
+  border: 1px solid white;
+}
+
+/*media queries located below, adjusted for maximum UX*/
+@media only screen and (max-width: 768px){
+  .container {
+    background-image: none;
+    }
+    #picture2 {
+      width: 48%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+  #picture2 {
+    width: 60%;
+  }
 }
