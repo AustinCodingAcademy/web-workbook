@@ -214,6 +214,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  box-sizing: content-box;
+  padding: 15px 0px;
 }
 
 .middle_link_div {
@@ -276,48 +278,29 @@ header {
 footer {
   width: 900px;
   margin: auto;
-  height: 200px;
+  height: 70px;
   background-color: rgb(144,200,200);
-}
-
-#footer_follow_logos_div {
-  padding: 5px;
-}
-
-#follow_us_text_div {
-  float: right;
-  padding-right: 30px;
-}
-
-#follow_us_text {
-  font-size: 150%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #footer_follow_logos_div_master {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.footer_logo {
   width: 100%;
-  float: right;
-  padding-right: 25px;
+  height: auto;
 }
 
 .footer_follow_logos_div {
-  float: right;
-  padding: 0px 10px 10px 10px;
-}
-
-#illuminati, #twitter, #facebook, #reddit {
-  height: 20px;
-}
-
-#footer_logo {
-  height: 50px;
-  float: right;
-}
-
-#footer_logo_div {
-  width: 100%;
-  float: right;
-  padding-top: 25px;
-  padding-left: 10px;
+  width: 30px;
+  box-sizing: content-box;
+  padding-right: 10px;
 }
 /**/
 /*End of Footer Section*/
@@ -377,14 +360,32 @@ footer {
 
 @media (max-width: 551px) {
   .top_links {
-    font-size: 150%;
+    font-size: 120%;
   }
 
   .top_slash {
-    font-size: 150%;
+    font-size: 120%;
   }
 
-  #slash4 {
-    display: none;
+#middle_link_div {
+  border-bottom: 35px solid rgb(144,200,200);
+}
+
+  #middle_links_section {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: content-box;
   }
+
+  .middle_link_div {
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  /*#slash4 {
+    display: none;
+  }*/
 }
