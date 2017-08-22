@@ -2,27 +2,30 @@
 
 function fizzBuzz() {
 
-  for (var i = 1; i <= 100; i++) {
+  for (var i = 1; i < 100; i++)  {
+    document.write("FizzBuzz");
 
-    if (i % 3 === 0){
-      console.log("Fizz");
+
+    if (i % 3 === 0 && i % 5 === 0) {
+      document.write("FizzBuzz");
+
+    } else if (i % 3 === 0) {
+      document.write("Fizz");
     }
 
-else(i % 5 === 0){
-  console.log("Buzz");
-}
 
+    else if (i % 5 === 0){
+      document.write("Buzz");
+
+
+
+    } else {
+      document.write(i);
+
+    }
+
+    document.write('<br><br>');
 
   }
-
-
-
-
 }
-
-
-
-for (var i = 1; i <= 100; i++) {
-  var f = i % 3 == 0, b = i % 5 == 0;
-  console.log(f ? b ? "FizzBuzz" : "Fizz" : b ? "Buzz" : i);
-}
+fizzBuzz();
