@@ -1,5 +1,6 @@
-var pets = ['cat', 'dog', 'rat']
-for (pets[i] = pets[i] + 's') {
-  array[i]
+var pets = ['cat', 'dog', 'rat'];
+var i = 0;
+for (i=0 ; i < pets.length; i++) {
+  pets[i] = pets[i]+'s';
 }
-console.log([i]);
+console.log(pets);
