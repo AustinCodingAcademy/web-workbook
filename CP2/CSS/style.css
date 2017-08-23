@@ -9,13 +9,46 @@ header{
   text-align: center;
 }
 /*nav*/
-nav {
-  font-family: 'Lato', sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  word-spacing: 1px;
+.nav {
+  background-color: #f5e8f2;
+  max-width: 1400px;
+  height:40px;
+  position: fixed;
+
+
 }
+
+.nav ul{
+  max-width: 1400px;
+  list-style-type: none;
+    padding: 20px;
+    overflow: visible;
+    padding-left: 1120px;
+    padding-top: 6px;
+    letter-spacing: .5px;
+    word-spacing: 10px;
+}
+
+.nav a {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 400;
+
+}
+
+.nav li{
+	display: inline-block;
+    list-style-type: none;
+
+}
+
+
+
 a:hover{
   background-color: #dcf2cd
 }
@@ -39,23 +72,28 @@ a:active {
 }
 
 /*site titles*/
-h1,h2{font-family: 'Josefin Sans', sans-serif;
-font-weight: 300;
+h1,h2{
+font-family: 'Wire One', sans-serif;
+font-weight: 200;
 text-align: center;
 }
 h3{
+  font-family: 'Dancing script', cursive;
+  font-weight: 200;
   text-align: center;
 }
 
 h4{
   font-family: 'Arimo', sans-serif;
   font-weight: 300;
+  text-align: center;
 
 }
 /*body text*/
 p{
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+  font-size: 20px;
 }
 
 .container-fluid{
@@ -67,31 +105,134 @@ p{
 }
 
 #resume{
-  margin:10px, 10px, 20px, 20px;
+  margin:20px, 20px, 40px, 40px;
+  max-width: 1400px;
   padding-left: 40px;
+  border-radius: 1px solid #E5E6E7
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 
 #education{
-  margin:10px, 10px, 20px, 20px;
+  margin:20px, 20px, 40px, 40px;
+  max-width: 1400px;
   padding-left: 40px;
+  border-radius: 1px solid #E5E6E7
+
 }
 
 #skills{
   margin:10px, 10px, 20px, 20px;
+  max-width: 1400px;
   padding-left: 40px;
+  border-radius: 1px solid #E5E6E7
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+
 }
 
-.vertical-menu{
-  width: 370px;
-  margin: 80px;
+.wax-that{
+  margin:20px, 40px, 40px, 40px;
+  padding-left: 20px;
+  float:inherit;
+  color: #000;
+  letter-spacing: 1px;
+  font-size: 14px;
+  border: 2px solid #E5E6E7;
+  background-color: white;
+  border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px
+}
+
+
+.turnkey{
+  margin:20px, 20px, 40px, 40px;
+  padding-left: 20px;
+  float: inherit;
+  max-width: 1400px;
+  border: 2px solid #E5E6E7;
+  background-color: #E5E6E7;
+  border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px
+
+}
+
+.education{
+  margin:20px, 20px, 40px, 40px;
+  padding-left: 20px;
+  float:inherit;
+  max-width: 1400px;
+  color: #000;
+  letter-spacing: 1px;
+  font-size: 14px;
+  text-align: center;
+  border: 2px solid #E5E6E7;
+  background-color: white;
+  border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px
+}
+
+.list-group{
+  max-width: 1400px;
+  list-style-position: inside;
+  list-style: none;
+}
+
+.list-group2{
+  margin:20px, 20px, 40px, 40px;
+  max-width: 1400px;
+  padding-left: 20px;
+  list-style-position: inside;
+  list-style: none;
+  float:inherit;
+  color: #000;
+  letter-spacing: 1px;
+  font-size: 14px;
+  border: 2px solid #E5E6E7;
+  background-color: #E5E6E7;
+  border-radius: 10px;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px
+}
+
+.flex-container{
+  width: 460px;
+  height:380px;
+  margin: 40px;
   float: left;
+  padding-left: 260px;
+  padding-top: -5px;
+  padding-bottom: 10px;
 	font-size: 10px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
   text-decoration: none;
-  list-style-type: none;
-
+  text-align: justify;
 }
+
+.vertical-menu{
+  background-color: #E5E6E7;
+  width: 340px;
+  height: 366px;
+  margin: 75px;
+  margin-right: -60px;
+  list-style-position: outside;
+  list-style: none;
+  float:right;
+  padding-top: 30px;
+  padding-left: 40px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+  text-decoration: none;
+  border-radius:7px;
+  -webkit-border-radius:7px;
+  -moz-border-radius:7px;
+}
+
 
 .flex-item{
   width: 370px;
@@ -102,6 +243,7 @@ p{
 	letter-spacing: 1px;
 	text-transform: uppercase;
   text-decoration: none;
+
 }
 
 .flex-item a {
@@ -127,7 +269,7 @@ form{
    left: 50%;
    position: absolute;
 
-   margin-top:30px;
+   margin-top:15px;
    margin-left: -120px;
    border-radius:7px;
    -webkit-border-radius:7px;
@@ -190,4 +332,8 @@ input:required, textarea:required {
    font-weight:bold;
    color: #E5E6E7;
 }
-}
+
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+
+	}
