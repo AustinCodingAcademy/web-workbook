@@ -1,227 +1,259 @@
-main {
-  background-image:
-  url('../img/CPY-Background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  opacity: 0.8;
-  position: relative;
-  width: 100%;
-  height: 550px;
-  margin-top: 30px;
-}
-
-.navigation {
-  position: relative;
-  font-size: 13px;
-  top: 10px;
-  width: 600px;
-  height:75px;
-  left: 400px;
-  height: 60px;
-  float: right;
-  margin-right: 25%;
-  font-family: 'Mada', sans-serif;
-  z-index: 1;
-}
-
-a:link {
-    color: black;
-}
-a:visited {
-    color: purple;
-}
-a:hover {
-    color: white;
-    border:1px solid white;
-}
-a:active {
-    color: black;
-}
-
-  /*#logo{
-    float: left;
-  }*/
-
-.clearfix:after {
-  visability: hidden;
-  display; block;
-  font-size: 0;
-  content: ".";
-  clear: both;
-  height: 0;
-}
-
-#main-image{
-  position: relative;
-  width:100px;
-  height: 100px;
-  top: 20%;
-  left: 13%;
-  z-index: -1;
-  margin-top: -30px;
-  /*margin: -350px 0 0 -400px;*/
-}
-
-div.form
-{
-    display: block;
-    text-align: center;
-    font-family: 'Mada', sans-serif;
-}
-
-form
-{
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  #containers {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: auto;
+  }
+  h1 {
+    position: absolute;
+    font-weight: bold;
     text-align: left;
-    margin-top: 280px;
-    font-family: 'Mada', sans-serif;
-
-}
-#saveForm {
+    margin-left: 5%;
+    margin-top: -40%;
+    color: white;
+    font-size: 4em;
+    font-family: 'Raleway', sans-serif;
+  }
+  #description {
+    position: relative;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: -30%;
+    color: white;
+    font-size: 1.8em;
+    font-family: 'Raleway', sans-serif;
+    width: 90%;
+  }
+  #leadspace {
+    margin-top: -10%;
+  }
+  #contact-me {
+    width: 10%;
+    height: 7%;
+    /*border-width: .2px;*/
+    border: solid;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    /*display: inline;*/
+    padding: .5%;
+    margin-top: 33%;
+    margin-left: 5%;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  /*content block 2*/
+  .work-image {
+    background-color: #F2F2F2;
+  }
+  .work-image {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2%;
+  }
+  .work-image img {
+    float: left;
+    margin: 15px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+  }
+  .work-image img:hover {
+    margin-top: 2px;
+  }
+  nav.navbar-nav {
+    margin-left: -10%;
+  }
+  .intro-paragraph {
+    font-size: 3em;
+    text-align: center;
+    padding: 2%;
+  }
+  #brand-logo-baby {
+    display: none;
+  }
+  .brand-logo {
+    margin-top: 3%;
+  }
+  #content-block3 {
+    margin-top: 40%;
+    width: 110%;
+    float: none;
+    background-color: black;
+    font-size: 2.1em;
+    color: white;
+    padding-top: 6%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: -10%;
+    margin-top: 2%;
+    margin-left: -2%;
+  }
+  .middle-paragraph {
+    display: none;
+  }
+  .middle-paragraph-extended {
+    text-align: left;
+    margin-left: -2%;
+    width: 100%;
+    padding-bottom: 3%;
+  }
+  iframe {
+    margin-left: -2%;
+  }
+  /*.right{
   position: relative;
-  top: -8px;
-  left: 75px;
-}
-
-.login{
-  color: black;
-  margin-left: 130px;
-}
-/*.rectangle{
-  color: black;
-  width: 100%;
-  height: 300px;
+  margin-left: 60%;
 }*/
-
-/*.content-block1{
-  color:black;
-  width:22%;
-  height:200px;
-  position: relative;
-  text-align: justify;
-  border: 1px solid black;
-  background-color: black;
-  opacity: .5
-
-}*/
-
-.left-block{
-  background-color: #F8841D;
-  width: 50%;
-  height:300px;
-  font-family: 'Mada', sans-serif;
+  /*I know we didn't learn this but I thought it was a cool animation to add to the space background*/
+  @keyframes particleAnimation {
+    from {
+      left: -100px;
+    }
+    to {
+      left: calc( 100% + 100px);
+    }
+  }
+  .p {
+    position: fixed;
+    left: 0px;
+    top: 50px;
+    width: 1px;
+    height: 1px;
+    background-color: white;
+    position: fixed;
+    animation-name: particleAnimation;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  .p::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100px;
+    right: 1px;
+    top: 0px;
+    height: 1px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.4) 100%);
+  }
+  .p-1 {
+    animation-duration: 10s;
+  }
+  .p-2 {
+    animation-duration: 5s;
+    top: 60%;
+  }
+  .p-3 {
+    animation-duration: 20s;
+    top: 90%;
+  }
 }
 
-.right-block{
-  position: relative;
-  left: 624px;
-  top: -300px;
-  background-color: gray;
-  width: 50%;
-  height:300px;
-  font-family: 'Mada', sans-serif;
+@media (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    position: absolute;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: -30%;
+    color: white;
+    font-size: 3em;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 20%;
+  }
+  #description {
+    display: none;
+  }
+  .intro-paragraph {
+    font-size: 5em;
+    color: black;
+  }
+  .intro-paragraph {
+    font-size: 2em;
+    text-align: center;
+  }
 }
 
-.the-yoga-experience-right{
-  position: absolute;
-  left: 855px;
-  top:143%;
-  font-family: 'Mada', sans-serif;
-}
-
-article{
-  text-align: center;
-  vertical-align: middle;
-  width: 80%;
-  margin-left: 7%;
-  padding-top: 6%;
-  line-height: 30px;
-  font-size: 30px;
-  color: white;
-  top: 200px;
-  font-family: 'Mada', sans-serif;
-}
-
-p{
-  text-align: center;
-  vertical-align: middle;
-  width: 80%;
-  margin-left: 7%;
-  line-height: 20px;
-  font-size: 20px;
-  color: white;
-  top: 200px;
-  font-family: 'Mada', sans-serif;
-}
-
-.right-block{
-  color: black;
-}
-
-.content-block2{
-  color:white;
-  width:100%;
-  height:50%;
-  position: absolute;
-  top: 810px;
-  text-align: justify;
-  background-color: white;
-  font-family: 'Mada', sans-serif;
-}
-
-#the-yoga-experience-cta{
-  width: 150px;
-  font-weight: bold;
-  margin-left: 37%;
-  font-family: 'Mada', sans-serif;
-}
-
-.nina-quote{
-  color: black;
-  height: 170px;
-  width: auto;
-  font-size: 45px;
-  margin-top: 5%;
-  margin-left: -100px;
-  font-family: 'Mada', sans-serif;
-}
-
-.bottom {
-  background-color: black;
-  height: 200px;
-  width: auto;
-}
-#kit{
-  color:white;
-  font-size: 35px;
-  vertical-align: middle;
-  padding-top: 50px;
-  font-family: 'Mada', sans-serif;
-}
-
-.form-bottom
-{
-    display: inline-block;
-    margin-left: 500px;
-    margin-right: auto;
-    text-align: middle;
-    margin-top: -260px;
-    font: white;
-    font-family: 'Mada', sans-serif;
-}
-
-.bottom-submit {
-  position: relative;
-  top: 10px;
-  left: 115px;
-}
-
-footer{
-  color: black;
-  text-align: center;
-  font-family: 'Mada', sans-serif;
+@media (max-width: 768px) {
+  #description {
+    display: none;
+  }
+  .containers {
+    display-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  #contact-me {
+    width: 30%;
+    height: 7%;
+    /*border-width: .2px;*/
+    border: solid;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    /*display: inline;*/
+    padding: 1.2%;
+    margin-top: 33%;
+    margin-left: 35%;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  #brand-logo-baby {
+    margin-top: -83%;
+    margin-left: 17%;
+    opacity: .5;
+  }
+  h1 {
+    position: absolute;
+    font-weight: bolder;
+    text-align: center;
+    margin-left: 8%;
+    margin-top: -35%;
+    color: white;
+    font-size: 1.9em;
+    font-family: 'Raleway', sans-serif;
+  }
+  .intro-paragraph {
+    font-size: 1.7em;
+    text-align: center;
+    color: black;
+    margin-top: 3%;
+  }
+  .p {
+    display: none;
+  }
+  .middle-paragraph {
+    font-size: 1.7em;
+    text-align: center;
+    color: black;
+    margin-top: 3%;
+  }
+  .middle-paragraph-extended {
+    display: none;
+  }
+  .hover {
+    display: none;
+  }
+  .work-image {
+    display-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: -5%;
+  }
+  .mid-small-logo {
+    position: relative;
+    margin-top: -15%;
+  }
+  .middle-paragraph-extended {
+    display: none;
+  }
+  iframe {
+    margin-left: 0%;
+    margin-top: 0%;
+  }
 }
