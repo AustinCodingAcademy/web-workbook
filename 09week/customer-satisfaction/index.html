@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Customer Satisfaction Form</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <h2 style="text-align:center;">Customer Satisfaction Form</h2>
+  </div>
+
+  <form id="customer-form">
+    <p>
+      <label for="firstname">First Name</label><br />
+      <input type="text" name="firstname" id="firstname" placeholder="John">
+    </p>
+    <p>
+      <label for="lastname">Last Name</label><br />
+      <input type="text" name="lastname" id="lastname" placeholder="Doe">
+    </p>
+    <p>
+      <div class="gender">
+        <label>What is your gender?</label>
+      <input type="radio" name="gender" value="male" id="male" > Male
+      <input type="radio" name="gender" value="female" id="female" > Female
+      <input type="radio" name="gender" value="other" id="other" > Other
+      </div>
+    </p>
+    <p>
+      <label for="email">Email</label><br />
+      <input type="email" name="email" id="email" placeholder="john@doe.com">
+    </p>
+
+    <p>
+      <label for="password">Password</label><br />
+      <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;">
+    </p>
+    <p>
+      <label for "url">Enter webpage if you have one</label><br />
+      <input type="url" name="url" id="url" placeholder="Webpage url">
+    </p>
+
+  <div class ="row">
+  <label> Which colors did you like? </label>
+  <div class="col-md-3">
+    <label>Red</label>
+    <input type="checkbox" value="bed" name="red" id="red" />
+  </div>
+  <div class="col-md-3">
+    <label>Blue</label>
+    <input type="checkbox" value="blue" name="blue" id="blue" />
+  </div>
+  <div class="col-md-3">
+    <label>Green</label>
+    <input type="checkbox" value="green" name="green" id="green" />
+  </div>
+  <div class="col-md-3">
+    <label>Orange</label>
+    <input type="checkbox" value="orange" name="orange" id="orange" />
+  </div>
+  </div>
+
+  <div class="service">
+    <label> How would you grade your service?</label>
+    <select>
+      <option value="Excellent" name="Excellent" id="Excellent"  >Excellent</option>
+      <option value="Great" name="Great" id="Great"  >Great</option>
+      <option value="Mediocre" name="Mediocre" id="Mediocre"  >Mediocre</option>
+      <option value="Bad" name="Bad" id="Bad"  >Bad</option>
+</select>
+  </div>
+
+<div class="comments">
+  <label>Comments</label>
+<textarea rows="6" cols="50" spellcheck="true">
+</textarea>
+</div>
+
+  <input type="button" onclick="resetForm()" value="Reset form">
+  <button type="submit">Submit Form</button>
+
+  </form>
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/validation.js"></script>
+</body>
+
+</html>
