@@ -1,10 +1,15 @@
-@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   #containers {
     display: -ms-flex;
-    display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: auto;
   }
   h1 {
@@ -12,7 +17,7 @@
     font-weight: bold;
     text-align: left;
     margin-left: 5%;
-    margin-top: -40%;
+    margin-top: -43%;
     color: white;
     font-size: 4em;
     font-family: 'Raleway', sans-serif;
@@ -22,18 +27,21 @@
     font-weight: bold;
     text-align: left;
     margin-left: 5%;
-    margin-top: -30%;
+    margin-top: -32%;
+    margin-bottom: 2%;
     color: white;
-    font-size: 1.8em;
+    font-size: 1.7em;
     font-family: 'Raleway', sans-serif;
     width: 90%;
+    font-weight: lighter;
   }
+
   #leadspace {
     margin-top: -10%;
   }
   #contact-me {
-    width: 10%;
-    height: 7%;
+    width: 120px;
+    height: 45px;
     /*border-width: .2px;*/
     border: solid;
     color: white;
@@ -41,7 +49,7 @@
     z-index: 1;
     /*display: inline;*/
     padding: .5%;
-    margin-top: 33%;
+    margin-top: 38%;
     margin-left: 5%;
     text-align: center;
     font-size: 1.2em;
@@ -51,8 +59,13 @@
     background-color: #F2F2F2;
   }
   .work-image {
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 2%;
   }
   .work-image img {
@@ -110,6 +123,14 @@
   margin-left: 60%;
 }*/
   /*I know we didn't learn this but I thought it was a cool animation to add to the space background*/
+  @-webkit-keyframes particleAnimation {
+    from {
+      left: -100px;
+    }
+    to {
+      left: calc( 100% + 100px);
+    }
+  }
   @keyframes particleAnimation {
     from {
       left: -100px;
@@ -126,9 +147,12 @@
     height: 1px;
     background-color: white;
     position: fixed;
-    animation-name: particleAnimation;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: particleAnimation;
+            animation-name: particleAnimation;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
   }
   .p::before {
     position: absolute;
@@ -138,17 +162,21 @@
     right: 1px;
     top: 0px;
     height: 1px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(255, 255, 255, 0.4)));
     background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.4) 100%);
   }
   .p-1 {
-    animation-duration: 10s;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
   }
   .p-2 {
-    animation-duration: 5s;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
     top: 60%;
   }
   .p-3 {
-    animation-duration: 20s;
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
     top: 90%;
   }
 }
@@ -158,13 +186,29 @@
     position: absolute;
     font-weight: bold;
     text-align: left;
-    margin-left: 5%;
-    margin-top: -30%;
+    margin-left: 7%;
+    margin-top: -23%;
     color: white;
-    font-size: 3em;
+    font-size: 4em;
     font-family: 'Raleway', sans-serif;
-    margin-left: 20%;
   }
+
+  #contact-me {
+    width: 120px;
+    height: 45px;
+    /*border-width: .2px;*/
+    outline-width: thin;
+    color: white;
+    position: relative;
+    z-index: 1;
+    /*display: inline;*/
+    padding: 1.2%;
+    margin-top: -25%;
+    margin-left: 43%;
+    text-align: center;
+    font-size: 1.2em;
+  }
+
   #description {
     display: none;
   }
@@ -175,6 +219,15 @@
   .intro-paragraph {
     font-size: 2em;
     text-align: center;
+    margin-top: 22%;
+
+  }
+
+  .middle-paragraph{
+    font-size: 2em;
+    text-align: center;
+    margin-top: 2%;
+    color: white;
   }
 }
 
@@ -184,22 +237,28 @@
   }
   .containers {
     display-flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    display-flex;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   #contact-me {
-    width: 30%;
-    height: 7%;
+    width: 120px;
+    height: 45px;
     /*border-width: .2px;*/
-    border: solid;
+    outline-width: thin;
     color: white;
-    position: absolute;
+    position: relative;
     z-index: 1;
     /*display: inline;*/
     padding: 1.2%;
-    margin-top: 33%;
-    margin-left: 35%;
+    margin-top: -17%;
+    margin-left: 34%;
     text-align: center;
     font-size: 1.2em;
   }
@@ -241,8 +300,15 @@
   }
   .work-image {
     display-flex;
-    flex-direction: column;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    display-flex;
+    -webkit-box-direction: normal;
+    display-flex;
+        -ms-flex-direction: column;
+    display-flex;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin-left: -5%;
   }
   .mid-small-logo {
@@ -252,6 +318,7 @@
   .middle-paragraph-extended {
     display: none;
   }
+
   iframe {
     margin-left: 0%;
     margin-top: 0%;
