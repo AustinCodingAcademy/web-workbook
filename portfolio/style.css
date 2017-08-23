@@ -9,11 +9,20 @@ header {
   background-repeat: no-repeat;
   display: flex;
   margin-bottom: 5%;
+  padding-top: 2%;
+  border: 1px solid #abc8fc;
+  border-radius: 30px;
+}
+
+.title a {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .title img {
-  width: 100%;
-  margin-top: 12%;
+  width: 80%;
+  margin-top: 5%;
   position: relative;
 }
 
@@ -40,6 +49,7 @@ header {
   flex-direction: row;
   justify-content: flex-end;
   color: #000000;
+  background-color: rgba(255,255,255,0.5);
 }
 
 .nav-pills a:hover {
@@ -58,26 +68,36 @@ header {
   width: 50px;
 }
 
-.social li {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-
-}
-
-.social a img {
-  width: 60%;
-}
-
 .about {
   width: 100%;
   background-color: rgba(255,255,255,0.5);
-  margin: 50% 10% 20% 10%;
+  margin: 50% 0 25% 0;
   padding: 2%;
   text-align: center;
   border: 2px solid #adc8fc;
   border-radius: 20px;
   font-family: 'Quicksand', sans-serif;
+}
+
+.about p,h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social li {
+  list-style-type: none;
+}
+
+.social a img {
+  width: 60%;
 }
 
 .projects {
@@ -89,15 +109,23 @@ header {
 
 .projects img {
   width: 100%;
+  height: auto;
   border: 1px solid #adc8fc;
   border-radius: 30px;
 }
 
-.projects .top {
+.projects .top{
   position: absolute;
   transition: all .1s ease-in-out;
   transform: scale(1);
+}
+
+.project .top img {
+  width: 100%;
+  height: auto;
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .projects:hover a .top {
@@ -110,10 +138,11 @@ header {
   color: #adc8fc;
 }*/
 
-.projects .bottom {
+.projects a .bottom img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 
 .projects a + p {
