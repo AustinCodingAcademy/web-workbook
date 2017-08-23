@@ -8,15 +8,15 @@ $(document).ready(function() {
       // % = mod --> 5%2=1  5/2=2
 
       if (i % 3 === 0 && i % 5 === 0) {
-      // document.write("FizzBuzz");
-            $('body').append('FizzBuzz');
+        // document.write("FizzBuzz");
+        $('body').append('FizzBuzz');
       } else if (i % 3 === 0) {
         // document.write("Fizz");
-            $('body').append('Fizz');
+        $('body').append('Fizz');
 
       } else if (i % 5 === 0) {
         document.write("Buzz");
-            $('body').append('Buzz');
+        $('body').append('Buzz');
 
       } else {
         document.write(i);
@@ -26,10 +26,10 @@ $(document).ready(function() {
     }
   }
   fizzBuzz();
-  })
+})
 
 
-    // variablename = (condition) ? value1:value2
+// variablename = (condition) ? value1:value2
 
-    // var x = (i % 3 == 0), y = (i % 5 == 0);
-    //   document.write((x ? y ? "FizzBuzz") : (x ? "Fizz") : (y ? "Buzz") : (i))
+// var x = (i % 3 == 0), y = (i % 5 == 0);
+//   document.write((x ? y ? "FizzBuzz") : (x ? "Fizz") : (y ? "Buzz") : (i))
