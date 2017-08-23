@@ -55,7 +55,6 @@ function toggleDragAttr() {
   var dataBlock50 = $('[data-block=50]');
   var dataBlock25 = $('[data-block=25]');
 
-
 function winConditon() {
   var checkLength = stack3.children();
   console.log(stack3.children());
