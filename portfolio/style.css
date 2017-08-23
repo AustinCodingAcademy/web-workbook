@@ -1,0 +1,161 @@
+.container-fluid {
+  display: flex;
+  padding: 2%;
+}
+
+header {
+  background-image: url(images/background2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  margin-bottom: 5%;
+}
+
+.title img {
+  width: 100%;
+  margin-top: 12%;
+  position: relative;
+}
+
+.stack img {
+  position: absolute;
+}
+
+#fade_from {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+#fade_from:hover {
+  opacity: 0.0;
+}
+
+#fade_to {
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+}
+
+.nav-pills a {
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  color: #000000;
+}
+
+.nav-pills a:hover {
+  color: #adc8fc;
+}
+
+.nav > li {
+  font-size: 90%;
+  color: #000000;
+  box-shadow: 0 5px 15px #000000;
+  border-radius: 5px;
+}
+
+.dropdown-menu img {
+  padding-right: 20px;
+  width: 50px;
+}
+
+.social li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.social a img {
+  width: 60%;
+}
+
+.about {
+  width: 100%;
+  background-color: rgba(255,255,255,0.5);
+  margin: 50% 10% 20% 10%;
+  padding: 2%;
+  text-align: center;
+  border: 2px solid #adc8fc;
+  border-radius: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.projects {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.projects img {
+  width: 100%;
+  border: 1px solid #adc8fc;
+  border-radius: 30px;
+}
+
+.projects .top {
+  position: absolute;
+  transition: all .1s ease-in-out;
+  transform: scale(1);
+  display: flex;
+}
+
+.projects:hover a .top {
+  transform: scale(0);
+}
+
+/*.projects .top h2 {
+  width: 100%;
+  text-align: center;
+  color: #adc8fc;
+}*/
+
+.projects .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects a + p {
+  font-size: .75em;
+  text-align: justify;
+  box-shadow: 0 5px 15px #000000;
+  border-radius: 30px;
+  padding: 5%;
+  margin: 1% 0 5% 0;
+  transition: all 1s ease-in;
+  transform: scale(0);
+}
+
+.projects a:hover + p {
+  transform: scale(1);
+}
+
+
+/*MEDIA QUERIES*/
+
+/*tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .projects .top {
+    display: none;
+  }
+
+  .projects a + p {
+    transform: scale(1);
+  }
+
+}
+
+/*phone*/
+@media (max-width: 767px) {
+
+  .projects .top {
+    display: none;
+  }
+
+  .projects a + p {
+    transform: scale(1);
+  }
+
+}
