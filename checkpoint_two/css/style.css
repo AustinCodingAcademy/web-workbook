@@ -1,5 +1,6 @@
-
 /*this is my css for checkpoint#2*/
+
+
 /*this is where the tan background is*/
 
 body {
@@ -8,13 +9,14 @@ body {
 
 header {
   font-size: 80px;
-  width:;
-  padding-bottom:40px;
-  margin:;
-  border:;
+  width: ;
+  padding-bottom: 40px;
+  margin: ;
+  border: ;
   text-align: center;
   color: white;
-  }
+}
+
 #picture {
   display: flex;
   text-align: center;
@@ -23,13 +25,15 @@ header {
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
   filter: grayscale(40%);
-
 }
+
 #picture2 {
   width: 40%;
 }
+
 p {
   font-size: 60px;
 }
@@ -39,41 +43,48 @@ p {
   color: white;
 }
 
+
 /*this is the concrete background*/
+
 .container {
   background-image: url(../img/Untitled-1.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  padding-left:50px;
+  padding-left: 50px;
   padding-bottom: 50px;
-  border:;
-  }
-/*this applies to all the thumb nail links*/
-.work-box {
-    border-radius: 25px;
-    display: flex;
-    height: 80px;
-    width: 100%;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-    padding: 1px;
-    margin-top:10px;
-    align-content: center;
-    justify-content: center;
-  }
+  border: ;
+}
 
+
+/*this applies to all the thumb nail links*/
+
+.work-box {
+  border-radius: 25px;
+  display: flex;
+  height: 80px;
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  padding: 1px;
+  margin-top: 10px;
+  align-content: center;
+  justify-content: center;
+}
 
 h1 {
   color: white;
   font-weight: bold;
 }
+
+
 /*work box hover effects*/
+
 .work-box:hover {
-  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(0%);
+  /* Safari 6.0 - 9.0 */
   filter: grayscale(0%);
-  border:3px solid white;
-
-
+  border: 3px solid white;
 }
 
 .work-box:hover h1 {
@@ -84,10 +95,10 @@ h1 {
   display: none;
 }
 
+
 /* work box thumbs, preferred images in background*/
 
 .work-box1 {
-
   background-image: url(../img/blog-crop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,11 +123,13 @@ h1 {
 }
 
 h2 {
-  color:black;
+  color: black;
   font-weight: bold;
 }
 
+
 /*below is where all the social media footer code is*/
+
 .socialmedia {
   display: flex;
   justify-content: space-around;
@@ -136,14 +149,16 @@ h2 {
   border: 1px solid white;
 }
 
+
 /*media queries located below, adjusted for maximum UX*/
-@media only screen and (max-width: 768px){
+
+@media only screen and (max-width: 768px) {
   .container {
     background-image: none;
-    }
-    #picture2 {
-      width: 48%;
-    }
+  }
+  #picture2 {
+    width: 48%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
