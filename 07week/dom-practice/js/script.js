@@ -2,7 +2,9 @@
 
 alert('There are four list items.');
 
-title.insertAdjacentHTML(afterbegin, 'Manipulating the DOM!');
+document.title = 'Manipulating the DOM!';
+
+document.querySelector('body').insertAdjacentHTML ('beforebegin', '<h3>Title Has Been Changed</h3>')
 
 li.insertAdjacentHTML(afterend, 'Fifth List Item');
 
