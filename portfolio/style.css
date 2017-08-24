@@ -30,16 +30,16 @@ header {
   position: absolute;
 }
 
-#fade_from {
+#fade-from {
   opacity: 1;
   transition: opacity 1s ease-in-out;
 }
 
-#fade_from:hover {
+#fade-from:hover {
   opacity: 0.0;
 }
 
-#fade_to {
+#fade-to {
   filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
 }
 
@@ -49,14 +49,14 @@ header {
   flex-direction: row;
   justify-content: flex-end;
   color: #000000;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .nav-pills a:hover {
   color: #adc8fc;
 }
 
-.nav > li {
+.nav>li {
   font-size: 90%;
   color: #000000;
   box-shadow: 0 5px 15px #000000;
@@ -70,7 +70,7 @@ header {
 
 .about {
   width: 100%;
-  background-color: rgba(255,255,255,0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   margin: 50% 0 25% 0;
   padding: 2%;
   text-align: center;
@@ -79,7 +79,7 @@ header {
   font-family: 'Quicksand', sans-serif;
 }
 
-.about p,h3 {
+.about p, h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,7 +114,7 @@ header {
   border-radius: 30px;
 }
 
-.projects .top{
+.projects .top {
   position: absolute;
   transition: all .1s ease-in-out;
   transform: scale(1);
@@ -132,6 +132,7 @@ header {
   transform: scale(0);
 }
 
+
 /*.projects .top h2 {
   width: 100%;
   text-align: center;
@@ -145,7 +146,7 @@ header {
   justify-content: space-around;
 }
 
-.projects a + p {
+.projects a+p {
   font-size: .75em;
   text-align: justify;
   box-shadow: 0 5px 15px #000000;
@@ -156,35 +157,33 @@ header {
   transform: scale(0);
 }
 
-.projects a:hover + p {
+.projects a:hover+p {
   transform: scale(1);
 }
 
 
 /*MEDIA QUERIES*/
 
-/*tablet*/
-@media (min-width: 768px) and (max-width: 991px) {
 
+/*tablet*/
+
+@media (min-width: 768px) and (max-width: 991px) {
   .projects .top {
     display: none;
   }
-
-  .projects a + p {
+  .projects a+p {
     transform: scale(1);
   }
-
 }
 
-/*phone*/
-@media (max-width: 767px) {
 
+/*phone*/
+
+@media (max-width: 767px) {
   .projects .top {
     display: none;
   }
-
-  .projects a + p {
+  .projects a+p {
     transform: scale(1);
   }
-
 }
