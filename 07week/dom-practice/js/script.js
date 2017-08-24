@@ -1,3 +1,5 @@
+'use strict'
+
 alert('There are four list items.');
 
 title.insertAdjacentHTML(afterbegin, 'Manipulating the DOM!');
