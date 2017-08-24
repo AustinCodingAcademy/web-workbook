@@ -1,3 +1,3 @@
-var n=128;
-n=n.toString();
+var n = 128;
+n = n.toString();
 console.log(n);

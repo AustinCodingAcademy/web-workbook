@@ -1,2 +1,2 @@
 var example = 'example string';
- console.log(example.length);
+console.log(example.length);
