@@ -1,0 +1,149 @@
+
+
+
+/*header section*/
+header {
+  background-color: #226CFF;
+  color: #FF0000;
+  text-align: center;
+  height: 100px;
+  padding-top: 25px;
+
+
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+
+  h1 {
+      font-family: fantasy;
+      text-decoration: underline;
+      padding-left: 65px;
+      text-align: center;
+  }
+
+/*bottom section*/
+/*main {
+  background-color: #FFE20D;
+
+}*/
+
+
+#about {
+  background-color: white;
+  margin: 1em;
+  border-radius: 1.5em;
+  padding: 0.7em;
+  height: 25em;
+}
+img {
+  height: 15em;
+  width: 23em;
+  border-width: 0.3em;
+  border-style: solid;
+  border-color: #008B8B;
+  border-radius: 0.8em;
+  padding: 0.3em;
+  margin: 6em;
+}
+#about {
+  background-color: white;
+  margin: 1em;
+  border-radius: 1.5em;
+  padding: 0.7em;
+  height: 25em;
+}
+.p-work {
+  width: 27em;
+  margin: 2em 1.7em;
+}
+  /*Navigation*/
+nav {
+    float: right;
+    text-transform: uppercase;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 25px;
+
+  position: relative;
+}
+
+nav a {
+  color:  #E89B0C;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav a:hover {
+  color: #22F7FF;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: red;
+
+  position: absolute;
+  top: 0;
+  width: 0;
+
+  transition: all ease-in-out 250ms;
+}
+nav a:hover::before {
+  width: 100%;
+}
+
+
+
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #FF0000;
+    text-align: center;
+  }
+  footer {
+ position: fixed;
+ color: blue;
+ background-color: red;
+
+ }
+
+
+
+
+
+/*media queries*/
+  @media (max-width: 767px) {
+    body {
+      width: 367px;
+      margin: auto;
+    }
+    header {
+      background-color: #FFE20D ;
+    }
+    main {
+      flex-direction: column;
+      background-color: #22F7FF;
+      color: black;
+      align-items: center;
+    }
+
+  }

@@ -1,0 +1,138 @@
+main {
+  display: block;
+}
+
+div{
+  border:1px solid black;
+  width:50px;
+  height: 50px;
+  margin-bottom: 20px;
+
+
+}
+div:nth-child(1) {
+    background-color: blue;
+    transition: margin-left 2s, background-color 2s, border 2s, transform 2s;
+/*     -webkit-transition: margin-left 2s, background-color 2s,
+ border 2s, -webkit-transform 2s; */
+}
+div:nth-child(1):hover {
+    margin-left:30px;
+    background-color:white;
+    border:1px solid white;
+}
+
+div:nth-child(2) {
+  background-color: #C9FFE5;
+transition: transform 1s;
+}
+div:nth-child(2):hover {
+   transform: translate(20px, 20px);
+}
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+div:nth-child(3) {
+  background-color: blue;
+  animation: slideRight 4s;
+    animation-delay: 2s;
+}
+@keyframes slideRight{
+  0%{
+    transform: scale(1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 3;
+  }
+
+}
+
+.square1 {
+  background: #00aa9d;
+  border-radius: 3px;
+  height: 150px;
+  margin: 100px;
+  position: absolute;
+  transition: transform 0.8s;
+  width: 150px;
+}
+
+.square2 {
+  background: #2b3f53;
+  border-radius: 3px;
+  height: 150px;
+  margin: 100px;
+  transition: transform 0.8s;
+  position: absolute;
+  width: 150px;
+}
+.square2:hover {
+  transform: translate(20px, 20px);
+}
+.square {
+  background: darkturquoise;
+  border-radius: 5px;
+  height: 100px;
+  margin: 100px;
+  transition: transform 1s;
+  width: 100px;
+}
+.square:hover {
+  transform: scale(2);
+}
+.droplet {
+  background: black;
+  border-radius: 2% 50%;
+  height: 100px;
+  margin: 100px;
+  transition: all 3s;
+  transition-timing: ease-in-out;
+  width: 100px;
+}
+.droplet:hover {
+  transform: rotate(1080deg);
+}
+
+
+.box {
+  background: steelblue;
+  border-radius: 5px;
+  display: inline-block;
+  height: 80px;
+  margin: 20px;
+  width: 80px;
+}
+
+
+.container:hover {
+    transform: scale(1.4);
+  }
+}
+
+.box1 {
+  transition: all 3s;
+}
+
+.box2 {
+  transition: all 3s 3s;
+}
+
+.box3 {
+  transition: all 2s 3s;
+}
