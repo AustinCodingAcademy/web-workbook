@@ -1,14 +1,14 @@
 'use strict'
 
 window.onload = function() {
-  var list = document.getElementByTagName('ul');
+  var list = document.getElementsByTagName('ul');
   var message = 'This page has ' + list[0].children.length + ' list items';
 
   alert(message);
 
   document.title = 'Manipulating the DOM!';
 
-  document.querySelector('body').insertAdjacentHTML ('beforebegin', '<h3>Title Has Been Changed</h3>')
+  document.querySelector('body').insertAdjacentHTML ('beforebegin', '<h3>Title Has Been Changed</h3>');
 
   li.insertAdjacentHTML(afterend, 'Fifth List Item');
 
@@ -19,8 +19,8 @@ window.onload = function() {
   // parent.removeChild(list.childNodes[3]);
 
   // $("#div > p4").remove();
-
-  document.remove(#p4);
+  var removeP = document.getElementById('p4');
+  removeP.remove;
 }
 
 
