@@ -27,7 +27,7 @@ document.querySelector ('ul').insertAdjacentHTML ('beforeend', '<li>Fifth List I
 
 
 // Trying differernt queries.
-const items = ['Sixth Element', 'Seventh List Item', 'Eight List Item'];
+const items = ['Sixth Element', 'Seventh List Item', 'Eight List Item', 'Nineth List Item'];
 for (let i = 0; i < items.length; i++) {
   document.querySelector ('ul').insertAdjacentHTML ('beforeend', `<li>${items[i]}</li>`);
 }
