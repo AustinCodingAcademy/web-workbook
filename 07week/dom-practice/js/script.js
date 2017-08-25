@@ -10,7 +10,7 @@
 //     // alert(message);}
 // }
 
-console.log(document.title = 'Manipulating the DOM!');
+document.title = 'Manipulating the DOM!';
 document.querySelector('body').insertAdjacentHTML ('beforebegin', '<h3>Title has been changed!</h3>');
 
 // Alert the user to how many list items there are on the page.
@@ -27,10 +27,10 @@ document.querySelector ('ul').insertAdjacentHTML ('beforeend', '<li>Fifth List I
 
 
 // Trying differernt queries.
-// const items = ['Sixth Element', 'Seventh List Item', 'Eight List Item', 'Nineth List      Item'];
-// for (let i = 0; i < items.length; i++) {
-//   document.querySelector ('ul').insertAdjacentHTML ('beforeend', `<li>${items[i]}</li>`);
-// }
+const items = ['Sixth Element', 'Seventh List Item', 'Eight List Item', 'Nineth List      Item'];
+for (let i = 0; i < items.length; i++) {
+  document.querySelector ('ul').insertAdjacentHTML ('beforeend', `<li>${items[i]}</li>`);
+}
 
 
 document.querySelector ('#P1').insertAdjacentHTML ('beforeend', '<ol><li>List Item A</li></ol>');
