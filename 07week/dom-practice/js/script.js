@@ -9,13 +9,15 @@ Remove 'Paragraph 4'.
 */
 
 
-var $li = document.getElementsByTagName('li');
-var $ul = document.querySelector('ul');
-var $p = document.getElementById('P4');
+window.onload = function(){
+  var $li = document.getElementsByTagName('li');
+  var $ul = document.querySelector('ul');
+  var $p = document.getElementById('P4');
 
 
 
-alert($li.length);
-document.title = 'Manipulating the DOM!';
-$ul.insertAdjacentHTML('beforeend', '<li>Fifth List Item</li>');
-$p.remove();
+  alert($li.length);
+  document.title = 'Manipulating the DOM!';
+  $ul.insertAdjacentHTML('beforeend', '<li>Fifth List Item</li>');
+  $p.remove();
+}
