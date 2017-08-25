@@ -15,7 +15,7 @@ $(document).ready(function() {
         $('body').append('Fizz');
 
       } else if (i % 5 === 0) {
-        document.write("Buzz");
+        // document.write("Buzz");
         $('body').append('Buzz');
 
       } else {
