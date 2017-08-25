@@ -1,17 +1,30 @@
 'use strict'
 
-alert('There are four list items.');
+window.onload = function() {
+  var list = document.getElementByTagName('ul');
+  var message = 'This page has ' + list[0].children.length + ' list items';
 
-document.title = 'Manipulating the DOM!';
+  alert(message);
 
-document.querySelector('body').insertAdjacentHTML ('beforebegin', '<h3>Title Has Been Changed</h3>')
+  document.title = 'Manipulating the DOM!';
 
-li.insertAdjacentHTML(afterend, 'Fifth List Item');
+  document.querySelector('body').insertAdjacentHTML ('beforebegin', '<h3>Title Has Been Changed</h3>')
 
-// var parent = document.getElementById("div");
-// var child = document.getElementById("p4");
-// parent.removeChild(child);
+  li.insertAdjacentHTML(afterend, 'Fifth List Item');
 
-// parent.removeChild(list.childNodes[3]);
+  // var parent = document.getElementById("div");
+  // var child = document.getElementById("p4");
+  // parent.removeChild(parent.childNodes[3]);
 
-$("#div > p4").remove();
+  // parent.removeChild(list.childNodes[3]);
+
+  // $("#div > p4").remove();
+
+  document.remove(#p4);
+}
+
+
+// var list = document.getElementByTagName('ul');
+// var message = 'This page has ' + list[0].children.length + ' list items';
+//
+// alert(message);
