@@ -8,6 +8,10 @@ document.querySelector('body').insertAdjacentHTML ('beforebegin', '<h3>Title Has
 
 li.insertAdjacentHTML(afterend, 'Fifth List Item');
 
-var parent = document.getElementById("div");
-var child = document.getElementById("p4");
-parent.removeChild(child);
+// var parent = document.getElementById("div");
+// var child = document.getElementById("p4");
+// parent.removeChild(child);
+
+// parent.removeChild(list.childNodes[3]);
+
+$("#div > p4").remove();
