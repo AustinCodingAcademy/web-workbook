@@ -1,6 +1,6 @@
 'use strict'
 
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", function() {
   var list = document.getElementsByTagName('ul');
   var message = 'This page has ' + list[0].children.length + ' list items';
 
@@ -8,23 +8,10 @@ window.onload = function() {
 
   document.title = 'Manipulating the DOM!';
 
-  document.querySelector('body').insertAdjacentHTML ('beforebegin', '<h3>Title Has Been Changed</h3>');
+  document.querySelector('body').insertAdjacentHTML ('beforeBegin', '<h3>Title Has Been Changed</h3>');
 
-  li.insertAdjacentHTML(afterend, 'Fifth List Item');
+  document.querySelector('ul').insertAdjacentHTML('beforeEnd', '<li>Fifth List Item</li>');
 
-  // var parent = document.getElementById("div");
-  // var child = document.getElementById("p4");
-  // parent.removeChild(parent.childNodes[3]);
-
-  // parent.removeChild(list.childNodes[3]);
-
-  // $("#div > p4").remove();
-  var removeP = document.getElementById('p4');
-  removeP.remove;
-}
-
-
-// var list = document.getElementByTagName('ul');
-// var message = 'This page has ' + list[0].children.length + ' list items';
-//
-// alert(message);
+  var last = document.getElementById('P4');
+  last.remove();
+})
