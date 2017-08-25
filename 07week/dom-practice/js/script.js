@@ -1,5 +1,5 @@
 'use strict';
-document.addEventListener('DOMcontentloaded', function() {
+// document.addEventListener('DOMcontentloaded', function() {
 
 
 
@@ -35,4 +35,4 @@ for (let i = 0; i < items.length; i++) {
 
 document.querySelector ('#P1').insertAdjacentHTML ('beforeend', '<ol><li>List Item A</li></ol>');
 //
-})
+// })
