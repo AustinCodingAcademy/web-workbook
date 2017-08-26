@@ -1,5 +1,5 @@
 'use strict';
-// document.addEventListener('DOMcontentloaded', function() {
+  // document.addEventListener('DOMcontentloaded', function() {
 
 window.onload = function () {
 
@@ -16,20 +16,23 @@ window.onload = function () {
 
   //Remove 'Paragraph 4'.
   document.querySelector ('#P4').remove();
+
+
+  
   document.querySelector ('#div').insertAdjacentHTML ('beforeend', '<h4>Paragraph 4 has been removed!</h4>');
 
   //Add 'Fifth List Item' to the list.
-  document.querySelector ('ul').insertAdjacentHTML ('beforeend', '<li>Fifth List Item</li>');
+  document.querySelector ('li').insertAdjacentHTML ('beforeend', '<p>Edward Vidaurri</li>');
 
 
   // Trying differernt queries. Adding multiple li's.
-  const items = ['Sixth Element', 'Seventh List Item', 'Eight List Item', 'Nineth List      Item'];
+  const items = ['Sixth Element', 'Seventh List Item', 'Eight List Item', 'Nineth List     Item'];
   for (let i = 0; i < items.length; i++) {
     document.querySelector ('ul').insertAdjacentHTML ('beforeend', `<li>${items[i]}</li>`);
   }
 
 
   document.querySelector ('#P1').insertAdjacentHTML ('beforeend', '<ol><li>List Item A</li></ol>');
-  //
-  // })
+
+
 }
