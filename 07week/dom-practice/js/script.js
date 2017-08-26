@@ -1,23 +1,16 @@
 'use strict';
 
-window.onload = function(){
+window.onload = function() {
 
-console.log(document.title = "I love OctoCat");
+  console.log(document.title = "I love OctoCat");
 
-console.log(document.querySelectorAll ('li').length);
+  console.log(document.querySelectorAll('li').length);
 
-document.querySelector ('ul').insertAdjacentHTML ('beforeend', '<li>Fifth list item</li');
+  document.querySelector('ul').insertAdjacentHTML('beforeend', '<li>Fifth list item</li');
 
-document.querySelector ('#P4').remove();
+  document.querySelector('#P4').remove();
 
-alert("There is five list items on this page!")
-
-
-
-
-
-
-
+  alert("There is five list items on this page!")
 
 
 
