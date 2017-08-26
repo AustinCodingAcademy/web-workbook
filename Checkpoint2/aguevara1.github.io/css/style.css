@@ -3,43 +3,109 @@
   background-color: black;
   border-bottom: 1px solid silver;
   width: 100%;
-  display:flex;
+  display: flex;
   ​display: -webkit-flex;
+  justify-content: space-between;
 }
 
 .logo {
   padding: 2%;
   line-height: normal;
   color: white;
-  font-family: "Heebo", sans-serif;
-  font-size: 2.5em;
-  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .navbar {
   display: flex;
-  flex-flow: row nowrap;
+  ​display: -webkit-flex;
+  flex-flow: row wrap;
   justify-content: flex-end;
+  align-items: center;
 }
 
 li {
   display: inline-block;
   margin-top: 0px;
   margin-right: 40px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
 }
 
-.Hero {
-  background-image: url('../img/girl6.jpg');
+#hero {
+  background-image: url('../img/again.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: auto;
-  text-align: center;
-  height: 470px;
+  height: 580px;
+  display: flex;
+  align-items: center;
 }
+
+#hero h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#projects {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  width: 100%;
+  height: 400px;
+}
+
+#projects h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+
+/*.row{
+   display:flex;
+   justify-content:space-around;
+   flex-direction: row;
+ }*/
 
 h2 {
   color: white;
   font-family: "Heebo", sans-serif;
   font-size: 2.5em;
+}
+
+#contact {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+
+#contact h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+
+/*
+.rows{
+  display: flex;
+  flex-direction: row;
+
+}
+*/
+
+.rows img {
+  width: 50px;
+  height: 50px;
+}
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
 }
