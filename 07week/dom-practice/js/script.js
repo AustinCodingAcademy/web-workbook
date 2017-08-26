@@ -10,17 +10,7 @@ window.onload = function() {
 
   document.querySelector('ul').insertAdjacentHTML('beforeend', '<li>Fifth list item</li');
 
-  document.querySelector('#P4').remove();
-
-  
-
-
-
-
-
-
-
-
+  document.querySelector('#p4').remove()
 
 }
 
