@@ -10,7 +10,7 @@ window.onload = function() {
 
   document.querySelector('#P4').remove();
 
-  alert("There is five list items on this page!")
+  alert("There is five list items on this page!");
 
 
 
