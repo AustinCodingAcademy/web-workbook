@@ -2,6 +2,8 @@
 
 window.onload = function() {
 
+  alert("There is five list items on this page!")
+
   console.log(document.title = "I love OctoCat");
 
   console.log(document.querySelectorAll('li').length);
@@ -10,7 +12,7 @@ window.onload = function() {
 
   document.querySelector('#P4').remove();
 
-  alert("There is five list items on this page!")
+  
 
 
 
