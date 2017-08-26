@@ -1,0 +1,30 @@
+main {
+  width: 50px;
+  margin: 0 auto;
+}
+
+div {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+
+ main:hover .even {
+   transform: scale(2) translateX(50px) rotate(360deg);
+ }
+
+ main:hover .odd {
+   transform: scale(0.5) translateX(-100px) rotate(360deg);
+ }
+
+ .even {
+   background-color: green;
+   transition: all 1.5s ease-in;
+ }
+
+ .odd {
+   background-color: orange;
+   transition: all 1.5s ease-in;
+ }
