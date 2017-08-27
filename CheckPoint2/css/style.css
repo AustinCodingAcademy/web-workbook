@@ -26,8 +26,8 @@ body {
   justify-content: space-between;
   align-items: center;
   font-family: 'Abril Fatface';
-  font-size: 1.4em;
-  background-color: cadetblue;
+  font-size: 1.3em;
+  /*background-color: cadetblue;*/
   margin-top: 10%;
 
   box-shadow: 2px 2px 3px black;
@@ -65,6 +65,7 @@ body {
   color: white;
   width: 150%;
   height: 100%;
+  margin-left: 5%;
   text-align: center;
   font-size: 18em;
   font-family: 'Radon Deco';
@@ -83,7 +84,7 @@ body {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 3em;
   color: antiquewhite;
   font-style: italic;
   font-family: 'Lobster';
@@ -102,13 +103,11 @@ body {
   width: 100%;
   height: 700px;
   background: linear-gradient(to bottom, rgba(175, 171, 150, .8), rgba(175, 171, 150, .5));
-
 }
 
 .left img {
   position:absolute;
   left:0;
-  transition: opacity 2s ease-in-out, scaleX(-1);
   margin: 5%;
   border: 2px solid antiquewhite;
   box-shadow:4px 4px 6px black;
@@ -120,8 +119,10 @@ body {
   margin-right: 1%;
 }
 
-#left img.top:hover {
+.left img.top:hover {
+  transition: opacity 1s ease-in-out, scaleX(-1);
   opacity: 0;
+  transform: scale(1.2);
 }
 
 #left p {
@@ -253,14 +254,14 @@ fieldset {
   text-decoration: none;
   transition: all .6s ease-in-out;
   transform: rotateY(-360deg) scale(2) translateX(0);
-  color: darkblue;
+  color: black;
 }
 
 #smicont:hover {
   text-decoration: none;
   transition: all .6s ease-in-out;
   transform: rotateY(-360deg) scale(2) translateX(0);
-  color: darkblue;
+  color: #0077B5;
 }
 
 
@@ -275,24 +276,70 @@ fieldset {
   text-decoration: none;
   transition: all .6s ease-in-out;
   transform: rotateY(-360deg) scale(2) translateX(0);
-  color: darkblue;
+  color: #1DA1F2;
 }
 
 
+/*.pert1info {
+  display: flex;
+  margin-top: 2%;
+  background-color: rgba(255, 255, 255, .3);
+}*/
 
-.pert1info {
+/*.pert2info {
+  background-color: rgba(255, 255, 255, .3);
+}*/
+
+/*Specialties Section*/
+
+.spec {
   margin-top: 2%;
 }
 
-.pert2info {
-  background-color: rgba(255, 255, 255, .3);
+.specinfo p {
+  width: 200px;
+  text-align: center;
+  border-radius: 50%;
+  padding:30px;
+  margin-top: 40%;
+  margin-right: 20%;
+  font-size: 2em;
+  background-color: antiquewhite;
+  font-variant: small-caps;
+}
+
+.spec ul{
+  font-family: 'Raleway';
+  font-size: 1.2em;
+  color: cornsilk;
+  text-shadow: 2px 1px 1px black;
+}
+
+.cex ul{
+  font-family: 'Raleway';
+  font-size: 1em;
+  color: cornsilk;
+  text-shadow: 2px 1px 1px black;
+}
+
+.cex p{
+  width: 200px;
+  text-align: center;
+  border-radius: 50%;
+  padding:30px;
+  margin-top: 80%;
+  margin-right: 20%;
+  font-size: 1.7em;
+  background-color: antiquewhite;
+  font-variant: small-caps;
 }
 
 .educ p{
   width: 200px;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 60%;
   padding:30px;
+  margin-top: 20%;
   margin-right: 20%;
   font-size: 2em;
   background-color: antiquewhite;
@@ -302,88 +349,49 @@ fieldset {
 .edu {
   font-family: 'Raleway';
   font-size: 1.2em;
-  border-left: 5px double white;
-  color: black;
-  text-shadow: 1px 1px 1px silver;
-}
-
-.pro {
-  border-left: 5px double white;
-  color: black;
+  color: cornsilk;
+  text-shadow: 2px 1px 1px black;
 }
 
 .pro :hover {
   color: black;
 }
 
-.cex {
-  font-family: 'Raleway';
-  font-size: 1.1em;
-}
-
-
-
-
-.car {
+.proa {
   margin-top:5%;
+
 }
-.car p{
+.proa p{
   width: 200px;
   text-align: center;
   border-radius: 50%;
   padding:30px;
+  margin-top: 20%;
   font-size: 1.7em;
   background-color: antiquewhite;
   font-variant: small-caps;
 }
 
-.car a{
-  font-size: 1.4em;
-  color: black;
-  text-shadow: 1px 1px 1px silver;
+.proa a{
+  font-family: 'Raleway';
+  font-size: 1.2em;
+  color: cornsilk;
+  text-shadow: 2px 1px 1px black;
+  /*text-shadow: 1px 1px 1px silver;*/
 }
 
-.car a:hover {
-  color: darkblue;
+.proa a:hover {
+  color: dodgerblue;
 }
 
-/*Specialties Section*/
-
-#specinfo {
-  margin-top: 2%;
+.pro li {
+  font-family: 'Raleway';
+  font-size: 1.2em;
+  color: gainsboro;
+  text-shadow: 2px 1px 1px black;
 }
 
-#specinfo p {
-  text-align: center;
-  font-size: 2em;
-  font-variant: small-caps;
-  color: black;
-  text-shadow: 1px 1px 1px silver;
-}
 
-#specinfo ul{
-  font-size: 1.3em;
-  color: black;
-  text-shadow: 1px 1px 1px silver;
-}
-
-#dialog-window {
-  height: 300px;
-}
-
-#scrollable-content {
-  height: 280px;
-  overflow: auto;
-  background-color: white;
-  font-size: 1.5em;
-  /*background-image: url(http://i.imgur.com/NzTJOtK.jpg);*/
-  padding-right: 20px;
-}
-
-/*#footer {
-height: 20px;
-background-color: antiquewhite;
-}*/
 
 .contactbar {
   margin-top: 3%;
@@ -410,27 +418,64 @@ background-color: antiquewhite;
 
 .ft {
   display: flex;
-  justify-content: flex-start;
+  justify-content:center;
   color: white;
 }
 
 /*tablet*/
-@media (min-width: 786px) and (max-width: 991px) {
+@media (min-width: 787px) and (max-width: 991px) {
 
   .top-sec h1 {
-    font-size: 12em;
+    font-size: 16em;
     text-align: center;
     color: darkcyan;
   }
 
   .top-sec h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     text-align: center;
   }
 
   #left p {
     font-size: 1em;
   }
+
+  #form-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .specinfo {
+    color: darkolivegreen;
+  }
+
+  .specinfo ul {
+    color: gainsboro;
+    margin-bottom: 10%;
+  }
+
+  .cex {
+    margin: 20px 0;
+    color: darkgoldenrod;
+  }
+
+  .educ {
+    color: darkolivegreen;
+  }
+
+  .edu {
+    margin-bottom: 15%;
+    color: gainsboro;
+  }
+
+  .pert2info {
+    margin: 20px 0;
+  }
+
+  .proa p{
+    color: darkgoldenrod;
+  }
+
 
 
 
@@ -455,7 +500,7 @@ background-color: antiquewhite;
 
   #icon-bar {
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
   }
   #form-container {
     width: 100%;
@@ -466,9 +511,35 @@ background-color: antiquewhite;
     width: 90%;
   }
 
-  .contactbar{
-    background-color:cadetblue;
-    opacity: .3;
+  .specinfo {
+    color: darkolivegreen;
+  }
+
+  .specinfo ul {
+    color: gainsboro;
+    margin-bottom: 10%;
+  }
+
+  .cex {
+    margin: 20px 0;
+    color: darkgoldenrod;
+  }
+
+  .educ {
+    color: darkolivegreen;
+  }
+
+  .edu {
+    margin-bottom: 15%;
+    color: gainsboro;
+  }
+
+  .pert2info {
+    margin: 20px 0;
+  }
+
+  .proa p{
+    color: darkgoldenrod;
   }
 
 }
