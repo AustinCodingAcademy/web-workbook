@@ -1,0 +1,104 @@
+main {
+  width: 100%;
+  height: 90%;
+  margin: 1%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.large {
+  width: 50px;
+  height: 50px;
+}
+
+.small {
+  width: 50px;
+  height: 50px;
+}
+
+main .large {
+  transition: transform 2s ease-out;
+  transform: translateX(px) rotate(-3000deg) scale(1, 1);
+}
+
+main .small {
+  transition: transform 3s ease-out;
+  transform: translateX(px) rotate(3000deg) scale(2, 2);
+}
+
+main:hover .large {
+  transition: transform 2s ease-in-out;
+  transform: translateX(300px) rotate(3000deg) scale(.5, .5);
+}
+
+main:hover .small {
+  transition: transform 3s ease-in-out;
+  transform: translateX(-300px) rotate(-3000deg) scale(2, 2);
+}
+
+
+/* main:hover #odd {
+  transition:         transform .8s ease-in-out;
+  transform: rotate(360deg);
+} */
+
+
+/* main:hover .small{
+  -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
+    transform: translateX(20px);
+} */
+
+.box1 {
+  transition: background-color 2s ease-out;
+  transition: all 2s ease;
+  background-color: blue;
+}
+
+.box2 {
+  background-color: yellow;
+}
+
+.box3 {
+  background-color: green;
+}
+
+.box4 {
+  background-color: indigo;
+}
+
+.box5 {
+  background-color: orange;
+}
+
+.box6 {
+  background-color: pink;
+}
+
+.box7 {
+  background-color: purple;
+}
+
+.box8 {
+  background-color: grey;
+}
+
+.box9 {
+  background-color: violet;
+}
+
+.box10 {
+  background-color: black;
+}
+
+.box11 {
+  background-color: red;
+}
+
+.box12 {
+  background-color: lightblue;
+}

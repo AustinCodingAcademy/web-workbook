@@ -1,0 +1,232 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 1090px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.mid-right {
+  display: flex;
+  border: 1px black;
+  margin-left: 5%;
+  margin-top: -200px;
+}
+
+.header {
+  display: flex;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  /*background-image: url('../img/bg.jpg');*/
+  border: 1px solid black;
+  /*height: 600px;*/
+  /*width: 1200px;*/
+  /*width: 1200px;
+  max-width: 100%;
+  margin-top: px;*/
+}
+
+.img {
+  display: flex;
+  height: 600px;
+  width: 1200px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+div {
+  /*display: flex;*/
+  flex-direction: column;
+  height: 20%;
+  width: 22%;
+  /*border: 2px solid black;*/
+  margin-top: ;
+}
+
+div h1 {
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+div li {
+  font-weight: bold;
+  display: flex;
+  margin-bottom: 15px;
+  /*justify-content: space-between;*/
+  font-size: 20px;
+  list-style-type: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  /*border: 1px solid black;*/
+  height: 15%;
+  width: 66%;
+  margin-left: 5%;
+}
+
+main h1 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+main p {
+  font-size: 30px;
+}
+
+.button {
+  align-items: center;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  width: 200px;
+  height: 50px;
+  background-color: grey;
+  margin-top: 20px;
+  margin: 30px;
+  margin-left: 95px;
+}
+
+.info {
+  display: none;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1600px) {
+  div {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    /*flex-flow: row wrap;*/
+  }
+  .img {
+    flex: 1 100%;
+    margin-bottom: 1.2rem;
+    display: flex;
+    height: 400px;
+    width: 100%;
+    /*max-width: 100%;*/
+  }
+  .header {
+    margin-top: -200px;
+    flex: 1 100%;
+    margin-right: 30px;
+    /*margin-bottom: 1.2rem;*/
+    display: flex;
+    height: 400px;
+    width: 100%;
+    /*display: flex;*/
+    /*background-image: url('../img/bg.jpg');*/
+    /*height:300px;
+    max-width: 100%;*/
+    /*width: 600px;*/
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid black;*/
+    height: 120px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 50px;
+  }
+  main h1 {
+    display: flex;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  main p {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-right: 30px;
+    /*padding-right: 100px;*/
+    /*padding-bottom: 100px;*/
+    /*margin-bottom: 100px;*/
+  }
+  .button {
+    align-items: center;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    width: 200px;
+    height: 50px;
+    background-color: grey;
+    margin-top: 0px;
+    margin: 0px;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 960px) {
+  div {
+    display: none;
+  }
+  .header {
+    margin-top: 50px;
+  }
+  .info {
+    background-color: grey;
+    color: white;
+    border: 1px solid black;
+    display: flex;
+    width: 90%;
+    height: 300px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .info-box1 {
+    display: flex;
+    /*border: 1px solid black;*/
+    width: 50%;
+    justify-content: flex-start;
+    margin-left: 30px;
+  }
+  .info-box1 h1 {
+    margin-top: 20px;
+    color: white;
+    border-bottom: none;
+  }
+  .info-box1 li {
+    width: 200px;
+    border-bottom: 1px solid white;
+  }
+  .info-box2 {
+    display: flex;
+    border: 1px black;
+    width: 50%;
+    justify-content: flex-start;
+  }
+  .info-box2 h1 {
+    margin-top: 20px;
+    color: white;
+    border-bottom: none;
+  }
+  .info-box2 li {
+    width: 200px;
+    border-bottom: 1px solid white;
+  }
+  i {
+    margin-left: 30px;
+  }
+  a:link {
+    color: white;
+    text-decoration: none;
+  }
+}

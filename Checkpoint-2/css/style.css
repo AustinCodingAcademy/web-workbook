@@ -1,0 +1,266 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 3050px;
+  width: 100%;
+  background-image: url('https://i.ytimg.com/vi/M2uBtg_PzKg/maxresdefault.jpg')
+}
+
+main {
+  diplay: flex;
+  flex-dirction: column;
+  font-family: 'Audiowide', cursive;
+  color: #337AB7;
+}
+
+
+/*Scroll*/
+
+.parallax {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* The image used */
+  background-image: url("http://b.fastcompany.net/multisite_files/fastcompany/poster/2014/07/3032987-poster-p-1-space-x-texas-location.jpg");
+  height: 1500px;
+  /* Set a specific height */
+  min-height: 1000px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: hue-rotate(400deg);
+  opacity: .8;
+  border-top: -20px;
+  color: green;
+}
+
+
+/*Navbar*/
+
+header {
+  background-image: url('https://i.ytimg.com/vi/M2uBtg_PzKg/maxresdefault.jpg');
+  display: flex;
+  justify-content: center;
+  border-radius: 0px;
+  height: 140px;
+  width: 100%;
+  margin-bottom: 0px;
+  /*   border: 1px solid grey; */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 140px;
+  width: 100%;
+  border-radius: 0px;
+  /*   border: 1px solid grey; */
+  padding-top: 30px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+li {
+  display: flex;
+  font-family: 'Audiowide', cursive;
+  padding-right: 20px;
+  color: #337AB7;
+}
+
+.container-2 {
+  display: flex;
+  justify-content: center;
+  margin-left: 1000px;
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  font-family: 'Audiowide', cursive;
+  color: #337AB7;
+}
+
+.container-2 .icon {
+  display: flex;
+  padding-right: 10px;
+}
+
+
+/*Writing Center*/
+
+.title {
+  font-size: 60px;
+}
+
+.name {
+  font-size: 35px;
+}
+
+.name1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+}
+
+
+/*Lower Half*/
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /*align-items: flex-start;*/
+  background-color: #A28FC2;
+  height: auto;
+  width: 100%;
+  border: 1px solid white;
+  opacity: .8;
+  font-family: 'Audiowide', cursive;
+  color: #337AB7;
+}
+
+.closingtext {
+  /*border:1px solid yellow;*/
+  align-items: flex-start;
+}
+
+.closingtext h1 {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /*align-items: column;*/
+  /*border: 1px solid white;*/
+  margin-bottom: 100px;
+  font-size: 50px;
+}
+
+.closingtext p {
+  display: flex;
+  height: 200px;
+  width: 75%;
+  justify-content: center;
+  align-items: column;
+  /*border: 1px solid blue;*/
+  font-size: 20px;
+  margin-left: 15%;
+}
+
+.gif {
+  display: none;
+}
+
+.linkicons {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: column;
+  /*border: 1px solid white;*/
+}
+
+.contact {
+  /*border: 1px solid blue;*/
+  display: flex;
+  justify-content: center;
+  align-items: column;
+  height: 60px;
+  width: 100%;
+  font-size: 45px;
+}
+
+
+/*Inputs*/
+
+.input {
+  /*border: 1px solid blue;*/
+  display: flex;
+  justify-content: center;
+  align-items: column;
+  /*height: 150px;*/
+  width: 100%;
+}
+
+input {
+  height: 30px;
+  width: 300px;
+}
+
+
+/* Media Querry*/
+
+
+/*was at 480*/
+
+@media screen and (min-width: 320px) and (max-width: 1100px) {
+  body {
+    width: 100%;
+    margin-left: 20px;
+    /*display: flex;
+  flex-direction: column;*/
+  }
+  .parallax {
+    display: flex;
+    width: 100%;
+    filter: hue-rotate(400deg);
+    opacity: .8;
+  }
+  section {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 200px;
+    height: 1000px;
+  }
+  .closingtext h1 {
+    /*border: 1px solid white;*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .closingtext p {
+    display: none;
+  }
+  .gif {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    /*margin-left: 15%;*/
+  }
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-2 {
+    display: none;
+  }
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    font-size: 20px;
+    /*height: 300px;*/
+  }
+  .container-fluid img {
+    /*height: 10px;*/
+    width: auto;
+  }
+  input {
+    display: none;
+  }
+}
