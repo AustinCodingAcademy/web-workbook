@@ -12,7 +12,7 @@ Remove 'Paragraph 4'.
 window.onload = function(){
   var $li = document.getElementsByTagName('li');
   var $ul = document.querySelector('ul');
-  var $p = document.getElementById('P4');
+  var $p = document.getElementById('p4');
 
 
 
