@@ -24,14 +24,15 @@ window.onload = function () {
   document.querySelector ('#div').insertAdjacentHTML ('beforeend', '<h4>Paragraph 4 has been removed!</h4>');
 
   //Add 'Fifth List Item' to the list.
-  document.querySelector ('li').insertAdjacentHTML ('beforeend', '<p>Edward Vidaurri</li>');
+
 
 
   // Trying differernt queries. Adding multiple li's.
-  // const items = ['Sixth Element', 'Seventh List Item', 'Eight List Item', 'Nineth List     Item'];
-  // for (let i = 0; i < items.length; i++) {
-  //   document.querySelector ('ul').insertAdjacentHTML ('beforeend', `<li>${items[i]}</li>`);
-  // }
+
+  const items = ['Fifth List Element', 'Sixth List Element', 'Seventh List Item', 'Eight List Item', 'Nineth List     Item'];
+  for (let i = 0; i < items.length; i++) {
+    document.querySelector ('ul').insertAdjacentHTML ('beforeend', `<li>${items[i]}</li>`);
+  }
 
 
   document.querySelector ('#P1').insertAdjacentHTML ('beforeend', '<ol><li>List Item A</li></ol>');
