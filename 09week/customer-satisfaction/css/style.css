@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-top: 14px;
+}
+
+body {
+  font-family: "Open Sans";
+  font-size: 18px;
+}
+
+.container {
+  width: 500px;
+  margin: 25px auto;
+}
+
+select {
+  background-color: gray;
+}
+
+form {
+  padding: 20px;
+  background: orange;
+  color: #000;
+  @include border-radius(4px);
+  label, input, button {
+    border: 0;
+    margin-bottom: 3px;
+    display: block;
+    width: 100%;
+  }
+  input {
+    height: 25px;
+    line-height: 25px;
+    background: gray;
+    color: #000;
+    padding: 0 6px;
+    @include box-sizing(border-box);
+  }
+  button {
+    height: 40px;
+    line-height: 40px;
+    background: green;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .error {
+    color: #ff0000;
+  }
+}
+
+.article-reference {
+  margin-top: 15px;
+  a {
+    color: black;
+  }
+}
