@@ -1,8 +1,19 @@
+/*laptop view */
+
+.container {
+  width: 100%;
+}
+
+.navbar {
+  background: black;
+  border: none;
+  margin: 0;
+}
+
 .flex-container {
-  height: 100px;
   background-color: black;
   border-bottom: 1px solid silver;
-  width: 100%;
+  width: auto;
   display: flex;
   ​display: -webkit-flex;
   justify-content: space-between;
@@ -13,11 +24,13 @@
   line-height: normal;
   color: white;
   font-family: "Ubuntu", sans-serif;
-  font-size: 30px;
+  font-size: 29px;
   font-weight: bold;
 }
 
-.navbar {
+.navbar1 {
+  background: black;
+  border: none;
   display: flex;
   ​display: -webkit-flex;
   flex-flow: row wrap;
@@ -33,20 +46,41 @@ li {
   font-size: 20px;
 }
 
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
 #hero {
   background-image: url('../img/again.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: auto;
-  height: 580px;
+  width: 100%;
+  height: 660px;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
+  flex-direction: column;
 }
 
-#hero h1 {
+.message h1 {
   font-family: "Ubuntu", sans-serif;
   font-size: 30px;
+  font-weight: bold;
+}
+
+.message {
+  position: relative;
+  bottom: 25%;
+  text-align: center;
+  text-shadow: 3px .5px black;
+  color: white;
+}
+
+.message p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -61,15 +95,13 @@ li {
   display: flex;
   justify-content: center;
   margin-bottom: 25px;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
-
-/*.row{
-   display:flex;
-   justify-content:space-around;
-   flex-direction: row;
- }*/
+.webimages {
+  width: 95%;
+  height: 250px;
+}
 
 h2 {
   color: white;
@@ -78,34 +110,127 @@ h2 {
 }
 
 #contact {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
   width: 100%;
   height: 200px;
   text-align: center;
 }
 
-#contact h1 {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 30px;
+h4 {
+  font-size: 20px !important;
+}
+
+.bottom-heading h1 {
   display: flex;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 35px !important;
+  margin-top: 50px !important;
 }
 
-
-/*
-.rows{
-  display: flex;
-  flex-direction: row;
-
-}
-*/
-
-.rows img {
+.link-images {
   width: 50px;
   height: 50px;
 }
 
 .container-fluid {
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+
+/* For tablet view  */
+
+@media(min-width: 768px) and (max-width: 991px) {
+  #hero {
+    height: 550px;
+  }
+  .webimages {
+    width: 80%;
+    height: 230px;
+  }
+  #projects {
+    height: 400px;
+  }
+  #contact {
+    margin-top: 50px;
+    height: 200px;
+  }
+  .link-images {
+    width: 40px;
+    height: 40px;
+  }
+  h4 {
+    font-size: 17px !important;
+  }
+  .message h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+  }
+  .message p {
+    font-size: 17px;
+  }
+  h1 {
+    font-size: 26px;
+  }
+}
+
+
+/* For mobile phone view  */
+
+@media (min-width:300px) and (max-width: 767px) {
+  #hero {
+    height: 400px;
+  }
+  .webimages {
+    width: 70%;
+    height: 180px;
+    margin-top: 10px;
+  }
+  .link-images {
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+  }
+  h4 {
+    font-size: 16px !important;
+  }
+  #projects {
+    height: 700px;
+  }
+  #contact {
+    height: 300px;
+  }
+  .message h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .message p {
+    visibility: hidden;
+    display: none;
+  }
+  h1 {
+    font-size: 23px;
+  }
+  .nav>li>a {
+    display: block;
+  }
+  .collapse.in {
+    display: block;
+  }
+  .pull-right {
+    float: right !important;
+  }
+  .navbar-collapse {
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow-x: visible;
+    position: relative;
+    z-index: 1;
+  }
+  .collapse {
+    display: none;
+  }
 }

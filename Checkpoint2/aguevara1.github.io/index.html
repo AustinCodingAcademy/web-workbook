@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio</title>
-  <!-- Latest compiled and minified CSS -->
+  <!-- Font, bootstrap an css style files-->
   <link href="https://fonts.googleapis.com/css?family=Monda|Varela+Round|Heebo:800|Roboto|Ubuntu|Fredericka+the+Great" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/reset.css" />
@@ -14,75 +14,92 @@
 </head>
 
 <body>
-  <header>
-    <nav class="flex-container">
-      <!--  <h2 class="logo">Alberto Guevara</h2> -->
-      <a class="logo" href="#about">Alberto Guevara</a>
-      <ul class="navbar">
-        <li> <a href="#projects">Some Work</a></li>
-        <li> <a href="https://aguevara1.github.io/web-workbook/01week/resume/index.html">My Resume</a></li>
-        <li> <a href="#contact">Contact</a></li>
-      </ul>
+  <header role="banner">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <header role="banner">
+          <!--Code for toggle button in nav-->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </button>
+            <a class="logo" href="#about">Alberto Guevara</a>
+          </div>
+          <!--gathering nav links for toggling-->
+          <!--Not working correctly, still need to fix-->
+          <div class="navbar-collapse pull-right collapse in" id="example-navbar-collapse" aria-expanded="false">
+            <ul class=" nav navbar-nav navbar1">
+              <li> <a href="#projects">Some Work</a></li>
+              <li> <a href="https://aguevara1.github.io/web-workbook/01week/resume/index.html">My Resume</a></li>
+              <li> <a href="#contact">Contact</a></li>
+            </ul>
+          </div>
       </div>
     </nav>
-  </header>
-  <main>
-    <div class="container-fluid">
+    </header>
+    <main>
       <section>
-        <div id="hero">
-          <h1>By day an Educator, by night a Coder</h1>
-          <p>Very detail oriented. Willing, and happy to work on any project.</p>
-        </div>
+        <header role="banner">
+          <div id="hero">
+            <!--hero has background image-->
+            <div class="message">
+              <h1>By day an Educator, by night a Coder</h1>
+              <p>Very detail oriented. Willing, and happy to work on any project.</p>
+            </div>
+          </div>
       </section>
-
       <section>
         <div id="projects">
+          <!--my work (projects)-->
           <h1>My Work</h1>
-          <div class="row">
-            <div class="col-sm-4 col-xs-12"><img src="img/nasapic.png" alt="The nasapic" width="100%" height="250px"> </div>
-            <div class="col-sm-4 col-xs-12"><img src="img/airline.png" alt="airline picture" width="100%" height="250px"></div>
-            <div class="col-sm-4 col-xs-12"><img src="img/theblog.png" alt="Teachers blog" width="100%" height="250px"></div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-4 col-xs-12 text-center"><a href="https://aguevara1.github.io/web-workbook/04week/welcome-to-our-site/index.html"><img src="img/welcome.png" alt="welcome site" class="webimages"></a></div>
+              <div class="col-sm-4 col-xs-12 text-center"><a href="https://aguevara1.github.io/web-workbook/03week/airplane/index.html"><img src="img/airline.png" alt="airline picture" class="webimages"></a></div>
+              <div class="col-sm-4 col-xs-12 text-center"><a href="https://aguevara1.github.io/web-workbook/02week/blog/index.html"><img src="img/teacherblog.png" alt="Teachers blog" class="webimages"></a></div>
+            </div>
           </div>
         </div>
       </section>
-  </main>
-  <footer>
-    <section>
-      <div id="contact">
-        <div class="container-fluid">
-
-          <div class="col-xs-12">
-            <h1>Contact</h1>
-          </div>
-          <div class="rows">
-            <div class="col-sm-3 col-xs-6">
-              <img src="img/Linkedin.png" alt="The nasapic">
-              <h4>Linkedin</h4>
-            </div>
-            <div class="col-sm-3 col-xs-6">
-              <img src="img/Github.png" alt="The nasapic">
-              <h4>Github</h4>
-            </div>
-            <div class="col-sm-3 col-xs-6">
-              <img src="img/Facebook.png" alt="The nasapic">
-              <h4>Facebook</h4>
-            </div>
-            <div class="col-sm-3 col-xs-6">
-              <img src="img/Twitter.png" alt="The nasapic">
-              <h4>Twitter</h4>
+    </main>
+    <footer role="contentinfo">
+      <section>
+        <div id="contact">
+          <!--links for contacting -->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12" class="bottom-heading">
+                <h1>Contact</h1></div>
+              <hr>
+              <div class="col-sm-3 col-xs-6">
+                <a href="https://www.linkedin.com/in/alberto-guevara-b6b974146"><img src="img/Linkedin.png" alt="The nasapic" class="link-images"/></a>
+                <h4>Linkedin</h4>
+              </div>
+              <div class="col-sm-3 col-xs-6">
+                <a href="https://github.com/aguevara1"><img src="img/Github.png" alt="The nasapic" class="link-images"/></a>
+                <h4>Github</h4>
+              </div>
+              <div class="col-sm-3 col-xs-6">
+                <a href="https://www.facebook.com/"><img src="img/Facebook.png" alt="The nasapic" class="link-images"/></a>
+                <h4>Facebook</h4>
+              </div>
+              <div class="col-sm-3 col-xs-6">
+                <a href="https://twitter.com/"><img src="img/Twitter.png" alt="The nasapic" class="link-images"/></a>
+                <h4>Twitter</h4>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    </div>
-  </footer>
+      </section>
+    </footer>
+    <!--jquery script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 
