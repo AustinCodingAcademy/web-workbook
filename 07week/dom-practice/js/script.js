@@ -1,16 +1,17 @@
-'use strict'
+'use strict';
 
-window.onloud = function() {
-  var list = document.getElementByTagName('ol');
-  var message = 'this page has ' + list[0].child.length + 'list items';
+window.onload = function() {
 
-  alert(message);
-  var newelement = document.createElement('h1');
-  newelement.innerHTML = 'JavaScript';
-  document.body.appendChild(newelement);
+  alert("There was originally 4 list items on this page.");
 
-  var $p =
-      document.getElementById('P4');
 
-  $p.remove();
+  console.log(document.title = "Andrew's DOM");
+
+
+  console.log(document.querySelectorALL('li').length);
+
+  document.querySelector('ul').insertAdjacentHTML('beforeend', '<li>Fifth List Item</li>');
+
+  document.querySelector('#P4').remove();
+
 }
