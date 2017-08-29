@@ -1,158 +1,162 @@
 <!DOCTYPE html>
 
 <html class="no-js">
-    <head>
-        <meta charset="UTF-8" />
-        
-        <title>The Zombie Run</title>
-        <meta name="description" content="The registration page of a Website promoting a 5K in Austin known as the Zombie Run." />
-        
-        
-        <link href="style.css" rel="stylesheet" type="text/css" />
-        
-        <!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers-->
-        <script src="js/modernizr.js"></script>
-        
-        <!--Makes the site so it won't scale down on small devices -->
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    </head>
 
-    <body>
-        
-        <div class="wrapper">
-            
-             <div class="navigation">
-                <a onclick="toggle_visibility('menu');">Menu</a>
-                <article id="menu">  
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        
-                        <li><a onclick="toggle_visibility('register');">Register</a>
-                            <ul class="dropdown" id="register">
-                                <li><a href="registration.html">Runner</a></li>
-                                <li><a href="registration.html">Zombie</a></li>
-                                <li><a href="registration.html">Volunteer</a></li>
-                            </ul>
-                        </li>
-                        
-                        <li><a onclick="toggle_visibility('about');">About</a>
-                            <ul class="dropdown" id="about">
-                                <li><a href="about.html#what">What?</a></li>
-                                <li><a href="about.html#when">When?</a></li>
-                                <li><a href="about.html#where">Where?</a></li>
-                                <li><a href="about.html#howmuch">How much?</a></li>
-                                <li><a href="about.html">FAQs</a></li>
-                            </ul>
-                        </li>
-                        
-                        <li><a onclick="toggle_visibility('shop');">Shop</a>
-                            <ul class="dropdown" id="shop">
-                                <li><a href="#">Donate</a></li>
-                                <li><a href="#">Gear</a></li>
-                                <li><a href="#">Merchandise</a></li>
-                            </ul>
-                        </li>
-                        
-                        <li><a onclick="toggle_visibility('contact');">Contact</a>
-                            <ul class="dropdown" id="contact">
-                                <li><a href="https://www.facebook.com/thezombierunner" target="_blank">Facebook</a></li>
-                                <li><a href="https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=thezombierunner" target="_blank">Twitter</a></li>
-                                <li><a href="http://www.pinterest.com/thezombierunner/" target="_blank">Pinterest</a></li>
-                                <li><a href="#">Email</a></li>
-                                <li><a href="http://thezombierunorigins.com/" target="_blank">Blog</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </article>
-            </div>
-                
-            <nav class="social">
-                <ul>
-                    <li><a href="https://www.facebook.com/thezombierunner" target="_blank"><img src="images/ficon.jpg" alt="link to the Zombie Run's facebook page" /></a></li>
-                    <li><a href="https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=thezombierunner" target="_blank"><img src="images/ticon.jpg" alt="link to the Zombie Run's twitter feed" /></a></li>
-                    <li><a href="http://www.pinterest.com/thezombierunner/" target="_blank"><img src="images/picon.jpg" alt="link to the Zombie Run's pinterest board" /></a></li>
-                </ul>
-            </nav>
-                
-            <header><div class="hero"><img src="images/header2.jpg" /></div></header>
-            
-            <h1>Registration for The Zombie Run in Austin</h1>
-            
-            <article class="introduction">
-                <h2>Please select one:</h2>
-                <form action="#" method="get">
-                    <input type="radio" name="run" value="Runner" checked="checked" />Runner
-                    <input type="radio" name="run" value="Zombie" />Zombie
-                </form>
-            </article>
-            
-            <article class="introduction">
-                <h2>Please select one:</h2>
-                <form action="#" method="get">
-                    <p><input type="radio" name="time" value="Extreme" checked="checked" />Extreme
-                    <input type="radio" name="time" value="Black OPS" />Black OPS</p>
-                    <p><input type="radio" name="time" value="All Day Pass" />All Day Pass</p>
-                </form>
-            </article>
-            
-            <article class="introduction">
-                <h2>Choose a starting time:</h2>
-                <form action="#" method="get">
-                    <p><input type="radio" name="wave" value="4:00PM" checked="checked" />4:00PM</p>
-                    <p><input type="radio" name="wave" value="4:05PM" />4:05PM</p>
-                    <p><input type="radio" name="wave" value="4:10PM" />4:10PM</p>
-                    <p><input type="radio" name="wave" value="4:15PM" />4:15PM</p>
-                    <p><input type="radio" name="wave" value="4:20PM" />4:20PM</p>
-                    <p><input type="radio" name="wave" value="4:25PM" />4:25PM</p>
-                    <p><input type="radio" name="wave" value="4:30PM" />4:30PM</p>
-                </form>
-            </article>
-            
-            <article class="introduction">
-                <h2>Donations</h2>
-                <p>(A Donation of 10$ or more = an extra life!)</p>
-                <form action="#" method="get">
-                    <input type="text" name="donation" />
-                    <input type="submit" name="donation" value="donate" />
-                </form>
-            </article>
-            
-            <article class="introduction">
-                <div class="register">
-                    <form action="#" method="get">
-                        <input type="image" src="images/register.png" alt="Big registration submit button" /> 
-                    </form>
-                </div>
-            </article>
-            
-            <div class="footer">
-                <article class="nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="registration.html">Register</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </article>
-                    
-                <article class="hands"><img src="images/hands.png" alt="image of zombie hands reaching up" /></article>
-            </div>
-            
-        </div>
-        
-        <!-- Place this script at the end of your body -->
-        <script type="text/javascript">
-        <!--
-            function toggle_visibility(id) {
-               var e = document.getElementById(id);
-               if(e.style.display == 'block')
-                  e.style.display = 'none';
-               else
-                  e.style.display = 'block';
-            }
-        //-->
-        </script>  
-        
-    </body>
+<head>
+  <meta charset="UTF-8" />
+
+  <title>The Zombie Run</title>
+  <meta name="description" content="The registration page of a Website promoting a 5K in Austin known as the Zombie Run." />
+
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers-->
+  <script src="js/modernizr.js"></script>
+
+  <!--Makes the site so it won't scale down on small devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="navigation">
+      <a onclick="toggle_visibility('menu');">Menu</a>
+      <article id="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li><a onclick="toggle_visibility('register');">Register</a>
+            <ul class="dropdown" id="register">
+              <li><a href="registration.html">Runner</a></li>
+              <li><a href="registration.html">Zombie</a></li>
+              <li><a href="registration.html">Volunteer</a></li>
+            </ul>
+          </li>
+
+          <li><a onclick="toggle_visibility('about');">About</a>
+            <ul class="dropdown" id="about">
+              <li><a href="about.html#what">What?</a></li>
+              <li><a href="about.html#when">When?</a></li>
+              <li><a href="about.html#where">Where?</a></li>
+              <li><a href="about.html#howmuch">How much?</a></li>
+              <li><a href="about.html">FAQs</a></li>
+            </ul>
+          </li>
+
+          <li><a onclick="toggle_visibility('shop');">Shop</a>
+            <ul class="dropdown" id="shop">
+              <li><a href="#">Donate</a></li>
+              <li><a href="#">Gear</a></li>
+              <li><a href="#">Merchandise</a></li>
+            </ul>
+          </li>
+
+          <li><a onclick="toggle_visibility('contact');">Contact</a>
+            <ul class="dropdown" id="contact">
+              <li><a href="https://www.facebook.com/thezombierunner" target="_blank">Facebook</a></li>
+              <li><a href="https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=thezombierunner" target="_blank">Twitter</a></li>
+              <li><a href="http://www.pinterest.com/thezombierunner/" target="_blank">Pinterest</a></li>
+              <li><a href="#">Email</a></li>
+              <li><a href="http://thezombierunorigins.com/" target="_blank">Blog</a></li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    <nav class="social">
+      <ul>
+        <li><a href="https://www.facebook.com/thezombierunner" target="_blank"><img src="images/ficon.jpg" alt="link to the Zombie Run's facebook page" /></a></li>
+        <li><a href="https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=thezombierunner" target="_blank"><img src="images/ticon.jpg" alt="link to the Zombie Run's twitter feed" /></a></li>
+        <li><a href="http://www.pinterest.com/thezombierunner/" target="_blank"><img src="images/picon.jpg" alt="link to the Zombie Run's pinterest board" /></a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <div class="hero"><img src="images/header2.jpg" /></div>
+    </header>
+
+    <h1>Registration for The Zombie Run in Austin</h1>
+
+    <article class="introduction">
+      <h2>Please select one:</h2>
+      <form action="#" method="get">
+        <input type="radio" name="run" value="Runner" checked="checked" />Runner
+        <input type="radio" name="run" value="Zombie" />Zombie
+      </form>
+    </article>
+
+    <article class="introduction">
+      <h2>Please select one:</h2>
+      <form action="#" method="get">
+        <p><input type="radio" name="time" value="Extreme" checked="checked" />Extreme
+          <input type="radio" name="time" value="Black OPS" />Black OPS</p>
+        <p><input type="radio" name="time" value="All Day Pass" />All Day Pass</p>
+      </form>
+    </article>
+
+    <article class="introduction">
+      <h2>Choose a starting time:</h2>
+      <form action="#" method="get">
+        <p><input type="radio" name="wave" value="4:00PM" checked="checked" />4:00PM</p>
+        <p><input type="radio" name="wave" value="4:05PM" />4:05PM</p>
+        <p><input type="radio" name="wave" value="4:10PM" />4:10PM</p>
+        <p><input type="radio" name="wave" value="4:15PM" />4:15PM</p>
+        <p><input type="radio" name="wave" value="4:20PM" />4:20PM</p>
+        <p><input type="radio" name="wave" value="4:25PM" />4:25PM</p>
+        <p><input type="radio" name="wave" value="4:30PM" />4:30PM</p>
+      </form>
+    </article>
+
+    <article class="introduction">
+      <h2>Donations</h2>
+      <p>(A Donation of 10$ or more = an extra life!)</p>
+      <form action="#" method="get">
+        <input type="text" name="donation" />
+        <input type="submit" name="donation" value="donate" />
+      </form>
+    </article>
+
+    <article class="introduction">
+      <div class="register">
+        <form action="#" method="get">
+          <input type="image" src="images/register.png" alt="Big registration submit button" />
+        </form>
+      </div>
+    </article>
+
+    <div class="footer">
+      <article class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="registration.html">Register</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </article>
+
+      <article class="hands"><img src="images/hands.png" alt="image of zombie hands reaching up" /></article>
+    </div>
+
+  </div>
+
+  <!-- Place this script at the end of your body -->
+  <script type="text/javascript">
+    <!--
+    function toggle_visibility(id) {
+      var e = document.getElementById(id);
+      if (e.style.display == 'block')
+        e.style.display = 'none';
+      else
+        e.style.display = 'block';
+    }
+    //-->
+  </script>
+
+</body>
+
 </html>
