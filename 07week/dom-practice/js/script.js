@@ -1,6 +1,6 @@
 'use strict'
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOM", function() {
 
 var list = document.getElementsByTagName('ul');
     var message = 'This page has ' + list[0].children.length + ' list items';
