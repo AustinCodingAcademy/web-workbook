@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="keywords" content="Gregg Andrews">
+  <meta name="author" content="Gregg Andrews">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gregg Andrews Portfolio</title>
+
+  <!--My Styles -->
+  <link rel="stylesheet" type="text/css" href="css/css-reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!--Jquery scrolling from WC3-->
+  <script>
+    $(document).ready(function() {
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function() {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+  <style>
+    body,
+    html,
+    .main {
+      height: 100%;
+    }
+
+    section {
+      min-height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <!--Navigation collapse to Menu dropdown list -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <p class="navbar-text visible-xs-inline-block">Menu</p>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#design-portfolio">design portfolio</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Main Header-->
+  <header>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="container text-center">
+          <!-- <div class="container-fluid"> -->
+          <p id="title">Gregg Andrews</p>
+          <p id="by-line" class="header-text">UX/UI DESIGN - WEB DEVELOPMENT</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--About Section-->
+  <section id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12 mx-auto">
+          <p class="section-titles">About</p>
+          <div class="line"></div>
+          <div class="col-md-12 mx-auto">
+            <div class="lead">
+              <p>For as long as I can remember, art has been a part of my life. At an early age, I would watch Bob Ross on public television and try to replicate his paintings with my watercolors. It was not long after that endeavor, I picked up a pair of
+                drum sticks, which lead me further on my journey of self-expression. I’ve been blessed over the past twenty-five years, to have lead various creative-art programs. During that time, I gained experience in media and graphic design. Recently,
+                I have made another shift in my creative journey - training to become a UX/UI front-end web developer.</p>
+              <br>
+              <p>When I’m not designing websites, you will find me with my self-professed family of “nerds” who love all things tech and art. We live in Austin, which proudly proclaims itself as the “music capital of the world”. This is fitting since we
+                are a family of musicians who loves to perform in our community. It’s in this atmosphere of creative energy that I draw inspiration for my work.</p>
+              <br>
+              <p>My design aesthetic is minimalist. I’m passionate about creating beautiful, responsive websites that work on different size devices. I strive to design clear and seamless websites that provide a pleasant and successful web experience for
+                the end-user. Thank you for taking the time to check out my website. I would love the opportunity to bring your web design ideas to life!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--This is the Skills Section-->
+  <section id="skills">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12 mx-auto">
+          <p class="section-titles">Skills</p>
+          <div class="line"></div>
+          <div class="col-xs-12 col-md-6 col-lg-6">
+            <article>
+              <p class="skill-lead">UX/UI Design</p>
+              <ul class="skill-list">
+                <li>wireframing</li>
+                <li>prototyping</li>
+                <li>search engine optimization</li>
+                <li>responsive web-design</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe After Effects</li>
+                <li>Adobe Experience Design</li>
+              </ul>
+            </article>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-6">
+              <article>
+                <p class="skill-lead">Web Development</p>
+                <ul class="skill-list">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Sass/Less</li>
+                  <li>bootstrap</li>
+                  <li>javascript</li>
+                  <li>jquery</li>
+                  <li>Git VCS</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Design Portfolio"-->
+  <section id="design-portfolio">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12 mx-auto">
+          <p class="section-titles">Design Portfolio</p>
+          <div class="line"></div>
+        </div>
+        <!--Website Design-->
+        <p class="web-design-title">Website Design</p>
+        <div class="row">
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <a href="https://greggandrews.github.io/web-workbook/Checkpoint/greggandrews.github.io/index.html" target="_blank"><img src="img/ternion.png" class="portfolio-images" alt="twitter button"></a>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <a href="https://greggandrews.github.io/web-workbook/04week/tomorrows-technology/index.html" target="_blank"><img src="img/future-office.png" class="portfolio-images" alt="instagram button"></a>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <a href="https://greggandrews.github.io/web-workbook/02week/blog/index.html" target="_blank"><img src="img/blog.png" class="portfolio-images" alt="linkedin button"></a>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <a href="https://greggandrews.github.io/web-workbook/05week/news-website/index.html" target="_blank"><img src="img/news3.png" class="portfolio-images" alt="facebook button"></a>
+          </div>
+        </div>
+        <!--Media Design-->
+        <p class="web-design-title">Media Design</p>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <img src="img/lt-talent.jpg" class="media-images" alt="Lake Travis Graphic">
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Cin0RVrBEiM" frameborder="0" allowfullscreen></iframe>
+            <div><img src="img/adobe-creative-cloud-large.png" id="adobe-image" alt="adobe creative cloud">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Contact Section-->
+  <section id="contact">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12 mx-auto">
+          <p class="section-titles">Contact</p>
+          <div class="line"></div>
+          <!--This is the email form-->
+          <form id="form-size">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Full Name">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <label for="message">How Can I Help You</label>
+            <textarea class="form-control" rows="4" id="message" placeholder="Type Message Here"></textarea>
+            <p class="help-block">Most emails are answered within 24 hours during the work week.</p>
+        <button type="button" id="submit" class="btn btn-default">Send Email</button>
+        </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+        <!--Social Media Buttons-->
+        <section id="social-media">
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-md-12 mx-auto">
+                <p id="social-title">Let's Connect!</p>
+                <div class="row">
+                  <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                    <a href="https://www.facebook.com/greggandrews1" target="_blank"><img src="img/facebook.png" class="social-images" alt="facebook button"></a>
+                  </div>
+
+                  <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                    <a href="https://www.linkedin.com/in/gregg-andrews-69046247/" target="_blank"><img src="img/linkedin2.png" class="social-images" alt="linkedin button"></a>
+                  </div>
+
+                  <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                    <a href="https://twitter.com/greggandrews" target="_blank"><img src="img/twitter.png" class="social-images" alt="twitter button"></a>
+                  </div>
+
+                  <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                    <a href="https://www.instagram.com/poetroad/" target="_blank"><img src="img/instagram2.png" class="social-images" alt="instagram button"></a>
+                  </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        </main>
+
+        <!-- footer -->
+        <footer>@ 2017 Gregg Andrews | Poetroad Media LLC. </footer>
+
+        <!-- Plugin JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Custom JavaScript for this theme -->
+        <script src="js/scrolling-nav.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</body>
+
+</html>
+
+<!--Have A Great Day!-->
