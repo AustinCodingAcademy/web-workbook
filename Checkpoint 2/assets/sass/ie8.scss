@@ -1,0 +1,35 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+
+
+/* Basic */
+
+	hr {
+		border: solid 1px #ccc;
+	}
+
+	.nicescroll-cursor {
+		background: #ccc;
+	}
+
+/* Main */
+
+	#main {
+		.previous, .next {
+			background: none !important;
+		}
+
+		.viewer {
+			.reel {
+				.slide {
+					article {
+						&:after {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
