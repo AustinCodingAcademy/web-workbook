@@ -26,7 +26,7 @@ window.onload = function() {
 
   // Remove 'Paragraph 4'.
 
-  document.querySelector ('#p-4').remove();
+  document.querySelector ('#p4').remove();
 
 }
 
