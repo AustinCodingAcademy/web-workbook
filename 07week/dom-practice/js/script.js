@@ -1,17 +1,20 @@
-'use strict';
-
-window.onload = function() {
-
-  alert("There was originally 4 list items on this page.");
 
 
-  console.log(document.title = "Andrew's DOM");
+'use strict'
+
+document.addEventListener("DOMContentLoaded", function() {
+
+var list = document.getElementsByTagName('ul');
+var message = 'This page has ' + list[0].children.length + ' list items';
+
+alert(message);
 
 
-  console.log(document.querySelectorALL('li').length);
+document.querySelector('body').insertAdjacentHTML('beforebegin','<h1>Manipulating the DOM!</h1>')
 
-  document.querySelector('ul').insertAdjacentHTML('beforeend', '<li>Fifth List Item</li>');
 
-  document.querySelector('#P4').remove();
+document.querySelector('#P4').remove()
 
-}
+document.querySelector('ul').insertAdjacentHTML('beforeend','<li>Fifth List Item</li>')
+
+})
