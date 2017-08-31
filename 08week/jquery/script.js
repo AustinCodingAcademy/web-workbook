@@ -1,6 +1,6 @@
 // when the document is done loading, run the script inside
 $(document).ready(function() {
-  
+
   alert("Are you ready to count by ones, tens, and hundreds?");
 
   var num = 0;
@@ -19,7 +19,7 @@ $(document).ready(function() {
     $(this).text(num3);
   })
 
-  document.querySelector('#counter-100').insertAdjacentHTML ('afterend', '<div class="box" id="all">Click All</div>');
+  document.querySelector('#counter-100').insertAdjacentHTML ('afterend', '<div class="box" id="all" style="display: flex; justify-content: center; align-items: center;">Click All</div>');
   $('#all').click(function() {
     $('#counter-1, #counter-10, #counter-100').click();
   })
