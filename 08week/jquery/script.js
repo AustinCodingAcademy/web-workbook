@@ -13,20 +13,20 @@ $(document).ready(function() {
     num2 += 10;
     $(this).text(num2);
   })
-   $('#counter-100').click(function() {
+  $('#counter-100').click(function() {
     var num3 = Number($(this).text());
     num3 += 100;
     $(this).text(num3);
   })
 
-  document.querySelector('#counter-100').insertAdjacentHTML ('afterend', '<div class="box" id="all" style="display: flex; justify-content: center; align-items: center;">Click All</div>');
+  document.querySelector('#counter-100').insertAdjacentHTML('afterend', '<div class="box" id="all" style="display: flex; justify-content: center; align-items: center;">Click All</div>');
   $('#all').click(function() {
     $('#counter-1, #counter-10, #counter-100').click();
   })
 
-  $( function() {
-    $( "#sortable" ).sortable();
-    $( "#sortable" ).disableSelection();
+  $(function() {
+    $("#sortable").sortable();
+    $("#sortable").disableSelection();
   });
 
 });
