@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <title>The Zombie Run</title>
+  <meta name="description" content="A Website promoting a 5K in Austin known as the Zombie Run." />
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers-->
+  <script src="js/modernizr.js"></script>
+
+  <!--Makes the site so it won't scale down on small devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="navigation">
+      <a onclick="toggle_visibility('menu');">Menu</a>
+      <article id="menu">
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li><a onclick="toggle_visibility('register');">Register</a>
+            <ul class="dropdown" id="register">
+              <li><a href="registration.html">Runner</a></li>
+              <li><a href="registration.html">Zombie</a></li>
+              <li><a href="registration.html">Volunteer</a></li>
+            </ul>
+          </li>
+
+          <li><a onclick="toggle_visibility('about');">About</a>
+            <ul class="dropdown" id="about">
+              <li><a href="about.html#what">What?</a></li>
+              <li><a href="about.html#when">When?</a></li>
+              <li><a href="about.html#where">Where?</a></li>
+              <li><a href="about.html#howmuch">How much?</a></li>
+              <li><a href="about.html">FAQs</a></li>
+            </ul>
+          </li>
+
+          <li><a onclick="toggle_visibility('shop');">Shop</a>
+            <ul class="dropdown" id="shop">
+              <li><a href="#">Donate</a></li>
+              <li><a href="#">Gear</a></li>
+              <li><a href="#">Merchandise</a></li>
+            </ul>
+          </li>
+
+          <li><a onclick="toggle_visibility('contact');">Contact</a>
+            <ul class="dropdown" id="contact">
+              <li><a href="https://www.facebook.com/thezombierunner" target="_blank">Facebook</a></li>
+              <li><a href="https://twitter.com/intent/follow?source=followbutton&amp;variant=1.0&amp;screen_name=thezombierunner" target="_blank">Twitter</a></li>
+              <li><a href="http://www.pinterest.com/thezombierunner/" target="_blank">Pinterest</a></li>
+              <li><a href="#">Email</a></li>
+              <li><a href="http://thezombierunorigins.com/" target="_blank">Blog</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </article>
+    </div>
+
+    <header>
+      <nav class="social">
+        <ul>
+          <li><a href="https://www.facebook.com/thezombierunner" target="_blank"><img src="images/ficon.jpg" alt="link to the Zombie Run's facebook page" /></a></li>
+          <li><a href="https://twitter.com/intent/follow?source=followbutton&amp;variant=1.0&amp;screen_name=thezombierunner" target="_blank"><img src="images/ticon.jpg" alt="link to the Zombie Run's twitter feed" /></a></li>
+          <li><a href="http://www.pinterest.com/thezombierunner/" target="_blank"><img src="images/picon.jpg" alt="link to the Zombie Run's pinterest board" /></a></li>
+        </ul>
+      </nav>
+      <div class="hero"><img src="images/header2.jpg" /></div>
+    </header>
+
+    <div class="content1">
+      <article class="logo"><a href="index.html"><img src="images/logo.png" alt="The Zombie Run logo" /></a></article>
+
+      <article class="register"><a href="registration.html"><img src="images/register.png" alt="A link to the registration page of this Website in the shape of a warning sign" /></a></article>
+
+      <article class="search">
+        <form action="#">
+          <input type="search" name="search" placeholder="Enter keyword" />
+          <input type="submit" value="search" />
+        </form>
+      </article>
+    </div>
+
+    <div class="content2">
+      <article class="introduction" id="introduction">
+        <p><strong>The  Zombie Run</strong> is an awesomely terrifying 5K obstacle course through a zombie-infested wasteland. If you thought jogging 3.1 miles through the zombie apocalypse was enough of an adventure, try dodging that army of brain-thirsty
+          undead while scrambling through a series of rugged obstacles as well. Don’t worry though; after the race, the Humans and Zombies set aside their differences to share a cold beer and their best dance moves at the post-apocalypse afterparty. Do
+          you have what it takes to survive?</p>
+      </article>
+
+      <article class="link"><a href="about.html"><img src="images/survival.png" alt="link to the about page that says Survival Guide all your questions answered" /></a></article>
+
+      <article class="link"><a href="#"><img src="images/donate.png" alt="link to the charity Website that says Donate help save kids" /></a></article>
+
+      <article class="link"><a href="#"><img src="images/camera.png" alt="link to the gallery page that says Photo Album photos and videos" /></a></article>
+
+      <article class="link"><a href="#"><img src="images/party.png" alt="link to the after party page that says After Party you made it!" /></a></article>
+    </div>
+
+    <div class="footer">
+      <article class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="registration.html">Register</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </article>
+
+      <article class="hands"><img src="images/hands.png" alt="image of zombie hands reaching up" /></article>
+    </div>
+
+  </div>
+
+  <!-- Place this script at the end of your body -->
+  <script type="text/javascript">
+    function toggle_visibility(id) {
+      var e = document.getElementById(id);
+      if (e.style.display == 'block')
+        e.style.display = 'none';
+      else
+        e.style.display = 'block';
+    }
+  </script>
+
+</body>
+
+</html>

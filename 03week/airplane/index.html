@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta name="keywords" content="Airline UX user experience web design">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>UX Atlantic Airline</title>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" type="text/css" href="css/css-reset.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/style.css"></link>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <nav class="clearfix">
+
+        <img src="img/logo.png" alt="logo for UX Atlantic Airline" />
+
+        <div>
+          <ul class="clearfix">
+            <li><a href="index.html"><img src="img/home-icon.png" alt="an icon of a house" />Home</a></li>
+            <li><a href="index.html"><img src="img/deal-icon.png" alt="an icon of an airplane" />Travel Deals</a></li>
+            <li><a href="index.html"><img src="img/schedule-icon.png" alt="an icon of a clock" />Flight Schedule</a></li>
+            <li><a href="index.html"><img src="img/login-icon.png" alt="an icon of an arrow in a box" />Register/Login</a></li>
+          </ul>
+        </div>
+
+      </nav>
+
+    </header>
+
+    <main>
+      <section class="box">
+
+        <div class="services">
+          <a href="index.html"><img class="icon" src="img/plane-icon.png" alt="an icon of an airplane" /></a>
+          <a href="index.html"><img class="icon" src="img/hotel-icon.png" alt="an icon of a person in a bed" /></a>
+          <a href="index.html"><img class="icon" src="img/car-icon.png" alt="an icon of a car" /></a>
+        </div>
+
+        <div>
+
+          <table>
+            <tr>
+              <td>
+                <p>Depart</p>
+              </td>
+
+              <td>
+                <p>Arrive</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="date">
+                <form action="http://www.example.com/bookings/" method="post">
+                  <input type="date" name="depart" value="mm/dd/yyyy" />
+                </form>
+              </td>
+
+              <td class="date">
+                <form action="http://www.example.com/bookings/" method="post">
+                  <input type="date" name="arrive" value="mm/dd/yyyy" />
+                </form>
+              </td>
+            </tr>
+
+            <tr class="third">
+              <td class="passengers">
+                <form action="http://www.example.com/bookings/" method="post">
+                  <input id="passengers" type="number" min="1" name="passengers" placeholder="1" />
+                  <label for="passengers"><h5>Passengers</h5></label>
+                </form>
+              </td>
+
+              <td>
+                <form class="flight" action="http://www.example.com/profile.php">
+                  <input type="radio" name="flight" value="Return" checked="checked" />
+                  <h4>Return</h4>
+                  <input type="radio" name="flight" value="One Way" checked="checked" />
+                  <h4>One Way</h4>
+                </form>
+              </td>
+            </tr>
+          </table>
+
+          <form action="http://www.example.com/bookings/" id="search">
+            <input type="submit" name="search" value="Search Flights" />
+          </form>
+        </div>
+
+      </section>
+    </main>
+
+  </body>
+
+</html>

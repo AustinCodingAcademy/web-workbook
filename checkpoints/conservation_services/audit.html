@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        
+        <!--Don't forget to fill these out!-->
+        <title>Free Energy Audit</title>
+        <meta name="description" content="Conservation Services is a local insulation and attic systems business located in Austin." />
+        
+        
+        <!--Links to the main Style Sheet-->
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        
+        <!--Links to a modernizer JavaScript file that fixes a lot of issues with old browsers-->
+        <script src="js/modernizr.js"></script>
+        
+        <!--Makes the site so it won't scale down on small devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+
+    <body>
+        
+        <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+
+        <div class="wrapper">
+            
+            <div class="header">
+                <article class="logo"><a href="index.html"><img src="images/logo.gif" alt="animated gif of Conservation Services logo" /></a></article>
+                
+                <article class="title"><h1>Conservation Services</h1></article>
+                
+                <article class="subtitle">
+                    <p>Mon-Fri 8:00am-5:00pm</p>
+                    <p>512•282•8811</p>
+                </article>
+                
+                <article class="title2">
+                    <p>• Heating  &amp;  Air Conditioning •</p>
+                    <p>Attic Insulation • Air Infiltration • Duct Work • Testing • Solar Screens </p>
+                    </br>
+                    <p class="info">512•282•8811</p>
+                    <p class="info">Mon-Fri 8:00am-5:00pm</p>
+                </article>
+            </div>
+                
+            <div class="search">
+                <form action="/" method="get">
+                    <input class="bar" type="text" name="search" placeholder="Search..." /><input class="button" type="image" src="images/search.jpg" />
+                </form>
+            </div>
+        
+            <div class="navaudit">
+                <ul>
+                    <li class="one"><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li id="selected"><a href="audit.html">FREE ENERGY AUDIT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">REVIEWS</a></li>
+                </ul>
+            </div>
+            
+            <div class="formcontent">
+            
+                <div class="owner">
+                    <h2>Owner</h2>
+                    
+                    <article class="name">
+                        <p>First Name
+                            <form>
+                                <input type="text" name="first name" />
+                            </form>
+                        </p>
+                    
+                        <p>Last Name
+                            <form>
+                                <input type="text" name="last name" />
+                            </form>
+                        </p>                
+                    </article>
+            
+                    <article class="number">
+                        <p>Phone # (home)
+                            <form>
+                                <input type="text" name="home number" />
+                                <input type="text" name="home number" />
+                                <input type="text" name="home number" />
+                            </form>
+                        </p>
+            
+                         <p>Phone # (work)
+                            <form>
+                                <input type="text" name="work number" />
+                                <input type="text" name="work number" />
+                                <input type="text" name="work number" />
+                            </form>
+                        </p>       
+                    </article>
+    
+                    <article class="email">
+                        <p>Email Adress
+                            <form>
+                                <input type="text" name="email" />
+                            </form>
+                        </p>
+                    </article>
+    
+                    <artile class="adress">
+                        <p>Mailing Adress
+                            <form>
+                                <input type="text" name="adress" />
+                            </form>
+                        </p>
+    
+                        <p>City/State
+                            <form>
+                                <input type="text" name="city" />
+                            </form>
+                        </p>
+    
+                        <p>Zip
+                            <form>
+                                <input type="text" name="zip" />
+                            </form>
+                        </p>
+                    </artile>
+                </div>
+    
+                <div class="contractor">
+                    <h2>Contractor</h2>
+                    
+                    <article class="contractorinfo">
+                        <p>Contractor Name
+                            <form>
+                                <input type="text" name="contractor name" />
+                            </form>
+                        </p>
+                    
+                        <p>A/C License #
+                            <form>
+                                <input type="text" name="ac license" />
+                            </form>
+                        </p>
+                    </article>
+    
+                    <article class="contractorphone">
+                        <p>Phone #
+                            <form>
+                                <input type="text" name="home number" />
+                                <input type="text" name="home number" />
+                                <input type="text" name="home number" />
+                            </form>                        
+                        </p>
+                    </article>
+    
+                    <article class="contractoradress">
+                        <p>Contractor Adress
+                            <form>
+                                <input type="text" name="contractor adress" />
+                            </form>
+                        </p>
+    
+                        <p>City/State
+                            <form>
+                                <input type="text" name="contractor city" />
+                            </form>
+                        </p>
+    
+                        <p>Zip
+                            <form>
+                                <input type="text" name="contractor zip" />
+                            </form>
+                        </p>
+                    </article>
+                </div>
+
+                <div class="time">
+                    <form action="/">
+                        <input onclick="toggle_visibility('time');" type="button" name="time" value="When is most convenient for you?" /a>
+                    </form>
+                    <article id="time">
+                        <ul>
+                            <li><a onclick="toggle_visibility('monday');">Monday</a></li>
+                                <article class="dropdown" id="monday">
+                                    <form action="/">
+                                        <ul>
+                                            <li><input type="radio" name="time" value="8:00-9:00" />8:00-9:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="9:00-10:00" />9:00-10:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="10:00-11:00" />10:00-11:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="11:00-12:00" />11:00-12:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="12:00-1:00" />12:00-1:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="1:00-2:00" />1:00-2:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="2:00-3:00" />2:00-3:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="3:00-4:00" />3:00-4:00</li>
+                                        </ul>
+                                    </form>
+                                </article>
+                            
+                            <li><a onclick="toggle_visibility('tuesday');">Tuesday</a></li>
+                                <article class="dropdown" id="tuesday">
+                                    <form action="/">
+                                        <ul>
+                                            <li><input type="radio" name="time" value="8:00-9:00" />8:00-9:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="9:00-10:00" />9:00-10:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="10:00-11:00" />10:00-11:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="11:00-12:00" />11:00-12:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="12:00-1:00" />12:00-1:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="1:00-2:00" />1:00-2:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="2:00-3:00" />2:00-3:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="3:00-4:00" />3:00-4:00</li>
+                                        </ul>
+                                    </form>
+                                </article>
+                            
+                            <li><a onclick="toggle_visibility('wednesday');">Wednesday</a></li>
+                                <article class="dropdown" id="wednesday">
+                                    <form action="/">
+                                        <ul>
+                                            <li><input type="radio" name="time" value="8:00-9:00" />8:00-9:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="9:00-10:00" />9:00-10:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="10:00-11:00" />10:00-11:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="11:00-12:00" />11:00-12:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="12:00-1:00" />12:00-1:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="1:00-2:00" />1:00-2:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="2:00-3:00" />2:00-3:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="3:00-4:00" />3:00-4:00</li>
+                                        </ul>
+                                    </form>
+                                </article>
+                            
+                            <li><a onclick="toggle_visibility('thursday');">Thursday</a></li>
+                                <article class="dropdown" id="thursday">
+                                    <form action="/">
+                                        <ul>
+                                            <li><input type="radio" name="time" value="8:00-9:00" />8:00-9:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="9:00-10:00" />9:00-10:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="10:00-11:00" />10:00-11:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="11:00-12:00" />11:00-12:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="12:00-1:00" />12:00-1:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="1:00-2:00" />1:00-2:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="2:00-3:00" />2:00-3:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="3:00-4:00" />3:00-4:00</li>
+                                        </ul>                                    
+                                    </form>
+                                </article>
+                            
+                            <li><a onclick="toggle_visibility('friday');">Friday</a></li>
+                                <article class="dropdown" id="friday">
+                                    <form action="/">
+                                        <ul>
+                                            <li><input type="radio" name="time" value="8:00-9:00" />8:00-9:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="9:00-10:00" />9:00-10:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="10:00-11:00" />10:00-11:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="11:00-12:00" />11:00-12:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="12:00-1:00" />12:00-1:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="1:00-2:00" />1:00-2:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="2:00-3:00" />2:00-3:00</li>
+                                        
+                                            <li><input type="radio" name="time" value="3:00-4:00" />3:00-4:00</li>
+                                        </ul> 
+                                    </form>
+                                </article>
+                        </ul>
+                    </article>
+                </div>
+    
+                <div class="word">
+                    <form action="/">
+                        <input onclick="toggle_visibility('word');" type="button" name="word" value="How did you hear about us?" />
+                    </form>
+                    <article id="word">
+                        <form action="/">
+                            <input type="radio" name="word" value="television" />T.V.
+                            <input type="radio" name="word" value="radio" />Radio
+                            <input type="radio" name="word" value="computer" />Internet
+                            <input type="radio" name="word" value="word" />Word of mouth
+                            <input type="radio" name="word" value="other" />Other
+                        </form>
+                    </article>
+                </div>
+    
+                <div class="submit">
+                    <form action="/">
+                        <input type="submit" name="submit" value="Schedule Your Free Energy Audit" />
+                    </form>
+                </div>
+
+
+            <div class="nav2">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="audit.html">FREE ENERGY AUDIT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li id="navright"><a href="#">REVIEWS</a></li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <script type="text/javascript">
+        <!--
+            function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display == 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+            }
+        //-->
+        </script> 
+        
+    </body>
+</html>
+
+
+
+
+

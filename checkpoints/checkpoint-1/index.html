@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta name="keywords" content="Deyton Koch">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Checkpoint 1</title>
+
+    <!-- css links -->
+    <link rel="stylesheet" type="text/css" href="css/css-reset.css"></link>
+    <link rel="stylesheet" type="text/css" href="css/style.css"></link>
+
+    <!-- google font links -->
+    <link href="https://fonts.googleapis.com/css?family=Molle:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ovo" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <img src="images/tlc2.png" alt="tlc" />
+        <a href="index.html"><h2>fosters</h2></a>
+      </div>
+
+      <!-- log in and sign up -->
+      <div class="community">
+        <div class="login">
+          <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+          <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php">
+              <div class="container">
+                <label for="container"><b>Username</b></label>
+                <input id="container" type="text" placeholder="Enter Username" name="uname" required>
+                <label for="password"><b>Password</b></label>
+                <input id="password" type="password" placeholder="Enter Password" name="psw" required>
+                <button type="submit">Login</button>
+                <input type="checkbox" checked="checked"> Remember me
+              </div>
+              <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+              </div>
+            </form>
+            <script>
+              var modal = document.getElementById('id01');
+              window.onclick = function(event) {
+                if (event.target == modal) {
+                  modal.style.display = "none";
+                }
+              }
+            </script>
+          </div>
+        </div>
+
+        <div class="signup">
+          <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign up</button>
+          <div id="id02" class="modal">
+            <form class="modal-content animate" action="/action_page.php" style="border:1px solid #ccc">
+              <div class="container">
+                <label for="container"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <label for="password"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                <input type="checkbox" checked="checked"><p>Remember me</p>
+                <p>By creating an account you agree to our <a href="#">Terms &amp; Privacy</a>.</p>
+                <div class="clearfix">
+                  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                  <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <script>
+            var modal = document.getElementById('id02');
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+          </script>
+        </div>
+      </div>
+
+      <div>
+        <nav>
+          <ul>
+            <li class="regular"><a href="about.html">about us</a></li>
+            <li class="regular"><a href="https://www.tlcfosters.com/events-2/">events</a></li>
+            <li class="regular"><a href="https://www.tlcfosters.com/available-pets/">available pets</a></li>
+            <div class="dropdown">
+              <li class="regular"><a href="help.html">other ways to help</a></li>
+              <div class="dropdown-content1">
+                <ul>
+                  <li><a href="https://www.tlcfosters.com/ways-to-help/become-a-foster-angel/">become a foster angel</a></li>
+                  <li><a href="https://www.paypal.com/donate/?token=XILJ5uhUzCWVV03nKW8HrCWZwOoixz1eqJ_K2HiPC_9011Z7nsJjcXlEo9NRVNIBf-kHjW&amp;country.x=US&amp;locale.x=US">donate</a></li>
+                  <li><a href="volunteer.html">volunteer</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown">
+              <li class="regular"><a href="foster.html">apply today</a></li>
+              <div class="dropdown-content2">
+                <ul>
+                  <li><a href="http://petstablished.com/adoption_form/2795/generic">cat adoption application</a></li>
+                  <li><a href="http://petstablished.com/adoption_form/2797/generic">dog addoption application</a></li>
+                  <li><a href="http://petstablished.com/adoption_form/2798/generic">cat fostering application</a></li>
+                  <li><a href="https://www.petstablished.com/adoption_form/2796/generic">dog fostering application</a></li>
+                  <li><a href="https://www.petstablished.com/adoption_form/8896/generic">overnight contract</a></li>
+                  <li><a href="https://www.petstablished.com/petlover/adoption_contract/2816">adoption contract</a></li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </nav>
+
+        <div class="contact">
+          <a href="tel:309-453-9080"><img src="images/phone.png" alt="phone icon" /><h3>(309) 453-9080</h3></a>
+          <a href="mailto:TLCCrazycatlady@gmail.com"><img src="images/email.png" alt="email icon" /><h3>email us</h3></a>
+          <a target="_blank" href="https://www.facebook.com/CrazyCatLadyLLC"><img src="images/facebook.png" alt="facebook icon"/><h3>like us</h3></a>
+          <a target="_blank" href="https://twitter.com/TLCfosters"><img src="images/twitter.png" alt="twitter icon"/><h3>follow us</h3></a>
+        </div>
+      </div>
+
+      <div>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- left side -->
+      <section class="content">
+        <div class="intro">
+          <h4>Hey!</h4>
+          <p>Annoy kitten brother with poking walk on car leaving trail of paw prints on hood and windshield ears back wide eyed. Stare at wall turn and meow stare at wall some more meow again continue staring pooping rainbow while flying in a toasted bread
+            costume in space. Rub face on owner mewl for food at 4am purr as loud as possible, be the most annoying cat that you can, and, knock everything off the table need to chase tail. Human give me attention meow. Peer out window, chatter at birds,
+            lure them to mouth i am the best and then cats take over the world yet sleep on dog bed, force dog to sleep on floor. Thinking longingly about tuna brine ignore the squirrels, you'll never catch them anyway or eat all the power cords, for cat
+            dog hate mouse eat string barf pillow no baths hate everything meowwww. Peer out window, chatter at birds, lure them to mouth sit on human. Swat turds around the house asdflkjaertvlkjasntvkjn (sits on keyboard) or eats owners hair then claws
+            head, hide when guests come over, so chirp at birds so eat grass, throw it back up. Spread kitty litter all over house hack up furballs bathe private parts with tongue then lick owner's face but play time, so always hungry. Ask for petting jump
+            five feet high and sideways when a shadow moves and i like big cats and i can not lie hate dog, so find something else more interesting, but chase ball of string or has closed eyes but still sees you. Then cats take over the world massacre a
+            bird in the living room and then look like the cutest and most innocent animal on the planet chew on cable for claw drapes. Kitty loves pigs. Ears back wide eyed hack up furballs, proudly present butt to human, so purr for no reason asdflkjaertvlkjasntvkjn
+            (sits on keyboard) so cats secretly make all the worlds muffins but walk on car leaving trail of paw prints on hood and windshield. Scratch the box ask to go outside and ask to come inside and ask to go outside and ask to come inside loves revenge
+            for purr when being pet yet my left donut is missing, as is my right but sleep in the bathroom sink and stare out the window. Meow for food, then when human fills food dish, take a few bites of food and continue meowing kitty poochy for slap
+            kitten brother with paw white cat sleeps on a black shirt.
+          </p>
+        </div>
+
+        <div class="buttons">
+          <a href="https://www.paypal.com/donate/?token=RoBS90CtDmrxSmbcWw8u2xUEzkVIHPNN_0Rtm4H1Iplowa3pwo8KXLafI8VDrbxVhKLpvG&amp;country.x=US&amp;locale.x=US"><h5>Donate!</h5></a>
+          <a href="foster.html"><h5>Volunteer!</h5></a>
+        </div>
+      </section>
+
+      <!-- right side -->
+      <section class="side">
+        <div class="events">
+          <a href="https://www.tlcfosters.com/events-2/">
+            <h4>Upcoming Events</h4>
+            <iframe src="https://calendar.google.com/calendar/embed?src=bpk7gb1k664f8vhj45s0qnsgjg%40group.calendar.google.com&amp;ctz=America/Chicago" width="800" height="600" scrolling="no"></iframe>
+          </a>
+        </div>
+
+        <div class="blog">
+          <a href="">
+            <h4>Check out our blog</h4>
+          </a>
+        </div>
+
+        <div class="new">
+          <a href="https://www.tlcfosters.com/available-pets/">
+            <h4>Our newest friends</h4>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+    </footer>
+  </body>
+
+</html>

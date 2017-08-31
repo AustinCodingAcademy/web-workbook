@@ -1,0 +1,339 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Meyer Reset CSS */
+
+img {
+	max-width: 100%; /*makes images scale with flexible grids*/
+	display: block; /*removes tiny space added in some browsers below images */
+}
+
+body {
+    position: relative;
+    background-image: url(images/asphalt.jpg);
+    opacity: .75;
+    background-size: 100%
+}
+
+.wrapper {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-image: url(images/fence.png);
+    background-size: 100%;
+    background-repeat: repeat-y;
+    border: 5px solid #666666;
+    border-width: thick;
+    border-bottom-color: #000000;
+    border-top: none;
+    margin-bottom: 2em;
+}
+
+header {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 0;
+}
+
+.navigation {
+    position: fixed;
+    width: 90%;
+    max-width: 1000px;
+    text-align: right;
+    background-color: rgba(0,0,0,.8);
+    padding-bottom: .5em;
+    z-index: 12;
+}
+
+.navigation a {
+    font-family: Courier, "Courier New", monospace;
+    font-size: 200%;
+    color: #ffffff;
+    opacity: 1;
+    text-decoration: underline;
+    
+}
+
+.navigation a:hover {
+    color: #990000;
+    text-decoration: underline;
+}
+
+.navigation li {
+    font-family: "Courier New", monospace;
+    opacity: 1;
+    font-size: 75%;
+}
+
+#menu {
+    position: relative;
+    display: none;
+}
+
+#register {
+    position: relative;
+    display: none;
+}
+
+#about {
+    position: relative;
+    display: none;
+}
+
+#shop {
+    position: relative;
+    display: none;
+}
+
+#contact {
+    position: relative;
+    display: none;
+}
+
+.social {
+    position: absolute;
+    width: 40%;
+    right: 0;
+    bottom:2em;
+    z-index: 10;
+    
+}
+
+.social a {
+    width: 10%;
+}
+
+.social li {
+    float: right;
+    width: 20%;
+    margin-left: 13.33333333333%;
+    max-width: 80px;
+}
+
+.logo {
+    position: relative;
+    width: 62.5%;
+    max-width: 250px;
+    margin: 1em auto; 
+    border: 5px solid #666666;
+    border-width: thin;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    z-index: 10;
+}
+
+.register {
+    position: relative;
+    width: 62.5%;
+    max-width: 250px;
+    margin: 1em auto;
+    z-index: 10;
+}
+
+.search {
+    position: relative;
+    width: 62.5%;
+    max-width: 250px;
+    margin: 1em auto;
+    display: none;
+    z-index: 10;
+}
+
+.introduction {
+    position: relative;
+    width: 75%;
+    max-width: 700px;
+    margin: 1em auto;
+    background-color: #ffffff;
+    font-family: Courier, monospace;
+    font-size: 1em;
+    font-style: oblique;
+    color: #990000;
+    padding: .5em 2%;
+    text-align: center;
+    border: medium ridge #666666;
+    -moz-box-shadow: inset 0 0 10px #777777;
+    -webkit-box-shadow: inset 0 0 10px #777777;
+    box-shadow: inset 0 0 10px #777777;
+}
+
+.link {
+    position: relative;
+    width: 62.5%;
+    max-width: 250px;
+    margin: 1em auto;
+    border: 5px solid #666666;
+    border-width: thin;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.register input {
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+}
+
+.hands {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 0;
+}
+
+.nav {
+    position: absolute;
+    width: 100%;
+    max-width: 1000px;
+    font-family: Courier, "Courier New", monospace;
+    color: #ffffff;
+    background-color: #000000;
+    text-decoration: underline;
+    z-index: 10;
+    bottom: 0;
+}
+
+.nav li {
+    float: left;
+    width: 17.6%;
+    max-width: 176px;
+    margin: 0 1%;
+    text-align: center;
+}
+
+.nav li:last-child {
+    margin-right: 0%;
+}
+.nav a {
+    text-align: center;
+    font-family: Courier, "Courier New", monospace;
+    font-size: .75em;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.nav a:hover {
+    color: #990000;
+    text-decoration: underline;
+}
+
+.introduction h2 {
+    font-size: 125%;
+    text-decoration: underline;
+}
+
+h1 {
+    position: relative;
+    color: #ffffff;
+    background-color: #000000;
+    width: 100%;
+    max-width: 1000px;
+    font-family: "New Courier", monospace;
+    font-size: 200%;
+    text-align: center;
+    padding: .75em 0;
+    opacity: .75;
+}
+
+.map{
+    position: relative;
+    padding-bottom: 60%;
+    height: 0;
+    overflow: hidden;
+}
+
+.map iframe {
+    width: 100%;
+}
+
+
+/* start desktop media query */
+@media screen and (min-width: 1000px) {
+    
+    .navigation {
+        opacity: .5;
+    }
+    
+    .navigation a {
+        font-size: 300%;
+    }
+    
+    .introduction{
+        font-size: 1.5em;
+    }
+    
+    .content1{
+        position: relative;
+        float: left;
+        width: 35%;
+    }
+    
+    .search{
+        display: inherit;
+    }
+    
+    .content2{
+        position: relative;
+        float: left;
+        width: 65%;
+    }
+    
+    .link {
+        position: relative;
+        float: left;
+        width: 45%;
+        margin-left: 7.5%
+    }
+
+
+
+
