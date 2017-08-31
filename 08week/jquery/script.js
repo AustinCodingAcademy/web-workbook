@@ -4,10 +4,10 @@ $(document).ready(function() {
   alert("Are you ready to count by ones, tens, and hundreds?");
 
   $('#counter-1').click(function() {
-   var num = Number($(this).text());
-   num++;
-   $(this).text(num);
- })
+    var num = Number($(this).text());
+    num++;
+    $(this).text(num);
+  })
   $('#counter-10').click(function() {
     var num2 = Number($(this).text());
     num2 += 10;
