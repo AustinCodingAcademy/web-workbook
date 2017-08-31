@@ -1,7 +1,7 @@
 // when the document is done loading, run the script inside
 $(document).ready(function() {
 
-  // alert('Are you ready to count by ones, tens, and hundred?')
+  alert('Are you ready to count by ones, tens, and hundred?')
 
   $('#counter-1').click(function() {
     var num1 = Number($(this).text());
@@ -23,12 +23,11 @@ $(document).ready(function() {
 
   $('#counter-all').click(function(){
     $("#counter-100, #counter-10, #counter-1").click();
-
-    function myFunction() {
-      document.getElementById("#counter-1").style.clear = "initial";
-    }
-    $('div').sortable({
-      connectWith:'div'
-    })
   })
+
+  $( function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  });
+
 });
