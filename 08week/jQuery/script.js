@@ -1,7 +1,10 @@
 // when the document is done loading, run the script inside
 $(document).ready(function() {
 
-  alert('Are you ready to count by ones, tens, and hundred?')
+  // alert('Are you ready to count by ones, tens, and hundred?')
+  $( function() {
+    $( "#dialog" ).dialog();
+  } );
 
   $('#counter-1').click(function() {
     var num1 = Number($(this).text());
