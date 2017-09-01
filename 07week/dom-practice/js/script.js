@@ -17,8 +17,9 @@ window.onload = function() {
   var list = document.getElementById('my-list');
   list.appendChild(newElement);
 
-  var paragraph = document.getElementById("P4");
+  var paragraph = document.getElementById("P4")
   paragraph.parentNode.removeChild(paragraph);
+
 
 }
 
