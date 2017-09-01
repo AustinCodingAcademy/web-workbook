@@ -1,0 +1,111 @@
+.box {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  margin: 20px;
+}
+body {
+  width: 50px;
+  margin: auto;
+}
+
+/* colored boxes and their psuedo selectors */
+
+.box:nth-child(1) {
+  background-color: blue;
+  transition: 3s;
+  animation: bounceIn 4s;
+}
+.box:nth-child(1):hover {
+  transform:  translateX(200px) scale(2) rotate(90deg);
+}
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.box:nth-child(2) {
+  background-color: red;
+  transition: transform 2s;
+}
+.box:nth-child(2):hover {
+  transform: translateX(-200px) scale(.5) rotate(-90deg);
+}
+.box:nth-child(3) {
+  background-color: green;
+  transition: transform 2s;
+}
+.box:nth-child(3):hover {
+  transform: translateX(200px)scale(2) rotate(90deg);
+}
+.box:nth-child(4) {
+  background-color: purple;
+  transition: transform 2s;
+}
+.box:nth-child(4):hover {
+  transform: translateX(-200px) scale(.5) rotate(-90deg);
+}
+.box:nth-child(5) {
+  background-color: yellow;
+  transition: transform 2s;
+}
+.box:nth-child(5):hover {
+  transform: translateX(200px) scale(2) rotate(90deg);
+}
+.box:nth-child(6) {
+  background-color: orange;
+  transition: transform 2s;
+}
+.box:nth-child(6):hover {
+  transform: translateX(-200px) scale(.5) rotate(-90deg);
+}
+.box:nth-child(7) {
+  background-color: grey;
+  transition: transform 2s;
+}
+.box:nth-child(7):hover {
+  transform: translateX(200px) scale(2) rotate(90deg);
+}
+.box:nth-child(8) {
+  background-color: pink;
+  transition: transform 2s;
+}
+.box:nth-child(8):hover {
+  transform: translateX(-200px) scale(.5) rotate(-90deg);
+}
+.box:nth-child(9) {
+  background-color: black;
+  transition: transform 2s;
+}
+.box:nth-child(9):hover {
+  transform: translateX(200px) scale(2) rotate(90deg);
+}
+.box:nth-child(10) {
+  background-color: #ffffff;
+  transition: transform 2s;
+}
+.box:nth-child(10):hover {
+  transform: translateX(-200px) scale(.5) rotate(-90deg);
+}
+.box:nth-child(11) {
+  background-color: brown;
+  transition: transform 2s;
+}
+.box:nth-child(11):hover {
+  transform: translateX(200px) scale(2) rotate(90deg);
+}
+.box:nth-child(12) {
+  background-color: #8FBC8F;
+  transition: transform 2s;
+}
+.box:nth-child(12):hover {
+  transform: translateX(-200px) scale(.5) rotate(-90deg);
+}
