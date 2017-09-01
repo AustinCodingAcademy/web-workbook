@@ -1,5 +1,5 @@
 'use strict';
 
-$(document).on('ready', function() {
+$(document).ready(function() {
   // Put app logic in here
 });
