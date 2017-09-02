@@ -7,7 +7,7 @@ window.onload = function() {
   document.head.appendChild(newelement);
 
   //removing paragraph four
-  var $p = document.getElementById('P4');
+  var $p = document.getElementById('p4');
   $p.remove();
 
   //adding fifth list item
