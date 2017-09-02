@@ -3,7 +3,7 @@
 $(document).ready(function() {
   // Put app logic in here
   var turnCount = 0;
-  var checkVictory('x') =
+ var checkVictory = function(){};
 
   $('.row').find('div').on('click',function(){
     if(turnCount % 2 === 0){
