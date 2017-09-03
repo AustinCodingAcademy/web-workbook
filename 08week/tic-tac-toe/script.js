@@ -13,5 +13,12 @@ $(document).ready(function() {
     }
     playerTurn++;
   })
-
 });
+
+//   if($('[data-cell="0"]').text() === "X" && $('[data-cell="1"]').text() === "X" && $('[data-cell="2"]').text() === "X") ||
+//
+// } else {
+//
+// }($('[data-cell="3"]').text() === "X" && $('[data-cell="4"]').text() === "X" && $('[data-cell="5"]').text() === "X") ||
+//
+// });
