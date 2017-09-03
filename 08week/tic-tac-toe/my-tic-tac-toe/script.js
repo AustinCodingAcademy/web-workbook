@@ -29,42 +29,42 @@ $(document).ready(function() {
     box3.hasClass('o') && box5.hasClass('o') && box7.hasClass('o')
 
   ){
-    alert('Winner: O')
-    $('#board li').removeClass('disable');
-    $('#board li').removeClass('o');
-    $('#board li').removeClass('x');
+      alert('Winner: O')
+      $('#board li').removeClass('disable');
+      $('#board li').removeClass('o');
+      $('#board li').removeClass('x');
 
-  } else if (box1.hasClass('x') && box2.hasClass('x') && box3.hasClass('x')||
-  box4.hasClass('x') && box5.hasClass('x') && box6.hasClass('x')||
-  box7.hasClass('x') && box8.hasClass('x') && box9.hasClass('x')||
-  box1.hasClass('x') && box4.hasClass('x') && box7.hasClass('x')||
-  box2.hasClass('x') && box5.hasClass('x') && box8.hasClass('x')||
-  box3.hasClass('x') && box6.hasClass('x') && box9.hasClass('x')||
-  box1.hasClass('x') && box5.hasClass('x') && box9.hasClass('x')||
-  box3.hasClass('x') && box5.hasClass('x') && box7.hasClass('x')
+    } else if (box1.hasClass('x') && box2.hasClass('x') && box3.hasClass('x')||
+    box4.hasClass('x') && box5.hasClass('x') && box6.hasClass('x')||
+    box7.hasClass('x') && box8.hasClass('x') && box9.hasClass('x')||
+    box1.hasClass('x') && box4.hasClass('x') && box7.hasClass('x')||
+    box2.hasClass('x') && box5.hasClass('x') && box8.hasClass('x')||
+    box3.hasClass('x') && box6.hasClass('x') && box9.hasClass('x')||
+    box1.hasClass('x') && box5.hasClass('x') && box9.hasClass('x')||
+    box3.hasClass('x') && box5.hasClass('x') && box7.hasClass('x')
 
 ){
-  alert('Winner: X')
-  $('#board li').removeClass('disable');
-  $('#board li').removeClass('o');
-  $('#board li').removeClass('x');
+      alert('Winner: X')
+      $('#board li').removeClass('disable');
+      $('#board li').removeClass('o');
+      $('#board li').removeClass('x');
 
   //If game takes 9 turns call it a tie
-} else if (turns == 9) {
-  alert('Tie Game');
-  $('#board li').removeClass('disable');
-  $('#board li').removeClass('o');
-  $('#board li').removeClass('x');
+    } else if (turns == 9) {
+      alert('Tie Game');
+      $('#board li').removeClass('disable');
+      $('#board li').removeClass('o');
+      $('#board li').removeClass('x');
 
   //Add .addClass(disable) because turn has been taken
-  turns = 0;
-} else if ($(this).hasClass('disable')) {
-  alert('This spot is occupied.');
-} else if (turns%2 === 0) {
-  turns++;
-  $(this).text(o);
-  $(this).addClass('disable o');
-  if(box1.hasClass('o') && box2.hasClass('o') && box3.hasClass('o')||
+      turns = 0;
+    } else if ($(this).hasClass('disable')) {
+      alert('This spot is occupied.');
+    } else if (turns%2 === 0) {
+      turns++;
+      $(this).text(o);
+      $(this).addClass('disable o');
+      if(box1.hasClass('o') && box2.hasClass('o') && box3.hasClass('o')||
   box4.hasClass('o') && box5.hasClass('o') && box6.hasClass('o')||
   box7.hasClass('o') && box8.hasClass('o') && box9.hasClass('o')||
   box1.hasClass('o') && box4.hasClass('o') && box7.hasClass('o')||
@@ -74,15 +74,15 @@ $(document).ready(function() {
   box3.hasClass('o') && box5.hasClass('o') && box7.hasClass('o')
 
 ){
-    // alert ('Winner O');
-    alert('Winner:O');
-    turns = 0;
-  }
-} else {
-  turns++;
-  $(this).text(x);
-  $(this).addClass('disable x');
-  if(box1.hasClass('x') && box2.hasClass('x') && box3.hasClass('x')||
+  // alert ('Winner O');
+        alert('Winner:O');
+        turns = 0;
+      }
+    } else {
+      turns++;
+      $(this).text(x);
+      $(this).addClass('disable x');
+      if(box1.hasClass('x') && box2.hasClass('x') && box3.hasClass('x')||
   box4.hasClass('x') && box5.hasClass('x') && box6.hasClass('x')||
   box7.hasClass('x') && box8.hasClass('x') && box9.hasClass('x')||
   box1.hasClass('x') && box4.hasClass('x') && box7.hasClass('x')||
@@ -92,11 +92,11 @@ $(document).ready(function() {
   box3.hasClass('x') && box5.hasClass('x') && box7.hasClass('x')
 
 ){
-  alert('Winner:X');
-  turns = 0;
-}
-}
-});
+        alert('Winner:X');
+        turns = 0;
+      }
+    }
+  });
 //Reset Game
   $('#reset').click(function(){
     $('#board li').text('open');
@@ -106,5 +106,5 @@ $(document).ready(function() {
     turns = 0;
 
 
-});
+  });
 });
