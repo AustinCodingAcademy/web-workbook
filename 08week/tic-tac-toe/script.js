@@ -143,7 +143,7 @@ $(document).ready(function() {
     turnCount ++;
     console.log(turnCount);
   }
-})
+});
 
   $('body').find('#clear').on('click',function(){
     $('.row').find('div').text("");
