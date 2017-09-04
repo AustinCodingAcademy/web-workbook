@@ -1,31 +1,52 @@
 'use strict';
 
 $(document).ready (function() {
-// Put app logic in here
 
-let playerTurn = 0;
-  $('[data-cell]').on('click', function() {
-    if (playerTurn % 2 === 0) {
-      $(this).text('X');
-// checkVictory('X');
+let playerTurn = 'X';
+$('[data-cell]').on('click', function() {
+    $(this).text(playerTurn);
+    checkForWinner();
+    if (playerTurn === 'X') {
+      playerTurn = 'O';
   } else {
-    $(this).text('O');
-// checkVictory('O');
+      playerTurn = 'X';
   }
-  playerTurn++;
-})
-
-function checkVictory() {
-  if {
-    ('[data-cell='0']').text() ==='x' &&
-    ('[data-cell='1']').text() ==='x' &&
-    ('[data-cell='2']').text() ==='x' &&
-  }
-}
-
-
-// if(($(['data-cell='o']').text === playerTurn %% $(['data-cell='1']').text === playerTurn %% $(['data-cell='3']').text === playerTurn) ||
-
-
-
 });
+
+function checkForWinner() {
+      if(
+        ($('[data-cell="0"]').text() === playerTurn &&
+        $('[data-cell="3"]').text() === playerTurn &&
+        $('[data-cell="6"]').text() === playerTurn) ||
+        ($('[data-cell="1"]').text() === playerTurn &&
+        $('[data-cell="4"]').text() === playerTurn &&
+        $('[data-cell="7"]').text() === playerTurn) ||
+        ($('[data-cell="2"]').text() === playerTurn &&
+        $('[data-cell="5"]').text() === playerTurn &&
+        $('[data-cell="8"]').text() === playerTurn) ||
+        ($('[data-cell="0"]').text() === playerTurn &&
+        $('[data-cell="1"]').text() === playerTurn &&
+        $('[data-cell="2"]').text() === playerTurn) ||
+        ($('[data-cell="3"]').text() === playerTurn &&
+        $('[data-cell="4"]').text() === playerTurn &&
+        $('[data-cell="5"]').text() === playerTurn) ||
+        ($('[data-cell="6"]').text() === playerTurn &&
+        $('[data-cell="7"]').text() === playerTurn &&
+        $('[data-cell="8"]').text() === playerTurn) ||
+        ($('[data-cell="0"]').text() === playerTurn &&
+        $('[data-cell="4"]').text() === playerTurn &&
+        $('[data-cell="8"]').text() === playerTurn) ||
+        ($('[data-cell="2"]').text() === playerTurn &&
+        $('[data-cell="4"]').text() === playerTurn &&
+        $('[data-cell="6"]').text() === playerTurn)
+      ) {
+    $('#announce-winner').text(`Player ${playerTurn} Wins`)
+      }
+    }
+
+    $('#clear').click(function() {
+      $('[data-cell], #announce-winner').text('');
+      playerTurn = 'X';
+    });
+
+  });
