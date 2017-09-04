@@ -50,7 +50,7 @@ $(document).ready(function() {
       $('#boardgame li').removeClass('x');
 
   //If game takes 9 turns call it a tie
-    } else if (turns == 9) {
+    }   else if (turns === 9) {
       alert('Tie Game');
       $('#boardgame li').removeClass('disable');
       $('#boardgame li').removeClass('o');
@@ -60,7 +60,7 @@ $(document).ready(function() {
   //Add .addClass(disable) because turn has been taken
 
     } else if ($(this).hasClass('disable')) {
-      alert('This spot is occupied.');
+      alert('This spot is occupied, try another.');
     } else if (turns%2 === 0) {
       turns++;
       $(this).text(o);
@@ -75,7 +75,6 @@ $(document).ready(function() {
   box3.hasClass('o') && box5.hasClass('o') && box7.hasClass('o')
 
 ){
-  // alert ('Winner O');
         alert('Winner:O');
         turns = 0;
       }
@@ -105,7 +104,6 @@ $(document).ready(function() {
     $('#boardgame li').removeClass('o');
     $('#boardgame li').removeClass('x');
     turns = 0;
-
 
   });
 });
