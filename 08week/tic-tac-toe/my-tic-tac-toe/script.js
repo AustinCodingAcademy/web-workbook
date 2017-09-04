@@ -18,7 +18,7 @@ $(document).ready(function() {
   var box8 = $('#box8');
   var box9 = $('#box9');
 
-  $('#board li').click(function() {
+  $('#boardgame li').click(function() {
     if(box1.hasClass('o') && box2.hasClass('o') && box3.hasClass('o')||
     box4.hasClass('o') && box5.hasClass('o') && box6.hasClass('o')||
     box7.hasClass('o') && box8.hasClass('o') && box9.hasClass('o')||
@@ -30,9 +30,9 @@ $(document).ready(function() {
 
   ){
       alert('Winner: O')
-      $('#board li').removeClass('disable');
-      $('#board li').removeClass('o');
-      $('#board li').removeClass('x');
+      $('#boardgame li').removeClass('disable');
+      $('#boardgame li').removeClass('o');
+      $('#boardgame li').removeClass('x');
 
     } else if (box1.hasClass('x') && box2.hasClass('x') && box3.hasClass('x')||
     box4.hasClass('x') && box5.hasClass('x') && box6.hasClass('x')||
@@ -45,19 +45,20 @@ $(document).ready(function() {
 
 ){
       alert('Winner: X')
-      $('#board li').removeClass('disable');
-      $('#board li').removeClass('o');
-      $('#board li').removeClass('x');
+      $('#boardgame li').removeClass('disable');
+      $('#boardgame li').removeClass('o');
+      $('#boardgame li').removeClass('x');
 
   //If game takes 9 turns call it a tie
     } else if (turns == 9) {
       alert('Tie Game');
-      $('#board li').removeClass('disable');
-      $('#board li').removeClass('o');
-      $('#board li').removeClass('x');
+      $('#boardgame li').removeClass('disable');
+      $('#boardgame li').removeClass('o');
+      $('#boardgame li').removeClass('x');
+      turns = 0;
 
   //Add .addClass(disable) because turn has been taken
-      turns = 0;
+
     } else if ($(this).hasClass('disable')) {
       alert('This spot is occupied.');
     } else if (turns%2 === 0) {
@@ -99,10 +100,10 @@ $(document).ready(function() {
   });
 //Reset Game
   $('#reset').click(function(){
-    $('#board li').text('open');
-    $('#board li').removeClass('disable');
-    $('#board li').removeClass('o');
-    $('#board li').removeClass('x');
+    $('#boardgame li').text('');
+    $('#boardgame li').removeClass('disable');
+    $('#boardgame li').removeClass('o');
+    $('#boardgame li').removeClass('x');
     turns = 0;
 
 
