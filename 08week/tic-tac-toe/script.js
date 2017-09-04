@@ -14,7 +14,10 @@ $(document).ready(function() {
       checkPlayerWin(playerTwo);
 
     }
+
     turn++;
+
+
   });
   //check winner
   // if (checkPlayerWin()) {
@@ -33,8 +36,9 @@ $(document).ready(function() {
       ($('[data-cell="1"]').text() === playerOne) && ($('[data-cell="4"]').text() === playerOne) && ($('[data-cell="7"]').text() === playerOne) ||
       ($('[data-cell="2"]').text() === playerOne) && ($('[data-cell="5"]').text() === playerOne) && ($('[data-cell="8"]').text() === playerOne)) {
 
-      alert('Player #1 has just won the game!!!!!');
-      console.log(player + "won the game!!!!");
+      alert("Player \ " + player + "\ Wins!");
+      console.log("Player \ " + player + "\ Wins!");
+      $('#announce-winner').text("Player \ " + player + "\ Wins!");
 
 
       // (($('[data-cell="0"]').text() === "playerTwo" && $('[data-cell="1"]').text() === "playerTwo" && $('[data-cell="2"]').text() === "playerTwo") {
@@ -53,8 +57,9 @@ $(document).ready(function() {
 
 
 
-      alert('Player #2 has just won the game!!!!!');
-      console.log(playerTwo + "has won the game!!!!");
+      alert("Player \ " + player + "\ Wins!");
+      console.log("Player \ " + player + "\ Wins!");
+      $('#announce-winner').text("Player \ " + player + "\ Wins!");
 
       // console.log('playerTwo wins');
 
