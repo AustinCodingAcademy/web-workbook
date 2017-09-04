@@ -18,7 +18,7 @@ $(document).ready(function() {
   var box8 = $('#box8');
   var box9 = $('#box9');
 
-  $('#board').click(function() {
+  $('#board li').click(function() {
     if(box1.hasClass('o') && box2.hasClass('o') && box3.hasClass('o')||
     box4.hasClass('o') && box5.hasClass('o') && box6.hasClass('o')||
     box7.hasClass('o') && box8.hasClass('o') && box9.hasClass('o')||
