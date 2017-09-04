@@ -13,12 +13,12 @@ $(document).ready(function() {
           ($('#1') === player && $('#4') === player && $('#7') === player) ||
           ($('#2') === player && $('#5') === player && $('#8') === player) ||
           ($('#0') === player && $('#4') === player && $('#8') === player) ||
-          ($('#2') === player && $('#4') === player && $('#6') === player));
-        alert('Winner, Winner, Chicken Dinner!');
-        else {
+          ($('#2') === player && $('#4') === player && $('#6') === player)) {
+        alert('Winner, Winner, Chicken Dinner!')
+      } else if ('[id]' === ''){
           alert('Draw.  Everyone\'s a winner and/or loser!');
         }
-
+      };
         $('[id]').on('click', function() {
           if ($(this).text() === '') {
             if (playerTurn % 2 === 0) {
@@ -29,11 +29,7 @@ $(document).ready(function() {
               winCondition('O');
             }
             playerTurn++;
-
           }
         });
-        $(winCondition() {
-          location.reload();
-        });
-      };
+        $('#clear').reset();
       });
