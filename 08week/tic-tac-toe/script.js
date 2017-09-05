@@ -1,22 +1,7 @@
-// 'use strict';
-//
-// $(document).ready(function() {
-  // Put app logic in here
-
 'use strict';
 
 $(document).ready(function() {
   // Put app logic in here
-  let playerTurn = 0;
-  $('.box').click(function() {
-    if (playerTurn %2 === 0){
-      $(this).text('X');
-    } else {
-      $(this).text('O');
-    }
-    playerTurn++;
-  })
-
 
   var x = "x";
   var o = "o";
@@ -33,7 +18,9 @@ $(document).ready(function() {
   var box8 = $('#box8');
   var box9 = $('#box9');
 
+
   $('.box').click(function() {
+    //List and checks 8 possible ways for 'o' to win.
     if(box1.hasClass('o') && box2.hasClass('o') && box3.hasClass('o')||
     box4.hasClass('o') && box5.hasClass('o') && box6.hasClass('o')||
     box7.hasClass('o') && box8.hasClass('o') && box9.hasClass('o')||
@@ -45,12 +32,13 @@ $(document).ready(function() {
 
   ){
 
-    //This alert stops the ability to continue clicking after winner is declared.
+    //This alert checks to see if above statement is true and stops the ability to continue clicking after winner is declared.
       alert('O is the Winner!')
-      $('#boardgame li').removeClass('disable');
-      $('#boardgame li').removeClass('o');
-      $('#boardgame li').removeClass('x');
-
+      $('.box').removeClass('disable');
+      $('.box').removeClass('o');
+      $('.box').removeClass('x');
+      turns = 0;
+      //else if statement list and checks 8 possible ways for 'x' to win.
     } else if (box1.hasClass('x') && box2.hasClass('x') && box3.hasClass('x')||
     box4.hasClass('x') && box5.hasClass('x') && box6.hasClass('x')||
     box7.hasClass('x') && box8.hasClass('x') && box9.hasClass('x')||
@@ -61,27 +49,29 @@ $(document).ready(function() {
     box3.hasClass('x') && box5.hasClass('x') && box7.hasClass('x')
 
 ){
-    //This alert stops the ability to continue clicking after winner is declared.
+  //This alert checks to see if above statement is true and stops the ability to continue clicking after winner is declared.
       alert('Winner: X')
       $('.box').removeClass('disable');
       $('.box').removeClass('o');
       $('.box').removeClass('x');
-
-  //If game takes 9 turns call it a tie
+      turns = 0;
+  //This statement declares a tie if game takes 9 turns.
     }   else if (turns === 9) {
       alert('Tie Game');
-      $('#boardgame li').removeClass('disable');
-      $('#boardgame li').removeClass('o');
-      $('#boardgame li').removeClass('x');
+      $('.box').removeClass('disable');
+      $('.box').removeClass('o');
+      $('.box').removeClass('x');
       turns = 0;
 
-  //Add .addClass(disable) because turn has been taken
+  //Add .hasClass(disable) because spot has been taken
 
     } else if ($(this).hasClass('disable')) {
       alert('This spot is occupied, try another.');
+  //Checks to see who's turn it is, done by checking if turn is even number or not.
     } else if (turns%2 === 0) {
       turns++;
       $(this).text(o);
+  //Add disable because turn has been taken.
       $(this).addClass('disable o');
       if(box1.hasClass('o') && box2.hasClass('o') && box3.hasClass('o')||
   box4.hasClass('o') && box5.hasClass('o') && box6.hasClass('o')||
@@ -93,7 +83,7 @@ $(document).ready(function() {
   box3.hasClass('o') && box5.hasClass('o') && box7.hasClass('o')
 
 ){
-        alert('O is the Winner!');
+        alert('Player "O" is the Winner!');
         turns = 0;
       }
     } else {
@@ -110,7 +100,7 @@ $(document).ready(function() {
   box3.hasClass('x') && box5.hasClass('x') && box7.hasClass('x')
 
 ){
-        alert('X is the Winner');
+        alert('Player "X" is the Winner');
         turns = 0;
       }
     }
@@ -125,11 +115,3 @@ $(document).ready(function() {
 
   });
 });
-
-//   if($('[data-cell="0"]').text() === "X" && $('[data-cell="1"]').text() === "X" && $('[data-cell="2"]').text() === "X") ||
-//
-// } else {
-//
-// }($('[data-cell="3"]').text() === "X" && $('[data-cell="4"]').text() === "X" && $('[data-cell="5"]').text() === "X") ||
-//
-// });
