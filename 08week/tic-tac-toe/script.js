@@ -3,9 +3,26 @@ $(document).ready(function() {
   var playerOne = 'X';
   var playerTwo = 'O';
   var turn = 1;
-  // var turn2 = 2;
+  var played = false;
+  var sound = document.createElement('audio');
+  sound.setAttribute('src', 'sword.wav');
+  $.get();
+  var p1 = false;
+  var noise = document.createElement('audio');
+  noise.setAttribute('src', 'p1.mp3');
+  $.get();
+  var p2 = false;
+  var jangle = document.createElement('audio');
+  jangle.setAttribute('src', 'p2.mp3');
+  $.get();
 
   $('[data-cell]').click(function() {
+    sound.play();
+    played = true;
+    console.log("Playing");
+  });
+  $('[data-cell]').click(function() {
+
     if (turn % 2 === 1) {
       $(this).text(playerOne);
       checkPlayerWin(playerOne);
@@ -19,6 +36,17 @@ $(document).ready(function() {
 
 
   });
+  $("button").on('click', function(event) {
+    // event.preventDefault();
+    console.log("clear button pushed");
+    $("div .box[data-cell]").fadeOut(1000,function(){
+      $("div .box[data-cell]").empty();
+      $('#announce-winner').empty();
+      $("div .box").fadeIn(1000);
+      // playerTurn = 'X';
+    })
+  })
+
   //check winner
   // if (checkPlayerWin()) {
   //
@@ -37,9 +65,10 @@ $(document).ready(function() {
       ($('[data-cell="1"]').text() === playerOne) && ($('[data-cell="4"]').text() === playerOne) && ($('[data-cell="7"]').text() === playerOne) ||
       ($('[data-cell="2"]').text() === playerOne) && ($('[data-cell="5"]').text() === playerOne) && ($('[data-cell="8"]').text() === playerOne)) {
 
-      alert("Player \ " + player + "\ Wins!");
+      // alert("Player \ " + player + "\ Wins!");
       console.log("Player \ " + player + "\ Wins!");
       $('#announce-winner').text("Player \ " + player + "\ Wins!");
+      noise.play();
 
 
       // (($('[data-cell="0"]').text() === "playerTwo" && $('[data-cell="1"]').text() === "playerTwo" && $('[data-cell="2"]').text() === "playerTwo") {
@@ -58,9 +87,10 @@ $(document).ready(function() {
 
 
 
-      alert("Player \ " + player + "\ Wins!");
+      // alert("Player \ " + player + "\ Wins!");
       console.log("Player \ " + player + "\ Wins!");
       $('#announce-winner').text("Player \ " + player + "\ Wins!");
+      jangle.play();
 
       // console.log('playerTwo wins');
 
