@@ -17,14 +17,7 @@ $(document).ready(function() {
       alert('Winner, Winner, Chicken Dinner!');
     }
   };
-    winCondition (function(player) {
-     if ($('[id]').is(':empty')) {
-      alert('Next Turn');
-    } else {
-      alert('Draw!  Both of you are winners AND losers.');
-    }
-  };
-  $('[id]').on('click', function() {
+  $('[id]').click, (function() {
     if ($(this).text() === '') {
       if (playerTurn % 2 === 0) {
         $(this).text('X');
