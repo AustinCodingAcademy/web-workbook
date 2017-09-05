@@ -15,7 +15,10 @@ $(document).ready(function() {
       ($('#0') === player && $('#4') === player && $('#8') === player) ||
       ($('#2') === player && $('#4') === player && $('#6') === player)) {
       alert('Winner, Winner, Chicken Dinner!');
-    } else if ($('[id]').is(':empty')) {
+    }
+  };
+    winCondition (function(player) {
+     if ($('[id]').is(':empty')) {
       alert('Next Turn');
     } else {
       alert('Draw!  Both of you are winners AND losers.');
@@ -33,7 +36,7 @@ $(document).ready(function() {
       playerTurn++;
     }
   });
-  $('#clear').on('click', function() {
-    $('html:reset');
+  $('#clear').click (function() {
+    $('[data-cell]').text('');
   });
 });
