@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tic Tac Toe</title>
-  <link rel="stylesheet" href="style.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="script.js" charset="utf-8"></script>
+
 </head>
 <body>
-  <div class="row">
-    <div data-cell="0"></div>
-    <div data-cell="1"></div>
-    <div data-cell="2"></div>
-  </div>
-  <div class="row">
-    <div data-cell="3"></div>
-    <div data-cell="4"></div>
-    <div data-cell="5"></div>
-  </div>
-  <div class="row">
-    <div data-cell="6"></div>
-    <div data-cell="7"></div>
-    <div data-cell="8"></div>
-  </div>
-  <div id="announce-winner"></div>
-  <button id="clear">Clear Board</button>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./script.js"></script>
+	<div id="container">
+	    <div class="header">jQuery Tic-Tac-Toe</div>
+
+	    <div id="board">
+	        <table>
+	          <tr id="row1">
+	            <td id=1 class="square"></td>
+	            <td id=2 class="square v"></td>
+	            <td id=3 class="square"></td>
+	          </tr>
+	          <tr id="row2">
+	            <td id=4 class="square h"></td>
+	            <td id=5 class="square v h"></td>
+	            <td id=6 class="square h"></td>
+	          </tr>
+	          <tr id="row3">
+	            <td id=7 class="square"></td>
+	            <td id=8 class="square v"></td>
+	            <td id=9 class="square"></td>
+	          </tr>
+	        </table>
+	      </div>
+
+		<div style="text-align:center;"><button  id="newGame">Clear Board</button></div>
+
+	</div>
+
+
 </body>
 </html>
