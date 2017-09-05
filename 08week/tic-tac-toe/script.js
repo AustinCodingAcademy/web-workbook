@@ -44,7 +44,7 @@ $(document).ready(function() {
     $("div .box[data-cell], #clear,  #announce-winner").fadeOut(1000, function() {
       $("div .box[data-cell]").empty();
       $('#announce-winner').empty();
-      $("div .box, #clear,  #announce-winner" ).fadeIn(1000);
+      $("div .box, #clear,  #announce-winner").fadeIn(1000);
       // playerTurn = 'X';
     })
   })
