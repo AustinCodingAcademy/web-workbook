@@ -13,6 +13,7 @@ $(document).ready(function() {
     }
     turn++;
   });
+
   function checkPlayerWin(player) {
     if (($('[data-cell="0"]').text() === playerOne) && ($('[data-cell="1"]').text() === playerOne) && ($('[data-cell="2"]').text() === playerOne) ||
       ($('[data-cell="3"]').text() === playerOne) && ($('[data-cell="4"]').text() === playerOne) && ($('[data-cell="5"]').text() === playerOne) ||
