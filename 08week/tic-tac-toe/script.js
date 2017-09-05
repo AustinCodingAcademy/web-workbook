@@ -3,14 +3,7 @@ $(document).ready(function() {
   var playerOne = 'X';
   var playerTwo = 'O';
   var turn = 1;
-
   $('[data-cell]').click(function() {
-    // sound.play();
-    // played = true;
-    // console.log("Playing");
-  });
-  $('[data-cell]').click(function() {
-
     if (turn % 2 === 1) {
       $(this).text(playerOne);
       checkPlayerWin(playerOne);
