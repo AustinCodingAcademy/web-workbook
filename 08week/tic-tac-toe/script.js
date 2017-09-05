@@ -5,7 +5,11 @@ $(document).ready(function() {
   var turn = 1;
   var played = false;
   var sound = document.createElement('audio');
-  sound.setAttribute('src', 'sword.wav');
+  sound.setAttribute('src', 'sonic1.mp3');
+  $.get();
+  var played1 = false;
+  var sound1 = document.createElement('audio');
+  sound1.setAttribute('src', 'sonic2.mp3');
   $.get();
   var p1 = false;
   var noise = document.createElement('audio');
@@ -17,32 +21,30 @@ $(document).ready(function() {
   $.get();
 
   $('[data-cell]').click(function() {
-    sound.play();
-    played = true;
-    console.log("Playing");
+    // sound.play();
+    // played = true;
+    // console.log("Playing");
   });
   $('[data-cell]').click(function() {
 
     if (turn % 2 === 1) {
       $(this).text(playerOne);
       checkPlayerWin(playerOne);
+      sound.play();
     } else {
       $(this).text(playerTwo);
       checkPlayerWin(playerTwo);
-
+      sound1.play();
     }
-
     turn++;
-
-
   });
   $("button").on('click', function(event) {
     // event.preventDefault();
     console.log("clear button pushed");
-    $("div .box[data-cell]").fadeOut(1000,function(){
+    $("div .box[data-cell], #clear,  #announce-winner").fadeOut(1000, function() {
       $("div .box[data-cell]").empty();
       $('#announce-winner').empty();
-      $("div .box").fadeIn(1000);
+      $("div .box, #clear,  #announce-winner" ).fadeIn(1000);
       // playerTurn = 'X';
     })
   })
