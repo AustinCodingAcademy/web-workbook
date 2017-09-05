@@ -1,23 +1,23 @@
 'use strict';
 $(document).ready(function() {
-  // alert('Let\'s Play Tic-Tac-Toe!')
+  alert('Let\'s Play Tic-Tac-Toe!')
   var playerTurn = 0;
   var xWin = 'Player One Wins!';
   var yWin = 'Player Two Wins!';
 
   var winCondition = function(player) {
-    if (($('#0') === player && $('#1') === player && $('#2') === player) ||
-      ($('#3') === player && $('#4') === player && $('#5') === player) ||
-      ($('#6') === player && $('#7') === player && $('#8') === player) ||
-      ($('#0') === player && $('#3') === player && $('#6') === player) ||
-      ($('#1') === player && $('#4') === player && $('#7') === player) ||
-      ($('#2') === player && $('#5') === player && $('#8') === player) ||
-      ($('#0') === player && $('#4') === player && $('#8') === player) ||
-      ($('#2') === player && $('#4') === player && $('#6') === player)) {
+    if (($('#0').text() === player && $('#1').text() === player && $('#2').text() === player) ||
+      ($('#3').text() === player && $('#4').text() === player && $('#5').text() === player) ||
+      ($('#6').text() === player && $('#7').text() === player && $('#8').text() === player) ||
+      ($('#0').text() === player && $('#3').text() === player && $('#6').text() === player) ||
+      ($('#1').text() === player && $('#4').text() === player && $('#7').text() === player) ||
+      ($('#2').text() === player && $('#5').text() === player && $('#8').text() === player) ||
+      ($('#0').text() === player && $('#4').text() === player && $('#8').text() === player) ||
+      ($('#2').text() === player && $('#4').text() === player && $('#6').text() === player)) {
       alert('Winner, Winner, Chicken Dinner!');
     }
   };
-  $('[id]').click, (function() {
+  $('[id]').on('click', function() {
     if ($(this).text() === '') {
       if (playerTurn % 2 === 0) {
         $(this).text('X');
