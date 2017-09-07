@@ -9,7 +9,7 @@ $(document).ready(function() {
   var $topBlocks = $('[data-block]:last-child');
   $topBlocks.addClass("movable");
 
-  //All the blocks are draggable, but they will go back to the original position unless condition is met.
+  //All the blocks are draggable, but they will go back to the original position unless condition of only the top block can be movable is met.
   $blocks.draggable({
     revert: true
   });
@@ -17,23 +17,22 @@ $(document).ready(function() {
   $stacks.droppable({
     accept: ".movable",
     drop: function(event, ui) {
-      if(!gameover) {
-        if (dropIt($(this), ui.draggable)) {
-          ui.draggable.draggable('option', 'revert', false);
-          $(this).append(ui.draggable.detach());
+      // if(!gameover) {
+      if (dropIt($(this), ui.draggable)) {
+        ui.draggable.draggable('option', 'revert', false);
+        $(this).append(ui.draggable.detach());
+        // styling allows "data-block" to land block position left on data-stack.
+        $(ui.draggable).appendTo(this).attr('style', 'position: relative');
 
-          $(ui.draggable).appendTo(this).attr('style', 'position: relative');
+        $topBlocks = $('[data-block]:last-child');
+        $('[data-block]').removeClass("movable");
 
-          $topBlocks = $('[data-block]:last-child');
-          $('[data-block]').removeClass("movable");
+        $topBlocks.addClass("movable");
+        $blocks.draggable({
+          revert: true
 
-          $topBlocks.addClass("movable");
-          $blocks.draggable({
-            revert: true
-
-          });
-          checkForWin();
-        }
+        });
+        winChecker();
       } else {
         resetGame();
       }
@@ -49,8 +48,8 @@ $(document).ready(function() {
       return false;
     }
   }
-  //When all blocks are stacked in "<div data-stack="3">" div call a function "checkForWin" to sthe game over.
-  function checkForWin() {
+  //When all blocks are stacked in "<div data-stack="3">" div call a function "winChecker" to sthe game over.
+  function winChecker() {
     if ($('[data-stack="3"]').children().length === 4) {
       $('#announce-game-won').html("You got it!");
       gameover = true;
@@ -58,12 +57,5 @@ $(document).ready(function() {
     }
   }
 
-  function resetGame() {
-    $('[data-stack="1"]').html('<div data-block="100"></div><div data-block="75"></div><div data-block="50"></div><div data-block="25"></div>');
-    $('[data-stack="2"]').empty();
-    $('[data-stack="3"]').empty();
-    $('#announce-game-won').empty();
-    gameover = true;
-  }
 
 });
