@@ -47,12 +47,18 @@ $(document).ready(function() {
         gameOver = false;
         }
       //Defines which blocks can be dropped into a stack.//
-      function dropReady($stacks, $blocks) {
+      function dropReady($stack, $block) {
         var $last_block = $stacks.children().last();
-        if (paresInt($blocks) < paresInt($last-block) || $stacks.children().length === 0) {
+        if (paresInt($block.attr('data-block')) < paresInt($last-block.attr('data-block')) || $stacks.children().length === 0) {
           return true;
         }  else {
           return false}
         }
-      })
+        //When someone wins, the win message is displayed and the game is ended.//
+        function winState() {
+          if ($('[data-stack="3"]').children().length === 4) {
+            $('#announce-game-won').html('Winner, Winner. Chicken Dinner!!');
+            gameOver = true;
+        }
+      }
       });
