@@ -15,16 +15,16 @@ $(document).ready(function() {
       $stacks.droppable({
         accept: '.movable',
         drop: function(event, ui) {
-          if (!gameOver) {
+          if (gameOver) {
             if (dropReady($(this), ui.draggable)) {
               ui.draggable.draggable('option', 'revert', false);
               $(this).append(ui.draggable.detach());
               ui.draggable.css({
                 'top': 0,
-                'left': 0
+                'left': 0,
               });
               //This resets the $blocks onto their initial $stack//
-              // $movableBlocks = $('[data-block]:last-child');
+              $movableBlocks = $('[data-block]:last-child');
               $blocks.removeClass('movable');
               $movableBlocks.addClass('movable');
               $blocks.draggable({
@@ -43,13 +43,13 @@ $(document).ready(function() {
       function newGame() {
         $('[data-stack="1"]').html('<div data-stack="1"><div data-block="100"></div><div data-block="75"></div><div data-block="50"></div><div data-block="25"></div></div>');
         $('[data-stack="2"]').empty();
-        $('[data-stack="3"}').empty();
+        $('[data-stack="3"]').empty();
         gameOver = false;
         }
       //Defines which blocks can be dropped into a stack.//
       function dropReady($stack, $block) {
-        var $last_block = $stacks.children().last();
-        if (paresInt($block.attr('data-block')) < paresInt($last-block.attr('data-block')) || $stacks.children().length === 0) {
+        var $last_block = $stack.children().last();
+        if (parseInt($block.attr('data-block')) < parseInt($last_block.attr('data-block')) || $stacks.children().length === 0) {
           return true;
         }  else {
           return false}
