@@ -4,14 +4,19 @@ $(document).ready(function() {
   // Put app logic here
   $('[data-block]').draggable({
     revert: "invalid"
-});
+  });
 
   $('[data-stack]').droppable({
-    drop:function(event, ui){
-      $(ui.draggable).appendTo(this).attr('style', 'position: relative');
-
-    }
+      drop: function(event, ui){
+  //    var drag = $(ui.draggable).attr('data-block');
+  //      var last = $($(this).children().last()[0]);
+  //      if (parseInt($(drag)) > parseInt($(last))); {
+  //        $(ui.draggable).draggable('option', 'revert', true);
+         $(ui.draggable).appendTo(this).attr('style', 'position: relative');
+  //      }
+      }
   });
+
 
 });
 
@@ -20,4 +25,5 @@ $(document).ready(function() {
   //winstate
   //can't drop outside of the blocks
   //(if event is larger that lastchild)
-  // reset lastchild => var lastchild=$9this.children().last()[0];
+  // reset lastchild => var lastchild=$(this.children().last()[0];
+  //convert data-block to value parseInt()
