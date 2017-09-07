@@ -7,14 +7,14 @@ $(document).ready(function() {
   });
 
   $('[data-stack]').droppable({
-      drop: function(event, ui){
+    drop: function(event, ui){
   //    var drag = $(ui.draggable).attr('data-block');
   //      var last = $($(this).children().last()[0]);
   //      if (parseInt($(drag)) > parseInt($(last))); {
   //        $(ui.draggable).draggable('option', 'revert', true);
-         $(ui.draggable).appendTo(this).attr('style', 'position: relative');
+      $(ui.draggable).appendTo(this).attr('style', 'position: relative');
   //      }
-      }
+    }
   });
 
 
