@@ -12,72 +12,41 @@
 //   //      var last = $(this).children().last([0]);
 //   //     $(ui.draggable).appendTo(this).attr('style','position: relative');
 
-//   //    }
-//   //  });
-//
-//
-//
-//
-// };
-//
-// });
-
-
-$(document).ready(function(){
-  var lastChild = null;
-
-  console.log('ready');
+$(document).ready(function() {
   $(function() {
-    console.log("function");
+    var x = 0; //dragged data-block reference
+    var lastChild = null; //last data-block in stack
+
+    $('[data-stack]').click( function(){
+      lastChild = $(this).children().last().attr('data-block')
+    });
 
     $('[data-block]').draggable({
-      appendTo:"body",
-      cursor:"move",
-      revert:"invalid"
+      appendTo: "body",
+      cursor: "move",
+      revert: "invalid",
+      drag:function(event, ui){
+        x = $(this).attr('data-block');
+
+      }
+
     });
 
-    $('#ds1').droppable({
+    $('[data-stack]').droppable({
 
-      tolerance:"intersect",
-      accept:'[data-block]',
-      activeClass:"ui-state-default",
-      hoverClass:"ui-state-hover",
-      drop:function(event, ui){
-        var last = $(this).children().last([0]);
-        console.log(#ds1.attributes);
-
-      $(ui.draggable).appendTo(this).attr('style','position: relative');
-    }
-    // if($(ui, draggable).attr('[data-block]')) > parseInt(last){
-    //     $(ui.draggable).draggable()
-    // }
+      tolerance: "intersect",
+      accept: '[data-block]',
+      activeClass: "ui-state-default",
+      hoverClass: "ui-state-hover",
+      drop: function(event, ui) {
+        $(ui.draggable).appendTo(this).attr('style', 'position: relative');
+        // var lastChild = $(this).children().last([0]).attr('[data-block]');
+        // alert(lastChild);
+        console.log("moved block " + x + " to data stack " + ($(this).attr('data-stack')));
+        }
+      // if($(ui, draggable).attr('[data-block]')) > parseInt(last){
+      //     $(ui.draggable).draggable()
+      // }
     });
-
-    $('#ds2').droppable({
-      tolerance:"intersect",
-      accept:'[data-block]',
-      activeClass:"ui-state-default",
-      hoverClass:"ui-state-hover",
-      drop:function(event, ui){
-      $(ui.draggable).appendTo(this).attr('style','position: relative');
-    }
-  });
-
-    $('#ds3').droppable({
-      tolerance:"intersect",
-      accept:'[data-block]',
-      activeClass:"ui-state-default",
-      hoverClass:"ui-state-hover",
-      drop:function(event, ui){
-      $(ui.draggable).appendTo(this).attr('style','position: relative');
-    }
-    });
-
-
-
-
-
-
-
   });
 });
