@@ -1,18 +1,49 @@
 div[data-cell] {
   width: 100px;
   height: 100px;
-  background-color: #f2f2f2;
+  /*background-color: #f2f2f2;*/
+  /*background-color: green;*/
   float: left;
   border: 1px solid #808080;
   font-size: 100px;
   text-align: center;
+  cursor: pointer;
+  background-color: black;
+  color:white;
+}
+
+div[contenteditable]:focus {
+  border: 2px
+  solid rgb(86, 180, 239);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05)
+  inset, 0px 0px 8px rgba(82, 168, 236, 0.6);
+}
+
+div[contenteditable] {
+  font-family: Arial,sans-serif;
+
+  -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,.05),0 1px 0 rgba(255,255,255,.075);
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.05),0 1px 0 rgba(255,255,255,.075);
+
+  display: inline-block;
+  margin: 0;
+  outline: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  font-size: 13px;
 }
 
 .row {
   clear: both;
+
 }
 
 #announce-winner {
   clear: both;
   font-size: 50px;
+}
+
+#big-box {
+  diplay: inline-block;
 }
