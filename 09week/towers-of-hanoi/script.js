@@ -11,8 +11,14 @@ $(document).ready(function() {
        $(this).append($block);
        $block = null;
      }
+     checkWin();
    })
 
+   function checkWin () {
+     if($('[data-stack="3"]').children().length == 4) {
+       alert('You Win At Life!');
+     }
+   }
 });
 
 
