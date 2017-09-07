@@ -44,7 +44,8 @@ $(document).ready(function(){
       hoverClass:"ui-state-hover",
       drop:function(event, ui){
         var last = $(this).children().last([0]);
-        console.log(this.attr('[data-stack]'));
+        console.log(#ds1.attributes);
+
       $(ui.draggable).appendTo(this).attr('style','position: relative');
     }
     // if($(ui, draggable).attr('[data-block]')) > parseInt(last){
