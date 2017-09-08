@@ -1,23 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
+
 <body>
   <form action="index.html" method="POST">
+    <label for="url">What's your favorite website?</label>
+    <input type="url" name="" placeholder="reddit.com" id="url">
+    <br><br>
     <label for="email">Enter Your Email</label>
     <input type="text" name="" placeholder="walzer85@gmail.com" id="email">
-    <br>
-    <br>
+    <br><br>
     <label for="password">Enter Your Password</label>
     <input type="password" name="" placeholder="*******" id="password">
-    <br>
-    <br>
-    <input type="submit" value="submit">
+    <br><br>
+    <div>
+      <h3>Choose the four instruments you like to hear the most in music.</h3>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" value="">
+    Flute
+  </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" value="" disabled>
+    Clarinet
+  </label>
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+    <input class="form-check-input" type="checkbox" value="">
+    Oboe
+  </label>
+      <div class="form-check">
+        <label class="form-check-label">
+  <input class="form-check-input" type="checkbox" value="">
+  Bassoon
+</label>
+  <br><br>
+  <div>
+    <h3>Of these instruments, which one is your favorite? Choose one.</h3>
+  </div>
+  <div class="form-check form-check-inline">
+    <label class="form-check-label">
+<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Guitar
+</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <label class="form-check-label">
+<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Bass
+</label>
+  </div>
+  <div class="form-check form-check-inline disabled">
+    <label class="form-check-label">
+<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Sitar
+</label>
+  </div>
+  <br><br>
+  <div>
+    <h3>How loud do you like your music?</h3>
+  </div>
+  <div class="slider-wrapper">
+    <label class="slider-wrapper"> soft</label>
+  <input type="range" min="soft" max="LOUD" value="7" step="1">
+    <label class="slider-wrapper">LOUD</label>
+  </div>
+  <br>
+  <input type="submit" value="submit">
   </form>
 
 </body>
+
 </html>
