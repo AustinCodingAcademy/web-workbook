@@ -15,7 +15,7 @@ $(document).ready(function() {
       $stacks.droppable({
         accept: '.movable',
         drop: function(event, ui) {
-          if (gameOver) {
+          if (!gameOver) {
             if (dropReady($(this), ui.draggable)) {
               ui.draggable.draggable('option', 'revert', false);
               $(this).append(ui.draggable.detach());
@@ -25,25 +25,26 @@ $(document).ready(function() {
               });
               //This resets the $blocks onto their initial $stack//
               $movableBlocks = $('[data-block]:last-child');
-              $blocks.removeClass('movable');
+              $('[data-block]').removeClass('movable');
               $movableBlocks.addClass('movable');
               $blocks.draggable({
                 revert: true
               });
               //Winner!!//
               winState();
+              }
             } else {
               newGame();
             }
           }
-        }
-      });
+        });
 
       //Variable that triggers a new game//
       function newGame() {
         $('[data-stack="1"]').html('<div data-stack="1"><div data-block="100"></div><div data-block="75"></div><div data-block="50"></div><div data-block="25"></div></div>');
         $('[data-stack="2"]').empty();
         $('[data-stack="3"]').empty();
+        $('announce-game-won').empty();
         gameOver = false;
         }
       //Defines which blocks can be dropped into a stack.//
@@ -52,8 +53,9 @@ $(document).ready(function() {
         if (parseInt($block.attr('data-block')) < parseInt($last_block.attr('data-block')) || $stacks.children().length === 0) {
           return true;
         }  else {
-          return false}
+          return false;
         }
+      }
         //When someone wins, the win message is displayed and the game is ended.//
         function winState() {
           if ($('[data-stack="3"]').children().length === 4) {
