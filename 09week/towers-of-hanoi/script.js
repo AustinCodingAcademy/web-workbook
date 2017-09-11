@@ -59,9 +59,8 @@ $(document).ready(function() {
   //When someone wins, the win message is displayed and the game is ended.//
   function winState() {
     if ($('[data-stack="3"]').children().length === 4) {
-      $('#announce-game-won').html('Winner, Winner. Chicken Dinner!!');
+      $('#announce-game-won').html('Winner, Winner. Chicken Dinner!!').css('background-color', '#D5AAFF');
       gameOver = true;
-      $('announce-game-won').css('background-color', '#D5AAFF')
     }
   }
 });
