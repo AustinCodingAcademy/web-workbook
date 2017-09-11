@@ -42,32 +42,3 @@ $(document).ready(function() {
     }
   }
 });
-
-
-// $('[data-block]').draggable({
-// revert: "invalid"
-// });
-//
-// $('[data-stack]').droppable({
-// drop: function(event, ui){
-// // var drag = $(ui.draggable).attr('data-block');
-// // var last = $($(this).children().last()[0]);
-// // if (parseInt($(drag)) > parseInt($(last))); {
-// // $(ui.draggable).draggable('option', 'revert', true);
-// $(ui.draggable).appendTo(this).attr('style', 'position: relative');
-// // }
-// }
-// });
-
-
-
-
-// $('[data-block]')
-//       .draggable()
-//       .click(function(){
-//             if ( $(this).is('.ui-draggable-dragging') ) {
-//                   return;
-//             }
-//             $('[data-stack]').on('click', function(event) {
-//               event.preventDefault();
-//       });
