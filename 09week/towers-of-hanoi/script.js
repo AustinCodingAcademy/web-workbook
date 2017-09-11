@@ -12,8 +12,6 @@ $(document).ready(function() {
 
     $stacks.click(move);
 
-    //First check if detached block is empty, if true, detach the last-child of the clicked stack;
-    //If yes, try dropping.
     function move() {
       if (gameover === false) {
         if ($.isEmptyObject($detached)) {
@@ -45,7 +43,7 @@ $(document).ready(function() {
         return false;
       }
     }
-
+    // ONLY CAN DROP WHEN DATACHED DATA BLOCK IS LESS THAN THE LAST
     function droppable($stack, $detached) {
       var $last_block = $stack.children().last();
       if( parseInt($detached.attr("data-block"))<parseInt($last_block.attr("data-block")) || $stack.children().length===0) {
@@ -55,7 +53,7 @@ $(document).ready(function() {
         return false;
       }
     }
-
+    // WIN CHECKER
     function checkForWin() {
       if($('[data-stack="3"]').children().length===4) {
         $('#announce-game-won').html("WINNER WINNER CHICKEN DINNER!");
@@ -63,7 +61,7 @@ $(document).ready(function() {
 
       }
     }
-
+    // RESET FUNCTION
     function resetGame() {
       $('[data-stack="1"]').html('<div data-block="100"></div><div data-block="75"></div><div data-block="50"></div><div data-block="25"></div>');
       $('[data-stack="2"]').empty();
