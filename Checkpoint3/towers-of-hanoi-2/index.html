@@ -1,24 +1,73 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Towers of Hanoi</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="css/css-reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 </head>
+
 <body>
-  <div data-stack="1">
-    <div data-block="100"></div>
-    <div data-block="75"></div>
-    <div data-block="50"></div>
-    <div data-block="25"></div>
-  </div>
-  <div data-stack="2">
-  </div>
-  <div data-stack="3">
-  </div>
-  <div id="announce-game-won"></div>
+  <h1>Towers of Hanoi</h1>
+  <div class="line"></div>
+  <section id="tower-container">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          <div data-stack="1">
+            <div data-block="yellow"></div>
+            <div data-block="red"></div>
+            <div data-block="green"></div>
+            <div data-block="blue"></div>
+          </div>
+          </div>
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <div data-stack="2">
+          </div>
+      </div>
+      <div class="col-xs-12 col-sm- col-md-4 col-lg-4">
+        <div data-stack="3">
+      </div>
+      </div>
+      <div class="col-xs-12 col-lg-12">
+      <div><img src="img/Wall.png" class="base" alt="tower base"></div>
+    </div>
+  </section>
+
+      <div class="col-md-12 mx-auto">
+        <div id="announce-game-won"></div>
+        </div>
+
+<section>
+  <div class="rules">
+		<h3>How To Play</h3>
+		<ul>
+			<li>
+				Click the disc you want to move from and click to where you want to move to.
+			</li>
+			<li>
+				A smaller disc can go on a larger disc, but not the other way around
+			</li>
+			<li>
+				You win when the tower is completely moved to another pole.
+			</li>
+		</ul>
+    <!-- <div id=reset-button><A HREF="javascript:history.go(0)">Rest the game</A></div> -->
+    <FORM>
+      <INPUT TYPE="button" onClick="history.go(0)" VALUE="Reset Game">
+    </FORM>
+  </section>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
-  <script type="text/javascript" src="script.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+      <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
