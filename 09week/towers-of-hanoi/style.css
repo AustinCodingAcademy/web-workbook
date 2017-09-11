@@ -1,38 +1,103 @@
+body {
+  background-color: black;
+}
+
+#Game {
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  height: 300px
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.btn {
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  font-size: 2em;
+}
+
+#button1b {
+  margin-right: 110px;
+}
+
+#button3b {
+  margin-left: 110px;
+}
+
 [data-stack] {
   display: flex;
   justify-content: flex-start;
+  flex-direction: column-reverse;
   align-items: center;
-  height: 101px;
-  background-color: aliceblue;
-  margin: 25px;
+  width: 10px;
+  height: 150px;
+  background-color: white;
+  margin: 100px;
 }
 
-[data-block] {
+
+
+/*[data-block] {
   width: 25px;
   float: left;
-}
+}*/
 
 [data-block="25"] {
+  width: 25px;
   height: 25px;
   background-color: blue;
+  border-radius: 5px
 }
 
 [data-block="50"] {
-  height: 50px;
+  width: 50px;
+  height: 25px;
   background-color: green;
+  border-radius: 5px
 }
 
 [data-block="75"] {
-  height: 75px;
+  width: 75px;
+  height: 25px;
   background-color: red;
+  border-radius: 5px
 }
 
 [data-block="100"] {
-  height: 100px;
+  width: 100px;
+  height: 25px;
   background-color: yellow;
+  border-radius: 5px
 }
 
-#announce-game-won {
-  font-size: 50px;
-  text-align: center;
+.badmove {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  background-color: white;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }

@@ -1,55 +1,76 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tomorrows Technology</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
-  <body>
 
-    <div class="mainContainer">
+function addNumber (num){
+  document.getElementById("results").value += num;
+}
 
-      <header>
-        <img src="img/bg.jpg" alt="drawing showing future technology">
-      </header>
+function clearResults(){
+  document.getElementById("results").value = "";
+}
 
-      <article>
-        <h1>Tomorrow's Technology, Yesterday's Insights</h1>
-        <p>Sometimes what the tech world comes up with has already been tried and rejected and really doesn't need to be resurrected -- like the Taylorist view...</p>
-        <a class="button" href="#">TECHNOLOGY</a>
-      </article>
+function addition() {
+  document.getElementById("results").value += "+";
+}
 
-    </div>
+function minus() {
+  document.getElementById("results").value += "-";
+}
 
-    <aside>
+function times() {
+  document.getElementById("results").value += "*";
+}
 
-      <h2>TOP STORIES</h2>
-      <h3>Stanford Researchers Make Artificial Skin That Senses Touch</h3>
-      <h3>Three New Ways to Wear Your Favorite Chambray Shirt</h3>
-      <h3>Where to Buy Your Next Rug</h3>
-      <h3>Chukkas that Offer Casual, Comfortable Style</h3>
+function divide() {
+  document.getElementById("results").value += "/";
+}
 
-    </aside>
+function equals() {
+  document.getElementById("results").value =        eval(document.getElementById("results").value);
+}
 
-    <footer>
+function deleteLast() {
+  var current=document.getElementById("results").value;
+  document.getElementById("results").value = current.substring(0, current.length-1);
+}
 
-    <section id="links">
-      <h3>Useful Links</h3>
-      <a class="Linkone" href="#">About</a>
-      <a class="Linktwo" href="#">Jobs</a>
-      <a class="Linkthree" href="#">Team</a>
-      <a class="Linkfour" href="#">Advertise</a>
-      <a class="Linkfive" href="#">Terms</a>
-    </section>
+function plusMin () {
+  var currentMin=document.getElementById("results").value;
+  if (currentMin > 0) {
+    document.getElementById("results").value = (currentMin * -1);
+  } else {
+    document.getElementById("results").value = (currentMin * -1);
+  }
+}
 
-    <section id="media">
-      <h3>Social Media</h3>
-      <a class="Mediaone" href="#">Facebook</a>
-      <a class="Mediatwo" href="#">Instagram</a>
-      <a class="Mediathree" href="#">Twitter</a>
-    </section>
 
-    </footer>
-
-  </body>
-</html>
+<div id="calc">
+		<input type="text" id="results">
+		<table>
+			<tr>
+				<td class="button" onclick="addNumber('1')">1</td>
+				<td class="button" onclick="addNumber('2')">2</td>
+				<td class="button" onclick="addNumber('3')">3</td>
+				<td class="button" onclick="addition()">+</td>
+			</tr>
+			<tr>
+				<td class="button" onclick="addNumber('4')">4</td>
+				<td class="button" onclick="addNumber('5')">5</td>
+				<td class="button" onclick="addNumber('6')">6</td>
+				<td class="button" onclick="minus()">-</td>
+			</tr>
+			<tr>
+				<td class="button" onclick="addNumber('7')">7</td>
+				<td class="button" onclick="addNumber('8')">8</td>
+				<td class="button" onclick="addNumber('9')">9</td>
+				<td class="button" onclick="times()">*</td>
+			</tr>
+			<tr>
+				<td class="button" onclick="plusMin()">+/-</td>
+				<td class="button" onclick="addNumber('0')">0</td>
+				<td class="button" onclick="equals()">=</td>
+				<td class="button"  onclick="divide()">/</td>
+			</tr>
+			<tr>
+				<td class="button" colspan="2" onclick="deleteLast()">Delete</td>
+				<td class="button" colspan="2" onclick="clearResults()">Clear</td>
+		</table>
+	</div>
