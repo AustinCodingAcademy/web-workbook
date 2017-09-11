@@ -3,7 +3,29 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>CS</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Anton|Muli|Ewert|Acme|Lobster|Pacifico|Monoton|Sedgwick+Ave+Display|Open+Sans:700|Roboto:900|Heebo|PT+Sans|Catamaran|Abril+Fatface|Oxygen|Bad+Script|Great+Vibes|Raleway|Handlee|Josefin+Sans:600i|Chonburi|Petit+Formal+Script"
+    rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
 
 <body>
@@ -11,31 +33,38 @@
     <div class="row">
       <div class="col-md-6 col-md-offset-3 col-12">
         <div class="panel">
-
           <form action="https://docs.google.com/forms/d/e/1FAIpQLSfk8_FfLGfTukYETvnKQE1VKDCfAA-aMfnmunmBmrwigOdNiA/formResponse" method="POST" target="_self" autocomplete="on" onsubmit="">
             <!-- <label for="entry_2092335392">Untitled Question</label>
   <label>Option 1</label> -->
-            Add Your Homepage
-            <input type="url" name="homepage" required><br><br>
-            <label for="password">Enter Your Password</label>
+            Add Your Homepage:
+            <input class="url" type="url" name="homepage" required></input><br><br>
+            <label class="pw" for="password">Enter Your Password:</label>
             <input type="password" name="password" placeholder="************" id="password" minlength="6" required/><br><br> Do you own a vehicle?
-            <input type="checkbox" name="vehicle" value="Car">Yes
+            <input class="chk" type="checkbox" name="vehicle" value="Car">Yes
             <input type="checkbox" name="vehicle" value="Car">No
             <br><br>
 
-            <input type="radio" name="how" value="Compact"> Compact
+            <input class="rad" type="radio" name="how" value="Compact"> Compact
             <input type="radio" name="how" value="Sedan"> Sedan
-            <input type="radio" name="how" value="Truck"> Truck<br><br> Unsatisfied:
-            <input type="range" name="points" min="0" max="10">Very Satisfied:<br><br> Email:
-            <input type="email" name="email" id="email" required/><br><br>
+            <input type="radio" name="how" value="Truck"> Truck<br><br>
+            <div class="sldr">Unsatisfied
+              <input type="range" name="points" min="0" max="10"> Satisfied</div><br><br> Email:
+            <input class="em" type="email" name="email" id="email" required/><br><br>
 
-            <input type="submit"><br><br>
-
-            <input type="reset">
-
-          </form>
-
-
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3 col-12">
+                <div class="btn">
+                  <input type="submit">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3 col-12">
+                <div class="btnr">
+                  <input type="reset">
+                </div>
+              </div>
+            </div>
           </form>
         </div>
       </div>
