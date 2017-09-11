@@ -55,7 +55,7 @@ $(document).ready(function() {
   //When all blocks are stacked in "<div data-stack="3">" div call a function "winChecker" to sthe game over. check if the last move has won the game by calling winChecker() function.
   function checkWin() {
     if ($('#pole3').children().length === 5) {
-      $('#gotIt').html("You Got It!");
+      $('#gotit').html("You Got It!");
       gameOver = true;
 
     }
