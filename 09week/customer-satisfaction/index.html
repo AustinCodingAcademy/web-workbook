@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Customer Satisfaction Form</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h1>Rate your Experience</h1>
+    <form action= "/action_page.php">
+      <p>Add your homepage:</p>
+      <input type="url" name="homepage">
+      <p>E-mail:</p>
+      <input type="email" name="email" required>
+      <p>Password</p>
+      <input type="password" name="psw">
+      <p>How did you find this site</p>
+       <input type="checkbox" name="way1" value="searchEngine"> I found it using a search engine<br>
+       <input type="checkbox" name="way2" value="onlineAd"> I found from an online ad<br>
+       <input type="checkbox" name="way3" value="adInRealLife"> I found it from an ad in real life<br>
+       <input type="checkbox" name="way4" value="fromFriend"> It was recommended to me by a friend<br>
+       <br>
+       <input type="radio" name="gender" value="male" checked> Male<br>
+       <input type="radio" name="gender" value="female"> Female<br>
+       <input type="radio" name="gender" value="other"> Other
+       <br>
+       <p>How well did you enjoy your experience</p>
+       <input type="range" min="-10" max="10">
+       <br>
+       <p>Additional Comments:</p>
+       <textarea rows="4" cols="50" spellcheck="true">
+
+       </textarea>
+       <br>
+       <input type="submit" value="Submit">
+       <input type="reset" value="Reset">
+    </form>
+  </body>
+</html>
