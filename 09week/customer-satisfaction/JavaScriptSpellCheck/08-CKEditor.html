@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>JavaScriptSpellCheck - Hello CKEDITOR</title>
+        <script src="http://cdn.ckeditor.com/4.4.5.1/standard/ckeditor.js"></script>
+        <script type='text/javascript' src='include.js'></script>
+    </head>
+    <body>
+
+        <textarea name="myTextArea" id="myTextArea" cols="50" rows="20">Hello to the Worlb.
+            This Example show JavaScript spellchecking window functionality for ckeditor.
+            Implementation is easy using only a few lines of Java Script -
+            and will work on alost all modern web hosting packages - both Linux and Windows based.
+        </textarea>
+
+        <input type="button" value="Spell Check" onclick="$Spelling.SpellCheckInWindow('.cke_wysiwyg_frame')">
+
+
+        <script>  CKEDITOR.replace( 'myTextArea');</script>
+
+
+    </body>
+</html>
