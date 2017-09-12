@@ -57,7 +57,7 @@ $(document).ready(function() {
   }
 
   function checkForWin() {
-    if ($('#col3').children().length === 2) {
+    if ($('#col3').children().length === 8) {
       $('#winner').html("<h2>You Won!</h2>");
       gameOver = true;
       // make all of the block unmovable until reset button is pressed
