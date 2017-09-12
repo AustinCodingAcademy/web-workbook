@@ -57,11 +57,9 @@ $(document).ready(function() {
     if ($('#pole3').children().length === 6) {
       $('#gotit').html("You Got It!");
       gameOver = true;
-
     }
   }
-  //reset game by calling "data-stack=2" & "data-stack=3" with a class '.empty'. All 'data-block' s will be passed into 'data-stack=1'.
-
+  //reset game using reset button in html and calling "#pole1" containing all "block" class, "#pole2" & "#pole3" with a class '.html'. All 'block' classes will be passed into '#pole1'.
 
   $('#reset').click(function(){
     $('#pole1').html('<div id="base"></div><div class="block" id="num125" data-block="125"></div><div class="block" id="num100" data-block="100"></div><div class="block" id="num75" data-block="75"></div><div class="block" id="num50" data-block="50"></div><div class="block" id="num25" data-block="25"></div>');
@@ -70,13 +68,4 @@ $(document).ready(function() {
     $('#gotit').empty();
     gameOver = false;
   });
-  // function resetGame() {
-  //   $('[data-stack="1"]').html('<div data-block="100"></div><div data-block="75"></div><div data-block="50"></div><div data-block="25"></div>');
-  //   $('[data-stack="2"]').empty();
-  //   $('[data-stack="3"]').empty();
-  //   $('#base2').empty();
-  //   $('#base3').empty();
-  //   $('#gotit').empty();
-  //   gameover = false;
-  // }
 });

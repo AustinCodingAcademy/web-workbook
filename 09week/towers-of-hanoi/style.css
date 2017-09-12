@@ -8,7 +8,7 @@ body {
 .pole {
   position: relative;
   top: 300px;
-  left: 90px;
+  left: 125px;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -21,7 +21,7 @@ body {
 }
 
 #base {
-  width: 230px;
+  width: 220px;
   height: 15px;
   background-color: darkblue;
   border-bottom-left-radius: 20px;
@@ -29,7 +29,7 @@ body {
 }
 
 #base2 {
-  width: 250px;
+  width: 220px;
   height: 15px;
   background-color: darkblue;
   border-bottom-left-radius: 20px;
@@ -37,7 +37,7 @@ body {
 }
 
 #base3 {
-  width: 230px;
+  width: 220px;
   height: 15px;
   background-color: darkblue;
   border-bottom-left-radius: 20px;
@@ -60,7 +60,6 @@ body {
 #num100 {
   width: 150px;
   background-color: red;
-
   z-index: 1;
   border: 1px solid black;
 }
@@ -70,7 +69,6 @@ body {
   background-color: orange;
   z-index: 1;
   border: 1px solid black;
-
 }
 
 #num50 {
@@ -85,7 +83,6 @@ body {
   background-color: #4d94ff;
   z-index: 1;
   border: 1px solid black;
-
 }
 
 #gotit {
@@ -97,7 +94,7 @@ body {
   bottom: 70px;
 }
 .clearfix {
-  position: absolute;
+  position:fixed;
   bottom: 0;
   margin-bottom: 20px;
 }
@@ -106,25 +103,27 @@ body {
   font-size: 1.2em;
 }
 
-@media (max-width: 491px) {
-
-  body {
-
-  }
+@media (max-width: 691px) {
 
   .block {
     height: 20px;
     width: 50px;
-
   }
   #base3 {
-    width: 100px;
+    width: 85px;
   }
   #base2 {
-    width: 100px;
+    width: 85px;
   }
   #base {
-    width: 100px;
+    width: 85px;
+  }
+
+  #num125 {
+    width: 87px;
+    background-color: purple;
+    margin: 2px;
+    z-index: 1;
   }
   #num100 {
     width: 75px;
@@ -152,6 +151,12 @@ body {
     z-index: 1;
   }
 
-
+  .pole {
+    margin:auto 40px;
+    width: 12px;
+    position: relative;
+    bottom: 0;
+    left:0;
+  }
 
 }
