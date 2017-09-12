@@ -59,7 +59,7 @@ $(document).ready(function() {
   //When someone wins, the win message is displayed and the game is ended.//
   function winState() {
     if ($('[data-stack="3"]').children().length === 4) {
-      $('#announce-game-won').html('Winner, Winner. Chicken Dinner!!').css('color', '#FFF58A');
+      $('#announce-game-won').html('Winner, Winner. Chicken Dinner!!');
       gameOver = true;
     }
   }
