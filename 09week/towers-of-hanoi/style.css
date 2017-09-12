@@ -1,38 +1,36 @@
-body {
-/*   display: flex;
+  body {
+  /*   display: flex;
   justify-content: center;
   align-items: flex-end; */
-/*   border: solid red; */
+  /*   border: solid red; */
   height: 450px;
   background-image: url('https://media.giphy.com/media/OphJjMBC9AbEQ/giphy.gif');
   background-size: 99% 240%;
-
-
-
-/*   flex-direction: row; */
+  /*   flex-direction: row; */
 }
+
 #announce-game-won {
   display: flex;
   justify-content: center;
-/*   border: 1px solid orange; */
+  /*   border: 1px solid orange; */
   height: 50px;
   font-size: 80px;
   color: #338AB1
 }
+
 h1 {
   display: flex;
   align-items: flex-start;
-
 }
-outer{
+
+outer {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-/*   border: 2px solid purple; */
+  /*   border: 2px solid purple; */
   width: 100%;
   height: 350px;
   margin-top: 250px;
-
 }
 
 section {
@@ -42,23 +40,20 @@ section {
   align-items: flex-end;
   width: 75%;
   height: 300px;
-/*   border: solid green; */
+  /*   border: solid green; */
   margin-bottom: 0px;
 }
 
-
 [data-stack] {
   display: flex;
-
   flex-direction: column-reverse;
   align-items: center;
   border-radius: 15px;
   height: 200px;
   width: 20px;
   background-color: grey;
-/*   margin-right: 150px; */
+  /*   margin-right: 150px; */
   border: 1px solid blue
-
 }
 
 [data-block] {
@@ -68,45 +63,44 @@ section {
   border-radius: 7px;
   height: 25px;
   border: .5px solid white;
-
-/*   float: left; */
+  /*   float: left; */
 }
 
 [data-block="25"] {
   height: 25px;
   width: 25px;
-
   background-color: blue;
-  background-image: linear-gradient(blue,lightblue);
+  background-image: linear-gradient(blue, lightblue);
 }
 
 [data-block="50"] {
-  height: 25px ;
+  height: 25px;
   width: 50px;
   background-color: green;
-  background-image: linear-gradient(green,lightgreen);
+  background-image: linear-gradient(green, lightgreen);
 }
 
 [data-block="75"] {
   height: 25px;
   width: 75px;
   background-color: red;
-  background-image: linear-gradient(red,pink);
-
+  background-image: linear-gradient(red, pink);
 }
 
 [data-block="100"] {
   height: 25px;
   width: 100px;
   background-color: yellow;
-  background-image: linear-gradient(yellow,lightyellow);
+  background-image: linear-gradient(yellow, lightyellow);
 }
+
 [data-block="125"] {
   height: 25px;
   width: 125px;
   background-color: purple;
-  background-image: linear-gradient(purple,violet);
+  background-image: linear-gradient(purple, violet);
 }
+
 
 /* #announce-game-won {
   display: flex;
@@ -116,3 +110,9 @@ section {
   text-align: center;
   height: 50px;
 } */
+
+@media screen and (min-width: 320px) and (max-width: 1100px) {
+  body {
+    width: 100%;
+    height: 100%;
+  }
