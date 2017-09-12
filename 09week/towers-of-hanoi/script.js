@@ -54,7 +54,7 @@ $(document).ready(function() {
   }
   //When all blocks are stacked in "<div data-stack="3">" div call a function "winChecker" to sthe game over. check if the last move has won the game by calling winChecker() function.
   function checkWin() {
-    if ($('#pole3').children().length === 5) {
+    if ($('#pole3').children().length === 6) {
       $('#gotit').html("You Got It!");
       gameOver = true;
 
@@ -62,13 +62,21 @@ $(document).ready(function() {
   }
   //reset game by calling "data-stack=2" & "data-stack=3" with a class '.empty'. All 'data-block' s will be passed into 'data-stack=1'.
 
-  function resetGame() {
-    $('[data-stack="1"]').html('<div data-block="100"></div><div data-block="75"></div><div data-block="50"></div><div data-block="25"></div>');
-    $('[data-stack="2"]').empty();
-    $('[data-stack="3"]').empty();
-    $('#base2').empty();
-    $('#base3').empty();
+
+  $('#reset').click(function(){
+    $('#pole1').html('<div id="base"></div><div class="block" id="num125" data-block="125"></div><div class="block" id="num100" data-block="100"></div><div class="block" id="num75" data-block="75"></div><div class="block" id="num50" data-block="50"></div><div class="block" id="num25" data-block="25"></div>');
+    $('#pole2').html('<div id="base"></div>');
+    $('#pole3').html('<div id="base"></div>');
     $('#gotit').empty();
-    gameover = false;
-  }
+    gameOver = false;
+  });
+  // function resetGame() {
+  //   $('[data-stack="1"]').html('<div data-block="100"></div><div data-block="75"></div><div data-block="50"></div><div data-block="25"></div>');
+  //   $('[data-stack="2"]').empty();
+  //   $('[data-stack="3"]').empty();
+  //   $('#base2').empty();
+  //   $('#base3').empty();
+  //   $('#gotit').empty();
+  //   gameover = false;
+  // }
 });
