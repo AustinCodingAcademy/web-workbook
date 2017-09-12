@@ -24,7 +24,7 @@ $(document).ready(function() {
       $block = false;
       $('#announce-game-won').text($message);
       if (checkWin()) {
-        $('#announce-game-won').text("You're a winner!");
+        $('#announce-game-won').text("Success!");
       }
     } else {
       $message = 'Sorry, ' + $block.data('block') + ' cannot be placed on ' +

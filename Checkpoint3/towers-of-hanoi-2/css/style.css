@@ -1,21 +1,28 @@
-#tower-container {
+Body {
+
+}
+
+header {
+  /*background-image: url('../img/towers-header.png');*/
+  height: auto;
+  width: 100%
+}
+
+  #tower-container {
   display: flex;
-  /*background-color: white;*/
   height: 100%;
   width: auto;
+  background-color: white;
 }
 
 [data-stack] {
-  background-image: url(img/Pole.png);
+  background-image: url('img/Pole.png');
+  background-color: #89388B;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
-  /*justify-content: flex-end;
-  display: flex;
-  justify-content: flex-start;
-  align-items: right;*/
   height: 300px;
-  width: 300px;
+  width: auto;
   margin-left: 25px;
   margin-right: 25px;
 }
@@ -30,8 +37,6 @@
   width: 1140px;
   display: flex;
   align-items: center;
-  /*margin-left: 25%;*/
-  margin-right: 25%;
 }
 
 [data-block="blue"] {
@@ -63,12 +68,38 @@
   text-align: center;
 }
 
-.rules {}
+#bottom-container {
+  background-color: #12246E;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  width: auto;
+}
 
-form {
-  height: 50px;
-  width: 100px;
-  font-size: 20px;
+.rules {
+color: white;
+font-size: 30px;
+font-style: italic;
+font-weight: bold;
+padding-top: 25px;
+}
+
+p {
+color: white;
+font-size: 20px;
+font-style: italic;
+}
+
+.reset {
+  font-size: 30px;
+  font-style: italic;
   align-content: center;
   color: white;
 }
+
+
+
+/*justify-content: flex-end;
+display: flex;
+justify-content: flex-start;
+align-items: right;*/
