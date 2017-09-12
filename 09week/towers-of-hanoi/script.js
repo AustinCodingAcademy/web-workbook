@@ -66,7 +66,9 @@ $(document).ready(function() {
     $('[data-stack="1"]').html('<div data-block="100"></div><div data-block="75"></div><div data-block="50"></div><div data-block="25"></div>');
     $('[data-stack="2"]').empty();
     $('[data-stack="3"]').empty();
-    $('#announce-game-won').empty();
-    gameover = true;
+    $('#base2').empty();
+    $('#base3').empty();
+    $('#gotit').empty();
+    gameover = false;
   }
 });

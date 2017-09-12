@@ -34,23 +34,33 @@
       <div class="col-md-6 col-md-offset-3 col-12">
         <div class="panel">
           <form action="https://docs.google.com/forms/d/e/1FAIpQLSfk8_FfLGfTukYETvnKQE1VKDCfAA-aMfnmunmBmrwigOdNiA/formResponse" method="POST" target="_self" autocomplete="on" onsubmit="">
-            <!-- <label for="entry_2092335392">Untitled Question</label>
-  <label>Option 1</label> -->
+            <!--URL Input-->
             Add Your Homepage:
             <input class="url" type="url" name="homepage" required></input><br><br>
+            <!--Password Input-->
             <label class="pw" for="password">Enter Your Password:</label>
-            <input type="password" name="password" placeholder="************" id="password" minlength="6" required/><br><br> Do you own a vehicle?
-            <input class="chk" type="checkbox" name="vehicle" value="Car">Yes
-            <input type="checkbox" name="vehicle" value="Car">No
+            <input type="password" name="password" placeholder="************" id="password" minlength="6" required/><br><br>
+            <!--Radio button Input-->
+            Do you own a vehicle?
+            <input class="rad" type="radio" name="how" value="Compact"> Yes
+            <input type="radio" name="how" value="Truck"> No<br><br>
+            <!--Checkbox Input-->
+            Check all that apply:
+            <input class="chk" type="checkbox" name="vehicle" value="Car"> Car
+            <input type="checkbox" name="vehicle" value="Truck"> Truck
+            <input type="checkbox" name="vehicle" value="Truck"> Motorcycle
+            <input type="checkbox" name="vehicle" value="Truck"> Other<br><br>
+            <!--Textbox Input-->
+            <label class="txt" for="message">List Other<br>Forms of<br>Transportation:
+            </label>
+            <textarea name="message" id="message" /></textarea>
             <br><br>
-
-            <input class="rad" type="radio" name="how" value="Compact"> Compact
-            <input type="radio" name="how" value="Sedan"> Sedan
-            <input type="radio" name="how" value="Truck"> Truck<br><br>
+            <!--Slider Range Input-->
             <div class="sldr">Unsatisfied
-              <input type="range" name="points" min="0" max="10"> Satisfied</div><br><br> Email:
+              <input type="range" name="points" min="0" max="10"> Satisfied</div><br><br>
+              <!--Email Input--> Email:
             <input class="em" type="email" name="email" id="email" required/><br><br>
-
+            <!--Submit Input-->
             <div class="row">
               <div class="col-md-6 col-md-offset-3 col-12">
                 <div class="btn">
@@ -58,6 +68,7 @@
                 </div>
               </div>
             </div>
+            <!--Reset Input-->
             <div class="row">
               <div class="col-md-6 col-md-offset-3 col-12">
                 <div class="btnr">
