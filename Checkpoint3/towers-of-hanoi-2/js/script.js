@@ -9,10 +9,6 @@ $(document).ready(function() {
   $('[data-stack]').on('click', function(event) {
     event.preventDefault();
 
-    // $('[data-block]').draggable({
-    //   containment: '[data-stack]' });
-
-
     //check to see if you have block in hand
     if ($block === false) {
       $block = ($(this).children().last().detach());
@@ -58,16 +54,3 @@ $(document).ready(function() {
 // // }
 // }
 // });
-
-
-
-
-// $('[data-block]')
-//       .draggable()
-//       .click(function(){
-//             if ( $(this).is('.ui-draggable-dragging') ) {
-//                   return;
-//             }
-//             $('[data-stack]').on('click', function(event) {
-//               event.preventDefault();
-//       });
