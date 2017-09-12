@@ -9,6 +9,10 @@ $(document).ready(function() {
   var $movableBlocks = $('.block:last-child');
   $movableBlocks.addClass("movable");
 
+  // var $moves = $('#moves');
+  // $moves += 1;
+  // $("#moves").text($moves + " moves");
+
   //any block is draggable, but they revert to original position unless condition is met
   $movableBlocks.draggable({
     revert: true
@@ -39,6 +43,10 @@ $(document).ready(function() {
     }
   });
 
+  // function countMove() {
+  //
+  // }
+
   function goodToDrop($stack, $blocks) {
     var $last_block = $stack.children().last();
     if (parseInt($blocks.css("width")) < parseInt($last_block.css("width")) || $stack.children().length === 0) {
@@ -49,20 +57,21 @@ $(document).ready(function() {
   }
 
   function checkForWin() {
-    if ($('#col3').children().length === 5) {
-      $('#winner').html("You Won!");
+    if ($('#col3').children().length === 2) {
+      $('#winner').html("<h2>You Won!</h2>");
       gameOver = true;
       // make all of the block unmovable until reset button is pressed
     }
   }
 
-  function resetGame() {
-    $('#col1').html('<div data-block="100"></div><div data-block="75"></div><div data-block="50"></div><div data-block="25"></div>');
-    $('#col2').empty();
-    $('#col3').empty();
-    $('#announce-game-won').empty();
+  $("button").click(function() {
+    $('#col1').html('<div class="base"></div><div class="block" id="first"></div><div class="block" id="second"></div><div class="block" id="third"></div><div class="block" id="fourth"></div><div class="block" id="fifth"></div><div class="block" id="sixth"></div><div class="block" id="seventh"></div>');
+    $('#col2').html('<div class="base"></div>');
+    $('#col3').html('<div class="base"></div>');
+    $('#winner').empty();
     gameOver = false;
-  }
+    // moves = 0;
+  });
 
 
 });

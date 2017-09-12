@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Towers of Hanoi</title>
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -13,18 +14,27 @@
       <li>Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack.</li>
       <li>No disk may be placed on top of a smaller disk.</li>
     </ol>
-    <div class="column container" id="col1">
-      <div class="base"></div>
-      <div class="block" id="first"></div>
-      <div class="block" id="second"></div>
-      <div class="block" id="third"></div>
-      <div class="block" id="fourth"></div>
-    </div>
-    <div class="column container" id="col2">
-      <div class="base"></div>
-    </div>
-    <div class="column container" id="col3">
-      <div class="base"></div>
+    <div id="counter"><span id="moves"></span></div>
+    <section id="game">
+      <div class="column container" id="col1">
+        <div class="base"></div>
+        <div class="block" id="first"></div>
+        <div class="block" id="second"></div>
+        <div class="block" id="third"></div>
+        <div class="block" id="fourth"></div>
+        <div class="block" id="fifth"></div>
+        <div class="block" id="sixth"></div>
+        <div class="block" id="seventh"></div>
+      </div>
+      <div class="column container" id="col2">
+        <div class="base"></div>
+      </div>
+      <div class="column container" id="col3">
+        <div class="base"></div>
+      </div>
+    </section>
+    <div class="clearfix">
+      <button id="reset">Start Over</button>
     </div>
     <div id="winner"></div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

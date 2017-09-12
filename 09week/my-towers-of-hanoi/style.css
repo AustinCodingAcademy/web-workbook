@@ -1,6 +1,25 @@
 body {
   margin: auto;
-  width: 80%;
+  width: 70%;
+  font-family: 'Shadows Into Light', cursive;
+  text-transform: uppercase;
+}
+
+h1 {
+  text-align: center;
+  color: lightgray;
+  font-size: 3em;
+  text-shadow: 2px 2px gray;
+  border-bottom: 1px solid lightgray;
+}
+
+p, li {
+  color: gray;
+}
+
+#game {
+  display: flex;
+  justify-content: center;
 }
 
 .container {
@@ -8,40 +27,90 @@ body {
   flex-direction: column-reverse;
   align-items: center;
   float: left;
+  background-color: gray;
   width: 12px;
-  height: 300px;
-  margin-right: 150px;
-  background-color: gray;
-  border-radius: 10px 10px 0 0;
-}
-
-.base {
-  width: 110px;
-  height: 12px;
-  background-color: gray;
+  height: 200px;
+  margin: 75px;
+  border-left: 100px solid #ffffff;
+  border-right: 100px solid #ffffff;
 }
 
 .block {
   height: 25px;
-  border-radius: 5px;
+  border-radius: 20px;
+  /*box-shadow: -2px -2px rgba(128, 128, 128, .5);*/
+}
+
+.base {
+  height: 15px;
+  width: 220px;
+  background-color: gray;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 #first {
-  width: 100px;
-  background-color: red;
+  width: 200px;
+  background: radial-gradient(rgba(255, 0, 128, 0.9), rgba(255, 0, 128, 0.5));
 }
 
 #second {
-  width: 75px;
-  background-color: yellow;
+  width: 175px;
+  background: radial-gradient(rgba(128, 0, 255, 0.9), rgba(128, 0, 255, 0.5));
 }
 
 #third {
-  width: 50px;
-  background-color: green;
+  width: 150px;
+  background: radial-gradient(rgba(0, 0, 255, 0.9), rgba(0, 0, 255, 0.5));
 }
 
 #fourth {
-  width: 25px;
-  background-color: blue;
+  width: 125px;
+  background: radial-gradient(rgba(0, 255, 0, 0.9), rgba(0, 255, 0, 0.5));
 }
+
+#fifth {
+  width: 100px;
+  background: radial-gradient(rgba(255, 255, 0, 0.9), rgba(255, 255, 0, 0.5));
+}
+
+#sixth {
+  width: 75px;
+  background: radial-gradient(rgba(255, 128, 0, 0.9), rgba(255, 128, 0, 0.5));
+}
+
+#seventh {
+  width: 50px;
+  background: radial-gradient(rgba(255, 0, 0, 0.9), rgba(255, 0, 0, 0.5));
+}
+
+#counter {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  color: lightgray;}
+
+.clearfix {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  color: gray;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 1em;
+}
+
+/*#winner {
+  color: gray;
+  font-size: 2em;
+  position: absolute;
+  bottom: 100px;
+  padding: 20px;
+  border: 50px solid white;
+  width: inherit;
+  left: 120px;
+  text-align: center;
+  z-index: 1;
+  background-color: white;
+}*/
