@@ -39,6 +39,9 @@ $(document).ready(function() {
     let $total3 = $('[data-stack="3"]').children().length;
     if ($total1 === 5 || $total2 === 5 || $total3 === 5) {
       $('#announce-game-won').text("The Game has been Won!");
+
+
+
     }
   }
 
