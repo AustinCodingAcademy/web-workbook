@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
   $(function() {
-    var x = 0; 
+    var x = 0;
     var $last = $(this).children().last().attr('data-block');
     var $blocks = $('[data-block]')
     var $ldb = $('[data-block]:last-child');
@@ -55,6 +55,8 @@ $(document).ready(function() {
 
           if($('#ds3').children().length === 4){
             alert('You win!');
+            // $('.video').attr('style','display:block');
+            $('.thevideo').play();
           }
         } else {
           console.log('cannot drag');
