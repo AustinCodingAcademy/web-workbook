@@ -58,7 +58,7 @@ $(document).ready(function() {
 
   function checkForWin() {
     if ($('#col3').children().length === 8) {
-      $('#winner').html("<h2>You Won!</h2>");
+      $('#winner').html('<h2><span id="red">Y</span><span id="orange">o</span><span id="yellow">u</span><span id="green"> W</span><span id="blue">o</span><span id="purple">n</span><span id="violet">!</span></h2>');
       gameOver = true;
       // make all of the block unmovable until reset button is pressed
     }
@@ -71,53 +71,16 @@ $(document).ready(function() {
     $('#winner').empty();
     gameOver = false;
     // moves = 0;
-  });
+  })
+
+  // $("button").click(function() {
+  //   $('#col1').html('<div class="base"></div><div class="block" id="first"></div><div class="block" id="second"></div><div class="block" id="third"></div><div class="block" id="fourth"></div><div class="block" id="fifth"></div><div class="block" id="sixth"></div><div class="block" id="seventh"></div>');
+  //   $('#col2').html('<div class="base"></div>');
+  //   $('#col3').html('<div class="base"></div>');
+  //   $('#winner').empty();
+  //   gameOver = false;
+  //   // moves = 0;
+  // })
 
 
 });
-// var gameover = false;
-// var $stacks = $('.column');
-// var $blocks = $('.block');
-//
-// var movable = $('.column:last-child');
-// $(movable).addClass("movable");
-// $('.block').removeClass("movable");
-// $(movable).addClass("movable");
-// $blocks.draggable({
-//   revert: true
-// });
-//
-// // make blocks draggable
-// $('.movable').draggable({
-//   revert: true
-// });
-//
-// blocks only droppable in stacks
-// $('.column').droppable({
-//   accept: ".movable",
-//   drop: function(event, ui) {
-//     var drag = $(ui.draggable).attr('block');
-//     var lastChild = $($(this).children().last[0]).attr('data-block');
-//     if (parseInt(drag) > parseInt(lastChild)) {
-//       $(ui.draggable).draggable.draggable('option', 'revert', true);
-//       checkVictory();
-//     } else {
-//       $(ui.draggable).appendTo(this).attr('style', 'position: relative');
-//     }
-//   }
-// });
-//
-// function checkVictory() {
-//   if ($('#col3').children().length === 4) {
-//     alert("You've won!)");
-//     gameover = true;
-//   }
-// }
-//
-// function resetGame() {
-//   $('#col1').html('<div #first></div><div #second></div><div #third></div><div #fourth></div>');
-//   $('#col2').empty();
-//   $('#col3').empty();
-//   $('#announce-game-won').empty();
-//   gameover = false;
-// }

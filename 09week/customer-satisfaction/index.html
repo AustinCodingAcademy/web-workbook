@@ -1,61 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Portfolio Feedback</title>
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <!-- css -->
-  <link rel="stylesheet" href="style.css">
-  <!-- javascript and jquery -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
-  <script type="text/javascript" src="script.js"></script>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio Feedback</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  </head>
 
-<body>
-  <form action="https://docs.google.com/forms/d/e/1FAIpQLScnvlHqIi256EwgoHl7kQ0DQi5JIXzOKmH7ihMN19S6a7iIYQ/formResponse" method="POST" target="_self" autocomplete="on" onsubmit="">
-    <label for="email">What is your email address? * *</label>
-    <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-    <br />
-    <input type="email" name="email" value="" dir="auto" aria-label="What is your email address?  Must be a valid email address" aria-required="true" required title="Must be a valid email address">
-    <br />
-    <br />
-    <label for="password">Code word to access our secret club</label>
-    <br />
-    <input type="text" name="password" value="" dir="auto" aria-label="Code word to access our secret club." title="password">
-    <br />
-    <br />
-    <label for="gender">Gender</label>
-    <br />
-    <input type="radio" name="gender" value="Male" role="radio" aria-label="Male">
-    <label>Male</label>
-    <input type="radio" name="gender" value="Female" role="radio" aria-label="Female">
-    <label>Female</label>
-    <input type="radio" name="gender" value="It&apos;s complicated" role="radio" aria-label="It&apos;s complicated">
-    <label>It&apos;s complicated</label>
-    <br />
-    <br />
-    <label for="entry_367725167">What best describes you?</label>
-    <br />
-    <input type="checkbox" name="entry.272337348" value="Hiring" role="checkbox">
-    <label>Hiring</label>
-    <input type="checkbox" name="entry.272337348" value="Know someone hiring" role="checkbox">
-    <label>Know someone hiring</label>
-    <input type="checkbox" name="entry.272337348" value="Business owner" role="checkbox">
-    <label>Business owner</label>
-    <input type="checkbox" name="entry.272337348" value="Freelancer" role="checkbox">
-    <label>Freelancer</label>
-    <input type="checkbox" name="entry.272337348" value="Unemployed" role="checkbox">
-    <label>Unemployed</label>
-    <br />
-    <br />
-    <label for="awesomeness">Please rate my level of awesomeness</label>
-    <br />
-    <input type="range" name="awesomeness">
+  <body>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLScnvlHqIi256EwgoHl7kQ0DQi5JIXzOKmH7ihMN19S6a7iIYQ/formResponse" method="POST" target="_self" autocomplete="on" onsubmit="">
+      <label for="email">What is your email address? *</label>
+      <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+      <br />
+      <input type="email" name="email" id="email" value="" dir="auto" aria-label="What is your email address?  Must be a valid email address" aria-required="true" required title="Must be a valid email address">
+      <br />
+      <br />
+      <label for="password">Secret password for our secret club</label>
+      <br />
+      <input type="text" name="password" id="password" value="" dir="auto" aria-label="Code word to access our secret club." title="password">
+      <br />
+      <br />
+      <label for="gender">Gender</label>
+      <br />
+      <input type="radio" name="gender" value="Male" role="radio" aria-label="Male">
+      <label>Male</label>
+      <input type="radio" name="gender" value="Female" role="radio" aria-label="Female">
+      <label>Female</label>
+      <input type="radio" name="gender" value="It&apos;s complicated" role="radio" aria-label="It&apos;s complicated">
+      <label>It&apos;s complicated</label>
+      <br />
+      <br />
+      <label for="entry_367725167">What best describes you?</label>
+      <br />
+      <input type="checkbox" name="entry.272337348" value="Hiring" role="checkbox">
+      <label>Hiring</label>
+      <input type="checkbox" name="entry.272337348" value="Know someone hiring" role="checkbox">
+      <label>Know someone hiring</label>
+      <input type="checkbox" name="entry.272337348" value="Business owner" role="checkbox">
+      <label>Business owner</label>
+      <input type="checkbox" name="entry.272337348" value="Freelancer" role="checkbox">
+      <label>Freelancer</label>
+      <input type="checkbox" name="entry.272337348" value="Unemployed" role="checkbox">
+      <label>Unemployed</label>
+      <br />
+      <br />
+      <label for="awesomeness">Please rate my level of awesomeness</label>
+      <br />
+      <input type="range" name="awesomeness">
+      <br />
+      <br />
+      <label for="comments">Any and all constructive criticism is greatly appreciated!</label>
+      <br />
+      <textarea name="comments" id="comments" placeholder="Go ahead... I can take it"></textarea>
       <br />
       <br />
       <label for="website">Do you have a website you would like some feedback on?</label>
@@ -63,57 +66,19 @@
       <input type="url" name="website" value="" dir="auto" aria-label="Do you have a website you would like some feedback on?  Must be a valid URL" title="Must be a valid URL">
       <br />
       <br />
-    <input type="hidden" name="draftResponse" value="[null,null,&quot;4016178260219576787&quot;]">
-    <input type="hidden" name="pageHistory" value="0">
-    <input type="hidden" name="fbzx" value="4016178260219576787">
-    <label for="emailReceipt" style="display:inline;"></label>
-    <input type="submit" name="submit" value="Submit">
-    <input type="reset" value="Reset">
-  </form>
-</body>
+      <input type="hidden" name="draftResponse" value="[null,null,&quot;4016178260219576787&quot;]">
+      <input type="hidden" name="pageHistory" value="0">
+      <input type="hidden" name="fbzx" value="4016178260219576787">
+      <label for="emailReceipt" style="display:inline;"></label>
+      <input type="submit" name="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+
+    <!-- javascript and jquery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+  </body>
 
 </html>
-
-
-
-<!-- classwork -->
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Customer Satisfaction</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-</head>
-<body>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3 col-12">
-        <div class="panel">
-          <form method="POST" action="index.html">
-            <label for="email">Enter your Email</label>
-            <br />
-            <input type="text" name="email" placeholder="deyton.koch@gmail.com" id="email" />
-            <br />
-            <br />
-            <label for="password">Enter your Password</label>
-            <br />
-            <input type="text" name="password" placeholder="*********" id="password" />
-            <br />
-            <br />
-            <input type="submit" value="Submit" />
-            <br />
-            <br />
-            <label>
-              <input type="checkbox" checked name="remember">Remember me?
-            </label>
-            <label for="title">Title</label>
-            <input type="text" value="" selected>Please choose</option>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-</html> -->
