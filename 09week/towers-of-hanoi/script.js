@@ -59,13 +59,7 @@ $(document).ready(function() {
       gameOver = true;
     }
   }
-  //reset game using reset button in html and calling "#pole1" containing all "block" class, "#pole2" & "#pole3" with a class '.html'. All 'block' classes will be passed into '#pole1'.
-
-  $('#reset').click(function(){
-    $('#pole1').html('<div id="base"></div><div class="block" id="num125" data-block="125"></div><div class="block" id="num100" data-block="100"></div><div class="block" id="num75" data-block="75"></div><div class="block" id="num50" data-block="50"></div><div class="block" id="num25" data-block="25"></div>');
-    $('#pole2').html('<div id="base"></div>');
-    $('#pole3').html('<div id="base"></div>');
-    $('#gotit').empty();
-    gameOver = false;
+  $('#refresh').click(function() {
+    location.reload();
   });
 });

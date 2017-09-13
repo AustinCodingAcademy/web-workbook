@@ -91,20 +91,30 @@ body {
   font-size: 4em;
   align-items: flex-end;
   position: absolute;
-  bottom: 70px;
+  top: 70px;
 }
-.clearfix {
-  position:fixed;
-  bottom: 0;
+
+.replay {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 40px;
   margin-bottom: 20px;
 }
 
-#reset {
-  font-size: 1.2em;
+#refresh {
+  font-size: 1.4em;
+  width: 130px;
+  border-radius: 12px;
+}
+
+#refresh:hover {
+  font-size: 1.6em;
+  color: green;
+  background-color: antiquewhite;
 }
 
 @media (max-width: 691px) {
-
   .block {
     height: 20px;
     width: 50px;
@@ -118,7 +128,6 @@ body {
   #base {
     width: 85px;
   }
-
   #num125 {
     width: 87px;
     background-color: purple;
@@ -131,32 +140,27 @@ body {
     margin: 2px;
     z-index: 1;
   }
-
   #num75 {
     width: 62px;
     background-color: orange;
     z-index: 1;
   }
-
   #num50 {
     width: 50px;
     background-color: green;
     margin: 2px;
     z-index: 1;
   }
-
   #num25 {
     width: 40px;
     background-color: #4d94ff;
     z-index: 1;
   }
-
   .pole {
-    margin:auto 40px;
+    margin: auto 40px;
     width: 12px;
     position: relative;
     bottom: 0;
-    left:0;
+    left: 0;
   }
-
 }
