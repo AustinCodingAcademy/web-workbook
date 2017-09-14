@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>form</title>
+</head>
+
+<body>
+  <div>
+    <h1>Customer Satisfaction</h1>
+     <!-- beginning of form information -->
+    <form method="PUT" action="index.html">
+      <label for="email">Enter your email</label>
+      <br>
+      <input type="email" name="email" placeholder="aguevara@bisdtx.org" id="email" />
+      <br>
+      <label for="password">Password</label>
+      <br>
+      <input type="password" name="password" placeholder='*********' id="password" minlength="6" required/>
+      <br>
+      <br>
+      <p>How would you rate the quality of your experience?</p>
+      <input type="radio" name="rating" value="veryPositive" checked>Very positive<br>
+      <input type="radio" name="rating" value="somewhatPositive">Somewhat positive<br>
+      <input type="radio" name="rating" value="neutral">Neutral<br>
+      <input type="radio" name="rating" value="somewhatNegative">Somewhat negative<br>
+      <br>
+      <br>  <!-- function updateTextInput assigns new value to text box via textInput -->
+      <p>Approximately how many times have you used our website?</p>
+      <input type="range" name="rangeInput" min="0" max="100" value="1" step="5" onchange="updateTextInput(this.value);">
+      <input type="text" id="textInput" value="1">
+      <br>
+      <br>
+      <br> Rate overall experience (between 1 and 5):
+      <input type="number" name="quantity" min="1" max="5">
+      <br>
+      <br>
+      <input type="checkbox" checked/> Want more info
+      <br>
+      <br>
+      <br>
+      <label for="url">Enter Your Url:</label>
+      <input type="url" required aria-required="true" name="url" />
+      <br>
+      <br>
+      <br>
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>   <!-- end of form information -->
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+</body>
+
+</html>
