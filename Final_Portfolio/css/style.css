@@ -1,0 +1,328 @@
+@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  #containers {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: auto;
+  }
+  h1 {
+    position: absolute;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: -43%;
+    color: white;
+    font-size: 4em;
+    font-family: 'Raleway', sans-serif;
+  }
+  #description {
+    position: relative;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: -32%;
+    margin-bottom: 2%;
+    color: white;
+    font-size: 1.7em;
+    font-family: 'Raleway', sans-serif;
+    width: 90%;
+    font-weight: lighter;
+  }
+
+  #leadspace {
+    margin-top: -10%;
+  }
+#contact-me {
+    width: 120px;
+    height: 45px;
+    /*border-width: .2px;*/
+    /*border: solid;
+    color: white;*/
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    /*display: inline;*/
+    padding: .5%;
+    margin-top: -24%;
+    margin-left: 5%;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  /*content block 2*/
+  .work-image {
+    background-color: #F2F2F2;
+  }
+  .work-image {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 2%;
+  }
+  .work-image img {
+    float: left;
+    margin: 15px;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+  }
+  .work-image img:hover {
+    margin-top: 2px;
+  }
+  nav.navbar-nav {
+    margin-left: -10%;
+  }
+  .intro-paragraph {
+    font-size: 3em;
+    text-align: center;
+    padding: 2%;
+  }
+  #brand-logo-baby {
+    display: none;
+  }
+  .brand-logo {
+    margin-top: 3%;
+  }
+  #content-block3 {
+    margin-top: 40%;
+    width: 110%;
+    float: none;
+    background-color: black;
+    font-size: 2.1em;
+    color: white;
+    padding-top: 6%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: -10%;
+    margin-top: 2%;
+    margin-left: -2%;
+  }
+  .middle-paragraph {
+    display: none;
+  }
+  .middle-paragraph-extended {
+    text-align: left;
+    margin-left: -2%;
+    width: 100%;
+    padding-bottom: 3%;
+  }
+  iframe {
+    margin-left: -2%;
+  }
+  /*.right{
+  position: relative;
+  margin-left: 60%;
+}*/
+  /*I know we didn't learn this but I thought it was a cool animation to add to the space background*/
+  @-webkit-keyframes particleAnimation {
+    from {
+      left: -100px;
+    }
+    to {
+      left: calc( 100% + 100px);
+    }
+  }
+  @keyframes particleAnimation {
+    from {
+      left: -100px;
+    }
+    to {
+      left: calc( 100% + 100px);
+    }
+  }
+  .p {
+    position: fixed;
+    left: 0px;
+    top: 50px;
+    width: 1px;
+    height: 1px;
+    background-color: white;
+    position: fixed;
+    -webkit-animation-name: particleAnimation;
+            animation-name: particleAnimation;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+  .p::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100px;
+    right: 1px;
+    top: 0px;
+    height: 1px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(255, 255, 255, 0.4)));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.4) 100%);
+  }
+  .p-1 {
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+  }
+  .p-2 {
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    top: 60%;
+  }
+  .p-3 {
+    -webkit-animation-duration: 20s;
+            animation-duration: 20s;
+    top: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    position: absolute;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 7%;
+    margin-top: -50%;
+    color: white;
+    font-size: 4em;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  #contact-me {
+    width: 120px;
+    height: 45px;
+    /*border-width: .2px;*/
+    outline-width: thin;
+    color: white;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    /*display: inline;*/
+    padding: 1.2%;
+    margin-top: -38%;
+    margin-left: 43%;
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  #description {
+    display: none;
+  }
+  .intro-paragraph {
+    font-size: 5em;
+    color: black;
+  }
+  .intro-paragraph {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 22%;
+
+  }
+
+  .middle-paragraph{
+    font-size: 2em;
+    text-align: center;
+    margin-top: 2%;
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  #description {
+    display: none;
+  }
+  .containers {
+    display-flex;
+    -ms-flex-wrap: wrap;
+    display-flex;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #contact-me {
+    width: 120px;
+    height: 45px;
+    /*border-width: .2px;*/
+    outline-width: thin;
+    color: white;
+    position: relative;
+    z-index: 1;
+    /*display: inline;*/
+    padding: 1.2%;
+    margin-top: -23%;
+    margin-left: 34%;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  #brand-logo-baby {
+    margin-top: -83%;
+    margin-left: 17%;
+    opacity: .5;
+  }
+  h1 {
+    position: absolute;
+    font-weight: bolder;
+    text-align: center;
+    margin-left: 8%;
+    margin-top: -35%;
+    color: white;
+    font-size: 1.9em;
+    font-family: 'Raleway', sans-serif;
+  }
+  .intro-paragraph {
+    font-size: 1.7em;
+    text-align: center;
+    color: black;
+    margin-top: 8%;
+  }
+  .p {
+    display: none;
+  }
+  .middle-paragraph {
+    font-size: 1.7em;
+    text-align: center;
+    color: black;
+    margin-top: 3%;
+  }
+  .middle-paragraph-extended {
+    display: none;
+  }
+  .hover {
+    display: none;
+  }
+  .work-image {
+    display-flex;
+    -webkit-box-orient: vertical;
+    display-flex;
+    -webkit-box-direction: normal;
+    display-flex;
+        -ms-flex-direction: column;
+    display-flex;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-left: -5%;
+  }
+  .mid-small-logo {
+    position: relative;
+    margin-top: -15%;
+  }
+  .middle-paragraph-extended {
+    display: none;
+  }
+
+  iframe {
+    margin-left: 0%;
+    margin-top: 0%;
+  }
+}
