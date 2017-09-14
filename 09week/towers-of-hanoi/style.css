@@ -1,38 +1,68 @@
-[data-stack] {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 101px;
-  background-color: aliceblue;
-  margin: 25px;
-}
+'use strict';
 
-[data-block] {
-  width: 25px;
-  float: left;
-}
+$(document).ready(function() {
+// define stacks, blocks, and moveable blocks
+  var gameOver = false;
+  var $stacks = $('[data-stack]');
+  var $blocks = $('[data-block]');
+  var $movableBlocks = $('[data-block]:last-child');
+  $movableBlocks.addClass("movable");
 
-[data-block="25"] {
-  height: 25px;
-  background-color: blue;
-}
+ //blocks are draggable
+  $blocks.draggable({
+    revert: true
+  });
+  $stacks.droppable({
+    accept: ".movable",
+    drop: function(event, ui) {
+      if (!gameOver) {
+        if (dropReady($(this), ui.draggable)) {
+          ui.draggable.draggable('option', 'revert', false);
+          $(this).append(ui.draggable.detach());
+          ui.draggable.css({
+            'top': 0,
+            'left': 0
+          });
 
-[data-block="50"] {
-  height: 50px;
-  background-color: green;
-}
 
-[data-block="75"] {
-  height: 75px;
-  background-color: red;
-}
+          $movableBlocks = $('[data-block]:last-child');
+          $('[data-block]').removeClass("movable");
+          $movableBlocks.addClass("movable");
+          $blocks.draggable({
+            revert: true
+          });
 
-[data-block="100"] {
-  height: 100px;
-  background-color: yellow;
-}
+          winState();
+        }
+      } else {
+        newGame();
+      }
+    }
+  });
 
-#announce-game-won {
-  font-size: 50px;
-  text-align: center;
-}
+  function newGame() {
+    $('[data-stack="1"]').html('<div data-stack="1"><div data-block="100"></div><div data-block="75"></div><div data-block="50"></div><div data-block="25"></div></div>');
+    $('[data-stack="2"]').empty();
+    $('[data-stack="3"]').empty();
+    $('announce-game-won').empty();
+    gameOver = false;
+  }
+
+
+  function dropReady($stack, $block) {
+    var $last_block = $stack.children().last();
+    if (parseInt($block.attr("data-block")) < parseInt($last_block.attr("data-block")) || $stack.children().length === 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+
+  function winState() {
+    if ($('[data-stack="3"]').children().length === 4) {
+      $('#announce-game-won').html('We got a Winner!');
+      gameOver = true;
+    }
+  }
+});
