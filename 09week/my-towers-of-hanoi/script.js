@@ -64,23 +64,25 @@ $(document).ready(function() {
     }
   }
 
-  $("button").click(function() {
-    $('#col1').html('<div class="base"></div><div class="block" id="first"></div><div class="block" id="second"></div><div class="block" id="third"></div><div class="block" id="fourth"></div><div class="block" id="fifth"></div><div class="block" id="sixth"></div><div class="block" id="seventh"></div>');
-    $('#col2').html('<div class="base"></div>');
-    $('#col3').html('<div class="base"></div>');
-    $('#winner').empty();
-    gameOver = false;
-    // moves = 0;
-  })
-
   // $("button").click(function() {
   //   $('#col1').html('<div class="base"></div><div class="block" id="first"></div><div class="block" id="second"></div><div class="block" id="third"></div><div class="block" id="fourth"></div><div class="block" id="fifth"></div><div class="block" id="sixth"></div><div class="block" id="seventh"></div>');
   //   $('#col2').html('<div class="base"></div>');
   //   $('#col3').html('<div class="base"></div>');
   //   $('#winner').empty();
-  //   gameOver = false;
+  //   var gameOver = false;
+  //   var $stacks = $('.column');
+  //   var $blocks = $('.block');
+  //   $movableBlocks = $('.block:last-child');
+  //   $movableBlocks.addClass("movable");
+  //   $blocks.draggable({
+  //     revert: false
+  //   });
+  //   // gameOver = false;
   //   // moves = 0;
   // })
 
+  $('button').click(function() {
+         location.reload();
+  });
 
 });

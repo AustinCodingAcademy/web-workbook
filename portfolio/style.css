@@ -1,10 +1,11 @@
-.container-fluid {
+body .container-fluid {
   display: flex;
   padding: 2%;
+  width: 100%;
 }
 
 header {
-  background-image: url(images/background2.jpg);
+  background-image: url(images/pen.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -14,16 +15,14 @@ header {
   border-radius: 30px;
 }
 
-.title a {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+.title img {
+  margin-left: 18.5%;
+  width: 60%;
+  margin-top: 3%;
 }
 
-.title img {
-  width: 80%;
-  margin-top: 5%;
-  position: relative;
+.title img:hover {
+  cursor: pointer;
 }
 
 .stack img {
@@ -68,10 +67,9 @@ header {
   width: 50px;
 }
 
-.about {
-  width: 100%;
+div .about {
   background-color: rgba(255, 255, 255, 0.5);
-  margin: 50% 0 25% 0;
+  margin: 20% 10% 10% 10%;
   padding: 2%;
   text-align: center;
   border: 2px solid #adc8fc;
@@ -79,12 +77,20 @@ header {
   font-family: 'Quicksand', sans-serif;
 }
 
-.about p, h3 {
+.about a {
+  color: #adc8fc;
+}
+
+.about a:hover {
+  color: #ffffff;
+}
+
+/*.about p, h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-left: 10%;
-}
+}*/
 
 .social {
   display: flex;
@@ -97,14 +103,17 @@ header {
 }
 
 .social a img {
-  width: 60%;
+  width: 100px;
 }
 
-.projects {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+div h4 {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 3em;
+  margin-bottom: 5%;
+  color: #adc8fc;
+  border-bottom: 2px solid black;
+  padding: 10px;
 }
 
 .projects img {
@@ -132,6 +141,9 @@ header {
   transform: scale(0);
 }
 
+.games img {
+  margin-bottom: 50px;
+}
 
 /*.projects .top h2 {
   width: 100%;
@@ -159,6 +171,21 @@ header {
 
 .projects a:hover+p {
   transform: scale(1);
+}
+
+/*form css*/
+form {
+  font-family: 'Quicksand', sans-serif;
+  padding: 20px;
+  text-align: center;
+}
+
+input {
+  margin: 10px;
+}
+
+input[type=submit], input[type=reset] {
+  justify-content: center;
 }
 
 
