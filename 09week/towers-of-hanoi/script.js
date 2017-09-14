@@ -1,16 +1,7 @@
 'use strict';
 
 $(document).ready(function() {
-  //   var sound = document.createElement('audio');
-  //   sound.setAttribute('src', 'moon.mp3');
-  //   $.get();
-  //   // Put app logic here
-  //   $('[data-stack]').click(function() {
-  //     sound.play();
-  //     // played = true;
-  //     // console.log("Playing");
-  // });
-  // $('#song').get(0).play();
+
   $('.draggable').draggable({
     revert: "invalid"
   });

@@ -1,7 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
-  height: 3050px;
+  height: 3150px;
   width: 100%;
   background-image: url('https://i.ytimg.com/vi/M2uBtg_PzKg/maxresdefault.jpg')
 }
@@ -45,6 +45,7 @@ header {
   background-image: url('https://i.ytimg.com/vi/M2uBtg_PzKg/maxresdefault.jpg');
   display: flex;
   justify-content: center;
+
   border-radius: 0px;
   height: 140px;
   width: 100%;
@@ -54,7 +55,9 @@ header {
 
 .header {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
   height: 140px;
   width: 100%;
   border-radius: 0px;
@@ -63,8 +66,12 @@ header {
 }
 
 .navbar {
+
   display: flex;
-  justify-content: center;
+  /*justify-content: center;*/
+  justify-content: space-around;
+
+
 }
 
 ul {
@@ -79,21 +86,28 @@ li {
   padding-right: 20px;
   color: #337AB7;
 }
-
+.box{
+  height: 25px;
+  display: flex;
+  /*align-items: flex-end;*/
+  margin-left: 675px;
+}
 .container-2 {
   display: flex;
-  justify-content: center;
-  margin-left: 1000px;
+  margin-left: auto;
   width: 300px;
   vertical-align: middle;
-  white-space: nowrap;
+
   position: relative;
   font-family: 'Audiowide', cursive;
   color: #337AB7;
+  /*border:  1px solid yellow;*/
+
 }
 
 .container-2 .icon {
   display: flex;
+  justify-content: flex-end;
   padding-right: 10px;
 }
 
@@ -113,7 +127,10 @@ li {
   font-size: 40px;
 }
 
-
+/* bootstrap window*/
+.bootwin {
+  height: 500px;
+}
 /*Lower Half*/
 
 section {
@@ -161,7 +178,9 @@ section {
 .gif {
   display: none;
 }
-
+.col-md-3 {
+  font-size: 30px;
+}
 .linkicons {
   height: 100px;
   width: 100%;
@@ -178,25 +197,30 @@ section {
   align-items: column;
   height: 60px;
   width: 100%;
-  font-size: 45px;
+  color: #337AB7;
 }
-
-
-/*Inputs*/
-
-.input {
-  /*border: 1px solid blue;*/
-  display: flex;
-  justify-content: center;
-  align-items: column;
-  /*height: 150px;*/
+/*form Fonts*/
+.container {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  width:  60%;
+  color: #337AB7;
+
+}
+.form-group {
+  font-size: 20px;
+}
+/*form Inputs*/
+.form-control{
+  margin-left: 10px;
+}
+.form-check{
+  margin-left: 40px;
+  font-size: 20px;
 }
 
-input {
-  height: 30px;
-  width: 300px;
-}
+
 
 
 /* Media Querry*/
@@ -217,6 +241,15 @@ input {
     filter: hue-rotate(400deg);
     opacity: .8;
   }
+  .bootwin {
+    height: 700px;
+  }
+  .boot {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
   section {
     width: 100%;
     display: flex;
