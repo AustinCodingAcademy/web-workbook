@@ -1,67 +1,102 @@
-'use strict';
+body {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  background-color: #222222;
+  background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+  color: white;
+}
+/* Title Neon effect */
+.button {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  font: normal 48px/normal "Warnes", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
 
-$(document).ready(function() {
+.button:hover {
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+}
 
-  var gameOver = false;
-  var $stacks = $('[data-stack]');
-  var $blocks = $('[data-block]');
-  var $movableBlocks = $('[data-block]:last-child');
-  $movableBlocks.addClass("movable");
+/* Stack Style */
 
-  $blocks.draggable({
-    revert: true
-  });
-  $stacks.droppable({
-    accept: ".movable",
-    drop: function(event, ui) {
-      if (!gameOver) {
-        if (dropReady($(this), ui.draggable)) {
-          ui.draggable.draggable('option', 'revert', false);
-          $(this).append(ui.draggable.detach());
-          ui.draggable.css({
-            'top': 0,
-            'left': 0
-          });
+[data-stack] {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 20px;
+  margin: 100px;
+  background-color: black;
+}
 
+[data-stack]:hover{
+  background-color: white;
 
-          $movableBlocks = $('[data-block]:last-child');
-          $('[data-block]').removeClass("movable");
-          $movableBlocks.addClass("movable");
-          $blocks.draggable({
-            revert: true
-          });
+}
 
-          winState();
-        }
-      } else {
-        newGame();
-      }
-    }
-  });
-
-  function newGame() {
-    $('[data-stack="1"]').html('<div data-stack="1"><div data-block="100"></div><div data-block="75"></div><div data-block="50"></div><div data-block="25"></div></div>');
-    $('[data-stack="2"]').empty();
-    $('[data-stack="3"]').empty();
-    $('announce-game-won').empty();
-    gameOver = false;
-  }
-
-
-  function dropReady($stack, $block) {
-    var $last_block = $stack.children().last();
-    if (parseInt($block.attr("data-block")) < parseInt($last_block.attr("data-block")) || $stack.children().length === 0) {
-      return true;
-    } else {
-      return false;
-    }
-  }
+/* Block style */
 
 
-  function winState() {
-    if ($('[data-stack="3"]').children().length === 4) {
-      $('#announce-game-won').html('We got a Winner!').css('background-color', 'red');
-      gameOver = true;
-    }
-  }
-});
+[data-block] {
+  width: 25px;
+  float: left;
+  background-color: black;
+  border: solid white .5px;
+}
+
+[data-block="25"] {
+  height: 50px;
+}
+
+[data-block="50"] {
+  height: 75px;
+}
+
+[data-block="75"] {
+  height: 100px;
+}
+
+[data-block="100"] {
+  height: 125px;
+}
+
+
+#announce-game-won {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  font: normal 48px/normal "Warnes", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+/* Winner Neon effect */
+
+#announce-game-won:hover {
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+}
