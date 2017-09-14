@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Towers of Hanoi</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div data-stack="1">
-    <div data-block="100"></div>
-    <div data-block="75"></div>
-    <div data-block="50"></div>
-    <div data-block="25"></div>
+  <h1>TOWERS OF HANOI</h1>
+  <div class="container">
+    <div data-stack="1">
+      <div data-block="4"></div>
+      <div data-block="3"></div>
+      <div data-block="2"></div>
+      <div data-block="1"></div>
+    </div>
+    <div data-stack="2">
+    </div>
+    <div data-stack="3">
+    </div>
   </div>
-  <div data-stack="2">
+  <div class="bottom">
+    <button id="clear">Do You Want To Play Again?</button>
+    <div id="announce-game-won"></div>
   </div>
-  <div data-stack="3">
-  </div>
-  <div id="announce-game-won"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
   <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
