@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="C:/Users/Patrick/Documents/dev/web-workbook/basic_reset.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+<head>
+  <script type="text/javascript" src="C:\Users\Patrick\Documents\dev\web-workbook\07week\dom-practice\js\script.js"></script>
+  <meta charset="utf-8">
+  <title>DOM Stuff</title>
+</head>
+<body>
+  <main>
+    <h1>Customer Satisfaction Form</h1><br>
+    <form action="form.php">
+      <p>First Name</p>
+      <input type="text" name="first_name"><br>
+      <br><p>Last Name</p>
+      <input type="text" name="last_name"><br>
+<!-- url -->
+      <br><p>LinkedIn Profile</p>
+      <input type="text" name="url"><br>
+<!-- password -->
+      <br><p>Complimentary Password Verification Service</p>
+      <input type="password" name="password"><br>
+      <br><p>Re-enter Password</p>
+      <input type="password" name="password2"><br>
+<!-- email -->
+      <br><p>Email</p>
+      <input type="email" name="email"><span id="email_alert">Not a valid email address</span><br><br>
+<!-- radio -->
+      <input type="radio" name="gender" value="male"> Male<br>
+      <input type="radio" name="gender" value="female"> Female<br>
+      <input type="radio" name="gender" value="other"> Other<br>
+<!-- range -->
+      <br><p>Desired Volume</p>
+      <input type="range" name="volume" min="0" max="10"><br>
+<!-- comments (spellcheck) -->
+      <p>Comments</p>
+      <textarea rows="4" cols="50" spellcheck="true"></textarea><br>
+<!-- checkbox -->
+      <input type="checkbox" name="t_and_c">I have read the Terms and Conditions.<br>
+<!-- submit button & reset button -->
+      <button type="button">Submit</button><button type="button">Reset</button>
+    </form>
+  </main>
+</body>

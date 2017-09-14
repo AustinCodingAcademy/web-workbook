@@ -2,7 +2,6 @@
 
 $(document).ready(function() {
   var $block = null;
-  var largeblock
   $('[data-stack]').click(function() {
     if (!$block) {
       $block = $(this).children().last().detach();
@@ -13,7 +12,7 @@ $(document).ready(function() {
       } else {
       $(this).append($block);
       $block = null;
-      // console.log($("#winner").children().length);
+      console.log($("#winner").children().length);
     }
     }
     endgame();
