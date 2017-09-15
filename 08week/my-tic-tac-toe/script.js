@@ -29,7 +29,11 @@ $(document).ready(function() {
       $('#box1').hasClass('x') && $('#box5').hasClass('x') && $('#box9').hasClass('x') ||
       $('#box3').hasClass('x') && $('#box5').hasClass('x') && $('#box7').hasClass('x')
     ) {
-      alert('Winner: X!');
+      function xvictory() {
+        alert("X is the winner!");
+      }
+      setTimeout(xvictory, 200);
+      // alert('X is the Winner!').delay(5000);
       turn = 0;
     } else if ($('#box1').hasClass('o') && $('#box2').hasClass('o') && $('#box3').hasClass('o') ||
       $('#box4').hasClass('o') && $('#box5').hasClass('o') && $('#box6').hasClass('o') ||
@@ -40,11 +44,19 @@ $(document).ready(function() {
       $('#box1').hasClass('o') && $('#box5').hasClass('o') && $('#box9').hasClass('o') ||
       $('#box3').hasClass('o') && $('#box5').hasClass('o') && $('#box7').hasClass('o')
     ) {
-      alert('Winner: O!');
+      function ovictory() {
+        alert("O is the winner!");
+      }
+      setTimeout(ovictory, 200);
+      // alert('O is the Winner').delay(5000);
       turn = 0;
       // tie
     } else if (turn === 8) {
-      alert("Cat's Game!");
+      function tie() {
+        alert("Cat's game");
+      }
+      setTimeout(tie, 200);
+      // alert("Cat's Game!").delay(5000);
       turn = 0;
     }
   };
