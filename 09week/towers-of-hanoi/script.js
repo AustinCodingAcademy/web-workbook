@@ -1,5 +1,7 @@
 'use strict';
-
+setTimeout(function () {
+    alert("Welcome to Towers of Henoi\nInstructions~Please read:\nTo Win player must move all blocks to far right column\nand stack them from largest on bottom to smallest on top.\nPlayer may only move top block at any given time.\n Enjoy!!");
+}, 1000);
 $(document).ready(function() {
   var sound = document.createElement('audio');
   sound.setAttribute('src', 'moon.mp3');
@@ -8,7 +10,7 @@ $(document).ready(function() {
     sound.play();
   }
   )
-
+  // alert("Welcome to Towers of Hanoi"), 3000;
   $('.draggable').draggable({
     revert: "invalid"
   });
