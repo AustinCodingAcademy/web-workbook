@@ -23,8 +23,11 @@ $(document).ready(function() {
   game.setAttribute('src', 'play_a_game.mp3');
   $.get();
 
-  window.alert("Shall we play a game?");
-  game.play();
+  // alert("Shall we play a game?");
+  // game.play();
+    $('#start').click(function(){
+    game.play();
+});
 
 
   $('[data-cell]').click(function() {
@@ -45,7 +48,7 @@ $(document).ready(function() {
     }
     turn++;
   });
-  $("button").on('click', function(event) {
+  $("#clear").on('click', function(event) {
     // event.preventDefault();
     console.log("clear button pushed");
     $("div .box[data-cell], #clear,  #announce-winner").fadeOut(1000, function() {
