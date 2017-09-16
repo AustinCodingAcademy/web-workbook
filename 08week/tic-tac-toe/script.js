@@ -22,7 +22,7 @@ $(document).ready(function() {
   var sound = document.createElement('audio');
   sound.setAttribute('src', 'play_a_game.mp3');
   $.get();
-  $('body').hover(function(){
+  $('body').click(function(){
     sound.play();
   });
 
