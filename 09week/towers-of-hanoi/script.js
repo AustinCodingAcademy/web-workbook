@@ -44,6 +44,7 @@ $(document).ready(function() {
   }
 
 });
+
 (function ($) {
 
   // Detect touch support
