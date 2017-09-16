@@ -24,8 +24,7 @@ $(document).ready(function() {
   $.get();
   $('body').hover(function(){
     sound.play();
-  }
-  )
+  });
 
   $('[data-cell]').click(function() {
     // sound.play();
