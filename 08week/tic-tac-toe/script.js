@@ -25,7 +25,7 @@ $(document).ready(function() {
   // $('body').click(function(){
   //   sound.play();
   // });
-  window.alert("Shall we play a Game?")
+  window.alert("Shall we play a Game?");
   sound.play();
 
   $('[data-cell]').click(function() {
