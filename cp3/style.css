@@ -1,38 +1,98 @@
+body {
+  background-image: url(fantasy-782001_1280.jpg);
+  background-position: left top;
+}
+header {
+  font-size: 50px;
+  font-family: 'Anton', sans-serif;
+  color: #7FFF00;
+  display: flex;
+  justify-content: center;
+}
+
+/* Game flexbox that turns columns into rows and spaces the towers evenly on page width */
+
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Tower flexbox that redirects the blocks and center aligns them on the stack */
+
 [data-stack] {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column-reverse;
   align-items: center;
-  height: 101px;
-  background-color: aliceblue;
+  width: 20px;
+  height: 300px;
+  border-left: 50px solid;
+  border-right: 50px solid;
+  border-bottom: 10px solid;
+  background-color: #FF00FF;
   margin: 25px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
+
+/* Generic block styling */
 
 [data-block] {
-  width: 25px;
+  height: 25px;
   float: left;
+  border-radius: 30px;
 }
+/* Extra-small block styling */
 
 [data-block="25"] {
-  height: 25px;
-  background-color: blue;
+  width: 40px;
+  background-color: #800080;
 }
+
+/* Small block styling */
 
 [data-block="50"] {
-  height: 50px;
-  background-color: green;
+  width: 60px;
+  background-color: #800080;
 }
+
+/* Medium block styling */
 
 [data-block="75"] {
-  height: 75px;
-  background-color: red;
+  width: 80px;
+  background-color: #800080;
 }
+
+/* Large block styling */
 
 [data-block="100"] {
-  height: 100px;
-  background-color: yellow;
+  width: 100px;
+  background-color: #800080;
 }
 
+/* Button flexbox positioning */
+
+.brutton {
+  display: flex;
+  justify-content: center;
+}
+
+/* Button styling */
+
+button {
+  border-radius: 50px;
+  background-color: #7FFF00;
+  color: #FF00FF;
+  border: 2px dashed #800080;
+  font-size: 30px;
+  width: 200px;
+  height: 50px;
+
+}
+
+/* Alert Styling */
+
 #announce-game-won {
-  font-size: 50px;
+  font-size: 100px;
   text-align: center;
 }
