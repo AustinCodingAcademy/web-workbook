@@ -22,9 +22,11 @@ $(document).ready(function() {
   var sound = document.createElement('audio');
   sound.setAttribute('src', 'play_a_game.mp3');
   $.get();
-  $('body').click(function(){
-    sound.play();
-  });
+  // $('body').click(function(){
+  //   sound.play();
+  // });
+  window.alert("Shall we play a Game!")
+  sound.play();
 
   $('[data-cell]').click(function() {
     // sound.play();
