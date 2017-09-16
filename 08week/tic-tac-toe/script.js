@@ -25,7 +25,7 @@ $(document).ready(function() {
   // $('body').click(function(){
   //   sound.play();
   // });
-  window.alert("Shall we play a Game!")
+  window.alert("Shall we play a Game? A win is accomplished by re-stacking the tower on only the last column with the largest piece on the bottom. You may only move the top piece at any given time")
   sound.play();
 
   $('[data-cell]').click(function() {
