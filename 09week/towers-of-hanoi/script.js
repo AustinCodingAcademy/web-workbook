@@ -1,6 +1,13 @@
 'use strict';
 
 $(document).ready(function() {
+  var sound = document.createElement('audio');
+  sound.setAttribute('src', 'moon.mp3');
+  $.get();
+  $('body').hover(function(){
+    sound.play();
+  }
+  )
 
   $('.draggable').draggable({
     revert: "invalid"
