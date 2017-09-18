@@ -1,6 +1,9 @@
 'use strict';
     $(document).ready(function() {
       var $block = null;
+      var $turns = 0;
+      var $tracker = $("#tracker")
+      var $reset = $("#reset")
 // On Click!!
       $("[data-stack]").click(function(){
         var $children = $(this).children();
@@ -12,9 +15,13 @@
           if ( $lastChild.data("block") < $block.data("block")) {
 // Invalid Move!!
             alert("Invalid Move");
+            $turns++;
+            $tracker.text($turns);
           } else {
             $(this).append($block);
             $block = null;
+            $turns++;
+            $tracker.text($turns);
           }
     }
     // Chicken Dinner!!
@@ -23,11 +30,8 @@
       alert("Winner, Winner, Chicken Dinner!!");
     }
   });
+  // Reset Button!
+    $reset.click(function(){
+      location.reload();
+  });
 });
-
-//
-// if ($block) {
-//   $(this).append($block) {
-//     if ('data-stack').children().last().height(<$this)
-//   }
-// }
