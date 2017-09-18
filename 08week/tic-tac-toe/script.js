@@ -52,11 +52,15 @@ $(document).ready(function() {
       $('.box').removeClass('o');
       turns = 0;
   //This statement declares a tie if game takes 9 turns.
-    } else if (turns === 9) {
+} else if (turns == 9) {
+      function tvictory() {
       alert('Tie Game');
+      }
+      setTimeout(tvictory, 900);
       $('.box').removeClass('x');
       $('.box').removeClass('o');
       turns = 0;
+
 
   //Add .hasClass(disable) because turn has been taken.
     } else if ($(this).hasClass('disable')) {
@@ -79,10 +83,12 @@ $(document).ready(function() {
   box3.hasClass('x') && box5.hasClass('x') && box7.hasClass('x')
 ){
     // If any one of the 8 checks are met "alert" declares player "X" is winner.
+        function xvictory() {
         alert('Player "X" is the Winner!');
+        }
+        setTimeout(xvictory, 500);
         turns = 0;
       }
-
     // If player "X" does not met checks "else" statement is needed to allow player "O" to continue play.
     } else {
       turns++;
@@ -99,8 +105,11 @@ $(document).ready(function() {
   box3.hasClass('o') && box5.hasClass('o') && box7.hasClass('o')
 ){
     // If any one of the 8 checks are met "alert" declares player "O" is winner.
+        function ovictory() {
         alert('Player "O" is the Winner');
         turns = 0;
+      }
+      setTimeout(ovictory, 600);
       }
     }
   });

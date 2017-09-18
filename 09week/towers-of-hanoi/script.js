@@ -59,6 +59,22 @@ $(document).ready(function() {
       gameOver = true;
     }
   }
+
+  $(function() {
+    var count = 0;
+    $(".draggable").draggable();
+    $("#droppable").droppable({
+      drop: function(event, ui) {
+        count = count + 1;
+        $(this)
+          .addClass("ui-state-highlight")
+          .find("p")
+          .html("Dropped!");
+        $("#count").text(count);
+      },
+    });
+  });
+  
   $('#refresh').click(function() {
     location.reload();
   });
