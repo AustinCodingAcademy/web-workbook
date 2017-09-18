@@ -45,7 +45,6 @@ header {
   background-image: url('https://i.ytimg.com/vi/M2uBtg_PzKg/maxresdefault.jpg');
   display: flex;
   justify-content: center;
-
   border-radius: 0px;
   height: 140px;
   width: 100%;
@@ -55,23 +54,20 @@ header {
 
 .header {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
   height: 140px;
   width: 100%;
   border-radius: 0px;
-  /*   border: 1px solid grey; */
+  border: 1px solid grey;
   padding-top: 30px;
 }
 
 .navbar {
-
   display: flex;
-  /*justify-content: center;*/
+  justify-content: flex-start;
   justify-content: space-around;
-
-
+  border: 1px solid grey;
 }
 
 ul {
@@ -86,13 +82,67 @@ li {
   padding-right: 20px;
   color: #337AB7;
 }
-.box{
+
+
+/*Search button*/
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border: 1px solid green;
+  padding-right:  50px;
+}
+
+#custom-search-input {
+  width: 200px;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+}
+
+#custom-search-input .search-query {
+  padding-right: 3px;
+  padding-right: 4px \9;
+  padding-left: 3px;
+  padding-left: 4px \9;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+#custom-search-input button {
+  border: 0;
+  background: none;
+  /** belows styles are working good */
+  padding: 2px 5px;
+  margin-top: 2px;
+  position: relative;
+  left: -28px;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #D9230F;
+}
+
+.search-query:focus+button {
+  z-index: 3;
+}
+
+
+/*.box{
   height: 25px;
   display: flex;
-  /*align-items: flex-end;*/
+  align-items: flex-end;
   margin-left: 675px;
-}
-.container-2 {
+}*/
+
+
+/*.container-2 {
   display: flex;
   margin-left: auto;
   width: 300px;
@@ -101,15 +151,16 @@ li {
   position: relative;
   font-family: 'Audiowide', cursive;
   color: #337AB7;
-  /*border:  1px solid yellow;*/
 
-}
 
-.container-2 .icon {
+}*/
+
+
+/*.container-2 .icon {
   display: flex;
   justify-content: flex-end;
   padding-right: 10px;
-}
+}*/
 
 
 /*Writing Center*/
@@ -127,10 +178,14 @@ li {
   font-size: 40px;
 }
 
+
 /* bootstrap window*/
+
 .bootwin {
   height: 500px;
 }
+
+
 /*Lower Half*/
 
 section {
@@ -178,9 +233,11 @@ section {
 .gif {
   display: none;
 }
+
 .col-md-3 {
   font-size: 30px;
 }
+
 .linkicons {
   height: 100px;
   width: 100%;
@@ -199,28 +256,33 @@ section {
   width: 100%;
   color: #337AB7;
 }
+
+
 /*form Fonts*/
+
 .container {
   width: 100%;
   display: flex;
   flex-direction: column;
-  width:  60%;
+  width: 60%;
   color: #337AB7;
-
 }
+
 .form-group {
   font-size: 20px;
 }
+
+
 /*form Inputs*/
-.form-control{
+
+.form-control {
   margin-left: 10px;
 }
-.form-check{
+
+.form-check {
   margin-left: 40px;
   font-size: 20px;
 }
-
-
 
 
 /* Media Querry*/
@@ -236,16 +298,13 @@ section {
     width: 200%;
     height: auto;
     margin-left: px;
-
   }
-  header{
+  header {
     display: flex;
     justify-content: center;
     width: 80%;
-
     /*border: 3px solid green;*/
     margin: auto;
-
   }
   .navbar {
     display: flex;
@@ -253,11 +312,12 @@ section {
     /*border: 1px solid yellow;*/
     width: auto;
   }
-  .box{
+  .box {
     display: none;
   }
-  .container-2 {
+  .search {
     display: none;
+    justify-content: center;
   }
   .parallax {
     display: flex;
@@ -273,7 +333,6 @@ section {
     justify-content: center;
     width: 100%;
   }
-
   section {
     width: 100%;
     display: flex;
@@ -301,7 +360,6 @@ section {
     width: 100%;
     /*margin-left: 15%;*/
   }
-
   .container-fluid {
     display: flex;
     flex-direction: column;
