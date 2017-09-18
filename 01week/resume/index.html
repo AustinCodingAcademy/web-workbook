@@ -3,53 +3,117 @@
 <head>
 <meta charset="utf-8">
 <title> Hector's Resume</title>
+<link rel="stylesheet" href="./css/style.css"
 </head>
 <body>
   <a name="Top"></a>
   <header>
-    <h1><center> Hector M. Garcia</center></h1>
-    <center><img src="https://lh3.googleusercontent.com/q3ZarVLKVoAs3TiwM8vAijLpaYtrloILbY_VsV_aCr2C4dTUnXR7f-0ufeM92SrJk5KEugxrHMsdWlYEztfFKzrqeOXiLHIVkTtfDA_h_mrPpIooEoW1uvJLPSBM_zcqzXXeUdIG3euM7XHR4XqMhXGkVADdAxKjxxUSOtdF22ZwSZe4aFfJ55VBycEWllFzHJk8iSrugGBKkFxWT04WCGWsEk7IxOXhN9Qi_jOViz3f8x3Av7TBA_dvzhWOAMUmsrstQSsyJ_m3e7nekzm9w3RQXy0DYqfj7nvWr0x-67z0pmocEftgH_jX0-of3-JdRI6eOwd-hZDIWHTaufQzacnIzpPdyghIcng3YItZnWBmcXtbTbThhbcQiLaoAEp1_2MkEUvlAqy3pAbCLYT_G4taKwthFXmhrDPepEt7kmHtDxTKnUuhQug8iJfDeDucVh7jH1IicxmlBRmhmos0jJHrjJ_KxvSoh46N_gvNRJyNlYkyMCUWpvPb7-msl5qrtt38zaxBnLzqX6WK3MUsYUqAMmtLPgfxBf0rqtKnWW_K5Wb2eHWxjyjNIosERQ=w1280-h676" style="width:200px;height:200px;"/></center>
+    <h1> Hector M. Garcia Jr.</h1>
+    <p> hektor11atutexas.edu</p>
+    <p> 123-456-7890</p>
   </header>
-  <nav> <a href="#Career">Career</a> <br/> <a href="#Education">Education</a> <br/> <a href="#TechnicalSkills">Technical Skills</a><br/>
-  </nav>
-  <section>
-    <a name="Career"></a>
-    <h4> Work Experience </h4>
-    <p><b>DXC Technology</b></p>
-    <p> Project Manager </p>
-    <p> April 2017 - Current </p>
-    <br/>
-    <h4><b>Hewlett Packard Enterprise</b></h4>
-    <p> Project Manager </p>
-    <p> November 2015 - March 2017 </p>
-    <br/>
-    <h4><b>Hewlett Packard</b></h4>
-    <p> Project Manager </p>
-    <p> June 2015 - October 2015 </p>
-    <br/>
-  </section>
-  <section>
-    <a name="Education"></a>
+  <!--This is the navigation bar-->
+  <div class="menu">
+    <nav>
+      <ul>
+        <li><a href="#Education">Education</a></li>
+        <li><a href="#Career">Work Experience</a></li>
+        <li><a href="#PersonalProjects">Projects</a></li>
+        <li><a href="#TechnicalSkills">Technical Skills</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!--This is the education section-->
+  <div class= "education">
     <h2> Education </h2>
-    <p><b> The University of Texas at Austin</b></p>
-    <p> Bachelor of Science in Computer Science</p>
-    <p> August 2011 - May 2015</p>
-    <br/>
-  </section>
-  <section>
-    <a name="TechnicalSkills"></a>
+    <hr>
+    <section>
+      <a name="Education"></a>
+      <br/>
+      <h3><b> The University of Texas at Austin</b></h3>
+      <p> Bachelor of Science, Computer Science 2015</p>
+      <p> Information Security Certificate 2015</p>
+      <p> HP IT Scholar</p>
+      <p> GPA: 3.37</p>
+      <br/>
+    </section>
+  </div>
+  <!--This is the career section-->
+  <div class="career">
+    <h2> Work Experience </h2>
+    <hr>
+    <section>
+        <a name="Career"></a>
+        <br/>
+        <h3><b>DXC Technology</b></h3>
+        <p> April 2017 - Current </p>
+        <p>Workplace and Collaboration Project Manager</p>
+        <ul>
+          <li>Lead project manager for the Unified Communications workstream.</li>
+          <li>Lead project manager for the Skype for Business end-state environment build.</li>
+        </ul>
+        <br/>
+        <h3><b>Hewlett Packard Enterprise</b></h3>
+        <p> November 2015 - March 2017 </p>
+        <p>ITIO: Messaging and Collaboration L3 Support</p>
+        <ul>
+          <li>Provided rudimentary support for the SharePoint and Skype applications</li>
+        </ul>
+        <p>ITIO: Messaging and Collaboration Project Manager</p>
+        <ul>
+          <li>Google Collabroration Suite(Apps) service ownership transfer</li>
+          <li>Skype Room System Object Design Creation</li>
+        </ul>
+        <br/>
+        <h3><b>Hewlett Packard</b></h3>
+        <p> June 2015 - October 2015 </p>
+        <p>IT: Exchange and SharePoint Support Analyst</p>
+        <ul>
+          <li>SharePoint Lifecycle Management: Identification of SharePoint sites with inactivity for over 18 months in order to reduce digital and physical footprint.</li>
+          <li>EasyLink Monthly Summary: Monthly analysis of usage reports for account management.</li>
+          <li>Process Mailbox Migration: Assisted L3 Support by running the mailbox migration process from HPQ to HPE and HPI respectively.</li>
+        </ul>
+        <br/>
+      </section>
+  </div>
+  <!--This is the person projects section-->
+  <div class="projects">
+    <h2> Personal Projects</h2>
+    <hr>
+    <section>
+      <a name="PersonalProjects"></a>
+      <br/>
+      <ul>
+        <li>Goal Scoring Comparison: I used Plotly and a football data API (http://api.football-data.org/) to graphically represent the goals against and goals in favor of the top 10 European teams in a graph.</li>
+        <li>Dolphin Netplay Automation:  I wrote a PowerShell script to automate hosting or connecting to a game depending on the arguments provided.</li>
+      <br/>
+    </section>
+  </div>
+  <!--This is the technical skills section-->
+  <div class="skills">
     <h2> Technical Skills </h2>
-    <p> Knowledgeable:</p>
-    <ul>
-      <li>Java</li>
-      <li>Python</li>
-    </ul>
-    <p> Prior Experience:</p>
-    <ul>
-      <li>SQL</li>
-      <li>HTML</li>
-    </ul>
-  </section>
+    <hr>
+    <section>
+      <a name="TechnicalSkills"></a>
+      <br/>
+      <p> Knowledgeable:</p>
+      <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>SharePoint</li>
+      </ul>
+      </br>
+      <p> Prior Experience:</p>
+      <ul>
+        <li>SQL</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>GIT</li>
+      </ul>
+      <br/>
+    </section>
+  </div>
+  <!--This is the footer section-->
   <footer>
     <center><p> © Austin Coding Academy 2017</p></center>
     <a href="#Top">Back to Top</a>
