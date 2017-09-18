@@ -2,6 +2,9 @@
 
 $(document).ready(function() {
   // Buttons to move blocks
+
+var movesLeft = 20;
+
 $("#button1").on("click", function oneToTwo(){
   var a = parseInt($("#colOne").children().last().attr("data-block"));
   var b = parseInt($("#colTwo").children().last().attr("data-block"));
@@ -10,6 +13,8 @@ $("#button1").on("click", function oneToTwo(){
       } else {
         $("#colOne").children().last().addClass("badmove");
       }
+      score();
+      outOfTime();
       setTimeout(winner, 500);
       setTimeout(clearCSS, 1000);
     })
@@ -22,6 +27,8 @@ $("#button1b").on("click", function oneToThree(){
       } else {
         $("#colOne").children().last().addClass("badmove");
       }
+      score();
+      outOfTime();
       setTimeout(winner, 500);
       setTimeout(clearCSS, 1000);
     })
@@ -34,6 +41,8 @@ $("#button2b").on("click", function twoToThree(){
       } else {
         $("#colTwo").children().last().addClass("badmove");
       }
+      score();
+      outOfTime();
       setTimeout(winner, 500);
       setTimeout(clearCSS, 1000);
     })
@@ -46,6 +55,8 @@ $("#button3").on("click", function threeToTwo(){
       } else {
         $("#colThree").children().last().addClass("badmove");
       }
+      score();
+      outOfTime();
       setTimeout(winner, 500);
       setTimeout(clearCSS, 1000);
     })
@@ -58,6 +69,8 @@ $("#button3b").on("click", function threeToOne(){
       } else {
         $("#colThree").children().last().addClass("badmove");
       }
+      score();
+      outOfTime();
       setTimeout(winner, 500);
       setTimeout(clearCSS, 1000);
     })
@@ -70,16 +83,67 @@ $("#button2a").on("click", function twoToOne(){
       } else {
         $("#colTwo").children().last().addClass("badmove");
       }
-      setTimeout(winner, 500);
+      score();
+      outOfTime();
+      setTimeout(winner, 100);
       setTimeout(clearCSS, 1000);
     })
 
+$("#buttonReset").on("click", function resetGame(){
+  location.reload(true);
+})
+// var a = parseInt($("#colOne").children().last().attr("data-block"));
+// var b = parseInt($("#colTwo").children().last().attr("data-block"));
+//
+// $($("#colOne").children().last()).draggable({
+//   revert: "invalid"
+// });
+//
+// $("#colTwo").droppable({
+//   accept: ".block"
+//   drop: function (event, ui) {
+//     $().append(ui.draggable);
+//   }
+// });
+
+function score(){
+  movesLeft=movesLeft-1;
+  document.getElementById('moves').innerHTML=movesLeft;
+}
+
+function outOfTime(){
+  if (movesLeft<6){
+    $("#moves").addClass("movesDanger animated bounce");
+  }
+  if (movesLeft==0){
+    document.getElementById('announce').innerHTML="GAME OVER!";
+    document.getElementById('Caray').src="Media/Bad.png";
+    document.getElementById('audio').src="Media/Bad1.mp3";
+    disableBtn();
+  }
+  if (movesLeft==1){
+    document.getElementById('moveText').innerHTML="MOVE LEFT";
+  }
+}
 
 function winner(){
 var final = $("#colThree").children().length;
   if (final === 4) {
-    alert ("CUBS WIN! CUBS WIN!");
+    document.getElementById('announce').innerHTML="CUBS WIN! CUBS WIN!";
+    document.getElementById('Caray').src="Media/Good.png";
+    document.getElementById('audio').src="Media/Win.mp3";
+    $.confetti.start();
+    disableBtn();
   }
+}
+
+function disableBtn(){
+  document.getElementById("button1").disabled = true;
+  document.getElementById("button1b").disabled = true;
+  document.getElementById("button2a").disabled = true;
+  document.getElementById("button2b").disabled = true;
+  document.getElementById("button3").disabled = true;
+  document.getElementById("button3b").disabled = true;
 }
 
 function clearCSS() {

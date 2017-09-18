@@ -1,12 +1,46 @@
 body {
-  background-color: black;
+  background-color: white;
+  margin: auto;
+  width: 700px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.moves {
+  font-size: 7em;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.movesDanger {
+  color: red;
+}
+
+.scoreboard {
+  border: 5px black solid;
+  border-radius: 15px;
+  padding: 3px;
+  margin-left: 30px;
+  width: 150px;
+}
+
+#moveText {
+  text-align: center;
 }
 
 #Game {
   display: flex;
   justify-content: center;
-  margin-top: 200px;
-  height: 300px
+  margin-bottom: 30px;
+  height: 230px;
+  border-bottom: 10px black solid;
 }
 
 #buttons {
@@ -16,18 +50,43 @@ body {
 }
 
 .btn {
-  background-color: red;
+  background-color: white;
   width: 50px;
   height: 50px;
   font-size: 2em;
+  border-radius: 25px;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: lightgreen;
+}
+
+.reset {
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+
+.reset:hover {
+  background-color: white;
+  color: black;
+}
+
+#reset {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
 }
 
 #button1b {
-  margin-right: 110px;
+  margin-right: 70px;
 }
 
 #button3b {
-  margin-left: 110px;
+  margin-left: 70px;
 }
 
 [data-stack] {
@@ -35,45 +94,43 @@ body {
   justify-content: flex-start;
   flex-direction: column-reverse;
   align-items: center;
-  width: 10px;
+  width: 5px;
   height: 150px;
-  background-color: white;
-  margin: 100px;
+  background-color: black;
+  margin: 80px;
+  border-radius: 2px;
 }
-
-
-
-/*[data-block] {
-  width: 25px;
-  float: left;
-}*/
 
 [data-block="25"] {
   width: 25px;
   height: 25px;
-  background-color: blue;
-  border-radius: 5px
+  background-color: #00bcd4;
+  border-radius: 5px;
+  border: 1px black solid;
 }
 
 [data-block="50"] {
   width: 50px;
   height: 25px;
-  background-color: green;
-  border-radius: 5px
+  background-color: #e91e63;
+  border-radius: 5px;
+  border: 1px black solid;
 }
 
 [data-block="75"] {
   width: 75px;
   height: 25px;
-  background-color: red;
-  border-radius: 5px
+  background-color: #673ab7;
+  border-radius: 5px;
+  border: 1px black solid;
 }
 
 [data-block="100"] {
   width: 100px;
   height: 25px;
-  background-color: yellow;
-  border-radius: 5px
+  background-color: #ff9800;
+  border-radius: 5px;
+  border: 1px black solid;
 }
 
 .badmove {

@@ -4,14 +4,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Towers of Hanoi</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animate.css" />
 </head>
 <body>
+  <h1 id="announce">HARRY CARAY'S TOWERS OF HANOI</h1>
+  <header>
+    <img class="animated bounceIn" id="Caray" src="Media/default.png" alt="Harry Caray">
+    <div id="scoreboard" class="scoreboard">
+      <div id="moves" class="moves">
+        20
+      </div>
+      <div id="moveText">
+        MOVES LEFT
+      </div>
+    </div>
+  </header>
   <div id="Game">
     <div id="colOne" data-stack="1">
-      <div data-block="100"></div>
-      <div data-block="75"></div>
-      <div data-block="50"></div>
-      <div data-block="25"></div>
+      <div class="block" data-block="100"></div>
+      <div class="block" data-block="75"></div>
+      <div class="block" data-block="50"></div>
+      <div class="block" data-block="25"></div>
     </div>
     <div id="colTwo" data-stack="2">
     </div>
@@ -26,8 +39,14 @@
     <button class="btn" id="button3b"> << </button>
     <button class="btn" id="button3"> < </button>
   </div>
-    <div id="announce-game-won"></div>
+  <div id="reset">
+    <button class="reset" id="buttonReset">Reset Game</button>
+  </div>
+  <audio src="Media/Intro.mp3" id="audio" autoplay>
+  </audio>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="   crossorigin="anonymous"></script>
   <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="jquery.confetti.js"></script>
 </body>
 </html>
