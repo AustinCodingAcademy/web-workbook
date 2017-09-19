@@ -52,29 +52,32 @@ $(document).ready(function() {
       return false;
     }
   }
+  // $(function() {
+  //   var count = 0;
+  //   $(".block:last-child").draggable();
+  //   $(".pole").droppable({
+  //     drop: function(event, ui) {
+  //       count = count + 1;
+  //       $(this)
+  //         .find("p")
+  //       $("#count").text(count);
+  //     },
+  //   });
+  // });
+
+  function incrementCounter() {
+    var score = $('#gameBoard').data('score') + 1;
+    $('#gameBoard').data('score', score);
+    $('.score-display').html(score);
+  }
   //When all blocks are stacked in "<div data-stack="3">" div call a function "winChecker" to sthe game over. check if the last move has won the game by calling winChecker() function.
   function checkWin() {
-    if ($('#pole3').children().length === 6) {
+    if ($('#pole3').children().length === 2) {
       $('#gotit').html("You Got It!");
       gameOver = true;
     }
   }
 
-  $(function() {
-    var count = 0;
-    $(".draggable").draggable();
-    $("#droppable").droppable({
-      drop: function(event, ui) {
-        count = count + 1;
-        $(this)
-          .addClass("ui-state-highlight")
-          .find("p")
-          .html("Dropped!");
-        $("#count").text(count);
-      },
-    });
-  });
-  
   $('#refresh').click(function() {
     location.reload();
   });
