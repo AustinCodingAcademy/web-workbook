@@ -1,5 +1,6 @@
 html{
   background-color: black;
+  font-family: "Garamond", garamond, serif;
 }
 
 header{
@@ -10,31 +11,56 @@ header{
 }
 
 main{
-  background-color: blue;
+  /*background-color: blue;*/
   display: flex;
 }
 
-footer{
+body{
   color: white;
   text-align: center;
 }
 
-.footer-container{
-  background-color: green;
-}
-
-.bio-article{
-  width: 75%;
+.bio-meta{
+  width: 50%;
   float:left;
-  background-color: yellow;
+  /*background-color: yellow;*/
+  text-align: center;
 }
 
-.bio-article img{
+.bio-meta img{
   width: 40%;
-  display:block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
+  filter: grayscale(80%);
 }
+
+#dxc{
+  width:20%;
+  background-color: white;
+}
+
+.bio-meta-details *{
+  margin: 0;
+  padding: 0;
+  color: white;
+  /*background-color: red;*/
+}
+
+
+.bio-txt{
+  width: 25%;
+  float:right;
+  /*background-color: pink;*/
+  text-align: center;
+  color: white;
+}
+
+.bio-txt table{
+  margin:auto;
+  width:100%;
+}
+
 
 .clearfix:after {
   visibility: hidden;
@@ -43,33 +69,6 @@ footer{
   content: " ";
   clear: both;
   height: 0;
-}
-
-.nav-container
-{
-  background-color: pink;
-  width:24%;
-  display: inline-block;
-  float: right;
-
-}
-
-.nav-aside
-{
-  background-color: black;
-  text-align: center;
-}
-
-.nav-aside ul{
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-  text-decoration: none;
-}
-
-.nav-aside li{
-  display: inline-block;
-  vertical-align: middle;
 }
 
 a:link,
@@ -87,6 +86,6 @@ a:hover,
 a:active{
   /*background-color:rgba(0,0,0,.5);*/
   background-color: white;
-  text-shadow:2px 2px 5px black;
+  text-shadow:4px 4px 5px black;
   color : black;
 }
