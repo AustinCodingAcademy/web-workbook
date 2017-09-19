@@ -3,20 +3,77 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Towers of Hanoi</title>
+  <link rel="stylesheet" href="C:/Users/Patrick/Documents/dev/web-workbook/basic_reset.css"/>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="animate.css" />
 </head>
 <body>
-  <div data-stack="1">
-    <div data-block="100"></div>
-    <div data-block="75"></div>
-    <div data-block="50"></div>
-    <div data-block="25"></div>
+  <div id="dialogoverlay"></div>
+  <div id="dialogbox">
+    <div>
+      <div id="dialogboxhead"></div>
+      <div id="dialogboxbody"></div>
+      <div id="dialogboxfoot"></div>
+    </div>
   </div>
-  <div data-stack="2">
+  <header>
+    <div id="h1_div">
+      <h2 class="animated flipInX">Towers of Hanoi</h2>
+    </div>
+    <div id="instructions_div">
+      <p id="instructions">Move all of the blocks from the left column to the right column, only placing smaller blocks on top of larger blocks.<br><br>Click to pick up, click to drop off.</p>
+    </div>
+    <div id="hud">
+      <div id="timer">
+        <!-- Display the countdown timer in an element -->
+        <div id="mycounter"><span id="time">2:00</span></div>
+      </div>
+      <div id="start_button_div">
+        <button id="start_button">Start</button>
+        <button id="reset_button">Reset</button>
+          <!-- begin becomes restart after clicking -->
+      </div>
+      <div id="level_div">
+        <span id="level_num">Level 0/4</span>
+      </div>
+    </div>
+  </header>
+
+  <div id="stacks">
+    <div id="start_stack" data-stack="1">
+      <!-- <div data-block="125"><div> -->
+      <div class="block" id="100" data-block="100"></div>
+      <div class="block" id="75" data-block="75"></div>
+      <div class="block" id="50" data-block="50"></div>
+      <div class="block" id="25" data-block="25"></div>
+    </div>
+    <div id="mid_stack" data-stack="2">
+    </div>
+    <div id="winner" data-stack="3">
+    </div>
   </div>
-  <div id="winner" data-stack="3">
+
+  <div id="dialogboxbadges_div">
+    <div id="diabadge_done" class="dialogbadges">
+      <img class="badgepic" id="1a" src="1a.png"><img class="badgepic" id="2a" src="2a.png"><img class="badgepic" id="3a" src="3a.png"><img class="badgeApic" id="4a" src="4a.png"><div id="badgetalk1" class="badgetalk">You completed the level!</div>
+    </div>
+    <div id="diabadge_time" class="dialogbadges">
+      <img class="badgepic" id="1b" src="1b.png"><img class="badgepic" id="2b" src="2b.png"><img class="badgepic" id="3b" src="3b.png"><img class="badgeBpic" id="4b" src="4b.png"><div id="badgetalk2" class="badgetalk">In less than one minute!</div>
+    </div>
+    <div id="diabadge_moves" class="dialogbadges">
+      <img class="badgepic" id="1c" src="1c.png"><img class="badgepic" id="2c" src="2c.png"><img class="badgepic" id="3c" src="3c.png"><img class="badgeCpic" id="4c" src="4c.png"><div id="badgetalk3" class="badgetalk">In the minimum possible number of moves!</div>
+    </div>
   </div>
-  <div id="announce-game-won"></div>
+
+<!-- badge awarding -->
+
+    <!-- badge completed -->
+    <!-- time badge (greyed out if not completed) -->
+    <!-- moves badge greyed out if not completed -->
+    <!-- show timer and clearly convert to points -->
+
+<!-- win sequence -->
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
 </body>

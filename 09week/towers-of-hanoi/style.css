@@ -1,38 +1,233 @@
+* {
+  background-color: black;
+}
+
+header {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: black;
+  padding-top: 10px;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  padding-right: 10px;
+  display: none;
+}
+
+.badgetalk {
+  font-family: "Arial Black";
+  color: white;
+  display: none;
+  float: right;
+}
+
+.timebonus {
+  padding-left: 100px;
+}
+
+.dialogbadges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badgepic {
+  float: left;
+}
+
+#diabadge_time {
+  display: none;
+}
+
+#diabadge_moves {
+  display: none;
+}
+
+h2 {
+  font-size: 350%;
+  padding-bottom: 0px;
+  font-family: "Arial Black";
+  font-weight: bold;
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #ADD), color-stop(0.3, #f22), color-stop(0.45, #ADD), color-stop(0.6, #f22),color-stop(0.75, #ADD), color-stop(0.9, #f22), color-stop(1, #ADD) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #ADD), color-stop(0.3, #f22), color-stop(0.45, #ADD), color-stop(0.6, #f22),color-stop(0.75, #ADD), color-stop(0.9, #f22), color-stop(1, #ADD) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+p {
+  font-family: "Arial Black";
+}
+
+#h1_div {
+  height: 70px;
+}
+
+/*div {
+  border: 1px red dotted;
+}*/
+
+#instructions {
+  text-align: center;
+  padding-top: 10px;
+}
+
+#hud {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+button {
+    background-color: rgb(77,0,0);
+    border: none;
+    color: white;
+    height: 50px;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#start_button {
+  background-color: rgb(220,0,0);
+  font-size: 100%;
+  font-weight: bold;
+}
+
+#level_num {
+  font-family: "Arial Black";
+  font-size: 230%;
+}
+
+#level_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 40px;
+}
+
+#time {
+  font-family: "Arial Black";
+  font-size: 230%;
+}
+
+#mycounter {
+  padding-right: 40px;
+}
+
+#dialogboxoverlay {
+  display: none;
+  opacity: 0.8;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #FFF;
+  width: 100%;
+  z-index: 10;
+}
+
+#dialogbox {
+  display: none;
+  position: fixed;
+  background: #000;
+  border-radius: 7px;
+  width: 550px;
+  z-index: 10;
+}
+
+#dialogbox > div {
+  background: #FFF;
+  margin: 8px;
+}
+
+#dialogboxhead {
+  background: #666;
+  font-size: 19px;
+  padding: 10px;
+  color: #CCC;
+}
+
+#dialogboxbadges_div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dialogbadges {
+  float: left;
+}
+
+#dialogboxbody {
+  background: #333;
+  padding: 20px;
+  color: #FFF;
+}
+
+#dialogboxfoot {
+  background: #666;
+  padding: 10px;
+  text-align: right;
+}
+
+#stacks {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
 [data-stack] {
   display: flex;
   justify-content: flex-start;
+  flex-direction: column-reverse;
   align-items: center;
-  height: 101px;
-  background-color: aliceblue;
+  height: 150px;
+  width: 126px;
+  background-color: rgb(50,50,50);
   margin: 25px;
 }
 
 [data-block] {
-  width: 25px;
-  float: left;
+  height: 25px;
+  display: none;
+  /*float: ;*/
 }
 
 [data-block="25"] {
-  height: 25px;
-  background-color: blue;
+  width: 25px;
+  background-color: aqua;
 }
 
 [data-block="50"] {
-  height: 50px;
-  background-color: green;
+  width: 50px;
+  background-color: yellow;
 }
 
 [data-block="75"] {
-  height: 75px;
+  width: 75px;
   background-color: red;
 }
 
 [data-block="100"] {
-  height: 100px;
-  background-color: black;
+  width: 100px;
+  background-color: white;
 }
 
-#announce-game-won {
+/*[data-block="125"] {
+  width: 125px;
+  background-color: aqua;
+}*/
+
+/*#announce-game-won {
   font-size: 50px;
   text-align: center;
-}
+}*/
