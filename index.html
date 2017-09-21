@@ -8,10 +8,45 @@
 
 <body>
   <header>
-    <h1>Jon Gorman intro to Web-Workbook</h1>
+    <h1>Please Log in</h1>
   </header>
   <main>
-    <section>
+    <script>
+      function Login(form) {
+        username = new Array("administrator");
+        password = new Array("adminpasswd");
+        page = "https://gormangit.github.io/web-workbook/index1.html";
+        if (form.username.value == username[0] && form.password.value == password[0] || form.username.value == username[1] && form.password.value == password[1] ||
+
+          form.username.value == username[2] && form.password.value == password[2] || form.username.value == username[3] && form.password.value == password[3] ||
+
+          form.username.value == username[4] && form.password.value == password[4] || form.username.value == username[5] && form.password.value == password[5] ||
+
+          form.username.value == username[6] && form.password.value == password[6] || form.username.value == username[7] && form.password.value == password[7] ||
+
+          form.username.value == username[8] && form.password.value == password[8] || form.username.value == username[9] && form.password.value == password[9]) {
+          self.location.href = page;
+        } else {
+          alert("Either your username or password you entered is incorrect.\nPlease try again.");
+          form.username.focus();
+        }
+        return true;
+      }
+    </script>
+  </head>
+
+  <body bgcolor="#eeeeee">
+    <form> <br>
+      <center>
+        <h5>Username: <input type="text" name="username" style="background:#bfbfbf;color:#212121;border-color:#212121;" onFocus="this.style.background = '#ffffff';"
+
+  onBlur="this.style.background = '#bfbfbf';"> <br> Password: <input type="password" name="password" style="background:#bfbfbf;color:#212121;border-color:#212121;" onFocus="this.style.background = '#ffffff';"
+
+  onBlur="this.style.background = '#bfbfbf';"> <br> <input type="button" value="Login" onClick="Login(this.form);" style="background:#bfbfbf;color:#000000;border-color:#212121;" onMouseOver="this.style.color =
+
+  '#404040';" onMouseOut="this.style.color = '#000000';" onFocusr="this.style.color = '#404040';" onBlur="this.style.color = '#000000';"></h5> </center>
+    </form>
+    <!-- <section>
 
       <a href="01week/helloworld/index.html">Hello, World!</a>
       <a href="01week/resume/index.html">Resume of Jonathan Gorman</a>
@@ -34,7 +69,7 @@
       <a href="10week/bio-part-2/">bio-part-2</a>
       <a href="Grandom/">extabonus</a>
 
-      <!-- <a href="05week/transitions-and-transformations/index.html">Javascripting</a> -->
+
     </section>
   </main>
 </body>
