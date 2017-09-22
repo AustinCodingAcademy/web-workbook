@@ -1,13 +1,12 @@
 html{
   background-color: black;
   font-family: "Garamond", garamond, serif;
+  color: white;
+  text-align: center;
 }
 
 header{
-  background-color: black;
   font-size: 25pt;
-  color: white;
-  text-align: center;
 }
 
 main{
@@ -15,9 +14,8 @@ main{
   display: flex;
 }
 
-body{
-  color: white;
-  text-align: center;
+.about-txt{
+  font-size: 18px;
 }
 
 .bio-meta{
@@ -28,39 +26,48 @@ body{
 }
 
 .bio-meta img{
+  height: auto;
   width: 40%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  filter: grayscale(80%);
-}
-
-#dxc{
-  width:20%;
-  background-color: white;
+  filter: grayscale(30%);
+  border-radius: 50%;
 }
 
 .bio-meta-details *{
   margin: 0;
   padding: 0;
-  color: white;
   /*background-color: red;*/
 }
-
 
 .bio-txt{
   width: 25%;
   float:right;
-  /*background-color: pink;*/
-  text-align: center;
-  color: white;
+
+}
+.bio-txt h2{
+  display: inline-block;
 }
 
-.bio-txt table{
-  margin:auto;
-  width:100%;
+.bio-txt section{
+  display: inline-block;
+  width: 50%;
 }
 
+.contactInfo *{
+  display: inline;
+}
+
+.contactInfo1{
+  float: left;
+
+}
+
+.contactInfo2{
+  float: right;
+
+}
 
 .clearfix:after {
   visibility: hidden;
@@ -75,10 +82,9 @@ a:link,
 a:visited{
   margin: 0 auto;
   display: inline-block;
-  width: 299px;
+  width: 200px;
   text-decoration: none;
   text-align: center;
-  text-transform: uppercase;
   color: white;
 }
 
@@ -88,4 +94,152 @@ a:active{
   background-color: white;
   text-shadow:4px 4px 5px black;
   color : black;
+}
+
+/*effects*/
+
+#aboutMeImg:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#dxcLogo{
+  width:20%;
+  background-color: white;
+  border-radius: 0%;
+}
+
+.about-txt:hover{
+  background-color: white;
+  color: black;
+}
+
+/*standard syntax*/
+@keyframes change-color1{
+  0% {background-color:black; left:0%;}
+  20% {background-color:green; left:50%;}
+  50% {background-color:yellow; left:90%;}
+  75% {background-color:white; left:50%;}
+  100% {background-color:black; left:0%;}
+}
+
+/*safari*/
+@-webkit-keyframes change-color1{
+  0% {background-color:black; left:0%;}
+  20% {background-color:green; left:50%;}
+  50% {background-color:yellow; left:90%;}
+  75% {background-color:white; left:50%;}
+  100% {background-color:black; left:0%;}
+}
+
+/*standard syntax*/
+@keyframes change-color2{
+  0% {background-color:black; left:90%;}
+  20% {background-color:green; left:50%;}
+  50% {background-color:yellow; left:0%;}
+  75% {background-color:white; left:50%;}
+  100% {background-color:black; left:90%;}
+}
+
+/*safari*/
+@-webkit-keyframes change-color2{
+  0% {background-color:black; left:90%;}
+  20% {background-color:green; left:50%;}
+  50% {background-color:yellow; left:0%;}
+  75% {background-color:white; left:50%;}
+  100% {background-color:black; left:90%;}
+}
+
+@keyframes change-color3{
+  0% {background-color:black; top:90%;}
+  20% {background-color:green; top:50%;}
+  50% {background-color:yellow; top:0%;}
+  75% {background-color:white; top:50%;}
+  100% {background-color:black; top:90%;}
+}
+
+/*safari*/
+@-webkit-keyframes change-color3{
+  0% {background-color:black; top:90%;}
+  20% {background-color:green; top:50%;}
+  50% {background-color:yellow; top:0%;}
+  75% {background-color:white; top:50%;}
+  100% {background-color:black; top:90%;}
+}
+
+@keyframes change-color4{
+  0% {background-color:black; top:0%;}
+  20% {background-color:green; top:50%;}
+  50% {background-color:yellow; top:90%;}
+  75% {background-color:white; top:50%;}
+  100% {background-color:black; top:0%;}
+}
+
+/*safari*/
+@-webkit-keyframes change-color4{
+  0% {background-color:black; top:0%;}
+  20% {background-color:green; top:50%;}
+  50% {background-color:yellow; top:90%;}
+  75% {background-color:white; top:50%;}
+  100% {background-color:black; top:0%;}
+}
+
+
+.effect1{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background-color: black;
+  -webkit-animation-name: change-color;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-name: change-color1;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+.effect2{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background-color: black;
+  -webkit-animation-name: change-color;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-name: change-color2;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+.effect3{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background-color: black;
+  -webkit-animation-name: change-color;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-name: change-color3;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+.effect4{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background-color: black;
+  -webkit-animation-name: change-color;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-name: change-color4;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
 }
