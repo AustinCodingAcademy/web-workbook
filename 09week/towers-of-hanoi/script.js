@@ -52,24 +52,24 @@ $(document).ready(function() {
       return false;
     }
   }
-  // $(function() {
-  //   var count = 0;
-  //   $(".block:last-child").draggable();
-  //   $(".pole").droppable({
-  //     drop: function(event, ui) {
-  //       count = count + 1;
-  //       $(this)
-  //         .find("p")
-  //       $("#count").text(count);
-  //     },
-  //   });
-  // });
+  $(function() {
+    var count = 0;
+    $(".block:last-child").draggable();
+    $(".pole").droppable({
+      drop: function(event, ui) {
+        count = count + 1;
+        $(this)
+          .find("p")
+        $("#count").text(count);
+      },
+    });
+  });
 
-  function incrementCounter() {
-    var score = $('#gameBoard').data('score') + 1;
-    $('#gameBoard').data('score', score);
-    $('.score-display').html(score);
-  }
+  // function incrementCounter() {
+  //   var score = $('#gameboard').data('score') + 1;
+  //   $('#gameboard').data('score', score);
+  //   $('.score-display').html(score);
+  // }
   //When all blocks are stacked in "<div data-stack="3">" div call a function "winChecker" to sthe game over. check if the last move has won the game by calling winChecker() function.
   function checkWin() {
     if ($('#pole3').children().length === 6) {
