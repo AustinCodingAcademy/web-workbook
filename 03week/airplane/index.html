@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="./css/style.css" >
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
 
   <body>
@@ -13,7 +14,7 @@
       <img src="./img/logo.png" >
       <nav>
         <img src="./img/home-icon.png" >
-        <a href="">Home</a>
+        <a style="color:#09BEAE;"href="">Home</a>
         <img src="./img/deal-icon.png" >
         <a href="">Travel Deals</a>
         <img src="./img/schedule-icon.png" >
@@ -46,10 +47,25 @@
         </div>
         <div class="arrival-field">
           <form>
-            <input type="text" value="MM/DD/YYYY">            
+            <input type="text" value="MM/DD/YYYY">
           </form>
         </div>
-
+        <div class="tripselects">
+          <p>Passengers</p>
+          <select name="passengers">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+          </select>
+            <p>Return</p>
+            <input type="radio" name="flightselect" value="Return">
+            <p> One Way</p>
+            <input type="radio" name="flightselect" value="One Way">
+        </div>
+        <div class="tripbutton">
+           <button type="button" onclick="alert('No Flights Found!')">Search Flights</button>
+        </div>
       </div>
     </div>
   </body>
