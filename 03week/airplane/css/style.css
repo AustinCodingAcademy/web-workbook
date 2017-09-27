@@ -1,101 +1,68 @@
-html{
+@import url(https://fonts.googleapis.com/css?family=Asap+Condensed);
+
+body{
   background-image: url('../img/airline.jpg');
   background-size: cover;
+  color: white;
+  font-family: 'Asap Condensed', sans-serif;
 }
 
-header{
-  background: blue;
-}
-
-main{
-
-}
-
-/*search-box*/
-.search-box{
-  margin: 300px;
-  width: 300px;
-  background-color: green;
-  float: left;
-}
-
-/*search type container*/
-.search-box-type{
-  background-color: black;
-  margin-top: 0;
-  padding-top: 0;
-}
-
-/*search type element*/
-.search-box-type-el{
-  width: 32%;
-  background-color: red;
+.header-container{
+  border-bottom: 3px solid white;
+  width: 100%;
+  background-color: #133855;
   margin: 0;
   padding: 0;
+}
+
+.logo-container{
   display: inline-block;
+  margin-left: 50px;
 }
 
-/*search type element(img)*/
-.search-box-type-el img{
-  display: block;
-  margin: auto;
-}
-
-/*search type element(p)*/
-.search-box-type p:hover{
-  background-color: green;
-}
-
-/*depart/arrive fields container*/
-.search-box-depart{
-  background-color: grey;
-  margin: 20px;
-}
-
-/*depart/arrive elements*/
-.search-box-depart-el{
-  width: 45%;
-  height: 30px;
-  background-color: blue;
-  display: inline-block;
-  margin: 2px;
-  text-align: left;
+.nav-container{
   color: white;
-}
-
-/*depart/arrive dates fields container*/
-.search-box-dates{
-  background-color: grey;
-  margin: 20px;
-}
-
-/*depart/arrive dates fields elements*/
-.search-box-dates-el{
-  width: 45%;
-  height: 30px;
-  background-color: blue;
   display: inline-block;
-  margin: 2px;
-  text-align: left;
-  color: white;
+  float: right;
+  margin-right: 10%;
+  width: 500px;
+  text-align: right;
+  padding-top: 10px;
 }
 
-/*# of passengers and 1/round-trip field container*/
-.search-box-details-el{
-  width: 49%;
-  background-color: blue;
-  display: inline-block;
+.site-navigation li{
+    display: inline;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
 }
 
-/*# of passengers and 1/round-trip field element*/
-.search-box-button-el{
-  width: 99%;
-  height: 40px;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: blue;
-  color: white;
+.site-navigation li:hover{
+  color: #367D90;
+}
+
+.home-nav{
+  background-image: url('../img/home-icon.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.travel-nav{
+  background-image: url('../img/deal-icon.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.schedule-nav{
+  background-image: url('../img/schedule-icon.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.register-nav{
+  background-image: url('../img/login-icon.png');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .clearfix:after {
@@ -105,4 +72,87 @@ main{
   content: " ";
   clear: both;
   height: 0;
+}
+
+.search-container{
+  width: 380px;
+  margin: 225px 300px;
+  background-color: #103754;
+}
+
+.search-type-container{
+  background-color: #008E82;
+  border-size: 0;
+}
+
+.search-type-img{
+  display: inline-block;
+  width: 32%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.search-type-container div:hover{
+  background-color: #0263B4;
+}
+
+.depart-container{
+  width: 49%;
+  display: inline-block;
+  text-align: center;
+}
+
+.depart-field-el{
+  margin: 10%;
+  width: 90%;
+  background-color: #103754;
+  color: white;
+  height: 40px;
+}
+
+.passengers{
+  height: 26px;
+}
+
+.passengers-text{
+  width:48%;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.passengers-count{
+  width:48%;
+  display: inline-block;
+  padding: 0;
+  background-color: #103754;
+  border-color: white;
+  color: white;
+}
+
+.arrive-container{
+  width: 49%;
+  display: inline-block;
+  text-align: center;
+}
+
+.return-type{
+  width: 99%;
+  display: inline-block;
+  height: 26px;
+}
+
+.button-container{
+  text-align: center;
+}
+
+.search-button{
+  width: 90%;
+  height: 30px;
+  display: inline-block;
+  margin: 3%;
+  background-color:	#076ABF;
+  color: white;
+  border-color:  	#076ABF;
 }
