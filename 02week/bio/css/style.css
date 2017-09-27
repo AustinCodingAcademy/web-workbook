@@ -1,30 +1,52 @@
+* html, body{
+  height: 100%;
+}
+body {
+    background-image: ("blue-gradient-background.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}
+
 .header{
-  background-color: #AABCC4;
+  background-color: rgb(235, 235, 235);
   text-align: center;
   width: 100%;
   font-size: 24px;
   color: white;
 }
 
-.link{
-  background-color: #AABCC4;
-  text-align: center;
-  color: white;
+/* unvisited link */
+a:link {
+    color: navy;
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+}
+/* visited link */
+a:visited {
+    color: green;
 }
 
 /* mouse over link */
 a:hover {
-  color: hotpink;
-  text-align: center;
+    color: yellow;
+}
+/* selected link */
+a:active {
+    color: red;
 }
 
 .img {
-  width: 50%;
+  width: auto;
+  height: auto;
   image-resolution: from-image;
+  border-style: outset;
 }
 
 .article{
   width: 50%;
   float: left;
-  background-color: red;
+  background-color: rgb(235, 235, 235);
+  color: white;
+  font-size: 24px;
 }
