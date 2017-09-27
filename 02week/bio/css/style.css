@@ -1,5 +1,9 @@
-* html, body{
-  height: 80%;
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom:auto;
+  border: 1px solid #274b73;
 }
 
 body {
@@ -8,23 +12,47 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-size: auto;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+/* style of the Name Header */
 .header{
   background-color: rgb(235, 235, 235);
   text-align: center;
   width: 100%;
   font-size: 24px;
-  color: white;
+  color: navy;
 }
 
-/* unvisited link */
-.link a {
+/* style of the Resume link */
+.link {
   color: navy;
-  background-color: rgb(235, 235, 235);
-  text-align: center;
-  width: 100%;
+  float: left;
   text-decoration: none;
+}
+
+/* unvisited Resume link */
+a:link {
+  color: navy;
+  text-decoration: none;
+}
+
+/* visited Resume link */
+a:visited {
+  color: green;
+  text-decoration: none;
+}
+
+/* mouse over Resume link */
+a:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+/* selected Resume link */
+a:active {
+  color: red;
+  text-decoration: underline;
 }
 
 p {
@@ -34,35 +62,34 @@ p {
   width: 100%;
   text-decoration: none;
 }
-/* visited link */
-.visited  a {
-  color: green;
-  text-decoration: none;
+
+.article {
+  width: 32%;
+  height: 75%;
+  float: left;
+  background-color: rgb(235, 235, 235);
+  padding: 10px;
+  color: white;
+  font-size: 24px;
+  margin-top: 10%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 10%;
 }
 
-/* mouse over link */
-.hover  a {
-  color: yellow;
-  text-decoration: underline;
-}
-
-/* selected link */
-.active a {
-  color: red;
-  text-decoration: underline;
+.article-header {
+  float: left;
+  background-color: rgb(235, 235, 235);
+  padding: 0px;
+  margin-top: -1.3em;
+  font-size: 24px;
+  color: navy;
+  width: 100%;
 }
 
 .img {
-  width: 304px;
-  height: 228px;
-  image-resolution: from-image;
-  border-style: outset;
-}
-
-.article{
-  width: 50%;
-  float: left;
-  background-color: rgb(235, 235, 235);
-  color: white;
-  font-size: 24px;
+  float: right;
+  width: 25%;
+  height: 30%;
+   border: 10px: solid #274b73;
 }
