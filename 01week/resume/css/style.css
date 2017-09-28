@@ -18,7 +18,7 @@
   width: 100%;
 }
 
-/* Style the top navigation bar */
+/* Style the top navigation bar / #333 is dar */
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -32,7 +32,8 @@
   display: block;
   color: #ffffffff;
   text-align: center;
-  padding: 14px 16px;
+  padding: 18px 18px;
+  font-size: 26px;
   text-decoration: none;
 }
 
@@ -46,7 +47,7 @@
 /* Create three unequal columns that floats next to each other */
 .column {
   float: left;
-  padding: 10px;
+  margin-left: 55em;
 }
 
 /* Left and right column */
@@ -55,18 +56,33 @@
   color: white;
 }
 
+/* Left and right column adding h2 ONLY adds style to the header in that column */
+.column-side h2 {
+  width: 25%;
+  color: black;
+}
+
 /* Middle column */
 .column-middle {
   width: 50%;
-  color: white;
+    color: white;
+    margin-right: -25em;
+    margin-left: 25em;
+    margin-top: -25em;
+}
+
+/* Middle column added h2 ONLY adds style to the header in the middle column */
+.column-middle h2 {
+  width: 50%;
+  color: black;
 }
 
 /* Clear floats after the columns */
-.row:after {
+/* .row:after {
   content: "";
   display: table;
   clear: both;
-}
+} */
 
 h1 {
   color: white;
@@ -74,7 +90,8 @@ h1 {
 }
 
 h2 {
-  color: blockquote;
+  color: white;
+  text-align: center;
 }
 
 h3 {
