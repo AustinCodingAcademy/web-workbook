@@ -26,7 +26,7 @@ beforeEach(function (done) {
         document = window.document;
         $ = window.$;
         $(document).on('ready', function () {
-          done();
+          done(); 
         });
       }
     }
