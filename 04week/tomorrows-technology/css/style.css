@@ -1,0 +1,129 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1.1em;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 1em 0 1em 0;
+}
+
+h2 {
+  font-size: 1.3em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.4em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  background-color: #4D4D4D;
+  color: #fff;
+  font-size: inherit;
+  text-transform: uppercase;
+  display: block;
+  border: none;
+  margin: 1em 0 1em 0;
+  padding: 10px;
+}
+
+aside p {
+  font-size: .8em;
+  font-weight: bold;
+  margin-bottom: .8em;
+}
+
+article hr {
+  display: block;
+  height: 1px;
+  border: 1px solid #000;
+  margin: 1em 0 1em 0;
+}
+
+div.flexbox {
+  display: flex;
+  flex-flow: row nowrap;
+  flex: 1 auto;
+  justify-content: space-between;
+}
+
+article {
+  flex-flow: column nowrap;
+}
+
+aside {
+  flex: 1 25%;
+  padding-left: 40px;
+}
+
+footer {
+  display: flex;
+  color: #fff;
+  background-color: #4D4D4D;
+  padding: 30px 70px 30px 40px;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+footer hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #fff;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: .8em;
+}
+
+.fa {
+  color: #fff;
+}
+
+/* Laptop/Desktop */
+@media all and (min-width: 992px) {
+  body {
+    margin: 40px;
+  }
+  footer {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media all and (min-width: 768px) and (max-width: 991px) {
+  body {
+    margin: 30px;
+  }
+  aside {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+}
+
+/* Phone */
+@media all and (max-width: 767px) {
+  main {
+    margin: 40px;
+  }
+  aside {
+    display: none;
+  }
+  body {
+    font-size: .9em;
+  }
+}
