@@ -1,17 +1,131 @@
-.flexcontainer{
-  height: auto%;
-  width: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+body{
+  font-family: 'Comfortaa', sans-serif;
+  background-image: url("../assets/bg.jpg"); /*Patterned background*/
+  background-size: 20%;
+  height: auto;
+}
 
+.container{
+  height: auto;
+  max-width: 1250px;
+}
+
+.flexcontainer{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.flexheader{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .headingcontainer{
-  background-color: #4A90E2;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  padding-top: 60px;
+  width: 850px;
+  height: 100px;
+  border-radius: 8px;
+  background-image: url("../assets/hiplabel.png"); /*Header label image*/
+  background-repeat: no-repeat;
+  align-items: center;
+
 }
 
-.bgcontainer{
-  height: 90%;
-  background: #4A90E2;
+.gallerycontainer{ /*the overall gallery box */
+  margin-top: 20px;
+  margin-left: 80px;
+  padding: 10px;
+  width: 550px;
+  height: 440px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 20px;
+  box-shadow: 0px 5px 4px #888888;
+}
+
+.galleryscroller{ /*contains the image and description*/
+  height: 350px;
+  overflow-y: scroll;
+}
+
+.gallerycontainer img{
+  margin-top: 5px;
+  margin-left: 40px;
+  width: 450px;
+  height: 300px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffffff;
+}
+.gallerycontainer img:hover{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000000;
+}
+.infocontainer{
+  margin-top: 20px;
+  width: 200px;
+  height: 600px;
+}
+.rateinfocontainer{
+  height: 150px;
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 4px #888888;
+}
+
+.rateinfocontainer ul{
+  text-align: right;
+}
+
+.quotecontainer{
+  padding: 10px;
+  height: 210px;
+  width: 200px;
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 4px #888888;
+}
+
+article{
+  border-style: solid;
+  border-color: #000000;
+  border-width: 5px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+article p{
+  text-align: center;
+}
+
+h1{
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h2{
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Amatic SC', cursive;
+}
+
+.galleryscroller p{
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
