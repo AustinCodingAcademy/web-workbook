@@ -1,0 +1,209 @@
+main {
+    margin: auto;
+    width: 80px;
+}
+
+div {
+  width: 50px;
+  height: 50px;
+  border: 2px solid red;
+  margin-bottom: 20px;
+}
+
+ /*BOX ONE!!*/
+.one {
+  background-color: black;
+  transition: margin-left 2s, background-color 2s, border 2s, transform 2s;
+}
+
+.one:hover {
+  margin-left: 30px;
+  background-color: white;
+  border: 1px solid white;
+}
+
+/*BOX TWO!!*/
+.two {
+  background-color: red;
+  transition: border-radius 2s;
+}
+
+.two:hover {
+  border-radius: 50px;
+}
+/*BOX THREE!!*/
+.three {
+  background-color: blue;
+}
+
+.three:hover{
+  animation: rotatem 4s;
+}
+
+@keyframes rotatem {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/*BOX FOUR*/
+.four {
+  background-color: yellow;
+  animation: rotatem 2s;
+}
+
+@keyframes rotatem {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+}
+
+/*BOX FIVE!!*/
+.five {
+  background-color: gray;
+  animation: rotatem 5s;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+}
+
+/*BOX SIX*/
+.six {
+  background-color: white;
+  animation: fade 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+/*BOX SEVEN*/
+.seven {
+  background-color: purple;
+  animation: slideRight 2s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes slideRight {
+  0% {
+    margin-left: 100px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+/*BOX EIGHT*/
+.eight {
+  background-color: orange;
+  animation: slideTop 2s;
+  animation-delay: 1.5s;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+}
+
+.eight:active {
+  background-color: blue;
+  border: 2px solid white;
+}
+
+@keyframes slideTop {
+  0% {
+    margin-top: 100px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
+
+/*BOX NINE*/
+.nine {
+  background-color: cyan;
+  animation: slideRight 2s;
+  animation-direction: reverse;
+  animation-timing-function: ease-out;
+}
+
+
+/*BOX TEN*/
+.ten {
+  background-color: coral;
+  animation: slideTop 2s;
+  animation-delay: 4s;
+  animation-timing-function: ease-out;
+}
+
+
+
+/*BOX ELEVEN*/
+.eleven {
+  background-color: springgreen;
+  border-radius: 50px;
+  animation: box 10s;
+  animation-delay: 10s;
+}
+
+@keyframes box {
+  0% {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+
+  20% {
+    padding-left: 300px;
+  }
+  40% {
+    padding-left: 300px;
+    padding-bottom: 400px;
+  }
+  60% {
+    padding-right: 300px;
+    padding-bottom: 400px;
+  }
+  80% {
+    padding-right: 300px;
+  }
+  100% {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+/*BOX TWELVE*/
+.twelve {
+  background-color: teal;
+}

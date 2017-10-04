@@ -3,19 +3,35 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Towers of Hanoi</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu" rel="stylesheet">
 </head>
 <body>
-  <div data-stack="1">
-    <div data-block="100"></div>
-    <div data-block="75"></div>
-    <div data-block="50"></div>
-    <div data-block="25"></div>
+  <h1>Towers of Hanoi</h1>
+<div id="container">
+
+
+    <div data-stack="1">
+      <div data-block="100"></div>
+      <div data-block="75"></div>
+      <div data-block="50"></div>
+      <div data-block="25"></div>
+    </div>
+    <div data-stack="2">
+    </div>
+    <div data-stack="3">
+    </div>
   </div>
-  <div data-stack="2">
+  <div id="reset">
+    Reset
   </div>
-  <div data-stack="3">
+  <div id="turns">
+    <p>Turns:</p>
   </div>
+  <div id="tracker">
+    0
+  </div>
+
   <div id="announce-game-won"></div>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
