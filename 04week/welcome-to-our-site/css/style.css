@@ -1,0 +1,104 @@
+/* LAPTOP STYLES */
+
+body {
+  box-sizing: border-box;
+  font-family: 'Droid Serif', serif;
+  margin: 1% auto;
+  width: 90%;
+  height: 100%;
+}
+
+header {
+  height: 500px;
+  width: 100%;
+  color: white;
+  background-color: #2BCDC0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 4em;
+}
+
+header span {
+  font-weight: bold;
+}
+
+#title-area {
+  background-color: black;
+  height: 500px;
+}
+
+#title-box {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding: 8% 0;
+  text-align: center;
+}
+
+.titles {
+  justify-content: space-between;
+  width: 33.33%;
+  margin: 0 5%;
+  padding-top: 5px;
+}
+
+.titles h1 {
+  color: white;
+  font-size: 4em;
+  padding-top: 20px;
+}
+
+.titles p {
+  color: white;
+  font-size: 1em;
+  line-height: 30px;
+}
+
+#left-title {
+  border-top: 35px solid #00bfff;
+}
+
+#middle-title {
+  border-top: 35px solid #ffa500;
+}
+
+#right-title {
+  border-top: 35px solid #2BCDC0;
+}
+
+/* PHONE STYLES */
+
+@media (max-width: 767px) {
+
+  header {
+    background-color: #00bfff;
+  }
+
+  header h1 {
+    font-size: 2.8em;
+    margin-left: 8%;
+  }
+
+  #title-area {
+    background-color: lightgray;
+    height: auto;
+  }
+
+  #title-box {
+    flex-direction: column;
+  }
+
+  .titles {
+    width: 60%;
+    margin: 10% auto;
+  }
+
+  .titles p, .titles h1 {
+    color: black;
+  }
+
+}

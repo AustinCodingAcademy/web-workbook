@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <title>Lesson 01: Hello, World!</title>
+</head>
+<body>
+  <section id="hello">
+  <h1 class="animated pulse infinite">Hello, World!</h1>
+</section>
+
+<!-- SCRIPTS -->
+<!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+<script>
+$('.animated').click(function(){
+  var heading = $(this)
+  heading.removeClass('pulse');
+  setTimeout(function(){
+    heading.addClass('tada');
+  }, 1);
+});
+</script>
+</body>
+</html>
