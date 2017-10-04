@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Geo');
+
+html{
+  background-image: url("../img/austin.jpg");
+  background-size: no-repeat;
+  color: white;
+  text-align: center;
+  font-family: Geo;
+}
+
+/*Header section formatting*/
+/*Used a flex-box to align items centrally and in the corners*/
+
+.header-container{
+  display: flex;
+  background-color: #222222;
+  background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  opacity: .85;
+}
+
+.logo-text{
+  color: #fff;
+  font-family: Monoton;
+  font-size: 60px;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+.logo-text:hover {
+  color: #228DFF;
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+
+.page-nav li{
+  list-style: none;
+  display: inline-block;
+  margin: 30px;
+  font-size: 20px;
+}
+
+.page-nav a{
+  text-decoration: none;
+  color: white;
+}
+
+.page-nav a:hover{
+  text-shadow: 0 0 10px #228DFF;
+}
+
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+/*formatting for the main section*/
+
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+}
+
+.img-container img{
+  opacity: .85;
+  margin: 40px;
+}
+
+.text-container{
+  background-color: #222222;
+  opacity: .85;
+  margin: 40px;
+  font-size: 20px;
+}
+
+.text-container h2{
+  font-size: 35px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+/*formatting the form to align left*/
+.form-container{
+  width: 80%;
+  margin: auto;
+}
+
+.form-meta input[type="text"]{
+  width:44%;
+  margin: 10px auto;
+  align-self: stretch;
+}
+
+.form-sub-msg input[type="text"]{
+  width:91%;
+  margin: 10px auto;
+}
+
+.msg-field{
+  height: 50px;
+}
+
+.submit-button{
+  width: 91%;
+  font-family: Geo;
+  margin: 10px auto;
+}
