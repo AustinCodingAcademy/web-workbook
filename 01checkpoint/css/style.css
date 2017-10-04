@@ -1,16 +1,57 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton');
 @import url('https://fonts.googleapis.com/css?family=Geo');
 
+/*Small effect to have document fade in*/
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 html{
   background-image: url("../img/austin.jpg");
   background-size: no-repeat;
   color: white;
   text-align: center;
   font-family: Geo;
+  animation: fadein 1s ease-in;
+  -webkit-animation: fadein 1s ease-in;
 }
 
 /*Header section formatting*/
 /*Used a flex-box to align items centrally and in the corners*/
+/*Used https://gist.github.com/erikringsmuth/9300530 for glow effect and background style*/
+/***************************************************************************************
+*    Title: [CSS3] Neon Glow
+*    Author: erikringsmuth
+*    Date: 10/3/17
+*    Availability: https://gist.github.com/erikringsmuth/9300530
+*
+***************************************************************************************/
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
 
 .header-container{
   display: flex;
@@ -38,6 +79,8 @@ html{
   animation: none;
 }
 
+/*Inline navigation list items with glow effect*/
+
 .page-nav li{
   list-style: none;
   display: inline-block;
@@ -54,27 +97,21 @@ html{
   text-shadow: 0 0 10px #228DFF;
 }
 
+/*Small effect to have document fade in*/
 
-@-webkit-keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
-  }
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
-@keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
-  }
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
-/*formatting for the main section*/
 
+/*using flexbox properties for the main content and centering items*/
 .main-container{
   display: flex;
   justify-content: center;
@@ -101,7 +138,7 @@ html{
   font-weight: bold;
 }
 
-/*formatting the form to align left*/
+/*formatting the form fields*/
 .form-container{
   width: 80%;
   margin: auto;
@@ -126,4 +163,28 @@ html{
   width: 91%;
   font-family: Geo;
   margin: 10px auto;
+  font-size: 18px;
+  color: white;
+  background-color: #909090;
+  border-style: none;
+}
+
+/*glow effect on the submit button*/
+input[type="submit"]:hover{
+  background-color: #BEBEBE;
+  box-shadow: 0 5px 15px #228DFF;
+  color: black;
+}
+
+/*adding facebook logo to link to fb page to footer*/
+
+.fb-img {
+  width: 30px;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+/*glow effect on hover for the fb logo*/
+.fb-img:hover{
+  box-shadow: 0 5px 15px #228DFF
 }
