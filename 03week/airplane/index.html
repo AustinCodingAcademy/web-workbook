@@ -3,25 +3,26 @@
   <head>
     <link rel="stylesheet" href="./css/style.css">
     <title>UX Atlantic</title>
-    <nav>
-    <div class="logo">
-      <img src="./img/logo.png" alt="Logo">
-    </div>
-    <div class="nav">
-        <img src="./img/home-icon.png">
-          <p>Home</p>
-        <img src="./img/deal-icon.png">
-          <p>Deals</p>
-        <img src="./img/schedule-icon.png">
-          <p>Flight Schedule</p>
-        <img src="./img/login-icon.png">
-          <p>Register/Login</p>
-    </div>
-    </nav>
+
+
   </head>
 <body>
 
-<!--This comment below is the booking class-->
+    <ul class="nav">
+
+<div class="logo">
+  <img src="./img/logo.png">
+    </div>
+    <li><img src="./img/home-icon.png">Home</li>
+    <li><img src="./img/deal-icon.png">Travel Deals</li>
+    <li><img src="./img/schedule-icon.png">Flight Schedule</li>
+    <li><img src="./img/login-icon.png">Register/Login</li>
+    </ul>
+    </div>
+</div>
+  </nav>
+
+
     <section>
       <div class="plane-container">
         <div class="tab-header">
@@ -33,11 +34,16 @@
     </section>
 
     <section>
-      <div class="depart">
-        <p>Depart</p>
-      </div>
-      <div class="arrive">
-        <p>Arrive</p>
+      <form action="/action_page.php">
+  <fieldset class="box">
+    <p>First name:</p>
+    <input type="text" value="Depart">
+    <p>Last name:</p>
+    <input type="text" value="mm/dd/yy">
+    <input type="submit" value="Search Flights">
+  </fieldset>
+</form>
+    </div>
       </div>
   </section>
   </body>
