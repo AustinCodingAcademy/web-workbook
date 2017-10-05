@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <title>Airplane</title>
+</head>
+<body>
+  <div class="top_container">
+    <div class="">
+      <img class="logo" src="./img/logo.png" alt="logo">
+    </div>
+    <div>
+      <img class="navi" src="./img/home-icon.png" alt="Home">Home
+      <img class="navi" src="./img/deal-icon.png" alt="Deals">Travel Deals
+      <img class="navi" src="./img/schedule-icon.png" alt="Schedule">Flight Schedule
+      <img class="navi" src="./img/login-icon.png" alt="Login">Register/Login
+    </div>
+  </div>
+
+  <div class="input_container">
+
+    <div class="top">
+      <div class="icon_p">
+        <img class="icons" src="./img/plane-icon.png" alt="plane icon" width="40px" height="40px">
+      </div>
+
+      <div class="icon_h_c">
+        <img class="icons"src="./img/hotel-icon.png" alt="hotel icon" width="40px" height="40px">
+        <img class="icons" src="./img/car-icon.png" alt="car icon" width="40px" height="40px">
+      </div>
+    </div>
+
+    <div class="middle">
+      <div class="side_depart">
+        <input type="text" class="depart_field" placeholder="Depart">
+        <input type="datetime" class="date_field" placeholder="mm/dd/yyyy">
+        <div class="passenger">
+          <p>Passengers</p>
+          <select name="Passengers">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="side_arrive">
+        <input type="text" class="depart_field" placeholder="Arrive">
+        <input type="datetime" class="date_field" placeholder="mm/dd/yyyy">
+        <div class="flight">
+          <input type="radio" name="direction" value="Return" checked> Return
+          <input type="radio" name="direction" value="One Way"> One Way
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <input type="button" name="submit" value="Search Flights" placeholder="Submit">
+    </div>
+
+  </div>
+
+</body>
+</html>
