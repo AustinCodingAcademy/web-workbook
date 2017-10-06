@@ -197,12 +197,13 @@ input[type="submit"]:hover{
   and (orientation: portrait) {
   html{
     background-image: url("../img/austin-mobile.jpg");
-    background-size: no-repeat;
+    background-size: cover;
     height: 100vh;
   }
 
   body{
-    height: 100vh;
+    height: 100%;
+    position: relative;
   }
 
   .video-section{
@@ -212,6 +213,9 @@ input[type="submit"]:hover{
   .footer-container{
     background-color: #222222;
     background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
   }
 
 }
