@@ -190,7 +190,11 @@ input[type="submit"]:hover{
 }
 
 /*display on mobile*/
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3) {
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: portrait) {
   html{
     background-image: url("../img/austin-mobile.jpg");
     background-size: no-repeat;
