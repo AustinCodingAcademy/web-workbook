@@ -123,7 +123,6 @@ html{
 .video-container iframe{
   width: 560px;
   height: 315px;
-  opacity: .90;
 }
 
 .text-container{
@@ -188,4 +187,17 @@ input[type="submit"]:hover{
 /*glow effect on hover for the fb logo*/
 .fb-img:hover{
   box-shadow: 0 5px 15px #228DFF;
+}
+
+/*display on mobile*/
+@media (max-width: 767px) {
+  html{
+    background-image: url("../img/austin-mobile.jpg");
+    background-size: no-repeat;
+  }
+
+  .video-section{
+    display: none;
+  }
+
 }
