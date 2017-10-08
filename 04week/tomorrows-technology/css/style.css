@@ -1,0 +1,80 @@
+.overall {
+  width: 100%;
+}
+
+.main {
+  background-color: blue;
+  width: 69%;
+}
+
+img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.main h2 {
+  width: 100%;
+}
+
+.main p {
+  width: 100%;
+}
+
+.aside {
+  width: 29%;
+  height: 600px;
+  background-color: red;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+.aside h3 {
+  background-color: yellow;
+  border-bottom: 1px solid black;
+}
+
+.footer {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+.main {
+  width: 100%;
+}
+
+.aside {
+  display: none;
+}
+
+}
+
+@media (max-width: 767px) {
+
+  .main {
+    width: 100%;
+  }
+
+  .aside {
+    display: none;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
