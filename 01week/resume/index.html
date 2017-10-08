@@ -1,14 +1,125 @@
 <!--
   Natalie Harper's Resume
   Working product to be published at end of course
+
+  <header></header>
+  <nav></nav>
+  <section></section>
+  <article></article>
+  <aside></aside>
+  <footer></footer>
+
+  Your name
+  Current (or most recent) position and company
+  Start and end dates
+  Previous position and company
+  Start and end dates at that position
+  Education
+  Technical skills - should look like a developer resume
+  Optimize your website for search engines.
+  Optimize your website for screen readers.
+
 -->
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Professional Biography</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+      ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #555;
+      }
+
+      li {
+      float: left;
+      }
+
+      li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+      background-color: #111;
+      }
+
+      .active {
+      background-color: #C54B33;
+      }
+
+
+      table, th, td {
+        border-collapse: collapse;
+      }
+      th, td {
+          padding: 5px;
+        }
+        th {
+          text-align: left;
+        }
+
+    </style>
   </head>
   <body>
+    <header>
+      <h1>Natalie Harper</h1>
+      <h2>Data Miner | GIS Guru | Web Dev. In-Training</h2>
+    </header>
+    <nav>
+      <ul>
+      <li><a class="active" href="#Home">Home</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Skills">Skills</a></li>
+      <li><a href="#Experience">Experience</a></li>
+      <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+        <h2 id="About">About</h2>
+        <p>As a database mining guru, webmapping developer, VBA developer, and data extraction trainer, I create and manage groundwater data using relational databases, and spatial databases.  I perform ETL processes for in-house and client projects by utilizing SQL, VBA and python automation. As most industries are set up, location of data sources can range from one main source hub to multiple data sources spread across the internet to pull, transform and digest data from.  I regularly extract, transform and load data from various sources in all kinds of different formats for report generating, or for web mapping applications.
+
+        <p>I aim to provide the most comprehensive, and detailed information for clients so they can assess risk, identify costs, and make strategic business decisions.  In addition to being a versatile and technical individual, I have a proven record of creating strong client and team relationships by listening, anticipating business, stakeholder and employer needs.  Over the past 6+ years, I have worked with cross-functional teams in technical design and business reporting projects.  I am an assertive communicator, goal-driven, and a group unifier that excels in fast-paced working environments.
+      </section>
+      <section>
+        <h2 id="Skills">Skills</h2>
+          <h3>Core Competencies</h3>
+            <table style="width:100%">
+            <tr>
+              <td>Data Architecture Design</td>
+              <td>Project Management</td>
+            </tr>
+            <tr>
+              <td>Data Visualization</td>
+              <td>Computer Systems and Hardware</td>
+            </tr>
+            <tr>
+              <td>Risk & Cost Analysis</td>
+              <td>Client & Team Relations</td>
+            </tr>
+            <tr>
+              <td>Source Control Management</td>
+              <td>Analytical & Logical Thinking</td>
+            </tr>
+          </table>
+          <h3>Technical Skills</h3>
+      </section>
+      <section>
+        <h2 id="Experience">Experience</h2>
+      </section>
+      <section>
+        <h2 id="Contact">Contact</h2>
+      </section>
+
+    </main>
 
   </body>
 </html>
