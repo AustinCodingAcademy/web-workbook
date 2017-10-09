@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Rokkitt');
+
+html{
+  font-family: 'Rokkitt', serif;
+}
+
+.main-container{
+  width: 73%;
+  display: inline-block;
+  float: left;
+  margin: 20px 50px;
+}
+
+.header-img-container img{
+  width: 100%;
+}
+
+.header-container h1{
+  font-size: 55px;
+}
+
+.text-container p{
+  font-size: 35px;
+}
+
+.text-container input[type="button"]{
+  height: 34px;
+  color: white;
+  border-style: none;
+  background-color: grey;
+}
+
+.footer-container{
+  color: white;
+  background-color: grey;
+  display: none;
+}
+
+
+.aside-container{
+  display: inline-block;
+  width: 15%;
+  font-weight: bold;
+  font-size: 17px;
+  margin: 20px 5px;
+  float: left;
+}
+
+.aside-container h2{
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid grey;
+}
+
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .main-container{
+    width: 90%;
+  }
+
+  .header-container h1{
+    font-size: 36px;
+  }
+
+  .text-container p{
+    font-size: 23px;
+  }
+
+  .aside-container{
+    display: none;
+    width: 0;
+  }
+
+  .footer-container{
+    display: none;
+    width: 0;
+  }
+
+}
+
+/*Phone*/
+@media (max-width: 767px) {
+
+  body{
+    margin: 0 auto;
+  }
+
+  .main-container{
+    width: 80%;
+  }
+
+  .header-container h1{
+    font-size: 28px;
+  }
+
+  .text-container p{
+    font-size: 21px;
+  }
+
+  .aside-container{
+    display: none;
+    width: 0;
+  }
+
+  .section-title{
+    width: 100%;
+    font-size: 28px;
+    margin-bottom: 0;
+  }
+
+  .footer-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer-section{
+    margin: 20px 50px;
+    width: 150px;
+    height: 180px;
+    font-size: 20px;
+  }
+
+  .footer-section h3{
+    padding-top: 10px;
+  }
+
+  .footer-section ul{
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .footer-section li{
+    padding-top: 2px;
+    padding-bottom: 5px;
+    border-bottom: solid 1px white;
+  }
+
+  .footer-section a{
+    text-decoration: none;
+    color: white;
+  }
+
+}
