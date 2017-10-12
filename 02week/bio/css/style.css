@@ -19,11 +19,12 @@ header h1 {
   margin-left: 20px;
   float: left;
   text-shadow: 15px 10px 18px blue;
+  font-family: fantasy;
 }
 
 header h2 {
   color: white;
-  fint-size: 20px;
+  font-size: 20px;
   margin-top: 85px;
 }
 
@@ -54,12 +55,19 @@ article p {
   text-indent: 20px;
   word-break: break-all;
   hyphens: manual;
+  font-style: italic;
+}
+
+article p::first-letter{
+  color:red;
+  text-transform: capitalize;
+  font-size: 20px;
 }
 
 article ul li {
   width: auto;
-  display: block;
-  list-style-type: circle;
+  list-style-type: square;
+  margin: 0px 20px;
 }
 
 article h1{
@@ -98,6 +106,7 @@ article .wrapper{
   float: right;
   height: 100%;
   margin-top: 50px;
+
 }
 
 nav li{
