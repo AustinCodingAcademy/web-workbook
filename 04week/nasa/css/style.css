@@ -1,25 +1,32 @@
+/*CSS DOCUMENT*/
 *{
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   border: 0;
 }
+/*used flex to center content in the body*/
 body{
-  margin-left: 225px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+/*in first of two containers inserted background image*/
 #picture{
   background-image: url("../img/nasa-background.jpg");
   display: flex;
   flex-direction: row;
   height: 450px;
-  width: 850px;
+  min-width: 850px;
 }
+/*display text on background image*/
 h1{
   color: white;
   font-size: 100px;
   margin-left: 300px;
   margin-top: 150px;
 }
+/*second container holds three flex items*/
 #bottomcontainer{
   display: flex;
   flex-direction: row;
@@ -27,37 +34,44 @@ h1{
   justify-content: space-between;
   margin-top: 20px;
   height: 324px;
-  max-width: 850px;
+  min-width: 850px;
   background-color: lightgrey;
 }
+/*class to style three flex items*/
 .bottom3{
 height: 324px;
 width: 270px;
 color: black;
 background-color: lightgray;
 }
+/*h2 for each flex item*/
 h2{
   text-align: left;
   margin-left: 30px;
   margin-top: 30px;
   font-weight: 900px;
 }
+/*ul for each flex item*/
 ul{list-style: none;
   margin-left: 30px;
   margin-top: 10px;
   line-height: 150%;
   color: #878787;
 }
+/*input for "Name"*/
 #input1{
 height: 30px;
-width: 200px;
+width: 210px;
 margin-top: 5px;
+margin-bottom: 10px;
 }
+/*input for "message"*/
 #input2{
 height: 70px;
-width: 200px;
+width: 210px;
 margin-top: 5px;
 }
+/*input for "send" button*/
 #button{
 height: 40px;
 width: 75px;
