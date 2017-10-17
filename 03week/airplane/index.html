@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>UX Atlantic | Book A Flight</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.png" alt="UX-logo">
+      <nav id="main-menu">
+        <ul class="nav-bar">
+          <li class="nav-button-home">
+            <img src="img/home-icon.png" alt="home">
+            <a href="#">Home</a>
+          </li>
+          <li class="nav-button-travel">
+            <img src="img/deal-icon.png" alt="plane">
+            <a href="#">Travel Deals</a>
+          </li>
+          <li class="nav-button-schedule">
+            <img src="img/schedule-icon.png" alt="clock">
+            <a href="#">Flight Schedule</a>
+          </li>
+          <li class="nav-button-login">
+            <img src="img/login-icon.png" alt="login-icon">
+            <a href="#">Register/Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <ul class="tableMenu">
+          <li style="background-color: #0063b7;"><img src="img/plane-icon.png" alt="plane-white"></li>
+          <li><img src="img/hotel-icon.png" alt="hotel-icon"></li>
+          <li><img src="img/car-icon.png" alt="car-icon"></li>
+        </ul>
+        <form class="bookingForm" action="#" method="bookConfirm">
+          <input type="text" name="departDate" value="     Depart">
+          <input type="text" name="ArriveDate" value="     Arrive">
+          <input type="text" name="departDate" value="     mm/dd/yyyy" style="color: white; font-decoration: bold;">
+          <input type="text" name="ArriveDate" value="     mm/dd/yyyy" style="color: white; font-decoration: bold;">
+          <span>Passengers: </span>
+          <input type="number" name="passengers" value="1" style="width: 55px; padding-left: 15px;">
+          <input class="radioStyle" type="radio" name="return" value="Return" checked>
+          <span style="width: 55px; margin-left: 5px;">Return </span>
+          <input class="radioStyle" type="radio" name="oneWay" value="One Way" unchecked>
+          <span style="margin-left: 5px;">One Way </span>
+          <input id="searchFlightsButton" type="button" name="searchFlights" value="Search Fligths">
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
