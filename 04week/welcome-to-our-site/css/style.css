@@ -1,0 +1,80 @@
+#topbox {
+  background-color: #2BCDC0;
+  height: 500px; /* makes box take up 1/2 of the 1000 media query size*/
+  width: auto; /*extends box to edge of page */
+  display: flex;
+  justify-content: center; /*centers h1 horizontally in container */
+  align-items: center; /*centers h1 vertically in container */
+}
+#topbox h1, h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 70px; /* changes size of 'welcome to our site' */
+  color: white;
+}
+#topbox h2 {
+  font-weight: bold; /*makes word site bold in title */
+  text-indent: 20px; /*added this to provide space between "our" and "site" */
+}
+#bottombox {
+  background-color: black;
+  height: 500px auto; /* before I added the auto, it would overlap my first box into my topbox container. This seems to mean that the height of the box should be at least 500px, and if the contents are bigger, it automatically grows to fit the extra content*/
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /*centers the boxes vertically */
+  justify-content: space-around; /*spaces the boxes equally */
+}
+.box {
+  background-color: black;
+  height: 50% auto;
+  width: 200px;
+  margin-top: 80px; /*separates the top of the box from the top of the container in laptop view. Also helped create space between the boxes in mobile view */
+  margin-bottom: 80px; /*same as above, it helped separate the boxes from the bottom of the page as there appeared ot be space in the laptop view, but then it also adds space in the mobile view */
+  padding-top: 10px; /*separated the title from the top color bar */
+  align-items: center;
+  text-align: center;
+  }
+#left_bar {
+  border-top: 30px solid #33A8DD;
+}
+#middle_bar {
+  border-top: 30px solid #F46731;
+}
+#right_bar {
+  border-top: 30px solid #2BCDC0;
+}
+.box h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  color: white;
+}
+.box p {
+  margin-top: 20px;
+  color: white;
+}
+@media all and (max-width: 1000px) {
+
+#topbox {
+  background-color: #33A8DD;
+}
+#bottombox {
+    flex-direction: column; /*changes the three boxes to column */
+    align-items: center; /*centers the three boxes horizontally */
+    background-color: #F7F5F6;
+}
+.box {
+  background-color: #F7F5F6;
+}
+#left_bar {
+  border-color: #33A8DD;
+}
+#middle_bar {
+  border-color: #F46731;
+}
+#right_bar {
+  border-color: #2BCDC0;
+}
+.box h2, .box p {
+  color: black; /*changed the title and paragraph text to black */
+}
+}
