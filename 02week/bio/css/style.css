@@ -20,12 +20,43 @@ h1:hover {
 }
 
 nav {
-  height: 100px;
+  position: relative;
+  height: 400px;
+  margin: 60px;
+  background-color: grey;
+}
+
+#firstpic {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#secondpic {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#navlinks {
+  width: 300px;
+  position: absolute;
+  top: 30px;
+  left: 350px;
+}
+
+nav a {
+  font-size: 1.1em;
+  /*margin: 30px;*/
+  font-family: verdana, sans-serif;
+}
+
+#resumelink {
+  margin-left: 40px;
 }
 
 a {
   color: #d4efb1;
-  font-size: 1.1em;
 }
 
 a:hover {
@@ -39,10 +70,28 @@ h2 {
 }
 
 section {
+  position: relative;
   height: 300px;
+  width: 80%;
+  margin-left: 40px;
 }
 
-.textchunk {
+.textblock {
+  background-color: #93969b;
+  position: absolute;
+  left: 5%;
+  width: 80%;
+  padding: 9px;
+  outline-color: black;
+  outline-style: double;
+  outline-width: thin;
+}
+
+.textblock>p {
+  margin: 9px;
+}
+
+.contacts {
   width: 280px;
   background-color: #6d775f;
   padding: 13px;
