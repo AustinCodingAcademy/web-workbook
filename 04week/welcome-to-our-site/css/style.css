@@ -1,3 +1,5 @@
+/*MEDIA QUERIE For Laptop Display*/
+@media (min-width: 992px) {
 body {
   text-align: center;
   height: 100%;
@@ -39,4 +41,106 @@ h1 {
 }
 .green {
   background-color: #2BCDC0;
+}
+}
+/*TABLET DISPLAY*/
+@media (min-width: 768px) and (max-width: 991px) {
+body {
+  text-align: center;
+  height: 100%;
+  font-family: 'Slabo 27px', serif;
+}
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 50%;
+  background-color: #2BCDC0;
+  color: white;
+}
+h1 {
+  position: relative;
+  top: 120px;
+  font-size: 2.5em;
+}
+.titles {
+  color: white;
+  background-color: black;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  top: 50%;
+}
+.box {
+  margin-top: 30px;
+  width: 200px;
+  height:30px;
+}
+.blue {
+  background-color: #33A8DD;
+}
+.red {
+  background-color: #F46731;
+}
+.green {
+  background-color: #2BCDC0;
+}
+}
+/*MEDIA QUERY FOR PHONE DISPLAY*/
+@media (max-width: 767px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  header {
+    display: flex;
+    flex-flow: wrap;
+    height: 45%;
+    padding: 30px;
+    background-color: #33A8DD;
+    color: white;
+    justify-content: space-around;
+    word-wrap: normal;
+}
+.titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  color: black;
+  background-color: #F7F5F6;
+  bottom: 0;
+  width: 95%;
+  height: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.titles h2 {
+  text-align: center;
+}
+.titles p {
+  text-align: center;
+}
+.box {
+  margin-top: 10px;
+  position: relative;
+  width: auto;
+  height:10px;
+}
+.blue {
+  background-color: #33A8DD;
+}
+.red {
+  background-color: #F46731;
+}
+.green {
+  background-color: #2BCDC0;
+}
 }
