@@ -1,25 +1,36 @@
 
-h3{
-  text-align: right;
-
+* {
+    /* the simplest css reset possible, can cause performance issues on very complex HTML Documents */
+    padding: 0;
+    margin: 0;
 }
 
-img{
-    float: left;
-    margin: auto;
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #193a55;
+    color: #fff;
+    height: 84px;
+    border: 0 solid #fff;
+    border-bottom-width: 1px;
 }
 
-menu{
-    float: right;
+.linkMenu ul {
+    list-style: none;
+}
+  
+.linkMenu ul li {
+    margin: 10px;
+    display: inline;
 }
 
-header{
-    height: 81px;
-    background-color: #183A55;
+.linkMenu ul li img {
+    margin-right: 6px;
 }
+
 body {
-    background-image: url('img\airline.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
+    background-image: url('logo.jpg');
+
+    
+  }
