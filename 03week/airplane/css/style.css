@@ -10,7 +10,7 @@ header {
   color: white;
   height: 82px;
   border: 0 solid #fff;
-  border-bottom-width: 1px;
+  border-bottom: 1px;
 }
 
 .menu {
@@ -19,9 +19,6 @@ header {
   float: right;
   padding-top: 25px;
   padding-right: 40px;
-}
-.menu:hover { 
-    background-color: yellow;
 }
 
 .menuItem {
@@ -33,82 +30,87 @@ header {
   float: right;
 }
 
-.reservationBox {
- width: 400px;
- height: 350px;
- margin-top: 150px;
- margin-right: 100px;
- margin-bottom: 30px;
- margin-left: 40px;
- background-color: #193a55;
- border-radius: 5px;
- display: flex;
- justify-content:
- }
-
-.selection1 {
-margin-top: 0px;
-margin-right: 0px;
-margin-bottom: 30px;
-margin-left: 0px;
-padding-top: 0px;
-padding-right: 40px;
-padding-bottom: 0px;
-padding-left: 40px;
-background-color: blue;
- }
- .selection2 {
-   margin-top: 0px;
-   margin-right: 0px;
-   margin-bottom: 30px;
-   margin-left: 0px;
-   padding-top: 0px;
-   padding-right: 40px;
-   padding-bottom: 0px;
-   padding-left: 40px;
- background-color: green
-  }
-  .selection3 {
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 30px;
-    margin-left: 0px;
-    padding-top: 0px;
-    padding-right: 40px;
-    padding-bottom: 0px;
-    padding-left: 40px;
-  background-color: green;
-   }
-   .depart, .arrive, .arriveDate, .departDate {
-     border: 2px solid;
-     border-color:white;
-     border-radius:2px;
-     color:white;
-     padding: 2px 30px;
-}
-.arrive, .depart {
-  color:grey !important; /*I wanted to use the important tag, I know it is bad form*/
-}
-     /*.depart, .arrive {*/
-       /*float: left;*/
-     /*}*/
-
-.searchBox {
-  width: 350px;
-  height: 50px;
-  color: white;
-  background-color: blue;
-  text-align: center;
-  top: 50%;
+section {
+width: 542px;
+height: 386px;
+background: #183a55;
+border-radius: 5px;
+top: 50px;
+left: 50px;
+margin-top: 40px;
 }
 
-.radioButtons, .toggleBox {
-  color: white;
+.toptabs {
+display: flex;
 }
 
-.arriveDepart {
-  float: left;
+.tab1, .tab2, .tab3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.3%;
+  height: 60px;
+  background: #018D80;
 }
+
+.tab1 {
+  background: #0063B7;
+}
+
+.arriveDepart{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  padding-top:50px
+}
+
 .dates {
-  float: right;
+  display:flex;
+  flex-direction:row;
+  padding-bottom:50px;
+  padding-top:20px;
+  justify-content:space-around;
+
+}
+
+.passengers {
+  display:flex;
+}
+
+.box1, .box2, .box3, .box4 {
+  width: 175px;
+  height:40px;
+  border: 2px solid;
+  border-color:white;
+  border-radius:2px;
+  color:white;
+}
+
+p {
+  color:white;
+  padding-left:50px;
+}
+.box5 {
+  width:70px;
+  height:40px;
+  border: 2px solid white;
+  color:white;
+  border-radius:2px;
+  margin-left:15px;
+}
+
+.return {
+  color:white;
+  padding-left:110px;
+}
+
+.oneWay {
+  color:white;
+  padding-left:20px;
+}
+.circle {
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 60px;
 }
