@@ -1,0 +1,175 @@
+.main {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  background-color: black;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  background-color: teal;
+  color: white;
+  height: 300px;
+}
+
+h1 {
+  height: 300px;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 150px;
+  width: 100%;
+}
+
+.bottom {
+  display: flex;
+  width: 100%;
+  height: 400px;
+}
+
+.blue-box {
+  display: flex;
+  flex-flow: row-wrap;
+  width: 150px;
+  height: 9px;
+  color: blue;
+  background-color: blue;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 20px;
+  margin-top: 50px;
+  padding-top: 20px;
+  float: left;
+}
+
+.col1 {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  vertical-align: bottom;
+  width: 150px;
+  height: 9px;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 20px;
+  margin-top: 50px;
+  padding-top: 20px;
+  float: left;
+  color: white;
+}
+
+.orange-box {
+  display: flex;
+  flex-flow: row-wrap;
+  width: 150px;
+  height: 9px;
+  color: orange;
+  background-color: orange;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 20px;
+  margin-top: 50px;
+  padding-top: 20px;
+  float: left;
+}
+
+.col2 {
+  display: flex;
+  flex-flow: row wrap;
+  float: left;
+  text-align: center;
+  width: 150px;
+  height: 9px;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 20px;
+  margin-top: 50px;
+  padding-top: 20px;
+  color: white;
+}
+
+.green-box {
+  display: flex;
+  flex-flow: row-wrap;
+  width: 150px;
+  height: 9px;
+  color: green;
+  background-color: green;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 20px;
+  margin-top: 50px;
+  padding-top: 20px;
+  float: left;
+}
+
+.col3 {
+  display: flex;
+  flex-flow: row wrap;
+  float: left;
+  text-align: center;
+  width: 150px;
+  height: 9px;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 20px;
+  margin-top: 50px;
+  padding-top: 20px;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media all and (max-width: 400px) {
+  .main {
+    flex: 1 auto;
+    background-color: #00ccff;
+    flex-flow: column wrap;
+    flex-wrap: wrap;
+  }
+  .header {
+    flex: 1;
+  }
+  .bottom {
+    flex: 0;
+    flex-wrap: wrap;
+    height: 900px;
+    flex-flow: column nowrap;
+  }
+  . .col1 {
+    flex: 0;
+    flex-flow: column nowrap;
+    margin: 120px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding-top: -40em;
+    padding-bottom: 10em;
+    vertical-align: bottom;
+    height: 5em;
+    ;
+  }
+  .col2 {
+    flex: 1;
+    flex-wrap: wrap;
+    flex-flow: column nowrap;
+    margin: 120px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding-top: -200em;
+    padding-bottom: 1em;
+    vertical-align: text-bottom;
+  }
+  .col3 {
+    flex: 1;
+    flex-wrap: wrap;
+    flex-flow: column nowrap;
+    margin: 120px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding-top: -400em;
+    padding-bottom: 1em;
+    vertical-align: text-bottom;
+  }
+}
