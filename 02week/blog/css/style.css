@@ -5,12 +5,40 @@
   max-width: 1000px;
   height: 450px;
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 body {
   max-width: 1000px;
   margin: 0 auto;
   height: 100%;
+  padding: 0;
+}
+
+nav {
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+
+nav > li {
+  display: inline-block;
+  border: 1px dotted black;
+  padding: 5px;
+  margin: 5px 15px 5px 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav > li:nth-child(3) {
+  font-size: 70px;
+  border: none;
+  text-transform: uppercase;
 }
 
 #author {
@@ -28,18 +56,26 @@ body {
 
 #author, #favorites, #next {
   border: 2px solid #5c705c;
-  width: 300px;
-  float: left;
-  clear: left;
-  margin-top: 30px;
+  margin-bottom: 30px;
   padding: 5px;
+  width: 100%;
+}
+
+.left {
+    float: left;
+    clear: left;
+    width: 300px;
 }
 
 #maincontent {
-  float: right;
   background-color: #f6f7f2;
   border: 2px solid #5c705c;
-  width: 500px;
+}
+
+.right {
+  float: right;
+  width: 650px;
+  margin-bottom: 30px;
 }
 
 .authorphoto {
@@ -53,14 +89,26 @@ h1 {
   text-align: center;
 }
 
-p {
+#author  > p {
   width: 90%;
   margin: 0 auto;
   text-align: center;
 }
+
 
 ul {
   text-decoration: none;
   width: 250px;
   margin: 0 auto;
 }
+
+#maincontent > article {
+  padding-left: 10px;
+}
+
+#maincontent  p:hover::first-letter{
+  font-weight: bold;
+}
+
+
+/*Did not use important tag, was able to style how I wanted with selecting good ID's and classes*/
