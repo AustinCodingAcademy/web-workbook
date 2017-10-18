@@ -11,6 +11,8 @@
       <!-- set background color of header box -->
       <!-- place logo in top-right corner -->
       <img src="./img/logo.png" alt="">
+
+      <!-- build menu -->
         <menu>
           <a href="https://www.southwest.com/" target="_blank"> <img src="./img/home-icon.png" alt="Home"> Home
           </a>
@@ -27,30 +29,13 @@
 
     </header>
     <main>
-      <!-- build booking box - start with top 3 icons -->
-<!-- <div class="bookingbox">
-  <div class="bb-icon-box">
-    <a href="https://www.southwest.com/">
-      <img src="./img/hotel-icon.png" alt="Booking">
-    </a>
-  </div> -->
-  <!-- <div class="bb-icon-box">
-    <a href="https://www.southwest.com/">
-      <img src="./img/hotel-icon.png" alt="Booking">
-    </a>
-  </div>
-  <div class="bb-icon-box">
-    <a href="https://www.southwest.com/">
-      <img src="./img/hotel-icon.png" alt="Booking">
-    </a>
-  </div>
-</div> -->
+      <!--Set up box model for booking. Build booking box - start with top 3 icons -->
+
 <div class="bookingbox">
   <div class="bb-icon-box">
     <div class="tagImage">
       <img src="./img/plane-icon.png" alt="Book airfare">
     </div>
-
   </div>
   <div class="bb-icon-box">
     <div class="tagImage">
@@ -62,27 +47,38 @@
       <img src="./img/car-icon.png" alt="Reserve a rental car">
     </div>
   </div>
+
+  <!-- build out depart and arrive city destinations-->
+<form>
+    <input type="text" name="depart-field" placeholder="Depart">
+</form>
+<form>
+    <input type="text" name="arrive-field" placeholder="Arrive">
+</form>
+  <!-- build out calendar dates boxes -->
+  <form>
+    <input type="Date" name="mm/dd/yyyy">
+  </form>
+  <form>
+    <input type="Date" name="mm/dd/yyyy">
+  </form>
+  <!-- build out passenger drop-down box -->
+<div id="Passengers">
+  Passengers
+</div>
+<form>
+    <input type="number" name="quantity" min="1" max="15">
+</form>
+  <!-- build out radio button 1-way or roundtrip -->
+  <form>
+  <input type="radio" name="Trip Type" value="Return" checked> Return
+  <input type="radio" name="Trip Type" value="One-way" checked> One-way
+ </form>
+  <!-- build out search flights button -->
+
+
 </div>
 
-<!-- build out depart and arrive city destinations-->
-
-
-<!-- build out calendar dates boxes -->
-
-
-<!-- build out passenger drop-down box -->
-
-
-<!-- build out radio button 1-way or roundtrip -->
-
-
-<!-- build out search flights button -->
-
-
-
-      <!-- set up box model for booking -->
-
     </main>
-
   </body>
 </html>
