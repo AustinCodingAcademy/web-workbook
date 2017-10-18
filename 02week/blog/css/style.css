@@ -20,16 +20,43 @@ line-height: 16px;
 
 }
 
+.navBar > ul{
+  padding: 6px;
+  margin-top: 0;
+  width:100%;
+  height:30px;
+  color:white;
+  list-style-type:none;
+  text-align: center;
+}
+.navBar li{
+  display: inline-block;
+  font-size: 22px;
+  padding: 0 8px;
+}
+.navBar li:hover{
+  color:black;
+}
+.navBar ul li.burger{
+  display: none;
+}
+
 
 .entry{
   font-size: 16px;
   line-height: 18px;
   color: white;
+
 }
+.entry h3{
+  text-align: center;
+}
+
 .details{
-  text-indent: 50px;
+  width: 80%;
   color: #d9d9d9;
   line-height: 0px;
+  margin: 0 auto;
 }
 a{
   color: white;
@@ -39,17 +66,21 @@ a:hover{
 
 }
 .copy{
+width: 80%;
+margin: 0 auto;
   font-size: 16px;
   text-indent: 65px;
-  margin-left: 50px;
+
   color: #d9d9d9;
   line-height:16px;
   text-align: justify;
 }
 .image{
-  margin-left: 50px;
+
   border-radius: 3px;
   border: 3px solid white;
+  margin: auto;
+  display: block;
 }
 .titleImage{
 border-radius: 50%;
@@ -60,8 +91,8 @@ border-radius: 50%;
 /*##########MOBILE###################*/
 
 @media screen and (max-width: 680px){
-.copy{
-  margin:0;
+.navBar ul li{
+  display:none;
 }
 .image{
   margin: auto;
