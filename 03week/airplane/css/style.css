@@ -3,25 +3,172 @@ header {
   background-color: #183A55;
   border-bottom: .5px solid white ;
   height: 80px;
+  width: inherit;
 }
 .logo {
   float: left;
   height:inherit;
+  margin-left: 40px;
 }
 .menu {
+  position: fixed;
+  top: 10px;
+  right: 20px;
   float: right;
-  height: inherit;
+  height: 40px;
+  text-align: center;
+  justify-content:space-between;
+  font: 14px "muli", sans-serif;
+  margin-top: 30px;
+  margin-right: 20px;
 }
 a {
-  margin-top: inherit;
   text-decoration: none;
-  color: white;
-  text-align: center;
-  
+  color: lightgray;
+
+
 }
 main {
   background-image: url("../img/airline.jpg");
   background-size: cover;
   height: 700px;
-  width: auto;
+  width: 100%;
+}
+.outer {
+  box-sizing: border-box;
+  border-color: none;
+  border-radius: 6px;
+  background-color: #183A55;
+  height: 320px;
+  width: 410px;
+  margin-left: 80px;
+  position: relative;
+  top: 120px;
+}
+
+.plane {
+  background: #4169E1;
+  border-top-left-radius: 6px;
+  float: left;
+  width: 33.3%;
+  height: 15%;
+  object-position: center;
+  object-fit: scale-down;
+}
+.hotel {
+  background: #20B2AA;
+  width: 33.3%;
+  height: 15%;
+  object-position: center;
+  object-fit: scale-down;
+}
+.car {
+  background: #20B2AA;
+  border-top-right-radius: 6px;
+  float:right;
+  width: 33.3%;
+  height: 15%;
+  object-position: center;
+  object-fit: scale-down;
+}
+.depart-field {
+  background-color: inherit;
+  border: white round;
+  border-radius: 3px;
+  width: 155px;
+  padding-top: 15px;
+  color:white;
+  font: 12px "asap", sans-serif;
+  position: relative;
+  top: 15px;
+  left: 20px;
+}
+.arrive-field {
+  background-color: inherit;
+  border: white round;
+  border-radius: 3px;
+  width: 155px;
+  float: right;
+  padding-top: 15px;
+  color: white;
+  font: 12px "asap", sans-serif;
+  position: relative;
+  top: 15px;
+  right: 20px;
+}
+.depart-date {
+  background-color: inherit;
+  border: white round;
+  border-radius: 3px;
+  width: 155px;
+  float: left;
+  color: white;
+  padding-top: 15px;
+  font: 12px "asap", sans-serif;
+  text-align: justify;
+  position: relative;
+  top: 30px;
+  left: 20px;
+}
+.arrive-date {
+  background-color: inherit;
+  border: white round;
+  border-radius: 3px;
+  width: 155px;
+  float: right;
+  color: white;
+  padding-top: 15px;
+  font: 12px "asap", sans-serif;
+  text-align: justify;
+  position: relative;
+  top: 30px;
+  right: 20px;
+}
+p {
+  background-color: inherit;
+  order: none;
+  color: white;
+  font: 12px "asap", sans-serif;
+  padding-top: 20px;
+  position: relative;
+  top: 55px;
+  left: -140px;
+}
+.passenger-dropdown {
+  width: 60px;
+  height: 10px;
+  background-color: inherit;
+  border: white round 3px;
+  border-radius: 3px;
+  float: left;
+  color: white;
+  padding-top: 25px;
+  text-align: justify;
+  position: relative;
+  top: 15px;
+  left: 115px;
+}
+.radiogroup {
+  background-color: inherit;
+  color: white;
+  font: 12px "asap", sans-serif;
+  float: right;
+  padding-top: 25px;
+  position: relative;
+  right: 55px;
+}
+.navbar {
+  background: inherit;
+  }
+.navbar input {
+  width: 370px;
+  height: 50px;
+  background: #4169E1;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font: 12px "asap", sans-serif, center;
+  position: relative;
+  bottom: -40px;
+  left: 20px;
 }

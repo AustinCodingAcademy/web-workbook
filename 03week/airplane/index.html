@@ -6,32 +6,49 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-      <header>
-        <div class="logo">
-        <img class="logo" src="img/logo.png" alt="UX ATLANTIC LOGO">
-      </div>
+    <header>
+      <img src="img/logo.png" class="logo" alt="UX ATLANTIC LOGO">
         <div class="menu">
-          <menu>
             <nav>
-              <img src="img/home-icon.png" alt="">
+              <img src="img/home-icon.png" alt="Home Icon">
               <a href="#">Home</a>
-              <img src="img/deal-icon.png" alt="">
+              <img src="img/deal-icon.png" alt="Deal Icon">
               <a href="#">Travel Deals</a>
-              <img src="img/schedule-icon.png" alt="">
+              <img src="img/schedule-icon.png" alt="Schedule Icon">
               <a href="#">Flight Schedule</a>
-              <img src="img/login-icon.png" alt="">
+              <img src="img/login-icon.png" alt="Login Icon">
               <a href="#">Register/Login</a>
             </nav>
-          </menu>
         </div>
     </header>
     <main>
-      <section>
-        <div class="">
-
+      <section class="outer">
+          <img src="img/plane-icon.png" class="plane" alt="Plane Icon">
+          <img src="img/hotel-icon.png" class="hotel" alt="Hotel Icon">
+          <img src="img/car-icon.png" class="car" alt="Car Icon">
         </div>
-        <table>
-        </table>
+        <form>
+          <input type="text" class="depart-field" placeholder="Depart" alt="Departure City">
+          <input type="text" class="arrive-field" placeholder="Arrive" alt="Arriving City">
+        </form>
+        <form>
+          <input type="text" class="depart-date" value="mm/dd/yyyy" alt="Date of Departure">
+          <input type="text" class="arrive-date" value="mm/dd/yyyy" alt="Date of Arrival">
+        </form>
+        <form>
+          <p> Passengers </p>
+          <input class="passenger-dropdown" name="Passengers" alt="Number of Passengers Dropdown">
+        </form>
+        <form>
+          <div class="radiogroup">
+            <input type="radio" name="return" value="Return" checked alt="Return Flight Selector"> Return
+            <input type="radio" name="one-way" value="One Way" alt="One Way Flight Selector"> One Way
+          </div>
+        <nav>
+          <div class="navbar" role="search" alt="Search Flights Button">
+            <input type="submit" class="search-flights" value="Search Flights">
+          </div>
+        </nav>
       </section>
     </main>
   </body>
