@@ -1,0 +1,35 @@
+.clearfix:after {
+  content:"";
+  display: table;
+}
+.nav-wrapper {
+  width: 100%;
+  background: #999;
+}
+
+.nav-menu {
+  position:relative;
+  display: inline-block;
+}
+
+.nav-menu li {
+  display: inline;
+  list-style-type: none;
+}
+
+.sub-menu {
+  position:absolute;
+  display: none;
+  background: #ccc;
+}
+
+.nav-menu ul li:hover > ul {
+  display: inline-block;
+}
+
+.nav-menu > ul > li:after {
+  content: "\25BC"; /*escaped unicode for the down arrow*/
+  font-size: .5em;
+  display: inline;
+  position: relative;
+}
