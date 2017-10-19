@@ -1,11 +1,33 @@
 header {
   background-color: #183A55;
+  border-bottom: 1px solid white;
+}
+
+.logo {
+  margin-left: 90px;
 }
 
 nav {
   float: right;
   display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 85px;
+  font-size: 0.8em;
+  margin-right: 100px;
+}
+
+nav a {
+  margin-left: 10px;
   text-decoration: none;
+}
+
+nav img {
+  vertical-align: middle;
+  padding-bottom: 5px;
+}
+
+.home {
+  color: rgb(37, 200, 168);
 }
 
 span {
@@ -28,14 +50,14 @@ main {
   font-size: 0;
   position: relative;
   left: 90px;
-  top: 100px;
+  top: 80px;
 }
 
 .plane {
-  border: 1px solid rgb(26, 45, 107);
-  border-top-left-radius: 8px;
+  border: 1px solid #2d64bc;
+  border-top-left-radius: 5px;
   padding: 0px 40px;
-  background-color: rgb(26, 45, 107);
+  background-color: #2d64bc;
 }
 
 .hotel {
@@ -46,19 +68,21 @@ main {
 
 .car {
   border: 1px solid rgb(37, 200, 168);
-  border-top-right-radius: 8px;
+  border-top-right-radius: 5px;
   padding: 0px 40px;
   background-color: rgb(37, 200, 168);
 }
 
 .form {
-  height: 300px;
+  height: 330px;
   width: 395px;
   position: relative;
   left: 90px;
-  top: 100px;
+  top: 80px;
   border: 1px solid #183A55;
   background-color: #183A55;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .depart, .date1 {
@@ -84,6 +108,13 @@ main {
   top: 30px;
 }
 
+.depart-field {
+  background-color: inherit;
+  border: none;
+  line-height: 50px;
+  margin-left: 10px;
+}
+
 .arrive {
   height: 50px;
   width: 165px;
@@ -93,11 +124,24 @@ main {
   top: -25px;
 }
 
+.arrive-field {
+  background-color: inherit;
+  border: none;
+  line-height: 50px;
+  margin-left: 10px;
+}
+
 .date1 {
   height: 50px;
   width: 165px;
   border: 2px solid white;
   border-radius: 5px;
+}
+.date1 span, .date2 span {
+  line-height: 50px;
+  margin-left: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.75em;
 }
 
 .date2 {
@@ -110,10 +154,80 @@ main {
 .passengers {
   color: white;
   font-weight: bold;
-  font-family: ;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.75em;
   float: left;
   clear: both;
   margin-left: 15px;
   position: relative;
   bottom: 30px;
+}
+
+.passengers > span {
+  position: relative;
+  top: 15px;
+}
+
+.square {
+  height: 50px;
+  width: 70px;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-left: 95px;
+  position: relative;
+  bottom: 20px;
+}
+
+.square span {
+  float:left;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  margin-left: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 75%;
+}
+
+.arrow {
+  width: 0;
+	height: 0;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-top: 6px solid white;
+  float: right;
+  position: relative;
+  top: 23px;
+  right: 10px;
+}
+
+.search {
+  height: 50px;
+  width: 365px;
+  border: 2px solid #2d64bc;
+  background-color: #2d64bc;
+  border-radius: 5px;
+  margin-left: 13px;
+  position: relative;
+  top: 260px;
+}
+
+.search span {
+  color: white;
+  weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  position: relative;
+  right: 30px;
+}
+
+.check {
+  float: right;
+  margin-right: 50px;
+  position: relative;
+  bottom: 15px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 0.75em;
 }

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <title>UX Atlantic</title>
   </head>
   <body>
@@ -10,7 +11,7 @@
       <img class="logo" src="img/logo.png" alt="logo">
       <nav>
         <a href=""><img src="img/home-icon.png" alt="">
-        <span>Home<span/></a>
+        <span class="home">Home<span/></a>
         <a href=""><img src="img/deal-icon.png" alt="">
         <span>Travel Deals</span></a>
         <a href=""><img src="img/schedule-icon.png" alt="">
@@ -28,19 +29,30 @@
         </div>
         <div class="form">
           <div class="depart">
-
+            <input type="text" class="depart-field" placeholder="Depart">
           </div>
           <div class="arrive">
-
+            <input type="text" class="arrive-field" placeholder="Arrive">
           </div>
           <div class="date1">
-
+            <span>mm/dd/yyyy</span>
           </div>
           <div class="date2">
-
+            <span>mm/dd/yyyy</span>
           </div>
           <div class="passengers">
             <span>Passengers</span>
+            <div class="square">
+              <span>1</span>
+              <div class="arrow"></div>
+            </div>
+          </div>
+          <div class="check">
+            <input type="radio" name="travel" value="return" checked="true"> Return
+            <input type="radio" name="travel" value="one way"> One Way
+          </div>
+          <div class="search">
+            <span>Search flights</span>
           </div>
         </div>
       </section>
