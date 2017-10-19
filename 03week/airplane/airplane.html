@@ -8,23 +8,46 @@
   <link rel="stylesheet" href="./css/style.css">
   <meta name="Ty Sweet Airplane" content="index, no-follow">
   <nav>
-    <ul class="navbar">
+    <ul class="top navbar">
+      <img class="logo" src="./img/logo.png" alt="UX Atlantic Logo">
       <li>
-        <a class="home" href="https://tysweet.github.io/web-workbook/01week/resume/index-ty-sweet-is-your-next-programming-employee.html" target="_blank">Home</a>
+        <a class="login" href="https://tysweet.github.io/web-workbook/01week/resume/index-ty-sweet-is-your-next-programming-employee.html" target="_blank"><img class="navpic" src="./img/login-icon.png">Register/Login</a>
       </li>
       <li>
-        <a class="deals" href="https://tysweet.github.io/web-workbook/02week/bio/index.html" target="_blank">Travel Deals</a>
+        <a class="schedule" href="https://tysweet.github.io/web-workbook/02week/bio/index.html" target="_blank"><img class="navpic" src="./img/schedule-icon.png">Flight Schedule</a>
       </li>
       <li>
-        <a class="schedule" href="https://tysweet.github.io/web-workbook/01week/resume/index-ty-sweet-is-your-next-programming-employee.html" target="_blank">Flight Schedule</a>
+        <a class="deals" href="https://tysweet.github.io/web-workbook/01week/resume/index-ty-sweet-is-your-next-programming-employee.html" target="_blank"><img class="navpic" src="./img/deal-icon.png">Travel Deals</a>
       </li>
       <li>
-        <a class="login" href="https://tysweet.github.io/web-workbook/02week/bio/index.html" target="_blank">Register/Login</a>
+        <a class="home" href="https://tysweet.github.io/web-workbook/02week/bio/index.html" target="_blank"><img class="navpic" src="./img/home-icon.png">Home</a>
       </li>
       </ul>
     </nav>
 </head>
 <body>
-
+  <img class="airline" src="./img/airline.jpg">
+<div class="box">
+  <div class="tab"><center><img src="./img/plane-icon.png"></center></div>
+    <div class="tab2"><center><img src="./img/hotel-icon.png"></center></div>
+      <div class="tab2"><center><img src="./img/car-icon.png"></center></div>
+      <form action="/action_page.php"><input type="text" class="depart-field" placeholder="Depart"></form>
+      <form action="/action_page.php"><input type="text" class="arrive-field" placeholder="Arrive"></form>
+      <form action="/action_page.php"><input type="text" class="date1" placeholder="mm/dd/yyyy"></form>
+        <form action="/action_page.php"><input type="text" class="date2" placeholder="mm/dd/yyyy"></form>
+          <p>Passengers</p>
+          <select name="numbers">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <form action="" class="radio">
+            <input type="radio" name="return" value="return" class="return">Return
+            <input type="radio" name="one-way" value="one-way" class="one-way">One-Way
+          </form>
+          <button type="button">Search Flights</button>
+</div>
 </body>
 </html>
