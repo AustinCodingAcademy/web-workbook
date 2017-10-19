@@ -1,6 +1,7 @@
 <html>
 <link rel="stylesheet" href="css/reset.css" />
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css" />
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 <head>
   <meta charset="UTF-8">
@@ -9,6 +10,50 @@
   <title>Document</title>
 </head>
 <body>
+  <header>
+    <img class="logo" src="css/img/logo.png"/>
+
+  </header>
+
+  <nav>
+    <img class="menu" src="css/img/home-icon.png" />
+    <a href "html.html">Home</a>
+    <img class="menu" src="css/img/deal-icon.png" />
+    <a href "html.html">Travel Deals</a>
+    <img class="menu" src="css/img/schedule-icon.png" />
+    <a href "html.html">Flight Schedule</a>
+    <img class="menu" src="css/img/login-icon.png" />
+    <a href "html.html">Register/Login</a>
+  </nav>
+
+  <section class="inputBox">
+      <img class="icon" src="css/img/plane-icon.png"/>
+      <img class="icon" src="css/img/hotel-icon.png"/>
+      <img class="icon" src="css/img/car-icon.png"/>
+    <p>
+      <input type="text" class="placeDate" placeholder="Depart" />
+      <input type="text" class="placeDate" placeholder="Arrive" />
+      <input type="date" class="placeDate" placeholder="mm/dd/yyyy" />
+      <input type="date" class="placeDate" placeholder="mm/dd/yyyy" />
+    </p>
+
+    <p>
+      <label class="passengersLabel">Passengers</label>
+      <input type="number" class="passengers" name="passengers" value="passengers" placeholder="1" min="1" max="100"/>
+    </p>
+
+    <p>
+
+      <input type="radio" class="radio" name="return" value="return" checked />
+      <label>Return</label>
+
+      <input type="radio" class="radio" name="oneWay" value="oneWay" />
+      <label>One Way</label>
+    </p>
+
+
+
+  </section>
 
 </body>
 </html>
