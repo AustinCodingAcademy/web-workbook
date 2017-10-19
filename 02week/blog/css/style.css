@@ -1,7 +1,10 @@
+/*I didn't find a place to use !important as I had no inheritance issues*/
+/*The reason my divs were scrolling over the header was because I had left position: relative on them.*/
+
 body {
   background-color: #726d42;
   background-image: url(http://www.publicdomainpictures.net/pictures/70000/velka/birds-wire-musical-notes.jpg);
-  background-position: top;
+  background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -9,9 +12,12 @@ body {
 
 header {
   background-color: #b54922;
-  /*position: fixed;
+  position: fixed;
   top: 0;
-  width: 100%;*/
+  width: 70%;
+  margin: 0 auto;
+  left: 15%;
+  outline: 5px solid #fff29e
 }
 
 h1 {
@@ -38,8 +44,7 @@ main {
 .blogpost {
   border: 1px solid #ada774;
   width: 70%;
-  position: relative;
-  margin: 10px auto 25px;
+  margin: 240px auto -140px;
   background-color: #d1a22e;
 }
 
@@ -70,4 +75,6 @@ p::first-letter {
   font-size: 1.1em;
 }
 
-/*I didn't find a place to use !important*/
+.link {
+  margin: 10px 20px;
+}
