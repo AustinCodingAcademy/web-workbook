@@ -9,45 +9,50 @@
   <title></title>
 </head>
 
-
-<div class="topbar">
-
-  <img class="logo" src="img/logo.png" alt="logo">
-
-  <img class="home" src="img/home-icon.png" alt="home image">
-  <span class="hometext">Home</span>
-
-  <img class="deal" src="img/deal-icon.png" alt="home image">
-  <span class="dealstext">Travel Deals</span>
-
-  <img class="schedule" src="img/schedule-icon.png" alt="home image">
-  <span class="schedstext">Flight Schedule</span>
-
-  <img class="login" src="img/login-icon.png" alt="home image">
-  <span class="loginstext">Register/Login</span>
-
-</div>
-
 <body>
 
-  <div class="clickbarplane">
-    <img class="plane" src="img/plane-icon.png" alt="Plane Icon">
-  </div>
+  <nav class="topbar">
 
-  <div class="clickbarbed_car">
-    <img class="hotel" src="img/hotel-icon.png" alt="hotel icon">
-    <img class="car" src="img/car-icon.png" alt="car icon">
-  </div>
+    <img class="logo" src="img/logo.png" alt="logo">
 
-  <div class="lookup">
+    <img class="home" src="img/home-icon.png" alt="home image">
+    <span class="hometext">Home</span>
 
-    <input class="depart" type="text" name="depart" value="Depart">
-    <input class="arrive" type="text" name="arrive" value="Arrive">
-    <input class="departdate" type="date" name="departdate" value="mm/dd/yyy">
-    <input class="arrivedate" type="date" name="arrivedate" value="mm/dd/yyy">
-    <p class="passtext">Passengers</p>
+    <img class="deal" src="img/deal-icon.png" alt="home image">
+    <span class="dealstext">Travel Deals</span>
 
-    <select>
+    <img class="schedule" src="img/schedule-icon.png" alt="home image">
+    <span class="schedstext">Flight Schedule</span>
+
+    <img class="login" src="img/login-icon.png" alt="home image">
+    <span class="loginstext">Register/Login</span>
+
+  </nav>
+
+  <div class="everything">
+
+
+    <div class="clickbarplane">
+      <img class="plane" src="img/plane-icon.png" alt="Plane Icon">
+    </div>
+
+    <div class="clickbarbed_car">
+      <img class="hotel" src="img/hotel-icon.png" alt="hotel icon">
+      <img class="car" src="img/car-icon.png" alt="car icon">
+    </div>
+
+    <div class="lookup">
+
+      <form class="main" action="index.html" method="post">
+
+
+        <input class="depart" type="text" name="depart" placeholder="Depart">
+        <input class="arrive" type="text" name="arrive" placeholder="Arrive">
+        <input class="departdate" type="date" name="departdate" placeholder="mm/dd/yyy">
+        <input class="arrivedate" type="date" name="arrivedate" placeholder="mm/dd/yyy">
+        <p class="passtext">Passengers</p>
+
+        <select>
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
@@ -55,19 +60,19 @@
     <option value="5">5</option>
   </select>
 
-    <form class="radio">
-      <input type="radio" name="type" value="Return"> Return &nbsp;&nbsp;&nbsp;
-      <input type="radio" name="type" value="One Way"> One Way
+        <div class="radio">
+          <input type="radio" name="type" value="Return"> Return &nbsp;&nbsp;&nbsp;
+          <input type="radio" name="type" value="One Way"> One Way
+        </div>
+        <a href="http://www.kayak.com">
+          <div class="searchbutton">
+            <p>Search Flights</p>
+          </div>
+        </a>
+    </div>
     </form>
 
-    <a href="http://www.kayak.com">
-      <div class="searchbutton">
-        <p>Search Flights</p>
-      </div>
-    </a>
-
   </div>
-
 </body>
 
 </html>
