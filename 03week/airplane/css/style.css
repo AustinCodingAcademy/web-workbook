@@ -24,6 +24,7 @@ body{
   position: relative;
   right: 5%;
   margin-left: 5%;
+  box-sizing: border-box;
 
 }
 
@@ -39,15 +40,57 @@ body{
 
 .content-box{
   background: #123754;
-  position: fixed;
-  top: 30%;
+  position: absolute;
+  top: 25%;
   left: 10%;
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
+
 }
 
-.content-box li {
-  display: inline-block;
-  margin: 0 20px;
+.icons {
+  width: 100%;
   align-items: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  background: #018D80;
+}
+
+.icons li {
+  display: inline-block;
+  padding: 0 58.336px;
+  float: left;
+  /*box-sizing: border-box;*/
+
+}
+
+.icons li:hover {
+  background: #0063B7;
+}
+
+.destination, .passenger-info{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.formField{
+  border: 3px solid #ffffff;
+  background: #123754;
+  margin: 15px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 8px;
+  color: #ffffff;
 }
