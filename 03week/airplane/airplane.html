@@ -6,6 +6,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <meta name="Ty Sweet Airplane" content="index, no-follow">
   <nav>
     <ul class="top navbar">
@@ -31,6 +32,7 @@
   <div class="tab"><center><img src="./img/plane-icon.png"></center></div>
     <div class="tab2"><center><img src="./img/hotel-icon.png"></center></div>
       <div class="tab2"><center><img src="./img/car-icon.png"></center></div>
+<form class="main" action="">
       <form action="/action_page.php"><input type="text" class="depart-field" placeholder="Depart"></form>
       <form action="/action_page.php"><input type="text" class="arrive-field" placeholder="Arrive"></form>
       <form action="/action_page.php"><input type="text" class="date1" placeholder="mm/dd/yyyy"></form>
@@ -43,10 +45,13 @@
             <option value="4">4</option>
             <option value="5">5</option>
           </select>
-          <form action="" class="radio">
-            <input type="radio" name="return" value="return" class="return">Return
-            <input type="radio" name="one-way" value="one-way" class="one-way">One-Way
+          <div class="radio">
+            <input type="radio" name="radio" value="return" class="return">
+            <span class="return_label">Return</span>&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="radio" value="one-way" class="one-way">
+            <span class="one-way_label">One Way</span>
           </form>
+        </div>
           <button type="button">Search Flights</button>
 </div>
 </body>
