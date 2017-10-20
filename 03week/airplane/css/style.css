@@ -1,25 +1,129 @@
-
-h3{
-  text-align: right;
-
+* {
+    /* the simplest css reset possible, can cause performance issues on very complex HTML Documents */
+    padding: 0;
+    margin: 0;
 }
 
-img{
-    float: left;
-    margin: auto;
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #193a55;
+    color: #fff;
+    height: 82px;
+    border: 0 solid #fff;
+    border-bottom-width: 1px;
 }
 
-menu{
-    float: right;
+.linkMenu ul {
+    list-style: none;
+}
+  
+.linkMenu ul li {
+    margin: 10px;
+    display: inline;
 }
 
-header{
-    height: 81px;
-    background-color: #183A55;
+.linkMenu ul li img {
+    margin-right: 5px;
 }
+
 body {
-    background-image: url('img\airline.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    background-image: url('https://raw.githubusercontent.com/vutran6853/web-workbook/gh-pages/03week/airplane/img/airline.jpg');
+    background-size: cover;
 }
+main {
+    height: calc(100vh - 82px);
+    position: relative; 
+}
+
+section {
+    width: 542px;
+    height: 386px;
+    background: #193a55;
+    border-radius: 5px;
+    position: absolute; 
+    top: 200px;
+    left: 200px;
+}
+
+.option {
+    display: flex;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .tab1,
+  .tab2,
+  .tab3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 3); 
+    height: 60px;
+    background: #018D80;
+  }
+  
+  .tab1 {
+    background: #0063B7; 
+  }
+  
+  .tab3 {
+    border-top-right-radius: 5px;
+  }
+  
+  .wrapper1{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    padding-top:50px
+  }
+  
+  .wrapper2 {
+    display:flex;
+    flex-direction:row;
+    padding-bottom:50px;
+    padding-top:20px;
+    justify-content:space-around;
+    
+  }
+  
+  .box1, .box2, .box3, .box4 {
+    width: 175px;
+    height:40px;
+    border: 2px solid;
+    border-color:white;
+    border-radius:2px;
+    color:white; 
+  }
+  
+  .wrapper3 {
+    display:flex;
+  }
+  
+  p {
+    color:white;
+    padding-left:50px;
+  }
+  .box5 {
+    width:70px;
+    height:40px;
+    border: 2px solid white;
+    color:white;
+    border-radius:2px;
+    margin-left:15px;
+  }
+  .wrapper4 {
+    color:white;
+    display:flex;  
+  }
+  .R {
+    color:white;
+    padding-left:110px;
+  }
+  
+  .O {
+    color:white;
+    padding-left:20px;
+  }
+  
