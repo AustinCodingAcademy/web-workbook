@@ -7,53 +7,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>UX Atlantic</title>
 </head>
+
 <body>
   <header>
-    <img class="logo" src="css/img/logo.png"/>
+    <div class="logo">
+      <img src="css/img/logo.png" alt="UX Atlantic Logo" />
+    </div>
 
+    <nav>
+      <ul>
+        <li>
+          <a href "html.html"><img class="icon" src="css/img/home-icon.png" />Home</a>
+        </li>
+        <li>
+          <a href "html.html"><img class="icon" src="css/img/deal-icon.png" />Travel Deals</a>
+        </li>
+        <li>
+          <a href "html.html"><img class="icon" src="css/img/schedule-icon.png" />Flight Schedule</a>
+        </li>
+        <li>
+          <a href "html.html"><img class="icon" src="css/img/login-icon.png" />Register/Login</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <img class="menu" src="css/img/home-icon.png" />
-    <a href "html.html">Home</a>
-    <img class="menu" src="css/img/deal-icon.png" />
-    <a href "html.html">Travel Deals</a>
-    <img class="menu" src="css/img/schedule-icon.png" />
-    <a href "html.html">Flight Schedule</a>
-    <img class="menu" src="css/img/login-icon.png" />
-    <a href "html.html">Register/Login</a>
-  </nav>
-
   <section class="inputBox">
-      <img class="icon" src="css/img/plane-icon.png"/>
-      <img class="icon" src="css/img/hotel-icon.png"/>
-      <img class="icon" src="css/img/car-icon.png"/>
-    <p>
+    <div class="images">
+      <img class="selectorIcon" src="css/img/plane-icon.png" />
+      <img class="selectorIcon" src="css/img/hotel-icon.png" />
+      <img class="selectorIcon" src="css/img/car-icon.png" />
+    </div>
+
+
+    <form class="inputs">
       <input type="text" class="placeDate" placeholder="Depart" />
       <input type="text" class="placeDate" placeholder="Arrive" />
       <input type="date" class="placeDate" placeholder="mm/dd/yyyy" />
       <input type="date" class="placeDate" placeholder="mm/dd/yyyy" />
-    </p>
 
-    <p>
       <label class="passengersLabel">Passengers</label>
-      <input type="number" class="passengers" name="passengers" value="passengers" placeholder="1" min="1" max="100"/>
-    </p>
+      <input type="number" class="passengers" name="passengers" value="passengers" placeholder="1" min="1" max="100" />
 
-    <p>
-
-      <input type="radio" class="radio" name="return" value="return" checked />
+      <input type="radio" class="radio" id="radioOne" name="return" value="return" checked />
       <label>Return</label>
-
       <input type="radio" class="radio" name="oneWay" value="oneWay" />
       <label>One Way</label>
-    </p>
+
+      <button type="button">Search Flights</button>
+    </form="reservation">
 
 
 
   </section>
 
 </body>
+
 </html>
