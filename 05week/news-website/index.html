@@ -17,7 +17,165 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+<body class="container-fluid">
+  <background class="green"
+  <!-- First row header -->
+  <header>
+    <div class="row">
+      <div class="col-xs-12 header">
+        <h1>The Envato Tuts+ Report</h1>
+        <p><a href="">Read tutorial</a></p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Second row with two boxesarticles -->
+  <div class="row">
+    <!--Box 1-->
+    <div class ="col-xs-6 box">
+        <img class="img-responsive img1" src="05week/news-website/Images/clownfish.jpg">
+        <h2>Hello World</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin omare
+          magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa
+          sem. Etiam finibus odio quis feugiat facilsis. Lorem ipsum dolor sit
+          amet, consecutor adipiscing elit. Proin ornare magna eros.
+        </p>
+        <div class="bottomcontainer">
+          <div class="box2"><p>By Jeff High</p></div>
+          <div class="box2"><p>42 comments</p></div>
+        </div>
+    </div>
+      <!-- Box 2-->
+      <div class="col-xs-6 box">
+          <img class="img-responsive img2" src="05week/news-website/Images/dolphins.jpg">
+          <h2>Hello World</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin omare
+            magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa
+            sem. Etiam finibus odio quis feugiat facilsis. Lorem ipsum dolor sit
+            amet, consecutor adipiscing elit. Proin ornare magna eros.
+          </p>
+          <div class="bottomcontainer">
+            <div class="box2"><p>By Jeff High</p></div>
+            <div class="box2"><p>42 comments</p></div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Third row with three boxes -->
+  <div class ="row">
+    <!--Box 1-->
+    <div class="col-xs-3 box">
+        <img class="img-responsive img3" src="05week/news-website/Images/exoticfish.jpg">
+        <h2>Hello World</h2>
+        <p>Lorem ipsum dolor sit amet, consecutor</p>
+        <div class="bottombox1">
+          <div class="bottomcontainer">
+            <div class="box2"><p>By Jeff High</p></div>
+            <div class="box2"><p>42 comments</p></div>
+          </div>
+        </div>
+
+    </div>
+    <!--Box 2-->
+    <div class="col-xs-3 box">
+      <img class="img-responsive img3" src="05week/news-website/Images/hawkbillseaturtle.jpg">
+      <h2>Hello World</h2>
+      <p>Lorem ipsum dolor sit amet, consecutor</p>
+      <div class="bottombox1">
+        <div class="bottomcontainer">
+          <div class="box2"><p>By Jeff High</p></div>
+          <div class="box2"><p>42 comments</p></div>
+        </div>
+      </div>
+    </div>
+    <!--Box 3-->
+    <div class="col-xs-6 box">
+      <img class="img-responsive img3" src="05week/news-website/Images/jellyfish.jpg">
+      <h2>Hello World</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div class="bottombox1">
+        <div class="bottomcontainer">
+          <div class="box2"><p>By Jeff High</p></div>
+          <div class="box2"><p>42 comments</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html
+
+
+* {
+margin: 0;
+padding: 0;
+}
+.container-fluid {
+background-color: #3AB371;
+padding-left: 100px;
+padding-right: 100px;
+}
+.row {
+display: flex;
+flex-direction: row;
+}
+.header {
+text-align: center;
+margin-top: 40px;
+margin-bottom: 40px;
+}
+.header a {
+font-size: 2vw;
+color: #95D6B1;
+text-decoration: underline;
+}
+img {
+height: 100%;
+width: 100%;
+}
+.img1 {
+height: 390px;
+}
+.img2 {
+height: 340px;
+}
+.img3 {
+height: 200px;
+}
+h1 {
+font-size: 4vw;
+color: white;
+font-weight: bold;
+}
+.box {
+display: flex;
+flex-direction: column;
+background-color: white;
+border: 20px solid #3AB371;
+padding: 0;
+margin: 0;
+}
+h2 {
+font-size: 2vw;
+font-weight: bolder;
+margin-left: 15px;
+}
+.bottomcontainer {
+display: flex;
+justify-content: space-between;
+}
+.box2 {
+display: flex;
+flex-direction: row;
+}
+p{
+font-size: 1vw;
+margin-left: 15px;
+margin-right: 15px;
+}
     <h1>Hello, world!</h1>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
