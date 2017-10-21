@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Week3 Airplane</title>
+    <title>UX Atlantic</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -32,6 +32,7 @@
             <li><a href="#"><img src="./img/car-icon.png" alt="caricon"></a></li>
           </ul>
         </div>
+        <form class="travel-form" action="index.html" method="get">
         <div class="destination">
           <input type="text" name="depart" placeholder="Depart" class="formField">
           <input type="text" name="arrive" placeholder="Arive" class="formField">
@@ -41,18 +42,27 @@
         <div class="passenger-info">
           <div class="quantity">
             <label for="pass-qty">Passengers</label>
-            <input type="number" name="pass-qty" value="1" class="formField">
+            <select name="pass-qty" class="formField">
+              <option value="1" label="1" selected></option>
+              <option value="2" label="2"></option>
+              <option value="3" label="3"></option>
+              <option value="4" label="4"></option>
+              <option value="5" label="5"></option>
+              <option value="6" label="6"></option>
+            </select>
+
           </div>
           <div class="radio-bttns">
-            <input type="radio" name="Return">
-            <input type="radio" name="One-Way">
-            <label for="Return">Return</label>
-            <label for="One-Way">One-Way</label>
+            <form action="">
+              <input type="radio" name="direction" value="Return">
+              <label for="direction">Return</label>
+              <input type="radio" name="direction" value="One-Way">
+              <label for="direction">One-Way</label>
+            </form>
           </div>
 
-          </div>
-
-
+        </div>
+        </form>
         </main>
       </div>
 
