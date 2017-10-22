@@ -1,6 +1,8 @@
 body {
   background: url("../img/airline.jpg") no-repeat center center fixed;
   background-size: cover;
+  font-family: raleway;
+  font-size: 90%;
 }
 .top {
   background: #193A55;
@@ -25,22 +27,114 @@ body {
 .nav li {
   display: inline-block;
   padding: 0 10px;
-
 }
 .nav a {
   color: white;
   text-decoration: none;
 }
+.nav a:hover {
+  color: #018d80;
+}
 .contentBox {
+  color: white;
   background: #123754;
   position: fixed;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 350px;
   top: 30%;
   left: 10%;
+  border-radius: 4px;
+}
+.contentBox ul {
+  height: 54px;
 }
 .contentBox li {
   display: inline-block;
-  margin: 0 20px;
+}
+.icons li {
+  padding-left: 35px;
+  width: 95px;
   align-items: center;
+}
+.icons ul {
+  background: #018d80;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.icons li:hover {
+  background: #0063b7;
+}
+.customerForm form [type=text] {
+  background: #123754;
+  color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+}
+form .departField {
+  padding: 2px;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  height: 30px;
+  width: 159px;
+}
+form .arriveField {
+  padding: 2px;
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  height: 30px;
+  width: 159px;
+}
+.customerForm form [type=date] {
+  background: #123754;
+  color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+}
+form .departDate {
+  padding: 2px;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 30px;
+  width: 159px;
+}
+form .arriveDate {
+  padding: 2px;
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 30px;
+  width: 159px;
+}
+.passengers {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.passengers select {
+  color: white;
+  height: 30px;
+  width: 73px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background: #123754;
+  border: 2px solid white;
+  border-radius: 4px;
+}
+form [type=submit] {
+  background: #0063b7;
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 40px;
+  width: 318px;
+  border: 2px solid #0063b7;
+  border-radius: 4px;
+  text-align: center;
 }
