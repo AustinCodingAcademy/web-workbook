@@ -1,3 +1,46 @@
+html, body, ul, ol, li, form, fieldset, legend
+{
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p { margin-top: 0; }
+
+fieldset,img { border: 0; }
+
+legend { color: #000; }
+
+li { list-style: none; }
+
+sup { vertical-align: text-top; }
+
+sub { vertical-align: text-bottom; }
+
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+caption, th, td
+{
+	text-align: left;
+	vertical-align: top;
+	font-weight: normal;
+}
+
+input, textarea, select
+{
+	font-size: 110%;
+	line-height: 1.1;
+}
+
+abbr, acronym
+{
+	border-bottom: .1em dotted;
+	cursor: help;
+}
+/*CSS RESET, I hours trying to fix a spacing error.  The CSS reset fixed it instantly.  I was confused and had a seperate reset.css file before figuring it out.  UGH*/
 header {
   background-color: black;
   color: white;
@@ -8,7 +51,7 @@ header {
 
 .logo {
   padding-top: 5px;
-  padding-left: 10px;
+  padding-left: 20px;
 }
 /*positions the logo on header*/
 
@@ -18,7 +61,7 @@ header {
   margin-top: 10px;
   float: right;
 }
-/*moves the menu to the right*/
+/*moves menu items to the right*/
 
 h1 {
   text-align: center;
@@ -88,10 +131,45 @@ background-size:auto;
 }
 /*move text to left of dog image*/
 
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+/* Style inputs with type="text", select elements and textareas */
+
+
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*styling the submit button*/
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+/* When moving the mouse over the submit button, add a darker green color */
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+/* Add a background color and some padding around the form */
+
 footer {
   background-color: black;
   height: 250px;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-left:  10px;
 }
 /*styles the color of footer*/
