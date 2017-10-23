@@ -8,34 +8,39 @@ body{
 
 header{
   background-image: url(../images/header.jpg);
-  box-shadow: 0.5em 0.5em 1.68em #775843;
+  box-shadow: 0.5em 0.5em 1.68em #380000;
   background-size: cover;
-  width: 50em;
+  width: 52em;
   margin-left: 12.5em;
-  padding: 5em;
+  padding: 4em;
   margin-bottom: 0px;
 }
+
 
 header img{
   width: 20em;
 }
 
 nav{
-  background-color: #222222;
+  background-color: #230000;
   width:50em;
-  width: 55em;
+  width: 45em;
   margin-left: 12.5em;
   height: 2em;
   padding-top: 1em;
-  padding-right: 5em;
-  box-shadow: 0.5em 0.5em 1.68em #775843;
+  padding-right: 15em;
+  box-shadow: 0.5em 0.5em 1.68em #380000;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
+
 
 nav a{
   float: right;
   color: white;
   text-decoration: none;
-  margin-left: 1em;
+  margin-left: 2em;
 
 }
 nav a:hover{
@@ -49,31 +54,59 @@ main{
   margin-left: 12.5em;
   margin-top: 0em;
   padding: 2em 5em 2em 5em;
-  box-shadow: 0.5em 0.5em 1.68em #775843;
+  box-shadow: 0.5em 0.5em 1.68em #380000;
+  line-height: 150%;
+  /*line-height: 150%;*/
 }
 
+main a{
+  color: white;
+}
+
+main a:hover{
+  color: #E6CF71;
+}
+
+hr{
+  margin-top: 2em;
+  clear: left;
+}
 
 h1{
   font-size: 4em;
   text-align: center;
+  line-height: 100%;
+  text-shadow: 5px 5px 5px #230000;
+
 }
 
 h2{
 font-size: 2.5em;
 text-align: center;
+text-shadow: 3px 3px 3px #230000;
+}
 
+h3{
+  text-align: center;
+  text-shadow: 3px 3px 3px #230000;
 }
 
 .wineTastings{
-  float: left;
-  width: 25em;
+  display: inline-block;
+  width: 23em;
+  background-color: #300000;
+  box-shadow: 1em 1em 3em #330000;
+  padding: 1em;
+  border: 1px hidden;
+  border-radius: 1em;
+  margin-top:2em;
 }
 
 .wineTastingimg{
-  float:left;
+  display: inline-block;
   width:23em;
-  margin-left: 2em;
-  margin-top: 5em;
+  margin-left: 1em;
+  margin-top: 2em;
   margin-bottom: 1em;
   border-radius: 1em;
   box-shadow: 0.5em 0.5em 2em #380000;
@@ -81,48 +114,168 @@ text-align: center;
 
 
 .comeVisit{
-  border: 1px solid white;
+  float:left;
+  width:20em;
+  height:18em;
+  margin-top: 0em;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  outline:1px dashed white;
 }
 
+.generalPolicies{
+  clear:left;
+}
+
+
 #contactInfo{
-  margin-left: 7em;
+  margin-left: 6em;
 }
 
 .contact{
-  width: 18em;
+  width: 13em;
   margin: 1em;
   float: left;
+  font-size: 1.2em;
+  border: 1px dashed white;
+  padding: 1em;
 
 }
 
-.buyWine{
-  margin-top: 2em;
+.buyWineOne{
+  height: 17em;
+  border: 1px;
 }
+
+.buyWineTwo{
+  height: 17em;
+}
+
 
 .wineLabel{
   width: 10em;
   border-radius: 0.5em;
   box-shadow: 0.5em 0.5em 2em #380000;
-  float:left;
+  /*float:left;*/
 }
 
 .wineDescription{
-  width: 35em;
-  float: left;
+  padding-left: 1em;
   margin-left: 3em;
   height: 13em;
 }
 
+button{
+  background-color: #580200;
+  border: 1px solid white;
+  color: white;
+  padding: 1em 1.68em;
+  text-align: center;
+  text-decoration: none;
+  /*display: inline-block;*/
+  margin: 1em;
+  -webkit-transition-duration: 0.5s; /* Safari */
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: white;
+  color: #580200;
+}
+
+.genPol{
+  background-color: #300000;
+  box-shadow: 1em 1em 3em #330000;
+  padding: 1em;
+  border: 1px hidden;
+  border-radius: 1em;
+  margin-top:2em;
+
+}
+.minors{
+  border:1px dashed white;
+  margin-top:2em;
+  padding: 1em;
+}
+
+.dogs{
+  background-color: #300000;
+  box-shadow: 1em 1em 3em #330000;
+  padding: 1em;
+  border: 1px hidden;
+  border-radius: 1em;
+  margin-top:2em;
+}
+
+.largeGroups{
+  border:1px dashed white;
+  margin-top:2em;
+  padding: 1em;
+}
+
+#alcoholPolicy{
+  background-color: #300000;
+  box-shadow: 1em 1em 3em #330000;
+  padding: 1em;
+  border: 1px hidden;
+  border-radius: 1em;
+  margin-top:2em;
+}
+
+.clubBenefits{
+  border: 1px dashed white;
+  padding-left: 1em;
+
+
+}
+
+#clubDates{
+  background-color: #300000;
+  margin-left: 7em;
+  border-radius: 1em;
+  box-shadow: 1em 1em 3em #330000;
+}
+
+#clubDates td{
+  padding: 1em;
+}
+
+.styleOne{
+  background-color: #300000;
+  box-shadow: 1em 1em 3em #330000;
+  padding: 1em;
+  border: 1px hidden;
+  border-radius: 1em;
+  margin-top:2em;
+}
+
+.styleTwo{
+  border:1px dashed white;
+  margin-top:2em;
+  padding: 1em;
+}
+
+.awards{
+  border:1px dashed white;
+  margin-top:2em;
+  padding: 1em;
+}
+
 footer{
-background-color: #222222;
+background-color: #230000;
 margin-left: 12.5em;
 width: 55em;
 padding-left: 5em;
-box-shadow: 0.5em 0.5em 1.68em #775843;
+box-shadow: 0.5em 0.5em 1.68em #380000;
+padding-top: 0.5em;
 }
 
 
 #footerLogo{
   height: 3em;
+
 
 }
