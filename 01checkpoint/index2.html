@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>LitesNLedz</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.min.css" />
     <link rel="stylesheet" href="./css/styles.css"/>
     <meta charset="utf-8">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -34,9 +35,9 @@
                       </button>
                     </div>
                     <div class="collapse navbar-collapse" id="navcol">
-                        <ul class="nav navbar-nav navbar-right">
+                        <ul class="nav navbar-nav navbar-right nav-col-ul">
                             <li><a target="_blank" href="https://www.facebook.com/LitesnLedz/">About</a></li>
-                            <li><a target="_blank" href="https://www.facebook.com/LitesnLedz/">Products</a></li>
+                            <li><a href="#Products">Products</a></li>
                             <li><a target="_blank" href="https://www.facebook.com/LitesnLedz/">Shop</a></li>
                         </ul>
                     </div>
@@ -49,36 +50,81 @@
     </header>
     <!-- This is the main section of the page which contains a video-->
     <!--description text and a form -->
-    <main>
-      <section class="main-section">
-        <div class="container main-container">
-          <div class="row main-container">
-            <div class="col-xs-12 col-md-6 col-lg-3 col-lg-offset-1">
-              <article class="main-text">
-                <h1>Led-Powered Glowsticks</h1>
-                <p>"These lights are not designed to show off what they can do,</p>
-                <p>they are designed to show off what you can do."</p>
-              </article>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-8">
-              <article>
-              </article>
+    <div id="fullpage">
+      <main>
+        <section class="section main-section">
+          <div class="container main-container">
+            <div class="row main-container">
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                <article class="main-text">
+                  <h1>Led-Powered Glowsticks</h1>
+                  <p>"These lights are not designed to show off what they can do,</p>
+                  <p>they are designed to show off what you can do."</p>
+                  <p>Hand crafted and built exclusively in Austin,TX,</p>
+                  <p>these lights are rigirously tested to meet your needs.</p>
+                </article>
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-8">
+                <div class="embed-responsive embed-responsive-16by9 video-container">
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yPKlI2eghQM"></iframe>
+                </div>
+              </div>
             </div>
           </div>
+        </section>
+        <section class="section img-section">
+          <div class="container main-container">
+            <div class="row img-container">
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="img-container">
+                  <img src="./img/RRR.jpg">
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="img-container">
+                  <img src="./img/RBR.jpg">
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="img-container">
+                  <img src="./img/White_Switches.jpg">
+                </div>
+              </div>
+            </div>
+            <div class="row img-container">
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="img-container">
+                  <img src="./img/rainbow.jpg">
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="img-container">
+                  <img src="./img/GGG.jpg">
+                </div>
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                <div class="img-container">
+                  <img src="./img/aqua.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!--This is the footer section-->
+      <!-- <footer>
+        <div class="footer-container">
+          <p>Austin,TX</p>
+          <a target="_blank" href="https://www.facebook.com/LitesnLedz/"><img class="fb-img" src="./img/fb.png"/></a>
+          <p>©2017 by LitesNLedz</p>
         </div>
-      </section>
-    </main>
-    <!--This is the footer section-->
-    <!-- <footer>
-      <div class="footer-container">
-        <p>Austin,TX</p>
-        <a target="_blank" href="https://www.facebook.com/LitesnLedz/"><img class="fb-img" src="./img/fb.png"/></a>
-        <p>©2017 by LitesNLedz</p>
-      </div>
-    </footer> -->
+      </footer> -->
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./js/jquery.fullPage.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
