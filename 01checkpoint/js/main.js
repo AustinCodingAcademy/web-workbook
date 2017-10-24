@@ -3,7 +3,7 @@ $(document).ready(function()
 {
 
   $('#fullpage').fullpage({
-  	anchors: ['Home','About', 'Products'],
+  	anchors: ['Home','About','Products'],
   	menu: '#myMenu'
   });
 
