@@ -27,11 +27,24 @@
   }
 }
 
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
 body{
   background-image: url("../img/austin.jpg");
   background-size: no-repeat;
   color: white;
   font-family: Geo;
+  animation: fadein 1s ease-in;
+  -webkit-animation: fadein 1s ease-in;
 }
 
 .header-container nav{
@@ -84,8 +97,13 @@ body{
   margin: 5px;
 }
 
-.about-section th, td{
+.about-section, .about-section th{
   text-align: center;
+}
+
+.about-section h2{
+  font-size: 30px;
+  background-color: #222222;
 }
 
 .about-section table{
@@ -110,13 +128,22 @@ body{
   }
 
   body{
-    background-image: url("../img/austin-mobile.jpg");
+    background-image: url("../img/mobile.jpg");
     background-size: cover;
     height: 100vh;
+    margin-top: 50px;
   }
 
   .logo-text span{
     font-size:30px;
+  }
+
+  .main-section h1{
+    font-size: 30px;
+  }
+
+  .main-section p{
+    font-size: 20px;
   }
 
   .about-section table{
