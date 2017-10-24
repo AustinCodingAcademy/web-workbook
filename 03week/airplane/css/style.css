@@ -16,6 +16,7 @@ nav.topbar {
 }
 
 img.logo {
+  position: relative;
   width: 290px;
   margin-left: 50px;
   float: left;
@@ -29,12 +30,12 @@ img.home {
 }
 
 span {
+  float: left;
   color: white;
   font-size: 12px;
 }
 
 span.hometext {
-  float: left;
   margin-left: 4px;
   margin-top: 31px;
 }
@@ -46,7 +47,6 @@ img.deal {
 }
 
 span.dealstext {
-  float: left;
   margin-left: 3px;
   margin-top: 31px;
 }
@@ -58,7 +58,6 @@ img.schedule {
 }
 
 span.schedstext {
-  float: left;
   margin-left: 3px;
   margin-top: 31px;
 }
@@ -70,25 +69,15 @@ img.login {
 }
 
 span.loginstext {
-  float: left;
   margin-left: 3px;
   margin-top: 31px;
 }
 
-div.everything {
+div.inputbox {
   position: absolute;
   left: 10px;
-}
+} /*allows the entire box and it's content to move as one*/
 
-div.lookup {
-  background-color: rgb(25, 58, 85);
-  margin-top: 110px;
-  margin-left: 58px;
-  width: 300px;
-  height: 220px;
-  border: 3px solid rgb(25, 58, 85);
-  border-radius: 3px;
-}
 
 div.clickbarplane {
   background-color: rgb(13, 103, 189);
@@ -101,6 +90,13 @@ div.clickbarplane {
   border-radius: 3px;
 }
 
+img.plane {
+  float: left;
+  margin-left: 36px;
+  margin-top: 5px;
+  width: 26px;
+}
+
 div.clickbarbed_car {
   background-color: rgb(1, 141, 128);
   width: 200px;
@@ -110,13 +106,6 @@ div.clickbarbed_car {
   float: left;
   border: 3px solid rgb(1, 141, 128);
   border-radius: 3px;
-}
-
-img.plane {
-  float: left;
-  margin-left: 36px;
-  margin-top: 5px;
-  width: 26px;
 }
 
 img.hotel {
@@ -133,14 +122,14 @@ img.car {
   width: 26px;
 }
 
-input {
-  background-color: inherit;
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 10px;
-  font-family: Monda;
-  text-indent: 6px;
-  border: 1px solid white;
-  border-radius: 2px;
+div.lookup {
+  background-color: rgb(25, 58, 85);
+  margin-top: 110px;
+  margin-left: 58px;
+  width: 300px;
+  height: 220px;
+  border: 3px solid rgb(25, 58, 85);
+  border-radius: 3px;
 }
 
 input::placeholder {
@@ -154,45 +143,51 @@ input::placeholder {
   bottom: 5px;
 }
 
-.depart {
+input {
+  background-color: inherit;
   color: rgba(255, 255, 255, 0.3);
-  font-size: 20px;
-  text-transform: uppercase;
+  font-size: 10px;
   font-family: Monda;
   text-indent: 6px;
+  border: 1px solid white;
+  border-radius: 2px;
+}
+
+input.depart {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
   width: 125px;
   height: 30px;
   margin-left: 10px;
   margin-top: 30px;
 }
 
-.arrive {
-  color: rgba(255, 255, 255, 0.3);
+input.arrive {
+  color: white;
   font-size: 20px;
   text-transform: uppercase;
-  font-family: Monda;
-  text-indent: 6px;
   width: 125px;
   height: 30px;
   margin-left: 18px;
   margin-top: 30px;
 }
 
-.departdate {
+input.departdate {
   width: 125px;
   height: 30px;
   margin-left: 10px;
   margin-top: 15px;
 }
 
-.arrivedate {
+input.arrivedate {
   width: 125px;
   height: 30px;
   margin-left: 18px;
   margin-top: 15px;
 }
 
-.passtext {
+p.passtext {
   float: left;
   font-size: 10px;
   font-family: Monda;
@@ -208,19 +203,19 @@ select {
   float: left;
   margin-top: 15px;
   margin-left: 15px;
-  /*border: 1px solid white;
-border-radius: 1px;*/
+  border: 1px solid white;
+  border-radius: 1px;
   font-family: Monda;
   color: white;
 }
 
 div.radio {
-  float: left;
-  margin-top: 25px;
-  margin-left: 25px;
-  font-size: 10px;
-  font-family: Monda;
-  color: white;
+float: left;
+margin-top: 25px;
+margin-left: 25px;
+font-size: 10px;
+font-family: Monda;
+color: white;
 }
 
 div.searchbutton {

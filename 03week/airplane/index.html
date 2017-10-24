@@ -29,8 +29,7 @@
 
   </nav>
 
-  <div class="everything">
-
+  <div class="inputbox">
 
     <div class="clickbarplane">
       <img class="plane" src="img/plane-icon.png" alt="Plane Icon">
@@ -45,11 +44,12 @@
 
       <form class="main" action="index.html" method="post">
 
-
         <input class="depart" type="text" name="depart" placeholder="Depart">
         <input class="arrive" type="text" name="arrive" placeholder="Arrive">
-        <input class="departdate" type="date" name="departdate" placeholder="mm/dd/yyy">
+        
+        <input class="departdate" type="date" name="departdate" placeholder="mm/dd/yyy" lookup=>
         <input class="arrivedate" type="date" name="arrivedate" placeholder="mm/dd/yyy">
+
         <p class="passtext">Passengers</p>
 
         <select>
@@ -58,21 +58,25 @@
     <option value="3">3</option>
     <option value="4">4</option>
     <option value="5">5</option>
-  </select>
+       </select>
 
         <div class="radio">
           <input type="radio" name="type" value="Return"> Return &nbsp;&nbsp;&nbsp;
           <input type="radio" name="type" value="One Way"> One Way
         </div>
-        <a href="http://www.kayak.com">
-          <div class="searchbutton">
+        <!-- this is the closing div for "radio" -->
+
+        <div class="searchbutton">
+          <a href="http://www.kayak.com">
             <p>Search Flights</p>
-          </div>
-        </a>
+          </a>
+        </div>
+        <!-- closes div for "searchbutton" -->
     </div>
+    <!-- closes div for "lookup" -->
     </form>
-
   </div>
-</body>
+  <!-- closes div for "inputbox". -->
 
-</html>
+</body>
+  </html>
