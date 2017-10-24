@@ -108,9 +108,25 @@ li {
   height: 400px;
   width: 600px;
   box-shadow: 15px 15px 30px #000000;
+  -webkit-transition: -webkit-transform 5s;
+  transition: 1s;
+}
+
+.right:hover {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(360deg) scale(2.0);
+}
+
+.left:hover {
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, 50%) rotate(360deg) scale(2.0);
 }
 
 .left_column, .right_column {
+  display: flex;
+  flex-direction: column;
   margin-top: 20px;
 }
 /* END of Main Section styling*/
