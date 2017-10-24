@@ -7,41 +7,18 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 1em;
+    height: auto;
+    width: 100%;
   }
 header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   height: 120px;
+  color: white;
   background: linear-gradient(to bottom, black, red);
   border-bottom: 5px solid black;
-}
-header h2 {
-  text-indent: 1.5em;
-  font-size: 1.5em;
-  font-weight: bold;
-  padding-top: 1em;
-}
-header p {
-  text-indent: 1em each-line;
-  padding-top: .5em;
-}
-/* Moving entire address section to the right without overiding padding and margin*/
-span {
-  position: relative;
-  left: 100px;
-    color: white;
-}
-/* No bullets, to the right, with even spacing of links */
- ul {
-  height: 120px;
-  list-style-type: none;
-  float: right;
-  text-align: justify;
-  position: relative;
-  top: -40px;
-  margin-right: auto;
-}
- /*horizontal layout*/
-li {
-  display: inline;
 }
 h1 {
   color: white;
@@ -54,6 +31,13 @@ h1 {
   /*Google Font Designation*/
   font-family: 'Dancing Script', cursive;
 }
+.address {
+  display: flex;
+  bottom: 0%;
+}
+footer {
+  color: white;
+}
 /*LINKS CONTROL*/
 /* unvisited link */
 a:link {
@@ -61,7 +45,7 @@ a:link {
 }
 /* visited link */
 a:visited {
-    color: black;
+    color: Chartreuse;
 }
 /* mouse over link */
 a:hover {
