@@ -10,6 +10,8 @@ div {
   box-sizing: border-box;
 }
 
+/*NAV BAR AND LOGO*/
+
 .top {
   background-color: #193A55;
   width: 100%;
@@ -20,6 +22,7 @@ div {
   align-items: center;
   margin: 0 !important;
   border-bottom: 2px solid #fff;
+
 }
 
 li {
@@ -34,6 +37,12 @@ a {
   color: #fff;
 }
 
+a:hover {
+  color: #008D81;
+}
+
+/*BOOKING BOX*/
+
 .scroll {
   width: 360px;
   height: 300px;
@@ -43,11 +52,56 @@ a {
 
 }
 
-.border-top {
-  width: 360px;
-  height: 50px;
-  background: #008D81;
-  border-radius: 5px;
+.selector {
+  display: inline-block;
+}
+
+.centered {
+  display:block;
+  margin:auto;
+  margin-top: 10px;
+  height:30px;
+  width:30px;
+}
+
+.flights {
+  width:120px;
+  height:50px;
+  padding: 0px;
+  float: left;
+  background-color: #008D81;
+}
+
+.flights:hover {
+  background-color: #0069B7;
+}
+
+/*.flights:active {
+  background color: #0069B7;
+}*/
+
+.hotels {
+  width:120px;
+  height:50px;
+  padding: 0px;
+  float: left;
+  background-color: #008D81;
+}
+
+.hotels:hover {
+  background-color: #0069B7;
+}
+
+.cars {
+  width:120px;
+  height:50px;
+  padding: 0px;
+  float: right;
+  background-color: #008D81;
+}
+
+.cars:hover {
+  background-color: #0069B7;
 }
 
 .depart-field, .arrive-field{
@@ -55,8 +109,10 @@ a {
   width: 120px;
   height: 30px;
   border-radius: 5px;
-  margin-top: 100px;
-  margin-left: 30px;
+  border-style: solid;
+  margin-top: 20px;
+  margin-left: 36px;
+  color: #fff
 }
 
 .depart-date, .arrival-date{
@@ -64,6 +120,45 @@ a {
   width: 120px;
   height: 30px;
   border-radius: 5px;
+  border-style: solid;
   margin-top: 20px;
-  margin-left: 30px;
+  margin-left: 36px;
+  color: #fff;
+}
+
+h3 {
+  display: block;
+  float: left;
+  font-size: 15px;
+  font-weight: 100;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+.passengers {
+  background: #193A55;
+  border-style: solid;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  font-weight: 100;
+  color: #fff;
+}
+
+.search {
+  text-align: center;
+  width: 320px;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding-top: 10px;
+  background-color: #0069B7;
+  border-radius: 5px;
+}
+
+.search:hover {
+  background-color: #008D81;
 }

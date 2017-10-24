@@ -4,7 +4,10 @@
   <meta name="author" content="Garret Toombs">
   <title>UX Atlantic</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 </head>
+
+<!-- NAV BAR AND LOGO -->
 
 <body>
   <header>
@@ -15,28 +18,40 @@
       <div class="navlinks">
         <nav>
           <ul>
-            <li>
-              <a href="#" title="Home"><img src="img/home-icon.png" style="padding-right: 5px">Home</a></li>
-            <li>
-              <a href="#" title="Travel Deals"><img src="img/deal-icon.png" style="padding-right: 5px">Travel Deals</a></li>
-            <li>
-              <a href="#" title="Flight Schedule"><img src="img/schedule-icon.png" style="padding-right: 5px">Flight Schedule</a></li>
-            <li>
-              <a href="#" title="Register/Login"><img src="img/login-icon.png" style="padding-right: 5px">Register/Login</a></li>
-          </ul>
+            <li><a href="#" title="Home"><img src="img/home-icon.png" style="padding-right: 5px">Home</a></li>
+            <li><a href="#" title="Travel Deals"><img src="img/deal-icon.png" style="padding-right: 5px">Travel Deals</a></li>
+            <li><a href="#" title="Flight Schedule"><img src="img/schedule-icon.png" style="padding-right: 5px">Flight Schedule</a></li>
+            <li><a href="#" title="Register/Login"><img src="img/login-icon.png" style="padding-right: 5px">Register/Login</a></li>
+         </ul>
         </nav>
       </div>
     </header>
 
+<!-- BOOKING BOX -->
+
 <div class="scroll">
-    <div class="border-top">
-      <div class="container">
-        <input type="text" class="depart-field" placeholder="Depart">
-        <input type="text" class="arrive-field" placeholder="Arrive">
-        <input type="text" class="depart-date" placeholder="dd/mm/yyyy">
-        <input type="text" class="arrival-date" placeholder="dd/mm/yyyy">
+    <div class="selector">
+      <div class="flights"><img src="img/plane-icon.png" class="centered"></div>
+      <div class="hotels"><img src="img/hotel-icon.png" class="centered"></div>
+      <div class="cars"><img src="img/car-icon.png" class="centered"></div>
+        <input type="text" class="depart-field" placeholder=" Depart">
+        <input type="text" class="arrive-field" placeholder=" Arrive">
+        <input type="text" class="depart-date" placeholder="  dd/mm/yyyy">
+        <input type="text" class="arrival-date" placeholder="  dd/mm/yyyy">
       </div>
-    </div>
+  <div>
+    <h3>Passengers</h3>
+      <select class="passengers">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+      </select>
+    <label><input type="radio" name="trip" class="triplength"> Return</label>
+    <label><input type="radio" name="trip" class="triplength"> One-Way</label>
+  </div>
+    <div class="search">Search Flights</div>
 </div>
 
-  </body>
+</body>
