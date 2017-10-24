@@ -8,7 +8,7 @@
 *    Availability: https://gist.github.com/erikringsmuth/9300530
 *
 ***************************************************************************************/
-
+/*animation to make logo glow*/
 @-webkit-keyframes neon1 {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
@@ -27,6 +27,7 @@
   }
 }
 
+/*animation to fade the document content in*/
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
@@ -38,6 +39,7 @@
   to   { opacity: 1; }
 }
 
+/*setting body background image, animations and font family*/
 body{
   background-image: url("../img/austin.jpg");
   background-size: no-repeat;
@@ -47,6 +49,7 @@ body{
   -webkit-animation: fadein 1s ease-in;
 }
 
+/*setting backgrounds tyle for the navigation*/
 .header-container nav{
   background-color: #222222;
   background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
@@ -54,6 +57,7 @@ body{
   font-size: 20px;
 }
 
+/*adding the glow effect to the logo*/
 .logo-text span{
   color: #fff;
   font-family: Monoton !important;
@@ -67,6 +71,7 @@ body{
   text-align: center;
 }
 
+/*centering the content of the main section using flex-box*/
 .main-section{
   text-align: center;
   height: 100vh;
@@ -121,15 +126,12 @@ body{
   margin-top: 5px;
 }
 
+/*mediaquery for mobile*/
 @media (max-width: 767px) {
-
-  html{
-    background-color: black;
-  }
 
   body{
     background-image: url("../img/mobile.jpg");
-    background-size: cover;
+    background-repeat: repeat;
     height: 100vh;
     margin-top: 50px;
   }
