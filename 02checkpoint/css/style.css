@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Geo');
+
+/***************************************************************************************
+*    Title: [CSS3] Neon Glow
+*    Author: erikringsmuth
+*    Date: 10/3/17
+*    Availability: https://gist.github.com/erikringsmuth/9300530
+*
+***************************************************************************************/
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+body{
+  background-image: url("../img/austin.jpg");
+  background-size: no-repeat;
+  color: white;
+  font-family: Geo;
+}
+
+.header-container nav{
+  background-color: #222222;
+  background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+  opacity: .85;
+  font-size: 20px;
+}
+
+.logo-text span{
+  color: #fff;
+  font-family: Monoton !important;
+  font-size:50px;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+.nav-col-ul li{
+  text-align: center;
+}
+
+.main-section{
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container article{
+  background-color: #222222;
+  opacity: .90;
+}
+
+.main-text h1{
+  font-size: 45px;
+}
+
+.main-text p{
+  margin: 0;
+  font-size: 25px;
+}
+
+.video-container{
+  margin-top: 10px;
+}
+
+.product-section .img-container{
+  margin: 5px;
+}
+
+.about-section th, td{
+  text-align: center;
+}
+
+.about-section table{
+  background-color:#222222;
+  opacity: .90;
+  font-size: 30px;
+}
+
+.img-container img{
+  width: 100%;
+}
+.img-container p{
+  text-align: center;
+  background-color: #222222;
+  margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+
+  html{
+    background-color: black;
+  }
+
+  body{
+    background-image: url("../img/austin-mobile.jpg");
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .logo-text span{
+    font-size:30px;
+  }
+
+  .about-section table{
+    font-size: 18px;
+  }
+
+
+}
