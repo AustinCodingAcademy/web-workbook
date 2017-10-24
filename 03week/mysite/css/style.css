@@ -9,9 +9,15 @@ h1{ font-family: 'Pangolin', cursive;
 h2,h3,h4{font-family: 'Pangolin', cursive;
   color:black;
   font-size: xx-large;
+  text-align: center;
 }
 h5{font-family: 'Pangolin', cursive;
   color:black;
+  font-size: x-large;
+  }
+h6{font-family: 'Pangolin', cursive;
+    color:black;
+    text-align: center;
   }
 
 
@@ -24,12 +30,6 @@ h5{font-family: 'Pangolin', cursive;
     padding: 0px;
   }
 
-.logo{
-  position:absolute;
-  left:470px;
-  right:470px;
-}
-
 .topnav {
   display:flex;
   flex-direction: row;
@@ -38,7 +38,6 @@ h5{font-family: 'Pangolin', cursive;
   background-color: black;
 
 }
-
 
 /* Style the topnav links */
 .topnav a {
@@ -58,12 +57,11 @@ h5{font-family: 'Pangolin', cursive;
     color:#6597C9;
 }
 
-
 /* Create three unequal columns that floats next to each other */
-.column {
+/*.column {
     float: left;
     padding: 20px;
-}
+}*/
 
 /* Left column */
 .column.side {
@@ -73,19 +71,25 @@ h5{font-family: 'Pangolin', cursive;
     border-right: solid 4px; color:black;
     padding-right: 40px;
     background-color: #eee;
+    float:left;
+
 
 }
 
 /* Middle column */
 .column.middle {
-    width: 50%;
-    background-color: #ddd:
-
+  display;flex;
+  width: 75%;
+  background-color: white;
+  margin-left: 100px;
 }
 .logoImg {
   margin: 0 auto;
-
+  position:absolute;
+  left:470px;
+  right:470px;
 }
+
 .lightImg{
     margin-right: 111px;
     margin-top: 92px;
@@ -94,6 +98,37 @@ h5{font-family: 'Pangolin', cursive;
     padding-left: 8px;
     padding-bottom: 173px;;
 }
+.bodyParty{
+  display:flex;
+  margin-top: 50px;
+  flex-direction: row;
+  justify-content: center;
+}
+#img {
+    float: right;
+    margin: 0 0 15px 15px;
+  width:30%;height:30%;
+}
+
+p {
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+p.quote {
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+
+p.small {
+    font-variant: small-caps;
+}
+
+a:hover {
+    color: red;
+}
+
  /*.row:after {
     content: "";
     display: table;
