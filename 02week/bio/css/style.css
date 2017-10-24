@@ -1,0 +1,69 @@
+h1 {
+  text-align: center;
+  text-shadow: 0 0 10px Purple;
+  font-size: 2.5em;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    height: auto;
+    box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  margin-right: 120px;
+}
+p  {
+  border-left-style: solid;
+  border-color: Purple;
+  /*Sets an indention on first line of all paragraph elements*/
+  text-indent: 25px;
+  font-size: 1em;
+  /*Tells browser to hyphenate all words that need it at line break*/
+  hyphenation: on;
+}
+p.caption {
+  border-left: none;
+}
+br {
+line-height: 1.5;
+}
+div.polaroid {
+    width: 294px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+div.rotate_right {
+    float: left;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Safari */
+    transform: rotate(7deg);
+}
+
+div.rotate_left {
+    float: left;
+    -ms-transform: rotate(-8deg); /* IE 9 */
+    -webkit-transform: rotate(-8deg); /* Safari */
+    transform: rotate(-8deg);
+}
+#para3 {
+  /*Cancels the indention CSS of all paragraphs. Restores default value*/
+      text-indent: initial;
+      font-style: italic;
+}
+.pictures {
+  display: flex;
+  flex-direction: column;
+}
+/*Color of links while being hovered over*/
+a:hover {
+    color: red;
+}
