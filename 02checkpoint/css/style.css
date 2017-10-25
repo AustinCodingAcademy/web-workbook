@@ -126,11 +126,30 @@ body{
   margin-top: 5px;
 }
 
+.footer-container{
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  opacity: .90;
+}
+
+.fb-img{
+  width:30px;
+}
+
 @media (min-width: 768px) and (max-width: 1100px) {
 
+  /*Change background image to repeating image*/
   body{
     background-image: url("../img/mobile.jpg");
     background-repeat: repeat;
+  }
+
+  /*Remove transparency from footer container*/
+  .footer-container{
+    opacity: 1;
   }
 
 }
@@ -138,12 +157,14 @@ body{
 /*mediaquery for mobile*/
 @media (max-width: 767px) {
 
+  /*Change background image to repeating image*/
   body{
     background-image: url("../img/mobile.jpg");
     background-repeat: repeat;
     margin-top: 50px;
   }
 
+  /*Update font size to fit smaller screen*/
   .logo-text span{
     font-size:30px;
   }
@@ -160,5 +181,9 @@ body{
     font-size: 18px;
   }
 
+  /*Remove transparency from footer container*/
+  .footer-container{
+    opacity: 1;
+  }
 
 }
