@@ -106,7 +106,7 @@ body{
   text-align: center;
 }
 
-.about-section h2{
+h2{
   font-size: 30px;
   background-color: #222222;
 }
@@ -117,15 +117,22 @@ body{
   font-size: 30px;
 }
 
+/*center align all text in product section*/
 .product-container{
   text-align: center;
 }
 
+/*hide the product section title*/
+.product-container h2{
+  display: none;
+}
+
+/*make image adjust to the size of the screen*/
 .img-container img{
   width: 100%;
 }
+
 .img-container p{
-  text-align: center;
   background-color: #222222;
   margin-top: 5px;
 }
@@ -151,6 +158,10 @@ body{
   body{
     background-image: url("../img/mobile.jpg");
     background-repeat: repeat;
+  }
+
+  .product-container h2{
+      display: inline;
   }
 
   .img-container p{
@@ -189,6 +200,11 @@ body{
 
   .about-section table{
     font-size: 18px;
+  }
+
+  /*unhide the product section title*/
+  .product-container h2{
+    display: flex;
   }
 
   .img-container p{
