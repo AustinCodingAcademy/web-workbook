@@ -1,24 +1,25 @@
 body {
-  max-width: 850px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 100px;
   font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
 }
 
 #banner {
+  background-image: url("../img/nasa-background.jpg");
   width: 850px;
   height: 450px;
   display: flex;
   margin-bottom: 20px;
-  position: relative;
   color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  font-weight: 1000;
 }
 
-.banner-title {
-  position: absolute;
-  font-size: 60px;
-}
 
 #container {
   width: 850px;
@@ -30,7 +31,11 @@ body {
 
 .social, .office, .contact {
   width: 270px;
-  margin-left: 30px;
+}
+
+.social {
+  width: 250px;
+  padding-left: 20px;
 }
 
 h2 {
@@ -39,19 +44,27 @@ h2 {
 
 p {
   font-size: 15px;
+  line-height: 24px;
 }
 
-.textbox1, .textbox2 {
-  background-color: white;
-  width: 230px;
+#name-box {
+  width: 220px;
+  height: 20px;
 }
 
-.textbox1 {
-  height: 30px;
-  margin-top: -10px;
+#message-box {
+  width: 220px;
+  height: 80px;
 }
 
-.textbox2 {
-  height: 70px;
-  margin-top: -10px;
+#send {
+  color: white;
+  background-color: #4D4D4D;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 14px;
+}
+
+#send:hover {
+  background-color: #2D2D2D;
 }

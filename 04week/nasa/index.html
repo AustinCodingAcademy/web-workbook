@@ -11,10 +11,9 @@
 </head>
 
 <body>
-  <section id="banner">
-    <img src="img/nasa-background.jpg" alt="Photo of outer space" />
-    <div class="banner-title"><h1>NASA</h1></div>
-  </section>
+  <header id="banner">
+      <h1>NASA</h1>
+  </header>
   <section id="container">
     <div class="social">
       <h2>Social Media</h2>
@@ -26,14 +25,15 @@
     </div>
     <div class="contact">
       <h2>Contact Us</h2>
-      <div class="name-box">
-        <p>Name</p>
-        <div class="textbox1"></div>
-      </div>
-      <div class="message-box">
-        <p>Message</p>
-        <div class="textbox2"></div>
-      </div>
+      <form class="name">
+        <label for="name">Name</label><br />
+        <input type="text" id="name-box" />
+      </form><br />
+      <form class="message">
+        <label for="message">Message</label><br />
+        <input type="text" id="message-box" />
+      </form>
+      <a href="#"><div id="send">send</div></a>
     </div>
   </section>
 </body>
