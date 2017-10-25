@@ -1,120 +1,180 @@
-body {
-  background-image: url(airline.jpg);
-  margin: 0;
-  font-family: 'Ubuntu', sans-serif;
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  background: url(../img/airline.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 
-.topper {
-  display: block;
+.top {
   width: 100%;
+  height: auto;
+  background-color: #193A55;
+  display: flex;
   margin: 0;
-  background-color: #004d4d;
-  height: 81px;
-  border-bottom: 2px solid #e6e6e6;
+  border-bottom: 2px solid white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
 }
 
-.logo {
-  float: left;
-  margin-right: 0;
-  margin-top: 0;
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
 }
 
-nav ul {
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-.topper a {
+.nav a {
   text-decoration: none;
-  color: #e6e6e6;
-  font-size: 16px;
-  text-align: center;
-  padding: 8px;
-  margin-top: 4px;
+  color: white;
+  font-size: 18px;
+}
+
+.nav {
   float: right;
-  line-height: 81px;
+  margin-top: 25px;
+  margin-right: 20px;
+  position: relative;
 }
 
-.topper a:hover {
-  color: #40e0d0;
+.nav a:hover {
+  color: #148D80;
 }
 
-.searchFlights {
-  display: block;
-  width: 300px;
-  height: 300px;
-  float: left;
-  margin: 50px 50px 50px 100px;
-  background-color: #004d4d;
-  border-radius: 4px;
+.main {
+  background-color: #193A55;
+  height: 325px;
+  width: 400px;
+  position: absolute;
+  top: 175px;
+  left: 75px;
+  border-top-left-radius: 5px;
 }
 
-.boxBannerLeft {
-  display: block;
-  float: left;
-  width: 100px;
+.icons {
+  background-color: #005CBA;
+  justify-content: space-between;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  width: 404px;
+  margin-left: -2px;
+  text-align: center;
   height: 50px;
-  background-color: #3385ff;
-  margin: 0;
-  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.plane img, .bed img, .car img{
+  width: 40px;
+  padding: 8px;
+}
+.icons > div:hover{
+  background-color: #193A55;
 }
 
-.littlePlane {
-  margin: auto;
-  width: 50%;
+.plane {
+  display: inline-block;
+  width: 33.33%;
+  background-color: #1769B9;
+  border-top-left-radius: 5px;
 }
 
-.boxBannerMiddle {
-  display: block;
-  float: left;
-  width: 100px;
-  height: 50px;
-  border-radius: 4px;
+.bed {
+  display: inline-block;
+  width: 33.33%;
+  background-color: #198883;
+  border-top-left-radius: 5px;
 }
 
-.littleBed {
-  margin: auto;
-  width: 50%;
+.car {
+  display: inline-block;
+  width: 33.33%;
+  background-color: #198883;
+  border-top-right-radius: 5px;
 }
 
-.boxBannerRight {
-  display: block;
-  float: left;
-  width: 100px;
-  height: 50px;
-  border-radius: 4px;
-}
-
-.littleCar {
-  margin: auto;
-  width: 50%;
-}
-
-.clearfix:after {
+/*.icon:after {
+  display: table;
   clear: both;
-  content: ".";
-  display: block;
-  height: 0;
-  line-height: 0;
-  visibility: hidden;
-}
+  content: "";
+}*/
 
-.form{
-  margin-top:100px;
-}
-.secondRow{
-  margin-top:10px;
-}
-
-input[type="text"]{
-  background-color: #004d4d;
-max-width: 150px;
-outline: 1px solid #e6e6e6;
+.inputBoxLocation {
+  /*display: flex;
+  justify-content: space-between;*/
+  color: gray;
 
 }
-input[type="date"]{
-  background-color: #004d4d;
-max-width: 150px;
-outline: 1px solid #e6e6e6;
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.input-style {
+  display: flex;
+  border-radius: 2px;
+  background-color: #193A55;
+  border: 1px solid white;
+  height: 26px;
+  margin: 8px;
+  margin-top: 14px;
+  color: white;
+  height: 34px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.passenger-box {
+  text-indent: 10px;
+  display: flex;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.passenger {
+  display: inline-block;
+  width: 50%;
+  float: left;
+
+}
+
+.roundtrip {
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+
+.drop-down {
+  display: inline-block;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  background-color: transparent;
+}
+.drop-down label {
+  padding-right:20px;
+}
+
+.radio-button {
+  display: inline-block;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  float: left;
+  padding-left: 10px;
+}
+
+.search-button {
+  color: white;
+  background-color: #1769B9;
+  width: 302px;
+  margin: 0 51px;
+  text-align: center;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.search-button:hover{
+  background-color: #198883;
 }

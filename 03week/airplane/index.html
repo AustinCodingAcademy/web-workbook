@@ -7,68 +7,76 @@
   <meta name="viewport" content="windth=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Week3:Frederking Airplane</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style2.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 </head>
 
 <body>
-
-  <!--###### NAV BAR ######  -->
-  <div class="topper">
-    <a href="#">Register/Login</a>
-    <a href="#">Flight Schedule</a>
-    <a href="#">Travel Deals</a>
-    <a href="#">Home</a>
-
+  <div class="top">
     <div class="logo">
-      <img src="css/logo.png" />
+      <img src="img/logo.png">
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="#" title="Home"><img src="img/home-icon.png" />  Home</a></li>
+        <li><a href="#" title="Travel Deals"><img src="img/deal-icon.png" />  Travel Deals</a>
+        </li>
+        <li>
+          <a href="#" title="Flight Schedule"><img src="img/schedule-icon.png" />  Flight Schedule</a>
+        </li>
+        <li>
+          <a href="#" title="Register Login"><img src="img/login-icon.png" />  Register Login</a>
+        </li>
+      </ul>
     </div>
   </div>
 
-  <!--###### SEARCH BOX ######  -->
-
-  <div class="searchFlights clearfix">
-
-    <div class="boxBannerLeft">
-      <div class="littlePlane">
-        <img src="css/plane-icon.png" />
+  <div class="main">
+    <div class="icons">
+      <div class="plane">
+        <img src="img/plane-icon.png" />
+      </div>
+      <div class="bed">
+        <img src="img/hotel-icon.png" />
+      </div>
+      <div class="car">
+        <img src="img/car-icon.png" />
       </div>
     </div>
 
-    <div class="boxBannerMiddle">
-      <div class="littleBed">
-        <img src="css/hotel-icon.png" />
+    <form class="inputBoxLocation">
+      <div class="Location flex-around">
+        <input class="input-style" type="text" placeholder="Depart" />
+        <input class="input-style" type="text" placeholder="Arrive" />
       </div>
-    </div>
 
-    <div class="boxBannerRight">
-      <div class="littleCar">
-        <img src="css/car-icon.png" />
-      </div>
-    </div>
-
-    <!--##### INPUT #####  -->
-
-<div class="form">
-    <form>
-      <div>
-
-        <div class="firstRow" >
-          <input class="depart" type="text" placeholder="Depart"/>
-          <input class="arrive" type="text" placeholder="Arrive"/>
-        </div>
-
-        <div class="secondRow">
-          <input class="departDate" type ="date" placeholder="Date"/>
-          <input class="arriveDate" type="date" placeholder="Date"/>
-        </div>
-
+      <div class="inputBoxDate flex-around">
+        <input class="input-style" type="date" placeholder="mm/dd/yy" />
+        <input class="input-style" type="date" placeholder="mm/dd/yy" />
       </div>
     </form>
-</div>
+
+    <div class="passenger-box">
+
+      <div class="passenger">
+
+        <div class="drop-down">
+          <label for="drop-down">Passengers   </label>
+          <select>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        </div>
+      </div>
+
+      <div class="roundtrip">
+        <form class="radio-button">
+          <input type="radio" name="Return" value="return" />Return
+          <input type="radio" name="oneway" value="oneway" />One Way
+        </form>
+      </div>
+    </div>
+    <button class="search-button" type="button">Search Flights</button>
   </div>
-
-
-</body>
-
-</html>

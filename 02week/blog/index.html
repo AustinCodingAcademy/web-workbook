@@ -25,13 +25,13 @@
   <hr>
 
   <!--###### NAV BAR ######  -->
-  <div class="navBar">
+  <div class="navBar" id="dropDownClick">
     <ul>
       <li>Log In</li>
       <li>Post</li>
       <li>Find a Trunk Near You</li>
       <li>Message Spiccoli</li>
-      <li class="burger"><a href="">&#9776;</a></li>
+      <li class="burger"><a href="javascript:void(0);" onclick="dropDownMenu">&#9776;</a></li>
     </ul>
   </div>
   <hr />
@@ -142,6 +142,17 @@
           <p>Vexillologist woke XOXO chillwave copper mug VHS. Succulents kale chips pinterest narwhal viral. Cray pitchfork palo santo intelligentsia tofu roof party, enamel pin subway tile single-origin coffee everyday carry organic street art art party slow-carb. Keffiyeh cliche shoreditch plaid, craft beer kombucha 90's tofu +1 la croix. Iceland tote bag pitchfork truffaut, poutine art party typewriter palo santo kitsch ramps bushwick. Prism hot chicken pabst ennui godard. Kitsch tofu vice subway tile meditation flannel bitters activated charcoal vexillologist normcore cornhole woke. Asymmetrical hell of selfies, chartreuse leggings tattooed live-edge 3 wolf moon PBR&B austin post-ironic disrupt synth put a bird on it. Chartreuse coloring book keytar la croix sartorial lumbersexual.
           </p>
         </div>
+
+  <script>
+function dropDownMenu (){
+  var x = document.getElementById("dropDownClick");
+  if (x.className === "navBar") {
+    x.className +=" responsive";
+  } else{
+    x.className = "navBar";
+  }
+}
+  </script>
 
 
 
