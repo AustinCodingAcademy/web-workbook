@@ -1,0 +1,91 @@
+body{
+  font-family: 'Lora', serif;
+}
+
+#container{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+}
+
+Header{
+  background-color: #2BCDC0;
+  height: 275px;
+  color: white;
+  /*padding-top: 100px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1;
+}
+
+h1{
+  font-weight: normal;
+  font-size: 45px;
+  text-align: center;
+  flex: 1 1;
+}
+
+main{
+  background-color: #1b1b1b;
+  height: 375px;
+  color: white;
+  display: flex;
+  flex: 1 1;
+}
+
+h2{
+  font-weight: lighter;
+  flex: 1 1;
+}
+
+.blogPost{
+  width: 20%;
+  text-align: center;
+  float: left;
+  margin-left: 7%;
+  margin-right: 6%;
+  flex: 1 1;
+}
+
+.colorBlock{
+  width: 85%;
+  height: 30px;
+  margin-left: 7%;
+  margin-top: 40px;
+  flex: 1 1;
+}
+
+.blue{
+  background-color: #33A8DD;
+}
+
+.orange{
+  background-color: #F46731;
+}
+
+.green{
+  background-color: #2BCDC0;
+}
+
+/*FOR MOBILE*/
+  @media (max-width: 767px) {
+    header{
+      background-color: #33A8DD;
+    }
+
+    main{
+      background-color: #F7F5F6;
+      color: #1b1b1b;
+      flex-direction: column;
+      height:auto;
+    }
+
+    .blogPost{
+      float: none;
+      margin:auto;
+      width: 85%;
+    }
+  }
