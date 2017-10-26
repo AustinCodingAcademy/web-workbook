@@ -61,6 +61,7 @@ main {
 }
 
 section {
+  height: 726px;
   padding-top: 20px;
   padding-left: 50px;
   padding-right: 50px;
@@ -74,16 +75,22 @@ h2 {
   margin-bottom: 20px;
 }
 
-#Home p {
-  width: 800px;
-  margin-right: 20px;
-  margin-left: 75px;
+#Home {
+  display: flex;
+
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
 #Home img {
-  max-height: 400px;
+  height: 400px;
   display: block;
-  margin: auto;
+}
+
+#Home p {
+  width: 800px;
+  align-self: center;
 }
 
 #GraphicDesign {
@@ -105,7 +112,7 @@ h2 {
   font-family: 'Crete Round', serif;
   text-align: center;
   margin-top: 250px;
-  max-width: 400px;
+  max-width: 420px;
 }
 
 #Illustration {
@@ -154,20 +161,27 @@ h2 {
   height: 720px;
 }
 
+.publications-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
 article {
-  display: block;
+  display: flex;
   width: 300px;
   height: 500px;
-  margin-top: 20px;
-  margin-left: 100px;
-  margin-right: 50px;
-  float: left;
+  /*justify-content: space-between;*/
+  flex-flow: column nowrap;
+  align-items: center;
+
 }
 
 article img {
   max-width: 300px;
   max-height: 400px;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
 }
 
 article h3 {
@@ -180,7 +194,6 @@ article a {
   size: 20px;
   text-decoration: none;
   margin-top: 50px;
-  margin-left: 100px;
 }
 
 #Code {
@@ -221,7 +234,7 @@ article a {
   font-family: 'Crete Round', serif;
   text-align: center;
   margin-top: 230px;
-  max-width: 400px;
+  max-width: 600px;
 }
 
 #Stunts {
@@ -239,7 +252,7 @@ article a {
   font-family: 'Crete Round', serif;
   text-align: center;
   margin-top: 230px;
-  max-width: 400px;
+  max-width: 600px;
 }
 
 #Projects {
@@ -257,7 +270,7 @@ article a {
   font-family: 'Crete Round', serif;
   text-align: center;
   margin-top: 250px;
-  max-width: 400px;
+  max-width: 600px;
 }
 
 #Links h2 {
