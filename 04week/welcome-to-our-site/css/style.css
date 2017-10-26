@@ -2,6 +2,10 @@ body {
   color: white;
 }
 
+div{
+  box-sizing: border-box;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -9,7 +13,7 @@ body {
   text-align: center;
 
   font-size: 55px;
-  background: teal;
+  background: turquoise;
   height: 340px;
 }
 
@@ -17,11 +21,63 @@ body {
   display: flex;
   justify-content: space-between;
   background: black;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  margin-top: 15px;
+}
+
+.hr1 {
+  background: skyblue;
+  border-style: none;
+  height: 30px;
+}
+
+.hr2 {
+  background: orangered;
+  border-style: none;
+  height: 30px;
+}
+
+.hr3 {
+  background: turquoise;
+  border-style: none;
+  height: 30px;
 }
 
 .section {
   height: 340px;
   width: 30%;
+  padding: 20px;
   background: black;
 
+}
+
+/*media query phones*/
+
+@media (max-width: 767px)  {
+
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: lightgrey;
+
+  }
+
+  .section {
+    width: 60%;
+    background: inherit;
+    color: black;
+  }
 }
