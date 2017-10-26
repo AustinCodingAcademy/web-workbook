@@ -1,4 +1,4 @@
-.flex-container{
+/*.flex-container{
   display: flex;
   background-color: turquoise;
   width: 100%;
@@ -7,7 +7,37 @@
   align-items: center;
   color: white;
   font-size: 2em
+}*/
+.head{
+  font-size: 180%;
 }
+span{
+  font-weight: bold;
+}
+h1{
+  font-size: 250%;
+  text-align: center;
+  font-family: Droid Serif;
+}
+p
+{
+  font-family: Droid Serif;
+  line-height: 1.5em;
+}
+
+/*Laptop view*/
+@media (min-width: 768px){
+
+  .flex-container{
+    display: flex;
+    background-color: turquoise;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em
+  }
 .box{
   display: flex;
   flex-direction: column;
@@ -24,7 +54,7 @@
   align-self: flex-start;
   margin: 2%;
   padding: 1em;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   text-align: center;
 }
 .box1 header{
@@ -40,7 +70,7 @@
   align-self: center;
   margin-right: 2%;
   padding: 1em;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   text-align: center;
 }
 .box2 header{
@@ -56,7 +86,7 @@
   align-self: flex-end;
   margin-right: 2%;
   padding: 1em;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   text-align: center;
 }
 .box3 header{
@@ -66,12 +96,77 @@
   height: 10%;
   background: turquoise;
 }
-h1{
-  text-align: center;
-  font-family: Droid Serif;
 }
-p
-{
-  font-family: Droid Serif;
-  line-height: 1.5em;
+
+/*Phone view*/
+@media (max-width: 767px){
+
+  .flex-container{
+    display: flex;
+    background-color: dodgerblue;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: whitesmoke;
+    color: black;
+    width: 100%;
+    height: 50%;
+  }
+  .box1{
+    width: 25%;
+    height: auto;
+    align-self: flex-start;
+    margin: 2%;
+    padding: 1em;
+    /*border: 1px solid red;*/
+    text-align: center;
+  }
+  .box1 header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    background: dodgerblue;
+  }
+  .box2{
+    width: 25%;
+    height: auto;
+    align-self: center;
+    margin-right: 2%;
+    padding: 1em;
+    /*border: 1px solid red;*/
+    text-align: center;
+  }
+  .box2 header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    background: orangered;
+  }
+  .box3{
+    width: 25%;
+    height: auto;
+    align-self: flex-end;
+    margin-right: 2%;
+    padding: 1em;
+    /*border: 1px solid red;*/
+    text-align: center;
+  }
+  .box3 header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    background: turquoise;
+  }
 }
