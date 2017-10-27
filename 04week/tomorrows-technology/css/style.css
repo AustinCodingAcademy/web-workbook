@@ -4,6 +4,7 @@ body {
 
 img {
   margin: 20px;
+  width: 70%;
 }
 
 aside {
@@ -11,7 +12,7 @@ aside {
   top: 0;
   right: 0;
   text-align: left;
-  width: 300px;
+  width: 25%;
   margin: 20px;
 }
 
@@ -26,8 +27,76 @@ li {
 
 article {
   margin-left: 20px;
+  width: 70%;
 }
 
 h1 {
   font-size: 35px;
+  margin-bottom: 20px;
+}
+
+button {
+  margin-top: 20px;
+  background: darkgrey;
+  border-style: none;
+  /*width: 100px;*/
+  /*height: 35px;*/
+  font-size: 20px;
+  color: ghostwhite;
+}
+
+footer {
+  display: none;
+}
+
+/*
+Tablet sizing
+*/
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  aside {
+    display: none;
+  }
+
+  img, article {
+    width: 93%;
+  }
+
+  footer {
+    display: none;
+  }
+
+}
+
+/*
+Phone sizing
+ */
+
+@media all and (max-width: 767px) {
+
+  aside {
+    display: none;
+  }
+
+  img, article {
+    width: 93%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+    background: darkgrey;
+    color: ghostwhite;
+    height: 300px;
+    margin-top: 20px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
 }
