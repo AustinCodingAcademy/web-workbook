@@ -23,6 +23,10 @@ transition: transform 0.5s;
 scale(2);
 transform: translateX(-400px) rotate3d(180deg) scale(0.5);
 }
+.fader img { transition: 1s ease-in-out; }
+  img.swap1, div.fader:hover img.swap2 { opacity: 1.0; }
+  .fader:hover img.swap1, img.swap2 { opacity: 0; }
+
 .evenboxLG:hover{
   -webkit-transform: translateX(-400px) rotate(-180deg)
 scale(2);
