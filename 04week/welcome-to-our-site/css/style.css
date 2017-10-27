@@ -1,0 +1,83 @@
+html {
+  font-family: times;
+  color: white;
+}
+
+nav {
+  box-sizing: border-box;
+  width: 999px;
+  height: 375px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+#container {
+  display: flex;
+  justify-content: flex-start;
+  width: 999px;
+  margin: auto;
+}
+
+div.lowerboxes {
+  box-sizing: border-box;
+  background-color: black;
+  width: 333px;
+  height: 375px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+p {
+  font-size: 14px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.bar {
+  width: 240px;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.barone {
+  background-color: blue;
+}
+
+.bartwo {
+  background-color: red;
+}
+
+.barthree {
+  background-color: green;
+}
+
+@media (max-width: 767px) {
+  nav {
+    width: 333px;
+    background-color: blue;
+    margin: none;
+  }
+  div.lowerboxes {
+    height: 275;
+    box-sizing: border-box;
+    background-color: lightgrey;
+    margin-left: auto;
+  }
+
+  #container {width: 333px;
+    flex-direction: column;
+  justify-content: center;
+}
+}
