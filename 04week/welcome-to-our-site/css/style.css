@@ -6,6 +6,10 @@ div{
   box-sizing: border-box;
 }
 
+span {
+  font-weight: bold;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -19,7 +23,7 @@ div{
 
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background: black;
   text-align: center;
 }
@@ -52,17 +56,21 @@ p {
 
 .section {
   height: 340px;
-  width: 30%;
+  width: 300px;
   padding: 20px;
   background: black;
 
 }
 
-/*media query phones*/
+/*
+Phones
+ */
 
-@media (max-width: 767px)  {
+@media all and (max-width: 767px)  {
 
-
+  .header {
+    background: skyblue;
+  }
 
   .container {
     display: flex;
@@ -71,12 +79,12 @@ p {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: lightgrey;
+    background: ghostwhite;
 
   }
 
   .section {
-    width: 60%;
+    width: 270px;
     background: inherit;
     color: black;
   }
