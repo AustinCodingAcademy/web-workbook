@@ -1,25 +1,40 @@
+body {
+  margin-top: 3%;
+  margin-left: 0;
+  margin-right: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
 main {
   display: flex;
   flex-flow: row wrap;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 3%;
+  margin-right: 3%;
   justify-content: space-between;
 }
 
 article {
   order: 3;
+  width: 70%;
+}
+
+p {
+  font-size: 1.4em;
 }
 
 .technology {
-  width: 15%;
-  height: 20%;
-  background-color: grey;
+  width: 140px;
+  height: 40px;
+  background-color: #666363;
 }
 
 .technology span {
-  line-height: 30px;
-  padding: 6%;
+  /*line-height: 35px;*/
+  /*padding: 8%;*/
   color: white;
+  position: relative;
+  top: 25%;
+  left: 12%;
 }
 
 img {
@@ -29,6 +44,15 @@ img {
 
 aside {
   width: 25%;
+  font-weight: 900;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+hr {
+  border: 1px solid black;
 }
 
 ul {
@@ -40,6 +64,111 @@ li {
   margin-bottom: 5%;
 }
 
-article {
-  width: 70%;
+footer {
+  background-color: #666363;
+  width: 100%;
+  margin-top: 5%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+footer div {
+  display: inline-block;
+  width: 40%;
+  margin-left: 7%;
+}
+footer div h3, footer div a {
+  text-align: justify;
+  margin-bottom: 3%;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer h3 {
+  margin-top: 7%;
+  font-weight: bold;
+}
+
+footer li {
+  margin-bottom: 3%;
+}
+
+footer a {
+  font-weight: 100;
+  font-size: 85%;
+}
+footer img {
+  height: 7%;
+  width: 7%;
+  float: right;
+  margin-right: 45%;
+}
+
+hr {
+  margin-right: 45%;
+  border: 0.5px solid white;
+
+}
+
+#media {
+  vertical-align: top;
+}
+
+
+@media (min-width: 992px) {
+
+  footer {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  aside {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    height: 450px;
+    justify-content: center;
+  }
+
+  article {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  p {
+    font-size: 1.55em;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+
+    aside {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    article {
+      width: 100%;
+    }
+
+    footer {
+      display: block;
+    }
 }
