@@ -6,14 +6,21 @@
 header {
   background-color: #2bccbf;
   height: 375px;
-  padding-top: 165px;
 }
 
 h1 {
   color: white;
   margin: auto;
-  width: 500px;
+  width: 70%;
   text-align: center;
+  font-weight: normal;
+  font-size: 3.5em;
+  line-height: 375px;
+
+}
+
+.titleBold {
+  font-weight: bold;
 }
 
 main {
@@ -25,11 +32,13 @@ article {
   color: white;
   width: 25%;
   float: left;
+  margin-right: 8%;
+  margin-top: 6%;
 }
 
 section {
   width: 80%;
-  margin: auto;
+  margin-left: 15%;
 }
 
 h2, p {
@@ -38,31 +47,77 @@ h2, p {
   margin: auto;
 }
 
+h2 {
+  font-size: 2.2em;
+  font-weight: normal;
+  margin-bottom: 4%;
+}
+
 .colorBlock {
   height: 30px;
-  width: 60%;
-}
-
-.redBox {
-  background-color: red;
-}
-
-.greenBox {
-  background-color: green;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 6%;
 }
 
 .blueBox {
-  background-color: blue;
+  background-color: #1BA1EE;
+}
+
+.orangeBox {
+  background-color: #EE771B;
+}
+
+.greenBox {
+  background-color: #2bccbf;
 }
 
 
 @media (max-width: 767px) {
+  
   header {
-    background-color: lightblue;
+    background-color: #1BA1EE;
   }
 
   #container {
     width: 500px;
+    margin: auto;
+  }
+
+  h1 {
+    width: 70%;
+    line-height: normal;
+    text-align: left;
+    font-size: 4em;
+    padding-top: 20%;
+  }
+
+  main {
+    height: auto;
+    background-color: #EFEFEF;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blogPost {
+    width: 60%;
+    padding-top: 10%;
+  }
+
+  .post2, .post3 {
+    margin-top: 15%;
+  }
+
+  .post3 {
+    margin-bottom: 10%;
+  }
+
+  h2, p {
+    color: black;
   }
 
 }
