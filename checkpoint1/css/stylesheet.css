@@ -15,7 +15,8 @@ a:hover {
 .sidenav {
   font-family: 'Oswald', sans-serif;
   height: 100%;
-  width: 250px;
+  width: 20%;
+  max-width: 250px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -57,7 +58,7 @@ a:hover {
 
 /* Page content */
 main {
-  margin-left: 230px; /* Same as the width of the sidenav */
+  margin-left: 18%; /* Same as the width of the sidenav */
 }
 
 section {
@@ -77,19 +78,18 @@ h2 {
 
 #Home {
   display: flex;
-
   justify-content: space-around;
   flex-flow: column nowrap;
-  align-items: center;
 }
 
 #Home img {
   height: 400px;
   display: block;
+  align-self: center;
 }
 
 #Home p {
-  width: 800px;
+  width: 80%;
   align-self: center;
 }
 
@@ -300,4 +300,10 @@ article a {
   margin: auto;
   margin-top: 400px;
 
+}
+
+@media (max-width: 767px) {
+  #Publications {
+    height: 1060px;
+  }
 }
