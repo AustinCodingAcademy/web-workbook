@@ -12,7 +12,7 @@ a:hover {
   color: red;
 }
 
-.sidenav {
+#sideNav {
   font-family: 'Oswald', sans-serif;
   height: 100%;
   width: 20%;
@@ -28,7 +28,7 @@ a:hover {
   padding-top: 20px;
 }
 
-.sidenav h1 {
+#sideNav h1 {
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
   line-height: 36px;
@@ -36,21 +36,17 @@ a:hover {
   margin-right: 15px;
   font-size: 40px;
 }
-.sidenav a {
+
+#sideNav a {
   font-family: 'Oswald', sans-serif;
   color: black;
   font-size: 20px;
   font-weight: 10;
   line-height: 24px;
-  text-decoration: none;
   margin-right: 15px;
 }
 
-.sidenav a:hover {
-  color: red;
-}
-
-.sidenav div {
+#sideNav div {
   margin-top: 100px;
   margin-right: 15px;
   font-size: 12px;
@@ -59,6 +55,27 @@ a:hover {
 /* Page content */
 main {
   margin-left: 18%; /* Same as the width of the sidenav */
+}
+
+#hamburger {
+  display: none;
+  font-family: 'Oswald', sans-serif;
+  max-height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 800px) {
+  #hamburger {
+      display: block;
+
+    }
+  main {
+    margin-left: 0px;
+  }
 }
 
 section {
@@ -78,19 +95,22 @@ h2 {
 
 #Home {
   display: flex;
+  height: 726px;
   justify-content: space-around;
   flex-flow: column nowrap;
 }
 
 #Home img {
-  height: 400px;
+  max-height: 60%;
   display: block;
   align-self: center;
 }
 
 #Home p {
   width: 80%;
+  text-indent: 5em;
   align-self: center;
+  margin-bottom: 20px;
 }
 
 #GraphicDesign {
@@ -124,14 +144,15 @@ h2 {
   margin: auto;
   margin-bottom: 50px;
   max-height: 400px;
+  max-width: 80%;
 }
 
 #Illustration a {
+  display: block;
   font-family: 'Crete Round', serif;
-  text-align: center;
   text-decoration: none;
-  width: 400px;
-  margin-left: 225px;
+  width: 100%;
+  text-align: center;
   margin-top: 30px;
 }
 

@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/stylesheet.css">
   </head>
   <body>
-    <div class="sidenav">
+    <div id="sideNav" class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left">
+      <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
       <h1>Eric<br>Summers</h1><br><br>
       <a href="#Home">Home</a><br>
       <a href="#GraphicDesign">Graphic Design</a><br>
@@ -24,11 +25,24 @@
       <a href="#Contact">Contact</a><br>
       <div>Created By Eric Summers<br>Last Updated 10-18-17</div>
     </div>
+    <!-- hamburger show/hide -->
+    <script>
+      function w3_open() {
+        document.getElementById("sideNav").style.display = "block";
+      }
+      function w3_close() {
+          document.getElementById("sideNav").style.display = "none";
+      }
+    </script>
+
     <main class="boxy">
+      <div id="hamburger">
+        <button class="w3-button w3-white w3-xlarge" onclick="w3_open()">&#9776; Menu</button>
+      </div>
       <section id="Home">
         <h2 class="boxy">Portfolio</h2>
         <img src="img/portrait_color.jpg" alt="portrait_color"><br>
-        <p style="text-indent: 5em;">Hello, World! Welcome to my portfolio page.
+        <p>Hello, World! Welcome to my portfolio page.
           My name is Eric Summers, as I'm sure you've gathered.
           I currently reside east of Austin in a beautiful bend
           of the Lower Colorado River. I was born in Austin and
