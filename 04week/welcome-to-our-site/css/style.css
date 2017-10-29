@@ -1,32 +1,35 @@
 body{
+  margin:0;
+}
+#container{
+  /*width:1000px;*/
+  width:80%;
+  margin:auto;
 }
 header{
   background-color: #2bccbf;
-  width: 1024px;
-  height: 375px;
+  height: 265px;
   color:white;
-  padding-top: 300px;
-}
-#container{
-  width:1200px;
-  margin:auto;
 }
 h1{
   color:white;
   margin: auto;
-  width: 500px;
+  padding-top: 100px;
   text-align: center;
+  font-size: 40px;
 }
 .titleBold{
-
+  font-weight: bold;
+  font-size: 45px;
 }
 main{
   background-color: black;
-  width: 1024px;
+  padding: 60px 20px;;
 }
 article{
   color:white;
-  width: 25%;
+  /*padding:2px;*/
+  width:250px;
 }
 h2, p{
   width: 75%;
@@ -43,22 +46,45 @@ section{
   margin: auto;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
 }
 .redBox{
-  background-color: red;
+  background-color: #00a8e0;
 }
 .greenBox{
-  background-color: green;
+  background-color: red;
 }
 .blueBox{
-  background-color: blue;
+  background-color: #2bccbf;
 }
 
-@media (max-width: 767px) {
+/*Media settings-Media settings*/
+/*for viewing on a tablet*/
+@media (min-width: 750px) and (max-width: 980px) {
+  #container{
+    width:100%;
+  }
+  article{
+    width: 100%;
+    padding: 30px 0px;
+    /*border: 1px solid yellow;*/
+  }
+  .colorBlock{
+    width: 25%;
+  }
+}
+/*For a mobile device*/
+@media (max-width: 750px) {
   header{
-    background-color: lightblue;
+    background-color: #00a8e0;
   }
     #container{
       width: 400px;
+  }
+  main{
+      background-color: #f7f5f6;
+  }
+  article{
+    color:black;
   }
 }
