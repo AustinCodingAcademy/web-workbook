@@ -1,39 +1,60 @@
-.flex-container {
-  background-image: url("img/overhead.jpg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  margin: 25px;
-  width: auto;
+
+body {
+  background-color: honeydew;
+  font-family: Verdana;
 }
 
-.flex-container h1 {
-
-  text-align: center;
+header h1 {
   font-size: 48px;
   color: orange;
+  padding: 10px;
+  margin: 0 20px;
 }
 
-.flex-container nav {
-  font-size: 16px;
+header p {
+  padding: 25px;
+  margin: 0px;
+}
+
+header nav {
+  display: inline-flex;
+  align-items: right;
+  padding-right: 40px;
+  font-size: 18px;
+  color: black;
+}
+
+header {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  flex-direction: column;
-  color: white;
-  margin: 25px;
-
-}
-body {
-  background-color: #9BA17B;
-}
-
-section .row img {
-  margin: 0 0 30px;
-  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 footer {
   text-align: center;
-  color: white;
   font-size: 12px;
+  margin: 20px;
+}
+
+.col-sm-4 {
+  background-color: white;
+  height: 350px;
+  border: 2px solid;
+}
+
+.info-container {
+  display: flex;
+  margin: 25px;
+  width: auto;
+  text-align: justify;
+}
+
+.info-container img {
+  max-width: 95%;
+}
+
+.contact-container {
+  margin: 0 25px;
+  text-align: center;
 }
