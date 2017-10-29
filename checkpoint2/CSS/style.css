@@ -1,9 +1,6 @@
-aside{
-  margin-top: 2%;
-}
-aside img{
-  padding-top: 5px;
-  padding-bottom: 5px;
+.headerAffix img{
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .centerTitle {
@@ -31,29 +28,28 @@ iframe{
 }
 
 .headerAffix{
+  width: 100%;
   background-color: #ffffff;
-}
-
-@media(min-width:785px){
-
-.headerAffix{
-  width: 100%;
-  margin-left: 25%;
   position: fixed;
 }
 
+
+@media(min-width:785px){ /*Media Queries for Controlling fixed header */
+
+.headerAffix{ /*desktop*/
+  margin-left: 31%;
 }
 
-@media (min-width: 826px) and (max-width: 991px) {
+}
+
+@media (min-width: 826px) and (max-width: 991px) { /*tablet*/
 
 .headerAffix{
-  width: 100%;
   margin-left: 15%;
-  position: fixed;
 }
 }
 
-@media (max-width: 825px){
+@media (max-width: 825px){ /*mobile*/
   .headerAffix{
     display: none;
   }
