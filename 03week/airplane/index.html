@@ -1,68 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>UX ATLANTIC</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <div>
-      <img src="./img/logo.png" alt"">
-      <p class="p1"><img src="./img/home-icon.png" alt"">
-                    <a href="#">Home
-                    <img src="./img/deal-icon.png" alt"">
-                    <a href="#">Travel Deals
-                    <img src="./img/schedule-icon.png" alt"">
-                    <a href="#">Flight Schedule
-                    <img src="./img/login-icon.png" alt"">
-                    <a href="#">Register/Login</p>
-       </div>
-  <!--  <div class="logo">
-        <ul style="list-style: none;">
-          <li><img src="./img/home-icon.png" alt"" ><a href="">Home</a></li>
-          <li><img src="./img/deal-icon.png" alt""><a href="">Travel Deals</a></li>
-          <li><img src="./img/schedule-icon.png" alt""><a href="">Flight Schedule</a></li>
-          <li><img src="./img/login-icon.png" alt""><a href="">Register/Login</a></li>
-        </ul>
-      </div>-->
-      </header>
-      <div class="schedule">
-        <div class="scheduleheader">
-          <img class="icon1" src="./img/plane-icon.png" alt"">
-          <img class="icon2" src="./img/hotel-icon.png" alt"">
-          <img class="icon3" src="./img/car-icon.png" alt"">
-        </div>
-        <div>
-          <form>
-          <input type="text" class="depart-field" placeholder="Depart">
-          <input type="text" class="depart-field" placeholder="Arrive">
-          </form>
-        </div>
-        <div>
-          <form>
-          <input type="text" class="depart-field" placeholder="MM/DD/YYYY">
-          <input type="text" class="depart-field" placeholder="MM/DD/YYYY">
-          </form>
-        <div>
-        <div>
-          <form>
-          <p class="p2">Passengers</p>
-          <select name="passengers">
-            <option value="1"></option>
-            <option value="2"></option>
-            <option value="3"></option>
-            </form>
-          </select>
-          <form action="">
-            <input type="radio" name="gender" value="male">Return
-            <input type="radio" name="gender" value="female">Round Trip
-          </form>
-        </div>
-        <div>
-          <button class="button" type="button">Search Flights</button>
-        </div>
-      </div>
-
-  </body>
+<head>
+  <meta charset="utf-8" name="UX Atlantic">
+  <title>UX Atlantic Online Ticket Ordering</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<header>
+<div class="topmenu">
+  <img class="menulogo" src="img/logo.png">
+  <a class="menuitem" href="#" >Register/Login</a>
+  <img class="menuicons" src="img/login-icon.png">
+  <a class="menuitem" href="#" >Flight Schedule</a>
+  <img class="menuicons" src="img/schedule-icon.png">
+  <a class="menuitem" href="#">Travel Deals</a>
+  <img class="menuicons" src="img/deal-icon.png">
+  <a class="menuitem" href="#">Home</a>
+  <img class="menuicons" src="img/home-icon.png">
+</div>
+</header>
+<content>
+<div class="submenu">
+  <ul>
+    <li><img class="selectedColor" src="img/plane-icon.png">
+    <li><img class="notSelectedColor" src="img/hotel-icon.png">
+    <li><img class="notSelectedColor" src="img/car-icon.png">
+    </ul>
+  <input type="text" placeholder="Depart">
+  <input type="text" placeholder="Arrive">
+  <input type="date" placeholder="mm/dd/yy">
+  <input type="date" placeholder="mm/dd/yy">
+    <label>Passengers:</label>
+  <select>
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+  </select>
+  <input type="radio" name="flighttype" value="Return" checked>Return
+  <input type="radio" name="flighttype" value="OneWay">One Way
+  <input class="selectedColor buttonWidth" type="button" value="Search Flights">
+</div>
+</content>
+</body>
 </html>
