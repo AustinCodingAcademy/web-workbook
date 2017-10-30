@@ -5,20 +5,16 @@
 
 .centerTitle {
     background-color: #ffffff;
-    margin-left: 17.5%;
-    margin-top: 144px;
 }​
 
 .tester{
   background-color: red;
 }
 
-.articleConstrainer{
-  max-width: 560px;
-  max-height: 580px;
-}
 
 iframe{
+  width:100%;
+  min-height: 315px;
   margin-bottom: 10px;
 }
 
@@ -28,29 +24,19 @@ iframe{
 }
 
 .headerAffix{
-  width: 100%;
   background-color: #ffffff;
-  position: fixed;
-}
+  position: sticky;
 
+}
 
 @media(min-width:785px){ /*Media Queries for Controlling fixed header */
 
-.headerAffix{ /*desktop*/
-  margin-left: 31%;
-}
 
-}
 
 @media (min-width: 826px) and (max-width: 991px) { /*tablet*/
 
-.headerAffix{
-  margin-left: 15%;
-}
-}
+
 
 @media (max-width: 825px){ /*mobile*/
-  .headerAffix{
-    display: none;
-  }
+  
 }
