@@ -1,0 +1,55 @@
+main{
+  diplay: flex;
+  width: 99%;
+  font-family: Helvetica;
+}
+
+.main-container {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.section1{
+  width: 75%;
+  margin: 30px;
+
+}
+
+aside{
+  margin: 4px;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+}
+
+aside h1{
+  border-bottom: 1px solid black;
+}
+
+section h1, h3{
+  font-weight: 400;
+}
+img{
+  width: 100%;
+}
+
+input{
+  background-color: #696969;
+  color: white;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px)
+
+  aside {
+    justify-content: none;
+    width: 100%;
+  }
+
+  .section1 {
+    flex-flow: row wrap;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
