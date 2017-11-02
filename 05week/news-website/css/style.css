@@ -1,55 +1,95 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Monda';
+}
+
 body {
   background-color: green;
 }
+
+h1 {text-align: center;
+  color: white;
+}
+h2 { padding-left: 10px;
+padding-top: 15px;}
 
 p {
   padding: 15px;
 }
 
-.rowone {background-color: lightgreen;}
-
-/*.rowtwo {background-color: lightgrey;}*/
-
 header {
-
   background-color: green;
   text-align: center;
-  padding: 10px;
-}
-
-.wrapper {
-  background-color: green;
-  box-sizing: border-box;
-  /*padding: 0px;*/
-}
-
-
-.container {
-  box-sizing: border-box;
-}
-
-.c1 {
-  background-color: pink;
-}
-
-.c2 {
-  /*background-color: brown;*/
+  padding-top: 10px;
 }
 
 p.readlink {
   padding: 0px;
   text-align: center;
+  line-height: 5px;
   color: rgba(255, 255, 255, 0.5)
+}
+
+
+
+div.c1 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+div.c2 {
+  padding-bottom: 20px;
+}
+
+.wrapper {
+  background-color: green;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .box {
   box-sizing: border-box;
   padding: 0px;
   background-color: white;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  transition: all .20s ease-in-out;
 }
-.smbox {min-height: 180px;}
 
-.lrbox {min-height: 400px;}
+.box:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.8);
+  color: grey;
+}
+
+.lrbox {
+  min-height: 600px;
+  max-height: 600px;
+}
+
+.smbox {
+  min-height: 300px;
+  max-height: 300px;
+}
+
+/***********DEBUG AREA VVVVV***********/
+
+/*.rowone {background-color: lightgreen;}*/
+
+/*.rowtwo {background-color: lightgrey;}*/
+
+/*.c1 {
+  background-color: pink;
+}
+
+.c2 {
+  background-color: brown;
+}*/
+
 /*.bg {
   box-sizing: border-box;
   background-color: lightblue;
@@ -59,9 +99,3 @@ p.readlink {
   box-sizing: border-box;
   background-color: yellow;
 }*/
-
-img {
-  /*box-sizing: border-box;*/
-  max-width: 100%;
-  max-height: 100%;
-}
