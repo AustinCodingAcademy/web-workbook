@@ -2,36 +2,50 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Intro to Web</title>
     <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link rel="stylesheet" href="./style.css">
   </head>
-  <body>
-    <header>
+  <body class="container">
+    <div class="row">
+
+    <header class="offset-col-md">
       <h1>Intro to Web</h1>
       <p>Contributions by Wade Cosby <br> Inspired by Austin Coding Academy</p>
     </header>
-    <section>
-      <h1>Assignments and Notes</h1>
-      <p>This page will contain a series of links to all assignments to be completed over the
-        next ten weeks, as an aspiring full stack developer at Austin Coding Academy.</p>
-        <br>
-      <article>
-        <h1> Week 1 </h1>
-        <a href="01week/helloworld/index.html">Week 1 Project- Hello World!</a>
-        <br>
-        <a href="01week/resume/index.html">Week 1 Project- WC-Resume</a>
-      </article>
-      <article>
-        <h1> Week 2 </h1>
-        <a href="https://wc0sby.github.io/web-workbook/02week/bio/index.html"> Week 2 Project - Bio Page</a>
-      </article>
-      <article disabled>
-        <h1> Week 3 </h1>
-      </article>
-      <article disabled>
-        <h1> Week 4 </h1>
-      </article>
+
+
+  </div>
+    <div class="row">
+      <section class="col-md-12">
+        <h1>Assignments and Notes</h1>
+        <p>This page will contain a series of links to all assignments to be completed over the
+          next ten weeks, as an aspiring full stack developer at Austin Coding Academy.</p>
+      </div>
+<!--  
+-->
+
+      <div class="row">
+          <article class="col-md-6">
+            <h1> Week 1 </h1>
+            <p><a href="01week/helloworld/index.html">Week 1 Project- Hello World!</a></p>
+            <p><a href="01week/resume/index.html">Week 1 Project- WC-Resume</a></p>
+          </article>
+          <article class="col-md-6">
+            <h1> Week 2 </h1>
+            <p><a href="https://wc0sby.github.io/web-workbook/02week/bio/index.html"> Week 2 Project - Bio Page</a></p>
+          </article>
+          <article class="col-md-6">
+            <h1> Week 3 </h1>
+          </article>
+          <article class="col-md-6">
+            <h1> Week 4 </h1>
+          </article>
+        </div>
       <article disabled>
         <h1> Week 5 </h1>
       </article>
@@ -51,5 +65,12 @@
         <h1> Week 10 </h1>
       </article>
   </section>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+  crossorigin="anonymous"></script>
+  <!-- <script src="js/bootstrap.min.js"></script> -->
   </body>
 </html>
