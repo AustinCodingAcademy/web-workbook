@@ -1,0 +1,126 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  margin: 10px;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.vertical {
+  display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+
+}
+
+img {
+  height: 450px;
+  width: 850px;
+}
+
+h1 {
+font-size: 30px;
+margin-top:15px;
+}
+
+.tech {
+  background: rgb(77,77,77);
+  width: 100px;
+  height: 30px;
+  color: white;
+  margin-top:15px;
+  margin-bottom: 15px;
+}
+
+.tt {
+  margin-top: 3px;
+  margin-left: 7px;
+
+}
+
+aside {
+  width: 330px;
+  margin-left: 40px;
+  padding-top: 30px;
+
+}
+
+.ts {
+border-bottom: 1px solid black;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.stories {
+  border-top: 1px solid grey;
+ font-weight: 700;
+}
+
+.phonemenu {
+
+  display: flex;
+  justify-content: space-around;
+  background: rgb(93,93,93);
+  width: 425px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  visibility: hidden;
+  }
+
+  .h22 {
+
+  }
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  main {
+    justify-content:center;
+    border-bottom: 1px solid black;
+  }
+
+  aside {
+    display: none;
+    visibility: hidden;
+  }
+
+}
+
+@media all and (max-width: 767px) {
+
+  main {
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  img {
+    height: 225px;
+    width: 425px;
+  }
+
+  aside {
+    display: none;
+    visibility: hidden;
+  }
+
+  .phonemenu {
+    background; rgb(93,93,93);
+    width: 425px;
+    visibility: visible;
+  }
+
+}
