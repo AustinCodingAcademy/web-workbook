@@ -1,0 +1,56 @@
+body{
+    background-color: purple;
+}
+
+main{
+    width: 100px;
+    margin: auto;
+}
+
+.oddBox, .evenBox {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(31, 12, 12);
+    margin-top: 20px;
+}
+
+#box1{
+    background-color: yellow;
+}
+
+.evenBox{
+    background-color: brown;
+}
+
+.oddBox{
+    background-color: red;
+     
+}
+
+#box1:hover {
+    transform: scale(2);
+}
+
+#box2:hover{
+    transform: scale(0.5)
+}
+
+#box3:hover{
+    transform: translate(300px) scale(2);
+}
+
+#box4:hover{
+    transform: translateX(200px);
+    transition: all 5s ease-in-out;
+    
+}
+
+#box5:hover{
+    transition: transform 3s;
+    transform: rotate(360deg);
+}
+
+#box6:hover{
+    transform: translateX(-200px) rotate(180deg);
+    transition: transform 3s ;
+}
