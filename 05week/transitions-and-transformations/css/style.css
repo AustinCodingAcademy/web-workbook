@@ -1,0 +1,35 @@
+body {
+  background-color: white;
+}
+
+main {
+  width: 50px;
+  margin: auto;
+}
+
+.oddBox {
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+  background-color: blue;
+  transform-origin: center;
+  transition: transform 3s;
+
+}
+
+.evenBox {
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+  background-color: red;
+  transform-origin: center;
+  transition: transform 3s;
+}
+
+main:hover > .oddBox {
+  transform:  translateX(600px) scale(2) rotate(360deg);
+}
+
+main:hover > .evenBox {
+  transform: translateX(-600px) scale(.5) rotate(-360deg);
+}
