@@ -1,0 +1,65 @@
+body {
+  background-color: blue;
+}
+
+main {
+  width: 50px;
+  margin: auto;
+}
+/*box design*/
+.oddBox, .evenBox {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  margin-top: 20px;
+  transform-origin: left top; /*specifies to rotate from the top left*/
+}
+
+/*transition elements*/
+.oddBox:hover ~ .evenBox {
+  transform: translateX(200px) scale(2) rotate(1080deg);
+  transition-duration: 10s;
+}
+
+.evenBox:hover ~ .oddBox {
+  transform: translateX(-200px) scale(.5) rotate(1080deg);
+  transition-duration: 10s;
+}
+
+/*each box is a seperate color*/
+#box1 {
+  background-color: red;
+}
+#box2 {
+  background-color: blue;
+}
+#box3 {
+  background-color: green;
+}
+#box4 {
+  background-color: purple;
+}
+#box5 {
+  background-color: brown;
+}
+#box6 {
+  background-color: yellow;
+}
+#box7 {
+  background-color: orange;
+}
+#box8 {
+  background-color: gray;
+}
+#box9 {
+  background-color: violet;
+}
+#box10 {
+  background-color: green;
+}
+#box11 {
+  background-color: blue;
+}
+#box12 {
+  background-color: red;
+}
