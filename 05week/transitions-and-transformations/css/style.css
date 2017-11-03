@@ -12,18 +12,20 @@
 }
 
 .container :nth-child(even) {
-  transition: 3s;
+  transition: all 4s ease-in-out;
 }
 
 .container :nth-child(odd) {
-  transition: 1s;
+  transition: all 1.5s ease-in-out;
 }
 
 .container:hover :nth-child(even) {
-  transform: scale(2) translateX(200px)  rotate(1080deg);
+  transform-origin: left top;
+  transform: scale(2) translateX(200px)  rotate(2160deg);
 }
 
 .container:hover :nth-child(odd) {
+  transform-origin: right top;
   transform: scale(.5) translateX(-850px)  rotate(-1080deg);
 }
 
