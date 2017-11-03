@@ -1,0 +1,26 @@
+.container > div{
+  height: 100px;
+  width: 100px;
+  background-color: orange;
+  margin: 10px;
+}
+
+.container{
+  width: 10%;
+  margin: 0 auto;
+}
+
+.container:hover :nth-child(even){
+  background-color: red;
+  /*transform: scale(2);*/
+  transform: translate(-600px) scale(2) rotate(-180deg);
+  transition: all 3s ease-in-out;
+}
+.container:hover :nth-child(odd){
+   /*transform: scale(.5);*/
+   /*transform: translateX(600px);
+   transform: rotate(1080deg);*/
+   transform: translateX(600px) scale(.5) rotate(180deg);
+   /*transform: rotate(180deg) translateX(600px);*/
+   transition: all 3s ease-in-out;
+}
