@@ -14,6 +14,7 @@ body {
 .container > div {
   width: 50px;
   height: 50px;
+  transition: 3s;
 }
 
 /*1 & 7 Violet*/
@@ -64,14 +65,20 @@ body {
   background-color: #FF0000;
 }
 
-.container div:hover:nth-child(odd) {
-  transform: scale(2) rotate(1080deg);
-  margin-left: 500px;
-  transition: 5s;
+.bigger{
+  transition: : all 1s ease;
+}
+.smaller{
+  transition: : all 1s ease;
 }
 
-.container div:hover:nth-child(even) {
-  transform: scale(.5) rotate(-1080deg);
-  margin-left: -500px;
+
+.container:hover > .box:nth-child(odd) {
+  transform: scale(2) translate(100px) rotate(720deg);
+  transition: 4s;
+}
+
+.container:hover > .box:nth-child(even) {
+  transform: scale(.5) translate(-100px) rotate(-720deg);
   transition: 2s;
 }
