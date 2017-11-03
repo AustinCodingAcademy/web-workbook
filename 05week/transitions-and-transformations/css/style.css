@@ -1,0 +1,77 @@
+/*CSS*/
+/*style.css*/
+/*stylesheet for transitions-and-transformations*/
+
+body {
+  margin-top: 100px;
+}
+
+.container {
+  width: 50px;
+  margin: auto;
+}
+
+.container > div {
+  width: 50px;
+  height: 50px;
+}
+
+/*1 & 7 Violet*/
+.container div:nth-child(1) {
+  background-color: #9400D3;
+}
+.container div:nth-child(7) {
+  background-color: #9400D3;
+}
+
+/*2 & 8 Blue*/
+.container div:nth-child(2) {
+  background-color: #0000FF;
+}
+.container div:nth-child(8) {
+  background-color: #0000FF;
+}
+
+/*3 & 9 Green*/
+.container div:nth-child(3) {
+  background-color: #00FF00;
+}
+.container div:nth-child(9) {
+  background-color: #00FF00;
+}
+
+/* 4 & 10 Yellow*/
+.container div:nth-child(4) {
+  background-color: #FFFF00;
+}
+.container div:nth-child(10) {
+  background-color: #FFFF00;
+}
+
+/*5 & 11 Orange*/
+.container div:nth-child(5) {
+  background-color: #FF7F00;
+}
+.container div:nth-child(11) {
+  background-color: #FF7F00;
+}
+
+/* 6 & 12 Red*/
+.container div:nth-child(6) {
+  background-color: #FF0000;
+}
+.container div:nth-child(12) {
+  background-color: #FF0000;
+}
+
+.container div:hover:nth-child(odd) {
+  transform: scale(2) rotate(1080deg);
+  margin-left: 500px;
+  transition: 5s;
+}
+
+.container div:hover:nth-child(even) {
+  transform: scale(.5) rotate(-1080deg);
+  margin-left: -500px;
+  transition: 2s;
+}
