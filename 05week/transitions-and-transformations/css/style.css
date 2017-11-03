@@ -1,0 +1,70 @@
+.box{
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 5px;
+  /*transition-timing-function: ease-out;*/
+
+}
+.container > div:nth-child(odd){
+  transition: all 2s ease-out;
+}
+.container > div:nth-child(even){
+  transition: all 1s ease-out;
+}
+
+
+.container{
+  width: 10%;
+  margin: auto;
+  transform-origin: center;
+}
+
+
+.container > div:nth-child(1){
+  background-color: orange;
+}
+.container > div:nth-child(2){
+  background-color: blue;
+}
+.container > div:nth-child(3){
+  background-color: green;
+}
+.container > div:nth-child(4){
+  background-color: yellow;
+}
+.container > div:nth-child(5){
+  background-color: purple;
+
+}
+.container > div:nth-child(6){
+  background-color: black;
+}
+.container > div:nth-child(7){
+  background-color: gray;
+}
+.container > div:nth-child(8){
+  background-color: pink;
+}
+.container > div:nth-child(9){
+  background-color: #990000;
+}
+.container > div:nth-child(10){
+  background-color: #00ff00;
+}
+.container > div:nth-child(11){
+  background-color: #006699;
+}
+.container > div:nth-child(12){
+  background-color: #996633;
+}
+.container:hover :nth-child(odd){
+  transform:scale(2)translate(200px) rotate(750deg);
+
+
+
+}
+.container:hover :nth-child(even){
+  transform: scale(.5)translate(-200px)rotate(-750deg);
+
+}
