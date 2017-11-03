@@ -1,0 +1,57 @@
+.container {
+  width: 150px;
+  margin: 0 auto;
+}
+.container > div {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  margin: 8px;
+}
+
+.container :nth-child(1) {
+  background-color: red;
+}
+.container :nth-child(2) {
+  background-color: orange;
+}
+.container :nth-child(3) {
+  background-color: yellow;
+}
+.container :nth-child(4) {
+  background-color: blue ;
+}
+.container :nth-child(5) {
+  background-color: green;
+}
+.container :nth-child(6) {
+  background-color: violet;
+}
+.container :nth-child(7) {
+  background-color: indigo;
+}
+.container :nth-child(8) {
+  background-color: cyan;
+}
+.container :nth-child(9) {
+  background-color: lightgrey;
+}
+.container :nth-child(10) {
+  background-color: grey;
+}
+.container :nth-child(11) {
+  background-color: black;
+}
+.container :nth-child(12) {
+  background-color: brown;
+}
+
+.container:hover :nth-child(even) {
+  transition: all 2s ease-in-out;
+  transform: scale(2) translate(200px) rotate(1080deg) ;
+}
+.container:hover :nth-child(odd) {
+  transition: all 2s ease-in-out;
+  transform: scale(.5) translate(-200px) rotate(-1080deg);
+
+}
