@@ -11,39 +11,41 @@
 }
 
 .container :nth-of-type(even){
-  transition: transform 1s ease;
+  transition: transform 2s ease;
 }
 
 .container :nth-of-type(odd){
-  transition: transform 500ms ease;
+  transition: transform 800ms ease;
+  transform-origin: bottom right;
+  transform-style: preserve-3d;
 }
 
 .container:hover .g1:nth-of-type(even)  {
   background: lightblue;
-  transform: scale(2) translateX(100%) perspective(500px) rotate(360deg);
+  transform: scale(2) translateX(300px) rotate(2160deg);
 }
 
 .container:hover .g2:nth-of-type(even){
   background: lightgreen;
-  transform: scale(2) translateX(100%) rotate(360deg);
+  transform: scale(2) translateX(300px) rotate(2160deg);
 }
 
 .container:hover .g3:nth-of-type(even){
   background: red;
-  transform: scale(2) translateX(100%) rotate(360deg);
+  transform: scale(2) translateX(300px) rotate(2160deg);
 }
 
 .container:hover .g1:nth-of-type(Odd)  {
   background: yellow;
-  transform: scale(.5) translatex(-100%) rotate(-360deg);
+  transform: scale(.5) translatex(-800px) rotate(-1080deg);
 }
 
 .container:hover .g2:nth-of-type(odd){
   background: purple;
-  transform: scale(.5) translatex(-100%) rotate(-360deg);
+  transform: scale(.5) translatex(-800px) rotate(-1080deg);
 }
 
 .container:hover .g3:nth-of-type(odd){
   background: blue;
-  transform: scale(.5) translatex(-100%) rotate(-360deg);
+  transform: scale(.5) translatex(-800px) rotate(-1080deg);
 }
