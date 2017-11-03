@@ -1,0 +1,22 @@
+.container {
+  width: 100px;
+  margin: 0 auto;
+  background-color: #f9ecec;
+  padding: 5px 0;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  margin: 50px auto;
+}
+
+.container:hover :nth-child(even) {
+  transform: scale(2) translateX(300px) rotate(90deg);
+  transition: all 3.5s;
+}
+
+.container:hover :nth-child(odd) {
+  transform: scale(.5) translate(-1000px) rotate(-90deg);
+  transition: all 1.8s ease-out;
+}
