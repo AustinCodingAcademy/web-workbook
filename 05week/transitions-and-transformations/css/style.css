@@ -10,15 +10,20 @@
   border-radius: 3px;
 }
 
+.container > div:nth-child(even) {
+  transition: all 3s;
+}
+
+.container > div:nth-child(odd) {
+  transition: all 2s;
+}
 
 .container:hover :nth-child(even) {
   transform: scale(2) translate(150px) rotate(360deg);
-  transition: all 3s;
 }
 
 .container:hover :nth-child(odd) {
   transform: scale(0.5) translate(-300px) rotate(-360deg);
-  transition: all 2s;
 }
 
 .container:hover :nth-child()
