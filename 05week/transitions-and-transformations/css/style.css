@@ -11,18 +11,18 @@
 }
 
 .container :nth-of-type(even){
-  transition: transform 2s ease;
+  transition: all 2s ease;
 }
 
 .container :nth-of-type(odd){
-  transition: transform 800ms ease;
+  transition: all 800ms ease;
   transform-origin: bottom right;
   transform-style: preserve-3d;
 }
 
 .container:hover .g1:nth-of-type(even)  {
-  background: lightblue;
   transform: scale(2) translateX(300px) rotate(2160deg);
+  background: lightblue;
 }
 
 .container:hover .g2:nth-of-type(even){
