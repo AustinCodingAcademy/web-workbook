@@ -1,14 +1,13 @@
 body{
-  padding: 30px;
-  height: 800px;
   margin: 0;
   font-family: tahoma;
 }
 main{
   float: left;
   width: 75%;
-  padding-right: 30px;
+  padding: 30px;
   font-size: 18px;
+  height: 525px;
 }
 img{
   width: 100%;
@@ -21,7 +20,7 @@ aside{
   font-weight: bold;
   font-size: 12px;
   display: flex;
-  padding: 0px 10px 10px 10px;
+  padding:30px;
 }
 #aside-Title{
   font-size: 20px;
@@ -30,4 +29,56 @@ aside{
 }
 .topStories{
   border-top: 1px solid black;
+}
+footer{
+  color:white;
+  padding: 3%;
+  height: 300px;
+  width: 100%;
+  background-color: gray;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-article{
+  margin: 10px;
+  padding: 3%;
+  width: 200px;
+  height: 250px;
+  border: 1px solid yellow;
+
+}
+.footer-header{
+  font-size: 18px;
+}
+.footer-underline{
+  border-bottom: 1px solid white;
+}
+
+/****************Media Queries**************/
+@media screen and (min-width:760px){
+  footer{
+    display: none;
+  }
+}
+/*For viewing on a tablet device*/
+@media screen and (max-width:760px) {
+aside{
+  display: none;
+  }
+  footer{
+    display: none;
+  }
+main{
+  width: 100%;
+  padding: 20px;
+  }
+}
+
+/*For viewing on a mobile device*/
+@media screen and (max-width:600px) {
+  footer{
+    display: flex;
+  }
+
 }
