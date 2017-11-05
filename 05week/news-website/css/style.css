@@ -5,7 +5,14 @@
 }
 
 body {
+  padding-top: 140px;
   background-color: green;
+}
+
+nav {
+  background-color: green;
+  text-align: center;
+  padding-top: 10px;
 }
 
 h1 {
@@ -15,45 +22,30 @@ h1 {
 }
 
 h2, h5 {
+  box-sizing: border-box;
   font-weight: bold;
   padding-left: 15px;
   padding-top: 15px;
+  margin: 0;
 }
 
 p {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 15px;
-}
-
-header {
-  background-color: green;
-  text-align: center;
-  padding-top: 10px;
+  margin: 0px;
 }
 
 p.readlink {
   padding: 0px;
   text-align: center;
   line-height: 5px;
+  padding-bottom: 20px;
   color: rgba(255, 255, 255, 0.5)
 }
 
-/*div.c1 {
-  padding-top: 20px;
-  padding-bottom: 10px;
-}*/
-
-.row {
-  padding-bottom: 20px;
-}
-
-.wrapper {
-  background-color: green;
-  box-sizing: border-box;
-}
-
 img {
+  box-sizing: border-box;
   max-width: 100%;
   max-height: 100%;
 }
@@ -61,30 +53,72 @@ img {
 .box {
   box-sizing: border-box;
   padding: 0px;
+  margin-bottom: 25px;
   background-color: white;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
   transition: all .20s ease-in-out;
 }
 
 .box:hover {
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
   transform: scale(1.01);
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.8);
   color: lightgrey;
   text-shadow: 1px 1px 0px black;
 }
 
-/*.lgbox {
-  min-height: 625px;
-  max-height: 625px;
+
+/*
+<----------------------------------------->
+below is an experiment to make the div heights equal, but resposive. It worked but it messed up the drop shadow.
+
+#columnwrap {
+  overflow: hidden;
+  margin-bottom: 30px;
 }
 
-.mdbox {min-height: 300px;
-max-height: 300px;}
+.box {
+  margin-bottom: -50px;
+  padding-bottom: 50px;
+}
+<------------------------------------------>*/
+
+/*<----------------------------------------->
+below is a non-responsive way of setting div heights directly. It does "work" but it's not responsive and when the screen sizing chages, the divs visably grow. How to I sovle this?? FIXME*/
+
+/*.lgbox {
+  height: 600px;
+}
+
+.mdbox {
+  height: 300px;
+}
 
 .smbox {
-  min-height: 350px;
-  max-height: 350px;
+  height: 300px;
+}
+
+
+@media only screen and (min-width: 992px)and (max-width: 1199px){
+  .lgbox {
+    height: 470px;
+  }
+  .mdbox {
+    height: 150px;
+  }
+  .smbox {
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 991px) {
+  .box {
+    height: auto;
+  }
 }*/
+
+/*<----------------------------------------->*/
 
 /***********DEBUG AREA VVVVV***********/
 
@@ -98,7 +132,7 @@ max-height: 300px;}
 
 .c2 {
   background-color: brown;
-}*/
+}
 
 /*.bg {
   box-sizing: border-box;
