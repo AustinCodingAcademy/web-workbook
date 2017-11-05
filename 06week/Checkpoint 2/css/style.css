@@ -1,0 +1,164 @@
+body {
+  background-image: url(bliss.jpg);
+  background-color: #006600;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 1600px;
+  height: 2000px;
+  margin: auto;
+  background-color: #006600;
+  border: white solid 2px;
+  padding: 10px;
+}
+
+header {
+ height: 200px;
+ width: 1420px;
+ float: none;
+}
+
+.menu {
+  height: 148px;
+  width: 500px;
+}
+
+h3 {
+  font-size: 300%;
+  width: 600px;
+  font-family: 'Libre Baskerville', serif;
+  color: white;
+  padding-top: 0;
+}
+
+li {
+  font-family: 'Libre Baskerville', serif;
+  color: white;
+  width: 500px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+li:hover {
+  background-color: #00cc00;
+  width: 150px;
+}
+
+a {
+  width: 500px;
+  height: 250px;
+}
+
+a:hover {
+  color: yellow;
+}
+
+h1 {
+  color: white;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 500%;
+  text-align: center;
+  text-shadow: 1px 1px;
+  height: 80px;
+  padding-bottom: 10px;
+  float: right;
+}
+
+.boxy {
+  padding: 10px;
+  width: 1420px;
+  height: 1600px;
+}
+
+.picture {
+  width: 1480px;
+  height:1180px;
+}
+
+#image {
+   position: relative;
+   font-size: 50px;
+   text-align: center;
+   width: 1580px;
+   height: 1000px;
+}
+
+h2 {
+  color: orange;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 280%;
+  height: 1180px;
+  float: none;
+  position: absolute;
+  top: 400px;
+  left: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+h2:hover {
+  transform: translateY(300px);
+  transition: 3s;
+}
+
+section {
+  width:  100%;
+  margin: auto;
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+}
+
+article {
+  color: white;
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+.bio {
+  height: 500px;
+  width: 400px;
+  font-size: 15px;
+  padding-left: 150px;
+}
+
+p {
+  color: white;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 100%;
+  letter-spacing: 2px;
+}
+
+footer {
+  width: 1600px;
+  height: 250px;
+  padding-bottom: 0;
+}
+
+#fb {
+  height: 100px;
+  width: 200px;
+}
+
+#tweet {
+  height: 90px;
+  width: 70px;
+  padding-bottom: 20px;
+  margin: auto;
+}
+
+#tumblr {
+  height:75px;
+  width: 200px;
+}
+
+/*Use a media query to add a breakpoint at 800px:*/
+@media (max-width:800px) {
+  .left, .main, .right, section {
+    width:100%; /*The width is 100%, when the viewport is 800px or smaller*/
+  }
+}
