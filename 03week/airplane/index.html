@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>UX Atlantic</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- remove margins; set to 0 -->
+    <header>
+      <!-- set background color of header box -->
+      <!-- place logo in top-right corner -->
+      <img src="./img/logo.png" alt="">
+
+      <!-- build menu -->
+        <menu>
+          <a href="https://www.southwest.com/" target="_blank"> <img src="./img/home-icon.png" alt="Home"> Home
+          </a>
+          <a href="http://travel.southwest.com/specialoffers/vacationOffers.html?clk=GSUBNAV-OFFERS-VACATIONS" target="_blank">
+          <img src="./img/deal-icon.png" alt="Travel"> Travel
+          </a>
+          <a href="https://www.southwest.com/air/flight-schedules/index.html" target="_blank">
+            <img src="./img/schedule-icon.png" alt="Flight Schedules"> Flight Schedules
+          </a>
+          <a href="https://www.southwest.com/flight/login" target="_blank">
+          <img src="./img/login-icon.png" alt="Register/Login"> Register/Login
+          </a>
+        </menu>
+
+    </header>
+    <main>
+      <!--Set up box model for booking. Build booking box - start with top 3 icons -->
+
+<div class="bookingbox">
+  <div class="bb-icon-box">
+    <div class="tagImage">
+      <img src="./img/plane-icon.png" alt="Book airfare">
+    </div>
+  </div>
+  <div class="bb-icon-box">
+    <div class="tagImage">
+      <img src="./img/hotel-icon.png" alt="Book hotel stay">
+    </div>
+  </div>
+  <div class="bb-icon-box">
+    <div class="tagImage">
+      <img src="./img/car-icon.png" alt="Reserve a rental car">
+    </div>
+  </div>
+
+  <!-- build out depart and arrive city destinations-->
+<form>
+    <input type="text" name="depart-field" placeholder="Depart">
+</form>
+<form>
+    <input type="text" name="arrive-field" placeholder="Arrive">
+</form>
+  <!-- build out calendar dates boxes -->
+  <form>
+    <input type="Date" name="mm/dd/yyyy">
+  </form>
+  <form>
+    <input type="Date" name="mm/dd/yyyy">
+  </form>
+  <!-- build out passenger drop-down box -->
+<div id="Passengers">
+  Passengers
+</div>
+<form>
+    <input type="number" name="quantity" min="1" max="15">
+</form>
+  <!-- build out radio button 1-way or roundtrip -->
+  <form>
+  <input type="radio" name="Trip Type" value="Return" checked> Return
+  <input type="radio" name="Trip Type" value="One-way" checked> One-way
+ </form>
+  <!-- build out search flights button -->
+
+
+</div>
+
+    </main>
+  </body>
+</html>
