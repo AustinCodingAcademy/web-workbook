@@ -1,8 +1,28 @@
-/*.boxy {
-  border: 1px magenta solid;
-}*/
 
 /* The sidenav */
+
+@keyframes scaleH1 {
+  0% {
+    transform: scale(4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes translateH1 {
+  0% {
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    width: 100%;
+  }
+}
 
 a {
   text-decoration: none;
@@ -13,11 +33,11 @@ a:hover {
 }
 
 #sideNav {
+  animation: 4s ease-in 0s 1 slideInFromLeft;
   font-family: 'Oswald', sans-serif;
+  color: black;
   height: 100%;
   width: 20%;
-  max-width: 250px;
-  position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
@@ -29,6 +49,8 @@ a:hover {
 }
 
 #sideNav h1 {
+  animation: 4s ease-in 0s 1 scaleH1;
+  animation: 4s ease-in 0s 1 translateH1;
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
   line-height: 36px;
@@ -38,8 +60,6 @@ a:hover {
 }
 
 #sideNav a {
-  font-family: 'Oswald', sans-serif;
-  color: black;
   font-size: 20px;
   font-weight: 10;
   line-height: 24px;
@@ -55,7 +75,6 @@ a:hover {
 }
 
 #sideNav a:hover {
-  color: red;
   font-size: 22px;
 }
 
