@@ -36,7 +36,8 @@ header {
 /*font styling of Taylor Bentley*/
 h1 {
 	color: black;
-	font-size: 50px;
+	font-size: 70px;
+  font-family: "Cabin Sketch", cursive;
   float: right;
 }
 /*includes img and article*/
@@ -51,7 +52,7 @@ h1 {
   border-top: .5px solid black;
 }
 /*flexbox on main content*/
-#slider, .navbar {
+#slider {
   display: flex;
 	align-content: flex-start;
 	align-items: flex-start;
@@ -74,7 +75,45 @@ article {
 	border: 1px solid black;
 	flex: 1.3 auto;
 	margin-right: 1.2px;
-	height: 40px;
+	height: 80px;
 	padding: 1px;
 	text-align: center;
+  font-family: "Shadows Into Light Two";
+  color: black;
+  font-size: 20px;
+}
+/*larger font for Explore and links change color*/
+.dropdown {
+  font-size: 25px;
+  font-weight: bolder;
+}
+/*link sizing*/
+a {
+  font-size: 20px;
+  font-weight: normal;
+}
+/*clicked links turn black*/
+a:visited {
+  color: black;
+}
+/*media query between 600-800px wide allows slider content to change from row to column*/
+@media screen and (max-width: 800px) and (min-width:600px){
+  #slider{
+    display: flex;
+    flex-flow: column wrap;
+  }
+  img {
+    width:100%;
+  }
+}
+/*media query between 400-600px wide changes the size of the h1 & slider content changes from row to column*/
+@media screen and (max-width: 600px) and (min-width:400px){
+  h1 {
+    font-size: 45px;
+    font-family: "Cabin Sketch", cursive;
+  }
+  #slider{
+    display: flex;
+    flex-flow: column wrap;
+  }
 }
