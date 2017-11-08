@@ -24,24 +24,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
      li.removeChild(li);
    }
 
-function addItem(){
-  var newitem = prompt('Enter new item');
-  newitem = '<li>' + newitem + '</li>';
-  var list = document.getElementById('list');
-  var listItem = list.lastElementChild;
-  list.insertAdjacentHTML('afterend', newitem)
-
-  subtitle();
-}
-  function subtitle(){
-    var listOfitems = document.getElementsByTagName()
-    var subtitle = '<h2>You have' + listOFItems.length + 'items in your shopping cart</h2>';
-    var d1 = document.getElementById('title');
-    var subtitlePresent = document.getElementById('subtitle')
-    if(subtitlePresent==""){
-    d1.insertAdjacentHTML('afterend', subtitle);
-    }
-    else{
-    subtitlePresent.innerHTML = subtitle;
-    }
-  }
+// function addItem(){
+//   var newitem = prompt('Enter new item');
+//   newitem = '<li>' + newitem + '</li>';
+//   var list = document.getElementById('list');
+//   var listItem = list.lastElementChild;
+//   list.insertAdjacentHTML('afterend', newitem)
+//
+//   subtitle();
+// }
+//   function subtitle(){
+//     var listOfitems = document.getElementsByTagName()
+//     var subtitle = '<h2>You have' + listOFItems.length + 'items in your shopping cart</h2>';
+//     var d1 = document.getElementById('title');
+//     var subtitlePresent = document.getElementById('subtitle')
+//     if(subtitlePresent==""){
+//     d1.insertAdjacentHTML('afterend', subtitle);
+//     }
+//     else{
+//     subtitlePresent.innerHTML = subtitle;
+//     }
+//   }
