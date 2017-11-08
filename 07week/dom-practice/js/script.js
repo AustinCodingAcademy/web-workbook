@@ -34,7 +34,3 @@ function removeItem(){
 
 
 }
-function addThis() {
-  console.log('hello');
-
-}
