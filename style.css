@@ -2,7 +2,37 @@
 
 body {
   background-color: goldenrod;
-  font-family: Monda;
-  padding-left: 18px;
+  /*font-family: 'Monda';*/
+  padding-top: 30px;
 }
-h1 {text-align: center;}
+
+.top {
+  padding-top: 10px;
+  background-color: goldenrod;
+}
+
+h1 {
+  text-align: center;
+}
+
+.box {
+  background-color: lightgreen;
+  height: auto;
+}
+
+/*Chooses any div starting with "col" to cover all the different sizes*/
+
+[class^="col"] {
+  background-color: lightgrey;
+  border: 12px solid goldenrod;
+}
+
+/*.row {
+  display: flex;
+  flex-wrap: wrap;
+}*/
+
+/*.row.display-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}*/
