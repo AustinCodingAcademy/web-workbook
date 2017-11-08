@@ -1,18 +1,80 @@
+/* main spacing and stylizing on body of webpage*/
 body {
+	box-sizing: border-box;
+	font-size: 15px;
+	font-weight: inherit;
+	margin: 0px;
+	padding: 0px;
+	vertical-align: baseline;
   background-color: black;
+  font-family: Verdana, Arial, sans-serif;
   color: white;
   display: flex;
-  height: 1000px;
+  height: 100%;
   flex-direction: column;
-  margin: 0;
+  margin: 0px;
 }
+/* all the content is in this container*/
+#container {
+	display: flex;
+	flex-flow: row wrap;
+	height: 100%;
+	margin: 0px auto;
+	width: 75%;
+}
+/*styling for header*/
 header {
-  background: turquoise;
+  background: #008B94;
   height: 100px;
+  margin-bottom: 1.2px;
+	height: 130px;
+	padding: .75px 1.4px;
+	text-align: left;
+  border: 1px solid black;
+	flex: 1 100%;
 }
-header, article, nav {
-  padding: 1em;
+/*font styling of Taylor Bentley*/
+h1 {
+	color: black;
+	font-size: 50px;
+  float: right;
 }
+/*includes img and article*/
+#slider {
+  border: 1.5px solid black;
+  background-color: white;
+  color: black;
+}
+/*photo headshot*/
 .mich {
   max-width:100%;
+  border-top: .5px solid black;
+}
+/*flexbox on main content*/
+#slider, .navbar {
+  display: flex;
+	align-content: flex-start;
+	align-items: flex-start;
+	flex-flow: row nowrap;
+	flex: 1 auto;
+	justify-content: space-between;
+}
+/*spacing the content*/
+article, .navbar {
+  padding: 1px;
+}
+/*stylizing the font for main text*/
+article {
+  font-family: "Shadows Into Light Two";
+  font-size: 20px;
+}
+/*navigational links*/
+.navbar {
+	background-color: #FFDE0D;
+	border: 1px solid black;
+	flex: 1.3 auto;
+	margin-right: 1.2px;
+	height: 40px;
+	padding: 1px;
+	text-align: center;
 }
