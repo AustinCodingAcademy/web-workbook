@@ -1,26 +1,37 @@
-
 /* The sidenav */
 
-@keyframes scaleH1 {
+@keyframes slideInFromLeft {
   0% {
-    transform: scale(4);
+    width: 100%;
   }
-  100% {
-    transform: scale(1);
+
+  50% {
+    width: 100%;
+  }
+
+  80% {
+    width: 20%;
   }
 }
 
 @keyframes translateH1 {
   0% {
-    transform: translateX(-50%);
+    margin-top: 20%;
+    margin-left: 50%;
     text-align: center;
+    transform: scale(4);
   }
 
-}
+  55% {
+    text-align: center;
+    transform: scale(4);
+  }
 
-@keyframes slideInFromLeft {
-  0% {
-    width: 100%;
+  80% {
+    margin-top: 75px;
+    margin-left: 0px;
+    /*text-align: right;*/
+    transform: scale(1);
   }
 }
 
@@ -33,7 +44,7 @@ a:hover {
 }
 
 #sideNav {
-  animation: 4s ease-in 0s 1 slideInFromLeft;
+  animation: 5s ease-in 0s 1 slideInFromLeft;
   font-family: 'Oswald', sans-serif;
   color: black;
   height: 100%;
@@ -49,7 +60,6 @@ a:hover {
 }
 
 #sideNav h1 {
-  animation: 4s ease-in 0s 1 scaleH1;
   animation: 4s ease-in 0s 1 translateH1;
   font-family: 'Oswald', sans-serif;
   font-weight: bold;
@@ -57,6 +67,10 @@ a:hover {
   margin-top: 75px;
   margin-right: 15px;
   font-size: 40px;
+}
+
+.leftMenu {
+  margin-top: 25px;
 }
 
 #sideNav a {
@@ -68,14 +82,14 @@ a:hover {
   transition-duration: 500ms;
 }
 
-#sideNav div {
-  margin-top: 100px;
-  margin-right: 15px;
-  font-size: 12px;
-}
-
 #sideNav a:hover {
   font-size: 22px;
+}
+
+.byLine {
+  margin-top: 80px;
+  margin-right: 15px;
+  font-size: 12px;
 }
 
 /* Page content */
