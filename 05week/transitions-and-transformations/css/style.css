@@ -1,57 +1,73 @@
 body{
     background-color: #E9E09F;
+    background-image: url("../img/stars.jpg");
+    background-size: cover;
 }
 
-.oddLilBox{
-  height: 50px;
-  width: 50px;
+.oddLilBox, .evenLilBox{
+  height: 100px;
+  width: 100px;
   border-radius: 10%;
   margin: 15px;
-  transition: all 5s, background-color 1s;
+  transition: all 2s ease-in;
 
 
 }
 
-.evenLilBox{
-  height: 50px;
-  width: 50px;
-  border-radius: 10%;
-  margin: 15px;
-  transition: all 2s, background-color 2s ;
-}
 
 main{
-    margin: auto;
-    width: 50px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+width: 100px;
+margin: auto;
 }
 
 main:hover > .oddLilBox{
-  transform: scale(2) translateX(200px) rotate(360deg);
-  background-color: #201303;
+  transform: translateX(500px) translateY(300px) rotate(720deg);
+  height: 2px;
+  width: 2px;
+  margin-bottom: 50px;
+  background-color: #F8FBFA;
+  border-radius: 50%;
+  border: hidden;
 
 }
 
 main:hover > .evenLilBox{
- transform: scale(0.5) translateX(-600px) rotate(-1080deg);
- background-color: #201303;
+  transform: translateX(-500px) translateY(300px) rotate(-720deg);
+  height: 2px;
+  width: 2px;
+  margin-bottom: 50px;
+  background-color: #F8FBFA;
+  border-radius: 50%;
+  border: hidden;
+
 }
 
+
 .redBox{
-  background-color: #E61E28;
+  border:7px solid #E61E28;
 }
 
 .orangeBox{
-  background-color: #F26530;
+  border:7px solid #F26530;
 }
 
+
 .greenBox{
-  background-color: #8DC641;
+  border: 7px solid #8DC641;
 }
 
 .blueBox{
-  background-color: #27BDB2;
+  border: 7px solid #27BDB2;
 }
 
 .purpleBox{
-  background-color: #882F45;
+  border: 7px solid #882F45;
+}
+
+.pinkBox{
+  border: 7px solid #F9107E;
 }
