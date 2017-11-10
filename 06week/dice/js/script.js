@@ -2,67 +2,63 @@ var dieChar = ["", "&#9856;", "&#9857;", "&#9858;", "&#9859;", "&#9860;", "&#986
 
 function roll() {
   document.getElementById("dice").innerHTML = "";
-  for (a=0; a<5; a++) {
-    var roll = Math.floor(Math.random()*6)+1;
-    document.getElementById("dice").innerHTML += "<span  class='die' data-roll='"+roll+"'>"+dieChar[roll]+"</span>";
+  for (a = 0; a < 5; a++) {
+    var roll = Math.floor(Math.random() * 6) + 1;
+    document.getElementById("dice").innerHTML += "<span  class='die' data-roll='" + roll + "'>" + dieChar[roll] + "</span>";
   }
   report();
 }
 
 roll();
 
-//////////////////////////////////////////////////////
-// Add code here that uses loops and conditional statements
-// to determine if any of the following cases are true:
-//
 function report() {
   document.getElementById("report").innerHTML = ""; // clear out the report box
   let diceHtml = document.getElementsByClassName('die'); // this puts all the individual die HTML elements in diceHtml
   let pairCounter = 0; // we're counting how many pairs occur
   let houseCounter = 0; // this will determine whether a three-of-a-kind occurs, as one is necessary for a full house
 
-  for (var dieVal = 1; dieVal < 7; dieVal++) {  // we set up a nested loop, first we check for all the 1s, then 2s, etc
+  for (var dieVal = 1; dieVal < 7; dieVal++) { // we set up a nested loop, first we check for all the 1s, then 2s, etc
     let howManyDice = 0; // we zero out our counter
-    for (var die = 0; die < 5; die++) {  // we create the inner loop that cycles through the rolled dice
-      if (dieVal == diceHtml[die].dataset.roll) {  // we check if the rolled die is equal to the one's we're counting
+    for (var die = 0; die < 5; die++) { // we create the inner loop that cycles through the rolled dice
+      if (dieVal == diceHtml[die].dataset.roll) { // we check if the rolled die is equal to the one's we're counting
         howManyDice++; // if so, we add one to the count
       }
     }
-    if (howManyDice===2) { // we check after the counting is done if it is equal to '2'
-      document.getElementById("report").innerHTML += "There are a pair of "+dieVal+"s<br>";  // if yes, we report a pair
+    if (howManyDice === 2) { // we check after the counting is done if it is equal to '2'
+      document.getElementById("report").innerHTML += "There are a pair of " + dieVal + "s<br>"; // if yes, we report a pair
       pairCounter++; // we're tracking how many pairs there are as they occur
     }
-    if (howManyDice===3) {
-        document.getElementById("report").innerHTML += "There are three "+dieVal+"s<br>";
+    if (howManyDice === 3) {
+      document.getElementById("report").innerHTML += "There are three " + dieVal + "s<br>";
       houseCounter++;
-        }
-    if (howManyDice===4) {
-        document.getElementById("report").innerHTML += "There are four "+dieVal+"s<br>";
-        }
-    if (howManyDice===5) {
-        document.getElementById("report").innerHTML += "There are five "+dieVal+"s!<br>";
-        }
     }
-  if (pairCounter===2) {
-        document.getElementById("report").innerHTML += "There are two pairs<br>";
+    if (howManyDice === 4) {
+      document.getElementById("report").innerHTML += "There are four " + dieVal + "s<br>";
+    }
+    if (howManyDice === 5) {
+      document.getElementById("report").innerHTML += "There are five " + dieVal + "s!<br>";
+    }
   }
-  if (pairCounter===1 && houseCounter===1) {
-        document.getElementById("report").innerHTML += "There is a full house!<br>";
+  if (pairCounter === 2) {
+    document.getElementById("report").innerHTML += "There are two pairs<br>";
+  }
+  if (pairCounter === 1 && houseCounter === 1) {
+    document.getElementById("report").innerHTML += "There is a full house!<br>";
   }
 
-let differentCounter = 0; // we'll check here to see whether or not all the dice have different values
-if (diceHtml[0].dataset.roll != diceHtml[1].dataset.roll && diceHtml[0].dataset.roll != diceHtml[2].dataset.roll && diceHtml[0].dataset.roll != diceHtml[3].dataset.roll && diceHtml[0].dataset.roll != diceHtml[4].dataset.roll && diceHtml[1].dataset.roll != diceHtml[2].dataset.roll && diceHtml[1].dataset.roll != diceHtml[3].dataset.roll && diceHtml[1].dataset.roll != diceHtml[4].dataset.roll && diceHtml[2].dataset.roll != diceHtml[3].dataset.roll && diceHtml[2].dataset.roll != diceHtml[4].dataset.roll && diceHtml[4].dataset.roll != diceHtml[3].dataset.roll) {
-  differentCounter++;
-}
+  let differentCounter = 0; // we'll check here to see whether or not all the dice have different values
+  if (diceHtml[0].dataset.roll != diceHtml[1].dataset.roll && diceHtml[0].dataset.roll != diceHtml[2].dataset.roll && diceHtml[0].dataset.roll != diceHtml[3].dataset.roll && diceHtml[0].dataset.roll != diceHtml[4].dataset.roll && diceHtml[1].dataset.roll != diceHtml[2].dataset.roll && diceHtml[1].dataset.roll != diceHtml[3].dataset.roll && diceHtml[1].dataset.roll != diceHtml[4].dataset.roll && diceHtml[2].dataset.roll != diceHtml[3].dataset.roll && diceHtml[2].dataset.roll != diceHtml[4].dataset.roll && diceHtml[4].dataset.roll != diceHtml[3].dataset.roll) {
+    differentCounter++;
+  }
 
-// now if the dice have different values, this will check to see if they're consecutive
+  // now if the dice have different values, this will check to see if they're consecutive
   if (differentCounter === 1 && diceHtml[0].dataset.roll != 6 && diceHtml[1].dataset.roll != 6 && diceHtml[2].dataset.roll != 6 && diceHtml[3].dataset.roll != 6 && diceHtml[4].dataset.roll != 6) {
     document.getElementById("report").innerHTML += "Small straight!<br>"
   } else if (differentCounter === 1 && diceHtml[0].dataset.roll != 1 && diceHtml[1].dataset.roll != 1 && diceHtml[2].dataset.roll != 1 && diceHtml[3].dataset.roll != 1 && diceHtml[4].dataset.roll != 1) {
     document.getElementById("report").innerHTML += "Big straight!<br>"
   } else if (differentCounter === 1) {
-        document.getElementById("report").innerHTML += "That's unlucky<br>"
-      }
+    document.getElementById("report").innerHTML += "That's unlucky<br>"
+  }
 
 }
 
