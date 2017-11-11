@@ -10,22 +10,25 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="fluid_container">
+    <div class="container-fluid">
       <header>
       <!-- This is the header content -->
-        <div class="col-12"
+        <div class="col-xs-12"
         style="padding-left: 30px; padding-right: 30px;">
             <span>AGATA DROZDOWSKA</span>
-            <ul>
-              <li><a href="#">PORTFOLIO</a></li>
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">CONTACT</a></li>
-            </ul>
+            <nav>
+            <!-- navigation of the webpage -->
+              <ul>
+                <li id="firstLink"><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#aboutMe">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+              </ul>
+          </nav>
         </div>
       </header>
       <main>
         <!-- This is the main content -->
-        <section class="col-12" id="first">
+        <section class="col-xs-12" id="first">
           <img src="img/image_resume.jpg" alt="">
           <div id="line">
             <hr>
@@ -43,13 +46,13 @@
             <hr>
           </div>
           <div class="row images">
-            <div class="col-xs-12 col-md-4">
+            <div class="col-sm-12 col-md-4">
               <a href="#"><img src="http://via.placeholder.com/350x300" alt=""></a>
             </div>
-            <div class="col-xs-12 col-md-4">
+            <div class="col-sm-12 col-md-4">
               <a href="#"><img src="http://via.placeholder.com/350x300" alt=""></a>
             </div>
-            <div class="col-xs-12 col-md-4">
+            <div class="col-sm-12 col-md-4">
               <a href="#"><img src="http://via.placeholder.com/350x300" alt=""></a>
             </div>
           </div>
@@ -62,28 +65,55 @@
             <hr>
           </div>
           <div class="row paragraph">
-            <div class="col-6">
+            <div class="col-sm-12 col-md-6">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="col-6">
+            <div class="col-sm-12 col-md-6">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div>
         </section>
-        <section>
+        <section class="col-xs-12" id="contact">
+          <!-- Contact form -->
           <h2>Contact me</h2>
           <div id="line">
             <hr>
             <p>&#9733;</p>
             <hr>
           </div>
+          <!-- TODO: add Java Script -->
           <form class="" action="index.html" method="post">
-
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email Address">
+            <input placeholder="Phone Number">
+            <textarea placeholder="Message" rows="5" cols="50"></textarea>
+            <button type="button" name="button">Send</button>
           </form>
         </section>
       </main>
       <footer>
         <!-- This is the footer content -->
+        <div  class="row">
+          <div class="col-6 info">
+            <span>Agata Drozdowska</span>
+            <div class="icon">
+              <img src="img/phone.png" alt="">
+              <span>(512)-971-2151</span>
+            </div>
+            <div class="icon">
+              <img src="img/email.png" alt="">
+              <span>agata.drozdowska@icloud.com</span>
+            </div>
+          </div>
+          <div class="col-6 follow">
+            <span>Follow me:</span>
+            <div id="social">
+              <a href="#"><img src="img/linkedin.png" alt=""></a>
+              <a href="#"><img src="img/facebook.png" alt=""></a>
+              <a href="#"><img src="img/skype.png" alt=""></a>
+            </div>
+          </div>
+      </div>
       </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
