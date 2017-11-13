@@ -1,0 +1,32 @@
+<!Doctype>
+<html>
+<head>
+
+  <title>its JQUERY TIME DAHLING</title>
+</head>
+<body>
+  <h1>Hello World!</h1>
+
+  <div id="functionResult">
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $('document').ready(function(){
+  myRecursiveFunction(1);
+
+      function myRecursiveFunction(time)
+      {
+        if(time<1000)
+        {
+          myRecursiveFunction(time+1)
+        }
+        else{
+          $'.functionResult'.html(<h2>Completed The Function</h2>)
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
