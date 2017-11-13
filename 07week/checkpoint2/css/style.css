@@ -16,6 +16,7 @@ span {
 
 ul {
   margin-bottom: 0;
+  padding-left: 0;
   display: flex;
   justify-content: center;
   list-style: none;
@@ -95,12 +96,12 @@ h2 {
 .images div {
   display: flex;
   justify-content: space-around;
-  flex: auto;
+  align-items: center;
 }
 
 .images img {
-  width: auto;
-  height: auto;
+  width: 300px;
+  height: 250px;
 }
 
 .paragraph div {
@@ -111,6 +112,7 @@ h2 {
 
 #aboutMe .row p {
   width: 80%;
+  text-align: justify;
 }
 
 form {
@@ -216,6 +218,18 @@ footer .row {
     flex: auto;
   }
 
+  h1, h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  .images img {
+    width: 220px;
+    height: 170px;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
 }
 
 /*Media queries for phones*/
@@ -232,13 +246,23 @@ footer .row {
     font-size: 0.7rem;
   }
 
+  p {
+    font-size: 0.7rem;
+  }
+
   #first img {
     height: 100px;
     width: 100px;
   }
 
   h1, h2, h3 {
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .images img {
+    padding-bottom: 4%;
+    width: 250px;
+    height: 200px;
   }
 
   form {
@@ -257,12 +281,12 @@ footer .row {
   }
 
   .info {
-    justify-content: flex-start;
+    align-items: center;
     margin-bottom: 10px;
   }
 
   .follow {
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
   }
 
