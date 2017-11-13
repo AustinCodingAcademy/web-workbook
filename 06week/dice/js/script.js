@@ -5,11 +5,18 @@ function roll() {
   for (a=0; a<5; a++) {
     var roll = Math.floor(Math.random()*6)+1;
     document.getElementById("dice").innerHTML += "<span  class='die' data-roll='"+roll+"'>"+dieChar[roll]+"</span>";
+
   }
+
+
+
   report();
+
+
 }
 
 roll();
+
 
 //////////////////////////////////////////////////////
 // Add code here that uses loops and conditional statements
@@ -25,11 +32,18 @@ function report() {
         howManyDice++; // if so, we add one to the count
       }
     }
+    var rollval = document.getElementsByClassName('die');
+    var die1 = rollval[0].dataset.roll;
+    var die2 = rollval[1].dataset.roll;
+    var die3 = rollval[2].dataset.roll;
+    var die4 = rollval[3].dataset.roll;
+    var die5 = rollval[4].dataset.roll;
 
+pair();
+
+
+function pair (){
     switch (howManyDice) {
-      case 2 && 3:
-        document.getElementById("report").innerHTML += "FullHouse!!!<br>";
-        break;
       case 2:
         document.getElementById("report").innerHTML += "There are a pair of "+dieVal+"s<br>";
         break;
@@ -48,6 +62,39 @@ function report() {
     //   document.getElementById("report").innerHTML += "There are a pair of "+dieVal+"s<br>";  // if yes, we report a pair
     // }
   }
+}
+
+straight();
+
+function straight(){
+  var x = [die1,die2,die3,die4,die5]
+  x.sort
+  // diceVal.push()
+  small();
+  large();
+      function small(){
+        var test = x.sort().slice(0,4);
+        var sm1 = [1,2,3,4];
+        var sm2 = [2,3,4,5];
+        var sm3 = [3,4,5,6];
+        console.log(test);
+        if (test.toString()==sm1.toString() || test.toString()==sm2.toString() || test.toString()==sm3.toString()) {
+          document.getElementById("report").innerHTML += "Small Straight!<br>";
+        }
+      }
+      function large(){
+        var ltest = x.sort();
+        var lg1 = [1,2,3,4,5];
+        var lg2 = [2,3,4,5,6];
+        if (ltest.toString()==lg1.toString() || ltest.toString()==lg2.toString()) {
+          document.getElementById("report").innerHTML += "Large Straight!<br>";
+        }
+      }
+
+}
+
+
+
 
 
 
@@ -62,6 +109,8 @@ function report() {
 // sequence from 2 to 6, like 6 3 4 2 5 - called big-straight.
 }
 
+
+
 //
 // report the results in the div with the ID 'report'.
-report();
+// report();
