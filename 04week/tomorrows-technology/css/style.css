@@ -1,10 +1,79 @@
+
 header {
-  /*color: blue;*/
-  background-color: green;
-  width: 100px;
-  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/bg.jpg") center center/ cover no-repeat;
+  width: 850px;
+  height: 450px;
 }
 
-body {
-  background-color: red;
+.sidenav {
+  display: inline-block;
+  float: right;
+  padding: 0px;
+  background-color: none;
+  position: absolute;
+  left: 900px;
+  top: -13px;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  line-height: 200%;
+  font-weight: bold;
+  font-size: 110%;
+}
+
+#mini-title {
+  font-size: 25px;
+}
+
+#sec {
+  font-size: 19px;
+}
+
+.section{
+  color: white;
+  background-color: grey;
+  width: 101px;
+  padding: 8px;
+  text-align: center;
+  font-size: 15px;
+}
+
+footer {
+  color: white;
+  background-color: gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: column;
+  position: relative;
+  top: 10px;
+}
+
+
+/* Media Queries*/
+
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/bg.jpg") center center/ cover no-repeat;
+    width: 850px;
+    height: 450px;
+  }
+
+  footer {
+    color: white;
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: column;
+    position: relative;
+    top: 10px;
+  }
 }
