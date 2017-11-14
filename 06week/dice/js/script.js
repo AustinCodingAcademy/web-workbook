@@ -38,6 +38,8 @@ function report() {
     var die3 = rollval[2].dataset.roll;
     var die4 = rollval[3].dataset.roll;
     var die5 = rollval[4].dataset.roll;
+    var dicearray = [];
+
 
 pair();
 
@@ -65,6 +67,27 @@ function pair (){
 }
 
 straight();
+fullhouse();
+twoPairs();
+
+function fullhouse(){
+  var x = [die1,die2,die3,die4,die5];
+  x.sort();
+  if (x[0]==x[1] && x[3]==x[4]) {
+    if (x[1]==x[2] || x[3]==x[2]) {
+      document.getElementById("report").innerHTML += "FullHouse!!!<br>";
+    }
+
+  }
+}
+
+function twoPairs(){
+  var x = [die1,die2,die3,die4,die5];
+  x.sort();
+  if (x[0]==x[1] && x[2]==x[3] || x[1]==x[2] && x[3]==x[4] || x[0]==x[1] && x[3]==x[4]){
+    document.getElementById("report").innerHTML += "Two Pairs!!!<br>";
+  }
+}
 
 function straight(){
   var x = [die1,die2,die3,die4,die5]
@@ -77,7 +100,6 @@ function straight(){
         var sm1 = [1,2,3,4];
         var sm2 = [2,3,4,5];
         var sm3 = [3,4,5,6];
-        console.log(test);
         if (test.toString()==sm1.toString() || test.toString()==sm2.toString() || test.toString()==sm3.toString()) {
           document.getElementById("report").innerHTML += "Small Straight!<br>";
         }
