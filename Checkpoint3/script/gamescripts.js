@@ -11,7 +11,7 @@ $("#clicker").click(function(){
 
 function updateScore(ickMultiplier){
   gameScore = gameScore + 1*ickMultiplier;
-  $('#scoreboard').html('Score: '+gameScore);
+  $('#scoreboard').html(gameScore);
 }
 
 window.setInterval(function(){
