@@ -1,0 +1,81 @@
+/*super mario font*/
+@font-face {
+  font-family: 'super_mario_256regular';
+  src: url('supermario256-webfont.woff2') format('woff2'),
+       url('supermario256-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  font-family: 'super_mario_256regular';
+  background-image: url('../assets/img/bodyBackground.png');
+  background-color: #F4C52F;
+  animation: scrollToSide 80s linear infinite;
+}
+/*effect to have background slowly scroll to right*/
+@keyframes scrollToSide {
+  from { background-position: 0; }
+  to { background-position: 1000px; }
+}
+
+
+h1{
+  text-align: center;
+  color: #ff0000;
+  border-style: double;
+  border-color: white;
+  background-color: white;
+  opacity: .85;
+}
+
+h2{
+  background-color: white;
+  opacity: .85;
+}
+
+/*flex box for centering clicker image*/
+.clicker .clicker-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-container{
+  width: 200px;
+}
+
+.img-container img{
+  width: 100%;
+}
+
+/*flex box to stack buttons in the rewards section*/
+.rewards, .upgrades{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../assets/img/colBackground.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: #5C94FC;
+  height: 400px;
+}
+
+button{
+  width: 100%;
+  height: 60px;
+}
+
+.reward-cost img{
+  width: 20px;
+}
+
+/*flexbox to position images that will be added*/
+.reward-status{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
