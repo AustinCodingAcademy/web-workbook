@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+
+html{
+  font-family: 'PT Serif', serif;
+}
+
+/*user a flex-box container to align h1 in the center*/
+header{
+  background-color: #2bcdc0;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1{
+  color: white;
+  font-size: 44px;
+  /*line-height: 250px;*/
+}
+
+.main-container{
+  margin: 0 auto;
+  width: 800px;
+}
+
+main{
+  background-color: black;
+  color: white;
+}
+
+/*center the articles with margin and padding to look like image*/
+.article-container{
+  text-align: center;
+  margin: 0 40px;
+}
+
+.article-container article{
+  display: inline-block;
+  width: 23%;
+  margin: 25px 30px;
+}
+
+.article-container h2{
+  margin: 20px 10px;
+  padding-top: 10px;
+  font-size: 40px;
+}
+
+.article-container p{
+  font-size: 15px;
+}
+
+/*color the top border of each article to match image style*/
+.blue{
+  border-top: 25px solid #33a8dd;
+}
+
+.orange{
+  border-top: 25px solid #f46731;
+}
+
+.cyan{
+  border-top: 25px solid #2bcdc0;
+}
+
+@media (max-width: 767px) {
+
+  /*center h1 text in center for mobile*/
+  .header-container{
+    margin: 0 30px;
+  }
+
+  /*change header background color for mobile*/
+  header{
+    background-color: #33a8dd;
+    height: 300px;
+
+  }
+
+  header h1{
+    width: 80%;
+    align-self: center;
+    margin: 0 auto;
+  }
+
+
+  .main-container{
+    width: 100%;
+    margin: 0;
+  }
+
+  /*change background color for main container for mobile*/
+
+  main{
+    background-color: #f7f5f6;
+    color: black;
+  }
+
+  .article-container{
+    margin-top: 10px;
+  }
+
+  .article-container article{
+    width: 50%;
+    margin: 20px auto;
+  }
+
+
+}

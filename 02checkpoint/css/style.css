@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Geo');
+
+/***************************************************************************************
+*    Title: [CSS3] Neon Glow
+*    Author: erikringsmuth
+*    Date: 10/3/17
+*    Availability: https://gist.github.com/erikringsmuth/9300530
+*
+***************************************************************************************/
+/*animation to make logo glow*/
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+/*animation to fade the document content in*/
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/*setting body background image, animations and font family*/
+body{
+  background-image: url("../img/austin.jpg");
+  background-size: no-repeat;
+  color: white;
+  font-family: Geo;
+  animation: fadein 1s ease-in;
+  -webkit-animation: fadein 1s ease-in;
+}
+
+/*setting backgrounds tyle for the navigation*/
+.header-container nav{
+  background-color: #222222;
+  background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+  opacity: .85;
+  font-size: 20px;
+}
+
+/*adding the glow effect to the logo*/
+.logo-text span{
+  color: #fff;
+  font-family: Monoton !important;
+  font-size:50px;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+.nav-col-ul li{
+  text-align: center;
+}
+
+/*centering the content of the main section*/
+.main-section{
+  text-align: center;
+}
+
+/*setting background color and transparency to the article in home section*/
+/*setting font-size for text within main-container*/
+.main-container article{
+  background-color: #222222;
+  opacity: .90;
+}
+
+.main-text h1{
+  font-size: 45px;
+}
+
+.main-text p{
+  margin: 0;
+  font-size: 25px;
+}
+
+/*adding top margin to video-container to give space between elements*/
+.video-container{
+  margin-top: 10px;
+}
+
+/*adding margin to img-container to allow space between elements*/
+.product-section .img-container{
+  margin: 5px;
+}
+
+.about-section, .about-section th{
+  text-align: center;
+}
+
+h2{
+  font-size: 30px;
+  background-color: #222222;
+}
+
+.about-section table{
+  background-color:#222222;
+  opacity: .90;
+  font-size: 30px;
+}
+
+/*center align all text in product section*/
+.product-container{
+  text-align: center;
+}
+
+/*hide the product section title*/
+.product-container h2{
+  display: none;
+}
+
+/*make image adjust to the size of the screen*/
+.img-container img{
+  width: 100%;
+}
+
+.img-container p{
+  background-color: #222222;
+  margin-top: 5px;
+}
+
+/*using flex-box to center footer elements; adding transparency*/
+.footer-container{
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  opacity: .90;
+}
+
+.fb-img{
+  width:30px;
+}
+
+/*media query for small screens*/
+@media (min-width: 768px) and (max-width: 1100px) {
+
+  /*Change background image to repeating image*/
+  body{
+    background-image: url("../img/mobile.jpg");
+    background-repeat: repeat;
+  }
+
+  .product-container h2{
+    display: inline;
+  }
+
+  .img-container p{
+    font-size: 20px;
+  }
+
+  /*Remove transparency from footer container*/
+  .footer-container{
+    opacity: 1;
+  }
+
+}
+
+/*mediaquery for mobile*/
+@media (max-width: 767px) {
+
+  /*Change background image to repeating image*/
+  body{
+    background-image: url("../img/mobile.jpg");
+    background-repeat: repeat;
+    margin-top: 50px;
+  }
+
+  .header-container nav{
+    opacity: 1;
+  }
+
+  /*Update font size to fit smaller screen*/
+  .logo-text span{
+    font-size:30px;
+  }
+
+  .main-section h1{
+    font-size: 30px;
+  }
+
+  .main-section p{
+    font-size: 18px;
+  }
+
+  .about-section table{
+    font-size: 14px;
+  }
+
+  /*unhide the product section title*/
+  .product-container h2{
+    display: inline;
+  }
+
+  .img-container p{
+    font-size: 20px;
+  }
+
+  /*Remove transparency from footer container*/
+  .footer-container{
+    opacity: 1;
+  }
+}
