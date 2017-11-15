@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   function plusMinus() {
     document.getElementById("results").value += "*-1";
+    equals();
   }
 
   function equals() {
