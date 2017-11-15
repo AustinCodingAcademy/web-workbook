@@ -1,5 +1,5 @@
 var score = 0;
-var multiplier = 1;
+var multiplier = 0;
 var rate = 1000;
 
 $(document).ready(function() {
