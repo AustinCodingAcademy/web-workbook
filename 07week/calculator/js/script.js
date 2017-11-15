@@ -1,3 +1,5 @@
+'use strict';
+
 function addNumber(num) {
   document.getElementById("results").value += num;
 }
@@ -19,6 +21,7 @@ function multiplication() {
 }
 
 function inverse() {
+  document.getElementById("results").value = eval(document.getElementById("results").value);
   document.getElementById("results").value = results.value*-1;
 }
 
