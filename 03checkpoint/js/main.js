@@ -15,7 +15,7 @@ $(document).ready(function() {
       score = score - 10;
       multiplier++;
       $('#babyLuigiSound').trigger('play');
-
+      $('#babyLuigis').append('<img style="width:30px;" src="./assets/img/babyLuigi.png"/>');
     }
     else{
       playDenySound();
@@ -25,8 +25,9 @@ $(document).ready(function() {
   $('#yoshi').click(function(){
     if(score >= 100){
       score = score - 100;
-      multiplier = multiplier + 5;
+      multiplier = multiplier + 10;
       $('#yoshiSound').trigger('play');
+      $('#yoshis').append('<img style="width:30px;" src="./assets/img/yoshi.png"/>');
     }
     else{
       playDenySound();
@@ -34,11 +35,11 @@ $(document).ready(function() {
   });
 
   $('#babyBowser').click(function(){
-    if(score >= 100){
-      alert("hi");
-      score = score - 100;
-      multiplier = multiplier + 10;
+    if(score >= 1000){
+      score = score - 1000;
+      multiplier = multiplier + 20;
       $('#babyBowserSound').trigger('play');
+      $('#babyBowsers').append('<img style="width:30px;" src="./assets/img/babyBowser.png"/>');
     }
     else{
       playDenySound();
@@ -48,6 +49,7 @@ $(document).ready(function() {
 
 function scoreUpdater(){
   $('#score').text(score);
+  $('#coinsPerSecond').text(multiplier);
 }
 
 window.setInterval(superCharge, rate);
