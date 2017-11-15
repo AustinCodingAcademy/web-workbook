@@ -22,6 +22,7 @@ roll();
 function report() {
   document.getElementById("report").innerHTML = ""; // clear out the report box
   let diceHtml = document.getElementsByClassName('die'); // this puts all the individual die HTML elements in diceHtml
+
   var twos = 0;
   var threes = 0;
   var straight = [];
@@ -31,6 +32,7 @@ function report() {
   let four = 0
   let five = 0
   let six = 0
+
   for (var dieVal = 1; dieVal < 7; dieVal++) { // we set up a nested loop, first we check for all the 1s, then 2s, etc
     let howManyDice = 0; // we zero out our counter
     for (var die = 0; die < 5; die++) { // we create the inner loop that cycles through the rolled dice
