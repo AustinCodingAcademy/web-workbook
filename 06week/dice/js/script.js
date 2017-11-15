@@ -23,6 +23,11 @@ roll();
 // to determine if any of the following cases are true:
 //
 function report() {
+  var pairTest=0;
+  var fullTest=0;
+  var yahtTest=0;
+  var singPair=0;
+  var message=0;
   document.getElementById("report").innerHTML = ""; // clear out the report box
   let diceHtml = document.getElementsByClassName('die'); // this puts all the individual die HTML elements in diceHtml
   for (var dieVal = 1; dieVal < 7; dieVal++) {  // we set up a nested loop, first we check for all the 1s, then 2s, etc
@@ -43,11 +48,11 @@ function report() {
 
 pair();
 
-
 function pair (){
     switch (howManyDice) {
       case 2:
-        document.getElementById("report").innerHTML += "There are a pair of "+dieVal+"s<br>";
+        singPair = 1;
+        message = document.getElementById("report").innerHTML += "There are a pair of "+dieVal+"s<br>";
         break;
       case 3:
         document.getElementById("report").innerHTML += "There are three "+dieVal+"s<br>";
@@ -56,7 +61,7 @@ function pair (){
         document.getElementById("report").innerHTML += "There are four "+dieVal+"s<br>";
         break;
       case 5:
-        document.getElementById("report").innerHTML += "YAHTZEE!!!<br>";
+        yahtTest = 4;
         break;
 
     }
@@ -70,50 +75,83 @@ straight();
 fullhouse();
 twoPairs();
 
-function fullhouse(){
-  var x = [die1,die2,die3,die4,die5];
-  x.sort();
-  if (x[0]==x[1] && x[3]==x[4]) {
-    if (x[1]==x[2] || x[3]==x[2]) {
-      document.getElementById("report").innerHTML += "FullHouse!!!<br>";
+
+      console.log(singPair, pairTest, fullTest, yahtTest);
+
+      if (yahtTest===4) {
+        document.getElementById("report").innerHTML += "YAHTZEE!!!<br>";
+      }else if (fullTest===3 && pairTest===2 && singPair===1) {
+          document.getElementById("report").innerHTML += "FullHouse!!!<br>";
+        }else if (pairTest===2 && singPair===1) {
+            document.getElementById("report").innerHTML += "Two Pairs!!!<br>";
+          }else if (singPair===1 && pairTest!==2) {
+            message;
+      }
+
+  function fullhouse(){
+    var x = [die1,die2,die3,die4,die5];
+    x.sort();
+    if (x[0]==x[1] && x[3]==x[4]) {
+      if (x[1]==x[2] || x[3]==x[2]) {
+        fullTest = 3;
+      }
+
     }
-
   }
-}
 
-function twoPairs(){
-  var x = [die1,die2,die3,die4,die5];
-  x.sort();
-  if (x[0]==x[1] && x[2]==x[3] || x[1]==x[2] && x[3]==x[4] || x[0]==x[1] && x[3]==x[4]){
-    document.getElementById("report").innerHTML += "Two Pairs!!!<br>";
+  function twoPairs(){
+    var x = [die1,die2,die3,die4,die5];
+    x.sort();
+    if (x[0]==x[1] && x[2]==x[3] || x[1]==x[2] && x[3]==x[4] || x[0]==x[1] && x[3]==x[4]){
+      pairTest = 2;
+    }
   }
-}
 
-function straight(){
-  var x = [die1,die2,die3,die4,die5]
-  x.sort
-  // diceVal.push()
-  small();
-  large();
-      function small(){
-        var test = x.sort().slice(0,4);
-        var sm1 = [1,2,3,4];
-        var sm2 = [2,3,4,5];
-        var sm3 = [3,4,5,6];
-        if (test.toString()==sm1.toString() || test.toString()==sm2.toString() || test.toString()==sm3.toString()) {
+  function straight(){
+    var x = [die1,die2,die3,die4,die5]
+    x.sort
+    // diceVal.push()
+    small();
+    large();
+
+        function small(){
+          var test = x.sort().slice(0,4);
+          var sm1 = [1,2,3,4];
+          var sm2 = [2,3,4,5];
+          var sm3 = [3,4,5,6];
+          if (test.toString()==sm1.toString() || test.toString()==sm2.toString() || test.toString()==sm3.toString()) {
+            // document.getElementById("report").innerHTML += "Small Straight!<br>";
+            smtest = true;
+            // return smtest;
+          }else {
+            smtest = false;
+          }
+        }
+        function large(){
+          var ltest = x.sort();
+          var lg1 = [1,2,3,4,5];
+          var lg2 = [2,3,4,5,6];
+          if (ltest.toString()==lg1.toString() || ltest.toString()==lg2.toString()) {
+            // document.getElementById("report").innerHTML += "Large Straight!<br>";
+            lgtest = true;
+            // return lgtest;
+          }else {
+            lgtest = false;
+          }
+        }
+
+  //The following block of code will evaluate and select the appropriate line of straing to report
+        var smtest;
+        var lgtest;
+        // console.log(straightTest(smtest, lgtest));
+        if (smtest === true && lgtest === false){
+        // if (straightTest(smtest, lgtest) == true) {
           document.getElementById("report").innerHTML += "Small Straight!<br>";
+        }else if(smtest === true && lgtest === true){
+            document.getElementById("report").innerHTML += "Large Straight!<br>";
         }
-      }
-      function large(){
-        var ltest = x.sort();
-        var lg1 = [1,2,3,4,5];
-        var lg2 = [2,3,4,5,6];
-        if (ltest.toString()==lg1.toString() || ltest.toString()==lg2.toString()) {
-          document.getElementById("report").innerHTML += "Large Straight!<br>";
-        }
-      }
 
-}
+  }
 
 
 
