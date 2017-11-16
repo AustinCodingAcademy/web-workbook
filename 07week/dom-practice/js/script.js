@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     li.appendChild(document.createTextNode(candidate.value));
     ul.appendChild(li);
 
-
     alert("Number of Items " + document.getElementsByTagName("li").length);
     var SubTitle = document.getElementById('UpdatedItems');
     SubTitle.innerHTML = document.getElementsByTagName("li").length;
@@ -26,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var item = document.getElementById(candidate.value);
     ul.removeChild(item);
 
-  
     alert("Number of Items " + document.getElementsByTagName("li").length);
     var SubTitle = document.getElementById('UpdatedItems');
     SubTitle.innerHTML = document.getElementsByTagName("li").length;
