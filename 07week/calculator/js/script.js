@@ -21,6 +21,7 @@ function multiplication() {
 }
 
 function inverse() {
+  //I can't get git to recognize that the following line isn't in the pushed version so I'm adding this to make it seem different
   document.getElementById("results").value = eval(document.getElementById("results").value);
   document.getElementById("results").value = results.value*-1;
 }
