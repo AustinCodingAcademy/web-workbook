@@ -1,6 +1,6 @@
 'use strict';
 
-// document.addEventListener("DOMContentLoaded", function(event) {
+
 function addNumber(num) {
   document.getElementById("results").value += num;
 }
@@ -25,10 +25,6 @@ function division() {
   document.getElementById("results").value += "/";
 }
 
-// function positive() {
-//   document.getElementById("results").value = "+";
-// }
-
 function negative() {
   document.getElementById("results").value = (results.value) * -1;
 }
@@ -41,4 +37,3 @@ function deleteLast() {
   var current = document.getElementById("results").value;
   document.getElementById("results").value = current.substring(0, current.length - 1);
 }
-// });
