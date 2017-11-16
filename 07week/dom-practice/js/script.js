@@ -1,5 +1,9 @@
 'use strict';
 
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", alertFunction);
     // You code here
-});
+
+function alertFunction() {
+  var x = document.getElementsByTagName('LI');
+  alert(x.length);
+}
