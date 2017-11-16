@@ -2,8 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
-    var listOfItems = document.getElementsByTagName('li');
-    alert('Number of items ' + listOfItems.length);
+
 })
 
   function addItem(){
@@ -35,5 +34,12 @@ function removeItem(){
 }
 function addThis() {
   console.log('hello');
+
+}
+
+function subtitle() {
+  var listOfItems = document.getElementsByTagName('li');
+  alert('Number of items ' + listOfItems.length);
+
 
 }
