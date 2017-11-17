@@ -1,0 +1,293 @@
+/*my colors
+lilac #B666D2
+peach #FF9966
+taupe #483C32
+*/
+
+
+body{
+  background-color: #F8F9FA;
+  color: #483C32;
+}
+
+/*general styling*/
+
+/*Header styling*/
+
+.logo{
+  font-family: 'Clicker Script';
+  font-weight: bold;
+}
+
+header{
+padding-bottom: 100px;
+}
+
+.logoBox{
+  height: 100px;
+  width: 400px;
+  margin: 150px auto 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  font-size: 80px;
+  text-align: center;
+}
+
+.bigDot{
+  height: 1px;
+  width: 1px;
+  border-radius: 50%;
+  background-color: #F8F9FA;
+  opacity: 0.5;
+  position: absolute;
+  z-index: -1;
+  transition: background-color 100ms, height 0.5s, width 0.5s;
+}
+
+.logoBox:hover > .bigDot{
+  height: 250px;
+  width: 250px;
+  background-color: #B667D2;
+}
+
+.tagline{
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+}
+
+.sectionTitle{
+  text-align: center;
+}
+
+/*Portfolio Styling*/
+#portfolio{
+  background-color: #FCEF9C;
+  padding-top: 50px;
+  background: -webkit-linear-gradient(#F8F9FA, #FCEF9C, #F8F9FA); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#F8F9FA, #FCEF9C, #F8F9FA); /* For Opera 11.1 to 12.0 */
+  background: linear-gradient(#F8F9FA, #FCEF9C, #F8F9FA); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#F8F9FA, #FCEF9C, #F8F9FA); /* Standard syntax (must be last) */
+}
+
+.portHeader {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  color: black;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 37.5em) {
+  .title {
+    font-size: 4.75rem;
+  }
+}
+
+p {
+  margin: 0 auto 2rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  color: #444;
+  font-weight: 100;
+  width: 90%;
+}
+@media screen and (min-width: 37.5em) {
+  p {
+    height: 70%;
+  }
+}
+
+hr {
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.portfolio {
+  margin-top: 50px;
+  width: 90%;
+  margin: 50px auto;
+  max-width: 1100px;
+}
+
+.portfolioItem {
+  position: relative;
+  display: block;
+  width: 90%;
+  height: 200px;
+  margin: 0 auto 2rem;
+  background-color: lightblue;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: all .4s ease;
+}
+@media screen and (min-width: 37.5em) {
+  .portfolioItem {
+    display: inline-block;
+    width: 45%;
+    margin-left: 1.5em;
+  }
+}
+@media screen and (min-width: 45em) {
+  .portfolioItem {
+    display: inline-block;
+    width: 30%;
+    margin-left: 25px;
+  }
+}
+
+.portOverlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+.portOverlay:after {
+  content: '';
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  background-color: #202020;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: -10;
+  left: 0;
+  transition: all .3s ease;
+}
+
+.portTitle {
+  position: relative;
+  top: -200px;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
+  transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+}
+
+.portDescription {
+  position: relative;
+  top: -200px;
+  margin-bottom: 1.5rem;
+  /*margin-top: 3rem;*/
+  font-size: 1rem;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+  /*letter-spacing: 5px;*/
+  transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+}
+
+
+
+.portLink {
+  position: relative;
+  display: block;
+  width: 60%;
+  top: 200px;
+  padding: 10px;
+  margin: 0 auto;
+  color: white;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 3px;
+  font-size: 1em;
+  transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+}
+.portLink:hover {
+  background-color: white;
+  color: #202020;
+}
+
+.portfolioItem:hover .portTitle {
+  top: 0;
+}
+
+.portfolioItem:hover .portDescription {
+  top: 0;
+}
+
+.portfolioItem:hover .portLink {
+  top: 0;
+}
+.portfolioItem:hover .portOverlay:after {
+  opacity: .75;
+}
+
+.airplane {
+  background-image: url(../img/airplaneThumbnail.png);
+}
+
+.driftwood {
+  background-image: url(../img/driftwoodThumbnail.png);
+}
+
+.nasa {
+  background-image: url(../img/nasaThumbnail.png);
+}
+
+.calc {
+  background-image: url(../img/Calculator.png);
+}
+
+.transitions {
+  background-image: url(../img/transitionsThumbnail.png);
+}
+
+.welcome {
+  background-image: url(../img/welcomeThumbnail.png);
+}
+
+/*about and contact section styling*/
+
+#aboutContact{
+  background-color: #E2BAF2;
+  padding-top: 50px;
+  background: -webkit-linear-gradient(#F8F9FA, #E2BAF2, #F8F9FA); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#F8F9FA, #E2BAF2, #F8F9FA); /* For Opera 11.1 to 12.0 */
+  background: linear-gradient(#F8F9FA, #E2BAF2, #F8F9FA); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#F8F9FA, #E2BAF2, #F8F9FA); /* Standard syntax (must be last) */
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#aboutText{
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+#sendButton{
+    position: relative;
+    display: block;
+    width: 60%;
+    padding: 10px;
+    margin: 0px auto;
+    color: #B667D2;
+    background-color: #F8F9FA;
+    letter-spacing: 3px;
+    text-decoration: none;
+    border: 2px solid #B667D2;
+    border-radius: 3px;
+    font-size: 1.25em;
+    transition: all 0.3s;
+  }
+  #sendButton:hover {
+    background-color: #B667D2;
+    color: #F8F9FA;
+  }
+
+}
