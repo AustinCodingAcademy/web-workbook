@@ -1,24 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Todo</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <title>Pedal Power</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 </head>
-<body>
-  <div id="content">
-    <div class="header">TODO</div>
-    <form>
-      <input type="text" id="todo">
-      <input type="submit" value="Submit">
-    </form>
-    <ul id="todo-list">
-      <li>Walk the dog</li>
-    </ul>
-  </div>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>Pedal Power</h1>
+        <h2>Current watts: <span id = "currentWatts">0</span></h2>
+      </div>
+      <div id="bikeClicker">
+        <img src="http://giganticbicyclefestival.org/images/anteater_and_bicycle.png">
+      </div>
+      <div class="buttons" style="text-align:center;">
+        <button type="amateur">Amateur - <span>100 watts</span></button>
+        <button type="busch">Busch League - <span>300 watts</span></button>
+        <button type="world">World Tour Pro - <span>500 watts</span></button>
+      </div>
+    </div>
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
+<script type="text/javascript"> //start of jquery code
+
+$("document").ready(function() {
+
+$("#currentWatts").css("color", "red");
+
+
+  var wattsMultiplier = .1; //score multiplier
+  var currentWatts = 0; //score
+  var amateur = 0; //adds +1 per click
+  var semiPro = 3; //adds +3 per click
+  var worldTour = 5; //adds +5 per click
+
+  $("#bikeClicker").click(function() {
+      currentWatts++;
+      wattsUpdater();
+    });
+/* buttons do not function yet
+
+    $(".buttons").click(function() {
+        amateur++;
+        wattsUpdater();
+      }); */
+
+  function wattsUpdater() {
+    $("#currentWatts").text(currentWatts);
+    $("#amateur").text(currentWatts);
+    }
+
+    // will allow clicker to continuously update
+    //buttons will add multipliers when clicked
+
+  /*  window.setInterval(myFunc, 1000);
+
+    function myFunc() {
+      currentWatts = (currentWatts + 1) + wattsUpdater;
+      wattsUpdater();
+} */
+
+});  // end of jquery code
+
+</script>
+
 </body>
 </html>
