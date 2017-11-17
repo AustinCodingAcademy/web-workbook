@@ -29,6 +29,10 @@ function changeText2() {
   listItem.appendChild(entry);
 
 }
+
+function removeItem(){
+  listItem.removeChild(listItem.lastChild);
+}
 //
 //
 //
