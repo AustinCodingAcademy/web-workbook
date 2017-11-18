@@ -5,5 +5,7 @@ document.addEventListener("DOMContentLoaded", alertFunction);
 
 function alertFunction() {
   var x = document.getElementsByTagName('LI');
-  alert(x.length);
+  alert("List items on this page: " + x.length);
 }
+
+var hey = document.createElement("H2");
