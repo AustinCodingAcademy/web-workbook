@@ -9,7 +9,7 @@ window.onload = function() {
 // )};
 
 function enterKey() {
-  if (event.keyCode == 13 && userText.value.length > 0)  userAdd();
+  if (event.keyCode == 13 && userText.value.length > 0) userAdd();
 }
 
 function disableButton() { //only enable button if there is text in input box
@@ -24,31 +24,34 @@ function focusInput() {
   document.getElementById("userText").focus();
 }
 
+var items = 0;
+
 function setCounter() {
-  var items = document.querySelectorAll("li").length;
+  items = document.querySelectorAll("li").length;
   var newH = document.createElement("h3");
   newH.id = 'feedback';
 
   if (items === 1) //make it so if there is only one item it says "item" instead of "items"
   {
     var newText = document.createTextNode("You have " + items + " item in your shopping cart.");
-    // alert("You have " + items + " item in your cart!");
   } else {
     var newText = document.createTextNode("You have " + items + " items in your shopping cart.");
-    // alert("You have " + items + " items in your cart!");
   }
 
   newH.appendChild(newText);
   var element = document.getElementById("shop");
   element.appendChild(newH);
-
 }
 
 function updateCounter() {
   var cancel = document.getElementById('feedback');
   cancel.remove(); // Removes the h3 counter 'feedback'
   setCounter(); //Re-adds the h3 counter with new value
-
+  if (items === 1) {
+    alert("You have " + items + " item in your cart!");
+  } else {
+    alert("You have " + items + " items in your cart!");
+  }
 }
 
 function userAdd() {
