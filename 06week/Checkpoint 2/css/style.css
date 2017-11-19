@@ -1,6 +1,6 @@
 body {
   background-image: url(bliss.jpg);
-  background-color: #006600;
+  background-color: #DCDCDC;
   box-sizing: border-box;
 }
 
@@ -8,7 +8,7 @@ body {
   width: 1600px;
   height: 2000px;
   margin: auto;
-  background-color: #006600;
+  background-color: #DCDCDC;
   border: white solid 2px;
   padding: 10px;
 }
@@ -43,17 +43,13 @@ li {
 }
 
 li:hover {
-  background-color: #00cc00;
-  width: 150px;
+  background-color: gray;
+  width: 300px;
 }
 
 a {
   width: 500px;
   height: 250px;
-}
-
-a:hover {
-  color: yellow;
 }
 
 h1 {
@@ -105,7 +101,7 @@ h2:hover {
 }
 
 section {
-  width:  100%;
+  width:  110%;
   margin: auto;
   -webkit-column-count: 3; /* Chrome, Safari, Opera */
   -moz-column-count: 3; /* Firefox */
@@ -121,9 +117,8 @@ article {
 
 .bio {
   height: 500px;
-  width: 400px;
-  font-size: 15px;
-  padding-left: 150px;
+  width: 500px;
+  font-size: 20px;
 }
 
 p {
@@ -136,7 +131,10 @@ p {
 footer {
   width: 1600px;
   height: 250px;
-  padding-bottom: 0;
+  padding-bottom: 0px;
+  font-size: 10px;
+  font-family: 'Libre Baskerville', serif;
+  color: gray;
 }
 
 #fb {
@@ -157,8 +155,8 @@ footer {
 }
 
 /*Use a media query to add a breakpoint at 800px:*/
-@media screen (max-width:800px) and (min-600px) {
-  .left, .main, .right, section {
+@media screen (max-width:800px) and (min-width:500px) {
+ .main, .bio {
     width:100%; /*The width is 100%, when the viewport is 800px or smaller*/
   }
 }
