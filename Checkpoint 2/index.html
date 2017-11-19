@@ -8,7 +8,7 @@
       <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Press+Start+2P" rel="stylesheet">  </head>
   <body>
     <!-- navbar and logo -->
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar-light bg-light">
       <a class="navbar-brand">
         <img src="https://cdn.dribbble.com/users/2516/screenshots/407916/nintendo.png" width="45" height="45" class="d-inline-block align-top" alt="">
         MAYspace Designs
@@ -27,7 +27,7 @@
   <div class="row">
     <div class="col-lg-4 col-sm-6 portfolio-item">
       <div class="card h-100">
-        <a href="https://letswalkaustin.com/"><img class="card-img-top" src="https://static1.squarespace.com/static/5967867820099eb098971f12/t/5967887d2cba5ef0688f4da3/1507908929996/?format=1500w" alt=""></a>
+        <a href="https://letswalkaustin.com/"><img class="card-img-top" src="https://static1.squarespace.com/static/5967867820099eb098971f12/t/5967887d2cba5ef0688f4da3/1507908929996/?format=1500w" width="200" height="200" alt=""></a>
         <div class="card-body">
           <h4 class="card-title">
             <a href="#">Let's Walk Austin</a>
@@ -49,7 +49,7 @@
     </div>
     <div class="col-lg-4 col-sm-6 portfolio-item">
       <div class="card h-100">
-        <a href="https://atxcampervans.com/"><img class="card-img-top" src="https://static1.squarespace.com/static/596270aa46c3c4413a616a4f/t/5963e52d59cc6855730db6f6/1501705263151/?format=1500w" alt=""></a>
+        <a href="https://atxcampervans.com/"><img class="card-img-top" src="https://static1.squarespace.com/static/596270aa46c3c4413a616a4f/t/5963e52d59cc6855730db6f6/1501705263151/?format=1500w" width="200" height="275" alt=""></a>
         <div class="card-body">
           <h4 class="card-title">
             <a href="#">ATX Campervans</a>
@@ -94,12 +94,30 @@
   </div>
 </div>
 
-
-
-<!-- contact me -->
-<div class="container" id="contact">
-<center><h1>Contact Steve</h1><br>
-<h2>stevendmay@gmail.com</h2></center>
+<!-- contact form *I did not make this active.  I need to tinker with the PHP to fully understand that interaction before implementing-->
+<div class="container-fluid" id="contact">
+  <h3 class="text-center">Contact Me</h3>
+  <div class="row test">
+    <div class="col-md-4">
+      <h4>Have a project in mind?  Stuck on something and need a little help?  Let me know how I can be of assistance!</h4>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- Footer -->
