@@ -20,8 +20,6 @@ window.onload = function() {
 var listItem = document.getElementById('items');
 var cartNum = document.getElementsByTagName('h2');
 
-
-
 function changeText2() {
 
   var addItem = document.getElementById('addItem').value;
@@ -31,11 +29,9 @@ function changeText2() {
 
 }
 
-function removeItem(){
+function removeItem() {
   listItem.removeChild(listItem.lastChild);
 }
-
-
 
 function cart() {
   var list = document.getElementsByTagName("ul");
