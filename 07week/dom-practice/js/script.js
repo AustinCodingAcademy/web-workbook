@@ -7,12 +7,10 @@ window.onload = function() {
 
   var count = "The cart has " + list[0].children.length + " items in it";
 
-  // alert(count);
-
-  // var newListItem = document.createElement('li');
-  // newListItem.innerHTML='Coleman campin stove';
+  alert(count);
 
   var newElement = document.createElement('h2');
+  newElement.id = 'headTwo';
   newElement.innerHTML = 'You have ' + list[0].children.length + ' in your shopping cart';
 
   document.body.appendChild(newElement);
@@ -20,6 +18,9 @@ window.onload = function() {
 };
 
 var listItem = document.getElementById('items');
+var cartNum = document.getElementsByTagName('h2');
+
+
 
 function changeText2() {
 
@@ -32,6 +33,18 @@ function changeText2() {
 
 function removeItem(){
   listItem.removeChild(listItem.lastChild);
+}
+
+
+
+function cart() {
+  var list = document.getElementsByTagName("ul");
+  var head = document.getElementById("headTwo");
+  var newHeader = document.createElement('h2');
+  var textnode = document.createTextNode('You have ' + list[0].children.length + ' in your shopping cart');
+
+  newHeader.appendChild(textnode);
+  head.replaceChild(newHeader, head.childNodes[0]);
 }
 //
 //
