@@ -10,8 +10,8 @@ window.onload = function() {
 };
 
 function addItem() {
-  var remove = document.getElementsByTagName('h2')[0];
-  document.body.removeChild(remove)
+  // var remove = document.getElementsByTagName('h2')[0];
+  // document.body.removeChild(remove)
   var listItem = document.createElement('li');
   var input = document.getElementById('add');
   listItem.innerHTML = input.value;
@@ -20,26 +20,17 @@ function addItem() {
   itemsInCart();
 };
 
+function deleteItem() {
+  var listItem = document.getElementById('add');
+  document.getElementById('list').removeChild(list.lastChild);
+  itemsInCart();
+};
+
 function itemsInCart() {
   var list = document.getElementById('list');
   var newElement = document.createElement('h2');
   newElement.innerHTML = 'You have ' +list.children.length+ ' items in your shopping cart';
   document.getElementsByTagName('h1')[0].appendChild(newElement);
-}
-
+};
 
 // });
-
-
-
-// Alert the user to how many list items there are on the page.
-
-// Add a <h2> to the page under the title that says 'You have _ items in your
-// shopping cart'. Do not use html to do this. Use JavaScript.
-
-// Create the ability to add more items to the list using JavaScript.
-
-// Create the ability to remove an item from the shopping cart using javascript.
-
-// Extension Challenge: Create the ability to display a picture of the product
-// when the mouse hovers over the name of the project.
