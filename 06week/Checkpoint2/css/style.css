@@ -44,20 +44,13 @@ h1 {
   float: right;
 }
 
-/*includes img and article*/
-#slider {
-  border: 1.5px solid black;
-  background-color: white;
-  color: black;
-}
-
 /*photo headshot*/
 .mich {
   max-width:100%;
   border-top: .5px solid black;
 }
 
-/*flexbox on main content*/
+/*flexbox on main content--image and article*/
 #slider {
   display: flex;
 	align-content: flex-start;
@@ -65,6 +58,9 @@ h1 {
 	flex-flow: row nowrap;
 	flex: 1 100%;
 	justify-content: space-between;
+	border: 1.5px solid black;
+  background-color: white;
+  color: black;
 }
 
 /*stylizing the font for main text*/
@@ -97,6 +93,15 @@ article {
 	width: 100%;
 }
 
+.porty {
+	display: flex;
+	flex: 1 100%;
+	flex-flow: row wrap;
+	height: 100%;
+	margin: 0px auto;
+	width: 100%;
+	background-color: pink;
+}
 /*link sizing*/
 a {
   font-size: 20px;
@@ -108,7 +113,17 @@ a:visited {
   color: black;
 }
 
-/*media query between 600-800px wide allows slider content to change from row to column*/
+/*media query 945-2000px wide allows slider content to change from row to column*/
+@media screen and (max-width: 2000px) and (min-width: 945px){
+	.navbar {
+		width: 100%;
+		height: 160px;
+		flex-flow: column wrap;
+
+	}
+}
+
+/*media query 945px (or less) wide allows slider content to change from row to column*/
 @media screen and (max-width: 945px){
 	.navbar {
 		height: 160px;
