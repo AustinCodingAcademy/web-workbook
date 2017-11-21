@@ -42,6 +42,14 @@ function cart() {
   newHeader.appendChild(textnode);
   head.replaceChild(newHeader, head.childNodes[0]);
 }
+
+function counter() {
+  var list = document.getElementsByTagName("ul");
+
+  var count = "The cart has " + list[0].children.length + " items in it";
+
+  alert(count);
+}
 //
 //
 //
