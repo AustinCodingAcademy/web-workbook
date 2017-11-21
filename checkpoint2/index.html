@@ -7,29 +7,30 @@
     <meta name="keywords" content="Game Designer, Software Developer, Web Designer, Ui/UX, designer, UI Designer, Austin">
     <link rel="stylesheet" type="text/css" href="./CSS/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css">
   </head>
-  <body>
-    <div class="container-fluid justify-content-center" data-spy="scroll" data-target="headerlist">
-      <nav id="headerlist" class="navbar fixed-top headeraffix d-none d-sm-block"> <!--Header for scrollspy-->
+  <body id="myScrollspy" data-spy="scroll" data-target=".navbar" data-offset="250">
+    <div class="container-fluid justify-content-center" data-spy="scroll" data-target="headerlist" data-offset="500">
+      <nav id="headerlist" class="animated fadeIn navbar fixed-top headeraffix d-none d-sm-block"> <!--Header for scrollspy-->
         <ul class="nav justify-content-center">
           <li class="navbar-left">
             <a href="#u4e">
-              <img src="./Assets/U4E.png" >
+              <img id="u4eimg" class="scrollClicker animated bounceInDown" src="./Assets/U4E.png" >
             </a>
           </li>
           <li class="navbar-left">
             <a href="#dk">
-              <img src="./Assets/DK.png" >
+              <img id="dkimg" class="scrollClicker animated bounceInDown" src="./Assets/DK.png" >
             </a>
           </li>
           <li class="navbar-left">
             <a href="#tsto">
-              <img src="./Assets/TSTO.png" >
+              <img id="tstoimg" class="scrollClicker animated bounceInDown"src="./Assets/TSTO.png" >
             </a>
           </li>
           <li class="navbar-left">
             <a href="#fapp">
-              <img src="./Assets/wireframe icon.png" >
+              <img id="fappimg" class="scrollClicker animated bounceInDown" src="./Assets/wireframe icon.png" >
             </a>
           </li>
         </ul>
@@ -82,15 +83,17 @@
             <h2>Justin Lyle's Resume Shredder</h2>
             <div class="fantasticappbox">
             <a target="_blank" href="../Checkpoint3/ResumeShredder.html"> <!--opens in new tab-->
-              <img style="height:315px;"src="./Assets/fantasticapp.png" >
+              <img src="../Checkpoint3/assets/Envelope.png" >
             </a>
-            <p style="margin-left:5px;">This is an exercise I did to learn how to use sketch and inVision. I made lots of boxes and a huge sketch symbol library in the process!</p>
+            <p style="margin-left:5px;">"You are a recruiter who has recieved far to many copies of Justin Lyle's Resume. Shred them as fast as you can!" This web game I made entirely using bootstrap and jQuery!<p>
           </div>
         </div>
       </div>
     </div>
   </body>
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/js/mdb.min.js"></script>
+  <script type="text/javascript" src="./Scripts/webscripts.js"></script>
 </html>
