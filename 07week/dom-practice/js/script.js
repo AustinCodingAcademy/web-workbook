@@ -16,3 +16,16 @@ var headingText = document.createTextNode("You have _ items in your shopping car
 heading.appendChild(headingText);
 document.getElementById("heading").appendChild(heading);
 }
+
+function addItem() {
+  var add = document.createElement("li");
+  var itemText = document.createTextNode("lorem ipsum");
+  add.appendChild(itemText);
+  document.getElementById("list").appendChild(add);
+}
+
+function removeItem() {
+  var parent = document.getElementById("list");
+  var child = document.getElementById("item");
+  parent.removeChild(child);
+}
