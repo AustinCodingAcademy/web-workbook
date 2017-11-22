@@ -19,20 +19,20 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <!-- This is the header section which contains the logo and navigation-->
-    <header>
-      <div class="container-fluid header-container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-12">
-            <h1>BaBy Mario Coin Voyage</h1>
+  <div class="main-container">
+    <body>
+      <!-- This is the header section which contains the logo and navigation-->
+      <header>
+        <div class="container-fluid header-container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12">
+              <h1>BaBy Mario Coin Voyage</h1>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-    <!-- This is the main section of the page which contains a video-->
-    <!--description text and a form -->
-    <div>
+      </header>
+      <!-- This is the main section of the page which contains a video-->
+      <!--description text and a form -->
       <main>
         <!--Score and Image container!-->
         <div class="container">
@@ -51,15 +51,13 @@
               </div>
             </div>
           </div>
-        </div>
-        <!--unlockables and upgrades!-->
-        <div class="container">
+            <!--unlockables and upgrades!-->
           <div class="row bonuses">
             <div class="col-xs-12 col-sm-6">
               <div class="upgrades">
                 <h2>Upgrades</h2>
                 <div class="img-container">
-                  <button type="button" id="babyLuigi">
+                  <button type="button" id="babyLuigi" class="upgrade-buttons">
                     <p>BaBy Luigi</p>
                     <span class="reward-cost">
                       10
@@ -70,7 +68,7 @@
                       Your Browser does not support the audio element
                     </audio>
                   </button>
-                  <button type="button" id="yoshi">
+                  <button type="button" id="yoshi" class="upgrade-buttons">
                     <p>Yoshi</p>
                     <span class="reward-cost">
                       100
@@ -81,7 +79,7 @@
                       Your Browser does not support the audio element
                     </audio>
                   </button>
-                  <button type="button" id="babyBowser">
+                  <button type="button" id="babyBowser" class="upgrade-buttons">
                     <p>BaBy Bowser</p>
                     <span class="reward-cost">
                       1000
@@ -115,12 +113,19 @@
           </div>
         </div>
       </main>
-    </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- fullPage.js https://alvarotrigo.com/fullPage/-->
-    <script src="./js/main.js"></script>
-</body>
+      <div class="row victory-lane">
+        <div class="col-xs-12" class="finish-marker">
+          <div class="marker-container">
+            <img src="./assets/img/babyMario.png">
+          </div>
+        </div>
+      </div>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <!-- fullPage.js https://alvarotrigo.com/fullPage/-->
+      <script src="./js/main.js"></script>
+    </body>
+  </div>
 </html>

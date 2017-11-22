@@ -19,6 +19,27 @@ body{
   to { background-position: 1000px; }
 }
 
+.victor-lane img{
+  position: relative;
+  animation-name: moveMario;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+}
+/*@keyframes moveMario {
+  from { margin-left: 0; }
+  to { margin-left: 1000px; }
+}*/
+@keyframes moveMario{
+  0% {background-color:black; left:0%;}
+  20% {background-color:green; left:50%;}
+  50% {background-color:yellow; left:90%;}
+  75% {background-color:white; left:50%;}
+  100% {background-color:black; left:0%;}
+}
+
+.main-container{
+  height: 100vh;
+}
 
 h1{
   text-align: center;
@@ -48,6 +69,10 @@ h1{
 
 .img-container img{
   width: 100%;
+}
+
+.victory-lane{
+  background-color: black;
 }
 
 /*flex box to stack buttons in the rewards section*/
@@ -85,4 +110,8 @@ button{
 
 .reward-status section{
   margin: 10px auto;
+}
+
+.flag-container img{
+  width: 100px;
 }
