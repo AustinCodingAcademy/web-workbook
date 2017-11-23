@@ -1,3 +1,6 @@
+$(document).ready(function(){
+
+new WOW().init();
 
 $('.navbar li a').click(function(smoothScroll) {
   smoothScroll.preventDefault();
@@ -18,11 +21,22 @@ $('.navbar li a').click(function(smoothScroll) {
        // (default click behaviour)
      });
      window.location.hash = hash;
+  });
+   
+  $('body').scrollspy({
+    target: 'headerlist'
+  });
+
+  $('.navbar-left').on('activate.bs.scrollspy', function(){
+    var hash = $('this.').find('li.active a').attr('href');
+
+    if(hash !== '#u4e'){
+      console.log(hash);
+    //$('header nav').addClass('navIconBorder');
+    }
+    else{
+    $('header nav').removeClass('navIconBorder');
+    }
+  });
+
 });
-
-
-$('#myScrollspy').on('activate.bs.scrollspy', function () {
-  // do something…
-      $(this).css('border', "solid 2px red");
-      var $spy = $(this).scrollspy('refresh');
-})
