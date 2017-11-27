@@ -1,0 +1,85 @@
+/*I didn't find a place to use !important as I had no inheritance issues*/
+/*The reason my divs were scrolling over the header was because I had left position: relative on them.*/
+
+body {
+  background-color: #726d42;
+  /*background-image: url(http://www.publicdomainpictures.net/pictures/70000/velka/birds-wire-musical-notes.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;*/
+}
+
+header {
+  background-color: #b54922;
+  position: fixed;
+  top: 0;
+  width: 70%;
+  margin: 0 auto;
+  left: 15%;
+  outline: 6px solid #fff29e
+}
+
+h1 {
+  font-family: verdana, sans-serif;
+  font-size: 1.5em;
+  /*margin: 0 20px 10px;*/
+  text-align: center;
+  color: #fff29e;
+  padding-top: 40px;
+}
+
+header h2 {
+  text-align: center;
+  margin: 15px auto 40px;
+  color: #eadd8a;
+  font-style: italic;
+  /*padding-bottom: 30px;*/
+}
+
+.blogpost {
+  border: 2px solid black;
+  width: 70%;
+  margin: 240px auto -140px;
+  background-color: #d1a22e;
+  overflow: auto;
+}
+
+.blogpost h2 {
+  text-align: center;
+  background-color: #f2e18a;
+  padding: 4px 0;
+  margin: 10px auto;
+  width: 33%;
+  border: 2px solid #b54922;
+  font-family: verdana, sans-serif;
+  font-size: .9em;
+}
+
+.blogpost p {
+  margin: 5px 10px;
+  font-family: "Droid Serif", serif;
+}
+
+hr {
+  border-color: black;
+}
+
+p:hover::first-letter {
+  color: red;
+}
+
+img {
+  float: left;
+  margin: 2px 10px 10px 10px;
+  outline: 2px solid #b54922;
+}
+
+p::first-letter {
+  font-size: 1.2em;
+}
+
+.link {
+  margin: 30px 20px;
+  font-family: "Verdana", sans-serif;
+}
