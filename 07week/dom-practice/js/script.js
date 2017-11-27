@@ -26,6 +26,6 @@ function addItem() {
 
 function removeItem() {
   var parent = document.getElementById("list");
-  var child = document.getElementById("item");
+  var child = document.querySelector("li");
   parent.removeChild(child);
 }
