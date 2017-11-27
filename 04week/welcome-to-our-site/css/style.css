@@ -1,0 +1,91 @@
+body {
+  color: white;
+}
+
+div{
+  box-sizing: border-box;
+}
+
+span {
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  font-size: 55px;
+  background: turquoise;
+  height: 340px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  background: black;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  margin-top: 15px;
+}
+
+.hr1 {
+  background: skyblue;
+  border-style: none;
+  height: 30px;
+}
+
+.hr2 {
+  background: orangered;
+  border-style: none;
+  height: 30px;
+}
+
+.hr3 {
+  background: turquoise;
+  border-style: none;
+  height: 30px;
+}
+
+.section {
+  height: 340px;
+  width: 300px;
+  padding: 20px;
+  background: black;
+
+}
+
+/*
+Phones
+ */
+
+@media all and (max-width: 767px)  {
+
+  .header {
+    background: skyblue;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: ghostwhite;
+
+  }
+
+  .section {
+    width: 270px;
+    background: inherit;
+    color: black;
+  }
+}
