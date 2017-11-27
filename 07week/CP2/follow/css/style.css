@@ -1,0 +1,147 @@
+body {
+  background-image: url(../img/woodbackground.jpg);
+  background-size: cover;
+
+
+}
+
+.container-fluid {
+  width:  100%;
+  margin: auto;
+  /*-webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;*/
+}
+
+.hidden {
+  display: none;
+}
+
+#menutable a {
+  position: absolute;
+  padding: 25px;
+  height: 75px;
+  width: 100%;
+  font-size: 25px;
+  font-family: 'Bungee', cursive;
+  color: white;
+  border-radius: 10px 10px 10px 10px;
+  transition: 0.15s;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+#menutable a:hover {
+  margin-left: 0;
+  transform: scale(1.5);
+  transition-duration: 1.5s;
+
+}
+
+link {
+  color: white;
+  align-content: center;
+  text-decoration: none;
+}
+
+#about {
+  top: 20px;
+  background-color: #e0ebeb;
+
+  }
+
+#Projects {
+  top: 80px;
+  background-color: #a3c2c2;
+
+}
+
+#Followme {
+  top:140px;
+  background-color: #669999;
+
+}
+
+#contact {
+  top:200px;
+  background-color: #334d4d;
+
+}
+
+main {
+  padding: 25px;
+  width: 100%;
+  margin-top: 300px;
+  justify-content: center;
+  border-radius: 10px 10px 10px 10px;
+  color: white;
+  opacity: 50%;
+}
+
+h1 {
+  text-align: center;
+  justify-content: center;
+  color: #e0ebeb;
+  font-size: 52px;
+
+}
+
+
+
+p {
+  justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 18px;
+  text-shadow: #e0ebeb 5px 5px 20px;
+
+
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+@media all and (max-width: 1400px) {
+nav {
+  flex: 1 auto;
+}
+section {
+  flex: 2 60%;
+}
+@media all and (max-width: 767px) {
+
+	#main {
+		flex-flow: row wrap;
+	}
+
+	nav {
+		flex: 1 100%;
+		margin-right: 0;
+		margin-bottom: 1.2rem;
+		min-height: 20rem;
+	}
+
+	section {
+		flex: 1 100%;
+		padding: 1rem;
+	}
+
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 12px;
+    text-shadow: #e0ebeb 5px 5px 20px;
+    padding: 0px;
+  }
