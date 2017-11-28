@@ -6,7 +6,7 @@ window.onload = function() {
   var list = document.getElementsByTagName('ul');
   var count = list[0].children.length
   var textMsg = "You have " + count + " items in your shopping cart."
-  // alert(count);
+  alert(count);
 
   // Add a <h2> to the page under the title that says 'You have _ items in your shopping cart'. Do not use html to do this. Use JavaScript.
   var whereIsH = document.body.childNodes[0];
