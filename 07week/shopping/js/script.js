@@ -7,9 +7,16 @@ window.onload = function() {
 
 function itemAdd() {
   var newItem = document.createElement('li');
+  var newButton = document.createElement('button');
+
   newItem.innerHTML = document.getElementById('newItemField').value;
-  newItem.onclick = removeItem();
+
+  // newButton.className = remove;
+  // newButton.onclick = removeItem;
+  // newButton.innerHTML = Remove;
+
   document.getElementById('cartList').appendChild(newItem);
+  newItem.appendChild(newButton);
 }
 
 function removeItem() {
