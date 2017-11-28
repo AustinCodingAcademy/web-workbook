@@ -1,48 +1,32 @@
+
 'use strict';
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
     var listOfItems = document.getElementsByTagName('li');
-
     alert('Number of items ' + listOfItems.length);
+})
 
-    var subtitle = '<h2>You have ' + listOfItems.length + ' items in your shopping cart</h2>';
+  function addItem(){
+    var ul = document.getElementById("dynamic-list");
+    var candidate = document.getElementById("candidate");
+    var li = document.createElement("li");
+    li.setAttribute('id',candidate.value);
+    li.appendChild(document.createTextNode(candidate.value));
+    ul.appendChild(li);
 
-    var d1 = document.getElementById('title');
-    d1.insertAdjacentHTML('afterend', subtitle);
-
-
-});
-
-
-
-function addItem() {
-  var newitem = prompt ('Enter new item');
-  //format my newitem as a list item element
-  newitem = '<li>' +newitem + '</li>';
-  var list = document.getElementById('list');
-  var listItem = list.lastElementChild;
-  listItem.insertAdjacentHTML('afterend', newitem);
+    alert("Number of Items " + document.getElementsByTagName("li").length);
+    var SubTitle = document.getElementById('UpdatedItems');
+    SubTitle.innerHTML = document.getElementsByTagName("li").length;
 }
 
-//recalculate the items in the list
-funchtion subtitle() {
-  var listOfItems = document.getElementsByTagName('li');
-  alert('Number of items ' + listOfItems.length);
-  var subtitleText = '<h2 id="subtitle">You have ' + listOfItems.length + ' items in your shopping cart</h2>';
+  function removeItem(){
+    var ul = document.getElementById("dynamic-list");
+    var candidate = document.getElementById("candidate");
+    var item = document.getElementById(candidate.value);
+    ul.removeChild(item);
 
-  var d1 = document.getElementById('title');
-  var subtitlePresent = document.getElementById('subtitle');
-  if (subtitlePresent == ""){
-    d1.insertAdjacentHTML('afterend', subtitleText);
-  } else {
-    subtitlePresent.innerHTML = subtitleText;
-  }
-
-
+    alert("Number of Items " + document.getElementsByTagName("li").length);
+    var SubTitle = document.getElementById('UpdatedItems');
+    SubTitle.innerHTML = document.getElementsByTagName("li").length;
 }
-
-
-//    var title = document.getElementsByTagName('h1');
-
-//    title += '<h2>You have ' + listOfItems.length + ' items in your shopping cart</h2>';
