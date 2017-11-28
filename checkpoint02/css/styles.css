@@ -27,11 +27,13 @@ header a {
   align-items: center;
   justify-content: space-around;
   color: #fce8b3;
+  transition-duration: .5s;
 }
 
 header a:hover {
   color: #fce8b3;
   text-decoration: none;
+  text-shadow: 0 0 10px #f4dc50;
 }
 
 h1 {
@@ -66,6 +68,7 @@ nav ul {
 
 nav a {
   color: #fce8b3;
+  transition-duration: .3s;
 }
 
 nav a:hover {
@@ -118,6 +121,10 @@ Main content / global
   margin: 10px;
 }
 
+.textRight {
+  text-align: right;
+}
+
 .partition img {
   margin: 30px;
   box-shadow: 0 0 3px white;
@@ -160,6 +167,7 @@ Web Design
   font-family: 'EB Garamond', serif;
   font-size: 18px;
   color: black;
+  min-height: 90px;
 }
 
 .description {
@@ -172,11 +180,13 @@ Web Design
   color: black;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 21px;
+  transition-duration: .3s;
 }
 
 .projectLink a:hover {
   color: #fce8b3;
   text-decoration: none;
+  text-shadow: 0 0 1px black;
 }
 
 h4 {
@@ -189,45 +199,51 @@ h4 {
 Photography
 ----*/
 
-.container.gallery-container {
+.gallery {
     color: #35373a;
     min-height: 100vh;
+    padding:40px;
 }
 
-.gallery-container h1 {
-    text-align: center;
-    margin-top: 70px;
-    font-family: 'Droid Sans', sans-serif;
-    font-weight: bold;
+.galleryMargin {
+  margin-bottom: 30px;
 }
 
-.gallery-container p.page-description {
-    text-align: center;
-    max-width: 800px;
-    margin: 25px auto;
-    color: #888;
-    font-size: 18px;
-}
-
-.tz-gallery {
-    padding: 40px;
-}
-
-.tz-gallery .lightbox img {
+.gallery .lightbox img {
     width: 100%;
-    margin-bottom: 30px;
-    transition: 0.2s ease-in-out;
+    transition: .3s ease-in-out;
     box-shadow: 0 2px 3px rgba(0,0,0,0.2);
 }
 
-
-.tz-gallery .lightbox img:hover {
-    transform: scale(1.05);
+.galleryWrap:hover img {
+    /*transform: scale(1.08);*/
     box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    opacity: .6;
 }
 
-.tz-gallery img {
+.gallery img {
     border-radius: 4px;
+}
+
+.galleryWrap {
+  width: 100%;
+  padding: 0;
+}
+
+.galleryWrap p {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  transition: .8s ease-in-out;
+  color: #f3f3f3;
+  font-family: 'Raleway', sans-serif;
+}
+
+.galleryWrap:hover p {
+  visibility: visible;
+  opacity: 1;
 }
 
 /*----
@@ -237,6 +253,28 @@ Mobile sizing
 @media all and (max-width:600px) {
   nav {
     width: 70%;
+    margin: 0 auto;
+  }
+
+  .partition {
+    flex-direction: column;
+    margin: 0;
+  }
+  .partition:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .partition p {
+    text-align: center;
+  }
+
+  .aboutMe h2 {
+    font-size: 20px;
+    padding: 10px;
+  }
+  #aboutMeTitle {
+    border-right: none;
+    border-bottom: 1px solid #f4a07c;
+    height: 90px;
   }
 
   .projectLink {
