@@ -1,0 +1,102 @@
+html,
+body {
+  background-color: #d35400;
+  padding: 0;
+  margin: 0;
+  color: #FFF;
+  font: 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  line-height: 1.5em;
+  text-align: center;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.display {
+  height: 33%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 60px;
+  right: 0;
+  margin: auto auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.title {
+  font-size: 400%;
+  text-transform: uppercase;
+}
+
+.sub {
+  font-size: 200%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 60px;
+}
+
+.author-information {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  padding-left: 30px;
+  font-size: 150%;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+a.author-information:hover {
+  color: rgba(255, 255, 255, 0.3);
+  transition: color 0.5s ease;
+  text-decoration: none;
+}
+
+.timer {
+  position: absolute;
+  right: 25px;
+  bottom: 10px;
+  height: 70px;
+  padding-left: 27px;
+  font-size: 600%;
+}
+
+#reset {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 200%;
+  padding: 10px;
+}
+
+#reset:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 992px) {
+  .title {
+    font-size: 900%;
+  }
+  .sub {
+    font-size: 300%;
+  }
+}
