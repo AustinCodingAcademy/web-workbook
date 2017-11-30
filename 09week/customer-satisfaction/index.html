@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Customer Satisfaction Survey</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h2 style="text-align:center;">Customer Satisfaction Survey</h2>
+    <form action="" name="Survey">
+
+      <label for="firstname">First Name</label>
+      <input type="text" name="firstname" id="firstname" placeholder="John">
+
+      <label for="lastname">Last Name</label>
+      <input type="text" name="lastname" id="lastname" placeholder="Doe">
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="john@doe.com">
+
+      <label for="Url">URL of favorite Reference Site</label>
+      <input type="password" name="password" id="url"placeholder="http://www.w3schools.com">
+
+      <label for="recommendSite">Would you recommend my site?</label>
+      <input type="checkbox" name="recommend" id="recommend">
+
+<fieldset>
+  <legend>Gender:</legend>
+
+      <input type="radio" name="gender" value="male"> Male
+      <input type="radio" name="gender" value="female"> Female
+      <input type="radio" name="gender" value="other"> Other
+    </fieldset>
+
+    <label for="SiteCoolness">How cool is my site?</label>
+    <input type="range" name="coolnessfactor" id="coolnessfactor" min="1" max="10" step="1" />
+
+
+      <button type="submit">Submit</button>
+
+      <button type="reset">Clear Form</button>
+    </form>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
