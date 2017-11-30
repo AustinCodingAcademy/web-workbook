@@ -17,6 +17,7 @@ var toyspersecond = 0;
 
 $("#directions").click(function(){
     alert("Help Eddie the Elf make toys to load Santa's Sled. Eddie didn't have a good season last year, his toy production was low, and his job at the North Pole is in jeopardy.  Each click on Eddie the elf makes 1 toy.  Once you have made enough toys, you can buy items that will help your toy production go faster than you can click! There are children with lots of toys on their list,so HURRY!... And don't forget the MORE toys you help Eddie make ...will put him back on the top of Santas STAR ELF LIST!");
+    
 
 });
 
