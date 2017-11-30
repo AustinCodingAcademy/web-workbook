@@ -3,11 +3,13 @@
 var count=0;
 var divData=document.getElementById("showCount");
 
+
 function countDoggos(){
   count=parseInt(count)+parseInt(1);
   var divData=document.getElementById("showCount");
   divData.innerHTML=(count);
 }
+
 $(document).ready(function() {
 
   //click //
@@ -20,5 +22,7 @@ $(document).ready(function() {
   });
   $('#resetButton').click(function() {
       divData.innerHTML=('0');
-  S});
+      count=0;
+  });
+
 });
