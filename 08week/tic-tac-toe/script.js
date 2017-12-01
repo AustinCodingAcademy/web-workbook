@@ -4,9 +4,10 @@ $(document).ready(function() {
 var player = 'X';
 var counter = 0;
 var win = false;
+var canClick = true;
   $('[data-cell]').click(function() {
 
-    if ($(this).text() === '') {
+    if ($(this).text() === '' && canClick === true) {
       $(this).text(player);
       checkWinner();
       counter++;
@@ -57,6 +58,8 @@ var win = false;
     ) {
       $('#announce-winner').text(`${player} wins!`);
       win = true;
+      canClick = false;
+
     }
 
     $('#clear').click(function() {
@@ -65,6 +68,7 @@ var win = false;
       player = "X";
       counter = 0;
       win = false;
+      canClick = true;
     });
 
 
