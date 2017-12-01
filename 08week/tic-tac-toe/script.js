@@ -1,30 +1,33 @@
 'use strict';
 
 $(document).ready(function() {
-  let playerTurn = 'X';
-  $('.column').click(function() {
-    $(this).text(playerTurn);
-    if (playerTurn === 'O') {
-      playerTurn = 'X';
-    } else {
-      playerTurn = 'O';
+
+  var playerTurn = 'X';
+  $('[data-cell]').click(function(){
+    if($(this).text() === ''){
+      $(this).text(playerTurn);
+        checkForWins();
+        if (playerTurn === 'X'){
+          playerTurn = 'O';
+        }else{
+          playerTurn = 'X';
+        }
+
     }
-  });
-});
 
+  })
 
+  function checkForWins(){
+    if($('[data-cell = "0"]').text() === playerTurn &&
+      $('[data-cell = "1"]').text() === playerTurn &&
+      $('[data-cell = "2"]').text() === playerTurn) {
+        $('#announce-winner').text(`Player ${playerTurn} Wins!`);
+      }
+  }
 
+  $('#clear').click(function(){
+    $('[data-cell]').empty();
+    playerTurn ='X';
+  })
 
-// 'use strict';
-//
-// $(document).ready(function() {
-//   let color = 'black';
-//   $('.column').click(function() {
-//     $(this).prepend(`<div class="disc ${color}"></div>`);
-//     if (color === 'red') {
-//       color = 'black';
-//     } else {
-//       color = 'red';
-//     }
-//   });
-// });
+})
