@@ -64,7 +64,6 @@ function userAdd() {
     updateCounter();
     focusInput();
   }
-
   list.appendChild(li);
   updateCounter();
   focusInput();
