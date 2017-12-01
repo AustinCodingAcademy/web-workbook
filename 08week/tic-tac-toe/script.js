@@ -3,7 +3,7 @@
 $(document).ready(function() {
   let playerTurn = 'X';
   $('.column').click(function() {
-    $(this).text('playerTurn');
+    $(this).text(playerTurn);
     if (playerTurn === 'O') {
       playerTurn = 'X';
     } else {
@@ -15,13 +15,16 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-// put 'x' or 'o' on board
-// alternate players
-// check for win
-// 8 ways to win
-// declare winner/tie
-// clear board
+// 'use strict';
+//
+// $(document).ready(function() {
+//   let color = 'black';
+//   $('.column').click(function() {
+//     $(this).prepend(`<div class="disc ${color}"></div>`);
+//     if (color === 'red') {
+//       color = 'black';
+//     } else {
+//       color = 'red';
+//     }
+//   });
+// });
