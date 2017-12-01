@@ -1,3 +1,11 @@
+body{
+  background-image: URL("wood.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+}
+
 div[data-cell] {
   width: 100px;
   height: 100px;
@@ -6,6 +14,7 @@ div[data-cell] {
   border: 1px solid #808080;
   font-size: 100px;
   text-align: center;
+  cursor: pointer;
 }
 
 .row {
@@ -15,4 +24,19 @@ div[data-cell] {
 #announce-winner {
   clear: both;
   font-size: 50px;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.ex {
+  background-color: blue !important;
+}
+
+.oh {
+  background-color: pink !important;
 }
