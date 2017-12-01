@@ -1,5 +1,80 @@
 'use strict';
 
 $(document).ready(function() {
-  // Put app logic in here
+  let playerTurn = 'X';
+  var counter = 0;
+  $('[data-cell]').click(function() {
+    if($(this).text() === ''){
+    $(this).text(playerTurn);
+    if (playerTurn === 'X') {
+      playerTurn = 'O';
+    } else {
+      playerTurn = 'X';
+    }
+    checkForWins();
+    counter++;
+    checkTie();
+  }
+  });
+
+  function checkForWins(){
+    if($('[data-cell = "0"]').text() === playerTurn &&
+      $('[data-cell = "1"]').text() === playerTurn &&
+      $('[data-cell = "2"]').text() === playerTurn)
+      {
+          alert(`Player ${playerTurn} Wins!`);
+        }
+      else if($('[data-cell = "3"]').text() === playerTurn &&
+      $('[data-cell = "4"]').text() === playerTurn &&
+      $('[data-cell = "5"]').text() === playerTurn)
+      {
+          alert(`Player ${playerTurn} Wins!`);
+        }
+      else if($('[data-cell = "6"]').text() === playerTurn &&
+      $('[data-cell = "7"]').text() === playerTurn &&
+      $('[data-cell = "8"]').text() === playerTurn)
+      {
+          alert(`Player ${playerTurn} Wins!`);
+        }
+      else if($('[data-cell = "0"]').text() === playerTurn &&
+      $('[data-cell = "4"]').text() === playerTurn &&
+      $('[data-cell = "8"]').text() === playerTurn)
+      {
+          alert(`Player ${playerTurn} Wins!`);
+        }
+      else if($('[data-cell = "0"]').text() === playerTurn &&
+      $('[data-cell = "3"]').text() === playerTurn &&
+      $('[data-cell = "6"]').text() === playerTurn)
+      {
+          alert(`Player ${playerTurn} Wins!`);
+        }
+      else if($('[data-cell = "1"]').text() === playerTurn &&
+      $('[data-cell = "4"]').text() === playerTurn &&
+      $('[data-cell = "7"]').text() === playerTurn)
+      {
+          alert(`Player ${playerTurn} Wins!`);
+        }
+      else if($('[data-cell = "2"]').text() === playerTurn &&
+      $('[data-cell = "5"]').text() === playerTurn &&
+      $('[data-cell = "8"]').text() === playerTurn)
+      {
+          alert(`Player ${playerTurn} Wins!`);
+        }
+      else if($('[data-cell = "6"]').text() === playerTurn &&
+      $('[data-cell = "4"]').text() === playerTurn &&
+      $('[data-cell = "2"]').text() === playerTurn)
+     {
+        alert(`Player ${playerTurn} Wins!`);
+      }
+  }
+  $('#clear').click(function(){
+    $('[data-cell]').empty();
+    // $(['data-cell']).text('');
+
+  })
+  function checkTie (){
+    if (counter === 9 && !win) {
+      $('#announce-winner').text('You Tie!');
+    }
+  }
 });
