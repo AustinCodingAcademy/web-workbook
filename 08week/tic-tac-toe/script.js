@@ -56,7 +56,7 @@ var win = false;
       $('[data-cell = "6"]').text() === player
     ) {
       $('#announce-winner').text(`${player} wins!`);
-win = true;
+      win = true;
     }
 
     $('#clear').click(function() {
@@ -64,6 +64,7 @@ win = true;
       $('#announce-winner').text('');
       player = "X";
       counter = 0;
+      win = false;
     });
 
 
