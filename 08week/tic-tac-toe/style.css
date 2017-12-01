@@ -1,3 +1,9 @@
+.gameBoard {
+  position: absolute;
+  left: 30%;
+  top: 10%;
+}
+
 div[data-cell] {
   width: 100px;
   height: 100px;
@@ -6,13 +12,28 @@ div[data-cell] {
   border: 1px solid #808080;
   font-size: 100px;
   text-align: center;
+  font-family: sans-serif;
 }
 
 .row {
   clear: both;
 }
 
-#announce-winner {
+#winner {
   clear: both;
-  font-size: 50px;
+  font-size: 49px;
+  min-height: 60px;
+  text-shadow: 0 0 2px gold;
+}
+
+#rageTimer {
+  clear: both;
+  font-size: 30px;
+  font-family: sans-serif;
+  min-height: 35px;
+  width: 305px;
+}
+
+button {
+  box-shadow: 0 0 5px black;
 }
