@@ -27,8 +27,8 @@
 };
  //Create the ability to display a picture of the product when the mouse hovers over the name of the project.
 function pHover(){
-var list = document.getElementById('myList');
+var dlist = document.getElementById('myList');
   var newElement = document.createElement('h2');
-  newElement.innerHTML = 'You have ' +list.children.length+ ' items in your shopping cart';
+  newElement.innerHTML = 'You have ' +dlist.children.length+ ' items in your shopping cart';
   document.getElementsByTagName('h1')[0].appendChild(newElement);
 };
