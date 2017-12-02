@@ -4,19 +4,19 @@ $(document).ready(function() {
     var player = 1;
     $('.square').on('click', function(event) {
         var squareSelected = $(this);
-        if(squareSelected.hasClass('ex') || squareSelected.hasClass('oh')) {
+        if(squareSelected.hasClass('fa fa-times') || squareSelected.hasClass('fa fa-circle-o')) {
           alert('Oops! Select a blank square.');
         } else {
           if(player === 1) {
-            squareSelected.addClass('ex');
-            if(announceWinner('ex')) {
+            squareSelected.addClass('fa fa-times');
+            if(announceWinner('fa fa-times')) {
               alert('Congrats! Player ' + player + ' has won!');
             } else {
             player = 2;
           }
         } else {
-          squareSelected.addClass('oh');
-          if(announceWinner('oh')) {
+          squareSelected.addClass('fa fa-circle-o');
+          if(announceWinner('fa fa-circle-o')) {
               alert('Congrats! Player ' + player + ' has won!');
             } else {
           player = 1;
@@ -48,4 +48,8 @@ function announceWinner(symbol) {
       return false;
     }
   }
+})
+
+$(document).on('click', '#clear', function(){
+  location.reload(true);
 })
