@@ -48,7 +48,7 @@ $(document).ready(function() {
       }
     })
 
-    if (tie) {
+    if (tie && ('#announce-winner'.text() == '')) {
       $('#announce-winner').text(`tie`)
     }
   }
