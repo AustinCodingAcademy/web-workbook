@@ -16,6 +16,12 @@ $(document).ready(function() {
   })
 
   function wins (){
+    var xCount = $("[data-cell]:Contains('X')").length;
+    var oCount = $("[data-cell]:Contains('O')").length;
+
+    if (xCount + oCount === 9)
+    $('#announce-winner').html(`It's a Scratch!`);
+
     if($('[data-cell = "0"]').text() === turn &&
       $('[data-cell = "1"]').text() === turn &&
       $('[data-cell = "2"]').text() === turn )
@@ -59,7 +65,7 @@ $(document).ready(function() {
 
 function tie() {
   var i = 0;
-  
+
 }
 
 
