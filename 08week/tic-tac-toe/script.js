@@ -61,6 +61,8 @@ $(document).ready(function() {
       $('[data-cell]').empty();
       turns = 0;
       win = false;
+      playerTurn = 'X';
+
       $('#announce-winner').empty();
     });
   });
