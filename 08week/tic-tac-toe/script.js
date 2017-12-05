@@ -15,6 +15,7 @@ $(document).ready(function() {
     counter++;
     checkTie();
   }
+
   });
 
   function checkForWins(){
@@ -66,15 +67,17 @@ $(document).ready(function() {
      {
         alert(`Player ${playerTurn} Wins!`);
       }
-  }
+  };
+
+  function checkTie (){
+    if (counter === 9 && !checkForWins())
+    {
+      alert('Players Tie!');
+    }
+  };
+
   $('#clear').click(function(){
     $('[data-cell]').empty();
-    // $(['data-cell']).text('');
+  });
 
-  })
-  function checkTie (){
-    if (counter === 9 && !win) {
-      $('#announce-winner').text('You Tie!');
-    }
-  }
 });
