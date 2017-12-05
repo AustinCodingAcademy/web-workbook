@@ -36,11 +36,11 @@ function announceWinner(symbol) {
       return true;
     }else if($('.six').hasClass(symbol) && $('.seven').hasClass(symbol) && $('.eight').hasClass(symbol)) {
       return true;
-    }else if($('.zero').hasClass(symbol) && $('.four').hasClass(symbol) && $('.six').hasClass(symbol)) {
+    }else if($('.zero').hasClass(symbol) && $('.three').hasClass(symbol) && $('.six').hasClass(symbol)) {
       return true;
     }else if($('.one').hasClass(symbol) && $('.four').hasClass(symbol) && $('.seven').hasClass(symbol)) {
       return true;
-    }else if($('.three').hasClass(symbol) && $('.five').hasClass(symbol) && $('.eight').hasClass(symbol)) {
+    }else if($('.two').hasClass(symbol) && $('.five').hasClass(symbol) && $('.eight').hasClass(symbol)) {
       return true;
     }else if($('.zero').hasClass(symbol) && $('.four').hasClass(symbol) && $('.eight').hasClass(symbol)) {
       return true;
