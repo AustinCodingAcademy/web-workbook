@@ -101,7 +101,7 @@ function drawEverything() {
 	colorRect(canvas.width-PADDLE_THICKNESS,paddle2Y,PADDLE_THICKNESS,PADDLE_HEIGHT,'lightgreen');
 
 	// next line draws the ball
-	colorCircle(ballX, ballY, 50, 'aqua');
+	colorCircle(ballX, ballY, 30, 'aqua');
 
 	canvasContext.fillText(player1Score, 100, 100);
 	canvasContext.fillText(player2Score, canvas.width-100, 100);

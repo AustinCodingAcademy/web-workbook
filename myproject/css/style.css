@@ -1,15 +1,14 @@
 body{
   background-color: pink;
-  color: purple;
+/*  color: purple;*/
 
 
 }
 
-  ul {
-      list-style-type: none;
-      margin: 20px;
-      padding: 20;
-  }
+ul {
+    list-style-type: none;
+
+}
 .topnav{ display: flex;
 flex-direction: row;
 width: 1375px;
@@ -31,7 +30,7 @@ h1 {
   color: purple;
   align-content: center;
 }
-
+h4{ text-align: center;}
 .flex-container {
   flex-direction: column;
   flex-grow: center;
@@ -40,7 +39,7 @@ h1 {
 .pictures:hover{
 
       -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
-      transition: width 2s, height 2s, transform 2s;
+      transition: width 2s, height 2s, transform 4s;
   }
 
   .pictures:hover {
@@ -56,12 +55,14 @@ h1 {
   margin: 20px;
 }
 .flex-item {
+  font-size: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color:black;
-  margin: 20px;
-  padding-top: 20px;
+  background-color: lightgreen;
+  color: orange;
+  margin: 60px;
+  padding-top: 5px;
   align-items: center;
   box-sizing: border-box;
   width: 50%;
@@ -70,25 +71,39 @@ h1 {
 
 
 input[type=text] {
-    width: 50%;
+    width: 20%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
 }
 .forms{
-  display: flex;
+  display: block;
   flex-direction: column;
-  background-color: green
-width: 100px;
-height: 100px;
-  padding: 60px;
-  margin: 20px;
+  background-color: lightgreen;
+  color: orange;
+width: 50px;
+height: 50px;
+  padding: 40px;
+  margin-left: 100px;
 
 }
-footer{
+form{
+  background-color: lightblue;
+
+}
+/*footer{
   display: flex;
   flex-direction: row;
   width: 600px;
   height: 40px;
   background-color: lightblue;
-  }
+  }*/
+
+  footer{display: flex;
+      flex: initial;
+      background-color: grey;
+      color: goldenrod;
+    height: 40px;
+  width: inherit;
+  margin-top: 40px;
+}
