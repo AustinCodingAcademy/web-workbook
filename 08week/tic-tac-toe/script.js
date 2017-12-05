@@ -4,24 +4,27 @@ $(document).ready(function() {
 var player = 'X';
 var counter = 0;
 var win = false;
-var canClick = true;
+var canClick = true; //prevent more clicks after a win
+$('.turn').text("X's Turn");
   $('[data-cell]').click(function() {
 
-    if ($(this).text() === '' && canClick === true) {
+    if ($(this).text() === '' && canClick === !false) {
       $(this).text(player);
       checkWinner();
       counter++;
       checkTie();
       if (player === 'X') {
         player = 'O';
+        $('.turn').text("O's Turn");
       } else {
         player = 'X';
+        $('.turn').text("X's Turn");
       }
-
     }
-
+    if (win === true || canClick === !true) {
+      $('.turn').text("");
+    }
   });
-
 
   function checkWinner() {
     if ($('[data-cell = "0"]').text() === player &&
@@ -56,6 +59,7 @@ var canClick = true;
       $('[data-cell = "4"]').text() === player &&
       $('[data-cell = "6"]').text() === player
     ) {
+
       $('#announce-winner').text(`${player} wins!`);
       win = true;
       canClick = false;
@@ -69,13 +73,12 @@ var canClick = true;
       counter = 0;
       win = false;
       canClick = true;
+      $('.turn').text("X's Turn");
     });
-
 
   };
 
   function checkTie(){
-
     if (counter === 9 && !win) {
         $('#announce-winner').text("tie!!");
     }
