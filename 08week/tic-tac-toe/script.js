@@ -79,6 +79,7 @@ $(document).ready(function() {
     function clear(){
     $('[data-cell]').empty();
     $('#announce-winner').empty();
+    turn = 'X';
   }
 
 
