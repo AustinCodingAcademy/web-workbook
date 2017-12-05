@@ -12,7 +12,6 @@ $('.turn').text("X's Turn");
       $(this).text(player);
       checkWinner();
       counter++;
-      checkTie();
       if (player === 'X') {
         player = 'O';
         $('.turn').text("O's Turn");
@@ -21,9 +20,10 @@ $('.turn').text("X's Turn");
         $('.turn').text("X's Turn");
       }
     }
-    if (win === true || canClick === !true) {
+    if (win === true) {
       $('.turn').text("");
     }
+    checkTie();
   });
 
   function checkWinner() {
@@ -80,6 +80,7 @@ $('.turn').text("X's Turn");
 
   function checkTie(){
     if (counter === 9 && !win) {
+        $('.turn').text("");
         $('#announce-winner').text("tie!!");
     }
   }
