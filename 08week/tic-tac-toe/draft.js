@@ -71,7 +71,7 @@ function checkForWins() {
 $("#clear").click(function() {
   $(this).click(function() {
     $('[data-cell]').empty();
-    
+
   })
 });
 
