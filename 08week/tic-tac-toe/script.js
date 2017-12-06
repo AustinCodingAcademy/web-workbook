@@ -33,6 +33,7 @@ $(document).ready(function() {
     // checkForTie();
     console.log(win)
     console.log(playerTurn);
+    console.log('hello');
   })
 
   function checkForWins() {
