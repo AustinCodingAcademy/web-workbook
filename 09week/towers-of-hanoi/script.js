@@ -9,6 +9,8 @@ $(document).ready(function() {
     if ($playerMove === null && $(this).children().length > 0){
       $playerMove = $(this).children().last().detach();
       currentStack = $(this).attr('data-stack');
+      counter++;
+      $('.count').html("Total Moves: "+counter);
     } else if (($(this).children().length > 0)){
       console.log($playerMove, currentStack);
       if (($(this).children().last().data('block')) < ($playerMove.data('block'))){
@@ -27,9 +29,11 @@ $(document).ready(function() {
     if($('[data-stack=3]').children().length === 4){
       $('#announce-game-won').text('You Win!')
     };
-    counter++;
-    console.log(counter);
-
 
   });
+
+  $('.button').click(function(){
+    location.reload();
+  });
+
 });
