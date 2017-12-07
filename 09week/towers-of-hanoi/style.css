@@ -1,35 +1,62 @@
+html {
+  font-family: 'Fredericka the Great', cursive;
+}
+
+.game-board {
+  display: flex;
+  height: 300px;
+  margin: 0 auto;
+  width: 400px;
+  border: solid black 1px;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
 [data-stack] {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  height: 101px;
+  flex-direction: column-reverse;
+  width: 101px;
   background-color: aliceblue;
-  margin: 25px;
+  margin: 15px;
 }
 
 [data-block] {
-  width: 25px;
+  width: 300px;
   float: left;
 }
 
 [data-block="25"] {
-  height: 25px;
+  width: 25px;
+  height: 10px;
   background-color: blue;
 }
 
 [data-block="50"] {
-  height: 50px;
+  width: 50px;
+  height: 10px;
   background-color: green;
 }
 
 [data-block="75"] {
-  height: 75px;
+  width: 75px;
+  height: 10px;
   background-color: red;
 }
 
 [data-block="100"] {
-  height: 100px;
+  width: 100px;
+  height: 10px;
   background-color: yellow;
+}
+
+.instructions {
+  width: 500px;
+  margin: 0 auto;
 }
 
 #announce-game-won {

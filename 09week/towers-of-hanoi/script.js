@@ -37,5 +37,13 @@ $(document).ready(function() {
           $playerHand = null; //reset $playerHand
       }
     }
+    winner();
   })
+  function winner(){
+    let winCatch = $('[data-stack="3"]').children().length
+    if (winCatch === 4) {
+      $('#announce-game-won').html("You Did It!");
+      $('[data-stack="3"]').css("background","lightgreen")
+    }
+  }
 });

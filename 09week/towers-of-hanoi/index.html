@@ -3,9 +3,13 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Towers of Hanoi</title>
+  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+  <h1>Towers of Hanoi</h1>
+  <body>
+  <div class="game-board">
+
   <div data-stack="1">
     <div data-block="100"></div>
     <div data-block="75"></div>
@@ -16,7 +20,17 @@
   </div>
   <div data-stack="3">
   </div>
+</div>
   <div id="announce-game-won"></div>
+  <div class="instructions">
+    <p>The goal of the puzzle is to move all the disks from the
+      leftmost peg to the rightmost peg, adhering to the following rules:</p>
+      <ol>
+        <li>Move only one disk at a time.</li>
+        <li>A larger disk may not be placed ontop of a smaller disk.</li>
+        <li>All disks, except the one being moved, must be on a peg.</li>
+  </ol>
+  </div>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
 </body>
