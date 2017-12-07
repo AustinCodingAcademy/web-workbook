@@ -1,3 +1,10 @@
+*{
+  font-family: 'arial';
+}
+
+body{
+  background-color: lightblue;
+}
 
 
 [data-stack] {
@@ -7,11 +14,20 @@
   height: 101px;
   background-color: aliceblue;
   margin: 25px;
+  max-width: 300px;
 }
 
 [data-block] {
   width: 25px;
   float: left;
+
+}
+
+.click-counter {
+height: 40px;;
+width: 150px;
+text-align: center;
+font-size: 26px;
 }
 
 [data-block="25"] {
@@ -35,6 +51,11 @@
 }
 
 #announce-game-won {
-  font-size: 50px;
-  text-align: center;
+  font-size: 40px;
+  padding-left: 18px;
+}
+
+.shadow { /* class to toggle back and forth for flashing text*/
+  text-shadow: 10px 10px 20px white;
+  color: red;
 }
