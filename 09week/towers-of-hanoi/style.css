@@ -1,11 +1,10 @@
-*{
-  font-family: 'arial';
+* {
+  font-family: 'Roboto Condensed';
 }
 
-body{
+body {
   background-color: lightblue;
 }
-
 
 [data-stack] {
   display: flex;
@@ -20,14 +19,6 @@ body{
 [data-block] {
   width: 25px;
   float: left;
-
-}
-
-.click-counter {
-height: 40px;;
-width: 150px;
-text-align: center;
-font-size: 26px;
 }
 
 [data-block="25"] {
@@ -50,12 +41,27 @@ font-size: 26px;
   background-color: yellow;
 }
 
-#announce-game-won {
-  font-size: 40px;
-  padding-left: 18px;
+.click-counter {
+  width: 150px;
+  height: auto;
+  float: left;
+  text-align: center;
+  font-size: 26px;
+  margin-left: 38px;
 }
 
-.shadow { /* class to toggle back and forth for flashing text*/
-  text-shadow: 10px 10px 20px white;
+button {
+  background-color: lightgrey;
+  margin-top: 6px;
+}
+
+#announce-game-won {
+  margin-top: 10px;
+  margin-left: 60px;
+  font-size: 40px;
+}
+
+.blinking {
+  /* class to toggle back and forth for flashing text*/
   color: red;
 }

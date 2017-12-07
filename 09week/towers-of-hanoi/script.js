@@ -43,7 +43,7 @@ $(document).ready(function() {
   function loop() { // uses the setInterval method to flash winning text
     var flashing = $("#announce-game-won");
     setInterval(function() {
-      flashing.toggleClass('shadow');
+      flashing.toggleClass('blinking');
     }, 300);
   };
 
@@ -58,14 +58,14 @@ $(document).ready(function() {
       }
     }
     if ($('[data-stack=3]').children().length === 4) { //checks the 3rd stack for 4 blocks, if so annoucnes winner
-      $("#announce-game-won").text("Winner with only " + $clicks + " clicks!! " + rating);
+      $("#announce-game-won").text("Winner with " + $clicks + " clicks!! " + rating);
       loop(); //runs the flashing text function
     };
   };
 
   function iterate() { //iterates click counter, updates click text and resets $block
     $clicks += 1;
-    $('.click-counter').text("Clicks= " + $clicks)
+    $('.click-counter').text("Clicks = " + $clicks)
     $block = null;
   }
 
