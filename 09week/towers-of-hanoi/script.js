@@ -7,23 +7,26 @@ $(document).ready(function() {
   const block25 = $('[data-block="25"]').data();
 
   let $playerMove = null;
-  let currentStack;
   let homeStack = 1;
   $('[data-stack]').click(function() {
-    if ($playerMove === null && $(this).children().length > 0) {
+    if ($playerMove === null && $(this).children().length > 0 && $('#announce-win').text() === '') {
       $playerMove = $(this).children().last().detach()
       homeStack = $(this).data('stack');
-    } else if (($(this).children().length > 0)) {
+    } else if ($(this).children().length > 0 && $('#announce-win').text() === '') {
       if (($(this).children().last().data('block')) < ($playerMove.data('block'))) {
         $playerMove.appendTo($(`[data-stack=${homeStack}]`));
         $playerMove = null;
-      } else if (($(this).children().last().data('block')) > ($playerMove.data('block'))) {
+      } else if ($(this).children().last().data('block') > $playerMove.data('block')) {
         $(this).append($playerMove);
         $playerMove = null;
+        if ($(this).data('stack') === 3 && $(this).children().length > 3) {
+          $('#announce-win').text('Success!');
+        }
       }
-      } else if ($(this).children().length === 0) {
+    } else if ($(this).children().length === 0 && $('#announce-win').text() === '') {
         $playerMove.appendTo($(this));
         $playerMove = null;
     }
   })
+
 });
