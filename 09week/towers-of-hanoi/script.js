@@ -8,10 +8,12 @@ $(document).ready(function() {
   var $from = 1; // holds the data-stack # block came from
   var $clicks = 0; // counts how many clicks per game
   var rating; // for rating the win with emojis
+  var running = false; // sets state to fire the setInterval for winning text
+
   $('[data-stack]').click(function() {
 
     $("#announce-game-won").text(""); //clears any text
-    if (!$block && $(this).children().length > 0) {
+    if (!$block && $(this).children().length > 0 && $('[data-stack=3]').children().length !==4) { //sets conditions to allow first click
       $from = $(this).data('stack'); //records which stack it comes from
       $inPlay = $(this).children().last().data('block'); //records which block is in hand
       $block = $(this).children().last().detach(); //drops block
@@ -41,10 +43,14 @@ $(document).ready(function() {
   }); // close click function
 
   function textFlash() { // uses the setInterval method to flash winning text
-    var flashing = $("#announce-game-won");
-    setInterval(function() {
+
+    if (running === false) {//only run setInterval once per game
+      var flashing = $("#announce-game-won");
+      setInterval(function() {
       flashing.toggleClass('blinking');
     }, 300);
+  }
+running = true;//prevents setInterval from running more than once on cicks after win
   };
 
   function checkWin() { // run each turn to check for win
@@ -59,7 +65,9 @@ $(document).ready(function() {
     }
     if ($('[data-stack=3]').children().length === 4) { //checks the 3rd stack for 4 blocks, if so annouces winner
       $("#announce-game-won").text("Winner with " + $clicks + " clicks!! " + rating);
+
       textFlash(); //runs the flashing text function
+
     };
   };
 
