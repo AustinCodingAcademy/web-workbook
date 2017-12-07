@@ -13,7 +13,7 @@ $(document).ready(function() {
   $('[data-stack]').click(function() {
 
     $("#announce-game-won").text(""); //clears any text
-    if (!$block && $(this).children().length > 0 && $('[data-stack=3]').children().length !==4) { //sets conditions to allow first click
+    if (!$block && $(this).children().length > 0 && $('[data-stack=3]').children().length !== 4) { //sets conditions to allow first click
       $from = $(this).data('stack'); //records which stack it comes from
       $inPlay = $(this).children().last().data('block'); //records which block is in hand
       $block = $(this).children().last().detach(); //drops block
@@ -22,9 +22,9 @@ $(document).ready(function() {
 
       if ($(this).children().length === 0) { //allows drop if empty
         $(this).append($block);
-        if ($(this).children().length > 0){//don't run iterate if empty stack is clicked
-        iterate();
-      }
+        if ($(this).children().length > 0) { //don't run iterate if empty stack is clicked
+          iterate();
+        }
 
       } else { //allows drop if existing block is greater than the one in hand
         if ($(this).children().last().data('block') > $inPlay) {
@@ -44,13 +44,13 @@ $(document).ready(function() {
 
   function textFlash() { // uses the setInterval method to flash winning text
 
-    if (running === false) {//only run setInterval once per game
+    if (running === false) { //only run setInterval once per game
       var flashing = $("#announce-game-won");
       setInterval(function() {
-      flashing.toggleClass('blinking');
-    }, 300);
-  }
-running = true;//prevents setInterval from running more than once on cicks after win
+        flashing.toggleClass('blinking');
+      }, 300);
+    }
+    running = true; //prevents setInterval from running more than once on cicks after win
   };
 
   function checkWin() { // run each turn to check for win
