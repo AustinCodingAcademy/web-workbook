@@ -40,7 +40,7 @@ $(document).ready(function() {
 
   }); // close click function
 
-  function loop() { // uses the setInterval method to flash winning text
+  function textFlash() { // uses the setInterval method to flash winning text
     var flashing = $("#announce-game-won");
     setInterval(function() {
       flashing.toggleClass('blinking');
@@ -48,7 +48,7 @@ $(document).ready(function() {
   };
 
   function checkWin() { // run each turn to check for win
-    if ($clicks < 17) { // sets up rating based on # of clicks
+    if ($clicks < 17) { // conditional rating based on # of clicks
       rating = "👍";
     } else {
       if ($clicks >= 17 && $clicks <= 20) {
@@ -57,9 +57,9 @@ $(document).ready(function() {
         rating = "🤮";
       }
     }
-    if ($('[data-stack=3]').children().length === 4) { //checks the 3rd stack for 4 blocks, if so annoucnes winner
+    if ($('[data-stack=3]').children().length === 4) { //checks the 3rd stack for 4 blocks, if so annouces winner
       $("#announce-game-won").text("Winner with " + $clicks + " clicks!! " + rating);
-      loop(); //runs the flashing text function
+      textFlash(); //runs the flashing text function
     };
   };
 
