@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>satisfaction.gov</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <h1>Thank you for using the internet.</h1>
+  <!-- get, post, put, delete -->
+  <form method="post" action="index.html">
+  <div class="formItem">
+    <label for="favSite">What was your favorite website?</label><br />
+    <input id="favSite" required type="url" name="favorite-site" placeholder="website" />
+  </div>
+    <div class="formItem">
+      <label for="volume">At what volume do you most commonly listen to the internet?</label><br />
+      <input id="volume" type="range" name="volume" min="0" max="100" />
+    </div>
+    <div class="formItem">
+      <label for="email">Enter your email address</label><br />
+      <input id="email" required type="email" name="email" placeholder="email@domain.com" />
+    </div>
+    <div class="formItem">
+      <label for="password">Enter your most-used password</label><br />
+      <input id="password" required type="password" name="password" placeholder="keep secret" />
+    </div>
+    <div class="formItem">
+      <label>What was your favorite use of the internet?</label><br />
+      <input type="radio" name="favUse" value="shopping" />Shopping <br />
+      <input type="radio" name="favUse" value="dissent" />Political dissent <br />
+      <input type="radio" name="favUse" value="bible" />Bible studies <br />
+      <input type="radio" name="favUse" value="blackMarket" />Black market shopping
+    </div>
+    <div class="formItem">
+      <label for="optIn">Check here if you would use the internet again</label><br />
+      <input id="optIn" required type="checkbox" name="use-again" value="Yes"/>I enjoyed my time on the internet and would use it again
+    </div>
+    <div class="formItem">
+      <label for="comments">Type any additional comments here. These will not be read.</label>
+      <input id="comments" type="text" name="comments" spellcheck="true" />
+    </div>
+     <input type="submit" />
+     <input type="reset" />
+  </form>
+</body>
+
+</html>
