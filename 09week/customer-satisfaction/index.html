@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Customer Satisfaction Form</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous">
+  <!-- Link in CSS File -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- Link in Reset File -->
+  <link rel="stylesheet" href="./reset.css">
+</head>
+
+<body>
+  <div class="container">
+    <h2>Customer Satisfaction Form</h2>
+
+     <!-- Create the Customer Satisfaction Form -->
+    <form class="customerSatisfaction" action="index.html" method="post">
+      <!-- Label for URL Input  -->
+      <label for="URL"> Enter the URL </label>
+      <input type="text" name="URL" placeholder="johndoe.com">
+
+      <!-- Password Input -->
+
+
+      <!-- Email Input -->
+      <label for="email"> Email </label>
+      <input type="text" name="email" required="email" placeholder="johndoe@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+
+      <input type="submit" value="Submit">
+    </form>
+
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
