@@ -1,0 +1,56 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Customer Satisfaction - Ty Sweet</title>
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+  <div class="container">
+  <h1>Customer Satisfaction Form</h1>
+  <form action="forms.html" method="post" name="satisfaction">
+<!-- url -->
+    <label for="url">Your Website</label>
+    <input type="url" name="homepage" id="url" placeholder="https://www.abc123.com"><br/>
+<!-- password -->
+    <label for="password">Password <span class="pw">(Min. length 10 characters)<span></label>
+    <input type="password" name="password" id="password"
+    placeholder="**********" required><br/>
+<!-- email -->
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="name@domain.com" required><br/>
+<!-- checkbox -->
+  <span class="select-check">
+    <label><input type="checkbox" name="check" value="Check 1">Check 1</label>
+    <label><input type="checkbox" name="check" value="Check 2">Check 2</label>
+    <label><input type="checkbox" name="check" value="Check 3" disabled>Check This!</label><br/>
+  </span>
+<!-- radio -->
+  <span class="select-radio">
+    <label><input type="radio" class="radio" name="radio" value="Radio 1">This</label>
+    <label><input type="radio" name="radio" class="radio" value="Radio 2" disabled>That</label>
+    <label><input type="radio" name="radio" class="radio" value="Radio 3">Other</label><br/>
+  </span>
+<!-- range -->
+    <label><input type="range" class ="range" name="range" min="0" max="10"
+      list="number">Scale of Satisfaction (0 - 10)</label><br/>
+    <datalist id="number">
+      <option>0</option>
+      <option>2</option>
+      <option>4</option>
+      <option>6</option>
+      <option>8</option>
+      <option>10</option>
+    </datalist>
+<!-- buttons -->
+    <button type="submit">Send!</button>
+    <button class="reset" type="reset">Reset Form</button>
+  </form>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
