@@ -18,6 +18,7 @@ $(document).ready(function() {
   $('#dropArea, #dropArea2, #dropArea3' ).droppable({
 
     drop: function(event, ui){
+      iterate();
       let drag = $(ui.draggable).data('block');
       let last = ($(this).children().last()).data('block');
 
@@ -32,6 +33,22 @@ $(document).ready(function() {
 
     }
   });
+
+  function iterate() {
+    var count=0;
+    $( '.draggable').click(function(){
+      count++;
+      $('#count').text(count);
+    });
+
+  }
+
+  $('#clear').click(function() {
+    $('#count').empty();
+    $('#announce-game-won').empty()
+
+  });
+
 
 
 });
