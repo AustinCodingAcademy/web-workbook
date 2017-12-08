@@ -16,7 +16,7 @@ $(document).ready(function() {
     if (!$block && $(this).children().length > 0 && $('[data-stack=3]').children().length !== 4) { //sets conditions to allow first click
       $from = $(this).data('stack'); //records which stack it comes from
       $inPlay = $(this).children().last().data('block'); //records which block is in hand
-      $block = $(this).children().last().detach(); //drops block
+      $block = $(this).children().last().detach(); //grabs block
       // console.log($from); //debug only
     } else {
 
