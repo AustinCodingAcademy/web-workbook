@@ -28,9 +28,7 @@ Create buttons to submit and reset the form. -->
     </div>
   </div>
   <div class="row main">
-    <!-- Need to get rid of this -->
-    <div class="col-sm-2"></div>
-    <div class="col-sm-8 survey">
+    <div class="col-sm-8  col-sm-offset-2 survey">
       <!-- Checkboxes -->
       <h4>Which features did you have with your package?</h4>
       <label><input type="checkbox" /> Printer</label><br />
@@ -52,10 +50,18 @@ Create buttons to submit and reset the form. -->
 
       <!-- URL -->
       <h4>Link us to your company for a chance to win free photo booth!</h4>
-      <input type="url" placeholder="https://www.yourcompany.com" id="url"/>
+      <form>
+        <input type="email" placeholder="www.yourcompany.com" id="url" />
+      </form>
+
+      <!-- Log in for verification -->
+      <h4>Log into your account for verification</h4>
+      <form>
+        <input type="email" size="30" required class="login" placeholder="email address" /><br />
+        <input type="password" size="30" required class="login" placeholder="password"/><br /><br />
+        <input type="submit" value="Submit Survey" />
+      </form>
   </div>
-    <!-- Need to get rid of this -->
-    <div class="col-sm-2"></div>
   </div>
 </div>
 
