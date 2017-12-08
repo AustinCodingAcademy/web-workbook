@@ -16,7 +16,7 @@ $(document).ready(function() {
     if (!$block && $(this).children().length > 0 && $('[data-stack=3]').children().length !== 4) { //sets conditions to allow first click
       $from = $(this).data('stack'); //records which stack it comes from
       $inPlay = $(this).children().last().data('block'); //records which block is in hand
-      $block = $(this).children().last().detach(); //grabs block
+      $block = $(this).children().last().detach(); //drops block
       // console.log($from); //debug only
     } else {
 
@@ -34,7 +34,7 @@ $(document).ready(function() {
         } else { //disallows dropping if existing block is bigger, and returns one in hand to original position
           $("#announce-game-won").text("NOPE!!");
           $(`[data-stack = ${$from}]`).append($block);
-          $block = null;
+          iterate();
         }
       }
       checkWin(); // check for a win each time
