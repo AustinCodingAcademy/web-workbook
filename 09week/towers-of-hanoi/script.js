@@ -1,6 +1,6 @@
 'use strict';
 
-
+window.onload = function() {
 
 $(document).ready(function() {
   var $block = null; //switch for grabbing or dropping block
@@ -32,9 +32,10 @@ $(document).ready(function() {
           iterate();
           // console.log($inPlay); //debug only
         } else { //disallows dropping if existing block is bigger, and returns one in hand to original position
+          if ($('[data-stack=3]').children().length !== 4){
           $("#announce-game-won").text("NOPE!!");
           $(`[data-stack = ${$from}]`).append($block);
-          iterate();
+          iterate();}
         }
       }
       checkWin(); // check for a win each time
@@ -82,3 +83,4 @@ $(document).ready(function() {
   });
 
 }); //close document ready
+}// closes windowOnload
