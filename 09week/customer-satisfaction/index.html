@@ -20,87 +20,99 @@ Create buttons to submit and reset the form
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
 </head>
+<body class="container reform">
 
-<body class="container">
+<header class="jumbotron hjtron">
+  <h1>Customer Satifaction</h1>
+  <p>Let us know your thoughts and we might get back to you!</p>
+</header>
   <!-- Start Form -->
-  <form>
+  <form id="collectorForm">
     <!-- Group 1 - Personal  -->
-    <div class="form-group">
+    <div class="form-group group-wrap">
+      <label>Contact Info</label>
       <div class="row">
 
         <div class="col-md-6">
           <label for="URL">URL</label>
-          <input type="url" class="form-control" id="URL" placeholder="http://www.google.com/">
+          <input name="URL" type="url" class="form-control" id="URL" placeholder="http://www.google.com/">
         </div>
       </div>
       <div class="row">
         <div class="col-md-6">
           <label class="" for="Email">Email</label>
-          <input type="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" id="Email" placeholder="name@example.com" required>
+          <input name="Email" type="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}" id="Email" placeholder="name@example.com" required>
         </div>
         <div class="col-md-6">
           <label for="Password">Password</label>
-          <input type="password" class="form-control" id="Password" placeholder="password">
+          <input name="Password" type="password" class="form-control" id="Password" placeholder="password">
         </div>
       </div>
     </div>
     <!-- Group 2 - Checkboxes -->
-    <div class="form-group">
+    <div class="form-group group-wrap">
       <label>What do you want?
         </label>
       <div class="form-check">
         <label class="form-check-label" for="box1">
-            <input type="checkbox" class="form-check-input" id="box1" value="">Complain</label>
+            <input name="Want" type="checkbox" class="form-check-input" id="box1" value="Complain"> Complain</label>
       </div>
       <div class="form-check">
         <label for="box2">
-            <input type="checkbox" class="form-check-input" id="box2" value="">Send Love</label>
+            <input name="Want" type="checkbox" class="form-check-input" id="box2" value="Send Love"> Send Love</label>
       </div>
       <div class="form-check">
         <label for="box3">
-            <input type="checkbox" class="form-check-input" id="box3" value="">Say Hello</label>
+            <input name="Want" type="checkbox" class="form-check-input" id="box3" value="Say Hello"> Say Hello</label>
       </div>
       <div class="form-check">
         <label for="box4">
-            <input type="checkbox" class="form-check-input" id="box4" value="">Find the Meaning of Life</label>
+            <input name="Want" type="checkbox" class="form-check-input" id="box4" value="Find the Meaning of Life"> Find the Meaning of Life</label>
       </div>
     </div>
     <!-- Group 3 - RadioButtons -->
-    <div class="form-group">
+    <div class="form-group group-wrap">
       <label>How would you like me to respond?
         </label>
       <div class="form-check form-check-inline">
         <label class="form-check-label" for="radio1">
-            <input type="radio" class="form-check-input" name="myRadio" id="radio1" value="">Message in Bottle</label>
+            <input name="Response" type="radio" class="form-check-input" name="myRadio" id="radio1" value="Message in Bottle"> Message in Bottle</label>
       </div>
       <div class="form-check form-check-inline">
         <label for="radio2">
-            <input type="radio" class="form-check-input" name="myRadio"  id="radio2" value="">Yell REALLY Loud</label>
+            <input name="Response" type="radio" class="form-check-input" name="myRadio"  id="radio2" value="Yell REALLY Loud"> Yell REALLY Loud</label>
       </div>
       <div class="form-check form-check-inline">
         <label for="radio3">
-            <input type="radio" class="form-check-input" name="myRadio"  id="radio3" value="">Flyover</label>
+            <input name="Response" type="radio" class="form-check-input" name="myRadio"  id="radio3" value="Flyover"> Flyover</label>
       </div>
       <div class="form-check form-check-inline">
         <label for="radio4">
-            <input type="radio" class="form-check-input" name="myRadio"  id="radio4" value="">Snail Mail</label>
+            <input name="Response" type="radio" class="form-check-input" name="myRadio"  id="radio4" value="Snail Mail"> Snail Mail</label>
       </div>
     </div>
     </div>
-    <div class="form-group">
+    <div class="form-group group-wrap">
+      <div class="row">
+
+      <div class="col-md-6">
       <label for=""> Rate my page
-          <input type="range" min="1" max="100" value="50">
+          <input id="slideRate" name="Rate" type="range" min="1" max="100" value="50">
         </label>
-        <div id="getVal"></div>
+      </div>
+
+        <div class="col-md-6" id="getVal"></div>
+      </div>
+
     </div>
-    <div class="form-group">
-      <button type="submit" class="btn btn-primary">Submit</button>
-      <input class="btn btn-primary" type="reset" value="Reset">
+    <div class="form-group group-wrap">
+      <button id="submit-form" type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+      <input id="reset-form" name="Reset" class="btn btn-warning btn-lg btn-block" type="reset" value="Reset">
     </div>
   </form>
 </body>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script type="text/javascript" src="./js/script.js">
-
-</script>
 </html>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="./js/script.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
