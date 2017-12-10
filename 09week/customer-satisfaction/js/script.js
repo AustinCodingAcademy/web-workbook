@@ -9,3 +9,8 @@ $(document).ready(function() {
       $("#explain-no").hide();
   });
 });
+
+
+$(document).on('click', '#reset', function(){
+  location.reload(true);
+})

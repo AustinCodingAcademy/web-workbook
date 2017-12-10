@@ -38,14 +38,14 @@ Create buttons to submit and reset the form. -->
 
       <!-- Range -->
       <h4>How busy was the booth during the event?</h4>
-      <input class="slider" type="range"/>
+      <input class="slider" type="range"/ >
 
       <!-- Radio -->
       <h4>Would you reccommend us to a friend?</h4>
       <form action="">
         <label><input type="radio" name="reccommend" value="yes" id="yes"> Yes</label><br/>
         <label><input type="radio" name="reccommend" value="no" id="no"> No</label><br/>
-        <textarea id="explain-no" placeholder="Please explain how we could have done better."></textarea>
+        <textarea id="explain-no" placeholder="Please explain how we could have done better." contenteditable="true" spellcheck="true"></textarea>
       </form>
 
       <!-- URL -->
@@ -56,10 +56,11 @@ Create buttons to submit and reset the form. -->
 
       <!-- Log in for verification -->
       <h4>Log into your account for verification</h4>
-      <form>
-        <input type="email" size="30" required class="login" placeholder="email address" /><br />
-        <input type="password" size="30" required class="login" placeholder="password"/><br /><br />
-        <input type="submit" value="Submit Survey" />
+      <form action="" name="registration">
+        <input type="email" size="30" class="login" placeholder="email address" name="email" /><br />
+        <input type="password" size="30" class="login" placeholder="password" name="password"/><br /><br />
+        <input type="submit" value="Submit Survey" /><br /><br />
+        <button id="reset">Reset Answers</button>
       </form>
   </div>
   </div>
