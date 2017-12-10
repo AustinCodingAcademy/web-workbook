@@ -10,7 +10,7 @@ $(document).ready(function() {
     farmsOwned: 0,
     factoriesOwned: 0
   };
-
+updateCookies();
 //creating setInterval method that calls iteration function every 1 second
 setInterval(iteration, 1000);
 
