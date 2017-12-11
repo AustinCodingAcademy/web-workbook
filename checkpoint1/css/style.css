@@ -238,6 +238,12 @@ h2 {
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  #Publications {
+    height: 1060px;
+  }
+}
+
 article {
   display: flex;
   width: 300px;
@@ -364,16 +370,80 @@ article a {
   height: 720px;
 }
 
+#Contact h3 {
+  width: 100%;
+  text-align: center;
+}
+
 #Contact span {
   display: block;
   max-width: 400px;
   margin: auto;
   margin-top: 400px;
-
 }
 
-@media (max-width: 767px) {
-  #Publications {
-    height: 1060px;
-  }
+/*--------Forms---------*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+/* Color settings */
+/* Styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#Contact form {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+}
+
+.container {
+  width: 500px;
+  margin: 25px auto;
+}
+
+form {
+  padding: 20px;
+  background: gray;
+  color: white;
+  border-radius: 4px;
+}
+
+form label,
+form input,
+form button,
+form textarea {
+  border: 0;
+  margin-bottom: 3px;
+  display: block;
+  width: 100%;
+}
+
+form input {
+  height: 25px;
+  line-height: 25px;
+  background: #fff;
+  color: #000;
+  padding: 0 6px;
+  box-sizing: border-box;
+}
+
+form button {
+  height: 30px;
+  line-height: 30px;
+  background: black;
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+form .error {
+  color: #ff0000;
+}
+
+.article-reference {
+  margin-top: 15px;
+}
+
+.article-reference a {
+  color: black;
 }

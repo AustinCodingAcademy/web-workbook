@@ -768,8 +768,65 @@
 
       <section id="Contact">
         <h2>Contact</h2>
-        Email: eric@opensour.cc
+        <h3>Want to employ me? Shoot me a message!</h3>
+        <div class="container">
+          <form action="https://script.google.com/macros/s/AKfycbxaOBW5Efnbv0TPBKvUfgokGx_1kJ3H4liyLLHRoppDIqwlH7Y/exec" name="registration">
+
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname" placeholder="John">
+
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" placeholder="Doe">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="john@doe.com">
+
+            <label for="message">Message</label>
+            <textarea name="message" placeholder="Write your message here" rows="10">
+            </textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
         <span>#1 Rule in show business: Always go out with a !</span>
+        <script type="text/javascript">
+        // Wait for the DOM to be ready
+          $(function() {
+          // Initialize form validation on the registration form.
+          // It has the name attribute "registration"
+          $("form[name='registration']").validate({
+            // Specify validation rules
+            rules: {
+              // The key name on the left side is the name attribute
+              // of an input field. Validation rules are defined
+              // on the right side
+              firstname: "required",
+              lastname: "required",
+              email: {
+                required: true,
+                // Specify that email should be validated
+                // by the built-in "email" rule
+                email: true
+              },
+              password: {
+                required: true,
+                minlength: 5
+              }
+            },
+            // Specify validation error messages
+            messages: {
+              firstname: "Please enter your firstname",
+              lastname: "Please enter your lastname",
+              email: "Please enter a valid email address"
+            },
+            // Make sure the form is submitted to the destination defined
+            // in the "action" attribute of the form when valid
+            submitHandler: function(form) {
+              form.submit();
+            }
+          });
+          });
+        </script>
       </section>
     </main>
   </body>
