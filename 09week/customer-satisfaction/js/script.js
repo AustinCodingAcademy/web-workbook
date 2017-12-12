@@ -34,7 +34,7 @@ function slideValue (){
 })
 
 $('#reset-form').click(function(){
-  $('#getVal').html(intRating);
+  $('#getVal').html('Score: ' + intRating);
 })
 
 
