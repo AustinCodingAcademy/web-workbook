@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <title>video</title>
+  </head>
+  <body>
+
+      <video width="600" height="330" controls loop autoplay>
+        <source src="Delusione.mp4" type="video/mp4">
+          Your browser is too old to play this awesome video
+        </video>
+
+        <audio controls loop autoplay>
+          <source src="spacesound.wav" type="audio/wav">
+        </audio>
+
+        <canvas id="myCanvas" width="300" height="150" style="border:1px solid black;"></canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createLinearGradient(10,100,200,100);
+grd.addColorStop(0,"purple");
+grd.addColorStop(1,"black");
+
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(0,0,400,300);
+    </script>
+  </body>
+</html>
