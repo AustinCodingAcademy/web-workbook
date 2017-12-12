@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Funny Faces</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="videosList">
+      <div class="video">
+    <video class="thevideo" loop autoplay>
+      <source src="css/funnyFaces.mp4" type="video/mp4">
+      <source src="css/funnyFaces.ogg" type="video/ogg">
+    </video>
+
+  </div>
+<!--   Hover mouse over video. -->
+  <h1>Hover mouse over video.</h1>
+  <canvas id="myCanvas" width="578" height="200"></canvas>
+   <script>
+     var canvas = document.getElementById('myCanvas');
+     var context = canvas.getContext('2d');
+     context.font = '40pt Calibri';
+     context.fillStyle = 'white';
+     context.fillText('Gaby Lacy', 150, 100);
+   </script>
+</canvas>
+  </body>
+  <script src="script.js"></script>
+</html>
