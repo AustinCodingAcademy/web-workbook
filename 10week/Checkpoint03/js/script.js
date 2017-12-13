@@ -48,8 +48,6 @@ updateReport();
 })
 
 $("#michael").click(function (){
-  if ($(this).data( "cost" ) <= data.totalPaper ) && ($( this ).children(".level").text()== "HIRE") {
     $("#michaelProf").show();
-  }
 })
 } //closing onload
