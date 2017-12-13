@@ -1,35 +1,70 @@
 'use strict';
 
-$(document).ready(function() {
+$(function(){
 
-  // Declare Variables
-  var $userMove = null;
-  var currentStack;
+  var $stacks = $('[data-stack]');
+  var $detached = {};
+  var gameover = false;
 
-  // Function to click and store the stack element to an empty block
-  $('[data-stack]').click(function() {
-    if($userMove === null && $(this).children().length > 0){
-      $userMove = $(this).children().last().detach();
-      currentStack = $(this).attr('data-stack');
-    } else if (($(this).children().length > 0)) {
-      if(($(this).children().last().data('block')) < ($userMove.data('block'))){
-        $userMove.appendTo($('[data-stack]').eq(currentStack - 1));
-        $userMove = null;
-          } else if (($(this).children().last().data('block')) > ($userMove.data('block'))) {
-            $(this).append($userMove);
-            $userMove = null;
-          } else if ($(this).children().length === 0) {
-            $userMove.appendTo($(this));
-            $userMove = null;
-          }
+  $stacks.click(move);
+
+  function move() {
+    if (gameover === false) {
+      if ($.isEmptyObject($detached)) {
+        // if current stack is not empty, detach the last-child of current stack
+        if(!($(this).children().length ===0) ) {
+          $detached=$(this).children().last().detach();
+        }
+      }
+      else {
+        if (dropDetached($(this), $detached)) {
+          $detached = {};
+        }
+      }
+      checkForWin();
     }
-    //checkWins();
-  })
+    else {
+      resetGame();
+    }
+  }
 
-  // function checkWins() {
-  //   if($('[data-stack = "3"]').children().length === 4) {
-  //     $('#announce-game-won').text("You Won!");
-  //   }
-  // }
+  function dropDetached($stack, $detached) {
+    //if droppable drop detached
+    //if not return
+    if (droppable($stack, $detached)) {
+      $stack.append($detached);
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+
+  function droppable($stack, $detached) {
+    var $last_block = $stack.children().last();
+    if( parseInt($detached.attr("data-block"))<parseInt($last_block.attr("data-block")) || $stack.children().length===0) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  }
+
+  function checkForWin() {
+    if($('[data-stack="3"]').children().length===4) {
+      $('#announce-game-won').html("You Won!");
+      gameover=true;
+
+    }
+  }
+
+  function resetGame() {
+    $('[data-stack="1"]').html('<div data-block="100"></div><div data-block="75"></div><div data-block="50"></div><div data-block="25"></div>');
+    $('[data-stack="2"]').empty();
+    $('[data-stack="3"]').empty();
+    $('#announce-game-won').empty();
+    $detached = {};
+    gameover = false;
+  }
 
 });
