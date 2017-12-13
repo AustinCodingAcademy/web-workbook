@@ -1,3 +1,5 @@
+ $(".employeeProf").hide();
+window.onload = function(){
 
 var data = {
   totalPaper:0,
@@ -26,154 +28,28 @@ $("#paperButton").click(function (){
 
 // sets variable for leveling system
 
-var michaelLev = 0;
-var ryanLev = 0;
-var pamLev = 0;
-var stanleyLev = 0;
-var andyLev = 0;
-var phyllisLev = 0;
-var jimLev = 0;
-var dwightLev = 0;
+
+$(".button").click(function (){
+var addVal = $(this).data( "cost" );
+if ($(this).data( "cost" ) <= data.totalPaper ) {
+data.totalPaper -= parseFloat($(this).data( "cost" ).toPrecision(2));
+data.totalPaperSec += parseFloat($(this).data( "val" ));
+$( this ).children(".price").html( parseInt($( this ).children(".price").html()*1.3));
+$( this ).data( "cost", parseInt($(this).data( "cost" ) * 1.3) );
+
+if ($( this ).children(".level").text()== "HIRE") {
+$( this ).children(".level").html("level <span class='lev'>1</span>");
+} else {
+console.log($( this ).find(".lev").text());
+$( this ).find(".lev").text(parseInt($( this ).find(".lev").text())+1);
+}
+}
+updateReport();
+})
 
 $("#michael").click(function (){
-  var addVal = $(this).data( "cost" );
-  if ($(this).data( "cost" ) <= data.totalPaper ) {
-    data.totalPaper -=  parseFloat($(this).data( "cost" ).toPrecision(2));
-    data.totalPaperSec += parseFloat($(this).data( "val" ));
-    $( this ).children(".price").html( parseInt($( this ).children(".price").html()*1.3));
-    $( this ).data( "cost", parseInt($(this).data( "cost" ) * 1.3) );
-			michaelLev++;
-		$( this ).children(".level").text("level " + michaelLev);
+  if ($(this).data( "cost" ) <= data.totalPaper ) && ($( this ).children(".level").text()== "HIRE") {
+    $("#michaelProf").show();
   }
-  updateReport();
 })
-
-$("#ryan").click(function (){
-  var addVal = $(this).data( "cost" );
-  if ($(this).data( "cost" ) <= data.totalPaper ) {
-    data.totalPaper -=  parseFloat($(this).data( "cost" ).toPrecision(2));
-    data.totalPaperSec += parseFloat($(this).data( "val" ));
-    $( this ).children(".price").html( parseInt($( this ).children(".price").html()*1.3));
-    $( this ).data( "cost", parseInt($(this).data( "cost" ) * 1.3) );
-			ryanLev++;
-		$( this ).children(".level").text("level " + ryanLev);
-  }
-  updateReport();
-})
-
-$("#pam").click(function (){
-  var addVal = $(this).data( "cost" );
-  if ($(this).data( "cost" ) <= data.totalPaper ) {
-    data.totalPaper -=  parseFloat($(this).data( "cost" ).toPrecision(2));
-    data.totalPaperSec += parseFloat($(this).data( "val" ));
-    $( this ).children(".price").html( parseInt($( this ).children(".price").html()*1.3));
-    $( this ).data( "cost", parseInt($(this).data( "cost" ) * 1.3) );
-			pamLev++;
-		$( this ).children(".level").text("level " + pamLev);
-  }
-  updateReport();
-})
-
-$("#stanley").click(function (){
-  var addVal = $(this).data( "cost" );
-  if ($(this).data( "cost" ) <= data.totalPaper ) {
-    data.totalPaper -=  parseFloat($(this).data( "cost" ).toPrecision(2));
-    data.totalPaperSec += parseFloat($(this).data( "val" ));
-    $( this ).children(".price").html( parseInt($( this ).children(".price").html()*1.3));
-    $( this ).data( "cost", parseInt($(this).data( "cost" ) * 1.3) );
-			stanleyLev++;
-		$( this ).children(".level").text("level " + stanleyLev);
-  }
-  updateReport();
-})
-
-$("#andy").click(function (){
-  var addVal = $(this).data( "cost" );
-  if ($(this).data( "cost" ) <= data.totalPaper ) {
-    data.totalPaper -=  parseFloat($(this).data( "cost" ).toPrecision(2));
-    data.totalPaperSec += parseFloat($(this).data( "val" ));
-    $( this ).children(".price").html( parseInt($( this ).children(".price").html()*1.3));
-    $( this ).data( "cost", parseInt($(this).data( "cost" ) * 1.3) );
-			andyLev++;
-		$( this ).children(".level").text("level " + andyLev);
-  }
-  updateReport();
-})
-
-$("#phyllis").click(function (){
-  var addVal = $(this).data( "cost" );
-  if ($(this).data( "cost" ) <= data.totalPaper ) {
-    data.totalPaper -=  parseFloat($(this).data( "cost" ).toPrecision(2));
-    data.totalPaperSec += parseFloat($(this).data( "val" ));
-    $( this ).children(".price").html( parseInt($( this ).children(".price").html()*1.3));
-    $( this ).data( "cost", parseInt($(this).data( "cost" ) * 1.3) );
-			phyllisLev++;
-		$( this ).children(".level").text("level " + phyllisLev);
-  }
-  updateReport();
-})
-
-$("#jim").click(function (){
-  var addVal = $(this).data( "cost" );
-  if ($(this).data( "cost" ) <= data.totalPaper ) {
-    data.totalPaper -=  parseFloat($(this).data( "cost" ).toPrecision(2));
-    data.totalPaperSec += parseFloat($(this).data( "val" ));
-    $( this ).children(".price").html( parseInt($( this ).children(".price").html()*1.3));
-    $( this ).data( "cost", parseInt($(this).data( "cost" ) * 1.3) );
-			jimLev++;
-		$( this ).children(".level").text("level " + jimLev);
-  }
-  updateReport();
-})
-
-$("#dwight").click(function (){
-  var addVal = $(this).data( "cost" );
-  if ($(this).data( "cost" ) <= data.totalPaper ) {
-    data.totalPaper -=  parseFloat($(this).data( "cost" ).toPrecision(2));
-    data.totalPaperSec += parseFloat($(this).data( "val" ));
-    $( this ).children(".price").html( parseInt($( this ).children(".price").html()*1.3));
-    $( this ).data( "cost", parseInt($(this).data( "cost" ) * 1.3) );
-			dwightLev++;
-		$( this ).children(".level").text("level " + dwightLev);
-  }
-  updateReport();
-})
-
-// $("#ryan").click(function (){
-//   var addVal = $(this).data( "cost" );
-//   if ($(this).data( "cost" ) <= data.totalPaper ) {
-//     data.totalPaper -=  parseFloat($(this).data( "cost" ).toPrecision(2));
-//     data.totalPaperSec += parseFloat($(this).data( "val" ));
-//     $( this ).children(".price").html( parseInt($( this ).children(".price").html()*1.3));
-//     $( this ).data( "cost", parseInt($(this).data( "cost" ) * 1.3) );
-// 			ryanLev++;
-// 		$( this ).children(".level").text("level " + ryanLev);
-//   }
-//   updateReport();
-// })
-//
-// $("#ryan").click(function (){
-//   var addVal = $(this).data( "cost" );
-//   if ($(this).data( "cost" ) <= data.totalPaper ) {
-//     data.totalPaper -=  parseFloat($(this).data( "cost" ).toPrecision(2));
-//     data.totalPaperSec += parseFloat($(this).data( "val" ));
-//     $( this ).children(".price").html( parseInt($( this ).children(".price").html()*1.3));
-//     $( this ).data( "cost", parseInt($(this).data( "cost" ) * 1.3) );
-// 			ryanLev++;
-// 		$( this ).children(".level").text("level " + ryanLev);
-//   }
-//   updateReport();
-// })
-//
-// $("#ryan").click(function (){
-//   var addVal = $(this).data( "cost" );
-//   if ($(this).data( "cost" ) <= data.totalPaper ) {
-//     data.totalPaper -=  parseFloat($(this).data( "cost" ).toPrecision(2));
-//     data.totalPaperSec += parseFloat($(this).data( "val" ));
-//     $( this ).children(".price").html( parseInt($( this ).children(".price").html()*1.3));
-//     $( this ).data( "cost", parseInt($(this).data( "cost" ) * 1.3) );
-// 			ryanLev++;
-// 		$( this ).children(".level").text("level " + ryanLev);
-//   }
-//   updateReport();
-// })
+} //closing onload
