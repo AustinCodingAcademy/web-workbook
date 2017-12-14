@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Shay's Clicker Game</title>
+
+    <!-- below is the link to my googlefont -->
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Dancing+Script" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- below is the link to my css file -->
+    <link rel="stylesheet" href=css/checkpoint3.css>
+  </head>
+
+  <body>
+    <div class="container gamebox">
+
+      <h1>Shay's Flower Shop</h1>
+      <h3>Click the sunflower below to purchase more flowers!</h3>
+
+<!-- functionality stuff below -->
+<!-- originally had button tags wrapped around image tag. Deleted and put the click command inside the image tag to target the image directly through the id -->
+    <div class="flowerholder">
+      <img onclick="cookieClick(1)" id="sunflower" src="https://yt3.ggpht.com/-bA88-Qchtcg/AAAAAAAAAAI/AAAAAAAAAAA/Xdh-6OV_kwg/s900-c-k-no-mo-rj-c0xffffff/photo.jpg">
+      <!-- "cookieClick" makes the image a button -->
+    </div>
+		  Flowers: <span id="cookies">0</span>
+		        <br />
+		  <button class="button" onclick="buyCursor()">Buy Cursor</button>
+		    <br />
+        <!-- maybe add another button here, sort of like in the carGo game for additional, higher numbers of flowers -->
+
+        <!-- counts how many cursors are acting on the image -->
+		  Cursors: <span id="cursors">0</span>
+		    <br />
+
+        <!-- how much it costs to purchase another cursor to act on the image at the same time. gets more expensive as you buy more -->
+      Cursor Cost: <span id="cursorCost">10</span>
+    </div>
+
+    <!-- script -->
+    <script type="text/javascript" src="checkpoint3.js"></script>
+  </body>
+</html>
