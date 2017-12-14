@@ -1,7 +1,6 @@
 
 /*hides all employee profiles until employee is hired*/
 $(".employeeProf").hide();
-// $(".button").hide();
 
 /*rest of code inside. Will not run until page loaded*/
 window.onload = function(){
@@ -63,39 +62,75 @@ window.onload = function(){
 
 
   $("#michael").click(function (){
-    $("#michaelProf").show();
+    $("#michaelProf").slideDown();
+    /*next four lines make height of employee profile and headshot responsive with the width*/
+    var paperWidth = $('.employeeProf').width();
+    $(".employeeProf").css({'height':(paperWidth * 1.25) + 'px'})
+    var picWidth = $('.headshot').width();
+    $('.headshot').css({'height':(picWidth * 1.25)+'px'});
+  })
 
-    /*these two lines make the height of employee headshot responsive*/
+// make ryan appear
+  $("#ryan").click(function (){
+    $("#ryanProf").slideDown();
+    var paperWidth = $('.employeeProf').width();
+    $(".employeeProf").css({'height':(paperWidth * 1.25) + 'px'})
+    var picWidth = $('.headshot').width();
+    $('.headshot').css({'height':(picWidth * 1.25)+'px'});
+  })
+
+// make pam appear
+  $("#pam").click(function (){
+    $("#pamProf").slideDown();
+    var paperWidth = $('.employeeProf').width();
+    $(".employeeProf").css({'height':(paperWidth * 1.25) + 'px'})
+    var picWidth = $('.headshot').width();
+    $('.headshot').css({'height':(picWidth * 1.25)+'px'});
+  })
+
+// make andy appear
+  $("#andy").click(function (){
+    $("#andyProf").slideDown();
+    var paperWidth = $('.employeeProf').width();
+    $(".employeeProf").css({'height':(paperWidth * 1.25) + 'px'})
+    var picWidth = $('.headshot').width();
+    $('.headshot').css({'height':(picWidth * 1.25)+'px'});
+  })
+
+// make stanley appear
+  $("#stanley").click(function (){
+    $("#stanleyProf").slideDown();
+    var paperWidth = $('.employeeProf').width();
+    $(".employeeProf").css({'height':(paperWidth * 1.25) + 'px'})
     var picWidth = $('.headshot').width();
     $('.headshot').css({'height':(picWidth * 1.25)+'px'});
   })
 
 
-  $("#ryan").click(function (){
-    $("#ryanProf").show();
-  })
-
-  $("#pam").click(function (){
-    $("#pamProf").show();
-  })
-
-  $("#andy").click(function (){
-    $("#andyProf").show();
-  })
-
-  $("#stanley").click(function (){
-    $("#stanleyProf").show();
-  })
-
+//make phyllis appear
   $("#phyllis").click(function (){
-    $("#phyllisProf").show();
+    $("#phyllisProf").slideDown();
+    var paperWidth = $('.employeeProf').width();
+    $(".employeeProf").css({'height':(paperWidth * 1.25) + 'px'})
+    var picWidth = $('.headshot').width();
+    $('.headshot').css({'height':(picWidth * 1.25)+'px'});
   })
 
+//make jim appear
   $("#jim").click(function (){
-    $("#jimProf").show();
+    $("#jimProf").slideDown();
+    var paperWidth = $('.employeeProf').width();
+    $(".employeeProf").css({'height':(paperWidth * 1.25) + 'px'})
+    var picWidth = $('.headshot').width();
+    $('.headshot').css({'height':(picWidth * 1.25)+'px'});
   })
 
+//make dwight appear
   $("#dwight").click(function (){
-    $("#dwightProf").show();
+    $("#dwightProf").slideDown();
+    var paperWidth = $('.employeeProf').width();
+    $(".employeeProf").css({'height':(paperWidth * 1.25) + 'px'})
+    var picWidth = $('.headshot').width();
+    $('.headshot').css({'height':(picWidth * 1.25)+'px'});
   })
 } //closing bracket for onload
