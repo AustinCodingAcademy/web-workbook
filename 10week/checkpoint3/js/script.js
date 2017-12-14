@@ -39,30 +39,60 @@ $("button").click(function (){
   updateCoal();
 })
 
-// didnt ever figure out how to make the below work
+// this was my first attempt i did on codepen and didnt know how to fix it
+// var coal = 0;
+// var bad = 0;
+// var cpc = 1;
+// var coalPerSecond = 0;
+// var clicks = 0;
+// var maxClicks = 101;
+//
+// function coalClick(){
+// coal += cpc;
+// clicks += 1;
+//
+// }
+//
+// function cps(){
+// 	coal += coalPerSecond;
+// 	document.getElementById('coal').innerHTML = prettify(coal);
+// 	document.getElementById('coalPerSecond').innerHTML = prettify(coalPerSecond);
+// }
+//
 // function buyClickStocking(){
-// 	var stockingCost = Math.floor(coal - 25);
-// 	if (coal >= clickStocking){
+// 	var stockingCost = Math.floor(coal*(100));
+// 	if (coal >= clickBiggerStocking){
 // 		cpc++;
-// 		coal -= clickStocking;
-// 		document.getElementById('clickStocking').innerHTML = clickStocking;
+// 		coal -= clickBiggerStocking;
+// 		document.getElementById('buyBiggerStocking').innerHTML = clickBiggerStocking;
 // 	}
-// 	var nextCost = Math.floor(25 * Math.pow(1, cpc));
+// 	var nextCost = Math.floor(100 * Math.pow(1, cpc));
 // 	document.getElementById('clickBiggerStocking').innerHTML = nextCost;
 // }
 //
 // function buyBad(){
-// 	var badCost = Math.floor(coal - 100);
+// 	var badCost = Math.floor(coal - 50);
 // 	if (coal >= badCost){
 // 		bad += 1;
-// 		cps += 1;
+// 		coalPerSecond += 1;
 // 		coal -= badCost;
-// 		document.getElementById('coal').innerHTML = (coal);
-// 		document.getElementById('coalPerSecond').innerHTML = (cps);
+// 		document.getElementById('coal').innerHTML = prettify(coal);
+// 		document.getElementById('coalPerSecond').innerHTML = prettify(coalPerSecond);
 // 	}
 // 	var nextCost = Math.floor(50 * Math.pow(3, bad));
-// 	document.getElementById('badCost').innerHTML =(badCost);
+// 	document.getElementById('badCost').innerHTML = prettify(badCost);
+// }
+//
+// window.setInterval(cps, 1000);
+//
+//
+//
+// var maxClicks = 101;
+//
+// function clicks(){
+// 	if(clicks == maxClicks){
+// 		alert("YOU'VE BEEN BAD THIS YEAR");
+// 	}
 // }
 
-
-})
+window.setInterval(clicks, 1);
