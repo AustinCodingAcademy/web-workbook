@@ -9,9 +9,9 @@ countField.innerHTML = countNumber + 1;
 }
 
 // Tried to set up incremental alerts but ran out of time
-var hundredClicks = 2;
+var tenClicks = 10;
 function clicks(){
-	if(countField == hundredClicks){
-		alert("Hello How are you?");
+	if(countField == tenClicks){
+		alert("you're rich!");
 	}
 }
