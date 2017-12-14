@@ -21,7 +21,7 @@ window.onload = function(){
   // updates "paper sold" and "paper sold/sec"
   function updateReport() {
     $("#piecesPaper").text(Math.floor(data.totalPaper));
-    $("#paperSec").text((data.totalPaperSec).toFixed(3));
+    $("#paperSec").text((data.totalPaperSec).toFixed(1));
   }
 
   // adds paper to "total paper" when click button
@@ -36,10 +36,9 @@ window.onload = function(){
 //sets level
 
   $(".button").click(function (){
+      var addVal = $(this).data( "cost" );
     if ($(this).data( "cost" ) <= data.totalPaper ) {
-      /*these two lines make the height of employee headshot responsive*/
-      var picWidth = $('.headshot').width();
-      $('.headshot').css({'height':(picWidth * 1.25)+'px'});
+
       data.totalPaper -= parseFloat($(this).data( "cost" ).toPrecision(2));
       data.totalPaperSec += parseFloat($(this).data( "val" ));
       $( this ).children(".price").html( parseInt($( this ).children(".price").html()*1.3));
@@ -62,7 +61,7 @@ window.onload = function(){
 
 
   $("#michael").click(function (){
-    $("#michaelProf").slideDown();
+    $("#michaelProf").show();
     /*next four lines make height of employee profile and headshot responsive with the width*/
     var paperWidth = $('.employeeProf').width();
     $(".employeeProf").css({'height':(paperWidth * 1.25) + 'px'})
@@ -72,7 +71,7 @@ window.onload = function(){
 
 // make ryan appear
   $("#ryan").click(function (){
-    $("#ryanProf").slideDown();
+    $("#ryanProf").show();
     var paperWidth = $('.employeeProf').width();
     $(".employeeProf").css({'height':(paperWidth * 1.25) + 'px'})
     var picWidth = $('.headshot').width();
@@ -81,7 +80,7 @@ window.onload = function(){
 
 // make pam appear
   $("#pam").click(function (){
-    $("#pamProf").slideDown();
+    $("#pamProf").show();
     var paperWidth = $('.employeeProf').width();
     $(".employeeProf").css({'height':(paperWidth * 1.25) + 'px'})
     var picWidth = $('.headshot').width();
@@ -90,7 +89,7 @@ window.onload = function(){
 
 // make andy appear
   $("#andy").click(function (){
-    $("#andyProf").slideDown();
+    $("#andyProf").show();
     var paperWidth = $('.employeeProf').width();
     $(".employeeProf").css({'height':(paperWidth * 1.25) + 'px'})
     var picWidth = $('.headshot').width();
@@ -99,7 +98,7 @@ window.onload = function(){
 
 // make stanley appear
   $("#stanley").click(function (){
-    $("#stanleyProf").slideDown();
+    $("#stanleyProf").show();
     var paperWidth = $('.employeeProf').width();
     $(".employeeProf").css({'height':(paperWidth * 1.25) + 'px'})
     var picWidth = $('.headshot').width();
@@ -109,7 +108,7 @@ window.onload = function(){
 
 //make phyllis appear
   $("#phyllis").click(function (){
-    $("#phyllisProf").slideDown();
+    $("#phyllisProf").show();
     var paperWidth = $('.employeeProf').width();
     $(".employeeProf").css({'height':(paperWidth * 1.25) + 'px'})
     var picWidth = $('.headshot').width();
@@ -118,7 +117,7 @@ window.onload = function(){
 
 //make jim appear
   $("#jim").click(function (){
-    $("#jimProf").slideDown();
+    $("#jimProf").show();
     var paperWidth = $('.employeeProf').width();
     $(".employeeProf").css({'height':(paperWidth * 1.25) + 'px'})
     var picWidth = $('.headshot').width();
@@ -127,7 +126,7 @@ window.onload = function(){
 
 //make dwight appear
   $("#dwight").click(function (){
-    $("#dwightProf").slideDown();
+    $("#dwightProf").show();
     var paperWidth = $('.employeeProf').width();
     $(".employeeProf").css({'height':(paperWidth * 1.25) + 'px'})
     var picWidth = $('.headshot').width();
