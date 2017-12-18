@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="reset.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Customer Satisfaction</title>
+</head>
+
+<body>
+  <div class="form-container">
+    <form method="post" action="forms.html">
+      <label for="email">Enter Email</label>
+      <input id="email" required name="email" type="text" placeholder="jondoe@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+      <label for="password">Enter Password</label>
+      <input id="password" name="password" type="password" minlength="6" placeholder="*******">
+      <div class="chkbox">
+      <label for="checkbox">Remember Me</label>
+      <input id="checkbox" name="checkbox" type="checkbox">
+    </div>
+      <div class="radiobtn">
+        <label for="radio">Would you like to recieve hourly email updates about current offers?</label>
+        <input name="radio" class="radio" type="radio" value="Yes">Yes<br>
+        <input name="radio" class="radio" type="radio" value="No">No<br>
+      </div>
+      <label for="range">Please rate your experience on a scale of 1-10 (10 being the best).</label>
+      <input name="range" type="range">
+      <div class="buttons">
+        <input type="button" class="button" value="Reset">
+        <input type="submit" class="button" value="Submit">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
