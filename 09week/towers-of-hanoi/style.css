@@ -1,3 +1,11 @@
+* {
+  font-family: 'Roboto Condensed';
+}
+
+body {
+  background-color: lightblue;
+}
+
 [data-stack] {
   display: flex;
   justify-content: flex-start;
@@ -5,6 +13,7 @@
   height: 101px;
   background-color: aliceblue;
   margin: 25px;
+  max-width: 300px;
 }
 
 [data-block] {
@@ -32,7 +41,27 @@
   background-color: yellow;
 }
 
-#announce-game-won {
-  font-size: 50px;
+.click-counter {
+  width: 150px;
+  height: auto;
+  float: left;
   text-align: center;
+  font-size: 26px;
+  margin-left: 38px;
+}
+
+button {
+  background-color: lightgrey;
+  margin-top: 6px;
+}
+
+#announce-game-won {
+  margin-top: 10px;
+  margin-left: 60px;
+  font-size: 40px;
+}
+
+.blinking {
+  /* class to toggle back and forth for flashing text*/
+  color: red;
 }

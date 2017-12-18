@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Mike Mitchell Web Design</title>
+  <link rel="shortcut icon" href="img/mm.png" type="image/png">
+  <meta name="description" content="Welcome to Mike MItchell Web Design. Web Design, coding, and maintenence.">
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Bootstrap 4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  <!-- Bootstrap 3 -->
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monda">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla">
+
+
+</head>
+
+<body>
+
+
+  <!--  methods =get, post,put, delete-->
+
+  <div class="container">
+    <header>
+      <h3>Customer Satisfaction</h3>
+    </header>
+    <div class="row">
+
+
+      <form name="mainForm" action="forms.html" method="post">
+        <div class="col-sm-12">
+          <label for="URL"><h6>Enter your Website URL</h6></label>
+        </div>
+
+        <div class="col-sm-12">
+          <input type="URL" id="URL" placeholder="www.me.com" name="URL" class="text-inputs" size="60">
+        </div>
+
+        <div class="col-sm-12">
+          <label for="email"><h6>Enter your Email</h6></label>
+        </div>
+
+        <div class="col-sm-12">
+          <input type="email" required="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="email" placeholder="me@foo.com" name="email" class="text-inputs" size="60">
+        </div>
+
+        <div class="col-sm-12">
+          <label for="password"><h6>Enter your password</h6></label>
+        </div>
+
+        <div class="col-sm-12">
+          <input type="password" name="password" value="" minlength="6" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder="Enter password" class="text-inputs" size="60">
+        </div>
+        <br>
+        <div class="col-sm-12">
+          <h6>How was your experience with us?</h6>
+          <input type="radio" name="radio" class="radio"><label>Excellent</label>
+          <input type="radio" name="radio" class="radio"><label>Very Good</label>
+          <input type="radio" name="radio" class="radio"><label>Fair</label>
+          <input type="radio" name="radio" class="radio"><label>Poor</label>
+        </div>
+        <br>
+        <div class="col-sm-12">
+          <h6>How likely are you to use us again?</h6>
+    </div>
+<div class="col-sm-12">
+
+          <input type="range" required="rangeInput" name="inputName" id="inputId" value="0" min="0" max="10">
+          <output name="outputName" id="outputId">(from 1-10)</output>
+
+      </div>
+      <br>
+      <div class="col-sm-12">
+        <h6>I am a:</h6>
+        <input type="checkbox" value="" class="checkbox"><label>Professional</label>
+        <input type="checkbox" value="" class="checkbox"><label>Student</label>
+        <input type="checkbox" value="" class="checkbox"><label>Musician</label>
+      </div>
+      <br>
+      <div class="col-sm-12">
+        <input type="reset" name="" value="Reset">
+        <input type="submit" name="" value="Submit" id="submit">
+      </div>
+      </form>
+    </div>
+  </div>
+
+
+
+
+  <footer class="fixed-bottom">©Mike Mitchell 2017. Design & code by Mike Mitchell.</footer>
+</body>
+<!-- Boostrap 4 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<!-- Boostrap 4-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<!-- Boostrap 3-->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<script type="text/javascript" src="js/jquery.hoverIntent.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+<script src="js/script.js"></script>
+
+</html>

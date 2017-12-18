@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monda">
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+
+  <nav class="topbar">
+    <img class="logo" src="img/logo.png" alt="logo">
+
+    <img class="home" src="img/home-icon.png" alt="home image">
+    <span class="hometext">Home</span>
+
+    <img class="deal" src="img/deal-icon.png" alt="home image">
+    <span class="dealstext">Travel Deals</span>
+
+    <img class="schedule" src="img/schedule-icon.png" alt="home image">
+    <span class="schedstext">Flight Schedule</span>
+
+    <img class="login" src="img/login-icon.png" alt="home image">
+    <span class="loginstext">Register/Login</span>
+  </nav>
+
+  <div class="inputbox">
+
+    <div class="clickbarplane">
+      <img class="plane" src="img/plane-icon.png" alt="Plane Icon">
+    </div>
+
+    <div class="clickbarbed_car">
+      <img class="hotel" src="img/hotel-icon.png" alt="hotel icon">
+      <img class="car" src="img/car-icon.png" alt="car icon">
+    </div>
+
+    <div class="lookup">
+
+      <form class="main" action="index.html" method="post">
+
+        <input class="depart" type="text" name="depart" placeholder="Depart">
+        <input class="arrive" type="text" name="arrive" placeholder="Arrive">
+
+        <input class="departdate" type="date" name="departdate" placeholder="mm/dd/yyy" lookup=>
+        <input class="arrivedate" type="date" name="arrivedate" placeholder="mm/dd/yyy">
+
+        <p class="passtext">Passengers</p>
+
+        <select>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+       </select>
+
+        <div class="radio">
+          <input type="radio" name="type" value="Return"> Return &nbsp;&nbsp;&nbsp;
+          <input type="radio" name="type" value="One Way"> One Way
+        </div>
+        <!-- this is the closing div for "radio" -->
+
+        <div class="searchbutton">
+          <a href="http://www.kayak.com">
+            <p>Search Flights</p>
+          </a>
+        </div>
+        <!-- closes div for "searchbutton" -->
+    </div>
+    <!-- closes div for "lookup" -->
+    </form>
+  </div>
+  <!-- closes div for "inputbox". -->
+
+</body>
+  </html>

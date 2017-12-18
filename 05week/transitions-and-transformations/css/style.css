@@ -1,0 +1,82 @@
+.container {
+  margin: 0 auto;
+  width: 10%;
+}
+
+.container>div:nth-child(1) {
+  background-color: blue;
+}
+
+.container>div:nth-child(2) {
+  background-color: red;
+}
+
+.container>div:nth-child(3) {
+  background-color: yellow;
+}
+
+.container>div:nth-child(4) {
+  background-color: grey;
+}
+
+.container>div:nth-child(5) {
+  background-color: brown;
+}
+
+.container>div:nth-child(6) {
+  background-color: green;
+}
+
+.container>div:nth-child(7) {
+  background-color: purple;
+}
+
+.container>div:nth-child(8) {
+  background-color: black;
+}
+
+.container>div:nth-child(9) {
+  background-color: lightblue;
+}
+
+.container>div:nth-child(10) {
+  background-color: lightgreen;
+}
+
+.container>div:nth-child(11) {
+  background-color: tan;
+}
+
+.container>div:nth-child(12) {
+  background-color: aqua;
+}
+
+.container :nth-child(odd) {
+  transition: all 5s;
+  transition-delay: .2s;
+}
+.container :nth-child(even) {
+  transition: all 5s;
+  transition-delay: .2s;
+}
+
+.container:hover :nth-child(odd) {
+  transform: translate(-500px) scale(.5) rotateZ(360deg);
+  transition: all .3s ease-in-out;
+  /*transition-delay: .2s;*/
+}
+
+.container:hover :nth-child(even) {
+  transform: translate(500px) scale(2.0) rotateZ(360deg);
+  transition: all 1s ease-in-out;
+  /*transition-delay: .2s;*/
+}
+
+
+
+.container>div {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+
+}

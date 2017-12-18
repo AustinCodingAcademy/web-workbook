@@ -1,0 +1,53 @@
+html {
+  font-family: helvetica;
+}
+
+#container {
+  width: 1300px;
+  display: flex;
+  background-color: lightgrey;
+  flex-wrap: wrap;
+}
+
+img {
+  margin: 20px;
+}
+
+.topstories {
+  background-color: lightblue;
+  width: 300px;
+  height: 425px;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+.lowertext {
+  width: 900px;
+  height: 200px;
+  margin: 20px;
+  margin-top: 10px;
+  background-color: lightgreen;
+}
+
+.techbox {
+  width: 120px;
+  height: 40px;
+  background-color: grey;
+  color: white;
+}
+
+.linkbox {width: 400px;
+height: 300px;
+background-color: purple;
+display: none;}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .topstories {
+    display: none;
+  }
+
+}
+
+@media (max-width: 767px) { .linkbox {display: flex;} }
