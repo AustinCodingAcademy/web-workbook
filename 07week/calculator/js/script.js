@@ -1,5 +1,37 @@
-'use strict';
+function addNumber(num) {
+  document.getElementById("results").value += num;
+}
 
-document.addEventListener("DOMContentLoaded", function(event) {
-    // You code here
-});
+function clearResults() {
+  document.getElementById("results").value = "";
+}
+
+function addition() {
+  document.getElementById("results").value += "+";
+}
+
+function subtraction() {
+  document.getElementById("results").value += "-";
+}
+
+function multiplication() {
+  document.getElementById("results").value += "*";
+}
+
+function division() {
+  document.getElementById("results").value += "/";
+}
+
+function plusMinus() {
+  document.getElementById("results").value += "*-1";
+  equals();
+}
+
+function equals() {
+  document.getElementById("results").value = eval(document.getElementById("results").value);
+}
+
+function deleteLast() {
+  var current=document.getElementById("results").value;
+  document.getElementById("results").value = current.substring(0, current.length-1);
+}
