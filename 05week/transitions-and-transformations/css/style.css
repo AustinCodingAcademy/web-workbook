@@ -1,0 +1,51 @@
+.container > div{
+  width: 100px;
+  height: 100px;
+  background: grey;
+  margin: 10px;
+}
+
+.container{
+  width: 10%;
+  margin: 0 auto;
+}
+
+.container :nth-of-type(even){
+  transition: all 2s ease;
+}
+
+.container :nth-of-type(odd){
+  transition: all 800ms ease;
+  transform-origin: bottom right;
+  transform-style: preserve-3d;
+}
+
+.container:hover .g1:nth-of-type(even)  {
+  transform: scale(2) translateX(300px) rotate(2160deg);
+  background: lightblue;
+}
+
+.container:hover .g2:nth-of-type(even){
+  background: lightgreen;
+  transform: scale(2) translateX(300px) rotate(2160deg);
+}
+
+.container:hover .g3:nth-of-type(even){
+  background: red;
+  transform: scale(2) translateX(300px) rotate(2160deg);
+}
+
+.container:hover .g1:nth-of-type(Odd)  {
+  background: yellow;
+  transform: scale(.5) translatex(-800px) rotate(-1080deg);
+}
+
+.container:hover .g2:nth-of-type(odd){
+  background: purple;
+  transform: scale(.5) translatex(-800px) rotate(-1080deg);
+}
+
+.container:hover .g3:nth-of-type(odd){
+  background: blue;
+  transform: scale(.5) translatex(-800px) rotate(-1080deg);
+}

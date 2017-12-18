@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>UX Atlantic</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+    <div class="top">
+      <div class="logo">
+        <img src="./img/logo.png" alt="logo">
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="#"><img src="./img/home-icon.png" alt=""><p class="nav-links main-link">Home</p></a></li>
+          <li><a href="#"><img src="./img/deal-icon.png" alt=""><p class="nav-links">Travel Deals</p></a></li>
+          <li><a href="#"><img src="./img/schedule-icon.png" alt=""><p class="nav-links">Flight Schedule</p></a></li>
+          <li><a href="#"><img src="./img/login-icon.png" alt=""><p class="nav-links">Login</p></a></li>
+        </ul>
+      </div>
+    </div>
+    </header>
+
+    <div class="content-box">
+      <main>
+        <div class="icons">
+          <ul>
+            <li class="main-form"><a href="#"><img src="./img/plane-icon.png" alt="planeicon"></a></li>
+            <li><a href="#"><img src="./img/hotel-icon.png" alt="hotelicon"></a></li>
+            <li><a href="#"><img src="./img/car-icon.png" alt="caricon"></a></li>
+          </ul>
+        </div>
+        <form class="travel-form" action="index.html" method="get">
+        <div class="destination">
+          <input type="text" name="depart" placeholder="Depart" class="formField">
+          <input type="text" name="arrive" placeholder="Arive" class="formField">
+          <input type="date" name="depart-Date" value="Depart" class="formField">
+          <input type="date" name="arrive-Date" value="Arrive" class="formField">
+        </div>
+        <div class="passenger-info">
+          <div class="quantity">
+            <label for="pass-qty">Passengers</label>
+            <select name="pass-qty" class="formField">
+              <option value="1" label="1" selected></option>
+              <option value="2" label="2"></option>
+              <option value="3" label="3"></option>
+              <option value="4" label="4"></option>
+              <option value="5" label="5"></option>
+              <option value="6" label="6"></option>
+            </select>
+
+          </div>
+          <div class="radio-bttns">
+            <form action="">
+              <input type="radio" checked="checked" name="direction" value="Return">
+              <label for="direction">Return</label>
+              <input type="radio" name="direction" value="One Way">
+              <label for="direction">One Way</label>
+            </form>
+          </div>
+
+        </div>
+        <button type="submit" name="Submit" class="bttn-Submit">Search Flights</button>
+        </form>
+        </main>
+      </div>
+
+
+  </body>
+</html>
