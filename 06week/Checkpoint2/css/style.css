@@ -1,0 +1,190 @@
+/* main spacing and stylizing on body of webpage*/
+body {
+	box-sizing: border-box;
+	font-size: 15px;
+	font-weight: inherit;
+	margin: 0px;
+	padding: 0px;
+	vertical-align: baseline;
+  background-color: black;
+  font-family: Verdana, Arial, sans-serif;
+  color: white;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  margin: 0px;
+}
+
+/* all the content is in this container*/
+#container {
+	display: flex;
+	flex-flow: row wrap;
+	height: 100%;
+	margin: 0px auto;
+	width: 75%;
+}
+
+/*styling for header*/
+header {
+  background: #008B94;
+  height: 100px;
+  margin-bottom: 1.2px;
+	height: 130px;
+	padding: .75px 1.4px;
+	text-align: left;
+  border: 1px solid black;
+	flex: 1 100%;
+}
+
+/*font styling of Taylor Bentley*/
+h1 {
+	color: black;
+	font-size: 70px;
+  font-family: "Cabin Sketch", cursive;
+  float: right;
+}
+
+/*photo headshot*/
+.mich {
+  max-width:100%;
+  border-top: .5px solid black;
+}
+
+/*flexbox on main content--image and article*/
+#slider {
+  display: flex;
+	align-content: flex-start;
+	align-items: flex-start;
+	flex-flow: row nowrap;
+	flex: 1 100%;
+	justify-content: space-between;
+	border: 1.5px solid black;
+  background-color: white;
+  color: black;
+}
+
+/*stylizing the font for main text*/
+article {
+  font-family: "Shadows Into Light Two";
+  font-size: 20px;
+	padding: 1px;
+}
+
+/*navigational links*/
+.navbar {
+	background-color: #FFDE0D;
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+	flex: 1 100%;
+	padding: 1px;
+	height: 80px;
+	text-align: center;
+  font-family: "Shadows Into Light Two";
+  color: black;
+  font-size: 20px;
+	width: 100%;
+}
+
+/*larger font for "Explore"*/
+.dropdown {
+  font-size: 25px;
+  font-weight: bolder;
+	height: 160px;
+	width: 100%;
+}
+.container-fluid {
+  display: flex;
+	flex: 1 100%;
+	flex-flow: row wrap;
+	height: 100%;
+  max-width: 100%;
+  padding: 20px;
+	margin: 10px;
+  flex-basis: 1;
+	flex-grow: 2;
+	justify-content: center;
+	align-items: center;
+}
+.col-lg-12 {
+	display: flex;
+	flex: 1 100%;
+	flex-flow: row wrap;
+	height: 100%;
+  max-width: 100%;
+  padding: 20px;
+	margin: 10px;
+  flex-basis: 1;
+	flex-grow: 2;
+	justify-content: center;
+	align-items: center;
+}
+.porty {
+	display: flex;
+	flex: 1 100%;
+	flex-flow: row wrap;
+	height: 100%;
+	margin: 0px auto;
+	width: 100%;
+	background-color: pink;
+}
+/*link sizing*/
+a {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/*clicked links turn black*/
+a:visited {
+  color: black;
+}
+
+/*media query 945-2000px wide allows slider content to change from row to column*/
+@media screen and (max-width: 2000px) and (min-width: 945px){
+	.navbar {
+		width: 100%;
+		height: 160px;
+		flex-flow: column wrap;
+	}
+	.porty {
+		width:100%;
+		justify-content: flex-start;
+	}
+}
+
+/*media query 945px (or less) wide allows slider content to change from row to column*/
+@media screen and (max-width: 945px){
+	.navbar {
+		height: 160px;
+		flex-flow: column wrap;
+	}
+}
+
+/*media query between 600-888px wide allows slider content to change from row to column*/
+@media screen and (max-width: 888px) and (min-width:600px){
+  #slider{
+    display: flex;
+    flex-flow: column wrap;
+  }
+  img {
+    width:100%;
+  }
+	.navbar {
+		height: 160px;
+	}
+}
+
+
+/*media query between 400-600px wide changes the size of "Taylor Bentley" & slider content changes from row to column*/
+@media screen and (max-width: 600px) and (min-width:400px){
+  h1 {
+    font-size: 45px;
+    font-family: "Cabin Sketch", cursive;
+  }
+  #slider{
+    display: flex;
+    flex-flow: column wrap;
+  }
+	.navbar {
+		height: 160px;
+	}
+}
