@@ -1,0 +1,181 @@
+/* styling!*/
+
+body {
+  background: black;
+}
+.main {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	margin-top: 25px;
+    color: white;
+	text-align: center;
+	font-size: 4em;
+	font-family: sans-serif;
+}
+
+h2 {
+	margin-top: 0;
+    font-size: 2.5em;
+    font-weight: 100;
+    color: #9966ff;
+}
+
+
+/*Overlay Styles*/
+#overlay {
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	background-color: white;
+	overflow-x: hidden;
+	transition: 0.5s;
+}
+
+#menu {
+	position: fixed;
+	height: 300px;
+	width: 500px;
+	background-color: black;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 2px;
+	border: 8px solid #e8e8e8;
+	box-shadow: 0px 5px 1px -2px rgba(0,0,0,0.2);
+}
+
+#final-score {
+	text-align: center;
+}
+
+#reward {
+	margin-top: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: white;
+}
+
+/*Game Asset Styles*/
+#click-button {
+	width: 150px;
+	padding: 24px 16px;
+	border-radius: 2px;
+	background-color: #ccccff;
+	box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    /*Disable User Highlighting*/
+    -webkit-user-select: none; /* Chrome/Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE */
+}
+
+#click-button:hover {
+	cursor: pointer;
+	opacity: .9;
+}
+
+#click-button p {
+	margin: auto;
+	color: white;
+	font-family: sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#restart-button {
+	width: 150px;
+	margin-top: 20px;
+	padding: 18px 16px;
+	border-radius: 2px;
+	background-color: #9966ff;
+	box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    /*Disable User Highlighting*/
+    -webkit-user-select: none; /* Chrome/Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE */
+}
+
+#restart-button:hover {
+	cursor: pointer;
+	opacity: .9;
+}
+
+#restart-button p {
+	margin: auto;
+	color: white;
+	font-family: sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#restart-button-2 {
+	width: 150px;
+	margin: 25px auto 0 auto;
+	padding: 18px 16px;
+	border-radius: 2px;
+	background-color: grey;
+	box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+    /*Disable User Highlighting*/
+    -webkit-user-select: none; /* Chrome/Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE */
+}
+
+#restart-button-2:hover {
+	cursor: pointer;
+	opacity: .9;
+}
+
+#restart-button-2 p {
+	margin: auto;
+	color: white;
+	font-family: sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#score {
+	font-family: sans-serif;
+	color: #ccccff;
+	font-weight: 700;
+	font-size: 1.5em;
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+#clock {
+	z-index: -3;
+	position: absolute;
+	top: -15px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-size: 100vh;
+	color: #7d7d7d;
+}
