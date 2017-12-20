@@ -1,0 +1,73 @@
+body{
+    background-color: #E9E09F;
+    background-image: url("../img/stars.jpg");
+    background-size: cover;
+}
+
+.oddLilBox, .evenLilBox{
+  height: 100px;
+  width: 100px;
+  border-radius: 10%;
+  margin: 15px;
+  transition: all 2s ease-in;
+
+
+}
+
+
+main{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+width: 100px;
+margin: auto;
+}
+
+main:hover > .oddLilBox{
+  transform: translateX(500px) translateY(300px) rotate(720deg);
+  height: 2px;
+  width: 2px;
+  margin-bottom: 50px;
+  background-color: #F8FBFA;
+  border-radius: 50%;
+  border: hidden;
+
+}
+
+main:hover > .evenLilBox{
+  transform: translateX(-500px) translateY(300px) rotate(-720deg);
+  height: 2px;
+  width: 2px;
+  margin-bottom: 50px;
+  background-color: #F8FBFA;
+  border-radius: 50%;
+  border: hidden;
+
+}
+
+
+.redBox{
+  border:7px solid #E61E28;
+}
+
+.orangeBox{
+  border:7px solid #F26530;
+}
+
+
+.greenBox{
+  border: 7px solid #8DC641;
+}
+
+.blueBox{
+  border: 7px solid #27BDB2;
+}
+
+.purpleBox{
+  border: 7px solid #882F45;
+}
+
+.pinkBox{
+  border: 7px solid #F9107E;
+}

@@ -1,0 +1,151 @@
+body{
+	/* user select prevents hilighting text when repeatedly clicking buttons*/
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: #938D8D;
+	background-image: url(../img/black-linen-2.png);
+}
+
+#theOffice{
+	display: flex;
+	flex-direction: row;
+}
+
+/*Styling "bulletin board" and buttons*/
+
+#bulletin{
+	width: 30%;
+	border: 10px ridge #BD8556;
+	padding: 1em;
+	background-image: url(http://images.all-free-download.com/images/graphiclarge/cork_board_208292.jpg);
+	box-shadow: 10px 10px 30px #121212;
+	font-family: 'Walter Turncoat', cursive;
+	color: #01005E;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+
+/*The main button clicked for paper*/
+#paperButton{
+	background-color: white;
+	width: 100%;
+	box-shadow: 3px 3px 20px #98591E;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 2px;
+  background: -webkit-linear-gradient(left top, white, #ddd);
+  background: -o-linear-gradient(bottom right, white, #ddd);
+  background: -moz-linear-gradient(bottom right, white, #ddd);
+  background: linear-gradient(to bottom right, white, #ddd);
+	transition: all 50ms;
+	padding: 50px 0px 15px 0px;
+	margin: auto;
+}
+
+#paperButton:active{
+	box-shadow: 1px 1px 10px #98591E;
+	transform: translate(2px, 2px)
+}
+
+h2{
+	text-align: center;
+	align-self:center;
+	margin: auto;
+}
+
+/*Shows accumulated amount of paper*/
+#piecesPaper{
+	height: 1.15em;
+	text-align: left;
+	display: inline-block;
+}
+
+/*all "store" buttons used to hire employees*/
+.button{
+	margin:10px;
+	background-color: white;
+	box-shadow: 3px 3px 20px #98591E;
+	padding: 10px;
+	background: -webkit-linear-gradient(left top, white, #ddd);
+  background: -o-linear-gradient(bottom right, white, #ddd);
+  background: -moz-linear-gradient(bottom right, white, #ddd);
+  background: linear-gradient(to bottom right, white, #ddd);
+	text-align: center;
+	width: 70%;
+}
+
+strong{
+	font-size: 30px;
+}
+
+.button:active{
+	box-shadow: 1px 1px 10px #98591E;
+	transform: translate(2px, 2px)
+}
+
+/*Styling for side where employee pictures appear*/
+#otherSide{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 70%;
+	font-family: 'Anonymous Pro', monospace;
+}
+
+header{
+	display: flex;
+	background-image: url(../img/DunderMifflinLogo.png);
+	height: 200px;
+	width: 500px;
+	background-size: cover;
+	background-position: center top;
+	/* margin-left: auto;
+	margin-right: auto; */
+	margin-top: 20px;
+	margin-bottom: 15px;
+	box-shadow: 2px 2px 10px black;
+}
+
+#employeePics{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.employeeProf{
+	width: 20%;
+	background-image: url(../img/note.png);
+	background-size: 100% 100%;
+	background-position: center top;
+	margin: 0em 1.5em 0em 1.5em;
+	padding:50px 35px;
+	display:flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.headshot{
+	height: auto;
+	width: 30%;
+	border-radius: 3px;
+	box-shadow: 1px 1px 2px grey;
+	float: left;
+}
+
+h3{
+	margin-top: 40px;
+}
+
+.words{
+	margin-top: -15px;
+}

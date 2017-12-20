@@ -1,0 +1,453 @@
+
+/*styling is organized top to bottom as the page is.*/
+/*media queries for responsive design are added after styling for the element to which they apply*/
+
+
+body{
+  background-color: #F8F9FA;
+  color: #483C32;
+}
+
+/*Header styling*/
+
+.logo{
+  font-family: 'Clicker Script';
+  font-weight: bold;
+  color: inherit;
+}
+
+.logo:hover{
+  text-decoration: none;
+  color: inherit;
+  font-weight: normal;
+}
+
+header{
+padding-bottom: 100px;
+}
+
+.logoBox{
+  height: 1000%;
+  width: 80%;
+  margin: 150px auto 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*for tablet*/
+@media (min-width: 768px) and (max-width: 991px){
+  .logoBox{height: 800%;
+  }
+}
+
+/*for mobile*/
+@media (max-width: 767px){
+  .logoBox{height: 500%;
+  }
+}
+
+h1{
+  font-size: 1000%;
+  text-align: center;
+}
+
+/*for tablet*/
+@media (min-width: 768px) and (max-width: 991px){
+  h1{font-size: 800%;
+  }
+}
+
+/*for mobile*/
+@media (max-width: 767px){
+  h1{font-size: 500%;
+  }
+}
+
+  /*adds decorative hover effect to "logo" */
+.bigDot{
+  height: 0px;
+  width: 0px;
+  border-radius: 50%;
+  background-color: #B667D2;
+  opacity: 0.5;
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.5s; /*safari*/
+  -o-transition: all 0.5s; /*opera*/
+  -moz-transition: all 0.5s; /*mozilla*/
+  transition: all 0.5s;
+}
+
+.logoBox:hover > .bigDot{
+  height: 350px;
+  width: 350px;
+  background-color: #B667D2;
+}
+
+/*for tablet*/
+@media (min-width: 768px) and (max-width: 991px){
+  .logoBox:hover > .bigDot{
+    height:300px;
+    width: 300px;
+  }
+}
+
+/*for mobile*/
+@media (max-width: 767px){
+  .logoBox:hover > .bigDot{
+    height: 250px;
+    width: 250px;
+  }
+}
+
+.tagline{
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+}
+
+.sectionTitle{
+  text-align: center;
+}
+
+/*Portfolio Styling*/
+#portfolio{
+  background-color: #C9BFB7;
+  padding: 50px;
+  -moz-box-shadow: inset 5px 5px 10px #483C32; /*firefox*/
+  -webkit-box-shadow: inset 5px 5px 10px #483C32; /*safari*/
+  box-shadow: inset 5px 5px 10px #483C32;
+}
+
+.portHeader {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  color: black;
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0 auto 2rem;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  color: #444;
+  font-weight: 100;
+  width: 90%;
+}
+
+hr {
+  width: 80%;
+  margin-bottom: 30px;
+  border-top: 1px solid #483C32
+}
+
+.portfolio {
+  margin-top: 50px;
+  width: 90%;
+  margin: 50px auto;
+  max-width: 1100px;
+}
+
+.portfolioItem {
+  position: relative;
+  display: block;
+  width: 90%;
+  height: 200px;
+  margin: 0 auto 2rem;
+  background-color: lightblue;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: all .4s ease;
+  background-position: center top;
+  background-size: cover;
+}
+
+/*for tablet*/
+@media  (min-width: 768px) and (max-width: 991px){
+  .portfolioItem {
+    display: inline-block;
+    width: 45%;
+    margin-left: 1.5em;
+  }
+}
+
+/*for mobile*/
+@media screen and (min-width: 992px) {
+  .portfolioItem {
+    display: inline-block;
+    width: 30%;
+    margin-left: 25px;
+  }
+}
+
+  /*adds overlay with link to codepen and hover effects*/
+.portOverlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+
+.portOverlay:after {
+  content: '';
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  background-color: #202020;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: -10;
+  left: 0;
+  -o-transition: all .3s ease; /*opera*/
+  -moz-transition: all .3s ease; /*mozilla*/
+  -webkit-transition: all .3s ease; /*safari*/
+  transition: all .3s ease;
+}
+
+.portTitle {
+  position: relative;
+  top: -200px;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
+  -o-transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3); /*opera*/
+  -moz-transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3); /*mozilla*/
+  -webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3); /*safari*/
+  transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+}
+
+.portDescription {
+  position: relative;
+  top: -200px;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+  -o-transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3); /*opera*/
+  -moz-transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3); /*mozilla*/
+  -webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3); /*safari*/
+  transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+}
+
+.portLink {
+  position: relative;
+  display: block;
+  width: 80%;
+  top: 200px;
+  padding: 10px;
+  margin: 0 auto;
+  color: white;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 3px;
+  font-size: 1em;
+  -o-transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3); /*opera*/
+  -moz-transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3); /*mozilla*/
+  -webkit-transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3); /*safari*/
+  transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+}
+
+.portLink:hover {
+  background-color: white;
+  color: #202020;
+  text-decoration: none;
+}
+
+.portfolioItem:hover .portTitle {
+  top: 0;
+}
+
+.portfolioItem:hover .portDescription {
+  top: 0;
+}
+
+.portfolioItem:hover .portLink {
+  top: 0;
+}
+.portfolioItem:hover .portOverlay:after {
+  opacity: .75;
+}
+
+  /*add images to portfolio tiles*/
+.airplane {
+  background-image: url(../img/airplaneThumbnail.png);
+}
+
+.driftwood {
+  background-image: url(../img/driftwoodThumbnail.png);
+}
+
+.nasa {
+  background-image: url(../img/nasaThumbnail.png);
+}
+
+.calc {
+  background-image: url(../img/Calculator.png);
+}
+
+.transitions {
+  background-image: url(../img/transitionsThumbnail.png);
+}
+
+.welcome {
+  background-image: url(../img/welcomeThumbnail.png);
+}
+
+/*about and contact section styling*/
+
+#aboutContact{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+  /*about me*/
+#about{
+  margin:0px;
+}
+
+#aboutText{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/*links to social media and other sites*/
+#whereToFindMe{
+  margin: 50px auto;
+  color: inherit;
+  text-align: center;
+  font-size: 150%;
+}
+
+.socialHr{
+  width:40%
+}
+
+.socialLink{
+  text-decoration: none;
+  color: inherit;
+  -o-transition: all 150ms; /*opera*/
+  -moz-transition: all 150ms; /*mozilla*/
+  -webkit-transition: all 150ms; /*safari*/
+  transition: all 150ms;
+}
+
+.socialLink:hover{
+  font-weight: bolder;
+  text-decoration: none;
+  -o-text-shadow: 2px 2px 5px #E2BAF2; /*opera*/
+  -moz-text-shadow: 2px 2px 5px #E2BAF2; /*mozilla*/
+  -webkit-text-shadow: 2px 2px 5px #E2BAF2; /*safari*/
+  text-shadow: 2px 2px 5px #E2BAF2;
+  color: inherit;
+}
+
+  /*contact form styling*/
+#name, #email, #phone, #message{
+  background-color: #F8F9FA;
+  border: 1px solid #483C32;
+  border-radius: 3px;
+}
+
+#sendButton{
+  position: relative;
+  display: block;
+  width: 60%;
+  padding: 5px;
+  margin: 0px auto;
+  color: #483C32;
+  background-color: #F8F9FA;
+  letter-spacing: 3px;
+  text-decoration: none;
+  border: 1px solid #483C32;
+  border-radius: 3px;
+  font-size: 1.25em;
+  -o-transition: all 0.3s; /*opera*/
+  -moz-transition: all 0.3s; /*firefox*/
+  -webkit-transition: all 0.3s; /*safari*/
+  transition: all 0.3s;
+}
+
+#sendButton:hover {
+  background-color: #483C32;
+  color: #E2BAF2;
+}
+
+
+/*footer and social/other links here*/
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  height:4em;
+  z-index: -2;
+}
+
+.iconContain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.icon{
+  height:2em;
+  margin-left: 15px;
+  margin-right: 15px;
+
+}
+
+
+  /*adds decorative hover effect to footer link/icons*/
+.smallDot1{
+  height:0em;
+  width: 0em;
+  border-radius: 50%;
+  background-color: #FCEF9C;
+  z-index: -1;
+  position: absolute;
+  -o-transition: all 0.3s; /*opera*/
+  -moz-transition: all 0.3s; /*firefox*/
+  -webkit-transition: all 0.3s; /*safari*/
+  transition: all 0.3s;
+}
+
+.smallDot2{
+  height:0em;
+  width: 0em;
+  border-radius: 50%;
+  background-color: #D7B0E6;
+  z-index: -1;
+  position: absolute;
+  -o-transition: all 0.3s; /*opera*/
+  -moz-transition: all 0.3s; /*firefox*/
+  -webkit-transition: all 0.3s; /*safari*/
+  transition: all 0.3s;
+}
+
+.iconContain:hover > .smallDot1{
+    height:3.25em;
+    width: 3.25em;
+}
+
+.iconContain:hover > .smallDot2{
+    height:3.25em;
+    width: 3.25em;
+}
