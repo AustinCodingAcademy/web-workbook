@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--above tags must come first in the head -->
+
+    <title>Shay's Portfolio Website</title>
+
+    <!--below links: bootstrap links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+
+    <!-- below is the link to my css stylesheet -->
+    <link rel="stylesheet" href=css/checkpointtwocss.css>
+  </head>
+
+
+<!-- body section starts below -->
+  <body>
+
+    <!--Navbar things below! -->
+    <!-- navbar pulled from w3schools; dark navbar template that toggles -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+  <!-- Brand/my name -->
+  <!-- maybe change font, change to match the font in the aboce-the-fold section; look into google fonts -->
+      <a class="navbar-brand myName" href="https://www.linkedin.com/in/shay-hoffman-89600a151/" target="_blank"><h3>Shay Hoffman</h3></a>
+
+  <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#aboutMe">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- everything in the header is above the fold -->
+<header>
+  <div class="row">
+    <div class="col-md-12 header">
+      <!-- considering changing the font of my name to something more fun...I also liked Krista's idea of adding some kind of simple effect to increase likelihood of clicking h1 -->
+      <a class="h1" href="https://www.linkedin.com/in/shay-hoffman-89600a151/" target="_blank"><h1 class="myName">Shay Hoffman</h1></a>
+    </div>
+  </div>
+</header>
+
+<!--this is where the 'about me' section starts. Not going to label it on the pagel; self explanatory -->
+<main>
+  <section id="aboutMe">
+  <div class="row">
+    <div class="col-md-6 aboutSection">
+      <!--using col-md-6 for organizational reasons with my text and image -->
+      <!-- maybe consider adding a thin black border around this section? -->
+      <article>
+        <div class="aboutMe">
+          <!-- when this page gets collapsed, why does the paragraph bleed down behind the selfie image? -->
+          <p>I was born in McAllen, Texas, a town just a few miles north of the Texas/Mexico border. I graduated from high school with honors and then fulfilled a longtime dream of attending my parents' alma mater, the University of Texas at Austin, where I earned college honors through achieving a 3.7 overall GPA, after double-majoring in English Literature and Geography. Upon graduation, I added to my identity capital through attending Austin Coding Academy to become a full-stack web developer, and pick up a valuable life skill that will only appreciate in value in the future. I plan to complete their entire 3-module program, then either look for work as a junior web developer, or attend graduate or law school. To learn more, please visit my LinkedIn page <a class="inlinelink" href="https://www.linkedin.com/in/shay-hoffman-89600a151/" target="_blank">here</a>.
+          Some of my other interests incude British history, equestrian sports and horse rescue, reading biographies of famous historical women, happiness research, basketball and football. I also am interested in raising awareness for invisible illnesses like the one I am afflicted with, <a class="inlinelink" href="http://www.dysautonomiainternational.org/page.php?ID=30" target="_blank">POTS Syndrome</a>, and one of the newer scourges of millenials, <a class="inlinelink" href="http://fightthenewdrug.org/" target="_blank">porn addiction</a>. I live in the greater Austin area with my Westie, <a href="#indie">Indiana Jones</a> (see bottom of page).</p>
+          <!-- add an a tag around 'Indiana Jones' so they can click on it, and it will jump down to the image, kind of like the links in the top navbar jump down to the corresponding sections (done) -->
+        </div>
+      </article>
+    </div>
+    <!-- link the selfie image to linkedin (done) -->
+    <div class="col-md-6" id="aboutPic">
+      <a href="https://www.linkedin.com/in/shay-hoffman-89600a151/" target="_blank"><img class="selfie" src="selfie.jpg" alt="Derpy selfie of Shay (owner of page)"></a>
+    </div>
+  </div>
+</section>
+
+  <!--below will the Portfolio section -->
+  <section id="portfolio">
+    <div class="container">
+      <h2 class="text-center">Portfolio</h2>
+      <div class="row">
+        <div class="col-md-4 portfolio-item">
+          <!-- link airplane screenshot to my codepen account  -->
+          <a class="portfolio-link" href="https://codepen.io/shayhoffman/" target="_blank">
+            <img class="img-fluid" src="airplanescreenshot.png" alt="linked image of a CodePen project">
+          </a>
+        </div>
+        <!-- breaking up the divs with extra lines for easier visibility/readability for my code -->
+        <div class="col-md-4 portfolio-item">
+          <!-- link all map images to pdf file of my portfolio PDF (done) -->
+          <a class="portfolio-link" href="https://www.arcgis.com/apps/MapJournal/index.html?appid=e4b0729b324c4f15914d940f54c217fe" target="_blank">
+            <img class="img-fluid" src="storymapscreenshot.png" alt="linked image of an ESRI StoryMap">
+          </a>
+        </div>
+
+        <div class="col-md-4 portfolio-item">
+          <!-- change one of the pdf file images to a screenshot of my ESRI StoryMap; map1 has been replaced with a screenshot of my storymap, and appropriately linked -->
+          <a class="portfolio-link" href="GISportfolio.pdf" target="_blank">
+            <img class="img-fluid" src="map2.png" alt="linked image of a map">
+          </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 portfolio-item">
+          <a class="portfolio-link" href="GISportfolio.pdf" target="_blank">
+            <img class="img-fluid map3" src="map3.png" alt="linked image of a map">
+          </a>
+        </div>
+
+        <div class="col-md-4 portfolio-item">
+          <a class="portfolio-link" href="GISportfolio.pdf" target="_blank">
+            <img class="img-fluid" src="map4.png" alt="linked image of a map">
+          </a>
+        </div>
+
+        <div class="col-md-4 portfolio-item">
+          <!-- link to pdf file of jewish paper (done) -->
+          <a class="portfolio-link" href="jewishpaper.pdf" target="_blank">
+            <img class="img-fluid" src="jewishpaperscreenshot.png" alt="linked screenshot of my paper on Christmas songs by Jews">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section below -->
+    <section id="contact">
+      <div class="container contact">
+        <h2 class="text-center">Contact Me</h2>
+        <div class="row">
+          <div class="col-md-8">
+            <form name="sentMessage" id="contactForm" novalidate>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls">
+                  <label>Name</label>
+                  <input class="form-control" id="name" type="text" placeholder="Name" required data-validation-required-message="Please enter your name.">
+                  <p class="help-blocl text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls">
+                  <label>Phone Number</label>
+                  <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required data-validation-required-message="Please enter your phone number.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls">
+                  <label>Message</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Message" required data-validation-required-message="Please enter a message."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <br>
+              <div id="success"></div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-success btn-lg" id="sendMessageButton">Send</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <!-- link image of Indie to linkedin -->
+            <a href="https://www.linkedin.com/in/shay-hoffman-89600a151/" target="_blank"><img class="selfie" id="indie" src="IMG_5343.jpg" alt="photo of my super cute Westie"></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+<!-- below is the footer/navbar area -->
+    <footer>
+    <!-- to create a toggled effect, and for consistency with the top navbar, I copy/pasted the stuff from my navbar at the top of my page -->
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+
+  <!-- Brand/my name -->
+        <a class="navbar-brand myName" href="https://www.linkedin.com/in/shay-hoffman-89600a151/" target="_blank"><h3>Shay Hoffman</h3></a>
+
+  <!-- Toggler/collapsibe Button -->
+  <!-- couldn't figure out why the bottom toggled button was targeting the top navbar toggled button. Changed the ID the button was targeting and it worked! -->
+  <!-- However, when toggled, the menu drops down instead of up  -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleFooter">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+
+  <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleFooter">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/shay.hoffman.33" target="_blank">Facebook</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/ShayHoffman" target="_blank">Twitter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.linkedin.com/in/shay-hoffman-89600a151/" target="_blank">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+
+  </body>
+</html>
