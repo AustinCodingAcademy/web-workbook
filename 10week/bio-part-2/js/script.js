@@ -38,7 +38,7 @@ window.onload = function() {
 
     function getRadius() {
       radius.push(Math.floor(10 + Math.random() * 50));
-      console.log(radius);
+      // console.log(radius);
 
     }
 
@@ -46,11 +46,15 @@ window.onload = function() {
 x = event.clientX; //get x from mouse positiion
 y = event.clientY;//get y from mouse positiion
 
-      console.log(x + ' ' + y);
+      // console.log(x + ' ' + y);
     }
 function getD() {
-  dx = Math.ceil(Math.random() * 5);
-  dy = Math.ceil(Math.random() * 5);
+  var posNegX = Math.round(Math.random())* 2 -1
+  var posNegY = Math.round(Math.random())* 2 -1
+  dx = Math.ceil(Math.random() * 5 * posNegX);
+  dy = Math.ceil(Math.random() * 5 * posNegY);
+  // console.log(posNegX + ' ' + posNegY);
+
 
 }
 
