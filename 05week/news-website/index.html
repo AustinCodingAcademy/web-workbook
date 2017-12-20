@@ -4,25 +4,67 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap 101 Template</title>
-
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <div class="container">
+      <header>
+      <!-- This is the header content -->
+        <h1>The Envato Tuts+ Report</h1>
+        <span>Read tutorial</span>
+      </header>
+      <main>
+      <!-- This is the main content -->
+        <div class="row main">
+          <div class="col-6">
+            <article>
+              <img src="http://via.placeholder.com/525x300" alt="">
+              <h2>Hello World</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+              <div class="bottom">
+                <span>By Joe Smith</span>
+                <span>42 comments</span>
+              </div>
+            </article>
+            <div class="nested row"> <!-- two columns nested  -->
+                <article id="nested1">
+                  <img src="http://via.placeholder.com/252x150" alt="">
+                  <h2>Hello World</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </article>
+                <article id="nested2">
+                  <img src="http://via.placeholder.com/252x150" alt="">
+                  <h2>Hello World</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </article>
+            </div>
+          </div>
+          <div class="col-6">
+            <article>
+              <img src="http://via.placeholder.com/525x300" alt="">
+              <h2>Hello World</h2>
+              <p>Lorem ipsum dolor dur sit amet, consectetur adipisicing elit.<br>
+              Lorem ipsum dolor sit dur amet, consectetur adipisicing elit.<br>
+              Lorem ipsum dolor sit dur amet, consectetur adipisicing elit.</p>
+              <div class="bottom first">
+                <span>By Joe Smith</span>
+                <span>42 comments</span>
+              </div>
+            </article>
+            <article>
+              <h2>Hello World</h2>
+              <p>Lorem ipsum dolor dur sit amet, consectetur adipisicing elit.</p>
+              <div class="bottom last">
+                <span>By Joe Smith</span>
+                <span>42 comments</span>
+              </div>
+            </article>
+      </div>
+    </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
   </body>
 </html

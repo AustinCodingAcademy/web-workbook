@@ -1,0 +1,104 @@
+body {
+  background-color: #07BB6F;
+}
+
+header {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 6%;
+  margin-bottom: 5%;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+header span {
+  text-decoration: underline;
+  opacity: 0.6;
+  font-size: 1.3rem;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+  display: flex;
+}
+
+.row div {
+  margin-bottom: 3%;
+}
+
+article {
+  background-color: white;
+  margin-bottom: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+article h2, article p, article span {
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+article h2 {
+  margin-top: 4%;
+  font-weight: bold;
+}
+
+article span {
+  font-size: 0.9rem;
+  margin-top: 3%;
+  width: max-content;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.first {
+  margin-top: 13.5%;
+}
+
+.last {
+  margin-top: 33%;
+}
+
+ .nested article {
+   width: 48%;
+ }
+
+#nested2 {
+  margin-left: 4%;
+}
+
+p {
+  margin-bottom: 0;
+  flex-flow: row wrap;
+}
+
+@media (max-width: 767px) {
+
+  .main {
+    flex-direction: column;
+    align-items: stretch;
+    width: 200%;
+  }
+
+   h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+    header span {
+      font-size: 1rem;
+    }
+}
