@@ -1,0 +1,143 @@
+body {
+  font-family: sans-serif;
+  display: flex !important;
+}
+
+
+img {
+  width: 100%;
+}
+
+.button {
+  background-color: #4d4d4d;
+  color: white;
+
+}
+
+h4 {
+  font-weight: lighter;
+  margin: 10px;
+}
+
+
+@media (max-width: 767px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+  }
+
+  .button {
+    align-self: flex-start;
+  }
+
+    #mobilenav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      background-color: #5d5d5d;
+      color: white;
+    }
+
+
+    .mobileitem h3 {
+
+
+    }
+    .mobileitem p {
+      font-weight: lighter;
+
+    }
+
+    .mobileitem img {
+      max-width: 25%;
+
+
+    }
+
+    .mobileitem hr {
+      padding-right: 50px;
+    }
+
+    #sidenav {
+      display: none;
+    }
+
+}
+
+
+/*tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button {
+    align-self: flex-start;
+  }
+
+  #mobilenav {
+    display: none;
+  }
+
+  #sidenav {
+    display: none;
+  }
+
+
+
+}
+
+/*laptop*/
+@media (min-width: 992px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    margin-right: 4%;
+  }
+
+  .button {
+    align-self: flex-start;
+  }
+
+  #sidenav {
+    margin-right: 2%;
+    flex: 1;
+  }
+
+  #sidenav h3 {
+    margin-top: 0px;
+  }
+
+  #sidenav p {
+    font-weight: 600;
+    font-size: .8em;
+  }
+
+  #mobilenav {
+    display: none;
+  }
+
+
+
+}
