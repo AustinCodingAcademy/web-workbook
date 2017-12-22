@@ -1,0 +1,139 @@
+/* Getting rid of all the default box-model settings*/
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: white;
+  font-family: verdana;
+}
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+  text-indent: 20px;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+h2 {
+  font-family: 'Permanent Marker', cursive;
+  color: yellow;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 35px;
+}
+h3 {
+  font-weight: normal;
+}
+
+/* HEADER ROW FORMATTING */
+header {
+  background-color: black;
+  border-bottom: solid 5px rgb(22,247,253);
+}
+header img {
+  width: 20%;
+}
+
+
+/*NAVIGATION COLUMN FORMATTING */
+#nav_column {
+  float: left;
+  width: 10%;
+}
+#nav_column ul {
+  display: block;
+  list-style-type: none;
+  text-transform: uppercase;
+/*Different font for Nav which matches logo font*/
+  font-family: 'Bangers', cursive;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+#nav_column li {
+  height: 50px;
+  width: auto;
+  margin: 10px;
+  border-radius: 10px;
+  text-indent: 5px;
+  padding-top: 15px;
+}
+#nav_column a {
+  text-decoration: none;
+}
+#nav_column a:link {
+    color: rgb(22,247,253);
+    font-weight: normal;
+}
+#nav_column a:visited {
+    color: black;
+    font-weight: normal;
+}
+#nav_column a:hover {
+    color: rgb(22,247,253);
+    font-weight: normal;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#nav_column a:active {
+    color: yellow;
+    font-weight: normal;
+}
+
+
+/*CONTENT COLUMN FORMATTING */
+#content_column {
+  float: left;
+  width: 63%;
+  margin: 1%;
+}
+#content_column p {
+  font-size: large;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+#content_column img {
+  display: block;
+  border: solid 3px black;
+  margin: auto;
+  border-radius: 10px;
+}
+.menu_items {
+  column-count: 2;
+  text-align: center;
+}
+
+
+/*CONTACT COLUMN FORMATTING */
+#contact_column {
+  float: right;
+  width: 23%;
+  margin: 1%;
+  text-align: center;
+}
+#contact_column p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#contact_column img {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+
+/*FOOTER FORMATTING */
+footer {
+  background-color: black;
+  color: white;
+  clear: both;
+  /* Fixed footer to bottom of page in case content does not reach bottom of screen */
+  position: fixed;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+  margin-top margin-bottom: auto;
+  border-top: solid 5px rgb(22,247,253);
+}
+footer p {
+  text-align: center;
+}
