@@ -1,0 +1,62 @@
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boxoddsmall{
+  display: flex;
+  height: 50px;
+  width: 50px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+.boxevenlarge{
+  display: flex;
+  height: 50px;
+  width: 50px;
+  -webkit-transition: -webkit-transform 15s;
+  transition: transform 15s;
+}
+
+.boxoddsmall:hover{
+  -webkit-transform: translateX(400px) rotate3d(0,0,1,180deg) scale(0.5);
+  transform:  translateX(400px) rotate3d(0,0,1,180deg) scale(0.5);
+}
+.boxevenlarge:hover{
+  /*clockwise*/
+  -webkit-transform: translateX(-400px) rotate(-180deg) scale(2);
+  transform: translateX(-400px) rotate(-180deg) scale(2);
+}
+
+
+.color1{
+  background-color: purple;
+}
+.color2{
+  background-color: red;
+}
+.color3{
+  background-color: yellow;
+}
+.color4{
+  background-color: green;
+}
+.color5{
+  background-color: orange;
+}
+.color6{
+  background-color: blue;
+}
+.color7{
+  background-color: violet;
+}
+.color8{
+  background-color: black;
+}
+.color9{
+  background-color: brown;
+}
+.color10{
+  background-color: pink;
+}
