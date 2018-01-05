@@ -6,6 +6,13 @@
   <title>Towers of Hanoi</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Arsenal|Roboto|Heebo" rel="stylesheet">
+<script type="text/javascript">
+ function resetGame() {
+  $('[data-stack="1"]').html('<div data-block="100"></div><div data-block="75"></div><div data-block="50"></div><div data-block="25"></div>');
+   $('[data-stack="2"]').empty();
+  $('[data-stack="3"]').empty();
+  }
+</script>
 </head>
 <body>    <!--stacks that hold the draggable data-blocks-->
   <div data-stack="1">
