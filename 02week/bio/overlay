@@ -1,0 +1,27 @@
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 50%;
+  height: 50%;
+  -webkit-transform:scale(0);
+  transition: 0.7s ease;
+}
+.overlaycontainer:hover .overlay {
+  transform: scale(1)
+}
+.text {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
