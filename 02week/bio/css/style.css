@@ -9,20 +9,32 @@ header {
   text-align: center;
 }
 
-nav {
-  clear: both;
-  text-align: center;
-  background: linear-gradient(#5499C7, lightblue);
-  font-weight: bolder;
-  margin: 10px;
-  border-radius: 5px;
+.resume {
+  position: absolute;
+  left: 960px;
+  top: 200px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background: linear-gradient(#5499C7, #259eef, lightblue);
+}
+
+.blog {
+  position: absolute;
+  left: 850px;
+  top: 200px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background: linear-gradient(#5499C7, #259eef, lightblue);
 }
 
 .about {
-  float: left;
-  margin: 150px;
+  position: absolute;
+  left: 400px;
+  top: 200px;
+  margin: auto;
   width: 400px;
-  height: 200px;
   border-radius: 50px;
   background: linear-gradient(#5499C7, lightblue);
 }
@@ -38,8 +50,9 @@ nav {
 
 .about>p {
   font-family: monospace;
+  font-size: 150%;
   text-indent: 15px;
-  margin: 10px;
+  padding: 15px;
 }
 
 .about>p::first-letter {
@@ -48,7 +61,9 @@ nav {
 }
 
 .photo {
-  margin: 65px;
+  position: absolute;
+  left: 60px;
+  top: 200px;
   border-radius: 50px;
 }
 
@@ -61,7 +76,10 @@ nav {
 }
 
 .link {
-  color: #00C1FF;
+  position: absolute;
+  left: 30px;
+  top: 40px;
+  color: #0e3d5a;
   font-weight: 500;
   clear: both;
 }
