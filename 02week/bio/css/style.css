@@ -34,13 +34,16 @@ p {
 .box {
     height: 30px;
     width: 200px;
-
+    background: grey; /*for browser that do not support gradients */
     background: linear-gradient(to right, white, grey);
     border-style: solid;
     border-color: black;
     border-width: 3px;
     text-align: center;
     margin-top: 10px;
+    float: left;
+    padding: 4px;
+
 }
 
 #grad1 {
@@ -68,5 +71,5 @@ a {
   }
 
   a:hover {
-    color: Silver;
+    color: black;
   }
