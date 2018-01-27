@@ -1,0 +1,50 @@
+/*
+In your CSS, be sure to reference elements and implement inheritance.
+Use !important at least once to override inheritance.
+Change the appearance of the first letter of the first paragraph of each group of paragraphs on the page but only when the user hovers over it.
+Experiment with other combinations of selectors to achieve specific effects.
+*/
+
+section {
+  margin-bottom: 2em;
+}
+
+p.title {
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: .5em;
+  margin: 0em;
+}
+
+p.tagline {
+  font-size: .8em;
+  padding: .5em;
+  margin: 0em;
+}
+
+p.teaser {
+  font-size: 1em;
+}
+
+p.teaser:hover {
+  font-style: italic;
+}
+
+p.teaser:hover::first-letter {
+  font-size: 50px;
+  color: #903;
+  float: left;
+  line-height: 30px;
+  padding: 2px 5px 2px 3px;
+}
+
+section.booktour:hover {
+  background-color: lightgrey;
+  border: 1px solid #8f8f8f;
+  padding: 3px;
+  margin: 5px;
+}
+
+section.booktour p.teaser:hover::first-letter {
+  color: green !important;
+}
