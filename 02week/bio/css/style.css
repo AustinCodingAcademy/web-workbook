@@ -1,16 +1,26 @@
 body {
   background-image: url("../images/background.jpg");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
 }
 
 .bio-div {
+  height: 590px;
+  width: 900px;
   margin: 10% 40% 0 5%;
-  border-color: lightgreen;
-  border-style: solid rgba(0, 0, 0, .5);
-  background-color:rgba(240, 240, 240, 0.7);
+  background-color: rgba(240, 240, 240, 0.8);
+  border-radius: 80px;
+  border-style: solid;
+  border-color: gray;
+  padding-right: 40px;
+  border: 1px;
+  box-shadow: 5px 10px 18px #888888;
 }
 
-.bio-div::after {
+.clearfix::after {
   clear: both;
   display: block;
   content: ".";
@@ -18,39 +28,32 @@ body {
   height: 0;
 }
 
-.heading-div {
-  color: orange;
-  border-color: lightgray;
-  font-family: 'Lora', serif;
-  /*border-style: solid;*/
-}
-
 .heading-div h1 {
   margin-bottom: 0px;
   padding-left: 65px;
-}
-
-.heading-div h3 {
-  color: gray;
-  margin-top: 0px;
+  text-shadow: 1px 1px lightgray;
+  /*shadow to text obv*/
+  font-family: 'Dancing Script', cursive;
 }
 
 .links-div {
-  border-color: pink;
-  /*border-style: solid;*/
   float: left;
   width: 5%;
   font-size: 25px;
-  padding: 18px 0 0 18px;
+  padding: 25px 0 0 34px;
 }
 
-.intro {
+.bio-body-div h2 {
   font-size: 25px;
+  border-bottom: solid 2px;
+  margin: 0px auto 0px auto;
 }
 
 .bio-body-div {
-  border-color: lightblue;
-  /*border-style: solid;*/
   float: right;
   width: 90%;
+}
+
+.links-div a {
+  color: black;
 }
