@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>airplane</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  </head>
+  <body>
+    <div role="banner" class="header">
+      <img src="./img/logo.png" alt="logo">
+      <div class="nav-bar">
+        <div class="register-login">
+          <a href="#"><img src="./img/login-icon.png" alt="login icon">
+          <p>Register/Login</p></a>
+        </div>
+        <div class="flight-schedule">
+          <a href="#"><img src="./img/schedule-icon.png" alt="schedule icon">
+          <p>Flight Schedule</p></a>
+        </div>
+        <div class="travel-deals">
+          <a href="#"><img src="./img/deal-icon.png" alt="deals icon">
+          <p>Travel Deals</p></a>
+        </div>
+        <div class="home">
+          <a href="#"><img src="./img/home-icon.png" alt="home icon">
+          <p>Home</p></a>
+        </div>
+      </div>
+    </div>
+    <div role="main" class="main">
+      <div class="search-box">
+        <div class="search-categories">
+          <div class="plane">
+            <a href="#"><img src="./img/plane-icon.png" alt="plane icon"></a>
+          </div>
+          <div class="hotel">
+            <a href="#"><img src="./img/hotel-icon.png" alt="hotel icon"></a>
+          </div>
+          <div class="car">
+            <a href="#"><img src="./img/car-icon.png" alt="car icon"></a>
+          </div>
+        </div>
+        <form>
+          <input type="text" class="depart-field" placeholder="Depart" />
+          <input type="text" class="arrive-field" placeholder="Arrive" />
+          <input type="date" class="depart-date" />
+          <input type="date" class="arrive-date" />
+          <h5>Passengers</h5>
+          <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <input type="radio" name="trip-type" id="return" />
+          <label for="return">Return</label>
+          <input type="radio" name="trip-type" id="one-way" />
+          <label for="one-way">One Way</label>
+          <input type="submit" value="Search Flights">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
