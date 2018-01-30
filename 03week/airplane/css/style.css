@@ -3,23 +3,126 @@ UX Atlantic stylesheet
 
 */
 
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  background: url("../img/airline.jpg") #193a55 no-repeat;
+  background-size: cover;
+}
+
+img.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #dbdddd;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #09beae;
+}
+
 header {
-  background-color: darkblue;
+  background-color: #193a55;
   color: #fff;
   display: flex;
   justify-content: space-around;
+  color: #dbdddd;
+  border-bottom: 1px solid #b1bcc5;
 }
+
+header img {
+  margin: 3px;
+}
+
 header ul {
   display: inline-flex;
-  justify-content: flex-end;
   align-items: center;
-  list-style-type: none;
 }
 
 header ul li {
-  padding-right: 10px;
+  margin-right: 40px;
+  font-size: 90%;
 }
 
-main {
-  background: url("../img/airline.jpg")
+li.nav-home {
+  list-style-image: url("../img/home-icon.png")
+}
+
+li.nav-deals {
+  list-style-image: url("../img/deal-icon.png")
+}
+
+li.nav-sched {
+  list-style-image: url("../img/schedule-icon.png")
+}
+
+li.nav-login {
+  list-style-image: url("../img/login-icon.png")
+}
+
+div.reservation {
+  width: 400px;
+  margin: 80px 60px;
+  background-color: #193a55;
+  color: #dbdddd;
+  font-size: 80%;
+}
+
+div.reservation nav {
+  background-color: #018d80;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+div.reservation nav button {
+  border: none;
+  width: 134px;
+  height: 50px;
+}
+
+button.res-plane {
+  background-color: #0063b7;
+}
+
+button.res-hotel {
+  background-color: #018d80;
+}
+
+button.res-car {
+  background-color: #018d80;
+}
+
+button.res-plane:hover, button.res-hotel:hover, button.res-car:hover {
+  background-color: #004480;
+  border: 1px dotted #fff;
+}
+
+div.line {
+  display: block;
+  margin: 10px;
+}
+
+.depart-field, .arrive-field, .depart-date-field, .arrive-date-field {
+  background-color: #193a55;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 8px;
+  width: 140px;
+  margin: 0px 5px;
+}
+
+.depart-field, .depart-date-field {
+  margin-right: 20px;
+}
+
+input.submit-field {
+  background-color: #0063b7;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  margin: 10px;
+  width: 360px;
 }

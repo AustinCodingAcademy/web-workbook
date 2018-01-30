@@ -4,39 +4,62 @@
 <head>
   <meta charset="utf-8">
   <title>UX Atlantic. Imagine the bliss of truly flying.</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <header>
-    <img src="./img/logo.png" alt="UX Atlantic logo" title="UX Atlantic home">
+    <img src="./img/logo.png" class="logo" alt="UX Atlantic logo" title="UX Atlantic home">
     <ul>
-      <li><img src="./img/home-icon.png" alt=""> Home</li>
-      <li><img src="./img/deal-icon.png" alt=""> Travel Deals </li>
-      <li><img src="./img/schedule-icon.png" alt=""> Flight Schedule</li>
-      <li><img src="./img/login-icon.png" alt=""> Register/Login</li>
+      <!-- change images to custom bullet items -->
+      <li class="nav-home"> <a href="/">Home</a></li>
+      <li class="nav-deals"> <a href="/">Travel Deals</a> </li>
+      <li class="nav-sched"> <a href="/">Flight Schedule</a></li>
+      <li class="nav-login"> <a href="/">Register/Login</a></li>
 
     </ul>
   </header>
   <main>
     <div class="reservation">
       <nav>
+        <button type="button" class="res-plane"><img  src="./img/plane-icon.png"></button>
+        <button type="button" class="res-hotel"><img  src="./img/hotel-icon.png"></button>
+        <button type="button" class="res-car"><img  src="./img/car-icon.png"></button>
+        <!--buttons ; add hover color/effect
         <ul>
-          <li><img src="./img/plane-icon.png" alt=""></li>
-          <li><img src="./img/hotel-icon.png" alt=""></li>
-          <li><img src="./img/car-icon.png" alt=""></li>
+          <li class="res-plane"><img src="./img/plane-icon.png" alt=""></li>
+          <li class="res-hotel"><img src="./img/hotel-icon.png" alt=""></li>
+          <li class="res-car"><img src="./img/car-icon.png" alt=""></li>
         </ul>
+      -->
       </nav>
       <form class="reservation-form" action="index.html" method="post">
-        <input type="text" name="Depart" placeholder="Depart" class="depart-field">
-        <input type="text" name="Arrive" placeholder="Arrive" class="arrive-field">
-        <input type="date" name="depart-date" placeholder="mm/dd/yyyy" class="depart-date-field">
-        <input type="date" name="arrive-date" placeholder="mm/dd/yyyy" class="arrive-date-field">
-        <label for="passengers">Passengers</label>
-        <input type="dropdown" name="" value="" id="passengers">
-        <input type="radio" name="flight-type" value="return" id="return-flight"> <label for="return-flight"> Return</label>
-        <input type="radio" name="flight-type" value="oneway" id="oneway-flight"> <label for="oneway-flight"> One Way</label>
-        <input type="submit" name="Search Flights" value="" class="submit-field">
+        <div class="line">
+          <input type="text" name="Depart" placeholder="Depart" class="depart-field">
+          <input type="text" name="Arrive" placeholder="Arrive" class="arrive-field">
+        </div>
+        <div class="line">
+          <input type="date" name="depart-date" placeholder="mm/dd/yyyy" class="depart-date-field">
+          <input type="date" name="arrive-date" placeholder="mm/dd/yyyy" class="arrive-date-field">
+        </div>
+        <div class="line">
+          <label for="num-of-passengers">Passengers
+<select class="passenger-field" id="num-of-passengers" name="number">
+  <option value="1">1</option>
+    <option value="2">2</option>
+      <option value="3">3</option>
+        <option value="4">4</option>
+</select>
+        </label>
+          <input type="radio" name="flight-type" value="return" id="return-flight"> <label for="return-flight"> Return</label>
+          <input type="radio" name="flight-type" value="oneway" id="oneway-flight"> <label for="oneway-flight"> One Way</label>
+        </div>
+        <div class="line">
+          <input type="submit" name="search-button" value="Search Flights" class="submit-field">
+        </div>
       </form>
     </div>
   </main>
