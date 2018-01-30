@@ -1,6 +1,7 @@
 body{
-  background-image: url(https://buidln.clipdealer.com/000/906/341//previews/7--906341-Binary%20code%20-%20Background%20animation.jpg);
-  background-size: 100%;
+  background-color: rgb(204, 173, 188);
+  /*background-image: url(https://buidln.clipdealer.com/000/906/341//previews/7--906341-Binary%20code%20-%20Background%20animation.jpg);
+  background-size: 130%;*/
   margin-left: 10px;
 }
 
@@ -10,27 +11,61 @@ header {
   font-weight: bold;
 }
 
+/*Quote needs to be italicized*/
 #quote {
   font-size: 20px;
   font-family: arial;
+  font-style: oblique;
 }
 
-div {
-  border: 5px none green;
-  font-size: 20px;
+img {
+  height: 60%;
+  width: 28.8%;
+  float: left;
+  border-radius: 500px;
+}
+
+/*Keep the nav bar to the left and give each link some space between each other*/
+div.nav {
+  /*background-color: rgb(160, 33, 97);*/
+  overflow: hidden;
+  float: right;
+  border: none;
+  font-size: 40%;
+  font-family: arial;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 10%;
+  border-radius: 50px;
+  /*background-color: rgb(62, 232, 76);*/
+}
+
+/*Make the link's background color yellow*/
+a:hover{
+  background-color: yellow;
+}
+
+/*Bio will be to the right of the Nav bar. The div background will have a low
+opacity, but the Text can't be affected*/
+.bio {
+  border: solid;
+  border-style: outset;
+  border-color: rgb(195, 234, 190);
+  border-radius: 7%;
+  border-width: thick;
+  background-color: rgba(195, 234, 190, 0.6);
+  float: left;
+  padding: 0.25%;
+  width: 70%;
+  height: auto;
+  text-align: center;
+  font-size: 220%;
   font-family: arial;
 }
 
-.button {
-  padding-top: 15px;
-  text-align: center;
-  margin: 10px;
-  min-width: 100px;
-  min-height: 40px;
-  border-radius: 15px;
-  background-color: lightgreen;
-}
-
-section {
-
+footer{
+  float: right;
 }
