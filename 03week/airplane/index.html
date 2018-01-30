@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -31,45 +32,52 @@
   </div>
   <main>
     <div class="box">
-      <button type="button"><img src="./img/plane-icon.png"></i></button>
-      <button type="button"><img src="./img/hotel-icon.png"></i></i></button>
-      <button type="button"><img src="./img/car-icon.png"></button>
+      <button><img src="./img/plane-icon.png"></i></button>
+      <button><img src="./img/hotel-icon.png"></i></i></button>
+      <button><img src="./img/car-icon.png"></button>
       <form>
+        <label aria-label="Depart">
         <input type="text" name="Depart" value="" placeholder="Depart" />
-      </form>
-      <form>
-        <input type="date" name="Departure Date" value="" />
+        </label>
       </form>
       <form>
         <input type="text" name="Arrive" value="" placeholder="Arrive" />
       </form>
       <form>
+        <input type="date" name="Departure Date" value="" />
+      </form>
+
+      <form>
         <input type="date" name="Arrival Date" value="" />
       </form>
-      <label for="select-dropdown">Passengers</label>
-      <select id="select-dropdown">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-      </select>
+      <div class="dropdown">
+        <label for="select-dropdown">Passengers</label>
+        <select id="select-dropdown">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <!--
       <label>
+      <input type="radio" name="ticket-type" value="return"/>
       Return
-      <input type="radio" name="radio-group"/>
-    </label>
+      </label>
       <label>
+      <input type="radio" name="ticket-type" value="one-way"/>
       One Way
-      <input type="radio" name="radio-group"/>
-    </label>
+      </label>
       <form>
-        <input type="submit" />
+      <input type="submit" class="Search Flights" value="Search Flights"/>
       </form>
+    -->
     </div>
   </main>
 
