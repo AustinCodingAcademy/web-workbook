@@ -5,13 +5,13 @@
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, input, label {
-  color: #d5dce1;
-}
-
 body {
   background-image: url("../img/airline.jpg");
   background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6, p, input, label {
+  color: #d5dce1;
 }
 
 .header {
@@ -19,6 +19,10 @@ body {
   padding: 0 40px;
   background-color: #193a54;
   border-bottom: 1px solid #d5dce1;
+}
+
+.header p, h5, label {
+  font-size: 90%;
 }
 
 .nav-bar {
@@ -29,24 +33,16 @@ body {
   margin-right: 5px;
 }
 
-.header div {
+.header div, .nav-bar a {
   float: right;
 }
 
-.nav-bar img, .nav-bar p{
+.nav-bar img, .nav-bar p {
   display: inline-block;
-}
-
-.nav-bar a {
-  float: right;
 }
 
 a p:hover {
   color: #1567bd;
-}
-
-.header p, h5, label {
-  font-size: 90%;
 }
 
 .search-box {
@@ -60,8 +56,9 @@ a p:hover {
   display: inline;
 }
 
-form > h5 {
-  margin-right: 24px;
+.search-box img {
+  height: 30px;
+  width: 30px;
 }
 
 .plane, .hotel, .car {
@@ -85,13 +82,12 @@ form > h5 {
   border-top-right-radius: 5px;
 }
 
-.search-box img {
-  height: 30px;
-  width: 30px;
-}
-
 form {
   padding: 15px;
+}
+
+form > h5 {
+  margin-right: 24px;
 }
 
 input[type="text"], input[type="date"] {
@@ -102,8 +98,18 @@ input[type="text"], input[type="date"] {
   border-radius: 4px;
 }
 
-.depart-field, .depart-date {
+select {
+  height: 45px;
+  width: 57px;
+  padding: 10px;
   margin-right: 20px;
+}
+
+select, input[type="text"], input[type="date"] {
+  background-color: #193a54;
+  border: 2px solid #d5dce1;
+  color: #d5dce1;
+  display: inline-block;
 }
 
 input[type="submit"] {
@@ -115,21 +121,6 @@ input[type="submit"] {
   border-radius: 3px;
 }
 
-
-select, input[type="text"], input[type="date"] {
-  background-color: #193a54;
-  border: 2px solid #d5dce1;
-  color: #d5dce1;
-  display: inline-block;
-}
-
-select {
-  height: 45px;
-  width: 57px;
-  padding: 10px;
+.depart-field, .depart-date {
   margin-right: 20px;
 }
-/*
-input[type="radio"], label {
-  margin-right: 2px;
-} */
