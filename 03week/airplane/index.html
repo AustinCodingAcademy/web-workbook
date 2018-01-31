@@ -1,25 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>AirplaneLayout</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  </head>
-  <body>
-    <main>
-        <nav>
-        </nav>
 
+<head>
+  <meta charset="utf-8">
+  <title>AirlineReservation</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
 
+<body>
 
+  <nav>
+    <div id="backgroundbar">
+      <div class="menucontainer">
+        <img src="./img/logo.png">
+        <span class="navtext">
+          <a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+          <a href="#"><i class="fa fa-plane" aria-hidden="true"></i> Travel Deals</a>
+          <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> Flight Schedule</a>
+          <a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Registration/Login</a>
+        </span>
+      </div>
+    </div>
+  </nav>
 
+  <main>
+    <div class="menucontainer">
 
+      <section class="clearfix">
+        <div id="planebox" class="planetab">
+          <a href="#"><i class="fa fa-plane" aria-hidden="true"></i></a>
+        </div>
+        <div id="hotelbox" class="hoteltab">
+          <a href="#"><i class="fa fa-bed" aria-hidden="true"></i></a>
+        </div>
+        <div id="carbox" class="cartab">
+          <a href="#"><i class="fa fa-car" aria-hidden="true"></i></a>
+        </div>
+      </section>
 
+      <form class="AirplaneTicket">
+        <label aria-label="depart">
+          <input type="text" name="depart" placeholder="Depart" />
+      </label>
+        <label aria-label="arrive">
+          <input type="text" name="arrive" placeholder="Arrive"/>
+      </label>
+        <input type="date" />
+        <input type="date" />
+        <label class="selctppl"> Passengers
+          <select name="passengers">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+      </label>
+        <label>
+          <input type="radio" class="twobuttons" name="radiogroup" value="retun"> Return
+        </label>
+        <label>
+          <input type="radio" class="twobuttons" name="radiogroup" value="one-way"> One-way
+        </label>
+        <input type="button" class="button" value="Search Flights">
+      </form>
 
+    </div>
+  </main>
 
-    </main>
+</body>
 
-  </body>
 </html>
