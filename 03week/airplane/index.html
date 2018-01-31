@@ -5,15 +5,17 @@
   <title> Airline Search</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
   <main>
+
     <header>
       <div class="UX_Logo">
         <img src="img/logo.png" alt="UX Atlantic">
       </div>
-
       <menu>
-            <img src="img/home-icon.png" class="menu_icon" alt="Home">
+            <img src="img/home-icon.png" class="first_icon" alt="Home">
             <a href="www.gmail.com">Home</a>
             <img src="img/deal-icon.png" class="menu_icon" alt="Travel Deals">
             <a href="www.gmail.com">Travel Deals</a>
@@ -22,10 +24,11 @@
             <img src="img/login-icon.png" class="menu_icon" alt="Register/Login">
             <a href="www.gmail.com">Register/Login</a>
       </menu>
-
     </header>
-<div class="content">
-  <section>
+
+
+  <div class="content">
+    <section>
     <div class="plane">
       <img src="img/plane-icon.png" alt="Flights">
     </div>
@@ -52,18 +55,20 @@
 
         <div class="passengers">
           <input type="text" name="number" placeholder="1">
-          </div>
-  
+        </div>
+
 
         <div class="return">
-            <input type="radio" class="left" value="Return">
-            <input type="radio" class="right" value="One Way">
-          </div>
-            <div class="search_flights">
-              <input type="submit" class="submit_button" value="Search Flights">
-            </div>
-          </form>
+          <label for="radio-choice-1">Return</label>
+          <input type="radio" name="radio-choice" class="radio-choce-1" tabindex="2" value="choice-1">
+          <label for="radio-choice-1">One Way</label>
+          <input type="radio" name="radio-choice" class="radio-choice-2" tabindex="2" value="choice-1">
+        </div>
 
+        <div class="search_flights">
+              <input type="submit" class="submit_button" value="Search Flights">
+          </div>
+        </form>
         </section>
 
     </main>
