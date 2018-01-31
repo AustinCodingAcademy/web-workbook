@@ -7,36 +7,58 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
   <body>
-    <main class="">
-      <header class="">
-        <img src="img/logo.png" alt="UX Atlantic Logo" class="logo">
-        <menu class="">
-          <div class="navBar">
-            <div class="navButton">
-              <img src="img/home-icon.png" alt="Home Icon">
-              <a href="#">Home</a>
-            </div>
-            <div class="navButton">
-              <img src="img/deal-icon.png" alt="Travel Deal">
-              <a href="#">Travel Deals</a>
-            </div>
-            <div class="navButton">
-              <img src="img/schedule-icon.png" alt="Schedule Icon">
-              <a href="#">Flight Schedule</a>
-            </div>
-            <div class="navButton">
-              <img src="img/login-icon.png" alt="Login Icon">
-              <a href="#">Register/Login</a>
-            </div>
+    <div class="wrapper">
+    <header>
+      <img src="img/logo.png" alt="UX Atlantic Logo" class="logo">
+      <menu class="navBar">
+          <div class="navButton activePage">
+            <img src="img/home-icon.png" alt="Home Icon">
+            <a href="#">Home</a>
           </div>
-        </menu>
-      </header>
+          <div class="navButton">
+            <img src="img/deal-icon.png" alt="Travel Deal">
+            <a href="#">Travel Deals</a>
+          </div>
+          <div class="navButton">
+            <img src="img/schedule-icon.png" alt="Schedule Icon">
+            <a href="#">Flight Schedule</a>
+          </div>
+          <div class="navButton">
+            <img src="img/login-icon.png" alt="Login Icon">
+            <a href="#">Register/Login</a>
+          </div>
+      </menu>
+    </header>
+    <main>
       <div class="content">
-        <section class="searchBox">
-
-
+        <section class="topButtonWrapper">
+          <div class="topbutton activeButton">
+            <a href="#"><img src="img/plane-icon.png" alt="Plane Icon"></a>
+          </div>
+          <div class="topbutton">
+            <a href="#"><img src="img/hotel-icon.png" alt="Hotel Icon"></a>
+          </div>
+          <div class="topbutton">
+            <a href="#"><img src="img/car-icon.png" alt="Car Icon"></a>
+          </div>
         </section>
-      </div>
+        <form class="formfields">
+          <div class="inputFields" >
+            <input type="text" name="airportDeparture" placeholder="Depart" class="depart">
+            <input type="text" name="airportArrival" placeholder="Arrive" class="arrive">
+            <input type="date" name="departureDate" value="mm/dd/yyyy" class="depart date">
+            <input type="date" name="arrivalDate" value="mm/dd/yyyy" class="arrive date">
+            <label for="passengers" class="passengers">Passengers</label>
+            <input type="number" name="passengers" value="1" step="1" min="1" max="10" class="passengers">
+            <input type="radio" name="flights" value="return">
+            <label for="radio">Return</label>
+            <input type="radio" name="flights" value="one-way">
+            <label for="radio">One Way</label>
+            <button type="submit" name="searchFlights">Search Flights</button>
+            </select>
+          </div>
+        </form>
     </main>
+  </div>
   </body>
 </html>

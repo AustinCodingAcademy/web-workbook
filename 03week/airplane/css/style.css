@@ -1,40 +1,43 @@
-.boxy {
-    border: red solid 1px;
+.box {
+  border: red solid 1px;
 }
 
 body {
-  background: #123754;
-  margin: 0px;
+  background-color:black;
   font-family: 'Lato', sans-serif;
   color: white;
 }
 
-main {
-  width: 1024px;
-  height: 720px;
-  margin: auto;
+.wrapper {
   background-image: url(../img/airline.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
+  margin:auto;
+  max-width: 1074px;
+  max-height: 720px;
+  background-position: -100px 0px;
 }
 
 header {
-  height: 62px;
-  width: 100%;
-  background-color: #123754;
+  height: 61px;
+  width: 1074px;
+  text-align: center;
+  background-color: #193a55;
   border-bottom: white solid 1px;
+  margin: auto;
 }
 
 .logo {
-  height: 62px;
+  height: 61px;
   margin-left: 40px;
-  display: inline-block;
+  margin-top: 0px;
   float: left;
 }
 
 .navBar {
   display: inline-block;
   float: right;
-  margin: 30px 50px 10px;
+  margin: 27px 80px 10px;
 }
 
 .navButton {
@@ -43,27 +46,119 @@ header {
   margin-right: 5px;
 }
 
+.navButton img {
+  width: 12px;
+  height: 12px;
+}
+
 .navButton a {
   text-decoration: none;
   color: white;
+  font-size: 12px;
 }
 
-.navButton:hover  {
+.navButton a:hover {
   color: cyan;
 }
 
-.content {
-  width: 100%;
+.activePage a {
+  color: cyan;
+}
+
+main {
+  width: 1074px;
   height: 658px;
 }
 
-.searchBox {
+.topButtonWrapper {
   display: inline-block;
-  clear: both;
-  overflow: hidden;
-  height: 400px;
-  width: 400px;
   margin-left: 60px;
   margin-top: 75px;
-  background-color: #123754;
+  margin-bottom: 0;
+  background-color: #018d80;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 0px;
+}
+
+.topButtonWrapper>div {
+  width: 113.5px;
+  height: 44px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0px;
+  float: left;
+  text-align: center;
+}
+
+.topbutton a img {
+  width:30px;
+  height: auto;
+  padding-top: 7px;
+}
+
+.topbutton a {
+  width: 113.5px;
+  height: 44px;
+  display: block;
+  vertical-align: middle;
+}
+
+.topbutton a:hover, .activeButton {
+  background-color: rgb(0, 99, 183);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.formfields {
+  width: 340px;
+  height: 280px;
+  margin-left: 60px;
+  margin-top: -2px;
+  background-color: #193a55;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.inputFields input {
+  width: 145px;
+  height: 40px;
+  border: 1.5px solid white;
+  background-color: #193a55;
+  color: rgb(136, 147, 163);
+  border-radius: 5px;
+  font-size: 12px;
+  padding-left: 6px;
+  box-sizing: border-box;
+}
+
+.depart, .passengers, button[type=submit] {
+  margin: 25px 11px auto;
+}
+
+.arrive {
+  margin-left: 10px;
+}
+
+input.passengers {
+  width: 50px;
+  margin-right: 18px;
+}
+
+input[type=radio] {
+  width: 12px;
+  height: 12px;
+}
+
+label {
+  font-size: 14px;
+}
+
+button[type=submit] {
+  width: 310px;
+  height: 41px;
+  background-color: rgb(0, 99, 183);
+  border-radius: 5px;
+  color: white;
+  border: none;
 }
