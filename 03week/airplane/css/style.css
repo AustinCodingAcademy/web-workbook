@@ -1,6 +1,8 @@
 /*
 UX Atlantic stylesheet
 
+Palette: https://coolors.co/193a55-018d80-0063b7-f1f7ed-af9164
+
 */
 
 body {
@@ -16,7 +18,7 @@ img.logo {
 
 a:link, a:visited {
   text-decoration: none;
-  color: #dbdddd;
+  color: #f1f7ed;
 }
 
 a:hover {
@@ -29,7 +31,7 @@ header {
   color: #fff;
   display: flex;
   justify-content: space-around;
-  color: #dbdddd;
+  color: #f1f7ed;
   border-bottom: 1px solid #b1bcc5;
 }
 
@@ -96,8 +98,8 @@ button.res-car {
 }
 
 button.res-plane:hover, button.res-hotel:hover, button.res-car:hover {
-  background-color: #004480;
-  border: 1px dotted #fff;
+  background-color: #004986;
+  border: 1px dotted #f1f7ed;
 }
 
 div.line {
@@ -108,21 +110,47 @@ div.line {
 .depart-field, .arrive-field, .depart-date-field, .arrive-date-field {
   background-color: #193a55;
   color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid #f1f7ed;
   padding: 8px;
   width: 140px;
   margin: 0px 5px;
+}
+
+.depart-field:focus, .arrive-field:focus, .depart-date-field:focus, .arrive-date-field:focus, .passenger-field:focus {
+  border: 1px solid #0063b7;
 }
 
 .depart-field, .depart-date-field {
   margin-right: 20px;
 }
 
+label[for*="passengers"] {
+  margin-left: 10px;
+}
+
+.passenger-field {
+  background-color: #193a55;
+  color: #fff;
+  border: 1px solid #f1f7ed;
+  padding: 8px;
+  margin-left: 8px;
+}
+
+.return-flight-field {
+  margin-left: 40px;
+}
+
 input.submit-field {
   background-color: #0063b7;
-  color: #fff;
+  color: #f1f7ed;
   border: none;
   padding: 8px;
   margin: 10px;
   width: 360px;
+}
+
+input.submit-field:hover {
+  background-color: #af9164;
+  font-weight: bold;
+  border: 1px solid #f1f7ed;
 }
