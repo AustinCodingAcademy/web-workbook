@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title> Airline Search</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-
-  <main>
-
-    <header>
-      <div class="UX_Logo">
-        <img src="img/logo.png" alt="UX Atlantic">
-      </div>
-      <menu>
-            <img src="img/home-icon.png" class="first_icon" alt="Home">
+  <head>
+    <meta charset="utf-8">
+    <title> Airline Search</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+    <body>
+      <main>
+        <header>
+          <div class="ux_logo">
+            <img src="img/logo.png" alt="Logo">
+          </div>
+          <menu>
+            <img src="img/home-icon.png" class="menu_icon" alt="Home">
             <a href="www.gmail.com">Home</a>
             <img src="img/deal-icon.png" class="menu_icon" alt="Travel Deals">
             <a href="www.gmail.com">Travel Deals</a>
@@ -23,54 +20,58 @@
             <a href="www.gmail.com">Flight Schedule</a>
             <img src="img/login-icon.png" class="menu_icon" alt="Register/Login">
             <a href="www.gmail.com">Register/Login</a>
-      </menu>
-    </header>
+          </menu>
+        </header>
 
+      <div class="make_reservations">
 
-  <div class="content">
-    <section>
-    <div class="plane">
-      <img src="img/plane-icon.png" alt="Flights">
-    </div>
-    <div class="hotel">
-      <img src="img/hotel-icon.png" alt="Hotels">
-    </div>
-    <div class="car">
-      <img src="img/car-icon.png" alt="Rental_Car">
-    </div>
-
-    <form class="form">
-          <input type="text" class="depart" name="depart"
-          placeholder="Depart">
-
-          <input type="text" class="arrive" name="arrive"
-           placeholder="Arrive">
-
-           <input type="date" class="depart_date" name="depart"
-            placeholder="mm/dd/yyyy">
-
-            <input type="date" class="arrive_date" name="arrive"
-                placeholder="mm/dd/yyyy">
-
-
-        <div class="passengers">
-          <input type="text" name="number" placeholder="1">
-        </div>
-
-
-        <div class="return">
-          <label for="radio-choice-1">Return</label>
-          <input type="radio" name="radio-choice" class="radio-choce-1" tabindex="2" value="choice-1">
-          <label for="radio-choice-1">One Way</label>
-          <input type="radio" name="radio-choice" class="radio-choice-2" tabindex="2" value="choice-1">
-        </div>
-
-        <div class="search_flights">
-              <input type="submit" class="submit_button" value="Search Flights">
+        <div class="image_header">
+          <div class="image_1">
+            <img src="img/plane-icon.png" alt="Flights">
           </div>
-        </form>
-        </section>
+          <div class="image_2">
+            <img src="img/hotel-icon.png" alt="Hotels">
+          </div>
+          <div class="image_3">
+            <img src="img/car-icon.png" alt="Rental Cars">
+          </div>
+        </div>
 
-    </main>
-  </body>
+        <div class="form_area">
+          <div class="input_1">
+            <input type="text" name="depart"
+               placeholder="Depart">
+          </div>
+          <div class="input_2">
+            <input type="text" name="arrive"
+               placeholder="Arrive">
+          </div>
+          <div class="input_3">
+            <input type="date" name="depart"
+               placeholder="mm/dd/yyyy">
+          </div>
+          <div class="input_4">
+            <input type="date" name="arrive"
+                placeholder="mm/dd/yyyy">
+          </div>
+          <div class="input_5">
+            <p>Passengers</p>
+            <select name="passengers">
+              <option value="number_of_travelers">1</option>
+             </select>
+          </div>
+
+
+          <div class="input_7">
+            <label for="radio-choice-1">Return</label>
+            <input type="radio" name="radio-choice" class="radio-choice-1" tabindex="1" value="choice-1">
+            <label for="radio-choice-2">One Way</label>
+            <input type="radio" name="radio-choice-2" class="radio-choice-2" tabindex="2" value="choice-2">
+          </div>
+        </div>
+        <div="submit_button">
+        </div>
+      </div>
+      </main>
+    </body>
 </html>
