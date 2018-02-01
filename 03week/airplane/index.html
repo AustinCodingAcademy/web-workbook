@@ -11,8 +11,11 @@
 </head>
 
 <body>
+  <!-- top navigation bar -->
   <div class="topnav">
+    <!--logo -->
     <a href="index.html"><img class="logo" src="./img/logo.png"></img></a>
+    <!-- icons and navigation bar -->
     <nav class="navbar">
       <ul>
         <a href="#">
@@ -31,54 +34,51 @@
     </nav>
   </div>
   <main>
-    <div class="box">
+    <!--box -->
+    <div class="box clearfix">
+      <!-- buttons -->
       <button><img src="./img/plane-icon.png"></i></button>
       <button><img src="./img/hotel-icon.png"></i></i></button>
       <button><img src="./img/car-icon.png"></button>
+      <!-- Depart and Arrive forms -->
       <form>
         <label aria-label="Depart">
-        <input type="text" name="Depart" value="" placeholder="Depart" />
+          <input type="text" name="Depart" value="" placeholder="Depart" />
         </label>
-      </form>
-      <form>
         <input type="text" name="Arrive" value="" placeholder="Arrive" />
-      </form>
-      <form>
         <input type="date" name="Departure Date" value="" />
-      </form>
-
-      <form>
         <input type="date" name="Arrival Date" value="" />
+        <!-- Dropdown form -->
+        <div class="flex-container">
+          <div class="dropdown">
+            <label style="margin-left: -5px;"for "select-dropdown">Passengers</label>
+            <select name="select-dropdown" class="select-dropdown">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+          <!--Return & One Way Radio Buttons  -->
+          <div class="radio-buttons">
+            <input type="radio" name="ticket-type" value="return" id="return"/>
+            <label class="radio-return" for="return">Return</label>
+            <input type="radio" name="ticket-type" value="one-way" id="one-way"/>
+            <label for="one-way">One-way<x/label>
+          </div>
+        </div>
+        <!-- Submit Button -->
+        <div class="flex-container2">
+          <input type="submit" class="Search-Flights" value="Search Flights" />
+        </div>
       </form>
-      <div class="dropdown">
-        <label for "select-dropdown">Passengers</label>
-        <select name="select-dropdown" class="select-dropdown">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-        </select>
-      </div>
-      <!--Return & One Way Radio Buttons  -->
-      <label class="radio-return">
-        <input type="radio" name="ticket-type" value="return"/>
-        Return
-        </label>
-      <label class="radio-oneway">
-        <input type="radio" name="ticket-type" value="one-way"/>
-        One Way
-      </label>
-      <!--Submit Button
-      <form>
-        <input type="submit" class="Search Flights" value="Search Flights" />
-      </form>
--->
     </div>
   </main>
 
