@@ -5,15 +5,11 @@ Palette: https://coolors.co/193a55-018d80-0063b7-f1f7ed-af9164
 
 */
 
+/*  default styles */
 body {
   font-family: 'Libre Franklin', sans-serif;
   background: url("../img/airline.jpg") #193a55 no-repeat;
   background-size: cover;
-}
-
-img.logo {
-  max-width: 100%;
-  height: auto;
 }
 
 a:link, a:visited {
@@ -26,22 +22,25 @@ a:hover {
   color: #09beae;
 }
 
+/* header styles */
 header {
   background-color: #193a55;
-  color: #fff;
-  display: flex;
-  justify-content: space-around;
   color: #f1f7ed;
   border-bottom: 1px solid #b1bcc5;
+  display: flex;
+  justify-content: space-between;
 }
 
 header img {
-  margin: 3px;
+  min-width: 200px;
+  width: 20%;
+  height: auto;
 }
 
 header ul {
   display: inline-flex;
   align-items: center;
+  margin-left: 40px;
 }
 
 header ul li {
@@ -49,22 +48,21 @@ header ul li {
   font-size: 90%;
 }
 
+
 li.nav-home {
   list-style-image: url("../img/home-icon.png")
 }
-
 li.nav-deals {
   list-style-image: url("../img/deal-icon.png")
 }
-
 li.nav-sched {
   list-style-image: url("../img/schedule-icon.png")
 }
-
 li.nav-login {
   list-style-image: url("../img/login-icon.png")
 }
 
+/* reservation box styles */
 div.reservation {
   width: 400px;
   margin: 80px 60px;
@@ -137,7 +135,7 @@ label[for*="passengers"] {
 }
 
 .return-flight-field {
-  margin-left: 40px;
+  margin-left: 45px;
 }
 
 input.submit-field {
