@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>UX Atlantic</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+
+  <body>
+    <nav class="title">
+      <img src="./img/logo.png" alt="logo" style="width: 100%; max-width: 200px;">
+      <ul class="pagenav">
+        <li class="link">
+          <a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+        </li>
+        <li class="link">
+          <a href="#"><i class="fa fa-plane" aria-hidden="true"></i> Travel Deals</a>
+        </li>
+        <li class="link">
+          <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> Flight Schedule</a>
+        </li>
+        <li class="link">
+          <a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Register/Login</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="flightinfo">
+      <div class="fibuttons">
+        <button class="buttons"><i class="fa fa-plane" aria-hidden="true"></i></button>
+        <button class="buttons"><i class="fa fa-bed" aria-hidden="true"></i></button>
+        <button class="buttons"><i class="fa fa-car" aria-hidden="true"></i></button>
+      </div>
+      <form class="travel" action="index.html" method="post">
+        <label class="depart" aria-label="depart">
+          <input type="text" name="Depart" value="" placeholder="Depart">
+        </label>
+        <label class="arrive" aria-label="arrive">
+          <input type="text" name="Arrive" value="" placeholder="Arrive">
+        </label>
+        <label class="ddate">
+          <input type="date" name="depart-date" value="">
+        </label>
+        <label class="adate">
+          <input type="date" name="arrive-date" value="">
+        </label>
+        <div class="passtext">
+          <p>Passengers</p>
+        </div>
+        <select class="passengers" name="passengers">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        <label class="tt1">
+          <input type="radio" name="ticket-type1" value="return">
+          Return
+        </label>
+        <label class="tt1">
+          <input type="radio" name="ticket-type2" value="return">
+          One Way
+        </label>
+      </form>
+      <div class="search">
+        <button class="searchbutton" type="button" name="button">Search Flights</button>
+      </div>
+    </main>
+  </body>
+</html>
