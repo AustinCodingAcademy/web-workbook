@@ -8,62 +8,69 @@
 </head>
 
 <body>
+  <div class="container">
+    <nav>
+      <a href="#"><img src="./img/logo.png" alt="logo"/></a>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Travel Deals</a>
+        </li>
+        <li>
+          <a href="#">Flight Schedules</a>
+        </li>
+        <li>
+          <a href="#">Register/Login</a>
+        </li>
+      </ul>
+    </nav>
 
-  <nav>
-    <a href="#"><img src="./img/logo.png" alt="logo"/></a>
-    <ul>
-      <li>
-        <a href="#">Home</a>
-      </li>
-      <li>
-        <a href="#">Travel Deals</a>
-      </li>
-      <li>
-        <a href="#">Flight Schedules</a>
-      </li>
-      <li>
-        <a href="#">Register/Login</a>
-      </li>
-    </ul>
-  </nav>
+    <main class="form-box">
 
-  <main>
+      <div class="button-box">
+        <button class="top-buttons">plane</button>
+        <button class="top-buttons">bed</button>
+        <button class="top-buttons">car</button>
+      </div>
 
-    <div>
-      <button>plane</button>
-      <button>bed</button>
-      <button>car</button>
-    </div>
+      <form>
 
-    <form>
-      <label for="departure-date">Depart</label>
-      <input id="departure-date" type="date" name="departure-date" />
+        <div class="date-box">
+          <label for="departure-date" id="departure-date-label" class="date-label">Depart</label>
+          <label for="arrival-date" id="arrival-date-label" class="date-label">Arrive</label>
 
-      <label for="arrival-date">Arrive</label>
-      <input id="arrival-date" type="date" name="arrival-date" />
+          <input type="text" name="departure-date" placeholder="mm/dd/yyyy" class="date-input date-label" />
+          <input type="text" name="arrival-date" placeholder="mm/dd/yyyy" class="date-input date-label" />
 
-      <label for="passengers-dropdown">Passengers</label>
-      <select id="passengers-dropdown">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
+        </div>
 
-      <label>Return
-        <input type="radio" name="return-radio-button" />
-      </label>
-     <label>One Way
-       <input type="radio" name="onway-radio-button" />
-     </label>
+        <div class="passengers-tickettype-box">
+          <label for="passengers-dropdown">Passengers</label>
+          <select id="passengers-dropdown">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
 
-     <label for="search-flights-button">Search Flights</label>
-     <input id="search-flights-button" type="submit" />
-   </form>
+        <label>Return
+          <input type="radio" name="return-radio-button" />
+        </label>
+        <label>One Way
+         <input type="radio" name="onway-radio-button" />
+        </label>
+      </div>
 
-  </main>
+        <label for="search-flights-button">Search Flights</label>
+        <input id="search-flights-button" type="submit" />
+      </form>
 
+    </main>
+
+  </div>
 </body>
 
 </html>
