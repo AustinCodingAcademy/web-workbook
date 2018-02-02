@@ -30,10 +30,16 @@ header img, header nav {
   text-decoration: none;
 }
 
-header nav {
+.nav-bar {
   display: inline-block;
   height: 100px;
-  margin: 10px 0 0 105px;
+  margin: 10px 145px 0 75px;
+  float:left;
+}
+
+.header-buttons {
+  position: absolute;
+  top: 17px; right: 17px;
 }
 
 .logo {
@@ -41,7 +47,7 @@ header nav {
   margin-right: 115px;
 }
 
-nav li {
+.nav-bar li {
   float: left;
   padding: 0 10px;
   margin-right: 16px;
@@ -59,7 +65,7 @@ nav li:hover {
   font-weight: bolder;
 }
 
-header > a {
+header nav .button {
   height: 15px;
   width: 50px;
   border-radius: 20px;
@@ -99,13 +105,18 @@ main {
   text-align: center;
 }
 
+.main-buttons {
+  margin: 0 auto;
+}
+
 main a:link {
   display: block;
   font-size: .85em;
   text-align: center;
   height: 35px;
   width: 270px;
-  margin-left: 440px;
+  margin: 0 auto;
+  margin-top: 15px;
   padding: 13px 0 2px 10px;
   border-radius: 23px
 }
@@ -223,17 +234,30 @@ footer a {
   margin: 22px 0 0 393px;
 } */
 
+.nav-bar li {
+  float: left;
+  padding: 0 10px;
+  margin-right: 16px;
+  height: 42px;
+  list-style: none;
+  font-size: .8em;
+  font-weight: bolder;
+}
+
 #top-outer {
-  height: 50px;
-  margin-top: 15px;
+  /* height: 50px; */
+  /* margin-top: 15px; */
 }
 
 #middle-outer {
-  height: 35px;
+  /* height: 15px; */
 }
 
-#lowest-outer {
-  height: 15px;
+#lowest-outer li {
+  /* height: 15px; */
+  /* margin-top: 15px; */
+  line-height: 15px;
+
 }
 
 .table {
@@ -257,13 +281,13 @@ footer a {
   font-size: .8em;
 }
 
-/* .middle-list {
-  margin: 28px 0 0 215px;
+.middle-list {
+  margin-top: 28px;
 }
 
 .middle-list li {
-  margin-right: 17px;
-} */
+  margin-right: 10px;
+}
 
 
 #middle-outer li, #lowest-outer li {
@@ -276,7 +300,6 @@ footer a {
 
 strong {
   color: #444;
-  margin-right: 20px;
 }
 
 /* .lowest-list {
