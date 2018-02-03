@@ -17,12 +17,14 @@ main {
 section{
   height: 900px;
   font-family: "Lato", sans-serif;
+  font-size: 30px;
   transition: background-color .5s;
   background-image:url("../images/mountainlake.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position:center;
   text-shadow: 1px 1px white;
+  color: rgb(70, 70, 76);
 
 
 }
@@ -99,14 +101,39 @@ section{
     text-align: center;
     font-family: impact;
     font-size: 75px;
-    color: silver;
+    color: white;
     text-shadow: 4px 4px black;
     font-weight: bold;
 
 }
 
-.grad1 {
+.info {
+  height: 1000px;
+  background-color: whitesmoke;
 
-    color: silver; /* For browsers that do not support gradients */
-    color: linear-gradient(to bottom right, silver, darkgrey); /* Standard syntax (must be last) */
+}
+
+.imagepad {
+  box-shadow: 8px 8px 8px lightgrey;
+  margin-left: 30px;
+  margin-top: 40px;
+  float: left;
+}
+
+.textbox {
+  float: right;
+  border: 5px solid red;
+  margin-right: 30px;
+  margin-left: 20px;
+  margin-top: 40px;
+  width: 620px;
+  text-align: justify;
+  text-overflow: auto;
+  font-size: 25px;
+}
+
+/*  */text overflowing from textbox need to fix later will use manual return for now. Not clear why?
+
+.left {
+  float: left;
 }
