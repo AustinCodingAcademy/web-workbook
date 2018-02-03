@@ -1,3 +1,4 @@
+/* type class styling */
 html {
   height: 100%;
 }
@@ -10,86 +11,6 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
-.bigpic {
-  background-image: url(../img/main.jpg);
-  background-size: cover;
-  margin: 0px;
-  height: 450px;
-  width: auto;
-}
-
-/* color gradient over main image */
-/* .bigpic::after {
-  display: block;
-  position: absolute;
-  background-image: linear-gradient(to left, transparent 5%, #843555 100%);
-  height: 450px;
-  width: 100%;
-  content: '';
-  top: 0;
-  left: 0;
-} */
-
-/* navigation bar flexbox*/
-.topnav {
-  /* border-bottom: 0.5px solid;
-  border-bottom-color: lightgray; */
-  border: 1px solid red;
-  display: flex;
-}
-/* logo */
-.topnav .logo {
-  border: 3px solid white;
-  background-image: url("https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_200x51.png");
-  background-repeat: no-repeat;
-  background-size: 30%;
-  filter: brightness(0) invert(1);
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-}
-
-/* navigation bar */
-.topnav .navbar {
-  border: 1px solid purple;
-  flex: 1;
-}
-
-/* navigation bar lists */
-.navbar1 {
-  display: inline;
-}
-/* navigation bar on the right */
-.topnav .navbar-right {
-  border: 1px solid pink;
-  flex: 1;
-}
-
-.navbar-right #button1 {
-  background-color: transparent;
-  border: solid;
-  border-width: thin;
-  border-radius: 25px;
-  height: 40px;
-  width: 85px;
-  color: white;
-  padding: 15px 32px;
-  text-decoration: none;
-}
-
-.navbar-right #button2 {
-  background-color: white;
-  border: solid;
-  border-width: thin;
-  border-radius: 25px;
-  height: 40px;
-  width: 85px;
-  color: black;
-  padding: 15px 32px;
-  text-decoration: none;
-}
-
-/* type class styling */
 main {
   margin-left: 8.5%;
   margin-right: 8.5%;
@@ -118,7 +39,7 @@ p {
   padding-bottom: 15px;
 }
 
-/* font for a tag classes */
+/* font for <a> tag classes */
 .white-font {
   text-decoration: none;
   color: white;
@@ -145,6 +66,161 @@ p {
 
 .gray-font:hover {
   text-decoration: underline;
+}
+
+.footer-font {
+  font-size: 0.75em;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  color:#666666;
+}
+
+.footer-font:hover {
+  text-decoration: underline;
+}
+
+/* -------------------------------------------------------------- */
+
+/* navigation bar flexbox*/
+.topnav {
+  border-bottom: 0.5px solid;
+  border-bottom-color: lightgray;
+  display: flex;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-left: 8.5%;
+  margin-right: 8.5%;
+}
+/* logo */
+.topnav .logo {
+  background-image: url("https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_200x51.png");
+  background-repeat: no-repeat;
+  background-size: 30%;
+  filter: brightness(0) invert(1);
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+/* navigation bar */
+.topnav .navbar {
+  flex: 1;
+}
+
+/* navigation bar lists */
+.navbar1 {
+  display: inline;
+}
+/* navigation bar on the right */
+.topnav .navbar-right {
+  flex: 1;
+}
+
+.navbar-right #button1 {
+  background-color: transparent;
+  border: solid;
+  border-width: thin;
+  border-radius: 25px;
+  height: 40px;
+  width: 85px;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+}
+
+.navbar-right #button2 {
+  background-color: white;
+  border: solid;
+  border-width: thin;
+  border-radius: 25px;
+  height: 40px;
+  width: 85px;
+  color: black;
+  padding: 15px 32px;
+  text-decoration: none;
+}
+
+/* big picture */
+.bigpic {
+  background-image: url(../img/main.jpg);
+  background-size: cover;
+  margin: 0px;
+  height: 450px;
+  width: auto;
+}
+
+/* color gradient over main image...NOT WORKING WELL */
+/* .bigpic::after {
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to left, transparent 5%, #843555 100%);
+  height: 450px;
+  width: 100%;
+  content: '';
+  top: 0;
+  left: 0;
+} */
+
+/* big picture call to action */
+.bigpic-call-action {
+  margin-left: 8.5%;
+  margin-right: 8.5%;
+  display: flex;
+}
+
+.new-year1 {
+  padding-top: 7.5%;
+  padding-right: 15%;
+  flex: 1.25;
+}
+
+.new-year2 {
+  padding-bottom: 3%;
+}
+
+#learnmore-button {
+  margin-top: 3%;
+  width: 375px;
+  height: 50px;
+  background-color: #1071B8;
+  color: white;
+  font-size: 0.85em;
+  font-weight: bold;
+  border-color: #1071B8;
+  border-radius: 25px;
+}
+
+#learnmore-button:hover {
+  background-color: blue;
+}
+
+#welcomeback {
+  flex: 1;
+  margin-top: 7.5%;
+  background-color: white;
+  height: 200px;
+  border-radius: 10px;
+}
+
+#welcomeback-p {
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 10%;
+}
+
+#welcomeback-button{
+  margin-left: 20%;
+  width: 275px;
+  height: 50px;
+  background-color: #1071B8;
+  color: white;
+  font-size: 0.85em;
+  font-weight: bold;
+  border-radius: 25px;
+}
+#welcomeback-button:hover {
+  background-color: blue;
 }
 
 /* 1st row */
@@ -194,6 +270,7 @@ p {
 
 /* flexbox for bottom menus */
 .bottom-menu-column {
+  padding-bottom: 75px;
   display: flex;
 }
 
@@ -219,7 +296,41 @@ h4.bottom-menu-h4 {
   padding-bottom: 20px;
 }
 
-
+/* flexbox for bottom navigation bar */
 .bottom-nav {
+  padding-bottom: 1%;
+  border-bottom: 1px dotted lightgray;
+  display: flex;
+}
 
+.bottom-nav-left {
+  flex: 3;
+}
+
+.bottom-nav-right {
+  flex: 1;
+}
+
+.bottom-nav-stuff {
+  text-decoration: none;
+  color:#666666;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 0.9em;
+}
+/* footer stuff */
+footer {
+  padding-top: 1%;
+  margin-left: 8.5%;
+  margin-right: 8.5%;
+  font-family: 'Work Sans', sans-serif;
+  display: flex;
+}
+
+.footer-left {
+  flex: 3;
+}
+
+.footer-right {
+  flex: 1;
 }
