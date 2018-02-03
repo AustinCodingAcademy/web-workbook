@@ -108,7 +108,7 @@ section{
 }
 
 .info {
-  height: 1000px;
+  height: 925px;
   background-color: whitesmoke;
 
 }
@@ -120,20 +120,74 @@ section{
   float: left;
 }
 
+.imagepadopposite {
+  box-shadow: 8px 8px 8px lightgrey;
+  margin-left: 15px;
+  margin-top: 40px;
+  float: left;
+}
+
 .textbox {
   float: right;
-  border: 5px solid red;
   margin-right: 30px;
   margin-left: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: 620px;
+  text-align: justify;
+  text-overflow: auto;
+  font-size: 25px;
+  line-height: 30px;
+  color: rgb(20, 79, 173);
+}
+
+.textboxopposite {
+  float: left;
+  border: 5px solid red;
+  margin-right: 20px;
+  margin-left: 30px;
   margin-top: 40px;
   width: 620px;
   text-align: justify;
   text-overflow: auto;
   font-size: 25px;
+  line-height: 30px;
+  color: rgb(14, 109, 13);
 }
 
 /*  */text overflowing from textbox need to fix later will use manual return for now. Not clear why?
 
-.left {
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: black;
+}
+
+.navbar a {
   float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.black {
+  background-color: black;
+  text-align: center;
 }
