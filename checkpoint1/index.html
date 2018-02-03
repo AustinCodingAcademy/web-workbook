@@ -15,9 +15,39 @@
     <div class="blackbreak">
     </div>
     <main>
-      <aside class="navstyles">
+      <section>
+      <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Tours</a>
+  <a href="#">Map and Directions</a>
+  <a href="#">Contact</a>
+</div>
 
-      </aside>
+<div id="main">
+  <br>
+  <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776; <strong><u>OPEN</u></strong> the door to your Adventure!</span>
+</div>
+<div class="center">
+Rocky Mountain High Adventure Tours
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+</section>
 
     </main>
 
