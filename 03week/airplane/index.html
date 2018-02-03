@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -15,16 +16,24 @@
       <a href="#"><img src="./img/logo.png" alt="logo"/></a>
       <ul>
         <li>
-          <a href="#">Home</a>
+          <a href="#">
+            <i class="fa fa-home nav-icon" aria-hidden="true"> Home</i>
+          </a>
         </li>
         <li>
-          <a href="#">Travel Deals</a>
+          <a href="#">
+            <i class="fa fa-plane nav-icon" aria-hidden="true"> Travel Deals</i>
+          </a>
         </li>
         <li>
-          <a href="#">Flight Schedules</a>
+          <a href="#">
+            <i class="fa fa-clock-o nav-icon" aria-hidden="true"> Flight Schedules</i>
+          </a>
         </li>
         <li>
-          <a href="#">Register/Login</a>
+          <a href="#">
+            <i class="fa fa-sign-in nav-icon" aria-hidden="true"> Register/Login</i>
+          </a>
         </li>
       </ul>
     </nav>
@@ -32,9 +41,9 @@
     <main class="form-box">
 
       <div class="button-box">
-        <button class="top-buttons" autofocus>plane</button>
-        <button class="top-buttons">bed</button>
-        <button class="top-buttons">car</button>
+        <button class="top-buttons" autofocus id="plane-button"><img src="./img/plane-icon.png" alt="Plane" height='35' /></button>
+        <button class="top-buttons"><img src="./img/hotel-icon.png" alt="Hotel" height='35' /></button>
+        <button class="top-buttons"><img src="./img/car-icon.png" alt="Car" height='35' /></button>
       </div>
 
       <form>
@@ -52,10 +61,10 @@
           <label for="passengers-dropdown">Passengers</label>
           <select class="drop-down" id="passengers-dropdown">
             <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
+            <option value="2" class="other-options">2</option>
+            <option value="3" class="other-options">3</option>
+            <option value="4" class="other-options">4</option>
+            <option value="5" class="other-options">5</option>
           </select>
 
           <div class="tickettype-box">
