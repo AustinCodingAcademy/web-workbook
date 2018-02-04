@@ -12,6 +12,7 @@
       <img src="./img/logo.png" alt="logo">
       <ul class="navbar-links">
         <li class="navbar-item">
+
           <a href ="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
         </li>
         <li class="navbar-item">
@@ -31,29 +32,62 @@
         <button class="button"><i class="fa fa-bed" aria-hidden="true"></i></button>
         <button class="button"><i class="fa fa-car" aria-hidden="true"></i></button>
       </div>
-      <form>
-        <input type="text" name="depart" placeholder="depart">
-        <input type="text" name="arrive" placeholder="arrive">
-        <input type="date" name="date">
-        <input type="date" name="date">
-        <label>
-          Passengers
-        <select name="passengers">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-        </label>
-          <label>
-            <input type="radio" name="ticket" value="return">
-            Return
-          </label>
-          <label>
-            <input type="radio" name="ticket" value="one way">
-            One Way
-          </label>
+      <form class="form">
+
+         <div class="box">
+
+           <label ="depart">
+             <input type="text" name="depart" value="Depart">
+           </label>
+
+           <label ="arrive">
+           <input type="text" name="arrive" value="Arrive">
+           </label>
+
+         </div>
+
+         <div class="box">
+
+           </label>
+           <label ="arrive-date">
+           <input type="date" name="arrive-date" value="mm/dd/yyyy">
+           </label>
+
+           <label ="depart-date">
+           <input type="date" name="depart-date" value="mm/dd/yyyy">
+           </label>
+         </div>
+
+
+         <div class="box">
+           <label ="passengers">Passengers
+               <select class="#background" name="passengers">
+                 <option value="1">1</option>
+                 <option value="2">2</option>
+                 <option value="3">3</option>
+                 <option value="4">4</option>
+                 <option value="5">5</option>
+                 <option value="6">5</option>
+               </select>
+             </label>
+
+
+           </label>
+           <input type="radio" name="ticket-type" value="return"> Return
+           </label>
+
+           <label>
+               <input type="radio" name="ticket-type" value="one-way"> One-way
+             </label>
+
+         </div>
+
+         <div class="box">
+           <input type="button" class="button2" value="Search Flights">
+         </div>
+
+       </div>
+
 
       </form>
     </main>
