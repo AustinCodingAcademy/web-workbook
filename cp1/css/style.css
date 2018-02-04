@@ -90,23 +90,24 @@ p, ul, .location a, h3, a {
   text-decoration: none;
 }
 
+a {
+  color: white;
+}
+
+a:hover {
+  color: blueviolet;
+}
 span.days, h3, div p span{
   font-weight: bold;
   font-size:4vh;
 }
 
-.hours {
-  float: left;
-  display: inline-block;
-}
-
-.location {
- float:right;
- display: inline-block;
-}
-
 .location a:hover {
   color: blueviolet;
+}
+
+.hours, .location {
+  padding-bottom: 5%;
 }
 
 .event a:hover {
@@ -114,19 +115,31 @@ span.days, h3, div p span{
   background-color: #5c159d;
 }
 
-#eventWrapper, .hoursWrapper {
-  clear: both;
-  display: flex;
-  justify-content: space-around;
-  align-items:baseline;
-  flex-direction: row;
+@media (min-width:501px) {
+  #eventWrapper{
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+    align-items:baseline;
+    flex-direction: row;
+  }
 }
 
-.hoursWrapper {
-  border-top: solid white 5px;
-  border-bottom: solid white 5px;
-}
-
+ @media (max-width:500px) {
+   #eventWrapper {
+     display: block;
+     width: 500px;
+     height: 100%;
+     margin: 0;
+     border: none;
+   }
+   .event {
+     width: auto;
+     height: 100%;
+     margin: 0;
+     border: none;
+   }
+ }
 .event {
   width: 33%;
   height: 30%;
