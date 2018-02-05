@@ -120,7 +120,8 @@
 .flex-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .flex-container>div {
@@ -128,10 +129,25 @@
   margin: 10px;
   padding:20px;
   font-size: 30px;
+  justify-content: center;
+  align-items: center;
 }
 
 .img{
   width: 200px;
   max-width: 100%;
   max-height: 200px
+}
+
+.flex-container h4{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.flex-container p {
+  font-size: 15px;
+}
+
+footer {
+  text-align: center;
 }
