@@ -1,6 +1,7 @@
 body {
-  background: black;
+  /* background: linear-gradient(135deg, rgb(101, 121, 155), rgb(94, 37, 99)); */
   color: white;
+  background: black;
 }
 
 /* header */
@@ -22,13 +23,13 @@ header {
   height: 50px;
 }
 
-#nav, #share {
+#nav, #shareNav {
   float:right;
   display: inline-block;
   text-align: center;
 }
 
-#share a, #nav a {
+.share a, #nav a {
 	width: 50px;
   height: 50px;
 	display: inline-block;
@@ -40,11 +41,12 @@ header {
   position: relative;
 }
 
-#share a:hover, #nav a:hover {
+.share a:hover, #nav a:hover {
 	opacity: 1;
+  color: white;
 }
 
-#share i, #nav i {
+.share i, #nav i {
   top: 50%;
   transform: translateY(-50%);
   position: relative;
@@ -69,7 +71,7 @@ main>img {
 }
 
 section {
-  margin: 5% 10% 15%;
+  margin: 5% 10% 10%;
 }
 
 h1, h2{
@@ -77,6 +79,7 @@ h1, h2{
   font-size: 8vh;
   border-bottom: orange solid 1vh;
 }
+
  h3 {
    margin-top: 4vh;
    margin-bottom: 3vh;
@@ -96,12 +99,14 @@ p, ul, .location a, h3, a {
 }
 
 a {
-  color: white;
+  color: orange;
 }
+
 
 a:hover {
   color: blueviolet;
 }
+
 span.days, h3, div p span{
   font-weight: bold;
   font-size:4vh;
@@ -109,6 +114,11 @@ span.days, h3, div p span{
 
 .location a:hover {
   color: blueviolet;
+}
+
+.location img {
+  display: block;
+  margin: 2vh;
 }
 
 .hours, .location {
@@ -120,6 +130,15 @@ span.days, h3, div p span{
   background-color: #5c159d;
 }
 
+.event img {
+  width: 20vw;
+  height: 24vh;
+}
+
+.event p {
+  height: 9vh;
+}
+/* desktop only */
 @media screen and (min-width:501px) {
   #eventWrapper{
     clear: both;
@@ -136,33 +155,52 @@ span.days, h3, div p span{
     align-items: center;
     flex-direction: column;
     border-left: solid white .5vw;
-    border-right: solid white .5vw;
     text-align: center;
-    border-collapse: collapse;
+
   }
 }
 
+/* mobile only */
  @media screen and (max-width:500px)  {
    #eventWrapper {
      display: inline-block;
-     width: 500px;
+     width: 100%;
      height: 100%;
      margin: 0;
      border: none;
    }
 
-   #share {
+   #shareNav {
      display: none;
    }
 
+   .games img:not(.mobile) {
+     display: none;
+   }
+
+   .event p{
+     height:auto;
+   }
+
+   .event {
+     border-bottom: solid white 2px;
+     padding-bottom: 3vh;
+   }
+
+   .event img {
+     width:auto;
+   }
  }
 
 .buttons {
   color: white;
   border-radius: 5px;
   background-color: blueviolet;
-  padding: 10px;
-
+  padding: 2vh;
+  text-align: center;
+  display: block;
+  width: 80%;
+  margin-top: 3vh;
 }
 
 .blog {
@@ -172,6 +210,20 @@ span.days, h3, div p span{
 
 .blog>h3:hover {
   color: blueviolet;
+}
+
+.games img {
+  height: 24vh;
+  width: auto;
+}
+
+#gamesimg {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
 }
 
 footer {
