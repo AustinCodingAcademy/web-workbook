@@ -1,29 +1,25 @@
 body {
   font-family: sans-serif;
-  border: 1px solid pink;
+  /* this flexbox centers the entire body */
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-main {
-  border: 1px dotted purple;
-
 }
 
 body .bg-image {
   background-image: url(../img/nasa-background.jpg);
   width: 850px;
   height: 450px;
+  display: flex;
+  /* this flexbox centers the "NASA" text */
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
-/* PROBLEM NOT CENTERING TEXT VERTICALLY */
 body .bg-image #bg-image-text {
   color: white;
   font-size: 2.65em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 body .content {
@@ -31,13 +27,15 @@ body .content {
   width: 850px;
   height: 324px;
   color: black;
+  /* this flexbox arranges the 3 columns in content section */
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: space-around;
-  border: 1px solid green;
 }
 
 h3 {
-  padding: 10px 0;
+  padding: 1px 0;
 }
 
 .list-column {
@@ -47,15 +45,15 @@ h3 {
 }
 
 body .content .content1 {
-  flex: 1;
+  width: 270px;
 }
 
 body .content .content2 {
-  flex: 1;
+  width: 270px;
 }
 
 body .content .content3 {
-  flex: 1;
+  width: 270px;
 }
 
 #form1 {
