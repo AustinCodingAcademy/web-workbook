@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Airline form</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <script src="https://use.fontawesome.com/79200692a0.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <header>
+      <img src="img/logo.png" alt="logo.png">
+      <div class="topmenu">
+        <a href="#"> <i class="fa fa-home" aria-hidden="true"></i>Home</a>
+        <a href="#"> <i class="fa fa-plane" aria-hidden="true"></i>Travel Deals</a>
+        <a href="#"> <i class="fa fa-clock-o" aria-hidden="true"></i>Flight Schedule</a>
+        <a href="#"> <i class="fa fa-sign-in" aria-hidden="true"></i>Register/Login</a>
+      </div>
+    </header>
+    <div class="searchbox">
+      <div>
+        <i class="flight fa fa-plane fa-lg" aria-hidden="true"></i>
+        <i class="others fa fa-bed fa-lg" aria-hidden="true"></i>
+        <i class="others fa fa-car fa-lg" aria-hidden="true"></i>
+      </div>
+      <form>
+        <input type="text" value="Depart" />
+        <input type="text" value="Arrive" />
+        <input type="date" />
+        <input type="date" />
+        <!-- <label for="numpass" id="Passengers">Passengers</label> -->
+        <div>
+          <label for="numpass">Passengers</label>
+          <select id="numpass">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+
+        <input class="radbt" type="radio" name="type" value="return" id="ret">
+        <label for="ret" id="r1">Return</label>
+        <input class="radbt" type="radio" name="type" value="oneway" id="oway">
+        <label for="oway" id="r2">One Way</label>
+      </form>
+      <button class="button" type="submit" value="Submit">Search Flights</button>
+    </div>
+  </body>
+</html>
