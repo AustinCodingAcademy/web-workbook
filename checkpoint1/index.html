@@ -16,7 +16,8 @@
     </div>
     <main>
       <section>
-      <div id="mySidenav" class="sidenav">
+    
+      <div id="mysidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#">Home</a>
   <a href="#">About</a>
@@ -36,13 +37,13 @@ Rocky Mountain High Adventure Tours
 
 <script>
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mysidenav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("mysidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
     document.body.style.backgroundColor = "white";
 }
@@ -96,6 +97,7 @@ function closeNav() {
 
 </article>
 <div class="whitebreak">
+  <!-- used to try to create barrier for bottom picture on mobile screens unsuccessful but looks fine on computer -->
 
 </div>
 
@@ -112,7 +114,8 @@ function closeNav() {
   <a href="#">  Design and Photography by Ukiah Richardson February 2018</a>
   </div>
 
-
+<!-- added final href to cover rest of nav bar, any portion to right of buttons was showing white unclear why
+attempted to set all backgrounds to black but only white displayed (empty space?) -->
 
 
 
