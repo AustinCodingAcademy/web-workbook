@@ -131,32 +131,50 @@ select {
   height: 40px;
   width: 60px;
   margin-left: 7%;
+  size: 4;
 }
 .radioBox {
-  background-color: #123754;
+  background-color: #123754; 
   height: 200px;
   width: 40%;
   float: right;
   margin-top: 5%;
   margin-right: 5%;
   height: 40px;
-  display: inline-flex;
   font-size: 14px;
-  vertical-align: middle;
-  overflow: hidden;
-  text-align: center;
 }
-.return {
+.radioBox label,input {
+  display:inline-block;
+  vertical-align: 50%;
+  overflow: auto;
+}
+input[type="radio"] {
+  transform: scale(.4);
+}
+input[type="radio"]:nth-child(2) {
+  float:left;
+  margin-left: -87px;
+  margin-top: -5px;
+  display: inline-block;
+}
+input[type="radio"]:nth-child(4) {
+  float:right;
+  margin-right: 35px;
+  margin-top: -24px;
+}
+.radioBox label:nth-child(1) {
+  float: left;
+  margin-left: 15%;
+  font-size: 12px;
+  margin-top: 9px;
   color: #fff;
-  vertical-align: middle;
 }
-.oneWay {
+.radioBox label:nth-child(3) {
+  float: right;
+  margin-right: 0px;
+  margin-top: 9px;
+  font-size: 12px;
   color: #fff;
-  margin-right: 5;
-}
- input[type='radio'] {
-  transform: scale(.55);
-  vertical-align: middle;
 }
 button{
   width: 90%;
