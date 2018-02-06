@@ -4,24 +4,26 @@ main {
   justify-content: space-between;
 }
 
-.header_text {
+header {
   background-image: url("../img/nasa-background.jpg");
   width: 850px;
   height: 450px;
-  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-h1 {
+.header_text {
+  color: white;
   font-family: 'Roboto Condensed', sans-serif;
-  color: black;
   font-weight: bold;
+  font-size: 40px;
 }
 .gray_box {
   display: flex;
   width: 850px;
   height: 324px;
   justify-content: space-between;
-  background: gray;
-  border: 1px solid red;
+  background: #cccfcd;
 }
 
 .social_media {
@@ -30,7 +32,6 @@ h1 {
   height: 324px;
   flex-direction: column;
   align-items: left;
-  border: 1px solid red;
   padding-left: 20px;
 }
 
@@ -44,7 +45,6 @@ h1 {
   height: 324px;
   flex-direction: column;
   align-items: left;
-  border: 1px solid red;
 }
 .info {
   margin-top: 16px;
@@ -55,7 +55,6 @@ h1 {
   height: 324px;
   flex-direction: column;
   align-items: left;
-  border: 1px solid red;
 }
 h4 {
   font-family: 'Roboto Condensed', sans-serif;
@@ -77,13 +76,39 @@ p {
   margin: 0px;
   font-family: 'Roboto Condensed', sans-serif;
   color: black;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
 }
-label {
+
+.form_1 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form_label {
   font-family: 'Roboto Condensed', sans-serif;
   color: black;
-  float: left; width: 10em; margin-right: 1em;
+  float: left; width: 10em; margin-right: 1em; padding-top: 20px;
 }
-input {
-  padding-left: 5px;
+.field {
+  height: 30px;
+  width: 200px;
+}
+textarea {
+  height: 50px;
+  width: 200px;
+  border: none;
+}
+.send {
+  margin-top: 10px;
+  background: #373b3c;
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  border: 1px solid #373b3c;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  font-size: 20px;
+
 }
