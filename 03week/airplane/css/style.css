@@ -1,15 +1,25 @@
 .nav {
-  background-color: green;
+  display: flex;
+  background-color: #123754;
   width: 100%;
-  display: inline-flex;
+  padding: 20px;
+  border-bottom: 2px solid white;
+  color: white;
+  justify-content: space-around;
 }
 
-.nav p{
-  margin-left: auto;
+.logo {
+
+
+}
+.nav li{
+  margin: 20px;
+  list-style: none;
 }
 
-.nav p:hover{
-  color: red;
+.nav li:hover{
+  color: rgb(41, 149, 163);
+
 }
 
 body {
@@ -18,7 +28,9 @@ body {
   background-attachment: fixed;
 }
 .content {
-  background-color: rgb(54, 54, 54);
+  display: flex;
+  background-color: #123754;
+  border-radius: 15px;
   width: 400px;
   height: 350px;
   margin: 100px;
@@ -26,16 +38,60 @@ body {
 
 }
 input[type=text]{
-  border:10px solid red;
-  background-color: blue;
+  border:2px solid white;
+  border-radius: 15px;
+  background-color: #123754;
+  margin: 20px;
+  padding: 15px;
+  font-size: 12px;
+}
+input[type=date]{
+  background-color: #123754;
+  border:2px solid white;
+  color: grey;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 5px;
 
 }
-.content p {
-  background-color: blue;
-  display: inline-block;
+
+.content .buttons a{
+  background-color: rgb(72, 168, 108);
+  display: flex;
+  margin-top: 0px;
+  height: 50px;
+  width: 125px;
+  border-radius: 15px;
+
 }
 
-.content p:hover{
-  background-color: green;
+.content div a img{
 
+}
+
+.content div:hover{
+  background-color: rgb(39, 82, 191);
+
+}
+
+.leftside {
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.rightside {
+  float: right;
+}
+
+
+
+.search {
+  background-color: rgb(39, 82, 191);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 0px;
+  height: 50px;
+  width: 300px;
+  border-radius: 15px;
 }
