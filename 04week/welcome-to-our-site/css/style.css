@@ -1,0 +1,71 @@
+header {
+  display: flex;
+  height: 150px;
+  width: calc(100% - 200px);
+  justify-content: center;
+  align-items: center;
+  background-color: #44a8dd;
+  padding: 100px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3em;
+}
+
+em  {
+  font-weight: bold;
+}
+
+main {
+  background-color: #f7f5f6;
+  padding: 75px 120px;
+}
+
+section {
+  display: inline-block;
+  width: 175px;
+  text-align: center;
+  margin: 0 calc(50% - 75px) 50px;
+}
+
+h2  {
+  font-size: 2em;
+}
+
+.bar {
+  height: 30px;
+  width: 100%;
+}
+
+h2, .bar {
+  margin-bottom: 15px;
+}
+
+.first .bar {
+  background-color: #44a8dd;
+}
+
+.second .bar {
+  background-color: #ec6533;
+}
+
+.third .bar {
+  background-color: #62cec1;
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+  header {
+    background-color: #62cec1;
+  }
+  main {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+  }
+  section {
+    color: #fff;
+    margin: 0;
+  }
+}
