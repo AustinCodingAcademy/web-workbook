@@ -1,0 +1,101 @@
+h3, p {
+  /* border: solid; */
+}
+
+header {
+  height: 300px;
+  /* border: solid; */
+}
+
+h1 {
+  line-height: 80px;
+  padding: 90px;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* border: solid green; */
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: solid pink; */
+  width: 100%; /*this + display:flex makes them line up in a column when small*/
+  /* width: 70px; */
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: solid; */
+  height: 210px;
+  width: 150px;
+  border-top: 20px solid;
+  margin: 30px auto;
+}
+
+h3 {
+  font-size: 30px;
+  margin: -10px;
+}
+
+p {
+  text-align: center;
+}
+
+#title-1 {
+  border-color: #33A8DD;
+}
+
+#title-2 {
+  border-color: #F46731;
+}
+
+#title-3 {
+  border-color: #2BCDC0;
+}
+
+/* Small and up (Phones) */
+@media (min-width: 576px) {
+  .container {
+    margin: 0 auto;
+    width: 70%;
+    /* border: solid red; */
+  }
+  header {
+    background-color: #33A8DD;
+  }
+  main {
+    background: #F7F5F6;
+  }
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+  .container {
+    width: 100%;
+  }
+
+  header {
+    background-color: #2BCDC0;
+    text-align: center;
+  }
+
+  main {
+    background-color: black;
+  }
+
+  article {
+    color: white;
+    width: calc(33% - 10px);  /*this makes the size of the articles */
+  }                            /*change when the screen is big*/
+}
