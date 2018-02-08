@@ -7,6 +7,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* text-align: center; */
   width: 992px;
   height: 362px;
   background-color: #2bcdc0;
@@ -84,8 +85,11 @@ p {
   background-color: #2bcdc0;
 }
 
-/* Tablet */
-@media (min-width: 768px) {
+/* phone */
+@media (min-width: 576px) {
+  header, .three-content-box {
+    width: 75%;
+  }
   .three-content-box {
     width: 75%;
     margin: 0 auto;
