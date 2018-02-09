@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Box Sizing</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+   </head>
+   <header>
+      <img class="logo" src="./img/logo.png" alt="">
+      <nav>
+        <ul>
+        <li class="home"><a class="top" href="#"><img class="topicons" src="./img/home-icon.png" alt=""><p class="navLink navhome" > Home </p></a></li>
+        <li class="deals"><a class="top" href="#"><img class="topicons" src="./img/deal-icon.png" alt=""><p class="navLink"> Travel Deals </p></a></li>
+        <li class="schedule"><a class="top" href="#"> <img class="topicons" src="./img/schedule-icon.png" alt=""><p class="navLink"> Flight Schedule</p></a></li>
+        <li class="login"><a class="top" href="#"><img class="topicons" src="./img/login-icon.png" alt=""><p class="navLink"> Register/Login </p></a></li>
+        </ul>
+      </nav>
+   </header>
+  <body background="../img/airline.jpg">
+
+    <section id="layout">
+      <div class="div1">
+        <div class="topbox plane"><a href="#"><img class="box-img" src="./img/plane-icon.png" alt=""></a></div>
+        <div class="topbox hotel"><a href="#"><img class="box-img" src="./img/hotel-icon.png" alt="" height="20" width="20"></a></div>
+        <div class="topbox car"><a href="#"><img class="box-img" src="./img/car-icon.png" alt="" height="20" width="20"></a></div>
+      </div>
+      <div class="div2">
+
+        <form action="/action_page.php">
+       <p>
+        <input class="textbox depart" type="text" name="Depart" value="Depart">
+       </p>
+       <p>
+        <input class="textbox arrive" type="text" name="Arrive" value="Arrive"> <br />
+       </p>
+       <p>
+        <input class="textbox leave" type="text" name="mm/dd/yy" value="mm/dd/yy"> <br />
+       <p>
+        <input class="textbox return" type="text" name="mm/dd/yy" value=mm/dd/yy> <br />
+       </p>
+       <p class=dropradio">
+           <label class="drop"> Passengers <select name="Passengers">
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+         <option value="4">4</option>
+         <br />
+         <input class="radio return" type="radio" name="flighttype" value="return" checked> Return
+         <input class="radio oneway" type="radio" name="flighttype" value="oneway"> One Way<br/>
+      </p>
+      <p>
+         <input class="submit" type="submit" value="Search Flights">
+       </p>
+   </label>
+   </select>
+        </form>
+      </div>
+    </section>
+
+  </body>
+</html>
