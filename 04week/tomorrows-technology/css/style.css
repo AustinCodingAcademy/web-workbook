@@ -35,7 +35,49 @@ h2 {
   border-bottom: 1px solid black;
 }
 
-/* phone */
+/* phone portrait*/
+@media (min-width: 300px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  main {
+    padding: 50px 15px;
+  }
+
+  footer {
+    margin: 0px -10px;
+  }
+
+  .top-stories {
+    display: none;
+  }
+
+  .footer-div {
+    background-color: #5D5D5D;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer-lists {
+    /* THIS IS DUCT TAPE BULLSHIT */
+    margin-left: -50px;
+  }
+
+  .footer-list-items {
+    padding: 5px 0;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+/* phone landscape */
 @media (min-width: 576px) {
   body {
     display: flex;
