@@ -1,59 +1,81 @@
-body {
+.container {
   margin: 0 auto;
-  width: 992px;
+  width: 95%;
+  max-width: 960px;
 }
 
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* text-align: center; */
-  width: 992px;
-  height: 362px;
-  background-color: #2bcdc0;
-
+  background-color: #29a9dd;
+  text-align: center;
+  height: 300px;
 }
 
-h1 {
-  font-family: 'Noto', serif;
-  font-size: 50px;
-  color: #ffffff;
-  font-weight: 100;
-  margin: 0 auto;
-  letter-spacing: 2px;
-}
-
-.three-content-boxes {
+main {
   display: flex;
-  justify-content: space-around;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* padding: 10px; */
+  background-color: #f7f5f6;
+}
+
+article {
+  display: flex;
   align-items: center;
-  width: 992px;
-  background-color: #222222;
-  height: 362px;
+  justify-content: center;
+  text-align: left;
+  /* height: 300px; */
 }
 
 h3 {
-  font-family: 'Noto', serif;
-  color: #ffffff;
+  font-family: 'Halant', serif;
+  color: #000000;
   font-size: 34px;
-  letter-spacing: 3px;
+  /* letter-spacing: 3px; */
   text-align: center;
-  padding-bottom: 12px;
+  /* padding-bottom: 5px; */
+  margin: 8px 0;
+}
+
+h1 {
+  font-family: 'Halant', serif;
+  font-size: 52px;
+  color: #ffffff;
+  font-weight: 300;
+  padding: 100px 139px;
+  text-align: left;
+  line-height: 55px;
+}
+
+h1 strong {
+  font-weight: 400;
 }
 
 p {
   font-family: 'Open-Sans', sans-serif;
   font-weight: 100;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.black-grey-box {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px;
 }
 
 .blue-box {
   width: 172px;
   height: 215px;
-  /* margin-left: 70px; */
+  margin: 15px 30px;
 }
 
 .bluebar {
@@ -65,6 +87,7 @@ p {
 .orange-box {
   width: 172px;
   height: 215px;
+  margin: 15px 30px;
 }
 
 .orangebar {
@@ -76,7 +99,7 @@ p {
 .teal-box {
   width: 172px;
   height: 215px;
-  /* margin-right: 70px; */
+  margin: 15px 30px;
 }
 
 .tealbar {
@@ -85,18 +108,24 @@ p {
   background-color: #2bcdc0;
 }
 
-/* phone */
 @media (min-width: 576px) {
-  header, .three-content-box {
-    width: 75%;
-  }
-  .three-content-box {
-    width: 75%;
+  article {
     margin: 0 auto;
+    /* width: 50%; */
   }
 }
 
-
-/* Desktop */
 @media (min-width: 992px) {
+  .black-grey-box {
+    background-color: #000000;
+  }
+  header {
+    background-color: #2bcdc0;
+  }
+  p {
+    color: #ffffff;
+  }
+  h3 {
+    color: #ffffff;
+  }
 }
