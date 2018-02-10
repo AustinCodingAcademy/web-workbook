@@ -1,0 +1,85 @@
+
+div.banner {
+  display: flex;
+  background-color: #59A6D8;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  flex-direction: column;
+}
+div.banner span {
+  text-align: center;
+  font-size: 80px;
+  color: white;
+}
+
+span.strong {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+div.content {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.article {
+  width: 300px;
+  height: 500px;
+  text-align: center;
+
+}
+
+div.article > * {
+  margin-bottom: 5%;
+}
+
+div.color-block {
+  width: 300px;
+  height: 30px;
+}
+
+div.article1 div.color-block {
+  background-color: #59A6D8;
+}
+
+div.article2 div.color-block {
+  background-color: #E26F41;
+}
+
+div.article3 div.color-block {
+  background-color: #66CABF;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+p {
+  font-size: 33px;
+}
+
+
+
+
+ @media (min-width: 992px) {
+div.banner {
+  flex-direction: row;
+  background-color: #66CABF;
+}
+
+div.content {
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+}
+/* How do I insert text via css?  */
+/* span.add-content::before {
+  content:" ";
+} */
+
+  }
