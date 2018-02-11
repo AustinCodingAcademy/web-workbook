@@ -1,0 +1,112 @@
+body {
+  font-family: helvetica;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 20px
+}
+
+h4 {
+  font-size: 15px;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+nav {
+  grid-area: nav;
+}
+
+aside {
+  grid-area: aside;
+}
+
+.banner {
+  grid-area: banner;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.section1 {
+  grid-area: section1;
+}
+
+.section2 {
+  grid-area: section2;
+}
+
+.section3 {
+  grid-area: section3;
+}
+
+.section4 {
+  grid-area: section4;
+}
+
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "section1  section1" "section3  section4";
+}
+
+.section2 {
+  display: none;
+}
+
+
+@media (min-width: 576px) {
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "section1  section1";
+  }
+  .section2 {
+    display: none;
+  }
+  .section3 {
+    display: none;
+  }
+  .section4 {
+    display: none;
+  }
+}
+
+/* Medium and up (Tablets) */
+
+@media (min-width: 768px) {
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "section1  section2";
+  }
+
+  .section2 {
+    display: block;
+  }
+
+  .section3 {
+    display: none;
+  }
+  .section4 {
+    display: none;
+  }
+}
+
+/* Large and up (Desktops) */
+
+@media (min-width: 992px) {}
+
+/* Extra Large and up (Wide Screen Desktops) */
+
+@media (min-width: 1200px) {}
