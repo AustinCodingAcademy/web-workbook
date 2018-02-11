@@ -2,6 +2,29 @@ body {
   font-family: helvetica;
 }
 
+#tech-button {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #04141f;
+  padding: 8px 20px 8px 20px;
+  text-decoration: none;
+  margin: 20px 0px 20px 0px;
+}
+
+.section4 {
+  background-color: gray;
+  color: white;
+}
+
+.section5 {
+  background-color: gray;
+  color: white;
+}
+
 h1 {
   font-size: 25px;
 }
@@ -10,8 +33,23 @@ h2 {
   font-size: 20px
 }
 
+h3 {
+  font-size: 18px;
+}
+
 h4 {
   font-size: 15px;
+}
+
+.useful-links ul li {
+  color: white
+  padding: 20px 0px 20px 0px;
+}
+
+
+.social-media ul li a {
+  color: white;
+  padding: 20px 0px 20px 0px;
 }
 
 header {
@@ -44,6 +82,7 @@ footer {
 
 .section2 {
   grid-area: section2;
+  padding: 0px 30px 0px 30px;
 }
 
 .section3 {
@@ -54,13 +93,20 @@ footer {
   grid-area: section4;
 }
 
+.section5 {
+  grid-area: section5;
+}
+
 .grid-container1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "section1  section1" "section3  section4";
+  grid-template-areas:
+  "section1  section1"
+  "section2  section2"
+  "section4  section5";
 }
 
-.section2 {
+.section3 {
   display: none;
 }
 
@@ -69,15 +115,19 @@ footer {
   .grid-container1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "section1  section1";
+    grid-template-areas:
+    "section1  section1"
+    "section2  section2";
   }
-  .section2 {
-    display: none;
-  }
+
   .section3 {
     display: none;
   }
+
   .section4 {
+    display: none;
+  }
+  .section5 {
     display: none;
   }
 }
@@ -87,21 +137,23 @@ footer {
 @media (min-width: 768px) {
   .grid-container1 {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: "section1  section2";
-    
-  }
-
-  .section2 {
-    display: block;
+    grid-template-columns: 5fr 1fr;
+    grid-template-areas:
+    "section1  section3"
+    "section2  section2";
   }
 
   .section3 {
-    display: none;
+    display: block;
   }
+
   .section4 {
     display: none;
   }
+  .section5 {
+    display: none;
+  }
+
 }
 
 /* Large and up (Desktops) */
