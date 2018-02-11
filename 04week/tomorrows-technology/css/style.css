@@ -6,6 +6,7 @@ header {
   justify-content: center;
   margin-top: 8%;
 
+
 }
 
 body {
@@ -24,6 +25,13 @@ h2 {
   font-size: 17px;
   font-weight: bold;
   padding: 20px 0px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 12px;
+  border-bottom: 1px black solid;
 }
 /* start class definitions  */
 .maintext {
@@ -45,6 +53,14 @@ h2 {
   justify-content: space-around;
   color: white;
   font-family: arial;
+}
+
+.side {
+
+margin-right: 15px;
+margin-bottom: 0;
+font-family: arial;
+display: none;
 }
 
 .box {
@@ -74,21 +90,59 @@ h2 {
   margin-bottom: 5px;
 }
 
+.stories {
+  padding: 10px 0px;
+}
+
+.picsize {
+    justify-content: center;
+}
 /* Extra Small and up */
 
 /* Small and up (Phones) */
 @media (min-width: 576px) {
 
+.side {
+  display: none;
+}
 }
 
 /* Medium and up (Tablets) */
 @media (min-width: 768px) {
 
+  .linkbox {
+  display: none;
+  }
+
+  .maintext {
+    padding-bottom: 0px;
+  }
+
+  .side {
+    display: none;
+  }
 }
 
 /* Large and up (Desktops) */
 @media (min-width: 992px) {
 
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 25px;
+
+
+
+  }
+
+  .side {
+    margin-left: 30px;
+    margin-right: 20px
+    margin-top: 0px;
+
+   display: block;
+  }
 }
 
 /* Extra Large and up (Wide Screen Desktops) */
