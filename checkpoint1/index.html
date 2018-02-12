@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>checkpoint1 website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+  </head>
+  <body>
+    <header>
+      <br><br><br>
+      <h1 class="cloud"><strong>Join us in the Clouds!</strong></h1>
+    </header>
+    <div class="blackbreak">
+    </div>
+    <main>
+      <section>
+
+      <div id="mysidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closenav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Gallery</a>
+  <a href="#">Book a tour</a>
+  <a href="#">Map and Directions</a>
+  <a href="#">Guest Ratings/Reviews</a>
+  <a href="#">Contact</a>
+</div>
+
+<div id="main">
+  <br>
+  <span style="font-size:50px;cursor:pointer" onclick="opennav()">&#9776; <u>Click</u> here to open the door to your Adventure!</span>
+</div>
+<div class="center">
+Rocky Mountain High Adventure Tours
+</div>
+
+<script>
+function opennav() {
+    document.getElementById("mysidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closenav() {
+    document.getElementById("mysidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+</section>
+  <div class="blackbreak">
+  </div>
+
+  <article class="info">
+    <div class="imagepad">
+
+      <img src="./images/meadow.jpg" alt="Image of a meadow">
+    </div>
+    <div class="textbox">
+      <p>Welcome to Rocky Mountain High Adventure Tours,
+        Denver's premier tour bus service to Mount Evans.
+        Our tours leave from the City's transit hub, Union Station
+        and transport you to the top of the world! <br><br><br>
+        The Mount Evans Scenic Byway is one of the most beautiful drives in
+        North America, it's only a couple of hours from central Denver to the Summit.
+        The byway is 28 miles (45 km) in length and gains over 7,000
+        feet (2,100 m) of elevation. Achieving a final elevation of
+        14,130 feet (4,310 m), this is the highest paved road in North America.
+
+
+
+    </p>
+    </div>
+    <div class="textboxopposite">
+      <p>Our luxury coaches conveniently pick you up at Union Station.  Sit back
+        and relax as you climb through the wooded foothills.  Next we have a stop
+        in the quaint mountain town of Evergreen, for some shopping and refreshments.
+        As the tour continues you'll pass beautiful forests, mountain lakes and
+        alpine meadows. <br><br>
+        There is abundant wildlife in the area including mountain goats, mountain
+        sheep, elk, moose and black bears among hundreds of other species. As you
+        continue up the hairpin turns you can see all of Denver spread below you.
+        Finally, you reach the summit with a gorgeous view of the Rocky Mountains.
+        You can climb the last few hundred feet to the very top and truly have a
+        Rocky Mountain High Adventure!
+
+    </p>
+    </div>
+
+    <div class="imagepadopposite">
+
+      <img src="./images/sheep.jpg" alt="Image of mountain sheep">
+    </div>
+
+
+
+</article>
+<div class="whitebreak">
+  <!-- used to try to create barrier for bottom picture on mobile screens unsuccessful but looks fine on computer -->
+
+</div>
+
+    </main>
+    <footer>
+      <div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Gallery</a>
+  <a href="#">Book a tour</a>
+  <a href="#">Map and Directions</a>
+  <a href="#">Guest Ratings/Reviews</a>
+  <a href="#">Contact</a>
+  <a href="#">  Design and Photography by Ukiah Richardson February 2018</a>
+  </div>
+
+<!-- added final href to cover rest of nav bar, any portion to right of buttons was showing white unclear why
+attempted to set all backgrounds to black but only white displayed (empty space?) -->
+
+
+
+    </footer>
+
+
+  </body>
+</html>

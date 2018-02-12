@@ -1,0 +1,198 @@
+
+
+header {
+  width: 100%;
+  height: 250px;
+  background-image:url("../images/Cloud.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+
+}
+
+main {
+}
+
+section{
+  height: 900px;
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  transition: background-color .5s;
+  background-image:url("../images/mountainlake.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  text-shadow: 1px 1px white;
+  color: rgb(70, 70, 76);
+
+
+}
+
+/*need to better organize classes in future sidenav classes below*/
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.cloud {
+  text-align: center;
+  text-shadow: 3px 3px white;
+  font-size: 80px;
+  font-family:cursive;
+
+}
+
+.whitebreak {
+  background-color: whitesmoke;
+  width:100%;
+  height: 25px;
+}
+
+.blackbreak {
+  background-color: black;
+  width:100%;
+  height: 25px;
+}
+
+.center {
+  margin: auto;
+  height: 20%;
+  width: 60%;
+  padding: 60px;
+  text-align: center;
+  font-family: impact;
+  font-size: 75px;
+  color: white;
+  text-shadow: 4px 4px black;
+  font-weight: bold;
+
+}
+/* begin bottom section  */
+.info {
+  height: 950px;
+  background-color: whitesmoke;
+  margin-bottom: 10px;
+
+}
+
+/*next time should seperate classes for imagepad and box from right and left classes instead of creating opposites*/
+.imagepad {
+  box-shadow: 8px 8px 8px lightgrey;
+  margin-left: 30px;
+  margin-top: 40px;
+  float: left;
+}
+
+.imagepadopposite {
+  box-shadow: 8px 8px 8px lightgrey;
+  margin-left: 15px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  float: left;
+}
+
+.textbox {
+  float: right;
+  margin-right: 30px;
+  margin-left: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: 620px;
+  text-align: justify;
+  text-overflow: auto;
+  font-size: 25px;
+  line-height: 30px;
+  color: blue;
+}
+
+.textboxopposite {
+  float: left;
+  margin-right: 20px;
+  margin-left: 30px;
+  margin-top: 40px;
+  width: 620px;
+  text-align: justify;
+  text-overflow: auto;
+  font-size: 25px;
+  line-height: 30px;
+  color: blue}
+
+
+.navbar {
+
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: black;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: black;
+
+
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.black {
+  background-color: black;
+  text-align: center;
+  width: 100%;
+  height:30px;
+}
