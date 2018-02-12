@@ -105,20 +105,56 @@ li {
   height: 30px;
 }
 
+main {
+  display: flex;
+}
+
+aside {
+  display: none;
+}
+
+.top-stories {
+  width: 300px;
+  height: 100%;
+  margin: 37px 0 0 0;
+  padding: 0 0 0 20px;
+/* font-family: 'Roboto-Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 14px; */
+}
+
+aside h4 {
+  color: #000000;
+}
+
+aside li {
+  width: 200px;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 700;
+}
 
 @media (min-width: 576px) {
 
 }
 
 @media (min-width: 768px) {
-  .container {
-    width: 95%;
-  }
+  /* .container {
+    width: 80%;
+  } */
   input {
     width: 30%;
+  }
+  footer {
+    display: none;
   }
 }
 
 @media (min-width: 992px) {
-
+  article {
+    margin: 0 10px;
+  }
+  aside {
+    display: block;
+  }
 }
