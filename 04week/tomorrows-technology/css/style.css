@@ -1,0 +1,191 @@
+body {
+  font-family: helvetica;
+}
+
+#tech-button {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #04141f;
+  padding: 8px 20px 8px 20px;
+  text-decoration: none;
+  margin: 20px 0px 20px 0px;
+}
+
+.section4 {
+  background-color: gray;
+  color: white;
+}
+
+.section5 {
+  background-color: gray;
+  color: white;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 20px
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+.useful-links h3 {
+  padding: 10px 0px 10px 20px;
+}
+
+.social-media h3 {
+  padding: 10px 0px 10px 20px;
+}
+.useful-links ul li {
+  color: white;
+  padding: 5px 0px 5px 20px;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+
+}
+
+.social-media ul li a {
+  color: white;
+  padding: 5px 0px 5px 20px;
+  /* border-style: solid; */
+  /* border-width: 0px 0px 1px 0px; */
+}
+
+.social-media ul li {
+  color: white;
+  padding: 5px 0px 5px 0px;
+
+}
+
+.section2 h1 {
+  padding: 15px 0px 15px 0px;
+}
+
+
+.section3 h2 {
+  border-style: solid;
+  padding: 5px 20px 5px 20px;
+  border-width: 0px 0px 1px 0px;
+}
+
+
+.section3 h4 {
+  font-weight: bold;
+  padding: 5px 20px 5px 20px;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+nav {
+  grid-area: nav;
+}
+
+aside {
+  grid-area: aside;
+}
+
+.banner {
+  grid-area: banner;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.section1 {
+  grid-area: section1;
+}
+
+#image-1 {
+  width: 100%;
+  height: auto;
+}
+
+.section2 {
+  grid-area: section2;
+  padding: 0px 30px 0px 30px;
+}
+
+.section3 {
+  grid-area: section3;
+}
+
+.section4 {
+  grid-area: section4;
+}
+
+.section5 {
+  grid-area: section5;
+}
+
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "section1  section1" "section2  section2" "section4  section5";
+}
+
+.section3 {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "section1  section1" "section2  section2";
+  }
+  .section3 {
+    display: none;
+  }
+  .section4 {
+    display: none;
+  }
+  .section5 {
+    display: none;
+  }
+}
+
+/* Medium and up (Tablets) */
+
+@media (min-width: 768px) {
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-areas: "section1  section3" "section2  section2";
+  }
+  .section3 {
+    display: block;
+  }
+  .section4 {
+    display: none;
+  }
+  .section5 {
+    display: none;
+  }
+}
+
+/* Large and up (Desktops) */
+
+@media (min-width: 992px) {}
+
+/* Extra Large and up (Wide Screen Desktops) */
+
+@media (min-width: 1200px) {}
