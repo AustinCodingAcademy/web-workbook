@@ -1,0 +1,88 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #3ab371;
+}
+
+header {
+  display: grid;
+  justify-content: center;
+  color: #fff;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 240%;
+  margin: 1em 0em .3em;
+}
+
+header p {
+  color: #ffffff73;
+  padding-bottom: 15px;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: #444;
+}
+
+div.article {
+  margin: 10px;
+  grid-column: span 4;
+  align-self: start;
+}
+
+div.article:hover {
+  box-shadow: 2px 8px 10px #0000004D;
+  transition: box-shadow 500ms;
+}
+
+div.article img {
+  width: 100%;
+  margin-bottom: 0em;
+}
+
+div.text {
+  padding: 15px;
+  margin-top: -5px;
+  background-color: white;
+}
+
+div.tagline {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5em 0em;
+  color: #7f7f7f;
+}
+
+h1.art-head {
+  font-weight: bold;
+  font-size: 110%;
+  padding: .5em 0em;
+}
+
+p.art-text {
+  color: #7f7f7f;
+}
+
+/* Medium and up (Tablets) */
+
+@media (min-width: 768px) {
+  div.article {
+    grid-column: span 2;
+  }
+}
+
+/* Large and up (Desktops) */
+
+@media (min-width: 992px) {
+  div.article {
+    grid-column: span 2;
+  }
+  div.article:nth-child(3), div.article:nth-child(4) {
+    grid-column: span 1;
+  }
+}
