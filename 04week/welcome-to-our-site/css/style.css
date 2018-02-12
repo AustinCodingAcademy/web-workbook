@@ -1,0 +1,92 @@
+/* Welcome to our site custom styles */
+
+/* Extra Small and up */
+
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* head section */
+
+header {
+  background-color: #33a8dd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 300%;
+  padding: 2em 0em;
+  width: 6em;
+}
+
+/* main section */
+
+main {
+  background-color: #f7f5f6;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+section {
+  width: 12em;
+  font-size: 120%;
+  padding: 2em;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 180%;
+  padding: .3em 0em;
+}
+
+section div.bar {
+  width: 100%;
+  height: 35px;
+}
+
+section.bacon div.bar {
+  background-color: #33a8dd;
+}
+
+section.sausage div.bar {
+  background-color: #f06931;
+}
+
+section.filet div.bar {
+  background-color: #2bcdc0;
+}
+
+/* Large and up (Desktops) */
+
+@media (min-width: 992px) {
+  body {
+    padding: 1em;
+  }
+  /* head section */
+  header {
+    background-color: #2bcdc0;
+  }
+  header h1 {
+    width: 12em;
+    text-align: center;
+  }
+  /* main section */
+  main {
+    background-color: #1b1b1b;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    color: #fff;
+  }
+  /* end large (desktop) media */
+}

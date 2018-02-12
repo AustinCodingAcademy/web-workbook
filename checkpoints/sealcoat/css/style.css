@@ -1,0 +1,329 @@
+/*
+---------
+Sealcoat stylesheet
+Palette - https://coolors.co/5a4c38-f9e0ba-638336-b6c380-809ca3
+---------
+*/
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+nav {
+  background-color: #5a4c38;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 95%;
+  text-transform: uppercase;
+  padding: 0px 10px;
+  font-weight: bold;
+  ;
+}
+
+.nav-link, .navbar-toggler, .navbar-togger-icon {
+  color: #fff;
+  border: #fff;
+}
+
+h1 {
+  font-size: 150%;
+}
+
+h2 {
+  font-size: 130%;
+}
+
+h3 {
+  font-size: 110%;
+  font-weight: bold;
+  margin-top: 1.5em;
+}
+
+p {
+  margin: .5em 0em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.large {
+  font-size: 110%;
+}
+
+main {
+  padding: 10px;
+}
+
+a.subtle:link, a.subtle:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.subtle:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
+aside {
+  background-color: #fcf0df;
+  border: 2px solid #5a4c38;
+  margin: 3px;
+}
+
+.gallery-preview {
+  padding-top: 10px;
+}
+
+.headshot {
+  width: 90px;
+  border-radius: 90px;
+  float: left;
+  margin-right: 10px;
+}
+
+address h1 {
+  padding: 12px;
+  font-size: 130%;
+}
+
+address ul.contacts {
+  display: inline-flex;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 100%;
+  margin: 8px 0px;
+}
+
+.infoqual {
+  font-size: 80%;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding: 3px 8px;
+}
+
+.spacemetop {
+  margin-top: 1em;
+}
+
+/*
+----------------
+Home page
+----------------
+*/
+
+section.intro div.newpubs {
+  background-color: #fcf0df;
+  border: 1px solid #5a4c38;
+  margin: 3px;
+}
+
+div.newpubs p.large {
+  margin-top: 1.5em;
+}
+
+section.understand {
+  background-image: url('../img/stormdrain-in-grass-by-sealcoated-lot_large.jpg');
+  background-position: center;
+  background-size: cover;
+  margin: 10px -10px 20px;
+  border: 1px solid #5a4c38;
+  padding-bottom: 30px;
+}
+
+section.understand h1 {
+  background-color: #f9e0bab3;
+  padding: 12px;
+  border-bottom: 1px solid #5a4c38;
+}
+
+section.understand div.undercol {
+  background-color: #f9e0bab3;
+  padding: 8px;
+  margin: 10px;
+  border: 1px solid #5a4c38;
+}
+
+section.understand div.under2col img {
+  width: 40%;
+  float: left;
+  padding-right: 10px;
+}
+
+section.impacts {
+  background-image: url('../img/sealcoat-runoff-to-stream_large.jpg');
+  background-position: center;
+  background-size: cover;
+  background-color: #b6c380;
+  margin: 20px -10px 10px;
+  border: 1px solid #33451c;
+  padding: 10px;
+}
+
+section.impacts h1 {
+  background-color: #506b2bb3;
+  padding: 12px;
+  border-bottom: 1px solid #33451c;
+  color: #fff;
+  margin: -10px -10px 0px -10px;
+}
+
+section.impacts div.impcol {
+  background-color: #b6c380cc;
+  padding: 8px;
+  margin: 15px 10px;
+  border: 1px solid #33451c;
+}
+
+section.impacts div.impcol h3 {
+  padding: 0px;
+  margin: 0px;
+}
+
+section.impacts ul.impacts {
+  list-style-type: none !important;
+  margin-left: 4em;
+}
+
+section.impacts ul.impacts li {
+  position: relative;
+}
+
+section.impacts ul.impacts li:before {
+  /*
+The desired width gets defined in two places: The element width, and background size.
+The height only gets defined once, in background size.
+*/
+  position: absolute;
+  display: block;
+  content: '\2022';
+  /* bullet point, for screen readers */
+  text-indent: -999999px;
+  /* move the bullet point out of sight */
+  left: -3.5em;
+  width: 3em;
+  /* desired width of the image */
+  height: 3em;
+  /* unrelated to image height; this is so it gets snipped */
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  border-radius: 50px;
+}
+
+section.impacts ul.impacts li.imp-hh1:before {
+  background-image: url('../img/Coaltar-sealcoated-driveway_li.jpg');
+}
+
+section.impacts ul.impacts li.imp-hh2:before {
+  background-image: url('../img/worn-sealcoat-driveway_li.jpg');
+}
+
+section.impacts ul.impacts li.imp-eh1:before {
+  background-image: url('../img/fathead-minnow1_li.jpg');
+}
+
+section.impacts ul.impacts li.imp-eh2:before {
+  background-image: url('../img/processing-lake-sediment-samples-MN_li.jpg');
+}
+
+/*
+----------------
+About
+-------------------
+*/
+
+section.usgsresearch {
+  margin: 1.5em;
+  padding: 1em;
+  background-color: #fcf0df;
+  border: 1px solid #5a4c38;
+  width: 30%;
+}
+
+.usgsresearch h1 {
+  font-weight: bold;
+  font-size: 130%;
+}
+
+.usgsresearch h2 {
+  font-weight: bold;
+  margin-top: 2em;
+  font-size:110%;
+}
+
+.usgsresearch img {
+  float: left;
+  width: 25%;
+  height: auto;
+  margin: 8px;
+}
+
+.question {
+  font-weight: bold;
+  margin: 1em 0em .5em;
+}
+
+.answer {
+  margin: .5em 1em;
+}
+
+/*
+----------------
+Publications
+-------------------
+*/
+
+.reference {
+  margin-left: 2em;
+  text-indent: -2em;
+}
+
+.toc {
+  margin: 1em;
+  padding: 5px;
+  background-color: #fcf0df;
+  border: 1px solid #5a4c38;
+}
+
+.toc h3 {
+  margin-top: 0em;
+}
+
+.toc ul {
+  list-style-type: none;
+  margin-left: 2em;
+}
+
+/*
+----------------
+Impacts
+-------------------
+*/
+
+div.has-tooltip+div {
+  display: none
+}
+
+div.has-tooltip {
+  display: inline;
+  font-size: 80%;
+  vertical-align: super;
+  border-bottom: dashed 1px #999;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+ul.impacts {
+  list-style-type: circle !important;
+  margin-left: 2em;
+}
+
+ul.impacts li {
+  padding: .5em 0em;
+}

@@ -1,0 +1,154 @@
+/*
+UX Atlantic stylesheet
+
+Palette: https://coolors.co/193a55-018d80-0063b7-f1f7ed-af9164
+
+*/
+
+/*  default styles */
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  background: url("../img/airline.jpg") #193a55 no-repeat;
+  background-size: cover;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #f1f7ed;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #09beae;
+}
+
+/* header styles */
+header {
+  background-color: #193a55;
+  color: #f1f7ed;
+  border-bottom: 1px solid #b1bcc5;
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  min-width: 200px;
+  width: 20%;
+  height: auto;
+}
+
+header ul {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+header ul li {
+  margin-right: 40px;
+  font-size: 90%;
+}
+
+
+li.nav-home {
+  list-style-image: url("../img/home-icon.png")
+}
+li.nav-deals {
+  list-style-image: url("../img/deal-icon.png")
+}
+li.nav-sched {
+  list-style-image: url("../img/schedule-icon.png")
+}
+li.nav-login {
+  list-style-image: url("../img/login-icon.png")
+}
+
+/* reservation box styles */
+div.reservation {
+  width: 400px;
+  margin: 80px 60px;
+  background-color: #193a55;
+  color: #dbdddd;
+  font-size: 80%;
+}
+
+div.reservation nav {
+  background-color: #018d80;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+div.reservation nav button {
+  border: none;
+  width: 134px;
+  height: 50px;
+}
+
+button.res-plane {
+  background-color: #0063b7;
+}
+
+button.res-hotel {
+  background-color: #018d80;
+}
+
+button.res-car {
+  background-color: #018d80;
+}
+
+button.res-plane:hover, button.res-hotel:hover, button.res-car:hover {
+  background-color: #004986;
+  border: 1px dotted #f1f7ed;
+}
+
+div.line {
+  display: block;
+  margin: 10px;
+}
+
+.depart-field, .arrive-field, .depart-date-field, .arrive-date-field {
+  background-color: #193a55;
+  color: #fff;
+  border: 1px solid #f1f7ed;
+  padding: 8px;
+  width: 140px;
+  margin: 0px 5px;
+}
+
+.depart-field:focus, .arrive-field:focus, .depart-date-field:focus, .arrive-date-field:focus, .passenger-field:focus {
+  border: 1px solid #0063b7;
+}
+
+.depart-field, .depart-date-field {
+  margin-right: 20px;
+}
+
+label[for*="passengers"] {
+  margin-left: 10px;
+}
+
+.passenger-field {
+  background-color: #193a55;
+  color: #fff;
+  border: 1px solid #f1f7ed;
+  padding: 8px;
+  margin-left: 8px;
+}
+
+.return-flight-field {
+  margin-left: 45px;
+}
+
+input.submit-field {
+  background-color: #0063b7;
+  color: #f1f7ed;
+  border: none;
+  padding: 8px;
+  margin: 10px;
+  width: 360px;
+}
+
+input.submit-field:hover {
+  background-color: #af9164;
+  font-weight: bold;
+  border: 1px solid #f1f7ed;
+}
