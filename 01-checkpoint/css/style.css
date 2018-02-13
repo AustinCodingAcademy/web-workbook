@@ -1,0 +1,361 @@
+/* type class styling */
+html {
+  height: 100%;
+}
+
+head {
+  font-family: 'Work Sans', sans-serif;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+main {
+  margin-left: 8.5%;
+  margin-right: 8.5%;
+}
+
+h1 {
+  color: white;
+  font-size: 2.5em;
+}
+
+h2 {
+  color: black;
+  font-size: 1.75em;
+}
+h3 {
+  color: white;
+  font-size: 1.1em;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+p {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  line-height: 150%;
+}
+
+a {
+  line-height: 150%;
+}
+
+/* font for <a> tag classes */
+.white-font {
+  text-decoration: none;
+  color: white;
+}
+
+.white-font:hover {
+  text-decoration: underline;
+}
+
+.blue-font {
+  text-decoration: none;
+  color: #1071B8;
+  font-weight: bold;
+}
+
+.blue-font:hover {
+  text-decoration: underline;
+}
+
+.gray-font {
+  text-decoration: none;
+  color:#666666;
+}
+
+.gray-font:hover {
+  text-decoration: underline;
+}
+
+.footer-font {
+  font-size: 0.75em;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  color:#666666;
+}
+
+.footer-font:hover {
+  text-decoration: underline;
+}
+
+/* -------------------------------------------------------------- */
+/* big picture */
+.bigpic {
+  background-image: url(../img/main-gradient.png);
+  background-size: cover;
+  margin: 0px;
+  height: 450px;
+  width: auto;
+}
+/* navigation bar flexbox*/
+.bigpic .topnav {
+  border-bottom: 0.5px solid;
+  border-bottom-color: lightgray;
+  display: flex;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  /* margin-left: 8.5%;
+  margin-right: 8.5%; */
+}
+/* logo */
+.bigpic .topnav .logo {
+  background-image: url("https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_200x51.png");
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: center;
+  margin-left: -20px;
+  filter: brightness(0) invert(1);
+  flex: 1;
+}
+
+/* navigation bar */
+.bigpic .topnav .navbar {
+  flex: 1.5;
+  text-align: center;
+  margin: auto;
+}
+
+/* navigation bar lists */
+.bigpic .topnav .navbar .navbar1 {
+  display: inline;
+  list-style-type: none;
+  margin-right: 30px;
+  font-size: 0.9em;
+}
+
+/* navigation bar on the right */
+.bigpic .topnav .navbar-right {
+  flex: 1;
+  text-align: center;
+  margin-right: 20px;
+  list-style-type: none;
+}
+
+.bigpic .topnav .navbar-right #button1 {
+  background-color: transparent;
+  border: solid;
+  border-width: thin;
+  border-radius: 25px;
+  height: 40px;
+  width: 100px;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.bigpic .topnav .navbar-right #button2 {
+  background-color: white;
+  border: solid;
+  border-width: thin;
+  border-radius: 25px;
+  height: 40px;
+  width: 100px;
+  color: black;
+  font-weight: bold;
+  padding-top: 10px 20px;
+  text-decoration: none;
+}
+
+.bigpic .topnav .navbar-right .button-href {
+  text-decoration: none;
+}
+
+.bigpic .topnav .navbar-right #button2:hover {
+  background-color: lightgray;
+}
+
+/* big picture call to action */
+
+.bigpic .bigpic-call-action {
+  margin-left: 8.5%;
+  margin-right: 8.5%;
+  display: flex;
+}
+
+.bigpic .bigpic-call-action .new-year1 {
+  padding-top: 5%;
+  padding-right: 15%;
+  flex: 1.25;
+}
+
+.bigpic .bigpic-call-action .new-year2 {
+  padding-bottom: 3%;
+}
+
+.bigpic .bigpic-call-action .new-year1 #learnmore-button {
+  margin-top: 3%;
+  width: 375px;
+  height: 50px;
+  background-color: #1071B8;
+  color: white;
+  font-size: 0.85em;
+  font-weight: bold;
+  border-color: #1071B8;
+  border-radius: 25px;
+}
+
+.bigpic .bigpic-call-action .new-year1 #learnmore-button:hover {
+  background-color: blue;
+}
+
+.bigpic .bigpic-call-action #welcomeback {
+  flex: 1;
+  margin-top: 5%;
+  background-color: white;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.bigpic .bigpic-call-action #welcomeback #welcomeback-p {
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 7.5%;
+}
+
+.bigpic .bigpic-call-action #welcomeback #welcomeback-button{
+  margin-left: 20%;
+  width: 275px;
+  height: 50px;
+  background-color: #1071B8;
+  color: white;
+  font-size: 0.85em;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+.bigpic .bigpic-call-action #welcomeback #welcomeback-button:hover {
+  background-color: blue;
+}
+
+/* 1st row */
+
+.call-action1 {
+  border-bottom: 1px dotted lightgray;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  display: flex;
+}
+
+#vertical-line {
+  width: 0px;
+  border: 1px dotted lightgray;
+  height: 135px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.call-action1 .callaction1a {
+  /* flex: 1; */
+}
+
+.call-action1 .callaction1b {
+  /* flex: 1; */
+}
+
+/* 2nd row */
+.call-action2 {
+  padding-top: 3.5%;
+  padding-bottom: 1.5%;
+}
+
+.call-action3 {
+  padding-bottom: 3.5%;
+  border-bottom: 1px dotted lightgray;
+  display: flex;
+}
+
+.call-action3 .call-action3a {
+  padding-right: 10px;
+  flex: 1;
+}
+
+.call-action3 .call-action3b {
+  flex: 1;
+}
+
+.call-action3 .call-action3c {
+  flex: 1;
+}
+
+/* 3rd row (bottom menu)*/
+.bottom-menu-title {
+  padding-top: 2.5%;
+  padding-bottom: 0.75%;
+}
+
+/* flexbox for bottom menus */
+.bottom-menu-column {
+  padding-bottom: 75px;
+  display: flex;
+}
+
+.bottom-menu-column .bottom-menu-column1 {
+  flex: 1;
+}
+
+.bottom-menu-column .bottom-menu-column2 {
+  flex: 1;
+}
+
+.bottom-menu-column .bottom-menu-column3 {
+  flex: 1;
+}
+.bottom-menu-column .bottom-menu-column4 {
+  flex: 1;
+}
+
+.bottom-menu-h4 {
+  font-size: 1.25em;
+  color: #2C2E2F;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* flexbox for bottom navigation bar */
+.bottom-nav {
+  padding-bottom: 1%;
+  border-bottom: 1px dotted lightgray;
+  display: flex;
+}
+
+.bottom-nav-left {
+  flex: 3;
+}
+
+.bottom-nav-right {
+  text-align: right;
+  flex: 1;
+}
+
+.bottom-nav-stuff {
+  text-decoration: none;
+  color:#666666;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 0.9em;
+}
+/* footer stuff */
+footer {
+  padding-top: 1%;
+  margin-left: 8.5%;
+  margin-right: 8.5%;
+  font-family: 'Work Sans', sans-serif;
+  display: flex;
+}
+
+.footer-left {
+  flex: 3;
+}
+
+.footer-right {
+  text-align: right;
+  flex: 1;
+}

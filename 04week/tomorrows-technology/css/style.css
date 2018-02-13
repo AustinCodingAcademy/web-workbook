@@ -1,0 +1,160 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 50px 15px;
+  display: flex;
+}
+
+#submit-button {
+  background-color: #4C4C4C;
+  width: 150px;
+  height: 50px;
+  font-size: 1em;
+  color: white;
+}
+
+.top-stories {
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-right: 20px;
+}
+
+.sidebar {
+  padding-bottom: 20px;
+}
+
+ul {
+  margin-top: 0px;
+  padding-top: 0px;
+  list-style-type: none;
+}
+
+h2 {
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 1.5%;
+  border-bottom: 1px solid black;
+}
+
+/* phone portrait*/
+@media (min-width: 300px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  main {
+    padding: 50px 15px;
+  }
+
+  footer {
+    margin: 0px -10px;
+  }
+
+  .top-stories {
+    display: none;
+  }
+
+  .footer-div {
+    background-color: #5D5D5D;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer-lists {
+    /* THIS IS DUCT TAPE BULLSHIT */
+    margin-left: -50px;
+  }
+
+  .footer-list-items {
+    padding: 5px 0;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+/* phone landscape */
+@media (min-width: 576px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  main {
+    padding: 50px 15px;
+  }
+
+  footer {
+    margin: 0px -10px;
+  }
+
+  .top-stories {
+    display: none;
+  }
+
+  .footer-div {
+    background-color: #5D5D5D;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer-lists {
+    /* THIS IS DUCT TAPE BULLSHIT */
+    margin-left: -50px;
+  }
+
+  .footer-list-items {
+    padding: 5px 0;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  .footer-lists {
+    display: none;
+  }
+}
+
+/* desktop */
+@media (min-width: 992px) {
+  body {
+    padding: 50px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  main {
+    padding: 0px;
+  }
+
+  .bigpic {
+    width: 100%;
+
+  }
+
+  .footer-lists {
+    display: none;
+  }
+
+  .top-stories {
+    margin-top: 0px;
+    flex: 1;
+    display: block;
+  }
+}
