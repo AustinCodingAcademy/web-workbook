@@ -39,7 +39,6 @@ header p {
 main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  color: #444;
 }
 
 .article {
@@ -51,7 +50,7 @@ main {
 }
 
 .article:hover {
-  box-shadow: 2px 8px 10px #0000004D;
+  box-shadow: 2px 10px 10px #0000006e;
   transition: box-shadow 500ms;
 }
 
@@ -65,14 +64,6 @@ main {
   margin-top: -5px; //align-self: flex-end;
 }
 
-.tagline {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-top: 1.5em;
-  color: #7f7f7f;
-}
-
 .art-head {
   font-weight: bold;
   font-size: 110%;
@@ -80,6 +71,14 @@ main {
 }
 
 .art-text {
+  color: #7f7f7f;
+}
+
+.tagline {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 1.5em;
   color: #7f7f7f;
 }
 
@@ -131,15 +130,50 @@ main {
     flex-direction: column;
     justify-content: space-around;
   }
+  /* resetting fomatting from the previous breakpoint */
   .article:nth-child(3n+1) {
     grid-column: span 1;
     display: block;
-    border: 8px solid orange;
   }
-  .article:nth-child(3n+1).image {
-    display: block;
+  .article:nth-child(3n+1):not(:nth-child(1)) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
-  .article:nth-child(3n+1).text {
+  .article:nth-child(3n+1):not(:nth-child(1)) .image {
     display: block;
+    width: 100%;
+    height: auto;
+  }
+  .article:nth-child(3n+1):not(:nth-child(1)) .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 90%;
+  }
+  /* new formatting */
+  .article:nth-child(1), .article:nth-child(2), .article:nth-child(6) {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .article:nth-child(1) .image, .article:nth-child(2) .image, .article:nth-child(6) .image {
+    width: 50%;
+  }
+  .article:nth-child(1) .image img, .article:nth-child(2) .image img, .article:nth-child(6) .image img {
+    margin-bottom: -3px;
+  }
+  .article:nth-child(1) .text, .article:nth-child(2) .text, .article:nth-child(6) .text {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+  }
+  .article:nth-child(3) {
+    grid-row: span 2;
+    grid-column: span 2;
   }
 }
