@@ -3,10 +3,31 @@ html {
   font-family: 'Work Sans', sans-serif;
 }
 
-h1 {
-  font-size: 2em;
+header {
   text-align: center;
   padding: 1em;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  padding-top: 0.25em;
+  font-size: 1.5em;
+  color: darkgray;
+}
+
+.mobile{
+  padding-top: 0.5em;
+}
+
+.tablet {
+  display: none;
+}
+
+.desktop {
+  display: none;
 }
 
 img {
@@ -17,6 +38,7 @@ img {
 
 p {
   padding: 0.5em 0em;
+  border-bottom: 1px solid gray;
 }
 
 a {
@@ -33,16 +55,13 @@ a::after {
   text-decoration: none;
 }
 
-/* THIS AIN'T WORKIN */
-/* .container:nth-child(odd) {
-  background: #dddddd;
+
+article:nth-child(odd) {
+  background: #F3F3F3;
 }
 
-.container:nth-child(3n) {
-  background: #cccccc;
-} */
 
-.containers {
+.all-containers {
   margin: 0em 1em;
   display: grid;
   grid-template-columns: 1fr;
@@ -121,7 +140,13 @@ a::after {
 
 .container-footer {
   font-size: 0.75em;
+}
+
+.flex {
   display: flex;
+}
+
+.space-between {
   justify-content: space-between;
 }
 
@@ -132,7 +157,21 @@ a::after {
 
 /* Medium and up (Tablets) */
 @media (min-width: 768px) {
-  .containers {
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: block;
+    padding-top: 0.5em;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .all-containers {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "container1  container1"
@@ -145,22 +184,76 @@ a::after {
 
   .container4 {
     display: flex;
-
   }
 
-  #container4-child {
+  .container4-child-A {
     justify-content: space-between;
     align-items: flex-start;
   }
 
-  #container4-p {
+  .container4-child-B {
     padding: 0 1em;
+    align-items: flex-end;
+  }
+
+  .container-footer {
+    font-size: 0.75em;
+    align-items: stretch;
   }
 }
 
 /* Large and up (Desktops) */
 @media (min-width: 992px) {
+  .mobile {
+    display: none;
+  }
 
+  .tablet {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+    padding-top: 0.5em;
+  }
+
+  /* .all-containers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "container1  container1  container2  container2"
+      "container3  container3  container4  container5"
+      "container3  container3  container6  container6"
+      "container7  container8  container9  container10";
+    }
+
+  .container1 {
+    display: flex;
+  }
+
+  .container1-child-A {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .container1-child-B {
+    padding: 0 1em;
+    align-items: flex-end;
+  }
+
+  .container2 {
+    display: flex;
+  }
+
+  .container2-child-A {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .container2-child-B {
+    padding: 0 1em;
+    align-items: flex-end;
+  } */
 
 }
 
