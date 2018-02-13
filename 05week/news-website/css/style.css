@@ -71,7 +71,6 @@ main {
   align-items: flex-end;
   margin-top: 1.5em;
   color: #7f7f7f;
-  padding: 15px;
 }
 
 .art-head {
@@ -93,37 +92,54 @@ main {
     grid-column: span 2;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .text {
-    height: auto;
-  }
-  .art-text {
-    height: auto;
     display: flex;
-    align-items: stretch;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
-  .article:nth-child(1), .article:nth-child(3n+1) {
+  .article:nth-child(3n+1) {
     grid-column: span 4;
+  }
+  .article:nth-child(3n+1):not(:nth-child(1)) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .article:nth-child(3n+1):not(:nth-child(1)) .image {
+    width: 50%;
+    height: 50%;
+    margin-bottom: -3px;
+  }
+  .article:nth-child(3n+1):not(:nth-child(1)) .text {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
   }
 }
 
-/* Large and up (Desktops) */
+/* Large and up (Desktops) 992*/
 
 @media (min-width: 992px) {
   .article {
     grid-column: span 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
   }
-  .article:nth-child(1), .article:nth-child(2) {
-    grid-column: span 2;
+  .article:nth-child(3n+1) {
+    grid-column: span 1;
+    display: block;
+    border: 8px solid orange;
   }
-  .article:nth-child(3) {
-    grid-row: span 2;
+  .article:nth-child(3n+1).image {
+    display: block;
   }
-  .article:nth-child(6) {
-    grid-column: span 2;
+  .article:nth-child(3n+1).text {
+    display: block;
   }
 }
