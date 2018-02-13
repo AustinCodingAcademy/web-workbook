@@ -1,7 +1,18 @@
 body {
   font-family: 'Ubuntu', sans-serif;
-  background-color: #3ab371;
+  background-color: #686764;
 }
+
+a:link, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f56cc3;
+}
+
+/* header styles */
 
 header {
   display: grid;
@@ -23,69 +34,96 @@ header p {
   justify-content: center;
 }
 
+/* main body styles */
+
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   color: #444;
 }
 
-div.article {
+.article {
   margin: 10px;
   grid-column: span 4;
-  align-self: start;
   box-shadow: none;
   transition: box-shadow 1s;
+  background-color: #fff;
 }
 
-div.article:hover {
+.article:hover {
   box-shadow: 2px 8px 10px #0000004D;
   transition: box-shadow 500ms;
 }
 
-div.article img {
+.article img {
   width: 100%;
   margin-bottom: 0em;
 }
 
-div.text {
+.text {
   padding: 15px;
-  margin-top: -5px;
-  background-color: white;
+  margin-top: -5px; //align-self: flex-end;
 }
 
-div.tagline {
+.tagline {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   margin-top: 1.5em;
   color: #7f7f7f;
+  padding: 15px;
 }
 
-h1.art-head {
+.art-head {
   font-weight: bold;
   font-size: 110%;
   padding: .5em 0em;
 }
 
-p.art-text {
+.art-text {
   color: #7f7f7f;
 }
+
+/* Media queries */
 
 /* Medium and up (Tablets) */
 
 @media (min-width: 768px) {
-  div.article {
+  .article {
     grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .text {
+    height: auto;
+  }
+  .art-text {
+    height: auto;
+    display: flex;
+    align-items: stretch;
+  }
+  .article:nth-child(1), .article:nth-child(3n+1) {
+    grid-column: span 4;
   }
 }
 
 /* Large and up (Desktops) */
 
 @media (min-width: 992px) {
-  div.article {
+  .article {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .article:nth-child(1), .article:nth-child(2) {
     grid-column: span 2;
   }
-  div.article:nth-child(3), div.article:nth-child(4) {
-    grid-column: span 1;
+  .article:nth-child(3) {
+    grid-row: span 2;
+  }
+  .article:nth-child(6) {
+    grid-column: span 2;
   }
 }
