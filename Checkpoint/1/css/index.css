@@ -1,0 +1,354 @@
+﻿@charset "utf-8";
+/*
+==========================================
+CSS for TEMPLATE
+==========================================
+*/
+
+/*
+-----------------------------------
+elements
+-----------------------------------
+*/
+html {
+    background: #f1f1f1;
+}
+body {
+    background: #fff;
+    font-family: Arial, sans-serif;
+    color: #3C786B;
+    -webkit-box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.5);
+       -moz-box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.5);
+            box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.5);
+}
+h1 {
+    font-family: 'Oswald', arial, sans-serif;
+    font-size: 36pt;
+	
+    line-height: 1.25em;
+    color: #42808C;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0px;
+    font-weight: 700;
+}
+h2 {
+    font-family: 'Oswald', Arial, sans-serif;
+    font-size: 24pt;
+    line-height: 1.5em;
+    color: #2B8488;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-weight: 700;
+}
+h3 {
+    font-family: 'Open Sans Condensed', Arial, sans-serif;
+    font-size: 20pt;
+    color: #286975;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 0;
+    margin-bottom:0;
+    font-weight: 700;
+}
+h4 {
+    font-family: 'Open Sans Condensed', Arial, sans-serif;
+    font-size: 14pt;
+    line-height: 1.5em;
+    color: #4296A6;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 700;
+}
+h5 {
+    font-family: 'Open Sans Condensed', Arial, sans-serif;
+    font-size: 14pt;
+    line-height: 1em;
+    color: #4296A6;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 3px;
+    font-weight: 700;
+}
+p {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    color: #000;
+}
+
+a:link {
+    font-family: 'Oxygen', arial, sans-serif;
+    font-size: 12pt;
+    color: #276B75;
+    text-decoration: none;
+}
+a:visited {
+    font-family: 'Oxygen', arial, sans-serif;
+    font-size: 12pt;
+    color: #276B75;
+    text-decoration: none;
+}
+a:hover {
+    font-family: 'Oxygen', arial, sans-serif;
+    font-size: 12pt;
+    color: #276B75;
+    text-decoration: underline;
+}
+
+ul > li, ol > li  {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    padding-top: 3px;
+}
+
+blockquote {
+    border-left: 4px solid #3C786B;
+    background-color: #f1f1f1;
+}
+
+
+/*
+-----------------------------------
+header
+-----------------------------------
+*/
+.top-banner {
+    width: 100%;
+    background-color: #5E9185;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.top-banner img {
+    height: 58px;
+    border: none;
+}
+
+/*
+-----------------------------------
+footer
+-----------------------------------
+*/
+.bottom-footer {
+    width: 100%;
+    background-color: #5E9185;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.bottom-footer p, .bottom-footer a  {
+    font-family: Oxygen, arial, sans-serif;
+    font-size: 10pt;
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+    font-size: 11px;
+}
+.bottom-footer p:nth-child(1) a {
+    font-size: 15px;
+}
+
+/*
+-----------------------------------
+map
+-----------------------------------
+*/
+
+#mapContainer {
+	position: relative;
+	width: 100%;
+	height: 700px;
+	border: 1px solid black;
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+}
+#map {
+	width: 100%;
+	height: 100%;
+	z-index: 1
+}
+#legend {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+    border: 1px solid #777;
+    border-radius: 3px;
+    background-image: url("../img/map_legend_button.png");
+    background-size: cover;
+    width: 110px;
+    height: 30px;
+    -webkit-transition: width 200ms, height 200ms;
+            transition: width 200ms, height 200ms;
+    z-index: 2;
+}
+#legend:hover {
+    background-image: url("../img/map_legend.png");
+    -webkit-box-shadow: -3px 3px 10px 0px rgba(0,0,0,0.5);
+       -moz-box-shadow: -3px 3px 10px 0px rgba(0,0,0,0.5);
+            box-shadow: -3px 3px 10px 0px rgba(0,0,0,0.5);
+    width: 277px;
+    height: 374px;
+}
+#search {
+	position: absolute;
+	top: 20px;
+	left: 70px;
+	width: 100px;
+    z-index: 2;
+}
+
+/*
+-----------------------------------
+methods pages
+-----------------------------------
+*/
+.bluetext {
+    color: #4a778a;
+    padding-top:3px;
+}
+.studylead {
+    font-family: 'Oxygen', arial;
+    font-size: 12pt;
+}
+.studyintro {
+    border-right: 1px solid #d8e2e4;
+}
+.nobottom {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.panel-footer  {
+    text-align: center;
+}
+
+/*
+-----------------------------------
+timeline table
+-----------------------------------
+*/
+.bluecell {
+    background-color: #60C1B0;
+}
+.bluebigtext {
+    font-size: 12pt;
+    color: #013950;
+    font-weight: 700;
+}
+.timelinetable td {
+    font-family: arial, sans-serif;
+    font-size: 12pt;
+}
+
+/*
+-----------------------------------
+misc
+-----------------------------------
+*/
+.figcap {
+    padding-top: 3px;
+    font-size: 10pt;
+    font-style: italic;
+}
+.spacemetop {
+    margin-top: 20px;
+}
+
+/*
+-----------------------------------
+dynamic sizing
+-----------------------------------
+*/
+
+/* tabs */
+@media (min-width: 768px) {
+    .nav  > li > a {
+        color: #fff;
+        border-color: #333 !important;
+        background-color: #26756F !important;
+        font-family: 'Oxygen', arial, sans-serif;
+        font-size: 11pt;
+    }
+    .nav > li > a:hover {
+        color: #ffffff;
+        background-color: #6BAAA5 !important;
+    }
+    .nav > .active > a,
+    .nav > .active > a:focus {
+        color: #fff !important;
+        background-color: #034843 !important;
+        font-size: 11pt;
+    }
+}
+@media (max-width: 767px) {
+    .nav-tabs > li {
+        float:none;
+        border:1px solid #dddddd;
+    }
+    .nav-tabs > li.active > a{
+        border:none;
+    }
+    .nav > li > a:hover, .nav > li > a:focus,
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+        background:none;
+        border:none;
+    }
+}
+
+/* panels */
+@media (min-width: 1197px) {
+    .paneltext {
+        font-family: 'Oxygen', arial, sans-serif;
+        font-size: 10pt;
+        padding-top: 6px;
+        height:160px;
+    }
+    .bluebutton {
+        background-color: #82a6b6;
+        color: #fff !important;
+        font-size: 10pt !important;
+    }
+    .shrinkpanel {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
+@media (min-width: 975px) and (max-width: 1196px ) {
+    .paneltext {
+        font-family: 'Oxygen', arial, sans-serif;
+        font-size: 10pt;
+        padding-top: 6px;
+        height:190px;
+    }
+    .panel-heading {
+        min-height:70px;
+    }
+    .bluebutton {
+        background-color: #82a6b6;
+        color: #fff !important;
+        font-size: 10pt !important;
+    }
+    .shrinkpanel {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
+@media (max-width: 974px) {
+    .paneltext {
+        font-family: 'Oxygen', arial, sans-serif;
+        font-size: 10pt;
+        padding-top: 6px;
+    }
+    .bluebutton {
+        background-color: #82a6b6;
+        color: #fff !important;
+        font-size: 10pt !important;
+    }
+    .shrinkpanel {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
+
+/*
+-----------------------------------
+END
+-----------------------------------
+*/

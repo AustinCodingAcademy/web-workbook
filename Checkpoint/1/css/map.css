@@ -1,0 +1,164 @@
+﻿/*
+==========================================
+CSS for map module THIS IS NOT BEING REFERENCED IN CURRENT PROJECT YET
+==========================================
+*/
+
+/* class to add to elements to make them un-selectable (mouse drag does not highlight text) */
+.click-drag-unselectable {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+       -khtml-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+        -webkit-user-drag: none;
+                user-drag: none;
+}
+
+/*
+-----------------------------------
+map
+-----------------------------------
+*/
+#map_container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 700px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    -webkit-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.5);
+       -moz-box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.5);
+            box-shadow: 5px 5px 30px 0px rgba(0,0,0,0.5);
+}
+#map, #map_loading {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: #f1f1f1;
+}
+#map_loading {
+    text-align: center;
+    z-index: 9999;
+}
+#map_loading img {
+    margin-top: 300px;
+}  
+
+/*
+------------------------------------------
+map widgets
+------------------------------------------
+*/
+
+/* semi-transparent container */
+.map-widget-container {
+    background: rgba(255,255,255,0.7);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 11px;
+    color: black;
+}
+
+/* top left */
+.esriSimpleSlider  {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+#HomeButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+#sapi_searchTextBoxDiv {
+    display: none;
+    z-index: 1 !important;
+}
+
+/* top right */
+#BasemapThumb {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid #777;
+    background-size: cover;
+    -webkit-box-shadow: -3px 3px 10px 0px rgba(0,0,0,0.5);
+       -moz-box-shadow: -3px 3px 10px 0px rgba(0,0,0,0.5);
+            box-shadow: -3px 3px 10px 0px rgba(0,0,0,0.5);
+    width: 70px;
+    height: 47px;
+    -webkit-transition: width 200ms, height 200ms;
+            transition: width 200ms, height 200ms;
+}
+#BasemapThumb:hover {
+    width: 200px;
+    height: 133px;
+    cursor: pointer;
+}
+#BasemapThumb[data-new-basemap="streets"] { background-image: url("../img/map_thumb_streets.png"); }
+#BasemapThumb[data-new-basemap="imagery"] { background-image: url("../img/map_thumb_imagery.png"); }
+
+/* bottom left */
+#Scalebar {
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+    width: 150px;
+    height: 40px;
+}
+.esriScalebarLabel {
+    font-weight: normal;
+}
+#LatLon {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+/* bottom center */
+#LastUpdate {
+    position: absolute;
+    bottom: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+/* bottom right */
+#Legend {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid #777;
+    border-radius: 3px;
+    background-image: url("../img/map_legend_button.png");
+    background-size: cover;
+    width: 110px;
+    height: 30px;
+    -webkit-transition: width 200ms, height 200ms;
+            transition: width 200ms, height 200ms;
+    z-index: 2;
+}
+#Legend:hover {
+    background-image: url("../img/map_legend.png");
+    -webkit-box-shadow: -3px 3px 10px 0px rgba(0,0,0,0.5);
+       -moz-box-shadow: -3px 3px 10px 0px rgba(0,0,0,0.5);
+            box-shadow: -3px 3px 10px 0px rgba(0,0,0,0.5);
+    width: 277px;
+    height: 374px;
+}
+
+/*
+------------------------------------------
+map popups
+------------------------------------------
+*/
+.cwis-popup h1 {
+    font-family: Arial, sans-serif !important;
+}
