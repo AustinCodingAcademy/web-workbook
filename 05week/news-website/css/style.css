@@ -1,8 +1,10 @@
-.basic {
+.box {
   display: flex;
-
+  border: solid 1px black;
   align-items: center;
   flex-direction: column;
+  margin: 35px;
+  padding-top: 15px;
 
 
 }
@@ -13,6 +15,7 @@
   border-bottom: solid 1px black;
   margin-left: 5%;
   margin-right: 5%;
+  margin-bottom: 10px;
 
 
 }
@@ -22,30 +25,84 @@
   flex-direction: row;
   margin-top: 10px;
   justify-content: flex-start;
-  background-color: red;
-  width: 90%;
+  margin-bottom: 20px;
+  width: 95%;
   justify-content: space-between;
 }
 
 .counter {
   color: blue;
   font-size: 30px;
-  padding: 5px;
-  margin-top: 10px;
+
+  margin-top: 20px;
 }
 
 .button {
 background-color: blue;
-height: 30px;
+height: 35px;
 width: 150px;
 margin-top: 20px;
+
+
 }
 
 .pic1 {
   width: 90%;
 }
 
+<div class="grid">
+  <div class="box box1">Box 1</div>
+  <div class="box box2">Box 2</div>
+  <div class="box box3">Box 3</div>
+  <div class="box box4">Box 4</div>
+  <div class="box box5">Box 5</div>
+  <div class="box box6">Box 6</div>
+  <div class="box box7">Box 7</div>
+  <div class="box box8">Box 8</div>
+  <div class="box box9">Box 9</div>
+  <div class="box box10">Box 10</div>
 
+</div>
+
+.box1 {
+  grid-area: box1;
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.box3 {
+  grid-area: box3;
+}
+
+.box4 {
+  grid-area: box4;
+}
+
+.box5 {
+  grid-area: box5;
+}
+
+.box6 {
+  grid-area: box6;
+}
+
+.box7 {
+  grid-area: box7;
+}
+
+.box8 {
+  grid-area: box8;
+}
+
+.box1 {
+  grid-area: box9;
+}
+
+.box2 {
+  grid-area: box10;
+}
 
 
 
@@ -53,6 +110,23 @@ margin-top: 20px;
 
 /* Small and up (Landscape Phones) */
 @media (min-width: 576px) {
+
+  .grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "box1"
+    "box2"
+    "box3"
+    "box4"
+    "box5"
+    "box6"
+    "box7"
+    "box8"
+    "box9"
+    "box10";
+}
+
 
 }
 
