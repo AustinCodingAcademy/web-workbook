@@ -96,11 +96,11 @@ margin-top: 20px;
   grid-area: box8;
 }
 
-.box1 {
+.box9 {
   grid-area: box9;
 }
 
-.box2 {
+.box10 {
   grid-area: box10;
 }
 
@@ -125,7 +125,7 @@ margin-top: 20px;
     "box8"
     "box9"
     "box10";
-}
+  }
 
 
 }
@@ -133,10 +133,29 @@ margin-top: 20px;
 /* Medium and up (Tablets) */
 @media (min-width: 768px) {
 
+  .grid {
+   grid-template-columns: 1fr 1fr;
+   grid-template-areas:
+    "box1 box1"
+    "box2 box3"
+    "box4 box4"
+    "box5 box6"
+    "box7 box8"
+    "box9 box10";
+ }
+
 }
 
 /* Large and up (Desktops) */
 @media (min-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "box1 box1 box2 box2"
+    "box3 box3 box4 box5"
+    "box3 box3 box6 box6"
+    "box7 box8 box9 box10"
+  }
 
 }
 
