@@ -18,18 +18,6 @@ h2 {
   color: darkgray;
 }
 
-.mobile{
-  padding-top: 0.5em;
-}
-
-.tablet {
-  display: none;
-}
-
-.desktop {
-  display: none;
-}
-
 img {
   width: 100%;
   height: auto;
@@ -55,91 +43,110 @@ a::after {
   text-decoration: none;
 }
 
-
+/* gray background for every odd number box */
 article:nth-child(odd) {
   background: #F3F3F3;
 }
 
+/* subheading says "mobile" */
+.mobile{
+  padding-top: 0.5em;
+}
 
-.all-containers {
+.tablet {
+  display: none;
+}
+
+.desktop {
+  display: none;
+}
+
+/* boxes */
+.box {
+  border: 1px solid purple;
+}
+
+.box1 {
+  padding: 1em;
+  margin-bottom: 2em;
+  grid-area: box1;
+}
+
+.box2 {
+  padding: 1em;
+  margin-bottom: 2em;
+  grid-area: box2;
+}
+
+.box3 {
+  padding: 1em;
+  margin-bottom: 2em;
+  grid-area: box3;
+}
+
+.box4 {
+  padding: 1em;
+  margin-bottom: 2em;
+  grid-area: box4;
+}
+
+.box5 {
+  padding: 1em;
+  margin-bottom: 2em;
+  grid-area: box5;
+}
+
+.box6 {
+  padding: 1em;
+  margin-bottom: 2em;
+  grid-area: box6;
+}
+
+.box7 {
+  padding: 1em;
+  margin-bottom: 2em;
+  grid-area: box7;
+}
+
+.box8 {
+  padding: 1em;
+  margin-bottom: 2em;
+  grid-area: box8;
+}
+
+.box9 {
+  padding: 1em;
+  margin-bottom: 2em;
+  grid-area: box9;
+}
+
+.box10 {
+  padding: 1em;
+  margin-bottom: 2em;
+  grid-area: box10;
+}
+
+.grid {
   margin: 0em 1em;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "container1"
-    "container2"
-    "container3"
-    "container4"
-    "container5"
-    "container6"
-    "container7"
-    "container8"
-    "container9"
-    "container10";
+    "box1"
+    "box2"
+    "box3"
+    "box4"
+    "box5"
+    "box6"
+    "box7"
+    "box8"
+    "box9"
+    "box10";
   }
 
-.container1 {
-  padding: 1em;
-  margin-bottom: 2em;
-  grid-area: container1;
-}
-
-.container2 {
-  padding: 1em;
-  margin-bottom: 2em;
-  grid-area: container2;
-}
-
-.container3 {
-  padding: 1em;
-  margin-bottom: 2em;
-  grid-area: container3;
-}
-
-.container4 {
-  padding: 1em;
-  margin-bottom: 2em;
-  grid-area: container4;
-}
-
-.container5 {
-  padding: 1em;
-  margin-bottom: 2em;
-  grid-area: container5;
-}
-
-.container6 {
-  padding: 1em;
-  margin-bottom: 2em;
-  grid-area: container6;
-}
-
-.container7 {
-  padding: 1em;
-  margin-bottom: 2em;
-  grid-area: container7;
-}
-
-.container8 {
-  padding: 1em;
-  margin-bottom: 2em;
-  grid-area: container8;
-}
-
-.container9 {
-  padding: 1em;
-  margin-bottom: 2em;
-  grid-area: container9;
-}
-
-.container10 {
-  padding: 1em;
-  margin-bottom: 2em;
-  grid-area: container10;
-}
-
-.container-footer {
+.box-footer {
   font-size: 0.75em;
+  height: 0.75em;
+  padding-bottom: 1em;
 }
 
 .flex {
@@ -157,6 +164,8 @@ article:nth-child(odd) {
 
 /* Medium and up (Tablets) */
 @media (min-width: 768px) {
+
+  /* subheading says "tablet" */
   .mobile {
     display: none;
   }
@@ -170,40 +179,44 @@ article:nth-child(odd) {
     display: none;
   }
 
-  .all-containers {
-    display: grid;
+  /* THIS IS NOT WORKING!!!!! THIS IS NOT WORKING!!!!! THIS IS NOT WORKING!!!!! */
+  .grid {
+    display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "container1  container1"
-      "container2  container3"
-      "container4  container4"
-      "container5  container6"
-      "container7  container8"
-      "container9  container10";
+    "box1  box1"
+    "box2  box3"
+    "box4  box4"
+    "box5  box6"
+    "box7  box8"
+    "box9  box10";
     }
+  /* THIS IS NOT WORKING!!!!! THIS IS NOT WORKING!!!!! THIS IS NOT WORKING!!!!! */
 
-  .container4 {
+
+  /* This makes box4 flat */
+  .box4 {
     display: flex;
   }
 
-  .container4-child-A {
-    justify-content: space-between;
-    align-items: flex-start;
+  .box4-child-A {
+    flex: 1;
   }
 
-  .container4-child-B {
+  .box4-child-B {
+    flex: 1;
     padding: 0 1em;
-    align-items: flex-end;
   }
 
-  .container-footer {
+  .box-footer {
     font-size: 0.75em;
-    align-items: stretch;
   }
 }
 
 /* Large and up (Desktops) */
 @media (min-width: 992px) {
+
+  /* subheading says "desktop" */
   .mobile {
     display: none;
   }
@@ -216,44 +229,6 @@ article:nth-child(odd) {
     display: block;
     padding-top: 0.5em;
   }
-
-  /* .all-containers {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-      "container1  container1  container2  container2"
-      "container3  container3  container4  container5"
-      "container3  container3  container6  container6"
-      "container7  container8  container9  container10";
-    }
-
-  .container1 {
-    display: flex;
-  }
-
-  .container1-child-A {
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  .container1-child-B {
-    padding: 0 1em;
-    align-items: flex-end;
-  }
-
-  .container2 {
-    display: flex;
-  }
-
-  .container2-child-A {
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  .container2-child-B {
-    padding: 0 1em;
-    align-items: flex-end;
-  } */
 
 }
 

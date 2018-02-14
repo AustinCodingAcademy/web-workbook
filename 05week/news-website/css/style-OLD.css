@@ -1,0 +1,166 @@
+html {
+  height: 100%;
+  font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  padding: 1em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+p {
+  padding: 0.5em 0em;
+}
+
+a {
+  text-decoration:  none;
+  color: gray;
+  padding: 2.5%;
+}
+
+a:hover {
+  color: lightgray;
+}
+
+a::after {
+  text-decoration: none;
+}
+
+/* THIS AIN'T WORKIN */
+.container:nth-child(odd) {
+  background: #dddddd;
+}
+
+.containers {
+  margin: 0em 1em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "container1"
+    "container2"
+    "container3"
+    "container4"
+    "container5"
+    "container6"
+    "container7"
+    "container8"
+    "container9"
+    "container10";
+  }
+
+.container1 {
+  padding: 1em;
+  margin-bottom: 2em;
+  grid-area: container1;
+}
+
+.container2 {
+  padding: 1em;
+  margin-bottom: 2em;
+  grid-area: container2;
+}
+
+.container3 {
+  padding: 1em;
+  margin-bottom: 2em;
+  grid-area: container3;
+}
+
+.container4 {
+  padding: 1em;
+  margin-bottom: 2em;
+  grid-area: container4;
+}
+
+.container5 {
+  padding: 1em;
+  margin-bottom: 2em;
+  grid-area: container5;
+}
+
+.container6 {
+  padding: 1em;
+  margin-bottom: 2em;
+  grid-area: container6;
+}
+
+.container7 {
+  padding: 1em;
+  margin-bottom: 2em;
+  grid-area: container7;
+}
+
+.container8 {
+  padding: 1em;
+  margin-bottom: 2em;
+  grid-area: container8;
+}
+
+.container9 {
+  padding: 1em;
+  margin-bottom: 2em;
+  grid-area: container9;
+}
+
+.container10 {
+  padding: 1em;
+  margin-bottom: 2em;
+  grid-area: container10;
+}
+
+.container-footer {
+  font-size: 0.75em;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Small and up (Phones) */
+@media(min-width: 576px) {
+
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+  .containers {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "container1  container1"
+      "container2  container3"
+      "container4  container4"
+      "container5  container6"
+      "container7  container8"
+      "container9  container10";
+    }
+
+  .container4 {
+    display: flex;
+
+  }
+
+  #container4-child {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  #container4-p {
+    padding: 0 1em;
+  }
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+
+
+}
+
+/* Extra large and up (Wide Screen Desktops) */
+@media (min-width: 1200px) {
+
+}
