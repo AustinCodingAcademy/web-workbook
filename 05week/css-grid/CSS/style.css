@@ -109,33 +109,33 @@ input[type=submit] {
 }
 
 /* ******************************************************** */
-/*   redefining the boxes as needed   */
+/*       redefining the boxes as needed       */
 
 
 @media (min-width: 576px) {
   .grid {
     display: grid;
     grid-template-areas:
-      "box-11"
-      "box-1"
-      "box-2"
-      "box-3"
-      "box-4"
-      "box-5"
-      "box-6"
-      "box-7"
-      "box-8"
-      "box-9"
-      "box-10";
-  }
+    "box-11"
+    "box-1"
+    "box-2"
+    "box-3"
+    "box-4"
+    "box-5"
+    "box-6"
+    "box-7"
+    "box-8"
+    "box-9"
+    "box-10";
+ }
 
-  .tablet, .desktop {
-    display: none;
-  }
+ .tablet, .desktop {
+   display: none;
+ }
 
-  .mobile {
-    display: inline-block;
-  }
+ .mobile {
+   display: inline-block;
+ }
 
 }
 
@@ -143,27 +143,41 @@ input[type=submit] {
   .grid {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-areas: "box-11 box-11" "box-1 box-1" "box-2 box-3" "box-4 box-4" "box-5 box-6" "box-7 box-7" "box-8 box-9" "box-10 box-10";
+    grid-template-areas:
+    "box-11 box-11"
+    "box-1 box-1"
+    "box-2 box-3"
+    "box-4 box-4"
+    "box-5 box-6"
+    "box-7 box-7"
+    "box-8 box-9"
+    "box-10 box-10";
   }
+
   .mobile, .desktop {
     display: none;
   }
+
   .tablet {
     display: inline-block;
   }
+
   .box-4, .box-10 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 10px 30px;
   }
+
   .box-4 .text-likes {
     margin: 10px 20px 0px 20px;
   }
+
   .box-10 .text-likes {
     margin: 10px 20px 0px 20px;
   }
-}
+
+ }
 
 @media (min-width: 992px) {
   .grid {
@@ -171,71 +185,71 @@ input[type=submit] {
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 25% 25% 25% 25%;
     grid-template-areas:
-      "box-11 box-11 box-11 box-11"
-      "box-1 box-1 box-2 box-2"
-      "box-3 box-3 box-4 box-5"
-      "box-3 box-3 box-6 box-6"
-      "box-7 box-8 box-9 box-10";
-  }
+    "box-11 box-11 box-11 box-11"
+    "box-1 box-1 box-2 box-2"
+    "box-3 box-3 box-4 box-5"
+    "box-3 box-3 box-6 box-6"
+    "box-7 box-8 box-9 box-10";
+   }
 
-  .mobile, .tablet {
-    display: none;
-  }
+ .mobile, .tablet {
+   display: none;
+ }
 
-  .desktop {
-    display: inline-block;
-  }
+ .desktop {
+   display: inline-block;
+ }
 
-  .box {
-    padding: 0 15px;
-  }
+ .box {
+   padding: 0 15px;
+ }
 
-  .box-1, .box-2 {
-    margin: 10px 10px;
-  }
+ .box-1, .box-2 {
+   margin: 10px 10px;
+ }
 
-  .box-1 img, .box-2 img {
-    height: 175px;
-    width: 150px;
-    object-fit: fill;
-  }
+ .box-1 img, .box-2 img {
+   height: 175px;
+   width: 150px;
+   object-fit: fill;
+ }
 
-  .box-3 {
-    margin: 10px 10px;
-  }
+ .box-3 {
+   margin: 10px 10px;
+ }
 
-  .box-3 img {
-    height: 448px;
-    width: 425px;
-    object-fit: fill;
-  }
+.box-3 img {
+  height: 448px;
+  width: 425px;
+  object-fit: fill;
+ }
 
-  .box-6 img {
-    height: 175px;
-    width: 150px;
-    object-fit: fill;
-  }
+ .box-6 img {
+   height: 175px;
+   width: 150px;
+   object-fit: fill;
+ }
 
-  .box-1, .box-2, .box-6 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+ .box-1, .box-2, .box-6 {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+ }
 
-  .box-6, .text-likes {
-    margin: 10px 10px;
-  }
+ .box-6, .text-likes {
+   margin: 10px 10px;
+ }
 
-  .box-4, .box-5, .box-7, .box-8, .box-9, .box-10 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 10px 10px;
-  }
+ .box-4, .box-5, .box-7, .box-8, .box-9, .box-10 {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin: 10px 10px;
+ }
 
-  .box-4 .text-likes, .box-5 .text-likes, .box-7 .text-likes, .box-8 .text-likes, .box-9 .text-likes, .box-10 .text-likes {
-    margin: 10px 10px;
-  }
+ .box-4 .text-likes, .box-5 .text-likes, .box-7 .text-likes, .box-8 .text-likes, .box-9 .text-likes, .box-10 .text-likes {
+   margin: 10px 10px;
+ }
 
 
 }
