@@ -1,0 +1,85 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+main {
+  margin: 2% 5%;
+}
+
+/* laptop */
+
+@media screen and (min-width: 992px) {
+  aside {
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  img {
+    width: 60%;
+    height: 50%;
+  }
+  .imgwrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  aside>h2 {
+    border-bottom: solid black 1px;
+  }
+  footer {
+    display: none;
+  }
+}
+
+/* tablet */
+
+@media screen and (min-width:768px) and (max-width:991px) {
+  aside {
+    display: none;
+  }
+  img {
+    width: 100%;
+  }
+  footer {
+    display: none;
+  }
+}
+
+/* phone */
+
+@media screen and (max-width:767px) {
+  aside {
+    display: none;
+  }
+  img {
+    width: 100%;
+  }
+  footer {
+    background: dimgray;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+  }
+  .links, .social {
+    display: flex;
+    flex-direction: column;
+  }
+  .links a, .social a {
+    border-bottom: white 1px solid;
+    text-decoration: none;
+    color: white;
+    margin: 2%;
+  }
+}
+
+.button {
+  background: dimgray;
+  color: white;
+  width: 130px;
+  text-align: center;
+}
+
+.button>p {
+  padding: 5px;
+}

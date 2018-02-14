@@ -1,0 +1,236 @@
+body {
+  /* background: linear-gradient(135deg, rgb(101, 121, 155), rgb(94, 37, 99)); */
+  color: white;
+  background: black;
+}
+
+/* header */
+header {
+  margin: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  height: 10vh;
+  min-height: 66px;
+  z-index: 1;
+}
+
+#logo {
+  margin:8px;
+  filter:invert(100%);
+  width: 50px;
+  height: 50px;
+}
+
+#nav, #shareNav {
+  float:right;
+  display: inline-block;
+  text-align: center;
+}
+
+.share a, #nav a {
+	width: 50px;
+  height: 50px;
+	display: inline-block;
+	margin: 8px;
+	border-radius: 50%;
+	font-size: 24px;
+	color: #fff;
+	opacity: 0.75;
+  position: relative;
+}
+
+.share a:hover, #nav a:hover {
+	opacity: 1;
+  color: white;
+}
+
+.share i, #nav i {
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+}
+
+/* social media colors */
+.facebook {
+ 	background: #3b5998;
+}
+
+.twitter {
+  background: #55acee;
+}
+
+.twitch {
+  background: #6441a5;
+}
+
+/* main content */
+main>img {
+  width: 100%;
+}
+
+section {
+  margin: 5% 10% 10%;
+}
+
+h1, h2{
+  font-family: 'Anton', sans-serif;
+  font-size: 8vh;
+  border-bottom: orange solid 1vh;
+}
+
+ h3 {
+   margin-top: 4vh;
+   margin-bottom: 3vh;
+ }
+p + p {
+  margin-top: 3vh;
+}
+
+p {
+  margin-bottom: 1vh;
+}
+
+p, ul, .location a, h3, a {
+  font-family: 'Lato', sans-serif;
+  font-size: 3vh;
+  text-decoration: none;
+}
+
+a {
+  color: orange;
+}
+
+
+a:hover {
+  color: blueviolet;
+}
+
+span.days, h3, div p span{
+  font-weight: bold;
+  font-size:4vh;
+}
+
+.location a:hover {
+  color: blueviolet;
+}
+
+.location img {
+  display: block;
+  margin: 2vh;
+}
+
+.hours, .location {
+  padding-bottom: 5%;
+}
+
+.event a:hover {
+  color: white;
+  background-color: #5c159d;
+}
+
+.event img {
+  width: 20vw;
+  height: 24vh;
+}
+
+.event p {
+  height: 9vh;
+}
+/* desktop only */
+@media screen and (min-width:501px) {
+  #eventWrapper{
+    clear: both;
+    display: flex;
+    justify-content: space-around;
+    align-items:baseline;
+    flex-direction: row;
+  }
+  .event {
+    width: 33%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-left: solid white .5vw;
+    text-align: center;
+
+  }
+}
+
+/* mobile only */
+ @media screen and (max-width:500px)  {
+   #eventWrapper {
+     display: inline-block;
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     border: none;
+   }
+
+   #shareNav {
+     display: none;
+   }
+
+   .games img:not(.mobile) {
+     display: none;
+   }
+
+   .event p{
+     height:auto;
+   }
+
+   .event {
+     border-bottom: solid white 2px;
+     padding-bottom: 3vh;
+   }
+
+   .event img {
+     width:auto;
+   }
+ }
+
+.buttons {
+  color: white;
+  border-radius: 5px;
+  background-color: blueviolet;
+  padding: 2vh;
+  text-align: center;
+  display: block;
+  width: 80%;
+  margin-top: 3vh;
+}
+
+.blog {
+  border-bottom: solid white .25vh;
+  padding: 1vh;
+}
+
+.blog>h3:hover {
+  color: blueviolet;
+}
+
+.games img {
+  height: 24vh;
+  width: auto;
+}
+
+#gamesimg {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+
+/* font-family: 'Anton', sans-serif; */
+/* font-family: 'Lato', sans-serif; */
