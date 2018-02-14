@@ -1,3 +1,5 @@
+/*  Stylesheet for the Travel-Gram page*/
+
 body {
   font-family: 'Ubuntu', sans-serif;
   background-color: #686764;
@@ -29,9 +31,18 @@ header h1 {
 header p {
   color: #ffffff73;
   padding-bottom: 15px;
-  text-decoration: underline;
   display: flex;
   justify-content: center;
+}
+
+.mobile {}
+
+.tablet {
+  display: none;
+}
+
+.desktop {
+  display: none;
 }
 
 /* main body styles */
@@ -54,9 +65,7 @@ main {
   transition: box-shadow 500ms;
 }
 
-.image {
-  background-color: #e4e4ed;
-}
+.image {}
 
 .image img {
   width: 100%;
@@ -107,6 +116,16 @@ button:hover {
 /* Medium and up (Tablets) */
 
 @media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  .tablet {
+    display: flex;
+    ;
+  }
+  .desktop {
+    display: none;
+  }
   .article {
     grid-column: span 2;
     display: flex;
@@ -145,6 +164,15 @@ button:hover {
 /* Large and up (Desktops) 992*/
 
 @media (min-width: 992px) {
+  .mobile {
+    display: none;
+  }
+  .tablet {
+    display: none;
+  }
+  .desktop {
+    display: flex;
+  }
   .article {
     grid-column: span 1;
     display: flex;
@@ -182,6 +210,7 @@ button:hover {
   }
   .article:nth-child(1) .image, .article:nth-child(2) .image, .article:nth-child(6) .image {
     width: 50%;
+    background-color: #e4e4ed;
   }
   .article:nth-child(1) .image img, .article:nth-child(2) .image img, .article:nth-child(6) .image img {
     margin-bottom: -3px;
