@@ -1,3 +1,22 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  background-image: url("../IMG-1094.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100% 100%;
+  display: flex;
+  /*justify-content: center;*/
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
   font-family: 'Mr Bedfort', cursive;
   font-size: 50px;
@@ -14,8 +33,8 @@ h2 {
 
 h3 {
   font-family: 'Amatic SC', cursive;
-  color: white;
   align-self: flex-end;
+  padding-right: 15px;
 }
 
 h4 {
@@ -25,27 +44,26 @@ h4 {
 
 .blue {
   background-color:rgba(250, 250, 250, .56);
-  height: 400px;
+  height: 530px;
   width: 540px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-
+  justify-content: center;
 }
 
-main {
-  background-image: url("../IMG-1094.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no repeat;
-  background-attachment: scroll;
-  height: 600px;
-  width: 100%;
+.supericons {
   display: flex;
-  /* justify-content: center;  */
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column-reverse;
+  position: absolute;
+  left: 350px;
+  top: 190px;
 }
+
+.credits {
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    align-self: flex-end;
+  }
 
 #icon {
   font-size: 24px;
@@ -67,10 +85,26 @@ main {
   padding: 10px 0px 0px 10px;
 }
 
+.radio {
+    border-radius: 50%;
+    height: 350px;
+    width: 350px;
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  justify-content: space-around;
+}
+
 p {
   font-family: 'Amatic SC', cursive;
   font-size: 18px;
-  align-self: center;
+  text-align: center;
 }
 
 /* unvisited link */
@@ -91,10 +125,4 @@ a:hover {
 /* selected link */
 a:active {
    color: blue;
-}
-
-.radio {
-    border-radius: 50%;
-    height: 350px;
-    width: 350px;
 }
