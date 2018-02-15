@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.boxes {
+  width: 200px;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  &:hover .odd {
+    height: 100px;
+    width: 100px;
+    margin-left: 700px;
+    transform: rotate(360deg);
+  }
+  &:hover .even {
+    height: 25px;
+    width: 25px;
+    margin-right: 700px;
+    transform: rotate(-360deg);
+  }
+}
+
+.box {
+  height: 50px;
+  width: 50px;
+  background-color: blue;
+}
+
+.odd {
+  transition: height .3s, width .5s, margin 2s cubic-bezier(0.55, 0.055, 0.675, 0.19), transform 2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.even {
+  transition: height .3s, width .3s, margin .7s cubic-bezier(0.55, 0.055, 0.675, 0.19), transform .7s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
