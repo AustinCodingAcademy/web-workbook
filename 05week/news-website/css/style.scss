@@ -104,7 +104,7 @@ section:nth-of-type(10) {
   grid-area: tenth;
 }
 
-section > img {
+section img {
   grid-area: section-img;
   width: calc(100% - 40px);
   margin: 20px;
@@ -172,7 +172,6 @@ section > img {
   }
 
   .p-likes {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
@@ -198,6 +197,10 @@ section > img {
     padding: 0 20px;
   }
 
+  section:first-of-type .p-likes {
+    height: 250px;
+  }
+
   section:first-of-type .button {
     height: 45px;
   }
@@ -207,7 +210,7 @@ section > img {
   }
 
   section:nth-of-type(2) img, section:nth-of-type(3) img {
-    height: 175px;
+    height: 180px;
     width: calc(100% - 40px);
   }
 
@@ -222,13 +225,17 @@ section > img {
       "section-img likes";
   }
 
+  section:nth-of-type(2) .p-likes, section:nth-of-type(3) .p-likes {
+    height: 175px;
+  }
+
   section:nth-of-type(4) .p-likes {
     height: 160px;
     padding-top: 20px;
     justify-content: space-between;
   }
 
-  section:nth-of-type(4) > img {
+  section:nth-of-type(4) img {
     height: 75%;
   }
 }
@@ -274,10 +281,6 @@ section > img {
 
   section:first-of-type .button {
     height: 20px;
-  }
-
-  section:nth-of-type(2), section:nth-of-type(3) {
-    display: grid;;
   }
 
   section:first-of-type img, section:nth-of-type(2) img {

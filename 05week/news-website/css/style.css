@@ -69,7 +69,7 @@ section:nth-of-type(9) {
 section:nth-of-type(10) {
   grid-area: tenth; }
 
-section > img {
+section img {
   grid-area: section-img;
   width: calc(100% - 40px);
   margin: 20px; }
@@ -120,7 +120,6 @@ section > img {
     grid-template-areas: "header header" "first first" "second third" "fourth fourth";
     grid-column-gap: 10%; }
   .p-likes {
-    display: flex;
     flex-direction: column;
     justify-content: space-between; }
   section:first-of-type, section:nth-of-type(4) {
@@ -134,23 +133,27 @@ section > img {
     margin-bottom: 75px; }
   section:first-of-type .likes {
     padding: 0 20px; }
+  section:first-of-type .p-likes {
+    height: 250px; }
   section:first-of-type .button {
     height: 45px; }
   section:nth-of-type(2), section:nth-of-type(3) {
     width: 100%; }
   section:nth-of-type(2) img, section:nth-of-type(3) img {
-    height: 175px;
+    height: 180px;
     width: calc(100% - 40px); }
   section:nth-of-type(2) .likes, section:nth-of-type(3) .likes {
     margin-bottom: 10px; }
   section:nth-of-type(4) {
     grid-template: 1fr 1fr / 3fr 2fr;
     grid-template-areas: "section-img section-p" "section-img likes"; }
+  section:nth-of-type(2) .p-likes, section:nth-of-type(3) .p-likes {
+    height: 175px; }
   section:nth-of-type(4) .p-likes {
     height: 160px;
     padding-top: 20px;
     justify-content: space-between; }
-  section:nth-of-type(4) > img {
+  section:nth-of-type(4) img {
     height: 75%; } }
 
 /* Large and up (Desktops) */
@@ -174,8 +177,6 @@ section > img {
     padding: 10px; }
   section:first-of-type .button {
     height: 20px; }
-  section:nth-of-type(2), section:nth-of-type(3) {
-    display: grid; }
   section:first-of-type img, section:nth-of-type(2) img {
     width: 90%; }
   section:nth-of-type(2) .likes, section:nth-of-type(3) .likes {
