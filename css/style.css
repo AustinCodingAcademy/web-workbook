@@ -1,6 +1,5 @@
 /* index page custom styles */
 
-/* save for transformations - https://coolors.co/84828f-6a687a-565170-433e5e-312b54 -->
 
 main {
 min-height: calc( 100vh - 180px);
@@ -31,23 +30,23 @@ min-height: calc( 100vh - 180px);
 
 /* Class Files - daily grades section  */
 
-.class:nth-child(1) {
+.class div:nth-child(1) {
   grid-area: class1;
 }
 
-.class:nth-child(2) {
+.class div:nth-child(2) {
   grid-area: class2;
 }
 
-.class:nth-child(3) {
+.class div:nth-child(3) {
   grid-area: class3;
 }
 
-.class:nth-child(4) {
+.class div:nth-child(4) {
   grid-area: class4;
 }
 
-.class:nth-child(5) {
+.class div:nth-child(5) {
   grid-area: class5;
 }
 
@@ -79,7 +78,10 @@ min-height: calc( 100vh - 180px);
 @media (min-width: 576px) {
   .class {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "class1 class2" "class3 class4" "class5 .";
+    grid-template-areas:
+    "class1 class2"
+     "class3 class4"
+     "class5 .";
   }
 }
 
@@ -88,7 +90,9 @@ min-height: calc( 100vh - 180px);
 @media (min-width: 768px) {
   .class {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "class1 class2 class3" "class4    .   class5";
+    grid-template-areas:
+    "class1 class2 class3"
+    "class4 . class5";
   }
 }
 
