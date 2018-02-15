@@ -12,20 +12,22 @@ div.layer {
   align-items: center;
   width: 400px;
   border: 2px solid #000;
+  background-color: #fffaf6;
 }
 
 div.box {
   height: 50px;
   width: 50px;
+  transition: transform 3s;
 }
 
 div.layer:hover>div.box:nth-child(odd) {
-  transform: scale(2) rotate(1080deg) translateX(75px);
-  transition: transform 5s;
+  transform: scale(2) translateX(75px) rotateZ(180deg);
+  transition: transform 4s;
 }
 
 div.layer:hover>div.box:nth-child(even) {
-  transform: scale(.5) rotate(-1080deg) translateX(-380px);
+  transform: scale(.5) translateX(-380px) rotateZ(-180deg);
   transition: transform 2s;
 }
 
