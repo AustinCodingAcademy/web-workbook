@@ -1,0 +1,105 @@
+main {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  background-color: lightgray;
+}
+
+.all-boxes {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  width: 100%;
+  transition: all 5s;
+}
+
+.box {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:nth-child(1) {
+  background-color: red;
+  color: white;
+}
+
+.box:nth-child(2) {
+  background-color: blue;
+  color: white;
+}
+
+.box:nth-child(3) {
+  background-color: purple;
+  color: white;
+}
+
+.box:nth-child(4) {
+  background-color: green;
+  color: white;
+}
+
+.box:nth-child(5) {
+  background-color: black;
+  color: white;
+}
+
+.box:nth-child(6) {
+  background-color: pink;
+  color: white;
+}
+
+.box:nth-child(7) {
+  background-color: lightgreen;
+  color: white;
+}
+
+.box:nth-child(8) {
+  background-color: darkblue;
+  color: white;
+}
+
+.box:nth-child(9) {
+  background-color: #F3EACD;
+  color: white;
+}
+
+.box:nth-child(10) {
+  background-color: lightpink;
+  color: white;
+}
+
+.box:nth-child(11) {
+  background-color: darkgray;
+  color: white;
+}
+
+.box:nth-child(12) {
+  background-color: yellow;
+  color: white;
+}
+
+.all-boxes:hover .box:nth-child(odd) {
+  height: 100px;
+  width: 100px;
+  transform: rotateZ(360deg) translate(100px);
+}
+
+.all-boxes:hover .box:nth-child(even) {
+  height: 25px;
+  width: 25px;
+  transform: rotateZ(-360deg) translate(-100px);
+}
+
+/* .all-boxes:hover>.box:nth-child(odd) {
+  transform: scale(4) rotate(180deg) translateX(-75px);
+  transition: transform 15s;
+}
+
+.all-boxes:hover>.box:nth-child(even) {
+  transform: scale(.5) rotate(-180deg) translateX(50px);
+  transition: transform 5s;
+} */

@@ -1,0 +1,30 @@
+main {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  background-color: lightblue;
+}
+
+div {
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  background-color: blue;
+  text-align:center;
+  color: white;
+  transition: all 2s;
+}
+
+main:hover div:nth-child(odd) {
+  height: 100px;
+  width: 100px;
+  transform: rotateZ(360deg);
+  margin-left: 99%;
+}
+
+main:hover div:nth-child(even) {
+  height: 25px;
+  width: 25px;
+  transform: rotateZ(-360deg);
+  margin-right: 99%;
+}
