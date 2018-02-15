@@ -85,7 +85,8 @@ section img {
   margin-top: 10px; }
 
 .p-likes {
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: space-between; }
 
 .p-likes p {
   margin: 0 20px;
@@ -119,9 +120,6 @@ section img {
     grid-template: 100px 500px 400px 200px / 1fr 1fr;
     grid-template-areas: "header header" "first first" "second third" "fourth fourth";
     grid-column-gap: 10%; }
-  .p-likes {
-    flex-direction: column;
-    justify-content: space-between; }
   section:first-of-type, section:nth-of-type(4) {
     width: 100%; }
   section:nth-of-type(5), section:nth-of-type(6), section:nth-of-type(7), section:nth-of-type(8), section:nth-of-type(9), section:nth-of-type(10), .mobile, .desktop {
@@ -134,7 +132,8 @@ section img {
   section:first-of-type .likes {
     padding: 0 20px; }
   section:first-of-type .p-likes {
-    height: 250px; }
+    height: 210px;
+    align-content: space-between; }
   section:first-of-type .button {
     height: 45px; }
   section:nth-of-type(2), section:nth-of-type(3) {
@@ -199,7 +198,8 @@ section img {
     grid-template: 1fr 1fr / 3fr 2fr;
     grid-template-areas: "section-img section-p" "section-img likes"; }
   section:first-of-type .p-likes, section:nth-of-type(2) .p-likes, section:nth-of-type(6) .p-likes {
-    margin-top: 20px; }
+    margin-top: 20px;
+    justify-content: space-between; }
   section:first-of-type .p-likes, section:nth-of-type(2) .p-likes {
     height: 150px; }
   section:nth-of-type(6) .p-likes {
