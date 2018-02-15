@@ -1,28 +1,60 @@
 /* index page custom styles */
 
+/* save for transformations - https://coolors.co/84828f-6a687a-565170-433e5e-312b54 -->
+
 main {
-  min-height: calc( 100vh - 180px);
+min-height: calc( 100vh - 180px);
 }
 
 /* Design Portfolio - checkpoints ection */
 
-.design {
-  display: flex;
-  justify-content: flex-start;
+.design:nth-child(1) {
+  grid-area: design1;
 }
 
-.design>div {
+.design:nth-child(2) {
+  grid-area: design2;
+}
+
+.design {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "design1" "design2";
+}
+
+.design div {
   background-color: #fff;
   border: 1px solid #000;
   padding: 5px;
+  margin: 1em;
 }
 
 /* Class Files - daily grades section  */
 
+.class:nth-child(1) {
+  grid-area: class1;
+}
+
+.class:nth-child(2) {
+  grid-area: class2;
+}
+
+.class:nth-child(3) {
+  grid-area: class3;
+}
+
+.class:nth-child(4) {
+  grid-area: class4;
+}
+
+.class:nth-child(5) {
+  grid-area: class5;
+}
+
 .class {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "class1" "class2" "class3" "class4" "class5";
 }
 
 .class div {
@@ -41,3 +73,43 @@ main {
 }
 
 .about div {}
+
+/* Small and up (Phones) */
+
+@media (min-width: 576px) {
+  .class {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "class1 class2" "class3 class4" "class5 .";
+  }
+}
+
+/* Medium and up (Tablets) */
+
+@media (min-width: 768px) {
+  .class {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "class1 class2 class3" "class4    .   class5";
+  }
+}
+
+/* Large and up (Desktops) */
+
+@media (min-width: 992px) {
+  .design {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "design1 design2";
+  }
+  .class {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "class1 class2 class3 class4" "class5 . . .";
+  }
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+
+@media (min-width: 1200px) {
+  .class {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "class1 class2 class3 class4 class5";
+  }
+}
