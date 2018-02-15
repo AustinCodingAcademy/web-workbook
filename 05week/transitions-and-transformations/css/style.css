@@ -1,0 +1,41 @@
+.flex-container {
+  border: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  height: 50px;
+  width: 50px;
+  background-color: blue;
+  margin: 5px;
+}
+
+main div:nth-child(2n+2) {
+  transition: margin-left 3s, transform 3s;
+  -webkit-transition: margin-left 3s, transform 3s;
+  -moz-transition: margin-left 3s, transform 3s;
+  -o-transition: margin-left 3s, transform 3s;
+}
+
+main:hover .box:nth-child(2n+2) {
+  height: 100px;
+  width: 100px;
+  margin-left: 100%;
+  transform: rotateZ(360deg);
+}
+
+main div:nth-child(2n+1) {
+  transition: margin-right 1s, transform 1s;
+  -webkit-transition: margin-right 1s, transform 1s;
+  -moz-transition: margin-right 1s, transform 1s;
+  -o-transition: margin-right 1s, transform 1s;
+}
+
+main:hover .box:nth-child(2n+1) {
+  height: 25px;
+  width: 25px;
+  margin-right: 100%;
+  transform: rotateZ(-360deg);
+}
