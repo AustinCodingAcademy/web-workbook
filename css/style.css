@@ -1,8 +1,7 @@
 /* index page custom styles */
 
-
 main {
-min-height: calc( 100vh - 180px);
+  min-height: calc( 100vh - 180px);
 }
 
 /* Design Portfolio - checkpoints ection */
@@ -50,10 +49,14 @@ min-height: calc( 100vh - 180px);
   grid-area: class5;
 }
 
+.class div:nth-child(6) {
+  grid-area: class6;
+}
+
 .class {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "class1" "class2" "class3" "class4" "class5";
+  grid-template-areas: "class1" "class2" "class3" "class4" "class5" "class6";
 }
 
 .class div {
@@ -78,10 +81,7 @@ min-height: calc( 100vh - 180px);
 @media (min-width: 576px) {
   .class {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "class1 class2"
-     "class3 class4"
-     "class5 .";
+    grid-template-areas: "class1 class2" "class3 class4" "class5 class6";
   }
 }
 
@@ -90,9 +90,7 @@ min-height: calc( 100vh - 180px);
 @media (min-width: 768px) {
   .class {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-    "class1 class2 class3"
-    "class4 . class5";
+    grid-template-areas: "class1 class2 class3" "class4 class5 class6";
   }
 }
 
@@ -105,7 +103,7 @@ min-height: calc( 100vh - 180px);
   }
   .class {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "class1 class2 class3 class4" "class5 . . .";
+    grid-template-areas: "class1 class2 class3 class4" "class5 . class6 .";
   }
 }
 
@@ -114,6 +112,6 @@ min-height: calc( 100vh - 180px);
 @media (min-width: 1200px) {
   .class {
     grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: "class1 class2 class3 class4 class5";
+    grid-template-areas: "class1 class2 class3 class4 class5" "class6 . . . .";
   }
 }
