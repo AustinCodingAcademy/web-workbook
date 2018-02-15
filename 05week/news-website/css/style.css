@@ -30,7 +30,7 @@ p {
 }
 
 a {
-  text-decoration:  none;
+  text-decoration: none;
   color: gray;
   padding: 2.5%;
 }
@@ -63,7 +63,7 @@ article:nth-child(odd) {
 
 /* boxes */
 .box {
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
 }
 
 .box1 {
@@ -179,9 +179,8 @@ article:nth-child(odd) {
     display: none;
   }
 
-  /* THIS IS NOT WORKING!!!!! THIS IS NOT WORKING!!!!! THIS IS NOT WORKING!!!!! */
   .grid {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "box1  box1"
@@ -191,19 +190,17 @@ article:nth-child(odd) {
     "box7  box8"
     "box9  box10";
     }
-  /* THIS IS NOT WORKING!!!!! THIS IS NOT WORKING!!!!! THIS IS NOT WORKING!!!!! */
-
 
   /* This makes box4 flat */
   .box4 {
     display: flex;
   }
 
-  .box4-child-A {
+  .box4-image {
     flex: 1;
   }
 
-  .box4-child-B {
+  .box4-text {
     flex: 1;
     padding: 0 1em;
   }
@@ -229,6 +226,86 @@ article:nth-child(odd) {
     display: block;
     padding-top: 0.5em;
   }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "box1  box1  box2  box2"
+    "box3  box3  box4  box5"
+    "box3  box3  box6  box6"
+    "box7  box8  box9  box10";
+    }
+
+    /* This makes box1 flat */
+    .box1 {
+      display: flex;
+    }
+
+    .box1-image {
+      flex: 1;
+    }
+
+    .box1-text {
+      flex: 1;
+      padding: 0 1em;
+    }
+
+    .box-footer {
+      font-size: 0.75em;
+    }
+
+    /* This makes box2 flat */
+    .box2 {
+      display: flex;
+    }
+
+    .box2-image {
+      flex: 1;
+    }
+
+    .box2-text {
+      flex: 1;
+      padding: 0 1em;
+    }
+
+    .box-footer {
+      font-size: 0.75em;
+    }
+
+    /* This styles box3 for desktop mode */
+    .box3 h2 {
+      font-size: 3.5em;
+    }
+
+    .box3 p {
+      font-size: 1.25em;
+    }
+
+    /* This resets box4 from being flat in tablet mode */
+    .box4 {
+      display: flex;
+      flex-direction: column;
+      align-items: space-between;
+    }
+
+    /* This makes box6 flat */
+    .box6 {
+      display: flex;
+    }
+
+    .box6-image {
+      flex: 1;
+    }
+
+    .box6-text {
+      flex: 1;
+      padding: 0 1em;
+    }
+
+    .box-footer {
+      font-size: 0.75em;
+    }
 
 }
 
