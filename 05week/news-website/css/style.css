@@ -62,7 +62,7 @@ margin-top: 20px;
   <div class="box box9">Box 9</div>
   <div class="box box10">Box 10</div>
   <div class="box box10">Box 10</div>
-  <div class="box box11">Box 11</div>
+
 
 </div>
 
@@ -106,9 +106,7 @@ margin-top: 20px;
   grid-area: box10;
 }
 
-.box11 {
-  grid-area: box11;
-}
+
 
 
 /* Extra Small and up (Portrait Phones) */
@@ -120,6 +118,7 @@ margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
+    "box1"
     "box2"
     "box3"
     "box4"
@@ -128,8 +127,7 @@ margin-top: 20px;
     "box7"
     "box8"
     "box9"
-    "box10"
-    "box11";
+    "box10";
   }
 
 
@@ -141,12 +139,12 @@ margin-top: 20px;
   .grid {
    grid-template-columns: 1fr 1fr;
    grid-template-areas:
-    "box2 box2"
-    "box3 box4"
-    "box5 box5"
-    "box6 box7"
-    "box8 box9"
-    "box10 box11";
+    "box1 box1"
+    "box2 box3"
+    "box4 box4"
+    "box5 box6"
+    "box7 box8"
+    "box9 box10";
  }
 
 }
@@ -156,10 +154,10 @@ margin-top: 20px;
   .grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-    "box2 box2 box3 box3"
-    "box4 box4 box5 box6"
-    "box4 box4 box7 box7"
-    "box8 box9 box10 box11"
+    "box1 box1 box2 box2"
+    "box3 box3 box4 box5"
+    "box3 box3 box6 box6"
+    "box7 box8 box9 box10"
   }
 
 }
