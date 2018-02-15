@@ -1,0 +1,34 @@
+.container {
+  width: 50px;
+  margin: auto;
+}
+
+.container div {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+  -webkit-transition: width 2s, height 2s, -webkit-transform .5s;
+  transition: width 2s, height 2s, transform .5s;
+}
+
+.odd {
+  background: #BC78EC;
+}
+
+.even {
+  background: black;
+}
+
+.container:hover .odd {
+  -ms-transform: scale(2, 2) translateX(100px) rotate(180deg) skewX(-60deg);
+  -webkit-transform: scale(2, 2) translateX(100px) rotate(180deg) skewX(-60deg);
+  transform: scale(2, 2) translateX(100px) rotate(180deg) skewX(-60deg);
+  background: linear-gradient(135deg, #3B2667, #BC78EC);
+}
+
+.container:hover .even {
+  -ms-transform: scale(0.5, 0.5) translateX(-100px) rotate(-180deg) skewX(60deg);
+  -webkit-transform: scale(0.5, 0.5) translateX(-100px) rotate(-180deg) skewX(60deg);
+  transform: scale(0.5, 0.5) translateX(-100px) rotate(-180deg) skewX(60deg);
+  background: linear-gradient(135deg, #E3E3E3, #5D6874);
+}
