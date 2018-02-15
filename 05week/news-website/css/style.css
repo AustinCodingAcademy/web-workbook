@@ -1,0 +1,79 @@
+header {
+  background-color: lightblue;
+  grid-area: header;
+}
+
+main {
+  background-color: pink;
+  grid-area: main;
+}
+
+.article {
+  height: 300px;
+  width: auto;
+  background-image: image("planning.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+nav {
+  background-color: lightsalmon;
+  grid-area: nav;
+}
+
+aside {
+  background-color: lightgreen;
+  grid-area: aside;
+}
+
+.banner {
+  background-color: lavender;
+  grid-area: banner;
+}
+
+footer {
+  background-color: khaki;
+  grid-area: footer;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "header" "nav" "main" "aside" "banner" "footer";
+}
+
+@media (min-width: 500px) {
+  .container {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "header  header" "nav  nav" "aside   main" "banner  footer";
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  main {
+    background-color: aqua;
+  }
+  .photo {
+    height: 200px;
+    width: auto;
+  }
+}
+
+@media (min-width: 700px) {
+  .container {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: "header header  header" "nav    main    aside" "nav    main    banner" "footer footer  footer"
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  main {
+    background-color: pink;
+  }
+  .photo {
+    height: 500px;
+    width: auto;
+  }
+}
