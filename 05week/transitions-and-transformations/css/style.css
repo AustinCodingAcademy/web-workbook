@@ -1,0 +1,39 @@
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  background-color: lightblue;
+  justify-items: center;
+  grid-template-areas:
+  "box1"
+  "box2"
+  "box3"
+  "box4"
+  "box5"
+  "box6"
+  "box7"
+  "box8"
+  "box9"
+  "box10"
+  "box11"
+  "box12"
+}
+
+.grid-container1 > div {
+  background-color: red;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+}
+
+main:hover div:nth-child (even) {
+  height: 25px;
+  width: 25px;
+}
+
+main:hover div:nth-child (odd) {
+  height: 100px;
+  width: 100px;
+}
