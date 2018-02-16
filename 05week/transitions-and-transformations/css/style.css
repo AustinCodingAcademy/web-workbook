@@ -1,5 +1,5 @@
 .container {
-  width: 50px;
+  width: 100px;
   margin: auto;
 }
 
@@ -7,112 +7,62 @@
   width: 100px;
   height: 100px;
   margin-bottom: 25px;
+  transition: all 1s ease-out;
 }
 
-.container:hover>.even_one {
-  -webkit-transform: rotate(-360deg) scale(1.5)translate(-200px);
+.container:hover>.is-even {
+  transform: scale(1.5) translate(200px) rotate(-360deg);
 }
 
-.container:hover>.even_two {
-  -webkit-transform: rotate(-360deg) scale(1.5)translate(-200px);
+.container:hover>.is-odd {
+  transform: scale(0.5) translateX(-500px) rotate(360deg);
+  transition: all .25s ease-out;
 }
 
-.container:hover>.even_three {
-  -webkit-transform: rotate(-360deg) scale(1.5)translate(-200px);
-}
-
-.container:hover>.even_four {
-  -webkit-transform: rotate(-360deg) scale(1.5)translate(-200px);
-}
-
-.container:hover>.even_five {
-  -webkit-transform: rotate(-360deg) scale(1.5)translate(-200px);
-}
-
-.container:hover>.even_six {
-  -webkit-transform: rotate(-360deg) scale(1.5)translateX(-200px);
-}
-
-.container:hover>.odd_one {
-  -webkit-transform: rotate(360deg) scale(0.5) translateX(500px);
-}
-
-.container:hover>.odd_two {
-  -webkit-transform: rotate(360deg) scale(0.5) translateX(500px);
-}
-
-.container:hover>.odd_three {
-  -webkit-transform: rotate(360deg) scale(0.5) translateX(500px);
-}
-
-.container:hover>.odd_four {
-  -webkit-transform: rotate(360deg) scale(0.5) translateX(500px);
-}
-
-.container:hover>.odd_five {
-  -webkit-transform: rotate(360deg) scale(0.5) translateX(500px);
-}
-
-.container:hover>.odd_six {
-  -webkit-transform: rotate(360deg) scale(0.5) translateX(500px);
-}
-
-.even_one {
+.is-pink {
   background: pink;
-  transition: all .2s ease-out;
 }
 
-.even_two {
+.is-bright-yellow {
   background: yellow;
-  transition: all 1s ease-out;
 }
 
-.even_three {
+.is-dark-blue {
   background: #2864c4;
-  transition: all 1s ease-out;
 }
 
-.even_four {
+.is-purple {
   background: purple;
-  transition: all 1s ease-out;
 }
 
-.even_five {
+.is-black {
   background: black;
-  transition: all 1s ease-out;
 }
 
-.even_six {
+.is-orange {
   background: orange;
-  transition: all 1s ease-out;
 }
 
-.odd_one {
+.is-green {
   background: rgb(6, 245, 46);
-  transition: all 1s ease-out;
 }
 
-.odd_two {
+.is-light-blue {
   background: rgb(9, 192, 250);
-  transition: all 1s ease-out;
 }
 
-.odd_three {
+.is-red {
   background: #f52712;
-  transition: all 1s ease-out;
 }
 
-.odd_four {
+.is-yellow {
   background: #eed950;
-  transition: all 1s ease-out;
 }
 
-.odd_five {
+.is-blue {
   background: #131beb;
-  transition: all 1s ease-out;
 }
 
-.odd_six {
+.is-magento {
   background: rgb(209, 42, 115);
-  transition: all 1s ease-out;
 }
