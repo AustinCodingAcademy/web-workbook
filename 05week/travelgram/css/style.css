@@ -19,8 +19,6 @@ h2 {
   font-size: 32px;
 }
 .about {
-  font-size: 24px;
-  margin-top: 20px;
   padding-bottom: 5px;
   border-bottom: 1px solid black;
 
@@ -59,6 +57,12 @@ input {
 img {
   width: 100%;
   height: auto;
+}
+
+.about {
+  font-size: 24px;
+  margin-top: 20px;
+
 }
 
 
@@ -116,6 +120,10 @@ img {
     "box10";
 }
 
+/* Small and up (Landscape Phones) */
+@media (min-width: 576px) {}
+
+
 /* Medium and up (Tablets) */
 @media (min-width: 768px) {
   main {
@@ -131,16 +139,18 @@ img {
       "box10 box10";
   }
 
-  .tabletbox {
+  .flex {
     display: flex;
+  }
+  .space-between {
     justify-content: space-between;
   }
-  .tabletimg {
+  .widebox {
     margin-top: 20px;
     width: 45%;
     height: 50%
   }
-  .tabletwrap {
+  .wrapperwide {
     width: 50%;
   }
 
@@ -159,20 +169,22 @@ img {
       "box7 box8 box9 box10";
   }
 
-  .tabletbox {
+  .flex {
     display: inline;
+  }
+  .space-between {
     justify-content: flex-start;
   }
-  .tabletimg {
+  .widebox {
     margin-top: 0px;
     width: 100%;
     height: auto;
   }
-  .tabletwrap {
+  .wrapperwide {
     width: auto;
   }
 
-  .deskbox {
+  .imgbox {
     display:flex;
     justify-content: space-between;
 
@@ -182,9 +194,16 @@ img {
     width: 45%;
     height: 50%
   }
-  .deskinfo{
+  .info{
     width: 50%;
   }
+
+}
+
+
+
+
+
 
 }
 
