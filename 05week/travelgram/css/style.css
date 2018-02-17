@@ -1,9 +1,9 @@
 body {
   font-family: 'Lora', serif;
 }
+
 header {
   height: 100px;
-
 }
 
 h1 {
@@ -18,10 +18,12 @@ h2 {
   justify-content: center;
   font-size: 32px;
 }
+
 .about {
+  font-size: 24px;
+  margin-top: 20px;
   padding-bottom: 5px;
   border-bottom: 1px solid black;
-
 }
 
 .likesnbuttons {
@@ -32,11 +34,10 @@ h2 {
   justify-content: space-between;
 }
 
-.likes a{
+.likes a {
   color: black;
   text-decoration: none;
   margin-left: 4px;
-
 }
 
 
@@ -51,18 +52,11 @@ input {
   padding: 20px;
   border: 1px solid black;
   margin: 20px;
-
 }
 
 img {
   width: 100%;
   height: auto;
-}
-
-.about {
-  font-size: 24px;
-  margin-top: 20px;
-
 }
 
 
@@ -120,10 +114,6 @@ img {
     "box10";
 }
 
-/* Small and up (Landscape Phones) */
-@media (min-width: 576px) {}
-
-
 /* Medium and up (Tablets) */
 @media (min-width: 768px) {
   main {
@@ -139,18 +129,16 @@ img {
       "box10 box10";
   }
 
-  .flex {
+  .tabletbox {
     display: flex;
-  }
-  .space-between {
     justify-content: space-between;
   }
-  .widebox {
+  .tabletimg {
     margin-top: 20px;
     width: 45%;
     height: 50%
   }
-  .wrapperwide {
+  .tabletwrap {
     width: 50%;
   }
 
@@ -169,45 +157,29 @@ img {
       "box7 box8 box9 box10";
   }
 
-  .flex {
+  .tabletbox {
     display: inline;
-  }
-  .space-between {
     justify-content: flex-start;
   }
-  .widebox {
+  .tabletimg {
     margin-top: 0px;
     width: 100%;
     height: auto;
   }
-  .wrapperwide {
+  .tabletwrap {
     width: auto;
   }
-
-  .imgbox {
+  .deskbox {
     display:flex;
     justify-content: space-between;
-
   }
   .deskimg {
     margin-top: 20px;
     width: 45%;
     height: 50%
   }
-  .info{
+  .deskinfo{
     width: 50%;
   }
-
-}
-
-
-
-
-
-
-}
-
-/* Extra Large and up (Wide Screen Desktops) */
-@media (min-width: 1200px) {
 
 }
