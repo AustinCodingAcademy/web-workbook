@@ -1,0 +1,90 @@
+body {
+  background-color: cyan;
+}
+
+a {
+  text-decoration: none;
+}
+header {
+  margin-bottom: 40px;
+  text-align: center;
+  h5 {
+    font-size: 0.5em;
+  }
+  .tablet {
+    display: none;
+  }
+  .desktop {
+    display: none;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+div.content > * {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+div.content {
+  .article {
+    padding: 5%;
+    margin-bottom: 30px;
+
+    background-color: orange;
+    .image {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .intro {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .social {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  header>.tablet  {
+    display: block;
+  }
+  header>.desktop {
+    display: none;
+  }
+
+  div.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    div.article:nth-child(1) {
+      grid-column: span 2;
+    }
+
+    div.article:nth-child(2) {
+      grid-column: span 1;
+
+    }
+
+    div.article:nth-child(3) {
+      grid-column: span 1;
+    }
+    @for $i from 4 through 10 {
+      div.article:nth-child(#{$i}) {
+        grid-column: span 2;
+      }
+    }
+  }
+
+}
