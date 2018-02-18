@@ -1,5 +1,15 @@
+body {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%), url(../images/background-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
 header {
   text-align: center;
+  color: white;
+  text-shadow: 1px 1px black;
 }
 
 h1 {
@@ -15,10 +25,20 @@ h5 {
 }
 
 article {
-  border: solid;
   display: flex;
   flex-direction: column;
   margin: 0px 10px 20px;
+  background-color: lightgray;
+  opacity: .9;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: yellow;
 }
 
 .article-image {
@@ -39,6 +59,12 @@ article {
   justify-content: space-between;
   padding-top: 10px;
   align-items: baseline;
+}
+
+.box-shadow {
+	-moz-box-shadow: 0 0 70px #525d53;
+	-webkit-box-shadow: 0 0 70px #525d53;
+	box-shadow: 0 0 70px #525d53;
 }
 
 /*phones*/
@@ -80,6 +106,10 @@ article {
   }
 
   article:nth-child(3n+4) .article-content {
+    width: 50%;
+  }
+
+  article:nth-child(3n+4) .article-image {
     width: 50%;
   }
 
