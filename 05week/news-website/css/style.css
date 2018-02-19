@@ -1,0 +1,225 @@
+body {
+  font-family: 'Nanum Pen Script', cursive;
+  background-color: #0c2929;
+}
+
+a:link, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #126999;
+}
+
+/* header styles */
+
+header {
+  display: grid;
+  justify-content: center;
+  color: #fff;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 240%;
+  margin: 1em 0em .3em;
+}
+
+header p {
+  color: #ffffff73;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile {}
+
+.tablet {
+  display: none;
+}
+
+.desktop {
+  display: none;
+}
+
+/* main body styles */
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.article {
+  margin: 10px;
+  grid-column: span 4;
+  box-shadow: none;
+  transition: box-shadow 1s;
+  background-color: #fff;
+}
+
+.image {}
+
+.image img {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  padding: 15px;
+  margin-top: -5px;
+}
+
+.art-head {
+  font-weight: bold;
+  font-size: 110%;
+  padding: .5em 0em;
+}
+
+.art-text {
+  color: #7f7f7f;
+}
+
+.tagline {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 1.5em;
+  color: #7f7f7f;
+}
+
+button {
+  font-size: 80%;
+  font-family: 'Nanum Pen Script', cursive;
+  color: #515151;
+  background-color: yellow;
+  padding: 1px 4px;
+}
+
+button:hover {
+  background-image: linear-gradient(to right top, #475875, #4e5771, #53566c, #575567, #595563);
+  color: #d0d0d0;
+  font-size: 90%;
+  padding: 2px 4px;
+}
+
+/* Media queries */
+
+/* Medium and up (Tablets) */
+
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  .tablet {
+    display: flex;
+    ;
+  }
+  .desktop {
+    display: none;
+  }
+  .article {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .article:nth-child(3n+1) {
+    grid-column: span 4;
+  }
+  .article:nth-child(3n+1):not(:nth-child(1)) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .article:nth-child(3n+1):not(:nth-child(1)) .image {
+    width: 50%;
+  }
+  .article:nth-child(3n+1):not(:nth-child(1)) img {
+    margin-bottom: -3px;
+  }
+  .article:nth-child(3n+1):not(:nth-child(1)) .text {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+  }
+}
+
+/* Large and up (Desktops) 992*/
+
+@media (min-width: 992px) {
+  .mobile {
+    display: none;
+  }
+  .tablet {
+    display: none;
+  }
+  .desktop {
+    display: flex;
+  }
+  .article {
+    grid-column: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  /* resetting fomatting from the previous breakpoint */
+  .article:nth-child(3n+1) {
+    grid-column: span 1;
+    display: block;
+  }
+  .article:nth-child(3n+1):not(:nth-child(1)) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .article:nth-child(3n+1):not(:nth-child(1)) .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .article:nth-child(3n+1):not(:nth-child(1)) .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 90%;
+  }
+  /* new formatting */
+  .article:nth-child(1), .article:nth-child(2), .article:nth-child(6) {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .article:nth-child(1) .image, .article:nth-child(2) .image, .article:nth-child(6) .image {
+    width: 50%;
+    background-color: #e4e4ed;
+  }
+  .article:nth-child(1) .image img, .article:nth-child(2) .image img, .article:nth-child(6) .image img {
+    margin-bottom: -3px;
+  }
+  .article:nth-child(1) .text, .article:nth-child(2) .text, .article:nth-child(6) .text {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+  }
+  .article:nth-child(3) {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+}
