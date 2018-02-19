@@ -1,0 +1,119 @@
+body {
+  margin: 10px;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.pcirbut>p {
+  margin-left: 5px;
+}
+
+.box {
+  margin: 5px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.cirbut {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box1 {
+  grid-area: box1;
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.box3 {
+  grid-area: box3;
+}
+
+.box4 {
+  grid-area: box4;
+}
+
+.box5 {
+  grid-area: box5;
+}
+
+.box6 {
+  grid-area: box6;
+}
+
+.box7 {
+  grid-area: box7;
+}
+
+.box8 {
+  grid-area: box8;
+}
+
+.box9 {
+  grid-area: box9;
+}
+
+.box10 {
+  grid-area: box10;
+}
+
+/* Extra Small and up (Portrait Phones) */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  grid-template-areas: "box1" "box2" "box3" "box4" "box5" "box6" "box7" "box8" "box9" "box10";
+}
+
+.pic {
+  width: 80%;
+  height: auto;
+  text-align: center;
+  margin: auto;
+}
+
+/* Tablet*/
+
+@media (min-width:768px) and (max-width:992px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "box1 box1" "box2 box3" "box4 box4" "box5 box6" "box7 box7" "box8 box9" "box10 box10"
+  }
+  .box:nth-child(3n+4) {
+    display: flex;
+    flex-direction: row;
+  }
+  .pcirbut {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Large and up (Desktops) */
+
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "box1 box1 box2 box2" "box3 box3 box4 box5" "box3 box3 box6 box6" "box7 box8 box9 box10";
+  }
+  .box:nth-child(1), .box:nth-child(2), .box:nth-child(6) {
+    display: flex;
+    flex-direction: row;
+  }
+  .pcirbut {
+    display: flex;
+    flex-direction: column;
+  }
+}
