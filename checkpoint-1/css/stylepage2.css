@@ -1,0 +1,110 @@
+* {
+ margin: 0px;
+ padding: 0px;
+}
+
+.s1 {
+  width: 100%;
+  height: 350px;
+  background-image: url("../hike1.jpg");
+  background size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav {
+  height: 58px;
+  width: 100%;
+  background-color: #74ccd1;
+  border-bottom: 2px solid teal;
+}
+
+ul {
+  display: flex;
+  font-family:'Source Sans Pro', sans-serif;
+  flex-direction: row;
+  justify-content:space-around;
+  list-style: none;
+  text-transform: uppercase;
+  color: #444;
+  border: 5px solid black;
+  padding-top: 10px;
+}
+
+li {
+  border: 2px solid hotpink;
+}
+
+.s2 {
+  background-image: url("../p2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+}
+
+.s3 {
+    margin-bottom: 3em;
+    margin-left: 280px;
+    margin-right: 280px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.s4 {
+
+  display: grid;
+  grid-template-columns:: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "article1 article2"
+    "article3 article4"
+    "article5 article6"
+    "article7 article8";
+  margin-bottom: 4em;
+}
+
+article:nth-child(1) {
+  grid-area: article1;
+}
+article:nth-child(2) {
+  grid-area: article2;
+}
+article:nth-child(3) {
+  grid-area: article3;
+}
+article:nth-child(4) {
+  grid-area: article4;
+}
+article:nth-child(5) {
+  grid-area: article5;
+}
+article:nth-child(6) {
+  grid-area: article6;
+}
+article:nth-child(7) {
+  grid-area: article7;
+}
+article:nth-child(8) {
+  grid-area: article8;
+}
+
+h1 {
+  margin-bottom: 1em;
+  font-family:'Oswald', sans-serif;
+  letter-spacing: 2px;
+}
+
+.p1 {
+  font-family:'Raleway', sans-serif;
+  margin-bottom: 1.5em;
+  font-weight: lighter;
+}
+
+.p2 {
+  font-family:'Oswald', sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
