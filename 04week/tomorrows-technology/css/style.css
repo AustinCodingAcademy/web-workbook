@@ -1,0 +1,177 @@
+body {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.image {
+  height: 547px;
+  width: 1000px;
+  background-image: url(../img/bg.jpg);
+  display: flex;
+  align-items: center;
+}
+
+.stories {
+  display: none;
+  margin-left: 50px;
+  width: 320px;
+  height: 400px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 32px;
+  border-bottom: 1px solid black;
+  height: 50px;
+}
+
+.stories ul {
+  margin-top: 20px;
+}
+
+.container .stories ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 70px;
+  width: 1000px;
+}
+
+p {
+  font-size: 50px;
+  width: 1000px;
+}
+
+article {
+  width: 1000px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.techbutton {
+  /* margin-top: 5px; */
+  height: 85px;
+  width: 300px;
+  background-color: #4D4D4D;
+  color: white;
+  font-size: 40px;
+  border-style: none;
+}
+
+.container2 {
+  height: 530px;
+  width: 1100px;
+  padding: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: #5D5D5D;
+}
+
+.linkbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #5D5D5D;
+  color: white;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.linkbox ul {
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.linkbox ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+.mediabox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #5D5D5D;
+  color: white;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+li  {
+  list-style: none;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+  opacity: .8;
+}
+
+.mediabox ul {
+  height: 350px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mediabox ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+i {
+  margin-top: 12px;
+}
+
+h2 {
+  font-size: 55px;
+}
+
+/* * Small and up (Landscape Phones) */
+
+@media (min-width: 576px) {}
+
+/* Medium and up (Tablets) */
+
+@media (min-width: 768px) {
+  .container2 {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+  }
+}
+
+/* Large and up (Desktops) */
+
+@media (min-width: 992px) {
+  .stories {
+    display: inline;
+  }
+  .container2 {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+  }
+  body {
+    width: 1400px;
+    margin-left: 50px;
+    align-items: flex-start;
+  }
+}
