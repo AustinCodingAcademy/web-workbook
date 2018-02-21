@@ -19,8 +19,30 @@
   background-color: green;
 }
 
-.container:hover {
-  width: 1000;
-  height: 1000;
-  transform-origin: center;
+.even {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 5s, height 5s, transform 5s;
+}
+
+.even:hover {
+  width: 100px;
+  height: 100px;
+  transition: width 100px;
+  transform: translate(350px)rotate(360deg);
+}
+
+.odd {
+  width: 100px;
+  height: 100px;
+  background: green;
+  transition: width 5s, height 5s, transform 5s;
+}
+
+.odd:hover {
+  width: 100px;
+  height: 100px;
+  transition: width 100px;
+  transform: translate(-350px, 0)rotate(-360deg) scale(-5);
 }
