@@ -15,22 +15,22 @@ var usersNock, userNock;
 beforeEach(function (done) {
 
   usersNock = nock('https://reqres-api.herokuapp.com')
-  .defaultReplyHeaders({
-    'Access-Control-Allow-Origin': '*',
-    'Content-Type': 'application/json'
-  })
-  .get('/api/users')
-  .reply(200, function () {
-    return [{
-      id: 1,
-      first_name: 'Velma',
-      last_name: 'Dinkley'
-    }, {
-      id: 2,
-      first_name: 'Scooby',
-      last_name: 'Doo'
-    }];
-  });
+    .defaultReplyHeaders({
+      'Access-Control-Allow-Origin': '*',
+      'Content-Type': 'application/json'
+    })
+    .get('/api/users')
+    .reply(200, function () {
+      return [{
+        id: 1,
+        first_name: 'Velma',
+        last_name: 'Dinkley'
+      }, {
+        id: 2,
+        first_name: 'Scooby',
+        last_name: 'Doo'
+      }];
+    });
 
   jsdom.env(
     {
@@ -82,22 +82,22 @@ describe('get specific user details', function () {
   it ('should use $.ajax to get a user\'s details', function (done) {
 
     userNock = nock('https://reqres-api.herokuapp.com')
-    .defaultReplyHeaders({
-      'Access-Control-Allow-Origin': '*',
-      'Content-Type': 'application/json'
-    })
-    .get('/api/users/1')
-    .reply(200, function () {
-      return {
-        id: 1,
-        first_name: 'Velma',
-        last_name: 'Dinkley',
-        occupation: 'Mystery Solver',
-        phone: '5558675309',
-        address: 'Mystery Machine, middle seat',
-        avatar: 'https://upload.wikimedia.org/wikipedia/en/9/9d/Velma_Dinkley.png'
-      };
-    });
+      .defaultReplyHeaders({
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json'
+      })
+      .get('/api/users/1')
+      .reply(200, function () {
+        return {
+          id: 1,
+          first_name: 'Velma',
+          last_name: 'Dinkley',
+          occupation: 'Mystery Solver',
+          phone: '5558675309',
+          address: 'Mystery Machine, middle seat',
+          avatar: 'https://upload.wikimedia.org/wikipedia/en/9/9d/Velma_Dinkley.png'
+        };
+      });
     var $tbody = $('tbody');
 
     // need a second to get the markup to be appended
