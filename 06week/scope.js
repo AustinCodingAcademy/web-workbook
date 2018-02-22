@@ -12,7 +12,7 @@ var a = 1, b = 2, c = 3;
 
             (function fourthFunction(){
                 var a = 1, c = 8;
-
+                        
             })();
         })();
     })();
