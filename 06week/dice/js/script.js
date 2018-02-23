@@ -76,7 +76,12 @@ function report() {
   } else {
     document.getElementById("report").style.border = "1px solid black";
   }
-  document.getElementById("report").innerHTML += "<p><br>You have " + straight + ".<br> Your final score is " + score + ".</p>";
+
+  if (score === 0) {
+    document.getElementById("report").innerHTML += "<p><br>You have " + straight + ".<br> Your final score is " + score + ".  Better luck next time!</p>";
+  } else {
+    document.getElementById("report").innerHTML += "<p><br>You have " + straight + ".<br> Your final score is " + score + ".</p>";
+  }
   // two of dice have the same points, like 3 6 5 6 1 - called pair: example solved for you. Complete the other cases below:
 
   // three of dice have the same points, like 2 4 5 4 4 - called three;
