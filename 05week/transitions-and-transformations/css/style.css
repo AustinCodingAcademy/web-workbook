@@ -1,0 +1,97 @@
+li {
+  list-style: none;
+}
+
+nav {
+  background-color: #ffa08c;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  display: flex;
+  align-self: center;
+  background-color: #b3ffff;
+  color: white;
+}
+
+article:nth-child(1) {
+  grid-area: article1;
+}
+article:nth-child(2) {
+  grid-area: article2;
+}
+article:nth-child(3) {
+  grid-area: article3;
+}
+article:nth-child(4) {
+  grid-area: article4;
+}
+article:nth-child(5) {
+  grid-area: article5;
+}
+article:nth-child(6) {
+  grid-area: article6;
+}
+article:nth-child(7) {
+  grid-area: article7;
+}
+article:nth-child(8) {
+  grid-area: article8;
+}
+article:nth-child(9) {
+  grid-area: article9;
+}
+article:nth-child(10) {
+  grid-area: article10;
+}
+
+section {
+  display: grid;
+  grid-template-columns:: 1fr 1fr;
+  grid-template-areas:
+    "article1"
+    "article2"
+    "article3"
+    "article4"
+    "article5"
+    "article6"
+    "article7"
+    "article8"
+    "article9"
+    "article10";
+}
+
+/* Extra Small and up (Portrait Phones) */
+
+/* Small and up (Landscape Phones) */
+@media (min-width: 576px) {
+  section {
+    display: grid;
+    grid-template-columns:
+    grid-template-areas:
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+  section {
+    display: grid;
+    grid-template-columns:: 1fr 1fr;
+    grid-template-areas:
+      "article1 article2"
+      "article3 article4"
+      "article5 article6"
+      "article7 article8"
+      "article9 article10";
+  }
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (min-width: 1200px) {
+
+}
