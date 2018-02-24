@@ -4,14 +4,42 @@
 
 body {
   background-color: lightgrey;
+  font-family: sans-serif;
 }
 
 #wrapper {
   display: grid;
+  margin: auto;
   width: 1200px;
+  grid-template: repeat(3, 1fr), repeat(6, 1fr);
+}
+
+.test {
+  height: 100px;
+  width: 400px;
+}
+
+header {
+  grid-column-start: span 3;
 }
 
 header>img {
   height: 100px;
   width: auto;
+}
+
+menu {
+  grid-column-start: span 3;
+}
+
+.pic {
+  grid-column-start: span 2;
+}
+
+.video {
+  grid-column-start: span 2;
+}
+
+footer {
+  grid-column-start: span 3;
 }
