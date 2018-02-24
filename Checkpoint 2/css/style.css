@@ -1,0 +1,254 @@
+/* .boxy {
+  border: 1px solid red
+} */
+
+/* Set up initial design for grid layout */
+
+#container {
+  display: grid;
+  width: 1000px;
+  height: 1200px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: .25fr 1fr 1fr .25fr;
+  grid-row-gap: 1px;
+}
+
+header {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: lightgray;
+}
+
+/* logo */
+
+header>img {
+  height: 150px;
+  width: 300px;
+}
+
+ul {
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+/* make list go horizontal */
+
+li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 50px;
+}
+
+/* underline and point to links on hover */
+
+li:hover {
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+#siteNav {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  grid-row: span 1;
+  background-color: lightgray;
+  font-family: calibri;
+}
+
+main {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-image: url("http://bit.ly/2sTaMA2");
+  background-size: cover;
+  background-blend-mode: lighten;
+  grid-row: span 1;
+  font-family: calibri;
+}
+
+/* box for form to go inside */
+
+.form {
+  display: flex;
+  grid-column: span 1;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background-color: #ffffff;
+  opacity: 0.6;
+  padding: 10px;
+}
+
+/* change location of placeholder text */
+
+::-webkit-input-placeholder {
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  top: -40px;
+}
+
+/* make placeholder text disappear on click */
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+button {
+  margin-top: 10px;
+  margin-left: 94px;
+  border: none;
+  background-color: #00AEEF;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+section {
+  grid-column: span 3;
+  background-image: url("http://bit.ly/2CCAVSZ");
+  grid-row: span 1;
+  display: flex;
+  justify-content: space-between;
+  font-family: calibri;
+}
+
+.paw {
+  height: 100px;
+  width: 100px;
+}
+
+.paw:hover {
+  cursor: pointer;
+}
+
+/* box for paw logo  */
+
+.pawBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#about {
+  padding: 30px;
+  margin: auto;
+  background-color: #ffffff;
+  opacity: 0.6;
+}
+
+#booking {
+  padding: 30px;
+  margin: auto;
+  background-color: #ffffff;
+  opacity: 0.6;
+}
+
+#faq {
+  padding: 30px;
+  margin: auto;
+  background-color: #ffffff;
+  opacity: 0.6;
+}
+
+footer {
+  grid-column: span 3;
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.locationInfo {
+  font-family: calibri;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* set sizes for all logos in footer */
+
+.socials>img {
+  height: 25px;
+  width: 25px;
+}
+
+/* Make cursor change into finger */
+
+.socials>img:hover {
+  cursor: pointer;
+}
+
+/* Mobile responsive design */
+
+@media (max-width: 576px) {
+  #container {
+    width: 500px;
+    grid-template-columns: 1fr;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header>img {
+    height: 75px;
+    width: 150px;
+  }
+  #siteNav {
+    grid-column: span 1;
+  }
+  li {
+    display: flex;
+    margin-top: 10px;
+  }
+  main {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* flip boxes to go vertical */
+  section {
+    flex-direction: column;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    grid-row-gap: 5px;
+    text-align: center;
+  }
+  .paw {
+    height: 75px;
+    width: 75px;
+  }
+  #about {
+    margin-top: 10px;
+    width: 150px;
+    padding: 20px;
+  }
+  #booking {
+    width: 150px;
+    padding: 20px;
+  }
+  #faq {
+    width: 150px;
+    margin-bottom: 10px;
+    padding: 20px;
+  }
+  footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
