@@ -3,7 +3,7 @@
   width: 50px;
   background-color: orange;
   margin: 10px;
-
+  transition: width 2s, height 2s, transform 2s;
   }
 
 .container {
@@ -12,16 +12,16 @@
 
 }
 
-.container > div:hover:nth-child(odd) {
+.container:hover > div:nth-child(odd) {
   transform: scale(2) translate(200px)rotate(5000deg);
   transition-duration: 10s;
 
 }
 
-.container > div:hover:nth-child(even) {
+.container:hover > div:nth-child(even) {
   transform: scale(.5) translate(-200px)rotate(-500deg);
   transition-duration: 5s;
-
+  transition-timing-function: ease-in-out;
 }
 
 
