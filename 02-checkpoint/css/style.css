@@ -16,6 +16,19 @@ h1 {
   padding: 0.5em;
 }
 
+h2 {
+  font-size: 2em;
+  text-align: center;
+  padding-top: 1em;
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 1em;
+}
+
 li {
   font-size: 1.25em;
   padding: 0.5em;
@@ -125,6 +138,53 @@ button:hover {
     "box3";
 }
 
+/* money back guarantee */
+.guarantee {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  background-color: #E8E8E8;
+}
+
+/* bottom menu */
+.bottom-menu {
+  padding: 1em;
+}
+
+.bottom-menu1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom-menu2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.bottom-menu a {
+  text-decoration: none;
+  color: #777777;
+}
+
+.bottom-menu a:hover {
+  color: blue;
+}
+
+.bottom-menu a:visited {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #777777;
+  padding: 1em 0em;
+  color: white;
+  text-align: center;
+}
+
 /* mobile view */
 @media (max-width:600px) {
   /* NAVBAR */
@@ -193,8 +253,14 @@ button:hover {
     padding-top: 0.75em;
   }
 
+  h3 {
+    padding-left: 11em;
+    padding-right: 11em;
+  }
+
   .boxes {
     display: flex;
+    padding-bottom: 1em;
   }
 
   .box1 {
@@ -207,6 +273,10 @@ button:hover {
 
   .box3 {
     flex: 1;
+  }
+
+  .bottom-menu2 {
+    justify-content: center;
   }
 }
 
