@@ -9,9 +9,72 @@ Heading styles
 -------------------
 */
 
+.navbar {
+  padding: 0rem;
+}
+
 .navbar-dark {
   background: url("../img/starfield-banner.jpg") #000000 repeat-x;
   color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+  background-color: #15418c;
+}
+
+.navbar-nav li.nav-item {
+  display: block;
+}
+
+.navbar-nav li.nav-item:not(:nth-child(1)) a span {
+  border-left: 1px solid #555555;
+  padding: 10px 0px 10px 10px;
+}
+
+.nasa-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  min-height: 85px;
+}
+
+.navbar-brand {
+  padding: 0px 15px;
+  height: 85px;
+  line-height: 85px;
+}
+
+.navbar-brand img {
+  width: 80px;
+}
+
+.navbar-nav>li>a {
+  padding-top: 29px;
+  padding-bottom: 29px;
+  line-height: 27px;
+}
+
+/*
+Triggers menu on hover instead of click, but breaks on submenus
+*/
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  pointer-events: none;
+}
+
+.dropdown-toggle::after {
+  display: none;
 }
 
 .navbar-dark .navbar-toggler {
@@ -38,6 +101,38 @@ form.search-box label.element-invisible {
   height: 1px;
 }
 
+form.search-box {
+  position: relative;
+  width: 156px;
+  z-index: 1;
+  height: 39px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+form.search-box input[type="text"] {
+  color: #fff;
+  position: absolute;
+  cursor: text;
+  width: 156px;
+  font-size: 90%;
+  padding: 6px;
+  border-radius: 0rem;
+  background-color: #333333;
+  border-color: #333333;
+  color: #a1a1a1;
+}
+
+fom.search-box input[type="text"]:focus {
+  z-index: 1;
+  background-color: #333333;
+  width: 156px;
+  cursor: text;
+  font-style: italic;
+}
+
 form.search-box input[type="submit"] {
   display: inline-block;
   height: 30px;
@@ -50,11 +145,92 @@ form.search-box input[type="submit"] {
   text-indent: -10000px;
   z-index: 2;
   background: url("../img/search.svg") center center no-repeat;
+  border: none;
 }
 
-.form-control {
-  border-radius: 0rem;
-  background-color: #333333;
-  border-color: #333333;
-  color: #a1a1a1;
+form.search-box input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  border-radius: 0px;
+  margin: 0rem;
+  padding: 0rem;
+  border: none;
+  background-color: #15418c;
+}
+
+.dropdown-menu a {
+  color: #fff;
+}
+
+.dropdown-menu a:hover {
+  background-color: #072f54;
+  color: #fff;
+  border: 1px solid #072f54;
+}
+
+.dropdown-divider {
+  margin: 0rem;
+  padding: 0rem;
+}
+
+/*
+-------------------
+Main styles
+-------------------
+*/
+
+.page-banner {
+  background-image: url("../img/curiosity-banner.jpg");
+  height: 215px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.page-banner .headline {
+  color: #fff;
+  font-size: 200%;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.submenu-topics {
+  background-color: #555555;
+  letter-spacing: .07em;
+  margin: 0px;
+}
+
+.submenu-topics-list {
+  display: flex;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+.submenu-topics li {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  border-right: 1px solid #777777;
+  margin: 0px;
+  padding: 8px 10px 12px 10px;
+}
+
+.submenu-topics li a, .submenu-topics li a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.submenu-topics li:hover {
+  background-color: #5d7fb9;
+}
+
+.submenu-topics li.first {
+  padding-right: 30px;
+  background-color: #5d7fb9;
+  background: /* linear-gradient(0deg, transparent 10px, #5d7fb9 0) top left, */
+  linear-gradient(225deg, transparent 15px, #5d7fb9 0) top right, linear-gradient(315deg, transparent 15px, #5d7fb9 0) bottom right, linear-gradient(45deg, transparent 10px, #5d7fb9 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
 }
