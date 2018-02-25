@@ -1,0 +1,283 @@
+.box {
+  border: solid red 1px;
+}
+
+body {
+  width: 1000px;
+  height: auto;
+  margin: auto;
+  margin-top: 30px;
+}
+
+/* nav menu */
+
+nav ul, nav li {
+  list-style-type: none;
+}
+
+nav {
+  display: block;
+  height: 50px;
+  width: auto;
+  overflow: visible;
+}
+
+nav>ul {
+  float: right;
+}
+
+nav>ul>li {
+  display: inline;
+  padding-right: 20px;
+  position: relative;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.dropdownContent li {
+  padding-top: 10px;
+}
+
+.dropdown:hover .dropdownContent {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: deepskyblue;
+}
+
+.volunteer, #mText a {
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+/* main content */
+
+.container {
+  clear: both;
+  width: 1000px;
+  display: grid;
+  grid-template-areas: 'mission mission mission' 'mText mImg mImg' 'mText mImg mImg' 'adopt adopt adopt' 'aCats aCats aCats' 'aCat1 aCat2 aCat3' 'aViewCat aViewCat aViewCat' 'aDogs aDogs aDogs' 'aDog1 aDog2 aDog3' 'aViewDog aViewDog aViewDog' 'contact contact contact' 'cEmail cEmail cVolunteer';
+  grid-gap: 5px;
+  grid-auto-columns: 1fr;
+}
+
+h1 {
+  font-family: 'Rock Salt', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 35px;
+  width: auto;
+}
+
+h2, h3, ul, li, nav a, label {
+  font-family: 'Raleway', sans-serif;
+}
+
+p, a {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-size: 40px;
+  border-bottom: dotted 5px black;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+p+p {
+  margin-top: 12px;
+}
+
+.pets {
+  height: 300px;
+  width: 100%;
+}
+
+button, input[type="submit"] {
+  background-color: deepskyblue;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #0099cc;
+}
+
+#cVolunteer img {
+  width: 100%;
+  height: auto;
+}
+
+#cEmail {
+  width: 100%;
+  height: auto;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 3px;
+}
+
+input[name="message"] {
+  padding-bottom: 100px;
+  width: 80%;
+}
+
+/* footer */
+
+.footerPets {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.petsSmall {
+  height: 125px;
+  width: 125px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 25px;
+  border-top: solid 1px black;
+  padding: 25px;
+  background: #ccf2ff;
+}
+
+footer p {
+  margin-left: 125px;
+  margin-right: 125px;
+  padding: 20px;
+}
+
+/* mobile */
+
+@media screen and (max-width: 999px) {
+  .container {
+    grid-template-areas: 'mission' 'mText' 'mImg' 'adopt' 'aCats' 'aCat1' 'aCat2' 'aCat3' 'aViewCat' 'aDogs' 'aDog1' 'aDog2' 'aDog3' 'aViewDog' 'contact' 'cEmail' 'cVolunteer';
+    width: 80vw;
+  }
+  nav, h1, footer, body {
+    width: 80vw;
+    padding: 0;
+  }
+  h1 {
+    line-height: 10vh;
+  }
+  .footerPets {
+    display: none;
+  }
+  footer p {
+    margin: 0;
+    padding: 0;
+  }
+  .pets {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* grid */
+
+#mission {
+  grid-area: mission;
+}
+
+#mText {
+  grid-area: mText;
+}
+
+#mImg {
+  grid-area: mImg;
+  height: auto;
+  Width: 100%;
+}
+
+#adopt {
+  grid-area: adopt;
+}
+
+#aCats {
+  grid-area: aCats;
+}
+
+#aCat1 {
+  grid-area: aCat1;
+}
+
+#aCat2 {
+  grid-area: aCat2;
+}
+
+#aCat3 {
+  grid-area: aCat3;
+}
+
+#aViewCat {
+  grid-area: aViewCat;
+}
+
+#aDogs {
+  grid-area: aDogs;
+}
+
+#aDog1 {
+  grid-area: aDog1;
+}
+
+#aDog2 {
+  grid-area: aDog2;
+}
+
+#aDog3 {
+  grid-area: aDog3;
+}
+
+#aViewDog {
+  grid-area: aViewDog;
+}
+
+#contact {
+  grid-area: contact;
+  margin-bottom: 15px;
+}
+
+#cEmail {
+  grid-area: cEmail;
+}
+
+#cCall {
+  grid-area: cCall;
+}
+
+#cVolunteer {
+  grid-area: cVolunteer;
+}
+
+/* fonts
+font-family: 'Rock Salt', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Raleway', sans-serif;*/
