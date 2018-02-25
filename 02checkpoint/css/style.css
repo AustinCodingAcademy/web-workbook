@@ -1,6 +1,7 @@
 body {
-  padding-top: 65px;
+  padding-top: 56px;
   font-family: 'Mukta Malar', sans-serif;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5 {
@@ -35,21 +36,21 @@ h1, h2, h3, h4, h5 {
 }
 
 .large-header-centered {
-  font-size: 60px;
+  font-size: 28px;
   text-align: center;
   font-weight: bold;
 }
 
-.section {
-  margin: 60px auto;
-}
-
-.bigger-font {
+.font-twentyfour {
   font-size: 24px;
 }
 
-.mid-font {
+.font-twenty {
   font-size: 20px;
+}
+
+.font-sixteen {
+  font-size: 16px;
 }
 
 .center-text {
@@ -68,6 +69,15 @@ h1, h2, h3, h4, h5 {
   color: #D02033;
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.section {
+  margin: 56px 10px;
+}
+
 /*nav stufff*/
 
 .header-logo {
@@ -79,7 +89,7 @@ h1, h2, h3, h4, h5 {
 }
 
 nav {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .navbar-brand {
@@ -102,14 +112,24 @@ nav {
 /*home section*/
 
 .main {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../images/intro-bg.jpg");
   color: white;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header-image {
+  display: none;
 }
 
 /*different section*/
+.advantages {
+  margin: 35px 0;
+}
+
 .advantages-square {
   position: relative;
   width: 100%;
@@ -153,14 +173,11 @@ nav {
 
 /*results section*/
 .results-block {
-  display: flex;
-  flex-direction: row;
-  margin: 40px;
+  margin-bottom: 30px;
 }
 
 .results-content {
-  padding-left: 16px;
-  padding-right: 16px;
+
 }
 
 /*perks section*/
@@ -195,11 +212,22 @@ nav {
 }
 
 .fact-title {
-  font-size: 32px;
+  font-size: 18px;
   font-weight: bold;
 }
 
-.getworkout {
+/*as seen on*/
+.as-seen-on-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.as-seen-on-images img {
+  margin: 10px;
+}
+
+.getworkout-section {
   background-color: #F2F2F2;
   padding: 5px;
   margin-bottom: -20px;
@@ -210,4 +238,52 @@ nav {
 footer {
   background-color: #303030;
   color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: #CCCCCC;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #BE1E2F;
+}
+
+.social-media {
+  padding-right: 100px;
+  padding-left: 100px;
+  font-size: 24px;
+  justify-content: space-between;
+}
+
+/*media queries*/
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+
+  .large-header-centered {
+    font-size: 46px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .header-image {
+    display: inline-block;
+    vertical-align: baseline;
+    width: auto;
+    height: 70px;
+    margin: 0 10px 0 -55px;
+  }
+
+/*results*/
+.results-block {
+  display: flex;
+  flex-direction: row;
+  margin: 40px;
+}
+
+/*facts*/
+.fact-title {
+  font-size: 32px;
+}
 }
