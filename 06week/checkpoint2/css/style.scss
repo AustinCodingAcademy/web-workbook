@@ -27,5 +27,72 @@ div.wrapper {
         max-width: 350px;
       }
     }
+    div.text {
+      padding-left: 10px;
+      padding-right: 10px;
+      p:first-child {
+        font-size: 1.2em;
+      }
+    }
+    div.sign-up {
+      padding-left: 10px;
+      padding-right: 10px;
+      div.buttons {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        button {
+          display: inline-block;
+          margin-right: 2px;
+          width: 49%;
+          height: 40px;
+          background-color: #CEE3C4;
+          color: white;
+          border-radius: 3px;
+        }
+        button:first-child {
+          background-color: #63AD41;
+        }
+      }
+      p {
+        font-size: 0.7em;
+        margin-bottom: 0;
+      }
+      p:first-of-type {
+        margin-top: 30px;
+        font-size: 1.3em;
+        margin-bottom: 3px;
+      }
+      input {
+        display: block;
+        height: 40px;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      div.acceptance {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        input {
+          display: inline;
+          width: 40px;
+        }
+        span {
+          padding-top: 7px;
+        }
+      }
+      button:last-of-type {
+        color: white;
+        width: 100%;
+        height: 40px;
+        background-color: #63AD41;
+        transition: all 0.5s;
+      }
+      button:last-of-type:hover {
+        background-color: #285A17;
+
+      }
+    }
   }
 }
