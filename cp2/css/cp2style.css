@@ -5,6 +5,7 @@
 body {
   background-color: lightgrey;
   font-family: sans-serif;
+  color: white
 }
 
 #wrapper {
@@ -21,6 +22,7 @@ body {
 
 header {
   grid-column-start: span 3;
+  display: flex;
 }
 
 header>img {
@@ -30,9 +32,25 @@ header>img {
 
 menu {
   grid-column-start: span 3;
+  display: flex;
+  background-color: #0E76BC;
+  height: 40px;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
-.pic {
+menu>a {
+  text-decoration: none;
+  color: inherit;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+menu>a:hover {
+  color: #8DC63F;
+}
+
+div>img {
   grid-column-start: span 2;
 }
 
