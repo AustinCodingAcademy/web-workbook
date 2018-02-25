@@ -48,12 +48,13 @@ function myFunction() {
         Next Generation Artificial Intelligence and Robotics for manufacturing and battlefield applications.
 
       </section>
+      <!-- end top navbar -->
 
     </main>
-
+<!-- Industry Symbols -->
     <section class="symbols">
 
-      <h1>Applications accross Multiple Industries and Platforms<br></h1>
+      <h1>Cross Platform Applications and Connectivity<br></h1>
       <div class="smedia">
         <a href="#"><i class="fas fa-industry"></i></a>
        <a href="#"><i class="fas fa-fighter-jet"></i></a>
@@ -64,10 +65,82 @@ function myFunction() {
      </div>
    </section>
 
+   <section class="picbox">
+     <div class="gallery">
+  <a target="_blank" href="autonomous.jpg">
+    <img src="./images/autonomous.jpg" alt="Drone" width="300" height="200">
+  </a>
+  <div class="desc">Autonomous Systems</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="cyber.jpg">
+  <img src="./images/cyber.jpg" alt="Cyber Warfare" width="300" height="200">
+  </a>
+  <div class="desc">Next Generation Warfare</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="logistics.jpg">
+    <img src="./images/logistics.jpg" alt="Logistics and Design" width="300" height="200">
+  </a>
+  <div class="desc">Logistics and Design</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="battlefield.jpg">
+    <img src="./images/battlefield.jpg" alt="Computer Warfare" width="300" height="200">
+  </a>
+  <div class="desc">Battlefield Supremacy</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="Careers.jpg">
+    <img src="./images/careers.jpg" alt="Office Scene" width="300" height="200">
+  </a>
+  <div class="desc">Careers with Unlimited Potential</div>
+</div>
+
+   </section>
+
 
     <section class="skynet">
-      <h1 class="headerwords">Coming in 2019! <br>The newest innovation in global
+      <h1 class="headerwords">Coming Sept 5, 2018! <br>The newest innovation in global
         AI connectivity. <br> <br><a href="#Skynet">SKYNET</a>-The Future is Now!</h1>
+        <!-- Countdown timer instructons below -->
+        <p id="demo"></p>
+
+        <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Sep 5, 2018 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+        </script>
+
         <img src="./images/skynet.jpg"></img>
 
     </section>
