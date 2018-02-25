@@ -198,8 +198,9 @@ Main styles
 
 .submenu-topics {
   background-color: #555555;
-  letter-spacing: .07em;
+  letter-spacing: 0.07em;
   margin: 0px;
+  font-size: 90%;
 }
 
 .submenu-topics-list {
@@ -229,8 +230,13 @@ Main styles
 .submenu-topics li.first {
   padding-right: 30px;
   background-color: #5d7fb9;
-  background: /* linear-gradient(0deg, transparent 10px, #5d7fb9 0) top left, */
-  linear-gradient(225deg, transparent 15px, #5d7fb9 0) top right, linear-gradient(315deg, transparent 15px, #5d7fb9 0) bottom right, linear-gradient(45deg, transparent 10px, #5d7fb9 0) bottom left;
-  background-size: 50% 50%;
+  background: linear-gradient(225deg, #555555 15px, #5d7fb9 0) top right, linear-gradient(135deg, #555555 15px, #5d7fb9 0) bottom right, linear-gradient(315deg, #5d7fb9, #5d7fb9 0) top left, linear-gradient(45deg, #5d7fb9, #5d7fb9 0) bottom left;
+  background: -moz-linear-gradient(225deg, #555555 15px, #5d7fb9 0) top right, -moz-linear-gradient(135deg, #555555 15px, #5d7fb9 0) bottom right, -moz-linear-gradient(315deg, #5d7fb9, #5d7fb9 0) top left, -moz-linear-gradient(45deg, #5d7fb9, #5d7fb9 0) bottom left;
+  background: -o-linear-gradient(225deg, #555555 15px, #5d7fb9 0) top right, -o-linear-gradient(135deg, #555555 15px, #5d7fb9 0) bottom right, -o-linear-gradient(315deg, #5d7fb9, #5d7fb9 0) top left, -o-linear-gradient(45deg, #5d7fb9, #5d7fb9 0) bottom left;
+  background: -webkit-linear-gradient(225deg, #555555 15px, #5d7fb9 0) top right, -webkit-linear-gradient(135deg, #555555 15px, #5d7fb9 0) bottom right, -webkit-linear-gradient(315deg, #5d7fb9, #5d7fb9 0) top left, -webkit-linear-gradient(45deg, #5d7fb9, #5d7fb9 0) bottom left;
+  background-position: top right, bottom right, top left, bottom left;
+  -moz-background-size: 51% 51%;
+  -webkit-background-size: 51% 51%;
+  background-size: 51% 51%;
   background-repeat: no-repeat;
 }
