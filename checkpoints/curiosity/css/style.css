@@ -1,6 +1,7 @@
 body {
   background-color: #000000;
   font-family: Titillium Web, Helvetica, Arial, sans-serif;
+  max-width: 1400px;
 }
 
 /*
@@ -65,9 +66,7 @@ Heading styles
   line-height: 27px;
 }
 
-/*
-Triggers menu on hover instead of click, but breaks on submenus
-*/
+/* trigger menu on hover */
 
 .dropdown:hover>.dropdown-menu {
   display: block;
@@ -110,6 +109,7 @@ form.search-box {
   width: 156px;
   z-index: 1;
   height: 39px;
+  margin-right: 2em;
 }
 
 .form-control:focus {
@@ -186,7 +186,8 @@ Main styles
 */
 
 .page-banner {
-  background-image: url("../img/curiosity-banner.jpg");
+  background: url("../img/curiosity-banner.jpg") no-repeat;
+  background-size: cover;
   height: 215px;
   display: flex;
   align-items: flex-end;
@@ -239,9 +240,9 @@ Main styles
   background: -o-linear-gradient(225deg, #555555 15px, #5d7fb9 0) top right, -o-linear-gradient(135deg, #555555 15px, #5d7fb9 0) bottom right, -o-linear-gradient(315deg, #5d7fb9, #5d7fb9 0) top left, -o-linear-gradient(45deg, #5d7fb9, #5d7fb9 0) bottom left;
   background: -webkit-linear-gradient(225deg, #555555 15px, #5d7fb9 0) top right, -webkit-linear-gradient(135deg, #555555 15px, #5d7fb9 0) bottom right, -webkit-linear-gradient(315deg, #5d7fb9, #5d7fb9 0) top left, -webkit-linear-gradient(45deg, #5d7fb9, #5d7fb9 0) bottom left;
   background-position: top right, bottom right, top left, bottom left;
-  -moz-background-size: 51% 51%;
-  -webkit-background-size: 51% 51%;
-  background-size: 51% 51%;
+  -moz-background-size: 52% 52%;
+  -webkit-background-size: 52% 52%;
+  background-size: 52% 52%;
   background-repeat: no-repeat;
 }
 
@@ -397,6 +398,10 @@ section#main-content {
   align-items: flex-end;
 }
 
+.fa-circle {
+  color: #6785d5;
+}
+
 .card .headline {
   height: 100%;
   width: 100%;
@@ -413,6 +418,13 @@ section#main-content {
 
 .card .headline .title:hover {
   background-color: #ffffff;
+}
+
+.card .headline .title a:link, .card .headline .title a:visited, .card .headline .title a:hover {
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
 }
 
 div.card .headline .tag {
@@ -553,4 +565,18 @@ footer #footer-links li a {
 
 footer #footer-links li a:hover {
   color: inherit;
+}
+
+@media screen and (min-width: 1400px) {
+  header {
+    grid-area: header;
+  }
+  main {
+    grid-area: main;
+  }
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1400px 1fr;
+    grid-template-areas: ". header ." ". main .";
+  }
 }
