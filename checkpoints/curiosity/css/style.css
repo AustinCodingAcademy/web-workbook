@@ -6,48 +6,16 @@ body {
 
 /*
 -------------------
-Heading styles
+Heading (top nav) styles
 -------------------
 */
 
+/* common topnav styles */
+
 .navbar {
   padding: 0rem;
-}
-
-.navbar-dark {
-  background: url("../img/starfield-banner.jpg") #000000 repeat-x;
-  color: #fff;
-}
-
-.navbar-dark .navbar-nav .nav-item .nav-link {
-  color: #fff;
-}
-
-.navbar-dark .navbar-nav .nav-item:hover {
-  color: #fff;
-  background-color: #15418c;
-}
-
-.navbar-nav li.nav-item {
-  padding: 0px 5px;
-}
-
-.navbar-nav li.nav-item:not(:first-child)::after {
-  content: "";
-  position: absolute;
-  top: 20px;
-  bottom: 20px;
-  left: 0px;
-  border-left: 1px solid #555555;
-}
-
-.nasa-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.navbar {
   min-height: 85px;
+  background: url("../img/starfield-banner.jpg") #000000 repeat-x;
 }
 
 .navbar-brand {
@@ -60,25 +28,19 @@ Heading styles
   width: 80px;
 }
 
-.navbar-nav>li>a {
-  padding-top: 29px;
-  padding-bottom: 29px;
-  line-height: 27px;
+.nasa-nav {
+  display: flex;
+  justify-content: space-between;
 }
 
-/* trigger menu on hover */
-
-.dropdown:hover>.dropdown-menu {
-  display: block;
+.nasa-nav-menu {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.dropdown>.dropdown-toggle:active {
-  pointer-events: none;
-}
-
-.dropdown-toggle::after {
-  display: none;
-}
+/* collapsed topnav bar styles */
 
 .navbar-dark .navbar-toggler {
   border-color: #000;
@@ -92,6 +54,16 @@ Heading styles
   background-image: url("../img/menu.png") !important;
 }
 
+/* search box */
+
+form.search-box {
+  position: relative;
+  width: 156px;
+  z-index: 1;
+  height: 39px;
+  margin-right: 1em;
+}
+
 form.search-box label.element-invisible {
   width: 1px;
   right: 0;
@@ -102,14 +74,6 @@ form.search-box label.element-invisible {
   clip: rect(1px 1px 1px 1px);
   overflow: hidden;
   height: 1px;
-}
-
-form.search-box {
-  position: relative;
-  width: 156px;
-  z-index: 1;
-  height: 39px;
-  margin-right: 2em;
 }
 
 .form-control:focus {
@@ -154,29 +118,6 @@ form.search-box input[type="submit"] {
 
 form.search-box input[type="submit"]:hover {
   cursor: pointer;
-}
-
-.dropdown-menu {
-  border-radius: 0px;
-  margin: 0rem;
-  padding: 0rem;
-  border: none;
-  background-color: #15418c;
-}
-
-.dropdown-menu a {
-  color: #fff;
-}
-
-.dropdown-menu a:hover {
-  background-color: #072f54;
-  color: #fff;
-  border: 1px solid #072f54;
-}
-
-.dropdown-divider {
-  margin: 0rem;
-  padding: 0rem;
 }
 
 /*
@@ -248,81 +189,18 @@ Main styles
 
 /* Aside styles - left navigation */
 
-aside {}
-
-.sidebar {
-  background-color: #252931;
-  color: #fff;
-  border-right: 15px solid #000;
-  height: 580px;
-  width: 325px;
-  position: absolute;
-  z-index: 3;
-  padding: 0px;
-  margin-top: -16px;
-  overflow-y: scroll;
-}
-
-.sidebar section {
-  border-bottom: 1px solid #303540;
-}
-
-.sidebar .inner {
-  font-size: 15px;
-  padding-bottom: 135px;
-}
-
-.content {
-  color: #fff;
-  padding: 15px;
-}
-
-.content .icon-wrapper {
-  line-height: 32px;
-  height: 32px;
-  width: 32px;
-  border-radius: 0%;
-  display: inline-block;
-  transition: all .5s;
-}
-
-.content .icon-wrapper:hover {
-  transform: translateY(-5px);
-}
-
-.icon-facebook {
-  background-color: #3b5998;
-  color: #fff;
-  padding: 6px 1px;
-  margin: 15px 1px;
-}
-
-.icon-twitter {
-  background-color: #1da1f2;
-  color: #fff;
-  padding: 6px 1px;
-  margin: 15px 1px;
-}
-
-.sidebar .content li {
-  list-style-type: none;
-  padding: 10px 15px;
-}
-
-.sidebar .content li a {
-  color: #fff;
-}
-
-.sidebar .heading {
-  background-color: #303540;
-  padding: 10px;
-  display: inline-block;
+aside {
+  display: none;
 }
 
 /* main styles */
 
+.page-banner {
+  display: none;
+}
+
 main #wrapper {
-  margin-left: 325px;
+  margin-left: 5px;
 }
 
 div.card:nth-child(1) {
@@ -375,9 +253,9 @@ div.card:nth-child(10) {
 
 section#main-content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   grid-auto-rows: 300px;
-  grid-template-areas: "card1 card1 card1 card2" "card3 card4 card5 card5" "card6 card6 card5 card5" "card7 card8 card9 card10";
+  grid-template-areas: "card1" "card2" "card3" "card4" "card5" "card6" "card7" "card8" "card9" "card10";
 }
 
 .card {
@@ -567,15 +445,273 @@ footer #footer-links li a:hover {
   color: inherit;
 }
 
-@media screen and (min-width: 1400px) {
+/*
+-------------------  -------------------  -------------------
+                         MEDIA QUERIES
+-------------------  -------------------  -------------------
+*/
+
+/* tweak point - search becomes visible for larger phones */
+
+@media (min-width: 520px) {
+  form.search-box {
+    position: relative;
+    width: 156px;
+    z-index: 1;
+    height: 39px;
+    margin-right: 1em;
+  }
+  form.search-box label.element-invisible {
+    width: 1px;
+    right: 0;
+  }
+  .element-invisible {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    overflow: hidden;
+    height: 1px;
+  }
+  .form-control:focus {
+    box-shadow: none;
+  }
+  form.search-box input[type="text"] {
+    color: #fff;
+    position: absolute;
+    cursor: text;
+    width: 156px;
+    font-size: 90%;
+    padding: 6px;
+    border-radius: 0rem;
+    background-color: #333333;
+    border-color: #333333;
+    color: #a1a1a1;
+  }
+  fom.search-box input[type="text"]:focus {
+    z-index: 1;
+    background-color: #333333;
+    width: 156px;
+    cursor: text;
+    font-style: italic;
+  }
+  form.search-box input[type="submit"] {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    padding: 0px;
+    position: absolute;
+    margin-top: 5px;
+    top: 0;
+    right: 0;
+    text-indent: -10000px;
+    z-index: 2;
+    background: url("../img/search.svg") center center no-repeat;
+    border: none;
+  }
+  form.search-box input[type="submit"]:hover {
+    cursor: pointer;
+  }
+}
+
+/*
+-------------------
+Major breakpoint
+Medium layout.   Banner image is visible; medium card layout
+-------------------
+*/
+
+@media (min-width: 765px) {
+  .page-banner {
+    display: block;
+  }
+  section#main-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px;
+    grid-template-areas: "card1 card1" "card2 card3" "card4 card5" "card6 card7" "card8 card9" "card10 .";
+  }
+}
+
+/*
+  -------------------
+  Major breakpoint
+  Large layout.   Topnav bar is expanded; sidenav bar is visible; large card layout
+  -------------------
+  */
+
+@media (min-width: 990px) {
+  /* Topnav styles */
+  .navbar-dark .navbar-nav .nav-item .nav-link {
+    color: #fff;
+  }
+  .navbar-dark .navbar-nav .nav-item:hover {
+    color: #fff;
+    background-color: #15418c;
+  }
+  .navbar-nav li.nav-item {
+    padding: 0px 5px;
+  }
+  .navbar-nav li.nav-item:not(:first-child)::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 0px;
+    border-left: 1px solid #555555;
+  }
+  .navbar-nav>li>a {
+    padding-top: 29px;
+    padding-bottom: 29px;
+    line-height: 27px;
+    font-size: .8em;
+  }
+  .search-box {
+    order: 1;
+    margin-right: 2em;
+  }
+  /* trigger menu on hover */
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  .dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+  }
+  .dropdown-toggle::after {
+    display: none;
+  }
+  .dropdown-menu {
+    border-radius: 0px;
+    margin: 0rem;
+    padding: 0rem;
+    border: none;
+    background-color: #15418c;
+  }
+  .dropdown-menu a {
+    color: #fff;
+  }
+  .dropdown-menu a:hover {
+    background-color: #072f54;
+    color: #fff;
+    border: 1px solid #072f54;
+  }
+  .dropdown-divider {
+    margin: 0rem;
+    padding: 0rem;
+  }
+  /* Sidenav styles */
+  aside {
+    display: block;
+  }
+  .sidebar {
+    background-color: #252931;
+    color: #fff;
+    border-right: 15px solid #000;
+    height: 580px;
+    width: 325px;
+    position: absolute;
+    z-index: 3;
+    padding: 0px;
+    margin-top: -16px;
+    overflow-y: scroll;
+  }
+  .sidebar section {
+    border-bottom: 1px solid #303540;
+  }
+  .sidebar .inner {
+    font-size: 15px;
+    padding-bottom: 135px;
+  }
+  .content {
+    color: #fff;
+    padding: 15px;
+  }
+  .content .icon-wrapper {
+    line-height: 32px;
+    height: 32px;
+    width: 32px;
+    border-radius: 0%;
+    display: inline-block;
+    transition: all .5s;
+  }
+  .content .icon-wrapper:hover {
+    transform: translateY(-5px);
+  }
+  .icon-facebook {
+    background-color: #3b5998;
+    color: #fff;
+    padding: 6px 1px;
+    margin: 15px 1px;
+  }
+  .icon-twitter {
+    background-color: #1da1f2;
+    color: #fff;
+    padding: 6px 1px;
+    margin: 15px 1px;
+  }
+  .sidebar .content li {
+    list-style-type: none;
+    padding: 10px 15px;
+  }
+  .sidebar .content li a {
+    color: #fff;
+  }
+  .sidebar .heading {
+    background-color: #303540;
+    padding: 10px;
+    display: inline-block;
+  }
+  /* Card layout */
+  main #wrapper {
+    margin-left: 325px;
+  }
+  section#main-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 300px;
+    grid-template-areas: "card1 card1 card1 card2" "card3 card4 card5 card5" "card6 card6 card5 card5" "card7 card8 card9 card10";
+  }
+}
+
+/*  Tweak point - topnav text is small*/
+
+@media (min-width: 1030px) {
+  .navbar-nav>li>a {
+    font-size: .9em;
+  }
+}
+
+/*  Tweak point - topnav text is large */
+
+@media (min-width: 1130px) {
+  .navbar-nav>li>a {
+    font-size: 1.1em;
+  }
+}
+
+/* Tweak point - topnav text ix extra large.  */
+
+@media (min-width: 1270px) {
+  .navbar-nav>li>a {
+    font-size: 1.3em;
+  }
+}
+
+/*
+-------------------
+Major breakpoint
+Maximum width.  Content area should be centered within the page.
+-------------------
+*/
+
+@media (min-width: 1400px) {
   header {
     grid-area: header;
   }
   main {
     grid-area: main;
   }
-  body {
+  .pagewrapper {
     display: grid;
+    width: 100%;
     grid-template-columns: 1fr 1400px 1fr;
     grid-template-areas: ". header ." ". main .";
   }
