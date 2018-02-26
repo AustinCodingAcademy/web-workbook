@@ -243,32 +243,34 @@ Main styles
 
 /* Aside styles - left navigation */
 
-aside {
+aside {}
 
-}
 .sidebar {
   background-color: #252931;
-  color:#fff;
+  color: #fff;
   border-right: 15px solid #000;
   height: 690px;
   width: 325px;
   position: absolute;
   z-index: 3;
-  padding:0px;
-  margin-top:-16px;
+  padding: 0px;
+  margin-top: -16px;
 }
+
 .sidebar section {
   border-bottom: 1px solid #303540;
 }
+
 .sidebar .inner {
-  font-size:15px;
-  padding-bottom:135px;
+  font-size: 15px;
+  padding-bottom: 135px;
 }
 
 .content {
   color: #fff;
   padding: 15px;
 }
+
 .content .icon-wrapper {
   line-height: 32px;
   height: 32px;
@@ -286,61 +288,215 @@ aside {
   background-color: #3b5998;
   color: #fff;
   padding: 6px 1px;
-  margin:15px 1px;
-
+  margin: 15px 1px;
 }
+
 .icon-twitter {
   background-color: #1da1f2;
   color: #fff;
   padding: 6px 1px;
-  margin:15px 1px;
-
+  margin: 15px 1px;
 }
+
 .sidebar .content li {
   list-style-type: none;
   padding: 10px 15px;
 }
+
 .sidebar .content li a {
   color: #fff;
 }
+
 .sidebar .heading {
   background-color: #303540;
-  padding:10px;
+  padding: 10px;
   display: inline-block;
 }
 
 /* main styles */
 
 main #main-content {
-  margin-left: 340px;
+  margin-left: 325px;
 }
 
+div.card:nth-child(1) {
+  grid-area: card1;
+  background-image: url("../img/card-crystal.jpg");
+}
 
+div.card:nth-child(2) {
+  grid-area: card2;
+}
 
+div.card:nth-child(3) {
+  grid-area: card3;
+}
+
+div.card:nth-child(4) {
+  grid-area: card4;
+  background-image: url("../img/card-mount-sharp.jpg");
+}
+
+div.card:nth-child(5) {
+  border: 8px solid blue;
+  grid-area: card5;
+}
+
+div.card:nth-child(6) {
+  grid-area: card6;
+  background-image: url("../img/card-maven.jpg");
+}
+
+div.card:nth-child(7) {
+  grid-area: card7;
+  background-image: url("../img/card-mars-podcast.jpg");
+}
+
+div.card:nth-child(8) {
+  grid-area: card8;
+  background-image: url("../img/card-ridge-color.jpg");
+}
+
+div.card:nth-child(9) {
+  grid-area: card9;
+  background-image: url("../img/card-drilling.jpg");
+}
+
+div.card:nth-child(10) {
+  border: 8px solid red;
+  grid-area: card10;
+}
+
+section#main-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 300px;
+  grid-template-areas: "card1 card1 card1 card2" "card3 card4 card5 card5" "card6 card6 card5 card5" "card7 card8 card9 card10";
+}
+
+.card {
+  /* height: 300px; */
+  border-radius: 0px;
+  background-color: #000000;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 7px;
+  overflow-y: hidden;
+}
+
+.card .card-canvas {
+  height: 100%;
+}
+
+.card .headline {
+  height: 300px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card .headline .title {
+  padding: 6px 12px;
+  background-color: #ffffffcc;
+  font-weight: 600;
+}
+
+.card .headline .title:hover {
+  background-color: #ffffff;
+}
+
+div.card .headline .tag {
+  background-color: #5d7fb9d9;
+  font-weight: 600;
+  padding: 6px 12px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.card .headline .tag a {
+  color: #ffffffe6;
+}
+
+.card .headline .tag:hover {
+  background-color: #5d7fb9;
+}
+
+.card .headline .tag a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.twitter {
+  background-color: #000;
+  background-image: none;
+}
+
+.twitter a {
+  background-color: transparent;
+}
+
+.snippit {
+  background-image: none;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.snippit .content p {
+  color: #000;
+  font-size: .8em;
+  overflow: hidden;
+}
+
+.snippit::after {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3em;
+  content: "";
+  background: -webkit-linear-gradient(180deg, transparent, #ffffff) bottom;
+  background: -moz-linear-gradient(180deg, transparent, #ffffff) bottom;
+  background: linear-gradient(180deg, transparent, #ffffff) bottom;
+  background-position: bottom;
+}
+
+.snippit .fade {
+  position: absolute;
+  bottom: 0;
+  height: 300px;
+  width: 100%;
+  background: -webkit-linear-gradient(pink, blue);
+}
 
 /*  footer styles*/
+
 footer {
   width: 100%;
   padding: 2em .7em 3em;
 }
+
 #footer-info .logo {
   float: left;
 }
+
 footer #status {
   color: #fff;
   line-height: 1.2em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  clear:none;
-
+  clear: none;
 }
+
 #status span {
-  padding:1px 3px;
+  padding: 1px 3px;
   font-family: Helvetica, Arial, sans-serif;
   font-size: .95em;
   font-weight: bold;
 }
+
 footer #footer-links {
   color: #5d7fb9;
   display: flex;
@@ -348,16 +504,19 @@ footer #footer-links {
   justify-content: flex-end;
   margin: 20px;
 }
+
 footer #footer-links li {
   list-style-type: none;
   padding-left: 30px;
 }
+
 footer #footer-links li a {
   color: #5d7fb9;
   font-weight: bold;
   font-size: .9em;
   font-family: Helvetica, Arial, sans-serif;
 }
-footer #footer-links li a:hover{
+
+footer #footer-links li a:hover {
   color: inherit;
 }
