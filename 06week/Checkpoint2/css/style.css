@@ -4,11 +4,13 @@ body {
 }
 
 
+
+
 .grid-container1 {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 0px;
-  grid-template-areas: "box1" "box2" "box3" "box4" "box5" "box6" "anaconda-cloud" "community" "social-media" "footer"
+  grid-gap: 10px;
+  grid-template-areas: "box1" "box2" "box3" "box4" "box5" "box6" "box7" "anaconda-cloud" "community" "social-media" "footer"
 }
 
 
@@ -40,8 +42,8 @@ body {
 
 .box4 {
   grid-area: box4;
-  /* display: flex;
-  flex-wrap: wrap; */
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .box5 {
@@ -88,14 +90,152 @@ body {
 
 .community {
   grid-area: community;
-  /* display: flex;
-  flex-wrap: wrap; */
+
 }
 
 .social-media {
   grid-area: social-media;
-  /* display: flex;
-  flex-wrap: wrap; */
+
+}
+
+/* .box img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  padding: 0px 0px 0px 0px;
+} */
+
+.cloud-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 h2{
+  font-family: helvetica;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #222222;
+  text-align: center;
+}
+
+.box1 p {
+  font-family: helvetica;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 3.2px 0px 8px 0px;
+  color: #222222;
+  text-align: center;
+}
+
+.box3 h1 {
+  font-family: helvetica;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 38px;
+  color: #222222;
+  text-align: center;
+}
+
+.box3 h2 {
+  font-family: helvetica;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #222222;
+  text-align: center;
+}
+
+.box4 h4 {
+  font-family: helvetica;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #222222;
+  text-align: center;
+}
+
+.box4 p {
+  font-family: helvetica;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #222222;
+  text-align: center;
+}
+
+.box5 h4 {
+  font-family: helvetica;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #222222;
+  text-align: center;
+}
+
+.box5 p {
+  font-family: helvetica;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #222222;
+  text-align: center;
+}
+
+.box6 h4 {
+  font-family: helvetica;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #222222;
+  text-align: center;
+}
+
+.box6 p {
+  font-family: helvetica;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #222222;
+  text-align: center;
+}
+
+.box7 h4 {
+  font-family: helvetica;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #222222;
+  text-align: center;
+}
+
+.box7 p {
+  font-family: helvetica;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #222222;
+  text-align: center;
+}
+
+.box img {
+  max-width: 80px;
+  max-height:  80px;
 }
 
 
@@ -142,15 +282,28 @@ body {
 }
 
 .social-media {
-  display: flex;
   background-color: #414042;
-  align-items: center;
-  justify-content: center;
+
 }
+
+.social-media ul{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+
+
+}
+
+.social-media li{
+  padding 10px;
+}
+
 
 .social-media li a{
   color: white;
-
 }
 
 footer p {
@@ -180,17 +333,13 @@ footer p {
 /* Medium and up (Tablets) */
 
 @media (min-width: 768px) {
-  .grid-container1 {
+  /* .grid-container1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid=gap: 10px;
     grid-template-areas: "head head head head" "box1 box1 box2 box2" "box1 box1 box2 box2" "box3 box3 box4 box5" "box3 box3 box4 box5" "box3 box3 box6 box6" "box7 box8 box9 box10" "box7 box8 box9 box10" "box7 box8 box9 box10"
-  }
-  /* .box.box1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
   } */
+
 
 
 }
