@@ -4,25 +4,123 @@
     <meta charset="utf-8">
     <link rel="reset" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="javascript" href="./js/script.js">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Checkpoint 2</title>
   </head>
   <body>
-    <header class="ac-header">
-      <img src="./images/anacondacloud_logo_green.png" alt="" style="width: 100px; height: 30px">
-      <nav class="ac-nav">
+    <!-- header logo and nav -->
+    <header class="ac-header flex space-between">
+      <img class="ac-head-logo" src="./images/anacondacloud_logo_green.png" alt="" style="width: 180px; height: 30px">
+      <nav class="ac-nav" id="myAc-nav">
+        <a href="#">Gallery</a>
+        <a href="#">About</a>
+        <a href="#">Pricing</a>
+        <a href="#">Anaconda</a>
+        <a href="#">Help</a></li>
+        <a href="#">Download Anaconda</a>
+        <a href="#">Sign In</a>
+        <a href="javascript:void(0);" class="ac-icon" onclick="myFunction()">&#9776;</a>
       </nav>
     </header>
-    <div class="ac-log">
-
+    <!-- page logo, search, and sign up/in -->
+    <div class="ac-logo-login-search">
+      <div class="ac-search-bar">
+        <input class="ac-search" type="search" name="search" value="" placeholder="Search Anaconda Cloud">
+        <button class="ac-search-button" type="button" name="button"><i class="fas fa-search"></i></button>
+      </div>
+      <div class="ac-logo-big">
+        <img src="./images/anacondacloud_logo_V_green.png">
+        <h3>Where packages, notebooks, projects and environments are shared.</h3>
+        <h5>Powerful collaboration and package management for open source and private projects.</h5>
+        <h5>Public projects and notebooks are always free.</h5>
+        <h5>Private plans start at $7/month.</h5>
+      </div>
+      <!-- Signin/up -->
+      <div class="ac-login">
+        <div class="ac-signupin">
+          <button class="ac-signup" type="button" name="button">Sign Up</button>
+          <button class="ac-signin" type="button" name="button">Sign In</button>
+        </div>
+        <h3>New to Anaconda Cloud? Sign up!</h3>
+        <div class="ac-useremail">
+          <input class="username" type="text" name="" value="" placeholder="Pick a username">
+          <input class="email" type="text" name="" value="" placeholder="Your email">
+        </div>
+        <h6>Use at least one lowercase letter, one numeral, and seven characters.</h6>
+        <div class="ac-passwords">
+          <input class="create-password" type="text" name="" value="" placeholder="Create a password">
+          <input class="confirm-password" type="text" name="" value="" placeholder="Confirm password">
+        </div>
+        <h6><input type="checkbox" name="" value="">I accept the <a class="ac-check" href="#">Terms & Conditions</a></h6>
+        <button class="ac-big-signup" type="button" name="button">Sign Up</button>
+        <h6>By clicking "Sign up!" you agree to our privacy policy and terms of service. We will send you account related emails occasionally.</h6>
+      </div>
     </div>
+    <!-- info, colla,b global, private, and community -->
     <div class="ac-info">
-
+      <h1>Why you'll love Anaconda Cloud</h1>
+      <h3>Making it easy to share packages, notebooks, projects and environments to be more collaborative.</h3>
     </div>
-    <div class="ac-social">
-
+    <div class="ac-collab">
+      <i id="ac-icon" class="fas fa-retweet fa-5x"></i>
+      <h4>Great collaboration starts with communication.</h4>
+      <h4>Simplified publishing of reproducible notebooks including the runtime environment.</h4>
+    </div>
+    <div class="ac-global">
+      <i id="ac-icon" class="fas fa-globe fa-5x"></i>
+      <h4>Friction-less deployment across the globe.</h4>
+      <h4>Make your working environments portable.</h4>
+    </div>
+    <div class="ac-private">
+      <i id="ac-icon" class="fas fa-unlock-alt fa-5x"></i>
+      <h4>Move from public to private easily.</h4>
+      <h4>Control access and authorization easily with private plan.</h4>
+    </div>
+    <div class="ac-community">
+      <i id="ac-icon" class="fas fa-users fa-5x"></i>
+      <h4>Fastest growing open source community.</h4>
+      <h4>Share your projects with the world, get feedback, and contribute to repositories.</h4>
+    </div>
+    <!-- Learn more -->
+    <div class="ac-learn-more">
+      <h1>Want to use Anaconda on your servers?</h1>
+      <button type="button" name="button">Learn More</button>
+      <img class="ac-teaser" src="./images/teaser-img.png" alt="" style="width:75%">
+    </div>
+    <!-- footer, cloud links, and community links -->
+    <div class="ac-cloud-comm">
+      <div class="ac-cloud">
+        <h3>Anaconda Cloud</h3>
+        <a href="#">Gallery</a>
+        <a href="#">About</a>
+        <a href="#">Pricing</a>
+        <a href="#">Anaconda</a>
+        <a href="#">Help</a>
+        <a href="#">Download Anaconda</a>
+        <a href="#">Sign In</a>
+      </div>
+      <div class="ac-comm-foot">
+        <h3>Community</h3>
+        <a href="#">Anaconda Community</a>
+        <a href="#">Open Source</a>
+        <a href="#">Num FOCUS</a>
+        <a href="#">Support</a>
+        <a href="#">Developer Blog</a>
+      </div>
+    </div>
+    <div class="ac-links">
+      <a href="#"><i id="ac-foot-links1" class="fab fa-twitter fa-2x"></i></a>
+      <a href="#"><i id="ac-foot-links2" class="fab fa-facebook-f fa-2x"></i></a>
+      <a href="#"><i id="ac-foot-links1" class="fab fa-slideshare fa-2x"></i></a>
+      <a href="#"><i id="ac-foot-links2" class="fab fa-linkedin-in fa-2x"></i></a>
+      <a href="#"><i id="ac-foot-links1" class="fab fa-instagram fa-2x"></i></a>
+      <a href="#"><i id="ac-foot-links2" class="fab fa-youtube fa-2x"></i></a>
+      <a href="#"><i id="ac-foot-links1" class="fab fa-github-alt fa-2x"></i></a>
     </div>
     <footer class="ac-footer">
+      <p>PRIVACY POLICY  |  EULA (Anaconda Cloud v2.33.12) © 2018 Anaconda, Inc. All Rights Reserved.</p>
     </footer>
   </body>
 </html>
