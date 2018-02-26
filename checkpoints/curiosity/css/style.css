@@ -122,24 +122,13 @@ form.search-box input[type="submit"]:hover {
 
 /*
 -------------------
-Main styles
+banner and subnav styles
 -------------------
 */
 
-.page-banner {
-  background: url("../img/curiosity-banner.jpg") no-repeat;
-  background-size: cover;
-  height: 215px;
-  display: flex;
-  align-items: flex-end;
-}
 
-.page-banner .headline {
-  color: #fff;
-  font-size: 200%;
-  margin-left: 20px;
-  margin-bottom: 30px;
-  font-weight: bold;
+.page-banner {
+  display: none;
 }
 
 .submenu-topics {
@@ -193,11 +182,8 @@ aside {
   display: none;
 }
 
-/* main styles */
+/* Main styles */
 
-.page-banner {
-  display: none;
-}
 
 main #wrapper {
   margin-left: 5px;
@@ -520,9 +506,23 @@ Medium layout.   Banner image is visible; medium card layout
 */
 
 @media (min-width: 765px) {
+
   .page-banner {
-    display: block;
+    background: url("../img/curiosity-banner.jpg") no-repeat;
+    background-size: cover;
+    height: 215px;
+    display: flex;
+    align-items: flex-end;
   }
+
+  .page-banner .headline {
+    color: #fff;
+    font-size: 200%;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+
   section#main-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

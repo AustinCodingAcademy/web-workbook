@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Original page at https://www.nasa.gov/mission_pages/msl/index.html -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Mars Science Laboratory - Curiosity | NASA</title>
+
+  <meta name="description" content="Coding class project.  Trying to replicate the existing NASA Mars Curiosity page, which is impressive from all angles.">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+  <!-- stylesheets-->
+  <!-- clear browser defaults -->
+  <link rel="stylesheet" href="../../css/reset.css">
+  <!-- core styles: bootstrap, fontawesome, google fonts -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style-overview.css">
+
+  <!-- scripts -->
+  <!-- core scripts: query, boostrap -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+</head>
+
+<body>
+  <div class="pagewrapper">
+    <header>
+      <nav class="nasa-nav navbar navbar-expand-lg navbar-dark bg-dark d-print">
+        <div class="nasa-nav-logo">
+          <a class="navbar-brand" href="https://www.nasa.gov/"><img src="./img/nasa-logo.svg"  alt="" title="NASA"></a>
+        </div>
+        <div class="nasa-nav-menu">
+
+          <form class="search-box" role="search" action="https://nasasearch.nasa.gov/search">
+            <label for="query" class="element-invisible">Search NASA.gov</label>
+            <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-hidden="false" id="query" name="query" tabindex="1">
+            <input disabled="" value="Search" type="submit">
+          </form>
+
+          <div class="nasa-nav-dropdown">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-supported-content" aria-controls="navbar-supported-content" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+            <div class="collapse navbar-collapse" id="navbar-supported-content">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown-topics" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span>Topics</span>
+</a>
+                  <div class="dropdown-menu" aria-labelledby="navbar-dropdown-topics">
+                    <a class="dropdown-item" href="/mission_pages/station/main/index.html">International Space Station</a>
+                    <a class="dropdown-item" href="/topics/journeytomars/index.html">Journey to Mars</a>
+                    <a class="dropdown-item" href="/topics/earth/index.html">Earth</a>
+                    <a class="dropdown-item" href="/topics/technology/index.html">Technology</a>
+                    <a class="dropdown-item" href="/topics/aeronautics/index.html">Aeronautics</a>
+                    <a class="dropdown-item" href="/topics/solarsystem/index.html">Solar System and Beyond</a>
+                    <a class="dropdown-item" href="/offices/education/about/index.html">Education</a>
+                    <a class="dropdown-item" href="/topics/history/index.html">History </a>
+                    <a class="dropdown-item" href="/topics/benefits/index.html">Benefits to You</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/tags">All Topics A-Z</a>
+                  </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown-missions" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span>Missions</span>
+</a>
+                  <div class="dropdown-menu" aria-labelledby="navbar-dropdown-missions">
+                    <a class="dropdown-item" href="/mission_pages/station/main/index.html">International Space Station</a>
+                    <a class="dropdown-item" href="/mission_pages/juno/main/index.html">Juno: Mission at Jupiter</a>
+                    <a class="dropdown-item" href="/mission_pages/newhorizons/main/index.html">New Horizons: Pluto and Beyond</a>
+                    <a class="dropdown-item" href="/mission_pages/msl/index.html">Curiosity Mars Rover</a>
+                    <a class="dropdown-item" href="/mission_pages/hubble/main/index.html">Hubble Space Telescope</a>
+                    <a class="dropdown-item" href="/mission_pages/insight/main/index.html">InSight Mars Lander</a>
+                    <a class="dropdown-item" href="/tess-transiting-exoplanet-survey-satellite">TESS Exoplanet Mission</a>
+                    <a class="dropdown-item" href="/mission_pages/webb/main/index.html">James Webb Space Telescope</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/missions/">All Missions A-Z</a>
+                    <a class="dropdown-item" href="/launchschedule">Launches and Landings</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown-galleries" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span>Galleries</span>
+</a>
+                  <div class="dropdown-menu" aria-labelledby="navbar-dropdown-galleries">
+                    <a class="dropdown-item" href="/multimedia/imagegallery/iotd.html">Image of the Day</a>
+                    <a class="dropdown-item" href="/multimedia/imagegallery/index.html">Image Galleries</a>
+                    <a class="dropdown-item" href="/multimedia/videogallery/index.html">Videos</a>
+                    <a class="dropdown-item" href="/content/ultra-high-definition-video-gallery/index.html">Ultra High-Def Videos</a>
+                    <a class="dropdown-item" href="/audience/formedia/features/MP_Photo_Guidelines.html">Usage and Copyright</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#"><span>NASA TV</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown-follow" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span>Follow NASA</span>
+</a>
+                  <div class="dropdown-menu" aria-labelledby="navbar-dropdown-follow">
+                    <a class="dropdown-item" href="/socialmedia">Social Media</a>
+                    <a class="dropdown-item" href="/connect/social/index.html">NASA Socials</a>
+                    <a class="dropdown-item" href="http://blogs.nasa.gov">NASA Blogs</a>
+                    <a class="dropdown-item" href="/solve">Get Involved</a>
+                    <a class="dropdown-item" href="http://spotthestation.nasa.gov/">Spot the Station</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown-downloads" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span>Downloads</span>
+</a>
+                  <div class="dropdown-menu" aria-labelledby="navbar-dropdown-downloads">
+                    <a class="dropdown-item" href="/connect/apps.html">Apps</a>
+                    <a class="dropdown-item" href="/podcasts">Podcasts</a>
+                    <a class="dropdown-item" href="/connect/ebooks/index.html">E-Books</a>
+                    <a class="dropdown-item" href="/connect/sounds/index.html">Audio &amp; Ringtones</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown-about" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span>About</span>
+</a>
+                  <div class="dropdown-menu" aria-labelledby="navbar-dropdown-about">
+                    <a class="dropdown-item" href="/about/index.html">About NASA</a>
+                    <a class="dropdown-item" href="/nasa-leadership">Leadership</a>
+                    <a class="dropdown-item" href="/about/org_index.html">Organization</a>
+                    <a class="dropdown-item" href="/about/sites/index.html">Locations</a>
+                    <a class="dropdown-item" href="/about/exhibits/index.html">Exhibits and Speakers</a>
+                    <a class="dropdown-item" href="/astronauts">Astronauts</a>
+                    <a class="dropdown-item" href="/about/people">NASA People</a>
+                    <a class="dropdown-item" href="/about/career/index.html">Careers@NASA</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbar-dropdown-audience" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span>NASA Audiences</span>
+</a>
+                  <div class="dropdown-menu" aria-labelledby="navbar-dropdown-audience">
+                    <a class="dropdown-item" href="/news/media/info/index.html">For Media</a>
+                    <a class="dropdown-item" href="/audience/foreducators/index.html">For Educators</a>
+                    <a class="dropdown-item" href="/audience/forstudents/index.html">For Students</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="page-banner">
+        <div class="headline">Curiosity Rover</div>
+      </div>
+
+      <div class="submenu-topics">
+        <ul class="submenu-topics-list">
+          <li class="first"><a href="">Mars Curiosity</a></li>
+          <li><a href="">Overview</a></li>
+          <li><a href="">Images</a></li>
+          <li><a href="">Videos</a></li>
+          <li><a href="">Media Resources</a></li>
+        </ul>
+      </div>
+
+      <aside>
+        <div class="sidebar home">
+          <div class="inner">
+
+            <div>
+              <section id="social">
+                <div class="header">
+                  <span class="heading">Follow</span>
+                </div>
+                <div class="content">
+                  <a href="http://www.facebook.com/MarsCuriosity" title="Follow on Facebook"><span class="icon-wrapper fab fa-facebook-f icon-facebook"></span></a>
+                  <a href="http://twitter.com/MarsCuriosity" title="Follow on Twitter"><span class="icon-wrapper fab fa-twitter icon-twitter"></span></a>
+                </div>
+                <!---->
+
+              </section>
+            </div>
+
+            <!---->
+
+            <div>
+              <section>
+                <!---->
+                <div class="content">
+                  <ul>
+                    <li class="custom-link">
+                      <a href="https://www.nasa.gov/mission_pages/msl/news/msl-latest-news-archive.html">
+Archived Releases (2015-2012)<!---->
+</a>
+                    </li>
+                    <li class="custom-link">
+                      <a href="https://www.nasa.gov/mission_pages/msl/features_top_rd_archive_1.html">
+Older Archived Releases<!---->
+</a>
+                    </li>
+                    <li class="custom-link">
+                      <a href="https://www.nasa.gov/mission_pages/msl/multimedia/msl-latest-images.html">
+Archived Images (2015-2011)<!---->
+</a>
+                    </li>
+                    <li class="custom-link">
+                      <a href="https://www.nasa.gov/mission_pages/msl/multimedia/latest-images-collection_archive_1.html">
+Older Archived Images<!---->
+</a>
+                    </li>
+                  </ul>
+
+                  <!---->
+                </div>
+              </section>
+            </div>
+
+            <!---->
+            <div id="ember973" class="ember-view">
+              <section>
+                <div class="header">
+                  <span class="heading">Related Topics</span>
+                </div>
+
+                <div class="content">
+                  <!---->
+                  <ul>
+                    <li>
+                      <a href="https://www.nasa.gov/topics/journeytomars/index.html">
+Journey to Mars
+</a>
+                    </li>
+                    <li>
+                      <a href="https://www.nasa.gov/topics/journeytomars/index.html">
+Mars
+</a>
+                    </li>
+                    <li>
+                      <a href="https://www.nasa.gov/topics/solarsystem/index.html">
+Solar System and Beyond
+</a>
+                    </li>
+                    <li><a href="https://www.nasa.gov/topics">All Topics A-Z</a></li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+
+      </aside>
+
+      <section id="wrapper">
+        <section id="main-content">
+
+          <h1>Curiosity Overview</h1>
+          <p>With its rover named Curiosity, Mars Science Laboratory mission is part of <a href="http://mars.nasa.gov/">NASA's Mars Exploration Program</a>, a long-term effort of robotic exploration of the red planet. Curiosity was designed to assess whether
+            Mars ever had an environment able to support small life forms called microbes. In other words, its mission is to determine the planet's "habitability."﻿</p>
+
+          <div class="image-box">
+            <img src="./img/curiosity-portrait-crop.jpg" alt="">
+            <p class="caption">NASA's Curiosity Mars rover used the camera at the end of its arm in April and May 2014 to take dozens of component images combined into this self-portrait where the rover drilled into a sandstone target called "Windjana."</p>
+            <p class="credits">Credits: NASA/JPL-Caltech/MSSS</p>
+          </div>
+
+          <p>Mars Science Laboratory will study Mars' habitability</p>
+
+          <p>To find out, the rover carries the biggest, most advanced suite of instruments for <a href="http://mars.jpl.nasa.gov/msl/mission/science/"> scientific studies</a> ever sent to the martian surface. The rover will analyze samples scooped from the
+            soil and drilled from rocks. The record of the planet's climate and geology is essentially "written in the rocks and soil" -- in their formation, structure, and chemical composition. The rover's onboard laboratory will study rocks, soils,
+            and the local geologic setting in order to detect chemical building blocks of life (e.g., forms of carbon) on Mars and will assess what the martian environment was like in the past.</p>
+
+          <p>Mars Science Laboratory relies on innovative technologies</p>
+
+          <p>Mars Science Laboratory will rely on new <a href="http://mars.jpl.nasa.gov/msl/mission/technology/">technological innovations</a>, especially for landing. The spacecraft descended on a parachute and then, during the final seconds prior to landing,
+            lowered the upright rover on a tether to the surface, much like a sky crane. Now on the surface, the rover will be able to roll over obstacles up to 75 centimeters (29 inches) high and travel up to 90 meters (295 feet) per hour. On average,
+            the rover is expected to travel about 30 meters (98 feet) per hour, based on power levels, slippage, steepness of the terrain, visibility, and other variables.</p>
+
+          <p>The rover carries a radioisotope power system that generates electricity from the heat of plutonium's radioactive decay. This power source gives the mission an operating lifespan on Mars' surface of a full martian year (687 Earth days) or more,
+            while also providing significantly greater mobility and operational flexibility, enhanced science payload capability, and exploration of a much larger range of latitudes and altitudes than was possible on previous missions to Mars.</p>
+
+          <p>Arriving at Mars at 10:32 p.m. PDT on Aug. 5, 2012 (1:32 a.m. EDT on Aug. 6, 2012), Mars Science Laboratory will serve as an entrée to the next decade of Mars exploration. It represents a huge step in Mars surface science and exploration capability
+            because it will:</p>
+
+          <ul>
+            <li>demonstrate the ability to land a very large, heavy rover to the surface of Mars (which could be used for a future Mars Sample Return mission that would collect rocks and soils and send them back to Earth for laboratory analysis)</li>
+
+            <li>demonstrate the ability to land more precisely in a 20-kilometer (12.4-mile) landing circle</li>
+
+            <li>demonstrate long-range mobility on the surface of the red planet (5-20 kilometers or about 3 to 12 miles) for the collection of more diverse samples and studies.</li>
+          </ul>
+
+        </section>
+
+
+        <footer>
+          <div id="footer">
+            <div id="footer-info">
+              <a class="logo" href="https://www.nasa.gov/">
+<img src="./img/nasa-logo.svg" alt="">
+</a>
+              <div id="status">
+                <span>National&nbsp;Aeronautics and Space&nbsp;Administration</span>
+                <span>Page Last Updated: Feb. 25, 2018</span>
+                <span>Page Editor: Tony Greicius</span>
+                <span>NASA Official: Brian Dunbar</span>
+              </div>
+            </div>
+            <ul id="footer-links">
+              <li><a href="http://odeo.hq.nasa.gov/nofear.html">No Fear Act</a></li>
+              <li><a href="http://www.nasa.gov/FOIA">FOIA</a></li>
+              <li><a href="http://www.nasa.gov/about/highlights/HP_Privacy.html">Privacy</a></li>
+              <li><a href="http://oig.nasa.gov/">Office of Inspector General</a></li>
+              <li><a href="http://www.nasa.gov/news/budget/index.html">Agency Financial Reports</a></li>
+              <li><a href="http://www.nasa.gov/about/contact/index.html">Contact NASA</a></li>
+            </ul>
+          </div>
+        </footer>
+
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
