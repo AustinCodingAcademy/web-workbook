@@ -1,21 +1,28 @@
-div.grid>div {
+/* div.grid>div {
   border: 1px solid red;
   display: flex;
   flex-direction: column;
-}
+} */
 
 img {
   margin-left: 30%;
   margin-right: 30%;
+}`
+
+.read {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .content {
   margin-right: 45%;
   margin-left: 30%;
+  text-align: justify;
 }
 
 .flex1 {
   grid-area: flex1;
+
 }
 
 .flex2 {
@@ -62,7 +69,22 @@ img {
   .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "flex1" "flex2" "flex3" "flex4" "flex5" "flex6" "flex7" "flex8" "flex9" "flex10"
+    grid-template-areas:
+    "flex1"
+    "flex2"
+    "flex3"
+    "flex4"
+    "flex5"
+    "flex6"
+    "flex7"
+    "flex8"
+    "flex9"
+    "flex10"
+  }
+  .content {
+    border: 1px 1px 1px 1px red solid;
+    height: 150px;
+    width: 350px;
   }
 }
 
