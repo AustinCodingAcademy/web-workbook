@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Checkpoint2</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+
+<body>
+  <nav class="topnav" id="myTopnav">
+    <ul>
+      <a href="#">CONTINUUM</a>
+    </ul>
+    <ul class="topmenu">
+      <a href="#">Gallery</a>
+      <a href="#">About </a>
+      <a href="#">Pricing </a>
+      <a href="#">Anaconda </a>
+      <a href="#">Help </a>
+      <a href="#">Download Anaconda </a>
+      <a href="#">Sign In </a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </ul>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </nav>
+
+  <section class="sec1 grid">
+    <form class="search box1">
+      <input type="text" placeholder="Search Anaconda Cloud" name="search">
+      <button type="submit" class="s1"><i class="fa fa-search"></i></button>
+    </form>
+
+    <div class="box2">
+      <img src="img/Analogo.png" width="100%" height="auto" aria-label="logo">
+      <h3>Where packages, notebooks, projects and environments are shared.</h3>
+      <h5>Powerful collaboration and package management for open source and private projects. </h5>
+      <h5>Public projects and notebooks are always free. </h5>
+      <h5>Private plans start at $7/month. </h5>
+    </div>
+    <div class="box3">
+      <button class="signbutton"> Sign Up </button>
+      <button class="signbutton2"> Sign In </button>
+      <h3> New to Anaconda Cloud? Sign up!</h3>
+      <div>
+        <form>
+          <input class="txtbox" type="text" placeholder="Pick a username" name="username" required>
+          <input class="txtbox" type="text" placeholder="Your email" name="email" required>
+          <p> Use at least one lowercase letter, one numeral, and seven characters.</p>
+          <input class="txtbox" type="password" placeholder="create a password" name="password" required>
+          <input class="txtbox" type="password" placeholder="confirm password" name="confirmpass" required>
+          <label>
+            <p><input type="checkbox" name="terms and condition"> I accept the <a class="link" href="#">Terms & Conditions </a></p>
+          </label>
+          <button type="button" class="s2"> Sign Up! </button>
+          <p> By clicking "Sign up!" you agree to our privacy policy and terms of service. We will send you account related emails occasionally.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div>
+      <h2><b> Why you'll love Anaconda Cloud </b></h2>
+      <h4>Making it easy to share packages, notebooks, projects and environments to be more collaborative.</h4>
+    </div>
+    <div class="details">
+      <div class="detail-box">
+        <img src="img/collabe.svg" width="80px">
+        <h5>Great collaboration starts with communication.</h5>
+        <h6> Simplified publishing of reproducible notebooks including the runtime environment.</h6>
+      </div>
+      <div class="detail-box">
+        <img src="img/deploy.svg" width="80px">
+        <h5>Friction-less deployment across the globe.</h5>
+        <h6> Make your working environments portable.</h6>
+      </div>
+      <div class="detail-box">
+        <img src="img/private.svg" width="80px">
+        <h5>Move from public to private easily.</h5>
+        <h6>Control access and authorization easily with private plan. </h6>
+      </div>
+      <div class="detail-box">
+        <img src="img/community.svg" width="80px">
+        <h5>Fastest growing open source community. </h5>
+        <h6>Share your projects with the world, get feedback, and contribute to repositories. </h6>
+      </div>
+    </div>
+  </section>
+  <section class="sample">
+    <h3>Want to use Anaconda on your servers?</h3>
+    <a href="#"> <button class="signbutton"> Learn More </button> </a>
+    <img src="img/sample.png" width="85%">
+  </section>
+  <footer>
+    <div class="about">
+      <div>
+        <h5>Anaconda Cloud</h5>
+        
+          <a href="#">Gallery</a><br>
+          <a href="#">About</a></br>
+          <a href="#">Pricing</a></br>
+          <a href="#">Documentation</a></br>
+          <a href="#">Support</a></br>
+          <a href="#">About Anaconda, Inc.</a></br>
+          <a href="#">Download Anaconda</a></br>
+
+      </div>
+      <div>
+        <h5>Community</h5>
+
+          <a href="#">Anaconda Community</a><br>
+          <a href="#">Open Source</a></br>
+          <a href="#">NumFOCUS</a></br>
+          <a href="#">Support</a></br>
+          <a href="#">Developer Blog</a></br>
+
+      </div>
+    </div>
+    <div class="social">
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-slideshare"></i>
+      <i class="fab fa-linkedin-in"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-youtube"></i>
+      <i class="fab fa-github"></i>
+    </div>
+    <div>
+      <p>PRIVACY POLICY | EULA (Anaconda Cloud v2.26.5) © 2016 Anaconda, Inc. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
