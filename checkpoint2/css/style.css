@@ -1,0 +1,652 @@
+.grid {
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 992px;
+  /* padding: 16px 0px; */
+}
+
+.box-1 {
+  grid-area: box-1;
+}
+
+.box-2 {
+  grid-area: box-2;
+}
+
+.box-3 {
+  grid-area: box-3;
+}
+
+.box-4 {
+  grid-area: box-4;
+}
+
+.box-5 {
+  grid-area: box-5;
+}
+
+.box-6 {
+  grid-area: box-6;
+}
+
+.box-7 {
+  grid-area: box-7;
+}
+
+.box-8 {
+  grid-area: box-8;
+}
+
+.box-9 {
+  grid-area: box-9;
+}
+
+.box-10 {
+  grid-area: box-10;
+}
+
+.box-11 {
+  grid-area: box-11;
+}
+
+.box-12 {
+  grid-area: box-10;
+}
+
+.box-13 {
+  grid-area: box-11;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/* ******************************************************** */
+/* ********************** Navigation ********************** */
+
+* {
+  box-sizing: border-box;
+}
+
+/* body {
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+} */
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav-title .logo {
+  max-height: 35px;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  /* float: right; */
+  align-items: flex-end;
+  font-size: 11px;
+  line-height: 24px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+
+/* nav {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box-1 {
+  justify-content: space-around;
+} */
+
+/* .topnav a {
+    max-width: 960px;
+    color: #f2f2f2;
+    padding: 14px 16px 4px 16px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 36px;
+} */
+
+/* .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+} */
+
+/* .topnavlogo .logo {
+  max-height: 35px;
+} */
+
+/* .topnav .icon {
+  display: none;
+} */
+
+/* ******************************************************** */
+/* *************************  Main ************************ */
+
+/* ******************************************************** */
+/* ********************** Box-2 Main ********************** */
+
+.box-2 {
+  background-image: url(../img/greenbackground-01.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mainlogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 15px;
+  /* margin: 17px; */
+}
+
+.anacondalogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 100%; */
+  margin: 0 0 10px 0;
+}
+
+.anacondalogo img {
+  max-width: 90%;
+  margin: 0 0 5px 0;
+}
+
+.mainlogo h2 {
+  color: #ffffff;
+  text-align: left;
+  margin: 5px 10px;
+}
+
+.mainlogo p {
+  color: #ffffff;
+  text-align: left;
+  margin: 5px 10px;
+}
+
+/* ******************************************************** */
+/* ********************** Box-3 Main ********************** */
+
+.box-3 {
+  background-image: url(../img/greenbackground-01.png);
+  background-size: cover;
+}
+
+.signup-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  padding: 15px;
+}
+
+.selectone {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #38b237;
+  width: 150px;
+  height: 33px;
+}
+
+.signin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #234d30;
+  width: 150px;
+  height: 33px;
+}
+
+input[type="text"] {
+  width: 300px;
+  height: 33px;
+  font-size: 14px;
+  padding: 2px;
+}
+
+input[type="submit"] {
+  width: 300px;
+  height: 33px;
+  font-size: 14px;
+  background-color: #38b237;
+  border-width: 0px;
+  margin: 8px;
+  padding: 2px 7px;
+  color: #ffffff;
+}
+
+.signup-login p:nth-child(2n-1) {
+  font-size: 10px;
+  line-height: 11px;
+  color: #ffffff;
+}
+
+/* h3 {
+  font-size: 18px;
+  color: #ffffff;
+} */
+.signup-login > h2 {
+  color: #ffffff;
+}
+
+.terms-cond {
+  display: flex;
+  align-items: center;
+  padding: 0 37px;
+  width: 300px;
+  justify-content: space-evenly;
+}
+
+.terms-cond p {
+  color: #ffffff;
+}
+
+.useragree {
+  width: 300px;
+  height: 33px;
+}
+
+/* ******************************************************** */
+/* ********************** Box-4 Main ********************** */
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin: 12px 0 4px 0;
+}
+
+h2 {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* ******************************************************** */
+/* ********************* Box-5-8 Main ********************* */
+
+.box-5 {
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 15px;
+  margin: 17px;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #38b237;
+}
+
+.circle img {
+  width: 75%;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  padding: 2px 4px;
+  line-height: 20px;
+  margin: 10px 0 2px 0;
+}
+
+p {
+  font-size: 13px;
+  text-align: center;
+  line-height: 18px;
+}
+
+/* ******************************************************** */
+/* ********************** Box-9 Main ********************** */
+
+.box-9 {
+  background-color: #f0f3f6;
+  width: 100%;
+}
+
+.servers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  /* margin: 10px; */
+}
+
+.box-9 h2 {
+  font-size: 24px;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+}
+
+input[type="submit"] {
+  height: 33px;
+  font-size: 14px;
+  background-color: #38b237;
+  margin: 8px;
+  padding: 2px 7px;
+  color: #ffffff;
+}
+
+.servers input {
+  width: 200px;
+}
+
+/* ******************************************************** */
+/* ********************** Box-10 Main ********************* */
+
+.box-10 {
+  background-color: #253846;
+}
+
+.cloud-comm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  /* margin: 10px; */
+}
+
+.list1, .list2 {
+  font-size: 14px;
+  font-weight: 200;
+  list-style-type: none;
+  line-height: 24px;
+  padding: 0 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+ul li:nth-child(1) {
+  font-weight: 700;
+  line-height: 30px;
+}
+
+/* ******************************************************** */
+/* ********************** Box-11 Main ********************* */
+
+.box-11 {
+  background-color: #253846;
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* align-items: center; */
+  /* width: 100%;
+  height: auto; */
+  /* padding: 15px; */
+  /* margin: 10px; */
+}
+
+.media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 280px;
+  padding: 15px;
+  font-size: 20px;
+}
+
+.fa-twitter, .fa-facebook-f, .fa-slideshare, .fa-linkedin-in, .fa-instagram, .fa-youtube-square, .fa-github {
+  color: #ccc;
+}
+
+/* ******************************************************** */
+/* ********************** Box-12 Main ********************* */
+.box-12 {
+  background-color: #16202b;
+}
+
+.box-12 p {
+  color: #ccc;
+  font-size: 12px;
+  height: auto;
+  padding: 10px 0;
+}
+
+/* ******************************************************** */
+
+
+@media (min-width: 576px) {
+  .grid {
+    display: grid;
+    grid-template-areas:
+    "box-1"
+    "box-2"
+    "box-3"
+    "box-4"
+    "box-5"
+    "box-6"
+    "box-7"
+    "box-8"
+    "box-9"
+    "box-10"
+    "box-11"
+    "box-12";
+  }
+
+  /* .topnav a {
+    display: none;
+  } */
+
+  /* .topnav a.icon {
+    float: right;
+    display: block;
+  } */
+
+  /* .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  } */
+
+  /* .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  } */
+
+  .box-3 {
+    background-position: -155px;
+  }
+
+  .anacondalogo img {
+    width: 60%;
+  }
+
+  .screen img {
+    width: 60%;
+  }
+
+
+
+}
+
+@media (max-width: 768px) {
+
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) + .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked + .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+  .anacondalogo img {
+    width: 60%;
+  }
+
+  .screen img {
+    width: 60%;
+  }
+
+
+}
+
+
+
+
+@media (min-width: 992px){
+  .grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas:
+      "box-1 box-1 box-1 box-1"
+      "box-2 box-2 box-3 box-3"
+      "box-4 box-4 box-4 box-4"
+      "box-5 box-6 box-7 box-8"
+      "box-9 box-9 box-9 box-9"
+      "box-10 box-10 box-10 box-10"
+      "box-11 box-11 box-11 box-11"
+      "box-12 box-12 box-12 box-12";
+    }
+
+    .box-3 {
+      background-position: -455px;
+    }
+
+
+    .anacondalogo img {
+      width: 80%;
+    }
+
+    .screen img {
+      width: 80%;
+    }
+
+    .box-10 {
+      flex-direction: row;
+    }
+
+    .box-12 {
+      flex-direction: row;
+    }
+
+
+
+  /* .box-5, .box-6, .box-7, .box-8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 10px;
+  } */
+
+}
