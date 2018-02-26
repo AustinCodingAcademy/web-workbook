@@ -215,24 +215,26 @@ main {
 
 section {
   h2 {
-    font-size: 1.3em;
+    font-size: 1.4em;
   }
   h3 {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 }
 
 .more-about {
-  h1 {
-    font-size: 2em;
-  }
-  padding: 30px 30px 0 30px;
+  padding: 5% 30px 0 30px;
   text-align: center;
   h1 {
     grid-area: h1;
+    font-size: 2em;
   }
   h2 {
     grid-area: h2;
+    margin-bottom: 30px;
+  }
+  h1, h2 {
+    align-self: center;
   }
   & > div {
     padding: 10px 10px;
@@ -261,7 +263,7 @@ section {
   div:nth-of-type(4) {
     grid-area: fourth;
   }
-  grid-template-rows: 1fr 1fr 3fr 3fr 3fr 3fr;
+  grid-template-rows: 1fr 1fr auto auto auto auto;
   grid-template-areas:
     "h1"
     "h2"
@@ -274,9 +276,9 @@ section {
     align-items: center;
     color: #fff;
     background-color: #5bb23a;
-    height: 75px;
-    width: 75px;
-    border-radius: 37.5px;
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
     font-size: 2.5em;
   }
 }
@@ -341,8 +343,6 @@ footer {
     grid-area: community;
   }
   .follow-icons {
-    align-self: center;
-    flex-wrap: wrap;
     grid-area: follow-icons;
     height: auto;
     justify-content: space-around;
@@ -403,11 +403,15 @@ footer {
     }
   }
   .more-about {
+    padding: 2% 30px 0 30px;
     grid-template: 1fr 1fr auto / 1fr 1fr 1fr 1fr;
     grid-template-areas:
       "h1 h1 h1 h1"
       "h2 h2 h2 h2"
       "first second third fourth";
+    h1 {
+      margin-bottom: 5px;
+    }
   }
   footer {
     grid-template: 3fr auto auto / 1fr 1fr;
@@ -451,5 +455,3 @@ footer {
     }
   }
 }
-
-// testing
