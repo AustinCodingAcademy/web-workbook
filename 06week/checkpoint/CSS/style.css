@@ -1,5 +1,5 @@
 .nav {
-  border: groove white;
+  border: outset white;
   height: 25%;
   width: 100%;
   background-color: black;
@@ -7,6 +7,9 @@
   text-align: center;
 }
 
+div {
+  color: white;
+}
 
 p {
   margin-left: auto;
@@ -27,23 +30,20 @@ input {
   margin-bottom: 25%;
 }
 
-
 .grid1 {
-  border: groove white;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  border: outset grey;
   background-image: url("../Images/guitar1.jpg");
-  height: 100%;
-  width: 100%;
   display: grid;
-  grid-row: 2/2;
-  grid-column: 1/4
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
   background-size: 100%;
   background-image: url("../Images/guitar3.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
