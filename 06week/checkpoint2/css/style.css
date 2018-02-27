@@ -1,23 +1,25 @@
 div.wrapper nav.navbar a.navbar-brand img {
   width: 200px; }
+
 div.wrapper nav.navbar a.navbar-brand div.collapse div.navbar-nav {
   display: flex;
   justify-content: flex-end; }
   div.wrapper nav.navbar a.navbar-brand div.collapse div.navbar-nav a:hover {
     color: #71B045; }
+
 div.wrapper div.search-bar {
   display: none; }
-div.wrapper div.content div.image {
-  padding-top: 40px;
-  padding-left: 20%;
-  padding-right: 20%; }
-  div.wrapper div.content div.image img {
-    max-width: 350px; }
-div.wrapper div.content div.text {
+
+div.wrapper div.content div.first {
   padding-left: 10px;
   padding-right: 10px; }
-  div.wrapper div.content div.text p:first-child {
+  div.wrapper div.content div.first div.image {
+    text-align: center; }
+    div.wrapper div.content div.first div.image img {
+      max-width: 350px; }
+  div.wrapper div.content div.first div.text p:first-child {
     font-size: 1.2em; }
+
 div.wrapper div.content div.sign-up {
   padding-left: 10px;
   padding-right: 10px; }
@@ -66,4 +68,95 @@ div.wrapper div.content div.sign-up {
   div.wrapper div.content div.sign-up button:last-of-type:hover {
     background-color: #285A17; }
 
-/*# sourceMappingURL=style.css.map */
+div.wrapper div.content div.why div.head-text {
+  margin-top: 30px;
+  text-align: center; }
+  div.wrapper div.content div.why div.head-text p:first-child {
+    font-size: 1.5em;
+    font-weight: bold; }
+
+div.wrapper div.content div.why div.subgroups div.sg {
+  margin-top: 20px;
+  text-align: center; }
+  div.wrapper div.content div.why div.subgroups div.sg img {
+    width: 80px; }
+
+div.wrapper div.content div.learn {
+  text-align: center;
+  background-color: #F0F4F6; }
+  div.wrapper div.content div.learn p {
+    margin-top: 30px;
+    padding-top: 30px;
+    font-size: 1.5em; }
+  div.wrapper div.content div.learn button {
+    height: 40px;
+    width: 60%;
+    background-color: #63AD41;
+    color: white;
+    transition: all 0.5s; }
+  div.wrapper div.content div.learn button:hover {
+    background-color: #285A17;
+    margin-bottom: 30px; }
+  div.wrapper div.content div.learn img {
+    width: 80%; }
+
+div.wrapper footer {
+  padding-top: 30px;
+  background-color: #414042;
+  color: white; }
+  div.wrapper footer div.links a {
+    color: white;
+    text-decoration: none; }
+  div.wrapper footer div.links div.cloud, div.wrapper footer div.links div.community {
+    text-align: center; }
+  div.wrapper footer div.icons {
+    text-align: center; }
+    div.wrapper footer div.icons span {
+      margin-left: 30px;
+      margin-right: 30px;
+      display: inline-block;
+      font-size: 2em; }
+  div.wrapper footer p {
+    margin-top: 20px;
+    text-align: center; }
+
+@media (min-width: 992px) {
+  div.wrapper div.search-bar {
+    display: block;
+    width: 100%; }
+    div.wrapper div.search-bar input {
+      height: 40px;
+      width: 80%; }
+    div.wrapper div.search-bar button {
+      height: 40px;
+      width: 19%;
+      background-color: #63AD41;
+      color: white;
+      transition: all 0.5s; }
+    div.wrapper div.search-bar button:hover {
+      background-color: #2F631C; }
+  div.wrapper div.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    div.wrapper div.content div.first {
+      grid-column: 1/2; }
+    div.wrapper div.content div.sign-up {
+      grid-column: 2/3; }
+    div.wrapper div.content div.why {
+      grid-column: 1/3; }
+      div.wrapper div.content div.why div.subgroups {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+    div.wrapper div.content div.learn {
+      grid-column: 1/3; }
+  div.wrapper footer div.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    div.wrapper footer div.links div.cloud {
+      margin-right: 50px; }
+    div.wrapper footer div.links div.community {
+      margin-left: 50px; }
+    div.wrapper footer div.links ul {
+      list-style-type: none; } }
