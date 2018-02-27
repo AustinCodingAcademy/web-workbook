@@ -20,3 +20,11 @@
     let current = document.querySelector("#results").value;
     document.querySelector("#results").value = current.slice(0, -1);
   }
+
+  function minus() {
+    document.querySelector("#results").value += "-";
+  }
+
+  function times() {
+    document.querySelector("#results").value += "*";
+  }
