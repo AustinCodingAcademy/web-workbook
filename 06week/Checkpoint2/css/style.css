@@ -6,8 +6,13 @@ body {
 .grid-container1 {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 10px;
+  grid-gap: 0px;
+  margin: 0px;
   grid-template-areas: "box1" "box2" "box3" "box4" "box5" "box6" "box7" "anaconda-cloud" "community" "social-media" "footer"
+}
+
+.box {
+  margin: 10px 10px 10px 10px;
 }
 
 
@@ -130,9 +135,10 @@ body {
   color: #ffffff;
   font-size: 16px;
   background: #43b02a;
-  padding: 10px 70px 10px 70px;
+  padding: 10px 40px 10px 40px;
   text-decoration: none;
   width: 100%;
+  /* margin: 10px; */
 }
 
 .button-signin {
@@ -143,9 +149,10 @@ body {
   color: #ffffff;
   font-size: 16px;
   background: #43b02a;
-  padding: 10px 70px 10px 70px;
+  padding: 10px 40px 10px 40px;
   text-decoration: none;
   width: 100%;
+  /* margin: 10px; */
 }
 
 
@@ -255,6 +262,14 @@ body {
     margin: 0px 0px 16px 0px;
 }
 
+.user-pw label {
+  font-family: helvetica;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0px;
+}
 
 
 
@@ -436,13 +451,18 @@ footer p {
 
 
 @media (min-width: 576px) {
-  /* .grid-container1 {
+  .grid-container1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat (13, 1fr);
-    grid-gap: 10px;
-    grid-template-areas: "head head" "box1 box1" "box1 box1" "box1 box1" "box2 box3" "box2 box3" "box4 box4" "box5 box5" "box6 box6" "box7 box7" "box8 box8" "box9 box9" "box10 box10"
-  } */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0px;
+    grid-template-areas:
+    "box1 box1 box2 box2"
+    "box3 box3 box3 box3"
+    "box4 box5 box6 box7"
+    "anaconda-cloud anaconda-cloud community community"
+    "social-media social-media social-media social-media "
+    "footer footer footer footer"
+  }
 
 
 
