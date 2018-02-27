@@ -1,3 +1,5 @@
+/* stylesheet for Mars Curiosity page */
+
 body {
   background-color: #000000;
   font-family: Titillium Web, Helvetica, Arial, sans-serif;
@@ -42,6 +44,8 @@ Heading (top nav) styles
 
 /* collapsed topnav bar styles */
 
+/* topnav bar is just not working when collapsed.   Not sure why not. */
+
 .navbar-dark .navbar-toggler {
   border-color: #000;
 }
@@ -53,6 +57,16 @@ Heading (top nav) styles
 .navbar-dark .navbar-toggler-icon {
   background-image: url("../img/menu.png") !important;
 }
+
+
+
+/* primary blue #15418c;
+hover blue #072f54; */
+
+
+
+
+
 
 /* search box */
 
@@ -333,6 +347,9 @@ div.card .headline .tag {
   position: relative;
   overflow: hidden;
 }
+.snippit .content {
+  padding:1em;
+}
 
 .snippit .content p {
   color: #000;
@@ -472,7 +489,7 @@ footer #footer-links li a:hover {
     border-color: #333333;
     color: #a1a1a1;
   }
-  fom.search-box input[type="text"]:focus {
+  form.search-box input[type="text"]:focus {
     z-index: 1;
     background-color: #333333;
     width: 156px;
@@ -709,6 +726,8 @@ Maximum width.  Content area should be centered within the page.
   main {
     grid-area: main;
   }
+
+  /* for some reason it's not displaying this properly .   No idea why not */
   .pagewrapper {
     display: grid;
     width: 100%;
