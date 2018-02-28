@@ -2,19 +2,56 @@ body {
   font-family: helvetica;
 }
 
+.navbox1 img{
+  max-width: 200px;
+  max-height: 32px;
+  padding: 10px;
+}
+
+.navbox1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-button {
+  position: absolute;
+  right: 0;
+  margin: 16px 0px 0px 100px;
+
+}
+
 
 .grid-container1 {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 0px;
   margin: 0px;
-  grid-template-areas: "box1" "box2" "box3" "box4" "box5" "box6" "box7" "box8" "anaconda-cloud" "community" "social-media" "footer"
+  grid-template-areas: "navbox1" "box1" "box2" "box3" "box4" "box5" "box6" "box7" "box8" "anaconda-cloud" "community" "social-media" "footer"
 }
 
 .box {
   margin: 10px 10px 10px 10px;
 }
 
+.navbox2 {
+  display: none;
+}
+
+.search-1 {
+  display: none;
+}
+
+.search-2 {
+  display: none;
+}
+
+.navbox1 {
+  grid-area: navbox1;
+}
+
+.navbox2 {
+  grid-area: navbox2;
+}
 
 .search-1 {
   grid-area: search-1;
@@ -83,6 +120,7 @@ body {
   padding: 0px 0px 0px 0px;
 } */
 
+
 .cloud-items {
   display: flex;
   flex-direction: column;
@@ -106,6 +144,9 @@ body {
 .box1-items img {
   padding: 30px;
   background-image:image();
+  max-width: 100%;
+  max-height: 100%;
+
 }
 
 
@@ -509,6 +550,7 @@ footer p {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 0px;
     grid-template-areas:
+    "navbox2 navbox2 navbox2 navbox2"
     "search-1 search-1 search-1 search-2"
     "box1 box1 box2 box2"
     "box3 box3 box3 box3"
@@ -517,6 +559,10 @@ footer p {
     "anaconda-cloud anaconda-cloud community community"
     "social-media social-media social-media social-media"
     "footer footer footer footer"
+}
+
+.navbox1 {
+  display: none;
 }
 
 .social-media ul {
@@ -601,20 +647,37 @@ footer p {
   width: 100%;
 }
 
+.navbox2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbox2 ul {
+  list-style-type: none;
+  list-style-image: none;
+  padding: 8px 0px 0px 20px;
+}
+
+.navbox2 ul li {
+  display: inline;
+  font-family: helvetica;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #222222;
+
+}
+
 
 /* Medium and up (Tablets) */
 
 @media (min-width: 768px) {
-  /* .grid-container1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid=gap: 10px;
-    grid-template-areas: "head head head head" "box1 box1 box2 box2" "box1 box1 box2 box2" "box3 box3 box4 box5" "box3 box3 box4 box5" "box3 box3 box6 box6" "box7 box8 box9 box10" "box7 box8 box9 box10" "box7 box8 box9 box10"
-  } */
 
 
 
-}
+
+
 
 /* Large and up (Desktops) */
 
