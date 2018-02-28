@@ -20,6 +20,14 @@ h1 {
   padding-top: 50px;
 }
 
+.thirdSection {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 50px;
+  grid-column: span 4;
+  grid-row: span 2;
+}
+
 main {
   /* width: 100%;
   height: 400px; */
@@ -32,11 +40,16 @@ section {
   display: flex;
   justify-content: space-around;
   padding-top: 20px;
+  border-bottom: solid 1px black;
 }
 
 article {
   width: 200px;
   text-align: center;
+}
+
+.middle {
+  grid-column: span 4;
 }
 
 @media (max-width: 999px) {
@@ -54,5 +67,10 @@ article {
   article {
     grid-column: span 2;
     grid-row: span 3;
+  }
+  p {
+    grid-column-start: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
 }
