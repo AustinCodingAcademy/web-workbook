@@ -28,3 +28,12 @@
   function times() {
     document.querySelector("#results").value += "*";
   }
+
+  function div() {
+    document.querySelector("#results").value += "/";
+  }
+
+  // function posNeg() {
+  //     if  (document.querySelector("#results").value = "-" + document.querySelector("#results");)
+  //   }
+  // }
