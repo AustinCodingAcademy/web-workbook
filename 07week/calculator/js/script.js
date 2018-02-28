@@ -34,6 +34,7 @@
   }
 
   // function posNeg() {
-  //     if  (document.querySelector("#results").value = "-" + document.querySelector("#results");)
+  //   let (document.querySelector("#results").value === '-') return;
+  //    result = eval($("#results").value()) + '* -1';
   //   }
   // }
