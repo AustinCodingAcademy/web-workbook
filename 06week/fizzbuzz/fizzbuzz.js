@@ -22,7 +22,7 @@ for (var i = 1; i <= 1000; i++) {
 // }
 // Thoughts:
 // --Can increment looping variable within the loop. This seems like setting myself up for an infinite loop.  Definitely not best practice.
-// --Can do all kinds of crazy evaluation withint the console.log statement
+// --Can do all kinds of crazy evaluation within the console.log statement
 // --Plus to handle the 3 or 5 cases
 // --Or to handle the final default
 // --Love that ternary operator  (test ? yes : no)

@@ -57,6 +57,73 @@ Heading (top nav) styles
   background-image: url("../img/menu.png") !important;
 }
 
+#navbar-supported-content {
+  padding-left: 0px;
+  padding-right: 0px;
+  border: none;
+}
+
+#navbar-supported-content.collapse.show {
+  background-color: #15418c;
+  z-index: 110;
+  position: relative;
+  height: 1px !important;
+}
+
+#navbar-supported-content.collapse.show .navbar-nav {
+  display: block;
+  float: none;
+}
+
+.navbar-nav li.nav-item {
+  background-color: #15418c;
+  display: block;
+  justify-content: space-between;
+}
+
+.navbar-nav li.nav-item:hover {
+  background-color: #5D7FB9;
+}
+
+li.dropdown.show {
+  background-color: #072f54;
+}
+
+div.dropdown-menu.show {
+  border: none;
+  border-radius: 0rem;
+  margin: 0em;
+  padding: 0em;
+}
+
+div.dropdown-menu.show a.dropdown-item:link, div.dropdown-menu.show a.dropdown-item:visited {
+  display: block;
+  background-color: #5D7FB9;
+}
+
+div.dropdown-menu.show a.dropdown-item:hover {
+  background-color: #072f54;
+}
+
+div.dropdown-menu.show a.dropdown-item:link, div.dropdown-menu.show a.dropdown-item:hover, div.dropdown-menu.show a.dropdown-item:visited {
+  color: #fff;
+  font-size: 120%;
+  font-weight: 300;
+  padding: 8px;
+}
+
+.navbar-nav li.nav-item a.nav-link:link, .navbar-nav li.nav-item a.nav-link:hover, .navbar-nav li.nav-item a.nav-link:visited {
+  color: #fff;
+  font-size: 120%;
+  font-weight: 300;
+  padding: 8px;
+}
+
+.dropdown-divider {
+  margin: 0rem;
+  padding: 0rem;
+}
+
 /* primary blue #15418c;
 hover blue #072f54; */
 
@@ -153,9 +220,12 @@ banner and subnav styles
   display: flex;
   align-content: center;
   align-items: center;
-  border-right: 1px solid #777777;
   margin: 0px;
   padding: 8px 10px 12px 10px;
+}
+
+.submenu-topics li:nth-child(-n+4):not(:first-child) {
+  border-right: 1px solid #777777;
 }
 
 .submenu-topics li a, .submenu-topics li a:hover {
@@ -342,10 +412,25 @@ div.card .headline .tag {
   padding: 1em;
 }
 
+.snippit .content h3 {
+  padding: 0em;
+  font-size: 150%;
+}
+
 .snippit .content p {
   color: #000;
   font-size: .8em;
   overflow: hidden;
+}
+
+.snippit .content a:link, .snippit .content a:visited {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.snippit .content a:hover {
+  color: #4D6496;
+  text-decoration: underline;
 }
 
 .snippit::after {
@@ -523,10 +608,10 @@ Medium layout.   Banner image is visible; medium card layout
   }
   .page-banner .headline {
     color: #fff;
-    font-size: 200%;
+    font-size: 220%;
     margin-left: 20px;
     margin-bottom: 30px;
-    font-weight: bold;
+    font-weight: 900;
   }
   section#main-content {
     display: grid;
@@ -601,10 +686,6 @@ Medium layout.   Banner image is visible; medium card layout
     background-color: #072f54;
     color: #fff;
     border: 1px solid #072f54;
-  }
-  .dropdown-divider {
-    margin: 0rem;
-    padding: 0rem;
   }
   /* Sidenav styles */
   aside {
