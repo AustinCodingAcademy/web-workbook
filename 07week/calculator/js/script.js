@@ -33,8 +33,10 @@ function posNeg() {
   if (currentList[currentList.length - 2] === "(") {
     lastNum = currentList[currentList.length - 1].slice(0, -1);
     startString = startString.slice(0, -2)
-  } else {
+  } else if (currentList[currentList.length - 1]) {
     lastNum = "(-" + lastNum + ")";
+  } else {
+    return;
   }
   document.querySelector("#results").value = startString + lastNum;
 }
