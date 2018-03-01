@@ -41,20 +41,32 @@ Heading (top nav) styles
   align-items: center;
 }
 
+
 /* collapsed topnav bar styles */
 
 /* topnav bar is just not working when collapsed.   Not sure why not. */
 
-.navbar-dark .navbar-toggler {
-  border-color: #000;
+.navbar-toggler {
+  outline:none;
 }
 
-.navbar-toggler:hover, .navbar-toggler:focus {
-  border-color: #000;
+.navbar-toggler:focus {
+  outline:none;
 }
 
 .navbar-dark .navbar-toggler-icon {
   background-image: url("../img/menu.png") !important;
+}
+
+/*  gives the blue background, but at al times; not just when it's open
+.navbar-dark .navbar-toggler:not(:disabled) {
+  border-color: #000;
+  background-color: #15418c;
+}
+*/
+
+/* moves things around badly while collapsing.  For some reason, when transitioning it has a height of 300 (308?) px.   display none is OK, but makes it seem like the menu isn't showing up for a long time.   responds to float; */
+.navbar-collapse.collapsing {
 }
 
 #navbar-supported-content {
@@ -71,21 +83,43 @@ Heading (top nav) styles
 }
 
 #navbar-supported-content.collapse.show .navbar-nav {
-  display: block;
-  float: none;
+  display: flex;
+  justify-content: space-between;
 }
+
+
+/* moves NASATV to the right spot, but only when the dropdown is active */
+.navbar-nav > li.dropdown:nth-child(4) {
+  position: absolute;
+  display: block;
+  width: 100%;
+  top: -45px;
+  right: 17em;
+  background-color: transparent;
+}
+.navbar-nav >  li:nth-child(4) a {
+  display: table;
+  background-color: transparent;
+}
+.navbar-nav > li:nth-child(4) a span {
+  display: table-cell;
+  vertical-align: middle;
+  width: content;
+}
+
+
 
 .navbar-nav li.nav-item {
   background-color: #15418c;
   display: block;
-  justify-content: space-between;
+  top:23px;
 }
 
 .navbar-nav li.nav-item:hover {
   background-color: #5D7FB9;
 }
 
-li.dropdown.show {
+li.nav-item.dropdown.show {
   background-color: #072f54;
 }
 
@@ -118,6 +152,7 @@ div.dropdown-menu.show a.dropdown-item:link, div.dropdown-menu.show a.dropdown-i
   font-weight: 300;
   padding: 8px;
 }
+
 
 .dropdown-divider {
   margin: 0rem;
@@ -619,10 +654,7 @@ Medium layout.   Banner image is visible; medium card layout
     grid-auto-rows: 300px;
     grid-template-areas: "card1 card1" "card2 card3" "card4 card5" "card6 card7" "card8 card9" "card10 .";
   }
-  .navbar-nav li.nav-item:nth-child(4) {
-    display: table-cell;
-    vertical-align: middle;
-  }
+
 }
 
 /*
