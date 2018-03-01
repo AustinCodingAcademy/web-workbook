@@ -1,14 +1,20 @@
 /* CSS by div section */
 /* Header CSS */
-.ac-nav a:hover {
-  color: #3BAF29;
-}
 
+.ac-nav {
+  overflow:hidden;
+}
 .ac-nav a {
   display: none;
   color: black;
+  text-decoration: none;
 }
-
+.ac-nav a:hover {
+  color: #3BAF29;
+}
+.active {
+    color: darkgreen;
+}
 .ac-nav .ac-icon {
   display: block;
 }
@@ -219,6 +225,9 @@ a {
 }
 /* Media Query CSS */
 @media (min-width:576px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .ac-nav a .ac-icon {
     display: block;
   }
@@ -253,13 +262,14 @@ a {
   }
   .ac-logo-login-search {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "ac-search-bar ac-search-bar"
       "ac-logo-big ac-login"
   }
   .ac-search-bar {
     display: flex;
+    justify-content: center;
     margin-top: 10px;
   }
   .ac-search {
@@ -305,7 +315,7 @@ a {
   }
   body {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
       "ac-header ac-header ac-header ac-header"
       "ac-logo-login-search ac-logo-login-search ac-logo-login-search ac-logo-login-search"
