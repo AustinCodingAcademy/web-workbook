@@ -1,5 +1,9 @@
+let lastNumber = '';
+
 function addNumber(num) {
   document.querySelector("#results").value += num;
+  lastNumber += num;
+  console.log(lastNumber);
 }
 
 function clearResults() {
@@ -8,6 +12,7 @@ function clearResults() {
 
 function addition() {
   document.querySelector("#results").value += "+";
+  lastNumber = '';   //any time someone hits +, it will clear the last Number and then when someone hits the addNumber function, the last number will be set again
 }
 
 function subtract () {
@@ -30,6 +35,12 @@ function switchNegPos() {
     document.querySelector("#results").value = '-' + current;
   }
 }
+
+// function plusMinus() {
+//   document.querySelector("#results").value =
+//   document.querySelector("#results").value.replace(lastNumber, '-${lastNumber}');
+//	lastNumber = lastNumber * -1;
+// }
 
 function equals() {
   document.querySelector("#results").value = eval(document.querySelector("#results").value);
