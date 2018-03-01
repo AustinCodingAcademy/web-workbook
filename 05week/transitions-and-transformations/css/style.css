@@ -1,0 +1,23 @@
+.container > div{
+  height: 50px;
+  width: 50px;
+  background-color: orange;
+  margin: 10px;
+}
+
+.container{
+  width: 10%;
+  margin: 0 auto;
+}
+
+.container:hover > div:nth-child(odd){
+	transform: scale(2) translate(200px) rotate(1080deg);
+	transition-duration: 5s;
+  background-color: blue;
+}
+
+.container:hover> div:nth-child(even){
+	transform: scale(.5) translate(-200px) rotate(-180deg);
+	transition-duration: 3s;
+  background-color: green;
+} 
