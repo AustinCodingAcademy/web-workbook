@@ -27,7 +27,8 @@ function add() {
 
 function update() {
   let newcart = document.querySelectorAll("li");
-  document.getElementsByTagName("h2").insertAdjacentHTML('afterend', `<h2>You have ${newcart.length} items in your shopping cart</h2>`);
+  document.getElementsByTagName("h2").insertAdjacentHTML('afterend', `<h2>(Tag) - You have ${newcart.length} items in your shopping cart</h2>`);
+  document.querySelector("h2").insertAdjacentHTML('afterend', `<h2>(Query) - You have ${newcart.length} items in your shopping cart</h2>`);
 }
 
 //the rest is left as an exercise for the reader .....
