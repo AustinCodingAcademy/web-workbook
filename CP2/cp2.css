@@ -1,0 +1,346 @@
+body {
+  background-color: rgba(242, 246, 248, 1);
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 150px;
+  font-family: arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+h1:hover {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  color: green;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-image: url("./img/img1.jpeg");
+  width: 1500px;
+  height: 400px;
+  margin-bottom: 30px;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+}
+
+.description {
+  font-size: 20px;
+  font-family: arial;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 50px;
+  background-color: lightgrey;
+}
+
+h2 {
+  font-size: 50px;
+  font-family: arial;
+  margin-bottom: 30px;
+  color: darkgreen;
+}
+
+#wrapper {
+  width: 1400px;
+  margin: auto;
+  border: ;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr 1fr;
+  grid-gap: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 40px;
+  border-bottom: 2px solid green;
+}
+
+.item1 {
+  grid-column: span 1;
+  grid-row: span 5;
+  background-image: url("./img/item1.jpeg");
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: arial;
+  font-weight: bold;
+}
+
+.item2 {
+  grid-column: span 1;
+  grid-row: span 5;
+  background-image: url("./img/item2.jpeg");
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: arial;
+  font-weight: bold;
+}
+
+.item3 {
+  grid-column: span 1;
+  grid-row: span 5;
+  background-image: url("./img/item3.jpeg");
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: arial;
+  font-weight: bold;
+}
+
+.item4 {
+  grid-column: span 1;
+  grid-row: span 5;
+  background-image: url("./img/item4.jpeg");
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: arial;
+  font-weight: bold;
+}
+
+.item5 {
+  grid-column: span 1;
+  grid-row: span 5;
+  background-image: url("./img/item5.jpeg");
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: arial;
+  font-weight: bold;
+}
+
+.item6 {
+  grid-column: span 1;
+  grid-row: span 5;
+  background-image: url("./img/item6.jpeg");
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: arial;
+  font-weight: bold;
+}
+
+.item7 {
+  grid-column: span 1;
+  grid-row: span 5;
+  background-image: url("./img/item7.jpeg");
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: arial;
+  font-weight: bold;
+}
+
+.item8 {
+  grid-column: span 1;
+  grid-row: span 5;
+  background-image: url("./img/item8.jpeg");
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: arial;
+  font-weight: bold;
+}
+
+.item9 {
+  grid-column: span 1;
+  grid-row: span 5;
+  background-image: url("./img/item9.jpeg");
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-family: arial;
+  font-weight: bold;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.social {
+  width: 270px;
+  height: 324px;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid red;
+}
+
+.subjecthead {
+  font-weight: bold;
+  font-family: arial;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.bodyinfo {
+  font-family: arial;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.upload {
+  width: 270px;
+  height: 324px;
+  background-color: lightgrey;
+  border-top: 3px solid green;
+}
+
+.contact {
+  width: 270px;
+  height: 324px;
+  background-color: lightgrey;
+  border-top: 3px solid blue;
+}
+
+.namebox {
+  float: left;
+  height: 40px;
+  width: 200px;
+  margin-left: 10px;
+  background-color: white;
+}
+
+.messagebox {
+  float: left;
+  height: 60px;
+  width: 200px;
+  margin-left: 10px;
+  background-color: white;
+}
+
+.send {
+  height: 40px;
+  width: 60px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background-color: green;
+  margin-top: 70px;
+  text-align: center;
+}
+
+/* mobile view */
+
+@media (max-width: 500px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-gap: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 40px;
+    border-bottom: 2px solid green;
+  }
+  .item1 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-image: url("./img/item1.jpeg");
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: arial;
+    font-weight: bold;
+  }
+  .item2 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-image: url("./img/item2.jpeg");
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: arial;
+    font-weight: bold;
+  }
+  .item3 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-image: url("./img/item3.jpeg");
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: arial;
+    font-weight: bold;
+  }
+  .item4 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-image: url("./img/item4.jpeg");
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: arial;
+    font-weight: bold;
+  }
+  .item5 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-image: url("./img/item5.jpeg");
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: arial;
+    font-weight: bold;
+  }
+  .item6 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-image: url("./img/item6.jpeg");
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: arial;
+    font-weight: bold;
+  }
+  .item7 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-image: url("./img/item7.jpeg");
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: arial;
+    font-weight: bold;
+  }
+  .item8 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-image: url("./img/item8.jpeg");
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: arial;
+    font-weight: bold;
+  }
+  .item9 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-image: url("./img/item9.jpeg");
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: arial;
+    font-weight: bold;
+  }
+  .boxes {
+    justify-content: center;
+  }
+}
