@@ -11,6 +11,7 @@ document.querySelector("h1").insertAdjacentHTML('afterend', `<h2>You have ${cart
 function remove(item) {
   let thisoldthing = document.querySelector(`#${item}`);
   thisoldthing.remove();
+  update();
 }
 
 function add() {
@@ -21,10 +22,12 @@ function add() {
   let newcart = document.querySelectorAll("li");
   descriptionlist[descriptionlist.length - 1].insertAdjacentHTML('afterend', `<p class="pargraph" id="p${newcart}">${itemname}: ${itemdesc}</p>`);
   console.log(`<p class="pargraph" id="p${newcart.length}">${itemname}: ${itemdesc}</p>`);
-
+  update();
 }
 
-document.querySelector("h1").insertAdjacentHTML('afterend', `<h2>You have ${cart.length} items in your shopping cart</h2>`);
-
+function update() {
+  let newcart = document.querySelectorAll("li");
+  document.getElementsByTagName("h2").insertAdjacentHTML('afterend', `<h2>You have ${newcart.length} items in your shopping cart</h2>`);
+}
 
 //the rest is left as an exercise for the reader .....
