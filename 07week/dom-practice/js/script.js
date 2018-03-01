@@ -1,5 +1,8 @@
 'use strict';
 
-document.addEventListener("DOMContentLoaded", function(event) {
-    // You code here
-});
+let items = document.querySelectorAll("p");
+alert(items.length)
+
+document.querySelector('h1').insertAdjacentHTML('afterend',
+'<h2>You have ${items.length} items in your shopping cart.</h2>'
+)
