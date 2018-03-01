@@ -1,6 +1,7 @@
-'use strict';
+let lastNum;
 function addNumber(num) {
   document.querySelector("#results").value += num;
+  lastNum = num;
 }
 
 function clearResults() {
@@ -20,9 +21,9 @@ function multiplecation() {
 }
 
 function negativeInteger() {
-  document.querySelector("#results").value
-  let integer = document.querySelector("#results").value
-  if integer()
+  let current = document.querySelector("#results").value;
+  document.querySelector("#results").value = current.slice(0, -1);
+  document.querySelector("#results").value += ("(-" + lastNum + ")");
 }
 
 
