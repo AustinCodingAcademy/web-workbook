@@ -1,3 +1,5 @@
+"use strict";
+
 function addNumber(num) {
   document.querySelector("#results").value += num;
 }
@@ -26,7 +28,6 @@ function negative1() {
   var current=document.querySelector("#results").value;
   document.querySelector("#results").value = current *-1;
 }
-
 
 
 function equals() {
