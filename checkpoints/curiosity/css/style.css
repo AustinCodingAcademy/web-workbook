@@ -41,17 +41,16 @@ Heading (top nav) styles
   align-items: center;
 }
 
-
 /* collapsed topnav bar styles */
 
 /* topnav bar is just not working when collapsed.   Not sure why not. */
 
 .navbar-toggler {
-  outline:none;
+  outline: none;
 }
 
 .navbar-toggler:focus {
-  outline:none;
+  outline: none;
 }
 
 .navbar-dark .navbar-toggler-icon {
@@ -66,8 +65,8 @@ Heading (top nav) styles
 */
 
 /* moves things around badly while collapsing.  For some reason, when transitioning it has a height of 300 (308?) px.   display none is OK, but makes it seem like the menu isn't showing up for a long time.   responds to float; */
-.navbar-collapse.collapsing {
-}
+
+.navbar-collapse.collapsing {}
 
 #navbar-supported-content {
   padding-left: 0px;
@@ -87,9 +86,9 @@ Heading (top nav) styles
   justify-content: space-between;
 }
 
-
 /* moves NASATV to the right spot, but only when the dropdown is active */
-.navbar-nav > li.dropdown:nth-child(4) {
+
+.navbar-nav>li.dropdown:nth-child(4) {
   position: absolute;
   display: block;
   width: 100%;
@@ -97,22 +96,22 @@ Heading (top nav) styles
   right: 17em;
   background-color: transparent;
 }
-.navbar-nav >  li:nth-child(4) a {
+
+.navbar-nav>li:nth-child(4) a {
   display: table;
   background-color: transparent;
 }
-.navbar-nav > li:nth-child(4) a span {
+
+.navbar-nav>li:nth-child(4) a span {
   display: table-cell;
   vertical-align: middle;
   width: content;
 }
 
-
-
 .navbar-nav li.nav-item {
   background-color: #15418c;
   display: block;
-  top:23px;
+  top: 23px;
 }
 
 .navbar-nav li.nav-item:hover {
@@ -152,7 +151,6 @@ div.dropdown-menu.show a.dropdown-item:link, div.dropdown-menu.show a.dropdown-i
   font-weight: 300;
   padding: 8px;
 }
-
 
 .dropdown-divider {
   margin: 0rem;
@@ -654,7 +652,6 @@ Medium layout.   Banner image is visible; medium card layout
     grid-auto-rows: 300px;
     grid-template-areas: "card1 card1" "card2 card3" "card4 card5" "card6 card7" "card8 card9" "card10 .";
   }
-
 }
 
 /*
@@ -676,6 +673,7 @@ Medium layout.   Banner image is visible; medium card layout
   .navbar-nav li.nav-item {
     padding: 0px 5px;
     background-color: transparent;
+    top: 0px;
   }
   .navbar-nav li.nav-item:not(:first-child)::after {
     content: "";
