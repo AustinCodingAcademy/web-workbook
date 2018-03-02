@@ -19,24 +19,30 @@ function cartHeader (total) {
   document.querySelector('#title').insertAdjacentHTML('beforeend',
   `<h5 id="cart-header">You have ${total} items in your shopping cart.</h5>`);
 };
+cartHeader(totalItems);
+
 
 function updateHeader () {
-  var currentHeader = document.getElementById("cart-header");
-  var newHeader = document.createElement("h5");
-  currentHeader.innerHTML = "replaced anchor!";
-  myAnchor.parentNode.replaceChild(mySpan, myAnchor);
-}
-cartHeader(totalItems);
+  recountItems ();
+  document.getElementById("cart-header").innerHTML =
+  `<h5 id="cart-header">You have ${totalItems} items in your shopping cart.</h5>`;
+};
+
+// var lastParID = document.getElementByID('p').lastChild.id;
+// function updateLastParId () {
+//   var
+// };
+
 
 function addItem () {
   let itemName = document.querySelector('input').value
   let itemDescription = document.querySelector('textarea').value;
-  document.querySelector('ul').insertAdjacentHTML('beforeend',`<li>${itemName}</li>`);
-  document.querySelector('ul').insertAdjacentHTML('beforeend',`<p>${itemDescription}</p>`);
-}
+  document.querySelector('ul').insertAdjacentHTML('beforeend',`<li>${itemName}<a href="#" onclick="removeItem(this)">[X Remove From Cart]</a></li>`);
+  document.querySelector('p').insertAdjacentHTML('beforeend',`<p>${itemDescription}</p>`);
+  updateHeader ();
+};
 
 function removeItem (link) {
     link.parentNode.parentNode.removeChild(link.parentNode);
-    recountItems ();
-    cartHeader (totalItems);
-}
+    updateHeader ();
+};
