@@ -1,5 +1,5 @@
 'use strict';
 
-document.addEventListener("DOMContentLoaded", function(event) {
-    // You code here
-});
+let items = document.querySelectorAll(".paragraph");
+console.log(items)
+alert('You have ' + items.length + ' in your cart.')

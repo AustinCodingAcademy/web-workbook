@@ -1,7 +1,10 @@
 'use strict';
 
+let lastNumber = '';
+
 function addNumber(num) {
   document.querySelector("#results").value += num;
+  lastNumber += num;
 }
 
 function clearResults() {
@@ -9,26 +12,29 @@ function clearResults() {
 }
 
 function addition() {
-  document.querySelector("#results").value += "+";
+  document.querySelector("#results").value += " + ";
+  lastNumber = '';
 }
 
 function subtraction() {
-  document.querySelector("#results").value += "-";
+  document.querySelector("#results").value += " - ";
+  lastNumber = '';
 }
 
 function multiplication() {
-  document.querySelector("#results").value += "*";
+  document.querySelector("#results").value += " * ";
+  lastNumber = '';
 }
 
 function division() {
-  document.querySelector("#results").value += "/";
+  document.querySelector("#results").value += " / ";
+  lastNumber = '';
 }
 
-function negative() {
-  let neg = document.querySelector("#results");
-  let n = neg.value;
-  n = n * -1;
-  neg.value = n;
+function plusMinus() {
+  document.querySelector("#results").value += " * -1 ";
+  // document.querySelector("#results").value = document.querySelector("#results").value.replace(lastNumber, `-${lastNumber}`);
+    // lastNumber = lastNumber * -1;
 }
 
 function equals() {
