@@ -1,0 +1,237 @@
+body {
+  background-image: url(../img/42E69CA000000578-4753386-image-a-148_1501675262885.jpg);
+  /* background-image is for the parashoot*/
+}
+
+.boxy {
+  /* border: red 1px solid; */
+  /* this is being used to put a line in when i am buliding the webiste*/
+}
+
+#wrapper {
+  width: 1000px;
+  height: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: .5fr 1fr 1fr 1fr;
+  /* wrapper is th eid that i gvin it, width is what i am useing for the width hight same but with height, grid grid-template rows and columns are but three squres so i can hav a told of 9 and the .fr1 is been used for my header.*/
+}
+
+#wrapper article {
+  /* border: 1px red solid; */
+  /*left them at zero cause there was not much use for them bored is being use for when i am buliding the site
+*/
+}
+
+h3 {
+  margin-right: 250px;
+  /* margin-right 250px is used so thw wording can be place in a area that is need for.*/
+}
+
+header {
+  color: white;
+  font-size: 35px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: auto;
+  /* color is white do to it being the back ground color that it is, font-size was beacuse it was a goud size.
+  grid column start and end are bing used to put this were I I need them to be place for everything. text-align is auto becase center did not do what i lkie/ margin-left is being used so my .boxes does not move out of the right postions and make it look neat.*/
+}
+
+.boxs1 {
+  grid-row: 1;
+  grid-column: 3;
+  width: 350px;
+  /* gird row is to put it in the right row, grid-column is use for put it in what column i need it, width is used for the size that i want it to be so it looks big enough.*/
+}
+
+.boxes {
+  border: 5px white solid;
+  border-radius: 45px;
+  text-align: center;
+  margin-top: 35px;
+  /* boder put 5px for the size of the border white cause it looks nice, border-radius to make the border look  litter nicer, text text-align did to center the text, margin top 35px so it is mover a little bit form the top of the screen   */
+}
+
+.box1 {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: 1;
+  /* display flex is beng used so i can space stuff around with justify-content and also center so the words i have in there are a litter beter look and not all mest up.*/
+}
+
+.box2 {
+  color: green;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: 2;
+  font-size: 20px;
+  /* i pick green case it was a good color with the back ground grids are being used so that i can put stuff in a nice arar that i fits an not takeing up a lot a room and grid-rowis being use to tell what grid row i want it to be in.*/
+}
+
+.box5 {
+  grid-row: 4;
+  grid-column: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  /* i did grid row here so i can know what row i want it and a column so i can have the right  column that i want it in flex wrap is being used so that my t ext is wrap around to gther used justify-content center to cter every thing text-align center same resons i pick wihte cause it look good useing it fontsie was being used to put 20px do to the fac it makes it fit nices nd ther and it is alos a readably size for everything*/
+}
+
+.fun2 {
+  margin-left: 5px;
+}
+
+.box6 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 3;
+  border: 10px solid black;
+  height: 200px;
+  width: 260px;
+  margin-left: 100px;
+  /* grid columen stared and end are being used to put things in a star postin and a end postin grid row is the row i want to but it in color green so it looks nice. PS the color green might not be used*/
+}
+
+.box7 {
+  grid-column: 3;
+  grid-row: 3;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  /* grid coloum 3 was being used casut i need it in one colomun same for the row color white is being use so it can be seen cause of the back ground justify-contentis beeing used so everthing can be center. font size being use cause it what makes everything fit*/
+}
+
+.box8 {
+  grid-column: 2;
+  grid-row: 4;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  justify-content: center;
+  font-size: 20px;
+  text-align: center;
+  /* grid column is being used because it on comlun need same with the row just a row being used, white cause of back gorund flex wrap is being use so everthing fiuts togter aund each other justify-content flex star and center are being useing to put sutff were it needs to go font-size is 20px becaus it fits it there area text-align center is being used to cnter the text.*/
+}
+
+.box9 {
+  grid-column: 3;
+  grid-row: 4;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  /* border: 5px solid white;
+  height: 250px; */
+  /* grid-column is being used beaces it a single columnall by it self sdam a the row flex wrap is being used to wap everthing around, flex direction coloum is being used to put ever thing in column justify-content is center is being used to center everything color white is being use caus of back ground text-align center is to center text-align font-size so the words fit in there.*/
+}
+
+@media (max-width: 850px) {
+  #wrapper {
+    width: 750px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* the @media is be use to set up a mobile web page, warpper is my id width is being used at 500 cauyse that is around were most phons start for the wirdth size
+  grid-column-start and end are the rows that i am want to use to get the job done.*/
+  }
+  header {
+    margin-left: 550px;
+    font-size: 35px;
+    margin-top: 100px;
+    /* margin is like it is so that my work does not bush my .boexes over pass the line i wnat it to be. */
+  }
+  .boxs1 {
+    grid-row: 1;
+    grid-column: 3;
+    margin-top: 10px;
+    /*gird row is to put it in the right row, grid-column is use for put it in what column i need it, width is used for the size that i want it to be so it looks big enough.*/
+  }
+}
+
+.boxes {
+  margin-top: auto;
+  /* useing margin-top so it mover a liitle form the top*/
+}
+
+.box1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row: 1;
+  text-align: center;
+  /* sames as most in the other destop part */
+}
+
+.box2 {
+  grid-column-start: 1;
+  grid-row-end: 1;
+  grid-row: 2;
+  /* border: 5px solid white;
+  height: 150px; */
+  /* smae as the desktop part*/
+}
+
+.box5 {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  /* border: 5px solid white;
+  height: 225px; */
+  margin-top: 15px;
+  /* fix font sixe do to the fix that it nees to be small to fit moble part.*/
+}
+
+.box7 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row: 3;
+  font-size: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* border: 5px solid white;
+  height: 225px; */
+  margin-top: 5px;
+  /* grid coloum start and end are same as desxtop griod row also font-size do to the fact that it fits the way i need it to fit flex-wrap so it warps around*/
+}
+
+.box8 {
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 25px;
+  margin-top: 15px;
+  /* border: 5px solid white;
+  height: 300px; */
+  text-align: center;
+  /* so it wpars aroud everything font size so it foxt my arar justify-content to center everythin*/
+}
+
+.box9 {
+  grid-column: 3;
+  grid-row: 4;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-top: 15px;
+  /* border: 5px solid white;
+  height: 250px; */
+  /* noth cange form desxt top do the fact nothing was neeed to be done */
+}

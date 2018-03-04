@@ -1,2 +1,3 @@
 var food = ['apple', 'pizza', 'pear'];
-console.lop(food[0])
+
+console.log(food[1]);
