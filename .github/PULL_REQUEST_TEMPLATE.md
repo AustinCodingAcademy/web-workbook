@@ -7,7 +7,8 @@ This is the rubric that your instructor will use to grade your checkpoints. Plea
 - [ ] Appropriate use of Semantic Elements: 15 points
 - [ ] Effective use of box model: 15 points
 - [ ] Proper use of documentation (commenting on code): 15 points
-- [ ] The student demonstrated mastery of HTML/CSS by building a website of professional caliber: 25 points
+- [ ] Linter passing: 10 points
+- [ ] The student demonstrated mastery of HTML/CSS by building a website of professional caliber: 15 points
 
 **Checkpoint 2**
 - [ ] Effective use of Flexbox layout: 15 points
@@ -15,12 +16,14 @@ This is the rubric that your instructor will use to grade your checkpoints. Plea
 - [ ] Effective use of CSS Grid: 15 points
 - [ ] Proper use of documentation (commenting on code): 15 points
 - [ ] Site is hosted on github: 15 points
-- [ ] The student demonstrated mastery of HTML/CSS and Responsive Web Design by building a website of professional caliber: 25 points
+- [ ] Linter passing: 10 points
+- [ ] The student demonstrated mastery of HTML/CSS and Responsive Web Design by building a website of professional caliber: 15 points
 
 **Checkpoint 3**
 - [ ] Use of HTML: 15 points
 - [ ] Use of CSS: 15 points
 - [ ] Use of JQuery: 15 points
 - [ ] Proper use of documentation (commenting on code): 15 points
+- [ ] Linter passing: 10 points
 - [ ] The application has a professional look: 15 points
-- [ ] The application functions as it should: 25 points
+- [ ] The application functions as it should: 15 points
