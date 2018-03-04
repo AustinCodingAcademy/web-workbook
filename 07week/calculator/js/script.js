@@ -1,7 +1,10 @@
 'use strict';
 
+let lastNumber = '';
+
   function addNumber(num) {
     document.querySelector("#results").value += num;
+    lastNumber += num;
   }
 
   function clearResults() {
@@ -10,6 +13,7 @@
 
   function addition() {
     document.querySelector("#results").value += "+";
+    lastNumber = '';
   }
 
   function equals() {
@@ -33,8 +37,7 @@
     document.querySelector("#results").value += "/";
   }
 
-  // function posNeg() {
-  //   let (document.querySelector("#results").value === '-') return;
-  //    result = eval($("#results").value()) + '* -1';
-  //   }
-  // }
+  function posNeg() {
+    document.querySelector("#results").value =
+    document.querySelector("#results").value.replace(lastNumber, `-${lastNumber}`);
+  }
