@@ -1,5 +1,4 @@
 'use strict';
 
-document.addEventListener("DOMContentLoaded", function(event) {
-    // You code here
-});
+let items = document.querySelectorAll('p');
+alert(items.length);
