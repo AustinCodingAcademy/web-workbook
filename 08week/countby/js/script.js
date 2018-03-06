@@ -3,7 +3,7 @@ $(document).ready(function() {
 
   //annoying alert
   // next challenge - see if you can do this w/ jquery dialog instead
-  //$(window.alert('Are you ready to count by ones, tens, and hundreds?'));
+  $(window.alert('Are you ready to count by ones, tens, and hundreds?'));
 
 
 
