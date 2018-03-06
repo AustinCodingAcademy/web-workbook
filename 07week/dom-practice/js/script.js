@@ -15,8 +15,11 @@ if (cart.length < n) {
 }
 
 function remove(item) {
-  let thisoldthing = document.querySelector(`#${item}`);
-  thisoldthing.remove();
+  let itemnum = item.substring(4);
+  let itemcart = document.querySelector(`#${item}`);
+  let itemdesc = document.querySelector(`#p${itemnum}`);
+  itemcart.remove();
+  itemdesc.remove();
   update();
 }
 
@@ -26,7 +29,7 @@ function add() {
   let newcart = document.querySelectorAll("li");
   document.querySelector("ul").insertAdjacentHTML('beforeend', `<li id="item${newcart.length+1}">${itemname}  <button onclick="remove('item${newcart.length+1}')">Remove</button></li>`);
   let descriptionlist = document.querySelectorAll(".paragraph");
-  descriptionlist[descriptionlist.length - 1].insertAdjacentHTML('afterend', `<p class="pargraph" id="p${newcart}">${itemname}: ${itemdesc}</p>`);
+  descriptionlist[descriptionlist.length - 1].insertAdjacentHTML('beforeend', `<p class="pargraph" id="p${newcart.length+1}">${itemname}: ${itemdesc}</p>`);
   update();
 }
 
