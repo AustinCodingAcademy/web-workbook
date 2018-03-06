@@ -1,18 +1,23 @@
 .nav {
 
   display: flex;
-  background-color: #203A55;
+  background-color: #123754;
+
   width: 100%;
   padding: 20px;
   border-bottom: 2px solid white;
   color: white;
   justify-content: space-around;
-  font-size: 20px;
 }
 
 .logo {
 
 
+
+}
+.nav li{
+  margin: 20px;
+  list-style: none;
 }
 .nav li{
   margin: 20px;
@@ -22,6 +27,9 @@
 .nav li:hover{
   color: rgb(41, 149, 163);
 
+
+.nav li:hover{
+  color: rgb(41, 149, 163);
 }
 
 body {
@@ -30,7 +38,8 @@ body {
   background-attachment: fixed;
 }
 .content {
-  display: block;
+  display: flex;
+
   background-color: #123754;
   border-radius: 15px;
   width: 400px;
@@ -80,73 +89,60 @@ input[type=text]{
   margin: 20px;
   padding: 15px;
   font-size: 12px;
-  position: absolute;
+
 }
 input[type=date]{
   background-color: #123754;
   border:2px solid white;
   color: grey;
   border-radius: 15px;
-  margin-top: 140px;
-  margin-left: 23px;
-  padding: 10px;
-  position: absolute;
-}
-
-.date .one input[type=date]{
-  position: absolute;
-  margin-left: 40px;
-  margin-top: 60px;
-}
-
-.content div:hover{
-  background-color: rgb(39, 82, 191);
+  margin: 10px;
+  padding: 5px;
 
 }
-.depart{
-  padding-top:50px;
-  position: absolute;
+
+.content .buttons a{
+  background-color: rgb(72, 168, 108);
+  display: flex;
+  margin-top: 0px;
+  height: 50px;
+  width: 125px;
+  border-radius: 15px;
+
 }
+
+.content div a img{
+
 
 .arrive{
   padding-top:50px;
   position: absolute;
   margin-left: 200px;
 }
-
-.boxes {
-  position: absolute;
-}
-
-.leftside{
-  display:block;
-  position: relative;
-  height: 100px;
+.content div:hover{
+  background-color: rgb(39, 82, 191);
 
 }
 
-.rightside{
-  display: block;
-  height: 100px;
-  margin-left: 200px;
-  position: absolute;
+.leftside {
+  justify-content: flex-start;
+  flex-direction: column;
 }
+
+.rightside {
+  float: right;
+}
+
+
 
 .search {
   background-color: rgb(39, 82, 191);
   color: white;
   font-size: 20px;
   text-align: center;
+  margin-top: 0px;
   height: 50px;
   width: 300px;
   border-radius: 15px;
-  position: absolute;
-  margin-left: 50px;
-  margin-top: 180px;
-}
 
-.search a{
-
-  padding-top: 10px;
-  padding-right:
 }
