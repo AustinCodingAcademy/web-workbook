@@ -7,9 +7,9 @@ $(document).ready(function() {
 
 
 
-  var numo = 0;
-  var numt = 0;
-  var numh = 0;
+  var numo = 1;
+  var numt = 10;
+  var numh = 100;
   $('#counter-1').click(function() {
     numo++;
     $(this).text(numo);
