@@ -18,8 +18,10 @@ function remove(item) {
   let itemnum = item.substring(4);
   let itemcart = document.querySelector(`#${item}`);
   let itemdesc = document.querySelector(`#p${itemnum}`);
+  console.log(itemdesc);
   itemcart.remove();
   itemdesc.remove();
+// something is buggy here.  not sure how I'm actually supposed to be removing these.  It seems that the first time you remove items, it removes all the item desciptions after that one.  Or at least it removes all the new items
   update();
 }
 
