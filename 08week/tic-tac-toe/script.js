@@ -1,5 +1,8 @@
 'use strict';
 
 $(document).ready(function() {
-  // Put app logic in here
+  let playerTurn = 'X';
+  $('[data-cell]').on('click', function(){
+    $(this).text(playerTurn);
+  });
 });
