@@ -1,0 +1,87 @@
+.boxy {
+  border: red solid 1px;
+}
+
+#wrapper {
+  width: 1000px;
+  height: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+#flex {
+  display: flex;
+}
+
+.topTextBox {
+  grid-column: span 4;
+  text-align: center;
+}
+
+.firstRowBoxes {
+  grid-column: span 2;
+}
+
+.secondRowBoxes {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.thirdRowBoxes {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+#BoxGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 30% 30% 30%;
+}
+
+.boxFormat {
+  margin: 20px;
+}
+
+.smallBoxFormat {
+  margin-bottom: 10px;
+}
+
+.secondSmallBoxFormat {
+  margin-right: 20px;
+}
+
+.thirdSmallBoxFormat {
+  margin-left: 20px;
+}
+
+.innerBoxSmall {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.innerBoxLarge {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+@media (max-width: 1050px) {
+  #wrapper {
+    width: 700px;
+    height: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .firstRowBoxes {
+    display: none;
+  }
+  .thirdRowBoxes {
+  display: none;
+  }
+  #flex {
+
+  }
+
+}

@@ -1,0 +1,55 @@
+.boxy {
+  border: red 1px solid;
+}
+
+header {
+  text-align: center;
+}
+
+#wrapper {
+  width: 1000px;
+  height: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+.one {
+  grid-column: span 2;
+}
+
+.blank {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.three {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+#header {
+  grid-column: 1/span 5;
+}
+
+.six {
+  grid-column: span 2;
+}
+
+@media (max-width: 999px) {
+  #wrapper {
+    width: 700px;
+    height: 1000px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 699px) {
+  #wrapper {
+    width: 500px;
+    height: 1000px;
+    margin: auto;
+  }
+}

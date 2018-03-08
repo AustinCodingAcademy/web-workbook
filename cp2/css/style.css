@@ -1,0 +1,263 @@
+.boxy {
+  border: black 1px solid;
+}
+
+#wrapper {
+  width: 85%;
+  height: 1800px;
+  margin: auto;
+}
+
+.menuBox {
+  height: 100px;
+  width: 100%;
+}
+
+.menuLogo {
+  height: 100%;
+  width: 180px;
+  background-image: url("../img/dogLogo.png");
+  background-size: 100% 100%;
+}
+
+.button {
+  height: 36px;
+  width: 150px;
+  text-align: center;
+  padding-top: 10px;
+  border: 2px brown solid;
+  border-radius: 15px;
+}
+
+.linkBox {
+  height: 100%;
+  width: 40%;
+}
+
+.menuLoginBox {
+  height: 100%;
+  width: 25%;
+}
+
+.loginButton {
+  height: 50px;
+  width: 100px;
+  border: black 1px solid;
+  text-align: center;
+}
+
+.menuFont {
+  font-size: 15pt;
+}
+
+#pond {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Top menu layout */
+
+.flexBox {
+  display: flex;
+}
+
+.sectionWrapper {
+  height: 800px;
+  width: 100%;
+  margin: auto;
+  background-image: url("../img/dogWallpaper.jpg");
+}
+
+aside {
+  height: 100%;
+  width: 50%;
+  background: black;
+  opacity: 0.6;
+}
+
+.asideInfoBox {
+  height: 600px;
+  width: 75%;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+/* build out the three logos and text boxes  */
+
+.articleWrapper {
+  height: 400px;
+  width: 100%;
+}
+
+.iconSize {
+  width: 240px;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.summarySize {
+  height: 100%;
+  width: 240px;
+  background: white;
+}
+
+h2 {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+form {
+  color: white;
+  font-size: 1.5em;
+}
+
+input {
+  height: 30px;
+  width: 300px;
+}
+
+.submitButton {
+  height: 40px;
+  width: 300px;
+  background-color: orange;
+  color: white;
+}
+
+p {
+  text-align: center;
+}
+
+/* build out footer  */
+
+.bottomInfoWrapper {
+  height: 380px;
+  width: 100%;
+  background: #332011;
+}
+
+.bottomDivBox {
+  height: 350px;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footerBox {
+text-align: center;
+}
+
+button {
+  height: 35px;
+  width: 100px;
+  float: left;
+  margin-left: 60px;
+  background: yellow;
+}
+
+h4 {
+  font-size: 1.5em;
+text-align: center;
+  color: white;
+}
+
+h5 {
+  font-size: 1.2em;
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h6 {
+  font-size: 0.8em;
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+}
+
+
+
+/* Mobile layout */
+
+@media (max-width: 1050px) {
+  #wrapper {
+    width: 400px;
+    height: 1000px;
+    margin: auto;
+  }
+  .menuBox {
+    height: 100px;
+    width: 100%;
+    display: none;
+  }
+
+  .menuLogo {
+    height: 100%;
+    width: 180px;
+    background-image: url("../img/ham.jpg");
+    background-size: 100% 100%;
+    float: left;
+  }
+  .button {
+    height: 36px;
+    width: 150px;
+    text-align: center;
+    padding-top: 10px;
+    border: 2px brown solid;
+    border-radius: 15px;
+    display: none;
+  }
+
+  .linkBox {
+    height: 100%;
+    width: 40%;
+    display: none;
+  }
+
+  .menuLoginBox {
+    height: 100%;
+    width: 25%;
+    display: none;
+  }
+
+  .loginButton {
+    height: 50px;
+    width: 100px;
+    border: black 1px solid;
+    text-align: center;
+    display: none;
+  }
+
+  .sectionWrapper {
+    height: 800px;
+    width: 100%;
+    margin: auto;
+    background: black;
+  }
+
+  aside {
+    height: 100%;
+    width: 50%;
+  }
+
+  input {
+    height: 30px;
+    width: 180px;
+    float: left;
+  }
+
+  .submitButton {
+    height: 40px;
+    width: 180px;
+    background-color: orange;
+    color: white;
+  }
+
+  #pond {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }

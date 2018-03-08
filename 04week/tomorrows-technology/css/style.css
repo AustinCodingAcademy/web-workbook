@@ -1,0 +1,109 @@
+.boxy {
+  border: red solid 1px;
+}
+
+.smallFontSize {}
+
+.wrapper {
+  width: 1000px;
+  height: 800px;
+  margin: auto;
+}
+
+.makeFlex {
+  display: flex;
+}
+
+.mobileBox {
+  display: none;
+}
+
+main {
+  width: 65%;
+  height: 100%;
+  float: left;
+}
+
+aside {
+  width: 34%;
+  height: 100%;
+  float: right;
+}
+
+.picture {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.techButton {
+  width: 120px;
+  height: 30px;
+  background: dimgrey;
+  color: lightgrey;
+}
+
+article {
+  width: 100%;
+  height: 40%;
+}
+
+.asideTitleBox {
+  width: 90%;
+  height: 100px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.asideStoryBox {
+  width: 90%;
+  height: 500px;
+  margin-left: 5%;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 576px;
+    height: 800px;
+    margin: auto;
+  }
+  main {
+    width: 100%;
+    height: 500px;
+    float: left;
+  }
+  aside {
+    display: none;
+  }
+}
+
+@media (max-width: 599px) {
+  .wrapper {
+    width: 350px;
+    height: 800px;
+    margin: auto;
+  }
+  .mobileBox {
+    height: 200px;
+    width: 100%;
+    background: dimgrey;
+    display: flex;
+  }
+  .mobileLeft {
+    height: 200px;
+    width: 120px;
+    margin-left: 10%;
+  }
+  .mobileRight {
+    height: 200px;
+    width: 120px;
+    margin-left: 10%;
+  }
+  #fontSize {
+    font-size: 1.2em;
+    color: white;
+  }
+  .botomLinks {
+    color: lightgrey;
+    border: bottom solid lightgrey 1px;
+  }
+}
