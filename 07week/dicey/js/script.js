@@ -16,8 +16,8 @@ roll();
 // to determine if any of the following cases are true:
 //
 function report() {
-  let pairCounter = 0;
-  let toakCounter = 0;
+  // let pairCounter = 0;
+  // let toakCounter = 0;
   document.querySelector("#report").innerHTML = ""; // clear out the report box
   let diceHtml = document.querySelectorAll('.die'); // this puts all the individual die HTML elements in diceHtml
   for (let dieVal = 1; dieVal < 7; dieVal++) {  // we set up a nested loop, first we check for all the 1s, then 2s, etc
@@ -40,9 +40,9 @@ function report() {
     if (howManyDice === 2) { // we check after the counting is done if it is equal to '2'
       document.querySelector("#report").innerHTML += `There is a pair of ${dieVal}s<br>`;
     } else if (howManyDice === 2) { // we check after the counting is done if it is equal to '2'
-        document.querySelector("#report").innerHTML += `There are two pairs<br>`;// if yes, we report a pair
+      document.querySelector("#report").innerHTML += `There are two pairs<br>`;// if yes, we report a pair
     } else if (howManyDice === 3) { // we check after the counting is done if it is equal to '3'
-        document.querySelector("#report").innerHTML += `There are three ${dieVal}s<br>`;
+      document.querySelector("#report").innerHTML += `There are three ${dieVal}s<br>`;
     } else if (howManyDice === 3) { // we check after the counting is done if it is equal to '4'
       document.querySelector("#report").innerHTML += `There is a full house<br>`;
     } else if (howManyDice === 4) { // we check after the counting is done if it is equal to '5'
