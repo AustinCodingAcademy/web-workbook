@@ -16,8 +16,11 @@ roll();
 // to determine if any of the following cases are true:
 //
 function report() {
-  // let pairCounter = 0;
-  // let toakCounter = 0;
+  let pairs = [];
+  let toak = null;
+  let foak = null;
+  let yacht = null;
+  let diceArray = [0,0,0,0,0];
   document.querySelector("#report").innerHTML = ""; // clear out the report box
   let diceHtml = document.querySelectorAll('.die'); // this puts all the individual die HTML elements in diceHtml
   for (let dieVal = 1; dieVal < 7; dieVal++) {  // we set up a nested loop, first we check for all the 1s, then 2s, etc
@@ -25,48 +28,53 @@ function report() {
     for (let i = 0; i < 5; i++) {  // we create the inner loop that cycles through the rolled dice
       if (dieVal === Number(diceHtml[i].getAttribute('data-roll'))) {  // we check if the rolled die is equal to the one's we're counting
         howManyDice++; // if so, we add one to the count
+        diceArray[dieVal - 1] = howManyDice;
       }
     }
-    // if (howManyDice === 2) {
-    //   pairCounter += 1;
-    // } else if (howManyDice === 3) {
-    //   toakCounter += 1;
-    // }
-
-
-
-
-
-    if (howManyDice === 2) { // we check after the counting is done if it is equal to '2'
-      document.querySelector("#report").innerHTML += `There is a pair of ${dieVal}s<br>`;
-    } else if (howManyDice === 2) { // we check after the counting is done if it is equal to '2'
-      document.querySelector("#report").innerHTML += `There are two pairs<br>`;// if yes, we report a pair
-    } else if (howManyDice === 3) { // we check after the counting is done if it is equal to '3'
-      document.querySelector("#report").innerHTML += `There are three ${dieVal}s<br>`;
-    } else if (howManyDice === 3) { // we check after the counting is done if it is equal to '4'
-      document.querySelector("#report").innerHTML += `There is a full house<br>`;
-    } else if (howManyDice === 4) { // we check after the counting is done if it is equal to '5'
-      document.querySelector("#report").innerHTML += `There are four ${dieVal}s<br>`;
-    } else if (howManyDice === 5) { // we check after the counting is done if it is equal to '5'
-      document.querySelector("#report").innerHTML += `There is a yacht of ${dieVal}s<br>`;
-    // } else if (howManyDice === 2) { // we check after the counting is done if it is equal to '2'
-    //   document.querySelector("#report").innerHTML += `There are a pair of ${dieVal}s<br>`;
-    // } else if (howManyDice === 2) { // we check after the counting is done if it is equal to '2'
-    //   document.querySelector("#report").innerHTML += `There are a pair of ${dieVal}s<br>`;
+  }
+  let straightFlag = true;
+  for (let i = 0; i < diceArray.length; i++) {
+    if (diceArray[i] !== 1 && i !== 0) {
+      straightFlag = false;
+    }
+    if (diceArray[i] === 2) {
+      pairs.push(i + 1);
+    } else if (diceArray[i] === 3) {
+      toak = i + 1;
+    } else if (diceArray[i] === 4) {
+      foak = i + 1;
+    } else if (diceArray[i] === 5) {
+      yacht = i + 1;
     }
   }
+  if (pairs.length > 0) {
+    if (pairs.length > 1) {
+      document.querySelector("#report").innerHTML += `There are two pairs<br>`;
+    } else if (toak) {
+      document.querySelector("#report").innerHTML += `There is a full house<br>`;
+    } else {
+      document.querySelector("#report").innerHTML += `There is a pair of ${pairs[0]}s<br>`;
+    }
+  }
+  if (toak) {
+    if (pairs.length === 0) {
+      document.querySelector("#report").innerHTML += `There are three ${toak}s<br>`;
+    }
+  }
+  if (foak) {
+    document.querySelector("#report").innerHTML += `There are four ${foak}s<br>`;
+  }
+  if (yacht) {
+    document.querySelector("#report").innerHTML += `There is a yacht of ${yacht}s<br>`;
+  }
 
-// two of dice have the same points, like 3 6 5 6 1 - called pair: example solved for you. Complete the other cases below:
-
-// three of dice have the same points, like 2 4 5 4 4 - called three;
-// four of dice have the same points, like 1 4 1 1 1 - called four;
-// all five dice have the same points, like 2 2 2 2 2 - called yacht;
-// two pairs at once, like 3 6 5 3 5 - called two-pairs;
-// pair and three at once, like 1 6 6 1 6 - called full-house;
-// sequence from 1 to 5, like 2 4 3 5 1 - called small-straight;
-// sequence from 2 to 6, like 6 3 4 2 5 - called big-straight.
+  if (straightFlag) {
+    if (diceArray.sort()[0] === 1) {
+      document.querySelector("#report").innerHTML += `There is a small straight<br>`;
+    } else {
+      document.querySelector("#report").innerHTML += `There is a large straight<br>`;
+    }
+  }
 }
-
-//
 // report the results in the div with the ID 'report'.
 report();
