@@ -47,15 +47,15 @@ $(document).ready(function() {
     if ($('[data-cell="0"]').text() === 'X' && $('[data-cell="1"]').text() === 'X' && $('[data-cell="2"]').text() === 'X'){
       alert('X wins!');
     } else if ($('[data-cell="3"]').text() === 'X' && $('[data-cell="4"]').text() === 'X' && $('[data-cell="5"]').text() === 'X'){
-      alert('X wins');
+      alert('X wins!');
     } else if ($('[data-cell="6"]').text() === 'X' && $('[data-cell="7"]').text() === 'X' && $('[data-cell="8"]').text() === 'X'){
-      alert('X wins');
+      alert('X wins!');
     } else if ($('[data-cell="0"]').text() === 'O' && $('[data-cell="1"]').text() === 'O' && $('[data-cell="2"]').text() === 'O'){
-      alert('O wins');
+      alert('O wins!');
     } else if ($('[data-cell="3"]').text() === 'O' && $('[data-cell="4"]').text() === 'O' && $('[data-cell="5"]').text() === 'O'){
-      alert('O wins');
+      alert('O wins!');
     } else if ($('[data-cell="6"]').text() === 'O' && $('[data-cell="7"]').text() === 'O' && $('[data-cell="8"]').text() === 'O'){
-      alert('0 wins');
+      alert('0 wins!');
     }
   }
 
@@ -63,17 +63,16 @@ $(document).ready(function() {
     if ($('[data-cell="2"]').text() === 'X' && $('[data-cell="4"]').text() === 'X' && $('[data-cell="6"]').text() === 'X'){
       alert('X wins!');
     } else if ($('[data-cell="0"]').text() === 'X' && $('[data-cell="4"]').text() === 'X' && $('[data-cell="8"]').text() === 'X'){
-      alert('X wins');
+      alert('X wins!');
     } else if ($('[data-cell="2"]').text() === 'O' && $('[data-cell="4"]').text() === 'O' && $('[data-cell="6"]').text() === 'O'){
-      alert('O wins');
+      alert('O wins!');
     } else if ($('[data-cell="0"]').text() === 'O' && $('[data-cell="4"]').text() === 'O' && $('[data-cell="8"]').text() === 'O'){
-      alert('O wins');
+      alert('O wins!');
     }
   }
 
-  // let newGame = $('#clear').DataTable();
-  //   $('div[data-cell]').on( 'click', 'td', function () {
-  //   alert(table.cell(this).data() );
-  // } );
+  $('#clear').on('click', function() {
+    location.reload();
+  });
 
 });
