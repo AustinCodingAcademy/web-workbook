@@ -5,7 +5,7 @@ $(document).ready(function() {
   var num10 = 0;
   var num100 = 0;
   $(function() {
-    $('.box').draggable();
+    $('*').draggable();
   });
   $('#counter-1').click(function() {
     num1++;

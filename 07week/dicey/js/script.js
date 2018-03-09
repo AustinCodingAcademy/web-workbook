@@ -3,7 +3,8 @@ let dieChar = ["&#9856;", "&#9857;", "&#9858;", "&#9859;", "&#9860;", "&#9861;"]
 function roll() {
   document.querySelector("#dice").innerHTML = "";
   for (let i = 0; i < 5; i++) {
-    let roll = Math.floor(Math.random() * 6) + 1;
+    // let roll = Math.floor(Math.random() * 6) + 1;
+    let roll = 5;
     document.querySelector("#dice").innerHTML += `<span class="die" data-roll="${roll}">${dieChar[roll - 1]}</span>`;
   }
   report();
