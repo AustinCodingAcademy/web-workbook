@@ -6,9 +6,9 @@ $(document).ready(function() {
   $('[data-cell]').on('click', function() {
     $(this).text(playerTurn);
 
-     verticalWin();
-     horizontalWin();
-     diagonalWin();
+    verticalWin();
+    horizontalWin();
+    diagonalWin();
 
 
 
@@ -21,20 +21,11 @@ $(document).ready(function() {
 
     $('#clear').on('click', function() {
       $('[data-cell]').empty();
-      });
-      $('#clear').on('click', function() {
-        $('#announce-winner').empty();
-        });
     });
-
-
-   // return verticalWin (=>{
-   //   $('#announce-winner').text();
-   // });
-
-
-
-  // });
+    $('#clear').on('click', function() {
+        $('#announce-winner').empty();
+      });
+  });
 
 
   // verticalWin();
@@ -99,9 +90,9 @@ $(document).ready(function() {
       console.log('O WINS');
       $('#announce-winner').text('O WINS');
       $('#announce-winner').text('WINNER');
-  }
+    }
 
-}
+  }
 
 
 
