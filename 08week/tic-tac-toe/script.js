@@ -23,8 +23,8 @@ $(document).ready(function() {
       $('[data-cell]').empty();
     });
     $('#clear').on('click', function() {
-        $('#announce-winner').empty();
-      });
+      $('#announce-winner').empty();
+    });
   });
 
 
