@@ -2,18 +2,48 @@
 
 $(document).ready(function () {
   var $block = null;
-  let $blocksize = 0;
+  let $blocksize = 200;
+
+  let numofdiscs = 4;
+  let move = 1;
+  let minmoves = 2 ** numofdiscs - 1;
+  console.log(minmoves);
 
   $('[data-stack]').click(function () {
+    // If you do not have a disc, pick up a disc
     if (!$block) {
-      $blocksize = $(this).children().last().prop('[data-block]');
-      console.log(`${$blocksize}`);
+      $blocksize = $(this).children().last().attr('data-block');
       $block = $(this).children().last().detach();
+
+      // If you do have a disc, place it
     } else {
-      $(this).append($block);
-      $block = null;
-    }
-  })
+      // test block stacking levels
+      let $baseblock = $(this).children().last().attr('data-block');
+      // if the stack is blank or the botom disc is larger
+      if (!($baseblock) || ($baseblock - $blocksize > 0)) {
+        $(this).append($block);
+        $block = null;
+
+
+
+        if (move > minmoves) {
+          let check = $(this).children().length;
+          if (check === numofdiscs) {
+            $('#announce-game-won').text("won");
+          }
+        }
+        move++;
+      };
+    };
+  });
+
+  function checkforwin() {
+
+    let win = 0;
+
+
+    return win;
+  };
 
   function rainbow(numOfSteps, step) {
     // This function generates vibrant, "evenly spaced" colours (i.e. no clustering). This is ideal for creating easily distinguishable vibrant markers in Google Maps and other apps.

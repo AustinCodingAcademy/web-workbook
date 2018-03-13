@@ -46,4 +46,13 @@ $(document).ready(function() {
 });
 
 
-// Extra Credit: allow the user to drag and drop the shapes.
+/* this is Kevin's method.
+
+
+$('box').click(function() {
+let count = $(this).attr('id').split('-')[1];
+$(this).text(number($(this).text()) + count);
+
+})
+
+*/
