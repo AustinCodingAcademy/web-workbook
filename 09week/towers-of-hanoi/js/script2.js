@@ -1,5 +1,20 @@
 'use strict';
 
+/*
+To-do list:
+ - Do not let discs be moved after win
+ - Do not let discs progress past 12 (10?)
+ - Add minimum moves display
+ - Add current moves display
+ - Make discs draggable
+ - style button
+ - style dropdown
+ - add flair when you win
+ - add fade out/fade in effect when resetting board
+ - style page
+*/
+
+
 $(document).ready(function () {
   var $block = null;
   let $blocksize = 200;
@@ -9,18 +24,16 @@ $(document).ready(function () {
   let minmoves = 2 ** numofdiscs - 1;
   let factor = 100 / numofdiscs;
 
-
-  for (let i = 0; i < numofdiscs; i++) {
-    let color = rainbow(numofdiscs, i);
-    let size = (100 + factor) - (factor * (i + 1));
-    $(`[data-stack="1"] > div:nth-child(${i+1})`).css({
-      'backgroundColor': `${color}`,
-      'height': `${size}px`
-    });
-  }
+  $('#discs').on("click", function () {
+    event.preventDefault();
+    numofdiscs = $(this).find(':selected').text();
+    setdiscs(numofdiscs);
+  });
 
 
-  $('[data-stack]').click(function () {
+
+
+  $('[data-stack]').on("click", function () {
     // If you do not have a disc, pick up a disc
     if (!$block) {
       $blocksize = $(this).children().last().attr('data-block');
@@ -37,10 +50,19 @@ $(document).ready(function () {
 
 
         //check for win
-        if (move > minmoves) {
+        if (move >= minmoves) {
           let check = $(this).children().length;
-          if (check === numofdiscs) {
-            $('#announce-game-won').text("won");
+          if (check == numofdiscs) {
+            let nextdisc = parseInt(numofdiscs) + 1;
+            $('#announce-game-won').text(`Congratulations!  You  won the ${numofdiscs}-disc tower challenge!`);
+            $('#announce-game-won').after(`<button>Try the ${nextdisc}-disc challenge</button`);
+
+            $('button').on("click", function () {
+              console.log(`going for ${nextdisc}`);
+              setdiscs(nextdisc);
+              $('#announce-game-won').text(" ");
+              $('button').remove();
+            });
           }
         }
         move++;
@@ -48,6 +70,29 @@ $(document).ready(function () {
     };
   });
 
+
+
+  function setdiscs(howmanydiscs) {
+    $('[data-stack]').empty();
+    numofdiscs = howmanydiscs;
+    minmoves = 2 ** numofdiscs - 1;
+    factor = Math.round(100 / numofdiscs);
+
+    for (let i = 0; i < numofdiscs; i++) {
+      let color = rainbow(numofdiscs, i);
+      let size = (100 + factor) - (factor * (i + 1));
+      /*
+        This was a terribly clever selector.  Pity I ended up not using it.
+          $(`[data-stack="1"] > div:nth-child(${i+1})`).css({
+      */
+      $('[data-stack="1"]').append(`<div data-block="${size}"></div>`)
+      $(`[data-stack="1"] > div:nth-child(${i+1})`).css({
+        'backgroundColor': `${color}`,
+        'width': `${size}px`
+      });
+    }
+
+  }
 
   function rainbow(numOfSteps, step) {
     // This function generates vibrant, "evenly spaced" colours (i.e. no clustering). This is ideal for creating easily distinguishable vibrant markers in Google Maps and other apps.

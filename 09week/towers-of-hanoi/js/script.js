@@ -26,8 +26,9 @@ $(document).ready(function () {
 
 
         //check for win
-        if (move > minmoves) {
+        if (move >= minmoves) {
           let check = $(this).children().length;
+          console.log(`on ${move} of ${minmoves}, ${check} against ${numofdiscs}`);
           if (check === numofdiscs) {
             $('#announce-game-won').text("won");
           }
@@ -37,4 +38,10 @@ $(document).ready(function () {
     };
   });
 
+  $('div').last().after(`<p>Enjoy the basic game?  Try <a href="index2.html">Towers of Hanoi 2</a></p>`)
+  $('p').css({
+    "fontSize": ".85em",
+    "display": "flex",
+    "justifyContent": "center"
+  });
 });

@@ -1,39 +1,47 @@
+#towers {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  border: groove 3px #9f9f9f;
+  margin: 20px 15%;
+  min-width: 400px;
+}
+
 [data-stack] {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column-reverse;
   align-items: center;
-  height: 101px;
-  background-color: aliceblue;
+  justify-content: flex-start;
+  width: 101px;
+  background-color: lightskyblue;
   margin: 25px;
 }
 
-
 [data-block] {
-  width: 25px;
-  float: left;
+  height: 25px;
 }
 
 [data-block="25"] {
-  height: 25px;
-  background-color: blue;
+  width: 25px;
+  background-color: #7f00ff;
 }
 
 [data-block="50"] {
-  height: 50px;
-  background-color: green;
+  width: 50px;
+  background-color: #00ffff;
 }
 
 [data-block="75"] {
-  height: 75px;
-  background-color: red;
+  width: 75px;
+  background-color: #7fff00;
 }
 
 [data-block="100"] {
-  height: 100px;
-  background-color: yellow;
+  width: 100px;
+  background-color: #ff0000;
 }
 
 #announce-game-won {
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
 }
