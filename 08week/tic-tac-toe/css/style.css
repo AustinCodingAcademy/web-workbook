@@ -20,3 +20,14 @@ div[data-cell] {
 .red-text {
   color: red;
 }
+
+.blinking{
+    animation:blinkingText 0.8s 5;
+}
+@keyframes blinkingText{
+    0%{     color: red;    }
+    49%{    color: transparent; }
+    50%{    color: blue; }
+    99%{    color:transparent;  }
+    100%{   color: red;    }
+}
