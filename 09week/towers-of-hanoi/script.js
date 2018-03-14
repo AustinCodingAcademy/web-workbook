@@ -1,5 +1,40 @@
 'use strict';
 
 $(document).ready(function() {
-  // Put app logic here
-});
+  let $block = null;
+
+  $('[data-stack]').click(function() {
+
+    if ($block) {
+      $(this).append($block);
+      checkForWin();
+      $block = null;
+    } else {
+      $block = $(this).children().last().detach();
+      // goodToDrop();
+    }
+
+  })
+
+  //
+  // function goodToDrop() {
+  //   if ($('[data-stack="3"]')) {
+  //     console.log('You cannot do that!')
+  //   }
+  // }
+
+
+  function checkForWin() {
+    if ($('[data-stack="3"]').children().length === 4) {
+      alert('You Won!');
+    }
+    else if ($('[data-stack="2"]').children().length === 4) {
+      alert('You Won!');
+    }
+  }
+
+  $('#clear').on('click', function() {
+    location.reload();
+  });
+
+})
