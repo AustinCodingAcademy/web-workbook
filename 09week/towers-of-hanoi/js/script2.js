@@ -2,10 +2,6 @@
 
 /*
 To-do list:
- - Do not let discs be moved after win
- - Do not let discs progress past 12 (10?)
- - Add minimum moves display
- - Add current moves display
  - Make discs draggable
  - style button
  - style dropdown
@@ -23,6 +19,7 @@ $(document).ready(function () {
   let move = 1;
   let minmoves = 2 ** numofdiscs - 1;
   let factor = 100 / numofdiscs;
+  let stop = "";
 
   $('#discs').on("click", function () {
     event.preventDefault();
@@ -33,39 +30,55 @@ $(document).ready(function () {
 
 
 
+
   $('[data-stack]').on("click", function () {
     // If you do not have a disc, pick up a disc
-    if (!$block) {
-      $blocksize = $(this).children().last().attr('data-block');
-      $block = $(this).children().last().detach();
+    if ((!stop) && (numofdiscs < 12)) {
+      if (!$block) {
+        $blocksize = $(this).children().last().attr('data-block');
+        $block = $(this).children().last().detach();
 
-      // If you do have a disc, place it
-    } else {
-      // test block stacking levels
-      let $baseblock = $(this).children().last().attr('data-block');
-      // if the stack is blank or the botom disc is larger
-      if (!($baseblock) || ($baseblock - $blocksize > 0)) {
-        $(this).append($block);
-        $block = null;
+        // If you do have a disc, place it
+      } else {
+        // test block stacking levels
+        let $baseblock = $(this).children().last().attr('data-block');
+        // if the stack is blank or the botom disc is larger
+        if (!($baseblock) || ($baseblock - $blocksize > 0)) {
+          $(this).append($block);
+          $block = null;
+          $('.curmovecount').css("display", "inline");
+          $('.curmovecount').text(`Current Moves: ${move}`);
+
+          //check for win
+          if (move >= minmoves) {
+            let check = $(this).children().length;
+            if (check == numofdiscs) {
+              let nextdisc = parseInt(numofdiscs) + 1;
+              stop = "yes";
+
+              $('.curmovecount').text(`Total Moves: ${move}`);
+              $('#announce-game-won').text(`Congratulations!  You  won the ${numofdiscs}-disc tower challenge!`);
+
+              if (nextdisc < 12) {
+                $('#announce-game-won').after(`<button>Try the ${nextdisc}-disc challenge</button`);
+
+                // advance to next level
+                $('button').on("click", function () {
 
 
-        //check for win
-        if (move >= minmoves) {
-          let check = $(this).children().length;
-          if (check == numofdiscs) {
-            let nextdisc = parseInt(numofdiscs) + 1;
-            $('#announce-game-won').text(`Congratulations!  You  won the ${numofdiscs}-disc tower challenge!`);
-            $('#announce-game-won').after(`<button>Try the ${nextdisc}-disc challenge</button`);
 
-            $('button').on("click", function () {
-              console.log(`going for ${nextdisc}`);
-              setdiscs(nextdisc);
-              $('#announce-game-won').text(" ");
-              $('button').remove();
-            });
+                  setdiscs(nextdisc);
+                  $('#announce-game-won').text(" ");
+                  $('button').remove();
+                  stop = "";
+                });
+              } else {
+                $('#announce-game-won').after(`<p class="final-win">You are a Tower of Hanoi master</p`);
+              }
+            }
           }
-        }
-        move++;
+          move++;
+        };
       };
     };
   });
@@ -75,8 +88,16 @@ $(document).ready(function () {
   function setdiscs(howmanydiscs) {
     $('[data-stack]').empty();
     numofdiscs = howmanydiscs;
+
+
+    $(`#discs > option[value]`).removeAttr("selected");
+    $(`#discs > option[value="${numofdiscs}"]`).attr("selected", "selected");
+    move = 1;
     minmoves = 2 ** numofdiscs - 1;
     factor = Math.round(100 / numofdiscs);
+
+    $('.minmovecount').text(`Minimum Moves: ${minmoves}`);
+    $('.curmovecount').text(`Total Moves: 0`);
 
     for (let i = 0; i < numofdiscs; i++) {
       let color = rainbow(numofdiscs, i);
