@@ -29,27 +29,24 @@ $(document).ready(function () {
 
 
 
-  $('[data-stack2]').on("click", function () {
-    $block = $(this).children().last().draggable({
-      containment: "div",
-      cursor: "pointer",
-      revert: "invalid"
-    });
+  // $('[data-stack]').sortable({
+  //   connectWith: '[data-stack]',
+  //   handle: '.justone',
+  //   containment: 'div',
+  //   cursor: 'pointer',
+  //   revert: 'true'
+  // //  beforeStop: function( event, ui ) {}
+  //
+  // });
+  //
 
-    // $block.droppable({
-    //   drop: function(event, ui) {
-    //     ui.draggable.detach().append($(this));
-    //   }
-    // });
-
-  });
 
 
 
 
   $('[data-stack]').on("click", function () {
     // If you do not have a disc, pick up a disc
-    if ((!stop) && (numofdiscs < 12)) {
+    if ((!stop) && (numofdiscs < 13)) {
       if (!$block) {
         $blocksize = $(this).children().last().attr('data-block');
         $block = $(this).children().last().detach();
@@ -83,7 +80,7 @@ $(document).ready(function () {
               $('#announce-game-won').text(`Congratulations!  You  won the ${numofdiscs}-disc tower challenge!`);
 
               if (nextdisc < 12) {
-                $('#announce-game-won').after(`<button>Try the ${nextdisc}-disc challenge</button`);
+                $('#announce-game-won').append(`<button>Try the ${nextdisc}-disc challenge</button`);
 
                 // advance to next level
                 $('button').on("click", function () {

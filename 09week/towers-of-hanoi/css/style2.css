@@ -57,7 +57,26 @@
 
 #announce-game-won {
   font-size: 30px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  width: 200px;
+  font-size: 16px;
+  margin: 10px 0px;
+  padding: 3px;
+  background-color: azure;
+  border: 2px groove dodgerblue;
+  transition: width 3s, color 1.5s, background-color 2s;
+}
+
+button:hover {
+  background-color: dodgerblue;
+  border-color: dimgrey;
+  color: white;
+  width: 250px;
 }
 
 .final-win {
