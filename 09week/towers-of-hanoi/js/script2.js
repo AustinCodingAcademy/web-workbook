@@ -29,6 +29,22 @@ $(document).ready(function () {
 
 
 
+  $('[data-stack2]').on("click", function () {
+    $block = $(this).children().last().draggable({
+      containment: "div",
+      cursor: "pointer",
+      revert: "invalid"
+    });
+
+    // $block.droppable({
+    //   drop: function(event, ui) {
+    //     ui.draggable.detach().append($(this));
+    //   }
+    // });
+
+  });
+
+
 
 
   $('[data-stack]').on("click", function () {
@@ -37,6 +53,11 @@ $(document).ready(function () {
       if (!$block) {
         $blocksize = $(this).children().last().attr('data-block');
         $block = $(this).children().last().detach();
+        // $block = $(this).children().last().draggable({
+        //   containment:"div",
+        //   cursor: "pointer",
+        //   revert: "invalid"
+        // });
 
         // If you do have a disc, place it
       } else {
@@ -45,6 +66,8 @@ $(document).ready(function () {
         // if the stack is blank or the botom disc is larger
         if (!($baseblock) || ($baseblock - $blocksize > 0)) {
           $(this).append($block);
+
+
           $block = null;
           $('.curmovecount').css("display", "inline");
           $('.curmovecount').text(`Current Moves: ${move}`);
