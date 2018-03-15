@@ -42,14 +42,25 @@ $(document).ready(function() {
         }
       }
       if (xWinFlag === true) {
-        console.log("X wins!");
+        $('#announce-winner').text("X wins!");
       }
       if (oWinFlag === true) {
-        console.log("O wins!");
+        $('#announce-winner').text("O wins!");
       }
       if (moveCount > 8 && oWinFlag === false && xWinFlag === false){ // Check for draw, if no win after 8 moves
-        console.log("It's a draw.")
+        $('#announce-winner').text("It's a draw.");
       }
     }
+    $('#clear').on('click', function () {
+      $('[data-cell], #announce-winner').html('');
+      x = []; // Declare arrays x and o;
+      o = [];
+      currentPlayer = "X";
+      moveCount = 0;
+      xMatchCount = 0;
+      oMatchCount = 0;
+      xWinFlag = false;
+      oWinFlag = false;
+    })
   });
 });
