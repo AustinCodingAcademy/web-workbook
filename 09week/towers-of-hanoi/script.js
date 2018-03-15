@@ -6,23 +6,18 @@ $(document).ready(function() {
   $('[data-stack]').click(function() {
 
     if ($block) {
-      $(this).append($block);
-      checkForWin();
-      $block = null;
+      let $lastBlock = $(this).children().last();
+      if (!$lastBlock.length || $lastBlock.data('block') > $block.data('block')){
+        $(this).append($block);
+        $block = null;
+        checkForWin();
+      }
+
     } else {
       $block = $(this).children().last().detach();
-      // goodToDrop();
     }
 
   })
-
-  //
-  // function goodToDrop() {
-  //   if ($('[data-stack="3"]')) {
-  //     console.log('You cannot do that!')
-  //   }
-  // }
-
 
   function checkForWin() {
     if ($('[data-stack="3"]').children().length === 4) {
