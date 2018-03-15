@@ -9,22 +9,75 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" />
   </head>
   <body>
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLSf4L_32fr3X2YuFTK72PRurbwygduioRk_zoCgMRt9TVBd4FA/formResponse" target="_self" method="POST">
-      <label for="url">URL</label>
-      <input type="text" name="entry.499264508" value="" id="url"><br>
-      <label for="email">Email</label>
-      <input type="text" name="entry.619990034" value="" id="email"><br>
-      <label for="password">Password</label>
-      <input type="text" name="entry.1757516381" value="" id="password"><br>
-      <!-- <label for="do-you-like-my-site?">Do you like my site?</label>
-      <input type="radio" name="entry.198636658" value="" id="do-you-like-my-site?"><br>
-      <label for="will-you-be-my-friend?">Will you be my friend?</label>
-      <input type="text" name="entry.2074195047" value="" id="will-you-be-my-friend?"><br> -->
-      <input type="hidden" name="fvv" value="1">
-      <input type="hidden" name="draftResponse" value="[null,null,&quot;1479730503134831514&quot;]"><br>
-      <input type="hidden" name="pageHistory" value="0">
-      <input type="hidden" name="fbzx" value="1479730503134831514">
-      <input type="submit">
+    <h1>Customer Satisfaction</h1>
+    <form>
+      <!-- URL -->
+      <div class="form-group">
+        <label for="exampleURL">URL</label>
+        <input type="url" class="form-control" id="exampleURL" placeholder="http://yourURLhere.com">
+      </div>
+      <!-- EMAIL ADDRESS -->
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+      </div>
+      <!-- PASSWORD -->
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <!-- GRADE -->
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Give my portfolio a grade!</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>A+</option>
+          <option>A</option>
+          <option>A-</option>
+          <option>B+</option>
+          <option>B</option>
+          <option>B-</option>
+          <option>C+</option>
+          <option>C</option>
+          <option>C-</option>
+          <option>D</option>
+          <option>F</option>
+        </select>
+      </div>
+      <div>Will you be my friend?</div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+        <label class="form-check-label" for="exampleRadios1">
+          Yes
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+        <label class="form-check-label" for="exampleRadios2">
+          No
+        </label>
+      </div>
+      <br>
+      <div>Hey, check out this slider. I added tick marks.</div>
+      <div class="form-check">
+        <input type="range" list="tickmarks">
+        <datalist id="tickmarks">
+          <option value="0" label="Yes">
+          <option value="10">
+          <option value="20">
+          <option value="30">
+          <option value="40">
+          <option value="50" label="Maybe">
+          <option value="60">
+          <option value="70">
+          <option value="80">
+          <option value="90">
+          <option value="100" label="Nah">
+        </datalist>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="clear" class="btn btn-primary">Clear Form</button>
     </form>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
