@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>John's Shitty Clicker Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container-fluid" id="top-bar">
+         <div class="header clearfix">
+           <h3 class="pull-xs-left m-y-1">Bitcoin Miner</h3>
+           <button type="button" id="btn-clear" class="btn btn-danger pull-xs-right m-y-1">Clear Save</button>
+         </div>
+    </div>
+    <div class="container">
+     <div class="row">
+       <div class="col-lg-6 col-lg-offset-3 m-t-2 p-a-2 clearfix" id="main">
+         <h1 class="text-xs-center p-y-1">Bitcoin Miner</h1>
+         <hr size="30">
+         <h3 class="text-xs-center p-y-1">Wallet: <span id="btc-display">0</span> BTC</h3>
+         <button type="button" id="btn-click" class="center-block p-x-2 p-y-1 m-y-2 btn btn-lg btn-primary">Click</button>
+         <hr size="30">
+         <ul class="list-group p-y-1" id="shop">
+           <li class="list-group-item clearfix">
+             <h1 class="pull-xs-right"><span class="label label-default label-pill"><span id="owned-display">0</span> Owned</span></h1>
+             <h5 class="">Bitcoin Miner<h5>
+             <span class="label label-default label-pill pull-xs-left"><span id="rate-display">0.00001</span> BTC/sec</span>
+             </li>
+
+             <button type="button" id="btn-buy" class="pull-xs-right btn btn-primary" disabled>Buy - 0.001 BTC</button>
+             <button type="button" id="btn-upgrade" class="pull-xs-right btn btn-primary" disabled>Upgrade - 0.001 BTC</button>
+         </ul>
+         <div class="invisible">YOU SHOULDN'T BE ABLE TO SEE THIS!</div>
+       </div> <!-- /col-md-6 -->
+     </div> <!-- /row -->
+    </div> <!-- /container -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+  </body>
+</html>
