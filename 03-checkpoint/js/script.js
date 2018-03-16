@@ -1,4 +1,5 @@
 'use strict';
+
 // set variable
 let money = 0;
 
