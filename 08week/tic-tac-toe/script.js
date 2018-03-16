@@ -35,14 +35,12 @@ $(document).ready(function() {
   $(this).text(playerTurn);
 
 
-
-
-
     //Check for win or draw
+    drawGame();
     verticalWin();
     horizontalWin();
     diagonalWin();
-    drawGame();
+    
 
     // if playerTurn is X, then make
     //playerTurn 0. If playerTurn is
@@ -64,19 +62,19 @@ $(document).ready(function() {
       document.getElementById("p-ann").innerHTML = (playerTurn + " wins!");
       document.getElementById("p-ann2").innerHTML = ("Game Over");
       document.getElementById("clear").innerHTML = ("New Game");
-      // gameOver = true;
+
     } else if ($('[data-cell="1"]').text() === $('[data-cell="4"]').text() && $('[data-cell="4"]').text() === $('[data-cell="7"]').text() && $('[data-cell="7"]').text() != '') {
       console.log(playerTurn + " wins!");
       document.getElementById("p-ann").innerHTML = (playerTurn + " wins!");
       document.getElementById("p-ann2").innerHTML = ("Game Over");
       document.getElementById("clear").innerHTML = ("New Game");
-      // gameOver = true;
+
     } else if ($('[data-cell="0"]').text() === $('[data-cell="3"]').text() && $('[data-cell="3"]').text() === $('[data-cell="6"]').text() && $('[data-cell="6"]').text() != '') {
       console.log(playerTurn + " wins!");
       document.getElementById("p-ann").innerHTML = (playerTurn + " wins!");
       document.getElementById("p-ann2").innerHTML = ("Game Over");
       document.getElementById("clear").innerHTML = ("New Game");
-      // gameOver = true;
+
     }
 
   }
@@ -87,19 +85,19 @@ $(document).ready(function() {
       document.getElementById("p-ann").innerHTML = (playerTurn + " wins!");
       document.getElementById("p-ann2").innerHTML = ("Game Over");
       document.getElementById("clear").innerHTML = ("New Game");
-      // gameOver = true;
+
     } else if ($('[data-cell="3"]').text() === $('[data-cell="4"]').text() && $('[data-cell="4"]').text() === $('[data-cell="5"]').text() && $('[data-cell="5"]').text() != '') {
       console.log(playerTurn + " wins!");
       document.getElementById("p-ann").innerHTML = (playerTurn + " wins!");
       document.getElementById("p-ann2").innerHTML = ("Game Over");
       document.getElementById("clear").innerHTML = ("New Game");
-      // gameOver = true;
+
     } else if ($('[data-cell="0"]').text() === $('[data-cell="1"]').text() && $('[data-cell="1"]').text() === $('[data-cell="2"]').text() && $('[data-cell="2"]').text() != '') {
       console.log(playerTurn + " wins!");
       document.getElementById("p-ann").innerHTML = (playerTurn + " wins!");
       document.getElementById("p-ann2").innerHTML = ("Game Over");
       document.getElementById("clear").innerHTML = ("New Game");
-      // gameOver = true;
+
     }
   }
 
@@ -129,6 +127,7 @@ $(document).ready(function() {
         $('[data-cell="6"]').text() != '' &&
         $('[data-cell="7"]').text() != '' &&
         $('[data-cell="8"]').text() != '')
+        // $('[p-ann2]').text() !== "Game Over")
       {
       console.log('Game is a Draw');
       document.getElementById("p-ann").innerHTML = ("Game is a Draw!");
@@ -145,7 +144,8 @@ $("button").click(function(){
         $("#p-ann2").empty();
         playerTurn = 'X';
         document.getElementById("clear").innerHTML = ("Clear Board");
-
     });
+
+  // drawGame();
 
 });
