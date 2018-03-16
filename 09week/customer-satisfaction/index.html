@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Form</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap-grid.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="card" style="width: 30rem;">
+
+
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLScQdOpF_xGnORQyo_gwcnLISZwIVX4nHMMtRtJFECqkcSrZCQ/formResponse" target="_self" method="POST">
+
+  <!-- Input fields -->
+          <label for="url">URL</label>
+          <input type="url" spellcheck="true" name="entry.115323147" value="" id="url">
+          <label for="password">Password</label>
+          <input type="password" spellcheck="true" name="entry.1834099899" value="" id="password">
+          <label for="email">Email</label>
+          <input type="email" spellcheck="true" name="entry.778883598" value="" id="email" required>
+
+  <!-- Checkbox -->
+          <div class="box">
+            <label for="checkbox">Check all that apply.</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1" name="entry.1015540144">I'm tired</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+              <label class="form-check-label" for="defaultCheck2" name="entry.1015540144">I ate too much</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+              <label class="form-check-label" for="defaultCheck2" name="entry.1015540144">I'm over here</label>
+            </div>
+          </div>
+
+<!-- Radios! -->
+          <div class="box">
+            <label for="radio?">Are you likely to return?</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1" name="entry.1075065199">Nah.</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+              <label class="form-check-label" for="exampleRadios2" name="entry.1075065199">Ehh..</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+              <label class="form-check-label" for="exampleRadios3" name="entry.1075065199">Yas!</label>
+            </div>
+          </div>
+
+<!-- Range Slider -->
+          <label for="range">How satisfied are you with those answers?</label>
+          <div class="slidecontainer">
+            <input type="range" name="amountRange" min="0" max="20" value="0" name="entry.1144014581" oninput="this.form.amountInput.value=this.value" />
+            <input type="number" name="amountInput" min="0" max="20" value="0" name="entry.1144014581" oninput="this.form.amountRange.value=this.value" />
+          </div>
+
+<!-- Hidden Stuff!           -->
+          <input type="hidden" name="fvv" value="1">
+          <input type="hidden" name="draftResponse" value="[null,null,&quot;-330839781714149824&quot;]">
+          <input type="hidden" name="pageHistory" value="0">
+          <input type="hidden" name="fbzx" value="-330839781714149824">
+
+<!-- Submit Buttons!                 -->
+          <div class="button">
+            <input class="submitAndReset" type="Submit">
+            <input class="submitAndReset" type="Reset" value="Reset">
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
