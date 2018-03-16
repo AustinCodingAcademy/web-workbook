@@ -3,17 +3,6 @@
 $(document).ready(function() {
   // Put app logic in here
   var playerTurn = 'X';
-  // var gameOver = false;
-
-  // if (document.getElementById("winnerIs").style.display == "block") {
-  //         alert('Game has already been won!');
-  //        return
-  //     }
-
-
-
-
-
 
   $('[data-cell]').on('click', function() {
 
@@ -28,10 +17,10 @@ $(document).ready(function() {
     return;
     }
 
-
-
-
-
+    // if document.getElementById("").innerHTML != '')
+    // { alert ('Game is Over');
+    // return;
+    // }
 
   $(this).text(playerTurn);
 
