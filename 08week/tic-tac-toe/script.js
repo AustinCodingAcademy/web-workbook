@@ -3,9 +3,41 @@
 $(document).ready(function() {
   // Put app logic in here
   var playerTurn = 'X';
+  // var gameOver = false;
+
+  // if (document.getElementById("winnerIs").style.display == "block") {
+  //         alert('Game has already been won!');
+  //        return
+  //     }
+
+
+
+
+
 
   $('[data-cell]').on('click', function() {
-    $(this).text(playerTurn);
+
+
+    if (document.getElementById("p-ann2").innerHTML == "Game Over")
+    { alert ('Game is Over');
+    return;
+    }
+
+    if (this.innerHTML === 'X' || this.innerHTML === 'O')
+    { alert ('Square has already been choosen, please select another square');
+    return;
+    }
+
+
+
+
+
+
+  $(this).text(playerTurn);
+
+
+
+
 
     //Check for win
     verticalWin();
@@ -26,16 +58,23 @@ $(document).ready(function() {
   });
 
 
+
   function verticalWin() {
     if ($('[data-cell="2"]').text() === $('[data-cell="5"]').text() && $('[data-cell="5"]').text() === $('[data-cell="8"]').text() && $('[data-cell="8"]').text() != '') {
       console.log(playerTurn + " wins!");
       document.getElementById("p-ann").innerHTML = (playerTurn + " wins!");
+      document.getElementById("p-ann2").innerHTML = ("Game Over");
+      // gameOver = true;
     } else if ($('[data-cell="1"]').text() === $('[data-cell="4"]').text() && $('[data-cell="4"]').text() === $('[data-cell="7"]').text() && $('[data-cell="7"]').text() != '') {
       console.log(playerTurn + " wins!");
       document.getElementById("p-ann").innerHTML = (playerTurn + " wins!");
+      document.getElementById("p-ann2").innerHTML = ("Game Over");
+      // gameOver = true;
     } else if ($('[data-cell="0"]').text() === $('[data-cell="3"]').text() && $('[data-cell="3"]').text() === $('[data-cell="6"]').text() && $('[data-cell="6"]').text() != '') {
       console.log(playerTurn + " wins!");
       document.getElementById("p-ann").innerHTML = (playerTurn + " wins!");
+      document.getElementById("p-ann2").innerHTML = ("Game Over");
+      // gameOver = true;
     }
 
   }
@@ -44,12 +83,18 @@ $(document).ready(function() {
     if ($('[data-cell="6"]').text() === $('[data-cell="7"]').text() && $('[data-cell="7"]').text() === $('[data-cell="8"]').text() && $('[data-cell="8"]').text() != '') {
       console.log(playerTurn + " wins!");
       document.getElementById("p-ann").innerHTML = (playerTurn + " wins!");
+      document.getElementById("p-ann2").innerHTML = ("Game Over");
+      // gameOver = true;
     } else if ($('[data-cell="3"]').text() === $('[data-cell="4"]').text() && $('[data-cell="4"]').text() === $('[data-cell="5"]').text() && $('[data-cell="5"]').text() != '') {
       console.log(playerTurn + " wins!");
       document.getElementById("p-ann").innerHTML = (playerTurn + " wins!");
+      document.getElementById("p-ann2").innerHTML = ("Game Over");
+      // gameOver = true;
     } else if ($('[data-cell="0"]').text() === $('[data-cell="1"]').text() && $('[data-cell="1"]').text() === $('[data-cell="2"]').text() && $('[data-cell="2"]').text() != '') {
       console.log(playerTurn + " wins!");
       document.getElementById("p-ann").innerHTML = (playerTurn + " wins!");
+      document.getElementById("p-ann2").innerHTML = ("Game Over");
+      // gameOver = true;
     }
   }
 
@@ -58,15 +103,18 @@ $(document).ready(function() {
     if ($('[data-cell="0"]').text() === $('[data-cell="4"]').text() && $('[data-cell="4"]').text() === $('[data-cell="8"]').text() && $('[data-cell="8"]').text() != '') {
       console.log(playerTurn + " wins!");
       document.getElementById("p-ann").innerHTML = (playerTurn + " wins!");
+      document.getElementById("p-ann2").innerHTML = ("Game Over");
     } else if ($('[data-cell="2"]').text() === $('[data-cell="4"]').text() && $('[data-cell="4"]').text() === $('[data-cell="6"]').text() && $('[data-cell="6"]').text() != '') {
       console.log(playerTurn + " wins!");
       document.getElementById("p-ann").innerHTML = (playerTurn + " wins!");
+      document.getElementById("p-ann2").innerHTML = ("Game Over");
     }
   }
 
 $("button").click(function(){
         $(".dc").empty();
         $("#p-ann").empty();
+        $("#p-ann2").empty();
         playerTurn = 'X';
     });
 
