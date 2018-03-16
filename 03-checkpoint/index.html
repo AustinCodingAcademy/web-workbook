@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>John's Clicker Game</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" />
+    <script src="jquery-3.3.1.min.js"></script>
   </head>
   <body>
     <div class="jumbotron">
       <h1 class="display-4">Hello, world!</h1>
       <p class="lead">This is my clicker game.</p>
       <hr class="my-4">
-      <p>Click on this.</p>
-      <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Click Me</a>
-      </p>
+      <p>Click on this to mine some BitCoin.</p>
+      <button type="button" class="btn btn-primary btn-lg" onclick="oneClick(1)">Make BitCoin</button>
+      BitCoins Mined: <span id="money">0</span>
     </div>
+    <script type="text/javascript" src="./js/script.js"></script>
   </body>
 </html>
