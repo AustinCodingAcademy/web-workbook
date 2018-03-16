@@ -26,7 +26,7 @@
 
   <!-- Checkbox -->
           <div class="box">
-            <label for="checkbox">Check all that apply.</label>
+            <label for="defaultCheck1" "defaultCheck2" "defaultCheck3">Check all that apply.</label>
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
               <label class="form-check-label" for="defaultCheck1" name="entry.1015540144">I'm tired</label>
@@ -36,14 +36,14 @@
               <label class="form-check-label" for="defaultCheck2" name="entry.1015540144">I ate too much</label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
               <label class="form-check-label" for="defaultCheck2" name="entry.1015540144">I'm over here</label>
             </div>
           </div>
 
 <!-- Radios! -->
           <div class="box">
-            <label for="radio?">Are you likely to return?</label>
+            <label for="exampleRadios1" "exampleRadios2" >Are you likely to return?</label>
             <div class="form-check">
               <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
               <label class="form-check-label" for="exampleRadios1" name="entry.1075065199">Nah.</label>
@@ -59,10 +59,10 @@
           </div>
 
 <!-- Range Slider -->
-          <label for="range">How satisfied are you with those answers?</label>
+          <label for="amountRange" "amountInput" >How satisfied are you with those answers?</label>
           <div class="slidecontainer">
-            <input type="range" name="amountRange" min="0" max="20" value="0" name="entry.1144014581" oninput="this.form.amountInput.value=this.value" />
-            <input type="number" name="amountInput" min="0" max="20" value="0" name="entry.1144014581" oninput="this.form.amountRange.value=this.value" />
+            <input type="range" id="amountRange" min="0" max="20" value="0" name="entry.1144014581" oninput="this.form.amountInput.value=this.value" />
+            <input type="number" id="amountInput" min="0" max="20" value="0" name="entry.1144014581" oninput="this.form.amountRange.value=this.value" />
           </div>
 
 <!-- Hidden Stuff!           -->
