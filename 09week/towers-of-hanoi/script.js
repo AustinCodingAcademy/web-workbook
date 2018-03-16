@@ -3,52 +3,29 @@
 $(document).ready(function() {
 
 // ====================================
-//    Variables
-// ====================================
-  let $block = null,
-      $gameBoard = ("#gameBoard"),
-      $b100 = ('[data-block="100"]'),
-      $b75 = ('[data-block="75"]'),
-      $b50 = ('[data-block="50"]'),
-      $b25 = ('[data-block="25"]'),
-      $tower1 = ('[data-stack="1"]'),
-      $tower2 = ('[data-stack="2"]'),
-      $tower3 = ('[data-stack="3"]');
-  // alert('Welcome to Towers of Hanoi\nCan you form the tower on top in the same manner on the bottom?')
-// ====================================
-//    Block Movement
-// ====================================
-  $('[data-stack]').click(function() {
-
-    win();
-
-    if (!$block) {
-      $block = $(this).children().last().detach();
-    } else {
-      $(this).append($block);
-      $block = null;
-    }
-  });
-// ====================================
 //    Game Logic
 // ====================================
-  function blockWeight(){
+  let $block = null;
+  $('[data-stack]').click(function() {
 
-  }
+    if ($block) {
+      let $lastBlock = $(this).children().last();
+      if (!$lastBlock.length || $lastBlock.data('block') > $block.data('block')) {
+        $(this).append($block);
+        $block = null;
+        win();
+      }
+    } else {
+      $block = $(this).children().last().detach()
+    }
+  })
 // ====================================
 //    Win Condition
 // ====================================
-  function win(){
-    if ($(tower2).children().length === 4){
-      $("#announce-game-won").html('You Win')
-      console.log('Winner');
-    } else if ($(tower3).children().length === 4){
-      $("#announce-game-won").html('You Win')
-      console.log('Winner');
-    }
+  function win() {
+    if ($('#tower2').children().length === 4 || $('#tower3').children().length === 4)
+     $('#announce-game-won').text('Winner');
   }
-
-
 });
 
 // Board*
@@ -57,3 +34,30 @@ $(document).ready(function() {
 // Cant place big rings on small
 // Win condition, if length = 4*
 // Reset game
+
+
+// 'use strict';
+//
+// $(document).ready(function() {
+//   // Put app logic here
+  // let $block = null,
+  //     $tower2 = ('[data-stack="2"]'),
+  //     $tower3 = ('[data-stack="3"]');
+  // $('[data-stack]').click(function() {
+  //   if ($block) {
+  //     let $lastBlock = $(this).children().last();
+  //     if (!$lastBlock.length || $lastBlock.data('block') > $block.data('block')) {
+  //       $(this).append($block);
+  //       $block = null;
+  //       win();
+  //     }
+  //   } else {
+  //     $block = $(this).children().last().detach()
+  //   }
+  // })
+//
+  // function win() {
+  //   if ($(`[data-stack]="2"`).children().length === 4 || $(`[data-stack]="3"`).children().length === 4)
+  //    $('#announce-game-won').text('Winner');
+  // }
+// });
