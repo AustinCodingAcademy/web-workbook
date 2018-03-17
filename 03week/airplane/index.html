@@ -7,46 +7,49 @@
     <title>Airplane Project</title>
   </head>
   <body>
-  <div class="header">
-    <div id="icon">
-      <img class="icon-img" src="./img/logo.png">
-    </div>
+    <div class="header">
+      <div id="icon">
+        <img class="icon-img" src="./img/logo.png">
+      </div>
     <div class="nav">
-      <ul>
-        <li><img class="tinycons"src="./img/home-icon.png"><a href="">Home</a>
+        <ul>
+        <img class="tinycons"src="./img/home-icon.png"><li><a href="">Home</a>
         </li>
-        <li><img class= "tinycons" src="./img/deal-icon.png">Travel Deals
+        <img class= "tinycons" src="./img/deal-icon.png"><li>Travel Deals
         </li>
-        <li><img class="tinycons" src="./img/schedule-icon.png">Flight Schedule
+        <img class="tinycons" src="./img/schedule-icon.png"><li>Flight Schedule
         </li>
-        <li><img class="tinycons"src="./img/login-icon.png">Register/Login
+        <img class="tinycons"src="./img/login-icon.png"><li>Register/Login
         </li>
     </div>
-  </div>
-  <div class="container">
-    <div class="bar">
-      <div id="plane"><img src="./img/plane-icon.png">
+  </div> /*?*/
+    <div class="container border">
+      <div class="bar">
+        <div class="plane"><img src="./img/plane-icon.png">
+        </div>
+        <div class="largeicons"><img src="./img/hotel-icon.png">
+        </div>
+        <div class="largeicons"><img src="./img/car-icon.png">
+        </div>
       </div>
-      <div id="hotel"><img src="./img/hotel-icon.png">
+    <div class="forms">
+      <div class="column1 hey">
+        <input type="text" class="text" placeholder="Depart"><br><br>
+        <input type="date"class="dates"><br><br>
+        Passengers<input type="number" class="num"placeholder="1">
       </div>
-      <div id="car"><img src="./img/car-icon.png">
+      <div class="column2 hey">
+        <form>
+          <input type="text" class="text" placeholder="Arrive"><br><br>
+          <input type="date"class="dates"><br><br>
+          <input type="radio" class="radio"checked> Return
+          <input type="radio" class="radio"> One Way
+        </form>
+      </div>
+      <div>
+      <div class="search">
+        <button class="button"><b>Search Flights</b></button>
       </div>
     </div>
-    <div class="section">
-    <form>
-      <div class="mini1">
-      <div id="depart">Depart</div></div>
-      <div class="mini2">
-      <div id="arrive">Arrive</div></div>
-      <div id="calendar1">mm/dd/yyyy</div>
-      <div id="calendar2">mm/dd/yyyy</div>
-      <div id="passengers">Passengers</div>
-      <div id="passengersbox">1</div>
-      <input type="radio" id="return" value="Return" checked>Return
-      <input type="radio" id="oneway" value="One Way" unchecked> One Way
-      <div class="mini">
-      <div id="search">Search Flights</div></div>
-    </form>
-  </div>
   </body>
 </html>
