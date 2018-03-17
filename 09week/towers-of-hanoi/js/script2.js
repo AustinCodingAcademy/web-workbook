@@ -3,7 +3,6 @@
 /*
 To-do list:
  - Make discs draggable
- - style button
  - style dropdown
  - add flair when you win
  - add fade out/fade in effect when resetting board

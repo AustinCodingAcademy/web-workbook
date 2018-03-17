@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Feedback Form</title>
+  <title>Subscription Form</title>
 
   <!--CSS -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="../../css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -16,48 +16,135 @@
 
   <form action="https://docs.google.com/forms/d/e/1FAIpQLSd9xsFdfiA64BJA6FlRjEJNCUZAklAHIopgW9zmm57A4JljQQ/formResponse" target="_self" method="POST">
 
-    <div class="form-group">
-      <label for="updates-from">Updates from</label>
-      <input type="url" name="entry.1139227435" value="" id="updates-from">
+    <p class="form-name">Sign up for Update Notifications</p>
+
+    <!-- URL -->
+    <div class="form-group row">
+      <label for="updates-from" class="col-xs-4 col-md-3 col-form-label">Updates from</label>
+      <div class="col-xs-8 col-md-9">
+        <input type="url" name="entry.1139227435" class="form-control" id="updates-from" placeholder="http://">
+      </div>
     </div>
 
-    <div class="form-group">
-      <input type="checkbox" name="entry.1810658035" value="Updates Major Content" id="updates-major-content">
-      <label for="updates-major-content">Updates Major Content</label>
-      <input type="checkbox" name="entry.1810658035" value="Updates Minor Content" id="updates-minor-content">
-      <label for="updates-minor-content">Updates Minor Content</label>
-      <input type="checkbox" name="entry.1810658035" value="Updates Major Code" id="updates-major-code">
-      <label for="updates-major-code">Updates Major Code</label>
-      <input type="checkbox" name="entry.1810658035" value="Updates Minor Code" id="updates-minor-this">
-      <label for="updates-minor-this">Updates Minor Code</label>
-      <input type="checkbox" name="entry.1810658035" value="Updates All" id="updates-all">
-      <label for="updates-all">Updates All</label>
-
-      <input type="radio" name="entry.1572838568" value="Daily" id="update-daily">
-      <label for="update-daily">Update Daily</label>
-      <input type="radio" name="entry.1572838568" value="Weekly" id="update-weekly">
-      <label for="update-weekly">Update Weekly</label>
-      <input type="radio" name="entry.1572838568" value="Monthly" id="update-monthly">
-      <label for="update-monthly">Update Monthly</label>
-
-      <label for="describe-updates">Describe Updates</label>
-      <input type="range" name="entry.531484624" value="" id="describe-updates">
+    <!-- Select checkboxes -->
+    <div class="form-group row">
+      <div class="col-xs-4 col-md-3">Update Notifications</div>
+      <div class="col-xs-4 col-md-4">
+        <div class="form-check">
+          <input class="form-check-input" name="entry.1810658035" type="checkbox" value="Updates Major Content" id="updates-major-content">
+          <label class="form-check-label" for="updates-major-content">
+          Major Content Updates
+        </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" name="entry.1810658035" type="checkbox" value="Updates Content" id="updates-content">
+          <label class="form-check-label" for="updates-content">
+            Any Content Updates
+          </label>
+        </div>
+      </div>
+      <div class="col-xs-4 col-md-5">
+        <div class="form-check">
+          <input class="form-check-input" name="entry.1810658035" type="checkbox" value="Updates Major Code" id="updates-major-code">
+          <label class="form-check-label" for="updates-major-code">
+          Major Layout Updates
+        </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" name="entry.1810658035" type="checkbox" value="Updates Code" id="updates-code">
+          <label class="form-check-label" for="updates-code">
+            Any Layout Updates
+          </label>
+        </div>
+      </div>
+      <div class="col-xs-8 offset-xs-4 col-md-9 offset-md-3">
+        <div class="form-check">
+          <input class="form-check-input" name="entry.1810658035" type="checkbox" value="Updates" id="updates">
+          <label class="form-check-label" for="updates">
+          All Updates
+        </label>
+        </div>
+      </div>
     </div>
 
-    <div class="form-group">
-      <label for="updates-to">Updates to</label>
-      <input type="email" name="entry.1916388931" value="" id="updates-to">
-      <label for="updates-password">Updates password</label>
-      <input type="password" name="entry.1330730362" value="" id="updates-password">
+    <!-- Select radio buttons -->
+    <fieldset class="form-group">
+      <div class="row">
+        <legend class="col-form-label col-xs-4 col-md-3 pt-0">Update Frequency</legend>
+        <div class="col-xs-2 col-md-3">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="entry.1572838568" id="update-daily" value="Daily" checked>
+            <label class="form-check-label" for="update-daily">
+              Daily
+            </label>
+          </div>
+        </div>
+
+        <div class="col-xs-3 col-md-3">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="entry.1572838568" id="update-weekly" value="Weekly">
+            <label class="form-check-label" for="update-weekly">
+              Weekly
+            </label>
+          </div>
+        </div>
+
+        <div class="col-xs-3 col-md-3">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="entry.1572838568" id="update-monthly" value="Monthly">
+            <label class="form-check-label" for="update-monthly">
+              Monthly
+            </label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+
+    <!-- Select slider -->
+
+    <div class="form-group row">
+      <label for="describe-updates" class="col-xs-4 col-md-3 col-form-label">Describe Updates</label>
+      <div style="col-xs-8 col-md-9">
+        <input type="range" name="entry.531484624" value="" id="describe-updates">
+      </div>
     </div>
+
+    <!-- Email -->
+    <div class="form-group row">
+      <label for="updates-to" class="col-xs-4 col-md-3 col-form-label">Email Updates to:</label>
+      <div class="col-xs-8 col-md-9">
+        <input type="email" name="entry.1916388931" value="" class="form-control" id="updates-to" placeholder="Email" required="required">
+      </div>
+    </div>
+
+    <!--  password -->
+    <div class="form-group row">
+      <label for="updates-password" class="col-xs-4 col-md-3 col-form-label">Updates Password</label>
+      <div class="col-xs-8 col-md-9">
+        <input type="password" name="entry.1330730362" value="" class="form-control" id="updates-password" placeholder="updates-password">
+      </div>
+    </div>
+
 
     <input type="hidden" name="fvv" value="1">
     <input type="hidden" name="draftResponse" value="[null,null,&quot;270575108807620411&quot;]
-  ">
+                ">
     <input type="hidden" name="pageHistory" value="0">
     <input type="hidden" name="fbzx" value="270575108807620411">
-    <button type="submit" class="btn btn-primary">Submit</button>
-    <button type="reset" class="btn btn-primary">Reset</button>
+
+    <!-- Submit/Reset  -->
+    <div class="form-group row">
+
+
+      <div class="col-sm-5">
+        <button type="submit" class="btn btn-primary">Subscribe to updates</button>
+      </div>
+
+      <div class="col-sm-5">
+        <button type="reset" class="btn btn-primary">Reset</button>
+      </div>
+    </div>
   </form>
 
 

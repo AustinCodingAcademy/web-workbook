@@ -1,0 +1,63 @@
+/*  custom style for the feedback form*/
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #AF9181;
+}
+
+form {
+  width: 70%;
+  min-width: 350px;
+  max-width: 600px;
+  border: 1px solid #292F36;
+  background-color: #F2F1EA;
+  margin: 2.5em;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(78, 205, 196, .5);
+}
+
+.form-name {
+  background-color: #4ECDC4;
+  font-size: 1.5em;
+  padding: 5px;
+  display: block;
+  border-bottom: 1px solid #292F36;
+  text-align: center;
+}
+
+.form-group {
+  padding: 1em;
+}
+
+.form-group:last-child {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-primary {
+  background-color: #4ECDC4;
+  border-color: #292F36;
+  padding: 3px 5px;
+}
+
+.btn-primary:hover {
+  background-color: #FF6B6B;
+  border-color: #A34545;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(78, 205, 196, .5);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(209, 88, 88, .5);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #D15858;
+  border-color: #A34545;
+}
