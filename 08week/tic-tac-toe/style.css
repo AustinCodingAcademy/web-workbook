@@ -16,5 +16,27 @@ div[data-cell] {
   clear: both;
   font-size: 50px;
 }
-//<i class="fas fa-times-circle"></i>
-<i class="fas fa-circle-notch"></i>
+
+.ticx, .tico {
+  position: relative;
+}
+
+.ticx:before {
+  content: "\f00d";
+  font-family: FontAwesome;
+  left: 10px;
+  position: absolute;
+  top: 0;
+}
+
+.tico:before {
+  content: "\f111";
+  font-family: FontAwesome;
+  left: 8px;
+  position: absolute;
+  top: 0;
+}
+
+/* wanted to use these for X and O possibly
+<i class="fas fa-times-circle"></i>
+<i class="fas fa-circle-notch"></i> */
