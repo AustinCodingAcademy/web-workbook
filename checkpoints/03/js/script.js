@@ -38,12 +38,12 @@ $(function () {
   })
 
   $(".button").click(function (){
-    var addVal = $(this).data( "cost" );
+    var addVal = $(this).data("cost");
     if (addVal < data.totalCurrent ) {
       data.totalCurrent -=  parseFloat(addVal.toPrecision(2));
       data.growthIncrement += parseFloat(addVal / 100);
-      $( this ).children("span").html( parseInt($( this ).children("span").html()*1.15));
-      $( this ).data( "cost", parseInt(addVal * 1.15) );
+      $( this ).data("cost", parseFloat(addVal * 1.1) );
+      $( this ).children("span").html(parseInt($( this ).data("cost")));
     }
     updateReport();
   });
