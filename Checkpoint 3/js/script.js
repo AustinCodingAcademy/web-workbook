@@ -2,27 +2,31 @@
 $(document).ready(function() {
 
   var data = {
-    totalBurgers:0,
-    totalCurrent:0,
+    money: 0,
+    totalCurrent: 0,
     totalBPS: 0
   };
 
 setInterval(makeBurger,1000);
 
   function makeBurger() {
-    data.totalBurgers += data.totalBPS;
     data.totalCurrent += data.totalBPS;
     updateReport();
   }
 
-  function updateReport() {
-    $("#currentTotal").text(Math.floor(data.totalCurrent));
-    $("#bps").text((data.totalBPS/70.4).toFixed(3));
+  function sellBurgers() {
+  (data.totalCurrent * 5) += data.money;
   }
 
+  function updateReport() {
+    $("#currentTotal").text(Math.floor(data.totalCurrent));
+    $("#bps").text((data.totalBPS).toFixed(3));
+  }
+
+console.log(totalBurgers.data);
 
   $("#burger").click(function (){
-    data.totalBurgers ++;
+
     data.totalCurrent ++;
     updateReport();
   })
