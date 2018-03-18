@@ -1,1 +1,34 @@
-Hola.
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet"href="./css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poller+One' rel='stylesheet' type='text/css'>
+    <script src="/assets/jquery.js"></script>
+    <meta charset="utf-8">
+    <title>Checkpoint 3 - Austin Coding Academy</title>
+  </head>
+  <body>
+    <div class="robot">
+      <div class="beep"></div>
+      <div class="brain"></div>
+      <div class="torso">
+        <div class="left">j</div>
+        <div class="right">j</div>
+      </div>
+      <div class="foot"><br>
+        <p>Click me!<br>
+          (I roll.)</p>
+      </div>
+    </div>
+
+    <script>
+
+    $(".flash").click(function() {
+      $(".foot").toggleClass('laser');
+    });
+
+
+    </script>
+
+  </body>
+</html>
