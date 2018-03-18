@@ -11,7 +11,7 @@
 <body>
   <div class="container my-5">
     <div class="row">
-      <div class="col-md-6 mx-auto">
+      <div class="col-md-6 mx-auto box-shadow">
         <header>
           <h2>Your feedback is important!</h2>
         </header>
@@ -24,33 +24,54 @@
           </div>
 
           <div class="form-label-group">
-            <input type="text" id="lastNameInput" class="form-control" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Last Name" aria-describedby="i.desc.879544315 i.err.879544315" name="entry.1510151396" value="" dir="auto" data-initial-dir="auto" data-initial-value=""
-              required>
-            <label class="form-control-placeholder" for="lastNameInput">Last Name</label>
-          </div>
-
-          <div class="form-label-group">
-            <input type="text" id="ageInput" class="form-control" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Age" aria-describedby="i.desc.930073900 i.err.930073900" name="entry.739534157" value="" dir="auto" data-initial-dir="auto" data-initial-value=""
-              required>
-            <label class="form-control-placeholder" for="ageInput">Age</label>
-          </div>
-
-          <div class="form-label-group">
-            <input type="text" id="emailAddressInput" class="form-control" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Email Address" aria-describedby="i.desc.1151226547 i.err.1151226547" name="entry.1900627910" value="" dir="auto" data-initial-dir="auto"
+            <input type="password" id="passwordInput" class="form-control" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Last Name" aria-describedby="i.desc.879544315 i.err.879544315" name="entry.1510151396" value="" dir="auto" data-initial-dir="auto"
               data-initial-value="" required>
-            <label class="form-control-placeholder" for="emailAddressInput">Email Address</label>
+            <label class="form-control-placeholder" for="passwordInput">Password</label>
           </div>
 
           <div class="form-label-group">
-            <input type="text" id="levelInput" class="form-control" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="How satisfied are you?" aria-describedby="i.desc.1188868758 i.err.1188868758" name="entry.849542022" value="" dir="auto" data-initial-dir="auto"
+            <input type="url" id="linkedInInput" class="form-control" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Age" aria-describedby="i.desc.930073900 i.err.930073900" name="entry.739534157" value="" dir="auto" data-initial-dir="auto" data-initial-value=""
+              required>
+            <label class="form-control-placeholder" for="linkedInInput">Linked In Profile URL</label>
+          </div>
+
+          <div class="form-label-group">
+            <p class="comeUpHere">Are you satisfied with what you've seen?</p>
+            <input type="radio" id="satisfiedInput1" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Email Address" aria-describedby="i.desc.1151226547 i.err.1151226547" name="entry.1900627910" value="Yes" dir="auto" data-initial-dir="auto" data-initial-value=""
+              required>
+            <label class="gimmeSpace" for="satisfiedInput1">Yes</label>
+            <input type="radio" id="satisfiedInput2" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Email Address" aria-describedby="i.desc.1151226547 i.err.1151226547" name="entry.1900627910" value="No" dir="auto" data-initial-dir="auto" data-initial-value=""
+              required>
+            <label for="satisfiedInput2">No</label>
+          </div>
+
+          <div class="form-label-group">
+            <label for="levelInput">Using the range below, how satisfied are you?</label><br>
+            <input type="range" id="levelInput" list="satisfactionRange" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="How satisfied are you?" aria-describedby="i.desc.1188868758 i.err.1188868758" name="entry.849542022" value="" dir="auto" data-initial-dir="auto"
               data-initial-value="" required>
-            <label class="form-control-placeholder" for="levelInput">How satisfied are you?</label>
+            <datalist id="satisfactionRange">
+                <option value="0">
+                <option value="10">
+                <option value="20">
+                <option value="30">
+                <option value="40">
+                <option value="50">
+                <option value="60">
+                <option value="70">
+                <option value="80">
+                <option value="90">
+                <option value="100">
+              </datalist>
           </div>
 
           <div class="form-label-group">
-            <textarea id="commentsInput" class="form-control" jsname="YPqjbf" data-rows="1" tabindex="0" aria-label="Comments" jscontroller="gZjhIf" jsaction="input:Lg5SV;ti6hGc:XMgOHc;rcuQ6b:WYd;" name="entry.158332413" dir="auto" data-initial-dir="auto" data-initial-value=""
-              required></textarea>
-            <label class="form-control-placeholder" for="commentsInput">Additional comments?</label>
+            <p class="comeUpHere">Preferred method of contact?</p>
+            <input type="checkbox" id="preferredContactInput1" jsname="YPqjbf" data-rows="1" tabindex="0" aria-label="Comments" jscontroller="gZjhIf" jsaction="input:Lg5SV;ti6hGc:XMgOHc;rcuQ6b:WYd;" name="entry.158332413" dir="auto" data-initial-dir="auto" data-initial-value="" value="email"
+              >
+            <label class="gimmeSpace" for="preferredContactInput1">E-mail</label>
+            <input type="checkbox" id="preferredContactInput2" jsname="YPqjbf" data-rows="1" tabindex="0" aria-label="Comments" jscontroller="gZjhIf" jsaction="input:Lg5SV;ti6hGc:XMgOHc;rcuQ6b:WYd;" name="entry.158332413" dir="auto" data-initial-dir="auto" data-initial-value="" value="linked in"
+              >
+            <label for="preferredContactInput2">Linked In</label>
           </div>
 
           <input type="hidden" name="fvv" value="1">
@@ -66,9 +87,8 @@
       </div>
     </div>
   </div>
-  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
 </body>
 
 </html>
