@@ -10,7 +10,7 @@
   </head>
   <body>
     <form action="https://docs.google.com/forms/d/e/1FAIpQLSdkHu-xfZUY4ceZJKGIWz0zRGphqekprNnYmPBgXCNV716R8g/formResponse"
-    target="_self" method="POST">
+    target="_self" method="POST" id="form">
       <div class="form-group row">
         <label for="url" class="col-sm-2 col-form-label">URL</label>
         <div class="col-sm-10">
@@ -23,7 +23,7 @@
       </div>
       <div class="form-group row">
         <label for="email" class="col-sm-2 col-form-label">Email</label>
-        <input type="email" class="form-control" name="entry.1452966501" value="" id="email">
+        <input type="email" class="form-control" name="entry.1452966501" value="" id="email" required>
       </div>
       <div class="form-check">
         <input type="checkbox" class="form-check-input" name="entry.523325373" value="" id="checkbox">
@@ -47,11 +47,17 @@
         <label for="range">Range</label>
         <input type="range" class="form-control" name="entry.1697975294" value="" id="range">
       </div>
+      <div class="form-group row">
+        <label for="message" class="col-sm-2 col-form-label">Message</label>
+        <textarea class="form-control" name="entry.1452966501" spellcheck="true" id="message"></textarea>
+      </div>
+      <input type="submit" class="btn btn-primary">
+      <input type="reset" class="btn btn-secondary" value="Reset">
       <input type="hidden" name="fvv" value="1">
       <input type="hidden" name="draftResponse" value="[null,null,&quot;6558238838656587502&quot;]">
       <input type="hidden" name="pageHistory" value="0">
       <input type="hidden" name="fbzx" value="6558238838656587502">
-      <input type="submit" class="btn btn-primary">
     </form>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </body>
 </html>
