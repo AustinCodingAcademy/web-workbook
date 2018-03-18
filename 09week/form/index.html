@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fill in some stuff</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <form action="a href=empty for now" target="_self" method="POST">
+    <p class="form-name">Tell Us About a Thing</p>
+    <div class="form-group row">
+      <label for="updates-from" class="col-xs-4 col-md-3 col-form-label">Insert link:</label>
+      <div class="col-xs-8 col-md-9">
+        <input type="url" name="entry" class="form-control" id="updates-from" placeholder="https://">
+      </div>
+    </div>
+
+    <!-- multiple check boxes -->
+    <div class="form-group row">
+      <div class="col-xs-4 col-md-3">Whatchu want?</div>
+      <div class="col-xs-4 col-md-4">
+        <div class="form-check">
+          <input class="form-check-input" name="entry" type="checkbox" value="Content" id="updates-content">
+          <label class="form-check-label" for="updates-content">
+          A Boring News Letter
+        </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" name="entry" type="checkbox" value="Updates Other Stuff" id="updates-otherstuff">
+          <label class="form-check-label" for="updates-otherstuff">
+            Some Unrelated Nonsense
+          </label>
+        </div>
+      </div>
+      <div class="col-xs-8 offset-xs-4 col-md-9 offset-md-3">
+        <div class="form-check">
+          <input class="form-check-input" name="entry" type="checkbox" value="Updates" id="updates">
+          <label class="form-check-label" for="updates">
+          All of it
+        </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Select radio buttons -->
+    <fieldset class="form-group">
+      <div class="row">
+        <legend class="col-form-label col-xs-4 col-md-3 pt-0">How often do you want to be annoyed?</legend>
+        <div class="col-xs-2 col-md-3">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="entry" id="update-daily" value="Daily" checked>
+            <label class="form-check-label" for="update-daily">
+              Daily
+            </label>
+          </div>
+        </div>
+
+        <div class="col-xs-3 col-md-3">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="entry" id="update-weekly" value="Weekly">
+            <label class="form-check-label" for="update-weekly">
+              Weekly
+            </label>
+          </div>
+        </div>
+
+        <div class="col-xs-3 col-md-3">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="entry" id="update-monthly" value="Monthly">
+            <label class="form-check-label" for="update-monthly">
+              Monthly
+            </label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- Select slider -->
+    <div class="form-group row">
+      <label for="describe-updates" class="col-xs-4 col-md-3 col-form-label">Spill the beans</label>
+      <div style="col-xs-8 col-md-9">
+        <input type="range" name="entry" value="" id="describe-updates">
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="form-group row">
+      <label for="updates-to" class="col-xs-4 col-md-3 col-form-label">Where are we sending these?*</label>
+      <div class="col-xs-8 col-md-9">
+        <input type="email" name="entry" value="" class="form-control" id="updates-to" placeholder="Email (required)" required="required">
+      </div>
+    </div>
+
+    <!--  password -->
+    <div class="form-group row">
+      <label for="updates-password" class="col-xs-4 col-md-3 col-form-label">Password</label>
+      <div class="col-xs-8 col-md-9">
+        <input type="password" name="entry" value="" class="form-control" id="updates-password" placeholder="*****">
+      </div>
+    </div>
+
+
+    <input type="hidden" name="fvv" value="1">
+    <input type="hidden" name="draftResponse" value="[null,null,&quot;270575108807620411&quot;]
+                ">
+    <input type="hidden" name="pageHistory" value="0">
+    <input type="hidden" name="fbzx" value="270575108807620411">
+
+    <div class="form-group row">
+
+      <div class="col-sm-5">
+        <button type="submit" class="btn btn-primary">Ignore fine print and accept terms</button>
+      </div>
+
+      <div class="col-sm-5">
+        <button type="reset" class="btn btn-primary">Clear Form</button>
+      </div>
+    </div>
+  </form>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>

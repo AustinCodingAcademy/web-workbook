@@ -1,0 +1,103 @@
+/*  custom style for the feedback form*/
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: Grey;
+}
+
+form {
+  width: 70%;
+  min-width: 350px;
+  max-width: 600px;
+  border: 1px solid #292F36;
+  background-color: lightgrey;
+  margin: 2.5em;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(78, 205, 196, .5);
+}
+
+.form-name {
+  background-color: aqua;
+  font-size: 1.5em;
+  padding: 5px;
+  display: block;
+  border-bottom: 1px solid #292F36;
+  text-align: center;
+}
+
+.form-group {
+  padding: 1em;
+}
+
+.form-group:last-child {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-primary {
+  background-color: #4ECDC4;
+  border-color: #292F36;
+  padding: 3px 5px;
+}
+
+.btn-primary:hover {
+  background-color: #FF6B6B;
+  border-color: #A34545;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(78, 205, 196, .5);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(209, 88, 88, .5);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #D15858;
+  border-color: #A34545;
+}
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    border-radius: 5px;
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    border-radius: 50%;
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    border-radius: 50%; /*mkaes button round */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
