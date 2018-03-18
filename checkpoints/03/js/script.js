@@ -41,9 +41,10 @@ $(function () {
     var addVal = $(this).data("cost");
     if (addVal < data.totalCurrent ) {
       data.totalCurrent -=  parseFloat(addVal.toPrecision(2));
-      data.growthIncrement += parseFloat(addVal / 100);
-      $( this ).data("cost", parseFloat(addVal * 1.1) );
-      $( this ).children("span").html(parseInt($( this ).data("cost")));
+      data.growthIncrement += parseFloat(addVal / 1000);
+      $(this).data("cost", parseFloat(addVal + (3 * (addVal / 100))));
+      console.log($(this).data("cost"));
+      $(this).children("span").html(parseInt($(this).data("cost")));
     }
     updateReport();
   });
