@@ -36,6 +36,14 @@ function buyDiver() {
   document.getElementById('diverCost').innerHTML = nextCost;
 };
 
+function resetButton (){
+            coins = 0;
+            divers = 0;
+            document.getElementById("coins").innerHTML = coins;
+            document.getElementById("divers").innerHTML = divers;
+            document.getElementById("button4").innerHTML = ("New Game");
+        };
+
 window.setInterval(function() {
   coinClick(divers);
 }, 2000);
