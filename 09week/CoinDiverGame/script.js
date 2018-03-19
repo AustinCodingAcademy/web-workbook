@@ -1,6 +1,6 @@
 'use strict';
 
-// $(document).ready
+// Document Ready Function & Console Log of Ready state
 
 $(document).ready(function() {
   console.log("ready!");
@@ -17,7 +17,7 @@ function coinClick(number) {
 var divers = 0;
 
 function buyDiver() {
-  //works out the cost of hiring 1 more diver
+  //works out the cost of hiring 1 diver
   var diverCost = Math.floor(10 * Math.pow(1.1, divers));
   //checks that the player can afford the next diver
   if (coins >= diverCost) {
