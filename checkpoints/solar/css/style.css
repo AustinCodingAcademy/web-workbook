@@ -111,9 +111,11 @@ button {
 .eqname p {
   margin-bottom: .3em;
 }
+
 .eqdetails {
-  display: none;
+  display:none;
 }
+
 .eqdetails p {
   margin: 0em 1em;
   font-size: 80%;
@@ -137,16 +139,20 @@ button {
 div.tech {
   display: flex;
   align-content: space-around;
-  max-width: 250px;
-  overflow: hidden;
-  margin-top: 0em
+  overflow-x: hidden;
+  flex-wrap:wrap;
+  margin-top: 0em;
 }
 
-div.tech p {
+div.tech img {
   padding: 3px;
   height: 50px;
   width: 50px;
   margin: 0px;
+}
+
+div.unavail img {
+  filter:grayscale(100%);
 }
 
 /* facts section */
@@ -193,7 +199,7 @@ footer p {
 
 .solargame {
   display: grid;
-  grid-template-columns: 5fr 1fr;
+  grid-template-columns: 4fr 1fr;
   grid-template-areas: "clicker idle" "facts facts";
   height: 80vh;
 }
