@@ -1,0 +1,30 @@
+.timerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gameBoard {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.box {
+  height: 100px;
+  width: 95%;
+  background-color: red;
+  margin: 1px;
+}
+
+.box:nth-child(20n+1),
+.box:nth-child(20n+3),
+.box:nth-child(20n+5),
+.box:nth-child(20n+7),
+.box:nth-child(20n+9),
+.box:nth-child(20n+12),
+.box:nth-child(20n+14),
+.box:nth-child(20n+16),
+.box:nth-child(20n+18),
+.box:nth-child(20n)
+{
+  background: blue;
+}
