@@ -11,8 +11,9 @@
 .box {
   height: 100px;
   width: 95%;
-  background-color: red;
+  background: red;
   margin: 1px;
+  transition: all .4s ease;
 }
 
 .box:nth-child(20n+1),
@@ -27,4 +28,18 @@
 .box:nth-child(20n)
 {
   background: blue;
+}
+
+.hideBox {
+  visibility: hidden;
+}
+
+#reportWinBox {
+  position: fixed;
+  background: white;
+  top: 50%;
+  left: 50%;
+  margin-left:-70px;
+  margin-top:-50px;
+  visibility: hidden;
 }
