@@ -77,10 +77,10 @@ $(document).ready(function () {
       updateProd(currentrate);
 
       nextcost = Math.floor(1.8 * Math.pow(1.2, currentcost));
-      console.log(`${equip} was ${currentcost}, will be ${nextcost}`);
 
       equipcost[whichequip] = nextcost;
       equiphas[whichequip] = equiphas[whichequip] + 1;
+      equipval[whichequip] = equipval[whichequip] + currentrate;
 
       switch (equip) {
       case 'panel':
@@ -126,8 +126,16 @@ $(document).ready(function () {
 
   // buffs
 
-  $('[tech]').on("click", function () {
 
+  $('[tech]').on("click", function () {
+    tech = $(this).attr('tech');
+    whichtech = ($(this).index()) + 1;
+
+    if (checktech(tech, whichtech)) {
+
+      equipval[whichequip] = equipval[whichequip] * (techval[whichtech] * .1);
+      $(this).addClass('noshow');
+    };
   });
 
 
@@ -147,8 +155,17 @@ $(document).ready(function () {
   }
 
   function checkequip(itempos) {
-    let currentcost = equipcost[itempos];
     if (kW > equipcost[itempos]) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  function checktech(thing, thingpos) {
+    let allowed = $(`[tech=${thing}]`).hasClass("unavail");
+    console.log(`${allowed}`);
+    if (!(allowed) && (kW > techcost[thingpos])) {
       return true;
     } else {
       return false;
