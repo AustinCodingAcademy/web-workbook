@@ -6,6 +6,10 @@
 // ==============================
   let muns = 0,
       currentMuns = 0,
+      diggerBonus = 0,
+      minerBonus = 0,
+      dozerBonus = 0,
+      excavatorBonus = 0,
       digger = 0,
       miner = 0,
       dozer = 0,
@@ -13,7 +17,7 @@
 
   alert('Get Muns\nYour goal is to get all da Muns')
 // ==============================
-// Game Logic
+// Save Game / Load Game
 // ==============================
   function saveGame(){
     localStorage.setItem("currentMuns", currentMuns);
@@ -27,66 +31,69 @@
 // ==============================
   function getMuns(number){
       muns = muns + number;
-      document.getElementById('currentMuns').innerHTML = muns;
+      $('#currentMuns').html(muns);
   };
   function buyDigger(){
-    let diggerCost = Math.floor(1 * Math.pow(2,digger));
+    let diggerCost = Math.floor(1 * Math.pow(1.8,digger));
     if (muns >= diggerCost) {
       digger = digger + 1;
+      diggerBonus = diggerBonus + 1;
       muns = muns - diggerCost;
-      document.getElementById('digger').innerHTML = digger;
-      document.getElementById('currentMuns').innerHTML = muns;
+      $('#digger').html(diggerBonus);
+      $('#diggerNum').html(digger);
+      $('#currentMuns').html(muns);
     };
-      let nextCost = Math.floor(1 * Math.pow(2,digger));
-      document.getElementById('diggerCost').innerHTML = nextCost;
+      let nextCost = Math.floor(1 * Math.pow(1.8,digger));
+      $('#diggerCost').html(nextCost);
   };
-  window.setInterval(function(){
-    getMuns(digger)
-  }, 1000);
 
   function buyMiner(){
-    let minerCost = Math.floor(15 * Math.pow(1.05,miner));
+    let minerCost = Math.floor(15 * Math.pow(1.15,miner));
     if (muns >= minerCost) {
-      miner = miner + 10;
+      miner = miner + 1;
+      minerBonus = minerBonus + 5;
       muns = muns - minerCost;
-      document.getElementById('miner').innerHTML = miner;
-      document.getElementById('currentMuns').innerHTML = muns;
+      $('#miner').html(minerBonus);
+      $('#minerNum').html(miner);
+      $('#currentMuns').html(muns);
     };
-      let nextCost = Math.floor(15 * Math.pow(1.05,miner));
-      document.getElementById('minerCost').innerHTML = nextCost;
+      let nextCost = Math.floor(15 * Math.pow(1.15,miner));
+      $('#minerCost').html(nextCost);
   };
-  window.setInterval(function(){
-    getMuns(miner)
-  }, 1000);
 
   function buyDozer(){
-    let dozerCost = Math.floor(50 * Math.pow(1.05,dozer));
+    let dozerCost = Math.floor(50 * Math.pow(1.15,dozer));
     if (muns >= dozerCost) {
-      dozer = dozer + 50;
+      dozer = dozer + 1;
+      dozerBonus = dozerBonus + 10;
       muns = muns - dozerCost;
-      document.getElementById('dozer').innerHTML = dozer;
-      document.getElementById('currentMuns').innerHTML = muns;
+      $('#dozer').html(dozerBonus);
+      $('#dozerNum').html(dozer);
+      $('#currentMuns').html(muns);
     }
-    let nextCost = Math.floor(50 * Math.pow(1.05,dozer));
-    document.getElementById('dozerCost').innerHTML = nextCost;
+    let nextCost = Math.floor(50 * Math.pow(1.15,dozer));
+    $('#dozerCost').html(nextCost);
   };
-  window.setInterval(function(){
-    getMuns(dozer)
-  }, 1000)
+
   function buyExcavator(){
-    let excavatorCost = Math.round(150 * Math.pow(1.05,excavator));
+    let excavatorCost = Math.round(500 * Math.pow(1.15,excavator));
     if (muns >= excavatorCost) {
-      excavator = excavator + 100;
+      excavator = excavator + 1;
+      excavatorBonus = excavatorBonus + 50;
       muns = muns - excavatorCost;
-      document.getElementById('excavator').innerHTML = excavator;
-      document.getElementById('currentMuns').innerHTML = muns;
+      $('#excavator').html(excavatorBonus);
+      $('#excavatorNum').html(excavator)
+      $('#currentMuns').html(muns);
     };
-      let nextCost = Math.floor(150 * Math.pow(1.05,excavator));
-      document.getElementById('excavatorCost').innerHTML = nextCost;
+      let nextCost = Math.floor(500 * Math.pow(1.15,excavator));
+      $('#excavatorCost').html(nextCost);
   };
-  window.setInterval(function(){
-    getMuns(excavator)
-  }, 1000);
+  setInterval(function(){
+    getMuns(diggerBonus)
+    getMuns(minerBonus)
+    getMuns(dozerBonus)
+    getMuns(excavatorBonus)
+  }, 2000);
 
 
 // });

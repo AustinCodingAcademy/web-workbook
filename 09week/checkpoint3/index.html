@@ -9,41 +9,50 @@
   </head>
   <body>
 <!-- ======================================================= -->
-<!--                       Click Object                      -->
+<!-- Click Object -->
 <!-- ======================================================= -->
-    <h1>Get Muny</h1>
-    <button id="getMuny" onclick="getMuns(1)" type="button" name="button"><img src="./img/coin.png" alt=""></button>
-    <div id="currentMuns">0</div>
-    <div class="game-state">
-      <button onclick="saveGame()" id="save" type="button" name="button">Save</button>
-      <button onclick="loadGame()" id="load" type="button" name="button">Load</button>
+    <div class="manual-income">
+      <h1>Get Muny</h1>
+      <button id="getMuny" onclick="getMuns(1)" type="button" name="button"><img src="./img/coin.png" alt=""></button>
+      <div id="currentMuns">0</div>
+      <div class="game-state">
+        <button onclick="saveGame()" id="save" type="button" name="button">Save</button>
+        <button onclick="loadGame()" id="load" type="button" name="button">Load</button>
+      </div>
     </div>
 <!-- ======================================================= -->
-<!--                      Upgrades Help                      -->
+<!-- Upgrades Help -->
 <!-- ======================================================= -->
-    <h1>Worker Help</h1>
+    <h2>Worker Help</h2>
     <div class="worker-help">
       <p>Digger: </p><span id="digger">0</span>
       <p>Miner: </p><span id="miner">0</span>
       <p>Dozer: </p><span id="dozer">0</span>
       <p>Excavator: </p><span id="excavator">0</span>
     </div>
+    <h2>Worker Numbers</h2>
+    <div class="worker-numbers">
+      <p>Digger: </p><span id="diggerNum">0</span>
+      <p>Miner: </p><span id="minerNum">0</span>
+      <p>Dozer: </p><span id="dozerNum">0</span>
+      <p>Excavator: </p><span id="excavatorNum">0</span>
+    </div>
 <!-- ======================================================= -->
-<!--                         Upgrades                        -->
+<!-- Upgrades -->
 <!-- ======================================================= -->
     <div class="">
-      <h1>Upgrades</h1>
+      <h2>Upgrades</h2>
       <div class="upgrades">
         <button onclick="buyDigger()">Digger</button><span id="diggerCost">1</span>
         <button onclick="buyMiner()">Miner</button><span id="minerCost">15</span>
         <button onclick="buyDozer()">Dozer</button><span id="dozerCost">50</span>
-        <button onclick="buyExcavator()">Excavator</button><span id="excavatorCost">150</span>
+        <button onclick="buyExcavator()">Excavator</button><span id="excavatorCost">500</span>
       </div>
     </div>
 <!-- ======================================================= -->
-<!--                        Javascript                       -->
+<!-- Javascript -->
 <!-- ======================================================= -->
-    <script type="text/javascript" src="./script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
