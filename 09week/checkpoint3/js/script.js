@@ -9,20 +9,20 @@ $(document).ready(function() {
   };
 
   setInterval(goGo, 1000);
-
+  
+// spinning function
   function goGo() {
-    // var audio2 = $("#mysoundclip2")[0];
     data.totalRevs += data.totalRPS;
     data.totalCurrent += data.totalRPS;
     $('#kick').css({
       'transform': 'rotate(' + data.totalRevs + 'deg)'
     });
     updateReport();
-    // audio2.play();
+
 
   }
 
-
+// updates data
   function updateReport() {
     var audio2 = $("#mysoundclip2")[0];
     $("#currenttotal").text(Math.floor(data.totalCurrent));
@@ -30,10 +30,9 @@ $(document).ready(function() {
     audio2.play();
   }
 
-
+// click on image function
   $("#kick").click(function() {
     var audio = $("#mysoundclip")[0];
-    var audio2 = $("#mysoundclip2")[0];
     data.totalRevs++;
     data.totalCurrent++;
     updateReport();
@@ -42,7 +41,7 @@ $(document).ready(function() {
 
   })
 
-
+// click on buttons
   $(".button").click(function() {
     var addVal = $(this).data("cost");
     if ($(this).data("cost") < data.totalCurrent) {
