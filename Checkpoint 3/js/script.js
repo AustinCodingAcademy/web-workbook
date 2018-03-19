@@ -15,12 +15,15 @@ setInterval(makeBurger,1000);
   }
 
   function sellBurgers() {
-  (data.totalCurrent * 5) += data.money;
+  data.totalCurrent += data.money;
+  $("money").text(data.money);
   }
+
+
 
   function updateReport() {
     $("#currentTotal").text(Math.floor(data.totalCurrent));
-    $("#bps").text((data.totalBPS).toFixed(3));
+    $("#bps").text((data.totalBPS*100).toFixed(2));
   }
 
 console.log(totalBurgers.data);
@@ -40,5 +43,10 @@ console.log(totalBurgers.data);
       $( this ).data( "cost", parseInt($(this).data( "cost" ) * 1.15) );
     }
     updateReport();
-  })
+
+    });
+
+  //   $("button").click(function() {
+  //     $("#money").text(data.money);
+  // })
 });
