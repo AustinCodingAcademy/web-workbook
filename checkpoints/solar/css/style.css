@@ -1,0 +1,175 @@
+/* Custom CSS for Solar Clicker game */
+
+/* To-do list
+
+- yellow glow/gradient/animation behind the title word
+- glow around the solar panel when it's clicked on
+- (JS) - glow/alert/notice to click on solar panel when page loads
+ */
+
+/* Default styles */
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+/* heading styles */
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 4em;
+  font-weight: 300;
+  max-height: 15vh;
+}
+
+/* clicker section */
+
+.solarclicker {
+  grid-area: clicker;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.solarclicker img {
+  max-width: 311px;
+  width: 40%;
+}
+
+.currentstatus {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.currentstatus div p:first-child {
+  margin-bottom: .2em;
+}
+
+.currentstatus div p:last-child {
+  margin-top: .2em;
+  text-align: center;
+}
+
+button {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 5px;
+  font-size: 65%;
+}
+
+/* Idle clicker section - add-ons and power-ups */
+
+.solaridle {
+  grid-area: idle;
+  max-width: 280px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 71vh;
+  margin: 0em;
+}
+
+/* add-on section */
+
+.solaraddons {
+  grid-area: addons;
+}
+
+.solaraddons p.title {
+  background-color: orange;
+  margin-bottom: 0em;
+  padding: 2px;
+}
+
+.equip {
+  padding: 5px;
+  max-height: 43vh;
+  overflow-y: scroll;
+}
+
+/* power-up section */
+
+.solarpower {
+  grid-area: power;
+}
+
+.solarpower p.title {
+  background-color: orange;
+  margin-bottom: 0em;
+  padding: 2px;
+}
+
+div.tech {
+  display: flex;
+  align-content: space-around;
+  max-width: 250px;
+  overflow: hidden;
+  margin-top: 0em
+}
+
+div.tech p {
+  padding: 3px;
+  height: 50px;
+  width: 50px;
+  margin: 0px;
+  border: 3px solid blue;
+}
+
+/* facts section */
+
+.solarfacts {
+  grid-area: facts;
+  display: flex;
+  justify-content: flex-start;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  background-color: LightGoldenRodYellow;
+}
+
+.solarfacts p:first-child {
+  padding-left: 3px;
+  padding-right: 2px;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  font-size: 105%;
+  max-width: 10%;
+  margin-bottom: 0em;
+}
+
+.solarfacts p:last-child {
+  font-size: 85%;
+  padding-left: 5px;
+}
+
+/* footer styles */
+
+footer {
+  font-size: .65em;
+  font-weight: lighter;
+  font-style: italic;
+  max-height: 5vh;
+}
+
+footer p {
+  grid-area: footer;
+  margin-bottom: 0em;
+}
+
+/* layout */
+
+.solargame {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-template-areas: "clicker idle" "facts facts";
+  height: 80vh;
+}
+
+/* Responsive layout */
