@@ -11,19 +11,21 @@ var data = {
 setInterval(goGo,1000);
 
 function goGo() {
-  var audio2 = $("#mysoundclip2")[0];
+  // var audio2 = $("#mysoundclip2")[0];
   data.totalRevs += data.totalRPS;
   data.totalCurrent += data.totalRPS;
   $('#kick').css({ 'transform': 'rotate(' + data.totalRevs + 'deg)'});
   updateReport();
-  audio2.play();
+  // audio2.play();
 
 }
 
 
 function updateReport() {
+  var audio2 = $("#mysoundclip2")[0];
   $("#currenttotal").text(Math.floor(data.totalCurrent));
   $("#rps").text((data.totalRPS/70.4).toFixed(6));
+  audio2.play();
 }
 
 
