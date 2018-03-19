@@ -22,7 +22,7 @@ function goGo() {
 
 
 function updateReport() {
-  $("#currentTotal").text(Math.floor(data.totalCurrent));
+  $("#currenttotal").text(Math.floor(data.totalCurrent));
   $("#rps").text((data.totalRPS/70.4).toFixed(6));
 }
 
@@ -35,11 +35,7 @@ $("#kick").click(function (){
   updateReport();
   audio.play();
   pulse();
-  // if $("#currentTotal").text < 100 {
-  //   audio.play();
-  // } else {
-  //   audio2.play();
-  // }
+
 })
 
 
