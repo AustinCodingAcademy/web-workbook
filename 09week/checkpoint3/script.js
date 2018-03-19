@@ -19,7 +19,7 @@
 // ==============================
 // Save Game / Load Game
 // ==============================
-  
+
 // ==============================
 // Game Logic
 // ==============================
@@ -28,7 +28,7 @@
       $('#currentMuns').html(muns);
   };
   function buyDigger(){
-    let diggerCost = Math.floor(1 * Math.pow(1.9,digger));
+    let diggerCost = Math.floor(1 * Math.pow(1.15,digger));
     if (muns >= diggerCost) {
       digger = digger + 1;
       diggerBonus = diggerBonus + 1;
@@ -37,7 +37,7 @@
       $('#diggerNum').html(digger);
       $('#currentMuns').html(muns);
     };
-      let nextCost = Math.floor(1 * Math.pow(1.9,digger));
+      let nextCost = Math.floor(1 * Math.pow(1.15,digger));
       $('#diggerCost').html(nextCost);
   };
 
