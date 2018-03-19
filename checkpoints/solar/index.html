@@ -45,58 +45,125 @@
       <div class="solaraddons">
         <p class="title">Equipment</p>
         <div class="equip">
-          <div class="equip-1">
-            <p>Solar Panel</p>
+          <div equip="panel" class="unavail">
+            <div class="eqname">
+              <p>Solar Panel</p>
+              <p class="eqcost">10</p>
+            </div>
+            <div class="eqdetails">
+              <p class="eqpoten">Produces <span class="eqvalue">0.1</span> kW/second</p>
+              <p class="eqmakes noshow"><span class="eqhas">0</span> panels producing <span class="eqpower">0</span> kW/s</p>
+            </div>
           </div>
-          <div class="equip-2">
-            <p>Rooftops</p>
+          <div equip="roof" class="unavail">
+
+              <div class="eqname">
+                <p>Rooftops</p>
+                <p class="eqcost">35</p>
+              </div>
+              <div class="eqdetails">
+                <p class="eqpoten">Produces <span class="eqvalue">3</span> kW/second</p>
+                <p class="eqmakes noshow"><span class="eqhas">0</span> panels producing <span class="eqpower">0</span> kW/s</p>
+              </div>
           </div>
-          <div class="equip-3">
-            <p>Solar Farms</p>
+          <div equip="farms" class="unavail">
+
+              <div class="eqname">
+                <p>Solar Farms</p>
+                <p class="eqcost">50</p>
+              </div>
+              <div class="eqdetails">
+                <p class="eqpoten">Produces <span class="eqvalue">20</span> kW/second</p>
+                <p class="eqmakes noshow"><span class="eqhas">0</span> panels producing <span class="eqpower">0</span> kW/s</p>
+              </div>
           </div>
-          <div class="equip-4">
-            <p>Solar Roads</p>
+          <div equip="roads" class="unavail">
+
+              <div class="eqname">
+                <p>Solar Roads</p>
+                <p class="eqcost">180</p>
+              </div>
+              <div class="eqdetails">
+                <p class="eqpoten">Produces <span class="eqvalue">60</span> kW/second</p>
+                <p class="eqmakes noshow"><span class="eqhas">0</span> panels producing <span class="eqpower">0</span> kW/s</p>
+              </div>
           </div>
-          <div class="equpip-5">
-            <p>Offshore Solar</p>
+          <div equip="water" class="unavail">
+
+              <div class="eqname">
+                <p>Offshore Solar</p>
+                <p class="eqcost">500</p>
+              </div>
+              <div class="eqdetails">
+                <p class="eqpoten">Produces <span class="eqvalue">100</span> kW/second</p>
+                <p class="eqmakes noshow"><span class="eqhas">0</span> panels producing <span class="eqpower">0</span> kW/s</p>
+              </div>
           </div>
-          <div class="equip-6">
-            <p>Orbital Satellites</p>
+          <div equip="sat" class="unavail">
+
+              <div class="eqname">
+                <p>Orbital Satellites</p>
+                <p class="eqcost">2500</p>
+              </div>
+              <div class="eqdetails">
+                <p class="eqpoten">Produces <span class="eqvalue">420</span> kW/second</p>
+                <p class="eqmakes noshow"><span class="eqhas">0</span> panels producing <span class="eqpower">0</span> kW/s</p>
+              </div>
           </div>
-          <div class="equip-7">
-            <p>Lunar Collectors</p>
+          <div equip="moon" class="unavail">
+
+              <div class="eqname">
+                <p>Lunar Collectors</p>
+                <p class="eqcost">7000</p>
+              </div>
+              <div class="eqdetails">
+                <p class="eqpoten">Produces <span class="eqvalue">800</span> kW/second</p>
+                <p class="eqmakes noshow"><span class="eqhas">0</span> panels producing <span class="eqpower">0</span> kW/s</p>
+              </div>
           </div>
-          <div class="equip-8">
-            <p>Lagrange-point Satellites</p>
+          <div equip="bigsat" class="unavail">
+
+              <div class="eqname">
+                <p>Lagrange-point Satellites</p>
+                <p class="eqcost">10000</p>
+              </div>
+              <div class="eqdetails">
+                <p class="eqpoten">Produces <span class="eqvalue">1000</span> kW/second</p>
+                <p class="eqmakes noshow"><span class="eqhas">0</span> panels producing <span class="eqpower">0</span> kW/s</p>
+              </div>
           </div>
         </div>
       </div>
+
+      <!--
+      let equipcost = [0, 10, 35, 50, 180, 500, 2500, 7000, 10000];
+      let equipval = [0, 0.1, 3, 20, 60, 100, 420, 800, 1000]; -->
 
       <!-- Power ups -->
       <div class="solarpower">
         <p class="title">Technology Improvements</p>
         <div class="tech">
-          <div class="tech-1">
+          <div tech="1" class="unavail">
             <p>Sunny Day</p>
             <!-- overall production -->
           </div>
-          <div class="tech-2">
+          <div tech="2" class="unavail">
             <p>Bettery Batteries</p>
             <!-- overall production -->
           </div>
-          <div class="tech-3">
-            <p>Improved Photovoltaics</p>
+          <p>Improved Photovoltaics</p>
+          <div tech="3" class="unavail">
             <!-- boost for solar panels -->
           </div>
-          <div class="tech-4">
+          <div tech="4" class="unavail">
             <p>Heliostats</p>
             <!-- boost for solar farms -->
           </div>
-          <div class="tech-5">
+          <div tech="5" class="unavail">
             <p>Improved Floatovoltaics</p>
             <!-- boost for offshore -->
           </div>
-          <div class="tech-6">
+          <div tech="6" class="unavail">
             <p>Solar Lens</p>
             <!-- boost for satellites -->
           </div>
