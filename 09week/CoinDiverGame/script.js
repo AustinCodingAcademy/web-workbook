@@ -9,53 +9,53 @@ $(document).ready(function() {
 
 var coins = 0;
 
-function coinClick(number) {
+function coinclick(number) {
   coins = coins + number;
   document.getElementById("coins").innerHTML = coins;
 };
 
 var divers = 0;
 
-function buyDiver() {
+function buydiver() {
   //works out the cost of hiring 1 diver
-  var diverCost = Math.floor(10 * Math.pow(1.1, divers));
+  var divercost = Math.floor(10 * Math.pow(1.1, divers));
   //checks that the player can afford the next diver
-  if (coins >= diverCost) {
+  if (coins >= divercost) {
     //increases number of divers
     divers = divers + 1;
     //removes the coins spent
-    coins = coins - diverCost;
+    coins = coins - divercost;
     //updates the number of divers for the user
     document.getElementById('divers').innerHTML = divers;
     //updates the number of coins for the user
     document.getElementById('coins').innerHTML = coins;
-    addDiverImg ();
+    adddiverimg ();
   };
   //works out the cost of the next diver
-  var nextCost = Math.floor(10 * Math.pow(1.1, divers));
+  var nextcost = Math.floor(10 * Math.pow(1.1, divers));
   //updates the diver cost for the user
-  document.getElementById('diverCost').innerHTML = nextCost;
+  document.getElementById('divercost').innerHTML = nextcost;
 
 };
 
-function addDiverImg() {
+function adddiverimg() {
   var img=document.createElement("img");
       img.src="diver.png"
       img.id="picture"
-      var foo = document.getElementById("scubaImage");
+      var foo = document.getElementById("scubaimage");
       foo.appendChild(img);
 };
 
-function resetButton() {
-  $("#scubaImage").empty();
+function resetbutton() {
+  $("#scubaimage").empty();
   coins = 0;
   divers = 0;
   document.getElementById("coins").innerHTML = ("0");
   document.getElementById("divers").innerHTML = ("0");
-  document.getElementById("diverCost").innerHTML = ("10");
+  document.getElementById("divercost").innerHTML = ("10");
   document.getElementById("button4").innerHTML = ("New Game");
 };
 
 window.setInterval(function() {
-  coinClick(divers);
+  coinclick(divers);
 }, 2000);
