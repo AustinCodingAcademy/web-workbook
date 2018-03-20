@@ -14,8 +14,6 @@ ul {
   display: flex;
   justify-content: space-around;
   padding: 10px;
-  padding-top: 15px;
-  margin-bottom: 0px;
   color: white;
 
 }
@@ -33,8 +31,15 @@ a {
   color:rgba(255,255,255,0.8);
 }
 
+a.site {
+  color: black;
+}
+
+a.site:hover {
+  color: hotpink;
+}
 .mymain {
-  background-image: url("../disc.jpg");
+  background-image: url("../workspace.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height:550px;
@@ -44,7 +49,7 @@ a {
 
 .wrap {
   margin-top:40px;
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255,255,255,0.5);
   height: 350px;
   width: 100%;
 }
@@ -87,21 +92,6 @@ h3 {
   color: black;
   text-align: center;
   padding: 100px;
-}
-
-.button {
-  display:flex;
-  justify-content: center;
-  position: absolute;
-  left: 750px;
-  top: 170px;
-  font-size: 25px;
-  font-family: "Open Sans",sans-serif;
-  color: white;
-  height: 40px;
-  width: 300px;
-  padding: 30px;
-  border: 5px solid white;
 }
 
 .pages {
@@ -156,12 +146,50 @@ p {
 }
 
 .main2 {
-  background-image: url("../Honda.jpg");
+  background-image: url("../coding.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: .8;
   height:600px;
   background-attachment: fixed;
+}
+
+.forms {
+  display: block;
+  margin-left: 38%;
+  margin-top: 5%;
+}
+
+.input {
+  padding: 10px;
+  width: 300px;
+  margin-top: 10px;
+}
+
+.other {
+  margin-top: 10px;
+  height: 200px;
+  width: 320px;
+}
+/*
+.bio {
+  position: relative;
+  top: 20px;
+  left: 800px;
+  background-image: url("../creative.jpg");
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  background-size: cover;
+}*/
+
+button {
+  padding: 5px;
+  position: relative;
+  left: 174px;
+  width: 150px;
+  height: 30px;
+  margin-top:5px;
 }
 
 /*find way to grab icons*/
@@ -186,12 +214,7 @@ footer {
 }
 
 #talk {
-  height:500px;
-}
-
-#sound {
-  margin-top: 30px;
-  margin-left: 55px;
+  height:450px;
 }
 
 @media (max-width: 576px) {
