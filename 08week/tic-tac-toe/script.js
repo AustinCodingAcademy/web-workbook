@@ -7,21 +7,21 @@ $(document).ready(function() {
   $('[data-cell]').on('click', function() {
 
 
-    if (document.getElementById("p-ann2").innerHTML == "Game Over")
-    { alert ('Game is Over!');
-    return;
+    if (document.getElementById("p-ann2").innerHTML == "Game Over") {
+      alert('Game is Over!');
+      return;
     }
 
-    if (this.innerHTML === 'X' || this.innerHTML === 'O')
-    { alert ('Square has already been chosen, please select another square!');
-    return;
+    if (this.innerHTML === 'X' || this.innerHTML === 'O') {
+      alert('Square has already been chosen, please select another square!');
+      return;
     }
 
 
 
-    if ( $((".dc").length != 0) && (document.getElementById("p-ann2").innerHTML == "Game Over" ))
-    { alert ('Game is a draw');
-    return;
+    if ($((".dc").length != 0) && (document.getElementById("p-ann2").innerHTML == "Game Over")) {
+      alert('Game is a draw');
+      return;
     }
 
     // if $('.dc'.text()!= '')
@@ -32,7 +32,7 @@ $(document).ready(function() {
     //   if ( $("#dc.").length != 0)
 
 
-  $(this).text(playerTurn);
+    $(this).text(playerTurn);
 
 
     //Check for win or draw
@@ -40,7 +40,7 @@ $(document).ready(function() {
     verticalWin();
     horizontalWin();
     diagonalWin();
-    
+
 
     // if playerTurn is X, then make
     //playerTurn 0. If playerTurn is
@@ -119,32 +119,32 @@ $(document).ready(function() {
 
   function drawGame() {
     if ($('[data-cell="0"]').text() != '' &&
-        $('[data-cell="1"]').text() != '' &&
-        $('[data-cell="2"]').text() != '' &&
-        $('[data-cell="3"]').text() != '' &&
-        $('[data-cell="4"]').text() != '' &&
-        $('[data-cell="5"]').text() != '' &&
-        $('[data-cell="6"]').text() != '' &&
-        $('[data-cell="7"]').text() != '' &&
-        $('[data-cell="8"]').text() != '')
-        // $('[p-ann2]').text() !== "Game Over")
-      {
+      $('[data-cell="1"]').text() != '' &&
+      $('[data-cell="2"]').text() != '' &&
+      $('[data-cell="3"]').text() != '' &&
+      $('[data-cell="4"]').text() != '' &&
+      $('[data-cell="5"]').text() != '' &&
+      $('[data-cell="6"]').text() != '' &&
+      $('[data-cell="7"]').text() != '' &&
+      $('[data-cell="8"]').text() != '')
+    // $('[p-ann2]').text() !== "Game Over")
+    {
       console.log('Game is a Draw');
       document.getElementById("p-ann").innerHTML = ("Game is a Draw!");
       document.getElementById("p-ann2").innerHTML = ("Game Over");
       document.getElementById("clear").innerHTML = ("New Game");
-      }
-      return;
     }
+    return;
+  }
 
 
-$("button").click(function(){
-        $(".dc").empty();
-        $("#p-ann").empty();
-        $("#p-ann2").empty();
-        playerTurn = 'X';
-        document.getElementById("clear").innerHTML = ("Clear Board");
-    });
+  $("button").click(function() {
+    $(".dc").empty();
+    $("#p-ann").empty();
+    $("#p-ann2").empty();
+    playerTurn = 'X';
+    document.getElementById("clear").innerHTML = ("Clear Board");
+  });
 
   // drawGame();
 
