@@ -9,14 +9,14 @@ $(document).ready(function() {
   };
 
   setInterval(goGo, 1000);
-  
+
 // spinning function
   function goGo() {
-    data.totalRevs += data.totalRPS;
+    // data.totalRevs += data.totalRPS;
     data.totalCurrent += data.totalRPS;
-    $('#kick').css({
-      'transform': 'rotate(' + data.totalRevs + 'deg)'
-    });
+    // $('#kick').css({
+    //   'transform': 'rotate(' + data.totalRevs + 'deg)'
+    // });
     updateReport();
 
 
