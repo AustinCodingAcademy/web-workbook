@@ -3,23 +3,39 @@
   padding: 0;
 }
 
-nav {
-  margin-left: 80px;
+.wrap {
+  background-color: rgba(255,255,255,0.3);
+  height: 250px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.mymain {
+  background-image: url("../disc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:600px;
+  background-attachment: fixed;
+}
+
+.main2 {
+  background-image: url("../Honda.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .8;
+  height:600px;
+  background-attachment: fixed;
 }
 
 ul {
-  margin-left: 20px;
-  padding: 10px;
-  padding-top: 25px;
-  margin-bottom: 0px;
   display: flex;
   justify-content: space-around;
+  padding: 10px;
+  margin-left: 120px;
+  padding-top: 15px;
+  margin-bottom: 0px;
+  color: white;
 
-}
-
-ul {
-    display: flex;
-    justify-content: space-around;
 }
 
 li {
@@ -32,19 +48,13 @@ li {
 a {
   text-decoration: none;
   decoration: none;
-  color: pink;
-}
-
-main {
-  padding-bottom: 150px;
-  height: 600px;
-  border-bottom: 3px solid pink;
+  color:rgba(255,255,255,0.8);
 }
 
 .jennifer {
   position: absolute;
   left: 200px;
-  top: 130px;
+  top: 150px;
   font-family: 'Abril Fatface', cursive;
   font-size: 65px;
   display: inline;
@@ -52,12 +62,18 @@ main {
 
 .riess {
   position: absolute;
-  top: 130px;
+  top: 150px;
   left: 510px;
   font-family: 'Abril Fatface', cursive;
   font-size: 65px;
-  color: pink;
+  color: white;
   display: inline;
+}
+
+h1 .extras {
+  padding-top: 300px;
+  margin-left: 30%
+  margin-right: 30%;
 }
 
 h2 {
@@ -70,7 +86,7 @@ h2 {
 }
 
 h3 {
-  color: pink;
+  color: black;
   text-align: center;
   padding: 100px;
 }
@@ -80,26 +96,38 @@ h3 {
   justify-content: center;
   position: absolute;
   left: 750px;
-  top: 150px;
+  top: 170px;
   font-size: 25px;
   font-family: "Open Sans",sans-serif;
-  color: pink;
+  color: white;
   height: 40px;
   width: 300px;
   padding: 30px;
-  border: 3px solid pink;
+  border: 5px solid white;
 }
 
-.bigimage {
+.pages {
+  height: 550px;
+}
+
+.aboutme {
   position: relative;
-  top: 240px;
-  float: right;
-  width: auto;
-  height: 350px;
-  opacity: .95;
-  border-radius: 35px;
-  margin-right: 130px;
-  border: 10px solid #86BE88;
+  top: 200px;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Open Sans",sans-serif;
+}
+
+.intro {
+  background-image: url("../kids.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
+  margin-bottom: 40px;
+  opacity: .8;
+  color: white;
 }
 
 /*computers*/
@@ -108,27 +136,6 @@ img {
   height: 200px;
   width: auto;
 }
-
-/*blank space??*/
-
-
-.button2 {
-  font-size: 30px;
-  font-family: "Open Sans",sans-serif;
-  color: pink;
-  padding: 30px 60px 30px 60px;
-  border: 3px solid pink;
-  height: 180px;
-  width: 500px;
-}
-
-/*???*/
-section {
-  margin-top:0px;
-  padding-top: 100px;
-  text-align: center;
-}
-
 
 article {
   display: flex;
@@ -143,12 +150,6 @@ p {
   padding: 10px;
 }
 
-div {
-  height: 600px;
-  border-top: 3px solid pink;
-  margin-top: 30px;
-}
-
 /*moving around text*/
 .typo {
   display: flex;
@@ -161,6 +162,40 @@ footer {
   text-align: center;
   padding: 30px 0 0 0;
   height: 200px;
-  background-color: green;
+  color: white;
+  background-color: black;
+}
+
+.button:hover {
+  background-color:ghostwhite;
   opacity: .5;
+  color: black;
+}
+
+.text2 {
+  position: relative;
+  top: 120px;
+  left: 480px;
+  font-size: 34px;
+  color: black;
+  border: 4px solid black;
+  padding: 30px;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+}
+
+.text2:hover {
+  background-color: #E7D7E9;
+  border: white;
+  color: white;
+}
+
+#talk {
+  height:500px;
+}
+
+#sound {
+  position: relative;
+  top: 210px;
+  left: 355px;
 }

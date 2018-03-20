@@ -4,61 +4,82 @@
     <link rel="stylesheet" href="./css/style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Arvo|Josefin+Slab|Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <meta charset="utf-8">
     <title></title>
   </head>
+
+
   <body>
-    <nav>
-      <ul>
-        <li><a href="./aboutme.html">ABOUT ME</a></li>
-        <li><a href="./work.html">WORK</a></li>
-        <li><a href="./projects.html">CURRENT PROJECTS</a></li>
-        <li><a href="./contact.html">CONTACT</a></li>
-      </ul>
-    </nav>
+    <div class="mymain"data-stellar-background-ratio=“0.5”>
+      <nav>
+        <ul>
+          <li><a href="#werd">ABOUT ME</a></li>
+          <li><a href="#bizazz">WORK</a></li>
+          <li><a href="#martin">CURRENT PROJECTS</a></li>
+          <li><a href="#talk">CONTACT</a></li>
+        </ul>
+      </nav>
     <main>
-      <h1> Scalable vector<br>logo here</h1>
-      <img class="bigimage"src="./bigisland.png">About me javascript/buttons<br>interactive, hover all links
-      <h1 class="jennifer">JENNIFER</h1><h1 class="riess">RIESS</h1>
-      <h2>web development | web design</h2><br>
-      <a class="button" href="./contact.html">LET'S START CREATING.</a>
+      <div class="wrap">
+        <h1 class="jennifer">JENNIFER</h1><h1 class="riess">RIESS</h1>
+        <h2>web development | web design</h2><br>
+        <a class="button" href="#talk">LET'S START CREATING.</a>
+      </div>
     </main>
-      <a class="button2" href="./contact.html">WORK</a>
+    </div>
 
-    <section>
-    </section>
+    <div class="pages"id="werd">
+      <div class="aboutme">Hola.
+      </div>
+    </div>
 
-    <article>
+    <div class="pages intro"data-stellar-background-ratio=“0.5”>
+        <h1 class="extras">
+    </div>
+
+    <article id="bizazz">
       <img src="./jjhike2.jpg">
       <img src="rwd1.jpg"><br>
       <p><b>J+J Hikes<br>
       <i>Wordpress CMS, responsive web design</i></b></p>
     </article>
+
     <article></article>
+
     <article>
       <img src="./wahini.jpg">
-      <p class="typo"><b>Wahine on Wheels<br>
-        <i>Wordpress CMS</i></b></p>
+      <p class="typo">
+        <b>Wahine on Wheels<br>
+        <i>Wordpress CMS</i></b>
+      </p>
       <img src="./joelgasp.jpg">
-      <p class="typo"><b>Joel Gaspar Art<br>
-        <i>MODX</i>, template layout</b></p>
+      <p class="typo">
+        <b>Joel Gaspar Art<br>
+        <i>MODX</i>, template layout</b>
+      </p>
     </article>
-    <div>
-      <a class="button2" href="./contact.html">PROJECTS</a>
-      <h3>put parallax frame here, javascript carousel</h3>
-    </div><hr>
-    <div>
-      <a class="button2" href="./contact.html">CONTACT</a>
-      <h3>Input forms here/Contact</h3>
+
+    <div class="pages"id="martin">
+      <div class="main2"data-stellar-background-ratio=“0.5”>
     </div>
-    <hr>
+
+    <div class="pages"id="talk">
+      <a class="text2" href="https://soundcloud.com/djhapa-kid">Song of da week</a><br>
+      <iframe width="550" height="166"frameborder="no" allow="autoplay" id="sound" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/392600157&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+    </div>
+
     <footer>
-        <i class="fas fa-bars"style="font-size:3em; color:Tomato"></i><br><br>
+      <div class="icons">
         <i class="fab fa-github-square"style="font-size:3em; color:Tomato"></i>
         <i class="fab fa-drupal"style="font-size:3em; color:Tomato"></i>
-        <i class="fab fa-wordpress-simple"style="font-size:3em; color:Tomato"></i><br><br>
-        <br>
+        <i class="fab fa-wordpress-simple"style="font-size:3em; color:Tomato"></i>
+        <br><br><br></div>
         <b>Riess Designs, LLC | Austin, TX | jennyriess@gmail.com</b>
     </footer>
+    <script src="jquery.stellar.min.js"></script>
+    <script>
+      $.stellar()
+    </script>
   </body>
 </html>

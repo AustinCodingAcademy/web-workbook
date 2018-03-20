@@ -3,8 +3,7 @@
   <head>
     <link rel="stylesheet"href="./css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Poller+One' rel='stylesheet' type='text/css'>
-    <script src="/assets/jquery.js"></script>
-    <meta charset="utf-8">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    <meta charset="utf-8">
     <title>Checkpoint 3 - Austin Coding Academy</title>
   </head>
   <body>
@@ -16,14 +15,14 @@
         <div class="right">j</div>
         <img src="./tres.png">
       </div>
-      <div class="foot"id="rolly"><br>
+      <div class="foot"><br>
         <p>Click me!<br>
           (I roll.)</p>
       </div>
     </div>
     <script>
-    $('p').onclick(function(){
-      document.getElementById("#rolly").style.transform = "rotate(7deg)";
+    $('foot').click(function(){
+      document.getElementsByClassName("foot").style.transform = "rotate(7deg)";
     });
     </script>
   </body>
