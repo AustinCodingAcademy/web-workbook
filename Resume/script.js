@@ -1,11 +1,10 @@
 'use Strict';
 
 $(document).ready(function() {
-
-  $('img').click(function() {
-    var points = 0;
-    points = points + 1;
-    $('img').html("total" + points);
+var points = 0;
+  $('#meatwad').click(function() {
+    points += 1;
+    $('#total').text("Total Clacks: " + points)
   });
 
 });
