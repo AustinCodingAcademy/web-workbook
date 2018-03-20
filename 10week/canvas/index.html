@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
+  </head>
+  <body>
+<canvas id="tri" width="500" height="500"></canvas>
+
+<script>
+let canvasElement = document.querySelector("#tri");
+let context = canvasElement.getContext("2d");
+
+//triangle points
+context.beginPath();
+//grid starts with 0,0 in top left
+context.moveTo(240, 100);
+context.lineTo(100, 350);
+context.lineTo(360, 350);
+context.closePath();
+
+//outline
+context.lineWidth = 1;
+context.strokeStyle = '#666666';
+context.stroke();
+
+//triangle fill color
+context.fillStyle = "aqua";
+context.fill();
+
+ctx.font = "50px Arial";
+ctx.strokeText("Justin",10,50);
+</script>
+
+  </body>
+</html>
