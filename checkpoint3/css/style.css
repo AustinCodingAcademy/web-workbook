@@ -1,0 +1,76 @@
+.container{
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+  background-color: lightgreen;
+  padding: 25px;
+}
+
+
+#outer-circle {
+   background: #385a94;
+   border-radius: 50%;
+   height: 500px;
+   width: 500px;
+   position: relative;
+   /*
+    Child elements with absolute positioning will be
+    positioned relative to this div
+   */
+ }
+ #inner-circle {
+   position: absolute;
+   background: #a9aaab;
+   border-radius: 50%;
+   height: 300px;
+   width: 300px;
+   /*
+    Put top edge and left edge in the center
+   */
+   top: 50%;
+   left: 50%;
+   margin: -150px 0px 0px -150px;
+   /*
+    Offset the position correctly with
+    minus half of the width and minus half of the height
+   */
+ }
+
+ #innermost-circle {
+   position: absolute;
+   background: red;
+   border-radius: 50%;
+   height: 100px;
+   width: 100px;
+   /*
+    Put top edge and left edge in the center
+   */
+   top: 50%;
+   left: 50%;
+   margin: -50px 0px 0px -50px;
+   /*
+    Offset the position correctly with
+    minus half of the width and minus half of the height
+   */
+ }
+
+ label, p{
+   font-size: 30px;
+   font-weight: 900;
+ }
+
+ .btns{
+   margin: 5px 0 0 300px;
+   /* overflow: hidden; */
+ }
+
+ .levels{
+   /* float: left; */
+   /* margin-left: 200px; */
+   margin: 5px 0 0 200px;
+ }
+
+ .bottom{
+   display: flex;
+   align-items:left;
+ }
