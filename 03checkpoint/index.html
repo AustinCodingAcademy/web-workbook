@@ -8,17 +8,17 @@
 </head>
 
 <body>
-  <div class="timerContainer">
-    <header>
-      <h5>How Many Can You Clear in 10 Seconds??</h5>
-      <p>Click Start to begin!</p>
-    </header>
-    <div class="timer">
-      <span id="seconds">10</span><span> seconds</span> <br>
-      <button type="button" name="startButton" id="start">Start</button>
-    </div>
+  <div class="timer">
+  <div>
+    <span id="seconds">10</span><span> seconds</span> <br>
   </div>
-  <div id="reportWinBox">
+</div>
+  <div id="reportWinBox" class="hideBox alertBox">
+    <br><button type="button" name="playAgain" id="playAgainButton" onclick="replay()">Play Again</button>
+  </div>
+  <div id="startBox" class="alertBox">
+    <h5>How Many Can You Clear in 10 Seconds??</h5>
+    <p>Timer starts on your first click!</p>
   </div>
   <div class="gameBoard">
     <div class="box">
