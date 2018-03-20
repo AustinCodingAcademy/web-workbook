@@ -3,30 +3,6 @@
   padding: 0;
 }
 
-.wrap {
-  background-color: rgba(255,255,255,0.3);
-  height: 250px;
-  width: 100%;
-  margin-top: 40px;
-}
-
-.mymain {
-  background-image: url("../disc.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height:600px;
-  background-attachment: fixed;
-}
-
-.main2 {
-  background-image: url("../Honda.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: .8;
-  height:600px;
-  background-attachment: fixed;
-}
-
 nav {
   position: fixed;
   background: black;
@@ -56,6 +32,22 @@ a {
   text-decoration: none;
   decoration: none;
   color:rgba(255,255,255,0.8);
+}
+
+.mymain {
+  background-image: url("../disc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:550px;
+  background-attachment: fixed;
+}
+
+
+.wrap {
+  margin-top:40px;
+  background-color: rgba(255,255,255,0.3);
+  height: 350px;
+  width: 100%;
 }
 
 .jennifer {
@@ -164,6 +156,15 @@ p {
   margin-left: -40px;
 }
 
+.main2 {
+  background-image: url("../Honda.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .8;
+  height:600px;
+  background-attachment: fixed;
+}
+
 /*find way to grab icons*/
 footer {
   text-align: center;
@@ -190,15 +191,13 @@ footer {
 }
 
 #sound {
-  margin-left: 20%;
-position: relative;
-top: 180px;
+  margin-top: 30px;
+  margin-left: 55px;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .mymain {
-    background-size: contain;
-    height: 500px;
+
   }
   .intro {
     background-size: contain;
@@ -208,18 +207,19 @@ top: 180px;
   }
 
   .button {
-    position: relative;
+    display: block;
     top: 230px;
-    left: 405px;
+    left: 150px;
     color: black;
     border: 5px solid black;
-    background-color: rgba(0,0,255,.1);
+    background-color: rgba(0.0.0.1);
   }
-  .wrap {
-    height: 410px;
+  #werd {
+    height: 300px;
   }
-
-
+  .aboutme {
+    top:100px;
+  }
 }
 
 /* Medium and up (Tablets) */
