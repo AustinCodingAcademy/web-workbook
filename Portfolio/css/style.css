@@ -27,6 +27,15 @@
   background-attachment: fixed;
 }
 
+nav {
+  position: fixed;
+  background: black;
+  color: black;
+
+  top: 0;
+  width: 100%;
+}
+
 ul {
   display: flex;
   justify-content: space-around;
@@ -172,18 +181,6 @@ footer {
   color: black;
 }
 
-.text2 {
-  position: relative;
-  top: 120px;
-  left: 480px;
-  font-size: 34px;
-  color: black;
-  border: 4px solid black;
-  padding: 30px;
-  text-align: center;
-  font-family: 'Lobster', cursive;
-}
-
 .text2:hover {
   background-color: #E7D7E9;
   border: white;
@@ -195,7 +192,48 @@ footer {
 }
 
 #sound {
-  position: relative;
-  top: 210px;
-  left: 355px;
+  margin-left: 25%;
+  margin-top: 20%;
+}
+
+@media (min-width: 576px) {
+  .mymain {
+    background-size: contain;
+    height: 500px;
+  }
+  .intro {
+    background-size: contain;
+  }
+  .main2 {
+    background-size: contain;
+  }
+
+  .button {
+    position: relative;
+    top: 230px;
+    left: 405px;
+    color: black;
+    border: 5px solid black;
+    background-color: rgba(0,0,255,.1);
+  }
+  .wrap {
+    height: 410px;
+  }
+
+
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (min-width: 1200px) {
+
 }
