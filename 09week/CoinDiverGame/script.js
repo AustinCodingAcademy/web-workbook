@@ -29,7 +29,7 @@ function buydiver() {
     document.getElementById('divers').innerHTML = divers;
     //updates the number of coins for the user
     document.getElementById('coins').innerHTML = coins;
-    adddiverimg ();
+    adddiverimg();
   };
   //works out the cost of the next diver
   var nextcost = Math.floor(10 * Math.pow(1.1, divers));
@@ -39,11 +39,11 @@ function buydiver() {
 };
 
 function adddiverimg() {
-  var img=document.createElement("img");
-      img.src="diver.png"
-      img.id="picture"
-      var foo = document.getElementById("scubaimage");
-      foo.appendChild(img);
+  var img = document.createElement("img");
+  img.src = "diver.png"
+  img.id = "picture"
+  var foo = document.getElementById("scubaimage");
+  foo.appendChild(img);
 };
 
 function resetbutton() {
