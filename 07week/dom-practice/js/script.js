@@ -4,7 +4,7 @@ let items = document.querySelectorAll('li')
 
 alert(items.length)
 
-document.querySelector('h1').insertAdjacentHTML('afterend',)
+// document.querySelector('h1').insertAdjacentHTML('afterend',)
   <h2>You have ${items.length} items in your shopping cart<h2>
 
 function addItem() {
