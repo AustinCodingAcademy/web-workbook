@@ -2,7 +2,7 @@
 $(document).ready(function() {
 
   var data = {
-    money: 0,
+    money: 10,
     totalCurrent: 0,
     totalBPS: 0
   };
@@ -22,11 +22,11 @@ setInterval(makeBurger,1000);
 
 
   function updateReport() {
-    $("#currentTotal").text(Math.floor(data.totalCurrent));
+    $("#currenttotal").text(Math.floor(data.totalCurrent));
     $("#bps").text((data.totalBPS*100).toFixed(2));
+    $("#money").text(data.money);
   }
 
-console.log(totalBurgers.data);
 
   $("#burger").click(function (){
 
@@ -46,7 +46,6 @@ console.log(totalBurgers.data);
 
     });
 
-  //   $("button").click(function() {
-  //     $("#money").text(data.money);
-  // })
+      updateReport();
+
 });
