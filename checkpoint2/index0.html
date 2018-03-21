@@ -22,10 +22,20 @@
   <a href="#careers">Careers</a>
   <a href="#about">About</a>
   <a href="#contact">Contact</a>
-  <a href="javascript:void()" style="font-size:15px;" class="icon" onclick="myfunction()">
+  <a href="javascript:void()" style="font-size:15px;" class="icon" onclick="myfunction()"</a>
   </div>
   <div style="padding-left:16px">
   </div>
+  <script>
+  function myfunction() {
+      var x = document.getElementById("mytopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+  }
+  </script>
 </header>
 </div>
 </body>
