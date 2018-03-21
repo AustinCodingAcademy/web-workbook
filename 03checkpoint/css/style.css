@@ -1,24 +1,39 @@
 .timer {
   position: fixed;
   background: white;
-  top: 9px;
-  right: 9px;
+  top: 15px;
+  right: 15px;
   height: 25px;
   width: 100px;
   text-align: center;
+  line-height: 1.5;
+}
+
+.alwaysOnTop {
+  z-index: 999;
 }
 
 .gameBoard {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
+  border: solid 2px;
+  border-width: thick;
+  margin: 20px;
 }
 
 .box {
   height: 100px;
   width: 95%;
-  background: red;
-  margin: 1px;
-  transition: all .2s ease;
+  background: #F7C53B;
+  margin: 2px;
+  margin-bottom: 1px;
+  transition: all .5s linear;
+  border: solid .2px;
+}
+
+.flip {
+  transform: rotateX(180deg);
+  background-color: #FE6C6B;
 }
 
 .box:nth-child(20n+1),
@@ -32,28 +47,48 @@
 .box:nth-child(20n+18),
 .box:nth-child(20n)
 {
-  background: blue;
+  background: #1537A7;
+}
+
+.flip:nth-child(20n+1),
+.flip:nth-child(20n+3),
+.flip:nth-child(20n+5),
+.flip:nth-child(20n+7),
+.flip:nth-child(20n+9),
+.flip:nth-child(20n+12),
+.flip:nth-child(20n+14),
+.flip:nth-child(20n+16),
+.flip:nth-child(20n+18),
+.flip:nth-child(20n)
+{
+  background: #8E36A1;
 }
 
 .hideBox {
   visibility: hidden;
 }
 
-.hideGameBox {
+/* .hideGameBox {
   visibility: hidden;
-}
+} */
 
 .alertBox {
   position: fixed;
   background: white;
   top: 50%;
   left: 50%;
-  margin-left:-70px;
+  margin-left:-110px;
   margin-top:-50px;
   height: 150px;
   width: 200px;
   text-align: center;
   padding: 10px;
+}
+
+.box-shadow {
+	-moz-box-shadow: 0 0 70px #525d53;
+	-webkit-box-shadow: 0 0 70px #525d53;
+	box-shadow: 0 0 25px #070707;
 }
 
 .fadeOut {

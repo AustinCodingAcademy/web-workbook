@@ -17,7 +17,7 @@ $(document).ready(function() {
       }
       if (timer === 0) {
         clearInterval(timer);
-        totalBoxes = $('.hideGameBox').length;
+        totalBoxes = $('.flip').length;
         reportWin(totalBoxes);
       }
     }, 1000);
@@ -30,7 +30,7 @@ $(document).ready(function() {
   function reportWin(totalBoxes) {
     let reportWin = $("#reportWinBox");
     reportWin = $("#reportWinBox").css("visibility", "visible");
-    $("#reportWinBox").prepend(`<p>You cleared ${totalBoxes} boxes!</p>`);
+    $("#reportWinBox").prepend(`<p>You flipped ${totalBoxes} boxes!</p>`);
     // if (totalBoxes < 5) {
     //   $("#reportWinBox").prepend(`<p>you can do better</p>`);
     // }
@@ -40,7 +40,7 @@ $(document).ready(function() {
     if (!started) {
       start()
     };
-    $(this).addClass("hideGameBox")
+    $(this).addClass("flip")
   });
 
   $("#reportWinBox").click(function() {
