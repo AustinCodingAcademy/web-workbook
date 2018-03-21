@@ -37,14 +37,14 @@ function draw() {
     ctx.fillStyle = "indigo";
     ctx.fillText("S",375,63);
     ctx.fillStyle = "blue";
-    ctx.fillText("l",392,63);
+    ctx.fillText("l",391,63);
     ctx.fillStyle = "green";
-    ctx.fillText("a",400,63);
+    ctx.fillText("a",399,63);
     ctx.fillStyle = "yellow";
-    ctx.fillText("v",414,63);
+    ctx.fillText("v",413,63);
     ctx.fillStyle = "orange";
-    ctx.fillText("i",430,63);
+    ctx.fillText("i",429,63);
     ctx.fillStyle = "red";
-    ctx.fillText("n",440,63);
+    ctx.fillText("n",438,63);
   }
 }
