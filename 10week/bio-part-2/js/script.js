@@ -39,12 +39,12 @@ function draw() {
     ctx.fillStyle = "blue";
     ctx.fillText("l",392,63);
     ctx.fillStyle = "green";
-    ctx.fillText("a",401,63);
+    ctx.fillText("a",400,63);
     ctx.fillStyle = "yellow";
-    ctx.fillText("v",415,63);
+    ctx.fillText("v",414,63);
     ctx.fillStyle = "orange";
-    ctx.fillText("i",431,63);
+    ctx.fillText("i",430,63);
     ctx.fillStyle = "red";
-    ctx.fillText("n",441,63);
+    ctx.fillText("n",440,63);
   }
 }
