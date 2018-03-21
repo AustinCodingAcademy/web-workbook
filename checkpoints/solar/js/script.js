@@ -76,7 +76,7 @@ $(document).ready(function () {
       updateKW(currentcost * -1);
       updateProd(currentrate);
 
-      nextcost = Math.floor(1.8 * Math.pow(1.2, currentcost));
+      nextcost = Math.floor(1.8 * Math.pow(currentcost, 1.1));
 
       equipcost[whichequip] = nextcost;
       equiphas[whichequip] = equiphas[whichequip] + 1;
@@ -87,7 +87,7 @@ $(document).ready(function () {
         panels = panels + 1;
         $('[tech="sunny"]').removeClass('unavail');
         break;
-      case 'roofs':
+      case 'roof':
         roofs = roofs + 1;
         $('[tech="photo"]').removeClass('unavail');
         break;
