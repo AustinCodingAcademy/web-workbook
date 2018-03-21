@@ -6,7 +6,7 @@ $(document).ready(function() {
   let started = false;
 
   function start() {
-    hideStartBox ();
+    hideStartBox();
     started = true;
     let timer = 10;
     setInterval(function() {
@@ -23,7 +23,7 @@ $(document).ready(function() {
     }, 1000);
   };
 
-  function hideStartBox () {
+  function hideStartBox() {
     $("#startBox").addClass("hideBox")
   };
 
@@ -43,7 +43,7 @@ $(document).ready(function() {
     $(this).addClass("flip")
   });
 
-  $("#reportWinBox").click(function() {
+  $("#playAgainButton").click(function() {
     location.reload();
   });
 
