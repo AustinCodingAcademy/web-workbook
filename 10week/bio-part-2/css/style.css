@@ -1,9 +1,22 @@
+/* body {
+  display: grid;
+  grid-template-areas:
+    "loop"
+    "speech"
+    "canvas";
+} */
+.loop-vid {
+  grid-area: loop;
+}
+.speech-vid {
+  grid-area: speech;
+}
+
+
 .loop-vid, .speech-vid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 10px;
 }
 #myCanvas {
+  grid-area: canvas;
   border: 1px solid #0745c1;
 }
