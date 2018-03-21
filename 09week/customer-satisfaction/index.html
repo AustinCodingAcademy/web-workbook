@@ -3,30 +3,57 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Customer Satifcation Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Satisfaction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css" />
   </head>
   <body>
-    <form action="https://docs.google.com/forms/d/e/1FAIpQLSf5_4GRKL07Alrjx_dCtKy3Ds-Lq9eygJ2RY4gZ1ahUo7GEKQ/formResponse"
-  target="_self" method="POST">
-    <div><label for="url">URL</label>
-    <input type="text" name="entry.1993328404" value="" id="url"></div>
-    <div><label for="password">PASSWORD</label>
-    <input type="text" name="entry.753864437" value="" id="password"></div>
-    <div><label for="email">EMAIL</label>
-    <input type="text" name="entry.174513077" value="" id="email"></div>
-    <div><label for="checkbox">CHECKBOX</label>
-    <input type="text" name="entry.2087171838" value="" id="checkbox"></div>
-    <div><label for="radio">RADIO</label>
-    <input type="text" name="entry.194334340" value="" id="radio"></div>
-    <div><label for="range">RANGE</label>
-    <input type="text" name="entry.1050815861" value="" id="range"></div>
-    <input type="hidden" name="fvv" value="1">
-    <input type="hidden" name="draftResponse" value="[null,null,&quot;-5694662775394596802&quot;]
-  ">
-    <input type="hidden" name="pageHistory" value="0">
-    <input type="hidden" name="fbzx" value="-5694662775394596802">
-    <input type="submit">
-  </form>
+    <h1>Satisfaction Sheet</h1>
+    <form>
+      <!-- URL -->
+      <div class="form-group">
+        <label for="url1">URL</label>
+        <input type="url" class="form-control" id="url1" placeholder="enter your url.com here">
+      </div>
+      <!-- EMAIL ADDRESS -->
+      <div class="form-group">
+        <label for="email1">Email address</label>
+        <input type="email" class="form-control" id="email1" placeholder="enter your name@example.com here" required>
+      </div>
+      <!-- PASSWORD -->
+      <div class="form-group">
+        <label for="password1">Password</label>
+        <input type="password" class="form-control" id="password1" placeholder="Enter Password">
+      </div>
+      <!-- GRADE -->
+      <div class="form-group">
+        <input type="checkbox" name="class" value="love"> I LOVE THIS CLASS!<br>
+ <input type="checkbox" name="class" value="hate" checked="checked"> I HATE THIS CLASS!<br>
 
+
+      </div>
+      <div>Will you recommend to others!?</div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="radio" id="radio1" value="option1" checked>
+        <label class="form-check-label" for="radio1">
+          Yes
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="radio" id="radio2" value="option2">
+        <label class="form-check-label" for="radio2">
+          No
+        </label>
+      </div>
+      <br>
+      <div>How satisfied were you? 1-10</div>
+      <div class="form-check">
+        <input type="range" list="tickmarks">
+      </div>
+      <button type="submit" class="btn btn-danger">Submit</button>
+    </form>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
   </body>
 </html>
