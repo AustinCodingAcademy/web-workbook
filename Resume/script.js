@@ -11,15 +11,14 @@ var clicker1 = 100;
     var f = $('#total') - 100;
     $('#total').text("Total Clacks: " + f);
     auto();
-  }); if {
-    $('#total') < 100;
-    $('.clicker1') = null;
+  }); if ($('#total') < 100); {
+    $('#total').text("Total Clacks: 0");
   }
   function auto() {
-  let i = $(this).click($('.clicker1'));
-  for (var i = 0; i < $(this).click($('.clicker1').length; i++) {
-    $(this).click($('.clicker1')[i]
+    var button = $('#meatwad');
+    setInterval(function()
+    {button.click().$('#meatwad');},100)
   }
-  }
+
 
 });
