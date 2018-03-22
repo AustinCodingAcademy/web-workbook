@@ -27,7 +27,7 @@ $(document).ready(function() {
   };
 
   function updateReport() {
-    $('#currentTotal').text(Math.floor(data.currentBurgers));
+    $('#currenttotal').text(Math.floor(data.currentBurgers));
     $('#bpc').text((data.totalBPC/25).toFixed(2));
   };
 
@@ -37,10 +37,10 @@ $(document).ready(function() {
     updateReport();
   })
 
-  $(".button").click(function (){
+  $(".button").click(function() {
     var addVal = $(this).data( "cost" );
       if ($(this).data("cost") < data.currentBurgers) {
-          data.currentBurgers -=  parseFloat($(this).data( "cost" ).toPrecision(2));
+          data.currentBurgers -= parseFloat($(this).data( "cost" ).toPrecision(2));
           data.totalBPC += parseFloat($(this).data( "val" ));
           $(this).children("span").html( parseInt($(this).children("span").html() * 2));
           $(this).data("cost", parseInt($(this).data("cost") * 2));
