@@ -2,7 +2,7 @@
 /*Ready?*/
 $(document).ready(function() {
   // Put app logic here
-var $block = null;
+  var $block = null;
 /*Target the last child of a stack*/
   $("[data-stack]").click(function(){
     var $thisBlock = $(this).children();
@@ -21,7 +21,7 @@ var $block = null;
     /*You win if either of the last 2 stacks have all four blocks*/
     if ( $("[data-stack='2']").children().length >= 4 || $("[data-stack='3']").children().length >= 4 )
   {
-    alert("You Win!!");
-  }
+      alert("You Win!!");
+    }
   });
 });
