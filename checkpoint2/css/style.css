@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Terminator Real NFI;
-    src: url(http://www.fontspace.com/norfok-incredible-font-design/terminator-real-nfi);
+  font-family: Terminator Real NFI;
+  src: url(http://www.fontspace.com/norfok-incredible-font-design/terminator-real-nfi);
 }
 body {
   margin: 0;
@@ -118,25 +118,26 @@ footer {
   display: none;
 }
 
-  /* end topnav besides media setting*/
+/* end topnav besides media setting*/
 
-  .flex-container1 {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-  }
+.flex-container1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
 
-  .headerwords {
-    font-size: 28px;
-    padding-left: 25px;
-    padding-top: 50px;
-    padding-right: 40px;
-    padding-bottom: 20px;
-  }
+.headerwords {
+  font-size: 28px;
+  padding-left: 25px;
+  padding-top: 50px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+}
 
 p {
-font-size: 40px;
-color: red;}
+  font-size: 40px;
+  color: red;
+}
 
 .mainwords {
   padding-top: 90px;
@@ -158,24 +159,24 @@ color: red;}
 /* Gallery instructions */
 
 div.gallery {
-    margin: 5px;
-    border: 1px solid lightgrey;
-    width: 100%;
-    height: auto;
+  margin: 5px;
+  border: 1px solid lightgrey;
+  width: 100%;
+  height: auto;
 }
 
 div.gallery:hover {
-    border: 1px solid #777;
+  border: 1px solid #777;
 }
 
 div.gallery img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 div.desc {
-    padding: 15px;
-    text-align: center;
+  padding: 15px;
+  text-align: center;
 }
 /* Gallery End */
 /* media links formatiing */
@@ -203,89 +204,87 @@ div.desc {
 }
 
 
-  /* Extra Small and up */
-  .grid {
-    display: grid;
-    grid-template-areas:
-    "header"
-    "main"
-    "symbols"
-    "picbox1"
-    "picbox2"
-    "futuretech"
-    "exosuit"
-    "skynet"
-    "footer";
+/* Extra Small and up */
+.grid {
+  display: grid;
+  grid-template-areas:
+  "header"
+  "main"
+  "symbols"
+  "picbox1"
+  "picbox2"
+  "futuretech"
+  "exosuit"
+  "skynet"
+  "footer";
+}
+
+
+.topnav a:not(:first-child) {display: none;}
+
+.topnav a.icon {
+  float: right;
+  display: block;
+}
+
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
 
-  .topnav a:not(:first-child) {display: none;}
+/* Small and up (Phones) */
+@media (min-width: 576px) {
 
-  .topnav a.icon {
-    float: right;
-    display: block;}
 
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
+}
+
+
+
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "header     header"
+  "main       main"
+  "symbols    symbols"
+  "picbox1    picbox2"
+  "futuretech futuretech"
+  "exosuit    skynet"
+  "footer     footer";
+  }
+}
+
+.topnav a:not(:first-child) {
+  display: block;
+}
+.topnav a.icon {
+  float: right;
+  display: block;
+}
+
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav.responsive a {
       float: none;
       display: block;
       text-align: left;
     }
 
-  /* Small and up (Phones) */
-  @media (min-width: 576px) {
-
-
-  }
-
-
-
-
-  /* Medium and up (Tablets) */
-  @media (min-width: 768px) {
-    .grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas:
-      "header     header"
-      "main       main"
-      "symbols    symbols"
-      "picbox1    picbox2"
-      "futuretech futuretech"
-      "exosuit    skynet"
-      "footer     footer";
-    }
-  }
-
-
-
-    .topnav a:not(:first-child) {
-      display: block;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-
-    .topnav a.icon {
-      float: right;
-      display: block;}
-
-
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .text2 {
+.text2 {
       padding-top: 20px;
       margin-bottom: 100px;
     }
@@ -294,12 +293,9 @@ div.desc {
   /* Large and up (Desktops) */
   @media (min-width: 992px) {
 
+}
+/* Extra Large and up (Wide Screen Desktops) */
+@media (min-width: 1200px) {
 
-
-  }
-  /* Extra Large and up (Wide Screen Desktops) */
-  @media (min-width: 1200px) {
-
-    /* topnav media instructions */
-
-  }
+/* topnav media instructions */
+}
