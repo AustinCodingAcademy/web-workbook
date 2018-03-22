@@ -22,7 +22,7 @@
 }
 
 .box {
-  height: 100px;
+  height: 35px;
   width: 95%;
   background: #F7C53B;
   margin: 2px;
@@ -48,9 +48,9 @@
   visibility: hidden;
 }
 
-/* .hideGameBox {
-  visibility: hidden;
-} */
+.desktop {
+  display: none;
+}
 
 .alertBox {
   position: fixed;
@@ -71,31 +71,16 @@
   box-shadow: 0 0 25px #070707;
 }
 
-.fadeOut {
-  -webkit-animation: fadeinout 2s linear forwards;
-  animation: fadeinout 2s linear forwards;
-}
-
-@-webkit-keyframes fadeinout {
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  0% {
-    opacity: 1
+/*phones*/
+@media (min-width: 576px) {
+  .box {
+    height: 60px;
   }
 }
 
-@keyframes fadeinout {
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  0% {
-    opacity: 1
+/* Medium and up (Tablets) */
+@media (min-width: 768px) and (max-width: 992px){
+  .box {
+    height: 100px;
   }
 }
