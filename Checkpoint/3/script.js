@@ -20,8 +20,8 @@ $(document).ready(function() {
     }, 1000);
   }
   /*counts down from 3*/
-  let backstart2 = 3;
-  let intervalstart2;
+  let backstart = 3;
+  let intervalstart;
   /*restarts game*/
   /*still having issues with computer number not going back to zero, also shows double display numbers*/
   $("#res").click(function() {
@@ -42,7 +42,7 @@ $(document).ready(function() {
     let mycount = 0;
     let timecount = 10;
     let interval;
-    let compcount = 0;
+    let halcount = 0;
     /*displays user's number of clicks*/
     $("#clicker").click(function() {
       mycount++;
@@ -57,7 +57,7 @@ $(document).ready(function() {
         clearInterval(interval);
         $('#clicker').hide();
         $('#buttons').show(100);
-        if (mycount > compcount) {
+        if (mycount > halcount) {
           $('#winner').text("You Win");
         } else {
           $('#winner').text("You Lose");
@@ -65,12 +65,12 @@ $(document).ready(function() {
       }
     }, 1000);
     intervalcomp = setInterval(function() {
-      compcount++;
-      $('#halcount').text(compcount);
+      halcount++;
+      $('#halcount').text(halcount);
       if (timecount == 0) {
         clearInterval(intervalcomp);
       }
       /*fine-tune computer clicks, lower number means faster computer clicks*/
-    }, 200);
+    }, 220);
   }
 });
