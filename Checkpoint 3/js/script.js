@@ -7,7 +7,7 @@ $(document).ready(function() {
     totalBPS: 0
   };
 
-setInterval(makeBurger,1000);
+  setInterval(makeBurger,1000);
 
   function makeBurger() {
     data.totalCurrent += data.totalBPS;
@@ -15,8 +15,8 @@ setInterval(makeBurger,1000);
   }
 
   function sellBurgers() {
-  data.totalCurrent += data.money;
-  $("money").text(data.money);
+    data.totalCurrent += data.money;
+    $("money").text(data.money);
   }
 
 
@@ -44,8 +44,8 @@ setInterval(makeBurger,1000);
     }
     updateReport();
 
-    });
+  });
 
-      updateReport();
+  updateReport();
 
 });

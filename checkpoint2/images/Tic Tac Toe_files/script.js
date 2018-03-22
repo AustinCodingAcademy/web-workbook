@@ -6,7 +6,7 @@ $(document).ready(function() {
     $(this).text(playerTurn);
 
   if (playerTurn === 'O')
-} else {
+   else {
   playerturn = 'X';
 }
 });

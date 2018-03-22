@@ -25,7 +25,7 @@ function division() {
 }
 
 function negative() {
-document.querySelector("#results").value = eval(document.querySelector("#results").value + "*-1");
+  document.querySelector("#results").value = eval(document.querySelector("#results").value + "*-1");
 }
 
 
