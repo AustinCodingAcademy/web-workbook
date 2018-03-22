@@ -5,15 +5,15 @@
 // Variables
 // ==============================
 let muns = 0,
-    currentMuns = 0,
-    diggerBonus = 0,
-    minerBonus = 0,
-    dozerBonus = 0,
-    excavatorBonus = 0,
-    digger = 0,
-    miner = 0,
-    dozer = 0,
-    excavator = 0;
+  currentMuns = 0,
+  diggerBonus = 0,
+  minerBonus = 0,
+  dozerBonus = 0,
+  excavatorBonus = 0,
+  digger = 0,
+  miner = 0,
+  dozer = 0,
+  excavator = 0;
 
 alert('Get Muns\nYour goal is to get all da Muns')
 // ==============================
@@ -37,8 +37,8 @@ function buyDigger(){
     $('#digger-num').html(digger);
     $('#current-muns').html(muns);
   };
-    let nextCost = Math.floor(1 * Math.pow(1.5,digger));
-    $('#digger-cost').html(nextCost);
+  let nextCost = Math.floor(1 * Math.pow(1.5,digger));
+  $('#digger-cost').html(nextCost);
 };
 
 function buyMiner(){

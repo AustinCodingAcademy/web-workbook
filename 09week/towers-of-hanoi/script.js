@@ -23,8 +23,8 @@ $(document).ready(function() {
 // ====================================
   function win() {
     if ($('#tower2').children().length === 4 || $('#tower3').children().length === 4)
-     $('#announce-game-won').text('Winner');
-   }
+      $('#announce-game-won').text('Winner');
+    }
 });
 
 // Board*
