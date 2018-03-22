@@ -7,7 +7,6 @@ $(document).ready(function() {
 // ====================================
   let $block = null;
   $('[data-stack]').click(function() {
-
     if ($block) {
       let $lastBlock = $(this).children().last();
       if (!$lastBlock.length || $lastBlock.data('block') > $block.data('block')) {
@@ -25,7 +24,7 @@ $(document).ready(function() {
   function win() {
     if ($('#tower2').children().length === 4 || $('#tower3').children().length === 4)
      $('#announce-game-won').text('Winner');
-  }
+   }
 });
 
 // Board*

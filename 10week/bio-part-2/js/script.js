@@ -3,8 +3,8 @@
 // Variables
 // ======================================
 let c = document.getElementById("myCanvas"),
-    ctx = c.getContext("2d"),
-    grd=ctx.createRadialGradient(350,50,20,300,60,200);
+  ctx = c.getContext("2d"),
+  grd=ctx.createRadialGradient(350,50,20,300,60,200);
 // ======================================
 // Radial Gradient
 // ======================================
