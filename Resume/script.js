@@ -17,8 +17,8 @@ var clicker1 = 100;
   function auto() {
     var button = $('#meatwad');
     setInterval(function()
-    {button.click().$('#meatwad');},100)
-  }
+    {button.click()$('#meatwad');},100)
+  });
 
 
 });
