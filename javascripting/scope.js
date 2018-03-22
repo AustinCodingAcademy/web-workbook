@@ -7,17 +7,17 @@ var c = 3;
   var c = 6;
 
   (function secondFunction(){
-      var b = 8;
-      console.log("a: "+a+", b: "+b+", c: "+c);
-          (function thirdFunction(){
-          var a = 7;
-          var c = 9;
+    var b = 8;
+    console.log("a: "+a+", b: "+b+", c: "+c);
+    (function thirdFunction(){
+            var a = 7;
+            var c = 9;
 
-          (function fourthFunction(){
-              var a = 1;
-              var c = 8;
+            (function fourthFunction(){
+            var a = 1;
+            var c = 8;
 
             })();
-        })();
-    })();
+          })();
+  })();
 })();
