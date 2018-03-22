@@ -5,12 +5,19 @@ $(document).ready(function() {
   let point1 = 30;
   let point2 = 20;
   let point3 = 10;
-  $('#100s').fadeTo("slow", 0.15);
-  $('#1000s').fadeTo("slow", 0.15);
-  $('#10Ks').fadeTo("slow", 0.15);
-  $('#100Ks').fadeTo("slow", 0.15);
+  $('#hun').fadeTo("slow", 0.15);
+  $('#thou').fadeTo("slow", 0.15);
+  $('#tenthou').fadeTo("slow", 0.15);
+  $('#hunthou').fadeTo("slow", 0.15);
   $('#restart').click(function() {
     score = 0;
+    point1 = 30;
+    point2 = 20;
+    point3 = 10;
+    $('#hun').fadeTo("slow", 0.15);
+    $('#thou').fadeTo("slow", 0.15);
+    $('#tenthou').fadeTo("slow", 0.15);
+    $('#hunthou').fadeTo("slow", 0.15);
     $('#score').text(score);
   })
   $('#throw').click(function() {
@@ -49,28 +56,28 @@ $(document).ready(function() {
       $('#result').text('You scored 0 points');
     }
     if (score > 100) {
-      $('#100s').fadeTo("slow", 1);
+      $('#hun').fadeTo("slow", 1);
       point1 = 60;
       point2 = 40;
       point3 = 20;
     }
 
     if (score > 1000) {
-      $('#1000s').fadeTo("slow", 1);
+      $('#thou').fadeTo("slow", 1);
       point1 = 600;
       point2 = 400;
       point3 = 200;
     }
 
     if (score > 10000) {
-      $('#10Ks').fadeTo("slow", 1);
+      $('#tenthou').fadeTo("slow", 1);
       point1 = 6000;
       point2 = 4000;
       point3 = 2000;
     }
 
     if (score > 100000) {
-      $('#100Ks').fadeTo("slow", 1);
+      $('#hunthou').fadeTo("slow", 1);
     }
   })
 });
