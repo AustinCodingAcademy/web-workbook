@@ -1,0 +1,61 @@
+html {
+  width: 100%;
+  height: auto;
+  background-color: black;
+}
+.column1 {
+  grid area: column1;
+}
+h1 {
+  color: white;
+  font-size: 24px;
+  margin-left: 5%;
+  margin-top: 8%;
+  text-align: center;
+}
+
+.column2 {
+  grid area: column2;
+
+}
+
+
+
+.container {
+  background-color: black;
+  width: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "column1  column2"
+    "column1  column2";
+}
+
+ #videosList {
+  margin-top: 15%;
+  margin-left: 5%;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.thevideo {
+  width: 600px;
+  margin-bottom: 50px;
+}
+
+
+/* Hide Play button + controls on iOS */
+video::-webkit-media-controls {
+  display:none !important;
+}
+
+
+#circle {
+  margin-left: 15%;
+  background: radial-gradient(#787878, black, black);
+  opacity: .7;
+}
+
+#mycanvas {
+  margin-left: 5%;
+}

@@ -10,12 +10,12 @@ html body {
   color: white;
   text-align: center;
   width: 100%;
-  height: 32px;
+  height: auto;
   background-color: #414042;
   border: none;
-  font-size: 16px;
+  font-size: 24px;
   font-family: proxima-nova sans-serif;
-  padding: 6px;
+  padding: 20px;
   font-weight: normal;
 }
 
@@ -25,9 +25,9 @@ html body {
 
 .navbar {
   width: 1280px;
-  height: 60px;
+  height: auto;
   display: inline-block;
-  padding: 17px 0px 17px 0px;
+  padding: 20px 0px 20px 0px;
 }
 
 .navbar ul {
@@ -52,7 +52,7 @@ a {
 .buttons {
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .button1 {
@@ -64,13 +64,14 @@ a {
   color: white;
   font-size: 16px;
   border-style: none;
+  background-color: #71B044;
   padding-left: 26px;
   padding-right: 0px;
 }
 
 .button2 {
   display: block;
-  margin-left: auto;
+  /* margin-left: auto; */
   margin-right: auto;
   margin-left: 50px;
   width: 120px;
@@ -79,16 +80,17 @@ a {
   font-size: 16px;
   background-color: #71B044;
   border-style: none;
-  padding-left: 15px;
+  padding-left: 16px;
   padding-right: 0px;
+  text-align: center !important;
 }
 
-.button a {
+ /* .button a {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   padding: 0;
-}
+} */
 
 .section1 {
   width: 1280px;
@@ -107,13 +109,16 @@ a {
 }
 
 .littlebox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 320px;
   height: 260px;
   margin-top: 90px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 90px;
-  padding: 20px 20px 70px 20px;
+  padding: 20px 20px 40px 20px;
   /* margin: 45px 20px 35px; */
   background-color: white;
   float: right;
@@ -126,7 +131,7 @@ span {
 }
 
 .littlebox h1 {
-  display: block;
+  /* display: block; */
   /* margin-top: 180px;
   margin-left: auto;
   margin-right: auto; */
@@ -163,14 +168,14 @@ span {
 
 .startbutton {
   width: 320px;
-  height: 40px;
+  height: 60px;
   background-color: #71B044;
   display: block;
   margin-left: auto;
   margin-right: auto;
   color: white;
   text-align: center;
-  font-size: 16px;
+  font-size: 24px;
   font-family: proxima-nova, sans-serif;
 }
 
@@ -241,12 +246,16 @@ button {
 
 .centeredtext {
   text-align: center;
+  height: auto;
+  padding:20px;
 }
 
 .test-box {
   width: 520px;
   height: 360px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   margin-top: 290px;
   margin-left: auto;
   margin-right: auto;
@@ -257,12 +266,12 @@ button {
   border-radius: 10px;
 }
 
-.testbox h1 {
+.test-box h1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 250px;
-  font-size: 28px;
+  font-size: 24px;
   font-family: proxima-nova, sans-serif;
 }
 
@@ -299,6 +308,9 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.danny {
+  height:60px;
+}
 
 .moretime {
   padding-top: 200px;
@@ -306,7 +318,9 @@ button {
   height: 200px;
   text-align: center;
   margin-top: 200px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   margin-left: auto;
   margin-right: auto;
   float: none;
