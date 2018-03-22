@@ -25,7 +25,7 @@
 // ==============================
   function getMuns(number){
       muns = muns + number;
-      $('#currentMuns').html(muns);
+      $('#current-muns').html(muns);
   };
   function buyDigger(){
     let diggerCost = Math.floor(1 * Math.pow(1.5,digger));
@@ -34,11 +34,11 @@
       diggerBonus = diggerBonus + 1;
       muns = muns - diggerCost;
       $('#digger').html(diggerBonus);
-      $('#diggerNum').html(digger);
-      $('#currentMuns').html(muns);
+      $('#digger-num').html(digger);
+      $('#current-muns').html(muns);
     };
       let nextCost = Math.floor(1 * Math.pow(1.5,digger));
-      $('#diggerCost').html(nextCost);
+      $('#digger-cost').html(nextCost);
   };
 
   function buyMiner(){
@@ -48,11 +48,11 @@
       minerBonus = minerBonus + 5;
       muns = muns - minerCost;
       $('#miner').html(minerBonus);
-      $('#minerNum').html(miner);
-      $('#currentMuns').html(muns);
+      $('#miner-num').html(miner);
+      $('#current-muns').html(muns);
     };
       let nextCost = Math.floor(15 * Math.pow(1.15,miner));
-      $('#minerCost').html(nextCost);
+      $('#minercost').html(nextCost);
   };
 
   function buyDozer(){
@@ -62,8 +62,8 @@
       dozerBonus = dozerBonus + 10;
       muns = muns - dozerCost;
       $('#dozer').html(dozerBonus);
-      $('#dozerNum').html(dozer);
-      $('#currentMuns').html(muns);
+      $('#dozer-num').html(dozer);
+      $('#current-muns').html(muns);
     }
     let nextCost = Math.floor(50 * Math.pow(1.15,dozer));
     $('#dozerCost').html(nextCost);
@@ -76,11 +76,11 @@
       excavatorBonus = excavatorBonus + 50;
       muns = muns - excavatorCost;
       $('#excavator').html(excavatorBonus);
-      $('#excavatorNum').html(excavator)
-      $('#currentMuns').html(muns);
+      $('#excavator-num').html(excavator)
+      $('#current-muns').html(muns);
     };
       let nextCost = Math.floor(500 * Math.pow(1.15,excavator));
-      $('#excavatorCost').html(nextCost);
+      $('#excavator-cost').html(nextCost);
   };
   setInterval(function(){
     getMuns(diggerBonus)
