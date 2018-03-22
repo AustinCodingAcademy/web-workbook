@@ -8,7 +8,7 @@ $(document).ready(function() {
   function start() {
     hideStartBox();
     started = true;
-    let timer = 10;
+    let timer = 15;
     setInterval(function() {
       timer--;
       if (timer >= 0) {
@@ -16,6 +16,7 @@ $(document).ready(function() {
         currTime.innerHTML = timer;
       }
       if (timer === 0) {
+        $('.box').unbind("click");
         clearInterval(timer);
         totalBoxes = $('.flip').length;
         reportWin(totalBoxes);
@@ -30,10 +31,11 @@ $(document).ready(function() {
   function reportWin(totalBoxes) {
     let reportWin = $("#reportWinBox");
     reportWin = $("#reportWinBox").css("visibility", "visible");
-    $("#reportWinBox").prepend(`<p>You flipped ${totalBoxes} boxes!</p>`);
-    // if (totalBoxes < 5) {
-    //   $("#reportWinBox").prepend(`<p>you can do better</p>`);
-    // }
+    if (totalBoxes === 1) {
+      $("#reportWinBox").prepend(`<p>You flipped ${totalBoxes} box!</p>`);
+    } else {
+      $("#reportWinBox").prepend(`<p>You flipped ${totalBoxes} boxes!</p>`);
+    }
   };
 
   $('.box').click(function() {
