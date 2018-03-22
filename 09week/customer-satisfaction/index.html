@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class "form_wrapper">
+    <form class="satisfaction" action="index.html" method="post">
+      <fieldset class="LogIn">
+        <legend>Log In</legend>
+        Email:
+        <input type="email" name="email" required><br> Password:
+        <input type="password" name="password">
+      </fieldset>
+      <fieldset class="Info">
+        <legend>Tell Us About Your Favorite Website</legend>
+        What is your favorite website?
+        <input type="url" name="url">
+        <p>What do you like about the website?</p>
+        <input type="checkbox" name="easy_to_use" value="Easy">Easy to Use
+        <input type="checkbox" name="looks_nice" value="Pretty">Looks Nice
+        <input type="checkbox" name="loads_fast" value="Performs">Quick to Access
+        <p>What industry is the website for?</p>
+        <input type="radio" name="industry" value="retail" checked>Retail
+        <input type="radio" name="industry" value="healthcare" checked>Health Care
+        <input type="radio" name="industry" value="real_estate" checked>Real Estate
+        <p>On a scale of 1-10, how likely would you recommend this site to friends or family members?</p>
+        <input type="range" name="nps" min="0" max="10"><br>
+        <p>Why did you answer the way you did?</p>
+        <textarea type="text" contenteditable="true" spellcheck="true" rows="4" cols="50"></textarea><br>
+      </fieldset>
+      <input type="submit" value="Send My Feedback">
+      <input type="reset" value="Clear">
+    </form>
+
+  </div>
+</body>
+
+</html>
