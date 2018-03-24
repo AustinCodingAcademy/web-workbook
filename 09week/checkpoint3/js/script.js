@@ -35,35 +35,99 @@
 //     }
 //     updateReport();
 // })
+// 'use strict';
+//
+// $(document).ready(function() {
+//
+//   let data;
+//   data = {
+//     totalMoney: 0,
+//     investmentReturn: 0
+//   };
+//
+//     setInterval(invest(), 10);
+//
+//   $('#burger').click(function () {
+//     data.totalMoney++;
+//     updateReport();
+//   })
+//
+//   function updateReport() {
+//     $('#cash').text(Math.floor(data.totalMoney));
+//     $('#irr').text(data.investmentReturn);
+//   }
+//
+//   $('.plan').click(function () {
+//
+//     // if ($(this).data('cost') < data.totalMoney) {
+//     //   data.totalMoney -= parseInt($(this).data('cost'));
+//     //   data.investmentReturn += parseInt($(this).data('val'));
+//     // }
+//
+//     var addVal = $(this).data( "cost" );
+//     if ($(this).data( "cost" ) < data.totalMoney ) {
+//       data.totalMoney -= parseFloat($(this).data("cost").toPrecision(2));
+//       data.investmentReturn += parseFloat($(this).data("val"));
+//       $(this).children("span").html(parseInt($(this).children("span").html() * 1));
+//       $(this).data("cost", parseInt($(this).data("cost") * 1));
+//     }
+//     updateReport();
+//   })
+//
+//   function invest() {
+//     data.totalMoney += data.investmentReturn;
+//     updateReport();
+//   }
+//
+//
+//
+// });
 
-let data;
-data = {
-  totalMoney: 0,
-  investmentReturn: 0
-};
 
-$('#burger').click(function () {
-  data.totalMoney ++;
-  updateReport();
-})
+'use strict';
+$(document).ready(function() {
 
-function updateReport() {
-  $('#cash').text(Math.floor(data.totalMoney));
-  $('#irr').text(Math.floor(data.investmentReturn))
-}
+  var data = {
+    money: 0,
+    investment: 0
+  };
 
-$('.plan').click(function () {
+  setInterval(invest(),10);
 
-  if ($(this).data('cost') < data.totalMoney) {
-    data.totalMoney -= $(this).data('cost');
-    data.investmentReturn += $(this).data('val');
+  function invest() {
+    data.money += data.investment;
+    updateReport();
   }
-  updateReport();
-})
 
-function invest() {
-  data.totalMoney += data.investmentReturn;
-  updateReport();
-}
 
-setInterval(invest(), 1000);
+
+
+
+  function updateReport() {
+    $("#cash").text(Math.floor(data.money));
+    $("#irr").text(Math.floor(data.investment));
+
+  }
+
+
+  $("#burger").click(function (){
+
+    data.money ++;
+    updateReport();
+  })
+
+  $(".plan").click(function (){
+    var addVal = $(this).data( "cost" );
+    if ($(this).data( "cost" ) < data.money ) {
+      data.money -=  parseFloat($(this).data( "cost" ).toPrecision(2));
+      data.investment += parseFloat($(this).data( "val" ));
+      $( this ).children("span").html( parseInt($( this ).children("span").html()*1.15));
+      $( this ).data( "cost", parseInt($(this).data( "cost" ) * 1.15) );
+    }
+    updateReport();
+
+  });
+
+  updateReport();
+
+});
