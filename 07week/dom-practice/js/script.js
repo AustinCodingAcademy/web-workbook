@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   var element = document.createElement("h2");
   var text = document.createTextNode("You have " + shoppingCount.length + " items in your shopping cart");
   element.appendChild(text);
-  var shopping = document.getElementsByTagName("h1")
-
-  text.appendChild(element);
-
+  var shoppingCart = document.getElementsByTagName("h1")
+  shoppingCount.appendChild(text);
+  console.log(text)
+  console.log(length)
 });
