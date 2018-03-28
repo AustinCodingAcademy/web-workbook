@@ -26,23 +26,23 @@ $(document).ready(function() {
 
   // //Subtract
   $("#worker").click(function() {
-    if (counter >= 100); {
+    if (counter >= 10) {
       counter = counter - 10;
-      $("#counter").text(counter);
+      $("#currentTotal").text(counter);
       updateReport();
     }
   });
   $("#queen").click(function() {
-    if (counter >= 100); {
+    if (counter >= 100) {
       counter = counter - 100;
-      $("#counter").text(counter);
+      $("#currentTotal").text(counter);
       updateReport();
     }
   });
   $("#hive").click(function() {
-    if (counter >= 1000); {
+    if (counter >= 1000) {
       counter = counter - 1000;
-      $("#counter").text(counter);
+      $("#currentTotal").text(counter);
       updateReport();
     }
   });
