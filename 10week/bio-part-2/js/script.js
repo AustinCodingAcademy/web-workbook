@@ -22,17 +22,14 @@ $(document).ready(function() {
 
   ctx.font = "30px Verdana";
 
-  let cnv2 = document.querySelector("#my2canvas");
-  let ctx2 = cnv2.getContext("2d");
-
   // Create gradient
-  var gradient = ctx2.createLinearGradient(0, 0, cnv2.width, 0);
+  var gradient = ctx.createLinearGradient(0, 0, cnv.width, 0);
   gradient.addColorStop("0", "magenta");
   gradient.addColorStop("0.5", "blue");
   gradient.addColorStop("1.0", "red");
-  ctx2.lineWidth = 2;
+  ctx.lineWidth = 2;
 
   // Fill with gradient
-  ctx2.strokeStyle = gradient;
-  ctx2.strokeText("Suneetha Kori", 180, 200);
+  ctx.strokeStyle = gradient;
+  ctx.strokeText("Suneetha Kori", 180, 200);
 });
