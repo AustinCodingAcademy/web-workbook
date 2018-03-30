@@ -7,13 +7,20 @@
 </head>
 
 <body>
-  <video width="320" height="240" controls>
-  <source src="waves.mp4" type="video/mp4">
-  <source src=".ogg" type="video/ogg">
-</video></br>
-  <canvas id="myCanvas" width="600" height="300" style="border:1px solid #d3d3d3;"> </canvas>
+  <video width="320" height="240" autoplay loop muted>
+    <source src="waves.mp4" type="video/mp4">
+    <source src="waves.ogg" type="video/ogg">
+  </video>
+  <br>
+  <audio controls autoplay>
+    <source src="Piano.ogg" type="audio/ogg">
+    <source src="Piano.mp3" type="audio/mpeg">
+  </audio>
+  <br>
+  <canvas id="mycanvas" width="600" height="300" style="border:1px solid #d3d3d3;"> </canvas>
+  <canvas id="my2canvas" width="600" height="300" style="border:1px solid #d3d3d3;"> </canvas>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   <script type="text/javascript" src="./js/script.js"> </script>
+  <script type="text/javascript" src="./js/script.js"></script>
+</body>
 
-  </body>
 </html>
