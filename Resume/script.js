@@ -1,7 +1,8 @@
 'use Strict';
 
 $(document).ready(function() {
-  var points = 0;
+  var points = 99;
+  // var currentPoints = $('#meatwad').length();
   var clicker1 = 100;
   var clicker2 = 300;
   var clicker3 = 600;
@@ -24,8 +25,8 @@ $(document).ready(function() {
 
 
   $('.clicker1').click(function () {
-    points = points - clicker1;
-    $('#total').text("Total Clacks: " + points);
+  //   points = points - clicker1;
+  //   $('#total').text("Total Clacks: " + points);
     auto();
   });
   $('.clicker2').click(function(){
