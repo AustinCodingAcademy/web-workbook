@@ -141,21 +141,19 @@ p {
   margin-left: -40px;
 }
 
+
 .main2 {
   background-image: url("../coding.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: .8;
-  height:600px;
+  height: 600px;
+  width: 100%;
   background-attachment: fixed;
 }
 
 .contact {
   height:450px;
-}
-
-#modx, #git, #word {
-  margin-right: 5px;
 }
 
 .forms {
@@ -186,7 +184,11 @@ button {
   margin-top:5px;
 }
 
-/*find way to grab icons*/
+
+#modx, #git, #word {
+  margin-right: 5px;
+}
+
 footer {
   text-align: center;
   padding: 30px 0 0 0;
@@ -196,14 +198,17 @@ footer {
   background-color: black;
 }
 
-.button:hover {
-  background-color:ghostwhite;
-  opacity: .5;
-  color: black;
+@media only screen and (max-width: 400px) {
 }
 
-.text2:hover {
-  background-color: #E7D7E9;
-  border: white;
-  color: white;
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+
+  }
 }
