@@ -45,6 +45,40 @@ body {
   width: 400px;
   height: 350px;
   margin: 100px;
+
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.buttons{
+  display: flex;
+  border-radius: 15px;
+  justify-content: center;
+  height: auto;
+  width: auto;
+
+}
+
+.buttons .one{
+  height: 45px;
+  width: 130px;
+  background-color: rgb(72, 168, 108);
+}
+.buttons .two{
+  height: 45px;
+  width: 130px;
+  background-color: rgb(72, 168, 108);
+}
+.buttons .three{
+  height: 45px;
+  width: 130px;
+  background-color: rgb(72, 168, 108);
+}
+.buttons a {
+
+}
+.content div a img{
+
   position: relative;
 }
 
@@ -80,9 +114,11 @@ body {
 .content div a img{
   padding-left: 40px
 
+
 }
 
 input[type=text]{
+  display: flex;
   border:2px solid white;
   border-radius: 15px;
   background-color: #123754;
@@ -92,6 +128,7 @@ input[type=text]{
 
 }
 input[type=date]{
+  display: flex;
   background-color: #123754;
   border:2px solid white;
   color: grey;
@@ -100,6 +137,7 @@ input[type=date]{
   padding: 5px;
 
 }
+
 
 .content .buttons a{
   background-color: rgb(72, 168, 108);
@@ -119,27 +157,36 @@ input[type=date]{
   position: absolute;
   margin-left: 200px;
 }
+
 .content div:hover{
   background-color: rgb(39, 82, 191);
 
 }
 
-.leftside {
-  justify-content: flex-start;
+.leftside{
+  display: flex;
+  height: 100px;
+  align-items: flex-start;
+  justify-content: center;
   flex-direction: column;
 }
 
-.rightside {
-  float: right;
+.rightside{
+  display: flex;
+  height: 100px;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
 }
 
-
-
 .search {
+  display:flex;
   background-color: rgb(39, 82, 191);
   color: white;
   font-size: 20px;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   margin-top: 0px;
   height: 50px;
   width: 300px;
