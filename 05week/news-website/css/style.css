@@ -12,13 +12,23 @@
 
 }
 
-
-h1 {
-  text-align: center;
+.top_photo#first {
+  width: 50%;
+  height: auto;
 }
+
 
 .top_photo {
   grid-area: top_photo;
+
+  width: 100%;
+  height: auto;
+
+
+.content_text {
+  background-color: teal;
+  grid-area: content_text;
+
   width: 80%;
   height: auto;
 
@@ -29,55 +39,68 @@ h1 {
   padding: 20px;
   grid-area: content_text;
   font-size: 25px;
+
 }
 
 .big {
   display: grid;
-  background-color: rgb(83, 131, 154);
-  grid-column: span 4;
-  grid-row: span 2;
-  border: solid black 2px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 3fr;
-  grid-template-areas:
-  ". top_photo ."
-  "content_text content_text content_text";
-}
 
-.medium {
-  display: grid;
-  background-color: rgb(83, 131, 154);
-  grid-column: span 2;
-  grid-row: span 2;
+  background-color: blue;
+  grid-column: span 4;
+  grid-row: span 4;
   border: solid black 2px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
-  ".top_photo ."
+  "top_photo top_photo top_photo"
+  ". content_text .";
+
+}
+
+.medium {
+  display: grid;
+
+  background-color: green;
+
+  grid-column: span 2;
+  grid-row: span 2;
+  border: solid black 2px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "top_photo top_photo top_photo"
+
   ". content_text .";
 }
 
 .wide {
   display: grid;
-  background-color: rgb(83, 131, 154);
+
+  background-color: red;
+
   grid-column: span 3;
   grid-row: span 1;
   border: solid black 2px;
   grid-template-columns: 1fr 3fr;
+
   grid-template-rows: 1fr;
-  grid-template-areas:
-  "top_photo content_text"
+
 
 }
 
 .small {
   display: grid;
-  background-color: rgb(83, 131, 154);
+
+  background-color: yellow;
+
   grid-column: span 1;
   grid-row: span 1;
   border: solid black 2px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 4fr;
+
+  grid-template-rows: 1fr 3fr;
+
   grid-template-areas:
   "top_photo top_photo top_photo"
   ". content_text .";
