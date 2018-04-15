@@ -4,10 +4,21 @@ background-color: black;
 
 section {
   background-color: white;
-  max-width: 960px;
+  max-width: 1063px;
   margin:auto;
   padding: 10px;
   border-style: solid;
   border-color: #00a1f1 #7cbb00 #ffbb00 #f65314;
-  border-width: 5px;
+  border-width: 7px;
+}
+
+.column {
+    float: left;
+    width: 40%;
+    padding: 10px;
+}
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
 }
