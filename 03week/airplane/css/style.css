@@ -14,9 +14,6 @@ header, ul{
   margin: 0;
   padding: 0;
 }
-/* p{
-  margin: 0;
-} */
 .topbox{
   width: 100%;
   height: 85px;
@@ -34,31 +31,34 @@ header, ul{
   padding-left: 50px;
 }
 .topnav ul{
-  padding-left:175px;
+  padding: 33px 0 0 300px;
+  /* the 33px top padding is to fake-center vertically, accounting for
+  .topnav 85px height minus 19px <li> height times 50%.*/
 }
 li{
+  box-sizing: border-box;
   float: left;
-  width: 175px;
-  padding: 33px 0;
-  /* this is to fake-center vertically, accounting for half of .topnav
-  85px height minus 19px <li> height. the problem with this approach is that if the
-  user zooms in or shrinks the width of the window, the <li>s start to stack
-  on top of each other and are a little too far apart vertically.*/
+  padding: 0 10px 8px 0;
+  /* bottom-padding is so if user zooms in or shrinks window width, <li>s will
+  still be legible if they start to stack on top of each other. */
   list-style-type: none;
-}
-#home{
-  width: 125px;
 }
 .topnav img {
   float: left;
   padding-right: 10px;
   height: 19px;
-/*I styled the nav images to be the same height as the <li> text so they would
-center */
+/*I styled the .topnav images to be the same height as the <li> text so they
+would center */
 }
 a{
   text-decoration: none;
 }
+a:link{
+  color: #FFFFFF;
+}
 a:visited{
   color: #09BEAE;
+}
+a:hover{
+  color: #0063B7;
 }
