@@ -1,15 +1,15 @@
+html{
+  background: url(../img/airline.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
 body{
   font-family: 'Lato', sans-serif;
-  background-color: #193a55;
   margin: 0;
   /* the bottom border in the .topbox didn't extend all the way to the left
   until i set the body margin to 0  */
-  }
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+  /* padding: 0; */
+}
 header, ul{
   margin: 0;
   padding: 0;
@@ -17,6 +17,7 @@ header, ul{
 .topbox{
   width: 100%;
   height: 85px;
+  background-color: #193a55;
   /*I spent hours trying to get the elements inside .topbox, .toplogo and/or
   .topnav to center vertically. i tried relative parent + absolute
   child w top: 50% and top-margin: -50px; and display: inline-block + vertical-align:
@@ -61,4 +62,13 @@ a:visited{
 }
 a:hover{
   color: #0063B7;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.bg{
+  height: 100%;
+  /* overflow: hidden; */
 }
