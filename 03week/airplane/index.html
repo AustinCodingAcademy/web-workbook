@@ -44,33 +44,35 @@
     </header>
     <main>
       <div class="linksbox clearfix">
+        <a href="#####">
           <div class="leftlinkborder">
-            <a href="#####">
-              <img src="img/plane-icon.png" alt="Flight">
-            </a>
+            <img src="img/plane-icon.png" alt="Flight">
           </div>
-        <div>
-          <a href="######">
+        </a>
+        <!-- I think these are supposed to be checkboxes and not links (so that
+        you can select different combos of hotel, hotel + car etc.) but I ran
+        out of time to change them -->
+        <a href="######">
+          <div>
             <img src="img/hotel-icon.png" alt="Hotel">
-          </a>
         </div>
-        <div class="rightlinkborder">
-          <a href="#######">
+        </a>
+        <a href="#######">
+          <div class="rightlinkborder">
             <img src="img/car-icon.png" alt="Car Rental">
-          </a>
-        </div>
+          </div>
+        </a>
       </div>
       <div class="formbox clearfix">
         <div class="flightbox">
           <input type="text" name="airport" value="Depart">
-          <input type="date" name="Date" value="mm/dd/yyyy">
+          <input type="date" name="date" value="mm/dd/yyyy">
         </div>
         <div class="flightbox">
           <input type="text" name="airport" value="Arrive">
           <input type="date" name="date" value="mm/dd/yyyy">
         </div>
         <div class="selectorbox">
-          <!-- <p>Passengers</p> -->
           <form method="post">
             <label for="passenger-count">Passengers
             </label>
@@ -92,8 +94,11 @@
             value="One Way">One Way
           </label>
         </div>
-        <div class="submit-button">
-
+        <div class="submitbox">
+          <form action="########">
+            <input id="search-flights" type="submit" name="search"
+            value="Search Flights">
+          </form>
         </div>
       </div>
     </main>
