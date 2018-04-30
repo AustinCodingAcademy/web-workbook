@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>UX Atlantic</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -16,10 +17,46 @@
             <li><a href="#"><img src="./img/home-icon.png" alt="home-icon"/><p class="nav-links">Home</p></a></li>
             <li><a href="#"><img src="./img/deal-icon.png" alt="deal-icon"/><p class="nav-links">Travel Deals</p></a></li>
             <li><a href="#"><img src="./img/schedule-icon.png" alt="schedule-icon"/><p class="nav-links">Flight Schedule</p></a></li>
-            <li><a href="#"><img src="./img/login-icon" alt="login-icon"/><p class="nav-links">Login</p></a></li>
+            <li><a href="#"><img src="./img/login-icon.png" alt="login-icon"/><p class="nav-links">Register/Login</p></a></li>
           </ul>
         </div>
       </div>
     </header>
+    <main>
+      <section>
+        <div class="tabs">
+          <div class="tab1">
+            <img src="./img/plane-icon.png" alt="plane-icon"/>
+          </div>
+          <div class="tab2">
+            <img src="./img/hotel-icon.png" alt="hotel-icon"/>
+          </div>
+          <div class="tab3">
+            <img src="./img/car-icon.png" alt="car-icon"/>
+          </div>
+        </div>
+        <form class="travel-info">
+          <input type="text" class="depart-field" placeholder="Depart">
+          <input type="text" class="arrive-field" placeholder="Arrive">
+        </form>
+        <form class="travel-dates">
+          <input type="date" class="depart-date">
+          <input type="date" class="arrive-date">
+        </form>
+        <section class="passengers">Passengers</section>
+        <select name="passengers">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <form class="radiobttns" action >
+          <input type="radio" name="flighttype" value="return" checked>Return
+          <input type="radio" name="flighttype" value="oneway">One Way
+        </form>
+        <input class="searchflights" type="submit" value="Search Flights">
+    </section>
+    </main>
   </body>
 </html>
