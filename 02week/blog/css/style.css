@@ -2,12 +2,16 @@ html {
   background-color: #E6E6FA;
   background-image: url("http://3.bp.blogspot.com/-yhyjgUeCw-g/UaIDglxrElI/AAAAAAAAUxw/WHZrA0u5Nmk/s1600/FlowerDoodlePaper24.png");
 }
+
 body {
   font-family: "Optima";
-  background-color: #E6E6FA;
 }
+
 header {
   text-align: center;
+  border: solid black 1px;
+  background-color: #E6E6FA;
+  opacity: 0.95;
 }
 
 nav {
@@ -16,6 +20,11 @@ nav {
   width: 100%;
   word-spacing: 35px;
 }
+
+nav:hover {
+  color: #483D8B;
+}
+
 main {
   text-align: left;
   margin-right: 375px;
@@ -24,12 +33,23 @@ main {
   border: solid black 1px;
   background-color: #E6E6FA;
   opacity: 0.95;
-
 }
+
 p:hover:nth-of-type(1)::first-letter {
   color: #483D8B;
   font-size: 100px;
 }
+
+#first {
+  font-weight: bold;
+}
+
 .date {
   font-size: 12px;
+  font-weight: normal !important;
+}
+
+div::first-letter {
+  text-transform: uppercase;
+  font-size: 30px;
 }
