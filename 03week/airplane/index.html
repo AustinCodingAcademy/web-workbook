@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Seville's airplane project</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  </head>
+  <body>
+    <header class="clearfix">
+      <div class="topbox">
+        <div class="toplogo">
+          <img src="img/logo.png" alt="UX Atlantic logo">
+        </div>
+        <div class="topnav">
+          <nav>
+            <ul>
+              <li>
+                <img src="img/home-icon.png" alt="Home">
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="##">
+                  <img src="img/deal-icon.png" alt="Travel Deals">
+                  Travel Deals
+                </a>
+              </li>
+              <li>
+                <a href="###">
+                  <img src="img/schedule-icon.png" alt="Flight Schedule">
+                  Flight Schedule
+                </a>
+              </li>
+              <li>
+                <a href="####">
+                  <img src="img/login-icon.png" alt="Register/ Login">
+                  Register/ Login
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="linksbox clearfix">
+        <!-- next comment below  is an example of the code i was using before
+        switching the icons from links to checkboxes. i'll restore all three
+        icons to this code if i can't figure out how to change the color on the
+        <div>s surrounding the checkboxes. -->
+        <!-- <a href="#####">
+          <div class="leftlinkborder">
+            <img src="img/plane-icon.png" alt="Flight">
+          </div>
+        </a> -->
+          <label for="flight">
+          <div class="leftlinkborder">
+            <input type="checkbox" name="purchase-options" value="flight">
+            <img src="img/plane-icon.png" alt="Flight">
+          </div>
+        </label>
+        <!-- </a> -->
+        <!-- <a href="######"> -->
+        <label for="hotel">
+          <div>
+            <input type="checkbox" name="purchase-options" value="hotel">
+            <img src="img/hotel-icon.png" alt="Hotel">
+          </div>
+        </label>
+        <!-- </a> -->
+        <!-- <a href="#######"> -->
+        <label for="car-rental">
+          <div class="rightlinkborder">
+            <input type="checkbox" name="purchase-options" value="car-rental">
+            <img src="img/car-icon.png" alt="Car Rental">
+          </div>
+        </label>
+        <!-- </a> -->
+      </div>
+      <div class="formbox clearfix">
+        <div class="flightbox">
+          <input type="text" name="airport" value="Depart">
+          <input type="date" name="date" value="mm/dd/yyyy">
+        </div>
+        <div class="flightbox">
+          <input type="text" name="airport" value="Arrive">
+          <input type="date" name="date" value="mm/dd/yyyy">
+        </div>
+        <div class="selectorbox">
+          <form method="post">
+            <label for="passenger-count">Passengers
+            </label>
+            <select name="passenger-count" id="passenger-count">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4 or more">4 or more</option>
+            </select>
+          </form>
+        </div>
+        <div class="selectorbox">
+          <label for="round-trip">
+            <input type="radio" name="trip-type" id="round-trip"
+            value="Round Trip" checked>Round Trip
+          </label>
+          <label for="one-way">
+            <input type="radio" name="trip-type" id="one-way"
+            value="One Way">One Way
+          </label>
+        </div>
+        <div class="submitbox">
+          <!-- couldn't figure out why cursor wouldn't change to pointing
+          finger on hover -->
+            <a href="########">
+              <input id="search-flights" type="button" name="search"
+              value="Search Flights">
+            </a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
