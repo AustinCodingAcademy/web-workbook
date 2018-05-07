@@ -3,7 +3,8 @@ body{
   width: 850px;
   font-size: 62.5%;
   font-family: arial;
-  color: #FFFFFF;
+  text-align: center;
+  color: #080607;
 }
 header{
   display: flex;
@@ -14,53 +15,85 @@ header{
   margin-top: 20px;
   height: 300px;
   background-color: #2BCDC0;
-  font-size: 6em;
-}
-.container{
-display: flex;
-margin: auto 0;
-height: auto;
-width: inherit;
-background-color: #000000;
+  color: #FFFFFF;
 }
 h1{
   width: 100%;
-  text-align: center;
+  font-size: 6em;
 }
-h2, p{
+.container{
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  width: inherit;
   text-align: center;
+  background-color: #000000;
+  color: #FFFFFF;
 }
-section{
-  float: left;
+h2{
+  font-size: 3em;
+  margin: 0.5em;
+}
+p{
+  font-size: 1.5em;
+}
+article{
   width: calc(33% - 100px);
-  padding: 50px;
+  margin: 20px;
   border-top: 25px solid #FFFFFF;
+}
+article:nth-child(3n+1){
+  border-color: #30A8DD;
+}
+article:nth-child(3n+2){
+  border-color: #F46731;
+}
+article:nth-child(3n+3){
+  border-color: #2BCDC0;
 }
 /* Extra Small and up (Portrait Phones) */
 
 /* Small and up (Landscape Phones) */
-@media(min-width: 576px) {
-header{
-    background-color: #orange;
+@media (min-width: 576px) {
+  header{
+    background-color: #33A8DD;
+    }
+  .container{
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7F5F6;
+    color: #080607;
+  }
+  article{
+    width: calc(100% - 100px);
+  }
 }
-  h1{font-size: 1em;}
-  section{margin-top: 5%;
-  main{background-color: #FFFFFF;
-    flex-direction: column; align-items: center; /*-- ??? */
-}
-}
-
-/* Medium and up (Tablets) */
-@media (min-width: 768px) {
-
-}
-
-/* Large and up (Desktops) */
+Large and up (Desktops)
 @media (min-width: 992px) {
-
+  body{
+    width: 850px;
+  }
+  header{
+    background-color: #2BCDC0;
+    color: #FFFFFF;
+  }
+  .container{
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+  article{
+    width: calc(33% - 100px);
+    /* margin: 20px; */
+    /* border-top: 25px solid #FFFFFF; */
+  }
 }
+/* Medium and up (Tablets) */
+/* @media (min-width: 768px) {
+
+} */
 
 /* Extra Large and up (Wide Screen Desktops) */
-@media (min-width: 1200px) {
 
-}
+/* @media (min-width: 1200px) {
+
+} */
