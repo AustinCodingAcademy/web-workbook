@@ -4,7 +4,8 @@ body{
   max-width: 536px;
   font-size: 62.5%;
   font-family: arial;
-  border: 1px 1px 0 0 solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
 }
 main{
   margin: 0 20px;
@@ -68,7 +69,20 @@ input{
 
 /* Medium and up (Tablets) */
 @media (min-width: 768px) {
-
+  body{
+    max-width: 728px;
+    border-bottom: 1px solid black;
+  }
+  .links-container{
+    display: none;
+  }
+  h1{
+    font-size: 2.6em;
+  }
+  p{
+    font-size: 1.8em;
+    margin-bottom: 0;
+  }
 }
 
 /* Large and up (Desktops) */
