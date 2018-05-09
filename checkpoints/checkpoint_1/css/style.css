@@ -1,0 +1,201 @@
+/* styling elements for whole document,
+min and max-width to prevent content from moving when window squshies or expands */
+
+html {
+  font-family: "Madre Script", sans-serif;
+  font-weight: 400;
+  margin: 0;
+  min-width: 1300px;
+  max-width: 1300px;
+  position: absolute;
+}
+
+/*Styles applied to navigation/header section */
+
+.heading {
+  width: 100%;
+  height: 115px;
+  margin-top: 10px;
+  background-color: rgb(255, 255, 255, 0.9); /* rgba values to adjust opactiy */
+  position: fixed; /* fixed so that the nav bar sticks as you scroll down the page */
+}
+
+#logo {
+  height: 110px;
+  width: 150px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 65px;
+  margin-right: 15px;
+  float: left; /* to place logo and nav on the same line */
+}
+
+nav {
+  color: black;
+  text-align: center;
+  word-spacing: 100px;
+  padding-top: 80px;
+  margin-left: 185px;
+  margin-right: 230px;
+  font-family: "Raleway";
+}
+
+nav>span {
+  font-size: 20px;
+  text-decoration: underline; /* applied to span so it only underlines beneath each word */
+}
+
+nav>span:hover {
+  color: #1D924D;
+}
+
+/* End of navigation/header styling */
+/* Styling for welcome/landing page */
+.welcome {
+  color: white;
+  background-color: white;
+  height: 550px;
+  font-size: 70px;
+  padding-top: 200px;
+  background-image: url("../img/fruitiness.jpg");
+  background-size: cover; /* Used to scale the image as large as possible without stretching it */
+}
+
+#mission {
+  padding-top: 175px; /* To center text in the photo's tray */
+  text-align: center;
+}
+
+/* End of styling for landing page */
+
+/* Styling for About section */
+
+.about {
+  background-color: #D0E0AD;
+  height: 250px;
+  padding-top: 40px;
+  border-bottom: 2px dotted black;
+}
+
+/* About "header" */
+
+.about>p:nth-of-type(1) {
+  font-size: 48px;
+  text-align: center;
+  padding-bottom: 20px;
+  text-decoration: underline;
+}
+
+/* About content */
+
+.about>p:nth-of-type(2) {
+  font-family: "Raleway";
+  font-size: 20px;
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  line-height: 30px;
+}
+
+/* End of About section styling */
+
+/* Styling for Menu */
+
+#menu_header {
+  background-color: #D0E0AD;
+  height: 50px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 48px;
+}
+
+/* Separate classes for Juice to position and create columns */
+
+.juices1 {
+  background-color: #D0E0AD;
+  height: 450px;
+  padding-left: 225px; /* Positioning/centering my columns without flexbox */
+  padding-right: 50px;
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 50px;
+  text-align: left;
+  float: left; /* Placing both columns side by side */
+}
+
+.juices2 {
+  background-color: #D0E0AD;
+  height: 450px;
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 50px;
+  text-align: left;
+  border-bottom: 2px dotted black; /* border applied to column without specified width so it spans entire page */
+}
+
+/* Used to bold names of juice */
+[type=name] {
+  font-weight: bold;
+}
+
+/* End of Menu styling */
+
+/* Styling for location section */
+
+#locations_header {
+  height: 50px;
+  background-color: #D0E0AD;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 48px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+#location1 {
+  height: 150px;
+  width: 250px;
+  background-color: #D0E0AD;
+  font-family: "Raleway";
+  font-size: 18px;
+  padding-left: 450px; /* Positioning section with flexbox */
+  line-height: 30px;
+  float: left;
+}
+
+#location2 {
+  height: 150px;
+  background-color: #D0E0AD;
+  font-family: "Raleway";
+  font-size: 18px;
+  border-bottom: 2px dotted black; /* border applied to column without specified width so it spans entire page */
+  line-height: 30px;
+}
+
+/* End of styling for locations */
+
+/* Styling for contact section */
+
+.contact {
+  background-color: #D0E0AD;
+  height: 250px;
+  padding-top: 40px;
+}
+
+#contact_header {
+  font-size: 48px;
+  text-align: center;
+  padding-bottom: 20px;
+  text-decoration: underline;
+}
+
+.contact>p:not(#contact_header) { /* Excluded the header to maintain script font and previous styling */
+  font-family: "Raleway";
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+/* End of contact styling */
