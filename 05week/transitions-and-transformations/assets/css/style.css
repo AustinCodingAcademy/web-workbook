@@ -1,0 +1,104 @@
+.mastercontainer{
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+
+}
+
+.babybox{
+  height:50px;
+  width:50px;
+  margin:2.5px;
+  pointer-events:none;
+
+}
+
+/* transformations below! */
+
+
+.longboi{
+  top:0;
+  border:solid;
+  position:absolute;
+  width:50px;
+  height:655px;
+}
+
+
+/* Here comes the mass of colors.
+There has to be a better way of doing this lol*/
+
+.babybox:nth-child(2){
+  background-color:#b0cc70;
+}
+
+.babybox:nth-child(3){
+  background-color:#920fa2;
+}
+
+.babybox:nth-child(4){
+  background-color:#64c63c;
+}
+
+.babybox:nth-child(5){
+  background-color:#0fad0a;
+}
+
+.babybox:nth-child(6){
+  background-color:#aedc9b;
+}
+
+.babybox:nth-child(7){
+  background-color:#210299;
+}
+
+.babybox:nth-child(8){
+  background-color:#741753
+}
+
+.babybox:nth-child(9){
+  background-color:#4c4834;
+}
+
+.babybox:nth-child(10){
+  background-color:#033dc8;
+}
+
+.babybox:nth-child(11){
+  background-color:#c4b534;
+}
+
+.babybox:nth-child(12){
+  background-color:#e0819e;
+}
+
+.babybox:nth-child(13){
+  background-color:#7f9416;
+}
+
+/* Stop scrolling! The colors have ended, you're safe! */
+.mastercontainer .babybox:nth-child(odd){
+  transition:transform 600ms ease-in-out;
+
+}
+.mastercontainer .babybox:nth-child(even){
+  transition:transform 450ms ease-in-out;
+}
+/* By the way, I am extremely angry that this is how it works
+Not really ANGRY that's an exaggeration.
+I actually laughed. but "~" was honestly the
+LAST selector I tried after maybe 15 minutes.
+Don't tell my boss :) */
+.longboi:hover~.babybox:nth-child(odd){
+  transform:scale(2) translate(300px) rotate(70deg);
+
+
+}
+
+.longboi:hover~.babybox:nth-child(even){
+  transform:scale(0.5) translate(-1200px) rotate(-70deg);
+
+}
