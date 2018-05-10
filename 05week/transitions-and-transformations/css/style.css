@@ -4,17 +4,25 @@ div{
   height: 50px;
   border: 1px solid black;
 }
+.trigger{
+  margin: auto;
+  width: 50px;
+  height: 600px;
+  border: 1px solid black;
+}
 div:nth-of-type(even){
   transition: width 2s, height 2s, transform 2s;
 }
 div:nth-of-type(odd){
   transition: width 1s, height 1s, transform 1s;
 }
-div:nth-of-type(even):hover{
+.trigger:hover div:nth-of-type(even){
   width: 100px;
   height: 100px;
+  transform: translate(500px);
 }
-div:nth-of-type(odd):hover{
+.trigger:hover div:nth-of-type(odd){
   width: 25px;
   height: 25px;
+  transform: translate(-500px);
 }
