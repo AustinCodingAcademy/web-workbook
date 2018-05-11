@@ -55,6 +55,9 @@ main{
 .red-banner{
     grid-area: red-banner;
 }
+.empty{
+  grid-area: empty;
+}
 .layout-a{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -63,6 +66,38 @@ main{
   "box-img box-text box-text"
   "box-img red-dot red-banner"
 }
+.layout-b{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "box-img"
+  "box-text"
+}
+/* is there even a point to using display:grid in a single column, if i'm going
+to flex the bottom part? shouldn't i flex everything in layout-b?
+
+or what about...
+.layout-b{
+  display: grid;
+  grid-template-columns: 1 fr 1fr;
+  grid-template-areas:
+  "box-img box-img"
+  "box-text box-text"
+  "red-dot red-banner"
+}
+.layout-b red-dot{
+  how to align left? i can't flex it within the display: grid div
+}
+.layout-b red-banner{
+  how to align right?
+}
+ */
+.layout-bottom{
+  display: flex;
+  justify-content: space-between;
+}
+/* i could flex the button and red-line at the bottom of layout-b as space-between,
+so they can be aligend to either end of the box with empty space in between */
 .top-left{
   grid-area: top-left;
   /* background-color: blue; */
