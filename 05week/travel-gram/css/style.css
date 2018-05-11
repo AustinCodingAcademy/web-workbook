@@ -1,21 +1,6 @@
 div{
   border: 1px solid black;
 }
-main{
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-    "top-left top-left  top-right top-right"
-    "middle-left  middle-left middle-center-right middle-right"
-    "middle-left  middle-left middle-bottom middle-bottom"
-    /* you can fraction rows same as you can fraction columns to style the middle section */
-    "bottom-left bottom-center-left bottom-center-right bottom-right";
-}
-.top-left{
-  grid-area: top-left;
-  /* background-color: blue; */
-}
 .top-right{
   grid-area: top-right;
   /* background-color: green; */
@@ -43,3 +28,42 @@ main{
 }
 .bottom-right{
   grid-area: bottom-right;}
+main{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "top-left top-left  top-right top-right"
+    "middle-left  middle-left middle-center-right middle-right"
+    "middle-left  middle-left middle-bottom middle-bottom"
+    /* you can fraction rows same as you can fraction columns to style the middle section */
+    "bottom-left bottom-center-left bottom-center-right bottom-right";
+}
+.box-img{
+  grid-area: box-img;
+  height: 90%;
+  padding: 5%;
+}
+.box-text{
+    grid-area: box-text;
+}
+.red-dot{
+  align-items: flex-end;
+  background-color: red;
+  border-radius: 50%;
+}
+.red-banner{
+    grid-area: red-banner;
+}
+.layout-a{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+  "box-img box-text box-text"
+  "box-img box-text box-text"
+  "box-img red-dot red-banner"
+}
+.top-left{
+  grid-area: top-left;
+  /* background-color: blue; */
+}
