@@ -50,7 +50,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 650px;
+  width: 655px;
   height: 140px;
   font-family: "Lato";
   font-size: 18px;
@@ -60,14 +60,76 @@ main {
   font-size: 28px;
 }
 
-#maincontent {
-  word-wrap: break-word;
-}
-
 button {
   width: 100px;
   height: 30px;
   background-color: #4E4E4E;
   color: white;
   font-size: 12px;
+}
+
+
+@media (max-width: 768px) {
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aside {
+    visibility: collapse;
+  }
+
+  .topsection {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-left: 180px;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .topsection {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    height: 170px;
+    width: 300px;
+  }
+
+  #pic {
+    width: 300px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .aside {
+    width: 0px;
+    height: 0px;
+  }
+
+  .bottomsection {
+    width: 300px;
+    height: 200px;
+  }
+
+  #title2 {
+    font-size: 20px;
+  }
+
+  #maincontent {
+    font-size: 14px;
+  }
 }
