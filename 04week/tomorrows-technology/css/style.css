@@ -1,0 +1,158 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.story {
+  width: 75%;
+}
+
+.story h1 {
+  font-size: 28px
+}
+
+.story p {
+  font-size: 19px;
+}
+
+button {
+  background-color: #4B4B4B;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  font-size: 15px;
+}
+
+.top-stories {
+  justify-content: flex-start;
+  padding-left: 50px;
+}
+
+.top-stories h1 {
+  font-size: 25px;
+  border-bottom: 1px solid black;
+  padding-bottom: 25px;
+  line-height: 0;
+}
+
+.top-stories article {
+  font-size: 15px;
+  padding: 10px 0px 10px;
+}
+
+.footer-section {
+  display: none;
+}
+
+/* Tablet sizing */
+
+@media (max-width: 768px) {
+  body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    height: 90%;
+    padding: 20px;
+  }
+  .story {
+    width: 100%;
+  }
+  .story h1 {
+    font-size: 25px;
+    padding: 10px;
+  }
+  .story p {
+    font-size: 17px;
+  }
+  .top-stories {
+    display: none;
+  }
+  .footer-section {
+    display: none;
+  }
+}
+
+/* Phone sizing */
+
+@media (max-width: 576px) {
+  body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+  }
+  .story {
+    width: 90%;
+    height: auto;
+    padding: 25px;
+  }
+  .story h1 {
+    font-size: 25px;
+    padding: 10px;
+  }
+  .story p {
+    font-size: 15px;
+  }
+  .top-stories {
+    display: none;
+  }
+  .footer-section {
+    background-color: #5D5D5D;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+    height: 100%;
+  }
+  .footer-item {
+    width: 25%;
+    height: 100%;
+  }
+  .footer-item h3 {
+    font-size: 18px;
+    color: white;
+  }
+  .footer-item p {
+    opacity: .5;
+  }
+  #useful-links {
+    padding-left: 60px;
+  }
+  #social-media {
+    padding-right: 60px;
+    text-align: left;
+  }
+  #social-media p {
+    border-bottom: 1px solid darkgray;
+    width: 100px;
+    padding-bottom: 3px;
+  }
+  #icon {
+    float: right;
+  }
+  #useful-links p {
+    line-height: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid darkgray;
+    font-size: 18px;
+    width: 80%;
+  }
