@@ -16,7 +16,6 @@
   width: 200px;
   height: 50px;
 }
-
 .main {
   display: flex;
   align-items: center;
@@ -28,7 +27,7 @@
 
 div {
   width: 200px;
-  height: 300px;
+  height: 200px;
   flex-direction: row;
 }
 
@@ -37,14 +36,18 @@ header {
   display: flex;
   justify-content: center;
   color: white;
-  height: 400px;
+  height: 300px;
   width: 1000px;
 }
-
+/* make site bolder */
+.bold {
+  font-weight: bolder;
+}
 h1 {
   align-self: center;
+  font-weight: lighter;
 }
-
+/* the large box */
 body {
   display: flex;
   flex-direction: column;
@@ -60,4 +63,37 @@ p {
 h2 {
   color: white;
   text-align: center;
+}
+/* phone view settings begin here */
+@media only screen and (max-width: 576px) {
+/* the header isn't wrapping the text to 2 lines */
+  header {
+    background-color: #33A8DD;
+    height: 300px;
+    width: 576px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+  .main {
+    width: 576px;
+    height: 1500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  div {
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+  }
+  h2 {
+    color: black;
+  }
+  p {
+    color: black;
+  }
+  body {
+    height: 1500px;
+  }
 }
