@@ -1,0 +1,134 @@
+* {
+  font-family: 'Gothic A1', sans-serif;
+}
+
+.button {
+  background-color: #4D4D4D;
+  color: white;
+  text-align: center;
+  height: 20px;
+  width: 150px;
+}
+
+/* main box to divide up aside and main */
+
+body {
+  display: flex;
+  justify-content: space-between;
+  width: 1300px;
+  /* height: 500px; why doesn't height matter? */
+}
+
+/* main has the pic, heading, and button */
+
+main {
+  width: 1200px;
+  height: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+
+aside {
+  width: 250px;
+  height: 1200px;
+}
+
+h2 {
+  border-bottom: 2px solid black;
+}
+
+p {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.article {
+  width: 600px;
+}
+
+.img {
+  width: 900px;
+}
+
+footer {
+  visibility: hidden;
+}
+
+/* tablet style changes */
+
+@media (max-width: 768px) {
+  aside {
+    visibility: hidden;
+  }
+  footer {
+    visibility: hidden;
+  }
+  .img {
+    width: 600px;
+  }
+}
+
+/* phone style changes */
+
+@media (max-width: 576px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    /* align-items: flex-start; */
+    width: 576px;
+    /* height: 800px; */
+  }
+  footer {
+    visibility: visible;
+    display: flex;
+    /* flex-direction: row; */
+    align-self: center;
+    color: white;
+    font-size: 20px;
+    /* background-color: #5D5D5D; */
+    width: 576px;
+    height: 800px;
+  }
+  .img {
+    width: 576px;
+  }
+  .links {
+    width: 175px;
+    height: 175px;
+    /* margin-left: 20px; */
+    list-style-type: none;
+  }
+  main {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  aside {
+    visibility: hidden;
+  }
+  .article {
+    width: 500px;
+  }
+  .greybox {
+    width: 500px;
+    height: 300px;
+    background-color: #5D5D5D;
+  }
+  li {
+    border-bottom: 2px solid #7E7E7E;
+  }
+  h1 {
+    font-size: 25px;
+    width: 576px;
+  }
+  .listheader {
+    text-align: center;
+    font-size: 25px;
+    width: 250px;
+      }
+
+}
