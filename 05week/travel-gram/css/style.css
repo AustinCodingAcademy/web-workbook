@@ -1,3 +1,11 @@
+body{
+  margin: 0 auto;
+  max-width: 850px;
+  font-size: 62.5%;
+  font-family: arial;
+  text-align: center;
+  color: #080607;
+}
 div{
   border: 1px solid black;
 }
@@ -49,7 +57,7 @@ div{
   padding: 0.5em;
 }
 main{
-  width: 100%;
+  width: inherit;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
@@ -68,8 +76,8 @@ main{
 }
 .top-left .box-text{
   grid-area: box-text;
-  width: inherit calc(66% - 10px);
-  height: inherit calc(66% - 10px);
+  width: calc(66% - 10px);
+  height: calc(66% - 10px);
   overflow: hidden;
 }
 .red-dot{
