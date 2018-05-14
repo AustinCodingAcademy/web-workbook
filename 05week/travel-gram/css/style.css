@@ -1,33 +1,53 @@
 div{
   border: 1px solid black;
 }
+.top-left{
+  grid-area: top-left;
+  display: flex;
+  /* justify-content: space-evenly; */
+  flex-flow: row wrap;
+  padding: 0.5em;
+  /* width: inherit calc(50%); */
+  /* background-color: blue; */
+}
 .top-right{
   grid-area: top-right;
+  /* width: inherit calc(50%); */
+  padding: 0.5em;
   /* background-color: green; */
 }
 .middle-left{
   grid-area: middle-left;
+  padding: 0.5em;
 }
 .middle-center-right{
   grid-area: middle-center-right;
+  padding: 0.5em;
 }
 .middle-right{
   grid-area: middle-right;
+  padding: 0.5em;
 }
 .middle-bottom{
   grid-area: middle-bottom;
+  padding: 0.5em;
 }
 .bottom-left{
   grid-area: bottom-left;
+  padding: 0.5em;
 }
 .bottom-center-left{
   grid-area: bottom-center-left;
+  padding: 0.5em;
 }
 .bottom-center-right{
   grid-area: bottom-center-right;
+  padding: 0.5em;
 }
 .bottom-right{
-  grid-area: bottom-right;}
+  grid-area: bottom-right;
+  padding: 0.5em;
+}
 main{
   width: 100%;
   display: grid;
@@ -38,18 +58,27 @@ main{
     "middle-left  middle-left middle-bottom middle-bottom"
     /* you can fraction rows same as you can fraction columns to style the middle section */
     "bottom-left bottom-center-left bottom-center-right bottom-right";
+    padding: 1em;
 }
-.box-img{
+.top-left .box-img{
   grid-area: box-img;
-  height: 90%;
-  padding: 5%;
+  width: calc(33% - 10px);
+  height: calc(66% - 10px);
+  padding: 5px;
 }
-.box-text{
-    grid-area: box-text;
+.top-left .box-text{
+  grid-area: box-text;
+  width: inherit calc(66% - 10px);
+  height: inherit calc(66% - 10px);
+  overflow: hidden;
 }
 .red-dot{
-  align-items: flex-end;
+  width: 1.4em;
+  height: 1.4em;
+  font-size: 1.4em;
+  text-align: center;
   background-color: red;
+  color: white;
   border-radius: 50%;
 }
 .red-banner{
@@ -59,13 +88,17 @@ main{
   grid-area: empty;
 }
 .layout-a{
+  display: flex;
+  flex-flow: row wrap;
+}
+/* .layout-a{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
   "box-img box-text box-text"
   "box-img box-text box-text"
   "box-img red-dot red-banner"
-}
+} */
 .layout-b{
   display: grid;
   grid-template-columns: 1fr;
@@ -98,7 +131,3 @@ or what about...
 }
 /* i could flex the button and red-line at the bottom of layout-b as space-between,
 so they can be aligend to either end of the box with empty space in between */
-.top-left{
-  grid-area: top-left;
-  /* background-color: blue; */
-}
