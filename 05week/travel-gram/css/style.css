@@ -6,10 +6,6 @@ body{
   font-family: arial;
   color: #080607;
 }
-img{
-  width: 100%;
-  height: 100%;
-}
 .box-img{
   grid-area: box-img;
   padding: 5px;
@@ -20,6 +16,7 @@ img{
   overflow: hidden;
 }
 .red-dot{
+  grid-area: red-dot;
   width: 1.4em;
   height: 1.4em;
   font-size: 1.4em;
@@ -27,6 +24,8 @@ img{
   text-align: center;
   color: white;
   border-radius: 50%;
+  margin: 0;
+  padding: 0;
 }
 .red-banner{
   grid-area: red-banner;
@@ -90,8 +89,8 @@ main{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
-  "box-img box-text box-text"
-  "box-img red-dot red-banner";
+    "box-img box-text box-text"
+    "box-img red-dot red-banner";
   padding: 1em;
   margin: 1em;
   border: 1px solid black;
@@ -100,10 +99,18 @@ main{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
-  "box-img box-img"
-  "box-text box-text"
-  "red-dot red-banner";
+    "box-img box-img"
+    "box-text box-text"
+    "red-dot red-banner";
   padding: 1em;
   margin: 1em;
   border: 1px solid black;
+}
+.layout-a img{
+  width: auto;
+    height: 100%;
+}
+.layout-b img{
+  width: 100%;
+  height: auto;
 }
