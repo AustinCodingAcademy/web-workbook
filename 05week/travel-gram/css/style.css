@@ -1,1 +1,94 @@
-
+body{
+  background-color: lightgrey;
+}
+.top {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+.container{
+  margin: 0% 3%;
+}
+.box{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  border: 1px solid black;
+}
+.box1{
+  grid-area: box1;
+}
+.box2{
+  grid-area: box2;
+}
+.box3{
+  grid-area: box3;
+}
+.box4{
+  grid-area: box4;
+}
+.box5{
+  grid-area: box5;
+}
+.box6{
+  grid-area: box6;
+}
+.box7{
+  grid-area: box7;
+}
+.box8{
+  grid-area: box8;
+}
+.box9{
+  grid-area: box9;
+}
+.box10{
+  grid-area: box10;
+}
+.grid{
+  display: grid;
+  grid-gap: 1em;
+  }
+/* for phone size */
+@media (min-width: 576px) {
+  .grid{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "box1"
+      "box2"
+      "box3"
+      "box4"
+      "box5"
+      "box6"
+      "box7"
+      "box8"
+      "box9"
+      "box10";
+  }
+}
+/* for tablet size */
+@media (max-width: 768px) {
+  .grid{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "box1 box1"
+      "box3 box4"
+      "box2 box2"
+      "box6 box6"
+      "box7 box8"
+      "box9 box10"
+      "box5 box5";
+  }
+}
+/* for desktop view */
+@media (min-width: 769px) {
+  .grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "box1 box1 box2 box2"
+      "box3 box3 box4 box5"
+      "box3 box3 box6 box6"
+      "box7 box8 box9 box10";
+  }
+}

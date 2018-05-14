@@ -1,0 +1,40 @@
+.container{
+  margin: 0 auto;
+  width: 50px;
+
+}
+.boxes1{ background-color: blue; }
+.boxes2{ background-color: red; }
+.boxes3{ background-color: green; }
+.boxes4{ background-color: grey; }
+.boxes5{ background-color: teal; }
+.boxes6{ background-color: orange; }
+.boxes7{ background-color: purple; }
+.boxes8{ background-color: pink; }
+.boxes9{ background-color: maroon; }
+.boxes10{ background-color: black; }
+.boxes11{ background-color: yellow; }
+.boxes12{ background-color: brown; }
+.boxes:nth-child(even){
+  width: 50px;
+  height: 50px;
+  margin: 3px auto;
+  transition: all 600ms ease-in-out;
+}
+.boxes:nth-child(odd){
+  width: 50px;
+  height: 50px;
+  margin: 3px auto;
+  align-self: center;
+  transition: all 600ms ease-in-out;
+}
+.container:hover .boxes:nth-child(even){
+  width: 25px;
+  height: 25px;
+  transform: translate(-500px, 0px) rotate(-360deg);
+}
+.container:hover .boxes:nth-child(odd){
+  width: 100px;
+  height: 100px;
+  transform: translate(500px, 0px) rotate(360deg);
+}
