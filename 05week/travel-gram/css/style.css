@@ -3,20 +3,69 @@ body{
   max-width: 850px;
   font-size: 62.5%;
   font-family: arial;
-  text-align: center;
   color: #080607;
+}
+main{
+  width: inherit;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+  "top-left top-left  top-right top-right"
+  "middle-left  middle-left middle-center-right middle-right"
+  "middle-left  middle-left middle-bottom middle-bottom"
+  "bottom-left bottom-center-left bottom-center-right bottom-right";
+  padding: 1em;
 }
 div{
   border: 1px solid black;
 }
 .top-left{
   grid-area: top-left;
-  display: flex;
-  /* justify-content: space-evenly; */
-  flex-flow: row wrap;
-  padding: 0.5em;
-  /* width: inherit calc(50%); */
-  /* background-color: blue; */
+  padding: 5px;
+}
+.layout-a{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "box-img box-text box-text"
+    "box-img red-dot red-banner";
+  /* padding: 5px;   */
+}
+.layout-b{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "box-img box-img"
+    "box-text box-text"
+    "red-dot red-banner";
+  padding: 5px;
+}
+img{
+  height: 170px;
+}
+.box-img{
+  grid-area: box-img;
+  padding: 5px;
+}
+.box-text{
+  grid-area: box-text;
+  padding: 5px;
+  overflow: hidden;
+}
+.red-dot{
+  width: 1.4em;
+  height: 1.4em;
+  font-size: 1.4em;
+  background-color: red;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+}
+.red-banner{
+  grid-area: red-banner;
+  weight: 80%;
+  height:80%;
+  background-color: red;
 }
 .top-right{
   grid-area: top-right;
@@ -56,86 +105,3 @@ div{
   grid-area: bottom-right;
   padding: 0.5em;
 }
-main{
-  width: inherit;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas:
-    "top-left top-left  top-right top-right"
-    "middle-left  middle-left middle-center-right middle-right"
-    "middle-left  middle-left middle-bottom middle-bottom"
-    /* you can fraction rows same as you can fraction columns to style the middle section */
-    "bottom-left bottom-center-left bottom-center-right bottom-right";
-    padding: 1em;
-}
-.top-left .box-img{
-  grid-area: box-img;
-  width: calc(33% - 10px);
-  height: calc(66% - 10px);
-  padding: 5px;
-}
-.top-left .box-text{
-  grid-area: box-text;
-  width: calc(66% - 10px);
-  height: calc(66% - 10px);
-  overflow: hidden;
-}
-.red-dot{
-  width: 1.4em;
-  height: 1.4em;
-  font-size: 1.4em;
-  text-align: center;
-  background-color: red;
-  color: white;
-  border-radius: 50%;
-}
-.red-banner{
-    grid-area: red-banner;
-}
-.empty{
-  grid-area: empty;
-}
-.layout-a{
-  display: flex;
-  flex-flow: row wrap;
-}
-/* .layout-a{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas:
-  "box-img box-text box-text"
-  "box-img box-text box-text"
-  "box-img red-dot red-banner"
-} */
-.layout-b{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-  "box-img"
-  "box-text"
-}
-/* is there even a point to using display:grid in a single column, if i'm going
-to flex the bottom part? shouldn't i flex everything in layout-b?
-
-or what about...
-.layout-b{
-  display: grid;
-  grid-template-columns: 1 fr 1fr;
-  grid-template-areas:
-  "box-img box-img"
-  "box-text box-text"
-  "red-dot red-banner"
-}
-.layout-b red-dot{
-  how to align left? i can't flex it within the display: grid div
-}
-.layout-b red-banner{
-  how to align right?
-}
- */
-.layout-bottom{
-  display: flex;
-  justify-content: space-between;
-}
-/* i could flex the button and red-line at the bottom of layout-b as space-between,
-so they can be aligend to either end of the box with empty space in between */
