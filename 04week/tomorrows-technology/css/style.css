@@ -98,9 +98,6 @@ input{
     max-width: 728px;
     border-bottom: 1px solid black;
   }
-  main{
-    margin: 0;
-  }
   .links-container{
     display: none;
   }
@@ -117,27 +114,18 @@ input{
 @media (min-width: 992px) {
   body{
     max-width: 992px;
-    padding: 20px 5px 20px 20px;
     border-bottom-style: none;
   }
   top-container{
     display:flex;
     justify-content: space-between;
   }
-  header, main{
-    width: 75%;
+  header{
+    /* float: left; */
+    width: 66%;
   }
   aside{
     display: flex;
-    align-content: flex-end;
-    font-weight: bold;
-  }
-  aside h2{
-    font-size: 1.5em;
-  }
-  aside li{
-    font-size: 0.8em;
-    line-height: 1.2em;
-    /* margin-bottom: 0; */
+    /* float: right; */
   }
 }

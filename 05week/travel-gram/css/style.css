@@ -1,1 +1,196 @@
+body{
+  margin: 0 auto;
+  width: 0 auto;
+  /* max-width: 850px; */
+  font-size: 62.5%;
+  font-family: arial;
+  color: #080607;
+}
+header{
+  text-align: center;
+}
+.box-img{
+  grid-area: box-img;
+  padding: 5px;
+/* i can't figure out how to get the pictures to fill their grid. they are
+stretching the first grid area to their own dimensions and leaving adjacent
+grid-squares assigned to them empty. */
+  /* display: flex;
+  align-content: stretch; */
+  /* width: 100%; */
+  /* height: 100%; */
+}
+.box-text{
+  grid-area: box-text;
+  padding: 15px;
+  margin: 0;
+  overflow: hidden;
+}
+.red-dot{
+  grid-area: red-dot;
+  width: 1.4em;
+  height: 1.4em;
+  font-size: 1.4em;
+  background-color: red;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+  margin: 0 15px;
+  padding: 0;
+}
+.red-banner{
+  grid-area: red-banner;
+  weight: 80%;
+  height: 80%;
+  background-color: red;
+}
+.top-left{
+  grid-area: top-left;
+  margin: 1em;
+  border: 1px solid black;
+}
+.top-right{
+  grid-area: top-right;
+  margin: 1em;
+  border: 1px solid black;
+}
+.middle-left{
+  grid-area: middle-left;
+  margin: 1em;
+  border: 1px solid black;
+}
+.middle-center-right{
+  grid-area: middle-center-right;
+  margin: 1em;
+  border: 1px solid black;
+}
+.middle-right{
+  grid-area: middle-right;
+  margin: 1em;
+  border: 1px solid black;
+}
+.middle-bottom{
+  grid-area: middle-bottom;
+  margin: 1em;
+  border: 1px solid black;
+}
+.bottom-left{
+  grid-area: bottom-left;
+  margin: 1em;
+  border: 1px solid black;
+}
+.bottom-center-left{
+  grid-area: bottom-center-left;
+  margin: 1em;
+  border: 1px solid black;
+}
+.bottom-center-right{
+  grid-area: bottom-center-right;
+  margin: 1em;
+  border: 1px solid black;
+}
+.bottom-right{
+  grid-area: bottom-right;
+  margin: 1em;
+  border: 1px solid black;
+  }
+main{
+  width: inherit;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+  "top-left top-left  top-right top-right"
+  "middle-left  middle-left middle-center-right middle-right"
+  "middle-left  middle-left middle-bottom middle-bottom"
+  "bottom-left bottom-center-left bottom-center-right bottom-right";
+  padding: 1em;
+}
+.layout-a{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "box-img box-text box-text"
+    "box-img red-dot red-banner";
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid black;
+}
+.layout-b{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "box-img box-img"
+    "box-text box-text"
+    "red-dot red-banner";
+  padding: 1em;
+  margin: 1em;
+  border: 1px solid black;
+}
+.layout-a .box-img {
+  /* display: flex;
+  align-items: stretch; */
+  height: calc(100% - 5px);
+  width: calc(100% - 5px);
+}
+.layout-b .box-img {
+  /* display: flex;
+  align-content: stretch; */
+  width: calc(100% - 5px);
+  height: auto;
+}
+/* Extra Small and up (Portrait Phones) */
 
+/* Small and up (Landscape Phones) */
+@media (max-width: 576px) {
+  body{
+    max-width: 576px;
+  }
+  main{
+    width: inherit;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "middle-left"
+    "middle-center-right"
+    "middle-right"
+    "middle-left"
+    "middle-bottom"
+    "bottom-left"
+    "bottom-center-left"
+    "bottom-center-right"
+    "bottom-right";
+    padding: 1em;
+  }
+}
+
+/* Medium and up (Tablets) */
+@media (max-width: 768px) {
+  body{
+    max-width: 768px;
+  }
+  .top-left{
+    display: none;
+  }
+  .top-right{
+    display: none;
+  }
+  main{
+    width: inherit;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "middle-left  middle-left"
+    "middle-center-right middle-right"
+    "middle-left  middle-left"
+    "middle-bottom middle-bottom"
+    "bottom-left bottom-center-left"
+    "bottom-center-right bottom-right";
+    padding: 1em;
+  }
+}
+/* Large and up (Desktops) */
+@media (max-width: 992px) {
+  body{
+    max-width: 992px;
+  }
+}
