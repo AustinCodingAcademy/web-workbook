@@ -9,6 +9,13 @@ body{
 .box-img{
   grid-area: box-img;
   padding: 5px;
+/* i can't figure out how to get the pictures to fill their grid. they are
+stretching the first grid area to their own dimensions and leaving adjacent
+grid-squares assigned to them empty. */
+  /* display: flex;
+  align-content: stretch; */
+  /* width: 100%; */
+  /* height: 100%; */
 }
 .box-text{
   grid-area: box-text;
@@ -30,7 +37,7 @@ body{
 .red-banner{
   grid-area: red-banner;
   weight: 80%;
-  height:80%;
+  height: 80%;
   background-color: red;
 }
 .top-left{
@@ -106,11 +113,20 @@ main{
   margin: 1em;
   border: 1px solid black;
 }
-.layout-a img{
+/* i can't figure out how to get the pictures to fill their grid. they are
+stretching the first grid area to their own dimensions and leaving adjacent
+grid-squares assigned to them empty. */
+
+.layout-a .box-img {
+  /* display: flex;
+  align-items: stretch; */
+  height: calc(100% - 10px);
   width: auto;
-    height: 100%;
 }
-.layout-b img{
-  width: 100%;
+
+.layout-b .box-img {
+  /* display: flex;
+  align-content: stretch; */
+  width: calc(100% - 10px);
   height: auto;
 }
