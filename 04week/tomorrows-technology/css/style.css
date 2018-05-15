@@ -14,7 +14,7 @@
 
 body {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 1300px;
   /* height: 500px; why doesn't height matter? */
 }
@@ -22,8 +22,9 @@ body {
 /* main has the pic, heading, and button */
 
 main {
-  width: 1200px;
+  width: 900px;
   height: 1200px;
+  margin-right: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -54,17 +55,17 @@ h1 {
 }
 
 footer {
-  visibility: hidden;
+  display: none;
 }
 
 /* tablet style changes */
 
 @media (max-width: 768px) {
   aside {
-    visibility: hidden;
+    display: none;
   }
   footer {
-    visibility: hidden;
+    display: none;
   }
   .img {
     width: 600px;
@@ -79,22 +80,21 @@ footer {
     flex-direction: column;
     align-items: stretch;
     /* align-items: flex-start; */
-    width: 576px;
+    width: 500px;
     /* height: 800px; */
   }
   footer {
-    visibility: visible;
     display: flex;
     /* flex-direction: row; */
     align-self: center;
     color: white;
     font-size: 20px;
     /* background-color: #5D5D5D; */
-    width: 576px;
-    height: 800px;
+    width: 500px;
+    height: 300px;
   }
   .img {
-    width: 576px;
+    width: 500px;
   }
   .links {
     width: 175px;
@@ -107,8 +107,8 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  aside {
-    visibility: hidden;
+  .aside {
+    display: none;
   }
   .article {
     width: 500px;
@@ -123,12 +123,11 @@ footer {
   }
   h1 {
     font-size: 25px;
-    width: 576px;
+    width: 500px;
   }
   .listheader {
     text-align: center;
     font-size: 25px;
     width: 250px;
       }
-
 }
