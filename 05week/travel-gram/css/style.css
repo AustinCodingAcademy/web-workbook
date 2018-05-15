@@ -1,9 +1,12 @@
+header {
+  font-family: "Roboto";
+}
+
 .grid-parent {
   display: grid;
-  grid-template-rows: 5;
-  grid-template-columns: 4;
+  grid-template-rows: 2fr 2fr 1fr 3fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "hdr hdr hdr hdr"
   "box1 box1 box2 box2"
   "box3 box3 box4 box5"
   "box3 box3 box6 box6"
@@ -15,7 +18,8 @@
   margin: 5px;
   border: 1px solid #333333;
   background-color: #eeeeee;
-  padding: 10px;
+  padding: 20px;
+  margin: 10px;
 
 }
 
@@ -26,8 +30,6 @@ header {
   font-size: 14px;
 
 }
-
-
 
 .box1 {
   grid-area: box1;
@@ -67,4 +69,43 @@ header {
 
 .box10 {
   grid-area: box10;
+}
+
+.style1 {
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas:
+  "x text text"
+  "x indicator button"
+}
+
+.style2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 2fr 1fr;
+  grid-template-areas:
+  "x x"
+  "text text"
+  "indicator button"
+}
+
+.x {
+  grid-area: x;
+  border: 1px solid blue;
+}
+
+.text {
+  grid-area: text;
+  border: 1px solid red;
+}
+
+.indicator {
+  grid-area: indicator;
+  border: 1px solid green;
+}
+
+.button {
+  grid-area: button;
+  border: 1px solid purple;
 }
