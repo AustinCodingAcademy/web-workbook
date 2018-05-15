@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UX Atlantic Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand">
+      <img class="logo" src="img/logo.png" alt="UX Atlantic Logo">
+  </a>
+  <div class="navbar-spacer"></div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"><img class="icon" src="img/home-icon.png" alt="Home Icon">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><img class="icon" src="img/deal-icon.png" alt="Deal Icon">Travel Deals</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><img class="icon" src="img/schedule-icon.png" alt="Schedule Icon">Flight Schedule</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><img class="icon" src="img/login-icon.png" alt="Login Icon">Register/Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="form-header">
+  <div class="flight-head form-tops">
+    <img class="plane" src="img/plane-icon.png" alt="Flight Icon">
+  </div>
+  <div class="hotel-head form-tops">
+    <img class="hotel" src="img/hotel-icon.png" alt="Hotel Icon">
+  </div>
+  <div class="car-head form-tops">
+    <img class="car" src="img/car-icon.png" alt="Car Icon">
+  </div>
+</div>
+<div class="form-box">
+  <form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <input type="text" class="form-control" id="inputDepart1" placeholder="Depart">
+    </div>
+    <div class="form-group col-md-6">
+      <input type="text" class="form-control" id="inputArrive2" placeholder="Arrive">
+    </div>
+  </div>
+  <div class="form-row dates-row">
+    <div class="form-group col-md-6">
+      <input type="date" class="form-control" id="inputDate3" placeholder="mm/dd/yyyy">
+    </div>
+    <div class="form-group col-md-6">
+      <input type="date" class="form-control" id="inputDate4" placeholder="mm/dd/yyyy">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label class="passenger-label" for="inputPassengers5">Passengers</label>
+    </div>
+      <div class="form-group col-md-3">
+        <select class="custom-select">
+    <option value="1" selected>1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+  </select>
+    </div>
+    <div class="form-group col-md-6">
+      <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+    <label class="form-check-label" for="inlineRadio1">Return</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+    <label class="form-check-label" for="inlineRadio2">One Way</label>
+  </div>
+  </div>
+</div>
+  <button type="submit" class="btn btn-primary btn-form-submit">Search Flights</button>
+</form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>
