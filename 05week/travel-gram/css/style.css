@@ -126,20 +126,71 @@ main{
   margin: 1em;
   border: 1px solid black;
 }
-/* i can't figure out how to get the pictures to fill their grid. they are
-stretching the first grid area to their own dimensions and leaving adjacent
-grid-squares assigned to them empty. */
-
 .layout-a .box-img {
   /* display: flex;
   align-items: stretch; */
   height: calc(100% - 5px);
   width: calc(100% - 5px);
 }
-
 .layout-b .box-img {
   /* display: flex;
   align-content: stretch; */
   width: calc(100% - 5px);
   height: auto;
+}
+/* Extra Small and up (Portrait Phones) */
+
+/* Small and up (Landscape Phones) */
+@media (max-width: 576px) {
+  body{
+    max-width: 576px;
+  }
+  main{
+    width: inherit;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "middle-left"
+    "middle-center-right"
+    "middle-right"
+    "middle-left"
+    "middle-bottom"
+    "bottom-left"
+    "bottom-center-left"
+    "bottom-center-right"
+    "bottom-right";
+    padding: 1em;
+  }
+}
+
+/* Medium and up (Tablets) */
+@media (max-width: 768px) {
+  body{
+    max-width: 768px;
+  }
+  .top-left{
+    display: none;
+  }
+  .top-right{
+    display: none;
+  }
+  main{
+    width: inherit;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "middle-left  middle-left"
+    "middle-center-right middle-right"
+    "middle-left  middle-left"
+    "middle-bottom middle-bottom"
+    "bottom-left bottom-center-left"
+    "bottom-center-right bottom-right";
+    padding: 1em;
+  }
+}
+/* Large and up (Desktops) */
+@media (max-width: 992px) {
+  body{
+    max-width: 992px;
+  }
 }
