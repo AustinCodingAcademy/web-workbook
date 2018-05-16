@@ -1,0 +1,159 @@
+body {
+  display: flex;
+  font-family: sans-serif;
+  justify-content: space-around;
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 1360px;
+}
+
+#wrapper {
+  display: flex;
+}
+
+main {
+
+}
+
+img {
+  max-width: 850px;
+  width: auto;
+  height: auto;
+}
+
+#descript {
+
+}
+
+h1 {
+  font-weight: normal;
+}
+
+p {
+  width: 850px;
+  font-weight: normal;
+  font-size: 21px;
+}
+
+button {
+  background-color: #484848;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+aside {
+  min-width: 450px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 60px;
+}
+
+h2 {
+  text-transform: uppercase;
+  border-bottom: solid 1px black;
+  padding-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0 0;
+  font-weight: bold;
+}
+
+li {
+  margin-bottom: 30px;
+}
+
+/*footer start*/
+
+footer {
+  display: none;
+}
+
+h3 {
+  color: white;
+}
+
+#links {
+
+}
+
+.links li {
+  border-bottom: lightgrey solid 1px;
+}
+
+/*tablet*/
+
+@media screen and (max-width:768px) {
+
+  body {
+    max-width: 800px;
+    max-height: auto;
+    width: 100%;
+    margin: auto;
+  }
+
+  #descript {
+    width: 95vw;
+    justify-content: center;
+    display: block;
+  }
+
+  img {
+    width: 95vw;
+    max-width: 768px;
+    justify-content: center;
+  }
+
+  p {
+    width: 95vw;
+    max-height: auto;
+    word-wrap: break-word;
+  }
+
+  aside {
+    display: none;
+  }
+
+/*mobile*/
+
+@media screen and (max-width:576px) {
+  #wrapper {
+    margin: auto;
+  }
+
+  body {
+    background-color: #F7F5F6;
+    flex-direction: column;
+    margin: auto;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+  }
+
+  p {
+    /*max-width: 576px;*/
+    width: 95vw;
+    max-height: auto;
+    word-wrap: break-word;
+  }
+
+  footer {
+    display: flex;
+    background-color: #5D5D5D;
+    color: #BDBDBD;
+    padding: 0 0 0 40px;
+    max-width: 576px;
+    width: 100%
+    max-height: auto;
+  }
+
+  #left {
+    margin-right: 80px;
+  }
+
+  #right {
+
+  }
