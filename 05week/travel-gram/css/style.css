@@ -1,1 +1,98 @@
+.box {
+  background: #eeeeee;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 5px;
+}
 
+.box:nth-child(odd) {
+  background: #dddddd;
+}
+
+.box:nth-child(3n) {
+  background: #cccccc;
+}
+
+.box1 {
+  grid-area: box1;
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.box3 {
+  grid-area: box3;
+}
+
+.box4 {
+  grid-area: box4;
+}
+
+.box5 {
+  grid-area: box5;
+}
+
+.box6 {
+  grid-area: box6;
+}
+
+.box7 {
+  grid-area: box7;
+}
+
+.box8 {
+  grid-area: box8;
+}
+
+
+
+/* Extra Small and up (Portrait Phones) */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "box1"
+    "box2"
+    "box3"
+    "box4"
+    "box5"
+    "box6"
+    "box7"
+    "box8";
+}
+
+/* Small and up (Landscape Phones) */
+@media (min-width: 576px) {
+  /* Just use the same as Extra Small above  */
+}
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      "box1 box2"
+      "box3 box4"
+      "box5 box6"
+      "box7 box8";
+  }
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+      "box1 box1 box2"
+      "box3 box4 box2"
+      "box6 box5 box5"
+      "box6 box7 box8";
+  }
+}
+
+/* Extra Large and up (Wide Screen Desktops) */
+@media (min-width: 1200px) {
+  /* Just use the same as Large above  */
+}
