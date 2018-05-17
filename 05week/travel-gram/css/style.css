@@ -14,7 +14,11 @@ header {
   display: grid;
   grid-template-rows: 2fr 2fr 1fr 3fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "box1 box1 box2 box2" "box3 box3 box4 box5" "box3 box3 box6 box6" "box7 box8 box9 box10"
+  grid-template-areas:
+  "box1 box1 box2 box2"
+  "box3 box3 box4 box5"
+  "box3 box3 box6 box6"
+  "box7 box8 box9 box10"
 }
 
 .grid-child {
@@ -76,14 +80,19 @@ header {
   display: grid;
   grid-template-columns: repeat (3, 1fr);
   grid-template-rows: 2fr 1fr;
-  grid-template-areas: "x text text" "x indicator button"
+  grid-template-areas:
+  "x text text"
+  "x indicator button"
 }
 
 .style2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 2fr 2fr 1fr;
-  grid-template-areas: "x x" "text text" "indicator button"
+  grid-template-areas:
+  "x x"
+  "text text"
+  "indicator button"
 }
 
 .x {
@@ -118,7 +127,12 @@ header {
     display: grid;
     grid-template-rows: 3fr 2fr 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "box3 box3" "box4 box5" "box6 box6"
+    grid-template-areas:
+    "box3 box3"
+    "box4 box5"
+    "box6 box6"
+    "box7 box8"
+    "box9 box10"
   }
   .box1 {
     display: none;
@@ -139,16 +153,16 @@ header {
     grid-area: box6;
   }
   .box7 {
-    display: none;
+    display: box7;
   }
   .box8 {
-    display: none;
+    display: box8;
   }
   .box9 {
-    display: none;
+    display: box9;
   }
   .box10 {
-    display: none;
+    display: box10;
   }
 }
 
@@ -167,13 +181,26 @@ header {
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-    grid-template-areas: "box1" "box2" "box3" "box4" "box5" "box6" "box7" "box8" "box9" "box10"
+    grid-template-areas:
+    "box1"
+    "box2"
+    "box3"
+    "box4"
+    "box5"
+    "box6"
+    "box7"
+    "box8"
+    "box9"
+    "box10"
   }
   .grid-child {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 2fr 1fr;
-    grid-template-areas: "x x" "text text" "indicator button"
+    grid-template-areas:
+    "x x"
+    "text text"
+    "indicator button"
   }
   .box1 {
     grid-area: box1;
