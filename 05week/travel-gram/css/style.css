@@ -1,1 +1,151 @@
+header{
+  text-align: center;
+}
 
+p{
+  padding:5px;
+  margin:5px;
+}
+.box {
+    padding: 15px;
+    border: 1px solid black;
+    margin: 5px;
+  }
+
+img{
+  height: 50%;
+  width: 100%;
+  /* padding: 5px; */
+}
+
+  .container{
+    margin-left:auto;
+    margin-right:auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header header header"
+      "box1 box1 box2 box2"
+      "box3 box3 box4 box5"
+      "box3 box3 box6 box6"
+      "box7 box8 box9 box10";
+  }
+
+  .box1 {
+    grid-area: box1;
+  }
+
+  .box2 {
+    grid-area: box2;
+  }
+
+  .box3 {
+    grid-area: box3;
+  }
+
+  .box4 {
+    grid-area: box4;
+  }
+
+  .box5 {
+    grid-area: box5;
+  }
+
+  .box6 {
+    grid-area: box6;
+  }
+
+  .box7 {
+    grid-area: box7;
+  }
+
+  .box8 {
+    grid-area: box8;
+  }
+
+  .box9 {
+    grid-area: box9;
+  }
+
+  .box10 {
+    grid-area: box10;
+  }
+
+@media (max-width: 768px){
+  .container{
+    margin-left:auto;
+    margin-right:auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "box1 box1"
+      "box1 box1"
+      "box2 box3"
+      "box4 box4"
+      "box5 box5"
+      "box5 box5"
+      "box6 box7"
+      "box8 box8"
+      "box9 box10";
+  }
+}
+
+@media (max-width: 576px){
+  .container{
+    margin-left:auto;
+    margin-right:auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "box1"
+      "box2"
+      "box3"
+      "box4"
+      "box5"
+      "box6"
+      "box7"
+      "box8"
+      "box9"
+      "box10";
+  }
+}
+
+@media(min-width:768px){
+  .box6>img{
+    width: 200px;
+    height:250px;
+  }
+
+  .box6 {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .box1>img{
+    width: 200px;
+    height:250px;
+  }
+
+  .box1 {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .box2>img{
+    width: 200px;
+    height:250px;
+  }
+  
+  .box2 {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+  }
+}
