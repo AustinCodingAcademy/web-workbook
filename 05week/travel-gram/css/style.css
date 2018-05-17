@@ -303,5 +303,37 @@ header h4 {
       "react-1 date-1"
   }
 
+  .tab-style-2 .pic {
+    background-color: grey;
+    grid-area: pic-1;
+  }
+
+  .tab-style-2 .text {
+    background-color: lightgrey;
+    grid-area: text-1;
+
+  }
+
+  .tab-style-2 .reactions {
+    background-color: red;
+    border-radius: 50%;
+    grid-area: react-1;
+  }
+
+  .tab-style-2  .date {
+    background-color: red;
+    grid-area: date-1;
+  }
+
+  .tab-style-2  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /*how many columns do you have? how many rows do you have*/
+    grid-template-rows: 3fr 3fr 1fr;
+    grid-template-areas:
+      "pic-1 pic-1"
+      "text-1 text-1"
+      "react-1 date-1"
+      }
+
 
 }
