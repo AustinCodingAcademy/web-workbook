@@ -1,0 +1,92 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.parent {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  margin: 25px 0px;
+  transition: transform 2s, margin 2s;
+}
+
+.parent:hover .square:nth-child(odd) {
+  transform: scale(2) rotate(45deg);
+  margin-left: 350px;
+}
+
+.parent:hover .square:nth-child(even){
+  transform: scale(.5) rotate(-45deg);
+  margin-right: 350px;
+}
+
+#sq-1{
+  background-color: red;
+}
+
+#sq-2{
+  background-color: orange;
+}
+
+#sq-3{
+  background-color: yellow;
+}
+
+#sq-4{
+  background-color: green;
+}
+
+#sq-5{
+  background-color: blue;
+}
+
+#sq-6{
+  background-color: indigo;
+}
+
+#sq-7{
+  background-color: violet;
+}
+
+#sq-8{
+  background-color: silver;
+}
+
+#sq-9{
+  background-color: gold;
+}
+
+#sq-10{
+  background-color: pink;
+}
+
+#sq-11{
+  background-color: teal;
+}
+
+#sq-12{
+  background-color: lightgreen;
+}
+
+/* .square:hover:nth-child(odd), .square:active:nth-child(odd) {
+  width: 100px;
+  height: 100px;
+  margin-left: 350px;
+  transform: rotate(45deg);
+}
+
+.square:hover:nth-child(even), .square:active:nth-child(even) {
+  width: 25px;
+  height: 25px;
+  margin-right: 350px;
+  transform: rotate(-45deg);
+  transition: .5s;
+} */
