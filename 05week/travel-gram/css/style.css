@@ -1,11 +1,33 @@
+/*desktop version*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px auto;
+  width: 1000px;
+  font-family: 'Lato';
+  text-align: center;
+}
+
 .container {
-  border: 5px solid green;
   width:100%;
   display:grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: auto;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-gap: 20px;
+  font-family: 'Lato';
+  text-align: center;
+  font-size: 1.4em;
+  margin: 10px 10px;
+ }
+
+ h1 {
+   text-align: center;
+
  }
 
 .box {
@@ -15,10 +37,6 @@
 }
 
 .a {
-  /*grid-row-start: 1;
-  grid-row-end:3;*/
-  /*grid-row: 1/3;*/
-
   grid-column: 1/ span 4;
  }
 .b {
@@ -70,4 +88,142 @@
 .k {
   padding: 20px;
   grid-column: 4/ span 1;
+}
+
+@media screen and (max-width: 900px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 10px auto;
+    width: 900px;
+    font-family: 'Lato';
+    text-align: center;
+  }
+
+  .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1.5fr 1fr 2fr 2fr 2fr;
+    grid-gap: 20px;
+    font-family: 'Lato';
+    text-align: center;
+    font-size: 1.4em;
+    margin: 10px 10px;
+  }
+  h1 {
+    text-align: center;
+
+  }
+
+  .box {
+    padding: 0px;
+    font-size: 15px;
+    border: 1px solid black;
+  }
+
+  .a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px;
+    background: lightgreen;
+    grid-column: 1/ span 2;
+    grid-row: 1/ span 1;
+    order: 1;
+  }
+
+  .b {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px;
+    background: green;
+    grid-column: 1/ span 2;
+    order: 6;
+  }
+
+  .c {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px;
+    background: red;
+    grid-column: 1/ span 2;
+    order: 7;
+  }
+
+  .d {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px;
+    background: violet;
+    grid-column: 1/ span 2;
+    order: 2;
+  }
+
+  .e {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px;
+    background: yellow;
+    order: 3;
+  }
+
+  .f {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px;
+    background: white;
+    order: 4;
+  }
+
+  .g {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px;
+    background: brown;
+    grid-column: 1/ span 2;
+    order: 5;
+  }
+
+  .h {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px;
+    background: beige;
+    grid-column: 1/ span 1;
+    order: 8;
+  }
+
+
+  .i {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px;
+    background: orange;
+    grid-column: 2/ span 1;
+    order: 9;
+  }
+
+  .j {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px;
+    background: lightgreen;
+    grid-column: 1/ span 1;
+    order: 10;
+  }
+
+  .k {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 20px;
+    background: lightgreen;
+    grid-column: 2/ span 1;
+    order: 11;
+  }
+
+
 }
