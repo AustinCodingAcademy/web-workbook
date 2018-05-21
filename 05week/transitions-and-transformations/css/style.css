@@ -8,8 +8,8 @@
 }
 
 .box {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 10px;
 
 }
@@ -67,16 +67,18 @@
 }
 
 .box:nth-child(odd) {
-  transition: width .5s, height .5s, transform 5s ease;
+  transition-property: width, height, margin-left, transform;
+  transition-duration: .5s, .5s, 3s, 3s;
+  transition-delay: 0, 0, 3s, 3s;
   
   
 }
 
 .box:nth-child(odd):active, .box:nth-child(odd):hover { 
-  width: 100px;
-  height: 100px;
-  margin-left: 300px;
-  transform: rotate(90deg);
+  width: 150px;
+  height: 150px;
+  margin-left: 400px;
+  transform: rotate(180deg);
   border: 3px dashed #333;
 }
 
@@ -86,8 +88,8 @@
 }
 
 .box:nth-child(even):active, .box:nth-child(even):hover {
-  width: 25px;
-  height: 25px;
+  width: 50px;
+  height: 50px;
   margin-right: 300px;
   transform: rotate(-90deg);
   border: 2px dotted #333;
