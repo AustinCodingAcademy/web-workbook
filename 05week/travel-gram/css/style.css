@@ -54,14 +54,14 @@
   "box1 box1 box2 box2"
   "box3 box3 box4 box5"
   "box3 box3 box6 box6"
-  "box7 box8 box9 box10"
+  "box7 box8 box9 box10";
 }
 /* 3 columns, 2 rows, inside the box */
 .style1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 2fr 1fr;
-  grid-template-areas: "img text text" "img dot rec"
+  grid-template-areas: "img text text" "img dot rec";
 }
 /* 2 columns, 3 rows, inside the box */
 .style2 {
@@ -71,13 +71,13 @@
   grid-template-areas:
   "img img"
   "text text"
-  "dot rec"
+  "dot rec";
 }
 /* image */
 .img {
   background-image: url("https://boygeniusreport.files.wordpress.com/2015/06/funny-cat.jpg?quality=98&strip=all&w=782");
   grid-area: img;
-  background-size: cover;
+  background-size: contain;
 }
 /* text block */
 .text {
@@ -97,25 +97,40 @@
   grid-area: rec;
   background-color: purple;
 }
-/* tablet size option
+/* tablet size option */
 @media (max-width: 700px) {
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr;
     grid-template-areas:
-    "box3 box3"
-    "box4 box5"
-    "box6 box6"
+    "box1 box1"
+    "box2 box3"
+    "box4 box4"
+    "box5 box5"
+    "box6 box7"
+    "box8 box8"
+    "box9 box9"
+    "box10 box10";
   }
-} */
-/* phone settings, 1 column
+}
+/* phone settings, 1 column */
 @media (max-width: 500px) {
   .grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(10, 1fr);
     grid-template-areas:
+    "box1"
+    "box2"
     "box3"
+    "box4"
+    "box5"
+    "box6"
+    "box7"
+    "box7"
+    "box8"
+    "box9"
+    "box10";
   }
-} */
+}
