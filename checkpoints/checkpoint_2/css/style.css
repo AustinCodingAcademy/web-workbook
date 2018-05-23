@@ -4,7 +4,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 6px solid black;
+  color: #383838;
 
 }
 
@@ -16,12 +16,36 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-top: 5px;
   margin-left: 100px;
   margin-right: 100px;
 }
 
-#search {
+#icon {
+  font-size: 24px;
+  font-family: inherit;
+  padding: 3px;
+  border: 2px solid #383838;
+}
+
+#icon:hover {
+  border: 2px solid white;
+  background-color: #383838;
+  color: white;
+}
+
+#menu {
   word-spacing: 20px;
+}
+
+#menu > span {
+  padding: 5px;
+}
+
+#menu > span:hover {
+  border: 2px solid white;
+  background-color: #383838;
+  color: white;
 }
 
 .intro {
@@ -31,7 +55,6 @@ nav {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  color: black;
 }
 
 #name {
@@ -53,11 +76,84 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height:500px;;
+  height:500px;
   background-image: url("../img/portfolio.jpg");
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
   color: white;
 
+}
+
+.about {
+  height: 200px;
+  font-family: "Lusitana";
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 150px;
+  margin-right: 150px;
+  border-bottom: 2px dashed #383838;
+}
+
+.about > p:nth-of-type(1) {
+  font-family: "Raleway";
+  font-size: 30px;
+  padding: 20px;
+
+}
+
+.services {
+  border: 1px solid red;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.services > p:nth-of-type(1) {
+  font-family: "Raleway";
+  font-size: 30px;
+  padding: 20px;
+
+}
+
+.projects {
+  border: 1px solid red;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.projects > p:nth-of-type(1) {
+  font-family: "Raleway";
+  font-size: 30px;
+  padding: 20px;
+
+}
+
+.contact {
+  border: 1px solid red;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.contact > p:nth-of-type(1) {
+  font-family: "Raleway";
+  font-size: 30px;
+  padding: 20px;
 }
