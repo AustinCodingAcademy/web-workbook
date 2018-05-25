@@ -142,10 +142,7 @@ nav {
 }
 
 .projects {
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 650px;
   text-align: center;
   margin-left: 150px;
   margin-right: 150px;
@@ -157,6 +154,48 @@ nav {
   font-size: 30px;
   padding: 50px;
 
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "project1 project2 project3"
+  "project4 project5 project6"
+
+}
+
+.grid-child {
+  margin: 5px;
+  border: 1px solid #383838;
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+}
+
+.project1 {
+  grid-area: project1;
+}
+
+.project2 {
+  grid-area: project2;
+}
+
+.project3 {
+  grid-area: project3;
+}
+
+.project4 {
+  grid-area: project4;
+}
+
+.project5 {
+  grid-area: project5;
+}
+
+.project6 {
+  grid-area: project6;
 }
 
 .contact {
