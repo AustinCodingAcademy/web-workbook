@@ -1,9 +1,15 @@
+/*CSS for Desktop*/
+
 body {
-  width: 100% ;
+  width: 100%;
   height: auto;
   color: #383838;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+/*start of navigation*/
 
 nav {
   font-family: "Raleway";
@@ -18,6 +24,8 @@ nav {
   margin-right: 100px;
 }
 
+/*Logo styling/positioning*/
+
 #icon {
   font-size: 24px;
   font-family: inherit;
@@ -25,19 +33,23 @@ nav {
   border: 2px dashed #383838;
 }
 
+/*Nav menu styling*/
+
 #menu {
   word-spacing: 20px;
 }
 
-#menu > span {
-  padding: 0.3125em;
+#menu>span {
+  padding: 5px;
 }
 
-#menu > span:hover {
+#menu>span:hover {
   border: 2px solid white;
   background-color: #383838;
   color: white;
 }
+
+/*Styling for name and title*/
 
 .intro {
   height: 150px;
@@ -62,6 +74,8 @@ nav {
   margin-bottom: 50px;
 }
 
+/*Positioning of landing page image*/
+
 .landing {
   display: flex;
   flex-direction: column;
@@ -72,9 +86,9 @@ nav {
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
-  color: white;
-
 }
+
+/*styling of about section*/
 
 .about {
   height: 250px;
@@ -83,19 +97,19 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
   text-align: center;
   margin-left: 150px;
   margin-right: 150px;
   border-bottom: 2px dashed #383838;
 }
 
-.about > p:nth-of-type(1) {
+.about>p:nth-of-type(1) {
   font-family: "Raleway";
   font-size: 30px;
   padding: 50px;
-
 }
+
+/*styling for 'What I do' section*/
 
 .services {
   height: 550px;
@@ -108,7 +122,7 @@ nav {
   border-bottom: 2px dashed #383838;
 }
 
-.services > div:nth-of-type(1) {
+.services>div:nth-of-type(1) {
   font-family: "Raleway";
   font-size: 30px;
   padding: 50px;
@@ -123,7 +137,7 @@ nav {
   text-align: center;
 }
 
-.skills > div > p:nth-of-type(1) {
+.skills>div>p:nth-of-type(1) {
   font-family: "Lusitana";
   font-size: 22px;
 }
@@ -137,9 +151,10 @@ nav {
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 18px;
-  font-family:"Lusitana";
-
+  font-family: "Lusitana";
 }
+
+/*styling for 'What I make' section*/
 
 .projects {
   height: 650px;
@@ -149,30 +164,33 @@ nav {
   border-bottom: 2px dashed #383838;
 }
 
-.projects > div {
+.projects>div {
   font-family: "Raleway";
   font-size: 30px;
   padding: 50px;
-
 }
+
+/*Use of CSS grid as project requires, I'd prefer to use flexbox for this*/
 
 .grid-parent {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-  "project1 project2 project3"
-  "project4 project5 project6"
-
+  grid-template-areas: "project1 project2 project3" "project4 project5 project6"
 }
 
 .grid-child {
   margin: 5px;
   border: 1px solid #383838;
-  margin: 10px;
   width: 300px;
   height: 200px;
 }
+
+.grid-child:hover {
+  background-color: #383838;
+}
+
+/*Will feature image from project and link to learn more once I've completed more projects to feature*/
 
 .project1 {
   grid-area: project1;
@@ -198,6 +216,8 @@ nav {
   grid-area: project6;
 }
 
+/*Contact section styling*/
+
 .contact {
   height: 200px;
   display: flex;
@@ -209,12 +229,14 @@ nav {
   margin-bottom: 50px;
 }
 
-.contact > div {
+.contact>div {
   font-family: "Raleway";
   font-size: 30px;
   padding: 50px;
   color: #383838;
 }
+
+/*Email me Button*/
 
 button {
   font-family: "Raleway";
@@ -225,14 +247,120 @@ button {
   padding-top: 20px;
   padding-bottom: 20px;
   border: 2px solid #383838;
-
 }
 
-button > a {
+button>a {
   text-decoration: none !important;
   color: #383838 !important;
 }
 
 button:hover {
-    text-decoration: underline solid #383838;
+  text-decoration: underline solid #383838;
+}
+
+/*End of CSS for Desktop*/
+
+/*Beginning of Mobile View*/
+
+@media (max-width: 576px) {
+
+  nav {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #icon{
+    display: none;
+  }
+
+  #name {
+    font-size: 36px;
+  }
+
+  #intro-phrase {
+    margin-left: 75px;
+    margin-right: 75px;
+    padding-bottom: 0;
+  }
+
+  .landing {
+    height: 250px;
+  }
+
+  .about {
+    margin: 0;
+    height: auto;
+  }
+
+  .about>p:nth-of-type(1) {
+    font-size: 24px;
+    padding: 20px;
+  }
+
+  #about-content {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 50px;
+  }
+
+  .services {
+    height: 1225px;
+    margin: 0;
+  }
+  .services>div:nth-of-type(1) {
+    font-size: 24px;
+    padding: 20px;
+  }
+
+  .skills {
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1400px;
+    margin: 0;
+  }
+
+  .projects > div {
+    font-size: 24px;
+    width: 400px;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .grid-parent {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "project1"
+    "project2"
+    "project3"
+    "project4"
+    "project5"
+    "project6"
+  }
+
+  .grid-child {
+      width: 300px;
+      height: 200px;
+    }
+
+  .contact {
+    margin: 0;
+  }
+
+  .contact>div {
+    font-size: 24px;
+    padding: 20px;
+  }
 }
