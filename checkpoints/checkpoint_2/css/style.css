@@ -1,41 +1,32 @@
 body {
   width: 100% ;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   color: #383838;
 
 }
 
 nav {
   font-family: "Raleway";
-  height: 3.125em; /*50px*/
+  height: 50px;
   font-weight: bold;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top: 0.3125em; /*5px*/
-  margin-left: 6.25em;  /*100px*/
-  margin-right: 6.25em; /*100px*/
+  padding-top: 5px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 #icon {
-  font-size: 1.5em; /*24px*/
+  font-size: 24px;
   font-family: inherit;
-  padding: 0.1875em; /*3px*/
-  border: 0.125em solid #383838; /*2px*/
-}
-
-#icon:hover {
-  border: 0.125em solid white;
-  background-color: #383838;
-  color: white;
+  padding: 3px;
+  border: 2px dashed #383838;
 }
 
 #menu {
-  word-spacing: 1.25em; /*20px*/
+  word-spacing: 20px;
 }
 
 #menu > span {
@@ -43,13 +34,13 @@ nav {
 }
 
 #menu > span:hover {
-  border: 0.125em solid white;
+  border: 2px solid white;
   background-color: #383838;
   color: white;
 }
 
 .intro {
-  height: 9.375em; /*150px*/
+  height: 150px;
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -59,16 +50,16 @@ nav {
 
 #name {
   font-family: "Raleway";
-  font-size: 3em; /*48px*/
+  font-size: 48px;
   font-weight: bolder;
-  padding-bottom: 0.625em; /*10px*/
-  letter-spacing: 0.25em; /*4px*/
+  padding-bottom: 10px;
+  letter-spacing: 4px;
 }
 
 #intro-phrase {
   font-family: "Lusitana";
-  font-size: 1.125em; /*18px*/
-  margin-bottom: 1.25em;
+  font-size: 18px;
+  margin-bottom: 50px;
 }
 
 .landing {
@@ -76,7 +67,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height:31.25em; /*500px*/
+  height: 500px;
   background-image: url("../img/portfolio.jpg");
   background-size: 90%;
   background-repeat: no-repeat;
@@ -86,74 +77,123 @@ nav {
 }
 
 .about {
-  height: 12.5em; /*200px*/
+  height: 250px;
   font-family: "Lusitana";
-  font-size: 1.25em;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
-  margin-left: 9.375em; /*150px*/
-  margin-right: 9.375em;
-  border-bottom: 0.125em dashed #383838;
+  margin-left: 150px;
+  margin-right: 150px;
+  border-bottom: 2px dashed #383838;
 }
 
 .about > p:nth-of-type(1) {
   font-family: "Raleway";
-  font-size: 1.875em; /*30px*/
-  padding: 1.25em;
+  font-size: 30px;
+  padding: 50px;
 
 }
 
 .services {
-  border: 0.0625em solid red; /*1px*/
-  height: 31.25em;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-left: 9.375em;
-  margin-right: 9.375em;
+  margin-left: 150px;
+  margin-right: 150px;
+  border-bottom: 2px dashed #383838;
 }
 
-.services > p:nth-of-type(1) {
+.services > div:nth-of-type(1) {
   font-family: "Raleway";
-  font-size: 1.875em;
-  padding: 1.25em;
+  font-size: 30px;
+  padding: 50px;
+}
+
+.skills {
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.skills > div > p:nth-of-type(1) {
+  font-family: "Lusitana";
+  font-size: 22px;
+}
+
+.skill {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #383838;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-family:"Lusitana";
 
 }
 
 .projects {
-  border: 0.0625em solid red;
-  height: 31.25em;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-left: 9.375em;
-  margin-right: 9.375em;
+  margin-left: 150px;
+  margin-right: 150px;
+  border-bottom: 2px dashed #383838;
 }
 
-.projects > p:nth-of-type(1) {
+.projects > div {
   font-family: "Raleway";
-  font-size: 1.875em;
-  padding: 1.25em;
+  font-size: 30px;
+  padding: 50px;
 
 }
 
 .contact {
-  border: 0.0625em solid red;
-  height: 12.5em;
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: left;
-  margin-left: 9.375em;
-  margin-right: 9.375em;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 50px;
 }
 
-.contact > p:nth-of-type(1) {
+.contact > div {
   font-family: "Raleway";
-  font-size: 1.875em;
-  padding: 1.25em;
+  font-size: 30px;
+  padding: 50px;
+  color: #383838;
+}
+
+button {
+  font-family: "Raleway";
+  font-size: 20px;
+  background-color: white;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 2px solid #383838;
+
+}
+
+button > a {
+  text-decoration: none !important;
+  color: #383838 !important;
+}
+
+button:hover {
+    text-decoration: underline solid #383838;
 }
