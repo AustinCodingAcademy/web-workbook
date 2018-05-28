@@ -1,0 +1,203 @@
+* {
+  font-family: 'Cabin', sans-serif;
+}
+/* phone number header doesn't change during media inquiries */
+.header {
+  flex-flow: column;
+  text-align: center;
+}
+.call {
+  font-size: 30px;
+  color: #FA8072; /* salmon */
+  white-space: nowrap;
+}
+/* hover details on phone number */
+.call:hover {
+  color: #FA8072; /* salmon */
+  background-color: #B5D3E7; /* blue */
+  border-radius: 25px;
+}
+.phone {
+  color: #FA8072; /* salmon */
+}
+/* main cover photo of house, will need to get smaller with media */
+.background {
+  background-image: url("../img/house-cropped.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  width: 1000px;
+}
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 260px;
+  color: #FA8072; /* salmon */
+  background-color: #B5D3E7; /* blue */
+}
+/* div.box {
+  opacity: 0.5;
+  background-color: #B5D3E7; blue
+ }
+.box {
+  height: 20px;
+  width: 1000px;
+  opacity: 0.5;
+} */
+body {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.kitchen {
+  background-image: url("../img/kitchen.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 800px;
+  width: 1000px;
+  margin: 0;
+}
+.shower {
+  background-image: url("../img/bathroom.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 800px;
+  width: 1000px;
+}
+.deck {
+  background-image: url("../img/deck.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 800px;
+  width: 1000px;
+}
+.creekhaus {
+  background-image: url("../img/creekhaus.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 800px;
+  width: 1000px;
+}
+.bold {
+  font-size: 50px;
+  color: #FA8072; /* salmon */
+  text-align: center;
+}
+.paragraph {
+  font-size: 30px;
+  color: #5CA4A3; /* slightly darker blue */
+  text-align: center;
+}
+.break {
+  height: 50px;
+}
+section {
+  width: 1000px;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.design {
+  background-color: #B5D3E7; /* blue */
+  flex-direction: row;
+  width: 500px;
+  height: 200px;
+  margin-left: 20px;
+}
+.side {
+  background-color: #B5D3E7; /* blue */
+  flex-direction: row-reverse;
+  width: 500px;
+  height: 400px;
+  margin-right: 20px;
+}
+.end {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+}
+.horizontal {
+  background-color: #B5D3E7; /* blue */
+  flex-direction: column;
+  width: 800px;
+  height: 200px;
+  margin-top: 20px;
+}
+@media (max-width: 786px) {
+  section {
+    width: 700px;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .pic {
+    width: 700px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.shower2 {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+  .title2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 200px;
+  }
+  .bold {
+    font-size: 30px;
+    color: #FA8072; /* salmon */
+    text-align: center;
+  }
+  .paragraph {
+    font-size: 20px;
+    color: #5CA4A3; /* slightly darker blue */
+    text-align: center;
+  }
+  .design {
+    flex-direction: column;
+    background-color: white;
+    /* width: 500px;
+    height: 400px; */
+  }
+  .side {
+    background-color: white;
+    width: 500px;
+    height: 400px;
+    margin-right: 20px;
+  }
+  .horizontal {
+    background-color: white;
+    flex-direction: column;
+    margin-top: 0px;
+    /* width: 800px;
+    height: 200px;
+    margin-top: 20px; */
+  }
+}
+@media (max-width: 576px) {
+  .pic {
+    width: 550px;
+  }
+  section {
+    width: 550px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+}
