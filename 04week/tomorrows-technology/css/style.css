@@ -1,28 +1,43 @@
   main{
-    display: flex;
-    flex-direction: row;
+height: 80%;
+}
+h1{
+  display: flex;
+  justify-content: center;
+}
+.boxx2{
+  border-top-width:2px;
+  border-top-style: solid;
+  border-top-color:black;
+  font-style: bold;
+  padding-top: 20px;
 }
 
-img{
-  width:646px;
-  height:323px;
+
+.topPhoto{
+  background-image: url("../img/bg.jpg");
+  width: 100%;
+  height:75%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .aside{
   display: flex;
   flex-direction: column;
-  background-color:yellow;
+  background-color:white;
   width:303pxs;
   height:323px;
 }
 .bottom{
-  background-color: purple;
+  background-color: white;
   width:800px;
   height: 200px;
 }
 
 body{
   width: 95%;
-  height:1000px;
+  height:900px;
   background-color:white;
   border-top-color:black;
   border-top-width: 2px;
@@ -38,10 +53,32 @@ footer{
 
   @media (max-width: 576px) {
   footer  {
+    display: flex;
     visibility: visible;
-    background-color: red;
-    display:flex;}
+    background-color:#5D5D5D;
+    flex-direction:row;
+    justify-content: space-around;
+
+  }
+  .box2 {
+    display: flex;
+    visibility: visible;
+    background-color: orange;
+    flex-direction: column;
+  }
+
+  .box {
+    display: flex;
+    visibility: visible;
+    background-color: orange;
+    flex-direction: column;
+  }
+  .paragraph{
+    margin: 20px;
+  }
 }
+
+
 .blue{
   background-color: grey;
   margin-top: 30px;
@@ -52,3 +89,13 @@ footer{
   color: white;
 
 }
+
+@media (max-width:768px){
+  .aside{visibility: hidden; }
+}
+
+@media (max-width:768px) {
+  .bottom:{
+    display: flex;
+    justify-content: flex-start;}
+  }
