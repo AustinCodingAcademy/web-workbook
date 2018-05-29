@@ -1,0 +1,141 @@
+body {
+  background-image: url("../img/slice.jpg");
+}
+header {
+  grid-area: header;
+}
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+        "header header header"
+        "a a b"
+        "c c d"
+        "c c f f"
+        "g h i j"
+}
+a {
+  margin-right: 15px;
+  color: white;
+}
+.Tabs {
+  margin-right: 20PX;
+  margin-top: 45px;
+  font-size: 40px;
+  color: red;
+  float: right;
+}
+.box {
+  padding: 15px;
+  border: 2px solid black;
+}
+.a {
+  grid-area: a;
+  font-family: cursive;
+  font-style: bold;
+  height: 150px;
+  grid-gap: 10px;
+  grid-row-gap: 10px;
+
+}
+li {
+  background-color: black;
+  list-style: none;
+}
+.one {
+  font-size: 25px;
+  font-family: sans-serif;
+  color: white;
+  height: 200px;
+  width: 500px;
+  padding: 10px;
+}
+.lower {
+  border: none;
+}
+
+.b {
+  grid-area: b;
+  display: grid;
+  grid-gap: 10px;
+  grid-row-gap: 10px;
+}
+.four {
+  margin-top: 37px;
+  margin-right: 15px;
+}
+footer {
+  margin-top: 59px;
+  height: 40%;
+  width: 100%;
+}
+#bottom {
+  margin-top: 10px;
+  display: flex;
+  background-color: gray;
+  justify-content: center;
+  justify-content: space-around;
+}
+h4 {
+  color: white;
+  border-bottom: 1px solid white;
+}
+h1 {
+  margin-left: 25px;
+  font-size: 40px;
+  color: white;
+}
+embed {
+  margin-left: 300px;
+  width: 800px;
+  height: 800px;
+  align-items: center;
+}
+p {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+@media (min-width: 576px) {
+  .block2 {
+    border: 13px solid orange;
+  }
+  .container {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+          "header"
+          "a"
+          "a"
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+          "header"
+          "a"
+          "a"
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    grid-column: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+          "header header"
+          "a a"
+          "a a"
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+          "header header header header"
+          "a a b b"
+ }
+}
