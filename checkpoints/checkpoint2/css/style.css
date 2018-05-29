@@ -7,6 +7,15 @@ light gre #E8EEF2
 light blue #C1E0F7
 */
 
+/*
+color scheme 2:
+white
+black
+off-white: #FAFAFA
+light grey: #F5F5F5
+highlight: cyan
+*/
+
 ::selection {
   background: cyan;
 }
@@ -14,7 +23,7 @@ light blue #C1E0F7
 body {
   border: 1px black solid;
   /* font-family: "HelveticaCondensed", Arial, sans-serif; */
-  background-color: #F6EFEE;
+  /* background-color: #F6EFEE; */
   font-family: "lato";
   margin: inherit;
   border: inherit;
@@ -24,20 +33,23 @@ body {
 
 }
 
+/* header start */
+
 header {
-  background-color: #2B2D42;
-  padding: 20px 0;
+  /* background-color: #2B2D42; */
+  background-color: black;
+  padding: 16px 0;
 }
 
 #site-title {
   position: relative;
-  top: 6px;
-  left: 30px;
+  top: 11px;
+  left: 40px;
   height: 0px;
   z-index: 1;
   font-weight: 400;
   font-size: 30px;
-  color: #E8EEF2;
+  color: white;
 }
 
 nav {
@@ -50,16 +62,18 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 nav a {
+  align-items: center;
   text-decoration: none;
   text-align: center;
   padding: 14px 18px;
+  height: 40px;
+  line-height: 40px;
   font-size: 17px;
-  color: #E8EEF2;
-  transition: .2s ease-in;
+  color: white;
+  transition: .2s all ease-in;
 }
 
 nav a:hover {
@@ -69,6 +83,8 @@ nav a:hover {
 nav a:active {
   color: #FFBA49;
 }
+
+/* header end */
 
 main {
   padding-top: 30px;
@@ -103,14 +119,20 @@ h3 {
 
 section {
   padding: 30px 0 50px 0;
-  border-top: 3px #A3C4BC solid;
+  /* border-top: 3px #A3C4BC solid;
+  border-bottom: 3px #A3C4BC solid; */
+  border-top: 3px solid #DDDDDD;
+  border-bottom: 3px solid #DDDDDD;
   width: 1100px;
   margin: auto;
 }
 
+/* carousel start */
+
 #carousel {
   display: grid;
   margin: auto;
+  padding-top: 30px;
   width: 1000px;
   grid-row-gap: 30px;
   grid-template-rows: 1fr 1fr;
@@ -122,10 +144,36 @@ section {
 }
 
 .box {
-  border: 1px black solid;
+  background-color: white;
+  border-radius: 3px;
   width: 300px;
-  height: 260px;
-  box-shadow: 5px 5px grey;
+  height: 270px;
+  box-shadow: 0 1px 3px 0 grey;
+}
+
+.box a {
+  text-decoration: none;
+}
+
+.box #img {
+  border-radius: 3px;
+  border: .5px solid grey;
+  width: 280px;
+  height: 190px;
+  margin: 10px auto;
+  background-color: #fff5ec;
+}
+
+h4 {
+  color: black;
+  margin: 5px 0 5px 20px;
+  font-weight: normal;
+}
+
+.box a p {
+  color: grey;
+  text-align: left;
+  margin: 0 0 0 20px;
 }
 
 .box1 {
@@ -152,11 +200,12 @@ section {
   grid-area: box6;
 }
 
+/* carousel end */
+
 aside {
   padding-top: 50px;
-  border-top: 3px #A3C4BC solid;
   margin: auto;
-  width: 1100px;
+  width: 800px;
 }
 
 #references {
