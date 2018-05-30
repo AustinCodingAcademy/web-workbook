@@ -1,0 +1,183 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #C8C9C7;
+}
+.top-container {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 150px 15px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border: solid 2px #0b3763;
+}
+.logo {
+  background-color: #ffffff;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin-top: 10px;
+}
+.header {
+  background-color: #ffffff;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.header p {
+  font-family: "alternate-gothic-no-3-d", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  color: #0093d0;
+  text-align: right;
+  padding-right: 10px;
+}
+.color-block {
+  background-color: #0b3763;
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+}
+.navigation {
+  background-color: lightyellow;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-top: none;
+  border-right: solid 2px #0b3763;
+  border-bottom: none;
+  border-left: solid 2px #0b3763;
+}
+.nav-box {
+  background-color: #ffffff;;
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template rows: 50px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-family: "din-condensed", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  color: #0b3763;
+}
+.nav {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  text-align: right;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+.nav li {
+  display: inline;
+}
+a:link {
+  color: #0b3763;
+  text-decoration: none;
+}
+a:visited {
+  color: #0b3763;
+  text-decoration: none;
+}
+a:hover {
+  color: #0093d0;
+  text-decoration: overline;
+}
+a:active {
+  color: #0b3763;
+  text-decoration: overline;
+}
+/*everything up until here stays the same on each page.*/
+.content {
+  display: grid;
+  grid-template-columns: 1fr 50px 4fr 50px 1fr;
+  grid-template-rows: 200px 3fr 75px;
+  background-color: #ffffff;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-top: none;
+  border-right: solid 2px #0b3763;
+  border-bottom: solid 2px #0b3763;
+  border-left: solid 2px #0b3763;
+}
+.content-header {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  text-align: center;
+  font-family: "alternate-gothic-no-3-d", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  color: #3C434A;
+}
+.inquiry-form {
+  grid-column: 2 / 5;
+  grid-row: 2 / 3;
+  background-color: pink;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 50px 1fr 50px 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+}
+div.first-name {
+  background-color: lightyellow;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+div.last-name {
+  background-color: lightblue;
+  grid-column: 4 / 6;
+  grid-row: 1 / 2;
+}
+div.company-name {
+  background-color: lightgreen;
+  grid-column: 1 / 5;
+  grid-row: 2 / 3;
+}
+div.phone-number {
+  background-color: lavender;
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+div.email {
+  background-color: lightyellow;
+  grid-column: 4 / 6;
+  grid-row: 3 / 4;
+}
+p.please {
+  background-color: lightblue;
+  grid-column: 1 / 5;
+  grid-row: 4 / 5;
+}
+div.street-address {
+  background-color: lightgreen;
+  grid-column: 1 / 3;
+  grid-row: 5 / 6;
+}
+div.city {
+  background-color: lavender;
+  grid-column: 4 / 6;
+  grid-row: 5 / 6;
+}
+div.state {
+  background-color: lightyellow;
+  grid-column: 1 / 3;
+  grid-row: 6 / 7;
+}
+div.zip {
+  background-color: lightblue;
+  grid-column: 4 / 6;
+  grid-row: 6 / 7;
+}
+div.describe {
+  background-color: lightgreen;
+  grid-column: 2 / 5;
+  grid-row: 7 / 8;
+  z-index: 2;
+}
+.front {
+  z-index: 100;
+}
