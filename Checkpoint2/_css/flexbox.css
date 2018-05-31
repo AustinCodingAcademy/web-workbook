@@ -1,0 +1,241 @@
+/* -------------------------------------------------- 
+   flexbox layout styles
+-----------------------------------------------------*/
+body {
+	width: 90%;
+	margin: 0 auto;
+}
+/* -------------------------------------------------- 
+   top navigation styles
+-----------------------------------------------------*/
+nav ul {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+nav li {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	-ms-flex-pack: center;
+	align-items: center;
+}
+nav li.search-form {
+	margin-left: auto;
+	margin-right: 1em;
+}
+/* -------------------------------------------------- 
+   header styles
+-----------------------------------------------------*/
+header hgroup {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: baseline;
+	-ms-flex-pack: baseline;
+	align-items: baseline;
+}
+/* -------------------------------------------------- 
+   main content styles
+-----------------------------------------------------*/
+section.main {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: 2em;
+}
+.featured {
+	-webkit-order: 1;
+	-ms-flex-order: 1;
+	order: 1;
+	-webkit-flex: 3;
+	-ms-flex:3;
+	flex:3;
+}
+.sidebar {
+	-webkit-order: 0;
+	-ms-flex-order: 0;
+	order: 0;
+	-webkit-flex: 1;
+	-ms-flex:1;
+	flex:1;
+	margin-right: 2em;
+} 
+ul.social {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-around;
+	-ms-flex-pack: justify;
+	justify-content: space-around;
+}
+/* -------------------------------------------------- 
+   spotlight content styles
+-----------------------------------------------------*/
+.spotlight {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.latest {
+	-webkit-flex: 1;
+	-ms-flex:1;
+	flex:1;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-flow: column;
+	-ms-flex-flow: column;
+	flex-flow: column;
+	flex-direction: column;
+}
+/* -------------------------------------------------- 
+   footer  styles
+-----------------------------------------------------*/
+footer {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	min-height: 4em;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+/* -------------------------------------------------- 
+   Smaller screen styles
+-----------------------------------------------------*/
+@media only screen and (max-width: 720px) {
+
+/*set direction to single column, set ordinal values*/
+body {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+nav {
+	-webkit-order: 3;
+	-ms-flex-order: 3;
+	order: 3;
+}
+header {
+	-webkit-order: 0;
+	-ms-flex-order: 0;
+	order:0;
+}
+.main {
+	-webkit-order: 2;
+	-ms-flex-order: 2;
+	order:2;
+}
+.spotlight {
+	-webkit-order: 1;
+	-ms-flex-order: 1;
+	order: 1;
+}
+footer {
+	-webkit-order: 4;
+	-ms-flex-order: 4;
+	order: 4;
+}
+
+/* -------------------------------------------------- 
+   top navigation styles
+-----------------------------------------------------*/
+nav ul {
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+nav li.search-form {
+	-webkit-order: -1;
+	-ms-flex-order: -1;
+	order: -1;
+	margin: 0 0 2em;
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+}
+/* -------------------------------------------------- 
+  header styles
+-----------------------------------------------------*/
+header hgroup {
+	-webkit-align-items: center;
+	-ms-flex-pack: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+/* -------------------------------------------------- 
+   main content styles
+-----------------------------------------------------*/
+section.main {
+	display: block;
+	margin-bottom: 2em;
+}
+.sidebar {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	margin-right: 0;
+} 
+.intro {
+	-webkit-order: 2;
+	-ms-flex-order: 2;
+	order: 2;
+	margin-top: 2em;
+}
+.social {
+	-webkit-order: 3;
+	-ms-flex-order: 3;
+	order: 3;
+	margin-top: 1em;
+}
+.newsletter {
+	-webkit-order: 0;
+	-ms-flex-order: 0;
+	flex-order: 0;
+	margin-bottom: 1em;
+}
+.events {
+	-webkit-order: 1;
+	-ms-flex-order: 1;
+	flex-order: 1;
+}
+/* -------------------------------------------------- 
+   spotlight content styles
+-----------------------------------------------------*/
+.spotlight {
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+.news {
+	-webkit-order: 1;
+	-ms-flex-order: 1;
+	order: 1;
+}
+.item {
+	-webkit-order: 0;
+	-ms-flex-order: 0;
+	order: 0;
+}
+.facts {
+	-webkit-order: 2;
+	-ms-flex-order: 2;
+	order: 2;
+}
+
+
+}
