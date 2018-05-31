@@ -93,7 +93,7 @@ a:active {
 .content {
   display: grid;
   grid-template-columns: 1fr 50px 4fr 50px 1fr;
-  grid-template-rows: 200px 3fr 75px;
+  grid-template-rows: 150px 3fr 75px;
   background-color: #ffffff;
   margin-right: 20px;
   margin-left: 20px;
@@ -115,69 +115,211 @@ a:active {
 .inquiry-form {
   grid-column: 2 / 5;
   grid-row: 2 / 3;
-  background-color: pink;
+  background-color: #E5E5E5;
+  border: solid 1px #0b3763;
+  padding: 10px;
 }
 form {
   display: grid;
   grid-template-columns: 1fr 50px 1fr 50px 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 2fr;
+  font-family: "din-2014-narrow", sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 div.first-name {
-  background-color: lightyellow;
+  background-color: #E5E5E5;
   grid-column: 1 / 3;
   grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
 }
+
 div.last-name {
-  background-color: lightblue;
+  background-color: #E5E5E5;
   grid-column: 4 / 6;
   grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
 }
+
 div.company-name {
-  background-color: lightgreen;
-  grid-column: 1 / 5;
+  background-color: #E5E5E5;
+  grid-column: 1 / 4;
   grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
 }
 div.phone-number {
-  background-color: lavender;
+  background-color: #E5E5E5;
   grid-column: 1 / 3;
   grid-row: 3 / 4;
+  display: flex;
+  flex-direction: column;
 }
 div.email {
-  background-color: lightyellow;
+  background-color: #E5E5E5;
   grid-column: 4 / 6;
   grid-row: 3 / 4;
+  display: flex;
+  flex-direction: column;
 }
 p.please {
-  background-color: lightblue;
+  background-color: #E5E5E5;
   grid-column: 1 / 5;
   grid-row: 4 / 5;
 }
 div.street-address {
-  background-color: lightgreen;
+  background-color: #E5E5E5;
   grid-column: 1 / 3;
   grid-row: 5 / 6;
+  display: flex;
+  flex-direction: column;
 }
 div.city {
-  background-color: lavender;
+  background-color: #E5E5E5;
   grid-column: 4 / 6;
   grid-row: 5 / 6;
+  display: flex;
+  flex-direction: column;
 }
 div.state {
-  background-color: lightyellow;
+  background-color: #E5E5E5;
   grid-column: 1 / 3;
   grid-row: 6 / 7;
+  display: flex;
+  flex-direction: column;
 }
 div.zip {
-  background-color: lightblue;
+  background-color: #E5E5E5;
   grid-column: 4 / 6;
   grid-row: 6 / 7;
+  display: flex;
+  flex-direction: column;
 }
 div.describe {
-  background-color: lightgreen;
+  background-color: #E5E5E5;
   grid-column: 2 / 5;
   grid-row: 7 / 8;
-  z-index: 2;
+  text-align: center;
 }
-.front {
-  z-index: 100;
+.submit {
+  background-color: #ffffff;
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  display: grid;
+  grid-template-columns: 1fr 50px 1fr;
+  grid-template-rows: 1fr;
+}
+.button {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  font-size: 20px;
+}
+
+/*Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  html, body {
+    width: 100%;
+  }
+  .top-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 10px;
+  }
+  .logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .phone-img {
+    height: 90px;
+    width: 90%;
+  }
+  .header {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+  .header p {
+    font-size: 32px;
+  }
+  .nav-box {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 40px;
+    font-size: 18px;
+    padding-top: 0px;
+  }
+/*All this above can be applied to every page for phone media query */
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 50px 4fr 50px 1fr;
+    grid-template-rows: 100px 3fr 75px;
+  }
+  .content-header {
+    font-size: 30px;
+    padding-top: 10px;
+  }
+  form {
+    font-size: 12px;
+  }
+}
+
+/*Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .top-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 120px 15px;
+  }
+  .phone-img {
+    height: 100%;
+  }
+  .header p {
+    padding-top: 15px;
+    font-size: 30px;
+  }
+  .nav-box {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 50px;
+    font-size: 16px;
+  }
+  .content-header {
+    font-size: 40px;
+    padding-top: 15px;
+  }
+}
+
+/*Medium devices (landscape tablet, 768px and up) */
+@media only screen and (min-width: 768px) {
+ .header p {
+   font-size: 36px;
+ }
+ .nav-box {
+   font-size: 20px;
+ }
+ .content-header {
+   font-size: 42px;
+ }
+}
+
+/*Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .top-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 150px 15px;
+  }
+ .header p {
+   font-size: 48px;
+   padding-top: 10px;
+ }
+ .nav-box {
+   font-size: 22px;
+   padding-bottom: 15px;
+ }
+ .content-header {
+   font-size: 48px;
+ }
 }
