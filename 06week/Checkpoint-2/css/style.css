@@ -1,0 +1,32 @@
+.background {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color:white;
+}
+body {
+  background-color: black;
+}
+.container {
+  display: grid;
+  grid-template-columns: : 25% 25% 25% 25%;
+  grid-template-areas:"links links links links";
+  color: #ff3333;
+  font-size: 25px;
+}
+.links {
+  grid-area: links;
+}
+@media (max-width: 576px){
+  .container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas:"links"
+                        "links"
+                        "links"
+                        "links";
+  }
+}
