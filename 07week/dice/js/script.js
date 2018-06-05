@@ -39,7 +39,7 @@ function report() {
     if (howManyDice === 5) { // we check after the counting is done if it is equal to '5'
       document.querySelector("#report").innerHTML += `There is a yacht of ${dieVal}s<br><br>`;  // if yes, we report five
     }
-    // // two pairs at once, like 3 6 5 3 5 - called two-pairs;
+    // two pairs at once, like 3 6 5 3 5 - called two-pairs;
     // else if ((howManyDice === 2) && (howManyDice === 2)) { // we check after the counting is done if it is equal to 'two pair'
     //   document.querySelector("#report").innerHTML += `There is a two-pair<br><br>`;
     // }
