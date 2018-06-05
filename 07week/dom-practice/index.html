@@ -7,7 +7,16 @@ Create the ability to add more items to the list using JavaScript.
 Create the ability to remove an item from the shopping cart using javascript.
 
 Extension Challenge: Create the ability to display a picture of the product when the mouse
-hovers over the name of the project. -->
+hovers over the name of the project.
+
+Should have an inventory list with description
+
+Should specify # of items available(js)
+
+Should let me add to my shopping cart (name only)
+
+Should let me remove item from shopping cart
+-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,62 +26,104 @@ hovers over the name of the project. -->
 </head>
 <body>
   <header>
-    <h1>Shopping Cart</h1>
+    <h1>Sean's Store</h1>
   </header>
   <div id="wrapper">
-    <div id="container">
+    <div id="Items">
+      <h1>Store Inventory</h1>
+      <div id="container">
+      </div>
+        <ul id="myList">
+          <li id="li1">
+            <h3 id="item1">All-New Fire 7 Tablet</h3>
+            <p class="paragraph" id="P1">
+              All-New Fire 7 Tablet: The next generation of our
+              best-selling Fire tablet ever - now thinner, lighter, and with longer battery
+              life and an improved display. More durable than the latest iPad.
+            </p><br>
+            <img src="imgs/fire7tablet.jpg" id="img1">
+            <br>
+            <button type="button" onclick="moveLi("item1", "cart1")">add to cart</button>
+            <br>
+            <button type="button" onclick="removeLi1()">delete</button>
+          </li>
+          <li id="li2">
+            <h3 id="item2">Flash Furniture Yellow Metal Indoor-Outdoor Chair with Arms</h3>
+            <p class="paragraph" id="P2">
+              Flash Furniture Yellow Metal Indoor-Outdoor Chair
+              with Arms: Completely transform your living or restaurant space with this vintage
+              style chair. Adding colorful chairs can rev up any setting. The versatility of this
+              chair easily conforms in different environments. Chairs are lightweight and easily
+              stack for storing. A cross brace underneath the seat adds extra stability and features
+              plastic caps that prevent the finish from scratching when stacked. The frame is
+              designed for all-weather use making it a great option for indoor and outdoor settings.
+              For longevity, care should be taken to protect from long periods of wet weather. The
+              legs have protective rubber feet that prevent damage to flooring. So whether you're
+              using this chair for your kitchen, patio or bistro, it is sure to liven up your decor.
+            </p>
+            <br>
+            <button type="button" onclick="moveLi()">add to cart</button>
+            <br>
+            <button type="button" onclick="removeLi2()">delete</button>
+          </li>
+          <li id="li3">
+            <h3 id="item3">Amazon Echo</h3>
+            <p class="paragraph" id="P3">
+              Amazon Echo: Amazon Echo is a hands-free speaker you control
+              with your voice. Echo connects to the Alexa Voice Service to play music, make calls,
+              send and receive messages, provide information, news, sports scores, weather, and
+              more—instantly. All you have to do is ask.
+            </p>
+            <br>
+            <button type="button" onclick="moveLi()">add to cart</button>
+            <br>
+            <button type="button" onclick="removeLi3()">delete</button>
+          </li>
+          <li id="li4">
+            <h3 id="item4">Coleman Lay Z Spa Inflatable Hot Tub</h3>
+            <p class="paragraph" id="P4">
+              Coleman Lay Z Spa Inflatable Hot Tub: Pamper yourself in
+              relaxing heated water surrounded by soothing bubble jets. Easy to operate digital
+              control panel; automatic start/stop timer-controlled heating system. 4-6 Person Capacity.
+              Inflated walls are made of TriTech material that provides ultimate durability and
+              comfort. Fast, easy set up - inflates using the spa's pump - NO tools needed.
+            </p>
+            <br>
+            <button type="button" onclick="moveLi()">add to cart</button>
+            <br>
+            <button type="button" onclick="removeLi4()">delete</button>
+          </li>
+        </ul>
+        <button type="button" id="add" onclick="createLi()">add item</button>
+        <div id="div">
+
+
+
+
+      </div>
     </div>
-      <ul id="myList">
-        <li id="li1">
-          All-New Fire 7 Tablet<br>
-          <img src="imgs/fire7tablet.jpg" id="img1"><br>
-          <button type="button" onclick="removeLi1()">delete</button>
-        </li>
-        <li id="li2">
-          Flash Furniture Yellow Metal Indoor-Outdoor Chair with Arms<br>
-          <button type="button" onclick="removeLi2()">delete</button>
-        </li>
-        <li id="li3">Amazon Echo<br>
-          <button type="button" onclick="removeLi3()">delete</button>
-        </li>
-        <li id="li4">Coleman Lay Z Spa Inflatable Hot Tub<br>
-          <button type="button" onclick="removeLi4()">delete</button>
-        </li>
-      </ul>
-      <button type="button" id="add" onclick="createLi()">add item</button>
-      <div id="div">
-        <p class="paragraph" id="P1">
-          All-New Fire 7 Tablet: The next generation of our
-          best-selling Fire tablet ever - now thinner, lighter, and with longer battery
-          life and an improved display. More durable than the latest iPad.
-        </p>
-        <p class="paragraph" id="P2">
-          Flash Furniture Yellow Metal Indoor-Outdoor Chair
-          with Arms: Completely transform your living or restaurant space with this vintage
-          style chair. Adding colorful chairs can rev up any setting. The versatility of this
-          chair easily conforms in different environments. Chairs are lightweight and easily
-          stack for storing. A cross brace underneath the seat adds extra stability and features
-          plastic caps that prevent the finish from scratching when stacked. The frame is
-          designed for all-weather use making it a great option for indoor and outdoor settings.
-          For longevity, care should be taken to protect from long periods of wet weather. The
-          legs have protective rubber feet that prevent damage to flooring. So whether you're
-          using this chair for your kitchen, patio or bistro, it is sure to liven up your decor.
-        </p>
-        <p class="paragraph" id="P3">
-          Amazon Echo: Amazon Echo is a hands-free speaker you control
-          with your voice. Echo connects to the Alexa Voice Service to play music, make calls,
-          send and receive messages, provide information, news, sports scores, weather, and
-          more—instantly. All you have to do is ask.
-        </p>
-        <p class="paragraph" id="P4">
-          Coleman Lay Z Spa Inflatable Hot Tub: Pamper yourself in
-          relaxing heated water surrounded by soothing bubble jets. Easy to operate digital
-          control panel; automatic start/stop timer-controlled heating system. 4-6 Person Capacity.
-          Inflated walls are made of TriTech material that provides ultimate durability and
-          comfort. Fast, easy set up - inflates using the spa's pump - NO tools needed.
-        </p>
-    </div>
+    <aside>
+      <h1 id="carttitle">Shopping Cart</h1>
+      <div id="cart1">
+
+      </div>
+      <div id="cart2">
+
+      </div>
+      <div id="cart3">
+
+      </div>
+      <div id="cart4">
+
+      </div>
+    </aside>
   </div>
+
   <script type="text/javascript" src="./js/script.js"></script>
+  <!--<div class="templates">
+        <div id="button">
+        <button></button>
+        </div>
+      </div>-->
 </body>
 </html>
