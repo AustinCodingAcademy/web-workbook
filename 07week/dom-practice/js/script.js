@@ -57,15 +57,9 @@ function removeLi4() {
 //   document.getElementById("cart1").innerHTML = mvli1;
 // }
 
-function moveLi(item, cart) {
-  var mvli = document.getElementById(item).textContent;
-  document.getElementById(cart).innerHTML = mvli;
-
-  // moveLi("item1");
-  // moveLi("item2");
-  // moveLi("item3");
-  // moveLi("item4");
-
+function addToCart(item, cart) {
+  var additem = document.getElementById(item).textContent;
+  document.getElementById(cart).innerHTML = additem;
 }
 
 // Delete From Cart
