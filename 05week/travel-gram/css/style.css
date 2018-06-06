@@ -1,1 +1,105 @@
 
+.box{
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+}
+
+#grid{
+  width: 100%;
+  height: 700px;
+  display: grid;
+  grid-template-rows: 2fr 3fr 1fr 3fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "b1 b1 b2 b2"
+  "b3 b3 b4 b5"
+  "b3 b3 b6 b6"
+  "b7 b8 b9 b10"
+}
+
+.style1{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas:
+  "c1 c2 c2"
+  "c1 c3 c4"
+}
+.style2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr 1fr;
+  grid-template-areas:
+  "z1 z1 "
+  "z2 z2 "
+  "z3 z4"
+}
+.z1{
+  grid-area:z1;
+  border: solid 1px black;
+}
+
+.z2{
+  grid-area:z2;
+  border: solid 1px black;
+}
+.z3{
+  grid-area:z3;
+  border: solid 1px black;
+}
+
+.z4{
+  grid-area:z4;
+  border: solid 1px black;
+}
+
+
+
+.c1{
+  grid-area:c1;
+  border: solid 1px black;
+}
+.c2{
+  grid-area: c2;
+  border: solid 1px black;
+}
+.c3{
+  grid-area:c3;
+  border: solid 1px black;
+}
+.c4{
+  grid-area: c4;
+  border: solid 1px black;
+}
+
+#box1{
+  grid-area: b1;
+}
+#box2{
+  grid-area: b2;
+}
+#box3{
+  grid-area: b3;
+}
+#box4{
+  grid-area: b4;
+}
+#box5{
+  grid-area:b5;
+}
+#box6{
+  grid-area: b6;
+}
+#box7{
+  grid-area: b7;
+}
+#box8{
+  grid-area: b8;
+}
+#box9{
+  grid-area: b9;
+}
+#box10{
+  grid-area:b10;
+}
