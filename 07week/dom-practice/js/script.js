@@ -5,11 +5,10 @@ var items = [];
 
 function countItems(){
   console.log("start countItems function");
-  items = document.getElementsByClass("items");
-
-  for (var i = 0; i < items.length; i++) {
-    return i;
-    }
+  items = document.querySelectorAll(".items");
+  return items.length;
+  console.log("end countItems function");
+}
 
 function addDiv1(){
   console.log("start addDiv1 function");
