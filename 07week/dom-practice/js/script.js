@@ -28,27 +28,27 @@ window.onload = function(){
   onStart();
 }
 
-// delete items
+// delete single items
 
-function removeLi1() {
-  var remli1 = document.getElementById("li1");
-  remli1.remove();
-}
-
-function removeLi2() {
-  var remli2 = document.getElementById("li2");
-  remli2.remove();
-}
-
-function removeLi3() {
-  var remli3 = document.getElementById("li3");
-  remli3.remove();
-}
-
-function removeLi4() {
-  var remli4 = document.getElementById("li4");
-  remli4.remove();
-}
+// function removeLi1() {
+//   var remli1 = document.getElementById("li1");
+//   remli1.remove();
+// }
+//
+// function removeLi2() {
+//   var remli2 = document.getElementById("li2");
+//   remli2.remove();
+// }
+//
+// function removeLi3() {
+//   var remli3 = document.getElementById("li3");
+//   remli3.remove();
+// }
+//
+// function removeLi4() {
+//   var remli4 = document.getElementById("li4");
+//   remli4.remove();
+// }
 
 // move to cart
 
@@ -64,18 +64,28 @@ function removeLi4() {
 
 //move select elements to cart
 
-function addToCart(inventory, item, cart) {
-  var additem = document.getElementById(inventory).removeChild(
-    document.getElementById(item));
-  document.getElementById(cart).appendChild(additem);
+// function addToCart(inventory, item, cart) {
+//   var additem = document.getElementById(inventory).removeChild(
+//     document.getElementById(item));
+//   document.getElementById(cart).appendChild(additem);
+// }
+
+// Copy From Cart
+// wondering how to add unique ids to copied items. 
+
+function addToCart(item, cart){
+  var additem = document.getElementById(item).cloneNode(true);
+    document.getElementById(cart).appendChild(additem);
+    additem.id = "cart1";
 }
 
-// var takeitem = document.getElementById(item);
-// var addtocart = document.getElementById(cart);
-// addtocart.removeChild(takeitem);
-
-
 // Delete From Cart
+
+// delete items
+function deleteItem(item){
+  var ditem = document.getElementById(item);
+  ditem.remove();
+}
 
 // function removeLi1() {
 //   var rmli1 = document.getElementById("cart1").textContent;
