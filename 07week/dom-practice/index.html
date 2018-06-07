@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <h1>Shopping Cart Assignment</h1>
+
+  <div id="list" onload="countItems()" >
+  </div>
+
+  <div id="items">
+    <p class="paragraph" id="P1">
+      <input value="Add to Cart" type="button" onClick="addP('Apple'); addButton()" /> Apple</p>
+
+    <p class="paragraph" id="P2">
+      <input value="Add to Cart" type="button" onClick="addP('Banana'); addButton()" /> Banana</p>
+
+    <p class="paragraph" id="P3">
+      <input value="Add to Cart" type="button" onClick="addP('Orange'); addButton()" /> Orange</p>
+
+    <p class="paragraph" id="P4">
+      <input value="Add to Cart" type="button" onClick="addP('Watermelon'); addButton()" /> Watermelon</p>
+
+  </div>
+
+  <div id="cart" onclick="removeElement()">
+    <h2>Cart<h2>
+    <span id="first"></span>
+  </div>
+
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
