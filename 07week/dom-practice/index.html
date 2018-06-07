@@ -43,9 +43,9 @@ Should let me remove item from shopping cart
             </p><br>
             <img src="imgs/fire7tablet.jpg" id="img1">
             <br>
-            <button type="button" onclick="addToCart('item1','cart1')">add to cart</button>
+            <button type="button" class="additem" onclick="addToCart('myList','li1','cart')">add to cart</button>
             <br>
-            <button type="button" onclick="removeLi1()">delete</button>
+            <button type="button" class="deleteitem" onclick="removeLi1()">delete</button>
           </li>
           <li id="li2">
             <h3 id="item2">Flash Furniture Yellow Metal Indoor-Outdoor Chair with Arms</h3>
@@ -62,9 +62,9 @@ Should let me remove item from shopping cart
               using this chair for your kitchen, patio or bistro, it is sure to liven up your decor.
             </p>
             <br>
-            <button type="button" onclick="addToCart('item2','cart2')">add to cart</button>
+            <button type="button" class="additem" onclick="addToCart('item2','cart')">add to cart</button>
             <br>
-            <button type="button" onclick="removeLi2()">delete</button>
+            <button type="button" class="deleteitem" onclick="removeLi2()">delete</button>
           </li>
           <li id="li3">
             <h3 id="item3">Amazon Echo</h3>
@@ -75,9 +75,9 @@ Should let me remove item from shopping cart
               more—instantly. All you have to do is ask.
             </p>
             <br>
-            <button type="button" onclick="addToCart('item3','cart3')">add to cart</button>
+            <button type="button" class="additem" onclick="addToCart('item3','cart')">add to cart</button>
             <br>
-            <button type="button" onclick="removeLi3()">delete</button>
+            <button type="button" class="deleteitem" onclick="removeLi3()">delete</button>
           </li>
           <li id="li4">
             <h3 id="item4">Coleman Lay Z Spa Inflatable Hot Tub</h3>
@@ -89,9 +89,9 @@ Should let me remove item from shopping cart
               comfort. Fast, easy set up - inflates using the spa's pump - NO tools needed.
             </p>
             <br>
-            <button type="button" onclick="addToCart('item4','cart4')">add to cart</button>
+            <button type="button" class="additem" onclick="addToCart('item4','cart')">add to cart</button>
             <br>
-            <button type="button" onclick="removeLi4()">delete</button>
+            <button type="button" class="deleteitem" onclick="removeLi4()">delete</button>
           </li>
         </ul>
         <button type="button" id="add" onclick="createLi()">add item</button>
@@ -104,16 +104,7 @@ Should let me remove item from shopping cart
     </div>
     <aside>
       <h1 id="carttitle">Shopping Cart</h1>
-      <div id="cart1">
-
-      </div>
-      <div id="cart2">
-
-      </div>
-      <div id="cart3">
-
-      </div>
-      <div id="cart4">
+      <div id="cart">
 
       </div>
     </aside>

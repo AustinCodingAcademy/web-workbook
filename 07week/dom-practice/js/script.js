@@ -57,10 +57,23 @@ function removeLi4() {
 //   document.getElementById("cart1").innerHTML = mvli1;
 // }
 
-function addToCart(item, cart) {
-  var additem = document.getElementById(item).textContent;
-  document.getElementById(cart).innerHTML = additem;
+// function addToCart(item, cart) {
+//   var additem = document.getElementById(item).textContent;
+//   document.getElementById(cart).innerHTML = additem;
+// }
+
+//move select elements to cart
+
+function addToCart(inventory, item, cart) {
+  var additem = document.getElementById(inventory).removeChild(
+    document.getElementById(item));
+  document.getElementById(cart).appendChild(additem);
 }
+
+// var takeitem = document.getElementById(item);
+// var addtocart = document.getElementById(cart);
+// addtocart.removeChild(takeitem);
+
 
 // Delete From Cart
 
@@ -69,12 +82,12 @@ function addToCart(item, cart) {
 //   document.getElementById("cart1").innerHTML = ""
 // }
 
-function removeLi1() {
-  var rmli1 = document.getElementById("cart1");
-  rmli1.onclick = function() {
-    cart1.style.display = "none";
-  }
-}
+// function removeLi1() {
+//   var rmli1 = document.getElementById("cart1");
+//   rmli1.onclick = function() {
+//     cart1.style.display = "none";
+//   }
+// }
 
 // add item to inventory
 
@@ -95,3 +108,15 @@ imgli1.onmouseover = function() {
 imgli1.onmouseout = function() {
   img1.style.display = "none";
 }
+
+//inventory item counter
+
+function countList() {
+  console.log("i am in count list");
+  var li_list = document.querySelector("li");
+  for(var i = 0; i<li_list.length; i++) {
+    console.log(li_list[i]);
+  }
+}
+
+countList();
