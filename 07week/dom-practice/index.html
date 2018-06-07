@@ -11,7 +11,11 @@
     </header>
 
     <div id="cart">
-      Cart
+      <h1>Cart</h1>
+    </div>
+
+    <div id = "counter">
+      <h2>Welcome to Provisions, where we have <span id = "itemCounter">0</span> different products for you to choose from.</h2>
     </div>
   </div>
 
@@ -22,16 +26,16 @@
       <p class = "description">
         Certified Organic / Grown in Mexico
       </p>
-      <input value = "add to cart" type = "button" onclick = "addDiv1()"/>
+      <input value = "add to cart" type = "button" onclick = "addDiv(&quot;item-one&quot;)"/>
     </div>
 
     <div class = "items">
       <span class = "pic"></span>
       <h1 id = "item-two" class = "item-name">Tomato</h1>
       <p class = "description">
-        Heirloom / Locally Grown in Austin, TX
+        Heirloom / Locally Grown
       </p>
-      <input value = "add to cart" type = "button" onclick = "addDiv2()"/>
+      <input value = "add to cart" type = "button" onclick = "addDiv(&quot;item-two&quot;)"/>
     </div>
 
     <div class = "items">
@@ -40,7 +44,7 @@
       <p class = "description">
         HEB Organics / Roasted Red Pepper
       </p>
-      <input value = "add to cart" type = "button" onclick = "addDiv3()"/>
+      <input value = "add to cart" type = "button" onclick = "addDiv(&quot;item-three&quot;)"/>
     </div>
 
     <div class = "items">
@@ -49,16 +53,16 @@
       <p class = "description">
         Pitted / Small / 16oz Can
       </p>
-      <input value = "add to cart" type = "button" onclick = "addDiv4()"/>
+      <input value = "add to cart" type = "button" onclick = "addDiv(&quot;item-four&quot;)"/>
     </div>
 
-    <div class = "items" id = "item-five">
+    <div class = "items">
       <span class = "pic"></span>
-      <h1 id = "item-five" class = "item-name">Spring Baby Lettuce Mix</h1>
+      <h1 id = "item-five" class = "item-name">Spring Lettuce Mix</h1>
       <p class = "description">
         Certified Organic / 1lb Bag
       </p>
-      <input value = "add to cart" type = "button" onclick = "addDiv5()"/>
+      <input value = "add to cart" type = "button" onclick = "addDiv(&quot;item-five&quot;)"/>
     </div>
 
     <div class = "items">
@@ -67,7 +71,7 @@
       <p class = "description">
         Certified Organic / 1lb Bag
       </p>
-      <input value = "add to cart" type = "button" onclick = "addDiv6()"/>
+      <input value = "add to cart" type = "button" onclick = "addDiv(&quot;item-six&quot;)"/>
     </div>
 
     <div class = "items">
@@ -76,7 +80,7 @@
       <p class = "description">
         Certified Organic / Grown in Mexico
       </p>
-      <input value = "add to cart" type = "button" onclick = "addDiv7()"/>
+      <input value = "add to cart" type = "button" onclick = "addDiv(&quot;item-seven&quot;)"/>
     </div>
 
     <div class = "items">
@@ -85,13 +89,7 @@
       <p class = "description">
         Certified Organic / Grown in Washington
       </p>
-      <input value = "add to cart" type = "button" onclick = "addDiv8()"/>
-    </div>
-    <div id = "counter">
-      <p id = "items-count">
-          Total items available for purchase:
-      </p>
-      <input value = "calculate total" type = "button" onclick = "countItems()"/>
+      <input value = "add to cart" type = "button" onclick = "addDiv(&quot;item-eight&quot;)"/>
     </div>
 
   </main>
