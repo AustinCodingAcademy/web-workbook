@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // You code here
 });
 
-var count = document.getElementById("myList").childElementCount;
+var count = document.getElementById("cart").childElementCount;
 
 // Alert and insert h2
 
@@ -13,10 +13,10 @@ function myAlert() {
 }
 
 function insertH2() {
-  var varh2 = document.createElement('h2');
-  varh2.innerHTML = "You have "+ count +" items in your shopping cart.";
+  var newH2 = document.createElement('h2');
+  newH2.innerHTML = "You have "+ count +" items in your shopping cart.";
   var varcontainer = document.getElementById('container');
-  varcontainer.appendChild(varh2);
+  varcontainer.appendChild(newH2);
 }
 
 function onStart() {
@@ -28,76 +28,40 @@ window.onload = function(){
   onStart();
 }
 
-// delete single items
-
-// function removeLi1() {
-//   var remli1 = document.getElementById("li1");
-//   remli1.remove();
-// }
-//
-// function removeLi2() {
-//   var remli2 = document.getElementById("li2");
-//   remli2.remove();
-// }
-//
-// function removeLi3() {
-//   var remli3 = document.getElementById("li3");
-//   remli3.remove();
-// }
-//
-// function removeLi4() {
-//   var remli4 = document.getElementById("li4");
-//   remli4.remove();
-// }
-
-// move to cart
-
-// function moveLi1() {
-//   var mvli1 = document.getElementById("item1").textContent;
-//   document.getElementById("cart1").innerHTML = mvli1;
-// }
-
-// function addToCart(item, cart) {
-//   var additem = document.getElementById(item).textContent;
-//   document.getElementById(cart).innerHTML = additem;
-// }
-
-//move select elements to cart
-
-// function addToCart(inventory, item, cart) {
-//   var additem = document.getElementById(inventory).removeChild(
-//     document.getElementById(item));
-//   document.getElementById(cart).appendChild(additem);
-// }
-
 // Copy From Cart
-// wondering how to add unique ids to copied items. 
 
-function addToCart(item, cart){
-  var additem = document.getElementById(item).cloneNode(true);
-    document.getElementById(cart).appendChild(additem);
-    additem.id = "cart1";
+// function addToCart(item, cart){
+//   var additem = document.getElementById(item).cloneNode(true);
+//     document.getElementById(cart).appendChild(additem);
+// }
+
+// Add to Cart
+
+function addToCart(item) {
+  var select = document.getElementById(item).textContent;
+  var create = document.createElement('div');
+  create.innerText = select;
+  var button = document.createElement('button');
+  button.setAttribute("class", "deleteitem");
+  button.setAttribute("onclick", "deleteItem(this);updateH2()");
+  button.textContent = "delete item";
+  create.appendChild(button);
+  document.getElementById('cart').appendChild(create);
 }
 
-// Delete From Cart
+// Delete from cart
 
-// delete items
 function deleteItem(item){
-  var ditem = document.getElementById(item);
-  ditem.remove();
+  item.onlick = item.parentNode.remove();
 }
 
-// function removeLi1() {
-//   var rmli1 = document.getElementById("cart1").textContent;
-//   document.getElementById("cart1").innerHTML = ""
-// }
+// update cart count
 
-// function removeLi1() {
-//   var rmli1 = document.getElementById("cart1");
-//   rmli1.onclick = function() {
-//     cart1.style.display = "none";
-//   }
-// }
+function updateH2() {
+  var updatedCount = document.getElementById("cart").childElementCount;
+  var newH2 = document.querySelector("h2");
+  newH2.innerHTML = "You have "+ updatedCount +" items in your shopping cart.";
+}
 
 // add item to inventory
 
@@ -118,15 +82,3 @@ imgli1.onmouseover = function() {
 imgli1.onmouseout = function() {
   img1.style.display = "none";
 }
-
-//inventory item counter
-
-function countList() {
-  console.log("i am in count list");
-  var li_list = document.querySelector("li");
-  for(var i = 0; i<li_list.length; i++) {
-    console.log(li_list[i]);
-  }
-}
-
-countList();

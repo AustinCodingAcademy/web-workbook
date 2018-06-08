@@ -2,19 +2,13 @@
 Alert the user to how many list items there are on the page.
 Add a <h2> to the page under the title that says 'You have _ items in your shopping
 cart'. Do not use html to do this. Use JavaScript.
-
 Create the ability to add more items to the list using JavaScript.
 Create the ability to remove an item from the shopping cart using javascript.
-
 Extension Challenge: Create the ability to display a picture of the product when the mouse
 hovers over the name of the project.
-
 Should have an inventory list with description
-
 Should specify # of items available(js)
-
 Should let me add to my shopping cart (name only)
-
 Should let me remove item from shopping cart
 -->
 
@@ -43,9 +37,7 @@ Should let me remove item from shopping cart
             </p><br>
             <img src="imgs/fire7tablet.jpg" id="img1">
             <br>
-            <button type="button" class="additem" onclick="addToCart('li1','cart')">add to cart</button>
-            <br>
-            <button type="button" class="deleteitem" onclick="deleteItem('cart1')">delete</button>
+            <button type="button" class="additem" onclick="addToCart('item1');updateH2()">add to cart</button>
           </li>
           <li id="li2">
             <h3 id="item2">Flash Furniture Yellow Metal Indoor-Outdoor Chair with Arms</h3>
@@ -62,9 +54,7 @@ Should let me remove item from shopping cart
               using this chair for your kitchen, patio or bistro, it is sure to liven up your decor.
             </p>
             <br>
-            <button type="button" class="additem" onclick="addToCart('myList','li2','cart')">add to cart</button>
-            <br>
-            <button type="button" class="deleteitem" onclick="removeLi2()">delete</button>
+            <button type="button" class="additem" onclick="addToCart('item2');updateH2()">add to cart</button>
           </li>
           <li id="li3">
             <h3 id="item3">Amazon Echo</h3>
@@ -75,9 +65,7 @@ Should let me remove item from shopping cart
               more—instantly. All you have to do is ask.
             </p>
             <br>
-            <button type="button" class="additem" onclick="addToCart('myList','li3','cart')">add to cart</button>
-            <br>
-            <button type="button" class="deleteitem" onclick="removeLi3()">delete</button>
+            <button type="button" class="additem" onclick="addToCart('item3');updateH2()">add to cart</button>
           </li>
           <li id="li4">
             <h3 id="item4">Coleman Lay Z Spa Inflatable Hot Tub</h3>
@@ -89,27 +77,19 @@ Should let me remove item from shopping cart
               comfort. Fast, easy set up - inflates using the spa's pump - NO tools needed.
             </p>
             <br>
-            <button type="button" class="additem" onclick="addToCart('myList','li4','cart')">add to cart</button>
-            <br>
-            <button type="button" class="deleteitem" onclick="removeLi4()">delete</button>
+            <button type="button" class="additem" onclick="addToCart('item4');updateH2()">add to cart</button>
           </li>
         </ul>
         <button type="button" id="add" onclick="createLi()">add item</button>
         <div id="div">
-
-
-
-
       </div>
     </div>
     <aside>
       <h1 id="carttitle">Shopping Cart</h1>
       <div id="cart">
-
       </div>
     </aside>
   </div>
-
   <script type="text/javascript" src="./js/script.js"></script>
   <!--<div class="templates">
         <div id="button">
