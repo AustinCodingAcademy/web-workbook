@@ -4,20 +4,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Towers of Hanoi</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-  <div data-stack="1">
-    <div data-block="100"></div>
-    <div data-block="75"></div>
-    <div data-block="50"></div>
-    <div data-block="25"></div>
+
+  <div id="dropArea1" data-stack="1">
+    <div class="draggable" data-block="100"></div>
+    <div class="draggable" data-block="75"></div>
+    <div class="draggable" data-block="50"></div>
+    <div class="draggable" data-block="25"></div>
   </div>
-  <div data-stack="2">
+
+  <div id="dropArea2" data-stack="2">
   </div>
-  <div data-stack="3">
+
+  <div id="dropArea3" data-stack="3">
   </div>
+
+      <div id="count"></div>
+
   <div id="announce-game-won"></div>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <button id="clear">Clear Board</div>
   <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+
+
+
 </body>
 </html>
