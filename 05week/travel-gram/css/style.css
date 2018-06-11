@@ -1,98 +1,134 @@
 .box {
-  background: #eeeeee;
-  padding: 10px;
-  border: 1px solid black;
-  margin: 5px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
 }
 
-.box:nth-child(odd) {
-  background: #dddddd;
-}
-
-.box:nth-child(3n) {
-  background: #cccccc;
-}
-
-.box1 {
-  grid-area: box1;
-}
-
-.box2 {
-  grid-area: box2;
-}
-
-.box3 {
-  grid-area: box3;
-}
-
-.box4 {
-  grid-area: box4;
-}
-
-.box5 {
-  grid-area: box5;
-}
-
-.box6 {
-  grid-area: box6;
-}
-
-.box7 {
-  grid-area: box7;
-}
-
-.box8 {
-  grid-area: box8;
-}
-
-
-
-/* Extra Small and up (Portrait Phones) */
-
-.grid {
+#grid {
+  width: 100%;
+  height: 700px;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 3fr 1fr 3fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-    "box1"
-    "box2"
-    "box3"
-    "box4"
-    "box5"
-    "box6"
-    "box7"
-    "box8";
+    "b1 b1 b2 b2"
+    "b3 b3 b4 b5"
+    "b3 b3 b6 b6"
+    "b7 b8 b9 b10"
 }
 
-/* Small and up (Landscape Phones) */
-@media (min-width: 576px) {
-  /* Just use the same as Extra Small above  */
+.style1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas:
+    "c1 c2 c2"
+    "c1 c3 c4"
 }
 
-/* Medium and up (Tablets) */
-@media (min-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas:
-      "box1 box2"
-      "box3 box4"
-      "box5 box6"
-      "box7 box8";
-  }
+.style2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr 1fr;
+  grid-template-areas:
+    "c1 c1 "
+    "c2 c2 "
+    "c3 c4"
 }
 
-/* Large and up (Desktops) */
-@media (min-width: 992px) {
-  .grid {
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas:
-      "box1 box1 box2"
-      "box3 box4 box2"
-      "box6 box5 box5"
-      "box6 box7 box8";
-  }
+.style3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr 1fr;
+  grid-template-areas:
+    "c1 c1"
+    "c2 c2"
+    "c3 c4"
 }
 
-/* Extra Large and up (Wide Screen Desktops) */
-@media (min-width: 1200px) {
-  /* Just use the same as Large above  */
+.style4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "c1 c1 c2 c2"
+    "c1 c1 c3 c4"
+}
+
+.style5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 2fr 1fr;
+  grid-template-areas:
+    "c1 c1"
+    "c2 c2"
+    "c3 c4"
+}
+
+.c1 {
+  grid-area: c1;
+  border: solid 1px black;
+  background-image: url("../img/bk.png");
+  background-position: center;
+}
+
+.c2 {
+  grid-area: c2;
+  border: solid 1px black;
+  text-align: center;
+}
+
+.c3 {
+  grid-area: c3;
+  border: solid 1px black;
+  padding: 10px 0px 0px 15px;
+}
+
+.c4 {
+  grid-area: c4;
+  border: solid 1px black;
+  padding: 10px 0px 0px 15px;
+}
+
+#box1 {
+  grid-area: b1;
+}
+
+#box2 {
+  grid-area: b2;
+}
+
+#box3 {
+  grid-area: b3;
+}
+
+#box4 {
+  grid-area: b4;
+}
+
+#box5 {
+  grid-area: b5;
+}
+
+#box6 {
+  grid-area: b6;
+}
+
+#box7 {
+  grid-area: b7;
+}
+
+#box8 {
+  grid-area: b8;
+}
+
+#box9 {
+  grid-area: b9;
+}
+
+#box10 {
+  grid-area: b10;
+}
+.button2{
+  background-color: red;
 }
