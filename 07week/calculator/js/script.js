@@ -32,8 +32,10 @@ function equals() {
   document.querySelector("#results").value = eval(document.querySelector("#results").value);
 }
 
-function posneg() {
-  
+function posneg(){
+  var currentValue = document.getElementById("results").value;
+  currentValue = "-" + currentValue;
+  document.getElementById("input").setAttribute("value", currentValue);
 }
 
 function deleteLast() {
