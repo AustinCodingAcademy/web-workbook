@@ -132,3 +132,27 @@
 .button2{
   background-color: red;
 }
+@media (max-width: 768px) {
+  #grid{
+    width: 275%;
+    height: 1300px;
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-row: 2fr 1.5fr 1fr;
+    grid-template-areas:
+      "b3 b3"
+      "b4 b5"
+      "b6 b6"
+}
+@media (max-width: 576px) {
+  #grid{
+    width: 500%;
+    height: 1200px;
+    display: grid;
+    grid-column: 1fr;
+    grid-template-areas:
+      "b7"
+      "b8"
+      "b9"
+      "b10"
+}
