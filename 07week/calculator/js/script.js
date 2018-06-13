@@ -34,9 +34,20 @@ function equals() {
 
 function posneg(){
   var currentValue = document.getElementById("results").value;
-  currentValue = "-" + currentValue;
-  document.getElementById("input").setAttribute("value", currentValue);
+  if (currentValue.charAt(0) != "-")  {
+    currentValue = "-" + currentValue;
+    document.getElementById("results").value = currentValue;
+  } else {
+    currentValue = currentValue.substring(1);
+    document.getElementById("results").value = currentValue;
+  }
 }
+
+// function posneg(){
+//   var currentValue = document.getElementById("results").value;
+//   currentValue = parseInt(currentValue) * -1;
+//   document.querySelector("input").value = currentValue;
+// }
 
 function deleteLast() {
   let current = document.querySelector("#results").value;
