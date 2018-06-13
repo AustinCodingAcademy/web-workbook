@@ -44,7 +44,7 @@ header {
 #site-title {
   position: relative;
   top: 11px;
-  left: 40px;
+  margin-left: 60px;
   height: 0px;
   z-index: 1;
   font-weight: 400;
@@ -92,12 +92,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1200px;
   margin: auto;
 }
 
 h1 {
   font-size: 65px;
+  margin: auto;
+  text-align: center;
 }
 
 p {
@@ -105,7 +106,6 @@ p {
   font-family: "Montserrat", Sans-serif;
   font-weight: lighter;
   text-align: center;
-  max-width: 1000px;
 }
 
 h2 {
@@ -123,17 +123,16 @@ section {
   border-bottom: 3px #A3C4BC solid; */
   border-top: 3px solid #DDDDDD;
   border-bottom: 3px solid #DDDDDD;
-  width: 1100px;
   margin: auto;
 }
 
-/* carousel start */
+/* grid start */
 
-#carousel {
+#grid {
   display: grid;
   margin: auto;
+  max-width: 1000px;
   padding-top: 30px;
-  width: 1000px;
   grid-row-gap: 30px;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
@@ -205,7 +204,6 @@ h4 {
 aside {
   padding-top: 50px;
   margin: auto;
-  width: 800px;
 }
 
 #references {
@@ -218,14 +216,87 @@ footer {
   background-color: #F5F5F5;
 }
 
+/* Change Display of Header */
+
+@media (max-width: 1050px) {
+  #site-title {
+    display: none;
+  }
+}
+
 /* Tablet */
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  header {
 
+  }
+
+  main {
+
+  }
+
+  section {
+    width: 100%;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  #grid {
+    display: grid;
+    margin: auto;
+    max-width: 680px;
+    padding-top: 30px;
+    grid-row-gap: 30px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-template-areas:
+    "box1 box2"
+    "box3 box4"
+    "box5 box6";
+  }
 }
 
 /* Mobile */
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
+  h1 {
+    font-size: 45px;
+  }
 
+  section {
+    padding-bottom: 25px;
+  }
+
+  #grid {
+    display: grid;
+    margin: auto;
+    padding-top: 15px;
+    grid-row-gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-template-areas:
+    "box1"
+    "box2"
+    "box3"
+    "box4"
+    "box5"
+    "box6";
+  }
+
+  aside {
+    padding-top: 15px;
+  }
+
+  #references {
+    margin-top: 15px;
+  }
+
+  footer {
+    margin-top: 15px;
+    padding-top: 30px;
+  }
 }
