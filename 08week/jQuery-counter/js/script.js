@@ -1,4 +1,4 @@
-'use script'
+'use strict'
 
 
 $('.add').click(function(){
@@ -11,3 +11,5 @@ $('.add').click(function(){
   //**line 10 is reading the number in HTML "id"**//
   $('#counter').text(newCounter);
 })
+
+//** mouse over, double click, multiply, divide**//
