@@ -6,6 +6,41 @@ $('div').click(function(){
   console.log("a div clicked");
 })
 
+//attempt pre-class, doesn't utilize a counter
+// $(document).ready(function() {
+//   alert("Are you ready to count by ones, tens, and hundred?");
+//
+//   var one = 1;
+//   var ten = 10;
+//   var hundred = 100;
+//
+//   $('#counter-1').click(function() {
+//     one++;
+//     $(this).text(one);
+//   })
+//
+//   $('#counter-10').click(function() {
+//     ten = ten + 10;
+//     $(this).text(ten);
+//   })
+//
+//   $('#counter-100').click(function() {
+//     console.log("in100sfunction");
+//     hundred = hundred + 100;
+//     $(this).text(hundred);
+//   })
+//   $('#click-all').click(function() {
+//     console.log("inclickallfunction");
+//     one++;
+//     $('#counter-1').text(one);
+//     ten = ten + 10;
+//     $('#counter-10').text(ten);
+//     hundred = hundred + 100;
+//     $('#counter-100').text(hundred);
+//   })
+// });
+
+
 $(document).ready(function() {
   alert("Are you ready to count by ones, tens, and hundred?");
 
