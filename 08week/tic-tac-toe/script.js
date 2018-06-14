@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   // var isEmpty = $('[data-cell]').length < 1;
 var last = 'X';
-var value = $('[data-cell]').value();
+// var value = $('[data-cell]').value();
 var value0 = $('[data-cell="0"]').text();
 var value1 = $('[data-cell="1"]').text();
 var value2 = $('[data-cell="2"]').text();
@@ -61,9 +61,9 @@ var winPatternsO = [
         } else if (winPatternsX != true) {
           for (i = 0; i < winPatternsO.length; i++) {
             if (winPatternsO === true) {
-              $('message').text = 'you won!';
+              $('#message').text = 'you won!';
             } else {
-              $('message').text = "next person's turn!";
+              $('#message').text = "next person's turn!";
             }
           }
         }
