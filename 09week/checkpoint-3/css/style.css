@@ -1,0 +1,44 @@
+body {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 75px 1fr 100px;
+}
+
+#header {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+#container {
+  width: 100%;
+  position: relative;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+/* this is the div that holds the llama img*/
+.llama-container {
+  position: absolute;
+  top: 230px;
+  left: 365px;
+  cursor: url("img/cakemouse.png"), auto;
+  transition: all 1s;
+}
+
+/*this is the img of the llama*/
+.animated {
+  
+}
+
+#announce-winner {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+h2 {
+  font-family: "jubilat", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+}
