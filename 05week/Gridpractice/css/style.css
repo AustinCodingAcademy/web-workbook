@@ -113,3 +113,24 @@
 #box10{
   grid-area: b10;
 }
+
+@media (max-width: 768px) {
+
+  .box{
+    border-color: purple;
+    border-style: solid;
+    border-width: 2px;
+  }
+  #grid{
+    height: 600px;
+    display: grid;
+    grid-template-rows:  repeat(3fr 2fr 1fr);
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas:
+    "b1 b1 "
+    "b2 b3"
+    "b4 b4"
+    "b5 b5"
+
+  }
+}

@@ -103,3 +103,78 @@
 #box10{
   grid-area:b10;
 }
+@media (max-width: 768px) {
+
+#box1{
+  visibility: hidden;
+}
+#box2{
+  visibility: hidden;
+}
+#box7{
+  visibility: hidden;
+}
+#box8{
+  visibility: hidden;
+}
+#box9{
+  visibility: hidden;
+}
+#box10{
+  visibility: hidden;
+}
+  .box{
+    border-color: purple;
+    border-style: solid;
+    border-width: 2px;
+  }
+  #grid{
+    height: 900px;
+    display: grid;
+    grid-template-rows: repeat( 5fr 2fr 1fr);
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas:
+
+    "b3 b3"
+    "b4 b5"
+    "b6 b6"
+
+
+  }
+}
+@media (max-width: 576px) {
+
+  #box1{
+    visibility: hidden;
+  }
+  #box2{
+    visibility: hidden;
+  }
+
+  #box6{
+    visibility: hidden;
+  }
+  #box7{
+    visibility: hidden;
+  }
+  #box8{
+    visibility: hidden;
+  }
+
+  #box9{
+    visibility: hidden;
+  }
+  #box10{
+    visibility: hidden;
+  }
+
+  #grid{
+    height: 900px;
+    display: grid;
+    grid-template-rows: repeat( 2fr 1fr 2fr);
+    grid-template-columns: 1fr ;
+    grid-template-areas:
+    "b3"
+    "b4"
+    "b5"
+}
