@@ -1,4 +1,4 @@
-<!DOCTYPE
+<!DOCTYPE>
 <head> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./style.css">
@@ -15,14 +15,16 @@
                             <span id="myCounter" >0</span>
                         </h1>
                 <h1 class="whiteText">Shopping Cart</h1>
-                <input class="btn-primary" type="button" value="Add Item" onclick="addToCart()"/>
+                <input class="btn-primary" type="button" value="Clear Cart" onClick="window.location.reload()">
             </div>
             <div id="products" class="col-lg-6">
                 <h1 class="whiteText">Products</h1>
-                <h4><input class="btn-primary" onclick="addToCart(), increment()" type="button" value="$150 Add to cart"/> Computer Case </h4>
-                <h4><input  class="btn-primary" onclick="Added(), increment()" type="button" value="$300 Add to cart"/> MotherBoard</h4>
-                <h4><input class="btn-primary" onclick="Added(), increment()" type="button" value="$1000 Add to cart"/> CPU</h4>
-                <h4><input class="btn-primary" onclick="Added(), increment()" type="button" value="$800 Add to cart"/> GPU</h4>
+                <h4><input class="btn-primary" onclick="addToCart(' Computer Case &nbsp'), increment()" type="button" value="$150 Add to cart"/> Computer Case </h4>
+                <h4><input  class="btn-primary" onclick="addToCart('MotherBoard &nbsp'), increment()" type="button" value="$300 Add to cart"/> MotherBoard</h4>
+                <h4><input class="btn-primary" onclick="addToCart('CPU &nbsp'), increment()" type="button" value="$1000 Add to cart"/> CPU</h4>
+                <h4><input class="btn-primary" onclick="addToCart('GPU &nbsp'), increment()" type="button" value="$800 Add to cart"/> GPU</h4>
+
+                <h4 id="test" > 12345</h4>
             </div>
         </div>
     </div>

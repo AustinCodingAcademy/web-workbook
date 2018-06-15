@@ -15,13 +15,24 @@ function increment(num) {
 
 }
 
-function addToCart() {
-  var cartDiv = document.createElement("h4");
-  var cartText = document.createTextNode("Item"); 
-
+function addToCart(label) {
+  var cartDiv = document.createElement("row");
+  var cartText = document.createTextNode(label);
+ 
   cartDiv.appendChild(cartText);
 
   var cartList = document.getElementById("shoppingcart");
   cartList.appendChild(cartDiv);
   console.log("End of shopping cart");
 }
+
+function theory() {
+  document.getElementById("test").innerHTML = "Goodbye World";
+}
+
+function tester() {
+  var result =  document.getElementById("products").innerHTML; 
+  console.log(result);
+}
+
+
