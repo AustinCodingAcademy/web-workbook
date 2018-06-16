@@ -1,72 +1,113 @@
 'use strict';
 
 $(document).ready(function() {
-  let $clickedBlock = null;
-  let $clickedBlockSize = null;
 
+  let $defaultStackOne = $('[data-stack]:eq(0)').children(); //Making a copy of the first stack for the reset
 
-  $('[data-stack]:eq(0)').click(function() {
-  let $stackOne = $(this).children().last().data('block');
+  let $detachedBlock = null; //Block that was clicked
+  let $detachedBlockSize = null; //Size of the block clicked
 
-  let $clickedBlockSize = $(this).children().last().data('block');
-    if ($(this).children().last().data('block') === undefined) {
-      $clickedBlockSize = null;
-    }
+  //Array for each of the stacks
+  let $stackOne = [100, 75, 50, 25];
+  let $stackTwo = [];
+  let $stackThree = [];
 
-    if ($clickedBlock) {
-      $(this).append($clickedBlock);
-      $clickedBlock = null;
-      $clickedBlockSize = null;
+  $('[data-stack]').click(function() {
 
-    } else {
-      $clickedBlock = $(this).children().last().detach();
-    }
-    console.log('$stackOne ' + $stackOne)
+    //Grabbing the stack number that was clicked to append or detach a block
+    let $stackNumber = $(this).data('stack');
 
-    $('[data-stack]:eq(1)').click(function() {
-    let $stackTwo = $(this).children().last().data('block');
+    //Finding out where the detached block came from by searching the arrays for the detached block size
+    if ($detachedBlock) {
+      let $detachedBlockFrom = null //Variable for storing which stack a block came from
+      let inStack1 = $stackOne.find(function(number) {
+        return number === $detachedBlockSize
+      })
+      let inStack2 = $stackTwo.find(function(number) {
+        return number === $detachedBlockSize
+      })
 
-    let $clickedBlockSize = $(this).children().last().data('block');
-      if ($(this).children().last().data('block') === undefined) {
-        $clickedBlockSize = null;
-      }
+      let inStack3 = $stackThree.find(function(number) {
+        return number === $detachedBlockSize
+      })
 
-      if ($clickedBlock) {
-        $(this).append($clickedBlock);
-        $clickedBlock = null;
-        $clickedBlockSize = null;
-
+      //If the block's value is found in an array, return the array
+      if (inStack1) {
+        $detachedBlockFrom = $stackOne
+      } else if (inStack2) {
+        $detachedBlockFrom = $stackTwo
       } else {
-        $clickedBlock = $(this).children().last().detach();
+        $detachedBlockFrom = $stackThree
       }
 
-      console.log('$stackTwo ' + $stackTwo)      
-
-      $('[data-stack]:eq(2)').click(function() {
-      let $stackThree = $(this).children().last().data('block');
-
-      let $clickedBlockSize = $(this).children().last().data('block');
-        if ($(this).children().last().data('block') === undefined) {
-          $clickedBlockSize = null;
+      // Conditional staments for each stack
+      // We check if the current detached block size is larger than the prevous block size in the array
+      // If the detached block size is larger than the previous block size in the array, we display an error
+      if ($stackNumber === 1) {
+        let previousBlockSize = $stackOne[$stackOne.length - 1]
+        if ($detachedBlockSize > previousBlockSize) {
+          return alert("Block is too big! Choose another stack.")
+        } else {
+          if ($detachedBlockSize) {
+            let index = $detachedBlockFrom.indexOf($detachedBlockSize)
+            $detachedBlockFrom.splice(index, 1); //removes block size from previous array
+            $stackOne.push($detachedBlockSize) //Adds the block size to the new array
+          }
+        }
+      } else if ($stackNumber === 2) {
+        let previousBlockSize = $stackTwo[$stackTwo.length - 1]
+        if ($detachedBlockSize > previousBlockSize) {
+          return alert("Block is too big! Choose another stack.")
+        } else {
+          if ($detachedBlockSize) {
+            let index = $detachedBlockFrom.indexOf($detachedBlockSize)
+            $detachedBlockFrom.splice(index, 1);
+            $stackTwo.push($detachedBlockSize)
+          }
         }
 
-        if ($clickedBlock) {
-          $(this).append($clickedBlock);
-          $clickedBlock = null;
-          $clickedBlockSize = null;
+      } else if ($stackNumber === 3) {
 
+        let previousBlockSize = $stackThree[$stackThree.length - 1]
+        if ($detachedBlockSize > previousBlockSize) {
+          return alert("Block is too big! Choose another stack.")
+        } else {
+          if ($detachedBlockSize) {
+            let index = $detachedBlockFrom.indexOf($detachedBlockSize)
+            $detachedBlockFrom.splice(index, 1);
+            $stackThree.push($detachedBlockSize)
+          }
         }
-        else {
-          $clickedBlock = $(this).children().last().detach();
-        }
+      }
+      //Append the block to the stack and clear the block size variable
+      $(this).append($detachedBlock);
+      $detachedBlock = null;
+    } else {
+      //Detach the block from the stack and capture the block size
+      $detachedBlockSize = $(this).children().last().data('block');
+      $detachedBlock = $(this).children().last().detach();
+    }
+    //Testing the values in my array
+    console.log('$stackOne ', $stackOne)
+    console.log('$stackTwo ', $stackTwo)
+    console.log('$stackThree ', $stackThree)
 
-        console.log('$stackThree ' + $stackThree)
 
-      });
-    });
+    //Check to see if stack two or three have all the blocks to find a winner
+    if ($stackTwo.length === 4 || $stackThree.length === 4) {
+      $('#announce-game-won').html('Winner!');
+    }
+  });
+
+  //Reset the game
+  $('#reset').click(function() {
+    $('#announce-game-won').html('');
+    $('div[data-stack]').children().remove();
+    $('[data-stack]:eq(0)').append($defaultStackOne);
+    let $detachedBlock = null;
+    let $detachedBlockSize = null;
+    let $stackOne = [100, 75, 50, 25];
+    let $stackTwo = [];
+    let $stackThree = [];
+  });
 });
-});
-/*  $blockSize < $('[data-block]').children().first().data('block') */
-/* $blockSize < $('[data-block]').children().last().data('block')*/
-/* $blockSize = $(this).children().last().data('block'); */
-/* $stackCount = $(this).children().length; */
