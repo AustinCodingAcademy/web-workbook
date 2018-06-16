@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 document.addEventListener('DOMContentLoaded', () => {
   // Your code here
   let paragraphs = document.querySelectorAll(".subPara");
