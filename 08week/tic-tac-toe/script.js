@@ -41,6 +41,7 @@ $(document).ready(function() {
     console.log("Data cell 7 is " + c8);
     var c9 = $("[data-cell*='8']").text();
     console.log("Data cell 8 is " + c9);
+    var winningShape;
 
     if ((c1 === c2) && (c2 === c3) && (c1 === 'O' || c1 === 'X')){
       alert(shape + " wins!");
