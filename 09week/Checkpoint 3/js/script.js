@@ -40,8 +40,8 @@ $(".button").click(function (){
   if ($(this).data( "cost" ) < data.totalCurrent ) {
     data.totalCurrent -=  parseFloat($(this).data( "cost" ).toPrecision(2));
     data.totalRPS += parseFloat($(this).data( "val" ));
-    $( this ).children("span").html( parseInt($( this ).children("span").html()*1.15));
-    $( this ).data( "cost", parseInt($(this).data( "cost" ) * 1.15) );
+    $( this ).children("span").html( parseInt($( this ).children("span").html()*1.10));
+    $( this ).data( "cost", parseInt($(this).data( "cost" ) * 1.10) );
   }
   updateReport();
 
