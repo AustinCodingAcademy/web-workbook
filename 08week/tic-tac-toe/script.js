@@ -13,9 +13,6 @@ $(document).ready(function() {
 
     // Checks if my data-cell is empty and places text
     var currentText = $(this).text();
-    console.log("the current value is " + currentText);
-
-
 
     if (currentText.length > 0) {
       console.log("something is here");
@@ -33,42 +30,42 @@ $(document).ready(function() {
 
     }
 
-  });
+    //Function checks for win
 
-  //Function checks for win
+    var v1 = $('[data-cell="0"]').text()
+    var v2 = $('[data-cell="1"]').text()
+    var v3 = $('[data-cell="2"]').text()
+    var v4 = $('[data-cell="3"]').text()
+    var v5 = $('[data-cell="4"]').text()
+    var v6 = $('[data-cell="5"]').text()
+    var v7 = $('[data-cell="6"]').text()
+    var v8 = $('[data-cell="7"]').text()
+    var v9 = $('[data-cell="8"]').text()
 
-  var v1 = '[0]'
-  var v2 = '[1]'
-  var v3 = '[2]'
-  var v4 = '[3]'
-  var v5 = '[4]'
-  var v6 = '[5]'
-  var v7 = '[6]'
-  var v8 = '[7]'
-  var v9 = '[8]'
-  var checkForWin = (function() {
+    var checkForWin = (function() {
 
-    if (v1 == v2 && v2 == v3) {
-      alert('Winner!');
-    } else if (v4 == v5 && v5 == v6) {
-      alert('Winner!');
-    } else if (v7 == v8 && v8 == v9) {
-      alert('Winner!');
-    } else if (v1 == v4 && v4 == v7) {
-      alert('Winner!');
-    } else if (v2 == v5 && v5 == v8) {
-      alert('Winner!');
-    } else if (v3 == v6 && v6 == v9) {
-      alert('Winner!');
-    } else if (v1 == v5 && v5 == v9) {
-      alert('Winner!');
-    } else if (v3 == v5 && v5 == v7) {
-      alert('Winner!');
-    } else {
-      alert("It's a tie!")
-    }
+      if (((v1 == 'o') || (v1 == 'x')) && (v1 == v2) && (v2 == v3)) {
+        setTimeout(function(){ alert("Winner!"); }, 500);
+      } else if (((v4 == 'o') || (v4 == 'x')) && (v4 == v5) && (v5 == v6)) {
+         setTimeout(function(){ alert("Winner!"); }, 500);
+       } else if (((v7 == 'o') || (v7 == 'x')) && (v7 == v8) && (v8 == v9)) {
+         setTimeout(function(){ alert("Winner!"); }, 500);
+       } else if (((v1 == 'o') || (v1 == 'x')) && (v1 == v4) && (v4 == v7)) {
+         setTimeout(function(){ alert("Winner!"); }, 500);
+       } else if (((v2 == 'o') || (v2 == 'x')) && (v2 == v5) && (v5 == v8)) {
+         setTimeout(function(){ alert("Winner!"); }, 500);
+       } else if (((v3 == 'o') || (v3 == 'x')) && (v3 == v6) && (v6 == v9)) {
+         setTimeout(function(){ alert("Winner!"); }, 500);
+       } else if (((v1 == 'o') || (v1 == 'x')) && (v1 == v5) && (v5 == v9)) {
+         setTimeout(function(){ alert("Winner!"); }, 500);
+       } else if (((v3 == 'o') || (v3 == 'x')) && (v3 == v5) && (v5 == v7)) {
+         setTimeout(function(){ alert("Winner!"); }, 500);
+       } else {
+      }
 
+    });
     checkForWin();
+
   });
 
   //Function clears the board
