@@ -22,7 +22,6 @@ $(document).ready(function () {
         $(this).append($block);
         $block = null;
         $blockSize = null;       
-      //if block more than 0 then checks 
     } else if ($(this).children().length > 0) {
       $blockSize = $(this).children().last().data('block');
       $block = $(this).children().last().detach();
