@@ -1,0 +1,55 @@
+/*mobile format*/
+.flex-container {
+  display: flex;
+  height: auto;
+  width: auto;
+  background-color: DodgerBlue;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 50px;
+  font-size: 25px;
+  text-align: center;
+}
+
+/*fortune cookie image display properties*/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+
+
+/*Desktop format*/
+@media all and (min-width: 800px) {
+  .flex-container {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .header {
+    width: 100%
+  }
+
+  .main      {
+    order: 2;
+    flex: 1;
+  }
+
+  .aside-3   {
+    order: 1;
+    flex: 1;
+  }
+  
+  .aside-4   {
+    order: 3;
+    flex; 1;
+  }
+}
