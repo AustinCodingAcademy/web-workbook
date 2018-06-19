@@ -5,16 +5,10 @@ $(document).ready(function()  {
   //grabbing the picture of the llama
   let llamaContainer = $('div.llama-container');
   let llama = llamaContainer.children();
-  var windowHeight = $(window).height();
-  var windowWidth = $(window).width();
-  var containerHeight = $('#container').height();
-  var containerWidth = $('#container').width();
-  // console.log(containerWidth);
 
   //new
   var animationName = 'animated bounce';
-  var animationName2 = 'animated rotateIn';
-  var animationEnd = 'webkitAnimationEnd, mozAnimationEnd, oAnimationEnd, animationend'
+  var animationEnd = 'webkitAnimationEnd, mozAnimationEnd, oAnimationEnd, animationend';
 
   // creating a function to make the llama bounce on click
   $('.llama-container').on('click', function bouncy(e) {
@@ -22,53 +16,42 @@ $(document).ready(function()  {
       $(this).removeClass(animationName);
     });
     //end of animation function
-    });
-    //end of function bouncy
+  });
+  //end of function bouncy
 
-  //creating a function to make the llama flip on double click
-  // $('.llama-container').on('dblclick', function dblbouncy(e) {
-  //   $('.llama').addClass(animationName2).one(animationEnd, function() {
-  //     $(this).removeClass(animationName2);
-  //   });
-  //   //end animation function
-  // });
-  //end of function dblbouncy
+  var countContainer = $('#count-container');
+  //grabbing the number 0
+  var num = $('p.update');
+  var updatedNum = num.filter('p.update:last');
+  var count = 0;
+  var barHeight = 0;
 
-    //creating div for counter
-    var countContainer = $('#count-container');
-    //grabbing the number 0
-    var num = $('p.update');
-    var updatedNum = num.filter('p.update:last');
-    //creating a count for how many times the llama is clicked
-    var count = 0;
-    var plusFive = 5;
-    $('.llama').click(function counter(e) {
-      count++;
-      updatedNum.text(count);
+  //creating a function to increase the bar height by 10px each click
+  function move() {
+    var bar = $('#bar').height(barHeight);
+  }
+
+  //creating a count for how many times the llama is clicked
+  //calling function move inside of function counter
+  $('.llama').click(function counter() {
+    count++;
+    barHeight+=10;
+    updatedNum.text(count);
+    move();
   });
   //end of function counter
 
   //creating a function for the progress bar
-  function move() {
-    var bar = $('#bar');
-    bar.height = 1;
-    var int = setInterval(progressBar, 10);
-    function progressBar() {
-      if (bar.height >= 100) {
-        clearInterval(int);
-      } else {
-        bar.height++;
-        bar.style.height = height + '%';
-      }
-    }
-
-  }
-  console.log(bar);
-  //function for adding 5 points to the count on a double click
-  // $('.llama').dblclick(function counter2(e) {
-  //   count+5;
-  //   updatedNum.text(count+plusFive);
-  // })
+ //  function winner() {
+ //   var int = setInterval(progressBar, 10);
+ //   function progressBar() {
+ //     if (barHeight >= 100) {
+ //       clearInterval(int);
+ //     } else {
+ //       updatedNum.text(barHeight);
+ //     }
+ //   }
+ // }
 
   //getting the audio
   var audio = document.getElementById("audio");
@@ -77,10 +60,7 @@ $(document).ready(function()  {
   $('.llama').click(function playAudio() {
     audio.play();
   });
-  // function enableAutoPlay () {
-  //   audio.autoplay;
-  //   audio.autoplay = true;
-  //   audio.load();
-  // }
+  //end of playAudio function
+
 });
 //end of document ready function
