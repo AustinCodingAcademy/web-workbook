@@ -3,7 +3,7 @@
 $(document).ready(function() {
       var color = "X";
       var last = "O";
-      $('.row div').click(function() {
+    $('.row div').click(function() {
           var currentValue = $(this).text();
           console.log("currentValue is equal to " + currentValue)
           console.log("currentValue length is " + currentValue.length)
@@ -17,7 +17,8 @@ $(document).ready(function() {
               last = "O";
               console.log("last move...", last);
             }
-            //**check after every move**//
+          }
+            //**variables**//
             var Box0 = $("[data-cell*='0']").text();
             console.log("Data-cell 0 is " + Box0);
             var Box1 = $("[data-cell*='1']").text();
@@ -38,29 +39,28 @@ $(document).ready(function() {
             console.log("Data-cell 8 is " + Box8);
 
             if ((Box0 === Box1) && (Box1 === Box2) && (Box0 === "O" || Box0 === "X")) {
-              alert(color + "win!");
+              alert(color + " wins!");
               $("[data-cell]").text("");
-              //** Lisa totally helped**//
             } else if ((Box3 === Box4) && (Box4 === Box5) && (Box3 === "O" || Box3 === "X")) {
-              alert(color + "win!");
+              alert(color + " wins!");
               $("[data-cell]").text("");
             } else if ((Box6 === Box7) && (Box7 === Box8) && (Box6 === "O" || Box6 === "X")) {
-              alert(color + "win!");
+              alert(color + " wins!");
               $("[data-cell]").text("");
             } else if ((Box0 === Box3) && (Box3 === Box6) && (Box0 === "O" || Box0 === "X")) {
-              alert(color + "win!");
+              alert(color + " wins!");
               $("[data-cell]").text("");
             } else if ((Box1 === Box4) && (Box4 === Box7) && (Box1 === "O" || Box1 === "X")) {
-              alert(color + "win!");
+              alert(color + " wins!");
               $("[data-cell]").text("");
             } else if ((Box2 === Box5) && (Box5 === Box8) && (Box2 === "O" || Box2 === "X")) {
-              alert(color + "win!");
+              alert(color + " wins!");
               $("[data-cell]").text("");
             } else if ((Box0 === Box4) && (Box4 === Box8) && (Box0 === "O" || Box0 === "X")) {
-              alert(color + "win!");
+              alert(color + " wins!");
               $("[data-cell]").text("");
             } else if ((Box2 === Box4) && (Box4 === Box6) && (Box2 === "O" || Box2 === "X")) {
-              alert(color + "win!");
+              alert(color + " wins!");
               $("[data-cell]").text("");
               consloe.log("win");
               //**variables and check values**//
