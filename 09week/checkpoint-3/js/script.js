@@ -1,6 +1,17 @@
 'use strict';
 
 $(document).ready(function()  {
+  //making a function to hide the video on the load of the page
+  function hideVideo() {
+    $('.pukeVideo').hide();
+  }
+  hideVideo();
+
+//this is the function I am trying to play the video
+  // var vid = $('.pukeVideo');
+  // $('.container').click(function playVid() {
+  //   vid.play();
+  // });
 
   //grabbing the picture of the llama
   let llamaContainer = $('div.llama-container');
@@ -26,9 +37,22 @@ $(document).ready(function()  {
   var count = 0;
   var barHeight = 0;
 
+
   //creating a function to increase the bar height by 10px each click
   function move() {
     var bar = $('#bar').height(barHeight);
+    var maxBarHeight = document.getElementById('bar').style.maxHeight = 430;
+    var progress = document.getElementById('progress').childNodes[1];
+    progress.style.maxHeight = 430;
+    console.log(barHeight);
+    var id = setInterval(progressBar, 10);
+    function progressBar() {
+      if (barHeight >= 430) {
+        $('.pukeVideo').show(playVid);
+        $('.background').hide();
+        $('.llama-container').hide();
+      }
+    }
   }
 
   //creating a count for how many times the llama is clicked
@@ -36,22 +60,13 @@ $(document).ready(function()  {
   $('.llama').click(function counter() {
     count++;
     barHeight+=10;
+    //change back to 10
     updatedNum.text(count);
     move();
+    // winner();
   });
+  // console.log(barHeight);
   //end of function counter
-
-  //creating a function for the progress bar
- //  function winner() {
- //   var int = setInterval(progressBar, 10);
- //   function progressBar() {
- //     if (barHeight >= 100) {
- //       clearInterval(int);
- //     } else {
- //       updatedNum.text(barHeight);
- //     }
- //   }
- // }
 
   //getting the audio
   var audio = document.getElementById("audio");
@@ -61,6 +76,11 @@ $(document).ready(function()  {
     audio.play();
   });
   //end of playAudio function
+
+  // var vid = document.getElementById("vid");
+  // $('.container').click(function playVid() {
+  //   vid.play();
+  // });
 
 });
 //end of document ready function
