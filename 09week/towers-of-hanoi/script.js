@@ -13,6 +13,9 @@ $(document).ready(function() {
   let $stackThree = [];
 
   $('[data-stack]').click(function() {
+    if ($('#announce-game-won').html() === 'Winner!') {
+      return alert("Game Over. Reset to Play Again")
+    }
 
     //Grabbing the stack number that was clicked to append or detach a block
     let $stackNumber = $(this).data('stack');
@@ -96,18 +99,21 @@ $(document).ready(function() {
     //Check to see if stack two or three have all the blocks to find a winner
     if ($stackTwo.length === 4 || $stackThree.length === 4) {
       $('#announce-game-won').html('Winner!');
+      $stackOne = [100, 75, 50, 25];
+      $stackTwo = [];
+      $stackThree = [];
     }
   });
 
   //Reset the game
   $('#reset').click(function() {
     $('#announce-game-won').html('');
-    $('div[data-stack]').children().remove();
-    $('[data-stack]:eq(0)').append($defaultStackOne);
     let $detachedBlock = null;
     let $detachedBlockSize = null;
     let $stackOne = [100, 75, 50, 25];
     let $stackTwo = [];
     let $stackThree = [];
+    $('div[data-stack]').children().remove();
+    $('[data-stack]:eq(0)').append($defaultStackOne);
   });
 });
