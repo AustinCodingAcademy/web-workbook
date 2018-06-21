@@ -48,7 +48,7 @@ $(document).ready(function()  {
     var id = setInterval(progressBar, 10);
     function progressBar() {
       if (barHeight >= 430) {
-        $('.pukeVideo').show(playVid);
+        $('.pukeVideo').show();
         $('.background').hide();
         $('.llama-container').hide();
       }
