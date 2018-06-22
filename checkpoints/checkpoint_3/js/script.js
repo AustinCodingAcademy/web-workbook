@@ -23,7 +23,7 @@
          howManyDice++; // if so, we add one to the count
        }
      }
-
+     //if statements to check if goals have been met
      if ((dieVal === 1) &&
        (dieVal === 2) &&
        (dieVal === 3) &&
