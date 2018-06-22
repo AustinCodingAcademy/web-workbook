@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    Dice Game
+  </title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <p id="heading">
+    LET'S PLAY YAHTZEE!
+  </p>
+  <!-- Empty dice div, dice will be placed inside using javascript -->
+  <div class="dice">
+  </div>
+  <!-- Button to roll dice -->
+  <input id="roll" type="button" value="ROLL" onclick="roll()"></input>
+  <div class="score">
+    <!-- Displays results of dice roll, populated using function report  -->
+    <div id="results">
+    </div>
+    <!-- Displays goals for game, completion needed to win -->
+    <div class="goals">
+      <p>ROLLS TO WIN</p>
+      <p id="goal1">Pair of 1s</p>
+      <p id="goal2"><br>Pair of 2s</p>
+      <p id="goal3"><br>Pair of 3s</p>
+      <p id="goal4"><br>Pair of 4s</p>
+      <p id="goal5"><br>Pair of 5s</p>
+      <p id="goal6"><br>Pair of 6s</p>
+      <p id="goal7"><br>Three of a kind</p>
+      <p id="goal8"><br>Four of a kind</p>
+      <p id="goal9"><br>Full house</p>
+      <p id="goal10"><br>Small Straight</p>
+      <p id="goal11"><br>Large straight</p>
+      <p id="goal12"><br>Yahtzee</p>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
