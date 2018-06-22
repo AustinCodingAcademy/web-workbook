@@ -6,19 +6,12 @@ $(document).ready(function() {
   let $block = $('div[data-block]');
   $block = null;
   let blockData = $('[data-block]:lt(4)');
-  // console.log(blockData);
-  // var yellow = $('[data-block="100"]');
-  // var red = $('[data-block="75"]');
-  // var green = $('[data-block="50"]');
-  // var blue = $('[data-block="25"]');
-  // console.log(blockData);
-  // console.log($block.childNodes);
+  let allBlocks = blockData.children;
+  console.log(allBlocks.length);
 
-  $('[data-stack]').click(function(e) {
-    let clickedOn = $('[data-block]').children().last().data('block');
-    console.log(clickedOn);
-    // let nextBlock = $('[data-stack]').;
-    // console.log(nextBlock);
+  $('[data-stack]').click(function moveBlocks() {
+    let moveableBlock = $('[data-block]').children().last().data(blockData);
+    // console.log(moveableBlock)
     if ($block) {
       $(this).append($block);
       $block = null;
@@ -27,8 +20,9 @@ $(document).ready(function() {
     }
   })
 
+
   // function moveInOrder() {
-  //   if (blockData.data('block').lastChild > blockData.data('block').previousSibling) {
+  //   if () {
   //
   //   }
   // }
