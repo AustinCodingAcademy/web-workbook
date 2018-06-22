@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Towers of Hanoi</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to Towers of Hanoi</h1>
+  </header>
+
+  <main>
+    <div id = "description">
+      <p>Your goal is to relocate the magical blocks from Tower One to Tower Three. They must be placed in the same order they appear currently, with the largest on bottom and smallest on top. There are three rules:</p>
+      <ol>
+        <li>
+          You may only move the block that is at the top of a stack.
+        </li>
+        <li>
+          You may only move one block at a time.
+        </li>
+        <li>
+          A bigger block may not be placed on top of a smaller block.
+        </li>
+      </ol>
+    </div>
+
+    <div id = "data-stacks">
+      <div data-stack="1" class="dropzone">
+        <div data-block="25" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
+        <div data-block="50" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
+        <div data-block="75" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
+        <div data-block="100" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
+      </div>
+      <div data-stack="2" class="dropzone">
+      </div>
+      <div data-stack="3" class="dropzone" id= "winner">
+      </div>
+    </div>
+  </main>
+
+  <div id="announce-game-won"></div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
