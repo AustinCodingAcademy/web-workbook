@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inquiry Form</title>
+    <link href = "css/style.css" type = "text/css" rel = "stylesheet"/>
+  </head>
+
+  <body>
+    <header>Coding Bootcamp Inquiry Form</header>
+
+    <form action = "" name = "inquiry" id = "myform">
+      <div class = "first">
+        <label for = "firstname">First Name</label>
+        <input type = "text" name = "firstname" id = "firstname" placeholder = "John" />
+      </div>
+
+      <div class = "last">
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Doe" />
+      </div>
+
+      <div class = "email">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="john@doe.com" />
+      </div>
+
+      <div class = "password">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" />
+      </div>
+
+      <div class = "url">
+        <label for="website">Your Website</label>
+        <input type="url" name="url" id="url" placeholder="http://www.johndoe.com" />
+      </div>
+
+      <div class = "bootcamp">
+        <label for="bootcamp">Which bootcamp(s) are you interested in learning more about?</label>
+        <input type="checkbox" name="checkbox" id="aca" />
+        <span for="aca">ACA</span>
+        <input type="checkbox" name="checkbox" id="ga" />
+        <span for="ga">General Assembly</span>
+        <input type="checkbox" name="checkbox" id="hr" />
+        <span for="hr">Hack Reactor</span>
+      </div>
+
+      <div class = "level">
+        <label for ="level">Which best describes your current skillset?</label>
+        <input type="radio" name="radio" id="beginner" />
+        <span for="beginner">Beginner</span>
+        <input type="radio" name="radio" id="intermediate" />
+        <span for="intermediate">Intermediate</span>
+        <input type="radio" name="radio" id="advanced" />
+        <span for="advanced">Advanced</span>
+      </div>
+
+      <div class = "interest">
+        <label for = "interest">Please describe your level of interest in attending an upcoming info session.</label>
+        <input type = "range" min="-10" max="10" id = "interest" />
+      </div>
+
+      <div class = "open-ended">
+        <label for = "open-ended">Do you have any questions or additional information to share?</label>
+        <textarea id = "open-ended" spellcheck="true"></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+      <button type="reset" id="reset">Reset</button>
+
+    </form>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js" type = "text/javascript"></script>
+    <script src = "js/script.js" type = "text/javascript"></script>
+  </body>
+</html>
