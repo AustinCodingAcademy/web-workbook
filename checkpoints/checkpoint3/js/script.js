@@ -6,6 +6,7 @@ $(document).ready(function() {
   let currentSize = null;
   let previousSize = null;
   let tower = null;
+  let towerNumber = null;
 
 
 
@@ -40,8 +41,10 @@ $(document).ready(function() {
       // highlight potential drop target when the draggable element enters it
       if ( event.target.className == "dropzone" ) {
           event.target.style.background = "purple";
-          tower = parseInt(event.target.getAttribute('data-stack'));
-          console.log("tower = " +tower);
+          tower = event.target;
+          console.log (tower.childNodes.length);
+          towerNumber = parseInt(tower.getAttribute('data-stack'));
+          console.log("tower = " +towerNumber);
       }
 
   }, false);
@@ -62,10 +65,9 @@ $(document).ready(function() {
       // prevent default action (open as link for some elements)
       event.preventDefault();
       // move dragged elem to the selected drop target
-      while (currentSize < previousSize || previousSize === null) {
+      if (currentSize < previousSize || previousSize === null || tower.childNodes.length === 1) {
         event.target.style.background = "";
         dragged.parentNode.removeChild( dragged );
-        event.target.appendChild( dragged );
         dropped = event.target.appendChild( dragged );
         previousSize = parseInt(dropped.getAttribute('data-block'));
         console.log(previousSize + " has been dropped!");
