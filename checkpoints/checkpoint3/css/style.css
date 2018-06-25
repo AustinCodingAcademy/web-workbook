@@ -126,3 +126,59 @@ header p {
   background-image: url(https://media.giphy.com/media/l0HlSDiA6WUytl9oA/giphy.gif);
   margin: none;
 }
+
+@media (max-width: 900px){
+  header h1 {
+    padding: 25px 40px;
+    border: 1px solid black;
+    font-size: 3em;
+    letter-spacing: .1em;
+    margin: 20px;
+  }
+
+  header p {
+    text-align: justify;
+    margin: 20px;
+    font-family: "Work Sans", sans-serif;
+    font-size: .8em;
+    letter-spacing: .08em;
+  }
+
+  #gameboard {
+    flex-direction: row;
+    margin: 0 20px;
+  }
+
+  .stacks {
+    flex-direction: column;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: lowercase;
+    letter-spacing: .08em;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  [data-stack] {
+    height: 300px;
+    width: 101px;
+    background-color: lightgrey;
+
+  }
+
+  #trackers {
+    display: none;
+  }
+
+  #announcewin {
+    width: 480px; /* Full width */
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    background-image: url(https://media.giphy.com/media/l0HlSDiA6WUytl9oA/giphy.gif);
+    margin: none;
+  }
+}
