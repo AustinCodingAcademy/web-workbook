@@ -2,52 +2,59 @@
 
 $(document).ready(function() {
 
+  // $('[data-block]').draggable()
+  const blocks = $('[data-block]');
+  const stacks = $('[data-stack]');
 
-});
+  var movable = $('[data-block]:last-child');
+  movable.addClass('moveable');
 
-// $('[data-block]').draggable()
-const blocks = document.querySelectorAll('[data-block]');
-var block = document.querySelector('[data-block]');
-const stacks = document.querySelectorAll('[data-stack]');
+  blocks.draggable();
 
-for (const block of blocks) {
-  block.addEventListener('dragstart', dragStart);
-}
+  stacks.droppable({
+    accept: '.movable',
+    drop: function() {
+      $(this).append(movable);
+    }
+  })
+})
 
-for (const stack of stacks) {
-  stack.addEventListener('drop', dragDrop);
-  stack.addEventListener('dragover', dragOver);
-  stack.addEventListener('dragenter', dragEnter);
-}
+//   for (const block of blocks) {
+//     block.addEventListener('dragstart', dragStart);
+//   }
+//
+//   for (const stack of stacks) {
+//     stack.addEventListener('drop', dragDrop);
+//     stack.addEventListener('dragover', dragOver);
+//     stack.addEventListener('dragenter', dragEnter);
+//   }
+//
+//   function dragStart() {
+//     setTimeout(() => (this.className = 'invisible'), 0);
+//     block = this;
+//     console.log('start', this);
+//   }
+//
+//   function dragDrop() {
+//     this.append(block);
+//     // block.className = "block";
+//     console.log('drop', this);
+//   }
+//   // function dragEnd() {
+//   //   this.className = 'block';
+//   //   console.log('end', this);
+//   // }
+//   function dragOver(e) {
+//     e.preventDefault();
+//     // console.log('over', this);
+//   }
+//   function dragEnter(e) {
+//     e.preventDefault();
+//   }
+//
+// });
 
-var draggable = document.querySelector(['block']).draggable('true');
 
-function dragStart(e) {
-  if (draggable) {
-    setTimeout(() => (this.className = 'invisible'), 0);
-    block = this;
-  } else {e.preventDefault();
-}
-
-  console.log('start', this);
-}
-
-function dragDrop() {
-  this.append(block);
-  // block.className = "block";
-  console.log('drop', this);
-}
-// function dragEnd() {
-//   this.className = 'block';
-//   console.log('end', this);
-// }
-function dragOver(e) {
-  e.preventDefault();
-  // console.log('over', this);
-}
-function dragEnter(e) {
-  e.preventDefault();
-}
 // function dragLeave() {
 //   console.log('leave', this);
 // }
