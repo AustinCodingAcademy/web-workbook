@@ -3,12 +3,38 @@
 $(document).ready(function() {
   var dragged;
   var dropped;
-  let currentSize = null;
-  let previousSize = null;
-  let tower = null;
-  let towerNumber = null;
+  var currentSize;
+  var previous;
+  var previousSize;
+  var stack;
+  var stackLength;
+  var towerNumber;
+  var moves = 0;
+  var time = 0;
 
+  $(".stacks").one("drag", function increment() {
+    // console.log("in the one click function");
 
+    setTimeout(function(){
+      time++;
+      var mins = Math.floor(time/10/60);
+      var secs = Math.floor(time/10);
+      var tenths = time % 10;
+
+      if (mins <10){
+        mins = "0" + mins;
+      }
+      if (secs < 10){
+        secs = "0" + secs;
+      }
+      $("#timer").text(mins + ":" + secs + ":" + "0" + tenths);
+      increment();
+    }, 100);
+  });
+
+  // function increment(){
+  //
+  // }
 
   /* events fired on the draggable target */
   document.addEventListener("drag", function( event ) {
@@ -18,8 +44,6 @@ $(document).ready(function() {
   document.addEventListener("dragstart", function( event ) {
       // store a ref. on the dragged elem
       dragged = event.target;
-      // currentTower = event.target.parentNode.getAttribute('data-stack');
-      // console.log(currentTower)
       currentSize = parseInt(dragged.getAttribute('data-block'));
       console.log("currentSize =" + currentSize);
       // make it half transparent
@@ -29,22 +53,26 @@ $(document).ready(function() {
   document.addEventListener("dragend", function( event ) {
       // reset the transparency
       event.target.style.opacity = "";
+      // console.log ("in dragend")
   }, false);
 
   /* events fired on the drop targets */
   document.addEventListener("dragover", function( event ) {
       // prevent default to allow drop
+      // console.log("in dragover")
       event.preventDefault();
   }, false);
 
   document.addEventListener("dragenter", function( event ) {
       // highlight potential drop target when the draggable element enters it
       if ( event.target.className == "dropzone" ) {
-          event.target.style.background = "purple";
-          tower = event.target;
-          console.log (tower.childNodes.length);
-          towerNumber = parseInt(tower.getAttribute('data-stack'));
-          console.log("tower = " +towerNumber);
+          event.target.style.background = "goldenrod";
+          stack = event.target;
+          previous = stack.children[0];
+          if (previous !== undefined) {
+            console.log("this is previous " + previous);
+            previousSize = parseInt(previous.getAttribute('data-block'));
+          }
       }
 
   }, false);
@@ -53,80 +81,38 @@ $(document).ready(function() {
       // reset background of potential drop target when the draggable element leaves it
       if ( event.target.className == "dropzone" ) {
           event.target.style.background = "";
+          // console.log("in dragleave");
       }
 
   }, false);
 
   document.addEventListener("drop", function( event ) {
-      // var $previousBlock = parseInt(document.getElementsByClass("dropzone").children().first().attr('data-block'));
-      // var $stack = parseInt(document.getElementsByClass("dropzone").children().length);
-      // console.log("in the drop function. $previousBlock: " + $previousBlock + ". stack " + $stack);
-
       // prevent default action (open as link for some elements)
       event.preventDefault();
       // move dragged elem to the selected drop target
-      if (currentSize < previousSize || previousSize === null || tower.childNodes.length === 1) {
+      if ((currentSize < previousSize || previousSize === undefined || stack.children.length === 0)) {
         event.target.style.background = "";
         dragged.parentNode.removeChild( dragged );
-        dropped = event.target.appendChild( dragged );
-        previousSize = parseInt(dropped.getAttribute('data-block'));
-        console.log(previousSize + " has been dropped!");
+        dropped = event.target.insertBefore(dragged, stack.children[0]);
+        towerNumber = parseInt(stack.getAttribute('data-stack'));
+        stackLength = parseInt(stack.children.length);
+        moves++
+        $("#moves").text(moves);
+        console.log("youve used this many moves: " +moves);
+        console.log(currentSize + " has been dropped in tower " + towerNumber);
+        console.log ("tower length =" + stackLength);
+        if (currentSize === 25 && towerNumber === 3 && stackLength === 4) {
+          console.log("it's a win!");
+          $(".stacks").hide();
+          $("header").hide();
+          $("#trackers").hide();
+          document.getElementById("gameboard").style.borderStyle = "none";
+          document.getElementById("gameboard").style.margin = "0";
+          $("#gameboard").prepend("<div id = 'announcewin'></div");
+        }
+      } else if ( event.target.className == "dropzone" ) {
+          event.target.style.background = "";
+          alert("You may NEVER place a larger block on a smaller block!!")
       }
-
-
-
-
-      // if (currentSize > previousSize && currentTower === previousTower && previousSize !==null){
-      //   alert("That's against the rules, ya cheater!");
-      // }
-      //   // if ( event.target.className == "dropzone" && event.target.className == "winner" && top is 25 && three beneath it) {
-      //   //   event.target.style.background = "";
-      //   //   dragged.parentNode.removeChild( dragged );
-      //   //   event.target.appendChild( dragged );
-      //   //   console.log("it's a win!")
-      //   //     $('#announce-game-won').add("<h1>YOU WON!</h1>").appendTo('#announce-game-won');
-      //   //   } else {
-      //   //     event.target.style.background = "";
-      //   //     dragged.parentNode.removeChild( dragged );
-      //   //     event.target.appendChild( dragged );
-      // else if ( event.target.className == "dropzone") {
-      //     event.target.style.background = "";
-      //     previousTower = parseInt(event.target.getAttribute('data-stack'));
-      //     dragged.parentNode.removeChild( dragged );
-      //     dropped = event.target.appendChild( dragged );
-      //     previousSize = parseInt(dropped.getAttribute('data-block'));
-      //     console.log ("else if just executed, previous size is now = " + previousSize + "and previous tower is " +previousTower);
-      // }
-
-      // }
-
   }, false);
 });
-
-//click code
-
-//  $('[data-stack]').click(function() {
-//  let $tower = parseInt($(this).attr('data-stack'));
-//  let $previousBlock = parseInt($(this).children().first().attr('data-block'));
-//  let $stack = parseInt($(this).children().length);
-//  console.log("in the click function. $previousBlock: " + $previousBlock);
-//  console.log("$tower: " + $tower + " stack: " + $stack);
-//
-//     if ($block && ($size > $previousBlock) && ($previousBlock !== null)) {
-//         alert("That's against the rules, ya cheater!");
-//       } else if ($block) {
-//         $(this).prepend($block);
-//         $size = parseInt($block.attr('data-block'));
-//         console.log("elseif statement ran. $size: " + $size + " $tower: " + $tower + " $previousBlock: " + $previousBlock);
-//         if ($size === 25 && $tower === 3 && $stack === 3) {
-//           console.log("it's a win!")
-//           $('#announce-game-won').add("<h1>YOU WON!</h1>").appendTo('#announce-game-won');
-//         } else {
-//           $block = null;
-//         }
-//       } else {
-//           $block = $(this).children().first().detach();
-//           $size = parseInt($block.attr('data-block'));
-//           console.log("else statement ran. $size: " + $size + " $tower: " + $tower + " $previousBlock: " + $previousBlock);
-//       }
-// })

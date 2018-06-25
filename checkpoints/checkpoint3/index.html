@@ -4,43 +4,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Towers of Hanoi</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Work+Sans:200" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Welcome to Towers of Hanoi</h1>
-  </header>
+    <header>
+      <h1>Welcome to Towers of Hanoi</h1>
+      <p>Your goal is to relocate the magical blocks from Tower One to Tower Three.
+         The blocks must be placed in Tower Three with the largest on bottom and smallest on top.
+         You may <em>never</em> place a larger block on a smaller block.
+      </p>
+    </header>
 
-  <main>
-    <div id = "description">
-      <p>Your goal is to relocate the magical blocks from Tower One to Tower Three. They must be placed in the same order they appear currently, with the largest on bottom and smallest on top. There are three rules:</p>
-      <ol>
-        <li>
-          You may only move the block that is at the top of a stack.
-        </li>
-        <li>
-          You may only move one block at a time.
-        </li>
-        <li>
-          A bigger block may not be placed on top of a smaller block.
-        </li>
-      </ol>
-    </div>
+    <main>
+      <div id = "gameboard">
 
-    <div id = "data-stacks">
-      <div data-stack="1" class="dropzone">
-        <div data-block="25" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
-        <div data-block="50" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
-        <div data-block="75" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
-        <div data-block="100" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
-      </div>
-      <div data-stack="2" class="dropzone">
-      </div>
-      <div data-stack="3" class="dropzone" id= "winner">
-      </div>
-    </div>
-  </main>
+        <div id = "stackOne" class = "stacks">
+          <div data-stack="1" class="dropzone">
+            <div data-block="25" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
+            <div data-block="50" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
+            <div data-block="75" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
+            <div data-block="100" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
+          </div>
+          <span>TOWER ONE</span>
+        </div>
 
-  <div id="announce-game-won"></div>
+        <div id = "stackTwo" class = "stacks">
+          <div data-stack="2" class="dropzone">
+          </div>
+          <span>TOWER TWO</span>
+        </div>
+
+        <div id = "stackThree" class = "stacks">
+          <div data-stack="3" class="dropzone" id= "winner">
+          </div>
+          <span>TOWER THREE</span>
+        </div>
+
+        <div id = "trackers">
+          <div id = "timer" class = "trackers">
+          00:00:00
+          </div>
+          <span>Timer</span>
+
+          <div id = "moves" class = "trackers">
+          0    
+          </div>
+          <span>Moves</span>
+        </div>
+
+      </div>
+    </main>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>

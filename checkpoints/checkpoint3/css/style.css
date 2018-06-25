@@ -1,35 +1,48 @@
 main {
   display: flex;
+  justify-content: center;
+  /* border: 2px solid red; */
 }
 
-header {
+header h1 {
   text-align: center;
+  font-family: 'Amatic SC', cursive;
+  padding: .5em .8em;
+  border: 1px solid black;
+  font-size: 4em;
+  letter-spacing: .25em;
+  margin: .5em;
 }
 
-#description p {
+header p {
   text-align: justify;
+  margin: 0 2em;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1em;
+  letter-spacing: .08em;
 }
 
-#description {
-  margin-left: 2em;
-}
-
-#data-stacks {
+#gameboard {
+  width: 100%;
+  height: 480px;
   display: flex;
   flex-direction: row;
-  margin: 0 2em;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 2em;
+
 }
 
 [data-stack] {
-  border: 2px solid goldenrod;
+  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  height: 200px;
+  height: 15em;
   width: 101px;
-  background-color: aliceblue;
-  margin: 25px;
+  background-color: lightgrey;
+
 }
 
 [data-block] {
@@ -38,30 +51,78 @@ header {
 
 [data-block="25"] {
   width: 25px;
-  background-color: blue;
+  background-color: #CCF1E2;
+  border: .5px solid black;
 }
 
 [data-block="50"] {
   width: 50px;
-  background-color: green;
+  background-color: #96D7C0;
+  border: .5px solid black;
+
 }
 
 [data-block="75"] {
   width: 75px;
-  background-color: red;
+  background-color: #73CAAB;
+  border: .5px solid black;
+
 }
 
 [data-block="100"] {
   width: 100px;
-  background-color: yellow;
+  background-color: #46A88A;
+  border: .5px solid black;
 }
 
-#announce-game-won {
-  font-size: 50px;
-  text-align: center;
+.stacks {
+  /* border: 2px solid red; */
+  /* text-align: center; */
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-transform: lowercase;
+  letter-spacing: .1em;
+  display: flex;
+  padding: 2em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
 }
 
-#announce-game-won h1{
+#trackers {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2em;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-transform: lowercase;
+  letter-spacing: .1em;
+  /* border: 2px solid red; */
+}
+
+.trackers {
+  height: 3em;
+  width: 3.5em;
+  margin-top: .5em;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: salmon;
+
+}
+
+#announcewin {
+  width: 960px; /* Full width */
+  height: 960px; /* Full height */
   background-image: url(https://media.giphy.com/media/l0HlSDiA6WUytl9oA/giphy.gif);
-  height: 240px;
+  margin: none;
 }
