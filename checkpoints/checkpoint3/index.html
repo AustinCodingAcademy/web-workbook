@@ -7,54 +7,67 @@
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Work+Sans:200" rel="stylesheet">
 </head>
 <body>
+  <div id = "container">
     <header>
       <h1>Welcome to Towers of Hanoi</h1>
       <p>Help relocate the magical blocks from Tower One to Tower Three!
-         It is imperative that the blocks be placed in Tower Three just as they appear in Tower One, from largest to smallest.
-         You may <em>never</em> place a larger block on a smaller block; as this will endanger their magical powers.
+         It is imperative that the blocks be placed in Tower Three just as they appear in Tower One, with the smallest on top and largest on bottom.
+         You may <em>never</em> place a larger block on a smaller block; this will endanger their magical powers.
          The timer will begin when you move your first block. How fast can you complete this mission?
       </p>
     </header>
 
-    <main>
+
       <div id = "gameboard">
 
-        <div id = "stackOne" class = "stacks">
-          <div data-stack="1" class="dropzone">
-            <div data-block="25" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
-            <div data-block="50" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
-            <div data-block="75" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
-            <div data-block="100" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
+         <div id = "stackOne" class = "stacks">
+            <div data-stack="1" class="dropzone">
+              <div data-block="25" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
+              <div data-block="50" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
+              <div data-block="75" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
+              <div data-block="100" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
+            </div>
+            <span>TOWER ONE</span>
           </div>
-          <span>TOWER ONE</span>
-        </div>
 
-        <div id = "stackTwo" class = "stacks">
-          <div data-stack="2" class="dropzone">
+          <div id = "stackTwo" class = "stacks">
+            <div data-stack="2" class="dropzone">
+            </div>
+            <span>TOWER TWO</span>
           </div>
-          <span>TOWER TWO</span>
-        </div>
 
-        <div id = "stackThree" class = "stacks">
-          <div data-stack="3" class="dropzone" id= "winner">
+          <div id = "stackThree" class = "stacks">
+            <div data-stack="3" class="dropzone" id= "winner">
+            </div>
+            <span>TOWER THREE</span>
           </div>
-          <span>TOWER THREE</span>
-        </div>
+      </div>
 
-        <div id = "trackers">
-          <div id = "timer" class = "trackers">
+      <div id = "trackers">
+        <div id = "tracker1" class = "trackers">
+          <div id = "timer" class = "trackerbox">
           00:00:00
           </div>
           <span>Timer</span>
+        </div>
 
-          <div id = "moves" class = "trackers">
+        <div id = "tracker2" class = "trackers">
+          <div id = "moves" class = "trackerbox">
           0
           </div>
           <span>Moves</span>
         </div>
 
+        <div id = "tracker3" class = "trackers">
+          <input class = "trackerbox" id = "reset" type = "button" value = "reset" onclick = "window.location.reload()" />
+          <span>Start New Game</span>
+        </div>
+
       </div>
-    </main>
+
+
+  </div>
+
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>

@@ -1,6 +1,7 @@
 'use strict';
 
 $(document).ready(function() {
+//defining variables
   var dragged;
   var dropped;
   var currentSize;
@@ -12,29 +13,27 @@ $(document).ready(function() {
   var moves = 0;
   var time = 0;
 
+// Begin function for timer. Will run starting on the first time the user drags a block
   $(".stacks").one("drag", function increment() {
     // console.log("in the one click function");
 
     setTimeout(function(){
-      time++;
+      time++
       var mins = Math.floor(time/10/60);
-      var secs = Math.floor(time/10);
+      var secs = Math.floor((time-mins*600)/10);
       var tenths = time % 10;
-
-      if (mins <10){
+      if (mins <10) {
         mins = "0" + mins;
       }
       if (secs < 10){
         secs = "0" + secs;
       }
       $("#timer").text(mins + ":" + secs + ":" + "0" + tenths);
-      increment();
-    }, 100);
-  });
 
-  // function increment(){
-  //
-  // }
+      increment();
+
+      }, 100);
+    });
 
   /* events fired on the draggable target */
   document.addEventListener("drag", function( event ) {
@@ -90,7 +89,9 @@ $(document).ready(function() {
       // prevent default action (open as link for some elements)
       event.preventDefault();
       // move dragged elem to the selected drop target
-      if ((currentSize < previousSize || previousSize === undefined || stack.children.length === 0)) {
+      if (event.target.className!== "dropzone"){
+
+      } else if (currentSize < previousSize || previousSize === undefined || stack.children.length === 0) {
         event.target.style.background = "";
         dragged.parentNode.removeChild( dragged );
         dropped = event.target.insertBefore(dragged, stack.children[0]);
@@ -101,18 +102,26 @@ $(document).ready(function() {
         console.log("youve used this many moves: " +moves);
         console.log(currentSize + " has been dropped in tower " + towerNumber);
         console.log ("tower length =" + stackLength);
-        if (currentSize === 25 && towerNumber === 3 && stackLength === 4) {
-          console.log("it's a win!");
-          $(".stacks").hide();
-          $("header").hide();
-          $("#trackers").hide();
-          document.getElementById("gameboard").style.borderStyle = "none";
-          document.getElementById("gameboard").style.margin = "0";
-          $("#gameboard").prepend("<div id = 'announcewin'></div");
-        }
-      } else if ( event.target.className == "dropzone" ) {
+      } else if (currentSize > previousSize && event.target.className === "dropzone") {
           event.target.style.background = "";
-          alert("You may NEVER place a larger block on a smaller block!!")
+          // prevents larger from being dropped on smaller, and sets background back to blank
+      } else if ( event.target.className === "dropzone" ) {
+          event.target.style.background = "";
+          // if a block is picked up and put back down in a dropzone, the background will turn to blank
       }
+     checkForWins();
   }, false);
+
+//begin function defining a win; this is called after every drop
+  function checkForWins(){
+    console.log("check for wins was called");
+    if (currentSize === 25 && towerNumber === 3 && stackLength === 1) {
+      console.log("it's a win!");
+      $("#container").prepend("<div id = 'announcewin'></div");
+      $("header").hide();
+      $("#gameboard").hide();
+      $("#trackers").hide();
+      $("#announcewin").append("<input id = 'playagain' type = 'button' value = 'PLAY AGAIN' onclick = 'window.location.reload()'></input>")
+    }
+  }
 });
