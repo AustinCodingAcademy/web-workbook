@@ -115,7 +115,7 @@ $(document).ready(function() {
 //begin function defining a win; this is called after every drop
   function checkForWins(){
     console.log("check for wins was called");
-    if (currentSize === 25 && towerNumber === 3 && stackLength === 1) {
+    if (currentSize === 25 && towerNumber === 3 && stackLength === 4) {
       console.log("it's a win!");
       $("#container").prepend("<div id = 'announcewin'></div");
       $("header").hide();
