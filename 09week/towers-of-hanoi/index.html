@@ -7,23 +7,29 @@
 </head>
 <body>
   <div data-stack="1">
-    <div class="block" data-block="100"></div>
-    <div class="block" data-block="75"></div>
-    <div class="block" data-block="50"></div>
-    <div class="block" data-block="25"></div>
+    <div class="block" draggable="true" data-block="100"></div>
+    <div class="block" draggable="true" data-block="75"></div>
+    <div class="block" draggable="true" data-block="50"></div>
+    <div class="block" draggable="true" data-block="25"></div>
   </div>
   <div data-stack="2">
   </div>
   <div data-stack="3">
   </div>
   <div id="announce-game-won"></div>
+
+  <section id="stopWatch">
+    <p id="timer">
+      Time : 00:00:00
+    </p>
+    <button id="start"> Start </button>
+    <button id="stop"> Stop </button>
+    <p id="fulltime"> </p>
+  </section>
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
-<!-- scripts for queryui draggable -->
-  <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
-  <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 </body>
 </html>
