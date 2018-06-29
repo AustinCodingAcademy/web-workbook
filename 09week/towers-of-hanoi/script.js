@@ -37,7 +37,6 @@ $(function () {
         //end game conditions. the ship cannot collide with the top or bottom of the level nor the poles.
         
         if(collision(ship, pole_1) || collision(ship, pole_2) || parseInt(ship.css('top')) <= 0 || parseInt (ship.css('top')) > container_height - ship_height){
-            
             stop_the_game();
             
         } else {
@@ -110,14 +109,18 @@ $(function () {
         ship.css('top', parseInt(ship.css('top')) - 15);
     }
     
+    //how to end the game. death animation
     function stop_the_game(){
         clearInterval(the_game);
+        $("#ship").css({"background": "url(explosion.gif)", "height": "150px", "width": "150px", "repeat": "no"},)
         restart_btn.slideDown();
     }
     
     restart_btn.click(function() {
         location.reload();
     })
+    
+    
     
     
     function collision($div1, $div2) {
