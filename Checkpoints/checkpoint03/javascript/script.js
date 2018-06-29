@@ -4,6 +4,7 @@ $(document).ready(function() {
   // this copies the user's choice and puts it in a new div
   $('button').click(function() {
     var userTurn = $(this);
+    // let $block=null;
     var userValue=$(this).data("block");
     console.log(userValue);
     console.log(userTurn);
@@ -37,8 +38,8 @@ $(document).ready(function() {
   }
 
   // check for win
-setTimeout(CheckWin, 300);
-  function checkWin() {
+setTimeout(checkWin, 300);
+  function checkWin(userValue, computerTurn) {
 
       if ((userValue===2 && computerTurn===0) || (userValue ===0 && computerTurn===2)) {
         alert("Rock wins!");
@@ -46,8 +47,8 @@ setTimeout(CheckWin, 300);
         alert("Paper wins!");
       } else if ((userValue===2 && computerTurn===1) || (userValue ===1 && computerTurn===2)) {
         alert("Scissors wins!");
-      } else if (userValue === computerTurn) {
+      } else if ((userValue === computerTurn) && (computerTurn !== null)) {
         alert("Tie! Play again!");
     }
-  };
+  }
 });
