@@ -5,25 +5,28 @@
   <title>Tic Tac Toe</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <div class="row">
-    <div data-cell="0"></div>
-    <div data-cell="1"></div>
-    <div data-cell="2"></div>
-  </div>
-  <div class="row">
-    <div data-cell="3"></div>
-    <div data-cell="4"></div>
-    <div data-cell="5"></div>
-  </div>
-  <div class="row">
-    <div data-cell="6"></div>
-    <div data-cell="7"></div>
-    <div data-cell="8"></div>
-  </div>
-  <div id="announce-winner"></div>
-  <button id="clear">Clear Board</button>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<body onload="startGame();">
+    <h1>Tic Tac Toe</h1>
+    <div id="message">Message goes here.</div>
+    <table border="1">
+    <tr>
+        <td class="Square" id="s1" onClick="nextMove(this)"></td>
+        <td class="Square" id="s2" onClick="nextMove(this)"></td>
+        <td class="Square" id="s3" onClick="nextMove(this)"></td>
+    </tr>
+    <tr>
+        <td class="Square" id="s4" onClick="nextMove(this)"></td>
+        <td class="Square" id="s5" onClick="nextMove(this)"></td>
+        <td class="Square" id="s6" onClick="nextMove(this)"></td>
+    </tr>
+    <tr>
+        <td class="Square" id="s7" onClick="nextMove(this)"></td>
+        <td class="Square" id="s8" onClick="nextMove(this)"></td>
+        <td class="Square" id="s9" onClick="nextMove(this)"></td>
+    </tr>
+    </table>
+</body>  
+    <a href="javascript: startGame();">Start over.</a>  
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="./script.js"></script>
-</body>
 </html>
