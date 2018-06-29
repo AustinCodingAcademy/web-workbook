@@ -118,6 +118,9 @@ $(document).ready(function() {
     if (currentSize === 25 && towerNumber === 3 && stackLength === 4) {
       console.log("it's a win!");
       $("#container").prepend("<div id = 'announcewin'></div");
+      $("#container").css("display", "flex");
+      $("#container").css("justify-content", "center");
+      $("#container").css("align-items", "center");
       $("header").hide();
       $("#gameboard").hide();
       $("#trackers").hide();
