@@ -12,20 +12,19 @@ $(document).ready(function() {
     console.log(computerTurn);
 // getting the computer option to show in the div
     if (computerTurn===0) {
-      $(".computer").addClass(".rockpic");
+      $(".computer").addClass("rockpic");
       console.log("does this work");
     } else if (computerTurn===1) {
-      $(".computer").addClass(".paperpic");
+      $(".computer").addClass("paperpic");
     } else if (computerTurn===2) {
-      $(".computer").addClass(".scissorspic");
+      $(".computer").addClass("scissorspic");
     }
-    // $rock=$('[data-block=0]').addClass(".rockpic");
-    // console.log($rock);
-    // let $paper=$('[data-block=1]').addClass(".paperpic");
-    // console.log($paper);
-    // let $scissors=$('[data-block=2]').addClass(".scissorspic");
-    // console.log($scissors);
-    // $(".computer").append(computerTurn.css("background-image"));
+    let $rock=$('[data-block=0]').data();
+    console.log($rock);
+    let $paper=$('[data-block=1]').data();
+    console.log($paper);
+    let $scissors=$('[data-block=2]').data();
+    console.log($scissors);
     });
 // the computer randomly chooses a number
   function getRandomInt(min, max) {
@@ -39,12 +38,12 @@ $(document).ready(function() {
 
 function checkWin(userTurn, computerTurn) {
 
-//   if (userTurn) {
-//     alert("Rock wins");
-//   } else if (1,0) {
-//     alert("Paper wins");
-//   } else if (2,1) {
-//     alert("Scissors win");
+//   if ((userTurn===2 && computerTurn===0) || (userTurn ===0 && computerTurn===2)) {
+//     alert("Rock wins!");
+//   } else if ((userTurn===1 && computerTurn===0) || (userTurn ===0 && computerTurn===1)) {
+//     alert("Paper wins!");
+//   } else if ((userTurn===2 && computerTurn===1) || (userTurn ===1 && computerTurn===2)) {
+//     alert("Scissors wins!");
 //   } else if (userTurn === computerTurn) {
 //     alert("Tie! Play again!");
 // }
