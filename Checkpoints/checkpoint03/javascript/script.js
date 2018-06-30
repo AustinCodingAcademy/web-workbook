@@ -5,7 +5,7 @@ $(document).ready(function() {
   $('button').click(function() {
     var userTurn = $(this);
     // let $block=null;
-    var userValue=$(this).data("block");
+    var userValue=$(this).data('block');
     console.log(userValue);
     console.log(userTurn);
     $(".user").append(userTurn.clone());
@@ -28,7 +28,7 @@ $(document).ready(function() {
   //   // console.log($paper);
   //   let $scissors = $('[data-block=2]').data();
   //   // console.log($scissors);
-  });
+
   // the computer randomly chooses a number
   function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -47,8 +47,9 @@ setTimeout(checkWin, 300);
         alert("Paper wins!");
       } else if ((userValue===2 && computerTurn===1) || (userValue ===1 && computerTurn===2)) {
         alert("Scissors wins!");
-      } else if ((userValue === computerTurn) && (computerTurn !== null)) {
+      } else if ((userValue ===0 && computerTurn===0) || (userValue ===1 && computerTurn===1) || (userValue ===2 && computerTurn===2))  {
         alert("Tie! Play again!");
-    }
-  }
+    };
+  };
+  });
 });
