@@ -40,7 +40,7 @@ $(document).ready(function() {
   // check for win
 setTimeout(checkWin, 300);
   function checkWin(userValue, computerTurn) {
-
+    console.log(checkWin);
       if ((userValue===2 && computerTurn===0) || (userValue ===0 && computerTurn===2)) {
         alert("Rock wins!");
       } else if ((userValue===1 && computerTurn===0) || (userValue ===0 && computerTurn===1)) {
