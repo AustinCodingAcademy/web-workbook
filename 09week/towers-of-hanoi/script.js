@@ -1,7 +1,7 @@
 'use strict';
 
 $(document).ready(function() {
-  //targets first child of all the data blocks
+  // targets first child of all the data blocks
   let topBlock = $('[data-block]:first-child');
   // adds a class to moveable to all first child elements
   topBlock.addClass('moveAble');
@@ -11,7 +11,7 @@ $(document).ready(function() {
   });
   var count = 0;
   $('#dropArea1, #dropArea2, #dropArea3').droppable({
-    //accepts only items with moveable class.
+    // accepts only items with moveable class.
     accept: ".moveAble",
     drop: function (event, ui){
       console.log('counter is ' + count);
@@ -40,9 +40,8 @@ $(document).ready(function() {
     }
   })
   function checkWin(){
-
     if($('[data-stack=3]').children().length == 4){
-      $('#announce-game-won').text('Congratulations! You won!');
+      $('#announce-game-won').text('Congratulations! You win!');
       // stop time
       stop();
     }
@@ -68,8 +67,9 @@ $(document).ready(function() {
 
   const increment = () => {
     i++;
-    document.getElementById('sec').innerHTML = (i / divide) + ' Sec';
     minute();
+    document.getElementById('sec').innerHTML = (i / divide) + ' Sec';
+
   }
   // stop time upon win
   const stop = () => {
