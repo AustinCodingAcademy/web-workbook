@@ -5,14 +5,14 @@ $(document).ready(function() {
   $('button').click(function() {
     var userTurn = $(this);
     // let $block=null;
-    var userValue=$(this).data('block');
-    console.log(userValue);
-    console.log(userTurn);
+    var userValue=parseInt($(this).attr('data-block'));
+    console.log("this is userValue " + userValue);
+    console.log("this is the userTurn" + userTurn);
     $(".user").append(userTurn.clone());
     var computerTurn = getRandomInt(0, 3);
     // var computerDisplay=$(computerTurn).attr('data-block');
     // console.log(computerDisplay);
-    console.log(computerTurn);
+    console.log("this is the computerTurn" + computerTurn);
     // getting the computer option to show in the div
     if (computerTurn === 0) {
       $(".computer").addClass("rockpic");
@@ -39,17 +39,31 @@ $(document).ready(function() {
 
   // check for win
 setTimeout(checkWin, 300);
-  function checkWin(userValue, computerTurn) {
-    console.log(checkWin);
-      if ((userValue===2 && computerTurn===0) || (userValue ===0 && computerTurn===2)) {
-        alert("Rock wins!");
-      } else if ((userValue===1 && computerTurn===0) || (userValue ===0 && computerTurn===1)) {
-        alert("Paper wins!");
-      } else if ((userValue===2 && computerTurn===1) || (userValue ===1 && computerTurn===2)) {
-        alert("Scissors wins!");
-      } else if ((userValue ===0 && computerTurn===0) || (userValue ===1 && computerTurn===1) || (userValue ===2 && computerTurn===2))  {
+  function checkWin() {
+    var countComp=0;
+    var countUser=0;
+    console.log("inside checkWin");
+    console.log("this is userValue " + userValue);
+    console.log("this is the computerTurn" + computerTurn);
+      if ((userValue===2 && computerTurn===0) || (userValue ===0 && computerTurn===1) || (userValue ===1 && computerTurn==2)) {
+        var computerCount=$(".computercount").append(parseInt(countComp) +1);
+        var computerTotal=parseInt(computerCount) +1;
+        console.log("the computerTotal is "+ computerTotal);
+        console.log("the counter for the computer wins is "+ countComp);
+        alert("Sorry, you lose. Play again!");
+      } else if ((userValue===0 && computerTurn===2) || (userValue ===1 && computerTurn===0) || (userValue ===2 && computerTurn===1)) {
+        var userCount=$(".usercount").append(parseInt(countUser) +1);
+        var userTotal=parseInt(userCount) + 1;
+        console.log("The userTotal is " + userTotal);
+        console.log("the counter for the user wins is "+ countUser);
+        alert("You win!");
+      } else {
         alert("Tie! Play again!");
     };
+    $(".user").html("");
+    $(".computer").removeClass("rockpic");
+    $(".computer").removeClass("paperpic");
+    $(".computer").removeClass("scissorspic");
   };
   });
 });
