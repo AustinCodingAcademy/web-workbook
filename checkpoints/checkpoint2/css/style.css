@@ -1,0 +1,302 @@
+/*
+color scheme:
+dark grey #7C90A0
+grey #D7CDCC
+maroon #795663
+light gre #E8EEF2
+light blue #C1E0F7
+*/
+
+/*
+color scheme 2:
+white
+black
+off-white: #FAFAFA
+light grey: #F5F5F5
+highlight: cyan
+*/
+
+::selection {
+  background: cyan;
+}
+
+body {
+  border: 1px black solid;
+  /* font-family: "HelveticaCondensed", Arial, sans-serif; */
+  /* background-color: #F6EFEE; */
+  font-family: "lato";
+  margin: inherit;
+  border: inherit;
+}
+
+#wrapper {
+
+}
+
+/* header start */
+
+header {
+  /* background-color: #2B2D42; */
+  background-color: black;
+  padding: 16px 0;
+}
+
+#site-title {
+  position: relative;
+  top: 11px;
+  margin-left: 60px;
+  height: 0px;
+  z-index: 1;
+  font-weight: 400;
+  font-size: 30px;
+  color: white;
+}
+
+nav {
+  margin: auto;
+  font-weight: bold;
+}
+
+#nav {
+  /* background-color: #7C90A0; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a {
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 18px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 17px;
+  color: white;
+  transition: .2s all ease-in;
+}
+
+nav a:hover {
+  color: #FFBA49;
+}
+
+nav a:active {
+  color: #FFBA49;
+}
+
+/* header end */
+
+main {
+  padding-top: 30px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+h1 {
+  font-size: 65px;
+  margin: auto;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  font-family: "Montserrat", Sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+
+h2 {
+  margin: auto;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+section {
+  padding: 30px 0 50px 0;
+  /* border-top: 3px #A3C4BC solid;
+  border-bottom: 3px #A3C4BC solid; */
+  border-top: 3px solid #DDDDDD;
+  border-bottom: 3px solid #DDDDDD;
+  margin: auto;
+}
+
+/* grid start */
+
+#grid {
+  display: grid;
+  margin: auto;
+  max-width: 1000px;
+  padding-top: 30px;
+  grid-row-gap: 30px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  grid-template-areas:
+  "box1 box2 box3"
+  "box4 box5 box6";
+}
+
+.box {
+  background-color: white;
+  border-radius: 3px;
+  width: 300px;
+  height: 270px;
+  box-shadow: 0 1px 3px 0 grey;
+}
+
+.box a {
+  text-decoration: none;
+}
+
+.box #img {
+  border-radius: 3px;
+  border: .5px solid grey;
+  width: 280px;
+  height: 190px;
+  margin: 10px auto;
+  background-color: #fff5ec;
+}
+
+h4 {
+  color: black;
+  margin: 5px 0 5px 20px;
+  font-weight: normal;
+}
+
+.box a p {
+  color: grey;
+  text-align: left;
+  margin: 0 0 0 20px;
+}
+
+.box1 {
+  grid-area: box1;
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.box3 {
+  grid-area: box3;
+}
+
+.box4 {
+  grid-area: box4;
+}
+
+.box5 {
+  grid-area: box5;
+}
+
+.box6 {
+  grid-area: box6;
+}
+
+/* carousel end */
+
+aside {
+  padding-top: 50px;
+  margin: auto;
+}
+
+#references {
+  margin-top: 40px;
+}
+
+footer {
+  margin-top: 100px;
+  padding: 50px 0 30px 150px;
+  background-color: #F5F5F5;
+}
+
+/* Change Display of Header */
+
+@media (max-width: 1050px) {
+  #site-title {
+    display: none;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  header {
+
+  }
+
+  main {
+
+  }
+
+  section {
+    width: 100%;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  #grid {
+    display: grid;
+    margin: auto;
+    max-width: 680px;
+    padding-top: 30px;
+    grid-row-gap: 30px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-template-areas:
+    "box1 box2"
+    "box3 box4"
+    "box5 box6";
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  section {
+    padding-bottom: 25px;
+  }
+
+  #grid {
+    display: grid;
+    margin: auto;
+    padding-top: 15px;
+    grid-row-gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-template-areas:
+    "box1"
+    "box2"
+    "box3"
+    "box4"
+    "box5"
+    "box6";
+  }
+
+  aside {
+    padding-top: 15px;
+  }
+
+  #references {
+    margin-top: 15px;
+  }
+
+  footer {
+    margin-top: 15px;
+    padding-top: 30px;
+  }
+}

@@ -1,38 +1,123 @@
+body {
+  background-color: #fff6de;
+  background-image: url("https://www.transparenttextures.com/patterns/diagonal-striped-brick.png");
+}
+
+header {
+  text-align: center;
+  color: navy;
+  font-size: 18px;
+  font-family: fantasy;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+#dropStacks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 [data-stack] {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  height: 101px;
-  background-color: aliceblue;
+  width: 280px;
+  height: 450px;
+  background-color: #cffff3;
+  background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
   margin: 25px;
 }
 
 [data-block] {
-  width: 25px;
-  float: left;
+  height: 50px;
+  border-radius: 5px;
+  display: block;
 }
 
 [data-block="25"] {
-  height: 25px;
-  background-color: blue;
+  width: 50px;
+  background-color: #007bff;
+  background-image: url("https://www.transparenttextures.com/patterns/light-wool.png");
 }
 
 [data-block="50"] {
-  height: 50px;
-  background-color: green;
+  width: 125px;
+  background-color: #00a878;
+  background-image: url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
 }
 
 [data-block="75"] {
-  height: 75px;
-  background-color: red;
+  width: 200px;
+  background-color: #a30500;
+  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
 }
 
 [data-block="100"] {
-  height: 100px;
-  background-color: yellow;
+  width: 275px;
+  background-color: #f0c800;
+  background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
 }
 
 #announce-game-won {
   font-size: 50px;
   text-align: center;
+  color: darkblue;
+  font-weight: bold;
+}
+
+/* stopwatch */
+
+#stopWatch {
+  width: 280px;
+  height: auto;
+  text-align: center;
+  display: block;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+#moveCounter {
+  width: 258px;
+  margin: auto;
+  height: 19px;
+  padding: 10px;
+  font-weight: bold;
+  font-family: tahoma;
+  display: block;
+  border: 1px solid #eee;
+  text-align: center;
+  box-shadow: 0 0 5px #ccc;
+  background: #fbfbf0;
+  color: darkred;
+  border-bottom: 4px solid darkgrey;
+}
+
+#timer {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  font-weight: bold;
+  font-family: tahoma;
+  display: block;
+  border: 1px solid #eee;
+  text-align: center;
+  box-shadow: 0 0 5px #ccc;
+  background: #fbfbf0;
+  color: darkred;
+  border-bottom: 4px solid darkgrey;
+}
+
+button {
+  cursor: pointer;
+  font-weight: 700;
+  width: 280px;
+  height: 35px;
+  box-shadow: 0 0 5px #ccc;
+  border: 1px solid #eee;
+  border-bottom: 4px solid darkgrey;
 }
