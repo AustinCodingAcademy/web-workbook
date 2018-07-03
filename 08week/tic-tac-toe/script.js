@@ -2,13 +2,8 @@
 
 $(document).ready(function() {
 
-  // var isEmpty = $('[data-cell]').length < 1;
   var last = 'X';
   var board = ['']
-  // var value = $('[data-cell]').value();
-
-
-
 
   $('[data-cell]').click(function(){
     // check if square is empty
@@ -63,30 +58,25 @@ $(document).ready(function() {
       var foundaWin = false;
       for (i = 0; i < winPatternsX.length; i++) {
         if (winPatternsX[i] === true) {
-          $('#message').text('you won!');
+          $('#message').text('You win!');
           break;
         } else if (winPatternsO[i] === true) {
-            $('#message').text('you won!');
+            $('#message').text('You win!');
             break;
         } else if ((winPatternsX[i] === false) && (winPatternsO[i] === false)) {
-            $('#message').text("next person's turn!");
-          //else if (winPatternsX[i] && winPatterns)[i]
+            $('#message').text("Next person's turn!");
+        } else if ((winPatternsX[i] === false) && (winPatternsO[i] === false) && ($('[data-cell]').text() !== '')) {
+            $('#message').text('Tie!');
         }
       }
     } else {
-      alert('this square is already filled!');
+      alert('This square is already filled!');
     }
   });
+  // clear function
   $('#clear').click(function(){
-      $('[data-cell="0"]').empty();
-      $('[data-cell="1"]').empty();
-      $('[data-cell="2"]').empty();
-      $('[data-cell="3"]').empty();
-      $('[data-cell="4"]').empty();
-      $('[data-cell="5"]').empty();
-      $('[data-cell="6"]').empty();
-      $('[data-cell="7"]').empty();
-      $('[data-cell="8"]').empty();
+      $('[data-cell]').empty();
+      $('#message').empty();
   })
 });
 
