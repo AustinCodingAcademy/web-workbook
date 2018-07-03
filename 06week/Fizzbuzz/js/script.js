@@ -1,4 +1,4 @@
-console.log("hello");
+// console.log("hello");
  // Using the coding area below, looping through all numbers 1 through 1000, I want you to log:
  // 'Fizz' if the number is divisible by only three
  // 'Buzz' if the number is divisible by only five
