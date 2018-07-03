@@ -1,4 +1,8 @@
 'use strict'
+document.addEventListener("DOMContentLoaded", function(event) {
+  console.log("The page has been loaded");
+
+});
 
 console.log("i do have javascript");
 

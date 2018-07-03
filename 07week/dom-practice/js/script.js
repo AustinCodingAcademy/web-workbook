@@ -1,11 +1,13 @@
 'use strict';
 // Create a JS file and write code the will do the following:
 // Alert the user to how many list items there are on the page.
-// Add a <h2> to the page under the title that says 'You have _ items in your shopping cart'.
+// Add a <h2> to the page under the title that says 'You have _ items in
+// your shopping cart'.
 //  Do not use html to do this. Use JavaScript.
 // Create the ability to add more items to the list using JavaScript.
 // Create the ability to remove an item from the shopping cart using javascript.
-// Extension Challenge: Create the ability to display a picture of the product when the
+// Extension Challenge: Create the ability to display a picture of the product
+//  when the
 //  mouse hovers over the name of the project.
 window.onload = function(){
   alertMessage();
@@ -26,10 +28,13 @@ function sayHI (){
 function addItem(){
   console.log('click')
   console.log("I am in add item")
-  // the variable the list becomes equal to the ID my list
+  // the variable the list becomes equal to the ID  my list
   var thelist= document.getElementById("mylist");
+  // the list is inside of the tag name ol which i gave the
+// ID my list
 
   var text= document.createTextNode("water");
+  // the variable add the word water
   var newitem = document.createElement("Li");
   newitem.appendChild(text);
   var btn = document.createElement("BUTTON");
