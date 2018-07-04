@@ -6,17 +6,32 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+      <div class="message"> Welcome to Towers of Hanoi</div>
+      <div class="todo"> Become a Game Master</div>
+  </header>
   <div  id="dropArea"data-stack="1">
+    <div class="yes">START</div>
     <div class="draggable" data-block="100"></div>
     <div  class="draggable"data-block="75"></div>
     <div  class="draggable"data-block="50"></div>
     <div class="draggable" data-block="25"></div>
   </div>
   <div  id="dropArea"data-stack="2">
+    <div class="yes"> WORK HARD</div>
   </div>
   <div id="dropArea" data-stack="3">
+    <div class="yes">HUSTLE</div>
   </div>
+  <div class="instructions">
+      Game on <br>
+      Proove yourself by moving all the block to the last tower
+      you can only place a smaller block on top of a larger One!!
+      Whats it going to be ? Winner or ElSE !!!!
+   </div>
+
   <div id="announce-game-won"></div>
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"> </script>
   <script type="text/javascript" src="script.js"></script>
