@@ -1,0 +1,93 @@
+.box{
+  display: flex;
+  height:50px;
+  width:50px;
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+   margin 3s;
+
+}
+/* Create a webpage that consists of 12 different colored squares with side lengths
+of 50px.
+The squares should start in a vertical line in the middle of the page.
+When you hover over the squares, every other square should grow to be twice as large.
+The other squares should shrink to half their original size.
+Then the larger squares should slowly slide to the right side of the page, rotating
+clockwise as they move and remaining in a vertical line.
+Then the smaller squares should quickly slide to the left side of the page, rotating
+counterclockwise as they move and remaining in a vertical line.
+
+Once completed, add some transitions or translations to previous projects.
+
+Remember to keep them simple and subtle!
+ */
+
+.grid:hover .odd{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  margin-left: 350px;
+  transform: rotate(45deg);
+  background-image: url("../images/resume.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+.grid:hover .even{
+  height: 25px;
+  width: 25px;
+  background-color: yellow;
+  margin-right: 350px;
+  transform: rotate(-80deg);
+  background-image: url("../images/leaf1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.grid{
+display: flex;
+background-color:lightblue;
+margin: 0px auto ;
+align-items:center;
+flex-direction: column;
+width: 90px;
+}
+
+.box1{
+  background-color: orange;
+}
+.box2{
+background-color: purple;
+}
+.box3{
+background-color: yellow;
+}
+.box4{
+  background-color: green;
+}
+.box5{
+  background-color: blue;
+}
+.box6{
+  background-color:beige;
+}
+.box7{
+  background-color: black;
+}
+.box8{
+  background-color:pink;
+}
+.box9{
+  background-color: red;
+}
+.box10{
+  background-color: violet;
+}
+.box11{
+  background-color: grey;
+}
