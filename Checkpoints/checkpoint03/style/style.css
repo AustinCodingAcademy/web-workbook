@@ -27,7 +27,7 @@
 button:hover {
   border: black 5px solid;
 }
-/* make choose show up at hover */
+/* make choose show up at hover attaching to the div */
 .rock .text {
   position: relative;;
   visibility: hidden;
@@ -53,11 +53,12 @@ button:hover {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr 2fr 2fr;
   justify-content: space-between;
   text-align: center;
   grid-template-areas:
   "header header header"
+  "counter counter counter"
   "rock paper scissors"
   "user versus computer";
 }
@@ -66,6 +67,13 @@ button:hover {
   text-align: center;
   font-size: 25px;
   margin-top: 20px;
+  height: 50px;
+}
+.counter {
+  grid-area: counter;
+  text-align: right;
+  font-size: 25px;
+  height: 50px;
 }
 .rock {
   grid-area: rock;
@@ -83,7 +91,7 @@ button:hover {
   grid-area: versus;
   text-align: center;
   font-size: 25px;
-  margin-top: 150px;
+  margin-top: 70px;
 }
 .computer {
   grid-area: computer;

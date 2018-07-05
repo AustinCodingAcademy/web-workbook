@@ -40,22 +40,38 @@ $(document).ready(function() {
   // check for win
 setTimeout(checkWin, 300);
   function checkWin() {
-    var countComp=0;
-    var countUser=0;
-    console.log("inside checkWin");
-    console.log("this is userValue " + userValue);
-    console.log("this is the computerTurn" + computerTurn);
+    // console.log("inside checkWin");
+// starting the counters that will calculate wins at zero
+    var computerWin=0;
+    console.log("the counter for the computer win is "+ computerWin);
+    var computerCount=$(".computercount").append(parseInt(computerWin) +1);
+    console.log("the computerCount is " + computerCount);
+    // computer win total variable
+    var computerTotal=parseInt(computerCount) +1;
+    // this should print out the wins for the computer
+    console.log("the computerTotal is "+ computerTotal);
+    var userWin=0;
+    var userCount=$(".usercount").append(parseInt(userWin) +1);
+    console.log("the userCount is " + userCount);
+    // user win total variable, why is it NaN?
+    var userTotal=parseInt(userCount) + 1;
+    // userTotal is not a number. why?
+    console.log("The userTotal is " + userTotal);
+    // this isn't moving from zero
+    console.log("the counter for the userWin is "+ userWin);
+    // these two variables show the numerical value associated with the choice
+    // console.log("this is userValue " + userValue);
+    // console.log("this is the computerTurn " + computerTurn);
+    // this function decides what options are possible for a computer win
       if ((userValue===2 && computerTurn===0) || (userValue ===0 && computerTurn===1) || (userValue ===1 && computerTurn==2)) {
-        var computerCount=$(".computercount").append(parseInt(countComp) +1);
-        var computerTotal=parseInt(computerCount) +1;
-        console.log("the computerTotal is "+ computerTotal);
-        console.log("the counter for the computer wins is "+ countComp);
+        // this starts to count the computer's wins and inputs it into the div called computercount
+
+
         alert("Sorry, you lose. Play again!");
+        // this part of the function decides what options are possible for the user to win
       } else if ((userValue===0 && computerTurn===2) || (userValue ===1 && computerTurn===0) || (userValue ===2 && computerTurn===1)) {
-        var userCount=$(".usercount").append(parseInt(countUser) +1);
-        var userTotal=parseInt(userCount) + 1;
-        console.log("The userTotal is " + userTotal);
-        console.log("the counter for the user wins is "+ countUser);
+        // this starts to count the user's wins and inputs it into the div called usercount
+
         alert("You win!");
       } else {
         alert("Tie! Play again!");
