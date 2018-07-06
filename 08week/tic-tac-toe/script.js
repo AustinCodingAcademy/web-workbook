@@ -9,20 +9,20 @@
 //      });
 //    });
 //  });
-
-console.log(10 % 3, 10 % 5, 10 % 7);
+var i = 0;
+var boxFull = false;
 $(document).ready(function(){
-  $('div').click(function(){
-    var i = 0;
-    if(i < 3) {
+  $('div[data-cell]').click(function(){
+    if(i % 2 == 1 && boxFull == false) {
       $(this).css("background", "black");
       i++;
-      console.log(i);
-    } else if(i > 3) {
+      console.log("i is " + i + " and boxFull is " + boxFull);
+    } else if(i % 2 && 0 || boxFull == false) {
       $(this).css("background", "red");
-      i++;
-      console.log(i);
+      i++
+      console.log("i is " + i + " and boxFull is " + boxFull);
     }
+    
     // } else {
     //   i++;
     // }
