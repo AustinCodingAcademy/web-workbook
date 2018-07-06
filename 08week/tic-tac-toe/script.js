@@ -1,7 +1,7 @@
 'use strict';
 
 $(document).ready(function() {
-  var playerTurn = 'X';
+  // var playerTurn = 'X';
   var last = 'X';
   var moves = 0;
 
@@ -10,7 +10,7 @@ $(document).ready(function() {
 
     // if (playerTurn ? playerTurn = 'O' : playerTurn = 'X');
     // console.log(playerTurn);
-
+    var foundaWin = false;
     var isEmpty = $(this).text() === '';
     if(isEmpty){
       $(this).text('X');
@@ -63,7 +63,7 @@ $(document).ready(function() {
         (value0 === 'O') && (value4 === 'O') && (value8 === 'O'),
         (value6 === 'O') && (value4 === 'O') && (value2 === 'O')
       ];
-      var foundaWin = false;
+      // var foundaWin = false;
       for (i = 0; i < winPatternsX.length; i++) {
         if (winPatternsX[i] === true) {
           $('#message').text('X wins!');
@@ -82,7 +82,13 @@ $(document).ready(function() {
     } else {
       alert('This square is already filled!');
     }
-  });
+    if (foundaWin === true) {
+      return;
+      console.log(foundaWin);
+    }
+    });
+
+
   // clear function
   $('#clear').click(function(){
       $('[data-cell]').empty();
