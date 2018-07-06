@@ -1,12 +1,16 @@
 'use strict';
 
 $(document).ready(function() {
-
+  var playerTurn = 'X';
   var last = 'X';
-  var board = ['']
+  var moves = 0;
 
   $('[data-cell]').click(function(){
     // check if square is empty
+
+    // if (playerTurn ? playerTurn = 'O' : playerTurn = 'X');
+    // console.log(playerTurn);
+
     var isEmpty = $(this).text() === '';
     if(isEmpty){
       $(this).text('X');
@@ -14,9 +18,13 @@ $(document).ready(function() {
       if(last === 'O') {
         $(this).text('X');
         last = 'X';
+        moves++;
+        console.log(moves);
       } else if (last === 'X'){
         $(this).text('O');
         last = 'O';
+        moves++;
+        console.log(moves);
       }
       //check if there is a win
       var i;
@@ -58,15 +66,17 @@ $(document).ready(function() {
       var foundaWin = false;
       for (i = 0; i < winPatternsX.length; i++) {
         if (winPatternsX[i] === true) {
-          $('#message').text('You win!');
+          $('#message').text('X wins!');
+          foundaWin = true;
           break;
         } else if (winPatternsO[i] === true) {
-            $('#message').text('You win!');
+            $('#message').text('O wins!');
+            foundaWin = true;
             break;
-        } else if ((winPatternsX[i] === false) && (winPatternsO[i] === false)) {
-            $('#message').text("Next person's turn!");
-        } else if ((winPatternsX[i] === false) && (winPatternsO[i] === false) && ($('[data-cell]').text() !== '')) {
+        } else if ((winPatternsX[i] === false) && (winPatternsO[i] === false) && (moves === 9)) {
             $('#message').text('Tie!');
+        } else {
+              $('#message').text("Next person's turn!");
         }
       }
     } else {
@@ -77,14 +87,13 @@ $(document).ready(function() {
   $('#clear').click(function(){
       $('[data-cell]').empty();
       $('#message').empty();
+      moves = 0;
   })
 });
 
 
 
-// function isGameOver() {
-//   //check if gave is over
-// }
+// make variable isGaveOver and put all(?) code above in an if statement saying if isGaveOver is false then allow all this
 
 //variables
 
