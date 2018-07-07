@@ -4,89 +4,79 @@ $(document).ready(function() {
   // var playerTurn = 'X';
   var last = 'X';
   var moves = 0;
+  var foundaWin = false;
+  var playerTurn;
 
   $('[data-cell]').click(function(){
-    // check if square is empty
 
     // if (playerTurn ? playerTurn = 'O' : playerTurn = 'X');
     // console.log(playerTurn);
-    var foundaWin = false;
-    var isEmpty = $(this).text() === '';
-    if(isEmpty){
-      $(this).text('X');
-      // alternate between X and O
-      if(last === 'O') {
-        $(this).text('X');
-        last = 'X';
-        moves++;
-        console.log(moves);
-      } else if (last === 'X'){
-        $(this).text('O');
-        last = 'O';
-        moves++;
-        console.log(moves);
-      }
-      //check if there is a win
-      var i;
-      var value0 = $('[data-cell="0"]').text();
-      var value1 = $('[data-cell="1"]').text();
-      var value2 = $('[data-cell="2"]').text();
-      var value3 = $('[data-cell="3"]').text();
-      var value4 = $('[data-cell="4"]').text();
-      var value5 = $('[data-cell="5"]').text();
-      var value6 = $('[data-cell="6"]').text();
-      var value7 = $('[data-cell="7"]').text();
-      var value8 = $('[data-cell="8"]').text();
-      var winPatternsX = [
-        //rows
-        (value0 === 'X') && (value1 === 'X') && (value2 === 'X'),
-        (value3 === 'X') && (value4 === 'X') && (value5 === 'X'),
-        (value6 === 'X') && (value7 === 'X') && (value8 === 'X'),
-        //columns
-        (value0 === 'X') && (value3 === 'X') && (value6 === 'X'),
-        (value1 === 'X') && (value4 === 'X') && (value7 === 'X'),
-        (value2 === 'X') && (value5 === 'X') && (value8 === 'X'),
-        //diagonals
-        (value0 === 'X') && (value4 === 'X') && (value8 === 'X'),
-        (value6 === 'X') && (value4 === 'X') && (value2 === 'X')
-      ];
-      var winPatternsO = [
-        //rows
-        (value0 === 'O') && (value1 === 'O') && (value2 === 'O'),
-        (value3 === 'O') && (value4 === 'O') && (value5 === 'O'),
-        (value6 === 'O') && (value7 === 'O') && (value8 === 'O'),
-        //columns
-        (value0 === 'O') && (value3 === 'O') && (value6 === 'O'),
-        (value1 === 'O') && (value4 === 'O') && (value7 === 'O'),
-        (value2 === 'O') && (value5 === 'O') && (value8 === 'O'),
-        //diagonals
-        (value0 === 'O') && (value4 === 'O') && (value8 === 'O'),
-        (value6 === 'O') && (value4 === 'O') && (value2 === 'O')
-      ];
-      // var foundaWin = false;
-      for (i = 0; i < winPatternsX.length; i++) {
-        if (winPatternsX[i] === true) {
-          $('#message').text('X wins!');
-          foundaWin = true;
-          break;
-        } else if (winPatternsO[i] === true) {
-            $('#message').text('O wins!');
-            foundaWin = true;
-            break;
-        } else if ((winPatternsX[i] === false) && (winPatternsO[i] === false) && (moves === 9)) {
-            $('#message').text('Tie!');
+
+    // allow clicks if there is no win
+    if (foundaWin === false) {
+        var isEmpty = $(this).text() === '';
+        // check if square is empty
+        if(isEmpty){
+          $(this).text('X');
+          // alternate between X and O
+          if(last === 'O') {
+            $(this).text('X');
+            last = 'X';
+            playerTurn = 'O';
+            moves++;
+            console.log(moves);
+          } else if (last === 'X'){
+            $(this).text('O');
+            last = 'O';
+            playerTurn = 'X';
+            moves++;
+            console.log(moves);
+          }
+          //check if there is a win
+          var i;
+          var value0 = $('[data-cell="0"]').text();
+          var value1 = $('[data-cell="1"]').text();
+          var value2 = $('[data-cell="2"]').text();
+          var value3 = $('[data-cell="3"]').text();
+          var value4 = $('[data-cell="4"]').text();
+          var value5 = $('[data-cell="5"]').text();
+          var value6 = $('[data-cell="6"]').text();
+          var value7 = $('[data-cell="7"]').text();
+          var value8 = $('[data-cell="8"]').text();
+          var winPatterns = [
+            //columns
+            (value0 && (value0 === value1) && (value0 === value2)),
+            (value3 && (value3 === value4) && (value3 === value5)),
+            (value6 && (value6 === value7) && (value6 === value8)),
+            //rows
+            (value0 && (value0 === value3) && (value0 === value6)),
+            (value1 && (value1 === value4) && (value1 === value7)),
+            (value2 && (value2 === value5) && (value2 === value8)),
+            //diagonals
+            (value0 && (value0 === value4) && (value0 === value8)),
+            (value6 && (value6 === value4) && (value6 === value2))
+          ]
+          for (i = 0; i < winPatterns.length; i++) {
+            if (winPatterns[i] === true) {
+              $('#message').text('Player '+last+' Wins!');
+              foundaWin = true;
+              break;
+            } else if ((winPatterns[i] === false) && (moves === 9)) {
+                $('#message').text('Tie!');
+                console.log('tie');
+            } else {
+                $('#message').text("Player "+playerTurn+"'s turn!");
+            }
+          }
         } else {
-              $('#message').text("Next person's turn!");
+          alert('This square is already filled!');
         }
+      } else {
+        return;
       }
-    } else {
-      alert('This square is already filled!');
-    }
-    if (foundaWin === true) {
-      return;
-      console.log(foundaWin);
-    }
     });
+
+
 
 
   // clear function
@@ -94,6 +84,7 @@ $(document).ready(function() {
       $('[data-cell]').empty();
       $('#message').empty();
       moves = 0;
+      foundaWin = false;
   })
 });
 
