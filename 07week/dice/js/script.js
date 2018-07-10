@@ -1,4 +1,4 @@
-const dieChar = ["&#9856;", "&#9857;", "&#9858;", "&#9859;", "&#9860;", "&#9861;"]
+const dieChar = ["&#9856;", "&#9857;", "&#9858;", "&#9859;", "&#9860;", "&#9861;"];
 
 function roll() {
   document.querySelector("#dice").innerHTML = "";
@@ -9,7 +9,6 @@ function roll() {
   report();
 }
 
-roll();
 
 //////////////////////////////////////////////////////
 // Add code here that uses loops and conditional statements
