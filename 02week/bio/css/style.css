@@ -1,6 +1,7 @@
 /*full website background color*/
 body{
   background-color: gray;
+  font-family: "Arial", Times, serif;
 }
 .background {
   padding-top: 10px;
@@ -12,9 +13,9 @@ body{
   border-radius: 5px;
 }
 /*to change the color of <div> when hovered over*/
-div:hover{
+/*div:hover{
   background-color: green;
-}
+}*/
 /*for first letter of <div>*/
 p::first-letter {
   text-transform: uppercase;
@@ -23,34 +24,29 @@ p::first-letter {
 }
 /*change font and size for paragraphs*/
 p{
-  font-family: "Times New Roman", Times, serif;
-  font-size: 20;
-}
-/*text style and color*/
-p{
-  outline-style: solid;
-  outline-color: yellow;
-  text-align: left;
+  font-size: 20px;
 }
 /*indents first line of paragraphs*/
 p{
   text-indent: 50px;
+  text-align: center;
 }
-/*to get rid of bullets and make a border*/
-/*creates a border around nav menu*/
-ul {
+/*aligns and puts border around nav*/
+.nav {
   list-style-type: none;
+  text-align: center;
   margin: 0;
   padding: 0;
-  width: 200px;
   border: 1px solid black;
 }
-/*for all li units*/
-li a {
-  display: block;
-  padding: 8px 16px;
-  text-align:center;
-  border-bottom: 1px solid black;
+/*makes nav menu horizontal*/
+.nav li {
+  display: inline-block;
+  padding: 20px;
+  font-size: 20px
+}
+h2{
+  height: 150px;
 }
 /* changes the link color on hover */
 li a:hover {
@@ -66,11 +62,15 @@ a:visited {
 /*forces image to the left of site*/
 img {
   float: left;
+  display: block;
 }
 h1{
 margin: auto;
 }
-.active {
-  background-color: green;
-  color: white;
+h3{
+  font-size: 35px;
+  border-top: 1px solid black
+}
+h5{
+  font-size: 20px;
 }
