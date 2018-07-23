@@ -1,0 +1,112 @@
+body {
+  background-color: #F5F5F5;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #373737;
+  padding: 20px;
+}
+
+/* unvisited link */
+
+a:link {
+  color: #373737;
+}
+
+/* visited link */
+
+a:visited {
+  color: #373737;
+}
+
+/* mouse over link */
+
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+
+a:active {
+  color: #373737;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+  background: white;
+}
+
+
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.Body_Images {
+  width: 580px;
+  height: 340px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.MeetDiana {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.cardsidecart {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid hotpink;
+  border-bottom: 1px solid hotpink;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+  .Body_Images {
+    width: 100%;
+    height: auto;
+  }
+  .Sidecart {
+    display: none !important;
+  }
+  .cardsidecart {
+    display: none !important;
+  }
+}
