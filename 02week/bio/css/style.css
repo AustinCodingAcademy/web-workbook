@@ -1,18 +1,22 @@
-*,*:before, *:after {
-    box-sizing:border-box; 
-}
-
+/* BODY CSS */
 body {
     background-color: rgb(247, 246, 239);
     font-family: 'Karla', sans-serif;
 }
 
-h1 {
+/* HEADER CSS */
+.header {
+    background-color: rgb(71, 166, 197);
+    padding: 10px;  
+    text-align: center;
+    width: 100%;
+}
+.header h1 {
     position: fixed;
     background-color: rgb(71, 166, 197);
-    color: rgb(249, 234, 214);
+    color: antiquewhite;
     padding: 10px;
-    font-size: 58px;
+    font-size: 48px;
     text-align: center;
     width: 100%;
     top: 0;
@@ -23,71 +27,49 @@ h1 {
     z-index: 100000;
 }
 
-div {
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-    margin-top: 23px;
+/* MAIN CSS */
+main {
+  display: flex; 
+  width: 560px;
+  margin: 0 auto;
 }
 
-section{
-    display: block;
+section {
+  margin: 5px;
+  margin-top: 73px;
+    
 }
 
-
-div.photo {
-    position: relative;
-    float: left;
-    margin-left: 280px;
+section .photo{
+  width: 230px;
+  margin-top: -33px;
+  margin-left: -55px;
 }
 
-div.contactInfo {
-    /* background-color: aquamarine; */
-    position: relative;
-    float: left;
-    clear: left;
-    margin-left: 520px;
-    margin-top: -20px;
-    width: auto;
-    font-weight: 1000;
+section .contactInfo {
+    line-height: 1.3em;
+    color: rgb(239, 123, 14);
 }
 
-div.links {
-    /* background-color: rgb(70, 239, 14); */
-    position: relative;
-    float: left;
-    clear: left;
-    margin-left: 520px;
-    width: auto;
-    height: auto;
-    line-height: 20px;
+section .links {
     font-size: 20px;
+    line-height: 1.3em;
 }
 
-a {
+section .links a {
     color: rgb(71,166,197);
     text-decoration: none !important;
 }
 
-a:hover {
+.section .links a:hover {
     color: rgb(239, 123, 14);
 }
 
-
-div.bio {
-    /* background-color: rgb(238, 195, 4); */
-    position: relative;
-    float: left;
-    clear: left;
-    padding-left: 15px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    margin-left: 520px;
-    width: 400px;
-    height: auto;
+section .bio {
+    padding: 15px;
     border: 3px;
+    line-height: 1.3em;
     border-style: solid;
     border-color: rgb(71, 166, 197);
-    background-color: rgba(71, 166, 197, 0.2);
-    font-size: 20px;
+    background-color: rgba(71, 166, 197, 0.2)
 }
