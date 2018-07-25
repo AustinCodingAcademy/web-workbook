@@ -1,3 +1,7 @@
+*,*:before, *:after {
+    box-sizing:border-box; 
+}
+
 body {
     background-color: rgb(247, 246, 239);
     font-family: 'Karla', sans-serif;
@@ -26,22 +30,31 @@ div {
     margin-top: 23px;
 }
 
-.photo {
-    float: left;
-    margin-left: 250px;
+section{
+    display: block;
 }
 
-.contactInfo {
+
+div.photo {
+    position: relative;
+    float: left;
+    margin-left: 280px;
+}
+
+div.contactInfo {
     /* background-color: aquamarine; */
+    position: relative;
     float: left;
     clear: left;
     margin-left: 520px;
-    margin-top: -40px;
+    margin-top: -20px;
     width: auto;
+    font-weight: 1000;
 }
 
-.links {
+div.links {
     /* background-color: rgb(70, 239, 14); */
+    position: relative;
     float: left;
     clear: left;
     margin-left: 520px;
@@ -61,8 +74,9 @@ a:hover {
 }
 
 
-.bio {
+div.bio {
     /* background-color: rgb(238, 195, 4); */
+    position: relative;
     float: left;
     clear: left;
     padding-left: 15px;
@@ -74,5 +88,6 @@ a:hover {
     border: 3px;
     border-style: solid;
     border-color: rgb(71, 166, 197);
-    background-color: rgba(71, 166, 197, 0.2)
+    background-color: rgba(71, 166, 197, 0.2);
+    font-size: 20px;
 }
