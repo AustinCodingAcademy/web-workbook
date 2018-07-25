@@ -2,47 +2,44 @@
 min and max-width to prevent content from moving when window squshies or expands */
 
 html {
-  font-family: "Madre Script", sans-serif;
-  font-weight: 400;
-  margin: 0;
-  min-width: 1300px;
-  max-width: 1300px;
-  position: absolute;
+  font-family: "Madre Script";
+  color: #333333;
 }
 
 /*Styles applied to navigation/header section */
 
 .heading {
   width: 100%;
-  height: 115px;
-  margin-top: 10px;
-  background-color: rgb(255, 255, 255, 0.9); /* rgba values to adjust opactiy */
-  position: fixed; /* fixed so that the nav bar sticks as you scroll down the page */
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(255, 255, 255, 0.9);
+  /* rgba values to adjust opactiy */
+  position: fixed;
+  /* fixed so that the nav bar sticks as you scroll down the page */
 }
 
 #logo {
-  height: 110px;
-  width: 150px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-left: 65px;
-  margin-right: 15px;
-  float: left; /* to place logo and nav on the same line */
+  height: 90px;
+  width: 100px;
+  padding-left: 50px;
+  padding-top: 10px;
 }
 
 nav {
-  color: black;
-  text-align: center;
-  word-spacing: 100px;
-  padding-top: 80px;
-  margin-left: 185px;
-  margin-right: 230px;
-  font-family: "Raleway";
+  width: 100%;
+  /* color: #333333; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Avenir";
 }
 
 nav>span {
-  font-size: 20px;
-  text-decoration: underline; /* applied to span so it only underlines beneath each word */
+  font-size: 18px;
 }
 
 nav>span:hover {
@@ -50,19 +47,21 @@ nav>span:hover {
 }
 
 /* End of navigation/header styling */
+
 /* Styling for welcome/landing page */
+
 .welcome {
   color: white;
   background-color: white;
-  height: 550px;
-  font-size: 70px;
+  height: 600px;
+  font-size: 72px;
   padding-top: 200px;
-  background-image: url("../img/fruitiness.jpg");
-  background-size: cover; /* Used to scale the image as large as possible without stretching it */
+  background-image: url("../img/smoothies.jpg");
+  background-size: cover;
+  /* Used to scale the image as large as possible without stretching it */
 }
 
 #mission {
-  padding-top: 175px; /* To center text in the photo's tray */
   text-align: center;
 }
 
@@ -71,25 +70,17 @@ nav>span:hover {
 /* Styling for About section */
 
 .about {
-  background-color: #D0E0AD;
+  background-color: white;
   height: 250px;
-  padding-top: 40px;
-  border-bottom: 2px dotted black;
-}
-
-/* About "header" */
-
-.about>p:nth-of-type(1) {
-  font-size: 48px;
-  text-align: center;
-  padding-bottom: 20px;
-  text-decoration: underline;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 /* About content */
 
-.about>p:nth-of-type(2) {
-  font-family: "Raleway";
+.about>p {
+  font-family: "Avenir";
   font-size: 20px;
   text-align: center;
   padding-left: 200px;
@@ -101,76 +92,36 @@ nav>span:hover {
 
 /* Styling for Menu */
 
-#menu_header {
-  background-color: #D0E0AD;
-  height: 50px;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  text-align: center;
-  text-decoration: underline;
-  font-size: 48px;
-}
-
-/* Separate classes for Juice to position and create columns */
-
-.juices1 {
-  background-color: #D0E0AD;
-  height: 450px;
-  padding-left: 225px; /* Positioning/centering my columns without flexbox */
-  padding-right: 50px;
-  font-family: "Raleway";
+.menu {
+  height: 500px;
+  background-color: #f0f0f5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Avenir";
   font-size: 18px;
   line-height: 50px;
-  text-align: left;
-  float: left; /* Placing both columns side by side */
-}
-
-.juices2 {
-  background-color: #D0E0AD;
-  height: 450px;
-  font-family: "Raleway";
-  font-size: 18px;
-  line-height: 50px;
-  text-align: left;
-  border-bottom: 2px dotted black; /* border applied to column without specified width so it spans entire page */
 }
 
 /* Used to bold names of juice */
+
 [type=name] {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 /* End of Menu styling */
 
 /* Styling for location section */
 
-#locations_header {
-  height: 50px;
-  background-color: #D0E0AD;
-  text-decoration: underline;
-  text-align: center;
-  font-size: 48px;
-  padding-top: 40px;
-  padding-bottom: 20px;
-}
-
-#location1 {
-  height: 150px;
-  width: 250px;
-  background-color: #D0E0AD;
-  font-family: "Raleway";
-  font-size: 18px;
-  padding-left: 450px; /* Positioning section with flexbox */
-  line-height: 30px;
-  float: left;
-}
-
-#location2 {
-  height: 150px;
-  background-color: #D0E0AD;
-  font-family: "Raleway";
-  font-size: 18px;
-  border-bottom: 2px dotted black; /* border applied to column without specified width so it spans entire page */
+.locations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+  font-family: "Avenir";
+  font-size: 20px;
   line-height: 30px;
 }
 
@@ -179,20 +130,13 @@ nav>span:hover {
 /* Styling for contact section */
 
 .contact {
-  background-color: #D0E0AD;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f5;
   height: 250px;
-  padding-top: 40px;
-}
-
-#contact_header {
-  font-size: 48px;
-  text-align: center;
-  padding-bottom: 20px;
-  text-decoration: underline;
-}
-
-.contact>p:not(#contact_header) { /* Excluded the header to maintain script font and previous styling */
-  font-family: "Raleway";
+  font-family: "Avenir";
   font-size: 20px;
   line-height: 30px;
   text-align: center;
