@@ -7,6 +7,11 @@ main {
     margin: auto;
 }
 
+nav {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 h1 {
     font-family: Helvetica;
     font-weight: 500;
@@ -17,10 +22,10 @@ h1:hover {
     color: gray;
 }
 
-nav {
-    text-align: center;
-    margin-bottom: 10px;
+p:nth-of-type(1):hover:first-letter {
+    font-size: 120%;
 }
+
 a {
     font-family: Helvetica;
     font-weight: 300;
@@ -44,6 +49,11 @@ article {
     border-color: #bbbbbb;
     background-color: #ffffff;
     margin-bottom: 1px;
+    transition: all 1s;
+}
+
+.boom:hover {
+    transform: scale(1.05);
 }
 
 .pubDate {
