@@ -1,7 +1,6 @@
 body {
     background-color: rgb(247, 246, 239);
     font-family: 'Karla', sans-serif;
-    align-content: center;
 }
 
 h1 {
@@ -21,18 +20,19 @@ h1 {
 }
 
 main {
-    position: relative;
-    margin-left: 105px;
+    display: flex; 
+    width: 760px;
+    margin: 0 auto;
+    word-wrap: break-word;
+  }
+
+  div.column1 {
+    float: left;
 }
 
 h2.column {
     font-size: 55px;
     margin-bottom: -5px;
-}
-
-div.column1 {
-    float: left;
-    margin-left: 19%;
 }
 
 div.column {
@@ -42,27 +42,19 @@ div.column {
 div.top {
     margin-top: 82px;
 }
+
 img {
+    width: 200px;
     margin-top: 75px;
     padding: 15px;
-    align-content: center;
-}
-
-div.social {
-    line-height: 1px;
-}
-
-a {
-    text-decoration: none;
 }
 
 h3 {
-    /* color: rgb(20, 161, 62); */
-    word-wrap: break-word;
+    color: rgb(239, 123, 14);
 }
 
 p {
-    word-wrap: break-word;
+    margin-top: -14px;
 }
 
 p.date {
@@ -70,14 +62,24 @@ p.date {
     color: rgb(71, 166, 197);
 }
 
-ul {
+/* ul {
     word-wrap: break-word;
-}
+} */
 
 ul.list {
     margin-top: -18px;
 }
 
-li {
-    word-wrap: break-word;
+.jobTitle {
+    margin-top: -18px;
+    color: rgb(71, 166, 197);
 }
+
+@media (max-width: 760px) {
+    .column1 {
+      display: none;
+    }
+    main {
+      width: 100%;
+    } 
+  }
