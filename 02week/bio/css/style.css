@@ -1,22 +1,14 @@
-/* BODY CSS */
+/* BODY STYLES */
 body {
     background-color: rgb(247, 246, 239);
     font-family: 'Karla', sans-serif;
 }
 
-/* HEADER CSS */
+/* HEADER STYLES */
 .header {
-    background-color: rgb(71, 166, 197);
-    padding: 10px;  
-    text-align: center;
-    width: 100%;
-}
-.header h1 {
     position: fixed;
     background-color: rgb(71, 166, 197);
-    color: antiquewhite;
     padding: 10px;
-    font-size: 48px;
     text-align: center;
     width: 100%;
     top: 0;
@@ -26,40 +18,53 @@ body {
     margin-top: 0;
     z-index: 100000;
 }
+.header h1 {
+    color: rgb(249, 234, 214);
+    font-size: 48px;
+    text-shadow: 2px 2px rgb(239, 123, 14);
+    margin: 0.2px;
+}
 
-/* MAIN CSS */
+/* MAIN STYLES */
 main {
   display: flex; 
-  width: 560px;
+  width: 660px;
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 80px;
 }
 
 section {
-  margin: 5px;
+  margin: 1px;
   margin-top: 13px;
-    
 }
 
 section .photo{
-  width: 230px;
-  margin-top: -33px;
+  width: 300px;
+  margin-top: -110px;
   margin-left: -55px;
 }
 
+section .jobTitle {
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 1em;
+    color: rgb(239, 123, 14);
+}
+
 section .contactInfo {
-    line-height: 1.3em;
+    font-size: 20px;
+    line-height: 1em;
     color: rgb(239, 123, 14);
 }
 
 section .links {
-    font-size: 20px;
-    line-height: 1.3em;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2em;
 }
-
 section .links a {
     color: rgb(71,166,197);
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 section .links a:hover {
@@ -67,10 +72,23 @@ section .links a:hover {
 }
 
 section .bio {
+    font-size: 19px;
     padding: 15px;
     border: 3px;
-    line-height: 1.3em;
+    -webkit-hyphens: manual;
+    -ms-hyphens: manual;
+    hyphens: manual;
+    line-height: 1.2em;
     border-style: solid;
     border-color: rgb(71, 166, 197);
     background-color: rgba(71, 166, 197, 0.2)
+}
+
+@media (max-width: 660px) {
+  .photo {
+    display: none;
+  }
+  main {
+    width: 100%;
+  } 
 }
