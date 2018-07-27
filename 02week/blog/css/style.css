@@ -1,17 +1,30 @@
 
 body{
     background-color: lightgray; 
+    font-family: Arial, Helvetica, sans-serif	
 }
-article{
-
-    
+article{   
     margin-bottom: 20px;
     background-color: darkgray;
     margin-top: 0px;
-
     overflow: auto;
 }
 
 article>h1{
     margin-top: 2px;
+    margin-bottom: 4px;
+    font-variant: small-caps;
+}
+article>h1::first-letter{
+    color: rgb(255, 0, 0);
+}
+
+article p:nth-of-type(1):hover::first-letter{
+    color: rgb(255, 0, 0);
+}
+
+
+.pubDate{
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
