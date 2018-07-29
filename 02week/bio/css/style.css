@@ -32,17 +32,42 @@ nav a {
     margin-left: 5px;
 }
 
+.overlay {
+    float: right;
+    margin: -85 -175 0 0;
+    height: 175px;
+    width: 175px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+    border-radius: 175px;
+}
+
 .headShot img {
     width: 175px;
     height: 175px;
     border-radius: 250px;
     float: right;
-    margin: -75 350 0 0;
+    margin: -85 375 0 0;
+    display: block;
 }
 
-.headshot:hover {
-    transform: inherit;
-    opacity: 0.5;
+.myResumeText {
+    font-size: 20px;
+    font-family: Helvetica;
+    font-weight: 100;
+    text-decoration: none;
+    color: white;
+    margin: 75 0 0 0;
+    text-align: center;
+}
+
+.imageContainer a:visited {
+    color: inherit;
+}
+
+.imageContainer:hover .overlay {
+    opacity: 1;
 }
 
 .aboutMe {
