@@ -1,3 +1,6 @@
+/*Global font inheritence is more inheritance
+than I ever got*/
+
 
 body{
     background-color: lightgray; 
@@ -6,10 +9,13 @@ body{
 article{   
     margin-bottom: 20px;
     background-color: darkgray;
-    margin-top: 0px;
-    overflow: auto;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px
 }
-
+main{
+    background-color: white;
+}
 article>h1{
     margin-top: 2px;
     margin-bottom: 4px;
@@ -19,12 +25,23 @@ article>h1::first-letter{
     color: rgb(255, 0, 0);
 }
 
+/*Because of the format of our article, that ends
+up being the date rather than the paragraph 
+with the bulk data. */
 article p:nth-of-type(1):hover::first-letter{
     color: rgb(255, 0, 0);
 }
 
 
 .pubDate{
-    margin-top: 2px;
+    margin-top: 2px !important;
     margin-bottom: 2px;
+}
+
+/*Not a useful use of important, but I understand
+how one would find it useful, and also why it is
+likely horrible to use and neigh imposible
+to see it being mintainted as a codebase*/ 
+.pubDate{
+    margin-top: 50000000px;
 }
