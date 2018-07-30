@@ -6,41 +6,49 @@
   <title>Airplane</title>
   <link rel="stylesheet" href="./css/style.css" />
 </head>
+
 <body>
-  <div class="NavBar">
-    <h1>UX Atlantic</h1>
-    <div class="NavIcons">
-      <ul>
-        <li>
-          Home
-        </li>
-        <li>
-          Travel Deals
-        </li>
-        <li>
-          Flight Schedule
-        </li>
-        <li>
-          Register/Login
-        </li>
-      </ul>
+  <header>
+    <div class="NavBar">
+      <h1>
+      <img class="Logo" src="./img/logo.png" alt="Logo" />
+      </h1>
+      <div class="NavButtons">
+        <img src="./img/home-icon.png" />
+        <a href='a'>Home</a>
+        <img src="./img/deal-icon.png" />
+        <a href='a'>Travel Deals</a>
+        <img src="./img/schedule-icon.png" />
+        <a href='a'>Flight Schedule</a>
+        <img src="./img/login-icon.png" />
+        <a href='a'>Register/Login</a>
+      </div>
+      </div>
+  </header>
+
+  <article>
+    <div class="SearchBox">
+      <div class="Buttons">
+        <button>Plane</button>
+        <button>Bed</button>
+        <button>Car</button>
+      </div>
+      <div class="Inputs">
+        <div class="FirstRow">
+        <form>
+          <input type="text" class="depart-field" placeholder="Depart" />
+          <input type="text" class="arrive-field" placeholder="Arrive" />
+        </form>
+      </div>
+      <div class="SecondRow">
+        <form>
+          <input type="date" class="departure-date" placeholder="mm/dd/yy" />
+          <input type="date" class="arrival-date" placeholder="mm/dd/yy" />
+        </form>
+      </div>
+      </div>
     </div>
-  </div>
-
-<div class="SearchBox">
-  <p class="Depart">
-    Depart
-  </p>
-  <p class="Arrive">
-    Arrive
-  </p>
-  <p class="date1">
-    mm/dd/yyyy
-  </p>
-  <p class="date2">
-    mm/dd/yyyy
-  </p>
-</div>
-
+  </article>
 </body>
+
 </html>
