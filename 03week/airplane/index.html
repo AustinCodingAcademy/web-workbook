@@ -15,65 +15,70 @@
         <nav class="head">
           <ul class="nav">
             <li>
-              <a href="home">Home</a>
+              <img src="img/home-icon.png" />
+              <a href="index.html">  Home</a>
             </li>
             <li>
-              <a href="traveldeals">Travel Deals</a>
+              <img src="img/deal-icon.png" />
+              <a href="index.html">  Travel Deals</a>
             </li>
             <li>
-              <a href="home">Flight Schedule</a>
+              <img src="img/schedule-icon.png" />
+              <a href="index.html">  Flight Schedule</a>
             </li>
             <li>
-              <a href="home">Register/Login</a>
+              <img src="img/login-icon.png" />
+              <a href="index.html">  Register/Login</a>
             </li>
           </ul>
         </nav>
       </header>
+
       <div class="main">
 
         <div class="top">
-          <div>
-            <!-- fligh box -->
-          </div>
-          <div>
-            <!-- bed box -->
-          </div>
-          <div>
-            <!-- car box -->
-          </div>
+            <a class="icon" href=""><img src="img/plane-icon.png" /></a>
+        </div>
+
+        <div class="top">
+            <a class="icon" href=""><img src="img/hotel-icon.png" /></a>
+        </div>
+
+        <div class="top">
+            <a class="icon" href=""><img src="img/car-icon.png" /></a>
         </div>
 
         <div class="middle1">
-          <div>
-            <!-- depart -->
-          </div>
-          <div>
-            <!-- arrive -->
-          </div>
+            <input type="text" class="depart-field" placeholder="Depart" />
+            <input type="text" class="arrive-field" placeholder="Arrive" />
         </div>
 
         <div class="middle2">
-          <div>
-            <!-- first date -->
-          </div>
-          <div>
-            <!-- second date -->
-          </div>
+          <input type="text" class="depart-date" placeholder="mm/dd/yyyy" />
+          <input type="text" class="arrive-date" placeholder="Arrive" />
         </div>
 
         <div class="middle3">
-          <div>
-            <!-- passengers-radio button -->
-          </div>
-          <div>
-            <!-- return, one way -->
-          </div>
-        </div>
+            <p class="passengers">
+              Passengers
+            </p>
+            <select class="value" name="option">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+              <div class="around">
+                <input class="round" type="radio" name="type" value="Return" checked>
+                  <label>Return</label>
+
+                <input class="round" type="radio" name="type" value="One Way">
+                  <label>One Way</label>
+              </div>
+            </div>
 
         <div class="bottom">
-          <div>
-            <!-- search flights -->
-          </div>
+            <a class="four" href="">Search Flights</a>
         </div>
 
       </div>
