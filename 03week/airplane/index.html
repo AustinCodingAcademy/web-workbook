@@ -4,15 +4,14 @@
 <head>
   <meta charset="utf-8" />
   <title>Airplane</title>
+  <link rel="stylesheet" href="./css/reset.css" />
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
   <header>
     <div class="NavBar">
-      <h1>
       <img class="Logo" src="./img/logo.png" alt="Logo" />
-      </h1>
       <div class="NavButtons">
         <img src="./img/home-icon.png" />
         <a href='a'>Home</a>
@@ -29,9 +28,15 @@
   <article>
     <div class="SearchBox">
       <div class="Buttons">
-        <button>Plane</button>
-        <button>Bed</button>
-        <button>Car</button>
+        <div class="PlaneBtn">
+          <img src="./img/plane-icon.png" />
+        </div>
+        <div class="BedBtn">
+          <img src="./img/hotel-icon.png" />
+        </div>
+        <div class="CarBtn">
+          <img src="./img/car-icon.png" />
+        </div>
       </div>
       <div class="Inputs">
         <div class="FirstRow">
@@ -45,6 +50,21 @@
           <input type="date" class="departure-date" placeholder="mm/dd/yy" />
           <input type="date" class="arrival-date" placeholder="mm/dd/yy" />
         </form>
+      </div>
+      <div class="ThirdRow">
+        <form>
+          Passengers
+          <input type="number" class="passengers" placeholder="1" />
+<div class="Radios">
+          Return
+          <input type="radio" class="return" value="Return"  />
+          One Way
+          <input type="radio" class="oneway" value="One Way" />
+        </div>
+        </form>
+      </div>
+      <div class="Search">
+        Search Flights
       </div>
       </div>
     </div>
