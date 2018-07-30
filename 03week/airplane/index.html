@@ -26,30 +26,43 @@
     <main>
         
         <article>
-            <div class="buttons">
+            <div class="button">
                 <button type="button"><img src="img/plane-icon.png"></button>
                 <button type="button"><img src="img/hotel-icon.png"></button>
                 <button type="button"><img src="img/car-icon.png"></button>
             </div>
 
             <div>
-                <input>
-                <input>
+                <input placeholder="Depart">
+                <input placeholder="Arrive">
             </div>
 
             <div>
-                <input>
-                <input>
+                <input type="date">
+                <input type="date">
             </div>
 
             <div>
                 <!-- Passengers -->
+                Passengers
                 <!-- Dropdown -->
+                <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                </select>
                 <!-- Radio -->
+                    <input type="radio" id="return" name="trip" checked />
+                    <label for="return">Return</label>
+        
+                    <input type="radio" id="oneWay"  name="trip"/>
+                    <label for="oneWay">One Way</label>
             </div>
 
             <div>
                 <!-- Button -->
+                <button type="button">Search Flights</button>
             </div>
 
         </article>
