@@ -27,40 +27,40 @@
         
         <article>
             <div class="button">
-                <button type="button"><img src="img/plane-icon.png"></button>
-                <button type="button"><img src="img/hotel-icon.png"></button>
-                <button type="button"><img src="img/car-icon.png"></button>
+                <button type="button" class="plane"><img src="img/plane-icon.png"></button>
+                <button type="button" class="hotel"><img src="img/hotel-icon.png"></button>
+                <button type="button" class="car"><img src="img/car-icon.png"></button>
             </div>
 
             <div>
-                <input placeholder="Depart">
-                <input placeholder="Arrive">
+                <input class="depart" placeholder="Depart">
+                <input class="arrive" placeholder="Arrive">
             </div>
 
             <div>
-                <input type="date">
-                <input type="date">
+                <input class="departDate" type="date">
+                <input class="arriveDate" type="date">
             </div>
 
-            <div>
+            <div class="passengers">
                 <!-- Passengers -->
                 Passengers
                 <!-- Dropdown -->
-                <select>
+                <select class="passengersSelect">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                 </select>
                 <!-- Radio -->
-                    <input type="radio" id="return" name="trip" checked />
+                    <input class="return" type="radio" id="return" name="trip" checked />
                     <label for="return">Return</label>
         
-                    <input type="radio" id="oneWay"  name="trip"/>
+                    <input class="oneWay" type="radio" id="oneWay"  name="trip"/>
                     <label for="oneWay">One Way</label>
             </div>
 
-            <div>
+            <div class="searchFlights">
                 <!-- Button -->
                 <button type="button">Search Flights</button>
             </div>
