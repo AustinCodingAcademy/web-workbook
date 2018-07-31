@@ -4,12 +4,10 @@ var cart = [];
 
 function countItems(){
   console.log("start countItems function");
-  var items = document.querySelectorAll(".items");
-  displayCount(items.length);
+  var cart = document.querySelectorAll(".cart");
+  displayCount(cart.length);
   console.log("end countItems function");
 }
-
-countItems();
 
 function displayCount(items){
   console.log("start displayCount")
@@ -17,7 +15,7 @@ function displayCount(items){
   console.log("the node I just fetched is", node);
   var i = parseInt(node.innerHTML);
   console.log("the old value is", i);
-  var n = i + items;
+  var n = items;
   console.log("the n value is", n);
   node.innerHTML = n;
 }
@@ -28,6 +26,7 @@ function addDiv(itemNum){
   var id = addID();
   console.log("the id I just added is", id);
   parentDiv.setAttribute("id", id);
+  parentDiv.setAttribute("class", "cart");
   var newDiv = document.createElement("DIV");
   var itemName = document.getElementById(itemNum).innerHTML;
   var text = document.createTextNode(itemName);
@@ -41,7 +40,7 @@ function addDiv(itemNum){
   newButton.appendChild(value);
   parentDiv.appendChild(newButton);
   cart.appendChild(parentDiv);
-
+  countItems();
   console.log("end addDiv function");
 }
 
@@ -55,4 +54,5 @@ function removeItem(id){
   var item = document.getElementById(id);
   var parent = item.parentNode;
   parent.removeChild(item);
+  countItems();
 }
