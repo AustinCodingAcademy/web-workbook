@@ -1,0 +1,117 @@
+<!doctype>
+<html>
+<head><link rel="stylesheet" href="css-resume/stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madelines Resume</title>
+<h1><font size="8">Madeline Quitta-Carney</font></h1> 
+<h3> web design</h3>
+<h4> <a href="resume.html"> my bio </a> &emsp; &emsp; 
+    <a href="my-education-link.html"> my education </a> &emsp; &emsp; 
+    my resume</h4>
+</head> 
+<body>
+        <div valign="top" class="rs-text">
+                Ted Carney D.D.S, Smithville, Texas <br>
+                Jan 10th , 2017 - Dec 28th , 2017 <br>
+                Dental Assistant <br>
+                <font size="3"> Dental Assisting & Office Administration: customer service/patient care & education;
+                Patient intake (forms & record analysis for incomplete or missing information; apply critical
+                thinking to identify & understand the types of documents/information needed; complete electronic data
+                entry to document work concisely & accurately & file documents/records per office procedures; use critical
+                thinking to analyze & react to solve issues/problems that arise; communicate effectively (orally and written); 
+                ability to establish rapport with & relate to external customers to establish & maintain a harmonious 
+                relationship; ability to respond to patient inquiries & escalate issues in a timely manner; understand 
+                & carry out complex instructions; knowledge of computers & internet usage & skill in the use of standard office 
+                equipment & software; elicit, relate & evaluate information & interpret terms as needed; ability to complete 
+                required work within specified deadlines, managing multiple, sometimes conflicting priorities; work in a setting 
+                which required multi-tasking; understand, & apply a variety of interrelated instructions, such as those found in 
+                guidelines, policies, law & regulations; knowledgeof security regarding personal identifiable information; ability 
+                to maintain effective & professional working relationships with others/team & communicate effectively with tact & 
+                diplomacy; planning, problem solving, decision making & execution; attend work on a regular, defined schedule in 
+                accordance with job duties & office hours; perform other duties as assigned.
+            </font>  <br><br>
+                Texas Dept. of Assistive & Rehabilitative Services, Austin, Texas<br>
+                June 01, 2015 – Aug 31, 2015<br>
+                Part-time summer Office Assist. (High School Program)<br>
+                <font size="3">Knowledge of standard office equipment & software; filing, copying, shredding; ability to maintain 
+                effective & professional working relationships with others/team & communicate effectively with tact & diplomacy; 
+                attend work on a regular, defined schedule in accordance with job duties & office hours; performed other duties 
+                as assigned.
+                </font>
+             </div>
+             <div valign="top" class="rs-text1">  
+                Stepping Stone School, Austin, Texas <br>
+                May 24, 2016 - Dec 30, 2016<br>
+                Child Care Teacher<br>
+                <font size="3"> Planning of educational & developmental activities; ability to understand, and apply a variety of 
+                interrelated instructions, such as those found in school guidelines and policies; ability to communicate verbally 
+                and in writing; customer service with parents; ability to establish rapport with and relate to parents & children; 
+                ability to maintain effective working relationships with others/team; use critical thinking to analyze & react to 
+                solve issues/problems that arise; communicate effectively (orally and written) to varied audiences; ability to 
+                establish rapport with & relate to external customers/parents to establish & maintain a harmonious relationship; 
+                ability to respond to parent inquiries & escalate issues in a timely manner; understand & carry out complex 
+                instructions; knowledge of school policies; ability to complete required work within specified deadlines, managing 
+                multiple, sometimes conflicting priorities; work in a setting which required multi-tasking; ability to understand, & 
+                apply a variety of interrelated instructions; ability to maintain effective & professional working relationships with 
+                others/team & communicate effectively with tact & diplomacy; planning, problem solving, decision making & execution; 
+                attend work on a regular, defined schedule in accordance with job duties & office hours; perform other duties as 
+                assigned.
+                </font> <br><br>
+                Ted Carney D.D.S, Smithville, Texas<br>
+                June 01, 2014 – Aug 15, 2014<br>
+                Office Assistant<br>
+                <font size="3"></font>Knowledge of computers and internet usage; skill in the use of standard office equipment and software; light janitorial
+                work; filing and documentation; apply critical thinking to identify & understand the types of documents/information needed; 
+                complete electronic data entry to document work concisely & accurately & file documents/records per office procedures; use 
+                critical thinking to analyze & react to solve issues/problems that arise; communicate effectively (orally and written) to 
+                varied audiences; ability to establish rapport with & relate to external customers to establish & maintain a harmonious 
+                relationship; ability to respond to patient inquiries & escalate issues in a timely manner; understand & carry out complex 
+                instructions; elicit, relate & evaluate information & interpret terms as needed; ability to complete required work within 
+                specified deadlines, managing multiple, sometimes conflicting priorities; work in a setting which required multi-tasking; 
+                ability to understand, & apply a variety of interrelated instructions; knowledge of security regarding personal identifiable 
+                information; ability to maintain effective & professional working relationships with others/team & communicate effectively 
+                with tact & diplomacy; planning, problem solving & decision making; attend work on a regular, defined schedule in accordance 
+                with job duties & office hours; perform other duties as assigned.
+            </font>
+                    </div>
+                    <div valign="center" class="rs-text2"> 
+                            REFERENCES:<br>
+                            <font size="3">Vicki Ramirez<br>
+                            Previous director of<br>
+                            Stepping Stone School<br>
+                            (512) 876-3799<br>
+                            <br>
+                            Laron Branton<br>
+                            Supervisor<br>
+                            Ted Carney D.D.S<br>
+                            (512) 237-4420<br>
+                            <br>
+                            Michael Gayle<br>	
+                            Babysitter parent<br>
+                            512-507-7163<br>
+                        </font></div>
+ </body>
+    <footer>
+            <div class="footer-text">
+               <table
+                    <tr>
+                    <th>(512)705-1075 </th>
+                    <th>&emsp;&emsp;&emsp;</th>
+                    <th>maddiequitta@yahoo.com</th>
+                    <th>&emsp;&emsp;&emsp;</th>
+                    <th><link rel="url" href="maddie-linkedin.url">
+                        https://www.linkedin.com/in/<br>madeline-quitta-carney-844381149/</th>
+                    <th>&emsp;&emsp;&emsp;</th>
+                    <th>https://github.com/maddieqc</th>
+                    </tr>
+                        <?php while ($row= mysql_fetch_array($result)) { ?>
+                            <tr>
+                                <td width="150"><?php h($row['vAuthor']) ?></td>
+                                <td><?php h($row['cQuotes']) ?></td>
+                                <td><?php h($row['cArabic']) ?></td>
+                                <td><?php h($row['vReference']) ?></td>
+                            </tr>
+                        <?php } ?>
+                        </table></div>
+        </footer>
+</html>
