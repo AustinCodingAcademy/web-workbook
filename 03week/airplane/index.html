@@ -25,13 +25,25 @@
         </header>
         <main>
           <section>
+            <div class="tabs">
+                <img src="img/plane-icon.png">
+                <img src="img/hotel-icon.png">
+                <img src="img/car-icon.png">
+            </div>
             <form>
+               <div>
                 <label for="depart">Depart</label>
-                <input name="depart" id="depart" type="date" placeholder="Depart" required><br>
-                <label for="arrive">arrive</label>
-                <input name="Arrive" id="arrive" type="date" placeholder="Depart" required><br>  
+                <input name="depart" id="depart" type="date" placeholder="Depart" required>
+                <label for="arrive">Arrive</label>
+                <input name="Arrive" id="arrive" type="date" placeholder="Depart" required> 
+               </div>
+               <label for="passenger">Passengers</label>
+               <input type="number" min="1" max="100" value="1">
+               <input type="radio" name="trip" value="Return" checked> Return<br>
+               <input type="radio" name="trip" value="One Way"> One Way<br>
+  
             </form>
-              
+              <button type="button">Search Flights</button>
           </section>
         </main>
       </div>
