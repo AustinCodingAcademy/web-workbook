@@ -8,6 +8,10 @@ body {
     width: 100%;
 }
 
+a:link {
+    text-decoration: none;
+}
+
 header {
     position: fixed;
     height: 85px;
@@ -33,7 +37,7 @@ nav {
     font-size: 13px;
     font-weight: 400;
     text-justify: auto;
-    color: #AEB9CD;
+    color: #FFFDF5;
     text-decoration: none;
     text-justify: center;
     float: left;
@@ -103,7 +107,7 @@ section {
     font-size: 15px;
     background-color: rgba(0, 0, 0, 0.0);
     border: 2px solid;
-    border-color: #AEB9CD;
+    border-color: #FFFDF5;
     border-radius: 4px;
     padding: 10px;
     margin-top: 30px;
@@ -116,7 +120,7 @@ section {
     font-size: 15px;
     background-color: rgba(0, 0, 0, 0.0);
     border: 2px solid;
-    border-color: #AEB9CD;
+    border-color: #FFFDF5;
     border-radius: 4px;
     padding: 10px;
     margin-top: 30px;
@@ -127,13 +131,13 @@ section {
 .departDate {
     font-family: Helvetica, sans-serif;
     font-size: 15px;
-    color: #AEB9CD;
+    color: #FFFDF5;
     line-height: 30px;
     width: 130px;
     height: 30px;
     background-color: rgba(0, 0, 0, 0.0);
     border: 2px solid;
-    border-color: #AEB9CD;
+    border-color: #FFFDF5;
     border-radius: 4px;
     padding: 10px;
     margin-top: 30px;
@@ -144,13 +148,13 @@ section {
 .returnDate {
     font-family: Helvetica, sans-serif;
     font-size: 15px;
-    color: #AEB9CD;
+    color: #FFFDF5;
     line-height: 30px;
     width: 130px;
     height: 30px;
     background-color: rgba(0, 0, 0, 0.0);
     border: 2px solid;
-    border-color: #AEB9CD;
+    border-color: #FFFDF5;
     border-radius: 4px;
     padding: 10px;
     margin-top: 30px;
@@ -161,23 +165,65 @@ section {
 .passengers {
     font-family: Helvetica, sans-serif;
     font-size: 15px;
-    color: #AEB9CD;
+    color: #FFFDF5;
     font-weight: 500;
     margin-top: 40px;
     margin-left: 40px;
     float: left;
 }
 
-.passengerQty {
-    width: 36px;
+.passengerQty select {
     font-family: Helvetica, sans-serif;
     font-size: 15px;
-    color: #AEB9CD;
+    color: #FFFDF5;
+    line-height: 30px;
+    width: 60px;
+    height: 45px;
     border: 2px solid;
     border-radius: 4px;
     margin-top: 30px;
-    margin-left: 20px;
-    border-color: #AEB9CD;
-    padding: 10px 5px 10px 10px;
+    margin-left: 16px;
+    padding-left: 4px;
     float: left;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../img/arrow-216-16.ico) right / 20% no-repeat #183A55;
+}
+
+.radioButtons {
+    display: block;
+    position: relative;
+    float: left;
+    font-family: Helvetica, sans-serif;
+    color: #FFFDF5;
+    font-size: 14px;
+    margin-top: 40px;
+    margin-left: 55px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radioButtons input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.search {
+    position: auto;
+    font-family: Helvetica, sans-serif;
+    color: #FFFDF5;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    width: 410px;
+    height: 50px;
+    background-color: #0063bb;
+    clear: both;
+    margin: auto;
+    margin-top: 180px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 4px;
 }
