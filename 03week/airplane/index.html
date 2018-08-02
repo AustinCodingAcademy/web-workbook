@@ -31,17 +31,20 @@
                 <img src="img/car-icon.png">
             </div>
             <form>
-               <div>
+               <div class="depart">
                 <label for="depart">Depart</label>
                 <input name="depart" id="depart" type="date" placeholder="Depart" required>
+               </div>
+               <div class="arrive">
                 <label for="arrive">Arrive</label>
                 <input name="Arrive" id="arrive" type="date" placeholder="Depart" required> 
                </div>
                <label for="passenger">Passengers</label>
                <input type="number" min="1" max="100" value="1">
+               <div class="whichWay">
                <input type="radio" name="trip" value="Return" checked> Return<br>
                <input type="radio" name="trip" value="One Way"> One Way<br>
-  
+               </div>
             </form>
               <button type="button">Search Flights</button>
           </section>
