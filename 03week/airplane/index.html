@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Airplane</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <!-- For some reason, specifying font in CSS broke my header, so I didn't -->
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="NavBar">
+      <img class="Logo" src="./img/logo.png" alt="Logo" />
+      <div class="NavButtons">
+        <img src="./img/home-icon.png" />
+        <a href='a'>Home</a>
+        <img src="./img/deal-icon.png" />
+        <a href='a'>Travel Deals</a>
+        <img src="./img/schedule-icon.png" />
+        <a href='a'>Flight Schedule</a>
+        <img src="./img/login-icon.png" />
+        <a href='a'>Register/Login</a>
+      </div>
+      </div>
+  </header>
+<!-- Header contains the logo as well as the different navigable icons-->
+
+<!-- Article is the search box on the page -->
+  <article>
+    <div class="SearchBox">
+      <div class="Buttons">
+        <div class="PlaneBtn">
+          <img src="./img/plane-icon.png" />
+        </div>
+        <div class="BedBtn">
+          <img src="./img/hotel-icon.png" />
+        </div>
+        <div class="CarBtn">
+          <img src="./img/car-icon.png" />
+        </div>
+      </div>
+      <!-- Buttons above are not actual buttons but are colored boxes meant to mimic buttons -->
+      <!-- Buttons below are functional buttons -->
+      <div class="Inputs">
+        <div class="FirstRow">
+        <form>
+          <input type="text" class="depart-field" placeholder="Depart" />
+          <input type="text" class="arrive-field" placeholder="Arrive" />
+        </form>
+      </div>
+      <div class="SecondRow">
+        <form>
+          <input type="date" class="departure-date" placeholder="mm/dd/yy" />
+          <input type="date" class="arrival-date" placeholder="mm/dd/yy" />
+        </form>
+      </div>
+      <div class="ThirdRow">
+        <form>
+          Passengers
+          <input type="number" class="passengers" placeholder="1" />
+<div class="Radios">
+          Return
+          <input type="radio" class="return" value="Return"  />
+          One Way
+          <input type="radio" class="oneway" value="One Way" />
+        </div>
+        </form>
+      </div>
+      <button type="button" class="SearchButton">Search Flights</button>
+      </div>
+    </div>
+  </article>
+</body>
+
+</html>
