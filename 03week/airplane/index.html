@@ -3,56 +3,59 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AIRMAN</title>
+    <title>AIRMANE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     </head>
 <body>
-    <div id="container">
-    <header>
-        <div class="logo">
-        <h1><img src="./img/logo.png"></h1>
-        </div>
-        <div class="menu">
-        <img src="./img/home-icon.png" href="#" height="15px" width="15px" >
-        <a href="#">Home</a>
-        <img src="./img/deal-icon.png" height="15px" width="15px">
-        <a href="#">Travel Deals</a>
-        <img src="./img/schedule-icon.png" height="15px" width="15px">
-        <a href="#">Flight Schedule</a>
-        <img src="./img/login-icon.png">
-        <a href="#">Register/Login</a>
-        </div>
-    </header>
-    <hr>
-    <main>
-        <section>
-        <div class="buttons">
-                <button><img src="./img/plane-icon.png" height="50px" width="50px"></button>
-                <button>
-                    <img src="./img/hotel-icon.png" height="50px" width="50px">
-                </button>
-                <button>
-                    <img src="./img/car-icon.png" height="50px" width="50px">
-                </button>
-        </div>
-        <div class="depart-arive">
-            <input placeholder="Depart">
-            <input placeholder="Arive">
-        </div>
-        <div class="dates">
-            <input placeholder="mm/dd/yyyy">
-            <input placeholder="mm/dd/yyyy">
-        </div>
-        <div class="radio">
-            <input type="radio"><label>Return</label>
-            <input type="radio"><label>One-Way</label>
-        </div>
-        <div class="flight-button">
-        <button>Search Flights</button>
-        </div>
-        </section>
-        </main>
-        </div>
-</body>
-</html>
+        <div class="headercointainer">
+                <header>
+                    <h1 class="mainlogo"><img src="./img/logo.png" alt="Main Logo"></h1>
+                    <nav>
+                        <ul class="navbar">
+                            <li class="navitems"><img src="./img/home-icon.png" alt="home icon"> Home</li>
+                            <li class="navitems"><img src="./img/deal-icon.png" alt="deal icon"> Travel Deals</li>
+                            <li class="navitems"><img src="./img/schedule-icon.png" alt="schedule icon"> Flight Schedule</li>
+                            <li class="navitems"><img src="./img/login-icon.png" alt="login icon"> Register/Login</li>
+                        </ul>
+                    </nav>
+                </header>
+            
+            
+            <main>
+                
+        
+                <article>
+                    <div class="tabbuttons">
+                        <div class="tabbutton"><img src="./img/plane-icon.png" alt="Plane Icon"></div>
+                        <div class="tabbutton"><img src="./img/hotel-icon.png" alt="Hotel Icon"></div>
+                        <div class="tabbutton"><img src="./img/car-icon.png" alt=""></div>
+                    </div>
+                    <div class="theinput">
+                        <input class="thefields" type="text" name="dep" placeholder="   Depart">
+                        <input class="thefields" type="text" name="ari" placeholder="   Arrive">
+                    </div>
+                    <div class="theinput">
+                        <input class="thefields" type="date" name="dep" placeholder="   mm/dd/yyyy">
+                        <input class="thefields" type="date" name="ari" placeholder="   mm/dd/yyyy">
+                    </div>
+                    <div class="radiorow">
+                        <div class="passlabel radiodivitems">Passenger</div>
+                        <select class="radiodivitems" name="pass">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <input class="radiodivitems" type="radio" name="radio" checked="checked"/>
+                        <label class="radiodivitems control control--radio">Return
+                        <input class="radiodivitems" type="radio" name="radio"/>
+                        <label class="radiodivitems control control--radio">One Way
+                    </div>
+                    <div class="searchbutton">Search Flights</div>
+                </article>
+        
+            </main>
+            </div>
+        </body>
+        </html>
