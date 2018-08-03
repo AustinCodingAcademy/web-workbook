@@ -325,3 +325,19 @@ main {
   /* border: 5px solid red; */
   background-color: black;
 }
+
+#mobileWorkAround{
+  display: none;
+}
+
+@media(max-width: 1049px){
+  header, nav, main, footer{
+    display: none;
+  }
+  #mobileWorkAround {
+    display: block;
+    text-align: center;
+    font-size: 1.35em;
+  }
+
+}
