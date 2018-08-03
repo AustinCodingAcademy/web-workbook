@@ -6,6 +6,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 1% 0;
 }
 
 header h1 {
@@ -14,14 +15,14 @@ header h1 {
   font-size: 3em;
   padding: 1em 0;
   letter-spacing: .25em;
-  margin: 1%;
+  margin: 2% 5% 0 5%;
   text-align: center;
-  width: 98%;
+  width: 90%;
 }
 
 header p {
   text-align: justify;
-  margin: 1%;
+  margin: 2% 5%;
   font-family: "Work Sans", sans-serif;
   font-size: 1em;
   letter-spacing: .08em;
@@ -36,7 +37,7 @@ header p {
   flex-direction: row;
   justify-content: center;
   border: 1px solid black;
-  margin: 1%;
+  margin: 0 5%;
   grid-area: play;
 
 }
@@ -45,7 +46,7 @@ header p {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 3fr .5fr;
+  grid-template-rows: 1fr 1.6fr .25fr;
   grid-template-areas:
   "head"
   "play"
@@ -133,9 +134,6 @@ header p {
   text-transform: lowercase;
   letter-spacing: .08em;
   height: 100%;
-  /* margin: 3rem; */
-
-
   /* border: 2px solid red; */
 }
 
@@ -199,37 +197,87 @@ header p {
   border: 1px solid black;
 }
 
-
-@media (max-width: 800px){
-  header h1{
-    font-size: 2.5em;
-  }
-
-  header p {
-    font-size: .8em;
-  }
-
-  .stacks {
-    /* border: 2px solid red; */
-    padding: none;
-
-  }
-  [data-stack] {
-    height: 98%;
-  }
-
+@media (min-width: 1400px){
   #container {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 4fr 5fr 1fr;
+    grid-template-rows: 1fr 1.35fr 1fr;
     grid-template-areas:
     "head"
     "play"
     "track";
   }
 
+  #trackers {
+    margin: 1% 0;
+  }
+
+}
+
+@media (max-width: 950px){
   #announcewin {
     width: 480px; /* Full width*/
+  }
+}
+
+@media (max-width: 780px){
+  #container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.2fr .25fr;
+    grid-template-areas:
+    "head"
+    "play"
+    "track";
+  }
+
+  #trackers {
+    margin: .5% 5%;
+    justify-content: space-between;
+  }
+}
+
+
+@media (max-width: 550px){
+  header h1{
+    font-size: 2.5em;
+    margin: 0 2%;
+    width: 96%;
+  }
+
+  header p {
+    font-size: .8em;
+    margin: 1% 2%
+  }
+
+  #gameboard {
+    margin: 0 2%;
+  }
+
+  .stacks {
+    /* border: 2px solid red; */
+    padding: .5rem;
+
+  }
+
+  [data-stack] {
+    height: 98%;
+  }
+
+  #trackers {
+    margin: 1% 2%;
+  }
+
+  #container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr .25fr;
+    grid-template-areas:
+    "head"
+    "play"
+    "track";
   }
 }
