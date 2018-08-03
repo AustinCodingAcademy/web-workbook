@@ -2,12 +2,40 @@
 
 $(document).ready(function() {
 
+  var x = window.matchMedia("(max-width: 780px)")
+  myFunction(x) // Call listener function at run time
+  x.addListener(myFunction) // Attach listener function on state changes
+
+
   function myFunction(x) {
       if (x.matches) { // If media query matches
         let $block = null;
         let $size = null;
         var moves = 0;
         var time = 0;
+
+        // Begin function for timer. Will run starting on the first time the user drags a block
+          $("#stackOne").one("click", function increment() {
+            console.log("stackOne was one-clicked");
+            // console.log("in the one click function");
+
+            setTimeout(function(){
+              time++
+              var mins = Math.floor(time/10/60);
+              var secs = Math.floor((time-mins*600)/10);
+              var tenths = time % 10;
+              if (mins <10) {
+                mins = "0" + mins;
+              }
+              if (secs < 10){
+                secs = "0" + secs;
+              }
+              $("#timer").text(mins + ":" + secs + ":" + "0" + tenths);
+
+              increment();
+
+              }, 100);
+            });
 
         $('[data-stack]').click(function() {
         let $tower = parseInt($(this).attr('data-stack'));
@@ -17,14 +45,22 @@ $(document).ready(function() {
         console.log("$tower: " + $tower + " stack: " + $stack);
 
            if ($block && ($size > $previousBlock) && ($previousBlock !== null)) {
-               alert("That's against the rules, ya cheater!");
+               // alert("That's against the rules, ya cheater!");
+               //do nothing, this is not allowed
              } else if ($block) {
                $(this).prepend($block);
                $size = parseInt($block.attr('data-block'));
                console.log("elseif statement ran. $size: " + $size + " $tower: " + $tower + " $previousBlock: " + $previousBlock);
                if ($size === 25 && $tower === 3 && $stack === 3) {
                  console.log("it's a win!")
-                 $('#announce-game-won').add("<h1>YOU WON!</h1>").appendTo('#announce-game-won');
+                 $("#container").prepend("<div id = 'announcewin'></div");
+                 $("#container").css("display", "flex");
+                 $("#container").css("justify-content", "center");
+                 $("#container").css("align-items", "center");
+                 $("header").hide();
+                 $("#gameboard").hide();
+                 $("#trackers").hide();
+                 $("#announcewin").append("<input id = 'playagain' type = 'button' value = 'PLAY AGAIN' onclick = 'window.location.reload()'></input>")
                } else {
                  $block = null;
                }
@@ -35,29 +71,7 @@ $(document).ready(function() {
                  moves++
                  $("#moves").text(moves);
              }
-
-             // Begin function for timer. Will run starting on the first time the user drags a block
-               $("#stackOne").one("click", function increment() {
-                 // console.log("in the one click function");
-
-                 setTimeout(function(){
-                   time++
-                   var mins = Math.floor(time/10/60);
-                   var secs = Math.floor((time-mins*600)/10);
-                   var tenths = time % 10;
-                   if (mins <10) {
-                     mins = "0" + mins;
-                   }
-                   if (secs < 10){
-                     secs = "0" + secs;
-                   }
-                   $("#timer").text(mins + ":" + secs + ":" + "0" + tenths);
-
-                   increment();
-
-                   }, 100);
-                 });
-           })
+           });
       } else {
         //defining variables
           var dragged;
@@ -196,14 +210,6 @@ $(document).ready(function() {
                 $("#announcewin").append("<input id = 'playagain' type = 'button' value = 'PLAY AGAIN' onclick = 'window.location.reload()'></input>")
               }
             }
-
-
       }
   }
-
-  var x = window.matchMedia("(max-width: 780px)")
-  myFunction(x) // Call listener function at run time
-  x.addListener(myFunction) // Attach listener function on state changes
-
-
 });
