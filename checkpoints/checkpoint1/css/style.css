@@ -31,6 +31,7 @@ header {
 /* begins about us */
 .aboutUs {
     position: relative;
+    width: 100%;
     height: 600px;
     background-color: #FFF;
 }
@@ -70,10 +71,11 @@ header {
     margin-bottom: -4px;
 }
 
+/* begins section on dogs */
 .aboutOurDogs {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: auto;
     background-color: #f5f5f5;
     text-align: center;
 }
@@ -89,7 +91,6 @@ header {
     margin-bottom: 30px;
 }
 
-/* begins section on dogs */
 .dogContainer {
     width: 250px;
     height: 400px;
@@ -143,7 +144,7 @@ header {
 .partnerContainer {
     width: 250px;
     height: 400px;
-    margin: 0% 8%;
+    margin: 0% 5%;
     display: inline-block;
 }
 
@@ -151,8 +152,16 @@ header {
     width: 250px;
     height: 250px;
     float: left;
-    border-radius: 125px;
+    border-radius: 250px;
     box-shadow: 0 0 30px 10px rgba(0,0,0,0.4);
+    filter: grayscale(100%);
+    transition: width 0.1s, height 0.1s;
+}
+
+.partnerPhoto:hover {
+    filter: none;
+    width: 265px;
+    height: 265px;
 }
 
 .partnerName {
