@@ -1,0 +1,324 @@
+/* 3 font families in use
+font-family: 'Lobster', cursive;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Merriweather', serif; */
+
+.maincontainer{
+    width: 1000px;
+    height: 800px;
+    background: #91BAB0;
+}
+/* Sets main website container size */
+header{
+    width: 90%;
+    height: 100px;
+    margin-left: 5%;
+    background-image: url(../img/headernoise.png);
+    border-radius: 20px;
+    display: inline-block;
+}
+/* initilize header formats and colors */
+
+/* noise header and body picture generated from
+https://www.cssmatic.com/noise-texture */
+
+header h1{
+    font-family: 'Lobster', cursive;
+    font-size: 300%;
+    padding-top: 15px;
+    float: left;
+    margin-left: 7%;
+}
+
+
+
+header img{
+    float: right;
+    width: 180px;
+    margin-right: 6%;
+    height: 180px;
+    margin-top: -40px;
+}
+
+
+
+.retroshadow {
+    color: #CB1F27;;
+    letter-spacing: .05em;
+    text-shadow: 
+      4px 4px 0px #d5d5d5, 
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+.effect
+{
+  	position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect:before, .effect:after
+{
+	content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgb(196, 145, 65);
+    -moz-box-shadow:0 0 20px rgb(196, 145, 65);
+    box-shadow:0 0 20px rgb(196, 145, 65);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect:after
+{
+	right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+
+
+/* menu code borrowed and majorly adapted from
+
+https://codepen.io/Dreamdealer/pen/yEmwd*/
+
+/* other good snippets from
+https://envato.com/blog/css3-typography-code-snippets/ */
+
+#menu {
+    height: 42px;
+    list-style: none;
+    margin: 15px 0 15px 0; padding: 10px 10px;
+    border-top: 4px double #AAA;
+    border-bottom: 4px double #AAA;
+    position: relative;
+    text-align: center;
+  
+}
+#menu li {
+display: inline-block;
+width: 120px;
+margin: 0 35px;
+position: relative;
+-webkit-transform: skewy(-3deg);
+-webkit-backface-visibility: hidden;
+-webkit-transition: 200ms all;
+}
+#menu li a {
+text-transform: uppercase;
+font-family: 'Patrick Hand', cursive;
+font-weight: 800;
+display: block;
+background: rgb(225, 235, 234);
+padding: 2px 10px;
+color: rgb(61, 79, 74);
+font-size: 20px;
+text-align: center;
+text-decoration: none;
+position: relative;
+z-index: 1;
+text-shadow: 
+        1px 1px 0px rgb(225, 235, 234), 
+        2px 2px 0px #999,
+        3px 3px 0px rgb(225, 235, 234);
+    background-image: -webkit-linear-gradient(top, transparent 0%, rgba(0,0,0,.05) 100%);
+    -webkit-transition: 1s all;
+    background-image: -webkit-linear-gradient(left top, 
+        transparent 0%, transparent 25%, 
+        rgba(0,0,0,.15) 25%, rgba(0,0,0,.15) 50%, 
+        transparent 50%, transparent 75%, 
+        rgba(0,0,0,.15) 75%);
+background-size: 4px 4px;
+    box-shadow: 
+        0 0 0 1px rgba(0,0,0,.4) inset, 
+        0 0 20px -5px rgba(0,0,0,.4),
+        0 0 0px 3px #FFF inset;
+}
+#menu li:hover {
+    width: 203px;
+    margin: 0 -5px;
+}
+#menu a:hover {
+color: rgb(255, 43, 50);
+}
+#menu li:after,
+#menu li:before {
+content: '';
+position: absolute;
+width: 50px;
+height: 100%;
+background: #BBB;
+-webkit-transform: skewY(8deg);
+x-index: -3;
+    border-radius: 4px;
+}
+#menu li:after {
+    background-image: -webkit-linear-gradient(left, transparent 0%, rgba(0,0,0,.4) 100%);
+right: 0;
+top: -4px; 
+}
+#menu li:before {
+left: 0;
+bottom: -4px;
+    background-image: -webkit-linear-gradient(right, transparent 0%, rgba(0,0,0,.4) 100%);
+}
+
+main{
+
+    width: 90%;
+    background-image: url(../img/backnoise.png);
+    height: 581px;
+    margin-left: 5%;
+    border-radius: 20px;
+
+}
+
+
+
+body {
+background: #333;
+color: #fff;
+}
+
+
+
+.tvscreen{
+background-image: url("../img/tvon.png");
+background-size: contain;
+background-repeat: no-repeat;
+width: 95%;
+height: 95%;
+position:relative;
+left: 5%;
+z-index: 1;
+}
+
+/* .controls{
+    width: 150px;
+    height: 50px;
+    display: inline-block;
+    float: right;
+    margin-top: 37px;
+    margin-right: 50px;
+
+} */
+
+/* .insidebut{
+    height: 28px;
+    width: 28px;
+    float: left;
+    background-color: white;
+    border-radius: 50%;
+}
+#onbutton{
+    margin-right: 43px;
+} */
+
+/* #onbutton:active{
+    
+    
+    .tvscreen{
+        background-image: url("../img/TVon.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+} */
+
+/* abondon for now, can't  use active like I thought I could, I wanted
+to change the state of the tv screen image when I clicked the on and
+off buttons. I cant dot that so imma abondon ship on this for now*/
+
+
+.bordertv{
+    background-color: black;
+    width: 520px;
+    height: 410px;
+    position: absolute;
+    left: 7%;
+    top: 9%;
+    z-index: -1;
+    border-radius: 60px;
+}
+
+/* I tried to use zindex to make the TV float in front of the boarder box I created. The border box just made sure the little curved border areas of the image were filled in. I was going to use another inner box to folat all my data on the screen on in a perfect square. The box radius will have to do for now. */
+
+.innertv{
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    background-color: rgb(36, 35, 29);
+    width: 96%;
+    height: 96%;
+    border-radius: 40px;
+}
+
+.innertv *{
+    position: relative;
+    left:4%;
+    top: 4%;
+    color:green;
+    margin-bottom: 7px;
+}
+
+.innertv article{
+    width: 90%;
+    height: auto;
+}
+
+.innertv p{
+    width: 80%;
+    float: left;
+}
+
+.podcast a{
+    float: right;
+    margin-right: 5%;
+    height: 30px;
+    width: 30px;
+}
+hr{
+    width: 90%;
+    border-color: rgb(84, 100, 55);
+}
+
+.testimonial p{
+    width: 80%;
+    font-size: 80%;
+    float: left;
+}
+
+.happy{
+    float: left;
+    display: inline-block;
+}
+
+.happy img{
+    width: 30px;
+    height: 30px;
+    margin-left:8px;
+    float: left;
+}
+
+.happy a{
+    clear: both;
+    font-size: 5%;
+    float: left;
+    margin-left: 25px;
+    margin-bottom: 0px;
+
+}
