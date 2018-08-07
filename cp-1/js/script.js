@@ -13,4 +13,4 @@
 //     });
 
 
-got a little cocky and wanted to add a transparent navbar that became solid as you scroll, didnt work
+// got a little cocky and wanted to add a transparent navbar that became solid as you scroll, didnt work
