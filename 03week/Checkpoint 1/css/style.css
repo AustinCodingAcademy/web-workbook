@@ -1,0 +1,434 @@
+/* Setting up our grid with rules for rows and columns. Published by Chris Lam. */
+.container {
+	width: 800px; /*Set the width of the entire website here */
+	margin-right: auto;
+	margin-left: auto; /* Margin-left and right are set to auto to center the container */
+}
+.seven:first-child,.eight:first-child, .nine:first-child, .ten:first-child,.eleven:first-child,.five:first-child, .four:first-child, .three:first-child, .two:first-child, .one:first-child, .six:first-child { 
+	margin-left: 0; /* This line of code makes the left-most column align to the left of the screen */
+}
+.eleven {
+	width: 91.5%;
+	float: left;
+	margin-left: 2%;
+}
+.ten {
+	width: 83%;
+	float: left;
+	margin-left: 2%;
+}
+.nine {
+	width: 74.5%;
+	float: left;
+	margin-left: 2%;
+}
+.eight {
+	width: 66%;
+	float: left;
+	margin-left: 2%;
+}
+.seven {
+	width: 57.5%;
+	float: left;
+	margin-left: 2%;
+}
+.six {
+	width: 49%; /* This div spans six columns (the entire row)*/
+	float: left;
+	margin-left: 2%;
+}
+.five {
+	width: 40.5%; /* This div spans five columns */
+	margin-left: 2%;
+	float:left;
+}
+.four {
+	width: 32%;
+	float:left;
+	margin-left: 2%;
+}
+.three {
+	width: 23.5%;
+	float:left;
+	margin-left: 2%;
+}
+.two {
+	width: 15%;
+	float:left;
+	margin-left: 2%;
+
+}
+.one {
+	width: 6.5%;
+	float:left;
+	margin-left: 2%;
+}
+.row {
+	width: 100%;
+	clear: both; /* Clear creates new styles for the next row */
+	padding: 0px;
+    margin: 0px;
+}
+
+/*background image provided by Toptal.com*/
+body{
+    background: url(/css/images/qbkls.png) no-repeat;
+    background-size: cover;
+}
+
+/*header styles*/
+header {
+    height: 75px;
+    width: 100%;
+}
+
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*Green Thumb logo provided by freelogodesign.org*/
+.logo-image {
+    background: url("/css/images/greenthumblogo.png") no-repeat center left;
+    height: 70px;
+    width: 200px;
+    margin-top: 2px;
+    float: left;
+    clear: left;
+}
+
+
+
+/*nav bar styles*/
+nav {
+    float: right;
+    height: 50px;;
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    margin-right: 45px;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 30px;
+    padding-right: 35px;
+    padding-top: 25px;
+    position: relative;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: green;
+}
+
+/*creates bar over nav li*/
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: green;
+    
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+/*sets size of bar over nav ul li when hovering over*/
+nav a:hover::before {
+    width: 90%;
+}
+
+
+/*content inside 2nd row 12 columns wide*/
+.box-two-content {
+    font: 50px white;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+
+/*link to vegetable basket image provided by Pixabay.com*/
+.basket-image {
+    background: url("/css/images/basket.jpg") no-repeat center center;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    padding-top: 80px;
+}
+/*3rd row garden styles*/
+/*Photo by Kenan Kitchen on Unsplash*/
+.garden-image {
+    background: url("/css/images/garden.jpg") no-repeat center center;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    margin-top: 25px;
+}
+ 
+.garden-content {
+    text-align: center;
+    background: url("/css/images/furley_bg.png");
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    margin-top: 25px;
+    
+}
+
+
+.garden-content p {
+    font-family: 'Vollkorn', serif;
+    font-size: 40px;
+    font-style: italic;
+    padding-top: 60px;
+}
+
+/*text content above plant variety images*/
+.plantVariety {
+    padding-top: 45px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.plantVariety h3 {
+    font-size: 30px;
+    font-family: 'Poppins' sans-serif;
+}
+
+.plantVariety p {
+    font-family: 'Comfortaa' sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+/*4 column 3 box section with shop content*/
+.shop-boxes {
+    padding-bottom: 25px;
+}
+
+.shop-boxes a {
+    text-align: center;
+}
+
+/*link to herb image provided by Pixabay.com*/
+.herb-image {
+    background: url("/css/images/herb.jpg") no-repeat center center;
+    height: 200px;
+    background-size: cover;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/*content inside herb image*/
+.herb-image a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.8;
+}
+
+/*hover effect over Shop Herbs*/
+.herb-image a:hover{
+    color: green;
+    background-color: white;
+}
+
+/*link to vegetable board image provided by Pixabay.com*/
+.veggie-image {
+    background: url("/css/images/board.jpg") no-repeat center center;
+    height: 200px;
+    background-size: cover;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/*content inside veggie image*/
+.veggie-image a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.8;
+}
+
+/*hover effect over Shop Vegetables*/
+.veggie-image a:hover {
+    color: green;
+    background-color: white;
+}
+
+/*link to strawberry image provided by Pixabay.com*/
+.fruit-image {
+    background: url("/css/images/strawberry.jpg") no-repeat center center;
+    height: 200px;
+    background-size: cover;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/*content inside fruits image*/
+.fruit-image a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.8;
+}
+
+/*hover effect over Shop Fruits*/
+.fruit-image a:hover {
+    color:green;
+    background-color: white;
+}
+
+/*Testimonial box styling*/
+/*Photo by Alyson McPhee on Unsplash*/
+.test-background {
+    background: url("/css/images/handKnife.jpg") no-repeat center center;
+    height: 175px;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+.test-background p {
+    font-family: 'Vollkorn', serif;
+    font-size: 30px;
+    font-style: italic;
+    color: black;
+    text-align: center;
+    margin-top: 25px;
+}
+
+/*Newsletter box styling*/
+/*background provided by SubtlePatterns.com*/
+.news-background {
+    background: url("/css/images/furley_bg.png") no-repeat center center;
+    height: 175px;
+    background-size: cover;
+    margin-top: 0px;
+}
+
+.news-background body {
+    background: none;
+    font-family: 'PT Sans Narrow';
+}
+
+form {
+  width: 428px;
+  margin-top: 25px;
+  margin-left: 70px;
+  padding: 20px;
+  height: 155px;
+}
+
+input {
+  font-family: 'PT Sans Narrow';
+  font-size: 20px;
+}
+
+.info{
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.info input {
+  display: block;
+  width: 300px;
+  height: 20px;
+  border: 0;
+  border-radius: 3px;
+  margin: 0 0 10px 0;
+  padding: 12px 10px;
+  background: #fff;
+}
+
+.info input:last-child {
+  margin: 0;
+}
+
+.info input:focus {
+  background: white;
+  outline: none;
+}
+
+input[type="submit"]{
+  vertical-align: top;
+  height: 25px;
+  width: 98px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 3px;
+  background: pink;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+  background: linear-gradient(45deg, green, limegreen);
+}
+
+input[type="submit"]:hover{
+  background: linear-gradient(180deg, #FF6C54, #FFA754);
+}
+
+
+/*provided by Google fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400|Questrial');
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300');
+
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:400i');
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700);
+
+h1 {
+    font-family: 'Questrial', sans-serif;
+}
+
+h2 {
+    font-family: 'Questrial', sans-serif;
+    font: 60px;
+    color: white;
+}
+
+.last-row nav ul {
+    height: 50px;
+    margin-top: -48px;
+}
+
+footer {
+    height: 100px;
+}
+
+.bottom-logo-image {
+    background: url("/css/images/greenthumblogo.png") no-repeat center left;
+    height: 80px;
+    width: 200px;
+    padding-top: 15px;
+
+}
