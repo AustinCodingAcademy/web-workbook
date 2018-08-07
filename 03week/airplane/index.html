@@ -10,18 +10,46 @@
 <body>
     <div id="container">
         <header>
-            <img src="./img/logo.png">
-            <ul>
-            <li>Home</li>
-            <li>Travel Deals</li>
-            <li>Flight Schedules</li>
-            <li>Register/Login</li>
+            <img class="logo" src="./img/logo.png">
+        <nav>
+            <ul class="navBar">
+            <li class="navItems"><img src="./img/home-icon.png" alt="home icon"> Home</li>
+            <li class="navItems"><img src="./img/deal-icon.png" alt="deal icon"> Travel Deals</li>
+            <li class="navItems"><img src="./img/schedule-icon.png" alt="flight schedule"> Flight Schedules</li>
+            <li class="navItems"><img src="./img/login-icon.png" alt="login icon"> Register/Login</li>
             </ul>
+        </nav>
         </header>
         <main>
-            <section>
-
-            </section>
+            <article>
+                <div class="buttons">
+                    <div class="tabButton"><img src="./img/plane-icon.png" alt="Plane Icon"></div>
+                    <div class="tabButton"><img src="./img/hotel-icon.png" alt="Hotel Icon"></div>
+                    <div class="tabButton"><img src="./img/car-icon.png" alt="Car Icon"></div>
+                </div>
+                <div class="input">
+                    <input class="inputField" type="text" name="Depart" placeholder="Depart">
+                    <input class="inputField" type="text" name="Arrive" placeholder="Arrive">
+                </div>
+                <div class="dateInput">
+                    <input class="dateField" type="date" name="Depart" placeholder="mm/dd/yyy">
+                    <input class="dateField" type="date" name="Arrive" placeholder="mm/dd/yyyy">
+                </div>
+                <div class="radioButtons">
+                    <div class="passenger">Passenger</div>
+                    <select class="passengerRadio" name="pass">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    <input class="radioDot" type="radio" name="radio" checked="checked">
+                    <label class="radioWay">Return</label>
+                    <input class="radioDot" type="radio" name="radio" checked="checked">
+                    <label class="radioWay">One Way</label>
+                </div>
+                <div class="searchButton">Search FLights</div>
+            </article>
         </main>
     </div>
 </body>
