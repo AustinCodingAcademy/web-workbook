@@ -1,1 +1,38 @@
+body{
+  background-color: orange;
+}
 
+.header{
+  text-align: center;
+  margin: 1em;
+}
+
+.title{
+  font-size: 2em;
+  margin: 1em;
+}
+
+.designation{
+  font-size: 1.5em;
+  margin: 1em;
+}
+
+div > div{
+  background-color: yellow;
+}
+
+.main{
+  display: grid;
+  grid-auto-rows: minmax(125px, auto);
+  grid-auto-columns: minmax(auto, auto);
+  grid-gap: 3em;
+  grid-template-areas:
+    "box1 box1 box2 box2"
+    "box3 box3 box4 box5"
+    "box3 box3 box6 box6"
+    "box7 box8 box9 box10"
+}
+
+.box1{
+  grid-area: 1 1 span 2 1;
+}
