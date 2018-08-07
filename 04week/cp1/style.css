@@ -2,20 +2,60 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: 'Oswald', sans-serif;
 }
 
-.parallax {
-    background-image: url("./images/mountain.jpg");
-    height: 100%; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.logo { 
+    width: 75px;
+    height: 75px;
+    margin-left: 3px;
+    margin-top: 1px;
+    float: left;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
+/* Navigation Menu */
+nav {
+    width: 300px;
+    height: 50px;
+    float: right;
+    margin-top: 18px;
+    margin-right: 3px;
+}
+
+ul {
+    list-style-type: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 12px;
+    text-shadow: black 1px 1px;
+}
+
+li a:hover {
+    color: #A70D00;
+}
+
+
+
+
+/* Section Formatting */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
     position: relative;
-    opacity: 0.65;
+    opacity: 0.75;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,92 +63,133 @@ body, html {
   
   }
   .bgimg-1 {
-    background-image: url("./images/sq.jpg");
-    min-height: 100%;
+    background-image: url("./images/mountain.jpg");
+    min-height: 700px;
   }
   
   .bgimg-2 {
     background-image: url("./images/hm.jpg");
-    min-height: 400px;
+    min-height: 500px;
   }
   
   .bgimg-3 {
-    background-image: url("img_parallax3.jpg");
-    min-height: 400px;
+    background-image: url("./images/sq.jpg");
+    min-height: 500px;
   }
-  
-  .caption {
+
+  .bgimg-4 {
+    background-image: url("./images/pn.jpg");
+    min-height: 500px;
+  }
+
+  .bgimg-5 {
+    background-image: url("./images/mountain.jpg");
+    min-height: 550px;
+  }
+
+  /* Home Page Content Formatting */
+  .mainTitle {
     position: absolute;
-    left: 0;
-    top: 50%;
+    top: 35%;
     width: 100%;
     text-align: center;
-    color: #000;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 9px;
+    opacity: 100%;
+    text-shadow: black 2px 2px;
   }
-  
-  .caption span.border {
-    background-color: #111;
-    color: #fff;
-    padding: 18px;
+
+  .subtitle1 {
     font-size: 25px;
-    letter-spacing: 10px;
+    letter-spacing: 5px; 
+    padding: 3px;
   }
-  
-  h3 {
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font: 20px "Lato", sans-serif;
-    color: #111;
+
+  .subtitle2 {
+      padding: 10px;
+      text-align: center;
+      font-size: 15px;
+      color: #A70D00;
   }
-  
 
-header {
+  /* Section Content Formatting */
+  .sectionTitle {
+    background-color: #282E34;
+    padding-top: 5px;
+    padding-bottom: 5px;
     width: 100%;
-    height: 50px;
-    display: inline-block;
-    background-color: green;
-}
+    text-align: center;
+    font-size: 30px;
+    color: #A70D00;
+    text-shadow: black 2px 2px;
+    opacity: 0.80;
+  }
 
-/* body {
-    background-image: url("./images/mountain.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-}
-
-header {
+  .sectionDesc {
+    position: absolute;
+    left: 0;
+    top: 25%;
+    padding: 80px 5px;
     width: 100%;
-    height: 50px;
-    display: inline-block;
-    background-color: green;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 6px;
+    opacity: 100%;
+    text-shadow: black 2px 2px;
+  }
+
+  /* Contact Form */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
 
-.logo {
-    width: 100px;
-    height: 100px;
-    margin-left: 3px;
-    margin-right: 40px;
-    float: left;
+input[type=submit] {
+    background-color: #A70D00;
+    color: #282E34;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.mainnav {
-    width: 400px;
-    height: 50px;
-    background-color: purple;
-    float: right;
+input[type=submit]:hover {
+    background-color: #282E34;
+    color: #A70D00;
+}
+
+.container {
+    background-color: transparent;
+    padding: 20px;
     
 }
 
-#container {
-    margin-left: auto;
-    margin-right: auto;
-    border-radius:
-    width: 600px;
-    height: 1000px;
-    background-color: grey;
-    opacity: 0.6;
-    border-radius: 25px; 
-} */
+.footer{
+  background-color: #282E34;
+  width: 100%;
+  height: 60px;
+  text-shadow: black 2px 2px;
+  opacity: 0.80;
+  padding-right: 50px;
+}
+
+.footer li a{
+  color: #A70D00;
+  font-size: 20px;
+  transition: all ease-in-out 250ms;
+}
+
+.footer li a:hover{
+  color: white;
+}
+
+
+
