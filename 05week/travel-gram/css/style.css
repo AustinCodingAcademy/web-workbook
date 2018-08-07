@@ -21,11 +21,18 @@ div > div{
   background-color: yellow;
 }
 
+img{
+  height: 400px;
+  width: 350px;
+  margin: 1%;
+}
+
 .main{
   display: grid;
-  grid-auto-rows: minmax(125px, auto);
-  grid-auto-columns: minmax(auto, auto);
+  grid-auto-rows: minmax(300px, auto);
   grid-gap: 3em;
+  margin: 3em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "box1 box1 box2 box2"
     "box3 box3 box4 box5"
@@ -34,5 +41,76 @@ div > div{
 }
 
 .box1{
-  grid-area: 1 1 span 2 1;
+  grid-area: box1;
+  display: flex;
+  flex-direction: row;
+}
+
+.box1words{
+  display: flex;
+  flex-direction: column;
+}
+
+.box2{
+  grid-area: box2;
+}
+
+.box3{
+  grid-area: box3;
+}
+
+.sunset{
+  width: 550px;
+}
+
+.box4{
+  grid-area: box4;
+}
+
+.box5{
+  grid-area: box5;
+}
+.box6{
+  grid-area: box6;
+}
+
+.box7{
+  grid-area: box7;
+}
+
+.box8{
+  grid-area: box8;
+}
+
+.box9{
+  grid-area: box9;
+}
+.box10{
+  grid-area: box10;
+}
+
+h5{
+  font-size: 1.35em;
+  border-bottom: 2px solid black;
+}
+
+article{
+  margin-top: 10px;
+}
+
+@media (max-width: 768px){
+  .main{
+    display: grid;
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 3em;
+    margin: 3em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "box1 box1"
+      "box2 box3"
+      "box4 box4"
+      "box5 box6"
+      "box7 box8"
+      ". box8"
+      "box9 box10"
 }
