@@ -1,3 +1,10 @@
+@media (max-width: 715px) {
+    main .contactContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -5,7 +12,8 @@ main{
 
 .galaxy {
     display: flex;
-    width: 850px;
+    flex-basis: 850px;
+    max-width: 850px;
     height: 450px;
     background-image: url(../img/nasa-background.jpg);
     font-family: Helvetica, sans-serif;
@@ -18,8 +26,8 @@ main{
 
 .contactContainer {
     display: flex;
-    width: 850px;
-    height: 324px;
+    max-width: 850px;
+    min-height: 324px;
     background-color: lightgray;
     justify-content: space-between;
 }
@@ -49,12 +57,14 @@ a {
     margin-left: 20px;
     padding-left: 20px;
     padding-top: 10px;
+    flex-basis: 30%;
 }
 
 .officeInfo {
     flex: 1;
     padding-left: 20px;
     padding-top: 10px;
+    flex-basis: 30%;
 }
 
 .contactField {
@@ -62,6 +72,8 @@ a {
     margin-right: 20px;
     padding-left: 20px;
     padding-top: 10px;
+    flex-basis: 30%;
+    flex-direction: column;
 }
 
 .nameInput {
