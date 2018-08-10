@@ -1,0 +1,105 @@
+.container1{
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* first box */
+.topbox {
+    height: 400px;
+    width: 850px;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    background-color: #2bcdc0;
+    display: flex;
+    align-items: center;
+
+}
+  
+/* all three boxes */
+.box {
+    background-color: #1b1b1b;
+    height: 324px;
+    flex-basis: 40%;
+    /* padding: 40px; */
+    line-height: 30px;
+    justify-content: center;
+    text-align: center;
+    border: 1px #fff solid;
+    
+    
+}
+
+.box div{
+    height: 25px;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 65px;
+
+}
+
+
+/* color boxes in bottom row of boxes */
+.colorbox1{
+    background-color: #33a8dd;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.colorbox2{
+   background-color:  #f46731;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+}
+
+.colorbox3{
+    background-color: #2bcdc0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+/* bottom box */
+.bottomrow{
+    display: flex;
+    color: #fff;
+}
+
+/* cell phone */
+@media (max-width: 600px) { 
+    .topbox{
+        background-color: #33a8dd;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 300px;
+        height: 300px;
+        font-size: 20px;
+        margin: 5px;
+    }
+    .bottomrow{
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        background-color: #fff;
+
+    }
+
+    .box{
+        justify-content: center;
+        background-color: #fff;
+        color: #000000;
+        width: 300px;
+    }
+
+    .box div{
+        justify-content: center;
+        display: flex;
+    }
+ }
