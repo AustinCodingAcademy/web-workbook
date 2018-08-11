@@ -1,0 +1,173 @@
+/* base css for laptop */
+
+main {
+    box-sizing:border-box;
+    height:100%;
+    border-right:1px solid black;
+    border-top:1px solid black;
+    margin-top:10px;
+    margin-right:20px;
+}
+img {
+    width: 100%;
+    height:500px;
+}
+.header {
+    float:left;
+    width:65%;
+    margin-top:30px;
+    height:800px;
+}
+.title {
+    font-weight:normal;
+    font-size:30pt;
+}
+.header p {
+    font-size:16pt;
+}
+button {
+    width:150px;
+    height:30px;
+    color:white;
+    font-size:14pt;
+    background-color:#4D4D4D;
+    margin-top:10px;
+}
+aside {
+    height: 400px;
+    width: 25%;
+    float:right;
+    margin-top:-250px;
+    margin-right:70px;
+}
+/* styling links in aside */
+.aside li {
+    list-style-type:none;
+    padding-bottom:15px;
+}
+.aside a:link {
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+.aside a:visited {
+    text-decoration:none;
+    color:black;
+    font-weight:bold;
+}
+.mobile {
+    visibility:hidden;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+/* tablet media query */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header {
+        width:100%;
+        height:300px;
+    }
+    aside {
+        visibility:hidden;
+    }
+    .mobile {
+        visibility:hidden;
+    }
+  }
+/* mobile media query */
+@media only screen and (max-width: 768px) {
+    aside {
+        visibility:hidden;
+    }
+    main {
+        width:100%;
+        height:100px;
+    }
+    .header {
+        width:100%;
+        height:450px;
+        margin-bottom:20px;
+    }
+    img {
+        width:100%;
+        padding-right:0px;
+        height:40%;
+    }
+    .title {
+        font-size:20pt;
+    }
+    p {
+        font-size:12pt;
+    }
+    button {
+        font-size:14pt;
+    }
+    .mobile {
+        visibility:visible;
+        background-color:#4D4D4D;
+        margin-top:500px;
+        height:250px;
+        color:white;
+    }
+    .mobile2 {
+        float:left;
+        width:45%;
+        height:250px;
+    }
+    .mobile3 {
+        float:right;
+        width:45%;
+        height:250px;
+    }
+    .mobile2 p {
+        padding-left:20px;
+        font-weight:bold;
+        font-size:14pt;
+        letter-spacing:1.5px;
+    }
+    .mobile3 p {
+        padding-left:10px;
+        font-weight:bold;
+        font-size:14pt;
+        letter-spacing:1.5px;
+    }
+    /* styling links in mobile */
+    .useful {
+        list-style-type:none;
+        padding-left:20px;
+    }
+    .useful hr {
+        margin-right:100%;
+        width:115px;
+    }
+    .social {
+        list-style-type:none;
+        padding-left:10px;
+        font-weight:normal;
+    }
+    .social hr {
+        margin-right:100%;
+        width:115px;
+    }
+    .useful li a:link {
+        text-decoration:none;
+        color:white;
+    }
+    .useful li a:visited {
+        color:white;
+    }
+    .social li a:link {
+        color:white;
+        text-decoration:none;
+    }
+    .social li a:visited {
+        color:white;
+    }
+
+}
+
