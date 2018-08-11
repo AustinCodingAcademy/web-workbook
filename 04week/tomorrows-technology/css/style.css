@@ -1,0 +1,130 @@
+article{
+    margin-left: 2%;
+    width: 70%;
+    float: left;
+}
+
+img {
+    width: 100%;
+}
+
+.articletag{
+    background-color: rgb(54, 54, 54);
+    color: white; 
+    width: 90px;
+    height: 25px;
+    padding-top: 8px;
+    text-align: center;
+}
+
+aside{
+    float: right;
+    width: 23%;
+    text-align: left;
+    margin-right: 2%;
+}
+
+
+
+
+h1{
+    margin-top: 0;
+}
+
+.invert{
+    -webkit-filter: invert(100%);
+}
+/* downloaded black pictures, wanted to make them white */
+
+ul{
+    list-style: none;
+    width: 20%;
+    margin-left: 2%;
+    padding-left: 0;
+    flex-basis: 250px;
+
+}
+/* wanted a certain amount of spacing default so set a flex basis */
+
+hr{
+    margin: 0;
+    width: 87px;
+}
+/* for spacing reasins, the li's that hr's were in are very large, 
+had to manually cull their size a bit */
+
+li p{
+    width: 70px;
+}
+/* same as above, this was to fit in images next to p tags */
+
+
+.social li{
+    width: 87px;
+}
+/* create enough space for image and p tag on same line */
+
+
+.soctitle{
+    width: 200px !important ;
+}
+/* override smaller p size for header in the list */
+.social p{
+    float: left;
+}
+
+.social img{
+    margin-top: 6px;;
+    height: 15px;
+    width: 15px;
+    float: right;
+}
+
+/* size and align next to p */
+.social hr{
+    clear: both;
+}
+
+footer{
+    clear: both;
+    float: left;
+    margin-top: 20px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    justify-content: flex-start;
+    width: 100%;
+}
+p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/* should have made a reset file */
+
+footer{
+    display: none;
+}
+/* hidey mac hide pants */
+@media (max-width: 576px) { 
+    article{
+        margin-left: 2%;
+        width: 96%;
+        margin-left: 2%;
+        float: none;
+    }
+    footer{
+        display: flex;
+    }
+}
+@media (max-width: 768px) {
+    aside{
+        display: none;
+    }
+    article{
+        margin-left: 2%;
+        width: 96%;
+        margin-left: 2%;
+        float: none;
+
+    }
+}
+
