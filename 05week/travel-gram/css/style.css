@@ -1,1 +1,50 @@
+h1{
+  align-self: center;
+}
+.firstbox{
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: 1fr 1fr;
+}
+.firstbox > div > p{
+  background-color: red;
+}
+.thirdbox{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap:2em;
+  border: 2px black solid;
+grid-template-areas:
+"main ."
+"main aside";
+}
+.thirdbox > div > p{
+background-color: orange;
+}
+.thirdbox >div:nth-child(1){
+  grid-area: main;
 
+}
+.thirdbox > div{
+  border: 2px blue solid;
+}
+.Box_info{
+  display: grid;
+  grid-template-columns:repeat( 4, 2fr);
+  grid-template-areas:
+  "header"
+  "main"
+  "footer"
+  "aside";
+  width: 100%;
+  grid-gap: 2em;
+  height: 100%;
+}
+.Box_info > div > p{
+  background-color: lightblue;
+  grid-area: footer;
+}
+
+@media (min-width:769px) {
+.firstbox
+}
