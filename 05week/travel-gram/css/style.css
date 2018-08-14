@@ -1,1 +1,191 @@
+@media (min-width: 768px) {
+    body .wrap {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+        grid-template-areas:
+            "box1 box1"
+            "box2 box3"
+            "box4 box4"
+            "box5 box6"
+            "box7 box7"
+            "box8 box9"
+            "box10 box10"
+    }
 
+    .deviceType {
+        visibility: hidden;
+    }
+    
+    .deviceType:after {
+        visibility: visible;
+        margin-right: 50px;
+        content: "Tablet";
+    }
+}
+
+@media (min-width: 1024px) {
+    body .wrap {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1em;
+        grid-template-areas:
+            "box1 box1 box2 box2"
+            "box3 box3 box4 box5"
+            "box3 box3 box6 box6"
+            "box7 box8 box9 box10"
+    }
+
+    .deviceType {
+        visibility: hidden;
+    }
+    
+    .deviceType:after {
+        visibility: visible;
+        margin-right: 50px;
+        content: "Desktop";
+    }
+}
+
+header {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    /* border-bottom: 1px solid black; */
+}
+
+.siteName {
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+/* styles the device type */
+.deviceType {
+    font-family: Helvetica, sans-serif;
+    color: darkgray;
+    padding: 10px;
+}
+
+
+/* gloabl article font styling */
+.globalStyling {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Helvetica, sans-serif;
+    font-size: 10px;
+    border: 1px solid #000;
+    text-align: justify;
+}
+
+.globalStyling img {
+    width: 75%;
+    padding: 10px;
+}
+
+.globalStyling p {
+    width: 80%;
+}
+
+/* .articleText {
+    display: flex;
+    flex-direction: column;
+} */
+
+.articleControls {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.articleControls h4 {
+    float: left;
+}
+
+.comments {
+    align-self: flex-start;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-left: 5%;
+    margin-bottom: 2.5%;
+}
+
+.readArticle {
+    display: flex;
+    align-self: flex-end;
+    width: 75px;
+    height: 20px;
+    background-color: red;
+    border: 1px solid #000;
+    margin-right: 5%;
+    margin-bottom: 2.5%;
+    font-family: Helvetica, sans-serif;
+    color: #fff;
+    font-size: 130%;
+    font-weight: 100;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.article1 {
+    grid-area: box1;
+}
+
+.article2 {
+    grid-area: box2;
+}
+
+.article3 {
+    grid-area: box3;
+}
+
+.article4 {
+    grid-area: box4;
+}
+
+.article5 {
+    grid-area: box5;
+}
+
+.article6 {
+    grid-area: box6;
+}
+
+.article7 {
+    grid-area: box7;
+}
+
+.article8 {
+    grid-area: box8;
+}
+
+.article9 {
+    grid-area: box9;
+}
+
+.article10 {
+    grid-area: box10;
+}
+
+
+.wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .5em;
+    grid-template-areas:
+        "box1"
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+        "box6"
+        "box7"
+        "box8"
+        "box9"
+        "box10"
+}
