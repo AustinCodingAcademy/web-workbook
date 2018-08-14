@@ -7,6 +7,7 @@ body {
     display:grid;
     grid-template-areas: 
     "header"
+    "gr"
     "one"
     "two"
     "three"
@@ -21,7 +22,6 @@ body {
 header {
     grid-area:header;
     text-align:center;
-    height:150px;
 }
 header h1 {
     font-size:16pt;
@@ -39,6 +39,11 @@ header h1 {
 .parent {
     grid-area: parent;
 }
+.gr {
+    grid-area:gr;
+    display:grid;
+}
+/* styling for content sections */
 section {
     border:1px solid black;
     margin-bottom:1em;
@@ -75,6 +80,7 @@ p {
     height:1.5em;
     background-color:orange;
 }
+/* grid areas for sections */
 .one {
     grid-area:one;
 }
@@ -114,34 +120,59 @@ p {
 @media (min-width: 768px) and (max-width: 1024px) {
     .wrapper {
         display:grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "header header"
-        "one one"
-        "one one"
-        "one one"
-        "two three"
-        "two three"
-        "three three"
-        "four five"
-        "four five"
-        "six six"
-        "seven eight"
-        "seven eight"
-        "nine nine"
-        "ten ten"
+        grid-template-areas:
+        "header"
+        "gr"
+        "parent";
     }
-    .mobile {
-        visibility:hidden;
+    header {
+        grid-area:header;
+        text-align:center;
+    }
+    header h1 {
+        margin-bottom:-40px;
     }
     .desktop {
         visibility:hidden;
     }
     .tablet {
         visibility:visible;
+        font-size:12pt;
     }
-    header {
-    text-align:center;
-    height:150px;
-}
-}
+    .mobile {
+        visibility:hidden;
+    }
+    .gr {
+        display:grid;
+        grid-template-areas:
+        "parent";
+    }
+    .parent {
+        display:grid;
+        align-content:center;
+        grid-template-columns:1fr 1fr;
+        grid-template-areas:
+        "one one"
+        "one one"
+        "two two";
+    }
+    section {
+        border:1px solid black;
+        margin-bottom:1em;
+        margin-left:.2em;
+        margin-right:.2em;
+        padding:.5em;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-areas:
+        "img img"
+        "p p"
+        "number content"
+    }
+    .content {
+        grid-area:content;
+        width:7em;
+        height:1.5em;
+        background-color:orange;
+    }
+    }
