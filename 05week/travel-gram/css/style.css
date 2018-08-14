@@ -1,1 +1,147 @@
-
+/* Extra Small and up (Portrait Phones) */
+@media only screen and (max-width: 768px) {
+body {
+    box-sizing:border-box;
+}
+.wrapper {
+    display:grid;
+    grid-template-areas: 
+    "header"
+    "one"
+    "two"
+    "three"
+    "four"
+    "five"
+    "six"
+    "seven"
+    "eight"
+    "nine"
+    "ten"
+}
+header {
+    grid-area:header;
+    text-align:center;
+    height:150px;
+}
+header h1 {
+    font-size:16pt;
+}
+.desktop {
+    visibility:hidden;
+}
+.tablet {
+    visibility:hidden;
+}
+.mobile {
+    visibility:visible;
+    font-size:12pt;
+}
+.parent {
+    grid-area: parent;
+}
+section {
+    border:1px solid black;
+    margin-bottom:1em;
+    margin-left:.2em;
+    margin-right:.2em;
+    padding:.5em;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:
+    "img img"
+    "p p"
+    "number content"
+}
+.number {
+    grid-area:number;
+}
+img {
+    grid-area:img;
+    padding-right:.5em;
+    padding-bottom:1em;
+    max-width:100%;
+    height:auto;
+    margin:auto;
+}
+p {
+    grid-area:p;
+    max-width:100%;
+    height:auto;
+    margin:auto;
+}
+.content {
+    grid-area:content;
+    width:7em;
+    height:1.5em;
+    background-color:orange;
+}
+.one {
+    grid-area:one;
+}
+.two {
+    grid-area:two;
+}
+.three {
+    grid-area:three;
+}
+.four {
+    grid-area:four;
+}
+.five {
+    grid-area:five;
+}
+.six {
+    grid-area:six;
+}
+.seven {
+    grid-area:seven;
+}
+.eight {
+    grid-area:eight;
+}
+.nine {
+    grid-area:nine;
+}
+.ten {
+    grid-area:ten;
+}
+}
+/* Small and up (Landscape Phones)
+@media (min-width: 576px) {
+    /* Just use the same as Extra Small above  */
+  /* } 
+/* Medium and up (Tablets) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .wrapper {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "header header"
+        "one one"
+        "one one"
+        "one one"
+        "two three"
+        "two three"
+        "three three"
+        "four five"
+        "four five"
+        "six six"
+        "seven eight"
+        "seven eight"
+        "nine nine"
+        "ten ten"
+    }
+    .mobile {
+        visibility:hidden;
+    }
+    .desktop {
+        visibility:hidden;
+    }
+    .tablet {
+        visibility:visible;
+    }
+    header {
+    text-align:center;
+    height:150px;
+}
+}
