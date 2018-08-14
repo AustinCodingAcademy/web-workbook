@@ -73,9 +73,23 @@ div .technologyButton {
     width: 120px;
 }
 
+div .usefulLinks {
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+div .usefulLinksLinks {
+    border-bottom: 1px solid white;
+    margin-top: 15px;
+    color: rgb(160, 158, 158);
+}
 
 
 
+
+/*!!! MEDIA QUERIES !!!*/
 /* DESKTOP */
 @media (min-width: 769px) {
     div .phoneImg {
@@ -104,27 +118,34 @@ div .technologyButton {
 
 /* MOBILE */
 @media (max-width: 550px) {
+    main {
+        width: 400px;
+    }
+    
     div .deskImg {
         display: none;
     }
     div .phoneImg {
         display: flex !important;
+        margin: 0 auto;
     }
     main .article {
         width: 350px;
     }
     div .articleTitle {
         font-size: 20px;
-        width: 500px;
+        width: 400px;
     }
     div .articleBody {
         font-size: 18px;
     }
     main .footer {
         display: flex;
-        width: 350px;
-        height: auto;
+        justify-content: space-between;
+        color: white;
+        margin-left: -10px;
+        width: 400px;
+        height: 300px;
         background-color: rgb(93, 93, 93);
-
     }
 }
