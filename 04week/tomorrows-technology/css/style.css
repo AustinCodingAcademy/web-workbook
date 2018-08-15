@@ -1,0 +1,55 @@
+.leftcol{
+    width: 75%;
+    height: 500px;
+    background-color: red;
+    float: left;
+    background-image: url("../img/bg.jpg")
+    } 
+    
+    #rightcol
+    {
+    width: 21%;
+    height:500px;
+    float: right;
+    }
+    
+    #bottomtext
+    {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    
+    }
+    
+    #flex-mobilelinks{
+    display: none;
+    }
+    
+    @media (max-width: 1200px)
+    {
+    #rightcol{
+    display: none;
+    } 
+    .leftcol{
+    width: 100%;
+    }
+    
+    }
+    
+    @media (max-width: 401px){
+    #flex-mobilelinks{
+    display: flex;
+    height: 400px;
+    width: 350px;
+    justify-content:space-between;
+    background-color:gray;
+    color: white;
+    }
+    
+    #rightcol{
+    display: none;
+    } 
+    .leftcol{
+    width: 100%;
+    }
+    
+    }
