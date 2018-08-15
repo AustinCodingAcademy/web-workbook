@@ -1,176 +1,119 @@
-/* Extra Small and up (Portrait Phones) */
-@media only screen and (max-width: 768px) {
+/* desktop specs */
 body {
-    box-sizing:border-box;
+    background-color:salmon;
 }
-.wrapper {
+#wrapper {
     display:grid;
-    grid-template-areas: 
-    "header"
-    "gr"
-    "one"
-    "two"
-    "three"
-    "four"
-    "five"
-    "six"
-    "seven"
-    "eight"
-    "nine"
-    "ten"
+    grid-gap:2em;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:.10fr 1fr 1fr 1fr 1fr;
 }
 header {
-    grid-area:header;
+    grid-column:span 4;
     text-align:center;
+    grid-row:span 1;
+
 }
-header h1 {
-    font-size:16pt;
+/* display of spans in header for desktop */
+#tablet, #mobile {
+    display:none;
 }
-.desktop {
-    visibility:hidden;
+article {
+    background-color:rgb(187, 35, 149);
+    grid-column:span 1;
+    box-sizing:border-box;
+    padding: .5em .25em;
 }
-.tablet {
-    visibility:hidden;
+.dTwoc {
+    grid-column:span 2;
 }
-.mobile {
-    visibility:visible;
-    font-size:12pt;
+.dTwor {
+    grid-row:span 2;
+    height:100%;
 }
-.parent {
-    grid-area: parent;
-}
-.gr {
-    grid-area:gr;
+/* grid for articles with left positioned images */
+.dfloatl {
     display:grid;
+    grid-template-columns:1fr 2fr;
+    grid-template-rows:1fr 1fr;
 }
-/* styling for content sections */
-section {
-    border:1px solid black;
-    margin-bottom:1em;
-    margin-left:.2em;
-    margin-right:.2em;
-    padding:.5em;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-areas:
-    "img img"
-    "p p"
-    "number content"
-}
-.number {
-    grid-area:number;
-}
-img {
-    grid-area:img;
-    padding-right:.5em;
-    padding-bottom:1em;
+.dfloatl > img {
+    grid-column:span 1;
+    grid-row:span 2;
     max-width:100%;
     height:auto;
-    margin:auto;
 }
-p {
-    grid-area:p;
-    max-width:100%;
-    height:auto;
-    margin:auto;
+.dfloatl > p {
+    grid-column:span 1;
+    grid-row:span 1;
 }
-.content {
-    grid-area:content;
-    width:7em;
-    height:1.5em;
+.dfloatl > div {
+    grid-column:span 1;
+    grid-row:span 1;
+}
+div {
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+}
+.circle {
     background-color:orange;
+    border-radius:50%;
+    width:2em;
+    height:2em;
 }
-/* grid areas for sections */
-.one {
-    grid-area:one;
+.rectangle {
+    background-color:orange;
+    width: 6em;
+    height:2em;
 }
-.two {
-    grid-area:two;
-}
-.three {
-    grid-area:three;
-}
-.four {
-    grid-area:four;
-}
-.five {
-    grid-area:five;
-}
-.six {
-    grid-area:six;
-}
-.seven {
-    grid-area:seven;
-}
-.eight {
-    grid-area:eight;
-}
-.nine {
-    grid-area:nine;
-}
-.ten {
-    grid-area:ten;
-}
-}
-/* Small and up (Landscape Phones)
-@media (min-width: 576px) {
-    /* Just use the same as Extra Small above  */
-  /* } 
-/* Medium and up (Tablets) */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .wrapper {
-        display:grid;
-        grid-template-areas:
-        "header"
-        "gr"
-        "parent";
+/* tablet media query */
+@media (min-width:768px) and (max-width:1024px) {
+    #wrapper {
+        grid-template-columns:1fr 1fr;
     }
     header {
-        grid-area:header;
-        text-align:center;
+        grid-column:span 2;
     }
-    header h1 {
-        margin-bottom:-40px;
+    .dTwoc {
+        grid-column: span 1;
     }
-    .desktop {
-        visibility:hidden;
+    .tTwoc {
+        grid-column:span 2;
     }
-    .tablet {
-        visibility:visible;
-        font-size:12pt;
+    .dTwor {
+        grid-row:span 1;
     }
-    .mobile {
-        visibility:hidden;
+    /* display of spans in header for tablet */
+    #desktop, #mobile {
+        display:none;
     }
-    .gr {
-        display:grid;
+    #tablet {
+        display: inline;
     }
-     .parent {
-        display:grid;
-        align-content:center;
-        grid-template-columns:1fr 1fr;
-        grid-template-areas:
-        "one one"
-        "one one"
-        "two two";
+}
+/* mobile media query */
+@media only screen and (max-width: 768px) {
+    #wrapper {
+        grid-template-columns:1fr;
+    }
+    header {
+        grid-column:span 1;
     }
     section {
-        border:1px solid black;
-        margin-bottom:1em;
-        margin-left:.2em;
-        margin-right:.2em;
-        padding:.5em;
-        display:grid;
-        grid-template-columns:1fr 1fr;
-        grid-template-areas:
-        "img img"
-        "p p"
-        "number content"
+        grid-column:span 1;
     }
-    .content {
-        grid-area:content;
-        width:7em;
-        height:1.5em;
-        background-color:orange;
+    .tTwoc {
+        grid-column:span 1;
     }
+    .dTwoc {
+        grid-column:span 1;
     }
+    #desktop, #tablet {
+        display:none;
+    }
+    #mobile {
+        display:inline;
+    }
+
+}
