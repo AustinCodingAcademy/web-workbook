@@ -1,1 +1,218 @@
+#tablet , #mobile {
+    display: none;
+}
+
+header{
+    height: 85px;
+    text-align: center;
+    background-color: rebeccapurple;
+    width: 98%;
+    margin-left: 1%;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 150px;
+    width: 98%;
+    grid-gap: 1em;
+    height: auto;
+    margin-left: 1%;
+    color: white;
+}
+
+
+article{
+    background-color: aqua;
+    border: solid blue 1px;
+    /* min-height: 100px; */
+    padding: 1em;
+}
+
+
+.twooneD{
+    grid-column: span 2;
+}
+
+
+.twothreeD{
+    grid-column: span 2;
+    grid-row: span 3;
+
+}
+.onetwoD{
+    grid-row: span 2;
+}
+
+
+article{
+    display: inline-block;
+}
+.twooneD .picturehrz{
+    float: left;
+    width: 35%;
+    height: 100%;
+    background-color: black;
+    color: wheat;
+}
+
+.twooneD .textandmore{
+    float: right;
+    width: 60%;
+    height: 100%;
+    background-color: brown;
+    
+}
+
+.twothreeD .picturehrz{
+    background-color: black;
+    width: 100%;
+    height: 30%;
+}
+
+.onetwoD .picturehrz{
+    background-color: black;
+    width: 100%;
+    height: 40%;
+ 
+}
+
+
+
+.twothreeD .textandmore{
+    width: 100%;
+    background-color: brown;
+    margin-top: 3%;
+    height: 67%;
+}
+
+.onetwoD .textandmore{
+    width: 100%;
+    background-color: brown;
+    margin-top: 5%;
+    height: 55%;
+}
+
+
+@media (min-width:768px) and (max-width:1024px){
+
+    #desktop,#mobile{
+        display: none;
+    }
+    #tablet{
+        display: inline;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 100px;
+        width: 98%;
+        grid-gap: 1em;
+        height: auto;
+        margin-left: 1%;
+    }
+
+    .twotreeD{
+        grid-column: span 2;
+        grid-row: span 3;
+    }
+    .onetwoT{
+        grid-row: span 2;
+        grid-column: span 1;
+    }
+
+    .twooneT{
+        grid-row: span 1;
+        grid-column: span 2;
+    }
+
+
+    .twotreeD .picturehrz{
+        background-color: black;
+        width: 100%;
+        height: 30%;
+    }
+    .twotreeD .textandmore{
+        width: 100%;
+        background-color: brown;
+        margin-top: 2%;
+        height: 63%;
+    }
+
+   
+    
+
+    .onetwoT .picturehrz{
+        background-color: black;
+        width: 100%;
+        height: 30%;
+    }
+
+    .onetwoT .textandmore{
+        width: 100%;
+        background-color: brown;
+        margin-top: 2%;
+        height: 63%;
+    }
+
+
+
+
+    .twooneT .picturehrz{
+        float: left;
+        width: 51%;
+        height: 100%;
+        background-color: black;
+        color: wheat;
+    }
+    
+    .twooneT .textandmore{
+        float: right;
+        width: 47%;
+        height: 100%;
+        background-color: brown;
+        margin: 0%;
+        
+    }
+}
+
+@media (max-width:768px){
+
+    #desktop,#tablet {
+        display: none;
+    }
+    #mobile{
+        display: inline;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 100px;
+        width: 98%;
+        grid-gap: 1em;
+        height: auto;
+        margin-left: 1%;
+    }
+    .mobile{
+        grid-column: span 1 ;
+        grid-row: span 2 ;
+    }
+
+    .mobile .picturehrz{
+        background-color: black;
+        width: 100%;
+        height: 30%;
+    }
+
+    .mobile .textandmore{
+        width: 100%;
+        background-color: brown;
+        margin-top: 2%;
+        height: 63%;
+    }
+
+}
+
 
