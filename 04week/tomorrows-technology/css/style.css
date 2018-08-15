@@ -1,105 +1,157 @@
-.container1{
-    width: 850px;
-    display: flex;
-    flex-direction: column;
+.website{
+    height: 750px;
+    width: 98%;
+    border: 3px solid #000;
+    margin: 1%;
 }
 
-/* first box */
-.topbox {
-    height: 400px;
-    width: 850px;
-    justify-content: center;
-    text-align: center;
+.box1{
+    width: 100%;
+    margin: 2%;
+}
+
+.box1 p, .box1 h1{
+    width: 80%;
+}
+
+section{
+    float: left;
+    width: 70%;
+}
+
+aside{
+    float: right;
+    width: 30%;
+    padding-top: 1%;
+}
+
+aside h1{
+    border-bottom: 3px solid #000;
+    margin-right: 20px;
+}
+
+img{
+    /* height: 60%; */
+    width: 80%;
+    margin: 1%;
+}
+
+button{
+    margin: 5px;
+    height: 40px;
+    width: 120px;
+    background-color: #505050;
     color: #fff;
-    font-size: 30px;
-    background-color: #2bcdc0;
-    display: flex;
-    align-items: center;
 
 }
+
+/* bottom section */
+footer{
+    background-color: #5d5d5d;
+    color:#fff;
+    height: 200px;
+    width: 100%;
+    margin-top: 760px;
+    list-style-type: none;
+    line-height: 1.5;
+    
+}
+
+.bottom1{
+    float: left;
+    width: 100px;
+    padding: 5px;
+}
+
+.bottom2{
+    float: right;
+    width: 100px;
+    padding: 5px;
+
+}
+
+
+.bottom1 li{
+    border-bottom: 2px solid #fff;
+}
+
+.bottom2 li{
+    border-bottom: 2px solid #fff;
+    margin-right: 10px;
+}
+
+
+/* media queries */
+
+
+/* on a desktop */
+@media screen and (min-width: 771px) {
+    footer{
+        display: none;
+    }
+}   
+
+
+
+/* on a tablet */
+@media screen and (max-width: 770px) {
+    aside{
+        display: none;
+    }
+    footer{
+        display:none;
+    }
+    .box1{
+        width: 100%;
+        height: auto;
+    }
+    .website{
+        height: 700px;
+        width: 650px;
+    }
+    img{
+        height: 400px;
+        width: 600px;
+    }
+    
+  }
   
-/* all three boxes */
-.box {
-    background-color: #1b1b1b;
-    height: 324px;
-    flex-basis: 40%;
-    /* padding: 40px; */
-    line-height: 30px;
-    justify-content: center;
-    text-align: center;
-    border: 1px #fff solid;
-    
-    
-}
+ /* on a cell phone */
+  @media screen and (max-width: 600px) {
+   
 
-.box div{
-    height: 25px;
-    width: 150px;
-    margin-top: 10px;
-    margin-left: 65px;
-
+.website{
+    height: 500px;
+    width: 98%;
 }
 
 
-/* color boxes in bottom row of boxes */
-.colorbox1{
-    background-color: #33a8dd;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+
+.bottom1 li{
+    border-bottom: 2px solid #fff;
 
 }
 
-.colorbox2{
-   background-color:  #f46731;
-   display: flex;
-   justify-content: center;
-   align-content: center;
+.bottom2 li{
+    border-bottom: 2px solid #fff;
+   
 }
 
-.colorbox3{
-    background-color: #2bcdc0;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+img{
+    height: 200px;
+    width: 60%;
 
 }
 
-/* bottom box */
-.bottomrow{
-    display: flex;
-    color: #fff;
+footer{
+    clear: both;
+    float: left;
+    height: auto;
+    width: 100%;
+    display: inherit;
+    margin-top: 70px;
 }
+  }
 
-/* cell phone */
-@media (max-width: 600px) { 
-    .topbox{
-        background-color: #33a8dd;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 300px;
-        height: 300px;
-        font-size: 20px;
-        margin: 5px;
-    }
-    .bottomrow{
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 50%;
-        justify-content: center;
-        background-color: #fff;
 
-    }
 
-    .box{
-        justify-content: center;
-        background-color: #fff;
-        color: #000000;
-        width: 300px;
-    }
-
-    .box div{
-        justify-content: center;
-        display: flex;
-    }
- }
