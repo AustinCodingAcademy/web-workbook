@@ -1,1 +1,84 @@
-
+body {
+    background-color: green;
+    line-height: 1.4;
+    margin: 30px 50px;
+}
+#wrapper {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: repeat(5, 1fr);
+}
+header {
+    grid-column: span 4;
+    text-align: center;
+}
+#tablet, #mobile {
+    display: none;
+}
+article {
+    background-color: orange;
+}
+.dTwo {
+    grid-column: span 2;
+}
+.dFive {
+    grid-column: span 2;
+    grid-row: unset;
+}
+.dThree {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+#wrapper {
+    grid-template-columns: 1fr 1fr;
+}
+header {
+    grid-column: span 2;
+    text-align: center; 
+}
+.tTwo {
+    grid-column: span 2;
+}
+.tThree {
+    grid-column: span 1;
+}
+.tFour {
+    grid-column: 2;
+    grid-row: 4;
+    grid-area: 3; 
+}
+.tFive {
+    display: none;
+}
+#desktop, #mobile {
+    display: none;
+}
+#tablet {
+    display: inline;
+}
+}
+@media (min-width: 200px) and (max-width: 767px) {
+#desktop, #tablet {
+display: none;
+}
+#mobile {
+display: inline;
+    }
+    #wrapper {
+        grid-template-columns: 1fr;
+    }
+    header {
+        grid-column: span 1; 
+    }
+    .mTwo {
+        grid-row: span 2;
+    }
+    .mThree {
+        grid-row: span 2;
+        grid-column: 1;
+        grid-row: span 15;
+        margin-right: -14px;
+    }
+}
