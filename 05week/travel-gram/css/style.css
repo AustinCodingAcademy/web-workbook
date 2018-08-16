@@ -31,7 +31,6 @@ article{
 
 
 @media(min-width: 500px) and (max-width: 1024px){
-    body {background: black;}
     #wrapper{
         grid-template-columns: 1fr 1fr;
     }
@@ -45,9 +44,12 @@ article{
         background-color: plum;
 
     }
-
+    .eTwo {
+        grid-row: span 2;
+    }
     .tTwo{
-        grid: span 2;
+        grid-column: span 2;
+        grid-row: span 2;
         background-color: aqua;
     }
 
@@ -57,6 +59,21 @@ article{
 
     #tablet{
     display: inline;
+    }
+
+    .row{
+        grid-row: span 2;
+    }
+
+    .topBoxes1 >img{
+    FLoat:left;
+    }
+
+    .topBoxes1 >p{
+        float: right;
+    }
+    .topBoxes1 >button{
+        float:right;
     }
 }
 
