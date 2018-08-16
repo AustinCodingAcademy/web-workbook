@@ -1,120 +1,147 @@
 #container {
+    width: auto;
+    height: auto;
+    /* background-color: blue; */
     margin-left: auto;
     margin-right: auto;
-    height: 500px;
-    width: 1000px;
-    /* background-color: red; */
+    padding-top: 20px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
+.photo {
+    float: left;
+    width: 75%;
 }
 
-
-.billboard {
-    width: 1000px;
-    height: 400px;
-    padding-top: 10%;
-    box-sizing: border-box;
-    background-color: rgb(43, 205, 192);
+aside {
+    float: right;
+    width: 22%;
+    height: 275px;
+    padding-right: 10px;
+    /* border: 1px red solid; */
 }
 
-h1 {
-    margin-left: 25%;
-    color: white;
-    font-size: 60px;
+h3 {
+    font-size: 28px;
+    padding-bottom: 5px;
+    border-bottom: solid grey 1px;
 }
 
-.content{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 1000px;
-    height: 400px;
-    background-color: rgb(27, 27, 27);
+ul {
+    list-style-type: none;
+    margin-left: -13%;
+    font-size: 16px;
 }
 
-.text {
-    width: 300px;
-    height: 290px;
-    box-sizing: border-box;
-    padding-left: 40px;
-    padding-right: 40px;
-    color: white;
-    /* background-color: blue; */
+li { 
+    padding-bottom: 15px;
 }
 
-#colorbox1 {
-    width: 200px;
-    height: 30px;
-    background-color:rgb(51, 168, 221);
-}
-
-#colorbox2 {
-    width: 200px;
-    height: 30px;
-    background-color:rgb(244, 103, 49);
-}
-
-#colorbox3 {
-    width: 200px;
-    height: 30px;
-    background-color: rgb(43, 205, 192);
+.content {
+    clear: both;
+    width: 75%;
+    padding-top: 5px;
+    /* border: 2px red solid; */
 }
 
 h2 {
-    font-size: 45px;
-    text-align: center;
-    width: 200px;
-    height: 50px;
-    /* background-color: red; */
+    font-size: 40px;
     margin-top: 0px;
+    margin-bottom: 10px;
+    /* background-color: pink; */
 }
 
 p {
+    font-size: 23px;
+    margin-bottom: 10px;
+    /* background-color: green; */
+}
+
+.button {
+    background-color: grey;
+    color: white;
+    font-size: 22px;
     text-align: center;
-    width: 200px;
+    width: 150px;
+    height: 30px;
+    box-sizing: border-box;
+    padding-top: 3px;
 }
 
-@media (max-width: 992px) {
+footer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    width: 100%;
+    height: 255px;
+    color: white;
+    background-color: grey;
+}
+
+.foot_items {
+    /* background-color: blue; */
+    width: 25%;
+}
+
+.foot_items > h3 {
+    border: none;
+    margin-bottom: 23px;
+}
+
+.links {
+    height: 30px;
+    font-size: 18px;
+    padding-top: 2.5px;
+    border-bottom: white 1px solid;
+    /* background-color: red; */
+}
+
+.icon {
+    float: right;
+    height: 30px;
+}
+
+@media (min-width: 992px) {
+    footer {
+        display: none;
+    }
+}
+
+@media (min-width : 768px) and (max-width: 991px) {
+    footer {
+        display: none;
+    }
     #container {
-        margin-left: auto;
-        margin-right: auto;
-        /* height: 1000px; */
-        width: 576px;
-        /* background-color: red; */
+        padding-right: 20px;
     }
-
-
-    .billboard {
-        background-color:rgb(51, 168, 221);
-        width: 576px;
+    aside {
+        display: none;
     }
-
-    h1 {
-        margin-left: 10%;
-        margin-right: 10%;
+    .photo {
+        width: 100%;
     }
-
-    .content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 576px;
-        height: 1100px;
-        background-color: rgb(247, 245, 246);
-        margin-top: 0px;
+    .content {
+        width: 100%;
     }
-
-    .text {
-        /* width: 300px;
-        height: 290px;
-        box-sizing: border-box;
-        padding-left: 40px;
-        padding-right: 40px; */
-        color: black;
-        /* background-color: blue; */
-    }
-
 }
+
+@media (min-width: 500px) and (max-width: 767px) {
+    aside {
+        display: none;
+    }
+
+    .photo {
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .content {
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+
+
