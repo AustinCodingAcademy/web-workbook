@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     body .wrap {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 1em;
@@ -23,8 +23,25 @@
     }
 
     .globalStyling p {
-        float: right;
         font-size: 14px;
+    }
+    
+    main .as4 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .as4 img {
+        max-width: 50%;
+    }
+
+    main .as10 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .as10 img {
+        max-width: 50%;
     }
 }
 
@@ -50,8 +67,46 @@
     }
 
     .globalStyling p {
-        float: right;
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+    /* .as1 .articleText {
+        height: 100%;
+    } */
+    
+    .as2 .articleText {
+        height: 100%;
+    }
+
+    main .as1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .as1 img {
+        max-width: 50%;
+    }
+
+    main .as2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .as2 img {
+        max-width: 50%;
+    }
+
+    .as6 .articleText {
+        height: 100%;
+    }
+
+    main .as6 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .as6 img {
+        max-width: 50%;
     }
 }
 
@@ -94,12 +149,11 @@ header {
 }
 
 .globalStyling p {
-    width: 80%;
+    padding: 0 5px 0 5px;
 }
 
 .articleControls {
     display: flex;
-    align-items: flex-end;
     width: 100%;
     justify-content: space-between;
 }
