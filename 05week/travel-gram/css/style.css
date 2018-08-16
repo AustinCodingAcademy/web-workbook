@@ -18,16 +18,20 @@ header{
 }
 article{
     background-color: gray;
-    height: 200px;
     grid-column: span 1;
 }
 
-.dTwo{
+.dTwo {
     grid-column: span 2;
     background-color: green;
 }
+.cTwo {
+    grid-row: span 2;
+}
+
 
 @media(min-width: 500px) and (max-width: 1024px){
+    body {background: black;}
     #wrapper{
         grid-template-columns: 1fr 1fr;
     }
@@ -70,7 +74,14 @@ article{
     header{
         grid-column: span 1;
     }
+    article {
+        height: 200px;
+    }
     .dTwo{
         grid-column: span 1;
+        
+    }
+    .cTwo {
+        grid-row: span 1;
     }
 }
