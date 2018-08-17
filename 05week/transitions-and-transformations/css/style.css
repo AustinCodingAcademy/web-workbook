@@ -1,0 +1,49 @@
+main {
+    width: 50px;
+    margin: auto;
+    /* border: double 1px purple; */
+}
+div {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+    position: relative;
+}
+main div:nth-child(odd) {
+    background-color: rgb(97, 97, 153);
+    transition: height 2s, width 2s, margin-left 2s, transform 2s;
+}
+main div:nth-child(even) {
+    background-color: rgb(223, 109, 109);
+    left: 0;
+    transition: margin-left 2s, height 2s, width 2s, left 2s 2s, transform 2s 2s;
+}
+main:hover div:nth-child(odd) {
+    background-color: rgb(97, 97, 153);
+    height: 100px;
+    width: 100px;
+    margin-left: -25px;
+    transform: translate(100px, 0) rotate(360deg);
+}
+main:hover div:nth-child(even) {
+    background-color: rgb(223, 109, 109);
+    height: 25px;
+    width: 25px;
+    margin-left: +12.5px;
+    left: -100px;
+    transform: rotate(-360deg);
+}
+/* main div:nth-child(1) {
+    background-color: rgb(84, 148, 132);
+    transition: background-color 1s;
+}
+main div:nth-child(1):hover {
+    background-color: rgb(214, 116, 116);
+}
+main div:nth-child(2) {
+    background-color: rgb(228, 154, 197);
+    transition: transform .5s;
+}
+main div:nth-child(2):hover {
+   transform: rotate(360deg);
+} */
