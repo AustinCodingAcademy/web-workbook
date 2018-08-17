@@ -24,11 +24,18 @@ h1 {
     text-emphasis-style:bold;
     transition: color 2s, font-size 4s, font-style 2s, transform 10s;
 }
+h1::after {
+    content:" meow";
+    visibility:hidden;
+}
 h1:hover {
     color:crimson;
     font-size:120px;
     font-style:italic;
     transform: rotate(3600deg);
+}
+h1:hover::after {
+    visibility:visible;
 }
 
 .nav {
