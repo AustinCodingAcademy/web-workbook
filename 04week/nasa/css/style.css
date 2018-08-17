@@ -22,17 +22,24 @@ h1 {
     color:white;
     font-size:90px;
     text-emphasis-style:bold;
-    transition: color 2s, font-size 4s, font-style 2s, transform 10s;
+    transition: color 2s, font-size 4s, font-style 2s, transform 30s;
 }
 h1::after {
-    content:" meow";
+    content:" I Can Haz Space?";
     display:none;
 }
 h1:hover {
     color:crimson;
-    font-size:120px;
+    font-size:72px;
     font-style:italic;
-    transform: rotate(3600deg);
+    transform: rotate(740deg);
+}
+h1::before {
+    display:inline;
+    content:"NASA";
+}
+h1:hover::before {
+    display:none;
 }
 h1:hover::after {
     display:inline;
