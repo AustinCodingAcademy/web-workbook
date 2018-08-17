@@ -1,0 +1,54 @@
+main {
+    width: 50px;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+
+div {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+main div:nth-child(odd) {
+    background-color: blue;
+    transition: height 2s, width 2s, margin-left 2s, transform 2s 2s;
+}
+
+main:hover div:nth-child(odd) {
+    height: 100px;
+    width: 100px;
+    margin-left: -25px;
+    transform: translate(100px,0) rotate(360deg);
+}
+
+main div:nth-child(even) {
+    background-color: red;
+    transition: height 2s, width 2s, margin-left 2s, transform 2s 2s;
+}
+
+main:hover div:nth-child(even) {
+    height: 25px;
+    width: 25px;
+    margin-left: 12.5px;
+    transform: translate(-100px,0) rotate(-360deg);
+}
+
+/* main div:nth-child(odd) {
+    background-color: blue;
+    transition: background-color 2s;
+}
+
+main div:nth-child(odd):hover {
+    background-color: white;
+}
+
+main div:nth-child(even) {
+    background-color: red;
+    transition: transform 2s;
+}
+
+main div:nth-child(even):hover {
+    transform: rotate(360deg);
+} */
