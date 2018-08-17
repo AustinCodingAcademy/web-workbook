@@ -1,1 +1,397 @@
+body{
+    font-size: 12px;
+}
+
+.siteContainer{
+    display: grid;
+    height: 1100px;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 150px 150px 100px 250px;
+}
+ 
+header{
+    grid-column: span 4;
+    text-align: center;
+    font-size: 15px;
+}
+
+.tablet, .mobile{
+    display: none;
+}
+
+article{
+    background-color: gray;
+    min-height: 100px;
+    grid-column: span 1;
+}
+
+/* begin span control */
+
+.three{
+    grid-row: span 2;
+}
+
+.one, .two, .six, .three{
+    grid-column: span 2;
+}
+
+/* end span control */
+/* begin image control */
+
+.one>img, .two>img {
+    width: 40%;
+    height: 80%;
+    margin: 2.5%;
+    float: left;
+}
+
+.three>img{
+    width: 97%;
+    height: 33%;
+    margin: 1.5%;
+}
+
+.four>img, .five>img{
+    width: 95%;
+    height: 33%;
+    margin: 2.5%;
+}
+
+.six>img{
+    width: 55%;
+    height: 88%;
+    margin: 1%;
+    float: left;
+}
+
+.seven>img, .eight>img, .nine>img, .ten>img{
+    width: 95%;
+    height: 40%;
+    margin: 2.5%;
+}
+
+/* end image control */
+
+/* begin content control */
+/* begin description control */ 
+
+.descOne, .descTwo{
+    height: 45%;
+    margin-top: 2.5%;
+    margin-right: 2.5%;
+    overflow: hidden;
+}
+
+.descThree{
+    height: 33%;
+    width: 97%;
+    margin: 1.5%;
+    overflow: hidden;
+}
+
+.descFour, .descFive{
+    width: 95%;
+    height: 33%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    overflow: hidden;
+}
+
+.descSix{
+    width: 40%;
+    height: 60%;
+    margin: 1%;
+    /* float: right; */
+    overflow: hidden;
+}
+
+.descSeven, .descEight, .descNine, .descTen{
+    width: 95%;
+    height: 30%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    overflow: hidden;
+}
+
+/* end description control */
+
+/* begin red button control */
+/* define red buttons */
+
+.redButton{
+    background-color: red;
+    border: 2px solid black;
+}
+
+.rbCircle{
+    height: 15px;
+    width: 15px;
+    border-radius: 10px;
+    float: left;
+}
+
+.rbRectangle{
+    height: 15px;
+    width: 80px;
+    background-color: red;
+    float: right;
+}
+
+.rbrOne, .rbrTwo{
+    width: 130px;
+}
+
+.rbrThree{
+    height: 30px;
+}
+
+/* begin red button placement */
+
+.number{
+    margin-left: .5%;
+}
+
+.rbDivOne, .rbDivTwo{
+    margin-top: 4.5%;
+    margin-right: 2.5%;
+}
+
+.rbDivThree{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.rbDivFour, .rbDivFive{
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.rbDivSix{
+    margin-top: 1%;
+    margin-right: 2%;
+}
+
+.rbDivSeven, .rbDivEight, .rbDivNine, .rbDivTen{
+    margin-top: 10%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+@media (max-width:1024px){
+    .siteContainer{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 350px 250px 150px 350px 250px 150px 350px 350px 250px 150px;
+    }
+
+    header{
+        grid-column: span 2;
+    }
+
+    .one, .five{
+        grid-row: span 1; 
+    }
+
+    .one, .four, .five, .eight, .nine{
+        grid-column: span 2;
+    }
+
+    .six, .seven, .ten{
+        grid-column: span 1;
+    }
+
+    .two, .three{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .desktop, .mobile{
+        display: none;
+    }
+
+    .tablet{
+        display: inline;
+    }
+    /* end article placement */
+
+    .one{
+        padding: 1%;
+    }
+  
+    .one>img, .five>img, .nine>img{
+        width: 95%;
+        height: 33%;
+    }
+    .descOne {
+        display: inline-block;
+        margin-top: .1%;
+        margin-left: 2.5%;
+    }
+
+    .rbDivOne{
+        display: inline;
+        margin-top: none;
+    }
+
+    .two{
+        padding: 2%;
+    }
+
+    .two>img{
+        width: 98%;
+        height: 34%;
+        margin: 1%;
+    }
+
+    .descTwo{
+        display: inline-block;
+        height: 30%;
+        margin-left: 1.5%;
+    }
+
+    .three{
+        padding: 2%;
+    }
+
+    .descThree{
+        height: 38%;
+    }
+
+    .rbrThree{
+        height: 15px;
+        width: 130px;
+    }
+
+    .four{
+        padding: .5%;
+    }
+
+    .four>img{
+        width: 55%;
+        height: 80%;
+        margin: 1%;
+        float: left;
+    }
+
+    .descFour{
+        width: 38%;
+        height: 50%;
+        margin-top: 1%;
+    }
+
+    .six{
+        padding: 1%;
+    }
+
+    .six>img{
+        width: 95%;
+        height: 42%;
+        margin-left: 2.5%;
+        margin-bottom: 3%;
+    }
+
+    .descSix{
+        height: 30%;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-bottom: 5%;
+    }
+
+    .rbDivSix{
+        margin-left: 2.5%;
+    }
+
+   .descSeven{
+        height: 27%;
+        margin-bottom: -4%;
+    }
+
+    .eight{
+        padding: 1%;
+    }
+
+    .eight>img{
+        width: 55%;
+        height: 90%;
+        margin: 1%;
+        float: left;
+    }
+
+    .descEight{
+        width: 38%;
+        height: 45%;
+        margin-top: .75%;
+        margin-bottom: -5%;
+    }
+
+    .descNine{
+        margin-bottom: -5%;
+    }
+}
+
+@media (max-width:768px){
+    .siteContainer{
+        height: 2500px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .desktop, .tablet{
+        display: none;
+    }
+
+    .mobile{
+        display: inline;
+    }
+
+    header{
+        grid-column: span 2;
+    }
+
+    .two, .three, .six, .seven, .ten{
+        grid-column: span 2;
+    }
+
+    .rbRectangle{
+        width: 130px;
+    }
+
+    .descOne{
+        height: 40%;
+    }
+
+    .four>img{
+        width: 98%;
+        height: 30%;
+    }
+    
+    .descFour{
+        width: 95%;
+        height: 42%;
+    }
+
+    .descSix{
+        margin-bottom: 3%;
+    }
+
+    .eight>img{
+        width: 98%;
+        height: 40%;
+    }
+
+    .descEight{
+        width: 98%;
+        height: 35%;
+    }
+
+    .descNine{
+        margin-bottom: -2%;
+    }
+
+    .descTen{
+        /* height: 30%; */
+        margin-bottom: -6%;
+    }
+}
 
