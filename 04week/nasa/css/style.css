@@ -24,6 +24,42 @@ main{
     justify-content: center;
 }
 
+.nasa::before {
+    content: 'NASA';
+}
+
+.galaxy:hover .nasa::before {
+    content: '';
+}
+
+.nasa {
+    transition: transform 2s;
+}
+
+.galaxy:hover .nasa::after {
+    content: 'SPACE FORCE LOL';
+    animation-name: weeText;
+    animation-duration: .5s;
+    animation-iteration-count: 1000;
+}
+
+@keyframes weeText {
+    0% {color: red}
+    25% {color: white}
+    50% {color: blue}
+    75% {color: orange}
+    100% {color: green}
+}
+
+.galaxy:hover .nasa {
+    transform: rotate(3210deg);
+}
+
+.galaxy:hover {
+    background-size: cover;
+    background-image: url(../img/sflol.jpg);
+}
+
 .contactContainer {
     display: flex;
     max-width: 850px;
