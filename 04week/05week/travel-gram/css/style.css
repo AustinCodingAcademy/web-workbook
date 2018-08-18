@@ -1,0 +1,116 @@
+:root {
+    --primary: #ddd;
+    --light: #fff;
+    --dark: #333;
+    --shadow: 0 1px 5px rgba(104,104,104, 0.7);
+}
+
+.btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border:0;
+    float: right;
+}
+
+.btn:hover {
+    background: var(--light);
+    color: var(--dark);
+}
+
+img {
+    max-width: 100%;
+    /* padding: 3rem; */
+}
+
+/*  adding this box-sizing will include padding and margins
+ to any sizing*/
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: rgb(216, 213, 213);
+    margin: 30px 50px;
+    line-height: 1.0;
+}
+
+#wrapper {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+header {
+    grid-column: span 4;
+    text-align: center;
+    border: 1px solid var(--dark);
+    height: 140px;
+}
+
+#tablet, #mobile {
+    display: none;
+} 
+
+article {
+    background-color: gray;
+    /* height: 200px; */
+    grid-column: span 1;
+    grid-template-columns: repeat(auto-fit, min-max (200px, 1fr));
+}
+
+p {
+    font-size: 17px;
+}
+
+.artOne {
+    grid-column: span 2;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.artFour {
+    grid-column: span 2;
+
+}
+
+
+.dTwo {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    header {
+        grid-column: span 2;
+    }
+
+    .dTwo {
+        grid-column: span 1;
+    }
+
+    .tTwo {
+        grid-column: span 2;
+    }
+
+    #desktop, #mobile {
+        display: none;
+    }
+
+    #tablet {
+        display: inline;
+    }
+
+}
