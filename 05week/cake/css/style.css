@@ -23,9 +23,9 @@ li > a:link {
 li > a:visited {
     color:
 }
-li > a:hover {
+/* li > a:hover {
     color:#FF83AD;
-}
+} */
 main {
     width:900px;
     height:400px;
@@ -40,13 +40,14 @@ h1 {
     font-style:italic;
     color:#00865F;
     text-shadow: 2px 2px white;
-    transition:font-size 2s, color 2s, transform 2s;
+    /* transition:font-size 2s, color 2s, transform 2s; */
 }
-main:hover > h1 {
+/* hover styling on h1 and p tags in main */
+/* main:hover > h1 {
     font-size:60pt;
     color:#FF4E68;
     transform: translate(-30px);
-}
+} */
 main > p {
     display:flex;
     justify-content:flex-end;
@@ -55,16 +56,67 @@ main > p {
     font-size:30pt;
     color:#00865F;
     text-shadow: 2px 2px white;
-    transition: font-size 2s, color 2s, transform 2s;
+    /* transition: font-size 2s, color 2s, transform 2s; */
 }
-main:hover p{
+/* main:hover p{
     color:#FF83AD;
     font-size:40pt;
     transform:rotate(360deg);
-}
+} */
+/* footer styling */
 footer {
     text-align:right;
     margin-right:40px;
     margin-top:1px;
     color:white;
+}
+
+/* tablet media query */
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav {
+        width:768px;
+    }
+    main {
+        width:768px;
+        height:300px;
+    }
+    h1 {
+        font-size:40pt;
+        margin-left:20px;
+    }
+    main > p {
+        font-size:20pt;
+        margin-right:20px;
+    }
+
+}
+/* mobile media query */
+@media only screen and (max-width: 768px) {
+    nav {
+        max-width:200px;
+    }
+    ul {
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        line-height:40px;
+        font-size:12pt;
+    }
+    main {
+        max-width:200px;
+        height:200px;
+    }
+    h1 {
+        font-size:40pt;
+        margin-top:150px;
+        text-align:center;
+    }
+    main > p {
+        font-size:25pt;
+        text-align:center;
+    }
+    footer {
+        margin-top:200px;
+        margin-right:-5px;
+    }
 }
