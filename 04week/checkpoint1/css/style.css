@@ -32,12 +32,13 @@ header h1{
 
 
 
-header img{
+header svg{
     float: right;
     width: 180px;
     margin-right: 6%;
     height: 180px;
     margin-top: -40px;
+    
 }
 
 
@@ -52,9 +53,33 @@ header img{
 
 /* restro shaddow used to create 3 layer image shadow, borrowed from lost source */
 
+.tvscreen{
+    transition: transform 2s;
+
+}
 
 
 
+
+
+.tvscreen:hover{
+    transform: scale(1.5)
+}
+
+
+.happy a:first-child{
+    margin-left: 10px;
+    transition: transform 4s linear, margin-left 9s;
+    
+}
+
+
+
+
+.tvscreen:hover .happy a:first-child{
+    margin-left: 0;
+    transform: rotate(720deg) scale(2);
+}
 
 
 .effect
@@ -207,7 +232,7 @@ left: 5%;
 z-index: 1;
 }
 
-/* .controls{
+.controls{
     width: 150px;
     height: 50px;
     display: inline-block;
@@ -217,7 +242,7 @@ z-index: 1;
 
 } */
 
-/* .insidebut{
+.insidebut{
     height: 28px;
     width: 28px;
     float: left;
@@ -226,7 +251,7 @@ z-index: 1;
 }
 #onbutton{
     margin-right: 43px;
-} */
+}
 
 /* #onbutton:active{
     
@@ -321,4 +346,87 @@ hr{
     margin-left: 25px;
     margin-bottom: 0px;
 
+}
+
+
+.mainicon{
+    transition:  filter 1s, fill 1s;
+}
+
+.mainicon:hover{
+    fill: green;
+    filter: drop-shadow(3px 3px 2px  rgb(15, 179, 0));
+}
+
+
+header{
+    transition: filter 2s;
+
+}
+
+header:hover{
+    filter: sepia(50%);
+}
+
+#menu li{
+    transition: transform 1s;
+
+}
+
+#menu li:hover{
+    transform: rotate(180deg)
+}
+
+ul{
+    transition: transform 1s;
+  
+}
+
+ul{
+    transform: rotate(180deg)
+}
+
+.ummm{
+    right: 0;
+
+    color: rgb(36, 35, 29);
+    transition: color 4s;
+}
+.tvscreen:hover .ummm{
+    color: green;
+}
+
+
+.testimonial{
+    transition: margin-left 4s;
+    position: relative;
+}
+
+
+.tvscreen:hover .testimonial{
+    margin-left:-250px;
+}
+.testimonial h1 , .testimonial p {
+    transition: color 2s ease-in-out;    
+}
+
+.tvscreen:hover .testimonial h1 {
+    color: rgb(36, 35, 29);
+}
+
+.tvscreen:hover .testimonial p{
+    color: rgb(36, 35, 29);
+}
+
+.redanimae{
+    transition: color 4s, border-color 2s;
+}
+
+.tvscreen:hover  .redanimae {
+    color: red;
+    border-color: red;
+}
+
+.innertv{
+    overflow:hidden;
 }
