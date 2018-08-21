@@ -28,14 +28,16 @@
     justify-content: space-around;
     font-weight: light;
     font-size: 14px;
-
+    color: gray;
 }
 
 .section {
     height: 324px;
-    width: 270px;
+    width: 283px;
     padding-top: 5px;
     color: gray;
+    padding-left: 15px;
+    transition: background-color 2s, color 2s;
 }
 
 #text1 {
@@ -54,6 +56,7 @@
     font-weight: bold;
     font-size: 20px;
     color: black;
+    transition: color 2s;
 }
 
 #button {
@@ -68,6 +71,30 @@
     cursor: pointer;
 }
 
-#section1 {
+/* #section1 {
     padding-left: 15px;
+} */
+
+#nasa {
+    transition: letter-spacing 2s, font-size 3s, transform 5s;
+    /* position: relative; */
+    margin: auto;
+    text-align: center;
+    height: 450px;
+    width: 850px;
+}
+
+#nasa:hover, #nasa:active {
+    letter-spacing: 8px;
+    font-size: 10px;
+    transform: translate(0,-80px) rotate(1080deg) skewy(20deg);
+}
+
+.section:hover, .section:active {
+    background-color: rgb(85, 84, 84);
+    color: white;
+}
+
+.head:hover {
+    color: white;
 }
