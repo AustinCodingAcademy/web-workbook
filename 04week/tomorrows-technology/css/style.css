@@ -1,0 +1,88 @@
+img {
+    width: 100%;
+}
+.button {
+    background-color: darkgrey;
+    border: none; 
+    color: white; 
+    padding: 15px 32px;
+    text-align: center; 
+    display: inline-block; 
+    font-size: 16px;
+    margin-top: 15px;
+}
+footer {
+    height: 400px; 
+    width: 100%;
+    background-color: darkgrey;
+    display: flex;
+}
+.useful {
+    height: 350px; 
+    width: 45%; 
+    padding: 10px;
+    color: white; 
+    text-decoration: underline;
+}
+.socialmedia {
+    height: 350px;
+    width: 45%
+    padding: 15px;
+    color: white;
+    text-decoration: underline;
+}
+/* aside {
+    display: none;
+} */
+
+@media (min-width: 900px) {
+    aside { 
+        width: 20%;
+        /* height: 800px;  */
+        /* float: right; */
+        margin-top: 0;
+        margin-left: 100px;
+        display: inline !important;
+    }
+    .asidebox {
+        display: flex;
+    }
+    main {
+        width: 75%;
+        /* display: flex; */
+        /* float: left; */
+        /* width: 65%; */
+        /* height: 800px; */
+        /* float: left; */
+    }
+    img {
+        width: 75%;
+        /* float: left; */
+    }
+    
+    .top {
+        text-decoration: underline;
+    }
+    footer {
+        display: none;
+    }
+}
+@media (min-width: 600px) {
+    footer {
+        display: none;
+    }
+    aside {
+        display: none;
+    }
+    main {
+        width: 100%;
+    }
+}
+@media (min-width: 400px) {
+    aside {
+        display: none;
+    }
+    .button {
+        margin-bottom: 15px;
+    }
+}
