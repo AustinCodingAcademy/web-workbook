@@ -1,1 +1,104 @@
+body{
+    background-color:lightgreen;
+}
+#wrapper{
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
 
+header{
+    grid-column: span 4;
+    text-align: center;
+}
+
+#tablet, #mobile{
+    display: none;
+}
+article{
+    background-color: gray;
+    grid-column: span 1;
+}
+
+.dTwo {
+    grid-column: span 2;
+    background-color: green;
+}
+.cTwo {
+    grid-row: span 2;
+}
+
+
+@media(min-width: 500px) and (max-width: 1024px){
+    #wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header{
+        grid-column: span 2;
+    }
+
+    .dTwo{
+        grid-column: span 1;
+        background-color: plum;
+
+    }
+    .eTwo {
+        grid-row: span 2;
+    }
+    .tTwo{
+        grid-column: span 2;
+        grid-row: span 2;
+        background-color: aqua;
+    }
+
+    #desktop, #mobile {
+    display:none;
+    }
+
+    #tablet{
+    display: inline;
+    }
+
+    .row{
+        grid-row: span 2;
+    }
+
+    .topBoxes1 >img{
+    FLoat:left;
+    }
+
+    .topBoxes1 >p{
+        float: right;
+    }
+    .topBoxes1 >button{
+        float:right;
+    }
+}
+
+@media(min-width: 1px) and (max-width: 499px){
+    #wrapper{
+        grid-template-columns: 1fr;
+
+    }
+    #desktop, #tablet{
+        display:none;
+    }
+    #mobile{
+        display: inline;
+    }
+    header{
+        grid-column: span 1;
+    }
+    article {
+        height: 200px;
+    }
+    .dTwo{
+        grid-column: span 1;
+        
+    }
+    .cTwo {
+        grid-row: span 1;
+    }
+}
