@@ -1,0 +1,87 @@
+body {
+    background-color:tomato;
+}
+#wrapper {
+    display:grid;
+    grid-template-columns:.5fr 1fr 1fr .5fr;
+    grid-template-rows: .25fr .75fr 1fr 1fr 1fr 1fr 1fr 1fr .25fr;
+    grid-gap:1em;
+}
+header {
+    background-color:aqua;
+    grid-column: span 4;
+    grid-row: span 1;
+    font-size:8pt;
+    text-align:center;
+}
+section {
+    background-color:blueviolet;
+    grid-column: span 4;
+    grid-row:span 1;
+}
+.one {
+    text-align:center;
+}
+.green {
+    background-color:green;
+}
+/* third section alignment specs */
+.twod {
+    display:grid;
+    grid-template-columns: .5fr 1fr 1fr .5fr;
+    grid-template-rows:.5fr 1fr;
+    grid-gap:.5em;
+}
+.twod > h2 {
+    grid-column: 2/4;
+    grid-row:span 1;
+    text-align:center;
+}
+.twod > div {
+    background-color:grey;
+    height:50px;
+    width:200px;
+}
+.done {
+    grid-column: 2;
+}
+.dtwo {
+    grid-column: 3;
+}
+/* fourth section alignment specs */
+.threed {
+    display:grid;
+    grid-template-columns: .5fr 1fr 1fr .5fr;
+    grid-template-rows:1fr;
+    grid-gap:.5em;
+}
+.threed > div {
+    background-color:grey;
+    height:200px;
+    width:200px;
+}
+.threed > .dthree {
+    grid-column:2;
+}
+.threed > .dfour {
+    grid-column:3;
+}
+.threed > .dfive {
+    grid-column:4;
+}
+/* fifth section specs */
+.twod > .dsix {
+    grid-column:2 / 4;
+    grid-row:2;
+    width:700px;
+    height:100px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+footer {
+    background-color:green;
+    grid-column:span 4;
+    font-size:12pt;
+    text-align:center;
+}
