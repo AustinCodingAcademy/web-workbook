@@ -52,21 +52,34 @@ body {
     text-decoration: none;
   }
 
+  /* transitions/animations */
+
   .topnav a:nth-child(1){
-    transition: font-size 1s, transform 1s;
+    transition: font-size 1s;
 }
 
   .topnav a:nth-child(1):hover{
     font-size: 24px;
 }
 
-.topnav a:nth-child(2) span{
-  transition: transform 1s, color 1s;
+.topnav a:nth-child(2) {
+  transition: color 1s;
 }
 
-.topnav a:nth-child(2) span:hover{
-  transform: rotate(20deg);
+.topnav a:nth-child(2):hover{
   color: purple;
+}
+
+h1:hover {
+  transform: skew(30deg, 10deg);
+}
+
+aside {
+  transition: transform 1s;
+}
+
+aside:hover {
+  transform: scale(2, 2);
 }
 
   a:hover {
@@ -81,6 +94,7 @@ body {
     font-family: raleway;
     text-transform: uppercase;
     color: white;
+    transition: transform 1s;
   }
   .who {
     width: 520px;
