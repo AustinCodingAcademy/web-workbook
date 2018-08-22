@@ -1,0 +1,112 @@
+body {
+    width: 100%;
+    height: 1000px; 
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+.allbox {
+    width: 50px; 
+    height: 50px; 
+    grid-column-start: 3;
+    /* background-color: black; */
+
+}
+
+/* .oddbox:hover {
+    transform: scale(2,2);
+} */
+
+
+.oddbox {
+    animation: move-in-steps 10s linear infinite, rotate-clockwise 10s linear infinite;
+}
+
+
+.evenbox {
+    animation: move-to-right 10s linear infinite, rotate-counterclockwise 10s linear infinite;
+}
+
+@keyframes move-in-steps {
+    0% {grid-column-start: 3;
+        width: 50px; 
+        height: 50px; } 
+    100% {grid-column-start: 5;
+          width: 100px;
+          height: 100px; } 
+} 
+
+ @keyframes move-to-right {
+    0% {
+        grid-column-start: 3;
+        width: 50px; 
+        height: 50px; 
+    }
+    100% {
+        grid-column-start: 1; 
+        width: 25px; 
+        height: 25px;
+    } 
+} 
+
+@keyframes rotate-clockwise {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes rotate-counterclockwise {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.one {
+    background-color: lightpink;
+}
+
+.two {
+    background-color: lightgreen; 
+
+}
+
+.three {
+    background-color: violet; 
+}
+
+.four {
+    background-color: yellow;
+}
+
+.five {
+    background-color: orange;
+}
+
+.six {
+    background-color: pink; 
+}
+
+.seven {
+    background-color: blueviolet;
+}
+
+.eight { 
+    background-color: lemonchiffon;
+}
+
+.nine {
+    background-color: lavenderblush;
+}
+
+.ten {
+    background-color: palevioletred;
+}
