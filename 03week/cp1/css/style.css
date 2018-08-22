@@ -19,11 +19,6 @@ body{
     padding-top: 40px;
 }
 
-.foodImage{
-    height: 300px;
-    width: 500px;
-}
-
 .rightCol{
     height: 800px;
     width: 500px;
@@ -55,17 +50,26 @@ nav{
     vertical-align: middle;
     font-size: 20px;
     font-style: oblique;
-    text-decoration:underline brown;
+    transition: transform 2s;
+    /* text-decoration:underline brown; */
 }
-
-div > header > nav > span:hover{
-    color: green;
-}
-
 div > header > nav > span{
     color: white;
     padding-right: 17px;
+    transition: color 2s, font-size 2s, text-decoration 2s;
 }
+
+div > header > nav > span:hover{
+    /* transform: color green; */
+    color: green;
+    font-size: 25px;
+    text-decoration:underline brown;
+}
+
+/* div > header > nav > span{
+    color: white;
+    padding-right: 17px;
+} */
 
 #beverages{
     width: 500px;
@@ -103,14 +107,14 @@ p{
 }
 
 #dailyHours,#weekendHours{
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 50px;
     text-align: center;
     font-style: oblique;
 }
 
 .cellNumber,.email{
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 50px;
     text-align: center;
     font-style: oblique;
@@ -145,4 +149,34 @@ h2{
     padding-bottom: 10px;
     text-align: left;
     font-style: italic; 
+}
+
+.foodImage{
+    background-image: url("../img/myRestaurant.jpg");
+    height: 400px;
+    width: 500px;
+    transition: transform 2s;
+}
+
+.foodImage:hover{
+    background-image: url("../img/rest4.jpg");
+    transform: rotate(360deg);
+
+}
+
+h1{
+    font-size: 30px;
+    color: brown;
+    text-shadow: 2px 2px 4px black;
+    padding-top: 40px;
+    padding-left: 60px;
+    text-align: center;
+    transition: color 2s, font-size 2s, text-shadow 2s, text-decoration 2s;
+}
+
+h1:hover{
+    color: blue;
+    font-size: 35px;
+    text-shadow: 3px 3px 6px brown;
+    text-decoration: aqua;
 }
