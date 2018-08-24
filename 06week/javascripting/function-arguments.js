@@ -1,11 +1,4 @@
-// function math('bubbles','buttercup','jigglipuff') {
-//     return math 'buttercup' * 'jigglipuff' + bubbles;
-// }
-// console.log(math())
-
-function example(rim, ran, run) {
-    console.log(ran,run,rim)
-    return ran * run + rim;
+function math(rim, ran, run) {
+    return (ran * run + rim);
 }
-console.log(math(rim[53], ran[61], run[67]));
-// console.log(math(car[53], bus[61], train[67]));
+console.log(math(53, 61, 67));

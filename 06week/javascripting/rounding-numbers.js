@@ -1,4 +1,3 @@
-var roundup = parseFloat(1.5);
-math.round(0.5);
-var rounded=(0.5);
-console.log(roundup);
+var roundup = 1.5;
+var rounded=Math.round(roundup);
+console.log(rounded);
