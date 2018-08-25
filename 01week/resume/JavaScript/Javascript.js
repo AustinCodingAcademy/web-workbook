@@ -1,8 +1,13 @@
-function sectionSetup(){
-
+function sectionSetup(_selectedButton){
+if (_selectedButton === "edu")
+    modifyArtical();
+    modifySidebar();
 }
 function modifyArtical(){
     
+}
+function modifySidebar(){
+  
 }
 
 
