@@ -1,15 +1,22 @@
 function sectionSetup(_selectedButton){
-if (_selectedButton === "edu")
-    modifyArtical();
-    modifySidebar();
-}
-function modifyArtical(){
-    
-}
-function modifySidebar(){
+  if (_selectedButton === "edu")
+      modifyArtical(_singleValue);
+      modifySidebar(_link1, _link2);
+  }
+  function modifyArtical(_articalValue){
+    getMainArtical =  Document.getElementById(MainArticle);
+    pullArtical(_articalValue);
+ 
+       
+     }
   
-}
+  function modifySidebar(_sidebarLinkOne, _sidebarLinkTwo, _sidebarLinkThree, _sidebarLinkFour){
+    
+  }
+  function pullArtical(_currentArtical){
+//grab the html file and return the innerhtml
 
+  }
 
 
 //Creating elements
