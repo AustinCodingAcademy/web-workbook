@@ -1,3 +1,4 @@
+/* desktop styling */
 body {
     background-color:#76AEB8;
 }
@@ -7,11 +8,12 @@ header {
     display:flex;
     flex-direction:column;
     background-color:white;
-    height:200px;
+    height:300px;
     max-width:70%;
     justify-content:center;
     align-items:center;
     margin:auto;
+    border-radius:50% 50%;
 }
 header > img {
     height:200px;
@@ -27,7 +29,7 @@ header > img {
     font-size:20pt;
     font-family:Snell Roundhand, cursive;
 }
-/* link styling */
+/* nav link styling */
 nav > a:link {
     text-decoration:none;
     color:#468BA5;
@@ -44,11 +46,12 @@ main {
     background-size:cover;
     background-attachment: fixed;
     width:70%;
-    height:800px;
+    height:700x;
     margin:auto;
 }
+/* section styling */
 section {
-    height:400px;
+    height:500px;
     width:80%;
     margin:auto;
     text-align:center;
@@ -73,31 +76,48 @@ section > p {
 main > aside {
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
-    border:1px solid black;
-    height:300px;
+    grid-gap:1em;
+    height:200px;
 }
 aside > div {
-    height: 300px;
+    height: 190px;
     width:100%;
-    border:1px black solid;
     text-align:left;
+    background-color:#63B0BA;
+    border-radius:100%;
+    transition: background-color 1s ease, perspective 2s, translate 2s;
+}
+aside > div:hover {
+    background-color:#7F3B6F;
+    transform: perspective(500px) translate3d(10px, 0, 50px);
+ 
 }
 div > h1 {
     text-align:center;
     color:white;
 }
 div > p {
-    padding-left:30px;
+    padding-left:40px;
     color:white;
 }
-div > input.message {
-    margin-left:30px;
+p > a:link {
+    text-decoration:none;
+    color:white;
 }
-
+p > a:visited {
+    color:white;
+}
+p >a:hover {
+    font-size:14pt;
+}
+div > input.message {
+    margin-left:40px;
+}
+/* footer styling */
 footer {
     position:relative;
-    bottom:20px;
-    left:220px;
+    bottom:10px;
+    left:10px;
     color:white;
     font-size:10pt;
 }
