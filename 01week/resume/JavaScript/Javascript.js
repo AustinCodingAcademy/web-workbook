@@ -1,8 +1,25 @@
-function sectionSetup(_selectedButton, nulldele){
-  if (_selectedButton === "edu")
-      modifyArtical('test.html');
-     // modifySidebar(_link1, _link2);
-  }
+function sectionSetup(_selectedButton){
+  if (_selectedButton === "edu"){
+      modifyArtical('./html/Education.html');
+      modifySideBar('./html/EducationSideBar.html');
+  }else if(_selectedButton === "work"){
+      modifyArtical('./html/Work.html');
+      modifySideBar('./html/WorkSideBar.html');
+  }else if(_selectedButton === "skills"){
+      modifyArtical('./html/Skills.html');
+      modifySideBar('./html/SkillsSideBar.html');
+  }else if(_selectedButton === "portfolio"){
+      modifyArtical('./html/Portfolio.html');
+      modifySideBar('./html/PortfolioSideBar.html');
+  }else if(_selectedButton === "awards"){
+      modifyArtical('./html/Awards.html');
+      modifySideBar('./html/AwardsSideBar.html');
+   }else if(_selectedButton === "ProBono"){
+      modifyArtical('./html/ProBono.html');
+     modifySideBar('./html/ProBonoSideBar.html');
+}     
+      
+}
   function modifyArtical(_articalValue){
 
     //var getMainArtical =  Document.getElementById(MainArticle);
@@ -11,12 +28,13 @@ function sectionSetup(_selectedButton, nulldele){
        
      }
   
-  function modifySidebar(_sidebarLinkOne, _sidebarLinkTwo, _sidebarLinkThree, _sidebarLinkFour){
+  function modifySideBar(_innerSideBar){
+    pullSideBar(_innerSideBar);
     
   }
   function pullArtical(_currentArtical){
     var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
-    xhr.open('get', './html/test.html', true);
+    xhr.open('get', _currentArtical, true);
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4 && xhr.status == 200) { 
             document.getElementById("MainArticle").innerHTML = xhr.responseText;
@@ -25,7 +43,17 @@ function sectionSetup(_selectedButton, nulldele){
     xhr.send();
 
   }
+  function pullSideBar(_currentSideBar){
+    var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+    xhr.open('get', _currentSideBar, true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) { 
+            document.getElementById("SideNav").innerHTML = xhr.responseText;
+        } 
+    }
+    xhr.send();
 
+  }
 
 //Creating elements
 //Example: make("input", { id: 'example', classList: ["button"], attr: {  "type": "button", "value": 'test', "onclick": "onclick();" }});
