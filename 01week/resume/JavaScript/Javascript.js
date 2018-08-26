@@ -1,10 +1,11 @@
-function sectionSetup(_selectedButton){
+function sectionSetup(_selectedButton, nulldele){
   if (_selectedButton === "edu")
-      modifyArtical(_singleValue);
-      modifySidebar(_link1, _link2);
+      modifyArtical('test.html');
+     // modifySidebar(_link1, _link2);
   }
   function modifyArtical(_articalValue){
-    getMainArtical =  Document.getElementById(MainArticle);
+
+    //var getMainArtical =  Document.getElementById(MainArticle);
     pullArtical(_articalValue);
  
        
@@ -14,7 +15,14 @@ function sectionSetup(_selectedButton){
     
   }
   function pullArtical(_currentArtical){
-//grab the html file and return the innerhtml
+    var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+    xhr.open('get', './html/test.html', true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) { 
+            document.getElementById("MainArticle").innerHTML = xhr.responseText;
+        } 
+    }
+    xhr.send();
 
   }
 
