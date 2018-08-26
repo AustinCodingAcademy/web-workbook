@@ -39,6 +39,7 @@ nav > a:visited {
 }
 nav > a:hover {
     font-size:25pt;
+    color:#C23796;
 }
 /* main styling */
 main {
@@ -55,7 +56,6 @@ section {
     width:80%;
     margin:auto;
     text-align:center;
-    color:#1F486E;
 }
 section > h1 {
     color:white;
@@ -85,7 +85,7 @@ aside > div {
     text-align:left;
     background-color:#63B0BA;
     border-radius:100%;
-    transition: background-color 1s ease, perspective 2s, translate 2s;
+    transition: background-color 1s ease;
 }
 aside > div:hover {
     background-color:#7F3B6F;
@@ -120,4 +120,80 @@ footer {
     left:10px;
     color:white;
     font-size:10pt;
+}
+/* mobile media query */
+@media only screen and (max-width: 768px){
+    /* header styling */
+    header {
+        flex-direction:column;
+        max-width:90%;
+        height:350px;
+        border-radius:0%;
+    }
+    header > img {
+        max-width:200px;
+        height:200px;
+    }
+    header > nav {
+        flex-direction:column;
+        line-height:20px;
+        align-items:center;
+        justify-content:center;
+        font-size:16pt;
+    }
+    main {
+        width:90%;
+        height:700px;
+    }
+/* section styling */
+    section {
+        height:350px;
+    }
+    section > h1 {
+        color:white;
+        font-size:20pt;
+        padding-top:10px;
+        font-family:Snell Roundhand, cursive;
+    }
+    section > p {
+        color:white;
+        font-size:16pt;
+        line-height:30px;
+        font-family:Snell Roundhand, cursive;
+    } 
+    /* aside styling */
+    main > aside {
+        display:grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns:1fr;
+        height:200px;
+    }   
+    aside > div {
+        height: 100px;
+        width:100%;
+        text-align:center;
+        background-color:#63B0BA;
+        border-radius:0%;
+    }
+    div > h1 {
+        text-align:center;
+        color:white;
+        font-size:12pt;
+        text-decoration:underline;
+    }
+    div > p {
+        padding-left:0px;
+        color:white;
+        font-size:12pt;
+    }
+    div > input.message {
+        margin-left:0px;
+    }
+    footer {
+        position:relative;
+        bottom:1px;
+        left:1px;
+        color:white;
+        font-size:10pt;
+    }
 }
