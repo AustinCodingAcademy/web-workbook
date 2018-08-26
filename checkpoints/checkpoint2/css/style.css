@@ -12,14 +12,57 @@
             "box3 box4"
             "box5 box6"
     }
+
+    main .aboutDogs {
+        height: 100%;
+        font-size: .8em;
+    }
 }
 
 @media (max-width: 425px) {
+    main .aboutUs {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-top: 1em;
+        justify-content: space-evenly;
+        align-content: center;
+        font-family: Helvetica, sans-serif;
+        background-color: #fff;
+    }
+
+    .aboutUsTitle {
+        text-align: center;
+    }
+
+    main .aboutUsText {
+        width: 80%;
+        text-align: justify;
+        align-self: center;
+    }
+
+    main .aboutDogs {
+        height: 100%;
+        font-size: .8em;
+    }
+
+    main .aboutDogs .dogArticles {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .dogText {
+        margin-bottom: 1em;
+    }
+
     main .ourPartners {
         display: grid;
         width: 100%;
         margin: auto;
-        /* background-color: #fff; */
+        background-color: #fff;
         align-content: space-around;
         justify-content: space-around;
         grid-template-columns: 1fr;
@@ -64,6 +107,7 @@ header .logo .name {
     height: 100%;
 }
 
+/* begins about us section */
 .aboutUs {
     display: flex;
     flex-direction: row;
@@ -75,7 +119,6 @@ header .logo .name {
 }
 
 .aboutUsTitle {
-    text-indent: 2em;
     font-weight: 700;
     font-size: 1.2em;
     line-height: 3em;
