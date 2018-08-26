@@ -48,12 +48,12 @@ main {
     background-size:cover;
     background-attachment: fixed;
     width:70%;
-    height:700x;
+    height:950px;
     margin:auto;
 }
 /* section styling */
 section {
-    height:500px;
+    height:700px;
     width:80%;
     margin:auto;
     text-align:center;
@@ -64,60 +64,13 @@ section > h1 {
     padding-top:20px;
     font-family:Snell Roundhand, cursive;
 }
-h1 > span {
-    color:#C23796;
-}
 section > p {
     color:white;
     font-size:24pt;
     line-height:50px;
     font-family:Snell Roundhand, cursive;
 }
-/* aside styling */
-main > aside {
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-gap:1em;
-    height:200px;
-}
-aside > div {
-    height: 190px;
-    width:100%;
-    text-align:left;
-    background-color:#63B0BA;
-    border-radius:100%;
-    transition: background-color 1s ease;
-}
-aside > div:hover {
-    background-color:#7F3B6F;
-    transform: perspective(500px) translate3d(10px, 0, 50px);
- 
-}
-div > h1 {
-    text-align:center;
-    color:white;
-}
-div:hover > h1 {
-    color:#C23796;
-    text-shadow:2px white;
-}
-div > p {
-    padding-left:40px;
-    color:white;
-}
-p > a:link {
-    text-decoration:none;
-    color:white;
-}
-p > a:visited {
-    color:white;
-}
-p >a:hover {
-    font-size:14pt;
-}
-div > input.message {
-    margin-left:40px;
-}
+
 /* footer styling */
 footer {
     position:relative;
@@ -131,9 +84,10 @@ footer {
     /* header styling */
     header {
         flex-direction:column;
-        max-width:90%;
+        max-width:768px;
         height:250px;
         border-radius:0%;
+        margin:auto;
     }
     header > img {
         width:300px;
@@ -148,7 +102,7 @@ footer {
     }
     main {
         width:90%;
-        height:750px;
+        height:650px;
     }
 /* section styling */
     section {
@@ -166,39 +120,7 @@ footer {
         line-height:30px;
         font-family:Snell Roundhand, cursive;
     } 
-    /* aside styling */
-    main > aside {
-        display:grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns:1fr;
-        height:200px;
-    }   
-    aside > div {
-        height:115px;
-        width:100%;
-        text-align:center;
-        background-color:#63B0BA;
-        border-radius:0%;
-    }
-    div > h1 {
-        text-align:center;
-        color:white;
-        font-size:12pt;
-        text-decoration:underline;
-    }
-    aside > div:hover {
-        background-color:#63B0BA;
-        transform: perspective(0px) translate3d(0px, 0, 0px);
-     
-    }
-    div > p {
-        padding-left:0px;
-        color:white;
-        font-size:12pt;
-    }
-    div > input.message {
-        margin-left:0px;
-    }
+    /* footer styling */
     footer {
         position:relative;
         bottom:1px;
