@@ -1,27 +1,3 @@
-function sectionSetup(_selectedButton){
-  if (_selectedButton === "edu"){
-      modifyArticle('./html/Education.html');
-      modifySideBar('./html/EducationSideBar.html');
-  }else if(_selectedButton === "work"){
-      modifyArticle('./html/Work.html');
-      modifySideBar('./html/WorkSideBar.html');
-  }else if(_selectedButton === "skills"){
-      modifyArticle('./html/Skills.html');
-      modifySideBar('./html/SkillsSideBar.html');
-  }else if(_selectedButton === "portfolio"){
-      modifyArticle('./html/Portfolio.html');
-      modifySideBar('./html/PortfolioSideBar.html');
-  }else if(_selectedButton === "awards"){
-      modifyArticle('./html/Awards.html');
-      modifySideBar('./html/AwardsSideBar.html');
-   }else if(_selectedButton === "probono"){
-      modifyArticle('./html/ProBono.html');
-     modifySideBar('./html/ProBonoSideBar.html');
-}     
-      
-}
-
-//replace all that up there with 
 function sectionSetup(_selectedButton) {
 	var article_file = "./html/" + _selectedButton + ".html";
   var sidebar_file = "./html/" + _selectedButton + "SideBar.html";
@@ -29,15 +5,7 @@ function sectionSetup(_selectedButton) {
 	modifySideBar(sidebar_file);
 }
 
-  function modifyArticle(_ArticleValue){
-    pullArticle(_ArticleValue);
-  }
-  
-  function modifySideBar(_innerSideBar){
-    pullSideBar(_innerSideBar);
-  }
-  
-  function pullArticle(_currentArticle){
+function modifyArticle(_currentArticle){
     var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
     xhr.open('get', _currentArticle, true);
     xhr.onreadystatechange = function() {
@@ -48,7 +16,7 @@ function sectionSetup(_selectedButton) {
     xhr.send();
 
   }
-  function pullSideBar(_currentSideBar){
+  function modifySideBar(_currentSideBar){
     var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
     xhr.open('get', _currentSideBar, true);
     xhr.onreadystatechange = function() {
