@@ -17,6 +17,17 @@
         height: 100%;
         font-size: .8em;
     }
+
+    main .dogArticles {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .dogArticles article {
+        display: flex;
+        flex-direction: row;
+        margin: 15px 0;
+    }
 }
 
 @media (max-width: 425px) {
@@ -161,6 +172,11 @@ header .logo .name {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.dogArticles article {
+    display: flex;
+    flex-direction: column;
 }
 
 .dogImages {
