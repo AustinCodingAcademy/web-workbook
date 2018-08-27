@@ -1,36 +1,45 @@
 function sectionSetup(_selectedButton){
   if (_selectedButton === "edu"){
-      modifyArtical('./html/Education.html');
+      modifyArticle('./html/Education.html');
       modifySideBar('./html/EducationSideBar.html');
   }else if(_selectedButton === "work"){
-      modifyArtical('./html/Work.html');
+      modifyArticle('./html/Work.html');
       modifySideBar('./html/WorkSideBar.html');
   }else if(_selectedButton === "skills"){
-      modifyArtical('./html/Skills.html');
+      modifyArticle('./html/Skills.html');
       modifySideBar('./html/SkillsSideBar.html');
   }else if(_selectedButton === "portfolio"){
-      modifyArtical('./html/Portfolio.html');
+      modifyArticle('./html/Portfolio.html');
       modifySideBar('./html/PortfolioSideBar.html');
   }else if(_selectedButton === "awards"){
-      modifyArtical('./html/Awards.html');
+      modifyArticle('./html/Awards.html');
       modifySideBar('./html/AwardsSideBar.html');
    }else if(_selectedButton === "probono"){
-      modifyArtical('./html/ProBono.html');
+      modifyArticle('./html/ProBono.html');
      modifySideBar('./html/ProBonoSideBar.html');
 }     
       
 }
-  function modifyArtical(_articalValue){
-    pullArtical(_articalValue);
+
+//replace all that up there with 
+function sectionSetup(_selectedButton) {
+	var article_file = "./html/" + _selectedButton + ".html";
+  var sidebar_file = "./html/" + _selectedButton + "SideBar.html";
+	modifyArtical(article_file);
+	modifySideBar(sidebar_file);
+}
+
+  function modifyArticle(_ArticleValue){
+    pullArticle(_ArticleValue);
   }
   
   function modifySideBar(_innerSideBar){
     pullSideBar(_innerSideBar);
   }
   
-  function pullArtical(_currentArtical){
+  function pullArticle(_currentArticle){
     var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
-    xhr.open('get', _currentArtical, true);
+    xhr.open('get', _currentArticle, true);
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4 && xhr.status == 200) { 
             document.getElementById("MainArticle").innerHTML = xhr.responseText;
