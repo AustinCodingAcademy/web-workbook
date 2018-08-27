@@ -1,7 +1,7 @@
 function sectionSetup(_selectedButton) {
 	var article_file = "./html/" + _selectedButton + ".html";
   var sidebar_file = "./html/" + _selectedButton + "SideBar.html";
-	modifyArtical(article_file);
+	modifyArticle(article_file);
 	modifySideBar(sidebar_file);
 }
 
