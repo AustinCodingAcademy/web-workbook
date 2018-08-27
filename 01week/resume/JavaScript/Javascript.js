@@ -14,24 +14,20 @@ function sectionSetup(_selectedButton){
   }else if(_selectedButton === "awards"){
       modifyArtical('./html/Awards.html');
       modifySideBar('./html/AwardsSideBar.html');
-   }else if(_selectedButton === "ProBono"){
+   }else if(_selectedButton === "probono"){
       modifyArtical('./html/ProBono.html');
      modifySideBar('./html/ProBonoSideBar.html');
 }     
       
 }
   function modifyArtical(_articalValue){
-
-    //var getMainArtical =  Document.getElementById(MainArticle);
     pullArtical(_articalValue);
- 
-       
-     }
+  }
   
   function modifySideBar(_innerSideBar){
     pullSideBar(_innerSideBar);
-    
   }
+  
   function pullArtical(_currentArtical){
     var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
     xhr.open('get', _currentArtical, true);
