@@ -1,36 +1,13 @@
-function sectionSetup(_selectedButton){
-  if (_selectedButton === "edu"){
-      modifyArtical('./html/Education.html');
-      modifySideBar('./html/EducationSideBar.html');
-  }else if(_selectedButton === "work"){
-      modifyArtical('./html/Work.html');
-      modifySideBar('./html/WorkSideBar.html');
-  }else if(_selectedButton === "skills"){
-      modifyArtical('./html/Skills.html');
-      modifySideBar('./html/SkillsSideBar.html');
-  }else if(_selectedButton === "portfolio"){
-      modifyArtical('./html/Portfolio.html');
-      modifySideBar('./html/PortfolioSideBar.html');
-  }else if(_selectedButton === "awards"){
-      modifyArtical('./html/Awards.html');
-      modifySideBar('./html/AwardsSideBar.html');
-   }else if(_selectedButton === "probono"){
-      modifyArtical('./html/ProBono.html');
-     modifySideBar('./html/ProBonoSideBar.html');
-}     
-      
+function sectionSetup(_selectedButton) {
+	var article_file = "./html/" + _selectedButton + ".html";
+  var sidebar_file = "./html/" + _selectedButton + "SideBar.html";
+	modifyArticle(article_file);
+	modifySideBar(sidebar_file);
 }
-  function modifyArtical(_articalValue){
-    pullArtical(_articalValue);
-  }
-  
-  function modifySideBar(_innerSideBar){
-    pullSideBar(_innerSideBar);
-  }
-  
-  function pullArtical(_currentArtical){
+
+function modifyArticle(_currentArticle){
     var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
-    xhr.open('get', _currentArtical, true);
+    xhr.open('get', _currentArticle, true);
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4 && xhr.status == 200) { 
             document.getElementById("MainArticle").innerHTML = xhr.responseText;
@@ -39,7 +16,7 @@ function sectionSetup(_selectedButton){
     xhr.send();
 
   }
-  function pullSideBar(_currentSideBar){
+  function modifySideBar(_currentSideBar){
     var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
     xhr.open('get', _currentSideBar, true);
     xhr.onreadystatechange = function() {
