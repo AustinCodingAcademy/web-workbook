@@ -1,0 +1,404 @@
+#container {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Header left and navigatin bar right. */
+header {
+    float: left;
+    width: 40%;
+    height: 150px;
+    /* position: fixed; */
+    background-color: white;
+}
+
+#logo {
+    width: 160px;
+    height: 130px;
+    margin-left: 40%;
+    margin-top: 2%;
+}
+
+nav {
+    float: right;
+    width: 60%;
+    height: 150px;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.navtext {
+    font-size: 20px;
+    width: 150px;
+    height: 35px;
+    padding-top: 9px;
+    text-align:center;
+    transition: transform 1s;
+    /* background-color: teal; */
+}
+
+/* link text moves down and right */
+.navtext:hover {
+    transform: translate(5px,5px);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* button to book a course in nav section */
+#orderb {
+    font-size: 18px;
+    background-color: rgb(242, 114, 31);
+    width: 150px;
+    height: 40px;
+    padding-top: 9px;
+    text-align:center;
+    color: white;
+    transition: color 0.5s;
+}
+
+/* Change font color of button while hover */
+#orderb:hover {
+    color: black;
+}
+
+/* Large pic with h1 text as first main section */
+#bigimage {
+    clear: both;
+    width: 100%;
+    height: 600px;
+    background-image: url(../images/download.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 18%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 90px;
+    /* background-color: teal; */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 60px;
+    /* background-color: teal; */
+    text-align: center;
+}
+
+/* large button to book course */
+#bigbutton {
+    font-size: 25px;
+    width: 400px;
+    text-align: center;
+    height: 70px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(242, 114, 31);
+    transition: 0.5s color;
+}
+
+/* Change font color of button while hover */
+#bigbutton:hover {
+    color: black;
+}
+
+/* 5 different course options displayed using
+grid and flex within each grid item. */
+#courselist {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 8%;
+    margin-right: 8%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto;
+    grid-row-gap: 2em;
+    /* background-color: pink; */
+}
+
+/* The top 2 boxes */
+.tripbox {
+    grid-column: span 3;
+    /* border: 1px black solid; */
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: blue; */
+}
+
+.erock {
+    height: 260px;
+    width: 100%;
+}
+
+/* The bottom 3 boxes */
+.smallbox {
+    margin-right: 20px;
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px black solid; */ 
+}
+
+.smallpic {
+    height: 200px;
+    width: 100%;
+}
+
+h3 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 38px;
+    margin-top: 0px;
+    /* background-color: teal; */
+}
+
+.tripbox > h3 {
+    margin-bottom: 0px;
+}
+
+
+.costs {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.summary {
+    font-size: 18px;
+    height: 150px;
+    /* background-color: green; */
+}
+
+.smallbox > .summary {
+    font-size: 18px;
+    height: 110px;
+    /* background-color: green; */
+}
+
+/* The order option button for each course */
+.pushButton {
+    height: 60px;
+    padding-top: 15px;
+    color: white;
+    background-color: rgb(242, 114, 31); 
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 20px;
+    transition: color 0.5s;
+}
+
+/* Change font color of button while hover */
+.pushButton:hover {
+    color:black;
+}
+
+/* Next section on webpage. Uses flex to position to columns
+and a grid for the picture montage */
+#about {
+    background-color: rgb(242, 242, 242);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* first column */
+#bio {
+    width: 50%;
+    /* background-color: green; */
+}
+
+#aboutT {
+    font-size: 45px;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left:12.5%;
+    margin-right: 12.5%;
+    /* background-color: teal; */
+}
+
+#bio > p {
+    /* background-color: pink; */
+    margin-left:15%;
+    margin-right: 15%;
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 5%;
+}
+
+/* Second column */
+#grid {
+    width: 50%;
+    margin-right: 7%;
+    /* background-color: pink; */
+    display: grid;
+    grid-template-columns: repeat(3, 16vw);
+    grid-template-rows: repeat(3, 18vh);
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+}
+
+.piccollage {
+    grid-column: span 1;
+    width: 15vw;
+    height: 16vh;
+    /* align-self: center; */
+}
+
+/* Footer section of page use flex to arrange into 
+2 columns. And, flex to display the links */
+footer {
+    height: 200px;
+    color: white;
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: row;
+}
+
+/* First Column */
+#contact {
+   width: 50%;
+   text-align: center;
+   /* background-color: pink; */
+}
+
+#contact >h3 {
+    margin-bottom: -1%;
+    margin-top: 5%;
+}
+
+#contact > p {
+    /* background-color: green; */
+    font-size: 18px;
+}
+
+/* Second column using flex to arrange 4
+items in a row */
+#links {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer_links {
+    font-size: 18px;
+    padding-top: 8px;
+    width: auto;
+    text-align: center;
+    transition: transform 1s;
+    /* background-color: green; */
+}
+
+/* link text moves down and right */
+.footer_links:hover {
+    transform: translate(5px,5px);
+}
+
+#fbutton {
+    background-color:  rgb(242, 114, 31);
+    padding-top: 14px;
+    width: 125px;
+    transform: color 0.5s;
+}
+
+/* Change font color of button while hover */
+#fbutton:hover {
+    color: black;
+}
+
+/* Media query for mobile devices. Removed links on nav bar
+links on the footer and grid with photos in the about section  */
+
+@media (max-width: 768px) {
+    header {
+        clear: both;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #logo {
+        margin-left: 37%;
+    }
+
+    nav {
+        clear: both;
+        width: 100%;
+        height: 70px;
+        /* background-color: green; */
+    }
+
+    .navtext {
+        display: none;
+    }
+
+    #orderb {
+        width: 100%;
+    }
+
+    #bigimage {
+        height: 600px;
+        padding-top: 22%;
+        background-image: url(../images/deseret_climb.jpg);
+    }
+
+    #courselist {
+        display: inherit;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .summary {
+        height: auto;
+    }
+
+   .pushButton {
+       margin-bottom: 50px;
+   }
+
+   #bio {
+       width: 100%;
+   }
+
+   #aboutT {
+    margin-top: 0px;
+   }
+
+   #grid {
+       display: none;
+   }
+
+   footer {
+       flex-direction: column;
+       height: auto;
+   }
+
+   #contact {
+    width: 100%;
+   }
+
+   #links {
+    display: none;
+   }
+
+}
