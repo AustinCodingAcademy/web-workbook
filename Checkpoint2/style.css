@@ -1,0 +1,221 @@
+
+
+header {font-size: 50px;
+font-family: "Courier New", Courier, monospace;
+text-align: center;
+margin-top: 70px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+
+}
+
+body {background-color:#F4F6F6;
+
+}
+
+#wrapper {
+    display: grid; /* Grid container for photos */
+grid-gap: 1em;
+grid-template-columns: 1fr 1fr 1fr;
+justify-items: center;
+margin-top:60px;
+
+
+}
+
+
+    
+    article:hover{
+
+        grid-column: span 1;
+     align-content:center;
+     transform: scale(1.5); /* (150% zoom when hovered over */
+    }
+
+    .dTwo{
+        height:150px;
+        width:275px;
+    }
+    
+.dOne{
+    height: 120px;
+    width:255px;
+}
+
+.dThree{
+    height:200px;
+    width:225px;
+}
+
+.dFour {
+
+    height:50px;
+    width:225px;
+}
+
+.about {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin: auto;
+    text-align: center;
+
+  
+    width:200px;
+
+}
+
+h2 {
+    font-size:15px;
+    text-decoration: underline;
+}
+
+p {
+    font-size:13px;
+}
+
+h3 {
+    text-align:center;
+    font-size:20px;
+}
+
+.jobs{
+    display:flex; /* Container for job elements */
+    justify-content: space-around;
+
+    height:324px;
+    text-align: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: darkslategrey;
+
+
+
+}
+
+h5 {text-decoration: underline;}
+
+#agile {
+
+    justify-content:flex-start; /* align on left hand side of screen */
+    height:200px;
+
+    margin-top: 1px;
+    margin-left:20px;
+
+
+    margin-right:10px;
+
+
+}
+
+#homeaway {
+
+    justify-content:center; /* align in center of screen */
+    height:200px;
+
+    margin-top: 1px;
+
+
+
+
+}
+
+#apple {
+
+    justify-content:flex-end; /* align on right hand side of screen */
+    height:200px;
+ margin-top: 1px;
+
+margin-left:10px;
+}
+
+.bottom {
+    display:flex;
+    text-align:center;
+    align-content:center;
+
+
+}
+
+#coralleft {
+    justify-content:flex-start;
+    background-color:white;
+    width:50%;
+    height:250px;
+    color:darkslategrey;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    margin: auto;
+    text-align: center;
+    
+}
+
+#coralleft:hover {
+    background-color:#F0F0F0;; /* invert color to match the box next to it when hovered and grow 150% */
+    transform: scale(1.5);
+    color:darkslategrey;
+}
+
+#greyright {
+    justify-content:flex-end;
+    background-color:#F0F0F0;
+    width:50%;
+    height:250px;
+    color:darkslategrey;
+    text-align:center;
+}
+
+#greyright:hover {
+   /* invert color to match the box next to it when hovered and grow 150% */
+    transform: scale(1.5);
+    background-color:white;
+
+}
+
+
+
+footer { /* contact links */
+    text-align:center;
+    background-color:white;
+}
+
+
+
+/* mobile version */  
+@media (max-width:700px) {
+
+    #wrapper {
+        display: none;
+    }
+
+/* align into columns for mobile */
+.jobs {
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-content:center;
+    height:600px;
+    width:384px;
+    flex:wrap;
+margin-top:30px;}
+
+}
+    
+    
+    
+    #apple{
+        margin:auto;
+}
+    
+    #homeaway{
+       margin:auto;
+     }
+    
+    #agile {
+        margin:auto;
+}
+
+ .bottom {
+     margin-top:15px;
+ }
