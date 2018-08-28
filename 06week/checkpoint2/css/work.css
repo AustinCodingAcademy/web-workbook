@@ -1,0 +1,85 @@
+/* work page desktop */
+
+.nav {
+    font-family: "menlo";
+    display: flex;
+    justify-content: space-around;
+    height: 150px;
+    align-items: center;
+}
+
+.nav > a {
+  transition: color .5s;
+  color: #000000;
+}
+
+.nav > a:hover {
+    color: #FF3575;
+}
+
+#wrapper {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 932px;
+    margin: auto;
+}
+
+.box1{
+    width: 300px;
+    height: 300px;
+    background-image: url("iphone.png"); 
+
+}
+
+.box2{
+    width: 300px;
+    height: 300px;
+    background-image: url("ipad.png"); 
+
+}
+
+.box3{
+    width: 300px;
+    height: 300px;
+    background-image: url("imac.png"); 
+
+}
+
+.transparency {
+    width: 100%;
+    height: 100%;
+    background-color: #FF3575;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.transparency:hover {
+    opacity: .5;
+}
+
+p {
+    text-align: center;
+    font-family: "Menlo";
+    color: #ffffff;
+}
+
+/* work page mobile */
+
+@media (max-width: 576px) {
+    #wrapper {
+        grid-template-columns: 1fr;
+        width: 300px;
+    }
+
+    .transparency {
+        opacity: .5;
+    }
+
+    .nav > a {
+        color: #FF3575;
+    }
+}

@@ -1,0 +1,80 @@
+/* home page desktop */
+
+body { 
+    background: url(background-yellow.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .nav {
+      font-family: "menlo";
+      display: flex;
+      justify-content: space-around;
+      margin-top: 25px;
+  }
+
+  .nav > a {
+    transition: color .5s;
+    color: #000000;
+  }
+
+  .nav > a:hover {
+      color: #4CBAB6;
+  }
+
+  .home-text {
+      margin-top: 120px;
+  }
+
+  h1 {
+      font-family: "menlo";
+      font-size: 32px;
+      font-weight: normal;
+      text-align: center;
+  }
+
+  p {
+      font-family: "menlo";
+      font-size: 24px;
+  }
+
+  .line2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  .cursor {
+      background-color: #000000;
+      width: 2px;
+      height: 30px;
+      animation-name: blink;
+      animation-duration: .75s;
+      animation-iteration-count: infinite;
+      opacity: 1;
+  }
+
+  @keyframes blink {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* home page mobile */
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    nav > a:hover {
+        color: #000000;
+    }
+}
