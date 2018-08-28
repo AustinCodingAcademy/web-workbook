@@ -45,7 +45,7 @@ font-size: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: rgba(64, 95, 116, 0.562);
+  background-color: rgba(64, 95, 116, 0.562); /* This sidebar color should match the blue in the pillows featured with the company name*/
 }
 
 .socialLinks{/*can't get this to work right on the social media links*/
@@ -55,7 +55,7 @@ font-size: 2rem;
   justify-content: space-between;
 }
 
-.content { /*show case area*/
+.content { /*Show case area, this area uses a different font to differentiate the company name from the rest of the page*/
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -91,7 +91,7 @@ font-size: 2rem;
 }
 
 button {
-  background-color: rgb(226, 182, 80); /* Green */
+  background-color: rgb(226, 182, 80);/* This button color should match the yellow in the pillows featured with the company name*/
   border: none;
   color: white;
   padding: 15px 32px;
@@ -116,7 +116,7 @@ button:hover {
   flex-direction: column
 }
 
-.afterThought {
+.afterThought { /*Link hover effect for so this page isn't so boring*/
   display: inline-block;
   color: white;
   text-decoration: none;
@@ -145,9 +145,9 @@ button:hover {
 .footerFont{
   font-size: small;
 }
-@media (max-width: 475px){
+@media (max-width: 475px){ /* This media query is for the mobile vew of the site */
 
-  .sidebar{
+  .sidebar{ /*this will hide the side bar containing photos in the mobile view. Users will have have an option to view this page via the             projects link in the main menu*/
     display: none;
   }
   .header {
