@@ -29,14 +29,14 @@ main {
   margin-top: 80px;
 }
 
-section {
-  margin: 1px;
-  margin-top: 13px;
+.mainContent {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-rows: 1fr; 
 }
 
 section .photo{
   width: 200px;
-  margin-left: -25px;
 }
 
 section .jobTitle {
@@ -48,7 +48,6 @@ section .jobTitle {
 
 section .contactInfo {
     font-size: 20px;
-    line-height: 1em;
     color: rgb(239, 123, 14);
 }
 
@@ -60,66 +59,13 @@ section .links {
 section .links a {
     color: rgb(71,166,197);
     text-decoration: none;
-    transition: .4s;
+    transition: .7s;
 
 }
 
 section .links a:hover {
     color: rgb(239, 123, 14);
 }
-
-
-
-.button {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: rgb(71, 166, 197);
-    border: none;
-    color: rgb(249, 234, 214);
-    text-align: center;
-    font-size: 18px;
-    padding: 2px;
-    width: 134px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 1px;
-  }
-
-.lastButton {
-    margin-bottom: -13px;
-}
-
-.button:hover {
-    background-color: rgb(239, 123, 14)
-}
-
-/*
-  .button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  .button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  
-  .button:hover span {
-    padding-right: 15px;
-  }
-  
-  .button:hover span:after {
-    opacity: 1;
-    right: 0;
-  } 
-*/
-
 
 section .bio {
     font-size: 19px;
@@ -128,11 +74,6 @@ section .bio {
     -webkit-hyphens: manual;
     -ms-hyphens: manual;
     hyphens: manual;
-    /* line-height: 1.1em;
-    border-style: solid;
-    border-color: rgb(71, 166, 197);
-    background-color: rgba(71, 166, 197, 0.2)
-    */
 }
 
 section .bio p {
@@ -151,17 +92,6 @@ section .bio a {
 section .bio a:hover {
     color: rgb(239, 123, 14);
 }
-
-/* section .bio a:hover {
-    position: relative;
-}
-section .bio a:hover:after {
-    content: url(atticus.png);
-    display: block;
-    position: absolute;
-    left: -323px;
-    top: -300px;
-} */
 
 @media (max-width: 670px) {
   .photo {
