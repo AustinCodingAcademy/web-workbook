@@ -1,0 +1,199 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  background: -webkit-linear-gradient(90deg, rgb(9, 13, 17), rgb(99, 101, 104));
+  background: linear-gradient(90deg, rgb(9, 13, 17), rgb(99, 101, 104));
+  
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 15px;
+}
+
+.grid {
+color: #fff;
+padding: 25px;
+font-size: 2rem;
+}
+
+.header { /*page nav links*/
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.headerUl{
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.mainMenu{
+  padding-right: 25px;
+}
+
+.sidebar { /*content box on left side of the screen*/
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(64, 95, 116, 0.562);
+}
+
+.socialLinks{/*can't get this to work right on the social media links*/
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content { /*show case area*/
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url("/CP2/css/livingroom.jpg");
+  background-position: center;
+  background-size: cover;
+  font-family: 'Bad Script', cursive;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+  height: 400px;
+}
+
+.extra { /* Extra Content section Boxes, maybe for some sort of highlights*/
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
+}
+
+.bioImg{
+  height: 25%;
+  width: 25%;
+}
+.post{ 
+  text-align:center;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  background-color: rgb(226, 182, 80); /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: rgb(64, 95, 116);
+  color: white;
+}
+.footer {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  text-align: center;
+  display:flex;
+  flex-direction: column
+}
+
+.afterThought {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+.afterThought::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width .5s;
+}
+
+.afterThought:hover::after {
+  width: 100%;
+  transition: width .5s;
+}
+
+.footerSection{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footerFont{
+  font-size: small;
+}
+@media (max-width: 475px){
+
+  .sidebar{
+    display: none;
+  }
+  .header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .headerUl{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .extra {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .bioImg{
+    height: 50%;
+    width: 50%;
+  }  
+
+.content {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url("/cp2/css/livingroom.jpg");
+  background-position: center;
+  background-size: cover;
+  font-family: 'Bad Script', cursive;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+  height: 400px;
+}
+
+  .footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 5;
+  } 
+}
