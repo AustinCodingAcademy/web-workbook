@@ -14,8 +14,8 @@ function modifyArticle(_currentArticle){
         } 
     }
     xhr.send();
-
   }
+  
   function modifySideBar(_currentSideBar){
     var xhr = typeof XMLHttpRequest != 'undefined' ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
     xhr.open('get', _currentSideBar, true);
@@ -25,11 +25,9 @@ function modifyArticle(_currentArticle){
         } 
     }
     xhr.send();
-
   }
 
-//Creating elements
-//Example: make("input", { id: 'example', classList: ["button"], attr: {  "type": "button", "value": 'test', "onclick": "onclick();" }});
+//Example: make("input", { id: 'example', classList: ["button"], attr: {  "type": "button", "value": 'test', "onclick": "function();" }});
 function make(tag_name, opt) {
     var ele = document.createElement(tag_name);
     if (!opt) {
