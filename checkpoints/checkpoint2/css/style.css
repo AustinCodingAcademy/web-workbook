@@ -38,9 +38,13 @@
         justify-content: space-around;
         margin: 15px 0;
     }
+
+    main .partnerPhoto {
+        filter: none;
+    }
 }
 
-/* phone/lo-res styling and sizing */
+/* phone/low-res styling and sizing */
 @media (max-width: 425px) {
     main .aboutUs {
         display: flex;
@@ -98,13 +102,21 @@
             "box5"
             "box6"
     }
+
+    main .partnerPhoto {
+        filter: none;
+    }
 }
 
 header {
+    display: flex;
     width: 100%;
+    height: 160px;
     margin: 0;
     top: 0;
     background-color: #fff;
+    justify-content: center;
+    align-items: center;
 }
 
 header .logo {
@@ -124,10 +136,9 @@ header .logo .name {
     text-align: center;
 }
 
- /* background */
- .barImage {
+/* background */
+.barImage {
     width: 100%;
-    height: 600px;
 }
 
 /* begins about us section */
@@ -264,6 +275,7 @@ header .logo .name {
     margin: 1em;
 }
 
+/* grid set up for partner section */
 .austinPetsAlive {
     grid-area: box1;
 }
@@ -286,4 +298,15 @@ header .logo .name {
 
 .dilloDirt {
     grid-area: box6;
+}
+
+footer {
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+footer a {
+    color: #000;
+    /* text-decoration: none; */
 }
