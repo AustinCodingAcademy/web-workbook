@@ -1,52 +1,120 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+* {
+  box-sizing: border-box;
+  transition: all ease-in-out 250ms;
+}
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #BDC3C7;
+  background-color: #606060;
   font-size: 18px;
   margin: 0;
-}
-header {
-  background-color: #7F8C8D;
-  text-align: center;
-  font-size: 1.5em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  color: #ECF0F1;
-  margin-bottom: 5em;
 }
 .container {
   width: 80%;
   margin: 0 auto;
 }
-main {
-  float: left;
-  width: 70%;
+/*    +===================+
+    /   Header          /
+  +===================+ 
+*/
+header {
+  background-color: #404040;
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: #E0E0E0;
   margin-bottom: 5em;
 }
+/*    +===================+
+    /   Main Bio        /
+  +===================+ 
+*/
+main {
+  float: left;
+  width: 60%;
+  min-width: 565px;
+  margin-bottom: 5em;
+  background: #404040;
+  padding: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 .my-name {
-  position: absolute;
-  padding-left: 110px;
   text-align: left;
   margin-top: 0;
+  margin-bottom: 0;
+  color: #E0E0E0;
+}
+.my-desc {
+  text-align: left;
+  margin-top: 0;
+  color: #E0E0E0;
+  font-weight: lighter;
 }
 .profile-pic {
-  width: 100px;
-  height: 150px;
-  border: 1px solid black;
-  border-radius: 5px;
+  position: relative;
+  float: left;
+  width: 110px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .bio-main {
+  margin: 0 auto;
+  color: #E0E0E0;
+  padding-top: 1em;
 }
+main p:first-of-type {
+  margin: 0 auto;
+  color: #E0E0E0;
+  padding: 0;
+}
+/*    +===================+
+    /   Links           /
+  +===================+ 
+*/
 aside {
-  float: right;
-  width: 25%;
+  color: #E0E0E0;
+  background: #404040;
+  margin-left: 1em;
+  float: left;
+  width: 10%;
+  min-width: 115px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+aside ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+aside li {
+  list-style: none;
+  margin: 1em;
+}
+aside a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #E0E0E0;
+}
+aside a:hover,
+aside a:focus {
+  color: #F75C4C;
+}
+/*    +===================+
+    /   Footer          /
+  +===================+ 
+*/
 footer {
-  background-color: #7F8C8D;
-  color: #ECF0F1;
+  background-color: #404040;
+  position: absolute;
+  color: #E0E0E0;
   clear: both;
+  overflow: hidden;
+  height: 5em;
+  width: 100%;
+  left: 0;
+  bottom: 0;
   text-align: center;
-  padding-top: 2em;
-  padding-bottom: 2em;
 }
