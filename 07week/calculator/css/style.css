@@ -1,0 +1,18 @@
+.calc{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(6,30px);
+}
+
+#results{
+    grid-column: span 4;
+}
+
+.button{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.calc :nth-child(n+18){
+    grid-column: span 2;
+}
