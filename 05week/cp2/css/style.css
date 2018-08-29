@@ -1,0 +1,254 @@
+body{
+    background-image: url("../img/bgrnd.jpg");;
+}
+
+#wrapper{
+    width: 800px;
+    height: 640px;
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-top: 17px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-rows: 260px 30px 325px;
+    grid-gap: .5em;
+    grid-template-columns: 500px 400px 392px;
+}
+
+#leftCol{
+    background-color: rgba(114, 114, 85, 0.288); 
+    grid-row: span 3;
+    padding-left: 10px;
+}
+
+.intro{
+    background-color: rgba(0, 0, 0, 0.616);
+    height: 260px;
+}
+
+.flex-menu{
+    grid-column: span 2;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: rgba(19, 24, 87, 0.705);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-self: left;
+    list-style-type: circle;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(167, 45, 45);
+    font-size: 30px;
+    font-style: oblique;
+    padding-bottom: 10px;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(56, 56, 53);
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    text-shadow: 1px 1px;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+}
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: 1px 1px;
+    color: grey;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: .5px .5px;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#hello{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: .5px .5px;
+    color: black;
+}
+
+#me{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: .5px .5px;
+    color: rgb(16, 47, 148);
+    font-weight: bold;
+}
+nav{
+    transition: color 2s, font-size 2s, text-decoration 2s;
+}
+#aboutMe{
+    font-size: 25px;
+    text-decoration:underline brown;
+}
+
+nav:hover{
+    font-size: 25px;
+    text-decoration:underline brown;
+}
+
+#skills{
+    display: none;
+}
+
+li{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 21px;
+    font-style: italic;
+    transition: color 2s, font-size 2s, text-decoration 2s;
+}
+
+li:hover{
+    font-size: 25px;
+    text-decoration:underline brown;
+}
+
+.item{
+    grid-column: span 2;
+    background-color: rgba(68, 168, 173, 0.171);
+    height: 325px;
+}
+
+.myImage{
+    background-image: url("../img/me2.jpg");
+    transition: transform 2s;
+    background-size: cover;
+}
+
+.myImage:hover{
+    background-image: url("../img/me3.jpg");
+    background-size: cover;
+
+}
+
+.mobileSkills{
+    display: none;
+}
+
+@media (max-width: 400px){
+    #wrapper{
+        width: 355px;
+        grid-template-columns: 400px;
+        grid-template-rows: 300px 300px 300px;
+    }
+    
+    #leftCol{
+        display: none;
+    }
+    
+    .intro{
+       display: none;
+    }
+    
+    .flex-menu{
+       display: none;
+    }
+    
+    .list{
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        list-style-type: circle;
+    }
+    
+    nav{
+        transition: color 2s, font-size 2s, text-decoration 2s;
+    }
+    
+    li{
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        transition: color 2s, font-size 2s, text-decoration 2s;
+    }
+    
+    li:hover{
+        font-size: 25px;
+        text-decoration:underline brown;
+    }
+    
+    .item{
+        grid-column: span 2;
+        background-color: rgba(125, 168, 67, 0.651);
+        height: 600px;
+        width: 350px;
+    }
+    
+    .myImage{
+        width: 350px;
+        background-image: url("../img/me2.jpg");
+        transition: transform 2s;
+    }
+    
+    .myImage:hover{
+        background-image: url("../img/me3.jpg");
+    
+    }
+
+    .mobileSkills{
+        background-color: rgba(95, 112, 95, 0.308);
+        display: flex;
+        height: 350px;
+        width: 350px;
+        margin-top: 300px;
+    }
+        
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 20px;
+        text-decoration: underline;
+    }
+
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-style: italic;
+        text-shadow: .5px .5px;
+        color: black;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }    
+}
+
+
