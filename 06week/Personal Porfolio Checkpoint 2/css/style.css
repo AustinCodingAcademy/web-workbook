@@ -1,0 +1,216 @@
+body {
+    background:
+    linear-gradient(red, transparent),
+    linear-gradient(to top left, lime, transparent),
+    linear-gradient(to top right, blue, transparent);
+background-blend-mode: screen;
+    }
+/* Above is the background special effect I was trying to implement but still not working. */
+  
+#wrapper {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: 1fr,1fr, 1fr, 1fr;
+    width: 98%;
+    height: auto;
+    margin-left: 1%;
+    }
+    
+header {
+    grid-column: span 4;
+    text-align: center;
+    }
+    
+#tablet, #mobile{
+    display: none;
+    }
+article{
+        background-color: rgb(230, 230, 230);
+        height: 200px;
+        /* grid-column: span 1; */
+        border: solid black 1px;
+        padding: 1em;
+      
+        
+        }
+        
+.One, .Two, .Three, .Four, .Five, .Six, .Seven {
+        grid-column: span 2;
+        height: 200px;
+        }       
+
+h1, h2, h3, h4 {
+    margin-top: 0;
+}
+h1, .h1 {
+    font-size: 36px;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+h1, h2, {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+}
+h1, h2 {
+    margin: .67em 0;
+    font-size: 2em; 
+    align-items: right;
+    /* border: 12px solid gold;  */
+  
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+h2 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em; 
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+body {
+    background: #fff;
+    font-family: sans-serif;
+    margin: 0 0 80px;
+}
+a {
+    color:   rgb(43, 28, 42);
+}
+a:focus,
+a:hover {
+    color: #f1440f;
+    text-decoration:none;
+}
+p{
+    line-height: 1.5;
+    margin: 0;
+}
+p + p {
+    margin-top:10px;
+}
+h1,
+h2,
+h3,
+h4 {
+    margin-top: 0
+    }
+    section {
+        margin-top: 30px;
+    }
+    li {
+        line-height: 1.8;
+        list-style: none;
+    }
+    li:before {
+        content: "\f052";
+        float: left;
+        font: 13px Octicons;
+        margin-top: 6px;
+        margin-left: -20px;
+        position: absolute;
+    }
+    blockquote {
+        border-left: 5px solid #e7e9ec;
+        font-size: 14px;
+    }
+    em {
+        color: #95a5a6;
+        font-weight: normal;
+        font-style: normal;
+    }
+    h4 span:first-child {
+        color: #000;
+        font-weight: bold;
+    }
+    .container {
+        max-width: 750px;
+        padding: 0 30px;
+    }
+    #header {
+        background: #f4f6f6;
+        padding: 50px 0;
+        margin-bottom: 30px;
+    }
+    #header h2 {
+        color: #95a5a6;
+        font-size: 24px;
+    }
+    #content h3 {
+        color: #f1c40f;
+        font-size: 26px;
+        margin-top: -4px;
+    }
+    #content aside {
+        text-align: right;
+        padding-right: 30px;
+    }
+    #profiles .network {
+        text-transform: capitalize;
+    }
+    #work .position,
+    #volunteer .position {
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    #education .area {
+        font-weight: bold;
+    }
+    #education .area:before {
+        content: "\f0d7";
+        font: 16px Octicons;
+        margin-right: 6px;
+    }
+    #education .studyType {
+        margin-left: 25px;
+    }
+    #awards .summary,
+    #publications .summary {
+        margin-top: 8px;
+    }
+    #publications .website a:before {
+        content: attr(href);
+    }
+    
+    @media (min-width:768px) and (max-width:1024px) {
+  
+        #wrapper{ 
+        
+        grid-template-columns: 1fr 1fr;
+        } 
+        header{
+        
+        grid-column: span 2;
+        }
+        
+        .dTwo{
+        
+        grid-column: span 1;
+        }
+        
+        .tTwo{
+        
+        grid-column: span 2;
+        }
+        
+        #desktop, #mobile{
+        
+        display: none;
+        }
+        
+        #tablet{
+        display: inline;
+        }
+      }
+        
+        
+        
+        
+        
