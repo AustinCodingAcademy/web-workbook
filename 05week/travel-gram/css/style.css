@@ -1,1 +1,104 @@
+body{
+    background-color: brown;
+}
 
+/* desktop version */
+#wrapper{
+    display:inline-grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    height: 800px;
+    width: 100%;
+    margin: 10px;
+}
+
+header{
+    grid-column: span 4;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+header h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    margin-top:0px;
+    margin-bottom: 20px;
+}
+
+#tablet, #mobile{
+    display:none;
+}
+
+article{
+    background-color: #8a2be2;
+    grid-column: span 1;
+}
+
+.dTwo{
+    grid-column: span 2;
+}
+
+.box1{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/* tablet version */
+@media (min-width:768px) and (max-width:1024px){
+    #wrapper{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 400px 200px 200px 200px 200px 200px;
+    
+    }
+    header{
+        grid-column: span 2;
+    }
+    .dTwo{
+        grid-column: span 1;
+    }
+    .tTwo{
+
+        grid-column:span 2;
+    }
+    #desktop, #mobile{
+        display: none;
+    }
+    #tablet{
+        display:inline;
+        grid-row: span 1;
+
+    }
+    .box1{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+}
+
+/* cell phone version */
+@media (max-width:767px){
+    #mobile{
+        display:inline;
+    }
+    #desktop, #tablet{
+        display: none;
+    }
+
+    #wrapper{
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+        margin:10px;
+    }
+    .dTwo{
+        grid-column: span 1;
+    }
+    .box1 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    header{
+        grid-column: span 1;
+    }
+}
