@@ -1,15 +1,10 @@
-function addNumber(input){
+function addSymbol(input){
   document.getElementById("results").value+=input;
 }
 
 function clearResults(){
   document.getElementById("results").value = '';
 }
-
-function operation(operand){
-  document.getElementById("results").value += operand;
-}
-
 function equals(){
   document.getElementById("results").value = eval(document.getElementById("results").value);
 }
