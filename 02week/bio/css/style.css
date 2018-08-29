@@ -7,6 +7,14 @@ a {
     color: white;
 }
 
+hr {
+    float: left;
+    color: black;
+    width: 30%;
+    margin-left: 5px;
+    border-top: 3px double #8c8b8b;
+}
+
 a:hover {
     color: red;
 }
@@ -14,10 +22,16 @@ a:hover {
 #header {
     background-color: blue;
     padding: 30px;
+    margin: 0px;
 }
 
 #header a {
     float: right;
+    display: inline; /* the default for span */
+    width: 50px;
+    height: 0px;
+    padding: 10px;
+    font-family: verdana;
 }
 
 #main {
@@ -35,6 +49,7 @@ a:hover {
 
 #bio    h2 {
     padding: 10px;
+    letter-spacing: 0.2em;
 }
 
 #edu    {
@@ -47,6 +62,7 @@ a:hover {
 
 #edu    h2 {
     padding: 10px;
+    letter-spacing: 0.2em;
 }
 
 #exp    {
@@ -59,11 +75,13 @@ a:hover {
 
 #exp    h2 {
     padding: 10px;
+    letter-spacing: 0.2em;
 }
 
 #aside  {
     float: right;
     width: 30%;
+    font-family: verdana;
 }
 
 #aside img {
@@ -71,15 +89,32 @@ a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 20px;
+}
+
+#aside img:hover {
+    opacity: 0.3;
+    border-left: black;
+    border-color: black;
 }
 
 #aside h3 {
-    font-family: helvetica;
+    font-family: verdana;
     text-align: center;
 }
 
 #aside p {
     text-align: center;
+}
+
+#aside a {
+    display: block;
+    text-align: center;
+    color: blue;
+}
+
+#aside a:hover {
+    color: red;
 }
 
 #footer {
