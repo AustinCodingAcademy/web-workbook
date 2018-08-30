@@ -4,37 +4,47 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="content-type" content="text/html" />
-    <title>Document</title>
+    <title>Bio</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   </head>
   <body>
-      <header>
-          <nav class="mynav">
-              <ul>
-                  <li><a href="../../index.html">Home</a></li>
-                  <li><a href="index.html">Bio</a></li>
-                  <li><a href="../../01week/resume/index.html">Resume</a></li>
-                  <li>Blog</li>
-              </ul>
-          </nav>
-      </header>
-      <div class="container"></div>
-      <div class="title">
-          <h1>Kyle Pajari</h1>
-          <h3>Software Developer</h3>
-
-          <p>This is what they want for 100%</p>
-          <p>Image of Yourself</p>
-          <p>Link to resume from last class</p>
-          <p>Link or image should change when you hover</p>
-          <p>Pick a font style: fonts.google.com</p>
-          <p>Apply styles like text-align, margins/padding, text-indent</p>
-
-      </div>
-      <div class="content">
-          <p>Hi my name is Kyle!</p>
-          <img src="./images/myimage.jpg" alt="profile-img"
-      </div>
+    <header>
+        <div class="title">
+            <h1>Kyle Pajari</h1>
+            <h3>Software Developer</h3>
+            <nav class="mynav">
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="index.html">Bio</a></li>
+                        <li><a href="../../01week/resume/index.html">Resume</a></li>
+                        <li>Blog</li>
+                    </ul>
+                </nav>
+        </div>
+        
+    </header>
+    <div class="content">
+        <p>Hello! My name is Kyle, thank you for visiting my page.</p>
+        <p>You can use the navigation at the top go to different pages.</p>
+        <div class="img-container">
+            <img src="./images/profilephoto.jpg" alt="profile-img" class="image" />
+            <div class="overlay">
+                <a href="https://www.linkedin.com/in/kyle-pajari-43806016b/">
+                    <div class="text">Click to visit my LinkedIn</div>
+                </a>
+            </div>
+            </a>
+        </div>
+        <footer>
+            <i>This page is created and maintained by Kyle Pajari.</i>
+            <br />
+            <i>Last Modified: <i id="date"></i></i>
+    
+            <script type="text/javascript">
+                document.getElementById("date").innerHTML = document.lastModified;
+            </script>
+        </footer>
+    </div>
   </body>
 </html>
