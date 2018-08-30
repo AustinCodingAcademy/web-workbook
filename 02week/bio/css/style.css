@@ -12,7 +12,12 @@ body {
 }
 .container {
   width: 80%;
-  margin: 0 auto;
+  min-width: 700px;
+  min-height: 100%;
+  margin-top: 0;
+  margin-bottom: -5em;
+  margin-left: auto;
+  margin-right: auto;
 }
 /*    +===================+
     /   Header          /
@@ -24,8 +29,8 @@ header {
   font-size: 1.5em;
   padding-top: 1em;
   padding-bottom: 1em;
+  margin-bottom: 1em;
   color: #E0E0E0;
-  margin-bottom: 5em;
 }
 /*    +===================+
     /   Main Bio        /
@@ -78,6 +83,7 @@ main p:first-of-type {
 aside {
   color: #E0E0E0;
   background: #404040;
+  position: relative;
   margin-left: 1em;
   float: left;
   width: 10%;
@@ -106,15 +112,12 @@ aside a:focus {
     /   Footer          /
   +===================+ 
 */
+.push {
+  height: 5em;
+}
 footer {
   background-color: #404040;
-  position: absolute;
   color: #E0E0E0;
-  clear: both;
-  overflow: hidden;
   height: 5em;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  text-align: center;
+  margin: 0;
 }
