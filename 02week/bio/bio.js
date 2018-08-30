@@ -13,3 +13,11 @@ function toTheTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+function lockHover(input) {
+    document.getElementById('textChange').style.display = "inline-block";
+}   
+
+function lockLeave(input) {
+    document.getElementById('textChange').style.display = "none";
+}  
