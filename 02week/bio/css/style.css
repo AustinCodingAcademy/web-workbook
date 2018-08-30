@@ -80,15 +80,14 @@ body{
     background-position: left top;
     background-attachment: fixed;
     background-size: 100%;
+    font-family: 'Uncial Antiqua', cursive;
 }
 
 .linkedin{
     max-width: 25%;
     max-height: 25%;
-   
     padding: 30px;
     opacity: 0.9;
-    /*position:absolute;*/
     display: inline-block;
 }
 
@@ -142,21 +141,36 @@ body{
 .article-right{
     width: 400px;
     height:200px;
-    background-color: rgba(39, 39, 39, 0.8);
+    background-color: rgba(39, 39, 39, 0);
     display:table;
     float: right;
     color: whitesmoke;
+    clear: left;
+    margin-top: 20px;
+    text-align: left;
 }
+
+.article-right:hover{
+    background-color: rgba(39, 39, 39, 1);
+}
+
 .article-left{
     width: 400px;
     height:200px;
-    background-color: rgba(39, 39, 39, 0.8);
+    background-color: rgba(39, 39, 39, 0);
     display:table;
     color: whitesmoke;
+    float: left;
+    clear: right;
+    margin-top: 20px;
+    text-align: left;
 }
 
-.article-spacer{
-    width: 100%;
-    height: 200px;
-    display: block;
+.article-left:hover{
+    background-color: rgba(39, 39, 39, 1);
+}
+
+P {
+    text-indent: 20px;
+    line-height: 1.6;
 }
