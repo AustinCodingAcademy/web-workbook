@@ -14,10 +14,15 @@ function toTheTop() {
     document.documentElement.scrollTop = 0;
 }
 
-function lockHover(input) {
-    document.getElementById('textChange').style.display = "inline-block";
+function lockHover(_passedValue) {
+    document.getElementById(_passedValue).style.display = "inline-block";
 }   
 
-function lockLeave(input) {
-    document.getElementById('textChange').style.display = "none";
+function lockLeave(_passedValue) {
+    document.getElementById(_passedValue).style.display = "none";
 }  
+
+function lockUnlock(articleId){
+//var getLockStatus = getElementById
+   // if(articalId.background === )
+}
