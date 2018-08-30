@@ -6,7 +6,9 @@ function clearResults(){
   document.getElementById("results").value = '';
 }
 function equals(){
-  document.getElementById("results").value = eval(document.getElementById("results").value);
+  if(document.getElementById("results").value){
+    document.getElementById("results").value = eval(document.getElementById("results").value);
+  }
 }
 
 function deleteLast(){
@@ -15,6 +17,7 @@ function deleteLast(){
 }
 
 function changeSign(){
-  document.getElementById("results").value = -1 * eval(document.getElementById("results").value);
-
+  if(document.getElementById("results").value){
+    document.getElementById("results").value = -1 * eval(document.getElementById("results").value);
+  }
 }
