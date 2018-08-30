@@ -29,6 +29,7 @@ function delet(){
   document.getElementById("results").value = current.substring(0,current.length-1);
 }
 function plusMinus() {
-let current = document.getElementById("results").value;
-current *= -1;
-document.getElementById("results").value = current;}
+  let current = document.getElementById("results").value;
+  current *= -1;
+  document.getElementById("results").value = current;
+}
