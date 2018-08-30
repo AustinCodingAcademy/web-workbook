@@ -15,7 +15,8 @@ function toTheTop() {
 }
 
 function lockHover(_passedValue) {
-    document.getElementById(_passedValue).style.display = "inline-block";
+    console.log("passedValue = " + _passedValue);
+    document.getElementById("textChange1").style.display = "inline-block";
 }   
 
 function lockLeave(_passedValue) {
