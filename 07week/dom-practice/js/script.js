@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
   numDisplayed = numberInShoppingCart();
+
+
   document.querySelector('ul').insertAdjacentHTML('afterend', "<input id='enterText' type='text' value=''>")
   document.querySelector('input').insertAdjacentHTML('afterend', "<input class='submitButton' type='submit' value='Add Item' onclick=addItem()>")
   
@@ -33,7 +35,7 @@ function numberInShoppingCart(){
     document.querySelector('h1').insertAdjacentHTML('afterend', "<h2> "+ outputString + "</h2>")
   }
   else{
-    document.querySelector('h2').innerText = outputString = "You have " + totalListItems + " items in your shopping cart";
+    document.querySelector('h2').innerText = outputString;
 
   }
   return totalListItems;
