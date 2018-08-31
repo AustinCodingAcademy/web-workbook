@@ -24,19 +24,22 @@ body {
     /   Header        /
   +=================+ 
 */
+.logo {
+  padding: 0;
+  margin: 0;
+}
 header {
   width: 100vw;
   background-color: #E0E0E0;
   padding: .1em;
   margin-bottom: .5em;
-  text-align: right
+  text-align: center;
 }
 header nav {
   min-width: 100vw;
 }
 header nav ul {
   margin: 0;
-  margin-right: 5em;
   padding: 0;
   list-style: none;
 }
@@ -53,7 +56,7 @@ header nav a {
 }
 header nav a:hover,
 header nav a:focus {
-  color: #E74C3C;
+  color: #3498DB;
 }
 
 @media (max-width: 500px) {
@@ -61,10 +64,16 @@ header nav a:focus {
     text-align: center;
   }
   header nav ul {
-    margin: 0;
+    margin: 0 auto;
+    text-align: center;
   }
   header nav ul a {
+    margin: 0 auto;
     font-size: 55%;
+  }
+  .logo {
+    height: 125;
+    width: 150;
   }
 }
 /*    +=================+
@@ -86,7 +95,7 @@ header nav a:focus {
   border-radius: 3px;
 }
 .blog-entry:hover {
-  border: 2px solid #E74C3C;
+  border: 1px solid #000;
   transform: scale(1.05);
   transition-duration: 20ms;
   box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
@@ -109,14 +118,22 @@ header nav a:focus {
 .entry-desc {
   margin-bottom: 1px;
   font-size: .9rem;
+  color: #000;
+}
+.keyword {
+  color: #F14B57;
 }
 
 @media (max-width: 500px) {
-  .blog-title,
-  .entry-title,
+  .blog-entry {
+    padding: .3em;
+  }
+  .entry-title {
+    font-size: .9rem;
+  }
   .entry-desc,
-  .entry-origin{
-    font-size: 80%;
+  .entry-origin {
+    font-size: .6rem;
   }
 }
 
@@ -134,29 +151,6 @@ footer {
   margin: 0;
   text-align: center;
 }
-footer nav {
-  min-width: 100vw;
-}
-footer nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-footer nav li {
-  display: inline-block;
-  margin: 1em;
-}
-footer nav a {
-  font-weight: 900;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: .9rem;
-  color: #000;
-}
-footer nav a:hover,
-footer nav a:focus {
-  color: #E74C3C;
-}
 .social-media {
   margin: 0 auto;
   padding: 0;
@@ -171,7 +165,7 @@ footer nav a:focus {
   color: #000;
 }
 .social-media li a i:hover {
-  color: #E74C3C;
+  color: #3498DB;
 }
 
 @media (max-width: 500px) {
