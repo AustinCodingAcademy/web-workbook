@@ -15,8 +15,7 @@ function toTheTop() {
 }
 
 function lockHover(_passedValue) {
-    console.log("passedValue = " + _passedValue);
-    document.getElementById("textChange1").style.display = "inline-block";
+    document.getElementById(_passedValue).style.display = "inline-block";
 }   
 
 function lockLeave(_passedValue) {
@@ -25,21 +24,31 @@ function lockLeave(_passedValue) {
 
 function lockUnlock(articleId){
     var grabLockPictureDiv = ("changeLock" + articleId)
-    var getTxtChangeId = ("textchange"+ articleId)
-    var getLockStatus = document.getElementById(getTxtChangeId).innerhtml
-    if(getLockStatus && getLockStatus === "lock"){
-        getLockStatus = "Unlock";
-        document.getElementById(grabLockPictureDiv).innerHTML = '<img src = "./pics/locked.png" class = "lockImg" onclick = "lockUnlock(articleId)" onmouseover="lockHover(getTxtChangeId)" onmouseout="lockLeave(getTxtChangeId)">'
-    }
+    var getTxtChangeId = (" textchange"+ articleId)
+    var getLockStatus = document.getElementById("textChange"+ articleId).innerHTML
+
+    if(getLockStatus === "lock")
+  {
+      document.getElementById("a"+articleId).style.background = "rgba(39, 39, 39, 1)";
+      document.getElementById("textChange"+ articleId).innerHTML = "Unlock";
+      document.getElementById("changeLock"+ articleId).innerHTML = '<img src = "./pics/locked.png" class = "lockImg" id="change">';
+      document.getElementById("change").addEventListener("click", function(){ lockUnlock(articleId); }, true);
+      //document.getElementById("change").addEventListener("mouseover", function(){ lockHover('textChange'+articleId); }, true);
+      //document.getElementById("change").addEventListener("mouseout", function(){ lockUnlock('textChange'+articleId); }, true);
+  }
    else
-   {
-    getLockStatus = "lock";
-    document.getElementById(grabLockPictureDiv).innerHTML = '<img src = "./pics/locked.png" class = "lockImg" onclick = "lockUnlock(articleId)" onmouseover="lockHover(getTxtChangeId)" onmouseout="lockLeave(getTxtChangeId)">'
-   }
+  {
+    document.getElementById("a"+articleId).style.background = "rgba(39, 39, 39, 0)";
+    document.getElementById("textChange"+ articleId).innerHTML = "lock";
+    document.getElementById("changeLock"+ articleId).innerHTML = '<img src = "./pics/unlocked.png" class = "lockImg" id="change">';
+    document.getElementById("change").addEventListener("click", function(){ lockUnlock(articleId); }, true);
+    //document.getElementById("change").addEventListener("mouseover", function(){ lockHover('textChange'+articleId); }, true);
+    //document.getElementById("change").addEventListener("mouseout", function(){ lockUnlock('textChange'+articleId); }, true);
+  }
 
 }
 
-//Example: make("input", { id: 'example', classList: ["button"], attr: {  "type": "button", "value": 'test', "onclick": "function();" }});
+
 function make(tag_name, opt) {
     var ele = document.createElement(tag_name);
     if (!opt) {
