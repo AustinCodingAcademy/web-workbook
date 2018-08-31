@@ -56,9 +56,15 @@ header nav a:focus {
   color: #3498DB;
 }
 
-@media (max-width: 420px) {
-  nav a {
-    font-size: 50%;
+@media (max-width: 500px) {
+  header {
+    text-align: center;
+  }
+  header nav ul {
+    margin: 0;
+  }
+  header nav ul a {
+    font-size: 55%;
   }
 }
 /*    +=================+
@@ -99,7 +105,7 @@ header nav a:focus {
   font-size: .9rem;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
   .blog-title,
   .entry-title,
   .entry-desc,
@@ -160,4 +166,16 @@ footer nav a:focus {
 }
 .social-media li a i:hover {
   color: #3498DB;
+}
+
+@media (max-width: 500px) {
+  footer nav ul a {
+    font-size: 55%;
+  }
+  .social-media li {
+    padding: .5em;
+  }
+  .social-media li a i {
+    transform: scale(0.75);
+  }
 }
