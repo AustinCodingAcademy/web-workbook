@@ -11,22 +11,26 @@
   <body>
     <header>
         <div class="title">
-            <h1>Kyle Pajari</h1>
-            <h3>Software Developer</h3>
+            <div class="name">
+                <h1>Kyle Pajari</h1>
+                <h3>Software Developer</h3>
+            </div>          
             <nav class="mynav">
-                    <ul>
-                        <li><a href="../../index.html">Home</a></li>
-                        <li><a href="index.html">Bio</a></li>
-                        <li><a href="../../01week/resume/index.html">Resume</a></li>
-                        <li>Blog</li>
-                    </ul>
-                </nav>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="index.html">Bio</a></li>
+                    <li><a href="../../01week/resume/index.html">Resume</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </nav>
         </div>
         
     </header>
     <div class="content">
-        <p>Hello! My name is Kyle, thank you for visiting my page.</p>
-        <p>You can use the navigation at the top go to different pages.</p>
+        <div class="intro">
+            <p>Hello! My name is Kyle, thank you for visiting my page.</p>
+            <p>You can use the navigation at the top go to different pages.</p>
+        </div>       
         <div class="img-container">
             <img src="./images/profilephoto.jpg" alt="profile-img" class="image" />
             <div class="overlay">
@@ -36,7 +40,8 @@
             </div>
             </a>
         </div>
-        <footer>
+    </div>
+    <footer>
             <i>This page is created and maintained by Kyle Pajari.</i>
             <br />
             <i>Last Modified: <i id="date"></i></i>
@@ -45,6 +50,5 @@
                 document.getElementById("date").innerHTML = document.lastModified;
             </script>
         </footer>
-    </div>
   </body>
 </html>
