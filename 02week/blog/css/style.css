@@ -27,6 +27,15 @@ body {
 .logo {
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  color: #3498DB;
+  text-shadow: 1px 2px 1px #4d4d4d;
+  font-size: 100px;
+}
+.page-title {
+  margin: 0;
+  padding: 0;
+  font-variant: small-caps;
 }
 header {
   width: 100vw;
@@ -56,8 +65,7 @@ header nav a {
 }
 header nav a:hover,
 header nav a:focus {
-  color: #3498DB;
-  text-shadow: 1px 2px 1px #4d4d4d;
+  color: #9B59B6;
 }
 
 @media (max-width: 500px) {
@@ -70,11 +78,16 @@ header nav a:focus {
   }
   header nav ul a {
     margin: 0 auto;
-    font-size: 55%;
+    font-size: .7rem;
+  }
+  header nav li {
+    margin: .8em;
+  }
+  .site-title {
+    font-size: 1.5rem;
   }
   .logo {
-    height: 125;
-    width: 150;
+    font-size: 75px;
   }
 }
 /*    +=================+
@@ -93,7 +106,7 @@ header nav a:focus {
   background-color: #E0E0E0;
   padding: .5em;
   border: .5px solid #3498DB;
-  border-radius: 3px;
+  border-radius: 3px;  
 }
 .blog-entry:hover {
   border: 1px solid #000;
@@ -171,9 +184,6 @@ footer {
 }
 
 @media (max-width: 500px) {
-  footer nav ul a {
-    font-size: 55%;
-  }
   .social-media li {
     padding: .5em;
   }
