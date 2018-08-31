@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>My Blog</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     </head>
     <body>
-    
+        <nav class="navbar">
+            <span class="open-slide">
+                <a href="#" onclick="OpenSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="white" stroke-width="5" />
+                        <path d="M0,14 30,14" stroke="white" stroke-width="5" />
+                        <path d="M0,23 30,23" stroke="white" stroke-width="5" />
+                    </svg>
+                </a>
+            </span>
+
+            <ul class="navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Bio</a></li>
+                <li><a href="#">Blog</a></li>
+                <!-- <li><a href="#">Contact</a></li> -->
+            </ul>
+
+            <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Search on blog...">
+                <a class="search-btn" href="#">
+                        <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </nav>
+
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="CloseSlideMenu()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">Resume</a>
+            <a href="#">Bio</a>
+            <a href="#">Blog</a>
+            <!-- <a href="#">Contact</a> -->
+        </div>
+
+        <div id="main">
+            <h1>My interesting blog</h1>
+            
+            <div id="theblog">
+
+                <div class="entry">
+                    <h3>Entry Number 1</h3>
+                    <h4 id="date"></h4>
+                    <script>
+                        document.getElementById("date").innerHTML = Date();
+                    </script>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque autem vel possimus consequatur. Corrupti eaque dicta est adipisci non, vitae voluptate aliquid a natus. Possimus blanditiis libero exercitationem aut error!</p>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            function OpenSlideMenu(){
+                document.getElementById('side-menu').style.width = '250px';
+                document.getElementById('main').style.marginLeft = '250px';
+            }
+
+            function CloseSlideMenu(){
+                document.getElementById('side-menu').style.width = '0px';
+                document.getElementById('main').style.marginLeft = '0px';
+            }
+
+
+        
+        </script>
     </body>
 </html>
