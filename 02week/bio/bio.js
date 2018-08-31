@@ -37,12 +37,13 @@ function lockUnlock(articleId){
   }
    else
   {
-    document.getElementById("a"+articleId).style.background = "rgba(39, 39, 39, 0)";
+    document.getElementById("a"+articleId).style.background = "";
     document.getElementById("textChange"+ articleId).innerHTML = "lock";
     document.getElementById("changeLock"+ articleId).innerHTML = '<img src = "./pics/unlocked.png" class = "lockImg" id="change">';
-    document.getElementById("change").addEventListener("click", function(){ lockUnlock(articleId); }, true);
-    document.getElementById("change").addEventListener("mouseover", function(){ lockHover('textChange'+articleId); }, true);
-    document.getElementById("change").addEventListener("mouseout", function(){ lockLeave('textChange'+articleId); }, true);
+    document.getElementById("change").id = ("change"+articleId);
+    document.getElementById("change"+articleId).addEventListener("click", function(){ lockUnlock(articleId); }, true);
+    document.getElementById("change"+articleId).addEventListener("mouseover", function(){ lockHover('textChange'+articleId); }, true);
+    document.getElementById("change"+articleId).addEventListener("mouseout", function(){ lockLeave('textChange'+articleId); }, true);
   }
 
 }
