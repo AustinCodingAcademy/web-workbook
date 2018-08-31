@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
 
 * {
   box-sizing: border-box;
@@ -6,13 +6,13 @@
 }
 body {
   height: 100%;
+  width: 100vw;
   margin: 0;
   font-family: 'Roboto', sans-serif;
   background-color: #3498DB;
 }
 .container {
-  max-width: 30em;
-  min-width: 30em;
+  max-width: 60vw;
   min-height: 100%;
   margin-top: 0;
   margin-bottom: -50px;
@@ -25,12 +25,13 @@ body {
   +=================+ 
 */
 header {
+  width: 100vw;
   background-color: #E0E0E0;
   padding: .1em;
   margin-bottom: .5em;
 }
 nav {
-  min-width: 800px;
+  min-width: 100vw;
 }
 nav ul {
   margin: 0;
@@ -53,20 +54,27 @@ nav a:focus {
   color: #3498DB;
 }
 
+@media (max-width: 420px) {
+  nav a {
+    font-size: 50%;
+  }
+}
 /*    +=================+
     /   Blog Posts    /
   +=================+ 
 */
 .blog-entry {
+  max-width: 600px;
   background-color: #E0E0E0;
-  padding-left: .5em;
-  margin-bottom: 0;
+  padding: .5em;
+  margin: 0 auto;
   border: .5px solid #3498DB;
   border-radius: 3px;
 }
 .blog-entry:hover {
   border: 2px solid black;
   transform: scale(1.05);
+  transition-duration: 50ms;
 }
 .blog-entry:last-of-type {
   margin-bottom: .5em;
@@ -86,6 +94,15 @@ nav a:focus {
 .blog-desc {
   margin-bottom: 1px;
   font-size: .9rem;
+}
+
+@media (max-width: 420px) {
+  .blog-title,
+  .blog-entry,
+  .blog-desc,
+  .blog-origin{
+    font-size: 80%;
+  }
 }
 
 /*    +=================+
