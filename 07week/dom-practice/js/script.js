@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
   document.querySelector('ul').insertAdjacentHTML('afterend', "<input id='enterText' type='text' value=''>")
-  document.querySelector('input').insertAdjacentHTML('afterend', "<input class='submitButton' type='submit' value='Add Item' onclick=addItem()>")
+  document.querySelector('input').insertAdjacentHTML('afterend', "<input class='submitButton' type='submit' value='Add Item' onclick='addItem()'>")
   
   reindexDeleteButtonsHack();
 });
