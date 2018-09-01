@@ -12,7 +12,7 @@ function toTheTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
+/*
 function showStatus(_passedValue) {
     document.getElementById(_passedValue).style.display = "inline-block";
 }   
@@ -20,7 +20,7 @@ function showStatus(_passedValue) {
 function hideStatus(_passedValue) {
     document.getElementById(_passedValue).style.display = "none";
 }  
-
+*/
 
 function lockUnlock(articleId){
     var getLockStatus = document.getElementById("lockStatus"+ articleId).innerHTML
@@ -28,9 +28,9 @@ function lockUnlock(articleId){
     if(getLockStatus === "Click to lock")
   {
 
-
-      document.getElementById(articleId).style.background = "(11, 227, 255, 0.9) !important";
-      document.getElementById(articleId).style.hight = "600px !important";
+    document.getElementById(articleId).style.transition = "none";
+      document.getElementById(articleId).style.background = "(11, 227, 255, 0.9)";
+      document.getElementById(articleId).style.hight = "600px";
   }else{
 
   }
