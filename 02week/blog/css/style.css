@@ -174,6 +174,8 @@ body {
     margin: 10px;
     border: 5px solid rgba(68, 76, 146, 0.527);
     transition: 1s;
+    padding: 10px;
+    overflow: hidden;
 }
 
 .entry:hover {
@@ -227,48 +229,58 @@ p {
     font-weight: bold;
 }
 
+/* Este es el boton de on/off. */
 .read-more-state {
     display: none;
   }
   
+  /* Esta es la transicion de regreso. */
   .read-more-target {
     opacity: 0;
     max-height: 0;
     font-size: 0;
-    transition: .25s ease;
- 
+    transition: .7s ease;
   }
 
+  /* Este es el hover del boton. */
   .read-more-trigger:hover {
     background-color: #3b5998;
     color: white;
   }
   
+  /* Esta es la transicion para que salga el texto. */
   .read-more-state:checked ~ .read-more-wrap .read-more-target {
     opacity: 1;
     font-size: inherit;
     max-height: 999em;
-
+    transition: .5s;
   }
   
+  /* Esto es lo que dice el boton antes de picarle. */
   .read-more-state ~ .read-more-trigger:before {
-    content: 'Show more';
- 
+    content: 'show more...';
+    transition: 2s;
   }
   
+    /* Esto es lo que dice el boton despues de picarle. */
   .read-more-state:checked ~ .read-more-trigger:before {
-    content: 'Show less';
+    content: '...show less';
+    transition: 2s;
   }
   
+  /* este es el boton. */
   .read-more-trigger {
+    background-color: rgba(68, 76, 146, 0.527);
     cursor: pointer;
     display: inline-block;
     padding: 0 .5em;
-    color: #666;
+    color: white;
     font-size: .9em;
     line-height: 2;
     border: 1px solid #ddd;
     border-radius: .25em;
-    align-items: center;
+    /* float: right; */
+    /* position: relative; */
+    float: right;
+    transition: 2s;
   }
-
