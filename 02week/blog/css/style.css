@@ -7,13 +7,13 @@
 body {
   height: 100%;
   width: 100vw;
+  overflow-x: hidden;
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background: -webkit-linear-gradient(-17deg, rgb(52, 152, 219), rgb(0, 87, 160));
+  /* background: -webkit-linear-gradient(-17deg, rgb(52, 152, 219), rgb(0, 87, 160));
   background: linear-gradient(-17deg, rgb(52, 152, 219), rgb(0, 87, 160));
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  
+  background-attachment: fixed; */
+  background-color: #3498DB;
 }
 .container {
   max-width: 60vw;
@@ -22,6 +22,11 @@ body {
   margin-bottom: -50px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (max-width:768px) {
+  .container {
+    max-width: 97vw;
+  }
 }
 
 /*    +=================+
@@ -34,7 +39,7 @@ body {
   text-decoration: none;
   color: #3498DB;
   text-shadow: 1px 2px 1px #4d4d4d;
-  font-size: 100px;
+  font-size: 122px;
 }
 .page-title {
   margin: 0;
@@ -47,6 +52,7 @@ header {
   padding: .1em;
   margin-bottom: .5em;
   text-align: center;
+  box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
 }
 header nav {
   min-width: 100vw;
@@ -72,7 +78,7 @@ header nav a:focus {
   color: #9B59B6;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 425px) {
   header {
     text-align: center;
   }
@@ -87,7 +93,7 @@ header nav a:focus {
   header nav li {
     margin: .8em;
   }
-  .site-title {
+  .page-title {
     font-size: 1.5rem;
   }
   .logo {
@@ -118,6 +124,12 @@ header nav a:focus {
   transition-duration: 20ms;
   box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
 }
+.keyword {
+  color: #3498DB;
+}
+.blog-entry:hover .keyword {
+  color: #9B59B6;
+}
 .blog-clickable:last-of-type {
   margin-bottom: .5em;
 }
@@ -138,11 +150,8 @@ header nav a:focus {
   font-size: .9rem;
   color: #000;
 }
-.keyword {
-  color: #F14B57;
-}
 
-@media (max-width: 500px) {
+@media screen and (max-width: 425px) {
   .blog-entry {
     padding: .3em;
   }
@@ -168,6 +177,7 @@ footer {
   color: #000;
   margin: 0;
   text-align: center;
+  box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
 }
 .social-media {
   margin: 0 auto;
