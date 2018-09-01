@@ -12,10 +12,39 @@ float: left;
 position: sticky;
 top: 0;
 left: 0;
-background-color: rgba(11, 227, 255, 0.342); 
+background-color: rgba(11, 227, 255, 0.0); 
 border: 2px;
 }
 
+.leftAside>h1{
+    text-align: center;
+}
+
+.leftAside>div:nth-of-type(1){
+    height: 20px;
+    width: 100%;
+}
+.leftAside .linkedin{
+    height: 100%;
+    width: 60px;
+    float: left;
+}
+.topBtn{
+    height: 100%;
+    width: 20px;
+    float: right;
+    display: inline-block;
+    display: none;
+    z-index: 2;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    border-radius: 4px;
+}
 .mainContent{
     height: auto;
     width: 65%;
@@ -25,7 +54,7 @@ border: 2px;
 
 .mainContent>div{
     width: 100%;
-    transition: width 2s, height 2s;
+    transition: width 2s, height 2s, background-color 3s;
     transition-delay: .5s;
     height: 100px;
     margin-top:10px;
@@ -50,6 +79,7 @@ border: 2px;
 .mainContent>div:hover {
     width: 100%;
     height: 600px;
+    background-color: rgba(11, 227, 255, 0.9);
 }
 
 .blogSelection{
@@ -59,10 +89,20 @@ border: 2px;
     background-color:  rgba(0,0,0,0);
 }
 body{
-    background-image: url(../Pictures/binary.JPG);
+    background-image: url(../Pictures/worldBack.png);
     background-repeat: no-repeat;
     background-position: left top;
     background-attachment: fixed;
     background-size: 100%;
     font-family: 'Uncial Antiqua', cursive;
+}
+.lockedOrUnlocked{
+    display: none;
+    position: absolute;
+    font-size: 10px;
+}
+.toggledDiv{
+    width: 100% !important;
+    height: 600px !important;
+    background-color: rgba(11, 227, 255, 0.9) !important;
 }
