@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Brett's Blog</title>
-  <link href="https://fonts.googleapis.com/css?family=Uncial+Antiqua" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arapey" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <script type="text/javascript" src="./blog.js"></script>
 </head>
@@ -18,7 +18,8 @@
   <div class="headerDiv" id="divHeader"></div>
 
   <div class="mainContent" id="contentMain">
-    <div id="1">
+    <div id="0" onclick = "lockUnlock(0)">
+      <div id = "lockStatus0" class ="lockedOrUnlocked">Click to lock</div>
       <h1>AJAX and ME</h1>
       <p>By Brett Jackson</p>
       <p>Anakin was a good friend. When I first knew him, your father was already a great pilot. But I was amazed how strongly
@@ -47,7 +48,8 @@
         wish.
       </p>
     </div>
-    <div id="2">
+    <div id="1" onclick = "lockUnlock(1)">
+      <div id = "lockStatus1" class ="lockedOrUnlocked">Click to lock</div>
       <h1>The joys and Pitfalls of JavaScript</h1>
       <p>By Brett Jackson</p>
       <p>I told you to remain on the command ship. A small Rebel force has penetrated the shield and landed on Endor. Yes,
@@ -62,7 +64,8 @@
         I'll cover you. Move! Move! The shield is down! Commence attack on theDeath Star's main reactor. We're on our way.
         Red Group, Gold Group, all fighters follow me. Told you they'd do it!</p>
     </div>
-    <div id="3">
+    <div id="2" onclick = "lockUnlock(2)">
+      <div id = "lockStatus2" class ="lockedOrUnlocked">Click to lock</div>
       <h1>Is XML Dead?</h1>
       <p>By Brett Jackson</p>
       <p>Yes, that's it. Dagobah. No, I'm not going to change my mind about this. I'm not picking up any cities or technology.
@@ -86,7 +89,8 @@
         Yes, stop, please! I'm not ready to die. Chewie! Chewie, this won't help me. Hey! Save your strength. There'll be
         another time. The princess - you have to take care of her. You hear me? I love you! I know.</p>
     </div>
-    <div id="4">
+    <div id="3" onclick = "lockUnlock(3)">
+      <div id = "lockStatus3" class ="lockedOrUnlocked">Click to lock</div>
       <h1>How Much is too much: Know your Java</h1>
       <p>By Brett Jackson</p>
       <p>There she is. See-Threepio, do you copy? For the moment. Uh, we're in the main hangar across from the ship. We're
@@ -115,7 +119,8 @@
         We had a reactor leak here now. Give us a few minutes to lock it down. Large leak...very dangerous. Who is this?
         What's your operating number? Boring conversation anyway. Luke! We're going to have company!</p>
     </div>
-    <div 4>
+    <div id= "4" onclick = "lockUnlock(4)">
+      <div id = "lockStatus4" class ="lockedOrUnlocked">Click to lock</div>
       <h1>Is C# the Future for Microsoft?</h1>
       <p>By Brett Jackson</p>
       <p>That blast came from the Death Star! That thing's operational! Home One, this is Gold Leader. We saw it. All craft
@@ -140,7 +145,8 @@
         unprotected. But most important of all, we've learned that the Emperor himself is personally overseeing the final
         stages of the construction of this Death Star. Many Bothans died to bring us this information. Admiral Ackbar, please.</p>
     </div>
-    <div id="5">
+    <div id="5" onclick = "lockUnlock(5)">
+      <div id = "lockStatus5" class ="lockedOrUnlocked">Click to lock</div>
       <h1>How long will C++ last</h1>
       <p>By Brett Jackson</p>
       <p>I told you to remain on the command ship. A small Rebel force has penetrated the shield and landed on Endor. Yes,
@@ -155,7 +161,8 @@
         I'll cover you. Move! Move! The shield is down! Commence attack on theDeath Star's main reactor. We're on our way.
         Red Group, Gold Group, all fighters follow me. Told you they'd do it!</p>
     </div>
-    <div id="6">
+    <div id="6" onclick = "lockUnlock(6)">
+      <div id = "lockStatus6" class ="lockedOrUnlocked">Click to lock</div>
       <h1>Just a Matter of Time: The Last DBA</h1>
       <p>By Brett Jackson</p>
       <p>Lorem ipsizzle dolizzle sizzle shizzle my nizzle crocodizzle, consectetuer mah nizzle elit. Nullam black velizzle,
@@ -180,7 +187,7 @@
         purus.
       </p>
     </div>
-    <div id="7" onclick = "lockUnlock(7)" >
+    <div id="7" onclick = "lockUnlock(7)">
       <div id = "lockStatus7" class ="lockedOrUnlocked">Click to lock</div>
       <h1>Quantum Computing and You</h1>
       <p>By Brett Jackson</p>
@@ -198,7 +205,8 @@
         pizzle dope, auctizzle brizzle, nunc. Mofo pharetra. Nunc nisi. Curabitur sizzle amizzle leo nec ante bizzle dignissizzle.
         Quisque laoreet the bizzle sizzle shut the shizzle up enizzle. Boofron tempus dignissizzle izzle.</p>
     </div>
-    <div id="8">
+    <div id="8" onclick = "lockUnlock(8)">
+      <div id = "lockStatus8" class ="lockedOrUnlocked">Click to lock</div>
       <h1>The Future of Apple: The Story of a Price Nightmare</h1>
       <p>By Brett Jackson</p>
       <p>Spicy jalapeno bacon ipsum dolor amet elit lorem venison shank pork, short loin culpa prosciutto fugiat andouille
@@ -216,7 +224,8 @@
         cupim, dolore dolore reprehenderit velit sausage pig et culpa ham. Corned beef brisket sint est mollit laboris. Ut
         alcatra eu drumstick hamburger rump biltong jerky.</p>
     </div>
-    <div id="9">
+    <div id="9" onclick = "lockUnlock(9)">
+      <div id = "lockStatus9" class ="lockedOrUnlocked">Click to lock</div>
       <h1>What Happend to IBM</h1>
       <p>By Brett Jackson</p>
       <p>Hodor. Hodor hodor hodor, hodor.Hodor. Hodor hodor hodor, hodor.Hodor. Hodor hodor hodor, hodor.Hodor. Hodor hodor
@@ -237,7 +246,8 @@
         hodor.
       </p>
     </div>
-    <div id="10">
+    <div id="10" onclick = "lockUnlock(10)">
+      <div id = "lockStatus10" class ="lockedOrUnlocked">Click to lock</div>
       <h1>It Could Happen to You: Lost Files</h1>
       <p>By Brett Jackson</p>
       <p>Jolly boat pink Blimey capstan Corsair wherry salmagundi Arr Jack Ketch knave. Yellow Jack fathom crow's nest walk
@@ -249,7 +259,8 @@
         tackle lugger brigantine hands ballast Blimey hang the jib gangplank deadlights. Me spirits weigh anchor swab chase
         guns lanyard heave to splice the main brace hearties lad.</p>
     </div>
-    <div id="11">
+    <div id="11" onclick = "lockUnlock(11)">
+      <div id = "lockStatus11" class ="lockedOrUnlocked">Click to lock</div>
       <h1>The Best Way to Land a Coding Job</h1>
       <p>By Brett Jackson</p>
       <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis.
