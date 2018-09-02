@@ -2,98 +2,92 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta httblock-equiv="X-UA-Compatible" content="IE=edge">
   <title>My Resume</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="./css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../../normalize.css">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" 
         integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" 
         crossorigin="anonymous">
 </head>
 
+<!-- Main Title -->
+<div class="container">
+<header>
+  <div class="resume-block">
+    <h1 class="main-title">Andy Olson</h1>
+    <div class="contact-section">
+      <ul class="contact-list">
+        <!-- phone -->
+        <p>(832) 588-3933 <i class="fas fa-phone"></i></p>
+        <!-- location -->
+        <p>Round Rock, TX 78681 <i class="fas fa-map-marker-alt"></i></p>
+        <!-- email -->
+        <p>andyolson09@gmail.com <i class="fas fa-envelope"></i></p>
+        <!-- social links -->
+      </ul>
+    </div>
+  </div>
+</header>
+
 <body>
-  
-    <div class="main">
-
-    <!-- Main Title -->
-    <section class="section-main-title">
-      <h1>Andy Olson</h1>
-      <p class= "p-subtitle">Student | Round Rock, TX, 78681</p>
-    </section>
-
-    <!-- Main Body -->
-    <section class="section-main">
-      <div class="div-block">
-        <p class="p-title">Profile</p>
-        <p class="p-subtitle">About Me</p>
-        <p> 
-          I am currently a student interested in becoming a professional software developer. 
-          I have a fair amount of knowledge in introductory computer science concepts such as 
-          basic programming logic, algorithmic thinking/problem solving, and data structures. 
-          My programming language experience is primarily in C but I am confident that I can 
-          translate my abilities to any other language.
-        </p>
-      </div>
-        
-      <!-- Work Experience -->
-      <div class="div-block">
-        <p class="p-title">Work Experience</p>
-        <p class="p-subtitle">Placeholder 1</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-
-      <!-- Education -->
-      <div class="div-block">
-        <p class="p-title">Education</p>
-        <p class="p-subtitle">University of North Texas (Computer Science)</p>
-        <p> 
-          Developed a solid foundation in computer programming. Completed two main courses: 
-          Computer Science I and II. Gave me fundamental knowledge and experience with core programming 
-          concepts.
-        </p>
-      </div>
-
-      <!-- Skills -->
-      <div class="div-block">
-        <p class="p-title">Skills</p>
-        <p class="p-subtitle">Programming</p>
-        <ul>
-          <li>Algorithmic Thinking</li>
-          <li>Programming Logic</li>
-          <li>Data Structures</li>
-        </ul>
-        <p class="p-subtitle">General</p>
-        <ul>
-          <li>Teamwork</li>
-          <li>Communication</li>
-        </ul>
-      </div>
-
-      <!-- Hobbies -->
-      <div class="div-block">
-        <p class="p-title">Hobbies</p>
-        <p class="p-subtitle">and Interests</p>
-        <ul>
-          <li>Gaming</li>
-          <li>PC Building</li>
-        </ul>
-      </div>
+  <!-- Profile -->
+  <div class="resume-block">
+    <p class="block-title">Profile</p>
+    <p class="block-subtitle">About Me</p>
+    <p class="block-content"> 
+      I am currently a student interested in becoming a professional software developer. 
+      I have a fair amount of knowledge in introductory computer science concepts such as 
+      basic programming logic, algorithmic thinking/problem solving, and data structures. 
+      My programming language experience is primarily in C but I am confident that I can 
+      translate my abilities to any other language.
+    </p>
+  </div>
     
-      <!-- Contact Section -->
-      <div class="div-block">
-        <p class="p-title">Contact</p>
-        <p><i class="fas fa-phone-square"></i> (832)588-3933</p>
-        
-        <a href="mailto:andyolson09@gmail.com">
-          <i class="fas fa-envelope"></i> andyolson09@gmail.com</a>
-        <br>
-        
-        <a href="https://linkedin.com/in/andy-olson-2a250116a" target="_blank">
-          <i class="fab fa-linkedin"></i> LinkedIn</a>
+  <!-- Work Experience -->
+  <div class="resume-block">
+    <p class="block-title">Work Experience</p>
+    <p class="block-subtitle">Placeholder 1</p>
+    <p class="block-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
 
-      </div>
-    </section>
+  <!-- Education -->
+  <div class="resume-block">
+    <p class="block-title">Education</p>
+    <p class="block-subtitle">University of North Texas (Computer Science)</p>
+    <p class="block-content"> 
+      Developed a solid foundation in computer programming. Completed two main courses: 
+      Computer Science I and II. Gave me fundamental knowledge and experience with core programming 
+      concepts.
+    </p>
+  </div>
+
+  <!-- Skills -->
+  <div class="resume-block">
+    <p class="block-title">Skills</p>
+    <p class="block-subtitle">Programming</p>
+    <ul class="block-list">
+      <li>Algorithmic Thinking</li>
+      <li>Programming Logic</li>
+      <li>Data Structures</li>
+    </ul>
+    <p class="block-subtitle">General</p>
+    <ul class="block-list">
+      <li>Teamwork</li>
+      <li>Communication</li>
+    </ul>
+  </div>
+
+  <!-- Hobbies -->
+  <div class="resume-block">
+    <p class="block-title">Hobbies</p>
+    <p class="block-subtitle">and Interests</p>
+    <ul class="block-list">
+      <li>Gaming</li>
+      <li>PC Building</li>
+    </ul>
   </div>
 </body>
+</div>
 </html>
