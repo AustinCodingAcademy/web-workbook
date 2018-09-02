@@ -20,7 +20,7 @@ function lockUnlock(articleId){
   {
     document.getElementById("lockStatus"+ articleId).innerHTML = "Click to unlock"
     document.getElementById(articleId).style.transition = "none";
-    document.getElementById(articleId).style.backgroundColor = "rgba(11, 227, 255, 0.9)";
+    document.getElementById(articleId).style.backgroundColor = "rgba(253, 253, 253, 0.9)";
     document.getElementById(articleId).style.height = "600px";
   }else{
     document.getElementById("lockStatus"+ articleId).innerHTML = "Click to lock"
