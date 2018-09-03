@@ -3,11 +3,12 @@
   +=================+ 
 */
 .sidebar {
-  opacity: 0.05;
+  opacity: 0.15;
   background-color: #303030;
   position: fixed;
   width: 10%;
-  height: 100vw;
+  margin-top: .5em;
+  margin-left: .5em;
   z-index: 1;
   top: 0;
   left: 0;
@@ -17,32 +18,29 @@
   opacity: 1;
   box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
 }
-.nav {
-  padding: 1em;
+.nav-btn {
+  display: block;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 .nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  overflow: hidden;
 }
-.nav-btn a {
+.nav-btn{
   text-decoration: none;
-  text-transform: uppercase;
   font-size: 1.2rem;
+  padding-left: .25em;
   color: #E0E0E0;
 }
-.nav-btn {
-  display: block;
-  margin: 1em;
-  border: 2px solid #E0E0E0;
-  background-color: transparent;
-  cursor: pointer;
-}
-.nav-btn a:hover {
-  font-size:1.3rem;
-  color: #606060;
-}
 .nav-btn:hover {
+  font-size:1.4rem;
+  color: #606060;
   background-color: #E0E0E0;
   box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
+  cursor: pointer;
 }
