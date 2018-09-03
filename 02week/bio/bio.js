@@ -27,7 +27,7 @@ function lockUnlock(articleId){
 
     if(getLockStatus === "lock")
   {
-      document.getElementById("a"+articleId).style.background = "rgba(39, 39, 39, 1)";
+      document.getElementById("a"+articleId).style.background = "rgba(65, 63, 63,)";
       document.getElementById("textChange"+ articleId).innerHTML = "Unlock";
       document.getElementById("changeLock"+ articleId).innerHTML = '<img src = "./pics/locked.png" class = "lockImg" id="change">';
       document.getElementById("change").id = ("change"+articleId);
