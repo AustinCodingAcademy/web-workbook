@@ -11,14 +11,17 @@ body {
   margin: 0;
 }
 .container {
-  width: 80%;
-  min-width: 700px;
+  max-width: 85vw;
   min-height: 100%;
-  margin-top: 0;
-  margin-bottom: -5em;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
+
+@media screen and (max-width:768px) {
+  .container {
+    max-width: 97vw;
+  }
+}
+
 /*    +===================+
     /   Header          /
   +===================+ 
@@ -26,11 +29,12 @@ body {
 header {
   background-color: #404040;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.2em;
   padding-top: 1em;
   padding-bottom: 1em;
   margin-bottom: 1em;
   color: #E0E0E0;
+  width: 100vw;
 }
 /*    +===================+
     /   Main Bio        /
@@ -39,7 +43,6 @@ header {
 main {
   float: left;
   width: 60%;
-  min-width: 565px;
   margin-bottom: 5em;
   background: #404040;
   padding: 1em;
@@ -76,48 +79,69 @@ main p:first-of-type {
   color: #E0E0E0;
   padding: 0;
 }
+
+@media screen and (max-width: 425px) {
+  main {
+    clear: both;
+    width: 97vw;
+    margin-bottom: 1em
+  }
+}
 /*    +===================+
     /   Links           /
   +===================+ 
 */
-aside {
+.links {
   color: #E0E0E0;
   background: #404040;
-  position: relative;
   margin-left: 1em;
+  display: block;
   float: left;
   width: 10%;
   min-width: 115px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-aside ul{
+.links ul{
   list-style: none;
   margin: 0;
   padding: 0;
 }
-aside li {
+.links li {
   list-style: none;
   margin: 1em;
 }
-aside a {
+.links a {
   text-decoration: none;
   text-transform: uppercase;
   color: #E0E0E0;
 }
-aside a:hover,
-aside a:focus {
+.links a:hover,
+.links a:focus {
   color: #F75C4C;
+}
+
+@media screen and (max-width: 425px) {
+  .links {
+    margin: 0 auto;
+    width: 50vw;
+  }
 }
 /*    +===================+
     /   Footer          /
   +===================+ 
 */
 .push {
-  height: 5em;
+  height: 50px;
 }
 footer {
   background-color: #404040;
   color: #E0E0E0;
-  height: 5em;
-  margin: 0;
+  min-height: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+footer h2 {
+  margin: 0 auto;
+  padding: 1em;
+  vertical-align: center;
 }
