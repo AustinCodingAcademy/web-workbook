@@ -10,6 +10,20 @@ body {
   margin-right: auto;
 }
 
+a {
+  color: grey;
+  transition: .2s ease; /* animation */
+  transition-delay: .2s;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(255, 88, 247);
+}
+
 h1 {
   font-size: 30px;
   float: left;
@@ -40,28 +54,45 @@ nav {
   background-color: rgb(59, 59, 59);
   width: 100%;
   overflow: auto;
+
 }
 
 nav ul {
   float: right; 
+  text-decoration: none;
 }
 
 nav li {
   display: inline;
-  list-style-type: none;
 }
 
+nav li a:link {
+  color: #ff2aea
+}
+
+/* styling for blog entries */
 .blog {
-  background: linear-gradient(160deg,#f7f7f7,#e4e4e4,#d2d2d2,#c0c0c0,#aeaeae,#9d9d9d,#8c8c8c,#7b7b7b);
-  width: 100%;
-  margin: auto;
+  background-color: rgb(209, 209, 209);
   overflow: auto;
   word-wrap: break-word;
+  transition: all .2s ease; /* animation */
+  transition-delay: .2s;
+}
+
+/* make heading bold */
+.blog h3 {
+  font-weight: bold;
+}
+
+/* make date italic */
+.blog li:nth-child(2) {
+  font-style: italic;
 }
 
 .blog ul {
-  width: 70%;
+  width: 60%;
   float: left;
+  padding: 2%;
 }
 
 .blog li {
@@ -70,8 +101,65 @@ nav li {
 
 .blog img {
   width: 30%;
+  display: inline-block;
   float: right;
-  position: relative;
+}
+
+/* animation expand post */
+.blog:hover {
+  background-color: white;
+  transform: scale(1.22);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.blog img:hover {
+  width: 30%;
+}
+
+/* alt position blog post - picture on left */
+.blogalt{
+  background-color: rgb(209, 209, 209);
+  overflow: auto;
+  word-wrap: break-word;
+  transition: all .2s ease; /* animation */
+  transition-delay: .2s;
+}
+  
+/* make heading bold */
+.blogalt h3 {
+  font-weight: bold;
+}
+  
+/* make date italic */
+.blogalt li:nth-child(2) {
+  font-style: italic;
+}
+  
+.blogalt ul {
+  width: 60%;
+  float: right;
+  padding: 2%;
+}
+  
+.blogalt li {
+  list-style-type: none;
+}
+  
+.blogalt img {
+  width: 30%;
+  display: inline-block;
+  float: left;
+}
+  
+/* animation expand post */
+.blogalt:hover {
+  background-color: white;
+  transform: scale(1.22);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  
+.blogalt img:hover {
+  width: 30%;
 }
 
 footer {
