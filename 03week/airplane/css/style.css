@@ -7,10 +7,16 @@ SearchFlights Button: #0d67bd */
 * {
     margin: 0;
     padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .logo {
@@ -39,6 +45,11 @@ body {
     padding-right: 5px;
 }
 
+/* .menu img:hover {
+    color: #018d80;
+    -for this to work I'd need the icons in the other color and hover switch image-
+} */
+
 .menu > a {
     font-family: verdana;
     display: inline-block;
@@ -47,6 +58,7 @@ body {
     margin: 5px;
     padding-left: 10px;
     padding-top: 30px;
+    cursor: pointer;
 }
 
 .menu > a:hover {
@@ -60,4 +72,91 @@ article {
     left: 70px;
     width: 400px;
     height: 310px;
+}
+
+article .scheduleimg {
+    max-width:100%;
+    max-height:100%;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+button {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    overflow: hidden;
+}
+
+input[type="button"]
+{
+    margin:0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.btn-group {
+    width: 100%;
+    float: left;
+    border: 5px solid black;
+    margin: 0px;
+    padding: 0px;
+    height: 60px;
+    overflow:hidden;
+}
+
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+article  .pbutton-left {
+    display: inline-block;
+    background: #0063b7;
+    width: 33.33333%;
+    height: 40px;
+    border-top-left-radius: 10px;
+    padding: 0px;
+    margin: 0px;
+    clear: both;
+    cursor: pointer;
+    border-right: none;
+    border: 0px;
+    outline: none;
+}
+
+article  .pbutton-middle {
+    display: inline-block;
+    background: #018d80;
+    width: 33.33333%;
+    height: 40px;
+    border-top-left-radius: 0px;
+    padding: 0px;
+    margin: 0px;
+    clear: both;
+    cursor: pointer;
+    border-right: none;
+    border: 0px;
+    outline: none;
+}
+
+article  .pbutton-right {
+    display: inline-block;
+    background: #018d80;
+    width: 33.33333%;
+    height: 40px;
+    border-top-right-radius: 10px;
+    padding: 0px;
+    margin: 0px;
+    clear: both;
+    cursor: pointer;
+    border-right: none;
+    border: 0px;
+    outline: none;
 }
