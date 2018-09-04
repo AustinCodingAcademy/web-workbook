@@ -7,10 +7,10 @@
 body {
   height: 100vh;
   width: 100vw;
-  overflow-x: hidden;
+  overflow: hidden;
   margin: 0;
   font-family: 'Raleway', sans-serif;
-  background-color: #3498DB;
+  background-color: #183A55;
 
   background-image: url('../img/airline.jpg');  
   background-size: cover;
@@ -22,6 +22,11 @@ body {
   width: 80vw;
   height: 100vw;
   margin: 0 auto;
+}
+@media screen and (max-width: 425px) {
+  .container {
+    width: 95vw;
+  }
 }
 
 /*    +=================+
@@ -59,7 +64,6 @@ header {
   margin: 1em;
 }
 .airplane-nav a {
-  font-weight: 900;
   text-decoration: none;
   font-size: .9rem;
   color: #F9F6F1;
@@ -67,6 +71,29 @@ header {
 .airplane-nav a:hover,
 .airplane-nav a:focus {
   color: #37DBD0;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    text-align: center;
+    height: 130px;
+  }
+  .logo {
+    max-width: 75vw;
+    float: none;
+    margin: 0;
+  }
+  .airplane-nav {
+    position: static;
+  }
+}
+@media screen and (max-width: 425px) {
+  .airplane-nav li {
+    margin: .5em;
+  }
+  .airplane-nav a {
+    font-size: .6rem;
+  }
 }
 
 /*    +=================+
@@ -127,4 +154,15 @@ header {
 .form-input-box:hover ,
 .form-input-box:focus {
   border: 2px solid #0063B6;
+}
+
+@media screen and (max-width: 768px) {
+  .form-container {
+    margin: 5em auto;
+  }
+}
+@media screen and (max-width: 425px) {
+  .form-container {
+    width: 100%;
+  }
 }
