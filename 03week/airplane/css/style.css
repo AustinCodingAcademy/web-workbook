@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+* {
+  box-sizing: border-box;
+  transition: all ease-in-out 175ms;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: #3498DB;
+
+  background-image: url('../img/airline.jpg');  
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container {
+  width: 80vw;
+  height: 100vw;
+  margin: 0 auto;
+}
+
+/*    +=================+
+    /   Header        /
+  +=================+ 
+*/
+header {
+  background-color: #183A55;
+  text-align: right;
+  height: 82px;
+  border-bottom: 1px solid #F9F6F1;
+  position: relative;
+}
+.logo {
+  float: left;
+  margin-left: 4.5em;
+  padding: 0;
+}
+.nav-icon {
+  margin-right: 5px;
+}
+.airplane-nav {
+  min-width: 100vw;
+  position: absolute;
+  bottom: 8;
+  right: 80;
+}
+.airplane-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.airplane-nav li {
+  display: inline-block;
+  margin: 1em;
+}
+.airplane-nav a {
+  font-weight: 900;
+  text-decoration: none;
+  font-size: .9rem;
+  color: #F9F6F1;
+}
+.airplane-nav a:hover,
+.airplane-nav a:focus {
+  color: #37DBD0;
+}
+
+/*    +=================+
+    /   Form          /
+  +=================+ 
+*/
+.form-container {
+  width: 25em;
+  height: 375px;
+  margin-top: 4em;
+  background-color: #183A55;
+}
+.form-header {
+  width: 100%;
+  height: 15%;
+  margin-bottom: 2em;
+}
+.form-header ul {
+  margin: 0;
+  padding: 0;
+}
+.form-header-tabs {
+  display: inline-block;
+  list-style: none;
+  background-color: #018D80;
+  padding: .5em 1em;
+  margin: 0;
+  margin-right: -4.5px;
+  width: 33.333333%;
+          /* repeating of course */
+}
+.form-header-tabs img {
+  display: block;
+  margin: 0 auto;
+  width: 35%;
+}
+.form-header-tabs:hover {
+  background-color: #0063B6;
+}
+.form-input-box-container {
+  width: 90%;
+  height: 40%;
+  margin: 0 auto;
+}
+.form-input-box {
+  display: inline-block;
+  background-color: #183A55;
+  border: 2px solid #F9F6F1;
+  color: #F9F6F1;
+  padding: 1em;
+  width: 10em;
+  height: 3em;
+  margin-bottom: 1em;
+}
+.form-input-box:nth-of-type(odd) {
+  margin-right: 2em;
+}
+.form-input-box:hover ,
+.form-input-box:focus {
+  border: 2px solid #0063B6;
+}
