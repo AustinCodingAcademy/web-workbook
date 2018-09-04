@@ -1,31 +1,67 @@
 body, html {
     box-sizing: border-box;
     margin: 0;
+    height: 100%
 }
 
 #wrapper {
     display: grid;
     grid-gap: 1em;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.content1 {
+    background-image: url("back.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid; 
+    grid-column-start: 1;
+    grid-column-end: 7;
+    min-height: 600px;
 }
 
 header {
-    grid-column: span 6;
-    grid-row: span 8;
-    border: solid 1px black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 #logo {
-    width: 200px;
-    height: 120px;  
-    padding: 10px;
+    margin: 10px 10px;
 }
 
-.bgimg {
-    background-image: url("beach.jpg");
+ul {
+    list-style-type: none;
+    margin: 10px;
+    margin-top: 70px;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    color: #7DC246;
+    text-align: center;
+    padding: 14px 10px;
+    padding-right: 2px;
+    text-decoration: none;
+    font-size: 18px;
+    text-shadow: black 1px 1px;
+}
+
+li a:hover {
+    color: #D8DF26;
+}
+
+
+  
 
 
 
