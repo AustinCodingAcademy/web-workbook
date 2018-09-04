@@ -125,6 +125,15 @@ h3 {
   color: rgb(255, 88, 247);
 }
 
+li:nth-child(3)::first-letter {
+  transition: all .2s ease; /* animation */
+  transition-delay: .2s;
+}
+
+.blog:hover li:nth-child(3)::first-letter {
+  color: #ff2aea
+}
+
 /* alt position blog post - picture on left */
 .blogalt{
   background-color: white;
@@ -169,6 +178,10 @@ h3 {
 
 .blogalt:hover h3 {
   color: rgb(255, 88, 247);
+}
+
+.blogalt:hover li:nth-child(3)::first-letter {
+  color: #ff2aea
 }
 
 footer {
