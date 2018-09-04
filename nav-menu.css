@@ -4,11 +4,11 @@
     /   Sidebar       /
   +=================+ 
 */
-.sidebar {
+.nav-menu {
   opacity: 0.15;
   background-color: #303030;
   position: fixed;
-  min-width: 12%;
+  min-width: 100px;
   margin-top: .5em;
   margin-left: .5em;
   z-index: 1;
@@ -17,7 +17,7 @@
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
 }
-.sidebar:hover {
+.nav-menu:hover {
   opacity: 1;
   box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
 }
@@ -27,6 +27,10 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0 .25em;
+  color: #E0E0E0;
 }
 .nav ul {
   margin: 0;
@@ -34,14 +38,7 @@
   list-style: none;
   overflow: hidden;
 }
-.nav-btn{
-  text-decoration: none;
-  font-size: 1.2rem;
-  padding-left: .25em;
-  color: #E0E0E0;
-}
 .nav-btn:hover {
-  font-size:1.4rem;
   color: #606060;
   background-color: #E0E0E0;
   box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
