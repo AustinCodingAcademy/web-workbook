@@ -6,18 +6,31 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous">
+        </script>
     <script src="js/script.js"></script>
 </head>
     <body>
         <h1>Shopping Cart</h1>
-        
-        <input type="text" name="item" id="itemEntry" placeholder="Give me text"><button type="button" onclick="addToCart()">Add Item to Cart</button>
-
-        <ul class="cart">
-            <li class="cartItem">All-New Fire 7 Tablet</li>
-            <li class="cartItem">Flash Furniture Yellow Metal Indoor-Outdoor Chair with Arms</li>
-            <li class="cartItem">Amazon Echo</li>
-            <li class="cartItem">Coleman Lay Z Spa Inflatable Hot Tub</li>
+        <div id="search">
+            <input type="text" name="item" id="itemEntry" placeholder="Search">
+            <button type="button" id="addButton" onclick="addToCart()">Add Item to Cart</button>
+            <button type="button" id="removeButton" onclick="removeFromCart()">Remove Last Item from Cart</button>
+        </div>
+        <ul id="cart">
+            <li class="cartItem">All-New Fire 7 Tablet
+                <img src="https://images-na.ssl-images-amazon.com/images/I/61C0A2KC%2BfL._SL1000_.jpg" class="prodImg" alt="Fire 7 Tablet" />
+            </li>
+            <li class="cartItem">Flash Furniture Yellow Metal Indoor-Outdoor Chair with Arms
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81HqIZzIBnL._SL1500_.jpg" class="prodImg" alt="Flash Furniture Yellow Metal Indoor-Outdoor Chair with Arms" />
+            </li>
+            <li class="cartItem">Amazon Echo
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71vhCaHhHTL._SL1000_.jpg" class="prodImg" alt="Amazon Echo" />
+            </li>
+            <li class="cartItem">Coleman Lay Z Spa Inflatable Hot Tub<img src="https://images-na.ssl-images-amazon.com/images/I/71hU7lm28eL._SL1500_.jpg" class="prodImg" alt="Coleman Lay Z Spa Inflatable Hot Tub" /></li>
         </ul>
 
         <div id="div">
