@@ -1,65 +1,105 @@
-body {
+#wrapper {
+    margin-top: 0;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr,1fr, 1fr, 1fr;
+    border: solid black 1px;
+    grid-template-rows: 200px;
+    width: auto;
+    margin-left: 0%;
     background:
     linear-gradient(red, transparent),
     linear-gradient(to top left, lime, transparent),
     linear-gradient(to top right, blue, transparent);
-background-blend-mode: screen;
+    background-blend-mode: screen;
+    align-content: space-around;
     }
-/* Above is the background special effect I was trying to implement but still not working. */
-  
-#wrapper {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-areas: 1fr,1fr, 1fr, 1fr;
-    width: 98%;
-    height: auto;
-    margin-left: 1%;
-    }
+/* Above is the background special effect I was trying to implement but still not working. */ 
     
-header {
+#header {
     grid-column: span 4;
     text-align: center;
+    background: #0ff0f0;
+    padding: 50px 0;
+    margin-bottom: 30px;
     }
+
+.header:hoover  { 
+    height: 50px;
+    width: 150px;
+    background-color: #f1c40f ;
+    transition: background-color 2s;
+  }
     
-#tablet, #mobile{
+#Desktop, #tablet, #mobile{
     display: none;
     }
-article{
-        background-color: rgb(230, 230, 230);
-        height: 200px;
-        /* grid-column: span 1; */
-        border: solid black 1px;
-        padding: 1em;
-      
-        
-        }
-        
-.One, .Two, .Three, .Four, .Five, .Six, .Seven {
-        grid-column: span 2;
-        height: 200px;
-        }       
-
-h1, h2, h3, h4 {
-    margin-top: 0;
-}
-h1, .h1 {
+   
+#contact {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
     font-size: 36px;
 }
-h1, .h1, h2, .h2, h3, .h3 {
+#About {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 36px;
+}
+#Profiles {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 36px;
+}
+#Education {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 36px;
+}
+#Work {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 36px;
+}
+#Projects {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 36px;
+}
+#Hobbies {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 36px;
+    align-items: center;
+}
+.Box {
+        grid-column: span 4;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        margin: 5px;
+        /* border: solid black 1px; */
+        }       
+h2, h3, h4, h5, h6, h7, h8, h9, h11, h12, h13, .h2, .h3, .h4, .h5, .h6, .h7, .h8, .h9, .h10, .h11, .h12, .h13 {
+    font-size: 36px;
     margin-top: 20px;
     margin-bottom: 10px;
-}
-h1, h2, {
+    font-size: 36px;
     font-family: inherit;
     font-weight: 500;
     line-height: 1.1;
     color: inherit;
-}
-h1, h2 {
     margin: .67em 0;
-    font-size: 2em; 
+    font-size: 1.5em; 
     align-items: right;
-    /* border: 12px solid gold;  */
   
 }
 * {
@@ -68,7 +108,7 @@ h1, h2 {
     box-sizing: border-box;
 }
 h2 {
-    display: block;
+    /* display: block; */
     font-size: 2em;
     -webkit-margin-before: 0.67em; 
     -webkit-margin-after: 0.67em;
@@ -76,137 +116,98 @@ h2 {
     -webkit-margin-end: 0px;
     font-weight: bold;
 }
-body {
-    background: #fff;
+.h3 {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    margin: .67em 0;
+    font-size: 2em;  
+}
+p {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+ body {
+     /* display: flex; */
     font-family: sans-serif;
     margin: 0 0 80px;
-}
-a {
-    color:   rgb(43, 28, 42);
-}
-a:focus,
-a:hover {
-    color: #f1440f;
-    text-decoration:none;
-}
-p{
-    line-height: 1.5;
-    margin: 0;
-}
-p + p {
-    margin-top:10px;
-}
-h1,
-h2,
-h3,
-h4 {
-    margin-top: 0
-    }
-    section {
-        margin-top: 30px;
-    }
-    li {
-        line-height: 1.8;
-        list-style: none;
-    }
-    li:before {
-        content: "\f052";
-        float: left;
-        font: 13px Octicons;
-        margin-top: 6px;
-        margin-left: -20px;
-        position: absolute;
-    }
-    blockquote {
-        border-left: 5px solid #e7e9ec;
-        font-size: 14px;
-    }
-    em {
-        color: #95a5a6;
-        font-weight: normal;
-        font-style: normal;
-    }
-    h4 span:first-child {
-        color: #000;
-        font-weight: bold;
-    }
-    .container {
-        max-width: 750px;
-        padding: 0 30px;
-    }
-    #header {
-        background: #f4f6f6;
-        padding: 50px 0;
-        margin-bottom: 30px;
-    }
+} 
     #header h2 {
         color: #95a5a6;
         font-size: 24px;
     }
-    #content h3 {
+#contact:hover {
         color: #f1c40f;
-        font-size: 26px;
+        font-size: 36px;
         margin-top: -4px;
-    }
-    #content aside {
-        text-align: right;
+        grid-column: span 0;
         padding-right: 30px;
     }
-    #profiles .network {
-        text-transform: capitalize;
-    }
-    #work .position,
-    #volunteer .position {
-        font-weight: bold;
-        margin-bottom: 8px;
-    }
-    #education .area {
-        font-weight: bold;
-    }
-    #education .area:before {
-        content: "\f0d7";
-        font: 16px Octicons;
-        margin-right: 6px;
-    }
-    #education .studyType {
-        margin-left: 25px;
-    }
-    #awards .summary,
-    #publications .summary {
-        margin-top: 8px;
-    }
-    #publications .website a:before {
-        content: attr(href);
-    }
-    
-    @media (min-width:768px) and (max-width:1024px) {
-  
+#About:hover {
+    color: #f1c40f;
+    font-size: 36px;
+    margin-top: -4px;
+    grid-column: span 0;
+    padding-right: 30px;
+    } 
+#Profiles:hover {
+    color: #f1c40f;
+    font-size: 36px;
+    margin-top: -4px;
+    grid-column: span 0;
+    padding-right: 30px;
+        }    
+ #Education:hover {
+    color: #f1c40f;
+    font-size: 36px;
+    margin-top: -4px;
+    grid-column: span 0;
+    padding-right: 30px;
+} 
+ #Work:hover {
+    color: #f1c40f;
+    font-size: 36px;
+    margin-top: -4px;
+    grid-column: span 0;
+    padding-right: 30px;
+} 
+#Projects:hover {
+    color: #f1c40f;
+    font-size: 36px;
+    margin-top: -4px;
+    grid-column: span 0;
+    padding-right: 30px;
+}  
+#Hobbies:hover {
+    color: #f1c40f;
+    font-size: 36px;
+    margin-top: -4px;
+    grid-column: span 0;
+    padding-right: 30px;
+}      
+    @media (min-width:150px) and (max-width:1024px) {
         #wrapper{ 
-        
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         } 
         header{
-        
         grid-column: span 2;
-        }
-        
-        .dTwo{
+        }         
+        .Box{
         
         grid-column: span 1;
         }
         
-        .tTwo{
-        
-        grid-column: span 2;
-        }
-        
-        #desktop, #mobile{
-        
+        #desktop, #mobile{ 
         display: none;
         }
         
         #tablet{
-        display: inline;
+        display: none;
         }
       }
         
