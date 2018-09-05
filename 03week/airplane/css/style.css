@@ -66,7 +66,8 @@ body {
 }
 
 article {
-    border: 1px solid black;
+    background: #193a55;
+    /* border: 1px solid black; */
     position: absolute;
     top: 170px;
     left: 70px;
@@ -99,10 +100,10 @@ input[type="button"]
 .btn-group {
     width: 100%;
     float: left;
-    border: 5px solid black;
+    /* border: 1px solid black; */
     margin: 0px;
     padding: 0px;
-    height: 60px;
+    height: 43px;
     overflow:hidden;
 }
 
@@ -159,4 +160,142 @@ article  .pbutton-right {
     border-right: none;
     border: 0px;
     outline: none;
+}
+
+.textinputs {
+    display: inline-block;
+    background: #193a55;
+    border: 2px solid white;
+    padding: 10px;
+    width: 160px;
+    margin-right: 13px;
+    margin-left: 20px;
+    margin-top: 30px;
+    color: grey;
+    border-radius: 5px;
+}
+
+.dateinputs {
+    display: inline-block;
+    background: #193a55;
+    border: 2px solid white;
+    padding: 10px;
+    width: 160px;
+    margin-right: 13px;
+    margin-left: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.numberinputdiv {
+    display: inline-block;
+    width: 50%;
+    /* border: 1px solid white; */
+}
+
+.custom-select p {
+    color: white;
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom:20px;
+}
+
+.numberinputdiv select {
+    display: inline-block;
+    background-color: #193a55;
+    /* border: 2px solid white; */
+    padding: 50px;
+    margin: 0px;
+}
+
+.radiodiv {
+    margin-top: 0px;
+    display: inline-block;
+    width: 50%;
+    /* border: 1px solid white; */
+    overflow: hidden;
+}
+
+.custom-select {
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    font-family: Arial;
+    /* border: 1px solid white; */
+    padding:
+  }
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+    
+  }
+  .select-selected {
+    display: inline-block;
+    background-color: #193a55;
+    width: 40px;
+  }
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  /*style items (options):*/
+  .select-items {
+    position: absolute;
+    background-color: #193a55;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+.radioclass {
+    display: inline-block;
+    margin: 5px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+  }
+
+form {
+    color: white;
+}
+
+article > .searchflights {
+    font-size: 15px;
+    background-color: #0063b7;
+    color: white;
+    width: 90%;
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: 5px;
 }
