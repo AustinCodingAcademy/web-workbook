@@ -69,7 +69,7 @@ header .airplane-nav a {
 }
 header .airplane-nav a:hover,
 header .airplane-nav a:focus {
-  color: #37DBD0;
+  color: #018D80;
 }
 
 @media screen and (max-width: 1024px) {
@@ -116,6 +116,7 @@ header .airplane-nav a:focus {
   height: 375px;
   margin-top: 4em;
   background-color: #183A55;
+  border-radius: 5px;
 }
 
 /* Form Header */
@@ -124,11 +125,11 @@ header .airplane-nav a:focus {
   height: 15%;
   margin-bottom: 2em;
 }
-.form-header ul {
+.form-header-tabs {
   margin: 0;
   padding: 0;
 }
-.form-header-tabs {
+.form-header-tab {
   display: inline-block;
   list-style: none;
   background-color: #018D80;
@@ -137,12 +138,22 @@ header .airplane-nav a:focus {
   margin-right: -4.5px;
   width: 33.333333%;  /* repeating of course */
 }
-.form-header-tabs img {
+.form-header-tab.left {
+  border-top-left-radius: 5px;
+}
+.form-header-tab.middle {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.form-header-tab.right {
+  border-top-right-radius: 5px;
+}
+.form-header-tab img {
   display: block;
   margin: 0 auto;
   width: 35%;
 }
-.form-header-tabs:hover {
+.form-header-tab:hover {
   background-color: #0063B6;
 }
 
@@ -156,6 +167,7 @@ header .airplane-nav a:focus {
   display: inline-block;
   background-color: #183A55;
   border: 2px solid #F9F6F1;
+  border-radius: 5px;
   color: #F9F6F1;
   padding: 1em;
   width: 10em;
@@ -196,7 +208,14 @@ header .airplane-nav a:focus {
   background: #183A55;
   color: #F9F6F1;
   border: 2px solid #F9F6F1;
+  border-radius: 5px;
   padding: .75em;
+}
+.form-passenger-cnt:hover {
+  border: 2px solid #0063B6;
+}
+.form-passenger-cnt-select {
+  
 }
 .form-btn {
   background-color: #0063B6;
@@ -205,6 +224,10 @@ header .airplane-nav a:focus {
   width: 100%;
   padding: 1em;
   margin-top: 1em;
+  border-radius: 5px;
+}
+.form-btn:hover {
+  background-color: #018D80;
 }
 
 @media screen and (max-width: 768px) {
