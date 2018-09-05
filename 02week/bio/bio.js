@@ -15,8 +15,7 @@ function toTheTop() {
 }
 
 function lockHover(_passedValue) {
-    console.log("passedValue = " + _passedValue);
-    document.getElementById("textChange1").style.display = "inline-block";
+    document.getElementById(_passedValue).style.display = "inline-block";
 }   
 
 function lockLeave(_passedValue) {
@@ -24,63 +23,27 @@ function lockLeave(_passedValue) {
 }  
 
 function lockUnlock(articleId){
-    var grabLockPictureDiv = ("changeLock" + articleId)
-    var getTxtChangeId = ("textchange"+ articleId)
-    var getLockStatus = document.getElementById(getTxtChangeId).innerhtml
-    if(getLockStatus && getLockStatus === "lock"){
-        getLockStatus = "Unlock";
-        make("img", {id})
-        //document.getElementById(grabLockPictureDiv).innerHTML = '<img src = "./pics/locked.png" class = "lockImg" onclick = "lockUnlock(articleId)" onmouseover="lockHover(getTxtChangeId)" onmouseout="lockLeave(getTxtChangeId)">'
-        var newlock = make("img", { id: "a"+ articleId, classList: ["lockImg"], attr: {"value": './pics/unlocked.png'}});
-        
-    }
+    var getLockStatus = document.getElementById("textChange"+ articleId).innerHTML
+
+    if(getLockStatus === "lock")
+  {
+      document.getElementById("a"+articleId).style.background = "rgba(65, 63, 63, 1)";
+      document.getElementById("textChange"+ articleId).innerHTML = "Unlock";
+      document.getElementById("changeLock"+ articleId).innerHTML = '<img src = "./pics/locked.png" class = "lockImg" id="change">';
+      document.getElementById("change").id = ("change"+articleId);
+      document.getElementById("change"+articleId).addEventListener("click", function(){ lockUnlock(articleId); }, true);
+      document.getElementById("change"+articleId).addEventListener("mouseover", function(){ lockHover('textChange'+articleId); }, true);
+      document.getElementById("change"+articleId).addEventListener("mouseout", function(){ lockLeave('textChange'+articleId); }, true);
+  }
    else
-   {
-    getLockStatus = "lock";
-   // document.getElementById(grabLockPictureDiv).innerHTML = '<img src = "./pics/locked.png" class = "lockImg" onclick = "lockUnlock(articleId)" onmouseover="lockHover(getTxtChangeId)" onmouseout="lockLeave(getTxtChangeId)">'
-   }
+  {
+    document.getElementById("a"+articleId).style.background = "";
+    document.getElementById("textChange"+ articleId).innerHTML = "lock";
+    document.getElementById("changeLock"+ articleId).innerHTML = '<img src = "./pics/unlocked.png" class = "lockImg" id="change">';
+    document.getElementById("change").id = ("change"+articleId);
+    document.getElementById("change"+articleId).addEventListener("click", function(){ lockUnlock(articleId); }, true);
+    document.getElementById("change"+articleId).addEventListener("mouseover", function(){ lockHover('textChange'+articleId); }, true);
+    document.getElementById("change"+articleId).addEventListener("mouseout", function(){ lockLeave('textChange'+articleId); }, true);
+  }
 
 }
-
-//Example: make("input", { id: 'example', classList: ["button"], attr: {  "type": "button", "value": 'test', "onclick": "function();" }});
-function make(tag_name, opt) {
-    var ele = document.createElement(tag_name);
-    if (!opt) {
-      return ele;
-    }
-    opt = opt || {};
-    opt.classList = opt.classList || [];
-    opt.attr = opt.attr || {};
-  
-    opt.classList.forEach(function(v) {
-      ele.classList.add(v);
-    });
-    if (opt.text) {
-      ele.textContent = opt.text;
-    }
-    if (opt.html) {
-      ele.innerHTML = opt.html;
-    }
-    if (opt.id) {
-      ele.id = opt.id;
-    }
-    if (opt.value) {
-      ele.value = opt.value;
-    }
-    for (var k in opt.attr) {
-      if (opt.attr.hasOwnProperty(k)) {
-        ele.setAttribute(k, opt.attr[k]);
-      }
-    }
-    if (opt.append) {
-      ele.appendChild(opt.append);
-    }
-    if (opt.appendTo) {
-      if (typeof opt.appendTo === 'string') {
-        opt.appendTo = document.getElementById(opt.appendTo);
-      }
-      opt.appendTo.appendChild(ele);
-    }
-  
-    return ele;
-  }
