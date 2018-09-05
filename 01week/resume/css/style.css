@@ -1,3 +1,7 @@
+header {
+  padding: 25px;
+  color: whitesmoke
+}
 body {
     background-image: url("../notebook_adjusted.jpg");
     background-color: black;
@@ -16,10 +20,15 @@ Nav {
     }
     /* Gradient transparent - color - transparent */
 
-hr.style-two {
+hr.blackfade {
     border: 0;
     height: 2px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+hr.whitefade {
+  border: 0px;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(249, 249, 249, .25), rgba(249, 249, 249, 0.75), rgba(249, 249, 249, .25))
 }
 
   h2{
@@ -43,7 +52,6 @@ hr.style-two {
     float: right;
     Padding: 15px;
     background-color:rgba(255, 255, 255, 0.64);
-    filter: alpha(opacity=60);
     margin-right: 5%;
     margin-top: 10px;
     width: 42%;
@@ -53,12 +61,22 @@ hr.style-two {
     float: left;
     Padding: 15px;
     background-color:rgba(255, 255, 255, 0.64);
-    filter: alpha(opacity=60);
     Margin-left: 5%;
     margin-top: 10px;
     width: 42%;
     
   }
+  div.homepage {
+    margin: auto;
+    text-align: center;
+    float: center;
+    width: 40%;
+    padding: 15px;
+    margin-top: 20%;
+    Margin-bottom: 25%;
+    background-color: black;
+  }
+
   div.child {
   opacity: 1;
   filter: alpha(opacity=100);
@@ -73,11 +91,8 @@ footer {
   color: rgb(219, 213, 213);
   bottom: 0;
   width: 100%;
- }
- .test {
-   background-color: yellow;
-   text-decoration-color: white
- }
+}
+   
  a:hover { 
   background-color: teal;
 }
