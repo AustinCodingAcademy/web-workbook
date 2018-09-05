@@ -25,6 +25,7 @@
     </nav>
   </div>
 
+  <!-- Header -->
   <header>
     <div class="container">
       <img class="logo" src="img/logo.png">
@@ -39,8 +40,11 @@
     </div>
   </header>
 
+  <!-- Form -->
   <div class="container">
     <div class="form-main">
+      
+      <!-- Form Tabs -->
       <div class="form-header">
         <ul>
           <a href=""><li class="form-header-tabs"><img src="img/plane-icon.png"></li></a>
@@ -48,11 +52,33 @@
           <a href=""><li class="form-header-tabs"><img src="img/car-icon.png"></li></a>
         </ul>
       </div>
-      <div class="form-input-boxes">
+
+      <!-- Form Top Half -->
+      <div class="form-top-half">
         <input class="form-input-box" type="text" placeholder="Depart">
         <input class="form-input-box" type="text" placeholder="Arrive">
         <input class="form-input-box" type="text" placeholder="mm/dd/yyyy">
         <input class="form-input-box" type="text" placeholder="mm/dd/yyyy">
+      </div>
+
+      <!-- Form Bottom Half -->
+      <div class="form-bottom-half">
+        <ul>
+          <li><p>Passengers</p></li>
+          <li>
+            <select class="form-passenger-cnt">  
+              <option value="1">1</option>
+            </select>
+          </li>
+          <li>
+            <input type="radio" name="return" value="return"> Return
+          </li>
+          <li>
+            <input type="radio" name="one-way" value="one-way"> One Way
+          </li>
+        </ul>
+
+        <button class="form-btn">Search Flights</button>
       </div>
     </div>
   </div>
