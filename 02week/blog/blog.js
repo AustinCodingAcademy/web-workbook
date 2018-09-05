@@ -50,4 +50,4 @@ height: 100px;
 margin-top:10px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 background-color: rgba(11, 227, 255,0.6);
-overflow: hidden; . */
+overflow: hidden;  */
