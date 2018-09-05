@@ -47,26 +47,23 @@ body {
     display: grid;
     grid-gap: 1em;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-areas:
-        "header header header header header header"
-        "pic pic info info info info"
-        "pic pic info info info info"
-        "foot foot foot foot foot foot";
 }
 
 #about {
-    grid-area: header;
+    grid-column: span 6;
     /* background-color: red; */
 }
 
 #propic {
-    grid-area: pic;
+    grid-column: span 2;
+    grid-row: span 2;
     height: 350px;
     border-radius: 50%;
 }
 
 #info {
-    grid-area: info;
+    grid-column: span 4;
+    grid-row: span 2;
     font-size: 20px;
     /* background-color: blue; */
     display: flex;
@@ -76,7 +73,7 @@ body {
 }
 
 #aboutfoot {
-    grid-area: foot;
+    grid-column: span 6;
 }
 
 .projects {
@@ -221,8 +218,8 @@ body {
 }
 
 
-grid-template-columns: minmax (300px, 1fr)
+/* grid-template-columns: minmax (300px, 1fr)
 
 grid 1fr 1fr for mobile
 
-set grid size
+set grid size */
