@@ -10,11 +10,11 @@
   <body>
     <header>
         <div class="logo">
-            <img src="./img/logo.png" />
+            <img src="img/logo.png" />
         </div>          
         <nav>
             <ul>
-                <li><img src="./img/home-icon.png" />Home</a></li>
+                <li><img src="./img/home-icon.png" />Home</li>
                 <li><img src="./img/plane-icon.png" />Travel Deals</li>
                 <li><img src="./img/schedule-icon.png" />Flight Schedule</li>
                 <li><img src="./img/login-icon.png" />Register/Login</li>
@@ -24,9 +24,11 @@
     <main>
         <div class="trip-box">
             <div class="trip-type-box">
-                <div id="plane"><img src="./img/plane-icon.png" /></div>
-                <div id="hotel"><img src="./img/hotel-icon.png" /></div>
-                <div id="car"><img src="./img/car-icon.png" /></div>
+                <ul>
+                    <li id="plane"><img src="./img/plane-icon.png" /></li>
+                    <li id="hotel"><img src="./img/hotel-icon.png" /></li>
+                    <li id="car"><img src="./img/car-icon.png" /></li>
+                </ul>
             </div>
             <div class="info=boxes">
                 <input type="text" class="depart-field" placeholder="Depart" />
@@ -43,6 +45,11 @@
                         <option value="5">5</option>
                     </select>
                 </div>
+                <div class="ticket-type">
+                    <input type="radio" id="return" name="return" ><label for="return">Return</label>
+                    <input type="radio" id="oneway" name="oneway" ><label for="oneway">One Way</label>
+                </div>
+                <input type="button" id="search"  class="search-flights-button" value="Search Flights"/>
             </div>
         </div>
     </main>
