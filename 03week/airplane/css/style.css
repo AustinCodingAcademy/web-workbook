@@ -2,6 +2,7 @@
 body {background-color: rgb(89, 216, 216);
     font-family: 'Anton', sans-serif;
     font-family: 'Mukta', sans-serif;
+    font-size: 14px;
   background: url(../img/airline.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -57,7 +58,8 @@ img{
     width: 400px;
     height: 380px;
     /* position: absolute; */
-    margin: 10% 60% 50% 10%;
+    margin: 10% 50% 50% 10%;
+    /* border: 1px solid hotpink; */
     border-radius:5px;
 }
 
@@ -65,13 +67,6 @@ img{
     display: flex;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-/* width:auto; */
-/* height:fit-content; */
-/* display: block;
-text-align: center;
-margin: 10px; */
-
-
 
 }
 
@@ -80,8 +75,8 @@ margin: 10px; */
     flex-wrap: wrap;
     background-color: #0063b7;
     box-sizing: content-box;
+    border:none;
     width: calc(100% / 3);
-    border: none;
     color: white;
     margin-bottom:10px;
     /* padding: 2px 30px; */
@@ -92,7 +87,8 @@ margin: 10px; */
     font-size: 16px;
 }
 
-.first {border-top-left-radius: 5px;
+.first {
+    border-top-left-radius: 5px;
 }
 
 .middle {
@@ -108,33 +104,67 @@ background-color: #018d80}
 }
 
 
-    input[type="text"], textarea {
-
+    input[type="text"], text area {
+        height:40px;
+width:160px;
         background-color : #123754; 
         border-radius: 5px;
       
       }
 
 .fields {
-    display:flex;
+    display: inline-block;
+    /* border:1px solid green; */
     flex-direction: row;
-    width: 175px;
-  height:40px;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    width: 36%;
+    object-fit: contain;
+  height:30px;
   padding: 25px;
 
 }
 
-.lowbox { 
-    display:flex;
-    flex-direction: row;
-    width: calc(100% / 3);
-  height:40px;
-  margin: 0px;
-    padding-left: 5%;
+.fields2 {
+    display: inline-block;
+    /* border:1px solid green; */
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: auto; */
+    width: 36%;
+    object-fit: contain;
+  height:30px;
+  padding: 25px;
 
 }
 
-p {
-color:white;}
+/* .lowbox { border: 1px solid darkmagenta;
+    display: inline-block;
+    width: 36%;
+    object-fit: contain;
+  height:20px;
+    padding: 25px;
 
+} */
+
+finalsearch {
+display:flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+margin-bottom: 40px;
+}
+
+.search {
+    background-color: #0063b7; /* Green */
+    border: none;
+    color: white;
+    box-sizing: content-box;
+    width:100%;
+    padding: 15px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
  
