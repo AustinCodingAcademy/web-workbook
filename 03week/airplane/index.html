@@ -6,6 +6,7 @@
     <meta http-equiv="content-type" content="text/html" />
     <title>Project Demo</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -14,7 +15,7 @@
         </div>          
         <nav>
             <ul>
-                <li><img src="./img/home-icon.png" />Home</li>
+                <li id="home"><img src="./img/home-icon.png" />Home</li>
                 <li><img src="./img/plane-icon.png" />Travel Deals</li>
                 <li><img src="./img/schedule-icon.png" />Flight Schedule</li>
                 <li><img src="./img/login-icon.png" />Register/Login</li>
@@ -30,14 +31,16 @@
                     <li id="car"><img src="./img/car-icon.png" /></li>
                 </ul>
             </div>
-            <div class="info=boxes">
-                <input type="text" class="depart-field" placeholder="Depart" />
-                <input type="text" class="arrive-field" placeholder="Arrive" />
-                <input type="text" class="depart-date" placeholder="mm/dd/yyyy" />
-                <input type="text" class="arrive-date" placeholder="mm/dd/yyyy" />
+            <div>
+                <div class="departarrive-boxes">
+                        <input type="text" id="depart" class="input-boxes departarrive-fields bold font16" placeholder="Depart" />
+                        <input type="text" id="arrive" class="input-boxes departarrive-fields bold font16" placeholder="Arrive" />
+                        <input type="text" id="departdate" class="input-boxes departarrive-fields bold font16 datefields" placeholder="mm/dd/yyyy" />
+                        <input type="text" id="arrivedate" class="input-boxes departarrive-fields bold font16 datefields" placeholder="mm/dd/yyyy" />
+                </div>              
                 <div class="passengers-field">
-                    <p>Passengers</p>
-                    <select>
+                    <p class="bold font16">Passengers</p>
+                    <select class="input-boxes bold">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -45,11 +48,11 @@
                         <option value="5">5</option>
                     </select>
                 </div>
-                <div class="ticket-type">
-                    <input type="radio" id="return" name="return" ><label for="return">Return</label>
-                    <input type="radio" id="oneway" name="oneway" ><label for="oneway">One Way</label>
+                <div class="ticket-type bold font16">
+                    <input type="radio" id="return" name="trip" value="return" checked><label for="return">Return</label>
+                    <input type="radio" id="oneway" name="trip" value="oneway" ><label for="oneway">One Way</label>
                 </div>
-                <input type="button" id="search"  class="search-flights-button" value="Search Flights"/>
+                <input type="button" id="search"  class="search-flights-button bold font16" value="Search Flights"/>
             </div>
         </div>
     </main>
