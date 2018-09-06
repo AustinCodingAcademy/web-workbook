@@ -56,34 +56,31 @@ form {
   border-radius: 6px;
   padding: 0;
   border: 0;
+  color: white;
 }
 
-input[type=radio] {
-  position: absolute;
-  visibility: hidden;
-  display: none;
+.radio-group img {
+  margin-top: 8px;
+  width: 50%;
+  background-color: rgb(11,141,128);
 }
-  
-label {
-  color: lighten(40%);
+
+.radio-group img:first-child {
+  background-color: rgb(2,99,179);
+}
+
+.button {
   display: inline-block;
-  cursor: pointer;
-  font-weight: bold;
-  padding: 5px 20px;
+  padding-left: 17%;
+  background-color: rgb(11,141,128);
+  border: 0;
 }
-  
-input[type=radio]:checked + label{
-  color: lighten(60%);
-  background: $fg;
-}
-  
-label + input[type=radio] + label {
-  border-left: solid $borderWidth $fg;
-}
-.radio-group {
-  border: solid $borderWidth $fg;
+
+.textinput {
   display: inline-block;
-  margin: 20px;
-  border-radius: 10px;
-  overflow: hidden;
+}
+
+.searchflights {
+  background-color: rgb(2,99,179);
+  width: 80%;
 }
