@@ -47,69 +47,43 @@ header {
   float: right;
 }
 
-.searchbox {
+form {
   background-color: rgb(19,55,83);
   width: 330px;
   height: 220px;
   margin-top: 70px;
   margin-left: 60px;
   border-radius: 6px;
-}
-
-
-/* Customize the label (the container) */
-
-.radiobuttons {
-  background-color: rgb(11,141,128);
-  border-radius: 4px 4px 2px 2px;
+  padding: 0;
   border: 0;
-  display: inline-block;
-  position: relative;
-  width: 110px;
-  height: 40px;
-  padding-left: 0;
-  margin-bottom: 0;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
-/* Hide the browser's default radio button */
-.radiobuttons input {
+input[type=radio] {
   position: absolute;
-  opacity: 0;
-}
-
-/* Create a custom radio button */
-
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-  border-radius: 50%;
-}
-
-/* When the radio button is checked, add a blue background */
-
-.radiobuttons input:checked ~ .checkmark {
-  background-color: #2196F3;
-}
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-
-.checkmark:after {
-  content: "";
-  position: absolute;
+  visibility: hidden;
   display: none;
 }
-
-/* Show the indicator (dot/circle) when checked */
-.radiobuttons input:checked ~ .checkmark:after {
-  display: block;
+  
+label {
+  color: lighten(40%);
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 20px;
 }
-
+  
+input[type=radio]:checked + label{
+  color: lighten(60%);
+  background: $fg;
+}
+  
+label + input[type=radio] + label {
+  border-left: solid $borderWidth $fg;
+}
+.radio-group {
+  border: solid $borderWidth $fg;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
