@@ -8,81 +8,88 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
   </head>
+
 <body>
 <link rel="stylesheet" href="../airplane/css/style.css">
-
-    <header>
-        <h1></h1>
+        
+    <Header>
         <div class="logo">
-            <a href="#logo"><img src="../airplane/img/logo.png" alt="logo"></a>
+        <img alt="site logo" src="../airplane/img/logo.png">
         </div>
+        <div class="links">
             <ul>
                 <li class="active"><img alt="home icon" src="../airplane/img/home-icon.png">Home</li>
-                <li><img alt="deal icon" src="../airplane/img/deal-icon.png" alt="deal">Travel Deals</li>
+                <li><img alt="deal icon" src="../airplane/img/deal-icon.png">Travel Deals</li>
                 <li><img alt="schedule icon" src="../airplane/img/schedule-icon.png">Flight Schedule</li>
                 <li><img alt="login icon" src="../airplane/img/login-icon.png">Register/Login</li>
               </ul>
-
-        </header>
-        <!--<div>
-            <!--<a href="#logo"><img src="../airplane/img/logo.png" alt="logo"></a>
-            <a href="#Home"><img src="../airplane/img/home-icon.png" alt="home">Home</a>
-            <a href="#Deal"><img src="../airplane/img/deal-icon.png" alt="deal">Travel Deals</a>
-            <a href="#Schedule"><img src="../airplane/img/schedule-icon.png" alt="schedule">Flight Schedule</a>
-            <a href="#Registar/Login"><img src="../airplane/img/login-icon.png" alt="login">Registar/Login</a>
-            </div> -->
-    
+        </div>
+          
     </header>
     
     <main>
-        <img src="../airplane/img/airline.jpg" alt="airline">
-
-        <article>
-
-            <div class="block first">
-                <div class="content">
-                        <div>
-                            <button><img src="../airplane/img/plane-icon.png" alt="plane"></button>
-                            <button><img src="../airplane/img/hotel-icon.png" alt="hotel"></button>
-                            <button><img src="../airplane/img/car-icon.png" alt="car"></button>
-                        </div>
-                        <div>
-                            <input type="Depart" class="depart-field" placeholder="Depart">
-                            <input type="Arrive" class="arrive-field" placeholder="Arrive">
-                        </div>
-                        <div>
-                            <input type="date" name="Departdate" id="Departdate">
-                            <input type="date" name="Arrivedate" id="Arrivedate">
-                        </div>
-                        <div>
-                            Passengers   <input type="number"  id="a" name="a" value="10">
-                            <input type="radio" name="Return" value="Return"> Return
-                            <input type="radio" name="one Way" value="One Way"> One Way
-                        </div>
-                            <button>Search Flights</button>
+        <section>
+            
+            <div class="tabs">
+                <div class="tab1">
+                        <a href="#flight" ><img src="../airplane/img/plane-icon.png" alt="" ></a>
+                   </div>
+                <div class="tab2">
+                        <a href="#hotel" ><img src="../airplane/img/hotel-icon.png" alt=""></a>
+                  </div>
+                <div class="tab3">
+                        <a href="#car" ><img src="../airplane/img/car-icon.png" alt=""></a>
+                  </div>
+            </div>
+            
+            <div class="wrapper1">
+            
+                <div>
+                    <input type="text" class="textsize" placeholder="Depart">  
+                  </div>
+            
+                <div>
+                    <input type="text" class="textsize" placeholder="Arrive">
+                  </div>
+            
+            </div>
+            
+            <div class="wrapper2">
+          
+                <div>
+                    <input type="date" class="textsize" name="Departdate" id="Departdate">
+                </div>
+          
+                <div>
+                    <input type="date" class="textsize" name="Arrivedate" id="Arrivedate">
                 </div>
             </div>
-
-            <div>
-                <button><img src="../airplane/img/plane-icon.png" alt="plane"></button>
-                <button><img src="../airplane/img/hotel-icon.png" alt="hotel"></button>
-                <button><img src="../airplane/img/car-icon.png" alt="car"></button>
-            </div>
-            <div>
-                <input type="Depart" class="depart-field" placeholder="Depart">
-                <input type="Arrive" class="arrive-field" placeholder="Arrive">
-            </div>
-            <div>
-                <input type="date" name="Departdate" id="Departdate">
-                <input type="date" name="Arrivedate" id="Arrivedate">
-            </div>
-            <div>
-                Passengers   <input type="number"  id="a" name="a" value="10">
-                <input type="radio" name="Return" value="Return"> Return
-                <input type="radio" name="one Way" value="One Way"> One Way
-            </div>
-            <button>Search Flights</button>
-        </article>
+            
+            <div class="wrapper39">
+                <div class="R1">
+                      
+                    <p> Passengers  <select class="textsize1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
+                        <input type="radio" name="Return" value="Return"> Return
+                        <input type="radio" name="one Way" value="One Way"> One Way
+                        </p>
+                </div>
+                
+                
+                <div class="wrapper4">
+                     <div>
+                        <button>Search Flights</button>
+                    </div>
+                    </div>
+                    
+               
+        </section>
+    
     </main>
     
 </body>

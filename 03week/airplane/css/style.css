@@ -1,89 +1,176 @@
-img {
-    width: 100%;
-    height: auto;
-    }
+@import url('https://fonts.googleapis.com/css?family=Roboto'); /* watch bit.ly/2fn591n */
 
-h1 {
-    scale: 
+
+* {
+  /* the simplest css reset possible, can cause performance issues on very complex HTML Documents */
+  padding: 0;
+  margin: 0;
 }
 
-/*nav {
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    }*/
+html {
+  background: url(../img/airline.jpg) no-repeat center center fixed;
+  background-size: cover;
+  background-color: #1d4356;
+}
 
-.nav a {
-        display: inline-block;
-        color: #03b5a3;
-        /*text-align: center;
-        /*padding: 14px 16px;*/
-        /*text-decoration: none;*/
-        margin: 0;
-        padding: 0;
-        background-color: rgba(11, 35, 168, 0.993);
-        float: center;
-       }
-      
-.nav a:hover {
-            background-color :blue;
-            }
+body {
+	font-family: 'Roboto', sans-serif;
+}
 
-            .block {
-                /*  size of the box  */
-                /*  these are interpreted differently based on the box-sizing rule  */
-                width: 400px;
-                height: 200px;
-                
-                /*  margin  */
-                /*  Space between boxes  */
-                
-                margin-top: 10px;
-                margin-right: 20px;
-                margin-bottom: 30px;
-                margin-left: 40px;
-                
-                /* margin shorthand versions */
-                /* margin: top right bottom left */
-                /* margin: 10px 20px 30px 40px; */
-              
-                /* margin: top left/right bottom */
-                /* margin: 10px    20px    40px; */
-              
-                /* margin: top/bottom left/right */
-                /* margin:   10px       40px;    */
-              
-                /* margin: top/right/bottom/left */
-                /* margin: 40px; */
-              
-              
-                /*  border  */
-                /*  Draws the edge of the box  */
-              
-                border-top: 1px solid black;
-                border-right: 1px solid black;
-                border-bottom: 1px solid black;
-                border-left: 1px solid black;
-                
-                /* border shorthand version */
-                /* This shorthand will apply the same border to all 4 sides */ 
-                /* border: width style color */
-                /* border: 10px solid red; */
-                
-              
-                /*  padding  */
-                /*  Space between the border and the content  */
-              
-                padding-top: 0px;
-                padding-right: 0px;
-                padding-bottom: 0px;
-                padding-left: 0px;
-                
-                /* padding shorthand versions */
-                /* Same as margin!    */
-                
-              }
-              */
+header,
+main {
+  /* the padding and border is calculated into the width and height of the <header> and <main> elements automatically by the browser */
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #193a55;
+  color: #fff;
+  height: 82px;
+  border: 0 solid #fff;
+  border-bottom-width: 1px;
+}
+
+.links ul {
+  list-style: none;
+}
+
+.links ul li {
+  margin: 10px;
+  display: inline;
+}
+
+.active {
+  color: #03b5a3;
+}
+
+.links ul li img {
+  margin-right: 5px;
+}
+
+main {
+  height: calc(100vh - 82px);
+  position: relative;  /* create a coordinate system */
+}
+
+section {
+  width: 542px;
+  height: 386px;
+  background: #193a55;
+  border-radius: 5px;
+  position: absolute;  /* can be positioned in the <main> coordinate system */
+  top: 50px;
+  left: 50px;
+}
+
+.tabs {
+  display: flex;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.tab1,
+.tab2,
+.tab3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 3); /* take up 1 third each */
+  height: 60px;
+  background: #018D80;
+}
+
+a:hover { 
+    background-color: yellow;
+}
+
+.tab1 {
+  background: #0063B7;  /* overrides what was set previously */
+  border-top-left-radius: 5px;
+}
+
+.tab3 {
+  border-top-right-radius: 5px;
+  }
+
+.wrapper1{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  padding-top:50px
+}
+
+.wrapper2 {
+  display:flex;
+  flex-direction:row;
+  padding-bottom:50px;
+  padding-top:20px;
+  justify-content:space-around;
+  
+}
+
+.wrapper3 {
+  display:flex;
+}
+
+.wrapper4 {
+  display:flex;
+  flex-direction:center;
+  padding-bottom:50px;
+  padding-top:20px;
+  justify-content:space-around;
+  
+}
+
+
+
+/*
+.box1, .box2, .box3, .box4 {
+  width: 175px;
+  height:40px;
+  border: 2px solid;
+  border-color:white;
+  border-radius:2px;
+  color:white; 
+}*/
+
+/*.box1 {
+  width:70px;
+  height:40px;
+  border: 2px solid white;
+  color:white;
+  border-radius:2px;
+  margin-left:15px;
+}*/
+
+.textsize {
+    width: 175px; 
+    height: 40px;
+    background: #193a55;
+    color: white;
+    border-color:  white;
+}
+
+p {
+  color:white;
+  padding-left:50px;
+}
+
+.textsize1 {
+  width: 60px; 
+  height: 40px;
+  background: #193a55;
+  color: white;
+  border-color:  white;
+}
+
+.R1 {
+  color:yellow;
+  padding-left:55px;
+
+  
+  }
+
