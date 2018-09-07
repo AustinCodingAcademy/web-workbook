@@ -5,6 +5,7 @@ jobs:
     docker:
     - image: circleci/node:8.9.4
     steps:
+    - checkout
     - restore_cache:
         keys:
         - v2-dep-{{ .Branch }}-
