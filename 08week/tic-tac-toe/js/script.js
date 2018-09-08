@@ -44,6 +44,20 @@ $(document).ready(function() {
     $('#startMessage').text(gameToken + ' goes first!');  // Updates the #startMessage element
   }
 
+  // Playing against the computer
+  // Runs a function that rolls through a 'while' loop and checks for empty divs
+/*   function computerPick() {
+    let cPick = '';
+    while (cPick === '') {
+      if (lis[(Math.floor(Math.random()*9))] === '') {
+        // $(this).text(gameToken);
+        cPick = 'end';
+        console.log(cPick);
+      }
+    }
+  } */
+
+
   // Sets the array that loads and lays out the values in the divs
   let winState = [
     [0,1,2],
@@ -79,7 +93,7 @@ $(document).ready(function() {
           if($(this).text() === ''){
             open++;
           }
-        })
+        });
         if (open === 0) {
           alert("It's a tie!");
           reset();
