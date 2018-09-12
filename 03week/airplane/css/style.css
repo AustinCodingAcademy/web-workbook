@@ -31,11 +31,13 @@ header {
 .header-container ul {
     padding:0;
     margin:0;
+    white-space: nowrap;
 }
 
 .header-container li{
     float: right;
-    display: inline;
+    display: inline-block;
+    white-space: nowrap;
     margin: 0;
     padding-top: 35px;
 }
@@ -47,9 +49,95 @@ header {
 
 .section-container {
     position: absolute;
-    top: 300px;
+    top: 200px;
     left: 200px;
     width: 300px;
-    border: 3px solid white;
+    height: 400px;
+    background:#163657;
 }
+
+/* .section-plane img {
+    display: inline-block;
+} */
+
+.section-plane {
+    width: 90px;
+    height: 50px;
+    background:#075FB9;
+    display: block;
+    float: left;
+}
+
+.section-plane img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 100px;
+    max-height: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    width: 350px;
+    height: 400px;
+    background:#163657;
+}
+
+.grid img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin: auto;
+}
+
+/* .grid div:nth-child(even) {
+    background: yellow;
+}
+
+.grid div:nth-child(odd) {
+    background: blue; */
+}
+
+.plane{
+    background: yellow;
+}
+.hotel {
+    background: red;
+}
+
+.section-car {
+    width: 90px;
+    height: 50px;
+    background:#008F7E;
+    display: block;
+    float: right;
+}
+
+.section-hotel {
+    width: 90px;
+    height: 50px;
+    background:#008F7E;
+    display: block;
+    float: center;
+}
+
+.section-hotel img {
+    display: inline;
+    width: 50%;
+    max-width: 100px;
+
+}
+
+.section-car img {
+    display: inline;
+    width: 50%;
+    max-width: 100px;
+
 }
