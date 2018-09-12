@@ -56,9 +56,19 @@ window.onload=function(){
     var newItem = document.createElement("li");
     newItem.innerHTML = textField;
     document.getElementById("our-list").appendChild(newItem);
-    
+    updateHeaderMessage();
     listHeader();
-    console.log('am i there')
+    console.log('am i there');
+  }
+
+  function deleteItem () {
+    event.preventDefault();
+    var newItem = document.createElement("li");
+    newItem.innerHTML = textField;
+    document.getElementById("our-list").prependChild(newItem);
+    updateHeaderMessage();
+    listHeader();
+    console.log('am i removed')
   }
 
 }
