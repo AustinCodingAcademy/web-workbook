@@ -1,18 +1,64 @@
-div[data-cell] {
-  width: 100px;
-  height: 100px;
-  background-color: #f2f2f2;
-  float: left;
-  border: 1px solid #808080;
-  font-size: 100px;
+header, main, footer {
+  width:300px;
+  margin:auto;
+}
+
+h1 {
   text-align: center;
 }
 
-.row {
-  clear: both;
+ul {
+  height:300px;
+  list-style: none;
+  padding: 0;
 }
 
-#announce-winner {
-  clear: both;
-  font-size: 50px;
+li {
+  width:80px;
+  height:80px;
+  float:left;
+  border: 1px solid black;
+  margin:8px;
+}
+
+#reset {
+  width:98%;
+  height:50px;
+  font-size:24px;
+}
+
+.hover {
+  font-size:72px;
+  text-align:center;
+  background-color:#eee;
+  cursor:pointer;
+}
+
+.X {
+  font-size:72px;
+  text-align:center;
+  color:black;
+  background-color:rgba(0,255,0,.15);
+}
+.O {
+  font-size:72px;
+  text-align:center;
+  color:black;
+  background-color:rgba(255,0,0,.15);
+}
+/* selects the 1st, 4th, and 7th li */
+ul li:nth-child(3n+1) {  
+  border-left:1px solid white;
+}
+/* selects the 3rd, 6th, and 9th li */
+ul li:nth-child(3n+3) {  
+  border-right:1px solid white;
+}
+/* selects the 7th, 8th, and 9th li */
+ul li:nth-child(n+7) {  
+  border-bottom:1px solid white;
+}
+/* selects the 1st, 2nd, and 3rd li */
+ul li:nth-child(-n+3) {  
+  border-top:1px solid white;
 }
