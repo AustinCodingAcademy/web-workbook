@@ -28,11 +28,11 @@
   background-color: transparent;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.2rem;
-  padding: 0 .25em;
+  font-size: 1.1rem;
+  padding: 0 1.25em 0 .25em;
   color: #E0E0E0;
 }
-.nav ul {
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -43,4 +43,19 @@
   background-color: #E0E0E0;
   box-shadow: 0 0 4em 0 rgba(0,0,0,.3);
   cursor: pointer;
+}
+
+.current-page::before,
+.current-page::after {
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 900;
+  color: #e74c3c;
+}
+.current-page::before {
+  content: "\f105";
+  margin-right: 2px;
+}
+.current-page::after {
+  content: "\f104";
+  margin-left: 2px;
 }
