@@ -40,6 +40,9 @@ body {
     background: url('../img/nasa-background.jpg');
     height: 450px;
     width: 850px;
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 425px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,30 +58,37 @@ body {
 
 
 .bottom-container {
+    position: absolute;
+    top: 510px;
+    left: calc(50% - 425px);
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
     height: 324px;
     width: 850px;
-    /* align-items: center; */
-    justify-content: center;
     margin 10px 0;
 }
 
 .social-container {
     background: teal;
-    flex-direction: row;
+
 }
 
 .info-container {
-    background: red;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
 }
 
-.info-headr {
+.info-header {
     flex: 1;
+    background: red;
 }
 
-info-details {
-    flex: 2;
+.info-details {
+    flex: 5;
+    background: yellowgreen;
 }
 
 .contact-container {
