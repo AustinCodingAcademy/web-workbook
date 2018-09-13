@@ -1,21 +1,64 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
 
-/*    +=================+
-    /   Sidebar       /
-  +=================+ 
-*/
-.nav-menu {
-  opacity: 0.15;
+.nav-toggler {
+  position: absolute;
+  top: .625em;
+  left: .625em;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 1.75em;
+  margin: 5px 0;
+  border-radius: 3px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+#dark>.bar1,
+#dark>.bar2,
+#dark>.bar3 { background: #303030 }
+
+#light>.bar1,
+#light>.bar2,
+#light>.bar3 { background: #E0E0E0 }
+
+.active .bar1 {
+  -webkit-transform: translateY(15px) translateY(-7px) rotateZ(45deg);
+  transform: translateY(15px) translateY(-7px) rotateZ(45deg);
+}
+.active .bar2 {
+  width: 0;
+}
+.active .bar3 {
+  -webkit-transform: translateY(-15px) translateY(7px) rotateZ(-45deg);
+  transform: translateY(-15px) translateY(7px) rotateZ(-45deg);
+}
+
+.nav-menu.homepage,
+.nav-menu.workbookpage {
   background-color: #303030;
   position: fixed;
   min-width: 100px;
-  margin-top: .5em;
-  margin-left: .5em;
+  margin-top: .625em;
+  margin-left: 3.1em;
   z-index: 1;
   top: 0;
   left: 0;
-  overflow-x: hidden;
+  overflow: hidden;
   font-family: "Roboto", sans-serif;
+}
+.nav-menu.workbookpage {
+  transform: translateX(-300%);
+  transition: transform ease-in-out 300ms;
+}
+.nav-menu.active {
+  transform: translateX(0);
 }
 .nav-menu:hover {
   opacity: 1;
