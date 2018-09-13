@@ -19,22 +19,18 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-
 html body {
     width: 100%;
 }
-
 body {
     width: 100%;
     height: 100vh;
     font-family: 'Lato', sans-serif;
 }
-
 /* .main-container {
     display: flex;
     background: teal;
 } */
-
 .top-container {
     display: flex;
     background: url('../img/nasa-background.jpg');
@@ -55,8 +51,6 @@ body {
     justify-content: center;
     margin 10px 0;
 }
-
-
 .bottom-container {
     position: absolute;
     top: 510px;
@@ -70,27 +64,55 @@ body {
     width: 850px;
     margin 10px 0;
 }
-
 .social-container {
-    background: teal;
-
+    display: flex;
+    flex-direction: column;
+    background: #E5E5E5;
+    height: 324px;
+    width: 270px;
+    margin 0;
+    pading:10px;
 }
-
 .info-container {
     display: flex;
     flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    background: #E5E5E5;
+    height: 324px;
+    width: 270px;
+    margin 0;
+    pading:10px;
+}
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    background: #E5E5E5;
+    height: 324px;
+    width: 270px;
+    margin 0;
+    pading:10px;
+} 
+.bottom-container > * > * > h3 {
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.bottom-container > * > * > p {
+    font-weight: lighter;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 20px 5px 0px 5px;
 }
 
 .info-header {
     flex: 1;
+    margin-top: 30px;
     background: red;
 }
-
 .info-details {
-    flex: 5;
+    margin-top: 10px;
+    flex: 3;
     background: yellowgreen;
-}
-
-.contact-container {
-    background: yellow;
 }
