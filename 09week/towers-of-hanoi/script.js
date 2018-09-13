@@ -12,12 +12,15 @@ $(document).ready(function() {
       } else {  
         $(this).prepend($block); //if the data attribute of the div currently contained in click is not larger than the value of the div already in column/there isn't one currently there, it prepends
         $block = null;  //returns click to empty
-      }
+      };
        endGame(); //runs end game function
     });
     function endGame(){
       if ($('.green').children().length >= 4){ //if there are more than or equal to 4 divs in the green column the alert shows
       alert('Yassssss queen!');
       }
-    }
+    };
   });
+  function reset(){ //this resets the game
+    location.reload();
+  };
