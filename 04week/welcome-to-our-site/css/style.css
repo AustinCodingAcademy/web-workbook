@@ -24,23 +24,23 @@ p {
   color: white;
 }
 
-.color-block {
-  display: block;
-  z-index: 100;
-  height: 25px;
-  width: 90%;
-  margin: 1em auto;
-  background-color: white;
-}
-.color-block.one {background-color: #33a8dd;}
-.color-block.two {background-color: #f46731;}
-.color-block.three {background-color: #2bcdc0;}
-
 .text-block {
   padding: 2em;
   width: 18%;
   text-align: center;
 }
+.text-block::before {
+  content: '';
+  display: block;
+  margin: 1em auto;
+  height: 25px;
+  width: 95%;
+  background-color: white;
+}
+.text-block.one::before {background-color: #33a8dd;}
+.text-block.two::before {background-color: #f46731;}
+.text-block.three::before {background-color: #2bcdc0;}
+
 
 @media (max-width: 750px) {
   .welcome {
