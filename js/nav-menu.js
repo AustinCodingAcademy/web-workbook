@@ -6,7 +6,10 @@ document.body.insertBefore(el.cloneNode(true), document.getElementsByTagName('ma
 const pageContent = document.body.getElementsByTagName('main')[0]
 const navToggle   = document.querySelector('.nav-toggler')
 const navMenu     = document.querySelector('.nav-menu')
-const currPage    = "../.." + window.location.pathname
+const dropdown    = document.querySelectorAll('.dropdown')
+const dropdownContent = document.querySelectorAll('.dropdown-content')
+const allPages  = Array.from(document.querySelectorAll('.nav-link'))
+const currPagePath    = "../.." + window.location.pathname
 
 navToggle.addEventListener('click', _ => {
   pageContent.classList.toggle('body-open')
@@ -15,4 +18,18 @@ navToggle.addEventListener('click', _ => {
 })
 
 // add current-page class to current page
-document.querySelector('a[href="' + currPage + '"]').classList.add('current-page')
+document.querySelector('a[href="' + currPagePath + '"]').classList.add('current-page')
+const currPage = document.querySelector('.current-page')
+
+for(var i=0; i<dropdown.length; i++) {
+  dropdown[i].addEventListener('click', open, false)
+
+  if(dropdown[i].contains(currPage)) {
+    dropdown[i].classList.add('current-folder')
+  }
+}
+
+function open() {
+  this.classList.toggle('open')
+  this.lastElementChild.classList.toggle('open')
+}

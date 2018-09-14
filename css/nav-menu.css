@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
 
+/* --------------------------------------------------------- */
 /* Changes to current page style to accomodate nav-menu */
 body {
   overflow-x: hidden;
 }
 main {
-  transform: translateX(250px);
-  transition: transform 250ms ease-in-out;
+  transform: translateX(300px);
+  transition: transform 200ms ease-in-out;
 }
 main.body-open {
   transform: translateX(0);
 }
 
-/* Hamburger icon styles */
 /* ----------------------------------- */
+/* Hamburger icon styles */
 .nav-toggler {
   position: fixed;
   opacity: .3;
@@ -24,13 +25,13 @@ main.body-open {
   background: #303030;
   padding: .2em .6em .3em .4em;
   border-radius: 3px;
-  transition: transform 250ms ease-in-out;
+  transition: transform 200ms ease-in-out;
 }
 .nav-toggler:hover {
   opacity: 1;
 }
 .nav-toggler.nav-open {
-  transform: translateX(250px);
+  transform: translateX(300px);
   opacity: 1;
 }
 .bar1,
@@ -42,7 +43,7 @@ main.body-open {
   width: 2em;
   margin: 5px 0;
   border-radius: 3px;
-  transition: all 250ms ease;
+  transition: all 200ms ease;
   background: #E0E0E0;
 }
 .nav-open .bar1 {
@@ -55,18 +56,21 @@ main.body-open {
   transform: translateY(-15px) translateY(7px) rotateZ(-45deg);
 }
 
+/* ----------------------------------- */
+/* Menu styles */
 .nav-menu.homepage,
 .nav-menu.workbookpage {
   background-color: #303030;
   box-shadow: 0px 0px 45px -5px rgba(0,0,0,0.55);
   position: fixed;
-  width: 250px;
+  width: 300px;
   z-index: 1;
   top: 0;
   left: 0;
   overflow: hidden;
   font-family: "Roboto", sans-serif;
-  transition: transform 250ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+  user-select: none;
 }
 .nav-menu.workbookpage {
   height: 100%;
@@ -75,34 +79,72 @@ main.body-open {
 .nav-menu.nav-open {
   transform: translatex(0);
 }
-.nav-btn {
+.week,
+.nav-link {
   display: block;
-  margin: 0;
   border: none;
   background-color: transparent;
-  cursor: pointer;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding: 0 1.25em 0 .25em;
   color: #E0E0E0;
 }
-.nav-btn:hover {
+.week {
+  margin-top: 1em;
+  border-top: 1px solid black;
+}
+.nav-link {
+  font-size: 1.1rem;
+}
+.nav-link:hover {
   color: #606060;
   background-color: #E0E0E0;
   cursor: pointer;
 }
 
-.current-page::before,
-.current-page::after {
+/* ----------------------------------- */
+/* Week Dropdown Selects */
+.dropdown span::before,
+.dropdown.open span::before,
+.dropdown.current-folder span::after {
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 900;
+  margin-right: .2em;
+}
+.dropdown span::before {
+  content: "\f0da";
+}
+.dropdown.open span::before {
+  content: "\f0d7";
+  font-style: normal;
+}
+.dropdown.current-folder span::after {
+  content: "\f30a";
+  color: #e74c3c;
+  margin-left: .2em;
+  font-style: normal;
+}
+.dropdown-content {
+  display: none;
+  margin-left: 2em;
+}
+.dropdown-content.open{
+  display: block;
+}
+
+/* ----------------------------------- */
+/* Current page indicators */
+.nav-link.current-page::before,
+.nav-link.current-page::after {
   font-family: 'Font Awesome\ 5 Free';
   font-weight: 900;
   color: #e74c3c;
 }
-.current-page::before {
+.nav-link.current-page::before {
   content: "\f105";
   margin-right: 2px;
 }
-.current-page::after {
+.nav-link.current-page::after {
   content: "\f104";
   margin-left: 2px;
 }
