@@ -1,0 +1,72 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Customer Satisfaction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Customer Satisfaction Form</h1>
+        <p>Tell Us About Your Experience</p>
+    </header>
+    <main>
+        <label id="name">
+            <span> Your Name:</span><br>
+            <input type="text" name="name" placeholder="First Name"><br>
+            <input type="text" name="name" placeholder="Last Name">
+        </label>
+        <label id="email">
+            <span>Your Email:</span><br>
+            <input type="email" name="email" placeholder="Email Address" required>
+         </label>
+         <span id="or">----OR----</span>
+         <label>
+             <span>Username</span>
+             <input type="text" id="username" placeholder="Username">
+             <span>Password</span>
+             <input type="text" id="password" placeholder="Password">
+             <input type="button" class="button" value="Log In">
+         </label>
+         <label>
+             <Span>Rate Your Experience Between 0 and 5 (5 Being Excellent)</span><br>
+            <input type="radio" id="0" name="drone" checked />
+            <label for="0">0</label>
+            <input type="radio" id="1" name="drone" checked />
+            <label for="1">1</label>
+            <input type="radio" id="2" name="drone" checked />
+            <label for="2">2</label>
+            <input type="radio" id="3" name="drone" checked />
+            <label for="3">3</label>
+            <input type="radio" id="4" name="drone" checked />
+            <label for="4">4</label>
+            <input type="radio" id="5" name="drone" checked />
+            <label for="5">5</label>
+         </label> 
+         <label>
+             <span>What Was Your Favorite Experience With Us?</span><br>
+             <input type="checkbox" id="tea">
+             <label for="tea">Delicious Tea</label>
+             <input type="checkbox" id="chocolates">
+             <label for="chocolates">Tasty Chocolates</label>
+             <input type="checkbox" id="ambiance">
+             <label for="ambiance">The Ambiance</label>
+             <input type="checkbox" id="customerserv">
+             <label for="customerserv">The Customer Service</label>
+         </label>
+         <label>
+             <span>How Likely Are You To Visit Us Again?</span><br>
+             <label for="yes"> Not Likely - Very Likely</label><br>
+             <input type="range" id="start" name="yes" min="0" max="5" />
+         </label>
+         <label>
+             <span>Please Add Any Details About Your Experience You Would Like for Us to Know About:</span><br>
+             <textarea id="message" name="message" placeholder="Your Message to Us" spellcheck="true"></textarea>
+         </label>
+         <input type="button" class="button" id="submit" value="Submit">
+    </main>
+</body>
+</html>
