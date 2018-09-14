@@ -5,10 +5,16 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 .welcome {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1 0 auto;
   padding: 10em 5em;
   background: #2bcdc0;
   color: white;
@@ -22,6 +28,7 @@ p {
 
 .titles {
   display: flex;
+  flex-shrink: 0;
   justify-content: space-around;
   background: #303030;
   color: white;
