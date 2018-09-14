@@ -1,10 +1,12 @@
 body {
   font-family: 'Noto Serif JP', sans-serif;
+  margin: 0;
 }
+
 
 .tophalf {
   display: flex;
-  height: 50vh;
+  height: 600px;
   background-color: #2BCDC0;
   align-items: center;
   justify-content: center;
@@ -19,9 +21,14 @@ h1 {
   display: flex;
   background-color: black;
   color: white;
-  height: 50vh;
+  flex-direction: row;
+}
+
+.box {
+  display: inline;
+  height: 488px;
   align-items: center;
-  justify-content: space-around;
+  text-align: center;
 }
 
 
@@ -49,11 +56,14 @@ h1 {
   font-size: 45px;
 }
 
+
 @media (max-width: 576px) {
   .tophalf {
     background-color: #33A8DD;
   }
   .bottomhalf {
     background-color: #F7F5F6;
+    color: black;
+    flex-direction: column;
   }
 }
