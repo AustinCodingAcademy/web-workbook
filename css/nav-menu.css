@@ -1,68 +1,79 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
 
+/* Changes to current page style to accomodate nav-menu */
+body {
+  overflow-x: hidden;
+}
+main {
+  transform: translateX(250px);
+  transition: transform 250ms ease-in-out;
+}
+main.body-open {
+  transform: translateX(0);
+}
+
+/* Hamburger icon styles */
+/* ----------------------------------- */
 .nav-toggler {
   position: fixed;
-  top: .1em;
-  left: .1em;
+  opacity: .3;
+  top: .2em;
+  left: .2em;
   cursor: pointer;
   z-index: 100;
   background: #303030;
-  opacity: .9;
-  padding: 0 3px;
+  padding: .2em .6em .3em .4em;
   border-radius: 3px;
+  transition: transform 250ms ease-in-out;
 }
-
+.nav-toggler:hover {
+  opacity: 1;
+}
+.nav-toggler.nav-open {
+  transform: translateX(250px);
+  opacity: 1;
+}
 .bar1,
 .bar2,
 .bar3 {
   content: '';
   display: block;
   height: 3px;
-  width: 1.2em;
-  margin: 3px 0;
+  width: 2em;
+  margin: 5px 0;
   border-radius: 3px;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
+  transition: all 250ms ease;
   background: #E0E0E0;
 }
-
-.active .bar1 {
-  -webkit-transform: translateY(13px) translateY(-7px) rotateZ(45deg);
-  transform: translateY(13px) translateY(-7px) rotateZ(45deg);
+.nav-open .bar1 {
+  transform: translateY(15px) translateY(-7px) rotateZ(45deg);
 }
-.active .bar2 {
+.nav-open .bar2 {
   width: 0;
 }
-.active .bar3 {
-  -webkit-transform: translateY(-13px) translateY(7px) rotateZ(-45deg);
-  transform: translateY(-13px) translateY(7px) rotateZ(-45deg);
+.nav-open .bar3 {
+  transform: translateY(-15px) translateY(7px) rotateZ(-45deg);
 }
 
 .nav-menu.homepage,
 .nav-menu.workbookpage {
   background-color: #303030;
-  opacity: .9;
+  box-shadow: 0px 0px 45px -5px rgba(0,0,0,0.55);
   position: fixed;
-  min-width: 15vw;
-  margin-top: .1em;
-  margin-left: 1.8em;
+  width: 250px;
   z-index: 1;
   top: 0;
   left: 0;
   overflow: hidden;
   font-family: "Roboto", sans-serif;
-  border-radius: 3px;
+  transition: transform 250ms ease-in-out;
 }
 .nav-menu.workbookpage {
-  transform: translateX(-200%);
-  transition: transform ease-in-out 300ms;
+  height: 100%;
+  transform: translateX(-250px);
 }
-
-.nav-menu.active {
-  transform: translateX(0);
-}
-.nav-menu:hover {
-  box-shadow: 0 0 1em 0 rgba(0,0,0,.3);
+.nav-menu.nav-open {
+  transform: translatex(0);
 }
 .nav-btn {
   display: block;
@@ -75,33 +86,10 @@
   padding: 0 1.25em 0 .25em;
   color: #E0E0E0;
 }
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-}
 .nav-btn:hover {
   color: #606060;
   background-color: #E0E0E0;
   cursor: pointer;
-}
-
-@media screen and (max-width: 500px) {
-  .nav-toggler {
-    transform: scale(2.5);
-    top: 1.2em;
-    left: 1.3em;
-  }
-  .nav-menu.workbookpage {
-    width: 100vw;
-    text-align: center;
-    margin: 0;
-  }
-  .nav-btn {
-    padding: 1em 0;
-    border-bottom: solid 1px black;
-  }
 }
 
 .current-page::before,
