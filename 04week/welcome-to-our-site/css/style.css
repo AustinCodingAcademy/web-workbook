@@ -29,7 +29,6 @@ body {
 
 .container {
     display: flex;
-
     flex-direction: column;
     flex-wrap: nowrap;
 }
@@ -70,6 +69,8 @@ body {
 }
 
 .boxes {
+    position: relative;
+    top: 1%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -91,7 +92,7 @@ body {
     font-weight: lighter;
     color: #fff;
     text-align: center;
-    padding: 3px 12%;
+    padding: 0 12%;
 }
 
 .box1 {
@@ -113,4 +114,18 @@ body {
     height: 20px;
     width: 65%;
     margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+    .top-container {
+        background: #00A4DE;
+        height: 240px;
+    }
+    .top-container h1 {
+        font-size: 50px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+    }
+    
 }
