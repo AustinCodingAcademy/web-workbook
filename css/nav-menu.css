@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
 
 .nav-toggler {
-  position: absolute;
-  top: .625em;
-  left: .625em;
+  position: fixed;
+  top: .1em;
+  left: .1em;
   cursor: pointer;
   z-index: 100;
+  background: #303030;
+  opacity: .9;
+  padding: 0 3px;
+  border-radius: 3px;
 }
 
 .bar1,
@@ -14,44 +18,40 @@
   content: '';
   display: block;
   height: 3px;
-  width: 1.75em;
-  margin: 5px 0;
+  width: 1.2em;
+  margin: 3px 0;
   border-radius: 3px;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
+  background: #E0E0E0;
 }
-#dark>.bar1,
-#dark>.bar2,
-#dark>.bar3 { background: #303030 }
-
-#light>.bar1,
-#light>.bar2,
-#light>.bar3 { background: #E0E0E0 }
 
 .active .bar1 {
-  -webkit-transform: translateY(15px) translateY(-7px) rotateZ(45deg);
-  transform: translateY(15px) translateY(-7px) rotateZ(45deg);
+  -webkit-transform: translateY(13px) translateY(-7px) rotateZ(45deg);
+  transform: translateY(13px) translateY(-7px) rotateZ(45deg);
 }
 .active .bar2 {
   width: 0;
 }
 .active .bar3 {
-  -webkit-transform: translateY(-15px) translateY(7px) rotateZ(-45deg);
-  transform: translateY(-15px) translateY(7px) rotateZ(-45deg);
+  -webkit-transform: translateY(-13px) translateY(7px) rotateZ(-45deg);
+  transform: translateY(-13px) translateY(7px) rotateZ(-45deg);
 }
 
 .nav-menu.homepage,
 .nav-menu.workbookpage {
   background-color: #303030;
+  opacity: .9;
   position: fixed;
   min-width: 100px;
-  margin-top: .625em;
-  margin-left: 3.1em;
+  margin-top: .1em;
+  margin-left: 1.8em;
   z-index: 1;
   top: 0;
   left: 0;
   overflow: hidden;
   font-family: "Roboto", sans-serif;
+  border-radius: 3px;
 }
 .nav-menu.workbookpage {
   transform: translateX(-200%);
@@ -61,7 +61,6 @@
   transform: translateX(0);
 }
 .nav-menu:hover {
-  opacity: 1;
   box-shadow: 0 0 1em 0 rgba(0,0,0,.3);
 }
 .nav-btn {

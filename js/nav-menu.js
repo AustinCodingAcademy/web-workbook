@@ -5,12 +5,12 @@ document.body.insertBefore(el.cloneNode(true), document.getElementsByTagName('ma
 
 const navToggle = document.querySelector('.nav-toggler')
 const navMenu   = document.querySelector('.nav-menu')
+const currPage  = "../.." + window.location.pathname
 
 navToggle.addEventListener('click', _ => {
   navMenu.classList.toggle('active')
   navToggle.classList.toggle('active')
 })
 
-navMenu.addEventListener('click', _ => {
-  navMenu.classList.remove('active')
-})
+// add current-page class to current page
+document.querySelector('ul > a[href="' + currPage + '"]').classList.add('current-page')
