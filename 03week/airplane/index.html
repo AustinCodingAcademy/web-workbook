@@ -14,92 +14,74 @@
     href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
+  <link rel="import" href="../../nav-menu.html">
 </head>
 
 <body>
-  
-  <!-- web-workbook nov-menu -->
-  <div class="nav-toggler" id="light">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
-  </div>
-  <div class="nav-menu workbookpage">
-    <nav class="nav">
-      <ul>
-        <a class="nav-btn" href="../../index.html">Home</a>
-        <a class="nav-btn" href="../../01week/resume/index.html">Resume</a>
-        <a class="nav-btn" href="../../02week/bio/index.html">Biography</a>
-        <a class="nav-btn" href="../../02week/blog/index.html">Blog</a>
-        <a class="nav-btn current-page" href="../../03week/airplane/index.html">Airplane</a>
-        <a class="nav-btn" href="../../04week/nasa/index.html">Nasa</a>
-        <a class="nav-btn" href="../../04week/welcome-to-our-site/index.html">Welcome to Our Site</a>
-      </ul>
-    </nav>
-  </div>
-  <!-- /web-workbook nav-menu -->
 
-  <!-- Header -->
-  <header>
+  <main>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <img class="logo" src="img/logo.png">
+        <nav class="airplane-nav">
+          <ul>
+            <li><img class="nav-icon" src="img/home-icon.png"><a class="nav-text" href="">Home</a></li>
+            <li><img class="nav-icon" src="img/deal-icon.png"><a class="nav-text" href="">Travel Deals</a></li>
+            <li><img class="nav-icon" src="img/schedule-icon.png"><a class="nav-text" href="">Flight Schedule</a></li>
+            <li><img class="nav-icon" src="img/login-icon.png"><a class="nav-text" href="">Register/Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Form -->
     <div class="container">
-      <img class="logo" src="img/logo.png">
-      <nav class="airplane-nav">
-        <ul>
-          <li><img class="nav-icon" src="img/home-icon.png"><a class="nav-text" href="">Home</a></li>
-          <li><img class="nav-icon" src="img/deal-icon.png"><a class="nav-text" href="">Travel Deals</a></li>
-          <li><img class="nav-icon" src="img/schedule-icon.png"><a class="nav-text" href="">Flight Schedule</a></li>
-          <li><img class="nav-icon" src="img/login-icon.png"><a class="nav-text" href="">Register/Login</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+      <div class="form-main">
+        
+        <!-- Form Tabs -->
+        <div class="form-header">
+          <ul class="form-header-tabs">
+            <a href=""><li class="form-header-tab left"><img src="img/plane-icon.png"></li></a>
+            <a href=""><li class="form-header-tab middle"><img src="img/hotel-icon.png"></li></a>
+            <a href=""><li class="form-header-tab right"><img src="img/car-icon.png"></li></a>
+          </ul>
+        </div>
 
-  <!-- Form -->
-  <div class="container">
-    <div class="form-main">
-      
-      <!-- Form Tabs -->
-      <div class="form-header">
-        <ul class="form-header-tabs">
-          <a href=""><li class="form-header-tab left"><img src="img/plane-icon.png"></li></a>
-          <a href=""><li class="form-header-tab middle"><img src="img/hotel-icon.png"></li></a>
-          <a href=""><li class="form-header-tab right"><img src="img/car-icon.png"></li></a>
-        </ul>
-      </div>
+        <!-- Form Top Half -->
+        <div class="form-top-half">
+          <input class="form-input-box" type="text" placeholder="Depart">
+          <input class="form-input-box" type="text" placeholder="Arrive">
+          <input class="form-input-box date" type="date" placeholder="mm/dd/yyyy" min="2018-09-01" max="2019-03-01">
+          <input class="form-input-box date" type="date" placeholder="mm/dd/yyyy" min="2018-09-01" max="2019-03-01">
+        </div>
 
-      <!-- Form Top Half -->
-      <div class="form-top-half">
-        <input class="form-input-box" type="text" placeholder="Depart">
-        <input class="form-input-box" type="text" placeholder="Arrive">
-        <input class="form-input-box date" type="date" placeholder="mm/dd/yyyy" min="2018-09-01" max="2019-03-01">
-        <input class="form-input-box date" type="date" placeholder="mm/dd/yyyy" min="2018-09-01" max="2019-03-01">
-      </div>
+        <!-- Form Bottom Half -->
+        <div class="form-bottom-half">
+          <ul>
+            <li><p>Passengers</p></li>
+            <li>
+              <select class="form-passenger-cnt">  
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5+">5+</option>
+              </select>
+            </li>
+            <li>
+              <input type="radio" name="user-selection" value="return" checked="checked"> Return
+            </li>
+            <li>
+              <input type="radio" name="user-selection" value="one-way"> One Way
+            </li>
+          </ul>
 
-      <!-- Form Bottom Half -->
-      <div class="form-bottom-half">
-        <ul>
-          <li><p>Passengers</p></li>
-          <li>
-            <select class="form-passenger-cnt">  
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5+">5+</option>
-            </select>
-          </li>
-          <li>
-            <input type="radio" name="user-selection" value="return" checked="checked"> Return
-          </li>
-          <li>
-            <input type="radio" name="user-selection" value="one-way"> One Way
-          </li>
-        </ul>
-
-        <button class="form-btn">Search Flights</button>
+          <button class="form-btn">Search Flights</button>
+        </div>
       </div>
     </div>
-  </div>
+  </main>
 
 <!-- workbook nav-menu script   -->
 <script type="text/javascript" src="../../js/nav-menu.js"></script>
