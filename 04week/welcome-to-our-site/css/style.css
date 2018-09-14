@@ -23,12 +23,94 @@ html body {
     width: 100%;
 }
 body {
+    width: 100vh;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.top-container {
     width: 100%;
-    height: 100vh;
+    height: 360px;
+    background: #00D6C0;
+    align-items: center;
+    justify-content: center;
+    /* position: relative;
+    top: 50%; */
+}
+
+.text-container {
+    position: relative;
+    top: 40%;
+}
+.bottom-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 360px;
+    background: #111;
 }
 
 
+.top-container h1 {
+    font-size: 75px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
 
 .boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
 
+.boxes > * > h2 {
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+
+.boxes > * > p {
+    display: block;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #fff;
+    text-align: center;
+    padding: 3px 12%;
+}
+
+.box1 {
+    background: #00A4DE;
+    height: 20px;
+    width: 65%;
+    margin-bottom: 10px;
+}
+
+.box2 {
+    background: #FF4F23;
+    height: 20px;
+    width: 65%;
+    margin-bottom: 10px;
+}
+
+.box3 {
+    background: #00D6C0;
+    height: 20px;
+    width: 65%;
+    margin-bottom: 10px;
 }
