@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align:center;">Give Us Some Feedback!</h2>
+        <form action="" name="registration">
+      
+          <label for="checkbox">What did you like most about your experience? (check all that apply)</label>
+            <input type="checkbox" name="checkbox1" id="checkbox"><p>Customer Service</p>
+            <input type="checkbox" name="checkbox2" id="checkbox"><p>Quality of Work</p>
+            <input type="checkbox" name="checkbox3" id="checkbox"><p>Efficiency</p>
+            <input type="checkbox" name="checkbox3" id="checkbox"><p>Cost</p>
+
+          <label for="radio" class="radio">Will you recommend our business to others?</label>
+          <input type="radio" name="radio" id="radio"><p>Yes</p>
+          <input type="radio" name="radio" id="radio"><p>No</p>
+
+          <label for="range" class="range">On a scale of 1-5 (5 being very satisfied), how satisfied are you with our services?</label>
+          <input type="range" name="range" id="range" min="1" max="5">
+          <p class="tickmark1">1</p>
+          <p class="tickmark2">2</p>
+          <p class="tickmark3">3</p>
+          <p class="tickmark4">4</p>
+          <p class="tickmark5">5</p>
+
+          <label for="explanation" class="explanation">Is there anything else you would like us to know?</label>
+          <textarea rows="6" cols="50" spellcheck="true"></textarea>
+
+          <label for="website" class="website">Website</label>
+          <input type="url" name="website" id="website" placeholder="www.website.com">
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="john@doe.com" spellcheck="false" required>
+
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;">
+      
+          <button type="submit">Submit</button>
+          <button type="submit">Reset</button>
+        </form>
+</body>
+</html>
