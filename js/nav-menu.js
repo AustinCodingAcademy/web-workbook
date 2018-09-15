@@ -25,6 +25,8 @@ document.querySelector('a[href="' + currPagePath + '"]').classList.add('current-
 // also handles opening and closing of groups
 let dropdown = document.querySelectorAll('.dropdown')
 let currPage = document.querySelector('.current-page')
+
+
 for(var i=0; i<dropdown.length; i++) {
   dropdown[i].addEventListener('click', open, false)
 
