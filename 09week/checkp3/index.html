@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Checkpoint 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+<body>
+    <header>
+        <h1>Kitty Collector</h1>
+    </header>
+    <main>
+        <div id="content">
+            <img src="./images/catnip.jpg"  id="catNip"><br>
+            <small>Cat Nip Plant Acquisition Speed: <span id="rps"></span></small>
+            <div id="currentTotal"></div>
+            <div id="buttons">
+                <div class="button" id="fertilizer" data-val=".1" data-cost="10" onclick="fertilizer()">Add Fertilizer - <span>10</span></div>
+                <div class="button" id="kitten" data-val="1" data-cost="100" onclick="kitten()">Add a Cat Nip Harvesting Kitten - <span>100</span></div>
+                <div class="button" id="cat" data-val="10" data-cost="1000" onclick="cat()">Add a Cat Nip Harvesting Cat - <span>1000</span></div>
+                <div class="button" id="clowder" data-val="100" data-cost="10000" onclick="clowder()">Add a clowder - <span>10000</span></div>
+            </div>
+        </div>
+        <div id="kitties">
+            <div class="fert"></div>
+            <div class="kitt"></div>
+            <div class="ca"></div>
+            <div class="clow"></div>
+        </div>
+    </main>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
