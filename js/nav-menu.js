@@ -8,7 +8,6 @@ const navToggle   = document.querySelector('.nav-toggler')
 const navMenu     = document.querySelector('.nav-menu')
 const dropdown    = document.querySelectorAll('.dropdown')
 const dropdownContent = document.querySelectorAll('.dropdown-content')
-const allPages  = Array.from(document.querySelectorAll('.nav-link'))
 const currPagePath    = "../.." + window.location.pathname
 
 navToggle.addEventListener('click', _ => {

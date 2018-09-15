@@ -6,7 +6,7 @@ body {
   overflow-x: hidden;
 }
 main {
-  transform: translateX(300px);
+  transform: translateX(225px);
   transition: transform 200ms ease-in-out;
 }
 main.body-open {
@@ -23,7 +23,7 @@ main.body-open {
   cursor: pointer;
   z-index: 100;
   background: #303030;
-  padding: .2em .6em .3em .4em;
+  padding: 0 .3em;
   border-radius: 3px;
   transition: transform 200ms ease-in-out;
 }
@@ -31,16 +31,14 @@ main.body-open {
   opacity: 1;
 }
 .nav-toggler.nav-open {
-  transform: translateX(300px);
+  transform: translateX(185px);
   opacity: 1;
 }
-.bar1,
-.bar2,
-.bar3 {
+.bar1, .bar2, .bar3 {
   content: '';
   display: block;
   height: 3px;
-  width: 2em;
+  width: 1.5em;
   margin: 5px 0;
   border-radius: 3px;
   transition: all 200ms ease;
@@ -57,53 +55,11 @@ main.body-open {
 }
 
 /* ----------------------------------- */
-/* Menu styles */
-.nav-menu.homepage,
-.nav-menu.workbookpage {
-  background-color: #303030;
-  box-shadow: 0px 0px 45px -5px rgba(0,0,0,0.55);
-  position: fixed;
-  width: 300px;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  font-family: "Roboto", sans-serif;
-  transition: transform 200ms ease-in-out;
-  user-select: none;
-}
-.nav-menu.workbookpage {
-  height: 100%;
-  transform: translateX(-250px);
-}
-.nav-menu.nav-open {
-  transform: translatex(0);
-}
-.week,
-.nav-link {
-  display: block;
-  border: none;
-  background-color: transparent;
-  text-decoration: none;
-  font-size: 1.3rem;
-  padding: 0 1.25em 0 .25em;
-  color: #E0E0E0;
-}
-.week {
-  margin-top: 1em;
-  border-top: 1px solid black;
-}
-.nav-link {
-  font-size: 1.1rem;
-}
-.nav-link:hover {
-  color: #606060;
-  background-color: #E0E0E0;
-  cursor: pointer;
-}
-
-/* ----------------------------------- */
 /* Week Dropdown Selects */
+.dropdown {
+  display: flex;
+  flex-direction: column;
+}
 .dropdown span::before,
 .dropdown.open span::before,
 .dropdown.current-folder span::after {
@@ -112,10 +68,10 @@ main.body-open {
   margin-right: .2em;
 }
 .dropdown span::before {
-  content: "\f0da";
+  content: "\f105";
 }
 .dropdown.open span::before {
-  content: "\f0d7";
+  content: "\f107";
   font-style: normal;
 }
 .dropdown.current-folder span::after {
@@ -129,22 +85,77 @@ main.body-open {
   margin-left: 2em;
 }
 .dropdown-content.open{
+  display: inline-block;
+}
+
+/* ----------------------------------- */
+/* Menu styles */
+.nav-menu.homepage, .nav-menu.workbookpage {
+  background-color: #303030;
+  box-shadow: 0px 0px 45px -5px rgba(0,0,0,0.55);
+  position: fixed;
+  width: 225px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  transition: transform 200ms ease-in-out;
+  user-select: none;
+  font-weight: lighter;
+}
+.nav-menu.workbookpage {
+  height: 100%;
+  transform: translateX(-225px);
+}
+.nav-menu.nav-open {
+  transform: translatex(0);
+}
+.nav-title {
+  display: inline-block;
+  color: #E0E0E0;
+  font-weight: lighter;
+}
+.nav-title h2 {
+  margin: 4px 0;
+}
+.nav-home,
+.week,
+.nav-link {
   display: block;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 1.3rem;
+  /* padding: 0 1.25em 0 .25em; */
+  color: #E0E0E0;
+  cursor: pointer;
+}
+.week {
+  padding-left: 10px;
+  margin-top: 1em;
+  border-top: 1px solid black;
+}
+.nav-link {
+  font-size: 1rem;
+  width: 100%;
+}
+.nav-link:hover,
+.nav-home:hover {
+  color: #606060;
+  background: #E0E0E0;
+  cursor: pointer;
 }
 
 /* ----------------------------------- */
 /* Current page indicators */
-.nav-link.current-page::before,
-.nav-link.current-page::after {
+.nav-link.current-page::before {
   font-family: 'Font Awesome\ 5 Free';
   font-weight: 900;
   color: #e74c3c;
 }
 .nav-link.current-page::before {
   content: "\f105";
+  margin-left: -10px;
   margin-right: 2px;
-}
-.nav-link.current-page::after {
-  content: "\f104";
-  margin-left: 2px;
 }
