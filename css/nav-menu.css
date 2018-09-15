@@ -7,7 +7,7 @@ body {
 }
 main {
   transform: translateX(225px);
-  transition: transform 200ms ease-in-out;
+  transition: transform 250ms ease-in-out;
 }
 main.body-open {
   transform: translateX(0);
@@ -15,28 +15,39 @@ main.body-open {
 
 /* ----------------------------------- */
 /* nav-menu header */
-
-.nav-title {
-  display: inline-block;
-  color: #E0E0E0;
-  font-weight: lighter;
-  padding-bottom: 1em;
-  margin-left: 5px;
+.nav-container { 
+  position: relative;
 }
-.nav-title h2 {
-  margin: 4px 0;
+.nav-title {
+  display: flex;
+  color: #E0E0E0;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  padding: 1em 0;
+  padding-left: 10px;
+}
+.nav-title span {
+  font-weight: 400;
+}
+.nav-title .red {
+  color: hsl(5, 48%, 51%);
+}
+.nav-title .blue {
+  color: hsl(207, 82%, 66%);
 }
 .nav-home {
   color: #E0E0E0;
   text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+.nav-home:hover {
+  color: hsl(5, 48%, 51%);
 }
 .nav-home::before {
   font-family: 'Font Awesome\ 5 Free';
   font-weight: 900;
   margin-right: .2em;
   content:'\f015';
-  display: inline-block;
-  margin-left: 5px;
 }
 
 .nav-toggler {
@@ -49,13 +60,13 @@ main.body-open {
   background: #303030;
   padding: 0 .3em;
   border-radius: 3px;
-  transition: transform 200ms ease-in-out;
+  transition: transform 250ms ease-in-out;
 }
 .nav-toggler:hover {
   opacity: 1;
 }
 .nav-toggler.nav-open {
-  transform: translateX(185px);
+  transform: translateX(205px);
   opacity: 1;
 }
 
@@ -81,16 +92,16 @@ main.body-open {
   z-index: 1;
   box-shadow: 0px 0px 45px -5px rgba(0,0,0,.3);
   position: fixed;
-  width: 225px;
+  width: 250px;
   top: 0;
   left: 0;
   overflow: hidden;
   font-family: "Roboto", sans-serif;
-  transition: transform 200ms ease-in-out;
+  transition: transform 250ms ease-in-out;
   user-select: none;
   font-weight: lighter;
   height: 100%;
-  transform: translateX(-225px);
+  transform: translateX(-250px);
 }
 .nav-menu.nav-open {
   transform: translatex(0);
@@ -99,7 +110,6 @@ main.body-open {
 .dropdown {
   display: flex;
   flex-direction: column;
-  padding: 1em 0;
   border-top: 1px solid rgba(0,0,0,.3);
 }
 .dropdown:last-of-type {
@@ -115,27 +125,26 @@ main.body-open {
 .dropdown span::before {
   content: "\f105";
 }
+.dropdown.current-folder span::before {
+  color: hsl(5, 48%, 51%);
+}
 .dropdown.open span::before {
   content: "\f107";
-  font-style: normal;
-}
-.dropdown.current-folder span::after {
-  content: "\f30a";
-  color: #e74c3c;
-  margin-left: .2em;
   font-style: normal;
 }
 
 .dropdown-content {
   display: none;
-  margin-left: 2em;
 }
 .dropdown-content.open {
-  display: inline;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
 }
 
 .week,
 .nav-link {
+  padding: 1em 0;
   display: block;
   border: none;
   background-color: transparent;
@@ -146,25 +155,23 @@ main.body-open {
 }
 .week {
   padding-left: 10px;
+  transition: all 200ms ease-in-out;
+}
+.week:hover,
+.week:focus {
+  background: rgba(255,255,255,0.1);
 }
 .nav-link {
   font-size: 1rem;
-  width: 100%;
+  display: block;
+  padding: .5em;
+  transition: all 100ms ease-in-out;
 }
-.nav-link:hover,
-.nav-home:hover {
-  color: #606060;
-  background: #E0E0E0;
+.nav-link:hover {
+  transform: translateX(10px);
   cursor: pointer;
 }
 
-.nav-link.current-page::before {
-  font-family: 'Font Awesome\ 5 Free';
-  font-weight: 900;
-  color: #e74c3c;
-}
-.nav-link.current-page::before {
-  content: "\f105";
-  margin-left: -10px;
-  margin-right: 2px;
+.nav-link.current-page {
+  color: hsl(5, 48%, 51%);
 }
