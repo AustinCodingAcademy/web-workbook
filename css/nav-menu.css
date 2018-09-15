@@ -14,7 +14,31 @@ main.body-open {
 }
 
 /* ----------------------------------- */
-/* Hamburger icon styles */
+/* nav-menu header */
+
+.nav-title {
+  display: inline-block;
+  color: #E0E0E0;
+  font-weight: lighter;
+  padding-bottom: 1em;
+  margin-left: 5px;
+}
+.nav-title h2 {
+  margin: 4px 0;
+}
+.nav-home {
+  color: #E0E0E0;
+  text-decoration: none;
+}
+.nav-home::before {
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 900;
+  margin-right: .2em;
+  content:'\f015';
+  display: inline-block;
+  margin-left: 5px;
+}
+
 .nav-toggler {
   position: fixed;
   opacity: .3;
@@ -34,31 +58,52 @@ main.body-open {
   transform: translateX(185px);
   opacity: 1;
 }
+
 .bar1, .bar2, .bar3 {
   content: '';
   display: block;
   height: 3px;
-  width: 1.5em;
-  margin: 5px 0;
+  width: 1.2em;
+  margin: 4px 0;
   border-radius: 3px;
   transition: all 200ms ease;
   background: #E0E0E0;
 }
-.nav-open .bar1 {
-  transform: translateY(15px) translateY(-7px) rotateZ(45deg);
-}
-.nav-open .bar2 {
-  width: 0;
-}
-.nav-open .bar3 {
-  transform: translateY(-15px) translateY(7px) rotateZ(-45deg);
-}
+.nav-open .bar1 {transform: translateY(14px) translateY(-7px) rotateZ(45deg);}
+.nav-open .bar2 {width: 0}
+.nav-open .bar3 {transform: translateY(-14px) translateY(7px) rotateZ(-45deg);}
+
 
 /* ----------------------------------- */
-/* Week Dropdown Selects */
+/* nav-menu main */
+.nav-menu {
+  background-color: #303030;
+  z-index: 1;
+  box-shadow: 0px 0px 45px -5px rgba(0,0,0,.3);
+  position: fixed;
+  width: 225px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  transition: transform 200ms ease-in-out;
+  user-select: none;
+  font-weight: lighter;
+  height: 100%;
+  transform: translateX(-225px);
+}
+.nav-menu.nav-open {
+  transform: translatex(0);
+}
+
 .dropdown {
   display: flex;
   flex-direction: column;
+  padding: 1em 0;
+  border-top: 1px solid rgba(0,0,0,.3);
+}
+.dropdown:last-of-type {
+  border-bottom: 1px solid rgba(0,0,0,.3);
 }
 .dropdown span::before,
 .dropdown.open span::before,
@@ -80,46 +125,15 @@ main.body-open {
   margin-left: .2em;
   font-style: normal;
 }
+
 .dropdown-content {
   display: none;
   margin-left: 2em;
 }
-.dropdown-content.open{
-  display: inline-block;
+.dropdown-content.open {
+  display: inline;
 }
 
-/* ----------------------------------- */
-/* Menu styles */
-.nav-menu.homepage, .nav-menu.workbookpage {
-  background-color: #303030;
-  box-shadow: 0px 0px 45px -5px rgba(0,0,0,0.55);
-  position: fixed;
-  width: 225px;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  font-family: "Roboto", sans-serif;
-  transition: transform 200ms ease-in-out;
-  user-select: none;
-  font-weight: lighter;
-}
-.nav-menu.workbookpage {
-  height: 100%;
-  transform: translateX(-225px);
-}
-.nav-menu.nav-open {
-  transform: translatex(0);
-}
-.nav-title {
-  display: inline-block;
-  color: #E0E0E0;
-  font-weight: lighter;
-}
-.nav-title h2 {
-  margin: 4px 0;
-}
-.nav-home,
 .week,
 .nav-link {
   display: block;
@@ -127,14 +141,11 @@ main.body-open {
   background-color: transparent;
   text-decoration: none;
   font-size: 1.3rem;
-  /* padding: 0 1.25em 0 .25em; */
   color: #E0E0E0;
   cursor: pointer;
 }
 .week {
   padding-left: 10px;
-  margin-top: 1em;
-  border-top: 1px solid black;
 }
 .nav-link {
   font-size: 1rem;
@@ -147,8 +158,6 @@ main.body-open {
   cursor: pointer;
 }
 
-/* ----------------------------------- */
-/* Current page indicators */
 .nav-link.current-page::before {
   font-family: 'Font Awesome\ 5 Free';
   font-weight: 900;
