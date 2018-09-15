@@ -1,15 +1,12 @@
-var link = document.querySelector('link[rel="import"]');
+const currPagePath = "../.." + window.location.pathname
+var link    = document.querySelector('link[rel="import"]');
 var content = link.import;
-var el = content.querySelector('.nav-container');
+var el      = content.querySelector('.nav-container');
 document.body.insertBefore(el.cloneNode(true), document.getElementsByTagName('main')[0]);
 
 const pageContent = document.body.getElementsByTagName('main')[0]
 const navToggle   = document.querySelector('.nav-toggler')
 const navMenu     = document.querySelector('.nav-menu')
-const dropdown    = document.querySelectorAll('.dropdown')
-const dropdownContent = document.querySelectorAll('.dropdown-content')
-const currPagePath    = "../.." + window.location.pathname
-
 navToggle.addEventListener('click', _ => {
   pageContent.classList.toggle('body-open')
   navToggle.classList.toggle('nav-open')
@@ -18,7 +15,9 @@ navToggle.addEventListener('click', _ => {
 
 // add current-page class to current page
 document.querySelector('a[href="' + currPagePath + '"]').classList.add('current-page')
-const currPage = document.querySelector('.current-page')
+
+let dropdown = document.querySelectorAll('.dropdown')
+let currPage = document.querySelector('.current-page')
 
 for(var i=0; i<dropdown.length; i++) {
   dropdown[i].addEventListener('click', open, false)
