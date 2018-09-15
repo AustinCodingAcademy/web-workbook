@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <form action="/action_page.php">
+          <h1>Satisfaction Form</h1>
+          <h3>Are you contacting us because you are unsatisfied?</h3>
+          <input type="checkbox" name="Angry"> Yes<br>
+          <input type="checkbox" name="Happy"> No<br><br>
+
+          <label for="URL">URL</label>
+          <input type="text" spellcheck="true" placeholder="Your URL Here">
+      
+          <label for="Password">Password</label>
+          <input type="text" spellcheck="true" placeholder="Your Password Here">
+
+          <label for="Email">Email</label>
+          <input type="text" spellcheck="true"  placeholder="Your Email Here" required>
+          
+          <h4>I am:</h4>
+          <input type="radio" name="satisfied" checked> Happy<br>
+          <input type="radio" name="satisfied" checked> Unhappy<br><br>
+        
+          <h4>How satisfied are you with this form?</h4>
+          <input type="range" id="start" name="volume"
+           min="0" max="11" <br>
+          <h5>Not At All --------- Very</h5>
+
+          <input type="submit" value="Submit"><br><br>
+          <input type="reset" value="Reset">
+
+        </form>
+</div>
+</body>
+</html>
