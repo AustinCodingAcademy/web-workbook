@@ -1,0 +1,54 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-content: space-around;
+}
+
+.pictureContainer{
+    flex: 1;
+    background-image: url("../img/nasa-background.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+    background-size: 100%;
+    height: 450px;
+    width: 100vw;
+    margin: auto;
+}
+
+.mainContentContainer{
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    height: 324px;
+    width: 100vw;
+    margin: auto;
+}
+.columnContainer{
+    height: 322px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+     background-color:pink;
+    margin: auto;
+}
+
+.spacer{
+    width: 20px;
+    height: 100%;
+    background-color: lightgray;
+}
+
+.columnContainer>div:nth-of-type(1){
+    height: 107px;
+    width: 100%;
+    background-color: blueviolet;
+}
+.columnContainer>div:nth-of-type(2){
+    height: 214px;
+    width: 100%;
+    background-color: rgb(102, 255, 0);
+}
