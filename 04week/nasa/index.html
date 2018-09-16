@@ -7,7 +7,13 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
-
+    <script>
+    function sendMessage(){
+        alert('Thank you for contacting us.')
+        document.getElementById("text").value = "";
+        document.getElementById("textTwo").value = "";
+    }
+    </script>
   </head>
 
   <body>
@@ -39,10 +45,10 @@
           <div>CONTACT US</div>
           <div class="formContainer">
             <div class="textContainer">Name</div>
-            <div><input type="text"></div>
+            <div><input type="text"  id = "text"></div>
             <div class="textContainer">Message</div>
-            <div><input type="text"></div>
-            <div><button class="formSubmit">send</button></div>
+            <div><textarea class="message" id = "textTwo"></textarea></div>
+            <div><button class="formSubmit" onclick = "sendMessage()">send</button></div>
             <div></div>
           </div>
         </div>
