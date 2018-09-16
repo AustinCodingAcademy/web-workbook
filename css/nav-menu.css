@@ -88,7 +88,6 @@ main.body-open {
   top: 0;
   left: 0;
   overflow: hidden;
-  overflow-y: auto;
   margin-right: 10px;
   font-family: "Roboto", sans-serif;
   user-select: none;
@@ -128,6 +127,7 @@ main.body-open {
 }
 
 .dropdown-content {
+  overflow: hidden;
   display: none;
 }
 .dropdown-content.open {
@@ -177,12 +177,8 @@ main.body-open {
   transition: all 200ms ease-in-out;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: #303030;
-}
-::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,.3);
+/* Scrollbar */
+.ss-scroll {
+  background: rgba(255, 255, 255, 0.3);
+  cursor: default;
 }
