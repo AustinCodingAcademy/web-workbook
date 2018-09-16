@@ -90,6 +90,8 @@ main.body-open {
   top: 0;
   left: 0;
   overflow: hidden;
+  overflow-y: auto;
+  margin-right: 10px;
   font-family: "Roboto", sans-serif;
   user-select: none;
   font-weight: lighter;
@@ -174,4 +176,19 @@ main.body-open {
 }
 .transition-all {
   transition: all 200ms ease-in-out;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #303030;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,.3);
 }
