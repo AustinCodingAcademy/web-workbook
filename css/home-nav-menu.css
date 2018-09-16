@@ -5,7 +5,6 @@
 .nav-menu {
   z-index: 1;
   position: fixed;
-  width: 250px;
   top: 0;
   left: 0;
   overflow: hidden;
@@ -56,30 +55,34 @@
 
 .dropdown-content {
   display: none;
+  max-width: 85px;
 }
 .dropdown-content.open {
   display: flex;
   flex-direction: column;
   margin-bottom: 1em;
+  margin-left: 15px;
+  border-left: solid rgba(255,255,255,0.3) 1px;
 }
 
 .week,
 .nav-link {
-  padding: 1em 1em;
+  padding: 1em 1em 1em 1em;
   display: block;
   border: none;
   background-color: transparent;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: #E0E0E0;
   cursor: pointer;
 }
 .week {
   padding-left: 10px;
   transition: all 200ms ease-in-out;
+  border-bottom: rgba(255,255,255,0.3) solid 1px;
 }
 .nav-link {
-  font-size: 1rem;
+  font-size: .9rem;
   display: block;
   padding: .5em;
   transition: all 100ms ease-in-out;
