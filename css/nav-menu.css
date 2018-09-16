@@ -21,41 +21,39 @@ main.body-open {
   color: #E0E0E0;
   font-size: 1.5rem;
   font-weight: lighter;
-  padding: 1em 0;
+  padding: 1rem 0;
   padding-left: 10px;
-}
-.nav-title span {
-  font-weight: 400;
-}
-.nav-title .red {
-  color: hsl(5, 48%, 51%);
-}
-.nav-title .blue {
-  color: hsl(207, 82%, 66%);
 }
 .nav-home {
   color: #E0E0E0;
   text-decoration: none;
+  margin-left: .625rem;
 }
 .nav-home:hover {
   color: hsl(5, 48%, 51%);
 }
-.nav-home::before {
-  font-family: 'Font Awesome\ 5 Free';
-  font-weight: 900;
-  margin-right: .2em;
-  content:'\f518';
+.nav-collapse-all {
+  font-size: 1rem;
+  right: 22px;
+  text-align: right;
+  background: none;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  color: #E0E0E0;
+  cursor: pointer;
 }
 
 .nav-toggler {
   position: fixed;
   opacity: .3;
-  top: .2em;
-  left: .2em;
+  top: .2rem;
+  left: .2rem;
   cursor: pointer;
   z-index: 100;
   background: #303030;
-  padding: 0 .3em;
+  padding: 0 .3rem;
   border-radius: 3px;
 }
 .nav-toggler:hover {
@@ -70,7 +68,7 @@ main.body-open {
   content: '';
   display: block;
   height: 3px;
-  width: 1.2em;
+  width: 1.2rem;
   margin: 4px 0;
   border-radius: 3px;
   background: #E0E0E0;
@@ -116,7 +114,7 @@ main.body-open {
 .dropdown.current-folder span::after {
   font-family: 'Font Awesome\ 5 Free';
   font-weight: 900;
-  margin-right: .2em;
+  margin-right: .2rem;
 }
 .dropdown span::before {
   content: "\f105";
@@ -135,12 +133,12 @@ main.body-open {
 .dropdown-content.open {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 .week,
 .nav-link {
-  padding: 1em 0;
+  padding: 1rem 0;
   display: block;
   border: none;
   background-color: transparent;
@@ -159,9 +157,10 @@ main.body-open {
 .nav-link {
   font-size: 1rem;
   display: block;
-  padding: .5em;
+  padding: .5rem;
 }
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
   transform: translateX(10px);
   cursor: pointer;
 }
@@ -178,17 +177,12 @@ main.body-open {
   transition: all 200ms ease-in-out;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 10px;
 }
-
-/* Track */
 ::-webkit-scrollbar-track {
   background: #303030;
 }
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgba(0,0,0,.3);
 }

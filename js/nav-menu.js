@@ -32,24 +32,40 @@ main.addEventListener('click', _ => { // close navbar if user clicks off navbar 
 const currPagePath = "../.." + window.location.pathname
 const currPageRef = document.querySelector('a[href="' + currPagePath + '"]')
 
-// add current-page class to current page
+// add current-page class to current page and make it a variable
 currPageRef.classList.add('current-page')
-
+let currPage = document.querySelector('.current-page')
 
 // traverse through each group of links to identify which group has the current page,
 // also handles opening and closing of groups
 let dropdown = document.querySelectorAll('.dropdown')
-let currPage = document.querySelector('.current-page')
+
+let collapseBtn = document.querySelector('.nav-collapse-all')
+collapseBtn.addEventListener('click', collapseAll)
 
 for(var i=0; i<dropdown.length; i++) {
-  dropdown[i].addEventListener('click', toggle, false)
+  dropdown[i].addEventListener('click', toggle)
 
+  // make sure the current page's group is open on page load
   if(dropdown[i].contains(currPage)) {
     dropdown[i].classList.add('current-folder')
+    dropdown[i].classList.add('open')
+    dropdown[i].querySelector('.dropdown-content').classList.add('open')
   }
 }
-
 function toggle() {
   this.classList.toggle('open')
   this.lastElementChild.classList.toggle('open')
+}
+function collapseAll() {
+  for(var i=0; i<dropdown.length; i++) {
+    dropdown[i].classList.remove('open')
+    dropdown[i].querySelector('.dropdown-content').classList.remove('open')
+  }
+}
+function openAll() {
+  for(var i=0; i<dropdown.length; i++) {
+    dropdown[i].classList.add('open')
+    dropdown[i].querySelector('.dropdown-content').classList.add('open')
+  }
 }
