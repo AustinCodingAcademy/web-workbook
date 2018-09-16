@@ -32,7 +32,7 @@ main.body-open {
 .nav-home:hover {
   color: hsl(5, 48%, 51%);
 }
-.nav-collapse-all {
+.nav-open-close-all {
   font-size: 1rem;
   right: 22px;
   text-align: right;
@@ -43,6 +43,15 @@ main.body-open {
   padding: 0;
   color: #E0E0E0;
   cursor: pointer;
+}
+.nav-open-close-all::before {
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 900;
+  font-size: 1.3rem;
+  content: "\f103";
+}
+.nav-open-close-all.closed::before {
+  content: "\f101";
 }
 
 .nav-toggler {

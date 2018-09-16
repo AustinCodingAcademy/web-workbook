@@ -40,8 +40,8 @@ let currPage = document.querySelector('.current-page')
 // also handles opening and closing of groups
 let dropdown = document.querySelectorAll('.dropdown')
 
-let collapseBtn = document.querySelector('.nav-collapse-all')
-collapseBtn.addEventListener('click', collapseAll)
+let openCloseAll = document.querySelector('.nav-open-close-all')
+openCloseAll.addEventListener('click', openClose)
 
 for(var i=0; i<dropdown.length; i++) {
   dropdown[i].addEventListener('click', toggle)
@@ -57,15 +57,24 @@ function toggle() {
   this.classList.toggle('open')
   this.lastElementChild.classList.toggle('open')
 }
-function collapseAll() {
-  for(var i=0; i<dropdown.length; i++) {
-    dropdown[i].classList.remove('open')
-    dropdown[i].querySelector('.dropdown-content').classList.remove('open')
+function openClose() {
+  if(this.classList.contains('closed')) {
+    openAll()
   }
+  else {
+    closeAll()
+  }
+  this.classList.toggle('closed')
 }
 function openAll() {
   for(var i=0; i<dropdown.length; i++) {
     dropdown[i].classList.add('open')
     dropdown[i].querySelector('.dropdown-content').classList.add('open')
+  }
+}
+function closeAll() {
+  for(var i=0; i<dropdown.length; i++) {
+    dropdown[i].classList.remove('open')
+    dropdown[i].querySelector('.dropdown-content').classList.remove('open')
   }
 }
