@@ -11,15 +11,16 @@ const navToggle   = document.querySelector('.nav-toggler')
 const navMenu     = document.querySelector('.nav-menu')
 const main        = document.getElementsByTagName('main')[0]
 
+// preset some classes to accomodate navbar being open
 pageContent.classList.add('body-open')
 pageContent.classList.add('transition-transform')
 
-navToggle.addEventListener('click', _ => {
+navToggle.addEventListener('click', _ => { // toggle navbar when user clicks hamburger
   pageContent.classList.toggle('body-open')
   navToggle.classList.toggle('nav-open')
   navMenu.classList.toggle('nav-open')
 })
-main.addEventListener('click', _ => {
+main.addEventListener('click', _ => { // close navbar if user clicks off navbar while it is open
   if(navMenu.classList.contains('nav-open')) {
     pageContent.classList.remove('body-open')
     navToggle.classList.remove('nav-open')
