@@ -1,45 +1,46 @@
 
+/*styles header*/
 header {
-    font-size:20px;
+    font-size:30px;
     color:turquoise;
     text-align:center;
 }
+/*sets background image*/
 body {
     background-image:url("../images/200321206-001.jpg");
     background-size:cover;
 }
+/*grid and size settings for main*/
 main {
     display:grid;
     grid-template-columns: 1fr 1fr;
     width:1000px;
     height:600px;
-    border:2px dashed green;
     margin:auto;
 }
+/*sets grid for data display in content div*/
 #content {
     width:500px;
     height:600px;
     grid-column:1fr;
-    border:1px solid orange;
     text-align:center;
     background-color:white;
 }
-#catnip:hover & {
-    transform: scale(2);
-}
+/*cat nip image settings*/
 #catNip {
     width:200px;
     height:250px;
     margin-top:100px;
   }
-  
+  /*current total display box*/
   #currentTotal {
     width:150px;
     height:50px;
-    border:1px solid black;
     margin-left:175px;
     font-size: 48px;
+    margin-bottom:10px;
   }
+  /*button styling*/
   #buttons{
       width:400px;
       margin-left:100px;
@@ -52,6 +53,7 @@ main {
     text-align: center;
     cursor:pointer;
   }
+/*sets grid for image displays in kitties div*/
   #kitties {
       width:600px;
       height:600px;
@@ -62,31 +64,36 @@ main {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   }
+  /*settings for grid display/image display in kitties div*/
   .fert {
       grid-column: 1fr;
       grid-row:1fr;
   }
   .fert > img {
-      width:200px;
+      width:90%;
+      height:90%;
   }
   .kitt {
     grid-column: 1fr;
     grid-row:1fr; 
   }
   .kitt > img {
-      width:250px;
+      width:90%;
+      height:90%;
   }
   .ca {
     grid-column: 1fr;
     grid-row:1fr;
   }
   .ca > img {
-      width: 300px;
+      width: 90%;
+      height:90%;
   }
   .clow {
     grid-column: 1fr;
     grid-row:1fr;
   }
   .clow > img {
-      width:300px;
+      width:90%;
+      height:90%;
   }
