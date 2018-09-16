@@ -16,7 +16,7 @@ var data = {
   //updates the current total with new data
   function updateReport() {
     $("#currentTotal").text(Math.floor(data.totalCurrent));
-    $("#rps").text((data.totalSpeed/70.4).toFixed(3));
+    $("#rps").text((data.totalSpeed).toFixed(0));
   }
   //adds value to the current total when the catNip id is clicked
   $("#catNip").click(function (){
@@ -37,7 +37,6 @@ var data = {
   });
 // code to add images on button clicks
   $("#fertilizer").click(function () {
-    console.log($(this).data( "cost" ), data.totalCurrent);
       if ($('.fert').children().length === 0){
         $('.fert').prepend('<img src="https://www.orau.org/ptp/collection/consumer%20products/fertilizer.jpg"></img>');
       } else if ($('.fert').children().length === 1){
