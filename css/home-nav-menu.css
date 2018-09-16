@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+
+/* ----------------------------------- */
+/* nav-menu main */
+.nav-menu {
+  z-index: 1;
+  position: fixed;
+  width: 250px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  transition: transform 250ms ease-in-out;
+  user-select: none;
+  font-weight: lighter;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-logo {
+  padding: 1em 1em;
+  text-decoration: none;
+}
+.nav-logo i {
+  color: #E0E0E0;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(0,0,0,.3);
+}
+.dropdown:last-of-type {
+  border-bottom: 1px solid rgba(0,0,0,.3);
+}
+.dropdown span::before,
+.dropdown.open span::before,
+.dropdown.current-folder span::after {
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 900;
+  margin-right: .2em;
+}
+.dropdown span::before {
+  content: "\f105";
+}
+.dropdown.current-folder span::before {
+  color: hsl(5, 48%, 51%);
+}
+.dropdown.open span::before {
+  content: "\f107";
+  font-style: normal;
+}
+
+.dropdown-content {
+  display: none;
+}
+.dropdown-content.open {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.week,
+.nav-link {
+  padding: 1em 1em;
+  display: block;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #E0E0E0;
+  cursor: pointer;
+}
+.week {
+  padding-left: 10px;
+  transition: all 200ms ease-in-out;
+}
+.nav-link {
+  font-size: 1rem;
+  display: block;
+  padding: .5em;
+  transition: all 100ms ease-in-out;
+}
+.nav-link:hover {
+  transform: translateX(10px);
+  cursor: pointer;
+}
+
+.nav-link.current-page {
+  color: hsl(5, 48%, 51%);
+}

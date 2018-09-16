@@ -6,13 +6,11 @@ body {
   overflow-x: hidden;
 }
 main {
-  transform: translateX(225px);
-  transition: transform 250ms ease-in-out;
-}
-main.body-open {
   transform: translateX(0);
 }
-
+main.body-open {
+  transform: translateX(225px);
+}
 /* ----------------------------------- */
 /* nav-menu header */
 .nav-container { 
@@ -38,7 +36,6 @@ main.body-open {
 .nav-home {
   color: #E0E0E0;
   text-decoration: none;
-  transition: all 200ms ease-in-out;
 }
 .nav-home:hover {
   color: hsl(5, 48%, 51%);
@@ -47,7 +44,7 @@ main.body-open {
   font-family: 'Font Awesome\ 5 Free';
   font-weight: 900;
   margin-right: .2em;
-  content:'\f015';
+  content:'\f518';
 }
 
 .nav-toggler {
@@ -60,7 +57,6 @@ main.body-open {
   background: #303030;
   padding: 0 .3em;
   border-radius: 3px;
-  transition: transform 250ms ease-in-out;
 }
 .nav-toggler:hover {
   opacity: 1;
@@ -77,7 +73,6 @@ main.body-open {
   width: 1.2em;
   margin: 4px 0;
   border-radius: 3px;
-  transition: all 200ms ease;
   background: #E0E0E0;
 }
 .nav-open .bar1 {transform: translateY(14px) translateY(-7px) rotateZ(45deg);}
@@ -96,7 +91,6 @@ main.body-open {
   left: 0;
   overflow: hidden;
   font-family: "Roboto", sans-serif;
-  transition: transform 250ms ease-in-out;
   user-select: none;
   font-weight: lighter;
   height: 100%;
@@ -155,7 +149,6 @@ main.body-open {
 }
 .week {
   padding-left: 10px;
-  transition: all 200ms ease-in-out;
 }
 .week:hover,
 .week:focus {
@@ -165,7 +158,6 @@ main.body-open {
   font-size: 1rem;
   display: block;
   padding: .5em;
-  transition: all 100ms ease-in-out;
 }
 .nav-link:hover {
   transform: translateX(10px);
@@ -174,4 +166,12 @@ main.body-open {
 
 .nav-link.current-page {
   color: hsl(5, 48%, 51%);
+}
+
+/* TRANSITION CLASSES */
+.transition-transform {
+  transition: transform 250ms ease-in-out;
+}
+.transition-all {
+  transition: all 200ms ease-in-out;
 }
