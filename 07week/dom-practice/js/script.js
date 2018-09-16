@@ -1,7 +1,11 @@
 'use strict';
 
 document.addEventListener("DOMContentLoaded", function(event) {
+
+
 window.onload = function(){
+
+document.getElementByID("shopping-cart").innerHTML = "Hello World!";
 
   var count = document.querySelectorAll('li')
 
