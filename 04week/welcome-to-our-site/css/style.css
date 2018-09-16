@@ -25,17 +25,18 @@ header {
 
 main {
   background-color: #1B1B1B;
+  height: 50vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  font-size: 2vh;
 }
 
 .container {
-  height: 50vh;
+
   color: white;
-  width: 20vw;
-  margin-top: 4vh;
+  width: 25%;
   text-align: center;
 }
 
@@ -60,6 +61,22 @@ main {
 
 
 @media (max-width: 400px) {
-  main { flex-direction: column; }
-  header { background-color: #3BA9DB; }
+  main { 
+    flex-direction: column; 
+    justify-content: space-around;
+    background-color: #F7F5F6;
+    height: 100vh; 
+    font-size: 2vh;  
+  }
+  .container {
+    color: #131112;
+    min-width: 46%;
+    text-align: center;
+  }
+  header { 
+    background-color: #3BA9DB; }
+  header p {
+    margin: 6vh;
+    font-size: 6vh;
+  }
 }
