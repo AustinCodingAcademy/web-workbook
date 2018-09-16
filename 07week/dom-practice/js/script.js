@@ -31,12 +31,25 @@ window.onload = function() {
   }
 
   function addItem(event){
-    let newItemText = document.getElementByID("input-text");
+    let newItemText = document.getElementById("input-text");
     let newItem = document.createElement("li");
     newItem.innerHTML = newItemText.value;
     document.getElementsByTagName("ul")[0].appendChild(newItem);
-    document.getElementByID('input-text').value='';
-    cartCount();
+    document.getElementById('input-text').value='';
+    insertRemoveItem();
+    updateCartCount();
   }
+
+function updateCartCount(){
+  let h2 = document.getElementById("item-count");
+  h2.innerHTML = 'You have ' + document.getElementsByTagName("ul")[0] + ' items in your shopping cart';
+}
+
+function insertRemoveItem(items){
+  let removeButton = document.createElement('button');
+  removeButton.innerHTML = "Remove";
+  items.appendChild(removeButton);
+  removeButton.onclick = eraseItems;
+}
 
 }
