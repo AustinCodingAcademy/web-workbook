@@ -19,7 +19,7 @@ let inputBox = document.querySelector("ul");
   }
 
   function removeIt(elem){
-    //alert(elem.innerHTML);
+    // alert(elem.innerHTML);
     elem.parentElement.remove();
   }
 
