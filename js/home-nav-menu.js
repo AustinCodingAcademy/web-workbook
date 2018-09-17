@@ -1,15 +1,22 @@
-// get current page HTML link (nav-menu.html), then insert it before current page <main>
+
+/** ==============================================
+ *  IMPORTS AND INSERTS HTML link (nav-menu.html) 
+ *  ==============================================
+ * */
+
+ /** ______________________________________________________________________________________
+ *  get current page HTML link (nav-menu.html), then insert it before current page <main>
+ *  */
 var link    = document.querySelector('link[rel="import"]');
 var content = link.import;
-var el      = content.querySelector('.nav-container');
-
+var el = content.querySelector('.nav-container');
 document.body.insertBefore(el.cloneNode(true), document.getElementsByTagName('main')[0]);
 
-// --------------------------------------------------------------
-// INITIALIZE PAGE
-// --------------------------------------------------------------
 
-// get necessary elements to animate opening and closing of nav-menu
+/** =======================
+ *  INIT PAGE VARIABLES
+ *  =======================
+ * */
 const pageContent     = document.body.getElementsByTagName('main')[0]
 const homePageContent = document.querySelector('.content')
 const navToggle       = document.querySelector('.nav-toggler')
@@ -17,62 +24,84 @@ const navMenu         = document.querySelector('.nav-menu')
 const main            = document.getElementsByTagName('main')[0]
 const dropdown        = document.querySelectorAll('.dropdown')
 const currPage        = document.querySelector('.current-page')
-
 pageContent.classList.add('transition-transform')
-
-for(var i=0; i<dropdown.length; i++) {
-  dropdown[i].addEventListener('click', toggle)
-}
-
-// turn navMenu into a SimpleScrollbar element
 SimpleScrollbar.initEl(navMenu)
-// --------------------------------------------------------------
 
-// --------------------------------------------------------------
-// OPEN / CLOSE ENTIRE NAV MENU
-// --------------------------------------------------------------
 
-navToggle.addEventListener('click', _ => { // toggle navbar when user clicks hamburger
+/** =======================
+ *  OPEN / CLOSE NAV-MENU
+ *  =======================
+ * */
+navToggle.addEventListener('click', _ => { // toggle navbar when user clicks navToggle button
   pageContent.classList.toggle('body-open')
   homePageContent.classList.toggle('nav-open')
   navToggle.classList.toggle('nav-open')
   navMenu.classList.toggle('nav-open')
 })
-main.addEventListener('click', _ => { // close navbar if user clicks off navbar while it is open
+main.addEventListener('click', _ => { // close navbar if user clicks main content of page
   if(navMenu.classList.contains('nav-open')) {
     pageContent.classList.remove('body-open')
     navToggle.classList.remove('nav-open')
     navMenu.classList.remove('nav-open')
   }
 })
-// --------------------------------------------------------------
 
 
-// traverse through each group of links to identify which group has the current page,
-// also handles opening and closing of groups
-var addedEventListener = false
+/** =================================================
+ *  DROPDOWN MOUSOVER / CLICK EVENT LISTENER CONTROL
+ *  =================================================
+ * */
+for(var i=0; i<dropdown.length; i++) { // always load page with click listeners
+  dropdown[i].addEventListener('click', toggle)
+}
 
-toggleHover()
-window.addEventListener("resize", toggleHover)
+/** _______________________________________________
+ *  initialize window size variables on page load
+ */
+var addedHover = false
+const widthThreshold = "(max-width: 768px)"
+var windowSmall = window.matchMedia(widthThreshold)
+toggleMouseoverListener() // check window size once on page load
 
-function toggleHover() {
-  if (!window.matchMedia("(max-width: 768px)").matches && !addedEventListener){
+// listen for any window resizing and add/remove mouseover listeners accordingly
+window.addEventListener("resize", toggleMouseoverListener)
+
+
+/** ______________________________________________________________________________
+ *  toggleMouseoverListener dynamically adds/removes mouseover event listeners to 
+ *  nav-menu dropdown elements depending on window size (const widthThreshold)
+ *  */
+function toggleMouseoverListener() {
+  /** _________________________________________________________________
+   *  when window is resized from <widthThreshold to >widthThreshold
+   *  or if window loads at >widthThreshold
+   *  */
+  if (!windowSmall.matches && !addedHover){ 
+    console.log ("!windowSmall & !addedHover")
     for(var i=0; i<dropdown.length; i++) {
       dropdown[i].addEventListener('mouseover', open)
       dropdown[i].addEventListener('mouseout', close)
     }
-    addedEventListener = true
+    addedHover = true
     closeAll()
   }
-  else if (window.matchMedia("(max-width: 768px)").matches && addedEventListener) {
+  /** ____________________________________________________________________________
+   *  when window is resized to <widthThreshold and mouseover listeners have already 
+   *  been added
+   *  */
+  else if (windowSmall.matches && addedHover) {
+    console.log ("windowSmall & addedHover")
     for(var i=0; i<dropdown.length; i++) {
       dropdown[i].removeEventListener('mouseover', open)
       dropdown[i].removeEventListener('mouseout', close)
     }
-    addedEventListener = false
+    addedHover = false
   }
 }
 
+/** ____________________________________________________________
+ *  functions to be called by mouseover / click event listeners
+ */
 function open() {
   this.classList.add('open')
   this.lastElementChild.classList.add('open')
