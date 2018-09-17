@@ -1,21 +1,21 @@
 
 /** ==============================================
- *  IMPORTS AND INSERTS HTML link (nav-menu.html) 
- *  ==============================================
- * */
+*  IMPORTS AND INSERTS HTML link (nav-menu.html) 
+*  ==============================================
+* */
 
- /** ______________________________________________________________________________________
- *  get current page HTML link (nav-menu.html), then insert it before current page <main>
- *  */
+/** ______________________________________________________________________________________
+*  get current page HTML link (nav-menu.html), then insert it before current page <main>
+*  */
 var link    = document.querySelector('link[rel="import"]');
 var content = link.import;
 var el = content.querySelector('.nav-container');
 document.body.insertBefore(el.cloneNode(true), document.getElementsByTagName('main')[0]);
 
 
-/** =======================
- *  INIT PAGE VARIABLES
- *  =======================
+/** ==============================
+ *  INIT PAGE VARIABLES / CLASSES
+ *  ==============================
  * */
 const pageContent     = document.body.getElementsByTagName('main')[0]
 const homePageContent = document.querySelector('.content')
@@ -77,7 +77,6 @@ function toggleMouseoverListener() {
    *  or if window loads at >widthThreshold
    *  */
   if (!windowSmall.matches && !addedHover){ 
-    console.log ("!windowSmall & !addedHover")
     for(var i=0; i<dropdown.length; i++) {
       dropdown[i].addEventListener('mouseover', open)
       dropdown[i].addEventListener('mouseout', close)
@@ -90,7 +89,6 @@ function toggleMouseoverListener() {
    *  been added
    *  */
   else if (windowSmall.matches && addedHover) {
-    console.log ("windowSmall & addedHover")
     for(var i=0; i<dropdown.length; i++) {
       dropdown[i].removeEventListener('mouseover', open)
       dropdown[i].removeEventListener('mouseout', close)
