@@ -1,4 +1,8 @@
 body {
+  overflow: hidden;
+}
+
+body {
   background: #000;
   color: #C0C0C0;
   margin: 0;
@@ -7,7 +11,7 @@ body {
 
 .hero {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .hero::after {
@@ -26,9 +30,11 @@ body {
   display: flex;
   flex-direction: column;
   position: absolute;
+  left: 10rem;
   z-index: 1;
-  text-align: left;
-  margin-left: -35rem;
+}
+.content.nav-open {
+  transform: translateX(250px);
 }
 
 .content #hello {
@@ -58,4 +64,59 @@ body {
 }
 .fade-in.two {
   animation-delay: 3000ms;
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    left: 5rem;
+  }
+  .week,
+  .nav-link {
+  padding: .75rem .35rem .75rem .35rem;
+  }
+  .nav-link {
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    left: 2.5rem;
+  }
+  .week,
+  .nav-link {
+    font-size: .9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+  }
+  .nav-toggler {
+    display: block;
+  }
+  .nav-menu {
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(0,0,0,.3);
+    transform: translateX(-250px);  
+    z-index: 2;
+  }
+  .nav-menu.nav-open {
+    transform: translatex(0);
+    border-right: 1px solid rgba(0,0,0,.3);
+  }
+  .week,
+  .nav-link {
+    border: none;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .content {
+    left: 1rem;
+  }
 }
