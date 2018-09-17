@@ -10,7 +10,7 @@
 var link    = document.querySelector('link[rel="import"]');
 var content = link.import;
 var el = content.querySelector('.nav-container');
-document.body.insertBefore(el.cloneNode(true), document.getElementsByTagName('main')[0]);
+document.body.insertBefore(el.cloneNode(true), document.querySelector('.wrapper'));
 
 
 /** ==============================
@@ -21,6 +21,7 @@ const pageContent     = document.body.getElementsByTagName('main')[0]
 const homePageContent = document.querySelector('.content')
 const navToggle       = document.querySelector('.nav-toggler')
 const navMenu         = document.querySelector('.nav-menu')
+const openCloseAll    = document.querySelector('.nav-open-close-all')
 const main            = document.getElementsByTagName('main')[0]
 const dropdown        = document.querySelectorAll('.dropdown')
 const currPage        = document.querySelector('.current-page')
@@ -63,8 +64,11 @@ const widthThreshold = "(max-width: 768px)"
 var windowSmall = window.matchMedia(widthThreshold)
 toggleMouseoverListener() // check window size once on page load
 
+
 // listen for any window resizing and add/remove mouseover listeners accordingly
 window.addEventListener("resize", toggleMouseoverListener)
+openCloseAll.classList.toggle('closed')
+openCloseAll.addEventListener('click', openClose)
 
 
 /** ______________________________________________________________________________
@@ -111,6 +115,21 @@ function toggle() {
 function close() {
   this.classList.remove('open')
   this.lastElementChild.classList.remove('open')
+}
+function openClose() {
+  if(this.classList.contains('closed')) {
+    openAll()
+  }
+  else {
+    closeAll()
+  }
+  this.classList.toggle('closed')
+}
+function openAll() {
+  for(var i=0; i<dropdown.length; i++) {
+    dropdown[i].classList.add('open')
+    dropdown[i].lastElementChild.classList.add('open')
+  }
 }
 function closeAll() {
   for(var i=0; i<dropdown.length; i++) {

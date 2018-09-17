@@ -1,5 +1,48 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
 
+body {
+  overflow: hidden;
+  margin: 0;
+}
+
+.nav-title {
+  display: none;
+  color: #E0E0E0;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  padding: 1rem 0;
+  padding-left: 10px;
+}
+.nav-home {
+  color: #E0E0E0;
+  text-decoration: none;
+  margin-left: .625rem;
+}
+.nav-home:hover {
+  color: hsl(5, 48%, 51%);
+}
+.nav-open-close-all {
+  font-size: 1rem;
+  right: 22px;
+  text-align: right;
+  background: none;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  color: #E0E0E0;
+  cursor: pointer;
+}
+.nav-open-close-all::before {
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 900;
+  font-size: 1.3rem;
+  content: "\f103";
+}
+.nav-open-close-all.closed::before {
+  content: "\f101";
+}
+
 /* ----------------------------------- */
 /* nav-menu main */
 .nav-menu {
@@ -32,7 +75,10 @@
 .dropdown {
   display: flex;
   flex-direction: column;
-  border-top: 1px solid rgba(0,0,0,.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.dropdown:last-of-type {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .dropdown span::before,
@@ -72,7 +118,7 @@
   background-color: transparent;
   text-decoration: none;
   font-size: 1.1rem;
-  color: #E0E0E0;
+  color: rgba(255, 255, 255, 0.75);
   cursor: pointer;
 }
 .week {
@@ -88,6 +134,7 @@
 .nav-link:hover {
   transform: translateX(10px);
   cursor: pointer;
+  color: hsl(5, 48%, 51%);
 }
 
 .nav-link.current-page {
