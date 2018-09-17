@@ -21,14 +21,15 @@ const pageContent   = document.body.getElementsByTagName('main')[0]
 const navToggle     = document.querySelector('.nav-toggler')
 const navMenu       = document.querySelector('.nav-menu')
 const main          = document.getElementsByTagName('main')[0]
+const dropdown      = document.querySelectorAll('.dropdown')
+const openCloseAll  = document.querySelector('.nav-open-close-all')
 const currPagePath  = "../.." + window.location.pathname
 const currPageRef   = document.querySelector('a[href="' + currPagePath + '"]')
-const dropdown      = document.querySelectorAll('.dropdown')
+
+currPageRef.classList.add('current-page')
 const currPage      = document.querySelector('.current-page')
-const openCloseAll  = document.querySelector('.nav-open-close-all')
 pageContent.classList.add('body-open')
 pageContent.classList.add('transition-transform')
-currPageRef.classList.add('current-page')
 SimpleScrollbar.initEl(navMenu)
 
 
@@ -63,7 +64,7 @@ for(var i=0; i<dropdown.length; i++) {
 
   // make sure the current page's dropdown is open on page load
   if(dropdown[i].contains(currPage)) {
-    dropdown[i].classList.add('current-folder')
+    dropdown[i].classList.add('current-dropdown')
     dropdown[i].classList.add('open')
     dropdown[i].querySelector('.dropdown-content').classList.add('open')
   }
