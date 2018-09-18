@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="./script/main.js"></script>
+</head>
+<body> 
+    <main>
+
+        <header>
+            <h1>Jonny Neutron and his handy Neutron gun</h1>
+        </header>
+        <svg class="mainPic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 15.387 15.387" style="enable-background:new 0 0 15.387 15.387;" xml:space="preserve">
+            <g>
+                <path style="fill:#000000;" d="M13.198,2.492c-1.651-1.651-3.411-2.566-3.933-2.046C9.262,0.45,9.259,0.456,9.255,0.46    C9.251,0.464,9.245,0.466,9.24,0.47L7.457,2.254l0,0L4.195,5.526C4.175,5.551,3.846,6.012,4.57,7.219l-4.357,3.581    c-0.249,0.206-0.285,0.576-0.08,0.826c0.204,0.25,0.575,0.286,0.825,0.08l4.294-3.532C5.533,8.519,5.876,8.9,6.301,9.325    C6.855,9.879,7.339,10.3,7.76,10.618l-3.155,3.488c-0.217,0.24-0.198,0.611,0.042,0.829c0.24,0.218,0.611,0.198,0.828-0.042    l3.286-3.632c1.106,0.559,1.482,0.175,1.44,0.233l3.272-3.272c0.004-0.003,0.005-0.01,0.009-0.014l1.75-1.75    c0.025-0.025,0.042-0.056,0.053-0.089C15.707,5.795,14.801,4.095,13.198,2.492z M14.737,5.857    c-0.296,0.295-1.631-0.562-2.985-1.916c-1.353-1.353-2.21-2.689-1.916-2.984c0.296-0.296,1.631,0.562,2.984,1.916    C14.174,4.225,15.031,5.562,14.737,5.857z"/>
+            </g>
+        </svg>
+        <div class="left">  
+            <div class="chargeContainer">
+                <p>Total Charge: <span class="theCharge">0 MeV</span></p>
+                <input class="sellCharge" type="button" value="Sell">
+            </div>
+            <p>On hand cash <span class="cash">$0.00</span></p>
+            <p>Time of Day    <span class="theactualTime"></span></p>
+            <p>Season: <span class="seeson"></span></p>
+            <p>Electricity Price: <span class="thePrice"></span></p>
+            <div class="gunContainer">
+                <h3>Weapon Stats</h3>
+                <p>Atoms Smashed: <span class="smash"></span></p>
+                <div class="beamLevelContainer">
+                    <p>Beam Power: <span class="beam">1</span> neutrons per shot</p>
+                    <input class="upgradeBeam" data-beam="1" type="button" value="⇧">
+                    <input class="upgradeBeam" data-beam="all" type="button" value="⇪">
+                </div>
+                <div class="upgrades">
+                    <p>Next Level: <span class="leveler"></span></p>
+                    <div class="gunpoint">
+                        <p>Upgrade Points <span class="gunpoints"></span></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="middle">
+            <h3>Projects</h3>
+            <div class="projectContainer">
+                <button class="projectButton disabled autoFire">The love of your project causes compromise in morals, steal servo from neighbor, enable autofire(unlock at 5000 atoms smashed)</button>
+                <button data-enable-atoms="1000000" data-cost-atoms="10000000" class="projectButton disabled upgradeAuto invisible">Add more power, you don't know why this works but it does, upgrade autofire(unlock at <span class="cost"></span> atoms smashed)</button>
+                <button data-enable-atoms="100000000" data-cost-atoms="1000000000" class="projectButton disabled upgradeAuto invisible">You aren't a mechanical engineer, but wiki helps you pretend, autofire upgrade(unlock at <span class="cost"></span> atoms smashed)</button>
+                <button data-enable-atoms="1000000000000" data-cost-atoms="100000000000000" class="projectButton disabled upgradeAuto invisible">Go to a meetup on robots, major autofire upgrade(unlock at <span class="cost"></span> atoms smashed)</button>
+                <button data-enable-atoms="1000000000000000" data-cost-atoms="100000000000000000" class="projectButton disabled upgradeAuto invisible">You forgot you knew a mechenical engineer, he fixes all your mistakes, Max autofire upgrade(unlock at <span class="cost"></span> atoms smashed)</button>
+                <button data-enable-money="1" data-cost-money="100" class="projectButton disabled upgradeAuto invisible">You forgot you knew a mechenical engineer, he fixes all your mistakes, Max autofire upgrade(unlock at <span class="cost"></span> atoms smashed)</button>
+
+
+            </div>
+        </div>
+        <div class="right">
+
+        </div>
+    </main>
+</body>
+</html>
