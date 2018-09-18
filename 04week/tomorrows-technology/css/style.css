@@ -1,0 +1,125 @@
+body {
+    background-color: white;
+    border: 1px solid black;
+    padding: 0;
+    border: 0;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.the-biggest-container {
+    width: 75%;
+}
+
+img {
+    width: 75%;
+    padding: 60px 20px 20px 40px;
+}
+
+.tomorrow-technology {
+    padding-left: 40px;
+    width: 80%;
+}
+
+h1 {
+    font-family: Arial;
+    font-size: 40%;
+    color: rgb(50, 47, 47);
+}
+
+h2 {
+    color: rgb(50, 47, 47);
+    font-family: Arial;
+    font-size: 30%;
+    text-align: left;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    flex-shrink: initial;
+}
+
+.top-stories {
+    text-transform: uppercase;
+    color: rgb(50, 47, 47);
+    font-family: Arial;
+    font-size: 30px;
+    border-bottom: 1px solid black;
+   
+}
+
+.lower-p {
+    color: rgb(50, 47, 47);
+    font-family: Arial;
+    font-size: 20px;  
+    font-weight: bold;
+  
+}
+button{
+    background-color: rgb(50, 47, 47);
+    text-transform: uppercase;
+    font-family: Arial;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+.grey-container { background-color: rgb(50, 47, 47);
+}
+
+.useful-links {
+    color: white;
+    font-weight: bold;
+  
+}
+.useful-links ul li {
+    color: white;
+    border-bottom: 1px solid white;
+    font-family: Arial;
+    font-size: 20px;
+}
+.social-media {
+    color: white;
+    font-weight: bold;
+  
+}
+.social-media ul li {
+    color: white;
+    border-bottom: 1px solid white;
+    font-family: Arial;
+    font-size: 20px;
+}
+@media only screen and (min-width : 1224px) {
+    .grey-container {
+        visibility: hidden;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .grey-container {
+        visibility: hidden;
+    }
+    .aside {
+        visibility: hidden;
+    }
+         }
+
+@media (max-width: 768px) {
+    .aside {
+        visibility: hidden;
+    }
+   
+    .grey-container {
+        flex-direction: column;
+        visibility: visible;
+    }
+}
