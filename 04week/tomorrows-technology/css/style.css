@@ -1,3 +1,6 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
 .masterContainer{
     display: flex;
     flex-direction: column;
@@ -11,6 +14,7 @@
     flex-direction: row;
     align-items: flex-start;
     height: auto;
+    transition: 1s;
 }
 .topContainer{
     display: flex;
@@ -28,6 +32,7 @@
     height: auto;
     margin-left: 15px;
     font-weight: bold;
+    transition: 1s;
 }
 
 .rightContainer>div:nth-of-type(1){
@@ -44,6 +49,7 @@
     display: none;
     justify-content: space-evenly;
     background-color: rgb(63, 61, 61);
+    transition: 1s;
 }
 
 .bottomOuterContainer>div:nth-of-type(1){
@@ -70,6 +76,7 @@
 }
 
 .bottomOuterContainer>div>div:nth-of-type(1){
+    font-weight: bold;
     font-size: 20px;
     border: 0;
     margin-top: 10px;
@@ -100,6 +107,47 @@
     margin-top: 5px;
 
 }
+
+.bottomOuterContainer>.bottomInnerContainer:nth-of-type(2)>div:nth-of-type(2){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.bottomOuterContainer>.bottomInnerContainer:nth-of-type(2)>div:nth-of-type(3){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.bottomOuterContainer>.bottomInnerContainer:nth-of-type(2)>div:nth-of-type(4){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.facebook{
+    background-image: url("../img/facebook.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 19px;
+}
+.instagram{
+    background-image: url("../img/instagram.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 23px;
+    height: 19px;
+}
+.twitter{
+    background-image: url("../img/twitter.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 23px;
+    height: 19px;
+}
+
 @media screen and (max-width: 768px){
     .rightContainer{
         display: none;
