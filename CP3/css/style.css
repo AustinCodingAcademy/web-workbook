@@ -1,35 +1,40 @@
+body {
+	margin: 0;
+   text-align: center;
+   font-family: 'Audiowide';
+}
+
+.pad {
+	padding: 5em 0;
+}
+
 .grid1{
-  display: grid; /*just setting up the grid*/
+  display: grid; 
   grid-template-columns: auto  auto auto auto;
  }
  
- .row1{/*header*/
-   background-color:pink;
+ .row1{
+   background-color: #f75a53;
+	color: #FFF;
    grid-column-start:1;
    grid-column-end:5;
    grid-row-start:1;
    grid-row-end:2;
-   text-align: center;
-   font-family: 'Audiowide';
-   margin-bottom: 4em;
  }
  
  .sec1{
-  background-image: url("../css/Fist_Hand_Emoji_large\ \(1\).png");/*section for the counter and an image*/
-  background-position: center;
-   background-size: contain;
-   background-repeat: no-repeat;
+	 background-color: #f9ee30;
    grid-column-start:1;
    grid-column-end:3;
    grid-row-start:2;
    grid-row-end:4;
-   height: 200px;
    text-align: center;
  }
  
 
  .sec2{
-   background-image: url("../css/Pink.jpg");/*this is where it all starts to fall apart*/
+	 background-color: #413d92;
+   background-image: url("../css/Pink.JPG");
    background-position: center;
    background-size: contain;
    background-repeat: no-repeat;
@@ -40,36 +45,53 @@
    
  }
 
+ #toast-container {
+	 position: absolute;
+	top: 15em;
+	right: 5em;
+}
 
+.fist {
+	background-image: url("../css/Fist_Hand_Emoji_large (1).png");
+  background-position: center;
+   background-size: contain;
+   background-repeat: no-repeat;
+	height: 400px;
+   width: 400px;
+	margin: 0 auto;
+}
 
- #robotCounter {
-   height: 200px;
-   width: 200px;
+.fist a{
+	display: block;
+   height: 400px;
+   width: 400px;
    text-align: center;
  }
-
+.boom {
+	position: relative;
+	background-image: url("../css/comic-boom-explosion-2-4.png");
+  background-position: center;
+   background-size: contain;
+   background-repeat: no-repeat;
+	 width: 200px; 
+	 height: 200px;
+	margin: 0 auto;
+	top: 30px;
+}
  .count {
    position: relative;
    color: red;
    font-size: 2em;
    font-weight: bold;
-   top: 50px;
-
+   top: 75px;
  }
 
 
  footer{
-   background-color: darkgray;
+   background-color: #1fa4c7;
+	 color: #FFF;
    grid-column-start:1;
    grid-column-end:5;
    grid-row-start:4;
    grid-row-end:5;
-   text-align: center;
-   font-family: 'Audiowide';
-   margin-top: 4em;
- }
-
- .robots{
-   background-image: url("../css/Pink.JPG");
-   background-size: contain;
  }
