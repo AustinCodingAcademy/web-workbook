@@ -9,11 +9,16 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <a href="https://www.w3schools.com/html/">Complains</a>
+    <a href="https://www.w3schools.com/html/">Jose's Webwork Website </a>
+  
  
    <div> <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-        Name:<br>
-        <input type="text" name="name"><br>
+    <form>
+        First name:<br>
+        <input type="text" name="firstname"><br>
+        Last name:<br>
+        <input type="text" name="lastname">
+      </form>
         E-mail:<br>
         <input type="text" name="mail"><br>
         Comment:<br>
@@ -21,14 +26,65 @@
         <input type="submit" value="Send">
         <input type="reset" value="Reset">
         </form>
-        <input type="checkbox" name="checkbox" value="Bike"> Check here<br>
-        <form action="">
-            <input type="radio" name="gender" value="male"> Male<br>
-            <input type="radio" name="gender" value="female"> Female<br>
-            <input type="radio" name="gender" value="other"> Other
-          </form>
-          <input type="range" name="points" min="0" max="10">
+        
+          <h3>SpellCheck</h3>      
+    <form>
+        <p>
+            <input type="text" spellcheck="true">
+        </p>
+        <p>
+            <textarea spellcheck="true"></textarea>
+        </p>
+        <button type="reset">Reset</button>
+    </form>
 
-        </div>
+
+</div>
+
+<div class="container">
+    <div class="container-inner">
+      <h1 id="title">Customer Satisfaction Survey</h1>
+  
+      <h3 id="description">Tell us about your experience</h3>
+  
+      <form action="#" id="survey-form">
+        <label for="q1">How satisfied are you with our service today?</label>
+        <select name="q1" id="satisfaction">
+      <option value="very-satisfied">Very satisfied</option>
+      <option value="satisfied">Satisfied</option>
+      <option value="not-very-satisfied">Not very satisfied</option>
+      <option value="unsatisfied">Unsatisfied</option>
+    </select>
+  
+        <label for="q2">Is this the first time you have used our service?</label>
+        <select name="q2" id="service-use">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+  
+        <label for="q3">If you have used our service before, how many times in the past year?</label>
+        <input type="text" name="q3">
+  
+        <label for="q4">Would you recommend us to a friend?</label>
+        <select name="q4" id="q4">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+  
+        <button action="submit" id="submit">Submit</button>
+  
+      </form>
+  
+    </div>
+  
+  </div>
+
+
+
+
 </body>
+
+
+
+
 </html>
