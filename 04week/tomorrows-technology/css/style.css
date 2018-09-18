@@ -1,7 +1,8 @@
 body{
     margin:10;
     padding:20;
-    display:flex
+    display:flex;
+    flex-wrap: wrap;
 }
 
 .container{
@@ -15,9 +16,8 @@ body{
 .image{
     background-image: url('../img/bg.jpg');
     display: flex;
-    justify-content: space-around;
-    height: 400px;
-    width: 600px;
+    height: 600px;
+    width: 1050px;
 }
 
 .headlines{
@@ -26,5 +26,25 @@ body{
 
 }
 .top-stories{
-    background-color: blue
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    width: 450px;
+    height: 600px;
 }
+
+.bottom-container{
+    height: 350px;
+    width: 1050px;
+    background-color: purple;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+
+}
+
+@media (min-width: 768px) {
+    .headlines .bottom-container{
+        flex-direction: column;
+    }
+ }
