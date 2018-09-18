@@ -5,8 +5,8 @@
 }
 
 .topbox {
-  width: 100%;
-  height: 50%;
+  width: 100vw;
+  height: 50vh;
   background: #2BCDC0;
   display: flex;
   flex-direction: row;
@@ -19,7 +19,7 @@
 .bottombox {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 100vw;
   background: black;
   justify-content: space-between;
   color: white;
@@ -56,12 +56,26 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 475px;
+    word-wrap: normal;
+    text-align: center;
+  }
+
   .bottombox {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    background-color: lightblue;
+    justify-items: center;
+    align-items: center;
     width: 475px;
+    word-wrap: normal;
+    text-align: center;
   }
+
 }
