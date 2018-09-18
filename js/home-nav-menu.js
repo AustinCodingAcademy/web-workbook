@@ -88,10 +88,10 @@ function toggleMouseoverListener() {
     addedHover = true;
     closeAll();
   } else if (windowSmall.matches && addedHover) {
-  /** ____________________________________________________________________________
-   *  when window is resized to <widthThreshold and mouseover listeners have already
-   *  been added
-   *  */
+    /** ____________________________________________________________________________
+     *  when window is resized to <widthThreshold and mouseover listeners have already
+     *  been added
+     *  */
     for (var i = 0; i < dropdown.length; i++) {
       dropdown[i].removeEventListener('mouseover', open);
       dropdown[i].removeEventListener('mouseout', close);
