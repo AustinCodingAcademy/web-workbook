@@ -1,3 +1,7 @@
+/* tommorow's tech homework assignment - use @media queries to make the website responsive to laptop, tablet and phone */
+
+
+/* this section is for the laptop screen */
 body {
   display: flex;
   flex-direction: row;
@@ -59,6 +63,7 @@ footer {
   display: none;
 }
 
+/* this section is for the tablet screen */
 @media only screen and (max-width: 768px) {
   aside {
     display: none;
@@ -67,11 +72,25 @@ footer {
     height: 90%;
     width: 100%;
   }
+  /* TECHNOLOGY button - shrinks to much if using the same settings for laptop and tablet - made some adjustments for TABLET */
+  .techbutton {
+    text-align: center;
+    width: 17%;
+  }
+
+  .techbutton p {
+    font-size: 1.5vw;
+    background-color: #4D4D4D;
+    padding: .75vh;
+    color: white;
+  }
+
   footer {
     display: none;
   }
 }
 
+/* this section is for the phone screen - notice how much more code the footer adds! */
 @media only screen and (max-width: 425px) {
   body {
     display: flex;
@@ -87,6 +106,19 @@ footer {
     padding: 25px;
   }
 
+  /* TECHNOLOGY button - shrinks to much if using the same settings for laptop and tablet - made some adjustments for PHONE */
+  .techbutton {
+    text-align: center;
+    width: 19%;
+  }
+
+  .techbutton p {
+    font-size: 2vw;
+    background-color: #4D4D4D;
+    padding: .75vh;
+    color: white;
+  }
+
   footer {
     display: flex;
     flex-direction: row;
@@ -96,16 +128,27 @@ footer {
     width: 100%;
   }
   footer img {
-    width: 8%;
+    width: 10%;
   }
 
   footer li {
     list-style-type: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
     font-size: 13px;
+    font-style: unset;
     margin: 10px;
     border-bottom: solid white 1px;
+  }
+
+  footer li:nth-child(1) {
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: none;
+  }
+
+  .picture {
+    float: right;
   }
 
   .usefullinks {
