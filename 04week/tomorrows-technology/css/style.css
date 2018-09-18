@@ -55,12 +55,37 @@ aside li {
   margin-top: 16px;
 }
 
+footer {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   aside {
     display: none;
   }
   .techpic img {
     height: 90%;
+    width: 100%;
+  }
+  footer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+    border: solid black 1px;
+    margin: 2%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans  Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  footer {
+    display: flex;
+    background-color: #5D5D5D;
     width: 100%;
   }
 }
