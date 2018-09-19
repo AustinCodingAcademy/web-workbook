@@ -1,4 +1,4 @@
-function () {
+function Hello() {
   console.log('hello');
     
 }
