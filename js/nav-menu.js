@@ -24,10 +24,10 @@ const main          = document.getElementsByTagName('main')[0]
 const dropdown      = document.querySelectorAll('.dropdown')
 const openCloseAll  = document.querySelector('.nav-open-close-all')
 const currPagePath  = "../.." + window.location.pathname
-const currPageRef   = document.querySelector('a[href="' + currPagePath + '"]')
+const currPageLink   = document.querySelector("a[href='" + currPagePath + "']")
 
-currPageRef.classList.add('current-page')
-const currPage      = document.querySelector('.current-page')
+currPageLink.classList.add('current-page')
+const currPage = document.querySelector('.current-page')
 pageContent.classList.add('body-open')
 pageContent.classList.add('transition-transform')
 SimpleScrollbar.initEl(navMenu)
