@@ -39,6 +39,10 @@ let beamCurve = 1.6;
 let cycleCurve = .5;
 
 
+let smarts = 10001;
+let smartsTimer = null 
+let intelegence = 0;
+
 $(function() {
 
   setInterval(timeOfDay,500);
@@ -62,9 +66,9 @@ $(function() {
     theCharge = 0;
     $(".theCharge").text(theCharge.toLocaleString('en')
     + " " + placeHolder)
-
-
     $(".cash").text("$"+cash.toPrecision(5));
+    $(".middle").removeClass("invisible");
+
     nextMoneyButton();
     //eventually this will need to understand the difference between
     //cost per MeV/Mwh and the like. Right now it is just a flat cacluation
@@ -153,7 +157,27 @@ $(function() {
   });
 
 
+  $(".money").click(function(){
+    if(!$(this).hasClass("disabled")){
+      $(".right").removeClass("invisible");
+      let reward = $(this).data("education-reward");
+      let cost = $(this).data("cost-money");
+      cash-+cost;
+      smarts-=reward;
+      smartsTimer=setInterval(getedumacated,smarts);
+      $(this).addClass("clicked");
+      $(".cash").text("$"+cash.toPrecision(5));
+
+    }
+  });
+
 });
+
+
+function getedumacated(){
+  intelegence++;
+  $(".intelegence").text(intelegence);
+}
 
 function autoGun(){
   fireGun();
@@ -221,7 +245,9 @@ function fireGun(){
   }
 
   if(totalAtoms>=500){
-    $(".middle").css("display","inline");
+    $(".middle").removeClass("invisible");
+    $(".autoFire").removeClass("invisible");
+
   }
 
   if(totalAtoms>=5000){
@@ -329,5 +355,23 @@ else {
 }
 
 function nextMoneyButton(){
-//not yet impliented money unlocks
+  counter = $("[data-enable-money]").length;
+  buttonEnabler = $("[data-enable-money]");
+  //grab me all the money threshold upgrade unlocks
+  for(;counter>-1;counter--){
+    let enableMoney = Number($(buttonEnabler[counter]).data("enable-money"));
+    let tempData = Number($(buttonEnabler[counter]).data("cost-money"));
+    let currentButton = $(buttonEnabler[counter]);
+    if (cash>=enableMoney){
+      $(currentButton).children().first().text(tempData);
+      $(currentButton).removeClass("invisible")
+      //make it visible when it reaches enable threshold
+    }
+    if(cash>=tempData){
+      $(currentButton).removeClass("disabled")
+      //make it clickable when reaches cost threshold, only modify
+      //data values because it also modifies the span values for easy
+      //retrospective game balancing (that is what the children call is doing)
+    }
+  }
 }
