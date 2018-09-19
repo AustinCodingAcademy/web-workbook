@@ -25,6 +25,10 @@ body {
   "box-10"
 }
 
+.header {
+  grid-area: header;
+}
+
 .box-1 {
   grid-area: box-1;
 }
@@ -74,15 +78,15 @@ body {
 }
 
 .box:hover {
- background: linear-gradient(160deg,#00f6ff,#89dfdc,#b4c7ba,#d0ae99,#e29379,#f0765a,#f9513b,#ff001b);
-
+ background: linear-gradient(120deg,#00f6ff,#89dfdc,#b4c7ba,#d0ae99,#e29379,#f0765a,#f9513b,#ff001b);
+ box-shadow: -11px 7px 10px 4px gray;
 
 }
 
 @media (min-width: 700px) {
   .grid-container {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: ;
     grid-template-areas: 
     "header header"
     "box-1 box-1"
@@ -96,5 +100,53 @@ body {
     "box-9 box-9"
     "box-9 box-9"
     "box-10 box-10"
+  }
+
+  
+.box-1 {
+  grid-area: box-1;
+  min-height: 200px;
+}
+
+.box-5 {
+  grid-area: box-5;
+  min-height: 200px;
+}
+
+.box-9 {
+  grid-area: box-9;
+  min-height: 200px;
+}
+}
+
+@media (min-width: 1300px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "box-1 box-1 box-2 box-2"
+    "box-3 box-3 box-4 box-5"
+    "box-3 box-3 box-6 box-6"
+    "box-7 box-8 box-9 box-10"
+  }
+
+  .box-1 {
+    grid-area: box-1;
+    min-height: 100px;
+  }
+  
+  .box-5 {
+    grid-area: box-5;
+    min-height: 100px;
+  }
+  
+  .box-9 {
+    grid-area: box-9;
+    min-height: 100px;
+  }
+
+  .box-3 {
+    min-height: 250px;
   }
 }
