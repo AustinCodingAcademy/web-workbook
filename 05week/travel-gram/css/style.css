@@ -1,13 +1,13 @@
 * {
   box-sizing: border-box;
-  transition: all 100ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Raleway', sans-serif;
-  background: #BDC3C7;
+  background: #ECF0F1;
 }
 
 header {
@@ -18,74 +18,76 @@ div {
   font-size: 3rem;
 }
 
+.title {
+  font-size: 2.8rem;
+  margin: 1rem 0 .6rem 0;
+}
+.subtitle {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.subtitle.mobile {display: none;}
+.subtitle.tablet {display: none;}
+.subtitle.desktop {display: none;}
+
 .box {
-  background: #eeeeee;
+  background: #E0E0E0;
+  box-shadow: inset 0px 4px 13px 1px rgba(0,0,0,0.33);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  border: 1px solid black;
   margin: 5px;
+  transition: all 500ms ease-in-out;
 }
-
-.a {
-  grid-area: a;
+.box:hover {
+  box-shadow: none;
 }
-.b {
-  grid-area: b;
-}
-.c {
-  grid-area: c;
-}
-.d {
-  grid-area: d;
-}
-.e {
-  grid-area: e;
-}
-.f {
-  grid-area: f;
-}
-.g {
-  grid-area: g;
-}
-.h {
-  grid-area: h;
-}
-.i {
-  grid-area: i;
-}
-.j {
-  grid-area: j;
-}
+.a { grid-area: a; }
+.b { grid-area: b; }
+.c { grid-area: c; }
+.d { grid-area: d; }
+.e { grid-area: e; }
+.f { grid-area: f; }
+.g { grid-area: g; }
+.h { grid-area: h; }
+.i { grid-area: i; }
+.j { grid-area: j; }
 
 .grid-container {
   display: grid;
-  width: 75%;
-  margin: 0 auto;
+  gap: 1rem;
+  width: 95%;
+  margin: 1rem auto;
 }
 
-/* Phones Only */
+/* Smartphones */
 @media screen and (max-width: 599px) {
+  .subtitle.mobile {
+    display: block;
+  }
   .grid-container {
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(10,400px);
-  grid-template-areas:
-    "a"
-    "b"
-    "c"
-    "d"
-    "e"
-    "f"
-    "g"
-    "h"
-    "i"
-    "j";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10,400px);
+    grid-template-areas:
+      "a"
+      "b"
+      "c"
+      "d"
+      "e"
+      "f"
+      "g"
+      "h"
+      "i"
+      "j";
   }
 }
 
 /*  Tablet + */
 @media (min-width: 600px) {
+  .subtitle.tablet {
+    display: block;
+  }
   .grid-container {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 50vh 25vh repeat(7,15vh);
@@ -104,11 +106,19 @@ div {
 
 /* Desktop + */
 @media screen and (min-width: 1200px) {
+  .subtitle.tablet {
+    display: none;
+  }
+  .subtitle.desktop {
+    display: block;
+  }
   .grid-container {
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 20vh 40vh 30vh;
+    grid-template-rows: 20vh 25vh 15vh 30vh;
     grid-template-areas: 
       "a a a a b b b b"
       "c c c c d d e e"
+      "c c c c f f f f"
+      "g g h h i i j j"
   }
 }
