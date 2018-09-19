@@ -109,18 +109,19 @@ body {
     .grid-container {
         height: 100%;
         display: grid;
-        grid-template-columns: repeat (1fr, 1fr, 2fr, 1fr, 1fr);
+        grid-template-columns: 1fr, 1fr, 2fr, 1fr;
         grid-template-rows: auto;
         gap: 1em;
         grid-template-areas: 
         "header header header header"
         "box-1 box-1 box-2 box-2"
-        "box-3 box-4 box-5 box-6"
+        "box-3 box-3 box-4 box-5"
+        "box-3 box-3 box-6 box-6"
         "box-7 box-8 box-9 box-10";
     }
 
     .box {
-        height: 100%;
+        min-height: 100px;
         min-width: 300px;
         background: linear-gradient(160deg,#2a6c4d,#00635f,#005769,#1c4966,#2e4168,#3f3d74,#5a3278,#781c71);
         border-radius: 4px;
