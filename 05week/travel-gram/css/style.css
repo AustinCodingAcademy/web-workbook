@@ -14,72 +14,101 @@ header {
   text-align: center;
 }
 
+div {
+  font-size: 3rem;
+}
+
 .box {
   background: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
   border: 1px solid black;
   margin: 5px;
 }
 
-.box1 {
-  grid-area: box1;
+.a {
+  grid-area: a;
 }
-.box2 {
-  grid-area: box2;
+.b {
+  grid-area: b;
 }
-.box3 {
-  grid-area: box3;
+.c {
+  grid-area: c;
 }
-.box4 {
-  grid-area: box4;
+.d {
+  grid-area: d;
 }
-.box5 {
-  grid-area: box5;
+.e {
+  grid-area: e;
 }
-.box6 {
-  grid-area: box6;
+.f {
+  grid-area: f;
 }
-.box7 {
-  grid-area: box7;
+.g {
+  grid-area: g;
 }
-.box8 {
-  grid-area: box8;
+.h {
+  grid-area: h;
 }
-.box9 {
-  grid-area: box9;
+.i {
+  grid-area: i;
 }
-.box10 {
-  grid-area: box10;
+.j {
+  grid-area: j;
 }
 
 .grid-container {
   display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "box1"
-    "box2"
-    "box3"
-    "box4"
-    "box5"
-    "box6"
-    "box7"
-    "box8"
-    "box9"
-    "box10";
+  width: 75%;
+  margin: 0 auto;
 }
 
-@media (min-width: 768px) {
+/* Phones Only */
+@media screen and (max-width: 599px) {
   .grid-container {
-    grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(10,400px);
+  grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "d"
+    "e"
+    "f"
+    "g"
+    "h"
+    "i"
+    "j";
+  }
+}
+
+/*  Tablet + */
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50vh 25vh repeat(7,15vh);
     grid-template-areas:
-      "box1 box1"
-      "box1 box1"
-      "box2 box3"
-      "box2 box3"
-      "box4 box4"
-      "box5 box6"
-      "box7 box8"
-      "box9 box10"
+      "a a a a"
+      "b b c c"
+      "d d d d"
+      "e e e e"
+      "f f f f"
+      "g g g g"
+      "h h h h"
+      "i i i i"
+      "j j j j"
+  }
+}
+
+/* Desktop + */
+@media screen and (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 20vh 40vh 30vh;
+    grid-template-areas: 
+      "a a a a b b b b"
+      "c c c c d d e e"
   }
 }
