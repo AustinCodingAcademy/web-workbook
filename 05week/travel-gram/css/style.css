@@ -37,10 +37,14 @@ p {
   background: #e0e0e0;
   border: solid 1px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
+  padding: 1rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 45% 40% 15%;
-  padding: 1rem;
+  grid-template-areas: 
+    "img"
+    "text"
+    "buttons";
 }
 .box:hover {
   box-shadow: 0px 2px 13px 1px rgba(0, 0, 0, 0.33);
@@ -51,11 +55,13 @@ p {
 }
 .content.img { 
   background: #BDC3C7;
+  grid-area: img;
 }
 .content.text { 
   margin: 0;
   overflow-y: auto;
   margin-top: .5rem;
+  grid-area: text;
 }
 
 .box .button-container {
@@ -63,6 +69,7 @@ p {
   align-content: space-between;
   justify-content: space-between;
   margin-top: .5rem;
+  grid-area: buttons;
 }
 .button-container .btn {
   border-radius: 4px;
@@ -122,6 +129,22 @@ p {
       "e e f f"
       "g h h h"
       "i i i j";
+  }
+  .d {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40% 35% 30%;
+    grid-template-areas: 
+    "img text"
+    "img text"
+    "img buttons";
+    padding-bottom: 1.5rem;
+  }
+  .d .content.text {
+    margin-top: 0;
+    margin-left: .5rem;
+  }
+  .d .button-container {
+    margin-left: .5rem;
   }
 }
 
