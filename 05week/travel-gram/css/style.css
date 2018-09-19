@@ -6,8 +6,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
-  background: #ECF0F1;
+  font-family: "Raleway", sans-serif;
+  background: #ecf0f1;
 }
 
 header {
@@ -20,19 +20,25 @@ div {
 
 .title {
   font-size: 2.8rem;
-  margin: 1rem 0 .6rem 0;
+  margin: 1rem 0 0.6rem 0;
 }
 .subtitle {
   font-size: 1.2rem;
   margin: 0;
 }
-.subtitle.mobile {display: none;}
-.subtitle.tablet {display: none;}
-.subtitle.desktop {display: none;}
+.subtitle.mobile {
+  display: none;
+}
+.subtitle.tablet {
+  display: none;
+}
+.subtitle.desktop {
+  display: none;
+}
 
 .box {
-  background: #E0E0E0;
-  box-shadow: inset 0px 4px 13px 1px rgba(0,0,0,0.33);
+  background: #e0e0e0;
+  box-shadow: inset 0px 4px 13px 1px rgba(0, 0, 0, 0.33);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,12 +69,10 @@ div {
 
 /* Smartphones */
 @media screen and (max-width: 599px) {
-  .subtitle.mobile {
-    display: block;
-  }
+  .subtitle.mobile { display: block; }
   .grid-container {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(10,400px);
+    grid-template-rows: repeat(10, 400px);
     grid-template-areas:
       "a"
       "b"
@@ -85,40 +89,31 @@ div {
 
 /*  Tablet + */
 @media (min-width: 600px) {
-  .subtitle.tablet {
-    display: block;
-  }
+  .subtitle.tablet { display: block; }
   .grid-container {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 50vh 25vh repeat(7,15vh);
+    grid-template-rows: 50vh 25vh repeat(7, 15vh);
     grid-template-areas:
       "a a a a"
       "b b c c"
       "d d d d"
-      "e e e e"
-      "f f f f"
-      "g g g g"
-      "h h h h"
-      "i i i i"
-      "j j j j"
+      "e e f f"
+      "g h h h"
+      "i i i j";
   }
 }
 
 /* Desktop + */
 @media screen and (min-width: 1200px) {
-  .subtitle.tablet {
-    display: none;
-  }
-  .subtitle.desktop {
-    display: block;
-  }
+  .subtitle.tablet { display: none; }
+  .subtitle.desktop { display: block; }
   .grid-container {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 20vh 25vh 15vh 30vh;
-    grid-template-areas: 
+    grid-template-areas:
       "a a a a b b b b"
       "c c c c d d e e"
       "c c c c f f f f"
-      "g g h h i i j j"
+      "g g h h i i j j";
   }
 }
