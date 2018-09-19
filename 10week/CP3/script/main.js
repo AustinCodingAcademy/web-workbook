@@ -46,7 +46,10 @@ $(function() {
 
 
   $(".mainPic").click(function(){
-    
+
+
+  
+
     fireGun()
     //pew pew
     
@@ -162,6 +165,7 @@ function autoGun(){
 
 function fireGun(){
 
+  $(".mainPic").effect( "shake",{distance:3, times:1},50);    
 
 
   theCharge += (214 * particleGun.beam);
@@ -206,9 +210,9 @@ function fireGun(){
       $(".gunpoint").css("display","inline");
       $(".gunpoints").text(weaponPoints);
       $(".beamLevelContainer").css("display","flex");
-      $(".leveler").text(expLevel.toLocaleString('en'))
+      $(".gunContainer").removeClass("invisible");
+      $(".leveler").text(expLevel.toLocaleString('en'));
       //old way of enabling things, kill me
-
     }
   }
 
