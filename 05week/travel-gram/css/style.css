@@ -49,6 +49,10 @@ p, h1 {
 .box:hover {
   box-shadow: 0px 2px 13px 1px rgba(0, 0, 0, 0.33);
 }
+.box .box-label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 
 .box .content {
   border-radius: 4px;
@@ -56,9 +60,6 @@ p, h1 {
 .content.img { 
   background: #BDC3C7;
   grid-area: img;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .content.text { 
   margin: 0;
@@ -133,7 +134,7 @@ p, h1 {
       "g h h h"
       "i i i j";
   }
-  .d {
+  .d,.e,.f,.h,.i {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 40% 35% 30%;
     grid-template-areas: 
@@ -142,11 +143,25 @@ p, h1 {
     "img buttons";
     padding-bottom: 1.5rem;
   }
-  .d .content.text {
+  .g,.j {
+    grid-template-areas: 
+    "text"
+    "text"
+    "buttons"
+  }
+  .d .content.text, 
+  .e .content.text,
+  .f .content.text, 
+  .h .content.text, 
+  .i .content.text {
     margin-top: 0;
     margin-left: .5rem;
   }
-  .d .button-container {
+  .d .button-container,
+  .e .button-container,
+  .f .button-container,
+  .h .button-container,
+  .i .button-container {
     margin-left: .5rem;
   }
 }
