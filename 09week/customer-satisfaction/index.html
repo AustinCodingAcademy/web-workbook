@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Customer Satisfaction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <h2>Customer Satisfaction Form</h2>
+
+    <div id="credentials">
+        <p>Please enter your login credentials</p>
+        <form action="/action_page.php">
+        Username:<input type="email" name="email" placeholder="abc@xyz.com" spellcheck="true" required>
+        Password:<input type="password" name="password" placeholder="********" required >
+        
+         <br>
+    </div>
+
+    <br>
+    <div id="checkbox">
+        What expereince level candidates are you looking for 
+        <input type="checkbox" name="checkbox1" value="Beginers"> 1-3 years 
+        <input type="checkbox" name="checkbox2" value="Intermediate"> 3-5 years <br>
+    </div>
+    <br>
+
+    <div id="radio">
+        How likely will you recommend my portfolio to others
+        <input type="radio" name="radio1" value="radio1"> Very likely
+        <input type="radio" name="radio2" value="radio2"> Very unlikely <br>
+    </div>
+    <br>
+
+    <div id="url"> 
+            Please enter your company URL <input type="url" name="homepage">
+     </div>
+
+     <br>
+     <br>
+
+     <div class="slidecontainer">
+         Please rate your overall expereince today with my portfolio 
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    </div>  
+
+    <div id="submit">
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+    </div>
+    </form>
+</body>
+</html>
