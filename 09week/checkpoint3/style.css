@@ -1,0 +1,195 @@
+html{
+  background-color: #9595f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+  background: url('./zebra.jpg') no-repeat;
+  background-size: cover;
+  
+}
+
+  /* Objective Text At The Top */
+  small{
+    margin-top:5px;
+  }
+
+/* CSS Water Animation */
+.water{
+  margin: 5px;
+  width: 160px;
+  height: 150px;
+  border: 6px solid #000;
+  border-top: 2px solid transparent;
+  border-radius : 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: url('./wave.png');
+  background-position: 0px 350px;
+  background-repeat: repeat-x;
+  animation: anim 10s ease-in-out infinite;
+}
+
+@keyframes anim{
+  
+20% {
+   background-position: 3000px 0px;
+  }
+  
+100% {
+    background-position: 6000px 350px;
+  }
+ 
+  
+}
+
+
+/* Header Title */
+h1{
+  color: #2196f3;
+  font-size: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform .5s;
+  border-top:2px solid #000;
+}
+
+h1:hover{
+  transform: scaleY(1.3);
+  color: #f76ed5;
+}
+
+/* Div for Entire Webpage */
+.webpage{
+  width: auto;
+  height: 100%;
+  background-color: #7ff1e2;
+  display: flex;
+  flex-direction: column;
+  border:2px solid #000;
+  align-items: center;
+  border-radius: 20px;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Web Image */
+#wellKid {
+    width:50%;
+    border:2px solid #000;
+    background-color: brown;
+    border-radius:10px;
+    transition: transform .5s;
+  }
+
+  #wellKid:hover{
+    transform: scaleY(1.1);
+  }
+  
+  /* Empty Number Box */
+  #currentTotal {
+    width:100px;
+    height:50px;
+    color: #2196f3;
+    border:2px solid #000;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 40px;
+    margin: 5px;
+  }
+
+
+  /* Text (Well Water) */
+  .description{
+    margin:0px;
+  }
+
+  /* Numbers Inside Box (gallons removed)*/
+.counter{
+  border-bottom:3px solid #f76ed5;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+  
+/* Container For Buttons At The Bottom */
+#box1{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 900px;
+  padding: 10px;
+}
+
+  /* Buttons To Increase Gallons */
+  .button, .pump{
+    width:140px;
+    height: 90px;
+    margin: 10px;
+    border:2px solid #000;
+    padding: 5px;
+    background-color: #f76ed5;
+    border-radius:50%;
+    text-align: center;
+    cursor:pointer;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+
+  /* Automatic Pump Button */
+  .pump{
+
+    background-color: #7ef76e;
+  }
+
+  /* Energy/Clicker Button */
+.rippleButton {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border:2px solid #000;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 10px;
+  height: 200px;
+  width: 180px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #000;
+  background-color: #2196f3;
+  /* box-shadow: 0 0 4px #eed70b; */
+  font-size: 20px;
+  text-align: center;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+  /* Rippled Effect On Clicker Button*/
+.rippleButton {
+  background-position: center;
+  transition: background 0.8s;  
+}
+
+.rippleButton:hover {
+  background: #7ef76e radial-gradient(circle, transparent 1%, #9595f5 1%) center/15000%;
+}
+
+
+.rippleButton:active {
+  background-color: #f76ed5;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+
+
+
+
+
