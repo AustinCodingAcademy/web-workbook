@@ -35,6 +35,7 @@ p {
 
 .box {
   background: #e0e0e0;
+  border-radius: 4px;
   box-shadow: inset 0px 2px 13px 1px rgba(0, 0, 0, 0.33);
   display: flex;
   flex-direction: column;
@@ -47,6 +48,7 @@ p {
 
 .box .content {
   border: solid 3px #606060;
+  border-radius: 4px;
   width: 95%;
   height: 35%;
 }
@@ -68,11 +70,12 @@ p {
 }
 .button-container .btn {
   border: solid 3px #606060;
+  border-radius: 4px;
   background: #E67E22;
   height: 100%;
 }
 .button-container .btn-small { width: 55px; }
-.button-container .btn-large { width: 200px; }
+.button-container .btn-large { width: 25%; }
 
 .a { grid-area: a; }
 .b { grid-area: b; }
@@ -116,7 +119,7 @@ p {
   .subtitle.tablet { display: block; }
   .grid-container {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 50vh 25vh repeat(7, 15vh);
+    grid-template-rows: 40vh 30vh repeat(7, 20vh);
     grid-template-areas:
       "a a a a"
       "b b c c"
