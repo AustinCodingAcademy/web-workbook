@@ -31,9 +31,9 @@ echo
 
 if [ $CSS -eq 0 ] && [ $JS -eq 0 ] && [ $HTML -eq 0 ]
 then
-echo "YAY WE DID IT"
+echo "Congrats you've fixed all errors"
 else
-echo "FAILURES"
+echo "Look at the output above to and fix errors"
 exit 1
 fi
 
