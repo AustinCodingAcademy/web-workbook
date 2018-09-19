@@ -8,14 +8,15 @@ body {
   padding: 0;
   font-family: "Raleway", sans-serif;
   background: #ecf0f1;
+  color: #303030;
 }
 
 header {
   text-align: center;
 }
 
-div {
-  font-size: 3rem;
+p {
+  margin: 0;
 }
 
 .title {
@@ -45,12 +46,19 @@ div {
 }
 
 .box .content {
-  background: #606060;
+  border: solid 3px #606060;
   width: 95%;
   height: 35%;
 }
+.content.img { 
+  background: #BDC3C7;
+}
+.content.text { 
+  margin: 0;
+  padding: .5rem; 
+}
 
-.box .buttons {
+.box .button-container {
   display: flex;
   align-content: space-between;
   justify-content: space-between;
@@ -58,13 +66,13 @@ div {
   width: 95%;
   /* background: #606060; */
 }
-.buttons .btn {
+.button-container .btn {
+  border: solid 3px #606060;
   background: #E67E22;
-  border: none;
   height: 100%;
 }
-.buttons .btn-small { width: 55px; }
-.buttons .btn-large { width: 200px; }
+.button-container .btn-small { width: 55px; }
+.button-container .btn-large { width: 200px; }
 
 .a { grid-area: a; }
 .b { grid-area: b; }
