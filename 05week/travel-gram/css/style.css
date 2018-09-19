@@ -59,8 +59,22 @@ p, h1 {
 }
 .content.img { 
   background: #BDC3C7;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   grid-area: img;
 }
+.a>.content.img { background-image: url(../img/landscape01.jpg) }
+.b>.content.img { background-image: url(../img/landscape02.jpg) }
+.c>.content.img { background-image: url(../img/landscape03.jpg) }
+.d>.content.img { background-image: url(../img/landscape04.jpg) }
+.e>.content.img { background-image: url(../img/landscape05.jpg) }
+.f>.content.img { background-image: url(../img/landscape06.jpg) }
+.g>.content.img { background-image: url(../img/landscape07.jpg) }
+.h>.content.img { background-image: url(../img/landscape08.jpg) }
+.i>.content.img { background-image: url(../img/landscape09.jpg) }
+.j>.content.img { background-image: url(../img/landscape10.jpg) }
+
 .content.text { 
   margin: 0;
   overflow-y: auto;
@@ -138,8 +152,11 @@ p, h1 {
       "g h h h"
       "i i i j";
   }
+  .a {
+    grid-template-rows: 65% 20% 40px;
+  }
   .d,.e,.f,.h,.i {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 40% 35% 30px;
     grid-template-areas: 
       "img text"
@@ -194,7 +211,6 @@ p, h1 {
   }
 
   .a, .b {
-    grid-template-columns: 1fr 1fr;
     grid-template-rows: 40% 35% 30px;
     grid-template-areas: 
       "img text"
@@ -202,8 +218,12 @@ p, h1 {
       "img buttons";
     padding-bottom: 1.5rem;
   }
+  .c {
+    grid-template-rows: 65% 20% 40px;
+  }
   .d,.e,.g,.h,.i,.j {
-    grid-template-rows: 45% 40% 30px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 55% 30% 30px;
     grid-template-areas: 
       "img img"
       "img img"
