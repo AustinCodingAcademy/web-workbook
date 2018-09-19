@@ -34,7 +34,7 @@ then
 echo "YAY WE DID IT"
 else
 echo "FAILURES"
-exit 2
+exit 1
 fi
 
 
