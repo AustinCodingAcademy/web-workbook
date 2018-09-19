@@ -40,7 +40,7 @@ p, h1 {
   padding: 1rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 45% 40% 15%;
+  grid-template-rows: 45% 45% 40px;
   grid-template-areas: 
     "img"
     "text"
@@ -64,7 +64,6 @@ p, h1 {
 .content.text { 
   margin: 0;
   overflow-y: auto;
-  margin-top: .5rem;
   grid-area: text;
 }
 
@@ -78,10 +77,11 @@ p, h1 {
 .button-container .btn {
   border-radius: 4px;
   background: #E67E22;
+  border: none;
   height: 100%;
 }
-.button-container .btn-small { width: 55px; }
-.button-container .btn-large { width: 25%; }
+.button-container .btn-small { width: 40px; }
+.button-container .btn-large { width: 85px; }
 
 .a { grid-area: a; }
 .b { grid-area: b; }
@@ -123,9 +123,13 @@ p, h1 {
 /*  Tablet + */
 @media (min-width: 600px) {
   .subtitle.tablet { display: block; }
+  .box { 
+    padding: .5rem;
+    grid-template-rows: 45% 35% 30px;
+  }
   .grid-container {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 40vh 30vh repeat(7, 20vh);
+    grid-template-rows: 40vh 30vh repeat(4, 20vh);
     grid-template-areas:
       "a a a a"
       "b b c c"
@@ -136,18 +140,23 @@ p, h1 {
   }
   .d,.e,.f,.h,.i {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 40% 35% 30%;
+    grid-template-rows: 40% 35% 30px;
     grid-template-areas: 
     "img text"
     "img text"
     "img buttons";
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
   }
   .g,.j {
+    grid-template-rows: 35% 35% 30px;
     grid-template-areas: 
-    "text"
-    "text"
-    "buttons"
+    "img"
+    "img"
+    "img"
+  }
+  .g .content.text,
+  .j .content.text {
+    display: none;
   }
   .d .content.text, 
   .e .content.text,
@@ -164,6 +173,10 @@ p, h1 {
   .i .button-container {
     margin-left: .5rem;
   }
+  .g .button-container,
+  .j .button-container {
+    display: none;
+  }
 }
 
 /* Desktop + */
@@ -178,5 +191,54 @@ p, h1 {
       "c c c c d d e e"
       "c c c c f f f f"
       "g g h h i i j j";
+  }
+
+  .a, .b {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40% 35% 30px;
+    grid-template-areas: 
+    "img text"
+    "img text"
+    "img buttons";
+    padding-bottom: 1.5rem;
+  }
+  .d,.e,.g,.h,.i,.j {
+    grid-template-rows: 45% 40% 30px;
+    grid-template-areas: 
+    "img img"
+    "img img"
+    "buttons buttons";
+    padding-bottom: 1rem;
+  }
+  .d .content.text,
+  .e .content.text,
+  .g .content.text,
+  .h .content.text,
+  .i .content.text,
+  .j .content.text {
+    display: none;
+  }
+  .g .button-container,
+  .j .button-container {
+    display: flex;
+  }
+  .f {
+    grid-template-rows: 35% 35% 30px;
+    grid-template-areas: 
+    "img text"
+    "img text"
+    "img text";
+  }
+  .f .button-container {
+    display: none;
+  }
+  .a .content.text,  
+  .b .content.text {
+    margin-top: 0;
+    margin-left: .5rem;
+  }
+  .a .button-container,
+  .b .button-container {
+    margin-left: .5rem;
   }
 }
