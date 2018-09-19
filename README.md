@@ -24,11 +24,35 @@
 1. The terminal will say something like this:
 
 ```bash
-> web-workbook@1.0.0 lint /Users/cLo/Desktop/web-workbook
-> htmllint {*.html,./**/*.html} && stylelint ./**/*.css && eslint --config .eslint.json .
+> web-workbook@1.0.0 lint /Users/midastouch/Software/web-workbook
+> sh lint_script.sh
+
+==============CSS ERRORS===============
+==============CSS ERRORS===============
 
 
-[htmllint] found 0 errors out of 18 files
+==============CSS ERRORS===============
+==============CSS ERRORS===============
+
+
+==============JS ERRORS===============
+==============JS ERRORS===============
+
+
+==============JS ERRORS===============
+==============JS ERRORS===============
+
+
+==============HTML ERRORS===============
+==============HTML ERRORS===============
+
+
+[htmllint] found 0 errors out of 4 files
+
+==============HTML ERRORS===============
+==============HTML ERRORS===============
+
+Congrats you've fixed all errors
 ```
 
 ### Run tests
