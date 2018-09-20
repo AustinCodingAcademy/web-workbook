@@ -167,16 +167,26 @@ $(function() {
       smartsTimer=setInterval(getedumacated,smarts);
       $(this).addClass("clicked");
       $(".cash").text("$"+cash.toPrecision(5));
-
+      nextIntelMoneyButton();
     }
   });
 
+  $(".intelmoney").click(function(){
+    alert("Achieve God King Status: World Domination is your destiny");
+    window.location.reload(true);
+  });
+
+
 });
+
+
+
 
 
 function getedumacated(){
   intelegence++;
   $(".intelegence").text(intelegence);
+  nextIntelMoneyButton();
 }
 
 function autoGun(){
@@ -364,6 +374,28 @@ function nextMoneyButton(){
     let currentButton = $(buttonEnabler[counter]);
     if (cash>=enableMoney){
       $(currentButton).children().first().text(tempData);
+      $(currentButton).removeClass("invisible")
+      //make it visible when it reaches enable threshold
+    }
+    if(cash>=tempData){
+      $(currentButton).removeClass("disabled")
+      //make it clickable when reaches cost threshold, only modify
+      //data values because it also modifies the span values for easy
+      //retrospective game balancing (that is what the children call is doing)
+    }
+  }
+}
+
+function nextIntelMoneyButton(){
+  counter = $(".intelmoney").length;
+  buttonEnabler = $(".intelmoney");
+  //grab me all the money threshold upgrade unlocks
+  for(;counter>-1;counter--){
+    let enableMoney = Number($(buttonEnabler[counter]).data("enable-money"));
+    let enableIntel = Number($(buttonEnabler[counter]).data("enable-intelegence"));
+    let tempData = Number($(buttonEnabler[counter]).data("cost-money"));
+    let currentButton = $(buttonEnabler[counter]);
+    if (cash>=enableMoney || intelegence>=enableIntel){
       $(currentButton).removeClass("invisible")
       //make it visible when it reaches enable threshold
     }
