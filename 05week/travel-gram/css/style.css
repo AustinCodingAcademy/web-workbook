@@ -36,15 +36,14 @@ p, h1 {
 .subtitle.desktop { display: none; }
 
 .box {
-  background: #e0e0e0;
-  border: solid 1px rgba(0, 0, 0, 0.1);
+  background: #ecf0f1;
   border-radius: 4px;
   padding: 1rem;
   overflow: hidden;
   opacity: .75;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 45% 45% 40px;
+  grid-template-rows: 55% 35% 40px;
   grid-template-areas: 
     "img"
     "text"
@@ -162,11 +161,14 @@ p, h1 {
       "i i i j";
   }
   .a {
-    grid-template-rows: 65% 20% 40px;
+    grid-template-rows: 70% 18% 40px;
+  }
+  .b, .c {
+    grid-template-rows: 50% 35% 40px;
   }
   .d,.e,.f,.h,.i {
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 40% 35% 30px;
+    grid-template-rows: 40% 45% 30px;
     grid-template-areas: 
       "img text"
       "img text"
@@ -174,7 +176,7 @@ p, h1 {
     padding-bottom: 1rem;
   }
   .g,.j {
-    grid-template-rows: 35% 35% 30px;
+    grid-template-rows: 45% 35% 30px;
     grid-template-areas: 
       "img"
       "img"
@@ -220,20 +222,19 @@ p, h1 {
   }
 
   .a, .b {
-    grid-template-rows: 90% 30px;
+    grid-template-rows: 93% 30px;
     grid-template-areas: 
       "img img"
       "buttons buttons";
     padding-bottom: 1.5rem;
   }
   .c {
-    grid-template-rows: 75% 15% 40px;
+    grid-template-rows: 76% 15% 40px;
   }
   .d,.e,.g,.h,.i,.j {
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 60% 30% 30px;
+    grid-template-rows: 92% 30px;
     grid-template-areas: 
-      "img img"
       "img img"
       "buttons buttons";
     padding-bottom: 1rem;
@@ -256,7 +257,7 @@ p, h1 {
     margin-left: 0;
   }
   .f {
-    grid-template-rows: 100%;
+    grid-template-rows: 105%;
     grid-template-areas: 
       "img text";
   }
