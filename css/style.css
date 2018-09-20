@@ -8,7 +8,6 @@ body {
   margin: 0 auto;
   max-width: 100vw;
   overflow: hidden;
-  /* padding: 0 10px; */
 }
 
 .hero {
@@ -33,6 +32,11 @@ body {
   flex-direction: column;
   position: absolute;
   left: 10rem;
+  transition: all ease-in-out 300ms;
+}
+
+.content.nav-open {
+  transform: translateX(250px);
 }
 
 .content #hello {
