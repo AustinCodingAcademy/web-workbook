@@ -9,12 +9,14 @@ var data = {
     powerNosePowerUps:0,
     terrorTailPowerUps:0,
     eagerEarsPowerUps:0,
+    stomachOfSteelPowerUps:0,
     boneClick:1,
     bonusOn:false,
     buyPowerPaws:10,
     buyPowerNose:100,
     buyTerrorTail:1000,
-    buyEagerEars:10000
+    buyEagerEars:10000,
+    buyStomachOfSteel:100000
 };
 
 $(document).ready(function(){
@@ -31,8 +33,8 @@ $(document).ready(function(){
     // These functions add the various power ups
     $('#powerPawsButton').click(function() {
         if (data.currentBones >= data.buyPowerPaws) {
-            data.boneClick *= 1.02;
-            data.boneProduction *= 1.02;
+            data.boneClick *= 1.15;
+            data.boneProduction *= 1.10;
             data.currentBones-=data.buyPowerPaws;
             data.buyPowerPaws*=1.1;
             updatePowerPawsCost();
@@ -44,18 +46,18 @@ $(document).ready(function(){
             } else if (data.powerPawsPowerUps === 9) {
                 $('#powerPawsPhotos').append('<span></span>');
                 data.powerPawsPowerUps++;
-                $('#powerPawsPhotos span').text(' + ' + (data.powerPawsPowerUps-9));
+                $('#powerPawsPhotos span').text(' +' + (data.powerPawsPowerUps-9));
             } else if (data.powerPawsPowerUps > 9){
                 data.powerPawsPowerUps++;
-                $('#powerPawsPhotos span').text(' + ' + (data.powerPawsPowerUps-9));
+                $('#powerPawsPhotos span').text(' +' + (data.powerPawsPowerUps-9));
             }
         }
     });
 
     $('#powerNoseButton').click(function() {
         if (data.currentBones >= data.buyPowerNose) {
-            data.boneClick *= 1.04;
-            data.boneProduction *= 1.04;
+            data.boneClick *= 1.20;
+            data.boneProduction *= 1.15;
             data.currentBones-=data.buyPowerNose;
             data.buyPowerNose*=1.1;
             updatePowerNoseCost();
@@ -67,18 +69,18 @@ $(document).ready(function(){
             } else if (data.powerNosePowerUps === 9) {
                 $('#powerNosePhotos').append('<span></span>');
                 data.powerNosePowerUps++;
-                $('#powerNosePhotos span').text(' + ' + (data.powerNosePowerUps-9));
+                $('#powerNosePhotos span').text(' +' + (data.powerNosePowerUps-9));
             } else if (data.powerNosePowerUps > 9){
                 data.powerNosePowerUps++;
-                $('#powerNosePhotos span').text(' + ' + (data.powerNosePowerUps-9));
+                $('#powerNosePhotos span').text(' +' + (data.powerNosePowerUps-9));
             }
         }
     });
 
     $('#terrorTailButton').click(function() {
         if (data.currentBones >= data.buyTerrorTail) {
-            data.boneClick *= 1.06;
-            data.boneProduction *= 1.06;
+            data.boneClick *= 1.25;
+            data.boneProduction *= 1.20;
             data.currentBones-=data.buyTerrorTail;
             data.buyTerrorTail*=1.1;
             updateTerrorTailCost();
@@ -90,18 +92,18 @@ $(document).ready(function(){
             } else if (data.terrorTailPowerUps === 9) {
                 $('#terrorTailPhotos').append('<span></span>');
                 data.terrorTailPowerUps++;
-                $('#terrorTailPhotos span').text(' + ' + (data.terrorTailPowerUps-9));
+                $('#terrorTailPhotos span').text(' +' + (data.terrorTailPowerUps-9));
             } else if (data.terrorTailPowerUps > 9){
                 data.terrorTailPowerUps++;
-                $('#terrorTailPhotos span').text(' + ' + (data.terrorTailPowerUps-9));
+                $('#terrorTailPhotos span').text(' +' + (data.terrorTailPowerUps-9));
             }
         }
     });
 
     $('#eagerEarsButton').click(function() {
         if (data.currentBones >= data.buyEagerEars) {
-            data.boneClick *= 1.06;
-            data.boneProduction *= 1.06;
+            data.boneClick *= 1.30;
+            data.boneProduction *= 1.25;
             data.currentBones-=data.buyEagerEars;
             data.buyEagerEars*=1.1;
             updateEagerEarsCost();
@@ -113,10 +115,33 @@ $(document).ready(function(){
             } else if (data.eagerEarsPowerUps === 9) {
                 $('#eagerEarsPhotos').append('<span></span>');
                 data.eagerEarsPowerUps++;
-                $('#eagerEarsPhotos span').text(' + ' + (data.eagerEarsPowerUps-9));
+                $('#eagerEarsPhotos span').text(' +' + (data.eagerEarsPowerUps-9));
             } else if (data.eagerEarsPowerUps > 9){
                 data.eagerEarsPowerUps++;
-                $('#eagerEarsPhotos span').text(' + ' + (data.eagerEarsPowerUps-9));
+                $('#eagerEarsPhotos span').text(' +' + (data.eagerEarsPowerUps-9));
+            }
+        }
+    });
+
+    $('#stomachOfSteelButton').click(function() {
+        if (data.currentBones >= data.buyStomachOfSteel) {
+            data.boneClick *= 1.35;
+            data.boneProduction *= 1.30;
+            data.currentBones-=data.buyStomachOfSteel;
+            data.buyStomachOfSteel*=1.1;
+            updateEagerEarsCost();
+            updateCounter();
+            updateProductionCounter();
+            if (data.stomachOfSteelPowerUps < 9) {
+                $('#stomachOfSteelPhotos').append('<img src="img/dogAndCake.png">');
+                data.stomachOfSteelPowerUps++;
+            } else if (data.stomachOfSteelPowerUps === 9) {
+                $('#stomachOfSteelPhotos').append('<span></span>');
+                data.stomachOfSteelPowerUps++;
+                $('#stomachOfSteelPhotos span').text(' +' + (data.stomachOfSteelPowerUps-9));
+            } else if (data.stomachOfSteelPowerUps > 9){
+                data.stomachOfSteelPowerUps++;
+                $('#stomachOfSteelPhotos span').text(' +' + (data.stomachOfSteelPowerUps-9));
             }
         }
     });
@@ -140,8 +165,10 @@ function boneOutput() {
     checkForBonuses();
 };
 // Updates the counter for current bone total
+// Also updates the browser tab with current number of bones
 function updateCounter() {
     $('#currentCounter span').text(Math.floor(data.currentBones).toLocaleString() + " ");
+    $('title').text(Math.floor(data.currentBones).toLocaleString() + " bones - Fido's Bones");
     checkForBonuses();
 };
 // Shows how many bones are being produced in background and from clicks
@@ -169,6 +196,10 @@ function updateTerrorTailCost() {
 
 function updateEagerEarsCost() {
     $('#eagerEarsButton span').text(data.buyEagerEars.toFixed(0) + " ");
+};
+
+function updateStomachOfSteelCost() {
+    $('#stomachOfSteelButton span').text(data.buyStomachOfSteel.toFixed(0) + " ");
 };
 
 // Checks for achievements based on total bones, not current bones.
@@ -201,19 +232,17 @@ function checkForBonuses() {
 // Checks various values and if they are all true, then runs
 // displaying a dog and a messsage to click this dog. Also determines 
 // if there is currently a bonus active and will not run as if so/
-// Timeout to incentivize the player to click.
 // Called to run every second
 function startBonus() {
     let bonusDog = Math.floor((Math.random() * 10)) + 1;
     if (bonusDog % 3 === 0 && Math.floor(data.currentBones) % 9 === 0 && data.bonusOn === false && data.totalBones > 1000) {
         $('.bonusAlert span').text('CLICK THE DOG!');
         $('.bonusDogo').css({'display': 'block'});
-        data.bonusOn = true;
-        setTimeout(() => {
-            $('.bonusAlert span').text('');
-            $('.bonusDogo').css({'display': 'none'})
-            data.bonusOn = false;
-        }, 5000);
+        // setTimeout(() => {
+        //     $('.bonusAlert span').text('');
+        //     $('.bonusDogo').css({'display': 'none'})
+        //     data.bonusOn = false;
+        // }, 5000);
     }
 };
 
@@ -222,7 +251,7 @@ function startBonus() {
 // One is random and assigns value of the boost based on rand num gen
 // Also display the value the user is receiving.    
 $('.bonusDogo').click(function() {
-    let bonusValue = Math.floor((Math.random() * 16) + 1);
+    let bonusValue = Math.floor((Math.random() * 17) + 1);
     $('.bonusDogo').css({'display': 'none'});
     $('.bonusAlert span').text('');
     data.bonusOn = true;
@@ -365,6 +394,14 @@ $('.bonusDogo').click(function() {
         setTimeout(() => {
             data.boneClick/=4;
             data.boneProduction/=8;
+            $('.bonusAlert span').text('');
+            data.bonusOn = false;
+        }, 10000);
+    } else if (bonusValue === 17) {
+        let bonusAmount = ((data.currentBones * .5).toLocaleString).toFixed(0);
+        data.currentBones*=1.5;
+        $('.bonusAlert span').text(bonusAmount + ' bonus bones!');
+        setTimeout(() => {
             $('.bonusAlert span').text('');
             data.bonusOn = false;
         }, 10000);
