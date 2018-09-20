@@ -39,7 +39,7 @@ let beamCurve = 1.6;
 let cycleCurve = .5;
 
 
-let smarts = 10001;
+let smarts = 60001;
 let smartsTimer = null 
 let intelegence = 0;
 
@@ -215,8 +215,7 @@ function fireGun(){
 
 
   if(totalAtoms>=10){
-    $(".upgrades").css("display","inline");
-    //old way of enabling buttons. Worked, but now I regret everything
+    $(".upgrades").removeClass("invisible");
     if($(".upgradeBeam").hasClass("invisible")){
       $(".leveler").text("Max Level")
       //hack to know the beam curve is now 1 or less than one, but
@@ -241,12 +240,11 @@ function fireGun(){
     weaponLevel++;
     weaponPoints+=weaponLevel;
     if(weaponLevel>0){
-      $(".gunpoint").css("display","inline");
+      $(".gunpoint").removeClass("invisible");
       $(".gunpoints").text(weaponPoints);
       $(".beamLevelContainer").css("display","flex");
       $(".gunContainer").removeClass("invisible");
       $(".leveler").text(expLevel.toLocaleString('en'));
-      //old way of enabling things, kill me
     }
   }
 
