@@ -7,6 +7,22 @@ body {
   grid-area: header;
 }
 
+.mobile {
+  grid-area: mobile;
+  display: flex;
+  justify-content: center;   
+}
+
+.tablet {
+  grid-area: tablet;
+  display: none;
+}
+
+.desktop {
+  grid-area: desktop;
+  display: none;
+}
+
 .box-1 {
   grid-area: box-1;
 }
@@ -51,11 +67,11 @@ body {
   display: grid;
   height: 100%;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
   justify-items: center;
   gap: 1em;
   grid-template-areas:
     "header"
+    "mobile"
     "box-1"
     "box-2"
     "box-3"
@@ -65,35 +81,94 @@ body {
     "box-7"
     "box-8"
     "box-9"
-    "box-10"
+    "box-10";
 }
 
 .box {
   background: linear-gradient(160deg,#00f6ff,#89dfdc,#b4c7ba,#d0ae99,#e29379,#f0765a,#f9513b,#ff001b);
-  height: 300px;
-  width: 300px;
+  min-height: 200px;
+  width: 200px;
   border-radius: 4px;
   box-shadow: 5px 7px 20px 0px black;
 }
 
-
-
-@media (min-width: 700px) {
+/* tablet site */
+@media (min-width: 768px) {
   .grid-container {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    justify-items: baseline;
+    grid-template-columns: 1fr 1fr;
+    /* a different example for template rows */
+    grid-template-rows: 2fr 5fr 3fr 2fr 5fr 3fr 2fr 5fr 3fr;
+    justify-items: center;
+    padding: 10%;
     grid-template-areas:
-      "header header header"
-      "box-1 box-1 box-2"
-      "box-3 box-3 box-4"
-      "box-5 box-6 box-6"
-      "box-7 box-8 box-8"
-      "box-9 box-10 box-10"
+      "header header"
+      "box-1 box-1"
+      "box-2 box-3"
+      "box-4 box-4"
+      "box-5 box-5"
+      "box-6 box-7"
+      "box-8 box-8"
+      "box-9 box-10";
   }
   .box {
-    height: 100px;
+    min-height: 80px;
     width: 100%;
   }
+  .mobile {
+    grid-area: mobile;
+    display: none;
+  }
+  
+  .tablet {
+    grid-area: tablet;
+    display: flex;
+    justify-content: center;   
+  }
+  
+  .desktop {
+    grid-area: desktop;
+    display: none;
+  }
+
+
 }
 
+/* desktop site */
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 10%;
+    grid-template-areas:
+      "header header header header"
+      "box-1 box-1 box-2 box-2"
+      "box-1 box-1 box-2 box-2"
+      "box-3 box-3 box-4 box-5"
+      "box-3 box-3 box-4 box-5"
+      "box-3 box-3 box-6 box-6"
+      "box-7 box-8 box-9 box-10"
+      "box-7 box-8 box-9 box-10";
+  }
+  .box {
+    min-height: 80px;
+    width: 100%;
+  }
+  .mobile {
+    grid-area: mobile;
+    display: none;
+  }
+  
+  .tablet {
+    grid-area: tablet;
+    display: none;
+  }
+  
+  .desktop {
+    grid-area: desktop;
+    display: flex;
+    justify-content: center;  
+  }
+
+
+}
