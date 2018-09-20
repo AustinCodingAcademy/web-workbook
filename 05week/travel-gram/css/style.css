@@ -5,6 +5,7 @@ body {
 
 header{
   text-align: center;
+  grid-area: header;
 }
  .box-1 {
   grid-area: box-1;
@@ -53,7 +54,7 @@ header{
   justify-items: center;
   gap: 1em;
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
   grid-template-areas: 
     "header"
     "box-1"
@@ -73,7 +74,7 @@ header{
   background: linear-gradient(160deg,#00f6ff,#89dfdc,#b4c7ba,#d0ae99,#e29379,#f0765a,#f9513b,#ff001b);
   border-radius: 4px;
   box-shadow: 0 7px 8px 0;
-  height: 100%;
+  min-height: 100px;
   width: 100%;
  }
 
@@ -107,8 +108,5 @@ header{
       "box-1 box-1 box-2 box-2"
       "box-3 box-3 box-4 box-5"
       "box-3 box-3 box-6 box-6"
-      "box-7 box-7 box-8 box-8"
-      "box-7 box-7 box-8 box-8"
-      "box-9 box-9 box-10 box-10"
-      "box-9 box-9 box-10 box-10"
+      "box-7 box-8 box-9 box-10"
     }
