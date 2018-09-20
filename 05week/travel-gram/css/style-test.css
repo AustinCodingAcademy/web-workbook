@@ -1,11 +1,15 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: pink;
+  background-color: lightsteelblue;
 }
 .header{
   grid-area: header;
     
+}
+.box1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 .box-1{
   grid-area: box-1;
@@ -74,7 +78,28 @@ body{
   transform: translate(-1px);
 }
 
-@media(min-width: 700px){
+@media(min-width: 500px){
+  .grid-container{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: baseline;
+    grid-template-areas: 
+      "header header header header header header header header"
+      "box-1 box-1 box-1 box-1 box-2 box-2 box-2 box-2"
+      "box-3 box-3 box-3 box-3 box-4 box-4 box-5 box-5"
+      "box-3 box-3 box-3 box-3 box-6 box-6 box-6 box-6"
+      "box-7 box-7 box-8 box-8 box-9 box-9 box-10 box-10"
+      
+      /* "box-9 box-9"
+      "box-10 box-10" */
+  }
+  .box{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* @media(max-width: 900px){
   .grid-container{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -93,4 +118,4 @@ body{
     height: 100%;
     width: 100%;
   }
-}
+} */
