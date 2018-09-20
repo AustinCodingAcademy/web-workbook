@@ -128,14 +128,41 @@ body{
   align-items: center;
 }
 .innerBox3{
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  grid-column-gap: 1vw;
+  grid-template-areas:
+    ""
+
 }
 
-.innerBox3>div:nth-of-type(1){
-
+.innerBox3>div:nth-of-type(1)>div{
+  height:15px;
+  width: 15px;
+  border: 1px;
+  border-style: solid;
+  border-radius: 7px;
+  background-color: red;
+  margin-left:3px;
 }
 
 .innerBox3>div:nth-of-type(2){
-  
+  height: 80%;
+  width: 125px;
+  border: 1px;
+  border-style: solid;
+  background-color: red;
+  margin-right:3px;
+  margin-bottom:10px;
+}
+.redCircleContainer{
+  grid-area: redCircleContainer;
+}
+
+.numberThreeContainer{
+  grid-area: numberThreeContainer;
+}
+
+.redSquareContainer{
+  grid-area: redSquareContainer;
 }
