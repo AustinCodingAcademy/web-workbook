@@ -25,11 +25,11 @@ const main = document.getElementsByTagName("main")[0];
 const dropdown = document.querySelectorAll(".dropdown");
 const openCloseAll = document.querySelector(".nav-open-close-all");
 
+// ensures path always follows the format of: ../../week/project-name/index.html
 const currPagePath =
   window.location.pathname.indexOf("index.html") > 0
     ? "../.." + window.location.pathname
     : "../.." + window.location.pathname + "index.html";
-
 const currPageLink = document.querySelector("a[href='" + currPagePath + "']");
 
 currPageLink.classList.add("current-page");
