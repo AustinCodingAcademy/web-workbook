@@ -1,7 +1,7 @@
 
 body{ 
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 .header {
     grid-area: header;
@@ -60,29 +60,28 @@ body{
     background: linear-gradient(160deg,#5700ff,#9b00da,#ba00b7,#ca0096,#cf007a,#ce0062,#c70050,#bd2c43);
     height:300px;
     width: 300px;
-    border-radius: .8empx;
-    box-shadow: 5px 7px 7px 0160deg,#6b2828,#5d2326,#4e1e23,#401a1f,#32161b,#251216,#180b0e,#050102; 
+    border-radius: .8px;
+    box-shadow: 5px 7px 7px (0160deg,#6b2828,#5d2326,#4e1e23,#401a1f,#32161b,#251216,#180b0e,#050102); 
     transition: all 225ms ease;
 }
 .box:hover{
     background:linear-gradient(160deg,#5700ff,#9b00da,#ba00b7,#ca0096,#cf007a,#ce0062,#c70050,#bd2c43);
-    box-shadow: 5px 5px 8px 0 160deg,#6b2828,#5d2326,#4e1e23,#401a1f,#32161b,#251216,#180b0e,#050102;
+    box-shadow: 5px 5px 8px 0 (160deg,#6b2828,#5d2326,#4e1e23,#401a1f,#32161b,#251216,#180b0e,#050102);
     transform: translate(-1px);
 }
 @media (min-width: 700px) {
     .grid-container{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        justify-items: baseline;
         grid-template-areas: 
-    "header header"
-     "box-1 box-1"
-     "box-2 box3"
-     "box-4 box-5"
-     "box-6 box-6"
-     "box-7 box-8"
-     "box-9 box-9"
-     "box-10 box-10";
+            "header header"
+            "box-1 box-1"
+            "box-2 box-3"
+            "box-4 box-5"
+            "box-6 box-6"
+            "box-7 box-8"
+            "box-9 box-9"
+            "box-10 box-10";
     }
     .box{
         height: 100%;
