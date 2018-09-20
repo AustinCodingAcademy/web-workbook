@@ -3,18 +3,21 @@ $( document ).ready(function() {
 let data = {
     totalCurrent: 0,
     emailsPS: 0,
+    bigTotal: 0
 };
 
 setInterval(onGoing,1000);
 
 function onGoing(){
     data.totalCurrent += data.emailsPS;
+    data.bigTotal += data.emailsPS;
     updateInfo();
 }
 
 function updateInfo(){
     $('.currentTotal').text(Math.floor(data.totalCurrent));
     $('.eps').text((data.emailsPS));
+    $('.totalTotal').text(Math.floor(data.bigTotal));
 }
 
 // $(".atSym").mouseover(function(){
@@ -27,6 +30,7 @@ function updateInfo(){
 
 $(".atSym").click(function(){
     data.totalCurrent++;
+    data.bigTotal++;
     // animation not working, tweaking asap
     // $(this).css('transform' , 'scale(1.1,1.1)');
     // setTimeout(function(){
@@ -57,6 +61,5 @@ $('.button').click(function(){
 
 // ADD TO GAME!!
 //add counter
-//add total emails out
 //when total hits a certian number, make clicks worth 2
 //earn badges once hit certain milestone
