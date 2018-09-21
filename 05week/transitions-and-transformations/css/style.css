@@ -38,14 +38,14 @@ body {
 
 /* BIG SQAURES */
 .squares:hover .square:nth-child(even) { 
-  transform: scale(2) translateX(23vw) rotate(180deg);
+  transform: translateX(45vw) rotate(180deg) scale(2);
   transition: transform 2200ms ease-in-out;
 }
 
 /* SMALL SQUARES */
 .squares:hover .square:nth-child(odd) { 
-  transform: scale(.5) translateX(-95vw) rotate(-180deg);
-  transition: transform 1500ms ease-in-out;
+  transform: translateX(-45vw) rotate(-360deg) scale(.5);
+  transition: transform 1000ms ease-in-out;
 }
 
 .square {
@@ -54,16 +54,18 @@ body {
   border-radius: 2px;
   box-shadow: 4px -2px 10px -4px rgba(0, 0, 0, 0.3);
   background: #c0c0c0;
+  transition: all 2000ms ease;
 }
-.square.red { background: #D73C2C; }
-.square.pink { background: #EA4C88; }
-.square.purple { background: #9B59B6; }
-.square.blue { background: #0067B0; }
-.square.cyan { background: #47EBE0; }
-.square.green { background: #0EAC51; }
-.square.yellow { background: #FFCF4B; }
-.square.orange { background: #E3724B; }
-.square.gold { background: #F39C12; }
-.square.lt-blue { background: #29C5FF; }
-.square.drk-red { background: #A70C00; }
+.square.drk-red   { background: #A70C00; }
+.square.red       { background: #D73C2C; }
+.square.orange    { background: #E3724B; }
+.square.peach     { background: #FF7C6C; }
+.square.gold      { background: #F39C12; }
+.square.yellow    { background: #FFCF4B; }
+.square.green     { background: #0EAC51; }
+.square.cyan      { background: #47EBE0; }
+.square.blue      { background: #0067B0; }
+.square.lt-blue   { background: #29C5FF; }
+.square.purple    { background: #9B59B6; }
+.square.lt-purple { background: #BE90D4; }
 
