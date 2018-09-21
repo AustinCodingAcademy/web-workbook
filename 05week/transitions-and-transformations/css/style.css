@@ -1,0 +1,54 @@
+/*Sets body background color and position of boxes*/
+body{
+  padding-top: 24px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Box description and format*/
+.box{
+  width: 50px;
+  height: 50px;
+  margin-bottom: 8px;
+  border: white 1px solid;
+  transition: transform 1s margin-left 2s margin-right 0.1s;
+}
+
+/*Hover and rotate effect for odd boxes*/
+.box-container:hover > .odd{
+  transform: scale(2) translateX(350px) rotate(360deg);
+  transition: transform 5s;
+  
+}
+
+/*Hover and rotate effect for even boxes*/
+.box-container:hover > .even {
+  transform: scale(0.5) translateX(-350px) rotate(-360deg);
+  transition: transform 1s;
+}
+
+/*Transition effect with transform time for odd boxes*/
+.box-container > .odd {
+  transition: transform 5s;
+}
+
+/*Transition effect with transform time for even boxes*/
+.box-container > .even {
+  transition: transform 5s;
+}
+
+/*Background Color for boxes*/
+#box1 {background-color: violet;}
+#box2 {background-color: blue;}
+#box3 {background-color:pink;}
+#box4 {background-color: green;}
+#box5 {background-color: orange;}
+#box6 {background-color: yellow;}
+#box7 {background-color: lightblue;}
+#box8 {background-color: fuchsia;}
+#box9 {background-color: indianred;}
+#box10 {background-color: indigo;}
+#box11 {background-color: khaki;}
+#box12 {background-color: gray; }
