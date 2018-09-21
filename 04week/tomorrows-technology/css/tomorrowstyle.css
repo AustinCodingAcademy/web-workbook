@@ -8,6 +8,10 @@
 }
 /*this is for a desktop*/
 @media (min-width: 992px){
+    body {
+        display: flex;
+        flex-direction: column;
+    }
     div.topbox {
         display: flex;
         flex-direction: row;
@@ -28,11 +32,11 @@
     div.image {
         display: flex;
         margin-top: 30px;
-        min-width: 900px;
+        min-width: 80%;
         background-color: white;
     }
     .image img {
-        min-width: 900px;
+        width: 100%;
     }
     div.aside {
         display: flex;
@@ -52,6 +56,21 @@
     }
     li {
         margin-bottom: 30px;
+    }
+    h1.bottom {
+        margin-top: 25px;
+    }
+    div.bottombox {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        background-color:white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    span {
+        background-color: rgb(75, 64, 64);
+        color: white;
+        padding: 10px;
     }
 
 }
