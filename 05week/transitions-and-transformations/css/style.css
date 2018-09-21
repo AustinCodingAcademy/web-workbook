@@ -46,6 +46,7 @@
   grid-area: box-12;
 }
 
+/* this is the grid layout */
 .container {
   display: grid;
   height: 100%;
@@ -70,6 +71,7 @@
     "box-12";
 }
 
+/* this defines the boxes */
 .box {
   background-color:#0082d8;
   height: 50px;
@@ -79,18 +81,20 @@
   transition: ease-in-out 5s;
 }
 
+/* every other box moves to the right */
 .container:hover > .odd {
   background-color: #e5a191;
   height: 100px;
   width: 100px;
-  transform: translateX(360px) rotate(720deg);
-  transition: ease-in-out 5s;
+  transform: translateX(360px) rotate(1080deg);
+  transition: all 5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
+/* every other box moves to the left */
 .container:hover > .even {
   background-color: #ffb820;
   height: 25px;
   width: 25px;
-  transform: translateX(-360px) rotate(-720deg);
-  transition: ease-in-out 5s;
+  transform: translateX(-360px) rotate(-1080deg);
+  transition: all 5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
