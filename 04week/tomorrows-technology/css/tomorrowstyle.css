@@ -3,9 +3,56 @@
 
 }
 /*this is for a tablet*/
-@media (min-width: 700px){
+@media (max-width: 990px){
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    div.topbox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+        background-color: white;
+    }
+    h1 {
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+    div.image {
+        display: flex;
+        margin-top: 30px;
+        width: fit-content;
+        background-color: white;
+    }
+    .image img {
+        width: 100%;
+    }
+    div.aside {
+        visibility: hidden;
+        display: none;
+    }
+    h1.bottom {
+        margin-top: 25px;
+    }
+    div.bottombox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color:white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    span {
+        background-color: rgb(75, 64, 64);
+        color: white;
+    
+    }
 
 }
+
 /*this is for a desktop*/
 @media (min-width: 992px){
     body {
