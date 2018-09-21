@@ -77,25 +77,19 @@ body {
     border-radius: 4px;
 }
 
-.li {
-    display: flex;
-    flex-direction: row;
-    align-content: left;
-}
-
 @media (min-width: 700px) {
 
     .grid-container {
         height: 100%;
         display: grid;
-        grid-template-columns: repeat (4, 1fr);
+        grid-template-columns: repeat (2, 2fr);
         grid-template-rows: repeat (8, 1fr);
         justify-items: baseline;
         gap: 1em;
         grid-template-areas: 
         "header header header header"
-        "box-1 box-1 box-1 box-1"
-        "box-2 box-2 box-3 box-3"
+        "box-1 box-1"
+        "box-2 box-3"
         "box-4 box-4 box-4 box-4"
         "box-5 box-5 box-6 box-6"
         "box-7 box-7 box-7 box-7"
@@ -105,7 +99,7 @@ body {
 
     .box {
         height: 100%;
-        min-width: 425px;
+        min-width: 450px;
         background: linear-gradient(160deg,#2a6c4d,#00635f,#005769,#1c4966,#2e4168,#3f3d74,#5a3278,#781c71);
         border-radius: 4px;
     }
