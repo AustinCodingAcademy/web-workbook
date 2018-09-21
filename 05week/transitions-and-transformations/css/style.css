@@ -1,0 +1,65 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: red;
+    font-family: 'Inconsolata', monospace;}
+.square {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 10;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container:hover > .square:nth-child(odd) {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(2) translateX(200px) rotate(360deg);
+    
+}
+
+.container:hover > .square:nth-child(even) {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(.5) translateX(-800px) rotate(360deg);
+
+}
+.container > .square:nth-child(odd) {
+    transition: transform 3s cubic-bezier(1, -0.1, 0.53, 1.72);
+    
+}
+
+.container > .square:nth-child(even) {
+   
+    transition: transform 3s cubic-bezier(1, -0.1, 0.53, 1.72)
+}
+
+.square-1 {
+    background-color: blue;}
+.square-2 {
+    background-color:bisque;}
+.square-3 {
+    background-color:coral;}
+.square-4 {
+    background-color: teal;}
+.square-5 {
+    background-color:palegreen;}
+.square-6 {
+    background-color: darkcyan;}
+.square-7 {
+    background-color: aqua;}
+.square-8 {
+    background-color: tomato;}
+.square-9 {
+    background-color:deepskyblue;}
+.square-10 {
+    background-color:khaki;}
+.square-11 {
+    background-color:salmon;}
+.square-12 {
+    background-color:seagreen;}
