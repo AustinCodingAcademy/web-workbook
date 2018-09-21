@@ -4,14 +4,18 @@ body {
 }
 
 .container {
+  margin-left: 50%;
+  width: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 .box {
   height: 50px;
   width: 50px;
+  transition: all ease-in 1s;
 }
 
 .box1 {
@@ -62,9 +66,12 @@ body {
   background: green;
 }
 
-.box:hover {
-  height: 100px;
-  width: 100px;
-  transition: width 2s, height 2s, transform 2s;
-  align-self: right;
+.container:hover > .box:nth-of-type(odd) {
+  transition: all ease-in 2s;
+  transform: scale(2) translateX(300px) rotate(360deg);
+}
+
+.container:hover > .box:nth-of-type(even) {
+  transition: all ease-in 2s;
+  transform: scale(.5) translateX(-600px) rotate(-360deg);
 }
