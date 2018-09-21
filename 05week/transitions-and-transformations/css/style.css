@@ -49,26 +49,14 @@ body {
 
 .box-12 {
   grid-area: box-12;
-} 
+}
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
   grid-template-rows: auto;
-  grid-template-areas: 
-  "box-1" 
-  "box-2" 
-  "box-3" 
-  "box-4" 
-  "box-5" 
-  "box-6" 
-  "box-7" 
-  "box-8" 
-  "box-9" 
-  "box-10"
-  "box-11"
-  "box-12"
+  grid-template-areas: "box-1" "box-2" "box-3" "box-4" "box-5" "box-6" "box-7" "box-8" "box-9" "box-10" "box-11" "box-12"
 }
 
 .box {
@@ -80,12 +68,12 @@ body {
   width: 50px;
 }
 
-.grid-container:hover > .box:nth-of-type(odd) {
+.grid-container:hover>.box:nth-of-type(odd) {
   transform: scale(2) translate(100px) rotate(180deg);
   transition: 3s;
 }
 
-.grid-container:hover > .box:nth-of-type(even) {
+.grid-container:hover>.box:nth-of-type(even) {
   transform: scale(0.5) translate(-100px) rotate(-180deg);
   transition: 1s;
 }
