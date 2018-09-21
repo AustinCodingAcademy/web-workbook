@@ -2,6 +2,7 @@ body {
   background: #000;
   color: #C0C0C0;
   font-family: 'Roboto', sans-serif;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -36,7 +37,8 @@ body {
 }
 
 .content.nav-open {
-  transform: translateX(250px);
+  opacity: 0;
+  z-index: -1;
 }
 
 .content #hello {
@@ -68,31 +70,10 @@ body {
   animation-delay: 3000ms;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1030px) {
   .content {
     left: 5rem;
   }
-  .week,
-  .nav-link {
-    padding: .75rem .35rem .75rem .35rem;
-  }
-  .nav-link {
-    padding-top: .25rem;
-    padding-bottom: .25rem;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .content {
-    left: 2.5rem;
-  }
-  .week,
-  .nav-link {
-    font-size: .9rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
   .nav-title {
     display: flex;
   }
@@ -103,9 +84,8 @@ body {
     display: block;
   }
   .nav-menu {
-    height: 100vh;
+    height: 100%;
     width: 250px;
-    /* background-color: rgba(0,0,0,.95); */
     transform: translateX(-250px);  
   }
   .nav-menu.nav-open {
@@ -120,6 +100,12 @@ body {
     padding: 1rem 1rem;
     border: none;
     font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    left: 2.5rem;
   }
 }
 
