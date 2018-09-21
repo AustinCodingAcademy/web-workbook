@@ -66,6 +66,7 @@ body {
 .grid-container {
     height: 100%;
     display: grid;
+    width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     justify-items: center;
@@ -85,19 +86,51 @@ body {
     "box-12";
 }
 
-.box{
+.box {
     height: 50px;
     width: 50px;
     border-radius: 3px;
     box-shadow: 0 7px 8px 0 black;
+    /* transition-property: all;
+    transition-duration: 5s; */
 }
 
-.box:nth-child(even):hover{
+/* .grid-container {
+    transition-property: all;
+    transition-duration: 5s;    
+} */
+
+/* .box:nth-child(even):hover{
     transform: scale(2) translateX(23vw) rotate(360deg); 
-    transition: transform 3s;
 }
 
 .box:nth-child(odd):hover{
     transform: scale(0.5) translateX(-87vw) rotate(-360deg); 
-    transition: transform 3s;
+}
+
+ .box:nth-child(even) {
+    transform: transition 5s;
+}
+
+.box:nth-child(odd) {
+    transform: transition 5s;
+} */
+
+.grid-container:hover > .box:nth-of-type(even) {
+        transform: scale(2) translateX(23vw) rotate(360deg);    
+        transition: transform 5s;
+    
+    
+    /* .box:nth-child(odd):hover{
+        transform: scale(0.5) translateX(-87vw) rotate(-360deg); 
+    } */
+}
+
+.grid-container:hover > .box:nth-of-type(odd) {
+    transform: scale(0.5) translateX(-96vw) rotate(-360deg);
+    transition: transform 5s;
+}
+
+.grid-container > * {
+    transition: transform 5s;
 }
