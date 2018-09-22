@@ -24,12 +24,13 @@ const navMenu = document.querySelector(".nav-menu");
 const main = document.getElementsByTagName("main")[0];
 const dropdown = document.querySelectorAll(".dropdown");
 const openCloseAll = document.querySelector(".nav-open-close-all");
+const pathName = window.location.pathname.replace("/web-workbook", "");
 
 // ensures path always follows the format of: ../../week/project-name/index.html
 const currPagePath =
-  window.location.pathname.indexOf("index.html") > 0
-    ? "../.." + window.location.pathname
-    : "../.." + window.location.pathname + "index.html";
+  pathName.indexOf("index.html") > 0
+    ? "../.." + pathName
+    : "../.." + pathName + "index.html";
 const currPageLink = document.querySelector("a[href='" + currPagePath + "']");
 
 currPageLink.classList.add("current-page");
