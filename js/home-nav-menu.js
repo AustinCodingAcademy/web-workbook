@@ -48,6 +48,15 @@ main.addEventListener("click", _ => {
     navMenu.classList.remove("nav-open");
   }
 });
+document.onkeydown = function(e) {
+  // close nav menu when user presses escape
+  if(e.keyCode == 27 && navMenu.classList.contains("nav-open")) {
+    pageContent.classList.remove("body-open");
+    homePageContent.classList.toggle("nav-open");
+    navToggle.classList.remove("nav-open");
+    navMenu.classList.remove("nav-open");
+  }
+};
 
 /** =================================================
  *  DROPDOWN MOUSOVER / CLICK EVENT LISTENER CONTROL
