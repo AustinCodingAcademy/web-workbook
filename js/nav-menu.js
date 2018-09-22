@@ -76,7 +76,7 @@ for (var i = 0; i < dropdown.length; i++) {
   dropdown[i].addEventListener("click", toggle);
 
   // make sure the current page's dropdown is open on page load
-  if (dropdown[i].contains(currPage)) {
+  if (dropdown[i].contains(currentPage)) {
     dropdown[i].classList.add("current-dropdown");
     dropdown[i].classList.add("open");
     dropdown[i].querySelector(".dropdown-content").classList.add("open");
