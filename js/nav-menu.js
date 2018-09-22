@@ -40,7 +40,7 @@ const currrentPath =
 const currentHref = document.querySelector("a[href='" + currrentPath + "']");
 
 currentHref.classList.add("current-page");
-const currrentPage = document.querySelector(".current-page");
+const currentPage = document.querySelector(".current-page");
 
 pageContent.classList.add("body-open");
 pageContent.classList.add("transition-transform");
