@@ -13,14 +13,18 @@ body {
   padding: 1rem 0;
   padding-left: 10px;
 }
+
 .nav-home {
   color: rgba(255, 255, 255, 0.75);
   text-decoration: none;
+  outline: none;  
   margin-left: .625rem;
 }
-.nav-home:hover {
+.nav-home:hover,
+.nav-home:focus {
   color: hsl(5, 48%, 51%);
 }
+
 .nav-open-close-all {
   font-size: 1rem;
   right: 22px;
@@ -80,20 +84,24 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.dropdown span::before,
-.dropdown.open span::before,
-.dropdown.current-folder span::after {
+.dropdown button {
+  text-align: left;
+  outline: none;    
+}
+.dropdown button::before,
+.dropdown.open button::before,
+.dropdown.current-folder button::after {
   font-family: 'Font Awesome\ 5 Free';
   font-weight: 900;
   margin-right: .2em;
 }
-.dropdown span::before {
+.dropdown button::before {
   content: "\f105";
 }
-.dropdown.current-folder span::before {
+.dropdown.current-folder button::before {
   color: hsl(5, 48%, 51%);
 }
-.dropdown.open span::before {
+.dropdown.open button::before {
   content: "\f107";
   font-style: normal;
 }
@@ -117,6 +125,7 @@ body {
   background-color: transparent;
   text-decoration: none;
   font-size: 1.1rem;
+  font-weight: 300;
   color: rgba(255, 255, 255, 0.75);
   cursor: pointer;
 }
@@ -186,4 +195,15 @@ body {
 .ss-scroll {
   background: rgba(255, 255, 255, 0.3);
   cursor: default;
+}
+
+@media screen and (max-width: 1030px) {
+  .nav-title:hover,
+  .nav-title:focus {
+    background: rgba(255,255,255,0.1);
+  }
+  .week:hover,
+  .week:focus {
+    background: rgba(255,255,255,0.1);
+  }
 }

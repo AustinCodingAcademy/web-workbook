@@ -24,14 +24,22 @@ main.body-open {
   padding: 1rem 0;
   padding-left: 10px;
 }
+.nav-title:hover,
+.nav-title:focus {
+  background: rgba(255,255,255,0.1);
+}
+
 .nav-home {
   color: #E0E0E0;
   text-decoration: none;
+  outline: none;  
   margin-left: .625rem;
 }
-.nav-home:hover {
+.nav-home:hover,
+.nav-home:focus {
   color: hsl(5, 48%, 51%);
 }
+
 .nav-open-close-all {
   font-size: 1rem;
   right: 22px;
@@ -118,20 +126,25 @@ main.body-open {
 .dropdown:last-of-type {
   border-bottom: 1px solid rgba(0,0,0,.3);
 }
-.dropdown span::before,
-.dropdown.open span::before,
-.dropdown.current-dropdown span::after {
+
+.dropdown button {
+  text-align: left;
+  outline: none;    
+}
+.dropdown button::before,
+.dropdown.open button::before,
+.dropdown.current-dropdown button::after {
   font-family: 'Font Awesome\ 5 Free';
   font-weight: 900;
   margin-right: .2rem;
 }
-.dropdown span::before {
+.dropdown button::before {
   content: "\f105";
 }
-.dropdown.current-dropdown span::before {
+.dropdown.current-dropdown button::before {
   color: hsl(5, 48%, 51%);
 }
-.dropdown.open span::before {
+.dropdown.open button::before {
   content: "\f107";
   font-style: normal;
 }
@@ -154,6 +167,7 @@ main.body-open {
   background-color: transparent;
   text-decoration: none;
   font-size: 1.3rem;
+  font-weight: 300;
   color: #E0E0E0;
   cursor: pointer;
 }

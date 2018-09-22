@@ -62,7 +62,7 @@ for (var i = 0; i < dropdown.length; i++) {
  *  initialize window size variables on page load
  */
 var addedHover = false;
-const widthThreshold = "(max-width: 768px)";
+const widthThreshold = "(max-width: 1030px)";
 var windowSmall = window.matchMedia(widthThreshold);
 toggleMouseoverListener(); // check window size once on page load
 
