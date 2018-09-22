@@ -24,17 +24,24 @@ const navMenu = document.querySelector(".nav-menu");
 const main = document.getElementsByTagName("main")[0];
 const dropdown = document.querySelectorAll(".dropdown");
 const openCloseAll = document.querySelector(".nav-open-close-all");
+
+/** _____________________________________________________________________________
+ *  ensures path always follows the format of: week/project-name/index.html
+ */
+
+// removes "/web-workbook" from path if it is in URL
 const pathName = window.location.pathname.replace("/web-workbook", "");
 
-// ensures path always follows the format of: ../../week/project-name/index.html
-const currPagePath =
+// adds "index.html" to path if it in not in URL
+const currrentPath =
   pathName.indexOf("index.html") > 0
     ? "../.." + pathName
     : "../.." + pathName + "index.html";
-const currPageLink = document.querySelector("a[href='" + currPagePath + "']");
+const currentHref = document.querySelector("a[href='" + currrentPath + "']");
 
-currPageLink.classList.add("current-page");
-const currPage = document.querySelector(".current-page");
+currentHref.classList.add("current-page");
+const currrentPage = document.querySelector(".current-page");
+
 pageContent.classList.add("body-open");
 pageContent.classList.add("transition-transform");
 SimpleScrollbar.initEl(navMenu);
