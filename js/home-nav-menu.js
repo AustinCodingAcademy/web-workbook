@@ -25,7 +25,6 @@ const navMenu = document.querySelector(".nav-menu");
 const openCloseAll = document.querySelector(".nav-open-close-all");
 const main = document.getElementsByTagName("main")[0];
 const dropdown = document.querySelectorAll(".dropdown");
-const currPage = document.querySelector(".current-page");
 pageContent.classList.add("transition-transform");
 SimpleScrollbar.initEl(navMenu);
 
