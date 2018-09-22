@@ -51,19 +51,27 @@ SimpleScrollbar.initEl(navMenu);
  *  =======================
  * */
 navToggle.addEventListener("click", _ => {
-  // toggle navbar when user clicks hamburger
+  // toggle nav menu when user clicks hamburger or X
   pageContent.classList.toggle("body-open");
   navToggle.classList.toggle("nav-open");
   navMenu.classList.toggle("nav-open");
 });
 main.addEventListener("click", _ => {
-  // close navbar if user clicks off navbar while it is open
+  // close nav menu when user clicks anywhere within the <main> of document
   if (navMenu.classList.contains("nav-open")) {
     pageContent.classList.remove("body-open");
     navToggle.classList.remove("nav-open");
     navMenu.classList.remove("nav-open");
   }
 });
+document.onkeydown = function(e) {
+  // close nav menu when user presses escape
+  if(e.keyCode == 27 && navMenu.classList.contains("nav-open")) {
+    pageContent.classList.remove("body-open");
+    navToggle.classList.remove("nav-open");
+    navMenu.classList.remove("nav-open");
+  }
+};
 
 /** ======================================
  *  DROPDOWN CLICK EVENT LISTENER CONTROL
