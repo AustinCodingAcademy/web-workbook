@@ -127,6 +127,7 @@ body {
   font-size: 1.1rem;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.75);
+  outline: none;
   cursor: pointer;
 }
 .week {
@@ -139,7 +140,8 @@ body {
   padding: .5em;
   transition: all 100ms ease-in-out;
 }
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
   transform: translateX(10px);
   cursor: pointer;
   color: hsl(5, 48%, 51%);
@@ -202,8 +204,16 @@ body {
   .nav-title:focus {
     background: rgba(255,255,255,0.1);
   }
+
+  .week {
+    font-size: 1.3rem;
+  }
   .week:hover,
   .week:focus {
     background: rgba(255,255,255,0.1);
+  }
+
+  .nav-link {
+    font-size: 1rem;
   }
 }
