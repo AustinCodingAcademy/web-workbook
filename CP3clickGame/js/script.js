@@ -12,38 +12,21 @@ function onGoing(){
     data.totalCurrent += data.emailsPS;
     data.bigTotal += data.emailsPS;
     updateInfo();
+    epsLabelF();
+    smallerNumber();
+    achieve();
 }
 
 function updateInfo(){
     $('.currentTotal').text(Math.floor(data.totalCurrent));
-    $('.eps').text((data.emailsPS));
+    $('.eps').text(data.emailsPS);
     $('.totalTotal').text(Math.floor(data.bigTotal));
 }
 
-// $(".atSym").mouseover(function(){
-//     $(this).css('transform' , 'scale(1.1,1.1)');
-// })
-
-// $(".atSym").mouseleave(function(){
-//     $(this).css('transform' , 'scale(1,1)');
-// })
-
-$(".atSym").click(function(){
+$('.atSym').click(function(){
     data.totalCurrent++;
     data.bigTotal++;
-    // animation not working, tweaking asap
-    // $(this).css('transform' , 'scale(1.1,1.1)');
-    // setTimeout(function(){
-    //     $(this).css('transform' , 'scale(1,1)');
-    // },500);
-
-    //expand jquery ui??
-
-    // $('.atSym').addClass('bigAtSym').delay(200).queue(function(){
-    //     $(this).removeClass('bigAtSym');
-    //     $(this).dequeue();
-    //});
-
+    $('.atSym').effect('bounce', { distance: 15 , times: 1 }, 100 );
     updateInfo();
 })
 
@@ -51,15 +34,38 @@ $('.button').click(function(){
     if ($(this).data('cost') <= data.totalCurrent){
         data.totalCurrent -= parseFloat($(this).data('cost'));
         data.emailsPS += parseFloat($(this).data('val'));
-        $(this).children('span').html(parseInt($(this).children('span').html()*1.2));
-        $(this).data('cost', parseInt($(this).data('cost')*1.2));
+        $(this).children('span').html(parseInt($(this).children('span').html()*1.15));
+        $(this).data('cost', parseInt($(this).data('cost')*1.15));
      }
      updateInfo();
 })
 
-});
+function smallerNumber(){
+    if (data.bigTotal > 9999999){
+        $('.totalTotal').addClass('smallerFont');
+    } 
+}
 
-// ADD TO GAME!!
-//add counter
-//when total hits a certian number, make clicks worth 2
-//earn badges once hit certain milestone
+function epsLabelF(){
+if (data.emailsPS == 1){
+    $('.epsLabel').text(" email per second");
+}else{
+    $('.epsLabel').text(" emails per second");
+}}
+
+function achieve(){
+    if(data.bigTotal >= 1000000000){
+        $('.ach4').addClass('collected');
+    }else if(data.bigTotal >= 100000000){
+        $('.ach3').addClass('collected');
+    }else if(data.bigTotal >= 1000000){
+        $('.ach2').addClass('collected');
+    }else if(data.bigTotal >= 100000){
+        $('.ach1').addClass('collected');
+    }
+}
+
+
+});//end ready function
+
+
