@@ -1,11 +1,21 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-image: url("../images/haybg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+*{margin:0}
+html { 
+  background: url(../images/11008446_872090486167120_1885548751823921995_n.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
 }
+body {
+  display:flex;
+  width:100%;
+  height:100%;
+  font-family: 'Open Sans', sans-serif;
+  justify-content: center;
+  align-items:center;
+
+}
+
 
 /* this is the nav menu form */
 
@@ -33,90 +43,71 @@ li a:hover {
   background-color: #111;
 }
 
-.maincontainer {
-  width: 85%;
-  /* background-image: url("../images/haybg.jpg");
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; */
-  margin: auto;
+.flex-grid {
+  z-index:999;
+  /* border: 2px solid white; */
+  margin: 10px 50px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: right;
+}
+.col {
+  flex: 1;
+  justify-content: center;
+  align-items:center;
+}
+.nav{
+  width:100%;
 }
 
-.title {
-  background-color: rgb(255, 255, 255);
-  text-align: left;
-  /* width:100%; */
-  height: auto;
-  padding: 5px;
-  opacity: .8;
-}
+/* Checkbox Hack */
 
-.nav {
-  background-color: purple;
-  /* width:100%; */
-  height: 50px;
-  margin-bottom: 10px;
-}
-
-.main {
-  background-color: rgb(255, 255, 255);
-  opacity: .5;
-  width: 65%;
-  height: 100;
-}
-
-.aside {
-  float: right;
-  background-color: rgb(255, 255, 255);
-  opacity: .5;
-  width: 35%;
-  height: 100%;
-}
-
-/* 
-    album image hover thing */
-
-.container {
-  position: relative;
-  width: 50%;
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
+input[type=checkbox] {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgb(0, 0, 0);
+visibility: hidden;
+}
+label {
+ /* -webkit-appearance: push-button;
+ -moz-appearance: button;  */
+ display: inline-block;
+ padding:20px;
+ border: none;
+ cursor: pointer;
+ /* background-color: darkslateblue; */
 }
 
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.text {
+/* Default State */
+.divbox {
+  z-index:1000;
+  position:fixed;
+  /* border: 1px solid white; */
+  max-width: 33%;
+  min-height: 100px;
   color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  left:25%;
+  top:45%;
+  justify-items: center;
   text-align: center;
+  visibility: hidden;
 }
 
-.footer {
-  background-color: whitesmoke
+/* Toggled State */
+input[type=checkbox]:checked ~ .divbox {
+  background: rgb(41, 12, 54);
+  visibility: visible;
+  transition: all 2s ease;
+  transform: scale(2) 
 }
+
+/* hamburger menu */
+.burg {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+.resume {color:white}
+
