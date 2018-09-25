@@ -1,14 +1,17 @@
+@media (min-width: 992px) {
 body{
     margin:10;
     padding:20;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     display:flex;
     flex-wrap: wrap;
 }
 
 .container{
-    height: 100vh;
-    width:100vh;
+    height: 600px;
+    width:1050px;
     display: flex;
+    justify-content: space-between;
     flex: 1;
 
 }
@@ -36,21 +39,28 @@ body{
 .text{
     border-bottom: 1px solid black;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: flex-start;
 }
 .bottom-container{
     height: 350px;
     width: 1050px;
-    background-color: purple;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content:flex-start;
 
 }
-
-@media (min-width: 768px) {
-    .headlines .bottom-container{
-        flex-direction: column;
+.bottom-text{
+    font-size: 50px; 
+    display: flex;
+}
+p{
+    font-size: 29px;
+    display: flex;
+}
+}
+@media (max-width: 768px) {
+    .headlines {
+        display: none;
     }
  }
