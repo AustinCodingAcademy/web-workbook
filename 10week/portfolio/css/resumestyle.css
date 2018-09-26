@@ -13,6 +13,7 @@ nav {
     margin-bottom:20px;
     display:flex;
     justify-content:space-between;
+    grid-column:span 2;
 }
 nav > a {
     color:purple;
@@ -27,19 +28,34 @@ nav a:hover {
 }
 /*styling for header*/
 header {
-    text-align:center;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    width:80%;
+    margin:auto;
+    justify-content:space-between;
 }
-header > #name {
-    font-size:24pt;
+header > #one {
+    grid-column:span 1;
+    align-self:flex-end;
+}
+header > #two {
+    grid-column:span 1;
+    align-self:flex-end;
+    justify-self:flex-end;
+    text-align: right;
+}
+#name {
+    font-size:35pt;
     text-decoration:none;
+    line-height:1pt;
 }
-header > .name {
+.name {
     font-style:normal;
+    line-height:2pt;
 }
 /*header element styling*/
 h1 {
     font-size:20pt;
-    text-decoration:underline;
 }
 h2 {
     font-size:16pt;
@@ -50,13 +66,17 @@ h3 {
 p {
     font-style:italic;
 }
+main {
+    text-align:Center;
+}
 .education {
-    height:200px;
+    height:125px;
     max-width:100%;
 }
 .employment {
-    height:800px;
-    max-width:100%;
+    height:900px;
+    width:50%;
+    margin:auto;
 }
 .achievements {
     height:230px;

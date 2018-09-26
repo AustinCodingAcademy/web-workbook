@@ -1,7 +1,8 @@
+$(document).ready(function() {
 // Some random colors
-const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
+const colors = ["#44979A", "#EC6943", "#AA346D", "#F8DA68", "#E9414C"];
 
-const numBalls = 50;
+const numBalls = 100;
 const balls = [];
 
 for (let i = 0; i < numBalls; i++) {
@@ -38,4 +39,5 @@ balls.forEach((el, i, ra) => {
       easing: "ease-in-out"
     }
   );
+});
 });
