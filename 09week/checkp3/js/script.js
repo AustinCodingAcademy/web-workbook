@@ -42,7 +42,7 @@ var data = {
       } else if ($('.fert').children().length === 1){
         $('.fert').children().detach();
         $('.fert').prepend('<img src=https://lda.lowes.com/is/image/Lowes/content-panel-desktop?src=Lowes/DP18-8047_031918_FertilizerWeedControl_dt_cp_2-4_StarterFertilizer></img>')
-      }
+      } 
     });
 
 $("#kitten").click(function (){
