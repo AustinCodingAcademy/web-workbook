@@ -37,44 +37,78 @@ main {
     justify-content:space-around;
     margin:auto;
     width:60%;
-    border:1px solid white;
     height:400px;
 }
 #phone {
     float:left;
     width:300px;
     height:250px;
-    border:1px solid red;
     text-align:center;
     padding-top:70px;
     border-radius:50% 50%;
+    transition: border 1s, width 2s;
 }
 #phone > h1 {
     font-size:20pt;
     color:white;
 }
 #phone > p {
-    font-size:16pt;
+    font-size:18pt;
     color:white;
 }
+#phone > i {
+    display:none;
+    color:white;
+}
+main:hover > #phone > h1 {
+    display:none;
+}
+main:hover > #phone > i {
+    display:inline;
+}
+main:hover > #phone{
+    border: 3px solid white;
+    width:350px;
+    transform: translate();
 
+}
+/*styling for email section*/
 #email {
     float:left;
     width:300px;
     height:250px;
-    border:1px solid blue;
     text-align:center;
     padding-top:70px;
     border-radius:50% 50%;
+    transition: border 1s, width 2s;
 }
-#email:hover {
-    background-color:white;
-}
+/*H1 hover effects*/
 #email > h1 {
     font-size:20pt;
     color:white;
 }
-#email > p {
-    font-size:16pt;
+#email > i {
+    display:none;
     color:white;
 }
+main:hover > #email > h1 {
+    display:none;
+}
+main:hover > #email > i {
+    display:inline;
+}
+ main:hover > #email{
+    border: 3px solid white;
+    width:350px;
+    transform: translate();
+
+}
+#email > p {
+    font-size:18pt;
+    color:white;
+} 
+.ball {
+    position: fixed;
+    border-radius: 100%;
+    opacity: 0.7;
+  }
