@@ -8,8 +8,9 @@ body{
 }
 
 .container{
-    height: 600px;
-    width:1050px;
+    height: 80vh;
+    width:100vw;
+    border: 1px black solid;
     display: flex;
     justify-content: space-between;
     flex: 1;
@@ -18,12 +19,15 @@ body{
 
 .image{
     background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     height: 600px;
-    width: 1050px;
+    width: 1090px;
 }
 
 .headlines{
+    border: 1px black solid;
     display:flex;
     justify-content:right;
 
@@ -43,6 +47,7 @@ body{
     align-content: flex-start;
 }
 .bottom-container{
+    border: 1px black solid;
     height: 350px;
     width: 1050px;
     display: flex;
@@ -59,8 +64,9 @@ p{
     display: flex;
 }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .headlines {
         display: none;
+
     }
  }
