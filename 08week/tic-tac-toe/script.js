@@ -44,36 +44,62 @@ $(document).ready(function() {
     var winningShape;
 
     if ((c1 === c2) && (c2 === c3) && (c1 === 'O' || c1 === 'X')){
-      alert(shape + " wins!");
-      $("[data-cell]").text("");
+      announceWinner(shape);
     } else if ((c4 === c5) && (c5===c6) && (c4 === 'O' || c4 === 'X')){
-      alert(shape + " wins!");
-      $("[data-cell]").text("");
+      announceWinner(shape);
     } else if ((c7 === c8) && (c8 === c9) && (c7 === 'O' || c7 === 'X')){
-      alert(shape + " wins!");
-      $("[data-cell]").text("");
+      announceWinner(shape);
     } else if ((c1 === c4) && (c4 === c7) && (c1 === 'O' || c1 === 'X')){
-      alert(shape + " wins!");
-      $("[data-cell]").text("");
+      announceWinner(shape);
     } else if ((c2 === c5) && (c5 === c8) && (c2 === 'O' || c2 === 'X')){
-      alert(shape + " wins!");
-      $("[data-cell]").text("");
+      announceWinner(shape);
     } else if ((c3 === c6) && (c6 === c9) && (c6 === 'O' || c6 === 'X')){
-      alert(shape + " wins!");
-      $("[data-cell]").text("");
+      announceWinner(shape);
     } else if ((c1 === c5) && (c5 === c9) && (c1 === 'O' || c1 === 'X')){
-      alert(shape + " wins!");
-      $("[data-cell]").text("");
+      announceWinner(shape);
     } else if ((c3 === c5) && (c5 === c7) && (c3 === 'O' || c3 === 'X')){
-      alert(shape + " wins!");
-      $("[data-cell]").text("");
+      announceWinner(shape);
     } else if (c1 !== "" && c2 !== "" && c3 !== "" && c4 !== "" && c5 !== "" && c6 !== "" && c7 !== "" & c8 !== "" && c9 !== ""){
-      alert("No one wins... Y'all are an even match!")
-      $("[data-cell]").text("");
+      announceDraw();
     }
   }
+
+  function announceWinner (shape) {
+    $("body").prepend("<div id = 'announcewin'></div");
+    $("body").css("display", "flex");
+    $("body").css("justify-content", "center");
+    $("body").css("align-items", "center");
+    $("#board").hide();
+    $("header").hide();
+    $("#clear").hide();
+
+    if (shape === 'X'){
+      $("#announcewin").append("<span>X wins!!</span>")
+
+    } else {
+      $("#announcewin").append("<span>O wins!!</span>")
+    }
+
+    $("body").append("<button id = 'playagain' onclick = 'window.location.reload()'>play again</button>")
+
+  }
+
+  function announceDraw(){
+    $("body").prepend("<div id = 'announcewin'></div");
+    $("body").css("display", "flex");
+    $("body").css("justify-content", "center");
+    $("body").css("align-items", "center");
+    $("#board").hide();
+    $("header").hide();
+    $("#clear").hide();
+    $("#announcewin").append("<span>It's a draw!!</span>")
+    $("body").append("<button id = 'playagain' onclick = 'window.location.reload()'>play again</button>")
+
+  }
+
 
   $("#clear").click(function() {
     $("[data-cell]").text("");
   })
+
 });

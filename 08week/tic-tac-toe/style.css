@@ -1,5 +1,23 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #board {
   display: flex;
+}
+
+header
+{
+  font-family: 'Amatic SC', cursive;
+  border: 1px solid black;
+  font-size: 3em;
+  padding: 1em 0;
+  letter-spacing: .25em;
+  margin: 2% 5% 2% 5%;
+  text-align: center;
+  width: 90%;
 }
 
 div[data-cell] {
@@ -8,6 +26,7 @@ div[data-cell] {
   background-color: #f2f2f2;
   /* float: left; */
   border: 1px solid #808080;
+  font-family: 'Work Sans', sans-serif;
   font-size: 100px;
   text-align: center;
 }
@@ -19,7 +38,34 @@ div[data-cell] {
   justify-content: flex-end;
 }
 
-/* #announce-winner {
-  clear: both;
-  font-size: 50px;
-} */
+button {
+  margin-top: 1%;
+  background-color: white;
+  color: salmon;
+  text-align: center;
+  text-decoration: none;
+  width: 306px;
+  padding: .5em;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: .08em;
+}
+
+button:hover {
+  background-color: black;
+  border: 1px solid black;
+}
+
+
+#announcewin {
+  font-family: 'Amatic SC', cursive;
+  border: 1px solid black;
+  font-size: 3em;
+  padding: 1em 0;
+  letter-spacing: .25em;
+  margin: 2% 5% 0% 5%;
+  text-align: center;
+  width: 306px;
+  height: 100%
+}
