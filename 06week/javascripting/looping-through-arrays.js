@@ -1,6 +1,8 @@
 var pets = ['cat','dog','rat'];
-for (let pets = i; pets + 's'; pets++)i{
-  const element = array[pets];
-i 
-} 
-console.log(pets);
+var petsLength = pets.Length;
+for (let i = 0; i < pets.Length; i++) {
+  pets[i]=pets[i] + 's'};
+
+  console.log(pets);
+
+  
