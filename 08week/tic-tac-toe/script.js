@@ -72,6 +72,8 @@ $(document).ready(function() {
     $("#board").hide();
     $("header").hide();
     $("#clear").hide();
+    $("#container").hide();
+
 
     if (shape === 'X'){
       $("#announcewin").append("<span>X wins!!</span>")
@@ -92,6 +94,7 @@ $(document).ready(function() {
     $("#board").hide();
     $("header").hide();
     $("#clear").hide();
+    $("#container").hide();
     $("#announcewin").append("<span>It's a draw!!</span>")
     $("body").append("<button id = 'playagain' onclick = 'window.location.reload()'>play again</button>")
 
