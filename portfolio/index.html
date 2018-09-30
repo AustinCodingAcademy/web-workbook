@@ -76,6 +76,9 @@
                 <button>View Project</button>
               </div>
             </div>
+            <div class="work-item-info">
+              <p class="work-item-title">Web Workbook</p>
+            </div>
           </div>
           <div class="work-item two">
             <img src="img/work-item2.jpg" alt="work-item">
@@ -84,6 +87,9 @@
                 <button>View Project</button>
               </div>
             </div>
+            <div class="work-item-info">
+              <p class="work-item-title">Business Site</p>
+            </div>
           </div>
           <div class="work-item three">
             <img src="img/work-item3.jpg" alt="work-item">
@@ -91,6 +97,9 @@
               <div class="btn-background">
                 <button>View Project</button>
               </div>
+            </div>
+            <div class="work-item-info">
+              <p class="work-item-title">Clicker Game</p>
             </div>
           </div>
         </div>
@@ -106,16 +115,24 @@
 
           <div class="about-block">
             <p class="about-header">Hi, I'm Andy Olson.</p>
-            <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos ipsam minus excepturi iste sequi
-              eaque nisi, expedita fugiat quisquam itaque. Voluptatibus libero id quibusdam, eum quasi cumque quaerat ex.</p>
+            <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos ipsam minus
+              excepturi iste sequi
+              eaque nisi, expedita fugiat quisquam itaque. Voluptatibus libero id quibusdam, eum quasi cumque quaerat
+              ex.</p>
           </div>
-          
+
           <div class="about-block">
             <p class="about-header">TL;DR</p>
             <ul>
-              <li>1</li>
-              <li>2</li>
-              <li>3</li>
+              <li>
+                <p class="about-text">Item 1</p>
+              </li>
+              <li>
+                <p class="about-text">Item 2</p>
+              </li>
+              <li>
+                <p class="about-text">Item 3</p>
+              </li>
             </ul>
           </div>
 
@@ -129,10 +146,12 @@
         <div id="contact" class="section-img"><img src="img/contact.png" alt="a drawing of a computer and phone"></div>
         <h1>Get In Touch</h1>
         <div class="container contact-container">
-          <p>First Name:</p> <input class="contact-input" type="text" name="fname"><br>
-          <p>Last Name:</p> <input class="contact-input" type="text" name="lname"><br>
-          <p>Brief Message:</p> <textarea class="contact-text-area" name="message" id="contact-text"></textarea>
-          <input type="submit" value="Submit">
+          <div class="contact-container-inner">
+            <input class="contact-input" type="text" name="fname" placeholder="Name?">
+            <input class="contact-input" type="text" name="lname" placeholder="Email?">
+            <textarea class="contact-text-area" name="message" id="contact-text" placeholder="A brief message..."></textarea>
+            <input class="contact-btn" type="submit" value="Submit">
+          </div>
         </div>
       </section>
       <!-- contact section end -->

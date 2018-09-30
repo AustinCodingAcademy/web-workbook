@@ -23,10 +23,10 @@ section h1 {
 }
 
 .container {
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
   min-height: 60vh;
   overflow: hidden;
-  margin: 1rem 0;
 }
 
 /* NAVBAR */
@@ -38,12 +38,12 @@ section h1 {
   background: rgba(0,0,0,.4);
   border-bottom: solid 1px black;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   z-index: 1;
 }
 
 .nav-title {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   font-size: 1.8rem;
@@ -52,12 +52,13 @@ section h1 {
 }
 .nav-items {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 .nav-item {
   text-decoration: none;
   padding: 1rem;
+  font-size: 1.3rem;
   color: rgba(255,255,255,.75);
 }
 
@@ -106,22 +107,34 @@ section h1 {
 
 /* WORK SECTION */
 .work-item-container {
-  width: 100%;
   border: solid 3px blue;
   display: grid;
+  gap: 1rem;
   align-items: center;
   justify-items: center;
 }
 
 .work-item {
-  position: relative;
   width: 100%;
-}
-.work-item img {
-  max-width: 100%;
-  object-fit: contain;
+  position: relative;
 }
 
+.work-item img {
+  max-width: 100%;
+  margin: 0;
+}
+
+.work-item-info {
+  background: #303030;
+  color: #e2ebf0;
+  margin-top: -4px;
+  padding: 1rem;
+}
+
+.work-item-title {
+  margin: .3rem 0;
+  font-size: 1.5rem;
+}
 
 .work-item-overlay {
   display: flex;
@@ -139,7 +152,7 @@ section h1 {
 }
 .work-item:hover .work-item-overlay {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(-5%);
 }
 
 .work-item-overlay button {
@@ -181,6 +194,7 @@ section h1 {
 .about-header {
   font-weight: bold;
   font-size: 1.5rem;
+  margin-bottom: 0;
 }
 
 .about-text {
@@ -194,12 +208,39 @@ section h1 {
 .contact-container {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   border: solid 3px green;
+  max-width: 500px;
+  margin: 0 auto;
 }
+
+.contact-container-inner {
+  display: grid;
+  gap: 1rem;
+}
+
 .contact-input,
 .contact-text-area{
   border-radius: 5px;
   border: none;
+}
+
+.contact-input {
+  height: 50px;
+  padding-left: 1rem;
+}
+
+.contact-text-area {
+  height: 150px;
+  padding: 1rem 0 0 1rem;
+}
+
+.contact-btn {
+  border: none;
+  background: #303030;
+  color: #cfd9df;
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 /* FOOTER */
@@ -208,7 +249,7 @@ section h1 {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height:100px;
+  height: 100px;
   margin-top: 1rem;
   background: #303030;
 }
