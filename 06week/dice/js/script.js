@@ -16,4 +16,4 @@ for (i = 0; i < 1001; i++) {
   else {
     console.log([i]);
   }
-
+}  
