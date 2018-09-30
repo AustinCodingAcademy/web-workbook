@@ -3,11 +3,18 @@ body {
   font-family: 'Raleway', sans-serif;
   overflow-x: hidden;
   background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  color: #303030;
 }
 
 section h1 {
   text-align: center;
-  margin: 60px 0 0 0;
+}
+
+.section-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 60px 0 0 0;
 }
 
 .site-wrapper {
@@ -17,7 +24,7 @@ section h1 {
 
 .container {
   width: 100%;
-  min-height: 100vh;
+  min-height: 60vh;
   overflow: hidden;
   margin: 1rem 0;
 }
@@ -82,9 +89,10 @@ section h1 {
   text-align: center;
   padding: 1rem 0 2rem 0;
 }
-.hero-content h1 {
+.hero-content .hero-text {
   font-size: 3rem;
   margin: 0;
+  padding: 0;
   font-variant: small-caps;
 }
 .hero-content h2 {
@@ -98,20 +106,22 @@ section h1 {
 
 /* WORK SECTION */
 .work-item-container {
-  display: grid;
   width: 100%;
+  border: solid 3px blue;
+  display: grid;
   align-items: center;
   justify-items: center;
-  border: solid 3px blue;
 }
 
 .work-item {
   position: relative;
+  width: 100%;
 }
-
 .work-item img {
   max-width: 100%;
+  object-fit: contain;
 }
+
 
 .work-item-overlay {
   display: flex;
@@ -164,8 +174,20 @@ section h1 {
 .about-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   border: solid 3px red;
+}
+
+.about-header {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.about-text {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 500px;
 }
 
 /* CONTACT SECTION */
@@ -183,7 +205,6 @@ section h1 {
 /* FOOTER */
 .footer-wrapper {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
   width: 100%;
@@ -194,12 +215,13 @@ section h1 {
 
 .social-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 35%;
 }
 
 .social-link {
   color: rgba(255,255,255,.75);
-  font-size: 3rem;
+  font-size: 2.5rem;
+  padding: 0 2rem;
 }

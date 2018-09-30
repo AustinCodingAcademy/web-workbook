@@ -56,7 +56,7 @@
     <!-- hero section begin -->
     <section class="hero">
       <div class="hero-content">
-        <h1><span>Andy</span> Olson</h1>
+        <h1 class="hero-text"><span>Andy</span> Olson</h1>
         <h2><span>Web Developer</span></h2>
       </div>
     </section>
@@ -65,10 +65,11 @@
     <div class="site-wrapper">
 
       <!-- work section begin -->
-      <section class="work" id="work">
+      <section class="work">
+        <div id="work" class="section-img"><img src="img/work.png" alt="a drawing of a computer and phone"></div>
+        <h1>My Work</h1>
         <div class="container work-item-container">
-          <h1>My Work</h1>
-          <div class="work-item">
+          <div class="work-item one">
             <a href="#"><img src="img/work-item1.jpg" alt="work-item"></a>
             <div class="work-item-overlay">
               <div class="btn-background">
@@ -76,16 +77,16 @@
               </div>
             </div>
           </div>
-          <div class="work-item">
-            <img src="img/work-item1.jpg" alt="work-item">
+          <div class="work-item two">
+            <img src="img/work-item2.jpg" alt="work-item">
             <div class="work-item-overlay">
               <div class="btn-background">
                 <button>View Project</button>
               </div>
             </div>
           </div>
-          <div class="work-item">
-            <a href="#"><img src="img/work-item1.jpg" alt="work-item"></a>
+          <div class="work-item three">
+            <img src="img/work-item3.jpg" alt="work-item">
             <div class="work-item-overlay">
               <div class="btn-background">
                 <button>View Project</button>
@@ -98,20 +99,36 @@
 
 
       <!-- about section begin -->
-      <section class="about" id="about">
+      <section class="about">
+        <div id="about" class="section-img"><img src="img/about.png" alt="a drawing of a computer and phone"></div>
+        <h1>A Little About Me</h1>
         <div class="container about-container">
-          <h1>A Little About Me</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos ipsam minus excepturi iste sequi
-            eaque nisi, expedita fugiat quisquam itaque. Voluptatibus libero id quibusdam, eum quasi cumque quaerat ex.</p>
+
+          <div class="about-block">
+            <p class="about-header">Hi, I'm Andy Olson.</p>
+            <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dignissimos ipsam minus excepturi iste sequi
+              eaque nisi, expedita fugiat quisquam itaque. Voluptatibus libero id quibusdam, eum quasi cumque quaerat ex.</p>
+          </div>
+          
+          <div class="about-block">
+            <p class="about-header">TL;DR</p>
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+          </div>
+
         </div>
       </section>
       <!-- about section end -->
 
 
       <!-- contact section begin -->
-      <section class="contact" id="contact">
+      <section class="contact">
+        <div id="contact" class="section-img"><img src="img/contact.png" alt="a drawing of a computer and phone"></div>
+        <h1>Get In Touch</h1>
         <div class="container contact-container">
-          <h1>Get In Touch</h1>
           <p>First Name:</p> <input class="contact-input" type="text" name="fname"><br>
           <p>Last Name:</p> <input class="contact-input" type="text" name="lname"><br>
           <p>Brief Message:</p> <textarea class="contact-text-area" name="message" id="contact-text"></textarea>
@@ -127,8 +144,8 @@
       <div class="footer-wrapper">
         <div class="social-links">
           <div><a class="social-link" href="#"><i class="fab fa-linkedin"></i></a></div>
-          <div><a class="social-link" href="#"><i class="fab fa-github"></i></a></div>
           <div><a class="social-link" href="#"><i class="fas fa-envelope"></i></a></div>
+          <div><a class="social-link" href="#"><i class="fab fa-github"></i></a></div>
         </div>
       </div>
     </footer>
