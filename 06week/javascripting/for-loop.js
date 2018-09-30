@@ -6,4 +6,4 @@ for (var i = total; i < limit; i++) {
 
 }
 
-  console.log(total);
+console.log(total);
