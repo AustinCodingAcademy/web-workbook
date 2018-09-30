@@ -1,0 +1,351 @@
+body{
+    background-color: rgb(145, 186, 176);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    display:grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: 43px;
+    grid-gap: 10px;
+}
+/* Main grid setup for desktop mode */
+
+header{
+    background-image: url(../img/headernoise.png);
+    border-radius: 0px 27px 134px 36px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+/* header flexbox and nifty boarder radius selection */
+
+.headcontainer{
+    grid-column:  span 8;
+    grid-row: span 2;
+}
+/* set grid for header */
+
+.headcontainer h1{
+
+    flex: 12 0 80%;
+    margin-left: 30px;
+    font-size: 200%
+}
+
+.headcontainer svg{
+    height: 100%;
+    flex: 3 0 20%;
+}
+/* icon and h1 smart placement */
+
+.trippleshaddow {
+    color: #CB1F27;;
+    letter-spacing: .05em;
+    text-shadow: 
+      4px 4px 0px #d5d5d5, 
+      7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+/* fancy drop shaddow effect for h1 */
+
+.pulsing {
+    animation: pulse 2s infinite;
+  }
+  
+
+  @keyframes pulse {
+    0% {
+      fill: black;
+    }
+    50% {
+      fill: green;
+    }
+    100% {
+        fill: black;
+    }
+  }
+
+
+/* slowly pusling green animations  */
+
+
+
+
+
+
+.flashyimagecontainer{
+    grid-column:  span 8;
+    grid-row: span 7;
+}
+
+
+.flashyimagecontainer img{
+    height: 100%;
+}
+
+
+
+.flashyimagecontainer img{
+    width: 100%;
+    border-radius: 20px;
+    
+}
+
+
+/* pretty image grid initilization and picture locked in*/
+
+.shaddoweffect
+{
+  	position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.shaddoweffect:before, .shaddoweffect:after
+{
+	content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgb(196, 145, 65);
+    -moz-box-shadow:0 0 20px rgb(196, 145, 65);
+    box-shadow:0 0 20px rgb(196, 145, 65);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:0px 27px 134px 36px;
+    border-radius:0px 27px 134px 36px;
+}
+.shaddoweffect2:before, .shaddoweffect2:after
+{
+	content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgb(27, 81, 125);
+    -moz-box-shadow:0 0 20px rgb(27, 81, 125);
+    box-shadow:0 0 20px rgb(27, 81, 125);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:0px 27px 134px 36px;
+    border-radius:0px 27px 134px 36px;
+}
+.shaddoweffect3:before, .shaddoweffect2:after
+{
+	content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgb(27, 81, 125);
+    -moz-box-shadow:0 0 20px rgb(27, 81, 125);
+    box-shadow:0 0 20px rgb(27, 81, 125);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:0px 134px 27px  36px;
+    border-radius:0px 134px 27px  36px;
+}
+.shaddoweffect:after
+{
+	right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+/* the shaddow effects have to have a special color and direction, so created several
+different versions that do mostly the same thing. This code could 
+be cleaned up, will do if have time. */
+
+.news {
+    display: flex;
+    grid-column: span 5;
+    grid-row: span 9;
+    background-image: url("../img/bluenoise.png");
+    border-radius: 0px 27px 134px 36px;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+.news2 {
+    border-radius: 0px 134px 27px 36px;
+
+}
+
+/* have to do border radius override for the little bit of design work
+this is also why we had to create different shaddow classes */
+
+.news iframe{
+    padding: 10px;
+    flex:7;
+}
+.news div{
+    flex:5;
+}
+/* had to give text a bit more flex and it worked ok, iframe
+for youtube still has a minimum size that makes working with 
+it in this way difficult */
+
+.news h1{
+    font-weight: bold;
+    font-size: 130%;
+    padding-top: 10px;
+
+}
+
+.news hr{
+    border-color: black;
+}
+
+.sidepic{
+    grid-column: span 3;
+    grid-row: span 18;
+}
+.sidepic img{
+    width: 100%;
+    height: 100%;;
+}
+
+.news2 h1{
+    padding-top: 50px;
+}
+
+.leftpic{
+    grid-column: span 4;
+    grid-row: span 11;
+}
+
+.leftpic img{
+    height: 100%;
+    width: 100%;
+}
+
+.seperator {
+    display: flex;
+    grid-column: span 8;
+    grid-row: span 2;
+    background-image: url("../img/backnoise.png");
+    border-radius: 0px 27px 134px 36px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* flexbox for the social icons */
+
+.hvr-bob {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+    -webkit-animation-name: hvr-bob-float, hvr-bob;
+    animation-name: hvr-bob-float, hvr-bob;
+    -webkit-animation-duration: .3s, 1.5s;
+    animation-duration: .3s, 1.5s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+  }
+  @-webkit-keyframes hvr-bob {
+    0% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+    50% {
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px);
+    }
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  @keyframes hvr-bob {
+    0% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+    50% {
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px);
+    }
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+/* fancy bob effects from  https://github.com/IanLunn/Hover/blob/master/css/hover.css*/
+
+
+@media only screen and (max-width: 760px){
+    body {
+        padding: 10px;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 21px;
+        grid-gap: 6px;
+    } 
+    
+    /* designed with table and mobile in same view 
+    scales down to 489px before style slightly breaking
+..poor iphone1 users*/
+    header{
+        flex-direction: column;
+    }    
+
+    .headcontainer{
+        grid-column:  span 1;
+        grid-row: span 5 ;
+        background-color: blue;
+    }
+    .headcontainer h1{
+
+        flex: 0 0 0%;
+       
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 160%;
+        margin-top: 0px;
+    }
+    
+    .headcontainer svg{
+        width: min-content;
+    }
+
+
+    .flashyimagecontainer{
+        grid-column:  span 1;
+        grid-row: span 9;
+    }
+    .news{
+        grid-column:  span 1;
+        grid-row: span 20;
+        flex-direction: column; 
+        padding-right: 20%;
+    }
+
+    .news2 h1{
+        padding-top:0px;
+    }
+
+    .sidepic{
+        grid-column:  span 1;
+        display: none;
+        
+    }
+    .seperator{
+        grid-column:  span 1;
+        grid-row: span 3;
+    }
+
+
+}
+

@@ -1,1 +1,330 @@
+#tablet , #mobile {
+    display: none;
+}
+
+header{
+    height: 85px;
+    text-align: center;
+    /* background-color: rebeccapurple; */
+    width: 98%;
+    margin-left: 1%;
+}
+
+/* I should have made this in a main div container like you did
+so I could have had easier responsive design, and could have had
+more fun with grids. I didn't, but that is because I nuked my code
+and started over at the begining of class, orignially had it like that
+ */
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/* I like to put images in divs cause it is harder to control them 
+when they are set as background images. The scaling sucks, for sure
+but for silly projects like this where images are more place holders
+I am ok with this! Remind me to ask you if this is a good idea or not */
+
+.textandmore{
+    position: relative;
+}
+
+/* Best way I could think of to make the dot and square at the bottom
+was with aboslute and relative positioning */
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 150px;
+    width: 98%;
+    grid-gap: 1em;
+    height: auto;
+    margin-left: 1%;
+    color: black;
+}
+
+/* initimlizing a grid with fixed width rows and 4 columns */
+
+
+article{
+    background-color: rgb(230, 230, 230);
+    border: solid black 1px;
+    padding: 1em;
+
+}
+
+/* gives just a little visual cluing for grading, was white in 
+example */
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+/* everytime I don't include a reset file I weap */
+
+
+.circle{
+    height: 1em;
+    width: 1em;
+    background-color: brown;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0px;
+    left: 1em;
+}
+.nexttocircle{
+    position: absolute;
+    bottom: -.02em;
+    left: 2.2em;
+    
+}
+
+.square{
+    width: 30%;
+    height: 1em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: brown;
+}
+
+
+/* because of the relative and absolute tags, having a div that
+contained the text and the boxes really helped...BOXES WITHIN
+BOXES WITHIN BOXES! Without different tools to have things at the 
+bottom rather than the right or left, I wouldn't know how to solve
+this without mucking around with disgusting margin math */
+
+
+.talloverrideD{
+    width: 20%;
+    height: 2em;;
+}
+
+/* make the 3rd articles box thingy a little narrower but taller...
+next time we kill the designer */
+
+/* all the next code are the grid spans, width then height in spans */
+
+
+
+.twooneD{
+    grid-column: span 2;
+}
+
+
+
+
+.twothreeD{
+    grid-column: span 2;
+    grid-row: span 3;
+
+}
+.onetwoD{
+    grid-row: span 2;
+}
+
+
+
+.twooneD .picturehrz{
+    float: left;
+    width: 35%;
+    height: 100%;
+    /* background-color: black; */
+    color: wheat;
+}
+
+.twooneD .textandmore{
+    float: right;
+    width: 60%;
+    height: 100%;
+    /* background-color: brown; */
+    
+}
+
+.twothreeD .picturehrz{
+    background-color: black;
+    width: 100%;
+    height: 30%;
+}
+
+.onetwoD .picturehrz{
+    background-color: black;
+    width: 100%;
+    height: 40%;
+ 
+}
+
+
+
+.twothreeD .textandmore{
+    width: 100%;
+    /* background-color: brown; */
+    margin-top: 3%;
+    height: 67%;
+}
+
+.onetwoD .textandmore{
+    width: 100%;
+    /* background-color: brown; */
+    margin-top: 5%;
+    height: 55%;
+}
+
+/* establishes the different left right or verticle formating for all
+the initial article possitions */
+
+
+@media (min-width:768px) and (max-width:1024px){
+
+    #desktop,#mobile{
+        display: none;
+    }
+    #tablet{
+        display: inline;
+    }
+
+
+    .talloverrideT{
+        width: 20%;
+        height: 2em;;
+    }
+
+    .talloverrideD{
+        width: 30%;
+        height: 1em;;
+    }
+/* kill the designer, square overrides then override the override */
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 100px;
+        width: 98%;
+        grid-gap: 1em;
+        height: auto;
+        margin-left: 1%;
+    }
+/* weight watchers the grid, now down to 2 columns, all the working
+out is finally paying off! */
+
+
+    .twotreeD{
+        grid-column: span 2;
+        grid-row: span 3;
+    }
+    .onetwoT{
+        grid-row: span 2;
+        grid-column: span 1;
+    }
+
+    .twooneT{
+        grid-row: span 1;
+        grid-column: span 2;
+    }
+/* chaging the spans for the different row sizes */
+
+    .twotreeD .picturehrz{
+        background-color: black;
+        width: 100%;
+        height: 30%;
+    }
+    .twotreeD .textandmore{
+        width: 100%;
+        /* background-color: brown; */
+        margin-top: 2%;
+        height: 63%;
+    }
+
+   
+    
+
+    .onetwoT .picturehrz{
+        background-color: black;
+        width: 100%;
+        height: 30%;
+    }
+
+    .onetwoT .textandmore{
+        width: 100%;
+        /* background-color: brown; */
+        margin-top: 2%;
+        height: 63%;
+    }
+
+
+
+
+    .twooneT .picturehrz{
+        float: left;
+        width: 51%;
+        height: 100%;
+        background-color: black;
+        color: wheat;
+    }
+    
+    .twooneT .textandmore{
+        float: right;
+        width: 47%;
+        height: 100%;
+        /* background-color: brown; */
+        margin: 0%;
+        
+    }
+
+/* changing some vertical formatting to horizontal and the other way
+around */
+
+}
+
+@media (max-width:768px){
+
+    #desktop,#tablet {
+        display: none;
+    }
+    #mobile{
+        display: inline;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 100px;
+        width: 98%;
+        grid-gap: 1em;
+        height: auto;
+        margin-left: 1%;
+    }
+
+/* All hail mobile, the more boring of web design spaces */
+
+    .mobile{
+        grid-column: span 1 ;
+        grid-row: span 2 ;
+    }
+/* group over ride...one of us...one of us */
+
+    .mobile .picturehrz{
+        /* background-color: black; */
+        width: 100%;
+        height: 30%;
+    }
+
+    .mobile .textandmore{
+        width: 100%;
+        /* background-color: brown; */
+        margin-top: 2%;
+        height: 63%;
+    }
+/* one of us...one of us */
+
+    .square{
+        width: 30%;
+        height: 1em;;
+    }
+
+    /* I heard you wanted to kill the designer, I am in */
+}
+
 

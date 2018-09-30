@@ -1,0 +1,253 @@
+
+
+html{
+    font-family: 'Work Sans', sans-serif;
+}
+/* they said use google fonts in this, I have complied*/
+
+body{
+    margin: 0;
+    height: 618px;
+}
+main{
+    height: 618px;
+}
+/* hack to get my background image to even showup past the article*/
+
+.headercointainer{
+    margin:auto;
+    width: 1000px;
+}
+/* main container for discreate responsive design adaptations */
+
+header{
+    background-color: rgb(25, 58, 85);
+    height: 100px;
+    border-bottom: 2px ridge rgb(226, 226, 226);
+
+}
+/* background box for the header to be consitant with logo */
+
+
+.mainlogo{
+    float: left;
+    height: 50px;
+    width: 100px;
+    margin-top: 0px;
+    margin-left: 5%;
+    margin-bottom: 0px;
+    
+}
+/* the ugle h1 header containing the image which we talked about how
+horrible an idea it was. Left for postarities sake */
+
+main{
+    background-image: url("../img/airline.jpg");
+    background-size: cover;
+    background-color: black;
+    padding-top: 1px;
+    padding-left: 60px;
+    background-repeat: no-repeat;
+}
+/* background image fanagaliing to prevent backgroung colapsing
+to article top height */
+
+
+.navbar{
+    list-style-type: none;
+    display: inline-block;
+    float: right;
+    padding:0;
+    margin: 35px 5% 0 0;
+    width: auto;
+    color: white;
+    font-size: 11px;
+}
+/* nav bar element properties */
+
+.navitems{
+    float:left;
+    margin-right: 20px; 
+}
+/* make the nav items align to proper float display */
+
+.mainlogo img {
+    width: auto;
+    height: 75px;
+}
+/* ugly hack for image in H tag. We discussed how poor an idea this was,
+I left this abominaion for comedies sake */
+
+article{
+    height: 300px;
+    width: 312px;
+    background-color: rgb(18, 55, 84);
+    margin-top: 80px;
+}
+/* article box initlization */
+
+.tabbuttons{
+    display: inline-block;
+    text-align: center; 
+    background-color: rgb(1, 141, 128);
+    width: 101%;
+    margin-left: -.5%;
+    border-radius: 4px;
+}
+/* display formatting and picture formating for selector tabs */
+.tabbutton{
+    float: left;
+    background-color: rgb(1, 141, 128);
+    width: 104px;
+    height: 50px;  
+    border-radius: 4px;
+}
+/* initlization and floating for selector tabs */
+
+.tabbutton:nth-last-of-type(3){
+    padding-left: .99%
+}
+/* hack to hide the background of tabbuttons background on mouse hover
+over car icon for slightly overhang effect */
+.theinput{
+    margin-top: 30px;
+    width: 100%;
+    display: inline-block;
+}
+/* proper block float formatting for 4 input box floats */
+
+.thefields{
+    width: 40%;
+    height: 35px;
+    background-color: rgb(18, 55, 84);
+    border: 2px solid white;
+    border-radius: 4px;
+    color:white;
+}
+/* initilization of the depart, arival and date fields */
+
+.theinput input:nth-of-type(1){
+    float: left;
+    margin-left: 5%;
+}
+
+.theinput input:nth-of-type(2){
+    float: right;
+    margin-right: 5%;
+}
+/* get the spacing of both the date and depart boxes, classes 
+were very useful here spare the ugle override bellow */
+
+
+.theinput:nth-of-type(3){
+    margin-top: 15px;
+}
+/* hack for getting the input box of dates to be bellow arival and depart */
+
+.radiorow{
+    display: inline-block;
+    width: 100%;
+}
+/* proper block floating initialized for radio button container */
+
+.passlabel{
+    height: 35px;
+    background-color: rgb(18, 55, 84);
+    color:white;
+    width: 50px;
+    float: left;
+    font-size: 12px;
+
+}
+/* initial settings for passengers label */
+
+select{
+    height: 35px;
+    background-color: rgb(18, 55, 84);
+    border: 2px solid white;
+    width: 50px;
+    border-radius: 4px;
+    color:white;
+    float: left;
+}
+/* initial settings for select box in radio button row */
+
+.radiorow{
+    margin-top: 15px;
+}
+/* gives proper spacing for the select button bellow input boxes above */
+
+.radiodivitems{
+    width: auto;
+}
+/* give decent widths to elements of radio button row */
+
+.radiorow div{
+    margin-left: 6%;
+}
+/* give div containing radio buttons initial left position */
+
+
+.radiorow select{
+    width: 45px;
+    margin-left: 22px;
+}
+/* fix margin and size issues with select button */
+
+.radiorow label{
+    color: white;
+    font-size: 10px;
+}
+/* set radio button properties */
+
+.radiorow input{
+    margin-right: 0px;
+}
+/* reset margin spacing to make radio buttons closer grouping*/
+
+select + input{
+    margin-left: 22px;
+}
+/* move first radio box to proper margin space */
+
+.radiodivitems:not(select){
+    margin-top: 10px;
+}
+/* center radio buttons and passenger text */
+.searchbutton{
+
+    margin-top: 5px;
+    width: 92%;
+    background-color: rgb(13, 103, 189);
+    color:white;
+    text-align: center;
+    padding-top: 10px;
+    height: 25px;
+    font-size: 90%;
+    margin-left: 12px;
+    border-radius: 4px;
+}
+/* search button settings and positions */
+
+.searchbutton:hover{
+    background-color: rgb(1, 141, 128);
+}
+
+.searchbutton:active{
+    transform: translateY(4px);
+}
+
+.tabbutton:hover{
+    background-color: rgb(0, 99, 183);
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+.navitems:hover{
+    color:#09BEAE  !important;
+}
+
+
+/* all animation actions */

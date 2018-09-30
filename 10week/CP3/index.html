@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="./script/main.js"></script>
+    <script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+        crossorigin="anonymous">
+    </script>
+</head>
+<body> 
+    <main>
+
+        <header>
+            <h1>Jonny Neutron and his handy Neutron gun</h1>
+        </header>
+        <img class="mainPic" src="./media/gun.png" alt="Space gun">        
+        <h3 class="totalSmashed">Atoms Smashed: <span class="smash"></span></h3>
+        <div class="left">  
+            <div class="chargeContainer">
+                <p>Total Charge: <span class="theCharge">0 MeV</span></p>
+                <input class="sellCharge" type="button" value="Sell">
+            </div>
+            <p>On hand cash <span class="cash">$0.00</span></p>
+            <p>Time of Day    <span class="theactualTime"></span></p>
+            <p>Season: <span class="seeson"></span></p>
+            <p>Electricity Price: <span class="thePrice"></span></p>
+            <div class="gunContainer invisible">
+                <h3 class="">Weapon Stats</h3>
+                
+                <div class="beamLevelContainer invisible">
+                    <p>Beam Power: <span class="beam">1</span> neutrons per shot</p>
+                    <input class="upgradeBeam" data-beam="1" type="button" value="⇧">
+                    <!-- <input class="upgradeBeam" data-beam="all" type="button" value="⇪"> -->
+                </div>
+                <div class="upgrades invisible">
+                    <p>Next Level: <span class="leveler"></span></p>
+                    <div class="gunpoint invisible">
+                        <p>Upgrade Points <span class="gunpoints"></span></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="middle invisible">
+            <h3>Projects</h3>
+            <div class="projectContainer">
+                <button class="projectButton disabled autoFire invisible">The zeal for your project causes compromise in morals, steal servo from neighbor, enable autofire(unlock at 5000 atoms smashed)</button>
+                <button data-enable-atoms="1000000" data-cost-atoms="10000000" class="projectButton disabled upgradeAuto invisible">Add more power, you don't know why this works but it does, upgrade autofire(unlock at <span class="cost"></span> atoms smashed)</button>
+                <button data-enable-atoms="100000000" data-cost-atoms="1000000000" class="projectButton disabled upgradeAuto invisible">You aren't a mechanical engineer, but wiki helps you pretend, autofire upgrade(unlock at <span class="cost"></span> atoms smashed)</button>
+                <button data-enable-atoms="1000000000000" data-cost-atoms="100000000000000" class="projectButton disabled upgradeAuto invisible">Go to a meetup on robots, major autofire upgrade(unlock at <span class="cost"></span> atoms smashed)</button>
+                <button data-enable-atoms="1000000000000000" data-cost-atoms="100000000000000000" class="projectButton disabled upgradeAuto invisible">You forgot you knew a mechenical engineer, he fixes all your mistakes, Max autofire upgrade(unlock at <span class="cost"></span> atoms smashed)</button>
+                <button data-enable-money="0" data-cost-money="5" data-education-reward="1" class="projectButton disabled money invisible">You see a used book on Nuclear physics, that should help you understand...maybe(buy for $<span class="cost"></span>) </button>
+                <button data-enable-money="100" data-enable-intelegence="0" data-cost-money="3000" data-education-reward="God King" class="projectButton disabled intelmoney invisible">Attend local Coding Academy(3000 dollars and 1 intelegence)</button>
+
+
+            </div>
+        </div>
+        <div class="right invisible">
+            <h3>Academia</h3>
+            <p>Academic Prestige: <span class="intelegence">0</span></p>
+        </div>
+    </main>
+</body>
+</html>

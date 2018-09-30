@@ -1,0 +1,222 @@
+body {background-color: lightgray;}
+
+header>h1 {
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+}
+/*I found modifying lists to be horizontal to be the 
+easiest to get to function how I intended*/
+.navbar>ul>li{
+        float:left;
+        list-style-type: none;
+        padding:12px;
+        font-size: 20px;
+        background-color: darkgray;
+        border-color: black;
+        border-style: solid;
+        margin-bottom: 10px;
+}
+/*I wanted to have fancy pants clicky button stuff
+so I googled around till I found the right set
+of functions to do that. Being familar with 
+Visual Basic, I knew hover was a thing already
+and was looking for the CSS version of "on click"*/
+.navbar>ul>li:hover{
+    background-color:rgba(0, 0, 0, 0.637);
+}
+.navbar>ul>li:active{
+    background-color:rgba(255, 255, 255, 0.26);
+    color:white;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+/*I was going for a cricle, but oblong worked well
+enough. Clearboth helped get it back in the 
+block style I needed. Also need a float left
+but for reasons that aren't clear to me. If you
+remove one or the other, or both, you get the
+same results...so somehow, with their powers
+combined, they create the look I want...and 
+also captin planet*/
+.headshot{
+    clear: both;
+    width:40%;
+    border-style: solid;
+    border-color: rgb(80, 107, 107);
+    border-radius: 50%;
+    float: left;
+}
+/*I imagine using % instead of px would be a
+better way to make the design more responsive.
+Imagine we will learn more about that, imma
+call my ridged design workable for now*/
+.biohead{
+    float: left;
+    margin-top: 200px;
+    margin-left: 50px;
+    font-size: 300%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(200, 200, 200);
+}
+.biomain{
+    float:left;
+    width: 400px;
+    margin-left: 50px;
+    background-color: rgb(200, 200, 200);
+}
+
+/*I spent the better part of 3 hours trying to
+get these damn circles to go horizontal. For
+whatever reason they would also be verticl
+stack. I finally just starting messing with
+all the crazy display modes. When I found one
+that worked, I stopped asking questions. Burn in 
+the fires of mount doom you cursed rings of
+power.*/ 
+.circles {
+    float: left;
+
+    display:inline-flex;
+    width: 500px;
+    list-style-type:none;
+  
+}
+
+/*I don't know if this is how you actually make
+circles. I found 50 different ways that involved
+all sorts of crazy sounding fuctions. This 
+way seemed the be the more understanble even
+if I don't know what each line is doing exactly.
+The same code makes boxes, I use it later. Not
+with wisdom, just hackery until the numbers made
+rectagles happen*/
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    font-size: 12px;
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+    margin-right: 50px;
+    
+}
+
+/* I could have done this differently with 
+nth of a kind calls rather than ID calls, but
+I wasn't told not to, so I used ID calls!*/
+#resumecir{
+    background-color: rgb(206, 19, 143);
+    border-style: solid;
+    border-color: rgb(165, 13, 114);
+}
+#workcir{
+    background-color: rgb(19, 116, 206);
+    border-style: solid;
+    border-color: rgb(13, 122, 165);
+}
+#skillscir{
+    background-color: rgb(206, 141, 19);
+    border-style: solid;
+    border-color: rgb(165, 130, 13);
+}
+
+/*Resued the fancy button stuff from above*/
+#resumecir:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+#workcir:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+#skillscir:active{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* Had to do some crazy hackery to get this list
+to work how I wanted. I wanted the pictures and
+descriptor on one line and the information
+on another. THIS WAS A POOR IDEA. But I did
+it cause I knew it was a poor idea. I just 
+wanted to fuck with it till it worked. So it is a 
+crazy combination of flex, inline, and blocks.
+There were probably 1000 smarter ways to do this, 
+but my life is a Robert Frost poem.*/
+.demfeetlinks{
+    clear: both;
+    list-style-type: none;
+    display: inline-flex;
+    width: 100%;
+    background-color: rgb(206, 19, 143);
+    padding-left:0; 
+}
+.footitems{
+    width: 25%;
+    display: inline;
+    background-color: white;
+    border-radius: 20px;
+    padding:30px;
+    margin: 10px;
+}
+.h2foot{
+    display: inline-flex;
+    text-align: center;
+    margin-left: 20%;
+    margin-top: 0;
+    margin-block-end: 0;
+    height: 25px;
+}
+
+.icon{
+    display: inline-flex;
+    margin-left: 20%;
+    margin-top: 0;
+    margin-block-end: 0;
+    height: 55px;
+ 
+}
+
+.footinfo{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: block;
+    margin-left: 45%;
+}
+/*Used general case classes to set the formats, 
+but had to override some based on the amount
+of text in a particular box. */
+#emailadd{
+    margin-left: 5%;
+}
+#followtext{
+    margin-left: 10%;
+}
+#aticon{
+    margin-left: 10%;
+}
+#firstfollowicon{
+    margin-left: 61%;
+}
+/*Special override for the copyright stuff cause
+some funny man wanted to right so much damned text.
+It wasn't worth it, except it totally was.*/
+.copyrightinfo{
+    display: inline-flex;
+    width: 150px;
+}
+/*I mean, I probably could if I wanted to, I 
+just didn't want to. Curse you nth of a type, I
+will revist you and destroy you!*/
+#cantgetnthtowork{
+    margin-left: 0px;
+
+}
+/*just in case I want to manually resize the icons*/
+.followicons{
+    width: 24px;
+    height: 24px;
+
+}
