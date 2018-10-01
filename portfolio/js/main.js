@@ -3,19 +3,14 @@ window.onscroll = function() {
 };
 
 const navbar = document.querySelector(".nav-container");
-const navbarHeght = navbar.clientHeight;
-var heroHeight = document.querySelector(".hero").clientHeight;
 var originScrollPos = window.pageYOffset;
 
 function navbarScroll() {
   let currentScrollPos = window.pageYOffset;
 
-  if (
-    window.pageYOffset >= heroHeight - navbarHeght &&
-    originScrollPos < currentScrollPos
-  ) {
+  if (originScrollPos < currentScrollPos) {
     navbar.classList.add("hidden");
-  } else if (originScrollPos > currentScrollPos) {
+  } else {
     navbar.classList.remove("hidden");
   }
 
