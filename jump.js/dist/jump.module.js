@@ -5,16 +5,24 @@
 
 var easeInOutQuad = function easeInOutQuad(t, b, c, d) {
   t /= d / 2;
-  if (t < 1) return c / 2 * t * t + b;
+  if (t < 1) return (c / 2) * t * t + b;
   t--;
-  return -c / 2 * (t * (t - 2) - 1) + b;
+  return (-c / 2) * (t * (t - 2) - 1) + b;
 };
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
-  return typeof obj;
-} : function (obj) {
-  return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-};
+var _typeof =
+  typeof Symbol === "function" && typeof Symbol.iterator === "symbol"
+    ? function(obj) {
+      return typeof obj;
+    }
+    : function(obj) {
+      return obj &&
+          typeof Symbol === "function" &&
+          obj.constructor === Symbol &&
+          obj !== Symbol.prototype
+        ? "symbol"
+        : typeof obj;
+    };
 
 var jumper = function jumper() {
   // private variable cache
@@ -69,8 +77,9 @@ var jumper = function jumper() {
     window.scrollTo(0, next);
 
     // check progress
-    timeElapsed < duration ? window.requestAnimationFrame(loop) // continue scroll loop
-    : done(); // scrolling is done
+    timeElapsed < duration
+      ? window.requestAnimationFrame(loop) // continue scroll loop
+      : done(); // scrolling is done
   }
 
   // scroll finished helper
@@ -82,14 +91,14 @@ var jumper = function jumper() {
     // if scrolling to an element, and accessibility is enabled
     if (element && a11y) {
       // add tabindex indicating programmatic focus
-      element.setAttribute('tabindex', '-1');
+      element.setAttribute("tabindex", "-1");
 
       // focus the element
       element.focus();
     }
 
     // if it exists, fire the callback
-    if (typeof callback === 'function') {
+    if (typeof callback === "function") {
       callback();
     }
 
@@ -100,7 +109,8 @@ var jumper = function jumper() {
   // API
 
   function jump(target) {
-    var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    var options =
+      arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
     // resolve options, or use defaults
     duration = options.duration || 1000;
@@ -113,27 +123,27 @@ var jumper = function jumper() {
     start = location();
 
     // resolve target
-    switch (typeof target === 'undefined' ? 'undefined' : _typeof(target)) {
-      // scroll from current position
-      case 'number':
-        element = undefined; // no element to scroll to
-        a11y = false; // make sure accessibility is off
-        stop = start + target;
-        break;
+    switch (typeof target === "undefined" ? "undefined" : _typeof(target)) {
+    // scroll from current position
+    case "number":
+      element = undefined; // no element to scroll to
+      a11y = false; // make sure accessibility is off
+      stop = start + target;
+      break;
 
-      // scroll to element (node)
-      // bounding rect is relative to the viewport
-      case 'object':
-        element = target;
-        stop = top(element);
-        break;
+    // scroll to element (node)
+    // bounding rect is relative to the viewport
+    case "object":
+      element = target;
+      stop = top(element);
+      break;
 
-      // scroll to element (selector)
-      // bounding rect is relative to the viewport
-      case 'string':
-        element = document.querySelector(target);
-        stop = top(element);
-        break;
+    // scroll to element (selector)
+    // bounding rect is relative to the viewport
+    case "string":
+      element = document.querySelector(target);
+      stop = top(element);
+      break;
     }
 
     // resolve scroll distance, accounting for offset
@@ -141,15 +151,15 @@ var jumper = function jumper() {
 
     // resolve duration
     switch (_typeof(options.duration)) {
-      // number in ms
-      case 'number':
-        duration = options.duration;
-        break;
+    // number in ms
+    case "number":
+      duration = options.duration;
+      break;
 
       // function passed the distance of the scroll
-      case 'function':
-        duration = options.duration(distance);
-        break;
+    case "function":
+      duration = options.duration(distance);
+      break;
     }
 
     // start the loop
@@ -164,4 +174,4 @@ var jumper = function jumper() {
 
 var singleton = jumper();
 
-export default singleton;
+// export default singleton;
