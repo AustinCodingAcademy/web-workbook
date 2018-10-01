@@ -21,7 +21,6 @@ section h1 {
   justify-content: center;
   padding: 60px 0 0 0;
 }
-
 .section-img img {
   width: 200px;
   height: 200px;
@@ -42,7 +41,6 @@ section h1 {
   min-height: 50vh;
   overflow: hidden;
 }
-
 /* NAVBAR */
 .nav-container {
   position: fixed;
@@ -60,32 +58,38 @@ section h1 {
 .nav-container.hidden {
   transform: translateY(-50px);
 }
-
-.nav-title {
+.nav-title-container {
   display: none;
   padding-left: 5rem;
-  font-size: 1.8rem;
   font-weight: 300;
+}
+.nav-title {
   color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  font-size: 1.7rem;
+  transition: color 200ms ease-in-out;
+}
+.nav-title:hover {
+  color: #ff6c5c;
 }
 @media screen and (min-width: 768px) {
   .nav-container {
     justify-content: space-between;
   }
-  .nav-title {
-    display: block;
+  .nav-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .nav-items:last-child {
     padding-right: 3rem;
   }
 }
-
 .nav-items {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-
 .nav-item {
   text-decoration: none;
   padding: 1rem;
@@ -103,7 +107,6 @@ section h1 {
   justify-content: center;
   align-items: center;
 }
-
 .hero::after {
   content: "";
   height: 100vh;
@@ -161,7 +164,6 @@ section h1 {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-
 .work-item-info {
   background: #303030;
   color: #ecf0f1;
@@ -206,30 +208,42 @@ section h1 {
   color: #ff6c5c;
   cursor: pointer;
 }
-
 /* ABOUT SECTION */
 .about-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  max-width: 1000px;
+  max-width: 1250px;
   /* border: solid 3px red; */
 }
+
+.about-block > ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
 @media screen and (min-width: 768px) {
   .about-container {
     flex-direction: row;
     justify-content: space-around;
+  }
+  .about-block {
+    margin-right: 2rem;
+    padding-left: 2rem;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
   }
 }
 .about-header {
   font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: 0;
+  color: #ff6c5c;
 }
+
 .about-text {
   font-size: 1.3rem;
   line-height: 1.5;
-  margin: 0;
+  margin: 1rem 0 0 0;
   max-width: 650px;
 }
 
@@ -286,7 +300,6 @@ section h1 {
 .contact-btn:focus {
   color: #ff6c5c;
 }
-
 /* FOOTER */
 .footer-container {
   display: flex;
@@ -297,7 +310,6 @@ section h1 {
   margin-top: 1rem;
   background: #303030;
 }
-
 .social-links {
   display: flex;
   justify-content: space-around;
@@ -309,7 +321,6 @@ section h1 {
     width: 35%;
   }
 }
-
 .social-link {
   color: rgba(255, 255, 255, 0.75);
   font-size: 2rem;
