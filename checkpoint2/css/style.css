@@ -31,13 +31,14 @@ header a {
   top: 600px;
   display: grid;
   grid-template-columns: 1fr 120px 120px 120px 120px 1fr;
-  grid-template-rows: repeat(8, 120px);
+  grid-template-rows: repeat(20, 120px);
   grid-template-areas: 
     ".       .       .       .       .        ."
     "pinkbox pinkbox pinkbox .       .        ."
     ".       .       greybox greybox greybox  greybox"
     ".       .       greybox greybox greybox  greybox"
-    ".       .       greybox greybox greybox  greybox";
+    ".       .       greybox greybox greybox  greybox"
+    ".       .       greybox2.       .        .";
 
 }
 
@@ -74,6 +75,12 @@ header a {
 .box7 {
   background-color: #ffa3df73;
   grid-area: pinkbox;
+  transition: ease-out 2s;
+}
+
+.box7:hover {
+  background-color: #ffa3df25;
+  transition: ease-out 2s;
 }
 
 .box8 {
@@ -138,23 +145,27 @@ header a {
 }
 
 .bigcontact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   color: #a3ffe3;
   text-decoration: none;
   text-align: center;
-  width: 90px;
-  height: 90px;
+  width: 110px;
+  height: 110px;
   margin-top: 5%;
   margin-left: 20%;
-  border-radius: 20px;
-  border: #a3ffe3 solid 2px;
+  border-radius: 2px;
+  border: #a3ffe3 solid 1px;
   transition: ease-in-out .5s;
 }
 
 .bigcontact:hover {
   transform: rotate(360deg);
   transition: .5s;
-  color: #6affd2;
-  font-weight: 300;
+  color: #a3ffe3;
+  background-color: #a3ffe352;
+  font-weight: 250;
 }
 
 .box14 {
