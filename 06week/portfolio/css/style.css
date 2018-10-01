@@ -1,0 +1,55 @@
+/*desktop view*/
+body { 
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/background-portfolio.jpg');
+    background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.navi a{
+    height: 65px;
+    border: 2px white solid;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto;
+    justify-items: grid-start; 
+    gap: 1em;
+    
+}
+.job{
+    text-shadow: 1px 1px 2px #471b52;
+    font-family: 'pacifico';
+    color: antiquewhite;
+
+}
+/* this is where hello and my name interchange when hover*/
+.name{
+    border: 2px white dotted;
+    font-size: 150px;
+    display: flex; 
+    justify-content: center;
+
+}
+a{
+    text-decoration:none;
+}
+.label {
+    text-shadow: 1px 1px 2px #471b52;
+    font-family: 'pacifico';
+    color: antiquewhite;
+    text-transform: lowercase;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.name a p.hello-label span{
+  position: center;
+  content: 'hello';
+}
+.name:hover a p.hello-label span{
+  display: none;
+}
+.name:hover a p.hello-label:after{
+  content: "I'm Taylor Colten";
+}
