@@ -55,7 +55,12 @@ section h1 {
   justify-content: center;
   align-items: center;
   z-index: 1;
+  transition: transform 300ms ease-in-out;
 }
+.nav-container.hidden {
+  transform: translateY(-50px);
+}
+
 .nav-title {
   display: none;
   padding-left: 5rem;
