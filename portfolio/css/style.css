@@ -12,17 +12,16 @@ body {
   );
   color: #303030;
 }
-
 section h1 {
   text-align: center;
 }
-
 .section-img {
   width: 100%;
   display: flex;
   justify-content: center;
   padding: 60px 0 0 0;
 }
+
 .section-img img {
   width: 200px;
   height: 200px;
@@ -33,12 +32,10 @@ section h1 {
     height: 256px;
   }
 }
-
 .site-wrapper {
   width: 90%;
   margin: 0 auto;
 }
-
 .container {
   width: 95%;
   margin: 0 auto;
@@ -55,44 +52,53 @@ section h1 {
   background: rgba(0, 0, 0, 0.4);
   border-bottom: solid 1px black;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   z-index: 1;
 }
-
 .nav-title {
   display: none;
-  justify-content: center;
-  align-items: center;
+  padding-left: 5rem;
   font-size: 1.8rem;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.75);
 }
 @media screen and (min-width: 768px) {
+  .nav-container {
+    justify-content: space-between;
+  }
   .nav-title {
     display: block;
+  }
+  .nav-items:last-child {
+    padding-right: 3rem;
   }
 }
 
 .nav-items {
   display: flex;
-  gap: 3rem;
   justify-content: space-around;
   align-items: center;
 }
+
 .nav-item {
   text-decoration: none;
   padding: 1rem;
   font-size: 1.3rem;
   color: rgba(255, 255, 255, 0.75);
+  transition: color 200ms ease-in-out;
 }
-
+.nav-item:hover,
+.nav-item:focus {
+  color: #ff6c5c;
+}
 /* HERO SECTION */
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .hero::after {
   content: "";
   height: 100vh;
@@ -104,7 +110,6 @@ section h1 {
   background-repeat: no-repeat;
   display: block;
 }
-
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -130,7 +135,6 @@ section h1 {
 .hero-content h2 span {
   font-weight: 300;
 }
-
 /* WORK SECTION */
 .work-item-container {
   /* border: solid 3px blue; */
@@ -140,72 +144,62 @@ section h1 {
   width: 100%;
   max-width: 650px;
 }
-
 .work-item {
   width: 90%;
   margin: 0 auto;
   position: relative;
-  box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
 }
-
 .work-item img {
   max-width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .work-item-info {
   background: #303030;
-  color: #e2ebf0;
+  color: #ecf0f1;
   margin-top: -4px;
-  padding: .6rem;
+  padding: 0.6rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
-
 .work-item-title {
   margin: 0.3rem 0;
   font-size: 1.5rem;
 }
-
 .work-item-overlay {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 50%;
   height: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 5%;
+  left: 25%;
   opacity: 0;
-  transform: translateY(50%);
   transition: all ease-in-out 300ms;
 }
 .work-item:hover .work-item-overlay {
   opacity: 1;
-  transform: translateY(-5%);
 }
-
 .work-item-overlay button {
   color: rgba(255, 255, 255, 0.75);
-  background: none;
-  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 1rem 2rem;
   border: solid 2px rgba(255, 255, 255, 0.65);
-  border-radius: 5px;
+  border-radius: 10px;
   opacity: 0;
   transition: all 300ms ease-in-out;
 }
-
-.work-item-overlay .btn-background {
-  display: flex;
-  justify-content: center;
-  padding: 1rem 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.9);
-}
-
 .work-item:hover .work-item-overlay button {
   opacity: 1;
 }
 .work-item-overlay button:hover {
-  background: rgba(255, 255, 255, 0.25);
+  color: #ff6c5c;
+  cursor: pointer;
 }
 
 /* ABOUT SECTION */
@@ -222,13 +216,11 @@ section h1 {
     justify-content: space-around;
   }
 }
-
 .about-header {
   font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: 0;
 }
-
 .about-text {
   font-size: 1.3rem;
   line-height: 1.5;
@@ -245,26 +237,31 @@ section h1 {
   max-width: 650px;
   margin: 0 auto;
 }
-
 .contact-container-inner {
   display: grid;
   gap: 1rem;
   padding: 1rem;
 }
-
 .contact-input,
 .contact-text-area,
 .contact-btn {
-  box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
   border-radius: 10px;
   border: none;
+  outline: none;
+  transition: all 300ms ease-in-out;
 }
-
+.contact-input:hover,
+.contact-text-area:hover,
+.contact-btn:hover,
+.contact-input:focus,
+.contact-text-area:focus,
+.contact-btn:focus {
+  box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.45);
+}
 .contact-input {
   height: 50px;
   padding-left: 1rem;
 }
-
 .contact-text-area {
   resize: vertical;
   height: 150px;
@@ -273,16 +270,20 @@ section h1 {
   border-bottom-right-radius: 5px;
   padding: 1rem 1rem 0.5rem 1rem;
 }
-
 .contact-btn {
   background: #303030;
-  color: #cfd9df;
+  color: #ecf0f1;
   font-size: 1.5rem;
   padding: 1rem;
+  cursor: pointer;
+}
+.contact-btn:hover,
+.contact-btn:focus {
+  color: #ff6c5c;
 }
 
 /* FOOTER */
-.footer-wrapper {
+.footer-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -294,13 +295,77 @@ section h1 {
 
 .social-links {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 35%;
+  width: 50%;
+}
+@media screen and (min-width: 768px) {
+  .social-links {
+    width: 35%;
+  }
 }
 
 .social-link {
   color: rgba(255, 255, 255, 0.75);
-  font-size: 2.5rem;
-  padding: 0 2rem;
+  font-size: 2rem;
+  transition: color 200ms ease-in-out;
+}
+.social-link:hover,
+.social-link:focus {
+  color: #ff6c5c;
+}
+/* OTHER */
+.btn-container {
+  width: 35px;
+  height: 22px;
+  margin: 0 auto;
+  padding-bottom: 0.3rem;
+}
+.btn-to-top,
+.btn-to-next-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #303030;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: color 200ms ease-in-out;
+}
+.btn-to-top:hover {
+  color: #ff6c5c;
+  animation: bounceUp 1500ms;
+}
+@keyframes bounceUp {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+@keyframes bounceDown {
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  80% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
 }
