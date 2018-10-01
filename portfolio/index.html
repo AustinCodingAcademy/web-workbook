@@ -40,12 +40,12 @@
     <header>
       <nav class="nav-container">
         <div class="nav-title-container">
-          <a class="nav-title" href="#">Andy Olson</a>
+          <a id="nav-name" class="nav-title" href="#">Andy Olson</a>
         </div>
         <div class="nav-items">
-          <div><a class="nav-item" href="#work">Work</a></div>
-          <div><a class="nav-item" href="#about">About</a></div>
-          <div><a class="nav-item" href="#contact">Contact</a></div>
+          <div><a id="nav-work" class="nav-item" href="#work">Work</a></div>
+          <div><a id="nav-about" class="nav-item" href="#about">About</a></div>
+          <div><a id="nav-contact" class="nav-item" href="#contact">Contact</a></div>
         </div>
       </nav>
     </header>
@@ -161,7 +161,7 @@
       <!-- contact section end -->
 
       <div class="btn-container">
-        <a href="#" class="btn-to-top" title="To Top"><i class="fa fa-angle-up"></i></a>
+        <a href="#" id="to-top" title="To Top"><i class="fa fa-angle-up"></i></a>
       </div>
     </div>
 
@@ -183,7 +183,49 @@
 
   <!-- End Document
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="module">
+    import jump from '../jump.js/dist/jump.module.js';
+
+    var btnToTop1 = document.getElementById('to-top');
+    var btnToTop2 = document.getElementById('nav-name');
+    var btnToWork = document.getElementById('nav-work');
+    var btnToAbout = document.getElementById('nav-about');
+    var btnToContact = document.getElementById('nav-contact');
+
+    btnToTop1.addEventListener('click', () => {
+      jump('.hero', {
+        duration: 2000
+      });
+    })
+    btnToTop2.addEventListener('click', () => {
+      jump('.hero', {
+        duration: 2000
+      });
+    })
+    btnToWork.addEventListener('click', () => {
+      jump('.work', {
+        callback: () => {
+          navbar.classList.remove("hidden");
+        }
+      });
+    })
+    btnToAbout.addEventListener('click', () => {
+      jump('.about', {
+        callback: () => {
+          navbar.classList.remove("hidden");
+        }
+      });
+    })
+    btnToContact.addEventListener('click', () => {
+      jump('.contact', {
+        callback: () => {
+          navbar.classList.remove("hidden");
+        }
+      });
+    })
+  </script>
   <script type="text/javascript" src="js/main.js"></script>
+
 
 </body>
 
