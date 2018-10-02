@@ -28,6 +28,10 @@ header a {
   color: #a3ffe3;
 }
 
+header a:hover {
+  background-color: #a3ffe34d;
+}
+
 header .logo {
   font-weight: 600;
 }
@@ -37,7 +41,7 @@ header .logo {
   top: 600px;
   display: grid;
   grid-template-columns: 1fr 120px 120px 120px 120px 1fr;
-  grid-template-rows: repeat(30, 120px);
+  grid-template-rows: repeat(21, 120px);
   grid-template-areas: 
     ".             .            .            .           .           ."
     "pinkbox       pinkbox      pinkbox      .           .           ."
@@ -48,16 +52,17 @@ header .logo {
     "greybox2      greybox2     greybox2     greybox2    greybox2    ."
     "greybox2      greybox2     greybox2     greybox2    greybox2    ."
     "greybox2      greybox2     greybox2     greybox2    greybox2    ."
-    ".             .            .            sweepinproj sweepinproj sweepinproj"
+    ".             .            .            sweepinproj sweepinproj  sweepinproj"
     ".             .            greyproj     greyproj    greyproj    greyproj"
     ".             .            greyproj     greyproj    greyproj    greyproj"
     ".             .            .            .           .           ."
     ".             .            .            .           .           ."
     ".             .            .            .           .           ."
     "sweepinyel    sweepinyel   sweepinyel   sweepinyel  sweepinyel  sweepinyel"
-    "greyproj2     greyproj2    greyproj2    greyproj2   greyproj2   ."
-    "greyproj2     greyproj2    greyproj2    greyproj2   greyproj2   ."
+    "contact       contact      contact      contact     contact     ."
+    "contact       contact      contact      contact     contact     ."
     ".             .            .            .           .           ."
+    "footer        footer       footer       footer      footer      footer"
     "footer        footer       footer       footer      footer      footer";
 
 }
@@ -443,16 +448,16 @@ header .logo {
   margin-left: 20%;
 }
 
-/* Projects box */
+/* Contact box */
 .box55 {
   color: #a3ffe3;  
   font-size: 1.5em;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: lighter;
   background-color: #25262769;
-  grid-area: greyproj2;
+  grid-area: contact;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   transition: ease-in-out .5s;
 }
 
@@ -465,9 +470,43 @@ header .logo {
 .box55 p {
   margin-top: 6%;
   margin-left: 6%;
-  margin-right: 20%;
+  margin-right: 3%;
 }
 
+.ibox {
+  margin-top: 37%;
+  outline: none;
+  appearance: none;
+  background: none;
+  border: #a3ffe3 solid 1px;
+}
+
+/* some additional fun stuff to be added here */
+
+/* Footer box */
+.box64 {
+  color: #a3ffe3;  
+  font-size: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+  background-color: #25262769;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  transition: ease-in-out .5s;
+}
+
+.box64:hover {
+  background-color: #252627cb;
+  font-weight: lighter;
+  transition: ease-in-out;
+}
+
+.box64 p {
+  margin-top: 6%;
+  margin-left: 6%;
+  margin-right: 20%;
+}
 
 
 
