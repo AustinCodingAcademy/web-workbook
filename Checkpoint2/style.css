@@ -1,4 +1,72 @@
 body {
   padding: 0;
   margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient( 62deg, #55f7c6 50%,  #f378ca 50%);
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  margin-top: -100px;
+  text-align: center;
+  font-size: 70pt;
+  color: whitesmoke;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.links {
+  margin-top: -75px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 15pt;
+}
+
+.links a:hover {
+  transition: all ease-out .5s;
+  border-bottom: 7px white double;
+}
+
+.gridcontainer {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "namebox" "namebox"
+  "tagline" "contactmebutton"
+  "aboutmebox" "aboutmebox"
+  "aboutmebox2" "aboutmebox2"
+}
+
+.namebox {
+  grid-area: namebox; 
+  height: 100px;
+}
+
+.contactmebutton {
+  grid-area: contactmebutton;
+  height: 100px;
+}
+
+.tagline {
+  grid-area: tagline;
+  height: 100px;
+
+}
+
+.aboutmebox {
+  grid-area: aboutmebox;
+  height: 200px;
+}
+
+.aboutmebox2 {
+  grid-area: aboutmebox2;
+  height: 200px;
 }
