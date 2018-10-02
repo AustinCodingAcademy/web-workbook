@@ -37,7 +37,7 @@ header .logo {
   top: 600px;
   display: grid;
   grid-template-columns: 1fr 120px 120px 120px 120px 1fr;
-  grid-template-rows: repeat(20, 120px);
+  grid-template-rows: repeat(30, 120px);
   grid-template-areas: 
     ".             .            .            .           .           ."
     "pinkbox       pinkbox      pinkbox      .           .           ."
@@ -49,14 +49,21 @@ header .logo {
     "greybox2      greybox2     greybox2     greybox2    greybox2    ."
     "greybox2      greybox2     greybox2     greybox2    greybox2    ."
     ".             .            .            sweepinproj sweepinproj sweepinproj"
+    ".             .            greyproj     greyproj    greyproj    greyproj"
+    ".             .            greyproj     greyproj    greyproj    greyproj"
     ".             .            .            .           .           ."
+    ".             .            .            .           .           ."
+    ".             .            .            .           .           ."
+    "sweepinyel    sweepinyel   sweepinyel   sweepinyel  sweepinyel  sweepinyel"
+    "greyproj2     greyproj2    greyproj2    greyproj2   greyproj2   ."
+    "greyproj2     greyproj2    greyproj2    greyproj2   greyproj2   ."
     ".             .            .            .           .           ."
     ".             .            .            .           .           .";
 
 }
 
 .box {
-  /* border: white solid 1px; */
+  /* border: rgba(255, 255, 255, 0.411) solid 1px; */
 }
 
 /* blinky web developer box (top left) */
@@ -305,5 +312,164 @@ header .logo {
 
 /* green sweep 'projects' banner */ 
 .box32 {
-  
+  color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: center;
+  font-family: 'VT323', monospace;
+  font-size: 6vh;
+  grid-area: sweepinproj;
+  overflow: hidden;
+  transition: all 2s ease-out;
 }
+
+.box32:before {
+  content:'';
+  position: absolute;
+  width: 0;
+  overflow: hidden;
+  height: 120px;
+  background-color: #a3ffe352;
+  transition: all .5s ease;
+}
+
+.box32:hover:before {
+  width: 100%;
+}
+.box32:hover {
+  color: #a3ffe393;
+
+}
+
+.box32 p {
+  margin-top: 30px; 
+  margin-right: 30%;
+}
+
+/* Projects box */
+.box33 {
+  color: #a3ffe3;  
+  font-size: 1.5em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+  background-color: #25262769;
+  grid-area: greyproj;
+  display: flex;
+  flex-direction: column;
+  transition: ease-in-out .5s;
+}
+
+.box33:hover {
+  background-color: #252627cb;
+  font-weight: lighter;
+  transition: ease-in-out;
+}
+
+.box33 p {
+  margin-top: 6%;
+  margin-left: 6%;
+  margin-right: 20%;
+}
+
+/* Project link boxes */
+.port {
+  border: rgba(255, 255, 255, 0.253) solid 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.port a{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+  transition: ease-out .5s;
+  color: #a3ffe3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.port a:hover {
+  color: #ffe2a3b7;
+  background-color: #a3ffe352;
+  transition: ease-out .5s;
+  animation: blinker2 .5s linear infinite;
+}
+
+@keyframes blinker2 {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* orange sweep 'contact' side banner */
+.box54 {
+  color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: center;
+  font-family: 'VT323', monospace;
+  font-size: 6vh;
+  grid-area: sweepinyel;
+  overflow: hidden;
+  transition: all 2s ease-out;
+}
+
+.box54:before {
+  content:'';
+  position: absolute;
+  width: 0;
+  overflow: hidden;
+  height: 120px;
+  background-color: #ffe2a352;
+  transition: all .5s ease;
+}
+
+.box54:hover:before {
+  width: 100%;
+}
+.box54:hover {
+  color: #ffe2a3a8;
+
+}
+
+.box54 p {
+  margin-top: 30px; 
+  margin-left: 20%;
+}
+
+/* Projects box */
+.box55 {
+  color: #a3ffe3;  
+  font-size: 1.5em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+  background-color: #25262769;
+  grid-area: greyproj2;
+  display: flex;
+  flex-direction: column;
+  transition: ease-in-out .5s;
+}
+
+.box55:hover {
+  background-color: #252627cb;
+  font-weight: lighter;
+  transition: ease-in-out;
+}
+
+.box55 p {
+  margin-top: 6%;
+  margin-left: 6%;
+  margin-right: 20%;
+}
+
+
+
+
+
+
