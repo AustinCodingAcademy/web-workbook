@@ -6,6 +6,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   color: white;
+
 }
 
 header {
@@ -27,65 +28,66 @@ header a {
   color: #a3ffe3;
 }
 
+header .logo {
+  font-weight: 600;
+}
+
+/* page body grid */
 .container {
   top: 600px;
   display: grid;
   grid-template-columns: 1fr 120px 120px 120px 120px 1fr;
   grid-template-rows: repeat(20, 120px);
   grid-template-areas: 
-    ".       .       .       .       .        ."
-    "pinkbox pinkbox pinkbox .       .        ."
-    ".       .       greybox greybox greybox  greybox"
-    ".       .       greybox greybox greybox  greybox"
-    ".       .       greybox greybox greybox  greybox"
-    ".       .       greybox2.       .        .";
+    ".             .            .            .           .           ."
+    "pinkbox       pinkbox      pinkbox      .           .           ."
+    "sweepinyellow .            greybox      greybox     greybox     greybox"
+    "sweepingreen  .            greybox      greybox     greybox     greybox"
+    ".             .            greybox      greybox     greybox     greybox"
+    "sweepinpink   sweepinpink  .            .           .           ."
+    "greybox2      greybox2     greybox2     greybox2    greybox2    ."
+    "greybox2      greybox2     greybox2     greybox2    greybox2    ."
+    "greybox2      greybox2     greybox2     greybox2    greybox2    ."
+    ".             .            .            sweepinproj sweepinproj sweepinproj"
+    ".             .            .            .           .           ."
+    ".             .            .            .           .           ."
+    ".             .            .            .           .           .";
 
 }
-
-
 
 .box {
   /* border: white solid 1px; */
 }
 
-.box1 {
-
-}
-
-.box2 {
-
-}
-
-.box3{
-
-}
-
-.box4 {
-
-}
-
-.box5 {
-
-}
-
-.box6 {
-
-}
-
+/* blinky web developer box (top left) */
 .box7 {
-  background-color: #ffa3df73;
+  color: rgba(255, 255, 255, 0);
+  font-family: 'VT323', monospace;
+  font-size: 4vh;
   grid-area: pinkbox;
   transition: ease-out 2s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 40px;
 }
 
 .box7:hover {
+  color: #ffa3df73;
   background-color: #ffa3df25;
-  transition: ease-out 2s;
+  transition: ease-out 1s;
+  animation: blinker 1s linear infinite;
 }
 
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* small top grid */
 .box8 {
   display: grid;
-
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: 
@@ -104,22 +106,59 @@ header a {
   transition: ease-out;
 }
 
+/* smaller pink top grid */
 .box9{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-areas: 
+    "dot dot dot dot dot dot dot dot"
+    "dot dot dot dot dot dot dot dot"
+    "dot dot dot dot dot dot dot dot"
+    "dot dot dot dot dot dot dot dot"
+    "dot dot dot dot dot dot dot dot"
+    "dot dot dot dot dot dot dot dot"
+    "dot dot dot dot dot dot dot dot"
+    "dot dot dot dot dot dot dot dot";
 
 }
 
-.box10 {
-
-}
-
+/* I heart HTML side banner */
 .box11 {
-
+  color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: 'VT323', monospace;
+  font-size: 6vh;
+  grid-area: sweepinyellow;
+  overflow: hidden;
+  transition: all 2s ease-out;
 }
 
-.box12 {
-
+.box11:before {
+  content:'';
+  position: absolute;
+  width: 0;
+  overflow: hidden;
+  height: 120px;
+  background-color: #ffe2a352;
+  transition: all .5s ease;
 }
 
+.box11:hover:before {
+  width: 30%;
+}
+
+.box11:hover {
+  color: #ffe2a3b7;
+}
+
+.box11 p {
+  margin-top: 10%;
+}
+
+/* Home box with contact button */
 .box13 {
   color: #a3ffe3;  
   font-size: 1.5em;
@@ -168,6 +207,103 @@ header a {
   font-weight: 250;
 }
 
+/* CSS is fun side banner */
 .box14 {
+  color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: 'VT323', monospace;
+  font-size: 6vh;
+  grid-area: sweepingreen;
+  overflow: hidden;
+  transition: all 2s ease-out;
+}
 
+.box14:before {
+  content:'';
+  position: absolute;
+  width: 0;
+  overflow: hidden;
+  height: 120px;
+  background-color: #a3ffe352;
+  transition: all .5s ease;
+}
+
+.box14:hover:before {
+  width: 30%;
+}
+.box14:hover {
+  color: #a3ffe393;
+}
+
+.box14 p {
+  margin-top: 40px; 
+}
+
+/* pink sweep 'about me' side banner */
+.box18 {
+  color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: center;
+  font-family: 'VT323', monospace;
+  font-size: 6vh;
+  grid-area: sweepinpink;
+  overflow: hidden;
+  transition: all 2s ease-out;
+}
+
+.box18:before {
+  content:'';
+  position: absolute;
+  width: 0;
+  overflow: hidden;
+  height: 120px;
+  background-color: #ffa3df25;
+  transition: all .5s ease;
+}
+
+.box18:hover:before {
+  width: 100%;
+}
+.box18:hover {
+  color: #ffa3df73;
+
+}
+
+.box18 p {
+  margin-top: 30px; 
+  margin-left: 20%;
+}
+
+/* About Me box */
+.box24 {
+  color: #a3ffe3;  
+  font-size: 1.5em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+  background-color: #25262769;
+  grid-area: greybox2;
+  display: flex;
+  flex-direction: column;
+  transition: ease-in-out .5s;
+}
+
+.box24:hover {
+  background-color: #252627cb;
+  font-weight: lighter;
+  transition: ease-in-out;
+}
+
+.box24 p {
+  margin-top: 6%;
+  margin-left: 6%;
+  margin-right: 20%;
+}
+
+/* green sweep 'projects' banner */ 
+.box32 {
+  
 }
