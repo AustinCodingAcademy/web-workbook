@@ -3,9 +3,11 @@ body {
   margin: 0;
   height: 100vh;
   width: 100vw;
-  background: linear-gradient( 62deg, #55f7c6 50%,  #f378ca 50%);
-  background-size: cover;
-  background-position: center;
+  /* background: linear-gradient(54deg, #55f7c6 50%,  #f378ca 50%); */
+  /* background: linear-gradient( #55f7c6,  #f378ca); */
+  background: linear-gradient( #99a3a0c5,  #f52b7f);
+/* background: linear-gradient(54deg, #99a3a0c5 50%, #f52b7f 50%); */
+
 }
 
 .logo {
@@ -36,10 +38,12 @@ body {
 }
 
 .gridcontainer {
+  display: grid;
+  Text-align: left;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
-  "namebox" "namebox"
+  "namebox namebox"
   "tagline" "contactmebutton"
   "aboutmebox" "aboutmebox"
   "aboutmebox2" "aboutmebox2"
@@ -47,26 +51,26 @@ body {
 
 .namebox {
   grid-area: namebox; 
-  height: 100px;
+  height: auto;
+  width: 2fr;
 }
 
 .contactmebutton {
   grid-area: contactmebutton;
-  height: 100px;
+  height: auto;
 }
 
 .tagline {
   grid-area: tagline;
-  height: 100px;
-
+  height: auto;
 }
 
 .aboutmebox {
   grid-area: aboutmebox;
-  height: 200px;
+  height: auto;
 }
 
 .aboutmebox2 {
   grid-area: aboutmebox2;
-  height: 200px;
+  height: auto;
 }
