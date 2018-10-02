@@ -508,7 +508,265 @@ header .logo {
   margin-right: 20%;
 }
 
+/* mobile view */
+@media only screen and (max-width: 425px) {
+  header {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20vh;
+    position: fixed;
+    background: rgba(171, 205, 239, 0.3);
+  }
 
-
-
-
+  /* page body grid */
+  .container {
+    top: 600px;
+    display: grid;
+    grid-template-columns: 1fr 60px 60px 60px 60px 1fr;
+    grid-template-rows: repeat(22, 60px);
+    grid-template-areas: 
+      ".             .            .            .           .         ."
+      ".             .            .            .           .         ."
+      ".             .            .            .           .         ."
+      "greybox       greybox      greybox      greybox     greybox   greybox"
+      "greybox       greybox      greybox      greybox     greybox   greybox"
+      "greybox       greybox      greybox      greybox     greybox   greybox"
+      "greybox       greybox      greybox      greybox     greybox   greybox"
+      ".             .            .            .           .         ."
+      "greybox2      greybox2     greybox2     greybox2    greybox2  greybox2"
+      "greybox2      greybox2     greybox2     greybox2    greybox2  greybox2"
+      "greybox2      greybox2     greybox2     greybox2    greybox2  greybox2"
+      "greybox2      greybox2     greybox2     greybox2    greybox2  greybox2"
+      "greybox2      greybox2     greybox2     greybox2    greybox2  greybox2"
+      ".             .            .            .           .         ."
+      "greyproj      greyproj     greyproj     greyproj    greyproj  greyproj"
+      "greyproj      greyproj     greyproj     greyproj    greyproj  greyproj"
+      "greyproj      greyproj     greyproj     greyproj    greyproj  greyproj"
+      "greyproj      greyproj     greyproj     greyproj    greyproj  greyproj"
+      ".             .            .            .           .         ."
+      "contact       contact      contact      contact     contact   contact"
+      "contact       contact      contact      contact     contact   contact"
+      ".             .            .            .           .         ."
+      "footer        footer       footer       footer      footer    footer"
+      "footer        footer       footer       footer      footer    footer";
+  
+  }  
+  
+  .box {
+    /* border: rgba(255, 255, 255, 0.411) solid 1px; */
+  }
+  
+  /* blinky web developer box (top left) */
+  .box7 {
+    display: none;
+  }
+  
+  /* small top grid */
+  .box8 {
+    display: none;
+  }
+  
+  /* smaller pink top grid */
+  .box9{
+    display: none;
+  }
+  
+  /* I heart HTML side banner */
+  .box11 {
+    display: none;
+  }
+  
+  /* Home box with contact button */
+  .box13 {
+    color: #a3ffe3;  
+    font-size: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,   Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    background-color: #25262769;
+    grid-area: greybox;
+    display: flex;
+    flex-direction: column;
+    transition: ease-in-out .5s;
+  }
+  
+  .box13:hover {
+    background-color: #252627cb;
+    font-weight: lighter;
+    transition: ease-in-out;
+  }
+  
+  .box13 p {
+    margin-top: 6%;
+    margin-left: 6%;
+    margin-right: 20%;
+  }
+  
+  .bigcontact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #a3ffe3;
+    text-decoration: none;
+    text-align: center;
+    width: 110px;
+    height: 110px;
+    margin-top: 5%;
+    margin-left: 20%;
+    border-radius: 2px;
+    border: #a3ffe3 solid 1px;
+    transition: ease-in-out .5s;
+  }
+  
+  .bigcontact:hover {
+    transform: rotate(360deg);
+    transition: .5s;
+    color: #a3ffe3;
+    background-color: #a3ffe352;
+    font-weight: 250;
+  }
+  
+  /* CSS is fun side banner */
+  .box14 {
+    display: none;
+  }
+  
+  /* pink sweep 'about me' side banner */
+  .box18 {
+    display: none;
+  }
+  
+  /* About Me box */
+  .box24 {
+    color: #a3ffe3;  
+    font-size: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,   Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    background-color: #25262769;
+    grid-area: greybox2;
+    display: flex;
+    flex-direction: column;
+    transition: ease-in-out .5s;
+  }
+  
+  .box24:hover {
+    background-color: #252627cb;
+    font-weight: lighter;
+    transition: ease-in-out;
+  }
+  
+  .box24 p {
+    margin-top: 6%;
+    margin-left: 6%;
+    margin-right: 20%;
+  }
+  
+  /* green sweep 'projects' banner */ 
+  .box32 {
+    display: none;
+  }
+  
+  /* Projects box */
+  .box33 {
+    color: #a3ffe3;  
+    font-size: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,   Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    background-color: #25262769;
+    grid-area: greyproj;
+    display: flex;
+    flex-direction: column;
+    transition: ease-in-out .5s;
+  }
+  
+  .box33:hover {
+    background-color: #252627cb;
+    font-weight: lighter;
+    transition: ease-in-out;
+  }
+  
+  .box33 p {
+    margin-top: 6%;
+    margin-left: 6%;
+    margin-right: 20%;
+  }
+  
+  /* Project link boxes MOBILE */
+  .port {
+    display: none;
+  }
+  
+  /* orange sweep 'contact' side banner */
+  .box54 {
+    display: none;
+  }
+  
+  /* Contact box */
+  .box55 {
+    color: #a3ffe3;  
+    font-size: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,   Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    background-color: #25262769;
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    transition: ease-in-out .5s;
+  }
+  
+  .box55:hover {
+    background-color: #252627cb;
+    font-weight: lighter;
+    transition: ease-in-out;
+  }
+  
+  .box55 p {
+    margin-top: 1%;
+    margin-left: 6%;
+    margin-right: 3%;
+  }
+  
+  .ibox {
+    margin-top: 1%;
+    outline: none;
+    appearance: none;
+    background: none;
+    border: #a3ffe3 solid 1px;
+  }
+  
+  /* some additional fun stuff to be added here */
+  
+  /* Footer box */
+  .box64 {
+    color: #a3ffe3;  
+    font-size: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,   Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    background-color: #25262769;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    transition: ease-in-out .5s;
+  }
+  
+  .box64:hover {
+    background-color: #252627cb;
+    font-weight: lighter;
+    transition: ease-in-out;
+  }
+  
+  .box64 p {
+    margin-top: 6%;
+    margin-left: 6%;
+    margin-right: 20%;
+  }
+  
+}
+  
+  
+  
