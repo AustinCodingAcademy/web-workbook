@@ -174,4 +174,4 @@ var jumper = function jumper() {
 
 var singleton = jumper();
 
-// export default singleton;
+export default singleton;
