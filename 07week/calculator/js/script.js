@@ -73,6 +73,6 @@ function errorHandler(str1, str2) {
   )
     return true;
   
-    else 
+  else 
     return false;
 }
