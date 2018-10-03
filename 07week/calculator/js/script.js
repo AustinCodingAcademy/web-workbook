@@ -1,5 +1,18 @@
+'use strict';
 function addNumber(num) {
   document.querySelector("#results").value += num;
+}
+
+function multiplication(num) {
+  document.querySelector("#results").value += "*";
+}
+
+function division(num) {
+  document.querySelector("#results").value += "/";
+}
+
+function subtraction(num) {
+  document.querySelector("#results").value += "-";
 }
 
 function clearResults() {
