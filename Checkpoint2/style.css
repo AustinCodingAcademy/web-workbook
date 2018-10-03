@@ -26,7 +26,7 @@ body {
 
 .links a:hover {
   transition: all ease-in .4s;
-  border-bottom: 7px white double;
+  border-bottom: 7px rgb(1, 68, 95) double;
 }
 
 .flexcontainer1 {
@@ -87,7 +87,66 @@ button:hover {
 .aboutme2 {
   font-size: 15pt;
   width: 35%;
-  margin-top: 10px;
+  margin-top: -25px;
   margin-right: 50px;
   margin-left: -100px;
+}
+
+.social img {
+  height: 35px;
+}
+
+.gridfooter {
+  position: fixed; bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.created {
+  text-align: left;
+}
+
+.social {
+  position: fixed; right: 0;
+  padding-right: 50px;
+}
+
+@media (max-width: 800px) {
+  .flexcontainer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(1, 68, 95);
+  }
+
+  .flexcontainer2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(1, 68, 95);
+  }
+
+  .aboutme1 {
+    font-size: 15pt;
+    padding-left: 0;
+    width: 35%;
+  }
+  
+  .aboutme2 {
+    font-size: 15pt;
+    width: 35%;
+    margin-top: -20px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+ 
+  .created {
+    display: none;
+  }
+
+  .social {
+    display: none;
+  }
 }
