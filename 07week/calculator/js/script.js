@@ -1,6 +1,6 @@
 "use strict";
 
-const threshold = 15;
+const threshold = 11;
 
 function addNumber(num) {
   let current = document.querySelector("#results").value;
