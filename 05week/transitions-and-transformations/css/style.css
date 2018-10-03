@@ -119,7 +119,7 @@ body {
 .grid-container:hover > .box:nth-of-type(even) {
         transform: scale(2) translateX(23vw) rotate(360deg);    
         transition: transform 5s;
-    
+        background-color: navy;        
     
     /* .box:nth-child(odd):hover{
         transform: scale(0.5) translateX(-87vw) rotate(-360deg); 
@@ -129,8 +129,15 @@ body {
 .grid-container:hover > .box:nth-of-type(odd) {
     transform: scale(0.5) translateX(-96vw) rotate(-360deg);
     transition: transform 5s;
+    background-color: tomato;
 }
 
-.grid-container > * {
+.grid-container > .box:nth-of-type(odd) {
     transition: transform 5s;
+    background-color: navy;
+}
+
+.grid-container > .box:nth-of-type(even) {
+    transition: transform 5s;
+    background-color: tomato;
 }
