@@ -22,6 +22,10 @@ function division() {
   document.querySelector("#results").value += "/";
 }
 
+function plusminus() {
+ document.querySelector("#results").value =      document.querySelector("#results").value * -1;
+}
+
 function equals() {
   document.querySelector("#results").value = eval(document.querySelector("#results").value);
 }
