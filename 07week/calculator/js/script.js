@@ -1,7 +1,11 @@
 "use strict";
 
+const threshold = 15;
+
 function addNumber(num) {
+  let current = document.querySelector("#results").value;
   document.querySelector("#results").value += num;
+  changeFontSize(current, threshold);
 }
 
 function clearResults() {
@@ -10,36 +14,39 @@ function clearResults() {
 
 function addition() {
   let current = document.querySelector("#results").value;
-  if (current === "") return;
   document.querySelector("#results").value += "+";
+  changeFontSize(current, threshold);
 }
 
 function subtraction() {
   let current = document.querySelector("#results").value;
-  if (current === "") return;
   document.querySelector("#results").value += "-";
+  changeFontSize(current, threshold);
 }
 
 function multiply() {
   let current = document.querySelector("#results").value;
-  if (current === "") return;
   document.querySelector("#results").value += "*";
+  changeFontSize(current, threshold);
 }
 
 function divide() {
   let current = document.querySelector("#results").value;
-  if (current === "") return;
   document.querySelector("#results").value += "/";
+  changeFontSize(current, threshold);
 }
 
 function equals() {
+  let current = document.querySelector("#results").value;
   document.querySelector("#results").value = eval(
     document.querySelector("#results").value
   );
+  changeFontSize(current, threshold);
 }
 
 function deleteLast() {
   let current = document.querySelector("#results").value;
+  changeFontSize(current, threshold);
   document.querySelector("#results").value = current.slice(0, -1);
 }
 
@@ -54,8 +61,7 @@ function toggleSign() {
   if (currentFirstChar === "-") {
     // remove "-" from current results
     document.querySelector("#results").value = current.substr(1);
-  } 
-  else {
+  } else {
     // add "-" to current results
     document.querySelector("#results").value = "-" + current;
   }
@@ -72,7 +78,25 @@ function errorHandler(str1, str2) {
     str2.includes("/")
   )
     return true;
-  
-  else 
-    return false;
+  else return false;
+}
+
+// Function that decreases font size of an element
+function decreaseFontSize(element) {
+  element = document.getElementsByTagName("input")[0];
+  element.style.fontSize = "85%";
+}
+
+// Function that increases font size of an element
+function increaseFontSize(element) {
+  element = document.getElementsByTagName("input")[0];
+  element.style.fontSize = "115%";
+}
+
+// Function that deterimines if we should increase/decrease font size depending on str length
+function changeFontSize(str, threshold) {
+  let length = str.length;
+
+  if (length > threshold) decreaseFontSize(str);
+  else increaseFontSize(str);
 }
