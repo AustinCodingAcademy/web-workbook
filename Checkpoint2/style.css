@@ -3,27 +3,19 @@ body {
   margin: 0;
   height: 100vh;
   width: 100vw;
-  /* background: linear-gradient(54deg, #55f7c6 50%,  #f378ca 50%); */
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(30deg, #29d8c9 50%,  #f195d3 50%);
   /* background: linear-gradient( #55f7c6,  #f378ca); */
-  background: linear-gradient( #99a3a0c5,  #f52b7f);
-/* background: linear-gradient(54deg, #99a3a0c5 50%, #f52b7f 50%); */
-
-}
-
-.logo {
-  margin-top: -100px;
-  text-align: center;
-  font-size: 70pt;
-  color: whitesmoke;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* background: linear-gradient( #99a3a0c5,  #f52b7f); */
 }
 
 .links {
-  margin-top: -75px;
+  margin-top: 40px;
   display: flex;
   flex-direction: row;
   align-content: center;
   justify-content: space-around;
+  padding-bottom: 10%;
 }
 
 .links a {
@@ -33,44 +25,56 @@ body {
 }
 
 .links a:hover {
-  transition: all ease-out .5s;
+  transition: all ease-in .4s;
   border-bottom: 7px white double;
 }
 
-.gridcontainer {
-  display: grid;
-  Text-align: left;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 
-  "namebox namebox"
-  "tagline" "contactmebutton"
-  "aboutmebox" "aboutmebox"
-  "aboutmebox2" "aboutmebox2"
+.flexcontainer1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: navy;
+  margin-left: 5%;
+  margin-right: 10%;
 }
 
-.namebox {
-  grid-area: namebox; 
-  height: auto;
-  width: 2fr;
+
+.namecontact h1 {
+  font-size: 55pt;
 }
 
-.contactmebutton {
-  grid-area: contactmebutton;
-  height: auto;
+h3 {
+  font-size: 20pt;
+  margin-top: -30px;
 }
 
-.tagline {
-  grid-area: tagline;
-  height: auto;
+button {
+  height: 100px;
+  width: 280px;
+  border-radius: 5%;
+  font-size: 25pt;
+  margin-top: 50px;
 }
 
-.aboutmebox {
-  grid-area: aboutmebox;
-  height: auto;
+.flexcontainer2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: navy;
+  line-height: 1.5;
 }
 
-.aboutmebox2 {
-  grid-area: aboutmebox2;
-  height: auto;
+.aboutme1 {
+  font-size: 15pt;
+  padding-left: 5%;
+  width: 35%;
+}
+
+.aboutme2 {
+  font-size: 15pt;
+  width: 35%;
+  margin-top: 10px;
+  margin-right: 50px;
+  margin-left: -100px;
 }
