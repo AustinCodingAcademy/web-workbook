@@ -50,9 +50,15 @@
       <input type="text" id="results">
       <table>
         <tr>
-          <td class="button" onclick="addNumber('1')">1</td>
-          <td class="button" onclick="addNumber('2')">2</td>
-          <td class="button" onclick="addNumber('3')">3</td>
+          <td class="button" onclick="deleteLast()">CE</td>
+          <td class="button" onclick="clearResults()">AC</td>
+          <td class="button" onclick="divide()">/</td>
+          <td class="button" onclick="multiply()">*</td>
+        </tr>
+        <tr>
+          <td class="button" onclick="addNumber('7')">7</td>
+          <td class="button" onclick="addNumber('8')">8</td>
+          <td class="button" onclick="addNumber('9')">9</td>
           <td class="button" onclick="addition()">+</td>
         </tr>
         <tr>
@@ -62,20 +68,15 @@
           <td class="button" onclick="subtraction()">-</td>
         </tr>
         <tr>
-          <td class="button" onclick="addNumber('7')">7</td>
-          <td class="button" onclick="addNumber('8')">8</td>
-          <td class="button" onclick="addNumber('9')">9</td>
-          <td class="button" onclick="multiply()">*</td>
+          <td class="button" onclick="addNumber('1')">1</td>
+          <td class="button" onclick="addNumber('2')">2</td>
+          <td class="button" onclick="addNumber('3')">3</td>
+          <td class="button" rowspan="2" onclick="equals()">=</td>
         </tr>
         <tr>
-          <td class="button" onclick="toggleSign()">+/-</td>
           <td class="button" onclick="addNumber('0')">0</td>
-          <td class="button" onclick="equals()">=</td>
-          <td class="button" onclick="divide()">/</td>
-        </tr>
-        <tr>
-          <td class="button" colspan="2" onclick="deleteLast()">Delete</td>
-          <td class="button" colspan="2" onclick="clearResults()">Clear</td>
+          <td class="button" onclick="addNumber('.')">.</td>
+          <td class="button" onclick="toggleSign()">+/-</td>
         </tr>
       </table>
     </div>
