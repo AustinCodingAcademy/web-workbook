@@ -1,54 +1,38 @@
-.box {
-    background: #eeeeee;
-    padding: 10px;
-    border: 1px solid black;
-    margin: 5px;
-  }
-
 .box1 {
     grid-area: box1;
+    background-color: black;
+    margin: 5px;
   }
   
   .box2 {
     grid-area: box2;
+    background-color: black;
+    margin: 5px;
   }
   
   .box3 {
     grid-area: box3;
+    background-color: black;
+    margin: 5px;
   }
   
   .box4 {
     grid-area: box4;
+    background-color: black;
+    margin: 5px;
   }
-
-  /* Extra Small and up (Portrait Phones) */
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "box1"
-      "box2"
-      "box3"
-      "box4";
-  }
-
-  /* Medium and up (Tablets) */
-@media (min-width: 768px) {
-    .grid {
-      grid-template-columns: 1fr 2fr;
-      grid-template-areas:
-        "box1 box2"
-        "box3 box4";
-    }
-  }  
 
   /* Large and up (Desktops) */
-@media (min-width: 992px) {
-    .grid {
-      grid-template-columns: 1fr 2fr 1fr;
-      grid-template-areas:
-        "box1 box1 box2"
-        "box3 box4 box2";
+@media (min-width: 700px) {
+    .box {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 300px 300px;
+        grid-template-areas: 
+        "box1 box2"
+        "box3 box4";
+        background: #eeeeee;
+        padding: 10px;
+      }
     }
-  }
