@@ -1,5 +1,7 @@
 body {
   background-image: url(../img/desk.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header {
@@ -17,14 +19,44 @@ body {
   font-family: 'Charmonman', cursive;
   font-family: 'Lobster', cursive;
   border: 2px solid black;
+  opacity: .5;
 }
 
 .contact {
-  display: grid;
-  grid-template-rows: 350px 300px
+  position: absolute;
+  bottom:0;
+  width:30%;
+  height:160px;  
+  background: pink;
+  display: flex;
+  flex-direction: row;  
 }
 
+h1 {
+  text-align: center;
+}
 
+.name {
+  width: 150px;
+  height: 50px;
+  text-align: center;
+}
+
+.email {
+  width: 150px;
+  height: 50px;
+  text-align: center;
+}
+
+.message {
+  height: 50px;
+  width: 150px;
+  text-align: center;
+
+.copyright {
+  position:absolute;
+  bottom:0;
+}
 
 
 
