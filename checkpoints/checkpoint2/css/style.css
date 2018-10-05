@@ -1,0 +1,423 @@
+/*setting up a grid with 7 main sections: landing, about header, about, projects header, projects, contact header, contact*/
+.landing {
+  /* border: 2px solid red; */
+  grid-area: land;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/rawpixel-569620-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#about-header {
+  /* border: 2px solid red; */
+  grid-area: a-head;
+}
+
+#about {
+  /* border: 2px solid red; */
+  grid-area: about;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 0;
+}
+
+#projects-header {
+  /* border: 2px solid red; */
+  grid-area: p-head;
+}
+/* setting up grid with 4 sections within the projects section of the big grid*/
+#atlantic {
+  grid-area: proj-1;
+  background-image: url("../img/Screen Shot 2018-05-29 at 2.28.12 PM.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  /* margin: 2em; */
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#rosehip {
+  /* border: 2px solid red; */
+  grid-area: proj-2;
+  background-image: url("../img/Screen Shot 2018-05-29 at 7.18.46 PM.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  /* margin: 2em; */
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#travelgram {
+  /* border: 2px solid red; */
+  grid-area: proj-3;
+  background-image: url("../img/Screen Shot 2018-05-29 at 2.30.19 PM.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  /* margin: 2em; */
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#welcome {
+  /* border: 2px solid red; */
+  grid-area: proj-4;
+  background-image: url("../img/Screen Shot 2018-05-29 at 2.29.39 PM.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  /* margin: 2em; */
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#projects {
+  /* border: 2px solid red; */
+  grid-area: projects;
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 4em;
+  grid-column-gap: 4em;
+  grid-template-areas:
+  "proj-1 proj-2"
+  "proj-3 proj-4";
+}
+
+#contact-header {
+  /* border: 2px solid red; */
+  grid-area: c-head;
+}
+
+#contact {
+  /* border: 2px solid red; */
+  grid-area: contact;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: grid;
+  /* border: 2px solid red; */
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr .5fr 3fr .5fr 3fr .5fr 1fr;
+  grid-template-areas:
+  "land"
+  "a-head"
+  "about"
+  "p-head"
+  "projects"
+  "c-head"
+  "contact";
+}
+
+/*begin additional styling for landing section*/
+#navbar {
+  /* border: 2px solid red; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2.5em;
+}
+
+#navbar a {
+  margin: 1em 1em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8em;
+  letter-spacing: .08em;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+#navbar a:hover {
+  color: #B8B1AB;
+}
+
+#navbar a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  visibility: hidden;
+  transform: scaleX(0);
+  background-color: #B8B1AB;
+  transition: all .3s ease-in-out;
+}
+
+#navbar a:hover::before {
+  color: #B8B1AB;
+  transform: scaleX(1);
+  visibility: visible;
+}
+
+#heading{
+  /* border: 2px solid red; */
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#heading h1 {
+  font: 3em 'Roboto Slab', serif;
+  font-weight: lighter;
+  letter-spacing: .35em;
+  padding-left: .35em;
+}
+
+#heading h2{
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8em;
+  letter-spacing: .08em;
+}
+
+/*begin styling for all section headers*/
+.section-title {
+  background-color: #B8B1AB;
+  font: 1em 'Open Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: .1em;
+}
+
+/* begin additional styling for about section */
+#bio-pic {
+  /* border: 2px solid black; */
+  border-radius: 50%;
+  height: 8.5em;
+  width: 8.5em;
+  margin: 2em auto;
+  background-image: url("../img/IMG_5889 copy.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#about h1 {
+  font: 1.2em 'Roboto Slab', serif;
+  letter-spacing: .15em;
+  margin-bottom: .1em;
+  padding-left: .15em;
+}
+
+#about h2 {
+  font: .8em 'Open Sans', sans-serif;
+  letter-spacing: .08em;
+}
+
+#about p {
+  padding: 0 25%;
+  text-align: justify;
+  font: .7em 'Open Sans', sans-serif;
+  margin-top: 2em;
+}
+
+#resume {
+  color: black;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 20px;
+  margin: 2em auto;
+  letter-spacing: 1px;
+  text-align: center;
+  font: .7em 'Open Sans', sans-serif;
+}
+
+#resume:hover {
+  background-color: black;
+  color: white;
+}
+
+/*begin additional styling for project section*/
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  transition: all .1s ease-in-out;
+  background-color: #B8B1AB;
+  color: black;
+  text-decoration: none;
+  opacity: .85;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay h1 {
+  font: 1.5em 'Open Sans', sans-serif;
+  letter-spacing: .5em;
+  margin-bottom: 1em;
+  text-align: center;
+  /* border: 2px solid red; */
+  width: 100%;
+}
+
+.overlay h2 {
+  font: .9em 'Open Sans', sans-serif;
+  text-align: center;
+  letter-spacing: .08em;
+}
+
+.text {
+  border: 2px solid black;
+  padding: 4em 2em;
+  margin: 1em 1em;
+}
+
+#atlantic:hover .overlay {
+  visibility: visible;
+}
+
+#rosehip:hover .overlay {
+  visibility: visible;
+}
+
+#travelgram:hover .overlay {
+  visibility: visible;
+}
+
+#welcome:hover .overlay {
+  visibility: visible;
+}
+
+/* begin additional styling for contact section */
+#contact h1 {
+  font: 1em 'Roboto Slab', serif;
+  letter-spacing: .15em;
+  margin-bottom: .1em;
+}
+
+#contact a {
+  color: black;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 20px;
+  margin: 2em auto;
+  letter-spacing: 1px;
+  text-align: center;
+  font: .7em 'Open Sans', sans-serif;
+}
+
+#contact a:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (min-width: 1280px) {
+  #projects {
+    padding: 2em 25%;
+  }
+  .text {
+    border: none;
+  }
+}
+
+  @media (max-width: 1200px){
+    #navbar {
+      /* border: 2px solid red; */
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    .container {
+      grid-template-rows: 2.5fr .5fr 3fr .5fr 3fr .5fr 1fr;
+    }
+  }
+
+  @media (max-width: 900px) {
+    #navbar {
+      visibility: hidden;
+    }
+
+    .container {
+      grid-template-rows: 2fr .5fr 3fr .5fr 8fr .5fr 1fr;
+    }
+
+    #about p {
+      padding: 0 2em;
+    }
+
+    #projects {
+      /* border: 2px solid red; */
+      grid-area: projects;
+      padding: 2em;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-row-gap: 4em;
+      grid-column-gap: 4em;
+      grid-template-areas:
+      "proj-1"
+      "proj-2"
+      "proj-3"
+      "proj-4";
+    }
+
+    .text {
+      padding: 7em 5em;
+    }
+  }
+
+    @media (max-width: 680px){
+      .container {
+        grid-template-rows: 1fr .25fr 3fr .25fr 6fr .25fr 1fr;
+      }
+
+      .text {
+        border: none;
+      }
+
+      #heading{
+        margin-top: 1em;
+      }
+
+      #heading h1 {
+        font: 2em 'Roboto Slab', serif;
+        font-weight: lighter;
+        letter-spacing: .25em;
+        padding-left: .25em;
+      }
+
+      #heading h2{
+        font-family: 'Open Sans', sans-serif;
+        font-size: .8em;
+        letter-spacing: .08em;
+      }
+      #contact {
+        padding: 0 3em;
+      }
+      #contact h1 {
+        text-align: center;
+      }
+    }

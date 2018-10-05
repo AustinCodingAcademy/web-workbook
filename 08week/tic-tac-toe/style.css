@@ -1,18 +1,95 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#board {
+  display: flex;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  padding: 1em 0;
+  margin: 0 5%;
+  width: 90%;
+}
+
+header
+{
+  font-family: 'Amatic SC', cursive;
+  border: 1px solid black;
+  font-size: 3em;
+  padding: 1em 0;
+  letter-spacing: .25em;
+  margin: 2% 5% 2% 5%;
+  text-align: center;
+  width: 90%;
+}
+
 div[data-cell] {
   width: 100px;
   height: 100px;
   background-color: #f2f2f2;
-  float: left;
+  /* float: left; */
   border: 1px solid #808080;
+  font-family: 'Work Sans', sans-serif;
   font-size: 100px;
   text-align: center;
 }
 
 .row {
-  clear: both;
+  /* clear: both; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
-#announce-winner {
-  clear: both;
-  font-size: 50px;
+button {
+  margin-top: 1%;
+  background-color: white;
+  color: salmon;
+  text-align: center;
+  text-decoration: none;
+  width: 306px;
+  padding: .5em;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: .08em;
+}
+
+button:hover {
+  background-color: black;
+  border: 1px solid black;
+}
+
+
+#announcewin {
+  font-family: 'Amatic SC', cursive;
+  border: 1px solid black;
+  font-size: 3em;
+  padding: 1em 0;
+  letter-spacing: .25em;
+  margin: 2% 5% 0% 5%;
+  text-align: center;
+  width: 304px;
+  height: 100%
+}
+
+@media (max-width: 576px) {
+  header {
+    width: 304px;
+    margin-bottom: 1%
+  }
+
+  #container{
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
 }

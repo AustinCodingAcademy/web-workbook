@@ -1,0 +1,295 @@
+/* begin heading styling, setting up grid between header and gameboard */
+
+header {
+  grid-area: head;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1% 0;
+}
+
+header h1 {
+  font-family: 'Amatic SC', cursive;
+  border: 1px solid black;
+  font-size: 3em;
+  padding: 1em 0;
+  letter-spacing: .25em;
+  margin: 2% 5% 0 5%;
+  text-align: center;
+  width: 90%;
+}
+
+header p {
+  text-align: justify;
+  margin: 2% 5%;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1em;
+  letter-spacing: .08em;
+}
+
+
+/* begin gameboard styling, setting up grid between header and gameboard */
+
+#gameboard {
+  height: 480px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 0 5%;
+  grid-area: play;
+
+}
+
+#container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1.6fr .25fr;
+  grid-template-areas:
+  "head"
+  "play"
+  "track";
+}
+
+/* syling the tower column */
+
+[data-stack] {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80%;
+  width: 101px;
+  background-color: lightgrey;
+
+}
+
+/* styling the blocks */
+
+[data-block] {
+  height: 25px;
+}
+
+[data-block="25"] {
+  width: 25px;
+  background-color: #CCF1E2;
+  border: .5px solid black;
+}
+
+[data-block="50"] {
+  width: 50px;
+  background-color: #96D7C0;
+  border: .5px solid black;
+
+}
+
+[data-block="75"] {
+  width: 75px;
+  background-color: #73CAAB;
+  border: .5px solid black;
+
+}
+
+[data-block="100"] {
+  width: 100px;
+  background-color: #46A88A;
+  border: .5px solid black;
+}
+
+
+/* styling for all three towers, including their text */
+
+.stacks {
+  /* border: 2px solid red; */
+  /* text-align: center; */
+  font-family: 'Amatic SC', cursive;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: lowercase;
+  letter-spacing: .08em;
+  display: flex;
+  padding: 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+/* styling for the trackers section, which includes both tracker boxes and their text */
+
+#trackers {
+  grid-area: track;
+  display: flex;
+  /* height: 80%; */
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: lowercase;
+  letter-spacing: .08em;
+  height: 100%;
+  /* border: 2px solid red; */
+}
+
+
+/* styling for just the boxes containing the numbers to be tracked */
+
+.trackerbox {
+  height: 1.5em;
+  width: 3.5em;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: salmon;
+}
+
+/* styling for the individual tracker boxes + their text */
+
+.trackers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#reset:hover {
+  background-color: black;
+  border: 1px solid black;
+}
+
+
+#announcewin {
+  width: 960px; /* Full width */
+  height: 960px;
+  background-image: url("https://media3.giphy.com/media/l0HlSDiA6WUytl9oA/giphy.gif");
+  background-repeat: repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#playagain {
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: .7em;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-transform: lowercase;
+  letter-spacing: .08em;
+}
+
+#playagain:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+@media (min-width: 1400px){
+  #container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.35fr 1fr;
+    grid-template-areas:
+    "head"
+    "play"
+    "track";
+  }
+
+  #trackers {
+    margin: 1% 0;
+  }
+
+}
+
+@media (max-width: 950px){
+  #announcewin {
+    width: 480px; /* Full width*/
+  }
+}
+
+@media (max-width: 780px){
+  #container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.2fr .25fr;
+    grid-template-areas:
+    "head"
+    "play"
+    "track";
+  }
+
+  #trackers {
+    margin: .5% 5%;
+    justify-content: space-between;
+  }
+
+  #announcewin {
+    width: 100%; /* Full width */
+    height: 480px;
+    background-image: url("https://media3.giphy.com/media/l0HlSDiA6WUytl9oA/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 550px){
+  header h1{
+    font-size: 2.5em;
+    margin: 0 2%;
+    width: 96%;
+  }
+
+  header p {
+    font-size: .8em;
+    margin: 1% 2%
+  }
+
+  #gameboard {
+    margin: 0 2%;
+  }
+
+  .stacks {
+    /* border: 2px solid red; */
+    padding: .5rem;
+
+  }
+
+  [data-stack] {
+    height: 98%;
+  }
+
+  #trackers {
+    margin: 1% 2%;
+  }
+
+  #container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.5fr .25fr;
+    grid-template-areas:
+    "head"
+    "play"
+    "track";
+  }
+}

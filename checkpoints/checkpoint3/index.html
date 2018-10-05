@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Towers of Hanoi</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Work+Sans:200" rel="stylesheet">
+</head>
+<body>
+  <div id = "container">
+    <header>
+      <h1>Welcome to Towers of Hanoi</h1>
+      <p>Help relocate the magical blocks from Tower One to Tower Three!
+         Your mission is to place the blocks in Tower Three just as they appear in Tower One, with the smallest on top and largest on bottom.
+         You may only move one block at a time, starting with the topmost block, and you may <em>never</em> place a larger block on a smaller block.
+         The timer will begin when you move your first block. How fast can you complete this mission?
+      </p>
+    </header>
+
+
+      <div id = "gameboard">
+
+         <div id = "stackOne" class = "stacks">
+            <div data-stack="1" class="dropzone">
+              <div data-block="25" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
+              <div data-block="50" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
+              <div data-block="75" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
+              <div data-block="100" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)"></div>
+            </div>
+            <span>TOWER ONE</span>
+          </div>
+
+          <div id = "stackTwo" class = "stacks">
+            <div data-stack="2" class="dropzone">
+            </div>
+            <span>TOWER TWO</span>
+          </div>
+
+          <div id = "stackThree" class = "stacks">
+            <div data-stack="3" class="dropzone" id= "winner">
+            </div>
+            <span>TOWER THREE</span>
+          </div>
+      </div>
+
+      <div id = "trackers">
+        <div id = "tracker1" class = "trackers">
+          <div id = "timer" class = "trackerbox">
+          00:00:00
+          </div>
+          <span>Timer</span>
+        </div>
+
+        <div id = "tracker2" class = "trackers">
+          <div id = "moves" class = "trackerbox">
+          0
+          </div>
+          <span>Moves</span>
+        </div>
+
+        <div id = "tracker3" class = "trackers">
+          <input class = "trackerbox" id = "reset" type = "button" value = "reset" onclick = "window.location.reload()" />
+          <span>Start New Game</span>
+        </div>
+
+      </div>
+
+
+  </div>
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

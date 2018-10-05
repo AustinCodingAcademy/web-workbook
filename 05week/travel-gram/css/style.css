@@ -1,1 +1,339 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+header h2 {
+  font-size: 18px;
+  margin: 10px;
+}
+
+header h3 {
+  display: none;
+}
+
+header h4 {
+  display: none;
+}
+
+#article-1 {
+  border: 2px solid black;
+  grid-area: art-1;
+}
+
+#article-2 {
+  border: 2px solid black;
+  grid-area: art-2;
+}
+
+#article-3 {
+  border: 2px solid black;
+  grid-area: art-3;
+}
+
+#article-4 {
+  border: 2px solid black;
+  grid-area: art-4;
+}
+
+#article-5 {
+  border: 2px solid black;
+  grid-area: art-5;
+}
+
+#article-6 {
+  border: 2px solid black;
+  grid-area: art-6;
+}
+
+#article-7 {
+  border: 2px solid black;
+  grid-area: art-7;
+}
+
+#article-8 {
+  border: 2px solid black;
+  grid-area: art-8;
+}
+
+#article-9 {
+  border: 2px solid black;
+  grid-area: art-9;
+}
+
+#article-10 {
+  border: 2px solid black;
+  grid-area: art-10;
+}
+
+.articles {
+  display: grid;
+  margin: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr .5fr 1fr;
+  grid-template-areas:
+    "art-1 art-1 art-2 art-2"
+    "art-3 art-3 art-4 art-5"
+    "art-3 art-3 art-6 art-6"
+    "art-7 art-8 art-9 art-10";
+}
+
+.style-1 .pic {
+  background-color: lightblue;
+  grid-area: pic-1;
+}
+
+.style-1 .text {
+  background-color: lightgrey;
+  grid-area: text-1;
+}
+
+.style-1 .reactions {
+  background-color: goldenrod;
+  grid-area: react-1;
+}
+
+.style-1 .date {
+  background-color: lightpink;
+  grid-area: date-1;
+}
+
+.style-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;  /*how many columns do you have? how many rows do you have*/
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas:
+    "pic-1 text-1 text-1"
+    "pic-1 react-1 date-1";
+}
+
+.style-2 .pic {
+  background-color: lightblue;
+  grid-area: pic-2;
+}
+
+.style-2 .text {
+  background-color: lightgrey;
+  grid-area: text-2;
+}
+
+.style-2 .reactions {
+  background-color: goldenrod;
+  grid-area: react-2;
+}
+
+.style-2 .date {
+  background-color: lightpink;
+  grid-area: date-2;
+}
+
+.style-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /*how many columns do you have? how many rows do you have*/
+  grid-template-rows: 3fr 3fr 1fr;
+  grid-template-areas:
+    "pic-2 pic-2"
+    "text-2 text-2"
+    "react-2 date-2"
+}
+
+.element {
+  margin: 10px;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    color: green;
+  }
+  header h2 {
+    display: none;
+  }
+
+  header h3 {
+    display: flex;
+    font-size: 18px;
+    margin: 10px;
+  }
+
+  header h4 {
+    display: none;
+}
+
+  .articles {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 2fr 1fr 3fr 2fr 1fr 2fr;
+    grid-template-areas:
+      "art-1 art-1"
+      "art-2 art-3"
+      "art-4 art-4"
+      "art-5 art-5"
+      "art-6 art-7"
+      "art-8 art-8"
+      "art-9 art-10";
+
+  }
+
+  .style-1 .pic {
+    background-color: lightblue;
+    grid-area: pic-1;
+  }
+
+  .style-1 .text {
+    background-color: lightgrey;
+    grid-area: text-1;
+  }
+
+  .style-1 .reactions {
+    background-color: goldenrod;
+    grid-area: react-1;
+  }
+
+  .style-1 .date {
+    background-color: lightpink;
+    grid-area: date-1;
+  }
+
+  .style-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /*how many columns do you have? how many rows do you have*/
+    grid-template-rows: 3fr 3fr 1fr;
+    grid-template-areas:
+      "pic-1 pic-1"
+      "text-1 text-1"
+      "react-1 date-1"
+  }
+
+  .tab-style-2 .pic {
+    background-color: lightblue;
+    grid-area: pic-1;
+  }
+
+  .tab-style-2 .text {
+    background-color: lightgrey;
+    grid-area: text-1;
+
+  }
+
+  .tab-style-2 .reactions {
+    background-color: goldenrod;
+    grid-area: react-1;
+  }
+
+  .tab-style-2  .date {
+    background-color: lightpink;
+    grid-area: date-1;
+  }
+
+  .tab-style-2  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  /*how many columns do you have? how many rows do you have*/
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas:
+      "pic-1 text-1 text-1"
+      "pic-1 react-1 date-1";
+      }
+
+}
+
+@media (max-width: 576px) {
+  header {
+    color: purple;
+  }
+  header h2 {
+    display: none;
+  }
+
+  header h3 {
+    display: none;
+  }
+
+  header h4 {
+    display: flex;
+    font-size: 18px;
+    margin: 10px;
+}
+
+  .articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .style-1 .pic {
+    background-color: lightblue;
+    grid-area: pic-1;
+  }
+
+  .style-1 .text {
+    background-color: lightgrey;
+    grid-area: text-1;
+  }
+
+  .style-1 .reactions {
+    background-color: goldenrod;
+    grid-area: react-1;
+  }
+
+  .style-1 .date {
+    background-color: lightpink;
+    grid-area: date-1;
+  }
+
+  .style-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /*how many columns do you have? how many rows do you have*/
+    grid-template-rows: 3fr 3fr 1fr;
+    grid-template-areas:
+      "pic-1 pic-1"
+      "text-1 text-1"
+      "react-1 date-1"
+  }
+
+  .tab-style-2 .pic {
+    background-color: lightblue;
+    grid-area: pic-1;
+  }
+
+  .tab-style-2 .text {
+    background-color: lightgrey;
+    grid-area: text-1;
+
+  }
+
+  .tab-style-2 .reactions {
+    background-color: goldenrod;
+    grid-area: react-1;
+  }
+
+  .tab-style-2  .date {
+    background-color: lightpink;
+    grid-area: date-1;
+  }
+
+  .tab-style-2  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /*how many columns do you have? how many rows do you have*/
+    grid-template-rows: 3fr 3fr 1fr;
+    grid-template-areas:
+      "pic-1 pic-1"
+      "text-1 text-1"
+      "react-1 date-1"
+      }
+
+
+}
