@@ -12,6 +12,7 @@ main {
 }
 
 h1,
+h2,
 ul {
   margin-bottom: 0;
 }
@@ -21,7 +22,7 @@ span {
   font-weight: 600;
   display: block;
   margin-bottom: 5px;
-  cursor: pointer;
+  cursor: default;
 }
 
 .wrapper {
@@ -32,4 +33,24 @@ span {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+.item {
+  position: relative;
+  max-width: 1000px;
+  min-height: 200px;
+}
+
+.item-img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 25%;
+  border-radius: 25%;
+  transition: all 200ms ease-in-out;
+  /* display: none; */
+}
+
+.show-item {
+  display: block;
 }
