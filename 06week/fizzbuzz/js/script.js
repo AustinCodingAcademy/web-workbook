@@ -9,10 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
     var inputValue = parseInt(input.value);
 
     if (inputValue) {
-      console.log("hi");
       inputValue = parseInt(inputValue);
     }
-    console.log(inputValue);
 
     for (let i = 1; i < inputValue + 1; i++) {
       if (i % 5 === 0 && i % 3 === 0) {
