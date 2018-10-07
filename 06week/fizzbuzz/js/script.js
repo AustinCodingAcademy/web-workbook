@@ -6,8 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const goButton = document.body.querySelector("#go");
   const resetButton = document.body.querySelector("#reset");
   var timer = [];
+  var pressed = false;
 
   goButton.addEventListener("click", () => {
+
+    if(pressed) fizzBuzzStop();
+    pressed = true;
+
     var inputValue = parseInt(input.value);
 
     if (inputValue) {
@@ -46,6 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function fizzBuzzStop() {
+    pressed = false;
     timer.forEach(function(value) {
       window.clearTimeout(value);
     });
