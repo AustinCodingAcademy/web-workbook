@@ -3,27 +3,58 @@
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.body.querySelector(".container-inner");
   const input = document.body.querySelector("#input");
-  const button = document.body.querySelector("#button");
+  const goButton = document.body.querySelector("#go");
+  const resetButton = document.body.querySelector("#reset");
+  var timer = [];
 
-  button.addEventListener("click", () => {
+  goButton.addEventListener("click", () => {
     var inputValue = parseInt(input.value);
 
     if (inputValue) {
-      console.log("hi");
       inputValue = parseInt(inputValue);
     }
-    console.log(inputValue);
 
-    for (let i = 1; i < inputValue + 1; i++) {
-      if (i % 5 === 0 && i % 3 === 0) {
-        container.innerHTML += `<div class="box">Fizz<br>Buzz</div>`;
-      } else if (i % 5 === 0) {
-        container.innerHTML += `<div class="box">Buzz</div>`;
-      } else if (i % 3 === 0) {
-        container.innerHTML += `<div class="box">Fizz</div>`;
-      } else {
-        container.innerHTML += `<div class="box">${i}</div>`;
-      }
+    if(isNaN(inputValue)) {
+      alert("I JUST CAN'T DO IT CAPTAIN (value not a number)");
+      fizzBuzzClear();
+    } else if (inputValue <= 1000) { 
+      fizzBuzz(inputValue);
+    } else { 
+      alert("I JUST CAN'T DO IT CAPTAIN (value over 1000)");
+      fizzBuzzClear();
     }
   });
+
+  resetButton.addEventListener("click", () => {
+    fizzBuzzStop();
+  });
+
+  function fizzBuzz(inputValue) {
+    for (let i = 1; i < inputValue + 1; i++) {
+      timer.push(setTimeout(function fizzBuzzLogic() {
+        if (i % 5 === 0 && i % 3 === 0) {
+          container.innerHTML += `<div class="box">Fizz<br>Buzz</div>`;
+        } else if (i % 5 === 0) {
+          container.innerHTML += `<div class="box">Buzz</div>`;
+        } else if (i % 3 === 0) {
+          container.innerHTML += `<div class="box">Fizz</div>`;
+        } else {
+          container.innerHTML += `<div class="box">${i}</div>`;
+        }
+      }, 10*i));
+    }
+  }
+
+  function fizzBuzzStop() {
+    timer.forEach(function(value) {
+      window.clearTimeout(value);
+    });
+    container.innerHTML = "";
+  }
+
+  function fizzBuzzClear() {
+    input.value = "";
+  }
+
+  
 });
