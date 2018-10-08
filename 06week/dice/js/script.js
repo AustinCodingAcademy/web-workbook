@@ -26,18 +26,17 @@ function report() {
       }
     }
     if (howManyDice === 2) { // we check after the counting is done if it is equal to '2'
-      document.querySelector("#report").innerHTML += `There is a pair of ${dieVal}s<br>`;  // if yes, we report a pair
+      document.querySelector("#report").innerHTML += "There is a pair. ";  // if yes, we report a pair
     }
-    if (howManyDice === 3) { // we check after the counting is done if it is equal to '2'
-    document.querySelector("#report").innerHTML += `There is a three of ${dieVal}s<br>`;  // if yes, we report a three
+    if (howManyDice === 3) { // we check after the counting is done if it is equal to '3'
+    document.querySelector("#report").innerHTML += "There is a three. ";  // if yes, we report a three
     }
-    if (howManyDice === 4) { // we check after the counting is done if it is equal to '2'
-    document.querySelector("#report").innerHTML += `There is a four of ${dieVal}s<br>`;  // if yes, we report a four
+    if (howManyDice === 4) { // we check after the counting is done if it is equal to '4'
+    document.querySelector("#report").innerHTML += "There is a four. ";  // if yes, we report a four
     }
-    if (howManyDice === 5) { // we check after the counting is done if it is equal to '2'
-    document.querySelector("#report").innerHTML += `There is a yacht of ${dieVal}s<br>`;  // if yes, we report a yacht
+    if (howManyDice === 5) { // we check after the counting is done if it is equal to '5'
+    document.querySelector("#report").innerHTML += "There is a yacht. ";  // if yes, we report a yacht
     }
-
 } 
   
 // two of dice have the same points, like 3 6 5 6 1 - called pair: example solved for you. Complete the other cases below:
