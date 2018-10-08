@@ -8,11 +8,11 @@
 </head>
 
    
-<body style = "margin:0" background ="retrowave-3-dimensional-artwork-neon-oceanchrome-eb-1920x1080.jpg">
+<body style = "margin:0;" >
     
 
 
-<div id ="wrapper">
+<div id ="wrapper" style = "height:auto;">
        
 
     <nav>
@@ -63,37 +63,176 @@
             </div>
 
             <div class = "fade-in one">
-            <article style ="float:right; width: 60%; height: 600px">
-                 
-                        <h3> This website: </h3>
-                        <p id= article_p>
-                        I'd like to think it speaks for itself 
-                        </p>
-                        <h3>Multistage encryption:</h3> 
-
-                        <p id= article_p>
-                        Converts message into char, then into ascii.
-                        Then the acsii values are modified by an 
-                        algorythem based on a 5 digit code. The same code is then used to
-                        decrypt the ascii and then is converted back 
-                        into a string.
-                        </p>
-
-                        <h3> Instant messaging/server connection:<br> </h3>
-
-                        <p id= article_p>
-                        Used Java sockets and Jframes gui to create
-                        an instant messaging service between
-                        client and server. Multiple users supported. 
-                        </p>
-
-                        <h3>Tic tac toe</h3>
-                        <p id= article_p>
-                        It was a AP project
-                         </p>
+                
+            <article style ="float:right; width: 60%; height: 600px; margin-top:108px;">
+                 <h3>Output</h3>
+                    <p>
+                            Test Encryption - Inputed string/information <br> <br>
+                            84
+                            101
+                            115
+                            116
+                            32
+                            69
+                            110
+                            99
+                            114
+                            121
+                            112
+                            116
+                            105
+                            111
+                            110 <br>
+                             - Ascii values <br> <br>
+                            9 8 1 2 4
+                             - Encryption code <br> <br>
+                            
+                            15 15
+                             - Ascii array and Encrypted array length(s) <br> <br>
+                            
+                            28556
+                            11110
+                            13586
+                            17909
+                            4049
+                            8792
+                            18117
+                            8954
+                            13469
+                            32458
+                            14435
+                            12760
+                            17136
+                            12210
+                            11100 <br>
+                             - Encrypted ascii <br> <br>
+                            
+                            84
+                            101
+                            115
+                            116
+                            32
+                            69
+                            110
+                            99
+                            114
+                            121
+                            112
+                            116
+                            105
+                            111
+                            110 <br>
+                             - Decrypted ascii <br> <br>
+                            Test Encryption - Original Message <br>
+                    </p>
                       
                  
                 </article>
+                <h2>Encryption</h2>
+                <article style =" width: 40%; height: 600px">
+                 <h3>Code Snippit</h3>
+                    <p style ="font-size:17px">
+                            
+                            public static void encrypt(){ <br>
+	
+                                int a = code.charAt(0)-48; <br>
+                                int b = code.charAt(1)-48; <br>
+                                int c = code.charAt(2)-48; <br>
+                                int d = code.charAt(3)-48; <br>
+                                int e = code.charAt(4)-48;<br>
+
+                                for(int i = 0;i&ltINIT_MSG.length();i++)<br>{ <br>
+                                    encyp_ascii_array[i] = asciiarray[i] *(a-(b*b))*(d-e); <br>
+
+                                    <br>
+                                    /* Because this isn't random enough looking and gives similar modifications
+                                    to similar characters (an a will have the same value as another a farther
+                                    in the sequence) This next set of modifactions is applied based on sequence,
+                                    not ascii value.*/ <br> <br>
+
+                                    if(i%2==0 ){ <br>
+                                        encyp_ascii_array[i] +=e*a*d*c*a; <br>
+                                    } <br>
+                                    if(i%3==0 ){ <br>
+                                        encyp_ascii_array[i] +=a*d*e+c+5000; <br>
+                                    } <br>
+                                    if(i%4==0 ){ <br>
+                                        encyp_ascii_array[i] +=d-c*d*a*c*a; <br>
+                                    }
+
+                                    /* For each value 0-9, there are 2 additional modifiers 
+                                    based on sequence*/
+                                }
+                             
+                                
+                                
+                    </p>
+                    
+                  
+             
+            </article>
+
+            <article style ="float:right; width: 60%; height: 600px; margin-top:149px;">
+                 <h3>Output</h3>
+                    <p>
+                        Honestly this worked at one point but our router changed 
+                        and because of that I had to redo the port forwarding and
+                        now it's big broke.
+
+                    </p>
+                      
+                 
+                </article>
+                <h2>TextSend</h2>
+                <article style =" width: 40%; height: 600px">
+                 <h3>Code Snippit</h3>
+                    <p style = "font-size:15px;">
+                        //Client Run() Method <br> <br>
+                        	public void run() throws Exception{ <br>
+                                Socket socket = new Socket("172.8.169.224", 1100); 	<br>	
+                                printstream = new PrintStream(socket.getOutputStream());<br>
+                                
+                                
+                                InputStreamReader InputReader = new InputStreamReader(socket.getInputStream()); <br>
+                                BufferedReader BufferedReader = new BufferedReader(InputReader);<br>
+                                
+                                while(true){<br>
+                                    
+                                
+                                    String Message = BufferedReader.readLine();		//Reads server input<br>
+                                    client_GUI.ServerInput("Server: "+Message);		//outputs server input to client screen<br>
+                                    System.out.println(Message);
+                                    
+                                }<br>
+                                }<br>
+
+                            <br>//Server Run() Methond <br> <br>
+                                public void run() throws Exception{<br>
+                                    ServerSocket ServerSocket = new ServerSocket(1100);<br>
+                                    Socket Socket = ServerSocket.accept();<br>
+                                    printstream = new PrintStream(Socket.getOutputStream());<br>
+                                    
+                                    
+                                    InputStreamReader InputReader = new InputStreamReader(Socket.getInputStream());<br>
+                                    BufferedReader BufferedReader = new BufferedReader(InputReader);<br>
+                                    
+                            
+                                    
+                                
+                                    while(true){<br>
+                                        
+                                        String Message = BufferedReader.readLine();<br>
+                                        Server_GUI.ServerInput("Client: "+Message);<br>
+                                        System.out.println(Message);<br>
+                                        
+                                        
+                                }<br>
+                                }<br>
+
+                    </p>
+                  
+             
+            </article>
             </div>
         </div>
 
