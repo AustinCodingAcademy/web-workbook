@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // You code here
 
   // Alert the user to how many list items ther are on the page
-  alert( "Size: " + $( "li" ).length );
+  alert("this is an alert!");
+  
 
   // Add a <h2> to the page under the title that says "You have_items in your shopping cart'. Do not use html to do this. Use JavaScript. 
 
