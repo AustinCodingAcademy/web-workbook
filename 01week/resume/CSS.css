@@ -1,0 +1,176 @@
+
+body{
+    background : url('retrowave-3-dimensional-artwork-neon-oceanchrome-eb-1920x1080.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+
+}
+
+
+
+ul{
+    list-style-type: none;
+    overflow:hidden;
+}
+
+li{
+    float:right;
+    color:white;
+    text-align:center;
+    width:15%;
+    height:25px;
+    padding: 10px;
+    transition: background-color 0.5s ease;
+    background-color: rgb(75, 75, 75);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    text-decoration:none;
+}
+
+a:link    {color:White; background-color:transparent; text-decoration:none}
+a:visited {color:White; background-color:transparent; text-decoration:none}
+a:hover   {color:White; background-color:transparent; text-decoration:none}
+a:active  {color:White; background-color:transparent; text-decoration:none}
+
+li:hover{
+    background-color:#111111
+}
+
+h1{
+    margin-bottom:0px;
+    font-size:100px;
+    margin-left:75px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h2{
+    padding-left: 2%;
+    font-size:50px;
+}
+
+article{
+    color:white;
+    margin-top:50px;
+    width:40%;
+    height:300px;
+    background-color: rgba(17, 16, 16, 0.9);
+    border:2px solid black;
+    font-size: 25px;
+    
+
+}
+
+nav{
+ 
+    height:50px;
+    width:100%;
+    margin-bottom:20px;
+}
+
+header{
+    padding-top:10px;
+    background-color: rgb(0,72,124);
+    width:100%;
+    height:75px;
+    border-bottom:1px solid black;
+}
+
+p{
+    padding-left: 3%;
+}
+
+
+
+
+
+div#wrapper{
+
+    min-width:1000px;
+    
+    margin-left:20%;
+    margin-right:20%;
+    height:910px;
+    margin-bottom:20px;
+    margin-top: 15px;
+}
+
+footer{
+padding:5px;
+text-align:center;
+}
+
+
+
+/*Wanted a fade in effect, already existed so I copy pasted the css*/
+
+
+/* make keyframes that tell the start state and the end state of our object */
+ 
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+ opacity:0;  /* make things invisible upon start */
+ -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+ -moz-animation:fadeIn ease-in 1;
+ animation:fadeIn ease-in 1;
+ 
+ -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+ -moz-animation-fill-mode:forwards;
+ animation-fill-mode:forwards;
+ 
+ -webkit-animation-duration:1s;
+ -moz-animation-duration:1s;
+ animation-duration:1s;
+}
+
+/*Different varients on the fade in, controls the fade in speed*/
+ 
+.fade-in.one {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
+ 
+.fade-in.two {
+-webkit-animation-delay: 1.2s;
+-moz-animation-delay:1.2s;
+animation-delay: 1.2s;
+}
+ 
+.fade-in.three {
+-webkit-animation-delay: 1.6s;
+-moz-animation-delay: 1.6s;
+animation-delay: 1.6s;
+}
+
+
+.fade-in.four {
+-webkit-animation-delay: 1.8s;
+-moz-animation-delay: 1.8s;
+animation-delay: 1.8s;
+    }
+ 
+
+
+
+p#article_p{
+    font-size: 26px;
+    margin:7px;
+    padding:2px;
+    border-bottom: 1px solid black;
+ 
+}
+
+h3{
+    color: rgb(255, 255, 255);
+    padding:0;
+    margin:0;
+    margin-left:10px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
