@@ -1,0 +1,122 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+.maincontain {
+    background-color: black;
+    font-family: "HelveticaNeue-Light", sans-serif;
+    height: 140%;
+    
+}
+.banner{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 50px;
+    color:white;
+}
+
+.banner h1 {
+    margin: 0;
+}
+    
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    color: white;
+}
+    
+.bodycontain {
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+li {
+    display: inline;
+    margin:18px;}
+
+li:hover {
+    display: inline;
+    margin:18px;
+    font-size: 120%;
+    transition-duration: .5s;
+    transform: scale(1.3s)
+}
+
+.spencerriley img{
+    overflow: hidden;
+    text-align: center;
+    height: 320px;
+    width: 320px;
+    filter: brightness(25%);
+    transition-duration: 1.67s;
+    box-shadow: inset 0 18px 85px 35px #000000;
+    
+}
+.spencerriley img:hover{
+    text-align: center;
+    height: 320px;
+    width: 320px;
+    transform: scale(1.05);
+    transition-duration: 2s;
+    filter: brightness(100%);
+}
+
+
+.tophalf {
+    width: 700px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 35px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    
+}
+
+
+
+@media (max-width: 576px) {
+    
+    .tophalf {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        grid-row-gap: 30px;
+        width: 80%;
+        padding-top: 0;
+    }
+
+    .spencerriley {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        transform-origin: center;
+    }
+
+    li {
+        display: inline;
+        margin:2px;
+        font-size:12px;
+    }
+    .banner{
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 26px;
+        color:white;
+        padding-top: 30px;
+    }
+}
