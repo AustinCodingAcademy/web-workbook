@@ -7,9 +7,13 @@ function roll() {
     document.querySelector("#dice").innerHTML += `<span class="die" data-roll="${roll}">${dieChar[roll - 1]}</span>`;
   }
   report();
+  
 }
 
 roll();
+
+// let diceHtml = document.querySelectorAll('.die'); // this puts all the individual die HTML elements in diceHtml
+// alert(JSON.stringify(diceHtml));
 
 //////////////////////////////////////////////////////
 // Add code here that uses loops and conditional statements
@@ -24,6 +28,7 @@ function report() {
       if (dieVal === Number(diceHtml[i].getAttribute('data-roll'))) {  // we check if the rolled die is equal to the one's we're counting
         howManyDice++; // if so, we add one to the count
       }
+
     }
     if (howManyDice === 2) { // we check after the counting is done if it is equal to '2'
       document.querySelector("#report").innerHTML += "There is a pair. ";  // if yes, we report a pair
@@ -38,7 +43,27 @@ function report() {
     document.querySelector("#report").innerHTML += "There is a yacht. ";  // if yes, we report a yacht
     }
 } 
-  
+
+  function twoPairs() {
+
+  }
+
+
+  function fullHouse() {
+    
+  }
+
+  function smallStraight() {
+  document.querySelector("#report").innerHTML = "";
+  let diceHtml = document.querySelectorAll('.die');
+} 
+
+function bigStraight() {
+  document.querySelector("#report").innerHTML = "";
+  let diceHtml = document.querySelectorAll('.die');
+} 
+
+
 // two of dice have the same points, like 3 6 5 6 1 - called pair: example solved for you. Complete the other cases below:
 
 // three of dice have the same points, like 2 4 5 4 4 - called three;
