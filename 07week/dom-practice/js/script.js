@@ -19,9 +19,9 @@ div.innerHTML = "This is an h2 tag";
 document.body.appendChild(div);
 // Create the ability to add more items to the list usingJavaScript. 
 
-var inputText = document.getElementById("txt");
-items = document.querySelectorAll("#list li");
-tab = [], index;
+var inputText = document.getElementById("txt"),
+  items = document.querySelectorAll("#list li"),
+  tab = [], index;
 // get the selected li index with an array
 // populate array with li values
 for(var i = 0; i < items.length; i++) {
