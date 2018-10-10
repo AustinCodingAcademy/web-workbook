@@ -1,31 +1,58 @@
-body {
+.container {
+  height: 100vh;
+  width: 100vw;
   background-image: url(../img/desk.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 960px) {
+  .container-inner {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container-inner {
+    width: 95%;
+  }
 }
 
 .header {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  padding-left: 20px;
   font-size: 45px;
   height: 30vh;
   font-family: 'Charmonman', cursive;
   font-family: 'Lobster', cursive;
 }
 
+.initials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  border-radius: 75px;
+}
+
 .hero {
-  background: gray;
+  background: #95a5a6;
   width: 100vw;
   text-align: center;
   font-size: 75;
   font-family: 'Charmonman', cursive;
   font-family: 'Lobster', cursive;
-  border: 2px solid black;
+  border: 2px solid #303030;
   opacity: .7;
 }
 
 form {
+  background: #95a5a6;
+  border: 1px solid black;
   height: 200px;
   display: grid;
   grid-template-columns: 200px;
@@ -34,14 +61,73 @@ form {
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  position: fixed;
   bottom: 25;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.objective {
+  height: 600px;
+  width: 75vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 25;
+  font-family: 'Charmonman', cursive;
+  font-family: 'Lobster', cursive;
+  
 }
 
 .copyright {
   position: fixed;
   bottom: 0;
+  right: 0;
 }
+
+.bottom-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ .title {
+  padding-left: 30px;
+  position: fixed;
+  left: 0;
+  top: 500px;
+  font-size: 50;
+  font-family: 'Charmonman', cursive;
+  font-family: 'Lobster', cursive;
+}
+
+.experience {
+  border: 1px solid black;
+  height: 600px;
+  width: 75vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  padding-top: 0;
+  margin-top: 0;
+  font-size: 25;
+  font-family: 'Charmonman', cursive;
+  font-family: 'Lobster', cursive;
+}
+
+
+
+
+
+
 
 
 
