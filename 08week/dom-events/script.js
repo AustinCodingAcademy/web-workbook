@@ -16,5 +16,10 @@ $(document).ready(function(){
     num = num+10;
     $(this).text(num);
   })
+  $('counter-1').click(function() {
+    let num = 100
+    num = num+100;
+    $(this).text(num);
+  })
 });
 
