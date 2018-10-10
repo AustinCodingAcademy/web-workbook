@@ -68,12 +68,12 @@ function report() {
 
       // condition: two-pair
       if (howManyPairs === 2) {
-        document.querySelector("#report").innerHTML += `Two-pair!`;
+        document.querySelector("#report").innerHTML += `>> Two-pair!`;
       }
 
       // condition: full-house case 1
       if (howManyTriplets === 1) {
-        document.querySelector("#report").innerHTML += `Full-House!`;
+        document.querySelector("#report").innerHTML += `>>> Full-House!`;
       }
     }
 
@@ -87,7 +87,7 @@ function report() {
 
       // condition: full-house case 2
       if (howManyPairs === 1) {
-        document.querySelector("#report").innerHTML += `Full-House!`;
+        document.querySelector("#report").innerHTML += `>>> Full-House!`;
       }
     }
 
@@ -102,7 +102,7 @@ function report() {
     else if (howManyDice === 5) {
       document.querySelector(
         "#report"
-      ).innerHTML += `All ${dieVal}'s! Yahtzee!<br>`;
+      ).innerHTML += `>>>>> All ${dieVal}'s! Yahtzee!<br>`;
     }
   }
 
@@ -114,7 +114,7 @@ function report() {
     howManyFours === 1 &&
     howManyFives === 1
   ) {
-    document.querySelector("#report").innerHTML += `Small-Straight!`;
+    document.querySelector("#report").innerHTML += `>>>> Small-Straight!`;
   }
 
   // condition: big-straight
@@ -125,7 +125,7 @@ function report() {
     howManyFives === 1 &&
     howManySixes === 1
   ) {
-    document.querySelector("#report").innerHTML += `Big-Straight!`;
+    document.querySelector("#report").innerHTML += `>>>> Big-Straight!`;
   }
   
 
