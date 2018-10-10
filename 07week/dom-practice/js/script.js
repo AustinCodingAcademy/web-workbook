@@ -2,11 +2,11 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   // You code here
-  const list = document.getElementsByTagName("ul")[0];
+  const list = document.getElementsByTagName("ol")[0];
   const listItems = list.getElementsByTagName("li");
 
   var listItemCount = getListItemCount();
-  alert("You have " + listItemCount + " items");
+  // alert("You have " + listItemCount + " items");
   initItems();
   initButtons();
   insertListItemCountMessage();
@@ -24,10 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
    */
   function insertListItemCountMessage() {
     let itemCount = getListItemCount();
-    let mainTitle = document.getElementById("main-title");
-    mainTitle.insertAdjacentHTML(
+    let location = document.getElementById("main-title");
+    location.insertAdjacentHTML(
       "afterend",
-      '<h2 id="itemCount">You have ' +
+      '<h2 id="item-count">You have ' +
         itemCount +
         " items in your shopping cart."
     );
@@ -83,12 +83,19 @@ document.addEventListener("DOMContentLoaded", () => {
     let buttonRemoveItem = getButton("btn-remove-item");
 
     buttonAddItem.addEventListener("click", () => {
+      let itemCount = getListItemCount() + 1;
+      let itemCountMessage = document.querySelector("#item-count");
       let item = prompt("What would you like to add?");
       list.insertAdjacentHTML("beforeend", "<li>" + item + "</li>");
+      itemCountMessage.innerHTML = `You have ${itemCount} items in your shopping cart.`;
     });
     buttonRemoveItem.addEventListener("click", () => {
+      let itemCount = getListItemCount() - 1;
+      if (itemCount < 0) return;
+      let itemCountMessage = document.querySelector("#item-count");
       let lastItem = listItems[listItems.length - 1];
       if (lastItem) list.removeChild(lastItem);
+      itemCountMessage.innerHTML = `You have ${itemCount} items in your shopping cart.`;
     });
   }
 
