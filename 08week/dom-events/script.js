@@ -6,8 +6,15 @@
 //Extra Credit: allow the user to drag and drop the shapes.
 $(document).ready(function(){
     var num = 0;
-  $('.box').click(function() {
-    num++;
+  $('#counter-1').click(function() {
+    let num = 1
+    num ++;
+    $(this).text(num);
+  })
+  $('#counter-10').click(function() {
+    let num = 10
+    num = num+10;
     $(this).text(num);
   })
 });
+
