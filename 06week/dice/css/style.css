@@ -4,6 +4,9 @@
 
 body {
   font-family: "Raleway", sans-serif;
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background-blend-mode: multiply;
+  color: #C0C0C0;
 }
 
 main {
@@ -20,22 +23,34 @@ h1 {
   height: 200px;
   margin: auto;
   text-align: center;
+  color: #1C1C1C;
   font-size: 150px;
+}
+.die {
+  background-color: #C0C0C0;
+}
+.die:first-of-type {
+  padding-left: 1rem;
+  border-radius: 10px 0 0 10px;
+}
+.die:last-of-type {
+  padding-right: 1.2rem;
+  border-radius: 0 10px 10px 0;
 }
 
 .button {
   margin: auto;
-  border: blue 1px solid;
+  border: #C0C0C0 3px solid;
   width: 125px;
   height: 40px;
   text-align: center;
   font-size: 30px;
-  border-radius: 15px;
+  border-radius: 10px;
   cursor: pointer;
   user-select: none;
 }
 .button:active {
-  background: blue;
+  background: #E74C3C;
   color: white;
 }
 
@@ -43,7 +58,10 @@ h1 {
   display: block;
   margin: auto;
   margin-top: 35px;
+  padding: 1rem;
+  line-height: 2;
   height: 400px;
   width: 600px;
-  border: 1px solid black;
+  border: 2px solid #C0C0C0;
+  border-radius: 25px;
 }
