@@ -55,6 +55,7 @@ function report() {
         case 5: howManyFives++; break;
         case 6: howManySixes++; break;
         }
+        
       }
     }
 
