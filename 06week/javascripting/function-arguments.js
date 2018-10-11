@@ -1,3 +1,3 @@
-function math (firstArg, secondArg, thirdArg) {
-    console.log(firstArg= '53', secondArg='61', thirdArg='67');
-  }
+function math(firstArg, secondArg, thirdArg) {
+return(secondArg * thirdArg) + firstArg;}
+    console.log(math(53, 61,67));

@@ -1,0 +1,69 @@
+.background{
+  position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: red;
+    position :relative;
+    -webkit-animation: mymove3 26s infinite;
+    animation: mymove3 26s infinite;
+    transition:all 1s ease-in-out;
+}
+.calcontainer{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+
+}
+.background2{
+  position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: red;
+    position :relative;
+    /* -webkit-animation: mymove2 .45s infinite;
+    animation: mymove2 .45s infinite; */
+}
+
+
+input {background-color:palegreen;
+    z-index:1000;
+    width: 300px;
+    height:100px;
+    border-radius:10px;
+    padding:10px;
+    margin-left: 2px;
+    margin-bottom:10px;
+    -webkit-animation: mymove2 22s infinite;
+    animation: mymove2 22s infinite; 
+  }
+  .button {background-color:palegreen;
+    z-index:999;
+    border: 1px solid black;
+    border-radius:10px;
+        width: 57.5px;
+        height:60px;
+    padding:10px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-animation: mymove2 30s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove2 33s infinite;
+  }
+
+  @keyframes mymove {
+    from {background:black}
+    to {background:white}
+}
+
+@keyframes mymove2 {
+  from {background:rgb(0, 104, 14)}
+  to {background:rgb(52, 83, 185)}
+}
+@keyframes mymove3 {
+  from {background:darkorchid}
+  to {background:darkmagenta}
+  /* from{padding:10px}
+  to:{padding:500px} */
+}
