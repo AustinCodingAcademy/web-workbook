@@ -8,4 +8,7 @@ var h2 = document.getElementById("youHave");
 h2.innerHTML = ("There are " +largo+ " items in cart.");
 console.log(largo);
 
-$(this).addClass('p1');
+
+$("#btn2").click(function(){
+    $("ul").append("<li>Appended item</li>");
+});
