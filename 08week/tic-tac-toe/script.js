@@ -1,7 +1,7 @@
 'use strict';
 
 $(document).ready(function () {
-  // Put app logic in here
+  // set up global variables
   let gameOver = false;
   let currentTurn = 1;
   let currentPlayer = "Player One";
@@ -11,66 +11,45 @@ $(document).ready(function () {
   $("#turntracker").addClass("playerOne");
 
 
-  $(".square").click(function () {
-    if (!gameOver) {
-      //To see what square you clicked on
-      console.log($(this).attr("data-cell"));
+  $(".square").click(function () { //Runs when any square is clicked
+    if (!gameOver) { //If game over has not happened, allow clicking of boxes
       if (currentPlayer === "Player One") {
-        //if square is not used, place an X in the box clicked
-        if ($(this).text() == "") {
-          $(this).text("X");
-          //Add class to element to change font to player's color
-          $(this).addClass("playerOne");
+        if ($(this).text() == "") { //Check if clicked square is empty
+          $(this).text("X"); //Place player character in square
+          $(this).addClass("playerOne"); //Add class to element to change font to player's color
 
-          //Check to see if move creates draw condition
-          if (checkDraw() === true) {
+          if (checkWin("X") === true) {  //Check to see if move met win condition
+            playerWins(currentPlayer);
+            return;
+          } else if (checkDraw() === true) { //Otherwise check to see if move creates draw condition
             $("#announce-winner").text("Draw!");
             gameOver = true;
-            return;
           }
-
-          //Check to see if move met win condition
-          if (checkWin() === true) {
-            playerWins(currentPlayer);
-          } else {
-            //set current player to playerTwo
-            currentPlayer = "Player Two";
+          else { //If not win or draw, advance game by switching turns
+            currentPlayer = "Player Two"; //set current player to playerTwo
             IncrementCounter();
-            //Increment Turn counter
-            currentTurn++;
-            $("#turntracker").text(currentPlayer + " - Turn: " + currentTurn);
-            $("#turntracker").removeClass("playerOne");
-            $("#turntracker").addClass("playerTwo");
-          }
-
+          }    
         } else {
-          console.log("Square is taken!");
+          //Square is occupied, do nothing
         }
       } else if (currentPlayer === "Player Two") {
-        //if square is not used, place an O in the box clicked
-        if ($(this).text() == "") {
-          $(this).text("O");
-          //Add class to element to change font to player's color
-          $(this).addClass("playerTwo");
+        if ($(this).text() == "") { //Check if clicked square is empty
+          $(this).text("O"); //Place player character in square
+          $(this).addClass("playerTwo"); //Add class to element to change font to player's color
 
-          //Check to see if move creates draw condition
-          if (checkDraw() === true) {
+          if (checkWin("O") === true) { //Check to see if move met win condition
+            playerWins(currentPlayer);
+            return;
+          } else if (checkDraw() === true) { //Otherwise check to see if move creates draw condition
             $("#announce-winner").text("Draw!");
             gameOver = true;
-            return;
           }
-
-          //Check to see if move met win condition
-          if (checkWin() === true) {
-            playerWins(currentPlayer);
-          } else {
-            //set current player to playerOne
-            currentPlayer = "Player One";
+          else { //If not win or draw, advance game by switching turns
+            currentPlayer = "Player One"; //set current player to playerOne
             IncrementCounter();
-          }
-
+          } 
         } else {
-          console.log("Square is taken!");
+          //Square is occupied, do nothing
         }
 
       }
@@ -78,10 +57,7 @@ $(document).ready(function () {
     }
   })
 
-
-
   //Clear Board button
-  /////////////////////////////////////////////////////////////////////////////////////
   $("#clear").click(function () {
     //set up array of all squares
     let squares = $(".square");
@@ -105,134 +81,65 @@ $(document).ready(function () {
     //Resets gameOver
     gameOver = false;
   })
-  /////////////////////////////////////////////////////////////////////////////////////////
 
-  //Check for Win condition by checking if boxes are filled in straight lines.
-  let winCombos = [
-    //rows
-    [0, 1, 2],
-    [3, 4, 5],
-    [6, 7, 8],
+  function checkWin(playerLetter) { //Check for win conditions using player's turns letter
+    //Rows
+    //////////////////////////////////////////////////////////////////////////////////////
+    //Top Row
+    if ($(".square")[0].innerHTML == playerLetter && $(".square")[1].innerHTML == playerLetter && $(".square")[2].innerHTML == playerLetter) {
+      gameOver = true;
+    }
+    //Middle Row
+    if ($(".square")[3].innerHTML == playerLetter && $(".square")[4].innerHTML == playerLetter && $(".square")[5].innerHTML == playerLetter) {
+      gameOver = true;
+    }
+    //Bottom Row
+    if ($(".square")[6].innerHTML == playerLetter && $(".square")[7].innerHTML == playerLetter && $(".square")[8].innerHTML == playerLetter) {
+      gameOver = true;
+    }
 
-    //columns
-    [0, 3, 7],
-    [1, 4, 6],
-    [2, 5, 8],
+    //Columns
+    /////////////////////////////////////////////////////////////////////////////////////
+    //Left Column
+    if ($(".square")[0].innerHTML == playerLetter && $(".square")[3].innerHTML == playerLetter && $(".square")[6].innerHTML == playerLetter) {
+      gameOver = true;
+    }
+    //Middle Column
+    if ($(".square")[1].innerHTML == playerLetter && $(".square")[4].innerHTML == playerLetter && $(".square")[7].innerHTML == playerLetter) {
+      gameOver = true;
+    }
+    //Right Column
+    if ($(".square")[2].innerHTML == playerLetter && $(".square")[5].innerHTML == playerLetter && $(".square")[8].innerHTML == playerLetter) {
+      gameOver = true;
+    }
 
-    //diagonals
-    [0, 4, 8],
-    [2, 4, 7]
-
-  ];
-
-  function checkWin() {
-    if (currentPlayer === "Player One") {
-      //Check for Player One wins
-      //Rows
-      //////////////////////////////////////////////////////////////////////////////////////
-      //Top Row
-      if ($(".square")[0].innerHTML == "X" && $(".square")[1].innerHTML == "X" && $(".square")[2].innerHTML == "X") {
-        gameOver = true;
-      }
-      //Middle Row
-      if ($(".square")[3].innerHTML == "X" && $(".square")[4].innerHTML == "X" && $(".square")[5].innerHTML == "X") {
-        gameOver = true;
-      }
-      //Bottom Row
-      if ($(".square")[6].innerHTML == "X" && $(".square")[7].innerHTML == "X" && $(".square")[8].innerHTML == "X") {
-        gameOver = true;
-      }
-
-      //Columns
-      /////////////////////////////////////////////////////////////////////////////////////
-      //Left Column
-      if ($(".square")[0].innerHTML == "X" && $(".square")[3].innerHTML == "X" && $(".square")[6].innerHTML == "X") {
-        gameOver = true;
-      }
-      //Middle Column
-      if ($(".square")[1].innerHTML == "X" && $(".square")[4].innerHTML == "X" && $(".square")[7].innerHTML == "X") {
-        gameOver = true;
-      }
-      //Right Column
-      if ($(".square")[2].innerHTML == "X" && $(".square")[5].innerHTML == "X" && $(".square")[8].innerHTML == "X") {
-        gameOver = true;
-      }
-
-      //Diagonals
-      //////////////////////////////////////////////////////////////////////////////////
-      //Left To Right Diagonal
-      if ($(".square")[0].innerHTML == "X" && $(".square")[4].innerHTML == "X" && $(".square")[8].innerHTML == "X") {
-        gameOver = true;
-      }
-      //Right To Left Diagonal
-      if ($(".square")[2].innerHTML == "X" && $(".square")[4].innerHTML == "X" && $(".square")[6].innerHTML == "X") {
-        gameOver = true;
-      }
-
-    } else {
-      //Check for Player Two wins
-      //Rows
-      //////////////////////////////////////////////////////////////////////////////////////
-      //Top Row
-      if ($(".square")[0].innerHTML == "O" && $(".square")[1].innerHTML == "O" && $(".square")[2].innerHTML == "O") {
-        gameOver = true;
-      }
-      //Middle Row
-      if ($(".square")[3].innerHTML == "O" && $(".square")[4].innerHTML == "O" && $(".square")[5].innerHTML == "O") {
-        gameOver = true;
-      }
-      //Bottom Row
-      if ($(".square")[6].innerHTML == "O" && $(".square")[7].innerHTML == "O" && $(".square")[8].innerHTML == "O") {
-        gameOver = true;
-      }
-
-      //Columns
-      /////////////////////////////////////////////////////////////////////////////////////
-      //Left Column
-      if ($(".square")[0].innerHTML == "O" && $(".square")[3].innerHTML == "O" && $(".square")[6].innerHTML == "O") {
-        gameOver = true;
-      }
-      //Middle Column
-      if ($(".square")[1].innerHTML == "O" && $(".square")[4].innerHTML == "O" && $(".square")[7].innerHTML == "O") {
-        gameOver = true;
-      }
-      //Right Column
-      if ($(".square")[2].innerHTML == "O" && $(".square")[5].innerHTML == "O" && $(".square")[8].innerHTML == "O") {
-        gameOver = true;
-      }
-
-      //Diagonals
-      //////////////////////////////////////////////////////////////////////////////////
-      //Left To Right Diagonal
-      if ($(".square")[0].innerHTML == "O" && $(".square")[4].innerHTML == "O" && $(".square")[8].innerHTML == "O") {
-        gameOver = true;
-      }
-      //Right To Left Diagonal
-      if ($(".square")[2].innerHTML == "O" && $(".square")[4].innerHTML == "O" && $(".square")[6].innerHTML == "O") {
-        gameOver = true;
-      }
-
+    //Diagonals
+    //////////////////////////////////////////////////////////////////////////////////
+    //Left To Right Diagonal
+    if ($(".square")[0].innerHTML == playerLetter && $(".square")[4].innerHTML == playerLetter && $(".square")[8].innerHTML == playerLetter) {
+      gameOver = true;
+    }
+    //Right To Left Diagonal
+    if ($(".square")[2].innerHTML == playerLetter && $(".square")[4].innerHTML == playerLetter && $(".square")[6].innerHTML == playerLetter) {
+      gameOver = true;
     }
 
     return gameOver;
   }
 
-  function checkDraw() {
+  function checkDraw() { //Checks how many squares are still empty, and if 0 then draw
     let draw = false;
-    //Check if all squares are filled
     if ($(".square:empty").length === 0) {
-      //Set draw to true
-      draw = true;
+      draw = true; //Set draw to true
     } else {
-
+      //Do nothing
     }
     return draw;
   };
 
   function playerWins(playerWhoWon) {
-    //Display that player won
-    $("#announce-winner").text(playerWhoWon + " Wins!");
-    if (playerWhoWon === "Player One") {
+    $("#announce-winner").text(playerWhoWon + " Wins!"); //Display that player won
+    if (playerWhoWon === "Player One") {  
       //Increment the Scoreboard counter
       playerOneGamesWon++;
       $(".playeronescore").text(playerOneGamesWon)
@@ -245,20 +152,16 @@ $(document).ready(function () {
   }
 
   function IncrementCounter() {
-    //Increment Turn counter
-    currentTurn++;
-    $("#turntracker").text(currentPlayer + " - Turn: " + currentTurn);
-    if(currentPlayer === "Player One")
-    {
+    currentTurn++; //Increment Turn counter
+    $("#turntracker").text(currentPlayer + " - Turn: " + currentTurn); //Update text for turn tracker
+    if (currentPlayer === "Player One") {  //Remove opposite color classes to keep coloring consistent
       $("#turntracker").removeClass("playerTwo");
       $("#turntracker").addClass("playerOne");
-    }
-    else
-    {
+    } else {
       $("#turntracker").removeClass("playerOne");
       $("#turntracker").addClass("playerTwo");
     }
-    
+
   }
 
 });
