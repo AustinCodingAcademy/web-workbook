@@ -3,26 +3,46 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tic Tac Toe</title>
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet"> 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="row">
-    <div data-cell="0"></div>
-    <div data-cell="1"></div>
-    <div data-cell="2"></div>
-  </div>
-  <div class="row">
-    <div data-cell="3"></div>
-    <div data-cell="4"></div>
-    <div data-cell="5"></div>
-  </div>
-  <div class="row">
-    <div data-cell="6"></div>
-    <div data-cell="7"></div>
-    <div data-cell="8"></div>
-  </div>
-  <div id="announce-winner"></div>
-  <button id="clear">Clear Board</button>
+    <div id="tictactoe">
+        <table class="gameboard">
+            <tr>
+                <td class="cell" id="cell-1"></td>
+                <td class="cell" id="cell-2"></td>
+                <td class="cell" id="cell-3"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="cell-4"></td>
+                <td class="cell" id="cell-5"></td>
+                <td class="cell" id="cell-6"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="cell-7"></td>
+                <td class="cell" id="cell-8"></td>
+                <td class="cell" id="cell-9"></td>
+            </tr>
+        </table>
+        <div class="scoreboard">
+            <div class="player player-current">
+                Current player : <span class="x">x</span>
+            </div>
+            <div class="player player-x">
+                <span class="player-info name">Player X</span>
+                :
+                <span class="player-info score x">0</span>
+            </div>
+            <div class="player player-o">
+                <span class="player-info name">Player O</span>
+                :
+                <span class="player-info score o">0</span>
+            </div>
+            <br>
+            <button class="reset">Reset</button>
+        </div>
+    </div>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="./script.js"></script>
 </body>

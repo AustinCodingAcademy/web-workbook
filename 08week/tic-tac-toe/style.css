@@ -1,18 +1,71 @@
-div[data-cell] {
+
+/* real style */
+body{
+  font-family: 'Abril Fatface', cursive;
+  background-color:cadetblue;
+
+}
+#tictactoe{
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+
+}
+.cell {
+  cursor: pointer;
   width: 100px;
   height: 100px;
   background-color: #f2f2f2;
   float: left;
   border: 1px solid #808080;
-  font-size: 100px;
+  font-size: 4em;
+  text-align: center;
+  align-items: center
+}
+#cell-1, #cell-2, #cell-3 {
+  border-top: none;
+}
+#cell-3, #cell-6, #cell-9 {
+  border-right: none;
+}
+#cell-7, #cell-8, #cell-9 {
+  border-bottom: none;
+}
+#cell-1, #cell-4, #cell-7 {
+  border-left: none;
+}
+.o {
+  color: #45d632;
+}
+.x {
+  color: #001ba1;
+}
+.gameboard {
+  margin-top:20px;
+  display:flex;
+  align-content:center;
+  border-collapse: collapse;
+}
+.scoreboard {
+  padding: 0.5rem;
   text-align: center;
 }
-
-.row {
-  clear: both;
+.player, .reset {
+  font-size: 1.5rem;
+  text-align: center;
 }
-
-#announce-winner {
-  clear: both;
-  font-size: 50px;
+.reset {
+  border-radius: 0.3rem;
+  background: #005c79;
+  border: 1px solid #a0a0a0;
+  color:whitesmoke;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+}
+.reset:hover {
+  background: rgba(255,255,255,0.5);
 }
