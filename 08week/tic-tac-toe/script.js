@@ -9,55 +9,38 @@ $(document).ready(function () {
   let playerTwoGamesWon = 0;
   $("#turntracker").text(currentPlayer + " - Turn: " + currentTurn);
   $("#turntracker").addClass("playerOne");
+  let squares = $(".square"); //Set up array of all squares
 
 
   $(".square").click(function () { //Runs when any square is clicked
     if (!gameOver) { //If game over has not happened, allow clicking of boxes
-      if (currentPlayer === "Player One") {
-        if ($(this).text() == "") { //Check if clicked square is empty
-          $(this).text("X"); //Place player character in square
-          $(this).addClass("playerOne"); //Add class to element to change font to player's color
+      if ($(this).text() == "") { //Check if clicked square is empty
+        $(this).text(currentPlayer === "Player One" ? "X" : "O"); //Place player character in square
+        $(this).addClass(currentPlayer === "Player One" ? "playerOne" : "playerTwo"); //Add class to element to change font to player's color
 
-          if (checkWin("X") === true) { //Check to see if move met win condition
-            playerWins(currentPlayer);
-            return;
-          } else if (checkDraw() === true) { //Otherwise check to see if move creates draw condition
-            $("#announce-winner").text("Draw!");
-            gameOver = true;
-          } else { //If not win or draw, advance game by switching turns
+        if (checkWin(currentPlayer === "Player One" ? "X" : "O") === true) { //Check to see if move met win condition
+          playerWins(currentPlayer);
+          gameOver = true;
+          return;
+        } else if (checkDraw() === true) { //Otherwise check to see if move creates draw condition
+          $("#announce-winner").text("Draw!");
+          gameOver = true;
+        } else { //If not win or draw, advance game by switching turns
+          if (currentPlayer === "Player One") {
             currentPlayer = "Player Two"; //Set current player to Player Two
-            IncrementCounter();
-          }
-        } else {
-          //Square is occupied, do nothing
-        }
-      } else if (currentPlayer === "Player Two") {
-        if ($(this).text() == "") { //Check if clicked square is empty
-          $(this).text("O"); //Place player character in square
-          $(this).addClass("playerTwo"); //Add class to element to change font to player's color
-
-          if (checkWin("O") === true) { //Check to see if move met win condition
-            playerWins(currentPlayer);
-            return;
-          } else if (checkDraw() === true) { //Otherwise check to see if move creates draw condition
-            $("#announce-winner").text("Draw!");
-            gameOver = true;
-          } else { //If not win or draw, advance game by switching turns
+          } else {
             currentPlayer = "Player One"; //Set current player to Player One
-            IncrementCounter();
           }
-        } else {
-          //Square is occupied, do nothing
+          IncrementCounter();
         }
-
+      } else {
+        //Square is occupied, do nothing
       }
-
     }
   })
 
   //Clear Board button
   $("#clear").click(function () {
-    let squares = $(".square"); //Set up array of all squares
     let i = 0;
     for (i = 0; i < squares.length; i++) { //For each square in array, make text blank/remove player classes
       $(squares[i]).text("");
@@ -74,49 +57,26 @@ $(document).ready(function () {
     gameOver = false; //Resets gameOver
   })
 
-  function checkWin(playerLetter) { //Check for win conditions using player's turns letter
+  let winCombos = [
     //Rows
-    //////////////////////////////////////////////////////////////////////////////////////
-    //Top Row
-    if ($(".square")[0].innerHTML == playerLetter && $(".square")[1].innerHTML == playerLetter && $(".square")[2].innerHTML == playerLetter) {
-      gameOver = true;
-    }
-    //Middle Row
-    if ($(".square")[3].innerHTML == playerLetter && $(".square")[4].innerHTML == playerLetter && $(".square")[5].innerHTML == playerLetter) {
-      gameOver = true;
-    }
-    //Bottom Row
-    if ($(".square")[6].innerHTML == playerLetter && $(".square")[7].innerHTML == playerLetter && $(".square")[8].innerHTML == playerLetter) {
-      gameOver = true;
-    }
-
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
     //Columns
-    /////////////////////////////////////////////////////////////////////////////////////
-    //Left Column
-    if ($(".square")[0].innerHTML == playerLetter && $(".square")[3].innerHTML == playerLetter && $(".square")[6].innerHTML == playerLetter) {
-      gameOver = true;
-    }
-    //Middle Column
-    if ($(".square")[1].innerHTML == playerLetter && $(".square")[4].innerHTML == playerLetter && $(".square")[7].innerHTML == playerLetter) {
-      gameOver = true;
-    }
-    //Right Column
-    if ($(".square")[2].innerHTML == playerLetter && $(".square")[5].innerHTML == playerLetter && $(".square")[8].innerHTML == playerLetter) {
-      gameOver = true;
-    }
-
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
     //Diagonals
-    //////////////////////////////////////////////////////////////////////////////////
-    //Left To Right Diagonal
-    if ($(".square")[0].innerHTML == playerLetter && $(".square")[4].innerHTML == playerLetter && $(".square")[8].innerHTML == playerLetter) {
-      gameOver = true;
-    }
-    //Right To Left Diagonal
-    if ($(".square")[2].innerHTML == playerLetter && $(".square")[4].innerHTML == playerLetter && $(".square")[6].innerHTML == playerLetter) {
-      gameOver = true;
-    }
+    [0, 4, 8],
+    [2, 4, 6]
+  ]
 
-    return gameOver;
+  function checkWin(playerLetter) { //Check for win conditions using player's turns letter by looping though all possible win combinations, and seeing if players letter exists in all three in the combo.
+    return winCombos.some(function (threeInARow) {
+      return threeInARow.every(function (square) {
+        return $(squares[square]).text() === playerLetter;
+      });
+    });
   }
 
   function checkDraw() { //Checks how many squares are still empty, and if 0 then draw
