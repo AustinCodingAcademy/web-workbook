@@ -22,9 +22,11 @@ $(document).ready(function() {
 
     if (playerTurn === "X") {
       this.innerHTML = playerTurn;
+      this.classList.add("color1");
       playerTurn = "O";
     } else if (playerTurn === "O") {
       this.innerHTML = playerTurn;
+      this.classList.add("color2");
       playerTurn = "X";
     }
     charCount++;
@@ -44,6 +46,13 @@ $(document).ready(function() {
     dataCells.text("");
     announceWinner.text("");
     charCount = 0;
+
+    for (i = 0; i < rows*cols; i++) {
+      if(dataCells[i].classList.contains("color1"))
+        dataCells[i].classList.remove("color1");
+      if(dataCells[i].classList.contains("color2"))
+        dataCells[i].classList.remove("color2");
+    }
   });
 
   // function: load board cells into 2d array
