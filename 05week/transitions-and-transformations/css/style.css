@@ -1,0 +1,91 @@
+body, html {
+  height: 100%;
+  width: 100%;
+}
+.a {
+  background-color: #ec722b;
+}
+.b {
+  background-color: #cc3a9b;
+}
+.c {
+  background-color: #193c05;
+}
+.d {
+  background-color: #b0a639;
+}
+.e {
+  background-color: #349845;
+}
+.f {
+  background-color: #f693bc;
+}
+.g {
+  background-color: #a2c345;
+}
+.h {
+  background-color: #ddecbc;
+}
+.i {
+  background-color: #5a9d28;
+}
+.j {
+  background-color: #a496b9;
+}
+.k {
+  background-color: #58db54;
+}
+.l {
+  background-color: #9866a3;
+}
+
+.container {
+
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.container:after {
+  background-color: white;
+}
+
+.box {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  height: 50px;
+
+  border: 1px solid black;
+
+
+}
+
+.box:nth-child(odd) {
+  transition: width 2s, height 2s, background-color 5s, transform 5s, margin-left 8s;
+}
+.box:nth-child(even) {
+  transition: width 2s, height 2s, background-color 3s, transform 1s, margin-right 2s;
+}
+
+.box:nth-child(odd):hover {
+  background-color: purple;
+  width: 100px;
+  height: 100px;
+  margin-left: 100%;
+  transform: rotate(360deg);
+}
+.box:nth-child(even):hover {
+  background-color: yellow;
+  width: 25px;
+  height: 25px;
+  margin-right: 100%;
+  transform: rotate(-720deg);
+}

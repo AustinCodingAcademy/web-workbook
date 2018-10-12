@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Customer Satisfaction Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  </head>
+  <body>
+    <div class="form">
+    <form action="" name="customersatisfaction">
+    <h1>Satisfaction Survey</h1>
+    <div class="name">
+    <input type="text" name="first" id="first" placeholder="First Name" spellcheck="true" required>
+    <input type="text" name="last" id="last" placeholder="Last Name" spellcheck="true" required>
+    </div>
+    <input type="email" name="email" id="email" placeholder="john@doe.com" required>
+    <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" required>
+    <input type="url" name="yourwebsite" id="yourwebsite" placeholder="Please enter your website's URL" required>
+    <h3>Check All That Applies</h3>
+    <div class="checkboxes">
+    <p>Application</p>
+    <input type="checkbox" name="mobilesite" value="mobilesite">
+    <p>Website</p>
+    <input type="checkbox" name="website" value="website" checked>
+    <p>Other</p>
+    <input type="checkbox" name="other" value="other">
+    </div>
+    <h3>Are You Happy With The Result?</h3>
+    <div class="radio">
+    <label for="yes-option">No</label>
+    <input type="radio" class="yes-option" name="selector" value="yes">
+    <label for="no-option">Yes</label>
+    <input type="radio" class="no-option" name="selector" value="no">
+    </div>
+    <h3>How Likely Are You To Use This Service Again?</h3>
+    <input type="range" name="range" id="range">
+    <div class="buttons">
+    <button type="submit" id="submit">Submit</button>
+    <button type="reset" id="reset">Reset</button>
+  </div>
+  </div>
+  </body>
+    <script src="./js/script.js"></script>
+  </html>
