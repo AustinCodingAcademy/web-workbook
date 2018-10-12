@@ -1,7 +1,7 @@
 'use strict';
 
 $(document).ready(function () {
-  // set up global variables
+  //Set up global variables
   let gameOver = false;
   let currentTurn = 1;
   let currentPlayer = "Player One";
@@ -18,17 +18,16 @@ $(document).ready(function () {
           $(this).text("X"); //Place player character in square
           $(this).addClass("playerOne"); //Add class to element to change font to player's color
 
-          if (checkWin("X") === true) {  //Check to see if move met win condition
+          if (checkWin("X") === true) { //Check to see if move met win condition
             playerWins(currentPlayer);
             return;
           } else if (checkDraw() === true) { //Otherwise check to see if move creates draw condition
             $("#announce-winner").text("Draw!");
             gameOver = true;
-          }
-          else { //If not win or draw, advance game by switching turns
-            currentPlayer = "Player Two"; //set current player to playerTwo
+          } else { //If not win or draw, advance game by switching turns
+            currentPlayer = "Player Two"; //Set current player to Player Two
             IncrementCounter();
-          }    
+          }
         } else {
           //Square is occupied, do nothing
         }
@@ -43,11 +42,10 @@ $(document).ready(function () {
           } else if (checkDraw() === true) { //Otherwise check to see if move creates draw condition
             $("#announce-winner").text("Draw!");
             gameOver = true;
-          }
-          else { //If not win or draw, advance game by switching turns
-            currentPlayer = "Player One"; //set current player to playerOne
+          } else { //If not win or draw, advance game by switching turns
+            currentPlayer = "Player One"; //Set current player to Player One
             IncrementCounter();
-          } 
+          }
         } else {
           //Square is occupied, do nothing
         }
@@ -59,27 +57,21 @@ $(document).ready(function () {
 
   //Clear Board button
   $("#clear").click(function () {
-    //set up array of all squares
-    let squares = $(".square");
+    let squares = $(".square"); //Set up array of all squares
     let i = 0;
-    //for each square in array, make text blank/remove player classes
-    for (i = 0; i < squares.length; i++) {
+    for (i = 0; i < squares.length; i++) { //For each square in array, make text blank/remove player classes
       $(squares[i]).text("");
       $(squares[i]).removeClass("playerOne");
       $(squares[i]).removeClass("playerTwo");
     }
-    //Clears Win text
-    $("#announce-winner").text("");
-    //set current player to playerOne
-    currentPlayer = "Player One";
-    //Reset Turn counter
-    currentTurn = 1;
+    $("#announce-winner").text(""); //Clears Win text
+    currentPlayer = "Player One"; //Set current player to Player One
+    currentTurn = 1; //Reset Turn counter
     $("#turntracker").removeClass("playerOne");
     $("#turntracker").removeClass("playerTwo");
     $("#turntracker").text(currentPlayer + " - Turn: " + currentTurn);
     $("#turntracker").addClass("playerOne");
-    //Resets gameOver
-    gameOver = false;
+    gameOver = false; //Resets gameOver
   })
 
   function checkWin(playerLetter) { //Check for win conditions using player's turns letter
@@ -139,12 +131,11 @@ $(document).ready(function () {
 
   function playerWins(playerWhoWon) {
     $("#announce-winner").text(playerWhoWon + " Wins!"); //Display that player won
-    if (playerWhoWon === "Player One") {  
+    if (playerWhoWon === "Player One") {
       //Increment the Scoreboard counter
       playerOneGamesWon++;
       $(".playeronescore").text(playerOneGamesWon)
     } else {
-      //Increment the Scoreboard counter
       playerTwoGamesWon++;
       $(".playertwoscore").text(playerTwoGamesWon)
     }
@@ -154,7 +145,7 @@ $(document).ready(function () {
   function IncrementCounter() {
     currentTurn++; //Increment Turn counter
     $("#turntracker").text(currentPlayer + " - Turn: " + currentTurn); //Update text for turn tracker
-    if (currentPlayer === "Player One") {  //Remove opposite color classes to keep coloring consistent
+    if (currentPlayer === "Player One") { //Remove opposite color classes to keep coloring consistent
       $("#turntracker").removeClass("playerTwo");
       $("#turntracker").addClass("playerOne");
     } else {
