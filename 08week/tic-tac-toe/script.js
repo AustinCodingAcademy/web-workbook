@@ -3,8 +3,10 @@
 $(document).ready(function() {
   // Put app logic in here
   var dataCells = $(".data-cell");
-  var playerTurn = "X";
   var clearBtn = $("#clear");
+  var announceWinner = $("#announce-winner");
+  var playerTurn = "X";
+  var charCount = 0;
 
   const rows = 3;
   const cols = 3;
@@ -12,6 +14,12 @@ $(document).ready(function() {
 
   // function: insert "X" or "O" in cells
   dataCells.click(function() {
+    // make sure this cell is empty before proceeding
+    if (this.innerHTML != "") {
+      alert("That space is already occupied!");
+      return;
+    }
+
     if (playerTurn === "X") {
       this.innerHTML = playerTurn;
       playerTurn = "O";
@@ -19,15 +27,23 @@ $(document).ready(function() {
       this.innerHTML = playerTurn;
       playerTurn = "X";
     }
-
+    charCount++;
     let playerHasWon = checkForWin();
-    console.clear();
-    console.log("playerHasWon = " + playerHasWon);
+    if(playerHasWon) {
+      return;
+    }
+
+    var boardState = getBoardState();
+    if(boardState === "FULL" && playerHasWon === false) {
+      announceWinner.text("It's a draw!");
+    }
   });
 
   // function: clear board
   clearBtn.click(function() {
     dataCells.text("");
+    announceWinner.text("");
+    charCount = 0;
   });
 
   // function: load board cells into 2d array
@@ -49,6 +65,15 @@ $(document).ready(function() {
     return board;
   }
 
+  // function: get board state
+  function getBoardState() {
+    let boardState = "";
+    if (charCount === rows * cols) {
+      boardState = "FULL"
+      return boardState;
+    }
+  }
+
   // function: check for any 3 in a row
   function checkForWin() {
     let winnerRow = checkRows(board);
@@ -56,6 +81,7 @@ $(document).ready(function() {
     let winnerDiag = checkDiags(board);
 
     if (winnerRow || winnerCol || winnerDiag) {
+      announceWinner.text("Winner winner chicken dinner!");
       return true;
     } else {
       return false;
@@ -186,8 +212,8 @@ $(document).ready(function() {
     if (
       xCount__diag1 === rows ||
       oCount__diag1 === rows ||
-      xCount__diag2 ||
-      oCount__diag2
+      xCount__diag2 === true ||
+      oCount__diag2 === true
     ) {
       return true;
     } else {
