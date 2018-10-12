@@ -4,25 +4,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tic Tac Toe</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Link to Font used on Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-  <div class="row">
-    <div data-cell="0"></div>
-    <div data-cell="1"></div>
-    <div data-cell="2"></div>
+  <main>
+      <div id="turntracker"></div>
+      <div class="grid-container">
+          <div class="row">
+            <div data-cell="0" class="square square1"></div>
+            <div data-cell="1" class="square square2"></div>
+            <div data-cell="2" class="square square3"></div>
+          </div>
+          <div class="row">
+            <div data-cell="3" class="square square4"></div>
+            <div data-cell="4" class="square square5"></div>
+            <div data-cell="5" class="square square6"></div>
+          </div>
+          <div class="row">
+            <div data-cell="6" class="square square7"></div>
+            <div data-cell="7" class="square square8"></div>
+            <div data-cell="8" class="square square9"></div>
+          </div>
+      </div>
+      <button id="clear">Clear Board</button>
+      <div id="announce-winner"></div>
+  </main>
+  
+  <div id="scoreboard">
+    <strong>Scoreboard</strong>
+    <p>Player One  |  Player Two</p>
+    <div class="playeronescore">0</div>
+    <div class="playertwoscore">0</div>
   </div>
-  <div class="row">
-    <div data-cell="3"></div>
-    <div data-cell="4"></div>
-    <div data-cell="5"></div>
-  </div>
-  <div class="row">
-    <div data-cell="6"></div>
-    <div data-cell="7"></div>
-    <div data-cell="8"></div>
-  </div>
-  <div id="announce-winner"></div>
-  <button id="clear">Clear Board</button>
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="./script.js"></script>
 </body>

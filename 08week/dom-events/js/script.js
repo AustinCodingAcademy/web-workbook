@@ -1,7 +1,7 @@
 'use strict';
 
 $(document).ready(function() {
-  alert('Are you ready to count by ones, tens, and hundred?');
+  alert('Are you ready to count by ones, tens, and hundreds?');
   var num = 0;
   var num2 = 0;
   var num3 = 0;
@@ -32,4 +32,5 @@ $(document).ready(function() {
   })
 
   $(".box").draggable();
+  $(".box").resizable();
 });
