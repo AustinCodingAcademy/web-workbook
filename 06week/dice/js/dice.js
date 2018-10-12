@@ -29,30 +29,18 @@ function report() {
   let diceHtml = document.querySelectorAll('.die'); // this puts all the individual die HTML elements in diceHtml
 
   for (let dieVal = 1; dieVal < 7; dieVal++) { // we set up a nested loop, first we check for all the 1s, then 2s, etc
-    
+
     let howManyDice = 0; // we zero out our counter
     for (let i = 0; i < 5; i++) { // we create the inner loop that cycles through the rolled dice
       if (dieVal === Number(diceHtml[i].getAttribute('data-roll'))) { // we check if the rolled die is equal to the one's we're counting
         howManyDice++;
         switch (dieVal) {
-          case 1:
-            oneCount++;
-            break;
-          case 2:
-            twoCount++;
-            break;
-          case 3:
-            threeCount++;
-            break;
-          case 4:
-            fourCount++;
-            break;
-          case 5:
-            fiveCount++;
-            break;
-          case 6:
-            sixCount++;
-            break;
+        case 1: oneCount++; break;
+        case 2: twoCount++; break;
+        case 3: threeCount++; break;
+        case 4: fourCount++; break;
+        case 5: fiveCount++; break;
+        case 6: sixCount++;  break;
 
         } // if so, we add one to the count
       }
@@ -92,29 +80,29 @@ function report() {
       document.querySelector("#report").innerHTML += `There are five of ${dieVal}s<br>`; // if yes, we report five of a kind
     }
 
-    
+
   }
-  
+
   // SMALL STRAIGHT
   if (oneCount === 1 &&
     twoCount === 1 &&
     threeCount === 1 &&
     fourCount === 1 &&
-    fiveCount === 1 ) {
+    fiveCount === 1) {
     document.querySelector("#report").innerHTML += `Small Straight`;
-    
+
   }
 
   // BIG STRAIGHT
   if (twoCount === 1 &&
     threeCount === 1 &&
     fourCount === 1 &&
-    fiveCount === 1 && 
+    fiveCount === 1 &&
     sixCount === 1) {
-      document.querySelector("#report").innerHTML += `Big Straight`;
+    document.querySelector("#report").innerHTML += `Big Straight`;
   }
   // two of dice have the same points, like 3 6 5 6 1 - called pair: example solved for you. Complete the other cases below:
-  
+
   // three of dice have the same points, like 2 4 5 4 4 - called three;
   // four of dice have the same points, like 1 4 1 1 1 - called four;
   // all five dice have the same points, like 2 2 2 2 2 - called yacht;

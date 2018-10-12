@@ -1,6 +1,6 @@
 "use strict";
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   // Create a JS file and write code the will do the following:
 
   //  Alert the user to how many list items there are on the page.
@@ -17,17 +17,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
   console.log(list.childNodes);
   console.log(mainTitle);
-  mainTitle.insertAdjacentHTML("afterend", 
-  '<h2 id= "items"> You have _ items in your shopping cart</h2>'
+  mainTitle.insertAdjacentHTML("afterend",
+    '<h2 id= "items"> You have _ items in your shopping cart</h2>'
   );
-  
+
   console.log(button);
-  button.addEventListener("click", function() {
+  button.addEventListener("click", function () {
     list.insertAdjacentHTML("beforeend", '<li>Additional Items</li>');
   });
   console.log(buttonN);
-  buttonN.addEventListener("click", function(){
-    var lastItem = listItems[listItems.length -1];
+  buttonN.addEventListener("click", function () {
+    var lastItem = listItems[listItems.length - 1];
     list.removeChild(lastItem);
   });
 });
