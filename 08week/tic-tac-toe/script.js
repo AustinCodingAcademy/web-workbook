@@ -1,101 +1,69 @@
-'use strict';
+/* 'use strict';
 
 $(document).ready(function() {
-  // Put app logic in here
+  // Put app logic in here - Tic Tac Toe
+  // alternate between players
+let currentPlayer = 'Player One';
 
-});
-
-$(function() {
-  
-  var player = 1;
-  var table = $('table');
-  var messages = $('.messages');
-  var turn = $('.turn');
-  displayNextPlayer(turn, player);
-  
-  $('td').click(function() {
-    td = $(this);
-    var state = getState(td);
-    if(!state) {
-      var pattern = definePatternForCurrentPlayer(player);
-      changeState(td, pattern);
-      if(checkIfPlayerWon(table, pattern)) {
-        messages.html('Player '+player+' has won.');
-        turn.html('');
-      } else {
-        player = setNextPlayer(player);
-        displayNextPlayer(turn, player);
-      }
+  $('.box').click (function () {
+    console.clear();
+    if (currentPlayer === 'Player One') {
+      $(this).text('X');
+      currentPlayer = 'Player Two';
     } else {
-      messages.html('This box is already checked.');
+      $(this).text('O');
+      currentPlayer = 'Player One';
     }
-  });
-  
-  $('.reset').click(function() {
-    player = 1;
-    messages.html('');
-    reset(table);
-    displayNextPlayer(turn, player);
-  });
-  
+    
+// Write function: clear board
+
+
+$('#clear').click (function () {
+let clearBoard = $('.box');
+let i = 0;
+console.log(clearBoard);
+for (i = 0; i < clearBoard.length; i++) {
+  $(clearBoard[i]).text('');
+  console.log(i);
+}
+})
+
 });
 
-function getState(td) {
-  if(td.hasClass('cross') || td.hasClass('circle')) {
-    return 1;
-  } else {
-    return 0;
-  }
-}
 
-function changeState(td, pattern) {
-  return td.addClass(pattern);
-}
+// Write function: put X's and O's in the boxes when you click (only allow one selection)
 
-function definePatternForCurrentPlayer(player) {
-  if(player == 1) {
-    return 'cross';
-  } else {
-    return 'circle';
-  }
-}
 
-function setNextPlayer(player) {
-  if(player == 1) {
-    return player = 2;
-  } else {
-    return player = 1;
-  }
-}
 
-function displayNextPlayer(turn, player) {
-  turn.html('Player turn : '+player);
-}
 
-function checkIfPlayerWon(table, pattern) {
-  var won = 0;
-  if(table.find('.item1').hasClass(pattern) && table.find('.item2').hasClass(pattern) && table.find('.item3').hasClass(pattern)) {
-    won = 1;
-  } else if (table.find('.item1').hasClass(pattern) && table.find('.item4').hasClass(pattern) && table.find('.item7').hasClass(pattern)) {
-    won = 1;
-  } else if (table.find('.item1').hasClass(pattern) && table.find('.item5').hasClass(pattern) && table.find('.item9').hasClass(pattern)) {
-    won = 1;
-  } else if (table.find('.item4').hasClass(pattern) && table.find('.item5').hasClass(pattern) && table.find('.item6').hasClass(pattern)) {
-    won = 1;
-  } else if (table.find('.item7').hasClass(pattern) && table.find('.item8').hasClass(pattern) && table.find('.item9').hasClass(pattern)) {
-    won = 1;
-  } else if (table.find('.item2').hasClass(pattern) && table.find('.item5').hasClass(pattern) && table.find('.item8').hasClass(pattern)) {
-    won = 1;
-  } else if (table.find('.item3').hasClass(pattern) && table.find('.item6').hasClass(pattern) && table.find('.item9').hasClass(pattern)) {
-    won = 1;
-  } else if (table.find('.item3').hasClass(pattern) && table.find('.item5').hasClass(pattern) && table.find('.item7').hasClass(pattern)) {
-    won = 1;
-  }
-  return won;
-}
 
-function reset(table) {
-  table.find('td').each(function() {
-    $(this).removeClass('circle').removeClass('cross');
-  });
-}
+// Write function: check for win    
+
+// Write function: winner text
+
+// Write function: check for draw
+
+// Write function: draw text
+
+
+
+
+
+}); */
+
+/* const PLAYER_TOKEN = 'X'
+const COMPUTER_TOKEN = 'Y'
+
+$(document).ready(function() {
+  const grid = [
+    [' ', ' ', ' '],
+    [' ', ' ', ' '],
+    [' ', ' ', ' ']
+  ];
+
+$('.col').click(function() {
+  $(this).html(PLAYER_TOKEN);
+})
+
+}) */
+
