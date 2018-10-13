@@ -51,7 +51,7 @@ for (i = 0; i < clearBoard.length; i++) {
 
 }); */
 
-/* const PLAYER_TOKEN = 'X'
+const PLAYER_TOKEN = 'X'
 const COMPUTER_TOKEN = 'Y'
 
 $(document).ready(function() {
@@ -61,9 +61,10 @@ $(document).ready(function() {
     [' ', ' ', ' ']
   ];
 
-$('.col').click(function() {
-  $(this).html(PLAYER_TOKEN);
-})
+  $('.col').click(function() {
+    $(this).html(PLAYER_TOKEN);
+    $(this).css('color', 'red');
+  })
 
-}) */
+})
 
