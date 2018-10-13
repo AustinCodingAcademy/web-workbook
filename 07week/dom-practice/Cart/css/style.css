@@ -5,26 +5,136 @@ body {display:flex;
     justify-items: center;
     align-items: center;
     font-family: 'Roboto Condensed', sans-serif;
-    /* background-color:#799AE8; */
-}
+    background-color:#799AE8; 
+} 
 h2{
     color:rgb(62, 150, 84);
 }
-#pcontainer{display: flex;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:center;
-    width:80%;
-}
-p {display:flex;
-    height: 50%;
-    margin:1em;
+/* .item {display:flex;
+    flex-direction:row;
+    justify-items: space-between;
     width:100%;
     align-items: center;
     border:1px solid #8C79E8;
 
-}
+} */
 img{
  height:200px;
  padding:1em;
+}
+
+main {display:flex;
+    flex-direction:column;
+    align-items: center;
+  width: 100%;
+height:auto;
+background-color:rgb(255, 255, 255);
+}
+
+header {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    justify-items: center;
+   align-items:center;
+  height: 100px;
+  margin-bottom: 50px;
+  /* background-color:mediumaquamarine; */
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0 0 50px;
+}
+
+#cart-container {display:flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+   align-items:center;
+}
+
+#itemCount {
+  display: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgb(132, 0, 255);
+  color: white;
+  text-align: center;
+}
+
+
+
+i:hover {
+  cursor: pointer;
+}
+
+#shoppingCart {
+    display:flex;
+    flex-direction:row;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.6);
+}
+.item{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    align-content: center;
+    align-items: center;
+    border:1px solid purple;
+    width:80%;
+    height:100%;
+    margin-bottom:20px;
+}
+#text{
+    display:flex;
+    flex-direction:row;
+    width:400px;
+    height:auto;
+}
+}
+#cartItems {
+  display:flex;
+  box-shadow: 0 0 10px black;
+  background: #e9e9e9;
+  overflow: auto;
+}
+
+#cartItems i {
+    display:flex;
+}
+
+#cartItems .itemDetails {
+   width:100%;
+
+}
+
+#cartItems .itemImage {
+    width:100%;
+padding:10px;
+}
+
+#cartItems .itemText {
+  width: 100%;
+  padding: 0 40px;
+}
+
+.removeItem {
+  margin-left: 40px;
+}
+
+button.add{
+    align-content: center;
+    width:100px;
+    height:20px;
+    text-align: center;
 }

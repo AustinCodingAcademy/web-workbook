@@ -1,14 +1,30 @@
-var liList = document.getElementById("myul").getElementsByTagName("li");
+var itemCount = 0;
 
-var largo = liList.length
+$('.add').click(function (){
+  itemCount ++;
+  $('#itemCount').html(itemCount).css('display', 'block');
+  $(this).siblings('.itemDetails').clone().appendTo( "#cartItems" ).append('<button class="removeItem">Remove Item</button>');
+}); 
 
-alert("there are " +largo+ " items in cart.");
+$('.clear').click(function() {
+  itemCount = 0;
+  $('#itemCount').html('').css('display', 'none');
+  $('#cartItems').html('');
+}); 
 
-var h2 = document.getElementById("youHave");
-h2.innerHTML = ("There are " +largo+ " items in cart.");
-console.log(largo);
-
-
-$("#btn2").click(function(){
-$( "<li class=\"new\">new list item</li>" );
+$('i').click(function(){
+  $('#shoppingCart').toggle();
 });
+
+$('#shoppingCart').on('click', '.removeItem', function(){
+    $(this).parent().remove();  
+    itemCount --;
+    $('#itemCount').html(itemCount);
+  
+    if (itemCount === 0) {
+      $('#itemCount').html('').css('display', 'none');
+      $('#shoppingCart').css('display', 'none');
+    }
+});
+
+
