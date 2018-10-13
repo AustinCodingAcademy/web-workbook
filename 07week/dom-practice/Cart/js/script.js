@@ -10,5 +10,5 @@ console.log(largo);
 
 
 $("#btn2").click(function(){
-    $("ul").append("<li>Appended item</li>");
+$( "<li class=\"new\">new list item</li>" );
 });
