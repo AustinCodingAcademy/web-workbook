@@ -37,10 +37,10 @@ function report() {
     if (howManyDice === 5) { // we check after the counting is done if it is equal to '5'
       document.querySelector("#report").innerHTML += `There are five ${dieVal}s called YACHT!<br>`;  // if yes, we report a pair
     }
-    if (howManyDice === 3 && howManyDice === 2) { // we check after the counting is done if it is equal to '5'
-      document.querySelector("#report").innerHTML += `This is a fullhouse ${dieVal}s <br>`;  // if yes, we report a pair
+    if (howManyDice === 2 == howManyDice === 2) { // we check after the counting is done if it is equal to '5'
+      document.querySelector("#report").innerHTML += `Full House ${dieVal}s <br>`;  // if yes, we report a pair
     }
-} 
+  } 
   
 // two of dice have the same points, like 3 6 5 6 1 - called pair: example solved for you. Complete the other cases below:
 
