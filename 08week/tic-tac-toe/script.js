@@ -18,33 +18,28 @@ $(document).ready(function() {
       playerTurn = "X";
     }
 
-
-
     //check if someone has won
     checkRowWin();
     checkColWin();
     checkDiagWin();
-
   });
 
   clearBtn.click(function() {
     dataCells.text("");
   });
 
-function checkRowWin () {
-  console.log('checking for row win');
-}
+  function checkRowWin() {
+    if (playerTurn === "X" && playerTurn === "X" && playerTurn === "X")
+      console.log("X Winner");
+  }
 
-function checkColWin () {
-  console.log('checking for col win');
-}
+  function checkColWin() {
+    console.log("checking for col win");
+  }
 
-function checkDiagWin () {
-  console.log('checking for diag win');
-}
-
-
-
+  function checkDiagWin() {
+    console.log("checking for diag win");
+  }
 });
 
 //clear button
