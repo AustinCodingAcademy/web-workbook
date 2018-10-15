@@ -26,19 +26,55 @@ function report() {
       }
     }
     if (howManyDice === 2) { // we check after the counting is done if it is equal to '2'
-      document.querySelector("#report").innerHTML += `There are a pair of ${dieVal}s<br>`;  // if yes, we report a pair
+          if (howManyDice === 2){
+            document.querySelector("#report").innerHTML += `This is a full house ${dieVal}s<br>`;
+          }else {
+            document.querySelector("#report").innerHTML += `The two pairs<br>`;  // if yes, we report a pair
+          }
+      
     }
-} 
-  
+    
+
 // two of dice have the same points, like 3 6 5 6 1 - called pair: example solved for you. Complete the other cases below:
 
 // three of dice have the same points, like 2 4 5 4 4 - called three;
+if (howManyDice === 3) { // three of dice have the same points, like 2 4 5 4 4 - called three;
+  document.querySelector("#report").innerHTML += `There are three ${dieVal}s<br>`;  // if yes, we report three
+}
+
 // four of dice have the same points, like 1 4 1 1 1 - called four;
+if (howManyDice === 4) { // four of dice have the same points, like 1 4 1 1 1 - called four;
+  document.querySelector("#report").innerHTML += `There are four ${dieVal}s<br>`;  // if yes, we report three
+}
+
 // all five dice have the same points, like 2 2 2 2 2 - called yacht;
+if (howManyDice === 5) { // all five dice have the same points, like 2 2 2 2 2 - called yacht;
+  document.querySelector("#report").innerHTML += `This is a Yacht ${dieVal}s<br>`;  // if yes, we report three
+}
+
 // two pairs at once, like 3 6 5 3 5 - called two-pairs;
+
+
 // pair and three at once, like 1 6 6 1 6 - called full-house;
+/* if (howManyDice === 2) { // we check after the counting is done if it is equal to '2'
+          if (howManyDice === 3){
+            document.querySelector("#report").innerHTML += `This is a full house ${dieVal}s<br>`;
+          }else {
+            document.querySelector("#report").innerHTML += `There are a pair of ${dieVal}s<br>`;  // if yes, we report a pair
+          }
+      
+    } */
+    
 // sequence from 1 to 5, like 2 4 3 5 1 - called small-straight;
+if (howManyDice === 1 && dieVal ==! 1) { // we check after the counting is done if it is equal to '3'
+      document.querySelector("#report").innerHTML += `We have a small straight ${dieVal}s<br>`;  // if yes, we report three
+    }
+
 // sequence from 2 to 6, like 6 3 4 2 5 - called big-straight.
+if (howManyDice === 1 && dieVal ==! 6) { // we check after the counting is done if it is equal to '3'
+      document.querySelector("#report").innerHTML += `We have a large straight ${dieVal}s<br>`;  // if yes, we report three
+    }
+}
 }
 
 //
