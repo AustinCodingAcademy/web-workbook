@@ -1,9 +1,10 @@
 'use strict';
-
+// call jquery
 $(document).ready(function() {
   // Put app logic in here - Tic Tac Toe
   // alternate between players
-  // Write function: put X's and O's in the boxes when you click (only allow one selection)let currentPlayer = 'Player One';
+  // Write function: put X's and O's in the boxes when you click (!!!only allow one selection!!!)let currentPlayer = 'Player One';
+  let currentPlayer = 'Player One';
 
   $('.box').click (function () {
     console.clear();
