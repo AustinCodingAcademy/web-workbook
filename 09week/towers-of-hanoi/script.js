@@ -98,7 +98,7 @@ $(function() {
       if (!gameover) {
         if (goodToDrop($(this), ui.draggable)) {
           ui.draggable.draggable('option', 'revert', false);
-          $(this).append(ui.draggable.detach());
+          $(this).prepend(ui.draggable.detach());
           $stacks.css('background-color', 'aliceblue');
           console.log('dropped in column ' + $(this).attr('data-stack'));
           ui.draggable.css({
