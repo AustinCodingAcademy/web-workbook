@@ -1,0 +1,67 @@
+<!-- new bffs Sam and Jonny -->
+<!DOCTYPE HTML>
+<html>
+<header>
+        <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+</header>
+
+
+<body>
+        <nav> 
+            <div class="logo"><input type="image" src="img/logo.png" alt=""> </div>
+            <ul class="navlinks">
+                <li><a class="home" href="#">Home</a></li>
+                <li><a class="traveldeals" href="#">Travel Deals</a></li>
+                <li><a class="flightschedule" href="#">Flight Schedule</a></li>
+                <li><a class="register" href="#">Register/Login</a></li>
+            </ul>
+
+          </nav>
+<!--Jonny's section-->
+<section class="options">
+    <!-- Tab Links -->
+    <div class="tab">
+        <button class="tabLinkActive" onclick=""><img src="img/plane-icon.png" height="70%"></button>     
+        <button class="tabLink" onclick=""><img src="img/hotel-icon.png" height="70%"></button>    
+        <button class="tabLink" onclick=""><img src="img/car-icon.png" height="70%"></button>
+    </div>
+    
+    <!-- Tab Content -->
+    <div class="travelOptionsContainer">
+        <!-- Depart & Arrive Inputs -->
+        <input type="text" class="emptyField" placeholder="Depart">
+        <input type="text" class="emptyField" placeholder="Arrive">
+        <!-- Date Inputs -->
+        <button class="date">mm/dd/yyyy</button>
+        <button class="date">mm/dd/yyyy</button>
+        <!-- Number Of Passengers Dropdown -->
+        <div class="passengerNumber">
+            <label for="passengerSelect">Passengers</label>
+            <select class="passengerSelect">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="I lost count">I lost count</option>
+            </select>
+        </div>
+        <!-- Travel Type Radio Btns -->
+        <fieldset class="travelType">
+            <input type="radio" class="radio" name="travelType"
+                value="return" checked>
+            <label for="return">Return</label>
+            <input type="radio" class="radio"  name="travelType" value="oneWay">
+            <label for="oneWay">One Way</label>
+        </fieldset>
+        <!-- Search Flights Btn -->
+        <button class="searchFlights" onclick="">Search Flights</button>
+        </div>
+</section>
+</body>
+
+
+
+</html>
+
+

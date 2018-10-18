@@ -1,33 +1,201 @@
-body {
-    background-color: powderblue;
+html, body {
+    font-family: 'Lato', sans-serif;
+    background-image: url(../img/airline.jpg);
+    background-size: cover;
+    background-size: 1950px;
+    background-repeat: no-repeat;
+    margin: 0px;
 }
 
-h1 {
-    color: #4682B4;
-    font-family: verdana;
+nav {
+    background-color: #193A55;
+    height: 100px;
+    border-bottom: 1px solid white;
+    
 }
 
- 
-p {
-    font-size: 30px;
-    border: 2px solid orange;
-    padding: 30px;
-    margin: 10px;
-    color: red;
+.logo {
+    float: left;
+    padding-left: 90px;
+    padding-top: 8px;
+}
+.navlinks {
+    float: right;
 }
 
-#p01 {
-    color:green;
+li {
+    float: left;
+    margin-left: 10px;
+    list-style: none;
 }
 
-.button {
-    background-color: #555555;
-    border: none;
-    color:white;
-    padding: 10px 15px;
-    font-size: 12px;
-}
-
-#second {
+a {
+    color: white;
     text-decoration: none;
+    margin-right: 30px;
+    line-height: 80px; 
+    position: relative;
+    left: -90px;
+    top: 15px;
+}
+
+
+/* Icons */
+.home {
+    background-image: url(../img/home-icon.png);
+    background-repeat: no-repeat;
+    padding: 20px;
+    padding-top: 0px;
+    
+}
+
+.traveldeals {
+    background-image: url(../img/deal-icon.png);
+    background-repeat: no-repeat;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.flightschedule {
+    background-image: url(../img/schedule-icon.png);
+    background-repeat: no-repeat;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.register {
+    background-image: url(../img/login-icon.png);
+    background-repeat: no-repeat;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+/* Jonny's section*/
+/* Master Container - Change width and the rest of the elements should auto adjust */
+.options {
+    font-family: 'Lato', sans-serif;
+    width: 350px;
+    margin: 100px 50px;
+    color: white;
+}
+
+/* Better Browser Focus Styling */
+button:focus {outline: thin dotted;}
+input:focus {outline: thin dotted;}
+select:focus {outline: thin dotted;}
+
+/* Tabs Links */
+.tab {
+    display: flex;
+    height: 50px;
+}
+.tabLinkActive {
+    background-color: #0063b7;
+    margin: none;
+    border: none;
+    float: left;
+    color: white;
+    border-radius: 6px 6px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    margin: none;
+    padding: 10px 0px;
+    flex-grow: 1;
+}
+.tabLink {
+    background-color: #018d80;
+    margin: none;
+    border: none;
+    float: left;
+    color: white;
+    border-radius: 6px 6px 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    margin: none;
+    padding: 10px 0px;
+    flex-grow: 1;
+}
+
+/* Tab Content */
+.travelOptionsContainer {
+    background-color: #193A55;
+    padding: 30px 0px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 0px 0px 6px 6px;
+}
+.emptyField {
+    font-family: 'Lato', sans-serif;
+    background-color: transparent;
+    margin: 0px 0px 15px 0px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    font-size: 12px;
+    width: 42%;
+    padding: 10px;
+}
+.date {
+    font-family: 'Lato', sans-serif;
+    background-color: transparent;
+    margin: 0px 0px 15px 0px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    font-size: 12px;
+    width: 42%;
+    padding: 10px;
+    text-align: left;
+}
+.passengerNumber {
+    font-size: 12px;
+    width: 42%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 0px 15px 0px;
+
+}
+.passengerSelect {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    font-size: 12px;
+    width: 42%;
+    padding: 10px;
+    text-align: left;
+}
+.travelType {
+    border: none;
+    padding-top: 10;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 12px;
+    width: 42%;
+}
+.radio {
+    border: none;
+}
+label {
+    border: none;
+}
+.searchFlights {
+    background-color: #0063b7;
+    margin: 0px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    font-size: 16px;
+    width: 92%;
+    padding: 15px;
 }
