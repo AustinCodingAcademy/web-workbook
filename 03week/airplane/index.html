@@ -1,6 +1,6 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
-   <!--Sky Mendes,, Laura Lamb & Elvira Joubert -->
+   <!--Sky Mendes, Laura Lamb & Elvira Joubert -->
 <head> 
    
     <meta charset="utf-8" />
@@ -10,21 +10,26 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
    
 </head>
-<body> 
-    <div>
-        <div class="logo" image scr:> </div>
-      
+<header>
+    <section class="top">
+        <div class="logo"><img src= "img/logo.png" alt= "logo">
+        </div> 
     
-    <nav class="navbar">
-        <ul> 
-            <li> <a href="index.html">Home</a></li>
-            <li> <a href="index.html">Travel Deals</a></li>
-            <li> <a href="index.html">Flight Schedule</a></li>
-            <li> <a href="index.html">Register/Login</a></li>
-        </ul>
-    </nav>
+        <div class= "navbar">
+            <nav>
+                <a class="home" href="#"><img src="./img/home-icon.png" alt= "home"> Home</a>
+    
+                <a class="home" href="#"><img src="./img/deal-icon.png" alt="travel deal"> Travel Deals </a>
+    
+                <a class="home" href="#"><img src="./img/schedule-icon.png" alt="flight schedule"> Flight Schedule</a>
+    
+                <a class="home" href="#"><img src="./img/login-icon.png" alt="register login"> Register/Login</a>
+            </nav>
+        </div>
+    </section>
+</header>
             
-   <p> <div> <!-- This is the box content-->
+ <section> <!-- This is the box content-->
         <div class="divbox">
             <div class="iconbar"> <!-- img icon bar-->
                 <button class="button" id="flight"></button>
@@ -32,11 +37,36 @@
                 <button class="button" id="rentalcar"></button>
             </div>
         </div>
-        <div class="textbox"> <!-- this is the area with all the text input boxes-->
-            
-        </div>
-    </div>
-</p>
+        <body>
+        <div class="box">
+            <div class="text-box">
+                <input type="text" class="depart-field" placeholder="Depart" required /> 
+                <input type="text" class="arrive-field" placeholder="Arrive" requires /> 
+                <div class="clearfix"></div>
+                <input type="date" class="date" placeholder="mm/dd/yyyy" required />
+                <input type="date" class="date" placeholder="mm/dd/yyyy" requires />
+            </div>
+                <div class="clearfix"></div>
+                <p class="passengers">Passengers</p>    
+                    <select>
+                        <optgroup label="numbers"class="numbers">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </optgroup>
+                    </select>
+                
+                    <div class="radio">
+                        <input type="radio" name="flight" value="return" checked /><label for "return">Return</label>
+                        <input type="radio" name="flight" value="oneway" /><label for "oneway">One Way</label>
+                    </div>
+                    <div class="clearfix"></div>
+                    <input type="submit" value="Search Flights">
+        </div> <!---end of box class-->
+    </section>
+
 
 </body>
 </html>

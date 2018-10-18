@@ -1,56 +1,86 @@
 /* You can style your links page here */
+*{
+    padding:0;
+    margin:0;
+}
 body {
     background-image:url("../img/airline.jpg");
-    background-color:gray;
-    background-size: cover;
+    background-size: cover;}
+
+    .top {
+    width: 100%;
+    height: 12%;
+    margin: 0px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    z-index: -1;
+    border-bottom: 1px solid white;
+    background-color: #1b3b53;
+}
+
+.logo{
+    width:50%;
+    height: auto;
+    margin: 0px;
+    padding-left: 5%;
+    position: relative;
+    left: 0%;
 }
 
 
-.navbar{ float: right;
-    position: relative;   
+
+.navbar { 
+    float: right;
+    position: relative;
+    left: 100px;
 }
-.navbar li {
+
+.navbar a {
+    text-decoration: none;
+    color:white;
+    position: relative;
     list-style-type: none;
     display: inline-block;
+    margin-top: 10%;
+    padding-right: 15px;
+
 }
-.divbox{
-    box-sizing: border-box;
-    position:relative;
-    /*padding:10px;
-    border: 3px solid black;*/
+.home:hover{
+    color: #33997f;
 }
+
 .iconbar {
     margin: 250px;
     padding:20px;
     position: absolute;
     float: left;
+    left: -105px;
+    top:-15px;
 }
 
 .button{
-    display: ;
+    display: inline-block;
     border: none;
-    background-color:#33997f;
-    width: 90px;
-    height: 40px;
-    margin-right: -4px;
+    background-color: #33997f;
+    width:140px;
+    height:70px;
+    margin-right: -5px;
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 3px;
-
     
 
 }
 .button:hover{
-    background-color: #0066cc;
+    background-color: #0066cc;    
 }
-
 #flight{
-    background-image: url("../img/plane-icon.png");
-    
-    
+    background-image: url("../img/plane-icon.png")
 }
-
 #hotel{
     background-image: url("../img/hotel-icon.png");
     
@@ -59,4 +89,92 @@ body {
 #rentalcar {
     background-image: url("../img/car-icon.png");
     
+}
+
+ /* form */
+.clearfix {
+    overflow: auto;
+}
+section {
+    position: relative;
+    display: block;
+}
+.box {
+    background-color:rgba(0, 0, 0, 0.699);
+    width: 420px;
+    height: 300px;
+    position: absolute;
+    top:325px;
+    left: 165px;
+    
+    
+    /* overflow: hidden; */
+
+}
+.text-box {
+    /* margin: 0 auto; */
+    display:inline-block;
+    width: 90%;
+    padding:20px 20px;
+    margin: 20px 20px;
+    float: left;
+    position: relative;
+    /* box-sizing: border-box; */
+    }
+input[type="text"], input[type="date"] {
+    display:inline-block;
+    /* margin-bottom: 20px; */
+    margin-right:20px;
+    width:150px;
+    height: 35px;
+    padding-left: 10px;
+    border: 2px solid white;
+    background:transparent;
+    color: white;
+    border-radius: 6px;
+}
+input[type="text"] {
+    margin-bottom: 20px;
+}
+.passengers {
+    padding-top:0;
+    color:white;
+    padding-left:40px;
+    display: inline-block;
+    margin-right: 40px;
+}
+select {
+    /* float:left; */
+    background:transparent;
+    color: white;
+    height: 35px;
+    border: 2px solid white;
+    border-radius: 6px;
+    display: inline-block;
+    /* padding-left 30px; */
+}
+.radio {
+    background:transparent;
+    display: inline-block;
+    margin-left: 20px;
+}
+input[type="radio"] {
+    /* margin-left:20px; */
+    margin-right: 0;
+}
+label {
+    color:white;
+}
+input[type="submit"] {
+    width:380px;
+    margin-top:10px;
+    position: absolute;
+    left:25px;
+    right:25px;
+    height: 35px;
+    background-color: dodgerblue;
+    border-radius: 2px;
+    border:none;
+    color:white;
+
 }
