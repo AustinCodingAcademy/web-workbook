@@ -3,39 +3,44 @@
 // to do...
 // ✔ can only move one piece at a time
 // ✔ can only put smaller blocks on larger blocks
-// - check for win
+// ✔ check for win
 
 $(document).ready(function() {
+  
   let currentBlock = null;
+  let playerHasWon = false;
   var stacks = $("[data-stack]");
   const blockTotal = getBlockTotal(stacks.first());
-
+  const winnerText = $("#announce-game-won");
+  
+  
   // click event for each stack
   stacks.click(function() {
     let currentStack = $(this);
     let blockCount = $(this).children().length;
-
-    // check if player has won on each click
-    let playerHasWon = checkForWin(stacks, blockTotal);
-    if (playerHasWon) {
-      console.log("Winner winner, chicken dinner!");
-      return;
-    }
-
+    
+    
     // if we have a block, look to append it
     if (currentBlock) {
+      
       // if row is not empty ensure valid move
       if (blockCount > 0) {
         var prevBlock = getPrevBlock(currentStack);
         var isValidMove = compareBlocks(prevBlock, currentBlock);
-
+        
         // valid move
         if (isValidMove) {
           appendBlock(currentStack, currentBlock);
+          
+          // check if player has won on each click
+          playerHasWon = checkForWin(stacks, blockTotal);
+          if (playerHasWon) {
+            winnerText.text("You win!!");
+            return;
+          }
         }
         // invalid move
         else {
-          console.log("Invalid Move!");
           return;
         }
       }
@@ -48,7 +53,7 @@ $(document).ready(function() {
       // reset currentBlock to null once we have appended it
       currentBlock = null;
     }
-
+    
     // otherwise, we do not have a block so get one
     else {
       currentBlock = removeBlock(currentStack);
