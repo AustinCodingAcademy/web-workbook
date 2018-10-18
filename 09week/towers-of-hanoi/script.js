@@ -63,10 +63,10 @@ $(document).ready(function() {
 
 $(function() {
 //since only first child of every stack is allowed to make the move, give them class movable
-  const gameover = false;
-  const $stacks = $('[data-stack]');
-  const $blocks = $('[data-block]');
-  const $movableBlocks = $('[data-block]:first-child');
+  let gameover = false;
+  let $stacks = $('[data-stack]');
+  let $blocks = $('[data-block]');
+  let $movableBlocks = $('[data-block]:first-child');
   $movableBlocks.addClass("movable");
   $( function() {
     $blocks.draggable();
@@ -122,7 +122,7 @@ $(function() {
   });
 
   function goodToDrop($stack, $block) {
-    const $first_block = $stack.children().first();
+    let $first_block = $stack.children().first();
     if (parseInt($block.attr("data-block")) <= parseInt($first_block.attr("data-block")) || $stack.children().length === 0) {
       return true;
     } else {
@@ -139,7 +139,7 @@ $(function() {
   }
 
   function resetGame() {
-    $('[data-stack="1"]').html('<div data-block="25"></div><div data-block="50"></div><div data-block="75"></div><div data-block="100"></div>');
+    $('[data-stack="1"]').html('<div data-block="100"></div><div data-block="75"></div><div data-block="50"></div><div data-block="25"></div>');
     $('[data-stack="2"]').empty();
     $('[data-stack="3"]').empty();
     $('#announce-game-won').empty();
