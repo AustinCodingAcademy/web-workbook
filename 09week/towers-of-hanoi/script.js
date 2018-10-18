@@ -18,6 +18,9 @@ $(document).ready(function() {
   stacks.click(function() {
     let currentStack = $(this);
     let blockCount = $(this).children().length;
+
+    // dont go any further if player has won
+    if (playerHasWon) return;
     
     
     // if we have a block, look to append it
@@ -36,6 +39,7 @@ $(document).ready(function() {
           playerHasWon = checkForWin(stacks, blockTotal);
           if (playerHasWon) {
             winnerText.text("You win!!");
+            currentBlock = null;
             return;
           }
         }
