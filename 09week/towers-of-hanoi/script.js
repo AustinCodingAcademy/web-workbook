@@ -59,27 +59,37 @@ $(document).ready(function() {
 
 'use strict';
 
+
+
 $(function() {
-
-  var gameover = false;
-  var $stacks = $('[data-stack]');
-  var $blocks = $('[data-block]');
-  //since only last child of every stack is allowed to make the move, give them class movable
-  var $movableBlocks = $('[data-block]:last-child');
+//since only first child of every stack is allowed to make the move, give them class movable
+  const gameover = false;
+  const $stacks = $('[data-stack]');
+  const $blocks = $('[data-block]');
+  const $movableBlocks = $('[data-block]:first-child');
   $movableBlocks.addClass("movable");
-
+  $( function() {
+    $blocks.draggable();
+    $stacks.droppable({
+      over: function() {
+        $(this).css('background-color', 'pink');
+      },
+      out: function() {
+        $(this).css('background-color', 'aliceblue');
+      },
+    });
+  });
   //any block is draggable, but they revert to original position unless condition is met
   $blocks.draggable({
     create: function() {
-      if ($(this).is(':not(:last-child)')) {
+      if ($(this).is(':not(:first-child)')) {
         $(this).draggable('disable') 
       }
     }, 
-    stop: function() { //make only last child draggable
-      $('[data-block]:last-child').draggable('enable')
-      $('[data-block]:not(:last-child)').draggable('disable')
+    stop: function() { //make only first child draggable
+      $('[data-block]:first-child').draggable('enable')
+      $('[data-block]:not(:first-child)').draggable('disable')
     }
-    // revert: true
   });
 
   $stacks.droppable({
@@ -89,13 +99,14 @@ $(function() {
         if (goodToDrop($(this), ui.draggable)) {
           ui.draggable.draggable('option', 'revert', false);
           $(this).append(ui.draggable.detach());
+          $stacks.css('background-color', 'aliceblue');
           console.log('dropped in column ' + $(this).attr('data-stack'));
           ui.draggable.css({
             'top': 0,
             'left': 0
           });
           //reset things
-          $movableBlocks = $('[data-block]:last-child');
+          $movableBlocks = $('[data-block]:first-child');
           $('[data-block]').removeClass("movable");
           $movableBlocks.addClass("movable");
           $blocks.draggable({
@@ -111,8 +122,8 @@ $(function() {
   });
 
   function goodToDrop($stack, $block) {
-    var $last_block = $stack.children().last();
-    if (parseInt($block.attr("data-block")) <= parseInt($last_block.attr("data-block")) || $stack.children().length === 0) {
+    const $first_block = $stack.children().first();
+    if (parseInt($block.attr("data-block")) <= parseInt($first_block.attr("data-block")) || $stack.children().length === 0) {
       return true;
     } else {
       return false;
@@ -121,14 +132,14 @@ $(function() {
 
   function checkForWin() {
     if ($('[data-stack="3"]').children().length === 4) {
-      $('#announce-game-won').html("You Won!");
+      $('#announce-game-won').html("We Got A Winner!!!");
       gameover = true;
 
     }
   }
 
   function resetGame() {
-    $('[data-stack="1"]').html('<div data-block="100"></div><div data-block="75"></div><div data-block="50"></div><div data-block="25"></div>');
+    $('[data-stack="1"]').html('<div data-block="25"></div><div data-block="50"></div><div data-block="75"></div><div data-block="100"></div>');
     $('[data-stack="2"]').empty();
     $('[data-stack="3"]').empty();
     $('#announce-game-won').empty();
