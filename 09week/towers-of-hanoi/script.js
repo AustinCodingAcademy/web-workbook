@@ -6,14 +6,13 @@
 // ✔ check for win
 
 $(document).ready(function() {
-  
   let currentBlock = null;
   let playerHasWon = false;
+  var playerMoves = 0;
   var stacks = $("[data-stack]");
   const blockTotal = getBlockTotal(stacks.first());
   const winnerText = $("#announce-game-won");
-  
-  
+
   // click event for each stack
   stacks.click(function() {
     let currentStack = $(this);
@@ -21,25 +20,26 @@ $(document).ready(function() {
 
     // dont go any further if player has won
     if (playerHasWon) return;
-    
-    
+
     // if we have a block, look to append it
     if (currentBlock) {
-      
       // if row is not empty ensure valid move
       if (blockCount > 0) {
         var prevBlock = getPrevBlock(currentStack);
         var isValidMove = compareBlocks(prevBlock, currentBlock);
-        
+
         // valid move
         if (isValidMove) {
           appendBlock(currentStack, currentBlock);
-          
+          playerMoves++;
+
           // check if player has won on each click
           playerHasWon = checkForWin(stacks, blockTotal);
           if (playerHasWon) {
-            winnerText.text("You win!!");
+            let announcement = "You won in " + playerMoves + " moves!";
+            winnerText.text(announcement);
             currentBlock = null;
+            playerMoves = 0;
             return;
           }
         }
@@ -48,17 +48,18 @@ $(document).ready(function() {
           return;
         }
       }
-      
+
       // otherwise, row is empty so just append cuurentBlock
       else {
         appendBlock(currentStack, currentBlock);
+        playerMoves++;
       }
-      
+
       // reset currentBlock to null once we have appended it
       currentBlock = null;
     }
-    
-    // otherwise, we do not have a block so get one
+
+    // otherwise, we do not have a current block so get one
     else {
       currentBlock = removeBlock(currentStack);
     }
@@ -67,7 +68,7 @@ $(document).ready(function() {
 
 /**
  * Function: getBlockTotal()
- * Description:  
+ * Description:
  */
 function getBlockTotal(stack) {
   return stack.children().length;
@@ -130,12 +131,11 @@ function compareBlocks(block1, block2) {
  */
 function checkForWin(stacks, blockTotal) {
   let lastStack = stacks.last();
-  let blockCount = lastStack.children().length; 
+  let blockCount = lastStack.children().length;
 
   if (blockCount === blockTotal) {
     return true;
-  }
-  else {
+  } else {
     return false;
   }
 }
