@@ -29,17 +29,58 @@ form {
 }
 
 input {
-  box-shadow: inset 0px 0px 10px -2px rgba(0,0,0,0.25);
-  padding: 1rem 1rem 1rem .5rem;
-  margin: 0 0 1rem 0;
+  box-shadow: inset 0px 0px 10px -2px rgba(0, 0, 0, 0.25);
+  padding: 1rem 1rem 1rem 0.5rem;
+  margin: 0.2rem 0 1rem 0;
 }
 
-button {
+#submit {
   padding: 1rem;
+  background-color: #dcd9d4;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    radial-gradient(
+      at 50% 0%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(0, 0, 0, 0.5) 50%
+    );
+  background-blend-mode: soft-light, screen;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 0px #dcd9d4, 0px 3px 10px rgba(0, 0, 0, 0.2),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.3),
+    inset 0px 0px 3px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  user-select: none;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  transition: 100ms ease-in-out;
+}
+#submit:active {
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    radial-gradient(
+      at 50% 0%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(0, 0, 0, 0.5) 50%
+    );
+  box-shadow: 0px 2px 0px #dcd9d4, 0px 1px 2px rgba(0, 0, 0, 0.2),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.3),
+    inset 0px 0px 3px rgba(255, 255, 255, 0.5);
+  transform: translate(0, 2px);
 }
 
-input,
-button {
+input {
   border-radius: 10px;
   border: none;
+  outline: none;
 }
