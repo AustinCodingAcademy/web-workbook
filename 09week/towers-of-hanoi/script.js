@@ -69,7 +69,6 @@ $(function() {
   let $movableBlocks = $('[data-block]:first-child');
   $movableBlocks.addClass("movable");
   $( function() {
-    $blocks.draggable();
     $stacks.droppable({
       over: function() {
         $(this).css('background-color', 'pink');
