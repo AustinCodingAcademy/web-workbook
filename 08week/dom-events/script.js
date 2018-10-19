@@ -5,7 +5,7 @@
 //When the page loads, a pop up appears saying 'Are you ready to count by ones, tens, and hundred?'
 //Extra Credit: allow the user to drag and drop the shapes.
 $(document).ready(function(){
-    var num = 0;
+  alert("Are you ready to count by ones, tens, and hundreds?!")
   $('#counter-1').click(function() {
     let num = 1
     num ++;
@@ -13,12 +13,12 @@ $(document).ready(function(){
   })
   $('#counter-10').click(function() {
     let num = 10
-    num = num+10;
+    num = num + 10;
     $(this).text(num);
   })
   $('counter-1').click(function() {
     let num = 100
-    num = num+100;
+    num = num + 100;
     $(this).text(num);
   })
 });
