@@ -1,7 +1,6 @@
 "use strict";
 $(document).ready(function() {
   var cntByOnes = 1;
-  var boxes = $(".box");
 
   // Count By One
   $("#counter-1").click(function() {
