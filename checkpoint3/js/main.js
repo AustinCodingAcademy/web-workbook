@@ -1,11 +1,17 @@
 "use strict";
 $(document).ready(function() {
-  var cntByOnes = 1;
+  var cntByOnes = 0;
 
-  // Count By One
-  $("#anvil").click(function() {
+  $("#anvil").mousedown(function() {
+    $("#hammer").toggleClass("down");
+    $("#anvil").toggleClass("shake");
     cntByOnes++;
     $("#counter").text(cntByOnes);
+  });
+
+  $("#anvil").mouseup(function() {
+    $("#hammer").toggleClass("down");
+    $("#anvil").toggleClass("shake");
   });
 
   // Reset
