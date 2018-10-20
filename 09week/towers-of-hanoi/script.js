@@ -59,10 +59,4 @@ function getBlockSize(block1) {
   return blockSize;
 }
 // winning condition function
-function winCond(blockCount) {
-  if (blockCount === 3)
-  console.log(blockCount)
-  return true;
- } else {
-   return false;
-  } 
+
