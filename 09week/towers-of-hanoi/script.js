@@ -60,9 +60,8 @@ function getBlockSize(block1) {
 }
 // winning condition function
 function winCond(blockCount) {
-  if (blockCount === 3);
-  console.log(blockCount);
+  if (blockCount === 3)
+  console.log(blockCount)
   return true;
-} else {
-  return false;
-}
+} els;>?L<0
+e "}:L? BV
