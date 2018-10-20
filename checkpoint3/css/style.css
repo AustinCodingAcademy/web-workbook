@@ -6,9 +6,18 @@ body {
   font-family: "Roboto Mono", sans-serif;
   overflow-x: hidden;
   text-align: center;
-  color: red;
   font-size: 2rem;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background: #485563;
+  background: -webkit-linear-gradient(
+    to right,
+    #29323c,
+    #485563
+  );
+  background: linear-gradient(
+    to right,
+    #29323c,
+    #485563
+  );
 }
 
 main {
@@ -31,7 +40,7 @@ main {
   margin: 0 auto;
 }
 
-.box {
+.button {
   height: 100px;
   width: 100px;
   color: #e7e5df;
@@ -44,12 +53,13 @@ main {
   align-items: center;
   user-select: none;
 }
-.box:hover {
+.button:hover {
   border: 2px solid #e7e5df;
 }
 
-#counter-1 {
-  background-color: #e74c3c;
+#counter {
+  color: #e7e5df;
+  font-size: 3rem;
 }
 #reset {
   background-color: #707070;

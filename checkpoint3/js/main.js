@@ -3,14 +3,14 @@ $(document).ready(function() {
   var cntByOnes = 1;
 
   // Count By One
-  $("#counter-1").click(function() {
+  $("#anvil").click(function() {
     cntByOnes++;
-    $(this).text(cntByOnes);
+    $("#counter").text(cntByOnes);
   });
 
   // Reset
   $("#reset").click(function() {
     cntByOnes = 1;
-    $("#counter-1").text(cntByOnes);
+    $("#counter").text(cntByOnes);
   });
 });
