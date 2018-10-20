@@ -63,5 +63,6 @@ function winCond(blockCount) {
   if (blockCount === 3)
   console.log(blockCount)
   return true;
-} els;>?L<0
-e "}:L? BV
+ } else {
+   return false;
+  } 
