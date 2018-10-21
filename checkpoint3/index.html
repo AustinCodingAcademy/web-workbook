@@ -41,10 +41,14 @@
   <main>
     <div class="container-main">
       <div class="container-inner">
-        <div id="hammer" class="swing"><img src="img/hammer.png" alt="a hammer"></div>
-        <div id="anvil"><img src="img/anvil.png" alt="an anvil"></div>
-        <div id="counter">1</div>
-        <!-- <div class="button" id="reset">Clr</div> -->
+        <div id="hammer" class="unselectable swing"><img draggable="false" src="img/hammer.png" alt="a hammer"></div>
+        <div id="anvil" class="unselectable">
+          <img draggable="false" src="img/anvil.png" alt="an anvil">
+          <div class="spark one"></div>
+          <div class="spark two"></div>
+          <div class="spark three"></div>
+        </div>
+        <div id="counter" class="unselectable">0</div>
       </div>
     </div>
   </main>

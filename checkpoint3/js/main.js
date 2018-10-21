@@ -1,22 +1,30 @@
 "use strict";
 $(document).ready(function() {
-  var cntByOnes = 0;
+  const main = $("main");
+  const hammer = $("#hammer");
+  const anvil = $("#anvil");
+  const sparks = $(".spark");
+  const counter= $("#counter");
+  var count = 0;
 
-  $("#anvil").mousedown(function() {
-    $("#hammer").toggleClass("down");
-    $("#anvil").toggleClass("shake");
-    cntByOnes++;
-    $("#counter").text(cntByOnes);
+  anvil.mousedown(function() {
+    sparks.toggleClass("animate");
+    hammer.toggleClass("down");
+    anvil.toggleClass("shake");
+    
+    count++;
+    counter.text(count);
   });
+  
 
-  $("#anvil").mouseup(function() {
-    $("#hammer").toggleClass("down");
-    $("#anvil").toggleClass("shake");
-  });
+  anvil.mouseup(function() {
+    sparks.removeClass("animate");
+    hammer.toggleClass("down");
+    anvil.toggleClass("shake");
+  })
 
-  // Reset
-  $("#reset").click(function() {
-    cntByOnes = 1;
-    $("#counter").text(cntByOnes);
+
+  main.mouseup(function() {
+    hammer.removeClass("down");
   });
 });

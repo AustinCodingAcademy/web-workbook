@@ -26,25 +26,42 @@ main {
   align-items: center;
   width: 25%;
   height: 100%;
+  min-width: 480px;
   margin: 0 auto;
 }
-.button {
-  height: 100px;
-  width: 100px;
-  color: #e7e5df;
-  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
-    0px 18px 23px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.unselectable {
   user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
-.button:hover {
-  border: 2px solid #e7e5df;
+.spark {
+  border-radius: 50%;
+  position: absolute;
+  width: 3px;
+  height: 40px;
+  background: #e67e22;
+  transition: 100ms ease-in-out;
+  opacity: 0;
+  top: 20px;
+}
+.spark.animate {
+  animation: spark .1s;
+}
+.spark.one {
+  left: 170px;
+}
+.spark.two {
+  left: 150px;
+  
+}
+.spark.three {
+  left: 130px;
 }
 #anvil {
+  position: relative;
+  display: flex;
   transition: 100ms ease-in-out;
 }
 #anvil.shake {
@@ -62,6 +79,10 @@ main {
   animation: swingDown forwards 100ms;
 }
 #counter {
+  position: absolute;
+  padding: 1rem 0 0 2rem;
+  top: 0;
+  left: 0;
   color: #e7e5df;
   font-size: 3rem;
 }
@@ -106,4 +127,19 @@ main {
   100% {
     transform: rotate(0deg);
   }
+}
+/* SPARK ANIMATION */
+@keyframes spark {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .25;
+    transform: translate(-40px, -20px) rotate(-65deg);
+    filter: blur(1px);
+  }
+  
 }
