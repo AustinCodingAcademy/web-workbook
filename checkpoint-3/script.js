@@ -9,6 +9,12 @@ $(document).ready(function(){
     $('#points').text(num1);
   });
 
+  var x = document.getElementById("myAudio"); 
+
+  function playAudio() { 
+    x.play(); 
+  } 
+
 //   $('.box').click(function() {
 //       $(this).css('background-color', 'red');
 // });

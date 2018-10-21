@@ -11,13 +11,16 @@ body {
 }
 
 #screen {
-
+  background-image: url(https://orig00.deviantart.net/9fb5/f/2015/289/a/1/space_invader_gif_by_ivanrussiansky-d9dccma.gif);
+  background-size: 125px 125px;
+  background-position: center;
   cursor: crosshair;
-  border: 1px rgba(255, 0, 0, 0.276) solid;
+  border: 3px rgba(86, 222, 41, 0.536) dashed;
   margin-top: 100px;
   width: 125px;
   height: 125px;
   display: grid;
+  transition: all .2s ease-out;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-template-areas: 
@@ -29,40 +32,46 @@ body {
 }
 
 #screen:active {
-  border: 1px red solid;
+  border: 4px rgba(41, 255, 48, 0.694) dashed;
+  background-size: 150px 150px;
+  transform: scale(200, 80);
+  transition: all 2s ease-out;
 }
 
 .box {
   width: 25px;
   height: 25px;
-
-  /* border: rgba(255, 0, 0, 0.317) solid 2px; */
 }
 
 
 .box:active {
-  border: 25px dotted red;
-  border-radius: 500px;
+  border: 100px solid rgba(255, 56, 11, 0.495);
+  border-radius: 100px;
   background-color: rgba(255, 0, 0, 0.728);
-  transform: scale(80, 80) rotate(2160deg);
-  transition: all .2s ease-out;
+  transform: scale(2000, 40);
+  transition: all .4s ease-out;
+
 }
 
 .box:hover {
   background-color: rgba(255, 0, 0, 0);
-  transition: .4s ease-in;
+  transition: .5s ease-in;
 
 }
 
 #points {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 30px;
+  color: rgba(29, 167, 29, 0.619);
   height: 50px;
   width: 200px;
   margin-top: 50px;
-  border: green 5px solid;
+  border: rgba(29, 182, 29, 0.523) 5px dashed;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 
 
