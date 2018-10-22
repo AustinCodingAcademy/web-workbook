@@ -9,10 +9,43 @@ body{
     top: 0;
     left: 0;
     height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 100%;
-    background-color: aqua;
+    background-image: linear-gradient(rgb(63, 13, 13), rgb(248, 108, 108));
+}
+.leftContainer{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo{
+    width: 50%;
+    height:95%;
+    background-image: url("../img/gameBackgrounds/logo.png");
+    background-size: 100% 100%;
 }
 
+.vineStyle{
+    width: 12%;
+    height: 100%;
+    background-image: url("../img/gameBackgrounds/Vines.png");
+    background-size: 100% 100%;
+}
+
+.centerContainer{
+    width: 40%;
+    height: 100%;
+    display: grid;
+}
+.rightContainer{
+    width: 30%;
+    height: 100%;
+    display: flex;
+}
 /* --- Main Container and Children --- */
 .mainGameContainer{
     position: absolute;
@@ -20,6 +53,7 @@ body{
     left: 0;
     height: 85vh;
     width: 100%;
-    background-color: blueviolet;
+    border-top: 1px solid black;
+    background-image: linear-gradient(rgb(248, 108, 108), rgba(0,0,0,0));;
 }
 /**/
