@@ -50,8 +50,120 @@ body{
     height: 90%;
     background-image: url("../img/gameBackgrounds/woodBoard.png");
     background-size: 100% 100%;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+.woodInventoryContainer{
+    width: 50%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.stoneInventoryContainer{
+    width: 50%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ironInventoryContainer{
+    width: 50%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.waterInventoryContainer{
+    width: 50%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.foodInventoryContainer{
+    width: 50%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inventoryOpenContainer{
+    width: 50%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed black;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.inventoryOpenContainer:hover{
+    border: 1px solid red;
+    color: red;
+    cursor: pointer;
+}
+
+.woodIcon{
+    height:32px;
+    width: 32px;
+    background-image: url("../img/materials/iconWood.png");
+    background-size: 100% 100%;
+}
+
+.stoneIcon{
+    height:32px;
+    width: 32px;
+    background-image: url("../img/materials/iconStone.png");
+    background-size: 100% 100%;
+}
+
+.ironIcon{
+    height:32px;
+    width: 32px;
+    background-image: url("../img/materials/iconOreIron.png");
+    background-size: 100% 100%;
+}
+
+.waterIcon{
+    height:32px;
+    width: 32px;
+    background-image: url("../img/materials/iconWater.png");
+    background-size: 100% 100%;
+}
+
+.foodIcon{
+    height:32px;
+    width: 32px;
+    background-image: url("../img/materials/iconFood.png");
+    background-size: 100% 100%;
+}
+
+.currentResorceCount{
+    width: 100px;
+    height: auto;
+    text-align: end;
+}
+
+.inventoryOpenButton{
+    height: auto;
+    width: auto;
+}
+
 .rightContainer{
     width: 30%;
     height: 100%;
@@ -59,21 +171,67 @@ body{
     flex-direction: row;
     justify-content: space-between;
 }
-.alertsContainer{
+.informationContainer{
     width: 50%;
     height: 100%;
     background-image: url("../img/gameBackgrounds/signPost.png");
     background-size: 100% 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
+    font-size: 10px;
+    font-weight: bolder;
 }
 
-.alertsTitle{
-    height: auto;
-    width: auto;
+
+#informationCenter{
+    width: 25%;
+    height: 30%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-image: url("../img/gameBackgrounds/smallWoodBoard.png");
+    background-size: 100% 100%;
+    transform: skewY(-2deg);
+    margin-top: 9%;
+    text-align: center;
 }
+#informationAlerts{
+    width: 25%;
+    height: 30%;
+    background-image: url("../img/gameBackgrounds/smallWoodBoard.png");
+    background-size: 100% 100%;
+    transform: skewY(2deg);
+    margin-top: 11%;
+    text-align: center;
+    text-justify: auto;
+}
+
+#informationQuests{
+    width: 25%;
+    height: 30%;
+    background-image: url("../img/gameBackgrounds/smallWoodBoard.png");
+    background-size: 100% 100%;
+    transform: skewY(-4deg);
+    margin-top: 13%;
+    text-align: center;
+}
+
+#informationAlerts:hover{
+    border: 1px solid red;
+    color: red;
+    cursor: pointer;
+}
+#informationCenter:hover{
+    border: 1px solid red;
+    color: red;
+    cursor: pointer;
+}
+#informationQuests:hover{
+    border: 1px solid red;
+    color: red;
+    cursor: pointer;
+}
+
 
 /* --- Main Container and Children --- */
 .mainGameContainer{
