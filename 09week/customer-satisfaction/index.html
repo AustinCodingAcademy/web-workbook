@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey Form</title>
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Link to Font used on Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <p>Survey Form</p>
+    <nav>
+      <ul>
+        <li><a href="../../portfolio/index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form id="satisfaction">
+      <fieldset class="tab">
+        <legend>Name</legend>
+        <div>
+          <input id="firstname" type="text" placeholder="First Name..." oninput="this.className = ''" spellcheck />
+        </div>
+        <div>
+          <input id="lastname" type="text" placeholder="Last Name..." oninput="this.className = ''" spellcheck />
+        </div>
+      </fieldset>
+      <fieldset class="tab">
+        <legend>Contact Info</legend>
+        <div>
+          <input id="email" type="email" placeholder="Email..." oninput="this.className = ''" />
+        </div>
+        <div>
+          <input id="phone" type="tel" placeholder="(___)___-____" oninput="this.className = ''" />
+        </div>
+      </fieldset>
+      <fieldset class="tab">
+        <legend>Account Creation</legend>
+        <div>
+          <input id="username" placeholder="Username..." type="text" oninput="this.className = ''" />
+        </div>
+        <div>
+          <input id="password" placeholder="Password..." type="password" oninput="this.className = ''" />
+        </div>
+      </fieldset>
+      <fieldset class="tab">
+        <legend>What do you feel could be improved?</legend>
+        <div>
+          <p style="color: darkblue; font-size: 14px;">Check All That Apply</p>
+        </div>
+        <div>
+          <input type="checkbox" id="htmlcode" name="improve" value="htmlcode" />
+          <label for="htmlcode">HTML Code</label>
+        </div>
+        <div>
+          <input type="checkbox" id="csscode" name="improve" value="csscode" />
+          <label for="csscode">CSS Code</label>
+        </div>
+        <div>
+          <input type="checkbox" id="jscode" name="improve" value="jscode" />
+          <label for="jscode">JS Code</label>
+        </div>
+        <div>
+          <input type="checkbox" id="design" name="improve" value="design" />
+          <label for="design">Design</label>
+        </div>
+        <div>
+          <label id="lbldescribe" for="describe" hidden>Comments</label>
+          <textarea id="describe" rows="4" cols="50" maxlength="400" spellcheck hidden></textarea>
+        </div>
+      </fieldset>
+      <fieldset class="tab">
+        <legend>Favorite Search Engine</legend>
+        <div>
+          <p style="color: darkblue; font-size: 14px;">Type the URL of your favorite search engine(must begin with
+            'http://')</p>
+        </div>
+        <div>
+          <input type="url" id="searchengine" name="searchengine" />
+        </div>
+      </fieldset>
+      <fieldset class="tab">
+        <legend>Select Your Gender</legend>
+        <div>
+          <input type="radio" id="male" name="gender" value="male" checked />
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+        </div>
+      </fieldset>
+      <fieldset class="tab">
+        <legend>Rate This Site</legend>
+        <div>
+          <p style="color: darkblue; font-size: 14px;">Rate your experience with this site on a scale of 1 to 10</p>
+        </div>
+        <div>
+          <input type="range" id="rating" name="rating" min="0" max="10" value="5" step="1" list="tickmarks" />
+          <datalist id="tickmarks">
+            <option value="0" label="0"></option>
+            <option value="1" label="1"></option>
+            <option value="2" label="2"></option>
+            <option value="3" label="3"></option>
+            <option value="4" label="4"></option>
+            <option value="5" label="5"></option>
+            <option value="6" label="6"></option>
+            <option value="7" label="7"></option>
+            <option value="8" label="8"></option>
+            <option value="9" label="9"></option>
+            <option value="10" label="10"></option>
+          </datalist>
+          <p id="ratingnumber">5</p>
+          
+        </div>
+      </fieldset>
+
+      <div style="overflow:auto;">
+        <div>
+          <button type="button" id="prevbtn" onclick="nextPrev(-1)">Previous</button>
+          <button type="button" id="nextbtn" onclick="nextPrev(1)">Next</button>
+          <button type="button" id="clearbtn" onclick="clearPage()">Clear Page</button>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:30px;">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+      </div>
+    </form>
+  </main>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

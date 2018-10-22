@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* styling for a links */
+a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+header {
+  background-color: #0074ea;
+  font-weight: bold;
+  font-size: 32px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  border-bottom: 2px solid gray;
+}
+
+nav {
+  font-size: 18px;
+  width: 50vw;
+  margin: 15px;
+}
+
+nav>ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* remove bullets from list */
+nav>ul>li {
+  list-style-type: none;
+}
+
+/* change link text to black on hover */
+nav a:hover {
+  color: black;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+/* sets main background and styling */
+main {
+  background-image: url("../../../portfolio/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+form {
+  margin: 30px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+form > fieldset > div> label{
+  padding-left: 5px;
+}
+form > fieldset > div> p{
+  padding-left: 5px;
+}
+
+fieldset {
+  background-color: aliceblue;
+  width: 30vw;
+  margin: 10px;
+}
+
+legend {
+  background-color: slategray;
+  color: white;
+  margin-left: 6px;
+  padding: 3px 6px;
+}
+
+input {
+  margin: 15px;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: slategray;
+  border: none; 
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+
+button {
+  height: 35px;
+  width: 100px;
+  font-size: 18px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  border: 2px solid gold;
+  transition: all 0.3s ease-in-out;
+}

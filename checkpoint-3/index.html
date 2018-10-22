@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkpoint 3</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Link to Font used on Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <strong>Cookie Clicker</strong>
+  </header>
+  <main>
+    <div class="grid-container">
+      <div class="box-1">
+        <p>Welcome to Cookie Clicker!</p>
+        <p>The object of this game is to get as high of a score as you can within 1 minute!</p>
+        <p>You gather points by clicking on the cookie, as well as while you play.</p>
+        <p>Points you receive can be spent on Multipliers to increase the amount of points per click.</p>
+        <strong id="timer"></strong>
+      </div>
+      <div class="box-2">
+        <div id="scorecounter">
+          <strong>Score</strong>
+          <div id="clicker-score">0</div>
+          <p>Multiplier</p>
+          <div id="clicker-multiplier">1</div>
+        </div>
+      </div>
+      <div class="box-3">
+        <img src="img/cookie.png" id="cookie" />
+      </div>
+      <div class="box-4">
+        <input type="button" id="btnspend100" value="100 Points: Increase multiplier 1x"></button>
+        <input type="button" id="btnspend500" value="1000 Points: Increase multiplier 2x"></button>
+        <p id="message"></p>
+      </div>
+      <div class="box-5">
+        <div class="minesweeper">
+
+          <div id="minesweepergame">Bonus Game: Mine Sweeper</div>
+          <p>This is a small Minesweeper-esque game I made. The object of this game is to get as high of a score as you
+            can without hitting a bomb.</p>
+          <p>Click the squares to reveal a number between 1 and 3, and add it to your score. </p>
+          <strong>Try to avoid to bombs, if you hit one it's Game Over!</strong>
+          &nbsp;
+          <p id="message2"></p>
+          &nbsp;
+          <strong>Score:</strong>
+          <div id="scorekeeper"></div>
+          <div id="settings">
+            <ul id="difficulty">
+              <li id="easy" class="selected">Easy</li>
+              <li id="normal">Normal</li>
+              <li id="hard">Hard</li>
+            </ul>
+          </div>
+          <div id="board"></div>
+          <div id="newgame">New Game</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

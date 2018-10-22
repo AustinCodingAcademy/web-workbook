@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* styling for a links */
+a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+header {
+  background-color: #f75252;
+  font-weight: bold;
+  font-size: 38px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  border-bottom: 2px solid gray;
+}
+
+nav {
+  font-size: 18px;
+  width: 50vw;
+  margin: 15px;
+}
+
+nav>ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.white32 {
+  color: white;
+  font-size: 28px;
+  text-decoration: underline;
+}
+
+main > nav > ul {
+  display: flex;
+  height: 550px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+main > nav > ul > li > a{
+  font-size: 18px;
+  font-weight: bold;
+}
+main > nav > ul > li > a:hover{
+  color:orange;
+  transition: all 0.5s ease-in-out;
+}
+
+/* remove bullets from list */
+nav>ul>li {
+  list-style-type: none;
+}
+
+/* change link text to white on hover */
+nav a:hover {
+  color: black;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+/* sets main background and styling */
+main {
+  background-image: url("../img/codebg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: flex-start;
+}
+
+/* footer styling */
+footer {
+  border-top: 2px solid gray;
+  position: absolute;
+  background-color: #f75252;
+  height: 10vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+}

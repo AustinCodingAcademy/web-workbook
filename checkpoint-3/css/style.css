@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+/* Styling for header  */
+header {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/Cookies-Header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 52px;
+  color: white;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+}
+
+/* Grid container for all elements in games */
+.grid-container {
+  display: grid;
+  height: 100%;
+  width: 70vw;
+  margin: 50px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 150px 250px 100px 245px;
+  justify-items: center;
+  grid-template-areas:
+    "box-1 box-1"
+    "box-3 box-2"
+    "box-4 box-4"
+    "box-5 box-5"
+}
+
+.box-1 {
+  grid-area: box-1;
+}
+
+.box-2 {
+  grid-area: box-2;
+}
+
+.box-3 {
+  grid-area: box-3;
+}
+
+.box-4 {
+  grid-area: box-4;
+}
+
+.box-5 {
+  grid-area: box-5;
+}
+
+#scorecounter {
+  width: 250px;
+  height: 100%;
+  font-size: 22px;
+  text-align: center;
+}
+
+#scorecounter>strong {
+  font-size: 32px;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  transition: all 1s ease-in-out;
+}
+
+img:hover {
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+/* Class for spinning anim */
+img.on {
+  animation: spincookie 0.2s 0.1s 1 linear alternate;
+}
+
+input {
+  height: 80px;
+  width: 200px;
+  background-color: dodgerblue;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+}
+
+input:hover {
+  border: 2px solid orange;
+}
+
+.box-4>p {
+  text-align: center;
+  color: red;
+}
+
+.box-1>strong {
+  font-size: 40px;
+}
+
+@keyframes spincookie {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+/* div surrounding entire minesweeper game */
+.minesweeper {
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Classes for assigning colors */
+.red {
+  color:red;
+}
+.blue {
+  color:blue;
+}
+.green {
+  color:green;
+}
+.black {
+  color:black;
+  border: 2px solid red;
+}
+
+#scorekeeper {
+  font-size: 24px;
+}
+
+
+
+#minesweepergame {
+  margin-top: 50px;
+  font-size: 32px;
+  text-align: center;
+}
+
+#settings {
+  text-align: center;
+  margin-top: 50px;
+  width: 450px;
+  font-weight: bold;
+  border-radius: 2px;
+  position: relative;
+}
+
+#difficulty {
+  list-style: none;
+  padding: 0;
+  padding-left: 10px;
+  display: inline-block;
+}
+
+#difficulty li {
+  background-color: dodgerblue;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 6px 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+#difficulty li:hover {
+  background-color: limegreen;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+#difficulty li.selected {
+  background-color: black;
+  color: white;
+}
+
+#board {
+  border: 5px solid darkgray;
+  margin: 40px;
+}
+
+.square {
+  background-color: darkgray;
+  display: inline-block;
+  border: 2px solid none;
+  margin: 2px;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.square:hover {
+  background-color: lime;
+  transition: all 0.3s ease-in-out;
+}
+
+#newgame {
+  background-color: dodgerblue;
+  color: white;
+  padding: 6px 8px;
+  width: 40%;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+#newgame:hover {
+  background-color: lime;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
