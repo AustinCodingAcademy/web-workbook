@@ -13,7 +13,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    background-image: linear-gradient(rgb(63, 13, 13), rgb(248, 108, 108));
+    background-image: linear-gradient(rgb(13, 29, 63), rgb(108, 141, 248));
 }
 .leftContainer{
     width: 30%;
@@ -39,13 +39,42 @@ body{
 .centerContainer{
     width: 40%;
     height: 100%;
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats{
+    width: 48%;
+    height: 90%;
+    background-image: url("../img/gameBackgrounds/woodBoard.png");
+    background-size: 100% 100%;
+
 }
 .rightContainer{
     width: 30%;
     height: 100%;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+.alertsContainer{
+    width: 50%;
+    height: 100%;
+    background-image: url("../img/gameBackgrounds/signPost.png");
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.alertsTitle{
+    height: auto;
+    width: auto;
+}
+
 /* --- Main Container and Children --- */
 .mainGameContainer{
     position: absolute;
@@ -53,7 +82,7 @@ body{
     left: 0;
     height: 85vh;
     width: 100%;
-    border-top: 1px solid black;
-    background-image: linear-gradient(rgb(248, 108, 108), rgba(0,0,0,0));;
+    border-top: 2px solid black;
+    background-image: linear-gradient(rgb(108, 141, 248), rgba(0,0,0,0));;
 }
 /**/
