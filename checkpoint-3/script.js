@@ -3,7 +3,7 @@ $(document).ready(function(){
 
   // counter goes up every time you click on the bad guy
   var num1 = 0;  
-  $('#screen').click(function() {
+  $('#screen-1').click(function() {
     num1++;
     $('#points').text(num1);
   });
