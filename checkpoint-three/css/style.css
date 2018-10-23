@@ -239,7 +239,7 @@ body{
     position: absolute;
     top: 0;
     left: 2.5vw;
-    height: 95vh;
+    height: 100vh;
     width:95vw;
     border: 2px solid rgb(255, 0, 0);
      background-image: linear-gradient(rgb(13, 29, 63), rgb(108, 141, 248));
@@ -260,6 +260,8 @@ body{
     border-right: 2px solid black;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .fullInventoryBoat{
@@ -272,6 +274,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: auto;
+    width: auto;
 }
 
 .innerInventoryItem{
@@ -524,7 +528,6 @@ body{
 .fullInventoryTitle{
     width: 100%;
     height: 15vh;
-    border-bottom: 1px solid black;
     display: flex; 
     align-items: center;
     justify-content: center;
@@ -532,6 +535,28 @@ body{
     font-weight: bolder;
     color: white;
 }
+/* --- Special Inventory --- */
+.cutlass{
+    background-image: url("../img/items/smithy/cutlass.png");
+    background-size: 100% 100%;
+}
+.axe{
+    background-image: url("../img/items/smithy/itemSplittingMaul.png");
+    background-size: 100% 100%;
+}
+.pickAxe{
+    background-image: url("../img/items/smithy/Pickaxe_stone.png");
+    background-size: 100% 100%;
+}
+.fishHook{
+    background-image: url("../img/items/special/fishHook.png");
+    background-size: 100% 100%;
+}
+.waterPump{
+    background-image: url("../img/items/special/itemWaterMechanism.png");
+    background-size: 100% 100%;
+}
+
 /* --- Main Container and Children --- */
 .mainGameContainer{
     position: absolute;
