@@ -239,7 +239,7 @@ body{
     position: absolute;
     top: 0;
     left: 2.5vw;
-    height: 100vh;
+    height: auto;
     width:95vw;
     border: 2px solid rgb(255, 0, 0);
      background-image: linear-gradient(rgb(13, 29, 63), rgb(108, 141, 248));
@@ -272,9 +272,27 @@ body{
     justify-content: space-between;
     align-items: center;    
 }
-.storage{
+.boatInvContainer{
+    width: 75%;
+    height: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.fullBoatInv{
+    height: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.storage{
+    height: 75%;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 .inventoryItem{
@@ -520,6 +538,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 15px;
     height: 100%;
     width: 100%;
     grid-template-areas:
@@ -529,7 +548,7 @@ body{
     "item16 item17 item18 item19 item20"
     "item21 item22 item23 item24 item25"
     "item26 item26 item27 item28 item28";
-    overflow: scroll;
+    
 }
 
 .fullInventoryTitle{
@@ -581,6 +600,16 @@ body{
 
 .rudder{
     background-image: url("../img/items/boat/rudder.png");
+    background-size: 100% 100%;
+}
+
+.spyGlass{
+    background-image: url("../img/items/boat/spyGlass.png");
+    background-size: 100% 100%;
+}
+
+.starDisk{
+    background-image: url("../img/items/rainbowRefractor/itemAstroTile.png");
     background-size: 100% 100%;
 }
 
