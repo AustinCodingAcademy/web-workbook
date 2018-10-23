@@ -31,7 +31,7 @@ $(document).ready(function() {
 
   // ui elements
   const counter = $("#counter");
-  const nextWeapon = $("#next-weapon");
+  const nextWeapon = $("#next-weapon-level");
   const announceWin = $("#max-level");
 
   // counter/level variables
