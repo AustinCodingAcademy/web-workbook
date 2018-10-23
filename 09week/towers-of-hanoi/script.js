@@ -14,13 +14,14 @@ $(document).ready(function() {
     let $block = null;
     let $blockSize = null;
 
+    
     $('[data-stack]').click(function(){
       console.log('$block =', $block)
       if ($block){
         var $currentBlockInRow = $(this).children.last
         console.log("currentBlockInRow", $currentBlockInRow)
         if($blockSize > $currentBlockInRow){}
-        // appends blockto row
+        // appends block to row
         $(this).append($block);
         //set $block as null so you can start again
         $block = null;
@@ -33,6 +34,7 @@ $(document).ready(function() {
         var $blockSize = parseInt($block.attr('data-block'))
         console.log('$blockSize: ', $blockSize)
         //convert string to number
+
       }
     })
   
@@ -47,16 +49,9 @@ $(document).ready(function() {
       drop: function (){
         alert( "dropped" );
       }
-      });
+      });*/
 
     
     
-    /*$('[data-row]').click(function() {
-      if ($block) {
-        $(this).append($block);
-        $block = null;
-      } else {
-        $block = $(this).children().last().detach();
-        
-    })*/
+    
   });

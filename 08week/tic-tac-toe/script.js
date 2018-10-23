@@ -8,8 +8,7 @@ $(document).ready(function() {
   $('data-cell').click(function() {
     addString(stringToAdd, $(this));
     didIWin();
-  });
-});
+  
 
 function addString(str,elem) {
   console.log("string in element: ", elem.text());
@@ -28,10 +27,7 @@ function didIWin() {
   let columnWin = checkColumn();
   
 }
-
-
-
-
+});
 
 
 
