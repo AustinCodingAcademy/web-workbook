@@ -7,8 +7,10 @@ function countClicks() {
 };
 //timer variable how long the timer is set
 var count=30;
+
  //1000 will  run it every 1 second
 var counter=setInterval(timer, 1000);
+
 //timer function
 function timer()
 {
