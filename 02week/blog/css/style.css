@@ -5,12 +5,59 @@ body {
     background-size: cover;
 }
 
-main{
+.asidePosition {
+    display: inline;
+    position: relative;
+    float: left;
+    margin: 0px auto;
+}
+
+aside {
+    position: fixed;
+    height: 300px;
+    width: 60px;
+    font-size: 40px;
+}
+
+.fa {
+    padding: 15px 5px;
+    text-align: center;
+    width: 50px;
+    text-decoration: none;
+    margin: 2px 5px;
+    border-radius: 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-envelope {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+main {
     width: 600px;
     margin: 50px auto;
 }
 
-h1{
+h1 {
     margin: 20px;
     padding: 5px;
 
@@ -39,7 +86,7 @@ h2 {
     border-bottom: 2px solid black;
 }
 
-article{
+article {
     width: 500px;
     padding: 5px 10px;
     margin: 10px auto;
@@ -52,7 +99,13 @@ article{
     transition: width 1s;
 }
 
-p{
+article:hover {
+    background-color: lightgrey;
+    box-shadow: 5px 5px 50px gold;
+    width: 550px;
+}
+
+p {
     width:450px;
     margin: 5px auto;
     padding: 5px;
@@ -70,10 +123,14 @@ small {
     border-top: 1px dashed;
 }
 
-small:hover {
-    color: rgb(55, 55, 255);
+small a {
+    text-decoration: none;
+    color: #000;
 }
 
+small:hover, small a:hover {
+    color: rgb(55, 55, 255);
+}
 
 article:hover > p {
     background-color: whitesmoke;
@@ -93,10 +150,4 @@ article:nth-child(odd):hover {
 
 article:nth-child(even):hover {
     box-shadow: 5px 5px 50px blue;
-}
-
-article:hover {
-    background-color: lightgrey;
-    box-shadow: 5px 5px 50px gold;
-    width: 550px;
 }
