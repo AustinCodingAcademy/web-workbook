@@ -23,15 +23,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
     let current = document.querySelector("#results").value;
     document.querySelector("#results").value = current.slice(0, -1);
   }
+
   function subtaction(){
     document.querySelector("#results").value = "-";
   }
+
   function subtraction() {
     document.querySelector("#results").value += "-";
   }
+
   function multiple() {
     document.querySelector("#results").value += "*";
   }
+  
   function divide() {
     document.querySelector("#results").value += "/";
   }
