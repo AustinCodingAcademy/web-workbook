@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   overflow-x: hidden;
   text-align: center;
   font-size: 2rem;
@@ -105,7 +105,52 @@ main {
   color: #e7e5df;
   font-size: 1.2rem;
 }
+#upgrades {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  min-height: 200px;
+}
+.upgrade {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #e7e5df;
+  border: solid 2px #e7e5df;
+  opacity: 0.5;
+  background: rgba(50, 50, 50, 0.5);
+}
+.upgrade:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
 
+.upgrade-number {
+  margin: 0;
+  padding: 0.4rem 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.upgrade-name,
+.upgrade-cost {
+  font-size: 0.6rem;
+  align-self: center;
+  justify-self: center;
+}
+
+.upgrade.one.unlocked,
+.upgrade.three.unlocked,
+.upgrade.six.unlocked,
+.upgrade.eight.unlocked {
+  background: rgba(230, 126, 34, 0.35);
+}
+
+.upgrade.two.unlocked,
+.upgrade.four.unlocked,
+.upgrade.five.unlocked,
+.upgrade.seven.unlocked {
+  background: rgba(2, 135, 208, 0.35);
+}
 
 /* ANVIL HIT ANIMATION */
 @keyframes shake {
