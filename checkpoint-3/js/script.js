@@ -188,4 +188,181 @@ $(document).ready(function () {
       }
     }
   }
+
+
+
+
+
+
+
+
+
+  // Matching Pairs code
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  var board2;
+  let i2 = 0;
+  let j2 = 0;
+
+  newGame2(); //Start new game with regular difficulty
+  $('#newgame2').hide(); //Hides New Game button
+  $("#winmessage").hide(); //Hides win message
+
+  $('#newgame2').click(function (eventObject) { //Fires when new game button is clicked
+    newGame2(); //Runs new game function with difficulty as parameter
+    $('#newgame2').hide(); //Hides new game button
+    $("#winmessage").hide(); //Hides win message
+  });
+
+  function newGame2() { //Function for creating a new game(needs difficulty parameter)
+    board2 = new Board2(4, 4);
+    board2.render(); //Renders board object
+    board2.gameOver2 = false; //Sets game over to false
+
+    $('.square2').click(function (eventObject) { //Fires when square is clicked
+      board2.click(eventObject.target);
+    });
+
+    return board2;
+  }
+
+  // Board Object
+  function Board2(row, col) {
+    this.row = row;
+    this.col = col;
+    this.spaces = [];
+    this.gameOver2 = false;
+    let possible = [1, 2, 3, 4, 5, 6, 7, 8]; //List of possible text from which to choose for squares
+    let number1used = false;
+    let number2used = false;
+    let number3used = false;
+    let number4used = false;
+    let number5used = false;
+    let number6used = false;
+    let number7used = false;
+    let number8used = false;
+    let timesflipped = 0;
+    let firstnumber = 0;
+    let secondnumber = 0;
+
+    this.render = function () {
+      var spaces = "";
+      for (i = 1; i <= row; i++) {
+        for (j = 1; j <= col; j++) {
+          spaces = spaces.concat('<div class="square2" data-row="' + i + '" data-col="' + j + '"><span></span>&nbsp</div>');
+        }
+        spaces = spaces.concat('<br />');
+      }
+      $('#board2').empty();
+      $('#board2').append(spaces);
+
+      //Evenly distribute numbers in pairs to squares
+      let squares2 = $(".square2");
+      for (i = 0; i < squares2.length; i++) { //For each square available in grid, assign a random text entries from list of possible texts above
+        let number = 0;
+        number = possible[Math.floor(Math.random() * possible.length)];
+        if (number === 1 && !number1used) {
+          number1used = true;
+        } else if (number === 1 && number1used) {
+          let index = possible.indexOf(number);
+          possible.splice(index, 1);
+        } else if (number === 2 && !number2used) {
+          number2used = true;
+        } else if (number === 2 && number2used) {
+          let index = possible.indexOf(number);
+          possible.splice(index, 1);
+        } else if (number === 3 && !number3used) {
+          number3used = true;
+        } else if (number === 3 && number3used) {
+          let index = possible.indexOf(number);
+          possible.splice(index, 1);
+        } else if (number === 4 && !number4used) {
+          number4used = true;
+        } else if (number === 4 && number4used) {
+          let index = possible.indexOf(number);
+          possible.splice(index, 1);
+        } else if (number === 5 && !number5used) {
+          number5used = true;
+        } else if (number === 5 && number5used) {
+          let index = possible.indexOf(number);
+          possible.splice(index, 1);
+        } else if (number === 6 && !number6used) {
+          number6used = true;
+        } else if (number === 6 && number6used) {
+          let index = possible.indexOf(number);
+          possible.splice(index, 1);
+        } else if (number === 7 && !number7used) {
+          number7used = true;
+        } else if (number === 7 && number7used) {
+          let index = possible.indexOf(number);
+          possible.splice(index, 1);
+        } else if (number === 8 && !number8used) {
+          number8used = true;
+        } else if (number === 8 && number8used) {
+          let index = possible.indexOf(number);
+          possible.splice(index, 1);
+        }
+        $(squares2[i]).children("span").text(number);
+      }
+      $(".square2").addClass("flipped"); //Start with all cards flipped
+
+      setTimeout(function () { //Reveal cars to player. after one second, flip cards back over
+        $(".square2").removeClass("flipped");
+        $(".square2").children("span").hide();
+      }, 1000);
+    }
+
+    this.click = function (target_object) { //Fires when any square is clicked
+      if (!$(target_object).hasClass("flipped")) {
+        $(target_object).children("span").show(); //Show the text inside of square
+        $(target_object).addClass("flipped"); //Color square when flipped
+        if (timesflipped === 0) { //If first square flipped
+          firstnumber = $(target_object).children("span").text(); //Put text from flipped square into firstnumber
+          timesflipped++;
+          return;
+        }
+        if (timesflipped === 1) { //If second square flipped
+          secondnumber = $(target_object).children("span").text(); //Put text from flipped square into secondnumber
+          if (firstnumber === secondnumber) {
+            let matched = $(".flipped"); //Squares that are matching
+            for (i = 0; i < matched.length; i++) {
+              $(matched[i]).addClass("matched");
+              console.log(matched[i]);
+            }
+            console.log("found matching pair");
+            firstnumber = 0;
+            secondnumber = 0;
+            timesflipped = 0;
+            checkWin();
+            return;
+          } else {
+            let squaresNotFlipped = $(".square2").not(".matched");
+            setTimeout(function () {
+              hideSquares(squaresNotFlipped);
+            }, 500);
+            firstnumber = 0;
+            secondnumber = 0;
+            timesflipped = 0;
+            return;
+          }
+        }
+
+        function hideSquares(target) {
+          for (i = 0; i < target.length; i++) {
+            $(target[i]).children("span").hide();
+            $(target[i]).removeClass("flipped");
+          }
+        }
+
+      }
+    }
+
+    function checkWin() {
+      console.log($(".matched").length);
+      console.log($(".square2").length);
+      if ($(".matched").length === $(".square2").length) {
+        $("#newgame2").show();
+        $("#winmessage").show();
+      }
+    }
+  }
 });

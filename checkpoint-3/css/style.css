@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -37,13 +38,14 @@ main {
   width: 70vw;
   margin: 50px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 150px 250px 100px 245px;
+  grid-template-rows: 150px 250px 100px 700px 600px;
   justify-items: center;
   grid-template-areas:
     "box-1 box-1"
     "box-3 box-2"
     "box-4 box-4"
     "box-5 box-5"
+    "box-6 box-6"
 }
 
 .box-1 {
@@ -64,6 +66,10 @@ main {
 
 .box-5 {
   grid-area: box-5;
+}
+
+.box-6 {
+  grid-area: box-6;
 }
 
 #scorecounter {
@@ -138,16 +144,19 @@ input:hover {
 
 /* Classes for assigning colors */
 .red {
-  color:red;
+  color: red;
 }
+
 .blue {
-  color:blue;
+  color: blue;
 }
+
 .green {
-  color:green;
+  color: green;
 }
+
 .black {
-  color:black;
+  color: black;
   border: 2px solid red;
 }
 
@@ -157,7 +166,7 @@ input:hover {
 
 
 
-#minesweepergame {
+.title {
   margin-top: 50px;
   font-size: 32px;
   text-align: center;
@@ -242,4 +251,68 @@ input:hover {
   background-color: lime;
   color: black;
   transition: all 0.3s ease-in-out;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+/* Matching Game */
+.matchinggame {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#board2 {
+  margin: 40px;
+}
+
+.square2 {
+  background-color: rgb(46, 61, 73);
+  color: white;
+  display: inline-block;
+  border: 2px solid none;
+  margin: 5px;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  line-height: 100px;
+}
+
+.square2:hover {
+  box-shadow: inset 0px 0px 0px 5px orange;
+  transition: all 0.3s ease-in-out;
+}
+
+.flipped {
+  background-color: rgb(2, 204, 186);
+  transition: all 0.3s ease-in-out;
+}
+
+#newgame2 {
+  background-color: rgb(46, 61, 73);
+  color: white;
+  padding: 6px 8px;
+  width: 47%;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+#newgame2:hover {
+  background-color: rgb(2, 204, 186);
+  transition: all 0.3s ease-in-out;
+}
+
+#winmessage {
+  font-size: 28px;
+  font-weight: bold;
 }
