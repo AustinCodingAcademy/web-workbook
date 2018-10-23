@@ -38,10 +38,10 @@ $(document).ready(function() {
   var maxLevel = 15;
   var count = 0;
   var currentLevel = 1;
-  var nextLevel = 2;
-  var levelIncrement = nextLevel;
+  var numberOfClicksToNextLevel = 10;
+  var levelIncrement = numberOfClicksToNextLevel;
   var playerHasReachedMaxLevel = false;
-  nextWeapon.text("Next Weapon: " + nextLevel);
+  nextWeapon.text("Next Weapon: " + numberOfClicksToNextLevel);
 
   anvil.mousedown(function() {
     sparks.toggleClass("animate");
@@ -57,7 +57,7 @@ $(document).ready(function() {
     }
 
     // level Up!
-    if (count === nextLevel) {
+    if (count === numberOfClicksToNextLevel) {
       currentLevel++;
 
       // this if/else just handles file names
@@ -78,8 +78,8 @@ $(document).ready(function() {
         return;
       }
 
-      nextLevel += levelIncrement;
-      nextWeapon.text("Next Weapon: " + nextLevel);
+      numberOfClicksToNextLevel += levelIncrement;
+      nextWeapon.text("Next Weapon: " + numberOfClicksToNextLevel);
     }
   });
 
