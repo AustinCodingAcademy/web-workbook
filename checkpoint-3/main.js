@@ -15,7 +15,7 @@ var counter=setInterval(timer, 1000);
 function timer()
 {
   count=count-1;
-  if (count <= 0)
+  if (count <= -1)
   {
      clearInterval(counter);
      return;
