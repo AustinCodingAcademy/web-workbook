@@ -36,6 +36,12 @@ main {
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+.announce {
+  display: none;
+}
+.announce.show {
+  display: block;
+}
 .spark {
   border-radius: 50%;
   position: absolute;
@@ -85,6 +91,14 @@ main {
   color: #e7e5df;
   font-size: 3rem;
 }
+#next-weapon {
+  position: absolute;
+  padding: 1rem 0 0 2rem;
+  top: 60px;
+  left: 0;
+  color: #e7e5df;
+  font-size: 1rem;
+}
 #weapon {
   padding: 1rem 0 0 2rem;
   top: 50%;
@@ -92,9 +106,7 @@ main {
   color: #e7e5df;
   font-size: 1.2rem;
 }
-#reset {
-  background-color: #707070;
-}
+
 
 /* ANVIL HIT ANIMATION */
 @keyframes shake {
