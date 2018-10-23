@@ -29,7 +29,7 @@ if (counter === 100){
     alert("10 LIVES PER CLICK")
 }
 if (counter>=100){
-    increment = 100;
+    increment = 10;
     $("body").css("background-color","yellow");
     $("#warnings").text(' ');
 }
@@ -39,7 +39,7 @@ if (counter === 500){
     $("#warnings").text(' ');
 }
 if (counter>=500){
-    increment = 100;
+    increment = 25;
     $("body").css("background-color","goldenrod");
     $("#warnings").text(' ');
 }
@@ -49,7 +49,7 @@ if (counter === 1000){
     $("#warnings").text(' ');
 }
 if (counter>=1000){
-    increment = 1000;
+    increment = 100;
     $("body").css("background-color","purple");
     $("#warnings").text(' ');
 }
@@ -60,7 +60,7 @@ if (counter === 5000){
     $("#warnings").text(' ');
 }
 if (counter>=5000){
-    increment = 140;
+    increment = 100;
     $("body").css("background-color","black");
     $("body").css("color","white");
     $("h1").css("color","black");
