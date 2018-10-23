@@ -554,12 +554,28 @@ body{
 .fullInventoryTitle{
     width: 100%;
     height: 15vh;
-    display: flex; 
+    display: flex;
+    flex-direction: column; 
     align-items: center;
     justify-content: center;
     font-size: 40px;
     font-weight: bolder;
     color: white;
+}
+
+.exitInventoryContainer{
+    height: 15px;
+    width: 100%;
+    display: flex;
+    /* align-items: flex-start;
+    justify-content: flex-start; */
+}
+.exitInventoryContainer >div{
+    margin-left: 10px;
+}
+.exitInventoryContainer >div:hover{
+    color: red;
+    cursor: pointer;
 }
 /* --- Special Inventory --- */
 .cutlass{
