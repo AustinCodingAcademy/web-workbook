@@ -1,0 +1,71 @@
+body {
+  background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+  background-size: 50px 1000px;
+  font-family: 'Acme', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 100px;
+  color: gray;
+}
+
+nav a {
+  font-size: 40px;
+  color: gray;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+article {
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 400px;
+  background-position: center;
+}
+
+article a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+article:nth-child(1) {
+  background-image: url(../img/SphinxCat.jpeg);
+}
+
+article:nth-child(2) {
+  background-image: url(../img/SphinxCat2.jpeg);
+}
+
+article:nth-child(3) {
+  background-image: url(../img/SphinxCat3.jpg);
+}
+
+article a:hover {
+  color: purple;
+  text-shadow: 1px 1px 1px gray;
+}
+
+@media (min-width: 576px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
