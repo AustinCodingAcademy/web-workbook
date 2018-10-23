@@ -10,7 +10,7 @@ $(document).ready(function(){
   });
 
   var obj = document.createElement("audio");
-  obj.src="./bleep3.mp3";
+  obj.src="https://github.com/konarie1990/web-workbook/blob/gh-pages/checkpoint-3/bleep3.mp3";
   obj.volume=0.70;
   obj.autoPlay=false;
   obj.preLoad=true;       
