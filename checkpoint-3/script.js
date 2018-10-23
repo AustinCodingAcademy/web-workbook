@@ -9,39 +9,15 @@ $(document).ready(function(){
     $('#points').text(num1);
   });
 
-  var x = document.getElementById("myAudio"); 
+  var obj = document.createElement("audio");
+  obj.src="./bleep3.mp3";
+  obj.volume=0.70;
+  obj.autoPlay=false;
+  obj.preLoad=true;       
 
-  function playAudio() { 
-    x.play(); 
-  } 
+  $(".playSound").click(function() {
+    obj.play();
+  });
 
-//   $('.box').click(function() {
-//       $(this).css('background-color', 'red');
-// });
-  
-  // $(function() {
-  //   for(i=0; i<3; i++) {
-  //        $('<div>').css({marginLeft: 20}).appendTo('body');
-  //   }
-  // });
 
-  // $('#counter-10').click(function(){
-  //   num2 += 10;
-  //   $(this).text(num2);
-  // })
-  
-  // $('#counter-100').click(function(){
-  //   num3 += 100;
-  //   $(this).text(num3);
-  // })
-
-  // $('#clickall').click(function(){
-  //   num1++;
-  //   $('#counter-1').text(num1);
-
-  // num2 += 10;
-  // $('#counter-10').text(num2);
-
-  // num3 += 100;
-  // $('#counter-100').text(num3);
 });
