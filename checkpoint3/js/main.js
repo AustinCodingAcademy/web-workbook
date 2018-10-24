@@ -34,16 +34,17 @@ $(document).ready(function() {
   const apprenticeStats = $("#apprentice-stats");
   const nextWeapon = $("#next-weapon-level");
   const announceWin = $("#max-level");
+  const goldIconHTML = '<img id="currency-img" draggable="false" src="img/gold.png" alt="a pile of gold"> ';
 
   // upgrade costs
-  const cost_HireApprentice = 5;
-  const cost_ApprenUpgrade1 = 10;
-  const cost_ApprenUpgrade2 = 20;
-  const cost_ApprenUpgrade3 = 30;
-  const cost_HammerUpgrade1 = 1;
-  const cost_HammerUpgrade2 = 2;
-  const cost_HammerUpgrade3 = 3;
-  const cost_HammerUpgrade4 = 4;
+  const cost_HireApprentice = 200;
+  const cost_ApprenUpgrade1 = 500;
+  const cost_ApprenUpgrade2 = 2000;
+  const cost_ApprenUpgrade3 = 6000;
+  const cost_HammerUpgrade1 = 25;
+  const cost_HammerUpgrade2 = 100;
+  const cost_HammerUpgrade3 = 500;
+  const cost_HammerUpgrade4 = 10000;
 
   // shop elements
   const hireApprentice = $("#hire-apprentice");
@@ -59,7 +60,8 @@ $(document).ready(function() {
 
   // counter/level variables
   var maxLevel = 15;
-  var count = 0;
+  var points = 0;
+  var currency = 0;
   var playerHammerEfficiency = 1;
   var apprenticeHammerEfficiency = 1;
   var apprenticeEfficiency = apprenticeHammerEfficiency / 5;
@@ -68,7 +70,7 @@ $(document).ready(function() {
   var levelIncrement = numberOfClicksToNextLevel;
   var timeout = 1000;
   var currentMultiplier = 1;
-  nextWeapon.text("Next Weapon: " + numberOfClicksToNextLevel + " clicks");
+  nextWeapon.text("Next Weapon: " + numberOfClicksToNextLevel + "xp");
 
   // game state variables
   var playerHasApprentice = false;
@@ -84,6 +86,7 @@ $(document).ready(function() {
   // statistic trackers
   const stats_Player = $("#dynamic-player-stats");
   const stats_Apprentice = $("#dynamic-apprentice-stats");
+  const stats_PlayerGold = $("#currency-text");
   $(stats_Player).append(playerHammerEfficiency);
   $(stats_Apprentice).append(apprenticeEfficiency);
 
@@ -115,7 +118,7 @@ $(document).ready(function() {
       return;
     }
 
-    if (count >= cost_HireApprentice) {
+    if (currency >= cost_HireApprentice) {
       shop_hireApprentice();
     } else return;
   });
@@ -131,7 +134,7 @@ $(document).ready(function() {
       return;
     }
 
-    if (count >= cost_ApprenUpgrade1) {
+    if (currency >= cost_ApprenUpgrade1) {
       shop_buyApprenticeUpgrade1();
     } else return;
   });
@@ -147,7 +150,7 @@ $(document).ready(function() {
       return;
     }
 
-    if (count >= cost_ApprenUpgrade2) {
+    if (currency >= cost_ApprenUpgrade2) {
       shop_buyApprenticeUpgrade2();
     } else return;
   });
@@ -163,7 +166,7 @@ $(document).ready(function() {
       return;
     }
 
-    if (count >= cost_ApprenUpgrade3) {
+    if (currency >= cost_ApprenUpgrade3) {
       shop_buyApprenticeUpgrade3();
     } else return;
   });
@@ -180,7 +183,7 @@ $(document).ready(function() {
       return;
     }
 
-    if (count >= cost_HammerUpgrade1) {
+    if (currency >= cost_HammerUpgrade1) {
       shop_buyHammerUpgrade1();
     } else {
       return;
@@ -198,7 +201,7 @@ $(document).ready(function() {
       return;
     }
 
-    if (count >= cost_HammerUpgrade2) {
+    if (currency >= cost_HammerUpgrade2) {
       shop_buyHammerUpgrade2();
     } else {
       return;
@@ -216,7 +219,7 @@ $(document).ready(function() {
       return;
     }
 
-    if (count >= cost_HammerUpgrade3) {
+    if (currency >= cost_HammerUpgrade3) {
       shop_buyHammerUpgrade3();
     } else {
       return;
@@ -234,7 +237,7 @@ $(document).ready(function() {
       return;
     }
 
-    if (count >= cost_HammerUpgrade4) {
+    if (currency >= cost_HammerUpgrade4) {
       shop_buyHammerUpgrade4();
     } else {
       return;
@@ -242,7 +245,7 @@ $(document).ready(function() {
   });
 
   function shop_hireApprentice() {
-    count -= cost_HireApprentice;
+    currency -= cost_HireApprentice;
     playerHasApprentice = true;
     $(apprenticeUpgrade1).addClass("unlocked");
     currentUpgradeList.append('<li>Hired Apprentice</li>')
@@ -255,7 +258,7 @@ $(document).ready(function() {
     apprenticeHammerEfficiency = 5;
     apprenticeEfficiency = apprenticeHammerEfficiency / 5;
     apprenticeHasUpgrade1 = true;
-    count -= cost_ApprenUpgrade1;
+    currency -= cost_ApprenUpgrade1;
     $(apprenticeUpgrade2).addClass("unlocked");
     currentUpgradeList.append('<li>Apprentice Upgrade 1</li>')
     updateCounter();
@@ -264,7 +267,7 @@ $(document).ready(function() {
     apprenticeHammerEfficiency = 10;
     apprenticeEfficiency = apprenticeHammerEfficiency / 5;
     apprenticeHasUpgrade2 = true;
-    count -= cost_ApprenUpgrade2;
+    currency -= cost_ApprenUpgrade2;
     $(apprenticeUpgrade3).addClass("unlocked");
     currentUpgradeList.append('<li>Apprentice Upgrade 2</li>')
     updateCounter();
@@ -273,14 +276,14 @@ $(document).ready(function() {
     apprenticeHammerEfficiency = 20;
     apprenticeEfficiency = apprenticeHammerEfficiency / 5;
     apprenticeHasUpgrade3 = true;
-    count -= cost_ApprenUpgrade3;
+    currency -= cost_ApprenUpgrade3;
     currentUpgradeList.append('<li>Apprentice Upgrade 3</li>')
     updateCounter();
   }
 
   function shop_buyHammerUpgrade1() {
     playerHammerEfficiency = 2;
-    count -= cost_HammerUpgrade1;
+    currency -= cost_HammerUpgrade1;
     playerHasHammerUpgrade1 = true;
     $(hammerUpgrade2).addClass("unlocked");
     currentUpgradeList.append('<li>Hammer Upgrade 1</li>')
@@ -288,7 +291,7 @@ $(document).ready(function() {
   }
   function shop_buyHammerUpgrade2() {
     playerHammerEfficiency = 4;
-    count -= cost_HammerUpgrade2;
+    currency -= cost_HammerUpgrade2;
     playerHasHammerUpgrade2 = true;
     $(hammerUpgrade3).addClass("unlocked");
     $(hireApprentice).addClass("unlocked");
@@ -297,7 +300,7 @@ $(document).ready(function() {
   }
   function shop_buyHammerUpgrade3() {
     playerHammerEfficiency = 8;
-    count -= cost_HammerUpgrade3;
+    currency -= cost_HammerUpgrade3;
     playerHasHammerUpgrade3 = true;
     $(hammerUpgrade4).addClass("unlocked");
     currentUpgradeList.append('<li>Hammer Upgrade 3</li>')
@@ -305,7 +308,7 @@ $(document).ready(function() {
   }
   function shop_buyHammerUpgrade4() {
     playerHammerEfficiency *= 2;
-    count -= cost_HammerUpgrade4;
+    currency -= cost_HammerUpgrade4;
     playerHasHammerUpgrade4 = true;
     currentUpgradeList.append('<li>Hammer Upgrade 4</li>')
     updateCounter();
@@ -370,7 +373,7 @@ $(document).ready(function() {
 
       let cost = currentItemCost.text();
 
-      if (count >= cost && shop_checkLockStatus(currentItem)) {
+      if (currency >= cost && shop_checkLockStatus(currentItem)) {
         currentItemCost.addClass("green");
       } else if (currentItemCost.text() === "Purchased") {
         currentItemCost.addClass("green");
@@ -405,7 +408,8 @@ $(document).ready(function() {
    * desc: helper function that updates UI when needed
    */
   function updateCounter() {
-    counter.text(Math.floor(count));
+    counter.text(Math.floor(points) + "xp");
+    $(stats_PlayerGold).html(goldIconHTML + Math.floor(currency));
     updatePlayerStats();
     updateApprenticeStats();
     updateShop();
@@ -436,7 +440,8 @@ $(document).ready(function() {
    * desc: function that swings the hammer for the apprentice, this is automated and called in apprenticeStart()
    */
   function apprenticeSwingHammer() {
-    count += apprenticeEfficiency;
+    currency += apprenticeEfficiency;
+    points += apprenticeEfficiency;
     updateCounter();
   }
 
@@ -445,7 +450,8 @@ $(document).ready(function() {
    * desc: master function that handles most of the logic
    */
   function playerSwingHammer() {
-    count += playerHammerEfficiency;
+    currency += playerHammerEfficiency;
+    points += playerHammerEfficiency;
     updateCounter();
 
     // exit if player have reached highest level
@@ -454,7 +460,7 @@ $(document).ready(function() {
     }
 
     // level Up!
-    if (count >= numberOfClicksToNextLevel) {
+    if (points >= numberOfClicksToNextLevel) {
       numberOfClicksToNextLevel = Math.floor(numberOfClicksToNextLevel*1.5);
       currentLevel++;
 
@@ -485,7 +491,7 @@ $(document).ready(function() {
    * desc: helper function that replaces text of player stats when needed
    */
   function updatePlayerStats() {
-    stats_Player.text("Pts/Click: " + playerHammerEfficiency);  
+    stats_Player.text("xp/click: " + playerHammerEfficiency);  
   }
 
   /**
@@ -493,7 +499,7 @@ $(document).ready(function() {
    * desc: helper function that replaces text of player stats when needed
    */
   function updateApprenticeStats() {
-    stats_Apprentice.text("Pts/Sec: " + apprenticeEfficiency);  
+    stats_Apprentice.text("xp/sec: " + apprenticeEfficiency);  
   }
 
 
