@@ -30,6 +30,7 @@ $(document).ready(function() {
 
   // main ui elements
   const counter = $("#counter");
+  const currentUpgradeList = $("#current-upgrades").children();
   const nextWeapon = $("#next-weapon-level");
   const announceWin = $("#max-level");
 
@@ -236,6 +237,7 @@ $(document).ready(function() {
     count -= cost_HireApprentice;
     playerHasApprentice = true;
     $(apprenticeUpgrade1).addClass("unlocked");
+    currentUpgradeList.append('<li>Hired Apprentice</li>')
     updateCounter();
     apprenticeStart();
   }
@@ -245,6 +247,7 @@ $(document).ready(function() {
     apprenticeHasUpgrade1 = true;
     count -= cost_ApprenUpgrade1;
     $(apprenticeUpgrade2).addClass("unlocked");
+    currentUpgradeList.append('<li>Apprentice Upgrade 1</li>')
     updateCounter();
   }
   function shop_buyApprenticeUpgrade2() {
@@ -252,12 +255,14 @@ $(document).ready(function() {
     apprenticeHasUpgrade2 = true;
     count -= cost_ApprenUpgrade2;
     $(apprenticeUpgrade3).addClass("unlocked");
+    currentUpgradeList.append('<li>Apprentice Upgrade 2</li>')
     updateCounter();
   }
   function shop_buyApprenticeUpgrade3() {
     apprenticeHammerEfficiency = 8;
     apprenticeHasUpgrade3 = true;
     count -= cost_ApprenUpgrade3;
+    currentUpgradeList.append('<li>Apprentice Upgrade 3</li>')
     updateCounter();
   }
 
@@ -266,6 +271,7 @@ $(document).ready(function() {
     count -= cost_HammerUpgrade1;
     playerHasHammerUpgrade1 = true;
     $(hammerUpgrade2).addClass("unlocked");
+    currentUpgradeList.append('<li>Hammer Upgrade 1</li>')
     updateCounter();
   }
   function shop_buyHammerUpgrade2() {
@@ -274,6 +280,7 @@ $(document).ready(function() {
     playerHasHammerUpgrade2 = true;
     $(hammerUpgrade3).addClass("unlocked");
     $(hireApprentice).addClass("unlocked");
+    currentUpgradeList.append('<li>Hammer Upgrade 2</li>')
     updateCounter();
   }
   function shop_buyHammerUpgrade3() {
@@ -281,12 +288,14 @@ $(document).ready(function() {
     count -= cost_HammerUpgrade3;
     playerHasHammerUpgrade3 = true;
     $(hammerUpgrade4).addClass("unlocked");
+    currentUpgradeList.append('<li>Hammer Upgrade 3</li>')
     updateCounter();
   }
   function shop_buyHammerUpgrade4() {
     playerHammerEfficiency *= 2;
     count -= cost_HammerUpgrade4;
     playerHasHammerUpgrade4 = true;
+    currentUpgradeList.append('<li>Hammer Upgrade 4</li>')
     updateCounter();
   }
 
