@@ -1,3 +1,5 @@
+
+// -------------Open/Close Inventory------------------------------------------------------
 var openInventoryButton = document.querySelector(".inventoryOpenButton");
 openInventoryButton.addEventListener("click", function(e) {
   openInventory();
@@ -20,3 +22,6 @@ function closeInventory() {
   var invContainer = document.getElementById("fullInventory");
   invContainer.style.display = "none";
 }
+//--------------------------------------------------------------------------------------
+
+
