@@ -32,7 +32,7 @@ $(document).ready(function() {
   const counter = $("#counter");
   const nextWeapon = $("#next-weapon-level");
   const announceWin = $("#max-level");
-  
+
   // upgrade costs
   const cost_HireApprentice = 5;
   const cost_ApprenUpgrade1 = 10;
@@ -96,11 +96,9 @@ $(document).ready(function() {
   // SHOP FUNCTIONS
   // ====================================================================
   hireApprentice.click(function() {
-    
     let unlocked = shop_checkLockStatus($(this));
 
     if (!unlocked) {
-      console.log("you haven't unlocked that item yet");
       return;
     }
 
@@ -113,11 +111,9 @@ $(document).ready(function() {
     } else return;
   });
   apprenticeUpgrade1.click(function() {
-    
     let unlocked = shop_checkLockStatus($(this));
 
     if (!unlocked) {
-      console.log("you haven't unlocked that item yet");
       return;
     }
 
@@ -131,11 +127,9 @@ $(document).ready(function() {
     } else return;
   });
   apprenticeUpgrade2.click(function() {
-    
     let unlocked = shop_checkLockStatus($(this));
 
     if (!unlocked) {
-      console.log("you haven't unlocked that item yet");
       return;
     }
 
@@ -149,14 +143,12 @@ $(document).ready(function() {
     } else return;
   });
   apprenticeUpgrade3.click(function() {
-    
     let unlocked = shop_checkLockStatus($(this));
 
     if (!unlocked) {
-      console.log("you haven't unlocked that item yet");
       return;
     }
-    
+
     shop_checkLockStatus($(this));
     if (apprenticeHasUpgrade3) {
       return;
@@ -168,14 +160,12 @@ $(document).ready(function() {
   });
 
   hammerUpgrade1.click(function() {
-    
     let unlocked = shop_checkLockStatus($(this));
 
     if (!unlocked) {
-      console.log("you haven't unlocked that item yet");
       return;
     }
-    
+
     shop_checkLockStatus($(this));
     if (playerHasHammerUpgrade1) {
       return;
@@ -188,14 +178,12 @@ $(document).ready(function() {
     }
   });
   hammerUpgrade2.click(function() {
-    
     let unlocked = shop_checkLockStatus($(this));
 
     if (!unlocked) {
-      console.log("you haven't unlocked that item yet");
       return;
     }
-    
+
     shop_checkLockStatus($(this));
     if (playerHasHammerUpgrade2) {
       return;
@@ -208,14 +196,12 @@ $(document).ready(function() {
     }
   });
   hammerUpgrade3.click(function() {
-    
     let unlocked = shop_checkLockStatus($(this));
 
     if (!unlocked) {
-      console.log("you haven't unlocked that item yet");
       return;
     }
-    
+
     shop_checkLockStatus($(this));
     if (playerHasHammerUpgrade3) {
       return;
@@ -228,14 +214,12 @@ $(document).ready(function() {
     }
   });
   hammerUpgrade4.click(function() {
-   
     let unlocked = shop_checkLockStatus($(this));
 
     if (!unlocked) {
-      console.log("you haven't unlocked that item yet");
       return;
     }
-    
+
     shop_checkLockStatus($(this));
     if (playerHasHammerUpgrade4) {
       return;
@@ -304,13 +288,10 @@ $(document).ready(function() {
 
   function shop_checkLockStatus(el) {
     if ($(el).hasClass("unlocked")) {
-      console.log("unlocked");
       return true;
-    }
-    else {
-      console.log("locked");
+    } else {
       return false;
-    } 
+    }
   }
 
   /**
@@ -361,16 +342,14 @@ $(document).ready(function() {
     for (var i = 0; i < costs.length; i++) {
       let currentItemCost = $(costs[i]);
       let currentItem = $(currentItemCost).parent();
-      
+
       let cost = currentItemCost.text();
 
       if (count >= cost && shop_checkLockStatus(currentItem)) {
         currentItemCost.addClass("green");
-      } 
-      else if (currentItemCost.text() === "Purchased") {
+      } else if (currentItemCost.text() === "Purchased") {
         currentItemCost.addClass("green");
-      } 
-      else {
+      } else {
         currentItemCost.removeClass("green");
         currentItemCost.addClass("red");
       }
