@@ -35,7 +35,7 @@ $(document).ready(function() {
 
   // upgrade costs
   var costApprentice = 10;
-  const costHammer = 20;
+  const costHammer = 10;
 
   // upgrade elements
   const shop = $("#shop");
@@ -225,11 +225,26 @@ $(document).ready(function() {
   function updateShop() {
     let costs = shop.find(".shop-cost");
 
+    if (playerHasPlayerHammerEfficiency) {
+      let cost = upgradePlayerHammer.find(".shop-cost");
+      cost.text("Purchased");
+      
+      return;
+    }
+    if (apprenticeHasHammerEfficiency) {
+      let cost = upgradeGetApprentice.find(".shop-cost");
+      upgradeGetApprentice.text("Purchased");
+      return;
+    }
+
     for (var i = 0; i < costs.length; i++) {
       let cost = (costs[i].innerHTML);
       
       if (count >= cost) {
-        costs[i].classList.add("purchasable")
+        costs[i].classList.add("purchasable");
+      }
+      else {
+        costs[i].classList.remove("purchasable");
       }
     }
     
