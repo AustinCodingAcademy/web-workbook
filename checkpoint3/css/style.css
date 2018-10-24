@@ -102,11 +102,18 @@ main {
   align-items: flex-start;
   color: #e7e5df;
   border: solid 2px #e7e5df;
-  opacity: 0.5;
   background: rgba(50, 50, 50, 0.5);
 }
 .shop:hover {
   background: rgba(255, 255, 255, 0.5);
+}
+
+.shop p {
+  opacity: .25;
+}
+
+.shop.unlocked p {
+  opacity: 1;
 }
 
 .shop-number {
@@ -123,9 +130,12 @@ main {
 }
 
 .shop-cost {
+  color: #e7e5df;
+}
+.shop-cost.red {
   color: #E74C3C;
 }
-.shop-cost.purchasable {
+.shop-cost.green {
   color: #0EAC51;
   ;
 }
