@@ -8,12 +8,12 @@ $('#Name').spellCheckInDialog()
  * Initialization
  */
 function init() {
-   // Bind "onsubmit" event handler to the "submit" button
-   document.getElementById("formTest").onsubmit = validateForm;
-   // Bind "onclick" event handler to "reset" button
-   document.getElementById("btnReset").onclick = clearForm;
-   // Set initial focus
-   document.getElementById("txtUrl").focus();
+  // Bind "onsubmit" event handler to the "submit" button
+  document.getElementById("formTest").onsubmit = validateForm;
+  // Bind "onclick" event handler to "reset" button
+  document.getElementById("btnReset").onclick = clearForm;
+  // Set initial focus
+  document.getElementById("txtUrl").focus();
 }
  
 /*
@@ -27,18 +27,18 @@ function init() {
  * @param theForm: the form to be validated
  */
 function validateForm(theForm) {
-   with(theForm) {
-      // return false would prevent default submission
-      return (isValidPassword(txtPassword, "Password shall be 6-8 characters!", elmPasswordError)
+  with(theForm) {
+    // return false would prevent default submission
+    return (isValidPassword(txtPassword, "Password shall be 6-8 characters!", elmPasswordError)
            && verifyPassword(txtPassword, txtPWVerified, "Different from new password!",
-                 elmPWVerifiedError)
+             elmPWVerifiedError)
            && isValidEmail(txtEmail, "Enter a valid email!", elmEmailError)
            && isChecked("gender", "Please check a gender!", elmGenderError)
            && isChecked("color", "Please check a color!", elmColorError)
            && isSelected(selCountry, "Please make a selection!", elmCountryError)
            && isValidUrl(txtUrl, "Enter a valid URL!", elmUrlError)      
-      );
-   }
+    );
+  }
 }
  
 /*
@@ -56,56 +56,56 @@ function validateForm(theForm) {
  *        if isValid is false
  */
 function postValidate(isValid, errMsg, errElm, inputElm) {
-   if (!isValid) {
-      // Show errMsg on errElm, if provided.
-      if (errElm !== undefined && errElm !== null
+  if (!isValid) {
+    // Show errMsg on errElm, if provided.
+    if (errElm !== undefined && errElm !== null
             && errMsg !== undefined && errMsg !== null) {
-         errElm.innerHTML = errMsg;
-      }
-      // Set focus on Input Element for correcting error, if provided.
-      if (inputElm !== undefined && inputElm !== null) {
-         inputElm.classList.add("errorBox");  // Add class for styling
-         inputElm.focus();
-      }
-   } else {
-      // Clear previous error message on errElm, if provided.
-      if (errElm !== undefined && errElm !== null) {
-         errElm.innerHTML = "";
-      }
-      if (inputElm !== undefined && inputElm !== null) {
-         inputElm.classList.remove("errorBox");
-      }
-   }
+      errElm.innerHTML = errMsg;
+    }
+    // Set focus on Input Element for correcting error, if provided.
+    if (inputElm !== undefined && inputElm !== null) {
+      inputElm.classList.add("errorBox");  // Add class for styling
+      inputElm.focus();
+    }
+  } else {
+    // Clear previous error message on errElm, if provided.
+    if (errElm !== undefined && errElm !== null) {
+      errElm.innerHTML = "";
+    }
+    if (inputElm !== undefined && inputElm !== null) {
+      inputElm.classList.remove("errorBox");
+    }
+  }
 }
  
 // Validate that input value is a valid URL
 function isValidurl(inputElm, errMsg, errElm) {
-   var isValid = (inputElm.value.trim().match(
-         /((ftp|https?):\/\/)?(www\.)?[a-z0-9\-\.]{3,}\.[a-z]{3}$/) !== null);
-   postValidate(isValid, errMsg, errElm, inputElm);
-   return isValid;
+  var isValid = (inputElm.value.trim().match(
+    /((ftp|https?):\/\/)?(www\.)?[a-z0-9\-\.]{3,}\.[a-z]{3}$/) !== null);
+  postValidate(isValid, errMsg, errElm, inputElm);
+  return isValid;
 }
 
 // Validate password, 6-8 characters of [a-zA-Z0-9_]
 function isValidPassword(inputElm, errMsg, errElm) {
-   var isValid = (inputElm.value.trim().match(/^\w{6,8}$/) !== null);
-   postValidate(isValid, errMsg, errElm, inputElm);
-   return isValid;
-   }
+  var isValid = (inputElm.value.trim().match(/^\w{6,8}$/) !== null);
+  postValidate(isValid, errMsg, errElm, inputElm);
+  return isValid;
+}
     
 // Verify password.
 function verifyPassword(pwElm, pwVerifiedElm, errMsg, errElm) {
-   var isTheSame = (pwElm.value === pwVerifiedElm.value);
-   postValidate(isTheSame, errMsg, errElm, pwVerifiedElm);
-   return isTheSame;
+  var isTheSame = (pwElm.value === pwVerifiedElm.value);
+  postValidate(isTheSame, errMsg, errElm, pwVerifiedElm);
+  return isTheSame;
 }
 
 // Validate that input value is a valid email address
 function isValidEmail(inputElm, errMsg, errElm) {
-   var isValid = (inputElm.value.trim().match(
-         /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/) !== null);
-   postValidate(isValid, errMsg, errElm, inputElm);
-   return isValid;
+  var isValid = (inputElm.value.trim().match(
+    /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/) !== null);
+  postValidate(isValid, errMsg, errElm, inputElm);
+  return isValid;
 }
 
 /*
@@ -114,10 +114,10 @@ function isValidEmail(inputElm, errMsg, errElm) {
  * @param selectElm (object): the <select> element
  */
 function isSelected(selectElm, errMsg, errElm) {
-   // You need to set the default value of <select>'s <option> to "".
-   var isValid = (selectElm.value !== "");   // value in selected <option>
-   postValidate(isValid, errMsg, errElm, selectElm);
-   return isValid;
+  // You need to set the default value of <select>'s <option> to "".
+  var isValid = (selectElm.value !== "");   // value in selected <option>
+  postValidate(isValid, errMsg, errElm, selectElm);
+  return isValid;
 }
  
 /*
@@ -127,16 +127,16 @@ function isSelected(selectElm, errMsg, errElm) {
  * @param inputName (string): name attribute of the checkbox or radio
  */
 function isChecked(inputName, errMsg, errElm) {
-   var elms = document.getElementsByName(inputName);
-   var isChecked = false;
-   for (var i = 0; i < elms.length; ++i) {
-      if (elms[i].checked) {
-         isChecked = true;
-         break;
-      }
-   }
-   postValidate(isChecked, errMsg, errElm, null);  // no focus element
-   return isChecked;
+  var elms = document.getElementsByName(inputName);
+  var isChecked = false;
+  for (var i = 0; i < elms.length; ++i) {
+    if (elms[i].checked) {
+      isChecked = true;
+      break;
+    }
+  }
+  postValidate(isChecked, errMsg, errElm, null);  // no focus element
+  return isChecked;
 }
  
 /*
@@ -144,26 +144,23 @@ function isChecked(inputName, errMsg, errElm) {
  * including the previous error messages and error box.
  */
 function clearForm() {
-   // Remove class "errorBox" from input elements
-   var elms = document.querySelectorAll('.errorBox');  // class
-   for (var i = 0; i < elms.length; i++) {
-      elms[i].classList.remove("errorBox");
-   }
+  // Remove class "errorBox" from input elements
+  var elms = document.querySelectorAll('.errorBox');  // class
+  for (var i = 0; i < elms.length; i++) {
+    elms[i].classList.remove("errorBox");
+  }
  
-   // Remove previous error messages
-   elms = document.querySelectorAll('[id$="Error"]');  // id ends with Error
-   for (var i = 0; i < elms.length; i++) {
-      elms[i].innerHTML = "";
-   }
+  // Remove previous error messages
+  elms = document.querySelectorAll('[id$="Error"]');  // id ends with Error
+  for (var i = 0; i < elms.length; i++) {
+    elms[i].innerHTML = "";
+  }
  
-   // Set initial focus
-   document.getElementById("txtUrl").focus();
+  // Set initial focus
+  document.getElementById("txtUrl").focus();
 }
 
-
-
 /*****************delete Below */
-
 
 /*
  * Validate that input value is not empty.
@@ -173,29 +170,29 @@ function clearForm() {
  * @param errElm (object): element to place error message
  */
 function isNotEmpty(inputElm, errMsg, errElm) {
-      var isValid = (inputElm.value.trim() !== "");
-      postValidate(isValid, errMsg, errElm, inputElm);
-      return isValid;
+  var isValid = (inputElm.value.trim() !== "");
+  postValidate(isValid, errMsg, errElm, inputElm);
+  return isValid;
 } 
- /*Validate that input value contains only one or more letters */
+/*Validate that input value contains only one or more letters */
 function isAlphabetic(inputElm, errMsg, errElm) {
-   var isValid = (inputElm.value.trim().match(/^[a-zA-Z]+$/) !== null) ;
-   postValidate(isValid, errMsg, errElm, inputElm);
-   return isValid;
+  var isValid = (inputElm.value.trim().match(/^[a-zA-Z]+$/) !== null) ;
+  postValidate(isValid, errMsg, errElm, inputElm);
+  return isValid;
 }
  
 /* Validate that input value contains one or more digits or letters */
 function isAlphanumeric(inputElm, errMsg, errElm) {
-   var isValid = (inputElm.value.trim().match(/^[0-9a-zA-Z]+$/) !== null);
-   postValidate(isValid, errMsg, errElm, inputElm);
-   return isValid;
+  var isValid = (inputElm.value.trim().match(/^[0-9a-zA-Z]+$/) !== null);
+  postValidate(isValid, errMsg, errElm, inputElm);
+  return isValid;
 }
  
 /* Validate that input value length is between minLength and maxLength */
 function isLengthMinMax(inputElm, minLength, maxLength, errMsg, errElm) {
-   var inputValue = inputElm.value.trim();
-   var isValid = (inputValue.length >= minLength) && (inputValue.length <= maxLength);
-   postValidate(isValid, errMsg, errElm, inputElm);
-   return isValid;
+  var inputValue = inputElm.value.trim();
+  var isValid = (inputValue.length >= minLength) && (inputValue.length <= maxLength);
+  postValidate(isValid, errMsg, errElm, inputElm);
+  return isValid;
 }
 
