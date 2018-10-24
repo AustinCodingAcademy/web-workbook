@@ -75,6 +75,25 @@ main {
   color: #e7e5df;
   font-size: 3rem;
 }
+#current-upgrades {
+  position: absolute;
+  padding: 1rem 0 0 2rem;
+  top: 80px;
+  left: 0;
+  font-size: .8rem;
+}
+#current-upgrades ul {
+  margin: 0;
+  padding: 0;
+  color: #e7e5df;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#current-upgrades .upgrade {
+  margin-top: .5rem;
+}
 #next-weapon-level {
   position: absolute;
   padding: 1rem 0 0 2rem;
@@ -100,6 +119,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  text-align: left;
   color: #e7e5df;
   border: solid 2px #e7e5df;
   background: rgba(50, 50, 50, 0.5);
@@ -116,17 +136,15 @@ main {
   opacity: 1;
 }
 
-.shop-number {
-  margin: 0;
-  padding: 0.4rem 0 0 0.5rem;
-  font-size: 1rem;
-}
-
 .shop-name,
 .shop-cost {
   font-size: 0.6rem;
   align-self: center;
-  justify-self: center;
+}
+
+.shop-name {
+  padding-left: 10px;
+  line-height: 2;
 }
 
 .shop-cost {
