@@ -34,15 +34,27 @@ $(document).ready(function() {
   const announceWin = $("#max-level");
 
   // upgrade costs
-  var costApprentice = 10;
-  const costHammer = 10;
+  const cost_HireApprentice = 1;
+  const cost_ApprenUpgrade1 = 1;
+  const cost_ApprenUpgrade2 = 1;
+  const cost_ApprenUpgrade3 = 1;
+  const cost_HammerUpgrade1 = 1;
+  const cost_HammerUpgrade2 = 1;
+  const cost_HammerUpgrade3 = 1;
+  const cost_HammerUpgrade4 = 1;
 
   // upgrade elements
   const shop = $("#shop");
-  const upgradeGetApprentice = $("#upgrade-apprentice");
-  const upgradePlayerHammer = $("#upgrade-player-hammer");
-  updateUpgradeCost(upgradeGetApprentice, costApprentice);
-  updateUpgradeCost(upgradePlayerHammer, costHammer);
+  const hireApprentice = $("#hire-apprentice");
+  const apprenticeUpgrade1 = $("#apprentice-upgrade-1");
+  const apprenticeUpgrade2 = $("#apprentice-upgrade-2");
+  const apprenticeUpgrade3 = $("#apprentice-upgrade-3");
+  const hammerUpgrade1 = $("#hammer-upgrade-1");
+  const hammerUpgrade2 = $("#hammer-upgrade-2");
+  const hammerUpgrade3 = $("#hammer-upgrade-3");
+  const hammerUpgrade4 = $("#hammer-upgrade-4");
+  updateUpgradeCost(hireApprentice, cost_HireApprentice);
+  updateUpgradeCost(hammerUpgrade1, cost_HammerUpgrade1);
 
   // counter/level variables
   var maxLevel = 15;
@@ -59,9 +71,12 @@ $(document).ready(function() {
   // game state variables
   var playerHasReachedMaxLevel = false;
   var playerHasApprentice = false;
-  var playerHasPlayerHammerEfficiency = false;
+  var playerHasPlayerHammerUpgrade = false;
   var apprenticeHasHammerEfficiency = false;
 
+
+  // MASTER CLICK FUNCTIONS
+  // ====================================================================
   anvil.mousedown(function() {
     playerSwingHammer();
     hammerAnimateDown();
@@ -75,42 +90,88 @@ $(document).ready(function() {
     hammer.removeClass("down");
   });
 
-  // UPGRADE CLICK FUNCTIONS
+  // SHOP FUNCTIONS
   // ====================================================================
-  upgradeGetApprentice.click(function() {
-    if (count >= costApprentice && !playerHasApprentice) {
-      playerHasApprentice = true;
-      count -= costApprentice;
-      updateCounter();
-      costApprentice *= 6;
-      updateUpgradeCost(upgradeGetApprentice, costApprentice);
-      apprenticeControl();
-      $(this)
-        .find(".shop-name")
-        .text("Apprentice Hammer Efficiency");
-    } else if (count >= costApprentice && !apprenticeHasHammerEfficiency) {
-      console.log("spending ", costApprentice);
-      apprenticeHammerEfficiency = 2;
-      apprenticeHasHammerEfficiency = true;
-      count -= costApprentice;
-      updateCounter();
+  hireApprentice.click(function() {
+
+    if (playerHasApprentice) {
+      return;
+    }
+
+
+    if (count >= cost_HireApprentice && !playerHasApprentice) {
+      shop_hireApprentice();
     } else {
       return;
     }
   });
 
-  upgradePlayerHammer.click(function() {
-    if (count >= costHammer && !playerHasPlayerHammerEfficiency) {
-      playerHammerEfficiency = 2;
-      playerHasPlayerHammerEfficiency = true;
-      count -= costHammer;
-      updateCounter();
+  hammerUpgrade1.click(function() {
+
+    if (playerHasPlayerHammerUpgrade) {
+      return;
+    }
+
+    if (count >= cost_HammerUpgrade1 && !playerHasPlayerHammerUpgrade) {
+      shop_buyHammerUpgrade();
     } else {
       return;
     }
   });
 
-  // OTHER FUNCTIONS
+  function shop_hireApprentice() {
+    playerHasApprentice = true;
+    count -= cost_HireApprentice;
+    updateCounter();
+    apprenticeStart();
+  }
+
+  function shop_buyApprenticeUpgrade() {
+    apprenticeHammerEfficiency = 2;
+    apprenticeHasHammerEfficiency = true;
+    count -= cost_HireApprentice;
+    updateCounter();
+  }
+
+  function shop_buyHammerUpgrade() {
+    playerHammerEfficiency = 2;
+    playerHasPlayerHammerUpgrade = true;
+    count -= cost_HammerUpgrade1;
+    updateCounter();
+  }
+
+  /**
+   * function: updateShop()
+   * desc: checks if player can afford items in the shop (red text if cannot, white if can)
+   */
+  function updateShop() {
+    let costs = shop.find(".shop-cost");
+
+    if (playerHasPlayerHammerUpgrade) {
+      let cost = hammerUpgrade1.find(".shop-cost");
+      cost.text("Purchased");
+
+      return;
+    }
+    if (playerHasApprentice) {
+      let cost = hireApprentice.find(".shop-cost");
+      cost.text("Purchased");
+      
+      return;
+    }
+
+    for (var i = 0; i < costs.length; i++) {
+      let cost = costs[i].innerHTML;
+
+      if (count >= cost) {
+        costs[i].classList.add("purchasable");
+      } else {
+        costs[i].classList.remove("purchasable");
+      }
+    }
+  }
+
+  // HELPER/OTHER FUNCTIONS
   // ======================================================================
 
   /**
@@ -123,12 +184,11 @@ $(document).ready(function() {
   }
 
   /**
-   * function: apprenticeControl()
-   * desc: function that controls automated hammers
+   * function: apprenticeStart()
+   * desc: function that starts automated hammers
    * */
 
-  function apprenticeControl() {
-    console.log("in apprenticeControl()");
+  function apprenticeStart() {
     window.setInterval(function() {
       apprenticeSwingHammer();
       if (playerHasApprentice) {
@@ -139,7 +199,7 @@ $(document).ready(function() {
 
   /**
    * function: apprenticSwingHammer()
-   * desc: function that swings the hammer for the apprentice, this is automated and called in apprenticeControl()
+   * desc: function that swings the hammer for the apprentice, this is automated and called in apprenticeStart()
    */
   function apprenticeSwingHammer() {
     count += apprenticeHammerEfficiency;
@@ -151,7 +211,6 @@ $(document).ready(function() {
    * desc: master function that handles most of the logic
    */
   function playerSwingHammer() {
-    console.log("Hitting for ", playerHammerEfficiency, "point");
     count += playerHammerEfficiency;
     updateCounter();
 
@@ -216,37 +275,5 @@ $(document).ready(function() {
   function updateCounter() {
     counter.text(count);
     updateShop();
-  }
-
-  /**
-   * function: updateShop()
-   * desc: checks if player can afford items in the shop (red text if cannot, white if can)
-   */
-  function updateShop() {
-    let costs = shop.find(".shop-cost");
-
-    if (playerHasPlayerHammerEfficiency) {
-      let cost = upgradePlayerHammer.find(".shop-cost");
-      cost.text("Purchased");
-      
-      return;
-    }
-    if (apprenticeHasHammerEfficiency) {
-      let cost = upgradeGetApprentice.find(".shop-cost");
-      upgradeGetApprentice.text("Purchased");
-      return;
-    }
-
-    for (var i = 0; i < costs.length; i++) {
-      let cost = (costs[i].innerHTML);
-      
-      if (count >= cost) {
-        costs[i].classList.add("purchasable");
-      }
-      else {
-        costs[i].classList.remove("purchasable");
-      }
-    }
-    
   }
 });
