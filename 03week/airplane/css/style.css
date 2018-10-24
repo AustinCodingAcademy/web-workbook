@@ -1,10 +1,12 @@
 *{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
-
-html,body{margin:0}
-
+ ul {
+    margin: 0; /* To remove default bottom margin */ 
+    padding: 0; /* To remove default left padding */
+}
 
 
 .navbar  {
@@ -33,18 +35,151 @@ a:link{
     padding-right: .3em;
 }
 
-li:nth-child(1){
+.navbar li:nth-child(1){
     margin-right: auto;
     
 }
 
-li:nth-child(5){
+.navbar li:nth-child(5){
     margin-right: 10%;
 }
 
 /*===============================================*/
 
-.bg-img img{
-    width: 100%;
+html { 
+    background: url(../img/airline.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+  }
+form{
+    display: flex;
+    max-width: 26%;
+    font-size: 1em;
+    margin-top: 10%;
+    margin-left: 5%;
 }
+.flex-outer{
+    display: flex;
+    flex-wrap: wrap;
+    
+    list-style: none;
+    
+    max-width: 100%;
+    background-color: #123754;
+    border-radius: 2.5%;
+}
+
+.flex-outer li{
+    display: flex;
+}
+
+
+.plane button, .car button, .hotel button{
+    background-color:	#008E7E;
+    border: none;
+    width: 100%;
+    border-radius: 2.5%;
+
+}
+
+.plane, .car, .hotel{
+    width: 33.3%;
+    flex-direction: row;
+}
+
+.depart, .arrive{
+    width: 50%;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 2em;
+    flex-direction: row;
+    
+}
+
+.depart input, .arrive input{
+    width: 100%;
+    background-color: #123754;
+    border-radius: 2.5%;
+    padding: 15px;
+}
+
+.depart-date,.arrive-date{
+    width: 50%;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 2em;
+    flex-direction: row;
+
+}
+
+.depart-date input, .arrive-date input{
+    width: 100%;
+    background-color: #123754;
+    border-radius: 2.5%;
+    padding: 15px;
+
+}
+
+.passengers-num{
+    width: 50%;
+    margin-top: 1em;
+    
+}
+
+.passengers-num label{
+    padding: 15px;
+
+    
+}
+
+
+input[type=number]{
+    width:40px;
+    border-radius: 2.5%;
+    background-color:#123754; 
+    padding: 5px;
+}
+
+
+.return-check, .oneway-check{
+    width: 25%;
+    margin-top: 1em;
+    padding: 15px;
+}
+
+
+
+.search-flights{
+    width: 100%;
+}
+
+.search-flights{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 15px;
+}
+
+.search-flights button{
+    background-color: #0A68C0;
+    border: none;
+    width: 96%;
+    margin: 0 auto;
+    color: white;
+    font-size: 1em;
+    padding: 15px;
+    border-radius: 2.5%;
+
+}
+
+button:hover{
+    background-color: #0A68C0;
+}
+a:hover{
+    color: #0A68C0;
+}
+
+
+
+
