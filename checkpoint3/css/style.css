@@ -29,6 +29,9 @@ main {
   min-width: 480px;
   margin: 0 auto;
 }
+.title {
+  color: #e7e5df;
+}
 .unselectable {
   user-select: none;
   -moz-user-select: none;
@@ -86,14 +89,14 @@ main {
   color: #e7e5df;
   font-size: 1.2rem;
 }
-#upgrades {
+#shop {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
   min-height: 200px;
 }
-.upgrade {
+.shop {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -102,35 +105,21 @@ main {
   opacity: 0.5;
   background: rgba(50, 50, 50, 0.5);
 }
-.upgrade:hover {
+.shop:hover {
   background: rgba(255, 255, 255, 0.5);
 }
 
-.upgrade-number {
+.shop-number {
   margin: 0;
   padding: 0.4rem 0 0 0.5rem;
   font-size: 1rem;
 }
 
-.upgrade-name,
-.upgrade-cost {
+.shop-name,
+.shop-cost {
   font-size: 0.6rem;
   align-self: center;
   justify-self: center;
-}
-
-.upgrade.one.unlocked,
-.upgrade.three.unlocked,
-.upgrade.six.unlocked,
-.upgrade.eight.unlocked {
-  background: rgba(230, 126, 34, 0.35);
-}
-
-.upgrade.two.unlocked,
-.upgrade.four.unlocked,
-.upgrade.five.unlocked,
-.upgrade.seven.unlocked {
-  background: rgba(2, 135, 208, 0.35);
 }
 
 /* ANVIL HIT ANIMATION */

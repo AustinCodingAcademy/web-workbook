@@ -5,7 +5,6 @@ $(document).ready(function() {
   // hammer/anvil elements
   const hammer = $("#hammer");
   const anvil = $("#anvil");
-  const sparks = $(".spark");
 
   // weapon elements
   const weaponImg = $("#weapon-img");
@@ -35,22 +34,23 @@ $(document).ready(function() {
   const announceWin = $("#max-level");
 
   // upgrade costs
-  const costApprentice = 50;
-  const costHammer = 200;
+  var costApprentice = 10;
+  const costHammer = 20;
 
   // upgrade elements
-  const upgrades = $("#upgrades");
-  const upgradeApprentice = $("#upgrade-apprentice");
-  const upgradeHammer = $("#upgrade-hammer");
-  initUpgradeCost(upgradeApprentice, costApprentice);
-  initUpgradeCost(upgradeHammer, costHammer);
+  const shop = $("#shop");
+  const upgradeGetApprentice = $("#upgrade-apprentice");
+  const upgradePlayerHammer = $("#upgrade-player-hammer");
+  updateUpgradeCost(upgradeGetApprentice, costApprentice);
+  updateUpgradeCost(upgradePlayerHammer, costHammer);
 
   // counter/level variables
   var maxLevel = 15;
   var count = 0;
-  var hammerEfficiency = 1;
+  var playerHammerEfficiency = 1;
+  var apprenticeHammerEfficiency = 1;
   var currentLevel = 1;
-  var numberOfClicksToNextLevel = 200;
+  var numberOfClicksToNextLevel = 100;
   var levelIncrement = numberOfClicksToNextLevel;
   const timeout = 3000;
   var currentMultiplier = 1;
@@ -59,10 +59,11 @@ $(document).ready(function() {
   // game state variables
   var playerHasReachedMaxLevel = false;
   var playerHasApprentice = false;
-  var playerHasHammerEfficiency = false;
+  var playerHasPlayerHammerEfficiency = false;
+  var apprenticeHasHammerEfficiency = false;
 
   anvil.mousedown(function() {
-    swingHammer();
+    playerSwingHammer();
     hammerAnimateDown();
   });
 
@@ -76,24 +77,34 @@ $(document).ready(function() {
 
   // UPGRADE CLICK FUNCTIONS
   // ====================================================================
-  upgradeApprentice.click(function() {
+  upgradeGetApprentice.click(function() {
     if (count >= costApprentice && !playerHasApprentice) {
       playerHasApprentice = true;
       count -= costApprentice;
       updateCounter();
-      hammerControl();
-    } else {
+      costApprentice*=6;
+      updateUpgradeCost(upgradeGetApprentice, costApprentice);
+      apprenticeControl();
+      $(this).find(".shop-name").text("Apprentice Hammer Efficiency");
+    } 
+    else if (count >= costApprentice && !apprenticeHasHammerEfficiency) {
+      console.log("spending ", costApprentice);
+      apprenticeHammerEfficiency = 2;
+      apprenticeHasHammerEfficiency = true;
+      count -= costApprentice;
+      updateCounter();
+    } 
+     else {
       return;
     }
   });
 
-  upgradeHammer.click(function() {
-    if (count >= costHammer && !playerHasHammerEfficiency) {
-      hammerEfficiency *= 2;
-      playerHasHammerEfficiency = true;
+  upgradePlayerHammer.click(function() {
+    if (count >= costHammer && !playerHasPlayerHammerEfficiency) {
+      playerHammerEfficiency = 2;
+      playerHasPlayerHammerEfficiency = true;
       count -= costHammer;
       updateCounter();
-      hammerControl();
     } else {
       return;
     }
@@ -103,22 +114,23 @@ $(document).ready(function() {
   // ======================================================================
 
   /**
-   * fucntion: initUpgradeCosts()
+   * fucntion: updateUpgradeCosts()
    * desc: sets upgrade cost element text to the value passed into function
    */
-  function initUpgradeCost(upgrade, cost) {
-    let target = upgrade.find($(".upgrade-cost"));
+  function updateUpgradeCost(upgrade, cost) {
+    let target = upgrade.find($(".shop-cost"));
     target.text(cost);
   }
 
   /**
-   * function: hammerControl()
-   * desc: master interval control that checks game state and calls updateInterval when needed
-   */
+   * function: apprenticeControl()
+   * desc: function that controls automated hammers 
+   * */
 
-  function hammerControl() {
+  function apprenticeControl() {
+    console.log("in apprenticeControl()");
     window.setInterval(function() {
-      swingHammer();
+      apprenticeSwingHammer();
       if (playerHasApprentice) {
         currentMultiplier = 1;
       }
@@ -126,11 +138,21 @@ $(document).ready(function() {
   }
 
   /**
-   * function: swingHammer()
+   * function: apprenticSwingHammer()
+   * desc: function that swings the hammer for the apprentice, this is automated and called in apprenticeControl()
+   */
+  function apprenticeSwingHammer() {
+    count += apprenticeHammerEfficiency;
+    updateCounter();
+  }
+
+  /**
+   * function: playerSwingHammer()
    * desc: master function that handles most of the logic
    */
-  function swingHammer() {
-    count += hammerEfficiency;
+  function playerSwingHammer() {
+    console.log("Hitting for ", playerHammerEfficiency, "point");
+    count += playerHammerEfficiency;
     updateCounter();
 
     // exit if player have reached highest level
@@ -139,7 +161,7 @@ $(document).ready(function() {
     }
 
     // level Up!
-    if (count === numberOfClicksToNextLevel) {
+    if (count >= numberOfClicksToNextLevel) {
       numberOfClicksToNextLevel *= 2;
       currentLevel++;
 
@@ -170,7 +192,6 @@ $(document).ready(function() {
    * desc: function that triggers the animation down classes
    */
   function hammerAnimateDown() {
-    sparks.toggleClass("animate");
     hammer.toggleClass("down");
     shakeAnvil();
   }
@@ -180,7 +201,6 @@ $(document).ready(function() {
    * desc: function that triggers the animation up classes
    */
   function hammerAnimateUp() {
-    sparks.removeClass("animate");
     hammer.toggleClass("down");
     shakeAnvil();
   }
