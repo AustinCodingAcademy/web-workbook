@@ -142,14 +142,14 @@ $(document).ready(function () {
 
     this.render = function () {
       var spaces = "";
-      for (i = 1; i <= row; i++) {
-        for (j = 1; j <= col; j++) {
-          spaces = spaces.concat('<div class="square" data-row="' + i + '" data-col="' + j + '"><span></span>&nbsp</div>');
+      for (i = 1; i <= row; i++) {//For each row
+        for (j = 1; j <= col; j++) {//For each column
+          spaces = spaces.concat('<div class="square" data-row="' + i + '" data-col="' + j + '"><span></span>&nbsp</div>');//Create new square element
         }
-        spaces = spaces.concat('<br />');
+        spaces = spaces.concat('<br />');//Used to separate rows
       }
-      $('#board').empty();
-      $('#board').append(spaces);
+      $('#board').empty();//Empty grid
+      $('#board').append(spaces);//Add newly created squares to grid
       let squares = $(".square");
       for (i = 0; i < squares.length; i++) { //For each square available in grid, assign a random text entries from list of possible texts above
         $(squares[i]).children("span").text(possible.charAt(Math.floor(Math.random() * possible.length)));
@@ -158,13 +158,14 @@ $(document).ready(function () {
           $(squares[i]).children("span").addClass("blue");
         }
         if ($(squares[i]).children("span").text() === "2") {
-          $(squares[i]).children("span").addClass("red");
-        }
-        if ($(squares[i]).children("span").text() === "3") {
           $(squares[i]).children("span").addClass("green");
         }
+        if ($(squares[i]).children("span").text() === "3") {
+          $(squares[i]).children("span").addClass("red");
+        }
         if ($(squares[i]).children("span").text() === "B") {
-          $(squares[i]).children("span").addClass("black");
+          $(squares[i]).children("span").text("");
+          $(squares[i]).children("span").append('<img src="./img/bomb.jpg" class="imgbomb" ></img>')
           bombspaces.push($(this)); //If square is to have bomb, add to bombspaces array
         }
       }
@@ -172,15 +173,20 @@ $(document).ready(function () {
     }
 
     this.click = function (target_object) { //Fires when any square is clicked
-      let squares = $(".square");
+      let squares = $(".square");//All squares in grid
       if (!this.gameOver) { //If game over has not happened
         $(target_object).children("span").show(); //Show the text inside of square
-        if ($(target_object).children("span").text() === "B") { //If square clicked contains a bomb
+        $(target_object).addClass("chosen");//Add .chosen class
+        if ($(target_object).children("span").text() === "") { //If square clicked contains a bomb
           for (i = 0; i < squares.length; i++) { //For each square in grid
             $(squares[i]).children("span").show(); //Reveal the text of every square
+            $(squares[i]).addClass("chosen");//Add .chosen class
+            if ($(squares[i]).children("span").text() === "") {//Check if square contains bomb
+              $(squares[i]).css("background-color", "red");//change color to red
+            }
             $("#message2").text("You hit a Bomb!  Game Over!"); //Display message to player
             this.gameOver = true; //set game over to true
-            $("#newgame").show();
+            $("#newgame").show();//Show new game button
           }
         } else { //Otherwise, increase player score by number inside of square
           $(scorekeeper).text(parseInt($(scorekeeper).text()) + parseInt($(target_object).children("span").text()));
@@ -288,39 +294,32 @@ $(document).ready(function () {
           timesflipped++;
           return;
         }
-        if (timesflipped === 1) { //If second square flipped
+        else if (timesflipped === 1) { //If second square flipped
           secondnumber = $(target_object).children("span").text(); //Put text from flipped square into secondnumber
           if (firstnumber === secondnumber) {
             let matched = $(".flipped"); //Squares that are matching
             for (i = 0; i < matched.length; i++) {
               $(matched[i]).addClass("matched");
-              console.log(matched[i]);
             }
-            console.log("found matching pair");
-            firstnumber = 0;
-            secondnumber = 0;
-            timesflipped = 0;
+            firstnumber, secondnumber, timesflipped = 0;
             checkWin();
             return;
           } else {
             let squaresNotFlipped = $(".square2").not(".matched");
             setTimeout(function () {
               hideSquares(squaresNotFlipped);
-            }, 500);
-            firstnumber = 0;
-            secondnumber = 0;
-            timesflipped = 0;
+            }, 200);
+            firstnumber, secondnumber, timesflipped = 0;
             return;
           }
         }
+      }
+    }
 
-        function hideSquares(target) {
-          for (i = 0; i < target.length; i++) {
-            $(target[i]).children("span").hide();
-            $(target[i]).removeClass("flipped");
-          }
-        }
-
+    function hideSquares(target) {
+      for (i = 0; i < target.length; i++) {
+        $(target[i]).children("span").hide();
+        $(target[i]).removeClass("flipped");
       }
     }
 

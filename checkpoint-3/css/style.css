@@ -142,24 +142,6 @@ input:hover {
   align-items: center;
 }
 
-/* Classes for assigning colors */
-.red {
-  color: red;
-}
-
-.blue {
-  color: blue;
-}
-
-.green {
-  color: green;
-}
-
-.black {
-  color: black;
-  border: 2px solid red;
-}
-
 #scorekeeper {
   font-size: 24px;
 }
@@ -189,19 +171,22 @@ input:hover {
 }
 
 #difficulty li {
-  background-color: dodgerblue;
-  color: white;
+  background-color: #bdbdbd;
+  border-top: 2px solid #f8f8f8;
+  border-left: 2px solid #f8f8f8;
+  border-bottom: 1px solid #818181;
+  border-right: 1px solid #818181;
+  color: black;
   cursor: pointer;
   display: inline-block;
   font-size: 18px;
-  border-radius: 5px;
   text-align: center;
   padding: 6px 8px;
   transition: all 0.3s ease-in-out;
 }
 
 #difficulty li:hover {
-  background-color: limegreen;
+  background-color: lightblue;
   color: black;
   transition: all 0.3s ease-in-out;
 }
@@ -212,45 +197,89 @@ input:hover {
 }
 
 #board {
-  border: 5px solid darkgray;
+  border: 10px solid #bdbdbd;
   margin: 40px;
 }
 
 .square {
-  background-color: darkgray;
+  background-color: #bdbdbd;
   display: inline-block;
-  border: 2px solid none;
-  margin: 2px;
+  border-top: 2px solid #f8f8f8;
+  border-left: 2px solid #f8f8f8;
+  border-bottom: 1px solid #818181;
+  border-right: 1px solid #818181;
+  margin: 0;
   cursor: pointer;
   width: 25px;
   height: 25px;
   font-size: 16px;
   text-align: center;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .square:hover {
-  background-color: lime;
-  transition: all 0.3s ease-in-out;
+  background-color: lightblue;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 #newgame {
-  background-color: dodgerblue;
-  color: white;
-  padding: 6px 8px;
   width: 40%;
+  background-color: #bdbdbd;
+  border-top: 2px solid #f8f8f8;
+  border-left: 2px solid #f8f8f8;
+  border-bottom: 1px solid #818181;
+  border-right: 1px solid #818181;
+  color: black;
   cursor: pointer;
   display: inline-block;
   font-size: 18px;
-  border-radius: 5px;
   text-align: center;
+  padding: 6px 8px;
   transition: all 0.3s ease-in-out;
 }
 
 #newgame:hover {
-  background-color: lime;
-  color: black;
+  background-color: lightblue;
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
+}
+
+.chosen {
+  border-top: 2px solid #8e8e8e;
+  border-left: 2px solid #8e8e8e;
+  border-bottom: 1px solid #8e8e8e;
+  border-right: 1px solid #8e8e8e;
+}
+
+/* Classes for assigning colors */
+.red {
+  color: red;
+  font-weight: bold;
+}
+
+.blue {
+  color: blue;
+  font-weight: bold;
+}
+
+.green {
+  color: green;
+  font-weight: bold;
+}
+
+.black {
+  color: black;
+  font-weight: bold;
+}
+
+.bomb {
+  background-color: red;
+}
+
+.imgbomb {
+  height: 15px;
+  width: 15px;
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////// */
