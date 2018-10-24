@@ -1,35 +1,48 @@
+*{
+    position: relative;
+}
+
 nav{
     margin: 20px;
-    padding: 10px;
+    padding: 5px;
     box-sizing: border-box;
-    float: right;
     display: inline-block;
+    float: right;
 
 }
 h1{
-    text-align: center;
-    margin-left: 430px;
+    font-family: delius swash caps;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(133, 55, 72);
 }
 h3{
     font-family: delius swash caps;
+    color: rgb(133, 55, 72) 
 }
 /*resizing logo picture*/
 .img{
- width: 150px;
+    width: 150px;
+    box-shadow: 5px 5px 2px gray;
+    background-color: antiquewhite;
 }
 /*Content pictures*/
 .img03{
     float:right;
     clear: right;
     display: inline-block;
+    box-shadow: 5px 5px 2px gray;
 }
 .img02, .img04{
     float: left;
     clear: left;
-    padding: 10px;
+    display: inline-block;
+    padding: 5px;
+    box-shadow: 5px 5px -2px gray;
 }
 .img02, .img03, .img04{
-width:170px;
+    width:170px;
 }
 .content{
     background-color: aliceblue;
@@ -39,16 +52,16 @@ width:170px;
     height: 1000px;
     padding: 5%;
     border-radius: 10px;
-    border: 3px dotted black;
+    border: 2px dotted black;
     margin: auto;
-    
-
 }
 button{
     font-family: delius swash caps;
     list-style-type: none;
-    display: inline-block;
-    color:rgb(202, 101, 123);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    color:rgb(133, 55, 72);
     border: none;
     font-size: 30px;
     background-color: transparent;
@@ -60,21 +73,32 @@ button:hover{
 
 }
 body{
-    background-image: url(https://www.xmple.com/wallpaper/white-yellow-gradient-linear-5120x2880-c2-fff0f5-ffdab9-a-75-f-14.svg);
-    background-size: cover;
-    background-position: 100%
+    background-attachment: fixed;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLjN8HMzcZerZonYxZLrxDVsMB7jELSGLu9PzF4kgp9GcSlTaA);
+    background-repeat: repeat;
 }
 div{
-box-sizing: border-box;
-margin: auto;
-height: 225px;
+    box-sizing: border-box;
+    margin: auto;
+    height: 225px;
+}
+ul{
+    list-style: none;
 }
 footer{
     position: relative;
     box-sizing: border-box;
     margin: 5px 25%;
     padding: 10px;
-    height: 50px;
-    border: 2px;
-    background-color: aliceblue;
+    height: 100px;
+    border: 2px dotted gray;
+    background-color: rgb(58, 201, 201);
+    border-radius: 6px;
+}
+b{
+    font-family: delius swash caps;
+}
+.email:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
