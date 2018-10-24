@@ -1,283 +1,352 @@
 <!DOCTYPE html>
 <html>
-<head>
+
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet"> 
-</head>
-<body>
-    <div class="headerContainer">
-        <div class="leftContainer">
-            <div class="logo"></div>
-            <div class="vineStyle"></div>
-        </div>
-        <div class="centerContainer">
-            <div class="stats">
-                <div class = "woodInventoryContainer">
-                    <div class = "woodIcon"></div>
-                    <div>Wood</div>
-                     <!--display for current value of wood-->
-                    <div id="currentWood" class = "currentResorceCount">0</div>
-                </div>
-                <div class = "stoneInventoryContainer">
-                    <div class = "stoneIcon"></div>
-                    <div>stone</div>
-                     <!--display for current value of Stone-->
-                    <div id="currentStone" class = "currentResorceCount">0</div>
-                </div>
-                <div class = "ironInventoryContainer">
-                    <div class = "ironIcon"></div>
-                    <div>Iron</div>
-                    <!--display for current value of iron-->
-                    <div id="currentIron" class = "currentResorceCount">0</div>
-                </div>
-            </div>
-            <div class="stats">
-                <div class="waterInventoryContainer">
-                    <div class = "waterIcon"></div>
-                    <div>Water</div>
-                     <!--display for current value of water-->
-                    <div id="currentWater" class = "currentResorceCount">0</div>
-                </div>
-                <div class="foodInventoryContainer">
-                    <div class = "foodIcon"></div>
-                    <div>Food</div>
-                     <!--display for current value of food-->
-                    <div id="currentFood" class = "currentResorceCount">0</div>
-                </div>
-                <div class="inventoryOpenContainer">
-                    <div class = "inventoryOpenButton">Open Inventory</div>
-                </div>
-            </div>
-        </div>
-        <div class="rightContainer">
-            <div class="vineStyle"></div>
-            <div class="informationContainer">
-                <div id = "informationAlerts">
-                    ALERTS
-                </div>
-                <div id = "informationQuests">
-                    QUESTS
-                </div>
-                <div id = "informationCenter">
-                    HELP
-                </div>             
-            </div>
-        </div>
-    </div>
-    <div class="mainGameContainer">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  </head>
 
+  <body>
+    <div class="headerContainer">
+      <div class="leftContainer">
+        <div class="logo"></div>
+        <div class="vineStyle"></div>
+      </div>
+      <div class="centerContainer">
+        <div class="stats">
+          <div class="woodInventoryContainer">
+            <div class="woodIcon"></div>
+            <div>Wood</div>
+            <!--display for current value of wood-->
+            <div id="currentWood" class="currentResorceCount">0</div>
+          </div>
+          <div class="stoneInventoryContainer">
+            <div class="stoneIcon"></div>
+            <div>stone</div>
+            <!--display for current value of Stone-->
+            <div id="currentStone" class="currentResorceCount">0</div>
+          </div>
+          <div class="ironInventoryContainer">
+            <div class="ironIcon"></div>
+            <div>Iron</div>
+            <!--display for current value of iron-->
+            <div id="currentIron" class="currentResorceCount">0</div>
+          </div>
+        </div>
+        <div class="stats">
+          <div class="waterInventoryContainer">
+            <div class="waterIcon"></div>
+            <div>Water</div>
+            <!--display for current value of water-->
+            <div id="currentWater" class="currentResorceCount">0</div>
+          </div>
+          <div class="foodInventoryContainer">
+            <div class="foodIcon"></div>
+            <div>Food</div>
+            <!--display for current value of food-->
+            <div id="currentFood" class="currentResorceCount">0</div>
+          </div>
+          <div class="inventoryOpenContainer">
+            <div class="inventoryOpenButton">Open Inventory</div>
+          </div>
+        </div>
+      </div>
+      <div class="rightContainer">
+        <div class="vineStyle"></div>
+        <div class="informationContainer">
+          <div id="informationAlerts">
+            ALERTS
+          </div>
+          <div id="informationQuests">
+            QUESTS
+          </div>
+          <div id="informationCenter">
+            HELP
+          </div>
+        </div>
+      </div>
     </div>
+    
+    
+     <!-- under condtruction -->
+     <!-- under condtruction -->
+     <!-- under condtruction -->
+     <!-- under condtruction -->
+    <div class="mainGameContainer">
+      <div class="buildingsContainer">
+        <div class="buildingOuterContainer">
+          <div>Outpost</div>
+          <div id = "inGameOutpost" class="outpost"></div>
+        </div>
+        <div class="buildingOuterContainer">
+          <div>Wood Workshop</div>
+          <div id = "inGameOutpost" class="woodWorkshop"></div>
+        </div>
+        <div class="buildingOuterContainer">
+          <div>Quarry</div>
+          <div id = "inGameQuarry" class="quarry"></div>
+        </div>
+        <div class="buildingOuterContainer">
+          <div>Hunters Tent</div>
+          <div id = "inGameHunter" class="hunter"></div>
+        </div>
+        <div class="buildingOuterContainer">
+          <div>Weaving Workshop</div>
+          <div id = "inGameWeaver" class="weaver"></div>
+        </div>
+        <div class="buildingOuterContainer">
+          <div>Well</div>
+          <div id = "inGameWell" class="well"></div>
+        </div>
+        <div class="buildingOuterContainer">
+          <div>Food Dryer</div>
+          <div id = "inGameDryer" class="dryer"></div>
+        </div>
+        <div class="buildingOuterContainer">
+          <div>Pottery Workshop</div>
+          <div id = "inGamePottery" class="pottery"></div>
+        </div>
+        <div class="buildingOuterContainer">
+          <div>Smithy</div>
+          <div id = "inGameSmithy" class="smithy"></div>
+        </div>
+        <div class="buildingOuterContainer">
+          <div>Lure Workbench</div>
+          <div id = "inGameLure" class="lure"></div>
+        </div>
+        <div class="buildingOuterContainer">
+          <div>Loom</div>
+          <div id = "inGameLoom" class="loom"></div>
+        </div>
+        <div class="buildingOuterContainer">
+          <div>Glass Workshop</div>
+          <div id = "inGameGlass" class="glass"></div>
+        </div>
+        <div class="buildingOuterContainer">
+          <div>Pier</div>
+          <div id = "inGamePier" class="pier"></div>
+        </div>
+      </div>
+      <div class="rawMaterialContainer"></div>
+    </div>
+
+
+
+    <!-- Inventory Modal-->
     <div id="fullInventory">
-        <div class="fullInventoryItems">
-            <div class="fullInventoryTitle">
-                <div class="exitInventoryContainer"><div id="exitInventory">X</div></div>
-                <div>ITEMS</div>
-            </div>
-            <div class="itemsGrid">
-                <div class="itemGrid1 inventoryItem">
-                    <div class = "innerInventoryItem bamboo">
-                        <div id="itemBamboo">0</div>
-                    </div>
-                </div>
-                <div class="itemGrid2 inventoryItem">
-                    <div class = "innerInventoryItem jute">
-                        <div id="itemInventoryJute">0</div>
-                    </div>
-                </div>
-                <div class="itemGrid3 inventoryItem">
-                    <div class = "innerInventoryItem palmLeaf">
-                        <div id="itemInventoryPalmLeaf">0</div>
-                    </div>
-                </div>
-                <div class="itemGrid4 inventoryItem">
-                    <div class = "innerInventoryItem wood">
-                        <div id="itemInventoryWood">0</div>
-                    </div>
-                </div>
-                <div class="itemGrid5 inventoryItem">
-                    <div class = "innerInventoryItem lianaVine">
-                        <div id="itemInventoryLiana"></div>
-                    </div>
-                </div>
-                <div class="itemGrid6 inventoryItem">
-                    <div class = "innerInventoryItem resin">
-                        <div id="itemInventoryResin"></div>
-                    </div>
-                </div>
-                <div class="itemGrid7 inventoryItem">
-                    <div class = "innerInventoryItem stone">
-                        <div id="itemInventoryStone"></div>
-                    </div>
-                </div>
-                <div class="itemGrid8 inventoryItem">
-                    <div class = "innerInventoryItem iron">
-                        <div id="itemInventoryIron"></div>
-                    </div>
-                </div>
-                <div class="itemGrid9 inventoryItem">
-                    <div class = "innerInventoryItem fireWood">
-                        <div id="itemInventoryFireWood"></div>
-                    </div>
-                </div>
-                <div class="itemGrid10 inventoryItem">
-                    <div class = "innerInventoryItem stoneBlock">
-                        <div id="itemInventoryStoneBlock"></div>
-                    </div>
-                </div>
-                <div class="itemGrid11 inventoryItem">
-                    <div class = "innerInventoryItem driedJute">
-                        <div id="itemInventoryDriedJute"></div>
-                    </div>
-                </div>
-                <div class="itemGrid12 inventoryItem">
-                    <div class = "innerInventoryItem torch">
-                        <div id="itemInventorytorch"></div>
-                    </div>
-                </div>
-                <div class="itemGrid13 inventoryItem">
-                    <div class = "innerInventoryItem jackPlane">
-                        <div id="itemInventoryJackPlane"></div>
-                    </div>
-                </div>
-                <div class="itemGrid14 inventoryItem">
-                    <div class = "innerInventoryItem bucket">
-                        <div id="itemInventoryBucket"></div>
-                    </div>
-                </div>
-                <div class="itemGrid15 inventoryItem">
-                    <div class = "innerInventoryItem plank">
-                        <div id="itemInventoryPlank"></div>
-                    </div>
-                </div>
-                <div class="itemGrid16 inventoryItem">
-                    <div class = "innerInventoryItem rope">
-                        <div id="itemInventoryRope"></div>
-                    </div>
-                </div>
-                <div class="itemGrid17 inventoryItem">
-                    <div class = "innerInventoryItem ropeLadder">
-                        <div id="itemInventoryRopeLadder"></div>
-                    </div>
-                </div>
-                <div class="itemGrid18 inventoryItem">
-                    <div class = "innerInventoryItem mat">
-                        <div id="itemInventoryMat"></div>
-                    </div>
-                </div>
-                <div class="itemGrid19 inventoryItem">
-                    <div class = "innerInventoryItem wickerBasket">
-                        <div id="itemInventoryWickerBasket"></div>
-                    </div>
-                </div>
-                <div class="itemGrid20 inventoryItem">
-                    <div class = "innerInventoryItem woodenLattice">
-                        <div id="itemInventoryWoodenLattice"></div>
-                    </div>
-                </div>
-                <div class="itemGrid21 inventoryItem">
-                    <div class = "innerInventoryItem ceramicLantern">
-                        <div id="itemInventoryCeramicLantern"></div>
-                    </div>
-                </div>
-                <div class="itemGrid22 inventoryItem">
-                    <div class = "innerInventoryItem ceramicPot">
-                        <div id="itemInventoryCeramicPot"></div>
-                    </div>
-                </div>
-                <div class="itemGrid23 inventoryItem">
-                    <div class = "innerInventoryItem cog">
-                        <div id="itemInventoryCog"></div>
-                    </div>
-                </div>
-                <div class="itemGrid24 inventoryItem">
-                    <div class = "innerInventoryItem lampOil">
-                        <div id="itemInventoryLampOil"></div>
-                    </div>
-                </div>
-                <div class="itemGrid25 inventoryItem">
-                    <div class = "innerInventoryItem glassBottle">
-                        <div id="itemInventoryGlassBottle"></div>
-                    </div>
-                </div>
-                <div class="itemGrid26 inventoryItem">
-                    <div class = "innerInventoryItem lense">
-                        <div id="itemInventoryLense"></div>
-                    </div>
-                </div>
-                <div class="itemGrid27 inventoryItem">
-                    <div class = "innerInventoryItem string">
-                        <div id="itemInventorystring"></div>
-                    </div>
-                </div>
-                <div class="itemGrid28 inventoryItem">
-                    <div class = "innerInventoryItem cloth">
-                        <div id="itemInventorycloth"></div>
-                    </div>
-                </div>
-            </div>
+      <div class="fullInventoryItems">
+        <div class="fullInventoryTitle">
+          <div class="exitInventoryContainer">
+            <div id="exitInventory">X</div>
+          </div>
+          <div>ITEMS</div>
         </div>
-        <div class="fullInventorySpecial">
-            <div class="fullInventoryTitle">
-                <div>SPECIAL</div>
+        <div class="itemsGrid">
+          <div class="itemGrid1 inventoryItem">
+            <div class="innerInventoryItem bamboo">
+              <div id="itemBamboo">0</div>
             </div>
-            <div class = "innerInventoryItem cutlass">
-                <div id="specialInventorycutlass"></div>
+          </div>
+          <div class="itemGrid2 inventoryItem">
+            <div class="innerInventoryItem jute">
+              <div id="itemInventoryJute">0</div>
             </div>
-            <div class = "innerInventoryItem axe">
-                <div id="specialInventoryAxe"></div>
+          </div>
+          <div class="itemGrid3 inventoryItem">
+            <div class="innerInventoryItem palmLeaf">
+              <div id="itemInventoryPalmLeaf">0</div>
             </div>
-            <div class = "innerInventoryItem pickAxe">
-                <div id="specialInventoryPickAxe"></div>
+          </div>
+          <div class="itemGrid4 inventoryItem">
+            <div class="innerInventoryItem wood">
+              <div id="itemInventoryWood">0</div>
             </div>
-            <div class = "innerInventoryItem fishHook">
-                <div id="specialInventoryFishHook"></div>
+          </div>
+          <div class="itemGrid5 inventoryItem">
+            <div class="innerInventoryItem lianaVine">
+              <div id="itemInventoryLiana"></div>
             </div>
-            <div class = "innerInventoryItem waterPump">
-                <div id="specialInventoryWaterPump"></div>
+          </div>
+          <div class="itemGrid6 inventoryItem">
+            <div class="innerInventoryItem resin">
+              <div id="itemInventoryResin"></div>
             </div>
+          </div>
+          <div class="itemGrid7 inventoryItem">
+            <div class="innerInventoryItem stone">
+              <div id="itemInventoryStone"></div>
+            </div>
+          </div>
+          <div class="itemGrid8 inventoryItem">
+            <div class="innerInventoryItem iron">
+              <div id="itemInventoryIron"></div>
+            </div>
+          </div>
+          <div class="itemGrid9 inventoryItem">
+            <div class="innerInventoryItem fireWood">
+              <div id="itemInventoryFireWood"></div>
+            </div>
+          </div>
+          <div class="itemGrid10 inventoryItem">
+            <div class="innerInventoryItem stoneBlock">
+              <div id="itemInventoryStoneBlock"></div>
+            </div>
+          </div>
+          <div class="itemGrid11 inventoryItem">
+            <div class="innerInventoryItem driedJute">
+              <div id="itemInventoryDriedJute"></div>
+            </div>
+          </div>
+          <div class="itemGrid12 inventoryItem">
+            <div class="innerInventoryItem torch">
+              <div id="itemInventorytorch"></div>
+            </div>
+          </div>
+          <div class="itemGrid13 inventoryItem">
+            <div class="innerInventoryItem jackPlane">
+              <div id="itemInventoryJackPlane"></div>
+            </div>
+          </div>
+          <div class="itemGrid14 inventoryItem">
+            <div class="innerInventoryItem bucket">
+              <div id="itemInventoryBucket"></div>
+            </div>
+          </div>
+          <div class="itemGrid15 inventoryItem">
+            <div class="innerInventoryItem plank">
+              <div id="itemInventoryPlank"></div>
+            </div>
+          </div>
+          <div class="itemGrid16 inventoryItem">
+            <div class="innerInventoryItem rope">
+              <div id="itemInventoryRope"></div>
+            </div>
+          </div>
+          <div class="itemGrid17 inventoryItem">
+            <div class="innerInventoryItem ropeLadder">
+              <div id="itemInventoryRopeLadder"></div>
+            </div>
+          </div>
+          <div class="itemGrid18 inventoryItem">
+            <div class="innerInventoryItem mat">
+              <div id="itemInventoryMat"></div>
+            </div>
+          </div>
+          <div class="itemGrid19 inventoryItem">
+            <div class="innerInventoryItem wickerBasket">
+              <div id="itemInventoryWickerBasket"></div>
+            </div>
+          </div>
+          <div class="itemGrid20 inventoryItem">
+            <div class="innerInventoryItem woodenLattice">
+              <div id="itemInventoryWoodenLattice"></div>
+            </div>
+          </div>
+          <div class="itemGrid21 inventoryItem">
+            <div class="innerInventoryItem ceramicLantern">
+              <div id="itemInventoryCeramicLantern"></div>
+            </div>
+          </div>
+          <div class="itemGrid22 inventoryItem">
+            <div class="innerInventoryItem ceramicPot">
+              <div id="itemInventoryCeramicPot"></div>
+            </div>
+          </div>
+          <div class="itemGrid23 inventoryItem">
+            <div class="innerInventoryItem cog">
+              <div id="itemInventoryCog"></div>
+            </div>
+          </div>
+          <div class="itemGrid24 inventoryItem">
+            <div class="innerInventoryItem lampOil">
+              <div id="itemInventoryLampOil"></div>
+            </div>
+          </div>
+          <div class="itemGrid25 inventoryItem">
+            <div class="innerInventoryItem glassBottle">
+              <div id="itemInventoryGlassBottle"></div>
+            </div>
+          </div>
+          <div class="itemGrid26 inventoryItem">
+            <div class="innerInventoryItem lense">
+              <div id="itemInventoryLense"></div>
+            </div>
+          </div>
+          <div class="itemGrid27 inventoryItem">
+            <div class="innerInventoryItem string">
+              <div id="itemInventorystring"></div>
+            </div>
+          </div>
+          <div class="itemGrid28 inventoryItem">
+            <div class="innerInventoryItem cloth">
+              <div id="itemInventorycloth"></div>
+            </div>
+          </div>
         </div>
-        <div class="fullInventoryBoat">
-            <div class="fullInventoryTitle">
-                <div>BOAT</div>
-            </div>
-            <div class="boatInvContainer">
-                <div class="fullBoatInv">
-                    <div class = "innerInventoryItem rudder">
-                        <div id="boatInventoryrudder"></div>
-                    </div>
-                    <div class = "innerInventoryItem sails">
-                        <div id="boatInventorySails"></div>
-                    </div>
-                    <div class = "innerInventoryItem mast">
-                        <div id="boatInventoryMast"></div>
-                    </div>
-                    <div class = "innerInventoryItem haul">
-                        <div id="boatInventoryHaul"></div>
-                    </div>
-                </div>
-                <div class="storage">
-                    <div class = "innerInventoryItem foodStore">
-                        Stored Food
-                        <div id="specialInventoryFoodStore"></div>
-                    </div>
-                    <div class = "innerInventoryItem waterStore">
-                        Stored Water
-                        <div id="specialInventoryWaterStore"></div>
-                    </div>
-                    <div class = "innerInventoryItem spyGlass">
-                        <div id="specialInventorySpyGlass"></div>
-                    </div>
-                    <div class = "innerInventoryItem starDisk">
-                        <div id="specialInventoryStarDisk"></div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="fullInventorySpecial">
+        <div class="fullInventoryTitle">
+          <div>SPECIAL</div>
         </div>
+        <div class="innerInventoryItem cutlass">
+          <div id="specialInventorycutlass"></div>
+        </div>
+        <div class="innerInventoryItem axe">
+          <div id="specialInventoryAxe"></div>
+        </div>
+        <div class="innerInventoryItem pickAxe">
+          <div id="specialInventoryPickAxe"></div>
+        </div>
+        <div class="innerInventoryItem fishHook">
+          <div id="specialInventoryFishHook"></div>
+        </div>
+        <div class="innerInventoryItem waterPump">
+          <div id="specialInventoryWaterPump"></div>
+        </div>
+      </div>
+      <div class="fullInventoryBoat">
+        <div class="fullInventoryTitle">
+          <div>BOAT</div>
+        </div>
+        <div class="boatInvContainer">
+          <div class="fullBoatInv">
+            <div class="innerInventoryItem rudder">
+              <div id="boatInventoryrudder"></div>
+            </div>
+            <div class="innerInventoryItem sails">
+              <div id="boatInventorySails"></div>
+            </div>
+            <div class="innerInventoryItem mast">
+              <div id="boatInventoryMast"></div>
+            </div>
+            <div class="innerInventoryItem haul">
+              <div id="boatInventoryHaul"></div>
+            </div>
+          </div>
+          <div class="storage">
+            <div class="innerInventoryItem foodStore">
+              Stored Food
+              <div id="specialInventoryFoodStore"></div>
+            </div>
+            <div class="innerInventoryItem waterStore">
+              Stored Water
+              <div id="specialInventoryWaterStore"></div>
+            </div>
+            <div class="innerInventoryItem spyGlass">
+              <div id="specialInventorySpyGlass"></div>
+            </div>
+            <div class="innerInventoryItem starDisk">
+              <div id="specialInventoryStarDisk"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-<script src="./javascript/main.js"></script>
-</body>
+    <script src="./javascript/main.js"></script>
+  </body>
+
 </html>
