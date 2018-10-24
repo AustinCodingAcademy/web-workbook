@@ -31,6 +31,7 @@ $(document).ready(function() {
   // main ui elements
   const counter = $("#counter");
   const currentUpgradeList = $("#current-upgrades").children();
+  const apprenticeStats = $("#apprentice-stats");
   const nextWeapon = $("#next-weapon-level");
   const announceWin = $("#max-level");
 
@@ -61,10 +62,11 @@ $(document).ready(function() {
   var count = 0;
   var playerHammerEfficiency = 1;
   var apprenticeHammerEfficiency = 1;
+  var apprenticeEfficiency = apprenticeHammerEfficiency / 5;
   var currentLevel = 1;
   var numberOfClicksToNextLevel = 100;
   var levelIncrement = numberOfClicksToNextLevel;
-  var timeout = 3000;
+  var timeout = 1000;
   var currentMultiplier = 1;
   nextWeapon.text("Next Weapon: " + numberOfClicksToNextLevel + " clicks");
 
@@ -78,6 +80,12 @@ $(document).ready(function() {
   var playerHasHammerUpgrade3 = false;
   var playerHasHammerUpgrade4 = false;
   var playerHasReachedMaxLevel = false;
+
+  // statistic trackers
+  const stats_Player = $("#dynamic-player-stats");
+  const stats_Apprentice = $("#dynamic-apprentice-stats");
+  $(stats_Player).append(playerHammerEfficiency);
+  $(stats_Apprentice).append(apprenticeEfficiency);
 
   // MASTER CLICK FUNCTIONS
   // ====================================================================
@@ -238,12 +246,14 @@ $(document).ready(function() {
     playerHasApprentice = true;
     $(apprenticeUpgrade1).addClass("unlocked");
     currentUpgradeList.append('<li>Hired Apprentice</li>')
+    $(apprenticeStats).removeClass("hidden");
     updateCounter();
     apprenticeStart();
   }
 
   function shop_buyApprenticeUpgrade1() {
-    apprenticeHammerEfficiency = 2;
+    apprenticeHammerEfficiency = 5;
+    apprenticeEfficiency = apprenticeHammerEfficiency / 5;
     apprenticeHasUpgrade1 = true;
     count -= cost_ApprenUpgrade1;
     $(apprenticeUpgrade2).addClass("unlocked");
@@ -251,7 +261,8 @@ $(document).ready(function() {
     updateCounter();
   }
   function shop_buyApprenticeUpgrade2() {
-    apprenticeHammerEfficiency = 4;
+    apprenticeHammerEfficiency = 10;
+    apprenticeEfficiency = apprenticeHammerEfficiency / 5;
     apprenticeHasUpgrade2 = true;
     count -= cost_ApprenUpgrade2;
     $(apprenticeUpgrade3).addClass("unlocked");
@@ -259,7 +270,8 @@ $(document).ready(function() {
     updateCounter();
   }
   function shop_buyApprenticeUpgrade3() {
-    apprenticeHammerEfficiency = 8;
+    apprenticeHammerEfficiency = 20;
+    apprenticeEfficiency = apprenticeHammerEfficiency / 5;
     apprenticeHasUpgrade3 = true;
     count -= cost_ApprenUpgrade3;
     currentUpgradeList.append('<li>Apprentice Upgrade 3</li>')
@@ -393,7 +405,9 @@ $(document).ready(function() {
    * desc: helper function that updates UI when needed
    */
   function updateCounter() {
-    counter.text(count);
+    counter.text(Math.floor(count));
+    updatePlayerStats();
+    updateApprenticeStats();
     updateShop();
   }
 
@@ -422,7 +436,7 @@ $(document).ready(function() {
    * desc: function that swings the hammer for the apprentice, this is automated and called in apprenticeStart()
    */
   function apprenticeSwingHammer() {
-    count += apprenticeHammerEfficiency;
+    count += apprenticeEfficiency;
     updateCounter();
   }
 
@@ -465,6 +479,23 @@ $(document).ready(function() {
       nextWeapon.text("Next Weapon: " + numberOfClicksToNextLevel);
     }
   }
+
+  /**
+   * function: updatePlayerStats()
+   * desc: helper function that replaces text of player stats when needed
+   */
+  function updatePlayerStats() {
+    stats_Player.text("Pts/Click: " + playerHammerEfficiency);  
+  }
+
+  /**
+   * function updateApprenticeStats()
+   * desc: helper function that replaces text of player stats when needed
+   */
+  function updateApprenticeStats() {
+    stats_Apprentice.text("Pts/Sec: " + apprenticeEfficiency);  
+  }
+
 
   /**
    * function: hammerAnimateDown()
