@@ -38,7 +38,7 @@ main {
   width: 70vw;
   margin: 50px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 150px 250px 100px 800px 650px;
+  grid-template-rows: 150px 250px 100px 900px 850px;
   justify-items: center;
   grid-template-areas:
     "box-1 box-1"
@@ -135,7 +135,7 @@ input:hover {
 
 /* div surrounding entire minesweeper game */
 .minesweeper {
-  margin: 25px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -146,12 +146,38 @@ input:hover {
   font-size: 24px;
 }
 
-
-
 .title {
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 32px;
   text-align: center;
+}
+
+.titleimg {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titleimg2 {
+  background: url("../img/minefield.jpg");
+  background-size: cover;
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.titleimg3 {
+  background: url("../img/memory.png");
+  background-size: cover;
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #settings {
@@ -198,7 +224,7 @@ input:hover {
 
 #board {
   border: 10px solid #bdbdbd;
-  margin: 40px;
+  margin: 20px;
 }
 
 .square {
@@ -285,6 +311,7 @@ input:hover {
 /* ////////////////////////////////////////////////////////////////////////////////////////// */
 /* Matching Game */
 .matchinggame {
+  width: 70vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

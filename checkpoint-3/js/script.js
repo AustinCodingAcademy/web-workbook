@@ -283,7 +283,7 @@ $(document).ready(function () {
       setTimeout(function () { //Reveal cars to player. after one second, flip cards back over
         $(".square2").removeClass("flipped");//Removes flipped class
         $(".square2").children("span").hide();//Hides text of square
-      }, 1000);
+      }, 2000);
     }
 
     this.click = function (target_object) { //Fires when any square is clicked
@@ -309,7 +309,7 @@ $(document).ready(function () {
             let squaresNotFlipped = $(".square2").not(".matched");//Gets all squares not currently matched
             setTimeout(function () {
               hideSquares(squaresNotFlipped);//Hides those squares text
-            }, 200);
+            }, 500);
             firstnumber, secondnumber, timesflipped = 0;//Reset all variables to 0
             return;
           }
