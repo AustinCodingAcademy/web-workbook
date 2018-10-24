@@ -42,28 +42,6 @@ main {
 .announce.show {
   display: block;
 }
-.spark {
-  border-radius: 50%;
-  position: absolute;
-  width: 3px;
-  height: 40px;
-  background: #e67e22;
-  transition: 100ms ease-in-out;
-  opacity: 0;
-  top: 20px;
-}
-.spark.animate {
-  animation: spark 0.1s;
-}
-.spark.one {
-  left: 170px;
-}
-.spark.two {
-  left: 150px;
-}
-.spark.three {
-  left: 130px;
-}
 #anvil {
   position: relative;
   display: flex;
@@ -73,12 +51,15 @@ main {
   animation: shake 0.1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
 #hammer {
-  margin: 0 -40px -116px 0;
+  margin: 0 80px -55px 0;
   align-self: flex-end;
   transition: 50ms ease-in-out;
 }
+#hammer img {
+  transform: scale(0.7);
+}
 #hammer.swing {
-  animation: swingUp 1000ms;
+  animation: swingUp 100ms;
 }
 #hammer.swing.down {
   animation: swingDown forwards 100ms;
@@ -179,7 +160,7 @@ main {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) translate(-10px, -40px);
   }
 }
 @keyframes swingUp {
@@ -187,7 +168,7 @@ main {
     transform: rotate(-90deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(0deg) translate(0px, 0px);
   }
 }
 /* SPARK ANIMATION */
