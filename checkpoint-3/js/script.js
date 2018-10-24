@@ -232,14 +232,6 @@ $(document).ready(function () {
     this.spaces = [];
     this.gameOver2 = false;
     let possible = [1, 2, 3, 4, 5, 6, 7, 8]; //List of possible text from which to choose for squares
-    let number1used = false;
-    let number2used = false;
-    let number3used = false;
-    let number4used = false;
-    let number5used = false;
-    let number6used = false;
-    let number7used = false;
-    let number8used = false;
     let timesflipped = 0;
     let firstnumber = 0;
     let secondnumber = 0;
@@ -259,49 +251,25 @@ $(document).ready(function () {
       let squares2 = $(".square2");
       for (i = 0; i < squares2.length; i++) { //For each square available in grid, assign a random text entries from list of possible texts above
         let number = 0;
+        let i2 = 0;
         number = possible[Math.floor(Math.random() * possible.length)];
-        if (number === 1 && !number1used) {
-          number1used = true;
-        } else if (number === 1 && number1used) {
-          let index = possible.indexOf(number);
-          possible.splice(index, 1);
-        } else if (number === 2 && !number2used) {
-          number2used = true;
-        } else if (number === 2 && number2used) {
-          let index = possible.indexOf(number);
-          possible.splice(index, 1);
-        } else if (number === 3 && !number3used) {
-          number3used = true;
-        } else if (number === 3 && number3used) {
-          let index = possible.indexOf(number);
-          possible.splice(index, 1);
-        } else if (number === 4 && !number4used) {
-          number4used = true;
-        } else if (number === 4 && number4used) {
-          let index = possible.indexOf(number);
-          possible.splice(index, 1);
-        } else if (number === 5 && !number5used) {
-          number5used = true;
-        } else if (number === 5 && number5used) {
-          let index = possible.indexOf(number);
-          possible.splice(index, 1);
-        } else if (number === 6 && !number6used) {
-          number6used = true;
-        } else if (number === 6 && number6used) {
-          let index = possible.indexOf(number);
-          possible.splice(index, 1);
-        } else if (number === 7 && !number7used) {
-          number7used = true;
-        } else if (number === 7 && number7used) {
-          let index = possible.indexOf(number);
-          possible.splice(index, 1);
-        } else if (number === 8 && !number8used) {
-          number8used = true;
-        } else if (number === 8 && number8used) {
-          let index = possible.indexOf(number);
-          possible.splice(index, 1);
+
+        //Checking for existing squares that have number and removing number from list if exist.
+        console.log("NOW ON SQUARE: " + i);
+        console.log("NUMBER IS: " + number);
+        for(i2=0;i2<squares2.length;i2++){
+          console.log("checking square " + i2 + " for number " + number);
+          if($(squares2[i2]).children("span").text() == number){
+            console.log("square " + i2 + " already has number: " + number);
+            console.log("removing " + number + " from list of numbers");
+            let index = possible.indexOf(number);
+            possible.splice(index, 1);
+          }
         }
+        
         $(squares2[i]).children("span").text(number);
+        console.log("SQUARE " + i + " NOW HAS NUMBER " + number);
+        console.log("");//To separate squares within log
       }
       $(".square2").addClass("flipped"); //Start with all cards flipped
 
