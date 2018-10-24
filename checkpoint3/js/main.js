@@ -235,6 +235,7 @@ $(document).ready(function() {
   function shop_hireApprentice() {
     count -= cost_HireApprentice;
     playerHasApprentice = true;
+    $(apprenticeUpgrade1).addClass("unlocked");
     updateCounter();
     apprenticeStart();
   }
@@ -243,12 +244,14 @@ $(document).ready(function() {
     apprenticeHammerEfficiency = 2;
     apprenticeHasUpgrade1 = true;
     count -= cost_ApprenUpgrade1;
+    $(apprenticeUpgrade2).addClass("unlocked");
     updateCounter();
   }
   function shop_buyApprenticeUpgrade2() {
     apprenticeHammerEfficiency = 4;
     apprenticeHasUpgrade2 = true;
     count -= cost_ApprenUpgrade2;
+    $(apprenticeUpgrade3).addClass("unlocked");
     updateCounter();
   }
   function shop_buyApprenticeUpgrade3() {
@@ -270,6 +273,7 @@ $(document).ready(function() {
     count -= cost_HammerUpgrade2;
     playerHasHammerUpgrade2 = true;
     $(hammerUpgrade3).addClass("unlocked");
+    $(hireApprentice).addClass("unlocked");
     updateCounter();
   }
   function shop_buyHammerUpgrade3() {
@@ -401,9 +405,6 @@ $(document).ready(function() {
   function apprenticeStart() {
     window.setInterval(function() {
       apprenticeSwingHammer();
-      if (playerHasApprentice) {
-        currentMultiplier = 1;
-      }
     }, timeout * currentMultiplier);
   }
 
@@ -431,7 +432,7 @@ $(document).ready(function() {
 
     // level Up!
     if (count >= numberOfClicksToNextLevel) {
-      numberOfClicksToNextLevel *= 2;
+      numberOfClicksToNextLevel = Math.floor(numberOfClicksToNextLevel*1.5);
       currentLevel++;
 
       // this if/else just handles file names
