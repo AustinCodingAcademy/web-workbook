@@ -211,9 +211,27 @@ $(document).ready(function() {
 
   /**
    * function: updateCounter()
-   * desc: simple helper function to update counter when needed
+   * desc: simple helper funtion to update counter when needed
    */
   function updateCounter() {
     counter.text(count);
+    updateShop();
+  }
+
+  /**
+   * function: updateShop()
+   * desc: checks if player can afford items in the shop (red text if cannot, white if can)
+   */
+  function updateShop() {
+    let costs = shop.find(".shop-cost");
+
+    for (var i = 0; i < costs.length; i++) {
+      let cost = (costs[i].innerHTML);
+      
+      if (count >= cost) {
+        costs[i].classList.add("purchasable")
+      }
+    }
+    
   }
 });
