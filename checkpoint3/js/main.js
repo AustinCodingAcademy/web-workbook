@@ -82,19 +82,19 @@ $(document).ready(function() {
       playerHasApprentice = true;
       count -= costApprentice;
       updateCounter();
-      costApprentice*=6;
+      costApprentice *= 6;
       updateUpgradeCost(upgradeGetApprentice, costApprentice);
       apprenticeControl();
-      $(this).find(".shop-name").text("Apprentice Hammer Efficiency");
-    } 
-    else if (count >= costApprentice && !apprenticeHasHammerEfficiency) {
+      $(this)
+        .find(".shop-name")
+        .text("Apprentice Hammer Efficiency");
+    } else if (count >= costApprentice && !apprenticeHasHammerEfficiency) {
       console.log("spending ", costApprentice);
       apprenticeHammerEfficiency = 2;
       apprenticeHasHammerEfficiency = true;
       count -= costApprentice;
       updateCounter();
-    } 
-     else {
+    } else {
       return;
     }
   });
@@ -124,7 +124,7 @@ $(document).ready(function() {
 
   /**
    * function: apprenticeControl()
-   * desc: function that controls automated hammers 
+   * desc: function that controls automated hammers
    * */
 
   function apprenticeControl() {
