@@ -7,13 +7,13 @@ body {
 
 .asidePosition {
     display: inline;
-    position: relative;
+    position: sticky;
+    top: 10px;
     float: left;
-    margin: 0px auto;
+    margin: 133px auto;
 }
 
 aside {
-    position: fixed;
     height: 300px;
     width: 60px;
     font-size: 40px;
@@ -105,6 +105,26 @@ article:hover {
     width: 550px;
 }
 
+article:hover > p {
+    background-color: whitesmoke;
+}
+
+article:first-of-type {
+    background-color: rgb(148, 206, 148);
+}
+
+article:nth-child(1n+3) {
+    background-color: lightblue;
+}
+
+article:nth-child(odd):hover {
+    box-shadow: 5px 5px 50px red;
+}
+
+article:nth-child(even):hover {
+    box-shadow: 5px 5px 50px blue;
+}
+
 p {
     width:450px;
     margin: 5px auto;
@@ -130,24 +150,4 @@ small a {
 
 small:hover, small a:hover {
     color: rgb(55, 55, 255);
-}
-
-article:hover > p {
-    background-color: whitesmoke;
-}
-
-article:first-of-type {
-    background-color: rgb(148, 206, 148);
-}
-
-article:nth-child(1n+3) {
-    background-color: lightblue;
-}
-
-article:nth-child(odd):hover {
-    box-shadow: 5px 5px 50px red;
-}
-
-article:nth-child(even):hover {
-    box-shadow: 5px 5px 50px blue;
 }
