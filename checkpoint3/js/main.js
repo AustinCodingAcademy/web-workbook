@@ -34,7 +34,8 @@ $(document).ready(function() {
   const apprenticeStats = $("#apprentice-stats");
   const nextWeapon = $("#next-weapon-level");
   const announceWin = $("#max-level");
-  const goldIconHTML = '<img id="currency-img" draggable="false" src="img/gold.png" alt="a pile of gold"> ';
+  const goldIconHTML =
+    '<img id="currency-img" draggable="false" src="img/gold.png" alt="a pile of gold"> ';
 
   // upgrade costs
   const cost_HireApprentice = 200;
@@ -248,7 +249,7 @@ $(document).ready(function() {
     currency -= cost_HireApprentice;
     playerHasApprentice = true;
     $(apprenticeUpgrade1).addClass("unlocked");
-    currentUpgradeList.append('<li>Hired Apprentice</li>')
+    currentUpgradeList.append("<li>Hired Apprentice</li>");
     $(apprenticeStats).removeClass("hidden");
     updateCounter();
     apprenticeStart();
@@ -260,7 +261,7 @@ $(document).ready(function() {
     apprenticeHasUpgrade1 = true;
     currency -= cost_ApprenUpgrade1;
     $(apprenticeUpgrade2).addClass("unlocked");
-    currentUpgradeList.append('<li>Apprentice Upgrade 1</li>')
+    currentUpgradeList.append("<li>Apprentice Upgrade 1</li>");
     updateCounter();
   }
   function shop_buyApprenticeUpgrade2() {
@@ -269,7 +270,7 @@ $(document).ready(function() {
     apprenticeHasUpgrade2 = true;
     currency -= cost_ApprenUpgrade2;
     $(apprenticeUpgrade3).addClass("unlocked");
-    currentUpgradeList.append('<li>Apprentice Upgrade 2</li>')
+    currentUpgradeList.append("<li>Apprentice Upgrade 2</li>");
     updateCounter();
   }
   function shop_buyApprenticeUpgrade3() {
@@ -277,7 +278,7 @@ $(document).ready(function() {
     apprenticeEfficiency = apprenticeHammerEfficiency / 5;
     apprenticeHasUpgrade3 = true;
     currency -= cost_ApprenUpgrade3;
-    currentUpgradeList.append('<li>Apprentice Upgrade 3</li>')
+    currentUpgradeList.append("<li>Apprentice Upgrade 3</li>");
     updateCounter();
   }
 
@@ -286,7 +287,7 @@ $(document).ready(function() {
     currency -= cost_HammerUpgrade1;
     playerHasHammerUpgrade1 = true;
     $(hammerUpgrade2).addClass("unlocked");
-    currentUpgradeList.append('<li>Hammer Upgrade 1</li>')
+    currentUpgradeList.append("<li>Hammer Upgrade 1</li>");
     updateCounter();
   }
   function shop_buyHammerUpgrade2() {
@@ -295,7 +296,7 @@ $(document).ready(function() {
     playerHasHammerUpgrade2 = true;
     $(hammerUpgrade3).addClass("unlocked");
     $(hireApprentice).addClass("unlocked");
-    currentUpgradeList.append('<li>Hammer Upgrade 2</li>')
+    currentUpgradeList.append("<li>Hammer Upgrade 2</li>");
     updateCounter();
   }
   function shop_buyHammerUpgrade3() {
@@ -303,14 +304,14 @@ $(document).ready(function() {
     currency -= cost_HammerUpgrade3;
     playerHasHammerUpgrade3 = true;
     $(hammerUpgrade4).addClass("unlocked");
-    currentUpgradeList.append('<li>Hammer Upgrade 3</li>')
+    currentUpgradeList.append("<li>Hammer Upgrade 3</li>");
     updateCounter();
   }
   function shop_buyHammerUpgrade4() {
     playerHammerEfficiency *= 2;
     currency -= cost_HammerUpgrade4;
     playerHasHammerUpgrade4 = true;
-    currentUpgradeList.append('<li>Hammer Upgrade 4</li>')
+    currentUpgradeList.append("<li>Hammer Upgrade 4</li>");
     updateCounter();
   }
 
@@ -461,7 +462,7 @@ $(document).ready(function() {
 
     // level Up!
     if (points >= numberOfClicksToNextLevel) {
-      numberOfClicksToNextLevel = Math.floor(numberOfClicksToNextLevel*1.5);
+      numberOfClicksToNextLevel = Math.floor(numberOfClicksToNextLevel * 1.5);
       currentLevel++;
 
       // this if/else just handles file names
@@ -491,7 +492,7 @@ $(document).ready(function() {
    * desc: helper function that replaces text of player stats when needed
    */
   function updatePlayerStats() {
-    stats_Player.text("xp/click: " + playerHammerEfficiency);  
+    stats_Player.text("xp/click: " + playerHammerEfficiency);
   }
 
   /**
@@ -499,9 +500,8 @@ $(document).ready(function() {
    * desc: helper function that replaces text of player stats when needed
    */
   function updateApprenticeStats() {
-    stats_Apprentice.text("xp/sec: " + apprenticeEfficiency);  
+    stats_Apprentice.text("xp/sec: " + apprenticeEfficiency);
   }
-
 
   /**
    * function: hammerAnimateDown()
