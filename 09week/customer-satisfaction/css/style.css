@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #F3F3F4;
+    color: #333;
+    padding: 20px;
+  }
+  
+  form {
+    width: 400px;
+    margin: 0 auto 0;
+  }
+  
+  .input-holder {
+    position: relative;
+    margin: 0 0 20px;
+  }
+  
+  input,
+  textarea {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    resize: none;
+    transition: .3s;
+  }
+  input:focus,
+  textarea:focus {
+    border: 2px solid #999;
+    outline: none;
+  }
+  
+  textarea {
+    min-height: 100px;
+  }
+  
+  .message {
+    position: absolute;
+    z-index: 9;
+    display: none;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #D9585C;
+    color: #fff;
+    text-align: center;
+  }
+  .message:after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    display: block;
+    margin-left: -10px;
+    border: solid;
+    border-color: #D9585C transparent #D9585C;
+    border-width: 0 10px 10px;
+  }
+  
+  .is-valid {
+    border-color: #AAD661 !important;
+    transition: 0;
+  }
+  
+  .not-valid {
+    border-color: #D7595F;
+    transition: 0;
+  }
+  .not-valid + .message {
+    display: block !important;
+  }
+  
+  .submit {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background: transparent;
+    color: #ccc;
+    transition: .3s;
+  }
+  .submit:hover {
+    color: #AAD661;
+    border-color: #AAD661;
+  }
+  
