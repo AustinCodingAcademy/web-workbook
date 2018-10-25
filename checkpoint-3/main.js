@@ -20,4 +20,8 @@ function timer()
      clearInterval(counter);
      return;
   }
+
+  document.getElementById("timer").innerHTML=count + " secs"; 
+
 }
+
