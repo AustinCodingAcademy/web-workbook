@@ -19,9 +19,9 @@ var items = {
   bucket: 0,
   plank: 0,
   rope: 0,
-  ropeLadder: 0, 
+  ropeLadder: 0,
   mat: 0,
-  wickerBasket: 0, 
+  wickerBasket: 0,
   woodenLattice: 0,
   ceramicLantern: 0,
   ceramicPot: 0,
@@ -142,13 +142,13 @@ function openAShop(origin) {
 
 function constructWoodWorkshop(origin) {
   var current = document.getElementById("inGame" + origin);
-  if (bamboo >= 1000 && wood >= 1000 && jute >=100) {
+  if (bamboo >= 1000 && wood >= 1000 && jute >= 100) {
     bamboo -= 1000;
     wood -= 1000;
     jute -= 100;
     current.classList.remove("shopClosed");
-    for (i=0; i <= closedShops.length; i++){
-      if (closedShops[i] === "woodWorkShop"){
+    for (i = 0; i <= closedShops.length; i++) {
+      if (closedShops[i] === "woodWorkShop") {
         closedShops.splice(i, 1);
       }
     }
@@ -168,8 +168,8 @@ function constructQuarry(origin) {
     wood -= 1000;
     stone -= 1000;
     current.classList.remove("shopClosed");
-    for (i=0; i <= closedShops.length; i++){
-      if (closedShops[i] === "quarry"){
+    for (i = 0; i <= closedShops.length; i++) {
+      if (closedShops[i] === "quarry") {
         closedShops.splice(i, 1);
       }
     }
@@ -187,8 +187,8 @@ function constructHunter(origin) {
     resen -= 100;
     jute -= 200;
     current.classList.remove("shopClosed");
-    for (i=0; i <= closedShops.length; i++){
-      if (closedShops[i] === "hunter"){
+    for (i = 0; i <= closedShops.length; i++) {
+      if (closedShops[i] === "hunter") {
         closedShops.splice(i, 1);
       }
     }
@@ -208,8 +208,8 @@ function constructWeaver(origin) {
     items.plank -= 200;
     items.dryedJute -= 200;
     current.classList.remove("shopClosed");
-    for (i=0; i <= closedShops.length; i++){
-      if (closedShops[i] === "weaver"){
+    for (i = 0; i <= closedShops.length; i++) {
+      if (closedShops[i] === "weaver") {
         closedShops.splice(i, 1);
       }
     }
@@ -229,8 +229,8 @@ function constructWell(origin) {
     items.plank -= 100;
     items.bucket -= 1;
     current.classList.remove("shopClosed");
-    for (i=0; i <= closedShops.length; i++){
-      if (closedShops[i] === "well"){
+    for (i = 0; i <= closedShops.length; i++) {
+      if (closedShops[i] === "well") {
         closedShops.splice(i, 1);
       }
     }
@@ -250,8 +250,8 @@ function constructDryer(origin) {
     bamboo -= 500
     items.dryedJute -= 200;
     current.classList.remove("shopClosed");
-    for (i=0; i <= closedShops.length; i++){
-      if (closedShops[i] === "dryer"){
+    for (i = 0; i <= closedShops.length; i++) {
+      if (closedShops[i] === "dryer") {
         closedShops.splice(i, 1);
       }
     }
@@ -269,8 +269,8 @@ function constructPottery(origin) {
     items.plank -= 1000;
     items.dryedJute -= 300;
     current.classList.remove("shopClosed");
-    for (i=0; i <= closedShops.length; i++){
-      if (closedShops[i] === "pottery"){
+    for (i = 0; i <= closedShops.length; i++) {
+      if (closedShops[i] === "pottery") {
         closedShops.splice(i, 1);
       }
     }
@@ -288,8 +288,8 @@ function constructSmithy(origin) {
     items.mat -= 300;
     iron -= 1500;
     current.classList.remove("shopClosed");
-    for (i=0; i <= closedShops.length; i++){
-      if (closedShops[i] === "smithy"){
+    for (i = 0; i <= closedShops.length; i++) {
+      if (closedShops[i] === "smithy") {
         closedShops.splice(i, 1);
       }
     }
@@ -308,8 +308,8 @@ function constructLure(origin) {
     items.plank -= 500;
     iron -= 1000;
     current.classList.remove("shopClosed");
-    for (i=0; i <= closedShops.length; i++){
-      if (closedShops[i] === "lure"){
+    for (i = 0; i <= closedShops.length; i++) {
+      if (closedShops[i] === "lure") {
         closedShops.splice(i, 1);
       }
     }
@@ -328,8 +328,8 @@ function constructLoom(origin) {
     items.plank -= 500;
     iron -= 1000;
     current.classList.remove("shopClosed");
-    for (i=0; i <= closedShops.length; i++){
-      if (closedShops[i] === "loom"){
+    for (i = 0; i <= closedShops.length; i++) {
+      if (closedShops[i] === "loom") {
         closedShops.splice(i, 1);
       }
     }
@@ -348,8 +348,8 @@ function constructGlass(origin) {
     items.mat -= 500;
     iron -= 1000;
     current.classList.remove("shopClosed");
-    for (i=0; i <= closedShops.length; i++){
-      if (closedShops[i] === "glass"){
+    for (i = 0; i <= closedShops.length; i++) {
+      if (closedShops[i] === "glass") {
         closedShops.splice(i, 1);
       }
     }
@@ -364,8 +364,8 @@ function constructPier(origin) {
   var current = document.getElementById("inGame" + origin);
   if (items.stoneBlock >= 2000 && items.plank >= 1500 && items.cloth >= 750 && items.string >= 750) {
     current.classList.remove("shopClosed");
-    for (i=0; i <= closedShops.length; i++){
-      if (closedShops[i] === "pier"){
+    for (i = 0; i <= closedShops.length; i++) {
+      if (closedShops[i] === "pier") {
         closedShops.splice(i, 1);
       }
     }
@@ -466,169 +466,188 @@ for (var i = 0; i < base_resource.length; i++) {
   });
 }
 
-function mineItem(origin){
-  switch(origin){
-      case "fireWood":
-      if(wood >= 2){
+function mineItem(origin) {
+  switch (origin) {
+    case "fireWood":
+      if (wood >= 2) {
         wood -= 2;
-      updater(); mine(origin);
-      }else{
+        updater();
+        mine(origin);
+      } else {
         alert("Not enough Wood. This requires 2 wood.")
       }
       break;
-      case "stoneBlock":
-      if(stone >= 10){
+    case "stoneBlock":
+      if (stone >= 10) {
         stone -= 10;
-      updater(); mine(origin);
-      }else{
+        updater();
+        mine(origin);
+      } else {
         alert("Not enough stone. This requires 10 stone.")
       }
       break;
-      case "dryedJute":
-      if(jute >= 5 && items.fireWood >= 2){
+    case "dryedJute":
+      if (jute >= 5 && items.fireWood >= 2) {
         jute -= 5;
         items.fireWood -= 2
-        updater(); mine(origin);
-      }else{
+        updater();
+        mine(origin);
+      } else {
         alert("Not enough jute. This requires 5 jute.")
       }
       break;
-      case "jackPlane":
-      if(wood >= 1 && iron >=1){
+    case "jackPlane":
+      if (wood >= 1 && iron >= 1) {
         wood--;
         iron--;
-        updater(); mine(origin);
-      }else{
+        updater();
+        mine(origin);
+      } else {
         alert("Not Enough materials. this requires 1 wood and 1 iron.")
       }
       break;
-      case "bucket":
-      if(wood >= 4 && resen >= 2){
+    case "bucket":
+      if (wood >= 4 && resen >= 2) {
         wood -= 4;
         resen -= 2;
-        updater(); mine(origin);
-      }else{
+        updater();
+        mine(origin);
+      } else {
         alert("Not Enough materials. this requires 4 wood and 2 resin.")
       }
       break;
-      case "plank":
-      if(wood >= 5 && items.jackPlane >= 1){
+    case "plank":
+      if (wood >= 5 && items.jackPlane >= 1) {
         wood -= 5;
-        items.jackPlane --;
-        updater(); mine(origin);
-      }else{
+        items.jackPlane--;
+        updater();
+        mine(origin);
+      } else {
         alert("Not enough materials. This requires 5 wood and a jack plane.")
       }
       break;
-      case "rope":
-      if(vine >= 10 && resen >= 3){
-        updater(); mine(origin);
-      }else{
+    case "rope":
+      if (vine >= 10 && resen >= 3) {
+        updater();
+        mine(origin);
+      } else {
         alert("Not enough materials. This requires 10 vines and 3 resin.")
       }
       break;
-      case "ropeLadder":
-        if(items.rope >= 10 && items.plank >= 5){
-          items.rope -= 10;
-          items.plank -= 5;
-          updater(); mine(origin);
-        }else{
-          alert("Not enough materials. This item requires 10 rope and 5 planks")
-        }
+    case "ropeLadder":
+      if (items.rope >= 10 && items.plank >= 5) {
+        items.rope -= 10;
+        items.plank -= 5;
+        updater();
+        mine(origin);
+      } else {
+        alert("Not enough materials. This item requires 10 rope and 5 planks")
+      }
       break;
-      case "mat":
-      if(palmLeaf >= 10){
+    case "mat":
+      if (palmLeaf >= 10) {
         palmLeaf -= 10;
-        updater(); mine(origin);
-      }else{
+        updater();
+        mine(origin);
+      } else {
         alert("Not Enough palm leaves. This item requires 10 palm leaves.")
       }
       break;
-      case "wickerBasket":
-      if(palmLeaf >= 20){
+    case "wickerBasket":
+      if (palmLeaf >= 20) {
         palmLeaf -= 20;
-        updater(); mine(origin);
-      }else{
+        updater();
+        mine(origin);
+      } else {
         alert("Not Enough palm leaves. This item requires 20 palm leaves.")
       }
       break;
-      case "woodenLattice":
-      if(wood >= 100 && items[rope] >= 10){
+    case "woodenLattice":
+      if (wood >= 100 && items[rope] >= 10) {
         wood -= 10;
         items.rope -= 10;
-        updater(); mine(origin);
-      }else{
+        updater();
+        mine(origin);
+      } else {
         alert("Not Enough materials. This item requires 100 wood and 10 rope.")
       }
       break;
-      case "ceramicLantern":
-      if(items.stoneBlock >= 2 && items.fireWood >= 100){
+    case "ceramicLantern":
+      if (items.stoneBlock >= 2 && items.fireWood >= 100) {
         items.stoneBlock -= 2;
         items.fireWood -= 100;
-        updater(); mine(origin);
-      }else{
+        updater();
+        mine(origin);
+      } else {
         alert("Not Enough materials. This item requires 2 stone block and 100 firewood")
       }
       break;
-      case "ceramicPot":
-      if(items.stoneBlock >= 2 && items.fireWood >= 100){
+    case "ceramicPot":
+      if (items.stoneBlock >= 2 && items.fireWood >= 100) {
         items.stoneBlock -= 2;
         items.fireWood -= 100;
-        updater(); mine(origin);
-      }else{
+        updater();
+        mine(origin);
+      } else {
         alert("Not Enough materials. This item requires 2 stone block and 100 firewood")
       }
       break;
-      case "cog":
-      if(items.fireWood >= 1000 && iron >= 500){
+    case "cog":
+      if (items.fireWood >= 1000 && iron >= 500) {
         items.fireWood -= 1000;
         iron -= 500;
-        updater(); mine(origin);
-      }else{
+        updater();
+        mine(origin);
+      } else {
         alert("Not Enough materials. This requires 1000 fire wood and 500 iron")
       }
       break;
-      case "lampOil":
-      if(items.fireWood >= 300 && resen >= 100){
+    case "lampOil":
+      if (items.fireWood >= 300 && resen >= 100) {
         items.fireWood -= 300;
         resen -= 100;
-        updater(); mine(origin);
-      }else{
+        updater();
+        mine(origin);
+      } else {
         alert("Not Enough materials. This requires 300 fire wood and 100 resin")
       }
       break;
-      case "glassBottle":
-      if(items.stoneBlock >= 10 && items.fireWood >= 500){
+    case "glassBottle":
+      if (items.stoneBlock >= 10 && items.fireWood >= 500) {
         items.stoneBlock -= 10;
         items.fireWood -= 500;
-        updater(); mine(origin);
-      }else{
+        updater();
+        mine(origin);
+      } else {
         alert("Not Enough materials. This requires 10 stone blocks and 500 firewood")
       }
       break;
-      case "lense":
-      if(items.stoneBlock >= 100 && items.fireWood >= 1000){
-        updater(); mine(origin);
-      }else{
+    case "lense":
+      if (items.stoneBlock >= 100 && items.fireWood >= 1000) {
+        updater();
+        mine(origin);
+      } else {
         alert("Not Enough materials. This requires 100 stone blocks and 1000 firewood")
       }
       break;
-      case "string":
-      if(vine >= 50 && items.fireWood >= 300){
+    case "string":
+      if (vine >= 50 && items.fireWood >= 300) {
         vine -= 50;
         items.fireWood -= 300;
         updater();
-        updater(); mine(origin);
-      }else{
+        updater();
+        mine(origin);
+      } else {
         alert("Not Enough Wood")
       }
       break;
-      case "cloth":
-      if(items.string >= 100){
+    case "cloth":
+      if (items.string >= 100) {
         items.string -= 100
         updater();
-        updater(); mine(origin);
-      }else{
+        updater();
+        mine(origin);
+      } else {
         alert("Not enough string. This requires 100 string")
       }
       break;
@@ -638,20 +657,17 @@ function mineItem(origin){
 
 
 
-function mine(origin){
-      document.getElementById("itemInventoryWood").innerHTML = wood;
-      document.getElementById("itemInventoryStone").innerHTML = stone;
-      document.getElementById("itemInventoryIron").innerHTML = iron;
-      document.getElementById("itemInventoryJute").innerHTML = jute;
-      document.getElementById("itemInventoryresen").innerHTML = resen;
-      document.getElementById("itemInventoryPalmLeaf").innerHTML = palmLeaf;
-      items[origin]++;
-      var originFormat = origin.charAt(0).toUpperCase() + origin.slice(1);
-      document.getElementById("itemInventory"+ originFormat).innerHTML = items[origin];
+function mine(origin) {
+  document.getElementById("itemInventoryJute").innerHTML = jute;
+  document.getElementById("itemInventoryresen").innerHTML = resen;
+  document.getElementById("itemInventoryPalmLeaf").innerHTML = palmLeaf;
+  items[origin]++;
+  var originFormat = origin.charAt(0).toUpperCase() + origin.slice(1);
+  document.getElementById("itemInventory" + originFormat).innerHTML = items[origin];
 }
 
-function updater(){
-      document.getElementById("currentWood").innerHTML = wood;
-      document.getElementById("currentStone").innerHTML = stone;
-      document.getElementById("currentIron").innerHTML = iron;
+function updater() {
+  document.getElementById("currentWood").innerHTML = wood;
+  document.getElementById("currentStone").innerHTML = stone;
+  document.getElementById("currentIron").innerHTML = iron;
 }
