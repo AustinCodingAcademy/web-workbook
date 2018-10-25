@@ -10,13 +10,29 @@ body {
   overflow: hidden;
 }
 
+#message-display {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 30px;
+  color: rgba(255, 229, 202, 0.79);
+  filter: opacity(.4);
+  height: 50px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 3s ease-in-out;
+}
+
 #screen-1 {
-  background-image: url(https://orig00.deviantart.net/9fb5/f/2015/289/a/1/space_invader_gif_by_ivanrussiansky-d9dccma.gif);
+  background-image: linear-gradient(blue, blue), url(https://media1.tenor.com/images/860512d0c5d14f6127305a1286ff9fb8/tenor.gif?itemid=4992695);
+  filter: opacity(.5);
+  background-blend-mode: saturation;
   background-size: 125px 125px;
   background-position: center;
   cursor: crosshair;
-  border: 3px rgba(74, 255, 14, 0.536) dashed;
-  margin-top: 100px;
+  /* border: 3px red dashed; */
+  margin-top: 50px;
   width: 125px;
   height: 125px;
   display: grid;
@@ -32,7 +48,7 @@ body {
 }
 
 #screen-1:active {
-  border: 4px rgba(41, 255, 48, 0.694) dashed;
+  border: 4px red dashed;
   background-size: 150px 150px;
   transform: scale(200, 80);
   transition: all 2s ease-out;
@@ -63,16 +79,128 @@ body {
 #points {
   font-family: 'Press Start 2P', cursive;
   font-size: 30px;
-  color: rgba(0, 255, 0, 0.509);
+  color: rgba(255, 229, 202, 0.79);
+  filter: opacity(.4);
   height: 50px;
   width: 200px;
   margin-top: 50px;
-  border: rgba(10, 255, 10, 0.523) 5px double;
+  /* border:red 5px double; */
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+.powerup1 {
+  margin-top: 30px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 22px;
+  color: rgba(255, 229, 202, 0.79);
+  filter: opacity(.4);
+
+  height: 50px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 2s ease-out;
+}
+
+.red {
+  border: red 3px dotted;
+}
+
+.orange {
+  border: orange 3px dotted;
+}
+
+.yellow {
+  border: yellow 3px dotted;
+}
+
+.green {
+  border: green 3px dotted;
+}
+
+.blue {
+  border: blue 3px dotted;
+}
+
+.indigo {
+  border: indigo 3px dotted;
+}
+
+.violet {
+  border: violet 3px dotted;
+}
 
 
+/* .powerup2 {
+  margin-top: 30px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 22px;
+  color: rgba(255, 229, 202, 0.79);
+  border: orange 3px dotted;
+  filter: opacity(.4);
+  height: 50px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.powerup3 {
+  margin-top: 30px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 22px;
+  color: rgba(255, 229, 202, 0.79);
+  border: yellow 3px dotted;
+  filter: opacity(.4);
+  height: 50px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.powerup4 {
+  margin-top: 30px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 22px;
+  color: rgba(255, 229, 202, 0.79);
+  border: green 3px dotted;
+  filter: opacity(.4);
+  height: 50px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.powerup5 {
+  margin-top: 30px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 22px;
+  color: rgba(255, 229, 202, 0.79);
+  border: blue 3px dotted;
+  filter: opacity(.4);
+  height: 50px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.powerup6 {
+  margin-top: 30px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 22px;
+  color: rgba(255, 229, 202, 0.79);
+  border: indigo 3px dotted;
+  filter: opacity(.4);
+  height: 50px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.powerup7 {
+  margin-top: 30px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 22px;
+  color: rgba(255, 229, 202, 0.79);
+  border: violet 3px dotted;
+  filter: opacity(.4);
+  height: 50px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0);
+} */
