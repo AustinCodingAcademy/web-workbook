@@ -1,52 +1,71 @@
 "use strict";
-alert("Hello! I am an alert box!!");
-$(document).ready(function() {
-  var data = {
-    totalRevs: 360,
-    totalCurrent: 0,
-    totalRPS: 0
+
+//initial number of cookies
+
+  var num = 0;
+  window.onload = function() {
+    var name = prompt("What is your name");
+
+    var space = document.getElementById("space");
+
+    space.innerHTML = name + "'s Bakery";
   };
 
-  setInterval(goGo, 1000);
+  var cookie = document.getElementById("cookie");
 
-  function goGo() {
-    data.totalRevs += data.totalRPS;
-    data.totalCurrent += data.totalRPS;
-    $("#cookie").css({ transform: "rotate(" + data.totalRevs + "deg)" });
-    updateReport();
-  }
+  function cookieClick() {
+    num += 1;
 
-  function updateReport() {
-    $("#currentTotal").text(Math.floor(data.totalCurrent));
-    $("#rps").text((data.totalRPS / 70.4).toFixed(3));
-  }
+    var numbers = document.getElementById("numbers");
 
-  $("#cookie").click(function() {
-    data.totalRevs++;
-    data.totalCurrent++;
-    updateReport();
-  });
+    //upgrade level for printing
+    var upgradeLevel = document.getElementById("upgradeLevel");
 
-  $(".button").click(function() {
-    var addVal = $(this).data("cost");
-    if ($(this).data("cost") < data.totalCurrent) {
-      data.totalCurrent -= parseFloat(
-        $(this)
-          .data("cost")
-          .toPrecision(2)
-      );
-      data.totalRPS += parseFloat($(this).data("val"));
-      $(this)
-        .children("span")
-        .html(
-          parseInt(
-            $(this)
-              .children("span")
-              .html() * 1.15
-          )
-        );
-      $(this).data("cost", parseInt($(this).data("cost") * 1.15));
+    numbers.innerHTML = num;
+    //Regular cookie eater! upgrade to 2x
+    if (num >= 30) {
+      num += 2;
+      upgradeLevel.innerHTML = "Regular cookie eater!";
     }
-    updateReport();
+
+    //automatic Cookie Lover to 10x
+    if (num >= 500) {
+      num += 10;
+      upgradeLevel.innerHTML = "Cookie Lover";
+    }
+
+    //automatic Crazy cookie eater to 30x
+    if (num >= 1000) {
+      num += 30;
+      upgradeLevel.innerHTML = "Crazy cookie eater!";
+    }
+
+    //automatic Born to eat cookies! upgrade to 1000x
+    if (num >= 100000) {
+      num += 2500;
+      upgradeLevel.innerHTML = "Born to eat cookies!";
+    }
+  }
+  //* Start of #number animation
+  $("#numbers")
+    .mouseover(function() {
+      $(this).css("opacity", ".1");
+    })
+    .mouseout(function() {
+      $(this).css("opacity", "1.0");
+    });
+  $("#numbers").click(function() {
+    $("#numbers").fadeIn("slow", function() {
+      //* Animation complete
+    });
   });
-});
+  //* chnaging sizd of cookie
+  var image1 = document.getElementById("image-cookie");
+  image1.onclick = function() {
+    if (image1.style.width == "300px") {
+      image1.style.width = "275px";
+    } else {
+      image1.style.width = "300px";
+    }
+  };
+
