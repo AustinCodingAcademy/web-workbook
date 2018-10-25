@@ -22,7 +22,7 @@ function closeInventory() {
   var invContainer = document.getElementById("fullInventory");
   invContainer.style.display = "none";
 }
-//--------------------------------------Open/Close Buildings
+//---------------------------------------Open/Close Buildings
 
 var shop_list = document.querySelectorAll(".shopController");
 for (var i = 0; i < shop_list.length; i++) {
