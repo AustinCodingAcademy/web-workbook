@@ -67,7 +67,7 @@ $(document).ready(function() {
   var playerHammerEfficiency = 1;
   var apprenticeHammerEfficiency = 1;
   var apprenticeEfficiency = apprenticeHammerEfficiency / 5;
-  var currentLevel = 1;
+  var currentLevel = 0;
   var numberOfClicksToNextLevel = 100;
   var levelIncrement = numberOfClicksToNextLevel;
   var timeout = 1000;
@@ -269,7 +269,6 @@ $(document).ready(function() {
     currentUpgradeList.append("<li>Apprentice Upgrade 1</li>");
     updateCounter();
     updateLog("", apprenticeUpgrade1);
-
   }
   function shop_buyApprenticeUpgrade2() {
     apprenticeHammerEfficiency = 10;
@@ -522,7 +521,7 @@ $(document).ready(function() {
    * desc: helper function that replaces the log text with given str
    */
   function updateLog(str, item) {
-    if(item) log.text(str + item.text());
+    if (item) log.text(str + item.text());
     else log.text(str);
   }
 
