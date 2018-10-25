@@ -22,19 +22,19 @@
             <div class="woodIcon"></div>
             <div>Wood</div>
             <!--display for current value of wood-->
-            <div id="currentWood" class="currentResorceCount">0</div>
+            <div id="currentWood" class="currentResorceCount"></div>
           </div>
           <div class="stoneInventoryContainer">
             <div class="stoneIcon"></div>
             <div>stone</div>
             <!--display for current value of Stone-->
-            <div id="currentStone" class="currentResorceCount">0</div>
+            <div id="currentStone" class="currentResorceCount"></div>
           </div>
           <div class="ironInventoryContainer">
             <div class="ironIcon"></div>
             <div>Iron</div>
             <!--display for current value of iron-->
-            <div id="currentIron" class="currentResorceCount">0</div>
+            <div id="currentIron" class="currentResorceCount"></div>
           </div>
         </div>
         <div class="stats">
@@ -42,13 +42,13 @@
             <div class="waterIcon"></div>
             <div>Water</div>
             <!--display for current value of water-->
-            <div id="currentWater" class="currentResorceCount">0</div>
+            <div id="currentWater" class="currentResorceCount"></div>
           </div>
           <div class="foodInventoryContainer">
             <div class="foodIcon"></div>
             <div>Food</div>
             <!--display for current value of food-->
-            <div id="currentFood" class="currentResorceCount">0</div>
+            <div id="currentFood" class="currentResorceCount"></div>
           </div>
           <div class="inventoryOpenContainer">
             <div class="inventoryOpenButton">Open Inventory</div>
@@ -74,64 +74,64 @@
       <div class="buildingsContainer">
         <div class="buildingOuterContainer">
           <div>Outpost</div>
-          <div id = "inGameOutpost" class="outpost"></div>
+          <div id = "inGameOutpost" class="outpost shopController"  data-origin = "outpost"></div>
         </div>
         <div class="buildingOuterContainer">
           <div>Wood Workshop</div>
-          <div id = "inGameOutpost" class="woodWorkshop"></div>
+          <div id = "inGamewoodWorkShop" class="woodWorkShop shopController"  data-origin = "woodWorkShop"></div>
         </div>
         <div class="buildingOuterContainer">
           <div>Quarry</div>
-          <div id = "inGameQuarry" class="quarry"></div>
+          <div id = "inGameQuarry" class="quarry shopController"  data-origin = "quarry"></div>
         </div>
         <div class="buildingOuterContainer">
           <div>Hunters Tent</div>
-          <div id = "inGameHunter" class="hunter"></div>
+          <div id = "inGameHunter" class="hunter shopController"  data-origin = "hunter"></div>
         </div>
         <div class="buildingOuterContainer">
           <div>Weaving Workshop</div>
-          <div id = "inGameWeaver" class="weaver"></div>
+          <div id = "inGameWeaver" class="weaver shopController"  data-origin = "weaver"></div>
         </div>
         <div class="buildingOuterContainer">
           <div>Well</div>
-          <div id = "inGameWell" class="well"></div>
+          <div id = "inGameWell" class="well shopController"  data-origin = "well"></div>
         </div>
         <div class="buildingOuterContainer">
           <div>Food Dryer</div>
-          <div id = "inGameDryer" class="dryer"></div>
+          <div id = "inGameDryer" class="dryer shopController"  data-origin = "dryer"></div>
         </div>
         <div class="buildingOuterContainer">
           <div>Pottery Workshop</div>
-          <div id = "inGamePottery" class="pottery"></div>
+          <div id = "inGamePottery" class="pottery shopController"  data-origin = "pottery"></div>
         </div>
         <div class="buildingOuterContainer">
           <div>Smithy</div>
-          <div id = "inGameSmithy" class="smithy"></div>
+          <div id = "inGameSmithy" class="smithy shopController"  data-origin = "smithy"></div>
         </div>
         <div class="buildingOuterContainer">
           <div>Lure Workbench</div>
-          <div id = "inGameLure" class="lure"></div>
+          <div id = "inGameLure" class="lure shopController"  data-origin = "lure"></div>
         </div>
         <div class="buildingOuterContainer">
           <div>Loom</div>
-          <div id = "inGameLoom" class="loom"></div>
+          <div id = "inGameLoom" class="loom shopController"  data-origin = "loom"></div>
         </div>
         <div class="buildingOuterContainer">
           <div>Glass Workshop</div>
-          <div id = "inGameGlass" class="glass"></div>
+          <div id = "inGameGlass" class="glass shopController"  data-origin = "glass"></div>
         </div>
         <div class="buildingOuterContainer">
           <div>Pier</div>
-          <div id = "inGamePier" class="pier"></div>
+          <div id = "inGamePier" class="pier shopController"  data-origin = "pier"></div>
         </div>
       </div>
       <div class="rawMaterialContainer">
         <div class="minertitle">Mine For Resources</div>
         <div class="resourceMiner">
-          <div id= "minerBamboo" class="bambooMiner miner"></div>
-          <div id= "minerWood" class="woodMiner miner"></div>
-          <div id= "minerStone" class="stoneMiner miner"></div>
-          <div id= "minerIron" class="ironMiner miner"></div>
+          <div id= "minerBamboo" class="bambooMiner miner" data-origin = "bamboo"></div>
+          <div id= "minerWood" class="woodMiner miner" data-origin = "wood"></div>
+          <div id= "minerStone" class="stoneMiner miner" data-origin = "stone"></div>
+          <div id= "minerIron" class="ironMiner miner" data-origin = "iron"></div>
         </div>
       </div>
     </div>
@@ -150,22 +150,22 @@
         <div class="itemsGrid">
           <div class="itemGrid1 inventoryItem">
             <div class="innerInventoryItem bamboo">
-              <div id="itemBamboo">0</div>
+              <div id="itemInventoryBamboo"></div>
             </div>
           </div>
           <div class="itemGrid2 inventoryItem">
             <div class="innerInventoryItem jute">
-              <div id="itemInventoryJute">0</div>
+              <div id="itemInventoryJute"></div>
             </div>
           </div>
           <div class="itemGrid3 inventoryItem">
             <div class="innerInventoryItem palmLeaf">
-              <div id="itemInventoryPalmLeaf">0</div>
+              <div id="itemInventoryPalmLeaf"></div>
             </div>
           </div>
           <div class="itemGrid4 inventoryItem">
             <div class="innerInventoryItem wood">
-              <div id="itemInventoryWood">0</div>
+              <div id="itemInventoryWood"></div>
             </div>
           </div>
           <div class="itemGrid5 inventoryItem">
@@ -348,197 +348,259 @@
         </div>
       </div>
     </div>
-    <div class="outpostItems itemConstructBuilding" data-origin = "outpost">
-      <div class="closeItemConstructBuilding"></div>
-      <div class="creatableItemsContainer">
+    <div id= "outpost" class="outpostItems itemConstructBuilding" data-origin = "outpost">
+      <div class="closeItemConstructBuilding">
+        <div class="shopCloseController" data-origin = "outpost">X</div>
+      </div>
+      <div class="creatableItems">
+        <div class="buildingImageContainer"><div class="outpostLarge"></div></div>
+        <div class="itemsAvailableCreate">
           <div class="fireWoodCreate outterItemCreate">
             <div id = "fireWoodRequiredMaterials"class="requiredMaterials"></div>
-            <div id = "fireWoodMiner" class="itemMiner fireWood"></div>
+            <div id = "fireWoodMiner" class="itemMiner fireWood" data-origin = "fireWood" ></div>
             <div id="fireWoodMakeAmmount"></div>
           </div>
-      </div>
-    </div>
-    <div class="quarryItems itemConstructBuilding" data-origin = "quarry">
-      <div class="closeItemConstructBuilding"></div>
-      <div class="creatableItemscontainer">
-        <div class="minerContainer">
-          <div class="stoneBlockCreate outterItemCreate">
-            <div id = "stoneBlockRequiredMaterials"class="requiredMaterials"></div>
-            <div id = "stoneBlockMiner" class="itemMiner stoneBlock"></div>
-            <div id="stoneBlockMakeAmmount"></div>
-          </div>        
         </div>
       </div>
     </div>
-    <div class="hunterItems itemConstructBuilding" data-origin = "hunter">
-      <div class="closeItemConstructBuilding"></div>
+    <div id= "quarry" class="quarryItems itemConstructBuilding" data-origin = "quarry">
+      <div class="closeItemConstructBuilding">
+        <div class="shopCloseController" data-origin = "quarry">X</div>
+      </div>
       <div class="creatableItems">
-          <div class="dryedJuteCreate outterItemCreate">
-            <div id = "dryedJuteRequiredMaterials"class="requiredMaterials"></div>
-            <div id = "dryedJuteMiner" class="itemMiner driedJute"></div>
-            <div id="dryedJuteMakeAmmount"></div>
+        <div class="buildingImageContainer"><div class="quarryLarge"></div></div>
+        <div class="itemsAvailableCreate">
+          <div class="stoneBlockCreate outterItemCreate">
+            <div id = "stoneBlockRequiredMaterials"class="requiredMaterials"></div>
+            <div id = "stoneBlockMiner" class="itemMiner stoneBlock" data-origin = "stoneBlock" ></div>
+            <div id="stoneBlockMakeAmmount"></div>
           </div>
+        </div>
       </div>
     </div>
-    <div class="woodWorkshopItems itemConstructBuilding" data-origin = "woodWorkshop">
-      <div class="closeItemConstructBuilding"></div>
+    <div id= "hunter" class="hunterItems itemConstructBuilding" data-origin = "hunter">
+      <div class="closeItemConstructBuilding">
+        <div class="shopCloseController" data-origin = "hunter">X</div>
+      </div>
       <div class="creatableItems">
+        <div class="buildingImageContainer"><div class="hunterLarge"></div></div>
+        <div class="itemsAvailableCreate">
+          <div class="dryedJuteCreate outterItemCreate">
+            <div id = "dryedJuteRequiredMaterials"class="requiredMaterials"></div>
+            <div id = "dryedJuteMiner" class="itemMiner dryedJute" data-origin = "dryedJute" ></div>
+            <div id="dryedJuteMakeAmmount"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id = "woodWorkShop" class="woodWorkShopItems itemConstructBuilding" data-origin = "woodWorkShop">
+      <div class="closeItemConstructBuilding">
+        <div class="shopCloseController" data-origin = "woodWorkShop">X</div>
+      </div>
+      <div class="creatableItems">
+        <div class="buildingImageContainer"><div class="woodWorkShopLarge"></div></div>
+        <div class="itemsAvailableCreate">
           <div class="ropeCreate outterItemCreate">
             <div id = "ropeRequiredMaterials"class="requiredMaterials"></div>
-            <div id = "ropeMiner" class="itemMiner rope"></div>
+            <div id = "ropeMiner" class="itemMiner rope" data-origin = "rope" ></div>
             <div id="ropeMakeAmmount"></div>
           </div>
 		      <div class="plankCreate outterItemCreate">
             <div id = "plankRequiredMaterials"class="requiredMaterials"></div>
-            <div id = "plankMiner" class="itemMiner plank"></div>
+            <div id = "plankMiner" class="itemMiner plank" data-origin = "Plank" ></div>
             <div id="plankMakeAmmount"></div>
           </div>
 		      <div class="ropeLadderCreate outterItemCreate">
             <div id = "ropeLadderRequiredMaterials"class="requiredMaterials"></div>
-            <div id = "ropeLadderMiner" class="itemMiner ropeLadder"></div>
+            <div id = "ropeLadderMiner" class="itemMiner ropeLadder" data-origin = "ropeLadder" ></div>
             <div id="ropeLadderMakeAmmount"></div>
           </div>
 		      <div class="BucketCreate outterItemCreate">
             <div id = "BucketRequiredMaterials"class="requiredMaterials"></div>
-            <div id = "BucketMiner" class="itemMiner bucket"></div>
+            <div id = "BucketMiner" class="itemMiner bucket" data-origin = "bucket" ></div>
             <div id="BucketMakeAmmount"></div>
           </div>
 		      <div class="jackPlaneCreate outterItemCreate">
             <div id = "jackPlaneRequiredMaterials"class="requiredMaterials"></div>
-            <div id = "jackPlaneMiner" class="itemMiner jackPlane"></div>
+            <div id = "jackPlaneMiner" class="itemMiner jackPlane" data-origin = "jackPlane" ></div>
             <div id="jackPlaneMakeAmmount"></div>
           </div>
+        </div>
       </div>
     </div>
-    <div class="wellItems itemConstructBuilding" data-origin = "well">
-      <div class="closeItemConstructBuilding"></div>
+    <div id= "well" class="wellItems itemConstructBuilding" data-origin = "well">
+      <div class="closeItemConstructBuilding">
+        <div class="shopCloseController" data-origin = "well">X</div>
+      </div>
       <div class="creatableItems">
+        <div class="buildingImageContainer"><div class="wellLarge"></div></div>
+        <div class="itemsAvailableCreate">
           <div class="waterCreate outterItemCreate">
             <div id = "waterRequiredMaterials"class="requiredMaterials"></div>
-            <div id = "waterMiner" class="itemMiner water"></div>
+            <div id = "waterMiner" class="itemMiner water" data-origin = "storedWater" ></div>
             <div id="waterMakeAmmount"></div>
           </div>
+        </div>
       </div>
     </div>
-    <div class="weaverItems itemConstructBuilding" data-origin = "weaver">
-      <div class="closeItemConstructBuilding"></div>
+    <div id = "weaver" class="weaverItems itemConstructBuilding" data-origin = "weaver">
+      <div class="closeItemConstructBuilding">
+        <div class="shopCloseController" data-origin = "weaver">X</div>
+      </div>
       <div class="creatableItems">
+        <div class="buildingImageContainer"><div class="weaverLarge"></div></div>
+        <div class="itemsAvailableCreate">
           <div class="matCreate outterItemCreate">
             <div id = "matRequiredMaterials"class="requiredMaterials"></div>
-            <div id = "matMiner" class="itemMiner mat"></div>
+            <div id = "matMiner" class="itemMiner mat" data-origin = "mat" ></div>
             <div id="matMakeAmmount"></div>
           </div>
           <div class="wickerBasketCreate outterItemCreate">
             <div id = "wickerBasketRequiredMaterials"class="requiredMaterials"></div>
-            <div id = "wickerBasketMiner" class="itemMiner wickerBasket"></div>
+            <div id = "wickerBasketMiner" class="itemMiner wickerBasket" data-origin = "wickerBasket" ></div>
             <div id="wickerBasketMakeAmmount"></div>
           </div>
           <div class="woodenLatticeCreate outterItemCreate">
             <div id = "woodenLatticeRequiredMaterials"class="requiredMaterials"></div>
-            <div id = "woodenLatticeMiner" class="itemMiner woodenLattice"></div>
+            <div id = "woodenLatticeMiner" class="itemMiner woodenLattice" data-origin = "woodenLattice" ></div>
             <div id="woodenLatticeMakeAmmount"></div>
           </div>
+        </div>
       </div>
     </div>
-    <div class="foodDryerItems itemConstructBuilding" data-origin = "foodDryer">
-      <div class="closeItemConstructBuilding"></div>
-      <div class="creatableItems outterItemCreate">
-          <div class="foodCreate">
-            <div id = "foodRequiredMaterials"class="requiredMaterials"></div>
-            <div id = "foodMiner" class="itemMiner food"></div>
-            <div id="foodMakeAmmount"></div>
-          </div>        
+    <div id = "dryer" class="foodDryerItems itemConstructBuilding" data-origin = "foodDryer">
+      <div class="closeItemConstructBuilding">
+        <div class="shopCloseController" data-origin = "dryer">X</div>
       </div>
-    </div>
-    <div class="potteryItems itemConstructBuilding" data-origin = "pottery">
-      <div class="closeItemConstructBuilding"></div>
       <div class="creatableItems">
+        <div class="buildingImageContainer"><div class="dryerLarge"></div></div>
+        <div class="itemsAvailableCreate">
+          <div class="foodCreate outterItemCreate">
+            <div id = "foodRequiredMaterials"class="requiredMaterials"></div>
+            <div id = "foodMiner" class="itemMiner food"  data-origin = "storedFood" ></div>
+            <div id="foodMakeAmmount"></div>
+          </div>
+        </div>        
+      </div>
+    </div>
+    <div id = "pottery" class="potteryItems itemConstructBuilding" data-origin = "pottery">
+      <div class="closeItemConstructBuilding">
+        <div class="shopCloseController" data-origin = "pottery">X</div>
+      </div>
+      <div class="creatableItems">
+        <div class="buildingImageContainer"><div class="potteryLarge"></div></div>
+        <div class="itemsAvailableCreate">
           <div class="ceramicPotCreate outterItemCreate">
             <div id = "ceramicPotRequiredMaterials"class="requiredMaterials"></div>
-            <div id = "ceramicPotMiner" class="itemMiner ceramicPot"></div>
+            <div id = "ceramicPotMiner" class="itemMiner ceramicPot" data-origin = "ceramicPot" ></div>
             <div id="ceramicPotMakeAmmount"></div>
           </div>
           <div class="ceramicLanternCreate outterItemCreate">
             <div id = "ceramicLanternRequiredmaterials"class="requiredMaterials"></div>
-            <div id = "ceramicLanternMiner" class="itemMiner ceramicLantern"></div>
+            <div id = "ceramicLanternMiner" class="itemMiner ceramicLantern" data-origin = "ceramicLantern" ></div>
             <div id="ceramicLanternMakeAmmount"></div>
           </div>
-
+        </div>
       </div>
     </div>
-    <div class="smithyItems itemConstructBuilding" data-origin = "smithy">
-      <div class="closeItemConstructBuilding"></div>
+    <div id = "smithy" class="smithyItems itemConstructBuilding" data-origin = "smithy">
+      <div class="closeItemConstructBuilding">
+        <div class="shopCloseController" data-origin = "smithy">X</div>
+      </div>
       <div class="creatableItems">
+        <div class="buildingImageContainer"><div class="smithyLarge"></div></div>
+        <div class="itemsAvailableCreate">
           <div class="cutlassCreate outterItemCreate">
             <div id = "cutlassRequiredMaterials"class="requiredMaterials"></div>
-            <div id = "cutlassMiner" class="itemMiner cutlass"></div>
+            <div id = "cutlassMiner" class="itemMiner cutlass" data-origin = "cutlass" ></div>
             <div id="cutlassMakeAmmount"></div>
           </div>
           <div class="axeCreate outterItemCreate">
             <div id = "axeRequiredMaterialserials"class="requiredMaterials"></div>
-            <div id = "axeMiner" class="itemMiner axe"></div>
+            <div id = "axeMiner" class="itemMiner axe" data-origin = "axe" ></div>
             <div id="axeMakeAmmount"></div>
           </div>
           <div class="pickAxeCreate outterItemCreate">
             <div id = "pickAxeRequiredMaterials"class="requiredMaterials"></div>
-            <div id = "pickAxeMiner" class="itemMiner pickAxe"></div>
+            <div id = "pickAxeMiner" class="itemMiner pickAxe" data-origin = "pickAxe" ></div>
             <div id="pickAxeMakeAmmount"></div>
           </div>
-          <div class="lampOilCreate">
+          <div class="lampOilCreate outterItemCreate">
             <div id = "lampOilRequiredMaterials"class="requiredMaterials"></div>
-            <div id = "lampOilMiner" class="itemMiner lampOil"></div>
+            <div id = "lampOilMiner" class="itemMiner lampOil" data-origin = "lampOil" ></div>
             <div id="lampOilMakeAmmount"></div>
           </div>
 		      <div class="gearCreate outterItemCreate">
             <div id = "gearRequiredMaterials"class="requiredMaterials"></div>
-            <div id = "gearMiner" class="itemMiner cog"></div>
+            <div id = "gearMiner" class="itemMiner cog" data-origin = "glassBottle" ></div>
             <div id="gearMakeAmmount"></div>
           </div>
+        </div>
       </div>
     </div>
-    <div class="glassItems itemConstructBuilding" data-origin = "glass">
-      <div class="closeItemConstructBuilding"></div>
+    <div id = "glass" class="glassItems itemConstructBuilding" data-origin = "glass">
+      <div class="closeItemConstructBuilding">
+        <div class="shopCloseController" data-origin = "glass">X</div>
+      </div>
       <div class="creatableItems">
+        <div class="buildingImageContainer"><div class="glassLarge"></div></div>
+        <div class="itemsAvailableCreate">
           <div class="bottleCreate outterItemCreate">
             <div id = "bottleRequiredMaterials"class="requiredMaterials"></div>
-            <div id = "bottleMiner" class="itemMiner glassBottle"></div>
+            <div id = "bottleMiner" class="itemMiner glassBottle" data-origin = "glassBottle"></div>
             <div id="bottleMakeAmmount"></div>
           </div>
           <div class="lenseCreate outterItemCreate">
             <div id = "lenseRequiredMaterials"class="requiredMaterials"></div>
-            <div id = "lenseMiner" class="itemMiner Lense"></div>
+            <div id = "lenseMiner" class="itemMiner lense" data-origin = "lense"></div>
             <div id="lenseMakeAmmount"></div>
           </div>
+        </div>
       </div>
     </div>
-    <div class="loomItems itemConstructBuilding" data-origin = "loom">
-      <div class="closeItemConstructBuilding"></div>
+    <div id = "loom" class="loomItems itemConstructBuilding">
+      <div class="closeItemConstructBuilding">
+        <div class="shopCloseController" data-origin = "loom">X</div>
+      </div>
       <div class="creatableItems">
+        <div class="buildingImageContainer"><div class="loomLarge"></div></div>
+        <div class="itemsAvailableCreate">
           <div class="stringCreate outterItemCreate">
             <div id = "stringRequiredMaterials" class="requiredMaterials"></div>
-            <div id = "stringMiner" class="itemMiner string"></div>
+            <div id = "stringMiner" class="itemMiner string" data-origin = "string"></div>
             <div id="stringMakeAmmount"></div>
           </div>
           <div class="fabricCreate outterItemCreate">
             <div id = "fabricRequiredMaterials" class="requiredMaterials"></div>
-            <div id = "fabricMiner" class="itemMiner cloth"></div>
+            <div id = "fabricMiner" class="itemMiner cloth" data-origin = "cloth"></div>
             <div id="fabricMakeAmmount"></div>
           </div>
+        </div>
       </div>
     </div>
-    <div class="lureItems itemConstructBuilding" data-origin = "lure">
-      <div class="closeItemConstructBuilding"></div>
+    <div id = "lure" class="lureItems itemConstructBuilding" data-origin = "lure">
+      <div class="closeItemConstructBuilding">
+        <div class="shopCloseController" data-origin = "lure">X</div>
+      </div>
       <div class="creatableItems">
+        <div class="buildingImageContainer"><div class="lureLarge"></div></div>
+        <div class="itemsAvailableCreate">
           <div class="fishHookCreate outterItemCreate">
             <div id = "fishHookRequiredMaterials" class="requiredMaterials"></div>
-            <div id = "fishHookMiner" class="itemMiner fishHook"></div>
+            <div id = "fishHookMiner" class="itemMiner fishHook" data-origin = "fishHook"></div>
             <div id="fishHookMakeAmmount"></div>
           </div>
+        </div>
       </div>
     </div>
-    <div class="pierItems itemConstructBuilding" data-origin = "pier">
-      <div class="closeItemConstructBuilding"></div>
-      <div class="creatableItems"></div>
+    <div id = "pier" class="pierItems itemConstructBuilding" data-origin = "pier">
+      <div class="closeItemConstructBuilding">
+        <div class="shopCloseController" data-origin = "pier">X</div>
+      </div>
+      <div class="creatableItems">
+        <div class="buildingImageContainer"><div class="pierLarge"></div></div>
+        <div class="itemsAvailableCreate"></div>
+      </div>
     </div>
     <script src="./javascript/main.js"></script>
   </body>

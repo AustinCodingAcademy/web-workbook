@@ -387,27 +387,27 @@ body {
 }
 
 .jackPlane {
-  background-image: url("../img/items/woodWorkshop/itemJackPlane.png");
+  background-image: url("../img/items/woodWorkShop/itemJackPlane.png");
   background-size: 100% 100%;
 }
 
 .bucket {
-  background-image: url("../img/items/woodWorkshop/itemBucket.png");
+  background-image: url("../img/items/woodWorkShop/itemBucket.png");
   background-size: 100% 100%;
 }
 
 .plank {
-  background-image: url("../img/items/woodWorkshop/itemPlank.png");
+  background-image: url("../img/items/woodWorkShop/itemPlank.png");
   background-size: 100% 100%;
 }
 
 .rope {
-  background-image: url("../img/items/woodWorkshop/itemRope.png");
+  background-image: url("../img/items/woodWorkShop/itemRope.png");
   background-size: 100% 100%;
 }
 
 .ropeLadder {
-  background-image: url("../img/items/woodWorkshop/itemRopeLadder.png");
+  background-image: url("../img/items/woodWorkShop/itemRopeLadder.png");
   background-size: 100% 100%;
 }
 
@@ -720,8 +720,8 @@ body {
   width: 264px;
   height: 200px;
 }
-.woodWorkshop{
-  background-image: url("../img/construction/objBuildWoodWorkshop.png");
+.woodWorkShop{
+  background-image: url("../img/construction/objBuildwoodWorkShop.png");
   background-size: 100% 100%;
   width: 312px;
   height: 328px;
@@ -859,25 +859,51 @@ body {
   height: 85vh;
   top: 15vh;
   left: 0; 
-  background-color: lightblue;
+  background-image: linear-gradient(rgb(108, 141, 248), white);
   position: absolute;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
-  
+}
+
+.shopCloseController{
+  position: absolute;
+  top: 0;
+  left: 3vw;
+  font-size: 40px;
+  cursor: pointer;
 }
 
 .creatableItems{
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  background-color: aqua;
+  background-image: linear-gradient(rgb(108, 141, 248), white);
+}
+
+.buildingImageContainer{
+  width: auto;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemsAvailableCreate{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .outterItemCreate{
   height: auto;
-  width: auto;
+  width: 100%;
+  margin-left: 20px;
 }
 .outterItemCreate > div:nth-of-type(1){
   height: 20px;
@@ -887,6 +913,7 @@ body {
 .outterItemCreate > div:nth-of-type(2){
   height: 104px;
   width: 104px;
+  border: 2px solid black;
 }
 
 .outterItemCreate > div:nth-of-type(3){
@@ -895,3 +922,95 @@ body {
 }
 
 /*    */
+
+.shopOpen{
+  display: flex;
+}
+
+.outpostLarge{
+  background-image: url("../img/construction/outpostLarge.png");
+  background-size: 100% 100%;
+  width: 528px;
+  height: 400px;
+}
+.woodWorkShopLarge{
+  background-image: url("../img/construction/objBuildwoodWorkShopLarge.png");
+  background-size: 100% 100%;
+  width: 624px;
+  height: 656px;
+}
+
+.quarryLarge{
+  background-image: url("../img/construction/objBuildQuarryLarge.png");
+  background-size: 100% 100%;
+  width: 560px;
+  height: 436px;
+}
+.hunterLarge{
+  background-image: url("../img/construction/objBuildHunterLarge.png");
+  background-size: 100% 100%;
+  width: 512px;
+  height: 532px;
+}
+
+.weaverLarge{
+  background-image: url("../img/construction/objBuildWeavingWorkshopLarge.png");
+  background-size: 100% 100%;
+  width: 628px;
+  height: 612px;
+}
+
+.wellLarge{
+  background-image: url("../img/construction/objBuildWellWaterStoneStage4FinalLarge.png");
+  background-size: 100% 100%;
+  width: 640px;
+  height: 640px;
+}
+
+.dryerLarge{
+  background-image: url("../img/construction/objBuildDryerLarge.png");
+  background-size: 100% 100%;
+  width: 660px;
+  height: 504px;
+}
+
+.potteryLarge{
+  background-image: url("../img/construction/objBuildPotteryWorkshopLarge.png");
+  background-size: 100% 100%;
+  width: 630px;
+  height: 504px;
+}
+.smithyLarge{
+  background-image: url("../img/construction/objBuildWorkshopSmithyLarge.png");
+  background-size: 100% 100%;
+  width: 656px;
+  height: 480px;
+}
+
+.lureLarge{
+  background-image: url("../img/construction/objLureWorkbenchLarge.png");
+  background-size: 100% 100%;
+  width: 720px;
+  height: 704px;
+}
+
+.loomLarge{
+  background-image: url("../img/construction/objBuildLoom.pngLarge");
+  background-size: 100% 100%;
+  width: 640px;
+  height: 640px;
+}
+
+.glassLarge{
+  background-image: url("../img/construction/objBuildGlassWorkshopLarge.png");
+  background-size: 100% 100%;
+  width: 644px;
+  height: 600px;
+}
+
+.pierLarge{
+  background-image: url("../img/construction/objBuildPier.png");
+  background-size: 100% 100%;
+  width: 640px;
+  height: 560px;
+}
