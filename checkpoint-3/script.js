@@ -42,7 +42,7 @@ $(document).ready(function(){
     if (num1 == 10) {
       pupButtonShow = true;
       $(".powerup1").show();  
-      $('#message-display').children('p').text("Next Level");
+      $('#message-display').children('p').text("THAT WAS EASY");
       $('#screen-1').toggle('#screen-1'); 
     } 
     if ((num1 >= 50 && num1 <=52)) {
@@ -56,7 +56,7 @@ $(document).ready(function(){
       pupButtonShow = true;
       $(".powerup1").show();
       $(".powerup1").text("Power Up 4X!"); 
-      $('#message-display').children('p').text("4th Level"); 
+      $('#message-display').children('p').text("KEEP GOING!"); 
       $('#screen-1').toggle('#screen-1'); 
     }
     if ((num1 >= 200 && num1 <=204)) {
@@ -70,7 +70,7 @@ $(document).ready(function(){
       pupButtonShow = true;
       $(".powerup1").show();
       $(".powerup1").text("Power Up 6X!"); 
-      $('#message-display').children('p').text("6th Level"); 
+      $('#message-display').children('p').text("YOU CAN DO IT!!"); 
       $('#screen-1').toggle('#screen-1'); 
     }
     if ((num1 >= 800 && num1 <=806)) {
@@ -84,7 +84,7 @@ $(document).ready(function(){
       pupButtonShow = true;
       $(".powerup1").show();
       $(".powerup1").text("Power Up 8X!"); 
-      $('#message-display').children('p').text("8th Level"); 
+      $('#message-display').children('p').text("YOU WIN!!!"); 
       $('#screen-1').toggle('#screen-1'); 
     }       
     $('#buttonbox').append(pup);
