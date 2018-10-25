@@ -3,8 +3,8 @@ $(document).ready(function(){
         $("#panel").slideToggle("slow");
     });
     });
-$(document).ready(function(){
-    $("#flip2").click(function(){
-        $("#panel").slideToggle("slow");
+    $(document).ready(function(){
+    $("#flipp").click(function(){
+        $("#panell").slideToggle("slow");
     });
 });
