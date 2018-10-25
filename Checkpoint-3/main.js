@@ -12,7 +12,7 @@ $(document).ready(function () {
     $('#gun').text(num);
     // on fire click CSS animation effect to shake gun
   })
-  
+
   window.alert('Pew Pew!!!');
 });
 
@@ -20,4 +20,4 @@ $(document).ready(function () {
 // ability to select different firearms at intervals of 10, 100, 1000 points
 // attach a sound effect to the fire button, that changes with the selection of different firearms
 // on click have a flash effect in the background
-// 
+//
