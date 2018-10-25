@@ -10,6 +10,7 @@ body {
   overflow: hidden;
 }
 
+/* display message above space invader - dynamically changes with jquery */
 #message-display {
   font-family: 'Press Start 2P', cursive;
   font-size: 30px;
@@ -24,6 +25,7 @@ body {
   transition: all 3s ease-in-out;
 }
 
+/* space invader */
 #screen-1 {
   background-image: linear-gradient(blue, blue), url(https://media1.tenor.com/images/860512d0c5d14f6127305a1286ff9fb8/tenor.gif?itemid=4992695);
   filter: opacity(.5);
@@ -31,12 +33,12 @@ body {
   background-size: 125px 125px;
   background-position: center;
   cursor: crosshair;
-  /* border: 3px red dashed; */
   margin-top: 50px;
   width: 125px;
   height: 125px;
   display: grid;
   transition: all .2s ease-out;
+  /* grid for blast effects (might be a little overkill) */
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-template-areas: 
@@ -47,11 +49,12 @@ body {
     "box box box box box";
 }
 
+/* explosition effect for space invader */
 #screen-1:active {
-  border: 4px red dashed;
+  border: 1px red dashed;
   background-size: 150px 150px;
   transform: scale(200, 80);
-  transition: all 2s ease-out;
+  transition: all 3s ease-out;
 }
 
 .box {
@@ -60,12 +63,12 @@ body {
 
 }
 
-
+/* explosition effect for space invader */
 .box:active {
-  border: 100px solid rgba(255, 56, 11, 0.495);
+  border: 100px dashed rgba(255, 56, 11, 0.495);
   border-radius: 100px;
   background-color: rgba(255, 0, 0, 0.728);
-  transform: scale(2000, 40);
+  transform: scale(1000, 40);
   transition: all .4s ease-out;
 
 }
@@ -84,52 +87,52 @@ body {
   height: 50px;
   width: 200px;
   margin-top: 50px;
-  /* border:red 5px double; */
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
+/* only pops up when player hits certain amount of points - click to advance */
 .powerup1 {
   margin-top: 30px;
   font-family: 'Press Start 2P', cursive;
   font-size: 22px;
   color: rgba(255, 229, 202, 0.79);
   filter: opacity(.4);
-
   height: 50px;
   width: 300px;
   background-color: rgba(255, 255, 255, 0);
   transition: all 2s ease-out;
 }
 
+/* level class */
 .red {
-  border: red 3px dotted;
+  border: red 4px dotted;
 }
 
 .orange {
-  border: orange 3px dotted;
+  border: orange 4px dotted;
 }
 
 .yellow {
-  border: yellow 3px dotted;
+  border: yellow 4px dotted;
 }
 
 .green {
-  border: green 3px dotted;
+  border: green 4px dotted;
 }
 
 .blue {
-  border: blue 3px dotted;
+  border: blue 4px dotted;
 }
 
 .indigo {
-  border: indigo 3px dotted;
+  border: indigo 4px dotted;
 }
 
 .violet {
-  border: violet 3px dotted;
+  border: violet 4px dotted;
 }
 
 

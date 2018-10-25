@@ -12,6 +12,7 @@ $(document).ready(function(){
   // bleep/blast sound on-click
   var obj = document.createElement("audio");
   var sounds = ["./bleep1.mp3", "./bleep2.mp3", "./bleep3.mp3"]
+  // grab sounds
   // obj.src="https://github.com/konarie1990/web-workbook/blob/gh-pages/checkpoint-3/bleep3.mp3?raw=true";
   obj.src=sounds[Math.floor(Math.random() * sounds.length)];
   obj.volume=0.70;
@@ -41,43 +42,50 @@ $(document).ready(function(){
     if (num1 == 10) {
       pupButtonShow = true;
       $(".powerup1").show();  
-      $('#message-display').children('p').text("Next Level"); 
+      $('#message-display').children('p').text("Next Level");
+      $('#screen-1').toggle('#screen-1'); 
     } 
     if ((num1 >= 50 && num1 <=52)) {
       pupButtonShow = true;
       $(".powerup1").show(); // show the powerup button
       $(".powerup1").text("Power Up 3X!"); // display message in button
       $('#message-display').children('p').text("3rd Level"); // display message for level header
+      $('#screen-1').toggle('#screen-1'); // using toggle function to remove space invader on button show - feature or bug? (actually takes into account css transition ;)
     }
     if ((num1 >= 100 && num1 <=103)) {
       pupButtonShow = true;
       $(".powerup1").show();
       $(".powerup1").text("Power Up 4X!"); 
       $('#message-display').children('p').text("4th Level"); 
+      $('#screen-1').toggle('#screen-1'); 
     }
     if ((num1 >= 200 && num1 <=204)) {
       pupButtonShow = true;
       $(".powerup1").show();
       $(".powerup1").text("Power Up 5X!"); 
       $('#message-display').children('p').text("5th Level"); 
+      $('#screen-1').toggle('#screen-1'); 
     }
     if ((num1 >= 400 && num1 <=405)) {
       pupButtonShow = true;
       $(".powerup1").show();
       $(".powerup1").text("Power Up 6X!"); 
       $('#message-display').children('p').text("6th Level"); 
+      $('#screen-1').toggle('#screen-1'); 
     }
     if ((num1 >= 800 && num1 <=806)) {
       pupButtonShow = true;
       $(".powerup1").show();
       $(".powerup1").text("Power Up 7X!"); 
       $('#message-display').children('p').text("7th Level"); 
+      $('#screen-1').toggle('#screen-1'); 
     } 
     if ((num1 >= 1600 && num1 <= 1607)) {
       pupButtonShow = true;
       $(".powerup1").show();
       $(".powerup1").text("Power Up 8X!"); 
       $('#message-display').children('p').text("8th Level"); 
+      $('#screen-1').toggle('#screen-1'); 
     }       
     $('#buttonbox').append(pup);
     pup = "";
@@ -90,8 +98,8 @@ $(document).ready(function(){
   $(".powerup1").click(function() {
     multiplier++; // add multiplier on click 
     $(".powerup1").hide().removeClass("red"); // remove class/color on click
-
-    // set level by points allowed
+    $('#screen-1').toggle('#screen-1'); 
+    // set level by points allowed - display message
     $("#message-display").css("opacity", "1");
     currentLevel++;
     if (num1 >= 10 || num1 >= 50 || num1 >= 100 || num1 >= 200 || num1 >= 400 || num1 >= 800 || num1 >= 1600) {
