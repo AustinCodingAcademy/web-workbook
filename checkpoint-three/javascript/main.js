@@ -395,7 +395,7 @@ function mineRaw(origin) {
       jute++
       document.getElementById("itemInventoryJute").innerHTML = jute;
     } else if (luckRoll >= 100 && luckRoll < 200) {
-      bamboo++
+      bamboo += 10;
       document.getElementById("itemInventoryBamboo").innerHTML = bamboo;
     } else {
       food++
@@ -410,9 +410,15 @@ function mineRaw(origin) {
     if (luckRoll >= 200) {
       vine++
       document.getElementById("itemInventoryLiana").innerHTML = vine;
+      wood += 10;
+      document.getElementById("itemInventoryWood").innerHTML = wood;
+      document.getElementById("currentWood").innerHTML = wood;
     } else if (luckRoll >= 100) {
       palmLeaf++
       document.getElementById("itemInventoryPalmLeaf").innerHTML = palmLeaf;
+      wood += 5;
+      document.getElementById("itemInventoryWood").innerHTML = wood;
+      document.getElementById("currentWood").innerHTML = wood;
     } else {
 
     }
@@ -420,11 +426,11 @@ function mineRaw(origin) {
     stone++
     document.getElementById("itemInventoryStone").innerHTML = stone;
     document.getElementById("currentStone").innerHTML = stone;
-    if (luckRoll >= 240) {
+    if (luckRoll >= 200) {
       resen++
       document.getElementById("itemInventoryResin").innerHTML = resen;
     } else if (luckRoll >= 100) {
-      stone++
+      stone += 10;
       document.getElementById("itemInventoryStone").innerHTML = stone;
       document.getElementById("currentStone").innerHTML = stone;
     } else {
@@ -434,7 +440,19 @@ function mineRaw(origin) {
     iron++
     document.getElementById("itemInventoryIron").innerHTML = iron;
     document.getElementById("currentIron").innerHTML = iron;
+    if (luckRoll >= 200) {
+      iron += 10;
+      document.getElementById("itemInventoryIron").innerHTML = iron;
+      document.getElementById("currentIron").innerHTML = iron;
+    } else if (luckRoll >= 100) {
+      iron += 5;
+      document.getElementById("itemInventoryIron").innerHTML = iron;
+      document.getElementById("currentIron").innerHTML = iron;
+    } else {
+
+    }
   }
+
 }
 
 
@@ -453,7 +471,7 @@ function mineItem(origin){
       case "fireWood":
       if(wood >= 2){
         wood -= 2;
-      mine(origin);
+      updater(); mine(origin);
       }else{
         alert("Not enough Wood. This requires 2 wood.")
       }
@@ -461,7 +479,7 @@ function mineItem(origin){
       case "stoneBlock":
       if(stone >= 10){
         stone -= 10;
-      mine(origin);
+      updater(); mine(origin);
       }else{
         alert("Not enough stone. This requires 10 stone.")
       }
@@ -470,7 +488,7 @@ function mineItem(origin){
       if(jute >= 5 && items.fireWood >= 2){
         jute -= 5;
         items.fireWood -= 2
-        mine(origin);
+        updater(); mine(origin);
       }else{
         alert("Not enough jute. This requires 5 jute.")
       }
@@ -479,7 +497,7 @@ function mineItem(origin){
       if(wood >= 1 && iron >=1){
         wood--;
         iron--;
-        mine(origin);
+        updater(); mine(origin);
       }else{
         alert("Not Enough materials. this requires 1 wood and 1 iron.")
       }
@@ -488,7 +506,7 @@ function mineItem(origin){
       if(wood >= 4 && resen >= 2){
         wood -= 4;
         resen -= 2;
-        mine(origin);
+        updater(); mine(origin);
       }else{
         alert("Not Enough materials. this requires 4 wood and 2 resin.")
       }
@@ -497,14 +515,14 @@ function mineItem(origin){
       if(wood >= 5 && items.jackPlane >= 1){
         wood -= 5;
         items.jackPlane --;
-        mine(origin);
+        updater(); mine(origin);
       }else{
         alert("Not enough materials. This requires 5 wood and a jack plane.")
       }
       break;
       case "rope":
       if(vine >= 10 && resen >= 3){
-        mine(origin);
+        updater(); mine(origin);
       }else{
         alert("Not enough materials. This requires 10 vines and 3 resin.")
       }
@@ -513,7 +531,7 @@ function mineItem(origin){
         if(items.rope >= 10 && items.plank >= 5){
           items.rope -= 10;
           items.plank -= 5;
-          mine(origin);
+          updater(); mine(origin);
         }else{
           alert("Not enough materials. This item requires 10 rope and 5 planks")
         }
@@ -521,7 +539,7 @@ function mineItem(origin){
       case "mat":
       if(palmLeaf >= 10){
         palmLeaf -= 10;
-        mine(origin);
+        updater(); mine(origin);
       }else{
         alert("Not Enough palm leaves. This item requires 10 palm leaves.")
       }
@@ -529,7 +547,7 @@ function mineItem(origin){
       case "wickerBasket":
       if(palmLeaf >= 20){
         palmLeaf -= 20;
-        mine(origin);
+        updater(); mine(origin);
       }else{
         alert("Not Enough palm leaves. This item requires 20 palm leaves.")
       }
@@ -538,7 +556,7 @@ function mineItem(origin){
       if(wood >= 100 && items[rope] >= 10){
         wood -= 10;
         items.rope -= 10;
-        mine(origin);
+        updater(); mine(origin);
       }else{
         alert("Not Enough materials. This item requires 100 wood and 10 rope.")
       }
@@ -547,7 +565,7 @@ function mineItem(origin){
       if(items.stoneBlock >= 2 && items.fireWood >= 100){
         items.stoneBlock -= 2;
         items.fireWood -= 100;
-        mine(origin);
+        updater(); mine(origin);
       }else{
         alert("Not Enough materials. This item requires 2 stone block and 100 firewood")
       }
@@ -556,7 +574,7 @@ function mineItem(origin){
       if(items.stoneBlock >= 2 && items.fireWood >= 100){
         items.stoneBlock -= 2;
         items.fireWood -= 100;
-        mine(origin);
+        updater(); mine(origin);
       }else{
         alert("Not Enough materials. This item requires 2 stone block and 100 firewood")
       }
@@ -565,7 +583,7 @@ function mineItem(origin){
       if(items.fireWood >= 1000 && iron >= 500){
         items.fireWood -= 1000;
         iron -= 500;
-        mine(origin);
+        updater(); mine(origin);
       }else{
         alert("Not Enough materials. This requires 1000 fire wood and 500 iron")
       }
@@ -574,7 +592,7 @@ function mineItem(origin){
       if(items.fireWood >= 300 && resen >= 100){
         items.fireWood -= 300;
         resen -= 100;
-        mine(origin);
+        updater(); mine(origin);
       }else{
         alert("Not Enough materials. This requires 300 fire wood and 100 resin")
       }
@@ -583,14 +601,14 @@ function mineItem(origin){
       if(items.stoneBlock >= 10 && items.fireWood >= 500){
         items.stoneBlock -= 10;
         items.fireWood -= 500;
-        mine(origin);
+        updater(); mine(origin);
       }else{
         alert("Not Enough materials. This requires 10 stone blocks and 500 firewood")
       }
       break;
       case "lense":
       if(items.stoneBlock >= 100 && items.fireWood >= 1000){
-        mine(origin);
+        updater(); mine(origin);
       }else{
         alert("Not Enough materials. This requires 100 stone blocks and 1000 firewood")
       }
@@ -599,7 +617,8 @@ function mineItem(origin){
       if(vine >= 50 && items.fireWood >= 300){
         vine -= 50;
         items.fireWood -= 300;
-        mine(origin);
+        updater();
+        updater(); mine(origin);
       }else{
         alert("Not Enough Wood")
       }
@@ -607,7 +626,8 @@ function mineItem(origin){
       case "cloth":
       if(items.string >= 100){
         items.string -= 100
-        mine(origin);
+        updater();
+        updater(); mine(origin);
       }else{
         alert("Not enough string. This requires 100 string")
       }
@@ -619,7 +639,19 @@ function mineItem(origin){
 
 
 function mine(origin){
+      document.getElementById("itemInventoryWood").innerHTML = wood;
+      document.getElementById("itemInventoryStone").innerHTML = stone;
+      document.getElementById("itemInventoryIron").innerHTML = iron;
+      document.getElementById("itemInventoryJute").innerHTML = jute;
+      document.getElementById("itemInventoryresen").innerHTML = resen;
+      document.getElementById("itemInventoryPalmLeaf").innerHTML = palmLeaf;
       items[origin]++;
       var originFormat = origin.charAt(0).toUpperCase() + origin.slice(1);
       document.getElementById("itemInventory"+ originFormat).innerHTML = items[origin];
+}
+
+function updater(){
+      document.getElementById("currentWood").innerHTML = wood;
+      document.getElementById("currentStone").innerHTML = stone;
+      document.getElementById("currentIron").innerHTML = iron;
 }
