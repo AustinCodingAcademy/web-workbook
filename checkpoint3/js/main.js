@@ -478,6 +478,9 @@ $(document).ready(function() {
       currentLevel++;
       updateLog(log_LevelUp);
 
+      // remove hidden class from first weapon
+      if(weaponImg.hasClass("hidden")) weaponImg.removeClass("hidden");
+
       // this if/else just handles file names
       if (currentLevel < 10) {
         weaponName.text(swords[currentLevel - 1]);
