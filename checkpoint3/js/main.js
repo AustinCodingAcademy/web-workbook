@@ -36,6 +36,7 @@ $(document).ready(function() {
   const announceWin = $("#max-level");
   const goldIconHTML =
     '<img id="currency-img" draggable="false" src="img/gold.png" alt="a pile of gold"> ';
+  const log = $("#log");
 
   // upgrade costs
   const cost_HireApprentice = 200;
@@ -90,6 +91,9 @@ $(document).ready(function() {
   const stats_PlayerGold = $("#currency-text");
   $(stats_Player).append(playerHammerEfficiency);
   $(stats_Apprentice).append(apprenticeEfficiency);
+
+  // log messages
+  const log_LevelUp = "You finished a weapon!";
 
   // MASTER CLICK FUNCTIONS
   // ====================================================================
@@ -252,6 +256,7 @@ $(document).ready(function() {
     currentUpgradeList.append("<li>Hired Apprentice</li>");
     $(apprenticeStats).removeClass("hidden");
     updateCounter();
+    updateLog("", hireApprentice);
     apprenticeStart();
   }
 
@@ -263,6 +268,8 @@ $(document).ready(function() {
     $(apprenticeUpgrade2).addClass("unlocked");
     currentUpgradeList.append("<li>Apprentice Upgrade 1</li>");
     updateCounter();
+    updateLog("", apprenticeUpgrade1);
+
   }
   function shop_buyApprenticeUpgrade2() {
     apprenticeHammerEfficiency = 10;
@@ -272,6 +279,7 @@ $(document).ready(function() {
     $(apprenticeUpgrade3).addClass("unlocked");
     currentUpgradeList.append("<li>Apprentice Upgrade 2</li>");
     updateCounter();
+    updateLog("", apprenticeUpgrade2);
   }
   function shop_buyApprenticeUpgrade3() {
     apprenticeHammerEfficiency = 20;
@@ -280,6 +288,7 @@ $(document).ready(function() {
     currency -= cost_ApprenUpgrade3;
     currentUpgradeList.append("<li>Apprentice Upgrade 3</li>");
     updateCounter();
+    updateLog("", apprenticeUpgrade3);
   }
 
   function shop_buyHammerUpgrade1() {
@@ -289,6 +298,7 @@ $(document).ready(function() {
     $(hammerUpgrade2).addClass("unlocked");
     currentUpgradeList.append("<li>Hammer Upgrade 1</li>");
     updateCounter();
+    updateLog("", hammerUpgrade1);
   }
   function shop_buyHammerUpgrade2() {
     playerHammerEfficiency = 4;
@@ -298,6 +308,7 @@ $(document).ready(function() {
     $(hireApprentice).addClass("unlocked");
     currentUpgradeList.append("<li>Hammer Upgrade 2</li>");
     updateCounter();
+    updateLog("", hammerUpgrade2);
   }
   function shop_buyHammerUpgrade3() {
     playerHammerEfficiency = 8;
@@ -306,6 +317,7 @@ $(document).ready(function() {
     $(hammerUpgrade4).addClass("unlocked");
     currentUpgradeList.append("<li>Hammer Upgrade 3</li>");
     updateCounter();
+    updateLog("", hammerUpgrade3);
   }
   function shop_buyHammerUpgrade4() {
     playerHammerEfficiency *= 2;
@@ -313,6 +325,7 @@ $(document).ready(function() {
     playerHasHammerUpgrade4 = true;
     currentUpgradeList.append("<li>Hammer Upgrade 4</li>");
     updateCounter();
+    updateLog("", hammerUpgrade4);
   }
 
   function shop_checkLockStatus(el) {
@@ -464,6 +477,7 @@ $(document).ready(function() {
     if (points >= numberOfClicksToNextLevel) {
       numberOfClicksToNextLevel = Math.floor(numberOfClicksToNextLevel * 1.5);
       currentLevel++;
+      updateLog(log_LevelUp);
 
       // this if/else just handles file names
       if (currentLevel < 10) {
@@ -501,6 +515,15 @@ $(document).ready(function() {
    */
   function updateApprenticeStats() {
     stats_Apprentice.text("xp/sec: " + apprenticeEfficiency);
+  }
+
+  /**
+   * function: updateLog()
+   * desc: helper function that replaces the log text with given str
+   */
+  function updateLog(str, item) {
+    if(item) log.text(str + item.text());
+    else log.text(str);
   }
 
   /**
