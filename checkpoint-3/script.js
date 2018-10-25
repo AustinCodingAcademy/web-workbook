@@ -6,6 +6,7 @@ $(document).ready(function(){
   var multiplier = 1; 
   let pupButtonShow = false;
   let currentLevel = 0;
+  // change color at every level / powerup
   let levelArray = [1, 2, 3, 4, 5, 6, 7];
   let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
   // bleep/blast sound on-click
@@ -28,6 +29,7 @@ $(document).ready(function(){
 
   $(".powerup1").hide();
 
+  // click the space invader is on screen-1 - only advance points when you click on powerup 
   $('#screen-1').click(function() {
     if (pupButtonShow === true) {
       return false;
@@ -43,9 +45,9 @@ $(document).ready(function(){
     } 
     if ((num1 >= 50 && num1 <=52)) {
       pupButtonShow = true;
-      $(".powerup1").show();
-      $(".powerup1").text("Power Up 3X!");  
-      $('#message-display').children('p').text("3rd Level"); 
+      $(".powerup1").show(); // show the powerup button
+      $(".powerup1").text("Power Up 3X!"); // display message in button
+      $('#message-display').children('p').text("3rd Level"); // display message for level header
     }
     if ((num1 >= 100 && num1 <=103)) {
       pupButtonShow = true;
@@ -86,9 +88,10 @@ $(document).ready(function(){
   }, 2000);
 
   $(".powerup1").click(function() {
-    multiplier++;
-    $(".powerup1").hide().removeClass("red");
+    multiplier++; // add multiplier on click 
+    $(".powerup1").hide().removeClass("red"); // remove class/color on click
 
+    // set level by points allowed
     $("#message-display").css("opacity", "1");
     currentLevel++;
     if (num1 >= 10 || num1 >= 50 || num1 >= 100 || num1 >= 200 || num1 >= 400 || num1 >= 800 || num1 >= 1600) {
@@ -101,6 +104,7 @@ $(document).ready(function(){
     }, 2000);
   });
   
+  // loop is running to watch for level and set color from array 
   setInterval(function colorChange() {
     let i = 0;
     for (i = 0; i < levelArray.length; i++) {
@@ -113,66 +117,67 @@ $(document).ready(function(){
   }, 200);
 
 
-  // $(".powerup2").click(function() {
-  //   multiplier++;
-  //   $(".powerup2").hide();
-  //   $("#screen-1").css('border', 'dashed 3px yellow');
-  //   $('#points').css('border', 'double 5px yellow');
-  //   $('#message-display').html('<p>That Was Easy...</p>');
-  //   level.src=hooray[Math.floor(Math.random() * hooray.length)];
-  //   level.play();
-  // });
-
-  // $(".powerup3").click(function() {
-  //   multiplier++;
-  //   $(".powerup3").hide();
-  //   $("#screen-1").css('border', 'dashed 3px green');
-  //   $('#points').css('border', 'double 5px green');
-  //   $('#message-display').html('<p>Keep it up!</p>');
-  //   level.src=hooray[Math.floor(Math.random() * hooray.length)];
-  //   level.play();
-  // });
-
-  // $(".powerup4").click(function() {
-  //   multiplier++;
-  //   $(".powerup4").hide();
-  //   $("#screen-1").css('border', 'dashed 3px blue');
-  //   $('#points').css('border', 'double 5px blue');
-  //   $('#message-display').html('<p>Not Bad</p>');
-  //   level.src=hooray[Math.floor(Math.random() * hooray.length)];
-  //   level.play();
-  // });
-
-  // $(".powerup5").click(function() {
-  //   multiplier++;
-  //   $(".powerup5").hide();
-  //   $("#screen-1").css('border', 'dashed 3px indigo');
-  //   $('#points').css('border', 'double 5px indigo');
-  //   $('#message-display').html('<p>Almost There!</p>');
-  //   level.src=hooray[Math.floor(Math.random() * hooray.length)];
-  //   level.play();
-  // });
-
-  // $(".powerup6").click(function() {
-  //   multiplier++;
-  //   $(".powerup6").hide();
-  //   $("#screen-1").css('border', 'dashed 3px violet');
-  //   $('#points').css('border', 'double 5px violet');
-  //   $('#message-display').html('<p>Relentless!</p>');
-  //   level.src=hooray[Math.floor(Math.random() * hooray.length)];
-  //   level.play();
-  // });
-
-  // $(".powerup7").click(function() {
-  //   multiplier++;
-  //   $(".powerup7").hide();
-  //   $("#screen-1").css('border', 'dashed 3px red');
-  //   $('#points').css('border', 'double 5px red');
-  //   $('#message-display').html('<p>You Did It!!!</p>');
-  //   level.src=hooray[Math.floor(Math.random() * hooray.length)];
-  //   level.play();
-  // });
-
-  // when counter reaches 100 create a new button
-
 });
+
+// old code no longer in use - there was a lot more but i kept the code below - original code (css included) has been reduced about 50%
+// $(".powerup2").click(function() {
+//   multiplier++;
+//   $(".powerup2").hide();
+//   $("#screen-1").css('border', 'dashed 3px yellow');
+//   $('#points').css('border', 'double 5px yellow');
+//   $('#message-display').html('<p>That Was Easy...</p>');
+//   level.src=hooray[Math.floor(Math.random() * hooray.length)];
+//   level.play();
+// });
+
+// $(".powerup3").click(function() {
+//   multiplier++;
+//   $(".powerup3").hide();
+//   $("#screen-1").css('border', 'dashed 3px green');
+//   $('#points').css('border', 'double 5px green');
+//   $('#message-display').html('<p>Keep it up!</p>');
+//   level.src=hooray[Math.floor(Math.random() * hooray.length)];
+//   level.play();
+// });
+
+// $(".powerup4").click(function() {
+//   multiplier++;
+//   $(".powerup4").hide();
+//   $("#screen-1").css('border', 'dashed 3px blue');
+//   $('#points').css('border', 'double 5px blue');
+//   $('#message-display').html('<p>Not Bad</p>');
+//   level.src=hooray[Math.floor(Math.random() * hooray.length)];
+//   level.play();
+// });
+
+// $(".powerup5").click(function() {
+//   multiplier++;
+//   $(".powerup5").hide();
+//   $("#screen-1").css('border', 'dashed 3px indigo');
+//   $('#points').css('border', 'double 5px indigo');
+//   $('#message-display').html('<p>Almost There!</p>');
+//   level.src=hooray[Math.floor(Math.random() * hooray.length)];
+//   level.play();
+// });
+
+// $(".powerup6").click(function() {
+//   multiplier++;
+//   $(".powerup6").hide();
+//   $("#screen-1").css('border', 'dashed 3px violet');
+//   $('#points').css('border', 'double 5px violet');
+//   $('#message-display').html('<p>Relentless!</p>');
+//   level.src=hooray[Math.floor(Math.random() * hooray.length)];
+//   level.play();
+// });
+
+// $(".powerup7").click(function() {
+//   multiplier++;
+//   $(".powerup7").hide();
+//   $("#screen-1").css('border', 'dashed 3px red');
+//   $('#points').css('border', 'double 5px red');
+//   $('#message-display').html('<p>You Did It!!!</p>');
+//   level.src=hooray[Math.floor(Math.random() * hooray.length)];
+//   level.play();
+// });
+
+// when counter reaches 100 create a new button
