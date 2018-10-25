@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minesweeper</title>
+  <link rel="stylesheet" href="css/minesweeperstyle.css" />
+  <!-- Link to Font used on Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <strong>Minesweeper</strong>
+  </header>
+  <main>
+    <div class="grid-container">
+      <div class="box-1">
+        <div class="minesweeper">
+          <p>This is a small Minesweeper-esque game I made. The object of this game is to get as high of a score as you
+            can without hitting a bomb.</p>
+          <p>Click the squares to reveal a number between 1 and 3, and add it to your score. </p>
+          <strong>Try to avoid the bombs, if you hit one it's Game Over!</strong>
+          &nbsp;
+          <p id="message2"></p>
+          &nbsp;
+          <strong>Score:</strong>
+          <div id="scorekeeper"></div>
+          <div id="settings">
+            <div id="newgame">New Game</div>
+            <ul id="difficulty">
+              <li id="easy" class="selected">Easy</li>
+              <li id="normal">Normal</li>
+              <li id="hard">Hard</li>
+            </ul>
+          </div>
+          <div id="board"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/minesweeperscript.js"></script>
+</body>
+
+</html>

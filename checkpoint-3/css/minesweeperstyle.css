@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+/* Styling for header  */
+header {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/minefield.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-size: 52px;
+  color: black;
+}
+
+header strong {
+  background-color: rgba(0,0,0,0.8);
+  border-radius: 10px;
+  padding:6px 8px;
+  color: #f8f8f8
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+}
+
+/* Grid container for all elements in games */
+.grid-container {
+  display: grid;
+  height: 100%;
+  width: 70vw;
+  margin: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 900px;
+  justify-items: center;
+  grid-template-areas:
+    "box-1"
+}
+
+.box-1 {
+  grid-area: box-1;
+}
+
+/* div surrounding entire minesweeper game */
+.minesweeper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#scorekeeper {
+  font-size: 24px;
+}
+
+#settings {
+  text-align: center;
+  margin-top: 20px;
+  width: 450px;
+  font-weight: bold;
+  border-radius: 2px;
+  position: relative;
+}
+
+#difficulty {
+  list-style: none;
+  padding: 0;
+  padding-left: 10px;
+  display: inline-block;
+}
+
+#difficulty li {
+  background-color: #bdbdbd;
+  border-top: 2px solid #f8f8f8;
+  border-left: 2px solid #f8f8f8;
+  border-bottom: 1px solid #818181;
+  border-right: 1px solid #818181;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+  padding: 6px 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+#difficulty li:hover {
+  background-color: lightblue;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+#difficulty li.selected {
+  background-color: black;
+  color: white;
+}
+
+#board {
+  border: 10px solid #bdbdbd;
+  margin-top: 30px;
+}
+
+.square {
+  background-color: #bdbdbd;
+  display: inline-block;
+  border-top: 2px solid #f8f8f8;
+  border-left: 2px solid #f8f8f8;
+  border-bottom: 1px solid #818181;
+  border-right: 1px solid #818181;
+  margin: 0;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  font-size: 26px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.square:hover {
+  background-color: lightblue;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#newgame {
+  width: 40%;
+  background-color: #bdbdbd;
+  border-top: 2px solid #f8f8f8;
+  border-left: 2px solid #f8f8f8;
+  border-bottom: 1px solid #818181;
+  border-right: 1px solid #818181;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+  padding: 6px 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+#newgame:hover {
+  background-color: lightblue;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.chosen {
+  border-top: 2px solid #8e8e8e;
+  border-left: 2px solid #8e8e8e;
+  border-bottom: 1px solid #8e8e8e;
+  border-right: 1px solid #8e8e8e;
+}
+
+/* Classes for assigning colors */
+.red {
+  color: red;
+  font-weight: bold;
+}
+
+.blue {
+  color: blue;
+  font-weight: bold;
+}
+
+.green {
+  color: green;
+  font-weight: bold;
+}
+
+.black {
+  color: black;
+  font-weight: bold;
+}
+
+.bomb {
+  background-color: red;
+}
+
+.imgbomb {
+  height: 15px;
+  width: 15px;
+}
