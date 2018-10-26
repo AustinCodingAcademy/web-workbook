@@ -1,8 +1,6 @@
 $(document).ready(function () {
 
   let num = 0;
-  let num2 = 10;
-  let num3 = 100;
   $('#gun').click(function () {
     num++;
     $(this).text(num);
@@ -13,8 +11,10 @@ $(document).ready(function () {
     $('#gun').toggleClass('shake')
     // on fire click CSS animation effect to shake gun
   })
+  
 
   window.alert('Pew Pew!!!');
+
 });
 
 // 3 boxes in a row containing different fire arms in a line across the bottom
