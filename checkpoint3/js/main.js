@@ -389,6 +389,7 @@ $(document).ready(function() {
       if (currency >= cost && shop_checkLockStatus(currentItem)) {
         currentItemCost.addClass("green");
       } else if (currentItemCost.text() === "Purchased") {
+        currentItem.removeClass("unlocked");
         currentItemCost.addClass("green");
       } else {
         currentItemCost.removeClass("green");
@@ -479,7 +480,7 @@ $(document).ready(function() {
       updateLog(log_LevelUp);
 
       // remove hidden class from first weapon
-      if(weaponImg.hasClass("hidden")) weaponImg.removeClass("hidden");
+      if (weaponImg.hasClass("hidden")) weaponImg.removeClass("hidden");
 
       // this if/else just handles file names
       if (currentLevel < 10) {
