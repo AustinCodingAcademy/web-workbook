@@ -1,0 +1,70 @@
+h2 {
+  margin-top: 90px;
+  Color: black;
+  text-transform: uppercase;
+  text-shadow: 3px 3px white;
+}
+a {
+  color: black;
+}
+.box1 {
+    grid-area: box1;
+    background-color: #eeeeee;
+    margin: 10px;
+    color: black;
+    text-align: center;
+    background-image: url(./opaque-magazine-cover.png);
+    background-size: cover;
+
+  }
+  
+  .box2 {
+    grid-area: box2;
+    background-color: #eeeeee;
+    margin: 10px;
+    color: black;
+    text-align: center;
+    background-image: url(./GIT-40-PM.png);
+    background-size: cover;
+  }
+  
+  .box3 {
+    grid-area: box3;
+    background-color: #eeeeee;
+    margin: 10px;
+    color: black;
+    text-align: center;
+    background-image: url(./opacity-KUT.png);
+    background-size: cover;
+  }
+  
+  .box4 {
+    grid-area: box4;
+    background-color: #eeeeee;
+    margin: 10px;
+    text-align: center;
+    background-image: url(./Opaque-RM-background-image.png);
+    background-size: cover;
+  }
+
+  /* Large and up (Desktops) */
+@media (min-width: 700px) {
+    .box {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 30vw 30vw;
+        grid-template-rows: 30vw 30vw;
+        grid-template-areas: 
+        "box1 box2"
+        "box3 box4";
+        background: white;
+        padding: 10px;
+      }
+    }
+
+    a:hover {
+      color: teal;
+    }
+    h2:hover {
+      color: grey;
+    }
