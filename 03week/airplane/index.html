@@ -11,20 +11,17 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-    <style>
-        .boxy {
-            border: 1px solid red;
-        }
-    </style>
 </head>
 <body>
     <header>
         <img class="logo" src="img/logo.png">
         <nav class="links">
-            <a class="home" href="">Home</a>
-            <a class="deals" href="">Travel Deals</a>
-            <a class="schedule" href="">Flight Schedule</a>
-            <a class="login" href="">Register/Login</a>
+            <ul>
+                <li><a class="home" href="">Home</a></li>
+                <li><a class="deals" href="">Travel Deals</a></li>
+                <li><a class="schedule" href="">Flight Schedule</a></li>
+                <li><a class="login" href="">Register/Login</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -51,7 +48,7 @@
                     <option value="4">4</option>
                     <option value="5">5+</option>
                 </select>
-                <input type="radio" name="ticket" id="return" value="return">
+                <input type="radio" name="ticket" id="return" value="return" checked="checked">
                 <label for="return">Return</label>
                 <input type="radio" name="ticket" id="oneWay" value="oneway">
                 <label for="oneway">One Way</label>
