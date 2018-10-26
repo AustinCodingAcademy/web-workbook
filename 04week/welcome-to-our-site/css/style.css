@@ -1,0 +1,94 @@
+body {
+  font-family: "Times New Roman";
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul > li> p {
+  font-size: 18px;
+}
+
+.welcomeblock {
+  background-color: #2bcdc0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 50vh;
+}
+
+.welcomeblock p {
+  color:white;
+  font-size: 48px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.titleblock {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  height: 50vh;
+  color: white;
+}
+
+.container {
+  padding-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.container p {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.title {
+  font-size: 48px;
+}
+
+.titlebox {
+  height: 30px;
+  width: 200px;
+}
+
+.blue {
+  background-color: #33a8dd;
+}
+
+.red {
+  background-color: #f46731;
+}
+
+.green {
+  background-color: #2bcdc0;
+}
+
+.ulclass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 500px) { 
+  /* change background color of upper section blue when less than 500 pixels */
+  .welcomeblock {
+    background-color: #33a8dd;
+    flex-direction: column;
+  }
+
+  /* change background color of lower section gray when less than 500 pixels */
+  .titleblock {
+    background-color: #f7f5f6;
+    flex-direction: column;
+    height: 100%;
+    color: black;
+  }
+}

@@ -1,0 +1,318 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* styling for a links */
+a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+body {
+  font-family: "Open Sans";
+}
+
+header {
+  background-color: #0074ea;
+  font-weight: bold;
+  font-size: 38px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  border-bottom: 2px solid gray;
+}
+
+nav {
+  font-size: 18px;
+  width: 50vw;
+  margin: 15px;
+}
+
+nav>ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* remove bullets from list */
+nav>ul>li {
+  list-style-type: none;
+}
+
+/* change link text to white on hover */
+nav a:hover {
+  color: black;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+/* sets main background and styling */
+main {
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+}
+
+/* styling for grid container */
+.grid-container {
+  display: grid;
+  height: 75%;
+  width: 75%;
+  margin: 25px;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 250px;
+  grid-template-areas:
+    "box-1 box-2"
+    "box-3 box-4";
+}
+
+/* styling for individual boxes within container */
+.box {
+  background: linear-gradient(160deg, #0074ea, #7a99f1, #b4c0f7, #e7eafd, #e8f1ff, #b7d6ff, #7ebbff, #00a2ff);
+  box-shadow: 6px 5px 14px 0px black;
+  border-radius: 5px;
+  height: 80%;
+  width: 80%;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  -webkit-transition: all 3s ease-in-out;
+  -moz-transition: all 3s ease-in-out;
+  -o-transition: all 3s ease-in-out;
+  -ms-transition: all 3s ease-in-out;
+  transition: all 3s ease-in-out;
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  overflow: hidden;
+}
+
+/* header text inside of 4 boxes */
+.box>h2 {
+  text-decoration: underline;
+  font-style: italic;
+  padding-bottom: 5px;
+}
+
+.box-1 {
+  grid-area: box-1;
+}
+
+.box-2 {
+  grid-area: box-2;
+}
+
+.box-3 {
+  grid-area: box-3;
+}
+
+.box-4 {
+  grid-area: box-4;
+}
+
+/* box on hover code */
+/* /////////////////////////////////////////////////////////////////////////// */
+.box-1:hover {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.box-2:hover {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.box-3:hover {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.box-4:hover {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+/* ////////////////////////////////////////////////////////////////////////////////// */
+
+/* footer styling */
+footer {
+  border-top: 2px solid gray;
+  position: absolute;
+  background-color: #0074ea;
+  height: 10vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+/* tablet */
+@media (max-width: 992px) {
+
+  main {
+    height: 75vh;
+    flex-direction: row;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: row;
+    height: 75%;
+    width: 100%;
+    margin: 25px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .box {
+    height: 75%;
+    width: 75%;
+    display: flex;
+    font-size: 11px;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .box-1:hover {
+    font-size: 14px;
+  }
+
+  .box-2:hover {
+    font-size: 14px;
+  }
+
+  .box-3:hover {
+    font-size: 14px;
+  }
+
+  .box-4:hover {
+    font-size: 14px;
+  }
+}
+
+/* mobile */
+@media (max-width: 476px) {
+  main {
+    height: 80vh;
+    flex-direction: column;
+  }
+
+  nav {
+    margin: 5px;
+    width: 100vw;
+  }
+
+  nav>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .grid-container {
+    display: grid;
+    height: 100%;
+    width: 85%;
+    margin-bottom: 25px;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "box-1"
+      "box-2"
+      "box-3"
+      "box-4"
+  }
+
+  .box {
+    height: 75%;
+    width: 75%;
+    display: flex;
+    font-size: 8px;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .box-1:hover {
+    font-size: 16px;
+  }
+
+  .box-2:hover {
+    font-size: 16px;
+  }
+
+  .box-3:hover {
+    font-size: 16px;
+  }
+
+  .box-4:hover {
+    font-size: 16px;
+  }
+}

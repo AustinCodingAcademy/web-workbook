@@ -1,0 +1,185 @@
+body {
+  font-family: "Roboto";
+  padding: 0;
+  margin: 0;
+}
+
+/* list items */
+li {
+  list-style-type: none;
+}
+
+/* main container wrapping content of page, outside of footer */
+main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+
+}
+
+/* container holding picture and text on left side of page */
+.container-left {
+  margin: 0;
+  padding: 0;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 70%;
+}
+
+/* container holding picture */
+.picturecontainer {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 60vh;
+}
+
+/* text under picture */
+.textcontainer {
+  font-size: 26px;
+}
+
+/* header of text under picture */
+.textcontainer > p:first-of-type {
+  font-size: 42px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* button underneath text */
+.techbutton {
+  color: white;
+  font-size: 24px;
+  border: 0;
+  background-color: #4f4f4f;
+  height: 40px;
+  width: 170px;
+  text-align: center;
+}
+
+/* text inside button */
+.techbutton > p {
+  padding-top: 5px;
+}
+
+
+/* container for sidebar on right side of page */
+.container-right {
+  margin-left: 50px;
+  width: 30%;
+}
+
+/* header of sidebar */
+.sidebar > h3 {
+  border-bottom: 1px solid black;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 22px;
+}
+
+/* stories in sidebar */
+.sidebar > p {
+  padding-top: 10px;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+  background-color: #5d5d5d;
+  width:100%;
+  height: auto;
+  display:none;
+  color: white;
+}
+
+/* first item in list of footer */
+footer > div > nav > ul > li:first-of-type {
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+/* other items in list of footer */
+.footer-nav-container > nav > ul > li:nth-of-type(2), .footer-nav-container > nav > ul > li:nth-of-type(3), .footer-nav-container > nav > ul > li:nth-of-type(4), .footer-nav-container > nav > ul > li:nth-of-type(5), .footer-nav-container > nav > ul > li:nth-of-type(6) {
+  line-height: 1.4;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+/* all items except last one in footer for white border */
+.footer-nav-container > nav > ul > li:nth-of-type(2), .footer-nav-container > nav > ul > li:nth-of-type(3), .footer-nav-container > nav > ul > li:nth-of-type(4), .footer-nav-container > nav > ul > li:nth-of-type(5) {
+  border-bottom: 1px solid white;
+}
+
+/* container for footer navs */
+.footer-nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+/* footer nav */
+nav {
+  padding-top: 30px;
+}
+
+/* footer nav ul lists */
+nav > ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+
+/* tabet sizing */
+@media (max-width: 1000px){
+  main {
+    margin: 30px;
+    height: 100vh;
+  }
+  .container-left {
+    width: 100%
+  }
+  .container-right {
+    display: none;
+  }
+  .picturecontainer {
+    height: 60vh;
+  }
+}
+
+/* phone sizing */
+@media (max-width: 500px) {
+  main {
+    height: 60vh;
+  }
+  footer {
+    display: block;
+    height: 40vh;
+  }
+  .textcontainer {
+    font-size: 20px;
+  }
+  .textcontainer > p:first-of-type {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .picturecontainer {
+    height: 40vh;
+  }
+  .techbutton {
+    font-size: 20px;
+    height: 35px;
+    width: 150px;
+  }
+}

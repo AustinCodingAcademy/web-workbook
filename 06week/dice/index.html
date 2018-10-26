@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html" />
+    <title>Dice</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Link to Font used on Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- Link to JS file-->
+    <script src="./js/script.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <h1>Dicey Results</h1>
+    <div id="dice"></div><br>
+    <div class="button" onclick="roll()">Roll</div>
+    <p>The buttons below are shortcuts to quickly see the results of rolling a small or big straight.</p>
+    <p>( They will break without a regular roll in between repeated uses, just for testing :) )</p>
+    <div class="button button2" onclick="rollUntilSmallStraight()">Roll Until Small-Straight</div>
+    <div class="button button2" onclick="rollUntilBigStraight()">Roll Until Big-Straight</div>
+    <div id="report"></div>
+  </body>
+</html>

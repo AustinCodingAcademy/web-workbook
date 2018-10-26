@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  background-color: rgb(61, 61, 61);
+  color: white;
+}
+
+/* Styling for header  */
+header {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/memory.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid orange;
+  font-size: 52px;
+  color: black;
+}
+header strong {
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 10px;
+  padding:6px 8px;
+  color: black;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+}
+
+/* Grid container for all elements in games */
+.grid-container {
+  display: grid;
+  height: 100%;
+  width: 70vw;
+  margin: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 700px;
+  justify-items: center;
+  grid-template-areas:
+    "box-1"
+}
+
+.box-1 {
+  grid-area: box-1;
+}
+
+.matchinggame {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#board2 {
+  margin: 20px;
+}
+
+.square2 {
+  background-color: rgb(195, 78, 78);
+  color: black;
+  display: inline-block;
+  border: 2px solid none;
+  margin: 5px;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  line-height: 100px;
+}
+
+.square2:hover {
+  box-shadow: inset 0px 0px 0px 5px white;
+  transition: all 0.3s ease-in-out;
+}
+
+.flipped {
+  background-color: rgb(241, 255, 32);
+  transition: all 0.3s ease-in-out;
+}
+.matched {
+  box-shadow: inset 0px 0px 0px 5px black;
+}
+
+#newgame2 {
+  background-color: rgb(195, 78, 78);
+  color: white;
+  padding: 6px 8px;
+  width: 47%;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+#newgame2:hover {
+  background-color: rgb(241, 255, 32);
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+#winmessage {
+  font-size: 28px;
+  font-weight: bold;
+}

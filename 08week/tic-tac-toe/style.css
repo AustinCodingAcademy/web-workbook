@@ -1,18 +1,114 @@
-div[data-cell] {
-  width: 100px;
-  height: 100px;
-  background-color: #f2f2f2;
-  float: left;
-  border: 1px solid #808080;
-  font-size: 100px;
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.row {
-  clear: both;
+body {
+  font-family: "Roboto";
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  height: 100%;
+  margin: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  grid-template-areas:
+    "square-1 square-2 square-3"
+    "square-4 square-5 square-6"
+    "square-7 square-8 square-9"
+}
+
+#scoreboard {
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 22px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+#scoreboard > strong {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#scoreboard > p {
+  border-bottom: 1px solid purple;
+}
+
+.playeronescore {
+  float: left;
+  margin-left: 20%;
+}
+
+.playertwoscore {
+  float: right;
+  margin-right: 20%;
+}
+
+
+div[data-cell] {
+  width: 175px;
+  height: 175px;
+  background-color: #f2f2f2;
+  border: 2px solid #808080;
+  font-size: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  transition: all 0.5s ease-in-out;
+}
+
+.square:hover {
+  border: 2px solid orange;
+  transition: all 0.5s ease-in-out;
+
+}
+
+#turntracker {
+  font-size: 30px;
+}
+
+
+#clear {
+  /* Width to span all three squarees with borders*/
+  width: 522px;
+  height: 60px;
+  margin-top: 10px;
+  font-size: 30px;
+  background-color: purple;
+  color: white;
+}
+
+#clear:hover {
+  background-color: orange;
+  color: black;
 }
 
 #announce-winner {
   clear: both;
-  font-size: 50px;
+  font-size: 38px;
+}
+
+.playerOne {
+  color: red;
+}
+
+.playerTwo {
+  color:blue;
 }
