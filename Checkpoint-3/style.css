@@ -19,12 +19,58 @@ body {
 #gun {
   background-image: url(./images.jpg/gun.jpg);
   background-size: 100%;
+}
+
+#gun.shake {
   /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: shake 0.5s;
   /* When the animation is finished, start again */
   animation-iteration-count: 1s;
 }
 
+#click-box {
+  height: 300px;
+  width: 300px;
+  font-size: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: red;
+}
+
+.weapon-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 150px;
+  font-size: 75px;
+}
+
+.weapon1 {
+  width: 200px;
+  height: 200px;
+  background-image: url(./images.jpg/rocket.png);
+  background-size: cover;
+  border: 1px solid black;
+
+}
+
+.weapon2 {
+  width: 200px;
+  height: 200px;
+  background-image: url(./images.jpg/rifle.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.weapon3 {
+  width: 200px;
+  height: 200px;
+  background-image: url(./images.jpg/bazooka.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 @keyframes shake {
   0% {
@@ -72,32 +118,3 @@ body {
   }
 }
 
-#click-box {
-  height: 300px;
-  width: 300px;
-  font-size: 100px;
-  font-weight: bold;
-  text-transform: uppercase;
-  background-color: red;
-}
-
-.weapon-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 150px;
-  font-size: 75px;
-}
-
-.weapon1 {
-  border: 1px solid black;
-
-}
-
-.weapon2 {
-  border: 1px solid black;
-}
-
-.weapon3 {
-  border: 1px solid black;
-}

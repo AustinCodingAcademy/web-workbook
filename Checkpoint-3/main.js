@@ -10,6 +10,7 @@ $(document).ready(function () {
   $('#click-box').click(function () {
     num++;
     $('#gun').text(num);
+    $('#gun').toggleClass('shake')
     // on fire click CSS animation effect to shake gun
   })
 
