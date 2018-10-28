@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    
+  <!-- Main Div for Entire Webpage -->
+  <div class="webpage">
+    
+    <!-- Text At The Top -->
+    <small>Objective: Gain energy to gather water</small>
+        <h1>Pump Water For Your Village</h1>
+        
+        <!-- Image Of Child At Well -->
+        <img src="./pumpkid.jpg" class="ripple" id="wellKid"><br>
+
+        <!-- Ripple Button -->
+        <div class="rippleButton">Click To Increase Energy For Pumping Water</div>
+        <p class="description">Well Water</p>
+        <p class="counter">Gallons Removed: <span id="gallons"></span></p>
+
+        <div id="currentTotal"></div>
+
+        <!-- Buttons At The Bottom -->
+        <div id="box1">
+          <div class="button" data-val=".1" data-cost="10">Scoop With Hands - <span>10</span></div>
+          <div class="button" data-val="2" data-cost="50">Scoop With Bucket - <span>50</span></div>
+          <div class="button" data-val="10" data-cost="100">Scoop With Barrel - <span>100</span></div>
+          <div class="button" data-val="30" data-cost="300">Pump With Well - <span>300</span></div>
+          <div class="pump">Purchase Automatic Pump After 50 Gallons Removed</div>
+        </div>
+        
+        <div class="water"></div>
+
+  </div>
+
+</body>
+
+</html>
