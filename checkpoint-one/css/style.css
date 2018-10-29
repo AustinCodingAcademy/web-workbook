@@ -1,4 +1,4 @@
-.flex {
+.flexrow {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -6,37 +6,131 @@
 }
 
 main {
-    background-image: url()
-    background-repeat: no-repeat;
+    background-image: url(../img/grillecloth2.jpg);
+    background-repeat: repeat;
     background-size: auto;
 }
 
+header {
+    top: 0;
+    height: 200px;
+    width: 100%;
+    background-image: url(../img/header.jpg);
+    border-bottom: 2px double black;
+}
+
 .name {
-    width: 33%
-    margin: 15px;
+    margin-left: 40pt;
+    font-family: Noto Sans, sans-serif;
+    font-size: 50pt;
+    width: 33%;
+    text-shadow: 0px 0px 20px #A0A495;
+    text-shadow: 2px 2px 12px #A0A495;
+    text-decoration: none;
+}
+
+.name:visited {
+    text-decoration: none;
+    color: black;
+}
+
+span {
+    color: red;
+    font-size: 55pt;
+}
+
+ul {
+    width: 300px;
+    font-size: 50px;
 }
 
 li {
     list-style-type: none;
 }
 
-.social {
+.fa {
     display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin: 10px;
+    width: 60px;
+    height: 60px;
     border: 1px solid black;
-    border-radius: 50%
+    border-radius: 50%;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-envelope {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.9;
+    box-shadow: 0px 0px 10px whitesmoke;
 }
 
 .switches {
-    margin-right: 10px;
+    height: 45px;
+    width: 200px;
+    margin-right: 45px;
+    margin-top: 50px;
 }
 
-.standby, .power {
-    width: 25px;
-    height: 30px;
-    margin: 5px;
-    border: 1px solid black;
-    border-radius: 1px;
+.power, .standby {
+    text-align: justify;
+    width: 80px;
+    text-decoration: none;
+}
+
+.imglink {
+    display: block;
+    margin-top: 0px;
+    margin-left: 15px;
+    font-family: Noro Sans, sans-serif;
+    color: whitesmoke;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.blurb {
+    margin: 20px;
+    height: 150px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: #101113;
+    box-shadow: 0px 0px 15px #101113;
+    font-family: Noro Sans, sans-serif;
+    color: whitesmoke;
+    font-size: 20pt;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.reverb {
+    margin: 30px;
+    height: 65px;
+    box-shadow: 0px 0px 15px #101113;
 }
