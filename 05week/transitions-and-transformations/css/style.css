@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: 50%;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.box {
+  height: 50px;
+  width: 50px;
+  transition: all ease-out 3s;
+}
+
+.box1 {
+  background: black;
+}
+
+.box2{
+  background: yellow;
+}
+
+.box3 {
+  background: red;
+}
+
+.box4 {
+  background: blue;
+}
+
+.box5 {
+  background: orange;
+}
+
+.box6 {
+  background: olive;
+}
+
+.box7 {
+  background: hotpink;
+}
+
+.box8 {
+  background: gray;
+}
+
+.box9 {
+  background: slateblue;
+}
+
+.box10 {
+  background: saddlebrown;
+}
+
+.box11 {
+  background: teal;
+}
+
+.box12 {
+  background: green;
+}
+
+.container:hover > .box:nth-of-type(odd) {
+  transition: all ease-in 2.5s;
+  transform: scale(2) translateX(300px) rotate(360deg);
+}
+
+.container:hover > .box:nth-of-type(even) {
+  transition: all ease-in 2.5s;
+  transform: scale(.5) translateX(-600px) rotate(-360deg);
+}

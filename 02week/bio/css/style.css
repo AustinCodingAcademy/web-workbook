@@ -1,0 +1,64 @@
+body {
+  background-color: gray;
+}
+
+header {
+  text-align: left;
+  font-style: italic;
+  background-color: red;
+  font-size: 20px;
+  height: 200px;
+  width: auto;
+}
+
+nav {
+  text-align: right;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  float: left;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 400px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(30, 151, 192);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 200%;
+  position: absolute;
+  top: 44%;
+  left: 0;
+  text-align: center;
+  right: 0;
+  bottom: 0;
+}
+
+.words {
+  font-size: 20px;
+}
+ul {
+  float: right;
+  font-size: 80%;
+}

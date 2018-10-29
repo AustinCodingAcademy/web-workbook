@@ -1,0 +1,152 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(30deg, #29d8c9 50%,  #f195d3 50%);
+  /* background: linear-gradient( #55f7c6,  #f378ca); */
+  /* background: linear-gradient( #99a3a0c5,  #f52b7f); */
+}
+
+.links {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  padding-bottom: 10%;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 15pt;
+}
+
+.links a:hover {
+  transition: all ease-in .4s;
+  border-bottom: 7px rgb(1, 68, 95) double;
+}
+
+.flexcontainer1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: rgb(1, 68, 95);
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+
+.namecontact h1 {
+  font-size: 70pt;
+}
+
+h3 {
+  font-size: 20pt;
+  margin-top: -30px;
+}
+
+button {
+  height: 100px;
+  width: 280px;
+  border-radius: 5%;
+  font-size: 16pt;
+  margin-top: 80px;
+  border: 10px double rgb(1, 68, 95);
+  color: rgb(1, 68, 95);
+  transition: ease-in .5s;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+button:hover {
+  border: 10px double white;
+  background: rgb(1, 68, 95);
+  color: white;
+  transition: ease-in .5s;
+}
+
+.flexcontainer2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(1, 68, 95);
+  line-height: 1.5;
+}
+
+.aboutme1 {
+  font-size: 15pt;
+  padding-left: 7%;
+  width: 35%;
+}
+
+.aboutme2 {
+  font-size: 15pt;
+  width: 35%;
+  margin-top: -25px;
+  margin-right: 50px;
+  margin-left: -100px;
+}
+
+.social img {
+  height: 35px;
+}
+
+.gridfooter {
+  position: fixed; bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.created {
+  text-align: left;
+}
+
+.social {
+  position: fixed; right: 0;
+  padding-right: 50px;
+}
+
+@media (max-width: 800px) {
+  .flexcontainer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(1, 68, 95);
+  }
+
+  .flexcontainer2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(1, 68, 95);
+  }
+
+  .aboutme1 {
+    font-size: 15pt;
+    padding-left: 0;
+    width: 35%;
+  }
+  
+  .aboutme2 {
+    font-size: 15pt;
+    width: 35%;
+    margin-top: -20px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+ 
+  .created {
+    display: none;
+  }
+
+  .social {
+    display: none;
+  }
+}
