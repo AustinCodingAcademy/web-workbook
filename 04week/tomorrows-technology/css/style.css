@@ -1,0 +1,131 @@
+/* Global Styles */
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    line-height: 20px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    border: none;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #5d5d5d;
+    padding: 14px 28px;
+}
+
+/* Page Classes */
+/* Main Content Section */
+.mainContent {
+    display: flex;
+}
+
+.hero {
+    margin: 40px;
+}
+
+.sideBar {
+    min-width: 30vw;
+    margin: 40px;
+}
+
+h2.sectionTitle {
+    text-transform: uppercase;
+}
+
+li.topStoryListItem {
+    margin: 16px 0;
+
+}
+
+a.topStoryLink {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 21px;
+}
+
+/* Footer Section */
+.footer {
+    color: white;
+    background-color: #5d5d5d;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    visibility: hidden;
+}
+
+div.footerLinks {
+    flex-grow: 1;
+    max-width: 200px;
+    margin: 20px;
+}
+
+h2.footerTitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+a.footerLink {
+    font-weight: 300;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Tablet Style */
+@media (max-width: 768px) {
+
+    div.sideBar {
+        display: none;
+    }
+
+}
+
+/* Phone Style */
+@media (max-width: 576px) {
+
+    div.sideBar {
+        display: none;
+    }
+
+    section.footer {
+        visibility: visible;
+    }
+
+}
