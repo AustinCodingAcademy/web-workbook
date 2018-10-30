@@ -1,17 +1,28 @@
+/* ----- flex container class ----- */
 .flexrow {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
-
-body {
-    background-image: url(../img/grillecloth2.jpg);
+/* ----- general font class ----- */
+.noto {
+    font-family: Noto Sans, sans-serif;
+    color: whitesmoke;
 }
 
+body {
+    background: #0C0503;
+    background: -moz-radial-gradient(center, #0C0503 0%, #101113 49%, #202125 100%);
+    background: -webkit-radial-gradient(center, #0C0503 0%, #101113 49%, #202125 100%);
+    background: radial-gradient(ellipse at center, #0C0503 0%, #101113 49%, #202125 100%);
+}
+
+/* ----- top bar ----- */
 header {
+    position: sticky;
     top: 0;
-    height: 200px;
+    height: 185px;
     width: 100%;
     background-image: url(../img/header.jpg);
     border-bottom: 2px double black;
@@ -19,7 +30,6 @@ header {
 
 .name {
     margin-left: 40pt;
-    font-family: Noto Sans, sans-serif;
     font-size: 50pt;
     width: 33%;
     text-shadow: 0px 0px 10px #A0A495;
@@ -98,36 +108,60 @@ li {
     display: block;
     margin-top: 0px;
     margin-left: 15px;
-    font-family: Noro Sans, sans-serif;
-    color: whitesmoke;
 }
 
+/* ----- content ----- */
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 400px;
+    height: 100%;
+    margin-top: 50px;
 }
 
 .blurb {
     margin: 20px;
     height: 150px;
-    width: 400px;
-    border: 2px solid black;
-    border-radius: 4px;
-    background-color: #101113;
-    box-shadow: 0px 0px 15px #101113;
-    font-family: Noro Sans, sans-serif;
-    color: whitesmoke;
-    font-size: 20pt;
+    width: 85%;
+    font-size: 36pt;
     text-align: center;
     display: flex;
     align-items: center;
 }
 
+/* ----- reverb.com banner ----- */
 .reverb {
     margin: 30px;
     height: 65px;
     box-shadow: 0px 0px 15px #101113;
+    margin-bottom: 120px;
+}
+
+/* ----- gallery container ----- */
+#about {
+    width: 85%;
+    font-size: 20pt;
+}
+
+#about h1 {
+    font-size: 26pt;
+    border-bottom: 1px solid whitesmoke;
+}
+
+#about ul li {
+    list-style-type: disc;
+    font-size: 20pt;
+}
+
+/* ----- gallery ----- */
+.images {
+    font-size: 26px;
+}
+
+.images h1 {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    border-bottom: 1px solid whitesmoke;
 }
