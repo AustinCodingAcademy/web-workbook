@@ -4,13 +4,22 @@
     width: calc(100%-20px);
 }
 
+.main-container>div:nth-child(odd) {
+    background-color: beige;
+    padding: 10px;
+}
+
+.main-container>div:nth-child(even) {
+    background-color: blanchedalmond;
+    padding: 10px;
+}
+
 .header {
     width: 500px;
     margin: 0 auto;
 }
 
 .box {
-    background-color: antiquewhite;
     border: 1px solid black;
     margin: 5px;
 }
@@ -28,13 +37,47 @@
 } */
 
 .group1 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .group2 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .group3 {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-auto-rows: minmax (100px, auto);
+        grid-template-areas:
+            "box1"
+            "box2"
+            "box3"
+            "box4"
+            "box5"
+            "box6"
+            "box7"
+            "box8"
+            "box9"
+            "box10"
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+   .main-container {
+       display:grid;
+       grid-template-columns: 1fr 1fr;
+   }
+    .box {
+        background-color: lightpink;
+
+    }
+
 }
