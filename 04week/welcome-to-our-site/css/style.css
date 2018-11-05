@@ -1,0 +1,64 @@
+body {
+    color: white;
+    font-family: 'Lora', serif;
+    margin:0;
+  }
+  
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgb(14, 172, 172);
+    font-size: 20px;
+    height:400px;
+  }
+  
+
+
+  .flex-box {
+    background:black;
+    display: flex;
+    padding:20px;
+    text-align: center;
+    height:400px;
+  }
+  
+  .column {
+    flex: 33%;
+    padding: 20px;
+    margin: 20px;
+    font-size:13px;
+  }
+  
+  button {
+      width:75%;
+      padding:12px;
+      border-style:none;
+      background:rgb(14, 172, 172);
+
+  }
+
+  h2 {
+      font-size: 29px;
+      margin: 2px;
+      padding:10px;
+  }
+
+  @media (max-width:600px) {
+    header {
+      background:rgb(0, 153, 255);
+    }
+    
+    .flex-box {
+      flex-wrap:wrap;
+      background:white;
+    }
+    .column {
+      flex:100%;
+      max-width:100%;
+      background:white;
+      color:black;
+      padding: 30px 80px  
+    }
+  
