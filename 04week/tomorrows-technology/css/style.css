@@ -1,0 +1,102 @@
+body{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-left: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+main {
+    width: 70%;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    padding-top: 40px;
+    height: auto;
+}
+
+button {
+    background-color: grey;
+    color: white;
+    height: 30px;
+    width: 90px;
+}
+
+section {
+    padding-right: 30px;
+    padding-top: 40px;
+    width: 30%;
+    height: auto;
+}
+
+h2 {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+.bottomnav {
+    display: none;
+}
+
+.usefullinks {
+    width: 50%;
+    height: auto;
+}
+
+.socialmedia {
+    width: 50%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+/* All following CSS is for media queries */
+
+@media (max-width: 1000px) {
+    
+    section {
+        display: none}
+    
+    main {
+        width: 100%;
+        height: auto;
+        padding: 30px;}
+
+}
+/* ^media query for tablet^ */
+
+@media (max-width: 675px) {
+    body{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    
+    main {
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+    }
+
+    .bottomnav {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        background-color: #5D5D5D;
+        color: white;
+    }
+}
+/* ^media query for mobile^ */
