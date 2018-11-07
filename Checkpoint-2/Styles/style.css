@@ -1,0 +1,92 @@
+body {
+    background-color: pink;
+    }
+
+#wrapper {
+    display: grid;
+    grid-gap: 1em;
+    /* grid-template-areas: 1fr,1fr, 1fr, 1fr;  */
+    grid-template-rows: 5px 75px 25px 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 30px;
+    margin-right:30px;
+    height: 1500px;
+    /* grid-auto-rows: min-content; */
+}
+
+ .topBar{
+    grid-column: span 4;
+    grid-row: 1/2;
+    background-color:	#c5aadd; 
+    border: 2px solid gray;
+} 
+
+.name{
+grid-column: span 4;
+grid-row: 2/3;
+text-align: center;
+font-size: 75px;
+font-family: 'Poppins', sans-serif;
+border: 2px solid yellow; 
+
+}
+
+.austin{
+    grid-column: span 4;
+    text-align: center;
+    font-size: 25px;
+    grid-row: 3/4;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid yellow; 
+}
+
+
+
+ 
+
+
+.education{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    border: 2px solid purple;
+}
+.experience{
+    border: 2px solid purple;
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+.interests{
+    border: 2px solid purple;
+    grid-column: span 1;
+
+}
+
+.certifications{
+    border: 2px solid purple;
+ grid-column: span 1;
+}
+
+.qualifications{
+    border: 2px solid purple;
+  
+    grid-column: span 1;
+}
+
+.missionStatement{
+    border: 2px solid purple;
+    
+    grid-column: span 1;
+
+}
+
+.goals{
+    border: 2px solid purple;
+   
+    grid-column: span 1;
+}
+
+.background{
+    border: 2px solid purple;
+  
+    grid-column: span 1;
+}
