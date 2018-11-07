@@ -1,1 +1,355 @@
 
+
+header {
+    grid-area: header;
+
+    border-bottom: 5px solid black;
+    text-align: center;
+}
+
+header p {
+    border: none;
+ 
+}
+}
+
+#button1 {
+    background-color: red;
+    border-radius: 50%;
+}
+
+p {
+    border-bottom: 1px solid black;
+    padding: 10px;
+
+}
+.box img {
+    height: 200px;
+    width: 200px;
+    padding: 5px;
+    margin: auto;
+    display: block;
+}
+
+.box1 {
+    grid-area: box1;
+}
+
+.box1 button {
+    float: left;
+}
+
+.box1 p {
+    margin-left: 50%;
+}
+
+.box1 a {
+    float: right;
+}
+.box1 img {
+    widows: 200px;
+    height: 300px;
+    float: left;
+    padding: 20px;
+}
+
+.box2 {
+    grid-area: box2;
+}
+
+.box2 img {
+    width: 200px;
+    height: 300px;
+    float: left;
+    padding: 20px;
+}
+
+.box2 button {
+    float: left;
+}
+
+.box2 a {
+    float: right;
+}
+
+.box2 p {
+    margin-left: 50%;
+}
+
+
+.box3 {
+    grid-area: box3;
+}
+
+.box3 img {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    padding: 5px;
+    margin: auto;
+}
+
+.box3 button {
+    float: left;
+}
+
+.box3 a {
+    float: right;
+}
+
+.box4 {
+    grid-area: box4;
+}
+
+.box4 img {
+    width: 200px;
+    height: 100px;
+}
+
+.box5 {
+    grid-area: box5;
+}
+
+.box5 img {
+    width: 200px;
+    height: 100px;
+}
+
+.box6 {
+    grid-area: box6;
+}
+
+.box6 img {
+    width: 200px;
+    height: 300px;
+    float: left;
+    padding: 20px;
+}
+
+.box6 a {
+    float: right;
+}
+
+.box6 p {
+    margin-left: 50%;
+}
+
+
+.box7 {
+    grid-area: box7;
+}
+
+.box7 button {
+    float: left;
+}
+
+.box7 a {
+    float: right;
+}
+
+.box7 img {
+    width: 200px;
+    height: 200px;
+}
+
+.box8 {
+    grid-area: box8;
+}
+
+.box8 button {
+    float: left;
+}
+
+.box8 a {
+    float: right;
+}
+
+.box9 {
+    grid-area: box9;
+}
+
+.box9 button {
+    float: left;
+}
+
+.box9 a {
+    float: right;
+}
+
+.box10 {
+    grid-area: box10;
+}
+
+.box10 button {
+    float: left;
+}
+
+.box10 a {
+    float: right;
+}
+.container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "header header header header"
+        "box1 box1 box2 box2"
+        "box3 box3 box4 box5"
+        "box3 box3 box6 box6"
+        "box7 box8 box9 box10";
+
+    grid-gap: 20px;
+}
+
+.container > div {
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+    ;
+}
+
+.tablet {
+    display: none;
+}
+
+.phone {
+    display: none;
+}
+
+/*TABLET ----------TABLET -------- TABLET ------ TABLET TABLET TABLET TABLET */
+
+@media (max-width: 1000px) {
+    .desktop {
+        display: none;
+    }
+
+    .tablet {
+        display: inline-block;
+    }
+
+    .box img {
+        width: 200px;
+        height: 200px;
+        float: none;
+    }
+    .box1 img {
+        width: 500px;
+        height: 250px;
+        display: block;
+        float: none;
+        margin: auto;
+    }
+
+    .box1 p {
+        margin: auto;
+        padding: 10px;
+    }
+
+    .box2 p {
+        margin: 0;
+    }
+    .box4 img {
+        width: 50%;
+        height: 300px;
+        float: left;
+        padding: 20px;
+    }
+    
+    .box4 p {
+        margin-left: 55%;
+    }
+    .box4 a {
+        float: right;
+    }
+
+    .box5 img {
+        width: 500px;
+        height: 200px;
+    }
+
+    .box5 a {
+        float: right;
+    }
+
+    .box6 p {
+        margin: auto;
+    }
+    }
+
+    .box8 img {
+        width: 50%;
+        height: 300px;
+        float: left;
+        padding: 20px;
+    }
+
+    .box8 p {
+        margin-left: 55%;
+    }
+    
+    .box8 a {
+        float: right;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "header header"
+            "box1 box1"
+            "box1 box1"
+            "box2 box3"
+            "box4 box4"
+            "box5 box5"
+            "box5 box5"
+            "box6 box7"
+            "box8 box8"
+            "box9 box9"
+            "box9 box9"
+            "box10 none"
+    }
+
+
+ 
+
+/* PHONE ---- PHONE ---- PHONE ----- PHONE ----- PHONE------ */
+@media (max-width: 600px) {
+    .desktop {
+        display: none;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .phone {
+        display: inline-block;
+    }
+
+    .box img {
+        width: 200px;
+        height: 200px;
+        float: none;
+    }
+.box p {
+    margin: auto;
+}
+
+    .container {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "box1"
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+        "box6"
+        "box7"
+        "box8"
+        "box9"
+        "box10"
+    }
+
+
