@@ -1,0 +1,103 @@
+/* Desktop */
+@media (min-width: 992px) { 
+.mobilebox {display: none; visibility: hidden;}    
+body {
+    width: 1000px;
+    height: 600px;
+    position: relative;}
+}
+header {
+    width: 980px;
+    height: 400px;
+    margin-top : 20px;
+    margin-left: 20px;
+}
+img {
+    height: calc(608px * 0.6); /* 364.8; */
+    width: calc(1200px * 0.6); /* 720; */
+    float: left;
+}
+
+.topstories {
+    float: left;
+    width: 220px;
+    margin-left: 20px;
+} 
+.topstories h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    border-bottom: 1px black solid
+}
+.topstories div {
+    margin: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+main {
+    float: left;
+    width: 720px;
+    margin-left: 20px;
+    position: relative;
+    bottom: 30px;
+
+}
+main p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+}
+main div {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+main h3 {
+    margin-left: 20px;
+    background-color: rgb(63, 61, 61);
+    width: 155px;
+    height: 30px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+/* Tablet */
+@media (max-width: 768px) { 
+    .topstories {display: none; visibility: hidden;}
+    .mobilebox {display: none; visibility: hidden;}
+}
+/* Phone */
+@media (max-width: 576px) {
+    img {
+    height: calc(608px * 0.44);
+    width: calc(1200px * 0.44);}
+    main {
+        height: ;
+        width: 80%;
+        position: relative;
+        bottom: 150px;}
+    main p {font-size: 20px;}
+    main div {font-size: 17px;}
+    .mobilebox {
+        display: inherit ; 
+        visibility: visible;
+        background-color: #5D5D5D;
+        width: 576px;
+        height: 300px;
+        position: absolute;
+        bottom: 30px;
+        color: white;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    .links {
+        float: left;
+        width: 250px;
+        margin: 10px;
+    }
+    .socialmedia {
+        float: left;
+        width: 250px;
+        margin: 10px;
+    }
+    .mobilebox p {
+        border-bottom: 1px white solid;
+    }
+}
