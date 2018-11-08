@@ -15,7 +15,6 @@
 header {
     grid-area: header;
     text-align: center;
-    background-color: blue;
 }
 h1{
     margin-bottom: 5px;
@@ -42,66 +41,137 @@ img{
     align-content: center;
 }
 
+.img3{
+    padding-left: 222px;
+    padding-right: 322px;
+}
+
+.img7_10{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.img4_5{
+    max-width: 200px;
+    max-height: 100px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-left: 30%
+}
+
 .text{
     font-size: 10pt;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 .box1 {
     grid-area: box1;
     display: flex;
-    flex-flow: row;
-    background-color: aqua;
+    flex-wrap: nowrap;
+    border: 1px black solid;
+}
+.img_text{
+    display: block;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+}
+.red_container{
+    display: flex;
+    margin: 10px;
+    margin-top: 10%;
+}
+
+.red_circle{
+    background-color: salmon;
+    margin-top: 2px;
+    max-width: 20px;
+    min-width: 20px;
+    max-height: 20px;
+    min-height: 20px;
+    border-radius: 180px;
+    ;
+}
+.text3{
+    margin-left: 5px;
+}
+.red_box{
+    background-color: salmon;
+    max-width: 200px;
+    min-width: 100px;
+    max-height: 100px;
+    min-height: 20px; 
+    margin-left: 50%;
+    padding-right: 5px;
+
+}
+
+.red_box1{
+    margin-left: 40%;
+    padding-left: 80px;
+    padding-right:0px;
+    
+}
+.red_box2{
+    margin-left: 40%;
+    padding-left: 80px;
+    padding-right:0px;
+}
+
+
+.red_box3{
+    margin-left:75%
 }
 
 .box2 {
     grid-area: box2;
     display: flex;
-    flex-flow: row;
-    background-color: green;
+    flex-wrap: nowrap;
+    border: 1px black solid;
 }
 
 .box3 {
     grid-area: box3;
-
-    background-color: yellow;
+    border: 1px black solid;
 }
 
 .box4 {
     grid-area: box4;
-    background-color: red;
+    border: 1px black solid;
 }
 
 .box5 {
     grid-area: box5;
-    background-color: purple;
+    border: 1px black solid;
 }
 
 .box6 {
     grid-area: box6;
     display: flex;
     flex-flow: row;
-    background-color: magenta;
+    border: 1px black solid;
 }
 
 .box7 {
     grid-area: box7;
-    background-color: greenyellow;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px black solid;
 }
 
 .box8 {
     grid-area: box8;
-    background-color: grey;
+    border: 1px black solid;
 }
 
 .box9 {
     grid-area: box9;
-    background-color: aquamarine;
+    border: 1px black solid;
 }
 
 .box10 {
     grid-area: box10;
-    background-color: orange;
+    border: 1px black solid;
 }
 
 @media (max-width: 768px) {
@@ -126,7 +196,63 @@ img{
         display: inherit;
     }
 
-}
+    .img{
+        max-width: 300px;
+        max-height: 200px;
+        padding:10px;
+        margin: 0px;
+        padding-left: 15%;
+        padding-right: 10%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .img1{
+        padding-left: 27%;
+        padding-right: 50%;
+    }
+
+    .img4{
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+
+    .box1{
+        display: block;
+    }
+    .box2{
+        display: block;
+    }
+    .box3{
+        display: block;
+    }
+    .box4{
+        display: flex;
+    }
+    .box6{
+        display: block;
+    }
+    .red_box2{
+        margin-right: 0%;
+        padding-left: 0;
+
+    }
+    .red_box3{
+        margin-left:0%;
+        margin-bottom:0%;
+    }
+    .red_box{
+        margin-left: 50%;
+    }
+    .red_box1{
+        margin-left: 65%;
+        margin-right: 10%;
+        padding-left: 90px;
+        padding-right:5px;
+    }
+        
+    }
+    
 
 @media (max-width: 576px) {
     .container {
@@ -156,6 +282,32 @@ img{
 
     .mobile {
         display: inherit;
+    }
+    .img{
+        max-width: 300px;
+        max-height: 200px;
+        padding:10px;
+        margin-left: 20%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .box1{
+        display: block;
+    }
+    .box2{
+        display: block;
+    }
+    .box4{
+        display: block;
+    }
+    .box6{
+        display: block;
+    }
+    .red_box{
+        padding-left: 50px;
+        padding-right: 5px;
+        margin-left: 55%;
     }
 
 }
