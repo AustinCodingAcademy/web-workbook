@@ -27,8 +27,6 @@ p {
     height: 200px;
     width: 200px;
     padding: 5px;
-    margin: auto;
-    display: block;
 }
 
 .box1 {
@@ -39,18 +37,18 @@ p {
     float: left;
 }
 
-.box1 p {
-    margin-left: 50%;
-}
-
 .box1 a {
     float: right;
 }
 .box1 img {
-    widows: 200px;
-    height: 300px;
+    width: 40%;
+    height: 250px;
     float: left;
     padding: 20px;
+}
+
+.box1 p {
+    margin-left: 50%;
 }
 
 .box2 {
@@ -58,10 +56,11 @@ p {
 }
 
 .box2 img {
-    width: 200px;
-    height: 300px;
+    width: 40%;
+    height: 250px;
     float: left;
     padding: 20px;
+    display: block;
 }
 
 .box2 button {
@@ -147,6 +146,7 @@ p {
     float: right;
 }
 
+
 .box7 img {
     width: 200px;
     height: 200px;
@@ -187,8 +187,15 @@ p {
 .box10 a {
     float: right;
 }
+
+.container > div {
+    background-color: white;
+    border: 1px solid black;
+    padding: 20px;
+}
+
 .container {
-    margin: auto;
+    grid-gap: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
@@ -196,17 +203,10 @@ p {
         "box1 box1 box2 box2"
         "box3 box3 box4 box5"
         "box3 box3 box6 box6"
-        "box7 box8 box9 box10";
-
-    grid-gap: 20px;
+        "box7 box8 box9 box10"
 }
 
-.container > div {
-    background-color: white;
-    border: 1px solid black;
-    padding: 20px;
-    ;
-}
+
 
 .tablet {
     display: none;
@@ -227,10 +227,29 @@ p {
         display: inline-block;
     }
 
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "header header"
+        "box1 box1"
+        "box2 box3"
+        "box4 box4"
+        "box5 box5"
+        "box6 box7"
+        "box8 box8"
+        "box9 box9"
+        "box10 none"
+
+
+    }
+
     .box img {
         width: 200px;
         height: 200px;
         float: none;
+        display: block;
+        margin: auto;
     }
     .box1 img {
         width: 500px;
@@ -247,6 +266,11 @@ p {
 
     .box2 p {
         margin: 0;
+    }
+
+    .box2 img {
+        display: block;
+        margin: auto;
     }
     .box4 img {
         width: 50%;
@@ -265,6 +289,8 @@ p {
     .box5 img {
         width: 500px;
         height: 200px;
+        display: block;
+        margin: auto;
     }
 
     .box5 a {
@@ -274,38 +300,37 @@ p {
     .box6 p {
         margin: auto;
     }
-    }
-
+  
     .box8 img {
         width: 50%;
         height: 300px;
         float: left;
-        padding: 20px;
+        padding 20px;
     }
 
     .box8 p {
-        margin-left: 55%;
+        margin-left: 55%;  
     }
     
     .box8 a {
+        float: right;
+    }
+
+    .box9 img {
+        width: 500px;
+        height: 200px;
+        display: block;
+        margin: auto;
+    }
+
+    .box5 a {
         float: right;
     }
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
-            "header header"
-            "box1 box1"
-            "box1 box1"
-            "box2 box3"
-            "box4 box4"
-            "box5 box5"
-            "box5 box5"
-            "box6 box7"
-            "box8 box8"
-            "box9 box9"
-            "box9 box9"
-            "box10 none"
+
     }
 
 
@@ -329,6 +354,8 @@ p {
         width: 200px;
         height: 200px;
         float: none;
+        margin: auto;
+        display: block;
     }
 .box p {
     margin: auto;
