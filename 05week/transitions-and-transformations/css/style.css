@@ -1,0 +1,40 @@
+
+.container {
+    margin:0 auto;
+
+}
+
+.container > div {
+    width: 50px;
+    height:50px;
+    margin: 10px auto;
+    position:relative;
+}
+
+.container > div:nth-child(odd) {
+    background:lightblue;
+    transition: width 2s, height 2s, transform 2s, left 2s;
+    left:0;
+}
+
+.container > div:nth-child(odd):hover {
+width:100px;
+height: 100px;
+transform: rotate(180deg);
+left:100px;
+
+
+}
+
+.container > div:nth-child(even) {
+    background:pink;
+    transition: width 2s, height 2s, transform 2s, right 2s;
+    right:0;
+    
+}
+.container > div:nth-child(even):hover {
+    width:25px;
+    height:25px;
+    transform: rotate(-180deg);
+    right:100px;
+    }
