@@ -1,40 +1,45 @@
-.box {
-    background: #eeeeee;
-    height: 50px;
+main {
     width: 50px;
-    padding: 10px;
-    border: 1px solid black;
-    margin: 5px;
-  }
-
-.grid {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "box1"
-        "box2"
-        "box3"
-        "box4"
-        "box5"
-        "box6"
-        "box7"
-        "box8"
-        "box9"
-        "box10"
-        "box11"
-        "box12";
+    margin: auto;
 }
 
-.box1 {grid-area: box1;}
-.box2 {grid-area: box2;}
-.box3 {grid-area: box3;}
-.box4 {grid-area: box4;}
-.box5 {grid-area: box5;}
-.box6 {grid-area: box6;}
-.box7 {grid-area: box7;}
-.box8 {grid-area: box8;}
-.box9 {grid-area: box9;}
-.box10 {grid-area: box10;}
-.box11 {grid-area: box11;}
-.box12 {grid-area: box12;}
+.box1 {background-color: red;}
+.box2 {background-color: orange;}
+.box3 {background-color: yellow}
+.box4 {background-color: green}
+.box5 {background-color: blue}
+.box6 {background-color: indigo}
+.box7 {background-color: violet}
+.box8 {background-color: red;}
+.box9 {background-color: orange}
+.box10 {background-color: yellow}
+.box11 {background-color: green}
+.box12 {background-color: blue}
+
+.box:nth-child(even) {
+    height: 48px;
+    width: 48px;
+    border: 1px black solid;
+    margin-bottom: 20px;
+    transition: width 2s, height 2s, transform 2s;
+  }
+
+ .box:nth-child(even):hover, .box:nth-child(even):active {
+    width: 100px;
+    height: 100px;
+    transform: translate(100%, 0%) rotate(180deg); 
+  }
+
+.box:nth-child(odd) {
+    height: 48px;
+    width: 48px;
+    border: 1px black solid;
+    margin-bottom: 20px;
+    transition: width 1s, height 1s, transform 1s;
+  }
+ 
+  .box:nth-child(odd):hover, .box:nth-child(odd):active {
+    width: 25px;
+    height: 25px;
+    transform: translate(-100%, 0%) rotate(-180deg);
+  }
