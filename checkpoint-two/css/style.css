@@ -88,6 +88,8 @@ div.stripe {
     border: 2px solid black;
     align-items: center;
     justify-content: center;
+    font-family: bungee outline;
+    font-size: 30px;
 }
 .container6 h3 {
     font-family: muli;
@@ -115,16 +117,16 @@ div.stripe {
 }
 
 div.stripe2 {
-    background-image: url(../img/stripe2.png);
-    height: 130px;
-    border-top: 500px solid black;
+    /* background-image: url(../img/stripe2.png); */
+    /* height: 130px; */
+    /* border-top: 500px solid black; */
     /* border-bottom: 30px solid black;  */
 }
 
 div.stripe3 {
-    background-image: url(../img/stripe3.png);
-    height: 360px;
-    border-bottom: 20px solid orange; 
+    /* background-image: url(../img/stripe3.png); */
+    /* height: 360px; */
+    /* border-bottom: 20px solid orange;  */
 }
 
 
@@ -133,12 +135,14 @@ div.stripe3 {
 .content1 {
     display: grid;
     grid-template-columns: 25% 75%;
-    border-top: 250px solid black;
+    /* border-top: 250px solid black; */
 
 }
 .container10 {
-    background-image: url(../img/art1.png);
+    background-image: url(../img/bw.png);
     display: flex;
+    align-items: center;
+    justify-content: center;
     height: 245px;
     /* border: 2px solid black; */
     font-family: muli;
@@ -189,6 +193,9 @@ div.school {
 }
 
 .container13 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
     background-color: darkgrey;
     border-right: 60px solid maroon;
     border-left: 130px solid #191D4C;
@@ -200,9 +207,9 @@ div.school {
     border-bottom: 10px solid black;
 }
 
-.container15 {
+/* .container15 {
     height: 200px;
-    background-color: white;
+    background-color: white; */
 }
 
 div.stripe4 {
@@ -222,8 +229,8 @@ div.stripe4 {
 }
 
 .content3 h1 {
-    font-family: bungee outline;
-    font-size: 60px;
+    /* font-family: bungee outline;
+    font-size: 60px; */
 }
 
 .list {
@@ -231,7 +238,7 @@ div.stripe4 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     font-family: muli;
     margin-left: 100px;
-    font-size: 20px;
+    font-size: 40px;
     /* justify-content: center; */
     align-content: center;
     /* justify-content: space-evenly; */
@@ -280,23 +287,26 @@ div.stripe5 {
 
 /* ================================================ */
 .footer {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: orange;
     height: 100px;
     align-items: center;
-    justify-content: center;
-    border-top: 20px solid black;
+    justify-content: space-evenly;
+    border-top: 10px solid red;
+    border-bottom: 20px solid black;
 }
 
+.footer > img {
+    align-items: center;
+    justify-content: center;
+}
 .contact {
     width: 220px;
     margin: 0 20px;
 }
 
-i {
-    margin: 70px;
 
-}
 
 @media (max-width: 576px) {
     .title-container {
