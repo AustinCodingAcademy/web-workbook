@@ -1,14 +1,23 @@
 .parent {
-    display: grid;
-    grid-template-columns: 1fr ;
+    margin: auto;
+    width:50px;
 }
 .parent div {
-    display: flex;
-    align-items:flex-end;
     height: 50px;
     width: 50px;
-    margin: px;
+    margin:3px;
+    text-align: center;
+    align-items: center;
+    transition: width 1s, height 1s;
 }
+.parent:hover>#odd {
+    transform: scale(0.5) translateX(-500px) rotate(-360deg);
+    transition: all 1s ease-out;
+  }
+.parent:hover>#even {
+    transform: scale(1.5) translate(200px) rotate(360deg);
+    transition: all 3s ease-out;
+  }
 .item-1 {
     background-color: #E1B201 ;
 }
