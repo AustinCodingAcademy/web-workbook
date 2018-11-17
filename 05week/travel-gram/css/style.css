@@ -232,25 +232,48 @@ body {
 }
 
 
+@media (min-width: 768px) and (max-width: 1200px) {
+    body {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "hr hr"
+                             "box1 box2"
+                             "box3 box4"
+                             "box5 box6"
+                             "box7 box8"
+                             "box9 box10"
+
+    }
+     .box {
+         background-color: lightpink;
+     }
+
+     
+
 
 
 
 @media (max-width: 768px) {
-    .main-container {
+    body {
         display: grid;
         grid-template-rows: 1fr;
-        grid-auto-rows: minmax (100px, auto);
+        /* grid-auto-rows: minmax (100px, auto); */
         grid-template-areas:
+            "hr"
             "box1"
             "box2"
             "box3"
-            "box4"
-            "box5"
-            "box6"
-            "box7"
-            "box8"
-            "box9"
-            "box10"
+            ".box4"
+            ".box5"
+            ".box6"
+            ".box7"
+            ".box8"
+            ".box9"
+            ".box10"
+    }
+
+    .header {
+        grid-area: hr;
     }
 
     .box1 {
@@ -259,6 +282,10 @@ body {
 
     .box2 {
         grid-area: box2;
+    }
+
+    .box3 {
+        grid-area: box3;
     }
 }
 
