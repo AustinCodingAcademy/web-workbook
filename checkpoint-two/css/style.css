@@ -48,6 +48,26 @@ li {
         transform: translateX(0);
     }
 }
+/*nav bar on scroll style*/
+#menu {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 75px;
+    background-image: url(../assets/whatisspacet.jpg);
+    color: whitesmoke;
+    border-bottom: 2px solid #E6E6E6;
+    z-index: 9999;
+    display: none;
+    box-shadow: 0 0 18px black;
+}
+
+#menu h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30pt;
+    text-align: center;
+    margin-top: 8px;
+}
 
 .logo {
     width: 80px;
@@ -283,10 +303,6 @@ footer {
     width: 200px;
 }
 
-.wideSocial {
-    display: none;
-}
-
 .footerBox > i {
     display: none;
 }
@@ -296,37 +312,7 @@ footer {
     text-align: right;
 }
 
-/*Removed this section but may want it later!
-
-.email, .fb, .linkedin, .github {
-    display: none;
-}
-
-.email::after {
-    font-family: 'FontAwesome';
-    content: '\f0e0';
-    margin-left: 10px;
-}
-
-.fb::after {
-    font-family: 'FontAwesome';
-    content: '\f09a';
-    margin-left: 10px;
-}
-
-.linkedin::after {
-    font-family: 'FontAwesome';
-    content: '\f0e1';
-    margin-left: 10px;
-}
-
-.github::after {
-    font-family: 'FontAwesome';
-    content: '\f09b';
-    margin-left: 10px;
-}
-*/
-
+/*social media link buttons, called smallSocial because there used to be a wideSocial*/
 .smallSocial {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -350,6 +336,7 @@ footer {
     color: #333;
 }
 
+/*icons enlarge on hover or active*/
 .icon {
     transition: transform 1s;
 }
@@ -374,7 +361,6 @@ small {
     }
 
     ul {
-        flex-direction: row;
         font-size: 26pt;
         margin-right: 60px;
     }
@@ -402,6 +388,10 @@ small {
         font-size: 24pt;
         margin: 0px 5px;
     }
+    
+    .address {
+        margin-right: 20px;
+    }
 
     .smallSocial {
         width: 400px;
@@ -418,6 +408,10 @@ small {
     .logo {
         width: 600px;
         font-size: 36pt;
+    }
+
+    ul {
+        flex-direction: row;
     }
 
     .title {
@@ -444,6 +438,7 @@ small {
         width: 500px;
         font-size: 16pt;
     }
+
 
     .footerBox > i {
         font-size: 42pt;

@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
     <header>
@@ -27,6 +29,24 @@
             </ul>            
         </div>
     </header>
+    <!--sticky header menu on scroll-->
+    <div id="menu">
+        <h1><a href="#">Lorem Web Co.</a></h1>
+    </div>
+    <script type="text/javascript">
+    //check if page is scrolled past 400px and fade in second menu bar using jquery
+        (function($) {          
+            $(document).ready(function(){                    
+                $(window).scroll(function(){
+                    if ($(this).scrollTop() > 400) {
+                        $('#menu').fadeIn(500);
+                    } else {
+                        $('#menu').fadeOut(500);
+                    }
+                });
+            });
+        })(jQuery);
+    </script>
     <!--background and slogan-->
     <div class="pageTopTitle flexCenter">
         <h1 class="title"><span class="bold">Lorem</span> solutions to <span class="bold">Ipsum</span> problems.</h1>
@@ -82,16 +102,6 @@
             <i class="fa fa-phone-square" aria-hidden="true"></i>
             <p class="phone">(567)364-7786</p>
         </div>
-
-        <!-- Removed this box but may want it in the future!!!
-        <div class="footerBox wideSocial">
-            <a href="#" class="email">lorem@ipsum.com</a>
-            <a href="#" class="fb">Facebook</a>
-            <a href="#" class="linkedin">LinkedIn</a>
-            <a href="#" class="github">GitHub</a>
-        </div>
-        -->
-
         <!--responsive social icons-->
         <div class="footerBox smallSocial">
             <a href="#">
