@@ -1,1 +1,76 @@
+.containerstyle{
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 0px auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "nav header header header header"
+        "nav body body body body"
+        "nav body body body body"
+        "nav footer footer footer footer";
+}
 
+.navstyle{
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 150px auto auto auto;
+    grid-template-rows: auto;
+    background-color: aquamarine;
+    grid-template-areas: 
+        "nav header header header header"
+        "nav body body body body"
+        "nav body body body body"
+        "nav footer footer footer footer";
+}
+
+
+#navcol{
+    display: none;
+    grid-area: nav;
+    outline: 1px black solid;
+}
+    #navlist{
+        margin: 5px;
+        margin-top: 15px;
+        font-size: 20pt;
+    }
+        .navitem{
+            margin-bottom:20px;
+        }
+
+header{
+    background-color: aqua;
+    outline: 1px black solid;
+
+    grid-area: header;
+    display: flex;
+}
+    #navcon{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .navbtn{
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin-left: 5px;
+
+       
+    }
+    h1{
+        font-size: 35pt;
+        font-weight: bolder;
+        margin: auto;
+        margin-left: 5%;
+    }
+    h2{
+        font-size: 30pt;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.section1{
+    grid-area: body;
+}
