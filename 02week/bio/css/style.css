@@ -1,12 +1,21 @@
+@media screen and (max-width: 1600px) {
+
+
+html,
 body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
   font-family: 'Roboto', sans-serif;
+
 }
 
 header {
   display: flex;
   background: #666;
   justify-content: space-between;
-  padding: 10px;
+  /* padding: 10px; */
+  width: 100%;
 }
 
 .identity {
@@ -41,6 +50,8 @@ main {
   justify-content: space-evenly;
   margin: 50px 0;
   /* border: 1px solid black; */
+  position: relative;
+  top: 120px;
 }
 
 .headshot {
@@ -66,10 +77,11 @@ main {
 
 footer {
   display: flex;
+  width: 100%;
   height: 200px;
   background: #666;
-  /* border: 1px solid black; */
-  
+  position: absolute;
+  bottom: 0;
 }
 
 .footer-item {
@@ -86,18 +98,16 @@ footer {
 }
 
 .box2 {
-  flex: 1.5;
+  flex: 2;
   align-items: center;
   justify-content: center;
+  
 }
 
 .box2 > a {
   text-decoration: none;
   color: white;
-
-}
-.box2 > a {
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 .box3 {
@@ -108,4 +118,72 @@ footer {
 
 .box3 > a {
   color: white;
+}
+
+.fa-codepen:hover {
+  color: purple;
+}
+
+.fa-jsfiddle:hover {
+  color: rgb(26, 135, 224);
+}
+
+.fa-github:hover {
+  color: black;
+}
+
+.fa-linkedin:hover {
+  color: #0077B5;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+  
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .identity p {
+    display: none;
+  }
+
+  .identity h1 {
+  margin-left: 120px;
+
+  }
+  .links {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+  }
+  .headshot img {
+    height: 300px;
+    position: absolute;
+    left: 150px;
+    bottom: 50px
+  }
+
+  .description {
+    position: relative;
+    top: 300px;
+    left: 50px;
+  }
+  footer {
+    display: flex;
+    /* width: 100%; */
+    height: 100px;
+  }
+
+  .box1,
+  .box3 {
+    display: none;
+  }
+
 }
