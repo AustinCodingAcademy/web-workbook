@@ -17,7 +17,27 @@ a{
 .headerBox {
     top: 0;
     position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
+    animation: 2s ease-out 0s 1 slideInFromRight;
+
+}
+
+ul {
+    list-style-type: none;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 20px;
+    font-size: 20pt;
+}
+
+li {
+    margin: 20px;
 }
 
 @keyframes slideInFromRight {
@@ -37,7 +57,6 @@ a{
     font-weight: 500;
     color: whitesmoke;
     text-shadow: 10px 10px solid black;
-    animation: 2s ease-out 0s 1 slideInFromRight;
 }
 
 .pageTopTitle {
@@ -49,7 +68,7 @@ a{
     background-image: url(../assets/whatisspacet.jpg);
 }
 
-.pageTopTitle h1 {
+.title {
     color: white;
     font-size: 32pt;
     font-weight: 500;
@@ -299,6 +318,7 @@ footer {
 small {
     color: whitesmoke;
     font-size: 8pt;
+    margin-left: 10px;
 }
 
 @media (min-width: 576px) {
@@ -306,6 +326,24 @@ small {
 }
 
 @media (min-width: 768px) {
+    .logo {
+        font-size: 30pt;
+    }
+
+    ul {
+        flex-direction: row;
+        font-size: 26pt;
+        margin-right: 60px;
+    }
+
+    .title {
+        font-size: 48pt;
+    }
+
+    .bold {
+        font-size: 50pt;
+    }
+
     .footerBox {
         width: 400px;
         display: flex;
@@ -333,6 +371,20 @@ small {
 }
 
 @media (min-width: 992px) {
+    .logo {
+        width: 600px;
+        font-size: 36pt;
+    }
+
+    .title {
+        font-size: 60pt;
+        width: 700px;
+    }
+
+    .bold {
+        font-size: 62pt;
+    }
+
     .portfolio {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -357,5 +409,4 @@ small {
     .smallSocial {
         font-size: 64pt;
     }
-
 }
