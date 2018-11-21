@@ -215,13 +215,55 @@ textarea {
     font-weight: 500;
     background-color: whitesmoke;
 }
-
 .submit:hover {
     background: rgba(0,0,0,0);
     color: whitesmoke;
     box-shadow: inset 0 0 0 3px whitesmoke;
 }
 
+/* popup on contact submission */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+}
+.popup .popuptext {
+    visibility: hidden;
+    width: 400px;
+    background-color: red;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 0 10px whitesmoke;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -200px;
+}
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: red transparent transparent transparent;
+}
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadein 1s, fadeOut 1s 1s;
+    animation: fadein 1s, fadeOut 1s 4s forwards;
+}
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+/* begin footer */
 footer {
     display: flex;
     justify-content: space-around;

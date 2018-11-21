@@ -57,7 +57,13 @@
         <input type="text" class="textbox">
         <p>Message:</p>
         <textarea rows="6"></textarea>
-        <button class="submit">Submit</button>
+        <button class="submit popup" onclick="popupFunction()">Submit<span class="popuptext" id="myPopup">Thanks for contacting me!</span></button>
+        <script>
+            function popupFunction() {
+                var popup = document.getElementById("myPopup");
+                popup.classList.toggle("show");
+            }
+        </script>
     </div>
     <footer>
         <div class="footerBox">
