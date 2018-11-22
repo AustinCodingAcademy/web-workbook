@@ -24,15 +24,20 @@
             </div>
             <!--nav links-->
             <ul>
-                <li><a href="#portfolioId">Portfolio</a></li>
-                <li><a href="#contactId">Contact</a></li>
+                <li><a href="#portfolioNav">Portfolio</a></li>
+                <li><a href="#contactNav">Contact</a></li>
             </ul>            
         </div>
     </header>
     <!--sticky header menu on scroll-->
     <div id="menu">
         <h1><a href="#">Lorem Web Co.</a></h1>
+        <div class="altNavLinks">
+            <a href="#portfolioNav">Portfolio</a>
+            <a href="#contactNav">Contact</a>
+        </div>
     </div>
+
     <script type="text/javascript">
     //check if page is scrolled past 400px and fade in second menu bar using jquery
         (function($) {          
@@ -47,11 +52,16 @@
             });
         })(jQuery);
     </script>
+
     <!--background and slogan-->
     <div class="pageTopTitle flexCenter">
         <h1 class="title"><span class="bold">Lorem</span> solutions to <span class="bold">Ipsum</span> problems.</h1>
     </div>
     <!--begin portfolio section-->
+        <!--anchor to clear header on nav-->
+        <div class="anchor">
+            <a name="portfolioNav">&nbsp;</a>
+        </div>
     <div class="portfolio" id="portfolioId">
         <a href="#" class="folioBox">
             <h1 class="projectHeader">Space Advisor</h1>
@@ -76,6 +86,10 @@
     </div>
     <!--contact form-->
     <div class="contact" id="contactId">
+        <!--anchor to clear header on nav link-->
+        <div class="anchor">
+            <a name="contactNav">&nbsp;</a>
+        </div>
         <h1>Contact Me!</h1>
         <p>Name:</p>
         <input type="text" class="textbox">
@@ -104,16 +118,16 @@
         </div>
         <!--responsive social icons-->
         <div class="footerBox smallSocial">
-            <a href="#">
+            <a href="mailto:aaron.altounian@gmail.com" target="_blank">
                 <i class="fa icon fa-envelope fa-fw" aria-hidden="true"></i>
             </a>
-            <a href="#">
+            <a href="http://www.facebook.com/aaronaltounian" target="_blank">
                 <i class="fa icon fa-facebook-square fa-fw" aria-hidden="true"></i>
             </a>
-            <a href="#">
+            <a href="http://www.linkedin.com/in/aaron-altounian" target="_blank">
                 <i class="fa icon fa-linkedin-square fa-fw" aria-hidden="true"></i>
             </a>
-            <a href="#">
+            <a href="http://www.github.com/aaronaltounian" target="_blank">
                 <i class="fa icon fa-github-square fa-fw" aria-hidden="true"></i>
             </a>
         </div>

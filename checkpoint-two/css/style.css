@@ -40,6 +40,7 @@ li {
     margin: 20px;
 }
 
+/*slide animation for header on page load*/
 @keyframes slideInFromRight {
     0% {
         transform: translateX(5000%);
@@ -48,7 +49,8 @@ li {
         transform: translateX(0);
     }
 }
-/*nav bar on scroll style*/
+
+/*nav bar on scroll*/
 #menu {
     position: fixed;
     top: 0px;
@@ -67,6 +69,10 @@ li {
     font-size: 30pt;
     text-align: center;
     margin-top: 8px;
+}
+
+.altNavLinks {
+    display: none;
 }
 
 .logo {
@@ -98,9 +104,15 @@ li {
     animation: fadein 6s 2s forwards;
 }
 
+/*define fadein and fadeout animations*/
 @keyframes fadein {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
 }
 
 .bold {
@@ -116,17 +128,29 @@ li {
     margin-top: 650px;
     padding: 12px 0px;
     opacity: 0;
-    animation: fadein 6s 2s forwards;
+    animation: fadein 6s 4s forwards;
 }
 
+/*anchor div with nonbreaking space for nav link header clearfix*/
+.anchor {
+    position: relative;
+}
+
+.anchor a {
+    position: absolute;
+    left: 0;
+    top: -78px;
+}
+
+/*begin portfolio content*/
 .folioBox {
     background: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 12px 24px 12px 24px;
-    border: 1px solid black;
     border-radius: 8px;
+    box-shadow: 0px 0px 6px whitesmoke;
     text-decoration: none;
     color: black;
     text-align: center;
@@ -134,7 +158,7 @@ li {
     background-position: center;
     transition: all 1s ease;
 }
-
+/*bounce animation for portfolio box hover*/
 @keyframes bounce {
 	0%, 20%, 60%, 100% {
 		-webkit-transform: translateY(0);
@@ -174,6 +198,7 @@ li {
     box-shadow: 0px 0px 10px black;
 }
 
+/*images for portfolio projects*/
 .project1 {
     background-image: url(../assets/space-advisor-website.jpg);
 }
@@ -190,6 +215,7 @@ li {
     background-image: url(../assets/space_travel_01.png);
 }
 
+/*begin contact section*/
 .contact {
     display: flex;
     flex-direction: column;
@@ -237,6 +263,7 @@ textarea {
     font-weight: 500;
     background-color: whitesmoke;
 }
+
 .submit:hover {
     background: rgba(0,0,0,0);
     color: whitesmoke;
@@ -280,11 +307,6 @@ textarea {
     animation: fadein 1s, fadeOut 1s 4s forwards;
 }
 
-@keyframes fadeOut {
-    from {opacity: 1;}
-    to {opacity: 0;}
-}
-
 /* begin footer */
 footer {
     display: flex;
@@ -301,6 +323,7 @@ footer {
     justify-content: space-around;
     height: 140px;
     width: 200px;
+    margin-left: 12px;
 }
 
 .footerBox > i {
@@ -351,11 +374,29 @@ small {
     margin-left: 10px;
 }
 
+/*media queries for responsive design*/
 @media (min-width: 576px) {
 
 }
 
 @media (min-width: 768px) {
+    #menu h1 {
+        text-align: left;
+        margin-left: 20px;
+        float: left;
+    }
+
+    .altNavLinks {
+        width: 300px;
+        margin: 20px 40px 0 0;
+        float: right;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 22pt;
+        font-weight: 600;
+    }
+
     .logo {
         font-size: 30pt;
     }
