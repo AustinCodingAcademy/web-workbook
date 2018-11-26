@@ -19,12 +19,14 @@ document.getElementsByClassName("section1").value = sales;
 
 window.onload = function loadsales(){
 
+  let departments = ["Asset Management","Aquisitions","Accounting", "Finance"];
   let sales = ["Leads", "Vendors", "Statistics"];
   let account = ["Information", "Details", "Statistics"];
   let vendors = ["Recent", "List", "Pending"];
   let help = ["Contact", "Questions"];
 
   let result = "";
+
 
   for(var i=0; i< sales.length; i++){
     result += "<div class='navlist'>"+ sales[i] +'</div>';
@@ -51,3 +53,12 @@ window.onload = function loadsales(){
     result = "";
 
   }
+  console.log(window.innerWidth);
+  let varwidt = window.innerWidth
+  let element = document.getElementsByClassName('chart');
+  if (varwidt < 576){
+    document.getElementsByClassName("chart").className = "navstyle";
+  
+    
+  }
+  
