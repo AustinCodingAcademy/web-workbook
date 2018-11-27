@@ -33,9 +33,11 @@ article {
   background: black;
   color: white;
   padding: 20px;
-  height: 60px; 
+  /* height: 50px;  */
   min-height: 50%;
   display: flex;
+  flex-direction: row;
+  width: 86%;
 }
 
 article h3 {
@@ -56,7 +58,7 @@ h3::first-line {
 }
 
 div img {
-  padding-right: 40px;
+  padding-right: 20px;
   padding-top: 20px;
   padding-left: 40px; 
 }
@@ -67,7 +69,7 @@ p {
   line-height: 25px;
   padding-top: 20px;
   padding-right: 50px;
-  padding-left: 40px;
+  padding-left: 80px;
 }
 
 footer {
@@ -76,3 +78,32 @@ footer {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #E72E5D;
 }
+
+.imagecontainer{
+  float: left;
+}
+
+.copy {
+  display: inline-block;
+  /* float: left; */
+  
+}
+
+@media (max-width: 576px) {
+  .imagecontainer {
+    width: 100%;
+    flex-direction: row;
+  }
+  .copy {
+    width: 100%;
+    float: left;
+  }  
+
+  article {
+    height: 100%;
+    width: 100%;
+    float: left;
+  }
+}
+
+
