@@ -1,3 +1,4 @@
+//Switches name of container in order to display side navigation
 function navBar() {
   let containerName = document.getElementById("container").className;
 
@@ -16,6 +17,8 @@ function navBar() {
   let sales = ["Leads", "Vendors", "Statistics"];
   document.getElementsByClassName("section1").value = sales;
 }
+
+//This is used to add values to side navigation
 
 window.onload = function loadsales() {
   let sales = ["Leads", "Vendors", "Statistics"];
@@ -50,12 +53,12 @@ window.onload = function loadsales() {
   result = "";
 };
 
+//Used to hide or display home message
 function hide() {
   let selection = event.target.id;
-  console.log(selection);
   if (selection != "h1") {
     for (var i = 0; i < 4; i++) {
-      document.getElementsByClassName("sect")[i].style.display = "block";
+      document.getElementsByClassName("sect")[i].style.display = "inline";
       document.getElementById("home").style.display = "none";
     }
   } else if ((selection = "h1")) {
@@ -64,7 +67,12 @@ function hide() {
       document.getElementById("home").style.display = "block";
     }
   }
+  if (window.innerWidth < 577){
+    document.getElementById("section1id").style.display = "none";
+  }
 }
+
+// This is used to add or remove nagiation buttons from the top depending on size
 
 function listhead() {
   let sales = ["Leads", "Vendors", "Statistics"];
