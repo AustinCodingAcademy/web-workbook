@@ -13,11 +13,12 @@ body {
   text-align: center;
 }
 header {
-  border: 3px solid black;
-  background: url(https://www.computersciencedegreehub.com/wp-content/uploads/2016/02/what-is-coding-300x200.jpg);
+  
+  background-size: contain;
+  background-repeat: no-repeat;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
   margin: 1% auto;
-  border: 1% auto;
+  border: 2% auto;
   color:rgb(91, 175, 82);
   text-shadow: 8px -2px rgb(173, 238, 76);
   height: 150px;
@@ -26,35 +27,68 @@ header {
   font-stretch: expanded;
   text-align: center;
   display: inline-block; 
+  padding: 1%;
   }
+  .firstimg{
+    height: 150px;
+    border: 3px solid white;
+  }
+  .img {
+    height: 150px;
+    width: 150px;
+    padding: 0px 10px;
+  }
+
 /* header p {
   display: inline-block;
 } */
 
   div.post {
-    width: 55%;
+    width: 53%;
   }  
 
   .post {
     margin: 0px auto;
-    background: greenyellow;
-    border: 6px solid blue;
+    background: rgba(0, 0, 0, 0.486);
+    border: 6px solid yellowgreen;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    
 
     
   }
 
   .post h3 {
-    color: blue;
-    text-decoration: underline wavy rgba(0, 225, 255, 0.432);
+    color: skyblue;
+    /* text-decoration: underline wavy rgba(0, 225, 255, 0.432); */
     font-size: 36px;
   }
 
   .post p {
-    color: rgb(160, 154, 154);
-    
+  
+    font-weight: bold;
+    font-size: 20px;
+    text-align: justify;
+    padding: 5px;
 
+  }
+  .post:hover {
+    background: blue;
+  }
+  .post:nth-child(odd):hover {
+    background: yellowgreen;
+  }
+  .post p::first-letter {
+    color: skyblue;
+    font-size: 40px;
+  }
+  footer {
+    font-size: 50px;
+    color: skyblue
+  }
+  a:active {
+    color: white;
   }
   /* .post:nth-child(odd) {
     background: gray;
