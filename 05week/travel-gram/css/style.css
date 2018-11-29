@@ -1,1 +1,178 @@
 
+header {
+    grid-area: header;
+    text-align: center;
+}
+
+h1 {
+    margin: 10px 0px;
+}
+
+small {
+    margin: 10px 0px;
+}
+
+.desktop {
+    display: inline;
+}
+
+.tablet {
+    display: none;
+}
+
+.mobile {
+    display: none;
+}
+
+.story1 {
+    grid-area: story1;
+    background-color: aqua;
+}
+
+.story2 {
+    grid-area: story2;
+    background-color: rosybrown;
+}
+
+.story3 {
+    grid-area: story3;
+    background-color: chartreuse;
+}
+
+.story4 {
+    grid-area: story4;
+    background-color: blueviolet;
+}
+
+.story5 {
+    grid-area: story5;
+    background-color: coral;
+}
+
+.story6 {
+    grid-area: story6;
+    background-color: darkred;
+}
+
+.story7 {
+    grid-area: story7;
+    background-color: aquamarine;
+}
+
+.story8 {
+    grid-area: story8;
+    background-color: midnightblue;
+}
+
+.story9 {
+    grid-area: story9;
+    background-color: burlywood;
+}
+
+.story10 {
+    grid-area: story10;
+    background-color: rgb(253, 174, 2);
+}
+
+body {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "header header header header"
+    "story1 story1 story2 story2"
+    "story1 story1 story2 story2"
+    "story3 story3 story4 story5"
+    "story3 story3 story4 story5"
+    "story3 story3 story6 story6"
+    "story7 story8 story9 story10"
+    "story7 story8 story9 story10";
+}
+
+img {
+    width: 100%;
+    height: 50%;
+}
+
+@media (max-width: 992px) {
+
+    .desktop {
+        display: none;
+    }
+
+    .tablet {
+        display: inline;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "header header"
+        "story1 story1"
+        "story1 story1"
+        "story1 story1"
+        "story2 story3"
+        "story2 story3"
+        "story4 story4"
+        "story5 story5"
+        "story6 story6"
+        "story6 story6"
+        "story6 story6"
+        "story7 story8"
+        "story7 story8"
+        "story9 story9"
+        "story10 story10";
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .desktop {
+        display: none;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .mobile {
+        display: inline;
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "header"
+        "story1"
+        "story1"
+        "story2"
+        "story2"
+        "story3"
+        "story3"
+        "story4"
+        "story4"
+        "story5"
+        "story5"
+        "story6"
+        "story6"
+        "story7"
+        "story7"
+        "story8"
+        "story8"
+        "story9"
+        "story9"
+        "story10"
+        "story10";
+    }
+
+}
