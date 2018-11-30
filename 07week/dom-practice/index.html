@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
 
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/script.js"></script>
     
@@ -17,14 +16,15 @@
     <h1>Shopping Cart</h1>
 
     <ul id="cart">
-        <li>All-New Fire 7 Tablet</li>
-        <li>Flash Furniture Yellow Metal Indoor-Outdoor Chair with Arms</li>
-        <li>Amazon Echo</li>
-        <li>Coleman Lay Z Spa Inflatable Hot Tub</li>
+        <li>All-New Fire 7 Tablet <span class="delete">&times;</span></li>
+        <li>Flash Furniture Yellow Metal Indoor-Outdoor Chair with Arms <span class="delete">&times;</span></li>
+        <li>Amazon Echo <span class="delete">&times;</span></li>
+        <li>Coleman Lay Z Spa Inflatable Hot Tub <span class="delete">&times;</span></li>
     </ul>
 
-    <input type="text" id='addToCart'>
-    <button onclick="addListItem()" type='button' id='add' style="height:20px; width:20px;"></button>
+    <input type="text" id='addToCart' placeholder='Add items to cart'>
+    <button type='button' id='add'>+</button>
+    <button type='button' id='clear'>Clear</button>
 
     <div id="div">
     
