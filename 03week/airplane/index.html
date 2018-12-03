@@ -46,7 +46,7 @@
     <section>
     <div class="left">
       <p>
-        <textarea id="depart" name="Depart" placeholder="Depart" rows="3" cols="30"></textarea>
+        <textarea id="depart" name="Depart" placeholder="Depart" rows="3" cols="30" size="100"></textarea>
       </p>
       <p>
       <textarea id="depart" name="Depart" placeholder="mm/dd/yyyy" rows="3" cols="30"></textarea>
@@ -58,8 +58,8 @@
         <div id="passenger">
           Passengers
         <select id="passenger">
-          <option selected>0</option>
-          <option>1</option>
+          <!-- <option selected>0</option> -->
+          <option selected >1</option>
           <option>2</option>
           <option>3</option>
           <option>4</option>
@@ -69,7 +69,7 @@
       </div>
     </section>
    
-    <section>
+    <section >
         <div class="left">
             <p>
               <textarea id="depart" name="Depart" placeholder="Arrive" rows="3" cols="30"></textarea>
@@ -81,24 +81,20 @@
             <label for="transmission">Passengers</label>
             </p> -->
             <p>
-              <div id="passenger">
-                Passengers
-              <select id="passenger">
-                <option selected>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-              </select>
+              <div id="radio">
+                <label>
+                  <input type="radio" name="radio" value="roundtrip">Round Trip
+                  <input type="radio" name="radio" value="oneway"> One Way
+                </label>
               </div>
             </p>
       
     </section>
-    <article>
+    <section class="button">
       <div id="button">
       <button type="submit">Search Flights</button>
       </div>
-    </article>
+    </section>
   </main> 
 </body>
 </html>
