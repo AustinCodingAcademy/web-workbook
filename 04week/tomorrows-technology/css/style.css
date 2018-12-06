@@ -1,0 +1,141 @@
+ body {
+
+    border: 1px solid black;
+    height: 800px;
+}
+.imageColumn {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+}  
+.imgRow {
+    width: 75%;
+    height: 500px;
+    display: block;
+    margin-left: 20px;
+}
+.backGround {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.topStories {
+    margin-left: 3rem;
+    margin-right: 2rem;
+    font-weight: 900;
+    flex: 1;
+}
+.topStories h2 {
+    margin-top: 0;
+}
+.imgText {
+    width: 75%;
+    margin-left: 20px;
+}
+.techBttn {
+    color: #fff;
+    background: #555;
+    padding: 10px 16px;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+}
+footer  {
+    display: none;
+}
+    
+@media only screen and (min-width: 577px) and (max-width: 991px) {
+  
+  body {
+    height: 730px;
+  }
+  /* .imageColumn {
+    display: flex;
+  } */
+  .topStories {
+    display: none;
+  }
+  .imgRow {
+    width: 100%;
+    height: 500px;
+    margin-right: 20px;
+  }
+  .imgText {
+    width: 100%;
+  }
+  footer {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  body {
+    height: 100vh;
+    border-bottom: none;
+  } 
+  .backGround {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .imgRow {
+     width: 100%;
+     height: 250px;
+     margin: 0 30px;
+   }
+   .imgText {
+     margin: 0 30px;
+     width: 90%;
+     /* flex: 1; */
+   }
+  .topStories {
+    display: none;
+  }
+  footer {
+    margin-top: 2rem;
+    justify-content: space-around;
+    color: #fff;
+    background: #777;
+    display: flex;
+    height: 30%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 96.75%;
+    margin-left: 9px;
+  }
+  footer a {
+    text-decoration: none;
+    color: #fff;
+  }  
+  footer li {
+    list-style-type: none;
+  }
+  footer ul {
+    padding: 0;
+  }
+  .uLinks {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .socialM {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sIcons {
+  display: flex;
+  justify-content: space-between;
+}
+  .uLinkshr {
+    width: 100px;
+    color: #fff;
+  }
+  .sMhr {
+    width: 100px;
+    color: white;
+  }
+}
