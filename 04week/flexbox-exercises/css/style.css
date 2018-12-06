@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+}
+.listWrapper{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border: 1px solid red;
+}
+.list{
+  border: 1px solid blue;
+  height: 550px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+}
+ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+}
+.listItem{
+  border: 1px solid #eee;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  padding: 15px;
+  box-shadow: 5px 5px 13px 0px rgba(200,0,55,.15);
+  transition-duration: 1s;
+}
+.listItem:hover{
+  box-shadow: 10px 10px 26px 0px rgba(200,0,55,.5);
+}
+.listImage{
+  flex-shrink: 0;
+}
+.listContent{
+  /* border: 5px solid pink; */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 20px;
+  line-height: 2.4;
+}
+img{
+  height: 100px;
+  /* width: 100px; */
+  border-radius: 50%;
+}
