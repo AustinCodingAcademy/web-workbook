@@ -1,0 +1,140 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: arial; */
+}
+header {
+  background-color: #00d1c0;
+  width: 100%;
+  height: 20%;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+p.header {
+  font-size: 130px;
+  
+}
+p.header span {
+  font-weight: bold;
+}
+main {
+  border: 2px solid pink;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
+  height: 100%
+}
+#cards {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 2px solid blue;
+  padding: 10px;
+  color: white;
+  width: 100%;
+}
+.card {
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  width: 800px;
+  /* padding: 10px; */
+}
+ul.card{
+  /* border: 2px solid green; */
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  /* border: 10px; */
+  /* justify-content: center;
+  align-content: center; */
+}
+li.top1 {
+  background-color: cornflowerblue;
+  height: 6%;
+  width: 80%;
+  padding: 10px;
+  display: flex;
+  align-self: center;
+}
+li.top2 {
+  background-color: salmon;
+  height: 6%;
+  width: 80%;
+  padding: 10px;
+  display: flex;
+  align-self: center;
+}
+li.top3 {
+  background-color: #00d1c0;
+  height: 6%;
+  width: 80%;
+  padding: 10px;
+  display: flex;
+  align-self: center;
+}
+li.title {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 80%;
+  padding: 10px;
+}
+p.title {
+  /* padding: 5px; */
+  letter-spacing: 2px;
+  font-size: 40px;
+  
+}
+li.paragraph {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 80%;
+  padding: 10px;
+  text-align: justify;
+}
+@media(min-width: 400px){
+
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* font-size: 25.5vw; */
+  }
+  p.header {
+    font-size: 50px;
+    padding: 10%;
+    text-align: center;
+  }
+
+  
+  main {
+    width: 100%;
+    height: 100%;
+  }
+  .card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  ul.card {
+    overflow: scroll;
+    height: 80%;
+    font-size: 20px;
+    margin: 1%;
+  }
+  li.title {
+    margin-bottom: 10px;
+  }
+
+}
