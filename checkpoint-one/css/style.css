@@ -1,7 +1,21 @@
 *{
   padding: 0;
   margin: 0;
-  border: 0;
+  box-sizing: border-box;
+}
+#topgrey {
+  height: 50px;
+  background-color: rgb(175, 171, 171);
+  color: white;
+  font-family: arial;
+}
+p.topgrey {
+  margin-left: 20%;
+  display: flex;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  
 }
 header {
   width: 100%;
@@ -11,13 +25,149 @@ nav.top {
   height: 300px;
   width: 100%;
   background-image: url(http://www.rivercity-industries.com/wp-content/uploads/2018/02/tube-laser-header.jpg);
+  background-size: cover;
 
 }
 img.top {
-  padding: 20px;
+  padding: 40px;
 }
 p.phone {
   color: white;
   float: right;
   padding: 20px;
+}
+nav.links {
+  height: 50px;
+  background-color: rgb(175, 171, 171);
+  display: flex;
+  justify-content: center;
+  
+}
+#links {
+  /* padding: 10px; */
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  
+}
+a {
+  border-right: 1px solid rgb(53, 52, 52);
+  padding: 10px;
+  height: 100%;
+  text-decoration: none;
+  
+}
+
+a:visited {
+  color: rgb(78, 75, 75);
+}
+a:hover {
+  background-color: rgba(245, 245, 245, 0.548);
+}
+main {
+  background-image: url(http://www.rivercity-industries.com/wp-content/uploads/2018/02/texas-tube-forming.jpg);
+  background-size: cover;
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+}
+#left {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.411);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: arial;
+  flex-direction: column;
+}
+
+button.main {
+  height: 60px;
+  width: 160px;
+  background-color: rgb(53, 94, 228);
+  color: black;
+  border: 0;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  align-self: center;
+  margin-top: 100px;
+  
+  
+  
+}
+#left:hover {
+  color: rgb(53, 94, 228);
+  transition: color .4s;
+}
+#right {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  
+  
+}
+ul.numbers {
+  list-style: none;
+  margin-right: 150px;
+  margin-top: 100px;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  padding: 33px;
+  /* flex-grow: 1; */
+}
+ul.numbers li {
+  /* padding: 25px; */
+  height: 30px;
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding-top: 5px;
+}
+ul.numbers li:hover {
+  background-color: rgb(48, 126, 241);
+  border: 1px solid rgb(48, 126, 241);
+}
+#greymiddle {
+  height: 60px;
+  width: 100%;
+  background-color: rgb(175, 171, 171);
+  color: rgb(78, 75, 75);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+  
+}
+p.greymiddle {
+  padding-right: 30%;
+  font-family: arial;
+  font-size: 25px;
+  align-self: center;
+}
+button.greymiddle {
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  font-family: arial;
+  width: 160px;
+  height: 90%;
+  font-size: 15px;
+  align-self: center;
+  font-stretch: condensed;
 }
