@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, inital scale=1.0">
+  <link rel="stylesheet" href="css/style.css" type="text/css"/>
+  <title>Customer Satisfaction</title>
+</head>
+<body>
+  <form action="/action_page.php" class="form">
+    <div class="names">
+      <label>First Name:</label>
+      <input type="text" name="FirstName"><br>
+      <label>Last Name:</label>
+      <input type="text" name="LastName"><br>
+    </div>
+    <div class="info">
+      <label>Add Your Website:</label>
+      <input type="url" name="homepage"><br>
+      <label>Enter Your Email:</label>
+      <input type="email" name="email" required><br>
+      <label>Create a Password:</label>
+      <input type="password"><br>
+    </div>
+    <div class="question1">
+      <label>Are you a dog person or cat person?</label><br>
+      <input type="checkbox" name="dog" value="Dogs">I like dogs
+      <input type="checkbox" name="cat" value="Cats">I like cats
+      <input type="checkbox" name="no animals" value="hates animals">I hate animals<br>
+    </div>
+    <div class="question2">
+      <label>Would you rather see a scary ghost or be haunted by a nice ghost forever?</label><br>
+      <input type="radio" name="scary" value="scary">See Scary Ghost
+      <input type="radio" name="nice" value="nice">Nice Ghost Forever<br>
+    </div>
+    <div class="question3">
+      <label>How many cookies could you eat right now?</label>
+      <input type="range" min="1" max="25" step="1" list="tickmarks"><br>
+      <datalist>
+        <option value="1">
+          <option value="5">
+            <option value="10">
+              <option value="15">
+                <option value="20">
+                  <option value="25">
+      </datalist>
+    </div>
+    <input type="submit" value="submit"><br>
+  </form>
+<script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
