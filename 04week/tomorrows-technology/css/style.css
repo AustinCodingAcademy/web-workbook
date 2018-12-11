@@ -11,6 +11,37 @@ body {
   width: 100%;
   /* padding: 20px; */
 }
+aside {
+  position: fixed;
+  width: 30%;
+  height: 100%;
+  z-index: 1 !important;
+  right: 0;
+  display: flex;
+  align-content: center;
+  text-align: center;
+  padding: 30px;
+  
+}
+h1.aside {
+  padding: 20px;
+  font-size: 50px;
+}
+ul.aside {
+  list-style-type: none;
+  align-self: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 25px;
+}
+li.aside {
+  padding: 20px;
+  border: none;
+  width: 100%;
+  
+}
 header {
   width: 100%;
   display: flex;
@@ -103,4 +134,35 @@ ul.right {
   display: flex;
   flex-direction: column;
   justify-content: left;
+}
+@media(min-width: 528px) {
+  aside {
+    visibility: hidden;
+  }
+}
+@media(min-width: 768px) {
+  footer {
+    visibility: hidden;
+  }
+}
+@media(min-width: 992px) {
+  aside {
+    visibility:visible;
+    display: inline-block;
+  }
+  header {
+    width: 70%;
+  
+  }
+  main {
+    width: 740px;
+    font-size: 25px;
+  }
+  img.head {
+    height: 500px;
+    }
+    button.main {
+      height: 50px;
+      width: 200px;
+    }
 }
