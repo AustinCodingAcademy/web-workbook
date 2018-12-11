@@ -114,35 +114,51 @@ li.paragraph {
   padding: 10px;
   text-align: justify;
 }
-@media(min-width: 400px){
+@media(min-width: 400px) and (max-width: 1024px){
 
   header {
     width: 100%;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-content: center;
+    background-color: #00aae2;
     /* font-size: 25.5vw; */
   }
   p.header {
-    font-size: 50px;
+    font-size: 60px;
     padding: 10%;
     text-align: center;
+    letter-spacing: -2px;
+    word-spacing: -2px;
+    
   }
-
+  span {
+    padding-left: 5px;
+  }
   
   main {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
   }
   .card {
-    width: 100%;
+    padding: 0;
+    margin-top: 50px;
+    width: 500px;
+    height: 800px ;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+
   }
   
   ul.card {
     overflow: scroll;
-    height: 80%;
+    /* height: 800px;
+    width: 400px; */
     font-size: 20px;
     margin: 1%;
   }
