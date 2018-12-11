@@ -1,0 +1,41 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  /* background: red; */
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.grid-container {
+  border: 3px solid black;
+  height: 100%;
+  /* Grid items are placed in rows by default and
+  span the full width of the grid container. */
+  display: grid;
+   /* Explicit Grid */
+   /* Explicitly set a grid by creating columns and rows with 
+   the grid-template-columns and grid-template-rows properties. */
+  grid-template-rows: 50px 100px;
+  /* A row track is created for each value specified for grid-template-rows. 
+  Track size values can be any non-negative, length value (px, %, em, etc.)
+  Items 1 and 2 have fixed heights of 50px and 100px.
+  Because only 2 row tracks were defined, heights of items 3 and 4 are defined by the contents of each. */
+  grid-template-columns: 90px 50px 120px;
+  /* Items 4, 5 and 6 were placed on a new row track because only 
+  3 column track sizes were defined; and because they were placed in column 
+  tracks 1, 2 and 3, their column sizes are equal to items 1, 2 and 3. */
+  grid-template-columns: 1fr 1fr 2fr;
+  /* The fr unit helps create flexible grid tracks. It represents a fraction of the available 
+  space in the grid container (works like Flexbox’s unitless values).
+  In this example, items 1 and 2 take up the first two (of four) 
+  sections while item 3 takes up the last two. */
+
+
+}
+.grid-item {
+  border: 1px dotted #eee;
+  background-color: crimson;
+  border-radius: 6px;
+
+}
