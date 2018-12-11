@@ -1,1 +1,493 @@
 
+html {
+  font-family: 'Oxygen', sans-serif;
+  line-height: 1.5;
+  font-size: 62.5%;
+  font-weight: 400;
+  font-style: normal;
+}
+.header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  line-height: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.header.active {
+  background-color: #fff;
+  transition: background-color 450ms;
+}
+.header.active g {
+  fill: #00a1df;
+}
+.header.active a {
+  color: #00a1df;
+}
+.hcl {
+flex-basis: 0%;
+flex: 1;
+align-items: center;
+}
+.hcr {
+flex-basis: 0%;
+flex: 1;
+text-align: right;
+align-items: center;
+justify-content: flex-end;
+flex-grow: 1;
+line-height: 15px;
+white-space: nowrap;
+}
+.hcr a {
+  text-decoration: none;
+  margin-left: 30px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 900;
+  color: #fff;
+}
+.row1 {
+  display: flex;
+  height: 810px;
+  position: relative;
+  flex-direction: column;
+  padding: 45px 60px;
+  justify-content: center;
+  /* z-index: 1;  */
+}
+.foodimg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.spa {
+  object-fit: cover;
+  width: 100%;
+  height: 900px;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 2px 2px;
+}
+.hunger {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 0;
+}
+.localfav {
+  font-size: 35px;
+  font-weight: 500;
+  margin: 0;
+}
+.topboxtext {
+  box-sizing: border-box;
+  display: block;
+  color: #fff;
+}
+.addressouter {
+  margin-top: 45px;
+  display: inline-block;
+  position: relative;
+}
+.addressinner {
+  display: flex;
+  background: #fff;
+  align-items: center;
+  padding: 5px 5px 5px 13px;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .25);
+}
+#address-search {
+  border: none;
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: 6px;
+  margin-right: 60px;
+  width: 280px;
+}
+.findfood {
+  border-radius: 2px;
+  background: #00a1df;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 800;
+  border: none;
+  padding: 16px 17px;
+  font-size: 18px;
+  line-height: 1;
+}
+.getapp {
+  display: flex;
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  align-items: center;
+  color: #fff;
+}
+.appicon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: #00a1df;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .35);
+  margin-left: 15px; 
+}
+.resName {
+  position: absolute;
+  bottom: 4.5rem;
+  right: 6rem;
+  font-size: 2rem;
+  font-weight: 900;
+}
+i {
+  font-style: italic;
+}
+.resLink {
+  text-decoration: none;
+  color: #fff;
+}
+.row2 {
+  display: flex;
+  margin: 60px auto;
+  justify-content: center;
+}
+.r2c2 {
+  margin: 6rem 6rem 0 0;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.r2c2uppr {
+
+  scroll-behavior: smooth;
+  scroll-snap-type-x: repeat(100%);
+  width: 400px;
+  overflow-x: hidden;
+  white-space: nowrap;
+  position: relative;
+  scroll-snap-points-x: repeat(100%);
+}
+.tabcontent {
+  display: inline-flex;
+  flex-direction: column;
+  white-space: initial;
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+.wiffont {
+  font-size: 35px;
+  color: #00a1df;
+  font-weight: 900;
+}
+.favres {
+  color: #99a4ae;
+  font-size: 20px;
+  font-weight: 400;
+  height: 90px;
+}
+.btn {
+  display: flex;
+  margin-bottom: 3rem;
+  align-content: center;
+}
+.bttn {
+  transform: rotate(90deg);
+  cursor: pointer;
+  height: 2rem;
+  margin-right: 1.5rem;
+  background-attachment: scroll;
+  outline: 0;
+  padding: 0;
+  border: none;
+  line-height: 1;
+  background-size: auto auto;
+  background-position: 0px 0px;
+  background-color: rgba(0, 0, 0, 0);
+  border-image-repeat: stretch stretch;
+  border-image-width: 1px;
+}
+.bttnUl {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  list-style: none;
+}
+.bttnitem {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  align-content: center;
+  justify-content: center;
+  margin-left: 10px;
+  overflow: visible;
+  line-height: 6.25px;
+  vertical-align: baseline;
+}
+.tablinks {
+line-height: 1;
+cursor: pointer;
+width: 20px;
+display: flex;
+justify-content: center;
+align-content: center;
+background: transparent;
+margin: 0px;
+border: none;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0;
+outline: none;
+} 
+.bttndot {
+  bottom: 2px;
+  border: none;
+  height: 10px;
+  width: 10px;
+  border: 1px solid #00a1df;
+  border-radius: 50%;
+  line-height: 1px;
+  box-sizing: border-box;
+  font-size: 6.25px;
+  vertical-align: baseline;
+}
+/* having two different active elements from two different scripts caused an issue with the header active  */
+.active:not(header) {
+  background: #00a1df;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: relative;
+  top: 2.4px;
+} 
+.endBttn {
+transform: rotate(-90deg);
+cursor: pointer;
+height: 2rem;
+margin: 0 1.5rem;
+background-attachment: scroll;
+outline: 0;
+padding: 0;
+border: none;
+line-height: 1;
+background-size: auto auto;
+background-position: 0px 0px;
+background-color: rgba(0, 0, 0, 0);
+border-image-repeat: stretch stretch;
+border-image-width: 1px;
+}
+.appContainer {
+  box-sizing: border-box;
+  position: static;
+  display: block;
+}
+.downApp {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #99a4ae;
+  margin: 0 0 1.5rem;
+}
+.appBoxes {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.appBoxes > a:first-child {
+  margin-right: 15px;
+}
+.row3 {  
+  display: flex;
+  margin-bottom: 15px;
+  position: relative;
+  height: 400px;
+}
+.become {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: 50% 0%;
+}
+.row4 {
+  display: flex;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 40rem;
+  position: relative;
+}
+.inboxtext{
+  display: flex;
+  position: relative;
+  height: 40rem;
+  flex: 1;
+  margin-bottom: 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.row4h3 {
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+}
+.row4p {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.row4a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #fff;
+  border: 1px solid white;
+  padding: 16px 44px;
+  box-shadow: inset 0 .2rem .2rem 0 rgba(0,0,0,.35),0 .2rem .2rem 0 rgba(0,0,0,.35);
+}
+.row4a:hover {
+  background: #aaa;
+  opacity: .9;
+  font-weight: 1000;
+}
+.row4imgbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: block;
+}
+.smile {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: 50% 0%;
+}
+.careers1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 40rem;
+  flex: 1;
+  margin: 0 0 15px 15px;
+}
+.people {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: 50% 0%;
+}
+.row5 {
+  background: rgb(0, 161, 223);
+  color: #fff;
+  font-size: 18px;
+  display: block;
+  font-weight: 300;
+}
+.footermain {
+  width: 100%;
+  max-width: 128rem;
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+.fs1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+  align-items: center;
+  font-size: 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+}
+.footernav li {
+  margin-right: 35px;
+  display: inline-block;
+}
+.footernav a {
+  text-decoration: none;
+  color: #fff;
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-left: 15px;
+  background: #fff;
+}
+.icons li {
+  display: inline-block;
+  color: black;
+}
+.cities {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+}
+.cnav {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+.cname {
+  list-style-type: none;
+  list-style-position: outside;
+  box-sizing: border-box;
+}
+.cname > li > a {
+  text-decoration: none;
+  color: #fff;
+}
+.ctopa {
+  font-size: 18px;
+  font-weight: 700 bold;
+  text-decoration-color: rgb(255, 255, 255);
+  line-height: 36px;
+}
+.runnerdiv {
+  padding-left: 60px;
+}
+.bearunner {
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 340px;
+  color: #fff;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 0 2px;
+  padding: 16px 56px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.appicons {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+.row6 {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 30px 0;
+  align-items: center;
+}
+.row6 li {
+  list-style-type: none;
+  display: inline-block;
+}
+.row6 a {
+  text-decoration: none;
+  color: #fff;
+}
