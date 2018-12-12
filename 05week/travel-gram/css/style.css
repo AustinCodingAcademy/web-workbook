@@ -1,1 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  padding: 10%;
+}
+.grid {
+  background-color: pink;
+  border: 2px solid black;
+  height: 350px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.grid:nth-child(odd) {
+  background-color: blue;
+}
+.grid border1 {
+  display: grid;
+  grid-area: border1;
+  height: 100%;
+  width: 100%;
+  /* padding: 10% */
+}
+#container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: justify;
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  color: white;
+ 
 
+}
+#container1 img {
+  height: 50%;
+  width: 100%;
+}
+#container1 p {
+  font-size: 20px;
+  font-family: 'Encode Sans Condensed', sans-serif;
+}
+.grid border2 {
+  display: grid;
+  grid-area: border2;
+  width: 100%;
+  height: 100%;
+}
+#container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: justify;
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  color: white;
+}
+#container2 img {
+  height: 50%;
+  width: 100%;
+
+}
+.grid border3 {
+  display: grid;
+  grid-area: border3;
+}
+.grid border4 {
+  display: grid;
+  grid-area: border4
+}
+.grid border5 {
+  display: grid;
+  grid-area: border5
+}
+.gridcontainer {
+  display: grid;
+  grid-template: 0 / 1fr;
+  grid-template-area:
+      "border1"
+      "border2"
+      "border3"
+      "border4"
+      "border5";
+}
