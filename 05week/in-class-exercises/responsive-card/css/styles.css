@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Titillium Web', sans-serif;
+  font-family: 'Nunito', sans-serif; */
+}
+/* .border-1 {
+  border: 2px solid red;
+}
+.border-2 {
+  border: 2px solid blue;
+} */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  width: 100%;
+  padding: 0;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90%;
+  width: 80%;
+  box-shadow: 1px 1px 16px 0px rgba(134, 134, 134, 0.1);
+}
+.card__content {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 2em 0;
+  flex: 1;
+  order: 2;
+}
+.card__content div {
+  margin-bottom: 1.3em;
+}
+.card__content .subtitle {
+  font-family: 'Nunito', sans-serif; 
+  letter-spacing: 3px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #7e7e7e;
+  font-weight: 700;
+}
+.card__content .title {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #2c2c2c;
+  line-height: 31px;
+  margin-bottom: .5em;
+}
+.card__content .description {
+  font-family: 'Nunito', sans-serif; 
+  font-size: 11px;
+  color: #7e7e7e;
+  line-height: 22px;
+}
+.card__content .link a {
+  font-family: 'Nunito', sans-serif; 
+  text-decoration: none;
+  color: #2c2c2c;
+  font-size: 9px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.card__image {
+  background: url("https://source.unsplash.com/random/");
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 1;
+  order: 1;
+}
+
+@media (min-width: 576px) {
+  .card__content {
+    padding: 2em;
+  }
+  .card__content .description {
+    line-height: 16px;
+  }
+  .card__image {
+    flex: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
+  .card__content {
+    order: 1;
+    padding: 6em 2em 0;
+  }
+  .card__content .description {
+    line-height: 22px;
+    font-size: 13px;
+  }
+  .card__content .link a {
+    font-size: 13px;
+  }
+  .card__image {
+    order: 2;
+    flex: 2;
+  }
+}
+
