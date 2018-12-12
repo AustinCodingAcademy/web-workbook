@@ -1,34 +1,43 @@
+body{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 [data-stack] {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column-reverse;
   align-items: center;
-  height: 101px;
+  width: 50px;
+  padding-top: 200px;
+  height: auto;
   background-color: aliceblue;
   margin: 25px;
+  border-bottom: 5px black solid;
 }
 
 [data-block] {
-  width: 25px;
+  height: 25px;
   float: left;
 }
 
 [data-block="25"] {
-  height: 25px;
+  width: 25px;
   background-color: blue;
 }
 
 [data-block="50"] {
-  height: 50px;
+  width: 50px;
   background-color: green;
 }
 
 [data-block="75"] {
-  height: 75px;
+  width: 75px;
   background-color: red;
 }
 
 [data-block="100"] {
-  height: 100px;
+  width: 100px;
   background-color: yellow;
 }
 

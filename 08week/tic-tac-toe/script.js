@@ -20,7 +20,7 @@ $(document).ready(function () {
   let click = 0;
   $('.square').click(function () {
     //If the square is already filled in or a winner has been announced this will prevent additional clicks
-    if ($(this).text() == "" && $('#announce-winner').text() == '' ) {
+    if ($(this).text() == "" && $('#announce-winner').text() == '') {
       //Every other click is an X or O based on even or odd number of clicks
       if (click % 2 == 0) {
         $(this).text('x');
@@ -49,7 +49,7 @@ $(document).ready(function () {
       for (let x = 0; x < winState[i].length; x++) {
         //Variable is used to concatonate id name in order to check potential winning cells
         let posisition = winState[i][x];
-  
+
         //Check if xCount is equal to three if so then throws winner alert
         if ($('#_' + posisition).text() == 'x') {
           xCount = xCount + 1;
@@ -58,9 +58,9 @@ $(document).ready(function () {
             click = 0;
           }
 
-         //Check if oCount is equal to three if so then throws winner alert
-        } else if ($('#_' + posisition).text() == 'o'){
-          oCount = oCount+1;
+          //Check if oCount is equal to three if so then throws winner alert
+        } else if ($('#_' + posisition).text() == 'o') {
+          oCount = oCount + 1;
           if (oCount == 3) {
             $('#announce-winner').text('O IS THE WINNER');
             click = 0;
@@ -74,7 +74,7 @@ $(document).ready(function () {
   function draw() {
     $('#announce-winner').text('DRAW');
   };
-  
+
   //Clear everything from board
   $('#clear').click(function () {
     $('.square').each(function () {
