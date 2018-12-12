@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+header {
+  border: 1px solid red;
+  height: 500px;
+  background-color: aqua;
+}
+h1 {
+  text-align: center;
+  margin: 200px auto;
+  color: white;
+}
+.box1  {
+  border: 1px solid red;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  columns: 3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: space-between;
+}
+
+.type-box1 {
+  border: 1px solid green;
+  width: 300px;
+  height: 300px;
+  padding-top:10px;
+  display: inline-block;
+  margin: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.blue {
+  background-color: rgb(0, 157, 255);
+  height: 30px;
+  width: 200px;
+  margin: 20px auto; 
+}
+.orange{
+  background-color: rgb(255, 145, 0);
+  height: 30px;
+  width: 200px;
+  margin: 20px auto; 
+}
+.aqua {
+  background-color: aqua;
+  height: 30px;
+  width: 200px;
+  margin: 20px auto; 
+}
+.text {
+  color: white
+}
+h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+p {
+  text-align: center;
+  line-height: 25px;
+}
+article {
+  margin-top: 50px;
+}
+
+
+@media (min-width: 600px) {
+  .type-box1 {
+    width: 30%;
+  }
+}
+
+@media (min-width: 700px) {
+  .type-box1 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  .type-box1 {
+    width: 30%;
+  }
+}
+@media (min-width: 1200px) {
+  .type-box1 {
+    width: 25%;
+  }
+}
