@@ -1,3 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.grid-item {
+  border: 1px dotted #eee;
+  background-color: crimson;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-container {
+  border: 3px solid black;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 150px 1fr 100px;
+  grid-template-columns: 1fr 200px;
+  grid-template-areas: "nav nav"
+                      "content sidebar"
+                      "footer footer"
+}
+.grid-item-1 {
+  grid-area: nav;
+}
+.grid-item-3 {
+  grid-area: sidebar;
+}
+.grid-item-4 {
+  grid-area: footer;
+}
+/* .grid-container {
+  border: 3px solid black;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 50px 100px;
+  grid-template-columns: 290px 50px 120px;
+
+  grid-template-columns: 1fr 1fr 2fr;
+
+  grid-template-columns: 3em 25% 1fr 2fr;
+
+  grid-template-rows: minmax(100px, auto);
+  grid-template-columns: minmax(auto, 50%) 1fr 3em;
+
+  grid-template-rows: repeat(4, 100px);
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-template-columns: repeat(6, 1fr);
+
+  grid-row-gap: 20px;
+  grid-column-gap: 5rem;
+  
+  grid-gap: 1em;
+
+} */
+/* .grid-item-1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-row: 2/4;
+  grid-column: 2/6;
+  grid-column: 3/ span 2;
+} */
+
 /* Small and up (Landscape Phones) */
 @media (min-width: 576px) {
 
