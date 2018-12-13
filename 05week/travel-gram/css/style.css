@@ -26,6 +26,7 @@ body {
 .grid border1 {
   display: grid;
   grid-area: border1;
+  
 }
 #border1 {
   display: flex;
@@ -49,6 +50,8 @@ p.border12 {
 div.grid border2 {
   display: grid;
   grid-area: border2;
+  grid-column: 1 / span 2;
+
   
 }
 #container2 {
@@ -150,4 +153,18 @@ div.grid border2 {
       "border3"
       "border4"
       "border5";
+}
+@media(min-width: 528px) {
+  .gridcontainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    grid-gap: 1em;
+    grid-template-areas: 
+        "border1" "border1"
+        "border2" "border2"
+        "border3" "border4"
+        "border4" "border4";
+  }
+  
 }
