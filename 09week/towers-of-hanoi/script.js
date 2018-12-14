@@ -29,13 +29,23 @@ $(document).ready(function() {
 
   // function to check for win state by counting the number of 'rings' in the final stack:
   function checkWin() {
+    let numClicks = (clicks / 2)+.5;
     if($('#target').children().length == 4){    
-      $('#announce-game-won').text('You won!');
+      $('#announce-game-won').text('You won in' + ' ' + numClicks + ' ' + 'moves!');
     }
   }
 
   // reset board:
   $('#reset').click(function(){
     $('#start').append($('[data-block="100"]'), $('[data-block="75"]'), $('[data-block="50"]'), $('[data-block="25"]'));
+    clicks = 0;
+    $('#announce-game-won').empty();
+  });
+
+  // count clicks:
+  let clicks = 0;
+  stack.click(function(){
+    clicks++;
+    console.log(clicks);
   });
 });
