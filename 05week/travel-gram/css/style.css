@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed');
+
 *{
   padding: 0;
   margin: 0;
@@ -12,18 +13,43 @@ body {
 }
 #gridcontainer {
   display: grid;
-  grid-template: 100px 1fr 1fr 1fr / 1fr;
+  grid-template-columns: 100vh;
+  grid-template-rows: 100px repeat(10, minmax(50px, auto) );
   grid-template-areas:
       "box1"
       "box2"
       "box3"
       "box4"
-      "box5";
-  grid-gap: 1px;
-  height: 100%;
+      "box5"
+      "box6"
+      "box7"
+      "box8"
+      "box8"
+      "box10"
+      "box11" ;
+  
 }
 .box {
   background: pink;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1em;
+
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  width: 300px; 
+  height: 50%;
+} 
+.box p {
+  height: 50%;
+  width: 100%;
 }
 .box1 {
   display: grid;
