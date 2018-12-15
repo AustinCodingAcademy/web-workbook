@@ -1,1 +1,260 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+  background: #2C3E50;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #FD746C, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #FD746C, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  opacity: .9;
+}
+header p {
+  margin: 10px;
+}
+header .tablet, .mobile {
+  display: none;
+}
+header.active {
+  background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  transition: background-color 450ms;
+  color: #fff;
+}
+.gridContainer {
+  position: relative;
+  width: 100%;
+  top: 100px;
+  left: 0;
+  display: grid;
+  border-radius: 5px;
+  padding: 30px;
+  grid-gap: 20px;
+  background: #bdc3c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+  "box1 box1 box2 box2"
+  "box3 box3 box4 box5"
+  "box3 box3 box6 box6"
+  "box7 box8 box9 box10"
+  "footer footer footer footer"
+}
+.box {
+  /* border: 1px solid black; */
+  border-radius: 10px;
+}
+img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+  border-radius: 10px;
+  padding: 20px;
+}
+.box1 {
+  grid-area: box1;
+  display: flex;
+  background: #3A1C71;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  /* transform: rotate(5deg); */
+}
+.box2 {
+  grid-area: box2;
+  display: flex;
+  background: #000046;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  /* transform: rotate(-3deg); */
+}
+.box3 {
+  grid-area: box3;
+  display: flex;
+  flex-direction: column;
+  background: #c0392b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #8e44ad, #c0392b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #8e44ad, #c0392b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  /* transform: rotate(-5deg); */
+}
+.box4 {
+  grid-area: box4;
+  display: flex;
+  flex-direction: column;
+  background: #43C6AC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  /* transform: rotate(-2deg); */
+}
+.box5 {
+  grid-area: box5;
+  display: flex;
+  flex-direction: column;
+  background: #4568DC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  /* transform: rotate(5deg); */
+}
+.box6 {
+  grid-area: box6;
+  width: 100%;
+  height: 100%;
+  background: #FFAFBD;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  /* transform: rotate(10deg); */
+}
+.box7 {
+  grid-area: box7;
+  background: #30E8BF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+}
+.box8 {
+  grid-area: box8;
+  background: #20002c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #cbb4d4, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  /* transform: rotate(8deg); */
+}
+.box9 {
+  grid-area: box9;
+  background: #F0F2F0;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #000C40, #F0F2F0);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #000C40, #F0F2F0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+}
+.box10 {
+  grid-area: box10;
+  background: #3494E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  /* transform: rotate(-8deg); */
+}
+.txtDivision {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.shapes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  width: 100%;
+}
+.dot {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  /* border: 1px solid black; */
+  background: red;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+.dot p {
+  position: relative;
+  left: 32px;
+  top: 1px;
+}
+.square {
+  width: 60%;
+  height: 25px;
+  /* border: 1px solid black; */
+  background: orange;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 15px 0;
+  border-radius: 5px;
+}
+.txt {
+  padding: 20px;
+  width: 100%;
+  font-weight: 600;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    header .tablet {
+      display: block;
+    }
+    header .desktop, .tablet {
+      display: none;
+    }
+    .box1, .box2, .box7, .box8, .box9, .box10 {
+      display: none;
+    }
+    .gridContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 1024px;
+      grid-template-areas: 
+      "box3 box3"
+      "box4 box5"
+      "box6 box6";
+    }
+    .box3 {
+      display: flex;
+    }
+    .box4 {
+      display: flex;
+    }
+    .box5 {
+      display: flex;
+    }
+    .box6 {
+      display: flex;
+    }
+  }
+  @media (min-width: 481px) and (max-width: 767px) {
+    header .mobile {
+      display: block;
+    }
+    header .desktop {
+      display: none;
+    }
+    .box1, .box2, .box3, .box4, .box5, .box6 {
+      display: none;
+    }
+    .gridContainer {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "box7"
+      "box8"
+      "box9"
+      "box10";
+    }
+  }
