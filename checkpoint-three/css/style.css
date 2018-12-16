@@ -10,6 +10,15 @@ body {
     flex-direction: column;
     align-items: center;
 }
+h1 {
+    margin: 0;
+}
+
+p {
+    font-size: 14pt;
+    font-weight: 600;
+    margin: 0;
+}
 
 #pepper {
     animation: wiggle 2500ms ease-in-out;
@@ -28,9 +37,14 @@ body {
     font-size: 22pt;
 }
 
+.upgrades {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
 label {
     font-size: 10pt;
-
 }
 
 .button, .unlock {
@@ -45,6 +59,21 @@ label {
 
 .button:hover, .unlock:hover {
     box-shadow: 0 0 10px black;
+}
+
+.researchDiv {
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.researchDiv button {
+    height: 20px;
+    width: 220px;
+    padding: 0 10px;
 }
 
 @keyframes wiggle {
