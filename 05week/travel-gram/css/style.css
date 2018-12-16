@@ -49,6 +49,7 @@ header.active {
   border-radius: 5px;
   padding: 30px;
   grid-gap: 20px;
+  grid-template-rows: minmax(250px, auto);
   background: #bdc3c7;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -122,8 +123,9 @@ img {
 .box6 {
   grid-area: box6;
   display: flex;
-  width: 100%;
-  height: 100%;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-column: span 2;
   background: #FFAFBD;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -201,6 +203,10 @@ img {
   color: black;
   padding: 15px 0;
   border-radius: 5px;
+}
+.img_size_tag {
+  max-height: 200px;
+  overflow: hidden;
 }
 .txt {
   padding: 20px;
