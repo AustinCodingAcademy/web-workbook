@@ -19,7 +19,7 @@ $(document).ready(function(){
     }
 
     // set interval for function to execute once every second
-    setInterval(heat,1000);
+    setInterval(heat,3000);
 
     // add shu's per second number to total shu's
     function heat() {
@@ -49,6 +49,7 @@ $(document).ready(function(){
     });
 
     let i = 0;
+
     $('.unlock').click(function(){
         let cost = $(this).data('cost');
         let span = $(this).children('span');
@@ -56,8 +57,8 @@ $(document).ready(function(){
         if(cost <= data.totalCurrent) {
             data.totalCurrent -= parseInt(cost);
             data.totalSHU = Math.floor(data.totalSHU * 1.15);
-            span.html(parseInt(span.html() * 1.25));
-            $(this).data('cost', parseInt(cost * 1.25));
+            span.html(parseInt(Math.floor(span.html() * 1.4)));
+            $(this).data('cost', parseInt(Math.floor(cost * 1.4)));
             i++;
         }
         updateReport();
@@ -67,11 +68,19 @@ $(document).ready(function(){
     $('#research').click(function(){
         let button = $('.button');
         let span = $('label').children('span');
-        //if(button.data('cost') <= data.totalCurrent){
-            console.log('works');
-            button.data('val', button.data('val') * 2);
-            console.log(button.data('val'));
-            span.html(span.html() * 2);
-        //}
+        let cost = $(this).data('cost');
+        
+        if(button.data('cost') <= data.totalCurrent){
+            data.totalCurrent -= parseInt(cost);
+            button.each(function(){
+                $(this).data('val', $(this).data('val') *2);
+            })
+            span.each(function(){
+                $(this).html($(this).html() * 2);
+            })
+            $(this).data('cost', Math.floor(cost * 1.8));
+            $('#researchCost').html(Math.floor($('#researchCost').html() * 1.8));
+        }
+        updateReport();
     })
 })
