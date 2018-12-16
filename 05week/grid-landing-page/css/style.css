@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Jockey+One');
+*{
+  padding: o;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Jockey One', sans-serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: whitesmoke;
+}
+#gridwrapper {
+  display: grid;
+  grid-template-rows: 100px repeat(8, minmax(20px, 1fr) ) 100px;
+  grid-template-columns: repeat(20, auto-fit mixmax(20px, 1fr) );
+  grid-gap: 5px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  /* grid-template-areas:  */
+   
+
+}
+.box {
+  background: palegreen;
+}
+.box:nth-child(even) {
+  background: palevioletred;
+}
+.box1 {
+  display: grid;
+  grid-area: box1;
+  grid-column: 1 / -1;
+  grid-row: 1 / 4;
+}
+#box1-grid {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(10, 1fr);
+
+}
+.g1-n1-b1 {
+  grid-column: 2;
+  grid-row: 2;
+  background: green;
+  border-left: 1px solid gray;
+}
+.fa-circle {
+  position: relative;
+  top: 50;
+}
+.g1-n1-b2 {
+  grid-column: 3;
+  grid-row: 2;
+  background: red;
+}
+.n1-b2 {
+  position: relative;
+  top: 25;
+}
+.g1-n1-b3 {
+  grid-column: 5;
+  grid-row: 2;
+  background: orange;
+}
+.n1-b3 {
+  position: relative;
+  top: 25;
+}
+.g1-n1-b4 {
+  grid-column: 7;
+  grid-row: 2;
+  background: yellow;
+}
+
+/* .box2 {
+  display: grid;
+  grid-area: box2;
+}
+.box3 {
+  display: grid;
+  grid-area: box3;
+}
+.box4 {
+  display: grid;
+  grid-area: box4;
+}
+.box5 {
+  display: grid;
+  grid-area: box5;
+}
+.box6 {
+  display: grid;
+  grid-area: box6;
+}
+.box7 {
+  display: grid;
+  grid-area: box7;
+}
+.box8 {
+  display: grid;
+  grid-area: box8;
+}
+.box9 {
+  display: grid;
+  grid-area: box9;
+}
+.box10 {
+  display: grid;
+  grid-area: box10;
+}
+.box11 {
+  display: grid;
+  grid-area: box11;
+}
+.box12 {
+  display: grid;
+  grid-area: box12;
+}
+.box13 {
+  display: grid;
+  grid-area: box13;
+}
+.box14 {
+  display: grid;
+  grid-area: box14;
+}
+.box15 {
+  display: grid;
+  grid-area: box15;
+}
+.box16 {
+  display: grid;
+  grid-area: box16;
+}
+.box17 {
+  display: grid;
+  grid-area: box17;
+}
+.box18 {
+  display: grid;
+  grid-area: box18;
+}
+.box19 {
+  display: grid;
+  grid-area: box19;
+}
+.box20 {
+  display: grid;
+  grid-area: box20;
+} */
