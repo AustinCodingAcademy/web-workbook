@@ -1,35 +1,36 @@
 $(document).ready(function() {
 
-
+//change cursor on img click
 
 $("img").click(function(){
     $(this).css('cursor', 'pointer');
 
 })
 
-
 let num = 0
 $("#moon").click(function(){
     $("#counter").html(num++);
     if(num >= 30 ){
         num += 2;
-        upgradeLevel.innerHTML = "Level 1!";
+        upgradeLevel.innerHTML = "Sweet! Level 1!";
     }
-    //upgrade to 10x
+    //upgrades to 10x
     if(num >= 500) {
         num += 10;
-        upgradeLevel.innerHTML = "Level 2!";
+        upgradeLevel.innerHTML = "Yay! Level 2!";
+        alert("Nice!");
     }
-     //upgrade to 30x
+     //upgrades to 30x
      if(num >= 1000) {
         num += 30;
-        upgradeLevel.innerHTML = "Level 3!";
+        upgradeLevel.innerHTML = "Woo! Level 3!";
     }
 
-    //upgrade to 1000x
+    //upgrades to 1000x
     if(num >= 100000) {
         num += 1000;
-        upgradeLevel.innerHTML = "Super Level!";
+        upgradeLevel.innerHTML = "Super Level!!!";
+        alert("WOW!! That's Amazing!")
     }
 
 })
