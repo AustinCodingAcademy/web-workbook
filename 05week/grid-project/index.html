@@ -1,0 +1,157 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+  <title>Cardigan Studio</title>
+</head>
+<body>
+  <div class="container">
+    <div class="vertical_lines">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+      <div class="line4"></div>
+      <div class="line5"></div>
+      <div class="line6"></div>
+      <div class="line7"></div>
+      <div class="line8"></div>
+      <div class="line9"></div>
+    </div>
+    <div class="r2_c1">
+      <p>CARDIGAN.</p>
+    </div>
+    <div class="r2_c3">
+      <hr>
+      <h1>50% sales</h1>
+    </div>
+    <div class="r3_c3_text">
+      <p>Limited time only, while stocks last. Selected items marked down on site before April 19.</p>
+      <a href="x">See full terms</a>
+    </div>
+    <div class="r1_c2">
+      <p>Cart</p>
+      <div class="circle">
+        <p>3</p>
+      </div>
+    </div>
+    <div class="r3_c2">
+      <p class="cardigan">C</p>
+    </div>
+    <div class="r3_c3">
+      <p class="cardigan">A</p>
+    </div>
+    <div class="r3_c4">
+      <p class="cardigan">R</p>
+    </div>
+    <div class="r3_c5">
+      <p class="cardigan">D</p>
+    </div>
+    <div class="r3_c7">
+      <p class="cardigan">G</p>
+    </div>
+    <div class="r3_c6">
+      <p class="cardigan">I</p>
+    </div>
+    <div class="r3_c8">
+      <p class="cardigan">A</p>
+    </div>
+    <div class="r3_c9">
+      <p class="cardigan">N</p>
+    </div>
+    <div class="mySlides bottom_image">
+      <img src="https://source.unsplash.com/525x400/?fashion, shopping/?v1" alt="">
+    </div>
+    <div class="mySlides bottom_image">
+      <img src="https://source.unsplash.com/525x400/?fashion, shopping/?v2" alt="">
+    </div>
+    <div class="mySlides bottom_image">
+      <img src="https://source.unsplash.com/525x400/?fashion, shopping/?v3" alt="">
+    </div>
+    <div class="bottom_image_button">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <div class="bottom_image_text">
+        <hr>
+        <h2>New Arrival</h2>
+        <h2>Spring/Winter</h2>
+      </h1>
+    </div>
+    <div class="top__image">
+      <div class="top_img">
+        <img src="https://source.unsplash.com/300x400/?fashion, shopping/?v2" alt="">
+      </div>
+      <hr>
+      <div class="top_img_caption">
+          <p>Adding to your collection this spring friendly cardigan to keep you warm under ...</p>
+      </div>
+    </div> 
+    <div class="text_box">
+        <p>Read more</p>
+    </div>
+      <hr class="text_box_hr">
+    <div class="top_image_button">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    <div class="letter_S">
+      <h1 class="studio_h1_clear">S</h1>
+    </div>
+    <div class="letter_T">
+      <h1 class="studio_h1_filled">T</h1>
+      </div>
+    <div class="letter_U">
+      <h1 class="studio_h1_clear">U</h1> 
+    </div> 
+    <div class="letter_D">
+      <h1 class="studio_h1_clear">D</h1>
+    </div>
+    <div class="letter_I">
+      <h1 class="studio_h1_clear">I</h1>
+    </div>
+    <div class="letter_O">
+      <h1 class="studio_h1_clear">O</h1>
+    </div>
+    <div class="fall_text">
+      <p>fall</p>
+    </div>
+     <div class="email_icon">
+      <i class="far fa-envelope"></i>
+      </div>
+     <div class="search_icon">
+      <i class="fas fa-search"></i>
+     </div>
+     <div class="collapsed_navbar">
+      <i class="fas fa-grip-lines"></i>
+     </div>
+     <div class="share_icons">
+       <p>Share.</p>
+       <i class="fab fa-facebook-f"></i>
+       <i class="fab fa-twitter"></i>
+     </div>
+  </div>
+  <script>
+  function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}</script>
+</body>
+</html>
