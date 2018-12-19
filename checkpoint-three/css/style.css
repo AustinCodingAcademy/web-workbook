@@ -1,1 +1,112 @@
+body {
+    background-color: black;
+}
+html, body {
+    margin: 0; height: 100%; overflow: hidden
+}
+#container {
+    background-image: url(/img/nightsky.jpg);
+    background-size: 105%;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas:
+    "column1 column2"
+    "column3 column3"  
+;}
+.column1 {
+    grid-area: column1;   
+}
+.column1 img{
+    margin-top: 40px;
+    margin-left: 140px;
+    transform: rotate(-10deg);
+}
+.column2 {
+    grid-area: column2;
+}
+.speedometer {
+    position: relative;
+    top: 340px;
+    /* left: px; */
+    color: red;
+    font-size: 50px;
+    width: 500px;
+    height: 60px;
+    border: red solid 2px;
+    background-color: black;
+    text-align: right;
+    font-family: 'Major Mono Display', monospace;
+    z-index: 2;
+}
+.column3 {
+    grid-area: column3;
+    height: 380px;
+    background-image: url(/img/export.png);
+    background-repeat: no-repeat;
+    background-size: 85%;
+    background-position: center bottom;
+    z-index: 0;
+}
+.column3 img {
+    position: relative;
+    left: 535px;
+    top:70px;
+    z-index: 0;
+}
+/* Formatting & Placement of */
+.accelerate, .decrease, .emergencybrake {
+    width: 50px;
+    text-align: center;
+    font-size: 25px;
 
+    color: red;
+    border: red solid 2px;
+    border-radius: 10px;
+   
+    position: relative;
+    z-index: 1; 
+    left: 422px;
+    bottom: 170px;
+}
+.emergencybrake {
+    border: red 1px dashed;
+    background-color: red;
+    color:black;
+    width: 90px;
+    left: 405px;
+    margin-top: 30px;
+}
+.turbo, .lightspeed {
+    color:red;
+    font-size: 40px;
+    text-align: center;
+    top: 0;
+    position: absolute;
+    right: 295px;
+    top: 500px;
+}
+.turbo {
+    right: 300px;
+    top: 500px;
+    background-color: purple;
+    border: rgb(13, 219, 255) solid 3px;
+    border-radius: 30px;
+    padding:15px;
+}
+.lightspeed {
+    background-color: goldenrod;
+    border: rgb(243, 6, 6) solid 5px;
+    border-radius: 20px;
+    padding: 10px;
+    top: 620px;
+    right: 290px;
+    font-size: 30px;
+}
+.emergencybrake, .lightspeed, .turbo {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+/* div, img {
+    border: red 1px solid;
+} */
