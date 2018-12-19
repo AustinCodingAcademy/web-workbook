@@ -13,7 +13,8 @@ body {
 #gridwrapper {
   display: grid;
   grid-template-rows: 20px repeat(8, minmax(20px, 1fr) ) 100px;
-  grid-template-columns: repeat(20, auto-fit mixmax(20px, 1fr) );
+  grid-template-columns: repeat(20, auto-fit, mixmax(20px, 1fr) );
+  /* grid-template-columns: repeat(auto-fit, mixmax(20px, 1fr) ); */
   width: 100%;
   height: 100%;
   border: 2px solid black;
@@ -357,4 +358,9 @@ span {
   height: 290px;
   border-right: 1px solid rgba(128, 128, 128, 0.493); 
   border-left: 1px solid rgba(128, 128, 128, 0.493); 
+}
+img.n3-b4 {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
