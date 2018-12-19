@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet">
 
     <title>Santa's Sleigh</title>
 </head>
@@ -13,29 +14,38 @@
         <h1>Santa's Sleigh</h1>
         <div id="click_area">
             <img id="click" type='button' src="https://img.pngio.com/santa-sleigh-png-santa-sleigh-png-425_265.png">
+            <ul id="stats">
+                <li>Magic: <span id="total_clicks">0</span><br></li>
+                <li>Houses per <small id="time_period">1.00</small> seconds: <span id="clicks_per_second">0</span><br></li>
+                <li>Magic per click: <small id='clickPer'>1</small></li>
+            </div>
         </div>
-        <hr>
-        <p>
-            Magic: <span id="total_clicks">0</span><br>
-            Houses per <small id="time_period">1.00</small> seconds: <span id="clicks_per_second">0</span>
-        </p>
-        <h3>Buy</h3>
+        
         <table class="table">
-            <tr>
-                <td>Sack Capacity</td>
+
+            <tr class="items" id="cocoDiv">
+                <td class="itemName">Hot Coco</td>
+                <td><span id="coco">No Hot Coco</span></td>
+                <td><button id="cocoNumber" type="button" class="button button_success">Buy for 10</button></td>
+            </tr>
+            <tr class="items">
+                <td class="itemName">Sack Capacity</td>
                 <td><span id="sack_cap">Lvl 0</span></td>
-                <td><button id="buy_click" type="button" class="button button_success">Buy for 1</button></td>
+                <td><button id="buy_click" type="button" class="button button_success">Buy for 100</button></td>
             </tr>
-            <tr>
-                <td>Reindeers</td>
-                <td><span id="reindeers">Lvl 0</span></td>
-                <td><button id="reindeers_number" type="button" class="button button_success">Buy for 100</button></td>
+            <tr class="items">
+                <td class='itemName'>Elves</td>  
+                <td><span id="elves"> No Elves</span></td>
+                <td><button id="elves_number" type="button" class="button button_success">Buy for 1000</button></td>
             </tr>
-            <tr>
-              <td>Elves</td>  
-              <td><span id="elves"></span></td>
-              <td><button id="elves_number" type="button" class="button button_success">Buy for 1000</button></td>
+            
+
+            <tr class="items">
+                <td class="itemName">Reindeers</td>
+                <td><span id="reindeers">No Reindeers</span></td>
+                <td><button id="reindeers_number" type="button" class="button button_success">Buy for 10000</button></td>
             </tr>
+            
 
         </table>
         <div id="notification">
@@ -43,6 +53,6 @@
         </div>
     </div>
 
-
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
 </body>
