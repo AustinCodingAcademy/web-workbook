@@ -43,11 +43,18 @@ p {
 }
 
 #pepper {
+    height:202px; 
+    width: 389px;
     animation: wiggle 2500ms ease-in-out;
     animation-iteration-count: infinite;
     margin-bottom: 20px;
     cursor: pointer;
+    transition: all .2s ease-in;
 }
+#pepper:hover {
+    animation: wiggleLarge 1500ms ease-in-out;
+}
+
 
 #scovilles {
     height: 50px;
@@ -108,3 +115,9 @@ button:focus {
     50% {transform: rotate(10deg);}
     100% {transform: rotate(-10deg);}
   }
+
+@keyframes wiggleLarge {
+    0% {transform: rotate(-10deg) scale(1.1);}
+    50% {transform: rotate(10deg) scale(1.1);}
+    100% {transform: rotate(-10deg) scale(1.1);}
+}
