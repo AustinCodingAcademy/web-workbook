@@ -1,98 +1,173 @@
-// 'use strict';
+//'use strict';
 
-let damage = 0;
+let damage = 1000;
 
 let charCount = 0;
+let handCount = 0;
+
 let charCost = 10;
+let handCost = 100;
+
+let handNum = 4;
 let charNum = 79;
-let charArray = Array.apply(null, {length: charNum}).map(Number.call, Number);
+let charArray = Array.apply(null, { length: charNum }).map(Number.call, Number);
 
+let speedModifier = 0.1;
+let charInterval;
 
-$(document).ready(function () {
+////////////////////////////////////////////////////////////////////////////////
+$(document).ready(function() {
+    
 
-    function updateCounter(){
-        $('#count').text(damage);
+  $("#symbol").click(function() {
+    damage += 1;
+    updateCounter();
+    shakeSymbol();
+  });
+
+  //Adds additional character
+  $("#btn_1").click(function() {
+    if ($("#count").text() >= charCost && charCount <= 79) {
+      $('<img class="characters" src="pics/char_' + charCount + '.png">').insertAfter("#symbol");
+
+      damage = damage - charCost;
+      updateCounter();
+      charCost = charCost + Math.round(charCost * 0.2);
+      updateCharacterCost();
+      charCount = charCount + 1;
+      $("#counter_1").text(charCount + "/80");
+
+      animateDiv();
+      characterInterval();
     }
+  });
 
-    function updateCharacterCost(){
-        $('#cost_1').text(charCost);
-    }
+  $("#btn_2").click(function() {
+    damage += 1;
+    updateCounter();
+  });
 
-    $('#symbol').click(function () {
-        damage += 1;
+  $("#btn_3").click(function() {
+    if ($("#count").text() >= handCost && handCount <= 3) {
+        $('<img class="hand characters" src="pics/hand.png">').insertAfter('#symbol');
+        damage = damage - handCost;
         updateCounter();
-    });
+        handCost = handCost + Math.round(handCost * 0.2);
+        updateHandCost();
+        handCount = handCount + 1;
+        $("#counter_3").text(handCount + "/4");
 
-    //Adds additional character
-    $('#btn_1').click(function () {
-        if ($('#count').text()>=charCost && charCount<=79){
-        $('<img class="characters" src="pics/char_'+charCount+'.png">').insertAfter('#symbol')
-        updateCounter();
-        damage -= charCost;
-        charCount += 1;
-        charCost += Math.round(charCost*.2);
-        $('#counter_1').text(charCount+"/80")
         animateDiv();
-        console.log(w);      
-        console.log(h);
-        updateCharacterCost();
-        }
-    });
-
-    $('#btn_2').click(function () {
-        damage += 1;
-        updateCounter();
-    });
-
-    $('#btn_3').click(function () {
-        x += 1;
-        updateCounter();
-    });
-
-    $('#btn_4').click(function () {
-        damage += 1;
-        updateCounter();
-    });
-
-    $('#reset').click(function () {
-        let answer = confirm("Are you sure you want to do this? You will loose all of your progress.");
-        if (answer){
-            $('#count').text('0');
-        }
-    });
-
-    $('#symbol').click(function(){
-        $(this).addClass('shake-hard shake-constant');
-        
-        setTimeout(function(){
-            $('#symbol').removeClass('shake-hard shake-constant')},100);
-    });
-
-    function timeOut() {
-        setTimeout(shake, 3);
     }
+  });
 
-    console.log($('#wrapper').height())
+  $("#btn_4").click(function() {
+    damage += 1;
+    updateCounter();
+  });
+
+  $("#reset").click(function() {
+    let answer = confirm(
+      "Are you sure you want to do this? You will loose all of your progress."
+    );
+    if (answer) {
+      damage = 0;
+      charCount = 0;
+      charCost = 10;
+      $("#count").text(damage);
+      $("#counter_1").text(charCount + "/80");
+      $("#cost_1").text(charCost);
+      $(".characters").remove();
+    }
+  });
+  timer();
 });
+////////////////////////////////////////////////////////////////////////////////
 
-function makeNewPosition(){
-    
-    // Get viewport dimensions (remove the dimension of the div)
-    let h = $('#wrapper').height() - 250;
-    let w = $('#wrapper').width() - 50;
-    
-    let nh = Math.floor(Math.random() * h);
-    let nw = Math.floor(Math.random() * w);
-    
-    return [nh,nw];    
-    
+function updateCounter() {
+  $("#count").text(damage);
 }
 
-function animateDiv(){
-    let newq = makeNewPosition();
-    $('.characters').animate({ top: newq[0], left: newq[1] }, function(){
-      animateDiv();  
-  
-    });
-    
+function updateCharacterCost() {
+    $("#cost_1").text(charCost);
+  }
+
+function updateHandCost() {
+$("#cost_3").text(handCost);
+}
+
+function characterInterval() {
+  if (charCount > 0) {
+    damage = damage + 5 * charCount;
+    charInterval = setTimeout(characterInterval, 5000);
+    updateCounter();
+    shakeSymbol();
+  }
+  console.log(charCount);
+}
+
+function shakeSymbol() {
+  $("#symbol").addClass("shake-hard shake-constant");
+
+  setTimeout(function() {
+    $("#symbol").removeClass("shake-hard shake-constant");
+  }, 100);
+}
+
+function timer(){
+    let minute = 9;
+    let sec = 59;
+    setInterval(function() {
+    if(sec<10){
+      $('#timer').text(minute + " : 0" + sec);
+    }else{
+        $('#timer').text(minute + " : " + sec);
+    }
+      sec--;
+      if (sec == 00) {
+        minute--;
+        sec = 59;
+        if (minute == 0) {
+          minute = 10;
+        }
+      }
+    }, 1000);
+    console.log(sec.length);
 };
+
+///////////////////////////////////////////////////////////////////////////////
+//Provides animation to characters
+function makeNewPosition() {
+  // Get viewport dimensions (remove the dimension of the div)
+  let h = $("#wrapper").height() + 300;
+  let w = $("#wrapper").width() - 50;
+
+  let nh = Math.floor(Math.random() * h);
+  let nw = Math.floor(Math.random() * w);
+
+  return [nh, nw];
+}
+
+function animateDiv() {
+  let newq = makeNewPosition();
+  let oldq = $(".characters").offset();
+  let speed = calcSpeed([oldq.top, oldq.left], newq);
+
+  $(".characters").animate({ top: newq[0], left: newq[1] }, speed, function() {
+    animateDiv();
+  });
+}
+
+function calcSpeed(prev, next) {
+  let x = Math.abs(prev[1] - next[1]);
+  let y = Math.abs(prev[0] - next[0]);
+
+  let greatest = x > y ? x : y;
+
+  speedModifier = .5;
+
+  let speed = Math.ceil(greatest / speedModifier);
+
+  return speed;
+}
+///////////////////////////////////////////////////////////////////////////////
