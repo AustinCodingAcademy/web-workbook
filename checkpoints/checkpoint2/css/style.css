@@ -1,0 +1,312 @@
+/* tablet sizing and styling */
+@media (min-width: 426px) and (max-width: 1023px) {
+    main .ourPartners {
+        display: grid;
+        width: 90%;
+        margin: auto;
+        align-content: space-around;
+        justify-content: space-around;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "box1 box2"
+            "box3 box4"
+            "box5 box6"
+    }
+
+    main .aboutDogs {
+        height: 100%;
+        font-size: .8em;
+    }
+
+    main .dogArticles {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .aboutDogs .dogArticles .dogText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        font-size: 1.4em;
+    }
+
+    main .dogArticles article {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 15px 0;
+    }
+
+    main .partnerPhoto {
+        filter: none;
+    }
+}
+
+/* phone/low-res styling and sizing */
+@media (max-width: 425px) {
+    main .aboutUs {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-top: 1em;
+        justify-content: space-evenly;
+        align-content: center;
+        font-family: Helvetica, sans-serif;
+        background-color: #fff;
+    }
+
+    .aboutUsTitle {
+        text-align: center;
+    }
+
+    main .aboutUsText {
+        width: 80%;
+        text-align: justify;
+        align-self: center;
+        margin-bottom: 1.5em;
+    }
+
+    main .aboutDogs {
+        height: 100%;
+        font-size: .8em;
+    }
+
+    main .aboutDogs .dogArticles {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 1.5em;
+    }
+
+    .dogText {
+        margin-bottom: 1em;
+    }
+
+    main .ourPartners {
+        display: grid;
+        width: 100%;
+        margin: auto;
+        background-color: #fff;
+        align-content: space-around;
+        justify-content: space-around;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "box1"
+            "box2"
+            "box3"
+            "box4"
+            "box5"
+            "box6"
+    }
+
+    main .partnerPhoto {
+        filter: none;
+    }
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 160px;
+    margin: 0;
+    top: 0;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo {
+    font-family: Helvetica, sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+    text-align: center;
+    background-color: #fff;
+}
+
+header .logo .name {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+}
+
+/* background */
+.barImage {
+    width: 100%;
+}
+
+/* begins about us section */
+.aboutUs {
+    display: flex;
+    flex-direction: row;
+    height: 450px;
+    justify-content: space-evenly;
+    align-content: center;
+    font-family: Helvetica, sans-serif;
+    background-color: #fff;
+}
+
+.aboutUsTitle {
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 3em;
+}
+
+.aboutUsText p {
+    margin-bottom: 1em;
+}
+
+.aboutUsText {
+    width: 40%;
+    align-self: center;
+}
+
+.aboutUs .katAndMe {
+    height: 15em;
+    border-radius: 50%;
+    align-self: center;
+    box-shadow: 0 0 20px 5px #888;
+}
+
+/* Begin about the dogs section */
+.aboutDogs {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    height: 500px;
+}
+
+.aboutDogsTitle {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin: 1em;
+    align-self: center;
+}
+
+.dogArticles {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dogArticles article {
+    display: flex;
+    flex-direction: column;
+}
+
+.dogImages {
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 5px #888;
+}
+
+.dogText {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.dogName {
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.dogText > p {
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+/* begins section on partners of BB */
+.ourPartners {
+    display: grid;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background-color: #fff;
+    align-content: space-around;
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "box1 box2 box3"
+        "box4 box5 box6"
+}
+
+.aboutOurPartners > p {
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin: 1em;
+    text-align: center;
+}
+
+.partnerContainer {
+    margin: auto;
+    height: 300px;
+}
+
+.partnerPhoto {
+    width: 225px;
+    height: 225px;
+    border-radius: 100%;
+    box-shadow: 0 0 20px 5px #888;
+    filter: grayscale();
+    transition: filter 300ms, scale 500ms, box-shadow 100ms;
+}
+
+.partnerPhoto:hover {
+    filter: none;
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 0 10px 2.5px #888;
+}
+
+.partnerName {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    margin: 1em;
+}
+
+/* grid set up for partner section */
+.austinPetsAlive {
+    grid-area: box1;
+}
+
+.jesterKing {
+    grid-area: box2;
+}
+
+.austinEastCiders {
+    grid-area: box3;
+}
+
+.elGaucho {
+    grid-area: box4;
+}
+
+.vitalFarms {
+    grid-area: box5;
+}
+
+.dilloDirt {
+    grid-area: box6;
+}
+
+footer {
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+footer a {
+    color: #000;
+    /* text-decoration: none; */
+}

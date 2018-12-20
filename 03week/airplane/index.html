@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>UX Atlantic Airlines</title>
+    <link rel="icon" href="img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div class="headerTop"></div>
+        <header>
+            <div class="logo"><a href="../airplane/index.html"><img src="img/logo.png"></a></div>
+            <nav>
+                <div class="navImage">
+                    <a href="../airplane/index.html"><img src="img/home-icon.png"></a></div>
+                <div class="navText">
+                    <a href="../airplane/index.html">Home</a></div>
+                <div class="navImage">
+                    <a href="../airplane/index.html"><img src="img/deal-icon.png"></a></div>
+                <div class="navText">
+                    <a href="../airplane/index.html">Travel Deals</a></div>
+                <div class="navImage">
+                    <a href="../airplane/index.html"><img src="img/schedule-icon.png"></a></div>
+                <div class="navText">
+                    <a href="../airplane/index.html">Flight Schedule</a></div>
+                <div class="navImage">
+                    <a href="../airplane/index.html"><img src="img/login-icon.png"></a></div>
+                <div class="navText"><a href="../airplane/index.html">Register/Login</a></div>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <div class="flights"><img src="img/plane-icon.png" class="iconSize"></div>
+                <div class="hotels"><img src="img/hotel-icon.png" class="iconSize"></div>
+                <div class="carRentals"><img src="img/car-icon.png" class="iconSize"></div>
+
+                <input type="text" class="departField" onfocus="this.value=''" placeholder="Depart">
+                <input type="text" class="arriveField" onfocus="this.value=''" placeholder="Arrive">
+
+                <div class="departDate">mm/dd/yyyy</div>
+                <div class="returnDate">mm/dd/yyyy</div>
+                <div class="passengers">Passengers</div>
+                <div class="passengerQty"> <!--This is to mock in a selector field for pass qty-->
+                    <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10+">10+</option>
+                    </select>
+                </div>
+                <div class="radioButtons">
+                    <label><input type="radio" checked="checked" name="routing">
+                        <span class="checkmark"></span>Return</label>
+                    <label><input type="radio" name="routing">
+                        <span class="checkmark"></span>One-Way</label>
+                </div>
+                <a href="https://www.google.com/flights" target="_blank"><div class="search">Search Flights</div></a>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,1 +1,241 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+    body .wrap {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+        grid-template-areas:
+            "box1 box1"
+            "box2 box3"
+            "box4 box4"
+            "box5 box6"
+            "box7 box7"
+            "box8 box9"
+            "box10 box10"
+    }
 
+    .deviceType {
+        visibility: hidden;
+    }
+    
+    .deviceType:after {
+        visibility: visible;
+        margin-right: 50px;
+        content: "Tablet";
+    }
+
+    .globalStyling p {
+        font-size: 14px;
+    }
+    
+    main .as4 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .as4 img {
+        max-width: 50%;
+    }
+
+    main .as10 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .as10 img {
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    body .wrap {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1em;
+        grid-template-areas:
+            "box1 box1 box2 box2"
+            "box3 box3 box4 box5"
+            "box3 box3 box6 box6"
+            "box7 box8 box9 box10"
+    }
+
+    .deviceType {
+        visibility: hidden;
+    }
+    
+    .deviceType:after {
+        visibility: visible;
+        margin-right: 50px;
+        content: "Desktop";
+    }
+
+    .globalStyling p {
+        font-size: 12px;
+    }
+    
+    .as2 .articleText {
+        height: 100%;
+    }
+
+    main .as1 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .as1 img {
+        max-width: 50%;
+    }
+
+    main .as2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .as2 img {
+        max-width: 50%;
+    }
+
+    .as6 .articleText {
+        height: 100%;
+    }
+
+    main .as6 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main .as6 img {
+        max-width: 50%;
+    }
+}
+
+header {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.siteName {
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+/* styles the device type */
+.deviceType {
+    font-family: Helvetica, sans-serif;
+    color: darkgray;
+    padding: 10px;
+}
+
+
+/* gloabl article font styling */
+.globalStyling {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Helvetica, sans-serif;
+    font-size: 12px;
+    border: 1px solid #000;
+    text-align: justify;
+}
+
+.globalStyling img {
+    max-width: 90%;
+    padding: 10px;
+}
+
+.globalStyling p {
+    padding: 0 5px 0 5px;
+}
+
+.articleControls {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.comments {
+    align-self: flex-start;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-left: 5%;
+    margin-bottom: 2.5%;
+}
+
+.readArticle {
+    display: flex;
+    align-self: flex-end;
+    width: 75px;
+    height: 20px;
+    background-color: red;
+    border: 1px solid #000;
+    margin-right: 5%;
+    margin-bottom: 2.5%;
+    font-family: Helvetica, sans-serif;
+    color: #fff;
+    font-size: 130%;
+    font-weight: 100;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.article1 {
+    grid-area: box1;
+}
+
+.article2 {
+    grid-area: box2;
+}
+
+.article3 {
+    grid-area: box3;
+}
+
+.article4 {
+    grid-area: box4;
+}
+
+.article5 {
+    grid-area: box5;
+}
+
+.article6 {
+    grid-area: box6;
+}
+
+.article7 {
+    grid-area: box7;
+}
+
+.article8 {
+    grid-area: box8;
+}
+
+.article9 {
+    grid-area: box9;
+}
+
+.article10 {
+    grid-area: box10;
+}
+
+
+.wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .5em;
+    grid-template-areas:
+        "box1"
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+        "box6"
+        "box7"
+        "box8"
+        "box9"
+        "box10"
+}

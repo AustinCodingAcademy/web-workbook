@@ -1,0 +1,140 @@
+@media (max-width: 715px) {
+    main .contactContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.galaxy {
+    display: flex;
+    flex-basis: 850px;
+    max-width: 850px;
+    height: 450px;
+    background-image: url(../img/nasa-background.jpg);
+    font-family: Helvetica, sans-serif;
+    font-size: 90px;
+    font-weight: 900;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.nasa::before {
+    content: 'NASA';
+}
+
+.galaxy:hover .nasa::before {
+    content: '';
+}
+
+.nasa {
+    transition: transform 2s;
+}
+
+.galaxy:hover .nasa::after {
+    content: 'SPACE FORCE LOL';
+    animation-name: weeText;
+    animation-duration: .5s;
+    animation-iteration-count: 1000;
+}
+
+@keyframes weeText {
+    0% {color: red}
+    25% {color: white}
+    50% {color: blue}
+    75% {color: orange}
+    100% {color: green}
+}
+
+.galaxy:hover .nasa {
+    transform: rotate(3210deg);
+}
+
+.galaxy:hover {
+    background-size: cover;
+    background-image: url(../img/sflol.jpg);
+}
+
+.contactContainer {
+    display: flex;
+    max-width: 850px;
+    min-height: 324px;
+    background-color: lightgray;
+    justify-content: space-between;
+}
+
+.testBorder {
+    /* border: 1px solid red; */
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #0B3D91;
+}
+
+.contactFont {
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.contactFont p {
+    font-size: 13px;
+    line-height: 1.0;
+}
+
+.socialMedia {
+    flex: 1;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    flex-basis: 30%;
+}
+
+.officeInfo {
+    flex: 1;
+    padding-left: 20px;
+    padding-top: 10px;
+    flex-basis: 30%;
+}
+
+.contactField {
+    flex: 1;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    flex-basis: 30%;
+    flex-direction: column;
+}
+
+.nameInput {
+    padding-bottom: 4px;
+}
+
+.messageInput {
+    padding: 4px 0 4px 0;
+}
+
+input[name="nameInput"] {
+    width: 200px;
+}
+
+textarea[name="messageInput"] {
+    width: 200px;
+    height: 75px;
+}
+
+button {
+    background-color: gray;
+    border: none;
+    margin-top: 4px;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+}

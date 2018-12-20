@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Simple calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <main>
+        <div id="calc">
+            <input type="text" id="results" placeholder="0"/>
+            <div class="calcButtons">
+                <div class="button" onclick="sendNum('1')">1</div>
+                <div class="button" onclick="sendNum('2')">2</div>
+                <div class="button" onclick="sendNum('3')">3</div>
+                <div class="button" onclick="sendNum('+')">+</div>
+                <div class="button" onclick="sendNum('4')">4</div>
+                <div class="button" onclick="sendNum('5')">5</div>
+                <div class="button" onclick="sendNum('6')">6</div>
+                <div class="button" onclick="sendNum('-')">-</div>
+                <div class="button" onclick="sendNum('7')">7</div>
+                <div class="button" onclick="sendNum('8')">8</div>
+                <div class="button" onclick="sendNum('9')">9</div>
+                <div class="button" onclick="sendNum('*')">*</div>
+                <div class="button" onclick="plusMinus()">+/-</div>
+                <div class="button" onclick="sendNum('0')">0</div>
+                <div class="button" onclick="equals()">=</div>
+                <div class="button" onclick="sendNum('/')">/</div>
+                <div class="button" onclick="deleteLast()">Delete</div>
+                <div class="button" onclick="clearResults()">Clear</div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

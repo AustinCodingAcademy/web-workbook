@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#gameTable {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 500px;
+  margin: auto;
+}
+
+#gameTitle, #totalNumMoves {
+  font-family: Helvetica;
+  text-align: center;
+  font-size: 2em;
+}
+
+button {
+  width: 100px;
+  text-align: center;
+  margin: auto;
+  font-size: 1.2em;
+}
+
+[data-stack] {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 300px;
+  width: 20px;
+  background-color: aliceblue;
+  margin: 50px;
+}
+
+[data-block] {
+  border: 1px solid #000;
+  border-radius: 2px;
+  height: 25px;
+  float: left;
+}
+
+[data-block="1"] {
+  width: 25px;
+  background-color: blue;
+}
+
+[data-block="2"] {
+  width: 50px;
+  background-color: green;
+}
+
+[data-block="3"] {
+  width: 75px;
+  background-color: red;
+}
+
+[data-block="4"] {
+  width: 100px;
+  background-color: yellow;
+}
+
+#announce-game-won {
+  font-size: 50px;
+  text-align: center;
+}

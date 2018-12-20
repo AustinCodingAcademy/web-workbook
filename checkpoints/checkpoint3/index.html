@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Fido's Bones</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+<body>
+    <!-- shows the dog -->
+    <div id="left" class="mainColumn">
+        <!-- the counters -->
+        <section id="currentCounter" class="counter"><span>0 </span>Bones</section>
+        <section id="prodCounter" class="counter"><span>0.00 </span>Bones per second</section>
+        <section id="bonesPerClick" class="counter"><span>1.00 </span>Bones per click</section>
+        <!-- dog that you click for those sweet, sweet bones -->
+        <img src="img/excitedBoxerHead.png" class="dogo" />
+        <!-- bonus dog alert -->
+        <div class="bonusAlert"><span></span></div>
+        <!-- the bonus dog that appears randomly -->
+        <img src="img/lolDogMask.png" class="bonusDogo" alt="lol Dog Mask" />
+    </div>
+    <!-- center section that shows title and the number of bonuses if active -->
+    <div id="center" class="mainColumn">
+        <header id="newsHeader"><span>Fido's Bones</span></header>
+        <!-- the power ups -->
+        <div id="powerUpPhotos">
+            <div id="powerPawsPhotos" class="PUImages">Power Paws<br></div>
+            <div id="powerNosePhotos" class="PUImages">Power Nose<br></div>
+            <div id="terrorTailPhotos" class="PUImages">Terror Tail<br></div>
+            <div id="eagerEarsPhotos" class="PUImages">Eager Ears<br></div>
+            <div id="stomachOfSteelPhotos" class="PUImages">Stomach of Steel<br></div>
+        </div>
+    </div>
+    <div id="right" class="mainColumn">
+        <div id="miniPU">Coming Soon</div>  
+        <!-- buttons to buy power ups -->
+        <div id="powerPawsButton" class="powerUps">Power Paws - <span>10.00</span> Bones
+            <br><br>
+            <div>Boosts click value and bone production by 2%</div>
+        </div>
+        <div id="powerNoseButton" class="powerUps">Power Nose - <span>100.00</span> Bones
+            <br><br>
+            <div>Boosts click value and bone production by 4%</div>
+        </div>
+        <div id="terrorTailButton" class="powerUps">Terror Tail - <span>1,000.00</span> Bones
+            <br><br>
+            <div>Boosts click value and bone production by 6%</div>
+        </div>
+        <div id="eagerEarsButton" class="powerUps">Eager Ears - <span>10,000.00</span> Bones
+            <br><br>
+            <div>Boosts click value and bone production by 8%</div>
+        </div>
+        <div id="stomachOfSteelButton" class="powerUps">Stomach of Steel - <span>100,000.00</span> Bones
+            <br><br>
+            <div>Boosts click value and bone production by 10%</div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
