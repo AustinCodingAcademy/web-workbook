@@ -98,32 +98,41 @@ body {
 .hello {
   height: 60px;
   width: 60px;
-  animation: slide 1s ease-in;
+  animation: slide 1s linear;
+  animation-fill-mode: forwards;
+  color: white;
+  text-align: center;
+  font-size: 40px;
 }
 @keyframes slide {
   0% {
     background: red;
     opacity: 0;
     transform: translateX(-400px);
+    border-radius: 0;
   }
   25% {
     background: red;
-    opacity: 25%;
+    opacity: .25;
     transform: translateX(-300px);
+    border-radius: 50% 0 0 0;
   }
   50% {
     background: red;
-    opacity: 50%;
+    opacity: .50;
     transform: translateX(-200px);
+    border-radius: 50% 50% 0 0;
   }
   75% {
     background: red;
-    opacity: 75%;
+    opacity:.75;
     transform: translateX(-100px);
+    border-radius: 50% 50% 50% 0;
   }
   100% {
     background: red;
-    opacity: 100%;
+    opacity: 1;
     transform: translateX(0);
+    border-radius: 50% 50% 50% 50%
   }
 }
