@@ -39,7 +39,7 @@ $(document).ready(function() {
 
       damage = damage - charCost;
       updateCounter();
-      charCost = charCost + Math.round(charCost * 0.02);
+      charCost = charCost + Math.round(charCost * 0.1);
       updateCharacterCost();
       charCount = charCount + 1;
       $('#counter_1').text(charCount + '/80');
@@ -102,9 +102,13 @@ function reset(){
   damage = 0;
   charCount = 0;
   charCost = 10;
+  handCount= 0;
+  handCost = 100;
   minute = 9;
   sec = 59;
   timerInterval = setInterval(timer, 1000);
+  handInterval = 0;
+  finalInterval =0;
   $('#count').text(damage);
   $('#counter_1').text(charCount + '/80');
   $('#cost_1').text(charCost);
