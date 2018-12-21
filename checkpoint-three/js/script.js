@@ -32,7 +32,13 @@ $(document).ready(function(){
     $('#pepper').click(function(){
         data.totalCurrent++;
         updateReport();
+        // document.getElementById('pepper').style.animationPlayState = "running";
     });
+
+    $('#shaker').click(function(){
+        $('#shaker').effect('shake', {times:1, distance:10}, 100);
+        console.log('cool');
+    })
 
     // clicking one of the upgrades
     $('.button').click(function(){

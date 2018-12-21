@@ -51,9 +51,16 @@ p {
     cursor: pointer;
     transition: all .2s ease-in;
 }
+
 #pepper:hover {
-    animation: wiggleLarge 1500ms ease-in-out;
+    animation: wiggleLarge 1000ms ease-in-out; 
+    animation-iteration-count: infinite;
 }
+/* 
+#pepper:active {
+    animation: clickIn 100ms, clickOut 100ms 100ms;
+    animation-iteration-count: 1;
+} */
 
 
 #scovilles {
@@ -120,4 +127,13 @@ button:focus {
     0% {transform: rotate(-10deg) scale(1.1);}
     50% {transform: rotate(10deg) scale(1.1);}
     100% {transform: rotate(-10deg) scale(1.1);}
+}
+
+@keyframes clickIn {
+    100% {transform: scale(1.2);}
+}
+
+@keyframes clickOut {
+    0% {transform: scale(1.2)}
+    100% {transform: scale(1);}
 }
