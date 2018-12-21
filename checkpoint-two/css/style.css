@@ -17,13 +17,14 @@ h4 {
 
 main {
     width: 100%;
+    height: 579px;
     padding: 30px;
     border-radius: 5px;
     background-color: #a7a7a7;
 }
 
 .scrollbox {
-    height: 375px;
+    height: 400px;
     padding: 10px;
     background-color: gray;
     overflow: auto;
@@ -76,6 +77,23 @@ main {
     width: 100%;
 }
 
+.about {
+    grid-area: about;
+    background-color: #ffffff;
+}
+.about:after {
+    width: 50px;
+}
+
+.bio {
+    grid-area: about;
+    background-color: #c7f1ff;
+}
+.bio:after {
+    width: 83px;
+}
+
+
 .resume {
     grid-area: resume;
     background-color: #8fc6e6;
@@ -90,14 +108,6 @@ main {
 }
 .portfolio:after {
     width: 75px;
-}
-
-.about {
-    grid-area: about;
-    background-color: #c7f1ff;
-}
-.about:after {
-    width: 50px;
 }
 
 .contact {
@@ -170,6 +180,11 @@ nav a:hover:after, .active:after {
 }
 /* ^^link underline transition^^ */
 
+video {
+    width: 50%;
+    height: auto;
+  }
+
 
 @media (max-width: 784px) {
 
@@ -187,5 +202,11 @@ body {
 .nav-wrapper {
     display: flex;
 }
+
+video {
+    width: 100%;
+    height: auto;
+  }
+
 }
 
