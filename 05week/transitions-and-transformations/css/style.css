@@ -8,16 +8,25 @@
 body {
   width: 100%;
   height: 100%;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+  background-color: #ccc;
+  align-content: center;
 }
-#grid-container {
+#wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.grid-container {
   border: 1px solid peru;
   align-content: center;
   position: relative;
-  left: 400px;
+  display: inine-block;
 }
 .square {
   margin: .5em;
@@ -25,20 +34,22 @@ body {
   border-radius: 6px;
   box-shadow: 1px 1px 16px 0px black;
   color: white;
+  width: 50px;
+  height: 50px;
+  align-content: center;
  
 }
-.grid-container:nth-last-of-child(even) {
+/* .grid-container:nth-last-of-child(even) {
   animation: moveInLeft 2s ease-in-out;
   animation: roatate 1s ease;
-}
-.grid-container:hover .square:nth-last-of-type(even) {
-  transform: scale(2);
-}
+} */
+
 
 @keyframes moveInLeft {
   0% {
     opacity: 0;
     transform: translateX(-500);
+  
   }
   80% {
     transform: translateX(-50px)
@@ -49,8 +60,11 @@ body {
 }
 
 
-.grid-container:hover .square {
+.grid-container:hover .square:nth-of-type(odd) {
   transform: scale(.5)
+}
+.grid-container:hover .square:nth-of-type(even) {
+  transform: scale(2)
 }
 /* .square1 .square3:hover {
   transform: scale(2)
@@ -92,47 +106,101 @@ body {
   background: forestgreen;
 }
 #hello {
-  width: 50%;
-  float: left;
+  border: 2px solid white;
 }
 .hello {
+  border: 2px solid green;
   height: 60px;
   width: 60px;
-  animation: slide 1s linear;
+  animation: slide 2s linear;
   animation-fill-mode: forwards;
   color: white;
   text-align: center;
   font-size: 40px;
 }
+#hello:hover .hello:nth-of-type(2n) {
+  background: purple;
+  /* transform: scale(2); */
+}
+#hello:hover .hello:nth-of-type(odd) {
+  transform: scale(.5);
+}
 @keyframes slide {
   0% {
     background: red;
     opacity: 0;
-    transform: translateX(-400px);
+    transform: translateX(-400px) rotate(0deg);
     border-radius: 0;
   }
   25% {
     background: red;
-    opacity: .25;
-    transform: translateX(-300px);
+    opacity: 1;
+    transform: translateX(-300px) rotate(90deg);
     border-radius: 50% 0 0 0;
   }
   50% {
     background: red;
-    opacity: .50;
-    transform: translateX(-200px);
+    opacity: 2;
+    transform: translateX(-200px) rotate(180deg);
     border-radius: 50% 50% 0 0;
   }
   75% {
     background: red;
-    opacity:.75;
-    transform: translateX(-100px);
-    border-radius: 50% 50% 50% 0;
+    opacity: 3;
+    transform: translateX(-100px) rotate(270deg);
+    border-radius: 50% 50% 50% 0;    
   }
   100% {
     background: red;
-    opacity: 1;
-    transform: translateX(0);
-    border-radius: 50% 50% 50% 50%
+    opacity: 4;
+    transform: translateX(0) rotate(360deg);
+    border-radius: 50% 50% 50% 50%;
   }
+}
+/* #world {
+  border: 2px solid white
+} */
+.world {
+  height: 60px;
+  width: 60px;
+  animation: slide2 2s linear;
+  animation-fill-mode: forwards;
+  color: #ccc;
+  text-align: center;
+  font-size: 40px;
+  animation-delay: 2s;
+}
+@keyframes slide2 {
+  0% {
+    background: red;
+    opacity: 0;
+    transform: translateX(400px) rotate(0deg);
+    border-radius: 0;
+  }
+  25% {
+    background: red;
+    opacity: 1;
+    transform: translateX(300px) rotate(-90deg);
+    border-radius: 50% 0 0 0;
+  }
+  50% {
+    background: red;
+    opacity: 2;
+    transform: translateX(200px) rotate(-180deg);
+    border-radius: 50% 50% 0 0;
+  }
+  75% {
+    background: red;
+    opacity: 3;
+    transform: translateX(100px) rotate(-270deg);
+    border-radius: 50% 50% 50% 0;    
+  }
+  100% {
+    background: red;
+    opacity: 4;
+    transform: translateX(0) rotate(-360deg);
+    border-radius: 50% 50% 50% 50%;
+    color: white;
+  }
+
 }
