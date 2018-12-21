@@ -4,6 +4,7 @@ body {
 html, body {
     margin: 0; height: 100%; overflow: hidden
 }
+/* Grid Container */
 #container {
     background-image: url(/img/nightsky.jpg);
     background-size: 105%;
@@ -15,21 +16,48 @@ html, body {
     "column1 column2"
     "column3 column3"  
 ;}
-.column1 {
-    grid-area: column1;   
+.flame {
+    bottom: 0px;
+    left: 82px;
+    transform: rotate(-90deg);
+    animation: MoveUpDown2 3s linear infinite;
+    position: relative;
 }
-.column1 img{
+ /* Flame bob effect*/
+@keyframes MoveUpDown2 {
+    0%, 100% {
+      bottom: 705px;
+    }
+    50% {
+      bottom:725px;
+    }
+  }
+.rocket {
     margin-top: 40px;
     margin-left: 140px;
-    transform: rotate(-10deg);
+    animation: MoveUpDown 3s linear infinite;
+    position: relative;
+}
+/* Rocket Bob effect */
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 30px;
+    }
+    50% {
+      bottom: 50px;
+    }
+  }
+
+.column1 {
+    grid-area: column1;   
 }
 .column2 {
     grid-area: column2;
 }
+
 .speedometer {
     position: relative;
     top: 340px;
-    /* left: px; */
     color: red;
     font-size: 50px;
     width: 500px;
@@ -55,7 +83,7 @@ html, body {
     top:70px;
     z-index: 0;
 }
-/* Formatting & Placement of */
+/* Formatting & Placement of Buttons */
 .accelerate, .decrease, .emergencybrake {
     width: 50px;
     text-align: center;
@@ -70,6 +98,7 @@ html, body {
     left: 422px;
     bottom: 170px;
 }
+
 .emergencybrake {
     border: red 1px dashed;
     background-color: red;
@@ -107,6 +136,3 @@ html, body {
 .emergencybrake, .lightspeed, .turbo {
     font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
-/* div, img {
-    border: red 1px solid;
-} */
