@@ -1,1 +1,244 @@
+/* font-family: 'Major Mono Display', monospace; */
+/* font-family: 'Thasadith', sans-serif; */
+/* font-family: 'Quicksand', sans-serif; */
+
+
+
+
+
+body {
+    text-align: center;
+    font-family: 'Thasadith', sans-serif;
+}
+
+h1 {
+  font-size: 100px;
+  font-family: 'Major Mono Display', monospace;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.portrait {
+    border-radius: 50%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    right: 0;
+    position: fixed;
+    display: inline-block;
+    float: right;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    right: 0;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    right: 0;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.footercontainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  color: white;
+  text-align: left;
+}
+
+
+.flex projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.website {
+  display: inline-block;
+  width: 30%;
+  padding: 10px;
+}
+
+.website img {
+  max-width:100%;
+max-height:100%;
+}
+
+.app {
+  display: inline-block;
+  width: 30%;
+  padding: 10px;
+}
+
+.app img {
+  max-width:100%;
+max-height:100%;
+}
+
+.blog {
+  display: inline-block;
+  width: 30%;
+  padding: 10px;
+}
+
+.blog img {
+  max-width:100%;
+max-height:100%;
+}
+
+
+/* phone */
+
+@media (max-width: 749px)  {
+
+  .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 2fr 1fr 2fr 1fr .5fr;
+      grid-row-gap: 10px;
+      height: 2000px;
+    }
+    .grid {
+      background-color: #444;
+      color: #fff;
+      padding: 25px;
+    }
+    
+    .header {
+      grid-column: 1;
+      grid-row: 1;
+      background-color: #c7c7c7;
+    }
+    
+    .hero {
+      grid-column: 1;
+      grid-row: 2;
+      background-color: #898989;
+    }
+    
+    .content {
+      grid-column: 1;
+      grid-row: 3;
+      background-color: #9b87ad;
+    }
+    
+    .extra {
+      grid-column: 1;
+      grid-row: 4;
+      background-color: #c2c2c2;
+    }
+    
+    .footer {
+      grid-column: 1;
+      grid-row: 5;
+      background-color: #d5c9e2;
+    } 
+
+    h1 {
+      font-size: 70px;
+    }
+    
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+}
+
+
+/* desktop */
+
+@media (min-width: 750px) {
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 4fr 1.5fr 2fr 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+.grid {
+  background-color: #444;
+  color: #fff;
+  padding: 25px;
+}
+.header {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  background-image: linear-gradient(to bottom right, #ebebeb, #acacac);
+}
+
+.hero {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  background-color: #d5c9e2;
+}
+
+.content {
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+  min-height: 500px;
+  background-color: #c2c2c2;
+}
+
+.extra {
+  grid-column: 1/ 2;
+  grid-row: 3 / 4;
+  min-height: 200px;
+  background-color: #898989;
+}
+
+.footer {
+  grid-column: 1 / 4;
+  grid-row: 4 / 5;
+  background-color: #9b87ad;
+}  
+
+.footercontainer {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  color: white;
+  text-align: left;
+}
+
+.footercontent {
+  margin-left: 20px;
+}
+
+
+}
 
