@@ -1,35 +1,36 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  height: 400px;
+}
+
 [data-stack] {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  height: 101px;
-  background-color: aliceblue;
+  width: 34px;
   margin: 25px;
+  background: lightgrey;
 }
 
-[data-block] {
-  width: 25px;
-  float: left;
-}
 
 [data-block="25"] {
+  width: 100px;
   height: 25px;
-  background-color: blue;
+  background: blue;
 }
-
 [data-block="50"] {
   height: 50px;
-  background-color: green;
+  background: green;
 }
-
 [data-block="75"] {
   height: 75px;
-  background-color: red;
+  background: red;
 }
-
-[data-block="100"] {
+[data-block="100"]{
   height: 100px;
-  background-color: yellow;
+  background: yellow;
 }
 
 #announce-game-won {
