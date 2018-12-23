@@ -1,1 +1,34 @@
-
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Unicorn Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+<body>
+    <Header><h1>KNOCK OUT THE UNICORN</h1></Header>
+    <Main>
+        <div class="master">
+            <div class="container" id="one">
+                <img src="unicorn.jpg"  id="cabeza" onclick="changeimg(this)" onmouseover="this.src='unicorns.jpg'" onmouseout="this.src='unicorn.jpg'"/>
+            </div>
+            <div class="container" id="two">
+                <h2>Punch Count</h2><br>
+                <small>Punch Intensity: <span id="rps"></span></small>
+                <div id="currentTotal"></div>
+            </div>
+            <div class="container" id="three"><h3>Options</h3>
+                <div id="buttons">
+                    <div class="button" id="bone" data-val=".1" data-cost="10">Dudley - <span>10</span></div>
+                    <div class="button" id="btwo" data-val="1" data-cost="100">Mike Tyson - <span>100</span></div>
+                    <div class="button" id="bthree" data-val="10" data-cost="1000">Muhammad Ali - <span>1000</span></div>
+                </div>
+            </div>
+        </div>
+    </Main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/react.js"></script>
+</body>
+</html>

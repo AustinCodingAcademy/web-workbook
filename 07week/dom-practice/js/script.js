@@ -1,5 +1,6 @@
 'use strict';
 
 document.addEventListener("DOMContentLoaded", function(event) {
-  // You code here
+  function myFunction() {
+    alert("I am an alert box!");
 });
