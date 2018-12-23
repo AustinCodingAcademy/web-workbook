@@ -1,1 +1,151 @@
+body {
+    margin: 0px;
+}
 
+
+img {
+    float: none;
+    width:50%;
+    display:block;
+    margin:0 auto;
+    
+    }
+
+.grid-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1px;
+    grid-gap: 1em;
+    margin:10px;
+    
+
+}
+
+.grid-container > div {
+    background:lightgrey;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.box1 {
+    grid-column: span 2;
+}
+
+.box1 > img {
+    float: left;
+    width:30%;
+    padding:10px;
+}
+.box2 > img {
+    float: left;
+    width:30%;
+    padding:10px;
+}
+
+.box2 {
+    grid-column: span 2;
+}
+
+.box3 {
+    grid-column: span 2;
+}
+
+
+.box4-grid {
+    display:grid;
+    grid-column: span 2;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1px;
+    grid-gap: 1em;
+    
+}
+
+.box4-grid > div {
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.box-c {
+    grid-column: span 2;
+    
+
+}
+input[type="radio"] {
+    background-color: orangered;
+    
+
+}
+button {
+    background: orangered;
+    padding:1px 15px;
+    display:block;
+    border-style: none;
+    float:right;
+    font-size:20px;
+    color: orangered;
+}
+
+@media (max-width:600px) {
+    .grid-container {
+        grid-template-columns: auto;
+        grid-auto-rows: minmax(400px, auto);
+        padding:1px;
+    }
+
+    img {
+    float: none;
+    width:70%;
+    display:block;
+    margin:0 auto;
+    
+    }
+    
+    .box5, .box6, .box7, .box8 {
+        grid-column: span 2;
+    }
+}
+
+@media (min-width:576px) and (max-width:992px) {
+    .grid-container {
+        grid-template-columns: auto;
+        grid-auto-rows: minmax(400px, auto);
+    }
+    
+    .box1 {
+        grid-column: span 4;
+    } 
+    .box2, .box3, {
+        grid-column: span 2;
+    }
+    .box4-grid {
+        display: none;
+    }
+    .box5 {
+        grid-column: span 4;
+    }
+.box6, .box7, .box8 {
+    display: none;
+    align-items: center;
+}
+
+    img {
+        float: none;
+        width:50%;
+        display:block;
+        margin:0 auto;
+        
+        }
+
+
+ @media (min-width: 992px) {
+    .box1 > img {
+        float: left;
+        width:30%;
+        padding:10px;
+    }
+    .box2 > img {
+        float: left;
+        width:30%;
+        padding:10px;
+    }
+ 
