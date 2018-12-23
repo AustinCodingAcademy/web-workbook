@@ -1,0 +1,31 @@
+div {
+    border: 1px black solid;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-left: 50%;
+}
+
+div:nth-child(even) {
+    transition: width 5s, height 5s, transform 5s, margin-left 5s;
+}
+
+div:hover:nth-child(even) {
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    margin-left: 60%;
+}
+
+div:nth-child(odd) {
+    transition: width 1s, height 1s, transform 1s, margin-left 1s;
+}
+
+div:hover:nth-child(odd) {
+    width: 25px;
+    height: 25px;
+    transform: rotate(-45deg);
+    margin-left: 40%;
+}
+
+
