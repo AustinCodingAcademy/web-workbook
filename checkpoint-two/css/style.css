@@ -1,1 +1,145 @@
-
+*{box-sizing: border-box} 
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+body {
+    background-image: linear-gradient(to right, #c2e59c, #64b3f4);
+}
+header {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15%;
+    line-height: 3vw;
+    font-size: 5vw;
+    animation: 2s ease-out 1s 1 slideInFromLeft;
+}
+header h1 {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+}
+header h4{
+    letter-spacing: 5px;
+    font-size: 3vw;
+    padding-bottom: 35px;
+    color: rgb(255, 255, 255);
+}
+.border {
+    position: relative;
+    bottom: 50px;
+    border-bottom: 2px solid white;
+}
+/* 
+.portfolio = grid container
+ split into 3 columns 
+*/
+.portfolio {
+    display:grid;
+    grid-template-columns: 30% 50% 1fr;
+    grid-gap: 5px;
+    grid-template-areas:
+        "category1 info1"
+        "category2 info2"
+        "category3 info3"
+        "category4 info4";
+}
+.portfolio article {
+    display: flex;
+    flex-direction: column;
+}
+p, div {
+    font-size: 2vw;
+    margin: 1vw;
+    padding: 2px;
+    font-family: 'Prompt', sans-serif;
+}
+.info3 div {
+    margin-left: 4vw;
+}
+.info2 p, .info4 p {
+    text-indent: 2vw;
+}
+.category1 {
+    grid-area: category1;
+}
+.category2 {
+    grid-area: category2;
+}
+.category3 {
+    grid-area: category3;
+}
+.category4 {
+    grid-area: category4;
+}
+.info1 {
+    grid-area: info1;
+}
+.info2 {
+    grid-area: info2;
+}
+.info3 {
+    grid-area: info3;
+}
+.info4 {
+    grid-area: info4;
+}
+.gh{
+    position: relative;
+    top: 5px;
+}
+.category1, .category2, .category3, .category4 {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 3vw;
+    padding: 10px;
+    padding-bottom: 0px;
+    border-right: white 1px dashed;
+}
+.info1, .info2, .info3 {
+    border-bottom: white 1px dashed;
+}
+.info2, .info4 {
+    padding-left: 10px;
+}
+.fsuborder {
+    border-top: white 1px dashed;
+}
+span {
+    border-bottom: beige 2px solid;
+}
+@media (max-width: 576px) {
+.portfolio {
+    display:grid;
+    grid-template-columns: 95% 1fr;
+    grid-gap: 5px;
+    grid-template-areas:
+        "category1"
+        "info1"
+        "category2"
+        "info2"
+        "category3"
+        "info3"
+        "category4"
+        "info4";
+    padding: 0 10% 0 10%;
+    margin-top: 0px;
+    position: relative;
+    bottom: 30px;
+    }
+header h1 {
+    line-height: 8vw;
+    }
+.category1, .category2, .category3, .category4 {
+    border-right: white 0px dashed;
+}
+.info1, .info2, .info3 {
+    border-bottom: white 0px dashed;
+}
+.fsuborder {
+    border-top: white 0px dashed;
+}
+}
