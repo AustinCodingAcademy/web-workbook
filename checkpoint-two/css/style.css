@@ -1,1 +1,306 @@
+html {
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    margin: auto;
+}
+
+.container {
+    background-color: lightgray;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline  #328cc1;
+    padding: 5px;
+}
+
+.right {
+    border-left: 2px dotted black;
+}
+
+/* ICONS ICONS ICONS ICONS ICONS */
+
+/* HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER */
+
+header {
+    text-align: center;
+    height: 400px;
+    background-color: #0B3C5D;
+    padding: 20px;
+
+    -webkit-animation-name: header;
+    -webkit-animation-duration: 10s;
+    animation-name: header;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes header {
+    0% {background-color: #0B3C5D;}
+    25% {background-color: #0178B5}
+    75% {background-color: #23292D}
+    100% {background-color: #328cc1}
+}
+
+@keyframes header {
+    0% {background-color: #0178B5;}
+    25% {background-color: #23292D}
+    75% {background-color: skyblue}
+    100% {background-color: #0B3C5D}
+}
+
+h1 {
+    font-size: 80px;
+    margin-top: 100px;
+    color: white;
+}
+
+header p {
+    font-size: 42px;
+    color: #328CC1;
+}
+
+header button {
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+}
+
+.fa-linkedin {
+    background-color: #0178B5;
+    color: white;
+}
+
+.fa-github {
+    background-color: #23292D;
+    color: white;
+}
+
+header button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+/*GRID ---- GRID------ GRID------ GRID ----- GRID ----GRID */
+
+header {
+    grid-area: header;
+}
+
+#about_me {
+    grid-area: about_me;
+}
+
+#education {
+    grid-area: education;
+}
+
+#work {
+    grid-area: work;
+}
+
+#skills {
+    grid-area: skills;
+}
+
+#projects {
+    grid-area: projects;
+}
+
+#contact {
+    grid-area: contact;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    grid-template-areas:
+    "header header"
+    "contact about_me"
+    "education work"
+    "skills work"
+    "projects work"
+}
+
+
+/* CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT */
+
+#contact {
+    margin: 10px;
+    border-bottom: 1px solid black;
+}
+
+#contact span {
+    font-weight: bold;
+}
+
+#contact button {
+    width: 50px;
+}
+
+#contact button:hover {
+    opacity: .5;;
+    cursor: pointer;
+    
+}
+
+/* EDUCATION ---- EDUCATION ----- EDUCATION ----- EDUCATION ----- EDUCATION ---- EDUCATION */
+
+#education {
+    margin: 10px;
+    border-bottom: 1px solid black;
+}
+
+#education span {
+    font-weight: bold;
+}
+
+/* SKILLS ------ SKILLLS ------- SKILLLS ----- SKILLS ----- SKILLS ----- SKILLLS */
+
+#skills {
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+#skills li {
+    padding: 10px;
+}
+
+#skills ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+
+/* PROJECTS ------ PROJECTS ----- PROJECTS ------ PROJECTS ------ PROJECTS ----- PROJECTS */
+
+#projects {
+    margin: 10px;
+    padding: 10px;
+}
+
+#projects li {
+    padding: 10px;
+}
+
+#projects ul {
+    list-style-type: none;
+}
+
+/* ABOUT ME ---- ABOUT ME ---- ABOUT ME ----- ABOUT ME ---- ABOUT ME ---- ABOUT ME */
+
+#about_me {
+    margin: 15px;
+    padding: 20px;
+}
+
+/* WORK ----- WORK ----- WORK ---- WORK ----- WORK ---- WORK ---- WORK ---- */
+
+#work {
+    margin: 15px;
+    padding: 20px;
+}
+
+.employer {
+    font-weight: bold;
+}
+
+.position {
+    font-style: italic;
+
+}
+/* TABLET TABLET TABLET TABLET TABLET TABLET TABLET */
+
+@media (max-width: 1000px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        grid-template-areas:
+        "header header"
+        "about_me education"
+        "work work"
+        "skills projects"
+        "contact contact"
+    }
+
+    .right {
+        border-left: none;
+    }
+    #about_me {
+        border-right: 1px dotted black;
+        padding: none;
+        margin: 10px;
+    }
+
+    #work { 
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    #skills {
+        border-bottom: none;
+        border-right: 1px dotted black;
+    }
+
+    #education {
+        border: none;
+    }
+
+    #contact {
+        border-top: 1px solid black;
+        border-bottom: none;
+    }
+
+/*PHONE PHONE PHONE PHONE PHONE PHONE PHONE PHONE PHONHE */
+
+@media (max-width: 700px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        grid-template-areas: 
+        "header"
+        "about_me"
+        "education"
+        "work"
+        "skills"
+        "projects"
+        "contact"
+    }
+
+    body {
+    }
+
+    .header_buttons {
+        display: none;
+    }
+
+    header p {
+        display: none;
+    }
+
+    #about_me {
+        border-bottom: 1px solid black;
+        border-right: none;
+    }
+
+    #skills {
+        border-bottom: 1px solid black;
+        border-right: none;
+    }
+
+    #contact {
+        border-bottom: none;
+    }
+}
