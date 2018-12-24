@@ -24,16 +24,16 @@ Body {
     padding: 20px;
 }
 button {
-    border-radius: 5px;
+    border-radius: 1px;
     background-color: grey;
     color: white;
-    padding: 10px;
+    padding: 5px;
 
 }
 a {
     text-decoration: none;
     color: black;
-    font-size: 10px;
+    font-size: 15px;
 
 }
 a:visited {
@@ -45,9 +45,61 @@ a:visited {
     margin: 0;
     font-weight: bolder;
     
-    
+}
+.flexbox2 {
+	display: flex;
+
+	border: 10px solid green;
+	/* flex-wrap: wrap; */
 
 }
+.mobile-main {
+	display: inline-block;
+	justify-content: center;
+	align-content: center;
+}
+.mobile-main div {
+	display: inline-block;
+	flex-direction: row;
+	background-color: grey;
+	color: white;
+	font-size: 10px;
+	padding: 0;
+
+}
+.main-links {
+	border: 1px solid red;
+	display: inline-block;
+	width: 50%;
+	margin: 0;
+	color: white;
+	font-size: 15px;
+	/* padding: 10px; */
+	justify-content: stretch;
+
+}
+.social-media {
+	border: 1px solid black;
+	display: inline-block;
+	margin: 0;
+	/* padding: 10px; */
+	width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 600px) {
 .side-menu {
     display: none;
@@ -59,4 +111,12 @@ a:visited {
 .words h1 {
     font-size: 1.4em;
 }
+.mobile-main div {
+	/* display: inline-block; */
+}
+}
+@media only screen and (max-width:375px){
+	.mobile-main {
+		/* display: flex; */
+	}
 }
