@@ -1,1 +1,399 @@
 
+body {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "hd hd"
+                         "g1 g1"
+                         "g2 g2"
+                         "g4 g4";
+}
+
+.header {
+    grid-area: hd;
+}
+
+.group1 {
+    grid-area: g1;
+    display: flex;
+
+}
+
+.group2 {
+    grid-area: g2;
+    display: flex;
+
+}
+
+.group3 {
+    grid-area: g3;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70% 30%;
+    grid-template-areas: "box4 box5"
+                         "box6 box6";
+
+}
+
+.group4 {
+    grid-area: g4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.box {
+    border: 2px solid black;
+}
+.box1 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 60% 40%;
+    grid-template-areas: "a1 b1 b1"
+                         "a1 b1 b1"
+                         "a1 c1 d1"
+}
+
+.a1 {
+    grid-area: a1;
+}
+
+.b1 {
+    grid-area: b1;
+}
+
+.c1 {
+    grid-area: c1;
+}
+
+.d1 {
+    grid-area: d1;
+    font-size: 40px;
+}
+
+
+.box2 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 60% 40%;
+    grid-template-areas: "a2 b2 b2"
+                         "a2 b2 b2"
+                         "a2 c2 d2"
+}
+
+.a2 {
+    grid-area: a2;
+}
+
+.b2 {
+    grid-area: b2;
+}
+
+.c2 {
+    grid-area: c2;
+}
+
+.d2 {
+    grid-area: d2;
+    font-size: 40px;
+}
+
+.box3 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: "a3 a3"
+                         "b3 b3"
+                         "c3 d3";
+}
+
+.a3 {
+    grid-area: a3;
+}
+
+.b3 {
+    grid-area: b3;
+}
+
+.c3 {
+    grid-area: c3;
+}
+
+.d3 {
+    grid-area: d3;
+    font-size: 40px;
+}
+
+
+.box4 {
+    grid-area: box4;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: "a4 a4"
+                         "b4 b4"
+                         "c4 d4";
+}
+
+.a4 {
+    grid-area: a4;
+}
+
+.b4 {
+    grid-area: b4;
+}
+
+.c4 {
+    grid-area: c4;
+}
+
+.d4 {
+    grid-area: d4;
+    font-size: 40px;
+}
+
+.box5 {
+    display: grid;
+    grid-area: box5;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: "a5 a5"
+                         "b5 b5"
+                         "c5 d5";
+}
+
+.a5 {
+    grid-area: a5;
+}
+
+.b5 {
+    grid-area: b5;
+}
+
+.c5 {
+    grid-area: c5;
+}
+
+.d5 {
+    grid-area: d5;
+    font-size: 40px;
+}
+
+.box6 {
+    grid-area: box6;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 60% 40%;
+    grid-template-areas: "a6 b6 b6"
+                         "a6 b6 b6"
+                         "a6 c6 d6"
+}
+
+.a6 {
+    grid-area: a6;
+}
+
+.b6 {
+    grid-area: b6;
+}
+
+.c6 {
+    grid-area: c6;
+}
+
+.d6 {
+    grid-area: d6;
+    font-size: 40px;
+}
+
+.group4 > box {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: "aa aa"
+                         "bb bb"
+                         "cc dd";
+}
+
+.aa {
+    grid-area: aa;
+}
+
+.bb {
+    grid-area: bb;
+}
+
+.cc {
+    grid-area: cc;
+}
+
+.dd {
+    grid-area: dd;
+    font-size: 40px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    body {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "hr hr"
+                             "box1 box2"
+                             "box3 box4"
+                             "box5 box6"
+                             "box7 box8"
+                             "box9 box10"
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0840813c629c62b6bcbe993857aa81361c80cad6
+    }
+     .box {
+         background-color: lightpink;
+     }
+
+     
+
+
+
+
+@media (max-width: 768px) {
+    body {
+        display: grid;
+        grid-template-rows: 1fr;
+        /* grid-auto-rows: minmax (100px, auto); */
+        grid-template-areas:
+            "hr"
+            "box1"
+            "box2"
+            "box3"
+            ".box4"
+            ".box5"
+            ".box6"
+            ".box7"
+            ".box8"
+            ".box9"
+            ".box10"
+    }
+
+    .header {
+        grid-area: hr;
+    }
+
+    .box1 {
+        grid-area: box1;
+    }
+
+    .box2 {
+        grid-area: box2;
+    }
+
+    .box3 {
+        grid-area: box3;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .main-container {
+    display: grid;
+    grid-gap: 20px;
+    width: calc(100%-20px);
+}
+
+.main-container>div:nth-child(odd) {
+    background-color: beige;
+    padding: 10px;
+}
+
+.main-container>div:nth-child(even) {
+    background-color: blanchedalmond;
+    padding: 10px;
+}
+
+.header {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.box {
+    border: 1px solid black;
+    margin: 5px;
+} */
+
+/* .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    width: calc(100% - 20px);
+    grid-template-areas: 
+        "box1 box1 box2 box2"
+        "box3 box3 box4 box5"
+        "box3 box3 box6 box6"
+        "box7 box8 box9 box10"
+} */
+/* 
+.group1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.group2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.group3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-auto-rows: minmax (100px, auto);
+        grid-template-areas:
+            "box1"
+            "box2"
+            "box3"
+            "box4"
+            "box5"
+            "box6"
+            "box7"
+            "box8"
+            "box9"
+            "box10"
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+   .main-container {
+       display:grid;
+       grid-template-columns: 1fr 1fr;
+   }
+    .box {
+        background-color: lightpink;
+
+    }
+
+} */
