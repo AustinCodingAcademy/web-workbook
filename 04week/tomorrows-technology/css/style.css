@@ -30,11 +30,14 @@ button {
     padding: 5px;
 
 }
-a {
+.side-menu a {
     text-decoration: none;
     color: black;
     font-size: 15px;
 
+}
+.mobile-main a {
+	color: white;
 }
 a:visited {
     color: black;
@@ -44,18 +47,14 @@ a:visited {
     width: 30%;
     margin: 0;
     font-weight: bolder;
-    
+  
 }
 .flexbox2 {
 	display: flex;
-
-	border: 10px solid green;
-	/* flex-wrap: wrap; */
-
 }
 .mobile-main {
-	display: inline-block;
-	justify-content: center;
+	display: flex;
+	flex-direction: row;
 	align-content: center;
 }
 .mobile-main div {
@@ -65,42 +64,32 @@ a:visited {
 	color: white;
 	font-size: 10px;
 	padding: 0;
+	width: 50%;
 
 }
 .main-links {
 	border: 1px solid red;
 	display: inline-block;
-	width: 50%;
-	margin: 0;
+	width: 155px;
+	margin: auto;
+	/* height: 50px; */
 	color: white;
-	font-size: 15px;
-	/* padding: 10px; */
+	font-size: 20px;
+	/* padding: 40%; */
 	justify-content: stretch;
-
+	margin-left: 25px;
 }
 .social-media {
 	border: 1px solid black;
 	display: inline-block;
-	margin: 0;
-	/* padding: 10px; */
-	width: 50%;
+	margin: auto;
+	/* height: 50px; */
+	/* padding: 40%; */
+	width: 170px;
+	text-decoration-color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 .side-menu {
     display: none;
 }
@@ -118,5 +107,7 @@ a:visited {
 @media only screen and (max-width:375px){
 	.mobile-main {
 		/* display: flex; */
+
 	}
+
 }
