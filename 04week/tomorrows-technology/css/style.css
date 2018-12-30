@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Charmonman|Thasadith');
 Body { 
     height: 100%;
     width: 100%;
@@ -49,6 +50,11 @@ a:visited {
     font-weight: bolder;
   
 }
+p {
+	text-decoration: black;
+	font-size: 1.4em;
+	
+}
 .flexbox2 {
 	display: flex;
 }
@@ -64,29 +70,36 @@ a:visited {
 	color: white;
 	font-size: 10px;
 	padding: 0;
-	width: 50%;
+	width: 250px;
 
 }
 .main-links {
 	border: 1px solid red;
 	display: inline-block;
-	width: 155px;
+	width: 200px;
 	margin: auto;
-	/* height: 50px; */
+	height: 200px;
 	color: white;
 	font-size: 20px;
 	/* padding: 40%; */
-	justify-content: stretch;
+	text-align: center;
 	margin-left: 25px;
 }
 .social-media {
 	border: 1px solid black;
 	display: inline-block;
 	margin: auto;
-	/* height: 50px; */
+	height: 200px;
 	/* padding: 40%; */
-	width: 170px;
-	text-decoration-color: white;
+	width: 200px;
+	/* color: white; */
+	text-align: center;
+	font-family: 'Thasadith' sans-serif;
+}
+@media only screen and (max-width: 1300px) {
+	.mobile-main {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 700px) {
@@ -100,13 +113,11 @@ a:visited {
 .words h1 {
     font-size: 1.4em;
 }
-.mobile-main div {
-	/* display: inline-block; */
-}
 }
 @media only screen and (max-width:375px){
 	.mobile-main {
-		/* display: flex; */
+		display: row;
+		
 
 	}
 
