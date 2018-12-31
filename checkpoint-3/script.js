@@ -43,7 +43,7 @@ $(document).ready(function(){
       pupButtonShow = true;
       $(".powerup1").show();  
       $('#message-display').children('p').text("THAT WAS EASY");
-      $('#screen-1').toggle('#screen-1'); 
+      $('#screen-1').toggle(''); 
     } 
     if ((num1 >= 50 && num1 <=52)) {
       pupButtonShow = true;
