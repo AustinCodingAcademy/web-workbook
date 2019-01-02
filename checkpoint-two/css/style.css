@@ -1,184 +1,82 @@
-@import url('https://fonts.googleapis.com/css?family=Charm|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Questrial');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Acme', sans-serif;
+  font-family: 'Questrial', sans-serif;
 }
+/* font-family: 'Questrial', sans-serif; */
 body {
   width: 100%;
-  height: 100vh;
-  position: relative;
-  background-image: url(../set-of-classic-bright-geometric-patterns-vector-1799008.jpg);
-  background-size: cover;
-  background-position: center;
+  height: 100%;
 }
 header {
   width: 100%;
-  height: 10%;
-  background-color: yellow;
-  display: flex;
+  height: 5%;
+  background: red;
   text-align: center;
 }
-ul {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  color: white;
-  margin-top: 10px;
-  
-  
+nav {
+  width: 100%;
+  height: 10%;
+  background: yellow;
 }
-li {
+main {
+  width: 100%;
+}
+.left {
+  height: 60%;
+  width: 40%;
+  background: blue;
+  display: inline-block;
+  float: left;
+  color: white
+}
+.right {
+  height: 60%;
+  width: 100%;
+  background: yellow;
+}
+hr {
+  width: 100%;
   background: black;
-  border: 1px solid black;
-  height: 30px;
-  width: 30px;
-  font-size: 25px;
-  
-}
-li.amber {
-  animation: rollInLeft 3s linear ;
-  animation-fill-mode: forwards;
-}
-@keyframes rollInLeft {
-  0% {
-    transform: translate(-100px) rotate(0deg);
-    border-radius: 0;
-  }
-  25% {
-    transform: translate(-75px) rotate(90deg);
-    border-radius: 50% 0 0 0;
-  }
-  50% {
-    transform: translate(-50px) rotate(180deg);
-    border-radius: 50% 50% 0 0;
-  }
-  75% {
-    transform: translate(-25px) rotate(270deg);
-    border-radius: 50% 50% 50% 0;
-  }
-  100% {
-    transform: translate(0) rotate(360deg);
-    border-radius: 50% 50% 50% 50%;
-  }
-}
-li.jones {
-  animation: slideInRight 3s linear 2s;
-  animation-fill-mode: forwards;
-}
-@keyframes slideInRight {
-  0% {
-    transform: translate(100px);
-    opacity: .2;
-  }
-  25% {
-    transform: translate(75px);
-    opacity: .4;
-  }
-  50% {
-    transform: translate(50px);
-    opacity: .6;
-  }
-  75% {
-    transform: translate(25px);
-    opacity: .8;
-  }
-  100% {
-    transform: translate(0px);
-  }
+  height: 1em;
 }
 #grid-wrapper {
+  width: 100%;
+  height: 40%;
+  background: green;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  width: 100%;
-  height: 100%;
 }
-
+.box1 {
+  display: grid;
+  grid-area: box1;
+  grid-column: 2 / span 5;
+  grid-row: 2 / span 10;
+  background: orangered
+}
 .box2 {
   display: grid;
   grid-area: box2;
-  grid-column: 1 / span 4;
-  grid-row: 5 / span 2;
-  color: pink;
-  /* border: 2px solid yellow; */
-  font-size: 35px;
+  grid-column: 9 / -1;
+  grid-row: 2 / span 4;
+  background: orange;
+  border: 2px solid orangered
 }
-p.coding {
-  margin-top: 10px;
-  font-family: 'Charm', cursive;
-
-}
-
 .box3 {
   display: grid;
   grid-area: box3;
-  grid-column: 10 / -1;
-  grid-row: 5 / span 2;
-  color: pink;
-  font-size: 35px;
+  grid-column: 8 / 12;
+  grid-row:  6 / span 4;
+  background: orange;
+  border: 2px solid orangered;
 }
-p.girls {
-  margin-top: 10px;
-  font-family: 'Charm', cursive;
-}
-.box4 {
-  display: grid;
-  grid-area: box4;
-  grid-column: 4 / 9;
-  grid-row: 3 / 8;
-}
-img.box4 {
+footer {
   width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-.box5 {
-  display: grid;
-  grid-area: box5;
-  grid-column: 2 / span 10;
-  grid-row: 1;
-}
-hr.box5 {
-  width: 100%;
-  height: 50%;
-  background: pink;
-  margin-top: 10px;
-  border: 2px solid purple;
-  box-shadow: 0 0 4px 1px 
-}
-.box7 {
-  display: grid;
-  grid-area: box7;
-  grid-column: 2 / span 3;
-  grid-row: 8 / span 3;
-  background: linear-gradient(160deg,#d74848,#dc3e58,#e13267,#ca677f,#949b9e,#4cbbbf,#3ac7de,#00d3ff);;
-  transform: skew(20deg, 10deg);
-  border: 2px groove orangered
-}
-a.diagonal1 {
-  width: 100%;
-  color: yellow;
-}
-.box8 {
-  display: grid;
-  grid-area: box7;
-  grid-column: 9 / span 3;
-  grid-row: 8 / span 3;
-  background: linear-gradient(160deg,#ffeb00,#ffb820,#ff8748,#ff5e69,#dd4582,#a43f8e,#623e8a,#0c3776);;
-  transform: skew(-20deg, -10deg);
-  border: 2px groove orangered
-}
-a.diagonal2 {
-  width: 100%;
-  color: yellow;
-}
-@media(min-width:766 ) {
-  .box2 {
-    font-size: 60px;
-  }
-  .box8{
-    font-size: 40px;
-  }
+  height: 10%;
+  background: red;
+  color: white;
+  border: 2px solid black;
 }
