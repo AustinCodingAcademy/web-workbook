@@ -80,3 +80,39 @@ footer {
   color: white;
   border: 2px solid black;
 }
+aside {
+  display: none;
+}
+@media(min-width: 766px) {
+  aside {
+    display: inline;
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    background: purple;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow: scroll;
+    padding-top: 20px;
+    color: white;
+  }
+  .box2 {
+    display: grid;
+    grid-area: box2;
+    grid-column: 8 / span 3;
+    grid-row: 2 / span 4;
+    background: orange;
+    border: 2px solid orangered;
+    overflow: scroll
+  }
+  .box3 {
+    display: grid;
+    grid-area: box3;
+    grid-column: 8 / 12;
+    grid-row:  7 / span 4;
+    background: orange;
+    border: 2px solid orangered;
+    overflow: scroll;
+  }
+}
