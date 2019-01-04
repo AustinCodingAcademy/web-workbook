@@ -1,22 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Cantarell|Special+Elite');
+/* font-family: 'Special Elite', cursive;
+font-family: 'Cantarell', sans-serif; */
 *{
-  margin: 0px;
-  padding: 0px;
-  border: 0;
-  font-family: sans-serif;
-  
-  
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cantarell', sans-serif;
 }
 body {
-  background-image: url(https://png.pngtree.com/thumb_back/fw800/back_pic/03/60/62/4857a5f94f17876.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%; 
+  background-image: url(https://images.unsplash.com/photo-1545671652-7d674e3c4d1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60);
+
+}
+#grid-wrapper {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: 100px 20em 100px;
+  grid-gap: 1em;
+}
+header, aside, article, footer {
+  background: rgba(128, 0, 0, 0.589);
+  padding: 1em;
+  color: white;
+}
+header {
+  display: grid inline-block;
+  grid-area: header;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  border: 5px solid gray;
+}
+.header {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+p.header {
+  font-family: 'Special Elite', cursive;
+  align-self: center;
+  margin: 0 auto;
+  font-size: 40px;
+  display: inline-block;
+  padding
+}
+img.header {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  float: left;
+  border: 2px solid gray;
+  box-shadow: 0 7px 4px #777;
   
 }
-
-header {
+aside {
+  display: grid;
+  grid-area: aside;
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  padding: 0;
+  overflow: scroll
+}
+.aside {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center
+}
+h3 {
+  text-decoration: underline gray;
+  display: inline-block;
+  font-weight: 700
+}
+a {
+  color: red;
+  padding: 5px
+}
+a:visited {
+  color: red;
+}
+a:hover {
+  background: grey;
+}
+ol {
+  padding: 15px;
+  font-size: 10px;
+  text-align: left;
+  margin-left: 3px;
+}
+article {
+  display: grid;
+  grid-area: article;
+  grid-column: 3;
+  grid-row: 2;
+  padding: 0;
+  overflow: scroll;
+}
+.article {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+span {
+  color: gray;
+}
+img.article {
+  height: 40px;
+  width: 40px
+}
+footer {
+  display: grid;
+  grid-area: footer;
+  grid-column: 1 / -1;
+  grid-row: 3;
+}
+/* nav {
   background-color: rgb(66, 10, 197);
   color: yellow;
   width: 100%;
@@ -24,145 +127,47 @@ header {
   align-content: center;
   text-align: center;
   font-size: 30px;
+  position: relative;
 }
-  /* align-content: center;f
-  float: unset;
-  color: white;
-  text-align: center;
-  font-family: fantasy;
-  font-weight: 600; */
-header h1 {
-  font-family: cursive;
-  font-stretch: expanded;
-
-
-}
-section{
-  display: block;
+img.header {
   float: right;
-  width: 57%;
-  text-align: justify;
+  width: 15%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+main {
+  /* background-image: url(https://i.pinimg.com/originals/c1/6b/bd/c16bbdd16adb13a34217097dec26e93d.jpg); 
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#right {
+  width: 50%;
+  height: 100%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  color: white;
+  background: rgb(85, 4, 4);
+  border: 2px solid green;
+  text-align: center;
   
 }
-#section {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  /* border: 3px solid white; */
-  height: 100%;
-  padding-top: 10px;
-  padding-left: 30px;
-  border-top: 0;
-
-
-
-  /* background-image: url(https://2016.export.gov/texas/build/groups/public/@eg_us_tx/documents/webcontent/~export/eg_us_tx_019269~27~DCT_Center_Content_2col/340555-6.jpg);
-  top: 20px;
-  align-content: center;
-  position: fixed;
-  margin: 0;
-  display: block;
-  border: 10px solid green; 
-  text-align: center;
-  content: 100%;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  height: 460px;
-  Width: 810px;
-  padding-left: 300px;
-  margin-left: 550px;
-  margin-right: 0px;
-  line-break: 50px;
-  line-height: 30px;
-  text-emphasis: open; */
-
+p.info {
+  color: turquoise;  
 }
-
-a {
-  color: white;
-  font-size: 30px;
-  padding: 10px;
-  border: 10px;
+a.paradise {
+  margin-top: 80px;
+  font-weight: 800;
 }
 a:visited {
-  color: white;
-}
-p {
   color: yellow;
 }
 
-#section ul li {
-  border: 30px;
-  list-style: square;
-  font-weight: bold;
-  font-size: 30px;
-  text-align: center;
-  line-height: 200%;
-  color: rgb(239, 241, 99);
-
-
-}
-
-
-
-#sidebar {
-  /* position: static; */
-  display:block;
-  float: left;
-  text-align: center;
-  width: 40%;
-  height: 100%;
-  background-color: rgba(13, 118, 216, 0.685);
-  line-height: 100px;
-  padding: 0%;
-  margin-top: 0px;
-  font-size: 30px;
-
-  
-}
-#sidebar ol li {
-  border-top: 10px solid;
-  display: block;
-  
-}
-aside {
-  display: block;
-  color: white;
-}
-
-article {
-  display: block;
-  align-content: center;
-  padding: 1%;
-  
-}
-table {
-
-  display: inline-block;
-  background-color: rgba(255, 255, 0, 0.74);
-  height: 30%;
-  width: 100%;
-  font-size: 60px;
-  
-
-}
-table, th, td {
-  border: 3px solid purple;
-  align-content: center;
-  text-align: center;
-
-
-}
-
-footer {
-  align-content: center;
-  text-align: center;
-  border: 3 px solid red;
-}
-footer a {
-  color: blue;
-}
-footer a:visited {
-  color: blue;
-}
-
+ */
