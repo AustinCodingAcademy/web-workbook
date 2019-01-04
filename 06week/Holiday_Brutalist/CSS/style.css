@@ -149,13 +149,17 @@ hr.box5 {
   box-shadow: 0 0 4px 1px 
 }
 .box7 {
-  display: grid;
+  display: grid flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
   grid-area: box7;
   grid-column: 2 / span 3;
   grid-row: 8 / span 3;
   background: linear-gradient(160deg,#d74848,#dc3e58,#e13267,#ca677f,#949b9e,#4cbbbf,#3ac7de,#00d3ff);;
   transform: skew(20deg, 10deg);
-  border: 2px groove orangered
+  border: 2px groove orangered;
+  box-shadow: 0 0 4px white;
 }
 a.diagonal1 {
   width: 100%;
@@ -168,7 +172,9 @@ a.diagonal1 {
   grid-row: 8 / span 3;
   background: linear-gradient(160deg,#ffeb00,#ffb820,#ff8748,#ff5e69,#dd4582,#a43f8e,#623e8a,#0c3776);;
   transform: skew(-20deg, -10deg);
-  border: 2px groove orangered
+  border: 2px groove orangered;
+  box-shadow: 0 0 4px 1px white;
+  
 }
 a.diagonal2 {
   width: 100%;
