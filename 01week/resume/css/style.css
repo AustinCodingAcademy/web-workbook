@@ -144,55 +144,72 @@ img.footer {
   border: 2px solid darkgray;
   box-shadow: 0 7px 4px #777;;
 }
-/* nav {
-  background-color: rgb(66, 10, 197);
-  color: yellow;
-  width: 100%;
-  height: 18%;
-  align-content: center;
-  text-align: center;
-  font-size: 30px;
-  position: relative;
-}
-img.header {
-  float: right;
-  width: 15%;
-  height: 50%;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-main {
-  /* background-image: url(https://i.pinimg.com/originals/c1/6b/bd/c16bbdd16adb13a34217097dec26e93d.jpg); 
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-#right {
-  width: 50%;
-  height: 100%;
-  float: left;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  color: white;
-  background: rgb(85, 4, 4);
-  border: 2px solid green;
-  text-align: center;
+@media (min-width: 766px) {
+  #grid-wrapper {
+    display: grid;
+    grid-template-columns: 150px auto 300px;
+    grid-template-rows: 200px 35em 200px;
+    grid-gap: 3em;
+  }
+  p.header {
+    font-size: 120px;
+  }
+  p.phoneNumber {
+    font-size: 50px
+  }
+  aside {
+    padding: 0 10%;
+    font-size: 30px;
+  }
   
-}
-p.info {
-  color: turquoise;  
-}
-a.paradise {
-  margin-top: 80px;
-  font-weight: 800;
-}
-a:visited {
-  color: yellow;
-}
+  ol {
+    font-size: 25px !important;
+    line-height: 1.1;
+  }
+  article {
+    padding: 0 10%;
+    font-size: 30px;
+  }
+  footer {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  textarea {
+    height: 80px;
+    font-size: 25px;
+    font-weight: 800;
 
- */
+  }
+  button {
+    height: 30px;
+    font-size: 20px;
+    font-weight: 800;
+
+  }
+  img.footer {
+    height: 125px;
+    width: 180px;
+    margin-left: 4em
+  }
+}
+@media (min-width: 1000px) {
+  #grid-wrapper {
+    display: grid;
+    grid-template-columns: 50px auto 600px;
+    grid-template-rows: 200px 35em 200px;
+    grid-gap: 3em;
+  }
+  h3 {
+    font-size: 50px
+  }
+  article {
+    line-height: 2
+  }
+  img.article {
+    height: 160px;
+    width: 160px;
+  }
+  img.footer {
+    display: none;
+  }
+}
