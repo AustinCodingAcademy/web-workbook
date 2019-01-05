@@ -21,7 +21,6 @@ body {
 }
 header, aside, article, footer {
   background: rgba(128, 0, 0, 0.589);
-  padding: 1em;
   color: white;
 }
 header {
@@ -29,31 +28,24 @@ header {
   grid-area: header;
   grid-column: 1 / -1;
   grid-row: 1;
-  border: 5px solid gray;
+  padding: 10px;
+  text-align: center;
 }
 .header {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 0;
 }
 p.header {
   font-family: 'Special Elite', cursive;
-  align-self: center;
-  margin: 0 auto;
-  font-size: 40px;
+  font-size: 50px;
   display: inline-block;
-  padding
+  text-align: center;
 }
-img.header {
-  height: 40px;
-  width: 40px;
+
+p.phoneNumber {
+  text-align: center;
   display: inline-block;
-  float: left;
-  border: 2px solid gray;
-  box-shadow: 0 7px 4px #777;
-  
+  /* float: left */
 }
 aside {
   display: grid;
@@ -114,10 +106,43 @@ img.article {
   width: 40px
 }
 footer {
-  display: grid;
+  display: grid inline-block;
   grid-area: footer;
   grid-column: 1 / -1;
   grid-row: 3;
+  padding: 12px;
+}
+.textarea {
+  width: 50%;
+  float: left;
+}
+textarea {
+  width: 100%;
+  height: 40%;
+  font-size: 10px;
+  text-align: center;
+}
+button {
+  width: 100%;
+  background: grey;
+  border-radius: 25px;
+  margin-top: 5px;
+}
+.image {
+  width: 50%;
+  height: 100%;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  
+
+}
+img.footer {
+  height: 80%;
+  width: 60%;
+  border: 2px solid darkgray;
+  box-shadow: 0 7px 4px #777;;
 }
 /* nav {
   background-color: rgb(66, 10, 197);
