@@ -1,1 +1,149 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+.gridItem{
+  border: 3px solid black;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gridItem-1{
+  grid-area: name;
+  background-color: palevioletred;
+}
+.gridItem-2{
+  grid-area: nav;
+  background-color: lightblue;
+  
+}
+.gridItem-2 a:first-of-type{
+  color: #008080;
+}
+.gridItem-3{
+  grid-area: side1;
+  background-color: orange;
+}
+.gridItem-4{
+  grid-area: about;
+  background-color: pink;
+}
+.gridItem-5{
+  grid-area: side2;
+  background-color: teal;
+}
+.gridItem-6{
+  grid-area: my-work;
+  background-color: orchid;
+  justify-content: flex-start;
+}
+.gridItem-6 h2{
+  margin: 0 15;
+}
+.gridItem-7{
+  grid-area: proj1;
+  background-color: gold;
+}
+.gridItem-8{
+  grid-area: proj2;
+  background-color: plum;
+}
+.gridItem-9{
+  grid-area: proj3;
+  background-color: forestgreen;
+}
+.gridItem-10{
+  grid-area: proj4;
+  background-color: maroon;
+}
+.gridItem-11{
+  grid-area: proj5;
+  background-color: magenta;
+}
+.gridItem-12{
+  grid-area: contact;
+  background-color: cyan;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+@media (min-width: 320px){
+  .gridContainer{
+    margin: 0 10 0 10;
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% 50% 20% 50% 25% 25% 20%;
+    grid-template-areas: "name name"
+                        "nav nav"
+                        "about about"
+                        "my-work my-work"
+                        "proj1 proj1"
+                        "proj2 proj3"
+                        "proj4 proj5"
+                        "contact contact"
+                        
+  }
+  a{
+    margin: 10px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px){
+  .gridContainer{
+    margin: 0 10 0 10;
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 50% 20% 25% 25% 25% 20%;
+    grid-template-areas: "name name nav nav"
+                        "side1 about about side2"
+                        "my-work my-work my-work my-work"
+                        "proj1 proj1 proj2 proj2"
+                        "proj1 proj1 proj3 proj3"
+                        "proj4 proj4 proj5 proj5"
+                        "contact contact contact contact"
+                        
+  }
+  a{
+    font-size: 30px;
+  }
+}
+@media(min-width: 1025px){
+  .gridContainer{
+    margin: 0 15 0 15;
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 50% 20% 25% 25% 20%;
+    grid-template-areas: "name nav nav nav"
+                        "side1 about about side2"
+                        "my-work my-work my-work my-work"
+                        "proj1 proj1 proj2 proj3"
+                        "proj1 proj1 proj4 proj5"
+                        "contact contact contact contact"
+                        
+  }
+  .gridItem-2 a:hover{
+    color: #008080;
+  }
+  .gridItem-2{
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  a{
+    margin: 0 35;
+  }
+}
