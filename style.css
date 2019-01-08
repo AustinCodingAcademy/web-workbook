@@ -1,1 +1,54 @@
-/* You can style your links page here */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 4px solid black;
+  margin: 25px;
+  border-radius: 4px;
+}
+.weekly__projects {
+  /* border: 2px solid black; */
+  margin: 25px;
+}
+.week__overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-gap: 40px;
+}
+.week__item {
+  position: relative;
+  background: rgba(255, 255, 255, .03);
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 5px 10px 8px 10px #333;
+}
+/* display: block will prevent the iframe from scrolling */
+.item__overlay {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 300px;
+  width: 100%;
+  z-index: 20;
+}
+.project__meta {
+  padding: 20px;
+  background: #999;
+  display: flex;
+  justify-content: center;
+}
+.project__meta a {
+  text-decoration: none;
+  color: #fff;
+}
+iframe {
+  width: 100%;
+  height: 300px;
+}
