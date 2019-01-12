@@ -59,9 +59,7 @@ p {
 	display: flex;
 }
 .mobile-main {
-	display: flex;
-	flex-direction: row;
-	align-content: center;
+	visibility: hidden;
 }
 .mobile-main div {
 	display: inline-block;
@@ -71,10 +69,8 @@ p {
 	font-size: 10px;
 	padding: 0;
 	width: 250px;
-
 }
 .main-links {
-	border: 1px solid red;
 	display: inline-block;
 	width: 200px;
 	margin: auto;
@@ -86,23 +82,27 @@ p {
 	margin-left: 25px;
 }
 .social-media {
-	border: 1px solid black;
 	display: inline-block;
 	margin: auto;
 	height: 200px;
-	/* padding: 40%; */
-	width: 200px;
-	/* color: white; */
-	text-align: center;
-	font-family: 'Thasadith' sans-serif;
+	 padding: 40%;
+	 width: 200px;
+	 color: white; 
+	 text-align: center;
+	font-family: 'Thasadith' sans-serif;  
+	
 }
 @media only screen and (max-width: 1300px) {
-	.mobile-main {
-		display: none;
-	}
+
 }
 
 @media only screen and (max-width: 700px) {
+	.mobile-main{
+		visibility: visible;
+		display: flex;
+		flex-direction: row;
+		align-content: center;
+		}
 .side-menu {
     display: none;
 }
@@ -115,6 +115,12 @@ p {
 }
 }
 @media only screen and (max-width:375px){
+	.mobile-main{
+	visibility: visible;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	}
 	.mobile-main div {
 		display: inline-block;
 		flex-direction: row;
@@ -123,10 +129,8 @@ p {
 		font-size: 10px;
 		padding: 0;
 		width: 250px;
-	
 	}
 	.main-links {
-		border: 1px solid red;
 		display: inline-block;
 		width: 200px;
 		margin: auto;
@@ -138,7 +142,6 @@ p {
 		margin-left: 25px;
 	}
 	.social-media {
-		border: 1px solid black;
 		display: inline-block;
 		margin: auto;
 		height: 200px;
