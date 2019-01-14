@@ -53,17 +53,22 @@ nav {
   to { transform: rotate(360deg); }
 }
 a.nav1 {
-  color: red;
+  color: rgb(204, 7, 204);
   font-size: 3vh;
   padding: 4%;
-  /* position: absolute;
-  bottom: 1; */
+  text-decoration: none
+}
+a.nav1:visited {
+  color: aqua
 }
 a.nav2 {
-  color: red;
+  color: rgb(204, 7, 204);
   font-size: 3vh;
   padding: 4%;
-  
+  text-decoration: none;
+}
+a.nav1:active {
+  color: aqua
 }
 #hamburger {
   display: flex;
@@ -117,6 +122,7 @@ main {
   width: 100%;
 }
 .left {
+  background: hotpink;
   height: 60%;
   width: 40%;
   display: flex;
@@ -127,6 +133,8 @@ main {
   border: 5px solid blue;
   background-image: url(http://pngimg.com/uploads/barbwire/barbwire_PNG18866.png);
   background-size: contain;
+ 
+
 }
 #cards {
   width: 50%;
@@ -135,7 +143,7 @@ main {
   background: blue;
   box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -145,27 +153,68 @@ ul.cards {
 }
 li.cards {
   background: gray;
-  height: 3vh;
-  width: 3vh;
+  height: 4vh;
+  width: 4vh;
+  font-weight: 1000;
   border: 1px dotted pink;
-  animation: slideInLeft linear 6sec; 
+  /* animation: slideInLeft 6s linear;  */
+}
+li.cards:nth-of-type(even) {
+  color:pink;
 }
 @keyframes slideInLeft {
   0% {
-    transform: translate(-150px)
+    transform: translateX(-150px)
   }
   50% {
-    transform: translate(-50px)
+    transform: translateX(-50px)
   }
   100% {
-    transform: translate(0px)
+    transform: translateX(0px)
   }
+}
+a.github {
+  color: white;
+
+}
+a.github:visited {
+  color: white;
 }
 .right {
   height: 60%;
-  width: 100%;
+  width: 60%;
   background: rgb(231, 140, 170);
-
+  float: right;
+  padding: 5%
+}
+#rightbox {
+  width: 90%;
+  height: 80%;
+  background:rgb(46, 245, 245);
+  margin: auto;
+  border: 2px solid chartreuse;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  
+}
+nav.rightbox {
+  background: chartreuse;
+  height: 20%;
+}
+.leftbox {
+  width: 30%;
+  height: 100%;
+  background: rgb(187, 224, 20);
+  border-radius: 50%;
+}
+img.love {
+  width: 35%;
+  height: 100%;
+}
+#brutalism {
+  width: 100%;
+  height: 10%;
+  font-size: 3vh;
+  text-align: center;
 }
 hr {
   width: 100%;
@@ -189,7 +238,7 @@ hr {
   grid-area: box1;
   grid-column: 9 / -1;
   grid-row: 2 / -1;
-  border: 1px solid gray;
+  border: 2px solid orangered;
   background: pink;
 }
 img.box1 {
@@ -224,14 +273,15 @@ img.box3 {
   display: grid;
   grid-area: box4;
   grid-column: 1 / -1;
-  grid-row: 6 / 8;
-  font-family: 'B612', sans-serif;
+  grid-row: 5 / 8;
+  font-family: cursive;
+  /* font-family: 'B612', sans-serif; */
   color: white;
   text-align: center
 }
 p.box4 {
   font-weight: 800;
-  font-size: 4vh;
+  font-size: 7vh;
   transform: rotate(-30deg)
 }
 footer {
