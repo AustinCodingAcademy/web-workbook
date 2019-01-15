@@ -13,30 +13,43 @@
     <header class="site-header">
       <div class="header-top-bar">
         <h1 class="logo">
-          <a href="/">Neil Cho</a>
+          <a href="#">Neil Cho</a>
         </h1>
-        <!-- <button class="menu" type="buton"></button> -->
+        <button class="menu" type="button" onclick="openNav()">
+          <i class="fas fa-bars fa-3x"></i>
+          <span class="sr-only">Menu</span>
+        </button>
         <nav class="site-nav">
           <ul>
             <li>
-              <a href="/">Services</a>
+              <a href="#">Approach</a>
             </li>
             <li>
               <a href="https://neilcho.github.io/web-workbook/index.html">Portfolio</a>
             </li>
             <li>
-              <a href="/">Blog</a>
+              <a href="#">Blog</a>
             </li>
             <li>
-              <a href="/">About</a>
+              <a href="#">About</a>
             </li>
             <li>
-              <a href="/">Get in Touch</a>
+              <a href="#">Get in Touch</a>
             </li>
           </ul>
         </nav>
         <div class="menu-overlay"></div>
       </div>
+      <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="#">Approach</a>
+            <a href="https://neilcho.github.io/web-workbook/">Portfolio</a>
+            <a href="#">Blog</a>
+            <a href="#">About</a>
+            <a href="#">Get in Touch</a>
+          </div>
+        </div>
       <div class="page-title">
         <header>
           <h1>Front-end developer and wanna-be UX designer</h1>
@@ -46,7 +59,7 @@
       <div class="testimonial">
         <blockquote>
           <p>
-            "We really enjoyed working with Neil. He is very flexible and highly proactive. He listened to us and our needs very well and is very reliable".
+            "We really enjoyed working with Neil. He is eager to learn new things. He provided valuable feedbacks to improve the course".
           </p>
         </blockquote>
         <cite>ACA</cite>
@@ -73,7 +86,7 @@
                 I hope to work for a variety of clientele rangining from individuals and small 
                 business owners to large enterprises.
             </p>
-            <a href="/">Find out more about my skills and experience</a>
+            <a href="#">Find out more about my skills and experience</a>
           </article>  
             <figure>
               <img src="./img/me-resized.png" alt="Photo of Neil Cho">
@@ -88,8 +101,8 @@
           <article>
             <h1>My Approach to Coding</h1>
               <p>
-                  The digital services I offer range from UX and prototyping, 
-                  through designing user interfaces and responsive websites, to building websites.
+                  The approach I take to coding changes with increased knowledge and technical growth.
+                  But first step is to visualize and draw the wireframes of the envisioned website.
               </p>
               <p>
                   Do you need a prototype for your app or a live website? Do you have some 
@@ -123,7 +136,7 @@
             <p>
                 I create modern websites that use semantic markup and responsive design principles.
             </p>
-            <a href="/">Take a look at things I've done</a>
+            <a href="https://neilcho.github.io/web-workbook/">Take a look at things I've done</a>
           </article>
           <figure>
             <img src="./img/project-screenshot-colab-w800.jpg" alt="Project img">
@@ -137,28 +150,29 @@
           <h1>What I've been up to</h1>
           <ul class="blog-list">
             <li class="blog-post">
-              <a class="entry-image" href="/">
+              <a class="entry-image" href="#">
                 <img src="./img/idea.jpg" alt="Tips to enjoy CSS">
               </a>
               <article class="entry">
                 <h2>
-                  <a class="entry-title" href="/">Tips to enjoy CSS
+                  <a class="entry-title" href="#">Tips to enjoy CSS
                   </a>
                 </h2>
                 <div class="description entry-summary">
-                  <p></p>
-                </div>
                   <p>
                       There are lots of tips and pieces of advice around CSS that are available online. 
                       However, most of them are general and too broad for new coders to comprehend. 
                       There are many flexibilities with CSS and you often have countless solutions to a problem.
                       Let’s find ways to maximize ways to code your web-sites.
+                  </p>
+                </div> 
+                <p class="entry-published date">
                   <span>Published on</span>
                   <time class="dt-published" datetime="2019-01-08 12:28:00">
                     January 08, 2018
                   </time>
                   <span>in</span>
-                  <a class="category" href="/">
+                  <a class="category" href="#">
                   Events
                   </a>
                 </p>
@@ -176,7 +190,7 @@
             I am available for web-design contracts. Send me a message 
             if you would like to work with me.
           </p>
-          <a class="button-light" href="/">Get in touch</a>
+          <a class="button-light" href="#">Get in touch</a>
         </section>
       </div>
     </div>
@@ -196,5 +210,16 @@
         </small>
     </div>
   </footer>
+
+  <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+
 </body>
 </html>
