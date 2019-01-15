@@ -47,19 +47,31 @@ div[data-cell] {
   flex-direction: column;
   justify-content: flex-end;
 }
-
+#foot-container{
+    display:flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+footer {
+    margin: .5% 5% 0 5%;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1em;
+    letter-spacing: .08em;
+    width: 90%;
+}
 button {
-  margin-top: 1%;
-  background-color: white;
-  color: salmon;
-  text-align: center;
-  text-decoration: none;
-  width: 306px;
-  padding: .5em;
-  font-family: 'Amatic SC', cursive;
-  font-size: 1.5em;
-  font-weight: bold;
-  letter-spacing: .08em;
+    margin-top: 1%;
+    background-color: white;
+    color: salmon;
+    text-align: center;
+    text-decoration: none;
+    width: 306px;
+    padding: .5em;
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: .08em;
 }
 
 button:hover {
@@ -81,15 +93,21 @@ button:hover {
 }
 
 @media (max-width: 576px) {
-  header {
+    header {
     width: 304px;
     margin-bottom: 1%
-  }
+    }
 
-  #container{
+    #container{
     border: none;
     padding: 0;
     margin: 0;
     width: 100%;
-  }
+    }
+    #foot-container{
+        width: 304px;
+    }
+    footer {
+        margin: 1% 0;
+    }
 }
