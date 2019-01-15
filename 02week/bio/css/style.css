@@ -1,114 +1,103 @@
 *{
   font-family: 'Roboto', sans-serif;
-  
+  padding: o;
+  margin: 0;
+  box-sizing: border-box;
   }
- 
+  body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  img.body {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    image-rendering: auto;
+    z-index: -1;
+  }
   header {
-    /* background-color: red; */
     color: rgb(223, 20, 155);
     display: inline-block;
     position: relative;
     width: 100%;
-    padding: 0px;
-    margin: 0px;
+    height: 15%;
   }
   
   header h1 {
     display: inline;
-    font-size: 200px;
-    /* padding-top: 400px; */
+    font-size: 8vh;
     font-family: cursive;
-  
-  }
-  
+    text-shadow: 0 0 10px #FFFFFF, 11px 9px 6px #1C6EA4;  }
   img {
     float: right;
+    height: 100%;
+    width: 20%
   }
   main {
-    height: 100px;
-    width: 500px;
-    margin: 0%;
-    border: 0%;
-    display: inline-block;
-    /* background-image: url(https://s3.envato.com/files/57759146/preview.jpg); */
-  }
-  nav {
-    color: red;
-    font-weight: 300px;
-    display: inline-block;
-    align-content: center;
+    height: 100%;
     width: 100%;
-    background: rgba(255, 255, 255, 0.349);
-    
+    display: block;
   }
-  
+  section {
+    display: block;
+  }
+  #wrapper {
+    width: 50%;
+    height: 100%;
+    float: right;
+  }
+  ul {
+    color: rgb(0, 217, 255);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    float: right
+  }
+  li {
+    float: right;
+  }
+  a {
+    color: navy;
+  }
   a:visited {
     color: navy;
     padding: 15px;
   }
-  .wrapper {
-    align-content: center;
-    text-align: center;
-    /* float: unset; */
-    font-weight: 100px;
-    width: 100%;
-    display: inline;
-    /* background-color: red; */
-  }
-  .wrapper:hover {
-    background-color: white;
-  }
-  }
-  .wrapper ul {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    font-weight: 100px;
-  }
-  .wrapper ul li {
-    align-content: center;
-    display: inline-block;
-    font-weight: 100px;
-    padding: 0px;
-    width: 100%;
-  }
-  
-  body{
-    background-image: url(../css/fishing\ pic);
-    background-size: cover;
-  
-    
-  }
-  div {
-    background-color: rgba(255, 255, 255,0.4);
-    height: 100%;
-    width: 40%;
-    
-  }
-  
   article {
-   
-    /* background-color: red; */
-  
+    position: fixed;
+    bottom: 0;
+    height: 35%;
+    border: 4px solid royalblue;
+    background: rgba(255, 250, 250, 0.726);
+    overflow: scroll;
+    color: fuchsia;
+    box-shadow:0 0 20px navy;
   }
-  
-  
-  }
-    
-  }
-  h2 {
-    width: 100%;
-    margin-left: 60%;
-    align-content: center;
+  p.quote {
+    color: fuchsia;
+    font-weight: 900;
   }
   p {
-    width: 98%;
-    margin-right:50%;
-    float: left;
-    color: rgb(201, 18, 155);
-    font-weight: bold;
-    font-size: 30px;
-    text-align: justify;
-  
+    color: navy;
+    text-indent: 10px;
   }
-  
+@media(min-width: 766px) {
+  ul {
+    font-size: 2vh;
+  }
+}
+@media(min-width: 1000px) {
+  header {
+    height: 20%;
+  }
+  img {
+    widows: 10%;
+  }
+  p {
+    font-size: 2vh;
+  }
+  li {
+    margin-top: 10px;
+  }
+}
