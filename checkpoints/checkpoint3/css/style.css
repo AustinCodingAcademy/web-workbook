@@ -12,17 +12,17 @@ header {
 header h1 {
   font-family: 'Amatic SC', cursive;
   border: 1px solid black;
-  font-size: 3em;
+  font-size: 2em;
   padding: 1em 0;
   letter-spacing: .25em;
-  margin: 2% 5% 0 5%;
+  margin: .5% 2% 0 2%;
   text-align: center;
-  width: 90%;
+  width: 96%;
 }
 
 header p {
   text-align: justify;
-  margin: 2% 5%;
+  margin: 1% 2%;
   font-family: "Work Sans", sans-serif;
   font-size: 1em;
   letter-spacing: .08em;
@@ -32,25 +32,28 @@ header p {
 /* begin gameboard styling, setting up grid between header and gameboard */
 
 #gameboard {
-  height: 480px;
+  height: 400px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   border: 1px solid black;
-  margin: 0 5%;
+  margin: 0 2%;
   grid-area: play;
 
 }
 
 #container {
   width: 100%;
-  display: grid;
+  /*display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1.6fr .25fr;
+  grid-template-rows: .5fr 1.5fr .2fr;
   grid-template-areas:
   "head"
   "play"
-  "track";
+  "track";*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* syling the tower column */
@@ -61,7 +64,7 @@ header p {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  height: 80%;
+  height: 90%;
   width: 101px;
   background-color: lightgrey;
 
@@ -118,6 +121,12 @@ header p {
 
 }
 
+#tracker3{
+    cursor:pointer;
+}
+#tracker3:hover{
+    background-color: black;
+}
 
 /* styling for the trackers section, which includes both tracker boxes and their text */
 
@@ -134,6 +143,7 @@ header p {
   text-transform: lowercase;
   letter-spacing: .08em;
   height: 100%;
+  padding-top: 1%;
   /* border: 2px solid red; */
 }
 
@@ -159,7 +169,7 @@ header p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
+  /*margin-bottom: 1rem;*/
 }
 
 #reset:hover {
@@ -197,6 +207,13 @@ header p {
   border: 1px solid black;
 }
 
+footer {
+    margin: .5% 2%;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1em;
+    letter-spacing: .08em;
+}
+
 @media (min-width: 1400px){
   #container {
     width: 100%;
@@ -226,7 +243,7 @@ header p {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1.2fr .25fr;
+    grid-template-rows: .8fr 1.1fr .25fr;
     grid-template-areas:
     "head"
     "play"
@@ -234,7 +251,7 @@ header p {
   }
 
   #trackers {
-    margin: .5% 5%;
+    margin: .5% 2%;
     justify-content: space-between;
   }
 
