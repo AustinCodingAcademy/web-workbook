@@ -16,9 +16,10 @@ body {
 header {
   width: 100%;
   height: 8vh;
-  background: rgb(231, 140, 170);
+  background: salmon;
+  /* background: rgb(231, 140, 170);
   background-image: url(https://images.unsplash.com/photo-1524835391568-32c8f7016d73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
-  background-size: contain;
+  background-size: contain; */
   text-align: center;
   font-weight: 800;
   font-size: 3vh;
@@ -33,6 +34,9 @@ nav {
   width: 100%;
   height: 10%;
   background: rgb(231, 140, 170);
+  background: rgb(231, 140, 170);
+  background-image: url(https://images.unsplash.com/photo-1524835391568-32c8f7016d73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+  background-size: contain;
   color: white;
   border-top: 3px double white;
   display: flex;
@@ -44,7 +48,7 @@ nav {
   height: 50px;
   border: 2px solid red;
   border-radius: 50% 50%;
-  /* animation: spin 1s infinite linear; */
+  animation: spin 1s infinite linear;
   background: linear-gradient(160deg,#ea0d0d,#fa1588,#c46de1,#5c9fff,#00a6e3,#008d9c,#006e53,#204e17);
   margin-top: 
 }
@@ -53,22 +57,24 @@ nav {
   to { transform: rotate(360deg); }
 }
 a.nav1 {
-  color: rgb(204, 7, 204);
-  font-size: 3vh;
-  padding: 4%;
-  text-decoration: none
-}
-a.nav1:visited {
-  color: aqua
-}
-a.nav2 {
-  color: rgb(204, 7, 204);
+  color: salmon;
   font-size: 3vh;
   padding: 4%;
   text-decoration: none;
+  text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
 }
 a.nav1:visited {
-  color: aqua;
+  color: salmon;
+}
+a.nav2 {
+  color: salmon;
+  font-size: 3vh;
+  padding: 4%;
+  text-decoration: none;
+  text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5, 0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+}
+a.nav2:visited {
+  color: salmon;
 }
 #hamburger {
   display: flex;
@@ -165,7 +171,7 @@ li.cards {
   width: 4vh;
   font-weight: 1000;
   border: 1px dotted pink;
-  /* animation: slideInLeft 6s linear;  */
+  animation: slideInLeft 6s linear; 
 }
 li.cards:nth-of-type(even) {
   color:pink;
@@ -192,6 +198,9 @@ a.github:visited {
   height: 60%;
   width: 60%;
   background: rgb(231, 140, 170);
+  background: rgb(231, 140, 170);
+  background-image: url(https://images.unsplash.com/photo-1524835391568-32c8f7016d73?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+  background-size: contain;
   float: right;
   padding: 5%
 }
@@ -250,7 +259,6 @@ hr {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  grid-gap: 1em;
   background-image: url(https://images.unsplash.com/photo-1508610048659-a06b669e3321?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
   background-size: contain;
 
@@ -301,6 +309,53 @@ img.box3 {
   /* font-family: 'B612', sans-serif; */
   color: white;
   text-align: center
+}
+.box5 {
+  display: grid;
+  grid-area: box5;
+  grid-column: 2;
+  grid-row: 1 / -1;
+  border-right: 1px solid rgba(255, 255, 255, 0.39);
+  border-left: 1px solid rgba(255, 255, 255, 0.582);
+}
+.box6 {
+  display: grid;
+  grid-area: box6;
+  grid-column: 4;
+  grid-row: 1 / -1;
+  border-right: 1px solid rgba(255, 255, 255, 0.61);
+  border-left: 1px solid rgba(255, 255, 255, 0.582);
+}
+.box7 {
+  display: grid;
+  grid-area: box7;
+  grid-column: 6;
+  grid-row: 1 / -1;
+  border-right: 1px solid rgba(255, 255, 255, 0.61);
+  border-left: 1px solid rgba(255, 255, 255, 0.582);
+}
+.box8 {
+  display: grid;
+  grid-area: box8;
+  grid-column: 8;
+  grid-row: 1 / -1;
+  border-right: 1px solid rgba(255, 255, 255, 0.61);
+  border-left: 1px solid rgba(255, 255, 255, 0.582);
+}
+.box9 {
+  display: grid;
+  grid-area: box9;
+  grid-column: 10;
+  grid-row: 1 / -1;
+  border-right: 1px solid rgba(255, 255, 255, 0.61);
+  border-left: 1px solid rgba(255, 255, 255, 0.582);
+}
+.box10 {
+  display: grid;
+  grid-area: box10;
+  grid-column: 11;
+  grid-row: 1 / -1;
+  border-right: 1px solid rgba(255, 255, 255, 0.61);
 }
 p.box4 {
   font-weight: 800;
