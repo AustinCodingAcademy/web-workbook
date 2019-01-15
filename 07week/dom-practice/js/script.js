@@ -35,7 +35,7 @@ function addDiv(itemNum){
   parentDiv.appendChild(newDiv);
 
   var newButton = document.createElement("BUTTON");
-  var value = document.createTextNode("remove from cart");
+  var value = document.createTextNode("remove");
   newButton.setAttribute("onclick", "removeItem("+id+")")
   newButton.appendChild(value);
   parentDiv.appendChild(newButton);
