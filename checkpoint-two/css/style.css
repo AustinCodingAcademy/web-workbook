@@ -20,14 +20,11 @@ nav {
 h1 {
     text-align: center;
 }
-.parent-container {
-    display: inline-grid;
-    grid-template-columns: 100px 100px 100px 100px; 
-    grid-template-rows: auto;
-    height: 50%;
-    width: 50%;
-   
+.image-container {
+    background-color: aqua;
 }
+   
+
 
  .parent-container div {
     border: 1px solid black;
@@ -92,5 +89,30 @@ nav {
     flex-direction: row;
     list-style-type: none;
 }
+
+}
+@media screen and (max-device-width: 650px) {
+    .parent-container {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        color: rebeccapurple;
+    }
+    .home-container {
+        width: 100px;
+        height: auto;
+    }
+    .about-container {
+        width: 100px;
+        height: auto;
+    }
+    .resume-container {
+        width: 100px;
+        height: auto;
+    }
+    .contact-container {
+        width: 100px;
+        height: auto;
+    }
 
 }
