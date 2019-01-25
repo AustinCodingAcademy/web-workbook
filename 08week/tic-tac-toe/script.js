@@ -65,6 +65,7 @@ $(document).ready(function() {
   }
 
   function announceWinner (shape) {
+    $("body").prepend("<button id = 'playagain' onclick = 'window.location.reload()'>play again</button>")
     $("body").prepend("<div id = 'announcewin'></div");
     $("body").css("display", "flex");
     $("body").css("justify-content", "center");
@@ -74,19 +75,16 @@ $(document).ready(function() {
     $("#clear").hide();
     $("#container").hide();
 
-
     if (shape === 'X'){
       $("#announcewin").append("<span>X wins!!</span>")
 
     } else {
       $("#announcewin").append("<span>O wins!!</span>")
     }
-
-    $("body").append("<button id = 'playagain' onclick = 'window.location.reload()'>play again</button>")
-
   }
 
   function announceDraw(){
+    $("body").prepend("<button id = 'playagain' onclick = 'window.location.reload()'>play again</button>")
     $("body").prepend("<div id = 'announcewin'></div");
     $("body").css("display", "flex");
     $("body").css("justify-content", "center");
@@ -96,10 +94,7 @@ $(document).ready(function() {
     $("#clear").hide();
     $("#container").hide();
     $("#announcewin").append("<span>It's a draw!!</span>")
-    $("body").append("<button id = 'playagain' onclick = 'window.location.reload()'>play again</button>")
-
   }
-
 
   $("#clear").click(function() {
     $("[data-cell]").text("");
