@@ -1,38 +1,56 @@
-[data-stack] {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#wrapper {
+  border: 3px solid black;
+  width: 85vh;
+  height: 80vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.post {
+  width: 33%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+#col1 {
+  background: yellow;
+}
+#col2 {
+   background: orange;
+}
+#col3 {
+  background: plum;
+  float: right
+}
+
+ul.blocks {
+  position: absolute;
+  bottom: 0;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  height: 101px;
-  background-color: aliceblue;
-  margin: 25px;
+  list-style: none;
+  flex-direction: column;
 }
-
-[data-block] {
-  width: 25px;
-  float: left;
+#block1 {
+  width: 15px;
+  height: 20px;
+  background: red;
+  z-index: 30;
+  
 }
-
-[data-block="25"] {
-  height: 25px;
-  background-color: blue;
+#block2 {
+  width: 30px;
+  height: 20px;
+  background: green;
+  z-index: 30;
 }
-
-[data-block="50"] {
-  height: 50px;
-  background-color: green;
-}
-
-[data-block="75"] {
-  height: 75px;
-  background-color: red;
-}
-
-[data-block="100"] {
-  height: 100px;
-  background-color: yellow;
-}
-
-#announce-game-won {
-  font-size: 50px;
-  text-align: center;
-}
+#block3 {
+  width: 60px;
+  height: 20px;
+  background: blue;
+  z-index: 30;
+} 

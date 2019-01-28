@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Towers of Hanoi</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div data-stack="1">
-    <div data-block="100"></div>
-    <div data-block="75"></div>
-    <div data-block="50"></div>
-    <div data-block="25"></div>
+
+  <div id="wrapper">
+
+    <div data-stack="1" class="post" id="col1">
+
+      <div class="block" data-block="25" id="block1"></div>
+      <div class="block" data-block="50" id="block2"></div>
+      <div class="block" data-block="75" id="block3"></div>
+    </div>
+
+    <div data-stack= "2" class="post" id="col2"></div>
+
+    <div data-stack="3" class="post" id="col3"></div>
+
+
   </div>
-  <div data-stack="2">
-  </div>
-  <div data-stack="3">
-  </div>
-  <div id="announce-game-won"></div>
+ 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+    crossorigin="anonymous"></script>
   <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
