@@ -6,15 +6,14 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0.5% 0;
 }
 
 header h1 {
   font-family: 'Amatic SC', cursive;
   border: 1px solid black;
-  font-size: 2em;
-  padding: 1em 0;
-  letter-spacing: .25em;
+  font-size: 2rem;
+  padding: .75rem 0;
+  letter-spacing: .25rem;
   margin: .5% 2% 0 2%;
   text-align: center;
   width: 96%;
@@ -24,7 +23,7 @@ header p {
   text-align: justify;
   margin: 1% 2%;
   font-family: "Work Sans", sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   letter-spacing: .08em;
 }
 
@@ -32,7 +31,7 @@ header p {
 /* begin gameboard styling, setting up grid between header and gameboard */
 
 #gameboard {
-  height: 400px;
+  height: 45vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -43,17 +42,17 @@ header p {
 }
 
 #container {
-  width: 100%;
-  /*display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: .5fr 1.5fr .2fr;
+  height: 100vh;
+  width: 85%;
+  margin: 0 auto;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  display: grid;
   grid-template-areas:
   "head"
   "play"
-  "track";*/
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  "track";
 }
 
 /* syling the tower column */
@@ -106,15 +105,14 @@ header p {
 /* styling for all three towers, including their text */
 
 .stacks {
-  /* border: 2px solid red; */
-  /* text-align: center; */
+
   font-family: 'Amatic SC', cursive;
   font-size: 1em;
   font-weight: bold;
   text-transform: lowercase;
   letter-spacing: .08em;
   display: flex;
-  padding: 1.5rem;
+  padding: 1rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -133,7 +131,6 @@ header p {
 #trackers {
   grid-area: track;
   display: flex;
-  /* height: 80%; */
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
@@ -143,8 +140,6 @@ header p {
   text-transform: lowercase;
   letter-spacing: .08em;
   height: 100%;
-  padding-top: 1%;
-  /* border: 2px solid red; */
 }
 
 
@@ -158,7 +153,7 @@ header p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 2em;
+  font-size: 1.75rem;
   color: salmon;
 }
 
@@ -221,11 +216,13 @@ footer {
 }
 
 @media (max-width: 780px){
+  #gameboard{
+      height: 40vh;
+  }
   #container {
     width: 100%;
+    height:auto;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: .8fr 1.1fr .25fr;
     grid-template-areas:
     "head"
     "play"
@@ -259,7 +256,6 @@ footer {
   }
 
   header p {
-    font-size: .8em;
     margin: 1% 2%
   }
 
@@ -269,7 +265,7 @@ footer {
 
   .stacks {
     /* border: 2px solid red; */
-    padding: .5rem;
+    padding: .25rem;
 
   }
 
@@ -279,16 +275,5 @@ footer {
 
   #trackers {
     margin: 1% 2%;
-  }
-
-  #container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1.5fr .25fr;
-    grid-template-areas:
-    "head"
-    "play"
-    "track";
   }
 }
