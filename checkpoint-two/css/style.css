@@ -1,1 +1,493 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: black;
+}
 
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/*flex center class that I made in case I had to use these rules more than once*/
+.flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerBox {
+    top: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    animation: 2s ease-out 0s 1 slideInFromRight;
+
+}
+
+ul {
+    list-style-type: none;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 20px;
+    font-size: 20pt;
+}
+
+li {
+    margin: 20px;
+}
+
+/*slide animation for header on page load*/
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(5000%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*nav bar on scroll*/
+#menu {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 75px;
+    background-image: url(../assets/whatisspacet.jpg);
+    color: whitesmoke;
+    border-bottom: 2px solid #E6E6E6;
+    z-index: 9999;
+    display: none;
+    box-shadow: 0 0 18px black;
+}
+
+#menu h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30pt;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.altNavLinks {
+    display: none;
+}
+
+.logo {
+    width: 80px;
+    margin: 10px 0px 0px 20px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 24pt;
+    font-weight: 500;
+    color: whitesmoke;
+    text-shadow: 10px 10px solid black;
+}
+
+.pageTopTitle {
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    height: 650px;
+    width: 100%;
+    background-image: url(../assets/whatisspacet.jpg);
+}
+
+.title {
+    color: white;
+    font-size: 32pt;
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    animation: fadein 6s 2s forwards;
+}
+
+/*define fadein and fadeout animations*/
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+.bold {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 36pt;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px -2px 20px black;
+    margin-top: 650px;
+    padding: 12px 0px;
+    opacity: 0;
+    animation: fadein 6s 4s forwards;
+}
+
+/*anchor div with nonbreaking space for nav link header clearfix*/
+.anchor {
+    position: relative;
+}
+
+.anchor a {
+    position: absolute;
+    left: 0;
+    top: -78px;
+}
+
+/*begin portfolio content*/
+.folioBox {
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 12px 24px 12px 24px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 6px whitesmoke;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s ease;
+}
+/*bounce animation for portfolio box hover*/
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+.folioBox:hover, .folioBox:active {
+    animation: bounce 1s;
+}
+
+.projectHeader {
+    margin: 10px 0px;
+    font-size: 36pt;
+}
+
+.folioBox p {
+    margin: 10px 30px;
+    font-size: 14pt;
+}
+
+.folioBox > div {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    margin: 0px 10px;
+    box-shadow: 0px 0px 10px black;
+}
+
+/*images for portfolio projects*/
+.project1 {
+    background-image: url(../assets/space-advisor-website.jpg);
+}
+
+.project2 {
+    background-image: url(../assets/levenopmars.natgeotv_0007_1.jpg);
+}
+
+.project3 {
+    background-image: url(../assets/space-design.jpg);
+}
+
+.project4 {
+    background-image: url(../assets/space_travel_01.png);
+}
+
+/*begin contact section*/
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 40px;
+    color: whitesmoke;
+}
+
+.contact h1 {
+    text-align: center;
+    font-size: 36pt;
+    margin-bottom: 10px;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.contact p {
+    margin: 5px 0px;
+    font-size: 16pt;
+}
+
+.textbox {
+    height: 40px;
+    font-size: 16pt;
+    border: none;
+    border-radius: 2px;
+    padding: 0px 6px;
+}
+
+textarea {
+    font-size: 16pt;
+    resize: none;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    padding: 6px;
+}
+
+.submit {
+    height: 50px;
+    width: 200px;
+    margin: auto;
+    border: none;
+    border-radius: 2px;
+    font-size: 16pt;
+    font-weight: 500;
+    background-color: whitesmoke;
+}
+
+.submit:hover {
+    background: rgba(0,0,0,0);
+    color: whitesmoke;
+    box-shadow: inset 0 0 0 3px whitesmoke;
+}
+
+/* popup on contact submission */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+}
+.popup .popuptext {
+    visibility: hidden;
+    width: 400px;
+    background-color: red;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 0 10px whitesmoke;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -200px;
+}
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: red transparent transparent transparent;
+}
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadein 1s, fadeOut 1s 1s;
+    animation: fadein 1s, fadeOut 1s 4s forwards;
+}
+
+/* begin footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    position: sticky;
+    background-color: #E6E6E6;
+}
+
+.footerBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 140px;
+    width: 200px;
+    margin-left: 12px;
+}
+
+.footerBox > i {
+    display: none;
+}
+
+.footerBox a {
+    color: black;
+    text-align: right;
+}
+
+/*social media link buttons, called smallSocial because there used to be a wideSocial*/
+.smallSocial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-size: 42pt;
+}
+
+.fa-envelope {
+    color: #dd4b39;
+}
+
+.fa-facebook-square {
+    color: #3b5998;
+}
+
+.fa-linkedin-square {
+    color: #0976b4;
+}
+
+.fa-github-square {
+    color: #333;
+}
+
+/*icons enlarge on hover or active*/
+.icon {
+    transition: transform 1s;
+}
+
+.icon:hover, .fa:active {
+    transform: scale(1.3);
+}
+
+small {
+    color: whitesmoke;
+    font-size: 8pt;
+    margin-left: 10px;
+}
+
+/*media queries for responsive design*/
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+    #menu h1 {
+        text-align: left;
+        margin-left: 20px;
+        float: left;
+    }
+
+    .altNavLinks {
+        width: 300px;
+        margin: 20px 40px 0 0;
+        float: right;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 22pt;
+        font-weight: 600;
+    }
+
+    .logo {
+        font-size: 30pt;
+    }
+
+    ul {
+        font-size: 26pt;
+        margin-right: 60px;
+    }
+
+    .title {
+        font-size: 48pt;
+        margin-top: 100px;
+    }
+
+    .bold {
+        font-size: 50pt;
+    }
+
+    .footerBox {
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 14pt;
+    }
+
+    .footerBox > i {
+        display: block;
+        font-size: 24pt;
+        margin: 0px 5px;
+    }
+    
+    .address {
+        margin-right: 20px;
+    }
+
+    .smallSocial {
+        width: 400px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 56pt;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .logo {
+        width: 600px;
+        font-size: 36pt;
+    }
+
+    ul {
+        flex-direction: row;
+    }
+
+    .title {
+        font-size: 60pt;
+        width: 700px;
+    }
+
+    .bold {
+        font-size: 62pt;
+    }
+
+    .portfolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .contact {
+        width: 800px;
+        margin: auto;
+    }
+
+    .footerBox {
+        width: 500px;
+        font-size: 16pt;
+    }
+
+
+    .footerBox > i {
+        font-size: 42pt;
+        margin: 10px;
+    }
+
+    .smallSocial {
+        font-size: 64pt;
+    }
+}

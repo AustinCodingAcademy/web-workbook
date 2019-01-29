@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Customer Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="main.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Survey</h1>
+        <form action="" name="survey">
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" placeholder="Donnie">
+
+            <label for="lastname" name="lastname">Last Name:</label>
+            <input type="text" name="lastname" placeholder="Stark">
+
+            <div class="radio">
+                <label for="gender">Gender:</label>
+                <div class="male">
+                    <input type="radio" name="gender" value="male"><p>Male</p>
+                </div>
+                <div class="female">
+                    <input type="radio" name="gender" value="female"><p>Female</p>
+                </div>
+                <div class="noanswer">
+                    <input type="radio" name="gender" value="noanswer" checked><p>Prefer not to answer</p>
+                </div>
+            </div>
+
+            <label for="email">Email Address:</label>
+            <input type="email" name="email" placeholder="trashmansupreme@trash.com" required>
+
+            <div class="checkbox">
+                <input type="checkbox" name="ok">
+                <label for="ok">Add to email list?</label>
+            </div>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" minlength="6">
+
+            <label for="website">Website:</label>
+            <input type="url" name="website">
+            <div class="recommend">
+                <label for="slider">How likely are you to recommend this service?</label>
+                <input type="range" name="slider" class="slider" min="1" max="5" steps="1">
+                <div class="likely">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                </div>
+            </div>
+            <label for="comments">Comments:</label>
+            <textarea rows="10" type="text" name="comments"></textarea> 
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit Form</button>
+        </form>
+    </div>
+</body>
+</html>

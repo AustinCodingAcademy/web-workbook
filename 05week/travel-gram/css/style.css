@@ -1,1 +1,138 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px 10px 0px;
+}
+
+header h1 {
+    font-size: 30pt;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 16pt;
+}
+
+.box {
+    background-color: #ccc;
+    border: 1px solid #000;
+}
+
+.box1 {
+    grid-area: box1;
+}
+
+.box2 {
+    grid-area: box2;
+}
+
+.box3 {
+    grid-area: box3;
+}
+
+.box4 {
+    grid-area: box4;
+}
+
+.box5 {
+    grid-area: box5;
+}
+
+.box6 {
+    grid-area: box6;
+}
+
+.box7 {
+    grid-area: box7;
+}
+
+.box8 {
+    grid-area: box8;
+}
+
+.box9 {
+    grid-area: box9;
+}
+
+.box10 {
+    grid-area: box10;
+}
+
+.grid {
+    height: 2800px;
+    width: 200px;
+    display: grid;
+    margin: auto;
+    grid-gap: 20px;
+    grid-template-areas:
+        'box1'
+        'box2'
+        'box3'
+        'box4'
+        'box5'
+        'box6'
+        'box7'
+        'box8'
+        'box9'
+        'box10';
+}
+
+#desktop {
+    display: none;
+}
+
+#tablet {
+    display: none;
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+    .grid {
+        height: 800px;
+        width: 90%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr 2fr 1fr;
+        grid-template-areas:
+            'box1 box1'
+            'box2 box3'
+            'box4 box4';
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    #tablet {
+        display: initial;
+    }
+}
+
+@media (min-width: 992px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2fr 2fr 1fr 3fr;
+        grid-template-areas:
+            'box1 box1 box2 box2'
+            'box3 box3 box4 box5'
+            'box3 box3 box6 box6'
+            'box7 box8 box9 box10';
+    }
+
+    #tablet {
+        display: none;
+    }
+
+    #desktop {
+        display: initial;
+    }
+}

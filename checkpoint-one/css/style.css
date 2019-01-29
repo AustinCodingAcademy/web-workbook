@@ -1,1 +1,175 @@
+/* ----- flex container class ----- */
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+/* ----- general font class ----- */
+.noto {
+    font-family: Noto Sans, sans-serif;
+    color: whitesmoke;
+}
 
+body {
+    background: #0C0503;
+    background: -moz-radial-gradient(center, #0C0503 0%, #101113 49%, #202125 100%);
+    background: -webkit-radial-gradient(center, #0C0503 0%, #101113 49%, #202125 100%);
+    background: radial-gradient(ellipse at center, #0C0503 0%, #101113 49%, #202125 100%);
+}
+
+/* ----- top bar ----- */
+header {
+    position: sticky;
+    top: 0;
+    height: 185px;
+    width: 100%;
+    background-image: url(../img/header.jpg);
+    border-bottom: 2px double black;
+}
+
+.name {
+    margin-left: 40pt;
+    width: 33%;
+    color: whitesmoke;
+    font-size: 54pt;
+    text-shadow: 0px 0px 20px #0C0503;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.name:visited {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+a > span {
+    color: red;
+    font-size: 56pt;
+    font-weight: 900;
+}
+
+ul {
+    width: 300px;
+    font-size: 50px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.fa {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa-envelope {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa:hover {
+    box-shadow: 0px 0px 10px whitesmoke;
+}
+
+.switches {
+    height: 45px;
+    width: 200px;
+    margin-right: 45px;
+    margin-top: 50px;
+}
+
+.power, .standby {
+    text-align: justify;
+    width: 80px;
+    text-decoration: none;
+}
+
+.imglink {
+    display: block;
+    margin-top: 0px;
+    margin-left: 15px;
+}
+
+/* ----- content ----- */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.blurb {
+    margin: 20px;
+    height: 150px;
+    width: 85%;
+    font-size: 36pt;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+/* ----- reverb.com banner ----- */
+.reverb {
+    margin: 30px;
+    height: 65px;
+    box-shadow: 0px 0px 15px #101113;
+    margin-bottom: 120px;
+}
+
+#about {
+    width: 85%;
+    font-size: 20pt;
+}
+
+.anchor {
+    position: relative;
+}
+
+.anchor a {
+    position: absolute;
+    left: 0;
+    top: -180px;
+}
+
+#about h1 {
+    font-size: 26pt;
+    border-bottom: 1px solid whitesmoke;
+}
+
+#about ul li {
+    list-style-type: disc;
+    font-size: 20pt;
+}
+
+/* ----- gallery ----- */
+.images h1 {
+    font-size: 26pt;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 0px;
+    border-bottom: 1px solid whitesmoke;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>UX Atlantic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo.png">
+        <nav class="links">
+            <ul>
+                <li><a class="home" href="">Home</a></li>
+                <li><a class="deals" href="">Travel Deals</a></li>
+                <li><a class="schedule" href="">Flight Schedule</a></li>
+                <li><a class="login" href="">Register/Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form">
+            <div class="button">
+                <button type="button" class="flight" autofocus></button>
+                <button type="button" class="hotel"></button>
+                <button type="button" class="car"></button>
+            </div>
+            <div class="locations">
+                <input class="depart input" type="text" placeholder="Depart">
+                <input class="arrive input" type="text" placeholder="Arrive">
+            </div>
+            <div class="calendar">
+                <input class="leave input" type="date" placeholder="mm/dd/yyyy">
+                <input class="return input" type="date" placeholder="mm/dd/yyyy">
+            </div>
+            <div class="passengers">
+                <p>Passengers</p>
+                <select class="option" size="1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5+</option>
+                </select>
+                <input type="radio" name="ticket" id="return" value="return" checked="checked">
+                <label for="return">Return</label>
+                <input type="radio" name="ticket" id="oneWay" value="oneway">
+                <label for="oneway">One Way</label>
+            </div>
+            <div class="submit">
+                <button type="button" class="search">Search Flights</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

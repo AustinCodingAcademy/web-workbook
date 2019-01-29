@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pepper Pro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/hover-min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>How <span>hot</span> is your pepper?</h1>
+        <div id="shaker">
+            <img src="img/Red_Chili_Pepper_Transparent_PNG_Clip_Art_Image.png" id="pepper">
+        </div>
+        <p id="type"><span></span> Pepper</p>
+
+        <label for="scovilles" id="totalLabel">Scoville Heat Units:</label>
+        <div id="scovilles"></div>
+        <p><span id="perSecond"></span> SHU's every 2 seconds</p>
+        <div class="upgrades">
+            <div>
+                <button class="button hvr-fade" name="soil" data-val="1" data-cost="10">Upgrade Soil - <span>10</span></button>
+                <label for="soil">Upgrading soil will add <span>1</span> SHU every 2 seconds.</label>
+
+                <button class="button hvr-fade" name="water" data-val="6" data-cost="50">Optimize Water Schedule - <span>50</span></button> 
+                <label for="water">Upgrading water will add <span>6</span> SHU every 2 seconds.</label>
+
+                <button class="button hvr-fade" name="stress" data-val="13" data-cost="100">Stress Plant - <span>100</span></button>
+                <label for="stress">Stressing your plants will add <span>13</span> SHU every 2 seconds.</label>
+            </div>
+            <div class="researchDiv">
+                <button class="unlock hvr-fade" name="newpepper" data-val="100" data-cost="1000">Unlock New Pepper - <span>1000</span></button>
+                <label for="newpepper">Upgrading your pepper increases your SHU output by 15%!</label>
+
+                <button id="research" class="hvr-pulse" data-cost="5000">Pure Capsaicin - <span id="researchCost">5000</span></button>
+                <label for="research">Using Pure Capsaicin will double the Scoville Heat Units of all growing techniques.</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
