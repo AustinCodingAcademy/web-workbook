@@ -175,12 +175,11 @@ header p {
 
 #announcewin {
   width: 960px; /* Full width */
-  height: 960px;
+  height:480px;
+  max-height: 480px;
   background-image: url("https://media3.giphy.com/media/l0HlSDiA6WUytl9oA/giphy.gif");
   background-repeat: repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-size: contain;
 }
 
 #playagain {
@@ -189,6 +188,8 @@ header p {
   text-align: center;
   text-decoration: none;
   padding: .7em;
+  width: 100%;
+  max-width: 960px;
   font-family: 'Amatic SC', cursive;
   font-size: 1.8em;
   font-weight: bold;
@@ -208,10 +209,25 @@ footer {
     font-size: 1em;
     letter-spacing: .08em;
 }
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 
-@media (max-width: 950px){
+@media (max-width: 959px){
   #announcewin {
+    height: 70vh;
     width: 480px; /* Full width*/
+    background-size: cover;
+    background-position: center;
+
+
+  }
+  #playagain{
+    width: 100vh;
+    max-width:480px;
   }
 }
 
@@ -228,22 +244,9 @@ footer {
     "play"
     "track";
   }
-
   #trackers {
     margin: .5% 2%;
     justify-content: space-between;
-  }
-
-  #announcewin {
-    width: 100%; /* Full width */
-    height: 480px;
-    background-image: url("https://media3.giphy.com/media/l0HlSDiA6WUytl9oA/giphy.gif");
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
 

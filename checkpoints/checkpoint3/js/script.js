@@ -53,14 +53,15 @@ $(document).ready(function() {
                console.log("elseif statement ran. $size: " + $size + " $tower: " + $tower + " $previousBlock: " + $previousBlock);
                if ($size === 25 && $tower === 3 && $stack === 3) {
                  console.log("it's a win!")
-                 $("#container").prepend("<div id = 'announcewin'></div");
-                 $("#container").css("display", "flex");
-                 $("#container").css("justify-content", "center");
-                 $("#container").css("align-items", "center");
+                 $("body").prepend("<input id = 'playagain' type = 'button' value = 'PLAY AGAIN' onclick = 'window.location.reload()'></input>")
+                 $("body").prepend("<div id = 'announcewin'></div");
+                //  $("#container").css("display", "flex");
+                //  $("#container").css("flex-direction", "column");
+                //  $("#container").css("justify-content", "center");
+                //  $("#container").css("align-items", "center");
                  $("header").hide();
                  $("#gameboard").hide();
                  $("#trackers").hide();
-                 $("#announcewin").append("<input id = 'playagain' type = 'button' value = 'PLAY AGAIN' onclick = 'window.location.reload()'></input>")
                } else {
                  $block = null;
                }
@@ -200,14 +201,15 @@ $(document).ready(function() {
               console.log("check for wins was called");
               if (currentSize === 25 && towerNumber === 3 && stackLength === 4) {
                 console.log("it's a win!");
-                $("#container").prepend("<div id = 'announcewin'></div");
-                $("#container").css("display", "flex");
-                $("#container").css("justify-content", "center");
-                $("#container").css("align-items", "center");
+                $("body").prepend("<input id = 'playagain' type = 'button' value = 'PLAY AGAIN' onclick = 'window.location.reload()'></input>")
+                $("body").prepend("<div id = 'announcewin'></div");
+               //  $("#container").css("display", "flex");
+               //  $("#container").css("flex-direction", "column");
+               //  $("#container").css("justify-content", "center");
+               //  $("#container").css("align-items", "center");
                 $("header").hide();
                 $("#gameboard").hide();
                 $("#trackers").hide();
-                $("#announcewin").append("<input id = 'playagain' type = 'button' value = 'PLAY AGAIN' onclick = 'window.location.reload()'></input>")
               }
             }
       }
