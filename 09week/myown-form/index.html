@@ -9,7 +9,7 @@
 <body>
 
   <nav>
-    <img src="https://cdn3.iconfinder.com/data/icons/logistics/256/Customer_Support-512.png" alt="icon" class="nav">
+    <!-- <img src="https://cdn3.iconfinder.com/data/icons/logistics/256/Customer_Support-512.png" alt="icon" class="nav"> -->
     <p class="nav"> Sign Up For Free Trial! </p>
   </nav>
   <main>
@@ -38,7 +38,7 @@
       </div>  
       <div class="emails">
         <label for="email">Email</label>
-        <br>
+        
         <input type="email" name="email" id="email" placeholder="ambie.j210@gmail.com">
         <br>
         <label for="password">Password</label>
@@ -60,5 +60,17 @@
     </div>
 
   </main>
+  <script>
+  const inputs = document.querySelectorAll("#controls input")
+  const  button = document.querySelector('.submit')
+  console.log(button)
+  function handleUpdate() {
+    const suffix = this.dataset.sizing || '';
+    document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix)
+  }
+  inputs.forEach(input => input.addEventListener('change', handleUpdate));
+
+  button.addEventListener('change', handleUpdate)
+  </script>
 </body>
 </html>
