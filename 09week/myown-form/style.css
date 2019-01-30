@@ -5,15 +5,6 @@
 }
 header {
   width: 100%;
-  height: 10vh;
-  background: aqua;
-  color: navy;
-  text-align: center;
-  font-size: 5vh;
-
-}
-nav {
-  width: 100%;
   height: 15vh;
   background: #1d2731;
   display: flex;
@@ -23,8 +14,16 @@ nav {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   
 }
-p.nav {
-  margin-left: 20px;
+nav {
+  width: 100%;
+  height: 20%;
+  background: #ffbb39;
+  display: none;
+}
+#controls {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
 }
 main {
   background: #083c5d;
@@ -52,7 +51,7 @@ main {
   height: auto;
   align-self: center;
   padding: var(--spacing);
-  filter: blur(var(--blur))
+  filter: blur(var(--blur));
 }
 .submit {
   
@@ -64,12 +63,13 @@ main {
 #spacing {
   color: black;
 }
-#controls {
-  width: 100%;
-  height: 20%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-self: center;
-  background: #ffbb39;
+@media(min-width: 1024px) {
+  nav {
+    display: flex;
+    font-size: 5vh;
+    justify-content: center;
+    text-align: center;
+    
+  }
+
 }

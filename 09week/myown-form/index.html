@@ -8,11 +8,10 @@
 </head>
 <body>
 
-  <nav>
-    <!-- <img src="https://cdn3.iconfinder.com/data/icons/logistics/256/Customer_Support-512.png" alt="icon" class="nav"> -->
+  <header>
     <p class="nav"> Sign Up For Free Trial! </p>
-  </nav>
-  <main>
+  </header>
+  <nav>
       <div id="controls">
           <label for="spacing">Spacing:</label>
           <input type="range" name="spacing" id="spacing" min="10" max="200" value="10" data-sizing="px">
@@ -23,11 +22,12 @@
           <label for="base">Base Color:</label>
           <input type="color" name="base" id="base"  value="#ffbb39">
         </div>
-
+  </nav>
+  <main>
         
 
     <div id="form-container">
-      <div class="form">
+      <form class="form" name="signUp">
       <div class="names">
       <label for="firstName">FirstName</label>
       <input type="text" name="firstName" id="name" placeholder="Amber">
@@ -56,10 +56,15 @@
         <button class="submit" type="submit">Submit</button>
       </div>
   
-    </div>
+    </form>
     </div>
 
   </main>
+  <script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+  <script src="./script.js"></script>
+
+
   <script>
   const inputs = document.querySelectorAll("#controls input")
   const  button = document.querySelector('.submit')
@@ -70,7 +75,6 @@
   }
   inputs.forEach(input => input.addEventListener('change', handleUpdate));
 
-  button.addEventListener('change', handleUpdate)
   </script>
 </body>
 </html>
