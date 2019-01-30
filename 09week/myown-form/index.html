@@ -7,34 +7,58 @@
   <title>Amber Form</title>
 </head>
 <body>
-  <header>Satisfaction Garunteed</header>
+
   <nav>
     <img src="https://cdn3.iconfinder.com/data/icons/logistics/256/Customer_Support-512.png" alt="icon" class="nav">
-    Sign Up For Free Trial!
+    <p class="nav"> Sign Up For Free Trial! </p>
   </nav>
   <main>
+      <div id="controls">
+          <label for="spacing">Spacing:</label>
+          <input type="range" name="spacing" id="spacing" min="10" max="200" value="10" data-sizing="px">
+    
+          <label for="blur">Blur:</label>
+          <input type="range" name="blur" id="blur" min="0" max="25" data-sizing="px">
+    
+          <label for="base">Base Color:</label>
+          <input type="color" name="base" id="base"  value="#ffbb39">
+        </div>
+
+        
+
     <div id="form-container">
+      <div class="form">
       <div class="names">
-      <label for="firstName">Name</label>
+      <label for="firstName">FirstName</label>
       <input type="text" name="firstName" id="name" placeholder="Amber">
+      <br>
+  
       <label for="lastName">LastName</label>
       <input type="text" name="lastName" id="lastName" placeholder="Jones">
       </div>  
       <div class="emails">
         <label for="email">Email</label>
+        <br>
         <input type="email" name="email" id="email" placeholder="ambie.j210@gmail.com">
+        <br>
         <label for="password">Password</label>
         <input type="password" name="password" id="password" placeholder="••••••">
       </div>
       <div class="website">
         <label for="website">Personal Website</label>
         <input type="url" name="website" id="website" placeholder="gitHub.com">
+        <br>
         <label for="yes">Yes</label>
         <input type="radio" name="yes" id="yes">
         <label for="no">No</label>
         <input type="radio" name="no" id="no">
+        <br>
+        <button class="submit" type="submit">Submit</button>
       </div>
+  
     </div>
+    </div>
+
   </main>
 </body>
 </html>
