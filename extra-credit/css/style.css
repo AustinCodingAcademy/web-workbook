@@ -1,0 +1,117 @@
+
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1476136236990-838240be4859?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+nav {
+    
+    /* overflow: hidden; */
+    
+   
+} 
+ul  {
+    padding: 20px;
+    word-break: normal;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    text-align: center;
+  
+}
+
+li a {
+    display: inline;
+    text-align: center;
+    padding: 100px;
+    text-decoration: none;
+    font-size: 2.5em;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+} 
+li a:hover {
+    color: black;
+}
+
+
+.main-flex-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: table;
+    
+}
+.parent-container {
+    height: 200px;
+    width: 300px;
+    border: 1px solid red;
+    background-color: rgba(8, 7, 7, 0.356);
+    color: whitesmoke;
+    padding-left: 30px;
+    align-items: center;
+    float: right;
+    position: absolute;
+    margin: 30px;
+  /* background-color: #ffffff; */
+    /* opacity: 0.6; */
+}
+
+
+
+
+
+
+@media screen and (max-device-width: 1400px) {
+
+    .parent-container {
+        border: 1px solid black;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        
+
+    }
+    nav {
+        border: 1px solid red;
+        height: 100px;
+        width: 100%; 
+        text-align: center;
+        justify-content: center;
+        list-style-type: none;
+        text-align: center;
+        padding: 30px;
+        font-size: 25px;
+        background-color: rgb(85, 3, 3);
+    
+    }
+     ul  {
+        padding: 20px;
+        word-break: normal;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+    }
+    li a {
+        display: inline;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+        color: white;
+    }
+    }
+    @media screen and (max-device-width: 550px) {
+        .parent-container {
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            color: rebeccapurple;
+        }
+        
+    
+    }
