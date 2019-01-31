@@ -1,0 +1,42 @@
+.grid-parent {
+  display: grid;
+  grid-template: 2fr;
+  grid-template-areas:
+  "hdr hdr hdr"
+  "nbar nbar nbar"
+  "sct asde"
+  "sct asde"
+  "art asde"
+  "ftr ftr";
+}
+
+.grid-child {
+  margin: 5px;
+  border: 1px solid #333333;
+  background-color: #eeeeee;
+  padding: 10px;
+}
+
+header {
+  grid-area: hdr;
+}
+
+nav {
+  grid-area: nbar;
+}
+
+section {
+  grid-area: sct;
+}
+
+aside {
+  grid-area: asde;
+}
+
+article {
+  grid-area: art;
+}
+
+footer {
+  grid-area: ftr;
+}

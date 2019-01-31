@@ -1,5 +1,5 @@
 body {
-  font-family: "Arial";
+  font-family: "HelveticaCondensed", Arial, sans-serif;
 }
 
 header {
@@ -20,6 +20,7 @@ header {
   display: flex;
   font-size: 22px;
   color: #085950;
+  font-weight: bold;
 }
 
 img {
@@ -54,11 +55,43 @@ ul {
 li {
   margin: 10px 20px;
   text-transform: uppercase;
-  font-family: sans-serif;
   display: flex;
   font-size: 12px;
+  font-weight: bold;
 }
+
+a {
+  text-decoration: none;
+}
+
+a, a:link {
+  color: #7D7D7D;
+}
+
+a:hover {
+  color: #6B6B6B;
+}
+
+#live {
+  background-color: #169B7C;
+  border-radius: 15%;
+  padding: 4px;
+  animation-name: live;
+  animation: 2s infinite live;
+}
+
+@keyframes live {
+  0% {opacity: 1}
+  50% {opacity: .2}
+  100% {opacity: 1}
+}
+
+#live2 {
+  color: white;
+}
+
 /*now showing header start*/
+
 #header {
   display: flex;
   width: 1130px;
@@ -69,6 +102,7 @@ li {
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 35px;
 }
 
 div {
@@ -101,7 +135,7 @@ div {
 }
 /*now showing header end*/
 p {
-
+ font-size: 14px;
 }
 
 #film {
@@ -170,7 +204,6 @@ h5 {
 h2 {
   font-size: 34px;
   font-weight: bold;
-  font-family: sans-serif;
   color: white;
 }
 
@@ -183,6 +216,7 @@ h3 {
 h4 {
   font-size: 14px;
   color: white;
+  margin-bottom: 10px;
 }
 
 .specials {
