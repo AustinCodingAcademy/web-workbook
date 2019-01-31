@@ -3,14 +3,14 @@
 $(document).ready(function() {
   // targets first child (first data-block div in #dropArea parent div) in stack parent element
   let topBlock = $('[data-block]:first-child');
-  // adds a class to movable to all first child elements
+  // adds a class to movable to all first child (top) elements
   topBlock.addClass('movable');
   // give all elements with draggable class revert property at start
   $('.draggable').draggable({
       revert: true
   });
   // move counter to be incremented with each successful (non-reverted) move
-  let count = 0;
+  let moveCount = 0;
   // elements with with these classes, give droppable property with following logic...
   $('#dropArea1, #dropArea2, #dropArea3').droppable({
     // accept is a droppable atribute/property that takes an identifier as a string
@@ -19,15 +19,15 @@ $(document).ready(function() {
     // drop attribute of draggable takes a function
     // this is the place to put drop function that defines drop logic
     drop: function (event, ui){
-      console.log('counter is ' + count);
+      console.log('counter is ' + moveCount);
       // grabs data-block value (number) of element being dragged
-      const drag = $(ui.draggable).data('block');
-      console.log('drag', drag);
+      const draggedVal = $(ui.draggable).data('block');
+      console.log('draggedVal', draggedVal);
       // store data-block value of first child in this variable
-      let first = $(this).children().first().data('block');
-      console.log('first', first);
+      let topVal = $(this).children().first().data('block');
+      console.log('topVal', topVal);
       // if block being dragged has data-block value
-      if (drag > first){
+      if (draggedVal > topVal){
         $(ui.draggable).draggable( "option", "revert", true );
       } else {
         console.log('this', this)
@@ -41,9 +41,9 @@ $(document).ready(function() {
         // adds class movable to first child data-blocks
         topBlock.addClass('movable');
         // increment number in #moveCounter element
-        count++;
-        moveCount();
-        console.log('count', count);
+        moveCount++;
+        moveCounter();
+        console.log('count', moveCount);
       }
       // check for win after every drop
     checkWin();
@@ -60,8 +60,8 @@ $(document).ready(function() {
     }
   }
   // move counter
-  const moveCount = () => {
-    $('#moveCounter').text('Moves: ' + count);
+  const moveCounter = () => {
+    $('#moveCounter').text('Moves: ' + moveCount);
   }
   // timer
   let timer;
@@ -71,13 +71,13 @@ $(document).ready(function() {
   const start = () => {
     // execute increment function every second and store value in timer variable
     timer = self.setInterval(function() {
-      increment()
+      incrementSec()
     }, 1000);
   }
   // function increment sec variable by one and executes minute function
-  const increment = () => {
+  const incrementSec = () => {
     sec++;
-    minute();
+    incrementMin();
     // insert sec variable value and text in #sec element
     document.getElementById('sec').innerHTML = sec + ' Sec';
   }
@@ -87,7 +87,7 @@ $(document).ready(function() {
     clearInterval(timer)
   }
   // logic for conditons that lead to increment of min variable
-  const minute = () => {
+  const incrementMin = () => {
     if (sec === 60) {
       // when seconds reach 60, reset to 0, and increment min variable by 1
       min++;
@@ -117,7 +117,7 @@ $(document).ready(function() {
 
 
 
-// ** another drag/drop logic without using qjuery ui draggable property
+// ** another drag/drop logic without
 
 //   var blocks = $('[data-block]');
 //   var stacks = $('[data-stack]');
@@ -172,6 +172,10 @@ $(document).ready(function() {
 //     e.preventDefault();
 //   }
 //
+
+
+
+
 
 // timer
  //  var clear;
