@@ -24,25 +24,26 @@
         </div>
   </nav>
   <main>
-        
-
     <div id="form-container">
       <form class="form" name="signUp">
+
       <div class="names">
       <label for="firstName">FirstName</label>
-      <input type="text" name="firstName" id="name" placeholder="Amber">
-      <br>
-  
+      <input type="text" name="firstName" id="firstName" placeholder="Amber">
+      <div class="firstName-error"></div>
       <label for="lastName">LastName</label>
       <input type="text" name="lastName" id="lastName" placeholder="Jones">
+      <div class="lastName-error"></div>
       </div>  
+
+
       <div class="emails">
         <label for="email">Email</label>
-        
         <input type="email" name="email" id="email" placeholder="ambie.j210@gmail.com">
-        <br>
+        <div class="email-error">Email is required</div>
         <label for="password">Password</label>
         <input type="password" name="password" id="password" placeholder="••••••">
+        <div class="password-error">Password is required</div>
       </div>
       <div class="website">
         <label for="website">Personal Website</label>
@@ -53,7 +54,7 @@
         <label for="no">No</label>
         <input type="radio" name="no" id="no">
         <br>
-        <button class="submit" type="submit">Submit</button>
+        <button class="submit" type="submit" >Submit</button>
       </div>
   
     </form>

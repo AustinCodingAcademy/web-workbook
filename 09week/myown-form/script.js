@@ -1,32 +1,41 @@
-$(document).ready(function(){
-  $("form[name='signUp']").validate({
-    rules: {
-      firstname: "required",
-      lastname: "required",
-      email: {
-        required: true,
-        email: true
-      },
-      password: {
-        required: true,
-        minlength: 8
+$(document).ready(function () {
+  // var formValid = {
+  //   firstName: false
+  // };
+  // function testValidation() {
+  //   if (formValid.firsName) {
+  //     $('.submit').removeAttr('disabled')
+  //   } else {
+  //     $('.submit').attr('disabled')
+  //   }
+  // }
+  var testExp = new RegExp(/^[a-zA-Z]+$/);
+    $('#firstName').focusout(function(){
+      var name = $(this).val()
+      if (name.length < 3) {
+        $(".firstName-error").text("Required").show()
+      } else {
+        $('.firstName-error').hide()
+        
+        if(!testExp.test(firstName)) {
+          $('.firstName-error').text("Letters Only.").show()
+        } else {
+          $('.firstName-error'),hide()
+        }
       }
-    },
-    messages: {
-      firstname: "First name only.",
-      lastname: "Last name only.",
-      password: {
-        required: "Must provide password.",
-        minlength: "Password must be 8 charicters or more"
-      },
-      email: "Please enter a valid email address",
-      }
-  
-  })
-  $('form').submit(function(){
-    $('.submit').submit(function(){
-      alert("Thank you for submitting")
+      $('#lastName').focusout(function(){
+        var name = $(this).val()
+        if (name.length < 3) {
+          $(".lastName-error").text("Require.").show()
+        } else {
+          $('.lastName-error').hide()
+         
+          if(!testExp.test(lastName)) {
+            $('.lastName-error').text("Letters Only.").show()
+          } else {
+            $('.lastName-error').hide()
+          }
+        }
     })
   })
-
 })
