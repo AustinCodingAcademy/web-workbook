@@ -13,14 +13,15 @@ $(document).ready(function () {
     $('#firstName').focusout(function(){
       var name = $(this).val()
       if (name.length < 3) {
-        $(".firstName-error").text("Required").show()
+        $(".firstName-error").text("Required").show();
       } else {
         $('.firstName-error').hide()
-        
+        // formValid.firstName = true
         if(!testExp.test(firstName)) {
           $('.firstName-error').text("Letters Only.").show()
         } else {
           $('.firstName-error'),hide()
+          // formValid.firstName = true
         }
       }
       $('#lastName').focusout(function(){
@@ -38,4 +39,9 @@ $(document).ready(function () {
         }
     })
   })
+  $('.submit').click(function(){
+    $('form').submit()
+  })
+ 
+  
 })
