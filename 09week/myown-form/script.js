@@ -39,9 +39,9 @@ $(document).ready(function () {
         }
     })
   })
-  $('.submit').click(function(){
-    $('form').submit()
-  })
+  // $('.submit').click(function(){
+  //   $('form').submit()
+  // })
  
   
 })
