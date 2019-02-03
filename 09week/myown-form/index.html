@@ -39,8 +39,8 @@
 
       <div class="emails">
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="ambie.j210@gmail.com">
-        <div class="email-error">Email is required</div>
+        <input type="email" name="email" id="emailInput" placeholder="ambie.j210@gmail.com">
+        <div class="email-error"></div>
         <label for="password">Password</label>
         <input type="password" name="password" id="password" placeholder="••••••">
         <div class="password-error">Password is required</div>
@@ -64,15 +64,13 @@
   <script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 
-  <script type="text/javascript" src='/jquery/jquery.min.js' ></script>
-
   <script src="./script.js"></script>
 
 
   <script>
   const inputs = document.querySelectorAll("#controls input")
   const  button = document.querySelector('.submit')
-  console.log(button)
+  // console.log(button)
   function handleUpdate() {
     const suffix = this.dataset.sizing || '';
     document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix)
