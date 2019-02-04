@@ -7,55 +7,232 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Final Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
+
+
+
+
 <body>
+  <!-- <div class="main-flex-container"> -->
+    <div class="navbar">
+      <nav class="navbar navbar-expand-md navbar-light bg-light" sticky-top>
+          <a class="mr-auto p-2 navbar-brand" href="#">JKP</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" 
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-
-
-
-
-    <nav href= "navbar">
-    <ul>
-        <li><a href="#home">Home</a></li></br>
-        <li><a href="#about">About</a></li></br>
-        <li><a href="#education">Education</a></li></br>
-        <li><a href="#work">Work</a></li></br>
-        <li><a href="#contact">Contact</a></li></br>
-    </ul>
-</nav>
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="main-flex-container">
-    <div class="header"></div>
-    <div class="about">
-        
-    </div>
-    <div class="education"></div>
-    <div class="work"></div>
-    <div class="contact"></div>
-    <footer class="footer"></footer>
-
-	
-	<div class="parent-container">
-		<h1>Jessica K. Pena</h1>
-		<h3>Junior Web Developer</h3>
+          <div class="p-2 collapse navbar-collapse" id="navbarSupportedContent" >
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Projects
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact Me</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+            </form>
+          </div>
+        </nav>
     </div> 
-    <div class="parent-container" id="education">
-		<h1>Jessica K. Pena</h1>
-		<h3>Junior Web Developer</h3>
-	</div> 
-</div> 
+
+
+
+
+    <div class="div-size header border">
+      <div class="title border2">
+        <h1>Jessica K. Pena</h1>
+        <h3>Junior Web Developer</h3>
+      </div> 
+    </div>
+
+
+
+
+<div class="container-fluid padding">
+    <div class="div-size row about text-center border">
+      <div class="col-12">
+        <h1 class="display-4">About</h1>
+      </div>  
+      <hr>
+      <div class="col-12">
+        <!-- <img src="" alt=""> Add image -->
+        <p class="lead">Welcome! My name is Jessica Pena and im a Junior Web Developer.</p>
+      </div>
+    
+
+    </div>
+  </div>
+
+
+
+
+  <div class="container-fluid padding">
+    <div class="div-size row  text-center education padding border">
+      <div class="spacebox">
+      <h1 class="display-4">Education</h1><br>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fas fa-code"></i>
+        <h3>HTML5</h3>
+        <p>WORDSWORDSWORDSWORDSWORDS</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+          <i class="fab fa-css3"></i>
+          <h3>CSS</h3>
+          <p>WORDSWORDSWORDSWORDSWORDS</p>
+       </div>
+      <div class="col-sm-12 col-md-4">
+            <!-- <i class="fas fa-code"></i> -->
+            <h3>jQuery</h3>
+            <p>WORDSWORDSWORDSWORDSWORDS</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+          <i class="fab fa-js"></i>
+          <h3>JavaScript</h3>
+          <p>WORDSWORDSWORDSWORDSWORDS</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fas fa-th"></i>
+            <h3>CSS Grids</h3>
+            <p>WORDSWORDSWORDSWORDSWORDS</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+          <i class="fas fa-boxes"></i>
+          <h3>Flexbox</h3>
+          <p>WORDSWORDSWORDSWORDSWORDS</p>
+      </div>
+    </div>
+    <hr class="my-4">
+  </div>
+
+
+
+
+
+
+
+<div class="container-fluid padding">
+    <div class="div-size work row welcome text-center border">
+      <div class="col-12">
+          <h1 class="display-4">Projects</h1>
+      </div>
+      <hr>
+    </div>
+</div>
+<div class="container-fluid padding">
+  <div class="row padding">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="../../img/tomorrows technology.png" alt="Tommorrows technology" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">Tommorrows Technology</h4>
+            <!-- <a href="#"></a> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card">
+            <img src="../../img/welcome to our site copy.png" alt="Welcome to our Site" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title">Welcome to our site</h4>
+              <!-- <a href="#"></a> -->
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+    <div class="div-size contact border">
+      <div class="container-fluid padding">
+          <div class="row text-center padding">
+            <div class="col-12">
+              <h2>Lets Connect</h2>
+            </div>
+            <div class="col-12 social padding">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer border">
+      footer
+      <div class="container-fluid padding">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <hr class="light">
+            <h4>Contact Me</h4>
+            <p>c - 210-683-9294</p>
+            <p>penajessica123@yahoo.com</p>
+            <p>Austin, TX</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  
+
 </body>
 
 
