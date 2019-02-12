@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Charmonman|Thasadith');
+Body { 
+    height: 100%;
+    width: 100%;
+}
+.flexbox {
+    display: flex;
+}
+#header {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+
+}
+.main-container {
+    background: url('../img/bg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 60%;
+    width: 100%;
+
+}
+.words {
+    width: 70%;
+    padding: 20px;
+}
+button {
+    border-radius: 1px;
+    background-color: grey;
+    color: white;
+    padding: 5px;
+
+}
+.side-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+
+}
+.mobile-main a {
+	color: white;
+}
+a:visited {
+    color: black;
+}
+.side-menu {
+    padding: 0 20px;
+    width: 30%;
+    margin: 0;
+    font-weight: bolder;
+  
+}
+p {
+	text-decoration: black;
+	font-size: 1.4em;
+	
+}
+.flexbox2 {
+	display: flex;
+}
+.mobile-main {
+	visibility: hidden;
+}
+.mobile-main div {
+	display: inline-block;
+	flex-direction: row;
+	background-color: grey;
+	color: white;
+	font-size: 10px;
+	padding: 0;
+	width: 250px;
+}
+.main-links {
+	display: inline-block;
+	width: 200px;
+	margin: auto;
+	height: 200px;
+	color: white;
+	font-size: 20px;
+	/* padding: 40%; */
+	text-align: center;
+	margin-left: 25px;
+}
+.social-media {
+	display: inline-block;
+	margin: auto;
+	height: 200px;
+	 padding: 40%;
+	 width: 200px;
+	 color: white; 
+	 text-align: center;
+	font-family: 'Thasadith' sans-serif;  
+	
+}
+@media only screen and (max-width: 1300px) {
+
+}
+
+@media only screen and (max-width: 700px) {
+	.mobile-main{
+		visibility: visible;
+		display: flex;
+		flex-direction: row;
+		align-content: center;
+		}
+.side-menu {
+    display: none;
+}
+.words {
+    width: 80%;
+    padding: 20px;
+}
+.words h1 {
+    font-size: 1.4em;
+}
+}
+@media only screen and (max-width:375px){
+	.mobile-main{
+	visibility: visible;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	}
+	.mobile-main div {
+		display: inline-block;
+		flex-direction: row;
+		background-color: grey;
+		color: white;
+		font-size: 10px;
+		padding: 0;
+		width: 250px;
+	}
+	.main-links {
+		display: inline-block;
+		width: 200px;
+		margin: auto;
+		height: 200px;
+		color: white;
+		font-size: 20px;
+		/* padding: 40%; */
+		text-align: center;
+		margin-left: 25px;
+	}
+	.social-media {
+		display: inline-block;
+		margin: auto;
+		height: 200px;
+		/* padding: 40%; */
+		width: 200px;
+		/* color: white; */
+		text-align: center;
+		font-family: 'Thasadith' sans-serif;
+	}
+
+}

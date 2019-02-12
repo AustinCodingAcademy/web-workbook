@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.parent div{
+    width: auto;
+    height: auto;
+}
+
+.item-1 {
+    grid-area: header;
+    background-color: blue;
+
+}
+.item-2 {
+    grid-area: main;
+    background-color: aqua;
+
+}
+.item-3 {
+    grid-area: sidebar;
+    background-color: red;
+
+}
+.item-4 {
+    grid-area: footer;
+    background-color: green;
+}
+.parent {
+    display: grid;
+   
+    grid-template-columns: 25% 25% 25% 25%; 
+    grid-template-rows: auto;
+    height: 100%;
+    width: 100%;
+    grid-template-areas:
+    "header header header header"
+    "main main main sidebar"
+    "main main main sidebar"
+    "main main main ."
+    "footer footer footer footer"; 
+}
+@media screen and (max-width: 600px){ 
+    .parent div {
+        width: 50px;
+        height: 50px;
+    }
+}
