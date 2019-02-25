@@ -1,1 +1,159 @@
+body {
 
+  background:
+  color: white;
+  margin: 10px;
+}
+
+
+  .grid {
+  height: 100%;
+  display: grid;
+  grid-row: auto;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "box1 box1 box1 box1"
+                       "box2 box2 box3 box3"
+                       "box4 box4 box5 box6"
+                       "box4 box4 box7 box7"
+                       "box8 box9 box10 box11";
+}
+
+.box {
+  background: ;
+  /* height: 100%;
+  width: 100%; */
+
+
+
+}
+
+.box1 {
+  grid-area: box1;
+  background: white;
+  color: black;
+  padding: 30px;
+  text-align: center;
+
+
+}
+
+.box2 {
+  /* grid-column: 1 / span 2; */
+  grid-area: box2;
+  border: 1px solid black;
+  height: 100px;
+}
+.box3 {
+  grid-area: box3;
+  border: 1px solid black;
+  height: 100px;
+}
+
+.box4 {
+  /* grid-column: 1 / span 2; */
+  grid-area: box4;
+  border: 1px solid black;
+  height: 200px;
+}
+
+.box5 {
+  /* grid-column: 1 / 1; */
+  grid-area: box5;
+  border: 1px solid black;
+    height: 100px;
+}
+
+.box6 {
+  /* grid-column: 1 / 1; */
+  grid-area: box6;
+  border: 1px solid black;
+    height: 100px;
+}
+
+.box7 {
+  /* grid-column: 1 / span 2; */
+  grid-area: box7;
+  border: 1px solid black;
+    height: 100px;
+}
+
+.box8 {
+  /* grid-column: 1 / 1; */
+  grid-area: box8;
+  border: 1px solid black;
+    height: 100px;
+}
+
+.box9 {
+  /* grid-column: 1 / 1; */
+  grid-area: box9;
+  border: 1px solid black;
+    height: 100px;
+}
+
+.box10 {
+  /* grid-column: 1 / 1; */
+  grid-area: box10;
+  border: 1px solid black;
+    height: 100px;
+}
+.box11 {
+  /* grid-column: 1 / 1; */
+  grid-area: box11;
+  border: 1px solid black;
+    height: 100px;
+}
+
+.boxed {
+  border: 1px solid black;
+  height: 75%;
+  width: 25%;
+  margin: 5px;
+}
+
+/* hr {
+     transform: rotate(45deg);
+     width: 100%;
+  } */
+
+@media (max-width: 768px) {
+
+  .grid {
+   grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "box1 box1"
+      "box2 box2"
+      "box3 box4"
+      "box5 box5"
+      "box6 box7"
+      "box8 box9"
+      "box10 box10"
+      "box11 box11"
+  }
+}
+
+@media (max-width: 576px) {
+
+  .grid {
+   grid-template-columns: 1fr;
+    grid-template-areas:
+      "box1"
+      "box1"
+      "box2"
+      "box2"
+      "box3"
+      "box4"
+      "box5"
+      "box5"
+      "box6"
+      "box7"
+      "box8"
+      "box9"
+      "box10"
+      "box10"
+      "box11"
+      "box11"
+  }
+}
+/* } */
