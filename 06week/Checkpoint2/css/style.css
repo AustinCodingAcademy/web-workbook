@@ -1,9 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Charmonman";
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+}
+
 .container {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-image: url(../img/desk.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.header {
+  height: 18%;
+  /* border: 2px solid blueviolet; */
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #95a5a6;
+  text-align: center;
+  font-size: 75;
+  /* border: 2px solid #303030; */
+  opacity: 0.7;
+  height: 80%;
+}
+
+nav {
+  background-color: black;
+  opacity: 0.7;
+  color: white;
+  height: 20%;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 22px;
+}
+
+nav > ul > li {
+  list-style-type: none;
+  transition: all 1s ease-in-out;
+}
+
+nav > ul > li:hover {
+  color: #65e2aa;
+  transition: all 1s ease-in-out;
+}
+
+.bottom-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75%;
+  /* border: 2px solid red; */
+}
+
+.objective {
+}
+
+.footer {
+  height: 5%;
+  /* border: 2px solid purple; */
 }
 
 @media screen and (max-width: 960px) {
@@ -16,126 +85,3 @@
     width: 95%;
   }
 }
-
-.header {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding-left: 20px;
-  font-size: 45px;
-  height: 30vh;
-  font-family: 'Charmonman', cursive;
-  font-family: 'Lobster', cursive;
-}
-
-.initials {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid black;
-  height: 100px;
-  width: 100px;
-  border-radius: 75px;
-}
-
-.hero {
-  background: #95a5a6;
-  width: 100vw;
-  text-align: center;
-  font-size: 75;
-  font-family: 'Charmonman', cursive;
-  font-family: 'Lobster', cursive;
-  border: 2px solid #303030;
-  opacity: .7;
-}
-
-form {
-  background: #95a5a6;
-  border: 1px solid black;
-  height: 200px;
-  display: grid;
-  grid-template-columns: 200px;
-  margin: 5px;
-  padding: 5px;  
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: center;
-  bottom: 25;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-}
-
-.objective {
-  height: 200px;
-  width: 25vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-top: 0;
-  padding-left: 20px;
-  margin-top: 10px;
-  margin-bottom: 50px;
-  font-size: 25;
-  font-family: 'Charmonman', cursive;
-  font-family: 'Lobster', cursive;
-  border: 1px black solid;
-  border-radius: 15px;
-  
-}
-
-.copyright {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-}
-
-.bottom-hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.title {
-  padding-left: 30px;
-  position: fixed;
-  left: 0;
-  top: 500px;
-  font-size: 50;
-  font-family: 'Charmonman', cursive;
-  font-family: 'Lobster', cursive;
-}
-
-.experience {
-  height: 200px;
-  width: 25vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-top: 0;
-  padding-left: 20px;
-  margin-top: 0;
-  font-size: 25;
-  font-family: 'Charmonman', cursive;
-  font-family: 'Lobster', cursive;
-  border: 1px black solid;
-  border-radius: 15px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
