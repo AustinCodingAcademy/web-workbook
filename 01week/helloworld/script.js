@@ -1,5 +1,10 @@
+const headers = {
+    'Authorization': `Bearer SESXYS4X3FJ5LHZRWGKQ`,
+    // 'Accept': 'application/json'
+}
+
 const eventBrite = () => {
-    fetch('https://www.eventbrite.com/oauth/authorize?response_type=KXBIEIL3SS3GWKDXSU7F&client_id=XMP73B2OF2SBKFJZNX&redirect_uri=https://amberlovescats14.github.io/web-workbook/01week/helloworld/')
+    fetch('https://www.eventbrite.com/oauth/authorize?response_type=KXBIEIL3SS3GWKDXSU7F&client_id=XMP73B2OF2SBKFJZNX&redirect_uri=https://amberlovescats14.github.io/web-workbook/01week/helloworld/', {headers, mode:'no-cors' })
         .then((res) => res.json())
         .then((data) => {
           // document.getElementsByClassName('get').innerHTML = data;
