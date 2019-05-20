@@ -7,7 +7,7 @@ const eventBrite = () => {
         
         })
   }
-  eventBrite()
+ 
   
   // This is the link for the documentation
   //https://www.eventbrite.com/platform/api#/introduction/quick-start
