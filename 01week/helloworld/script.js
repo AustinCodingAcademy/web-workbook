@@ -17,7 +17,7 @@ const headers = {
     
         const token = `&token=KXBIEIL3SS3GWKDXSU7F`;
         // const activity = req.query.activity;
-        const eventbrite = `https://www.eventbriteapi.com/v3/events/search/?expand=venue,logo&sort_by=best&location.address=1100+Congress+Ave%2C+Austin%2C+TX+78701&location.within=20mi&categories=` + token;
+        const eventbrite = `https://www.eventbriteapi.com/v3/events/search/?sort_by=best&location.address=6307+Donely+pl%2C+san+antonio%2Ctx&location.within=30mi&categories=108&subcategories=8001&token=KXBIEIL3SS3GWKDXSU7F` + token;
     
         // console.log(eventbrite)
         fetch(eventbrite)
