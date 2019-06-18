@@ -77,7 +77,11 @@ hr {
     .aboutMe {
       font-size: 4vw;
       line-height: 1;
-      margin-top: 2px
+      margin-top: 2px;
+      @media(min-width: 768px){
+        font-size: 3vw;
+        margin-top: 20px
+      }
       
     };
     .education-header {
@@ -85,7 +89,11 @@ hr {
       font-family: $title-font
     }
     .education {
-      font-size: 4vw
+      font-size: 4vw;
+      @media(min-width: 768px){
+        font-size: 3vw;
+        margin: 20px 0 0 0
+      }
     }
   };
   .left-bottom {
@@ -119,14 +127,24 @@ hr {
     color: whitesmoke;
     text-align: center;
     margin: 10px 0 20px 0;
+    @media(min-width: 768px){
+      font-size: 3vh
+    }
   }
   .interest {
     font-weight: 800;
-    text-align: center
+    text-align: center;
+    @media(min-width: 768px){
+      font-size: 5vw
+    }
   }
   .icons {
     text-align: center;
-    font-size: 6vw
+    font-size: 6vw;
+    @media(min-width: 768px){
+      font-size: 5vw;
+      padding: 2%;
+    }
   }
 }
 
@@ -139,19 +157,23 @@ hr {
       color: whitesmoke;
       font-size: 5vw;
       text-align: center;
-      margin: 20px 0 20px 0;
     }
     ul {
       list-style: none
     }
     #experience-1 {
-      margin-top: 2%;
+      
       height: 50%;
       width: 100%;
       font-size: 3vw;
+      @media(min-width: 768px){
+        font-size: 2vh
+      }
       
       .experienceTitle {
+        margin-top: 20px;
         font-size: 4vh;
+        margin-left: 20px;
       
       }
       .job {
@@ -162,7 +184,7 @@ hr {
       .one {
         width: 50%;
         padding: 1%;
-        display: inline-block
+        display: inline-block;
         
       }
       .two {
@@ -174,6 +196,10 @@ hr {
     .three {
       text-align: justify;
       padding: 5%;
+      @media(min-width: 768px){
+        padding: 0;
+        margin-left: 20px
+      }
     }
   }
   
