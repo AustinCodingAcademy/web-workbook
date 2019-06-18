@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo|Courgette|Roboto+Condensed&display=swap');
+
+//font
+$skinny-font: 'Roboto Condensed', sans-serif;
+$title-font: 'Arimo', sans-serif;
+$cursive-font: 'Courgette', cursive;
+//colors
 $main-yellow: #eeb212;
 $main-red: #d50d26;
 $main-blue: #3269e7;
@@ -33,7 +40,8 @@ $grid-height: 100%;
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
+  font-family: $skinny-font;
 }
 body {
   padding: 2%
@@ -41,6 +49,7 @@ body {
 #root {
   border: 7px solid black;
   @include whPercent();
+  font-family: Arial, Helvetica, sans-serif;
 }
 .wrapper-top {
   display: flex;
@@ -48,8 +57,10 @@ body {
   height: row-height(7);
 }
 hr {
-  padding: 0;
-  margin: 0
+  color: black;
+  border: 2px solid black;
+  
+
 }
 #left-top {
   width: column-width(7);
@@ -58,17 +69,23 @@ hr {
   .left-top {
     width: 100%;
     height: row-height(8);
+    padding: 1%;
     .aboutMe-head {
-      font-size: 4vw
+      font-size: 5vw;
+      font-family: $title-font;
     };
     .aboutMe {
-      font-size: 2vw
+      font-size: 4vw;
+      line-height: 1;
+      margin-top: 2px
+      
     };
     .education-header {
-      font-size: 4vw;
+      font-size: 5vw;
+      font-family: $title-font
     }
     .education {
-      font-size: 2vw
+      font-size: 4vw
     }
   };
   .left-bottom {
@@ -77,12 +94,16 @@ hr {
     background: white;
     padding: 0;
     margin: 0;
+    line-height: 1;
+    text-align: center;
+    justify-content: center;
     .name {
-      font-size: 7vw;
-      font-weight: 700
+      font-size: 10vh;
+      font-weight: 700;
+      font-family: $title-font;
     };
     .fswd {
-      font-size: 3vw
+      font-size: 5vw
     };
     .contact {
       font-size: 3vw
@@ -91,15 +112,34 @@ hr {
 
 }
 #right-top {
-  width: column-width(5);
+  width: column-width(6);
   height: row-height(12);
-  background: $main-red
+  background: $main-red;
+  .contactContainer {
+    color: whitesmoke;
+    text-align: center;
+    margin: 10px 0 20px 0;
+  }
+  .interest {
+    font-weight: 800;
+    text-align: center
+  }
+  .icons {
+    text-align: center;
+    font-size: 6vw
+  }
 }
 
   #bottom {
     width: column-width(12);
     height: row-height(5);
-    background: $main-blue
+    background: $main-blue;
+    .javascript {
+      font-family: $cursive-font;
+      color: whitesmoke;
+      font-size: 5vw;
+      text-align: center
+    }
   }
   
 
