@@ -1,0 +1,79 @@
+$main-yellow: #eeb212;
+$main-red: #d50d26;
+$main-blue: #3269e7;
+$main-green: #019925;
+//grid
+$grid-columns: 12;
+$grid-width: 100%;
+$grid-gutter: 0%;
+$grid-row: 12;
+$grid-height: 100%;
+
+@mixin wh {
+  width: 100vw;
+  height: 100vh;
+}
+@mixin whPercent {
+  width: 100%;
+  height: 100%;
+}
+
+@function column-width($cols) {
+  @return ($grid-width
+           - $grid-gutter * ($grid-columns))
+          / $grid-columns * $cols
+          + $grid-gutter * ($cols);
+}
+@function row-height($rows) {
+  @return ($grid-height
+           - $grid-gutter * ($grid-row - 1))
+          / $grid-row * $rows
+          + $grid-gutter * ($rows - 1);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+body {
+  padding: 2%
+}
+#root {
+  border: 7px solid black;
+  @include whPercent();
+}
+.wrapper-top {
+  display: flex;
+  width: column-width(12);
+  height: row-height(7);
+}
+
+#left-top {
+  width: column-width(7);
+  height: row-height(12);
+  background: $main-yellow;
+  .left-top {
+    width: 100%;
+    height: row-height(8);
+  };
+  .left-bottom {
+    width: 100%;
+    height: row-height(4);
+    background: white;
+  }
+
+}
+#right-top {
+  width: column-width(5);
+  height: row-height(12);
+  background: $main-red
+}
+
+  #bottom {
+    width: column-width(12);
+    height: row-height(5);
+    background: $main-blue
+  }
+  
+
+
