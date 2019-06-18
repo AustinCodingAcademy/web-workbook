@@ -73,6 +73,9 @@ hr {
     .aboutMe-head {
       font-size: 5vw;
       font-family: $title-font;
+      @media(min-width: 1000px){
+        font-size: 4vh
+      }
     };
     .aboutMe {
       font-size: 4vw;
@@ -81,18 +84,27 @@ hr {
       @media(min-width: 768px){
         font-size: 3vw;
         margin-top: 20px
+      };
+      @media(min-width: 1000px){
+        font-size: 3vh;
       }
       
     };
     .education-header {
       font-size: 5vw;
-      font-family: $title-font
+      font-family: $title-font;
+      @media(min-width: 1000px){
+        font-size: 4vh
+      }
     }
     .education {
       font-size: 4vw;
       @media(min-width: 768px){
         font-size: 3vw;
         margin: 20px 0 0 0
+      };
+      @media(min-width: 1000px){
+        font-size: 3vh
       }
     }
   };
@@ -109,13 +121,11 @@ hr {
       font-size: 10vh;
       font-weight: 700;
       font-family: $title-font;
+      @media(min-width: 1000px){
+        font-size: 15vh
+      }
     };
-    .fswd {
-      font-size: 5vw
-    };
-    .contact {
-      font-size: 3vw
-    }
+ 
   }
 
 }
@@ -130,12 +140,19 @@ hr {
     @media(min-width: 768px){
       font-size: 3vh
     }
+    @media(min-width: 1000px){
+      font-size: 5vh
+    }
+
   }
   .interest {
     font-weight: 800;
     text-align: center;
     @media(min-width: 768px){
       font-size: 5vw
+    }
+    @media(min-width: 1000px){
+      font-size: 2vw
     }
   }
   .icons {
@@ -145,6 +162,11 @@ hr {
       font-size: 5vw;
       padding: 2%;
     }
+    @media(min-width: 1000px){
+      font-size: 6vh;
+      line-height: 1
+    }
+
   }
 }
 
@@ -152,11 +174,22 @@ hr {
     width: column-width(12);
     height: row-height(5);
     background: $main-blue;
+    .bottomWrapper {
+      @media(mid-width: 1000px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
     .javascript {
       font-family: $cursive-font;
       color: whitesmoke;
       font-size: 5vw;
       text-align: center;
+      @media(min-width: 1000px){
+       font-size: 3vw
+      }
     }
     ul {
       list-style: none
@@ -167,12 +200,16 @@ hr {
       width: 100%;
       font-size: 3vw;
       @media(min-width: 768px){
-        font-size: 2vh
+        font-size: 2vh;
       }
-      
+      @media(min-width: 1000px){
+        height: auto;
+        width: 100%;
+      }
+  
       .experienceTitle {
         margin-top: 20px;
-        font-size: 4vh;
+        font-size: 5vh;
         margin-left: 20px;
       
       }
@@ -185,12 +222,25 @@ hr {
         width: 50%;
         padding: 1%;
         display: inline-block;
+        @media(min-width: 1000px){
+          width: 30%;
+          margin: 0 0 0 20px;
+          font-size: 3vh;
+          padding: 0
+        }
         
       }
       .two {
         width: 50%;
         display: inline-block;
         float: right;
+        @media(min-width: 1000px){
+          width: 30%;
+          padding: 0;
+          float: none;
+          font-size: 3vh;
+          height: 100%;
+        }
       }
     }
     .three {
@@ -200,6 +250,14 @@ hr {
         padding: 0;
         margin-left: 20px
       }
+      @media(min-width: 1000px){
+        width: 30%;
+        display: inline-block;
+        padding: 0;
+        font-size: 3vh;
+
+      }
+  
     }
   }
   
