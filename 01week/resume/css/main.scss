@@ -71,7 +71,7 @@ hr {
     height: row-height(8);
     padding: 1%;
     .aboutMe-head {
-      font-size: 5vw;
+      font-size: 3vw;
       font-family: $title-font;
       @media(min-width: 1060px){
         font-size: 4vh
@@ -81,8 +81,8 @@ hr {
       font-size: 4vw;
       line-height: 1;
       margin-top: 2px;
-      @media(min-width: 768px){
-        font-size: 3vw;
+      @media(min-width: 550px){
+        font-size:2vw;
         margin-top: 20px
       };
       @media(min-width: 1060px){
@@ -91,7 +91,7 @@ hr {
       
     };
     .education-header {
-      font-size: 5vw;
+      font-size: 3vw;
       font-family: $title-font;
       @media(min-width: 1060px){
         font-size: 4vh
@@ -100,8 +100,8 @@ hr {
     .education {
       font-size: 4vw;
       line-height: 1;
-      @media(min-width: 768px){
-        font-size: 3vw;
+      @media(min-width: 550px){
+        font-size: 2vw;
         margin: 20px 0 0 0
       };
       @media(min-width: 1060px){
@@ -123,8 +123,8 @@ hr {
       font-weight: 700;
       font-family: $title-font;
       line-height: 1;
-      @media(min-width: 768px){
-        font-size: 11vh;
+      @media(min-width: 550px){
+        font-size: 7vh;
       }
     };
  
@@ -154,21 +154,28 @@ hr {
       font-size: 5vw
     }
     @media(min-width: 1060px){
-      font-size: 2vw
+      font-size: 3vw
     }
+  }
+  .handsOnExperience {
+    font-size: 3vh
   }
   .icons {
     text-align: center;
     font-size: 6vw;
-    line-height: 1;
+    line-height: 2;
     margin-top:5px;
-    @media(min-width: 768px){
-      font-size: 5vw;
+    @media(min-width: 550px){
+      line-height: 1.2;
+      font-size: 2vw;
       padding: 2%;
     }
     @media(min-width: 1060px){
-      font-size: 5vh;
+      font-size: 3vh;
       line-height: 1
+    };
+    ol {
+      list-style: none
     }
 
   }
@@ -178,90 +185,31 @@ hr {
     width: column-width(12);
     height: row-height(5);
     background: $main-blue;
-    .bottomWrapper {
-      @media(mid-width: 1060px){
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    padding: 3%;
+    .bottom-wrapper {
+      justify-content: space-evenly;
+    }
+    .links {
+      padding: 4%;
+      a {
+        color: white;
+      };
+      a:visited {
+        color: white
+      }
+      a:hover {
+        color: pink
       }
     }
-
-    .javascript {
-      font-family: $cursive-font;
-      color: whitesmoke;
-      font-size: 5vw;
-      text-align: center;
-      @media(min-width: 1060px){
-       font-size: 3vw
+    @media (min-width: 1000px) {
+      font-size: 3vh;
+      #bottom {
+        padding: 0
       }
-    }
-    ul {
-      list-style: none
-    }
-    #experience-1 {
-      
-      height: 50%;
-      width: 100%;
-      font-size: 3vw;
-      @media(min-width: 768px){
-        font-size: 2vh;
-      }
-      @media(min-width: 1060px){
-        height: auto;
-        width: 100%;
-      }
-  
-      .experienceTitle {
-        margin-top: 20px;
-        font-size: 5vh;
-        margin-left: 20px;
-      
-      }
-      .job {
-        text-decoration: underline;
-        font-weight: 900;
-        
-      }
-      .one {
-        width: 50%;
-        padding: 1%;
-        display: inline-block;
-        @media(min-width: 1060px){
-          width: 30%;
-          margin: 0 0 0 20px;
-          font-size: 3vh;
-          padding: 0
-        }
-        
-      }
-      .two {
-        width: 50%;
-        display: inline-block;
-        float: right;
-        @media(min-width: 1060px){
-          width: 30%;
-          padding: 0;
-          float: none;
-          font-size: 3vh;
-          height: 100%;
-        }
-      }
-    }
-    .three {
-      text-align: justify;
-      padding: 5%;
-      @media(min-width: 768px){
+      .links {
         padding: 0;
-        margin-left: 20px
+        margin-bottom: 10px
       }
-      @media(min-width: 1060px){
-        width: 30%;
-        display: inline-block;
-        padding: 0;
-        font-size: 3vh;
-
-      }
-  
     }
   }
   
