@@ -85,6 +85,9 @@ hr {
         font-size:2vw;
         margin-top: 20px
       };
+      @media (min-width: 768px) {
+        font-size: 3vw
+      }
       @media(min-width: 1060px){
         font-size: 3vh;
       }
@@ -104,6 +107,9 @@ hr {
         font-size: 2vw;
         margin: 20px 0 0 0
       };
+      @media (min-width: 768px) {
+        font-size: 3vw
+      }
       @media(min-width: 1060px){
         font-size: 3vh
       }
@@ -119,7 +125,7 @@ hr {
     text-align: center;
     justify-content: center;
     .name {
-      font-size: 8vh;
+      font-size: 7vh;
       font-weight: 700;
       font-family: $title-font;
       line-height: 1;
@@ -150,6 +156,7 @@ hr {
   .interest {
     font-weight: 800;
     text-align: center;
+    font-size: vh;
     @media(min-width: 768px){
       font-size: 5vw
     }
@@ -157,19 +164,35 @@ hr {
       font-size: 3vw
     }
   }
+  
   .handsOnExperience {
-    font-size: 3vh
+    font-size: 2vh;
+    @media (min-width: 500px) {
+      font-size: 3vh
+    }
+    @media (min-width: 768px) {
+      font-size: 2vh
+    }
+    @media (min-width: 1000px) {
+      font-size: 3vh
+    }
+
   }
   .icons {
     text-align: center;
-    font-size: 6vw;
-    line-height: 2;
+    font-size: 4vw;
+    line-height: 1.5;
     margin-top:5px;
     @media(min-width: 550px){
       line-height: 1.2;
       font-size: 2vw;
       padding: 2%;
     }
+    @media (min-width: 768px) {
+      font-size: 2vh;
+      line-height: 1.5
+    }
+
     @media(min-width: 1060px){
       font-size: 3vh;
       line-height: 1
@@ -186,8 +209,16 @@ hr {
     height: row-height(5);
     background: $main-blue;
     padding: 3%;
+
     .bottom-wrapper {
-      justify-content: space-evenly;
+      width: 80%;
+      height: 80%;
+      margin: auto;
+      overflow: scroll;
+      border: 2px solid black;
+      ul {
+        list-style-type: circle;
+      }
     }
     .links {
       padding: 4%;

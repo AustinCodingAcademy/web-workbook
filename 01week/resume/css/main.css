@@ -67,6 +67,12 @@ hr {
   }
 }
 
+@media (min-width: 768px) {
+  #left-top .left-top .aboutMe {
+    font-size: 3vw;
+  }
+}
+
 @media (min-width: 1060px) {
   #left-top .left-top .aboutMe {
     font-size: 3vh;
@@ -96,6 +102,12 @@ hr {
   }
 }
 
+@media (min-width: 768px) {
+  #left-top .left-top .education {
+    font-size: 3vw;
+  }
+}
+
 @media (min-width: 1060px) {
   #left-top .left-top .education {
     font-size: 3vh;
@@ -116,7 +128,7 @@ hr {
 }
 
 #left-top .left-bottom .name {
-  font-size: 8vh;
+  font-size: 7vh;
   font-weight: 700;
   font-family: "Arimo", sans-serif;
   line-height: 1;
@@ -155,6 +167,7 @@ hr {
 #right-top .interest {
   font-weight: 800;
   text-align: center;
+  font-size: vh;
 }
 
 @media (min-width: 768px) {
@@ -170,13 +183,31 @@ hr {
 }
 
 #right-top .handsOnExperience {
-  font-size: 3vh;
+  font-size: 2vh;
+}
+
+@media (min-width: 500px) {
+  #right-top .handsOnExperience {
+    font-size: 3vh;
+  }
+}
+
+@media (min-width: 768px) {
+  #right-top .handsOnExperience {
+    font-size: 2vh;
+  }
+}
+
+@media (min-width: 1000px) {
+  #right-top .handsOnExperience {
+    font-size: 3vh;
+  }
 }
 
 #right-top .icons {
   text-align: center;
-  font-size: 6vw;
-  line-height: 2;
+  font-size: 4vw;
+  line-height: 1.5;
   margin-top: 5px;
 }
 
@@ -185,6 +216,13 @@ hr {
     line-height: 1.2;
     font-size: 2vw;
     padding: 2%;
+  }
+}
+
+@media (min-width: 768px) {
+  #right-top .icons {
+    font-size: 2vh;
+    line-height: 1.5;
   }
 }
 
@@ -207,9 +245,15 @@ hr {
 }
 
 #bottom .bottom-wrapper {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  overflow: scroll;
+  border: 2px solid black;
+}
+
+#bottom .bottom-wrapper ul {
+  list-style-type: circle;
 }
 
 #bottom .links {
