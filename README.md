@@ -41,3 +41,4 @@
 <!-- ### Run Challenges
 1. `npm test challenges/01challenge/test.js`
 1. `npm test challenges/02challenge/test.js` -->
+# Checkpoint2

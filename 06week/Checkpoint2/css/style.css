@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman";
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/desk.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  height: 18%;
+  /* border: 2px solid blueviolet; */
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: #95a5a6;
+  text-align: center;
+  font-size: 75;
+  /* border: 2px solid #303030; */
+  opacity: 0.7;
+  height: 80%;
+  padding-top: 25px;
+}
+
+nav {
+  background-color: black;
+  opacity: 0.7;
+  color: white;
+  height: 20%;
+  padding-top: 5px;
+}
+
+a {
+  color: white;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 22px;
+}
+
+nav > ul > li {
+  list-style-type: none;
+  transition: all 1s ease-in-out;
+}
+
+nav > ul > li:hover {
+  color: #65e2aa;
+  transition: all 1s ease-in-out;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75%;
+  /* border: 2px solid red; */
+}
+
+.objective {
+}
+
+.footer {
+  height: 5%;
+  /* border: 2px solid purple; */
+}
+
+@media screen and (max-width: 960px) {
+  .container-inner {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .container-inner {
+    width: 95%;
+  }
+}

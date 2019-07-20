@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  border: 1px solid white;
+  transition: transform 2s ease;
+}
+
+.grid-container:hover>.box:nth-of-type(odd) {
+  transform: translateX(-45vw) rotate(-180deg) scale(.5);
+  transition: transform 1s ease-in-out;
+}
+
+.grid-container:hover>.box:nth-of-type(even) {
+  transform: translateygi(45vw) rotate(180deg) scale(2);
+  transition: transform 2.2s ease-in-out;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.box1 {
+  grid-area: box1;
+  background: pink;
+}
+
+.box2 {
+  grid-area: box2;
+  background: orange;
+}
+
+.box3 {
+  grid-area: box3;
+  background: grey;
+}
+
+.box4 {
+  grid-area: box4;
+  background: red;
+}
+
+.box5 {
+  grid-area: box5;
+  background: rebeccapurple;
+}
+
+.box6 {
+  grid-area: box6;
+  background: greenyellow;
+}
+
+.box7 {
+  grid-area: box7;
+  background: blue;
+}
+
+.box8 {
+  grid-area: box8;
+  background: blueviolet;
+}
+
+.box9 {
+  grid-area: box9;
+  background: yellow;
+}
+
+.box10 {
+  grid-area: box10;
+  background: green;
+}
+
+.box11 {
+  grid-area: box10;
+  background: purple;
+}
+
+.box11 {
+  grid-area: box10;
+  background: lightcoral;
+}

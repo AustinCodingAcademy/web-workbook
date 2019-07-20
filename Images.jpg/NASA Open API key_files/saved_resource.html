@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://null.jsbin.com/runner -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>(function(){window.__blocked={methods:["open","print","alert","prompt","confirm"],old:{}};for(var m in __blocked.methods){try {__blocked.old[m]=window[m];window[m]=function(){};}catch(e){}}})()</script>
+
+
+
+  
+  <script src="./jquery.min.js(1).download"></script>
+  <title>Example APOD call</title>
+<style id="jsbin-css">
+
+</style>
+</head>
+<body>
+  <b>API URL:</b>
+  <pre id="reqObject">https://api.nasa.gov/planetary/apod?api_key=NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo</pre>
+  
+  
+  <img id="apod_img_id" width="250px" src="./LunarEclipseCologne_Junius_960.jpg">
+  
+  <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0" style="display: none;" src="./saved_resource(1).html"></iframe>
+  <p id="copyright">Image Credits: Martin Junius</p>
+  
+  <h3 id="apod_title">Lunar Eclipse over Cologne Cathedral</h3>
+  <p id="apod_explaination">Why would a bright full Moon suddenly become dark?  Because it entered the shadow of the Earth.  That's what happened Sunday night as the Moon underwent a total lunar eclipse.  Dubbed by some as a Super (because the Moon was angularly larger than usual, at least slightly) Blood (because the scattering of sunlight through the Earth's atmosphere makes an eclipsed Moon appeared unusually red) Wolf (because January full moons are sometimes called Wolf Moons from the legend that wolves like to howl at the moon) Moon Eclipse, the shadowy spectacle was visible from the half of the Earth then facing the Moon, and was captured in numerous spectacular photographs.  Featured, a notable image sequence was captured over the Cologne Cathedral, a UNESCO World Heritage Site, in Cologne, Germany. The lunar eclipse sequence was composed from 68 different exposures captured over three hours during freezing temperatures -- and later digitally combined and edited to remove a cyclist and a pedestrian.  The next total lunar eclipse will occur in 2021.    Gallery:  Sunday Night's Total Lunar Eclipse</p>
+  <br>
+  <b>Return Object:</b>
+  <pre id="returnObject">{
+    "copyright": "Martin Junius",
+    "date": "2019-01-22",
+    "explanation": "Why would a bright full Moon suddenly become dark?  Because it entered the shadow of the Earth.  That's what happened Sunday night as the Moon underwent a total lunar eclipse.  Dubbed by some as a Super (because the Moon was angularly larger than usual, at least slightly) Blood (because the scattering of sunlight through the Earth's atmosphere makes an eclipsed Moon appeared unusually red) Wolf (because January full moons are sometimes called Wolf Moons from the legend that wolves like to howl at the moon) Moon Eclipse, the shadowy spectacle was visible from the half of the Earth then facing the Moon, and was captured in numerous spectacular photographs.  Featured, a notable image sequence was captured over the Cologne Cathedral, a UNESCO World Heritage Site, in Cologne, Germany. The lunar eclipse sequence was composed from 68 different exposures captured over three hours during freezing temperatures -- and later digitally combined and edited to remove a cyclist and a pedestrian.  The next total lunar eclipse will occur in 2021.    Gallery:  Sunday Night's Total Lunar Eclipse",
+    "hdurl": "https://apod.nasa.gov/apod/image/1901/LunarEclipseCologne_Junius_1280.jpg",
+    "media_type": "image",
+    "service_version": "v1",
+    "title": "Lunar Eclipse over Cologne Cathedral",
+    "url": "https://apod.nasa.gov/apod/image/1901/LunarEclipseCologne_Junius_960.jpg"
+}</pre>
+<script>try {var url = "https://api.nasa.gov/planetary/apod?api_key=NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo";
+
+
+$.ajax({
+  url: url,
+  success: function(result){
+  if("copyright" in result) {
+    $("#copyright").text("Image Credits: " + result.copyright);
+  }
+  else {
+    $("#copyright").text("Image Credits: " + "Public Domain");
+  }
+  
+  if(result.media_type == "video") {
+    $("#apod_img_id").css("display", "none"); 
+    $("#apod_vid_id").attr("src", result.url);
+  }
+  else {
+    $("#apod_vid_id").css("display", "none"); 
+    $("#apod_img_id").attr("src", result.url);
+  }
+  $("#reqObject").text(url);
+  $("#returnObject").text(JSON.stringify(result, null, 4));  
+  $("#apod_explaination").text(result.explanation);
+  $("#apod_title").text(result.title);
+}
+});
+} catch (error) { throw error; }
+
+//# sourceURL=jivewu.js
+</script>
+
+
+<!--jsbin live harness--><script>(function(){for(var m in __blocked.methods){try{window[m]=__blocked.old[m];delete __blocked;}catch(e){}};})()</script></body></html>
