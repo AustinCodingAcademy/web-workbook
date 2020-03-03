@@ -1,1 +1,159 @@
+.box {
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+}
 
+#grid {
+  width: 100%;
+  height: 700px;
+  display: grid;
+  grid-template-rows: 2fr 3fr 1fr 3fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "b1 b1 b2 b2"
+    "b3 b3 b4 b5"
+    "b3 b3 b6 b6"
+    "b7 b8 b9 b10"
+}
+
+.style1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas:
+    "c1 c2 c2"
+    "c1 c3 c4"
+}
+
+.style2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr 1fr;
+  grid-template-areas:
+    "c1 c1 "
+    "c2 c2 "
+    "c3 c4"
+}
+
+.style3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr 1fr;
+  grid-template-areas:
+    "c1 c1"
+    "c2 c2"
+    "c3 c4"
+}
+
+.style4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "c1 c1 c2 c2"
+    "c1 c1 c3 c4"
+}
+
+.style5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 2fr 1fr;
+  grid-template-areas:
+    "c1 c1"
+    "c2 c2"
+    "c3 c4"
+}
+
+.c1 {
+  grid-area: c1;
+  border: solid 1px black;
+  background-image: url("../img/bk.png");
+  background-position: center;
+}
+
+.c2 {
+  grid-area: c2;
+  border: solid 1px black;
+  text-align: center;
+}
+
+.c3 {
+  grid-area: c3;
+  border: solid 1px black;
+  padding: 10px 0px 0px 15px;
+}
+
+.c4 {
+  grid-area: c4;
+  border: solid 1px black;
+  padding: 10px 0px 0px 15px;
+}
+
+#box1 {
+  grid-area: b1;
+}
+
+#box2 {
+  grid-area: b2;
+}
+
+#box3 {
+  grid-area: b3;
+}
+
+#box4 {
+  grid-area: b4;
+}
+
+#box5 {
+  grid-area: b5;
+}
+
+#box6 {
+  grid-area: b6;
+}
+
+#box7 {
+  grid-area: b7;
+}
+
+#box8 {
+  grid-area: b8;
+}
+
+#box9 {
+  grid-area: b9;
+}
+
+#box10 {
+  grid-area: b10;
+}
+.button2{
+  background-color: red;
+}
+@media (max-width: 768px) {
+  #grid{
+    width: 265%;
+    height: 1300px;
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-row: 2fr 1.5fr 1fr;
+    grid-template-areas:
+      "b3 b3"
+      "b4 b5"
+      "b6 b6"
+}
+@media (max-width: 576px) {
+  #grid{
+    width: 500%;
+    height: 1200px;
+    display: grid;
+    grid-column: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-areas:
+      "b7"
+      "b8"
+      "b9"
+      "b10"
+}

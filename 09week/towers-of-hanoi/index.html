@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Towers of Hanoi</title>
   <link rel="stylesheet" href="style.css" />
+  <h1>"Towers Of Hanoi"</h1>
 </head>
+
 <body>
-  <div data-stack="1">
-    <div data-block="100"></div>
-    <div data-block="75"></div>
-    <div data-block="50"></div>
-    <div data-block="25"></div>
-  </div>
-  <div data-stack="2">
-  </div>
-  <div data-stack="3">
+  <div id="col">
+    <div data-stack="1">
+      <div data-block="100"></div>
+      <div data-block="75"></div>
+      <div data-block="50"></div>
+      <div data-block="25"></div>
+    </div>
+    <div data-stack="2">
+    </div>
+    <div data-stack="3">
+    </div>
   </div>
   <div id="announce-game-won"></div>
+  <aside>
+    <h3>Rules</h3>
+    <p>
+      1. Move only one object at a time.<br />
+      2. A larger object may not be placed ontop of a smaller object.<br />
+      3. All objects, except the one being moved, must be in a column.<br />
+      4. Rebuild the stack in far right column.
+    </p>
+    <button id="reset">Reset Play</button>
+  </aside>
+  <!--<button id="clickme">Moves: 0</button>-->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
