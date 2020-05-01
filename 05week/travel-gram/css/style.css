@@ -1,1 +1,214 @@
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
 
+#wrapper {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    padding: 1em;
+}
+
+header {
+    grid-column: span 4;
+    text-align: center;
+    
+}
+
+#tablet, #mobile {
+    display: none;
+}
+
+article {
+    background-color: rgba(231, 230, 230, 0.63);
+    grid-column: span 1;
+    padding: 10px;
+}
+
+img {
+    border: 1px solid black;
+}
+
+.dTwo {
+    grid-column: span 2;
+}
+
+#atticus {
+    float: left;
+    width: 30%;
+    height: auto;
+}
+
+#atticustTwo {
+    float: left;
+    width: 30%;
+    height: auto;
+}
+
+.loremRight {
+    float: right;
+    width: 68%;
+    height: auto;
+}
+
+.loremRighttTwo {
+    float: right;
+    width: 68%;
+    height: auto;
+}
+
+.loremBottom {
+    float: left;
+}
+
+.loremBottomtThree {
+    float: left;
+}
+
+.loremRightSix {
+    float: right;
+    width: 35%;
+    height: auto;
+}
+
+#atticus3 {
+    width: 100%;
+    height: 170px;
+}
+
+#atticus4 {
+    margin-left: 30%;
+    width: 40%;
+}
+
+#atticus6 {
+    float: left;
+    width: 60%;
+    height: 130px;
+}
+
+#atticus7t8 {
+    margin-left: 15%;
+    width: 70%;
+}
+
+#atticus2 {
+    float: left;
+    width: 40%;
+    height: auto;
+}
+
+.button {
+    background-color: red;
+    width: 200px;
+    height: 20px;
+    float: right;
+    margin-top: 30px;
+}
+
+.circleButton {
+    background-color: green;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 50%;
+    
+}
+
+.dThree {
+    grid-column: 1/3;
+    grid-row: span 2;
+    
+}
+
+/*!!! MEDIA QUERIES !!!*/
+/* TABLET */
+@media (min-width: 758px) and (max-width: 1024px) {
+    #wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+    header {
+        grid-column: span 2;
+    }
+    #desktop {
+        display: none;
+    }
+    #tablet {
+        display: inline;
+    }
+    .dTwo {
+        grid-column: span 1;
+    }
+    .tTwo {
+        grid-column: span 2;
+    }
+    .dThree {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+    .loremRighttTwo {
+        float: left;
+        width: auto;
+    }
+    #atticustTwo {
+        width: 100%;
+        height: 170px;
+    }
+
+
+
+
+}
+
+/* MOBILE */
+@media (max-width: 757px) {
+    #wrapper {
+        grid-template-columns: 1fr;
+    }
+    header {
+        grid-column: span 1;
+    }
+    #desktop {
+        display: none;
+    }
+    #mobile {
+        display: inline;
+    }
+    .dTwo {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .tTwo {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .dThree {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .loremRighttTwo {
+        float: left;
+        width: auto;
+    }
+    .loremRight {
+        float: left;
+        width: auto;
+    }
+    #atticustTwo {
+        margin-left: 25%;
+        width: 50%;
+        height: auto;
+    }
+    #atticus {
+        margin-left: 25%;
+        width: 50%;
+        height: auto;
+    }
+    #atticus3 {
+        margin-left: 25%;
+        width: 50%;
+        height: auto;
+    }
+}

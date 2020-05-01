@@ -1,0 +1,127 @@
+/* BODY STYLES */
+body {
+    background-color: rgb(247, 246, 239);
+    font-family: 'Karla', sans-serif;
+}
+
+/* HEADER STYLES */
+.header {
+    position: fixed;
+    background-color: rgb(71, 166, 197);
+    padding: 10px;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    margin-right: 0;
+}
+.header h1 {
+    color: rgb(249, 234, 214);
+    font-size: 48px;
+    text-shadow: 2px 2px rgb(239, 123, 14);
+    margin: 0.2px;
+}
+
+/* MAIN STYLES */
+main {
+  display: flex; 
+  width: 660px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.mainContent {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-rows: 1fr; 
+}
+
+section .photo{
+  width: 200px;
+}
+
+section .jobTitle {
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 1em;
+    color: rgb(239, 123, 14);
+}
+
+section .contactInfo {
+    font-size: 20px;
+    color: rgb(239, 123, 14);
+}
+
+section .links {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+section .links a {
+    color: rgb(71,166,197);
+    text-decoration: none;
+    transition: .7s;
+
+}
+
+section .links a:hover {
+    color: rgb(239, 123, 14);
+}
+
+section .bio {
+    font-size: 19px;
+    padding: 8px;
+    border: 3px;
+    -webkit-hyphens: manual;
+    -ms-hyphens: manual;
+    hyphens: manual;
+}
+
+section .bio p {
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    color: rgb(239, 123, 14);
+    line-height: 1.3em;
+}
+
+section .bio a {
+    color: rgb(71,166,197);
+    text-decoration: none;
+}
+
+section .bio a:hover {
+    color: rgb(239, 123, 14);
+}
+
+@media (max-width: 670px) {
+  .photo {
+    display: none;
+  }
+  main {
+    width: 100%;
+    margin-top: 60px;
+  }
+  section .bio {
+    font-size: 1em;
+    text-align: left;
+  }
+  section {
+    text-align: center;
+  }
+  section .jobTitle {
+      font-weight: bolder;
+      font-size: 2em;
+  }
+  section .bio p {
+      font-size: 23px;
+  }
+  .header h1 {
+      font-size: 38px;
+  }
+}
+
+@media (min-width: 669px) {
+    .photoHeadshot {
+      display: none;
+    }
+}
