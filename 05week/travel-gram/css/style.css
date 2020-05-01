@@ -1,1 +1,113 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  height: 100%;
+  width: 100%;
+}
+h1{
+  text-align: center;
+}
+.gridContainer{
+  margin: 0 15 0 15;
+  height: 100%;
+  width: 90%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 30% 1fr 25%;
+  grid-template-areas: "nav nav nav2 nav2"
+                      "content1 content1 side1 side2"
+                      "content1 content1 side3 side3"
+                      "footer1 footer2 footer3 footer4"
+}
+.gridItem{
+  border: 3px solid black;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gridItem-1{
+  grid-area: nav;
+  background-color: palevioletred;
 
+}
+.gridItem-2{
+  grid-area: nav2;
+  background-color: lightblue;
+}
+.gridItem-3{
+  grid-area: content1;
+  background-color: orange;
+}
+.gridItem-4{
+  grid-area: side1;
+  background-color: pink;
+}
+.gridItem-5{
+  grid-area: side2;
+  background-color: teal;
+}
+.gridItem-6{
+  grid-area: side3;
+  background-color: orchid;
+}
+.gridItem-7{
+  grid-area: footer1;
+  background-color: gold;
+}
+.gridItem-8{
+  grid-area: footer2;
+  background-color: plum;
+}
+.gridItem-9{
+  grid-area: footer3;
+  background-color: forestgreen;
+}
+.gridItem-10{
+  grid-area: footer4;
+  background-color: maroon;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 320px)  {
+  .gridContainer{
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 100%;
+    grid-template-areas: "nav"
+                          "nav2"
+                          "content1"
+  }
+@media (min-width: 768px){
+  .gridContainer{
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "content1 content1"
+                          "content1 content1"
+                          "content1 content1"
+                          "content1 content1"
+                          "nav nav2"
+                          "nav nav2"
+                          "side3 side3"
+  }
+@media(min-width: 1025px){
+  .gridContainer{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 30% 1fr 25%;
+    grid-template-areas: "nav nav nav2 nav2"
+                        "content1 content1 side1 side2"
+                        "content1 content1 side3 side3"
+                        "footer1 footer2 footer3 footer4"
+  }
+}
+  
+}

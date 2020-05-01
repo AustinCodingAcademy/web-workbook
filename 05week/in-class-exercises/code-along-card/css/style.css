@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC|Roboto+Condensed');/* font-family: 'Noto Serif TC', serif; */
+/* font-family: 'Noto Serif TC', serif;
+font-family: 'Roboto Condensed', sans-serif; */
+*{
+  box-sizing: border-box;
+}
+.border1{
+  /* border: 2px solid red; */
+}
+.border2{
+  /* border: 2px solid blue; */
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90%;
+  width: 80%;
+  box-shadow: 1px 1px 16px 0px rgba(134,134,134, 0.1);
+}
+.cardContent{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1em 2em 0;
+  order: 2;
+}
+
+.cardContent div{
+  margin-bottom: 1.3em;
+}
+.cardImage{
+  flex: 1;
+  background: url("https://images.unsplash.com/photo-1496843916299-590492c751f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2851&q=80");
+  background-size: cover;
+}
+.cardContent .subtitle{
+  font-family: 'Roboto Condensed', sans-serif; 
+  letter-spacing: 1px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #7e7e7e;
+  font-weight: 700;
+}
+.cardContent .title{
+  font-family: 'Noto Serif TC', serif;
+  font-size: 31px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color:#2c2c2c;
+  margin-bottom: .5em;
+}
+.cardContent .description{
+  font-family: 'Roboto Condensed', sans-serif; 
+  font-size: 11px;
+  line-height: 22px;
+  color: #7e7e7e;
+}
+.cardContent .link a{
+  font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: none;
+  color: #2c2c2c;
+  letter-spacing: 3px;
+  font-size: 9px;
+  text-transform: uppercase;
+  font-weight: 700; 
+}
+@media (min-width: 568px){
+  .cardContent{
+    padding: 2em;
+  }
+  .cardContent .description{
+    line-height: 16px;
+  }
+  .cardImage{
+    flex: 2;
+  }
+}
+@media (min-width: 768px){
+  .card{
+    flex-direction:row;
+  }
+  .cardContent{
+    order: 1;
+    padding: 6em 2em 0;
+  }
+  .cardContent .description{
+    line-height: 22px;
+    font-size: 13px;
+  }
+  .cardImage{
+    order:2;
+    flex: 2;
+  }
+
+}

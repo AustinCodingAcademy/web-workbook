@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Customer Satisfaction</title>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <h2>Give me your feedback!</h2>
+      <div>
+        <label for="url">URL</label>
+        <input type="url" placeholder="www.yoururl.com" spellcheck="true">
+      </div>
+      <div>
+        <label for="password"><br>Password</label>
+      <input type="password" name="password" id="formPassword" placeholder="•••••••" required minlength="5">
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" placeholder="emilio@emailio.com" required>
+      </div>
+      <div>
+        <label for="range">Level of Satisfaction</label>
+       <input type="range" name="range" min="99" max="100" step=".01">
+      </div>
+      <div>
+        <label for="yes/no"><br>Were you satisfied by the service</label>
+        <input type="radio" name="yes/no" value="yes">Yes</input>
+        <input type="radio" name="yes/no" value="no">No</input>
+      </div>
+      
+      <div>
+        <label for="explanation"><br>Why or why not?</label>
+      </div>
+      <div>
+        <textarea name="explanation"  cols="25" rows="5"></textarea><br>
+      </div>
+      <div>
+        <p>What needs to be improved?</p>
+      </div>
+      <div>
+        <input type="checkbox" name="checks">Emilio's work</input>
+        <input type="checkbox" name="checks">Other</input>
+      </div>
+      <div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
+      
+    </form>
+  </div>
+  
+<script src="js/script.js"></script>
+</body>
+</html>

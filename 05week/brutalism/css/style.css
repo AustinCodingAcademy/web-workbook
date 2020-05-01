@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton|VT323|Dancing+Script');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image: linear-gradient(to bottom right,#00CCFF,#FA47FF);
+  background-size: cover;
+  cursor: cell;
+}
+.gridItem{
+  border: 5px solid black;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gridItem-1{
+  padding: 10px;
+  font-family: 'Monoton', cursive;
+  grid-area: name;
+  background-color: teal;
+  text-shadow: 2px 2px gold;
+}
+.gridItem-1:hover{
+  color: gold;
+  text-shadow: 2px 2px rgb(241, 136, 238);
+}
+.gridItem-2{
+  font-family: 'Monoton', cursive;
+  grid-area: nav;
+  background-color: orchid;
+}
+
+ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+li:first-of-type{
+  color: lightblue;
+}
+li{
+  width: 23%;
+  margin: 0 15px;
+}
+li:hover a{
+    color: lightblue;
+    font-size: 15px;
+}
+.gridItem-2{
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+a{
+  cursor: help;
+}
+.gridItem-3{
+  grid-area: side1;
+  border: none;
+  transition-duration: 2s;
+}
+.gridItem-3:hover{
+  -webkit-transform: scale(.7,.7) rotate(720deg);
+  -moz-transform: scale(.7, rotate(720deg).7) rotate(720deg);
+  -o-transform: scale(.7, rotate(720deg).7) rotate(720deg);
+  -ms-transform: scale(.7, rotate(720deg).7) rotate(720deg);
+  transform: scale(.7, rotate(720deg).7) rotate(720deg);
+}
+.gridItem-4{
+  padding: 15px;
+  grid-area: about;
+  background-color: black;
+}
+.gridItem-4 p{
+  font-family: 'VT323', monospace;
+}
+.gridItem-4 p:first-of-type{
+  font-family: 'Monoton', cursive;
+}
+.gridItem-4 span{
+  font-family: 'Dancing Script', cursive;
+  color: gold;
+}
+.gridItem-4:hover {
+  box-shadow: 5px 5px .5px  gold;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.gridItem-4:hover span{
+  font-size: 40px;
+}
+.gridItem-4:hover p:first-of-type{
+  color: orchid;
+  text-shadow: 2px 2px gold;
+}
+.gridItem-5{
+  grid-area: side2;
+  background-color: teal;
+  border-radius: 50%;
+}
+.gridItem-6{
+  grid-area: my-work;
+  background-color: #B281FF;
+  justify-content: flex-start;
+}
+.gridItem-6 p{
+  font-family: 'Monoton', cursive;
+  font-size: 35px;
+}
+.gridItem-7{
+  grid-area: proj1;
+  background-color: black;
+  font-family: 'VT323', monospace;
+  transition-duration: 2s;
+}
+.gridItem-7:hover{
+  background-color: rgb(236, 202, 8);
+  border: 5px solid forestgreen;
+  color: black;
+  -webkit-transform: scale(.7) rotate(-360deg);
+  -moz-transform: scale(.7) rotate(-360deg);
+  -o-transform: scale(.7) rotate(-360deg);
+  -ms-transform: scale(.7) rotate(-360deg);
+  transform: scale(.7) rotate(-360deg);
+}
+.gridItem-8{
+  grid-area: proj2;
+  background-color: black;
+  font-family: 'VT323', monospace;
+  transition-duration: 2s;
+}
+.gridItem-8:hover{
+  background-color: magenta;
+  border: 5px solid cyan;
+  color: black;
+  -webkit-transform: scale(1.5) rotate(360deg);
+  -moz-transform: scale(1.5) rotate(360deg);
+  -o-transform: scale(1.5) rotate(360deg);
+  -ms-transform: scale(1.5) rotate(360deg);
+  transform: scale(1.5) rotate(360deg);
+}
+.gridItem-9{
+  grid-area: proj3;
+  background-color: black;
+  font-family: 'VT323', monospace;
+  transition-duration: 2s;
+}
+.gridItem-9:hover{
+  background-color: rgb(236, 202, 8);
+  border: 5px solid forestgreen;
+  color: black;
+  -webkit-transform: scale(1.5) rotate(360deg);
+  -moz-transform: scale(1.5) rotate(360deg);
+  -o-transform: scale(1.5) rotate(360deg);
+  -ms-transform: scale(1.5) rotate(360deg);
+  transform: scale(1.5) rotate(360deg);
+}
+.gridItem-10{
+  grid-area: proj4;
+  background-color: black;
+  font-family: 'VT323', monospace;
+  transition-duration: 2s;
+}
+.gridItem-10:hover{
+  background-color: rgb(236, 202, 8);
+  border: 5px solid forestgreen;
+  color: black;
+  -webkit-transform: scale(1.5) rotate(360deg);
+  -moz-transform: scale(1.5) rotate(360deg);
+  -o-transform: scale(1.5) rotate(360deg);
+  -ms-transform: scale(1.5) rotate(360deg);
+  transform: scale(1.5) rotate(360deg);
+}
+.gridItem-11{
+  grid-area: proj5;
+  background-color: black;
+  font-family: 'VT323', monospace;
+  transition-duration: 2s;
+}
+.gridItem-11:hover{
+  background-color: magenta;
+  border: 5px solid cyan;
+  color: black;
+  -webkit-transform: scale(1.5) rotate(360deg);
+  -moz-transform: scale(1.5) rotate(360deg);
+  -o-transform: scale(1.5) rotate(360deg);
+  -ms-transform: scale(1.5) rotate(360deg);
+  transform: scale(1.5) rotate(360deg);
+}
+.gridItem-12{
+  padding: 10px;
+  grid-area: contact;
+  /* background-color: #B281FF; */
+  border: none;
+  border-top: 5px solid black;
+  justify-content: flex-end;
+  font-family: 'VT323', monospace;
+}
+.gridItem-12 p{
+  font-family: 'Monoton', cursive;
+  font-size: 35px;
+  color: black;
+}
+.gridItem-12 a:hover{
+  color: cyan;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+@media (min-width: 320px){
+  .gridContainer{
+    margin: 5 10 5 10;
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 20% 50% 20% 50% 25% 25% 20%;
+    grid-template-areas: "name name"
+                        "nav nav"
+                        "about about"
+                        "my-work my-work"
+                        "proj1 proj1"
+                        "proj2 proj3"
+                        "proj4 proj5"
+                        "contact contact"
+                        
+  }
+  a{
+    margin: 10px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px){
+  .gridContainer{
+    margin: 7 10 7 10;
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 50% 20% 25% 25% 25% 20%;
+    grid-template-areas: "name name nav nav"
+                        "side1 about about side2"
+                        "my-work my-work my-work my-work"
+                        "proj1 proj1 proj2 proj2"
+                        "proj1 proj1 proj3 proj3"
+                        "proj4 proj4 proj5 proj5"
+                        "contact contact contact contact"
+                        
+  }
+  a{
+    font-size: 30px;
+  }
+}
+@media(min-width: 1025px){
+  .gridContainer{
+    margin: 10 15 10 15;
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 50% 20% 25% 25% 20%;
+    grid-template-areas: "name nav nav nav"
+                        "side1 about about side2"
+                        "my-work my-work my-work my-work"
+                        "proj1 proj1 proj2 proj3"
+                        "proj1 proj1 proj4 proj5"
+                        "contact contact contact contact"
+                        
+  }
+}
