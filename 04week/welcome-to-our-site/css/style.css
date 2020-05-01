@@ -1,0 +1,93 @@
+html, body, footer {
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+}
+
+#top-container {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  background-color: #00d4c4;
+  align-items: center;
+  justify-content: center
+ }
+
+#top-text {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+
+  }
+
+#bottom-container {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#title1 {
+  height: auto;
+  width: auto;
+  flex-direction: column;
+  border-top: 30px solid #00a7e0;
+  margin: 40px;
+  width: 150px;
+  padding: 20px;
+  flex: 1; /*grow*/
+}
+
+#title2 {
+  height: auto;
+  width: auto;
+  flex-direction: column;
+  border-top: 30px solid #ff5804;
+  margin: 40px;
+  width: 150px;
+  padding: 20px;
+  flex: 1; /*grow*/
+
+  }
+
+#title3 {
+  height: auto;
+  width: auto;
+  flex-direction: column;
+  border-top: 30px solid #00d4c4;
+  margin: 40px;
+  width: 150px;
+  padding: 20px;
+  flex: 1; /*grow*/
+
+}
+
+
+/* Small and up (Landscape Phones) */
+@media (max-width: 576px) {
+  #top-container {
+    background-color: #00a7e0;
+    }
+
+  #bottom-container {
+    	background-color: #f8f5f6;
+      flex-direction: column;
+      color: #000000
+    }
+
+    .title1 {
+    	color: #000;
+    }
+
+    .title2 {
+    	color: #000;
+    }
+
+    .title3 {
+    	color: #000;
+    }
+  }

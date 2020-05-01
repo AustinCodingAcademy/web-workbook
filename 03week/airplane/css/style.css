@@ -1,0 +1,126 @@
+* {
+  /* the simplest css reset possible, can cause performance issues on very complex HTML Documents */
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  background-image: url("../img/airline.jpg");
+}
+
+nav, main {
+  /* the padding and border is calculated into the width and height of the <nav> and <main> elements automatically by the browser */
+  box-sizing: border-box;
+  font-family: 'Signika', sans-serif;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #193a55;
+  color: #fff;
+  height: 82px;
+  border: 0 solid #fff;
+  border-bottom-width: 1px;
+}
+
+.links ul {
+  list-style: none;
+}
+
+.links ul li {
+  margin: 10px;
+  display: inline;
+}
+
+.navlinks {
+  color: #03b5a3;
+}
+
+.links ul li img {
+  margin-right: 5px;
+}
+
+main {
+  height: calc(100vh - 82px);
+  position: relative;  /* create a coordinate system */
+}
+
+section {
+  width: 400px;
+  height: 300px;
+  background: #193a55;
+  border-radius: 5px;
+  position: absolute;  /* can be positioned in the <main> coordinate system */
+  top: 100px;
+  left: 150px;
+}
+
+.tabs {
+  display: flex;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.tab1,
+.tab2,
+.tab3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 3); /* take up 1 third each */
+  height: 60px;
+  background: #018D80;
+}
+
+.tab1 {
+  background: #0063B7;  /* overrides what was set previously */
+  border-top-left-radius: 5px;
+}
+
+.tab3 {
+  border-top-right-radius: 5px;
+}
+
+
+.box1 { /* depart */
+  float:left;
+  padding: 30px 25px 15px 35px;   /* top right bottom left */
+}
+
+.box2 { /* arrive */
+  float: right;
+  padding: 30px 35px 15px 25px;   /* top right bottom left */
+}
+
+.box3 { /* depart mm/dd/yyyy */
+  float:left;
+  padding: 15px 25px 15px 35px;   /* top right bottom left */
+}
+
+.box4 { /* arrive mm/dd/yyyy */
+  float: right;
+  padding: 15px 35px 15px 25px;   /* top right bottom left */
+}
+
+p {
+  color:white;
+  padding-left:35px;
+}
+
+.box5 { /* passengers# */
+  float:left;
+  padding: 15px 25px 15px 35px;   /* top right bottom left */
+}
+
+.box6 { /* radio buttons */
+  float: right;
+  padding: 30px 35px 50px 25px;    /* top right bottom left */
+}
+
+.box7 { /* CTA search flights */
+
+}
