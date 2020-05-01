@@ -1,0 +1,196 @@
+html{
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+}
+/* NBA website font styling */
+
+body{
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+/* width of container set to 100% */
+
+header{
+    height: 120px;
+    width: 100%;
+    background-color: white;
+    padding-left: 30px;
+    padding-top: 10px;
+    border-bottom: 5px solid #F06735;
+}
+/* specs for the header styling */
+
+.logo {
+    float: left;
+}
+/* moved the Knicks logo to the left of the header */
+
+.navBar{
+    list-style-type: none;
+    float: right;
+    padding-right: 80px;
+    padding-top: 30px;
+    margin: 10px 10px 0 0;
+    width: auto;
+    color: #144D8E;
+    font-size: 25px;
+}
+/* specs for the styling of the navigation bar */
+
+.navItems {
+    float: left;
+    margin-right: 20px;
+    padding: 0px 20px 0px 20px;
+    border: 2px solid #144D8E;
+    border-radius: 4px;
+}
+/* specs for the styling of the navigation buttons/links */
+
+a{
+    color: #144D8E;
+}
+/* color of the nav buttons */
+
+a:link {
+    color: #F06735;
+    background-color: transparent; 
+    text-decoration: none;
+}
+/* removes the underline of the link button */
+
+a:hover {
+    color: #F06735;
+    background-color: transparent;
+}
+/* sets the color to orange when hovered over with mouse */
+
+main {
+    width: 100%;
+    height: 800px;
+    background-color: #144D8E;
+    background-image: url(../img/Madison-Square-Garden-Tour-1.jpg);
+    background-size: cover;
+}
+/* sets parameters and image for the main (background) */
+
+.socialMedia{
+    float: right;
+    height: 50px;
+    width: 500px;
+    list-style-type: none;
+    background-color: #144D8E;
+    border-radius: 4px;
+}
+/* specs for the styling of the social media bar */
+
+.socialMedia p{
+    float:left;
+    color: white;
+    font-size: 25px;
+    padding: 10px 0px 0px 10px;
+}
+/* sets the placement and font color of the p-tag in the social media article */
+
+.socialMediaLinks{
+    list-style-type: none;
+    float: right;
+    padding: 0px 20px 0px 20px;
+}
+/* sets the placement of the social media icons within the social media article */
+
+.countDown{
+    float: left;
+}
+/* moves the countdown timer to the left */
+
+.playerProfile{
+    height: 650px;
+    width: 618px;
+    clear: left;
+    margin-left: 50px;
+    padding-top: 0px;
+    background-color: #F06735;
+    border-radius: 4px;
+}
+
+.playerProfile h1{
+    font-size: 30px;
+    padding-left: 210px;
+    color: #144D8E;
+}
+
+.playerStats{
+    color: #144D8E;
+    list-style-type: none;
+}
+
+.statsLeft{
+    float: left;
+    list-style-type: none;
+    padding-left: 100px;
+}
+
+.statsRight{
+    list-style-type: none;
+    float:right;
+    margin-right: 100px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+footer{
+    height: 120px;
+    width: 100%;
+    background-color:  #144D8E;
+    color: white;
+    padding: 20px;
+}
+
+/* Transitions and Transforms start*/
+
+.logo{
+    transition: transform 1s;
+}
+
+.logo:hover{
+    transform: rotate(360deg);
+}
+
+.navItems {
+    transition: transform 1s;
+}
+
+.navItems:hover {
+    transform: scale(1.5,1.5)
+}
+
+.countDown {
+    transition: transform 3s;
+}
+
+.countDown:hover {
+    transform: translate(400px);
+}
+
+.socialMediaLinks {
+    transition: transform 1s;
+}
+
+.socialMediaLinks:hover {
+    transform: translate(300px, 0);
+}
+
+.socialMedia p {
+    transition: transform 5s;
+}
+
+.socialMedia p:hover {
+    transform: translate(200px,200px);
+}
+
+/* Transitions and Transforms end*/

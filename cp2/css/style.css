@@ -1,0 +1,262 @@
+html{
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+}
+/* NBA website font styling */
+
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+/* sets the grid for the page */
+
+header {
+    grid-column: span 8;
+    grid-row: span 1;
+    background-color:white;
+    padding-left: 30px;
+    padding-top: 10px;
+    border-bottom: 5px solid #F06735;
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+/* specs for the header styling */
+
+.logo {
+    grid-column: span 1;
+}
+/* moved the Knicks logo to the first grid cell */
+
+nav{
+    grid-column: span 7;
+}
+/* moved the nav bar to the right of the logo */
+
+.navBar {
+    display: flex;
+    list-style-type: none;
+    padding-right: 80px;
+    padding-top: 30px;
+    margin: 10px 10px 0 0;
+    width: auto;
+    color: #144D8E;
+    font-size: 25px;
+    justify-content: space-evenly;
+}
+/* specs for the styling of the navigation bar */
+
+.navItems {
+    margin-right: 20px;
+    padding: 0px 20px 0px 20px;
+    border: 2px solid #144D8E;
+    border-radius: 4px;
+    grid-column-start: 3;
+    justify-content: space-around;
+}
+/* specs for the styling of the navigation buttons/links */
+
+a{
+    color: #144D8E;
+}
+/* color of the nav buttons */
+
+a:link {
+    color: #F06735;
+    background-color: transparent; 
+    text-decoration: none;
+}
+/* removes the underline of the link button */
+
+a:hover {
+    color: #F06735;
+    background-color: transparent;
+}
+/* sets the color to orange when hovered over with mouse */
+
+main {
+    grid-column: span 8;
+    grid-row: span 8;
+    background-color: #144D8E;
+    background-image: url(../img/Madison-Square-Garden-Tour-1.jpg);
+    background-size: cover;
+}
+/* sets grid cells and image for the main (background) */
+
+.top {
+    display: inline-flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+/* orients the countdown and social media links horizontal */
+
+.socialMedia{
+    display: flex;
+    height: 50px;
+    width: 500px;
+    list-style-type: none;
+    background-color: #144D8E;
+    border-radius: 4px;
+    justify-content: space-evenly;
+    grid-column-start: 8;
+}
+/* specs for the styling and placement of the social media bar */
+
+.socialMedia p{
+    color: white;
+    font-size: 25px;
+    padding: 10px 0px 0px 10px;
+}
+/* sets the placement and font color of the p-tag in the social media article */
+
+.socialMediaLinks{
+    display: inline-flex;
+    list-style-type: none;
+    padding: 0px 20px 0px 20px;
+}
+/* sets the placement of the social media icons within the social media article */
+
+.playerProfile{
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    width: 618px;
+    margin-left: 50px;
+    padding-top: 0px;
+    background-color: #F06735;
+    border-radius: 4px;
+}
+
+.playerProfile h1{
+    font-size: 30px;
+    padding-left: 210px;
+    color: #144D8E;
+}
+
+.playerStats{
+    color: #144D8E;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.statsLeft{
+    list-style-type: none;
+    padding-left: 100px;
+}
+
+.statsRight{
+    list-style-type: none;
+    margin-right: 100px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+footer{
+    height: 120px;
+    background-color:  #144D8E;
+    color: white;
+    padding: 20px;
+    grid-column: span 8;
+    grid-row: span 1;
+}
+
+/* Transitions and Transforms start*/
+
+.logo{
+    transition: transform 1s;
+}
+
+.logo:hover{
+    transform: rotate(360deg);
+}
+
+.navItems {
+    transition: transform 1s;
+}
+
+.navItems:hover {
+    transform: scale(1.5,1.5)
+}
+
+/* Transitions and Transforms end */
+
+@media (max-width: 767px) /* mobile */ {
+
+    body {
+        grid-template-columns: 1fr;
+        /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+        /* grid-auto-rows: 100px; */
+        grid-template-rows: 1fr 1fr;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+    .navBar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top {
+        grid-column: span 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo{
+        transition: none;
+    }
+
+    .logo:hover{
+        transform: none;
+    }
+
+    .navItems {
+        transition: none;
+    }
+
+    .navItems:hover {
+        transform: none;
+    }
+
+    .countDown {
+        grid-column: span 1;
+    }
+
+    .socialMedia p{
+        display: none;
+    }
+
+    .socialMedia{
+        display: flex;
+        height: 50px;
+        width: 100px;
+        list-style-type: none;
+        background-color: transparent;
+        border-radius: 4px;
+        justify-content: space-evenly;
+    }
+
+    .playerProfile {
+        display: none;
+    }
+
+    footer{
+        height: 240px;
+        background-color: white;;
+        color: #144D8E;
+        padding: 20px;
+        grid-column: span 1;
+        grid-row: span 2;
+        text-align: center;
+    }
+    
+}
