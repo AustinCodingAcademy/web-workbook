@@ -1,0 +1,243 @@
+.grid {
+  display: flex;
+  display: grid;
+  font-size: 14px;
+  align-items: stretch;
+  width:100vw;
+  height:100vh;
+  grid-auto-rows: 1fr;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 16.67%;
+  grid-template-rows: 11.11%;
+}
+/* navigation styling */
+nav {
+  display: flex;
+  grid-area: 1/1/2/7;
+  background: white;
+  column-width: 16.67%
+}
+img {
+  height:80%;
+  padding:10px;
+  grid-area: 1/1/2/3;
+}
+.navigationbar{
+  font-family: 'Lato',sans-serif;
+  color: #36454F;
+  grid-area: 1/5/2/7;
+  margin-right: 5%;
+  margin-top: 5%;
+  flex-direction: row;
+  font-size: 14px;
+}
+a:link{
+  font-style: normal;
+  color: #36454F;
+  text-decoration: none;
+}
+a:hover{
+  color: #FFB6C1;
+}
+/* body styling */
+body {
+  background-image:url("../img/coffeeshop.png");
+  margin: 0px;
+  grid-area: 2/1/10/7;
+  height:100%;
+  width: auto;
+  text-transform: lowercase;
+  display: flex;
+}
+h1{
+  flex-wrap: wrap;
+  grid-area: 2/1/4/7;
+  text-align: center;
+  font-family: 'Lato',sans-serif;
+  font-size: 25px;
+  margin: 15px;
+  color: #36454F;
+}
+.generalist{
+  color: teal;
+}
+.ticketsection{
+  grid-area: 4/3/5/5;
+  text-align: center;
+}
+.ticketbutton{
+  font-family: 'Lato',sans-serif;
+  color: #36454F;
+  border-color: #36454F;
+  background-color: #fff;
+  font-size: 30px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.ticketbutton:hover{
+  background-color: transparent;
+}
+/* footer styling */
+footer{
+  font-family: 'Lato',sans-serif;
+  width: 100%;
+  height: 35px;
+  grid-area: 8/2/10/6;
+  text-align: center;
+  color: #36454F;
+}
+.navigationbar2{
+  margin-top: 25px;
+}
+a.nav2{
+  color: ivory;
+}
+a:hover{
+  color: #FFB6C1;
+}
+/* tablet resize */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1223px) {
+  .grid{
+    display: flex;
+    display: grid;
+    font-size: 14px;
+    align-items: stretch;
+    width:100vw;
+    height:100vh;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    font-size: 20px;
+  }
+  .navigationbar{
+    display: grid;
+  }
+  #about{
+    grid-area: 1/2/2/3;
+    align-items: center;
+  }
+  #experts{
+    grid-area: 1/2/3/3;
+    align-items: center;
+  }
+  #calendar{
+    grid-area: 1/2/4/3;
+    align-items: center;
+  }
+  #tickets{
+    grid-area: 2/2/5/3;
+    align-items: center;
+  }
+  #pastevents{
+    grid-area: 2/2/6/3;
+    align-items: center;
+  }
+  #fb{
+    grid-area: 2/2/7/3;
+    align-items: center;
+  }
+  #insta{
+    grid-area: 2/2/8/3;
+    align-items: center;
+  }
+}
+
+/* mobile resize */
+@media only screen and (max-width: 600px) {
+  .grid{
+    display: flex;
+    display: grid;
+    font-size: 14px;
+    align-items: stretch;
+    width:100vw;
+    height:100vh;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+  }
+  nav{
+    grid-area: 1/1/3/5;
+    width: 100%;
+    display: grid;
+    display: flex;
+  }
+  .innerheader{
+    display: none;
+  }
+  .navigationbar{
+    grid-area: 1/1/3/5;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    display: grid;
+    display: flex;
+    margin-top: 1px;
+  }
+  #about{
+    grid-area: 1/2/2/3;
+    align-items: center;
+    margin-bottom: 1px;
+  }
+  #experts{
+    grid-area: 2/2/3/3;
+    align-items: center;
+    margin: 1px;
+  }
+  #calendar{
+    grid-area: 3/2/4/3;
+    align-items: center;
+    margin: 1px;
+  }
+  #tickets{
+    grid-area: 4/2/5/3;
+    align-items: center;
+    margin: 1px;
+  }
+  #pastevents{
+    grid-area: 5/2/6/3;
+    align-items: center;
+    margin: 1px;
+  }
+  #fb{
+    grid-area: 6/2/7/3;
+    align-items: center;
+    margin: 1px;
+  }
+  #insta{
+    grid-area: 7/2/8/3;
+    align-items: center;
+    margin: 1px;
+  }
+  body{
+    background-image:url("../img/dc.jpg");
+    grid-area: 3/1/9/5;
+    font-size: 5px;
+  }
+  h1{
+    grid-area: 3/1/6/5;
+    color: teal;
+    font-size: 15px;
+  }
+  .generalist{
+    color: black;
+  }
+  .ticketsection{
+    grid-area: 8/1/9/5;
+    font-size: 20px;
+  }
+  .ticketbutton{
+    font-size: 20px;
+  }
+  footer{
+    grid-area: 10/1/11/5;
+    display: flex;
+    color: snow;
+    display: flex;
+  }
+  .end{
+    grid-area: 10/1/11/5;
+    text-align: center;
+  }
+  .nav2{
+    display: none;
+  }
+}
