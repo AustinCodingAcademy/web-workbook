@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.box-1 {
+    background-color: #0082d8;
+    grid-area: box-1;
+}
+
+.box-2 {
+    background-color: tomato;
+    grid-area: box-2;
+}
+
+.box-3 {
+    background-color: #00b3ed;
+    grid-area: box-3;
+}
+
+.box-4 {
+    background-color: #00ddcc;
+    grid-area: box-4;
+}
+
+.box-5 {
+    background-color: antiquewhite;
+    grid-area: box-5;
+}
+
+.box-6 {
+    background-color: aliceblue;
+    grid-area: box-6;
+}
+
+.box-7 {
+    background-color: aqua;
+    grid-area: box-7;
+}
+
+.box-8 {
+    background-color: aquamarine;
+    grid-area: box-8;
+}
+
+.box-9 {
+    background-color: #00ff87;
+    grid-area: box-9;
+}
+
+.box-10 {
+    background-color: bisque;
+    grid-area: box-10;
+}
+
+.box-11 {
+    background-color: gray;
+    grid-area: box-11;
+}
+
+.box-12 {
+    background-color: navajowhite;
+    grid-area: box-12;
+}
+
+.grid-container {
+    height: 100%;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    grid-gap: 1em;
+    grid-template-areas:
+    "box-1"
+    "box-2"
+    "box-3"
+    "box-4"
+    "box-5"
+    "box-6"
+    "box-7"
+    "box-8"
+    "box-9"
+    "box-10"
+    "box-11"
+    "box-12";
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+    border-radius: 3px;
+    box-shadow: 0 7px 8px 0 black;
+    /* transition-property: all;
+    transition-duration: 5s; */
+}
+
+/* .grid-container {
+    transition-property: all;
+    transition-duration: 5s;    
+} */
+
+/* .box:nth-child(even):hover{
+    transform: scale(2) translateX(23vw) rotate(360deg); 
+}
+
+.box:nth-child(odd):hover{
+    transform: scale(0.5) translateX(-87vw) rotate(-360deg); 
+}
+
+ .box:nth-child(even) {
+    transform: transition 5s;
+}
+
+.box:nth-child(odd) {
+    transform: transition 5s;
+} */
+
+.grid-container:hover > .box:nth-of-type(even) {
+        transform: scale(2) translateX(23vw) rotate(360deg);    
+        transition: transform 5s;
+        background-color: navy;        
+    
+    /* .box:nth-child(odd):hover{
+        transform: scale(0.5) translateX(-87vw) rotate(-360deg); 
+    } */
+}
+
+.grid-container:hover > .box:nth-of-type(odd) {
+    transform: scale(0.5) translateX(-96vw) rotate(-360deg);
+    transition: transform 5s;
+    background-color: tomato;
+}
+
+.grid-container > .box:nth-of-type(odd) {
+    transition: transform 5s;
+    background-color: navy;
+}
+
+.grid-container > .box:nth-of-type(even) {
+    transition: transform 5s;
+    background-color: tomato;
+}
