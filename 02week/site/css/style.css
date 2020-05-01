@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.border-red {
+border: 1px solid red
+}
+.border-blue {
+  border: 1px solid blue
+  }
+  .border-green {
+    border: 1px solid green
+    }
+    body {
+      height: 100vh;
+      background-color: #77aa77;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%2377aa77'/%3E%3Cstop offset='1' stop-color='%234fd'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23cf8' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23cf8' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23cf8' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23cf8' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    nav {
+      height:90px;
+      width: 100%;
+      display: block;
+      position: fixed;
+      padding: 10px 15px;
+      background-color: rgba(128, 128, 128, 0.521);
+      transition: background-color: .03s ease;
+
+    }
+
+    nav:hover {
+      background-color: rgba(128, 128, 128, 0.8);
+    }
+    nav .logo {
+      display: inline-block;
+      height: 70px;
+      width: 70px;
+      text-align: center;
+
+    }
+    nav .logo i {
+      font-size: 65px;
+      margin: 15% 0;
+    
+    }
+    nav ul {
+      height: 100%;
+      padding: 20px 0 0;
+      float: right;
+    }
+    ul li:nth-child(2) {
+      width: 300px;
+    }
+    ul li {
+      display: inline;
+      padding: 10px;
+      margin: 0 auto;
+    }
+    header {
+      height: 100vh;
+      background: orange;
+
+    }
+    header.header_title {
+      background: #4c4d4e;
+      height: 50vh;
+      width: 100%;
+    }
+    header .parent_h1 {
+      background: red;
+      /* width: 50%;
+      height: 50%;
+      margin: 100px; */
+    }
+    header h1 {
+      position: absolute;
+      top: 25%;
+      bottom: 15%;
+      left: 15%;
+      right: 15%;
+    }
+    header section {
+      height: 100%;
+
+    }
+    header .firstSection {
+      float: left;
+      width: 30%;
+      background: red;
+    }
+    .secondSection {
+      float: left;
+      width: 30%;
+      background: yellow;
+    }
+    .thirdSection {
+      float: left;
+      width: 30%;
+      background: blue;
+    }
+    section {
+      height: 300px;
+    }

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Unlock');
+/* font-family: 'Unlock', cursive;
+font-family: 'Roboto Condensed', sans-serif; */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* .border-1 {
+  border: 2px solid red;
+}
+.border-2 {
+  border: 2px solid blue; */
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90%;
+  width: 80%;
+  box-shadow: 1px 1px 16px 8px rgba(102, 51, 153, 0.137);
+}
+.card__content {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 2em 0;
+  flex: 1;
+  order: 2;
+}
+.card__content div {
+  margin-bottom: 1.3em;
+}
+.card__content .subtitle {
+  font-family: 'Unlock', cursive;
+  letter-spacing: 3px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: rebeccapurple;
+  font-weight: 700;
+}
+.card__content .title {
+  font-family: 'Unlock', cursive;
+  
+  font-size: 30px;
+  line-height: 31px;
+  font-weight: 700;
+  color: rebeccapurple;
+  margin-bottom: .5em;
+}
+.card__content .description {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 11px;
+  color: rebeccapurple;
+  line-height: 22px;
+}
+.card__content .link {
+  font-family: 'Unlock', cursive;
+  text-decoration: none;
+  color: rebeccapurple;
+  letter-spacing: 3px;
+  font-size: 9px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  
+}
+.card__image {
+  background: url(https://images.unsplash.com/photo-1532386236358-a33d8a9434e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1878&q=80);
+  background-size: cover;
+  background-repeat: no repeat;
+  flex: 1;
+  order: 1;
+}
+@media (min-width: 568px) and (min-max: 768px) {
+  .card__content {
+    padding: 2em;
+  
+  }
+  .card__content .description {
+    line-height: 16px;
+  }
+  .card__image {
+    flex: 2;
+  }
+}
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
+  .card__content {
+    order: 1;
+    flex: 1;
+    padding: 6em 2em 0;
+  }
+  .card__content .description {
+    line-height: 22px;
+    font-size: 13px;
+  }
+  .card__content .link a {
+    font-size: 13px;
+  }
+  .card__image {
+    order: 2;
+    flex: 2;
+  }
+}
+@media (min-width: 992px) {
+  .card {
+    height: 550px;
+    width: 900px;
+  }
+}

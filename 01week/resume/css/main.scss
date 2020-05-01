@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo|Courgette|Roboto+Condensed&display=swap');
+
+//font
+$skinny-font: 'Roboto Condensed', sans-serif;
+$title-font: 'Arimo', sans-serif;
+$cursive-font: 'Courgette', cursive;
+//colors
+$main-yellow: #eeb212;
+$main-red: #d50d26;
+$main-blue: #3269e7;
+$main-green: #019925;
+//grid
+$grid-columns: 12;
+$grid-width: 100%;
+$grid-gutter: 0%;
+$grid-row: 12;
+$grid-height: 100%;
+
+@mixin wh {
+  width: 100vw;
+  height: 100vh;
+}
+@mixin whPercent {
+  width: 100%;
+  height: 100%;
+}
+
+@function column-width($cols) {
+  @return ($grid-width
+           - $grid-gutter * ($grid-columns))
+          / $grid-columns * $cols
+          + $grid-gutter * ($cols);
+}
+@function row-height($rows) {
+  @return ($grid-height
+           - $grid-gutter * ($grid-row - 1))
+          / $grid-row * $rows
+          + $grid-gutter * ($rows - 1);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $skinny-font;
+}
+body {
+  padding: 2%
+}
+#root {
+  border: 7px solid black;
+  @include whPercent();
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper-top {
+  display: flex;
+  width: column-width(12);
+  height: row-height(7);
+}
+hr {
+  color: black;
+  border: 2px solid black;
+  
+
+}
+#left-top {
+  width: column-width(7);
+  height: row-height(12);
+  background: $main-yellow;
+  .left-top {
+    width: 100%;
+    height: row-height(8);
+    padding: 1%;
+    .aboutMe-head {
+      font-size: 3vw;
+      font-family: $title-font;
+      @media(min-width: 1060px){
+        font-size: 4vh
+      }
+    };
+    .aboutMe {
+      font-size: 4vw;
+      line-height: 1;
+      margin-top: 2px;
+      @media(min-width: 550px){
+        font-size:2vw;
+        margin-top: 20px
+      };
+      @media (min-width: 768px) {
+        font-size: 3vw
+      }
+      @media(min-width: 1060px){
+        font-size: 3vh;
+      }
+      
+    };
+    .education-header {
+      font-size: 3vw;
+      font-family: $title-font;
+      @media(min-width: 1060px){
+        font-size: 4vh
+      }
+    }
+    .education {
+      font-size: 4vw;
+      line-height: 1;
+      @media(min-width: 550px){
+        font-size: 2vw;
+        margin: 20px 0 0 0
+      };
+      @media (min-width: 768px) {
+        font-size: 3vw
+      }
+      @media(min-width: 1060px){
+        font-size: 3vh
+      }
+    }
+  };
+  .left-bottom {
+    width: 100%;
+    height: row-height(4);
+    background: white;
+    padding: 4%;
+    margin: 0;
+    line-height: 1;
+    text-align: center;
+    justify-content: center;
+    .name {
+      font-size: 7vh;
+      font-weight: 700;
+      font-family: $title-font;
+      line-height: 1;
+      @media(min-width: 550px){
+        font-size: 7vh;
+      }
+    };
+ 
+  }
+
+}
+#right-top {
+  width: column-width(6);
+  height: row-height(12);
+  background: $main-red;
+  .contactContainer {
+    color: whitesmoke;
+    text-align: center;
+    margin: 10px 0 20px 0;
+    @media(min-width: 768px){
+      font-size: 3vh
+    }
+    @media(min-width: 1060px){
+      font-size: 5vh
+    }
+
+  }
+  .interest {
+    font-weight: 800;
+    text-align: center;
+    font-size: vh;
+    @media(min-width: 768px){
+      font-size: 5vw
+    }
+    @media(min-width: 1060px){
+      font-size: 3vw
+    }
+  }
+  
+  .handsOnExperience {
+    font-size: 2vh;
+    @media (min-width: 500px) {
+      font-size: 3vh
+    }
+    @media (min-width: 768px) {
+      font-size: 2vh
+    }
+    @media (min-width: 1000px) {
+      font-size: 3vh
+    }
+
+  }
+  .icons {
+    text-align: center;
+    font-size: 4vw;
+    line-height: 1.5;
+    margin-top:5px;
+    @media(min-width: 550px){
+      line-height: 1.2;
+      font-size: 2vw;
+      padding: 2%;
+    }
+    @media (min-width: 768px) {
+      font-size: 2vh;
+      line-height: 1.5
+    }
+
+    @media(min-width: 1060px){
+      font-size: 3vh;
+      line-height: 1
+    };
+    ol {
+      list-style: none
+    }
+
+  }
+}
+
+  #bottom {
+    width: column-width(12);
+    height: row-height(5);
+    background: $main-blue;
+    padding: 3%;
+
+    .bottom-wrapper {
+      width: 80%;
+      height: 80%;
+      margin: auto;
+      overflow: scroll;
+      border: 2px solid black;
+      ul {
+        list-style-type: circle;
+      }
+    }
+    .links {
+      padding: 4%;
+      a {
+        color: white;
+      };
+      a:visited {
+        color: white
+      }
+      a:hover {
+        color: pink
+      }
+    }
+    @media (min-width: 1000px) {
+      font-size: 3vh;
+      #bottom {
+        padding: 0
+      }
+      .links {
+        padding: 0;
+        margin-bottom: 10px
+      }
+    }
+  }
+  
+
+

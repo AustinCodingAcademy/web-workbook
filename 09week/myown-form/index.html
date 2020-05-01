@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <title>Amber Form</title>
+</head>
+<body>
+
+  <header>
+    <p class="nav"> Sign Up For Free Trial! </p>
+  </header>
+  <nav>
+      <div id="controls">
+          <label for="spacing">Spacing:</label>
+          <input type="range" name="spacing" id="spacing" min="10" max="200" value="10" data-sizing="px">
+    
+          <label for="blur">Blur:</label>
+          <input type="range" name="blur" id="blur" min="0" max="25" data-sizing="px">
+    
+          <label for="base">Base Color:</label>
+          <input type="color" name="base" id="base"  value="#ffbb39">
+        </div>
+  </nav>
+  <main>
+    <div id="form-container">
+      <form class="form" name="signUp">
+
+      <div class="names">
+      <label for="firstName">FirstName</label>
+      <input type="text" name="firstName" id="firstName" placeholder="Amber" >
+      <div class="firstName-error"></div>
+      <label for="lastName">LastName</label>
+      <input type="text" name="lastName" id="lastName" placeholder="Jones">
+      <div class="lastName-error"></div>
+      </div>  
+
+
+      <div class="emails">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="emailInput" placeholder="ambie.j210@gmail.com">
+        <div class="email-error"></div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="••••••">
+        <div class="password-error">Password is required</div>
+      </div>
+      <div class="website">
+        <label for="website">Personal Website</label>
+        <input type="url" name="website" id="website" placeholder="gitHub.com">
+        <br>
+        <label for="yes">Yes</label>
+        <input type="radio" name="yes" id="yes">
+        <label for="no">No</label>
+        <input type="radio" name="no" id="no">
+        <br>
+        <button class="submit" type="submit" >Submit</button>
+      </div>
+  
+    </form>
+    </div>
+
+  </main>
+  <script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+
+  <script src="./script.js"></script>
+
+
+  <script>
+  const inputs = document.querySelectorAll("#controls input")
+  const  button = document.querySelector('.submit')
+  // console.log(button)
+  function handleUpdate() {
+    const suffix = this.dataset.sizing || '';
+    document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix)
+  }
+  inputs.forEach(input => input.addEventListener('change', handleUpdate));
+
+  </script>
+</body>
+</html>

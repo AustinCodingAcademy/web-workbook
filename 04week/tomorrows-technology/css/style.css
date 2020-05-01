@@ -1,0 +1,168 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+body {
+  display: flex;
+  justify-content: flex-start cenet;
+  flex-direction: column;
+  width: 100%;
+  /* padding: 20px; */
+}
+aside {
+  position: fixed;
+  width: 30%;
+  height: 100%;
+  z-index: 1 !important;
+  right: 0;
+  display: flex;
+  align-content: center;
+  text-align: center;
+  padding: 30px;
+  
+}
+h1.aside {
+  padding: 20px;
+  font-size: 50px;
+}
+ul.aside {
+  list-style-type: none;
+  align-self: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 25px;
+}
+li.aside {
+  padding: 20px;
+  border: none;
+  width: 100%;
+  
+}
+header {
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-content: center;
+  /* margin: 10%; */
+}
+img.head {
+  /* padding: 10%; */
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+}
+p.head {
+  padding-left: 20px;
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 25px;
+  /* width: 50% */
+}
+main {
+  width: 100%;
+
+}
+p.main {
+  padding: 20px;
+
+}
+.button__main {
+  padding-left: 20px;
+}
+button.main {
+  background-color: black;
+  color: white;
+  height: 30px;
+  width: 150px;
+  border: none;
+  font-size: 20px;
+}
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  height: 100%;
+  /* justify-content: center; */
+
+}
+#left {
+  width: 50%;
+  padding: 20px;
+}
+h3 {
+  padding: 20px;
+}
+ul.left {
+  padding-left: 20px;
+  list-style: none;
+  color: grey;
+  width: 200px;
+}
+li {
+  border-bottom: 1px solid grey;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  
+}
+#icon {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+/* i {
+  margin-left: 5px;
+} */
+#right {
+  width: 50%;
+  padding: 20px;
+}
+ul.right {
+  padding-left: 20px;
+  list-style: none;
+  color: grey;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+@media(min-width: 528px) {
+  aside {
+    visibility: hidden;
+  }
+}
+@media(min-width: 768px) {
+  footer {
+    visibility: hidden;
+  }
+}
+@media(min-width: 992px) {
+  aside {
+    visibility:visible;
+    display: inline-block;
+  }
+  header {
+    width: 70%;
+  
+  }
+  main {
+    width: 740px;
+    font-size: 25px;
+  }
+  img.head {
+    height: 500px;
+    }
+    button.main {
+      height: 50px;
+      width: 200px;
+    }
+}

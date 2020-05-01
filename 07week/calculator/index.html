@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <div id="calc">
+    <input type="text" id="results">
+    <table>
+      <tr>
+        <td class="button" onclick="addNumber('1')">1</td>
+        <td class="button" onclick="addNumber('2')">2</td>
+        <td class="button" onclick="addNumber('3')">3</td>
+        <td class="button" onclick="addition()">+</td>
+      </tr>
+      <tr>
+        <td class="button" onclick="addNumber('4')">4</td>
+        <td class="button" onclick="addNumber('5')">5</td>
+        <td class="button" onclick="addNumber('6')">6</td>
+        <td class="button" onclick="subtract()">-</td>
+      </tr>
+      <tr>
+        <td class="button" onclick="addNumber('7')">7</td>
+        <td class="button" onclick="addNumber('8')">8</td>
+        <td class="button" onclick="addNumber('9')">9</td>
+        <td class="button" onclick="multiply()">*</td>
+      </tr>
+      <tr>
+        <td class="button" onclick="negative()">+/-</td>
+        <td class="button" onclick="addNumber('0')">0</td>
+        <td class="button" onclick="equals()">=</td>
+        <td class="button" onclick="divide()">/</td>
+      </tr>
+      <tr>
+        <td class="button" colspan="2" onclick="deleteLast()">Delete</td>
+        <td class="button" colspan="2" onclick="clearResults()">Clear</td>
+    </table>
+  </div>
+  <script src="./js/script.js">
+  </script>
+</body>
+</html>
