@@ -1,0 +1,161 @@
+/* tommorow's tech homework assignment - use @media queries to make the website responsive to laptop, tablet and phone */
+
+
+/* this section is for the laptop screen */
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2%;
+  border: solid black 1px;
+  margin: 2%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans  Unicode', Geneva, Verdana, sans-serif;
+}
+
+.techpic img {
+  height: 90%;
+  width: 94%;
+}
+
+h1 {
+  font-size: 2.75vh;
+}
+
+.paragraph {
+  width: 90%;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  font-size: 15px;
+}
+
+.techbutton {
+  text-align: center;
+  width: 14%;
+}
+
+.techbutton p {
+  font-size: 1.1vw;
+  background-color: #4D4D4D;
+  padding: .75vh;
+  color: white;
+}
+
+aside {
+  width: 45%;
+  font-weight: bold;
+}
+
+aside h2 {
+  border-bottom: solid black 1px;
+  padding-bottom: 5px;
+}
+
+aside ul {
+  list-style-type: none;
+  font-size: 13px;
+}
+
+aside li {
+  margin-top: 16px;
+}
+
+footer {
+  display: none;
+}
+
+/* this section is for the tablet screen */
+@media only screen and (max-width: 768px) {
+  aside {
+    display: none;
+  }
+  .techpic img {
+    height: 90%;
+    width: 100%;
+  }
+  /* TECHNOLOGY button - shrinks to much if using the same settings for laptop and tablet - made some adjustments for TABLET */
+  .techbutton {
+    text-align: center;
+    width: 17%;
+  }
+
+  .techbutton p {
+    font-size: 1.5vw;
+    background-color: #4D4D4D;
+    padding: .75vh;
+    color: white;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+/* this section is for the phone screen - notice how much more code the footer adds! */
+@media only screen and (max-width: 425px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0%;
+    border: solid black 1px;
+    margin: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans  Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  main {
+    padding: 25px;
+  }
+
+  /* TECHNOLOGY button - shrinks to much if using the same settings for laptop and tablet - made some adjustments for PHONE */
+  .techbutton {
+    text-align: center;
+    width: 19%;
+  }
+
+  .techbutton p {
+    font-size: 2vw;
+    background-color: #4D4D4D;
+    padding: .75vh;
+    color: white;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #5D5D5D;
+    color: white;
+    width: 100%;
+  }
+  footer img {
+    width: 10%;
+  }
+
+  footer li {
+    list-style-type: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    font-size: 13px;
+    font-style: unset;
+    margin: 10px;
+    border-bottom: solid white 1px;
+  }
+
+  footer li:nth-child(1) {
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: none;
+  }
+
+  .picture {
+    float: right;
+  }
+
+  .usefullinks {
+    width: 30%;
+  }
+  .socialmedia {
+    width: 30%;
+  }
+
+}

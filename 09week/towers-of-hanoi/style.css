@@ -1,35 +1,55 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: grey;
+}
+
+#gameBoard {
+  display: flex;
+  flex-direction: row;
+
+}
+
 [data-stack] {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  height: 101px;
+  height: 300px;
+  width: 200px;
   background-color: aliceblue;
   margin: 25px;
+  border-radius: 5px;
 }
 
 [data-block] {
-  width: 25px;
-  float: left;
+  height: 50px;
+  border-radius: 5px;
 }
 
 [data-block="25"] {
-  height: 25px;
-  background-color: blue;
+  width: 25px;
+  background-color: rgb(0, 157, 255);
+  /* border: 3px solid blue; */
 }
 
 [data-block="50"] {
-  height: 50px;
-  background-color: green;
+  width: 50px;
+  background-color: rgb(108, 179, 21);
+  /* border: 3px solid green; */
 }
 
 [data-block="75"] {
-  height: 75px;
-  background-color: red;
+  width: 75px;
+  background-color: rgb(255, 139, 139);
+  /* border: 3px solid red; */
 }
 
 [data-block="100"] {
-  height: 100px;
-  background-color: yellow;
+  width: 100px;
+  background-color: rgb(255, 255, 103);
+  /* border: 3px solid yellow; */
 }
 
 #announce-game-won {

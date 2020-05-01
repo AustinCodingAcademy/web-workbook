@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>customer-satisfaction</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<!-- create a customer satisfaction form for your portfolio website
+include: [URL, password, email, checkbox, radio, range]
+add spell check to text inputs
+require an email address
+create buttons to submit and reset the form -->
+<body>
+
+<!-- main container for name, phone, address, email, website and password -->
+  <div class="container">
+    <p>Contact Me</p>
+    <form action="" name="registration">
+      
+      <div class="box">
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" id="firstname" placeholder="John" spellcheck="true" required>
+      </div>
+
+      <div class="box">
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Doe" spellcheck="true" required>
+      </div>
+      
+      <div class="box">
+        <label for="phonenumber">Phone</label>
+        <input type="tel" name="phonenumber" id="phonenumber" placeholder="(555) 555-5555">
+      </div>
+      
+      <div class="box">
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address" placeholder="123 Anywhere street" spellcheck="true">
+      </div>
+      
+      <div class="box">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="john@doe.com" required>
+      </div>
+      
+      <div class="box">
+          <label for="homepage">Your website</label>
+          <input type="url" name="homepage" placeholder="http://www.yourwebsite.com">
+      </div>
+
+      <div class="box">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" required>
+      </div>
+
+      <!-- select a reason for contact using radio buttons -->
+      <div class="connect">
+          <p>Reason for Contact:</p>
+            <div class="contype">
+              <input type="radio" id="f-option" name="selector">
+              <label for="f-option">Employment</label>
+            </div>
+            <div class="contype">
+              <input type="radio" id="s-option" name="selector">
+              <label for="s-option">Networking</label>
+            </div>
+            <div class="contype">
+              <input type="radio" id="t-option" name="selector">
+              <label for="t-option">Other</label>
+            </div>
+        </div>
+
+      <!-- select a preferred method of contact using check boxes (multiple allowed) -->
+      <div class="clickbox">
+        <p>Contact Preference:</p>
+        <div class="contact">
+          <input type="checkbox" name="Email" value="Email"> 
+          <label for="Email">Email</label>
+        </div>
+        <div class="contact">
+          <input type="checkbox" name="Phone" value="Phone"> 
+          <label for="Phone">Phone</label>
+        </div>
+        <div class="contact">
+          <input type="checkbox" name="LinkedIn" value="LinkedIn"> 
+          <label for="LinkedIn">LinkedIn</label>
+        </div>
+      </div>
+      
+      <!-- satisfaction rating slider -->
+      <div class="slidecontainer">
+          <label for="rating">Please Rate Your Experience</label>
+          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+          <label>Satisfaction: <span id="demo"></span></label>
+      </div>
+      
+      <!-- send form and reset form -->
+      <div class="clickycontainer">
+        <div class="clicky">
+          <button type="submit">Send</button>
+        </div>
+        <div class="clicky">
+          <button type="reset">Reset Form</button>
+        </div>
+      </div>
+      
+    </form>
+  </div>
+
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

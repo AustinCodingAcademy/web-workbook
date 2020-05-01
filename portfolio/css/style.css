@@ -1,0 +1,753 @@
+
+
+body {
+  background-image: url(https://github.com/konarie1990/web-workbook/blob/gh-pages/portfolio/img/astronomy-constellation-dark-998641.jpg?raw=true);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+
+}
+
+header {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+  font-size: 1.7em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  background: rgba(171, 205, 239, 0.3);
+}
+
+header a {
+  padding: 20px;
+  text-decoration: none;
+  color: #a3ffe3;
+}
+
+header a:hover {
+  background-color: #a3ffe34d;
+}
+
+header .logo {
+  font-weight: 600;
+}
+
+/* page body grid */
+.container {
+  top: 600px;
+  display: grid;
+  grid-template-columns: 1fr 120px 120px 120px 120px 1fr;
+  grid-template-rows: repeat(21, 120px);
+  grid-template-areas: 
+    ".             .            .            .           .           ."
+    "pinkbox       pinkbox      pinkbox      .           .           ."
+    "sweepinyellow .            greybox      greybox     greybox     greybox"
+    "sweepingreen  .            greybox      greybox     greybox     greybox"
+    ".             .            greybox      greybox     greybox     greybox"
+    "sweepinpink   sweepinpink  .            .           .           ."
+    "greybox2      greybox2     greybox2     greybox2    greybox2    ."
+    "greybox2      greybox2     greybox2     greybox2    greybox2    ."
+    "greybox2      greybox2     greybox2     greybox2    greybox2    ."
+    ".             .            .            sweepinproj sweepinproj  sweepinproj"
+    ".             .            greyproj     greyproj    greyproj    greyproj"
+    ".             .            greyproj     greyproj    greyproj    greyproj"
+    ".             .            .            .           .           ."
+    ".             .            .            .           .           ."
+    ".             .            .            .           .           ."
+    "sweepinyel    sweepinyel   sweepinyel   sweepinyel  sweepinyel  sweepinyel"
+    "contact       contact      contact      contact     contact     ."
+    "contact       contact      contact      contact     contact     ."
+    ".             .            .            .           .           ."
+    "footer        footer       footer       footer      footer      footer"
+    "footer        footer       footer       footer      footer      footer";
+
+}
+
+.box {
+  /* border: rgba(255, 255, 255, 0.411) solid 1px; */
+}
+
+/* blinky web developer box (top left) */
+.box7 {
+  color: rgba(255, 255, 255, 0);
+  font-family: 'VT323', monospace;
+  font-size: 4vh;
+  grid-area: pinkbox;
+  transition: ease-out 2s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 40px;
+}
+
+.box7:hover {
+  color: #ffa3df73;
+  background-color: #ffa3df25;
+  transition: ease-out 1s;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* small top grid */
+.box8 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: 
+    "dot dot dot dot"
+    "dot dot dot dot"
+    "dot dot dot dot"
+    "dot dot dot dot";
+}
+
+.dot {
+  transition: ease-in-out 2s;
+}
+
+.dot:hover {
+  background-color: #ffa3df73;
+  transition: ease-out;
+}
+
+/* smaller pink top grid */
+.box9{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-areas: 
+    "dot dot dot dot dot dot dot dot"
+    "dot dot dot dot dot dot dot dot"
+    "dot dot dot dot dot dot dot dot"
+    "dot dot dot dot dot dot dot dot"
+    "dot dot dot dot dot dot dot dot"
+    "dot dot dot dot dot dot dot dot"
+    "dot dot dot dot dot dot dot dot"
+    "dot dot dot dot dot dot dot dot";
+
+}
+
+/* I heart HTML side banner */
+.box11 {
+  color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: 'VT323', monospace;
+  font-size: 6vh;
+  grid-area: sweepinyellow;
+  overflow: hidden;
+  transition: all 2s ease-out;
+}
+
+.box11:before {
+  content:'';
+  position: absolute;
+  width: 0;
+  overflow: hidden;
+  height: 120px;
+  background-color: #ffe2a352;
+  transition: all .5s ease;
+}
+
+.box11:hover:before {
+  width: 30%;
+}
+
+.box11:hover {
+  color: #ffe2a3b7;
+}
+
+.box11 p {
+  margin-top: 10%;
+}
+
+/* Home box with contact button */
+.box13 {
+  color: #a3ffe3;  
+  font-size: 1.5em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+  background-color: #25262769;
+  grid-area: greybox;
+  display: flex;
+  flex-direction: column;
+  transition: ease-in-out .5s;
+}
+
+.box13:hover {
+  background-color: #252627cb;
+  font-weight: lighter;
+  transition: ease-in-out;
+}
+
+.box13 p {
+  margin-top: 6%;
+  margin-left: 6%;
+  margin-right: 20%;
+}
+
+.bigcontact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #a3ffe3;
+  text-decoration: none;
+  text-align: center;
+  width: 110px;
+  height: 110px;
+  margin-top: 5%;
+  margin-left: 20%;
+  border-radius: 2px;
+  border: #a3ffe3 solid 1px;
+  transition: ease-in-out .5s;
+}
+
+.bigcontact:hover {
+  transition: .5s;
+  color: #a3ffe3;
+  background-color: #a3ffe352;
+  font-weight: 250;
+}
+
+/* CSS is fun side banner */
+.box14 {
+  color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: 'VT323', monospace;
+  font-size: 6vh;
+  grid-area: sweepingreen;
+  overflow: hidden;
+  transition: all 2s ease-out;
+}
+
+.box14:before {
+  content:'';
+  position: absolute;
+  width: 0;
+  overflow: hidden;
+  height: 120px;
+  background-color: #a3ffe352;
+  transition: all .5s ease;
+}
+
+.box14:hover:before {
+  width: 30%;
+}
+.box14:hover {
+  color: #a3ffe393;
+}
+
+.box14 p {
+  margin-top: 40px; 
+}
+
+/* pink sweep 'about me' side banner */
+.box18 {
+  color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: center;
+  font-family: 'VT323', monospace;
+  font-size: 6vh;
+  grid-area: sweepinpink;
+  overflow: hidden;
+  transition: all 2s ease-out;
+}
+
+.box18:before {
+  content:'';
+  position: absolute;
+  width: 0;
+  overflow: hidden;
+  height: 120px;
+  background-color: #ffa3df25;
+  transition: all .5s ease;
+}
+
+.box18:hover:before {
+  width: 100%;
+}
+.box18:hover {
+  color: #ffa3df73;
+
+}
+
+.box18 p {
+  margin-top: 30px; 
+  margin-left: 20%;
+}
+
+/* About Me box */
+.box24 {
+  color: #a3ffe3;  
+  font-size: 1.5em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+  background-color: #25262769;
+  grid-area: greybox2;
+  display: flex;
+  flex-direction: column;
+  transition: ease-in-out .5s;
+}
+
+.box24:hover {
+  background-color: #252627cb;
+  font-weight: lighter;
+  transition: ease-in-out;
+}
+
+.box24 p {
+  margin-top: 6%;
+  margin-left: 6%;
+  margin-right: 20%;
+}
+
+/* green sweep 'projects' banner */ 
+.box32 {
+  color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: center;
+  font-family: 'VT323', monospace;
+  font-size: 6vh;
+  grid-area: sweepinproj;
+  overflow: hidden;
+  transition: all 2s ease-out;
+}
+
+.box32:before {
+  content:'';
+  position: absolute;
+  width: 0;
+  overflow: hidden;
+  height: 120px;
+  background-color: #a3ffe352;
+  transition: all .5s ease;
+}
+
+.box32:hover:before {
+  width: 100%;
+}
+.box32:hover {
+  color: #a3ffe393;
+
+}
+
+.box32 p {
+  margin-top: 30px; 
+  margin-right: 30%;
+}
+
+/* Projects box */
+.box33 {
+  color: #a3ffe3;  
+  font-size: 1.5em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+  background-color: #25262769;
+  grid-area: greyproj;
+  display: flex;
+  flex-direction: column;
+  transition: ease-in-out .5s;
+}
+
+.box33:hover {
+  background-color: #252627cb;
+  font-weight: lighter;
+  transition: ease-in-out;
+}
+
+.box33 p {
+  margin-top: 6%;
+  margin-left: 6%;
+  margin-right: 20%;
+}
+
+/* Project link boxes */
+.port {
+  border: rgba(255, 255, 255, 0.253) solid 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.port a{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+  transition: ease-out .5s;
+  color: #a3ffe3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.port a:hover {
+  color: #ffe2a3b7;
+  background-color: #a3ffe352;
+  transition: ease-out .5s;
+  animation: blinker2 .5s linear infinite;
+}
+
+@keyframes blinker2 {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* orange sweep 'contact' side banner */
+.box54 {
+  color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: center;
+  font-family: 'VT323', monospace;
+  font-size: 6vh;
+  grid-area: sweepinyel;
+  overflow: hidden;
+  transition: all 2s ease-out;
+}
+
+.box54:before {
+  content:'';
+  position: absolute;
+  width: 0;
+  overflow: hidden;
+  height: 120px;
+  background-color: #ffe2a352;
+  transition: all .5s ease;
+}
+
+.box54:hover:before {
+  width: 100%;
+}
+.box54:hover {
+  color: #ffe2a3a8;
+
+}
+
+.box54 p {
+  margin-top: 30px; 
+  margin-left: 20%;
+}
+
+/* Contact box */
+.box55 {
+  color: #a3ffe3;  
+  font-size: 1.5em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+  background-color: #25262769;
+  grid-area: contact;
+  display: flex;
+  flex-direction: row;
+  transition: ease-in-out .5s;
+}
+
+.box55:hover {
+  background-color: #252627cb;
+  font-weight: lighter;
+  transition: ease-in-out;
+}
+
+.box55 p {
+  margin-top: 6%;
+  margin-left: 6%;
+  margin-right: 3%;
+}
+
+.ibox {
+  margin-top: 37%;
+  outline: none;
+  appearance: none;
+  background: none;
+  border: #a3ffe3 solid 1px;
+}
+
+/* some additional fun stuff to be added here */
+
+/* Footer box */
+.box64 {
+  color: #a3ffe3;  
+  font-size: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: lighter;
+  background-color: #25262769;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  transition: ease-in-out .5s;
+}
+
+.box64:hover {
+  background-color: #252627cb;
+  font-weight: lighter;
+  transition: ease-in-out;
+}
+
+.box64 p {
+  margin-top: 6%;
+  margin-left: 6%;
+  margin-right: 20%;
+}
+
+/* mobile view */
+@media only screen and (max-width: 425px) {
+  header {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 20vh;
+    position: fixed;
+    background: rgba(171, 205, 239, 0.3);
+  }
+
+  /* page body grid */
+  .container {
+    top: 600px;
+    display: grid;
+    grid-template-columns: 1fr 60px 60px 60px 60px 1fr;
+    grid-template-rows: repeat(22, 60px);
+    grid-template-areas: 
+      ".             .            .            .           .         ."
+      ".             .            .            .           .         ."
+      ".             .            .            .           .         ."
+      "greybox       greybox      greybox      greybox     greybox   greybox"
+      "greybox       greybox      greybox      greybox     greybox   greybox"
+      "greybox       greybox      greybox      greybox     greybox   greybox"
+      "greybox       greybox      greybox      greybox     greybox   greybox"
+      ".             .            .            .           .         ."
+      "greybox2      greybox2     greybox2     greybox2    greybox2  greybox2"
+      "greybox2      greybox2     greybox2     greybox2    greybox2  greybox2"
+      "greybox2      greybox2     greybox2     greybox2    greybox2  greybox2"
+      "greybox2      greybox2     greybox2     greybox2    greybox2  greybox2"
+      "greybox2      greybox2     greybox2     greybox2    greybox2  greybox2"
+      ".             .            .            .           .         ."
+      "greyproj      greyproj     greyproj     greyproj    greyproj  greyproj"
+      "greyproj      greyproj     greyproj     greyproj    greyproj  greyproj"
+      "greyproj      greyproj     greyproj     greyproj    greyproj  greyproj"
+      "greyproj      greyproj     greyproj     greyproj    greyproj  greyproj"
+      ".             .            .            .           .         ."
+      "contact       contact      contact      contact     contact   contact"
+      "contact       contact      contact      contact     contact   contact"
+      ".             .            .            .           .         ."
+      "footer        footer       footer       footer      footer    footer"
+      "footer        footer       footer       footer      footer    footer";
+  
+  }  
+  
+  .box {
+    /* border: rgba(255, 255, 255, 0.411) solid 1px; */
+  }
+  
+  /* blinky web developer box (top left) */
+  .box7 {
+    display: none;
+  }
+  
+  /* small top grid */
+  .box8 {
+    display: none;
+  }
+  
+  /* smaller pink top grid */
+  .box9{
+    display: none;
+  }
+  
+  /* I heart HTML side banner */
+  .box11 {
+    display: none;
+  }
+  
+  /* Home box with contact button */
+  .box13 {
+    color: #a3ffe3;  
+    font-size: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,   Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    background-color: #25262769;
+    grid-area: greybox;
+    display: flex;
+    flex-direction: column;
+    transition: ease-in-out .5s;
+  }
+  
+  .box13:hover {
+    background-color: #252627cb;
+    font-weight: lighter;
+    transition: ease-in-out;
+  }
+  
+  .box13 p {
+    margin-top: 6%;
+    margin-left: 6%;
+    margin-right: 20%;
+  }
+  
+  .bigcontact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #a3ffe3;
+    text-decoration: none;
+    text-align: center;
+    width: 110px;
+    height: 110px;
+    margin-top: 5%;
+    margin-left: 20%;
+    border-radius: 2px;
+    border: #a3ffe3 solid 1px;
+    transition: ease-in-out .5s;
+  }
+  
+  .bigcontact:hover {
+    transform: rotate(360deg);
+    transition: .5s;
+    color: #a3ffe3;
+    background-color: #a3ffe352;
+    font-weight: 250;
+  }
+  
+  /* CSS is fun side banner */
+  .box14 {
+    display: none;
+  }
+  
+  /* pink sweep 'about me' side banner */
+  .box18 {
+    display: none;
+  }
+  
+  /* About Me box */
+  .box24 {
+    color: #a3ffe3;  
+    font-size: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,   Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    background-color: #25262769;
+    grid-area: greybox2;
+    display: flex;
+    flex-direction: column;
+    transition: ease-in-out .5s;
+  }
+  
+  .box24:hover {
+    background-color: #252627cb;
+    font-weight: lighter;
+    transition: ease-in-out;
+  }
+  
+  .box24 p {
+    margin-top: 6%;
+    margin-left: 6%;
+    margin-right: 20%;
+  }
+  
+  /* green sweep 'projects' banner */ 
+  .box32 {
+    display: none;
+  }
+  
+  /* Projects box */
+  .box33 {
+    color: #a3ffe3;  
+    font-size: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,   Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    background-color: #25262769;
+    grid-area: greyproj;
+    display: flex;
+    flex-direction: column;
+    transition: ease-in-out .5s;
+  }
+  
+  .box33:hover {
+    background-color: #252627cb;
+    font-weight: lighter;
+    transition: ease-in-out;
+  }
+  
+  .box33 p {
+    margin-top: 6%;
+    margin-left: 6%;
+    margin-right: 20%;
+  }
+  
+  /* Project link boxes MOBILE */
+  .port {
+    display: none;
+  }
+  
+  /* orange sweep 'contact' side banner */
+  .box54 {
+    display: none;
+  }
+  
+  /* Contact box */
+  .box55 {
+    color: #a3ffe3;  
+    font-size: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,   Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    background-color: #25262769;
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    transition: ease-in-out .5s;
+  }
+  
+  .box55 p {
+    margin-top: 1%;
+    margin-left: 6%;
+    margin-right: 3%;
+  }
+  
+  .ibox {
+    margin-top: 1%;
+    outline: none;
+    appearance: none;
+    background: none;
+    border: #a3ffe3 solid 1px;
+  }
+  
+  /* some additional fun stuff to be added here */
+  
+  /* Footer box */
+  .box64 {
+    color: #a3ffe3;  
+    font-size: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,   Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    background-color: #25262769;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    transition: ease-in-out .5s;
+  }
+  
+}
+  
+  
+  
