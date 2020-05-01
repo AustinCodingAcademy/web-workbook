@@ -1,0 +1,132 @@
+main{
+    width: 50px;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+
+div{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+main div:nth-child(odd){
+    background-color: red;
+    transition: height 2s, width 2s, margin-left 2s, transform 4s 2s;
+}
+
+main:hover div:nth-child(odd){
+    height: 100px;
+    width: 100px; 
+    margin-left: -25px;   
+    transform: translate(600px,0) rotate(360deg);
+}
+
+main div:nth-child(even){
+    background-color: #d02090;
+    transition: margin-left 2s, height 2s, width 2s, left 2s 2s, transform 1s 2s;
+}
+
+main:hover div:nth-child(even){
+    height: 25px;
+    width: 25px; 
+    margin-left: 12.5px;   
+    transform: translate(-600px) rotate(-360deg);
+}
+
+main div:nth-child(3){
+    background-color: violet;
+}
+main div:nth-child(4){
+    background-color: #8a2be3;
+}
+main div:nth-child(5){
+    background-color: blue;
+}
+main div:nth-child(6){
+    background-color: #0d98ba;
+}
+main div:nth-child(7){
+    background-color: green;
+}
+main div:nth-child(8){
+    background-color: #9acd32;
+}
+main div:nth-child(9){
+    background-color: yellow;
+}
+main div:nth-child(10){
+    background-color: #ffae42;
+}
+main div:nth-child(11){
+    background-color: orange;
+}
+main div:nth-child(12){
+    background-color: #ff4501;
+}
+
+/* played with the media queries for a little responsiveness - not very DRY, just messing around  */
+
+@media (max-width: 1200px){
+    
+    main:hover div:nth-child(odd){
+        transform: translate(450px,0) rotate(360deg);
+    }
+    
+    main:hover div:nth-child(even){        
+        transform: translate(-450px) rotate(-360deg);
+    }
+}
+
+@media (max-width: 900px){
+    
+    main:hover div:nth-child(odd){
+        transform: translate(300px,0) rotate(360deg);
+    }
+    
+    main:hover div:nth-child(even){        
+        transform: translate(-300px) rotate(-360deg);
+    }
+}
+
+@media (max-width: 600px){
+
+    main div:nth-child(odd){
+        background-color: black;
+    }
+    
+    main:hover div:nth-child(odd){
+        transform: translate(125px,0) rotate(360deg);
+    }
+    
+    main:hover div:nth-child(even){        
+        transform: translate(-125px) rotate(-360deg);
+    }
+}
+
+
+
+/* 
+main div:nth-child(1){
+    background-color: blue;
+    transition: background-color 2s;
+}
+
+main div:nth-child(1):hover{
+    background-color: white;
+}
+main div:nth-child(1){
+    background-color: blue;
+}
+
+main div:nth-child(2){
+    background-color: red;
+    transition: transform 2s;
+}
+
+main div:nth-child(2):hover{
+    transform: rotate(360deg);
+    transform: translate(20px, 20px);
+} */
+

@@ -1,0 +1,141 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.siteContainer{
+    width: 1100px;
+    height: 600px;
+    margin: auto;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.mainLeft{
+    width: 700px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.mainRight{
+    width: 300px;
+    float: right;
+}
+
+.mainRight>h2{
+    border-bottom: 1px solid black;
+    margin-right: 20px;
+    padding-bottom: 10px;
+}
+
+.mainBottom{
+    width: 700px;
+    margin-left: 30px;
+    float: left;
+    clear: both;
+}
+
+h1{
+    font-weight: normal;
+    font-size: 27px;
+}
+
+.description{
+    margin-top: 1px;
+}
+
+.tech{
+    width: 120px;
+    height: 25px;
+    color: rgb(252,251,252);
+    background-color: rgb(68,68,68);
+    padding-top: 8px;
+    padding-left: 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.footerMain{
+    display: none;
+}
+
+@media (max-width: 900px){
+    .siteContainer{
+        width: 760px;
+        height: 590px;
+        border-bottom: 1px solid black;
+    }
+    
+    .mainRight{
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    .siteContainer{
+        width: 460px;
+        height: 700px;
+        border-bottom: none;
+    }
+
+    .mainLeft{
+        width: 400px;
+    }
+
+    .mainBottom{
+        width: 400px;
+    }
+
+    .tech{
+        width: 120px;
+    }
+
+    .footerMain{
+        width: 100%;
+        height: 200px;
+        background-color: rgb(68,68,68);
+        margin-top: 25px;
+        color: rgb(252,251,252);
+        display: flex;
+        float: left;
+        clear: both;
+        justify-content: space-around;
+    }
+
+    .footerMain h3{
+        margin-bottom: 5px;
+    }
+
+    .footerMain a{
+        color: rgb(252,251,252);
+        text-decoration: none;
+        border-bottom: 1px solid rgb(252,251,252);
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    .footerLeft a:last-of-type{
+        border-bottom: none;
+    }
+
+    .footerLeft{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerRight{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rightItem{
+        width: 90%;
+    }
+
+    .rightItem img{
+        float: right;
+    }    
+}
+
+
+
