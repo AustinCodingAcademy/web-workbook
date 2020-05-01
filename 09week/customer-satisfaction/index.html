@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="container">
+        <form action="" method="post">
+            <h1>Customer Satisfaction Form</h1>
+            <label>
+                <div class="titles">Name</div>
+                <input id="name" type="text" name="name" placeholder="Your Full Name"/>
+            </label>
+            <label>
+                <div class="titles">Password</div>
+                <input id="password" type="password" name="password" placeholder="Returning Complainers. Enter Passsord"/>
+            </label>
+            <label>
+                <div class="titles">Email</div>
+                <input id="email" type="email" name="email" placeholder="Most used email please" required/>
+            </label>
+            <label>
+                <div class="titles">Are You Satisfied With Our Service</div>
+                <input class="radio" type="radio" name="radio">Yes <br>
+                <input class="radio" type="radio" name="radio">No <br>
+                <input class="radio" type="radio" name="radio">Yes & No <br>
+            </label>
+            <label>
+                <div class="titles">Your Complaint</div>
+                <textarea id="complaint" name="message" placeholder="Please Explain Issues" spellcheck="True"></textarea>
+            </label>
+            <label>
+                <div class="titles">Are you Happy With Your Message</div>
+                <input class="checkbox" type="checkbox" name="checkbox">Yes <br>
+                <input class="checkbox" type="checkbox" name="checkbox">NO <br>
+            </label>
+            <label id="rangew">
+                <div class="titles">What is your day to day level of Happiness</div>
+                <input id="range" type="range" name="range" min="0" max="10"><br>
+                <div id= "arrange">
+                    <span>Not Happy</span>
+                    <span>Happy</span>
+                </div> 
+            </label>
+            <label>
+                <div class="titles">Link to a Nasty Webpage</div>
+                <input id="link" type="url" name="link" placeholder="Place Link Here"/><br>
+            </label>
+            <label>
+                <input id="button" type="button" value="Send">
+            </label>
+            <label>
+                <input id="reset" type="reset" value="Reset">
+            </label>
+        </form>
+    </div>
+</body>
+</html>

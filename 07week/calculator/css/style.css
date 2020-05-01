@@ -1,0 +1,26 @@
+#calculator {
+    width: 165px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat (4, 40px);
+    grid-template-rows: repeat (6, 40px);
+    grid-gap: 1px;
+    justify-content: center;
+}
+
+#screen {
+    grid-column: span 4;
+    grid-row: 1 / 2;
+}
+
+.button {
+    width: 40px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.bigbutton {
+    grid-column: span 2;
+    border: 1px solid black;
+    text-align: center;
+}

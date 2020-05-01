@@ -1,1 +1,248 @@
+body {
+    background-color: blue;
+}
+#container {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px 200px 100px 200px;
+}
 
+header {
+    grid-column: span 4;
+    text-align: center;
+}
+
+#tablet, #mobile {
+    display: none;
+}
+
+article {
+    background-color: white;
+    grid-column: span 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    
+}
+
+.dTwo {
+    grid-column: span 2;
+}
+
+.placeholder {
+    width: 25%;
+    /* background-color: pink; */
+}
+
+.pic {
+    width: 100%;
+    height: 75%;
+    margin-top: 12.5%;
+}
+
+.writecolor {
+    width: 65%;
+    /* background-color: red; */
+}
+
+.writecolor > p {
+    box-sizing: border-box;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* background-color: pink; */
+    border-bottom: 1px solid grey;
+}
+
+.circle {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: orange;
+    margin-left: 10%;
+    margin-top: 3%;
+    float: left;
+}
+
+.rectangle {
+    width: 150px;
+    height: 20px;
+    background-color: orange;
+    margin-top: 3%;
+    margin-right: 10%;
+    float: right;
+}
+
+#dThree {
+    grid-column: span 2;
+    grid-row: span 2;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dThree > .placeholder {
+    width: 80%;
+    height: 40%;
+}
+
+#dThree > .placeholder > .pic {
+    margin-top: 5%;
+}
+
+#dThree > .writecolor {
+    width: 100%;
+    height: 50%;
+    /* background-color: green; */
+}
+
+#dThree > .writecolor > p {
+    margin-top: 0;
+    /* background-color: green; */
+}
+
+#wide {
+    grid-column: span 2;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #container {
+        margin-left: 5%;
+        margin-right: 5%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 300px 200px 150px 100px 100px 100px 100px;
+        }
+
+    header {
+        grid-column: span 2;
+    }
+
+    .placeholder {
+        width: 80%;
+        height: 40%;
+    }
+
+    .writecolor {
+        width: 100%;
+        height: 50%;
+    }
+
+
+    .dTwo {
+        grid-column: span 1;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dTwo > .placeholder > .pic {
+        margin-top: 5%;
+    }
+
+    .dTwo > .writecolor > p {
+        height: 60%;
+        overflow: hidden;
+        /* background-color: green; */
+        margin-bottom: 0%;
+        margin-top: 1%;
+    }
+
+    
+    .tTwo {
+        grid-column: span 2;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tTwo > .placeholder > .pic {
+        margin-top: 5%;
+    }
+
+    .tTwo > .writecolor > p {
+        margin-top: 0%;
+        height: 60%;
+        /* background-color: blue; */
+    }
+
+    #dThree {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    #dThree > .writecolor > p {
+        height: 60%;
+        overflow: hidden;
+        /* background-color:  blue; */
+        margin-bottom: 0px;
+    }
+
+    #desktop, #mobile {
+        display: none;
+    }
+
+    #tablet {
+        display: inline;
+    }
+
+}
+
+@media (max-width: 767px) {
+    #container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px repeat(9, 300px);
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    header {
+        grid-column: span 1;
+    }
+
+    .dTwo {
+        grid-column: span 1;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pic {
+        margin-top: 5%;
+    }
+
+    .dTwo > .writecolor > p {
+        margin-top: 0;
+        /* background-color: green; */
+    }
+
+    .placeholder {
+        width: 80%;
+        height: 40%;
+    }
+
+    .writecolor {
+        width: 100%;
+    }
+
+    .circle, .rectangle {
+        margin-top: 0.25%;
+    }
+
+    #dThree {
+        grid-column: span 1;
+        grid-row: span 1;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #wide {
+        grid-column: span 1;
+    }
+
+    #mobile {
+        display: inline;
+    }
+
+    #desktop {
+        display: none;
+    }
+}
