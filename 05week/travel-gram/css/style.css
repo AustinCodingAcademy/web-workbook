@@ -1,1 +1,201 @@
+:root {
+    --primary: #ddd;
+    --light: #fff;
+    --dark: #333;
+    --shadow: 0 1px 5px rgba(104,104,104, 0.7);
+}
 
+
+
+.btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    border:0;
+    height: 20px;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background: var(--light);
+    color: var(--dark);
+}
+
+
+img {
+    max-width: 100%;
+    /* padding: 3rem; */
+}
+
+
+/*  adding this box-sizing will include padding and margins
+ to any sizing*/
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: rgb(216, 213, 213);
+    margin: 30px 50px;
+    line-height: 1.0;
+    grid-area: body;
+}
+
+#wrapper {
+    display: grid;
+    grid-area: wrapper;
+    grid-gap: 1em;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: repeat(5, 1fr);
+    text-align: center; 
+}
+
+
+
+.box {
+    border: 1px solid var(--dark);
+}
+
+p   {  
+    grid-area: p;
+    float: right;
+    margin: 0 25px;
+    padding: 0;
+}
+.btn{
+    margin-top: 20px;
+}
+
+.a {
+    padding: 10px;
+}
+a{
+    grid-area: button;
+}
+.info{
+    display: inline-flex    ;
+    /* display: flex; */
+    height: 100%;
+    grid-area: info;
+}
+img{
+    grid-area: img;
+    padding-bottom: 10px;
+}
+
+#tablet, #mobile {
+    display: none;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    border: 1px solid var(--dark);
+    height: 140px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+
+/*  tablet layout  */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    header {
+        width: 100%;
+    }
+    a { 
+        display: block;
+    }
+    
+    .dTwo {
+        grid-column: span 1;
+    }
+
+    .tTwo {
+        grid-column: span 1;
+    }
+
+   .artOne {
+       grid-row: span 1;
+       
+    } 
+
+    .info p {
+        float: right;
+    }
+
+    #desktop, #mobile {
+        display: none;
+    }
+
+    #tablet {
+        display: inline;
+    }
+
+    .box .btn {
+        text-align: center;
+        margin: auto;
+        height: 20px;
+        margin-bottom: 25px;
+    }
+
+}
+
+/*  mobile layout  */
+@media (max-width: 767px) {
+    #desktop, #tablet {
+      display: none;
+    }
+
+
+    #mobile {
+        display: inline;
+    }
+
+    #wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .box {
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    img {
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        float: none;
+        width: 100%;
+        padding: 0%;
+        
+    }
+
+    
+
+
+    .box .btn {
+        text-align: center;
+        margin: auto;
+        height: 20px;
+        padding: 5px 0px;
+        
+        
+    }
+
+}
