@@ -1,0 +1,69 @@
+@import "compass";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+/* Color settings */
+$formBg: gray;
+$formColor: white;
+$inputBg: #fff;
+$inputColor: #000;
+$buttonBg: black;
+$buttonColor: #fff;
+$errorMsgColor: #ff0000;
+
+/* Styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+
+.container {
+  width: 500px;
+  margin: 25px auto;
+}
+
+form {
+  padding: 20px;
+  background: $formBg;
+  color: $formColor;
+  @include border-radius(4px);
+
+  label,
+  input,
+  button {
+    border: 0;
+    margin-bottom: 3px;
+    display: block;
+    width: 100%;
+  }
+  input {
+    height: 25px;
+    line-height: 25px;
+    background: $inputBg;
+    color: $inputColor;
+    padding: 0 6px;
+    @include box-sizing(border-box);
+  }
+  button {
+    height: 30px;
+    line-height: 30px;
+    background: $buttonBg;
+    color: $buttonColor;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .error {
+    color: $errorMsgColor;
+  }
+}
+
+.article-reference {
+  margin-top: 15px;
+  a {
+    color: $buttonBg;
+  }
+}

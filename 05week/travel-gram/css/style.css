@@ -1,1 +1,378 @@
+header {
+  grid-area: header;
+}
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+        "header header header header"
+        "a a b b"
+        "c c d e"
+        "c c f f"
+        "g h i j"
+}
+a {
+  margin-right: 15px;
+}
+.Tabs {
+  margin-right: 20PX;
+  margin-top: 45px;
+  font-size: 40px;
+  color: red;
+  float: right;
+}
+.box {
+  padding: 15px;
+  border: 2px solid black;
+}
+.a {
+  grid-area: a;
+  height: 150px;
+  display: grid;
+  grid-gap: 10px;
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr r;
+  grid-template-areas:
+        "one two"
+        "one two"
+        "one three"
 
+}
+.one {
+  grid-area: one;
+  height: 130px;
+  width: 140px;
+  padding: 10px;
+}
+.two {
+  grid-area: two;
+  height: 65px;
+}
+.three {
+  grid-area: three;
+  height: 15px;
+}
+.lower {
+  border: none;
+}
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: orange;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+
+  float: left;
+}
+.block {
+  border: 10px solid orange;
+  width: 125px;
+  float: right;
+}
+.b {
+  grid-area: b;
+  height: 150px;
+  display: grid;
+  grid-gap: 10px;
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr r;
+  grid-template-areas:
+        "four five"
+        "four five"
+        "four six"
+}
+.four {
+  grid-area: four;
+  height: 130px;
+  width: 140px;
+  padding: 10px;
+}
+.five {
+  grid-area: five;
+  height: 65px;
+}
+.six {
+  grid-area: six;
+  height: 15px;
+}
+.c {
+  grid-area: c;
+  display: grid;
+  grid-gap: 10px;
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr r;
+  grid-template-areas:
+        "seven seven"
+        "eight eight"
+        "nine nine"
+}
+.seven {
+  grid-area: seven;
+  padding: 10px;
+}
+.eight {
+  grid-area: eight;
+  height: 65px;
+}
+.nine {
+  grid-area: nine;
+  height: 15px;
+}
+.block2 {
+  border: 25px solid orange;
+  width: 65px;
+  float: right;
+}
+
+.d {
+  height: 185px;
+  grid-area: d;
+  display: grid;
+  grid-gap: 10px;
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr r;
+  grid-template-areas:
+        "ten ten"
+        "eleven eleven"
+        "twelve twelve"
+}
+.ten {
+  grid-area: ten;
+  padding: 10px;
+}
+.eleven {
+  grid-area: eleven;
+  height: 65px;
+}
+.twelve {
+  grid-area: twelve;
+  height: 15px;
+}
+.e {
+  height: 185px;
+  grid-area: e;
+  display: grid;
+  grid-gap: 10px;
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr r;
+  grid-template-areas:
+        "thirteen thirteen"
+        "fourteen fourteen"
+        "fifteen fifteen"
+}
+.thirteen {
+  grid-area: thirteen;
+  padding: 10px;
+}
+.fourteen {
+  grid-area: fourteen;
+  height: 65px;
+}
+.fifteen {
+  grid-area: fifteen;
+  height: 15px;
+}
+.f {
+  height: 100px;
+  grid-area: f;
+  display: grid;
+  grid-gap: 10px;
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr r;
+  grid-template-areas:
+        "sixteen seventeen"
+        "sixteen seventeen"
+        "sixteen eightteen"
+}
+.sixteen {
+  grid-area: sixteen;
+  height: 75px;
+  width: 180px;
+  padding: 10px;
+}
+.seventeen {
+  grid-area: seventeen;
+  height: 65px;
+}
+.eightteen {
+  grid-area: eightteen;
+  height: 15px;
+}
+.g {
+  height: 200px;
+  grid-area: g;
+  display: grid;
+  grid-gap: 10px;
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr r;
+  grid-template-areas:
+        "nineteen nineteen"
+        "twenty twenty"
+        "twentyone twentyone"
+}
+.nineteen {
+  grid-area: nineteen;
+  padding: 10px;
+}
+.twenty {
+  grid-area: twenty;
+  height: 65px;
+}
+.twentyone {
+  grid-area: twentyone;
+  height: 15px;
+}
+.h {
+  height: 200px;
+  grid-area: h;
+  display: grid;
+  grid-gap: 10px;
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr r;
+  grid-template-areas:
+        "twentytwo twentytwo"
+        "twentythree twentythree"
+        "twentyfour twentyfour"
+}
+.twentytwo {
+  grid-area: twentytwo;
+  padding: 10px;
+}
+.twentythree {
+  grid-area: twentythree;
+  height: 65px;
+}
+.twentyfour {
+  grid-area: twentyfour;
+  height: 15px;
+}
+.i {
+  height: 200px;
+  grid-area: i;
+  display: grid;
+  grid-gap: 10px;
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr r;
+  grid-template-areas:
+        "twentyfive twentyfive"
+        "twentysix twentysix"
+        "twentyseven twentyseven"
+}
+.twentyfive {
+  grid-area: twentyfive;
+  padding: 10px;
+}
+.twentysix {
+  grid-area: twentysix;
+  height: 65px;
+}
+.twentyseven {
+  grid-area: twentyseven;
+  height: 15px;
+}
+.j {
+  height: 200px;
+  grid-area: j;
+  display: grid;
+  grid-gap: 10px;
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr r;
+  grid-template-areas:
+        "twentyeight twentyeight"
+        "twentynine twentynine"
+        "thirty thirty"
+}
+.twentyeight {
+  grid-area: twentyeight;
+  padding: 10px;
+}
+.twentynine {
+  grid-area: twentynine;
+  height: 65px;
+}
+.thirty {
+  grid-area: thirty;
+  height: 15px;
+}
+@media (min-width: 576px) {
+  .block2 {
+    border: 13px solid orange;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+          "header"
+          "a"
+          "b"
+          "c"
+          "d"
+          "e"
+          "f"
+          "g"
+          "h"
+          "i"
+          "j"
+  }
+}
+@media (max-width: 576px) {
+  .block2 {
+    border: 13px solid orange;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+          "header"
+          "a"
+          "b"
+          "c"
+          "d"
+          "e"
+          "f"
+          "g"
+          "h"
+          "i"
+          "j"
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+          "header header"
+          "c c"
+          "d e"
+          "f f"
+          "g h"
+          "i j"
+          "a b"
+
+  }
+}
+@media (min-width: 992px) {
+  .block2 {
+    border: 25px solid orange;
+  }
+  .container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+          "header header header header"
+          "a a b b"
+          "c c d e"
+          "c c f f"
+          "g h i j"
+ }
+}
