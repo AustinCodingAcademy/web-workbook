@@ -1,0 +1,32 @@
+.container > div {
+  height: 50px;
+  width: 50px;
+  background-color: orange;
+  margin: 10px;
+  transition: width 2s, height 2s, transform 2s;
+  }
+
+.container {
+  width: 10%;
+  margin: 0 auto;
+
+}
+
+.container:hover > div:nth-child(odd) {
+  transform: scale(2) translate(200px)rotate(5000deg);
+  transition-duration: 10s;
+
+}
+
+.container:hover > div:nth-child(even) {
+  transform: scale(.5) translate(-200px)rotate(-500deg);
+  transition-duration: 5s;
+  transition-timing-function: ease-in-out;
+}
+   
+
+/*
+Then the larger squares should slowly slide to the right side of the page, rotating clockwise as they move and remaining in a vertical line.
+Then the smaller squares should quickly slide to the left side of the page, rotating counterclockwise as they move and remaining in a vertical line.
+
+Once completed, add some transitions or translations to previous projects. */ */
