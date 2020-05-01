@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Tic Tac Toe</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+  
+  
 </head>
 <body>
-  <div class="row">
-    <div data-cell="0"></div>
-    <div data-cell="1"></div>
-    <div data-cell="2"></div>
-  </div>
-  <div class="row">
-    <div data-cell="3"></div>
-    <div data-cell="4"></div>
-    <div data-cell="5"></div>
-  </div>
-  <div class="row">
-    <div data-cell="6"></div>
-    <div data-cell="7"></div>
-    <div data-cell="8"></div>
-  </div>
-  <div id="announce-winner"></div>
-  <button id="clear">Clear Board</button>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="./script.js"></script>
+    <table>
+        <tr>
+          <td class="cell" id="0"></td>
+          <td class="cell" id="1"></td>
+          <td class="cell" id="2"></td>
+        </tr>
+        <tr>
+          <td class="cell" id="3"></td>
+          <td class="cell" id="4"></td>
+          <td class="cell" id="5"></td>
+        </tr>
+        <tr>
+          <td class="cell" id="6"></td>
+          <td class="cell" id="7"></td>
+          <td class="cell" id="8"></td>
+        </tr>		
+      </table>
+    
+      <div id="end_game" class="hidden">
+        <div id="end_game_text"></div>
+        <button id="start_game" onclick="startGame()">Replay</button>
+      </div>
+<script src="./script.js"></script>
 </body>
 </html>

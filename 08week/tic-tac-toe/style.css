@@ -1,18 +1,101 @@
-div[data-cell] {
-  width: 100px;
-  height: 100px;
-  background-color: #f2f2f2;
-  float: left;
-  border: 1px solid #808080;
-  font-size: 100px;
-  text-align: center;
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	position: relative;
+	background-color: #eee;
 }
 
-.row {
-  clear: both;
+td {
+	border: 2px solid #888;
+	height: 200px;
+	min-width: 200px;
+	text-align: center;
+	vertical-align: middle;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 70px;
+	cursor: pointer;
 }
 
-#announce-winner {
-  clear: both;
-  font-size: 50px;
+table {
+	border-collapse: collapse;
+	margin:0 auto;
+	vertical-align: middle;
+}
+
+table tr:first-child td {
+	border-top:none;
+}
+table tr:last-child td {
+	border-bottom:none;
+}
+table tr td:first-child {
+	border-left:none;
+}
+table tr td:last-child {
+	border-right:none;
+}
+
+
+.hidden {
+	display: none !important;
+}
+
+.win {
+	background-color: rgba(2, 184, 117, 0.91);
+    box-shadow: 0 0 10px 5px rgba(2, 184, 117, 0.35);
+}
+
+.lose {
+    background-color: rgba(255, 99, 99, .9);
+    box-shadow: 0 0 10px 5px rgba(255, 99, 99, .35);
+}
+
+.tie {
+	background-color: rgba(50, 50, 50, .9);
+    box-shadow: 0 0 10px 5px rgba(50, 50, 50, .35);
+}
+
+#end_game {
+    height: 250px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: column;
+   	justify-content: space-evenly;
+   	align-items: center;
+}
+
+#end_game_text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	font-family: sans-serif;
+	color: #fff;
+}
+
+#start_game {
+	border: none;
+    outline: none;
+    cursor: pointer;
+    color: #444;
+    background-color: #ddd;
+    font-size: 13px;
+    border-radius: 3px;
+    padding: 7px 15px;
+    font-family: monospace;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 10px 1px #000;
+}
+#start_game:hover {
+	background-color: #ccc;
+	color:#000;
+	box-shadow: 1px 1px 10px 0px #222;
 }
