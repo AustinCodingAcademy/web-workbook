@@ -1,0 +1,227 @@
+body {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* left side of screen */
+
+main {
+    float: left;
+    width: 70%;
+    margin-right: 0px;
+    margin-left: 62px;
+}
+
+main > img {
+    width: 800px;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 34px;
+    font-weight: normal;
+    width: 800px;
+    margin-left: 10px;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 21px;
+    width: 800px;
+    margin-left: 10px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4C4C4C;
+    width: 150px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.button-text {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* right side of screen */
+
+aside {
+    float: right;
+    width: 20%;
+    margin-left: 0px;
+    margin-right: 62px;
+}
+
+h2 {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-style: bold;
+}
+
+hr {
+    background-color: #000000;
+    width: 100%;
+    height: 2px;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-style: bold;
+}
+
+footer {
+    display: none;
+}
+
+/* media queries */
+
+/* desktop */
+
+@media (max-width: 1270px) {
+    aside {
+        visibility: hidden;
+    }
+    footer {
+        display: none;
+    }
+}
+
+/* tablet */
+
+@media (max-width: 768px) {
+    main {
+        float: none;
+        width: 100%;
+        margin: 0px;
+    }
+
+    main > img {
+        width: 750px;
+    }
+
+    h1 {
+        font-size: 30px;
+        width: 750px;
+    }
+
+    p {
+        font-size: 17px;
+        width: 750px;
+    }
+
+    .button {
+        width: 118px;
+        height: 22px;
+    }
+    
+    .button-text {
+        font-size: 14px;
+    }
+}
+
+/* mobile */
+
+@media (max-width: 576px) {
+    main > img {
+        width: 550px;
+    }
+
+    h1 {
+        font-size: 23px;
+        width: 576px;
+    }
+
+    p {
+        font-size: 14px;
+        width: 550px;
+    }
+
+    .button {
+        width: 90px;
+        height: 14px;
+    }
+    
+    .button-text {
+        font-size: 10px;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        visibility: visible;
+        width: 100%;
+        margin: 0px;
+        margin-top: 20px;
+        padding-top: 50px;
+        height: 250px;
+        background-color: #5D5D5D;
+    }
+
+    .useful-links {
+        width: 200px;
+        float: left;
+    }  
+
+    .social {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .social-media {
+        width: 80px;
+        float: left;
+    }
+
+    .links-title {
+        color: #ffffff;
+        font-family: sans-serif;
+        font-style: bold;
+        font-size: 16px;
+        margin-left: 0px;
+    }
+
+    .links {
+        font-family: sans-serif;
+        font-size: 12px;
+        color: #ffffff;
+        margin-left: 0px;
+    }
+
+    .link-lines {
+        width: 100px;
+        height: 1px;
+        background-color: #ffffff;
+        border: 0 none;
+        position: absolute;
+        margin-top: -10px;
+        margin-left: 0px;
+    }
+
+    .social-icons {
+        width: 20px;
+        margin-top: 43px;
+    }
+
+    .fb-icon {
+        width: 15px;
+        margin-bottom: 10px;
+    }
+
+    .insta-icon {
+        width: 15px;
+        margin-bottom: 10px;
+    }
+
+    .tw-icon {
+        width: 15px;
+        margin-bottom: 10px;
+    }
+}
