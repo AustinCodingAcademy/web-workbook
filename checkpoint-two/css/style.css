@@ -1,1 +1,212 @@
+body {
+    display: flex;
+    align-items: flex-start;
+    background-color: gray;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1rem;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+h4 {
+    font-size: 0.8em;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+main {
+    width: 100%;
+    height: 579px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #a7a7a7;
+}
+
+.scrollbox {
+    height: 400px;
+    padding: 10px;
+    background-color: gray;
+    overflow: auto;
+}
+
+.scrollbox a {
+    text-decoration: none;
+    color: #55b5ff;
+    transition: color 300ms;
+}
+
+.scrollbox a:hover {
+    color: #c7f1ff;
+}
+
+.mybigdumbface {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 21px;
+    max-width: 175px;
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "resume"
+      "portfolio"
+      "about"
+      "contact";
+    justify-items: center;
+    font-size: 2em;
+    margin-right: 15px;
+}
+/* ^^grid for main nav bar^^ */
+
+.nav-wrapper {
+    width: 100%;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 67px;
+    width: 100%;
+}
+
+.about {
+    grid-area: about;
+    background-color: #ffffff;
+}
+.about:after {
+    width: 50px;
+}
+
+.bio {
+    grid-area: about;
+    background-color: #c7f1ff;
+}
+.bio:after {
+    width: 83px;
+}
+
+
+.resume {
+    grid-area: resume;
+    background-color: #8fc6e6;
+}
+.resume:after {
+    width: 69px;
+}
+
+.portfolio {
+    grid-area: portfolio;
+    background-color: #7bcaff;
+}
+.portfolio:after {
+    width: 75px;
+}
+
+.contact {
+    grid-area: contact;
+    background-color: #55b5ff;
+}
+.contact:after {
+    width: 69px;
+}
+
+.grid a {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    width: 80%;
+    padding: 15px 5px;
+    transition: padding 300ms;
+    border-radius: 5px;
+    font-size: 0.6em;
+}
+/* ^^nav bar button styling^^ */
+
+.grid a:hover, .grid .active {
+    padding: 20px 10px;
+}
+/* ^^Keeps underline transition aligned with text^^ */
+
+nav a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2098D1;
+    transform: scaleX(0);
+    transition-property: transform;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out;
+    border-radius: 5px;
+}
+
+nav a:hover:before, .active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+/* ^^main nav bar color change^^ */
+
+nav a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 15px;
+    background-color: #000;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 300ms ease-in-out 0s;
+}
+
+nav a:hover:after, .active:after {
+    visibility: visible;
+    transform: scaleX(1);
+    bottom: 18px;
+}
+/* ^^link underline transition^^ */
+
+video {
+    width: 50%;
+    height: auto;
+  }
+
+
+@media (max-width: 784px) {
+
+body {
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.grid {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 15px;
+}
+
+.nav-wrapper {
+    display: flex;
+}
+
+video {
+    width: 100%;
+    height: auto;
+  }
+
+}
 
