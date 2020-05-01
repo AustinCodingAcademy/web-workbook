@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <script type="text/javascript" src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+     <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="./css/style.css">
+     <title>The Princess and the Blog</title>
+   </head>
+   <body>
+     <section id="header">
+       <h1>The Princess and the Blog</h1>
+
+<div class="container">
+<div class="grid">
+  <div class="grid-sizer"></div>
+  <div class="gutter-sizer"></div>
+  <div class="grid-item active">
+    <div class="toggle">
+      <h3>Princess Dream</h3>
+    </div>
+    <div class="toggled">
+      <h3>My dream is to be a princess!</h3>
+      <img src="images/disney.jpg">
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div class="toggle">
+      <h3>Fishing</h3>
+    </div>
+    <div class="toggled">
+      <h3>I love going fishing with my daddy.</h3>
+      <img src="images/fishing.jpg">
+      <p>We spent the day fishing in Marble Falls.</p>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div class="toggle">
+      <h3>Pony Rides</h3>
+    </div>
+    <div class="toggled">
+      <h3>First Time on the horse.</h3>
+      <img src="images/pony.jpg">
+      <p>Cousins birthday party.</p>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div class="toggle">
+      <h3>BBQ</h3>
+    </div>
+    <div class="toggled">
+      <h3>Went to Black BBQ for the first time.</h3>
+      <img src="images/bbq.jpg">
+      <p>Blacks BBQ with the family.</p>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div class="toggle">
+      <h3>Football</h3>
+    </div>
+    <div class="toggled">
+      <h3>First UT Football game.</h3>
+      <img src="images/football-1.jpg">
+      <p>Had a lot of fun with my family.</p>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div class="toggle">
+      <h3>Sushi</h3>
+    </div>
+    <div class="toggled">
+      <h3>First time making Sushi.</h3>
+      <img src="images/sushi.jpg">
+      <p>Making Sushi with my Daddy.</p>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div class="toggle">
+      <h3>Longhorns</h3>
+    </div>
+    <div class="toggled">
+      <h3>Go Longhorns!</h3>
+      <img src="images/football-2.jpg">
+      <p>Thanks to my daddy, I'm a Longhorn fan.</p>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div class="toggle">
+      <h3>BB Gun</h3>
+    </div>
+    <div class="toggled">
+      <h3>First time shooting.</h3>
+      <img src="images/bb-gun.jpg">
+      <p>My Grandpa was teaching me how to shoot.</p>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div class="toggle">
+      <h3>Driving</h3>
+    </div>
+    <div class="toggled">
+      <h3>Cutie behind the wheel.</h3>
+      <img src="images/driving.jpg">
+      <p>Better watch out when i finally get my license.</p>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div class="toggle">
+      <h3>Corn</h3>
+    </div>
+    <div class="toggled">
+      <h3>NOM NOM NOM!</h3>
+      <img src="images/corn.jpg">
+      <p>I love me some corn.</p>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div class="toggle">
+      <h3>Christmas</h3>
+    </div>
+    <div class="toggled">
+      <h3>Christmas with my daddy's family.</h3>
+      <img src="images/christmas.jpg">
+      <p>I just gotta be the center of attention.</p>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div class="toggle">
+      <h3>Snow</h3>
+    </div>
+    <div class="toggled">
+      <h3>My first Texas snow.</h3>
+      <img src="images/snow.jpg">
+      <p>I had never seen snow in Texas before.</p>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div class="toggle">
+      <h3>Unicorns</h3>
+    </div>
+    <div class="toggled">
+      <h3>Unicorns are life!</h3>
+      <img src="images/unicorn.jpg">
+      <p>I LOVE UNICORNS!!!</p>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div class="toggle">
+      <h3>My Mommy</h3>
+    </div>
+    <div class="toggled">
+      <h3>This is my beautiful mommy.</h3>
+      <img src="images/mommy.jpg">
+      <p>She can be a bit shy.</p>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <div class="toggle">
+      <h3>My Daddy</h3>
+    </div>
+    <div class="toggled">
+      <h3>This is my daddy.</h3>
+      <img src="images/daddy.jpg">
+      <p>I love him soooooo much.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+
+var grid = document.querySelector('.grid');
+var msnry = new Masonry( grid, {
+  percentPosition: true,
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer',
+  stagger: 30,
+  gutter: '.gutter-sizer',
+});
+
+grid.addEventListener( 'click', function( event ) {
+  // don't proceed if item was not clicked on
+  if ( !matchesSelector( event.target, '.grid-item' ) ) {
+    return;
+  }
+  // change size of item via class
+  event.target.classList.toggle('active');
+  // trigger layout
+  msnry.layout();
+});
+</script>
+
+    </body>
+ </html>
