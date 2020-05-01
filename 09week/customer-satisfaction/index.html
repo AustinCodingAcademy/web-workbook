@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h2 style="text-align:center;">Give me your complaints</h2>
+            <form action="" name="registration">
+                <label for="companyURL">Enter your company URL </label>
+                <input type="text" name="companyURL" id="companyURL" placeholder="something.com">
+
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="john@doe.com" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}" required>
+                <div class="allChecks">
+                    <div class="checkContainer">
+                        <label for="harry">Website</label>
+                        <input type="checkbox" name="harry" value="harry">
+                    </div>
+
+                    <div class="checkContainer">
+                        <label for="you">Porfolio</label>
+                        <input type="checkbox" name="face" value="face">
+                    </div>
+                    <div class="checkContainer">
+                            <label for="you">Contact</label>
+                            <input type="checkbox" name="you" value="you">
+                    </div>
+                </div>
+                <label> Please select your preferred contact method</label>
+                <div class="radiocontainer">
+                    <input type="radio" id="contactChoice1"
+                    name="contact" value="email">
+                    <label for="contactChoice1">Email</label>
+
+                    <input type="radio" id="contactChoice2"
+                    name="contact" value="phone">
+                    <label for="contactChoice2">Phone</label>
+
+                    <input type="radio" id="contactChoice3"
+                    name="contact" value="mail">
+                    <label for="contactChoice3">Mail</label>
+
+                    <input type="radio" id="contactChoice4"
+                    name="contact" value="messengerdonkey">
+                    <label for="contactChoice3">Messenger</label>
+                </div>
+
+                <label for="hate">Level of Hate</label>
+                <input type="range" id="start" name="volume"
+           min="0" max="11" />
+                <textarea name="hatemessage" spellcheck="true" required></textarea>
+                <button type="reset">Reset</button>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+                  
+    </main>
+</body>
+</html>
