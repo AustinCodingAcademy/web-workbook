@@ -1,0 +1,168 @@
+.flexboxcontainer {
+  display: flex;
+  width: 100%;
+}
+
+.bigbox {
+  display: flex;
+  background-color: white;
+  min-height: 100%;
+  justify-content: flex-start;
+  color: black;
+  font-size: 15pt;
+  font-family: 'Roboto', sans serif;
+  border-top: 2px solid black;
+}
+
+header > a {
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+  text-decoration: none;
+  max-width: 20%;
+  color: white;
+  padding: 2%;
+  font-size: 11pt;
+}
+
+.newsarticlebox {
+  display: flex;
+  min-height: 100%;
+  min-width: 60%;
+  padding-left: 1%;
+  border: 4px solid red;
+}
+
+.newsarticle {
+  max-width: 98%;
+  padding-left: .5%;
+  padding-top: 2%;
+}
+
+.aside {
+  display: flex;
+  flex: wrap;
+  background-color: white;
+  flex-direction: column;
+  align-self: flex-start;
+  min-width: 20%;
+  min-height: 100%;
+  padding: 2%;
+  /* border: 4px solid red; */
+}
+
+h2 {
+  border-bottom: 2px solid black;
+  padding-bottom: 4px;
+}
+
+.topstories>p {
+  font-size: 12pt;
+}
+
+.footer {
+  display: flex;
+  align-items: flex-start;
+  min-width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+  font-weight: bold;
+  /* border: 3px solid white; */
+}
+
+.footer1>a {
+  color: white;
+  text-decoration: none;
+  line-height: 165%;
+  border-bottom: 1px solid white;
+  width: 20%;
+}
+
+.footer2>a {
+  color: white;
+  text-decoration: none;
+  line-height: 165%;
+  border-bottom: 1px solid white;
+  width: 20%;
+}
+
+.footer1 {
+  display: flex;
+  min-height: 40%;
+  min-width: 20%;
+  text-align: left;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 3%;
+  background-color: gray;
+}
+
+.footer2 {
+  display: flex;
+  min-height: 40%;
+  min-width: 80%;
+  color: black;
+  text-align: left;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 3%;
+  background-color: gray;
+}
+
+@media screen and (max-width:959px) {
+  .flexboxcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .footer1 {
+    min-width: 50%:
+  }
+  .footer2 {
+    min-width: 50%:
+  }
+  header>a {
+    display: flex;
+    background-color: gray;
+    text-decoration: none;
+    max-width: 50%;
+    margin: 2%;
+    color: white;
+    padding: 2%;
+    font-size: 11pt;
+  }
+}
+
+@media screen and (max-width:640px) {
+  .flexboxcontainer {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .bigbox {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+  }
+  .aside {
+    min-width: 100%;
+  }
+
+  .footer{
+    display: flex;
+  }
+  .footer1 {
+    display: flex;
+    min-width: 50%:
+  }
+  .footer2 {
+    min-width: 100%:
+  }
+}
+
+/* if you build it desktop first, your media quueries will be MAX-width, if you start with mobile view, your media queries will be MIN-width ! */
