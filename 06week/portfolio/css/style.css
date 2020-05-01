@@ -1,0 +1,81 @@
+/*desktop view*/
+body { 
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/background-portfolio.jpg');
+    background-repeat: no-repeat;
+     background-size: cover;
+}
+/* navbar using grid*/
+.navi {
+    height: 67px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1em;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navlink {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:antiquewhite;
+  }
+  
+  .navlink:hover {
+    color:antiquewhite;
+    border-left: 1px solid antiquewhite;
+    border-right: 1px solid antiquewhite;
+    padding: 1em 1em;
+  }
+
+
+.job{
+    text-shadow: 1px 1px 2px #471b52;
+    font-family: 'pacifico';
+    font-size: 28px;
+    color: antiquewhite;
+}
+/* this is where hello and my name interchange when hover*/
+.name{
+    font-size: 150px;
+    display: flex; 
+    justify-content: center;
+
+}
+a{
+    text-decoration:none;
+}
+.label {
+    text-shadow: 1px 1px 2px #471b52;
+    font-family: 'pacifico';
+    color: antiquewhite;
+    text-transform: lowercase;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.name a p.hello-label span{
+  position: center;
+  content: 'hello';
+}
+.name:hover a p.hello-label span{
+  display: none;
+}
+.name:hover a p.hello-label:after{
+  content: "I'm Taylor Colten";
+}
+/*this is mobile phone view*/
+@media (min-width: 576px) {
+  body{
+    width: 100%;
+
+  }
+  .navi{
+    width: 100%,
+    
+  }
+}
