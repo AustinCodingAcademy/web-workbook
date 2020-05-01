@@ -1,0 +1,117 @@
+
+
+.h1 {
+  font-family: Helvetica Neue;
+  font-size: 30px;
+  color: black;
+}
+
+.p {
+  font-family: Helvetica Neue;
+  font-size: 20px;
+  color: black;
+}
+
+img {
+  border-radius: 50%;
+  float: left;
+}
+
+.menu ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.menu {
+  float: left;
+}
+
+.menu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #111;
+}
+
+
+.pic {
+  margin-top: 10%;
+  /*padding: 30px;*/
+  font-size: 30px;
+  text-align: left;
+  /*background: rgb(206, 229, 243);*/
+  
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  /*--background: #f1f1f1;*/
+  background-image: url("https://www.planwallpaper.com/static/images/simple_blue_background-wallpaper-1920x1200.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: fixed;
+  color: black;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 20px;
+  text-align: center;
+  background: rgb(206, 229, 243);
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn { 
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: rgb(206, 229, 243);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: rgb(206, 229, 243);
+  margin-top: 10px;
+  color: black;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn { 
+    width: 100%;
+    padding: 0;
+  }
+}

@@ -1,0 +1,86 @@
+img {
+  margin-right:10px;
+  width: 100%;
+}
+/*Image and text container to us flexbox */
+.container {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  padding: 10px 0;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.techsq {
+  width: 200px;
+  background: #5D5D5D;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;         
+}
+/*This is the social media footer*/
+.socialmedia{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+.box{
+  background-color: #5D5D5D;
+  color: whitesmoke;
+  flex: 1;
+  color: white;
+  width: auto;
+  height: 33vh;
+  margin-top: 40px;
+}
+ 
+.fa {
+  /* padding: 10px; */
+  font-size: 30px;
+  width: 10px;
+  text-align: left;
+  /* text-decoration: none; */
+  /* margin: 5px 2px; */
+}
+ 
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #5D5D5D;
+  color: white;
+}
+.fa-instagram {
+  background: #5D5D5D;
+  color: white;
+}
+.fa-twitter {
+  background: #5D5D5D;
+  color: white;
+}
+/*End of social media footer*/
+ 
+/*Takes social media away when exceeds 500px*/
+@media (min-width: 500px) {
+  .socialmedia {
+    display: none;
+  }
+}
+/*Tablet view takes away text-container */
+@media (max-width: 900px) {
+  .text-container {
+    display: none;
+  }
+}
+  

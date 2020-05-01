@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto'); /* watch bit.ly/2fn591n */
+
+
+* {
+  /* the simplest css reset possible, can cause performance issues on very complex HTML Documents */
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background: url(../img/airline.jpg) no-repeat center center fixed;
+  background-size: cover;
+  background-color: #1d4356;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header,
+main {
+  /* the padding and border is calculated into the width and height of the <header> and <main> elements automatically by the browser */
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #193a55;
+  color: #fff;
+  height: 82px;
+  border: 0 solid #fff;
+  border-bottom-width: 1px;
+}
+
+.links ul {
+  list-style: none;
+}
+
+.links ul li {
+  margin: 10px;
+  display: inline;
+}
+
+.active {
+  color: #03b5a3;
+}
+
+.links ul li img {
+  margin-right: 5px;
+}
+
+main {
+  height: calc(100vh - 82px);
+  position: relative;  /* create a coordinate system */
+}
+
+section {
+  width: 542px;
+  height: 386px;
+  background: #193a55;
+  border-radius: 5px;
+  position: absolute;  /* can be positioned in the <main> coordinate system */
+  top: 50px;
+  left: 50px;
+}
+
+.tabs {
+  display: flex;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.tab1,
+.tab2,
+.tab3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 3); /* take up 1 third each */
+  height: 60px;
+  background: #018D80;
+}
+
+a:hover { 
+  background-color: yellow;
+}
+
+.tab1 {
+  background: #0063B7;  /* overrides what was set previously */
+  border-top-left-radius: 5px;
+}
+
+.tab3 {
+  border-top-right-radius: 5px;
+}
+
+.wrapper1{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  padding-top:50px
+}
+
+.wrapper2 {
+  display:flex;
+  flex-direction:row;
+  padding-bottom:50px;
+  padding-top:20px;
+  justify-content:space-around;
+}
+
+.wrapper3 {
+  display:flex;
+}
+
+.wrapper4 {
+  display:flex;
+  flex-direction:center;
+  padding-bottom:50px;
+  padding-top:20px;
+  justify-content:space-around;
+  
+}
+
+
+
+/*
+.box1, .box2, .box3, .box4 {
+  width: 175px;
+  height:40px;
+  border: 2px solid;
+  border-color:white;
+  border-radius:2px;
+  color:white; 
+}*/
+
+/*.box1 {
+  width:70px;
+  height:40px;
+  border: 2px solid white;
+  color:white;
+  border-radius:2px;
+  margin-left:15px;
+}*/
+
+.textsize {
+  width: 175px; 
+  height: 40px;
+  background: #193a55;
+  color: white;
+  border-color:  white;
+}
+
+p {
+  color:white;
+  padding-left:50px;
+}
+
+.textsize1 {
+  width: 60px; 
+  height: 40px;
+  background: #193a55;
+  color: white;
+  border-color:  white;
+}
+
+.R12 {
+  color:yellow;
+  padding-left:55px;
+}
+

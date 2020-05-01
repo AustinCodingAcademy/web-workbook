@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Checkpoint3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+  <div id=header>
+    <div class=cookies>Cookies Clicker Game!</div>
+    <span id=multiplier>1</span>
+  </div>
+    
+  <div class="showHowToPlay">
+    <a href="#" id="rightPanel" class="trigger right">How To Play</a>
+    <div class="howToPlay panel right">
+      <h2>Cookie Clicker</h2>
+      <p>Click on cookie to accumulate points to Uprade.</p>
+      <br>
+    </div>
+  <div>
+ 
+  <div id=content>
+    <img src="./img/cookie.png" alt="Cookie picture" id=cookie ontouchstart="zoom(1)" ontouchend="zoom(0)">
+    <a href="#" onclick="add()"><img src="./img/cookie.png"></a>
+    <br><br>
+    </div>
+  </div>
+  
+  <div id=footer>
+      <br><br>
+      <h2>You got: <input type="text" id="text" disabled style="text-align:center"> Cookies!</h2>
+    <button onclick="upgrade()">Upgrade<br>(25)</button>
+   </div>
+
+<script type="text/javascript" src="./js/jquery.slidePanel.min.js"></script>  
+<script src="./js/script.js"></script>
+</body>
+</html>

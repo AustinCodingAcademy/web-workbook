@@ -1,0 +1,68 @@
+/*Container for the main welcome*/
+.container1{
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2BCDC0;
+  color: white;
+  
+}
+/*Container that has all the boxes*/
+.container2{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+/*Box details with formats*/
+.box{
+  background-color: #1B1B1B;
+  flex: 1;
+  color: white;
+  align-content: center;
+  /* align-items: center; */
+  width: 100vw;
+  height: 50vh;    
+}
+.blocktext {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 13em
+}
+/*Rectangle color boxes */
+.rectangle1 {
+  width: 200px;
+  height: 50px;
+  background: #33A8DD;
+}
+
+.rectangle2 {
+  width: 200px;
+  height: 50px;
+  background: #F46731;
+}
+
+.rectangle3 {
+  width: 200px;
+  height: 50px;
+  background: #2BCDC0;
+}
+/*Media queries rules for change color when resizing web browser*/
+@media(max-width: 500px) {
+  .container1{
+    background-color: #33A8DD;
+  }
+  .container2{
+    flex-direction: column;
+    
+  }
+  .box{
+    background-color: whitesmoke;
+    color: black;
+  }
+}
