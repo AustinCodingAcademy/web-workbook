@@ -1,1 +1,295 @@
+body{
+  background-color: pink;
+}
 
+.header{
+  text-align: center;
+  margin: 1em;
+}
+
+.title{
+  font-size: 2em;
+  margin: 1em;
+}
+
+.desktop{
+  font-size: 1.5em;
+  margin: 1em;
+}
+
+.tablet{
+  display: none;
+}
+
+.phone{
+  display: none;
+}
+
+div > div{
+  background-color: grey;
+}
+
+img{
+  height: 400px;
+  width: 350px;
+  margin: 1%;
+}
+
+.main{
+  display: grid;
+  grid-auto-rows: minmax(300px, auto);
+  grid-gap: 3em;
+  margin: 3em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "box1 box1 box2 box2"
+    "box3 box3 box4 box5"
+    "box3 box3 box6 box6"
+    "box7 box8 box9 box10"
+}
+
+.box1{
+  grid-area: box1;
+  display: flex;
+  flex-direction: row;
+}
+
+.alley{
+  width: 80%;
+}
+
+.box1words{
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.box2{
+  grid-area: box2;
+  display: flex;
+  flex-direction: row;
+}
+
+.box2words{
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.box3{
+  grid-area: box3;
+  display: flex;
+  flex-direction: column;
+}
+
+.charroux{
+  align-self: center;
+  width: 90%;
+  height: 65%;
+}
+
+.box3words{
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.box4{
+  grid-area: box4;
+  display: flex;
+  flex-direction: column;
+}
+
+.wheelchair{
+  width: 90%;
+  align-self: center;
+}
+
+.box4words{
+  padding: 1em;
+}
+
+.box5{
+  grid-area: box5;
+  display: flex;
+  flex-direction: column;
+}
+
+.versailles{
+  width: 90%;
+  align-self: center;
+}
+
+.box5words{
+  padding: 1em;
+}
+
+.box6{
+  grid-area: box6;
+  display: flex;
+  flex-direction: column;
+}
+
+.river{
+  width: 90%;
+  align-self: center;
+}
+
+.box6words{
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.box7{
+  grid-area: box7;
+  display: flex;
+  flex-direction: column;
+}
+
+.sunset{
+  width: 90%;
+  align-self: center;
+}
+
+.box7words{
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.box8{
+  grid-area: box8;
+  display: flex;
+  flex-direction: column;
+}
+
+.switzer{
+  width: 90%;
+  align-self: center;
+}
+
+.box8words{
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.box9{
+  grid-area: box9;
+  display: flex;
+  flex-direction: column;
+}
+
+.bridge{
+  width: 90%;
+  align-self: center;
+}
+
+.box9words{
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.box10{
+  grid-area: box10;
+  display: flex;
+  flex-direction: column;
+}
+
+.park{
+  width: 90%;
+  align-self: center;
+}
+
+.box10words{
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.likes{
+  height: 25px;
+  width: 25px;
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: red;
+  align-self: baseline;
+  margin-top: 80%;
+}
+
+h5{
+  font-size: 1.35em;
+  border-bottom: 2px solid black;
+}
+
+article{
+  margin-top: 10px;
+}
+
+@media (max-width: 768px){
+  .main{
+    display: grid;
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 3em;
+    margin: 3em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "box1 box1"
+      "box2 box3"
+      "box4 box4"
+      "box5 box5"
+      "box6 box6"
+      "box7 box7"
+      "box8 box8"
+      "box9 box9"
+      "box10 box10"
+    }
+
+    .desktop{
+      display: none;
+    }
+
+    .tablet{
+      display: block;
+      font-size: 1.5em;
+      margin: 1em;
+    }
+
+    .box3{
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+@media (max-width: 576px){
+  .main{
+    display: grid;
+    grid-auto-rows: minmax(150px, auto);
+    grid-gap: 2em;
+    margin: 2em;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "box1"
+      "box2"
+      "box3"
+      "box4"
+      "box5"
+      "box6"
+      "box7"
+      "box8"
+      "box9"
+      "box10"
+  }
+
+  .tablet{
+    display: none;
+  }
+
+  .phone{
+    display: block;
+    font-size: 1.5em;
+    margin: 1em;
+  }
+}
