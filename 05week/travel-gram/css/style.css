@@ -1,1 +1,170 @@
+body {
+  border: 2px solid #000000;
+}
 
+header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#tablet {
+  display: none;
+}
+
+#mobile {
+  display: none;
+}
+
+.main {
+  margin: 35px;
+  display: grid;
+  grid-gap: 1em;
+  grid-auto-rows: minmax(200px, auto);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "box1 box1 box2 box2"
+  "box3 box3 box4 box5"
+  "box3 box3 box6 box6"
+  "box7 box8 box9 box10"
+  "box7 box8 box9 box10";
+}
+
+.x {
+  /* width: auto;
+  height: auto; */
+  margin-left: 1%;
+  padding: 1%;
+}
+
+.pic {
+  width: 30%;
+  /* height: 20%; */
+}
+
+.bars {
+  font-size: 5px;
+  padding: 1px;
+  background-color: #000000;
+  width: 50%;
+}
+
+.box {
+  border: 1px solid #000000;
+  /* max-height: 450px; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+.box1 {
+  background-color: #ffffff;
+  grid-area: box1;
+}
+
+.box2 {
+  background-color: #ffffff;
+  grid-area: box2;
+}
+
+.box3 {
+  background-color: #ffffff;
+  grid-area: box3;
+}
+
+.box4 {
+  background-color: #ffffff;
+  grid-area: box4;
+}
+
+.box5 {
+  background-color: #ffffff;
+  grid-area: box5;
+}
+
+.box6 {
+  background-color: #ffffff;
+  grid-area: box6;
+}
+
+.box7 {
+  background-color: #ffffff;
+  grid-area: box7;
+}
+
+.box8 {
+  background-color: #ffffff;
+  grid-area: box8;
+}
+
+.box9 {
+  background-color: #ffffff;
+  grid-area: box9;
+}
+
+.box10 {
+  background-color: #ffffff;
+  grid-area: box10;
+}
+
+@media (max-width: 768px){
+  .main {
+    margin: 35px;
+    display: grid;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "box1 box1"
+    "box2 box3"
+    "box4 box4"
+    "box5 box5"
+    "box6 box7"
+    "box8 box8"
+    "box9 box10";
+  }
+  #desktop {
+    display: none;
+  }
+
+  #tablet {
+    display: flex;
+  }
+
+  #mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 576px){
+  .main {
+    margin: 35px;
+    display: grid;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "box1"
+    "box2"
+    "box3"
+    "box4"
+    "box5"
+    "box6"
+    "box7"
+    "box8"
+    "box9"
+    "box10";
+  }
+  #desktop {
+    visibility: hidden;
+  }
+  #tablet {
+    display: none;
+  }
+  #mobile {
+    display: flex;
+  }
+}
