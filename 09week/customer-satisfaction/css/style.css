@@ -1,0 +1,191 @@
+h2 {
+    text-align: center;
+}
+
+.slidecontainer {
+    width: 40%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+} 
+
+$range: #000;
+$rangeBG: rgba(#000, .2);
+$smiley: #000;
+
+.slider {
+    width: 320px;
+    height: 2px;
+    background: $rangeBG;
+    border-radius: 2px;
+    position: relative;
+    .ui-slider-range {
+        border-radius: 2px;
+        background: $range;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .ui-slider-handle {
+        cursor: move;
+        cursor: grab;
+        cursor: -moz-grab;
+        cursor: -webkit-grab;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        outline: none;
+        top: 0;
+        z-index: 1;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0 2px 7px rgba(#000, .2);
+        margin: -1px 0 0 0;
+        transform: translate(-50%, -50%);
+        transition: box-shadow .3s ease;
+        .smiley {
+            position: absolute;
+            left: 50%;
+            bottom: 100%;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 2px solid $smiley;
+            opacity: 0;
+            transform: translate(-50%, -12px);
+            transition: all .3s ease 0s;
+            &:before,
+            &:after {
+                content: '';
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background: $smiley;
+                position: absolute;
+                top: 8px;
+            }
+            &:before {
+                left: 7px;
+            }
+            &:after {
+                right: 7px;
+            }
+            svg {
+                width: 16px;
+                height: 7px;
+                position: absolute;
+                left: 50%;
+                bottom: 5px;
+                margin: 0 0 0 -8px;
+                path {
+                    stroke-width: 3.4;
+                    stroke: $smiley;
+                    fill: none;
+                    stroke-linecap: round;
+                }
+            }
+        }
+        &.ui-state-active {
+            cursor: grabbing;
+            cursor: -moz-grabbing;
+            cursor: -webkit-grabbing;
+            box-shadow: 0 4px 12px rgba(#000, .32);
+            & + .text {
+                transform: translate(0, -80px);
+                transition: transform .3s ease 0s;
+            }
+            .smiley {
+                opacity: 1;
+                transform: translate(-50%, -12px);
+                transition: all .3s ease .1s;
+            }
+        }
+    }
+    .text {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        transform: translate(0, -44px);
+        transition: transform .3s ease .2s;
+        font-size: 16px;
+        strong {
+            color: #000;
+            font-weight: bold;
+        }
+    }
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    box-sizing: inherit;
+    &:before,
+    &:after {
+        box-sizing: inherit;
+    }
+}
+
+// Center & dribbble
+body {
+    min-height: 100vh;
+    font-family: Roboto, Arial;
+    color: #ADAFB6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    .dribbble {
+        position: fixed;
+        display: block;
+        right: 20px;
+        bottom: 20px;
+        opacity: .5;
+        transition: all .4s ease;
+        &:hover {
+            opacity: 1;
+        }
+        img {
+            display: block;
+            height: 36px;
+        }
+    }
+}

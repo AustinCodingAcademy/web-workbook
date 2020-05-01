@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Airplane search page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    </head>
+<body>
+    <div id="container">
+        <header>
+            <img id="logo" src="img/logo.png">
+            <nav>
+                <img id="home" src="img/home-icon.png">
+                <span>Home</span>
+                <img id="deal" src="img/deal-icon.png">
+                <span>Travel deals</span>
+                <img id="schedule" src="img/schedule-icon.png">
+                <span>Flight schedule</span> 
+                <img id="login" src="img/login-icon.png">
+                <span>Register/Login</span> 
+            </nav>
+        </header>   
+  <main>
+    <section>
+        <div>
+            <button id="plane" type="button"><img src="img/plane-icon.png"></button>
+            <button id="hotel" type="button"><img src="img/hotel-icon.png"></button>
+            <button id="car" type="button"><img src="img/car-icon.png"></button>
+        </div>
+        <div>
+            <input id="departCity" type="text" value="Depart" style="color:grey">
+            <input id="arriveCity" type="text" value="Arrival" style="color:grey">
+        </div>
+        <div>
+            <input id="departDate" type="text" value="mm/dd/yyyy" style="color:white">
+            <input id="arriveDate" type="text" value="mm/dd/yyyy" style="color:white">
+        </div>
+        <div>
+            <div id="passengers">
+            <span style="color: white">Passengers</span>
+            <select id="noOfPassengers" style="color: white">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            </select>
+        </div>
+        <div id="journeyType">
+            <form>
+            <input type="radio"  name="journey" value="Return" checked>Return
+            <input type="radio"  name="journey" value="Return">Oneway
+            </form>
+        </div>
+        <div>
+            <button id="searchFlight" type="button" style="color: white">Search Flights</button>
+        </div>
+        
+    </section>
+  </main>
+</body>
+</html>

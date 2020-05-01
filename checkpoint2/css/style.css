@@ -1,0 +1,236 @@
+body{
+    background-image: url("../img/bgrnd.jpg");;
+    }
+    
+    #wrapper{
+    width: 800px;
+    height: 800px;
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-top: 17px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-rows: 30px 30px 800px;
+    grid-gap: .5em;
+    grid-template-columns: 500px 400px 392px;
+    }
+    
+    
+    #leftCol{
+    background-color: rgb(225, 235, 236); 
+    grid-row: span 3;
+    padding-left: 10px;
+    }
+    
+    .flex-menu{
+        grid-column: span 2;
+        height: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        color: rgb(25, 39, 41);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        cursor: pointer;
+        }
+        
+   
+ ul{
+    display: flex;
+    flex-direction: column;
+    align-self: left;
+    list-style-type: circle;
+    padding-left: 20px;
+    padding-top: 20px;
+    }
+        
+    h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(24, 11, 97);
+    font-size: 30px;
+    font-style: oblique;
+    padding-bottom: 10px;
+    }
+    
+    h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(85, 71, 94);
+    font-size: 20px;
+    text-decoration: underline;
+    font-style: italic;
+    }   
+    
+    p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: .5px .5px;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* padding-top: 10px; */
+    padding-bottom: 10px;
+    }
+    
+    #hello{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: .5px .5px;
+    color: black;
+    }
+    
+    #me{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: .5px .5px;
+    color: rgb(150, 134, 116);
+    }
+    nav{
+    transition: color 2s, font-size 2s, text-decoration 2s;
+    }
+    #aboutMe{
+    font-size: 25px;
+    text-decoration:underline brown;
+    }
+    
+    nav:hover{
+    font-size: 25px;
+    text-decoration:underline brown;
+    font-style: italic; 
+    
+    }
+    
+    #skills{
+    display: none;
+    }
+    
+    li{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 21px;
+    font-style: italic;
+    transition: color 2s, font-size 2s, text-decoration 2s;
+    }
+    
+    li:hover{
+    font-size: 25px;
+    text-decoration:underline brown;
+    }
+    
+    .item{
+    grid-column: span 2;
+    background-color: white;
+    height: 325px;
+    }
+    
+    .myImage{
+    background-image: url("../img/me2.jpg");
+    transition: transform 2s;
+    background-size: cover;
+    }
+    
+    .myImage:hover{
+    background-image: url("../img/me3.jpg");
+    background-size: cover;
+    
+    }
+    
+    .mobileSkills{
+    display: none;
+    }
+    
+    @media (max-width: 400px){
+    #wrapper{
+    width: 400 px;
+    height:auto;
+    grid-template-columns: 400px;
+    grid-template-rows: 500px 500px 500px 500px 500px;
+    }
+    
+    #leftCol{
+    display: none;
+    }
+    
+    .flex-menu{
+        display: none;   }
+    
+    .list{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    list-style-type: circle;
+
+    }
+    
+    nav{
+    /* transition: color 2s, font-size 2s, text-decoration 2s; */
+    display: none; 
+    }
+    
+    li{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: color 2s, font-size 2s, text-decoration 2s;
+    }
+    
+    li:hover{
+    font-size: 25px;
+    text-decoration:underline brown;
+    }
+    
+    .item{
+        grid-row: span 2;
+    background-color: rgba(156, 133, 216, 0.226);
+    /* height: 350px;
+    width: 350px; */
+    border: 1px solid blue;
+    height: 1000px;
+    }
+
+    .mobileSkills{
+        grid-row: 3/5;
+        background-color: aquamarine;
+        border: 1px solid red;
+        }
+    
+    .myImage{
+    display: none;
+    }
+    
+    .myImage:hover{
+    display: none;    
+    }
+    
+   
+    
+    h2{
+     font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    font-size: 20px;
+    text-decoration: underline;
+    font-style: italic; 
+
+    }
+
+    .lists{
+            font-family: Arial, Helvetica, sans-serif;
+           color: red;
+           font-size: 20px;
+           text-decoration: underline;
+           font-style: italic; 
+    }
+    
+    p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    text-shadow: .5px .5px;
+    color: pink;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    } 
+    }
