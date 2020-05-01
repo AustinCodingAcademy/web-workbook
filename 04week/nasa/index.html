@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <script>
+    function sendMessage(){
+        alert('Thank you for contacting us.')
+        document.getElementById("text").value = "";
+        document.getElementById("textTwo").value = "";
+    }
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="pictureContainer"></div>
+      <div class="contentSpacer"></div>
+      <div class="mainContentContainer">
+
+        <div class="columnContainer">
+          <div>Social Media</div>
+          <div>
+            Twitter - @nasa<br> Facebook - fb.com/nasa<br> Instagram - @nasa<br> Youtube - youtube.com/NASA<br>
+          </div>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="columnContainer">
+          <div>OFFICE INFO</div>
+          <div>
+            Public Communications Office<br> NASA Headquarters<br> 300 E. Street SW, Suite 5R30<br> (202)358-0001 (Office)<br> (202)358-4338 (Fax)<br>
+
+          </div>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="columnContainer">
+          <div>CONTACT US</div>
+          <div class="formContainer">
+            <div class="textContainer">Name</div>
+            <div><input type="text"  id = "text"></div>
+            <div class="textContainer">Message</div>
+            <div><textarea class="message" id = "textTwo"></textarea></div>
+            <div><button class="formSubmit" onclick = "sendMessage()">send</button></div>
+            <div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </body>
+
+</html>

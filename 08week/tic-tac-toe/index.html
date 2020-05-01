@@ -6,24 +6,32 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="row">
-    <div data-cell="0"></div>
-    <div data-cell="1"></div>
-    <div data-cell="2"></div>
-  </div>
-  <div class="row">
-    <div data-cell="3"></div>
-    <div data-cell="4"></div>
-    <div data-cell="5"></div>
-  </div>
-  <div class="row">
-    <div data-cell="6"></div>
-    <div data-cell="7"></div>
-    <div data-cell="8"></div>
-  </div>
-  <div id="announce-winner"></div>
-  <button id="clear">Clear Board</button>
+<main>
+    <div id="board">
+      <div class="row">
+        <div data-cell="0" class="data-cell"></div>
+        <div data-cell="1" class="data-cell"></div>
+        <div data-cell="2" class="data-cell"></div>
+      </div>
+      <div class="row">
+        <div data-cell="3" class="data-cell"></div>
+        <div data-cell="4" class="data-cell"></div>
+        <div data-cell="5" class="data-cell"></div>
+      </div>
+      <div class="row">
+        <div data-cell="6" class="data-cell"></div>
+        <div data-cell="7" class="data-cell"></div>
+        <div data-cell="8" class="data-cell"></div>
+      </div>
+    </div>
+    <div id="announce-winner"></div>
+    <button id="clear">Clear Board</button>
+  </main>
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="./script.js"></script>
+  <script type="text/javascript" src="../../simple-scrollbar/simple-scrollbar.js"></script>
+  <script type="text/javascript" src="../../js/nav-menu.js"></script>
+
 </body>
 </html>

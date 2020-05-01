@@ -1,1 +1,1035 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gloria Hallelujah', cursive;
+}
 
+/* --- Header Container and Children --- */
+
+.headerContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-image: linear-gradient(rgb(13, 29, 63), rgb(108, 141, 248));
+}
+
+.leftContainer {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 50%;
+  height: 95%;
+  background-image: url("../img/gameBackgrounds/logo.png");
+  background-size: 100% 100%;
+}
+
+.vineStyle {
+  width: 12%;
+  height: 100%;
+  background-image: url("../img/gameBackgrounds/Vines.png");
+  background-size: 100% 100%;
+}
+
+.centerContainer {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stats {
+  width: 48%;
+  height: 90%;
+  background-image: url("../img/gameBackgrounds/woodBoard.png");
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.woodInventoryContainer {
+  width: 50%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.stoneInventoryContainer {
+  width: 50%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.ironInventoryContainer {
+  width: 50%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.waterInventoryContainer {
+  width: 50%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.foodInventoryContainer {
+  width: 50%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.inventoryOpenContainer {
+  width: 50%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed black;
+  margin-top: 10px;
+  font-weight: bolder;
+}
+
+.inventoryOpenContainer:hover {
+  border: 1px solid red;
+  color: red;
+  cursor: pointer;
+}
+
+.woodIcon {
+  height: 32px;
+  width: 32px;
+  background-image: url("../img/materials/iconWood.png");
+  background-size: 100% 100%;
+}
+
+.stoneIcon {
+  height: 32px;
+  width: 32px;
+  background-image: url("../img/materials/iconStone.png");
+  background-size: 100% 100%;
+}
+
+.ironIcon {
+  height: 32px;
+  width: 32px;
+  background-image: url("../img/materials/iconOreIron.png");
+  background-size: 100% 100%;
+}
+
+.waterIcon {
+  height: 32px;
+  width: 32px;
+  background-image: url("../img/materials/iconWater.png");
+  background-size: 100% 100%;
+}
+
+.foodIcon {
+  height: 32px;
+  width: 32px;
+  background-image: url("../img/materials/iconFood.png");
+  background-size: 100% 100%;
+}
+
+.currentResorceCount {
+  width: 100px;
+  height: auto;
+  text-align: end;
+}
+
+.inventoryOpenButton {
+  height: auto;
+  width: auto;
+}
+
+.rightContainer {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.informationContainer {
+  width: 50%;
+  height: 100%;
+  background-image: url("../img/gameBackgrounds/signPost.png");
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+#informationCenter {
+  width: 25%;
+  height: 30%;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-image: url("../img/gameBackgrounds/smallWoodBoard.png");
+  background-size: 100% 100%;
+  transform: skewY(-2deg);
+  margin-top: 9%;
+  text-align: center;
+}
+
+#informationAlerts {
+  width: 25%;
+  height: 30%;
+  background-image: url("../img/gameBackgrounds/smallWoodBoard.png");
+  background-size: 100% 100%;
+  transform: skewY(2deg);
+  margin-top: 11%;
+  text-align: center;
+  text-justify: auto;
+}
+
+#informationQuests {
+  width: 25%;
+  height: 30%;
+  background-image: url("../img/gameBackgrounds/smallWoodBoard.png");
+  background-size: 100% 100%;
+  transform: skewY(-4deg);
+  margin-top: 13%;
+  text-align: center;
+}
+
+/* -- Alert cover effects--*/
+
+#informationAlerts:hover {
+  border: 1px solid red;
+  color: red;
+  cursor: pointer;
+}
+
+#informationCenter:hover {
+  border: 1px solid red;
+  color: red;
+  cursor: pointer;
+}
+
+#informationQuests:hover {
+  border: 1px solid red;
+  color: red;
+  cursor: pointer;
+}
+
+/* --- Inventory --- */
+
+#fullInventory {
+  display: none;
+  /* display: flex; */
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  left: 2.5vw;
+  height: auto;
+  width: 95vw;
+  border: 2px solid rgb(255, 0, 0);
+  background-image: linear-gradient(rgb(13, 29, 63), rgb(108, 141, 248));
+  box-shadow: 5px 5px 10px black;
+}
+
+.fullInventoryItems {
+  width: 50%;
+  height: 100%;
+  border-right: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.fullInventorySpecial {
+  width: 25%;
+  height: 100%;
+  border-right: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fullInventoryBoat {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boatInvContainer {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.fullBoatInv {
+  height: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.storage {
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.inventoryItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+}
+
+.innerInventoryItem {
+  width: 104px;
+  height: 104px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border: 1px solid black;
+  font-weight: bolder;
+}
+
+.bamboo {
+  background-image: url("../img/materials/itemBamboo.png");
+  background-size: 100% 100%;
+}
+
+.jute {
+  background-image: url("../img/materials/itemJute.png");
+  background-size: 100% 100%;
+}
+
+.palmLeaf {
+  background-image: url("../img/materials/itemPalmLeaf.png");
+  background-size: 100% 100%;
+}
+
+.wood {
+  background-image: url("../img/materials/itemWood.png");
+  background-size: 100% 100%;
+}
+
+.lianaVine {
+  background-image: url("../img/materials/itemLiana.png");
+  background-size: 100% 100%;
+}
+
+.resin {
+  background-image: url("../img/materials/itemResin.png");
+  background-size: 100% 100%;
+}
+
+.stone {
+  background-image: url("../img/materials/itemStone.png");
+  background-size: 100% 100%;
+}
+
+.iron {
+  background-image: url("../img/materials/itemOreIron.png");
+  background-size: 100% 100%;
+}
+
+.fireWood {
+  background-image: url("../img/items/outpost/itemFirewood.png");
+  background-size: 100% 100%;
+}
+
+.stoneBlock {
+  background-image: url("../img/items/querry/itemStoneBlock.png");
+  background-size: 100% 100%;
+}
+
+.dryedJute {
+  background-image: url("../img/items/huntersTent/itemDryJute.png");
+  background-size: 100% 100%;
+}
+
+.torch {
+  background-image: url("../img/items/huntersTent/itemTorch.png");
+  background-size: 100% 100%;
+}
+
+.jackPlane {
+  background-image: url("../img/items/woodWorkshop/itemJackPlane.png");
+  background-size: 100% 100%;
+}
+
+.bucket {
+  background-image: url("../img/items/woodWorkshop/itemBucket.png");
+  background-size: 100% 100%;
+}
+
+.plank {
+  background-image: url("../img/items/woodWorkshop/itemPlank.png");
+  background-size: 100% 100%;
+}
+
+.rope {
+  background-image: url("../img/items/woodWorkshop/itemRope.png");
+  background-size: 100% 100%;
+}
+
+.ropeLadder {
+  background-image: url("../img/items/woodWorkshop/itemRopeLadder.png");
+  background-size: 100% 100%;
+}
+
+.mat {
+  background-image: url("../img/items/weaver/itemMat.png");
+  background-size: 100% 100%;
+}
+
+.wickerBasket {
+  background-image: url("../img/items/weaver/itemWickerBasket.png");
+  background-size: 100% 100%;
+}
+
+.woodenLattice {
+  background-image: url("../img/items/weaver/itemWoodenLattice.png");
+  background-size: 100% 100%;
+}
+
+.ceramicLantern {
+  background-image: url("../img/items/Pottery/itemCeramicLantern.png");
+  background-size: 100% 100%;
+}
+
+.ceramicPot {
+  background-image: url("../img/items/Pottery/itemCeramicPot.png");
+  background-size: 100% 100%;
+}
+
+.cog {
+  background-image: url("../img/items/smithy/itemAncientGear.png");
+  background-size: 100% 100%;
+}
+
+.lampOil {
+  background-image: url("../img/items/smithy/itemLampOil.png");
+  background-size: 100% 100%;
+}
+
+.glassBottle {
+  background-image: url("../img/items/glassBlowing/itemBottle.png");
+  background-size: 100% 100%;
+}
+
+.lense {
+  background-image: url("../img/items/glassBlowing/itemLens.png");
+  background-size: 100% 100%;
+}
+
+.string {
+  background-image: url("../img/items/loom/itemThread.png");
+  background-size: 100% 100%;
+}
+
+.cloth {
+  background-image: url("../img/items/loom/itemFabric.png");
+  background-size: 100% 100%;
+}
+
+/* --- Build the items grid --- */
+
+.itemGrid1 {
+  grid-area: item1;
+}
+
+.itemGrid2 {
+  grid-area: item2;
+}
+
+.itemGrid3 {
+  grid-area: item3;
+}
+
+.itemGrid4 {
+  grid-area: item4;
+}
+
+.itemGrid5 {
+  grid-area: item5;
+}
+
+.itemGrid6 {
+  grid-area: item6;
+}
+
+.itemGrid7 {
+  grid-area: item7;
+}
+
+.itemGrid8 {
+  grid-area: item8;
+}
+
+.itemGrid9 {
+  grid-area: item9;
+}
+
+.itemGrid10 {
+  grid-area: item10;
+}
+
+.itemGrid11 {
+  grid-area: item11;
+}
+
+.itemGrid12 {
+  grid-area: item12;
+}
+
+.itemGrid13 {
+  grid-area: item13;
+}
+
+.itemGrid14 {
+  grid-area: item14;
+}
+
+.itemGrid15 {
+  grid-area: item15;
+}
+
+.itemGrid16 {
+  grid-area: item16;
+}
+
+.itemGrid17 {
+  grid-area: item17;
+}
+
+.itemGrid18 {
+  grid-area: item18;
+}
+
+.itemGrid19 {
+  grid-area: item19;
+}
+
+.itemGrid20 {
+  grid-area: item20;
+}
+
+.itemGrid21 {
+  grid-area: item21;
+}
+
+.itemGrid22 {
+  grid-area: item22;
+}
+
+.itemGrid23 {
+  grid-area: item23;
+}
+
+.itemGrid24 {
+  grid-area: item24;
+}
+
+.itemGrid25 {
+  grid-area: item25;
+}
+
+.itemGrid26 {
+  grid-area: item26;
+}
+
+.itemGrid27 {
+  grid-area: item27;
+}
+
+.itemGrid28 {
+  grid-area: item28;
+}
+
+.itemsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 15px;
+  height: 100%;
+  width: 100%;
+  grid-template-areas: "item1 item2 item3 item4 item5" "item6 item7 item8 item9 item10" "item11 item12 item13 item14 item15" "item16 item17 item18 item19 item20" "item21 item22 item23 item24 item25" "item26 item26 item27 item28 item28";
+}
+
+.fullInventoryTitle {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: bolder;
+  color: white;
+}
+
+.exitInventoryContainer {
+  height: 15px;
+  width: 100%;
+  display: flex;
+  /* align-items: flex-start;
+    justify-content: flex-start; */
+}
+
+.exitInventoryContainer>div {
+  margin-left: 10px;
+}
+
+.exitInventoryContainer>div:hover {
+  color: red;
+  cursor: pointer;
+}
+
+/* --- Special Inventory --- */
+
+.cutlass {
+  background-image: url("../img/items/smithy/cutlass.png");
+  background-size: 100% 100%;
+}
+
+.axe {
+  background-image: url("../img/items/smithy/itemSplittingMaul.png");
+  background-size: 100% 100%;
+}
+
+.pickAxe {
+  background-image: url("../img/items/smithy/Pickaxe_stone.png");
+  background-size: 100% 100%;
+}
+
+.fishHook {
+  background-image: url("../img/items/special/fishHook.png");
+  background-size: 100% 100%;
+}
+
+.waterPump {
+  background-image: url("../img/items/special/itemWaterMechanism.png");
+  background-size: 100% 100%;
+}
+
+/* --- Boat ---*/
+
+.haul {
+  background-image: url("../img/items/boat/haul.png");
+  background-size: 100% 100%;
+}
+
+.mast {
+  background-image: url("../img/items/boat/mast.png");
+  background-size: 100% 100%;
+}
+
+.sails {
+  background-image: url("../img/items/boat/sail.png");
+  background-size: 100% 100%;
+}
+
+.rudder {
+  background-image: url("../img/items/boat/rudder.png");
+  background-size: 100% 100%;
+}
+
+.spyGlass {
+  background-image: url("../img/items/boat/spyGlass.png");
+  background-size: 100% 100%;
+}
+
+.starDisk {
+  background-image: url("../img/items/rainbowRefractor/itemAstroTile.png");
+  background-size: 100% 100%;
+}
+
+/* --- Main Container and Children --- */
+
+.mainGameContainer {
+  position: absolute;
+  top: 15vh;
+  left: 0;
+  height: 85vh;
+  width: 100%;
+  border-top: 2px solid black;
+  background-image: linear-gradient(rgb(108, 141, 248), rgba(0, 0, 0, 0));
+  display: flex;
+  flex-direction: row;
+}
+
+/* --- Buildings Container --- */
+
+.buildingsContainer {
+  height: 85vh;
+  width: 20%;
+  overflow: scroll;
+}
+
+.buildingOuterContainer {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.452);
+  border-top: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.outpost {
+  background-image: url("../img/construction/outpost.png");
+  background-size: 100% 100%;
+  width: 264px;
+  height: 200px;
+}
+
+.woodWorkShop {
+  background-image: url("../img/construction/objBuildWoodWorkshop.png");
+  background-size: 100% 100%;
+  width: 312px;
+  height: 328px;
+}
+
+.quarry {
+  background-image: url("../img/construction/objBuildQuarry.png");
+  background-size: 100% 100%;
+  width: 280px;
+  height: 218px;
+}
+
+.hunter {
+  background-image: url("../img/construction/objBuildHunter.png");
+  background-size: 100% 100%;
+  width: 256px;
+  height: 266px;
+}
+
+.weaver {
+  background-image: url("../img/construction/objBuildWeavingWorkshop.png");
+  background-size: 100% 100%;
+  width: 314px;
+  height: 306px;
+}
+
+.well {
+  background-image: url("../img/construction/objBuildWellWaterStoneStage4Final.png");
+  background-size: 100% 100%;
+  width: 320px;
+  height: 320px;
+}
+
+.dryer {
+  background-image: url("../img/construction/objBuildDryer.png");
+  background-size: 100% 100%;
+  width: 330px;
+  height: 252px;
+}
+
+.pottery {
+  background-image: url("../img/construction/objBuildPotteryWorkshop.png");
+  background-size: 100% 100%;
+  width: 315px;
+  height: 252px;
+}
+
+.smithy {
+  background-image: url("../img/construction/objBuildWorkshopSmithy.png");
+  background-size: 100% 100%;
+  width: 328px;
+  height: 240px;
+}
+
+.lure {
+  background-image: url("../img/construction/objLureWorkbench.png");
+  background-size: 100% 100%;
+  width: 360px;
+  height: 352px;
+}
+
+.loom {
+  background-image: url("../img/construction/objBuildLoom.png");
+  background-size: 100% 100%;
+  width: 320px;
+  height: 320px;
+}
+
+.glass {
+  background-image: url("../img/construction/objBuildGlassWorkshop.png");
+  background-size: 100% 100%;
+  width: 322px;
+  height: 300px;
+}
+
+.pier {
+  background-image: url("../img/construction/objBuildPier.png");
+  background-size: 100% 100%;
+  width: 320px;
+  height: 280px;
+}
+
+/* --- Raw Materials Container --- */
+
+.rawMaterialContainer {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.minertitle {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+  border-bottom: 2px solid black;
+}
+
+.resourceMiner {
+  height: 104px;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.miner {
+  width: 104px;
+  height: 104px;
+  border: 2px solid black;
+}
+
+.bambooMiner {
+  background-image: url("../img/materials/itemBamboo.png");
+  background-size: 100% 100%;
+}
+
+.woodMiner {
+  background-image: url("../img/materials/itemWood.png");
+  background-size: 100% 100%;
+}
+
+.stoneMiner {
+  background-image: url("../img/materials/itemStone.png");
+  background-size: 100% 100%;
+}
+
+.ironMiner {
+  background-image: url("../img/materials/itemOreIron.png");
+  background-size: 100% 100%;
+}
+
+/* --- Buildings item creation --- */
+
+.itemConstructBuilding {
+  display: none;
+  width: 100%;
+  height: 85vh;
+  top: 15vh;
+  left: 0;
+  background-image: linear-gradient(rgb(108, 141, 248), white);
+  position: absolute;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.shopCloseController {
+  position: absolute;
+  top: 0;
+  left: 3vw;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.creatableItems {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-image: linear-gradient(rgb(108, 141, 248), white);
+}
+
+.buildingImageContainer {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemsAvailableCreate {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outterItemCreate {
+  height: auto;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.outterItemCreate>div:nth-of-type(1) {
+  height: 20px;
+  width: 104px;
+}
+
+.outterItemCreate>div:nth-of-type(2) {
+  height: 104px;
+  width: 104px;
+  border: 2px solid black;
+}
+
+.outterItemCreate>div:nth-of-type(3) {
+  height: 50px;
+  width: 104px;
+}
+
+/*     */
+
+.shopOpen {
+  display: flex;
+}
+
+.shopClosed {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(10px);
+}
+
+.outpostLarge {
+  background-image: url("../img/construction/outpostLarge.png");
+  background-size: 100% 100%;
+  width: 528px;
+  height: 400px;
+}
+
+.woodWorkShopLarge {
+  background-image: url("../img/construction/objBuildWoodWorkshopLarge.png");
+  background-size: 100% 100%;
+  width: 624px;
+  height: 656px;
+}
+
+.quarryLarge {
+  background-image: url("../img/construction/objBuildQuarryLarge.png");
+  background-size: 100% 100%;
+  width: 560px;
+  height: 436px;
+}
+
+.hunterLarge {
+  background-image: url("../img/construction/objBuildHunterLarge.png");
+  background-size: 100% 100%;
+  width: 512px;
+  height: 532px;
+}
+
+.weaverLarge {
+  background-image: url("../img/construction/objBuildWeavingWorkshopLarge.png");
+  background-size: 100% 100%;
+  width: 628px;
+  height: 612px;
+}
+
+.wellLarge {
+  background-image: url("../img/construction/objBuildWellWaterStoneStage4FinalLarge.png");
+  background-size: 100% 100%;
+  width: 640px;
+  height: 640px;
+}
+
+.dryerLarge {
+  background-image: url("../img/construction/objBuildDryerLarge.png");
+  background-size: 100% 100%;
+  width: 660px;
+  height: 504px;
+}
+
+.potteryLarge {
+  background-image: url("../img/construction/objBuildPotteryWorkshopLarge.png");
+  background-size: 100% 100%;
+  width: 630px;
+  height: 504px;
+}
+
+.smithyLarge {
+  background-image: url("../img/construction/objBuildWorkshopSmithyLarge.png");
+  background-size: 100% 100%;
+  width: 656px;
+  height: 480px;
+}
+
+.lureLarge {
+  background-image: url("../img/construction/objLureWorkbenchLarge.png");
+  background-size: 100% 100%;
+  width: 720px;
+  height: 704px;
+}
+
+.loomLarge {
+  background-image: url("../img/construction/objBuildLoomLarge.png");
+  background-size: 100% 100%;
+  width: 640px;
+  height: 640px;
+}
+
+.glassLarge {
+  background-image: url("../img/construction/objBuildGlassWorkshopLarge.png");
+  background-size: 100% 100%;
+  width: 644px;
+  height: 600px;
+}
+
+.pierLarge {
+  background-image: url("../img/construction/objBuildPier.png");
+  background-size: 100% 100%;
+  width: 640px;
+  height: 560px;
+}

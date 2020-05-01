@@ -1,11 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+  background-blend-mode: normal, lighten, soft-light;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#board {
+  border: solid 4px #303030;
+}
+
 div[data-cell] {
   width: 100px;
   height: 100px;
-  background-color: #f2f2f2;
+  background-color: rgba(255, 51, 0, 0.253);
+  color: #e0e0e0;
   float: left;
-  border: 1px solid #808080;
+  border: 1px solid #303030;
   font-size: 100px;
   text-align: center;
+  user-select: none;
+}
+
+div[data-cell].color1 {
+  color: rgb(89, 231, 60);
+}
+div[data-cell].color2 {
+  color: #0077C0
 }
 
 .row {

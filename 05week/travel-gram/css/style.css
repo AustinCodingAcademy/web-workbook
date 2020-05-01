@@ -1,1 +1,255 @@
+body{
+  margin: 0;
+  margin-right: 2vw;
+  margin-left: 2vw;
+}
 
+.box1 {
+  grid-area: box1;
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.box3 {
+  grid-area: box3;
+}
+
+.box4 {
+  grid-area: box4;
+}
+
+.box5 {
+  grid-area: box5;
+}
+
+.box6 {
+  grid-area: box6;
+}
+
+.box7 {
+  grid-area: box7;
+}
+
+.box8 {
+  grid-area: box8;
+}
+
+.box9 {
+  grid-area: box9;
+}
+
+.box10 {
+  grid-area: box10;
+}
+
+.innerBox1 {
+  grid-area: innerBox1;
+}
+
+.innerBox2 {
+  grid-area: innerBox2;
+}
+
+.innerBox3 {
+  grid-area: innerBox3;
+}
+
+.box {
+  height: auto;
+  background-color: lightgray;
+}
+.gridContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 100vh;
+  grid-column-gap: 2vw;
+  grid-row-gap: 2vw;
+  grid-template-areas:
+    "box1 box1 box2 box2"
+    "box1 box1 box2 box2"
+    "box3 box3 box4 box5"
+    "box3 box3 box4 box5"
+    "box3 box3 box6 box6"
+    "box7 box8 box9 box10"
+    "box7 box8 box9 box10"
+    "box7 box8 box9 box10";
+}
+
+.innerGrid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "innerBox1"
+    "innerBox2"
+    "innerBox3";
+}
+.innerBox1{
+  background-image: url(../pic/envelope.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.innerBox2{
+  display: flex;
+  align-items: center;
+}
+.innerBox3{
+  display: flex;
+  justify-content: space-between;
+}
+
+.innerBox3>div:nth-of-type(1){
+  display: flex;  
+}
+
+.innerBox3>div:nth-of-type(1)>div:nth-of-type(1){
+  height:15px;
+  width: 15px;
+  border: 1px;
+  border-style: solid;
+  border-radius: 7px;
+  background-color: red;
+  margin-left:10px;
+  bottom:0;
+}
+
+.innerBox3>div:nth-of-type(2){
+  display:flex;
+  justify-content: space-around;
+}
+
+.innerBox3>div:nth-of-type(2)>div{
+  height: 80%;
+  width: 125px;
+  border: 1px;
+  border-style: solid;
+  background-color: red;
+  margin-right:10px;
+  margin-bottom:10px;
+}
+
+@media (max-width: 768px){
+  .gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
+    grid-template-areas:
+      "box1 box1"
+      "box1 box1"
+      "box1 box1"
+      "box2 box3"
+      "box2 box3"
+      "box4 box4"
+      "box5 box5"
+      "box5 box5"
+      "box5 box5"
+      "box6 box7"
+      "box6 box7"
+      "box8 box8"
+      "box9 box10"
+      "box9 box10"
+      "box9 box10";
+  }
+  .gridContainer>.innerGrid:nth-of-type(4){
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
+    grid-template-areas:
+      "innerBox1 innerBox2 innerBox2"
+      "innerBox1 innerBox2 innerBox2"
+      "innerBox1 innerBox3 innerBox3";
+  }
+  .gridContainer>.innerGrid:nth-of-type(8){
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
+    grid-template-areas:
+      "innerBox1 innerBox2 innerBox2"
+      "innerBox1 innerBox2 innerBox2"
+      "innerBox1 innerBox3 innerBox3";
+  }
+}
+
+@media (max-width: 576px){
+  .innerBox{
+    height: 30vh;
+  }
+  .gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-areas:
+      "box1 box1"
+      "box2 box2"
+ ls
+      "box3 box3"
+      "box4 box4"
+      "box5 box5"
+      "box6 box6"
+      "box7 box7"
+      "box8 box8"
+      "box9 box9"
+      "box10 box10";
+  }
+  .innerGrid{
+    height:30vh;
+  }
+  .gridContainer>.innerGrid:nth-of-type(4){
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
+    grid-template-areas:
+      "innerBox1"
+      "innerBox2"
+      "innerBox3";
+  }  
+
+  .gridContainer>.innerGrid:nth-of-type(8){
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "innerBox1"
+      "innerBox2"
+      "innerBox3";
+  }
+}
+
+@media (min-width: 769px){
+  .gridContainer>.innerGrid:nth-of-type(1){
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas:
+      "innerBox1 innerBox2 innerBox2"
+      "innerBox1 innerBox2 innerBox2"
+      "innerBox1 innerBox3 innerBox3";
+  }
+  .gridContainer>.innerGrid:nth-of-type(2){
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
+    grid-template-areas:
+      "innerBox1 innerBox2 innerBox2"
+      "innerBox1 innerBox2 innerBox2"
+      "innerBox1 innerBox3 innerBox3";
+  }
+  .gridContainer>.innerGrid:nth-of-type(6){
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
+    grid-template-areas:
+      "innerBox1 innerBox2 innerBox2"
+      "innerBox1 innerBox2 innerBox2"
+      "innerBox1 innerBox3 innerBox3";
+  }
+}

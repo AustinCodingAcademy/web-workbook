@@ -1,0 +1,127 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  background-color: teal;
+  transition: 2s;
+}
+
+.topContainer {
+  height: 30vh;
+  background-color: teal;
+  margin: auto;
+  margin-top: 0;
+  padding-top: 30vh;
+  align-items: center;
+  font-size: 7vh;
+  transition: 2s;
+}
+
+.bottomContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(0, 0, 0);
+  margin: auto;
+  width: 100%;
+  min-height: 50vh;
+  height: auto;
+  justify-content: space-evenly;
+  transition: 2s;
+}
+
+.columnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  width: 12vw;
+  margin: auto;
+  justify-content: space-around;
+  color: white;
+  transition: background-color 2s, color 2s;
+}
+
+.columnContainer>div:nth-of-type(2) {
+  height: 7vh;
+  width: 12vw;
+  text-align: center;
+  font-size: 7vh;
+}
+
+.columnContainer>div:nth-of-type(1) {
+  height: 7vh;
+  width: 12vw;
+}
+
+.columnContainer:nth-of-type(1)>div:nth-of-type(1) {
+  background-color: rgb(0, 255, 21);
+  transition: background-color 2s;
+}
+
+.columnContainer:nth-of-type(2)>div:nth-of-type(1) {
+  background-color: aqua;
+  transition: background-color 2s;
+}
+
+.columnContainer:nth-of-type(3)>div:nth-of-type(1) {
+  background-color: rgb(255, 0, 0);
+  transition: background-color 2s;
+}
+
+@media (max-width: 576px) {
+  .mainContainer {
+    background-color: rgb(66, 136, 194);
+  }
+  .topContainer {
+    background-color: rgb(66, 136, 194);
+    color: white;
+  }
+  .bottomContainer {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    align-content: center;
+    justify-content: space-evenly;
+    background-color: lightgray;
+  }
+  .columnContainer {
+    flex: 1 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: lightgrey;
+    margin: auto;
+    margin-top: 10vh;
+    color: white;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    color: black;
+  }
+  .columnContainer>div:nth-of-type(2) {
+    font-size: 7vh;
+    text-align: center;
+    width: 40vw;
+  }
+  .columnContainer>div:nth-of-type(3) {
+    width: 40vw;
+  }
+  .columnContainer>div:nth-of-type(1) {
+    height: 7vh;
+    width: 40vw;
+  }
+  .columnContainer:nth-of-type(1)>div:nth-of-type(1) {
+    background-color: rgb(183, 0, 255);
+  }
+  .columnContainer:nth-of-type(2)>div:nth-of-type(1) {
+    background-color: rgb(251, 255, 0);
+  }
+  .columnContainer:nth-of-type(3)>div:nth-of-type(1) {
+    background-color: rgb(255, 0, 149);
+  }
+}
+/*notes*/
