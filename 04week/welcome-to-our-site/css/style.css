@@ -1,0 +1,102 @@
+body{
+  margin: 0 auto;
+  max-width: 850px;
+  font-size: 62.5%;
+  font-family: arial;
+  text-align: center;
+  color: #080607;
+}
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+  width: inherit;
+  margin-top: 20px;
+  height: 300px;
+  background-color: #2BCDC0;
+  color: #FFFFFF;
+}
+h1{
+  width: 100%;
+  font-size: 6em;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  width: inherit;
+  text-align: center;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+h2{
+  font-size: 3em;
+  margin: 0.5em;
+}
+p{
+  font-size: 1.5em;
+}
+article{
+  width: calc(33% - 100px);
+  margin: 20px;
+  border-top: 25px solid #FFFFFF;
+}
+article:nth-child(3n+1){
+  border-color: #30A8DD;
+}
+article:nth-child(3n+2){
+  border-color: #F46731;
+}
+article:nth-child(3n+3){
+  border-color: #2BCDC0;
+}
+/* Extra Small and up (Portrait Phones) */
+
+/* Small and up (Landscape Phones) */
+@media (max-width: 576px) {
+  body{
+    max-width: 575px;
+  }
+  header{
+    background-color: #33A8DD;
+  }
+  .container{
+    flex-direction: column;
+    align-items: center;
+    background-color: #F7F5F6;
+    color: #080607;
+  }
+  article{
+    width: calc(100% - 100px);
+  }
+}
+Large and up (Desktops)
+@media (min-width: 992px) {
+  body{
+    width: 850px;
+  }
+  header{
+    background-color: #2BCDC0;
+    color: #FFFFFF;
+  }
+  .container{
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+  article{
+    width: calc(33% - 100px);
+    /* margin: 20px; */
+    /* border-top: 25px solid #FFFFFF; */
+  }
+}
+/* Medium and up (Tablets) */
+/* @media (min-width: 768px) {
+
+} */
+
+/* Extra Large and up (Wide Screen Desktops) */
+
+/* @media (min-width: 1200px) {
+
+} */

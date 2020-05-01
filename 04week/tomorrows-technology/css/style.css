@@ -1,0 +1,106 @@
+body{
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 536px;
+  font-size: 62.5%;
+  font-family: arial;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+}
+main{
+  margin: 0 20px;
+}
+img{
+  /* margin: 20px; */
+  width: 100%;
+  height: auto;
+}
+aside{
+  display: none;
+}
+h1{
+  font-size: 3.2em;
+}
+p{
+  font-size: 2.4em;
+  margin-bottom: 0;
+}
+.links-container{
+  display: flex;
+  justify-content: space-around;
+  width: inherit;
+  background-color: #5D5D5D;
+  font-size: 1.6em;
+  color: white;
+}
+.links-container h2{
+  display: flex;
+}
+.links-container a{
+  text-decoration: none;
+  color: white;
+}
+.links-container ul{
+  margin 0;
+  padding: 0;
+}
+.links-container li{
+  list-style-type: none;
+  color: #CCCCCC;
+  border-bottom: 1px dotted #CCCCCC;
+  padding: 5px 0;
+}
+.linksbox{
+  padding: 0 20px;
+}
+input{
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #5D5D5D;
+  border-style: none;
+  font-size: 1.6em;
+  color: white;
+}
+
+/* Small and up (Landscape Phones) */
+/* @media (min-width: 576px) {
+
+} */
+
+/* Medium and up (Tablets) */
+@media (min-width: 768px) {
+  body{
+    max-width: 728px;
+    border-bottom: 1px solid black;
+  }
+  .links-container{
+    display: none;
+  }
+  h1{
+    font-size: 2.6em;
+  }
+  p{
+    font-size: 1.8em;
+    margin-bottom: 0;
+  }
+}
+
+/* Large and up (Desktops) */
+@media (min-width: 992px) {
+  body{
+    max-width: 992px;
+    border-bottom-style: none;
+  }
+  top-container{
+    display:flex;
+    justify-content: space-between;
+  }
+  header{
+    /* float: left; */
+    width: 66%;
+  }
+  aside{
+    display: flex;
+    /* float: right; */
+  }
+}

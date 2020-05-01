@@ -1,1 +1,45 @@
-
+div{
+  border: 1px solid black;
+}
+main{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "top-left top-left  top-right top-right"
+    "middle-left  middle-left middle-center-right middle-right"
+    "middle-left  middle-left middle-bottom middle-bottom"
+    /* you can fraction rows same as you can fraction columns to style the middle section */
+    "bottom-left bottom-center-left bottom-center-right bottom-right";
+}
+.top-left{
+  grid-area: top-left;
+  /* background-color: blue; */
+}
+.top-right{
+  grid-area: top-right;
+  /* background-color: green; */
+}
+.middle-left{
+  grid-area: middle-left;
+}
+.middle-center-right{
+  grid-area: middle-center-right;
+}
+.middle-right{
+  grid-area: middle-right;
+}
+.middle-bottom{
+  grid-area: middle-bottom;
+}
+.bottom-left{
+  grid-area: bottom-left;
+}
+.bottom-center-left{
+  grid-area: bottom-center-left;
+}
+.bottom-center-right{
+  grid-area: bottom-center-right;
+}
+.bottom-right{
+  grid-area: bottom-right;}

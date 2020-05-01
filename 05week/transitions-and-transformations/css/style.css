@@ -1,0 +1,76 @@
+.trigger{
+  margin: auto;
+  padding: 0 50px 0 50px;
+  width: 50px;
+  height: 925px;
+  background-color: transparent;
+/* i used this temp. border to test the trigger area*/
+  /* border: 1px solid black; */
+}
+.trigger div{
+  /* i tried to get all the squares to add up to exactly 100px height before
+  and after transform so they would move in a straight line, but i couldn't get
+  it to work */
+  margin: 25px auto 25px auto;
+  width: 50px;
+  height: 50px;
+}
+.trigger div:nth-of-type(even){
+  transition: width 2s, height 2s, margin 2s, transform 2s;
+}
+.trigger div:nth-of-type(odd){
+  transition: width 0.5s, height 0.5s, margin 2s, transform 0.5s;
+}
+.trigger:hover div:nth-of-type(even){
+  width: 100px;
+  height: 100px;
+  /* i tried transforming the margins so the squares would move in a straight
+  line, but it didn't work as expected.  */
+  margin: 0;
+  transform: translate(500px) rotate(90deg);
+}
+.trigger:hover div:nth-of-type(odd){
+  width: 25px;
+  height: 25px;
+  /* i thought a margin of 37.5px would result in a total margin of 100px for
+  the transformed square which would make them transform in a straight line,
+  but it didn't work. */
+  margin: 13px auto 13px auto;
+  transform: translate(-500px) rotate(-90deg);
+}
+.trigger div:nth-child(1){
+  background-color: blue;
+}
+.trigger div:nth-child(2){
+  background-color:green;
+}
+.trigger div:nth-child(3){
+  background-color:purple;
+}
+.trigger div:nth-child(4){
+    background-color:lime;
+}
+.trigger div:nth-child(5){
+    background-color:yellow;
+}
+.trigger div:nth-child(6){
+    background-color:fuchsia;
+}
+.trigger div:nth-child(7){
+    background-color:violet;
+}
+.trigger div:nth-child(8){
+    background-color:orange;
+}
+.trigger div:nth-child(9){
+    background-color:aqua;
+}
+.trigger div:nth-child(10){
+    background-color:red;
+}
+.trigger div:nth-child(11){
+    background-color:black;
+}
+.trigger div:nth-child(12){
+    background-color:brown;
+}

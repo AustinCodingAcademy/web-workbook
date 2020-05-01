@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+Wishlist:
+- Add semantics tags
+- Add accessibility attribs
+- Add microdata (did these break my resume index.html? How to test?)
+- Link all projects on web-workbook index.html
+- Remove blue border from <details> click
+- Link google fonts once in web-workbook index.html (how to get
+the rest of the index files to reference the fonts on the
+web-workbook index?)
+- Make floating <div>s get narrower but still span the width of
+the screen as I zoom in
+- Is there some way to force .box-1 to switch <p> from block to
+inline if zoom causes .box-2 to stop floating, with the effect
+that zooming in makes the icon links appear horizontally to the
+right of the photo as soon as .box-2 runs out of room to
+float, in place of stacking vertically as blocks below the photo?
+-->
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <title>
+      Seville Sdote's bio
+      </title>
+      <link href="https://fonts.googleapis.com/css?family=Coda|Open+Sans"
+      rel="stylesheet">
+      <!-- using the reset.css defaulted my <p>s to no line space after, and I
+      couldn't figure out why, so I've commented reset.css out.-->
+      <!--<link href="css/reset.css" type="text/css" rel="stylesheet">-->
+      <link href="css/style.css" type="text/css" rel="stylesheet">
+      <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+      integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+      crossorigin="anonymous">
+      <base target="_blank">
+    </head>
+    <body>
+      <h1>Seville Sdote's bio</h1>
+      <div class="clearfix container">
+        <div class="box-1">
+          <img id="headshot" src="images/imonaboat.jpg"
+          alt="Seville Sdote's photo">
+  <!-- I was able to turn the fontawesome.com icon into a link by nesting it
+  inside <a> tags. -->
+          <p>
+            <div class="tooltip">
+              <a href="https://github.com/sevillesdote">
+                <i class="fab fa-github"></i>
+                <span class="tooltiptext">Seville's Github</span>
+              </a>
+            </div>
+          </p>
+          <p>
+            <div class="tooltip">
+              <a href="../../01week/resume/index.html">
+                <i class="fas fa-file-alt"></i>
+                <span class="tooltiptext">Seville's resume</span>
+              </a>
+            </div>
+          </p>
+          <p>
+            <div class="tooltip">
+              <a href="../blog/index.html">
+                <i class="fas fa-newspaper"></i>
+                <span class="tooltiptext">Seville's blog</span>
+              </a>
+          </div>
+          </p>
+        </div>
+        <div class="box-2">
+          <p>I've provided operations and administration support, coordination and
+            analysis for executive directors, vice presidents, managers and large teams
+            for 16 years.</p>
+          <p>As an Analyst and Coordinator at Dell EMC Services, I support a global
+            Consulting team of nearly 400 with operational analysis, reporting,
+            logistics and coordination for their customer experience, partner
+            management and technical training needs.</p>
+          <p>As an Account Development Specialist at ARCADIS, I cultivated
+            partnerships with several Principal Account Managers, Project Managers
+            and internal stakeholders to deliver timely, quality proposals under
+            strict deadlines, advocating by example for the added value of the
+            ADS role.</p>
+          <p>As a Document Coordinator for ARCADIS (a global engineering consultant),
+            I managed technical report processing, formatting, workflow and procedure
+            locally and enterprise-wide to ensure the highest-quality content and
+            presentation for all client deliverables.</p>
+          <p>"Seville must love pain. He consistently gets assigned to some of [the]
+            most difficult areas... [which] are critical to our business, yet none of
+            them are done very well by [our company]. Seville has brought an element of
+            discipline and process we have not seen in the past. He is clearly
+            passionate about his work and... good at working across towers collaboratively.
+            We need more folks like Seville."
+            <em>~A satisfied internal customer</em>
+          </p>
+        </div>
+      </div>
+    </body>
+  </html>

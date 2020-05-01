@@ -1,0 +1,203 @@
+html{
+  background-color: #193a55;
+  background: url(../img/airline.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+body{
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  /* the bottom border in the .topbox didn't extend all the way to the left
+  until i set the body margin to 0  */
+}
+header, ul{
+  margin: 0;
+  list-style-type: none;
+  /* the <ul> span moves vertically if i omit the margin here... not sure why
+  the margin: 0 in the body style doesn't cover this already? */
+}
+.topbox{
+  position: fixed;
+  /* position: relative; */
+  background-color: #193a55;
+  width: 100%;
+  height: 85px;
+  border-bottom: 1px solid white;
+  /*I spent hours trying to get the elements inside .topbox, .toplogo and/or
+  .topnav to center vertically. i tried relative parent + absolute
+  child w top: 50% and top-margin: -50px; and I tried display: inline-block +
+  vertical-align: middle; nothing worked. Finally I threw in the towel and set
+  the .topbox height close to the height of the logo image, and put top-bottom
+  padding around the <li>s in .topnav to center those. */
+}
+/* Could not get either of these 'vert-center-attempt' classes below to center
+anything vertically, no matter what element I applied them to. */
+/* .vert-center-attempt1{position: absolute; top: 50%; margin-top: -43px;} */
+/* .vert-center-attempt2{display: inline-block; vertical-align: middle;} */
+.toplogo, .topnav{
+  float: left;
+  height: 85px;
+  padding-left: 50px;
+}
+.topnav ul{
+  padding: 33px 0 0 300px;
+  /* the 33px top padding is to fake-center vertically, accounting for
+  85px .topnav height minus 19px <li> height times 50%.*/
+}
+li{
+  float: left;
+  box-sizing: border-box;
+  padding: 0 10px 8px 0;
+  /* bottom-padding is so that if user zooms in or shrinks window width, <li>s will
+  still be legible and not too close together if they start to stack on top of
+  each other. */
+}
+.topnav img {
+  float: left;
+  height: 19px;
+  padding-right: 10px;
+  /*I styled the .topnav images to be the same height as the <li> text so they
+  would center */
+}
+a{
+  text-decoration: none;
+}
+a:link{
+  color: #FFFFFF;
+}
+a:visited{
+  color: #0063B7;
+}
+a:hover{
+  color: #09BEAE;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.linksbox{
+  background-color: #09BEAE;
+  margin: 175px 0 0 75px;
+  /*i used temp 1px borders on all my <div>s while i was coding to help remind
+  me which divs were where */
+  /* border: 1px solid white; */
+  border-radius: 10px 10px 0 0;
+  width: 525px;
+  height: 70px;
+}
+input[type=checkbox]{
+  display: none;
+  margin: -15px -40px;
+  width: 190px;
+  height: 70px;
+}
+.linksbox div{
+  float: left;
+  width: 95px;
+  height: 40px;
+  padding: 15px 40px;
+  text-align: center;
+  display: inline-block;
+}
+.linksbox div:hover{
+  background-color: #0063B7;
+}
+/* Why isn't this next class changing the color of checked <div>s? i also tried
+input[type=checkbox]:checked ~ .linksbox div */
+input[type=checkbox]:checked{
+  background-color: #0063B7;
+}
+.leftlinkborder:hover{
+  border-radius: 10px 0 0 0;
+}
+.rightlinkborder:hover{
+  border-radius: 0 10px 0 0;
+}
+.formbox{
+  background-color: #193a55;
+  margin: 0 75px 0;
+  /* border: 1px solid white; */
+  width: 525px;
+  height: 270px;
+  padding: 25px 0 0 0;
+  border-radius: 0 0 10px 10px;
+}
+.flightbox{
+  float: left;
+  /* border: 1px solid white; */
+  width: 262px;
+  height: 140px;
+  text-align: center;
+}
+input{
+  background-color: rgba(255, 255, 255, 0);
+  margin: 10px 5px;
+  width: 80%;
+  height: 45px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 0 0 0 10px;
+  font-size: 18px;
+  color: #939DAD;
+}
+select{
+  float: right;
+  background-color: rgba(255, 255, 255, 0);
+  width: 20%;
+  height: 45px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 0 0 0 10px;
+  font-size: 18px;
+  color: #939DAD;
+}
+.selectorbox{
+  float: left;
+  /* border: 1px solid white; */
+  width: 220px;
+  height: 50px;
+  padding: 5px 20px 0;
+}
+.selectorbox input{
+  width: 1em;
+  height: 1em;
+}
+.selectorbox p, .selectorbox label{
+  float: left;
+  text-align: left;
+  font-size: 18px;
+  color: white;
+  padding: 0 1px;
+}
+.submitbox{
+  background-color: #193a55;
+  float: left;
+  /* border: 1px solid white; */
+  width: 525px;
+  height: 65px;
+}
+#search-flights{
+  background-color: #0063B7;
+  margin: 10px 20px;
+  width: 92%;
+  height: 45px;
+  border: 0;
+  border-radius: 5px;
+  padding: 0 0 0 10px;
+  font-size: 18px;
+  color: white;
+  outline: none;
+}
+input{
+  width: 80%;
+  height: 45px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 0 0 0 10px;
+  font-size: 18px;
+  color: #939DAD;
+}
+#search-flights:hover{
+  background-color: #09BEAE;
+}
