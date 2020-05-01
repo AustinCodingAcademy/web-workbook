@@ -1,0 +1,142 @@
+
+@font-face {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+/*For this project I imported my fonts from googlefonts. */
+}
+body{
+  background: linear-gradient(to bottom, white,grey) fixed;
+  margin:0;
+  letter-spacing: 3px;
+  font-family:"Raleway";
+}
+
+.navul{
+    margin: 0;
+    padding: 0;
+    width:100%;
+}
+/* I start using a mixture or RGB values and then shorthand colors because I wanted some elements to have a more opaque background than others without the text being affected */
+a {
+color: grey;
+transition: all, 0.2s linear;
+float: right;
+padding:10px;
+margin: 10px;
+text-decoration: none;
+letter-spacing: 7px;
+font-family:"Raleway";
+}
+a:hover, a:focus {
+color: maroon;
+margin-left:20px;
+font-family: "Raleway";
+}
+
+#name{
+  text-align: center;
+  font-family: "Raleway";
+  font-weight: bold;
+  letter-spacing: 15px;
+  color:white;
+   background:rgba(0, 0, 0, 0.2);
+ width:100%;
+ }
+
+h2{
+  text-align: center;
+  font-family: "Raleway";
+  font-weight:500;
+  color: black;
+  font-weight: lighter;
+  letter-spacing: 3px;
+}
+/* The icons were found through a downloadable source called "Font Awesome". FA seems like a common resource for web developers so I utilized it for all three logos. */
+.icons{
+color: black;
+margin-left: 48.5%;
+}
+
+h3{
+  text-align: center;
+  font-family:"Raleway", sans-serif;";
+  color: black;
+  font-weight: lighter;
+  letter-spacing: 7px;
+}
+
+ul{
+  margin: auto, 0;
+  font-size: 20px;
+  margin: 0,auto;
+  text-align: center;
+  display: inline-block;
+  list-style-position:inherit;
+  list-style-type:none;
+  font-family:"Raleway";
+}
+
+#img1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    border-radius: 100px;
+    border-style:solid;
+    border-color: lavender;
+    }
+
+#tag{
+color: black;
+text-decoration-color: black;
+}
+/* I had a very difficult time spacing sections out with rows and columns. I found that I would constantly have to restart and reset headings and font sizes and
+just struggled overall with spacing different elements. I do not plan on using the table element as a guideline for future projects, but it helped me understand
+how to use the table element and also helped me understand the width and sizing of the page itself.*/
+.sturdy{
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  .sturdy td:nth-child(1){
+    width:25%;
+        background:rgba(255, 255, 255, 0.2);
+        border-radius: 25px;
+        border-color:white;
+  }
+
+  .sturdy td:nth-child(3) {
+    width: 25%;
+    text-align: center;
+        background:rgba(255, 255, 255, 0.2);
+        border-radius: 25px;
+
+  }
+  .sturdy td:nth-child(2) {
+    width: 50%;
+    text-align: center;
+        background:rgba(255, 255, 255, 0.2);
+        border-radius:25px;
+}
+article{
+  text-align:center;
+  margin:auto;
+  margin-top:50px;
+  margin-bottom:50px;
+  width:100%;
+   background: rgba(255, 255, 255, 0.2);
+   border-radius:120px;
+}
+/* Creating the footer was very difficult; I encountered the same problem over and over again of having it float freely in the center of the page. I used this code snippet off of css
+tricks.com and it has worked well. I believe the bottom:0; is what is keeping it anchored */
+footer{
+  bottom:0;
+  margin:auto;
+  line-height:100px;
+  background:black;
+  color:grey;
+  text-align: center;
+background::rgba(0, 0, 0, 0.2);
+}
