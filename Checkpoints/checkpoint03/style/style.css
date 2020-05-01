@@ -1,0 +1,98 @@
+* {
+  font-family: 'Press Start 2P', cursive;
+}
+/* picture button style for each choice */
+.rockpic {
+  background-image: url("https://vignette.wikia.nocookie.net/survivor-org/images/6/68/Rock-large-rock-large.gif/revision/latest?cb=20140816171208");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 175px;
+  width: 175px;
+}
+.paperpic {
+  background-image: url("http://pluspng.com/img-png/png-lined-paper-lined-paper-blank-blanks-assorted-assorted-blanks-3-lined-paper-blank-png-html-850.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 150px;
+  width: 115px;
+}
+.scissorspic {
+  background-image: url("https://images-na.ssl-images-amazon.com/images/I/71baCLK2M1L._SL1500_.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  width: 275px;
+}
+/* hover button guidelines */
+button:hover {
+  border: black 5px solid;
+}
+/* make choose show up at hover attaching to the div */
+.rock .text {
+  position: relative;;
+  visibility: hidden;
+}
+.rock:hover .text {
+  visibility: visible;
+}
+.paper .text {
+  position: relative;;
+  visibility: hidden;
+}
+.paper:hover .text {
+  visibility: visible;
+}
+.scissors .text {
+  position: relative;;
+  visibility: hidden;
+}
+.scissors:hover .text {
+  visibility: visible;
+}
+/* CSS grid to layout for user choices */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr 2fr;
+  justify-content: space-between;
+  text-align: center;
+  grid-template-areas:
+  "header header header"
+  "counter counter counter"
+  "rock paper scissors"
+  "user versus computer";
+}
+.header {
+  grid-area: header;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 20px;
+  height: 50px;
+}
+.counter {
+  grid-area: counter;
+  text-align: right;
+  font-size: 25px;
+  height: 50px;
+}
+.rock {
+  grid-area: rock;
+}
+.paper {
+  grid-area: paper;
+}
+.scissor {
+  grid-area: scissors;
+}
+.user {
+  grid-area: user;
+}
+.versus {
+  grid-area: versus;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 70px;
+}
+.computer {
+  grid-area: computer;
+}

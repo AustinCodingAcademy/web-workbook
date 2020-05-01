@@ -1,0 +1,108 @@
+.blue {
+  background-color: #33A8DD;
+  width: 200px;
+  height: 50px;
+  flex-direction: row;
+}
+
+.orange {
+  background-color: #F46731;
+  width: 200px;
+  height: 50px;
+}
+
+.teal {
+  background-color: #2BCDC0;
+  width: 200px;
+  height: 50px;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  width: 1000px;
+  height: 400px;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  flex-direction: row;
+}
+
+header {
+  background-color: #2BCDC0;
+  display: flex;
+  justify-content: center;
+  color: white;
+  height: 300px;
+  width: 1000px;
+}
+/* make site bolder */
+.bold {
+  font-weight: bold;
+  font-size: 50px;
+}
+.heading {
+  font-size: 50px;
+  align-self: center;
+  /* font-weight: lighter; */
+}
+/* span {
+  align-self: center;
+  font-weight: lighter;
+} */
+/* the large box */
+body {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  height: 800px;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+/* phone view settings begin here */
+@media only screen and (max-width: 576px) {
+/* the header isn't wrapping the text to 2 lines */
+  header {
+    background-color: #33A8DD;
+    height: 300px;
+    width: 500px;
+    font-size: 30px;
+  }
+  .heading {
+    width: 60%;
+  }
+  .main {
+    width: 500px;
+    height: 1400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  div {
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+  }
+  h2 {
+    color: black;
+  }
+  p {
+    color: black;
+  }
+  body {
+    height: 1500px;
+    display: flex;
+    align-items: flex-start;
+  }
+}

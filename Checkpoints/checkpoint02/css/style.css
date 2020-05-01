@@ -1,0 +1,230 @@
+* {
+  font-family: 'Cabin', sans-serif;
+}
+/* don't want this to change during media inquiries */
+/* aligns header in flexbox */
+.header {
+  flex-flow: column;
+  text-align: center;
+}
+/* text for phone number */
+.call {
+  font-size: 30px;
+  color: #FA8072; /* salmon */
+}
+/* hover details on phone number */
+.call:hover {
+  color: #FA8072; /* salmon */
+  background-color: #B5D3E7; /* blue */
+  border-radius: 25px;
+}
+/* main cover photo of house, will need to get smaller with media */
+.background {
+  background-image: url("../img/house-cropped.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  width: 1000px;
+}
+/* TRC big title inside main picture */
+.title {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 260px;
+  color: #FA8072; /* salmon */
+  background-color: #B5D3E7; /* blue */
+}
+/* div.box {
+  opacity: 0.5;
+  background-color: #B5D3E7; blue
+ }
+.box {
+  height: 20px;
+  width: 1000px;
+  opacity: 0.5;
+} */
+/* main big box for flexbox */
+body {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+/* kithcen picture section */
+.kitchen {
+  background-image: url("../img/kitchen.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 800px;
+  width: 1000px;
+  margin: 0;
+}
+/* bathroom picture */
+.bathroom {
+  background-image: url("../img/bathroom.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  width: 1000px;
+  padding: 0;
+}
+/* deck picture */
+.deck {
+  background-image: url("../img/deck.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  width: 1000px;
+  margin: 0;
+}
+/* creekhaus picture and last pic that will act different than the other sections */
+.creekhaus {
+  background-image: url("../img/creekhaus.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 800px;
+  width: 1000px;
+}
+/* details for the heading of each picture section */
+.bold {
+  font-size: 50px;
+  color: #FA8072; /* salmon */
+  text-align: center;
+}
+/* hover details on phone number */
+.bold:hover {
+  color: #B5D3E7; /* blue */
+  background-color: #FA8072; /* salmon */
+  border-radius: 25px;
+}
+/* text paragraph for each picture */
+.paragraph {
+  font-size: 30px;
+  color: #5CA4A3; /* slightly darker blue */
+  text-align: center;
+}
+/* space inbetween main picture and the other sections */
+.break {
+  height: 50px;
+}
+/* each section contains a picture and a div of text */
+section {
+  width: 1000px;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* this is the main details for the block of text including heading and paragraph */
+.design {
+  background-color: #B5D3E7; /* blue */
+  flex-direction: row;
+  width: 500px;
+  height: 450px;
+  margin-left: 20px;
+}
+/* the name of the bottom section that is different from the others */
+.end {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+}
+/* puts the text in a new div to make it vertical aligned */
+.horizontal {
+  background-color: #B5D3E7; /* blue */
+  flex-direction: column;
+  width: 800px;
+  height: 200px;
+  margin-top: 20px;
+}
+/* tablet options, all sections in column */
+@media (max-width: 786px) {
+/* contains picture and text block */
+  section {
+    width: 700px;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* add to the end of all pictures to adjust the div settings */
+  .pic {
+    width: 700px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* why is the bathroom picture looking smaller than all the others? attempting to fix with new class */
+.bathroom2 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0;
+  margin: 0;
+}
+/* making the main TRC label smaller in the tablet version */
+  .title2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 200px;
+  }
+  /* details for the heading of each block text */
+  .bold {
+    font-size: 30px;
+    color: #FA8072; /* salmon */
+    text-align: center;
+  }
+  /* block of text */
+  .paragraph {
+    font-size: 20px;
+    color: #5CA4A3; /* slightly darker blue */
+    text-align: center;
+  }
+  /* div details for the heading and block of text */
+  .design {
+    flex-direction: column;
+    background-color: white;
+    /* width: 500px;
+    height: 400px; */
+  }
+  /* div details to bathroom section, moves to column in tablet and mobile */
+  .side {
+    background-color: white;
+    width: 500px;
+    height: 400px;
+    margin-right: 20px;
+  }
+  /* text section for last pic moves back to a column */
+  .horizontal {
+    background-color: white;
+    flex-direction: column;
+    margin-top: 0px;
+    /* width: 800px;
+    height: 200px;
+    margin-top: 20px; */
+  }
+}
+/* phone details, all sections in a column, just smaller */
+@media (max-width: 576px) {
+/* add to all pictures to adjust to screen size */
+  .pic {
+    width: 550px;
+  }
+  /* all sections with pic and text inside are now less wide columns */
+  section {
+    width: 550px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+}

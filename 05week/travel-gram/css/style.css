@@ -1,1 +1,136 @@
+/* details on the boxes */
+.box {
+  background: #eeeeee;
+  padding: 10px;
+  border: 2px solid black;
+  margin-left: 5px;
+}
+/* 10 boxes */
+.box1 {
+  grid-area: box1;
+}
 
+.box2 {
+  grid-area: box2;
+}
+
+.box3 {
+  grid-area: box3;
+}
+
+.box4 {
+  grid-area: box4;
+}
+
+.box5 {
+  grid-area: box5;
+}
+
+.box6 {
+  grid-area: box6;
+}
+
+.box7 {
+  grid-area: box7;
+}
+
+.box8 {
+  grid-area: box8;
+}
+
+.box9 {
+  grid-area: box9;
+}
+
+.box10 {
+  grid-area: box10;
+}
+/* main grid for the boxes, 4 columns, 4 rows */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2fr 2fr 1fr 2fr;
+  grid-template-areas:
+  "box1 box1 box2 box2"
+  "box3 box3 box4 box5"
+  "box3 box3 box6 box6"
+  "box7 box8 box9 box10";
+}
+/* 3 columns, 2 rows, inside the box */
+.style1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas: "img text text" "img dot rec";
+}
+/* 2 columns, 3 rows, inside the box */
+.style2 {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  "img img"
+  "text text"
+  "dot rec";
+}
+/* image */
+.img {
+  background-image: url("https://boygeniusreport.files.wordpress.com/2015/06/funny-cat.jpg?quality=98&strip=all&w=782");
+  grid-area: img;
+  background-size: contain;
+}
+/* text block */
+.text {
+  grid-area: text;
+}
+/* circle symbol */
+.dot {
+  grid-area: dot;
+  height: 25px;
+  width: 25px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+/* square symbol */
+.rec {
+  grid-area: rec;
+  background-color: purple;
+}
+/* tablet size option */
+@media (max-width: 700px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas:
+    "box1 box1"
+    "box2 box3"
+    "box4 box4"
+    "box5 box5"
+    "box6 box7"
+    "box8 box8"
+    "box9 box9"
+    "box10 box10";
+  }
+}
+/* phone settings, 1 column */
+@media (max-width: 500px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas:
+    "box1"
+    "box2"
+    "box3"
+    "box4"
+    "box5"
+    "box6"
+    "box7"
+    "box7"
+    "box8"
+    "box9"
+    "box10";
+  }
+}
