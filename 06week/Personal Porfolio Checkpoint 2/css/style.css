@@ -1,0 +1,217 @@
+#wrapper {
+    margin-top: 0;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr,1fr, 1fr, 1fr;
+    border: solid black 1px;
+    grid-template-rows: 200px;
+    width: auto;
+    margin-left: 0%;
+    background:
+    linear-gradient(red, transparent),
+    linear-gradient(to top left, lime, transparent),
+    linear-gradient(to top right, blue, transparent);
+    background-blend-mode: screen;
+    align-content: space-around;
+    }
+/* Above is the background special effect I was trying to implement but still not working. */ 
+    
+#header {
+    grid-column: span 4;
+    text-align: center;
+    background: #0ff0f0;
+    padding: 50px 0;
+    margin-bottom: 30px;
+    }
+
+.header:hoover  { 
+    height: 50px;
+    width: 150px;
+    background-color: #f1c40f ;
+    transition: background-color 2s;
+  }
+    
+#Desktop, #tablet, #mobile{
+    display: none;
+    }
+   
+#contact {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 36px;
+}
+#About {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 36px;
+}
+#Profiles {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 36px;
+}
+#Education {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 36px;
+}
+#Work {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 36px;
+}
+#Projects {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 36px;
+}
+#Hobbies {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 36px;
+    align-items: center;
+}
+.Box {
+        grid-column: span 4;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        margin: 5px;
+        /* border: solid black 1px; */
+        }       
+h2, h3, h4, h5, h6, h7, h8, h9, h11, h12, h13, .h2, .h3, .h4, .h5, .h6, .h7, .h8, .h9, .h10, .h11, .h12, .h13 {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    margin: .67em 0;
+    font-size: 1.5em; 
+    align-items: right;
+  
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+h2 {
+    /* display: block; */
+    font-size: 2em;
+    -webkit-margin-before: 0.67em; 
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+.h3 {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    margin: .67em 0;
+    font-size: 2em;  
+}
+p {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+ body {
+     /* display: flex; */
+    font-family: sans-serif;
+    margin: 0 0 80px;
+} 
+    #header h2 {
+        color: #95a5a6;
+        font-size: 24px;
+    }
+#contact:hover {
+        color: #f1c40f;
+        font-size: 36px;
+        margin-top: -4px;
+        grid-column: span 0;
+        padding-right: 30px;
+    }
+#About:hover {
+    color: #f1c40f;
+    font-size: 36px;
+    margin-top: -4px;
+    grid-column: span 0;
+    padding-right: 30px;
+    } 
+#Profiles:hover {
+    color: #f1c40f;
+    font-size: 36px;
+    margin-top: -4px;
+    grid-column: span 0;
+    padding-right: 30px;
+        }    
+ #Education:hover {
+    color: #f1c40f;
+    font-size: 36px;
+    margin-top: -4px;
+    grid-column: span 0;
+    padding-right: 30px;
+} 
+ #Work:hover {
+    color: #f1c40f;
+    font-size: 36px;
+    margin-top: -4px;
+    grid-column: span 0;
+    padding-right: 30px;
+} 
+#Projects:hover {
+    color: #f1c40f;
+    font-size: 36px;
+    margin-top: -4px;
+    grid-column: span 0;
+    padding-right: 30px;
+}  
+#Hobbies:hover {
+    color: #f1c40f;
+    font-size: 36px;
+    margin-top: -4px;
+    grid-column: span 0;
+    padding-right: 30px;
+}      
+    @media (min-width:150px) and (max-width:1024px) {
+        #wrapper{ 
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        } 
+        header{
+        grid-column: span 2;
+        }         
+        .Box{
+        
+        grid-column: span 1;
+        }
+        
+        #desktop, #mobile{ 
+        display: none;
+        }
+        
+        #tablet{
+        display: none;
+        }
+      }
+        
+        
+        
+        
+        
