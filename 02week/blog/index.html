@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Blog</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar">
+            <span class="open-slide">
+                <a href="#" onclick="OpenSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="white" stroke-width="5" />
+                        <path d="M0,14 30,14" stroke="white" stroke-width="5" />
+                        <path d="M0,23 30,23" stroke="white" stroke-width="5" />
+                    </svg>
+                </a>
+            </span>
+
+            <ul class="navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Bio</a></li>
+                <li><a href="#">Blog</a></li>
+                <!-- <li><a href="#">Contact</a></li> -->
+            </ul>
+
+            <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Search on blog...">
+                <a class="search-btn" href="#">
+                        <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </nav>
+
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="CloseSlideMenu()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">Resume</a>
+            <a href="#">Bio</a>
+            <a href="#">Blog</a>
+            <!-- <a href="#">Contact</a> -->
+        </div>
+
+        <div id="main">
+            <h1>My interesting blog</h1>
+            
+            <div id="theblog">
+
+                <div class="entry">
+                    <h3>WHAT TO READ WHEN YOU’RE BROKE DOWN IN HELL</h3>
+                    <h4 id="date"></h4>
+                    <script>
+                        document.getElementById("date").innerHTML = Date();
+                    </script>
+                    <hr>
+
+                    <input type="checkbox" class="read-more-state" id="post-1" />
+
+                    <p class="read-more-wrap">In August of 2000, I moved South for the first time in my life, from Montana to Texas. Six days after arriving, my only sibling died unexpectedly. The temperatures <span class="read-more-target">hit triple digits well into September, and our zip code ended in 666. I was busted up, to say the least, and I couldn’t help but think of Texas as my own personal hell—a hero’s underworld, at best.
+
+                            While I’ve never quite hit bottom like that since, life always has a natural ebb and flow. So what do we do when we’re caught in a cosmic eddy of some sort? Books have my best company in hard times. In the opening lines of the poem “Degrees of Gray in Philipsburg,” Montana poet Richard Hugo wrote, “You might come here Sunday on a whim. / Say your life broke down. The last good kiss / you had was years ago.” We can’t always hop in the car and drive to Philispburg, so here is a list of my down-and-out favorites for when you have a case of the grays.</span></p>
+                    
+                    <label for="post-1" class="read-more-trigger"></label>
+                </div>
+
+                <div class="entry">
+                        <h3>THE PERFECT CHILDHOOD</h3>
+                        <h4 id="date2"></h4>
+                        <script>
+                            document.getElementById("date2").innerHTML = Date();
+                        </script>
+                        <hr>
+    
+                        <input type="checkbox" class="read-more-state" id="post-2" />
+    
+                        <p class="read-more-wrap">There are two children playing. Not a boy and friend. Imagine there 
+                            <span class="read-more-target">is no grown-up smiling a grown-up smile and asking if he likes her, if he loooves her. No one tells the little girl that since her closest friend is a boy, he must be her boyfriend. Aww, is she going to marry him? Let’s imagine no one does that. Imagine that when the little girl says she’d like a sleepover, and the little boy jumps up and down and says, “Yes, yes, can I sleep with her, Daddy?,” their grown-ups don’t melt into a puddle of laughter. The boy’s father doesn’t say, “That’s my son, third base at four!” And the girl’s father doesn’t say, “Not with my girl, you don’t, young man!” That the fathers don’t laugh at each other’s jokes, while the kids stand there confused, wondering if the sleepover is on or off and why their dads think they want to play baseball.
+
+                                    What if we didn’t see this as harmless fun, but saw it for what it was: a handing over of adult perceptions of gender to children who had till then been unaware of anything but their excitement about sleepovers or the immediacy of their game of dragons and unicorns. Because the truth is, before we told a toddler that his friend was his girlfriend, and that he was going on his first date and had to be a man and treat her like a lady, he was doing much better. He was treating her like a friend, a playmate, a two-headed monster. And the little girl, she was doing what two-headed monsters do—pinning the boy to the floor, sitting on top of him and eating him for dinner.
+                                    
+                                    That was until someone told them to get a room. They didn’t know what that meant, but everyone laughed and made them feel awkward. They didn’t pin each other down like that again. What did it mean, “go get a room?” Why did the grown-ups laugh funny? They don’t laugh when a boy sits on top of another boy. They don’t say, “Aww, look at the lovebirds!” when two girls hug.
+                                    
+                                    Even when these questions are not articulated, they’re there. Through these questions, the children’s world is being figured out. They’re making mental notes of what we say, reactions we make, and slowly segregating gender into its stereotypes.</span></p>
+                        
+                        <label for="post-2" class="read-more-trigger"></label>
+                </div>
+                
+                <div class="entry">
+                        <h3>RUMPUS ORIGINAL FICTION: NEW HALLWAYS, NEW DOORS</h3>
+                        <h4 id="date3"></h4>
+                        <script>
+                            document.getElementById("date3").innerHTML = Date();
+                        </script>
+                        <hr>
+    
+                        <input type="checkbox" class="read-more-state" id="post-3" />
+    
+                        <p class="read-more-wrap">After the baby is born and her screaming redness fades, Ben is surprised she is a little yellow, the color of an onion. Then, when she finally opens her eyes in the hospital,  
+                            <span class="read-more-target">the whites are yellow too. “She has jaundice,” the doctor says. “It’s not a big deal. It’s very common.” But Jessie cries anyway, rubs the baby’s little foot.
+
+                                    “They’ll just put her under some lamps for a while,” Ben tells her.
+                                    
+                                    “I don’t like it,” says Jessie.
+                                    
+                                    “No one likes it,” Ben says. “But it really is okay.”
+                                    
+                                    He gives her shoulders a quick squeeze, and she gives him a weak smile. She cries when the doctor places tiny goggles on the baby’s face, puts her under the lamp. Two days later, they leave, though she is still yellow, like buttercream, like corn silk.
+                                    
+                                    
+                                    
+                                     
+                                    
+                                    Now it is nearly fall, and the baby is small and pink. Ben and Jessie and Kathryn, their tiny girl, are strolling through the park. It’s the late afternoon, all yellow light in trees. Kathryn is a month old, and Ben watches Jessie worry whether it’s too soon to take her out of the house. Her worry is active, observable—in her fingers as she fusses with the baby’s clothes and digs in the diaper bag, in her face, around her eyes, in the hand she places on the baby’s chest as she sleeps. “Just making sure she’s breathing,” Jessie said the other night. Here in the park, she pushes the stroller and stops every few feet to adjust the shade of the bassinet so that no bit of Kathryn is in the sun. “She’s fine,” Ben says. “Cave people had babies in the sun all the time. Or think about tribes in the Amazon.”
+                                    
+                                    “I guarantee tribes in the Amazon still don’t let their babies roast in the sun,” Jessie says. “And we’re a long way from cave people.”
+                                    
+                                    “Some of us more than others,” Ben says, and Jessie smiles. “Speaking of cave people,” he says. “Tomorrow I get a fresh batch. Can you believe it?” Ben teaches math to freshmen at an all-boys school.
+                                    
+                                    “Not really,” says Jessie. “The summer went by fast.”
+                                    
+                                    “Well, we’ve been a little busy,” Ben says, nodding down at Kathryn, who’s dozing. Two little boys run by, yelling, and Ben watches Jessie flinch. He knows she’s waiting for the baby to wake up.
+                                    
+                                    “I can’t even remember anything about it,” says Jessie. “It’s like the last nine months never happened.”
+                                    
+                                    “I know what you mean,” says Ben, even though he doesn’t. “You know what?” he says. “You should bring Kathryn up to school one day for lunch this week.”
+                                    
+                                    Jessie frowns. She scratches at her eyebrow. “It’s so weird going up there,” she says. “I always feel like I’m intruding on something. A boys only club.”
+                                    
+                                    “You’re not,” Ben says. “And there are lots of women teachers there. Think about that. They’re intruding every day.”
+                                    
+                                    “You just said I wouldn’t be intruding,” Jessie says.
+                                    
+                                    “You wouldn’t be,” he says. “Come on. You know what I mean.”
+                                    
+                                    “Maybe,” she says.
+                                    
+                                    “I’ll miss y’all,” Ben says. “My two girls.”
+                                    
+                                    In the stroller, Kathryn makes a sound like a very small dinosaur. Jessie stops strolling and reaches down to pick her up. The baby turns her face from side to side, into the sun, into a shadow, into the sun again, and Jessie holds her close. “She’s hungry,” Jessie says. “I’m going to feed her.”
+                                    
+                                    “Here?” says Ben. He looks around. The two boys who ran past them a few minutes ago have been wrangled by their parents. A woman in spandex shorts jogs by.
+                                    
+                                    “I’ll just sit here,” Jessie says, and she walks over to a sunny patch of grass and sits and slips her breast out of her tank top, attaching Kathryn in a quick, fluid motion.
+                                    
+                                    “Oh,” says Ben. “Okay.” He walks over and sits beside his wife and baby. “Look at her little hands,” he says. Her fingers are on Jessie’s skin, stroking or scratching, he can’t tell, but Jessie doesn’t answer. She is focused intently on Kathryn, watching the curve of her lips as she nurses. Ben suddenly feels very far away from his wife and daughter, miles away, in a different realm entirely, and he swears that if he extended his arm to touch them, they would be too far away. He would never be able to reach them.
+                                    
+                                     
+                                    
+                                    The next morning, Jessie is already awake by the time Ben’s alarm goes off. She’s sitting up against the pillows, wearing a nightgown—she always slept in her underwear before Kathryn, even when she was pregnant, her belly huge and bare and otherworldly—and holding the baby against her, her phone in one hand. “How’s our girl?” he asks.
+                                    
+                                    “I’m tired,” says Jessie. “And I keep reading all these articles about all the ways babies just randomly die. It’s a miracle any of us get out of this alive.”
+                                    
+                                    Ben sits up now. “I hate to be morbid,” he says. “But none of us do.”
+                                    
+                                    “I meant infancy, Ben,” Jessie says. “Not life in general.”
+                                    
+                                    “She’s sleeping,” Ben says. “What if you went to sleep now, too?”
+                                    
+                                    “I don’t know,” she says.
+                                    
+                                    Ben leans over and kisses her shoulder, the nightgown covering it. “I’m going to get ready for work,” he says.
+                                    
+                                    “The first day,” Jessie says, as if she’s just remembering. Ben nods. He takes a shower and gets dressed, grabs a bagel from the kitchen, and when he goes back to the bedroom to say goodbye to Jessie, she and Kathryn are both crying quietly, Kathryn like a kitten. The pillows are arranged around Jessie in the bed so she looks like some sort of sad, ancient queen in a palanquin.
+                                    
+                                    “Don’t leave me here alone,” Jessie says. “What if I can’t do it by myself? How will I take a shower if no one else is here?”
+                                    
+                                    “You can do it,” Ben says.
+                                    
+                                    “I don’t even really know her.”
+                                    
+                                    “I’m late,” he says. “I love you.”
+                                    
+                                    “No,” says Jessie, but Ben tells her he has to go, and he does.
+                                    
+                                     
+                                    
+                                    The school day runs smoothly. Ben is good at his job, good at controlling the boys who wrestle and push and nip at each other, like wolf pups, all jostling for the spot at the head of the pack; Ben is good at reminding them that spot will never belong to them, that it’s his alone.
+                                    
+                                    On his lunch break, he calls Jessie, but she doesn’t answer. “I hope this means you’re sleeping,” he says on her voicemail. He tries her again after work, as he’s walking out to the car, and she doesn’t answer then either. Finally, he’s turning onto their street when his phone rings. “Hey,” he says to Jessie. “Everything okay?”
+                                    
+                                    “Fine,” she says. “Kathryn is sleeping. She had a good day.”
+                                    
+                                    “Did you?” he asks.
+                                    
+                                    “It was fine,” she says again. “I can see you from the window. You passed the house.”
+                                    
+                                    Ben lowers his head to look out the passenger side window. “Shit,” he says. “How did I do that?”
+                                    
+                                    “I’ll see you in a minute,” Jessie says. He pulls into a driveway and turns back around. But when he arrives at his house, he sees why he missed it. Their house was painted gray this morning, the color of a storm cloud or a dolphin, but as he pulls into his own driveway, watches the driveway gate creak open, the house before him is white. Jessie is standing at the window. She waves as he gets out of the car.
+                                    
+                                     
+                                    
+                                    Jessie says she’s just as confused as Ben about the house. “But it looks nice,” she says. In the morning before Ben leaves for work, they stand together outside and squint up at the house in the early sun. Jessie shrugs and bounces Kathryn in her arms. “I’m not sure I could have picked a better white myself,” she says. “Very clean. Crisp.”
+                                    
+                                    “It makes me concerned,” Ben says.
+                                    
+                                    “I like it,” says Jessie.
+                                    
+                                    “It feels like I’m living in the wrong house,” he says.
+                                    
+                                    “Go to work,” says Jessie. “Have a good day.”
+                                    
+                                    “Are you going to be all right?” he asks her. He thinks about her crying in bed the morning before and imagines her heading there again as soon as he leaves. He wonders if she’s putting on a brave face for him.
+                                    
+                                    “Just tired,” Jessie says. “What can you do, though?”
+                                    
+                                    Ben kisses her, kisses Kathryn, who makes a perfect O with her mouth, and wriggles her face and looks surprised, as if it happened without her knowing. When he drives off, they’re still standing there, Kathryn and Jessie, and the sun on them makes them look like fairies in a meadow.
+                                    
+                                    At school, he is relieved nothing has changed. His desk is clean and orderly. The boxes of calculators are neat, too, ordered and numbered. The walls of the classroom are still white, and it strikes him how institutional this white is. Jessie was right: the white of their house is perfect.</span></p>
+                        
+                        <label for="post-3" class="read-more-trigger"></label>
+                </div>
+
+                <div class="entry">
+                        <h3>THE PROMISE OF A SHAMPOO BOTTLE</h3>
+                        <h4 id="date4"></h4>
+                        <script>
+                            document.getElementById("date4").innerHTML = Date();
+                        </script>
+                        <hr>
+    
+                        <input type="checkbox" class="read-more-state" id="post-4" />
+    
+                        <p class="read-more-wrap">You’ll have no trouble hopping out of bed with this tropical treasure waiting in the shower. Packed with pure botanical emollients, our replenishing bath gel nourishes and softens while the fragrances of mango, 
+                            <span class="read-more-target"> honey, and pure vanilla take you island hopping before breakfast. Both hydrating and hypoallergenic, it combines aloe vera, botanical extracts and fragrant herbs to whisk you from ordinary to extraordinary.
+
+                                    It’s 6:53 a.m., my five-year-old is up in my grill asking me to remove his sodden pull-up, I am hungover, and my three-year-old’s plaintive moans of “mummmmy!” from her bedroom are tightening my barely conscious nerves before I’ve even boiled water for my first cup of tea. I’ve overslept and am wholly unprepared to face what’s ahead. I think about the article on “tear-free mornings” I read the other day and know that today will not be one of those mornings.
+                                    
+                                    Pleasantly citrusy as the scent may be, creamy as the suds might feel swirled under my arms and between my legs, Alba Honey Mango Bath and Shower Gel most assuredly does not “whisk me from ordinary to extraordinary.” We’re out of SunButter for the five-year-old’s lunch and his kindergarten is nut-free and I wonder if two slices of bread and an apple count as a real lunch. I’m also relatively sure my three-year-old’s ballet tights are still curled up in a wet, wrinkly ball at the bottom of the washer, and I know I’ll have roughly three minutes and twenty-seven seconds to shower. Sadly, my island experience must be cut short.
+                                    
+                                    By 7:37 a.m., I’m relying on PBS to keep my children safe as I frantically rub fragrances of mango, honey, and pure vanilla into my skin with frenetic desperation. Ominous silence accompanies my bathroom-door-open shower, which keeps me firmly rooted in the ordinary (as will the revelation that said silence was due to the five-year-old cutting a graham cracker-sized chunk out of the three-year-old’s hair). I wonder if the pure botanical emollients will help with my headache.</span></p>
+                        
+                        <label for="post-4" class="read-more-trigger"></label>
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            function OpenSlideMenu(){
+                document.getElementById('side-menu').style.width = '250px';
+                document.getElementById('main').style.marginLeft = '250px';
+            }
+
+            function CloseSlideMenu(){
+                document.getElementById('side-menu').style.width = '0px';
+                document.getElementById('main').style.marginLeft = '0px';
+            }
+
+
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,446 @@
+/* Color palette:
+Header Blue: #193a55
+Button Blue: #0063b7
+Green Button: #018d80
+SearchFlights Button: #0d67bd */
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* background-position: center; */
+    position: relative;
+}
+
+.logo {
+    float: left;
+    background: #193a55;
+    width: 50%;
+    height: 81px;
+    overflow: hidden;
+    border-bottom: 2px solid white;
+}
+
+.logo > img.logoimg {
+    display: block;
+   margin-left: 50px;
+   margin-right: auto;
+}
+
+.menu {
+    float: right;
+    background: #193a55;
+    width: 50%;
+    height: 81px;
+    overflow: hidden;
+    border-bottom: 2px solid white;
+}
+
+.menu img {
+    padding-right: 5px;
+}
+
+/* .menu img:hover {
+    color: #018d80;
+    -for this to work I'd need the icons in the other color and hover switch image-
+} */
+
+.menu > a {
+    font-family: Lato;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    padding-left: 10px;
+    padding-top: 30px;
+    cursor: pointer;
+}
+
+.menu > a:hover {
+    color: #018d80;
+}
+
+article {
+    background: #193a55;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 170px;
+    left: 70px;
+    width: 400px;
+    height: 310px;
+    border-radius: 10px;
+}
+
+article .scheduleimg {
+    max-width:100%;
+    max-height:100%;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+button {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    overflow: hidden;
+}
+
+input[type="button"]
+{
+    margin:0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.btn-group {
+    width: 100%;
+    float: left;
+    /* border: 1px solid black; */
+    margin: 0px;
+    padding: 0px;
+    height: 43px;
+    overflow:hidden;
+}
+
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+article  .pbutton-left {
+    display: inline-block;
+    background: #0063b7;
+    width: 33.33333%;
+    height: 40px;
+    border-top-left-radius: 10px;
+    padding: 0px;
+    margin: 0px;
+    clear: both;
+    cursor: pointer;
+    border-right: none;
+    border: 0px;
+    outline: none;
+}
+
+article  .pbutton-middle {
+    display: inline-block;
+    background: #018d80;
+    width: 33.33333%;
+    height: 40px;
+    border-top-left-radius: 0px;
+    padding: 0px;
+    margin: 0px;
+    clear: both;
+    cursor: pointer;
+    border-right: none;
+    border: 0px;
+    outline: none;
+}
+
+article  .pbutton-right {
+    display: inline-block;
+    background: #018d80;
+    width: 33.33333%;
+    height: 40px;
+    border-top-right-radius: 10px;
+    padding: 0px;
+    margin: 0px;
+    clear: both;
+    cursor: pointer;
+    border-right: none;
+    border: 0px;
+    outline: none;
+}
+
+.textinputs {
+    display: inline-block;
+    font-family: Lato;
+    background: #193a55;
+    border: 2px solid white;
+    padding: 10px;
+    width: 160px;
+    margin-right: 13px;
+    margin-left: 20px;
+    margin-top: 30px;
+    color: grey;
+    border-radius: 5px;
+}
+
+.dateinputs {
+    display: inline-block;
+    font-family: Lato;
+    background: #193a55;
+    border: 2px solid white;
+    padding: 10px;
+    width: 160px;
+    margin-right: 13px;
+    margin-left: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.numberinputdiv {
+    display: inline-block;
+    width: 50%;
+    /* border: 1px solid white; */
+}
+
+.custom-select p {
+    color: white;
+    font-family: Lato;
+    font-size: 15px;
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom:20px;
+}
+
+.numberinputdiv select {
+    display: inline-block;
+    background-color: #193a55;
+    /* border: 2px solid white; */
+    padding: 40px;
+    margin: 0px;
+}
+
+.radiodiv {
+    font-family: Lato;
+    font-size: 13px;
+    margin-top: 0px;
+    padding-top: 0px;
+    display: inline-block;
+    width: 50%;
+    /* border: 1px solid white; */
+    overflow: hidden;
+}
+
+.custom-select {
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    font-family: Arial;
+    /* border: 1px solid white; */
+    padding-top: 0px;
+  }
+
+  .custom-select select {
+    display: none; /*hide original SELECT element:*/
+    
+  }
+  .select-selected {
+    display: inline-block;
+    background-color: #193a55;
+    width: 40px;
+    border: 5px solid white;
+    /* border-top: 2px solid white; */
+  }
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 25px;
+    right: 25px;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+    text-align: right;
+    color: #ffffff;
+    padding: 8px 10px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+  }
+  /*style items (options):*/
+  .select-items {
+    /* width: 40px; */
+    position: absolute;
+    /* float: right; */
+    background-color: #193a55;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+.radioclass {
+    display: inline-block;
+    margin: 5px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+    color:#F06586;
+  }
+
+form {
+    color: white;
+}
+
+article > .searchflights {
+    font-size: 15px;
+    font-family: Lato;
+    background-color: #0063b7;
+    color: white;
+    width: 90%;
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  position: absolute;
+  top: auto;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); 
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+}
+
+input[type=radio] + label,
+input[type=checkbox] + label {
+  display: inline-block;
+  padding: .1em;
+  padding-left: 2.3em;
+  /* text-indent: 0em; */
+  max-width: calc(100% - 2em);
+  /*margin: -1em 0;*/
+}
+
+fieldset > div input[type=radio] + label {
+  margin: -1em 0;
+}
+
+input[type=radio]:focus + label,
+input[type=checkbox]:focus + label {
+    /* This is the part that changes the color of the text on click */
+  /* color: #3c3f42; */
+  /* outline: 1px dotted #00f; */
+  
+}
+
+input[type=radio] + label:before,
+input[type=checkbox] + label:before {
+  content: '';
+  background: #fff;
+  border: .1em solid rgba(0, 0, 0, .75);
+  background-color: rgba(255, 255, 255, .8);
+  display: block;
+  box-sizing: border-box;
+  float: left;
+  width: 1em;
+  height: 1em;
+  margin-left: -1.5em;
+  margin-top: .15em;
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  transition: all .1s ease-out;
+}
+
+input[type=radio] + label:before {
+  border-radius: 100%;
+}
+
+input[type=radio]:disabled + label:before,
+input[type=checkbox]:disabled + label:before {
+  border: .1em solid rgba(0, 0, 0, .1);
+  background-color: rgba(0, 0, 0, .1);
+}
+
+input[type=radio]:disabled + label,
+input[type=checkbox]:disabled + label {
+  /* color: #ccc; */
+}
+
+input[type=radio]:checked + label:before {
+  background-color: #3c3f42;
+  box-shadow: inset 0 0 0 .15em rgba(255, 255, 255, .95);
+}
+
+input[type=checkbox] + label:before {
+  /*content: '\00d7';*/
+  /*content: '\002718';*/
+  /*content: '\002715';*/
+  /*content: '\0025a0';*/
+  content: '\002713';
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.15;
+  color: rgba(0, 0, 255, 0);
+}
+
+input[type=checkbox]:checked + label:before {
+  /* color: #3c3f42; */
+  /* line-height: .75; */
+  /* text-shadow: .05em 0 0 rgba(0, 0, 255, 1), -.05em 0 0 rgba(0, 0, 255, 1); */
+}
+
+input[type=checkbox]:disabled + label:before {
+  color: rgba(255, 255, 255, 0);
+}
+
+input[type=checkbox]:checked:disabled + label:before {
+  color: #bbb;
+  text-shadow: .05em 0 0 #bbb, -.05em 0 0 #bbb;
+}
+
+@media screen and (-ms-high-contrast: active) {
+  input[type=checkbox] + label:before {
+    content: ' ';
+  }
+  input[type=checkbox]:checked + label:before {
+    content: '\002713';
+  }
+  input[type=radio] + label:before {
+    content: ' ';
+  }
+  input[type=radio]:checked + label:before {
+    content: '\00d7';
+    line-height: .75;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  input[type=checkbox]:disabled + label, input[type=radio]:disabled + label {
+    /* color: grayText; */
+    cursor: not-allowed;
+  }
+}

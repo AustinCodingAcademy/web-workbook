@@ -1,0 +1,111 @@
+/* 
+#2bcdc0
+#33aadd
+#f46731
+#1b1b1b 
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-align: border-box;
+}
+
+body {
+  font-family: helvetica;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.welcome {
+  background-color: #2bcdc0;
+  font-family: 'Roboto';
+  flex: 1;
+  height: 500px;
+  width: 100vw;
+}
+
+.welcome h1 {
+  font-weight: 300;
+  font-size: 50px;
+}
+
+.textdiv {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  /* transform: translateY(-50%); */
+}
+
+.black {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* height: auto; */
+  /* width: 100vw; */
+}
+
+.Box {
+  font-family: 'Roboto';
+  font-weight: 300;
+  flex: 1;
+  text-align: center;
+  height: 50vh;
+  padding-top: 50px;
+  margin-top: 50px;
+  flex: 0 0 200px;
+  width: 50%;
+}
+
+.Box h1 {
+  font-weight: 500;  
+}
+
+.titleBox1 {
+  border-top: 30px solid #33aadd;
+  
+}
+
+.titleBox2 {
+  border-top: 30px solid #f46731;
+}
+
+.titleBox3 {
+  border-top: 30px solid #2bcdc0;
+}
+
+@media only screen and (max-width:600px){
+
+.welcome {
+  background-color: #33a8dd;
+}
+
+.black {
+  background-color: #f7f5f6;
+  flex-direction: column;
+  justify-content: space-around;
+  color: black;
+}
+
+.black {
+  background-color: #f7f5f6;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Box {
+    flex: 0 0 200px;
+    width: 200px;
+}
+
+}
+

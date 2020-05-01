@@ -1,0 +1,295 @@
+/* Color Palette:
+Gunmetal: #273043
+Grey-blue: #9197AE
+Honeydew: #EFF6EE
+Deep Carmine Pink: #F02D3A
+Spanish Red: #DD0426
+*/
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Serif;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #273043;
+    overflow: hidden;
+    height: 63px;
+    transition: 2s;
+}
+
+.navbar:hover {
+    box-shadow: 5px 10px 18px #9197AE;
+    transition: 2s;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar ul {
+    margin: 8px 0 0 0;
+    list-style: none;
+}
+
+.navbar a:hover {
+    background-color: #9197AE;
+    color: #000;
+}
+
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #9197AE;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav a:hover {
+    color: #fff;
+}
+
+.side-nav .btn-close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.search-box {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    /* float: right; */
+    /* transform: translate(-50%, -50%); */
+    background: #EFF6EE;
+    height: 40px;
+    border-radius: 40px;
+    padding: 5px;
+    margin-top: 0px;
+    margin-right: 20px;
+}
+
+/* .search-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+} */
+
+.search-box:hover > .search-txt {
+    width: 240px;
+    padding: 0 6px;
+    transition: .9s;
+}
+
+.search-box:hover > .search-btn {
+    background: #F02D3A;
+    transition: .9s;
+}
+
+.search-btn {
+    color: #F02D3A;
+    float: right;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    padding: 10px;
+    margin-top: -1px;
+    transition: .9s;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: 273043;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+    transition: .9s;
+}
+
+.fas {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    padding-bottom: 0px;
+}
+
+#main {
+    margin-left: 0px;
+    transition: 0.5s;
+    padding-top: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+#main h1 {
+    font-family: verdana;
+    text-align: center;
+}
+
+@media(max-width:568px){
+    .navbar-nav{display: none}
+}
+
+@media(min-width:568px){
+    .open-slide{display: none}
+}
+
+.entry {
+    background-color: white;
+    margin: 10px;
+    border: 5px solid #273043;
+    transition: 1s;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.entry:hover {
+    border-left: 5px solid #DD0426;
+    border-right: 5px solid #DD0426;
+    border-top: 5px solid #9197AE;
+    border-bottom: 5px solid #9197AE;
+    transition: 1s;
+    box-shadow: 5px 10px 18px #273043;
+    margin-bottom: 10px;
+}
+
+#theblog {
+    background-color: #EFF6EE;
+    border: 5px solid #273043;
+    margin-top: 20px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 5px 10px 18px #9197AE;
+    margin-bottom: 20px;
+}
+
+#theblog h4 {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#theblog h3 {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+hr {
+    width: 80%;
+    margin-left: 8px;
+}
+
+p {
+    text-indent: 2em;
+    margin: 10px;
+    font-family: futura;
+    font-size: 16px;
+    border-radius: .25em;
+    padding: 2%;
+}
+
+.read-more-wrap:hover::first-letter {
+    color: #DD0426;
+    font-weight: bold;
+}
+
+/* Este es el boton de on/off. */
+.read-more-state {
+    display: none;
+  }
+  
+  /* Esta es la transicion de regreso. */
+  .read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .7s ease;
+  }
+
+  /* Este es el hover del boton. */
+  .read-more-trigger:hover {
+    background-color: #273043;
+    color: #EFF6EE;
+  }
+  
+  /* Esta es la transicion para que salga el texto. */
+  .read-more-state:checked ~ .read-more-wrap .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+    transition: .5s;
+  }
+  
+  /* Esto es lo que dice el boton antes de picarle. */
+  .read-more-state ~ .read-more-trigger:before {
+    content: 'show more...';
+    transition: 2s;
+  }
+  
+    /* Esto es lo que dice el boton despues de picarle. */
+  .read-more-state:checked ~ .read-more-trigger:before {
+    content: '...show less';
+    transition: .5s;
+  }
+  
+  /* este es el boton. */
+  .read-more-trigger {
+    background-color: #9197AE;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 .5em;
+    color: EFF6EE;
+    font-size: .9em;
+    line-height: 2;
+    border: 1px solid #EFF6EE;
+    border-radius: .25em;
+    /* float: right; */
+    /* position: relative; */
+    float: right;
+    transition: .5s;
+  }
