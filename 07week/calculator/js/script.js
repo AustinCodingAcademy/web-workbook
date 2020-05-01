@@ -1,5 +1,5 @@
-'use strict';
-
-document.addEventListener("DOMContentLoaded", function(event) {
-  // You code here
-});
+$(".btn").click(function(event) {
+  var thingClicked = this.innerHTML
+  console.log("you clicked: ", thingClicked)
+   $(".item-header").html(thingClicked)
+ })

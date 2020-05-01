@@ -1,0 +1,77 @@
+main {
+    width: 50px;
+    margin: auto;
+    /* position: relative; */
+
+}
+div {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    position: relative;
+   
+}
+ 
+main div:nth-child(odd){
+    background-color: blue;
+    transition: border-radius 2s, height 2s, width 2s, margin-left 2s, transform 5s 2s;
+    
+     
+}
+
+
+main:hover div:nth-child(odd) {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    margin-left: -25px;
+    transform: translate(100px,0) rotate(360deg);
+    border-radius:50%;
+    transform: rotateX(150deg);
+    
+    
+} 
+
+
+
+main div:nth-child(even){
+    background-color: red;
+    left: 0;
+    transition: border-radius 2s, margin-left 2s, height 2s, width 2s, left 2s 2s, transform 2s 2s;
+    
+    transform: rotateX(-150deg);
+    
+}
+    
+main:hover div:nth-child(even) {
+        height: 25px;
+    width:  25px;
+    margin-left: -12.5px;
+    left: -100px; 
+    transform: rotate(-360deg);
+    border-radius:50%;
+    transform: rotate(45deg);
+    zoom: 550%;
+   
+    
+
+}
+
+
+
+/* main div:nth-child(1){ */
+    background-color: blue;
+    transition: backgrounnd-color 2s;
+}
+/* main div:nth-child(1):hover { */
+    background-color: wheat;
+}
+/* main div:nth-child(2){ */
+    background-color: red;
+    transition: transform 1s;
+}
+/* main div:nth-child(2):hover { */
+    transform: translate(200px, 200px);
+  
+
+}
