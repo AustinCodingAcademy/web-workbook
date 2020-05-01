@@ -1,1 +1,162 @@
-/* You can style your links page here */
+.name{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: ivory;
+    height: 180px;
+    width: 100%;
+    font-size: 30px;
+    color: rgb(0, 11, 50);
+    font-family: 'Courier New', Courier, monospace;
+    flex-direction: column;
+}
+
+.job{
+    font-size: 25px;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin-top: .5%;
+    background-color: pink ;
+    flex-direction: column;
+}
+
+.article{
+    color: white;
+    width: 200px;
+    text-align: left;
+}
+
+.flexitem{
+    display:flex;
+    width: 500px;
+    justify-content:space-around;
+    flex-direction:column;
+    text-align: left;
+    color: white;
+
+
+}
+
+article:nth-child(1){
+   //* border-top: 10px solid #00aade; *//
+    display: flex;
+    align-items: left;
+}
+article:nth-child(2){
+    display: flex;
+    align-items: left;
+}
+article:nth-child(3){
+    display: flex;
+    align-items: left;
+    border-top: 20px dotted;
+}
+article:nth-child(4){
+    display: flex;
+    align-items: left;
+}
+article:nth-child(4){
+    display: flex;
+    align-items: left;
+}
+
+.Oracle{
+    align-items: left;
+    font-size: 20px bold;
+    text-decoration-line: underline;
+    color:gray;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.position{
+    font-size: 15px;
+    font-style: italic;
+    color:gray;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2{
+    /* display: flex; */
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+p{
+    font-size: 16px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Skills{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px 100px 100px;
+}
+.box1{
+    align-items: left;
+    color: dark gray;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    margin: 5px;
+    grid-column:2 / span 2;
+    grid-row:1 / span 2;
+  }
+.box2{
+    padding: 10px;
+    margin: 5px;
+    grid-column:4 / span 20;
+    grid-row:1 / span 2;
+}
+.box3{
+    grid-column: 2/ span 18;
+    grid-row: 3/ span 1;
+    background-color: pink;
+    color: gray;
+ 
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+    #container {
+        background-color:white;
+      
+    }
+    .Welcome{
+        text-align: left;
+        padding-left: 30px;
+    }
+    .flex-container{
+        padding: 25;
+        height: 100%;
+        background-color: white;
+        flex-direction: column;
+        font color: black;
+    }
+    h2{
+        color: black;
+    }
+    p{
+        color: black;
+    }
+    .position{
+        font-size: 15px;
+        font-style: italic;
+        color: ivory;
+    }
+    .Skills{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+} 
