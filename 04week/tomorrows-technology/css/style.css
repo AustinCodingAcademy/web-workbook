@@ -1,0 +1,28 @@
+.flex-container {
+    display: flex;
+    background-color: aquamarine;
+    height: 300px;
+    width: 2000px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 992px) {
+    .flex-container, .column {
+        width: 50%;
+    }
+}
