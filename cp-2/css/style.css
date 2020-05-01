@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.flex {
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/crop.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#hi {
+    position: absolute;
+    color: white;
+    font-size: 80px;
+    margin-top: 39%;
+    text-align: center;
+}
+
+.heading {
+    font-size: 40px;
+    margin: 0 auto;
+}
+
+.aboutme {
+    width: 100%;
+    height: 450px;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#about {
+    grid-column: span 6;
+    /* background-color: red; */
+}
+
+#propic {
+    grid-column: span 2;
+    grid-row: span 2;
+    height: 350px;
+    border-radius: 50%;
+}
+
+#info {
+    grid-column: span 4;
+    grid-row: span 2;
+    font-size: 20px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column;
+}
+
+#aboutfoot {
+    grid-column: span 6;
+}
+
+.projects {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(196, 196, 196);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+#prohead {
+    grid-column: span 6;
+    margin-top: 10px;
+}
+
+.article {
+    width: 95%;
+    height: 325px;
+    grid-column: span 2;
+    grid-row: span 2;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    padding: 4px;
+}
+
+
+#profoot {
+    grid-column: span 6;
+}
+
+.img {   
+    width: 45%;
+    height: auto;
+    margin: 2px;
+}
+
+.descript {
+    display: flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column;
+    font-size: 20px;
+}
+
+#contactflex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact {
+    width: 100%;
+    height: 150px;
+    /* background-color: yellow; */
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 576px) {
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutme {
+        display: flex;
+        flex-direction: column;
+        /* display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr 1fr; */
+    }
+
+    /* #about {
+        grid-column: span 2;
+    }
+
+    #info {
+        grid-column: span 2;
+        font-size: 16px;
+    }
+
+    #propic {
+        grid-column: span 2;
+        height: 200px;
+        border-radius: 50%; */
+
+    .face {
+        height: 100%;
+        width: 100%;
+        position: static;
+        /* display: flex;
+        justify-content: center; */
+        
+    }
+
+    #hi {
+        font-size: 26px;
+        /* background-color: red; */
+        margin-top: 23%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 2000px;
+        position: relative;
+        font-size: 12px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .aboutme {
+        width: 100%;
+        height: 1200px;
+    }
+
+    #propic {
+        width: 200px;
+        height: 200px;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactflex {
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+        position: relative;
+    }
+
+
+}
+
+
+/* grid-template-columns: minmax (300px, 1fr)
+
+grid 1fr 1fr for mobile
+
+set grid size */
