@@ -111,9 +111,12 @@ describe('detect a win', function () {
     });
 
     it('should detect an upward diagonal win', function () {
-      [ { x: 1, o: 2 }, { x: 3, o: 4 }, { x: 8, o: 6 }].forEach(function (cellNumbers) {
+      [ { x: 1, o: 2 }, // Top 0-2
+        { x: 3, o: 4 },  // Mid 3-5
+        { x: 8, o: 6 }  //  
+      ].forEach(function (cellNumbers) {
         $('div[data-cell=' + cellNumbers.x + ']').click();
-        $('div[data-cell=' + cellNumbers.o + ']').click();
+        $('div[data-cell=' + cellNumbers.o + ']').click(); //
       });
       assert.equal($('#announce-winner').text().toLowerCase(), 'player o wins!');
     });

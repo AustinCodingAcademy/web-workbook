@@ -1,0 +1,209 @@
+/*main styles*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial;
+}
+
+/*header styles*/
+/*height set to match logo height*/
+.main-header {
+  background: #193A55;
+  height: 81px;
+  border-bottom: 1px solid white;
+}
+
+.logo {
+  display:inline;
+  float:left;
+}
+
+.navbar {
+  float:right;
+  list-style: none;
+  padding-right: 60px;
+  padding-top: 3%; /*use percentage to help solve responsive challenge*/
+}
+
+.links img {
+  width: 12px;
+}
+
+.links li{
+  display: inline;
+  padding-right: 10px;
+  color: #DBE2F2;
+}
+
+.links a {
+  text-decoration: none;
+  font-size: 12px;
+  color:#dbe2f2;
+}
+
+.links a:hover{
+  color:#018d80;
+}
+/*main content*/
+
+.background {
+  background-image: url("../img/airline.jpg");
+  width: 100%;
+  height: 736px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Search box*/
+
+.box {
+  box-sizing: border-box;
+  display:inline-block;
+  position:relative;
+  top: 80px; /*positioning for relative item*/
+  right: 300px; /*positioning for relative item*/
+  background-color: #193A55;
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.nav2 {
+  text-align: center;
+  background-color: #018d80;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.nav2 ul {
+  list-style: none;
+}
+
+.nav2 li {
+  display:inline-block;
+}
+
+.plane {
+  padding-left: 29px;
+  padding-right: 29px;
+}
+.bed {
+  padding-left: 28px;
+  padding-right: 29px;
+}
+
+.car {
+  padding-left: 28px;
+  padding-right: 29px;
+}
+
+.box a {
+  text-decoration: none;
+}
+.nav2 li:hover {
+  background-color: #1843a1;
+
+}
+.plane:hover {
+  border-top-left-radius: 5px;
+}
+.car:hover {
+  border-top-right-radius: 5px;
+}
+/*form*/
+
+.form {
+  box-sizing: border-box;
+}
+
+.depart-field {
+  display: inline-block;
+  float: left;
+  width: 115px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+.arrive-field {
+  display:inline-block;
+  float: right;
+  width: 115px;
+  height: 30px;
+  margin-right: 20px;
+  margin-top: 25px;
+}
+
+.depart-date {
+  display: inline-block;
+  float: left;
+  width: 115px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+.arrive-date {
+  display: inline-block;
+  float: left;
+  width: 115px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+.depart-date, .depart-field, .arrive-field, .arrive-date {
+  background-color: inherit;
+  font-size: 12px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.label {
+  color: white;
+  font-size: 12px;
+}
+
+.input {
+  margin-top: 30px;
+  margin-left: 8px;
+}
+
+.depart-date::placeholder, .arrive-date::placeholder {
+  color: white;
+  padding: 5px;
+}
+
+.depart-field::placeholder, .arrive-field::placeholder {
+  padding: 5px;
+}
+
+select {
+  font-family: "Roboto", arial;
+  border: 2px solid white;
+  background-color:#193A55;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+}
+
+div .btn {
+  position: relative;
+}
+
+button {
+  margin-top: 25px;
+  margin-left: 12px;
+  width: 275px;
+  height: 35px;
+  background-color: #1843a1;
+  border-radius: 2px;
+  border:none;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}

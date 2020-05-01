@@ -1,0 +1,96 @@
+.container {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*due to axis change it's not justify, but align*/ 
+  background-color: lightgray;
+
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+
+}
+
+.green {
+  background-color: green;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.lightblue {
+  background-color: lightblue;
+}
+
+.black {
+  background-color: black;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.turquoise {
+  background-color: turquoise;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.green {
+  background-color: green;
+}
+
+.teal {
+  background-color: teal;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.box:nth-child(odd) {
+  transition-property: width, height, margin-left, transform;
+  transition-duration: .5s, .5s, 3s, 3s;
+  transition-delay: 0, 0, 3s, 3s;
+  
+  
+}
+
+.box:nth-child(odd):active, .box:nth-child(odd):hover { 
+  width: 150px;
+  height: 150px;
+  margin-left: 400px;
+  transform: rotate(180deg);
+  border: 3px dashed #333;
+}
+
+.box:nth-child(even) {
+  transition: width .5s, height .5s, transform 1s ease;
+  
+}
+
+.box:nth-child(even):active, .box:nth-child(even):hover {
+  width: 50px;
+  height: 50px;
+  margin-right: 300px;
+  transform: rotate(-90deg);
+  border: 2px dotted #333;
+}
