@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head><link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Madelines Resume</title>
+ <h1><font size="8">Madeline Quitta-Carney</font></h1> 
+ <h3> web design</h3>
+<h4> my bio &emsp; &emsp; 
+    <a href="my-education-link.html"> my education </a> &emsp; &emsp; 
+    <a href="my-resume-link.html"> my resume </a>
+    </a>
+</h4>
+</head>
+<body>
+       <div><img src="brown-haired-girl.jpg" alt="image of Madeline wearing a hat, wind blowing everywhere"></div>  
+       <div valign="top" class="rs-text">
+            My short term and long term goal that I have set for myself
+            is to graduate Austin Coding Academy within the next year;
+            and to obtain a full-time position in web design within a 
+            dynamic organization, continuing to develop my creative and
+            technical skills.
+            </div>
+</body>
+<footer>
+    <div class="footer-text">
+       <table
+            <tr>
+            <th>(512)705-1075 </th>
+            <th>&emsp;&emsp;&emsp;</th>
+            <th>maddiequitta@yahoo.com</th>
+            <th>&emsp;&emsp;&emsp;</th>
+            <th><link rel="url" href="maddie-linkedin.url">
+                https://www.linkedin.com/in/<br>madeline-quitta-carney-844381149/</th>
+            <th>&emsp;&emsp;&emsp;</th>
+            <th>https://github.com/maddieqc</th>
+            </tr>
+                <?php while ($row= mysql_fetch_array($result)) { ?>
+                    <tr>
+                        <td width="150"><?php h($row['vAuthor']) ?></td>
+                        <td><?php h($row['cQuotes']) ?></td>
+                        <td><?php h($row['cArabic']) ?></td>
+                        <td><?php h($row['vReference']) ?></td>
+                    </tr>
+                <?php } ?>
+                </table></div>
+</footer>
+</html>

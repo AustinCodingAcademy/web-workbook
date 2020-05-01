@@ -1,0 +1,107 @@
+@media (min-width: 300px) {
+    .site-text {
+        height: 330px; 
+        width: 90%;
+        text-align: center;
+        vertical-align: middle;
+        background:rgb(66, 145, 172);
+        color: #fff;
+        font: 40px "josefin sans", arial;
+        display: center;
+    }
+    h1 {
+        transition: transform 2s;
+    } 
+    .site-text:hover > h1 {
+       transform: rotate(360deg);
+    }
+    .body {
+        height: 1000px;
+        width: 90%;
+        float: left;
+        background-color: lightgrey;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;  
+        /* transform: skewY(3deg); */
+    }
+    .title {
+        text-align: center;
+        font: 40px "josefin sans", arial;
+    }
+    #Blue {
+        width: 200px;
+        height: 250px;
+        border-top: 30px solid rgb(66, 145, 172);
+        /* transform: scaleX(2); */
+        /* transform: skewY(3); */
+        transform: skewY(10deg);
+    }
+    #red {
+        width: 200px;
+        height: 250px;
+        border-top: 30px solid red;
+        transition: transform 2s;
+    }
+    #red:hover {
+       transform: rotate(-360deg);
+    }
+    #cyan {
+        width: 200px;
+        height: 250px;
+        border-top: 30px solid cyan; 
+        transform: skewY(-10deg);  
+    }
+    }
+    @media (min-width: 700px) {
+        .site-text {
+            height: 330px; 
+            width: 90%;
+            text-align: center;
+            vertical-align: middle;
+            background:rgb(66, 145, 172);
+            color: #fff;
+            font: 40px "josefin sans", arial;
+            display: center;
+        }
+       .body {
+            height: 400px;
+            width: 90%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
+        }
+        article {
+            height: 400px;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
+
+        }
+        .title {
+            text-align: center;
+            font: 40px "josefin sans", arial;
+            color: white;
+        }
+        #Blue {
+            width: 200px;
+            height: 250px;
+            border-top: 30px solid rgb(66, 145, 172);
+        }
+        #red {
+            width: 200px;
+            height: 250px;
+            border-top: 30px solid red;
+        }
+        #cyan {
+            width: 200px;
+            height: 250px;
+            border-top: 30px solid cyan;   
+        }
+    }
