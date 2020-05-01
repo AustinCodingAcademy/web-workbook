@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,700|Roboto+Slab:300,400');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Source+Sans+Pro:300,400,400i,600,700');
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+.grid-container {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 2px;
+  grid-auto-flow: dense;
+}
+
+.grid-container  div {
+color: white;
+font-size: 20px;
+padding: 20px;
+}
+
+.item-1 {
+  background: #b03532;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: span 5;
+  z-index: 1;
+}
+.item-1 {
+  background-image: url(../css/images/mick-haupt-1055260-unsplash.jpg);
+  background-size: cover;
+}
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 100px;
+  text-align: center;
+  text-shadow: 2px 2px rgb(0, 0, 0);
+}
+p { 
+  text-align: center;
+  margin-top: -60px;
+  letter-spacing: 10px;
+  text-shadow: 2px 2px rgb(0, 0, 0);
+}
+.item-2 {
+  /* background: #33a8a5; */
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+}
+/* nav{
+  border: 1px solid red;
+  height: 100px;
+  width: 100%;
+  display: block;
+  position: fixed;
+  padding: 10px 15px;
+  background-color: rgba(141, 27, 27, 0.639);
+  transition: background-color 0.5s ease;
+  z-index: 1;
+  
+} */
+li{
+  color: black;
+}
+li:hover {
+  color: red;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in;
+  transform: translate(10px)
+}
+ul li{
+  display: inline-block;
+  padding: 50px;
+  margin: 0 auto;
+  font-size: 15px;
+}
+.item-3 {
+  background: #ff9069;
+  background-image: url(./images/clark-tibbs-367075-unsplash.jpg);
+  background-size: cover;
+  /* height: 200px; */
+  background-position: 100px;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  grid-column-end: span 2;
+}
+.item-3:hover{
+  transition-duration: 800ms;
+  transition-timing-function: ease-in-out;
+  transform: translate(100px);
+  transform: rotate(360deg);
+
+}
+.item-4:hover {
+  opacity: .25;
+  transform: translateX(600px);
+  transition-duration: 5s;
+  transition-timing-function: ease-out;
+}
+.item-4 {
+  background: #003c51;
+  background-image: url(../css/images/jon-tyson-520955-unsplash.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.item-5 {
+  background: #e6b800;
+}
+.item-5:hover {
+  background: #3c3107;
+}
+.item-5 h2{
+  font-size: 15px;
+  padding-top: 20px;
+}
+
+.item-6 {
+  /* background: #4464a1; */
+  /* border: .5px solid black; */
+  background-image: url(../css/images/super-heros.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+.item-6 .overlay{
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(26, 26, 26, 0.804);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.item-6:hover .overlay{
+  opacity:2;
+  margin: 0;
+  padding: 0;
+}
+.item-6 .text{
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+}
+.item-7 {
+  background: #000000;
+  grid-column: span 2;
+  grid-row: span 2;
+  background-image: url(../css/images/joao-silas-72340-unsplash.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+.item-7 .overlay{
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(26, 26, 26, 0.804);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.item-7:hover .overlay{
+  opacity:2;
+  margin: 0;
+  padding: 0;
+}
+.item-7 .text{
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+}
+.item-8 {
+  background: #000000;
+  grid-column: span 2;
+  grid-row: span 2;
+  background-image: url(../css/images/ErickaHerod_work_Page_69.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+.item-8 .overlay{
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(26, 26, 26, 0.804);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.item-8:hover .overlay{
+  opacity:2;
+  margin: 0;
+  padding: 0;
+}
+.item-8 .text{
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+}
+.item-9 {
+  background: #000000;
+  grid-column: span 2;
+  grid-row: span 4;
+  background-image: url(../css/images/ballogy-2.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+.overlay {
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(26, 26, 26, 0.612);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.item-9:hover .overlay {
+  opacity: 2;
+  margin: 0;
+  padding: 0;
+}
+.item-9 .text{
+  color: white;
+  font-size: 15px;
+  /* z-index: 1; */
+  
+}
+.item-10 {
+  background: #000000;
+  background-image: url(../css/images/ErickaHerod_work_Page_27.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+.item-10 .overlay{
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(26, 26, 26, 0.804);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.item-10:hover .overlay{
+  opacity:2;
+  margin: 0;
+  padding: 0;
+}
+.item-10 .text{
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+}
+.item-11 {
+  background: #000000;
+  background-image: url(../css/images/Zenoss18_DSC08746_June\ 22\,\ 2018_055.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+
+.item-11 .overlay{
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(26, 26, 26, 0.804);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.item-11:hover .overlay{
+  opacity:2;
+  margin: 0;
+  padding: 0;
+}
+.item-11 .text{
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.item-12 {
+  background: #000000;
+  background-image: url(../css/images/sidelabel-bandana-02.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+.item-12 .overlay{
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(26, 26, 26, 0.804);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.item-12:hover .overlay{
+  opacity:2;
+  margin: 0;
+  padding: 0;
+}
+.item-12 .text{
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+}
+.item-13 {
+  /* background: #000000; */
+  background-image: url(../css/images/JENNAS_ASIAN_KITCHEN_LOGO\ copy-01.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+
+.item-13 .overlay{
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(26, 26, 26, 0.804);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.item-13:hover .overlay{
+  opacity:2;
+  margin: 0;
+  padding: 0;
+}
+.item-13 .text{
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+}
+.item-14 {
+  background: #000000;
+  grid-column: span 1;
+  grid-row: span 2;
+  background-image: url(../css/images/bella.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  
+}
+.item-14 .overlay{
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(0, 0, 0, 0.407);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.item-14:hover .overlay{
+  opacity: 2;
+  margin: 0;
+  padding: 0;
+}
+.item-14 .text{
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+.item-15 {
+  background: #000000;
+  background-image: url(../css/images/56-69_TRACE73_CODE_insider\ 1.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+
+.item-15 .overlay{
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(26, 26, 26, 0.804);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.item-15:hover .overlay{
+  opacity:2;
+  margin: 0;
+  padding: 0;
+}
+.item-15 .text{
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.item-16 {
+  background: #000000;
+}
+.item-16 .text {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+}
+
+.item-17 {
+  background: #000000;
+  grid-column: span 5;
+  grid-row: span 10;
+  background-image: url(../css/images/derick-david-351510-unsplash.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+}
+.item-17 .overlay{
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(0, 0, 0, 0.407);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.item-17:hover .overlay{
+  opacity: 2;
+  margin: 0;
+  padding: 0;
+}
+.item-17 .text{
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+/* .item-18 {
+  background:black;
+  grid-row-start: 10;
+  grid-column-start: 1;
+  grid-column-end: span 5;
+} */

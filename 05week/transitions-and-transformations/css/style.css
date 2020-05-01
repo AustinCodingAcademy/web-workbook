@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grid-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+}
+.square{
+  height: 50px;
+  width: 50px;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 7px 0px rgba(134, 134, 134, 0.63);
+  margin: 5px;
+  text-align: center;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  transition: all 500ms ease-in-out;
+  
+}
+.grid-container {
+  border: 1px solid peru;
+}
+.grid-container:hover .square:nth-of-type(even) {
+  transform: scale(2);
+}
+.grid-container:hover .square:nth-of-type(odd) {
+  transform: scale(.5) rotate(90deg) translateX(-100em);
+  
+}
+.square-1 {
+  background: #b03532;
+}
+.square-2 {
+  background: black;
+  
+  
+}
+.square-2:hover {
+  background: #b03532;
+  animation: change-background 4s ease infinite;
+  
+ 
+  
+}
+.square-3 {
+  background: #b03532;
+  
+}
+.square-4 {
+  background: black;
+}
+.square-4:hover {
+  background: #b03532;
+}
+.square-5 {
+  background: #b03532;
+  
+}
+.square-6 {
+  background: black;
+}
+.square-6:hover {
+  background: #b03532;
+}
+.square-7 {
+  background: #b03532;
+  
+}
+.square-8 {
+  background:black;
+}
+.square-8:hover {
+  background: #b03532;
+}
+.square-9 {
+  background: #b03532;
+  
+}
+.square-10 {
+  background: black;
+}
+.square-10:hover {
+  background: #b03532;
+}
+.square-11 {
+  background: #b03532;
+}
+.square-12 {
+  background: black;
+}
+.square-12:hover {
+  background: #b03532;
+}
+@keyframes change-background {
+  0% {
+    background: rgba(0, 0, 0, 0.756);
+  }
+  50% {
+    background: rgba(21, 33, 135, 0.626);
+  }
+  100% {
+    background: #c811cbbd;
+  }
+}
